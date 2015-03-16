@@ -1,0 +1,8 @@
+﻿@inherits System.Web.Mvc.WebViewPage<Landmark.Web.Models.Documents>
+<h3>Documents</h3>
+<ul>
+  @foreach (var document in @Model)
+  {
+    <li>@document.Title - @document.Author</li>
+  }
+</ul>

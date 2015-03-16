@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {11F9CC2F-4401-43D3-940D-DA4D6908AB02}
+database: master
+path: /sitecore/content/Home/MyFirstSitecoreMVC/Sitecore Install
+parent: {384219B9-DB43-4B1B-9558-62C660DA6182}
+name: Sitecore Install
+master: {00000000-0000-0000-0000-000000000000}
+template: {440C78F9-3DE9-49FC-B846-CA918E18D8B4}
+templatekey: Document Item
+
+----version----
+language: en
+version: 1
+revision: aca5392f-90d4-422f-b26a-c4a7a1354d4d
+
+----field----
+field: {2531B20D-5947-4661-A7A0-53BA8C0FE9BB}
+name: Author
+key: author
+content-length: 5
+
+Yanan
+----field----
+field: {8FA39420-C203-4D59-8F86-8D48732E9959}
+name: Title
+key: title
+content-length: 16
+
+Sitecore Install
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150306T100927
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+aca5392f-90d4-422f-b26a-c4a7a1354d4d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150306T101356:635612336366625281
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
