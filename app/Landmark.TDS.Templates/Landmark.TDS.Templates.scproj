@@ -70,6 +70,18 @@
     <ValidationSettingsFilePath>.\Landmark.TDS.Templates_Debug.xml</ValidationSettingsFilePath>
     <OutputPath>.\bin\QA\</OutputPath>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Landmark' ">
+    <DebugSymbols>true</DebugSymbols>
+    <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <SitecoreWebUrl>http://local.landmark.gruden.com</SitecoreWebUrl>
+    <InstallSitecoreConnector>True</InstallSitecoreConnector>
+    <DisableFileDeployment>False</DisableFileDeployment>
+    <SitecoreDeployFolder>..\landmark\Website</SitecoreDeployFolder>
+    <SitecoreAccessGuid>56a9bacf-e026-456b-b5dd-89ac92310418</SitecoreAccessGuid>
+    <EnableValidations>False</EnableValidations>
+    <ValidationSettingsFilePath>.\Landmark.TDS.Templates_Debug.xml</ValidationSettingsFilePath>
+    <OutputPath>bin\Landmark\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <AssemblyAttributes Include="AssemblyFileVersion">
       <Value>$(AssemblyFileVersion)</Value>
