@@ -6,8 +6,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>5fa0d201-f8d0-48d5-a9b0-a1b556ae49af</ProjectGuid>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
-    <SourceWebPhysicalPath>..\Landmark</SourceWebPhysicalPath>
-    <SourceWebProject>{646c8010-0d10-4b6a-8485-833808e063b7}|Landmark\Landmark.Web.csproj</SourceWebProject>
+    <SourceWebPhysicalPath>..\Landmark.Web</SourceWebPhysicalPath>
+    <SourceWebProject>{646c8010-0d10-4b6a-8485-833808e063b7}|Landmark.Web\Landmark.Web.csproj</SourceWebProject>
     <SourceWebVirtualPath>/Landmark.Web.csproj</SourceWebVirtualPath>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <EnableUpdateable>true</EnableUpdateable>
@@ -79,7 +79,7 @@
     </AssemblyAttributes>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Landmark\Landmark.Web.csproj">
+    <ProjectReference Include="..\Landmark.Web\Landmark.Web.csproj">
       <Project>{646c8010-0d10-4b6a-8485-833808e063b7}</Project>
       <Name>Landmark.Web</Name>
     </ProjectReference>
