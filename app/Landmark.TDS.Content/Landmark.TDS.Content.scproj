@@ -6,8 +6,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>96ee0301-308e-4f44-b1b2-b7b56488d8e5</ProjectGuid>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
-    <SourceWebPhysicalPath>..\Landmark</SourceWebPhysicalPath>
-    <SourceWebProject>{646c8010-0d10-4b6a-8485-833808e063b7}|Landmark\Landmark.Web.csproj</SourceWebProject>
+    <SourceWebPhysicalPath>..\Landmark.Web</SourceWebPhysicalPath>
+    <SourceWebProject>{646c8010-0d10-4b6a-8485-833808e063b7}|Landmark.Web\Landmark.Web.csproj</SourceWebProject>
     <SourceWebVirtualPath>/Landmark.Web.csproj</SourceWebVirtualPath>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <EnableUpdateable>true</EnableUpdateable>
@@ -31,7 +31,7 @@
     <SitecoreWebUrl>http://local.landmark.gruden.com</SitecoreWebUrl>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <DisableFileDeployment>False</DisableFileDeployment>
-    <SitecoreDeployFolder>C:\inetpub\wwwroot\LandmarkTest\Website</SitecoreDeployFolder>
+    <SitecoreDeployFolder>..\landmark\Website</SitecoreDeployFolder>
     <SitecoreAccessGuid>56a9bacf-e026-456b-b5dd-89ac92310418</SitecoreAccessGuid>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
@@ -68,7 +68,7 @@
     </AssemblyAttributes>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Landmark\Landmark.Web.csproj">
+    <ProjectReference Include="..\Landmark.Web\Landmark.Web.csproj">
       <Project>{646c8010-0d10-4b6a-8485-833808e063b7}</Project>
       <Name>Landmark.Web</Name>
     </ProjectReference>

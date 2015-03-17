@@ -36,7 +36,7 @@
     <SitecoreWebUrl>http://local.landmark.gruden.com</SitecoreWebUrl>
     <InstallSitecoreConnector>True</InstallSitecoreConnector>
     <DisableFileDeployment>False</DisableFileDeployment>
-    <SitecoreDeployFolder>C:\inetpub\wwwroot\LandmarkTest\Website</SitecoreDeployFolder>
+    <SitecoreDeployFolder>..\landmark\Website</SitecoreDeployFolder>
     <SitecoreAccessGuid>56a9bacf-e026-456b-b5dd-89ac92310418</SitecoreAccessGuid>
     <EnableValidations>False</EnableValidations>
     <ValidationSettingsFilePath>.\Landmark.TDS.Templates_Debug.xml</ValidationSettingsFilePath>
