@@ -151,8 +151,17 @@
     <Compile Include="Models\Documents.cs" />
     <Compile Include="Models\LandmarkModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\TemplateClassGenerator.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>TemplateClassGenerator.scx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Models\TemplateClassGenerator.scx.xslt">
+      <DependentUpon>TemplateClassGenerator.scx</DependentUpon>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Views\Web.config" />
   </ItemGroup>
@@ -169,6 +178,10 @@
     <Content Include="Views\Renderings\DocumentsView.cshtml" />
     <Content Include="Views\Renderings\BodyContentView.cshtml" />
     <Content Include="Views\Renderings\DocumentsControllerView.cshtml" />
+    <Content Include="Models\TemplateClassGenerator.scx">
+      <Generator>SitecoreCodeGenerator</Generator>
+      <LastGenOutput>TemplateClassGenerator.Designer.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
