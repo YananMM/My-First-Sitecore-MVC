@@ -28,7 +28,8 @@ namespace Landmark.Web
   using Sitecore.Data.Fields;
   using Sitecore.Data;
   
-  <xsl:for-each select="/CodeGeneration/shape/template">    
+  <xsl:for-each select="/CodeGeneration/shape/template">
+    /*<xsl:value-of select="/CodeGeneration/shape/template"/>*/
   /// &lt;summary&gt;Represents the "<xsl:value-of select="@templatename"/>" template.&lt;/summary&gt;
   public partial class <xsl:value-of select="@classname"/> : CustomItem
   {
@@ -36,7 +37,7 @@ namespace Landmark.Web
 
     public <xsl:value-of select="@classname"/>(Item item) : base(item) {
     }
-
+    
     public static class FieldIds {
       <xsl:apply-templates select="section/field" mode="FieldIds" />
     }

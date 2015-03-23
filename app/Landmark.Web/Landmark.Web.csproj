@@ -150,6 +150,12 @@
     <Compile Include="Models\DocumentList.cs" />
     <Compile Include="Models\Documents.cs" />
     <Compile Include="Models\LandmarkModels.cs" />
+    <Compile Include="Models\LandmarkModelsGenerator.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>LandmarkModelsGenerator.scx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\TemplateClassGenerator.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -159,6 +165,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Models\LandmarkModelsGenerator.scx.aspx">
+      <DependentUpon>LandmarkModelsGenerator.scx</DependentUpon>
+    </Content>
     <Content Include="Models\TemplateClassGenerator.scx.xslt">
       <DependentUpon>TemplateClassGenerator.scx</DependentUpon>
     </Content>
@@ -171,6 +180,12 @@
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CodeFirst.config.exclude" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.CastleWindsor.config" />
     <Content Include="App_Config\Include\Glass.Mapper.Sc.Mvc.config" />
+    <Content Include="Models\LandmarkModelsGenerator.scx">
+      <Generator>SitecoreCodeGenerator</Generator>
+      <LastGenOutput>LandmarkModelsGenerator.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_Config\ConnectionStrings.config" />
+    <Content Include="App_Config\Landmark\Landmark.config" />
     <None Include="Properties\PublishProfiles\local.pubxml" />
     <Content Include="Views\Layouts\MainViewLayout.cshtml" />
     <Content Include="Views\Sublayouts\OneColumnSublayout.cshtml" />

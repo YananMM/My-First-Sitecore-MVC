@@ -1,9 +1,9 @@
 ﻿<CodeGeneration Generator="Template Class">
   <shape designerX="16" designerY="16">
-    <template templatename="Base Item" templateid="{E2145F3B-75A1-4622-B747-1A231771A499}" templateuri="/local.landmark.gruden.com/master/{E2145F3B-75A1-4622-B747-1A231771A499}" classname="BaseItem">
-      <section id="{A8BD8044-339B-4EA5-BA52-179C9D9692E5}" name="Content">
-        <field id="{8FA39420-C203-4D59-8F86-8D48732E9959}" name="Title" shared="0" source="" type="Single-Line Text" unversioned="0" propertyname="Title" />
-        <field id="{4A4C6388-4745-477B-A61D-900351614444}" name="Description" shared="0" source="" type="Rich Text" unversioned="0" propertyname="Description" />
+    <template templatename="Document Item" templateid="{440C78F9-3DE9-49FC-B846-CA918E18D8B4}" templateuri="/local.landmark.gruden.com/master/{440C78F9-3DE9-49FC-B846-CA918E18D8B4}" classname="DocumentItem">
+      <section id="{5D567A4D-4654-46AE-947E-161BB071CB32}" name="Content">
+        <field id="{2531B20D-5947-4661-A7A0-53BA8C0FE9BB}" name="Author" shared="0" source="" type="Single-Line Text" unversioned="0" propertyname="Author" />
+        <field id="{9155B1E0-6456-4E1F-A0F3-92F47ED1E4C5}" name="Date" shared="0" source="" type="Date" unversioned="0" propertyname="Date" />
       </section>
     </template>
   </shape>
@@ -13,14 +13,6 @@
         <field id="{4DA238BA-A834-481D-8723-9F13F703B690}" name="Image" shared="0" source="" type="Image" unversioned="0" propertyname="Image" />
         <field id="{23DB2802-71B6-4D1E-A412-2D1DBE69EE79}" name="Call to Action Text" shared="0" source="" type="Single-Line Text" unversioned="0" propertyname="CallToActionText" />
         <field id="{7ED6E19C-559C-49E5-BC97-270B222CDAEF}" name="Call to Action Link" shared="0" source="" type="General Link" unversioned="0" propertyname="CallToActionLink" />
-      </section>
-    </template>
-  </shape>
-  <shape designerX="475" designerY="16">
-    <template templatename="Document Item" templateid="{440C78F9-3DE9-49FC-B846-CA918E18D8B4}" templateuri="/local.landmark.gruden.com/master/{440C78F9-3DE9-49FC-B846-CA918E18D8B4}" classname="DocumentItem">
-      <section id="{5D567A4D-4654-46AE-947E-161BB071CB32}" name="Content">
-        <field id="{2531B20D-5947-4661-A7A0-53BA8C0FE9BB}" name="Author" shared="0" source="" type="Single-Line Text" unversioned="0" propertyname="Author" />
-        <field id="{9155B1E0-6456-4E1F-A0F3-92F47ED1E4C5}" name="Date" shared="0" source="" type="Date" unversioned="0" propertyname="Date" />
       </section>
     </template>
   </shape>

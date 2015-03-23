@@ -21,55 +21,55 @@ namespace Landmark.Web
   using Sitecore.Data.Fields;
   using Sitecore.Data;
   
-      
-  /// <summary>Represents the "Base Item" template.</summary>
-  public partial class BaseItem : CustomItem
+  
+    /**/
+  /// <summary>Represents the "Document Item" template.</summary>
+  public partial class DocumentItem : CustomItem
   {
-    public static readonly ID TemplateID = ID.Parse("{E2145F3B-75A1-4622-B747-1A231771A499}");
+    public static readonly ID TemplateID = ID.Parse("{440C78F9-3DE9-49FC-B846-CA918E18D8B4}");
 
-    public BaseItem(Item item) : base(item) {
+    public DocumentItem(Item item) : base(item) {
     }
-
+    
     public static class FieldIds {
       
-      public static readonly ID Title = ID.Parse("{8FA39420-C203-4D59-8F86-8D48732E9959}");
+      public static readonly ID Author = ID.Parse("{2531B20D-5947-4661-A7A0-53BA8C0FE9BB}");
 
-      public static readonly ID Description = ID.Parse("{4A4C6388-4745-477B-A61D-900351614444}");
+      public static readonly ID Date = ID.Parse("{9155B1E0-6456-4E1F-A0F3-92F47ED1E4C5}");
 
     }
     
-    /// <summary>Gets or sets the "Title" field.</summary>
-    public string Title 
+    /// <summary>Gets or sets the "Author" field.</summary>
+    public string Author 
     {
       get 
       {
-        return this.InnerItem[FieldIds.Title];
+        return this.InnerItem[FieldIds.Author];
       }
       set
       {
-        this.InnerItem[FieldIds.Title] = value;
+        this.InnerItem[FieldIds.Author] = value;
       }
     }
   
-    /// <summary>Gets or sets the "Description" field.</summary>
-    public string Description 
-    {
+    /// <summary>Gets or sets the "Date" field.</summary>
+    public string Date {
       get 
       {
-        return this.InnerItem[FieldIds.Description];
+        return this.InnerItem[FieldIds.Date];
       }
-      set
+      set 
       {
-        this.InnerItem[FieldIds.Description] = value;
+        this.InnerItem[FieldIds.Date] = value;
       }
     }
   
-    public static BaseItem Create(Item item) 
+    public static DocumentItem Create(Item item) 
     {
-      return new BaseItem(item);
+      return new DocumentItem(item);
     }
 
-    public static implicit operator Item (BaseItem item)
+    public static implicit operator Item (DocumentItem item)
     {
       if (item == null)
       {
@@ -79,7 +79,7 @@ namespace Landmark.Web
       return item.InnerItem;
     }
 
-    public static explicit operator BaseItem(Item item)
+    public static explicit operator DocumentItem(Item item)
     {
       if (item == null)
       {
@@ -94,7 +94,8 @@ namespace Landmark.Web
       return Create(item);
     }
   }
-      
+  
+    /**/
   /// <summary>Represents the "Home Page" template.</summary>
   public partial class HomePage : CustomItem
   {
@@ -102,7 +103,7 @@ namespace Landmark.Web
 
     public HomePage(Item item) : base(item) {
     }
-
+    
     public static class FieldIds {
       
       public static readonly ID Image = ID.Parse("{4DA238BA-A834-481D-8723-9F13F703B690}");
@@ -163,78 +164,6 @@ namespace Landmark.Web
     }
 
     public static explicit operator HomePage(Item item)
-    {
-      if (item == null)
-      {
-        return null;
-      }
-
-      if (item.TemplateID != TemplateID)
-      {
-        return null;
-      }
-
-      return Create(item);
-    }
-  }
-      
-  /// <summary>Represents the "Document Item" template.</summary>
-  public partial class DocumentItem : CustomItem
-  {
-    public static readonly ID TemplateID = ID.Parse("{440C78F9-3DE9-49FC-B846-CA918E18D8B4}");
-
-    public DocumentItem(Item item) : base(item) {
-    }
-
-    public static class FieldIds {
-      
-      public static readonly ID Author = ID.Parse("{2531B20D-5947-4661-A7A0-53BA8C0FE9BB}");
-
-      public static readonly ID Date = ID.Parse("{9155B1E0-6456-4E1F-A0F3-92F47ED1E4C5}");
-
-    }
-    
-    /// <summary>Gets or sets the "Author" field.</summary>
-    public string Author 
-    {
-      get 
-      {
-        return this.InnerItem[FieldIds.Author];
-      }
-      set
-      {
-        this.InnerItem[FieldIds.Author] = value;
-      }
-    }
-  
-    /// <summary>Gets or sets the "Date" field.</summary>
-    public string Date {
-      get 
-      {
-        return this.InnerItem[FieldIds.Date];
-      }
-      set 
-      {
-        this.InnerItem[FieldIds.Date] = value;
-      }
-    }
-  
-    public static DocumentItem Create(Item item) 
-    {
-      return new DocumentItem(item);
-    }
-
-    public static implicit operator Item (DocumentItem item)
-    {
-      if (item == null)
-      {
-        return null;
-      }
-
-      return item.InnerItem;
-    }
-
-    public static explicit operator DocumentItem(Item item)
     {
       if (item == null)
       {
