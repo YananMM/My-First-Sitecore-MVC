@@ -1,0 +1,410 @@
+.t13{
+.brand-content{
+   margin: 20px 0;
+  .brand-list{
+    width: 100%;
+    padding: 0 20px;
+  }
+  .brand-menu{
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+    .masonry-area{
+    h3{
+     display: block;
+      font-family: @font-family-serif;
+      .primary-text;
+      font-size: 1.33em;
+      height: 35px;
+      line-height: 35px;
+      padding-left: 20px;
+      background-color: @gray-darker2;
+      margin:8px 0 8px 0;
+    }
+      .brand-box-area{
+      margin: 0 auto;
+      .brand-box{
+        width: 90px;
+        display: block;
+        height: 56px;
+        line-height: 56px;
+        float: left;
+        text-align: center;
+        vertical-align: top;
+        margin: 0 5px 8px 0;
+        background-color: @gray-base;
+        img{
+         vertical-align: middle;
+          width: 100%;
+        }
+        span{
+          display: none;
+          .gray-text;
+          text-decoration: none;
+         }
+        &.brand-box-letter{
+        background-color: @gray-darker2;
+        .primary-text;
+        font-family: @font-family-serif;
+        font-size: 1.5em;
+        }
+        .brand-box-img{
+          opacity: 0;
+          filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+        }
+      }
+      }
+    }
+}
+
+    .btn-brand{
+      text-align: left;
+      margin:0 0  20px 0;
+      position: relative;
+      font-size: 0.916em;
+    &:after{
+      content: "";
+      position: absolute;
+      top:13px;
+      right:15px;
+      border-top: 6px solid transparent; 
+      border-bottom:6px solid transparent ; 
+      border-left: 6px solid #656565;  
+      background: none;
+    }
+    }
+  .close-popup{
+    position:relative;
+    display: block;
+    border: none;
+    margin-bottom: 16px;
+      color: @white;
+    &:hover{
+        color: @gray;
+        text-decoration: none;
+    }
+    &:focus, &:active{
+        color: @brand-primary;
+        text-decoration: none;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 3px;
+    width: 14px;
+    height: 14px;
+    background:url("../images/sprite@2x.png") no-repeat -5px -262px;
+    background-size: 50px;
+    }
+  }
+  
+    .brand-menu-area{
+      padding: 21px 20px 25px;
+      
+      h3{
+      font-family: @font-family-serif;
+        .primary-text;
+        font-size: 1em;
+        margin: 0 0 12px;
+        background:none;
+        height: auto;
+        line-height: 1.5;
+        padding: 0;
+    .sub-title{
+      font-family: @font-family-sans-serif;
+      font-size: 0.66em;
+      margin:3px 0 0 0;
+      display: block;
+      vertical-align: middle;
+      float: right;
+      .gray-text;
+      span{
+       margin-left: 10px;
+      vertical-align: middle;
+      }
+    }
+      }
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+    margin: 0 0 12px;
+    padding: 0;
+       a {
+      color: @gray;
+    &:hover{
+        color: @white;
+        text-decoration: none;
+    }
+    &:focus, &:active{
+        color: @brand-primary;
+        text-decoration: none;
+    }
+}
+    }
+    &.brands-gap{
+      margin: 0 0 16px;
+    }
+    &.brands{
+      margin-right: -20px;
+      margin-bottom: 3px;
+      li{ 
+        display: inline-block;
+        margin-right: 22px;
+        margin-bottom: 13px;
+        &.disabled{
+           color: #333;
+        }
+      }
+    }
+  }
+      .form-group{
+        margin:16px  -1.75% 20px 0;
+        .form-control{
+          width: 48.25%;
+          float: left;
+          height: 35px;
+          margin-right: 1.75%;
+          margin-bottom: 15px;
+        }
+        .btn-primary, .btn-default{
+          padding: 10px 15px;
+          font-size: 0.916em;
+        }
+      }
+    }
+}
+@media (min-width: @screen-sm) { 
+.t13{ 
+  .brand-content{
+   margin:0;
+    .container {
+      position: relative;
+    }
+    
+  .brand-list{
+    width:75% ;
+    float: left;
+    vertical-align:top;
+    padding-right: 0;
+    padding-left: 10px;
+  }
+  .brand-menu{
+    /*
+    position: absolute;
+    right:15px;*/
+    float: left;
+    width: 25%;
+    vertical-align:top;
+    box-sizing: border-box;
+    border-left: 1px solid #2e2e2e;
+    padding:0 0 0 30px;
+    overflow-y: hidden;
+    font-size: 0.916em;
+  }
+    
+    .masonry-area{
+    h3{
+      height: 44px;
+      line-height: 44px;
+      padding-left: 30px;
+      margin:0 20px 30px 0;
+    }
+      .brand-box-area {
+        
+       .brand-box{
+        width: 160px;
+        height: 100px; 
+        margin: 0 20px 20px 0;
+        line-height: 100px;
+        img{
+         vertical-align: middle;
+          width: 100%;
+        }
+        &.brand-box-letter{
+        font-size: 3em;
+        }
+  }
+      }
+    }
+  }
+  
+  .scroll-content{
+    
+  }
+    .brand-menu-area{
+      /*padding-right: 11.7%;
+      */
+        width: 100%;
+        padding: 0;
+      h3{
+      font-family: @font-family-serif;
+        .primary-text;
+        font-size: 1.45em;
+        margin: 0 0 19px;
+    .sub-title{
+      font-family: @font-family-sans-serif;
+      font-size: 0.69em;
+      margin:3px 0 0 0;
+      display: block;
+      vertical-align: middle;
+      float: right;
+      .gray-text;
+      span{
+       margin-left: 10px;
+      vertical-align: middle;
+      }
+      
+    &:focus, &:active{
+        color:  @white;
+        text-decoration: none;
+    }
+    }
+      }
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+    margin: 0 0 12px;
+    padding: 0;
+    }
+    &.brands-gap{
+      margin: 0 0 42px;
+    }
+    &.brands{
+      margin-bottom: 27px;
+      li{ 
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+  }
+      .form-group{
+        margin-right: 0;
+        .form-control{
+          width: 100%;
+          margin-bottom: 15px;
+          
+        }
+        .btn-default{
+          font-size: 1em;
+        }
+      }
+    }
+}
+}
+@media (min-width: @screen-md){
+  .t13{ 
+    .brand-content{
+     .masonry-area{
+       .brand-box-area{
+         margin-bottom: 25px;
+      .brand-box{
+        display: inline-block;
+        float: none;
+        padding: 1px;
+        background-color:@gray-darker; 
+        &:hover{
+        background-color:
+          @gray-dark; 
+        .transition(all, .5s, ease-in);
+         .brand-box-img{
+          display: block;
+           opacity: 1;
+          filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+          position: absolute;
+          width: 160px;
+          height: 100px;
+          z-index: 2;
+          top: 1px;
+          left: 1px;
+          border: none;
+    .transition(all, .5s, ease-in);
+        }
+        }
+        img{ 
+          width: auto;
+          vertical-align: top;
+        }
+        /*
+        &:hover{   
+          .transition(all, 0.3s, ease-in);
+          background-color: @gray-darker2;
+          img{
+           display: none;
+          }
+          span{
+            display: inline;
+          text-decoration: none;
+          }
+        }*/
+        
+      }
+       }
+    }
+      
+  .brand-list{
+    width:78% ;
+  }
+  .brand-menu{
+    width: 22%;
+    vertical-align:top;
+    border-left: 1px solid #2e2e2e;
+    min-width: 180px;
+    padding:0 0 0 30px;
+    font-size: 1em;
+  }
+      
+      .form-group{
+        margin:24px 0 48px;
+       .btn, .filter-option{
+          font-size: 1em;
+        }
+        .form-control{
+          width: 100%;
+          margin-bottom: 15px;
+        }
+        .btn{
+          padding: 10px 25px;}
+        .btn-default  {
+          margin-top: 4px;
+        }
+      }
+      .brand-menu-area{
+        h3{
+          font-size: 1.33em;
+    .sub-title{
+      font-size: 0.75em;
+    }
+        }
+      ul{
+       font-size: 1.09em;
+      }
+      }
+    }
+  }
+}
+
+@media (min-width: 1350px){
+  .t13 .brand-content .brand-list{
+    width: 78%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .t13 .brand-content .brand-menu{
+    padding:0 10px 0 30px;
+  }
+}
+
+.ie8{
+  .t13 .brand-content .brand-menu{
+    padding:0 ;
+    .scroll-content{
+     margin-left: 30px;
+    }
+  }
+}

@@ -1,0 +1,223 @@
+//footer
+.site-footer{
+  width: 100%;
+  position: relative;
+  .footer-nav{
+    background-color: @gray-dark;
+    padding: 26px 20px 25px;
+    font-family: @font-family-serif;
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li{
+        float: left;
+        width: 50%;
+      margin: 0;
+      padding: 0 0 12px;
+        .white-text;
+      }
+    }
+    .footer-signup{
+      .gray-text;
+    }
+    .footer-social{
+      margin: 17px 0 0;
+      a{
+        margin-right: 18px;
+      }
+      
+    }
+  }
+  .footer-info{
+    background-color: @gray-base;
+    padding: 25px 20px 29px;
+      .white-text;
+    font-size: 0.92em;
+    .footer-copyright{
+      margin: 15px 20px 0 0;
+      a{
+        display: block;
+        margin-top:15px;
+      }
+    }
+  }
+}
+.portrait_only {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.7);
+    z-index: 25
+}
+
+.portrait_only .content {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    margin-top: 20px;
+    z-index: 50
+}
+
+
+.popup-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: #1D1D1D;
+    z-index: 999;
+
+    .popup-content {
+      position: relative;
+      margin-bottom: 50px;
+      width: 100%;
+  }
+}
+
+//ipad
+@media (min-width: @screen-sm) and (max-width:@screen-md) {
+.site-footer{
+.footer-nav{
+    .footer-signup{
+      a{
+      margin-right: 17px !important;
+      }
+    }
+  
+    .footer-social{
+      padding: 0 0 0 12px !important;
+      a{
+        margin: 0 0 0 7px !important;
+      }
+    }
+}
+}
+}
+@media (min-width: @screen-sm) {
+.site-footer{
+  width: 100%;
+  position: relative ;
+  .footer-nav{
+    background-color: @gray-dark;
+    padding:23px 0 17px;
+    font-family: @font-family-serif;
+    .footer-nav-area{
+      width: 100%;
+      float: none;
+      padding-left: 10px;
+      padding-right: 10px;
+      vertical-align: middle;
+      font-size: 1.083em;
+      .clearfix;
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li{
+        float: left;
+        width: auto;
+      margin: 0;
+      padding: 0 20px 0 0;
+        .white-text;
+        &:last-child{
+          padding: 0;
+        }
+      }
+    }
+    }
+    .footer-signup{
+      width: 100%;
+      float: none;
+      padding-left: 10px;
+       padding-right: 10px;
+      padding-top: 15px;
+      vertical-align: middle;
+      .gray-text;
+      text-align: left;
+      > a{
+        display: inline-block;
+      margin-right: 27px;
+      font-size: 1.083em;
+      }
+    }
+    .footer-social{
+        display: inline-block;
+      margin: 0;
+      text-align: right;
+      border-left: solid 1px @brand-primary; 
+      vertical-align: middle;
+      padding: 0 0 0 12px;
+      font-size: 1.33em;
+      .primary-text;
+      
+      a{
+        display: inline-block;
+        margin: 0 0 0 17px;
+      vertical-align: middle;
+      }
+      
+    }
+  }
+  .footer-info{
+    background-color: @gray-base;
+    padding: 9px 0 9px;
+   .footer-logo{
+      width: 30%;
+      float: left;
+padding-left: 10px;
+padding-right: 10px;
+      vertical-align: middle;
+    }
+    .footer-copyright{
+      width: 68%;
+      float: right;
+      padding-left: 10px;
+       padding-right:10px;
+      vertical-align: middle;
+      margin:0 ;
+      padding-top: 5px;
+      text-align: right;
+      a{ 
+        margin:0 0 0 30px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+}
+@media (min-width: @screen-md) {
+.site-footer{
+.footer-nav{
+  .footer-nav-area{
+      width: 61%;
+      float: left;
+    font-size: 1em;
+  }
+   .footer-signup{
+      width: 38%;
+      float: right;
+      text-align: right;
+      padding-top: 0;
+      > a{
+      font-size: 1em;
+      }
+   }
+}
+}
+}
+@media (min-width: @screen-lg){
+.site-footer{
+  .footer-nav{
+    ul li{ 
+      padding: 0 30px 0 0;
+    }
+  }
+}
+}

@@ -1,0 +1,73 @@
+
+/*** mobile Sprite ***/
+[class^="sprite-"], [class*=" sprite2x-"] {
+  background: url("../images/sprite@2x.png") no-repeat 0 0;
+  display: inline-block;
+  text-indent: -9999px;
+  background-size: 50px;
+}
+
+.sprite-search{width: 20px;height: 20px;background-position: -5px -5px;}
+.sprite-scroll{width: 26px;height: 26px;background-position: -5px -30px;}
+.sprite-icon-l{width: 10px;height: 17px;background-position: -5px -61px;}
+.sprite-icon-r{width: 10px;height: 17px;background-position: -5px -83px;}
+.sprite-icon-down{width: 14px;height: 9px;background-position: -5px -108px;}
+.sprite-icon-up{width: 14px;height: 9px;background-position: -5px -130px;}
+.sprite-small-r{width: 3px;height: 10px;background-position: -5px -147px;}
+.sprite-small-r2{width: 9px;height: 14px;background-position: -5px -243px;}
+.sprite-mid-r{width: 6px;height: 10px;background-position: -5px -159px;}
+.sprite-facebook {width: 10px;height: 18px;background-position: -5px -174px;}
+.sprite-instagram {width: 18px;height: 18px;background-position: -5px -197px;}
+.sprite-sina {width: 22px;height: 18px;background-position: -5px -220px;}
+.sprite-icon-r{width: 10px;height: 17px;background-position: -5px -83px;}
+
+/*ipad*/
+@media (min-width: @screen-sm) {
+
+.sprite-scroll{
+  background: url("../images/sprite.png") no-repeat 0 0;
+  display: inline-block;
+  text-indent: -9999px;
+  background-size: 100px;width: 50px;height: 50px;background-position: -10px -30px;}
+}
+@media (max-width:@grid-float-breakpoint){
+.ie8 .sprite-search,
+.ie8 .sprite-scroll,
+.ie8 .sprite-icon-l,
+.ie8 .sprite-icon-r,
+.ie8 .sprite-icon-down,
+.ie8 .sprite-icon-up,
+.ie8 .sprite-icon-r,
+
+{
+  background-image: url("../images/sprite-ie.png");
+}
+.ie8 .sprite-scroll{
+width: 50px;height: 50px;background-position: 0 -143px;
+}
+
+}
+
+/*** Sprite ***/
+
+@media (min-width: @grid-float-breakpoint) {
+[class^="sprite-"], [class*=" sprite-"] {
+  background: url("../images/sprite.png") no-repeat 0 0;
+  display: inline-block;
+  text-indent: -9999px;
+  background-size: 100px;
+}
+.sprite-search{width: 12px;height: 16px;background-position: -10px -7px;}
+.sprite-scroll{width: 50px;height: 50px;background-position: -10px -30px;}
+.sprite-icon-l{width: 15px;height: 25px;background-position: -10px -90px;}
+.sprite-icon-l-r{width: 15px;height: 25px;background-position: -10px -125px;}
+.sprite-icon-r{width: 15px;height: 25px;background-position: -10px -160px;}
+.sprite-icon-r-r{width: 15px;height: 25px;background-position: -10px -195px;}
+.sprite-menu-r{width: 20px;height: 20px;background-position: -10px -230px;}
+.sprite-small-r{width: 5px;height: 8px;background-position: -10px -260px;}
+.sprite-small-r2{width: 5px;height: 8px;background-position: -10px -260px;}
+.sprite-mid-r{width: 11px;height: 19px;background-position: -10px -277px;}
+.sprite-facebook {width: 9px;height: 17px;background-position: -10px -306px;}
+.sprite-instagram {width: 17px;height: 17px;background-position: -10px -333px;}
+.sprite-sina {width: 21px;height: 17px;background-position: -10px -360px;}
+}
