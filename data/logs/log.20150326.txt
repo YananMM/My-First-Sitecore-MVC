@@ -1,0 +1,258 @@
+﻿13752 14:56:11 ERROR Could not load configuration file: D:\Sitecore\LandmarkSite\Website\App_Config\Include\Landmark.config: System.Xml.XmlException: 'patch' is an undeclared prefix. Line 10, position 13.
+   at System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   at System.Xml.XmlTextReaderImpl.LookupNamespace(NodeData node)
+   at System.Xml.XmlTextReaderImpl.AttributeNamespaceLookup()
+   at System.Xml.XmlTextReaderImpl.ParseAttributes()
+   at System.Xml.XmlTextReaderImpl.ParseElement()
+   at System.Xml.XmlTextReaderImpl.ParseElementContent()
+   at System.Xml.XmlReader.ReadStartElement()
+   at Sitecore.Xml.Patch.XmlReaderSource.<GetChildren>d__4.MoveNext()
+   at Sitecore.Xml.Patch.XmlPatchUtils.MergeChildren(XmlNode target, IXmlElement patch, XmlPatchNamespaces ns, Boolean targetWasInserted)
+   at Sitecore.Xml.Patch.XmlPatchUtils.MergeChildren(XmlNode target, IXmlElement patch, XmlPatchNamespaces ns, Boolean targetWasInserted)
+   at Sitecore.Configuration.ConfigPatcher.ApplyPatch(String filename)
+   at Sitecore.Configuration.Factory.LoadAutoIncludeFiles(ConfigPatcher patcher, String folder)
+13752 14:56:12 INFO  HttpModule is being initialized
+13752 14:56:13 INFO  
+13752 14:56:13 INFO  **********************************************************************
+13752 14:56:13 INFO  **********************************************************************
+13752 14:56:13 INFO  Sitecore started
+13752 14:56:13 INFO  Sitecore.NET 7.5 (rev. 150130)
+13752 14:56:13 INFO  
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\ajaxmin.dll (AjaxMinDLL, AjaxMin DLL for JavaScript and CSS minification)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\antixsslibrary.dll (Microsoft Anti-XSS Library v4.2, Encoding classes for safe-listing encoding of HTML, XML and other output types, 4.2)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\chilkatdotnet2.dll (Chilkat .NET, Chilkat .NET Components for V2.0 - V3.5 Frameworks)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\componentart.web.ui.dll ()
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\dotless.core.dll (dotless v1.2.1.0, Dynamic CSS for .net, 1.2.1.0)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\ecmascript.net.modified.dll (Modified version of the EcmaScript.NET assembly)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\htmlagilitypack.dll (Html Agility Pack, 1.4.6.0)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\ithit.webdav.server.dll (WebDav Server .Net v2, IT Hit WebDAV Server .Net v2)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\landmark.dll (Landmark)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\lucene.net.contrib.analyzers.dll (Lucene.Net.Contrib.Analyzers)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\lucene.net.contrib.core.dll (Lucene.Net.Contrib.Core, Contributions to the Lucene.Net core library)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\lucene.net.contrib.fastvectorhighlighter.dll (Lucene.Net.Contrib.FastVectorHighlighter, FastVectorHighlighter for Lucene.Net)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\lucene.net.contrib.highlighter.dll (Lucene.Net.Contrib.Highlighter, The Apache Software Foundation Lucene.Net a full-text search engine library, 2.3.2)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\lucene.net.contrib.memory.dll (Contrib.Memory)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\lucene.net.contrib.queries.dll (Lucene.Net.Contrib.Queries)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\lucene.net.contrib.regex.dll (Lucene.Net.Contrib.Regex)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\lucene.net.contrib.simplefacetedsearch.dll (Lucene.Net.SimpleFacetedSearch, SimpleFacetedSearch for Lucene.Net)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\lucene.net.contrib.snowball.dll (Lucene.Net.Contrib.Snowball, The Apache Software Foundation Lucene.Net a full-text search engine library, 2.0)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\lucene.net.contrib.spellchecker.dll (SpellChecker.Net, The Apache Software Foundation Lucene.Net a full-text search engine library, 3.0.3)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\lucene.net.dll (Lucene.Net, The Apache Software Foundation Lucene.Net a full-text search engine library, 3.0.3)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\microsoft.practices.unity.dll (Microsoft Unity Application Block, Unity Dependency Injection Framework)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\microsoft.web.infrastructure.dll (Microsoft ASP.Net WebPages)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\mongodb.bson.dll (MongoDB.Bson, Official 10gen supported C# BSON library. See http://www.mongodb.org/display/DOCS/CSharp+Language+Center for more details, {version: '1.8.3.9', semver: '1.8.3', commit: '28c1204b9d0e70ca2648a6f90f9a29035e7ad62c', commit_date: '2013-09-30 12:07:25'})
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\mongodb.driver.dll (MongoDB.Driver, Official 10gen supported C# driver for MongoDB.  See http://www.mongodb.org/display/DOCS/CSharp+Language+Center for more details, {version: '1.8.3.9', semver: '1.8.3', commit: '28c1204b9d0e70ca2648a6f90f9a29035e7ad62c', commit_date: '2013-09-30 12:07:25'})
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\morelinq.dll (MoreLINQ, Extensions to LINQ to Objects)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\mvp.xml.dll (MVP XML Library)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\newtonsoft.json.dll (Json.NET, Json.NET is a popular high-performance JSON framework for .NET)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\radeditor.net2.dll (RadEditor, Telerik RadEditor)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.abstractions.dll (Sitecore Buckets, 1.0.0 rev. 140127)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.analytics.aggregation.dll (Sitecore CMS, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.analytics.automation.aggregation.dll (Sitecore CMS, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.analytics.automation.dll (Sitecore EAS, Sitecore Engagement Automation Suite, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.analytics.automation.mongodb.dll (Sitecore CMS, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.analytics.core.dll (Sitecore CMS, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.analytics.dataaccess.dll (Sitecore CMS, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.analytics.dll (Sitecore DMS, Sitecore Digital Marketing System, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.analytics.model.dll (Sitecore CMS, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.analytics.mongodb.dll (Sitecore DMS, Sitecore Digital Marketing System MongoDB Connector, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.analytics.processing.dll (Sitecore CMS, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.analytics.robotdetection.dll (Sitecore Robot Detection, 1.0.0 rev. 141224)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.analytics.sql.dll (Sitecore CMS, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.apps.loader.dll (Sitecore.Apps.Loader, 1.0.0 rev. 130822)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.apps.taginjection.dll (Sitecore Tag Management, 1.0.0 rev. 140814)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.buckets.client.dll (Sitecore Buckets, The assembly can be used to have Sitecore queries driven via a query, 1.0.0 rev. 150116)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.buckets.dll (Sitecore Buckets, The assembly can be used to have Sitecore queries driven via search providers, 1.0.0 rev. 150116)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.cintel.client.dll (Sitecore Experience Profile, 1.0.0 rev. 140926)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.cintel.dll (Sitecore Experience Profile, 1.0.0 rev. 140926)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.client.dll (Sitecore CMS, Sitecore Client Application, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.client.extensions.compiler.dll (SPEAK 1.0.0 rev. 140131, 1.0.0 rev. 140131)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.client.extensions.dll (SPEAK 1.0.0 rev. 140131, 1.0.0 rev. 140131)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.cloud.nexus.dll (Sitecore.Cloud.Nexus)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.cloud.restclient.dll (Sitecore.Cloud.RestClient)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.cloud.servicemodel.dll (Sitecore.Cloud.ServiceModel)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.cloud.xdb.dll (Sitecore.Cloud.Xdb, 0.9 rev. 141203)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.cloud.xdb.servicemodel.dll (Sitecore.Cloud.ScS.Xdb.Discovery.ServiceModel)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.contentsearch.analytics.client.dll (Sitecore Buckets, 1.0.0 rev. 150116)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.contentsearch.analytics.dll (Sitecore Buckets, 1.0.0 rev. 150116)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.contentsearch.client.dll (Sitecore Buckets, 1.0.0 rev. 150116)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.contentsearch.dll (Sitecore Buckets, Sitecore CMS Search, 1.0.0 rev. 150116)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.contentsearch.linq.dll (Sitecore Buckets, Sitecore CMS Search, 1.0.0 rev. 150116)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.contentsearch.linq.lucene.dll (Sitecore Buckets, 1.0.0 rev. 150116)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.contentsearch.luceneprovider.dll (Sitecore Buckets, Sitecore CMS Search, 1.0.0 rev. 150116)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.emailcampaign.analytics.model.dll (Sitecore.EmailCampaign.Analytics.Model)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.emailcampaign.app.dll (E-mail Campaign Manager 2.2. rev. 141007, 2.2 rev. 141007)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.emailcampaign.application.dll (Sitecore.EmailCampaign.Application)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.emailcampaign.data.dll (E-mail Campaign Manager 2.2. rev. 141007, 2.2 rev. 141007)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.emailcampaign.dll (E-mail Campaign Manager 2.2. rev. 141007, 2.2 rev. 141007)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.emailcampaign.domain.dll (E-mail Campaign Manager 2.2. rev. 141007, 2.2 rev. 141007)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.emailcampaign.presentation.dll (E-mail Campaign Manager 2.2. rev. 141007, 2.2 rev. 141007)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.emailcampaign.presentation.ui.dll (Sitecore.EmailCampaign.Presentation.Sublayots)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.itemwebapi.dll (Sitecore Item Web API, 1.2.0 rev. 140919)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.kernel.dll (Sitecore CMS, Sitecore CMS Kernel Library, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.logging.dll (Sitecore CMS, Sitecore Logging Framework, 6.6.0 rev. 120918)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.mvc.analytics.dll (Sitecore Mvc Analytics 1.0.0, 1.0.0 rev. 140813)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.mvc.devicesimulator.dll (Sitecore Mvc Device Simulators 1.0.0, 1.0.0 rev. 140225)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.mvc.dll (Sitecore Mvc 1.0.0, 1.0.0 rev. 140709)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.mvc.experienceeditor.dll (Sitecore Mvc Experience Editor 1.0.0, 1.0.0 rev. 140225)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.nexus.dll (Sitecore.Nexus)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.nvelocity.dll (Sitecore CMS, Sitecore Macro Expansion Library, 6.6.0 rev. 120918)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.oracle.dll (Sitecore CMS, Oracle Data Provider for Sitecore, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.publishing.webdeploy.dll (Sitecore CMS, Sitecore publishing infrastructure based on Web Deployment Tool, 1.0.0 rev. 090323)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.rocks.server.cms7.dll (Sitecore.Rocks.Server.Cms7)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.rocks.server.core.dll (Sitecore.Rocks.Server.Core)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.rocks.server.dll (Sitecore.Rocks, Sitecore Rocks makes Sitecore developers happy. Directly integrated into Microsoft Visual Studio 2010/2012/2013, Sitecore Rocks provides a fast and streamlined development experience with tools that developers are used to)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.rocks.server.lucene.2313.dll (Sitecore.Rocks.Server.Lucene.2313)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.rocks.server.lucene.2941.dll (Sitecore.Rocks.Server.Lucene.2914)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.rocks.server.lucene.3030.dll (Sitecore.Rocks.Server.Lucene.3030)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.rocks.server.speak.dll (Sitecore.Rocks.Server.Speak)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.rocks.server.validation.dll (Sitecore.Rocks.Server.Validation)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.security.anticsrf.dll (Sitecore AntiCSRF Module, 1.0.0 rev. 141224)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.segmentbuilder.dll (Sitecore Segment Builder, 1.0.0 rev. 140805)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.services.client.dll (Sitecore Services 1.0.0, Sitecore Services, 1.0.0)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.services.core.dll (Sitecore Services 1.0.0, Sitecore Services, 1.0 rev. 141112)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.services.infrastructure.dll (Sitecore Services 1.0.0, Sitecore Services, 1.0 rev. 141112)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.services.infrastructure.sitecore.dll (Sitecore Services 1.0.0, Sitecore Services, 1.0 rev. 141112)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.sessionprovider.dll (Sitecore CMS, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.sessionprovider.memory.dll (Sitecore CMS, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.sessionprovider.mongodb.dll (Sitecore CMS, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.sessionprovider.sql.dll (Sitecore CMS, 7.5 rev. 150130)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.shell.marketingautomation.dll (Sitecore Engagement Automation Suite, 1.0.0 rev. 150105)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.speak.applications.dll (Sitecore Speak Applications, 1.2.0 rev. 140715)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.speak.charting.dll (Sitecore Speak Charting, 1.0.1 rev. 140731)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.speak.client.dll (Sitecore Speak.Dev, 1.2.1 rev. 140925)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.speak.dll (SPEAK 1.0.0 rev. 140131, 1.0.0 rev. 140131)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.speak.itemwebapi.dll (Sitecore Speak.Dev, 1.2.1 rev. 140925)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.speak.mvc.dll (Sitecore Speak.Dev, 1.2.1 rev. 140925)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.speak.web.dll (Sitecore Speak.Dev, 1.2.1 rev. 140925)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.speak.website.dll (SPEAK 1.0.0 rev. 140131, 1.0.0 rev. 140131)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.update.dll (Sitecore Update Installation Wizard, 1.0.0 rev. 150113)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\sitecore.zip.dll (Sitecore CMS, ZIP support for Sitecore, 7.0.0)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\stimulsoft.base.dll (Stimulsoft Reports, Stimulsoft Base)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\stimulsoft.database.dll (Stimulsoft Reports, Stimulsoft Reports Database Helper)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\stimulsoft.report.dll (Stimulsoft Reports, Stimulsoft Reports Engine)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\stimulsoft.report.web.dll (Stimulsoft Reports.Web, Stimulsoft Reports.Web Viewer)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\stimulsoft.report.webdesign.dll (Stimulsoft Reports Designer.Web, Stimulsoft Reports Designer.Web)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\system.net.http.dll (Microsoft® .NET Framework, System.Net.Http.dll, 4.0.30319.18408)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\system.net.http.formatting.dll (Microsoft ASP.NET MVC, 5.1.1-20129 (54866f0d3262d0fccfc2cb463f003459fcabd6c8))
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\system.net.http.webrequest.dll (Microsoft® .NET Framework, System.Net.Http.WebRequest.dll, 4.0.30319.18408)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\system.web.cors.dll (Microsoft ASP.NET MVC, 5.1.0-20110)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\system.web.helpers.dll (Microsoft ASP.NET Web Pages, 3.0.0-20110)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\system.web.http.cors.dll (Microsoft ASP.NET MVC, 5.1.0-20110)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\system.web.http.dll (Microsoft ASP.NET MVC, 5.1.1-20129 (54866f0d3262d0fccfc2cb463f003459fcabd6c8))
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\system.web.http.webhost.dll (Microsoft ASP.NET MVC, 5.1.1-20129 (54866f0d3262d0fccfc2cb463f003459fcabd6c8))
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\system.web.mvc.dll (Microsoft ASP.NET MVC, System.Web.Mvc.dll, 5.1.0-20110)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\system.web.razor.dll (Microsoft ASP.NET Web Pages, 3.0.0-20110)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\system.web.webpages.deployment.dll (Microsoft ASP.NET Web Pages, 3.0.0-20110)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\system.web.webpages.dll (Microsoft ASP.NET Web Pages, 3.0.0-20110)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\system.web.webpages.razor.dll (Microsoft ASP.NET Web Pages, 3.0.0-20110)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\telerik.web.ui.dll (Telerik.Web.UI, Telerik RadControls for ASP.NET Ajax)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\telerik.web.ui.skins.dll (Telerik RadControls for ASP.NET Ajax Skins)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\webformsmvp.dll (Web Forms MVP)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\webformsmvp.unity.dll (Web Forms MVP, Unity library integration)
+13752 14:56:13 INFO  d:\sitecore\landmarksite\website\bin\yahoo.yui.compressor.dll (YUI Compressor, A .NET port of the Yahoo! YUI Compressor project)
+13752 14:56:13 INFO  
+13752 14:56:13 INFO  Operating system Microsoft Windows NT 6.1.7601 Service Pack 1
+13752 14:56:13 INFO  
+13752 14:56:13 INFO  Microsoft.NET version 4.0.30319.18444
+13752 14:56:13 INFO  
+13752 14:56:13 INFO  UTC offset: 08:00:00
+13752 14:56:14 INFO  Machine name: Yanan-PC
+13752 14:56:14 INFO  App pool ID: LandmarkAppPool
+13752 14:56:14 INFO  
+13752 14:56:14 INFO  Process ID: 15516
+13752 14:56:14 INFO  Windows identity used by the process: NT AUTHORITY\NETWORK SERVICE. Impersonation: False
+13752 14:56:14 INFO  Managed pipeline mode: Integrated
+13752 14:56:14 INFO  
+13752 14:56:14 INFO  EventQueues enabled: True
+13752 14:56:14 INFO  Instance Name:YANAN-PC-Landmark
+13752 14:56:14 INFO  
+13752 14:56:14 INFO  Threshold settings
+13752 14:56:14 INFO    Show threshold warnings: False
+13752 14:56:14 INFO  
+13752 14:56:14 INFO  Databases
+13752 14:56:14 INFO    core
+13752 14:56:14 INFO    master
+13752 14:56:14 INFO    web
+13752 14:56:14 INFO    filesystem
+13752 14:56:14 INFO  
+13752 14:56:14 INFO  Domains
+13752 14:56:14 INFO  Heartbeat - Initializing
+13752 14:56:14 INFO  Heartbeat - Interval set to: 00:00:02
+13752 14:56:14 INFO  Heartbeat - Worker thread started
+13752 14:56:14 INFO  Trying to load XML configuration /App_Config/Security/Domains.config
+13752 14:56:14 INFO    sitecore
+13752 14:56:14 INFO    extranet
+13752 14:56:14 INFO    Emailcampaign
+13752 14:56:14 INFO    default
+13752 14:56:14 FATAL Could not find license file: D:\Projects\Landmark\Website\data\license.xml
+13752 14:56:14 INFO  
+13752 14:56:14 INFO  Analytics is disabled.
+13752 14:56:14 INFO  **********************************************************************
+13752 14:56:14 INFO  **********************************************************************
+13752 14:56:14 INFO  Attempting to get ASP.NET process history
+13752 14:56:15 WARN  No process history available
+13752 14:56:15 INFO  Cache created: 'LanguageProvider - Languages' (max size: 100KB, running total: 100KB)
+13752 14:56:15 INFO  Cache created: 'DeviceItemsCache' (max size: 10MB, running total: 10MB)
+13752 14:56:15 INFO  Cache created: 'core[data]' (max size: 20MB, running total: 30MB)
+13752 14:56:15 INFO  Cache created: 'core[items]' (max size: 10MB, running total: 40MB)
+13752 14:56:15 INFO  Cache created: 'core[paths]' (max size: 500KB, running total: 40MB)
+13752 14:56:15 INFO  Cache created: 'core[standardValues]' (max size: 500KB, running total: 41MB)
+13752 14:56:15 INFO  Cache created: 'core[itempaths]' (max size: 10MB, running total: 51MB)
+13752 14:56:15 INFO  Cache created: 'core[blobIDs]' (max size: 500KB, running total: 51MB)
+13752 14:56:15 INFO  Cache created: 'master[data]' (max size: 20MB, running total: 71MB)
+13752 14:56:15 INFO  Cache created: 'master[items]' (max size: 10MB, running total: 81MB)
+13752 14:56:15 INFO  Cache created: 'master[paths]' (max size: 500KB, running total: 82MB)
+13752 14:56:15 INFO  Cache created: 'master[standardValues]' (max size: 500KB, running total: 82MB)
+13752 14:56:15 INFO  Cache created: 'master[itempaths]' (max size: 10MB, running total: 92MB)
+13752 14:56:15 INFO  Cache created: 'master[blobIDs]' (max size: 500KB, running total: 93MB)
+13752 14:56:15 INFO  Cache created: 'web[data]' (max size: 20MB, running total: 113MB)
+13752 14:56:15 INFO  Cache created: 'web[items]' (max size: 10MB, running total: 123MB)
+13752 14:56:15 INFO  Cache created: 'web[paths]' (max size: 500KB, running total: 123MB)
+13752 14:56:15 INFO  Cache created: 'web[standardValues]' (max size: 500KB, running total: 124MB)
+13752 14:56:15 INFO  Cache created: 'web[itempaths]' (max size: 10MB, running total: 134MB)
+13752 14:56:15 INFO  Cache created: 'web[blobIDs]' (max size: 500KB, running total: 134MB)
+13752 14:56:15 INFO  Cache created: 'filesystem[data]' (max size: 0 bytes, running total: 134MB)
+13752 14:56:15 INFO  Cache created: 'filesystem[items]' (max size: 0 bytes, running total: 134MB)
+13752 14:56:15 INFO  Cache created: 'filesystem[paths]' (max size: 0 bytes, running total: 134MB)
+13752 14:56:15 INFO  Cache created: 'filesystem[standardValues]' (max size: 0 bytes, running total: 134MB)
+13752 14:56:15 INFO  Cache created: 'filesystem[itempaths]' (max size: 10MB, running total: 144MB)
+13752 14:56:15 INFO  Cache created: 'filesystem[blobIDs]' (max size: 500KB, running total: 144MB)
+13752 14:56:16 FATAL Could not find license file: D:\Projects\Landmark\Website\data\license.xml
+13752 14:56:16 FATAL Could not find license file: D:\Projects\Landmark\Website\data\license.xml
+13752 14:56:16 FATAL Could not find license file: D:\Projects\Landmark\Website\data\license.xml
+13752 14:56:16 FATAL Could not find license file: D:\Projects\Landmark\Website\data\license.xml
+13752 14:56:16 ERROR Error loading hook: <hook type="Sitecore.Diagnostics.MemoryMonitorHook, Sitecore.Kernel"><param desc="Threshold">800MB</param><param desc="Check interval">00:00:05</param><param desc="Minimum time between log entries">00:01:00</param><ClearCaches>false</ClearCaches><GarbageCollect>false</GarbageCollect><AdjustLoadFactor>false</AdjustLoadFactor></hook>
+Exception: Sitecore.SecurityModel.License.LicenseException
+Message: Required license is missing: Runtime
+Source: Sitecore.Kernel
+   at Sitecore.SecurityModel.License.LicenseManager.DemandRuntime(Boolean acceptExpress, Boolean forceUpdate)
+   at Sitecore.Data.Managers.ItemManager.GetItem(String itemPath, Language language, Version version, Database database)
+   at Sitecore.Globalization.DictionaryDomain.GetDomainDefinitionItem(Database database, String name)
+   at Sitecore.Globalization.DictionaryDomain.TryParse(String domainDefinition, Database database, DictionaryDomain& domain)
+   at Sitecore.Globalization.DictionaryDomain.GetDefaultDomain(Database database)
+   at Sitecore.Pipelines.GetTranslation.TryGetFromContextDatabase.Process(GetTranslationArgs args)
+   at (Object , Object[] )
+   at Sitecore.Pipelines.CorePipeline.Run(PipelineArgs args)
+   at Sitecore.Globalization.Translate.TextByLanguage(String domainName, TranslateOptions options, String key, Language language, String defaultValue, Object[] parameters)
+   at Sitecore.Globalization.Translate.TextByLanguage(String key, Language language)
+   at Sitecore.MainUtil.FormatSize(Int64 size)
+   at Sitecore.Diagnostics.MemoryMonitorHook.Initialize()
+   at Sitecore.Events.Hooks.HookManager.LoadAll()
+
+13752 14:56:16 FATAL Could not find license file: D:\Projects\Landmark\Website\data\license.xml
+13752 14:56:16 INFO  SubmitQueueService was not started as Analytics is disabled.
+ManagedPoolThread #16 14:56:16 INFO  Trying to load XML configuration /App_Config/Security/Domains.config
+13752 14:56:16 FATAL Could not find license file: D:\Projects\Landmark\Website\data\license.xml
+13752 14:56:16 FATAL Could not find license file: D:\Projects\Landmark\Website\data\license.xml
+13752 14:56:16 INFO  Automation aggregation subsystem loader is not initialized as Analytics is disabled.
+13752 14:56:16 FATAL Could not find license file: D:\Projects\Landmark\Website\data\license.xml
+13752 14:56:16 INFO  Cache created: 'rules' (max size: 800KB, running total: 145MB)
+13752 14:56:16 INFO  Cache created: '[FieldReaderCache]' (max size: 5MB, running total: 150MB)
+Heartbeat 14:56:19 INFO  Cache created: 'SqlDataProvider - Property data(core)' (max size: 500KB, running total: 151MB)
+Heartbeat 14:56:19 INFO  Cache created: 'SqlDataProvider - Property data(master)' (max size: 500KB, running total: 151MB)
+Heartbeat 14:56:19 INFO  Cache created: 'SqlDataProvider - Property data(web)' (max size: 500KB, running total: 152MB)
+14480 14:56:29 INFO  **************************************************
+14480 14:56:29 WARN  Sitecore shutting down
+14480 14:56:29 WARN  Shutdown message: Initialization Error
+HostingEnvironment initiated shutdown

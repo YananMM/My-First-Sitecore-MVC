@@ -1,0 +1,17 @@
+﻿13752 14:56:17 INFO  [Index=sitecore_analytics_index] Initializing TimedIndexStrategy with interval '00:01:00'.
+13752 14:56:17 INFO  [Index=sitecore_core_index] Initializing IntervalAsynchronousUpdateStrategy with interval '00:01:00'.
+13752 14:56:17 INFO  [Index=sitecore_core_index] Initializing SitecoreItemCrawler. DB:core / Root:/sitecore
+13752 14:56:17 INFO  [Index=sitecore_master_index] Initializing SynchronousStrategy.
+13752 14:56:17 INFO  [Index=sitecore_master_index] Initializing SitecoreItemCrawler. DB:master / Root:/sitecore
+13752 14:56:17 INFO  [Index=sitecore_web_index] Initializing OnPublishEndAsynchronousStrategy.
+13752 14:56:17 INFO  [Index=sitecore_web_index] Initializing SitecoreItemCrawler. DB:web / Root:/sitecore
+13752 14:56:17 INFO  [Index=sitecore_analytics_index] Initializing TimedIndexStrategy with interval '00:01:00'.
+13752 14:56:19 INFO  [Index=sitecore_core_index] Initializing IntervalAsynchronousUpdateStrategy with interval '00:01:00'.
+13752 14:56:19 INFO  [Index=sitecore_master_index] Initializing SynchronousStrategy.
+13752 14:56:19 INFO  [Index=sitecore_web_index] Initializing OnPublishEndAsynchronousStrategy.
+14480 14:56:29 WARN  Hosting Environment Stop Requested : immediate=False
+14480 14:56:29 WARN  [Index=sitecore_analytics_index] Crawling Stopped
+14480 14:56:29 WARN  [Index=sitecore_core_index] Crawling Stopped
+14480 14:56:29 WARN  [Index=sitecore_master_index] Crawling Stopped
+14480 14:56:29 WARN  [Index=sitecore_web_index] Crawling Stopped
+14480 14:56:59 WARN  Hosting Environment Stop Requested : immediate=True
