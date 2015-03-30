@@ -12,7 +12,7 @@ templatekey: T1 Slide Variation 1
 ----version----
 language: en
 version: 1
-revision: 269e22ab-f17e-4e61-84fd-940a531325da
+revision: 9af55c2c-3fd2-47f4-88af-99a4b4c16688
 
 ----field----
 field: {F97C0C0A-EA95-4AB0-83AF-F00AB066FC52}
@@ -22,6 +22,13 @@ content-length: 63
 
 <h2><span>1</span>GENERATIONS</h2>
 <h2><span>1</span>NAME</h2>
+----field----
+field: {F5E620D9-1237-4617-9F96-F2F633D41353}
+name: Slide CSS
+key: slide css
+content-length: 7
+
+panel-1
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -49,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-269e22ab-f17e-4e61-84fd-940a531325da
+9af55c2c-3fd2-47f4-88af-99a4b4c16688
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150330T153507:635633265076928816
+20150330T160216:635633281369550700
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

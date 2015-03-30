@@ -12,7 +12,7 @@ templatekey: T1 Slide Variation 4
 ----version----
 language: en
 version: 1
-revision: d0adad53-db33-4944-b0bd-7fc7d3458d05
+revision: 3c869f97-26ce-4eda-9732-8fc0aaa2812d
 
 ----field----
 field: {F41EE7FD-A1CB-416B-B6D3-A079BB159006}
@@ -21,6 +21,13 @@ key: slide title
 content-length: 26
 
 <h3>HOT BAGS FOR SALE</h3>
+----field----
+field: {7D706D9C-F1AE-457F-BEA8-13C7FC6A0D7B}
+name: Slide CSS
+key: slide css
+content-length: 7
+
+panel-4
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d0adad53-db33-4944-b0bd-7fc7d3458d05
+3c869f97-26ce-4eda-9732-8fc0aaa2812d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150330T154343:635633270232363690
+20150330T160254:635633281741681985
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
