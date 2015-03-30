@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {B4C458C2-0BF1-44BC-A707-7D79C8415769}
+database: master
+path: /sitecore/templates/User Defined/Landmark/Object/T1 Slide Variation 2/__Standard Values
+parent: {19EF80D8-DE12-4F4C-8DF7-7E11B1954ECE}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {19EF80D8-DE12-4F4C-8DF7-7E11B1954ECE}
+templatekey: T1 Slide Variation 2
+
+----version----
+language: en
+version: 1
+revision: d64af2d2-b3f4-49c1-8974-8d3d24f8b42f
+
+----field----
+field: {D933744B-7F10-4CFD-AFC1-5EEFDF9C7CD2}
+name: Slide Title
+key: slide title
+content-length: 26
+
+<h3>HOT BAGS FOR SALE</h3>
+----field----
+field: {01E45058-2B6C-4365-8F65-AB2723BA857B}
+name: Slide CSS
+key: slide css
+content-length: 7
+
+panel-2
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150330T153515
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d64af2d2-b3f4-49c1-8974-8d3d24f8b42f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150330T160227:635633281478206915
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

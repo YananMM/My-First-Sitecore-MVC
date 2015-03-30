@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {DFEBB331-3684-4C39-80A9-33FF0A32B6F0}
+id: {7D706D9C-F1AE-457F-BEA8-13C7FC6A0D7B}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Landmark Config/Landmark Data/Copyright Text
-parent: {BBE7E4A2-137D-42BE-8D96-A2738DFB9A4F}
-name: Copyright Text
+path: /sitecore/templates/User Defined/Landmark/Object/T1 Slide Variation 4/T1 Slide Variation/Slide CSS
+parent: {FBC0FBFA-AB0F-4E6C-A45F-9DE92104CE6A}
+name: Slide CSS
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -22,11 +22,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-500
+200
 ----version----
 language: en
 version: 1
-revision: e948dde8-2552-4472-b80d-f202c542920c
+revision: 6fa592a7-c53f-4e92-bffd-49956f15c506
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20150326T160958
+20150330T160035
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-e948dde8-2552-4472-b80d-f202c542920c
+6fa592a7-c53f-4e92-bffd-49956f15c506
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150330T150021:635633244219245824
+20150330T160038:635633280389454642
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

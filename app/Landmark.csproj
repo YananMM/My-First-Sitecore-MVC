@@ -41,12 +41,15 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Sitecore.Client">
       <HintPath>..\lib\Sitecore.Client.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel">
       <HintPath>..\lib\Sitecore.Kernel.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Mvc">
       <HintPath>..\lib\Sitecore.Mvc.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -234,10 +237,11 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Layouts\MainViewLayout.cshtml" />
-    <Content Include="Views\Shared\ScriptSublayout.cshtml" />
+    <Content Include="Views\Shared\ScriptRendering.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
     <Content Include="Views\Renderings\FooterNavigation.cshtml" />
     <Content Include="Views\Renderings\SocialMedia.cshtml" />
+    <Content Include="Views\Renderings\T1PanelRendering.cshtml" />
     <Content Include="Views\Renderings\FooterConfig.cshtml" />
   </ItemGroup>
   <ItemGroup>

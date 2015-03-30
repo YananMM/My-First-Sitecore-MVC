@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {D9187C48-E385-4E51-A249-B65C161956B0}
+id: {71A54F1D-A5F2-43BD-881C-1A62192BB6BB}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Landmark Config
+path: /sitecore/templates/User Defined/Landmark/Object/T1 Slide Variation
 parent: {945A23C4-9F15-4977-B0E0-AD413983C0BB}
-name: Landmark Config
+name: T1 Slide Variation
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
@@ -17,16 +17,23 @@ content-length: 38
 
 {1930BBEB-7805-471A-A3BE-4858AC7CF696}
 ----field----
+field: {F7D48A55-2158-4F02-9356-756654404F73}
+name: __Standard values
+key: __standard values
+content-length: 38
+
+{05F43EA4-18D9-4AB2-8325-B3D5956FFC3A}
+----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 27
+content-length: 32
 
-Applications/32x32/gear.png
+Applications/32x32/form_blue.png
 ----version----
 language: en
 version: 1
-revision: 3ad52e04-3b5f-447e-a984-72935be409d4
+revision: 9d40155a-2999-4e59-b455-dd1b17447dd3
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,7 +41,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20150325T163830
+20150330T150447
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3ad52e04-3b5f-447e-a984-72935be409d4
+9d40155a-2999-4e59-b455-dd1b17447dd3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150326T160958:635629829985977605
+20150330T153925:635633267655466300
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

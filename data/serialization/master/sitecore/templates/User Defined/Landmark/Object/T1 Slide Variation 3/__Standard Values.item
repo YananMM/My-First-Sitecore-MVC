@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {9F36784C-C131-490E-824B-874426D09FE0}
+database: master
+path: /sitecore/templates/User Defined/Landmark/Object/T1 Slide Variation 3/__Standard Values
+parent: {6C4307CC-ACFB-4A29-A9DA-BAC755C0AA1D}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {6C4307CC-ACFB-4A29-A9DA-BAC755C0AA1D}
+templatekey: T1 Slide Variation 3
+
+----version----
+language: en
+version: 1
+revision: 2e0b2e47-c3d5-4f61-aa87-8b5c0a6da644
+
+----field----
+field: {576EE869-E403-48F5-BEDE-D103C4DA6501}
+name: Slide Title
+key: slide title
+content-length: 63
+
+<h2><span>3</span>GENERATIONS</h2>
+<h2><span>1</span>NAME</h2>
+----field----
+field: {69594F7B-ED73-4283-A64E-A621697BF996}
+name: Slide CSS
+key: slide css
+content-length: 7
+
+panel-3
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150330T153537
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2e0b2e47-c3d5-4f61-aa87-8b5c0a6da644
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150330T160241:635633281610274469
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
