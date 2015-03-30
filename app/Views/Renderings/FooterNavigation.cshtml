@@ -6,51 +6,7 @@
     var footerList = Model.Item.Children.ToList();
 }
 
-<div class="back-top clearfix"><a href="#" class="back-to-top">TOP</a></div>
-<footer class="site-footer">
-    <section class="footer-nav">
-        <div class="container">
-            <div class="row">
-                <div class="footer-nav-area">
-                    <ul>
-                        @foreach (var item in footerList)
-                        {
-                            <li>@Html.Sitecore().Field("Link URL", item, new { text = item["Link Text"] })</li>
-                        }
-                    </ul>  
-                </div>
-                <div class="footer-signup">
-                    <a href="">NEWSLETTER SIGNUP</a>
-                    <div class="footer-social">
-                        <a href="#" title="facebook"><span class="icomoon-facebook"></span></a>
-                        <a href="#" title="instagram"><span class="icomoon-instagram"></span></a>
-                        <a href="#" title="sina"><span class="icomoon-sina-weibo"></span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="footer-info">
-        <div class="container">
-            <div class="row">
-                <div class="footer-logo">
-                    <a href=""><img data-src="/files/landmark/images/logo-footer.png" alt="HongKong Land"></a>
-                </div>
-                <div class="footer-copyright">
-                    &copy; Copyright &copy; 2014 Hongkong Land Limited. All Rights Reserved<a href="#">Legal &amp; Privacy</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-</footer>
-
-<div id="portrait_only" class="portrait_only hidden">
-    <div class="content">
-        <p>This site is best experienced in portrait mode. Please rotate your device. </p>
-        <img class="rotate_icon" width="100" height="100" src="/files/landmark/images/portrait_only.gif" alt="" />
-    </div>
-</div>
-
-
+@foreach (var item in footerList)
+{
+    <li>@Html.Sitecore().Field("Link URL", item, new { text = item["Link Text"] })</li>
+}
