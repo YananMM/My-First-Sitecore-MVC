@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {11C26036-404D-4837-9093-D86AE72F957D}
+database: master
+path: /sitecore/content/Home/Landmark/Landmark Panels/Landmark Slides/T1 Slide Variation 1
+parent: {DB43076D-F11D-4BC3-91F4-AADA09F50ED6}
+name: T1 Slide Variation 1
+master: {00000000-0000-0000-0000-000000000000}
+template: {118923E0-6DB7-4347-9B58-69241D31CB72}
+templatekey: T1 Slide Variation 1
+
+----version----
+language: en
+version: 1
+revision: fe7e541d-6ea3-479c-afa8-31569905106c
+
+----field----
+field: {028A0158-C2E5-4830-B094-D6B62FF600F1}
+name: Slide Image
+key: slide image
+content-length: 259
+
+<image mediapath="/Images/Landmark/Slide Variation Images/main-001" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Slide Variation Images/main-001" mediaid="{F704D056-A3EC-405C-B2E0-A9F88698CAAA}" />
+----field----
+field: {3E9458DD-9BCC-4781-84D9-1951F9D205A8}
+name: Slide Content
+key: slide content
+content-length: 158
+
+Generations of families sharing moments and making memories. All part of 208 fine stores and restaurants in 4 connected buildings that go by 1 name, LANDMARK.
+----field----
+field: {F3211CC3-054C-4011-8639-C86F27278195}
+name: Slide CSS
+key: slide css
+content-length: 7
+
+panel-1
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150330T153742
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fe7e541d-6ea3-479c-afa8-31569905106c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150330T155513:635633277137118619
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
