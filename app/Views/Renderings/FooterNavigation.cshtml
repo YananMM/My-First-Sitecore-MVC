@@ -1,12 +1,11 @@
-﻿@using Sitecore.Mvc
-@using Sitecore.Mvc.Presentation
-@model RenderingModel
+﻿@model RenderingModel
 
 @{
     var footerList = Model.Item.Children.ToList();
 }
-
-@foreach (var item in footerList)
-{
-    <li>@Html.Sitecore().Field("Link URL", item, new { text = item["Link Text"] })</li>
-}
+<ul>
+    @foreach (var item in footerList)
+    {
+        <li>@Html.Sitecore().Field("Link URL", item, new { text = item["Link Text"] })</li>
+    }
+</ul>

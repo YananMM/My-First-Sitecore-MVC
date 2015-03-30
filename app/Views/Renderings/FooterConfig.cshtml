@@ -1,12 +1,14 @@
-﻿@using Sitecore.Mvc
-@using Sitecore.Mvc.Presentation
-@model RenderingModel
-
+﻿@model RenderingModel
+@{
+    var item = Model.Item;
+    var image = item["Iamge"];
+}
 
 <div class="container">
     <div class="row">
         <div class="footer-logo">
             <a href=""><img data-src="/files/landmark/images/logo-footer.png" alt="HongKong Land"></a>
+            @Html.Sitecore().Field("Image", new { @class = "" })
         </div>
         <div class="footer-copyright">
             &copy; Copyright &copy; 2014 Hongkong Land Limited. All Rights Reserved<a href="#">Legal &amp; Privacy</a>
