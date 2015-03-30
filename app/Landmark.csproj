@@ -219,6 +219,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="App_Config\Include\Landmark.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -237,20 +238,18 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Layouts\MainViewLayout.cshtml" />
     <Content Include="Views\Shared\ScriptRendering.cshtml" />
+    <Content Include="Views\Shared\Footer.cshtml" />
     <Content Include="Views\Renderings\FooterNavigation.cshtml" />
+    <Content Include="Views\Renderings\SocialMedia.cshtml" />
     <Content Include="Views\Renderings\T1PanelRendering.cshtml" />
+    <Content Include="Views\Renderings\FooterConfig.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="files\landmark\less\css\" />
     <Folder Include="Models\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_Config\Include\Landmark.config" />
+    <Folder Include="Views\Sublayouts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="files\landmark\fonts\bertholdakzidenzgroteskbelight.eot" />
