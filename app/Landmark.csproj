@@ -236,7 +236,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Layouts\MainViewLayout.cshtml" />
-    <Content Include="Views\Sublayouts\ScriptSublayout.cshtml" />
+    <Content Include="Views\Shared\ScriptSublayout.cshtml" />
     <Content Include="Views\Renderings\FooterNavigation.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -244,6 +244,7 @@
     <Folder Include="Controllers\" />
     <Folder Include="files\landmark\less\css\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Sublayouts\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
