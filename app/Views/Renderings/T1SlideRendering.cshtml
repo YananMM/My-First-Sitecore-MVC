@@ -1,4 +1,5 @@
-﻿@using Sitecore.Mvc.Helpers
+﻿@using Landmark.Helper
+@using Sitecore.Mvc.Helpers
 @model RenderingModel
 @{
     var slideList = Model.Item.Children.ToList();
@@ -9,13 +10,12 @@
         {
 
             <li>
-
                 <div class="@item["Slide CSS"] clearfix">
-                    <div class="panel-img" data-bg=""></div>
+                    <div class="panel-img" data-bg="@Html.Sitecore().ImageFieldSrc("Slide Image",item)"></div>
                     <div class="panel-main">
                         <div class="panel-text">
                             <hgroup class="clearfix">
-                                @item["Slide Title"]
+                                @Html.Raw(item["Slide Title"])
                             </hgroup>
                             <div class="panel-content">
                                 @item["Slide Content"]
@@ -24,9 +24,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </li>
         }
     </ul>
