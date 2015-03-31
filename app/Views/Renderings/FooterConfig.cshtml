@@ -1,16 +1,13 @@
-﻿@using Sitecore.Common
-@model RenderingModel
-
+﻿@model RenderingModel
+@using Landmark.Helper
+@{
+    string src = Html.Sitecore().ImageFieldSrc("Hongkong Land Image", Model.Item);
+}
 <div class="container">
     <div class="row">
         <div class="footer-logo">
             @*<a href=""><img data-src="/files/landmark/images/logo-footer.png" alt="HongKong Land"></a>*@
-            @{
-                Sitecore.Data.Fields.ImageField imageField = Model.Item.Fields["Landmark Logo Image"];
-                
-            }
-            <h2>@imageField.Alt</h2>
-            @Html.Sitecore().Field("Hongkong Land Link", Model.Item, new { text = "<img data-src='' alt='HongKong Land'>" })
+            @Html.Sitecore().Field("Hongkong Land Link", Model.Item, new { text = "<img data-src='" + src + "' alt='HongKong Land'>" })
         </div>
         <div class="footer-copyright">
             &copy; Copyright &copy; 2014 Hongkong Land Limited. All Rights Reserved<a href="#">Legal &amp; Privacy</a>
