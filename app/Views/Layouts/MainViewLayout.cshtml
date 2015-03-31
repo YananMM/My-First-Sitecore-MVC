@@ -55,7 +55,15 @@
 <body class="en t1">
     @Html.Sitecore().Placeholder("header")
     @Html.Sitecore().Placeholder("main-content")
-    @Html.Sitecore().Rendering(ItemGuidStringHelper.FooterRenderingViewGuid)
-    @Html.Sitecore().Rendering(ItemGuidStringHelper.ScriptRenderingViewGuid)
+    @Html.Sitecore().Rendering(ItemGuidStringHelper.FooterRenderingViewGuid,new{
+        Cacheable = true, 
+        CacheKey = "footer", 
+        Cache_VaryByData = true 
+    })
+    @Html.Sitecore().Rendering(ItemGuidStringHelper.ScriptRenderingViewGuid,new{
+        Cacheable = true, 
+        CacheKey = "script", 
+        Cache_VaryByData = true 
+    })
 </body>
 </html>
