@@ -1,0 +1,12 @@
+﻿@model Sitecore.Mvc.Presentation.RenderingModel
+@{
+    var slideList = Model.Item.Children.ToList();
+}
+<section class="panel-area">
+    <ul class="slider">
+        @foreach (var item in slideList)
+    {
+        <li>@Html.Sitecore().Field("Link URL", item, new { text = item["Link Text"] })</li>
+    }
+    </ul>
+</section>
