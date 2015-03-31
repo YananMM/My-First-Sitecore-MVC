@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Helper\ItemGuidStringHelper.cs" />
     <Compile Include="Helper\SitecoreFieldHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -240,14 +241,15 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Layouts\MainViewLayout.cshtml" />
-    <Content Include="Views\Shared\ScriptRendering.cshtml" />
-    <Content Include="Views\Shared\Footer.cshtml" />
-    <Content Include="Views\Renderings\FooterNavigation.cshtml" />
-    <Content Include="Views\Renderings\SocialMedia.cshtml" />
-    <Content Include="Views\Renderings\T1PanelRendering.cshtml" />
-    <Content Include="Views\Renderings\FooterConfig.cshtml" />
-    <Content Include="Views\Renderings\T1SlideRendering.cshtml" />
-    <Content Include="Views\Renderings\T1Content.cshtml" />
+    <Content Include="Views\Renderings\Global\ScriptRendering.cshtml" />
+    <Content Include="Views\Renderings\Global\FooterRendering.cshtml" />
+    <Content Include="Views\Renderings\Global\FooterNavigationRendering.cshtml" />
+    <Content Include="Views\Renderings\Global\SocialMediaRendering.cshtml" />
+    <Content Include="Views\Renderings\T1\T1PanelRendering.cshtml" />
+    <Content Include="Views\Renderings\Global\FooterConfigRendering.cshtml" />
+    <Content Include="Views\Renderings\T1\T1SlideRendering.cshtml" />
+    <Content Include="Views\Renderings\T1\T1ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Global\GlossaryRendering.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

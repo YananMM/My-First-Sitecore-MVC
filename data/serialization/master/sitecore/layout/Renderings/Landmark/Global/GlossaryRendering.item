@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {597BACD2-9995-472D-A6EA-905F8EAD449F}
+id: {8DB7585D-4A38-4687-A72F-B33AF97B6369}
 database: master
-path: /sitecore/layout/Renderings/Landmark/T1/T1PanelRendering
-parent: {EC458167-1C95-4D37-B999-6D25C5DE5626}
-name: T1PanelRendering
+path: /sitecore/layout/Renderings/Landmark/Global/GlossaryRendering
+parent: {98BF7F90-AEBD-466A-807F-AE08A3266791}
+name: GlossaryRendering
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
 templatekey: View rendering
@@ -13,20 +13,13 @@ templatekey: View rendering
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
 name: Path
 key: path
-content-length: 44
+content-length: 49
 
-/Views/Renderings/T1/T1PanelRendering.cshtml
-----field----
-field: {EF7C5528-7307-4E19-863B-DA19EED6A9ED}
-name: Open Properties after Add
-key: open properties after add
-content-length: 1
-
--
+/Views/Renderings/Global/GlossaryRendering.cshtml
 ----version----
 language: en
 version: 1
-revision: 42119a6a-570f-4948-8a52-90a5c11de22a
+revision: 2ea8ca9e-8d05-449d-8e77-254b7c6aa8f9
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +27,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20150330T144801
+20150331T155731
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-42119a6a-570f-4948-8a52-90a5c11de22a
+2ea8ca9e-8d05-449d-8e77-254b7c6aa8f9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150331T155620:635634141805710869
+20150331T155731:635634142515931491
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

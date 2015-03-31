@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {3BCEEFB7-E383-41B5-B42D-CF08898CF378}
+id: {270338FD-925B-4BB1-9C2E-23A44737627D}
 database: master
-path: /sitecore/layout/Renderings/Landmark/Global/FooterNavigation
-parent: {98BF7F90-AEBD-466A-807F-AE08A3266791}
-name: FooterNavigation
+path: /sitecore/layout/Renderings/Landmark/T1/T1ContentRendering
+parent: {EC458167-1C95-4D37-B999-6D25C5DE5626}
+name: T1ContentRendering
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
 templatekey: View rendering
@@ -13,20 +13,20 @@ templatekey: View rendering
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
 name: Path
 key: path
-content-length: 41
+content-length: 46
 
-/Views/Renderings/FooterNavigation.cshtml
+/Views/Renderings/T1/T1ContentRendering.cshtml
 ----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 3
+field: {EF7C5528-7307-4E19-863B-DA19EED6A9ED}
+name: Open Properties after Add
+key: open properties after add
+content-length: 1
 
-100
+-
 ----version----
 language: en
 version: 1
-revision: c8f0b723-43a6-4cfa-8db9-9ec1deea3333
+revision: 133b7b06-1f5b-41a3-8325-b896708e5061
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20150330T165208
+20150331T113737
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-c8f0b723-43a6-4cfa-8db9-9ec1deea3333
+133b7b06-1f5b-41a3-8325-b896708e5061
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150331T113852:635633987328785294
+20150331T155424:635634140647134602
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
