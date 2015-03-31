@@ -15,10 +15,10 @@
                     <div class="panel-main">
                         <div class="panel-text">
                             <hgroup class="clearfix">
-                                @Html.Raw(item["Slide Title"])
+                                @Html.Raw(Html.Sitecore().Field("Slide Title",item))
                             </hgroup>
                             <div class="panel-content">
-                                @item["Slide Content"]
+                                @Html.Sitecore().Field("Slide Content",item)
                             </div>
                             @Html.Sitecore().Field("Slide Button Link", item, new {text = item["Slide Button Text"], @class = "btn btn-default"})
                         </div>
