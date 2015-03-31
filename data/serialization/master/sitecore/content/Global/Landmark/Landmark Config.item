@@ -12,7 +12,7 @@ templatekey: Landmark Config
 ----version----
 language: en
 version: 1
-revision: 65c19893-4d03-4c35-8632-5c81b689dbad
+revision: 7717d587-280b-41ac-87fc-c3416a24bbd7
 
 ----field----
 field: {8E1D0513-037D-4417-AAF3-798919E3B57C}
@@ -28,6 +28,13 @@ key: landmark logo image
 content-length: 164
 
 <image mediapath="" alt="Landmark" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{D5170920-C361-441E-9ED8-67F7741A7038}" />
+----field----
+field: {3519AFFB-0D29-4D5E-B81B-5077E63F682B}
+name: Hongkong Land Link
+key: hongkong land link
+content-length: 140
+
+<link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}" />
 ----field----
 field: {CCC088F0-0A53-4C07-ACEC-29BEF113A2C8}
 name: Hongkong Land Image
@@ -62,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-65c19893-4d03-4c35-8632-5c81b689dbad
+7717d587-280b-41ac-87fc-c3416a24bbd7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150330T150059:635633244598487516
+20150331T105802:635633962827389814
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
