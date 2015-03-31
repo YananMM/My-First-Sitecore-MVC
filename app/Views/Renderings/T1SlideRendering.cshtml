@@ -1,12 +1,31 @@
-﻿@model Sitecore.Mvc.Presentation.RenderingModel
+﻿@model RenderingModel
 @{
     var slideList = Model.Item.Children.ToList();
 }
 <section class="panel-area">
     <ul class="slider">
         @foreach (var item in slideList)
-    {
-        <li>@Html.Sitecore().Field("Link URL", item, new { text = item["Link Text"] })</li>
-    }
+        {
+        <li>
+
+            <div class="panel-1 clearfix">
+        <div class="panel-img" data-bg="@Html.Sitecore().Field("Slide Image")"></div>
+        <div class="panel-main">
+          <div class="panel-text">
+            <hgroup class="clearfix"> 
+              @Html.Sitecore().Field("Slide Title")
+            </hgroup>
+              <div class="panel-content">
+                  @Html.Sitecore().Field("Slide Content")
+              </div>
+            @Html.Sitecore().Field("Slide Button Link", item, new {text = item["Slide Button Text"],@class=item["Slide CSS"]})
+          </div>
+        </div>
+      </div>
+
+
+            
+        </li>
+        }
     </ul>
 </section>
