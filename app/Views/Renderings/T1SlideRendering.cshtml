@@ -1,4 +1,5 @@
-﻿@model RenderingModel
+﻿@using Sitecore.Mvc.Helpers
+@model RenderingModel
 @{
     var slideList = Model.Item.Children.ToList();
 }
@@ -6,26 +7,32 @@
     <ul class="slider">
         @foreach (var item in slideList)
         {
-        <li>
 
-            <div class="panel-1 clearfix">
-        <div class="panel-img" data-bg="@Html.Sitecore().Field("Slide Image")"></div>
-        <div class="panel-main">
-          <div class="panel-text">
-            <hgroup class="clearfix"> 
-              @Html.Sitecore().Field("Slide Title")
-            </hgroup>
-              <div class="panel-content">
-                  @Html.Sitecore().Field("Slide Content")
-              </div>
-            @Html.Sitecore().Field("Slide Button Link", item, new {text = item["Slide Button Text"],@class=item["Slide CSS"]})
-          </div>
-        </div>
-      </div>
+            <li>
+
+                <div class="@item["Slide CSS"] clearfix">
+                    <div class="panel-img" data-bg=""></div>
+                    <div class="panel-main">
+                        <div class="panel-text">
+                            <hgroup class="clearfix">
+                                @item["Slide Title"]
+                            </hgroup>
+                            <div class="panel-content">
+                                @item["Slide Content"]
+                            </div>
+                            @Html.Sitecore().Field("Slide Button Link", item, new {text = item["Slide Button Text"], @class = "btn btn-default"})
+                        </div>
+                    </div>
+                </div>
 
 
-            
-        </li>
+
+            </li>
         }
     </ul>
+
+    <div class="scroll-area"> <a href="#"><span class="sprite-scroll"></span><br>
+    <span class="hidden-xs">SCROLL TO BEGIN</span> </a> </div>
+    <div class="prev"> <a href="#"><span class="sprite-icon-l"></span></a> </div>
+    <div class="next"> <a href="#"><span class="sprite-icon-r"></span></a> </div>
 </section>
