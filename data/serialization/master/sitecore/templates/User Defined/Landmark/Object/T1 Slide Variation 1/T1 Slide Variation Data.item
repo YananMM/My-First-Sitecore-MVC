@@ -2,9 +2,9 @@
 version: 1
 id: {FFDACF73-1860-499A-8044-C567C488DB3A}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/T1 Slide Variation 1/T1 Slide Variation
+path: /sitecore/templates/User Defined/Landmark/Object/T1 Slide Variation 1/T1 Slide Variation Data
 parent: {118923E0-6DB7-4347-9B58-69241D31CB72}
-name: T1 Slide Variation
+name: T1 Slide Variation Data
 master: {00000000-0000-0000-0000-000000000000}
 template: {E269FBB5-3750-427A-9149-7AA950B49301}
 templatekey: Template section
@@ -12,7 +12,7 @@ templatekey: Template section
 ----version----
 language: en
 version: 1
-revision: fcd888f9-24ed-44fc-8742-c2cd520413d2
+revision: 100afff9-6931-4aed-a412-d356f9e213dd
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fcd888f9-24ed-44fc-8742-c2cd520413d2
+100afff9-6931-4aed-a412-d356f9e213dd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150330T153252:635633263727731646
+20150401T092608:635634771688738118
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

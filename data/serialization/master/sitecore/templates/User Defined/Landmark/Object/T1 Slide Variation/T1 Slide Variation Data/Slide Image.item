@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {576EE869-E403-48F5-BEDE-D103C4DA6501}
+id: {028A0158-C2E5-4830-B094-D6B62FF600F1}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/T1 Slide Variation 3/T1 Slide Variation/Slide Title
-parent: {D4D1DE25-9068-4268-81EF-A87847DCAD80}
-name: Slide Title
+path: /sitecore/templates/User Defined/Landmark/Object/T1 Slide Variation/T1 Slide Variation Data/Slide Image
+parent: {2B06771F-6772-43A4-8E18-AB87484510DC}
+name: Slide Image
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,13 +13,13 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 9
+content-length: 5
 
-Rich Text
+Image
 ----version----
 language: en
 version: 1
-revision: 64686585-5a0e-431c-bd2b-20216835db51
+revision: 47779126-39dd-43fb-a9ad-90b18a93bb10
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -27,21 +27,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20150330T153348
+20150330T151054
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-64686585-5a0e-431c-bd2b-20216835db51
+47779126-39dd-43fb-a9ad-90b18a93bb10
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150331T143814:635634094942370439
+20150401T092602:635634771621774287
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

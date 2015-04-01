@@ -1,25 +1,18 @@
 ----item----
 version: 1
-id: {D933744B-7F10-4CFD-AFC1-5EEFDF9C7CD2}
+id: {D4D1DE25-9068-4268-81EF-A87847DCAD80}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/T1 Slide Variation 2/T1 Slide Variation/Slide Title
-parent: {2929BBFD-0A02-404B-8E3F-AA56384E12AF}
-name: Slide Title
+path: /sitecore/templates/User Defined/Landmark/Object/T1 Slide Variation 3/T1 Slide Variation Data
+parent: {6C4307CC-ACFB-4A29-A9DA-BAC755C0AA1D}
+name: T1 Slide Variation Data
 master: {00000000-0000-0000-0000-000000000000}
-template: {455A3E98-A627-4B40-8035-E683A0331AC7}
-templatekey: Template field
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
 
-----field----
-field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
-name: Type
-key: type
-content-length: 9
-
-Rich Text
 ----version----
 language: en
 version: 1
-revision: 1ff98ab1-7208-4edb-bb60-4c3fc3f49d1b
+revision: a2f9ea26-5320-44ad-a2ae-9712267235bb
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -27,21 +20,28 @@ name: __Created
 key: __created
 content-length: 15
 
-20150330T153324
+20150330T153348
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-1ff98ab1-7208-4edb-bb60-4c3fc3f49d1b
+a2f9ea26-5320-44ad-a2ae-9712267235bb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150331T143755:635634094754599700
+20150401T092630:635634771909780760
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
