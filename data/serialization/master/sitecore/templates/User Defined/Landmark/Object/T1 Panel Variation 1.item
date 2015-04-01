@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {3FDFFE43-C02A-4239-B53E-C6FE03751110}
+id: {1231B5B7-3C85-4BAF-8386-F78D67BA44B0}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/T1 Slide Variation 4
+path: /sitecore/templates/User Defined/Landmark/Object/T1 Panel Variation 1
 parent: {945A23C4-9F15-4977-B0E0-AD413983C0BB}
-name: T1 Slide Variation 4
+name: T1 Panel Variation 1
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
@@ -15,32 +15,25 @@ name: __Base template
 key: __base template
 content-length: 77
 
-{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{71A54F1D-A5F2-43BD-881C-1A62192BB6BB}
-----field----
-field: {F7D48A55-2158-4F02-9356-756654404F73}
-name: __Standard values
-key: __standard values
-content-length: 38
-
-{6BCABE39-1972-49B9-8545-48137AF6A9D5}
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{7D1C9F69-27F9-42AA-A1D6-38F423F21132}
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 37
+content-length: 36
 
-SoftwareV2/32x32/photo_landscape2.png
+SoftwareV2/32x32/photo_landscape.png
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
-content-length: 4
+content-length: 3
 
-1400
+700
 ----version----
 language: en
 version: 1
-revision: 374ec31e-e8b7-4250-9c4d-c178329a809c
+revision: 96965595-eba1-460b-9def-9402293f12a1
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,7 +41,7 @@ name: __Created
 key: __created
 content-length: 15
 
-20150330T154209
+20150331T164906
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -62,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-374ec31e-e8b7-4250-9c4d-c178329a809c
+96965595-eba1-460b-9def-9402293f12a1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150401T102949:635634809893917795
+20150401T103321:635634812019519372
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
