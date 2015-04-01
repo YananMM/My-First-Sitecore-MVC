@@ -1,0 +1,142 @@
+----item----
+version: 1
+id: {2EA20E09-A3F7-4019-943F-6EC9FFB8AACF}
+database: master
+path: /sitecore/content/Home/Landmark/Home Page/Landmark Panels/T1 Panel Variation 1
+parent: {3BB40D54-8F7F-449B-B9DB-432C65EB4224}
+name: T1 Panel Variation 1
+master: {00000000-0000-0000-0000-000000000000}
+template: {1231B5B7-3C85-4BAF-8386-F78D67BA44B0}
+templatekey: T1 Panel Variation 1
+
+----version----
+language: en
+version: 1
+revision: f5541f16-07cb-4491-b3c4-6452cfae6ba6
+
+----field----
+field: {FA184848-D059-46C4-BFEA-50175397F621}
+name: Panel Image
+key: panel image
+content-length: 259
+
+<image mediapath="/Images/Landmark/Panel Variation Images/main-003" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Panel Variation Images/main-003" mediaid="{9A5C8842-CC0C-4A3B-B633-1AA4F9CAAD31}" />
+----field----
+field: {B3614397-CA5E-418B-AD15-A90E36BCCD0C}
+name: Panel Title
+key: panel title
+content-length: 13
+
+SHOES ANYONE?
+----field----
+field: {51EE35CF-A45A-443B-B3BA-FFD8FEE6375F}
+name: Panel Sub Title
+key: panel sub title
+content-length: 15
+
+DESIGNERS FOCUS
+----field----
+field: {03DCA601-26FE-430C-8889-798EDBF4AB4A}
+name: Panel Description
+key: panel description
+content-length: 158
+
+Generations of families sharing moments and making memories. All part of 208 fine stores and restaurants in 4 connected buildings that go by 1 name, LANDMARK.
+----field----
+field: {9116F249-E1B8-42E4-BD25-A8A076B33371}
+name: Panel Button Text
+key: panel button text
+content-length: 13
+
+DISCOVER MORE
+----field----
+field: {DE3F9E8A-C6DE-4925-948F-E8DD53BD3970}
+name: Panel Button Link
+key: panel button link
+content-length: 140
+
+<link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}" />
+----field----
+field: {2DC43E48-A7EF-423C-B14D-A9F59647453E}
+name: Panel See More Text
+key: panel see more text
+content-length: 21
+
+SEE MORE INSPIRATIONS
+----field----
+field: {5B3B4CE6-427D-447C-B531-0602B138102B}
+name: Panel See More Link
+key: panel see more link
+content-length: 140
+
+<link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}" />
+----field----
+field: {6EBE5AF2-23DB-479E-A09A-8490D5C1868A}
+name: Panel Image Right
+key: panel image right
+content-length: 259
+
+<image mediapath="/Images/Landmark/Panel Variation Images/main-002" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Panel Variation Images/main-002" mediaid="{7B8E2447-9EBE-44DF-A173-F65D83355118}" />
+----field----
+field: {FCFAEB59-15B7-4B50-B635-E71224BFAA65}
+name: Panel Sub Title Right
+key: panel sub title right
+content-length: 19
+
+EXQUISITE HOME WARE
+----field----
+field: {41590DF5-7D9C-4FCA-A099-E52CC740092A}
+name: Panel Title Upper Right
+key: panel title upper right
+content-length: 7
+
+CURATED
+----field----
+field: {AE18BD1C-3C09-45EA-ACB2-5A3BC2939499}
+name: Panel Title Under Right
+key: panel title under right
+content-length: 11
+
+COLLECTIONS
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150401T133417
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f5541f16-07cb-4491-b3c4-6452cfae6ba6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150401T133750:635634922700009934
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
