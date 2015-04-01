@@ -1,4 +1,4 @@
-﻿@using Landmark.Helper
+﻿@using Landmark.Classes
 @{
     Layout = null;
 }
@@ -55,12 +55,12 @@
 <body class="en t1">
     @Html.Sitecore().Placeholder("header")
     @Html.Sitecore().Placeholder("main-content")
-    @Html.Sitecore().Rendering(ItemGuidStringHelper.FooterRenderingViewGuid,new{
+    @Html.Sitecore().Rendering(ItemGuidString.FooterRenderingViewGuid,new{
         Cacheable = true, 
         CacheKey = "footer", 
         Cache_VaryByData = true 
     })
-    @Html.Sitecore().Rendering(ItemGuidStringHelper.ScriptRenderingViewGuid,new{
+    @Html.Sitecore().Rendering(ItemGuidString.ScriptRenderingViewGuid,new{
         Cacheable = true, 
         CacheKey = "script", 
         Cache_VaryByData = true 
