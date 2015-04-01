@@ -10,7 +10,8 @@
             @Html.Sitecore().Field("Hongkong Land Link", Model.Item, new { text = "<img data-src='" + src + "' alt='HongKong Land'>" })
         </div>
         <div class="footer-copyright">
-            &copy; Copyright &copy; 2014 Hongkong Land Limited. All Rights Reserved<a href="#">Legal &amp; Privacy</a>
+            @*&copy; Copyright &copy; 2014 Hongkong Land Limited. All Rights Reserved*@
+            @Html.Sitecore().Field("Copyright Text")<a href="#">Legal &amp; Privacy</a>
         </div>
     </div>
 </div>
