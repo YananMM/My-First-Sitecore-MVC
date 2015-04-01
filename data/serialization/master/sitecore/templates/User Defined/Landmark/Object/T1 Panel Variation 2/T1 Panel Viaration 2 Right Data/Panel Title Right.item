@@ -1,14 +1,21 @@
 ----item----
 version: 1
-id: {DA2988C2-1A6D-4A37-9F83-E145D2EC9EA4}
+id: {D609E367-132B-489E-B5B1-CA7929D9F400}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/T1 Panel Variation 2/T1 Panel Viaration 2 Riaght Data
-parent: {3660A61E-E365-4DB4-A3FC-F300F13CC2E6}
-name: T1 Panel Viaration 2 Riaght Data
+path: /sitecore/templates/User Defined/Landmark/Object/T1 Panel Variation 2/T1 Panel Viaration 2 Right Data/Panel Title Right
+parent: {DA2988C2-1A6D-4A37-9F83-E145D2EC9EA4}
+name: Panel Title Right
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {455A3E98-A627-4B40-8035-E683A0331AC7}
+templatekey: Template field
 
+----field----
+field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
+name: Type
+key: type
+content-length: 16
+
+Single-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -19,7 +26,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: da8274f6-bf0c-4989-8f9f-a26fe14c47cb
+revision: 22c0c486-3601-44b2-b89c-995fec5e2211
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -27,28 +34,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20150401T094640
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
+20150401T095528
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-da8274f6-bf0c-4989-8f9f-a26fe14c47cb
+22c0c486-3601-44b2-b89c-995fec5e2211
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150401T101403:635634800438522511
+20150401T103321:635634812015299131
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

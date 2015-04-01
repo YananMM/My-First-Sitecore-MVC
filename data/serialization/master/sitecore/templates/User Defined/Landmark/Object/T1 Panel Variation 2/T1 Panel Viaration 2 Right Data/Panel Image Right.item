@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {A461E717-6E2D-415B-A183-A3D39CB55CE9}
+database: master
+path: /sitecore/templates/User Defined/Landmark/Object/T1 Panel Variation 2/T1 Panel Viaration 2 Right Data/Panel Image Right
+parent: {DA2988C2-1A6D-4A37-9F83-E145D2EC9EA4}
+name: Panel Image Right
+master: {00000000-0000-0000-0000-000000000000}
+template: {455A3E98-A627-4B40-8035-E683A0331AC7}
+templatekey: Template field
+
+----field----
+field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
+name: Type
+key: type
+content-length: 5
+
+Image
+----version----
+language: en
+version: 1
+revision: 69d367e9-abd9-4619-a671-825e2973306f
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150401T095454
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+69d367e9-abd9-4619-a671-825e2973306f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150401T103321:635634812015109120
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
