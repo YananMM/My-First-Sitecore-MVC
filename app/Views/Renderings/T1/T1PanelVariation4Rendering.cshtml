@@ -1,0 +1,36 @@
+﻿@using Landmark.Helper
+@model RenderingModel
+
+<section class="panel-area">
+    <div class="panel-8 clearfix">
+        <div class="panel-side1">
+            <div class="panel-img" data-bg="@Html.Sitecore().ImageFieldSrc("Panel Image Left",Model.Item)"></div>
+            <div class="panel-main">
+                <div class="panel-text text-box-3">
+                    <hgroup class="clearfix">
+                        <h4>@Html.Sitecore().Field("Panel Sub Title Left", Model.Item)</h4>
+                        <h2>@Html.Sitecore().Field("Panel Title Left", Model.Item)</h2>
+                    </hgroup>
+                </div>
+            </div>
+        </div>
+        <div class="panel-side2">
+            <div class="panel-img-2" data-bg="@Html.Sitecore().ImageFieldSrc("Panel Image",Model.Item)"></div>
+            <div class="panel-main">
+                <div class="text-box-1 panel-text">
+                    <div class="text-box-area"></div>
+                    <hgroup class="clearfix">
+                        <h3>@Html.Sitecore().Field("Panel Sub Title", Model.Item)</h3>
+                        <h4>@Html.Sitecore().Field("Panel Title", Model.Item)</h4>
+                    </hgroup>
+                    <div class="panel-content">@Html.Sitecore().Field("Panel Description", Model.Item)</div>
+                    @Html.Sitecore().Field("Panel Button Link", Model.Item, new { text = Model.Item["Panel Button Text"], @class = "btn btn-default" })
+                </div>
+                @Html.Sitecore().Field("Panel See More Link", Model.Item, new { text = Model.Item["Panel See More Text"] + "<span class='icomoon-chevron-small-right'></span>", @class = "panel-link panel-text" })
+            </div>
+            <div class="panel-img" data-bg="@Html.Sitecore().ImageFieldSrc("Panel Image Right",Model.Item)">
+                <div class="panel-arrow"></div>
+            </div>
+        </div>
+    </div>
+</section>

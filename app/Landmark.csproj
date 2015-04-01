@@ -255,7 +255,11 @@
     <Content Include="Views\Renderings\T1\T1PanelNavRendering.cshtml">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="Views\Renderings\Global\HeaderRendering.cshtml" />
+    <Content Include="Views\Renderings\T1\T1PanelVariation3Rendering.cshtml" />
+    <Content Include="Views\Renderings\T1\T1PanelVariation4Rendering.cshtml" />
+    <Content Include="Views\Renderings\Global\HeaderRendering.cshtml">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
