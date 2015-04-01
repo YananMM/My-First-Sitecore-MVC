@@ -100,7 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Helper\ItemGuidStringHelper.cs" />
+    <Compile Include="Classes\ItemGuidStringHelper.cs" />
     <Compile Include="Helper\SitecoreFieldHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

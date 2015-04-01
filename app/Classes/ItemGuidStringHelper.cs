@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Landmark.Helper
+namespace Landmark.Classes
 {
-    public abstract class ItemGuidStringHelper
+    public abstract class ItemGuidString
     {
         //rendering guids
         public static readonly String GlossaryRenderingViewGuid = "{8DB7585D-4A38-4687-A72F-B33AF97B6369}";
