@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {FCCD5D4E-4923-4878-9AC5-D4FE20CA0628}
+id: {D609E367-132B-489E-B5B1-CA7929D9F400}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/T1 Panel Variation 2/T1 Panel Viaration 2 Riaght Data/Panel Sub Title Right
+path: /sitecore/templates/User Defined/Landmark/Object/T1 Panel Variation 2/T1 Panel Viaration 2 Right Data/Panel Title Right
 parent: {DA2988C2-1A6D-4A37-9F83-E145D2EC9EA4}
-name: Panel Sub Title Right
+name: Panel Title Right
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -22,11 +22,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-300
+200
 ----version----
 language: en
 version: 1
-revision: d0649d0c-b49b-45e4-8474-99dc63198a27
+revision: 03b8269e-c15b-4d55-8b4c-b8f6023010cf
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20150401T101631
+20150401T095528
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-d0649d0c-b49b-45e4-8474-99dc63198a27
+03b8269e-c15b-4d55-8b4c-b8f6023010cf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150401T101631:635634801917787120
+20150401T105839:635634827194112843
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
