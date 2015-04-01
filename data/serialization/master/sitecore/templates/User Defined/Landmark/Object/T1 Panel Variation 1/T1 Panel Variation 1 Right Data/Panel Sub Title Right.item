@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {41590DF5-7D9C-4FCA-A099-E52CC740092A}
+id: {FCFAEB59-15B7-4B50-B635-E71224BFAA65}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/T1 Panel Variation 1/T1 Panel Variation 1 Right Data/Panel Title Upper
+path: /sitecore/templates/User Defined/Landmark/Object/T1 Panel Variation 1/T1 Panel Variation 1 Right Data/Panel Sub Title Right
 parent: {F905C97A-C2DC-437D-BB49-D3B19362A5FB}
-name: Panel Title Upper
+name: Panel Sub Title Right
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -22,11 +22,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-300
+200
 ----version----
 language: en
 version: 1
-revision: a2a8a31b-30d8-46e2-9c03-37d4d0a5545e
+revision: 7c7d2329-96c3-4684-8853-b31aa6701699
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a2a8a31b-30d8-46e2-9c03-37d4d0a5545e
+7c7d2329-96c3-4684-8853-b31aa6701699
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150401T104859:635634821397485761
+20150401T110041:635634828414007083
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

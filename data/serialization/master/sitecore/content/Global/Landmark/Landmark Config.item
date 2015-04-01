@@ -12,7 +12,7 @@ templatekey: Landmark Config
 ----version----
 language: en
 version: 1
-revision: 7717d587-280b-41ac-87fc-c3416a24bbd7
+revision: eacec7e3-9d46-47ae-bc6e-994d084b7680
 
 ----field----
 field: {8E1D0513-037D-4417-AAF3-798919E3B57C}
@@ -43,6 +43,13 @@ content-length: 169
 
 <image mediapath="" alt="Hongkong Land" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{CBFB79CD-9691-46EB-A4DA-5DA05F646C3D}" />
 ----field----
+field: {DFEBB331-3684-4C39-80A9-33FF0A32B6F0}
+name: Copyright Text
+key: copyright text
+content-length: 61
+
+© Copyright © 2014 Hongkong Land Limited. All Rights Reserved
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7717d587-280b-41ac-87fc-c3416a24bbd7
+eacec7e3-9d46-47ae-bc6e-994d084b7680
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150331T105802:635633962827389814
+20150401T091423:635634764637619283
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
