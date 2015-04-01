@@ -53,14 +53,18 @@
 <title>@Html.Sitecore().Field("Page Title")</title>
 </head>
 <body class="en t1">
-    @Html.Sitecore().Placeholder("header")
+    @Html.Sitecore().Rendering(ItemGuids.HeaderRenderingViewGuid,new{
+        Cacheable = true, 
+        CacheKey = "header", 
+        Cache_VaryByData = true 
+    })
     @Html.Sitecore().Placeholder("main-content")
-    @Html.Sitecore().Rendering(ItemGuidString.FooterRenderingViewGuid,new{
+    @Html.Sitecore().Rendering(ItemGuids.FooterRenderingViewGuid,new{
         Cacheable = true, 
         CacheKey = "footer", 
         Cache_VaryByData = true 
     })
-    @Html.Sitecore().Rendering(ItemGuidString.ScriptRenderingViewGuid,new{
+    @Html.Sitecore().Rendering(ItemGuids.ScriptRenderingViewGuid,new{
         Cacheable = true, 
         CacheKey = "script", 
         Cache_VaryByData = true 

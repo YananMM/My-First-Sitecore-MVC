@@ -100,7 +100,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Classes\ItemGuidStringHelper.cs" />
+    <Compile Include="Classes\ItemGuids.cs" />
+    <Compile Include="Helper\LandmarkHelper.cs" />
     <Compile Include="Helper\SitecoreFieldHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -254,6 +255,7 @@
     <Content Include="Views\Renderings\T1\T1PanelNavRendering.cshtml">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Views\Renderings\Global\HeaderRendering.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
