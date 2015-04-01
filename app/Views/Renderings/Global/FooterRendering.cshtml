@@ -1,10 +1,17 @@
-﻿<div class="back-top clearfix"><a href="#" class="back-to-top">TOP</a></div>
+﻿@using Landmark.Classes
+<div class="back-top clearfix"><a href="#" class="back-to-top">TOP</a></div>
 <footer class="site-footer">
     <section class="footer-nav">
         <div class="container">
             <div class="row">
                 <div class="footer-nav-area">
-                    @Html.Sitecore().Placeholder("footer-nav")
+                    @*@Html.Sitecore().Placeholder("footer-nav")*@
+                    @Html.Sitecore().Rendering(ItemGuids.FooterNavRenderingViewGuid, new
+                    {
+                        Cacheable = true,
+                        CacheKey = "footer-nav",
+                        Cache_VaryByData = true
+                    })
                 </div>
                 <div class="footer-signup">
                     @Html.Sitecore().Placeholder("social-media")
@@ -13,7 +20,13 @@
         </div>
     </section>
     <section class="footer-info">
-        @Html.Sitecore().Placeholder("footer-config")
+        @*@Html.Sitecore().Placeholder("footer-config")*@
+        @Html.Sitecore().Rendering(ItemGuids.FooterConfigRenderingViewGuid, new
+        {
+            Cacheable = true,
+            CacheKey = "footer-config",
+            Cache_VaryByData = true
+        })
     </section>
 </footer>
 

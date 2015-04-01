@@ -1,17 +1,18 @@
 ﻿@model RenderingModel
 @using Landmark.Helper
+@using Landmark.Classes
 @{
-    string src = Html.Sitecore().ImageFieldSrc("Hongkong Land Image", Model.Item);
+    string src = Html.Sitecore().ImageFieldSrc("Hongkong Land Image", ItemGuids.LandmarkConfigItem);
 }
 <div class="container">
     <div class="row">
         <div class="footer-logo">
             @*<a href=""><img data-src="/files/landmark/images/logo-footer.png" alt="HongKong Land"></a>*@
-            @Html.Sitecore().Field("Hongkong Land Link", Model.Item, new { text = "<img data-src='" + src + "' alt='HongKong Land'>" })
+            @Html.Sitecore().Field("Hongkong Land Link", ItemGuids.LandmarkConfigItem, new { text = "<img data-src='" + src + "' alt='HongKong Land'>" })
         </div>
         <div class="footer-copyright">
             @*&copy; Copyright &copy; 2014 Hongkong Land Limited. All Rights Reserved*@
-            @Html.Sitecore().Field("Copyright Text")<a href="#">Legal &amp; Privacy</a>
+            @Html.Sitecore().Field("Copyright Text", ItemGuids.LandmarkConfigItem)<a href="#">Legal &amp; Privacy</a>
         </div>
     </div>
 </div>

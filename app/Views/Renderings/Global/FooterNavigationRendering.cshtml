@@ -1,7 +1,8 @@
 ﻿@model RenderingModel
+@using Landmark.Classes
 
 @{
-    var footerList = Model.Item.Children.ToList();
+    var footerList = ItemGuids.FooterNavigationItem.Children.ToList();
 }
 <ul>
     @foreach (var item in footerList)
