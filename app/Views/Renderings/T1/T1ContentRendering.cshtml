@@ -1,4 +1,9 @@
-﻿<div class="panel-layout">
+﻿@using Landmark.Helper
+<div class="panel-layout">
     @Html.Sitecore().Placeholder("t1-slides")
     @Html.Sitecore().Placeholder("t1-panels")
 </div>
+@Html.Sitecore().Rendering(ItemGuidStringHelper.PanelNavRenderingViewGuid,new
+{
+    DataSource = ItemGuidStringHelper.PanelsFolderItemGuid
+})
