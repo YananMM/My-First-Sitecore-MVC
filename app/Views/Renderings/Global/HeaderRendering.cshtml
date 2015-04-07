@@ -10,15 +10,13 @@
             <div class="sb-search">
                 @*<form action="/en/search">*@
                 @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
-   {
-      @Html.Sitecore().FormHandler("Search","Search")
-                    <input type="search" id="search" name="searchString" placeholder="@Html.Sitecore().Field("Glossary Value", ItemGuids.SearchPlaceHolderItem)" class="sb-search-input form-control">
+               {
+                  @Html.Sitecore().FormHandler("Search","SearchContent")
+                    <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", ItemGuids.SearchPlaceHolderItem)" class="sb-search-input form-control">
                     <input class="sb-search-submit" type="submit" value="">
                     <span class="icomoon-search"></span>
-   }
+                }
 
-                    
- 
                 @*</form>*@
             </div>
         </div>

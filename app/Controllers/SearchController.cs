@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.SearchTypes;
+using Sitecore.Shell.Framework.Commands.UserManager;
+using Sitecore.Configuration;
 
 namespace Landmark.Controllers
 {
@@ -15,21 +17,22 @@ namespace Landmark.Controllers
 
         }
 
-        public ActionResult Search(string searchString)
+        public ActionResult SearchContent(string search)
         {
 
-            if (!string.IsNullOrEmpty(searchString))
+            if (!string.IsNullOrEmpty(search))
             {
-                ViewData["SearchString"] = searchString;
-
+                ViewData["SearchString"] = search;
                 var language = Sitecore.Context.Language.Name.ToLower();
-
-                var index = ContentSearchManager.GetIndex("sitecore_master_index");
+                string indexName = Settings.GetSetting("LandmarkIndexName");
+                var index = ContentSearchManager.GetIndex(indexName);
                 using (var context = index.CreateSearchContext())
                 {
-                    IQueryable<SearchResultItem> searchItems = context.GetQueryable<SearchResultItem>();
+                    var searchItems = context.GetQueryable<SearchResultItem>()
+                        .Where(item => item.Content.Contains(search) && item.Language.Equals(language)
+                        ).ToList();
                     //searchItems = searchItems.Where(item => item.Content.Like(SearchTerm));
-                    searchItems = searchItems.Where(item => item.Content.Contains(searchString));
+                    return Content(searchItems.Count.ToString());
                 }
             }
             return Content("");

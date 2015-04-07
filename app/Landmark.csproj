@@ -59,6 +59,10 @@
       <HintPath>..\lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Sitecore.LanguageFallbackItemProvider">
+      <HintPath>..\lib\Sitecore.LanguageFallbackItemProvider.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sitecore.Mvc">
       <HintPath>..\lib\Sitecore.Mvc.dll</HintPath>
       <Private>False</Private>
@@ -113,6 +117,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Classes\ItemGuids.cs" />
+    <Compile Include="Classes\Crawlers\LanguageFallbackCrawler.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Helper\LandmarkHelper.cs" />
     <Compile Include="Helper\SitecoreFieldHelper.cs" />
@@ -236,6 +241,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="App_Config\Include\Landmark.config" />
+    <Content Include="App_Config\Include\LandmarkSearch.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
