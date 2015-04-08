@@ -7,6 +7,7 @@ using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.SearchTypes;
 using Sitecore.Shell.Framework.Commands.UserManager;
 using Sitecore.Configuration;
+using Sitecore.ContentSearch.Linq;
 
 namespace Landmark.Controllers
 {
@@ -19,7 +20,6 @@ namespace Landmark.Controllers
 
         public ActionResult SearchContent(string search)
         {
-
             if (!string.IsNullOrEmpty(search))
             {
                 ViewData["SearchString"] = search;
@@ -29,10 +29,9 @@ namespace Landmark.Controllers
                 using (var context = index.CreateSearchContext())
                 {
                     var searchItems = context.GetQueryable<SearchResultItem>()
-                        .Where(item => item.Content.Contains(search) && item.Language.Equals(language)
+                        .Where(item => item.Content.Like(search) && item.Language.Equals(language)
                         ).ToList();
-                    //searchItems = searchItems.Where(item => item.Content.Like(SearchTerm));
-                    return Content(searchItems.Count.ToString());
+                    return Content(searchItems[0].ItemId.ToString());
                 }
             }
             return Content("");
