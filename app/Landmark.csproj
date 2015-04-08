@@ -121,6 +121,7 @@
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Helper\LandmarkHelper.cs" />
     <Compile Include="Helper\SitecoreFieldHelper.cs" />
+    <Compile Include="Models\LandmarkSearchResultItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -283,7 +284,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="files\landmark\less\css\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\Renderings\T2\" />
     <Folder Include="Views\Sublayouts\" />
   </ItemGroup>
