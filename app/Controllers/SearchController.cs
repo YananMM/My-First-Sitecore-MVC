@@ -54,7 +54,7 @@ namespace Landmark.Controllers
                     }
                 }
             }
-            
+            return Content("Please input Search Content");
         }
     }
 }
