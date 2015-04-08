@@ -39,7 +39,7 @@ namespace Landmark.Controllers
                 using (var context = index.CreateSearchContext())
                 {
 
-                    var searchItems = context.GetQueryable<SearchResultItem>()
+                    var searchItems = context.GetQueryable<LandmarkSearchResultItem>()
                         .Where(item => item.Content.Like(search) && item.Language.Equals(language))
                         .OrderBy(item => item.CreatedDate)
                         .ToList();
