@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Data.Items
 @model RenderingModel
 
 <nav class="clearfix">
@@ -67,10 +68,10 @@
                                 </div>
                                 <div class="col-lg-3 col-md-3  col-sm-3">
                                     <div class="mega-product-area pull-right">
-                                        <img src="/files/landmark/images/product-img/product-001.jpg">
-                                        <h3>MARC JACOBS PULLS THE HEARTSTRINGS</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-                                        <a href="#">Learn More <span class="sprite-menu-r"></span></a>
+                                        @Html.Sitecore().Field("Ad Image",item)
+                                        <h3>@Html.Sitecore().Field("Ad Title",item)</h3>
+                                        <p>@Html.Sitecore().Field("Ad Description",item)</p>
+                                        @Html.Sitecore().Field("Ad Learn More Link Url",item, new {text=Html.Sitecore().Field("Ad Learn More Link Text",item)+@"<span class='sprite-menu-r'></span>"})
                                     </div>
                                 </div>
                             </div>
