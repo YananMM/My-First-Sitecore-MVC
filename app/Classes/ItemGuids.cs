@@ -16,8 +16,10 @@ namespace Landmark.Classes
         public static readonly String HeaderRenderingViewGuid = "{74159145-AA53-4198-9506-0B451AB91E02}";
         public static readonly String FooterNavRenderingViewGuid = "{3BCEEFB7-E383-41B5-B42D-CF08898CF378}";
         public static readonly String FooterConfigRenderingViewGuid = "{59CD0D0B-B8B3-4849-8A2E-2AD9A0D1CA46}";
+        public static readonly String NavigationRenderingViewGuid = "{25D2AD09-84E3-4DA8-9720-9DFEECC67A9B}";
+        public static readonly String MobileNavigationRenderingViewGuid = "{A45E5400-EC5C-4539-823F-D6E102F8CF6A}";
 
-
+        
 
         //item id guids
         public static readonly String ScrollToBeginItemGuid = "{A56115E2-9083-4C3C-AC15-3AB1FEB4A90B}";

@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {69A84007-E0E2-4E71-826F-B95C13468428}
+database: master
+path: /sitecore/content/Global/Landmark/Brands/ALEXANDRE
+parent: {0D15836D-83CB-435F-ADF7-950F41F77A85}
+name: ALEXANDRE
+master: {00000000-0000-0000-0000-000000000000}
+template: {97BC8E0A-0EC9-47BA-8866-70C5B9D670FF}
+templatekey: Brand Object
+
+----version----
+language: en
+version: 1
+revision: fe86c9ac-0874-4df3-8ddc-3711552d5883
+
+----field----
+field: {D672550C-0850-4BEA-BB32-0763773BD678}
+name: Brand Title
+key: brand title
+content-length: 9
+
+ALEXANDRE
+----field----
+field: {42B5A036-5007-4AD6-8BDF-F58507738ABB}
+name: Brand Image
+key: brand image
+content-length: 58
+
+<image mediaid="{291CB123-1221-44CC-BD37-243718BE7DB7}" />
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150409T145134
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fe86c9ac-0874-4df3-8ddc-3711552d5883
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150409T150846:635641889267097817
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

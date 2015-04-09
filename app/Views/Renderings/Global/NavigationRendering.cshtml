@@ -1,0 +1,166 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@model RenderingModel
+
+<nav class="clearfix">
+    <ul class="menu-left list-inline  ">
+        @foreach (Sitecore.Data.Items.Item item in LandmarkHelper.GetChildrenPageInNavigation(ItemGuids.LandmarkHomeItem).Take(3))
+        {
+            <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@item["Page Title"].ToUpper()</a>
+                @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count>0)
+                {
+                    <nav class="mega-menu">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-9  col-sm-9">
+                                    <div class=" mega-menu-area">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9">
+                                                <h3>@item["Page Title"].ToUpper()</h3>
+                                                <ul class=" mega-category">
+                                                    @foreach (Sitecore.Data.Items.Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
+                                                    {
+                                                        <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
+                                                    }
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                                <h3>BY BRANDS</h3>
+                                                <ul class="mega-brands">
+                                                    <li><a href="#">A</a></li>
+                                                    <li><a href="#">B</a></li>
+                                                    <li><a href="#">C</a></li>
+                                                    <li><a href="#">D</a></li>
+                                                    <li><a href="#">E</a></li>
+                                                    <li><a href="#">F</a></li>
+                                                    <li><a href="#">G</a></li>
+                                                    <li><a href="#">H</a></li>
+                                                    <li class="disabled">I</li>
+                                                    <li class="disabled">J</li>
+                                                    <li><a href="#">K</a></li>
+                                                    <li class="disabled">L</li>
+                                                    <li><a href="#">M</a></li>
+                                                    <li><a href="#">N</a></li>
+                                                    <li class="disabled">O</li>
+                                                    <li><a href="#">P</a></li>
+                                                    <li><a href="#">Q</a></li>
+                                                    <li><a href="#">R</a></li>
+                                                    <li class="disabled">S</li>
+                                                    <li><a href="#">T</a></li>
+                                                    <li><a href="#">U</a></li>
+                                                    <li><a href="#">V</a></li>
+                                                    <li><a href="#">W</a></li>
+                                                    <li><a href="#">X</a></li>
+                                                    <li><a href="#">Y</a></li>
+                                                    <li><a href="#">Z</a></li>
+
+                                                </ul>
+                                                <h3>BY BUILDINGS</h3>
+                                                <ul>
+                                                    <li><a href="#">SHOPPING-SUBMENU</a></li>
+                                                    <li><a href="#">SHOPPING-SUBMENU</a></li>
+                                                    <li><a href="#">SHOPPING-SUBMENU</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3  col-sm-3">
+                                    <div class="mega-product-area pull-right">
+                                        <img src="/files/landmark/images/product-img/product-001.jpg">
+                                        <h3>MARC JACOBS PULLS THE HEARTSTRINGS</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                                        <a href="#">Learn More <span class="sprite-menu-r"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                }
+                </li>
+        }
+    </ul>
+    <h1>
+        <a href="@Sitecore.Links.LinkManager.GetItemUrl(ItemGuids.LandmarkHomeItem)">
+            @Html.Sitecore().Field("Landmark Logo Image", ItemGuids.LandmarkConfigItem, new { @class = "img-logo" })
+            @Html.Sitecore().Field("Landmark Logo", ItemGuids.LandmarkConfigItem, new { @class = "responsive-logo" })
+        </a>
+    </h1>
+    <ul class="menu-right list-inline">
+        @foreach (Sitecore.Data.Items.Item item in LandmarkHelper.GetChildrenPageInNavigation(ItemGuids.LandmarkHomeItem).Skip(3).Take(3))
+        {
+            <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@item["Page Title"].ToUpper()</a>
+                @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count>0)
+                {
+                    <nav class="mega-menu">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-9  col-sm-9">
+                                    <div class=" mega-menu-area">
+                                        <div class="row">
+                                            <div class="col-lg-9 col-md-9 col-sm-9">
+                                                <h3>@item["Page Title"].ToUpper()</h3>
+                                                <ul class=" mega-category">
+                                                    @foreach (Sitecore.Data.Items.Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
+                                                    {
+                                                        <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
+                                                    }
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                                <h3>BY BRANDS</h3>
+                                                <ul class="mega-brands">
+                                                    <li><a href="#">A</a></li>
+                                                    <li><a href="#">B</a></li>
+                                                    <li><a href="#">C</a></li>
+                                                    <li><a href="#">D</a></li>
+                                                    <li><a href="#">E</a></li>
+                                                    <li><a href="#">F</a></li>
+                                                    <li><a href="#">G</a></li>
+                                                    <li><a href="#">H</a></li>
+                                                    <li class="disabled">I</li>
+                                                    <li class="disabled">J</li>
+                                                    <li><a href="#">K</a></li>
+                                                    <li class="disabled">L</li>
+                                                    <li><a href="#">M</a></li>
+                                                    <li><a href="#">N</a></li>
+                                                    <li class="disabled">O</li>
+                                                    <li><a href="#">P</a></li>
+                                                    <li><a href="#">Q</a></li>
+                                                    <li><a href="#">R</a></li>
+                                                    <li class="disabled">S</li>
+                                                    <li><a href="#">T</a></li>
+                                                    <li><a href="#">U</a></li>
+                                                    <li><a href="#">V</a></li>
+                                                    <li><a href="#">W</a></li>
+                                                    <li><a href="#">X</a></li>
+                                                    <li><a href="#">Y</a></li>
+                                                    <li><a href="#">Z</a></li>
+
+                                                </ul>
+                                                <h3>BY BUILDINGS</h3>
+                                                <ul>
+                                                    <li><a href="#">SHOPPING-SUBMENU</a></li>
+                                                    <li><a href="#">SHOPPING-SUBMENU</a></li>
+                                                    <li><a href="#">SHOPPING-SUBMENU</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3  col-sm-3">
+                                    <div class="mega-product-area pull-right">
+                                        <img src="/files/landmark/images/product-img/product-001.jpg">
+                                        <h3>MARC JACOBS PULLS THE HEARTSTRINGS</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                                        <a href="#">Learn More <span class="sprite-menu-r"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                }
+                </li>
+        }
+    </ul>
+</nav>

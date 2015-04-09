@@ -5,10 +5,9 @@
         <div class="container">
             <div class="row">
                 <div class="footer-nav-area">
-                    @*@Html.Sitecore().Placeholder("footer-nav")*@
                     @Html.Sitecore().Rendering(ItemGuids.FooterNavRenderingViewGuid, new
                     {
-                        Cacheable = true,
+                        Cacheable = false,
                         CacheKey = "footer-nav",
                         Cache_VaryByData = true
                     })
@@ -20,10 +19,9 @@
         </div>
     </section>
     <section class="footer-info">
-        @*@Html.Sitecore().Placeholder("footer-config")*@
         @Html.Sitecore().Rendering(ItemGuids.FooterConfigRenderingViewGuid, new
         {
-            Cacheable = true,
+            Cacheable = false,
             CacheKey = "footer-config",
             Cache_VaryByData = true
         })

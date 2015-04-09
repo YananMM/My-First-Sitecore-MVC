@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {94AAC6C1-3E5D-43A4-B379-FC2853E0231E}
+database: master
+path: /sitecore/content/Global/Landmark/Brands/MQUEEN
+parent: {0D15836D-83CB-435F-ADF7-950F41F77A85}
+name: MQUEEN
+master: {00000000-0000-0000-0000-000000000000}
+template: {97BC8E0A-0EC9-47BA-8866-70C5B9D670FF}
+templatekey: Brand Object
+
+----version----
+language: en
+version: 1
+revision: 74776813-3b53-4613-a193-d6d2274c4adf
+
+----field----
+field: {D672550C-0850-4BEA-BB32-0763773BD678}
+name: Brand Title
+key: brand title
+content-length: 6
+
+MQUEEN
+----field----
+field: {42B5A036-5007-4AD6-8BDF-F58507738ABB}
+name: Brand Image
+key: brand image
+content-length: 58
+
+<image mediaid="{23EAC073-EF70-4D7B-9649-A08CAF9B376E}" />
+----field----
+field: {5014AE7A-A8C5-4447-ACAF-3206F5F51996}
+name: Brand Overlay Image
+key: brand overlay image
+content-length: 58
+
+<image mediaid="{463E4E5D-7171-48DB-BE71-D9C0B634EBCC}" />
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150409T145124
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+74776813-3b53-4613-a193-d6d2274c4adf
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150409T150908:635641889482257817
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
