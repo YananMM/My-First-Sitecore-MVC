@@ -23,7 +23,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -286,7 +286,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="files\landmark\less\css\" />
-    <Folder Include="Views\Renderings\T11\" />
+    <Folder Include="Views\Renderings\T2\" />
     <Folder Include="Views\Sublayouts\" />
   </ItemGroup>
   <ItemGroup>
