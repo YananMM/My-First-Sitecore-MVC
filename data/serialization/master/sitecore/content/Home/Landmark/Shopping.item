@@ -19,8 +19,36 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 72e0439f-7b53-4bf4-9481-aff6408546d6
+revision: 6be61471-91f9-4d66-944f-859d451ab125
 
+----field----
+field: {478DBB6E-70DB-42E3-814E-C30B6CBB57BD}
+name: Ad Image
+key: ad image
+content-length: 58
+
+<image mediaid="{DC3DAEC1-47FB-4BB1-9C3E-98885C4F3A73}" />
+----field----
+field: {1CEE21F7-A697-4030-AC49-DA771AFA0403}
+name: Ad Title
+key: ad title
+content-length: 34
+
+MARC JACOBS PULLS THE HEARTSTRINGS
+----field----
+field: {8B104260-790F-4909-938A-0ED0D344484A}
+name: Ad Description
+key: ad description
+content-length: 88
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
+----field----
+field: {2759089B-A918-41A0-8030-3129E99BFCAF}
+name: Ad Learn More Link Text
+key: ad learn more link text
+content-length: 10
+
+Learn More
 ----field----
 field: {39CA2015-85D4-4A17-91F9-FE1169933F4F}
 name: Page Title
@@ -41,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-72e0439f-7b53-4bf4-9481-aff6408546d6
+6be61471-91f9-4d66-944f-859d451ab125
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150409T091828:635641679084572802
+20150409T151317:635641891972637817
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

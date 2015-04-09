@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {6B58B66C-3293-4B3D-A3DF-D99929E8783A}
+id: {1CEE21F7-A697-4030-AC49-DA771AFA0403}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Building Object/Buiding Data/Buiding Title
-parent: {56C3342D-228E-420F-AF83-4AAFA9BDA576}
-name: Buiding Title
+path: /sitecore/templates/User Defined/Landmark/Page/T11 Page/Ad In Navigation Data/Ad Title
+parent: {8AA1DB45-2045-4F18-B529-AF97BC54AAD2}
+name: Ad Title
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -16,10 +16,17 @@ key: type
 content-length: 16
 
 Single-Line Text
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+200
 ----version----
 language: en
 version: 1
-revision: b588e658-21fe-4931-98f6-9f52fd4c71b2
+revision: d47af90e-6736-44e9-9c1d-f70ade842c28
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -27,21 +34,21 @@ name: __Created
 key: __created
 content-length: 15
 
-20150409T090715
+20150409T145352
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-b588e658-21fe-4931-98f6-9f52fd4c71b2
+d47af90e-6736-44e9-9c1d-f70ade842c28
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150409T092916:635641685566808679
+20150409T151255:635641891753767817
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

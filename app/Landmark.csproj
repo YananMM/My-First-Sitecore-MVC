@@ -23,7 +23,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -280,11 +280,13 @@
     <Content Include="Views\Renderings\Global\HeaderRendering.cshtml">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="Views\Renderings\Global\NavigationRendering.cshtml" />
+    <Content Include="Views\Renderings\Global\MobileNavigationRendering.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="files\landmark\less\css\" />
-    <Folder Include="Views\Renderings\T2\" />
+    <Folder Include="Views\Renderings\T11\" />
     <Folder Include="Views\Sublayouts\" />
   </ItemGroup>
   <ItemGroup>

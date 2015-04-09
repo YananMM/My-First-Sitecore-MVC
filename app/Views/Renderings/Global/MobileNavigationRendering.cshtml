@@ -1,0 +1,20 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@model RenderingModel
+
+<ul>
+    @foreach (Sitecore.Data.Items.Item item in LandmarkHelper.GetChildrenPageInNavigation(ItemGuids.LandmarkHomeItem))
+    {
+        <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@item["Page "].ToUpper()</a>
+            @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count>0)
+            {
+                <ul>
+                    @foreach (Sitecore.Data.Items.Item childItem in LandmarkHelper.GetChildrenPageInNavigation(ItemGuids.LandmarkHomeItem))
+                    {
+                        <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
+                    }
+                </ul>
+            }
+        </li>
+    }
+</ul>

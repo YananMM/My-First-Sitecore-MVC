@@ -4,7 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Sitecore.Collections;
+using Sitecore.ContentSearch.Utilities;
+using Sitecore.Data.Fields;
 using Sitecore.Data.Managers;
+using Sitecore.Web.UI;
 
 namespace Landmark.Helper
 {
@@ -40,13 +43,41 @@ namespace Landmark.Helper
             string itemUrl = string.Empty;
             var options = Sitecore.Links.LinkManager.GetDefaultUrlOptions();
             options.LanguageEmbedding = Sitecore.Links.LanguageEmbedding.Always;
-            options.EmbedLanguage(Sitecore.Globalization.Language.Parse("en"));
+            options.EmbedLanguage(Sitecore.Globalization.Language.Parse(language));
             if (HasValidVersion(language))
             {
                 options.EmbedLanguage(Sitecore.Globalization.Language.Parse(language));
             }
+            else
+            {
+                options.EmbedLanguage(Sitecore.Globalization.Language.Parse("en"));
+            }
             Sitecore.Links.LinkManager.GetItemUrl(item, options);
             return itemUrl;
+        }
+
+        public static bool IsShownInNavigation(Item item)
+        {
+            bool isShown = false;
+            CheckboxField field = (CheckboxField)item.Fields["Is Shown In Navigation"];
+            if (field != null)
+            {
+                isShown = field.Checked;
+            }
+            return isShown;
+        }
+
+        public static List<Item> GetChildrenPageInNavigation(Item parentItem)
+        {
+            List<Item> resultsList= new List<Item>();
+            foreach (Item child in parentItem.Children)
+            {
+                if (LandmarkHelper.IsShownInNavigation(child))
+                {
+                    resultsList.Add(child);
+                }
+            }
+            return resultsList;
         }
     }
 }
