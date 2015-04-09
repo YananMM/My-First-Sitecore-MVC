@@ -52,7 +52,7 @@ namespace Landmark.Helper
             {
                 options.EmbedLanguage(Sitecore.Globalization.Language.Parse("en"));
             }
-            Sitecore.Links.LinkManager.GetItemUrl(item, options);
+            itemUrl = Sitecore.Links.LinkManager.GetItemUrl(item, options);
             return itemUrl;
         }
 
