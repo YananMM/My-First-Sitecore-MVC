@@ -35,7 +35,6 @@ namespace Landmark.Controllers
 
                 query = query.And(x => x.PageTitle.Contains(search));
 
-
                 using (var context = index.CreateSearchContext())
                 {
 
