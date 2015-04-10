@@ -18,6 +18,7 @@ namespace Landmark.Classes
         public static readonly String FooterConfigRenderingViewGuid = "{59CD0D0B-B8B3-4849-8A2E-2AD9A0D1CA46}";
         public static readonly String NavigationRenderingViewGuid = "{25D2AD09-84E3-4DA8-9720-9DFEECC67A9B}";
         public static readonly String MobileNavigationRenderingViewGuid = "{A45E5400-EC5C-4539-823F-D6E102F8CF6A}";
+        public static readonly string T11BreadcrymbRenderingViewGuid = "{C85A5336-5D9F-47A0-ADBD-DA8F6975E51B}";
 
         
 
