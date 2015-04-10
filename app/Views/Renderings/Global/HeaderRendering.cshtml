@@ -6,8 +6,8 @@
     <!-- desktop -->
     <div class="container hidden-sm  hidden-xs">
         <div class="language ">
-            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-CN")" class="lang-cn">@Html.Sitecore().Rendering(ItemGuids.GlossaryRenderingViewGuid, new {DataSource = ItemGuids.TraditionalChineseItemGuid})</a> |
-            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "")" class="lang-cn">@Html.Sitecore().Rendering(ItemGuids.GlossaryRenderingViewGuid, new {DataSource = ItemGuids.SimplifiedChineseItemGuid})</a>
+            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-HK")" class="lang-cn">@Html.Sitecore().Rendering(ItemGuids.GlossaryRenderingViewGuid, new {DataSource = ItemGuids.TraditionalChineseItemGuid})</a> |
+            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-CN")" class="lang-cn">@Html.Sitecore().Rendering(ItemGuids.GlossaryRenderingViewGuid, new {DataSource = ItemGuids.SimplifiedChineseItemGuid})</a>
             <div class="sb-search">
                 @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
                 {
