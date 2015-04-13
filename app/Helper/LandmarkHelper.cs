@@ -79,5 +79,12 @@ namespace Landmark.Helper
             }
             return resultsList;
         }
+
+        public static string GetPageBodyClass()
+        {
+            string bodyClass = string.Empty;
+            bodyClass = Sitecore.Context.Item.TemplateName.Split(' ')[0].ToLower();
+            return bodyClass;
+        }
     }
 }

@@ -21,21 +21,21 @@ namespace Landmark.Classes
         public static readonly string T11BreadcrymbRenderingViewGuid = "{C85A5336-5D9F-47A0-ADBD-DA8F6975E51B}";
 
         
-
-        //item id guids
-        public static readonly String ScrollToBeginItemGuid = "{A56115E2-9083-4C3C-AC15-3AB1FEB4A90B}";
-        public static readonly String TopItemGuid = "{95BFC753-B808-40FD-9380-78CED4E3D341}";
-        public static readonly String PanelsFolderItemGuid = "{3BB40D54-8F7F-449B-B9DB-432C65EB4224}";
-        public static readonly String TraditionalChineseItemGuid = "{B9A164BF-C9D5-486E-96A5-229F960D6FFD}";
-        public static readonly String SimplifiedChineseItemGuid = "{C6222FDA-DA27-41EF-A5E4-D5201FF82C64}";
-
-
+        //item id
+        public static readonly string PanelsFolderItemGuid = "{3BB40D54-8F7F-449B-B9DB-432C65EB4224}";
 
         //item 
         public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{691A2D60-6CAF-42B7-90ED-7DD1AE99AFF3}");
         public static readonly Item SearchPlaceHolderItem = Sitecore.Context.Database.GetItem("{69752992-6EA7-4FE6-8925-E279B4469B9F}");
         public static readonly Item LandmarkConfigItem = Sitecore.Context.Database.GetItem("{BDB18DFC-7C97-40F8-A80C-658210B41656}");
         public static readonly Item FooterNavigationItem = Sitecore.Context.Database.GetItem("{9B0D8F54-71B1-41A5-B1F9-B1799DB44C6A}");
-
+        public static readonly Item ScrollToBeginGuidItem = Sitecore.Context.Database.GetItem("{A56115E2-9083-4C3C-AC15-3AB1FEB4A90B}");
+        public static readonly Item TopGuidItem = Sitecore.Context.Database.GetItem("{95BFC753-B808-40FD-9380-78CED4E3D341}");
+        public static readonly Item TraditionalChineseGuidItem = Sitecore.Context.Database.GetItem("{B9A164BF-C9D5-486E-96A5-229F960D6FFD}");
+        public static readonly Item SimplifiedChineseGuidItem = Sitecore.Context.Database.GetItem("{C6222FDA-DA27-41EF-A5E4-D5201FF82C64}");
+        public static readonly Item ShareThisGuidItem = Sitecore.Context.Database.GetItem("{DE562DBA-71F1-4D62-B19E-59B1BC78C925}");
+        public static readonly Item SeeAllBrandsGuidItem = Sitecore.Context.Database.GetItem("{78A6E71A-D03F-471C-9F3F-7CEB8F75A8DC}");
+        public static readonly Item AlsoInterestedInGuidItem = Sitecore.Context.Database.GetItem("{DEC9DDE1-89C6-4692-8731-DFFBCBF0E345}");
+        
     }
 }

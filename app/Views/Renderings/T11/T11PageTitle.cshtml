@@ -1,0 +1,8 @@
+﻿@using Landmark.Classes
+@model RenderingModel
+<div class="col-lg-8 col-md-8 col-xs-6">
+    <h2>@Sitecore.Context.Item["Page Title"].ToUpper()</h2>
+</div>
+<div class="col-lg-4 col-md-4 col-xs-6 link-seeall">
+     <a href="#">@Html.Sitecore().Field("Glossary Value", ItemGuids.SeeAllBrandsGuidItem)<span class="icomoon-chevron-small-right"></span></a>
+</div>

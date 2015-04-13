@@ -6,8 +6,8 @@
     <!-- desktop -->
     <div class="container hidden-sm  hidden-xs">
         <div class="language ">
-            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-HK")" class="lang-cn">@Html.Sitecore().Rendering(ItemGuids.GlossaryRenderingViewGuid, new {DataSource = ItemGuids.TraditionalChineseItemGuid})</a> |
-            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-CN")" class="lang-cn">@Html.Sitecore().Rendering(ItemGuids.GlossaryRenderingViewGuid, new {DataSource = ItemGuids.SimplifiedChineseItemGuid})</a>
+            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-HK")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", ItemGuids.TraditionalChineseGuidItem)</a> |
+            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-CN")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", ItemGuids.SimplifiedChineseGuidItem)</a>
             <div class="sb-search">
                 @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
                 {
@@ -52,9 +52,9 @@
                         Cache_VaryByData = true
                     })
                     <div class="language">
-                        <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "")" class="lang-cn">@Html.Sitecore().Rendering(ItemGuids.GlossaryRenderingViewGuid, new {DataSource = ItemGuids.TraditionalChineseItemGuid})</a>
+                        <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", ItemGuids.TraditionalChineseGuidItem)</a>
                         <span class="gap">|</span>
-                        <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "")" class="lang-cn">@Html.Sitecore().Rendering(ItemGuids.GlossaryRenderingViewGuid, new {DataSource = ItemGuids.SimplifiedChineseItemGuid})</a>
+                        <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", ItemGuids.SimplifiedChineseGuidItem)</a>
                     </div>
                 </div>
             </div>
@@ -65,6 +65,4 @@
             </h1>
         </nav>
     </div>
-
-
 </header>

@@ -1,4 +1,5 @@
 ﻿@using Landmark.Classes
+@using Landmark.Helper
 @{
     Layout = null;
 }
@@ -52,7 +53,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>@Html.Sitecore().Field("Page Title")</title>
 </head>
-<body class="en t1">
+<body class="en @LandmarkHelper.GetPageBodyClass()">
     @Html.Sitecore().Rendering(ItemGuids.HeaderRenderingViewGuid, new
 {
     Cacheable = false,
