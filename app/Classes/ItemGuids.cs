@@ -23,6 +23,7 @@ namespace Landmark.Classes
         
         //item id
         public static readonly string PanelsFolderItemGuid = "{3BB40D54-8F7F-449B-B9DB-432C65EB4224}";
+        public static readonly string AdvertTemplateItemGuid = "{32677AD3-AB70-49BF-A525-08493045C4FA}";
 
         //item 
         public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{691A2D60-6CAF-42B7-90ED-7DD1AE99AFF3}");
