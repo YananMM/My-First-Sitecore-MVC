@@ -283,12 +283,12 @@
     <Content Include="Views\Renderings\Global\NavigationRendering.cshtml" />
     <Content Include="Views\Renderings\Global\MobileNavigationRendering.cshtml" />
     <Content Include="Views\Renderings\T11\T11ContentRendering.cshtml" />
-    <Content Include="Views\Renderings\T11\T11BreadcrumbRendering.cshtml" />
+    <Content Include="Views\Renderings\Global\BreadcrumbRendering.cshtml" />
+    <Content Include="Views\Renderings\Global\GeneralMainContentRendering.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="files\landmark\less\css\" />
-    <Folder Include="Views\Renderings\T2\" />
     <Folder Include="Views\Sublayouts\" />
   </ItemGroup>
   <ItemGroup>
