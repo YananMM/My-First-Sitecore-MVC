@@ -42,7 +42,7 @@
      
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance:normal; 
+  -webkit-appearance:none; 
   /* Now your own custom styles */
  /* height: 10px;
   width: 10px;
@@ -112,6 +112,52 @@ input[type="search"]::-webkit-search-decoration {
 } 
 }
 
+.mixin-search-clear {
+  bottom: 0;
+  color: #666666;
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 20;
+  &.active {
+    display: block;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: #999999;
+  };
+}
+
+@media (max-width: @screen-xs){
+  .site-header{
+    nav {
+      padding: 20px 0;
+      h1 {
+        margin: -7px 0 0 -60px;
+        top: 50%;
+      }
+      .lines-button {
+        line-height: 0;
+      }
+    }
+    .sb-search {
+      padding: 5px;
+      .form-control {
+        padding: 0 36px 0 15px;
+      }
+      .sb-search-clear {
+        .mixin-search-clear;
+        font-size: 16px;
+        line-height: 45px;
+        position: absolute;
+        right: 60px;
+        width: 16px;
+      }
+    }
+  }
+}
+
 @media (min-width: @screen-sm) {
 .site-header{
     height: 51px;
@@ -124,6 +170,7 @@ input[type="search"]::-webkit-search-decoration {
      height: 50px;
      width: 50px;
      left: auto;
+     padding: 5px;
      right: 0;
      .form-control{
      left: auto;
@@ -140,6 +187,9 @@ input[type="search"]::-webkit-search-decoration {
        &::-webkit-input-placeholder  { 
         font-size:  0.857em;} // Safari and Chrome
      }
+     .sb-search-input {
+      padding: 0 40px 0 15px;
+     }
      .sb-search-submit{
     height: 50px;
     width: 50px;
@@ -152,8 +202,16 @@ input[type="search"]::-webkit-search-decoration {
      height: 50px;
      line-height: 50px;
     font-size: 1.5em;
-     
+     padding: 0 35px 0 15px;
      }
+    .sb-search-clear {
+      .mixin-search-clear;
+      font-size: 18px;
+      line-height: 50px;
+      position: absolute;
+      right: 67px;
+      width: 18px;
+    }
      
      &.sb-search-open{
      width: 270px; 
@@ -195,13 +253,21 @@ input[type="search"]::-webkit-search-decoration {
      background-color: transparent;
      padding: 0;
     .sb-search-input{
-      padding: 0 55px 0 15px;
+      padding: 0 78px 0 15px;
     }
      .form-control{
        position: absolute;
        line-height: 40px;
        height: 40px;
        border: none;
+     }
+     .sb-search-clear {
+        .mixin-search-clear;
+        font-size: 14px;
+        line-height: 40px;
+        position: absolute;
+        right: 52px;
+        width: 14px;
      }
      .sb-search-submit{
      
@@ -220,6 +286,7 @@ input[type="search"]::-webkit-search-decoration {
      }
      .icomoon-search{
      display:block;
+     padding: 0;
      position: absolute;
      top: 0;
      right: 0;

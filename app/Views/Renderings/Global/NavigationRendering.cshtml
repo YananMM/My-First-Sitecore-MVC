@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Lucene.Net.Highlight
 @using Sitecore.Data.Items
 @model RenderingModel
 
@@ -26,7 +27,7 @@
                                                 </ul>
                                             </div>
                                             <div class="col-lg-3 col-md-3 col-sm-3">
-                                                <h3>BY BRANDS</h3>
+                                                <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBrandsGuidItem)</h3>
                                                 <ul class="mega-brands">
                                                     <li><a href="#">A</a></li>
                                                     <li><a href="#">B</a></li>
@@ -56,7 +57,7 @@
                                                     <li><a href="#">Z</a></li>
 
                                                 </ul>
-                                                <h3>BY BUILDINGS</h3>
+                                                <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBuidingsGuidItem)</h3>
                                                 <ul>
                                                     <li><a href="#">SHOPPING-SUBMENU</a></li>
                                                     <li><a href="#">SHOPPING-SUBMENU</a></li>

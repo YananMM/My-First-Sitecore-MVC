@@ -266,11 +266,13 @@ $(document).ready(function() {
 			e.preventDefault();
 			if ($(this).is('.button-close')){
 				mobileMainMenuAnimation.reverse();
-				$('html, body')
-				.css({
-					'height': '',
-					'overflow-y': ''
-				});
+				if (!$('body').hasClass('t1')){
+					$('html, body')
+					.css({
+						'height': '',
+						'overflow-y': ''
+					});
+				}
 			} else {
 				mobileMainMenuAnimation.play();	
 				$('html, body')
@@ -291,43 +293,48 @@ $(document).ready(function() {
 		$(window).on('resize', handleMobileMenuHeight);
 	}
 
+
 	// Search Box
 	$('.sb-search').each(function(){
 		var $searchIcon = $('.icomoon-search', this),
 			$searchBox = $(this),
-			$searchInput = $('input[type=search]:first', this);
+			$searchInput = $('input[type=search]:first', this),
+			$searchClear = $('.sb-search-clear', this),
+			pageScroll = 0;
 		$searchIcon.click(function(e){
 			e.preventDefault();
 			if($searchBox.is('.sb-search-open')){
+				$searchInput.blur();
 				$searchBox.removeClass('sb-search-open');
-			} else {
-				$searchBox.addClass('sb-search-open');
-				origScrollPos = $(window).scrollTop();
-				if(isiOS()){
-					isScrolling = true;
-					$fades = $('body > *:visible').not($navbar);
-					TweenMax.to($fades, 0, {autoAlpha: 0});
-
-					setTimeout(function(){
-						isScrolling = false;
-						TweenMax.to($fades, .4, {autoAlpha: 1});
-
-						// iOS focus trigger scroll issue
-						$.scrollTo(origScrollPos, 0);
-
-						$navbar.css('top', origScrollPos);
-					}, 400);
+				if (isiOS){
+					$(window).scrollTop(pageScroll);
 				}
+			} else {
+				pageScroll = $(window).scrollTop();
+				$searchBox.addClass('sb-search-open');
 				$searchInput.focus();
 			}
 		});
-		$('body').on('click touchstart', function(event){
+		$searchClear.click(function(){
+			$(this).removeClass('active').parent().find('.sb-search-input').val('').focus();
+		});
+		$searchInput.on('keyup', function(){
+			if ($(this).val().length > 0){
+				$(this).parent().find('.sb-search-clear').addClass('active');
+			}else{
+				$(this).parent().find('.sb-search-clear').removeClass('active');
+			}
+		});
+		$('body').on('touchend click', function(event){
+			if (isiOS && $(event.target).prop('tagName').toLowerCase() === 'a'){
+				event.preventDefault();
+			}
+
 			if ($(event.target).parents('.sb-search').length < 1 && $searchBox.hasClass('sb-search-open')){
-				$searchBox.removeClass('sb-search-open');
 				$searchInput.blur();
-				$.scrollTo(origScrollPos, 0);
+				$searchBox.removeClass('sb-search-open');
 				if (isiOS){
-					$navbar.css('top', '');
+					$(window).scrollTop(pageScroll);
 				}
 			}
 		});
@@ -643,12 +650,13 @@ $(document).ready(function() {
 				}*/
 			},
 			swipeUp: function(e){
-				if(!isScrolling)
+				if(!isScrolling && currentSlide < totalSlides) {
 					goToSlide(currentSlide + 1);
-			},
+				}			},
 			swipeDown: function(e){
-				if(!isScrolling)
+				if(!isScrolling && currentSlide > 0) {
 					goToSlide(currentSlide - 1);
+				}
 			}
 		});
 		
@@ -832,6 +840,35 @@ $(document).ready(function() {
 			if ($(window).width() - startWidth > 200){
 				window.location.reload(true);
 			}
+		});
+	}
+	//iPad browser scroll problem fix
+	$('.site-footer, .back-top').on('touchmove', function(){
+		return false;
+	});
+	$('.site-footer, .back-top').on('touchstart', function(event){
+		if ($(event.target).prop('tagName').toLowerCase() !== 'a'){
+			return false;
+		}
+	});
+	//iPad browser double tap problem fix
+	$('body').on('touchend', function(){
+		var curTime = new Date().getTime();
+		var tapLast = $(this).data('tapLast') || curTime;
+		var tapGap  = curTime - tapLast;
+		if (tapGap < 500 && tapGap > 0){
+			return false;
+		}
+		$(this).data('tapLast', curTime);
+	});
+
+	//T1.html scroll problem fix
+	if ($('body').hasClass('t1')){
+		$('html, body').css({'height':'100%', 'overflow': 'hidden'});
+	}
+	if (/MSIE/.test(navigator.userAgent) && $('body').hasClass('t1')){
+		$('.t1').on('selectstart', function(){
+			return false;
 		});
 	}
 

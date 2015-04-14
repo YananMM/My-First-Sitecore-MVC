@@ -6677,7 +6677,7 @@ button.close {
 }
 .site-header .sb-search input[type="search"]::-webkit-search-cancel-button,
 .site-header .sb-search input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: normal;
+  -webkit-appearance: none;
   /* Now your own custom styles */
   /* height: 10px;
   width: 10px;
@@ -6759,6 +6759,60 @@ button.close {
 .site-header .no-js .sb-search {
   width: 100%;
 }
+.mixin-search-clear {
+  bottom: 0;
+  color: #666666;
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 20;
+}
+.mixin-search-clear.active {
+  display: block;
+}
+.mixin-search-clear:hover,
+.mixin-search-clear:focus,
+.mixin-search-clear:active {
+  color: #999999;
+}
+@media (max-width: 480px) {
+  .site-header nav {
+    padding: 20px 0;
+  }
+  .site-header nav h1 {
+    margin: -7px 0 0 -60px;
+    top: 50%;
+  }
+  .site-header nav .lines-button {
+    line-height: 0;
+  }
+  .site-header .sb-search {
+    padding: 5px;
+  }
+  .site-header .sb-search .form-control {
+    padding: 0 36px 0 15px;
+  }
+  .site-header .sb-search .sb-search-clear {
+    bottom: 0;
+    color: #666666;
+    display: none;
+    top: 0;
+    z-index: 20;
+    font-size: 16px;
+    line-height: 45px;
+    position: absolute;
+    right: 60px;
+    width: 16px;
+  }
+  .site-header .sb-search .sb-search-clear.active {
+    display: block;
+  }
+  .site-header .sb-search .sb-search-clear:hover,
+  .site-header .sb-search .sb-search-clear:focus,
+  .site-header .sb-search .sb-search-clear:active {
+    color: #999999;
+  }
+}
 @media (min-width: 768px) {
   .site-header {
     height: 51px;
@@ -6770,6 +6824,7 @@ button.close {
     height: 50px;
     width: 50px;
     left: auto;
+    padding: 5px;
     right: 0;
   }
   .site-header .sb-search .form-control {
@@ -6789,6 +6844,9 @@ button.close {
   .site-header .sb-search .form-control::-webkit-input-placeholder {
     font-size: 0.857em;
   }
+  .site-header .sb-search .sb-search-input {
+    padding: 0 40px 0 15px;
+  }
   .site-header .sb-search .sb-search-submit {
     height: 50px;
     width: 50px;
@@ -6801,6 +6859,27 @@ button.close {
     height: 50px;
     line-height: 50px;
     font-size: 1.5em;
+    padding: 0 35px 0 15px;
+  }
+  .site-header .sb-search .sb-search-clear {
+    bottom: 0;
+    color: #666666;
+    display: none;
+    top: 0;
+    z-index: 20;
+    font-size: 18px;
+    line-height: 50px;
+    position: absolute;
+    right: 67px;
+    width: 18px;
+  }
+  .site-header .sb-search .sb-search-clear.active {
+    display: block;
+  }
+  .site-header .sb-search .sb-search-clear:hover,
+  .site-header .sb-search .sb-search-clear:focus,
+  .site-header .sb-search .sb-search-clear:active {
+    color: #999999;
   }
   .site-header .sb-search.sb-search-open {
     width: 270px;
@@ -6852,13 +6931,33 @@ button.close {
     padding: 0;
   }
   .site-header .sb-search .sb-search-input {
-    padding: 0 55px 0 15px;
+    padding: 0 78px 0 15px;
   }
   .site-header .sb-search .form-control {
     position: absolute;
     line-height: 40px;
     height: 40px;
     border: none;
+  }
+  .site-header .sb-search .sb-search-clear {
+    bottom: 0;
+    color: #666666;
+    display: none;
+    top: 0;
+    z-index: 20;
+    font-size: 14px;
+    line-height: 40px;
+    position: absolute;
+    right: 52px;
+    width: 14px;
+  }
+  .site-header .sb-search .sb-search-clear.active {
+    display: block;
+  }
+  .site-header .sb-search .sb-search-clear:hover,
+  .site-header .sb-search .sb-search-clear:focus,
+  .site-header .sb-search .sb-search-clear:active {
+    color: #999999;
   }
   .site-header .sb-search .sb-search-submit {
     display: block;
@@ -6876,6 +6975,7 @@ button.close {
   }
   .site-header .sb-search .icomoon-search {
     display: block;
+    padding: 0;
     position: absolute;
     top: 0;
     right: 0;
@@ -7805,6 +7905,12 @@ button.close {
   overflow-y: hidden;
   position: relative;
   height: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .t1 .scroll-area {
   color: #ffffff;
@@ -10223,10 +10329,10 @@ button.close {
   width: 100%;
   background-color: #1d1d1d;
   font-weight: bold;
+  z-index: 100;
 }
 .back-top .back-to-top {
   position: absolute;
-  z-index: 1000;
   top: 0;
   bottom: auto;
   right: 0;
@@ -10473,4 +10579,3 @@ button.close {
     display: table-cell !important;
   }
 }
-/*# sourceMappingURL=style.css.map */

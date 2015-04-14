@@ -37,6 +37,12 @@ namespace Landmark.Classes
         public static readonly Item ShareThisGuidItem = Sitecore.Context.Database.GetItem("{DE562DBA-71F1-4D62-B19E-59B1BC78C925}");
         public static readonly Item SeeAllBrandsGuidItem = Sitecore.Context.Database.GetItem("{78A6E71A-D03F-471C-9F3F-7CEB8F75A8DC}");
         public static readonly Item AlsoInterestedInGuidItem = Sitecore.Context.Database.GetItem("{DEC9DDE1-89C6-4692-8731-DFFBCBF0E345}");
+        public static readonly Item AllBrandsGuidItem = Sitecore.Context.Database.GetItem("{5BF030CD-00E2-49CA-A19F-112D3E2B59E6}");
+        public static readonly Item ByBrandsGuidItem = Sitecore.Context.Database.GetItem("{2CAAA2DB-1D12-49CA-BA34-1E0E2731B167}");
+        public static readonly Item ByBuidingsGuidItem = Sitecore.Context.Database.GetItem("{323F290C-253A-4FEA-BEC0-3833E7ADBBC4}");
+        public static readonly Item GoGuidItem = Sitecore.Context.Database.GetItem("{9059E796-C6C9-433F-964C-607614D5F4B3}");
+        public static readonly Item SeeAlsoGuidItem = Sitecore.Context.Database.GetItem("{9173D2DC-5938-4C79-89DB-B77C0A4E2B12}");
+        
         
     }
 }
