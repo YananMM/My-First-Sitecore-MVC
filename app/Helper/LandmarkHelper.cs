@@ -7,6 +7,8 @@ using Sitecore.Collections;
 using Sitecore.ContentSearch.Utilities;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Managers;
+using Sitecore.Globalization;
+using Sitecore.Links;
 using Sitecore.Web.UI;
 
 namespace Landmark.Helper
@@ -40,20 +42,30 @@ namespace Landmark.Helper
         }
         public static string GetUrlByLanguage(Item item,string language)
         {
-            string itemUrl = string.Empty;
             var options = Sitecore.Links.LinkManager.GetDefaultUrlOptions();
-            options.LanguageEmbedding = Sitecore.Links.LanguageEmbedding.Always;
-            options.EmbedLanguage(Sitecore.Globalization.Language.Parse(language));
-            if (HasValidVersion(language))
-            {
-                options.EmbedLanguage(Sitecore.Globalization.Language.Parse(language));
-            }
-            else
-            {
-                options.EmbedLanguage(Sitecore.Globalization.Language.Parse("en"));
-            }
-            itemUrl = Sitecore.Links.LinkManager.GetItemUrl(item, options);
-            return itemUrl;
+            options.Language = LanguageManager.GetLanguage(language);
+            var returnUrl = LinkManager.GetItemUrl(item, options);
+
+            return returnUrl;
+        }
+
+        private static string TranslateUrl(string url)
+        {
+            string result = url;
+            //Translate language codes
+            result = result.Replace("/zh-HK/", "/tc/");
+            result = result.Replace("/zh-CN/", "/sc/");
+            //Fix root paths
+            result = result.Replace("/en.aspx", "/en/default.aspx");
+            result = result.Replace("/tc.aspx", "/tc/default.aspx");
+            result = result.Replace("/zh-HK.aspx", "/tc/default.aspx");
+            result = result.Replace("/sc.aspx", "/sc/default.aspx");
+            result = result.Replace("/zh-CN.aspx", "/sc/default.aspx");
+            //Fix double prefixes
+            result = result.Replace("/en/en/", "/en/");
+            result = result.Replace("/sc/sc/", "/sc/");
+            result = result.Replace("/tc/tc/", "/tc/");
+            return result;
         }
 
         public static bool IsShownInNavigation(Item item)
