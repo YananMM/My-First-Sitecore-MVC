@@ -244,6 +244,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="App_Config\Include\Landmark.config" />
     <Content Include="App_Config\Include\LandmarkSearch.config" />
+    <Content Include="App_Config\Landmark\RewriteMaps.config" />
+    <Content Include="App_Config\Landmark\RewriteRules.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -287,6 +289,13 @@
     <Content Include="Views\Renderings\Global\BreadcrumbRendering.cshtml" />
     <Content Include="Views\Renderings\Global\GeneralMainContentRendering.cshtml" />
     <Content Include="Views\Renderings\T11\T11PageTitle.cshtml" />
+    <Content Include="Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
