@@ -6,8 +6,8 @@ path: /sitecore/content/Home/Landmark/Shopping
 parent: {691A2D60-6CAF-42B7-90ED-7DD1AE99AFF3}
 name: Shopping
 master: {00000000-0000-0000-0000-000000000000}
-template: {C1339AEF-C986-4C5B-8969-1C139A81385E}
-templatekey: T11 Page
+template: {A7BB12FC-5C83-470B-B805-D6593BBEE908}
+templatekey: Shopping Page Object
 
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
@@ -19,43 +19,22 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 6be61471-91f9-4d66-944f-859d451ab125
+revision: 7498b8a5-0440-4906-a5b6-a07ad4a7ebe8
 
 ----field----
-field: {478DBB6E-70DB-42E3-814E-C30B6CBB57BD}
-name: Ad Image
-key: ad image
-content-length: 58
-
-<image mediaid="{DC3DAEC1-47FB-4BB1-9C3E-98885C4F3A73}" />
-----field----
-field: {1CEE21F7-A697-4030-AC49-DA771AFA0403}
-name: Ad Title
-key: ad title
-content-length: 34
-
-MARC JACOBS PULLS THE HEARTSTRINGS
-----field----
-field: {8B104260-790F-4909-938A-0ED0D344484A}
-name: Ad Description
-key: ad description
-content-length: 88
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.
-----field----
-field: {2759089B-A918-41A0-8030-3129E99BFCAF}
-name: Ad Learn More Link Text
-key: ad learn more link text
-content-length: 10
-
-Learn More
-----field----
-field: {39CA2015-85D4-4A17-91F9-FE1169933F4F}
+field: {D0E780DD-778A-403F-98D2-1F0D7789AA26}
 name: Page Title
 key: page title
 content-length: 8
 
 Shopping
+----field----
+field: {C45106ED-FEB5-464D-985A-E56D5C8069F9}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 1
+
+1
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -69,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6be61471-91f9-4d66-944f-859d451ab125
+7498b8a5-0440-4906-a5b6-a07ad4a7ebe8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150409T151317:635641891972637817
+20150630T135839:635712695192755589
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

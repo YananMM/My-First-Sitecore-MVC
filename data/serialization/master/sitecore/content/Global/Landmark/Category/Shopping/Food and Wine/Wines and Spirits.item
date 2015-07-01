@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {F61FBFF7-9642-4795-AF68-F9CF66A32791}
+database: master
+path: /sitecore/content/Global/Landmark/Category/Shopping/Food and Wine/Wines and Spirits
+parent: {E63EF22D-6E42-43B1-8546-5E2B7F196B0F}
+name: Wines and Spirits
+master: {00000000-0000-0000-0000-000000000000}
+template: {36433FAF-1435-435C-B214-B5AD82D20634}
+templatekey: Category Object
+
+----version----
+language: en
+version: 1
+revision: 724e6b33-60ef-49cc-a6da-eb4c4937ed3b
+
+----field----
+field: {FEDA401D-9C60-42EC-B122-8526FC80D491}
+name: Category Name
+key: category name
+content-length: 15
+
+Wines & Spirits
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150701T103034
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+724e6b33-60ef-49cc-a6da-eb4c4937ed3b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150701T103038:635713434382543747
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

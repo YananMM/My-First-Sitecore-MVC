@@ -12,7 +12,7 @@ templatekey: Brand Object
 ----version----
 language: en
 version: 1
-revision: fe86c9ac-0874-4df3-8ddc-3711552d5883
+revision: 4c80f301-2a9f-4381-ad0c-d4dbaf2c32e5
 
 ----field----
 field: {D672550C-0850-4BEA-BB32-0763773BD678}
@@ -29,6 +29,13 @@ content-length: 58
 
 <image mediaid="{291CB123-1221-44CC-BD37-243718BE7DB7}" />
 ----field----
+field: {D2CC719F-83C1-4BDC-9EEF-053F1DEC70FC}
+name: Tag
+key: tag
+content-length: 38
+
+{5C149C7B-2B9F-4955-8642-52A8381DBE3A}
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fe86c9ac-0874-4df3-8ddc-3711552d5883
+4c80f301-2a9f-4381-ad0c-d4dbaf2c32e5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150409T150846:635641889267097817
+20150701T100901:635713421416443753
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

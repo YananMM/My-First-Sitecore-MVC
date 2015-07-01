@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {ECC6FF75-1A26-47FB-8937-FB556AC04D6C}
+database: master
+path: /sitecore/content/Home/Landmark/Shopping/Men/Fashion/By Brands
+parent: {DF363352-1C7B-4A73-AB38-D667824B9C89}
+name: By Brands
+master: {00000000-0000-0000-0000-000000000000}
+template: {790799C0-14DD-47FA-BB3E-9BE0FE166C90}
+templatekey: T13 Page
+
+----version----
+language: en
+version: 1
+revision: 0f2d6e1e-d88d-4423-9b92-b7e95cb29094
+
+----field----
+field: {39CA2015-85D4-4A17-91F9-FE1169933F4F}
+name: Page Title
+key: page title
+content-length: 6
+
+Brands
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 15
+
+20150410T104854
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0f2d6e1e-d88d-4423-9b92-b7e95cb29094
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 34
+
+20150629T145848:635711867287483499
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
