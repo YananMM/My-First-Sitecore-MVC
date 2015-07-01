@@ -19,7 +19,7 @@ content-length: 675
 ----version----
 language: en
 version: 1
-revision: 7cce3fe4-5cc9-4188-bee2-5be93c9080fe
+revision: 251d0616-4e30-4a90-942c-4db66ffa78c9
 
 ----field----
 field: {39CA2015-85D4-4A17-91F9-FE1169933F4F}
@@ -36,6 +36,20 @@ content-length: 38
 
 {14EA7138-A502-49DF-AF7F-C73016278A93}
 ----field----
+field: {4C2FFB95-50C2-41B2-87A0-62224E8EA568}
+name: Banner Image
+key: banner image
+content-length: 58
+
+<image mediaid="{C62D68B3-2B2D-4EA0-8D28-BEB6FF503AC9}" />
+----field----
+field: {0B423247-AC3D-4BF6-A2E0-EA4E0A42438D}
+name: Banner Title Image
+key: banner title image
+content-length: 58
+
+<image mediaid="{0D17488F-BCD3-43EA-91E1-2450E6E79854}" />
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -48,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7cce3fe4-5cc9-4188-bee2-5be93c9080fe
+251d0616-4e30-4a90-942c-4db66ffa78c9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150701T100220:635713417406892344
+20150701T142058:635713572582652142
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
