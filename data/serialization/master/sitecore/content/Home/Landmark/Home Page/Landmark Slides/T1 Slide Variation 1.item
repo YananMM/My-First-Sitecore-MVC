@@ -12,7 +12,7 @@ templatekey: T1 Slide Variation
 ----version----
 language: en
 version: 1
-revision: 76398f8c-2b73-4d26-bda9-a9ee95eefe7a
+revision: ad9e5560-8702-4e16-aec7-95eefdbef4b7
 
 ----field----
 field: {028A0158-C2E5-4830-B094-D6B62FF600F1}
@@ -36,6 +36,20 @@ content-length: 24
 
 ISCOVER LANDMARK STORIES
 ----field----
+field: {17758038-4544-4749-AC11-74465EC1AB1E}
+name: Main Version Slide Style
+key: main version slide style
+content-length: 38
+
+{92C90E8C-7528-4C7C-B1FA-46205828279E}
+----field----
+field: {BB8A5E73-04C4-4920-B43B-AA40C4DD16A1}
+name: Sub Version Slide Style
+key: sub version slide style
+content-length: 38
+
+{85008200-165B-4E4D-B4B9-1CDA97D7A170}
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -48,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-76398f8c-2b73-4d26-bda9-a9ee95eefe7a
+ad9e5560-8702-4e16-aec7-95eefdbef4b7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 34
 
-20150630T161523:635712777237568283
+20150701T143307:635713579875339259
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

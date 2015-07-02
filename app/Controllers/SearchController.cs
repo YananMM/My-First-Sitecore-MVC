@@ -32,14 +32,13 @@ namespace Landmark.Controllers
                 var index = ContentSearchManager.GetIndex(indexName);
                 var query = PredicateBuilder.True<LandmarkSearchResultItem>();
 
-
                 query = query.And(x => x.PageTitle.Contains(search));
 
                 using (var context = index.CreateSearchContext())
                 {
 
                     var searchItems = context.GetQueryable<LandmarkSearchResultItem>()
-                        .Where(item => item.Content.Like(search) && item.Language.Equals(language))
+                        .Where(item => item.Like(search) && item.Language.Equals(language))
                         .OrderBy(item => item.CreatedDate)
                         .ToList();
                     var total = searchItems.Count;

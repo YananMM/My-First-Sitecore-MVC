@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Landmark.Classes;
 using Sitecore.Collections;
 using Sitecore.ContentSearch.Utilities;
 using Sitecore.Data.Fields;
@@ -97,6 +98,31 @@ namespace Landmark.Helper
             string bodyClass = string.Empty;
             bodyClass = Sitecore.Context.Item.TemplateName.Split(' ')[0].ToLower();
             return bodyClass;
+        }
+
+        public static string GetSlideClass(Item item)
+        {
+            string styleClass = string.Empty;
+            //var multilistField = (MultilistField)Sitecore.Context.Item.Fields["MultilistFieldName"];
+            var mainStyleField = (ReferenceField) item.Fields["Main Version Slide Style"];
+            var subStyleField = (ReferenceField)item.Fields["Sub Version Slide Style"];
+            if (mainStyleField.Value.Equals(ItemGuids.FullSizePhotoOverlayText) & subStyleField.Value.Equals(ItemGuids.TwoNumbersTwoCaptionsTextLink))
+            {
+                styleClass = "panel-3";
+            }
+            if (mainStyleField.Value.Equals(ItemGuids.LeftPhotoRightText) & subStyleField.Value.Equals(ItemGuids.TwoNumbersTwoCaptionsTextLink))
+            {
+                styleClass = "panel-1";
+            }
+            if (mainStyleField.Value.Equals(ItemGuids.LeftPhotoRightText) & subStyleField.Value.Equals(ItemGuids.OneTitleOneTextLink))
+            {
+                styleClass = "panel-2";
+            }
+            if (mainStyleField.Value.Equals(ItemGuids.FullSizePhotoOverlayText) & subStyleField.Value.Equals(ItemGuids.OneTitleOneTextLink))
+            {
+                styleClass = "panel-3";
+            }
+            return styleClass;
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Data.Fields
 @model RenderingModel
 @{
     var slideList = Model.Item.Children.ToList();
@@ -8,9 +9,9 @@
     <ul class="slider">
         @foreach (var item in slideList)
         {
-
+            
             <li>
-                <div class="@item["Slide CSS"] clearfix">
+                <div class="@LandmarkHelper.GetSlideClass(item) clearfix">
                     <div class="panel-img" data-bg="@Html.Sitecore().ImageFieldSrc("Slide Image",item)"></div>
                     <div class="panel-main">
                         <div class="panel-text">

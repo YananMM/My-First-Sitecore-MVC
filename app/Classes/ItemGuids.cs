@@ -24,6 +24,10 @@ namespace Landmark.Classes
         //item id
         public static readonly string PanelsFolderItemGuid = "{3BB40D54-8F7F-449B-B9DB-432C65EB4224}";
         public static readonly string AdvertTemplateItemGuid = "{32677AD3-AB70-49BF-A525-08493045C4FA}";
+        public static readonly string FullSizePhotoOverlayText = "{88EC2664-2C62-4BA7-923A-E62C7FAE7DA8}";
+        public static readonly string LeftPhotoRightText = "{92C90E8C-7528-4C7C-B1FA-46205828279E}";
+        public static readonly string OneTitleOneTextLink = "{D4D02E60-F4D6-4FA1-A6B9-B4CD0DC3CC40}";
+        public static readonly string TwoNumbersTwoCaptionsTextLink = "{85008200-165B-4E4D-B4B9-1CDA97D7A170}";
 
         //item 
         public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{691A2D60-6CAF-42B7-90ED-7DD1AE99AFF3}");
