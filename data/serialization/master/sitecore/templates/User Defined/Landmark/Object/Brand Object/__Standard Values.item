@@ -1,21 +1,21 @@
 ----item----
 version: 1
-id: {D5AFFB38-0150-4E55-B7DE-775368E69105}
+id: {873E4232-5F1A-4153-8C99-DC32F3929CA3}
 database: master
 path: /sitecore/templates/User Defined/Landmark/Object/Brand Object/__Standard Values
-parent: {97BC8E0A-0EC9-47BA-8866-70C5B9D670FF}
+parent: {FE57AFD0-1D81-48B5-99D7-FAD3CB2B103B}
 name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
-template: {97BC8E0A-0EC9-47BA-8866-70C5B9D670FF}
+template: {FE57AFD0-1D81-48B5-99D7-FAD3CB2B103B}
 templatekey: Brand Object
 
 ----version----
 language: en
 version: 1
-revision: 2d9f8b45-6d6e-4201-ba6d-fed9a83fcf25
+revision: d57c8803-1e02-47a0-8d4c-723a9c6170ad
 
 ----field----
-field: {D672550C-0850-4BEA-BB32-0763773BD678}
+field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
 name: Brand Title
 key: brand title
 content-length: 5
@@ -32,9 +32,9 @@ sitecore\admin
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150409T090528
+20150721T065903Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2d9f8b45-6d6e-4201-ba6d-fed9a83fcf25
+d57c8803-1e02-47a0-8d4c-723a9c6170ad
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150409T090537:635641671375683011
+20150721T065915Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,54 +1,47 @@
 ----item----
 version: 1
-id: {973FE082-9A35-4CE6-8846-07AE3F539A4F}
+id: {E36337D8-56B1-4AD9-8733-441B1C81A374}
 database: master
 path: /sitecore/content/Global/Landmark/Footer Navigation/ABOUT US
-parent: {9B0D8F54-71B1-41A5-B1F9-B1799DB44C6A}
+parent: {5B9F3F5E-A640-4D05-8CF6-3A4591751CA9}
 name: ABOUT US
 master: {00000000-0000-0000-0000-000000000000}
-template: {4EDF3AB1-58C5-422D-B54F-06903A947D7F}
-templatekey: General Link
+template: {E3B0C164-8AB5-4BF5-83CB-E2E51AA87166}
+templatekey: General Link Object
 
 ----version----
 language: en
 version: 1
-revision: dc6cea99-1580-4429-a734-78039c00688f
+revision: a7d8fc16-0a99-4ed8-921d-a732ed05ced4
 
 ----field----
-field: {C00B0E14-6C3D-44C8-A028-1F4177F93B1E}
+field: {95B968E4-4479-481D-AE50-9D0083BC242E}
 name: Link Text
 key: link text
 content-length: 8
 
 ABOUT US
 ----field----
-field: {4A12535E-4A71-4176-996D-FDF2C0072780}
-name: Link URL
-key: link url
-content-length: 140
-
-<link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}" />
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150326T105123
+20150721T083310Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-dc6cea99-1580-4429-a734-78039c00688f
+a7d8fc16-0a99-4ed8-921d-a732ed05ced4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150401T092102:635634768621797165
+20150721T083310Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

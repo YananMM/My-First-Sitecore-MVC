@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {CD1559E7-44C5-4E9F-BBBC-4D8579490717}
+id: {33041911-3D04-4655-B541-4822EA8E5F67}
 database: master
 path: /sitecore/templates/User Defined/Landmark/Object/Meta Object/Meta Data/Meta Description
-parent: {9B1E67FF-2194-476D-996D-553BB4F4D93A}
+parent: {E602790A-C0CF-441D-92AB-172850062C84}
 name: Meta Description
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
@@ -22,33 +22,33 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-200
+100
 ----version----
 language: en
 version: 1
-revision: a0d5883d-77f6-4929-adf6-825504cd87a2
+revision: 025f470b-982b-4ac2-b0fb-6d700ded3846
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150325T153845
+20150721T072637Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-a0d5883d-77f6-4929-adf6-825504cd87a2
+025f470b-982b-4ac2-b0fb-6d700ded3846
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150326T090243:635629573631709583
+20150721T072738Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

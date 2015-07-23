@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {4FF8DA4D-0252-4A8F-A369-A286428A3B8A}
+id: {FB0C20EF-8DD8-4233-A9E8-3D1536412DB7}
 database: master
 path: /sitecore/content/Global/Landmark/Category/Shopping
-parent: {DB0BD910-D2E4-41BB-B8E9-901EBBA67F31}
+parent: {C0B806BD-632A-49F8-B878-4BC5766C858F}
 name: Shopping
 master: {00000000-0000-0000-0000-000000000000}
 template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
@@ -20,21 +20,21 @@ content-length: 38
 field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
 name: __Masters
 key: __masters
-content-length: 77
+content-length: 38
 
-{A87A00B1-E6DB-45AB-8B54-636FEC3B5523}|{36433FAF-1435-435C-B214-B5AD82D20634}
+{753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
 ----version----
 language: en
 version: 1
-revision: 53798dc2-3398-4dc0-b56c-85b1f5057984
+revision: 738411ff-2bab-4799-84b1-bfc7e4af3eb4
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150630T094552
+20150721T081704Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-53798dc2-3398-4dc0-b56c-85b1f5057984
+738411ff-2bab-4799-84b1-bfc7e4af3eb4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150701T104016:635713440166578375
+20150721T082349Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

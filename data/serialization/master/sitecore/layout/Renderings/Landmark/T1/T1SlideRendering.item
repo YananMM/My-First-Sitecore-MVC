@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {37F4A990-4F7A-4232-B411-2F9C4EB0325D}
+id: {0EA10D95-7963-4971-95E3-2A0C766D297F}
 database: master
 path: /sitecore/layout/Renderings/Landmark/T1/T1SlideRendering
-parent: {EC458167-1C95-4D37-B999-6D25C5DE5626}
+parent: {6BFF641A-381C-404F-B0A5-95AAFBFE5BB9}
 name: T1SlideRendering
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
@@ -13,35 +13,35 @@ templatekey: View rendering
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
 name: Path
 key: path
-content-length: 44
+content-length: 53
 
-/Views/Renderings/T1/T1SlideRendering.cshtml
+/Views/Renderings/Landmark/T1/T1SlideRendering.cshtml
 ----version----
 language: en
 version: 1
-revision: 9f7964ac-ca4f-4d1a-a548-88d889730c9c
+revision: 1a98a703-4892-4b99-8a40-b1ccb37d0ba5
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150331T104116
+20150722T074906Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-9f7964ac-ca4f-4d1a-a548-88d889730c9c
+1a98a703-4892-4b99-8a40-b1ccb37d0ba5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150331T155429:635634140698117518
+20150723T080634Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

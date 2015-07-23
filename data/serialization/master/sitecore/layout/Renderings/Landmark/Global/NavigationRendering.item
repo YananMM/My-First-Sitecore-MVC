@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {25D2AD09-84E3-4DA8-9720-9DFEECC67A9B}
+id: {C72D39E8-5FD2-40F6-B815-83DAD5E92CC3}
 database: master
 path: /sitecore/layout/Renderings/Landmark/Global/NavigationRendering
-parent: {98BF7F90-AEBD-466A-807F-AE08A3266791}
+parent: {ADACEC41-E9F8-40D2-9391-C686679DEEC1}
 name: NavigationRendering
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
@@ -13,35 +13,35 @@ templatekey: View rendering
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
 name: Path
 key: path
-content-length: 51
+content-length: 60
 
-/Views/Renderings/Global/NavigationRendering.cshtml
+/Views/Renderings/Landmark/Global/NavigationRendering.cshtml
 ----version----
 language: en
 version: 1
-revision: 4d494461-74b3-4a5c-a442-b1143f37ea97
+revision: 28486819-8f50-463f-bcc1-66b4863e4e13
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150409T135722
+20150722T071130Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-4d494461-74b3-4a5c-a442-b1143f37ea97
+28486819-8f50-463f-bcc1-66b4863e4e13
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150409T135723:635641846432398808
+20150723T080544Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

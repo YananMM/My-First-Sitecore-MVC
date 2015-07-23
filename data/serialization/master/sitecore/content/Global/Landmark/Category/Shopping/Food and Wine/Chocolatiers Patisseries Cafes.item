@@ -1,21 +1,21 @@
 ----item----
 version: 1
-id: {C44B7BBC-3F85-4278-A40C-82C9417641D3}
+id: {EBC788C5-2B1A-4853-A671-BCDDF5C2716B}
 database: master
 path: /sitecore/content/Global/Landmark/Category/Shopping/Food and Wine/Chocolatiers Patisseries Cafes
-parent: {E63EF22D-6E42-43B1-8546-5E2B7F196B0F}
+parent: {3FBE00DD-2724-453D-8208-D0E3425672F1}
 name: Chocolatiers Patisseries Cafes
 master: {00000000-0000-0000-0000-000000000000}
-template: {36433FAF-1435-435C-B214-B5AD82D20634}
+template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
 templatekey: Category Object
 
 ----version----
 language: en
 version: 1
-revision: cd4bc5d0-8a8f-472c-85f4-f2794bb1139b
+revision: 94fa731d-e36e-4992-a803-4b868e11b24b
 
 ----field----
-field: {FEDA401D-9C60-42EC-B122-8526FC80D491}
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
 name: Category Name
 key: category name
 content-length: 34
@@ -25,23 +25,23 @@ Chocolatiers, Patisseries & Cafe's
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150701T103121
+20150721T082936Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-cd4bc5d0-8a8f-472c-85f4-f2794bb1139b
+94fa731d-e36e-4992-a803-4b868e11b24b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150701T103210:635713435304302479
+20150721T082946Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

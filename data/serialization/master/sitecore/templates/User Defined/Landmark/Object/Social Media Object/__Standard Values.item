@@ -1,21 +1,21 @@
 ----item----
 version: 1
-id: {5DA2DC9A-8C17-4115-A701-A2FF7059E541}
+id: {173EEAD7-8BC2-4013-B517-DD13BEE44524}
 database: master
 path: /sitecore/templates/User Defined/Landmark/Object/Social Media Object/__Standard Values
-parent: {F62290AC-3604-40FB-BABB-CE74016AC851}
+parent: {4618F3F9-EDEA-49B3-A7D5-16E24B7BD21E}
 name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
-template: {F62290AC-3604-40FB-BABB-CE74016AC851}
+template: {4618F3F9-EDEA-49B3-A7D5-16E24B7BD21E}
 templatekey: Social Media Object
 
 ----version----
 language: en
 version: 1
-revision: 8094756e-d49f-4863-99a3-6874d37c22ec
+revision: ff07a899-7e07-451d-bc82-f2f654258fb6
 
 ----field----
-field: {9B47C71A-CC49-4F56-88AA-02C64E1CBA4D}
+field: {513101BC-BF57-4461-8454-DDA9D7527C51}
 name: Social Media Title
 key: social media title
 content-length: 5
@@ -32,9 +32,9 @@ sitecore\admin
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150326T090251
+20150721T072841Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8094756e-d49f-4863-99a3-6874d37c22ec
+ff07a899-7e07-451d-bc82-f2f654258fb6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150326T090302:635629573827230929
+20150721T072847Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

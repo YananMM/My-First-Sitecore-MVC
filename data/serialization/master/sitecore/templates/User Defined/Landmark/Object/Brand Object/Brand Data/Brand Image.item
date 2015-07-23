@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {42B5A036-5007-4AD6-8BDF-F58507738ABB}
+id: {DDA15F2F-F719-4896-A8A7-2FC0FE5C5500}
 database: master
 path: /sitecore/templates/User Defined/Landmark/Object/Brand Object/Brand Data/Brand Image
-parent: {5B7E1FED-C083-493A-A935-91F27D3D6ED7}
+parent: {62BCB71B-041C-4290-9DAB-1444D309A141}
 name: Brand Image
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
@@ -17,6 +17,13 @@ content-length: 5
 
 Image
 ----field----
+field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
+name: Source
+key: source
+content-length: 46
+
+/sitecore/media library/Images/Landmark/Brands
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -26,29 +33,29 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 57afe39b-3ead-4d3a-ae16-ea170faf95bf
+revision: 937a140a-018b-4ff6-a18b-f13f32448c1a
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150409T090504
+20150721T065415Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-57afe39b-3ead-4d3a-ae16-ea170faf95bf
+937a140a-018b-4ff6-a18b-f13f32448c1a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150630T145015:635712726152896407
+20150721T084536Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

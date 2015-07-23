@@ -59,9 +59,9 @@
       <HintPath>..\lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.LanguageFallbackItemProvider">
-      <HintPath>..\lib\Sitecore.LanguageFallbackItemProvider.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Sitecore.LanguageFallbackItemProvider, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Sitecore.LanguageFallbackItemProvider.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Mvc">
       <HintPath>..\lib\Sitecore.Mvc.dll</HintPath>
@@ -117,6 +117,8 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Classes\ConstantString.cs" />
+    <Compile Include="Classes\EventHandlers\UserEvent.cs" />
+    <Compile Include="Classes\InstagramSocial.cs" />
     <Compile Include="Classes\ItemGuids.cs" />
     <Compile Include="Classes\Crawlers\LanguageFallbackCrawler.cs" />
     <Compile Include="Controllers\SearchController.cs" />
@@ -242,10 +244,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="App_Config\Include\Landmark.config" />
+    <Content Include="App_Config\Include\Landmark.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Config\Include\LandmarkSearch.config" />
     <Content Include="App_Config\Landmark\RewriteMaps.config" />
-    <Content Include="App_Config\Landmark\RewriteRules.config" />
+    <Content Include="App_Config\Landmark\RewriteRules.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Config\ConnectionStrings.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -264,32 +273,36 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Layouts\MainViewLayout.cshtml" />
-    <Content Include="Views\Renderings\Global\ScriptRendering.cshtml" />
-    <Content Include="Views\Renderings\Global\FooterRendering.cshtml" />
-    <Content Include="Views\Renderings\Global\FooterNavigationRendering.cshtml" />
-    <Content Include="Views\Renderings\Global\SocialMediaRendering.cshtml" />
-    <Content Include="Views\Renderings\T1\T1PanelVariation2Rendering.cshtml" />
-    <Content Include="Views\Renderings\Global\FooterConfigRendering.cshtml" />
-    <Content Include="Views\Renderings\T1\T1SlideRendering.cshtml" />
-    <Content Include="Views\Renderings\T1\T1ContentRendering.cshtml" />
-    <Content Include="Views\Renderings\Global\GlossaryRendering.cshtml" />
-    <Content Include="Views\Renderings\T1\T1PanelVariation1Rendering.cshtml" />
-    <Content Include="Views\Renderings\T1\T1PanelNavRendering.cshtml">
+    <Content Include="Views\Layouts\Landmark\MainViewLayout.cshtml" />
+    <Content Include="Views\Renderings\Landmark\Global\ScriptRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\Global\FooterRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\Global\FooterNavigationRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\Global\SocialMediaRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T1\T1PanelVariation2Rendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\Global\FooterConfigRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T1\T1SlideRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T1\T1ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\Global\GlossaryRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T1\T1PanelVariation1Rendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T1\T1PanelNavRendering.cshtml">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="Views\Renderings\T1\T1PanelVariation3Rendering.cshtml" />
-    <Content Include="Views\Renderings\T1\T1PanelVariation4Rendering.cshtml" />
-    <Content Include="Views\Renderings\Global\HeaderRendering.cshtml">
+    <Content Include="Views\Renderings\Landmark\T1\T1PanelVariation3Rendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T1\T1PanelVariation4Rendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\Global\HeaderRendering.cshtml">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="Views\Renderings\Global\NavigationRendering.cshtml" />
-    <Content Include="Views\Renderings\Global\MobileNavigationRendering.cshtml" />
-    <Content Include="Views\Renderings\T11\T11ContentRendering.cshtml" />
-    <Content Include="Views\Renderings\Global\BreadcrumbRendering.cshtml" />
-    <Content Include="Views\Renderings\Global\GeneralMainContentRendering.cshtml" />
-    <Content Include="Views\Renderings\T11\T11PageTitle.cshtml" />
-    <Content Include="Web.config" />
+    <Content Include="Views\Renderings\Landmark\Global\NavigationRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\Global\MobileNavigationRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T11\T11ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\Global\BreadcrumbRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\Global\GeneralMainContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T11\T11PageTitle.cshtml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Renderings\Landmark\Global\ByBrandsComponentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\Global\ByBuidingsComponentRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

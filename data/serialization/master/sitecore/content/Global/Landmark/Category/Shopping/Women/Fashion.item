@@ -1,21 +1,21 @@
 ----item----
 version: 1
-id: {BDED74CD-F13C-4831-BB6E-26D1CB765935}
+id: {01E67855-9741-4C1C-9FCD-2432982120B6}
 database: master
 path: /sitecore/content/Global/Landmark/Category/Shopping/Women/Fashion
-parent: {FB263B13-9E88-445B-B1AD-B7CFF8189EAB}
+parent: {584512EB-189E-4FEF-9280-3F893DD9A9E1}
 name: Fashion
 master: {00000000-0000-0000-0000-000000000000}
-template: {36433FAF-1435-435C-B214-B5AD82D20634}
+template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
 templatekey: Category Object
 
 ----version----
 language: en
 version: 1
-revision: c35fa684-1be2-432d-9da6-67926c9f0304
+revision: eff55cfc-6f84-4427-a197-33e699ce4d92
 
 ----field----
-field: {FEDA401D-9C60-42EC-B122-8526FC80D491}
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
 name: Category Name
 key: category name
 content-length: 7
@@ -25,23 +25,23 @@ Fashion
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150701T101411
+20150721T082400Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-c35fa684-1be2-432d-9da6-67926c9f0304
+eff55cfc-6f84-4427-a197-33e699ce4d92
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150701T101411:635713424512317647
+20150721T082400Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
