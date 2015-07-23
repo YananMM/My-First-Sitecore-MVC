@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {270338FD-925B-4BB1-9C2E-23A44737627D}
+id: {18D6D2C2-4E85-447A-B3D1-7CAC9FE77039}
 database: master
 path: /sitecore/layout/Renderings/Landmark/T1/T1ContentRendering
-parent: {EC458167-1C95-4D37-B999-6D25C5DE5626}
+parent: {6BFF641A-381C-404F-B0A5-95AAFBFE5BB9}
 name: T1ContentRendering
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
@@ -13,42 +13,35 @@ templatekey: View rendering
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
 name: Path
 key: path
-content-length: 46
+content-length: 55
 
-/Views/Renderings/T1/T1ContentRendering.cshtml
-----field----
-field: {EF7C5528-7307-4E19-863B-DA19EED6A9ED}
-name: Open Properties after Add
-key: open properties after add
-content-length: 1
-
--
+/Views/Renderings/Landmark/T1/T1ContentRendering.cshtml
 ----version----
 language: en
 version: 1
-revision: 133b7b06-1f5b-41a3-8325-b896708e5061
+revision: c451c640-b711-4de6-be5d-56d07f52c7b8
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150331T113737
+20150722T074808Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-133b7b06-1f5b-41a3-8325-b896708e5061
+c451c640-b711-4de6-be5d-56d07f52c7b8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150331T155424:635634140647134602
+20150723T080613Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

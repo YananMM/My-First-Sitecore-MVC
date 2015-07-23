@@ -1,26 +1,33 @@
 ----item----
 version: 1
-id: {CB5BBFF6-3D37-4F55-AD6C-6257527C0A14}
+id: {8C38A27C-2F4D-42CF-B3B1-37E003EDB20F}
 database: master
 path: /sitecore/content/Global/Landmark/Carousels Style/Sub versions of slides
-parent: {3D491405-2006-409A-A7D8-E457FC1138AB}
+parent: {1315A64E-3912-45AC-A687-7B50E9A11C66}
 name: Sub versions of slides
 master: {00000000-0000-0000-0000-000000000000}
 template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
 templatekey: Folder
 
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{7AD93F40-7320-4CD8-89A4-D4E4BB44ADF8}
 ----version----
 language: en
 version: 1
-revision: 4cdcd9a1-fe3b-4235-be78-96665a06a25b
+revision: b7f3075e-bf08-47c7-8659-b2f8d15e8e88
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150701T113913
+20150721T080847Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4cdcd9a1-fe3b-4235-be78-96665a06a25b
+b7f3075e-bf08-47c7-8659-b2f8d15e8e88
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150701T113913:635713475536841439
+20150721T080937Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

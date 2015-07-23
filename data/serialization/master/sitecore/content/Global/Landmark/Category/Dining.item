@@ -1,40 +1,33 @@
 ----item----
 version: 1
-id: {EA4548EB-9E15-406F-A8FA-537D688C11F6}
+id: {26C999E2-4351-4F83-9201-5C5662D9FDC5}
 database: master
 path: /sitecore/content/Global/Landmark/Category/Dining
-parent: {DB0BD910-D2E4-41BB-B8E9-901EBBA67F31}
+parent: {C0B806BD-632A-49F8-B878-4BC5766C858F}
 name: Dining
 master: {00000000-0000-0000-0000-000000000000}
 template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
 templatekey: Folder
 
 ----field----
-field: {6FD695E7-7F6D-4CA5-8B49-A829E5950AE9}
-name: __Subitems Sorting
-key: __subitems sorting
-content-length: 38
-
-{C1FF011E-B02A-44E3-8444-9FC89CFC28CE}
-----field----
 field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
 name: __Masters
 key: __masters
-content-length: 77
+content-length: 38
 
-{A87A00B1-E6DB-45AB-8B54-636FEC3B5523}|{36433FAF-1435-435C-B214-B5AD82D20634}
+{753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
 ----version----
 language: en
 version: 1
-revision: 772ce409-e556-4ee4-a3a4-02d0e7207cd6
+revision: c780fa91-d917-485d-8848-d7639defe6a4
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150701T111635
+20150721T081656Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-772ce409-e556-4ee4-a3a4-02d0e7207cd6
+c780fa91-d917-485d-8848-d7639defe6a4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150701T112507:635713467073177345
+20150721T081758Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

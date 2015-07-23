@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {9B5BFB35-7AAE-47D1-8C34-AB7497491F76}
+id: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
 database: master
 path: /sitecore/templates/User Defined/Landmark/Object/Brand Object/Brand Data/Buidings
-parent: {5B7E1FED-C083-493A-A935-91F27D3D6ED7}
+parent: {62BCB71B-041C-4290-9DAB-1444D309A141}
 name: Buidings
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
@@ -33,29 +33,29 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 2c96d6bb-d227-477a-bb1b-ea4a14181090
+revision: d1e5a971-9090-4e17-92cf-f00fc92ed092
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150414T162720
+20150721T065415Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-2c96d6bb-d227-477a-bb1b-ea4a14181090
+d1e5a971-9090-4e17-92cf-f00fc92ed092
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150630T145015:635712726153336433
+20150721T084536Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

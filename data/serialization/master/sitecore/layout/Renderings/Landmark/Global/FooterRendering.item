@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {C34F6069-D5B7-4D4A-97A4-DFEB53AE6F1C}
+id: {CE360129-0EE2-47FC-A1D9-3A28105B1249}
 database: master
 path: /sitecore/layout/Renderings/Landmark/Global/FooterRendering
-parent: {98BF7F90-AEBD-466A-807F-AE08A3266791}
+parent: {ADACEC41-E9F8-40D2-9391-C686679DEEC1}
 name: FooterRendering
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
@@ -13,42 +13,35 @@ templatekey: View rendering
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
 name: Path
 key: path
-content-length: 47
+content-length: 56
 
-/Views/Renderings/Global/FooterRendering.cshtml
-----field----
-field: {EF7C5528-7307-4E19-863B-DA19EED6A9ED}
-name: Open Properties after Add
-key: open properties after add
-content-length: 1
-
--
+/Views/Renderings/Landmark/Global/FooterRendering.cshtml
 ----version----
 language: en
 version: 1
-revision: 495264af-4c02-40e2-879a-6b2542cfe466
+revision: 6bdd6e40-88a5-4e8b-ac2a-a029c53ba083
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150331T155104
+20150722T070206Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-495264af-4c02-40e2-879a-6b2542cfe466
+6bdd6e40-88a5-4e8b-ac2a-a029c53ba083
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150331T155534:635634141348954744
+20150723T080323Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

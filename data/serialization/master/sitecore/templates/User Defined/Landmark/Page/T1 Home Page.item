@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {212D606E-0230-4E06-B4FE-73394E2DD8F8}
+id: {1FD38114-C32F-4CA3-BAD0-589F122A62C5}
 database: master
 path: /sitecore/templates/User Defined/Landmark/Page/T1 Home Page
-parent: {9BBCD83A-7659-4E77-8C17-6F19C0B5DAE4}
+parent: {92EE2E2F-3AF3-4E3B-98AB-33DC20C2D966}
 name: T1 Home Page
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
@@ -15,26 +15,33 @@ name: __Base template
 key: __base template
 content-length: 77
 
-{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{B526226A-ED34-481C-BE0D-8DC7782E86E9}
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{2EE1034D-FA6F-4894-B5FD-AC31F548CE33}
+----field----
+field: {F7D48A55-2158-4F02-9356-756654404F73}
+name: __Standard values
+key: __standard values
+content-length: 38
+
+{C6D0FAD4-A7FA-4725-A29D-47195CBC3C9B}
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
 content-length: 23
 
-Network/16x16/earth.png
+Network/32x32/earth.png
 ----version----
 language: en
 version: 1
-revision: 2e75fee4-f86e-451d-9e76-d891c70ae8a1
+revision: 06aa67da-2155-45b3-8537-7c5fefab67c5
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150325T154958
+20150721T073525Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2e75fee4-f86e-451d-9e76-d891c70ae8a1
+06aa67da-2155-45b3-8537-7c5fefab67c5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150325T155140:635628955007800153
+20150723T001620Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

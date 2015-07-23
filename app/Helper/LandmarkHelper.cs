@@ -124,5 +124,18 @@ namespace Landmark.Helper
             }
             return styleClass;
         }
+
+        public static bool IfBrandsAlphabetValid(string s)
+        {
+            ChildList brands = Sitecore.Context.Database.GetItem(ItemGuids.BrandsFolder).Children;
+            foreach (Item brand in brands)
+            {
+                if (brand.Fields["Brand Title"].Value.ToLower().StartsWith(s))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }

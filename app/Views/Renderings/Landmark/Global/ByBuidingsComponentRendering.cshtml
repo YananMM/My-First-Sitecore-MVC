@@ -1,0 +1,13 @@
+﻿@using Landmark.Classes
+@using Sitecore.Collections
+@using Sitecore.Data.Items
+@model RenderingModel
+@{
+    ChildList buidings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
+}
+<ul>
+    @foreach (Item buiding in buidings)
+    {
+        <li><a href="#">@buiding.Fields["Buiding Title"].Value</a></li>
+    }
+</ul>

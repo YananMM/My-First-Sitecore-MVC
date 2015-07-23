@@ -1,0 +1,19 @@
+﻿@using Landmark.Helper
+@model RenderingModel
+
+@{
+    string[] alphabetsStrings = new[] {"a", "b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
+}
+<ul class="mega-brands">
+@for (int i = 0; i<alphabetsStrings.Length; i++)
+{
+    if (LandmarkHelper.IfBrandsAlphabetValid(alphabetsStrings[i]))
+    {
+        <li><a href="#">@alphabetsStrings[i].ToUpper()</a></li>
+    }
+    else
+    {
+        <li class="disabled">@alphabetsStrings[i].ToUpper()</li>
+    }
+}
+</ul>

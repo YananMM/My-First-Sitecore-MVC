@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {0B02D3EC-0648-4B99-BEB4-8575C48FAE64}
+database: master
+path: /sitecore/layout/Renderings/Landmark/Global/ByBrandsComponentRendering
+parent: {ADACEC41-E9F8-40D2-9391-C686679DEEC1}
+name: ByBrandsComponentRendering
+master: {00000000-0000-0000-0000-000000000000}
+template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
+templatekey: View rendering
+
+----field----
+field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
+name: Path
+key: path
+content-length: 67
+
+/Views/Renderings/Landmark/Global/ByBrandsComponentRendering.cshtml
+----version----
+language: en
+version: 1
+revision: fc9b8911-0353-41df-b94d-363574990320
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150723T035828Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fc9b8911-0353-41df-b94d-363574990320
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150723T080238Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

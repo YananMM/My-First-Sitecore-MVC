@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {F493876F-A8D3-4DB4-A36D-00B7390FEDDB}
+id: {A070B4BE-54E9-4409-AED8-825E93B55E01}
 database: master
 path: /sitecore/templates/User Defined/Landmark/Object/Meta Object
-parent: {945A23C4-9F15-4977-B0E0-AD413983C0BB}
+parent: {CEB547EC-0F8A-4672-ABDC-37582EE88EE4}
 name: Meta Object
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
@@ -20,28 +20,21 @@ content-length: 38
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 43
+content-length: 37
 
-Applications/16x16/text_align_justified.png
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 3
-
-400
+Applications/16x16/document_plain.png
 ----version----
 language: en
 version: 1
-revision: e43ca71d-8204-4e78-a5a1-ec3758b704a3
+revision: 64e62e7b-81f0-4ead-81c9-68a0841f445b
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150325T153742
+20150721T072621Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e43ca71d-8204-4e78-a5a1-ec3758b704a3
+64e62e7b-81f0-4ead-81c9-68a0841f445b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150401T102956:635634809964531834
+20150721T072735Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

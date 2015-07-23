@@ -1,49 +1,42 @@
 ----item----
 version: 1
-id: {BDB18DFC-7C97-40F8-A80C-658210B41656}
+id: {EE7EA867-0191-406D-8B84-A28B236CD725}
 database: master
 path: /sitecore/content/Global/Landmark/Landmark Config
-parent: {2B6ECA69-C706-4C55-852F-C7576BBD895C}
+parent: {C8D4BC2C-F50D-46DB-B76A-ABFC3B9DC910}
 name: Landmark Config
 master: {00000000-0000-0000-0000-000000000000}
-template: {D9187C48-E385-4E51-A249-B65C161956B0}
+template: {427B09DC-F914-4895-80D7-8A08C89A3119}
 templatekey: Landmark Config
 
 ----version----
 language: en
 version: 1
-revision: eacec7e3-9d46-47ae-bc6e-994d084b7680
+revision: a7ccc542-6459-4fbe-b5ae-758270f5a7a9
 
 ----field----
-field: {8E1D0513-037D-4417-AAF3-798919E3B57C}
+field: {217B1155-8188-498E-84EB-92CEC31E5D09}
 name: Landmark Logo
 key: landmark logo
-content-length: 217
+content-length: 58
 
-<image mediapath="/Images/Landmark/logo2x" alt="Landmark" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/logo2x" mediaid="{E1CC469B-692C-4EA0-BF43-3896ABB2BEF0}" />
+<image mediaid="{7E2173C0-8F9D-4FE8-9702-7F11BF5863D6}" />
 ----field----
-field: {3B159956-0733-4200-B507-2186AC27BE6E}
+field: {0FA2D774-BF23-4F2D-B0B3-AF08AF845DC6}
 name: Landmark Logo Image
 key: landmark logo image
-content-length: 164
+content-length: 58
 
-<image mediapath="" alt="Landmark" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{D5170920-C361-441E-9ED8-67F7741A7038}" />
+<image mediaid="{4DBC9670-3CD1-4A75-93FD-3DD19B87AA0F}" />
 ----field----
-field: {3519AFFB-0D29-4D5E-B81B-5077E63F682B}
-name: Hongkong Land Link
-key: hongkong land link
-content-length: 140
-
-<link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{110D559F-DEA5-42EA-9C1C-8A5DF7E70EF9}" />
-----field----
-field: {CCC088F0-0A53-4C07-ACEC-29BEF113A2C8}
+field: {92F479CC-AA7C-4069-850C-78B53B991117}
 name: Hongkong Land Image
 key: hongkong land image
-content-length: 169
+content-length: 58
 
-<image mediapath="" alt="Hongkong Land" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{CBFB79CD-9691-46EB-A4DA-5DA05F646C3D}" />
+<image mediaid="{83C85E65-6960-4A14-9098-05896B7D4239}" />
 ----field----
-field: {DFEBB331-3684-4C39-80A9-33FF0A32B6F0}
+field: {61C64C37-DD57-4575-BEE5-AC71398FABF6}
 name: Copyright Text
 key: copyright text
 content-length: 61
@@ -60,9 +53,9 @@ sitecore\admin
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150326T160750
+20150721T080146Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -76,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-eacec7e3-9d46-47ae-bc6e-994d084b7680
+a7ccc542-6459-4fbe-b5ae-758270f5a7a9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150401T091423:635634764637619283
+20150721T080545Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

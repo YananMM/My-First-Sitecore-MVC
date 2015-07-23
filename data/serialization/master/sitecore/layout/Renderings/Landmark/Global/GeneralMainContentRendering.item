@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {B85779BF-4B49-427E-9D52-6D35785B4DAF}
+id: {53B49FDF-8B9A-4EDB-AA98-F3431087248C}
 database: master
 path: /sitecore/layout/Renderings/Landmark/Global/GeneralMainContentRendering
-parent: {98BF7F90-AEBD-466A-807F-AE08A3266791}
+parent: {ADACEC41-E9F8-40D2-9391-C686679DEEC1}
 name: GeneralMainContentRendering
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
@@ -13,49 +13,35 @@ templatekey: View rendering
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
 name: Path
 key: path
-content-length: 59
+content-length: 68
 
-/Views/Renderings/Global/GeneralMainContentRendering.cshtml
-----field----
-field: {F4069D71-74D7-4422-941D-54B517CF3001}
-name: Placeholder
-key: placeholder
-content-length: 12
-
-main-content
-----field----
-field: {EF7C5528-7307-4E19-863B-DA19EED6A9ED}
-name: Open Properties after Add
-key: open properties after add
-content-length: 1
-
--
+/Views/Renderings/Landmark/Global/GeneralMainContentRendering.cshtml
 ----version----
 language: en
 version: 1
-revision: 66c40f31-4073-4c51-9181-03ee66cc4170
+revision: 2070ec99-d41a-4237-94c9-26d448842942
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150413T110516
+20150722T070233Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-66c40f31-4073-4c51-9181-03ee66cc4170
+2070ec99-d41a-4237-94c9-26d448842942
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150413T111312:635645203925513302
+20150723T080434Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

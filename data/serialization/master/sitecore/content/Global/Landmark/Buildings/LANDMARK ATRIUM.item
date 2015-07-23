@@ -1,21 +1,21 @@
 ----item----
 version: 1
-id: {71387198-279A-4FBC-A646-8392413E7B41}
+id: {04AF3BF4-1C4D-43BC-9884-1431E3A44B11}
 database: master
 path: /sitecore/content/Global/Landmark/Buildings/LANDMARK ATRIUM
-parent: {06B20AC6-ED55-4CF9-B4DE-32A64549D324}
+parent: {4731A63F-BFED-4A7B-8650-1ED611731530}
 name: LANDMARK ATRIUM
 master: {00000000-0000-0000-0000-000000000000}
-template: {CBDB5472-727C-4777-8CD8-6A8760B16832}
-templatekey: Building Object
+template: {873FCBBD-5F81-4DD2-B885-DFDCA194A5D1}
+templatekey: Building Data
 
 ----version----
 language: en
 version: 1
-revision: 50ac1713-806f-4203-9ad7-5c7d9b770cf5
+revision: 98aee75e-7dfa-4ca1-94cc-3f3f8c73e534
 
 ----field----
-field: {6B58B66C-3293-4B3D-A3DF-D99929E8783A}
+field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
 name: Buiding Title
 key: buiding title
 content-length: 15
@@ -25,23 +25,23 @@ LANDMARK ATRIUM
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150409T145053
+20150721T083914Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-50ac1713-806f-4203-9ad7-5c7d9b770cf5
+98aee75e-7dfa-4ca1-94cc-3f3f8c73e534
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150410T104104:635642592646629144
+20150721T083914Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {97BC8E0A-0EC9-47BA-8866-70C5B9D670FF}
+id: {FE57AFD0-1D81-48B5-99D7-FAD3CB2B103B}
 database: master
 path: /sitecore/templates/User Defined/Landmark/Object/Brand Object
-parent: {945A23C4-9F15-4977-B0E0-AD413983C0BB}
+parent: {CEB547EC-0F8A-4672-ABDC-37582EE88EE4}
 name: Brand Object
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
@@ -22,26 +22,26 @@ name: __Standard values
 key: __standard values
 content-length: 38
 
-{D5AFFB38-0150-4E55-B7DE-775368E69105}
+{873E4232-5F1A-4153-8C99-DC32F3929CA3}
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 29
+content-length: 19
 
-Network/16x16/certificate.png
+Apps/32x32/Cups.png
 ----version----
 language: en
 version: 1
-revision: 9ae0c25f-1a84-4d2e-ba96-d1fb687ad3cf
+revision: 814ac3ed-05b3-4dac-803b-022140781747
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150409T090230
+20150721T065257Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9ae0c25f-1a84-4d2e-ba96-d1fb687ad3cf
+814ac3ed-05b3-4dac-803b-022140781747
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150409T090528:635641671287360273
+20150721T065903Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

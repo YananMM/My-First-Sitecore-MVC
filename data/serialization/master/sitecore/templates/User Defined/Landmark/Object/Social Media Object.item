@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {F62290AC-3604-40FB-BABB-CE74016AC851}
+id: {4618F3F9-EDEA-49B3-A7D5-16E24B7BD21E}
 database: master
 path: /sitecore/templates/User Defined/Landmark/Object/Social Media Object
-parent: {945A23C4-9F15-4977-B0E0-AD413983C0BB}
+parent: {CEB547EC-0F8A-4672-ABDC-37582EE88EE4}
 name: Social Media Object
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
@@ -22,33 +22,26 @@ name: __Standard values
 key: __standard values
 content-length: 38
 
-{5DA2DC9A-8C17-4115-A701-A2FF7059E541}
+{173EEAD7-8BC2-4013-B517-DD13BEE44524}
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
 content-length: 25
 
-Network/16x16/id_card.png
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 3
-
-500
+Network/32x32/id_card.png
 ----version----
 language: en
 version: 1
-revision: 1b71d06d-59e9-440f-8c00-6b43ea2d96f9
+revision: 460ba10c-a3f7-403c-9751-383ab616b045
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150325T160056
+20150721T072759Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -62,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1b71d06d-59e9-440f-8c00-6b43ea2d96f9
+460ba10c-a3f7-403c-9751-383ab616b045
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150401T102950:635634809909238671
+20150721T072956Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

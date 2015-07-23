@@ -1,26 +1,33 @@
 ----item----
 version: 1
-id: {CB0697BD-B755-4F37-8A1C-38CDF9AF7111}
+id: {3316BC5E-C1E1-4D24-AD86-4BC25D214996}
 database: master
 path: /sitecore/content/Global/Landmark/Category/Landmark Magazine
-parent: {DB0BD910-D2E4-41BB-B8E9-901EBBA67F31}
+parent: {C0B806BD-632A-49F8-B878-4BC5766C858F}
 name: Landmark Magazine
 master: {00000000-0000-0000-0000-000000000000}
 template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
 templatekey: Folder
 
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
 ----version----
 language: en
 version: 1
-revision: 53c266a3-b577-4c64-b493-5b4dc511d332
+revision: effcdc83-fb2f-4ea3-bc9a-0c2867dba9bb
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150701T111619
+20150721T081716Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-53c266a3-b577-4c64-b493-5b4dc511d332
+effcdc83-fb2f-4ea3-bc9a-0c2867dba9bb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150701T111619:635713461796715549
+20150721T081809Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

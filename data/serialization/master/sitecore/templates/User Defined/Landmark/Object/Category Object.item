@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {36433FAF-1435-435C-B214-B5AD82D20634}
+id: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
 database: master
 path: /sitecore/templates/User Defined/Landmark/Object/Category Object
-parent: {945A23C4-9F15-4977-B0E0-AD413983C0BB}
+parent: {CEB547EC-0F8A-4672-ABDC-37582EE88EE4}
 name: Category Object
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
@@ -22,33 +22,26 @@ name: __Standard values
 key: __standard values
 content-length: 38
 
-{ABA032BE-7BB3-4DAF-9D2E-D9E3E9CCA38C}
+{C733BE76-3EEC-4C1D-8835-EF9F1AE842E5}
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
 content-length: 24
 
-Business/16x16/index.png
-----field----
-field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
-name: __Masters
-key: __masters
-content-length: 38
-
-{E269FBB5-3750-427A-9149-7AA950B49301}
+Business/32x32/index.png
 ----version----
 language: en
 version: 1
-revision: 193a8277-8cd7-4a08-9776-8289237c3e68
+revision: 2868f919-df9e-4267-87e8-000adbbc4069
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150630T094839
+20150721T070208Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -62,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-193a8277-8cd7-4a08-9776-8289237c3e68
+2868f919-df9e-4267-87e8-000adbbc4069
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150630T104547:635712579474984374
+20150721T082250Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

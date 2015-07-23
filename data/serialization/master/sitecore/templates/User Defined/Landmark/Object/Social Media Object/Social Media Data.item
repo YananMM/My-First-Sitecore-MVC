@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {ECD438C4-13E4-4EB6-A124-46F7581D3F86}
+id: {6F73502A-C677-454E-BEE1-1B9D63E02A6B}
 database: master
 path: /sitecore/templates/User Defined/Landmark/Object/Social Media Object/Social Media Data
-parent: {F62290AC-3604-40FB-BABB-CE74016AC851}
+parent: {4618F3F9-EDEA-49B3-A7D5-16E24B7BD21E}
 name: Social Media Data
 master: {00000000-0000-0000-0000-000000000000}
 template: {E269FBB5-3750-427A-9149-7AA950B49301}
@@ -12,15 +12,15 @@ templatekey: Template section
 ----version----
 language: en
 version: 1
-revision: faddcfcb-2df4-4457-b1f3-1b0165458d9b
+revision: d74cf82b-0029-40a8-ba58-271f08b1f736
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
-content-length: 15
+content-length: 16
 
-20150325T160338
+20150721T072834Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-faddcfcb-2df4-4457-b1f3-1b0165458d9b
+d74cf82b-0029-40a8-ba58-271f08b1f736
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 34
+content-length: 16
 
-20150325T160338:635628962185349499
+20150721T073000Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
