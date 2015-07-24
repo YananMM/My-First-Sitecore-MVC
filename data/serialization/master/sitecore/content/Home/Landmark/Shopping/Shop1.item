@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {88AF3247-7CED-4B4B-8A79-8DCC58A84796}
+database: master
+path: /sitecore/content/Home/Landmark/Shopping/Shop1
+parent: {07A37ABC-D676-4737-8B14-79EC18486CE8}
+name: Shop1
+master: {00000000-0000-0000-0000-000000000000}
+template: {91A88069-9A0E-48B7-9509-BDE830A54D0E}
+templatekey: T14 Page
+
+----version----
+language: en
+version: 1
+revision: db581465-2f50-47e4-99c7-aead2ff7dea3
+
+----field----
+field: {23D6AD97-F09D-4C74-A71E-AC1EE249A8A9}
+name: Brand
+key: brand
+content-length: 38
+
+{D5E8F5B6-A202-478C-91D6-E3786F1651A6}
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 5
+
+Shop1
+----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150723T003119Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+db581465-2f50-47e4-99c7-aead2ff7dea3
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150723T022647Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
