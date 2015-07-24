@@ -19,7 +19,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 7f84f9bd-a90d-4724-af7b-ed6581381523
+revision: 7e4e1999-e519-41df-af9f-19f69de7ad1e
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -28,6 +28,27 @@ key: page title
 content-length: 3
 
 Men
+----field----
+field: {5E1E019C-CF1B-461D-88F2-365149680CDE}
+name: Banner Image
+key: banner image
+content-length: 58
+
+<image mediaid="{BE885280-E9A9-4EC4-9959-3E169597A7FA}" />
+----field----
+field: {AC9C713D-7FB0-4144-BF3D-4CE208D05FC8}
+name: Banner Title Image
+key: banner title image
+content-length: 58
+
+<image mediaid="{F5579A47-AD2B-43DF-8F2E-28F56B214D5E}" />
+----field----
+field: {3BBAAC49-3B96-4F13-91EF-102FC5B114B8}
+name: Banner Content
+key: banner content
+content-length: 48
+
+A Whole Floor Dedicated to Central Gentlemen<br>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -41,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7f84f9bd-a90d-4724-af7b-ed6581381523
+7e4e1999-e519-41df-af9f-19f69de7ad1e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150723T032316Z
+20150724T074712Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
