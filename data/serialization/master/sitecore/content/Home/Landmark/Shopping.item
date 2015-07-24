@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {07A37ABC-D676-4737-8B14-79EC18486CE8}
+database: master
+path: /sitecore/content/Home/Landmark/Shopping
+parent: {497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}
+name: Shopping
+master: {00000000-0000-0000-0000-000000000000}
+template: {AA7E76BD-BCAD-4597-9855-0493AABF8DAF}
+templatekey: Shopping Page Object
+
+----version----
+language: en
+version: 1
+revision: 1b1e658b-cbc1-4e58-bd65-8366d854bb9e
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 8
+
+Shopping
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150723T001735Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1b1e658b-cbc1-4e58-bd65-8366d854bb9e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150723T001735Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

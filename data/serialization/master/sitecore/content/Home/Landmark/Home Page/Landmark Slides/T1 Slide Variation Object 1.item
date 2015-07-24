@@ -1,0 +1,100 @@
+----item----
+version: 1
+id: {03F1FC09-3510-44A0-B2B7-A3E63CE8E8E1}
+database: master
+path: /sitecore/content/Home/Landmark/Home Page/Landmark Slides/T1 Slide Variation Object 1
+parent: {2FF7E13C-8FFA-4FDC-B1EA-6D8A398431D2}
+name: T1 Slide Variation Object 1
+master: {00000000-0000-0000-0000-000000000000}
+template: {A35B8BED-8B3F-4D30-8609-C81B9D925C0B}
+templatekey: T1 Slide Variation Object
+
+----version----
+language: en
+version: 1
+revision: 2366104f-164a-463a-9ded-6154b77d8f1e
+
+----field----
+field: {EDB5E361-3190-449F-A17F-0540F4ABBAE8}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{98B9DAC0-EE49-40A3-BA91-E8D6C364FD8C}" />
+----field----
+field: {0BAD0FAC-1374-40D1-934C-58F2ADB30F64}
+name: Slide Title
+key: slide title
+content-length: 0
+
+
+----field----
+field: {A7437F58-05A1-4A3A-AF65-4893CEC3543B}
+name: Slide Content
+key: slide content
+content-length: 158
+
+Generations of families sharing moments and making memories. All part of 208 fine stores and restaurants in 4 connected buildings that go by 1 name, LANDMARK.
+----field----
+field: {92B55AEF-9B4F-4840-9CBE-5EA358CC4192}
+name: Slide Button Text
+key: slide button text
+content-length: 24
+
+ISCOVER LANDMARK STORIES
+----field----
+field: {780CBB4F-2541-43AB-BE9D-7AD362CF04F9}
+name: Main Version Slide Style
+key: main version slide style
+content-length: 38
+
+{EDDA98B8-D3CC-4BF0-9DF0-3E4FF82D88E0}
+----field----
+field: {C3E2079A-4535-458A-87CD-43E564B45E89}
+name: Sub Version Slide Style
+key: sub version slide style
+content-length: 38
+
+{BC7C0D97-3B48-4FD9-B25D-AA3F37EE6C90}
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150721T074513Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2366104f-164a-463a-9ded-6154b77d8f1e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150721T081433Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -47,7 +47,7 @@ namespace Landmark.Helper
             options.Language = LanguageManager.GetLanguage(language);
             var returnUrl = LinkManager.GetItemUrl(item, options);
 
-            return returnUrl;
+            return TranslateUrl(returnUrl);
         }
 
         private static string TranslateUrl(string url)
