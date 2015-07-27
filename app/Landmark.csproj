@@ -126,6 +126,13 @@
     <Compile Include="Helper\SitecoreFieldHelper.cs" />
     <Compile Include="Models\LandmarkSearchResultItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sitecore\Landmark\UserCreated.aspx.cs">
+      <DependentUpon>UserCreated.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sitecore\Landmark\UserCreated.aspx.designer.cs">
+      <DependentUpon>UserCreated.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -267,6 +274,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="sitecore\Landmark\UserCreated.aspx" />
     <Content Include="Views\web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -304,6 +312,7 @@
     </Content>
     <Content Include="Views\Renderings\Landmark\Global\ByBrandsComponentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\Global\ByBuidingsComponentRendering.cshtml" />
+    <Content Include="Views\Renderings\T11\T11BreadcrumbRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
