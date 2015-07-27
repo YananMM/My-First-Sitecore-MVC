@@ -30,21 +30,20 @@ namespace Landmark.Controllers
                 var language = Sitecore.Context.Language.Name.ToLower();
                 string indexName = Settings.GetSetting("LandmarkIndexName");
                 var index = ContentSearchManager.GetIndex(indexName);
-                var query = PredicateBuilder.True<LandmarkSearchResultItem>();
+                //var query = PredicateBuilder.True<LandmarkSearchResultItem>();
 
-                query = query.And(x => x.PageTitle.Contains(search));
+                //query = query.And(x => x.PageTitle.Contains(search));
 
                 using (var context = index.CreateSearchContext())
                 {
-
                     var searchItems = context.GetQueryable<LandmarkSearchResultItem>()
-                        .Where(item => item.Like(search) && item.Language.Equals(language))
+                        .Where(item => item.Language.Equals(language) && item.PageTitle.Contains(search))
                         .OrderBy(item => item.CreatedDate)
                         .ToList();
                     var total = searchItems.Count;
                     if (total > 0)
                     {
-                        return Content(total.ToString());
+                        return Content(total.ToString() + searchItems[0].Language + language);
                     }
                     else
                     {
@@ -54,5 +53,6 @@ namespace Landmark.Controllers
             }
             return Content("Please input Search Content");
         }
+
     }
 }

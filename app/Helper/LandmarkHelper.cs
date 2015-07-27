@@ -83,11 +83,13 @@ namespace Landmark.Helper
         public static List<Item> GetChildrenPageInNavigation(Item parentItem)
         {
             List<Item> resultsList= new List<Item>();
+            int i = 0;
             foreach (Item child in parentItem.Children)
             {
                 if (LandmarkHelper.IsShownInNavigation(child))
                 {
-                    resultsList.Add(child);
+                    resultsList.Insert(i,child);
+                    i++;
                 }
             }
             return resultsList;
