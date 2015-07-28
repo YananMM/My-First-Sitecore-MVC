@@ -6,44 +6,44 @@
 @model RenderingModel
 
 @*@{
-    var advertsList = Sitecore.Context.Item.GetDescendantsByTemplateWithFallback(ItemGuids.AdvertTemplateItemGuid).Take(2);
-}*@
+        var advertsList = Sitecore.Context.Item.GetDescendantsByTemplateWithFallback(ItemGuids.AdvertTemplateItemGuid).Take(2);
+    }*@
 
 <section class="content-area">
     <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-4 page-menu">
-          <ul class="clearfix">
-              @foreach (Item child in LandmarkHelper.GetChildrenPageInNavigation(Sitecore.Context.Item))
-              {
-                  <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(child)">@child["Page Title"].ToUpper()</a></li>
-              }
-          </ul>
-        <p>@Html.Sitecore().Field("Glossary Value",ItemGuids.AlsoInterestedInGuidItem) <a href="">EYEWEAR</a>, <a href="">ACCESSORIES</a>, <a href="">GADGETS</a></p>
-      </div>
-              <div class="col-lg-4 col-md-4 col-sm-4 menbox">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 page-menu">
+                <ul class="clearfix">
+                    @foreach (Item child in LandmarkHelper.GetChildrenPageInNavigation(Sitecore.Context.Item))
+                    {
+                        <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(child)">@child["Page Title"].ToUpper()</a></li>
+                    }
+                </ul>
+                <p>@Html.Sitecore().Field("Glossary Value", ItemGuids.AlsoInterestedInGuidItem) <a href="">EYEWEAR</a>, <a href="">ACCESSORIES</a>, <a href="">GADGETS</a></p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 menbox">
 
-                  <div class=" menbox-1">
-                      <a href="#" class="menbox-img">
-                          <div class="menbox-img-mask"></div>
-                          @{
-                              string src = Html.Sitecore().ImageFieldSrc("Banner Title Image", Sitecore.Context.Item);
-                          }
-                          <img data-src="@Html.Sitecore().ImageFieldSrc("Banner Image", Sitecore.Context.Item)" alt="landmark">
-                          <div class="menbox-text">
-                              @if (!string.IsNullOrEmpty(src))
-                              {
-                                  <img data-src="@src" alt="landmark">
-                              }
+                <div class=" menbox-1">
+                    <a href="#" class="menbox-img">
+                        <div class="menbox-img-mask"></div>
+                        @{
+                            string src = Html.Sitecore().ImageFieldSrc("Banner Title Image", Sitecore.Context.Item);
+                        }
+                        <img data-src="@Html.Sitecore().ImageFieldSrc("Banner Image", Sitecore.Context.Item)" alt="landmark">
+                        <div class="menbox-text">
+                            @if (!string.IsNullOrEmpty(src))
+                            {
+                                <img data-src="@src" alt="landmark">
+                            }
                             <p>@Html.Sitecore().Field("Banner Content", Sitecore.Context.Item)</p>
-                          </div>
-                      </a>
-                  </div>
-              </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
 
-        
+
+        </div>
     </div>
-  </div>
 </section>
 <section class="content-area content-area-bg">
     @*@Html.Sitecore().Placeholder("content-area content-area-bg")*@
