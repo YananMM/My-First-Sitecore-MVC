@@ -43,7 +43,7 @@ namespace Landmark.Helper
 
             return validVersion != null && validVersion.Versions.Count > 0;
         }
-        public static string GetUrlByLanguage(Item item,string language)
+        public static string GetUrlByLanguage(Item item, string language)
         {
             var options = Sitecore.Links.LinkManager.GetDefaultUrlOptions();
             options.Language = LanguageManager.GetLanguage(language);
@@ -84,13 +84,13 @@ namespace Landmark.Helper
 
         public static List<Item> GetChildrenPageInNavigation(Item parentItem)
         {
-            List<Item> resultsList= new List<Item>();
+            List<Item> resultsList = new List<Item>();
             int i = 0;
             foreach (Item child in parentItem.Children)
             {
                 if (LandmarkHelper.IsShownInNavigation(child))
                 {
-                    resultsList.Insert(i,child);
+                    resultsList.Insert(i, child);
                     i++;
                 }
             }
@@ -108,7 +108,7 @@ namespace Landmark.Helper
         {
             string styleClass = string.Empty;
             //var multilistField = (MultilistField)Sitecore.Context.Item.Fields["MultilistFieldName"];
-            var mainStyleField = (ReferenceField) item.Fields["Main Version Slide Style"];
+            var mainStyleField = (ReferenceField)item.Fields["Main Version Slide Style"];
             var subStyleField = (ReferenceField)item.Fields["Sub Version Slide Style"];
             if (mainStyleField.Value.Equals(ItemGuids.FullSizePhotoOverlayText) & subStyleField.Value.Equals(ItemGuids.TwoNumbersTwoCaptionsTextLink))
             {
@@ -133,7 +133,7 @@ namespace Landmark.Helper
         {
             Database webDb = Factory.GetDatabase("web");
             Item shopping = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
-            var query = string.Format("fast:{0}//*[{1}]", shopping.Paths.FullPath,  "@@TemplateId='" + ItemGuids.T14ShopDetailsTemplate + "'");
+            var query = string.Format("fast:{0}//*[{1}]", shopping.Paths.FullPath, "@@TemplateId='" + ItemGuids.T14ShopDetailsTemplate + "'");
             List<Item> brandsItems = webDb.SelectItems(query).ToList();
 
             foreach (Item brand in brandsItems)
@@ -145,5 +145,15 @@ namespace Landmark.Helper
             }
             return false;
         }
+
+        public static List<Item> GetBrands()
+        {
+            Database webDb = Factory.GetDatabase("web");
+            Item shopping = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
+            var query = string.Format("fast:{0}//*[{1}]", shopping.Paths.FullPath, "@@TemplateId='" + ItemGuids.T14ShopDetailsTemplate + "'");
+            List<Item> brandsItems = webDb.SelectItems(query).ToList();
+            return brandsItems;
+        }
+
     }
 }

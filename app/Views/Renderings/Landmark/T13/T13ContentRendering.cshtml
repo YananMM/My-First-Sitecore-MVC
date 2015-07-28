@@ -12,93 +12,94 @@
         <div class="row">
             <div class="brand-list">
                 <div class="masonry-area clearfix">
-                    <div class="visible-xs-block">
-                        <button type="button" class="btn btn-primary btn-block btn-brand popup-trigger" data-popup="#mobile-sort-and-go" aria-expanded="true"> SORT AND GO TO </button>
-                        <div id="mobile-sort-and-go" class="popup-overlay hide">
-                            <div class="brand-menu-area popup-content">
-                                <a class="close-popup" href=""> SORT AND GO TO </a>
-                                <h3>BY BRANDS</h3>
-                                <ul class="brands clearfix">
-                                    <li><a href="#a">A</a></li>
-                                    <li><a href="#b">B</a></li>
-                                    <li><a href="#c">C</a></li>
-                                    <li><a href="#d">D</a></li>
-                                    <li><a href="#e">E</a></li>
-                                    <li><a href="#">F</a></li>
-                                    <li><a href="#">G</a></li>
-                                    <li><a href="#">H</a></li>
-                                    <li class="disabled">I</li>
-                                    <li class="disabled">J</li>
-                                    <li><a href="#">K</a></li>
-                                    <li class="disabled">L</li>
-                                    <li><a href="#">M</a></li>
-                                    <li><a href="#">N</a></li>
-                                    <li class="disabled">O</li>
-                                    <li><a href="#">P</a></li>
-                                    <li><a href="#">Q</a></li>
-                                    <li><a href="#">R</a></li>
-                                    <li class="disabled">S</li>
-                                    <li><a href="#">T</a></li>
-                                    <li><a href="#">U</a></li>
-                                    <li><a href="#">V</a></li>
-                                    <li><a href="#">W</a></li>
-                                    <li><a href="#">X</a></li>
-                                    <li><a href="#">Y</a></li>
-                                    <li><a href="#">Z</a></li>
-                                </ul>
-                                <h3>BY BUILDINGS</h3>
-                                <ul class="brands-gap">
-                                    <li><a href="#">LANDMARK ATRIUM</a></li>
-                                    <li><a href="#">LANDMARK ALEXANDRA</a></li>
-                                    <li><a href="#">LANDMARK PRINCE'S</a></li>
-                                    <li><a href="#">LANDMARK CHARTER</a></li>
-                                    <li><a href="#">ALSO CLOSE BY...</a></li>
-                                </ul>
-                                <form class="form-goto" data-handler-get-catetories="/fake-handlers/categories.json">
-                                    <h3>GO TO</h3>
-                                    <div class="form-group">
-                                        <div class="brand-select clearfix">
-                                            <select id="category" name="category" class="selectpicker form-control" data-style="btn-primary">
-                                                <option value="men" selected="selected">MEN</option>
-                                                <option value="women">WOMEN</option>
-                                                <option value="children-and-babies">CHILDREN &amp; BABIES</option>
-                                                <option value="jewelry-and-watches">JEWELRY &amp; WATCHES</option>
-                                                <option value="eyewears">EYEWEARS</option>
-                                                <option value="health-and-beauty">HEALTH &amp; BEAUTY</option>
-                                                <option value="house-and-home">HOUSE &amp; HOME</option>
-                                                <option value="food-and-wine">FOOD &amp; WINE</option>
-                                            </select>
-                                            <select id="childcategory" name="childcategory" class="selectpicker form-control" data-style="btn-primary">
-                                                <option value="fashion" selected="selected">FASHION</option>
-                                                <option value="made-to-measure">MADE TO MEASURE</option>
-                                                <option value="active-wear">Active Wear</option>
-                                                <option value="accessories">Accessories</option>
-                                                <option value="bags">Bags</option>
-                                                <option value="shoes">Shoes</option>
-                                                <option value="landmark-men">Landmark Men</option>
-                                            </select>
+                    @*<div class="visible-xs-block">
+                            <button type="button" class="btn btn-primary btn-block btn-brand popup-trigger" data-popup="#mobile-sort-and-go" aria-expanded="true"> SORT AND GO TO </button>
+                            <div id="mobile-sort-and-go" class="popup-overlay hide">
+                                <div class="brand-menu-area popup-content">
+                                    <a class="close-popup" href=""> SORT AND GO TO </a>
+                                    <h3>BY BRANDS</h3>
+                                    <ul class="brands clearfix">
+                                        <li><a href="#a">A</a></li>
+                                        <li><a href="#b">B</a></li>
+                                        <li><a href="#c">C</a></li>
+                                        <li><a href="#d">D</a></li>
+                                        <li><a href="#e">E</a></li>
+                                        <li><a href="#">F</a></li>
+                                        <li><a href="#">G</a></li>
+                                        <li><a href="#">H</a></li>
+                                        <li class="disabled">I</li>
+                                        <li class="disabled">J</li>
+                                        <li><a href="#">K</a></li>
+                                        <li class="disabled">L</li>
+                                        <li><a href="#">M</a></li>
+                                        <li><a href="#">N</a></li>
+                                        <li class="disabled">O</li>
+                                        <li><a href="#">P</a></li>
+                                        <li><a href="#">Q</a></li>
+                                        <li><a href="#">R</a></li>
+                                        <li class="disabled">S</li>
+                                        <li><a href="#">T</a></li>
+                                        <li><a href="#">U</a></li>
+                                        <li><a href="#">V</a></li>
+                                        <li><a href="#">W</a></li>
+                                        <li><a href="#">X</a></li>
+                                        <li><a href="#">Y</a></li>
+                                        <li><a href="#">Z</a></li>
+                                    </ul>
+                                    <h3>BY BUILDINGS</h3>
+                                    <ul class="brands-gap">
+                                        <li><a href="#">LANDMARK ATRIUM</a></li>
+                                        <li><a href="#">LANDMARK ALEXANDRA</a></li>
+                                        <li><a href="#">LANDMARK PRINCE'S</a></li>
+                                        <li><a href="#">LANDMARK CHARTER</a></li>
+                                        <li><a href="#">ALSO CLOSE BY...</a></li>
+                                    </ul>
+                                    <form class="form-goto" data-handler-get-catetories="/fake-handlers/categories.json">
+                                        <h3>GO TO</h3>
+                                        <div class="form-group">
+                                            <div class="brand-select clearfix">
+                                                <select id="category" name="category" class="selectpicker form-control" data-style="btn-primary">
+                                                    <option value="men" selected="selected">MEN</option>
+                                                    <option value="women">WOMEN</option>
+                                                    <option value="children-and-babies">CHILDREN &amp; BABIES</option>
+                                                    <option value="jewelry-and-watches">JEWELRY &amp; WATCHES</option>
+                                                    <option value="eyewears">EYEWEARS</option>
+                                                    <option value="health-and-beauty">HEALTH &amp; BEAUTY</option>
+                                                    <option value="house-and-home">HOUSE &amp; HOME</option>
+                                                    <option value="food-and-wine">FOOD &amp; WINE</option>
+                                                </select>
+                                                <select id="childcategory" name="childcategory" class="selectpicker form-control" data-style="btn-primary">
+                                                    <option value="fashion" selected="selected">FASHION</option>
+                                                    <option value="made-to-measure">MADE TO MEASURE</option>
+                                                    <option value="active-wear">Active Wear</option>
+                                                    <option value="accessories">Accessories</option>
+                                                    <option value="bags">Bags</option>
+                                                    <option value="shoes">Shoes</option>
+                                                    <option value="landmark-men">Landmark Men</option>
+                                                </select>
+                                            </div>
+                                            <button type="submit" class="btn btn-default  ">GO</button>
                                         </div>
-                                        <button type="submit" class="btn btn-default  ">GO</button>
-                                    </div>
-                                </form>
-                                <h3>SEE ALSO</h3>
-                                <ul>
-                                    <li><a href="#">EYEWEAR</a></li>
-                                    <li><a href="#">ACCESSORIES</a></li>
-                                    <li><a href="#">GADGETS</a></li>
-                                </ul>
+                                    </form>
+                                    <h3>SEE ALSO</h3>
+                                    <ul>
+                                        <li><a href="#">EYEWEAR</a></li>
+                                        <li><a href="#">ACCESSORIES</a></li>
+                                        <li><a href="#">GADGETS</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                        </div>*@
                     <div class="brand-box-area">
 
                         @{
-                            var brandItems = Sitecore.Context.Database.GetItem(ItemGuids.BrandsFolder).Children.ToList();
+                            var brandItems = LandmarkHelper.GetBrands();
                         }
                         @foreach (var item in brandItems)
                         {
+                            <div class="brand-box brand-box-letter" id="a">A</div>
                             <a class="brand-box" href="#" title="@item.DisplayName">
-                                <img data-src="/files/landmark/images/brands/brand-001.png" alt="brand">
+                                <img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item)" alt="brand">
                             </a>
                         }
                         @*<div class="brand-box brand-box-letter" id="a">A</div>
@@ -202,79 +203,79 @@
                 </div>
             </div>
             @*<div class="brand-menu hidden-xs">
-                <div class="brand-menu-area">
-                    <div class="scroll-content">
-                        <h3>BY BRANDS</h3>
-                        <ul class="brands-gap brands clearfix">
-                            <li><a href="#a">A</a></li>
-                            <li><a href="#b">B</a></li>
-                            <li><a href="#c">C</a></li>
-                            <li><a href="#d">D</a></li>
-                            <li><a href="#e">E</a></li>
-                            <li><a href="#f">F</a></li>
-                            <li><a href="#">G</a></li>
-                            <li><a href="#">H</a></li>
-                            <li class="disabled">I</li>
-                            <li class="disabled">J</li>
-                            <li><a href="#">K</a></li>
-                            <li class="disabled">L</li>
-                            <li><a href="#">M</a></li>
-                            <li><a href="#">N</a></li>
-                            <li class="disabled">O</li>
-                            <li><a href="#">P</a></li>
-                            <li><a href="#">Q</a></li>
-                            <li><a href="#">R</a></li>
-                            <li class="disabled">S</li>
-                            <li><a href="#">T</a></li>
-                            <li><a href="#">U</a></li>
-                            <li><a href="#">V</a></li>
-                            <li><a href="#">W</a></li>
-                            <li><a href="#">X</a></li>
-                            <li><a href="#">Y</a></li>
-                            <li><a href="#">Z</a></li>
-                        </ul>
-                        <h3>BY BUILDINGS</h3>
-                        <ul class="brands-gap">
-                            <li><a href="#">LANDMARK ATRIUM</a></li>
-                            <li><a href="#">LANDMARK ALEXANDRA</a></li>
-                            <li><a href="#">LANDMARK PRINCE'S</a></li>
-                            <li><a href="#">LANDMARK CHARTER</a></li>
-                            <li><a href="#">ALSO CLOSE BY...</a></li>
-                        </ul>
-                        <form class="form-goto" data-handler-get-catetories="/fake-handlers/categories.json">
-                            <h3>GO TO <a class="sub-title" href="#">ALL BRANDS<span class="sprite-small-r">&gt;</span></a></h3>
-                            <div class="form-group">
-                                <select id="category" name="category" class="selectpicker form-control" data-style="btn-primary">
-                                    <option value="men" selected="selected">MEN</option>
-                                    <option value="women">WOMEN</option>
-                                    <option value="children-and-babies">CHILDREN &amp; BABIES</option>
-                                    <option value="jewelry-and-watches">JEWELRY &amp; WATCHES</option>
-                                    <option value="eyewears">EYEWEARS</option>
-                                    <option value="health-and-beauty">HEALTH &amp; BEAUTY</option>
-                                    <option value="house-and-home">HOUSE &amp; HOME</option>
-                                    <option value="food-and-wine">FOOD &amp; WINE</option>
-                                </select>
-                                <select id="childcategory" name="childcategory" class="selectpicker form-control" data-style="btn-primary">
-                                    <option value="fashion" selected="selected">FASHION</option>
-                                    <option value="made-to-measure">MADE TO MEASURE</option>
-                                    <option value="active-wear">Active Wear</option>
-                                    <option value="accessories">Accessories</option>
-                                    <option value="bags">Bags</option>
-                                    <option value="shoes">Shoes</option>
-                                    <option value="landmark-men">Landmark Men</option>
-                                </select>
-                                <button type="submit" class="btn btn-default">GO</button>
-                            </div>
-                        </form>
-                        <h3>SEE ALSO</h3>
-                        <ul>
-                            <li><a href="#">EYEWEAR</a></li>
-                            <li><a href="#">ACCESSORIES</a></li>
-                            <li><a href="#">GADGETS</a></li>
-                        </ul>
+                    <div class="brand-menu-area">
+                        <div class="scroll-content">
+                            <h3>BY BRANDS</h3>
+                            <ul class="brands-gap brands clearfix">
+                                <li><a href="#a">A</a></li>
+                                <li><a href="#b">B</a></li>
+                                <li><a href="#c">C</a></li>
+                                <li><a href="#d">D</a></li>
+                                <li><a href="#e">E</a></li>
+                                <li><a href="#f">F</a></li>
+                                <li><a href="#">G</a></li>
+                                <li><a href="#">H</a></li>
+                                <li class="disabled">I</li>
+                                <li class="disabled">J</li>
+                                <li><a href="#">K</a></li>
+                                <li class="disabled">L</li>
+                                <li><a href="#">M</a></li>
+                                <li><a href="#">N</a></li>
+                                <li class="disabled">O</li>
+                                <li><a href="#">P</a></li>
+                                <li><a href="#">Q</a></li>
+                                <li><a href="#">R</a></li>
+                                <li class="disabled">S</li>
+                                <li><a href="#">T</a></li>
+                                <li><a href="#">U</a></li>
+                                <li><a href="#">V</a></li>
+                                <li><a href="#">W</a></li>
+                                <li><a href="#">X</a></li>
+                                <li><a href="#">Y</a></li>
+                                <li><a href="#">Z</a></li>
+                            </ul>
+                            <h3>BY BUILDINGS</h3>
+                            <ul class="brands-gap">
+                                <li><a href="#">LANDMARK ATRIUM</a></li>
+                                <li><a href="#">LANDMARK ALEXANDRA</a></li>
+                                <li><a href="#">LANDMARK PRINCE'S</a></li>
+                                <li><a href="#">LANDMARK CHARTER</a></li>
+                                <li><a href="#">ALSO CLOSE BY...</a></li>
+                            </ul>
+                            <form class="form-goto" data-handler-get-catetories="/fake-handlers/categories.json">
+                                <h3>GO TO <a class="sub-title" href="#">ALL BRANDS<span class="sprite-small-r">&gt;</span></a></h3>
+                                <div class="form-group">
+                                    <select id="category" name="category" class="selectpicker form-control" data-style="btn-primary">
+                                        <option value="men" selected="selected">MEN</option>
+                                        <option value="women">WOMEN</option>
+                                        <option value="children-and-babies">CHILDREN &amp; BABIES</option>
+                                        <option value="jewelry-and-watches">JEWELRY &amp; WATCHES</option>
+                                        <option value="eyewears">EYEWEARS</option>
+                                        <option value="health-and-beauty">HEALTH &amp; BEAUTY</option>
+                                        <option value="house-and-home">HOUSE &amp; HOME</option>
+                                        <option value="food-and-wine">FOOD &amp; WINE</option>
+                                    </select>
+                                    <select id="childcategory" name="childcategory" class="selectpicker form-control" data-style="btn-primary">
+                                        <option value="fashion" selected="selected">FASHION</option>
+                                        <option value="made-to-measure">MADE TO MEASURE</option>
+                                        <option value="active-wear">Active Wear</option>
+                                        <option value="accessories">Accessories</option>
+                                        <option value="bags">Bags</option>
+                                        <option value="shoes">Shoes</option>
+                                        <option value="landmark-men">Landmark Men</option>
+                                    </select>
+                                    <button type="submit" class="btn btn-default">GO</button>
+                                </div>
+                            </form>
+                            <h3>SEE ALSO</h3>
+                            <ul>
+                                <li><a href="#">EYEWEAR</a></li>
+                                <li><a href="#">ACCESSORIES</a></li>
+                                <li><a href="#">GADGETS</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </div>*@
+                </div>*@
         </div>
     </div>
 </section>
