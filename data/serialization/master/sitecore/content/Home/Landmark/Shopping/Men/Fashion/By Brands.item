@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {D989E88C-CF0C-4AB8-8BD4-1F345F466ADA}
+id: {6A90D7C8-E3EE-4C9D-B0D5-7D1AA26F31A7}
 database: master
 path: /sitecore/content/Home/Landmark/Shopping/Men/Fashion/By Brands
-parent: {74FC1382-2446-46FD-A5C2-E8692DC41A40}
+parent: {2CA72EF3-491E-485A-AEB5-A91C61EFF07A}
 name: By Brands
 master: {EF72B181-F50E-46E5-84B4-74392DA7AA04}
 template: {0B591CE8-50CB-4CF5-9CBF-F2F6E61F23E8}
@@ -20,19 +20,13 @@ content-length: 0
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 411
+content-length: 476
 
-<r>
-  <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{F8D2E7E4-68AF-405D-8356-752922EACF54}">
-    <r id="{B8F13621-BBCA-43FA-9E29-E9FA95A106C0}" uid="{A5BAAB66-49D7-4FD1-A5B9-F8BEFB02A874}" />
-    <r id="{53B49FDF-8B9A-4EDB-AA98-F3431087248C}" uid="{E18B8191-29F1-4659-9FB8-05DF2E56C112}" />
-    <r id="{82EE6332-2C25-45E3-B59D-127244A84039}" uid="{C7BCC662-5826-4FE3-8A43-F7C71B0F3A70}" />
-  </d>
-</r>
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{E43A959B-DED6-4499-9DE1-AC2B9FE9625E}"><p:d /></r><r uid="{2E34A9E3-99F2-4547-A926-5233869FEAB1}"><p:d /></r><r uid="{84E01C11-ACA2-4A90-B902-6536C8CE7A5E}" p:before="r[@uid='{249E1F3A-D19F-46E9-9AA7-984C3C75CA45}']" s:id="{B8F13621-BBCA-43FA-9E29-E9FA95A106C0}" s:ph="" /><r uid="{249E1F3A-D19F-46E9-9AA7-984C3C75CA45}" s:id="{82EE6332-2C25-45E3-B59D-127244A84039}" s:ph="" /></d></r>
 ----version----
 language: en
 version: 1
-revision: b50016a1-7ce3-41dc-a1fe-e0147ae7b797
+revision: d87ca180-6265-4969-a391-11e56ca61548
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -47,21 +41,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150723T034257Z
+20150728T090740Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-b50016a1-7ce3-41dc-a1fe-e0147ae7b797
+d87ca180-6265-4969-a391-11e56ca61548
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150728T064113:635736624737524933Z
+20150728T091931Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
