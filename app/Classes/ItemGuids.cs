@@ -31,8 +31,9 @@ namespace Landmark.Classes
         public static readonly String OneTitleOneTextLink = "{F2834073-085E-429E-A9A2-40DD9FC9FC97}";
         public static readonly String TwoNumbersTwoCaptionsTextLink = "{BC7C0D97-3B48-4FD9-B25D-AA3F37EE6C90}";
         public static readonly String T11PageTemplate = "{3832F0F6-6342-4394-932C-2DDAB1164C97}";
-        public static readonly String BrandsFolder = "{C2C2BA66-3FD4-425E-89F1-9C1BDC0821D7}";
+        public static readonly String ShoppingItem = "{07A37ABC-D676-4737-8B14-79EC18486CE8}";
         public static readonly String BuidingsFolder = "{4731A63F-BFED-4A7B-8650-1ED611731530}";
+        public static readonly String T14ShopDetailsTemplate = "{91A88069-9A0E-48B7-9509-BDE830A54D0E}";
 
         //item 
         public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}");

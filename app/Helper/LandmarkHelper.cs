@@ -5,7 +5,9 @@ using System.Linq;
 using System.Web;
 using Landmark.Classes;
 using Sitecore.Collections;
+using Sitecore.Configuration;
 using Sitecore.ContentSearch.Utilities;
+using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Managers;
 using Sitecore.Globalization;
@@ -129,8 +131,12 @@ namespace Landmark.Helper
 
         public static bool IfBrandsAlphabetValid(string s)
         {
-            ChildList brands = Sitecore.Context.Database.GetItem(ItemGuids.BrandsFolder).Children;
-            foreach (Item brand in brands)
+            Database webDb = Factory.GetDatabase("web");
+            Item shopping = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
+            var query = string.Format("fast:{0}//*[{1}]", shopping.Paths.FullPath,  "@@TemplateId='" + ItemGuids.T14ShopDetailsTemplate + "'");
+            List<Item> brandsItems = webDb.SelectItems(query).ToList();
+
+            foreach (Item brand in brandsItems)
             {
                 if (brand.Fields["Brand Title"].Value.ToLower().StartsWith(s))
                 {
