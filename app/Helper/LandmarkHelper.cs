@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Landmark.Classes;
+using Landmark.Models;
 using Sitecore.Collections;
 using Sitecore.Configuration;
 using Sitecore.ContentSearch.Utilities;
@@ -146,13 +147,24 @@ namespace Landmark.Helper
             return false;
         }
 
-        public static List<Item> GetBrands()
+        public static List<LandmarkBrandModel> GetBrands()
         {
+            List<LandmarkBrandModel> brandModels = new List<LandmarkBrandModel>();
             Database webDb = Factory.GetDatabase("web");
             Item shopping = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
             var query = string.Format("fast:{0}//*[{1}]", shopping.Paths.FullPath, "@@TemplateId='" + ItemGuids.T14ShopDetailsTemplate + "'");
             List<Item> brandsItems = webDb.SelectItems(query).ToList();
-            return brandsItems;
+            foreach (var item in brandsItems)
+            {
+                LandmarkBrandModel brandModel = new LandmarkBrandModel()
+                {
+                    Group = item["Brand Title"].Substring(0, 1),
+                    Tag = item["Tags"],
+                    BrandItem = item
+                };
+                brandModels.Add(brandModel);
+            }
+            return brandModels.OrderBy(p => p.Group).ToList();
         }
 
     }
