@@ -15,7 +15,7 @@
             foreach (var item in items)
             {
                 <a class="brand-box" href="#" title="@item.BrandItem["Brand Title"]">
-                    <img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item.BrandItem)" alt="brand">
+                    <img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item.BrandItem)" alt="@Html.Sitecore().Field("Brand Title", item.BrandItem)">
                 </a>
             }
         }
