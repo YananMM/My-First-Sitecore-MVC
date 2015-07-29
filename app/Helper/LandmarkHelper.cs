@@ -189,5 +189,37 @@ namespace Landmark.Helper
             }
             return brandsByBuildings;
         }
+
+        public static List<Item> GetBuildingsByCategory(ID categoryId)
+        {
+            Database webDb = Factory.GetDatabase("web");
+            Item shopping = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
+            var query = string.Format("fast:{0}//*[{1}]", shopping.Paths.FullPath, "@@TemplateId='" + ItemGuids.T14ShopDetailsTemplate + "'");
+            List<Item> brandsItems = webDb.SelectItems(query).ToList();
+            List<Item> buildingsByCategory = new List<Item>();
+            foreach (Item brand in brandsItems)
+            {
+                var tagsField = (MultilistField)brand.Fields["Tags"];
+                if (tagsField != null)
+                {
+                    if (tagsField.TargetIDs.Any(id => id.Guid == categoryId.Guid))
+                    {
+                        var buildingsField = (MultilistField)brand.Fields["Buildings"];
+                        if (buildingsField != null)
+                        {
+                            foreach (ID buidId in buildingsField.TargetIDs)
+                            {
+                                if (!buildingsByCategory.Contains(webDb.GetItem(buidId)))
+                                {
+                                    buildingsByCategory.Add(webDb.GetItem(buidId));
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return buildingsByCategory;
+
+        }
     }
 }
