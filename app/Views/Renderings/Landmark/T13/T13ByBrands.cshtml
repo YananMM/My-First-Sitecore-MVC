@@ -1,13 +1,10 @@
-﻿@using System.Diagnostics.Eventing.Reader
-@using Landmark.Classes
+﻿@using Landmark.Classes
 @using Landmark.Helper
-@using Sitecore.ContentSearch.Utilities
-@using Sitecore.Data.Items
 @model RenderingModel
 <div class="masonry-area clearfix">
     <div class="brand-box-area">
         @{
-            var brands = LandmarkHelper.GetBrands().Where(p => p.Tags.Contains(ItemGuids.FashionTag)).GroupBy(p => p.Group).ToList();
+            var brands = LandmarkHelper.GetBrandsByTag().GroupBy(p => p.Group).ToList();
         }
         @foreach (var items in brands)
         {

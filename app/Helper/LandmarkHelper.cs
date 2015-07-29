@@ -1,4 +1,5 @@
-﻿using Sitecore.Data.Items;
+﻿using System;
+using Sitecore.Data.Items;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -149,7 +150,7 @@ namespace Landmark.Helper
             return false;
         }
 
-        public static List<LandmarkBrandModel> GetBrands()
+        public static List<LandmarkBrandModel> GetBrandsByTag()
         {
             List<LandmarkBrandModel> brandModels = new List<LandmarkBrandModel>();
             Database webDb = Factory.GetDatabase("web");
@@ -166,7 +167,56 @@ namespace Landmark.Helper
                 };
                 brandModels.Add(brandModel);
             }
-            return brandModels.OrderBy(p => p.Group).ToList();
+            var currentTag = GetCurrentTag();
+            return brandModels.OrderBy(p => p.Group).Where(p => p.Tags.Contains(currentTag)).ToList();
+        }
+        public static string GetCurrentTag()
+        {
+            var parentItem = Sitecore.Context.Item.Parent;
+            var grandParentItem = Sitecore.Context.Item.Parent.Parent;
+            var shoppingCategory = GetCategorysByItem(ItemGuids.ShoppingCategory);
+            var grandParentCategorys = shoppingCategory.SingleOrDefault(p => p.DisplayName == grandParentItem.DisplayName);
+            var parentCategorys = GetCategorysByItem(grandParentCategorys.ID.ToString());
+            string currentTag = String.Empty;
+            foreach (var item in parentCategorys)
+            {
+                if (item.DisplayName == parentItem.DisplayName)
+                {
+                    currentTag = item.ID.ToString();
+                }
+            }
+            return currentTag;
+        }
+        public static List<Item> GetCategorysByItem(string categoryId)
+        {
+            List<Item> shoppingCategorys = new ItemList();
+            Database webDb = Factory.GetDatabase("web");
+            Item shoppingCategory = Sitecore.Context.Database.GetItem(categoryId);
+            var query = string.Format("fast:{0}//*[{1}]", shoppingCategory.Paths.FullPath, "@@TemplateId='" + ItemGuids.CategoryObjectTemplate + "'");
+            shoppingCategorys = webDb.SelectItems(query).ToList();
+            return shoppingCategorys;
+        }
+
+        public static List<string> GetBrandsGroups()
+        {
+            var brands = GetBrandsByTag();
+            List<string> brandGroups = new List<string>();
+
+            foreach (var brand in brands)
+            {
+                brandGroups.Add(brand.Group.ToLower());
+            }
+            return brandGroups;
+        }
+
+        public static bool CheckBrandGroup(string brandGroup)
+        {
+            var brandGroups = GetBrandsGroups();
+            if (brandGroups.Contains(brandGroup))
+            {
+                return true;
+            }
+            return false;
         }
 
         public static List<Item> GetBrandsByBuildings(ID buildingId)
