@@ -200,12 +200,13 @@ namespace Landmark.Helper
             foreach (Item brand in brandsItems)
             {
                 var tagsField = (MultilistField)brand.Fields["Tags"];
-                if (tagsField != null)
+                if (tagsField.TargetIDs.Any())
                 {
-                    if (tagsField.TargetIDs.Any(id => id.Guid == categoryId.Guid))
+                    Item categoryItem = webDb.GetItem(categoryId);
+                    if (tagsField.TargetIDs.Any(id => webDb.GetItem(id).DisplayName == categoryItem.DisplayName && webDb.GetItem(id).Parent.DisplayName == categoryItem.Parent.DisplayName))
                     {
-                        var buildingsField = (MultilistField)brand.Fields["Buildings"];
-                        if (buildingsField != null)
+                        var buildingsField = (MultilistField) brand.Fields["Buildings"];
+                        if (buildingsField.TargetIDs.Any())
                         {
                             foreach (ID buidId in buildingsField.TargetIDs)
                             {
