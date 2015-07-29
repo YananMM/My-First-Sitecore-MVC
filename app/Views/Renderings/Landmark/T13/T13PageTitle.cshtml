@@ -1,0 +1,20 @@
+﻿@using Landmark.Classes
+@using Sitecore.Data.Items
+@model RenderingModel
+@{
+    Item contextItem = Sitecore.Context.Item;
+    Item firstParentItem = contextItem.Parent;
+    Item secondParentItem = firstParentItem.Parent;
+}
+<div class="col-lg-8 col-md-8 col-xs-12">
+    @if (firstParentItem.ID.ToString().Equals(ItemGuids.ShoppingItem))
+    {
+    <h2>@Sitecore.Context.Item["Page Title"].ToUpper()</h2>
+    }
+    else
+    {
+        <h2>@firstParentItem["Page Title"].ToUpper() | @secondParentItem["Page Title"].ToUpper()<span>@Sitecore.Context.Item["Page Title"].ToUpper()</span></h2>
+    }
+    
+</div>
+<div class="col-lg-4 col-md-4 col-xs-12 link-seeall"> </div>

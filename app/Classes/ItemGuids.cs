@@ -21,6 +21,7 @@ namespace Landmark.Classes
         //public static readonly String T11BreadcrymbRenderingViewGuid = "{C85A5336-5D9F-47A0-ADBD-DA8F6975E51B}";
         public static readonly String ByBrandsRenderingViewGuid = "{0B02D3EC-0648-4B99-BEB4-8575C48FAE64}";
         public static readonly String ByBuildingsRenderingViewGuid = "{B08E278B-BF3C-4994-A65D-D764193C6447}";
+        public static readonly String T13SideBarRenderingViewGuid = "{A88DF21E-E1DB-408B-9BC5-14F36C83513D}";
 
         
         //item id
