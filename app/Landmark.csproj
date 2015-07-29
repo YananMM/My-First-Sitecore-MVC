@@ -369,6 +369,9 @@
     <Content Include="Views\Renderings\T11\T11BreadcrumbRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T13\T13ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T13\T13PageTitle.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T13\T13ByBuidings.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T13\T13ByBrands.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T13\T13SideBar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
