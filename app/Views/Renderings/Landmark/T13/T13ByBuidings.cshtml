@@ -1,1 +1,30 @@
-﻿
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Collections
+@using Sitecore.Data.Items
+@model RenderingModel
+@{
+    ChildList buidings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
+}
+
+<div class="masonry-area clearfix">
+        @foreach (Item buiding in buidings)
+        {
+            if (LandmarkHelper.GetBrandsByBuildings(buiding.ID).Count > 0)
+            {
+                <h3>@buiding.Fields["Buiding Title"].Value</h3>
+                <div class="brand-box-area clearfix">
+                    @foreach (Item brand in LandmarkHelper.GetBrandsByBuildings(buiding.ID))
+                    {
+                        string src = Html.Sitecore().ImageFieldSrc("Brand Image", brand);
+                        <a title='@Html.Sitecore().Field("Brand Title", brand)' class="brand-box" href="#">
+                            <img data-src="@src" alt='@Html.Sitecore().Field("Brand Title", brand)' class="lazy-loaded">
+                            <span>@Html.Sitecore().Field("Brand Title", brand)</span> 
+                        </a>
+                    }
+
+                </div>
+            }
+        }
+</div>
+

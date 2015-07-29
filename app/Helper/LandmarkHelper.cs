@@ -1,5 +1,4 @@
 ﻿using Sitecore.Data.Items;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,7 +11,10 @@ using Sitecore.Data.Fields;
 using Sitecore.Data.Managers;
 using Sitecore.Globalization;
 using Sitecore.Links;
+using Sitecore.Shell.Applications.ContentEditor;
+using Sitecore.Shell.Applications.ContentManager.ReturnFieldEditorValues;
 using Sitecore.Web.UI;
+using DateTime = System.DateTime;
 
 namespace Landmark.Helper
 {
@@ -155,5 +157,25 @@ namespace Landmark.Helper
             return brandsItems;
         }
 
+        public static List<Item> GetBrandsByBuildings(ID buildingId)
+        {
+            Database webDb = Factory.GetDatabase("web");
+            Item shopping = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
+            var query = string.Format("fast:{0}//*[{1}]", shopping.Paths.FullPath, "@@TemplateId='" + ItemGuids.T14ShopDetailsTemplate + "'");
+            List<Item> brandsItems = webDb.SelectItems(query).ToList();
+            List<Item> brandsByBuildings = new List<Item>();
+            foreach (Item brand in brandsItems)
+            {
+                var buildingsField = (MultilistField)brand.Fields["Buildings"];
+                if (buildingsField != null)
+                {
+                    if (buildingsField.TargetIDs.Any(id => id.Guid == buildingId.Guid))
+                    {
+                        brandsByBuildings.Add(brand);
+                    }
+                }
+            }
+            return brandsByBuildings;
+        }
     }
 }
