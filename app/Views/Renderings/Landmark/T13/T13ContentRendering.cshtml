@@ -95,19 +95,17 @@
                         @{
                             var brandItems = LandmarkHelper.GetBrands().ToList();
                             brandItems.Reverse();
-                            var sorts = brandItems.GroupBy(p => p).ToList();
-                            List<string> brandNames = new List<string>();
+                            var sorts = brandItems.GroupBy(p => p["Brand Title"].ToString().Substring(0, 1)).ToList();
                         }
-                        @foreach (var items in sorts)
+                        @foreach (var items in brandItems)
                         {
-                            <div class="brand-box brand-box-letter" id="a">@items.First()</div>
-                            foreach (var item in items)
-                            {
-                                brandNames.Add(item.DisplayName);
+                            //<div class="brand-box brand-box-letter" id="a">@items["Brand Title"]</div>
+
+                            <h2>@items["Brand Title"]</h2>
+                            @*brandNames.Add(item.DisplayName);
                                 <a class="brand-box" href="#" title="@item.DisplayName">
                                     <img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item)" alt="brand">
-                                </a>
-                            }
+                                </a>*@
 
                         }
                         @*<div class="brand-box brand-box-letter" id="a">A</div>
