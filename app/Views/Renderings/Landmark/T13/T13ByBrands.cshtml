@@ -7,7 +7,7 @@
 <div class="masonry-area clearfix">
     <div class="brand-box-area">
         @{
-            var brands = LandmarkHelper.GetBrands().Where(p => p.Tag.Contains(ItemGuids.FashionTag)).GroupBy(p => p.Group).ToList();
+            var brands = LandmarkHelper.GetBrands().Where(p => p.Tags.Contains(ItemGuids.FashionTag)).GroupBy(p => p.Group).ToList();
         }
         @foreach (var items in brands)
         {
@@ -15,10 +15,9 @@
             foreach (var item in items)
             {
                 <a class="brand-box" href="#" title="@item.BrandItem["Brand Title"]">
-                    <img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item.BrandItem)" alt="brand">
+                    <img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item.BrandItem)" alt="@Html.Sitecore().Field("Brand Title", item.BrandItem)">
                 </a>
             }
-
         }
     </div>
 </div>

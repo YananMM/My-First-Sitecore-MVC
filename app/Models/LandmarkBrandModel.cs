@@ -10,7 +10,7 @@ namespace Landmark.Models
     {
         public string Group { get; set; }
 
-        public string Tag { get; set; }
+        public string Tags { get; set; }
 
         public Item BrandItem { get; set; }
     }

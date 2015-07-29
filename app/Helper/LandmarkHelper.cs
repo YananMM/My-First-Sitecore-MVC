@@ -161,7 +161,7 @@ namespace Landmark.Helper
                 LandmarkBrandModel brandModel = new LandmarkBrandModel()
                 {
                     Group = item["Brand Title"].Substring(0, 1),
-                    Tag = item["Tags"],
+                    Tags = item["Tags"],
                     BrandItem = item
                 };
                 brandModels.Add(brandModel);
