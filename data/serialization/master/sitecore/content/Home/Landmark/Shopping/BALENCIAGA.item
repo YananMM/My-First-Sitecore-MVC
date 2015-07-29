@@ -19,7 +19,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: e7878ebe-6ee2-446f-90db-091514d88651
+revision: 2cb3ec3d-1287-46ee-84e7-6fb69317fb4d
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -28,6 +28,13 @@ key: brand title
 content-length: 10
 
 BALENCIAGA
+----field----
+field: {DDA15F2F-F719-4896-A8A7-2FC0FE5C5500}
+name: Brand Image
+key: brand image
+content-length: 227
+
+<image mediapath="/Images/Landmark/Brands/brand006" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Brands/brand006" mediaid="{2460FB1C-213C-4E3C-86AB-0DAB474D7B8A}" />
 ----field----
 field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
 name: Buidings
@@ -43,6 +50,13 @@ content-length: 10
 
 BALENCIAGA
 ----field----
+field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
+name: Tags
+key: tags
+content-length: 38
+
+{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -55,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e7878ebe-6ee2-446f-90db-091514d88651
+2cb3ec3d-1287-46ee-84e7-6fb69317fb4d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150728T080445:635736674850221215Z
+20150729T024204:635737345248952552Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
