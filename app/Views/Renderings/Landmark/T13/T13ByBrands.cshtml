@@ -4,7 +4,7 @@
 <div class="masonry-area clearfix">
     <div class="brand-box-area">
         @{
-            var brands = LandmarkHelper.GetBrandsByTag().GroupBy(p => p.Group).ToList();
+            var brands = LandmarkHelper.GetBrandsByCategory().GroupBy(p => p.Group).ToList();
         }
         @foreach (var items in brands)
         {

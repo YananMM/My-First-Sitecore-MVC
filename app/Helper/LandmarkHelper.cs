@@ -150,7 +150,7 @@ namespace Landmark.Helper
             return false;
         }
 
-        public static List<LandmarkBrandModel> GetBrandsByTag()
+        public static List<LandmarkBrandModel> GetBrandsByCategory()
         {
             List<LandmarkBrandModel> brandModels = new List<LandmarkBrandModel>();
             Database webDb = Factory.GetDatabase("web");
@@ -167,10 +167,10 @@ namespace Landmark.Helper
                 };
                 brandModels.Add(brandModel);
             }
-            var currentTag = GetCurrentTag();
+            var currentTag = GetCurrentCategory();
             return brandModels.OrderBy(p => p.Group).Where(p => p.Tags.Contains(currentTag)).ToList();
         }
-        public static string GetCurrentTag()
+        public static string GetCurrentCategory()
         {
             var parentItem = Sitecore.Context.Item.Parent;
             var grandParentItem = Sitecore.Context.Item.Parent.Parent;
@@ -192,14 +192,14 @@ namespace Landmark.Helper
             List<Item> shoppingCategorys = new ItemList();
             Database webDb = Factory.GetDatabase("web");
             Item shoppingCategory = Sitecore.Context.Database.GetItem(categoryId);
-            var query = string.Format("fast:{0}//*[{1}]", shoppingCategory.Paths.FullPath, "@@TemplateId='" + ItemGuids.CategoryObjectTemplate + "'");
+            var query = string.Format("fast:{0}//*[{1}]", shoppingCategory.Paths.FullPath, "@@TemplateId='" + ItemGuids.ShoppingCategoryObject + "'");
             shoppingCategorys = webDb.SelectItems(query).ToList();
             return shoppingCategorys;
         }
 
         public static List<string> GetBrandsGroups()
         {
-            var brands = GetBrandsByTag();
+            var brands = GetBrandsByCategory();
             List<string> brandGroups = new List<string>();
 
             foreach (var brand in brands)
@@ -238,6 +238,39 @@ namespace Landmark.Helper
                 }
             }
             return brandsByBuildings;
+        }
+
+        public static List<Item> GetBuildingsByCategory(ID categoryId)
+        {
+            Database webDb = Factory.GetDatabase("web");
+            Item shopping = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
+            var query = string.Format("fast:{0}//*[{1}]", shopping.Paths.FullPath, "@@TemplateId='" + ItemGuids.T14ShopDetailsTemplate + "'");
+            List<Item> brandsItems = webDb.SelectItems(query).ToList();
+            List<Item> buildingsByCategory = new List<Item>();
+            foreach (Item brand in brandsItems)
+            {
+                var tagsField = (MultilistField)brand.Fields["Tags"];
+                if (tagsField.TargetIDs.Any())
+                {
+                    Item categoryItem = webDb.GetItem(categoryId);
+                    if (tagsField.TargetIDs.Any(id => webDb.GetItem(id).DisplayName == categoryItem.DisplayName && webDb.GetItem(id).Parent.DisplayName == categoryItem.Parent.DisplayName))
+                    {
+                        var buildingsField = (MultilistField) brand.Fields["Buildings"];
+                        if (buildingsField.TargetIDs.Any())
+                        {
+                            foreach (ID buidId in buildingsField.TargetIDs)
+                            {
+                                if (!buildingsByCategory.Contains(webDb.GetItem(buidId)))
+                                {
+                                    buildingsByCategory.Add(webDb.GetItem(buidId));
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            return buildingsByCategory;
+
         }
     }
 }
