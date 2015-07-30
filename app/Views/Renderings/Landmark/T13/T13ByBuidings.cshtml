@@ -27,7 +27,7 @@
                     @foreach (Item brand in LandmarkHelper.GetBrandsByBuildings(buiding.ID))
                     {
                         string src = Html.Sitecore().ImageFieldSrc("Brand Image", brand);
-                        <a title='@Html.Sitecore().Field("Brand Title", brand)' class="brand-box" href="#">
+                        <a title='@Html.Sitecore().Field("Brand Title", brand)' class="brand-box" href="@Sitecore.Links.LinkManager.GetItemUrl(brand)">
                             <img data-src="@src" alt='@Html.Sitecore().Field("Brand Title", brand)' class="lazy-loaded">
                             <span>@Html.Sitecore().Field("Brand Title", brand)</span> 
                         </a>
