@@ -6,19 +6,28 @@
     <!-- desktop -->
     <div class="container hidden-sm  hidden-xs">
         <div class="language ">
-            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-HK")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", ItemGuids.TraditionalChineseGuidItem)</a> |
-            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-CN")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", ItemGuids.SimplifiedChineseGuidItem)</a>
-            <div class="sb-search">
-                @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
-                {
-                    @Html.Sitecore().FormHandler("Search", "SearchContent")
-                    <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", ItemGuids.SearchPlaceHolderItem)" class="sb-search-input form-control">
-                    <input class="sb-search-submit" type="submit" value="">
-                    <a class="sb-search-clear icomoon-circle-with-cross" href="javascript:;"></a>
-                    <span class="icomoon-search"></span>
-                }
+            <div class="header-social-wrapper">
+                <a href="" class="icomoon-share"></a>
+                <div class="header-social">
+                  <a href="" class="icomoon-facebook"></a>
+                  <a href="" class="icomoon-twitter"></a>
+                  <a href="" class="icomoon-sina-weibo"></a>
+                  <a href="" class="icomoon-envelop"></a>
+                </div>
+              </div>
+                <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-HK")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", ItemGuids.TraditionalChineseGuidItem)</a> |
+                <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-CN")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", ItemGuids.SimplifiedChineseGuidItem)</a>
+                <div class="sb-search">
+                    @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
+                    {
+                        @Html.Sitecore().FormHandler("Search", "SearchContent")
+                        <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", ItemGuids.SearchPlaceHolderItem)" class="sb-search-input form-control">
+                        <input class="sb-search-submit" type="submit" value="">
+                        <a class="sb-search-clear icomoon-circle-with-cross" href="javascript:;"></a>
+                        <span class="icomoon-search"></span>
+                    }
+                </div>
             </div>
-        </div>
         @Html.Sitecore().Rendering(ItemGuids.NavigationRenderingViewGuid, new
         {
             Cacheable = false,
