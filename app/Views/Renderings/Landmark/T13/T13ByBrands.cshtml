@@ -1,10 +1,21 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Landmark.Models
+@using Sitecore.Configuration
+@using Sitecore.Data
+@using Sitecore.Data.Items
 @model RenderingModel
 <div class="masonry-area clearfix">
     <div class="brand-box-area">
         @{
-            var brands = LandmarkHelper.GetBrandsByCategory().GroupBy(p => p.Group).ToList();
+            Item firstParentItem = Sitecore.Context.Item.Parent;
+            List<LandmarkBrandModel> brandModels = LandmarkHelper.GetBrandModels();
+            if (!firstParentItem.ID.ToString().Equals(ItemGuids.ShoppingItem))
+            {
+                var currentTag = LandmarkHelper.GetCurrentCategory();
+                brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
+            }
+            var brands = brandModels.GroupBy(p => p.Group).ToList();
         }
         @foreach (var items in brands)
         {

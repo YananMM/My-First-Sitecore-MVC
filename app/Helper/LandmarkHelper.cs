@@ -150,7 +150,7 @@ namespace Landmark.Helper
             return false;
         }
 
-        public static List<LandmarkBrandModel> GetBrandsByCategory()
+        public static List<LandmarkBrandModel> GetBrandModels()
         {
             List<LandmarkBrandModel> brandModels = new List<LandmarkBrandModel>();
             Database webDb = Factory.GetDatabase("web");
@@ -167,8 +167,8 @@ namespace Landmark.Helper
                 };
                 brandModels.Add(brandModel);
             }
-            var currentTag = GetCurrentCategory();
-            return brandModels.OrderBy(p => p.Group).Where(p => p.Tags.Contains(currentTag)).ToList();
+            //var currentTag = GetCurrentCategory();
+            return brandModels.OrderBy(p => p.Group).ToList();
         }
         public static string GetCurrentCategory()
         {
@@ -199,7 +199,7 @@ namespace Landmark.Helper
 
         public static List<string> GetBrandsGroups()
         {
-            var brands = GetBrandsByCategory();
+            var brands = GetBrandModels();
             List<string> brandGroups = new List<string>();
 
             foreach (var brand in brands)
