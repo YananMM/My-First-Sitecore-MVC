@@ -13,33 +13,11 @@
 <!--[if !IE]><!-->
 <html class="no-js">
 <!--<![endif]-->
-<!--[if IE 8]>
-  <style>
-    body,
-    body>.site-header {
-      width: 1200px!important;
-    }
-    body {
-      margin: 0 auto!important;
-    }
-    .site-header {
-      left: 0;
-      margin: 0 auto!important;
-      right: 0;
-    }
-  </style>
-<![endif]-->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge" />-->
-    <!--[if lt IE 9]>
-            <script src="/files/landmark/js/html5shiv-printshiv.min.js"></script>
-        <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" type="text/css" href="/files/landmark/css/style.css" />
-    <!--[if IE]>
-        <script src="/files/landmark/js/selectivizr-min.js"></script>
-        <![endif]-->
     <meta name="description" content="description" />
     <meta name="keywords" content="keywords" />
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -58,7 +36,28 @@
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="viewport" content="width=device-width" />
+    <!--[if lt IE 9]>
+      <script src="/files/landmark/js/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+    <!--[if IE]>
+      <script src="/files/landmark/js/selectivizr-min.js"></script>
+    <![endif]-->
+    <!--[if IE 8]>
+      <style>
+        body,
+        body>.site-header {
+          width: 1200px!important;
+        }
+        body {
+          margin: 0 auto!important;
+        }
+        .site-header {
+          left: 0;
+          margin: 0 auto!important;
+          right: 0;
+        }
+      </style>
+    <![endif]-->
     <title>@Html.Sitecore().Field("Page Title")</title>
 </head>
 <body class="en @LandmarkHelper.GetPageBodyClass()">

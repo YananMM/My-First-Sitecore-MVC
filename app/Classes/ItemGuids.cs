@@ -37,6 +37,8 @@ namespace Landmark.Classes
         public static readonly String T14ShopDetailsTemplate = "{91A88069-9A0E-48B7-9509-BDE830A54D0E}";
         public static readonly String ShoppingCategory = "{FB0C20EF-8DD8-4233-A9E8-3D1536412DB7}";
         public static readonly String ShoppingCategoryObject = "{753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}";
+        public static readonly String AllByBrandsPage = "{670F29E6-B282-4234-B139-E8F74AD95295}";
+        public static readonly String AllByBuildingsPage = "{3FAF2834-AF45-4CD7-BF22-6EEBCA0894C1}";
 
         //item 
         public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}");
