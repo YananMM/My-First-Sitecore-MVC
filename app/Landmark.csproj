@@ -122,6 +122,7 @@
     <Compile Include="Classes\ItemGuids.cs" />
     <Compile Include="Classes\Crawlers\LanguageFallbackCrawler.cs" />
     <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="Controllers\ShoppingController.cs" />
     <Compile Include="Helper\LandmarkHelper.cs" />
     <Compile Include="Helper\SitecoreFieldHelper.cs" />
     <Compile Include="Models\LandmarkBrandModel.cs" />
@@ -373,6 +374,7 @@
     <Content Include="Views\Renderings\Landmark\T13\T13ByBrands.cshtml" />
     <Content Include="Views\Renderings\Landmark\T13\T13SideBar.cshtml" />
     <Content Include="Views\Renderings\Landmark\T11\T11BreadcrumbRendering.cshtml" />
+    <Content Include="Views\Shopping\_GetItems.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
