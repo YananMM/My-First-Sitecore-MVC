@@ -206,14 +206,11 @@ namespace Landmark.Helper
                     if (tagsField.TargetIDs.Any(id => webDb.GetItem(id).DisplayName == categoryItem.DisplayName && webDb.GetItem(id).Parent.DisplayName == categoryItem.Parent.DisplayName))
                     {
                         var buildingsField = (MultilistField) brand.Fields["Buildings"];
-                        if (buildingsField.TargetIDs.Any())
+                        if (buildingsField.TargetIDs != null && buildingsField.TargetIDs.Any())
                         {
-                            foreach (ID buidId in buildingsField.TargetIDs)
+                            foreach (ID buidId in buildingsField.TargetIDs.Where(buidId => !buildingsByCategory.Contains(webDb.GetItem(buidId))))
                             {
-                                if (!buildingsByCategory.Contains(webDb.GetItem(buidId)))
-                                {
-                                    buildingsByCategory.Add(webDb.GetItem(buidId));
-                                }
+                                buildingsByCategory.Add(webDb.GetItem(buidId));
                             }
                         }
                     }
