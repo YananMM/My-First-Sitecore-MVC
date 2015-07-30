@@ -1,12 +1,27 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
 @using Sitecore.Collections
+@using Sitecore.ContentSearch.Utilities
 @using Sitecore.Data.Items
 @model RenderingModel
 @{
     string[] alphabetsStrings = new[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
-    
-    ChildList buidings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
+    Item currentPage = Sitecore.Context.Item;
+    Item parentItem = currentPage.Parent;
+    Item byBrandsPage = parentItem.Children.SingleOrDefault(p => p.DisplayName == "By Brands");
+    string url = string.Empty;
+    if (byBrandsPage.ID.ToString() != currentPage.ID.ToString())
+    {
+        url = Sitecore.Links.LinkManager.GetItemUrl(byBrandsPage);
+    }
+    string category = string.Empty;
+    var buildings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.ToList();
+
+    if (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem))
+    {
+        buildings = LandmarkHelper.GetBuildingsByCategory(parentItem.ID);
+        category = LandmarkHelper.GetCurrentCategory();
+    }
 }
 <div class="brand-menu hidden-xs">
     <div class="brand-menu-area">
@@ -15,9 +30,9 @@
             <ul class="brands-gap brands clearfix">
                 @for (int i = 0; i < alphabetsStrings.Length; i++)
                 {
-                    if (LandmarkHelper.CheckBrandGroup(alphabetsStrings[i]))
+                    if (LandmarkHelper.CheckBrandGroup(alphabetsStrings[i], category))
                     {
-                        <li><a href="#">@alphabetsStrings[i].ToUpper()</a></li>
+                        <li><a href="@url#@alphabetsStrings[i].ToUpper()">@alphabetsStrings[i].ToUpper()</a></li>
                     }
                     else
                     {
@@ -27,7 +42,7 @@
             </ul>
             <h3>BY BUILDINGS</h3>
             <ul class="brands-gap">
-                @foreach (Item buiding in buidings)
+                @foreach (Item buiding in buildings)
                 {
                     <li><a href="#">@buiding.Fields["Buiding Title"].Value</a></li>
                 }

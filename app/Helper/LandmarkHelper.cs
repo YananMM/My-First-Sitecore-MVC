@@ -150,6 +150,10 @@ namespace Landmark.Helper
             return false;
         }
 
+        /// <summary>
+        /// Gets the brand models.
+        /// </summary>
+        /// <returns>List{LandmarkBrandModel}.</returns>
         public static List<LandmarkBrandModel> GetBrandModels()
         {
             List<LandmarkBrandModel> brandModels = new List<LandmarkBrandModel>();
@@ -167,9 +171,13 @@ namespace Landmark.Helper
                 };
                 brandModels.Add(brandModel);
             }
-            //var currentTag = GetCurrentCategory();
             return brandModels.OrderBy(p => p.Group).ToList();
         }
+
+        /// <summary>
+        /// Gets the current category.
+        /// </summary>
+        /// <returns>System.String.</returns>
         public static string GetCurrentCategory()
         {
             var parentItem = Sitecore.Context.Item.Parent;
@@ -187,6 +195,12 @@ namespace Landmark.Helper
             }
             return currentTag;
         }
+
+        /// <summary>
+        /// Gets the categorys by item.
+        /// </summary>
+        /// <param name="categoryId">The category unique identifier.</param>
+        /// <returns>List{Item}.</returns>
         public static List<Item> GetCategorysByItem(string categoryId)
         {
             List<Item> shoppingCategorys = new ItemList();
@@ -197,21 +211,36 @@ namespace Landmark.Helper
             return shoppingCategorys;
         }
 
-        public static List<string> GetBrandsGroups()
+        /// <summary>
+        /// Gets the brands groups.
+        /// </summary>
+        /// <param name="category">The category.</param>
+        /// <returns>List{System.String}.</returns>
+        public static List<string> GetBrandsGroups(string category)
         {
-            var brands = GetBrandModels();
+            List<LandmarkBrandModel> brandModels = GetBrandModels();
+            if (!string.IsNullOrEmpty(category))
+            {
+                brandModels = brandModels.Where(p => p.Tags.Contains(category)).ToList();
+            }
             List<string> brandGroups = new List<string>();
 
-            foreach (var brand in brands)
+            foreach (var brand in brandModels)
             {
                 brandGroups.Add(brand.Group.ToLower());
             }
             return brandGroups;
         }
 
-        public static bool CheckBrandGroup(string brandGroup)
+        /// <summary>
+        /// Checks the brand group.
+        /// </summary>
+        /// <param name="brandGroup">The brand group.</param>
+        /// <param name="category">The category.</param>
+        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        public static bool CheckBrandGroup(string brandGroup, string category)
         {
-            var brandGroups = GetBrandsGroups();
+            var brandGroups = GetBrandsGroups(category);
             if (brandGroups.Contains(brandGroup))
             {
                 return true;
@@ -255,7 +284,7 @@ namespace Landmark.Helper
                     Item categoryItem = webDb.GetItem(categoryId);
                     if (tagsField.TargetIDs.Any(id => webDb.GetItem(id).DisplayName == categoryItem.DisplayName && webDb.GetItem(id).Parent.DisplayName == categoryItem.Parent.DisplayName))
                     {
-                        var buildingsField = (MultilistField) brand.Fields["Buildings"];
+                        var buildingsField = (MultilistField)brand.Fields["Buildings"];
                         if (buildingsField.TargetIDs != null && buildingsField.TargetIDs.Any())
                         {
                             foreach (ID buidId in buildingsField.TargetIDs.Where(buidId => !buildingsByCategory.Contains(webDb.GetItem(buidId))))

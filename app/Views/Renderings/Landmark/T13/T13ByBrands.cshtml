@@ -8,9 +8,9 @@
 <div class="masonry-area clearfix">
     <div class="brand-box-area">
         @{
-            Item firstParentItem = Sitecore.Context.Item.Parent;
-            List<LandmarkBrandModel> brandModels = LandmarkHelper.GetBrandModels();
-            if (!firstParentItem.ID.ToString().Equals(ItemGuids.ShoppingItem))
+            Item parentItem = Sitecore.Context.Item.Parent;
+            var brandModels = LandmarkHelper.GetBrandModels();
+            if (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem))
             {
                 var currentTag = LandmarkHelper.GetCurrentCategory();
                 brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
@@ -19,10 +19,10 @@
         }
         @foreach (var items in brands)
         {
-            <div class="brand-box brand-box-letter" id="a">@items.First().Group</div>
+            <div class="brand-box brand-box-letter" id="@items.First().Group">@items.First().Group</div>
             foreach (var item in items)
             {
-                <a class="brand-box" href="#" title="@item.BrandItem["Brand Title"]">
+                <a class="brand-box" href="@Sitecore.Links.LinkManager.GetItemUrl(item.BrandItem)" title="@item.BrandItem["Brand Title"]">
                     <img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item.BrandItem)" alt="@Html.Sitecore().Field("Brand Title", item.BrandItem)">
                 </a>
             }
