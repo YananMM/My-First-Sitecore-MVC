@@ -16,7 +16,8 @@
                 <ul class="clearfix">
                     @foreach (Item child in LandmarkHelper.GetChildrenPageInNavigation(Sitecore.Context.Item))
                     {
-                        <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(child)">@child["Page Title"].ToUpper()</a></li>
+                        Item byBrands = (from item in child.Children where item.DisplayName.ToUpper() == ItemGuids.ByBrandsGuidItem.DisplayName.ToUpper() select item).First();
+                        <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(byBrands)">@child["Page Title"].ToUpper()</a></li>
                     }
                 </ul>
                 <p>@Html.Sitecore().Field("Glossary Value", ItemGuids.AlsoInterestedInGuidItem) <a href="">EYEWEAR</a>, <a href="">ACCESSORIES</a>, <a href="">GADGETS</a></p>
