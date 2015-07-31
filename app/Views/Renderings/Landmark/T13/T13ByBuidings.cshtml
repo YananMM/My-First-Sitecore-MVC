@@ -11,13 +11,14 @@
 }
 
 <div class="masonry-area clearfix">
-        @foreach (Item buiding in buildings)
+        @foreach (Item building in buildings)
         {
-            if (LandmarkHelper.GetBrandsByBuildings(buiding.ID).Count > 0)
+            if (LandmarkHelper.GetBrandsByBuildings(building.ID).Count > 0)
             {
-                <h3">@buiding.Fields["Buiding Title"].Value</h3>
+                string id = building.Fields["Buiding Title"].Value.Replace(' ','-');
+                <h3 id="@id">@building.Fields["Buiding Title"].Value</h3>
                 <div class="brand-box-area clearfix">
-                    @foreach (Item brand in LandmarkHelper.GetBrandsByBuildings(buiding.ID))
+                    @foreach (Item brand in LandmarkHelper.GetBrandsByBuildings(building.ID))
                     {
                         string src = Html.Sitecore().ImageFieldSrc("Brand Image", brand);
                         <a title='@Html.Sitecore().Field("Brand Title", brand)' class="brand-box" href="@Sitecore.Links.LinkManager.GetItemUrl(brand)">
