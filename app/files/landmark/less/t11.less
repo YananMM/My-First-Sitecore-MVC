@@ -1,5 +1,6 @@
 
 .t11{
+  background-color: @gray-darker3;
   .content-area{
   .gray-text-line;
     padding: 0 10px 29px;
@@ -17,7 +18,7 @@
     -moz-column-gap:40px;
     -webkit-column-gap:40px;
     height: 123px;
-    padding: 10px 0 0;
+    padding: 0;
     margin: 0;
     font-family: @font-family-serif;
     .white-text;
@@ -27,6 +28,7 @@
       padding:0;
       margin: 0;
       a{
+        border-bottom: 1px solid #444444;
         display: block;
         padding: 8px 0;
         width: 100%;
@@ -70,7 +72,6 @@
        }
       }
     .menbox-text{
-      .white-text;
       a{
         display: inline-block;
       color: @gray;
@@ -81,6 +82,8 @@
     }
        }
     .btn-default{
+      border-color: #CCCCCC;
+      color: #CCCCCC;
       text-decoration: none;
       &:hover{
     color: white;
@@ -95,8 +98,8 @@
         }
     }
      h3{
+        color: @brand-golden;
           font-family: @font-family-serif;
-          .primary-text;
           font-size: 1.54em;
           margin: 20px 0 15px;
         }
@@ -124,12 +127,13 @@
     }
     .menbox-2{
     width: 100%;
-      background-color: @gray-dark;
+      background-color: @gray-darker3;
+      border: 1px solid #444444;
       padding: 13px 13px 15px;
       .menbox-text{
         h3{
           font-family: @font-family-serif;
-          .primary-text;
+          color: @brand-golden;
           font-size: 1.33em;
           margin: 23px 0 0px;
         }
@@ -141,17 +145,22 @@
       }
     }
     .menbox-3{
+      background-color: @white;
+      border: 1px solid #DFDFDF;
     width: 100%;
       margin-top: 30px;
       .menbox-text{
         padding: 22px 10% 13px;
-      background-color:@gray-darker;
         h3{
+          color: @brand-golden;
           margin: 0 0 6px;
           font-size: 1.33em;
         }
         h4{
           margin: 10px 0;
+        }
+        p {
+          color: @gray-darker2;
         }
       }
     }
@@ -182,23 +191,29 @@
     }
   }
   }
-  
+  .page-title {
+    h2 {
+      font-size: 26px;
+      line-height: 3;
+    }
+    .link-seeall {
+      line-height: 78px;
+    }
+  }
 }
 
 
 @media (min-width:@screen-sm) { 
 .t11{ 
   .content-area{
-    padding: 0;
+    padding: 0 0 90px 0;
     margin: 0;
     &.content-area-bg{
-      background-color: @gray-darker2;
-      margin: 30px 0 0;
-      padding: 80px 0;
+      background-color: @white;
+      padding: 90px 0 0 0;
     }
     
     .container2{
-      margin-bottom: 20px;
       .menbox{
        overflow: hidden;
       }
@@ -222,7 +237,7 @@
           font-size: 1.33em;
         width: 100%;
         margin: 0;
-        border-bottom: solid 1px #232323;
+        border-bottom: solid 1px #444444;
       }
     }
     }
@@ -264,12 +279,11 @@
       }
     }
     .menbox-2{
-      background-color: @gray-dark;
+      background-color: @gray-darker3;
       padding: 15px 15px 10px;
       .menbox-text{
         h3{
           font-family: @font-family-serif;
-          .primary-text;
           font-size: 1.23em;
           margin: 16px 0 0;
         }
@@ -281,6 +295,7 @@
       }
     }
     .menbox-3{
+      background-color: @white;
       margin: 0;
       .menbox-text{
         padding:22px 22px 9px;
@@ -323,9 +338,6 @@
 @media (min-width:@screen-md) { 
 .t11{ 
   .content-area{
-    &.content-area-bg{
-      margin: 65px 0 0;
-    }
   .menbox-more{
     bottom: -40px;
   }
@@ -342,6 +354,7 @@
       }
     }
     .menbox-3{
+      background-color: @white;
       .menbox-text{
         padding:22px 30px 12px;
       h3{

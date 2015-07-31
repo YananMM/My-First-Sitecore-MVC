@@ -9,5 +9,6 @@
 
 @foreach (Item buiding in buidings)
 {
-    <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(allByBuildings)">@buiding.Fields["Buiding Title"].Value</a></li>
+    string href=Sitecore.Links.LinkManager.GetItemUrl(allByBuildings) + "#building"+buiding.ID.ToString();
+    <li><a href="@href">@buiding.Fields["Buiding Title"].Value</a></li>
 }

@@ -7,14 +7,7 @@
     List<Item> buildings = new List<Item>();
     Item contextItem = Sitecore.Context.Item;
     Item firstParentItem = contextItem.Parent;
-    if (firstParentItem.ID.ToString().Equals(ItemGuids.ShoppingItem))
-    {
-         buildings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.ToList();
-    }
-    else
-    {
-        buildings = LandmarkHelper.GetBuildingsByCategory(firstParentItem.ID);
-    }
+    buildings = firstParentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) ? Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.ToList() : LandmarkHelper.GetBuildingsByCategory(firstParentItem.ID);
 }
 
 <div class="masonry-area clearfix">
@@ -22,7 +15,7 @@
         {
             if (LandmarkHelper.GetBrandsByBuildings(buiding.ID).Count > 0)
             {
-                <h3>@buiding.Fields["Buiding Title"].Value</h3>
+                <h3">@buiding.Fields["Buiding Title"].Value</h3>
                 <div class="brand-box-area clearfix">
                     @foreach (Item brand in LandmarkHelper.GetBrandsByBuildings(buiding.ID))
                     {
