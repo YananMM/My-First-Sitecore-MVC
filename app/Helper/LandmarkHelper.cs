@@ -241,9 +241,16 @@ namespace Landmark.Helper
             return brandGroups;
         }
 
-        public static List<Item> GetCategorysInShopping() 
+        public static List<LandmarkCategoryJsonModel> GetCategorysInShopping()
         {
-            return GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
+            List<LandmarkCategoryJsonModel> LandmarkCategoryJsonModels = new List<LandmarkCategoryJsonModel>();
+
+            var categorys = GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
+            foreach (var item in categorys)
+            {
+                var subCategories = GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.ShoppingCategoryObject);
+            }
+
         }
 
         /// <summary>

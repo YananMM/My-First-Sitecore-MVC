@@ -57,10 +57,8 @@
                         var shoppingItems = LandmarkHelper.GetCategorysInShopping();
                     }
                     <select id="category" name="category" class="selectpicker form-control" data-style="btn-primary" onchange="GetItems(this)">
-                        @foreach (var item in shoppingItems)
-                        {
-                            <option value="@item.ID">@item["Page Title"]</option>
-                        }
+
+                        <option value="@item.ID">@item["Page Title"]</option>
                     </select>
                     <select id="childcategory" name="childcategory" class="selectpicker form-control" data-style="btn-primary">
                         <option value="Select" selected="selected">--Select--</option>

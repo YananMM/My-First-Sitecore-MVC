@@ -781,12 +781,12 @@ jQuery(function ($) {
                 categories = [];
 
             $.getJSON(urlGetCategories)
-                    .done(function (json) {
-                        categories = json;
-                    })
+                .done(function (json) {
+                    categories = json;
+                });
             /*.fail(function(){
       console.log('fail', arguments)
-    })*/;
+    })*/
 
             // handle each parent category select
             $('form.form-goto').each(function () {
