@@ -30,20 +30,24 @@
                                                 </ul>
                                             </div>
                                             <div class="col-lg-3 col-md-3 col-sm-3">
-                                                <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBrandsGuidItem)</h3>
+                                            <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBrandsGuidItem)</h3>
+                                            <ul class="mega-brands">
                                                 @Html.Sitecore().Rendering(ItemGuids.ByBrandsRenderingViewGuid, new
                                                 {
                                                     Cacheable = false,
                                                     CacheKey = "bybrands",
                                                     Cache_VaryByData = true
                                                 })
+                                                </ul>
                                                 <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBuidingsGuidItem)</h3>
-                                                @Html.Sitecore().Rendering(ItemGuids.ByBuildingsRenderingViewGuid, new
-                                                {
-                                                    Cacheable = false,
-                                                    CacheKey = "bybuildings",
-                                                    Cache_VaryByData = true
-                                                })
+                                                <ul class="brands-gap">
+                                                    @Html.Sitecore().Rendering(ItemGuids.ByBuildingsRenderingViewGuid, new
+                                                    {
+                                                        Cacheable = false,
+                                                        CacheKey = "bybuildings",
+                                                        Cache_VaryByData = true
+                                                    })
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>

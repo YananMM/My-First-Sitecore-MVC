@@ -875,9 +875,30 @@ jQuery(function ($) {
             var gdIE8 = isIE8();
             var gdFloorPlanJson = 't7/floorplan.json';
 
-            if (gdIE8) {
-                gdFloorPlanJson = 't7/floorplan-ie8.json';
-            }
+      //$.getJSON(urlGetCategories)
+    //.done(function(json){
+    //  categories = json;
+      //})
+    $.ajax({
+        type: "GET",
+        url: urlGetCategories,
+        async: false,
+        dataType: "json",
+        success: function(data){
+            //do your stuff with the JSON data
+            categories = json;
+        }
+    });
+    /*.fail(function(){
+      console.log('fail', arguments)
+    })*/;
+    
+    // handle each parent category select
+    $('form.form-goto').each(function(){
+      var form = this,
+        $form = $(this),
+        $category = $('select[name=category]', form),
+        $childcategory = $('select[name=childcategory]', form);
 
             $('#mapplic').mapplic({
                 source: gdFloorPlanJson,
