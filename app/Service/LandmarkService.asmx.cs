@@ -32,12 +32,30 @@ namespace Landmark.Service
             Item shoppingCategory = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingCategory);
             Item shopping = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
             var queryCategory = string.Format("fast:{0}//*[{1}]", shoppingCategory.Paths.FullPath, "@@TemplateId='" + ItemGuids.CategoryObjectTemplate + "'");
-            List<TextValue> firstCategory = (from category in webDb.SelectItems(queryCategory).ToList() 
-                                 from Item item in shopping.Children where item.DisplayName == category.DisplayName 
-                                 select new TextValue(category["Category Name"], item.ID.ToString())).ToList();
+            List<TextValue> firstCategory = (from category in webDb.SelectItems(queryCategory).ToList()
+                                             from Item item in shopping.Children
+                                             where item.DisplayName == category.DisplayName
+                                             select new TextValue(category["Category Name"], item.ID.ToString())).ToList();
+
+            List<Categories> categories = new List<Categories>();
+
+            foreach (var item in firstCategory)
+            {
+
+            }
+
 
             JavaScriptSerializer js = new JavaScriptSerializer();
+
+            //List<TextValue> subCategories = (from TextValue category in firstCategory
+            //                                 from Item subCategory in category.Children
+            //                                 select new Categories(category,new List<>()).ToList();
+
+
             string strJSON = js.Serialize(firstCategory);
+
+
+
             return strJSON;
         }
 
@@ -47,10 +65,17 @@ namespace Landmark.Service
     {
         public string text;
         public string value;
-        public TextValue(string _text,string _value)
+        public TextValue(string _text, string _value)
         {
             text = _text;
             value = _value;
         }
+    }
+
+    public class Categories
+    {
+        public TextValue Category { get; set; }
+
+        public List<TextValue> SubCategory { get; set; }
     }
 }
