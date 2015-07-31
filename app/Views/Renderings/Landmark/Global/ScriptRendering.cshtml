@@ -1,4 +1,5 @@
-﻿<link rel="stylesheet" type="text/css" href="/files/landmark/css/jquery.bxslider.css"></link>
+﻿@using Landmark.Helper
+<link rel="stylesheet" type="text/css" href="/files/landmark/css/jquery.bxslider.css"></link>
 <link rel="stylesheet" type="text/css" href="/files/landmark/css/bootstrap-select.css"></link>
 <!-- Dynamically generated global variables for the language options for date picker by Sitecore -->
 <script>
@@ -32,3 +33,7 @@
         updateEvent: 'load orientationchange resize scroll shown.bs.collapse hidden.bs.collapse lazyupdate'
     };
 </script>
+@if (LandmarkHelper.GetPageBodyClass().StartsWith("t13"))
+{
+<script src="/files/landmark/js/lib/masonry.pkgd.min.js"></script>
+}
