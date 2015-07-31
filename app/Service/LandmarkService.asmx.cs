@@ -10,6 +10,7 @@ using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Shell.Applications.ContentEditor;
+using Landmark.Models;
 
 namespace Landmark.Service
 {
@@ -37,45 +38,22 @@ namespace Landmark.Service
                                              where item.DisplayName == category.DisplayName
                                              select new TextValue(category["Category Name"], item.ID.ToString())).ToList();
 
-            List<Categories> categories = new List<Categories>();
+            //List<Categories> categories = new List<Categories>();
 
             foreach (var item in firstCategory)
             {
-
+                var subCategoriess = Sitecore.Context.Database.GetItem(item.value).Children.ToList();
+                List<TextValue> children =
+                    subCategoriess.Select(p => new TextValue(p["Page Title"], p.ID.ToString())).ToList();
+                item.children = children;
             }
-
 
             JavaScriptSerializer js = new JavaScriptSerializer();
 
-            //List<TextValue> subCategories = (from TextValue category in firstCategory
-            //                                 from Item subCategory in category.Children
-            //                                 select new Categories(category,new List<>()).ToList();
-
-
             string strJSON = js.Serialize(firstCategory);
-
-
 
             return strJSON;
         }
 
-    }
-
-    public class TextValue
-    {
-        public string text;
-        public string value;
-        public TextValue(string _text, string _value)
-        {
-            text = _text;
-            value = _value;
-        }
-    }
-
-    public class Categories
-    {
-        public TextValue Category { get; set; }
-
-        public List<TextValue> SubCategory { get; set; }
     }
 }

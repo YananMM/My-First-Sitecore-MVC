@@ -19,17 +19,17 @@ namespace Landmark.Models
         public Item BrandItem { get; set; }
     }
 
-    public class CategoryModel
-    {
-        public string Value { get; set; }
+    //public class CategoryModel
+    //{
+    //    public string Value { get; set; }
 
-        public string Text { get; set; }
-    }
+    //    public string Text { get; set; }
+    //}
 
-    public class LandmarkCategoryJsonModel
-    {
-        public CategoryModel Category { get; set; }
+    //public class LandmarkCategoryJsonModel
+    //{
+    //    public CategoryModel Category { get; set; }
 
-        public List<CategoryModel> SubCategories { get; set; }
-    }
+    //    public List<CategoryModel> SubCategories { get; set; }
+    //}
 }

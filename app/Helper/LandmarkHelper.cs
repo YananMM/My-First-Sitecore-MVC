@@ -241,17 +241,26 @@ namespace Landmark.Helper
             return brandGroups;
         }
 
-        //public static List<LandmarkCategoryJsonModel> GetCategorysInShopping()
-        //{
-        //    List<LandmarkCategoryJsonModel> LandmarkCategoryJsonModels = new List<LandmarkCategoryJsonModel>();
+        public static List<TextValue> GetFirstCategory()
+        {
+            Database webDb = Factory.GetDatabase("web");
+            Item shoppingCategory = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingCategory);
+            Item shopping = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
+            var queryCategory = string.Format("fast:{0}//*[{1}]", shoppingCategory.Paths.FullPath, "@@TemplateId='" + ItemGuids.CategoryObjectTemplate + "'");
+            List<TextValue> firstCategory = (from category in webDb.SelectItems(queryCategory).ToList()
+                                             from Item item in shopping.Children
+                                             where item.DisplayName == category.DisplayName
+                                             select new TextValue(category["Category Name"], item.ID.ToString())).ToList();
+            foreach (var item in firstCategory)
+            {
+                var subCategoriess = Sitecore.Context.Database.GetItem(item.value).Children.ToList();
+                List<TextValue> children =
+                    subCategoriess.Select(p => new TextValue(p["Page Title"], p.ID.ToString())).ToList();
+                item.children = children;
+            }
+            return firstCategory;
+        }
 
-        //    var categorys = GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
-        //    foreach (var item in categorys)
-        //    {
-        //        var subCategories = GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.ShoppingCategoryObject);
-        //    }
-
-        //}
 
         /// <summary>
         /// Checks the brand group.

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Landmark.Classes;
 using Landmark.Helper;
 using Sitecore.Configuration;
 using Sitecore.Data;
@@ -19,5 +20,14 @@ namespace Landmark.Controllers
             TempData["items"] = items;
             return PartialView("_GetItems");
         }
+
+        public ActionResult GetJson(string childcategory)
+        {
+            Item shoppingCategory = Sitecore.Context.Database.GetItem(childcategory);
+            return Redirect(shoppingCategory.Paths.FullPath);
+            //return Content(Sitecore.Links.LinkManager.GetItemUrl(shoppingCategory));
+        }
+
     }
+
 }

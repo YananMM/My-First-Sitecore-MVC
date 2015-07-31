@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Landmark.Models
 @using Sitecore.Collections
 @using Sitecore.ContentSearch.Utilities
 @using Sitecore.Data.Items
@@ -22,6 +23,8 @@
         buildings = LandmarkHelper.GetBuildingsByCategory(parentItem.ID);
         category = LandmarkHelper.GetCurrentCategory();
     }
+
+    List<TextValue> firstCategory = LandmarkHelper.GetFirstCategory();
 }
 <div class="brand-menu hidden-xs">
     <div class="brand-menu-area">
@@ -44,14 +47,20 @@
                     Cache_VaryByData = true
                 })
             </ul>
-            <form class="form-goto" data-handler-get-catetories="/Service/LandmarkService.asmx/GetShoppingCategories">
+            <form class="form-goto" data-handler-get-catetories="/Service/GetCategoryJson.ashx" method="POST" action="@Url.Action("GetJson", "Shopping")">
                 <h3>GO TO <a class="sub-title" href="#">ALL BRANDS<span class="sprite-small-r">&gt;</span></a></h3>
                 <div class="form-group">
-                    <select id="category" name="category" class="selectpicker form-control" data-style="btn-primary" onchange="GetItems(this)">
-                        <option value=""></option>
+                    <select id="category" name="category" class="selectpicker form-control" data-style="btn-primary">
+                        @foreach (var item in firstCategory)
+                        {
+                            <option value="@item.value">@item.text.ToUpper()</option>
+                        }
                     </select>
                     <select id="childcategory" name="childcategory" class="selectpicker form-control" data-style="btn-primary">
-                        <option value=""></option>
+                        @foreach (var item in firstCategory.First().children)
+                        {
+                            <option value="@item.value">@item.text.ToUpper()</option>
+                        }
                     </select>
                     <button type="submit" class="btn btn-default">GO</button>
                 </div>
