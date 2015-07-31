@@ -151,16 +151,28 @@ namespace Landmark.Helper
         }
 
         /// <summary>
+        /// Gets the items by root and template.
+        /// </summary>
+        /// <param name="rootItem">The root item.</param>
+        /// <param name="templateItem">The template item.</param>
+        /// <returns>List{Item}.</returns>
+        private static List<Item> GetItemsByRootAndTemplate(string rootItem, string templateItem)
+        {
+            Database webDb = Factory.GetDatabase("web");
+            Item shopping = Sitecore.Context.Database.GetItem(rootItem);
+            var query = string.Format("fast:{0}//*[{1}]", shopping.Paths.FullPath,
+                "@@TemplateId='" + templateItem + "'");
+            return webDb.SelectItems(query).ToList();
+        }
+
+        /// <summary>
         /// Gets the brand models.
         /// </summary>
         /// <returns>List{LandmarkBrandModel}.</returns>
         public static List<LandmarkBrandModel> GetBrandModels()
         {
             List<LandmarkBrandModel> brandModels = new List<LandmarkBrandModel>();
-            Database webDb = Factory.GetDatabase("web");
-            Item shopping = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
-            var query = string.Format("fast:{0}//*[{1}]", shopping.Paths.FullPath, "@@TemplateId='" + ItemGuids.T14ShopDetailsTemplate + "'");
-            List<Item> brandsItems = webDb.SelectItems(query).ToList();
+            List<Item> brandsItems = GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T14ShopDetailsTemplate);
             foreach (var item in brandsItems)
             {
                 LandmarkBrandModel brandModel = new LandmarkBrandModel()
@@ -204,10 +216,7 @@ namespace Landmark.Helper
         public static List<Item> GetCategorysByItem(string categoryId)
         {
             List<Item> shoppingCategorys = new ItemList();
-            Database webDb = Factory.GetDatabase("web");
-            Item shoppingCategory = Sitecore.Context.Database.GetItem(categoryId);
-            var query = string.Format("fast:{0}//*[{1}]", shoppingCategory.Paths.FullPath, "@@TemplateId='" + ItemGuids.ShoppingCategoryObject + "'");
-            shoppingCategorys = webDb.SelectItems(query).ToList();
+            shoppingCategorys = GetItemsByRootAndTemplate(categoryId, ItemGuids.ShoppingCategoryObject);
             return shoppingCategorys;
         }
 
@@ -230,6 +239,11 @@ namespace Landmark.Helper
                 brandGroups.Add(brand.Group.ToLower());
             }
             return brandGroups;
+        }
+
+        public static List<Item> GetCategorysInShopping() 
+        {
+            return GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
         }
 
         /// <summary>

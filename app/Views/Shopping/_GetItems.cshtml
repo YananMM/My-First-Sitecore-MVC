@@ -1,0 +1,10 @@
+﻿@using Sitecore.Data.Items;
+@model RenderingModel
+@{
+    var items = (List<Item>)TempData["items"];
+}
+
+@foreach (var item in items)
+{
+    <option value="@item.ID">@item["Page Title"]</option>
+}

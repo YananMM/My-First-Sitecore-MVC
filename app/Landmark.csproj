@@ -122,6 +122,7 @@
     <Compile Include="Classes\ItemGuids.cs" />
     <Compile Include="Classes\Crawlers\LanguageFallbackCrawler.cs" />
     <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="Controllers\ShoppingController.cs" />
     <Compile Include="Helper\LandmarkHelper.cs" />
     <Compile Include="Helper\SitecoreFieldHelper.cs" />
     <Compile Include="Models\LandmarkBrandModel.cs" />
