@@ -779,10 +779,20 @@ $(document).ready(function() {
     var urlGetCategories = $('form.form-goto').data('handler-get-catetories'),
       categories = [];
 
-    $.getJSON(urlGetCategories)
-    .done(function(json){
-      categories = json;
-    })
+      //$.getJSON(urlGetCategories)
+    //.done(function(json){
+    //  categories = json;
+      //})
+    $.ajax({
+        type: "GET",
+        url: urlGetCategories,
+        async: false,
+        dataType: "json",
+        success: function(data){
+            //do your stuff with the JSON data
+            categories = json;
+        }
+    });
     /*.fail(function(){
       console.log('fail', arguments)
     })*/;

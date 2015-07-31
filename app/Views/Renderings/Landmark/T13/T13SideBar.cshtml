@@ -26,29 +26,25 @@
 <div class="brand-menu hidden-xs">
     <div class="brand-menu-area">
         <div class="scroll-content">
-            <h3>BY BRANDS</h3>
+            <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBrandsGuidItem)</h3>
             <ul class="brands-gap brands clearfix">
-                @for (int i = 0; i < alphabetsStrings.Length; i++)
-                {
-                    if (LandmarkHelper.CheckBrandGroup(alphabetsStrings[i], category))
-                    {
-                        <li><a href="@url#@alphabetsStrings[i].ToUpper()">@alphabetsStrings[i].ToUpper()</a></li>
-                    }
-                    else
-                    {
-                        <li class="disabled">@alphabetsStrings[i].ToUpper()</li>
-                    }
-                }
+            @Html.Sitecore().Rendering(ItemGuids.ByBrandsRenderingViewGuid, new
+            {
+                Cacheable = false,
+                CacheKey = "bybrands",
+                Cache_VaryByData = true
+            })
             </ul>
-            <h3>BY BUILDINGS</h3>
+            <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBuidingsGuidItem)</h3>
             <ul class="brands-gap">
-                @foreach (Item buiding in buildings)
+                @Html.Sitecore().Rendering(ItemGuids.ByBuildingsRenderingViewGuid, new
                 {
-                    <li><a href="#">@buiding.Fields["Buiding Title"].Value</a></li>
-                }
-                <li><a href="#">ALSO CLOSE BY...</a></li>
+                    Cacheable = false,
+                    CacheKey = "bybuildings",
+                    Cache_VaryByData = true
+                })
             </ul>
-            <form class="form-goto" data-handler-get-catetories="/fake-handlers/categories.json">
+            <form class="form-goto" data-handler-get-catetories="/Service/LandmarkService.asmx/GetShoppingCategories">
                 <h3>GO TO <a class="sub-title" href="#">ALL BRANDS<span class="sprite-small-r">&gt;</span></a></h3>
                 <div class="form-group">
                     <select id="category" name="category" class="selectpicker form-control" data-style="btn-primary">

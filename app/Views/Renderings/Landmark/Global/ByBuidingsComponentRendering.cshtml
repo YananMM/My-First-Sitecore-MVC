@@ -6,9 +6,8 @@
     ChildList buidings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
     Item allByBuildings = Sitecore.Context.Database.GetItem(ItemGuids.AllByBuildingsPage);
 }
-<ul>
-    @foreach (Item buiding in buidings)
-    {
-        <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(allByBuildings)">@buiding.Fields["Buiding Title"].Value</a></li>
-    }
-</ul>
+
+@foreach (Item buiding in buidings)
+{
+    <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(allByBuildings)">@buiding.Fields["Buiding Title"].Value</a></li>
+}
