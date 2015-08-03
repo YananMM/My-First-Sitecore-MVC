@@ -39,6 +39,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Website\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Client">
       <HintPath>..\lib\Sitecore.Client.dll</HintPath>
       <Private>False</Private>
@@ -118,7 +122,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Classes\ConstantString.cs" />
     <Compile Include="Classes\EventHandlers\UserEvent.cs" />
-    <Compile Include="Classes\InstagramSocial.cs" />
+    <Compile Include="Classes\InstagramSocial.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Classes\ItemGuids.cs" />
     <Compile Include="Classes\Crawlers\LanguageFallbackCrawler.cs" />
     <Compile Include="Controllers\SearchController.cs" />
@@ -527,6 +533,7 @@
     <Content Include="Views\Renderings\Landmark\T11\T11BreadcrumbRendering.cshtml" />
     <Content Include="Service\Web.config" />
     <Content Include="Service\GetCategoryJson.ashx" />
+    <Content Include="Views\Renderings\Landmark\T1\T1InstagramRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
