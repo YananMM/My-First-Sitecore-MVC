@@ -1,6 +1,6 @@
 ----item----
 version: 1
-id: {88AF3247-7CED-4B4B-8A79-8DCC58A84796}
+id: {7787A26D-769C-4AA7-9C4D-1BF9DE84EDF5}
 database: master
 path: /sitecore/content/Home/Landmark/Shopping/ALEXANDRE
 parent: {07A37ABC-D676-4737-8B14-79EC18486CE8}
@@ -15,11 +15,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-200
+163
 ----version----
 language: en
 version: 1
-revision: 9fc99525-3395-4520-b32c-9d32c80b4ea1
+revision: 75fd08d1-5ef3-4523-8788-9b7519c78a5f
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -32,16 +32,16 @@ ALEXANDRE
 field: {DDA15F2F-F719-4896-A8A7-2FC0FE5C5500}
 name: Brand Image
 key: brand image
-content-length: 58
+content-length: 227
 
-<image mediaid="{378B1B20-6296-4B06-860D-18449853D271}" />
+<image mediapath="/Images/Landmark/Brands/brand002" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Brands/brand002" mediaid="{378B1B20-6296-4B06-860D-18449853D271}" />
 ----field----
 field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
 name: Buildings
 key: buildings
-content-length: 77
+content-length: 38
 
-{04AF3BF4-1C4D-43BC-9884-1431E3A44B11}|{E76CEFC9-801C-4694-9A63-0C6132F20741}
+{04AF3BF4-1C4D-43BC-9884-1431E3A44B11}
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -50,40 +50,26 @@ content-length: 9
 
 ALEXANDRE
 ----field----
-field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
-name: Is Shown In Navigation
-key: is shown in navigation
-content-length: 0
-
-
-----field----
-field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
-name: Tags
-key: tags
-content-length: 77
-
-{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150723T003119Z
+20150803T093120Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-9fc99525-3395-4520-b32c-9d32c80b4ea1
+75fd08d1-5ef3-4523-8788-9b7519c78a5f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150729T062540Z
+20150803T094735:635741920552019066Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
