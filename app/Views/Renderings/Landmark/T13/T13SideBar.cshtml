@@ -24,7 +24,7 @@
         category = LandmarkHelper.GetCurrentCategory();
     }
 
-    List<TextValue> firstCategory = LandmarkHelper.GetFirstCategory();
+    List<TextValue> categories = LandmarkHelper.GetFirstCategory();
 }
 <div class="brand-menu hidden-xs">
     <div class="brand-menu-area">
@@ -51,13 +51,13 @@
                 <h3>GO TO <a class="sub-title" href="#">ALL BRANDS<span class="sprite-small-r">&gt;</span></a></h3>
                 <div class="form-group">
                     <select id="category" name="category" class="selectpicker form-control" data-style="btn-primary">
-                        @foreach (var item in firstCategory)
+                        @foreach (var item in categories)
                         {
                             <option value="@item.value">@item.text.ToUpper()</option>
                         }
                     </select>
                     <select id="childcategory" name="childcategory" class="selectpicker form-control" data-style="btn-primary">
-                        @foreach (var item in firstCategory.First().children)
+                        @foreach (var item in categories.First().children)
                         {
                             <option value="@item.value">@item.text.ToUpper()</option>
                         }
