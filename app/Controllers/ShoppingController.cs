@@ -21,7 +21,7 @@ namespace Landmark.Controllers
             return PartialView("_GetItems");
         }
 
-        public ActionResult GetJson(string childcategory)
+        public ActionResult GoTo(string childcategory)
         {
             Item shoppingCategory = Sitecore.Context.Database.GetItem(childcategory);
             return Redirect(Sitecore.Links.LinkManager.GetItemUrl(shoppingCategory.Children.First()));

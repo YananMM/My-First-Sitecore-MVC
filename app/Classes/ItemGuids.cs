@@ -59,6 +59,7 @@ namespace Landmark.Classes
         public static readonly Item ByBrandsGuidItem = Sitecore.Context.Database.GetItem("{23C8C729-14B1-45B9-9557-404516153453}");
         public static readonly Item ByBuidingsGuidItem = Sitecore.Context.Database.GetItem("{7B87FE4A-D9B2-4451-BB6D-441B01B1462A}");
         public static readonly Item GoGuidItem = Sitecore.Context.Database.GetItem("{EB7EDF9B-07D2-4CD9-8B21-AF7A15800F98}");
+        public static readonly Item GoToGuidItem = Sitecore.Context.Database.GetItem("{6A742FAE-6615-4BE5-A8A9-4471DFDC60E5}");
         public static readonly Item SeeAlsoGuidItem = Sitecore.Context.Database.GetItem("{E9CD2E74-E53B-4711-9DB6-88D3DEFA14FC}");
         
         

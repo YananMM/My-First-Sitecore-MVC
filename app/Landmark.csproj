@@ -132,10 +132,6 @@
     <Compile Include="Service\GetCategoryJson.ashx.cs">
       <DependentUpon>GetCategoryJson.ashx</DependentUpon>
     </Compile>
-    <Compile Include="Service\LandmarkService.asmx.cs">
-      <DependentUpon>LandmarkService.asmx</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="sitecore\Landmark\UserCreated.aspx.cs">
       <DependentUpon>UserCreated.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -485,7 +481,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Service\LandmarkService.asmx" />
     <Content Include="sitecore\Landmark\UserCreated.aspx" />
     <Content Include="Views\web.config">
       <SubType>Designer</SubType>
