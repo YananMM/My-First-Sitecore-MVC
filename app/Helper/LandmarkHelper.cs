@@ -157,7 +157,7 @@ namespace Landmark.Helper
         /// <param name="rootItem">The root item.</param>
         /// <param name="templateItem">The template item.</param>
         /// <returns>List{Item}.</returns>
-        private static List<Item> GetItemsByRootAndTemplate(string rootItem, string templateItem)
+        public static List<Item> GetItemsByRootAndTemplate(string rootItem, string templateItem)
         {
             Item shopping = Sitecore.Context.Database.GetItem(rootItem);
             var query = string.Format("fast:{0}//*[{1}]", shopping.Paths.FullPath,
@@ -194,9 +194,9 @@ namespace Landmark.Helper
         {
             var parentItem = Sitecore.Context.Item.Parent;
             var grandParentItem = Sitecore.Context.Item.Parent.Parent;
-            var shoppingCategory = GetCategorysByItem(ItemGuids.ShoppingCategory);
-            var grandParentCategorys = shoppingCategory.SingleOrDefault(p => p.DisplayName == grandParentItem.DisplayName);
-            var parentCategorys = GetCategorysByItem(grandParentCategorys.ID.ToString());
+            var allshoppingCategories = GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
+            var grandParentCategorys = allshoppingCategories.SingleOrDefault(p => p.DisplayName == grandParentItem.DisplayName);
+            var parentCategorys = GetItemsByRootAndTemplate(grandParentCategorys.ID.ToString(), ItemGuids.CategoryObjectTemplate);
             string currentTag = String.Empty;
             foreach (var item in parentCategorys)
             {
@@ -206,18 +206,6 @@ namespace Landmark.Helper
                 }
             }
             return currentTag;
-        }
-
-        /// <summary>
-        /// Gets the categorys by item.
-        /// </summary>
-        /// <param name="categoryId">The category unique identifier.</param>
-        /// <returns>List{Item}.</returns>
-        public static List<Item> GetCategorysByItem(string categoryId)
-        {
-            List<Item> shoppingCategorys = new ItemList();
-            shoppingCategorys = GetItemsByRootAndTemplate(categoryId, ItemGuids.ShoppingCategoryObject);
-            return shoppingCategorys;
         }
 
         /// <summary>
@@ -241,6 +229,10 @@ namespace Landmark.Helper
             return brandGroups;
         }
 
+        /// <summary>
+        /// Gets the categorise.
+        /// </summary>
+        /// <returns>List{TextValue}.</returns>
         public static List<TextValue> GetFirstCategory()
         {
             Item shoppingCategory = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingCategory);
@@ -249,17 +241,52 @@ namespace Landmark.Helper
             List<TextValue> firstCategory = (from category in _webDb.SelectItems(queryCategory).ToList()
                                              from Item item in shopping.Children
                                              where item.DisplayName == category.DisplayName
-                                             select new TextValue(category["Category Name"], item.ID.ToString())).ToList();
+                                             select new TextValue
+                                             {
+                                                 text = category["Category Name"],
+                                                 value = item.ID.ToString()
+                                             }).ToList();
             foreach (var item in firstCategory)
             {
                 var subCategoriess = Sitecore.Context.Database.GetItem(item.value).Children.ToList();
                 List<TextValue> children =
-                    subCategoriess.Select(p => new TextValue(p["Page Title"], p.ID.ToString())).ToList();
+                    subCategoriess.Select(p => new TextValue
+                    {
+                        text = p["Page Title"],
+                        value = p.ID.ToString()
+                    }).ToList();
                 item.children = children;
             }
             return firstCategory;
         }
 
+        public static List<string> GetRelatedCategoriesIDs()
+        {
+            var allshoppingCategories = GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
+            Item currentShoppingPage = Sitecore.Context.Item;
+            Item currentItem = Sitecore.Context.Item;
+            if (currentItem.DisplayName == "By Brands" || currentItem.DisplayName == "By Buildings")
+            {
+                currentShoppingPage = currentItem.Parent.Parent;
+            }
+            List<string> relatedCategoriesIDs = new List<string>();
+            foreach (var item in allshoppingCategories)
+            {
+                if (item.DisplayName == currentShoppingPage.DisplayName)
+                {
+                    var relatedCategories = item.Fields["Related Categoryies"].ToString();
+                    if (!string.IsNullOrEmpty(relatedCategories))
+                    {
+                        relatedCategoriesIDs = relatedCategories.Split('|').ToList();
+                        if (relatedCategoriesIDs.Count > 3)
+                        {
+                            relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
+                        }
+                    }
+                }
+            }
+            return relatedCategoriesIDs;
+        }
 
         /// <summary>
         /// Checks the brand group.
