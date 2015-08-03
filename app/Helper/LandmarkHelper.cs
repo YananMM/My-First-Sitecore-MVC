@@ -275,10 +275,13 @@ namespace Landmark.Helper
                 if (item.DisplayName == currentShoppingPage.DisplayName)
                 {
                     var relatedCategories = item.Fields["Related Categoryies"].ToString();
-                    relatedCategoriesIDs = relatedCategories.Split('|').ToList();
-                    if (relatedCategoriesIDs.Count > 3)
+                    if (!string.IsNullOrEmpty(relatedCategories))
                     {
-                        relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
+                        relatedCategoriesIDs = relatedCategories.Split('|').ToList();
+                        if (relatedCategoriesIDs.Count > 3)
+                        {
+                            relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
+                        }
                     }
                 }
             }
