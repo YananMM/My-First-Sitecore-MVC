@@ -8,21 +8,8 @@
 @{
     string[] alphabetsStrings = new[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
     Item currentPage = Sitecore.Context.Item;
-    Item parentItem = currentPage.Parent;
-    Item byBrandsPage = parentItem.Children.SingleOrDefault(p => p.DisplayName == "By Brands");
-    string url = string.Empty;
-    if (byBrandsPage.ID.ToString() != currentPage.ID.ToString())
-    {
-        url = Sitecore.Links.LinkManager.GetItemUrl(byBrandsPage);
-    }
-    string category = string.Empty;
-    var buildings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.ToList();
-
-    if (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem))
-    {
-        buildings = LandmarkHelper.GetBuildingsByCategory(parentItem.ID);
-        category = LandmarkHelper.GetCurrentCategory();
-    }
+    string allByBrandsPageID = ItemGuids.AllByBrandsPage;
+    string allByBuildingsPageID = ItemGuids.AllByBuildingsPage;
 
     List<TextValue> categories = LandmarkHelper.GetFirstCategory();
 }
@@ -48,7 +35,9 @@
                 })
             </ul>
             <form class="form-goto" data-handler-get-catetories="/Service/GetCategoryJson.ashx/" method="POST" action="@Url.Action("GoTo", "Shopping")">
-                <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.GoToGuidItem)<a class="sub-title" href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage))">@Html.Sitecore().Field("Glossary Value", ItemGuids.AllBrandsGuidItem)<span class="sprite-small-r">&gt;</span></a></h3>
+                <h3>
+                    @Html.Sitecore().Field("Glossary Value", ItemGuids.GoToGuidItem)<a class="sub-title" href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage))">@Html.Sitecore().Field("Glossary Value", ItemGuids.AllBrandsGuidItem)<span class="sprite-small-r">&gt;</span></a>
+                </h3>
                 <div class="form-group">
                     <select id="category" name="category" class="selectpicker form-control" data-style="btn-primary">
                         @foreach (var item in categories)
@@ -65,25 +54,18 @@
                     <button type="submit" class="btn btn-default">@Html.Sitecore().Field("Glossary Value", ItemGuids.GoGuidItem)</button>
                 </div>
             </form>
-            <h3>SEE ALSO</h3>
-            <ul>
-                <li><a href="#">EYEWEAR</a></li>
-                <li><a href="#">ACCESSORIES</a></li>
-                <li><a href="#">GADGETS</a></li>
-            </ul>
+            @if (allByBrandsPageID != currentPage.ID.ToString() && allByBuildingsPageID != currentPage.ID.ToString())
+            {
+                <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.SeeAlsoGuidItem)</h3>
+                <ul>
+                    @Html.Sitecore().Rendering(ItemGuids.T13RelatedCategoryViewGuid, new
+                    {
+                        Cacheable = false,
+                        CacheKey = "relatedCategory",
+                        Cache_VaryByData = true
+                    })
+                </ul>
+            }
         </div>
     </div>
 </div>
-<script type="text/javascript">
-    function GetItems(id) {
-        $('#childcategory').html("");
-        $.ajax({
-            type: "POST",
-            url: '@Url.Action("GetItems", "Shopping")',
-            data: { currentId: id },
-            success: function (data) {
-                $('#childcategory').html(data);
-            }
-        });
-    }
-</script>

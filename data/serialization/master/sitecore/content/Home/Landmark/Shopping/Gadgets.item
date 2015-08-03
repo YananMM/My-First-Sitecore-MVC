@@ -1,47 +1,47 @@
 ----item----
 version: 1
-id: {D5813FF6-BAE9-4C58-98C3-A43A84E0F59B}
+id: {DEC52ECB-C401-4A1C-97F2-B2646D0277E5}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Category Object/Category Data
-parent: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
-name: Category Data
+path: /sitecore/content/Home/Landmark/Shopping/Gadgets
+parent: {07A37ABC-D676-4737-8B14-79EC18486CE8}
+name: Gadgets
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {3832F0F6-6342-4394-932C-2DDAB1164C97}
+templatekey: T11 Page
 
 ----version----
 language: en
 version: 1
-revision: e82a2dbd-354b-4e7e-b22c-093941b7a19a
+revision: b64da963-ec3c-4c11-b789-dd20bb0f902b
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 7
+
+Gadgets
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150721T070221Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
+20150803T060916Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-e82a2dbd-354b-4e7e-b22c-093941b7a19a
+b64da963-ec3c-4c11-b789-dd20bb0f902b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150803T023829:635741663096693463Z
+20150803T060916:635741789564306997Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

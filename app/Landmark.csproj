@@ -527,6 +527,7 @@
     <Content Include="Views\Renderings\Landmark\T11\T11BreadcrumbRendering.cshtml" />
     <Content Include="Service\Web.config" />
     <Content Include="Service\GetCategoryJson.ashx" />
+    <Content Include="Views\Renderings\Landmark\T13\T13RelatedCategory.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

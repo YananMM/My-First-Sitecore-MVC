@@ -7,13 +7,11 @@ namespace Landmark.Models
 {
     public class TextValue
     {
-        public string text;
-        public string value;
-        public TextValue(string _text, string _value)
-        {
-            text = _text;
-            value = _value;
-        }
+        public string text { get; set; }
+
+        public string value { get; set; }
+
         public List<TextValue> children { get; set; }
+
     }
 }

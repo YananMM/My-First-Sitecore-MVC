@@ -1,0 +1,17 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Landmark.Models
+@using Sitecore.Collections
+@using Sitecore.ContentSearch.Utilities
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@model RenderingModel
+
+@{
+    Field relatedCategories = LandmarkHelper.GetRelatedCategories();
+}
+
+
+<li><a href="#">@relatedCategories</a></li>
+<li><a href="#">ACCESSORIES</a></li>
+<li><a href="#">GADGETS</a></li>
