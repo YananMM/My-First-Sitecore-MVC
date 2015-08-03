@@ -20,10 +20,25 @@
                         <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(byBrands)">@child["Page Title"].ToUpper()</a></li>
                     }
                 </ul>
-                <p>@Html.Sitecore().Field("Glossary Value", ItemGuids.AlsoInterestedInGuidItem) <a href="">EYEWEAR</a>, <a href="">ACCESSORIES</a>, <a href="">GADGETS</a></p>
+                <p>
+                    @Html.Sitecore().Field("Glossary Value", ItemGuids.AlsoInterestedInGuidItem) @{
+                        List<string> relatedCategorieIDs = LandmarkHelper.GetRelatedCategoriesIDs();
+                        var shoppingItems = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
+                        foreach (var item in shoppingItems)
+                        {
+                            foreach (var id in relatedCategorieIDs)
+                            {
+                                var category = Sitecore.Context.Database.GetItem(id);
+                                if (category.DisplayName == item.DisplayName)
+                                {
+                                    <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@item.DisplayName</a>
+                                }
+                            }
+                        }
+                    }
+                </p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 menbox">
-
                 <div class=" menbox-1">
                     <a href="#" class="menbox-img">
                         <div class="menbox-img-mask"></div>

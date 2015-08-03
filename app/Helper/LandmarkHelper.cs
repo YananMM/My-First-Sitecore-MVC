@@ -157,7 +157,7 @@ namespace Landmark.Helper
         /// <param name="rootItem">The root item.</param>
         /// <param name="templateItem">The template item.</param>
         /// <returns>List{Item}.</returns>
-        private static List<Item> GetItemsByRootAndTemplate(string rootItem, string templateItem)
+        public static List<Item> GetItemsByRootAndTemplate(string rootItem, string templateItem)
         {
             Item shopping = Sitecore.Context.Database.GetItem(rootItem);
             var query = string.Format("fast:{0}//*[{1}]", shopping.Paths.FullPath,
@@ -260,10 +260,8 @@ namespace Landmark.Helper
             return firstCategory;
         }
 
-        public static Sitecore.Data.Fields.Field GetRelatedCategories()
+        public static List<string> GetRelatedCategoriesIDs()
         {
-            //List<Item> relatedCategories = new ItemList();
-            // Field relatedCategories = new Field();
             var allshoppingCategories = GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
             Item currentShoppingPage = Sitecore.Context.Item;
             Item currentItem = Sitecore.Context.Item;
@@ -278,13 +276,14 @@ namespace Landmark.Helper
                 {
                     var relatedCategories = item.Fields["Related Categoryies"].ToString();
                     relatedCategoriesIDs = relatedCategories.Split('|').ToList();
+                    if (relatedCategoriesIDs.Count > 3)
+                    {
+                        relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
+                    }
                 }
             }
-
-            return null;
+            return relatedCategoriesIDs;
         }
-
-
 
         /// <summary>
         /// Checks the brand group.

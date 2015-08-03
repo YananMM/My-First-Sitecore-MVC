@@ -8,10 +8,18 @@
 @model RenderingModel
 
 @{
-    Field relatedCategories = LandmarkHelper.GetRelatedCategories();
+    List<string> relatedCategorieIDs = LandmarkHelper.GetRelatedCategoriesIDs();
+    var shoppingItems = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
+    foreach (var item in shoppingItems)
+    {
+        foreach (var id in relatedCategorieIDs)
+        {
+            var category = Sitecore.Context.Database.GetItem(id);
+            if (category.DisplayName == item.DisplayName)
+            {
+                <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@item.DisplayName</a></li>
+            }
+        }
+    }
 }
 
-
-<li><a href="#">@relatedCategories</a></li>
-<li><a href="#">ACCESSORIES</a></li>
-<li><a href="#">GADGETS</a></li>
