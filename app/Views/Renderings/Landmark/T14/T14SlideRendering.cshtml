@@ -1,0 +1,91 @@
+﻿@using Landmark.Helper
+@{
+    ShoppingHelper shoppingHelper = new ShoppingHelper();
+        var slides = shoppingHelper.GetT14Slides();
+}
+<!-- Indicators -->
+<ol class="carousel-indicators">
+    @for(int i = 0;i<slides.Count;i++)
+    {
+    <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{if (i == 0) { <text>
+        class="active"
+        </text>      }}></li>
+    }
+</ol>
+<!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+    @{
+        int j= 0;
+        foreach (var item in slides)
+        {
+    <div @{ if (j == 0) { <text>
+         class="item active"
+         </text>  } else { <text>
+         class="item"
+         </text>  } }>
+        @{
+            j++;
+        }
+        <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Slide Image", item)"></div>
+        <div class="carousel-caption">
+            <div class="carousel-caption-inner">
+                <div class="gd-carousel-detail">
+                    <div class="gd-mainimage-brief">
+                        <h2>@Html.Sitecore().Field("Opening Hours Label")</h2>
+                        <div class="table-responsive gd-mainimage-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>OPENING HOURS</th>
+                                        <td>
+                                            @Html.Sitecore().Field("Mon-Fri Opening Hours")<br>
+                                            @Html.Sitecore().Field("Sat-Sun Opening Hours")
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>CONTACT</th>
+                                        <td>@Html.Sitecore().Field("Contact")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>WHERE</th>
+                                        <td>
+                                            @Html.Sitecore().Field("Where")<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="/en/t7/floorplan-0.png" data-lighttitle="PUT LIGHTBOX TITLE HERE">
+                                                <span class="icomoon-location2"></span> FLOOR PLAN
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <a href="@Html.Sitecore().Field("Official Website Url")" class="gd-link-brief">
+                            @Html.Sitecore().Field("Official Website Label") <span class="icomoon-chevron-small-right"></span>
+                        </a>
+                        <div class="table-responsive gd-tg-table">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th><span class="icomoon-price-tag"></span> TAGS</th>
+                                        <td>MENS - CLOTHING, ACCESSORIES, COSMETICS, SKIN AND PERSONAL CARE, SHOES, WOMEN'S WEAR</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        }
+    }
+</div>
+<!-- Controls -->
+<div class="gd-mainimage-controls">
+    <a class="gd-mainimage-control" href="#gd-carousel-mainimage" role="button" data-slide="prev">
+        <span class="icomoon-thin-arrow-L" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="gd-mainimage-control" href="#gd-carousel-mainimage" role="button" data-slide="next">
+        <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>

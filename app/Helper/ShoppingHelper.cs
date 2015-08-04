@@ -13,7 +13,7 @@ namespace Landmark.Helper
 {
     public class ShoppingHelper
     {
-        private Database _webDb = Factory.GetDatabase("web"); 
+        private Database _webDb = Factory.GetDatabase("web");
         /// <summary>
         /// Gets the brand models.
         /// </summary>
@@ -216,6 +216,15 @@ namespace Landmark.Helper
                 }
             }
             return false;
+        }
+
+
+        public List<Item> GetT14Slides()
+        {
+            var item = Sitecore.Context.Item;
+            var query = string.Format("fast:{0}//*[{1}]", item.Paths.FullPath, "@@TemplateId='" + ItemGuids.T14SlideObjectTemplate + "'");
+            List<Item> T14SlidesItems = _webDb.SelectItems(query).ToList();
+            return T14SlidesItems;
         }
     }
 }

@@ -19,7 +19,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 987d3900-8d34-4d3f-a356-eb87e545284e
+revision: 69f4c646-2f11-464d-9711-acc3306703a4
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -73,6 +73,20 @@ content-length: 116
 
 {D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{01E67855-9741-4C1C-9FCD-2432982120B6}
 ----field----
+field: {3DED45C4-C26E-4498-9909-AB777C4D1244}
+name: Mon-Fri Opening Hours
+key: mon-fri opening hours
+content-length: 19
+
+Mon-Fri: 9:00-20:00
+----field----
+field: {C4C77DCE-BD77-4F57-8B15-88AD9F46F583}
+name: Sat-Sun Opening Hours
+key: sat-sun opening hours
+content-length: 19
+
+Sat-Sun: 9:00-22:00
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -85,14 +99,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-987d3900-8d34-4d3f-a356-eb87e545284e
+69f4c646-2f11-464d-9711-acc3306703a4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150804T054417:635742638571647439Z
+20150804T060437:635742650771705243Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
