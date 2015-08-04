@@ -2,9 +2,9 @@
 version: 1
 id: {9A438267-7D76-4656-A302-9CB6C92AFC00}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Text Content Object/Text Content Data
+path: /sitecore/templates/User Defined/Landmark/Object/Content Object/Content Data
 parent: {4F401F16-FF51-4484-83FA-B905DAB54D97}
-name: Text Content Data
+name: Content Data
 master: {00000000-0000-0000-0000-000000000000}
 template: {E269FBB5-3750-427A-9149-7AA950B49301}
 templatekey: Template section
@@ -12,7 +12,7 @@ templatekey: Template section
 ----version----
 language: en
 version: 1
-revision: bba297a5-29fb-4a38-991d-9c55f99031c8
+revision: 7151f1c7-d239-4dd2-9919-f7ec40a7b2e2
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bba297a5-29fb-4a38-991d-9c55f99031c8
+7151f1c7-d239-4dd2-9919-f7ec40a7b2e2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150803T090050:635741892505224881Z
+20150804T003658Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
