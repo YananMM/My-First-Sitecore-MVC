@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
+id: {3534AD05-BF49-4763-822B-25D97D9F7283}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Brand Object/Brand Data/Buildings
-parent: {62BCB71B-041C-4290-9DAB-1444D309A141}
-name: Buildings
+path: /sitecore/templates/User Defined/Landmark/Object/Brand Object/Floor Data/Floor
+parent: {04D8EB83-3E38-43CC-9E9B-4492EC1822DF}
+name: Floor
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,9 +13,9 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 9
+content-length: 8
 
-Multilist
+Treelist
 ----field----
 field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
 name: Source
@@ -29,11 +29,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-400
+100
 ----version----
 language: en
 version: 1
-revision: eb13ccfa-443f-4de3-85df-860514cc16dc
+revision: 5fe8b48a-2c9f-495f-a806-a973bfba4112
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +41,14 @@ name: __Created
 key: __created
 content-length: 16
 
-20150721T065415Z
+20150804T025948Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-eb13ccfa-443f-4de3-85df-860514cc16dc
+5fe8b48a-2c9f-495f-a806-a973bfba4112
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated

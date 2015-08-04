@@ -1,33 +1,40 @@
 ----item----
 version: 1
-id: {EFD840AE-A8E5-4963-94E1-FF291D7059AD}
+id: {2705F7C2-5686-4D75-94CA-0D50B90F7E05}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Building Data/__Standard Values
-parent: {873FCBBD-5F81-4DD2-B885-DFDCA194A5D1}
+path: /sitecore/templates/User Defined/Landmark/Object/Floor Object/__Standard Values
+parent: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
 name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
-template: {873FCBBD-5F81-4DD2-B885-DFDCA194A5D1}
-templatekey: Building Data
+template: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
+templatekey: Floor Object
 
-----field----
-field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
-name: __Masters
-key: __masters
-content-length: 38
-
-{ABBCC209-E657-48C4-A8D1-9C6C8B862474}
 ----version----
 language: en
 version: 1
-revision: 05b38260-fd59-415b-a341-f1a7029c739d
+revision: d00980cc-f0f0-41bb-bd97-8120e30c8250
 
 ----field----
-field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
-name: Buiding Title
-key: buiding title
+field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
+name: Floor Title
+key: floor title
 content-length: 5
 
 $name
+----field----
+field: {49195981-001A-41D0-BE6E-78B60FD14964}
+name: Color
+key: color
+content-length: 7
+
+#FFFFFF
+----field----
+field: {FF370512-19AC-4386-B26B-D64C14BF4693}
+name: Is Shown
+key: is shown
+content-length: 1
+
+1
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -41,7 +48,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150721T070123Z
+20150804T024753Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-05b38260-fd59-415b-a341-f1a7029c739d
+d00980cc-f0f0-41bb-bd97-8120e30c8250
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150804T025132Z
+20150804T025113Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

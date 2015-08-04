@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {62BCB71B-041C-4290-9DAB-1444D309A141}
+id: {1A9C5804-930B-4BB6-8785-DBD20061B6D6}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Brand Object/Brand Data
-parent: {FE57AFD0-1D81-48B5-99D7-FAD3CB2B103B}
-name: Brand Data
+path: /sitecore/templates/User Defined/Landmark/Object/Floor Object/Floor Data
+parent: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
+name: Floor Data
 master: {00000000-0000-0000-0000-000000000000}
 template: {E269FBB5-3750-427A-9149-7AA950B49301}
 templatekey: Template section
@@ -12,7 +12,7 @@ templatekey: Template section
 ----version----
 language: en
 version: 1
-revision: 7546f9ea-f31a-451b-9cc3-fbb41e68ea6e
+revision: a6fbf38a-37f4-45a4-8a00-a35a4df4acf8
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -20,7 +20,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150721T065415Z
+20150804T015028Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7546f9ea-f31a-451b-9cc3-fbb41e68ea6e
+a6fbf38a-37f4-45a4-8a00-a35a4df4acf8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150804T032421Z
+20150804T024748Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
