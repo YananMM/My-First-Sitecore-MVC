@@ -16,10 +16,17 @@ key: __sortorder
 content-length: 3
 
 163
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 385
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{85CAA162-725B-43D1-A99E-772337904451}"><p:d /></r><r uid="{E64EDBC1-C185-4768-8768-9516962F8432}"><p:d /></r><r uid="{26618C06-08AC-45EB-851E-C5D5B9AE44C8}"><p:d /></r><r uid="{ED5B52B2-1A90-420E-9AB5-7079449B5494}"><p:d /></r><r uid="{9206E9DA-0BCE-4864-BD6E-A64485ED223D}"><p:d /></r></d></r>
 ----version----
 language: en
 version: 1
-revision: 75fd08d1-5ef3-4523-8788-9b7519c78a5f
+revision: 767cf436-ada8-4fc1-9938-663c0cd37bcf
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -43,12 +50,35 @@ content-length: 38
 
 {04AF3BF4-1C4D-43BC-9884-1431E3A44B11}
 ----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Title
+key: title
+content-length: 78
+
+Alexander McQueen is one of the most respected fashion designers in the world.
+----field----
+field: {682B1E90-3780-4EDD-87DF-C8D42F545759}
+name: Description
+key: description
+content-length: 1056
+
+Alexander McQueen was founded in 1992 by Lee McQueen where in less than 10 years he became one of the most respected fashion designers in the world.
+            Alexander McQueen shows are known for their emotional power and raw energy, as well as the romantic but determinedly contemporary nature of the collections. Integral to the McQueen culture is the juxtaposition between contrasting elements: fragility and strength, tradition and modernity, fluidity and severity. An openly emotional and even passionate viewpoint is realised with a profound respect and influence for the arts and crafts tradition. McQueen’s collections combine an in-depth working knowledge of bespoke British tailoring, fine workmanship and the impeccable finish of Italian manufacturing.
+            Sarah Burton joined the company in 1996 and was made Head of Womenswear design in 2000. Burton worked alongside Lee McQueen for more than 14 years and was subsequently appointed Creative Director of the brand in May 2010 following the passing of Lee McQueen in February 2010.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 9
 
 ALEXANDRE
+----field----
+field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
+name: Tags
+key: tags
+content-length: 116
+
+{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{01E67855-9741-4C1C-9FCD-2432982120B6}
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -62,14 +92,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-75fd08d1-5ef3-4523-8788-9b7519c78a5f
+767cf436-ada8-4fc1-9938-663c0cd37bcf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150803T094735:635741920552019066Z
+20150804T031453:635742548933290418Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
