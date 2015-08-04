@@ -137,6 +137,9 @@
     <Compile Include="Service\GetCategoryJson.ashx.cs">
       <DependentUpon>GetCategoryJson.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Service\GetFloorPlanJson.ashx.cs">
+      <DependentUpon>GetFloorPlanJson.ashx</DependentUpon>
+    </Compile>
     <Compile Include="sitecore\Landmark\UserCreated.aspx.cs">
       <DependentUpon>UserCreated.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -535,6 +538,7 @@
     <Content Include="Views\Renderings\Landmark\T13\T13RelatedCategory.cshtml" />
     <Content Include="Views\Renderings\Landmark\T1\T1InstagramRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T14\T14ContentRendering.cshtml" />
+    <Content Include="Service\GetFloorPlanJson.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
