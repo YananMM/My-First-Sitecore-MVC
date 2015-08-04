@@ -1,0 +1,301 @@
+﻿@using System.Diagnostics.Eventing.Reader
+@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.ContentSearch.Utilities
+@using Sitecore.Data.Items
+@model RenderingModel
+@{
+    ViewBag.Title = "T14ContentRendering";
+}
+DDD
+<div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#gd-carousel-mainimage" data-slide-to="0" class="active"></li>
+        <li data-target="#gd-carousel-mainimage" data-slide-to="1"></li>
+        <li data-target="#gd-carousel-mainimage" data-slide-to="2"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img data-src="../files/landmark/images/shopdetail/shopdetail-slider-01.jpg" alt="...">
+            <div class="carousel-caption">
+                <div class="carousel-caption-inner">
+                    <div class="gd-carousel-detail">
+                        <div class="gd-mainimage-brief">
+                            <h2>ALEXANDER MCQUEEN</h2>
+                            <div class="table-responsive gd-mainimage-table">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>OPENING HOURS</th>
+                                            <td>
+                                                Mon-Fri: 9:00-20:00<br>
+                                                Sat-Sun: 9:00-22:00
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>CONTACT</th>
+                                            <td>2765 0220</td>
+                                        </tr>
+                                        <tr>
+                                            <th>WHERE</th>
+                                            <td>
+                                                Shop 212, 2/F, LANDMARK ATRIUM<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="/en/t7/floorplan-0.png" data-lighttitle="PUT LIGHTBOX TITLE HERE">
+                                                    <span class="icomoon-location2"></span> FLOOR PLAN
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="#" class="gd-link-brief">
+                                OFFCIAL WEBSITE <span class="icomoon-chevron-small-right"></span>
+                            </a>
+                            <div class="table-responsive gd-tg-table">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th><span class="icomoon-price-tag"></span> TAGS</th>
+                                            <td>MENS - CLOTHING, ACCESSORIES, COSMETICS, SKIN AND PERSONAL CARE, SHOES, WOMEN'S WEAR</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img data-src="../files/landmark/images/example.jpg" alt="...">
+            <div class="carousel-caption">
+                <div class="carousel-caption-inner">
+                    <div class="gd-carousel-detail">
+                        <div class="gd-mainimage-brief">
+                            <h2>ALEXANDER MCQUEEN</h2>
+                            <div class="table-responsive gd-mainimage-table">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>OPENING HOURS</th>
+                                            <td>
+                                                Mon-Fri: 9:00-20:00<br>
+                                                Sat-Sun: 9:00-22:00
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>CONTACT</th>
+                                            <td>2765 0220</td>
+                                        </tr>
+                                        <tr>
+                                            <th>WHERE</th>
+                                            <td>
+                                                Shop 212, 2/F, LANDMARK ATRIUM<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="/en/t7/floorplan-0.png" data-lighttitle="PUT LIGHTBOX TITLE HERE">
+                                                    <span class="icomoon-location2"></span> FLOOR PLAN
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="#" class="gd-link-brief">
+                                OFFCIAL WEBSITE <span class="icomoon-chevron-small-right"></span>
+                            </a>
+                            <div class="table-responsive gd-tg-table">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th><span class="icomoon-price-tag"></span> TAGS</th>
+                                            <td>Mens - Clothing, Accessories, Cosmetics, Skin and Personal Care, Shoes, Women's Wear </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img data-src="../files/landmark/images/example.jpg" alt="...">
+            <div class="carousel-caption">
+                <div class="carousel-caption-inner">
+                    <div class="gd-carousel-detail">
+                        <div class="gd-mainimage-brief">
+                            <h2>ALEXANDER MCQUEEN</h2>
+                            <div class="table-responsive gd-mainimage-table">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>OPENING HOURS</th>
+                                            <td>
+                                                Mon-Fri: 9:00-20:00<br>
+                                                Sat-Sun: 9:00-22:00
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>CONTACT</th>
+                                            <td>2765 0220</td>
+                                        </tr>
+                                        <tr>
+                                            <th>WHERE</th>
+                                            <td>
+                                                Shop 212, 2/F, LANDMARK ATRIUM<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="/en/t7/floorplan-0.png" data-lighttitle="PUT LIGHTBOX TITLE HERE">
+                                                    <span class="icomoon-location2"></span> FLOOR PLAN
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="#" class="gd-link-brief">
+                                OFFCIAL WEBSITE <span class="icomoon-chevron-small-right"></span>
+                            </a>
+                            <div class="table-responsive gd-tg-table">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th><span class="icomoon-price-tag"></span> TAGS</th>
+                                            <td>Mens - Clothing, Accessories, Cosmetics, Skin and Personal Care, Shoes, Women's Wear </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Controls -->
+    <div class="gd-mainimage-controls">
+        <a class="gd-mainimage-control" href="#gd-carousel-mainimage" role="button" data-slide="prev">
+            <span class="icomoon-thin-arrow-L" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="gd-mainimage-control" href="#gd-carousel-mainimage" role="button" data-slide="next">
+            <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="gd-brief">
+        <div class="gd-brief-heading">
+            <h3>@Html.Sitecore().Field("Title") </h3>
+        </div>
+        <div class="gd-brief-body gd-col-2">
+            <p>
+                @Html.Sitecore().Field("Description")
+            </p>
+        </div>
+    </div>
+
+    <div class="gd-bigbrand">
+        <img data-src="../files/landmark/images/shopdetail/shopdetail-logo-b-01.png">
+    </div>
+
+    <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
+        <div class="carousel-heading">
+            <h2>RELATED ARTICLES</h2>
+        </div>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img data-src="http://images.huffingtonpost.com/2014-07-10-EdgeofTomorrowMovie2014.jpg" alt="...">
+                <div class="carousel-caption">
+                    <div class="carousel-caption-inner">
+                        <div class="gd-carousel-detail">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias porro soluta omnis praesentium accusantium aperiam eaque adipisci totam asperiores quam.</p>
+                            <button class="gd-button gd-button-white" type="button">DISCOVER MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img data-src="../files/landmark/images/shopdetail/shopdetail-article-01.jpg" alt="...">
+                <div class="carousel-caption">
+                    <div class="carousel-caption-inner">
+                        <div class="gd-carousel-detail">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Lorem ipsum dolor sit amet. Necessitatibus dolorum corrupti perferendis, eos iure sit neque tenetur saepe!</p>
+                            <button class="gd-button gd-button-white" type="button">DISCOVER MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img data-src="http://images.huffingtonpost.com/2014-07-10-EdgeofTomorrowMovie2014.jpg" alt="...">
+                <div class="carousel-caption">
+                    <div class="carousel-caption-inner">
+                        <div class="gd-carousel-detail">
+                            <h3>Lorem ipsum dolor</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eos saepe temporibus architecto magni neque eaque consequatur nesciunt harum laudantium saepe temporibus architecto magni neque eaque!</p>
+                            <button class="gd-button gd-button-white" type="button">DISCOVER MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Wrapper for controls -->
+        <div class="carousel-footer">
+            <div class="gd-carousel-controls clearfix">
+                <!-- Controls -->
+                <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="prev">
+                    <span class="icomoon-thin-arrow-L" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <!-- Indicators -->
+                <ol class="carousel-indicators gd-carousel-control gd-carousel-no">
+                    <li data-target="#gd-carousel-info" data-slide-to="0" class="active">1</li>
+                    <li data-target="#gd-carousel-info" data-slide-to="1">2</li>
+                    <li data-target="#gd-carousel-info" data-slide-to="2">3</li>
+                </ol>
+                <span class="gd-carousel-control gd-carousel-no">
+                    /
+                </span>
+                <span class="gd-carousel-control gd-carousel-no">
+                    3
+                </span>
+                <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="next">
+                    <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="shopdetails-brand">
+    <a class="gd-link-brands" href="#">SEE ALL BRANDS<span class="icomoon-chevron-small-right"></span></a>
+    <div class="container">
+        <div class="shopdetails-brand-header">
+            <ul>
+                <li><a href="javascript:;" class="active">YOU MAY ALSO LIKE</a></li>
+                <li><a href="javascript:;">ALSO ON THIS FLOOR</a></li>
+            </ul>
+        </div>
+
+        <div class="shopdetails-brand-body">
+            <ul>
+                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-02.png"></a></li>
+                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-03.png"></a></li>
+                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-04.png"></a></li>
+                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-05.png"></a></li>
+                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-06.png"></a></li>
+                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-07.png"></a></li>
+            </ul>
+            <ul class="hidden">
+                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-07.png"></a></li>
+                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-06.png"></a></li>
+                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-05.png"></a></li>
+                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-04.png"></a></li>
+                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-03.png"></a></li>
+                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-02.png"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
