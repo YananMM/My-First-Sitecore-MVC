@@ -8,11 +8,12 @@
 <div class="masonry-area clearfix">
     <div class="brand-box-area">
         @{
+            ShoppingHelper shoppingHelper=new ShoppingHelper();
             Item parentItem = Sitecore.Context.Item.Parent;
-            var brandModels = LandmarkHelper.GetBrandModels();
+            var brandModels = shoppingHelper.GetBrandModels();
             if (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem))
             {
-                var currentTag = LandmarkHelper.GetCurrentCategory();
+                var currentTag = shoppingHelper.GetCurrentCategory();
                 brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
             }
             var brands = brandModels.GroupBy(p => p.Group).ToList();

@@ -17,11 +17,11 @@ namespace Landmark.Service
     /// </summary>
     public class GetJson : IHttpHandler
     {
-
+        private ShoppingHelper shoppingHelper = new ShoppingHelper();
         public void ProcessRequest(HttpContext context)
         {
             context.Response.ContentType = "text/plain";
-            List<TextValue> firstCategory = LandmarkHelper.GetFirstCategory();
+            List<TextValue> firstCategory = shoppingHelper.GetFirstCategory();
 
             JavaScriptSerializer js = new JavaScriptSerializer();
 

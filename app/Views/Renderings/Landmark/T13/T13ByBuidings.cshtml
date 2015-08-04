@@ -4,6 +4,7 @@
 @using Sitecore.Data.Items
 @model RenderingModel
 @{
+    ShoppingHelper shoppingHelper=new ShoppingHelper();
     List<Item> buildings = new List<Item>();
     Item contextItem = Sitecore.Context.Item;
     Item firstParentItem = contextItem.Parent;
@@ -13,12 +14,12 @@
 <div class="masonry-area clearfix">
         @foreach (Item building in buildings)
         {
-            if (LandmarkHelper.GetBrandsByBuildings(building.ID).Count > 0)
+            if (shoppingHelper.GetBrandsByBuildings(building.ID).Count > 0)
             {
                 string id = building.Fields["Buiding Title"].Value.Replace(' ','-');
                 <h3 id="@id">@building.Fields["Buiding Title"].Value</h3>
                 <div class="brand-box-area clearfix">
-                    @foreach (Item brand in LandmarkHelper.GetBrandsByBuildings(building.ID))
+                    @foreach (Item brand in shoppingHelper.GetBrandsByBuildings(building.ID))
                     {
                         string src = Html.Sitecore().ImageFieldSrc("Brand Image", brand);
                         <a title='@Html.Sitecore().Field("Brand Title", brand)' class="brand-box" href="@Sitecore.Links.LinkManager.GetItemUrl(brand)">

@@ -8,7 +8,9 @@
 @*@{
         var advertsList = Sitecore.Context.Item.GetDescendantsByTemplateWithFallback(ItemGuids.AdvertTemplateItemGuid).Take(2);
     }*@
-
+@{
+    ShoppingHelper shoppingHelper = new ShoppingHelper();
+}
 <section class="content-area">
     <div class="container">
         <div class="row">
@@ -23,7 +25,7 @@
                 <p>
                     @Html.Sitecore().Field("Glossary Value", ItemGuids.AlsoInterestedInGuidItem) 
                     @{
-                        List<string> relatedCategorieIDs = LandmarkHelper.GetRelatedCategoriesIDs();
+                        List<string> relatedCategorieIDs = shoppingHelper.GetRelatedCategoriesIDs();
                         var shoppingItems = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
                         foreach (var item in shoppingItems)
                         {

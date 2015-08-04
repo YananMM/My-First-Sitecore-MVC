@@ -1,47 +1,47 @@
 ----item----
 version: 1
-id: {62BCB71B-041C-4290-9DAB-1444D309A141}
+id: {BA634CEC-AF14-4B7B-BDA1-B2A8511745C3}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Brand Object/Brand Data
-parent: {FE57AFD0-1D81-48B5-99D7-FAD3CB2B103B}
-name: Brand Data
+path: /sitecore/content/Global/Landmark/Buildings/LANDMARK BUILDINGS/1F
+parent: {02889C6B-A746-41A3-9A77-8E50903D065D}
+name: 1F
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
+templatekey: Floor Object
 
 ----version----
 language: en
 version: 1
-revision: 7546f9ea-f31a-451b-9cc3-fbb41e68ea6e
+revision: 59e19a0a-be29-4088-8abf-a59f1671128b
 
+----field----
+field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
+name: Floor Title
+key: floor title
+content-length: 3
+
+1/F
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150721T065415Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
+20150804T025357Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-7546f9ea-f31a-451b-9cc3-fbb41e68ea6e
+59e19a0a-be29-4088-8abf-a59f1671128b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150804T032421Z
+20150804T025601Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
