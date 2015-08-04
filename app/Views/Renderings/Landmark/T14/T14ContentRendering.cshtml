@@ -7,7 +7,7 @@
 @{
     ViewBag.Title = "T14ContentRendering";
 }
-DDD
+
 <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -194,7 +194,7 @@ DDD
     </div>
 
     <div class="gd-bigbrand">
-        <img data-src="../files/landmark/images/shopdetail/shopdetail-logo-b-01.png">
+        <img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image",Sitecore.Context.Item)">
     </div>
 
     <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
