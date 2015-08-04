@@ -2,12 +2,13 @@
 @model RenderingModel
 
 @{
+    ShoppingHelper shoppingHelper=new ShoppingHelper();
     string[] alphabetsStrings = new[] {"a", "b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
 }
 
 @for (int i = 0; i<alphabetsStrings.Length; i++)
 {
-    if (LandmarkHelper.IfBrandsAlphabetValid(alphabetsStrings[i]))
+    if (shoppingHelper.IfBrandsAlphabetValid(alphabetsStrings[i]))
     {
         <li><a href="#">@alphabetsStrings[i].ToUpper()</a></li>
     }

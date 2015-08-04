@@ -10,8 +10,8 @@
     Item currentPage = Sitecore.Context.Item;
     string allByBrandsPageID = ItemGuids.AllByBrandsPage;
     string allByBuildingsPageID = ItemGuids.AllByBuildingsPage;
-
-    List<TextValue> categories = LandmarkHelper.GetFirstCategory();
+    ShoppingHelper shoppingHelper=new ShoppingHelper();
+    List<TextValue> categories = shoppingHelper.GetFirstCategory();
 }
 <div class="brand-menu hidden-xs">
     <div class="brand-menu-area">

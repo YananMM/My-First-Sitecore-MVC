@@ -8,7 +8,8 @@
 @model RenderingModel
 
 @{
-    List<string> relatedCategorieIDs = LandmarkHelper.GetRelatedCategoriesIDs();
+    ShoppingHelper shoppingHelper=new ShoppingHelper();
+    List<string> relatedCategorieIDs = shoppingHelper.GetRelatedCategoriesIDs();
     var shoppingItems = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
     foreach (var item in shoppingItems)
     {

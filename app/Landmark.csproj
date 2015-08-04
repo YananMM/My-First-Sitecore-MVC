@@ -128,6 +128,7 @@
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\ShoppingController.cs" />
     <Compile Include="Helper\LandmarkHelper.cs" />
+    <Compile Include="Helper\ShoppingHelper.cs" />
     <Compile Include="Helper\SitecoreFieldHelper.cs" />
     <Compile Include="Models\LandmarkModels.cs" />
     <Compile Include="Models\LandmarkSearchResultItem.cs" />
