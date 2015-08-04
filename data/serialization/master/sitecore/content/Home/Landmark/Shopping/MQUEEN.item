@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {7787A26D-769C-4AA7-9C4D-1BF9DE84EDF5}
+id: {ECFAA648-3559-48A5-BC46-DBBACBBC913C}
 database: master
-path: /sitecore/content/Home/Landmark/Shopping/ALEXANDRE
+path: /sitecore/content/Home/Landmark/Shopping/MQUEEN
 parent: {07A37ABC-D676-4737-8B14-79EC18486CE8}
-name: ALEXANDRE
+name: MQUEEN
 master: {00000000-0000-0000-0000-000000000000}
 template: {91A88069-9A0E-48B7-9509-BDE830A54D0E}
 templatekey: T14 Page
@@ -15,40 +15,33 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-163
+350
 ----version----
 language: en
 version: 1
-revision: 2849c243-2d3f-4c51-b789-7b05dc1a994a
+revision: c4870435-53b6-43c5-93b2-04b72325af9d
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
 name: Brand Title
 key: brand title
-content-length: 9
+content-length: 6
 
-ALEXANDRE
+MQUEEN
 ----field----
 field: {DDA15F2F-F719-4896-A8A7-2FC0FE5C5500}
 name: Brand Image
 key: brand image
 content-length: 227
 
-<image mediapath="/Images/Landmark/Brands/brand002" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Brands/brand002" mediaid="{378B1B20-6296-4B06-860D-18449853D271}" />
-----field----
-field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
-name: Buildings
-key: buildings
-content-length: 38
-
-{04AF3BF4-1C4D-43BC-9884-1431E3A44B11}
+<image mediapath="/Images/Landmark/Brands/brand001" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Brands/brand001" mediaid="{D35A8643-7790-4FBE-9646-31A7FA95C7C7}" />
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Title
 key: title
-content-length: 78
+content-length: 79
 
-Alexander McQueen is one of the most respected fashion designers in the world.
+Alexander McQueen is one of the most respected fashion designers in the world. 
 ----field----
 field: {682B1E90-3780-4EDD-87DF-C8D42F545759}
 name: Description
@@ -62,37 +55,86 @@ Alexander McQueen was founded in 1992 by Lee McQueen where in less than 10 years
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 9
+content-length: 6
 
-ALEXANDRE
+MQUEEN
 ----field----
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
 content-length: 116
 
-{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{01E67855-9741-4C1C-9FCD-2432982120B6}
+{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{01E67855-9741-4C1C-9FCD-2432982120B6}
+----field----
+field: {3EDE0B08-F7EE-4A8D-B59A-0C54A0E6B144}
+name: Opening Hours Label
+key: opening hours label
+content-length: 17
+
+ALEXANDER MCQUEEN
+----field----
+field: {3DED45C4-C26E-4498-9909-AB777C4D1244}
+name: Opening Hours
+key: opening hours
+content-length: 19
+
+Mon-Fri: 9:00-20:00
+----field----
+field: {C4C77DCE-BD77-4F57-8B15-88AD9F46F583}
+name: Closed Hours
+key: closed hours
+content-length: 20
+
+Sat-Sun: 9:00-22:00 
+----field----
+field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
+name: Contact
+key: contact
+content-length: 9
+
+2765 0220
+----field----
+field: {E70CEB6A-2078-418F-89A9-364EA0F6104D}
+name: Where
+key: where
+content-length: 30
+
+Shop 212, 2/F, LANDMARK ATRIUM
+----field----
+field: {929EBABD-362F-4028-A18C-031D98BCDDE3}
+name: Official Website Label
+key: official website label
+content-length: 15
+
+OFFCIAL WEBSITE
+----field----
+field: {BB1742D2-1AE1-4296-AF0F-39FBFB03DAAF}
+name: Official Website Url
+key: official website url
+content-length: 55
+
+<link linktype="external" url="http://www.baidu.com" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150803T093120Z
+20150804T033034Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-2849c243-2d3f-4c51-b789-7b05dc1a994a
+c4870435-53b6-43c5-93b2-04b72325af9d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150804T053351:635742632319879859Z
+20150804T053352:635742632322189991Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

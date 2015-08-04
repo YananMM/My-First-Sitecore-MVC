@@ -36,12 +36,12 @@
                                         </tr>
                                         <tr>
                                             <th>CONTACT</th>
-                                            <td>2765 0220</td>
+                                            <td>@Html.Sitecore().Field("Contact")</td>
                                         </tr>
                                         <tr>
                                             <th>WHERE</th>
                                             <td>
-                                                Shop 212, 2/F, LANDMARK ATRIUM<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="/en/t7/floorplan-0.png" data-lighttitle="PUT LIGHTBOX TITLE HERE">
+                                                @Html.Sitecore().Field("Where")<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="/en/t7/floorplan-0.png" data-lighttitle="PUT LIGHTBOX TITLE HERE">
                                                     <span class="icomoon-location2"></span> FLOOR PLAN
                                                 </a>
                                             </td>
@@ -49,8 +49,8 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <a href="#" class="gd-link-brief">
-                                OFFCIAL WEBSITE <span class="icomoon-chevron-small-right"></span>
+                            <a href="@Html.Sitecore().Field("Official Website Url")" class="gd-link-brief">
+                                @Html.Sitecore().Field("Official Website Label") <span class="icomoon-chevron-small-right"></span>
                             </a>
                             <div class="table-responsive gd-tg-table">
                                 <table>
