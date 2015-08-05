@@ -37,15 +37,15 @@ content-length: 227
 <image mediapath="/Images/Landmark/Brands/brand001" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Brands/brand001" mediaid="{D35A8643-7790-4FBE-9646-31A7FA95C7C7}" />
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
-name: Title
-key: title
+name: Content Title
+key: content title
 content-length: 79
 
 Alexander McQueen is one of the most respected fashion designers in the world. 
 ----field----
 field: {682B1E90-3780-4EDD-87DF-C8D42F545759}
-name: Description
-key: description
+name: Content Description
+key: content description
 content-length: 1056
 
 Alexander McQueen was founded in 1992 by Lee McQueen where in less than 10 years he became one of the most respected fashion designers in the world.
@@ -74,15 +74,15 @@ content-length: 17
 ALEXANDER MCQUEEN
 ----field----
 field: {3DED45C4-C26E-4498-9909-AB777C4D1244}
-name: Opening Hours
-key: opening hours
+name: Mon-Fri Opening Hours
+key: mon-fri opening hours
 content-length: 19
 
 Mon-Fri: 9:00-20:00
 ----field----
 field: {C4C77DCE-BD77-4F57-8B15-88AD9F46F583}
-name: Closed Hours
-key: closed hours
+name: Sat-Sun Opening Hours
+key: sat-sun opening hours
 content-length: 20
 
 Sat-Sun: 9:00-22:00 
