@@ -15,13 +15,7 @@ namespace Landmark.Service
 
         public void ProcessRequest(HttpContext context)
         {
-            context.Response.ContentType = "text/plain";
-            List<TextValue> firstCategory = shoppingHelper.GetFirstCategory();
-
-            JavaScriptSerializer js = new JavaScriptSerializer();
-
-            string strJSON = js.Serialize(firstCategory);
-            context.Response.Write(strJSON);
+            
         }
 
         public bool IsReusable
