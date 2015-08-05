@@ -4,6 +4,7 @@
     ShoppingHelper shoppingHelper = new ShoppingHelper();
     var slides = shoppingHelper.GetSlidesByTemplate(ItemGuids.ButtomSlideObjectTemplate);
 }
+
 <!-- Wrapper for slides -->
 <div class="carousel-inner" role="listbox">
     @slides.Count
@@ -13,9 +14,9 @@
         {
             <div @{ if (j == 0) { <text>
                  class="item active"
-                 </text>               } else { <text>
+                 </text>                } else { <text>
                  class="item"
-                 </text>               } }>
+                 </text>                } }>
                 @{
             j++;
                 }
@@ -53,7 +54,7 @@
             {
                 <li data-target="#gd-carousel-info" data-slide-to="@i" @{if (i == 0) { <text>
                     class="active"
-                    </text>                    }}>@(i + 1)</li>
+                    </text>                     }}>@(i + 1)</li>
             }
         </ol>
         <span class="gd-carousel-control gd-carousel-no">
