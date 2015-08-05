@@ -219,12 +219,14 @@ namespace Landmark.Helper
         }
 
 
-        public List<Item> GetT14Slides()
+        public List<Item> GetSlidesByTemplate(string templateId)
         {
             var item = Sitecore.Context.Item;
-            var query = string.Format("fast:{0}//*[{1}]", item.Paths.FullPath, "@@TemplateId='" + ItemGuids.T14SlideObjectTemplate + "'");
-            List<Item> T14SlidesItems = _webDb.SelectItems(query).ToList();
-            return T14SlidesItems;
+            var query = string.Format("fast:{0}//*[{1}]", item.Paths.FullPath, "@@TemplateId='" + templateId + "'");
+            List<Item> slidesItems = _webDb.SelectItems(query).ToList();
+            return slidesItems;
         }
+
+
     }
 }

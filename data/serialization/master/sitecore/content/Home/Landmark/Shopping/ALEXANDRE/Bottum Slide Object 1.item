@@ -12,7 +12,7 @@ templatekey: Bottum Slide Object
 ----version----
 language: en
 version: 1
-revision: 264186d3-85e6-4aca-ad0e-b4517a698c56
+revision: b8bb34c9-a9aa-4d11-a643-d98250584e3b
 
 ----field----
 field: {8B57098C-B649-4451-BC53-826ADF74B093}
@@ -32,9 +32,9 @@ Lorem ipsum dolor
 field: {38FD3ECE-AD65-415A-8A98-55DF10F9C5C9}
 name: Slide Description
 key: slide description
-content-length: 106
+content-length: 198
 
-Lorem ipsum dolor sit amet. Necessitatibus dolorum corrupti perferendis, eos iure sit neque tenetur saepe!
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eos saepe temporibus architecto magni neque eaque consequatur nesciunt harum laudantium saepe temporibus architecto magni neque eaque!
 ----field----
 field: {D9F38B1B-12F6-481A-89AF-1B194F186EC9}
 name: Slide Button Text
@@ -42,6 +42,13 @@ key: slide button text
 content-length: 13
 
 DISCOVER MORE
+----field----
+field: {5A72B837-38B6-4210-B49D-60DAF41BF19F}
+name: Slide Button Link
+key: slide button link
+content-length: 140
+
+<link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{2719E4F5-3E32-48DC-B49F-25E4AF9F2523}" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-264186d3-85e6-4aca-ad0e-b4517a698c56
+b8bb34c9-a9aa-4d11-a643-d98250584e3b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150805T021308:635743375886249422Z
+20150805T031055:635743410559532621Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

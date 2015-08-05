@@ -2,7 +2,7 @@
 @using Landmark.Helper
 @{
     ShoppingHelper shoppingHelper = new ShoppingHelper();
-        var slides = shoppingHelper.GetT14Slides();
+        var slides = shoppingHelper.GetSlidesByTemplate(ItemGuids.T14SlideObjectTemplate);
 }
 <!-- Indicators -->
 <ol class="carousel-indicators">
