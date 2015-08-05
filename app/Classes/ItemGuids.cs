@@ -66,6 +66,8 @@ namespace Landmark.Classes
         public static readonly Item SeeAlsoGuidItem = Sitecore.Context.Database.GetItem("{E9CD2E74-E53B-4711-9DB6-88D3DEFA14FC}");
         public static readonly Item ContactItem = Sitecore.Context.Database.GetItem("{D6F1BBEB-2483-44F1-A547-68D6AE8E2A51}");
         public static readonly Item WhereItem = Sitecore.Context.Database.GetItem("{C01AD804-C7C9-4791-8CFC-DA35B6D09179}");
+        public static readonly Item AlsoOnThisFloorItem = Sitecore.Context.Database.GetItem("{6C2FE71F-0F24-49BD-A345-7C98BDE4B249}");
+        public static readonly Item YouMayAlsoLikeItem = Sitecore.Context.Database.GetItem("{23815E63-F3F5-48BE-BBEA-5CA6D8CCFECA}");
 
     }
 }
