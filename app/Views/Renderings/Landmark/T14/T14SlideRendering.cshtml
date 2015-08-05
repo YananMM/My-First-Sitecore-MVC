@@ -2,58 +2,53 @@
 @using Landmark.Helper
 @{
     ShoppingHelper shoppingHelper = new ShoppingHelper();
-        var slides = shoppingHelper.GetSlidesByTemplate(ItemGuids.T14SlideObjectTemplate);
+    var slides = shoppingHelper.GetSlidesByTemplate(ItemGuids.T14SlideObjectTemplate);
 }
 <!-- Indicators -->
 <ol class="carousel-indicators">
-    @for(int i = 0;i<slides.Count;i++)
+    @for (int i = 0; i < slides.Count; i++)
     {
-    <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{if (i == 0) { <text>
-        class="active"
-        </text>        }}></li>
+        <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{if (i == 0) { <text>
+            class="active"
+            </text>            }}></li>
     }
 </ol>
 <!-- Wrapper for slides -->
 <div class="carousel-inner" role="listbox">
     @{
-        int j= 0;
+        int j = 0;
         foreach (var item in slides)
         {
-    <div @{ if (j == 0) { <text>
-         class="item active"
-         </text>    } else { <text>
-         class="item"
-         </text>    } }>
-        @{
+            <div @{ if (j == 0) { <text>
+                 class="item active"
+                 </text>        } else { <text>
+                 class="item"
+                 </text>        } }>
+                @{
             j++;
-        }
-        <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Slide Image", item)"></div>
-        <div class="carousel-caption">
-            <div class="carousel-caption-inner">
-                <div class="gd-carousel-detail">
-                    <div class="gd-mainimage-brief">
-                        @Html.Sitecore().Rendering(ItemGuids.T14ShopDataRenderingViewGuid, new
-            {
-                Cacheable = false,
-                CacheKey = "shopData",
-                Cache_VaryByData = true
-            })
-
-                        <div class="table-responsive gd-tg-table">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem)</th>
-                                        <td>MENS - CLOTHING, ACCESSORIES, COSMETICS, SKIN AND PERSONAL CARE, SHOES, WOMEN'S WEAR</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                }
+                <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Slide Image", item)"></div>
+                <div class="carousel-caption">
+                    <div class="carousel-caption-inner">
+                        <div class="gd-carousel-detail">
+                            <div class="gd-mainimage-brief">
+                                @Html.Sitecore().Rendering(ItemGuids.T14ShopDataRenderingViewGuid, new
+                                    {
+                                        Cacheable = false,
+                                        CacheKey = "shopData",
+                                        Cache_VaryByData = true
+                                    })
+                                @Html.Sitecore().Rendering(ItemGuids.T14TagsRenderingViewGuid, new
+                                    {
+                                        Cacheable = false,
+                                        CacheKey = "shop-tags",
+                                        Cache_VaryByData = true
+                                    })
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
         }
     }
 </div>

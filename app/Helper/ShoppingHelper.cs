@@ -4,7 +4,9 @@ using System.Linq;
 using System.Web;
 using Landmark.Classes;
 using Landmark.Models;
+using Sitecore.Collections;
 using Sitecore.Configuration;
+using Sitecore.ContentSearch.Utilities;
 using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
@@ -219,6 +221,11 @@ namespace Landmark.Helper
         }
 
 
+        /// <summary>
+        /// Gets the slides by template.
+        /// </summary>
+        /// <param name="templateId">The template unique identifier.</param>
+        /// <returns>List{Item}.</returns>
         public List<Item> GetSlidesByTemplate(string templateId)
         {
             var item = Sitecore.Context.Item;
@@ -227,6 +234,31 @@ namespace Landmark.Helper
             return slidesItems;
         }
 
-
+        public List<TagsTree> GetTagsTree()
+        {
+            List<TagsTree> tagsTrees = new List<TagsTree>();
+            List<Item> allSubTags = new ItemList();
+            MultilistField tagsField = Sitecore.Context.Item.Fields["Tags"];
+            if (tagsField != null)
+            {
+                allSubTags = tagsField.GetItems().ToList();
+                var tagGroups = allSubTags.GroupBy(p => p.ParentID).Select(p => new { id = p.Key, children = p }).ToList();
+                foreach (var item in tagGroups)
+                {
+                    TagsTree tagsTree = new TagsTree()
+                    {
+                        ID = item.id.ToString(),
+                        DisplayName = Sitecore.Context.Database.GetItem(item.id.ToString()).DisplayName,
+                        Children = item.children.Select(p => new TagsTree()
+                        {
+                            ID = p.ID.ToString(),
+                            DisplayName = p.DisplayName,
+                        }).ToList()
+                    };
+                    tagsTrees.Add(tagsTree);
+                }
+            }
+            return tagsTrees;
+        }
     }
 }
