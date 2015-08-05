@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {91A88069-9A0E-48B7-9509-BDE830A54D0E}
+id: {BCC31564-C738-41D5-ABA5-FD436557DF85}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T14 Page
-parent: {92EE2E2F-3AF3-4E3B-98AB-33DC20C2D966}
-name: T14 Page
+path: /sitecore/templates/User Defined/Landmark/Object/Bottum Slide Object
+parent: {CEB547EC-0F8A-4672-ABDC-37582EE88EE4}
+name: Bottum Slide Object
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
@@ -13,41 +13,20 @@ templatekey: Template
 field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
 name: __Base template
 key: __base template
-content-length: 155
-
-{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{2EE1034D-FA6F-4894-B5FD-AC31F548CE33}|{FE57AFD0-1D81-48B5-99D7-FAD3CB2B103B}|{4F401F16-FF51-4484-83FA-B905DAB54D97}
-----field----
-field: {F7D48A55-2158-4F02-9356-756654404F73}
-name: __Standard values
-key: __standard values
 content-length: 38
 
-{6B898E3D-3454-4A4B-9A75-6F8550F9DA69}
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 19
+content-length: 36
 
-Apps/32x32/Ball.png
-----field----
-field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
-name: __Masters
-key: __masters
-content-length: 38
-
-{E269FBB5-3750-427A-9149-7AA950B49301}
-----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 0
-
-
+SoftwareV2/32x32/photo_landscape.png
 ----version----
 language: en
 version: 1
-revision: bb1497d1-4760-40d7-ae2b-2461d4ed4dc2
+revision: 1b47b19c-6ae4-4575-9a97-fc55a66cef25
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -55,7 +34,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150721T074113Z
+20150805T015630Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -69,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bb1497d1-4760-40d7-ae2b-2461d4ed4dc2
+1b47b19c-6ae4-4575-9a97-fc55a66cef25
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150804T062654:635742664144940148Z
+20150805T020624:635743371845088281Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
