@@ -12,8 +12,15 @@ templatekey: T14 Slide Object
 ----version----
 language: en
 version: 1
-revision: 52258da2-cba0-4bdf-8fca-9254e7f51396
+revision: 5e65a77c-e3d9-4350-8f62-fdf61ec5514b
 
+----field----
+field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{8FC4B657-6E15-44AF-B791-92E8147AF60D}" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-52258da2-cba0-4bdf-8fca-9254e7f51396
+5e65a77c-e3d9-4350-8f62-fdf61ec5514b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150804T062921:635742665611644039Z
+20150806T063843:635744399233051511Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -12,8 +12,15 @@ templatekey: Bottum Slide Object
 ----version----
 language: en
 version: 1
-revision: 218c2fda-c1b8-4722-ab3f-332ddb567648
+revision: 373cb6e8-7082-4927-b6d7-da9a5986954e
 
+----field----
+field: {8B57098C-B649-4451-BC53-826ADF74B093}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{84D17535-3698-4635-A80B-97295E2AB1E4}" />
 ----field----
 field: {C51384B8-6AF1-4249-AB95-0692F4298974}
 name: Slide Title
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-218c2fda-c1b8-4722-ab3f-332ddb567648
+373cb6e8-7082-4927-b6d7-da9a5986954e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150805T081115:635743590753939151Z
+20150806T063649:635744398093806350Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
