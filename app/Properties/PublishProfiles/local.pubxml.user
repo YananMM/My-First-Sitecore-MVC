@@ -43,7 +43,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/26/2015 09:32:36</publishTime>
     </File>
     <File Include="App_Config/ConnectionStrings.config">
-      <publishTime>08/05/2015 17:21:11</publishTime>
+      <publishTime>08/06/2015 13:32:34</publishTime>
     </File>
     <File Include="App_Config/Include/Landmark.config">
       <publishTime>07/31/2015 09:30:37</publishTime>
@@ -58,7 +58,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/20/2015 12:57:50</publishTime>
     </File>
     <File Include="bin/Landmark.dll">
-      <publishTime>08/06/2015 10:18:04</publishTime>
+      <publishTime>08/06/2015 13:49:12</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>03/30/2015 10:02:30</publishTime>
@@ -142,25 +142,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/26/2015 09:32:58</publishTime>
     </File>
     <File Include="files/landmark/fonts/bertholdakzidenzgroteskbelight.ttf">
-      <publishTime>03/30/2015 09:55:50</publishTime>
+      <publishTime>03/26/2015 09:32:59</publishTime>
     </File>
     <File Include="files/landmark/fonts/bertholdakzidenzgroteskbelight.woff">
-      <publishTime>03/30/2015 09:55:50</publishTime>
+      <publishTime>03/26/2015 09:32:58</publishTime>
     </File>
     <File Include="files/landmark/fonts/bertholdakzidenzgroteskbelight.woff2">
-      <publishTime>03/30/2015 09:55:50</publishTime>
+      <publishTime>03/26/2015 09:32:58</publishTime>
     </File>
     <File Include="files/landmark/fonts/glyphicons-halflings-regular.eot">
-      <publishTime>03/30/2015 09:55:50</publishTime>
+      <publishTime>03/26/2015 09:32:59</publishTime>
     </File>
     <File Include="files/landmark/fonts/glyphicons-halflings-regular.svg">
       <publishTime>03/26/2015 09:32:58</publishTime>
     </File>
     <File Include="files/landmark/fonts/glyphicons-halflings-regular.ttf">
-      <publishTime>03/30/2015 09:55:50</publishTime>
+      <publishTime>03/26/2015 09:32:58</publishTime>
     </File>
     <File Include="files/landmark/fonts/glyphicons-halflings-regular.woff">
-      <publishTime>03/30/2015 09:55:50</publishTime>
+      <publishTime>03/26/2015 09:32:58</publishTime>
     </File>
     <File Include="files/landmark/fonts/icomoon.eot">
       <publishTime>07/21/2015 15:46:36</publishTime>
@@ -175,13 +175,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/21/2015 15:46:36</publishTime>
     </File>
     <File Include="files/landmark/images/black-50.png">
-      <publishTime>03/30/2015 09:55:50</publishTime>
+      <publishTime>03/26/2015 09:32:39</publishTime>
     </File>
     <File Include="files/landmark/images/black-80.png">
-      <publishTime>03/30/2015 09:55:50</publishTime>
+      <publishTime>03/26/2015 09:32:39</publishTime>
     </File>
     <File Include="files/landmark/images/blank.png">
-      <publishTime>03/30/2015 09:55:50</publishTime>
+      <publishTime>03/26/2015 09:32:38</publishTime>
     </File>
     <File Include="files/landmark/images/brands/brand-001-o.png">
       <publishTime>03/30/2015 09:55:50</publishTime>
@@ -247,10 +247,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/30/2015 09:55:50</publishTime>
     </File>
     <File Include="files/landmark/images/home-gradient1.png">
-      <publishTime>03/30/2015 09:55:50</publishTime>
+      <publishTime>03/26/2015 09:32:50</publishTime>
     </File>
     <File Include="files/landmark/images/home-gradient2.png">
-      <publishTime>03/30/2015 09:55:50</publishTime>
+      <publishTime>03/26/2015 09:32:50</publishTime>
     </File>
     <File Include="files/landmark/images/instagram/instagram-001.jpg">
       <publishTime>03/30/2015 09:55:50</publishTime>
@@ -286,13 +286,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/30/2015 09:55:50</publishTime>
     </File>
     <File Include="files/landmark/images/logo%402x.png">
-      <publishTime>03/30/2015 09:55:50</publishTime>
+      <publishTime>03/26/2015 09:32:50</publishTime>
     </File>
     <File Include="files/landmark/images/logo-footer.png">
-      <publishTime>03/30/2015 09:55:50</publishTime>
+      <publishTime>03/26/2015 09:32:39</publishTime>
     </File>
     <File Include="files/landmark/images/logo-img.png">
-      <publishTime>03/30/2015 09:55:50</publishTime>
+      <publishTime>03/26/2015 09:32:50</publishTime>
     </File>
     <File Include="files/landmark/images/men/logo-landmark-men.png">
       <publishTime>03/30/2015 09:55:50</publishTime>
@@ -312,8 +312,11 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="files/landmark/images/men/men-005.jpg">
       <publishTime>03/30/2015 09:55:50</publishTime>
     </File>
+    <File Include="files/landmark/images/more.gif">
+      <publishTime>07/21/2015 15:46:48</publishTime>
+    </File>
     <File Include="files/landmark/images/portrait_only.gif">
-      <publishTime>03/30/2015 09:55:50</publishTime>
+      <publishTime>03/26/2015 09:32:37</publishTime>
     </File>
     <File Include="files/landmark/images/product-img/main-001.jpg">
       <publishTime>03/30/2015 09:55:50</publishTime>
@@ -364,19 +367,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/30/2015 09:55:51</publishTime>
     </File>
     <File Include="files/landmark/images/sprite%402x.png">
-      <publishTime>03/30/2015 09:55:51</publishTime>
+      <publishTime>03/26/2015 09:32:36</publishTime>
     </File>
     <File Include="files/landmark/images/sprite-ie.png">
-      <publishTime>03/30/2015 09:55:51</publishTime>
+      <publishTime>03/26/2015 09:32:39</publishTime>
     </File>
     <File Include="files/landmark/images/sprite.png">
       <publishTime>03/30/2015 09:55:51</publishTime>
     </File>
     <File Include="files/landmark/images/sprite/icon-scroll.png">
-      <publishTime>03/30/2015 09:55:51</publishTime>
+      <publishTime>03/26/2015 09:32:36</publishTime>
     </File>
     <File Include="files/landmark/images/sprite/icon-search.png">
-      <publishTime>03/30/2015 09:55:51</publishTime>
+      <publishTime>03/26/2015 09:32:36</publishTime>
     </File>
     <File Include="files/landmark/images/Thumbs.db">
       <publishTime>03/30/2015 09:55:50</publishTime>
@@ -388,7 +391,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/30/2015 09:55:51</publishTime>
     </File>
     <File Include="files/landmark/images/title-arrow2.png">
-      <publishTime>03/30/2015 09:55:51</publishTime>
+      <publishTime>03/26/2015 09:32:38</publishTime>
     </File>
     <File Include="files/landmark/js/html5shiv-printshiv.min.js">
       <publishTime>03/26/2015 09:33:00</publishTime>
@@ -409,13 +412,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/26/2015 09:33:01</publishTime>
     </File>
     <File Include="files/landmark/js/lib/jquery-1.9.0.js">
-      <publishTime>03/30/2015 09:55:51</publishTime>
+      <publishTime>03/26/2015 09:33:01</publishTime>
     </File>
     <File Include="files/landmark/js/lib/jquery-1.9.0.min.js">
-      <publishTime>03/30/2015 09:55:51</publishTime>
+      <publishTime>03/26/2015 09:33:01</publishTime>
     </File>
     <File Include="files/landmark/js/lib/jquery-2.0.3.min.js">
-      <publishTime>03/30/2015 09:55:51</publishTime>
+      <publishTime>03/26/2015 09:33:01</publishTime>
     </File>
     <File Include="files/landmark/js/lib/jquery-migrate-1.2.1.js">
       <publishTime>03/26/2015 09:33:01</publishTime>
@@ -436,10 +439,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/26/2015 09:33:01</publishTime>
     </File>
     <File Include="files/landmark/js/lib/jquery.fitvids.min.js">
-      <publishTime>03/30/2015 09:55:51</publishTime>
+      <publishTime>03/26/2015 09:33:01</publishTime>
     </File>
     <File Include="files/landmark/js/lib/jquery.fullPage.js">
-      <publishTime>03/30/2015 09:55:51</publishTime>
+      <publishTime>03/26/2015 09:33:01</publishTime>
     </File>
     <File Include="files/landmark/js/lib/jquery.lazyloadxt.bg.min.js">
       <publishTime>03/26/2015 09:33:01</publishTime>
@@ -457,10 +460,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/26/2015 09:33:01</publishTime>
     </File>
     <File Include="files/landmark/js/lib/jquery.scrollTo.min.js">
-      <publishTime>03/30/2015 09:55:51</publishTime>
+      <publishTime>03/26/2015 09:33:01</publishTime>
     </File>
     <File Include="files/landmark/js/lib/jquery.touchSwipe.min.js">
-      <publishTime>03/30/2015 09:55:51</publishTime>
+      <publishTime>03/26/2015 09:33:00</publishTime>
     </File>
     <File Include="files/landmark/js/lib/masonry.pkgd.min.js">
       <publishTime>03/26/2015 09:33:00</publishTime>
@@ -1147,7 +1150,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/26/2015 09:33:01</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>08/06/2015 10:11:30</publishTime>
+      <publishTime>08/06/2015 13:37:06</publishTime>
     </File>
     <File Include="packages/bootstrap.3.0.0/bootstrap.3.0.0.nupkg">
       <publishTime>03/30/2015 10:00:01</publishTime>
@@ -1285,7 +1288,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/30/2015 10:02:04</publishTime>
     </File>
     <File Include="Properties/SlowCheetah/SlowCheetah.Transforms.targets">
-      <publishTime>08/05/2015 09:52:34</publishTime>
+      <publishTime>08/06/2015 13:37:06</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>03/30/2015 09:55:49</publishTime>
@@ -1564,7 +1567,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/30/2015 09:55:50</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/06/2015 10:15:58</publishTime>
+      <publishTime>08/06/2015 13:49:14</publishTime>
     </File>
   </ItemGroup>
 </Project>
