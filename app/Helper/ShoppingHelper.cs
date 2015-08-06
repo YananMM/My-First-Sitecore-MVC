@@ -247,18 +247,44 @@ namespace Landmark.Helper
                 {
                     TagsTree tagsTree = new TagsTree()
                     {
-                        ID = item.id.ToString(),
-                        DisplayName = Sitecore.Context.Database.GetItem(item.id.ToString()).DisplayName,
+                        CurrentItem = Sitecore.Context.Database.GetItem(item.id.ToString()),
                         Children = item.children.Select(p => new TagsTree()
                         {
-                            ID = p.ID.ToString(),
-                            DisplayName = p.DisplayName,
+                            CurrentItem = Sitecore.Context.Database.GetItem(p.ID.ToString()),
                         }).ToList()
                     };
                     tagsTrees.Add(tagsTree);
                 }
             }
             return tagsTrees;
+        }
+
+        public Item GetShopPageByTag(string tagId)
+        {
+            var tag = Sitecore.Context.Database.GetItem(tagId);
+            var shoppingPages = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
+
+            //allShoppingPages 包括shopping page 和shopping sub page
+            List<Item> allShoppingPages = new ItemList();
+            allShoppingPages.AddRange(shoppingPages);
+            foreach (var item in shoppingPages)
+            {
+                if (item.Children.Count != 0)
+                {
+                    allShoppingPages.AddRange(item.Children);
+                }
+            }
+            if (allShoppingPages.Count != 0)
+            {
+                foreach (var item in allShoppingPages)
+                {
+                    if (item.DisplayName == tag.DisplayName)
+                    {
+                        return item;
+                    }
+                }
+            }
+            return null;
         }
     }
 }
