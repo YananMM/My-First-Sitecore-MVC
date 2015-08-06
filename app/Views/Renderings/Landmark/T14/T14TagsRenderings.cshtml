@@ -17,10 +17,20 @@
                     @foreach (var item in tagsTrees)
                     {
                         <div>
-                            <a href="@Sitecore.Links.LinkManager.GetItemUrl(item.CurrentItem)">@item.CurrentItem["Category Name"] - </a>
+                            @{
+                                var shopPage = shoppingHelper.GetShopPageByTag(item.CurrentItem.ID.ToString());
+                                if (shopPage != null)
+                                {
+                                    <a href="@Sitecore.Links.LinkManager.GetItemUrl(shopPage)">@item.CurrentItem["Category Name"] - </a>
+                                }
+                            }
+
                             @foreach (var it in item.Children)
                             {
-                                <a href="@Sitecore.Links.LinkManager.GetItemUrl(it.CurrentItem)">@it.CurrentItem["Category Name"],</a>
+                                var subPage = shoppingHelper.GetShopPageByTag(it.CurrentItem.ID.ToString());
+                                if (subPage != null)
+                                {
+                                    <a href="@Sitecore.Links.LinkManager.GetItemUrl(subPage.Children.First())">@it.CurrentItem["Category Name"],</a>}
                             }
                         </div>
                     }

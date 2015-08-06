@@ -21,10 +21,6 @@ namespace Landmark.Models
 
     public class TagsTree
     {
-        public string ID { get; set; }
-
-        public string DisplayName { get; set; }
-
         public Item CurrentItem { get; set; }
 
         public List<TagsTree> Children { get; set; }

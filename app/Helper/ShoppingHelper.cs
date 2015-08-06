@@ -258,5 +258,33 @@ namespace Landmark.Helper
             }
             return tagsTrees;
         }
+
+        public Item GetShopPageByTag(string tagId)
+        {
+            var tag = Sitecore.Context.Database.GetItem(tagId);
+            var shoppingPages = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
+
+            //allShoppingPages 包括shopping page 和shopping sub page
+            List<Item> allShoppingPages = new ItemList();
+            allShoppingPages.AddRange(shoppingPages);
+            foreach (var item in shoppingPages)
+            {
+                if (item.Children.Count != 0)
+                {
+                    allShoppingPages.AddRange(item.Children);
+                }
+            }
+            if (allShoppingPages.Count != 0)
+            {
+                foreach (var item in allShoppingPages)
+                {
+                    if (item.DisplayName == tag.DisplayName)
+                    {
+                        return item;
+                    }
+                }
+            }
+            return null;
+        }
     }
 }
