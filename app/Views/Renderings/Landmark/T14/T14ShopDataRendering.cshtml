@@ -3,8 +3,12 @@
 @using Landmark.Models
 @using Sitecore.Configuration
 @using Sitecore.Data
+@using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @model RenderingModel
+@{
+    ShoppingHelper shoppingHelper = new ShoppingHelper();
+}
 
 <h2>@Html.Sitecore().Field("Brand Title")</h2>
 <div class="table-responsive gd-mainimage-table">
@@ -19,12 +23,15 @@
             </tr>
             <tr>
                 <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.ContactItem) </th>
-                <td>@Html.Sitecore().Field("Contact")</td> 
+                <td>@Html.Sitecore().Field("Contact")</td>
             </tr>
             <tr>
                 <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.WhereItem) </th>
                 <td>
-                    @Html.Sitecore().Field("Where")<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="/en/t7/floorplan-0.png" data-lighttitle="@Html.Sitecore().Field("Description")">
+                    @{
+                        var floor = shoppingHelper.GetShopFloor();
+                    }
+                    @Html.Sitecore().Field("Area"),@floor["Floor Title"],@floor.Parent["Buiding Title"]<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image",floor)" data-lighttitle="@Html.Sitecore().Field("Description")">
                         <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.FloorPlanItem)
                     </a>
                 </td>

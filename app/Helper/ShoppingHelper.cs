@@ -259,6 +259,11 @@ namespace Landmark.Helper
             return tagsTrees;
         }
 
+        /// <summary>
+        /// Gets the shop page by tag.
+        /// </summary>
+        /// <param name="tagId">The tag unique identifier.</param>
+        /// <returns>Item.</returns>
         public Item GetShopPageByTag(string tagId)
         {
             var tag = Sitecore.Context.Database.GetItem(tagId);
@@ -283,6 +288,22 @@ namespace Landmark.Helper
                         return item;
                     }
                 }
+            }
+            return null;
+        }
+
+        /// <summary>
+        /// Gets the shop floor.
+        /// </summary>
+        /// <returns>Item.</returns>
+        public Item GetShopFloor()
+        {
+            Item item = Sitecore.Context.Item;
+            MultilistField floorField = item.Fields["Floor"];
+            if (floorField != null)
+            {
+                Item floor = Sitecore.Context.Database.GetItem(floorField.TargetIDs.First());
+                return floor;
             }
             return null;
         }
