@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {53A23469-1137-4D07-A751-1EF476D514FC}
+database: master
+path: /sitecore/content/Home/Landmark/Shopping/ALEXANDRE/Bottum Slide Object 2
+parent: {7787A26D-769C-4AA7-9C4D-1BF9DE84EDF5}
+name: Bottum Slide Object 2
+master: {00000000-0000-0000-0000-000000000000}
+template: {BCC31564-C738-41D5-ABA5-FD436557DF85}
+templatekey: Bottum Slide Object
+
+----version----
+language: en
+version: 1
+revision: 218c2fda-c1b8-4722-ab3f-332ddb567648
+
+----field----
+field: {C51384B8-6AF1-4249-AB95-0692F4298974}
+name: Slide Title
+key: slide title
+content-length: 17
+
+Lorem ipsum dolor
+----field----
+field: {38FD3ECE-AD65-415A-8A98-55DF10F9C5C9}
+name: Slide Description
+key: slide description
+content-length: 198
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eos saepe temporibus architecto magni neque eaque consequatur nesciunt harum laudantium saepe temporibus architecto magni neque eaque!
+----field----
+field: {D9F38B1B-12F6-481A-89AF-1B194F186EC9}
+name: Slide Button Text
+key: slide button text
+content-length: 13
+
+DISCOVER MORE
+----field----
+field: {5A72B837-38B6-4210-B49D-60DAF41BF19F}
+name: Slide Button Link
+key: slide button link
+content-length: 140
+
+<link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{2719E4F5-3E32-48DC-B49F-25E4AF9F2523}" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150805T021009Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+218c2fda-c1b8-4722-ab3f-332ddb567648
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150805T081115:635743590753939151Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

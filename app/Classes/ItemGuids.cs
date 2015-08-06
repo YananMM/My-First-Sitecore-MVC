@@ -24,6 +24,8 @@ namespace Landmark.Classes
         public static readonly String ByBuildingsRenderingViewGuid = "{B08E278B-BF3C-4994-A65D-D764193C6447}";
         public static readonly String T13SideBarRenderingViewGuid = "{A88DF21E-E1DB-408B-9BC5-14F36C83513D}";
         public static readonly String T13RelatedCategoryViewGuid = "{E12C109C-E610-4CB3-BA45-003C92C3FF96}";
+        public static readonly String T14ShopDataRenderingViewGuid = "{CCD0CC2A-56DD-4990-9395-560FA0F62D7B}";
+        public static readonly String T14TagsRenderingViewGuid = "{303EA462-99C6-447B-B3AA-C4F4F0441549}";
 
         //item id
         //public static readonly String PanelsFolderItemGuid = "{3BB40D54-8F7F-449B-B9DB-432C65EB4224}";
@@ -42,6 +44,8 @@ namespace Landmark.Classes
         public static readonly String AllByBuildingsPage = "{3FAF2834-AF45-4CD7-BF22-6EEBCA0894C1}";
         public static readonly String ShoppingSubCategoryPageObject = "{11D18D8C-A8E3-4A15-A295-DAE23894A0AE}";
         public static readonly String CategoryObjectTemplate = "{753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}";
+        public static readonly String T14SlideObjectTemplate = "{FFC1447C-5F42-4419-AEF4-6175FB69507C}";
+        public static readonly String ButtomSlideObjectTemplate = "{BCC31564-C738-41D5-ABA5-FD436557DF85}";
 
         //item 
         public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}");
@@ -61,7 +65,14 @@ namespace Landmark.Classes
         public static readonly Item GoGuidItem = Sitecore.Context.Database.GetItem("{EB7EDF9B-07D2-4CD9-8B21-AF7A15800F98}");
         public static readonly Item GoToGuidItem = Sitecore.Context.Database.GetItem("{6A742FAE-6615-4BE5-A8A9-4471DFDC60E5}");
         public static readonly Item SeeAlsoGuidItem = Sitecore.Context.Database.GetItem("{E9CD2E74-E53B-4711-9DB6-88D3DEFA14FC}");
+        public static readonly Item ContactItem = Sitecore.Context.Database.GetItem("{D6F1BBEB-2483-44F1-A547-68D6AE8E2A51}");
+        public static readonly Item WhereItem = Sitecore.Context.Database.GetItem("{C01AD804-C7C9-4791-8CFC-DA35B6D09179}");
+        public static readonly Item AlsoOnThisFloorItem = Sitecore.Context.Database.GetItem("{6C2FE71F-0F24-49BD-A345-7C98BDE4B249}");
+        public static readonly Item YouMayAlsoLikeItem = Sitecore.Context.Database.GetItem("{23815E63-F3F5-48BE-BBEA-5CA6D8CCFECA}");
+        public static readonly Item TagsItem = Sitecore.Context.Database.GetItem("{B05FA79E-B0AC-4D78-9175-ADA8305B5B5B}");
+        public static readonly Item FloorPlanItem = Sitecore.Context.Database.GetItem("{B6888C19-B10C-4662-8E41-7AC2CCE8419A}");
 
-
+        public static readonly Item RealatedArticlesItem =
+            Sitecore.Context.Database.GetItem("{70032C39-DB3A-42F1-91FC-9D85BE84A3F7}");
     }
 }

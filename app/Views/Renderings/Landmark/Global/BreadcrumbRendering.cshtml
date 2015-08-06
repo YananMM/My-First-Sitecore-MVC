@@ -13,11 +13,22 @@
         currentPage = currentPage.Parent;
     }
     items.Reverse();
-    for (int i = 0; i < 3; i++)
+    if (items.Count >= 3)
     {
-        breadcrumbs.Add(items[i]);
+        for (int i = 0; i < 3; i++)
+        {
+            breadcrumbs.Add(items[i]);
+        }
     }
-    
+    else
+    {
+        for (int i = 0; i < items.Count; i++)
+        {
+            breadcrumbs.Add(items[i]);
+        }
+    }
+
+
 }
 
 <ol class="breadcrumb">

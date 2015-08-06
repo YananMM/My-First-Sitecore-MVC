@@ -19,15 +19,15 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: bd71c54b-8780-45ff-bdf5-11af0593de62
+revision: e6577769-56a6-4742-b47c-61e45e3bd0f7
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
 name: Brand Title
 key: brand title
-content-length: 9
+content-length: 17
 
-ALEXANDRE
+ALEXANDRE MCQUEEN
 ----field----
 field: {DDA15F2F-F719-4896-A8A7-2FC0FE5C5500}
 name: Brand Image
@@ -44,19 +44,20 @@ content-length: 38
 {04AF3BF4-1C4D-43BC-9884-1431E3A44B11}
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
-name: Title
-key: title
+name: Content Title
+key: content title
 content-length: 78
 
 Alexander McQueen is one of the most respected fashion designers in the world.
 ----field----
 field: {682B1E90-3780-4EDD-87DF-C8D42F545759}
-name: Description
-key: description
-content-length: 1048
+name: Content Description
+key: content description
+content-length: 1056
 
-<p>Alexander McQueen was founded in 1992 by Lee McQueen where in less than 10 years he became one of the most respected fashion designers in the world. Alexander McQueen shows are known for their emotional power and raw energy, as well as the romantic but determinedly contemporary nature of the collections. Integral to the McQueen culture is the juxtaposition between contrasting elements: fragility and strength, tradition and modernity, fluidity and severity. An openly emotional and even passionate viewpoint is realised with a profound respect and influence for the arts and crafts tradition. McQueen&rsquo;s collections combine an in-depth working knowledge of bespoke British tailoring, fine workmanship and the impeccable finish of Italian manufacturing. Sarah Burton joined the company in 1996 and was made Head of Womenswear design in 2000. Burton worked alongside Lee McQueen for more than 14 years and was subsequently appointed Creative Director of the brand in May 2010 following the passing of Lee McQueen in February 2010.</p>
-<br>
+Alexander McQueen was founded in 1992 by Lee McQueen where in less than 10 years he became one of the most respected fashion designers in the world.
+            Alexander McQueen shows are known for their emotional power and raw energy, as well as the romantic but determinedly contemporary nature of the collections. Integral to the McQueen culture is the juxtaposition between contrasting elements: fragility and strength, tradition and modernity, fluidity and severity. An openly emotional and even passionate viewpoint is realised with a profound respect and influence for the arts and crafts tradition. McQueen’s collections combine an in-depth working knowledge of bespoke British tailoring, fine workmanship and the impeccable finish of Italian manufacturing.
+            Sarah Burton joined the company in 1996 and was made Head of Womenswear design in 2000. Burton worked alongside Lee McQueen for more than 14 years and was subsequently appointed Creative Director of the brand in May 2010 following the passing of Lee McQueen in February 2010.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -64,6 +65,13 @@ key: page title
 content-length: 9
 
 ALEXANDRE
+----field----
+field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
+name: Tags
+key: tags
+content-length: 116
+
+{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{01E67855-9741-4C1C-9FCD-2432982120B6}
 ----field----
 field: {3EDE0B08-F7EE-4A8D-B59A-0C54A0E6B144}
 name: Opening Hours Label
@@ -73,15 +81,15 @@ content-length: 13
 OPENING HOURS
 ----field----
 field: {3DED45C4-C26E-4498-9909-AB777C4D1244}
-name: Opening Hours
-key: opening hours
+name: Mon-Fri Opening Hours
+key: mon-fri opening hours
 content-length: 19
 
 Mon-Fri: 9:00-20:00
 ----field----
 field: {C4C77DCE-BD77-4F57-8B15-88AD9F46F583}
-name: Closed Hours
-key: closed hours
+name: Sat-Sun Opening Hours
+key: sat-sun opening hours
 content-length: 19
 
 Sat-Sun: 9:00-22:00
@@ -93,12 +101,19 @@ content-length: 9
 
 2765 0220
 ----field----
+field: {929EBABD-362F-4028-A18C-031D98BCDDE3}
+name: Official Website Label
+key: official website label
+content-length: 15
+
+OFFCIAL WEBSITE
+----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
 key: floor
-content-length: 38
+content-length: 0
 
-{BDA32531-667F-420C-881F-4550CD6E755E}
+
 ----field----
 field: {5350FA4D-170D-4926-8B21-97068A9C599F}
 name: Area
@@ -110,23 +125,9 @@ Shop 212
 field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
 name: Description
 key: description
-content-length: 24
+content-length: 8
 
-F0 SHOP DESCRIPTION HERE
-----field----
-field: {8B055347-174E-4D86-8B2D-22ACFAB67D14}
-name: LocationX
-key: locationx
-content-length: 6
-
-0.2012
-----field----
-field: {624D2412-1023-406B-9A02-A915293A6BA6}
-name: LocationY
-key: locationy
-content-length: 6
-
-0.3180
+Shop 212
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -140,14 +141,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bd71c54b-8780-45ff-bdf5-11af0593de62
+e6577769-56a6-4742-b47c-61e45e3bd0f7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150804T054353Z
+20150805T073813:635743570934605550Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

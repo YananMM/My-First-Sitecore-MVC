@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {E70CEB6A-2078-418F-89A9-364EA0F6104D}
+id: {38FD3ECE-AD65-415A-8A98-55DF10F9C5C9}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Brand Object/Shop Data/Where
-parent: {81C5DAD4-A26D-454D-A495-6170B345B163}
-name: Where
+path: /sitecore/templates/User Defined/Landmark/Object/Bottum Slide Object/Bottum Silde Data/Slide Description
+parent: {016D4909-AC21-44FF-98FF-DACC50BE1E3B}
+name: Slide Description
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,20 +13,20 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 16
+content-length: 9
 
-Single-Line Text
+Rich Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
-content-length: 3
+content-length: 4
 
-600
+1000
 ----version----
 language: en
 version: 1
-revision: eb523451-e70f-4b12-ab3f-c135a81f1f45
+revision: 50a1954a-5151-4d71-a3b4-48796cbda541
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150804T003248Z
+20150805T020624Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-eb523451-e70f-4b12-ab3f-c135a81f1f45
+50a1954a-5151-4d71-a3b4-48796cbda541
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150804T032422Z
+20150805T080957:635743589977314731Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

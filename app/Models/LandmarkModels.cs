@@ -19,4 +19,12 @@ namespace Landmark.Models
         public Item BrandItem { get; set; }
     }
 
+    public class TagsTree
+    {
+        public string ID { get; set; }
+
+        public string DisplayName { get; set; }
+
+        public List<TagsTree> Children { get; set; }
+    }
 }

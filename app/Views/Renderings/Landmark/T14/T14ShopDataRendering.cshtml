@@ -1,0 +1,37 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Landmark.Models
+@using Sitecore.Configuration
+@using Sitecore.Data
+@using Sitecore.Data.Items
+@model RenderingModel
+
+<h2>@Html.Sitecore().Field("Brand Title")</h2>
+<div class="table-responsive gd-mainimage-table">
+    <table>
+        <tbody>
+            <tr>
+                <th>@Html.Sitecore().Field("Opening Hours Label")</th>
+                <td>
+                    @Html.Sitecore().Field("Mon-Fri Opening Hours")<br>
+                    @Html.Sitecore().Field("Sat-Sun Opening Hours")
+                </td>
+            </tr>
+            <tr>
+                <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.ContactItem) </th>
+                <td>@Html.Sitecore().Field("Contact")</td> 
+            </tr>
+            <tr>
+                <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.WhereItem) </th>
+                <td>
+                    @Html.Sitecore().Field("Where")<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="/en/t7/floorplan-0.png" data-lighttitle="@Html.Sitecore().Field("Description")">
+                        <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.FloorPlanItem)
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<a href="@Html.Sitecore().Field("Official Website Url")" class="gd-link-brief">
+    @Html.Sitecore().Field("Official Website Label") <span class="icomoon-chevron-small-right"></span>
+</a>

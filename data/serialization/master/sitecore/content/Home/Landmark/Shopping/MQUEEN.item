@@ -1,0 +1,144 @@
+----item----
+version: 1
+id: {ECFAA648-3559-48A5-BC46-DBBACBBC913C}
+database: master
+path: /sitecore/content/Home/Landmark/Shopping/MQUEEN
+parent: {07A37ABC-D676-4737-8B14-79EC18486CE8}
+name: MQUEEN
+master: {00000000-0000-0000-0000-000000000000}
+template: {91A88069-9A0E-48B7-9509-BDE830A54D0E}
+templatekey: T14 Page
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+350
+----version----
+language: en
+version: 1
+revision: c4870435-53b6-43c5-93b2-04b72325af9d
+
+----field----
+field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
+name: Brand Title
+key: brand title
+content-length: 6
+
+MQUEEN
+----field----
+field: {DDA15F2F-F719-4896-A8A7-2FC0FE5C5500}
+name: Brand Image
+key: brand image
+content-length: 227
+
+<image mediapath="/Images/Landmark/Brands/brand001" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Brands/brand001" mediaid="{D35A8643-7790-4FBE-9646-31A7FA95C7C7}" />
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 79
+
+Alexander McQueen is one of the most respected fashion designers in the world. 
+----field----
+field: {682B1E90-3780-4EDD-87DF-C8D42F545759}
+name: Content Description
+key: content description
+content-length: 1056
+
+Alexander McQueen was founded in 1992 by Lee McQueen where in less than 10 years he became one of the most respected fashion designers in the world.
+            Alexander McQueen shows are known for their emotional power and raw energy, as well as the romantic but determinedly contemporary nature of the collections. Integral to the McQueen culture is the juxtaposition between contrasting elements: fragility and strength, tradition and modernity, fluidity and severity. An openly emotional and even passionate viewpoint is realised with a profound respect and influence for the arts and crafts tradition. McQueen’s collections combine an in-depth working knowledge of bespoke British tailoring, fine workmanship and the impeccable finish of Italian manufacturing.
+            Sarah Burton joined the company in 1996 and was made Head of Womenswear design in 2000. Burton worked alongside Lee McQueen for more than 14 years and was subsequently appointed Creative Director of the brand in May 2010 following the passing of Lee McQueen in February 2010.
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 6
+
+MQUEEN
+----field----
+field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
+name: Tags
+key: tags
+content-length: 116
+
+{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{01E67855-9741-4C1C-9FCD-2432982120B6}
+----field----
+field: {3EDE0B08-F7EE-4A8D-B59A-0C54A0E6B144}
+name: Opening Hours Label
+key: opening hours label
+content-length: 17
+
+ALEXANDER MCQUEEN
+----field----
+field: {3DED45C4-C26E-4498-9909-AB777C4D1244}
+name: Mon-Fri Opening Hours
+key: mon-fri opening hours
+content-length: 19
+
+Mon-Fri: 9:00-20:00
+----field----
+field: {C4C77DCE-BD77-4F57-8B15-88AD9F46F583}
+name: Sat-Sun Opening Hours
+key: sat-sun opening hours
+content-length: 20
+
+Sat-Sun: 9:00-22:00 
+----field----
+field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
+name: Contact
+key: contact
+content-length: 9
+
+2765 0220
+----field----
+field: {E70CEB6A-2078-418F-89A9-364EA0F6104D}
+name: Where
+key: where
+content-length: 30
+
+Shop 212, 2/F, LANDMARK ATRIUM
+----field----
+field: {929EBABD-362F-4028-A18C-031D98BCDDE3}
+name: Official Website Label
+key: official website label
+content-length: 15
+
+OFFCIAL WEBSITE
+----field----
+field: {BB1742D2-1AE1-4296-AF0F-39FBFB03DAAF}
+name: Official Website Url
+key: official website url
+content-length: 55
+
+<link linktype="external" url="http://www.baidu.com" />
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150804T033034Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c4870435-53b6-43c5-93b2-04b72325af9d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150804T053352:635742632322189991Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

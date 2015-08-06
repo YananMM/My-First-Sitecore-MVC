@@ -2,9 +2,9 @@
 version: 1
 id: {C4C77DCE-BD77-4F57-8B15-88AD9F46F583}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Brand Object/Shop Data/Closed Hours
+path: /sitecore/templates/User Defined/Landmark/Object/Brand Object/Shop Data/Sat-Sun Opening Hours
 parent: {81C5DAD4-A26D-454D-A495-6170B345B163}
-name: Closed Hours
+name: Sat-Sun Opening Hours
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -26,7 +26,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: fcaf0f54-2ea6-4a4f-ab9e-6ac9701c1c3a
+revision: 4ffec7da-7643-4398-afed-7695fa1ded03
 
 ----field----
 field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fcaf0f54-2ea6-4a4f-ab9e-6ac9701c1c3a
+4ffec7da-7643-4398-afed-7695fa1ded03
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150804T032422Z
+20150805T070722:635743552426686958Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

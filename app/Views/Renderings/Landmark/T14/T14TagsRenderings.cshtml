@@ -1,0 +1,34 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Items
+@model RenderingModel
+@{
+    ShoppingHelper shoppingHelper = new ShoppingHelper();
+    var tagsTrees = shoppingHelper.GetTagsTree();
+}
+<div class="table-responsive gd-tg-table">
+    <table>
+        <tbody>
+            <tr>
+                <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem)</th>
+
+
+                <td>
+                    @foreach (var item in tagsTrees)
+                    {
+                        <div>
+                           @* <a href="@">@item.DisplayName - </a>*@
+                            @foreach (var it in item.Children)
+                            {
+                                <a>CLOTHING,</a>
+                                <a>ACCESSORIES,</a>
+                                <a>COSMETICS,</a>
+                                <a>SHOES,</a>
+                            }
+                        </div>
+                    }
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

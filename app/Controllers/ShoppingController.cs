@@ -13,12 +13,10 @@ namespace Landmark.Controllers
 {
     public class ShoppingController : Controller
     {
-        public ActionResult GetItems(string currentId)
+        public ActionResult DiscoverMore(string targetId)
         {
-            Item currentItem = Sitecore.Context.Database.GetItem(currentId);
-            var items = currentItem.Children.ToList();
-            TempData["items"] = items;
-            return PartialView("_GetItems");
+            Item target = Sitecore.Context.Database.GetItem(targetId);
+            return Redirect(Sitecore.Links.LinkManager.GetItemUrl(target));
         }
 
         public ActionResult GoTo(string childcategory)
