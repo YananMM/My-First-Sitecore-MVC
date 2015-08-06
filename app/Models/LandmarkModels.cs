@@ -25,6 +25,8 @@ namespace Landmark.Models
 
         public string DisplayName { get; set; }
 
+        public Item CurrentItem { get; set; }
+
         public List<TagsTree> Children { get; set; }
     }
 }

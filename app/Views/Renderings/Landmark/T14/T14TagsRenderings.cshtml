@@ -17,13 +17,10 @@
                     @foreach (var item in tagsTrees)
                     {
                         <div>
-                           @* <a href="@">@item.DisplayName - </a>*@
+                            <a href="@Sitecore.Links.LinkManager.GetItemUrl(item.CurrentItem)">@item.CurrentItem["Category Name"] - </a>
                             @foreach (var it in item.Children)
                             {
-                                <a>CLOTHING,</a>
-                                <a>ACCESSORIES,</a>
-                                <a>COSMETICS,</a>
-                                <a>SHOES,</a>
+                                <a href="@Sitecore.Links.LinkManager.GetItemUrl(it.CurrentItem)">@it.CurrentItem["Category Name"],</a>
                             }
                         </div>
                     }

@@ -247,12 +247,10 @@ namespace Landmark.Helper
                 {
                     TagsTree tagsTree = new TagsTree()
                     {
-                        ID = item.id.ToString(),
-                        DisplayName = Sitecore.Context.Database.GetItem(item.id.ToString()).DisplayName,
+                        CurrentItem = Sitecore.Context.Database.GetItem(item.id.ToString()),
                         Children = item.children.Select(p => new TagsTree()
                         {
-                            ID = p.ID.ToString(),
-                            DisplayName = p.DisplayName,
+                            CurrentItem = Sitecore.Context.Database.GetItem(p.ID.ToString()),
                         }).ToList()
                     };
                     tagsTrees.Add(tagsTree);
