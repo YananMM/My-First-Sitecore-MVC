@@ -3,7 +3,7 @@
 @model RenderingModel
 @{
     ShoppingHelper shoppingHelper = new ShoppingHelper();
-    var slides = shoppingHelper.GetSlidesByTemplate(ItemGuids.T14SlideObjectTemplate);
+    var slides = shoppingHelper.GetSlidesByTemplate(ItemGuids.SlideObjectTemplate);
 }
 <!-- Indicators -->
 <ol class="carousel-indicators">
@@ -33,18 +33,7 @@
                     <div class="carousel-caption-inner">
                         <div class="gd-carousel-detail">
                             <div class="gd-mainimage-brief">
-                                @Html.Sitecore().Rendering(ItemGuids.T14ShopDataRenderingViewGuid, new
-                                    {
-                                        Cacheable = false,
-                                        CacheKey = "shopData",
-                                        Cache_VaryByData = true
-                                    })
-                                @Html.Sitecore().Rendering(ItemGuids.T14TagsRenderingViewGuid, new
-                                    {
-                                        Cacheable = false,
-                                        CacheKey = "shop-tags",
-                                        Cache_VaryByData = true
-                                    })
+                                @Html.Sitecore().Placeholder("slide-text")
                             </div>
                         </div>
                     </div>
