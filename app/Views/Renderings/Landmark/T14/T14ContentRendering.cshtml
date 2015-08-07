@@ -45,23 +45,22 @@
                 <li><a href="javascript:;">@Html.Sitecore().Field("Glossary Value", ItemGuids.AlsoOnThisFloorItem)</a></li>
             </ul>
         </div>
-
         <div class="shopdetails-brand-body">
-            <ul>
-                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-02.png"></a></li>
-                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-03.png"></a></li>
-                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-04.png"></a></li>
-                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-05.png"></a></li>
-                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-06.png"></a></li>
-                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-07.png"></a></li>
+            <ul class="hidden" id="alsoLike">
+                @Html.Sitecore().Rendering(ItemGuids.T14YouMayAlsoLikeRenderingViewGuid, new
+            {
+                Cacheable = false,
+                CacheKey = "also-like",
+                Cache_VaryByData = true
+            })
             </ul>
-            <ul class="hidden">
-                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-07.png"></a></li>
-                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-06.png"></a></li>
-                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-05.png"></a></li>
-                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-04.png"></a></li>
-                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-03.png"></a></li>
-                <li><a href="#"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-02.png"></a></li>
+            <ul id="onThisFloor">
+                @Html.Sitecore().Rendering(ItemGuids.T14AlsoOnFloorRenderingViewGuid, new
+            {
+                Cacheable = false,
+                CacheKey = "also-on-this-floor",
+                Cache_VaryByData = true
+            })
             </ul>
         </div>
     </div>

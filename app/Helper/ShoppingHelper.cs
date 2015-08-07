@@ -297,14 +297,35 @@ namespace Landmark.Helper
         /// <returns>Item.</returns>
         public Item GetShopFloor()
         {
-            Item item = Sitecore.Context.Item;
-            MultilistField floorField = item.Fields["Floor"];
+            string floorId;
+            var floorField = GetFloorId(out floorId);
             if (floorField != null)
             {
-                Item floor = Sitecore.Context.Database.GetItem(floorField.TargetIDs.First());
+                Item floor = Sitecore.Context.Database.GetItem(floorId);
                 return floor;
             }
             return null;
+        }
+
+        private static MultilistField GetFloorId(out string floorId)
+        {
+            Item item = Sitecore.Context.Item;
+            MultilistField floorField = item.Fields["Floor"];
+            floorId = floorField.TargetIDs.First().ToString();
+            return floorField;
+        }
+
+        /// <summary>
+        /// Gets the brands by floor.
+        /// </summary>
+        /// <param name="floorId">The floor unique identifier.</param>
+        /// <returns>List{Item}.</returns>
+        public List<Item> GetBrandsByFloor()
+        {
+            string floorId = GetFloorId(out floorId).ToString();
+            var allBrands = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T14ShopDetailsTemplate);
+            var brandsByFloor = allBrands.Where(p => p.Fields["Floor"].ToString() == floorId).ToList();
+            return brandsByFloor;
         }
     }
 }

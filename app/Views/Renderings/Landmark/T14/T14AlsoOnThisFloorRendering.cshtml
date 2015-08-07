@@ -1,3 +1,12 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
 @model RenderingModel
+@{
+    ShoppingHelper shoppingHelper = new ShoppingHelper();
+    var brandsByFloor = shoppingHelper.GetBrandsByFloor();
+
+    foreach (var item in brandsByFloor)
+    {
+        <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item)"></a></li>
+    }
+}
