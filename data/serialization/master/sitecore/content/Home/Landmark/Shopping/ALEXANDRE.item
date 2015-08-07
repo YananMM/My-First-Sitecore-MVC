@@ -1,11 +1,11 @@
 ----item----
 version: 1
-id: {7787A26D-769C-4AA7-9C4D-1BF9DE84EDF5}
+id: {6F2F23EE-CA83-4388-BF42-91CDE01CD0F8}
 database: master
 path: /sitecore/content/Home/Landmark/Shopping/ALEXANDRE
 parent: {07A37ABC-D676-4737-8B14-79EC18486CE8}
 name: ALEXANDRE
-master: {00000000-0000-0000-0000-000000000000}
+master: {E7C792F0-928C-4239-8D6A-E13DA572599E}
 template: {91A88069-9A0E-48B7-9509-BDE830A54D0E}
 templatekey: T14 Page
 
@@ -15,49 +15,33 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-163
+100
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
 ----version----
 language: en
 version: 1
-revision: a11afcf9-d258-4c9d-a6cc-e2e1df68e5e0
+revision: 35f08899-23fb-49b0-886f-dd33a9001ff6
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
 name: Brand Title
 key: brand title
-content-length: 17
+content-length: 9
 
-ALEXANDRE MCQUEEN
-----field----
-field: {DDA15F2F-F719-4896-A8A7-2FC0FE5C5500}
-name: Brand Image
-key: brand image
-content-length: 227
-
-<image mediapath="/Images/Landmark/Brands/brand002" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Brands/brand002" mediaid="{378B1B20-6296-4B06-860D-18449853D271}" />
+ALEXANDRE
 ----field----
 field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
 name: Buildings
 key: buildings
 content-length: 38
 
-{04AF3BF4-1C4D-43BC-9884-1431E3A44B11}
-----field----
-field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
-name: Content Title
-key: content title
-content-length: 78
-
-Alexander McQueen is one of the most respected fashion designers in the world.
-----field----
-field: {682B1E90-3780-4EDD-87DF-C8D42F545759}
-name: Content Description
-key: content description
-content-length: 1056
-
-Alexander McQueen was founded in 1992 by Lee McQueen where in less than 10 years he became one of the most respected fashion designers in the world.
-            Alexander McQueen shows are known for their emotional power and raw energy, as well as the romantic but determinedly contemporary nature of the collections. Integral to the McQueen culture is the juxtaposition between contrasting elements: fragility and strength, tradition and modernity, fluidity and severity. An openly emotional and even passionate viewpoint is realised with a profound respect and influence for the arts and crafts tradition. McQueen’s collections combine an in-depth working knowledge of bespoke British tailoring, fine workmanship and the impeccable finish of Italian manufacturing.
-            Sarah Burton joined the company in 1996 and was made Head of Womenswear design in 2000. Burton worked alongside Lee McQueen for more than 14 years and was subsequently appointed Creative Director of the brand in May 2010 following the passing of Lee McQueen in February 2010.
+{E76CEFC9-801C-4694-9A63-0C6132F20741}
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -69,9 +53,9 @@ ALEXANDRE
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 194
+content-length: 77
 
-{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{01E67855-9741-4C1C-9FCD-2432982120B6}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}
+{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{8DEEBCDA-AC9C-4B0C-AF81-8E493D219713}
 ----field----
 field: {3EDE0B08-F7EE-4A8D-B59A-0C54A0E6B144}
 name: Opening Hours Label
@@ -97,23 +81,23 @@ Sat-Sun: 9:00-22:00
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
 key: contact
-content-length: 9
+content-length: 10
 
-2765 0220
+123156 132
 ----field----
 field: {929EBABD-362F-4028-A18C-031D98BCDDE3}
 name: Official Website Label
 key: official website label
-content-length: 15
+content-length: 16
 
-OFFCIAL WEBSITE
+OFFCIAL WEBSITE 
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
 key: floor
 content-length: 77
 
-{E4D421D6-DCB0-40F4-B554-A52F83DC40EF}|{BDA32531-667F-420C-881F-4550CD6E755E}
+{F589382F-6556-46F6-AC4B-9E89B0BB5DD1}|{E4D421D6-DCB0-40F4-B554-A52F83DC40EF}
 ----field----
 field: {5350FA4D-170D-4926-8B21-97068A9C599F}
 name: Area
@@ -122,33 +106,26 @@ content-length: 8
 
 Shop 212
 ----field----
-field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
-name: Description
-key: description
-content-length: 16
-
-This is Shop 212
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150803T093120Z
+20150807T011032Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-a11afcf9-d258-4c9d-a6cc-e2e1df68e5e0
+35f08899-23fb-49b0-886f-dd33a9001ff6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150806T073201:635744431215830822Z
+20150807T012310Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,25 +1,18 @@
 ----item----
 version: 1
-id: {F7FA7CCE-DDE4-4DC7-AC4C-77A8E33D684F}
+id: {F7346C8F-5C88-4512-8FCF-DDFDB53B74DD}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/Shopping Page Object/__Standard Values
-parent: {AA7E76BD-BCAD-4597-9855-0493AABF8DAF}
-name: __Standard Values
+path: /sitecore/templates/User Defined/Landmark/Page/T20 Page/Page Data
+parent: {A92609EF-A378-4AB3-AAE3-5521139A6CFA}
+name: Page Data
 master: {00000000-0000-0000-0000-000000000000}
-template: {AA7E76BD-BCAD-4597-9855-0493AABF8DAF}
-templatekey: Shopping Page Object
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
 
-----field----
-field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
-name: __Masters
-key: __masters
-content-length: 77
-
-{0B591CE8-50CB-4CF5-9CBF-F2F6E61F23E8}|{E7C792F0-928C-4239-8D6A-E13DA572599E}
 ----version----
 language: en
 version: 1
-revision: 99068cc3-28e8-49a3-a912-3ae74da96a19
+revision: 88f1531f-3da5-4f63-b5a5-0577f9d9f4cd
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -27,21 +20,28 @@ name: __Created
 key: __created
 content-length: 16
 
-20150723T002059Z
+20150806T063654Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-99068cc3-28e8-49a3-a912-3ae74da96a19
+88f1531f-3da5-4f63-b5a5-0577f9d9f4cd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150807T010852Z
+20150806T063802Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

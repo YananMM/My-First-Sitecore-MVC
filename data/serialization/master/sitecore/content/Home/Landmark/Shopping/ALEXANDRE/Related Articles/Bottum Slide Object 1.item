@@ -1,26 +1,26 @@
 ----item----
 version: 1
-id: {7EA69CA9-BC6A-41FD-A8EB-D1C642838B11}
+id: {7F1B36F9-9EED-4FD7-BDFA-8D1D7D5B3E74}
 database: master
-path: /sitecore/content/Home/Landmark/Shopping/ALEXANDRE/Bottum Slide Object 3
-parent: {7787A26D-769C-4AA7-9C4D-1BF9DE84EDF5}
-name: Bottum Slide Object 3
+path: /sitecore/content/Home/Landmark/Shopping/ALEXANDRE/Related Articles/Bottum Slide Object 1
+parent: {ECC6DCFA-6078-41DD-9077-21163B73A0AC}
+name: Bottum Slide Object 1
 master: {00000000-0000-0000-0000-000000000000}
 template: {BCC31564-C738-41D5-ABA5-FD436557DF85}
-templatekey: Bottum Slide Object
+templatekey: Related Article Object
 
 ----version----
 language: en
 version: 1
-revision: 7590101e-aead-4409-9a22-d15ba2501408
+revision: f74e59d0-ae1a-488e-9089-1614d06e2dd6
 
 ----field----
 field: {8B57098C-B649-4451-BC53-826ADF74B093}
 name: Slide Image
 key: slide image
-content-length: 58
+content-length: 156
 
-<image mediaid="{8FC4B657-6E15-44AF-B791-92E8147AF60D}" />
+<image mediapath="" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{98B9DAC0-EE49-40A3-BA91-E8D6C364FD8C}" />
 ----field----
 field: {C51384B8-6AF1-4249-AB95-0692F4298974}
 name: Slide Title
@@ -62,7 +62,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150805T021022Z
+20150805T020957Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -76,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7590101e-aead-4409-9a22-d15ba2501408
+f74e59d0-ae1a-488e-9089-1614d06e2dd6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150806T063627:635744397878274022Z
+20150807T011044Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

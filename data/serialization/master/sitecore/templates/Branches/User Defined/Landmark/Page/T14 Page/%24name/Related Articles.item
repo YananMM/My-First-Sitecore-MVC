@@ -1,25 +1,25 @@
 ----item----
 version: 1
-id: {F7FA7CCE-DDE4-4DC7-AC4C-77A8E33D684F}
+id: {2E64A4B4-0193-4326-97F3-D90C9AB1B6C2}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/Shopping Page Object/__Standard Values
-parent: {AA7E76BD-BCAD-4597-9855-0493AABF8DAF}
-name: __Standard Values
+path: /sitecore/templates/Branches/User Defined/Landmark/Page/T14 Page/$name/Related Articles
+parent: {C0AC0A0F-AFD0-471D-B929-2E1656C0B970}
+name: Related Articles
 master: {00000000-0000-0000-0000-000000000000}
-template: {AA7E76BD-BCAD-4597-9855-0493AABF8DAF}
-templatekey: Shopping Page Object
+template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+templatekey: Folder
 
 ----field----
 field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
 name: __Masters
 key: __masters
-content-length: 77
+content-length: 38
 
-{0B591CE8-50CB-4CF5-9CBF-F2F6E61F23E8}|{E7C792F0-928C-4239-8D6A-E13DA572599E}
+{BCC31564-C738-41D5-ABA5-FD436557DF85}
 ----version----
 language: en
 version: 1
-revision: 99068cc3-28e8-49a3-a912-3ae74da96a19
+revision: 8c2ebb8f-eb4b-4bc0-9cb5-c489bbca15b1
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -27,21 +27,28 @@ name: __Created
 key: __created
 content-length: 16
 
-20150723T002059Z
+20150807T010623Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-99068cc3-28e8-49a3-a912-3ae74da96a19
+8c2ebb8f-eb4b-4bc0-9cb5-c489bbca15b1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150807T010852Z
+20150807T010730Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
