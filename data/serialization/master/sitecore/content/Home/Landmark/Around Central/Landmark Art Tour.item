@@ -12,8 +12,23 @@ templatekey: T20 Page
 ----version----
 language: en
 version: 1
-revision: b0c0b6e9-2877-4634-a549-27b576a8ec84
+revision: fe573d5b-6a34-46ce-b1fb-79b3f819cc46
 
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 18
+
+LANDMARK ART GUIDE
+----field----
+field: {682B1E90-3780-4EDD-87DF-C8D42F545759}
+name: Content Description
+key: content description
+content-length: 242
+
+<p>Enjoy LANDMARK's art pieces with an audio guide by simply snapping the QR Code on the plaques of the artworks located at LANDMARK.Access information and audio docent for each piece of LANDMARK art on your mobile device,here's how.</p>
+<br>
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -29,6 +44,29 @@ content-length: 0
 
 
 ----field----
+field: {801CA251-92F3-4B68-945C-3FBB6DEA8A56}
+name: Cover Title
+key: cover title
+content-length: 17
+
+CENTRAL ART GUIDE
+----field----
+field: {B6B6B6BA-80E1-4E09-AF00-5EB6A4D05221}
+name: Cover Content
+key: cover content
+content-length: 148
+
+<p>How to spend a day with your friends and family in Central?<br>
+Check out our one-day recommendation and experience the best of Central.</p>
+<br>
+----field----
+field: {B89F6E69-36D5-40AB-99E4-35B8A6FB6E0A}
+name: Cover Image
+key: cover image
+content-length: 58
+
+<image mediaid="{8287AB21-2C4F-4B02-AC26-245B9214554B}" />
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -41,14 +79,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b0c0b6e9-2877-4634-a549-27b576a8ec84
+fe573d5b-6a34-46ce-b1fb-79b3f819cc46
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150806T063619Z
+20150807T055623Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

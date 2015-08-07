@@ -10921,8 +10921,8 @@ button.close {
 }
 .gd-mainimage-single .carousel-inner .item > .carousel-caption .gd-carousel-detail .gd-mainimage-brief h2 {
   font-size: 21px;
-  margin-bottom: 0.5em;
-  padding: 0 0 0.8em 0;
+  margin-bottom: 25px;
+  padding: 0 0 24px 0;
 }
 @media (min-width: 1000px) {
   .gd-mainimage-single .carousel-inner .item > .carousel-caption .gd-carousel-detail .gd-mainimage-brief h2 {
@@ -11469,6 +11469,7 @@ button.close {
 }
 .t22 .art-gallery .art-g-box .art-g-box-header {
   color: #666666;
+  padding: 0 10px;
 }
 .t22 .art-gallery .art-g-box .art-g-box-header a {
   cursor: pointer;
@@ -11498,6 +11499,11 @@ button.close {
 }
 .t22 .art-gallery .art-g-box .art-g-box-header:after {
   clear: both;
+}
+@media (min-width: 1000px) {
+  .t22 .art-gallery .art-g-box .art-g-box-header {
+    padding: 0;
+  }
 }
 .t22 .art-gallery .art-g-box .art-g-box-header img {
   float: left;
@@ -11879,6 +11885,11 @@ button.close {
   }
   .t29 .gd-artplace .gd-pagetitle > img {
     margin-top: 0px;
+  }
+  .t29 .gd-artplace .gd-artplace-details .text-right .gd-button,
+  .t29 .gd-artplace .gd-artplace-details .text-right .gd-audio-frame {
+    margin-top: 0;
+    width: 100%;
   }
   h4 {
     margin-top: 35px;

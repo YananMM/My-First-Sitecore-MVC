@@ -48,6 +48,7 @@ namespace Landmark.Classes
         public static readonly String CategoryObjectTemplate = "{753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}";
         public static readonly String SlideObjectTemplate = "{FFC1447C-5F42-4419-AEF4-6175FB69507C}";
         public static readonly String ButtomSlideObjectTemplate = "{BCC31564-C738-41D5-ABA5-FD436557DF85}";
+        public static readonly String ImageTextObjectTemplate = "{CFE5379F-402F-4FB5-A1C5-0E42CA464BC1}";
 
         //item 
         public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}");

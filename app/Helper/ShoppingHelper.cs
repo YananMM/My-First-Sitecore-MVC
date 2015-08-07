@@ -220,19 +220,6 @@ namespace Landmark.Helper
             return false;
         }
 
-        /// <summary>
-        /// Gets the slides by template.
-        /// </summary>
-        /// <param name="templateId">The template unique identifier.</param>
-        /// <returns>List{Item}.</returns>
-        public List<Item> GetSlidesByTemplate(string templateId)
-        {
-            var item = Sitecore.Context.Item;
-            var query = string.Format("fast:{0}//*[{1}]", item.Paths.FullPath, "@@TemplateId='" + templateId + "'");
-            List<Item> slidesItems = _webDb.SelectItems(query).ToList();
-            return slidesItems;
-        }
-
         public List<TagsTree> GetTagsTree()
         {
             List<TagsTree> tagsTrees = new List<TagsTree>();

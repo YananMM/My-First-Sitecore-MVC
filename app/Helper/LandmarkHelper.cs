@@ -156,5 +156,19 @@ namespace Landmark.Helper
                 "@@TemplateId='" + templateItem + "'");
             return _webDb.SelectItems(query).ToList();
         }
+
+
+        /// <summary>
+        /// Gets the slides by template.
+        /// </summary>
+        /// <param name="templateId">The template unique identifier.</param>
+        /// <returns>List{Item}.</returns>
+        public static List<Item> GetItemByTemplate(string templateId)
+        {
+            var item = Sitecore.Context.Item;
+            var query = string.Format("fast:{0}//*[{1}]", item.Paths.FullPath, "@@TemplateId='" + templateId + "'");
+            List<Item> slidesItems = _webDb.SelectItems(query).OrderBy(i=>i.DisplayName).ToList();
+            return slidesItems;
+        }
     }
 }

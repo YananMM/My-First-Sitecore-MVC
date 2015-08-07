@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Sitecore.Configuration;
+using Sitecore.Data;
 using Sitecore.Mvc.Helpers;
 using Sitecore.Data.Items;
 
@@ -9,6 +11,8 @@ namespace Landmark.Helper
 {
     public static class SitecoreFieldHelper
     {
+        private static Database _webDb = Factory.GetDatabase("web");
+
         /// <summary>
         /// This is a custom field helper for image fields, allowing you to pass properties like 'max width' and 'max height' in as
         /// named parameters, rather than using new { }

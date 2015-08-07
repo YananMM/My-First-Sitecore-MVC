@@ -1,18 +1,25 @@
 ----item----
 version: 1
-id: {F7346C8F-5C88-4512-8FCF-DDFDB53B74DD}
+id: {BAEB1E01-1321-4471-B89D-1F54EE1B68D5}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T20 Page/Page Data
+path: /sitecore/templates/User Defined/Landmark/Page/T20 Page/Cover Data
 parent: {A92609EF-A378-4AB3-AAE3-5521139A6CFA}
-name: Page Data
+name: Cover Data
 master: {00000000-0000-0000-0000-000000000000}
 template: {E269FBB5-3750-427A-9149-7AA950B49301}
 templatekey: Template section
 
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+200
 ----version----
 language: en
 version: 1
-revision: f31cb2bb-6fb0-435b-8db8-8052763cbae8
+revision: e1f23d20-b334-4592-9c5b-96a2c859536c
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -20,7 +27,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150806T063654Z
+20150807T053903Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,7 +41,7 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f31cb2bb-6fb0-435b-8db8-8052763cbae8
+e1f23d20-b334-4592-9c5b-96a2c859536c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated

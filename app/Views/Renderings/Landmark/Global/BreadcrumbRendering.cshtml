@@ -31,22 +31,24 @@
 
 }
 
-<ol class="breadcrumb">
-    @foreach (var item in breadcrumbs)
-    {
-        <li>
-            <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
-                @if (item.ID == homePage.ID)
-                {
-                    <text>Home</text>
-                }
-                else
-                {
-                    <text>@item["Page Title"]</text>
-                }
-                <span class="icomoon-chevron-small-right"></span>
-            </a>
-        </li>
+<div class="col-xs-12">
+    <ol class="breadcrumb">
+        @foreach (var item in breadcrumbs)
+        {
+            <li>
+                <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
+                    @if (item.ID == homePage.ID)
+                    {
+                        <text>Home</text>
+                    }
+                    else
+                    {
+                        <text>@item["Page Title"]</text>
+                    }
+                    <span class="icomoon-chevron-small-right"></span>
+                </a>
+            </li>
 
-    }
-</ol>
+        }
+    </ol>
+</div>
