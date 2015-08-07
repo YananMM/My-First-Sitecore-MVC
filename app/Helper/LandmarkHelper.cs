@@ -143,8 +143,6 @@ namespace Landmark.Helper
             return styleClass;
         }
 
-        
-
         /// <summary>
         /// Gets the items by root and template.
         /// </summary>

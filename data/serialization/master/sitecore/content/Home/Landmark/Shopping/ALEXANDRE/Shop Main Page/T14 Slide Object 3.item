@@ -1,33 +1,26 @@
 ----item----
 version: 1
-id: {5F9B98B1-BBB7-4ECC-9688-6CB1BED327EC}
+id: {342219F3-E311-49FC-A136-3EF1A034461E}
 database: master
-path: /sitecore/content/Home/Landmark/Shopping/ALEXANDRE/T14 Slide Object 1
-parent: {7787A26D-769C-4AA7-9C4D-1BF9DE84EDF5}
-name: T14 Slide Object 1
+path: /sitecore/content/Home/Landmark/Shopping/ALEXANDRE/Shop Main Page/T14 Slide Object 3
+parent: {C640CE45-55DF-45DC-B0FF-3F40C63CE17B}
+name: T14 Slide Object 3
 master: {00000000-0000-0000-0000-000000000000}
 template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
 templatekey: T14 Slide Object
 
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
 ----version----
 language: en
 version: 1
-revision: f6f52af5-43c8-459a-96ae-052da92cf844
+revision: d7832243-ea90-4eca-86fd-b076a4b352b3
 
-----field----
-field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
-name: Slide Image
-key: slide image
-content-length: 156
-
-<image mediapath="" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="{98B9DAC0-EE49-40A3-BA91-E8D6C364FD8C}" />
-----field----
-field: {06BB0E44-EEED-4773-B420-9B6EB948A433}
-name: Slide Title
-key: slide title
-content-length: 20
-
-shopdetail-slider-01
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -41,7 +34,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150804T062811Z
+20150804T062921Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f6f52af5-43c8-459a-96ae-052da92cf844
+d7832243-ea90-4eca-86fd-b076a4b352b3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150804T085402:635742752420059196Z
+20150807T011805Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

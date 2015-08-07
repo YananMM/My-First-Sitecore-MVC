@@ -220,7 +220,6 @@ namespace Landmark.Helper
             return false;
         }
 
-
         /// <summary>
         /// Gets the slides by template.
         /// </summary>

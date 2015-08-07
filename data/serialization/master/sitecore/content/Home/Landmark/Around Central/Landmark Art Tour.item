@@ -1,40 +1,26 @@
 ----item----
 version: 1
-id: {3FAF2834-AF45-4CD7-BF22-6EEBCA0894C1}
+id: {F2018EEB-FBEE-4BE9-A7D2-DBFEAF0CFB4B}
 database: master
-path: /sitecore/content/Home/Landmark/Shopping/By Buildings
-parent: {07A37ABC-D676-4737-8B14-79EC18486CE8}
-name: By Buildings
+path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour
+parent: {57B8DEB0-CDFF-4287-94D6-E19191142B1B}
+name: Landmark Art Tour
 master: {00000000-0000-0000-0000-000000000000}
-template: {0B591CE8-50CB-4CF5-9CBF-F2F6E61F23E8}
-templatekey: T13 Page
+template: {A92609EF-A378-4AB3-AAE3-5521139A6CFA}
+templatekey: T20 Page
 
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 3
-
-600
-----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 186
-
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{F408832F-6563-4BDE-B59A-22078F27CA99}" s:id="{65C42F4A-B30F-45FA-804C-6638E3BB75F4}" /></d></r>
 ----version----
 language: en
 version: 1
-revision: a4e525d6-3064-40f0-8865-b3f0621bfdc5
+revision: b0c0b6e9-2877-4634-a549-27b576a8ec84
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 12
+content-length: 17
 
-By Buildings
+Landmark Art Tour
 ----field----
 field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
 name: Is Shown In Navigation
@@ -48,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150723T002334Z
+20150806T063300Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-a4e525d6-3064-40f0-8865-b3f0621bfdc5
+b0c0b6e9-2877-4634-a549-27b576a8ec84
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150807T011412Z
+20150806T063619Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
