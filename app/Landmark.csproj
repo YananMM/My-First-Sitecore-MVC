@@ -441,12 +441,12 @@
     <Content Include="Views\Renderings\Landmark\T1\T1InstagramRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T14\T14ContentRendering.cshtml" />
     <Content Include="Service\GetFloorPlanJson.ashx" />
-    <Content Include="Views\Renderings\Landmark\T14\T14SlideRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\Global\SlideRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T14\T14ShopDataRendering.cshtml" />
-    <Content Include="Views\Renderings\Landmark\T14\T14BottumSlideRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T14\T14AlsoOnThisFloorRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T14\T14TagsRenderings.cshtml" />
     <Content Include="Views\Renderings\Landmark\T14\T14YouMayAlsoLikeRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T14\T14RelatedArticlesRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

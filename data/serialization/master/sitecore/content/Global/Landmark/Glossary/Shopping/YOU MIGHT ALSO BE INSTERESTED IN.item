@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {B05FA79E-B0AC-4D78-9175-ADA8305B5B5B}
+id: {A6F6E24F-8844-4588-9FE2-0765E5851963}
 database: master
-path: /sitecore/content/Global/Landmark/Glossary/TAGS
-parent: {8B197E68-D618-4F66-9C07-BA8DD5DC096E}
-name: TAGS
+path: /sitecore/content/Global/Landmark/Glossary/Shopping/YOU MIGHT ALSO BE INSTERESTED IN
+parent: {3CDE8EEB-9E64-43B2-81FB-56BFC62A23BC}
+name: YOU MIGHT ALSO BE INSTERESTED IN
 master: {00000000-0000-0000-0000-000000000000}
 template: {7AD93F40-7320-4CD8-89A4-D4E4BB44ADF8}
 templatekey: Glossary Object
@@ -15,40 +15,40 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-1600
+2100
 ----version----
 language: en
 version: 1
-revision: ad9e3fc5-e392-4fc8-bffb-033aba0d3d94
+revision: c03cfc62-39ec-4e3c-b636-2ecf0849089b
 
 ----field----
 field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
 name: Glossary Value
 key: glossary value
-content-length: 4
+content-length: 33
 
-TAGS
+YOU MIGHT ALSO BE INSTERESTED IN:
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150805T071413Z
+20150721T083753Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-ad9e3fc5-e392-4fc8-bffb-033aba0d3d94
+c03cfc62-39ec-4e3c-b636-2ecf0849089b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150807T020935Z
+20150807T020940Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

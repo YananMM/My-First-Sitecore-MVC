@@ -24,8 +24,8 @@ namespace Landmark.Classes
         public static readonly String ByBuildingsRenderingViewGuid = "{B08E278B-BF3C-4994-A65D-D764193C6447}";
         public static readonly String T13SideBarRenderingViewGuid = "{A88DF21E-E1DB-408B-9BC5-14F36C83513D}";
         public static readonly String T13RelatedCategoryViewGuid = "{E12C109C-E610-4CB3-BA45-003C92C3FF96}";
-        public static readonly String T14ShopDataRenderingViewGuid = "{CCD0CC2A-56DD-4990-9395-560FA0F62D7B}";
-        public static readonly String T14TagsRenderingViewGuid = "{303EA462-99C6-447B-B3AA-C4F4F0441549}";
+        //public static readonly String T14ShopDataRenderingViewGuid = "{CCD0CC2A-56DD-4990-9395-560FA0F62D7B}";
+        //public static readonly String T14TagsRenderingViewGuid = "{303EA462-99C6-447B-B3AA-C4F4F0441549}";
         public static readonly String T14AlsoOnFloorRenderingViewGuid = "{E4C9F730-0F32-481A-A631-814E9DD01CF0}";
         public static readonly String T14YouMayAlsoLikeRenderingViewGuid = "{606750CC-CD89-4E63-9CF6-B0112FAF6D4A}";
             
@@ -46,7 +46,7 @@ namespace Landmark.Classes
         public static readonly String AllByBuildingsPage = "{3FAF2834-AF45-4CD7-BF22-6EEBCA0894C1}";
         public static readonly String ShoppingSubCategoryPageObject = "{11D18D8C-A8E3-4A15-A295-DAE23894A0AE}";
         public static readonly String CategoryObjectTemplate = "{753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}";
-        public static readonly String T14SlideObjectTemplate = "{FFC1447C-5F42-4419-AEF4-6175FB69507C}";
+        public static readonly String SlideObjectTemplate = "{FFC1447C-5F42-4419-AEF4-6175FB69507C}";
         public static readonly String ButtomSlideObjectTemplate = "{BCC31564-C738-41D5-ABA5-FD436557DF85}";
 
         //item 
