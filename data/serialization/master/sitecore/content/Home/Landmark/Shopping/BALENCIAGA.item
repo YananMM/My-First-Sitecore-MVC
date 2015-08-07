@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 124f2a5d-9d81-46eb-934a-3bf7ad5140f9
+revision: 09748229-2903-4421-9d1b-7c789e4cf57b
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -36,12 +36,33 @@ content-length: 10
 
 BALENCIAGA
 ----field----
+field: {DDA15F2F-F719-4896-A8A7-2FC0FE5C5500}
+name: Brand Image
+key: brand image
+content-length: 58
+
+<image mediaid="{2460FB1C-213C-4E3C-86AB-0DAB474D7B8A}" />
+----field----
+field: {682B1E90-3780-4EDD-87DF-C8D42F545759}
+name: Content Description
+key: content description
+content-length: 1034
+
+Alexander McQueen was founded in 1992 by Lee McQueen where in less than 10 years he became one of the most respected fashion designers in the world.Alexander McQueen shows are known for their emotional power and raw energy, as well as the romantic but determinedly contemporary nature of the collections. Integral to the McQueen culture is the juxtaposition between contrasting elements: fragility and strength, tradition and modernity, fluidity and severity. An openly emotional and even passionate viewpoint is realised with a profound respect and influence for the arts and crafts tradition. McQueen&rsquo;s collections combine an in-depth working knowledge of bespoke British tailoring, fine workmanship and the impeccable finish of Italian manufacturing.Sarah Burton joined the company in 1996 and was made Head of Womenswear design in 2000. Burton worked alongside Lee McQueen for more than 14 years and was subsequently appointed Creative Director of the brand in May 2010 following the passing of Lee McQueen in February 2010.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 10
 
 BALENCIAGA
+----field----
+field: {3534AD05-BF49-4763-822B-25D97D9F7283}
+name: Floor
+key: floor
+content-length: 38
+
+{E4D421D6-DCB0-40F4-B554-A52F83DC40EF}
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -55,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-124f2a5d-9d81-46eb-934a-3bf7ad5140f9
+09748229-2903-4421-9d1b-7c789e4cf57b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150807T011412Z
+20150807T060946:635745245868516290Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

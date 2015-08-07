@@ -1001,26 +1001,30 @@ $(document).ready(function() {
       zoombuttons: false
     });
     
-    $('#gdfloorlist .list-group-item').mouseenter(function() {
+    $('#gdfloorlist .list-group-item').click(function() {
       var gdAreaId = $(this).data('location');
       $('#mapplic-t22 [data-location]').attr('fill', '#6A6B6B');
       $('#mapplic-t22 [data-location=' + gdAreaId + ']').attr('fill', '#CEA562');
       $(this).addClass('active').siblings().removeClass('active');
+      $('#gd-art-gallery').empty();
+      $(window).trigger('scroll');
     });
     
-    $('body').on('mouseenter', '#mapplic-t22 [data-location]', function() {
+    $('body').on('click', '#mapplic-t22 [data-location]', function() {
       var gdAreaId = $(this).data('location');
       if (!isIE8()) {
         $('#mapplic-t22 [data-location]').attr('fill', '#6A6B6B');
         $(this).attr('fill', '#CEA562');
       }
       $('#gdfloorlist [data-location=' + gdAreaId + ']').addClass('active').siblings().removeClass('active');
+      $('#gd-art-gallery').empty();
+      $(window).trigger('scroll');
     });
   }
   /**********************************************************************************************************
-   * T22 Infinite scroll
+   * T22 T22-2 Infinite scroll
    **********************************************************************************************************/
-  if ($('body').hasClass('t22-is')) {
+  if ($('body').hasClass('t22')) {
     // Get height and width of browser's visible area
     var winSize = function() {
     var e = window,
@@ -1033,164 +1037,127 @@ $(document).ready(function() {
     };
 
     // Load more when reached bottom
-    var gdArtsData = [
-      {
-        avatar: '../files/landmark/images/arttour/arttour-person-01.png',
-        name:   'John Doe',
-        date:   '2000',
-        link:   '/t22.html',
-        work:   [
-          {
-            title: 'Painting Name',
-            des:   'Oil on canvas 360 x 280cm.',
-            url:   '../files/landmark/images/arttour/arttour-pic-01.jpg',
-            link:  '/t22.html'
-          },
-          {
-            title: 'Painting Name',
-            des:   'Oil on canvas 360 x 280cm.',
-            url:   '../files/landmark/images/arttour/arttour-pic-02.jpg',
-            link:  '/t22.html'
-          },
-          {
-            title: 'Painting Name',
-            des:   'Oil on canvas 360 x 280cm.',
-            url:   '../files/landmark/images/arttour/arttour-pic-03.jpg',
-            link:  '/t22.html'
-          },
-          {
-            title: 'Painting Name',
-            des:   'Oil on canvas 360 x 280cm.',
-            url:   '../files/landmark/images/arttour/arttour-pic-04.jpg',
-            link:  '/t22.html'
-          },
-          {
-            title: 'Painting Name',
-            des:   'Oil on canvas 360 x 280cm.',
-            url:   '../files/landmark/images/arttour/arttour-pic-01.jpg',
-            link:  '/t22.html'
-          }
-        ]
-      },
-      {
-        avatar: '../files/landmark/images/arttour/arttour-person-02.png',
-        name:   'John Doe',
-        date:   '2000',
-        link:   '/t22.html',
-        work:   [
-          {
-            title: 'Painting Name',
-            des:   'Oil on canvas 360 x 280cm.',
-            url:   '../files/landmark/images/arttour/arttour-pic-04.jpg',
-            link:  '/t22.html'
-          },
-          {
-            title: 'Painting Name',
-            des:   'Oil on canvas 360 x 280cm.',
-            url:   '../files/landmark/images/arttour/arttour-pic-03.jpg',
-            link:  '/t22.html'
-          },
-          {
-            title: 'Painting Name',
-            des:   'Oil on canvas 360 x 280cm.',
-            url:   '../files/landmark/images/arttour/arttour-pic-02.jpg',
-            link:  '/t22.html'
-          },
-          {
-            title: 'Painting Name',
-            des:   'Oil on canvas 360 x 280cm.',
-            url:   '../files/landmark/images/arttour/arttour-pic-01.jpg',
-            link:  '/t22.html'
-          }
-        ]
-      },
-      {
-        avatar: '../files/landmark/images/arttour/arttour-person-03.png',
-        name:   'John Doe',
-        date:   '2000',
-        link:   '/t22.html',
-        work:   [
-          {
-            title: 'Painting Name',
-            des:   'Oil on canvas 360 x 280cm.',
-            url:   '../files/landmark/images/arttour/arttour-pic-03.jpg',
-            link:  '/t22.html'
-          }
-        ]
-      },
-      {
-        avatar: '../files/landmark/images/arttour/arttour-person-04.png',
-        name:   'John Doe',
-        date:   '2000',
-        link:   '/t22.html',
-        work:   [
-          {
-            title: 'Painting Name',
-            des:   'Oil on canvas 360 x 280cm.',
-            url:   '../files/landmark/images/arttour/arttour-pic-04.jpg',
-            link:  '/t22.html'
-          }
-        ]
-      }
-    ];
-    var gdArtsLeft      = $('#gd-art-gallery>.col-sm-6').eq(0);
-    var gdArtsRight     = $('#gd-art-gallery>.col-sm-6').eq(1);
-    var gdArtsLength    = gdArtsData.length;
+    var gdArtsData;
+    var gdArtsLength;
     var gdArtsInserting = 0;
+    var gdArtsAdd       = 0;
     var gdArtsLocked    = false;
-    $(window).on('scroll resize', function() {
-      if ($('#gd-art-gallery-loading').offset().top < winSize().height + $(window).scrollTop()) {
-        //Remove this line in production environment
-        gdArtsInserting = 0;
-        //Remove this line above in production environment
 
-        var gdArtsAdd = 0;
+    var gdArtsFunc1 = function() {
+      var gdArtsLeft  = $('#gd-art-gallery>.col-sm-6').eq(0);
+      var gdArtsRight = $('#gd-art-gallery>.col-sm-6').eq(1);
+      gdArtsLength    = gdArtsData.length;
 
-        if (gdArtsInserting === gdArtsLength - 1) {
-          $('#gd-art-gallery-loading').addClass('hidden');
-        } else {
+      if (gdArtsAdd === 4) {
+        gdArtsAdd = 0;
+      }
+      if (gdArtsInserting === gdArtsLength) {
+        $('#gd-art-gallery-loading').addClass('hidden');
+      } else {
+        $('.gd-artlist-toggle.active').removeClass('active').next().find('.gd-artlist-more').text('SEE MORE +');
 
-          $('.gd-artlist-toggle.active').removeClass('active').next().find('.gd-artlist-more').text('SEE MORE +');
+        while (!gdArtsLocked && gdArtsInserting < gdArtsLength && gdArtsAdd < 4) {
+          var gdArtsDataTemp = gdArtsData[gdArtsInserting];
+          var gdArtsHtmlTemp = '';
 
-          while (!gdArtsLocked && gdArtsInserting < gdArtsLength && gdArtsAdd < 4) {
-            var gdArtsDataTemp = gdArtsData[gdArtsInserting];
-            var gdArtsHtmlTemp = '';
+          gdArtsLocked = true;
+          gdArtsHtmlTemp += '<div class="art-g-box"><div class="art-g-box-header"><div class="row"><div class="col-sm-3">'+
+                            '<img src="'+gdArtsDataTemp.avatar+'"></div><div class="col-sm-9">'+
+                            '<h3>'+gdArtsDataTemp.name+'<span>'+gdArtsDataTemp.date+'</span></h3>'+
+                            '<a href="'+gdArtsDataTemp.link+'">ARTIST BOIGRAPHY<span class="icomoon-chevron-small-right"></span></a></div></div></div>'+
+                            '<div class="gd-artlist"><div class="row">';
+          for (var loop2 = 0; loop2 < gdArtsDataTemp.work.length; loop2++) {
 
-            gdArtsLocked = true;
-
-            gdArtsHtmlTemp += '<div class="art-g-box"><div class="art-g-box-header"><div class="row"><div class="col-sm-3">'+
-                              '<img src="'+gdArtsDataTemp.avatar+'"></div><div class="col-sm-9">'+
-                              '<h3>'+gdArtsDataTemp.name+'<span>'+gdArtsDataTemp.date+'</span></h3>'+
-                              '<a href="'+gdArtsDataTemp.link+'">ARTIST BOIGRAPHY<span class="icomoon-chevron-small-right"></span></a></div></div></div>'+
-                              '<div class="gd-artlist"><div class="row">';
-            for (var loop2 = 0; loop2 < gdArtsDataTemp.work.length; loop2++) {
-
-              gdArtsHtmlTemp += '<div class="col-sm-6"><article><a href="'+gdArtsDataTemp.work[loop2].link+'">'+
-                                '<img src="'+gdArtsDataTemp.work[loop2].url+'"></a>'+
-                                '<h4>'+gdArtsDataTemp.work[loop2].title+'</h4><p>'+gdArtsDataTemp.work[loop2].des+'</p></article></div>';
-              if (loop2 === 1) {
-                gdArtsHtmlTemp += '<div class="gd-artlist-toggle">';
-              }
-              if (loop2 > 1 && loop2 === gdArtsDataTemp.work.length - 1) {
-                gdArtsHtmlTemp += '</div><div class="col-xs-12"><a href="javascript:;" class="gd-artlist-more">SEE MORE +</a></div>';
-              }
+            gdArtsHtmlTemp += '<div class="col-sm-6"><article><a href="'+gdArtsDataTemp.work[loop2].link+'">'+
+                              '<img src="'+gdArtsDataTemp.work[loop2].url+'"></a>'+
+                              '<h4>'+gdArtsDataTemp.work[loop2].title+'</h4><p>'+gdArtsDataTemp.work[loop2].des+'</p></article></div>';
+            if (loop2 === 1) {
+              gdArtsHtmlTemp += '<div class="gd-artlist-toggle">';
             }
-            gdArtsHtmlTemp += '</div></div></div>';
+            if (loop2 > 1 && loop2 === gdArtsDataTemp.work.length - 1) {
+              gdArtsHtmlTemp += '</div><div class="col-xs-12"><a href="javascript:;" class="gd-artlist-more">SEE MORE +</a></div>';
+            }
+          }
+          gdArtsHtmlTemp += '</div></div></div>';
 
-            if ($(window).width() >= 768) {
-              if (gdArtsLeft.height() < gdArtsRight.height()) {
-                gdArtsLeft.append(gdArtsHtmlTemp);
-              } else {
-                gdArtsRight.append(gdArtsHtmlTemp);
-              }
+          if ($(window).width() >= 768) {
+            if (gdArtsLeft.height() < gdArtsRight.height()) {
+              gdArtsLeft.append(gdArtsHtmlTemp);
             } else {
               gdArtsRight.append(gdArtsHtmlTemp);
             }
+          } else {
+            gdArtsRight.append(gdArtsHtmlTemp);
+          }
 
+          gdArtsAdd += 1;
+          gdArtsInserting += 1;
+          gdArtsLocked = false;
+        }
+      }
+    }
+
+    var gdArtsFunc2 = function() {
+      var gdCurrentFloor = $('#gdfloorlist>.active').index();
+      var gdArtsHtmlTemp = '<div class="row">';
+      var gdArtsDataTemp;
+      gdArtsLength  = gdArtsData[gdCurrentFloor].length;
+
+      if (gdArtsAdd === 4) {
+        gdArtsAdd = 0;
+      }
+      if (gdArtsInserting === gdArtsLength) {
+        $('#gd-art-gallery-loading').addClass('hidden');
+      } else {
+        if (!gdArtsLocked) {
+          gdArtsLocked = true;
+          while (gdArtsInserting < gdArtsLength && gdArtsAdd < 4) {
+            gdArtsDataTemp = gdArtsData[gdCurrentFloor][gdArtsInserting];
+            gdArtsHtmlTemp += '<div class="col-sm-3"><a href="' + gdArtsDataTemp.link + '"><img src="' + gdArtsDataTemp.src + '">' +
+                              '<h3>' + gdArtsDataTemp.title + '</h3><p>' + gdArtsDataTemp.des + '</p></a></div>';
             gdArtsAdd += 1;
             gdArtsInserting += 1;
-            gdArtsLocked = false;
           }
+          gdArtsHtmlTemp += '</div>';
+          $('#gd-art-gallery').append(gdArtsHtmlTemp);
+          gdArtsLocked = false;
+        }
+      }
+    }
+
+    if ($('body').hasClass('t22-is')) {
+      $.getJSON('/en/t22/arts.json', function(data) {
+        gdArtsData = data;
+      })
+      .fail(function() {
+        alert('Fail to load arts data.');
+      });
+    }
+
+    if ($('body').hasClass('t22-svg')) {
+      $.getJSON('/en/t22-2/arts.json', function(data) {
+        gdArtsData = data;
+      })
+      .fail(function() {
+        alert('Fail to load arts data.');
+      });
+    }
+
+    $(window).on('scroll resize', function() {
+      if ($('#gd-art-gallery-loading').offset().top < winSize().height + $(window).scrollTop()) {
+
+        //Remove this line below in production environment
+        gdArtsInserting = 0;
+        //Remove this line above in production environment
+
+        //For page T22
+        if ($('body').hasClass('t22-is')) {
+          gdArtsFunc1();
+        }
+
+        //For page T22-2
+        if ($('body').hasClass('t22-svg')) {
+          gdArtsFunc2();
         }
       }
     });

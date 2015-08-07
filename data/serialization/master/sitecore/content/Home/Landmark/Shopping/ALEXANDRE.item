@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 35f08899-23fb-49b0-886f-dd33a9001ff6
+revision: 656de92e-c7cb-437c-be78-55a178cfb5e5
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -36,12 +36,33 @@ content-length: 9
 
 ALEXANDRE
 ----field----
+field: {DDA15F2F-F719-4896-A8A7-2FC0FE5C5500}
+name: Brand Image
+key: brand image
+content-length: 58
+
+<image mediaid="{378B1B20-6296-4B06-860D-18449853D271}" />
+----field----
 field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
 name: Buildings
 key: buildings
 content-length: 38
 
 {E76CEFC9-801C-4694-9A63-0C6132F20741}
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 78
+
+Alexander McQueen is one of the most respected fashion designers in the world.
+----field----
+field: {682B1E90-3780-4EDD-87DF-C8D42F545759}
+name: Content Description
+key: content description
+content-length: 1034
+
+Alexander McQueen was founded in 1992 by Lee McQueen where in less than 10 years he became one of the most respected fashion designers in the world.Alexander McQueen shows are known for their emotional power and raw energy, as well as the romantic but determinedly contemporary nature of the collections. Integral to the McQueen culture is the juxtaposition between contrasting elements: fragility and strength, tradition and modernity, fluidity and severity. An openly emotional and even passionate viewpoint is realised with a profound respect and influence for the arts and crafts tradition. McQueen&rsquo;s collections combine an in-depth working knowledge of bespoke British tailoring, fine workmanship and the impeccable finish of Italian manufacturing.Sarah Burton joined the company in 1996 and was made Head of Womenswear design in 2000. Burton worked alongside Lee McQueen for more than 14 years and was subsequently appointed Creative Director of the brand in May 2010 following the passing of Lee McQueen in February 2010.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -95,9 +116,9 @@ OFFCIAL WEBSITE
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
 key: floor
-content-length: 77
+content-length: 38
 
-{F589382F-6556-46F6-AC4B-9E89B0BB5DD1}|{E4D421D6-DCB0-40F4-B554-A52F83DC40EF}
+{E4D421D6-DCB0-40F4-B554-A52F83DC40EF}
 ----field----
 field: {5350FA4D-170D-4926-8B21-97068A9C599F}
 name: Area
@@ -105,6 +126,13 @@ key: area
 content-length: 8
 
 Shop 212
+----field----
+field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
+name: Description
+key: description
+content-length: 16
+
+This is Shop 212
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -118,14 +146,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-35f08899-23fb-49b0-886f-dd33a9001ff6
+656de92e-c7cb-437c-be78-55a178cfb5e5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150807T012310Z
+20150807T060859:635745245390118927Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

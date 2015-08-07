@@ -26,9 +26,10 @@
 @import "pagespecific.less";
 
 @media (min-width: @grid-float-breakpoint)  {
-
-body {
-}
+  body, .site-header {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
 }
 //common
 .gray-text{
@@ -62,6 +63,21 @@ body {
 
 }
 
+.gray-text3{
+      color: @gray;
+ a {
+      color: @gray;
+    &:hover{
+        color: @white;
+        text-decoration: none;
+    }
+    &:active{
+        color:  @gray;
+        text-decoration: none;
+    }
+}
+
+}
 .black-text{
       color: #222;
  a {
@@ -181,6 +197,9 @@ body {
       position: fixed;
       &.bottom {
         position: absolute;
+      }
+      &.active {
+        opacity: 1;
       }
 
       font-weight: bold;
@@ -390,4 +409,13 @@ body {
   max-width: 100%;
   min-height: 50px;
   margin: 0 auto;
+  opacity: 0;
+}
+.lazy-loaded {
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 1;
 }
