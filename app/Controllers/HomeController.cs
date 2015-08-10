@@ -1,12 +1,12 @@
 ﻿// ***********************************************************************
 // Assembly         : Landmark
 // Author           : Jiang Lili
-// Created          : 07-30-2015
+// Created          : 08-10-2015
 //
 // Last Modified By : Jiang Lili
 // Last Modified On : 08-10-2015
 // ***********************************************************************
-// <copyright file="ShoppingController.cs" company="Gruden">
+// <copyright file="HomeController.cs" company="Gruden">
 //     Copyright (c) Gruden. All rights reserved.
 // </copyright>
 // <summary></summary>
@@ -16,10 +16,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Landmark.Classes;
-using Landmark.Helper;
-using Sitecore.Configuration;
-using Sitecore.Data;
 using Sitecore.Data.Items;
 
 // <summary>
@@ -28,21 +24,20 @@ using Sitecore.Data.Items;
 namespace Landmark.Controllers
 {
     /// <summary>
-    /// Class ShoppingController.
+    /// Class HomeController.
     /// </summary>
-    public class ShoppingController : Controller
+    public class HomeController : Controller
     {
         /// <summary>
-        /// Goes the automatic.
+        /// Buttons the redirect.
         /// </summary>
-        /// <param name="childcategory">The childcategory.</param>
+        /// <param name="targetId">The target unique identifier.</param>
         /// <returns>ActionResult.</returns>
-        public ActionResult GoTo(string childcategory)
+        public ActionResult ButtonRedirect(string targetId)
         {
-            Item shoppingCategory = Sitecore.Context.Database.GetItem(childcategory);
-            return Redirect(Sitecore.Links.LinkManager.GetItemUrl(shoppingCategory.Children.First()));
+            Item target = Sitecore.Context.Database.GetItem(targetId);
+            return Redirect(Sitecore.Links.LinkManager.GetItemUrl(target));
         }
 
     }
-
 }

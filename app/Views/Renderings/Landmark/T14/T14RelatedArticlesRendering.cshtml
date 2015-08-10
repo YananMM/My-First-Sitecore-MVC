@@ -1,8 +1,7 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
 @{
-    ShoppingHelper shoppingHelper = new ShoppingHelper();
-    var slides = shoppingHelper.GetSlidesByTemplate(ItemGuids.ButtomSlideObjectTemplate);
+    var slides = LandmarkHelper.GetItemByTemplate(ItemGuids.ButtomSlideObjectTemplate);
 }
 
 <!-- Wrapper for slides -->
@@ -26,7 +25,7 @@
                         <div class="gd-carousel-detail">
                             <h3>@Html.Sitecore().Field("Slide Title", item)</h3>
                             <p>@Html.Sitecore().Field("Slide Description", item)</p>
-                            <form action="@Url.Action("DiscoverMore", "Shopping")">
+                            <form action="@Url.Action("ButtonRedirect", "Home")">
                                 @{
             Sitecore.Data.Fields.LinkField linkField = item.Fields["Slide Button Link"];
                                 }

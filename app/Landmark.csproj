@@ -124,6 +124,7 @@
     <Compile Include="Classes\InstagramSocial.cs" />
     <Compile Include="Classes\ItemGuids.cs" />
     <Compile Include="Classes\Crawlers\LanguageFallbackCrawler.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\ShoppingController.cs" />
     <Compile Include="Helper\LandmarkHelper.cs" />
@@ -458,6 +459,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="files\landmark\less\css\" />
+    <Folder Include="Views\Home\" />
     <Folder Include="Views\Sublayouts\" />
   </ItemGroup>
   <ItemGroup>
