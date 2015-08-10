@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 656de92e-c7cb-437c-be78-55a178cfb5e5
+revision: 042c4d8c-792e-4fc9-95bf-411dbfe923ed
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -49,6 +49,13 @@ key: buildings
 content-length: 38
 
 {E76CEFC9-801C-4694-9A63-0C6132F20741}
+----field----
+field: {050692DA-FA2A-41F5-97B2-A3F56EC73345}
+name: Related Brands
+key: related brands
+content-length: 116
+
+{7091CC8A-E3E0-42B2-8927-636FF34C9239}|{27754EFC-5B12-4362-B7AE-6C5BD02D8E31}|{CFC1308A-5ECF-4CBB-917F-790FEFF640E9}
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
@@ -146,14 +153,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-656de92e-c7cb-437c-be78-55a178cfb5e5
+042c4d8c-792e-4fc9-95bf-411dbfe923ed
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150807T060859:635745245390118927Z
+20150810T001434Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
