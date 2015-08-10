@@ -54,8 +54,16 @@
     .gd-link-book {
       color: @gd-title-color;
       display: block;
+      letter-spacing: 0.1em;
       font-size: 12px;
       margin-top: 1em;
+  .icomoon-chevron-small-right{
+    display: inline-block;
+    padding-bottom: 3px;
+    margin-left: 0;
+    font-size: 20px;
+    vertical-align:middle;
+  }
     }
 .gd-link-brands{
   color: #999999;
@@ -82,7 +90,7 @@
 // gd bifbrands
   .gd-bigbrand{
    text-align: center;
-    margin: 50px 0 25px;
+    margin: 80px 0 25px;
   }
 
 //  gd buttons
@@ -183,7 +191,9 @@
       }
       
       .gd-brief-body {
-          text-align: center;   
+        .text-center{
+          text-align: center;
+        }  
         &.gd-brief-center{
           text-align: center;
         }
@@ -676,10 +686,10 @@
               .gd-mainimage-brief {
                 h2 {
                   font-size: 21px;
-                  margin-bottom: 0.5em;
-                  padding: 0 0 0.8em 0;
+                  margin-bottom: 25px;
+                  padding: 0 0 24px 0;
                   @media (min-width:@screen-md) {
-                  font-size: 48px;
+                  font-size: 30px;
                   }
                 }
               }
@@ -699,7 +709,7 @@
   }
 }
 //  gd Main Image Brief
-    .gd-mainimage-brief {
+    .gd-mainimage-brief,.gd-mainimage-brief2 {
       h2 {
         color: @gd-title-color;
         font-family: @font-family-serif;
@@ -727,12 +737,38 @@
     }
 @media (min-width:@screen-md) {
 //  gd Main Image Brief
-    .gd-mainimage-brief {
+    .gd-mainimage-brief,.gd-mainimage-brief2 {
       h2 {
         font-size: 30px;
+        margin: 0;
+        padding:0;
       }
     }
 
+}
+//  gd Main Image Brief 2
+
+.gd-mainimage-brief2{
+  h2{
+    &:after{
+    content: none;
+    }
+}
+    ul{
+      position: relative;
+        margin: 0 0 24px 0;
+        padding: 0 0 25px 0;
+    
+        &:after {
+          bottom: 0;
+          border-top: 1px solid @gd-title-color;
+          content: " ";
+          height: 0;
+          left: 0;
+          position: absolute;
+          width: 30px;
+        }
+    }
 }
 //  gd Main Image List Brief
     .gd-mainimage-table, .gd-tg-table{
