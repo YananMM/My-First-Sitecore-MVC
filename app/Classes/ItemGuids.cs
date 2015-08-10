@@ -17,6 +17,7 @@ namespace Landmark.Classes
         public static readonly String HeaderRenderingViewGuid = "{38268C3C-71E7-4775-8E91-FB4DF4667C34}";
         public static readonly String FooterNavRenderingViewGuid = "{5BBD6426-6C9C-4E73-BD1F-34BC6D63961E}";
         public static readonly String FooterConfigRenderingViewGuid = "{18C07F19-B608-411E-81E2-FDADAE97176D}";
+        public static readonly String FooterSocialMediaRenderingGuid = "{5359BCC1-D4EB-4D7B-BBD8-11D1597BAB92}";
         public static readonly String NavigationRenderingViewGuid = "{C72D39E8-5FD2-40F6-B815-83DAD5E92CC3}";
         public static readonly String MobileNavigationRenderingViewGuid = "{61EC411E-0F20-4B97-A0D4-A880A4ACD3E5}";
         //public static readonly String T11BreadcrymbRenderingViewGuid = "{C85A5336-5D9F-47A0-ADBD-DA8F6975E51B}";
@@ -49,6 +50,8 @@ namespace Landmark.Classes
         public static readonly String SlideObjectTemplate = "{FFC1447C-5F42-4419-AEF4-6175FB69507C}";
         public static readonly String ButtomSlideObjectTemplate = "{BCC31564-C738-41D5-ABA5-FD436557DF85}";
         public static readonly String ImageTextObjectTemplate = "{CFE5379F-402F-4FB5-A1C5-0E42CA464BC1}";
+        public static readonly String NewsletterSignUpPage = "{5E154158-9B1A-4471-ADE5-B5CC226B1161}";
+        public static readonly String FooterSocialMediaFolderItem = "{08BB2BC5-ACFC-4418-AED0-4B8DC6D1B0CA}";
 
         //item 
         public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}");
