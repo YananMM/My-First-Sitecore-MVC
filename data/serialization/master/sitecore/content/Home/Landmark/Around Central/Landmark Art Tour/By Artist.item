@@ -1,47 +1,47 @@
 ----item----
 version: 1
-id: {5C03DD0D-4881-4A9B-A58D-5FFA101B3533}
+id: {5126FB8C-1FB4-4C06-A8AC-23D8B260DF23}
 database: master
-path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour1
-parent: {57B8DEB0-CDFF-4287-94D6-E19191142B1B}
-name: Landmark Art Tour1
+path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/By Artist
+parent: {5C03DD0D-4881-4A9B-A58D-5FFA101B3533}
+name: By Artist
 master: {00000000-0000-0000-0000-000000000000}
-template: {A92609EF-A378-4AB3-AAE3-5521139A6CFA}
-templatekey: T20 Page
+template: {7B7A336C-48D6-4CD7-BC35-A4593F16F2D0}
+templatekey: T22 Page
 
 ----version----
 language: en
 version: 1
-revision: 7408cdc9-4100-49f3-a30d-531db9add922
+revision: 063c69f0-7d31-49b1-90eb-b68d5f7d5e7d
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 18
+content-length: 9
 
-Landmark Art Tour1
+By Artist
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150810T082649Z
+20150810T002114Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-7408cdc9-4100-49f3-a30d-531db9add922
+063c69f0-7d31-49b1-90eb-b68d5f7d5e7d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150810T082649:635747920093952767Z
+20150810T083056:635747922569264347Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
