@@ -1,19 +1,33 @@
 ----item----
 version: 1
-id: {8C5861EC-A3D4-4F8C-A123-CEE90F04B608}
+id: {20D973AF-8F4D-4F2E-B358-75D8B9E12FDF}
 database: master
-path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/BO YUN
-parent: {F2018EEB-FBEE-4BE9-A7D2-DBFEAF0CFB4B}
-name: BO YUN
+path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour1/Mobile Audio Guide/1
+parent: {1F173F5E-BCA8-4390-A212-82C0501F9C03}
+name: 1
 master: {00000000-0000-0000-0000-000000000000}
-template: {EC149566-D74F-4E4F-9F2C-A0745E72988E}
-templatekey: T30 Page
+template: {CFE5379F-402F-4FB5-A1C5-0E42CA464BC1}
+templatekey: Image Text Object
 
 ----version----
 language: en
 version: 1
-revision: 0321fbb3-fc66-404e-8e54-935ec78112d9
+revision: d60a77ce-6016-4776-85fa-b39c712b3f6e
 
+----field----
+field: {0AB28A95-2EFC-4333-B617-155C738623C9}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{36FE21CC-B492-458C-B4FA-C009783D8A0C}" />
+----field----
+field: {97376B76-2C43-4ECC-8E56-5322D1CBD35D}
+name: Text
+key: text
+content-length: 95
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla expedita officiis dolorem iusto
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -27,7 +41,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150810T002714Z
+20150807T081103Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0321fbb3-fc66-404e-8e54-935ec78112d9
+d60a77ce-6016-4776-85fa-b39c712b3f6e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150810T002714Z
+20150807T081143Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

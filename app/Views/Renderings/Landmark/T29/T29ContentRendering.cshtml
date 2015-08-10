@@ -17,7 +17,12 @@
             </div>
             <div class="col-md-6 text-center">
                 <div class="gd-pagetitle">
-                    <img class="gd-lightbox-link" data-lightsrc="https://boredanddangerousblog.files.wordpress.com/2014/06/edgeoftomorrow2.jpg" src="../files/landmark/images/artpiece/artpiece-bigpic-01.jpg" alt="artpiece picture">
+                    @{
+                        ImageField imageField = Sitecore.Context.Item.Fields["Art Image"];
+
+                        string alt = imageField.Alt;
+                    }
+                    <img class="gd-lightbox-link" data-lightsrc="https://boredanddangerousblog.files.wordpress.com/2014/06/edgeoftomorrow2.jpg" src="@Html.Sitecore().ImageFieldSrc("Art Image", Sitecore.Context.Item)" alt="@alt">
                 </div>
             </div>
             <div class="col-md-6">
@@ -34,7 +39,7 @@
                         <div class="col-md-6 text-right">
                             <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="sample.mp3">
                                 <span class="icomoon-sound-alt"></span>
-                                LISTEN TO COMMENTARY
+                                @Html.Sitecore().Field("Glossary Value", ItemGuids.RealatedArticlesItem)
                             </a>
                         </div>
                     </div>
