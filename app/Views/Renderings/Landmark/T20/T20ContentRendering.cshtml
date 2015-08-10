@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @model RenderingModel
 
@@ -12,13 +13,20 @@
                 <div class="carousel-caption-inner">
                     <div class="gd-carousel-detail">
                         <div class="gd-mainimage-brief">
-                            <h2>@Html.Sitecore().Field("Cover Title",Sitecore.Context.Item)</h2>
-                            @Html.Sitecore().Field("Cover Content",Sitecore.Context.Item)
-                            <button type="button" class="gd-button gd-button-reversed">
-                                @Html.Sitecore().Field("Button Text",Sitecore.Context.Item)
-                            </button>
+                            <h2>@Html.Sitecore().Field("Cover Title", Sitecore.Context.Item)</h2>
+                            @Html.Sitecore().Field("Cover Content", Sitecore.Context.Item)
+                            <form action="@Url.Action("ButtonRedirect", "Home")">
+                                @{
+                                    LinkField linkField = Sitecore.Context.Item.Fields["Button Link"];
+                                    <input type="hidden" value="@linkField.TargetItem.ID" name="targetId" />
+                                    <button type="submit" class="gd-button gd-button-reversed">
+                                        @Html.Sitecore().Field("Button Text", Sitecore.Context.Item)
+                                    </button>
+                                }
+                            </form>
+
                             <a href="#gd-audio-guide" class="gd-link-audio">
-                                <span class="icomoon-sound-alt"></span> MOBILE AUDIO GUIDE <span class="icomoon-chevron-small-right"></span>
+                                <span class="icomoon-sound-alt"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.MobileAudioGuideItem) <span class="icomoon-chevron-small-right"></span>
                             </a>
                         </div>
                     </div>
@@ -33,10 +41,10 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="gd-brief">
                 <div class="gd-brief-heading">
-                    <h3>@Html.Sitecore().Field("Content Title",Sitecore.Context.Item)</h3>
+                    <h3>@Html.Sitecore().Field("Content Title", Sitecore.Context.Item)</h3>
                 </div>
                 <div class="gd-brief-body">
-                    @Html.Sitecore().Field("Content Description",Sitecore.Context.Item)
+                    @Html.Sitecore().Field("Content Description", Sitecore.Context.Item)
                 </div>
             </div>
         </div>
@@ -44,20 +52,20 @@
 
     <div class="row">
         @{
-                var guides = LandmarkHelper.GetItemByTemplate(ItemGuids.ImageTextObjectTemplate);
-            }
-
-            @foreach (Item guide in guides)
+            var guides = LandmarkHelper.GetItemByTemplate(ItemGuids.ImageTextObjectTemplate);
+            
+            foreach (Item guide in guides)
             {
-            <div class="col-sm-4">
-                <div class="gd-picture-des">
-                    @Html.Sitecore().Field("Image",guide)
-                    <div class="gd-pd-text">
-                        <span>@guide.DisplayName</span>
-                        @Html.Sitecore().Field("Text",guide)
+                <div class="col-sm-4">
+                    <div class="gd-picture-des">
+                        @Html.Sitecore().Field("Image", guide)
+                        <div class="gd-pd-text">
+                            <span>@guide.DisplayName</span>
+                            @Html.Sitecore().Field("Text", guide)
+                        </div>
                     </div>
                 </div>
-            </div>
             }
-    </div>
+        }
+</div>
 </div>
