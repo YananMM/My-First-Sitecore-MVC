@@ -12,7 +12,7 @@ templatekey: Landmark Config
 ----version----
 language: en
 version: 1
-revision: 1570ed32-294e-48e6-afba-2e7da9df7f7f
+revision: fa36bb89-a0cb-492e-afc7-6e1bb96ce565
 
 ----field----
 field: {217B1155-8188-498E-84EB-92CEC31E5D09}
@@ -57,6 +57,13 @@ content-length: 10
 
 1021410252
 ----field----
+field: {321BC576-F325-438D-B817-1F943BF90E8F}
+name: Share Email To
+key: share email to
+content-length: 16
+
+yanan@gruden.com
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -83,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1570ed32-294e-48e6-afba-2e7da9df7f7f
+fa36bb89-a0cb-492e-afc7-6e1bb96ce565
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150810T072727Z
+20150810T073926Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
