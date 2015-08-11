@@ -26,7 +26,7 @@ content-length: 158
 ----version----
 language: en
 version: 1
-revision: 99278a6a-58ed-49d1-87ea-d28c6da2b245
+revision: 0728957f-468c-4fc0-95f5-4cfb8b5cd52f
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -74,9 +74,9 @@ content-length: 109
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
 key: art key
-content-length: 13
+content-length: 24
 
-OIL ON CANVAS
+ACYLIC AND OIL ON CANVAS
 ----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
@@ -84,6 +84,13 @@ key: art image
 content-length: 58
 
 <image mediaid="{93519406-9280-4A6A-AE92-5A6D1B4C509C}" />
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 54
+
+Digital Prints on Canvas Lorem ipsum dolor sit amet...
 ----field----
 field: {22B6E709-1F38-4AF9-8D6C-7E3443E4F3ED}
 name: Floor and Building
@@ -104,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-99278a6a-58ed-49d1-87ea-d28c6da2b245
+0728957f-468c-4fc0-95f5-4cfb8b5cd52f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150811T070755:635748736758388601Z
+20150811T085218:635748799386340715Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

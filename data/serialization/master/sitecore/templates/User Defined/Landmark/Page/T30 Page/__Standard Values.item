@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {EB36C543-58B1-471B-AECA-2FEF2861AE93}
+database: master
+path: /sitecore/templates/User Defined/Landmark/Page/T30 Page/__Standard Values
+parent: {EC149566-D74F-4E4F-9F2C-A0745E72988E}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {EC149566-D74F-4E4F-9F2C-A0745E72988E}
+templatekey: T30 Page
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 547
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{F8D2E7E4-68AF-405D-8356-752922EACF54}"><r id="{53B49FDF-8B9A-4EDB-AA98-F3431087248C}" ph="" uid="{3A786C3B-6E44-4527-8CE9-CA9EBB622010}" /><r id="{B8F13621-BBCA-43FA-9E29-E9FA95A106C0}" ph="" uid="{E7E7418B-992A-4B37-9DA2-78441B0AD899}" /><r id="{25CD4E4B-1849-40E2-84D8-EB9294C10064}" ph="" uid="{4C1BA4B8-5333-4C73-8FB1-1D5C5A931089}" /><r id="{FC42194F-F5F8-4761-A798-90E96ADC46D1}" ph="" uid="{52EB6A39-6053-4C33-B5E7-95D476CD5124}" /></d></r>
+----version----
+language: en
+version: 1
+revision: aa8dea1b-fcf4-4dcf-b09f-30038f54ee83
+
+----field----
+field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
+name: __Final Renderings
+key: __final renderings
+content-length: 547
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{F8D2E7E4-68AF-405D-8356-752922EACF54}"><r id="{53B49FDF-8B9A-4EDB-AA98-F3431087248C}" ph="" uid="{3A786C3B-6E44-4527-8CE9-CA9EBB622010}" /><r id="{B8F13621-BBCA-43FA-9E29-E9FA95A106C0}" ph="" uid="{E7E7418B-992A-4B37-9DA2-78441B0AD899}" /><r id="{25CD4E4B-1849-40E2-84D8-EB9294C10064}" ph="" uid="{4C1BA4B8-5333-4C73-8FB1-1D5C5A931089}" /><r id="{FC42194F-F5F8-4761-A798-90E96ADC46D1}" ph="" uid="{52EB6A39-6053-4C33-B5E7-95D476CD5124}" /></d></r>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150811T074459Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+aa8dea1b-fcf4-4dcf-b09f-30038f54ee83
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150811T074547:635748759474057863Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

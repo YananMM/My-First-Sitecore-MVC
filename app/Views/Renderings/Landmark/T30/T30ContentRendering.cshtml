@@ -19,61 +19,25 @@
             <div class="col-md-3 text-center">
                 <div>
                     <div class="visible-xs-block  visible-sm-block gd-mainimage-brief ">
-                        <h2>@Html.Sitecore().Field("Art Name")</h2>
-                        <p>@Html.Sitecore().Field("Art Birthday Label") @Html.Sitecore().Field("Art Birthday Text")</p>
+                        <h2>@Html.Sitecore().Field("Artist Name")</h2>
+                        <p>@Html.Sitecore().Field("Artist Birthday Label") @Html.Sitecore().Field("Artist Birthday Text")</p>
                     </div>
-                    @Html.Sitecore().Field("Art Photo")
+                    @Html.Sitecore().Field("Artist Photo")
 
-                    <div class="gd-artist-info">@Html.Sitecore().Field("Art Photo Description")</div>
+                    <div class="gd-artist-info">@Html.Sitecore().Field("Artist Photo Description")</div>
                 </div>
             </div>
             <div class="col-md-9">
                 <div class="gd-mainimage-brief gd-longarticle">
                     <div class="hidden-xs hidden-sm">
-                        <h2>@Html.Sitecore().Field("Art Name")</h2>
-                        <p>@Html.Sitecore().Field("Art Birthday Label") @Html.Sitecore().Field("Art Birthday Text")</p>
+                        <h2>@Html.Sitecore().Field("Artist Name")</h2>
+                        <p>@Html.Sitecore().Field("Artist Birthday Label") @Html.Sitecore().Field("Artist Birthday Text")</p>
                     </div>
-                    <p>Born and raised in Hong Kong, of Eurasian heritage, Maria Lobo’s art training took her to Italy, Spain, Canada and the USA. </p>
-                    <p>Maria returned to Hong Kong in 1994, having been part of the San Francisco Hunters Point Artists’ Community. A decade later, Maria returned to North America and currently resides in San Francisco and exhibits her work internationally. Maria’s East and West heritage, Asian roots and international experience are all reflected in her style of artwork. Her Asian-inspired abstract artworks incorporate both Western. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut veniam, dignissimos perferendis praesentium officiis, exercitationem doloremque assumenda quam explicabo natus temporibus consectetur expedita architecto. Porro excepturi aperiam vel deleniti voluptatibus, accusamus beatae doloremque quisquam earum aliquam totam provident voluptates vero nam quo voluptatem sint delectus cupiditate neque a ex! Dolores praesentium accusantium totam ut? Ut sed quis itaque perspiciatis repellendus delectus doloribus deleniti, earum expedita voluptatibus velit nobis quos, veritatis. Dolore recusandae error dignissimos ipsum velit doloribus magnam, ab, culpa, corporis magni labore cupiditate praesentium. In voluptate veritatis deserunt quaerat nulla aliquam natus corrupti officiis tempora harum, inventore, provident est.</p>
+                    @Html.Sitecore().Field("Artist Description")
                     <a href="javascript:;" class="gd-artist-more gd-longarticle-switcher">READ MORE +</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="container">
-
-    <div class="gd-artlist">
-        <h2>BY THIS ARTIST</h2>
-        <div class="row">
-            <div class="col-md-3">
-                <a href="t29.html">
-                    <img data-src="../files/landmark/images/artist/artist-picture-01.jpg" alt="artpiece picture">
-                    <h3>Textured Viewpoints I, 2012</h3>
-                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="t29.html">
-                    <img data-src="../files/landmark/images/artist/artist-picture-02.jpg" alt="artpiece picture">
-                    <h3>Textured Viewpoints I, 2012</h3>
-                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="t29.html">
-                    <img data-src="../files/landmark/images/artist/artist-picture-03.jpg" alt="artpiece picture">
-                    <h3>Textured Viewpoints I, 2012</h3>
-                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
-                </a>
-            </div>
-            <div class="col-md-3">
-                <a href="t29.html">
-                    <img data-src="../files/landmark/images/artist/artist-picture-04.jpg" alt="artpiece picture">
-                    <h3>Textured Viewpoints I, 2012</h3>
-                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
+@Html.Sitecore().Placeholder("t30-by-artist")

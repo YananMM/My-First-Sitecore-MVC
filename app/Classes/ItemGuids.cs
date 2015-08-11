@@ -89,5 +89,8 @@ namespace Landmark.Classes
 
         public static readonly Item AlsoInItem =
             Sitecore.Context.Database.GetItem("{0F082781-8037-4643-96F6-88104B58539A}");
+
+        public static readonly Item ByThisArtistItem =
+            Sitecore.Context.Database.GetItem("{B8DBA1C5-3950-4A13-A460-7C7A1795B682}");
     }
 }

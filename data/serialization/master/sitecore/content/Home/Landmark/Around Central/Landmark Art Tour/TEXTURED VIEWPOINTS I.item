@@ -19,7 +19,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: a1e785bd-c6f2-481f-a551-0e2a42c5a830
+revision: ae52be32-2ec6-47c6-bad9-f7c4bbbdcf9f
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -71,6 +71,13 @@ content-length: 58
 
 <image mediaid="{0EEAAC48-680D-4AB2-A77E-6A3E2025AA40}" />
 ----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 80
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit porro, nemo modi.
+----field----
 field: {22B6E709-1F38-4AF9-8D6C-7E3443E4F3ED}
 name: Floor and Building
 key: floor and building
@@ -90,14 +97,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a1e785bd-c6f2-481f-a551-0e2a42c5a830
+ae52be32-2ec6-47c6-bad9-f7c4bbbdcf9f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150811T071022:635748738220152209Z
+20150811T085335:635748800156504766Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

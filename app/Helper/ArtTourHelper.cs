@@ -38,7 +38,7 @@ namespace Landmark.Helper
         /// <returns>Item.</returns>
         public Item GetArtistByArt(Item art)
         {
-            Sitecore.Data.Fields.GroupedDroplinkField artistField = art.Fields["Artist"];
+            GroupedDroplinkField artistField = art.Fields["Artist"];
             if (artistField != null)
             {
                 return artistField.TargetItem;
@@ -86,5 +86,25 @@ namespace Landmark.Helper
             }
             return artPieces;
         }
+
+        public List<Item> GetArtByArtist(string artistId)
+        {
+            List<Item> artPieces = new ItemList();
+            List<Item> allArtPieces = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkArtTourItem, ItemGuids.T29Template);
+            if (allArtPieces != null && allArtPieces.Count != 0)
+            {
+                foreach (var item in allArtPieces)
+                {
+                    GroupedDroplinkField artistField = item.Fields["Artist"];
+                    var artist = artistField.TargetItem;
+                    if (artist.ID.ToString() == artistId)
+                    {
+                        artPieces.Add(item);
+                    }
+                }
+            }
+            return artPieces;
+        } 
+
     }
 }
