@@ -12,8 +12,15 @@ templatekey: T20 Page
 ----version----
 language: en
 version: 1
-revision: c2562735-4d4e-4de8-8390-fdf57956d3ab
+revision: 6c13f155-e3cb-4b22-a0f3-14591762560e
 
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 18
+
+LANDMARK ART GUIDE
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -21,6 +28,20 @@ key: page title
 content-length: 18
 
 Landmark Art Tour1
+----field----
+field: {801CA251-92F3-4B68-945C-3FBB6DEA8A56}
+name: Cover Title
+key: cover title
+content-length: 17
+
+CENTRAL ART GUIDE
+----field----
+field: {2511C4C1-908A-4C03-B12B-52B5E95CA051}
+name: Button Link
+key: button link
+content-length: 137
+
+<link text="" linktype="internal" class="" title="" target='Active Browser' querystring="" id="{57B8DEB0-CDFF-4287-94D6-E19191142B1B}" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -34,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c2562735-4d4e-4de8-8390-fdf57956d3ab
+6c13f155-e3cb-4b22-a0f3-14591762560e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150810T083702:635747926221433239Z
+20150810T084739:635747932594277745Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -2,9 +2,9 @@
 version: 1
 id: {04670F13-3F17-47AC-B6AA-858F246682E0}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T29 Page/Art Piece Data/Art Created Time
+path: /sitecore/templates/User Defined/Landmark/Page/T29 Page/Art Piece Data/Created Time
 parent: {FB236285-7FCF-41DE-B6DD-73877ED883D4}
-name: Art Created Time
+name: Created Time
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -26,7 +26,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 94040e84-1ee5-4ed4-afa3-54b705bc74f0
+revision: e468faac-f10b-4af2-a2df-3d8a08389548
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-94040e84-1ee5-4ed4-afa3-54b705bc74f0
+e468faac-f10b-4af2-a2df-3d8a08389548
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150811T023313:635748571930881007Z
+20150811T071842:635748743222148307Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

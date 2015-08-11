@@ -1,54 +1,47 @@
 ----item----
 version: 1
-id: {17019BE1-E550-4295-9C41-2919A948E14C}
+id: {0E145AD6-A4FB-4636-8C28-65A31AD8D76D}
 database: master
-path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/MELODY OF CLOUDS
+path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/GLOWING WIND
 parent: {5C03DD0D-4881-4A9B-A58D-5FFA101B3533}
-name: MELODY OF CLOUDS
+name: GLOWING WIND
 master: {00000000-0000-0000-0000-000000000000}
 template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
 templatekey: T29 Page
 
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 3
-
-500
 ----version----
 language: en
 version: 1
-revision: 3ceae454-24e6-47b1-95d2-af3c7d5c359b
+revision: c701a099-f47f-432c-b11a-62621b083b22
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 16
+content-length: 12
 
-MELODY OF CLOUDS
+GLOWING WIND
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Piece Name
 key: art piece name
-content-length: 16
+content-length: 42
 
-MELODY OF CLOUDS
+THE MAKING OF THE SPHERES II: GLOWING WIND
 ----field----
 field: {04670F13-3F17-47AC-B6AA-858F246682E0}
 name: Art Created Time
 key: art created time
 content-length: 4
 
-1996
+1988
 ----field----
 field: {25ECD930-4134-4B41-A387-D063717B49B9}
 name: Art Size
 key: art size
 content-length: 10
 
-160X200 CM
+220X220 CM
 ----field----
 field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
 name: Artist
@@ -60,16 +53,16 @@ content-length: 38
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Type
 key: art type
-content-length: 13
+content-length: 24
 
-OIL ON CANVAS
+ACYLIC AND OIL ON CANVAS
 ----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
 content-length: 58
 
-<image mediaid="{57C6BB1E-33AE-4D73-A627-AB559CA332DB}" />
+<image mediaid="{484906C6-590F-4E1C-867B-7BD4351581C9}" />
 ----field----
 field: {22B6E709-1F38-4AF9-8D6C-7E3443E4F3ED}
 name: Floor and Building
@@ -83,21 +76,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150810T002837Z
+20150811T071326Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-3ceae454-24e6-47b1-95d2-af3c7d5c359b
+c701a099-f47f-432c-b11a-62621b083b22
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150811T071140:635748739000336833Z
+20150811T071459:635748740999601185Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

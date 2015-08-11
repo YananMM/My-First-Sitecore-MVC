@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+id: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T29 Page/Art Piece Data/Art Piece Name
+path: /sitecore/templates/User Defined/Landmark/Page/T29 Page/Art Piece Data/Art Key
 parent: {FB236285-7FCF-41DE-B6DD-73877ED883D4}
-name: Art Piece Name
+name: Art Key
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -22,11 +22,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-100
+700
 ----version----
 language: en
 version: 1
-revision: 1f469896-84dc-4d0b-b4ed-3eb13d5c9add
+revision: 30efcf1a-b3d6-4627-97ac-a04f5c961d46
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150810T002946Z
+20150810T063233Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-1f469896-84dc-4d0b-b4ed-3eb13d5c9add
+30efcf1a-b3d6-4627-97ac-a04f5c961d46
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150811T023312:635748571929650937Z
+20150811T071842:635748743222948353Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

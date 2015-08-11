@@ -9,10 +9,17 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {EC149566-D74F-4E4F-9F2C-A0745E72988E}
 templatekey: T30 Page
 
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
 ----version----
 language: en
 version: 1
-revision: 2f11e5ec-c7f4-4d71-8a7a-ed93a6a9aa9b
+revision: 3a09b71a-ade2-4e01-b4c3-bd8b67dafa1a
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2f11e5ec-c7f4-4d71-8a7a-ed93a6a9aa9b
+3a09b71a-ade2-4e01-b4c3-bd8b67dafa1a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150810T083040:635747922409245194Z
+20150811T070755:635748736758078583Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
