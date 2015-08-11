@@ -82,5 +82,7 @@ namespace Landmark.Classes
         public static readonly Item MobileAudioGuideItem = Sitecore.Context.Database.GetItem("{DD2597D1-42CF-4A71-BD93-8A05851B91B9}");
         public static readonly Item ListenToCommentaryItem = Sitecore.Context.Database.GetItem("{55FAB28E-6000-4382-833A-4A29C8CA38B0}");
 
+        public static readonly Item LocationItem =
+            Sitecore.Context.Database.GetItem("{944602F7-94FA-4927-8D72-65326C2F9C32}");
     }
 }
