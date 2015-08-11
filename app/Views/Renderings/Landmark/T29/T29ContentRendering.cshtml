@@ -17,12 +17,13 @@
             </div>
             <div class="col-md-6 text-center">
                 <div class="gd-pagetitle">
-                    @{
+                    @*@{
                         ImageField imageField = Sitecore.Context.Item.Fields["Art Image"];
 
                         string alt = imageField.Alt;
-                    }
-                    <img class="gd-lightbox-link" data-lightsrc="https://boredanddangerousblog.files.wordpress.com/2014/06/edgeoftomorrow2.jpg" src="@Html.Sitecore().ImageFieldSrc("Art Image", Sitecore.Context.Item)" alt="@alt">
+                        <img class="gd-lightbox-link" data-lightsrc="https://boredanddangerousblog.files.wordpress.com/2014/06/edgeoftomorrow2.jpg" src="@Html.Sitecore().ImageFieldSrc("Art Image", Sitecore.Context.Item)" alt="@alt">
+                    }*@
+                    @Html.Sitecore().Field("Art Image", new { @class = "gd-lightbox-link" })
                 </div>
             </div>
             <div class="col-md-6">
@@ -52,7 +53,6 @@
                             </a>
                         </div>
                     </div>
-
                     @Html.Sitecore().Placeholder("t29-artist")
                 </div>
             </div>
@@ -60,60 +60,4 @@
     </div>
 </div>
 
-<div class="gd-showcase" data-position="0">
-    <a href="javascript:;" class="gd-showcase-control gd-showcase-left">
-        <span class="icomoon-thin-arrow-L"></span>
-    </a>
-    <div class="container">
-        <h2>ALSO IN LANDMARK ARTRIUM</h2>
-        <div class="gd-showcase-content">
-            <ul class="gd-showcase-items clearfix">
-                <li>
-                    <a href="">
-                        <img src="../files/landmark/images/artist/artist-picture-01.jpg" alt="">
-                        <h3>Lorem ipsum dolor sit.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores voluptatum cumque unde.</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="../files/landmark/images/artist/artist-picture-02.jpg" alt="">
-                        <h3>Lorem ipsum dolor sit.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit porro, nemo modi.</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="../files/landmark/images/artist/artist-picture-03.jpg" alt="">
-                        <h3>Lorem ipsum dolor sit.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis facilis quidem magnam.</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="../files/landmark/images/artist/artist-picture-04.jpg" alt="">
-                        <h3>Lorem ipsum dolor sit.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid unde maiores a?</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="../files/landmark/images/artist/artist-picture-01.jpg" alt="">
-                        <h3>Lorem ipsum dolor sit.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, placeat mollitia. Delectus!</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="../files/landmark/images/artist/artist-picture-02.jpg" alt="">
-                        <h3>Lorem ipsum dolor sit.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, doloremque, necessitatibus. Dicta.</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <a href="javascript:;" class="gd-showcase-control gd-showcase-right">
-        <span class="icomoon-thin-arrow-R"></span>
-    </a>
-</div>
+@Html.Sitecore().Placeholder("t29-also-in")

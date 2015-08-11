@@ -127,6 +127,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\ShoppingController.cs" />
+    <Compile Include="Helper\ArtTourHelper.cs" />
     <Compile Include="Helper\LandmarkHelper.cs" />
     <Compile Include="Helper\ShoppingHelper.cs" />
     <Compile Include="Helper\SitecoreFieldHelper.cs" />
@@ -451,6 +452,7 @@
     <Content Include="Views\Renderings\Landmark\T20\T20ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T29\T29ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T29\T29ArtistRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T29\T29AlsoInRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
