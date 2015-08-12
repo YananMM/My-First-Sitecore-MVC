@@ -12,7 +12,7 @@ templatekey: Floor Object
 ----version----
 language: en
 version: 1
-revision: c90ac8bd-53ed-4fd6-86e8-8b41973679e5
+revision: b145afe6-1e0b-41b8-850d-1861b75accee
 
 ----field----
 field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
@@ -29,6 +29,13 @@ content-length: 58
 
 <image mediaid="{9437F2DF-C8EC-46AB-8D6B-612371BE38E8}" />
 ----field----
+field: {FF370512-19AC-4386-B26B-D64C14BF4693}
+name: Is Shown
+key: is shown
+content-length: 0
+
+
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c90ac8bd-53ed-4fd6-86e8-8b41973679e5
+b145afe6-1e0b-41b8-850d-1861b75accee
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150806T091848:635744495287695523Z
+20150811T055048:635748690486502001Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
