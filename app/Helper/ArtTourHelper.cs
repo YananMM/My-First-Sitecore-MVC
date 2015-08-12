@@ -116,26 +116,48 @@ namespace Landmark.Helper
         /// Gets the artist models.
         /// </summary>
         /// <returns>List{ArtistModel}.</returns>
-        public List<ArtistModel> GetArtistModels()
+        public List<ArtPieceModel> GetArtPieceModelsByArtists()
         {
-            List<ArtistModel> artistModels = new List<ArtistModel>();
+            List<ArtPieceModel> models = new List<ArtPieceModel>();
             List<Item> allArtists = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkArtTourItem,
-                ItemGuids.T30Template);
+                ItemGuids.T30Template).OrderBy(p => p.DisplayName).ToList();
             if (allArtists != null && allArtists.Count != 0)
             {
                 foreach (var item in allArtists)
                 {
                     var artPieces = GetArtByArtist(item.ID.ToString());
-                    ArtistModel model = new ArtistModel()
+                    if (artPieces != null && artPieces.Count > 2)
                     {
-                        Artist = item,
-                        ArtPieces = allArtists
-                    };
-                    artistModels.Add(model);
+                        artPieces = artPieces.GetRange(0, 2);
+                    }
+                    ArtPieceModel model = new ArtPieceModel();
+                    model.Artist = item;
+                    model.ArtPieces = (artPieces != null && artPieces.Count != 0) ? artPieces : new List<Item>();
+                    models.Add(model);
                 }
             }
-            return artistModels;
+            return models;
         }
+
+        public List<ArtPieceModel> GetArtPieceModelsByBuildings()
+        {
+            List<ArtPieceModel> models = new List<ArtPieceModel>();
+            List<Item> allBuildings = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.BuidingsFolder,
+                ItemGuids.BuildingDataObject).ToList();
+            if (allBuildings != null && allBuildings.Count != 0)
+            {
+                foreach (var item in allBuildings)
+                {
+                    var artPieces = GetArtByBuilding(item.ID.ToString());
+                    ArtPieceModel model = new ArtPieceModel();
+                    model.Building = item;
+                    model.ArtPieces = (artPieces != null && artPieces.Count != 0) ? artPieces : new List<Item>();
+                    models.Add(model);
+                }
+            }
+            return models;
+        }
+
 
     }
 }

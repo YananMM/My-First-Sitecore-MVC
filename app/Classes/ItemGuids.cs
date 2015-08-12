@@ -29,7 +29,7 @@ namespace Landmark.Classes
         //public static readonly String T14TagsRenderingViewGuid = "{303EA462-99C6-447B-B3AA-C4F4F0441549}";
         public static readonly String T14AlsoOnFloorRenderingViewGuid = "{E4C9F730-0F32-481A-A631-814E9DD01CF0}";
         public static readonly String T14YouMayAlsoLikeRenderingViewGuid = "{606750CC-CD89-4E63-9CF6-B0112FAF6D4A}";
-            
+
         //item id
         //public static readonly String PanelsFolderItemGuid = "{3BB40D54-8F7F-449B-B9DB-432C65EB4224}";
         //public static readonly String AdvertTemplateItemGuid = "{32677AD3-AB70-49BF-A525-08493045C4FA}";
@@ -55,6 +55,9 @@ namespace Landmark.Classes
         public static readonly String LandmarkArtTourItem = "{5C03DD0D-4881-4A9B-A58D-5FFA101B3533}";
         public static readonly String T29Template = "{ADE0F061-FF28-4CDB-B6C3-14021D75355A}";
         public static readonly String T30Template = "{EC149566-D74F-4E4F-9F2C-A0745E72988E}";
+        public static readonly String BuildingDataObject = "{873FCBBD-5F81-4DD2-B885-DFDCA194A5D1}";
+        public static readonly String ByArtistPage = "{5126FB8C-1FB4-4C06-A8AC-23D8B260DF23}";
+        public static readonly String ByLocationPage = "{2149D38C-BDE5-404C-A1AB-4E8245B3228C}";
 
         //item 
         public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}");
@@ -85,19 +88,16 @@ namespace Landmark.Classes
         public static readonly Item MobileAudioGuideItem = Sitecore.Context.Database.GetItem("{DD2597D1-42CF-4A71-BD93-8A05851B91B9}");
         public static readonly Item ListenToCommentaryItem = Sitecore.Context.Database.GetItem("{55FAB28E-6000-4382-833A-4A29C8CA38B0}");
 
-        public static readonly Item LocationItem =
-            Sitecore.Context.Database.GetItem("{944602F7-94FA-4927-8D72-65326C2F9C32}");
+        public static readonly Item LocationItem = Sitecore.Context.Database.GetItem("{944602F7-94FA-4927-8D72-65326C2F9C32}");
 
-        public static readonly Item AlsoInItem =
-            Sitecore.Context.Database.GetItem("{0F082781-8037-4643-96F6-88104B58539A}");
+        public static readonly Item AlsoInItem = Sitecore.Context.Database.GetItem("{0F082781-8037-4643-96F6-88104B58539A}");
 
-        public static readonly Item ByThisArtistItem =
-            Sitecore.Context.Database.GetItem("{B8DBA1C5-3950-4A13-A460-7C7A1795B682}");
+        public static readonly Item ByThisArtistItem = Sitecore.Context.Database.GetItem("{B8DBA1C5-3950-4A13-A460-7C7A1795B682}");
 
-        public static readonly Item ViewByItem =
-            Sitecore.Context.Database.GetItem("{79222D4A-7956-4441-9D67-B080494D69BC}");
+        public static readonly Item ViewByItem = Sitecore.Context.Database.GetItem("{79222D4A-7956-4441-9D67-B080494D69BC}");
 
-        public static readonly Item ArtistItem =
-            Sitecore.Context.Database.GetItem("{66B7043C-69C4-4212-A719-F4CE6EBCCB19}");
+        public static readonly Item ArtistItem = Sitecore.Context.Database.GetItem("{66B7043C-69C4-4212-A719-F4CE6EBCCB19}");
+
+        public static readonly Item MoreItem = Sitecore.Context.Database.GetItem("{30811B28-1ECB-4137-B8BF-B962FF16D7E7}");
     }
 }

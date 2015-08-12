@@ -27,10 +27,14 @@ namespace Landmark.Models
     }
 
 
-    public class ArtistModel
+    public class ArtPieceModel
     {
         public Item Artist { get; set; }
 
+        public Item Building { get; set; }
+
         public List<Item> ArtPieces { get; set; } 
     }
+
+
 }

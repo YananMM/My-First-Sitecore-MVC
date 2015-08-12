@@ -14,7 +14,7 @@
             <h1>CENTRAL ART GUIDE</h1>
         </div>
 
-        <div class="gd-pagetitle-menu">@Html.Sitecore().Field("Glossary Value", ItemGuids.ViewByItem) <a href="#" class="active">@Html.Sitecore().Field("Glossary Value", ItemGuids.ArtistItem)</a>  <span class="gd-pagetitle-menu-gap">|</span>  <a href="t22-2.html">@Html.Sitecore().Field("Glossary Value", ItemGuids.LocationItem)</a></div>
+        <div class="gd-pagetitle-menu">@Html.Sitecore().Field("Glossary Value", ItemGuids.ViewByItem) <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))" class="active">@Html.Sitecore().Field("Glossary Value", ItemGuids.ArtistItem)</a>  <span class="gd-pagetitle-menu-gap">|</span>  <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByLocationPage))">@Html.Sitecore().Field("Glossary Value", ItemGuids.LocationItem)</a></div>
     </div>
 
     @Html.Sitecore().Placeholder("by-artist")

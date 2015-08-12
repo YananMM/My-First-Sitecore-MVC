@@ -7,312 +7,62 @@
 @{
     ArtTourHelper helper = new ArtTourHelper();
 
-    var artistModels = helper.GetArtistModels();
+    var models = helper.GetArtPieceModelsByArtists();
 
-    List<List<ArtistModel>> listGroup = new List<List<ArtistModel>>();
-    if (artistModels.Count > 2)
+    List<List<ArtPieceModel>> listGroup = new List<List<ArtPieceModel>>();
+    if (models.Count > 2)
     {
-        int j = 2;
-        for (int i = 0; i < artistModels.Count; i += 2)
+        int j = Convert.ToInt32(Math.Ceiling((double)models.Count / 2));
+        for (int i = 0; i < models.Count; i += j)
         {
-            List<ArtistModel> cList = new List<ArtistModel>();
-            cList = artistModels.Take(j).Skip(i).ToList();
-            j += 2;
+            List<ArtPieceModel> cList = new List<ArtPieceModel>();
+            cList = models.Skip(i).Take(j).ToList();
             listGroup.Add(cList);
         }
     }
-    <h2>@listGroup.Count</h2>
 }
 <div class="art-gallery">
     <div class="row" id="gd-art-gallery">
-        <div class="col-md-6">
-            <div class="art-g-box gold-line">
-                <div class="art-g-box-header">
-                    <img data-src="../files/landmark/images/arttour/arttour-person-01.png">
-                    <div class="art-g-box-header-text">
-                        <h3>BO YUN<span>B. 1954</span></h3>
-                        <a>ARTIST BOIGRAPHY<span class="icomoon-chevron-small-right"></span></a>
-                    </div>
-                </div>
-                <div class="gd-artlist">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <article>
-                                <a href="/en/t29.html"><img data-src="../files/landmark/images/arttour/arttour-pic-01.jpg" alt="artpiece picture"></a>
-                                <h4>DAWN, 2013</h4>
-                                <p>Oil on canvas 360 x 280cm</p>
-                            </article>
+        @{
+            int m = 1;
+            foreach (var items in listGroup)
+            {
+                <div class="col-md-6">
+                    @foreach (var item in items)
+                    {
+                        <div @if (m == 1) { <text> class="art-g-box gold-line" </text>       } class="art-g-box">
+                            <div class="art-g-box-header">
+                                <img data-src="@Html.Sitecore().ImageFieldSrc("Artist Photo", item.Artist)">
+                                <div class="art-g-box-header-text">
+                                    <h3>@Html.Sitecore().Field("Artist Name", item.Artist)<span>@Html.Sitecore().Field("Artist Birthday Label", item.Artist) @Html.Sitecore().Field("Artist Birthday Text", item.Artist)</span></h3>
+                                    <a>ARTIST BOIGRAPHY<span class="icomoon-chevron-small-right"></span></a>
+                                </div>
+                            </div>
+                            <div class="gd-artlist">
+                                <div class="row">
+                                    @foreach (var artPiece in item.ArtPieces)
+                                    {
+                                        <div class="col-md-6">
+                                            <article>
+                                                <a href="@Sitecore.Links.LinkManager.GetItemUrl(artPiece)">
+                                                    @*<img data-src="@Html.Sitecore().ImageFieldSrc("Art Image", artPiece)" alt="artpiece picture">*@
+                                                    @Html.Sitecore().Field("Art Image", artPiece)
+                                                </a>
+                                                <h4>@Html.Sitecore().Field("Art Title", artPiece), @Html.Sitecore().Field("Created Time", artPiece)</h4>
+                                                <p>@Html.Sitecore().Field("Art Key", artPiece) @Html.Sitecore().Field("Art Size", artPiece)</p>
+                                            </article>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <article>
-                                <a href="/en/t29-2.html">
-                                    <img data-src="../files/landmark/images/arttour/arttour-pic-02.jpg" alt="artpiece picture">
-                                </a>
-                                <h4>MELODY OF CLOUDS, 2013</h4>
-                                <p>Oil on canvas 360 x 280cm</p>
-                            </article>
-                        </div>
-                    </div>
+                    }
                 </div>
-            </div>
-            <div class="art-g-box">
-                <div class="art-g-box-header">
-                    <img data-src="../files/landmark/images/arttour/arttour-person-04.png">
-                    <div class="art-g-box-header-text">
-                        <h3>DAME ELISHABETH JEAN FRINK, CH, DBE, RA<span>b. 1950</span></h3>
-                        <a>ARTIST BOIGRAPHY<span class="icomoon-chevron-small-right"></span></a>
-                    </div>
-                </div>
-                <div class="gd-artlist">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <article>
-                                <a href="/en/t29.html">
-                                    <img data-src="../files/landmark/images/arttour/arttour-pic-06.jpg" alt="artpiece picture">
-                                </a>
-                                <h4>DAWN, 2013</h4>
-                                <p>Oil on canvas 360 x 280cm</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="art-g-box">
-                <div class="art-g-box-header">
-                    <img data-src="../files/landmark/images/arttour/arttour-person-04.png">
-                    <div class="art-g-box-header-text">
-                        <h3>TEST LAZY LOAD<span>b. 1950</span></h3>
-                        <a>TEST LAZY LOAD<span class="icomoon-chevron-small-right"></span></a>
-                    </div>
-                </div>
-                <div class="gd-artlist">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <article>
-                                <a href="/en/t29.html">
-                                    <img data-src="http://www.jackygallery.com/images/Branches%20of%20an%20Almond%20Tree%20in%20Blossom%20by%20Vincent%20Van%20Gogh%20OSA396.jpg" alt="artpiece picture">
-                                </a>
-                                <h4>DAWN, 2013</h4>
-                                <p>Oil on canvas 360 x 280cm</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="art-g-box">
-                <div class="art-g-box-header">
-                    <img data-src="../files/landmark/images/arttour/arttour-person-04.png">
-                    <div class="art-g-box-header-text">
-                        <h3>TEST LAZY LOAD<span>b. 1950</span></h3>
-                        <a>TEST LAZY LOAD<span class="icomoon-chevron-small-right"></span></a>
-                    </div>
-                </div>
-                <div class="gd-artlist">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <article>
-                                <a href="/en/t29.html">
-                                    <img data-src="http://www.zastavki.com/pictures/originals/2014/Drawn_wallpapers___Paintings_Painting_of_Vincent_Van_Gogh_-_Field_068874_.jpg" alt="artpiece picture">
-                                </a>
-                                <h4>DAWN, 2013</h4>
-                                <p>Oil on canvas 360 x 280cm</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="art-g-box">
-                <div class="art-g-box-header">
-                    <img data-src="../files/landmark/images/arttour/arttour-person-04.png">
-                    <div class="art-g-box-header-text">
-                        <h3>TEST LAZY LOAD<span>b. 1950</span></h3>
-                        <a>TEST LAZY LOAD<span class="icomoon-chevron-small-right"></span></a>
-                    </div>
-                </div>
-                <div class="gd-artlist">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <article>
-                                <a href="/en/t29.html">
-                                    <img data-src="http://flavorwire.files.wordpress.com/2012/03/white1.jpg" alt="artpiece picture">
-                                </a>
-                                <h4>DAWN, 2013</h4>
-                                <p>Oil on canvas 360 x 280cm</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="art-g-box">
-                <div class="art-g-box-header">
-                    <img data-src="../files/landmark/images/arttour/arttour-person-04.png">
-                    <div class="art-g-box-header-text">
-                        <h3>TEST LAZY LOAD<span>b. 1950</span></h3>
-                        <a>TEST LAZY LOAD<span class="icomoon-chevron-small-right"></span></a>
-                    </div>
-                </div>
-                <div class="gd-artlist">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <article>
-                                <a href="/en/t29.html">
-                                    <img class="loadImage" data-src="http://www.newklages.com/images/06-Potato%20Eaters.jpg" alt="artpiece picture">
-                                </a>
-                                <h4>DAWN, 2013</h4>
-                                <p>Oil on canvas 360 x 280cm</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="art-g-box">
-                <div class="art-g-box-header">
-                    <img data-src="../files/landmark/images/arttour/arttour-person-02.png">
-                    <div class="art-g-box-header-text">
-                        <h3>CHU HON SUN<span>B. 1950</span></h3>
-                        <a>ARTIST BOIGRAPHY<span class="icomoon-chevron-small-right"></span></a>
-                    </div>
-                </div>
-
-                <div class="gd-artlist">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <article>
-                                <a href="/en/t29.html">
-                                    <img data-src="../files/landmark/images/arttour/arttour-pic-03.jpg" alt="artpiece picture">
-                                </a>
-                                <h4>DAWN, 2013</h4>
-                                <p>Oil on canvas 360 x 280cm</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="art-g-box">
-                <div class="art-g-box-header">
-                    <img data-src="../files/landmark/images/arttour/arttour-person-03.png">
-                    <div class="art-g-box-header-text">
-                        <h3>CHU TAT SHANG<span>B. 1950</span></h3>
-                        <a>ARTIST BOIGRAPHY<span class="icomoon-chevron-small-right"></span></a>
-                    </div>
-                </div>
-
-                <div class="gd-artlist">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <article>
-                                <a href="/en/t29.html">
-                                    <img data-src="../files/landmark/images/arttour/arttour-pic-04.jpg" alt="artpiece picture">
-                                </a>
-                                <h4>DAWN, 2013</h4>
-                                <p>Oil on canvas 360 x 280cm</p>
-                            </article>
-                        </div>
-                        <div class="col-md-6">
-                            <article>
-                                <a href="/en/t29-2.html">
-                                    <img data-src="../files/landmark/images/arttour/arttour-pic-05.jpg" alt="artpiece picture">
-                                </a>
-                                <h3>MELODY OF CLOUDS, 2013</h3>
-                                <p>Oil on canvas 360 x 280cm</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="art-g-box">
-                <div class="art-g-box-header">
-                    <img data-src="../files/landmark/images/arttour/arttour-person-04.png">
-                    <div class="art-g-box-header-text">
-                        <h3>TEST LAZY LOAD<span>b. 1950</span></h3>
-                        <a>TEST LAZY LOAD<span class="icomoon-chevron-small-right"></span></a>
-                    </div>
-                </div>
-                <div class="gd-artlist">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <article>
-                                <a href="/en/t29.html">
-                                    <img class="gd-lightbox-link" data-lightsrc="http://salacioussound.com/wp-content/uploads/2012/11/most-famous-paintings-in-the-world-Starry-Night-by-Vincent-Van-Gogh.jpg" data-src="http://salacioussound.com/wp-content/uploads/2012/11/most-famous-paintings-in-the-world-Starry-Night-by-Vincent-Van-Gogh.jpg" alt="artpiece picture">
-                                </a>
-                                <h4>DAWN, 2013</h4>
-                                <p>Oil on canvas 360 x 280cm</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="art-g-box">
-                <div class="art-g-box-header">
-                    <img data-src="../files/landmark/images/arttour/arttour-person-04.png">
-                    <div class="art-g-box-header-text">
-                        <h3>TEST LAZY LOAD<span>b. 1950</span></h3>
-                        <a>TEST LAZY LOAD<span class="icomoon-chevron-small-right"></span></a>
-                    </div>
-                </div>
-                <div class="gd-artlist">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <article>
-                                <a href="/en/t29.html">
-                                    <img data-src="https://c1.staticflickr.com/7/6181/6110408418_cd4a692a8e_b.jpg" alt="artpiece picture">
-                                </a>
-                                <h4>DAWN, 2013</h4>
-                                <p>Oil on canvas 360 x 280cm</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="art-g-box">
-                <div class="art-g-box-header">
-                    <img data-src="../files/landmark/images/arttour/arttour-person-04.png">
-                    <div class="art-g-box-header-text">
-                        <h3>TEST LAZY LOAD<span>b. 1950</span></h3>
-                        <a>TEST LAZY LOAD<span class="icomoon-chevron-small-right"></span></a>
-                    </div>
-                </div>
-                <div class="gd-artlist">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <article>
-                                <a href="/en/t29.html">
-                                    <img data-src="http://www.salavatfidai.com/uploads/5/2/0/5/52051503/6310689_orig.jpg" alt="artpiece picture">
-                                </a>
-                                <h4>DAWN, 2013</h4>
-                                <p>Oil on canvas 360 x 280cm</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="art-g-box">
-                <div class="art-g-box-header">
-                    <img data-src="../files/landmark/images/arttour/arttour-person-04.png">
-                    <div class="art-g-box-header-text">
-                        <h3>TEST LAZY LOAD<span>b. 1950</span></h3>
-                        <a>TEST LAZY LOAD<span class="icomoon-chevron-small-right"></span></a>
-                    </div>
-                </div>
-                <div class="gd-artlist">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <article>
-                                <a href="/en/t29.html">
-                                    <img data-src="http://thinkjarcollective.com/wp-content/uploads/2013/05/00-vincent-van-gogh-the-night-cafc3a9-1888.jpg" alt="artpiece picture">
-                                </a>
-                                <h4>DAWN, 2013</h4>
-                                <p>Oil on canvas 360 x 280cm</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    m++;
+            }
+        }
     </div>
 
-    <a id="gd-art-gallery-loading" class="loding-more"><img data-src="../files/landmark/images/more.gif">  MORE</a>
+    <a id="gd-art-gallery-loading" class="loding-more"><img data-src="@Url.Content("~/files/landmark/images/more.gif")">  @Html.Sitecore().Field("Glossary Value", ItemGuids.MoreItem)</a>
 
 </div>

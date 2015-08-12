@@ -1,1 +1,105 @@
-﻿
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@using Landmark.Models
+@model RenderingModel
+
+@{
+    ArtTourHelper helper = new ArtTourHelper();
+    //var models = helper.GetArtPieceModelsByBuildings();
+}
+<div class="row">
+    <div class="col-md-6">
+        <ul class="list-group gd-list-guide clearfix" id="gdfloorlist">
+            @*@if (models != null && models.Count != 0)
+            {
+                int i = 1;
+                foreach (var model in models)
+                {
+                    <li data-location="gdfpa1" @if (i == 1) { <text>
+                        class="list-group-item active"
+                        </text>          } class="list-group-item"><span class="badge">@i</span>@Html.Sitecore().Field("Buiding Title", model)</li>
+            i++;
+                }
+            }*@
+
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <div id="mapplic-t22"></div>
+    </div>
+</div>
+<div class="gd-artlist">
+    <h2>LANDMARK ARTIUM</h2>
+    <div id="gd-art-gallery">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="t29-2.html">
+                    <img data-src="../files/landmark/images/artpiece/artpiece-pic-01.jpg" alt="artpiece picture">
+                    <h3>TEXTURED VIEWPOINTS I, 2012</h3>
+                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="t29.html">
+                    <img data-src="../files/landmark/images/artpiece/artpiece-pic-02.jpg" alt="artpiece picture">
+                    <h3>TEXTURED VIEWPOINTS I, 2012</h3>
+                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="t29.html">
+                    <img data-src="../files/landmark/images/artpiece/artpiece-pic-03.jpg" alt="artpiece picture">
+                    <h3>TEXTURED VIEWPOINTS I, 2012</h3>
+                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="t29.html">
+                    <img data-src="../files/landmark/images/artpiece/artpiece-pic-04.jpg" alt="artpiece picture">
+                    <h3>Textured Viewpoints I, 2012</h3>
+                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="t29.html">
+                    <img data-src="../files/landmark/images/arttour/arttour-pic-04.jpg" alt="artpiece picture">
+                    <h3>TEXTURED VIEWPOINTS I, 2012</h3>
+                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="t29.html">
+                    <img data-src="../files/landmark/images/arttour/arttour-pic-03.jpg" alt="artpiece picture">
+                    <h3>TEXTURED VIEWPOINTS I, 2012</h3>
+                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="t29.html">
+                    <img data-src="../files/landmark/images/arttour/arttour-pic-02.jpg" alt="artpiece picture">
+                    <h3>TEXTURED VIEWPOINTS I, 2012</h3>
+                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="t29.html">
+                    <img data-src="../files/landmark/images/arttour/arttour-pic-01.jpg" alt="artpiece picture">
+                    <h3>TEXTURED VIEWPOINTS I, 2012</h3>
+                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <a id="gd-art-gallery-loading" class="loding-more"><img src="@Url.Content("~/files/landmark/images/more.gif")"></a>
+</div>
+
+
+
+@*<script type="text/javascript" src="/files/landmark/js/lib/svgmap/js/hammer.min.js"></script>
+<script type="text/javascript" src="/files/landmark/js/lib/svgmap/js/jquery.easing.js"></script>
+<script type="text/javascript" src="/files/landmark/js/lib/svgmap/js/smoothscroll.js"></script>
+<script type="text/javascript" src="/files/landmark/js/lib/svgmap/mapplic/mapplic.js"></script>*@
