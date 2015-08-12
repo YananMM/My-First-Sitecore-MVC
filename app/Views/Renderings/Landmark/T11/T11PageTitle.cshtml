@@ -1,4 +1,5 @@
 ﻿@using Landmark.Classes
+@using Sitecore.Links
 @model RenderingModel
 <section class="page-title">
     <div class="container">
@@ -7,7 +8,7 @@
                 <h2>@Sitecore.Context.Item["Page Title"].ToUpper()</h2>
             </div>
             <div class="col-lg-4 col-md-4 col-xs-6 link-seeall">
-                <a href="#">@Html.Sitecore().Field("Glossary Value", ItemGuids.SeeAllBrandsGuidItem)<span class="icomoon-chevron-small-right"></span></a>
+                <a href="@LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage))">@Html.Sitecore().Field("Glossary Value", ItemGuids.SeeAllBrandsGuidItem)<span class="icomoon-chevron-small-right"></span></a>
             </div>
         </div>
     </div>
