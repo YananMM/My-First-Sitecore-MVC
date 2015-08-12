@@ -25,4 +25,12 @@ namespace Landmark.Models
 
         public List<TagsTree> Children { get; set; }
     }
+
+
+    public class ArtistModel
+    {
+        public Item Artist { get; set; }
+
+        public List<Item> ArtPieces { get; set; } 
+    }
 }

@@ -457,6 +457,8 @@
     <Content Include="Views\Renderings\Landmark\T30\T30ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T30\T30ByThisArtistRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T22\T22ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T22\T22ByArtistRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T22\T22ByLocationRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

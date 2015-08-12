@@ -16,6 +16,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Landmark.Classes;
+using Landmark.Models;
 using Sitecore.Collections;
 using Sitecore.Data;
 using Sitecore.Data.Fields;
@@ -87,6 +88,11 @@ namespace Landmark.Helper
             return artPieces;
         }
 
+        /// <summary>
+        /// Gets the art by artist.
+        /// </summary>
+        /// <param name="artistId">The artist unique identifier.</param>
+        /// <returns>List{Item}.</returns>
         public List<Item> GetArtByArtist(string artistId)
         {
             List<Item> artPieces = new ItemList();
@@ -104,7 +110,32 @@ namespace Landmark.Helper
                 }
             }
             return artPieces;
-        } 
+        }
+
+        /// <summary>
+        /// Gets the artist models.
+        /// </summary>
+        /// <returns>List{ArtistModel}.</returns>
+        public List<ArtistModel> GetArtistModels()
+        {
+            List<ArtistModel> artistModels = new List<ArtistModel>();
+            List<Item> allArtists = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkArtTourItem,
+                ItemGuids.T30Template);
+            if (allArtists != null && allArtists.Count != 0)
+            {
+                foreach (var item in allArtists)
+                {
+                    var artPieces = GetArtByArtist(item.ID.ToString());
+                    ArtistModel model = new ArtistModel()
+                    {
+                        Artist = item,
+                        ArtPieces = allArtists
+                    };
+                    artistModels.Add(model);
+                }
+            }
+            return artistModels;
+        }
 
     }
 }
