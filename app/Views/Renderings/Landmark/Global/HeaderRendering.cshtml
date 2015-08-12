@@ -70,7 +70,7 @@
             </div>
             <h1>
                 <a href="@Sitecore.Links.LinkManager.GetItemUrl(ItemGuids.LandmarkHomeItem)">
-                    @Html.Sitecore().Field("Landmark Logo", ItemGuids.LandmarkConfigItem, new {@class = "responsive-logo"})
+                    <img class="responsive-logo" src="@Html.Sitecore().ImageFieldSrc("Landmark Logo",ItemGuids.LandmarkConfigItem)" alt="landmark">
                 </a>
             </h1>
         </nav>

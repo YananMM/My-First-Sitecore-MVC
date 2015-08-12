@@ -33,6 +33,10 @@
 <script src="/files/landmark/js/lib/bootstrap.min.js"></script>
 <script src="/files/landmark/js/lib/bootstrap-select.js"></script>
 <!-- Has problems on ie8 <script src="/files/landmark/js/lib/masonry.pkgd.min.js"></script> -->
+@if (LandmarkHelper.GetPageBodyClass().StartsWith("t13"))
+{
+<script src="/files/landmark/js/lib/masonry.pkgd.min.js"></script>
+}
 <script src="/files/landmark/js/main.js"></script>
 <script>
     $.lazyLoadXT = {
@@ -43,7 +47,3 @@
         updateEvent: 'load orientationchange resize scroll shown.bs.collapse hidden.bs.collapse lazyupdate'
     };
 </script>
-@if (LandmarkHelper.GetPageBodyClass().StartsWith("t13"))
-{
-<script src="/files/landmark/js/lib/masonry.pkgd.min.js"></script>
-}
