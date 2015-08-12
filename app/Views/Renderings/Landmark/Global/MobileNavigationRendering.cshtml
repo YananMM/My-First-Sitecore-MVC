@@ -5,14 +5,28 @@
 <ul>
     @foreach (Sitecore.Data.Items.Item item in LandmarkHelper.GetChildrenPageInNavigation(ItemGuids.LandmarkHomeItem))
     {
-        <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@item["Page "].ToUpper()</a>
-            @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count>0)
+        <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@item["Page Title"].ToUpper()<span class="sprite-icon-down pull-right"></span></a>
+            @*@if (LandmarkHelper.GetChildrenPageInNavigation(item).Count>0)
             {
                 <ul>
                     @foreach (Sitecore.Data.Items.Item childItem in LandmarkHelper.GetChildrenPageInNavigation(ItemGuids.LandmarkHomeItem))
                     {
                         <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
                     }
+                </ul>
+            }*@
+            @if (item.ID.ToString().Equals(ItemGuids.ShoppingItem))
+            {
+                <ul>
+                    <li>
+                        <a href="#">@Html.Sitecore().Field("Glossary Value", ItemGuids.ByCategoryGuidItem)<span class="sprite-icon-down pull-right"></span></a>
+                    </li>
+                    <li>
+                        <a href="#">@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBrandsGuidItem)<span class="sprite-icon-down pull-right"></span></a>
+                    </li>
+                    <li>
+                        <a href="#">@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBuidingsGuidItem)<span class="sprite-icon-down pull-right"></span></a>
+                    </li>
                 </ul>
             }
         </li>
