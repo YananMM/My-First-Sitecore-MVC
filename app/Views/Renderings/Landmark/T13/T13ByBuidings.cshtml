@@ -8,7 +8,7 @@
     List<Item> buildings = new List<Item>();
     Item contextItem = Sitecore.Context.Item;
     Item firstParentItem = contextItem.Parent;
-    buildings = firstParentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) ? Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.ToList() : LandmarkHelper.GetBuildingsByCategory(firstParentItem.ID);
+    buildings = firstParentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) ? Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.ToList() : shoppingHelper.GetBuildingsByCategory(firstParentItem.ID);
 }
 
 <div class="masonry-area clearfix">

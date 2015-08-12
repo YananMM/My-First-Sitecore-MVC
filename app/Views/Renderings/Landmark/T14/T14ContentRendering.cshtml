@@ -48,12 +48,6 @@
         <div class="shopdetails-brand-body">
             <ul class="hidden" id="alsoLike"></ul>
             <div class="row">
-                <div class="col-sm-2 col-xs-3"><a href="javascript:;"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-02.png"></a></div>
-                <div class="col-sm-2 col-xs-3"><a href="javascript:;"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-03.png"></a></div>
-                <div class="col-sm-2 col-xs-3"><a href="javascript:;"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-04.png"></a></div>
-                <div class="col-sm-2 col-xs-3"><a href="javascript:;"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-05.png"></a></div>
-                <div class="col-sm-2 col-xs-3 hidden-xs"><a href="javascript:;"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-06.png"></a></div>
-                <div class="col-sm-2 col-xs-3 hidden-xs"><a href="javascript:;"><img data-src="../files/landmark/images/shopdetail/shopdetail-logo-07.png"></a></div>
                 @Html.Sitecore().Rendering(ItemGuids.T14YouMayAlsoLikeRenderingViewGuid, new
                 {
                     Cacheable = false,
@@ -62,7 +56,6 @@
                 })
             </div>
             <div class="row hidden">
-
                 @Html.Sitecore().Rendering(ItemGuids.T14AlsoOnFloorRenderingViewGuid, new
                 {
                     Cacheable = false,
