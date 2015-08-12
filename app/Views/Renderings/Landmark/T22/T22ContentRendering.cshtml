@@ -12,7 +12,7 @@
             <h1>CENTRAL ART GUIDE</h1>
         </div>
 
-        <div class="gd-pagetitle-menu">VIEW BY <a href="#" class="active">ARTIST</a>  <span class="gd-pagetitle-menu-gap">|</span>  <a href="t22-2.html">LOCATION</a></div>
+        <div class="gd-pagetitle-menu">@Html.Sitecore().Field("Glossary Value", ItemGuids.ViewByItem) <a href="#" class="active">@Html.Sitecore().Field("Glossary Value", ItemGuids.ArtistItem)</a>  <span class="gd-pagetitle-menu-gap">|</span>  <a href="t22-2.html">@Html.Sitecore().Field("Glossary Value", ItemGuids.LocationItem)</a></div>
     </div>
 
     <div class="art-gallery">
@@ -26,7 +26,6 @@
                             <a>ARTIST BOIGRAPHY<span class="icomoon-chevron-small-right"></span></a>
                         </div>
                     </div>
-
                     <div class="gd-artlist">
                         <div class="row">
                             <div class="col-md-6">
@@ -56,7 +55,6 @@
                             <a>ARTIST BOIGRAPHY<span class="icomoon-chevron-small-right"></span></a>
                         </div>
                     </div>
-
                     <div class="gd-artlist">
                         <div class="row">
                             <div class="col-md-6">

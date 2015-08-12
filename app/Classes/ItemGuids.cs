@@ -54,6 +54,7 @@ namespace Landmark.Classes
         public static readonly String FooterSocialMediaFolderItem = "{08BB2BC5-ACFC-4418-AED0-4B8DC6D1B0CA}";
         public static readonly String LandmarkArtTourItem = "{5C03DD0D-4881-4A9B-A58D-5FFA101B3533}";
         public static readonly String T29Template = "{ADE0F061-FF28-4CDB-B6C3-14021D75355A}";
+        public static readonly String T30Template = "{EC149566-D74F-4E4F-9F2C-A0745E72988E}";
 
         //item 
         public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}");
@@ -92,5 +93,11 @@ namespace Landmark.Classes
 
         public static readonly Item ByThisArtistItem =
             Sitecore.Context.Database.GetItem("{B8DBA1C5-3950-4A13-A460-7C7A1795B682}");
+
+        public static readonly Item ViewByItem =
+            Sitecore.Context.Database.GetItem("{79222D4A-7956-4441-9D67-B080494D69BC}");
+
+        public static readonly Item ArtistItem =
+            Sitecore.Context.Database.GetItem("{66B7043C-69C4-4212-A719-F4CE6EBCCB19}");
     }
 }
