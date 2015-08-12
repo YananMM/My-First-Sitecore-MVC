@@ -388,6 +388,7 @@
     <Content Include="App_Config\ConnectionStrings.config">
       <TransformOnBuild>true</TransformOnBuild>
     </Content>
+    <Content Include="files\landmark\css\style.css.map" />
     <None Include="Properties\PublishProfiles\DEV.pubxml" />
     <None Include="Properties\PublishProfiles\landmark.pubxml" />
     <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
@@ -468,7 +469,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="files\landmark\less\css\" />
-    <Folder Include="Views\Home\" />
     <Folder Include="Views\Sublayouts\" />
   </ItemGroup>
   <ItemGroup>

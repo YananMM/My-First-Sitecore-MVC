@@ -35,7 +35,7 @@
                     <li>
                         <a href="#">@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBrandsGuidItem)<span class="sprite-icon-down pull-right"></span></a>
                         <ul>
-                            @foreach (Item itemshop in LandmarkHelper.GetItemByTemplate(ItemGuids.T14ShopDetailsTemplate))
+                            @foreach (Item itemshop in LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkHomeItem.ID.ToString(),ItemGuids.T14ShopDetailsTemplate))
                             {
                             <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(itemshop)">@itemshop["Page Title"].ToUpper()</a></li>
                             }

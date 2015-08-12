@@ -28,7 +28,7 @@ namespace Landmark.Classes
         //public static readonly String T14ShopDataRenderingViewGuid = "{CCD0CC2A-56DD-4990-9395-560FA0F62D7B}";
         //public static readonly String T14TagsRenderingViewGuid = "{303EA462-99C6-447B-B3AA-C4F4F0441549}";
         public static readonly String T14AlsoOnFloorRenderingViewGuid = "{E4C9F730-0F32-481A-A631-814E9DD01CF0}";
-        public static readonly String T14YouMayAlsoLikeRenderingViewGuid = "{606750CC-CD89-4E63-9CF6-B0112FAF6D4A}";
+        public static readonly String T14YouMayAlsoLikeRenderingViewGuid = "{3D3C605D-3A95-4D71-8206-C403D66EB91A}";
 
         //item id
         //public static readonly String PanelsFolderItemGuid = "{3BB40D54-8F7F-449B-B9DB-432C65EB4224}";
