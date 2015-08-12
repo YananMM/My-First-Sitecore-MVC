@@ -1,0 +1,27 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@model RenderingModel
+@{
+    ArtTourHelper helper = new ArtTourHelper();
+    var artist = helper.GetArtistByArt(Sitecore.Context.Item);
+}
+
+<div class="gd-artplace-profile">
+    @*<img src="../files/landmark/images/artpiece/artpiece-person-01.png" alt="artpiece picture">*@
+    @Html.Sitecore().Field("Artist Photo", artist)
+    <div class="gd-artplace-profile-title">
+        <h4>@Html.Sitecore().Field("Artist Name", artist)</h4>
+        <p>@Html.Sitecore().Field("Artist Birthday Label", artist) @Html.Sitecore().Field("Artist Birthday Text", artist)</p>
+    </div>
+</div>
+
+<div class="gd-artplace-profile-info row">
+    <div class="col-sm-12 gd-longarticle">
+        <p class="gd-longarticle-content">
+            @Html.Sitecore().Field("Artist Description", artist)
+        </p>
+        <a href="javascript:;" class="gd-artplace-more gd-longarticle-switcher">READ MORE +</a>
+    </div>
+</div>

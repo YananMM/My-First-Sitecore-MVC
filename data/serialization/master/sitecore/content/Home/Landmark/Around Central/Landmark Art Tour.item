@@ -1,6 +1,6 @@
 ----item----
 version: 1
-id: {F2018EEB-FBEE-4BE9-A7D2-DBFEAF0CFB4B}
+id: {5C03DD0D-4881-4A9B-A58D-5FFA101B3533}
 database: master
 path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour
 parent: {57B8DEB0-CDFF-4287-94D6-E19191142B1B}
@@ -12,7 +12,7 @@ templatekey: T20 Page
 ----version----
 language: en
 version: 1
-revision: fe573d5b-6a34-46ce-b1fb-79b3f819cc46
+revision: 6c13f155-e3cb-4b22-a0f3-14591762560e
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
@@ -22,27 +22,12 @@ content-length: 18
 
 LANDMARK ART GUIDE
 ----field----
-field: {682B1E90-3780-4EDD-87DF-C8D42F545759}
-name: Content Description
-key: content description
-content-length: 242
-
-<p>Enjoy LANDMARK's art pieces with an audio guide by simply snapping the QR Code on the plaques of the artworks located at LANDMARK.Access information and audio docent for each piece of LANDMARK art on your mobile device,here's how.</p>
-<br>
-----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 17
+content-length: 18
 
-Landmark Art Tour
-----field----
-field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
-name: Is Shown In Navigation
-key: is shown in navigation
-content-length: 0
-
-
+Landmark Art Tour1
 ----field----
 field: {801CA251-92F3-4B68-945C-3FBB6DEA8A56}
 name: Cover Title
@@ -51,42 +36,33 @@ content-length: 17
 
 CENTRAL ART GUIDE
 ----field----
-field: {B6B6B6BA-80E1-4E09-AF00-5EB6A4D05221}
-name: Cover Content
-key: cover content
-content-length: 148
+field: {2511C4C1-908A-4C03-B12B-52B5E95CA051}
+name: Button Link
+key: button link
+content-length: 137
 
-<p>How to spend a day with your friends and family in Central?<br>
-Check out our one-day recommendation and experience the best of Central.</p>
-<br>
-----field----
-field: {B89F6E69-36D5-40AB-99E4-35B8A6FB6E0A}
-name: Cover Image
-key: cover image
-content-length: 58
-
-<image mediaid="{8287AB21-2C4F-4B02-AC26-245B9214554B}" />
+<link text="" linktype="internal" class="" title="" target='Active Browser' querystring="" id="{57B8DEB0-CDFF-4287-94D6-E19191142B1B}" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150806T063300Z
+20150810T082649Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-fe573d5b-6a34-46ce-b1fb-79b3f819cc46
+6c13f155-e3cb-4b22-a0f3-14591762560e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150807T055623Z
+20150810T084739:635747932594277745Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

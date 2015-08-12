@@ -146,14 +146,14 @@ namespace Landmark.Helper
         /// <summary>
         /// Gets the items by root and template.
         /// </summary>
-        /// <param name="rootItem">The root item.</param>
-        /// <param name="templateItem">The template item.</param>
+        /// <param name="rootItemId">The root item.</param>
+        /// <param name="templateItemId">The template item.</param>
         /// <returns>List{Item}.</returns>
-        public static List<Item> GetItemsByRootAndTemplate(string rootItem, string templateItem)
+        public static List<Item> GetItemsByRootAndTemplate(string rootItemId, string templateItemId)
         {
-            Item shopping = Sitecore.Context.Database.GetItem(rootItem);
+            Item shopping = Sitecore.Context.Database.GetItem(rootItemId);
             var query = string.Format("fast:{0}//*[{1}]", shopping.Paths.FullPath,
-                "@@TemplateId='" + templateItem + "'");
+                "@@TemplateId='" + templateItemId + "'");
             return _webDb.SelectItems(query).ToList();
         }
 

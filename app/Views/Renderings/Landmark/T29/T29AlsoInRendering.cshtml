@@ -1,0 +1,42 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@model RenderingModel
+@{
+    ArtTourHelper helper = new ArtTourHelper();
+    var floor = helper.GetFloor(Sitecore.Context.Item);
+
+    var artPieces = helper.GetArtByBuilding(floor.Parent.ID.ToString());
+}
+
+<div class="gd-showcase" data-position="0">
+    <a href="javascript:;" class="gd-showcase-control gd-showcase-left">
+        <span class="icomoon-thin-arrow-L"></span>
+    </a>
+    <div class="container">
+
+        <h2>@Html.Sitecore().Field("Glossary Value", ItemGuids.AlsoInItem) @floor.Parent.Fields["Buiding Title"]</h2>
+        <div class="gd-showcase-content">
+            <ul class="gd-showcase-items clearfix">
+
+                @if (artPieces.Count != 0)
+                {
+                    foreach (var item in artPieces)
+                    {
+                        <li>
+                            <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
+                                @Html.Sitecore().Field("Art Image", item)
+                                <h3>@Html.Sitecore().Field("Art Title", item)</h3>
+                                <p>@Html.Sitecore().Field("Art Description", item)</p>
+                            </a>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+    </div>
+    <a href="javascript:;" class="gd-showcase-control gd-showcase-right">
+        <span class="icomoon-thin-arrow-R"></span>
+    </a>
+</div>

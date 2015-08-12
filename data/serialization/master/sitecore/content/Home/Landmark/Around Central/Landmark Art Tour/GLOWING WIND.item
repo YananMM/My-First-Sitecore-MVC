@@ -1,0 +1,107 @@
+----item----
+version: 1
+id: {0E145AD6-A4FB-4636-8C28-65A31AD8D76D}
+database: master
+path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/GLOWING WIND
+parent: {5C03DD0D-4881-4A9B-A58D-5FFA101B3533}
+name: GLOWING WIND
+master: {00000000-0000-0000-0000-000000000000}
+template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
+templatekey: T29 Page
+
+----version----
+language: en
+version: 1
+revision: 375faf33-244e-4ef0-9d4b-34b8712f7ea6
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 12
+
+GLOWING WIND
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 42
+
+THE MAKING OF THE SPHERES II: GLOWING WIND
+----field----
+field: {04670F13-3F17-47AC-B6AA-858F246682E0}
+name: Created Time
+key: created time
+content-length: 4
+
+1988
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 10
+
+220X220 CM
+----field----
+field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
+name: Artist
+key: artist
+content-length: 38
+
+{8C5861EC-A3D4-4F8C-A123-CEE90F04B608}
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 24
+
+ACYLIC AND OIL ON CANVAS
+----field----
+field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
+name: Art Image
+key: art image
+content-length: 58
+
+<image mediaid="{57C6BB1E-33AE-4D73-A627-AB559CA332DB}" />
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 80
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit porro, nemo modi.
+----field----
+field: {22B6E709-1F38-4AF9-8D6C-7E3443E4F3ED}
+name: Floor and Building
+key: floor and building
+content-length: 38
+
+{E4D421D6-DCB0-40F4-B554-A52F83DC40EF}
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150811T071326Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+375faf33-244e-4ef0-9d4b-34b8712f7ea6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150811T090240:635748805600696156Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

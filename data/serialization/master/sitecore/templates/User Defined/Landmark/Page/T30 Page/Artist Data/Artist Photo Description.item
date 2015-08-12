@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {04670F13-3F17-47AC-B6AA-858F246682E0}
+id: {55493757-0DCA-49BC-8139-884B29E177E9}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T29 Page/Art Piece Data/Art Created Time
-parent: {FB236285-7FCF-41DE-B6DD-73877ED883D4}
-name: Art Created Time
+path: /sitecore/templates/User Defined/Landmark/Page/T30 Page/Artist Data/Artist Photo Description
+parent: {422C1835-7FEF-4A4C-AD34-72819D44053D}
+name: Artist Photo Description
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -22,11 +22,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-200
+250
 ----version----
 language: en
 version: 1
-revision: f3025655-0c08-41ba-91c8-cbe97858f9ab
+revision: 91aea9c9-8052-4e31-b7c2-1bb0856b2568
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150810T003301Z
+20150811T031314Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-f3025655-0c08-41ba-91c8-cbe97858f9ab
+91aea9c9-8052-4e31-b7c2-1bb0856b2568
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150810T064434:635747858744763794Z
+20150811T074425:635748758650890781Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
