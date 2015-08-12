@@ -19,7 +19,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 58f41b54-74e4-407f-b045-35f66aa11949
+revision: 66a3627f-cb42-4fd6-beb1-377ec0424255
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -53,9 +53,9 @@ content-length: 10
 field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
 name: Artist
 key: artist
-content-length: 38
+content-length: 0
 
-{8C5861EC-A3D4-4F8C-A123-CEE90F04B608}
+
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -97,18 +97,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-58f41b54-74e4-407f-b045-35f66aa11949
+66a3627f-cb42-4fd6-beb1-377ec0424255
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150811T090210:635748805303329147Z
+20150812T005214:635749375343515748Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 22
 
-sitecore\admin
+sitecore\virtualssuser
