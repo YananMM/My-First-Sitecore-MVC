@@ -314,5 +314,19 @@ namespace Landmark.Helper
             var brandsByFloor = allBrands.Where(p => p.Fields["Floor"].ToString() == floorId).ToList();
             return brandsByFloor;
         }
+
+        //mobile navigation
+        public List<Item> GetFirstCategoryItems()
+        {
+            Item shoppingCategory = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingCategory);
+            Item shopping = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
+            var queryCategory = string.Format("fast:{0}//*[{1}]", shoppingCategory.Paths.FullPath, "@@TemplateId='" + ItemGuids.CategoryObjectTemplate + "'");
+            List<Item> firstCategory = (from category in _webDb.SelectItems(queryCategory).ToList()
+                                        from Item item in shopping.Children
+                                        where item.DisplayName == category.DisplayName
+                                        select item).ToList();
+            return firstCategory;
+        }
+
     }
 }

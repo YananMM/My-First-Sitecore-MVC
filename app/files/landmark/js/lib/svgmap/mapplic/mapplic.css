@@ -812,6 +812,10 @@ path.mapplic-clickable:hover,
 	pointer-events: none;
 }
 
+.mapplic-map-image [data-location]:hover {
+	cursor: pointer;
+}
+
 [id^=landmarks] polygon.mapplic-clickable,
 [id^=landmarks] rect.mapplic-clickable,
 [id^=landmarks] polygon.mapplic-clickable,

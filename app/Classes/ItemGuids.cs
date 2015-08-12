@@ -80,7 +80,7 @@ namespace Landmark.Classes
         public static readonly Item YouMayAlsoLikeItem = Sitecore.Context.Database.GetItem("{23815E63-F3F5-48BE-BBEA-5CA6D8CCFECA}");
         public static readonly Item TagsItem = Sitecore.Context.Database.GetItem("{B05FA79E-B0AC-4D78-9175-ADA8305B5B5B}");
         public static readonly Item FloorPlanItem = Sitecore.Context.Database.GetItem("{B6888C19-B10C-4662-8E41-7AC2CCE8419A}");
-
+        public static readonly Item ByCategoryGuidItem = Sitecore.Context.Database.GetItem("{E7E0A523-FFB0-4842-9DD0-7047B1F313B9}");
         public static readonly Item RealatedArticlesItem = Sitecore.Context.Database.GetItem("{70032C39-DB3A-42F1-91FC-9D85BE84A3F7}");
         public static readonly Item MobileAudioGuideItem = Sitecore.Context.Database.GetItem("{DD2597D1-42CF-4A71-BD93-8A05851B91B9}");
         public static readonly Item ListenToCommentaryItem = Sitecore.Context.Database.GetItem("{55FAB28E-6000-4382-833A-4A29C8CA38B0}");

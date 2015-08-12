@@ -58,7 +58,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/20/2015 12:57:50</publishTime>
     </File>
     <File Include="bin/Landmark.dll">
-      <publishTime>08/10/2015 13:56:24</publishTime>
+      <publishTime>08/12/2015 10:26:08</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>03/30/2015 10:02:30</publishTime>
@@ -133,7 +133,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/26/2015 09:32:57</publishTime>
     </File>
     <File Include="files/landmark/css/style.css">
-      <publishTime>08/07/2015 17:03:21</publishTime>
+      <publishTime>08/10/2015 15:37:53</publishTime>
     </File>
     <File Include="files/landmark/fonts/bertholdakzidenzgroteskbelight.eot">
       <publishTime>03/30/2015 09:55:50</publishTime>
@@ -856,7 +856,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/21/2015 15:46:41</publishTime>
     </File>
     <File Include="files/landmark/js/lib/svgmap/mapplic/mapplic.css">
-      <publishTime>07/21/2015 15:46:41</publishTime>
+      <publishTime>08/07/2015 17:03:22</publishTime>
     </File>
     <File Include="files/landmark/js/lib/svgmap/mapplic/mapplic.js">
       <publishTime>07/21/2015 15:46:41</publishTime>
@@ -868,10 +868,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/26/2015 09:33:01</publishTime>
     </File>
     <File Include="files/landmark/js/lib/uisearch.js">
-      <publishTime>03/30/2015 09:55:51</publishTime>
+      <publishTime>03/26/2015 09:33:01</publishTime>
     </File>
     <File Include="files/landmark/js/main.js">
-      <publishTime>08/07/2015 16:01:20</publishTime>
+      <publishTime>08/07/2015 17:03:22</publishTime>
     </File>
     <File Include="files/landmark/js/npm.js">
       <publishTime>03/26/2015 09:33:00</publishTime>
@@ -1393,7 +1393,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/31/2015 13:08:05</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/Global/BreadcrumbRendering.cshtml">
-      <publishTime>08/07/2015 17:34:52</publishTime>
+      <publishTime>08/12/2015 08:21:53</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/Global/ByBrandsComponentRendering.cshtml">
       <publishTime>08/04/2015 11:42:21</publishTime>
@@ -1408,7 +1408,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>04/02/2015 09:07:48</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/Global/FooterRendering.cshtml">
-      <publishTime>08/10/2015 11:52:00</publishTime>
+      <publishTime>08/12/2015 09:12:47</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/Global/GeneralMainContentRendering.cshtml">
       <publishTime>08/07/2015 17:30:00</publishTime>
@@ -1417,22 +1417,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/31/2015 15:46:28</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/Global/HeaderRendering.cshtml">
-      <publishTime>07/31/2015 11:44:07</publishTime>
+      <publishTime>08/12/2015 11:10:44</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/Global/MobileNavigationRendering.cshtml">
-      <publishTime>04/09/2015 14:42:30</publishTime>
+      <publishTime>08/12/2015 10:34:42</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/Global/NavigationRendering.cshtml">
       <publishTime>07/31/2015 07:57:00</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/Global/ScriptRendering.cshtml">
-      <publishTime>07/31/2015 13:11:46</publishTime>
+      <publishTime>08/12/2015 09:08:22</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/Global/SlideRendering.cshtml">
       <publishTime>08/07/2015 16:34:55</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/Global/SocialMediaRendering.cshtml">
-      <publishTime>08/10/2015 14:11:31</publishTime>
+      <publishTime>08/10/2015 14:18:23</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T1/T1ContentRendering.cshtml">
       <publishTime>08/03/2015 16:43:57</publishTime>
@@ -1495,7 +1495,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/07/2015 16:01:20</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T14/T14RelatedArticlesRendering.cshtml">
-      <publishTime>08/07/2015 10:33:17</publishTime>
+      <publishTime>08/10/2015 14:15:49</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T14/T14ShopDataRendering.cshtml">
       <publishTime>08/07/2015 07:37:13</publishTime>
@@ -1510,7 +1510,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/07/2015 13:31:25</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T20/T20ContentRendering.cshtml">
-      <publishTime>08/07/2015 17:08:08</publishTime>
+      <publishTime>08/10/2015 14:15:49</publishTime>
+    </File>
+    <File Include="Views/Renderings/Landmark/T22/T22ContentRendering.cshtml">
+      <publishTime>08/12/2015 08:21:53</publishTime>
+    </File>
+    <File Include="Views/Renderings/Landmark/T29/T29AlsoInRendering.cshtml">
+      <publishTime>08/12/2015 08:21:53</publishTime>
+    </File>
+    <File Include="Views/Renderings/Landmark/T29/T29ArtistRendering.cshtml">
+      <publishTime>08/12/2015 08:21:53</publishTime>
+    </File>
+    <File Include="Views/Renderings/Landmark/T29/T29ContentRendering.cshtml">
+      <publishTime>08/10/2015 15:37:53</publishTime>
+    </File>
+    <File Include="Views/Renderings/Landmark/T30/T30ByThisArtistRendering.cshtml">
+      <publishTime>08/12/2015 08:21:53</publishTime>
+    </File>
+    <File Include="Views/Renderings/Landmark/T30/T30ContentRendering.cshtml">
+      <publishTime>08/12/2015 08:21:53</publishTime>
     </File>
     <File Include="Views/Renderings/SocialMedia.cshtml">
       <publishTime>03/31/2015 13:54:09</publishTime>

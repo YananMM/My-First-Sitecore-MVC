@@ -40,7 +40,7 @@
     <div class="container visible-xs-block  visible-sm-block">
         <nav class="clearfix">
             <a class="lines-button pull-left" type="button" role="button" aria-label="Navigation">
-                <span class="lines"></span>
+            <span class="lines"></span>
             </a>
             <div class="sb-search">
                 @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
@@ -70,7 +70,7 @@
             </div>
             <h1>
                 <a href="@Sitecore.Links.LinkManager.GetItemUrl(ItemGuids.LandmarkHomeItem)">
-                    @Html.Sitecore().Field("Landmark Logo", ItemGuids.LandmarkConfigItem, new {@class = "responsive-logo"})
+                    <img class="responsive-logo" src="@Html.Sitecore().ImageFieldSrc("Landmark Logo",ItemGuids.LandmarkConfigItem)" alt="landmark">
                 </a>
             </h1>
         </nav>
