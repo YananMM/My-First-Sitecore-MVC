@@ -53,7 +53,7 @@ namespace Landmark.Service
             {
                 context.Response.ContentType = "text/plain";
 
-                List<ArtPieceJson> models = _helper.GetArtPieceJsonByArtists();
+                List<ArtPieceByArtistJson> models = _helper.GetArtPieceJsonByArtist();
                 
                 JavaScriptSerializer javaScriptSerializer = new JavaScriptSerializer();
 

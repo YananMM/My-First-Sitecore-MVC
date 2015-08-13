@@ -99,7 +99,7 @@ namespace Landmark.Models
     /// <summary>
     /// Class ArtPieceJson.
     /// </summary>
-    public class ArtPieceJson
+    public class ArtPieceByArtistJson
     {
         /// <summary>
         /// Gets or sets the avatar.
@@ -161,4 +161,19 @@ namespace Landmark.Models
         /// <value>The link.</value>
         public string link { get; set; }
     }
+
+    /// <summary>
+    /// Class ArtPieceByBuildingJson.
+    /// </summary>
+    public class ArtPieceByBuildingJson
+    {
+        public string title { get; set; }
+
+        public string des { get; set; }
+
+        public string src { get; set; }
+
+        public string link { get; set; }
+    }
+
 }

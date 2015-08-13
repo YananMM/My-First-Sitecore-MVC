@@ -23,7 +23,7 @@
                             ImageField imageField = Sitecore.Context.Item.Fields["Art Image"];
 
                             string alt = imageField.Alt;
-                            <img class="gd-lightbox-link" data-lightsrc="https://boredanddangerousblog.files.wordpress.com/2014/06/edgeoftomorrow2.jpg" src="@Html.Sitecore().ImageFieldSrc("Art Image", Sitecore.Context.Item)" alt="@alt">
+                            <img class="gd-lightbox-link" data-lightsrc="https://boredanddangerousblog.files.wordpress.com/2014/06/edgeoftomorrow2.jpg" src="../files/landmark/images/artpiece/artpiece-bigpic-01.jpg" alt="artpiece picture">
                         }*@
                     @Html.Sitecore().Field("Art Image", new { @class = "gd-lightbox-link" })
                 </div>

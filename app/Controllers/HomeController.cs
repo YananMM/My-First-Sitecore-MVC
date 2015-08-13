@@ -48,11 +48,5 @@ namespace Landmark.Controllers
             return Redirect(Sitecore.Links.LinkManager.GetItemUrl(target));
         }
 
-
-        public ActionResult GetArtPieceJsonByArtists()
-        {
-            List<ArtPieceJson> models = _helper.GetArtPieceJsonByArtists();
-            return Json(models, JsonRequestBehavior.AllowGet);
-        }
     }
 }
