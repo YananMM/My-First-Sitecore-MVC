@@ -11,6 +11,12 @@
   #gd-carousel-info{
     margin-top: 25px;
   }
+  .gd-mainimage .carousel-inner .item > .carousel-caption .gd-carousel-detail{
+   height: 260px;
+    @media (min-width:@screen-md) {
+    height: 640px;
+    }
+  }
 }
 
 .t14{
@@ -38,7 +44,7 @@
       top: auto;
       left: 50%;
       right: auto;
-      margin-left: -70px;
+      margin-left: -55px;
     }
     ul {
      margin: 0;
@@ -61,7 +67,7 @@
       text-align: center;
       ul li {
         margin: 0 0 0 10px;
-        padding-right: 10px;
+        padding-right: 12px;
          border-right: solid 1px #222;
         &:last-child{
         padding-right: 0;
@@ -70,19 +76,13 @@
       }
     }
     .shopdetails-brand-body{
-      padding: 0 10px;
+      padding: 0;
       margin-top: 30px;
       .row>.col-sm-2{
         text-align: center;
         line-height: 76px;
-        &:first-child{
-         text-align: left;
-        }
-        &:last-child{
-          text-align: right;
-        }
         >a {
-          display: inline-block;
+          display:block;
           >img {
             max-width: 80%;
           }
@@ -125,7 +125,6 @@
       }
     }
     .shopdetails-brand-body{
-      padding: 0 ;
       margin-top: 43px;
       
       .row>.col-sm-2{
@@ -156,28 +155,21 @@
     text-align: left;
     margin: 30px 0 10px;
   }
+  .gd-pagetitle .gd-pagetitle-heading h1{
+    margin-bottom: 56px;
+  }
   .art-gallery{
-    .art-g-box{
-    margin-bottom: 50px;
+   .art-g-box {
+    margin-bottom: 60px;
       border-bottom: solid 1px #cccccc; 
       &.gold-line{
       border-bottom: solid 1px @gd-title-color; 
       }
       .clearfix;
       .black-text2;
-      .col-sm-6{
-       margin-bottom: 30px;
-        &:last-child{
-          margin-bottom: 0;
-        }
-      }
       .art-g-box-header{
         .lightgray-text;
         .clearfix;
-        padding: 0 10px;
-        @media (min-width:@screen-md){
-         padding: 0;
-        }
         img{
           float: left;
         }
@@ -209,7 +201,19 @@
       }
     }
     .gd-artlist{
-      margin: 30px 0;
+      text-align: left;
+      margin: 30px 0 50px;
+     .row{
+       margin-left: -5px;
+       margin-right: -5px;
+      .col-md-6{
+        padding-left: 5px;
+        padding-right: 5px;
+        img{
+          width: 100%;
+         }
+      }
+     }
       .gd-artlist-toggle {
         display: -webkit-flex;
         display: -moz-flex;
@@ -300,14 +304,22 @@
     }
   }
 }
-@media (min-width:@screen-sm){
+@media (min-width:@screen-md){
   .t22{
   
   .art-gallery{
+    >.col-md-6{
+      &:last-child{
+        text-align: right;
+      }
+    }
     .art-g-box{
+      display: inline-block;
+      text-align: left;
+      width: 96%;
       .art-g-box-header{
       h3{
-  font-size: 18px;
+        font-size: 18px;
         margin: 25px 0 10px;
         span{
           display: inline;
@@ -714,11 +726,18 @@
 
 .t20 {
   >.container {
-    padding: 40px 0 0 0;
+    padding-top: 80px ;
+    padding-bottom: 40px;
+    margin-top: -40px;
+      
   }
   .gd-mainimage-single {
     .carousel-inner {
       .item {
+        .carousel-image{
+         height: 200px;
+          background-size: cover;
+        }
         >img {
           height: auto;
         }
@@ -734,20 +753,32 @@
     }
   }
   .gd-picture-des {
-    padding: 0 15px;
+    padding: 0 ;
     .gd-pd-picture{
       height: 140px;}
   }
 }
+@media (min-width:@screen-sm){
+  .t20 {
+  .gd-mainimage-single {
+    .carousel-inner {
+      .item {
+        .carousel-image{
+          height: 400px;}}}}}
+}
 @media (min-width:@screen-md){
 
   >.container {
-    padding: 70px 0 100px 0;
+    padding-top: 70px;
+    padding-bottom: 100px;
   }
   .t20 {
   .gd-mainimage-single {
     .carousel-inner {
       .item {
+        .carousel-image{
+         height: @gdmi-height;
+        }
         >img {
           height: 800px;
         }

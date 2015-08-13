@@ -81,7 +81,7 @@
   .icomoon-chevron-small-right{
     display: inline-block;
     padding-bottom: 3px;
-    margin-left: 14px;
+    margin-left: 5px;
     font-size: 20px;
     vertical-align:middle;
   }
@@ -128,7 +128,6 @@
 
 //  gd-brief
     .gd-brief {
-      padding: 0 10px;
       .gd-brief-heading {
         font-size: 18px;
         margin-bottom: 20px;
@@ -154,6 +153,7 @@
           margin: 0;
           padding: 0;
           text-align: left;
+          width: 90%;
         }
       }
       .gd-brief-body {
@@ -177,7 +177,6 @@
     }
 @media (min-width:@screen-md) {
     .gd-brief {
-      padding: 0;
       .gd-brief-heading {
         font-size: 26px;
         padding: 1em 15px;
@@ -187,6 +186,7 @@
         }
         h3 {
           text-align: center;
+          width: 100%;
         }
       }
       
@@ -203,7 +203,6 @@
 }
 //  gd-pagetitle
     .gd-pagetitle{
-      padding: 0 10px;
       .gd-pagetitle-heading {
         border-bottom: 2px solid @gd-title-color;
         position: relative;
@@ -227,7 +226,7 @@
         color: @gd-title-color;
         font-size: 21px;
         font-family: @font-family-serif;
-        margin: 30px 0 56px;
+        margin: 30px 0 26px;
         padding: 0;
         text-align: left;
         }
@@ -304,11 +303,6 @@
       
       }
     }
-@media (min-width:@screen-md) {
-  .gd-pagetitle{
-   padding: 0;
-  }
-}
 //  gd-artlist
     .gd-artlist{
       margin-bottom: 60px;
@@ -317,18 +311,18 @@
       }
       h2{
         color: @gd-title-color;
-        font-size: 26px;
+        font-size: 18px;
         font-weight: 300;
         font-family: @font-family-serif;
-        margin: 0;
-        padding: 60px 0;
-        text-align: center;
+        margin: 0 0  0  10px;
+        padding: 40px 0;
+        text-align: left;
       }
       h3{
         color: @gd-title-color;
-        font-size: 20px;
+        font-size: 15px;
         font-family: @font-family-serif;
-        margin: 30px 0 15px;
+        margin: 25px 0 10px;
         padding: 0;
       }
       p{
@@ -336,7 +330,6 @@
       }
       a,article{
         display: block;
-        padding: 0 10px;
        }
       article{
         a {
@@ -356,6 +349,15 @@
         margin-bottom: 0;
       }
     
+    h2{
+     font-size: 26px;
+      text-align: center;margin: 0 ;
+        padding: 60px 0;
+    }
+      h3{
+        font-size: 20px;
+        margin: 30px 0 15px;
+      }
       a,article{
         padding: 0 ;
        }
@@ -371,7 +373,7 @@
     @gdc-height: 320px;
     .gd-carousel-info {
       .carousel-heading {
-        padding: 10px 10px 23px;
+        padding: 10px 0 23px;
         h2 {
           color: @gd-title-color;
           font-size: 18px;
@@ -383,7 +385,6 @@
         }
       }
       .carousel-inner {
-        padding: 0 10px;
         .item>.carousel-image {
           height: @gdc-height;
           width: 100%;
@@ -414,10 +415,8 @@
             text-shadow: none;
             width: 100%;
             .gd-carousel-detail {
-              display: table-cell;
-              height: auto;
+              height:  400px;
               padding: 25px 0 20px;
-              vertical-align: middle;
               h3 {
                 color: @gd-title-color;
                 font-size: 20px;
@@ -497,7 +496,6 @@
       }
       .carousel-inner {
         border: 1px solid #CCCCCC;
-        padding: 0;
         .item>.carousel-image {
           height: @gdc-height;
           width: 50%;
@@ -506,6 +504,7 @@
           .carousel-caption-inner {
             .gd-carousel-detail {
               display: table-cell;
+              vertical-align: middle;
               height: @gdc-height;
               padding: 0 20px 0 40px;
               h3 {
@@ -525,10 +524,11 @@
 }
 //  gd-mainimage
     @gdmi-height: 640px;
-    @gdmi-height-xs: 320px;
+    @gdmi-height-sm: 320px;
+    @gdmi-height-xs: 160px;
     .gd-mainimage {
       .carousel-indicators {
-        top: 295px;
+        top: 135px;
       }
       .carousel-inner {
         padding: 0;
@@ -545,8 +545,7 @@
             }
           }
           >.carousel-caption {
-            background-color: #000000;
-            background-color: rgba(0,0,0,0.7);
+            background-color: #272727;
             position: relative;
             width: 100%;
             right: 0;
@@ -557,12 +556,13 @@
               width: 100%;
             }
             @media (min-width: @screen-md-min) {
+            background-color: rgba(0,0,0,0.7);
               width: 33%;
             }
             z-index: 10;
             .gd-carousel-detail {
-              height: auto;
-              padding: 35px 20px 20px;
+              height: 460px;
+              padding: 35px 20px 30px;
               .gd-mainimage-brief {
                 p {
                   color: #FFFFFF;
@@ -580,7 +580,7 @@
                   padding-left: 0;
                 }
                 tr>td {
-                  color: #FFFFFF;
+                  .white-text;
                 }
                 .gd-link-map {
                   margin-top: 20px;
@@ -637,7 +637,21 @@
     padding: 0 80px 0 50px;
   }
 }
+@media (min-width:450px) {
+    .gd-mainimage {
+      .carousel-indicators {
+        top: 295px;
+      }
+      .carousel-inner {
+        .item {
+          >.carousel-image {
+            height: @gdmi-height-sm;
+          }
+        }
+      }
+    }
 
+}
 @media (min-width:@screen-md) {
 
     .gd-mainimage {
@@ -683,6 +697,7 @@
               width: 50%;
             }
             .gd-carousel-detail {
+              height: auto;
               .gd-mainimage-brief {
                 h2 {
                   font-size: 21px;
@@ -703,7 +718,12 @@
      .carousel-inner {
         .item {
           >.carousel-caption {
-            background-color: transparent;}
+            background-color: transparent;
+          
+            .gd-carousel-detail {
+              height: @gdmi-height;;
+            }
+          }
         }
      }
   }
@@ -716,8 +736,8 @@
         font-size: 21px;
         font-weight: 300;
         line-height: 1.25;
-        margin: 0 0 0.5em 0;
-        padding: 0 0 0.8em 0;
+        margin: 0 0 24px 0;
+        padding: 0 0 25px 0;
         position: relative;
         &:after {
           bottom: 0;
@@ -740,8 +760,6 @@
     .gd-mainimage-brief,.gd-mainimage-brief2 {
       h2 {
         font-size: 30px;
-        margin: 0;
-        padding:0;
       }
     }
 
@@ -750,15 +768,18 @@
 
 .gd-mainimage-brief2{
   h2{
+    border-bottom: solid  2px @brand-golden;
+        padding: 0 0 23px 0;
     &:after{
     content: none;
     }
 }
     ul{
       position: relative;
-        margin: 0 0 24px 0;
-        padding: 0 0 25px 0;
-    
+      list-style: none;
+        margin: 22px 0 16px 0;
+        padding: 0 0 20px 0;
+        .lightergray-text;
         &:after {
           bottom: 0;
           border-top: 1px solid @gd-title-color;
@@ -768,6 +789,13 @@
           position: absolute;
           width: 30px;
         }
+      li{
+        font-family: @font-family-serif;
+        font-size: 16px;
+        background: url("../images/sprite.png") no-repeat -10px -435px;
+        padding-left: 20px;
+        margin-bottom: 5px;
+      }
     }
 }
 //  gd Main Image List Brief

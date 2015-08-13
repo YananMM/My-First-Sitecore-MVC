@@ -6,61 +6,43 @@
 @model RenderingModel
 @{
     ArtTourHelper helper = new ArtTourHelper();
-
-    var models = helper.GetArtPieceModelsByArtists();
-
-    List<List<ArtPieceModel>> listGroup = new List<List<ArtPieceModel>>();
-    if (models.Count > 2)
-    {
-        int j = Convert.ToInt32(Math.Ceiling((double)models.Count / 2));
-        for (int i = 0; i < models.Count; i += j)
-        {
-            List<ArtPieceModel> cList = new List<ArtPieceModel>();
-            cList = models.Skip(i).Take(j).ToList();
-            listGroup.Add(cList);
-        }
-    }
+    var model = helper.GetFirstArtPieceModel();
 }
 <div class="art-gallery">
     <div class="row" id="gd-art-gallery">
-        @{
-            int m = 1;
-            foreach (var items in listGroup)
-            {
-                <div class="col-md-6">
-                    @foreach (var item in items)
-                    {
-                        <div @if (m == 1) { <text> class="art-g-box gold-line" </text>       } class="art-g-box">
-                            <div class="art-g-box-header">
-                                <img data-src="@Html.Sitecore().ImageFieldSrc("Artist Photo", item.Artist)">
-                                <div class="art-g-box-header-text">
-                                    <h3>@Html.Sitecore().Field("Artist Name", item.Artist)<span>@Html.Sitecore().Field("Artist Birthday Label", item.Artist) @Html.Sitecore().Field("Artist Birthday Text", item.Artist)</span></h3>
-                                    <a>ARTIST BOIGRAPHY<span class="icomoon-chevron-small-right"></span></a>
-                                </div>
-                            </div>
-                            <div class="gd-artlist">
-                                <div class="row">
-                                    @foreach (var artPiece in item.ArtPieces)
-                                    {
-                                        <div class="col-md-6">
-                                            <article>
-                                                <a href="@Sitecore.Links.LinkManager.GetItemUrl(artPiece)">
-                                                    @*<img data-src="@Html.Sitecore().ImageFieldSrc("Art Image", artPiece)" alt="artpiece picture">*@
-                                                    @Html.Sitecore().Field("Art Image", artPiece)
-                                                </a>
-                                                <h4>@Html.Sitecore().Field("Art Title", artPiece), @Html.Sitecore().Field("Created Time", artPiece)</h4>
-                                                <p>@Html.Sitecore().Field("Art Key", artPiece) @Html.Sitecore().Field("Art Size", artPiece)</p>
-                                            </article>
-                                        </div>
-                                    }
-                                </div>
-                            </div>
-                        </div>
-                    }
+
+        <div class="col-md-6">
+            <div class="art-g-box gold-line">
+                <div class="art-g-box-header">
+                    <img data-src="@Html.Sitecore().ImageFieldSrc("Artist Photo", model.Artist)">
+                    <div class="art-g-box-header-text">
+                        <h3>@Html.Sitecore().Field("Artist Name", model.Artist)<span>@Html.Sitecore().Field("Artist Birthday Label", model.Artist) @Html.Sitecore().Field("Artist Birthday Text", model.Artist)</span></h3>
+                        <a>ARTIST BOIGRAPHY<span class="icomoon-chevron-small-right"></span></a>
+                    </div>
                 </div>
-                    m++;
-            }
-        }
+
+                <div class="gd-artlist">
+                    <div class="row">
+                        @foreach (var item in model.ArtPieces)
+                        {
+                            <div class="col-md-6">
+                                <article>
+                                    <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
+                                        @*<img data-src="../files/landmark/images/arttour/arttour-pic-02.jpg" alt="artpiece picture">*@
+                                        @Html.Sitecore().Field("Art Image", item)
+                                    </a>
+                                    <h4>@Html.Sitecore().Field("Art Title", item), @Html.Sitecore().Field("Created Time", item)</h4>
+                                    <p>@Html.Sitecore().Field("Art Key") @Html.Sitecore().Field("Art Size", item)</p>
+                                </article>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+
+        </div>
     </div>
 
     <a id="gd-art-gallery-loading" class="loding-more"><img data-src="@Url.Content("~/files/landmark/images/more.gif")">  @Html.Sitecore().Field("Glossary Value", ItemGuids.MoreItem)</a>
