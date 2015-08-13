@@ -23,7 +23,7 @@
 
                 foreach (var item in artPieces)
                 {
-                    <div class="col-md-3">
+                    <div class="col-sm-3">
                         <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
                             @Html.Sitecore().Field("Art Image", item)
                             <h3>@Html.Sitecore().Field("Art Title", item)</h3>
