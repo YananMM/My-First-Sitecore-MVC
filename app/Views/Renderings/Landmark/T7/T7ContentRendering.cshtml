@@ -1,0 +1,82 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Collections
+@using Sitecore.Data.Items
+@model RenderingModel
+@{
+    string src = Html.Sitecore().ImageFieldSrc("Map Menu Image", Sitecore.Context.Item);
+    ChildList buidings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
+}
+<div class="container">
+      <div class="gd-pagetitle">
+        <div class="gd-pagetitle-heading">
+          <a href="#" class="gd-link-audio">
+            <span class="icomoon-download"></span> @Sitecore.Context.Item["Download Label"].ToUpper()
+          </a>
+          <h1>@Sitecore.Context.Item["Page Title"].ToUpper()</h1>
+        </div>
+          <div class="gd-pagetitle-mapmenu hidden-xs hiddden-sm">
+              <img data-src="@src" alt="map">
+              <ul>
+                  @{
+                      int i = 0;
+                      foreach (Item building in buidings)
+                      {
+                        if (i == 0)
+                         {
+                             <li class="active"><a href="#">@building.Fields["Buiding Title"].Value</a></li>
+                         }
+                         else
+                         {
+                             <li>
+                                  <a href="#">@building.Fields["Buiding Title"].Value</a>
+                              </li>
+                         }
+                          i++;
+                      }
+                  }
+              </ul>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="gd-floorplan clearfix">
+            <div class="gd-fp-levela" id="gd-floors"></div>
+            <div class="gd-fp-levelb">
+              <div id="gd-shops"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div id="mapplic">
+          </div>
+          <div class="gd-mainimage-brief">
+            <h2 id="gd-shop-detail-title">Lorem ipsum dolor</h2>
+            <div class="table-responsive gd-mainimage-table">
+              <table>
+                <tbody>
+                  <tr>
+                    <th>WHERE</th>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                  </tr>
+                  <tr>
+                    <th>OPENING HOURS</th>
+                    <td>MON-FRI: 10:00-11:00 <br>SAT-SUN: 11:00-12:00</td>
+                  </tr>
+                  <tr>
+                    <th>ADDRESS</th>
+                    <td>15 Queen's Road Central, LANDMARK, Central, Hong Kong.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button type="button" class="gd-button gd-button-white">
+              SEE MORE DETAILS <span class="icomoon-chevron-small-right"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+

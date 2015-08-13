@@ -305,13 +305,19 @@ namespace Landmark.Helper
         /// <summary>
         /// Gets the brands by floor.
         /// </summary>
-        /// <param name="floorId">The floor unique identifier.</param>
         /// <returns>List{Item}.</returns>
         public List<Item> GetBrandsByFloor()
         {
             string floorId = GetFloorId(out floorId).ToString();
             var allBrands = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T14ShopDetailsTemplate);
             var brandsByFloor = allBrands.Where(p => p.Fields["Floor"].ToString() == floorId).ToList();
+            return brandsByFloor;
+        }
+
+        public List<Item> GetBrandsByFloor(Item floor)
+        {
+            var allBrands = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T14ShopDetailsTemplate);
+            var brandsByFloor = allBrands.Where(p => p.Fields["Floor"].ToString() == floor.ID.ToString()).ToList();
             return brandsByFloor;
         }
 

@@ -56,6 +56,15 @@
         }
       </style>
     <![endif]-->
+@if (LandmarkHelper.GetPageBodyClass().StartsWith("t7"))
+{
+    <link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/svgmap/mapplic/mapplic.css">
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/svgmap/mapplic/mapplic-ie.css">
+
+        <script type="text/javascript" src="/files/landmark/js/lib/svgmap/js/html5shiv.js"></script>
+    <![endif]-->
+}
     <title>@Html.Sitecore().Field("Page Title")</title>
 </head>
 <body class="en @LandmarkHelper.GetPageBodyClass()">

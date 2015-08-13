@@ -36,5 +36,41 @@ namespace Landmark.Models
         public List<Item> ArtPieces { get; set; } 
     }
 
+    public class FloorPlan
+    {
+        public string mapheight;
+        public string mapwidth;
+        public List<Floor> categories;
+        public List<Level> levels;
+    }
+
+    public class Floor
+    {
+        public string id;
+        public string title;
+        public string color;
+        public string show;
+    }
+
+    public class Level
+    {
+        public string id;
+        public string title;
+        public string map;
+        public string minimap;
+        public List<Location> locations;
+    }
+
+    public class Location
+    {
+        public string category;
+        public string id;
+        public string title;
+        public string area;
+        public string description;
+        public string pin;
+        public string x;
+        public string y;
+    }
 
 }
