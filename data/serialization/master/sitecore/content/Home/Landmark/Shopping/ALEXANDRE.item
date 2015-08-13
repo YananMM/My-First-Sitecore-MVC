@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 5d37b51a-ba99-4c26-a548-bd77f62d01de
+revision: 22a162ac-5cb9-43a4-aea8-f6c401cc65fd
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -134,6 +134,20 @@ content-length: 16
 
 This is Shop 212
 ----field----
+field: {8B055347-174E-4D86-8B2D-22ACFAB67D14}
+name: LocationX
+key: locationx
+content-length: 6
+
+0.2012
+----field----
+field: {624D2412-1023-406B-9A02-A915293A6BA6}
+name: LocationY
+key: locationy
+content-length: 6
+
+0.3180
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -146,14 +160,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5d37b51a-ba99-4c26-a548-bd77f62d01de
+22a162ac-5cb9-43a4-aea8-f6c401cc65fd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150812T073322Z
+20150813T095442Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
