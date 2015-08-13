@@ -13,7 +13,7 @@
                 <div class="carousel-caption-inner">
                     <div class="gd-carousel-detail">
                         <div class="gd-mainimage-brief">
-                            <h2>@Html.Sitecore().Field("Cover Title", Sitecore.Context.Item)</h2>
+                            <h1>@Html.Sitecore().Field("Cover Title", Sitecore.Context.Item)</h1>
                             @Html.Sitecore().Field("Cover Content", Sitecore.Context.Item)
                             <form action="@Url.Action("ButtonRedirect", "Home")">
                                 @{
@@ -38,7 +38,7 @@
 
 <div class="container" id="gd-audio-guide">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-sm-12  col-md-8 col-md-offset-2">
             <div class="gd-brief">
                 <div class="gd-brief-heading">
                     <h3>@Html.Sitecore().Field("Content Title", Sitecore.Context.Item)</h3>
@@ -53,7 +53,7 @@
     <div class="row">
         @{
             var guides = LandmarkHelper.GetItemByTemplate(ItemGuids.ImageTextObjectTemplate);
-            
+
             foreach (Item guide in guides)
             {
                 <div class="col-sm-4">
@@ -67,5 +67,5 @@
                 </div>
             }
         }
-</div>
+    </div>
 </div>

@@ -1051,8 +1051,8 @@ $(document).ready(function() {
     var gdArtsLocked    = false;
 
     var gdArtsFunc1 = function() {
-      var gdArtsLeft  = $('#gd-art-gallery>.col-sm-6').eq(0);
-      var gdArtsRight = $('#gd-art-gallery>.col-sm-6').eq(1);
+      var gdArtsLeft  = $('#gd-art-gallery>.col-md-6').eq(0);
+      var gdArtsRight = $('#gd-art-gallery>.col-md-6').eq(1);
       gdArtsLength    = gdArtsData.length;
 
       if (gdArtsAdd === 4) {
@@ -1068,21 +1068,21 @@ $(document).ready(function() {
           var gdArtsHtmlTemp = '';
 
           gdArtsLocked = true;
-          gdArtsHtmlTemp += '<div class="art-g-box"><div class="art-g-box-header"><div class="row"><div class="col-sm-3">'+
-                            '<img src="'+gdArtsDataTemp.avatar+'"></div><div class="col-sm-9">'+
-                            '<h3>'+gdArtsDataTemp.name+'<span>'+gdArtsDataTemp.date+'</span></h3>'+
-                            '<a href="'+gdArtsDataTemp.link+'">ARTIST BOIGRAPHY<span class="icomoon-chevron-small-right"></span></a></div></div></div>'+
-                            '<div class="gd-artlist"><div class="row">';
+          gdArtsHtmlTemp += '<div class="art-g-box">'+
+                            '<div class="art-g-box-header"><img src="'+gdArtsDataTemp.avatar+'">'+
+                            '<div class="art-g-box-header-text"><h3>'+gdArtsDataTemp.name+'<span>'+gdArtsDataTemp.date+'</span></h3>'+
+                            '<a href="'+gdArtsDataTemp.link+'">ARTIST BOIGRAPHY<span class="icomoon-chevron-small-right"></span></a>'+
+                            '</div></div><div class="gd-artlist"><div class="row">';
           for (var loop2 = 0; loop2 < gdArtsDataTemp.work.length; loop2++) {
 
-            gdArtsHtmlTemp += '<div class="col-sm-6"><article><a href="'+gdArtsDataTemp.work[loop2].link+'">'+
+            gdArtsHtmlTemp += '<div class="col-md-6"><article><a href="'+gdArtsDataTemp.work[loop2].link+'">'+
                               '<img src="'+gdArtsDataTemp.work[loop2].url+'"></a>'+
                               '<h4>'+gdArtsDataTemp.work[loop2].title+'</h4><p>'+gdArtsDataTemp.work[loop2].des+'</p></article></div>';
             if (loop2 === 1) {
               gdArtsHtmlTemp += '<div class="gd-artlist-toggle">';
             }
             if (loop2 > 1 && loop2 === gdArtsDataTemp.work.length - 1) {
-              gdArtsHtmlTemp += '</div><div class="col-xs-12"><a href="javascript:;" class="gd-artlist-more">SEE MORE +</a></div>';
+              gdArtsHtmlTemp += '</div><div class="col-md-6"><a href="javascript:;" class="gd-artlist-more">SEE MORE +</a></div>';
             }
           }
           gdArtsHtmlTemp += '</div></div></div>';
@@ -1133,7 +1133,7 @@ $(document).ready(function() {
     }
 
     if ($('body').hasClass('t22-is')) {
-      $.getJSON('/en/t22/arts.json', function(data) {
+        $.getJSON('/Service/GetArtPieceJsonByArtists.ashx/', function (data) {
         gdArtsData = data;
       })
       .fail(function() {
@@ -1154,7 +1154,7 @@ $(document).ready(function() {
       if ($('#gd-art-gallery-loading').offset().top < winSize().height + $(window).scrollTop()) {
 
         //Remove this line below in production environment
-        gdArtsInserting = 0;
+        //gdArtsInserting = 0;
         //Remove this line above in production environment
 
         //For page T22
@@ -1233,14 +1233,23 @@ $(document).ready(function() {
   /**********************************************************************************************************
    * Showcase
    **********************************************************************************************************/
+  if ($('.gd-showcase').length) {
+    $.each($('.gd-showcase-content'), function(index, item) {
+      var gdScViewWidth = $(item).width();
+      var gdScItemWidth = gdScViewWidth / 4;
+      $(item).find('.gd-showcase-items>li').css({'width': gdScItemWidth + 'px'});
+    });
+  }
+  
   $('.gd-showcase-control').click(function() {
     var gdShowcase      = $(this).parent();
+    var gdShowcaseViewW = gdShowcase.find('.gd-showcase-content').width();
+    var gdShowcaseItemW = gdShowcaseViewW / 4;
     var gdShowcaseItems = gdShowcase.find('.gd-showcase-items');
     var gdShowcaseNo    = gdShowcase.find('.gd-showcase-items>li').length;
-    var gdShowcaseStopNo= gdShowcaseNo - Math.ceil(gdShowcase.find('.gd-showcase-content').width() / 300);
+    var gdShowcaseStopNo= gdShowcaseNo - 5;
     var gdShowcaseIndex = Number(gdShowcase.data('position'));
     var gdShowcaseMove;
-    var gdShowcaseMoveMax;
 
     if ($(this).hasClass('gd-showcase-left')) {
         if (gdShowcaseIndex < 0) {
@@ -1252,7 +1261,7 @@ $(document).ready(function() {
         }
     }
     gdShowcase.data('position', gdShowcaseIndex);
-    gdShowcaseMove = gdShowcaseIndex * 300;
+    gdShowcaseMove = gdShowcaseIndex * gdShowcaseItemW;
     gdShowcaseItems.css({'left': gdShowcaseMove});
   });
 

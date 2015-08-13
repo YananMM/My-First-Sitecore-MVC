@@ -1,40 +1,181 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : Landmark
+// Author           : Jiang Lili
+// Created          : 07-30-2015
+//
+// Last Modified By : Jiang Lili
+// Last Modified On : 08-12-2015
+// ***********************************************************************
+// <copyright file="LandmarkModels.cs" company="Gruden">
+//     Copyright (c) Gruden. All rights reserved.
+// </copyright>
+// <summary></summary>
+// ***********************************************************************
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Sitecore.Data.Items;
 
+// <summary>
+// The Models namespace.
+// </summary>
 namespace Landmark.Models
 {
+    /// <summary>
+    /// Class LandmarkModels.
+    /// </summary>
     public class LandmarkModels
     {
     }
 
+    /// <summary>
+    /// Class LandmarkBrandModel.
+    /// </summary>
     public class LandmarkBrandModel
     {
+        /// <summary>
+        /// Gets or sets the group.
+        /// </summary>
+        /// <value>The group.</value>
         public string Group { get; set; }
 
+        /// <summary>
+        /// Gets or sets the tags.
+        /// </summary>
+        /// <value>The tags.</value>
         public string Tags { get; set; }
 
+        /// <summary>
+        /// Gets or sets the brand item.
+        /// </summary>
+        /// <value>The brand item.</value>
         public Item BrandItem { get; set; }
     }
 
+    /// <summary>
+    /// Class TagsTree.
+    /// </summary>
     public class TagsTree
     {
+        /// <summary>
+        /// Gets or sets the current item.
+        /// </summary>
+        /// <value>The current item.</value>
         public Item CurrentItem { get; set; }
 
+        /// <summary>
+        /// Gets or sets the children.
+        /// </summary>
+        /// <value>The children.</value>
         public List<TagsTree> Children { get; set; }
     }
 
 
+    /// <summary>
+    /// Class ArtPieceModel.
+    /// </summary>
     public class ArtPieceModel
     {
+        /// <summary>
+        /// Gets or sets the artist.
+        /// </summary>
+        /// <value>The artist.</value>
         public Item Artist { get; set; }
 
+        /// <summary>
+        /// Gets or sets the building.
+        /// </summary>
+        /// <value>The building.</value>
         public Item Building { get; set; }
 
-        public List<Item> ArtPieces { get; set; } 
+        /// <summary>
+        /// Gets or sets the art pieces.
+        /// </summary>
+        /// <value>The art pieces.</value>
+        public List<Item> ArtPieces { get; set; }
     }
+
+    /// <summary>
+    /// Class ArtPieceJson.
+    /// </summary>
+    public class ArtPieceByArtistJson
+    {
+        /// <summary>
+        /// Gets or sets the avatar.
+        /// </summary>
+        /// <value>The avatar.</value>
+        public string avatar { get; set; }
+
+        /// <summary>
+        /// Gets or sets the name.
+        /// </summary>
+        /// <value>The name.</value>
+        public string name { get; set; }
+
+        /// <summary>
+        /// Gets or sets the date.
+        /// </summary>
+        /// <value>The date.</value>
+        public string date { get; set; }
+
+        /// <summary>
+        /// Gets or sets the link.
+        /// </summary>
+        /// <value>The link.</value>
+        public string link { get; set; }
+
+        /// <summary>
+        /// Gets or sets the work.
+        /// </summary>
+        /// <value>The work.</value>
+        public List<Work> work { get; set; }
+    }
+
+    /// <summary>
+    /// Class Work.
+    /// </summary>
+    public class Work
+    {
+        /// <summary>
+        /// Gets or sets the title.
+        /// </summary>
+        /// <value>The title.</value>
+        public string title { get; set; }
+
+        /// <summary>
+        /// Gets or sets the description.
+        /// </summary>
+        /// <value>The description.</value>
+        public string des { get; set; }
+
+        /// <summary>
+        /// Gets or sets the URL.
+        /// </summary>
+        /// <value>The URL.</value>
+        public string url { get; set; }
+
+        /// <summary>
+        /// Gets or sets the link.
+        /// </summary>
+        /// <value>The link.</value>
+        public string link { get; set; }
+    }
+
+    /// <summary>
+    /// Class ArtPieceByBuildingJson.
+    /// </summary>
+    public class ArtPieceByBuildingJson
+    {
+        public string title { get; set; }
+
+        public string des { get; set; }
+
+        public string src { get; set; }
+
+        public string link { get; set; }
+    }
+
 
     public class FloorPlan
     {

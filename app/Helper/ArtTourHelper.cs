@@ -18,9 +18,12 @@ using System.Web;
 using Landmark.Classes;
 using Landmark.Models;
 using Sitecore.Collections;
+using Sitecore.ContentSearch.Utilities;
 using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
+using Sitecore.Mvc.Helpers;
+using Sitecore.Web.UI.XslControls;
 
 // <summary>
 // The Helper namespace.
@@ -73,7 +76,7 @@ namespace Landmark.Helper
         public List<Item> GetArtByBuilding(string buildingId)
         {
             List<Item> artPieces = new ItemList();
-            List<Item> allArtPieces = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkArtTourItem, Sitecore.Context.Item.TemplateID.ToString());
+            List<Item> allArtPieces = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkArtTourItem, ItemGuids.T29Template);
             if (allArtPieces != null && allArtPieces.Count != 0)
             {
                 foreach (var item in allArtPieces)
@@ -116,48 +119,95 @@ namespace Landmark.Helper
         /// Gets the artist models.
         /// </summary>
         /// <returns>List{ArtistModel}.</returns>
-        public List<ArtPieceModel> GetArtPieceModelsByArtists()
+        public List<ArtPieceByArtistJson> GetArtPieceJsonByArtist()
         {
-            List<ArtPieceModel> models = new List<ArtPieceModel>();
+            List<ArtPieceByArtistJson> models = new List<ArtPieceByArtistJson>();
             List<Item> allArtists = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkArtTourItem,
-                ItemGuids.T30Template).OrderBy(p => p.DisplayName).ToList();
+                ItemGuids.T30Template).ToList();
             if (allArtists != null && allArtists.Count != 0)
             {
                 foreach (var item in allArtists)
                 {
                     var artPieces = GetArtByArtist(item.ID.ToString());
-                    if (artPieces != null && artPieces.Count > 2)
+                    ArtPieceByArtistJson model = new ArtPieceByArtistJson()
                     {
-                        artPieces = artPieces.GetRange(0, 2);
+                        link = Sitecore.Links.LinkManager.GetItemUrl(item),
+                        avatar = SitecoreFieldHelper.ImageFieldSrc("Artist Photo", item),
+                        date = item.Fields["Artist Birthday Label"] + " " + item.Fields["Artist Birthday Text"],
+                        name = item.Fields["Artist Name"].ToString(),
+                        work = new List<Work>()
+                    };
+                    foreach (var piece in artPieces)
+                    {
+                        Work work = new Work()
+                        {
+                            link = Sitecore.Links.LinkManager.GetItemUrl(piece),
+                            url = SitecoreFieldHelper.ImageFieldSrc("Art Image", piece),
+                            title = piece.Fields["Art Title"].ToString(),
+                            des = piece.Fields["Art Key"] + " " + piece.Fields["Art Size"]
+                        };
+                        model.work.Add(work);
                     }
-                    ArtPieceModel model = new ArtPieceModel();
-                    model.Artist = item;
-                    model.ArtPieces = (artPieces != null && artPieces.Count != 0) ? artPieces : new List<Item>();
+                    model.work = model.work.OrderBy(p => p.title).ToList();
                     models.Add(model);
                 }
             }
+            //models = models.OrderBy(p => p.name).ToList();
+            //if (models.Count > 1)
+            //{
+            //    models = models.GetRange(1, models.Count - 1);
+            //} 
             return models;
         }
 
-        public List<ArtPieceModel> GetArtPieceModelsByBuildings()
+        /// <summary>
+        /// Gets the first art piece model.
+        /// </summary>
+        /// <returns>ArtPieceModel.</returns>
+        public ArtPieceModel GetFirstArtPieceModel()
         {
-            List<ArtPieceModel> models = new List<ArtPieceModel>();
-            List<Item> allBuildings = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.BuidingsFolder,
-                ItemGuids.BuildingDataObject).ToList();
-            if (allBuildings != null && allBuildings.Count != 0)
-            {
-                foreach (var item in allBuildings)
-                {
-                    var artPieces = GetArtByBuilding(item.ID.ToString());
-                    ArtPieceModel model = new ArtPieceModel();
-                    model.Building = item;
-                    model.ArtPieces = (artPieces != null && artPieces.Count != 0) ? artPieces : new List<Item>();
-                    models.Add(model);
-                }
-            }
-            return models;
+            ArtPieceModel model = new ArtPieceModel();
+            var firstArtist = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkArtTourItem,
+                ItemGuids.T30Template).OrderBy(p => p.Fields["Artist Name"].ToString()).First();
+            var artPieces = GetArtByArtist(firstArtist.ID.ToString());
+            model.ArtPieces = artPieces.Count > 2 ? artPieces.GetRange(0, 2) : artPieces;
+            model.Artist = firstArtist;
+            return model;
         }
 
 
+        public List<List<ArtPieceByBuildingJson>> GetArtPieceJsonByBuilding()
+        {
+            List<List<ArtPieceByBuildingJson>> list = new List<List<ArtPieceByBuildingJson>>();
+            List<ArtPieceByBuildingJson> models = new List<ArtPieceByBuildingJson>();
+            List<Item> allArtPieces = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkArtTourItem, ItemGuids.T29Template);
+            if (allArtPieces != null && allArtPieces.Count != 0)
+            {
+                foreach (var item in allArtPieces)
+                {
+                    //var building = Sitecore.Context.Database.GetItem(item.Fields["Floor and Building"].Value).Parent;
+                    //if (building.ID.ToString() == buildingId)
+                    //{
+                        ArtPieceByBuildingJson model = new ArtPieceByBuildingJson()
+                        {
+                            title = item.Fields["Art Title"].ToString(),
+                            src = SitecoreFieldHelper.ImageFieldSrc("Art Image", item),
+                            link = Sitecore.Links.LinkManager.GetItemUrl(item),
+                            des = item.Fields["Art Description"].ToString()
+                        };
+                        models.Add(model);
+                    //}
+                }
+            }
+            int j = 4;
+            for (int i = 0; i < models.Count; i += 4)
+            {
+                List<ArtPieceByBuildingJson> cList = new List<ArtPieceByBuildingJson>();
+                cList = models.Take(j).Skip(i).ToList();
+                j += 4;
+                list.Add(cList);
+            }
+            return list;
+        }
     }
 }

@@ -17,6 +17,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Sitecore.Data.Items;
+using Landmark.Models;
+using Landmark.Helper;
 
 // <summary>
 // The Controllers namespace.
@@ -28,6 +30,13 @@ namespace Landmark.Controllers
     /// </summary>
     public class HomeController : Controller
     {
+        private ArtTourHelper _helper;
+
+        public HomeController()
+        {
+            _helper = new ArtTourHelper();
+        }
+
         /// <summary>
         /// Buttons the redirect.
         /// </summary>

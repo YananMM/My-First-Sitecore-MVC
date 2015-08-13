@@ -84,7 +84,7 @@ namespace Landmark.Helper
         public static bool IsShownInNavigation(Item item)
         {
             bool isShown = false;
-            CheckboxField field = (CheckboxField) item.Fields["Is Shown In Navigation"];
+            CheckboxField field = (CheckboxField)item.Fields["Is Shown In Navigation"];
             if (field != null)
             {
                 isShown = field.Checked;
@@ -111,6 +111,14 @@ namespace Landmark.Helper
         {
             string bodyClass = string.Empty;
             bodyClass = Sitecore.Context.Item.TemplateName.Split(' ')[0].ToLower();
+            if (Sitecore.Context.Item.ID.ToString() == ItemGuids.ByArtistPage)
+            {
+                bodyClass = bodyClass + " " + "t22-is";
+            }
+            if (Sitecore.Context.Item.ID.ToString() == ItemGuids.ByLocationPage)
+            {
+                bodyClass = bodyClass + " " + "t22-svg";
+            }
             return bodyClass;
         }
 
@@ -118,8 +126,8 @@ namespace Landmark.Helper
         {
             string styleClass = string.Empty;
             //var multilistField = (MultilistField)Sitecore.Context.Item.Fields["MultilistFieldName"];
-            var mainStyleField = (ReferenceField) item.Fields["Main Version Slide Style"];
-            var subStyleField = (ReferenceField) item.Fields["Sub Version Slide Style"];
+            var mainStyleField = (ReferenceField)item.Fields["Main Version Slide Style"];
+            var subStyleField = (ReferenceField)item.Fields["Sub Version Slide Style"];
             if (mainStyleField.Value.Equals(ItemGuids.FullSizePhotoOverlayText) &
                 subStyleField.Value.Equals(ItemGuids.TwoNumbersTwoCaptionsTextLink))
             {
@@ -167,7 +175,7 @@ namespace Landmark.Helper
         {
             var item = Sitecore.Context.Item;
             var query = string.Format("fast:{0}//*[{1}]", item.Paths.FullPath, "@@TemplateId='" + templateId + "'");
-            List<Item> slidesItems = _webDb.SelectItems(query).OrderBy(i=>i.DisplayName).ToList();
+            List<Item> slidesItems = _webDb.SelectItems(query).OrderBy(i => i.DisplayName).ToList();
             return slidesItems;
         }
     }

@@ -135,6 +135,12 @@
     <Compile Include="Models\LandmarkSearchResultItem.cs" />
     <Compile Include="Models\TextValue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\GetArtPieceJsonByArtists.ashx.cs">
+      <DependentUpon>GetArtPieceJsonByArtists.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Service\GetArtPieceJsonByBuilding.ashx.cs">
+      <DependentUpon>GetArtPieceJsonByBuilding.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Service\GetCategoryJson.ashx.cs">
       <DependentUpon>GetCategoryJson.ashx</DependentUpon>
     </Compile>
@@ -459,7 +465,9 @@
     <Content Include="Views\Renderings\Landmark\T22\T22ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T22\T22ByArtistRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T22\T22ByLocationRendering.cshtml" />
-    <Content Include="Views\Renderings\Landmark\T7\T7ContentRendering.cshtml" />
+    <Content Include="Service\GetArtPieceJsonByArtists.ashx" />
+    <Content Include="Service\GetArtPieceJsonByBuilding.ashx" />
+	<Content Include="Views\Renderings\Landmark\T7\T7ContentRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
