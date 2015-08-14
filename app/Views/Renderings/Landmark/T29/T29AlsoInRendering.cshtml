@@ -28,7 +28,11 @@
                             <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
                                 @Html.Sitecore().Field("Art Image", item)
                                 <h3>@Html.Sitecore().Field("Art Title", item)</h3>
-                                <p>@Html.Sitecore().Field("Art Description", item)</p>
+                                @{
+                                    GroupedDroplinkField artistField = item.Fields["Artist"];
+                                    var artist = artistField.TargetItem.Fields["Artist Name"].ToString();
+                                }
+                                <p>@artist</p>
                             </a>
                         </li>
                     }

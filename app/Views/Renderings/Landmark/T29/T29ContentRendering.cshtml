@@ -40,9 +40,9 @@
                             @Html.Sitecore().Field("Art Size")
                         </div>
                         <div class="col-sm-6 text-right">
-                            <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="sample.mp3">
-                                <span class="icomoon-sound-alt"></span>
-                                @Html.Sitecore().Field("Glossary Value", ItemGuids.ListenToCommentaryItem)
+                            <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
+                            <span class="icomoon-sound-alt"></span>
+                            @Html.Sitecore().Field("Glossary Value", ItemGuids.ListenToCommentaryItem)
                             </a>
                         </div>
                     </div>

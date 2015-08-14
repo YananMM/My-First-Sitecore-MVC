@@ -48,6 +48,19 @@ namespace Landmark.Helper
             }
             return imageURL;
         }
+
+        public static String FileFieldUrl(this SitecoreHelper helper, string fieldName, Item item)
+        {
+            string fileUrl = string.Empty;
+
+            Sitecore.Data.Fields.FileField fileField = item.Fields[fieldName];
+            if (fileField != null && fileField.MediaItem != null)
+            {
+                Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(fileField.MediaItem);
+                fileUrl = Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
+            }
+            return fileUrl;
+        }
     }
 
 }
