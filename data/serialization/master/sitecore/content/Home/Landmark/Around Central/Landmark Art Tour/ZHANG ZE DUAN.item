@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {4FD0ADE0-0BDF-4325-BE3D-F3744850C2E8}
+id: {6C920E67-89CD-42AB-9183-FEB16B905B84}
 database: master
-path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/LI SI
+path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/ZHANG ZE DUAN
 parent: {5C03DD0D-4881-4A9B-A58D-5FFA101B3533}
-name: LI SI
+name: ZHANG ZE DUAN
 master: {00000000-0000-0000-0000-000000000000}
 template: {EC149566-D74F-4E4F-9F2C-A0745E72988E}
 templatekey: T30 Page
@@ -12,43 +12,57 @@ templatekey: T30 Page
 ----version----
 language: en
 version: 1
-revision: f5a3755e-d9df-4d12-bf6e-fc0823a8315a
+revision: 484f70b2-bccb-41e1-a592-db9e9478f5bb
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
 name: Artist Name
 key: artist name
-content-length: 5
+content-length: 13
 
-LI SI
+ZHANG ZE DUAN
+----field----
+field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
+name: Artist Birthday Label
+key: artist birthday label
+content-length: 2
+
+b.
+----field----
+field: {93A3D698-0006-4B8F-A76C-908CE6699071}
+name: Artist Birthday Text
+key: artist birthday text
+content-length: 4
+
+1085
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 5
+content-length: 13
 
-LI SI
+ZHANG ZE DUAN
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150812T073521Z
+20150814T031347Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-f5a3755e-d9df-4d12-bf6e-fc0823a8315a
+484f70b2-bccb-41e1-a592-db9e9478f5bb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150812T073531:635749617318185908Z
+20150814T032345:635751194257065538Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

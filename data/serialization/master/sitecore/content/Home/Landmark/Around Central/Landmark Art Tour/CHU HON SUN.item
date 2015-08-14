@@ -1,6 +1,6 @@
 ----item----
 version: 1
-id: {477F2CD9-2986-4C16-8D76-DB39E72D1667}
+id: {1E7ECB3C-0297-4575-9BF1-C688E4BE542E}
 database: master
 path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/CHU HON SUN
 parent: {5C03DD0D-4881-4A9B-A58D-5FFA101B3533}
@@ -12,7 +12,7 @@ templatekey: T30 Page
 ----version----
 language: en
 version: 1
-revision: 8aca8b28-5245-45fe-b26d-3ca4db6760b0
+revision: 2db8ffbf-e127-4547-82b4-ce16f6c9b306
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -29,6 +29,13 @@ content-length: 58
 
 <image mediaid="{65145DC1-6309-4885-BCB8-80698FE70BF5}" />
 ----field----
+field: {55493757-0DCA-49BC-8139-884B29E177E9}
+name: Artist Photo Description
+key: artist photo description
+content-length: 72
+
+Photo of Chu Hon Sun. ( photo courtesy: Chinese University of Hong Kong)
+----field----
 field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
 name: Artist Birthday Label
 key: artist birthday label
@@ -41,7 +48,7 @@ name: Artist Birthday Text
 key: artist birthday text
 content-length: 4
 
-1966
+1950
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -55,21 +62,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150812T034829Z
+20150814T031858Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-8aca8b28-5245-45fe-b26d-3ca4db6760b0
+2db8ffbf-e127-4547-82b4-ce16f6c9b306
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150812T054851:635749553316635228Z
+20150814T032011:635751192110212745Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
