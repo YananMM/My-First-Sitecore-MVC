@@ -178,5 +178,30 @@ namespace Landmark.Helper
             List<Item> slidesItems = _webDb.SelectItems(query).OrderBy(i => i.DisplayName).ToList();
             return slidesItems;
         }
+
+        public static String FileFieldSrc(string fieldName, Item item)
+        {
+            string fileURL = string.Empty;
+            Sitecore.Data.Fields.FileField fileField = item.Fields[fieldName];
+            if (fileField != null && fileField.MediaItem != null)
+            {
+                Sitecore.Data.Items.MediaItem file = new Sitecore.Data.Items.MediaItem(fileField.MediaItem);
+                fileURL = Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(file));
+            }
+            return fileURL;
+        }
+
+        public static String ImageFieldSrc(string fieldName, Item item)
+        {
+            string imageURL = string.Empty;
+            Sitecore.Data.Fields.ImageField imageField = item.Fields[fieldName];
+            if (imageField != null && imageField.MediaItem != null)
+            {
+                Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(imageField.MediaItem);
+                imageURL = Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
+            }
+            return imageURL;
+        }
+
     }
 }

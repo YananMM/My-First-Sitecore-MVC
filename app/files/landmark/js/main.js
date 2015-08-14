@@ -854,21 +854,16 @@ $(document).ready(function() {
    **********************************************************************************************************/
   if ($('body').hasClass('t7')) {
       var gdIE8 = isIE8();
-      var urlGetFloors = "/Service/GetFloorPlanJson.ashx/",
-      gdFloorPlanJson = [];
+      var gdFloorPlanJson = [];
 
-      $.getJSON(urlGetFloors)
-      .done(function (json) {
-          gdFloorPlanJson = json;
-      })
-    //var gdFloorPlanJson = 't7/floorplan.json';
+    //var gdFloorPlanJson = '/Service/floorplan.json';
     
-    if ( gdIE8 ) {
-      gdFloorPlanJson = 't7/floorplan-ie8.json';
-    }
+    //if ( gdIE8 ) {
+    //  gdFloorPlanJson = 't7/floorplan-ie8.json';
+    //}
     
     $('#mapplic').mapplic({
-      source: gdFloorPlanJson,
+        source: '/Service/GetFloorPlanJson.ashx/',
       selector: '#floorplan .mapplic-clickable',
       mapfill: false,
       height: 525,
