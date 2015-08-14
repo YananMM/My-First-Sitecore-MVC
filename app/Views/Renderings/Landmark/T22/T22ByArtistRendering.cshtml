@@ -11,8 +11,8 @@
 <div class="art-gallery">
     <div class="row" id="gd-art-gallery">
 
-        <div class="col-md-6">
-            <div class="art-g-box gold-line">
+        <div class="col-sm-6">
+            @*<div class="art-g-box gold-line">
                 <div class="art-g-box-header">
                     <img data-src="@Html.Sitecore().ImageFieldSrc("Artist Photo", model.Artist)">
                     <div class="art-g-box-header-text">
@@ -28,7 +28,6 @@
                             <div class="col-md-6">
                                 <article>
                                     <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
-                                        @*<img data-src="../files/landmark/images/arttour/arttour-pic-02.jpg" alt="artpiece picture">*@
                                         @Html.Sitecore().Field("Art Image", item)
                                     </a>
                                     <h4>@Html.Sitecore().Field("Art Title", item), @Html.Sitecore().Field("Created Time", item)</h4>
@@ -38,9 +37,9 @@
                         }
                     </div>
                 </div>
-            </div>
+            </div>*@
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-6">
 
         </div>
     </div>
