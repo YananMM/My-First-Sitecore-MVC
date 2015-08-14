@@ -19,7 +19,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: bdc3336b-4c43-4c61-859d-ea3e709bce25
+revision: 88888b4c-1f4f-4a08-ab45-8c1e25d02e5d
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -55,7 +55,14 @@ name: Artist
 key: artist
 content-length: 38
 
-{2AD4D69A-E821-4E74-A950-A16092759156}
+{CE1BF482-35C9-4A66-89A6-98F0CA011344}
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{8FCC1846-EFFF-46CB-B26F-66EC6C82D1B5}" src="~/media/8FCC1846EFFF46CBB26F66EC6C82D1B5.ashx" />
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -97,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bdc3336b-4c43-4c61-859d-ea3e709bce25
+88888b4c-1f4f-4a08-ab45-8c1e25d02e5d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150812T031329:635749460097243384Z
+20150814T032733:635751196536435911Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

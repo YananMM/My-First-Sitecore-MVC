@@ -12,7 +12,7 @@ templatekey: T20 Page
 ----version----
 language: en
 version: 1
-revision: 66475661-6a27-48b6-952c-ca26b41973be
+revision: 3ff85105-c7af-4482-8697-366b1d913fa3
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
@@ -36,29 +36,12 @@ content-length: 17
 
 CENTRAL ART GUIDE
 ----field----
-field: {B6B6B6BA-80E1-4E09-AF00-5EB6A4D05221}
-name: Cover Content
-key: cover content
-content-length: 149
-
-<p>How to spend a day with your friends and family in Central?<br>
-Check out our one-day recommendation and experience the best of Central.
-</p>
-<br>
-----field----
-field: {B89F6E69-36D5-40AB-99E4-35B8A6FB6E0A}
-name: Cover Image
-key: cover image
-content-length: 58
-
-<image mediaid="{8287AB21-2C4F-4B02-AC26-245B9214554B}" />
-----field----
 field: {2511C4C1-908A-4C03-B12B-52B5E95CA051}
 name: Button Link
 key: button link
-content-length: 137
+content-length: 0
 
-<link text="" linktype="internal" class="" title="" target='Active Browser' querystring="" id="{57B8DEB0-CDFF-4287-94D6-E19191142B1B}" />
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -72,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-66475661-6a27-48b6-952c-ca26b41973be
+3ff85105-c7af-4482-8697-366b1d913fa3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150813T004745Z
+20150814T021021:635751150219356725Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

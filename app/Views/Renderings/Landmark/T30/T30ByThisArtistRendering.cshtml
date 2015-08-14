@@ -27,7 +27,7 @@
                         <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
                             @Html.Sitecore().Field("Art Image", item)
                             <h3>@Html.Sitecore().Field("Art Title", item)</h3>
-                            <p>@Html.Sitecore().Field("Art Description", item)</p>
+                            <p>@Html.Sitecore().Field("Art Key", item) @Html.Sitecore().Field("Art Size", item)</p>
                         </a>
                     </div>
                 }

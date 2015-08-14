@@ -81,10 +81,13 @@ namespace Landmark.Helper
             {
                 foreach (var item in allArtPieces)
                 {
-                    var building = Sitecore.Context.Database.GetItem(item.Fields["Floor and Building"].Value).Parent;
-                    if (building.ID.ToString() == buildingId)
+                    var floor = Sitecore.Context.Database.GetItem(item.Fields["Floor and Building"].Value);
+                    if (floor != null)
                     {
-                        artPieces.Add(item);
+                        if (floor.Parent.ID.ToString() == buildingId)
+                        {
+                            artPieces.Add(item);
+                        }
                     }
                 }
             }
@@ -193,8 +196,10 @@ namespace Landmark.Helper
                             title = item.Fields["Art Title"].ToString(),
                             src = SitecoreFieldHelper.ImageFieldSrc("Art Image", item),
                             link = Sitecore.Links.LinkManager.GetItemUrl(item),
-                            des = item.Fields["Art Description"].ToString()
                         };
+                        GroupedDroplinkField artistField = item.Fields["Artist"];
+                        model.des = artistField.TargetItem.Fields["Artist Name"].ToString();
+
                         models.Add(model);
                     //}
                 }
