@@ -8,15 +8,22 @@
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
-            <a href="t20.html#gd-audio-guide" class="gd-link-audio">
+            <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkArtTourItem))#gd-audio-guide" class="gd-link-audio">
                 <span class="icomoon-sound-alt"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.MobileAudioGuideItem) <span class="icomoon-chevron-small-right"></span>
             </a>
-            <h1>CENTRAL ART GUIDE</h1>
+            <h1>@Html.Sitecore().Field("Page Title")</h1>
         </div>
 
-        <div class="gd-pagetitle-menu">@Html.Sitecore().Field("Glossary Value", ItemGuids.ViewByItem) <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))" class="active">@Html.Sitecore().Field("Glossary Value", ItemGuids.ArtistItem)</a>  <span class="gd-pagetitle-menu-gap">|</span>  <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByLocationPage))">@Html.Sitecore().Field("Glossary Value", ItemGuids.LocationItem)</a></div>
-    </div>
+        <div class="gd-pagetitle-menu">
+            @Html.Sitecore().Field("Glossary Value", ItemGuids.ViewByItem) <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))" @if (Html.Sitecore().CurrentItem.ID.ToString() == ItemGuids.ByArtistPage) { <text>
+                                                                              class="active" </text>   }>
+                @Html.Sitecore().Field("Glossary Value", ItemGuids.ArtistItem)
+            </a>  <span class="gd-pagetitle-menu-gap">|</span>  <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByLocationPage))" @if (Html.Sitecore().CurrentItem.ID.ToString() == ItemGuids.ByLocationPage)
+            { <text>
+                class="active" </text>   }>@Html.Sitecore().Field("Glossary Value", ItemGuids.LocationItem)</a>
+            </div>
+        </div>
 
-    @Html.Sitecore().Placeholder("by-artist")
-    @Html.Sitecore().Placeholder("by-location")
-</div>
+        @Html.Sitecore().Placeholder("by-artist")
+        @Html.Sitecore().Placeholder("by-location")
+    </div>

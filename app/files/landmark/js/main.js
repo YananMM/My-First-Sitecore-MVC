@@ -166,6 +166,7 @@ $(document).ready(function() {
 
     // Back To Top
     $backToTopBtn.on('click', function(e){
+      console.log('DDD');
       e.preventDefault();
       isScrolling = true;
       mainNavShrinkAnimation.reverse();
@@ -853,15 +854,8 @@ $(document).ready(function() {
    * T7 SVG Floorplan
    **********************************************************************************************************/
   if ($('body').hasClass('t7')) {
-      var gdIE8 = isIE8();
-      var urlGetFloors = "/Service/GetFloorPlanJson.ashx/",
-      gdFloorPlanJson = [];
-
-      $.getJSON(urlGetFloors)
-      .done(function (json) {
-          gdFloorPlanJson = json;
-      })
-    //var gdFloorPlanJson = 't7/floorplan.json';
+    var gdIE8 = isIE8();
+    var gdFloorPlanJson = 't7/floorplan.json';
     
     if ( gdIE8 ) {
       gdFloorPlanJson = 't7/floorplan-ie8.json';
@@ -1051,8 +1045,8 @@ $(document).ready(function() {
     var gdArtsLocked    = false;
 
     var gdArtsFunc1 = function() {
-      var gdArtsLeft  = $('#gd-art-gallery>.col-md-6').eq(0);
-      var gdArtsRight = $('#gd-art-gallery>.col-md-6').eq(1);
+      var gdArtsLeft  = $('#gd-art-gallery>.col-sm-6').eq(0);
+      var gdArtsRight = $('#gd-art-gallery>.col-sm-6').eq(1);
       gdArtsLength    = gdArtsData.length;
 
       if (gdArtsAdd === 4) {
@@ -1075,14 +1069,14 @@ $(document).ready(function() {
                             '</div></div><div class="gd-artlist"><div class="row">';
           for (var loop2 = 0; loop2 < gdArtsDataTemp.work.length; loop2++) {
 
-            gdArtsHtmlTemp += '<div class="col-md-6"><article><a href="'+gdArtsDataTemp.work[loop2].link+'">'+
+            gdArtsHtmlTemp += '<div class="col-sm-6"><article><a href="'+gdArtsDataTemp.work[loop2].link+'">'+
                               '<img src="'+gdArtsDataTemp.work[loop2].url+'"></a>'+
                               '<h4>'+gdArtsDataTemp.work[loop2].title+'</h4><p>'+gdArtsDataTemp.work[loop2].des+'</p></article></div>';
             if (loop2 === 1) {
               gdArtsHtmlTemp += '<div class="gd-artlist-toggle">';
             }
             if (loop2 > 1 && loop2 === gdArtsDataTemp.work.length - 1) {
-              gdArtsHtmlTemp += '</div><div class="col-md-6"><a href="javascript:;" class="gd-artlist-more">SEE MORE +</a></div>';
+              gdArtsHtmlTemp += '</div><div class="col-sm-6"><a href="javascript:;" class="gd-artlist-more">SEE MORE +</a></div>';
             }
           }
           gdArtsHtmlTemp += '</div></div></div>';
@@ -1137,16 +1131,17 @@ $(document).ready(function() {
         gdArtsData = data;
       })
       .fail(function() {
-        alert('Fail to load arts data.');
+        alert('Failed to load arts data.');
       });
     }
 
     if ($('body').hasClass('t22-svg')) {
       $.getJSON('/en/t22-2/arts.json', function(data) {
         gdArtsData = data;
+        $(window).trigger(scroll);
       })
       .fail(function() {
-        alert('Fail to load arts data.');
+        alert('Failed to load arts data.');
       });
     }
 
@@ -1154,7 +1149,7 @@ $(document).ready(function() {
       if ($('#gd-art-gallery-loading').offset().top < winSize().height + $(window).scrollTop()) {
 
         //Remove this line below in production environment
-        //gdArtsInserting = 0;
+        gdArtsInserting = 0;
         //Remove this line above in production environment
 
         //For page T22
@@ -1215,7 +1210,7 @@ $(document).ready(function() {
       return false;
     } else {
       gdAudioFile = $(this).data('player');
-      gdAudioFrame= '<div class="gd-audio-frame" data-audiofile="' + gdAudioFile + '"><iframe src="/files/landmark/audioplayer/index.html" frameborder="0"></iframe></div>';
+      gdAudioFrame= '<div class="gd-audio-frame" data-audiofile="' + gdAudioFile + '"><iframe src="/en/audioplayer/index.html" frameborder="0"></iframe></div>';
       $(this).parent().addClass('gd-audio-wrapper').append(gdAudioFrame);
     }
   });
@@ -1236,20 +1231,33 @@ $(document).ready(function() {
   if ($('.gd-showcase').length) {
     $.each($('.gd-showcase-content'), function(index, item) {
       var gdScViewWidth = $(item).width();
-      var gdScItemWidth = gdScViewWidth / 4;
+      var gdScItemWidth;
+      if ($(window).width() > 768) {
+        gdScItemWidth = gdScViewWidth / 4;
+      } else {
+        gdScItemWidth = gdScViewWidth;
+      }
       $(item).find('.gd-showcase-items>li').css({'width': gdScItemWidth + 'px'});
     });
   }
   
   $('.gd-showcase-control').click(function() {
     var gdShowcase      = $(this).parent();
-    var gdShowcaseViewW = gdShowcase.find('.gd-showcase-content').width();
-    var gdShowcaseItemW = gdShowcaseViewW / 4;
     var gdShowcaseItems = gdShowcase.find('.gd-showcase-items');
     var gdShowcaseNo    = gdShowcase.find('.gd-showcase-items>li').length;
-    var gdShowcaseStopNo= gdShowcaseNo - 5;
     var gdShowcaseIndex = Number(gdShowcase.data('position'));
     var gdShowcaseMove;
+    var gdShowcaseViewW = gdShowcase.find('.gd-showcase-content').width();
+    var gdShowcaseItemW;
+    var gdShowcaseStopNo= gdShowcaseNo - 5;
+    
+    if ($(window).width() > 768) {
+      gdShowcaseItemW = gdShowcaseViewW / 4;
+      gdShowcaseStopNo= gdShowcaseNo - 5;
+    } else {
+      gdShowcaseItemW = gdShowcaseViewW;
+      gdShowcaseStopNo= gdShowcaseNo - 2;
+    }
 
     if ($(this).hasClass('gd-showcase-left')) {
         if (gdShowcaseIndex < 0) {
@@ -1318,6 +1326,13 @@ $(document).ready(function() {
         });
       }
     }
+  });
+  
+  /**********************************************************************************************************
+   * GD Pagetitle for mobile
+   **********************************************************************************************************/
+  $('.gd-pagetitle>.gd-controls-m>select').change(function() {
+    window.location.href = $(this).val();
   });
 
 

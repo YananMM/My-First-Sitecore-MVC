@@ -1,7 +1,14 @@
 .t35 {
   iframe {
+    display: block;
     height: 850px;
     width: 100%;
+    @media (max-width: 768px) {
+      height: 300px;
+    }
+  }
+  #gd-map-switcher-m {
+    margin: 30px 0;
   }
 }
 .t8{
@@ -13,8 +20,11 @@
   }
   .gd-mainimage .carousel-inner .item > .carousel-caption .gd-carousel-detail{
    height: 260px;
+    @media (min-width:@screen-sm) {
+    height: @gdmi-height-md;
+    }
     @media (min-width:@screen-md) {
-    height: 640px;
+    height: @gdmi-height;
     }
   }
 }
@@ -26,7 +36,7 @@
   .gd-bigbrand{
    text-align: center;
     margin: 30px 0 50px;
-    @media (min-width:@screen-md) {
+    @media (min-width:@screen-sm) {
     margin: 41px 0 50px;
     
     }
@@ -94,7 +104,7 @@
     height: 0;
   }
 }
- @media (min-width:@screen-md) {
+ @media (min-width:@screen-sm) {
    .t14{
   .shopdetails-brand{ 
     margin: 25px 0 0;
@@ -139,21 +149,15 @@
    }  
 }
 .t22{
-  h3,h2,h4{
-    color: @gd-title-color;
-     display: block;
-      font-family: @font-family-serif;
-      }
-  h2{
-    font-size: 26px;
-  }
-  h3{
-  font-size: 18px;
-  }
   h4{
-  font-size: 16px;
+  color: @gd-title-color;
+  font-family: @font-family-serif;
+  font-size: 15px;
     text-align: left;
     margin: 30px 0 10px;
+                @media (min-width: @screen-md) {
+                 font-size: 16px;
+                }
   }
   .gd-pagetitle .gd-pagetitle-heading h1{
     margin-bottom: 56px;
@@ -187,7 +191,6 @@
           vertical-align:middle;
         }
       h3{
-       font-size: 18px;
         margin: 5px 0 15px;
         span{
           display: block;
@@ -206,7 +209,7 @@
      .row{
        margin-left: -5px;
        margin-right: -5px;
-      .col-md-6{
+      .col-sm-6{
         padding-left: 5px;
         padding-right: 5px;
         img{
@@ -236,15 +239,11 @@
         }
       }
     }
-  h3{
-  font-size: 16px;
-  }
     .loding-more{
      display: block;
       text-align: center; 
-      vertical-align: middle;
+      margin-bottom: 60px;
       .black-text2;
-
     }
   }
   .location-list-area{
@@ -304,11 +303,13 @@
     }
   }
 }
-@media (min-width:@screen-md){
+@media (min-width:@screen-sm){
   .t22{
-  
+  .gd-pagetitle .gd-pagetitle-heading h1{
+    margin-bottom: 30px;
+  }
   .art-gallery{
-    >.col-md-6{
+    >.col-sm-6{
       &:last-child{
         text-align: right;
       }
@@ -319,7 +320,6 @@
       width: 96%;
       .art-g-box-header{
       h3{
-        font-size: 18px;
         margin: 25px 0 10px;
         span{
           display: inline;
@@ -346,7 +346,7 @@
               float: none;
               width: 100%;
             }
-            @media (min-width: @screen-md-min) {
+            @media (min-width: @screen-sm-min) {
               width: 33%;
             }
   }
@@ -383,7 +383,6 @@
     padding: 0 10px;
     text-align: left;
     h2{
-      font-size: 18px;
       margin-bottom: 0;
     }
     
@@ -392,10 +391,16 @@
       padding: 30px 0;
       width: 100%;
       margin: 0 auto;
-      font-size: 14px;
+      font-size: 13px;
       line-height: 2;
+      @media (min-width: @screen-sm) {
+                 font-size: 12px;
+                }
+                @media (min-width: @screen-md) {
+                 font-size: 14px;
+                }
     }
-    .col-md-4{
+    .col-sm-4{
       border-right: none;
       &:last-child{
        border-right: none;
@@ -406,26 +411,23 @@
     }
     h3{
     color: @gd-text-color;
-      font-family: @font-family-serif;
       margin:0 0 10px;
-      font-size: 15px;
     }
     p{
     color: @gd-text-color;
      }
       }
 }
-@media (min-width:@screen-md){
+@media (min-width:@screen-sm){
  .t34{  
   .gd-offers{
     padding: 0;
     margin: 80px 0 50px;
     text-align: center;
     h2{
-      font-size: 26px;
       margin-bottom: 50px;
     }
-    .col-md-4{
+    .col-sm-4{
       border-right: solid 1px #ccc;
       &:last-child{
        border-right: none;
@@ -439,7 +441,6 @@
     }
     h3{
       margin:0 0 19px;
-      font-size: 21px;
     }
     p{
     color: @gd-text-color;
@@ -447,7 +448,6 @@
      }
       }
       }
-    
     }
 .t29{
   h4{
@@ -490,7 +490,13 @@
       color: @gd-title-color; 
       }
       .gd-artplace-location-info{
-       font-size: 14px;
+       font-size: 13px;
+                @media (min-width: @screen-sm) {
+                 font-size: 12px;
+                }
+                @media (min-width: @screen-md) {
+                 font-size: 14px;
+                }
         .gd-link-map{
        font-size: 12px;
           margin-top: 12px;
@@ -517,7 +523,13 @@
     }
     .gd-artplace-profile-info{
        .lightgray-text2;
-      font-size: 14px;
+      font-size: 13px;
+                @media (min-width: @screen-sm) {
+                 font-size: 12px;
+                }
+                @media (min-width: @screen-md) {
+                 font-size: 14px;
+                }
         p{
         color: @gd-text-color;
         }
@@ -542,7 +554,7 @@
     height: 0;
   }
 }
-@media (min-width:@screen-md) {
+@media (min-width:@screen-sm) {
   .t29 .gd-artplace{
     margin: 50px 0 60px;
     .gd-pagetitle{
@@ -614,7 +626,7 @@
     height: 0;
   }
 }
-@media (min-width:@screen-md) { 
+@media (min-width:@screen-sm) { 
   .t30{
    .gd-artist { 
     padding: 90px 10px 60px;
@@ -757,7 +769,7 @@
     .gd-pd-picture{
       height: 140px;}
   }
-}
+}/*
 @media (min-width:@screen-sm){
   .t20 {
   .gd-mainimage-single {
@@ -765,8 +777,8 @@
       .item {
         .carousel-image{
           height: 400px;}}}}}
-}
-@media (min-width:@screen-md){
+}*/
+@media (min-width:@screen-sm){
 
   >.container {
     padding-top: 70px;

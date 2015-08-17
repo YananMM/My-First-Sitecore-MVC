@@ -3,14 +3,47 @@
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @model RenderingModel
+@{
+    ArtTourHelper helper = new ArtTourHelper();
+    var allArtists = helper.GetAllArtists();
+    Item previousItem = Sitecore.Context.Item;
+    Item nextItem = Sitecore.Context.Item;
+    int index = -1;
+    if (allArtists.Count > 0)
+    {
+        foreach (var item in allArtists)
+        {
+            if (item.ID.ToString() == Sitecore.Context.Item.ID.ToString())
+            {
 
+                index = allArtists.IndexOf(item);
+                if (index != 0 && index != allArtists.LastIndexOf(allArtists.Last()))
+                {
+                    previousItem = allArtists[index - 1];
+                    nextItem = allArtists[index + 1];
+                }
+                else if (index == 0)
+                {
+                    previousItem = allArtists.Last();
+                    nextItem = allArtists[index + 1];
+                }
+                else if (index == allArtists.LastIndexOf(allArtists.Last()))
+                {
+                    previousItem = allArtists[index - 1];
+                    nextItem = allArtists.First();
+                }
+            }
+        }
+    }
+}
 <div class="gd-artist">
-    <a class="gd-artist-control-l" href="#">
+
+    <a class="gd-artist-control-l" href="@Sitecore.Links.LinkManager.GetItemUrl(previousItem)">
         <span class="icomoon-thin-arrow-L"></span>
         <span class="sr-only">Previous</span>
     </a>
 
-    <a class="gd-artist-control-r" href="#">
+    <a class="gd-artist-control-r" href="@Sitecore.Links.LinkManager.GetItemUrl(nextItem)">
         <span class="icomoon-thin-arrow-R"></span>
         <span class="sr-only">Next</span>
     </a>

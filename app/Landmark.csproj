@@ -174,7 +174,6 @@
     <Content Include="favicon-32x32.png" />
     <Content Include="favicon-96x96.png" />
     <Content Include="favicon.ico" />
-    <Content Include="files\landmark\audioplayer\audio\sample.mp3" />
     <Content Include="files\landmark\audioplayer\css\bar-ui.css" />
     <Content Include="files\landmark\audioplayer\image\black-10.png" />
     <Content Include="files\landmark\audioplayer\image\black-25.png" />
@@ -550,6 +549,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="files\landmark\audioplayer\audio\" />
     <Folder Include="files\landmark\less\css\" />
     <Folder Include="Views\Sublayouts\" />
   </ItemGroup>
