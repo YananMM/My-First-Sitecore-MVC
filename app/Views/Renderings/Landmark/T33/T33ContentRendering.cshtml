@@ -5,30 +5,47 @@
 @using Landmark.Models
 @model RenderingModel
 
-<div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage" data-ride="carousel">
-   @Html.Sitecore().Placeholder("slide-objects")
+<div id="gd-carousel-mainimage-single" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-single">
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Cover Image", Sitecore.Context.Item)"></div>
+            <div class="carousel-caption">
+                <div class="carousel-caption-inner">
+                    <div class="gd-carousel-detail">
+                        <div class="gd-mainimage-brief">
+                            <h1>@Html.Sitecore().Field("Cover Title")</h1>
+                            <p>@Html.Sitecore().Field("Cover Description")</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
 <div class="container">
-
     <div class="gd-brief">
         <div class="gd-brief-heading">
-            <h2>@Html.Sitecore().Field("Content Title")</h2>
+            <h2>@Html.Sitecore().Field("Address Label")</h2>
         </div>
-        <div class="gd-brief-body gd-col-2">
-            <p>@Html.Sitecore().Field("Content Description")
+        <div class="gd-brief-body gd-brief-center">
+            <p>
+                @Html.Sitecore().Field("Address Text")
             </p>
+            <a href="/en/t35.html"><button class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Button Text")</button></a>
         </div>
+    </div>
+    <div class="gd-location-map">
+        <iframe src="t33-iframe.html" frameborder="0"></iframe>
     </div>
     <div class="gd-brief">
         <div class="gd-brief-heading">
-            <h2>ONE LANDMARK</h2>
+            <h2>4 ICONIC BUILDINGS</h2>
         </div>
-        <div class="gd-brief-body">
+        <div class="gd-brief-body gd-brief-center">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center">
+                <div class="col-md-8 col-md-offset-2">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+                        As a powerful, luxury retail brand LANDMARK provides a rich diversity of offerings and experiences across the four famed shopping destinations.
                     </p>
                 </div>
             </div>
@@ -42,15 +59,15 @@
                 <div class="carousel-caption">
                     <div class="carousel-caption-inner">
                         <div class="gd-carousel-detail">
-                            <h3>4 buildings 1 name</h3>
-                            <p>A setting in the heart of the city since 1904; a curation of the world's exclusive brands. All part of 208 fine stores and restaurants in 4 connected buildings that go by 1 name, LANDMARK.</p>
+                            <h3>LANDMARKATRIUM</h3>
+                            <p>Built on the old grounds of Hong Kong Hotel and located in the heart of Central, LANDMARK ATRIUM continues the rich heritage of the land, accompanying the growth and development of Hong Kong since its completion in 1980s.</p>
                             <button class="gd-button gd-button-white" type="button">DISCOVER MORE</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <div class="carousel-image" data-bgsrc="../files/landmark/images/about/about-article-01.jpg"></div>
+                <div class="carousel-image" data-bgsrc="../files/landmark/images/shopdetail/shopdetail-article-01.jpg"></div>
                 <div class="carousel-caption">
                     <div class="carousel-caption-inner">
                         <div class="gd-carousel-detail">
@@ -62,7 +79,7 @@
                 </div>
             </div>
             <div class="item">
-                <div class="carousel-image" data-bgsrc="../files/landmark/images/example1.jpg"></div>
+                <div class="carousel-image" data-bgsrc="../files/landmark/images/ourlocation/ourlocation-article-01.jpg"></div>
                 <div class="carousel-caption">
                     <div class="carousel-caption-inner">
                         <div class="gd-carousel-detail">

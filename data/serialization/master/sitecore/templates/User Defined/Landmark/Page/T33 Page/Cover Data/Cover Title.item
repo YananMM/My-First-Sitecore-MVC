@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {21B45344-DBEB-439F-B9B4-FADCD4757389}
+id: {7C1E3BE1-8424-4A87-BF99-116E943351D5}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T8 Page/About Data/About Title
-parent: {CD6A5EAE-2818-4D4C-8722-99CEA1B0A149}
-name: About Title
+path: /sitecore/templates/User Defined/Landmark/Page/T33 Page/Cover Data/Cover Title
+parent: {4A3F9389-A8B5-4381-A4E3-FD20053A4F67}
+name: Cover Title
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -26,7 +26,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: b83ec53d-ddf1-451c-9a34-7998fc3de951
+revision: 8b3fa561-56f6-419c-af2f-4d6d2f7bedb0
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150817T091746Z
+20150818T032608Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-b83ec53d-ddf1-451c-9a34-7998fc3de951
+8b3fa561-56f6-419c-af2f-4d6d2f7bedb0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150818T025917:635754635579001079Z
+20150818T070904:635754785446102987Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

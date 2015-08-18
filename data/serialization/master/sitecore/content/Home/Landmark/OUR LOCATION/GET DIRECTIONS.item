@@ -1,47 +1,47 @@
 ----item----
 version: 1
-id: {CD6A5EAE-2818-4D4C-8722-99CEA1B0A149}
+id: {C4B0C207-D66A-4E2F-9469-6B8FF62A4CB1}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T8 Page/About Data
-parent: {53A5550C-C11D-4076-ADE3-1FBC2D53F01F}
-name: About Data
+path: /sitecore/content/Home/Landmark/OUR LOCATION/GET DIRECTIONS
+parent: {0254F7EA-1EC9-4E58-AD40-CC3816329F05}
+name: GET DIRECTIONS
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {1A0E838D-F82A-45C4-B8D5-50812F1F6746}
+templatekey: T35 Page
 
 ----version----
 language: en
 version: 1
-revision: 01df9aea-5a21-48e7-b274-5f40c0de6b59
+revision: 9b0b5b52-7fe6-4861-85fe-7af3b1160f66
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 14
+
+GET DIRECTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150817T091746Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
+20150818T074017Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-01df9aea-5a21-48e7-b274-5f40c0de6b59
+9b0b5b52-7fe6-4861-85fe-7af3b1160f66
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150818T025917:635754635578831069Z
+20150818T074017:635754804171324008Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

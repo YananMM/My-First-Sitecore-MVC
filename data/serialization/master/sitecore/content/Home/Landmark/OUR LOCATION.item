@@ -1,0 +1,93 @@
+----item----
+version: 1
+id: {0254F7EA-1EC9-4E58-AD40-CC3816329F05}
+database: master
+path: /sitecore/content/Home/Landmark/OUR LOCATION
+parent: {497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}
+name: OUR LOCATION
+master: {00000000-0000-0000-0000-000000000000}
+template: {BC90CE99-D056-4446-939E-BEBA6D7F6D5A}
+templatekey: T33 Page
+
+----version----
+language: en
+version: 1
+revision: 97502dd8-9beb-47f5-88ef-6966592c85ee
+
+----field----
+field: {7C1E3BE1-8424-4A87-BF99-116E943351D5}
+name: Cover Title
+key: cover title
+content-length: 12
+
+OUR LOCATION
+----field----
+field: {8632183B-5266-472C-85E8-E305EE62366F}
+name: Cover Description
+key: cover description
+content-length: 118
+
+Our buildings are conveniently located at the heart of the city with easy access by different means of transportation.
+----field----
+field: {06B9866F-B046-4C45-AF71-CA88D247D025}
+name: Cover Image
+key: cover image
+content-length: 58
+
+<image mediaid="{D61C0136-C7F6-4110-8D4A-C40B3B45BA60}" />
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 12
+
+OUR LOCATION
+----field----
+field: {A226DDC8-EF57-486D-B926-CA77063BC5A4}
+name: Address Label
+key: address label
+content-length: 7
+
+ADDRESS
+----field----
+field: {0D6445AB-4A02-4A5D-8784-634D3D28D530}
+name: Address Text
+key: address text
+content-length: 55
+
+  15 Queen's Road Central, LANDMARK, Central, Hong Kong
+----field----
+field: {FED81EE2-0129-4F01-B629-B7F97045D302}
+name: Button Text
+key: button text
+content-length: 14
+
+GET DIRECTIONS
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150818T061920Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+97502dd8-9beb-47f5-88ef-6966592c85ee
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150818T071000:635754786006785056Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
