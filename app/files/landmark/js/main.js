@@ -863,7 +863,7 @@ $(document).ready(function() {
     //}
     
     $('#mapplic').mapplic({
-        source: '/Service/GetFloorPlanJson.ashx/',
+        source: '/Service/Landmark.asmx/GetCategoryJson',
       selector: '#floorplan .mapplic-clickable',
       mapfill: false,
       height: 525,
