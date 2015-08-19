@@ -9,10 +9,17 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {7AD93F40-7320-4CD8-89A4-D4E4BB44ADF8}
 templatekey: Glossary Object
 
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+200
 ----version----
 language: en
 version: 1
-revision: 7221084c-158d-450c-b2f3-08babbfdc046
+revision: c360e935-36d5-43b7-bd6b-6d5f3cfe276a
 
 ----field----
 field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7221084c-158d-450c-b2f3-08babbfdc046
+c360e935-36d5-43b7-bd6b-6d5f3cfe276a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150810T101213Z
+20150819T035025:635755530254060316Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,54 +1,47 @@
 ----item----
 version: 1
-id: {30811B28-1ECB-4137-B8BF-B962FF16D7E7}
+id: {8A01BBF3-963D-4011-AC05-5DB0A2B4BA73}
 database: master
-path: /sitecore/content/Global/Landmark/Glossary/MORE
-parent: {8B197E68-D618-4F66-9C07-BA8DD5DC096E}
-name: MORE
+path: /sitecore/content/Home/Landmark/Around Central/Hotels
+parent: {57B8DEB0-CDFF-4287-94D6-E19191142B1B}
+name: Hotels
 master: {00000000-0000-0000-0000-000000000000}
-template: {7AD93F40-7320-4CD8-89A4-D4E4BB44ADF8}
-templatekey: Glossary Object
+template: {E04426CD-2C71-48F8-A1CA-C507C2CAB178}
+templatekey: Hotel Page Object
 
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 3
-
-400
 ----version----
 language: en
 version: 1
-revision: 4c3b4970-7cb4-4732-9f5e-883977673d4f
+revision: 1d9e6d59-7bcf-4a8c-a852-742e81f5e899
 
 ----field----
-field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
-name: Glossary Value
-key: glossary value
-content-length: 4
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 6
 
-MORE
+Hotels
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150812T063210Z
+20150819T060512Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-4c3b4970-7cb4-4732-9f5e-883977673d4f
+1d9e6d59-7bcf-4a8c-a852-742e81f5e899
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150819T035025:635755530254540344Z
+20150819T060512:635755611124915865Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

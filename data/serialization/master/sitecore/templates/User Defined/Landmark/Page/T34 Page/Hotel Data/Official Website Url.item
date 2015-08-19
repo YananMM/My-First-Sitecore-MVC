@@ -1,54 +1,54 @@
 ----item----
 version: 1
-id: {70032C39-DB3A-42F1-91FC-9D85BE84A3F7}
+id: {7855DD15-C637-4329-949A-40B474ED45CA}
 database: master
-path: /sitecore/content/Global/Landmark/Glossary/RELATED ARTICLES
-parent: {8B197E68-D618-4F66-9C07-BA8DD5DC096E}
-name: RELATED ARTICLES
+path: /sitecore/templates/User Defined/Landmark/Page/T34 Page/Hotel Data/Official Website Url
+parent: {29B02AF7-D78A-4F1F-9FAB-E952458FACAF}
+name: Official Website Url
 master: {00000000-0000-0000-0000-000000000000}
-template: {7AD93F40-7320-4CD8-89A4-D4E4BB44ADF8}
-templatekey: Glossary Object
+template: {455A3E98-A627-4B40-8035-E683A0331AC7}
+templatekey: Template field
 
+----field----
+field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
+name: Type
+key: type
+content-length: 12
+
+General Link
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-600
+500
 ----version----
 language: en
 version: 1
-revision: 34a59edb-879d-419b-91c3-52ba94194900
+revision: 207c7aaa-7820-4b8b-9119-596c10cbb28e
 
-----field----
-field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
-name: Glossary Value
-key: glossary value
-content-length: 16
-
-RELATED ARTICLES
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150805T080715Z
+20150819T031551Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-34a59edb-879d-419b-91c3-52ba94194900
+207c7aaa-7820-4b8b-9119-596c10cbb28e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150819T035025:635755530254880363Z
+20150819T061624:635755617849400483Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
