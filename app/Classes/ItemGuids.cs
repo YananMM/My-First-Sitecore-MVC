@@ -60,6 +60,8 @@ namespace Landmark.Classes
         public static readonly String ByLocationPage = "{2149D38C-BDE5-404C-A1AB-4E8245B3228C}";
         public static readonly String HotelPageObject = "{E04426CD-2C71-48F8-A1CA-C507C2CAB178}";
         public static readonly String T34Template = "{C08DC2B0-088B-4182-81C4-4D7510A741C0}";
+        public static readonly String T34Branch = "{8B38BE26-F07E-42C3-9C4E-6B7D1770BAB1}";
+        public static readonly String HotelsPage = "{8A01BBF3-963D-4011-AC05-5DB0A2B4BA73}";
 
         //item 
         public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}");
