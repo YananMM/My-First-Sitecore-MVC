@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {2AD4D69A-E821-4E74-A950-A16092759156}
+database: master
+path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/BO YUN
+parent: {5C03DD0D-4881-4A9B-A58D-5FFA101B3533}
+name: BO YUN
+master: {00000000-0000-0000-0000-000000000000}
+template: {EC149566-D74F-4E4F-9F2C-A0745E72988E}
+templatekey: T30 Page
+
+----version----
+language: en
+version: 1
+revision: 9c3c796a-ce58-4e39-a393-57205e8f8fd2
+
+----field----
+field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
+name: Artist Name
+key: artist name
+content-length: 6
+
+BO YUN
+----field----
+field: {9BD250FA-ED47-4245-87A3-B0A834FC78E8}
+name: Artist Photo
+key: artist photo
+content-length: 58
+
+<image mediaid="{4923A8BA-7F97-4AC0-9C4E-DDABC4B2E726}" />
+----field----
+field: {55493757-0DCA-49BC-8139-884B29E177E9}
+name: Artist Photo Description
+key: artist photo description
+content-length: 67
+
+Photo of Bo Yun. ( photo courtesy: Chinese University of Hong Kong)
+----field----
+field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
+name: Artist Birthday Label
+key: artist birthday label
+content-length: 2
+
+b.
+----field----
+field: {93A3D698-0006-4B8F-A76C-908CE6699071}
+name: Artist Birthday Text
+key: artist birthday text
+content-length: 4
+
+1954
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 6
+
+BO YUN
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150812T031120Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9c3c796a-ce58-4e39-a393-57205e8f8fd2
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150812T031301:635749459817767399Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

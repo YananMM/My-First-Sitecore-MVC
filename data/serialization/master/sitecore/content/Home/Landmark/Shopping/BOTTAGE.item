@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 4169e3a9-3889-48a4-957c-c88e13a0049a
+revision: 65b2ae5d-f5e9-4b7d-a53e-96005df118e2
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -62,7 +62,42 @@ name: Floor
 key: floor
 content-length: 38
 
-{E4D421D6-DCB0-40F4-B554-A52F83DC40EF}
+{375FC2F4-E801-442F-B1EA-B75EFB86BB39}
+----field----
+field: {5350FA4D-170D-4926-8B21-97068A9C599F}
+name: Area
+key: area
+content-length: 7
+
+Area 12
+----field----
+field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
+name: Description
+key: description
+content-length: 21
+
+SHOP DESCRIPTION HERE
+----field----
+field: {8B055347-174E-4D86-8B2D-22ACFAB67D14}
+name: LocationX
+key: locationx
+content-length: 6
+
+0.2975
+----field----
+field: {624D2412-1023-406B-9A02-A915293A6BA6}
+name: LocationY
+key: locationy
+content-length: 6
+
+0.1690
+----field----
+field: {3AEEB76E-6DA8-4ADC-AFA7-13BB46A57CC1}
+name: Svg Id
+key: svg id
+content-length: 9
+
+f0-g62-63
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -76,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4169e3a9-3889-48a4-957c-c88e13a0049a
+65b2ae5d-f5e9-4b7d-a53e-96005df118e2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150807T061035:635745246355444141Z
+20150819T060800Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
