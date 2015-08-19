@@ -549,6 +549,11 @@
     <Content Include="Views\Renderings\Landmark\T8\T8SlideTextRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T33\T33ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T35\T35ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T34\T34ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T34\T34HotelDataRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T34\T34PageTitleRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T34\T34SpecialOffersRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T34\T34AboutHotelRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

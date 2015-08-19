@@ -1,0 +1,33 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@using Landmark.Models
+@model RenderingModel
+<h1>@Html.Sitecore().Field("Hotel Title")</h1>
+<div class="table-responsive gd-mainimage-table">
+    <table>
+        <tbody>
+            <tr>
+                <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.PhoneItem)</th>
+                <td>@Html.Sitecore().Field("Hotel Phone")</td>
+            </tr>
+            <tr>
+                <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.EmailItem)</th>
+                <td>@Html.Sitecore().Field("Hotel Email")</td>
+            </tr>
+            <tr>
+                <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.AddressItem)</th>
+                <td>
+                    @Html.Sitecore().Field("Hotel Address")<br>
+                    <a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="/en/t7/floorplan-0.png" data-lighttitle="PUT LIGHTBOX TITLE HERE">
+                        <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.ViewMapItem)
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<a href="#" class="gd-link-brief">
+    @Html.Sitecore().Field("Official Website Label") <span class="icomoon-chevron-small-right"></span>
+</a>
