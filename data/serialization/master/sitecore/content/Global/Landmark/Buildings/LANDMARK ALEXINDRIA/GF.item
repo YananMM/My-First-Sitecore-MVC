@@ -1,6 +1,6 @@
 ----item----
 version: 1
-id: {F589382F-6556-46F6-AC4B-9E89B0BB5DD1}
+id: {375FC2F4-E801-442F-B1EA-B75EFB86BB39}
 database: master
 path: /sitecore/content/Global/Landmark/Buildings/LANDMARK ALEXINDRIA/GF
 parent: {E76CEFC9-801C-4694-9A63-0C6132F20741}
@@ -9,10 +9,17 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
 templatekey: Floor Object
 
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 2
+
+50
 ----version----
 language: en
 version: 1
-revision: fb0b992d-81e6-4382-98a4-53be1c7086f0
+revision: 7610dc0b-cd87-477a-8f9f-be9cff93bc57
 
 ----field----
 field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
@@ -22,26 +29,40 @@ content-length: 3
 
 G/F
 ----field----
+field: {49195981-001A-41D0-BE6E-78B60FD14964}
+name: Floor Svg File
+key: floor svg file
+content-length: 109
+
+<file mediaid="{56D57FE3-B7A5-4F1F-BA6A-7C61C43E16E6}" src="~/media/56D57FE3B7A54F1FBA6A7C61C43E16E6.ashx" />
+----field----
+field: {FF370512-19AC-4386-B26B-D64C14BF4693}
+name: Is Shown
+key: is shown
+content-length: 0
+
+
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150804T025314Z
+20150814T074219Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-fb0b992d-81e6-4382-98a4-53be1c7086f0
+7610dc0b-cd87-477a-8f9f-be9cff93bc57
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150804T025507Z
+20150819T073440Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -12,7 +12,7 @@ templatekey: Floor Object
 ----version----
 language: en
 version: 1
-revision: 59e19a0a-be29-4088-8abf-a59f1671128b
+revision: 4b6bd767-c654-4781-89e8-c14d9950ae5d
 
 ----field----
 field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
@@ -21,6 +21,27 @@ key: floor title
 content-length: 3
 
 1/F
+----field----
+field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
+name: Floor Image
+key: floor image
+content-length: 58
+
+<image mediaid="{B00627DE-4011-4706-9BBF-1DB918BD9175}" />
+----field----
+field: {49195981-001A-41D0-BE6E-78B60FD14964}
+name: Floor Svg File
+key: floor svg file
+content-length: 109
+
+<file mediaid="{434DAA99-3CC6-4A16-833A-AF9CE1799BAA}" src="~/media/434DAA993CC64A16833AAF9CE1799BAA.ashx" />
+----field----
+field: {FF370512-19AC-4386-B26B-D64C14BF4693}
+name: Is Shown
+key: is shown
+content-length: 9
+
+f0-g62-63
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -34,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-59e19a0a-be29-4088-8abf-a59f1671128b
+4b6bd767-c654-4781-89e8-c14d9950ae5d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150804T025601Z
+20150819T022215Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
