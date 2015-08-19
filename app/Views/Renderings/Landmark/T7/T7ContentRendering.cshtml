@@ -24,12 +24,12 @@
                       {
                         if (i == 0)
                          {
-                             <li class="active" data-service=""><a href="#">@building.Fields["Buiding Title"].Value</a></li>
+                             <li class="active" data-service=""><a href="#">@building.Fields["Building Title"].Value</a></li>
                          }
                          else
                          {
                              <li>
-                                  <a href="#" data-form="">@building.Fields["Buiding Title"].Value</a>
+                                  <a href="#" data-form="">@building.Fields["Building Title"].Value</a>
                               </li>
                          }
                           i++;
@@ -57,15 +57,15 @@
               <table>
                 <tbody>
                   <tr>
-                    <th>WHERE</th>
+                    <th>@Html.Sitecore().Field("Glossary Value",ItemGuids.WhereItem)</th>
                     <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
                   </tr>
                   <tr>
-                    <th>OPENING HOURS</th>
+                    <th>@Html.Sitecore().Field("Glossary Value",ItemGuids.OpenningHoursItem)</th>
                     <td>MON-FRI: 10:00-11:00 <br>SAT-SUN: 11:00-12:00</td>
                   </tr>
                   <tr>
-                    <th>ADDRESS</th>
+                    <th>@Html.Sitecore().Field("Glossary Value",ItemGuids.AddressItem)</th>
                     <td>15 Queen's Road Central, LANDMARK, Central, Hong Kong.</td>
                   </tr>
                 </tbody>

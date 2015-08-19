@@ -87,17 +87,16 @@ namespace Landmark.Classes
         public static readonly Item RealatedArticlesItem = Sitecore.Context.Database.GetItem("{70032C39-DB3A-42F1-91FC-9D85BE84A3F7}");
         public static readonly Item MobileAudioGuideItem = Sitecore.Context.Database.GetItem("{DD2597D1-42CF-4A71-BD93-8A05851B91B9}");
         public static readonly Item ListenToCommentaryItem = Sitecore.Context.Database.GetItem("{55FAB28E-6000-4382-833A-4A29C8CA38B0}");
-
         public static readonly Item LocationItem = Sitecore.Context.Database.GetItem("{944602F7-94FA-4927-8D72-65326C2F9C32}");
-
         public static readonly Item AlsoInItem = Sitecore.Context.Database.GetItem("{0F082781-8037-4643-96F6-88104B58539A}");
-
         public static readonly Item ByThisArtistItem = Sitecore.Context.Database.GetItem("{B8DBA1C5-3950-4A13-A460-7C7A1795B682}");
-
         public static readonly Item ViewByItem = Sitecore.Context.Database.GetItem("{79222D4A-7956-4441-9D67-B080494D69BC}");
-
         public static readonly Item ArtistItem = Sitecore.Context.Database.GetItem("{66B7043C-69C4-4212-A719-F4CE6EBCCB19}");
-
         public static readonly Item MoreItem = Sitecore.Context.Database.GetItem("{30811B28-1ECB-4137-B8BF-B962FF16D7E7}");
+        public static readonly Item OfficialWebsiteItem = Sitecore.Context.Database.GetItem("{86B65A99-F8BE-42C1-A50F-A346ACFA9A6D}");
+        public static readonly Item OpenningHoursItem = Sitecore.Context.Database.GetItem("{86EDB6E7-348D-4F43-AE03-3F0EA2F937AC}");
+        public static readonly Item AddressItem = Sitecore.Context.Database.GetItem("{CA66929E-12DD-41D9-8D84-7C57E9C123B0}");
+
+        
     }
 }

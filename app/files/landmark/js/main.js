@@ -864,7 +864,7 @@ $(document).ready(function() {
     //}
     
     $('#mapplic').mapplic({
-        source: '/Service/Landmark.asmx/GetCategoryJson',
+        source: "/Service/Landmark.asmx/GetFloorPlanJson?buildingID={E76CEFC9-801C-4694-9A63-0C6132F20741}",
       selector: '#floorplan .mapplic-clickable',
       mapfill: false,
       height: 525,

@@ -212,6 +212,11 @@ namespace Landmark.Models
         public string pin;
         public string x;
         public string y;
+        public string workdayhours;
+        public string weekendhours;
+        public string wherelocation;
+        public string address;
+        public string href;
     }
 
 }

@@ -52,7 +52,7 @@
                             var floor = helper.GetFloor(Sitecore.Context.Item);
                         }
                         <div class="col-sm-9 col-md-10 gd-artplace-location-info">
-                            @floor.Fields["Floor Title"] @floor.Parent.Fields["Buiding Title"]<br>
+                            @floor.Fields["Floor Title"] @floor.Parent.Fields["Building Title"]<br>
                             <a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image",floor)" data-lighttitle="PUT LIGHTBOX TITLE HERE">
                                 <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.FloorPlanItem)
                             </a>
