@@ -92,6 +92,16 @@ namespace Landmark.Helper
             return isShown;
         }
 
+        public static bool IsShownInBreadcrumb(Item item)
+        {
+            bool isShown = false;
+            CheckboxField field = item.Fields["Is Shown In Breadcrumb"];
+            if (field != null)
+            {
+                isShown = field.Checked;
+            }
+            return isShown;
+        }
         public static List<Item> GetChildrenPageInNavigation(Item parentItem)
         {
             List<Item> resultsList = new List<Item>();

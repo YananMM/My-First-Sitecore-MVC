@@ -1,4 +1,6 @@
 ﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @model RenderingModel
 
@@ -40,12 +42,17 @@
                     @if (item.ID == homePage.ID)
                     {
                         <text>Home</text>
+                        <span class="icomoon-chevron-small-right"></span>
                     }
                     else
                     {
-                        <text>@item.DisplayName</text>
+                        CheckboxField show = item.Fields["Is Shown In Breadcrumb"];
+                        if (LandmarkHelper.IsShownInBreadcrumb(item))
+                        {
+                            <text>@item.DisplayName</text>
+                            <span class="icomoon-chevron-small-right"></span>
+                        }
                     }
-                    <span class="icomoon-chevron-small-right"></span>
                 </a>
             </li>
 

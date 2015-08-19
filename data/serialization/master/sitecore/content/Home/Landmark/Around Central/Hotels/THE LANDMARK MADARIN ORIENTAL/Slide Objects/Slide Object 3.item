@@ -1,26 +1,33 @@
 ----item----
 version: 1
-id: {5D4B5095-02C6-45BA-8C86-F5D2B851F89A}
+id: {EF685E3C-B7AE-4107-B7BA-5ABE04A8418A}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Page Base Object/Page Data
-parent: {2EE1034D-FA6F-4894-B5FD-AC31F548CE33}
-name: Page Data
+path: /sitecore/content/Home/Landmark/Around Central/Hotels/THE LANDMARK MADARIN ORIENTAL/Slide Objects/Slide Object 3
+parent: {BA6317DE-C31C-4D84-8A67-FF259C80EFE5}
+name: Slide Object 3
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
+templatekey: Slide Object
 
 ----version----
 language: en
 version: 1
-revision: 01faffec-d524-4767-a0d1-203fee941526
+revision: e70fcc72-19bb-49e1-a601-0414fe9c106a
 
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150721T065107Z
+20150819T063117Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-01faffec-d524-4767-a0d1-203fee941526
+e70fcc72-19bb-49e1-a601-0414fe9c106a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150819T093050:635755734501652610Z
+20150819T063117:635755626779601262Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
