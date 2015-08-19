@@ -6,17 +6,17 @@
 @model RenderingModel
 
 <div class="gd-pagetitle-heading">
-    <h1>HOTELS</h1>
+    <h1>@Html.Sitecore().Field("Page Title", Sitecore.Context.Item.Parent).ToString().ToUpper()</h1>
 </div>
 <div class="gd-pagetitle-menu hidden-xs">
-    <a href="#" class="active">THE LANDMARK MADARIN ORIENTAL</a>
+    <a href="#" class="active">@Html.Sitecore().Field("Page Title", Sitecore.Context.Item)</a>
     <span class="gd-pagetitle-menu-gap">|</span>
     <a href="t34-2.html">MANDARIN ORIENTAL, HONG KONG</a>
 </div>
 
 <div class="gd-controls-m visible-xs">
     <select class="form-control">
-        <option value="#">THE LANDMARK MADARIN ORIENTAL</option>
+        <option value="#">@Html.Sitecore().Field("Page Title", Sitecore.Context.Item)</option>
         <option value="t34-2.html">MANDARIN ORIENTAL, HONG KONG</option>
     </select>
 </div>

@@ -15,124 +15,25 @@
 </div>
 <div class="container">
     <div class="gd-bigbrand">
-        <img data-src="../files/landmark/images/hotel/hotel-logo-01.gif">
+        <img data-src="@Html.Sitecore().ImageFieldSrc("Hotel Logo", Sitecore.Context.Item)">
     </div>
     <div class="gd-brief">
         <div class="gd-brief-heading">
             <h2>
-                The Landmark Mandarin Oriental: <br>
-                Simply one of the best luxury city hotels in the world.
+                @Html.Sitecore().Field("Content Title")
             </h2>
         </div>
         <div class="gd-brief-body">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <p>
-                        Our 113 guestrooms are amongst the largest hotel rooms in Hong Kong and each a masterpiece of contemporary design. We offer a cocoon of discreet serenity, attended by our legendary service. This is a highly exclusive experience in the premier business and fashion location.
+                        @Html.Sitecore().Field("Content Description")
                     </p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="gd-offers">
-        <h2>SPECIAL OFFERS</h2>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="gd-offers-body">
-                    <h3>Complimentary wi-fi</h3>
-                    <p>Book a published rate and create an online profile to receive complimentary high speed internet</p>
-                    <a href="#" class="gd-link-book">
-                        BOOK NOW <span class="icomoon-chevron-small-right"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="gd-offers-body">
-                    <h3>Landmark Art Voyage</h3>
-                    <p>Take a LANDMARK Art Voyage with exclusive benefits</p>
-                    <a href="#" class="gd-link-book">
-                        BOOK NOW <span class="icomoon-chevron-small-right"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="gd-offers-body">
-                    <h3>Charity Auction</h3>
-                    <p>Celebrate French gastronomy with an Ultimate Goût de France Experience</p>
-                    <a href="#" class="gd-link-book">
-                        BOOK NOW <span class="icomoon-chevron-small-right"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
-        <div class="carousel-heading">
-            <h2>ABOUT THIS HOTEL</h2>
-        </div>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <div class="carousel-image" data-bgsrc="../files/landmark/images/about/about-article-01.jpg"></div>
-                <div class="carousel-caption">
-                    <div class="carousel-caption-inner">
-                        <div class="gd-carousel-detail">
-                            <h3>The Landmark Mandarin Oriental is simply one of the best luxury city hotels in the world.</h3>
-                            <p>The Landmark Mandarin Oriental is simply one of the best luxury city hotels in the world. Our 113 guestrooms are amongst the largest hotel rooms in Hong Kong and each a masterpiece of contemporary design. We offer a cocoon of discreet serenity, attended by our legendary service. This is a highly exclusive experience in the premier business and fashion location.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="carousel-image" data-bgsrc="../files/landmark/images/about/about-article-01.jpg"></div>
-                <div class="carousel-caption">
-                    <div class="carousel-caption-inner">
-                        <div class="gd-carousel-detail">
-                            <h3>The iconic Mandarin Oriental, Hong Kong is the epitome of contemporary luxury combined with Oriental heritage.</h3>
-                            <p>Having delighted guests with its award-winning service and impressive facilities for nearly 50 years, it is the much loved address for those seeking an exclusive sanctuary in the heart of this exciting metropolis.</p>
-                            <button class="gd-button gd-button-white" type="button">DISCOVER MORE</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="carousel-image" data-bgsrc="../files/landmark/images/example1.jpg"></div>
-                <div class="carousel-caption">
-                    <div class="carousel-caption-inner">
-                        <div class="gd-carousel-detail">
-                            <h3>Lorem ipsum dolor</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eos saepe temporibus architecto magni neque eaque consequatur nesciunt harum laudantium saepe temporibus architecto magni neque eaque!</p>
-                            <button class="gd-button gd-button-white" type="button">DISCOVER MORE</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Wrapper for controls -->
-        <div class="carousel-footer">
-            <div class="gd-carousel-controls clearfix">
-                <!-- Controls -->
-                <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="prev">
-                    <span class="icomoon-thin-arrow-L" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <!-- Indicators -->
-                <ol class="carousel-indicators gd-carousel-control gd-carousel-no">
-                    <li data-target="#gd-carousel-info" data-slide-to="0" class="active">1</li>
-                    <li data-target="#gd-carousel-info" data-slide-to="1">2</li>
-                    <li data-target="#gd-carousel-info" data-slide-to="2">3</li>
-                </ol>
-                <span class="gd-carousel-control gd-carousel-no">
-                    /
-                </span>
-                <span class="gd-carousel-control gd-carousel-no">
-                    3
-                </span>
-                <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="next">
-                    <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    </div>
+    @Html.Sitecore().Placeholder("special-offers")
+    @Html.Sitecore().Placeholder("about-hotel")
+   
 </div>
