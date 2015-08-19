@@ -1,47 +1,47 @@
 ----item----
 version: 1
-id: {3BD73583-0037-45D5-A1C8-413010E4FD98}
+id: {CA66929E-12DD-41D9-8D84-7C57E9C123B0}
 database: master
-path: /sitecore/content/Global/Landmark/Buildings/LANDMARK ALEXINDRIA/3F
-parent: {E76CEFC9-801C-4694-9A63-0C6132F20741}
-name: 3F
+path: /sitecore/content/Global/Landmark/Glossary/Shopping/ADDRESS
+parent: {3CDE8EEB-9E64-43B2-81FB-56BFC62A23BC}
+name: ADDRESS
 master: {00000000-0000-0000-0000-000000000000}
-template: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
-templatekey: Floor Object
+template: {7AD93F40-7320-4CD8-89A4-D4E4BB44ADF8}
+templatekey: Glossary Object
 
 ----version----
 language: en
 version: 1
-revision: 5e661dd1-c96d-49b3-bafe-0fb8fe75bc30
+revision: 565d7bdd-1427-401c-a8b4-205df571fab8
 
 ----field----
-field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
-name: Floor Title
-key: floor title
-content-length: 3
+field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
+name: Glossary Value
+key: glossary value
+content-length: 7
 
-3/F
+ADDRESS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150804T025444Z
+20150819T073022Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-5e661dd1-c96d-49b3-bafe-0fb8fe75bc30
+565d7bdd-1427-401c-a8b4-205df571fab8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150804T025545Z
+20150819T073039Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

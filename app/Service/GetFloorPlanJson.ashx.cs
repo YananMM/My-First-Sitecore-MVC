@@ -9,6 +9,7 @@ using Landmark.Models;
 using Lucene.Net.Highlight;
 using Sitecore.Collections;
 using Sitecore.Data.Items;
+using Sitecore.Links;
 
 namespace Landmark.Service
 {
@@ -38,6 +39,7 @@ namespace Landmark.Service
                 }).ToList();
             floorplans.levels = 
                                  (from Item floor in building.Children
+                                  where helper.GetBrandsByFloor(floor).Count>0
                                  select new Level
                                  {
                                      id = "level-"+floor.ID.ToShortID(),
@@ -51,10 +53,15 @@ namespace Landmark.Service
                                                      area = location.Fields["Area"].Value,
                                                      category = "floor-" + floor.ID.ToShortID(),
                                                      description = "",
-                                                     id = "location-" + location.ID.ToShortID(),
+                                                     id = location.Fields["Svg Id"].Value,
                                                      pin="hide",
                                                      x = location.Fields["LocationX"].Value,
-                                                     y = location.Fields["LocationY"].Value
+                                                     y = location.Fields["LocationY"].Value,
+                                                     workdayhours = location.Fields["Mon-Fri Opening Hours"].Value,
+                                                     weekendhours = location.Fields["Sat-Sun Opening Hours"].Value,
+                                                     wherelocation = location.Fields["Area"].Value + "," + floor.Fields["Floor Title"].Value + "," + building.Fields["Building Title"].Value,
+                                                     address = building.Fields["Building Address"].Value,
+                                                     href = LinkManager.GetItemUrl(location)
                                                  }).ToList()
                                  }).ToList();
             
