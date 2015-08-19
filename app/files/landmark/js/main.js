@@ -854,15 +854,17 @@ $(document).ready(function() {
    * T7 SVG Floorplan
    **********************************************************************************************************/
   if ($('body').hasClass('t7')) {
-    var gdIE8 = isIE8();
-    var gdFloorPlanJson = 't7/floorplan.json';
+      var gdIE8 = isIE8();
+      var gdFloorPlanJson = [];
+
+    //var gdFloorPlanJson = '/Service/floorplan.json';
     
-    if ( gdIE8 ) {
-      gdFloorPlanJson = 't7/floorplan-ie8.json';
-    }
+    //if ( gdIE8 ) {
+    //  gdFloorPlanJson = 't7/floorplan-ie8.json';
+    //}
     
     $('#mapplic').mapplic({
-      source: gdFloorPlanJson,
+        source: '/Service/Landmark.asmx/GetCategoryJson',
       selector: '#floorplan .mapplic-clickable',
       mapfill: false,
       height: 525,

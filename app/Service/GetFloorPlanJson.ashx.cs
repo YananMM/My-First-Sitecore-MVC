@@ -17,39 +17,41 @@ namespace Landmark.Service
     /// </summary>
     public class GetFloorPlanJson : IHttpHandler
     {
-
+        
         public void ProcessRequest(HttpContext context)
         {
             context.Response.ContentType = "text/plain";
             ShoppingHelper helper = new ShoppingHelper();
-            ChildList buidings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
+            ChildList buildings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
+            Item building = buildings.First();
             FloorPlan floorplans = new FloorPlan();
             floorplans.mapheight = "525";
             floorplans.mapwidth = "700";
-            floorplans.categories = (from Item building in buidings
-                from Item floor in building.Children
+            floorplans.categories = 
+               ( from Item floor in building.Children
                 select new Floor
                 {
-                    id = floor.ID.ToString(),
+                    id = "floor-"+floor.ID.ToShortID(),
                     color = "#FFFFFF",
                     show = "false",
                     title = floor.Fields["Floor Title"].Value
                 }).ToList();
-            floorplans.levels = (from Item building in buidings
-                                 from Item floor in building.Children
+            floorplans.levels = 
+                                 (from Item floor in building.Children
                                  select new Level
                                  {
-                                     id = floor.ID.ToString(),
+                                     id = "level-"+floor.ID.ToShortID(),
                                      title = floor.Fields["Floor Title"].Value,
-                                     map = ImageFieldSrc("Floor Image",floor),
+                                     map = LandmarkHelper.FileFieldSrc("Floor Svg File",floor),
                                      minimap="",
                                      locations = (from location in helper.GetBrandsByFloor(floor)
                                                  select new Location
                                                  {
+                                                     title = location.Fields["Brand Title"].Value,
                                                      area = location.Fields["Area"].Value,
-                                                     category = floor.ID.ToString(),
+                                                     category = "floor-" + floor.ID.ToShortID(),
                                                      description = "",
-                                                     id = location.ID.ToString(),
+                                                     id = "location-" + location.ID.ToShortID(),
                                                      pin="hide",
                                                      x = location.Fields["LocationX"].Value,
                                                      y = location.Fields["LocationY"].Value
@@ -69,18 +71,6 @@ namespace Landmark.Service
             {
                 return false;
             }
-        }
-
-        private String ImageFieldSrc(string fieldName, Item item)
-        {
-            string imageURL = string.Empty;
-            Sitecore.Data.Fields.ImageField imageField = item.Fields[fieldName];
-            if (imageField != null && imageField.MediaItem != null)
-            {
-                Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(imageField.MediaItem);
-                imageURL = Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
-            }
-            return imageURL;
         }
     }
 }

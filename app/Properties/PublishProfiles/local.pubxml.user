@@ -58,7 +58,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/20/2015 12:57:50</publishTime>
     </File>
     <File Include="bin/Landmark.dll">
-      <publishTime>08/12/2015 10:26:08</publishTime>
+      <publishTime>08/15/2015 15:36:17</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>03/30/2015 10:02:30</publishTime>
@@ -123,6 +123,222 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="favicon.ico">
       <publishTime>03/26/2015 09:32:36</publishTime>
     </File>
+    <File Include="files/landmark/audioplayer/css/bar-ui.css">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/black-10.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/black-25.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/black-33.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/credits.txt">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/PNG/arrow.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/PNG/cart.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/PNG/first.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/PNG/last.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/PNG/list.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/PNG/list2.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/PNG/loop.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/PNG/music.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/PNG/pause.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/PNG/play.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/PNG/shuffle.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/PNG/volume.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/SVG/arrow.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/SVG/cart.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/SVG/first.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/SVG/last.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/SVG/list.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/SVG/list2.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/SVG/loop.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/SVG/music.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/SVG/pause.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/SVG/play.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/SVG/shuffle.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-000000/SVG/volume.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/PNG/arrow.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/PNG/cart.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/PNG/first.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/PNG/last.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/PNG/list.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/PNG/list2.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/PNG/loop.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/PNG/music.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/PNG/pause.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/PNG/play.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/PNG/shuffle.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/PNG/volume.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/SVG/arrow.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/SVG/cart.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/SVG/first.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/SVG/last.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/SVG/list.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/SVG/list2.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/SVG/loop.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/SVG/music.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/SVG/pause.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/SVG/play.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/SVG/shuffle.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/entypo-25px-ffffff/SVG/volume.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/free-25px-000000/PNG/spinner.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/free-25px-000000/SVG/spinner.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/free-25px-ffffff/PNG/spinner.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/icomoon/free-25px-ffffff/SVG/spinner.svg">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/patterns/credits.txt">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/patterns/pinstriped_suit_vertical.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/patterns/pool_table.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/patterns/rubber_grip.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/patterns/tasky_pattern.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/patterns/textured_paper.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/patterns/tweed.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/patterns/wood_pattern.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/patterns/wood_pattern_dark.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/image/patterns/woven.png">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/index.html">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/script/bar-ui.js">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/script/soundmanager2-nodebug-jsmin.js">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/swf/soundmanager2.swf">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/audioplayer/swf/soundmanager2_flash9.swf">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
     <File Include="files/landmark/css/bootstrap-select.css">
       <publishTime>07/21/2015 15:46:36</publishTime>
     </File>
@@ -133,7 +349,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/26/2015 09:32:57</publishTime>
     </File>
     <File Include="files/landmark/css/style.css">
-      <publishTime>08/10/2015 15:37:53</publishTime>
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="files/landmark/css/style.css.map">
+      <publishTime>08/14/2015 17:02:31</publishTime>
     </File>
     <File Include="files/landmark/fonts/bertholdakzidenzgroteskbelight.eot">
       <publishTime>03/30/2015 09:55:50</publishTime>
@@ -871,7 +1090,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/26/2015 09:33:01</publishTime>
     </File>
     <File Include="files/landmark/js/main.js">
-      <publishTime>08/07/2015 17:03:22</publishTime>
+      <publishTime>08/15/2015 15:20:22</publishTime>
     </File>
     <File Include="files/landmark/js/npm.js">
       <publishTime>03/26/2015 09:33:00</publishTime>
@@ -916,7 +1135,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/26/2015 09:32:57</publishTime>
     </File>
     <File Include="files/landmark/less/bootstrap/grid.less">
-      <publishTime>03/26/2015 09:32:54</publishTime>
+      <publishTime>08/13/2015 18:28:06</publishTime>
     </File>
     <File Include="files/landmark/less/bootstrap/input-groups.less">
       <publishTime>03/26/2015 09:32:57</publishTime>
@@ -1093,10 +1312,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/26/2015 09:32:51</publishTime>
     </File>
     <File Include="files/landmark/less/footer.less">
-      <publishTime>08/07/2015 16:01:20</publishTime>
+      <publishTime>08/13/2015 18:28:06</publishTime>
     </File>
     <File Include="files/landmark/less/header.less">
-      <publishTime>07/21/2015 15:46:36</publishTime>
+      <publishTime>08/13/2015 18:28:06</publishTime>
     </File>
     <File Include="files/landmark/less/icon.less">
       <publishTime>07/21/2015 15:46:36</publishTime>
@@ -1108,7 +1327,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/26/2015 09:32:54</publishTime>
     </File>
     <File Include="files/landmark/less/style.less">
-      <publishTime>08/07/2015 16:01:20</publishTime>
+      <publishTime>08/13/2015 18:28:06</publishTime>
     </File>
     <File Include="files/landmark/less/t1.less">
       <publishTime>08/07/2015 16:01:20</publishTime>
@@ -1320,11 +1539,20 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/modernizr-2.6.2.js">
       <publishTime>03/30/2015 09:55:50</publishTime>
     </File>
+    <File Include="Service/GetArtPieceJsonByArtists.ashx">
+      <publishTime>08/13/2015 18:28:06</publishTime>
+    </File>
+    <File Include="Service/GetArtPieceJsonByBuilding.ashx">
+      <publishTime>08/13/2015 18:28:06</publishTime>
+    </File>
     <File Include="Service/GetCategoryJson.ashx">
       <publishTime>07/31/2015 21:34:46</publishTime>
     </File>
     <File Include="Service/GetFloorPlanJson.ashx">
       <publishTime>08/04/2015 13:37:50</publishTime>
+    </File>
+    <File Include="Service/Landmark.asmx">
+      <publishTime>08/14/2015 21:12:14</publishTime>
     </File>
     <File Include="Service/LandmarkService.asmx">
       <publishTime>07/31/2015 09:17:11</publishTime>
@@ -1339,7 +1567,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/15/2015 10:01:12</publishTime>
     </File>
     <File Include="Views/Layouts/Landmark/MainViewLayout.cshtml">
-      <publishTime>08/10/2015 11:52:04</publishTime>
+      <publishTime>08/13/2015 18:25:52</publishTime>
     </File>
     <File Include="Views/Layouts/MainViewLayout.cshtml">
       <publishTime>04/14/2015 10:45:01</publishTime>
@@ -1411,7 +1639,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/12/2015 09:12:47</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/Global/GeneralMainContentRendering.cshtml">
-      <publishTime>08/07/2015 17:30:00</publishTime>
+      <publishTime>08/12/2015 14:29:55</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/Global/GlossaryRendering.cshtml">
       <publishTime>03/31/2015 15:46:28</publishTime>
@@ -1420,19 +1648,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/12/2015 11:10:44</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/Global/MobileNavigationRendering.cshtml">
-      <publishTime>08/12/2015 10:34:42</publishTime>
+      <publishTime>08/12/2015 14:10:20</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/Global/NavigationRendering.cshtml">
       <publishTime>07/31/2015 07:57:00</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/Global/ScriptRendering.cshtml">
-      <publishTime>08/12/2015 09:08:22</publishTime>
+      <publishTime>08/13/2015 18:24:21</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/Global/SlideRendering.cshtml">
       <publishTime>08/07/2015 16:34:55</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/Global/SocialMediaRendering.cshtml">
-      <publishTime>08/10/2015 14:18:23</publishTime>
+      <publishTime>08/12/2015 18:39:27</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T1/T1ContentRendering.cshtml">
       <publishTime>08/03/2015 16:43:57</publishTime>
@@ -1465,13 +1693,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/04/2015 11:47:40</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T11/T11PageTitle.cshtml">
-      <publishTime>08/07/2015 16:59:28</publishTime>
+      <publishTime>08/12/2015 18:34:18</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T13/T13ByBrands.cshtml">
       <publishTime>08/06/2015 08:05:10</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T13/T13ByBuidings.cshtml">
-      <publishTime>08/04/2015 11:38:30</publishTime>
+      <publishTime>08/12/2015 14:52:26</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T13/T13ContentRendering.cshtml">
       <publishTime>07/31/2015 13:04:45</publishTime>
@@ -1486,49 +1714,58 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/04/2015 11:39:31</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T14/T14AlsoOnThisFloorRendering.cshtml">
-      <publishTime>08/07/2015 16:01:20</publishTime>
+      <publishTime>08/13/2015 18:14:05</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T14/T14BottumSlideRendering.cshtml">
       <publishTime>08/06/2015 08:05:10</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T14/T14ContentRendering.cshtml">
-      <publishTime>08/07/2015 16:01:20</publishTime>
+      <publishTime>08/13/2015 18:28:06</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T14/T14RelatedArticlesRendering.cshtml">
       <publishTime>08/10/2015 14:15:49</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T14/T14ShopDataRendering.cshtml">
-      <publishTime>08/07/2015 07:37:13</publishTime>
+      <publishTime>08/13/2015 18:28:06</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T14/T14SlideRendering.cshtml">
       <publishTime>08/07/2015 10:19:02</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T14/T14TagsRenderings.cshtml">
-      <publishTime>08/06/2015 08:05:10</publishTime>
+      <publishTime>08/12/2015 15:20:59</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T14/T14YouMayAlsoLikeRendering.cshtml">
-      <publishTime>08/07/2015 13:31:25</publishTime>
+      <publishTime>08/12/2015 17:16:19</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T20/T20ContentRendering.cshtml">
-      <publishTime>08/10/2015 14:15:49</publishTime>
+      <publishTime>08/13/2015 18:28:06</publishTime>
+    </File>
+    <File Include="Views/Renderings/Landmark/T22/T22ByArtistRendering.cshtml">
+      <publishTime>08/14/2015 17:02:31</publishTime>
+    </File>
+    <File Include="Views/Renderings/Landmark/T22/T22ByLocationRendering.cshtml">
+      <publishTime>08/13/2015 18:28:06</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T22/T22ContentRendering.cshtml">
-      <publishTime>08/12/2015 08:21:53</publishTime>
+      <publishTime>08/12/2015 18:11:01</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T29/T29AlsoInRendering.cshtml">
-      <publishTime>08/12/2015 08:21:53</publishTime>
+      <publishTime>08/14/2015 17:02:31</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T29/T29ArtistRendering.cshtml">
       <publishTime>08/12/2015 08:21:53</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T29/T29ContentRendering.cshtml">
-      <publishTime>08/10/2015 15:37:53</publishTime>
+      <publishTime>08/14/2015 17:02:31</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T30/T30ByThisArtistRendering.cshtml">
-      <publishTime>08/12/2015 08:21:53</publishTime>
+      <publishTime>08/14/2015 17:02:31</publishTime>
     </File>
     <File Include="Views/Renderings/Landmark/T30/T30ContentRendering.cshtml">
-      <publishTime>08/12/2015 08:21:53</publishTime>
+      <publishTime>08/13/2015 18:28:06</publishTime>
+    </File>
+    <File Include="Views/Renderings/Landmark/T7/T7ContentRendering.cshtml">
+      <publishTime>08/15/2015 15:20:26</publishTime>
     </File>
     <File Include="Views/Renderings/SocialMedia.cshtml">
       <publishTime>03/31/2015 13:54:09</publishTime>
@@ -1597,7 +1834,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/30/2015 09:55:50</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/06/2015 13:49:14</publishTime>
+      <publishTime>08/14/2015 11:39:12</publishTime>
     </File>
   </ItemGroup>
 </Project>
