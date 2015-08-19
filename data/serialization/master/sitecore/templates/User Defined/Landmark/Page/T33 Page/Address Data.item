@@ -1,18 +1,25 @@
 ----item----
 version: 1
-id: {8C5D559E-EA90-4DE4-892B-05BA82792049}
+id: {48117434-732D-4038-AA0A-03F7703D3F1E}
 database: master
-path: /sitecore/media library/Images/Landmark/Floor Guide
-parent: {B8216A31-1396-4143-9866-AA4859AE8C3E}
-name: Floor Guide
+path: /sitecore/templates/User Defined/Landmark/Page/T33 Page/Address Data
+parent: {BC90CE99-D056-4446-939E-BEBA6D7F6D5A}
+name: Address Data
 master: {00000000-0000-0000-0000-000000000000}
-template: {FE5DD826-48C6-436D-B87A-7C4210C7413B}
-templatekey: Media folder
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
 
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+200
 ----version----
 language: en
 version: 1
-revision: ead0ed6e-61b0-4cbb-948b-f100894e430c
+revision: 567e774f-2705-4fbb-af67-41d97f51ae8c
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -20,7 +27,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150813T013406Z
+20150818T065625Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ead0ed6e-61b0-4cbb-948b-f100894e430c
+567e774f-2705-4fbb-af67-41d97f51ae8c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150813T013406Z
+20150818T070904:635754785446573013Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

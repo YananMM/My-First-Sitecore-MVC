@@ -125,8 +125,7 @@ namespace Landmark.Helper
         public List<ArtPieceByArtistJson> GetArtPieceJsonByArtist()
         {
             List<ArtPieceByArtistJson> models = new List<ArtPieceByArtistJson>();
-            List<Item> allArtists = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkArtTourItem,
-                ItemGuids.T30Template).ToList();
+            List<Item> allArtists = GetAllArtists();
             if (allArtists != null && allArtists.Count != 0)
             {
                 foreach (var item in allArtists)
@@ -178,7 +177,10 @@ namespace Landmark.Helper
             return model;
         }
 
-
+        /// <summary>
+        /// Gets the art piece json by building.
+        /// </summary>
+        /// <returns>List{List{ArtPieceByBuildingJson}}.</returns>
         public List<List<ArtPieceByBuildingJson>> GetArtPieceJsonByBuilding()
         {
             List<List<ArtPieceByBuildingJson>> list = new List<List<ArtPieceByBuildingJson>>();
@@ -191,16 +193,16 @@ namespace Landmark.Helper
                     //var building = Sitecore.Context.Database.GetItem(item.Fields["Floor and Building"].Value).Parent;
                     //if (building.ID.ToString() == buildingId)
                     //{
-                        ArtPieceByBuildingJson model = new ArtPieceByBuildingJson()
-                        {
-                            title = item.Fields["Art Title"].ToString(),
-                            src = SitecoreFieldHelper.ImageFieldSrc("Art Image", item),
-                            link = Sitecore.Links.LinkManager.GetItemUrl(item),
-                        };
-                        GroupedDroplinkField artistField = item.Fields["Artist"];
-                        model.des = artistField.TargetItem.Fields["Artist Name"].ToString();
+                    ArtPieceByBuildingJson model = new ArtPieceByBuildingJson()
+                    {
+                        title = item.Fields["Art Title"].ToString(),
+                        src = SitecoreFieldHelper.ImageFieldSrc("Art Image", item),
+                        link = Sitecore.Links.LinkManager.GetItemUrl(item),
+                    };
+                    GroupedDroplinkField artistField = item.Fields["Artist"];
+                    model.des = artistField.TargetItem.Fields["Artist Name"].ToString();
 
-                        models.Add(model);
+                    models.Add(model);
                     //}
                 }
             }
@@ -213,6 +215,21 @@ namespace Landmark.Helper
                 list.Add(cList);
             }
             return list;
+        }
+
+        /// <summary>
+        /// Gets all artists.
+        /// </summary>
+        /// <returns>List{Item}.</returns>
+        public List<Item> GetAllArtists()
+        {
+            List<Item> allArtists = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkArtTourItem,
+                ItemGuids.T30Template).ToList();
+            if (allArtists != null)
+            {
+                return allArtists.OrderBy(p => p["Artist Name"].ToString()).ToList();
+            }
+            return new List<Item>();
         }
     }
 }

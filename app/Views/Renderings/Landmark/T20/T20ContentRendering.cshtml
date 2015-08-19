@@ -18,7 +18,10 @@
                             <form action="@Url.Action("ButtonRedirect", "Home")">
                                 @{
                                     LinkField linkField = Sitecore.Context.Item.Fields["Button Link"];
-                                    <input type="hidden" value="@linkField.TargetItem.ID" name="targetId" />
+                                    if (linkField != null && linkField.TargetItem != null)
+                                    {
+                                        <input type="hidden" value="@linkField.TargetItem.ID" name="targetId" />
+                                    }
                                     <button type="submit" class="gd-button gd-button-reversed">
                                         @Html.Sitecore().Field("Button Text", Sitecore.Context.Item)
                                     </button>

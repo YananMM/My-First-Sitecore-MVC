@@ -3,7 +3,7 @@
     @gd-text-color: #222222;
 
 //  gd columns
-@media (min-width:@screen-md){
+@media (min-width:@screen-sm){
   .gd-col-2>p {
       -webkit-columns: 2;
       -moz-columns: 2;
@@ -15,7 +15,33 @@
       column-gap: 20px;
     }
 }
+//titles
 
+h1{  
+  color: @gd-title-color;
+  font-size: 21px;
+  font-family: @font-family-serif;
+}
+h2{  
+  color: @gd-title-color;
+  font-size: 18px;
+  font-family: @font-family-serif;
+}
+h3{  
+  color: @gd-title-color;
+  font-size: 15px;
+  font-family: @font-family-serif;
+}
+@media (min-width:@screen-sm) {
+  h1{font-size: 25px;}
+  h2{font-size: 22px;}
+  h3{font-size: 17px;}
+}
+@media (min-width:@screen-md) {
+  h1{font-size: 30px;}
+  h2{font-size: 26px;}
+  h3{font-size: 20px;}
+}
 // gd links
     .gd-link-audio {
       color: @gd-title-color;
@@ -40,7 +66,7 @@
       display: block;
       font-size: 12px;
       margin-top: 2em;
-      @media (min-width:@screen-md) {
+      @media (min-width:@screen-sm) {
       margin-top: 4em;
       }
       vertical-align: middle;
@@ -97,12 +123,17 @@
     .gd-button {
       border: 1px solid transparent;
       background-color: transparent;
-      font: 12px;
+      font-size: 10px;
       margin: 0;
-      padding: 0.5em 2em;
+      padding: 0.5em 1em;
       -webkit-transition: all ease-out 0.3s;
       -o-transition: all ease-out 0.3s;
       transition: all ease-out 0.3s;
+      @media (min-width:@screen-md){
+      font-size: 12px;
+      padding: 0.5em 2em;
+      
+      }
     }
     .gd-button-white {
       background-color: #FFFFFF;
@@ -145,11 +176,7 @@
           right: 0;
           width: 30px;
         }
-        h3 {
-          color: @gd-title-color;
-          font-size: 1em;
-          line-height: 1.3;
-          font-family: @font-family-serif;
+        h2 {
           margin: 0;
           padding: 0;
           text-align: left;
@@ -158,13 +185,16 @@
       }
       .gd-brief-body {
         color: @gd-text-color;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 2;
         .text-center{
           text-align: left;
         }
         p {
-          margin: 0;
+          margin: 0 0 20px;
+          &:last-child{
+           margin-bottom: 0;
+          }
         }
         &.gd-brief-center{
           text-align: left;
@@ -175,22 +205,33 @@
         }
       }
     }
-@media (min-width:@screen-md) {
+@media (min-width:@screen-sm) {
     .gd-brief {
       .gd-brief-heading {
-        font-size: 26px;
+        font-size: 22px;
         padding: 1em 15px;
         text-align: center;
         &:after {
           margin: 0 auto;
         }
-        h3 {
+        h2 {
           text-align: center;
           width: 100%;
+        }
+        &.gd-brief-heading-left{
+        padding: 1em 0;
+        h2 {
+          text-align: left;
+        }
+          
+        &:after {
+          margin: 0;
+        }
         }
       }
       
       .gd-brief-body {
+        font-size: 12px;
         .text-center{
           text-align: center;
         }  
@@ -198,6 +239,16 @@
           text-align: center;
         }
         }
+    }
+
+}
+@media (min-width:@screen-md) {
+    .gd-brief {
+      .gd-brief-heading {
+        font-size: 26px;}
+      .gd-brief-body {
+        font-size:14px;
+      }
     }
 
 }
@@ -223,28 +274,32 @@
           }
         }
         h1{  
-        color: @gd-title-color;
-        font-size: 21px;
-        font-family: @font-family-serif;
         margin: 30px 0 26px;
         padding: 0;
         text-align: left;
         }
-        @media (min-width:@screen-md){
+        @media (min-width:@screen-sm){
         
         a{
           position: relative;
           float: right;
           top: 8px;
-        letter-spacing: 0.1em;
+          letter-spacing: 0.1em;
         }
           
         h1{  
-        font-size: 30px;
+        margin: 40px 0 26px;
+        }
+        }
+        @media (min-width:@screen-md){
+        h1{  
         margin: 58px 0 30px;
         }
         }
         
+      }
+      .gd-controls-m {
+        margin: 40px 0;
       }
       .gd-pagetitle-menu{
         color: @gd-text-color;
@@ -306,22 +361,15 @@
 //  gd-artlist
     .gd-artlist{
       margin-bottom: 60px;
-      .col-md-3{
+      .col-sm-3{
         margin-bottom: 50px;
       }
       h2{
-        color: @gd-title-color;
-        font-size: 18px;
-        font-weight: 300;
-        font-family: @font-family-serif;
         margin: 0 0  0  10px;
         padding: 40px 0;
         text-align: left;
       }
       h3{
-        color: @gd-title-color;
-        font-size: 15px;
-        font-family: @font-family-serif;
         margin: 25px 0 10px;
         padding: 0;
       }
@@ -343,19 +391,15 @@
           width: 100%;
         }
     }
-@media (min-width:@screen-md) { 
+@media (min-width:@screen-sm) { 
   .gd-artlist{
-      .col-md-3{
+      .col-sm-3{
         margin-bottom: 0;
       }
-    
     h2{
-     font-size: 26px;
-      text-align: center;margin: 0 ;
-        padding: 60px 0;
+      text-align: center;margin: 0 ; 
     }
       h3{
-        font-size: 20px;
         margin: 30px 0 15px;
       }
       a,article{
@@ -369,16 +413,18 @@
         }
       }
 }
+@media (min-width:@screen-md) { 
+  .gd-artlist{
+    h2{padding: 60px 0;}
+  }
+
+}
 //  gd-carousel-info
     @gdc-height: 320px;
     .gd-carousel-info {
       .carousel-heading {
         padding: 10px 0 23px;
         h2 {
-          color: @gd-title-color;
-          font-size: 18px;
-          font-weight: 300;
-          font-family: @font-family-serif;
           margin: 0;
           padding: 0;
           text-align: left;
@@ -388,7 +434,7 @@
         .item>.carousel-image {
           height: @gdc-height;
           width: 100%;
-            background-size: cover !important;
+          background-size: cover !important;
         }
         .item {
           &:before, &:after {
@@ -399,7 +445,7 @@
           >.carousel-image, >.carousel-caption {
             display: block;
             position: static;
-            @media (min-width: @screen-md-min) {
+            @media (min-width: @screen-sm-min) {
               float: left;
               width: 50%;
             }
@@ -418,18 +464,21 @@
               height:  400px;
               padding: 25px 0 20px;
               h3 {
-                color: @gd-title-color;
-                font-size: 20px;
-                font-family: @font-family-serif;
                 line-height: 1.5;
                 margin: 0 0 10px;
                 padding: 0;
               }
               p {
                 color: @gd-text-color;
-                font-size: 14px;
+                font-size: 13px;
                 line-height: 2;
                 margin: 0;
+                @media (min-width: @screen-sm) {
+                 font-size: 12px;
+                }
+                @media (min-width: @screen-md) {
+                 font-size: 14px;
+                }
               }
               .gd-button {
                 margin-top: 20px;
@@ -477,20 +526,24 @@
           }
           .gd-carousel-no {
             color: @gd-text-color;
-            font-size: 14px;
+            font-size: 13px;
             line-height: 40px;
             width: 15px;
+                @media (min-width: @screen-sm) {
+                 font-size: 12px;
+                }
+                @media (min-width: @screen-md) {
+                 font-size: 14px;
+                }
           }
         }
       }
     }
-@media (min-width:@screen-md) {
+@media (min-width:@screen-sm) {
     .gd-carousel-info {
       .carousel-heading {
         padding: 30px 15px 23px;
         h2 {
-          color: @gd-title-color;
-          font-size: 26px;
           text-align: center;
         }
       }
@@ -507,12 +560,6 @@
               vertical-align: middle;
               height: @gdc-height;
               padding: 0 20px 0 40px;
-              h3 {
-                font-size: 20px;
-                line-height: 1.5;
-                margin: 0 0 1em;
-                padding: 0;
-              }
               .gd-button {
                 margin-top: 30px;
               }
@@ -524,6 +571,7 @@
 }
 //  gd-mainimage
     @gdmi-height: 640px;
+    @gdmi-height-md: 480px;
     @gdmi-height-sm: 320px;
     @gdmi-height-xs: 160px;
     .gd-mainimage {
@@ -555,8 +603,11 @@
               float: none;
               width: 100%;
             }
-            @media (min-width: @screen-md-min) {
+            @media (min-width: @screen-sm-min) {
             background-color: rgba(0,0,0,0.7);
+              width: 50%;
+            }
+            @media (min-width: @screen-md-min) {
               width: 33%;
             }
             z-index: 10;
@@ -650,9 +701,8 @@
         }
       }
     }
-
 }
-@media (min-width:@screen-md) {
+@media (min-width:@screen-sm) {
 
     .gd-mainimage {
       .carousel-indicators {
@@ -663,12 +713,8 @@
         .item {
           >.carousel-image {
             float: none; 
-            height: @gdmi-height;
+            height: @gdmi-height-md;
             width: 100%;
-            @media (min-width: 0px) {
-              float: none;
-              width: 100%;
-            }
           }
           >.carousel-caption {
             bottom: 0;
@@ -678,8 +724,26 @@
             right: 0;
             top: 0;
             .gd-carousel-detail {
-              height: @gdmi-height;
+              height: @gdmi-height-md;
               padding: 0 20px 0 40px;
+            }
+          }
+        }
+      }
+    }
+
+}
+@media (min-width:@screen-md) {
+
+    .gd-mainimage {
+      .carousel-inner {
+        .item {
+          >.carousel-image {
+            height: @gdmi-height;
+          }
+          >.carousel-caption {
+            .gd-carousel-detail {
+              height: @gdmi-height;
             }
           }
         }
@@ -693,17 +757,16 @@
         .item {
           >.carousel-caption {
             width: 100%;
-            @media (min-width: @screen-md-min) {
+            @media (min-width: @screen-sm-min) {
               width: 50%;
             }
             .gd-carousel-detail {
               height: auto;
               .gd-mainimage-brief {
-                h2 {
-                  font-size: 21px;
+                h1 {
                   margin-bottom: 25px;
                   padding: 0 0 24px 0;
-                  @media (min-width:@screen-md) {
+                  @media (min-width:@screen-sm) {
                   font-size: 30px;
                   }
                 }
@@ -713,13 +776,12 @@
         }
       }
     }
-@media (min-width:@screen-md){
+@media (min-width:@screen-sm){
   .gd-mainimage-single {
      .carousel-inner {
         .item {
           >.carousel-caption {
             background-color: transparent;
-          
             .gd-carousel-detail {
               height: @gdmi-height;;
             }
@@ -730,11 +792,7 @@
 }
 //  gd Main Image Brief
     .gd-mainimage-brief,.gd-mainimage-brief2 {
-      h2 {
-        color: @gd-title-color;
-        font-family: @font-family-serif;
-        font-size: 21px;
-        font-weight: 300;
+      h1 {
         line-height: 1.25;
         margin: 0 0 24px 0;
         padding: 0 0 25px 0;
@@ -751,25 +809,22 @@
       }
       p {
         color: @gd-text-color;
-        font-size: 14px; 
+        font-size: 13px; 
         line-height: 2;
+                @media (min-width: @screen-sm) {
+                 font-size: 12px;
+                }
+                @media (min-width: @screen-md) {
+                 font-size: 14px;
+                }
       }
     }
-@media (min-width:@screen-md) {
-//  gd Main Image Brief
-    .gd-mainimage-brief,.gd-mainimage-brief2 {
-      h2 {
-        font-size: 30px;
-      }
-    }
-
-}
 //  gd Main Image Brief 2
 
 .gd-mainimage-brief2{
-  h2{
+  h1{
     border-bottom: solid  2px @brand-golden;
-        padding: 0 0 23px 0;
+    padding: 0 0 23px 0;
     &:after{
     content: none;
     }
@@ -801,7 +856,13 @@
 //  gd Main Image List Brief
     .gd-mainimage-table, .gd-tg-table{
       color: @gd-text-color;
-      font-size: 14px;
+      font-size: 13px;
+                @media (min-width: @screen-sm) {
+                 font-size: 12px;
+                }
+                @media (min-width: @screen-md) {
+                 font-size: 14px;
+                }
       @media (max-width: @screen-sm-min) {
         border: none;
       }
@@ -821,7 +882,7 @@
     .gd-tg-table{
       margin-top: 20px;
       font-size: 10px;
-      @media (min-width:@screen-md) {
+      @media (min-width:@screen-sm) {
       margin-top: 60px;
       }
       table {
@@ -853,12 +914,12 @@
     .gd-artist-control-r{
      right: 0;
     }
-@media (min-width:@screen-md){
+@media (min-width:@screen-sm){
       .gd-artist-control-l,.gd-artist-control-r{
       top:45%;
       }
 }
-    @media (min-width: 1024px) and (max-width:1350px){
+@media (min-width: 1024px) and (max-width:1350px){
       .gd-artist-control-l{
         left: 10px;
       }
@@ -897,14 +958,20 @@
           border-radius: 1em;
           color: #FFFFFF;
           float: none;
-          font-size: 14px;
+          font-size: 13px;
           font-family: serif;
           height: 2em;
           line-height: 2em;
           margin-right: 1em;
           padding: 0;
           text-align: center;
-          width: 2em;
+          width: 2em; 
+          @media (min-width: @screen-sm) {
+                 font-size: 12px;
+                }
+                @media (min-width: @screen-md) {
+                 font-size: 14px;
+                }
         }
         &.active {
           background-color: transparent;
@@ -922,9 +989,15 @@
 //  gd picture with description
     .gd-picture-des {
       color: #222222;
-      font-size: 14px;
+      font-size: 13px;
       font-family: 'Times New Roman', serif;
       text-align: center;
+      @media (min-width: @screen-sm) {
+                 font-size: 12px;
+                }
+                @media (min-width: @screen-md) {
+                 font-size: 14px;
+                }
       >img {
         display: inline-block;
         margin: 0 auto;
@@ -1024,29 +1097,23 @@
       padding: 0;
       position: relative;
       h2 {
-        color: #d4a962;
-        font-size: 26px;
-        font-weight: 300;
-        font-family: "Times New Roman", Times, serif;
         margin: 0;
-        padding: 60px 0;
+        padding: 45px 0 30px;
         text-align: center;
       }
       h3 {
-        color: #d4a962;
-        font-size: 20px;
-        font-family: "Times New Roman", Times, serif;
         margin: 30px 0 15px;
         padding: 0;
       }
       p {
+        font-size: 13px;
         color: #222222;
       }
       .gd-showcase-control {
         bottom: 0;
         color: #777777;
         display: block;
-        font-size: 40px;
+        font-size: 20px;
         position: absolute;
         top: 0;
         width: 50px;
@@ -1063,12 +1130,37 @@
       .gd-showcase-left {
         left: 0;
         >span {
-          left: 5px;
+          left: 0;
         }
       }
       .gd-showcase-right {
         right: 0;
         >span {
+          right: 0;
+        }
+      }
+      @media (min-width:@screen-sm){
+        p{
+          font-size:12px;
+         }
+        .gd-showcase-control {
+        font-size: 30px;
+      }
+      }
+      @media (min-width:@screen-md){
+        h2{
+        padding: 60px 0;
+         }
+        p{
+          font-size: 14px;
+         }
+        .gd-showcase-control {
+        font-size: 40px;
+      }
+      .gd-showcase-left > span {
+          left: 5px;
+        }
+      .gd-showcase-right > span {
           right: 5px;
         }
       }
@@ -1099,8 +1191,46 @@
         }
       }
     }
+// sitemap
+.gd-sitemap{
+  .black-text;
+  dl{
+    list-style: none;
+    padding: 0;
+    margin: 0 0  30px;
+  dt{
+    padding: 0;
+      margin: 8px 0 0;
+    font-weight: normal;
+  }
+    dd{
+      padding: 0 0 0 20px;
+      margin: 8px 0 0;
+      a{
+        position: relative;
+        &:after{
+          content: ".";
+          position: absolute;
+          left: -10px;
+          top: -10px;
+        }
+      }
+    
+    }
+  }
+}
 
-
+//  Select on mobile
+    .gd-controls-m * {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+    }
+    .gd-controls-m select.form-control {
+      background-color: #FFFFFF;
+      border: 1px solid #000000;
+      border-radius: 0;
+      color: #000000;
+    }
 
 
 
