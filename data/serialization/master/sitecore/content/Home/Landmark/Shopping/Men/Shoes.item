@@ -1,54 +1,54 @@
 ----item----
 version: 1
-id: {DEC52ECB-C401-4A1C-97F2-B2646D0277E5}
+id: {3523D8BA-B644-4C9D-899E-A2DD160D136E}
 database: master
-path: /sitecore/content/Home/Landmark/Shopping/Gadgets
-parent: {07A37ABC-D676-4737-8B14-79EC18486CE8}
-name: Gadgets
-master: {00000000-0000-0000-0000-000000000000}
-template: {3832F0F6-6342-4394-932C-2DDAB1164C97}
-templatekey: T11 Page
+path: /sitecore/content/Home/Landmark/Shopping/Men/Shoes
+parent: {4B60DA56-56DB-414E-8371-87557B286D6C}
+name: Shoes
+master: {EF72B181-F50E-46E5-84B4-74392DA7AA04}
+template: {11D18D8C-A8E3-4A15-A295-DAE23894A0AE}
+templatekey: Shopping Sub Category Page Object
 
 ----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 3
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
 
-300
+
 ----version----
 language: en
 version: 1
-revision: b6f62147-81fe-4965-90d9-cbb0d24b6a20
+revision: 2ce5bb38-b5a7-4bc4-a9b0-9003c84966e7
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 7
+content-length: 5
 
-Gadgets
+Shoes
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150803T060916Z
+20150820T012559Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-b6f62147-81fe-4965-90d9-cbb0d24b6a20
+2ce5bb38-b5a7-4bc4-a9b0-9003c84966e7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150820T011546:635756301468606366Z
+20150820T012608:635756307689022153Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
