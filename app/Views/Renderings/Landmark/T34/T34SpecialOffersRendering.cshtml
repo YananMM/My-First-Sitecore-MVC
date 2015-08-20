@@ -5,34 +5,23 @@
 @using Landmark.Models
 @model RenderingModel
 <div class="gd-offers">
-    <h2>SPECIAL OFFERS</h2>
+    <h2>@Html.Sitecore().Field("Special Offers Label")</h2>
     <div class="row">
-        <div class="col-sm-4">
-            <div class="gd-offers-body">
-                <h3>Complimentary wi-fi</h3>
-                <p>Book a published rate and create an online profile to receive complimentary high speed internet</p>
-                <a href="#" class="gd-link-book">
-                    BOOK NOW <span class="icomoon-chevron-small-right"></span>
-                </a>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="gd-offers-body">
-                <h3>Landmark Art Voyage</h3>
-                <p>Take a LANDMARK Art Voyage with exclusive benefits</p>
-                <a href="#" class="gd-link-book">
-                    BOOK NOW <span class="icomoon-chevron-small-right"></span>
-                </a>
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="gd-offers-body">
-                <h3>Charity Auction</h3>
-                <p>Celebrate French gastronomy with an Ultimate Goût de France Experience</p>
-                <a href="#" class="gd-link-book">
-                    BOOK NOW <span class="icomoon-chevron-small-right"></span>
-                </a>
-            </div>
-        </div>
+        @{
+            var offers = LandmarkHelper.GetItemByTemplate(ItemGuids.T34SpecialOfferObject);
+            foreach (var item in offers)
+            {
+                <div class="col-sm-4">
+                    <div class="gd-offers-body">
+                        <h3>@Html.Sitecore().Field("Offer Title", item)</h3>
+                        <p>@Html.Sitecore().Field("Offer Description", item)</p>
+                        <a href="#" class="gd-link-book">
+                            @Html.Sitecore().Field("Offer Link Label", item) <span class="icomoon-chevron-small-right"></span>
+                        </a>
+                    </div>
+                </div>
+            }
+        }
+
     </div>
 </div>
