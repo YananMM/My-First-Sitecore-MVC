@@ -32,6 +32,17 @@
   }
 }
 //common
+
+.body-text{
+  font-size: 13px;
+  color: @gd-text-color;
+  @media (min-width: @screen-sm) {
+    font-size: 12px;}
+  @media (min-width: @screen-md) {
+    font-size: 14px;}
+
+}
+
 .gray-text{
       color: @gray;
  a {
@@ -201,6 +212,7 @@
     }
 }
 }
+
 // back to top button
   .back-top{
     background-color: #FFFFFF;
@@ -469,4 +481,9 @@
   -o-transition: opacity 0.3s;
   transition: opacity 0.3s;
   opacity: 1;
+}
+
+input[type="checkbox"]{ 
+  -webkit-appearance: checkbox;
+  box-sizing: border-box;
 }
