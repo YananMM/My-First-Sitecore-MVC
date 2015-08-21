@@ -52,28 +52,32 @@
           <div id="mapplic">
           </div>
           <div class="gd-mainimage-brief">
-            <h2 id="gd-shop-detail-title">Lorem ipsum dolor</h2>
+            <h2 id="gd-shop-detail-title"></h2>
             <div class="table-responsive gd-mainimage-table">
               <table>
                 <tbody>
                   <tr>
                     <th>@Html.Sitecore().Field("Glossary Value",ItemGuids.WhereItem)</th>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                    <td id="gd-shop-detail-where"></td>
                   </tr>
                   <tr>
                     <th>@Html.Sitecore().Field("Glossary Value",ItemGuids.OpenningHoursItem)</th>
-                    <td>MON-FRI: 10:00-11:00 <br>SAT-SUN: 11:00-12:00</td>
+                     <td>
+                      <span id="gd-shop-detail-wkt"></span>
+                      <br>
+                      <span id="gd-shop-detail-wdt"></span>
+                    </td>
                   </tr>
                   <tr>
                     <th>@Html.Sitecore().Field("Glossary Value",ItemGuids.AddressItem)</th>
-                    <td>15 Queen's Road Central, LANDMARK, Central, Hong Kong.</td>
+                    <td id="gd-shop-detail-addr"></td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <button type="button" class="gd-button gd-button-white">
+            <a id="gd-shop-detail-href" href="" class="gd-button gd-button-white">
               SEE MORE DETAILS <span class="icomoon-chevron-small-right"></span>
-            </button>
+            </a>
           </div>
         </div>
       </div>

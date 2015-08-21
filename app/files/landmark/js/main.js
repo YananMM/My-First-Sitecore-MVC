@@ -166,7 +166,6 @@ $(document).ready(function() {
 
     // Back To Top
     $backToTopBtn.on('click', function(e){
-      console.log('DDD');
       e.preventDefault();
       isScrolling = true;
       mainNavShrinkAnimation.reverse();
@@ -270,6 +269,20 @@ $(document).ready(function() {
     });
 
     $(window).on('resize', handleMobileMenuHeight);
+    
+    // Scroll top on mobile devices
+    var gdJumpTop = function() {
+      var gdJumpHeight = $(window).scrollTop();
+      if (gdJumpHeight > 0) {
+        $(window).scrollTop(gdJumpHeight - gdJumpHeight / 5);
+        setTimeout(function() {
+          gdJumpTop();
+        }, 30);
+      }
+    };
+    $backToTopBtn.on('click', function() {
+      gdJumpTop();
+    });
   }
 
 
@@ -854,10 +867,8 @@ $(document).ready(function() {
    * T7 SVG Floorplan
    **********************************************************************************************************/
   if ($('body').hasClass('t7')) {
-      var gdIE8 = isIE8();
-      var gdFloorPlanJson = [];
-
-    //var gdFloorPlanJson = '/Service/floorplan.json';
+    var gdIE8 = isIE8();
+    //var gdFloorPlanJson = 't7/floorplan.json';
     
     //if ( gdIE8 ) {
     //  gdFloorPlanJson = 't7/floorplan-ie8.json';
@@ -909,6 +920,11 @@ $(document).ready(function() {
       var gdShopId   = $('#gd-shops>.active').data('shopid');
       var gdShop     = window.gdFloorData.levels[gdFloorId].locations[gdShopId];
       $('#gd-shop-detail-title').text(gdShop.title);
+      $('#gd-shop-detail-where').text(gdShop.wherelocation);
+      $('#gd-shop-detail-wkt').text(gdShop.workdayhours);
+      $('#gd-shop-detail-wdt').text(gdShop.weekendhours);
+      $('#gd-shop-detail-addr').text(gdShop.address);
+      $('#gd-shop-detail-href').attr('href', gdShop.href);
     }
 
     var gdCheckData = function() {
@@ -1129,7 +1145,7 @@ $(document).ready(function() {
     }
 
     if ($('body').hasClass('t22-is')) {
-        $.getJSON('/Service/GetArtPieceJsonByArtists.ashx/', function (data) {
+        $.getJSON('/en/t22/arts.json', function (data) {
         gdArtsData = data;
       })
       .fail(function() {
@@ -1234,7 +1250,7 @@ $(document).ready(function() {
     $.each($('.gd-showcase-content'), function(index, item) {
       var gdScViewWidth = $(item).width();
       var gdScItemWidth;
-      if ($(window).width() > 768) {
+      if ($(window).width() > 700) {
         gdScItemWidth = gdScViewWidth / 4;
       } else {
         gdScItemWidth = gdScViewWidth;
@@ -1251,9 +1267,9 @@ $(document).ready(function() {
     var gdShowcaseMove;
     var gdShowcaseViewW = gdShowcase.find('.gd-showcase-content').width();
     var gdShowcaseItemW;
-    var gdShowcaseStopNo= gdShowcaseNo - 5;
+    var gdShowcaseStopNo;
     
-    if ($(window).width() > 768) {
+    if ($(window).width() > 700) {
       gdShowcaseItemW = gdShowcaseViewW / 4;
       gdShowcaseStopNo= gdShowcaseNo - 5;
     } else {
@@ -1281,7 +1297,10 @@ $(document).ready(function() {
   $('.shopdetails-brand .shopdetails-brand-header a').click(function() {
     var gdShopBrandActived = $(this).parent().index();
     $(this).addClass('active').parent().siblings().find('a').removeClass('active');
-    $(this).parents('.shopdetails-brand').find('.shopdetails-brand-body>.row').eq(gdShopBrandActived).removeClass('hidden').siblings().addClass('hidden');
+    $(this).parents('.shopdetails-brand')
+      .find('.shopdetails-brand-body>.row').addClass('hidden')
+      .eq(gdShopBrandActived).removeClass('hidden');
+    $('body').trigger('scroll');
   });
 
   /**********************************************************************************************************
@@ -1333,8 +1352,12 @@ $(document).ready(function() {
   /**********************************************************************************************************
    * GD Pagetitle for mobile
    **********************************************************************************************************/
-  $('.gd-pagetitle>.gd-controls-m>select').change(function() {
-    window.location.href = $(this).val();
+  $('.gd-pagetitle>.gd-controls-m select').change(function() {
+    if ($('body').hasClass('t35')) {
+      $('#gd-map-container').attr('src', $(this).val());
+    } else {
+      window.location.href = $(this).val();
+    }
   });
 
 

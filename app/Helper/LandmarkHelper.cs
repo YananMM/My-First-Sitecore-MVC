@@ -189,6 +189,15 @@ namespace Landmark.Helper
             return slidesItems;
         }
 
+        //public static List<Item> GetItemByTemplate(string templateId)
+        //{
+        //    var item = Sitecore.Context.Item;
+        //    var query = string.Format("fast:{0}//*[{1}]", item.Paths.FullPath, "@@TemplateId='" + templateId + "'");
+        //    List<Item> slidesItems = _webDb.SelectItems(query).OrderBy(i => i.DisplayName).ToList();
+        //    return slidesItems;
+        //}
+
+
         public static String FileFieldSrc(string fieldName, Item item)
         {
             string fileURL = string.Empty;
