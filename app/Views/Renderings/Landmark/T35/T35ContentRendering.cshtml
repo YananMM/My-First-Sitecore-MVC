@@ -4,3 +4,26 @@
 @using Sitecore.Data.Items
 @using Landmark.Models
 @model RenderingModel
+
+<div class="container">
+    <div class="gd-pagetitle">
+        <div class="gd-pagetitle-heading">
+            <h1>GET DIRECTIONS</h1>
+        </div>
+
+        <div id="gd-map-switcher" class="gd-pagetitle-menu hidden-xs">
+            <a data-iframe="t35-iframe.html" href="javascript:;" class="active">GET DIRECTIONS</a>
+            <span class="gd-pagetitle-menu-gap">|</span>
+            <a data-iframe="t35-iframe2.html" href="javascript:;">SURROUNDING FACILITIES</a>
+        </div>
+
+        <div id="gd-map-switcher-m" class="gd-controls-m visible-xs">
+            <select name="" id="" class="form-control visible-xs">
+                <option value="t35-iframe.html">GET DIRECTIONS</option>
+                <option value="t35-iframe2.html">SURROUNDING FACILITIES</option>
+            </select>
+        </div>
+
+    </div>
+</div>
+<iframe id="gd-map-container" src="t35-iframe.html" frameborder="0"></iframe>

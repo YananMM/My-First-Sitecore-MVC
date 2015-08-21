@@ -996,14 +996,14 @@ $(document).ready(function() {
    * T22-2 SVG Floorplan
    **********************************************************************************************************/
   if ($('body').hasClass('t22-svg')) {
-    var gdFloorPlanT22 = 't22-2/floorplan.json';
+    //var gdFloorPlanT22 = 't22-2/floorplan.json';
     
-    if (isIE8()) {
-      gdFloorPlanT22 = 't22-2/floorplan-ie8.json';
-    }
+    //if (isIE8()) {
+    //  gdFloorPlanT22 = 't22-2/floorplan-ie8.json';
+    //}
     
     $('#mapplic-t22').mapplic({
-      source: gdFloorPlanT22,
+        source: "/Service/Landmark.asmx/GetLocationJson",
       mapfill: false,
       height: 300,
       animate: false,
@@ -1154,7 +1154,7 @@ $(document).ready(function() {
     }
 
     if ($('body').hasClass('t22-svg')) {
-      $.getJSON('/en/t22-2/arts.json', function(data) {
+        $.getJSON('/Service/Landmark.asmx/GetArtsJson?buildingID={E76CEFC9-801C-4694-9A63-0C6132F20741}', function (data) {
         gdArtsData = data;
         $(window).trigger(scroll);
       })
@@ -1228,7 +1228,7 @@ $(document).ready(function() {
       return false;
     } else {
       gdAudioFile = $(this).data('player');
-      gdAudioFrame= '<div class="gd-audio-frame" data-audiofile="' + gdAudioFile + '"><iframe src="/en/audioplayer/index.html" frameborder="0"></iframe></div>';
+      gdAudioFrame= '<div class="gd-audio-frame" data-audiofile="' + gdAudioFile + '"><iframe src="/files/landmark/audioplayer/index.html" frameborder="0"></iframe></div>';
       $(this).parent().addClass('gd-audio-wrapper').append(gdAudioFrame);
     }
   });

@@ -26,7 +26,8 @@ namespace Landmark.Service
     [System.Web.Script.Services.ScriptService]
     public class Landmark : System.Web.Services.WebService
     {
-        private ShoppingHelper helper = new ShoppingHelper();
+        private ShoppingHelper _shopHelper = new ShoppingHelper();
+        private ArtTourHelper _artsHelper = new ArtTourHelper();
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json, XmlSerializeString = false)]
@@ -48,14 +49,14 @@ namespace Landmark.Service
                 }).ToList();
             floorplans.levels =
                                  (from Item floor in building.Children
-                                  where helper.GetBrandsByFloor(floor).Count > 0
+                                  where _shopHelper.GetBrandsByFloor(floor).Count > 0
                                   select new Level
                                   {
                                       id = "level-" + floor.ID.ToShortID(),
                                       title = floor.Fields["Floor Title"].Value,
                                       map = LandmarkHelper.FileFieldSrc("Floor Svg File", floor),
                                       minimap = "",
-                                      locations = (from location in helper.GetBrandsByFloor(floor)
+                                      locations = (from location in _shopHelper.GetBrandsByFloor(floor)
                                                    select new Location
                                                    {
                                                        title = location.Fields["Brand Title"].Value,
@@ -130,7 +131,11 @@ namespace Landmark.Service
         public void GetArtsJson(string buildingID)
         {
             Item building = Sitecore.Context.Database.GetItem(buildingID);
-
+            var list = _artsHelper.GetArtPieceJsonByBuilding(buildingID);
+            JavaScriptSerializer js = new JavaScriptSerializer();
+            string strJSON = js.Serialize(list);
+            Context.Response.Write(strJSON);
+            Context.Response.ContentType = "application/json";
         }
 
     }

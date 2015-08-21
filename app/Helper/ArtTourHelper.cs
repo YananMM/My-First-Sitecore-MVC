@@ -181,18 +181,18 @@ namespace Landmark.Helper
         /// Gets the art piece json by building.
         /// </summary>
         /// <returns>List{List{ArtPieceByBuildingJson}}.</returns>
-        public List<List<ArtPieceByBuildingJson>> GetArtPieceJsonByBuilding()
+        public List<List<ArtPieceByBuildingJson>> GetArtPieceJsonByBuilding(string buildingId)
         {
             List<List<ArtPieceByBuildingJson>> list = new List<List<ArtPieceByBuildingJson>>();
             List<ArtPieceByBuildingJson> models = new List<ArtPieceByBuildingJson>();
             List<Item> allArtPieces = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkArtTourItem, ItemGuids.T29Template);
-            if (allArtPieces != null && allArtPieces.Count != 0)
+            List<Item> artPiecesByBuilding = (from art in allArtPieces
+                                             where Sitecore.Context.Database.GetItem(art.Fields["Floor and Building"].Value).Parent.ID.ToString() == buildingId
+                                             select art).ToList();
+            if (allArtPieces != null && artPiecesByBuilding.Count != 0)
             {
-                foreach (var item in allArtPieces)
+                foreach (var item in artPiecesByBuilding)
                 {
-                    //var building = Sitecore.Context.Database.GetItem(item.Fields["Floor and Building"].Value).Parent;
-                    //if (building.ID.ToString() == buildingId)
-                    //{
                     ArtPieceByBuildingJson model = new ArtPieceByBuildingJson()
                     {
                         title = item.Fields["Art Title"].ToString(),
@@ -201,9 +201,7 @@ namespace Landmark.Helper
                     };
                     GroupedDroplinkField artistField = item.Fields["Artist"];
                     model.des = artistField.TargetItem.Fields["Artist Name"].ToString();
-
                     models.Add(model);
-                    //}
                 }
             }
             int j = 4;

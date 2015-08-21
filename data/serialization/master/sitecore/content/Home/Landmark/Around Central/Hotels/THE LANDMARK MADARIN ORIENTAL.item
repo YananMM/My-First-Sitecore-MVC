@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: fdbf8975-d371-4d50-9191-766f9c9ab31d
+revision: fd90e491-9a5d-4296-8393-031e3a765391
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
@@ -79,6 +79,13 @@ content-length: 58
 
 <image mediaid="{198EE9C8-E11A-490F-82B1-A9B05E599B62}" />
 ----field----
+field: {F3875C2C-9EB0-4C42-A67B-6D23F4E8C53A}
+name: Special Offers Label
+key: special offers label
+content-length: 14
+
+SPECIAL OFFERS
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -98,14 +105,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fdbf8975-d371-4d50-9191-766f9c9ab31d
+fd90e491-9a5d-4296-8393-031e3a765391
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150819T083443:635755700830406725Z
+20150820T023641:635756350010612810Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
