@@ -2,6 +2,7 @@
 @using Landmark.Helper
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
+@using Sitecore.Shell.Applications.ContentEditor
 @model RenderingModel
 
 @{
@@ -49,7 +50,8 @@
                         CheckboxField show = item.Fields["Is Shown In Breadcrumb"];
                         if (LandmarkHelper.IsShownInBreadcrumb(item))
                         {
-                            <text>@item.DisplayName</text>
+                            <text>@item.Fields["Page Title"]</text>
+
                             <span class="icomoon-chevron-small-right"></span>
                         }
                     }

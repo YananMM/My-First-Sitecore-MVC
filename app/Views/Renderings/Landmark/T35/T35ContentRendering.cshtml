@@ -8,19 +8,19 @@
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
-            <h1>GET DIRECTIONS</h1>
+            <h1>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h1>
         </div>
 
         <div id="gd-map-switcher" class="gd-pagetitle-menu hidden-xs">
-            <a data-iframe="/files/landmark/iframes/t35-iframe.html" href="javascript:;" class="active">GET DIRECTIONS</a>
+            <a data-iframe="/files/landmark/iframes/t35-iframe.html" href="javascript:;" class="active">@Html.Sitecore().Field("Map Data Page 1")</a>
             <span class="gd-pagetitle-menu-gap">|</span>
-            <a data-iframe="/files/landmark/iframes/t35-iframe2.html" href="javascript:;">SURROUNDING FACILITIES</a>
+            <a data-iframe="/files/landmark/iframes/t35-iframe2.html" href="javascript:;">@Html.Sitecore().Field("Map Data Page 2")</a>
         </div>
 
         <div id="gd-map-switcher-m" class="gd-controls-m visible-xs">
             <select name="" id="" class="form-control visible-xs">
-                <option value="/files/landmark/iframes/t35-iframe.html">GET DIRECTIONS</option>
-                <option value="/files/landmark/iframes/t35-iframe2.html">SURROUNDING FACILITIES</option>
+                <option value="/files/landmark/iframes/t35-iframe.html">@Html.Sitecore().Field("Map Data Page 1")</option>
+                <option value="/files/landmark/iframes/t35-iframe2.html">@Html.Sitecore().Field("Map Data Page 2")</option>
             </select>
         </div>
 
