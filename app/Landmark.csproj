@@ -257,6 +257,7 @@
     <Content Include="files\landmark\fonts\bertholdakzidenzgroteskbelight.svg" />
     <Content Include="files\landmark\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="files\landmark\fonts\icomoon.svg" />
+    <Content Include="files\landmark\iframes\t33-iframe.html" />
     <Content Include="files\landmark\images\black-50.png" />
     <Content Include="files\landmark\images\black-80.png" />
     <Content Include="files\landmark\images\blank.png" />
@@ -265,6 +266,21 @@
     <Content Include="files\landmark\images\logo%402x.png" />
     <Content Include="files\landmark\images\logo-footer.png" />
     <Content Include="files\landmark\images\logo-img.png" />
+    <Content Include="files\landmark\images\map\map-icons.png" />
+    <Content Include="files\landmark\images\map\map-marker-01.png" />
+    <Content Include="files\landmark\images\map\map-marker-02.png" />
+    <Content Include="files\landmark\images\map\map-marker-03.png" />
+    <Content Include="files\landmark\images\map\map-marker-04.png" />
+    <Content Include="files\landmark\images\map\map-marker-05.png" />
+    <Content Include="files\landmark\images\map\map-marker-06.png" />
+    <Content Include="files\landmark\images\map\map-marker-07.png" />
+    <Content Include="files\landmark\images\map\map-marker-08.png" />
+    <Content Include="files\landmark\images\map\map-marker-09.png" />
+    <Content Include="files\landmark\images\map\map-marker-10.png" />
+    <Content Include="files\landmark\images\map\map-marker-11.png" />
+    <Content Include="files\landmark\images\map\map-marker-12.png" />
+    <Content Include="files\landmark\images\map\map-marker-13.png" />
+    <Content Include="files\landmark\images\map\map-marker.png" />
     <Content Include="files\landmark\images\more.gif" />
     <Content Include="files\landmark\images\portrait_only.gif" />
     <Content Include="files\landmark\images\sprite%402x.png" />
@@ -554,6 +570,7 @@
     <Content Include="Views\Renderings\Landmark\T34\T34PageTitleRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T34\T34SpecialOffersRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T34\T34AboutHotelRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T33\T334BuildingsRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
