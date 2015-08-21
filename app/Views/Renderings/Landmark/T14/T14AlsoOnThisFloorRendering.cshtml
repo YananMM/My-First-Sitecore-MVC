@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Data.Fields
 @model RenderingModel
 @{
     ShoppingHelper shoppingHelper = new ShoppingHelper();
@@ -12,10 +13,9 @@
 
     foreach (var item in brandsByFloor)
     {
-
         <div @if (i > 4) { <text>
              class="col-sm-2 col-xs-3 hidden-xs"
-             </text>   } class="col-sm-2 col-xs-3">
+             </text>      } class="col-sm-2 col-xs-3">
             <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item)" alt="@Html.Sitecore().Field("Brand Title", item)"></a>
         </div>
 i++;
