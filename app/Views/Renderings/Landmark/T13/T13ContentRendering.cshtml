@@ -1,0 +1,24 @@
+﻿@using System.Diagnostics.Eventing.Reader
+@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.ContentSearch.Utilities
+@using Sitecore.Data.Items
+@model RenderingModel
+@{
+    ViewBag.Title = "T13ContentRendering";
+}
+<section class="brand-content">
+    <div class="container">
+        <div class="row">
+            <div class="brand-list">
+                @Html.Sitecore().Placeholder("brand-list")
+            </div>
+            @Html.Sitecore().Rendering(ItemGuids.T13SideBarRenderingViewGuid, new
+            {
+                Cacheable = false,
+                CacheKey = "by-brands-buidings",
+                Cache_VaryByData = true
+            })
+        </div>
+    </div>
+</section>

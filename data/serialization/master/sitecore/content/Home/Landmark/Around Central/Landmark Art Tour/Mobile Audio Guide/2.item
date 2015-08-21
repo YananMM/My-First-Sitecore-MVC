@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {81F795C4-8121-4DB9-80DD-AD77B5B64368}
+database: master
+path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/Mobile Audio Guide/2
+parent: {1F173F5E-BCA8-4390-A212-82C0501F9C03}
+name: 2
+master: {00000000-0000-0000-0000-000000000000}
+template: {CFE5379F-402F-4FB5-A1C5-0E42CA464BC1}
+templatekey: Image Text Object
+
+----version----
+language: en
+version: 1
+revision: d1610149-43db-42fc-a01f-a2c89d434bc6
+
+----field----
+field: {0AB28A95-2EFC-4333-B617-155C738623C9}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{A62EF04D-FEAE-4046-A07B-FEBAC71C33EC}" />
+----field----
+field: {97376B76-2C43-4ECC-8E56-5322D1CBD35D}
+name: Text
+key: text
+content-length: 95
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla expedita officiis dolorem iusto
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150807T081108Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d1610149-43db-42fc-a01f-a2c89d434bc6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150807T081203Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

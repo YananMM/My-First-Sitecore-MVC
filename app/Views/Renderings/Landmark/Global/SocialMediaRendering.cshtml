@@ -1,17 +1,18 @@
 ﻿@model RenderingModel
+@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Data.Items
 @{
-    var mediaItems = Model.Item.Children.ToList();
-    string src = Html.Sitecore().ImageFieldSrc("Social Media Image", Model.Item);
+    Item NewsletterSignupItem = Sitecore.Context.Database.GetItem(ItemGuids.NewsletterSignUpPage);
+    List<Item> mediaItems = Sitecore.Context.Database.GetItem(ItemGuids.FooterSocialMediaFolderItem).Children.ToList();
 }
 
-<a href="">NEWSLETTER SIGNUP</a>
+<a href="@Sitecore.Links.LinkManager.GetItemUrl(NewsletterSignupItem)">@NewsletterSignupItem.Fields["Page Title"].Value.ToUpper()</a>
 <div class="footer-social">
-    @*<a href="#" title="facebook"><span class="icomoon-facebook"></span></a>
-        <a href="#" title="instagram"><span class="icomoon-instagram"></span></a>
-        <a href="#" title="sina"><span class="icomoon-sina-weibo"></span></a>*@
     @foreach (var item in mediaItems)
     {
-        Html.Sitecore().Field("Social Media Link", item, new { text = "<img data-src='" + src + "'>", title = item["Social Media Title"] });
+        var css = item.Fields["Social Media Css"].Value;
+        var title =item.Fields["Social Media Title"].Value;
+        @Html.Sitecore().Field("Social Media Link", item, new {title=title, text = "<span class='" + css + "'></span>" })
     }
 </div>

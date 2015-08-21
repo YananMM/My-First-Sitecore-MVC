@@ -2,10 +2,18 @@
 @using Landmark.Helper
 @model RenderingModel
 <header class="site-header">
-    
     <!-- desktop -->
     <div class="container hidden-sm  hidden-xs">
         <div class="language ">
+            <div class="header-social-wrapper">
+                <a href="" class="icomoon-share"></a>
+                <div class="header-social">
+                  <a href="" class="icomoon-facebook"></a>
+                  <a href="" class="icomoon-twitter"></a>
+                  <a href="" class="icomoon-sina-weibo"></a>
+                  <a href='@ItemGuids.LandmarkConfigItem.Fields["Share Email To"].Value' class="icomoon-envelop"></a>
+                </div>
+              </div>
             <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-HK")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", ItemGuids.TraditionalChineseGuidItem)</a> |
             <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-CN")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", ItemGuids.SimplifiedChineseGuidItem)</a>
             <div class="sb-search">
@@ -32,7 +40,7 @@
     <div class="container visible-xs-block  visible-sm-block">
         <nav class="clearfix">
             <a class="lines-button pull-left" type="button" role="button" aria-label="Navigation">
-                <span class="lines"></span>
+            <span class="lines"></span>
             </a>
             <div class="sb-search">
                 @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
@@ -62,7 +70,7 @@
             </div>
             <h1>
                 <a href="@Sitecore.Links.LinkManager.GetItemUrl(ItemGuids.LandmarkHomeItem)">
-                    @Html.Sitecore().Field("Landmark Logo", ItemGuids.LandmarkConfigItem, new {@class = "responsive-logo"})
+                    <img class="responsive-logo" src="@Html.Sitecore().ImageFieldSrc("Landmark Logo",ItemGuids.LandmarkConfigItem)" alt="landmark">
                 </a>
             </h1>
         </nav>

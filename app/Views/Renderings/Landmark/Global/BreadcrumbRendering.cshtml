@@ -1,43 +1,61 @@
 ﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @model RenderingModel
 
 @{
     var homePage = ItemGuids.LandmarkHomeItem;
     var currentPage = Sitecore.Context.Item;
-    var currentId = currentPage.ID;
     List<Item> items = new List<Item>();
+    List<Item> breadcrumbs = new List<Item>();
     while (currentPage.ID != homePage.ID)
     {
-        items.Add(currentPage);
+        items.Add(currentPage.Parent);
         currentPage = currentPage.Parent;
     }
-    items.Add(homePage);
     items.Reverse();
+    if (items.Count >= 3)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            breadcrumbs.Add(items[i]);
+        }
+    }
+    else
+    {
+        for (int i = 0; i < items.Count; i++)
+        {
+            breadcrumbs.Add(items[i]);
+        }
+    }
+
+
 }
 
-<ol class="breadcrumb">
-    @foreach (var item in items)
-    {
-        if (item.ID != currentId)
+<div class="col-xs-12">
+    <ol class="breadcrumb">
+        @foreach (var item in breadcrumbs)
         {
             <li>
                 <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
                     @if (item.ID == homePage.ID)
                     {
                         <text>Home</text>
+                        <span class="icomoon-chevron-small-right"></span>
                     }
                     else
                     {
-                        <text>@item["Page Title"]</text>
+                        CheckboxField show = item.Fields["Is Shown In Breadcrumb"];
+                        if (LandmarkHelper.IsShownInBreadcrumb(item))
+                        {
+                            <text>@item.DisplayName</text>
+                            <span class="icomoon-chevron-small-right"></span>
+                        }
                     }
-                    <span class="icomoon-chevron-small-right"></span>
                 </a>
             </li>
+
         }
-        else
-        {
-            <li class="active">@item["Page Title"]</li>
-        }
-    }
-</ol>
+    </ol>
+</div>

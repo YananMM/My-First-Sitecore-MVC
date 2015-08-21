@@ -1,0 +1,31 @@
+﻿@using Landmark.Classes
+@{
+    var instagramSocial = new InstagramSocial();
+    var images = instagramSocial.GetFromInstagram("1482879750", deep: true);
+}
+<section class="panel-area">
+<section class="instagram-area">
+    <div class="instagram-inner">
+        <hgroup class="panel-text">
+            <h4>FIND US ON INSTAGRAM</h4>
+            <h2># LANDMARKHK</h2>
+        </hgroup>
+        <ul class="clearfix">
+            @foreach (var image in images)
+            {
+                <li>
+                    <a href="" class="lazy-hidden" data-bg="@image.Url">
+                        <div class="instagram-text hidden-xs  hidden-sm">
+                            <img data-src="@image.ProfilePicture" class="instagram-user lazy-loaded">
+                            <div class="instagram-info">
+                                <h5>@image.User</h5>
+                                @image.PublishTime
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+</section>
+</section>

@@ -1,0 +1,49 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@using Landmark.Models
+@model RenderingModel
+@{
+    ArtTourHelper helper = new ArtTourHelper();
+    var model = helper.GetFirstArtPieceModel();
+}
+<div class="art-gallery">
+    <div class="row" id="gd-art-gallery">
+
+        <div class="col-sm-6">
+            @*<div class="art-g-box gold-line">
+                <div class="art-g-box-header">
+                    <img data-src="@Html.Sitecore().ImageFieldSrc("Artist Photo", model.Artist)">
+                    <div class="art-g-box-header-text">
+                        <h3>@Html.Sitecore().Field("Artist Name", model.Artist)<span>@Html.Sitecore().Field("Artist Birthday Label", model.Artist) @Html.Sitecore().Field("Artist Birthday Text", model.Artist)</span></h3>
+                        <a>ARTIST BOIGRAPHY<span class="icomoon-chevron-small-right"></span></a>
+                    </div>
+                </div>
+
+                <div class="gd-artlist">
+                    <div class="row">
+                        @foreach (var item in model.ArtPieces)
+                        {
+                            <div class="col-md-6">
+                                <article>
+                                    <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
+                                        @Html.Sitecore().Field("Art Image", item)
+                                    </a>
+                                    <h4>@Html.Sitecore().Field("Art Title", item), @Html.Sitecore().Field("Created Time", item)</h4>
+                                    <p>@Html.Sitecore().Field("Art Key") @Html.Sitecore().Field("Art Size", item)</p>
+                                </article>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>*@
+        </div>
+        <div class="col-sm-6">
+
+        </div>
+    </div>
+
+    <a id="gd-art-gallery-loading" class="loding-more"><img data-src="@Url.Content("~/files/landmark/images/more.gif")">  @Html.Sitecore().Field("Glossary Value", ItemGuids.MoreItem)</a>
+
+</div>

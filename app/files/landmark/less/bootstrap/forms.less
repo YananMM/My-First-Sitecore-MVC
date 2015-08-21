@@ -33,7 +33,7 @@ label {
   display: inline-block;
   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 
@@ -115,15 +115,15 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
-  padding: @padding-base-vertical @padding-base-horizontal;
+  height:34px; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+  padding: 5px  10px;
   font-size: @font-size-base;
-  line-height: @line-height-base;
+  line-height:34px;
   color: @input-color;
   background-color: @input-bg;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
    //border: 1px solid @input-border;
-   border: none;
+   border: solid 1px  @input-border;
   border-radius: @input-border-radius;
   //.box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
   box-shadow: none;

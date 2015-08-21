@@ -22,14 +22,27 @@
 @import "t1.less";
 @import "t11.less";
 @import "t13.less";
-
+@import "components.less";
+@import "pagespecific.less";
 
 @media (min-width: @grid-float-breakpoint)  {
-
-body {
-}
+  body, .site-header {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
 }
 //common
+
+.body-text{
+  font-size: 13px;
+  color: @gd-text-color;
+  @media (min-width: @screen-sm) {
+    font-size: 12px;}
+  @media (min-width: @screen-md) {
+    font-size: 14px;}
+
+}
+
 .gray-text{
       color: @gray;
  a {
@@ -55,6 +68,103 @@ body {
     }
     &:focus, &:active{
         color:  @white;
+        text-decoration: none;
+    }
+}
+
+}
+
+.gray-text3{
+      color: @gray;
+ a {
+      color: @gray;
+    &:hover{
+        color: @white;
+        text-decoration: none;
+    }
+    &:active{
+        color:  @gray;
+        text-decoration: none;
+    }
+}
+
+}
+.black-text{
+      color: #222;
+ a {
+   cursor: pointer;
+      color: #222;
+    &:hover{
+        color:  @brand-primary;
+        text-decoration: none;
+    }
+    &:focus, &:active{
+        color:  @white;
+        text-decoration: none;
+    }
+}
+
+}
+
+.black-text2{
+      color: #222;
+ a {
+   cursor: pointer;
+      color: #222;
+    &:hover{
+        color:  @brand-primary;
+        text-decoration: none;
+    }
+    &:focus, &:active{
+        color:  @brand-primary;
+        text-decoration: none;
+    }
+}
+
+}
+.lightgray-text{
+      color: @gray-light;
+ a {
+   cursor: pointer;
+      color: @gray-light;
+    &:hover{
+        color:  @brand-primary;
+        text-decoration: none;
+    }
+    &:focus, &:active{
+        color:  @white;
+        text-decoration: none;
+    }
+}
+
+}
+.lightgray-text2{
+      color: @gray-light;
+ a {
+   cursor: pointer;
+      color: @gray-light;
+    &:hover{
+        color:  @brand-primary;
+        text-decoration: none;
+    }
+    &:focus, &:active{
+        color:  @brand-primary;
+        text-decoration: none;
+    }
+}
+
+}
+.lightergray-text{
+      color: #999;
+ a {
+   cursor: pointer;
+      color: @gray-light;
+    &:hover{
+        color:  @brand-primary;
+        text-decoration: none;
+    }
+    &:focus, &:active{
+        color:  @brand-primary;
         text-decoration: none;
     }
 }
@@ -102,37 +212,100 @@ body {
     }
 }
 }
+
 // back to top button
   .back-top{
-    position: relative;
-    width: 100%;
-    background-color: @gray-darker;
+    background-color: #FFFFFF;
     font-weight: bold;
-    z-index: 100;
-  .back-to-top{
-    position: absolute;
-    top: 0;
-    bottom: auto;
-    right: 0;
-    background-color:#444444;
-    display: block;
-    display: block;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    .white-text;
-    font-size: 0.75em;
-    text-decoration: none;
+    height: 0;
+    position: relative;
+    z-index: 1100;
+
+    .back-to-top {
+      position: fixed;
+      &.bottom {
+        position: absolute;
+      bottom: -50px;
+      }
+      &.active {
+        opacity: 1;
+      }
+
+      font-weight: bold;
+      right: 0;
+      bottom: 0;
+      background-color:#444444;
+      background-color: rgba(0,0,0,0.5);
+      display: none;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      .white-text;
+      font-size: 0.75em;
+      text-decoration: none;
+      z-index: 100;
+    }
   }
+@media (min-width: @screen-sm) {
+ .back-top{
+    background-color: #FFFFFF;
+    font-weight: bold;
+    height: 90px;
+    position: relative;
+    z-index: 1100;
+
+    .back-to-top {
+      position: fixed;
+      &.bottom {
+        position: absolute;
+        bottom: 2em;
+      }
+      &.active {
+        opacity: 1;
+      }
+
+      font-weight: bold;
+      right: 2em;
+      bottom: 2em;
+      background-color:#444444;
+      background-color: rgba(0,0,0,0.5);
+      border: 1px solid #444444;
+      display: none;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      .white-text;
+      font-size: 0.75em;
+      text-decoration: none;
+      z-index: 100;
+    }
   }
-@media (min-width: @screen-sm) { 
+}
+.form-goto {
+  .dropdown-toggle {
+    background-color: @white;
+    border-color: @gray-darker2;
+    color: @gray-darker2;
+  }
+  button[type=submit] {
+    border-color: @gray-darker2;
+    color: @gray-darker2;
+    &:hover, &:focus, &:active {
+      border-color: @gray-darker2;
+      background-color: @gray-darker2;
+      color: @white;
+    }
+  }
+}
+
+/*@media (min-width: @screen-sm) { 
    .back-top{
-    background-color: @gray-darker;
     position: relative;
     width: 100%;
-    padding: 20px 30px;
-    min-height: 100px;
+    padding: 15px 30px;
+    min-height: 90px;
     text-align: right;
   .back-to-top{
     position: relative;
@@ -158,11 +331,11 @@ body {
     }
   }
   }
-}
+}*/
   .page-header{
    padding:45px 10px 0;
     border: none; 
-    background: @gray-darker2;
+    background: #1F1F1F;
     .gray-text; 
     .icomoon-chevron-small-right{
       margin-left: 6px;
@@ -194,7 +367,6 @@ body {
   
   .page-header{
    padding:165px 0 0;
-    margin-bottom: 16px;
     .header-share{
       a{
         font-size: 1.46em;
@@ -203,25 +375,25 @@ body {
   }
 }
   .page-title{
-   padding:0 10px 0;
-    margin-top: 22px;
    // background: @gray-darker2;
   h2{
     text-align: left;
     font-family: @font-family-serif;
     width: 100%;
     margin: 0;
-    font-size: 1.33em;
-    color: @brand-primary;
+    font-size: 2.5em;
+    line-height: 5;
+    color: @brand-golden;
     span{
     font-family: @font-family-sans-serif;
-    font-size: 0.625em;
+    font-size: 0.5em;
       margin-left: 10px;
       .gray-text;
     
     }
   }
     .link-seeall{
+      line-height: 150px;
       position: absolute;
       right: 0;
       .gray-text;
@@ -260,16 +432,14 @@ body {
   .page-title{
    padding:0;
   h2{
-    font-size: 1.5em;
-    line-height: 58px;
+    font-size: 2.5em;
     display: inline-block;
     span{
-    font-size: 0.67em;
+    font-size: 0.46666667em;
     }
   }
     .link-seeall{
        font-size: 1em;
-       line-height: 60px;
         .sprite-small-r{
         margin-left: 14px;
         }
@@ -295,3 +465,25 @@ body {
     }
 
 }}
+
+.lazy-hidden {
+  background: url('/files/landmark/images/more.gif') no-repeat 50% 50%;
+  display: block;
+  max-width: 100%;
+  min-height: 50px;
+  margin: 0 auto;
+  opacity: 0;
+}
+.lazy-loaded {
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+
+input[type="checkbox"]{ 
+  -webkit-appearance: checkbox;
+  box-sizing: border-box;
+}

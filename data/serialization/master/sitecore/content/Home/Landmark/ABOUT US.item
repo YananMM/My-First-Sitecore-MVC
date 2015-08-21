@@ -1,0 +1,93 @@
+----item----
+version: 1
+id: {193CA4AA-6A50-4CCF-965B-C3640A349934}
+database: master
+path: /sitecore/content/Home/Landmark/ABOUT US
+parent: {497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}
+name: ABOUT US
+master: {238DBFAE-6EA4-454B-BD83-441F3C3FD194}
+template: {53A5550C-C11D-4076-ADE3-1FBC2D53F01F}
+templatekey: T8 Page
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+----version----
+language: en
+version: 1
+revision: 9f42e7c3-a4ca-4917-af52-bffb7b37df55
+
+----field----
+field: {21B45344-DBEB-439F-B9B4-FADCD4757389}
+name: About Title
+key: about title
+content-length: 14
+
+ABOUT LANDMARK
+----field----
+field: {5E057E7B-0DAD-451B-8A10-E18630950944}
+name: About Description
+key: about description
+content-length: 86
+
+LANDMARK represents the epitome of top-tier luxury shopping and lifestyle experiences.
+----field----
+field: {CB4CBA97-6C68-4638-BA40-BF9C1D73A01D}
+name: Getting Here Text
+key: getting here text
+content-length: 12
+
+GETTING HERE
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 48
+
+Drawing from a rich heritage which began in 1904
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 8
+
+ABOUT US
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150817T083718Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9f42e7c3-a4ca-4917-af52-bffb7b37df55
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150818T024250:635754625707566465Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

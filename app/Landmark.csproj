@@ -39,6 +39,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Client">
       <HintPath>..\lib\Sitecore.Client.dll</HintPath>
       <Private>False</Private>
@@ -61,7 +70,7 @@
     </Reference>
     <Reference Include="Sitecore.LanguageFallbackItemProvider, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Sitecore.LanguageFallbackItemProvider.dll</HintPath>
+      <HintPath>..\lib\Sitecore.LanguageFallbackItemProvider.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Mvc">
       <HintPath>..\lib\Sitecore.Mvc.dll</HintPath>
@@ -76,29 +85,29 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\Microsoft.AspNet.WebPages.3.1.0\lib\net45\System.Web.Helpers.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.0\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\Microsoft.AspNet.Mvc.5.1.0\lib\net45\System.Web.Mvc.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.1.0\lib\net45\System.Web.Mvc.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\Microsoft.AspNet.Razor.3.1.0\lib\net45\System.Web.Razor.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.1.0\lib\net45\System.Web.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\Microsoft.AspNet.WebPages.3.1.0\lib\net45\System.Web.WebPages.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.0\lib\net45\System.Web.WebPages.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\Microsoft.AspNet.WebPages.3.1.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\Microsoft.AspNet.WebPages.3.1.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -109,23 +118,39 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Classes\ConstantString.cs" />
     <Compile Include="Classes\EventHandlers\UserEvent.cs" />
     <Compile Include="Classes\InstagramSocial.cs" />
     <Compile Include="Classes\ItemGuids.cs" />
     <Compile Include="Classes\Crawlers\LanguageFallbackCrawler.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="Controllers\ShoppingController.cs" />
+    <Compile Include="Helper\ArtTourHelper.cs" />
     <Compile Include="Helper\LandmarkHelper.cs" />
+    <Compile Include="Helper\ShoppingHelper.cs" />
     <Compile Include="Helper\SitecoreFieldHelper.cs" />
+    <Compile Include="Models\LandmarkModels.cs" />
     <Compile Include="Models\LandmarkSearchResultItem.cs" />
+    <Compile Include="Models\TextValue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\GetArtPieceJsonByArtists.ashx.cs">
+      <DependentUpon>GetArtPieceJsonByArtists.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Service\GetArtPieceJsonByBuilding.ashx.cs">
+      <DependentUpon>GetArtPieceJsonByBuilding.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Service\GetCategoryJson.ashx.cs">
+      <DependentUpon>GetCategoryJson.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Service\GetFloorPlanJson.ashx.cs">
+      <DependentUpon>GetFloorPlanJson.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Service\Landmark.asmx.cs">
+      <DependentUpon>Landmark.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="sitecore\Landmark\UserCreated.aspx.cs">
       <DependentUpon>UserCreated.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -135,9 +160,96 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="apple-touch-icon-114x114.png" />
+    <Content Include="apple-touch-icon-120x120.png" />
+    <Content Include="apple-touch-icon-144x144.png" />
+    <Content Include="apple-touch-icon-152x152.png" />
+    <Content Include="apple-touch-icon-180x180.png" />
+    <Content Include="apple-touch-icon-57x57.png" />
+    <Content Include="apple-touch-icon-60x60.png" />
+    <Content Include="apple-touch-icon-72x72.png" />
+    <Content Include="apple-touch-icon-76x76.png" />
+    <Content Include="apple-touch-icon-precomposed.png" />
+    <Content Include="apple-touch-icon.png" />
     <Content Include="Content\Site.css" />
+    <Content Include="favicon-160x160.png" />
+    <Content Include="favicon-16x16.png" />
+    <Content Include="favicon-192x192.png" />
+    <Content Include="favicon-32x32.png" />
+    <Content Include="favicon-96x96.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="files\landmark\audioplayer\css\bar-ui.css" />
+    <Content Include="files\landmark\audioplayer\image\black-10.png" />
+    <Content Include="files\landmark\audioplayer\image\black-25.png" />
+    <Content Include="files\landmark\audioplayer\image\black-33.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\credits.txt" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\PNG\arrow.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\PNG\cart.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\PNG\first.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\PNG\last.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\PNG\list.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\PNG\list2.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\PNG\loop.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\PNG\music.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\PNG\pause.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\PNG\play.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\PNG\shuffle.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\PNG\volume.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\SVG\arrow.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\SVG\cart.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\SVG\first.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\SVG\last.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\SVG\list.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\SVG\list2.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\SVG\loop.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\SVG\music.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\SVG\pause.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\SVG\play.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\SVG\shuffle.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-000000\SVG\volume.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\PNG\arrow.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\PNG\cart.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\PNG\first.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\PNG\last.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\PNG\list.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\PNG\list2.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\PNG\loop.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\PNG\music.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\PNG\pause.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\PNG\play.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\PNG\shuffle.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\PNG\volume.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\SVG\arrow.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\SVG\cart.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\SVG\first.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\SVG\last.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\SVG\list.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\SVG\list2.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\SVG\loop.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\SVG\music.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\SVG\pause.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\SVG\play.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\SVG\shuffle.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\entypo-25px-ffffff\SVG\volume.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\free-25px-000000\PNG\spinner.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\free-25px-000000\SVG\spinner.svg" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\free-25px-ffffff\PNG\spinner.png" />
+    <Content Include="files\landmark\audioplayer\image\icomoon\free-25px-ffffff\SVG\spinner.svg" />
+    <Content Include="files\landmark\audioplayer\image\patterns\credits.txt" />
+    <Content Include="files\landmark\audioplayer\image\patterns\pinstriped_suit_vertical.png" />
+    <Content Include="files\landmark\audioplayer\image\patterns\pool_table.png" />
+    <Content Include="files\landmark\audioplayer\image\patterns\rubber_grip.png" />
+    <Content Include="files\landmark\audioplayer\image\patterns\tasky_pattern.png" />
+    <Content Include="files\landmark\audioplayer\image\patterns\textured_paper.png" />
+    <Content Include="files\landmark\audioplayer\image\patterns\tweed.png" />
+    <Content Include="files\landmark\audioplayer\image\patterns\wood_pattern.png" />
+    <Content Include="files\landmark\audioplayer\image\patterns\wood_pattern_dark.png" />
+    <Content Include="files\landmark\audioplayer\image\patterns\woven.png" />
+    <Content Include="files\landmark\audioplayer\index.html" />
+    <Content Include="files\landmark\audioplayer\script\bar-ui.js" />
+    <Content Include="files\landmark\audioplayer\script\soundmanager2-nodebug-jsmin.js" />
+    <Content Include="files\landmark\audioplayer\swf\soundmanager2.swf" />
+    <Content Include="files\landmark\audioplayer\swf\soundmanager2_flash9.swf" />
     <Content Include="files\landmark\css\bootstrap-select.css" />
     <Content Include="files\landmark\css\bootstrap.css" />
     <Content Include="files\landmark\css\jquery.bxslider.css" />
@@ -145,68 +257,32 @@
     <Content Include="files\landmark\fonts\bertholdakzidenzgroteskbelight.svg" />
     <Content Include="files\landmark\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="files\landmark\fonts\icomoon.svg" />
+    <Content Include="files\landmark\iframes\t33-iframe.html" />
     <Content Include="files\landmark\images\black-50.png" />
     <Content Include="files\landmark\images\black-80.png" />
     <Content Include="files\landmark\images\blank.png" />
-    <Content Include="files\landmark\images\brands\brand-001-o.png" />
-    <Content Include="files\landmark\images\brands\brand-001.png" />
-    <Content Include="files\landmark\images\brands\brand-002-o.png" />
-    <Content Include="files\landmark\images\brands\brand-002.png" />
-    <Content Include="files\landmark\images\brands\brand-003-o.png" />
-    <Content Include="files\landmark\images\brands\brand-003.png" />
-    <Content Include="files\landmark\images\brands\brand-004-o.png" />
-    <Content Include="files\landmark\images\brands\brand-004.png" />
-    <Content Include="files\landmark\images\brands\brand-005.png" />
-    <Content Include="files\landmark\images\brands\brand-006-o.png" />
-    <Content Include="files\landmark\images\brands\brand-006.png" />
-    <Content Include="files\landmark\images\brands\brand-007.png" />
-    <Content Include="files\landmark\images\brands\brand-008-o.png" />
-    <Content Include="files\landmark\images\brands\brand-008.png" />
-    <Content Include="files\landmark\images\brands\brand-009.png" />
-    <Content Include="files\landmark\images\brands\brand-010.png" />
-    <Content Include="files\landmark\images\brands\brand-011.png" />
-    <Content Include="files\landmark\images\brands\brand-012.png" />
-    <Content Include="files\landmark\images\brands\brand-013.png" />
-    <Content Include="files\landmark\images\brands\brand-014.png" />
-    <Content Include="files\landmark\images\brands\brand-015.png" />
     <Content Include="files\landmark\images\home-gradient1.png" />
     <Content Include="files\landmark\images\home-gradient2.png" />
-    <Content Include="files\landmark\images\instagram\instagram-001.jpg" />
-    <Content Include="files\landmark\images\instagram\instagram-002.jpg" />
-    <Content Include="files\landmark\images\instagram\instagram-003.jpg" />
-    <Content Include="files\landmark\images\instagram\instagram-004.jpg" />
-    <Content Include="files\landmark\images\instagram\instagram-005.jpg" />
-    <Content Include="files\landmark\images\instagram\instagram-006.jpg" />
-    <Content Include="files\landmark\images\instagram\instagram-007.jpg" />
-    <Content Include="files\landmark\images\instagram\instagram-008.jpg" />
-    <Content Include="files\landmark\images\instagram\instagram-009.jpg" />
-    <Content Include="files\landmark\images\instagram\instagram-010.jpg" />
-    <Content Include="files\landmark\images\instagram\user-001.jpg" />
     <Content Include="files\landmark\images\logo%402x.png" />
     <Content Include="files\landmark\images\logo-footer.png" />
     <Content Include="files\landmark\images\logo-img.png" />
-    <Content Include="files\landmark\images\men\logo-landmark-men.png" />
-    <Content Include="files\landmark\images\men\men-001.jpg" />
-    <Content Include="files\landmark\images\men\men-002.jpg" />
-    <Content Include="files\landmark\images\men\men-003.jpg" />
-    <Content Include="files\landmark\images\men\men-004.jpg" />
-    <Content Include="files\landmark\images\men\men-005.jpg" />
+    <Content Include="files\landmark\images\map\map-icons.png" />
+    <Content Include="files\landmark\images\map\map-marker-01.png" />
+    <Content Include="files\landmark\images\map\map-marker-02.png" />
+    <Content Include="files\landmark\images\map\map-marker-03.png" />
+    <Content Include="files\landmark\images\map\map-marker-04.png" />
+    <Content Include="files\landmark\images\map\map-marker-05.png" />
+    <Content Include="files\landmark\images\map\map-marker-06.png" />
+    <Content Include="files\landmark\images\map\map-marker-07.png" />
+    <Content Include="files\landmark\images\map\map-marker-08.png" />
+    <Content Include="files\landmark\images\map\map-marker-09.png" />
+    <Content Include="files\landmark\images\map\map-marker-10.png" />
+    <Content Include="files\landmark\images\map\map-marker-11.png" />
+    <Content Include="files\landmark\images\map\map-marker-12.png" />
+    <Content Include="files\landmark\images\map\map-marker-13.png" />
+    <Content Include="files\landmark\images\map\map-marker.png" />
+    <Content Include="files\landmark\images\more.gif" />
     <Content Include="files\landmark\images\portrait_only.gif" />
-    <Content Include="files\landmark\images\product-img\main-001.jpg" />
-    <Content Include="files\landmark\images\product-img\main-001r.jpg" />
-    <Content Include="files\landmark\images\product-img\main-002.jpg" />
-    <Content Include="files\landmark\images\product-img\main-003.jpg" />
-    <Content Include="files\landmark\images\product-img\main-004.jpg" />
-    <Content Include="files\landmark\images\product-img\main-005.jpg" />
-    <Content Include="files\landmark\images\product-img\main-006.jpg" />
-    <Content Include="files\landmark\images\product-img\main-007.jpg" />
-    <Content Include="files\landmark\images\product-img\main-008.jpg" />
-    <Content Include="files\landmark\images\product-img\main-010.jpg" />
-    <Content Include="files\landmark\images\product-img\main-011.jpg" />
-    <Content Include="files\landmark\images\product-img\main-012.jpg" />
-    <Content Include="files\landmark\images\product-img\main-012r.jpg" />
-    <Content Include="files\landmark\images\product-img\product-001.jpg" />
-    <Content Include="files\landmark\images\product-img\user-001.jpg" />
     <Content Include="files\landmark\images\sprite%402x.png" />
     <Content Include="files\landmark\images\sprite-ie.png" />
     <Content Include="files\landmark\images\sprite.png" />
@@ -243,43 +319,186 @@
     <Content Include="files\landmark\js\lib\modernizr-2.6.2.min.js" />
     <Content Include="files\landmark\js\lib\respond.js" />
     <Content Include="files\landmark\js\lib\selectivizr-min.js" />
+    <Content Include="files\landmark\js\lib\svgmap\css\font-awesome.css" />
+    <Content Include="files\landmark\js\lib\svgmap\css\map.css" />
+    <Content Include="files\landmark\js\lib\svgmap\css\style.css" />
+    <Content Include="files\landmark\js\lib\svgmap\fonts\fontawesome-webfont.svg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\apartment\lower-small.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\apartment\lower.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\apartment\upper-small.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\apartment\upper.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\background.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\browser.png" />
+    <Content Include="files\landmark\js\lib\svgmap\images\button-divider.png" />
+    <Content Include="files\landmark\js\lib\svgmap\images\cart.png" />
+    <Content Include="files\landmark\js\lib\svgmap\images\cloth.png" />
+    <Content Include="files\landmark\js\lib\svgmap\images\food.png" />
+    <Content Include="files\landmark\js\lib\svgmap\images\health.png" />
+    <Content Include="files\landmark\js\lib\svgmap\images\icon-browser.png" />
+    <Content Include="files\landmark\js\lib\svgmap\images\icon-landmark.png" />
+    <Content Include="files\landmark\js\lib\svgmap\images\icon-layer.png" />
+    <Content Include="files\landmark\js\lib\svgmap\images\icon-link.png" />
+    <Content Include="files\landmark\js\lib\svgmap\images\icon-mobile.png" />
+    <Content Include="files\landmark\js\lib\svgmap\images\icon-responsive.png" />
+    <Content Include="files\landmark\js\lib\svgmap\images\logo.png" />
+    <Content Include="files\landmark\js\lib\svgmap\images\mail.png" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\canada.svg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\england.svg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\europe-mini.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\europe-old.svg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\europe.svg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\france-mini.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\france.svg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\germany-mini.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\germany.svg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\mall-ground-mini.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\mall-ground.svg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\mall-level1-mini.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\mall-level1.svg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\mall-underground-mini.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\mall-underground.svg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\switzerland.svg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\usa-mini.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\usa.svg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\maps\world.svg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\misc.png" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\amc.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\applebees.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\att.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\belk.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\cvs.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\gap.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\hm.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\jcpenney.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\kfc.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\macys.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\mcdonalds.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\oldnavy.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\petco.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\pizzahut.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\pullbear.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\sears.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\sephora.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\sportchek.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\starbucks.JPG" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\subway.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\walgreens.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\thumbs\zara.jpg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\window.png" />
+    <Content Include="files\landmark\js\lib\svgmap\images\wordpress.png" />
+    <Content Include="files\landmark\js\lib\svgmap\images\world\world.svg" />
+    <Content Include="files\landmark\js\lib\svgmap\images\wp.png" />
+    <Content Include="files\landmark\js\lib\svgmap\js\hammer.min.js" />
+    <Content Include="files\landmark\js\lib\svgmap\js\html5shiv.js" />
+    <Content Include="files\landmark\js\lib\svgmap\js\jquery-1.11.2.min.js" />
+    <Content Include="files\landmark\js\lib\svgmap\js\jquery.easing.js" />
+    <Content Include="files\landmark\js\lib\svgmap\js\jquery.mousewheel.js" />
+    <Content Include="files\landmark\js\lib\svgmap\js\smoothscroll.js" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\alpha20.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\alpha50.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\arrow-down%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\arrow-down.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\arrow-up%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\arrow-up.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\closedhand.cur" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\cross%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\cross.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\fullscreen-exit.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\fullscreen.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\loader.gif" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\minus%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\minus.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\openhand.cur" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-blue%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-blue-large%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-blue-large.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-blue.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-filled.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-green%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-green-large%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-green-large.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-green.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-large%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-large.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-orange%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-orange-large%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-orange-large.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-orange.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-purple%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-purple-large%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-purple-large.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-purple.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-yellow%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-yellow-large%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-yellow-large.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin-yellow.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\pin.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\plus%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\plus.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\reset%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\reset.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\viewer%402x.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\images\viewer.png" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\mapplic-ie.css" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\mapplic.css" />
+    <Content Include="files\landmark\js\lib\svgmap\mapplic\mapplic.js" />
     <Content Include="files\landmark\js\lib\TweenMax.min.js" />
+    <Content Include="files\landmark\js\lib\uisearch %282%29.js" />
     <Content Include="files\landmark\js\lib\uisearch.js" />
     <Content Include="files\landmark\js\main.js" />
     <Content Include="files\landmark\js\npm.js" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="App_Config\Include\Landmark.config">
       <SubType>Designer</SubType>
+      <TransformOnBuild>true</TransformOnBuild>
     </Content>
     <Content Include="App_Config\Include\LandmarkSearch.config" />
     <Content Include="App_Config\Landmark\RewriteMaps.config" />
     <Content Include="App_Config\Landmark\RewriteRules.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="mstile-144x144.png" />
+    <Content Include="mstile-150x150.png" />
+    <Content Include="mstile-310x150.png" />
+    <Content Include="mstile-310x310.png" />
+    <Content Include="mstile-70x70.png" />
+    <Content Include="files\landmark\js\lib\svgmap\fonts\fontawesome-webfont.eot" />
+    <Content Include="files\landmark\js\lib\svgmap\fonts\fontawesome-webfont.ttf" />
+    <Content Include="files\landmark\js\lib\svgmap\fonts\fontawesome-webfont.woff" />
+    <Content Include="files\landmark\js\lib\svgmap\fonts\FontAwesome.otf" />
+    <None Include="App_Config\ConnectionStrings.DEV.config">
+      <DependentUpon>ConnectionStrings.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\ConnectionStrings.UAT.config">
+      <DependentUpon>ConnectionStrings.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\Landmark.DEV.config">
+      <DependentUpon>Landmark.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <None Include="App_Config\Include\Landmark.UAT.config">
+      <DependentUpon>Landmark.config</DependentUpon>
+      <IsTransformFile>True</IsTransformFile>
+    </None>
+    <Content Include="packages.config" />
     <Content Include="App_Config\ConnectionStrings.config">
-      <SubType>Designer</SubType>
+      <TransformOnBuild>true</TransformOnBuild>
     </Content>
+    <Content Include="files\landmark\css\style.css.map" />
+    <None Include="Properties\PublishProfiles\DEV.pubxml" />
     <None Include="Properties\PublishProfiles\landmark.pubxml" />
+    <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Service\Landmark.asmx" />
     <Content Include="sitecore\Landmark\UserCreated.aspx" />
     <Content Include="Views\web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="packages.config" />
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Layouts\Landmark\MainViewLayout.cshtml" />
@@ -312,6 +531,46 @@
     </Content>
     <Content Include="Views\Renderings\Landmark\Global\ByBrandsComponentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\Global\ByBuidingsComponentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T13\T13ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T13\T13PageTitle.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T13\T13ByBuidings.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T13\T13ByBrands.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T13\T13SideBar.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T11\T11BreadcrumbRendering.cshtml" />
+    <Content Include="Service\Web.config" />
+    <Content Include="Service\GetCategoryJson.ashx" />
+    <Content Include="Views\Renderings\Landmark\T13\T13RelatedCategory.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T1\T1InstagramRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T14\T14ContentRendering.cshtml" />
+    <Content Include="Service\GetFloorPlanJson.ashx" />
+    <Content Include="Views\Renderings\Landmark\Global\SlideRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T14\T14ShopDataRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T14\T14AlsoOnThisFloorRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T14\T14TagsRenderings.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T14\T14YouMayAlsoLikeRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T14\T14RelatedArticlesRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T20\T20ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T29\T29ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T29\T29ArtistRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T29\T29AlsoInRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T30\T30ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T30\T30ByThisArtistRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T22\T22ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T22\T22ByArtistRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T22\T22ByLocationRendering.cshtml" />
+    <Content Include="Service\GetArtPieceJsonByArtists.ashx" />
+    <Content Include="Service\GetArtPieceJsonByBuilding.ashx" />
+    <Content Include="Views\Renderings\Landmark\T7\T7ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T8\T8ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T8\T8SlideTextRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T33\T33ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T35\T35ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T34\T34ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T34\T34HotelDataRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T34\T34PageTitleRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T34\T34SpecialOffersRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T34\T34AboutHotelRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T33\T334BuildingsRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -321,6 +580,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="files\landmark\audioplayer\audio\" />
     <Folder Include="files\landmark\less\css\" />
     <Folder Include="Views\Sublayouts\" />
   </ItemGroup>
@@ -335,8 +595,6 @@
     <Content Include="files\landmark\fonts\icomoon.eot" />
     <Content Include="files\landmark\fonts\icomoon.ttf" />
     <Content Include="files\landmark\fonts\icomoon.woff" />
-    <Content Include="files\landmark\images\product-img\Thumbs.db" />
-    <Content Include="files\landmark\images\Thumbs.db" />
     <Content Include="files\landmark\less\bootstrap.less" />
     <Content Include="files\landmark\less\bootstrap\alerts.less" />
     <Content Include="files\landmark\less\bootstrap\badges.less" />
@@ -424,6 +682,18 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DEV|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UAT|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Label="SlowCheetah">
+    <SlowCheetahToolsPath>$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\packages\SlowCheetah.2.5.15\tools\))</SlowCheetahToolsPath>
+    <SlowCheetah_EnableImportFromNuGet Condition=" '$(SlowCheetah_EnableImportFromNuGet)'=='' ">true</SlowCheetah_EnableImportFromNuGet>
+    <SlowCheetah_NuGetImportPath Condition=" '$(SlowCheetah_NuGetImportPath)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\Properties\SlowCheetah\SlowCheetah.Transforms.targets ))</SlowCheetah_NuGetImportPath>
+    <SlowCheetahTargets Condition=" '$(SlowCheetah_EnableImportFromNuGet)'=='true' and Exists('$(SlowCheetah_NuGetImportPath)') ">$(SlowCheetah_NuGetImportPath)</SlowCheetahTargets>
+  </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
@@ -445,6 +715,7 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="$(SlowCheetahTargets)" Condition="Exists('$(SlowCheetahTargets)')" Label="SlowCheetah" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

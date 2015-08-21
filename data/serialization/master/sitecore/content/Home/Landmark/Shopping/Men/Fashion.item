@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {74FC1382-2446-46FD-A5C2-E8692DC41A40}
+id: {3CCFAFB3-BC6A-40D2-815A-5B5DDBA0CAF3}
 database: master
 path: /sitecore/content/Home/Landmark/Shopping/Men/Fashion
-parent: {2719E4F5-3E32-48DC-B49F-25E4AF9F2523}
+parent: {4B60DA56-56DB-414E-8371-87557B286D6C}
 name: Fashion
 master: {EF72B181-F50E-46E5-84B4-74392DA7AA04}
 template: {11D18D8C-A8E3-4A15-A295-DAE23894A0AE}
@@ -19,43 +19,36 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 15f3179b-4e19-4ff3-96e2-22ce5d8f34d4
+revision: 033e24b5-b75f-4ce3-b0f3-4e06a2bf4ad0
 
 ----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 7
 
-sitecore\admin
+Fashion
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150723T034257Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
+20150820T011841Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-15f3179b-4e19-4ff3-96e2-22ce5d8f34d4
+033e24b5-b75f-4ce3-b0f3-4e06a2bf4ad0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150723T034257Z
+20150820T011841:635756303219996540Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

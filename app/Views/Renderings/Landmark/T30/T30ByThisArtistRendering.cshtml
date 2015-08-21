@@ -1,0 +1,37 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@model RenderingModel
+@{
+    ArtTourHelper helper = new ArtTourHelper();
+
+    var artPieces = helper.GetArtByArtist(Sitecore.Context.Item.ID.ToString());
+}
+<div class="container">
+
+    <div class="gd-artlist">
+        <h2>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByThisArtistItem)</h2>
+        <div class="row">
+
+            @if (artPieces != null && artPieces.Count != 0)
+            {
+                if (artPieces.Count > 4)
+                {
+                    artPieces = artPieces.GetRange(0, 4);
+                }
+
+                foreach (var item in artPieces)
+                {
+                    <div class="col-sm-3">
+                        <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
+                            @Html.Sitecore().Field("Art Image", item)
+                            <h3>@Html.Sitecore().Field("Art Title", item)</h3>
+                            <p>@Html.Sitecore().Field("Art Key", item) @Html.Sitecore().Field("Art Size", item)</p>
+                        </a>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>

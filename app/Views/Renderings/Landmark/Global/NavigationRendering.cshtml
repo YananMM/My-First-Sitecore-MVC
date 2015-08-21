@@ -6,7 +6,7 @@
 
 <nav class="clearfix">
     <ul class="menu-left list-inline  ">
-        @foreach (Item item in LandmarkHelper.GetChildrenPageInNavigation(ItemGuids.LandmarkHomeItem).Skip(3).Take(3))
+        @foreach (Item item in LandmarkHelper.GetChildrenPageInNavigation(ItemGuids.LandmarkHomeItem).Take(3))
         {
             <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@item["Page Title"].ToUpper()</a>
                 @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count>0)
@@ -30,30 +30,36 @@
                                                 </ul>
                                             </div>
                                             <div class="col-lg-3 col-md-3 col-sm-3">
-                                                <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBrandsGuidItem)</h3>
+                                            <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBrandsGuidItem)</h3>
+                                            <ul class="mega-brands">
                                                 @Html.Sitecore().Rendering(ItemGuids.ByBrandsRenderingViewGuid, new
                                                 {
                                                     Cacheable = false,
                                                     CacheKey = "bybrands",
                                                     Cache_VaryByData = true
                                                 })
+                                                </ul>
                                                 <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBuidingsGuidItem)</h3>
-                                                @Html.Sitecore().Rendering(ItemGuids.ByBuildingsRenderingViewGuid, new
-                                                {
-                                                    Cacheable = false,
-                                                    CacheKey = "bybuildings",
-                                                    Cache_VaryByData = true
-                                                })
+                                                <ul class="brands-gap">
+                                                    @Html.Sitecore().Rendering(ItemGuids.ByBuildingsRenderingViewGuid, new
+                                                    {
+                                                        Cacheable = false,
+                                                        CacheKey = "bybuildings",
+                                                        Cache_VaryByData = true
+                                                    })
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-3  col-sm-3">
                                     <div class="mega-product-area pull-right">
-                                        @Html.Sitecore().Field("Ad Image",item)
+                                        @*@Html.Sitecore().Field("Ad Image",item)
                                         <h3>@Html.Sitecore().Field("Ad Title",item)</h3>
                                         <p>@Html.Sitecore().Field("Ad Description",item)</p>
-                                        @Html.Sitecore().Field("Ad Learn More Link Url",item, new {text=Html.Sitecore().Field("Ad Learn More Link Text",item)+@"<span class='sprite-menu-r'></span>"})
+                                        @Html.Sitecore().Field("Ad Learn More Link Url",item, new {text=Html.Sitecore().Field("Ad Learn More Link Text",item)+@"<span class='sprite-menu-r'></span>"})*@
+
+                                        @Html.Sitecore().Placeholder("mega-menu-side-bar")
                                     </div>
                                 </div>
                             </div>
@@ -70,7 +76,7 @@
         </a>
     </h1>
     <ul class="menu-right list-inline">
-        @foreach (Item item in LandmarkHelper.GetChildrenPageInNavigation(ItemGuids.LandmarkHomeItem).Take(3))
+        @foreach (Item item in LandmarkHelper.GetChildrenPageInNavigation(ItemGuids.LandmarkHomeItem).Skip(3).Take(3))
         {
             <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@item["Page Title"].ToUpper()</a>
                 @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count>0)
@@ -111,10 +117,7 @@
                                 </div>
                                 <div class="col-lg-3 col-md-3  col-sm-3">
                                     <div class="mega-product-area pull-right">
-                                        <img src="/files/landmark/images/product-img/product-001.jpg">
-                                        <h3>MARC JACOBS PULLS THE HEARTSTRINGS</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-                                        <a href="#">Learn More <span class="sprite-menu-r"></span></a>
+                                        @Html.Sitecore().Placeholder("mega-menu-side-bar")
                                     </div>
                                 </div>
                             </div>

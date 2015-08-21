@@ -12,7 +12,7 @@ templatekey: Landmark Config
 ----version----
 language: en
 version: 1
-revision: a7ccc542-6459-4fbe-b5ae-758270f5a7a9
+revision: f9061d03-797d-4792-97fc-ee19ecf50012
 
 ----field----
 field: {217B1155-8188-498E-84EB-92CEC31E5D09}
@@ -43,6 +43,41 @@ content-length: 61
 
 © Copyright © 2014 Hongkong Land Limited. All Rights Reserved
 ----field----
+field: {11D43F72-ECA1-4AAF-BAC0-2DE41F9BB4BD}
+name: Facebook Application App Key
+key: facebook application app key
+content-length: 16
+
+1536801589883068
+----field----
+field: {4CCF29D8-30E2-438C-A45B-9CDADEA41055}
+name: Weibo Application API Key
+key: weibo application api key
+content-length: 10
+
+1021410252
+----field----
+field: {321BC576-F325-438D-B817-1F943BF90E8F}
+name: Share Email To
+key: share email to
+content-length: 16
+
+yanan@gruden.com
+----field----
+field: {87228212-11A4-40BB-8B1A-783034F383EA}
+name: Portrait Only Text
+key: portrait only text
+content-length: 75
+
+This site is best experienced in portrait mode. Please rotate your device. 
+----field----
+field: {7C82EAD3-757C-4A78-A5A8-D108A51C835A}
+name: Portrait Only Image
+key: portrait only image
+content-length: 58
+
+<image mediaid="{F8D43AF6-8977-47D2-8361-E45222E334DA}" />
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -69,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a7ccc542-6459-4fbe-b5ae-758270f5a7a9
+f9061d03-797d-4792-97fc-ee19ecf50012
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150721T080545Z
+20150812T004827Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

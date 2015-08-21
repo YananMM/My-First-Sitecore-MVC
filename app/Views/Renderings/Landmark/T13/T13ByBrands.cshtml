@@ -1,0 +1,29 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Items
+@model RenderingModel
+<div class="masonry-area clearfix">
+    <div class="brand-box-area">
+        @{
+            ShoppingHelper shoppingHelper=new ShoppingHelper();
+            Item parentItem = Sitecore.Context.Item.Parent;
+            var brandModels = shoppingHelper.GetBrandModels();
+            if (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem))
+            {
+                var currentTag = shoppingHelper.GetCurrentCategory();
+                brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
+            }
+            var brands = brandModels.GroupBy(p => p.Group).ToList();
+        }
+        @foreach (var items in brands)
+        {
+            <div class="brand-box brand-box-letter" id="@items.First().Group">@items.First().Group</div>
+            foreach (var item in items)
+            {
+                <a class="brand-box" href="@Sitecore.Links.LinkManager.GetItemUrl(item.BrandItem)" title="@item.BrandItem["Brand Title"]">
+                    <img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item.BrandItem)" alt="@Html.Sitecore().Field("Brand Title", item.BrandItem)">
+                </a>
+            }
+        }
+    </div>
+</div>

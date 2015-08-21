@@ -12,7 +12,7 @@ templatekey: Page Base Object
 ----version----
 language: en
 version: 1
-revision: 5a383280-bfd3-4bac-ab23-4e5661f902df
+revision: f5a4e4db-33ae-4433-82d1-15d4e40a0f3d
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -25,6 +25,13 @@ $name
 field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
 name: Is Shown In Navigation
 key: is shown in navigation
+content-length: 1
+
+1
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
 content-length: 1
 
 1
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5a383280-bfd3-4bac-ab23-4e5661f902df
+f5a4e4db-33ae-4433-82d1-15d4e40a0f3d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150721T065159Z
+20150819T093054:635755734549305336Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

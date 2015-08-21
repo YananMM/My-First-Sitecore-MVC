@@ -5,57 +5,67 @@
 @using Sitecore.Data.Items
 @model RenderingModel
 
+@*@{
+        var advertsList = Sitecore.Context.Item.GetDescendantsByTemplateWithFallback(ItemGuids.AdvertTemplateItemGuid).Take(2);
+    }*@
 @{
-    var advertsList = Sitecore.Context.Item.GetDescendantsByTemplateWithFallback(ItemGuids.AdvertTemplateItemGuid).Take(2);
+    ShoppingHelper shoppingHelper = new ShoppingHelper();
 }
-
 <section class="content-area">
     <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-sm-4 page-menu">
-          <ul class="clearfix">
-              @foreach (Sitecore.Data.Items.Item child in LandmarkHelper.GetChildrenPageInNavigation(Sitecore.Context.Item))
-              {
-                  <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(child)">@child["Page Title"].ToUpper()</a></li>
-              }
-          </ul>
-        <p>@Html.Sitecore().Field("Glossary Value",ItemGuids.AlsoInterestedInGuidItem) <a href="">EYEWEAR</a>, <a href="">ACCESSORIES</a>, <a href="">GADGETS</a></p>
-      </div>
-          @for (int i=0;i<2;i++)
-          {
-              <div class="col-lg-4 col-md-4 col-sm-4 menbox">
-                  <div class=" menbox-@(i + 1)">
-                      <a href="#" class="menbox-img">
-                          <div class="menbox-img-mask"></div>
-                          @{
-                              string src = Html.Sitecore().ImageFieldSrc("Advert Title Image", advertsList.ElementAt(i));
-                          }
-                          <img data-src="@Html.Sitecore().ImageFieldSrc("Advert Image", advertsList.ElementAt(i))" alt="landmark">
-                          <div class="menbox-text">
-                              @if (!string.IsNullOrEmpty(src))
-                              {
-                                  <img data-src="@src" alt="landmark">
-                              }
-                              else
-                              {
-                                  <a href="#" class="menbox-title">
-                                      <h3>@Html.Sitecore().Field("Advert Title", advertsList.ElementAt(i))</h3></a>
-                              }
-                              <h4>EXCLUSIVES</h4>
-                              <p>@Html.Sitecore().Field("Advert Description", advertsList.ElementAt(i))</p>
-                          </div>
-                      </a>
-                  </div>
-                  @if (i == 1)
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4 page-menu">
+                <ul class="clearfix">
+                    @foreach (Item child in LandmarkHelper.GetChildrenPageInNavigation(Sitecore.Context.Item))
                     {
-                        <a href="" class="pull-right menbox-more">SEE ALL EXCLUSIVES<span class="icomoon-chevron-small-right"></span></a>
+                        Item byBrands = (from item in child.Children where item.DisplayName.ToUpper() == ItemGuids.ByBrandsGuidItem.DisplayName.ToUpper() select item).First();
+                        <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(byBrands)">@child["Page Title"].ToUpper()</a></li>
                     }
-              </div>
-          }
+                </ul>
+                <p>
+                    @Html.Sitecore().Field("Glossary Value", ItemGuids.AlsoInterestedInGuidItem) 
+                    @{
+                        List<string> relatedCategorieIDs = shoppingHelper.GetRelatedCategoriesIDs();
+                        var shoppingItems = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
+                        foreach (var item in shoppingItems)
+                        {
+                            if (relatedCategorieIDs != null && relatedCategorieIDs.Count != 0)
+                            {
+                                foreach (var id in relatedCategorieIDs)
+                                {
+                                    var category = Sitecore.Context.Database.GetItem(id);
+                                    if (category.DisplayName == item.DisplayName)
+                                    {
+                                        <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@item.DisplayName</a>
+                                    }
+                                }
+                            }
+                        }
+                    }
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 menbox">
+                <div class=" menbox-1">
+                    <a href="#" class="menbox-img">
+                        <div class="menbox-img-mask"></div>
+                        @{
+                            string src = Html.Sitecore().ImageFieldSrc("Banner Title Image", Sitecore.Context.Item);
+                        }
+                        <img data-src="@Html.Sitecore().ImageFieldSrc("Banner Image", Sitecore.Context.Item)" alt="landmark">
+                        <div class="menbox-text">
+                            @if (!string.IsNullOrEmpty(src))
+                            {
+                                <img data-src="@src" alt="landmark">
+                            }
+                            <p>@Html.Sitecore().Field("Banner Content", Sitecore.Context.Item)</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
 
-        
+
+        </div>
     </div>
-  </div>
 </section>
 <section class="content-area content-area-bg">
     @*@Html.Sitecore().Placeholder("content-area content-area-bg")*@

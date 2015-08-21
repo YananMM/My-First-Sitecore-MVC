@@ -1,0 +1,68 @@
+﻿@using System.Diagnostics.Eventing.Reader
+@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.ContentSearch.Utilities
+@using Sitecore.Data.Items
+@model RenderingModel
+@{
+    ViewBag.Title = "T14ContentRendering";
+}
+
+<div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage" data-ride="carousel">
+    @Html.Sitecore().Placeholder("t14-slides")
+</div>
+
+<div class="container">
+    <div class="gd-brief">
+        <div class="gd-brief-heading">
+            <h2>@Html.Sitecore().Field("Content Title") </h2>
+        </div>
+        <div class="gd-brief-body gd-col-2">
+            <p>
+                @Html.Sitecore().Field("Content Description")
+            </p>
+        </div>
+    </div>
+
+    <div class="gd-bigbrand">
+        <img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image",Sitecore.Context.Item)">
+    </div>
+
+    <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
+        <div class="carousel-heading">
+            <h2>@Html.Sitecore().Field("Glossary Value", ItemGuids.RealatedArticlesItem)</h2>
+        </div>
+        @Html.Sitecore().Placeholder("t14-related-articles")
+    </div>
+</div>
+
+<div class="shopdetails-brand">
+    <a class="gd-link-brands" href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage))">@Html.Sitecore().Field("Glossary Value", ItemGuids.AllBrandsGuidItem)<span class="icomoon-chevron-small-right"></span></a>
+    <div class="container">
+        <div class="shopdetails-brand-header">
+            <ul>
+                <li><a href="javascript:;" class="active">@Html.Sitecore().Field("Glossary Value", ItemGuids.YouMayAlsoLikeItem)</a></li>
+                <li><a href="javascript:;">@Html.Sitecore().Field("Glossary Value", ItemGuids.AlsoOnThisFloorItem)</a></li>
+            </ul>
+        </div>
+        <div class="shopdetails-brand-body">
+            <ul class="hidden" id="alsoLike"></ul>
+            <div class="row">
+                @Html.Sitecore().Rendering(ItemGuids.T14YouMayAlsoLikeRenderingViewGuid, new
+                {
+                    Cacheable = false,
+                    CacheKey = "also-like",
+                    Cache_VaryByData = true
+                })
+            </div>
+            <div class="row hidden">
+                @Html.Sitecore().Rendering(ItemGuids.T14AlsoOnFloorRenderingViewGuid, new
+                {
+                    Cacheable = false,
+                    CacheKey = "also-on-this-floor",
+                    Cache_VaryByData = true
+                })
+            </div>
+        </div>
+    </div>
+</div>

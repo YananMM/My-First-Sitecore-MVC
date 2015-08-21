@@ -1,0 +1,27 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Landmark.Models
+@using Sitecore.Collections
+@using Sitecore.ContentSearch.Utilities
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@model RenderingModel
+
+@{
+    ShoppingHelper shoppingHelper=new ShoppingHelper();
+    List<string> relatedCategorieIDs = shoppingHelper.GetRelatedCategoriesIDs();
+    var shoppingItems = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
+    foreach (var item in shoppingItems)
+    {
+            foreach (var id in relatedCategorieIDs)
+            {
+                var category = Sitecore.Context.Database.GetItem(id);
+                if (category.DisplayName == item.DisplayName)
+                {
+                    <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@item.DisplayName</a></li>
+                }
+            }
+        }
+    }
+}
+

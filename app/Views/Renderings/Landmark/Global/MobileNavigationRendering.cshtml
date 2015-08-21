@@ -1,18 +1,60 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Collections
+@using Sitecore.Data.Items
 @model RenderingModel
+@{
+    ShoppingHelper shoppingHelper = new ShoppingHelper();
+}
 
 <ul>
     @foreach (Sitecore.Data.Items.Item item in LandmarkHelper.GetChildrenPageInNavigation(ItemGuids.LandmarkHomeItem))
     {
-        <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@item["Page "].ToUpper()</a>
-            @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count>0)
+        <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@item["Page Title"].ToUpper()<span class="sprite-icon-down pull-right"></span></a>
+            @*@if (LandmarkHelper.GetChildrenPageInNavigation(item).Count>0)
             {
                 <ul>
                     @foreach (Sitecore.Data.Items.Item childItem in LandmarkHelper.GetChildrenPageInNavigation(ItemGuids.LandmarkHomeItem))
                     {
                         <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
                     }
+                </ul>
+            }*@
+            @if (item.ID.ToString().Equals(ItemGuids.ShoppingItem))
+            {
+                <ul>
+                    <li>
+                        <a href="#">@Html.Sitecore().Field("Glossary Value", ItemGuids.ByCategoryGuidItem)<span class="sprite-icon-down pull-right"></span></a>
+                        <ul>
+                        @foreach (Item itemcategory in shoppingHelper.GetFirstCategoryItems())
+                        {
+                            <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(itemcategory)">@itemcategory["Page Title"].ToUpper()</a></li>
+                        }
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBrandsGuidItem)<span class="sprite-icon-down pull-right"></span></a>
+                        <ul>
+                            @foreach (Item itemshop in LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkHomeItem.ID.ToString(),ItemGuids.T14ShopDetailsTemplate))
+                            {
+                            <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(itemshop)">@itemshop["Page Title"].ToUpper()</a></li>
+                            }
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBuidingsGuidItem)<span class="sprite-icon-down pull-right"></span></a>
+                        @{
+                            ChildList buidings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
+                            Item allByBuildings = Sitecore.Context.Database.GetItem(ItemGuids.AllByBuildingsPage);
+                        }
+                        <ul>
+                            @foreach (Item building in buidings)
+                            {
+                                string href=Sitecore.Links.LinkManager.GetItemUrl(allByBuildings)+"#"+building.Fields["Building Title"].Value.Replace(' ','-');
+                                <li><a href="@href">@building.Fields["Building Title"].Value</a></li>
+                            }
+                        </ul>
+                    </li>
                 </ul>
             }
         </li>

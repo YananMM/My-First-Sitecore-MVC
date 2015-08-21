@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
-<div class="back-top clearfix"><a href="#" class="back-to-top">TOP</a></div>
+@model RenderingModel
+<div class="back-top clearfix"><a href="javascript:;" class="back-to-top">TOP</a></div>
 <footer class="site-footer">
     <section class="footer-nav">
         <div class="container">
@@ -13,7 +14,12 @@
                     })
                 </div>
                 <div class="footer-signup">
-                    @Html.Sitecore().Placeholder("social-media")
+                    @Html.Sitecore().Rendering(ItemGuids.FooterSocialMediaRenderingGuid, new
+                    {
+                        Cacheable = false,
+                        CacheKey = "social-media",
+                        Cache_VaryByData = true
+                    })
                 </div>
             </div>
         </div>
@@ -30,10 +36,9 @@
 
 <div id="portrait_only" class="portrait_only hidden">
     <div class="content">
-        <p>This site is best experienced in portrait mode. Please rotate your device. </p>
-        <img class="rotate_icon" width="100" height="100" src="/files/landmark/images/portrait_only.gif" alt="" />
+        <p>@Html.Sitecore().Field("Portrait Only Text", ItemGuids.LandmarkConfigItem)</p>
+        @Html.Sitecore().Field("Portrait Only Image", ItemGuids.LandmarkConfigItem,new{@class="rotate_icon",width="100",height="100"})
     </div>
-    @Html.Sitecore().Placeholder("portrait-only")
 </div>
 
 

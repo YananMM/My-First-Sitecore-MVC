@@ -1,0 +1,68 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@model RenderingModel
+@{
+    ArtTourHelper helper = new ArtTourHelper();
+}
+
+<div class="container">
+    <div class="gd-artplace">
+        <div class="row">
+            <div class="col-sm-12 visible-xs-block">
+                <div class="gd-pagetitle ">
+                    <div class=" gd-pagetitle-heading">
+                        <h1>@Html.Sitecore().Field("Art Title"), @Html.Sitecore().Field("Created Time")</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 text-center">
+                <div class="gd-pagetitle">
+                    @*@{
+                            ImageField imageField = Sitecore.Context.Item.Fields["Art Image"];
+
+                            string alt = imageField.Alt;
+                            <img class="gd-lightbox-link" data-lightsrc="https://boredanddangerousblog.files.wordpress.com/2014/06/edgeoftomorrow2.jpg" src="../files/landmark/images/artpiece/artpiece-bigpic-01.jpg" alt="artpiece picture">
+                        }*@
+                    @Html.Sitecore().Field("Art Image", new { @class = "gd-lightbox-link" })
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="gd-pagetitle">
+                    <div class="hidden-xs gd-pagetitle-heading">
+                        <h1>@Html.Sitecore().Field("Art Title"), @Html.Sitecore().Field("Created Time")</h1>
+                    </div>
+
+                    <div class="gd-artplace-details row">
+                        <div class="col-sm-6 gd-artplace-info">
+                            @Html.Sitecore().Field("Art Key")<br>
+                            @Html.Sitecore().Field("Art Size")
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
+                            <span class="icomoon-sound-alt"></span>
+                            @Html.Sitecore().Field("Glossary Value", ItemGuids.ListenToCommentaryItem)
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gd-artplace-details row">
+                        <div class="col-sm-3 col-md-2  gd-artplace-location">@Html.Sitecore().Field("Glossary Value", ItemGuids.LocationItem)</div>
+                        @{
+                            var floor = helper.GetFloor(Sitecore.Context.Item);
+                        }
+                        <div class="col-sm-9 col-md-10 gd-artplace-location-info">
+                            @floor.Fields["Floor Title"] @floor.Parent.Fields["Building Title"]<br>
+                            <a href="javascript:;" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image",floor)" data-lighttitle="PUT LIGHTBOX TITLE HERE">
+                                <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.FloorPlanItem)
+                            </a>
+                        </div>
+                    </div>
+                    @Html.Sitecore().Placeholder("t29-artist")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.Sitecore().Placeholder("t29-also-in")

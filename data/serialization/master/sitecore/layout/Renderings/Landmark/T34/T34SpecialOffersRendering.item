@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {830C2D40-CBD9-4596-BBAD-DF33195B389C}
+database: master
+path: /sitecore/layout/Renderings/Landmark/T34/T34SpecialOffersRendering
+parent: {518938B8-0363-4BD1-AD60-CF441A24F1E0}
+name: T34SpecialOffersRendering
+master: {00000000-0000-0000-0000-000000000000}
+template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
+templatekey: View rendering
+
+----field----
+field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
+name: Path
+key: path
+content-length: 63
+
+/Views/Renderings/Landmark/T34/T34SpecialOffersRendering.cshtml
+----field----
+field: {F4069D71-74D7-4422-941D-54B517CF3001}
+name: Placeholder
+key: placeholder
+content-length: 14
+
+special-offers
+----field----
+field: {EF7C5528-7307-4E19-863B-DA19EED6A9ED}
+name: Open Properties after Add
+key: open properties after add
+content-length: 1
+
+-
+----version----
+language: en
+version: 1
+revision: 1e5f8d31-a347-47cf-9c48-b48ebc92b118
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150819T073450Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1e5f8d31-a347-47cf-9c48-b48ebc92b118
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150819T075602:635755677628159633Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

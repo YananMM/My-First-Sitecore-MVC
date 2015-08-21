@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {E4D421D6-DCB0-40F4-B554-A52F83DC40EF}
+database: master
+path: /sitecore/content/Global/Landmark/Buildings/LANDMARK ATRIUM/1F
+parent: {04AF3BF4-1C4D-43BC-9884-1431E3A44B11}
+name: 1F
+master: {00000000-0000-0000-0000-000000000000}
+template: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
+templatekey: Floor Object
+
+----version----
+language: en
+version: 1
+revision: b145afe6-1e0b-41b8-850d-1861b75accee
+
+----field----
+field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
+name: Floor Title
+key: floor title
+content-length: 3
+
+1/F
+----field----
+field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
+name: Floor Image
+key: floor image
+content-length: 58
+
+<image mediaid="{9437F2DF-C8EC-46AB-8D6B-612371BE38E8}" />
+----field----
+field: {FF370512-19AC-4386-B26B-D64C14BF4693}
+name: Is Shown
+key: is shown
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150804T025357Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b145afe6-1e0b-41b8-850d-1861b75accee
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150811T055048:635748690486502001Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

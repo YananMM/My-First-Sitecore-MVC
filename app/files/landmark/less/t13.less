@@ -12,19 +12,20 @@
   
     .masonry-area{
     h3{
+      color: @brand-golden;
      display: block;
       font-family: @font-family-serif;
-      .primary-text;
       font-size: 1.33em;
       height: 35px;
       line-height: 35px;
       padding-left: 20px;
-      background-color: @gray-darker2;
+      background-color: #F6F6F6;
       margin:8px 0 8px 0;
     }
       .brand-box-area{
       margin: 0 auto;
       .brand-box{
+        border: 1px solid #CCCCCC;
         width: 90px;
         display: block;
         height: 56px;
@@ -33,10 +34,14 @@
         text-align: center;
         vertical-align: top;
         margin: 0 5px 8px 0;
-        background-color: @gray-base;
+        &:hover {
+          border-color: @brand-golden;
+        }
         img{
-         vertical-align: middle;
+          display: block;
+          vertical-align: middle;
           width: 100%;
+          height: 100%;
         }
         span{
           display: none;
@@ -44,14 +49,30 @@
           text-decoration: none;
          }
         &.brand-box-letter{
-        background-color: @gray-darker2;
-        .primary-text;
+        color: @brand-golden;
         font-family: @font-family-serif;
         font-size: 1.5em;
         }
         .brand-box-img{
           opacity: 0;
           filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+        }
+      }
+      a.brand-box {
+        &:hover {
+          &:after {
+            bottom: 0;
+            background-color: #FFFFFF;
+            color: @brand-golden;
+            content: attr(title);
+            font-family: 'Arial';
+            font-size: 12px;
+            font-weight: normal;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+          }
         }
       }
       }
@@ -79,7 +100,7 @@
     display: block;
     border: none;
     margin-bottom: 16px;
-      color: @white;
+     color: @gray-darker2;
     &:hover{
         color: @gray;
         text-decoration: none;
@@ -104,8 +125,8 @@
       padding: 21px 20px 25px;
       
       h3{
+        color: @brand-golden;
       font-family: @font-family-serif;
-        .primary-text;
         font-size: 1em;
         margin: 0 0 12px;
         background:none;
@@ -134,7 +155,7 @@
     margin: 0 0 12px;
     padding: 0;
        a {
-      color: @gray;
+      color: @gray-darker2;
     &:hover{
         color: @white;
         text-decoration: none;
@@ -156,7 +177,7 @@
         margin-right: 22px;
         margin-bottom: 13px;
         &.disabled{
-           color: #333;
+           color: #999999;
         }
       }
     }
@@ -200,7 +221,7 @@
     width: 25%;
     vertical-align:top;
     box-sizing: border-box;
-    border-left: 1px solid #2e2e2e;
+    border-left: 1px solid #CCCCCC;
     padding:0 0 0 30px;
     overflow-y: hidden;
     font-size: 0.916em;
@@ -242,7 +263,6 @@
         padding: 0;
       h3{
       font-family: @font-family-serif;
-        .primary-text;
         font-size: 1.45em;
         margin: 0 0 19px;
     .sub-title{
@@ -304,30 +324,11 @@
        .brand-box-area{
          margin-bottom: 25px;
       .brand-box{
-        display: inline-block;
         float: none;
-        padding: 1px;
-        background-color:@gray-darker; 
         &:hover{
-        background-color:
-          @gray-dark; 
-        .transition(all, .5s, ease-in);
-         .brand-box-img{
-          display: block;
-           opacity: 1;
-          filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
-          position: absolute;
-          width: 160px;
-          height: 100px;
-          z-index: 2;
-          top: 1px;
-          left: 1px;
-          border: none;
-    .transition(all, .5s, ease-in);
-        }
+          .transition(all, .5s, ease-in);
         }
         img{ 
-          width: auto;
           vertical-align: top;
         }
         /*
@@ -353,7 +354,7 @@
   .brand-menu{
     width: 22%;
     vertical-align:top;
-    border-left: 1px solid #2e2e2e;
+    border-left: 1px solid #CCCCCC;
     min-width: 180px;
     padding:0 0 0 30px;
     font-size: 1em;

@@ -9,15 +9,22 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {873FCBBD-5F81-4DD2-B885-DFDCA194A5D1}
 templatekey: Building Data
 
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{ABBCC209-E657-48C4-A8D1-9C6C8B862474}
 ----version----
 language: en
 version: 1
-revision: 4058fba3-8c68-429e-95b4-61cf5414dd55
+revision: 05b38260-fd59-415b-a341-f1a7029c739d
 
 ----field----
 field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
-name: Buiding Title
-key: buiding title
+name: Building Title
+key: building title
 content-length: 5
 
 $name
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4058fba3-8c68-429e-95b4-61cf5414dd55
+05b38260-fd59-415b-a341-f1a7029c739d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150721T070134Z
+20150804T025132Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

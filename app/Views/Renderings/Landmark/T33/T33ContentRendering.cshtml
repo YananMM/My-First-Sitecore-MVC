@@ -1,0 +1,41 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@using Landmark.Models
+@model RenderingModel
+
+<div id="gd-carousel-mainimage-single" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-single">
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Cover Image", Sitecore.Context.Item)"></div>
+            <div class="carousel-caption">
+                <div class="carousel-caption-inner">
+                    <div class="gd-carousel-detail">
+                        <div class="gd-mainimage-brief">
+                            <h1>@Html.Sitecore().Field("Cover Title")</h1>
+                            <p>@Html.Sitecore().Field("Cover Description")</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="gd-brief">
+        <div class="gd-brief-heading">
+            <h2>@Html.Sitecore().Field("Address Label")</h2>
+        </div>
+        <div class="gd-brief-body gd-brief-center">
+            <p>
+                @Html.Sitecore().Field("Address Text")
+            </p>
+            <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Item.Children.First())"><button class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Button Text")</button></a>
+        </div>
+    </div>
+    <div class="gd-location-map">
+        <iframe src="/files/landmark/iframes/t33-iframe.html" frameborder="0"></iframe>
+    </div>
+    @Html.Sitecore().Placeholder("iconic-building")
+</div>
