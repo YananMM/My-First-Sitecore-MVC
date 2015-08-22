@@ -12,15 +12,43 @@ templatekey: Building Data
 ----version----
 language: en
 version: 1
-revision: 2fe146ae-fcd1-41f0-b836-ead7ec366dfe
+revision: eb6c157e-dd7b-460c-9c71-f069025437a1
 
 ----field----
 field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
-name: Buiding Title
-key: buiding title
+name: Building Title
+key: building title
 content-length: 18
 
 LANDMARK BUILDINGS
+----field----
+field: {5471CA9B-9D9E-4332-8B37-905B47BCE65F}
+name: Building Address
+key: building address
+content-length: 54
+
+15 Queen's Road Central, LANDMARK, Central, Hong Kong.
+----field----
+field: {7EF17060-F50C-4CA3-8021-1802F0672C00}
+name: Building Svg Id
+key: building svg id
+content-length: 6
+
+gdfpa3
+----field----
+field: {E657A707-C854-4316-BDA6-B63559885398}
+name: LocationX
+key: locationx
+content-length: 6
+
+0.7356
+----field----
+field: {12796E88-1E57-4ECB-B6A2-66BC957940D1}
+name: LocationY
+key: locationy
+content-length: 6
+
+0.5900
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -34,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2fe146ae-fcd1-41f0-b836-ead7ec366dfe
+eb6c157e-dd7b-460c-9c71-f069025437a1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150721T083931Z
+20150820T073944Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

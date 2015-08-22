@@ -12,7 +12,7 @@ templatekey: T30 Page
 ----version----
 language: en
 version: 1
-revision: 2db8ffbf-e127-4547-82b4-ce16f6c9b306
+revision: f62182ff-994e-41ed-bc42-8fd702cdd524
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -50,6 +50,16 @@ content-length: 4
 
 1950
 ----field----
+field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
+name: Artist Description
+key: artist description
+content-length: 1396
+
+<p>Born and raised in Hong Kong, of Eurasian heritage, Maria Lobo&rsquo;s art training took her to Italy, Spain, Canada and the USA.</p>
+<p>
+Maria returned to Hong Kong in 1994, having been part of the San Francisco Hunters Point Artists&rsquo; Community. A decade later, Maria returned to North America and currently resides in San Francisco and exhibits her work internationally. Maria&rsquo;s East and West heritage, Asian roots and international experience are all reflected in her style of artwork. Her Asian-inspired abstract artworks incorporate both Western. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut veniam, dignissimos perferendis praesentium officiis, exercitationem doloremque assumenda quam explicabo natus temporibus consectetur expedita architecto. Porro excepturi aperiam vel deleniti voluptatibus, accusamus beatae doloremque quisquam earum aliquam totam provident voluptates vero nam quo voluptatem sint delectus cupiditate neque a ex! Dolores praesentium accusantium totam ut? Ut sed quis itaque perspiciatis repellendus delectus doloribus deleniti, earum expedita voluptatibus velit nobis quos, veritatis. Dolore recusandae error dignissimos ipsum velit doloribus magnam, ab, culpa, corporis magni labore cupiditate praesentium. In voluptate veritatis deserunt quaerat nulla aliquam natus corrupti officiis tempora harum, inventore, provident est.</p>
+<br>
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -69,14 +79,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2db8ffbf-e127-4547-82b4-ce16f6c9b306
+f62182ff-994e-41ed-bc42-8fd702cdd524
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150814T032011:635751192110212745Z
+20150822T132656Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

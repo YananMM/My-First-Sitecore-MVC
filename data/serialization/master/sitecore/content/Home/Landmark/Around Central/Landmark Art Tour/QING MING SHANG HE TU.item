@@ -12,7 +12,7 @@ templatekey: T29 Page
 ----version----
 language: en
 version: 1
-revision: 60dde8e8-c37a-422b-95f0-8043188147ba
+revision: 200a5984-132f-4a90-934f-e889361fe883
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -36,6 +36,13 @@ content-length: 38
 
 {6C920E67-89CD-42AB-9183-FEB16B905B84}
 ----field----
+field: {22B6E709-1F38-4AF9-8D6C-7E3443E4F3ED}
+name: Floor and Building
+key: floor and building
+content-length: 38
+
+{E4D421D6-DCB0-40F4-B554-A52F83DC40EF}
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-60dde8e8-c37a-422b-95f0-8043188147ba
+200a5984-132f-4a90-934f-e889361fe883
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150814T031451:635751188910689743Z
+20150822T124312Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

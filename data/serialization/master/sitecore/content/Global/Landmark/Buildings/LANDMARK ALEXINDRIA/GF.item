@@ -19,7 +19,7 @@ content-length: 2
 ----version----
 language: en
 version: 1
-revision: 7610dc0b-cd87-477a-8f9f-be9cff93bc57
+revision: 321a3a75-06f4-439e-b7b6-99ee154fba32
 
 ----field----
 field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
@@ -28,6 +28,13 @@ key: floor title
 content-length: 3
 
 G/F
+----field----
+field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
+name: Floor Image
+key: floor image
+content-length: 58
+
+<image mediaid="{FF6A40EB-C6A8-42ED-AFFC-07692309EF59}" />
 ----field----
 field: {49195981-001A-41D0-BE6E-78B60FD14964}
 name: Floor Svg File
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7610dc0b-cd87-477a-8f9f-be9cff93bc57
+321a3a75-06f4-439e-b7b6-99ee154fba32
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150819T073440Z
+20150820T024027Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

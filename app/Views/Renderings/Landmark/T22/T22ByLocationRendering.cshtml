@@ -15,7 +15,7 @@
             @for (int i = 0; i < buildings.Count; i++)
             {
                 string cssclass = i==0? "active":string.Empty;
-                <li data-location='@buildings[i].Fields["Building Svg Id"].Value' class="list-group-item @cssclass"><span class="badge">@(i+1)</span>@buildings[i].Fields["Building Title"].Value</li>
+                <li data-id="@buildings[i].ID.ToString()" data-location='@buildings[i].Fields["Building Svg Id"].Value' class="list-group-item @cssclass"><span class="badge">@(i+1)</span>@buildings[i].Fields["Building Title"].Value</li>
             }
         </ul>
     </div>
@@ -26,66 +26,7 @@
 <div class="gd-artlist">
     <h2>LANDMARK ARTIUM</h2>
     <div id="gd-art-gallery">
-        <div class="row">
-            <div class="col-sm-3">
-                <a href="t29-2.html">
-                    <img data-src="../files/landmark/images/artpiece/artpiece-pic-01.jpg" alt="artpiece picture">
-                    <h3>TEXTURED VIEWPOINTS I, 2012</h3>
-                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a href="t29.html">
-                    <img data-src="../files/landmark/images/artpiece/artpiece-pic-02.jpg" alt="artpiece picture">
-                    <h3>TEXTURED VIEWPOINTS I, 2012</h3>
-                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a href="t29.html">
-                    <img data-src="../files/landmark/images/artpiece/artpiece-pic-03.jpg" alt="artpiece picture">
-                    <h3>TEXTURED VIEWPOINTS I, 2012</h3>
-                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a href="t29.html">
-                    <img data-src="../files/landmark/images/artpiece/artpiece-pic-04.jpg" alt="artpiece picture">
-                    <h3>Textured Viewpoints I, 2012</h3>
-                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                <a href="t29.html">
-                    <img data-src="../files/landmark/images/arttour/arttour-pic-04.jpg" alt="artpiece picture">
-                    <h3>TEXTURED VIEWPOINTS I, 2012</h3>
-                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a href="t29.html">
-                    <img data-src="../files/landmark/images/arttour/arttour-pic-03.jpg" alt="artpiece picture">
-                    <h3>TEXTURED VIEWPOINTS I, 2012</h3>
-                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a href="t29.html">
-                    <img data-src="../files/landmark/images/arttour/arttour-pic-02.jpg" alt="artpiece picture">
-                    <h3>TEXTURED VIEWPOINTS I, 2012</h3>
-                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
-                </a>
-            </div>
-            <div class="col-sm-3">
-                <a href="t29.html">
-                    <img data-src="../files/landmark/images/arttour/arttour-pic-01.jpg" alt="artpiece picture">
-                    <h3>TEXTURED VIEWPOINTS I, 2012</h3>
-                    <p>Digital Prints on Canvas Lorem ipsum dolor sit amet...</p>
-                </a>
-            </div>
-        </div>
+        
     </div>
     <a id="gd-art-gallery-loading" class="loding-more"><img src="../files/landmark/images/more.gif"></a>
 </div>
