@@ -1,18 +1,32 @@
 ----item----
 version: 1
-id: {8B38BE26-F07E-42C3-9C4E-6B7D1770BAB1}
+id: {BED60393-9ADB-4388-9B62-D2538C350330}
 database: master
-path: /sitecore/templates/Branches/User Defined/Landmark/Page/T34 Page
-parent: {82187095-62EE-4583-B939-FE773A6BF9D4}
-name: T34 Page
+path: /sitecore/content/Home/Landmark/Now At Landmark/Exclusively in LANDMARK  Featuring 50 Exquisite Items for June/Slide Objects/Slide Object 2
+parent: {273CDA44-DD0C-4EB0-8B49-B6641BCAEE67}
+name: Slide Object 2
 master: {00000000-0000-0000-0000-000000000000}
-template: {35E75C72-4985-4E09-88C3-0EAC6CD1E64F}
-templatekey: Branch
+template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
+templatekey: Slide Object
 
 ----version----
 language: en
 version: 1
-revision: bdf14e0b-15ab-4acf-9120-c3286ed76716
+revision: 9dd1c716-e9ed-4543-8a3d-584152e06ada
+
+----field----
+field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{552D2B1F-C3D2-4168-BF52-3E545B09B90C}" />
+----field----
+field: {EA18DD4F-8CA0-4115-9FDA-AF1CBFC569D0}
+name: Has Slide Content
+key: has slide content
+content-length: 0
+
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -27,7 +41,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150819T061955Z
+20150824T090337Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bdf14e0b-15ab-4acf-9120-c3286ed76716
+9dd1c716-e9ed-4543-8a3d-584152e06ada
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150819T061955:635755619955640953Z
+20150824T091941Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
