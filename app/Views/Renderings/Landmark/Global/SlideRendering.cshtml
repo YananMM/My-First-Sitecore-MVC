@@ -46,7 +46,7 @@
         }
     }
 </div>
-<!-- Controls -->
+ <!-- Controls -->
 <div class="gd-mainimage-controls">
     <a class="gd-mainimage-control" href="#gd-carousel-mainimage" role="button" data-slide="prev">
         <span class="icomoon-thin-arrow-L" aria-hidden="true"></span>
@@ -56,4 +56,14 @@
         <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
+</div>
+<!-- Caption -->
+<div class="carousel-caption">
+    <div class="carousel-caption-inner">
+        <div class="gd-carousel-detail">
+            <div class="gd-mainimage-brief">
+                @Html.Sitecore().Placeholder("slide-text")
+            </div>
+        </div>
+    </div>
 </div>

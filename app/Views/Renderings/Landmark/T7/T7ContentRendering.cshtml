@@ -8,79 +8,79 @@
     ChildList buidings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
 }
 <div class="container">
-      <div class="gd-pagetitle">
+    <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
-          <a href="#" class="gd-link-audio">
-            <span class="icomoon-download"></span> @Sitecore.Context.Item["Download Label"].ToUpper()
-          </a>
-          <h1>@Sitecore.Context.Item["Page Title"].ToUpper()</h1>
+            <h1>@Sitecore.Context.Item["Page Title"].ToUpper()</h1>
+            <a href="#" class="gd-link-audio">
+                <span class="icomoon-download"></span> @Sitecore.Context.Item["Download Label"].ToUpper()
+            </a>
         </div>
-          <div class="gd-pagetitle-mapmenu hidden-xs hiddden-sm">
-              <img data-src="@src" alt="map">
-              <ul>
-                  @{
-                      int i = 0;
-                      foreach (Item building in buidings)
-                      {
+        <div class="gd-pagetitle-mapmenu hidden-xs hiddden-sm">
+            <img data-src="@src" alt="map">
+            <ul>
+                @{
+                    int i = 0;
+                    foreach (Item building in buidings)
+                    {
                         if (i == 0)
-                         {
-                             <li class="active" data-service=""><a href="#">@building.Fields["Building Title"].Value</a></li>
-                         }
-                         else
-                         {
-                             <li>
-                                  <a href="#" data-form="">@building.Fields["Building Title"].Value</a>
-                              </li>
-                         }
-                          i++;
-                      }
-                  }
-              </ul>
-          </div>
-      </div>
+                        {
+                            <li class="active" data-service=""><a href="#">@building.Fields["Building Title"].Value</a></li>
+                        }
+                        else
+                        {
+                            <li>
+                                <a href="#" data-form="">@building.Fields["Building Title"].Value</a>
+                            </li>
+                        }
+                        i++;
+                    }
+                }
+            </ul>
+        </div>
+    </div>
 
-      <div class="row">
+    <div class="row">
         <div class="col-sm-3">
-          <div class="gd-floorplan clearfix">
-            <div class="gd-fp-levela" id="gd-floors"></div>
-            <div class="gd-fp-levelb">
-              <div id="gd-shops"></div>
+            <div class="gd-floorplan clearfix">
+                <div class="gd-fp-levela" id="gd-floors"></div>
+                <div class="gd-fp-levelb">
+                    <div id="gd-shops"></div>
+                </div>
             </div>
-          </div>
         </div>
         <div class="col-sm-9">
-          <div id="mapplic">
-          </div>
-          <div class="gd-mainimage-brief">
-            <h2 id="gd-shop-detail-title"></h2>
-            <div class="table-responsive gd-mainimage-table">
-              <table>
-                <tbody>
-                  <tr>
-                    <th>@Html.Sitecore().Field("Glossary Value",ItemGuids.WhereItem)</th>
-                    <td id="gd-shop-detail-where"></td>
-                  </tr>
-                  <tr>
-                    <th>@Html.Sitecore().Field("Glossary Value",ItemGuids.OpenningHoursItem)</th>
-                     <td>
-                      <span id="gd-shop-detail-wkt"></span>
-                      <br>
-                      <span id="gd-shop-detail-wdt"></span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>@Html.Sitecore().Field("Glossary Value",ItemGuids.AddressItem)</th>
-                    <td id="gd-shop-detail-addr"></td>
-                  </tr>
-                </tbody>
-              </table>
+            <div id="mapplic" class="hidden-xs">
             </div>
-            <a id="gd-shop-detail-href" href="" class="gd-button gd-button-white">
-              SEE MORE DETAILS <span class="icomoon-chevron-small-right"></span>
-            </a>
-          </div>
+            <div class="gd-mainimage-brief">
+                <h2 id="gd-shop-detail-title"></h2>
+                <div class="table-responsive gd-mainimage-table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.WhereItem)</th>
+                                <td id="gd-shop-detail-where"></td>
+                            </tr>
+                            <tr>
+                                <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.OpenningHoursItem)</th>
+                                <td>
+                                    <span id="gd-shop-detail-wkt"></span>
+                                    <br>
+                                    <span id="gd-shop-detail-wdt"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.AddressItem)</th>
+                                <td id="gd-shop-detail-addr"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <a id="gd-shop-detail-href" href="" class="gd-button gd-button-white">
+                    SEE MORE DETAILS <span class="icomoon-chevron-small-right"></span>
+                </a>
+            </div>
         </div>
-      </div>
-
     </div>
+
+</div>
 
