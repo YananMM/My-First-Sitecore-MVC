@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {802E2154-D2CA-407C-B1FE-CDEE42C06CD9}
+id: {228FB416-BB26-4693-815C-3F350B3CFA1E}
 database: master
 path: /sitecore/content/Home/Landmark/Around Central/Hotels/THE LANDMARK MADARIN ORIENTAL/Special Offers/1
-parent: {E1B29BCA-5DB6-4695-9582-FF7BD3F659D9}
+parent: {F7EC982F-D34B-406A-B16C-7AEAC10A28FE}
 name: 1
 master: {00000000-0000-0000-0000-000000000000}
 template: {D3130DE9-ABC4-4D10-92C8-75A8E9910245}
@@ -19,7 +19,7 @@ content-length: 2
 ----version----
 language: en
 version: 1
-revision: fadc18a1-b1b9-4955-b5d1-adb9bf871040
+revision: 022a8a90-3cbc-4972-8339-16f29e10c00d
 
 ----field----
 field: {8CC749CB-7079-4C70-86DF-AED85DFF80B7}
@@ -42,6 +42,13 @@ key: offer link label
 content-length: 8
 
 BOOK NOW
+----field----
+field: {869596C7-03FD-4BC8-A4FB-0DE04D0E7075}
+name: Offer Link Url
+key: offer link url
+content-length: 28
+
+<link linktype="internal" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fadc18a1-b1b9-4955-b5d1-adb9bf871040
+022a8a90-3cbc-4972-8339-16f29e10c00d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150820T031127:635756370871916008Z
+20150820T031141:635756371016834297Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
