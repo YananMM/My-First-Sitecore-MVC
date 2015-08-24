@@ -1,21 +1,14 @@
 ----item----
 version: 1
-id: {52D6EB05-D74E-45ED-851C-CA9A6B774D41}
+id: {07D4ACB8-7EF3-40B9-8D1B-A5782241E8D3}
 database: master
-path: /sitecore/content/Home/Landmark/Now At Landmark/Exclusively in LANDMARK  Featuring 50 Exquisite Items for June
+path: /sitecore/content/Home/Landmark/Now At Landmark/Exclusively in LANDMARK S
 parent: {F0A68E40-FB4F-4B85-969D-A6ADEE24DE6B}
-name: Exclusively in LANDMARK  Featuring 50 Exquisite Items for June
+name: Exclusively in LANDMARK S
 master: {13FE3D68-15D9-47E4-8993-4C620C534BBC}
 template: {4CDF5CD9-40F0-4F0B-A095-7773CE6CF582}
 templatekey: T4 Page
 
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 2
-
-50
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -26,7 +19,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 77a7cd16-7a03-48be-bed1-49c3018db546
+revision: bda15350-7913-47ea-a747-52219cf174fb
 
 ----field----
 field: {F23BEBDE-D0C1-482B-9670-C0BD140DB78C}
@@ -78,7 +71,7 @@ name: Related Articles
 key: related articles
 content-length: 38
 
-{07D4ACB8-7EF3-40B9-8D1B-A5782241E8D3}
+{52D6EB05-D74E-45ED-851C-CA9A6B774D41}
 ----field----
 field: {4FAB9882-DABD-43FC-89B8-88CB318870D9}
 name: Bullets and Tables
@@ -94,9 +87,9 @@ content-length: 267
 field: {0EF19FDC-0255-4003-B176-1AA1BCD7823B}
 name: Reference Title
 key: reference title
-content-length: 110
+content-length: 89
 
-The iconic Mandarin Oriental, Hong Kong is the epitome of contemporary luxury combined with Oriental heritage.
+The Landmark Mandarin Oriental is simply one of the best luxury city hotels in the world.
 ----field----
 field: {188812E9-FA7F-4318-9DC6-597BB0CC01A2}
 name: Reference Content
@@ -124,14 +117,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-77a7cd16-7a03-48be-bed1-49c3018db546
+bda15350-7913-47ea-a747-52219cf174fb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150824T125306Z
+20150824T125222Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

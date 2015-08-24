@@ -1,4 +1,8 @@
-﻿@model RenderingModel
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@model RenderingModel
 <div class="container">
 
         <div class="gd-pagetitle">
@@ -50,86 +54,106 @@
               </div>
              <div  class="col-sm-8 gd-nd-details">
               @Html.Sitecore().Field("Page Content")
-               @*<div class="row">
-                 <div class="col-sm-6"><img data-src="../files/landmark/images/nowatlm/nowatlm-goods-01.jpg"></div>
-                 <div class="col-sm-6"><img data-src="../files/landmark/images/nowatlm/nowatlm-goods-02.jpg"></div>
-               </div>*@
-               <ul>
-                <li>Roger Chan puts his stamp on his outfit</li>
-                <li> By sporting his own light-coloured, three-button stripped suit. Giving off a cool vibe with total élan,</li>
-                <li>The side vents on this suit gives him a trim silhouette which also</li>
-               </ul>
+@{
+    var images = LandmarkHelper.GetItemByTemplate(ItemGuids.ImageTextObjectTemplate);
+}
+
+@if (images.Count > 0)
+{
+                <div class="row">
+                 @foreach (var image in images)
+                 {
+                    string src = Html.Sitecore().ImageFieldSrc("Image", image);
+                    <img data-src="@src" class="lazy-loaded">
+                 }
+                </div>
+}
+                 @Html.Sitecore().Field("Bullets and Tables")
               </div>
             </div>
           </div>
 
-@*<div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
+<div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
     <div class="carousel-heading">
-        <h2>YOU MAY ALSO LIKE</h2>
+        <h2>@Html.Sitecore().Field("Glossary Value", ItemGuids.YouMayAlsoLikeItem)</h2>
     </div>
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <div class="carousel-image" data-bgsrc="../files/landmark/images/nowatlm/nowatlm-article-01.jpg"></div>
-            <div class="carousel-caption">
-                <div class="carousel-caption-inner">
-                    <div class="gd-carousel-detail">
-                        <h3>The Landmark Mandarin Oriental is simply one of the best luxury city hotels in the world.</h3>
-                        <p>The Landmark Mandarin Oriental is simply one of the best luxury city hotels in the world. Our 113 guestrooms are amongst the largest hotel rooms in Hong Kong and each a masterpiece of contemporary design. We offer a cocoon of discreet serenity, attended by our legendary service. This is a highly exclusive experience in the premier business and fashion location.</p>
+    @{
+        var articlesField = (MultilistField) Sitecore.Context.Item.Fields["Related Articles"];
+        List<Item> articles = new List<Item>();
+        if (articlesField != null)
+        {
+            foreach (var articleid in articlesField.TargetIDs)
+            {
+                articles.Add(Sitecore.Context.Database.GetItem(articleid));
+            }
+        }
+    }
+
+
+
+<div class="carousel-inner" role="listbox">
+    @{
+        int j = 0;
+        foreach (var item in articles)
+        {
+            <div @{ if (j == 0) { <text>
+                 class="item active"
+                 </text>        } else { <text>
+                 class="item"
+                 </text>        } }>
+                @{
+            j++;
+                }
+                <div class="carousel-image" data-bgsrc='@Html.Sitecore().ImageFieldSrc("Reference Image", item)'></div>
+                <div class="carousel-caption">
+                    <div class="carousel-caption-inner">
+                        <div class="gd-carousel-detail">
+                            <h3>@Html.Sitecore().Field("Reference Title")</h3>
+                            <p>@Html.Sitecore().Field("Reference Content")</p>
+                        </div>
                     </div>
                 </div>
+                
             </div>
-        </div>
-        <div class="item">
-            <div class="carousel-image" data-bgsrc="../files/landmark/images/about/about-article-01.jpg"></div>
-            <div class="carousel-caption">
-                <div class="carousel-caption-inner">
-                    <div class="gd-carousel-detail">
-                        <h3>The iconic Mandarin Oriental, Hong Kong is the epitome of contemporary luxury combined with Oriental heritage.</h3>
-                        <p>Having delighted guests with its award-winning service and impressive facilities for nearly 50 years, it is the much loved address for those seeking an exclusive sanctuary in the heart of this exciting metropolis.</p>
-                        <button class="gd-button gd-button-white" type="button">DISCOVER MORE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="carousel-image" data-bgsrc="../files/landmark/images/example1.jpg"></div>
-            <div class="carousel-caption">
-                <div class="carousel-caption-inner">
-                    <div class="gd-carousel-detail">
-                        <h3>Lorem ipsum dolor</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eos saepe temporibus architecto magni neque eaque consequatur nesciunt harum laudantium saepe temporibus architecto magni neque eaque!</p>
-                        <button class="gd-button gd-button-white" type="button">DISCOVER MORE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Wrapper for controls -->
-    <div class="carousel-footer">
-        <div class="gd-carousel-controls clearfix">
-            <!-- Controls -->
-            <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="prev">
-                <span class="icomoon-thin-arrow-L" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <!-- Indicators -->
-            <ol class="carousel-indicators gd-carousel-control gd-carousel-no">
-                <li data-target="#gd-carousel-info" data-slide-to="0" class="active">1</li>
-                <li data-target="#gd-carousel-info" data-slide-to="1">2</li>
-                <li data-target="#gd-carousel-info" data-slide-to="2">3</li>
-            </ol>
-            <span class="gd-carousel-control gd-carousel-no">
+        }
+    }
+</div>
+
+
+            <!-- Wrapper for controls -->
+            <div class="carousel-footer">
+                <div class="gd-carousel-controls clearfix">
+                    <!-- Controls -->
+                    <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="prev">
+                        <span class="icomoon-thin-arrow-L" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators gd-carousel-control gd-carousel-no">
+                        @for (int i = 0; i < articles.Count; i++)
+                        {
+                            <li data-target="#gd-carousel-info" data-slide-to="@i" @{
+                                                                                       if (i == 0)
+                                                                                       {
+                                                                                           <text>
+                                                                                               class="active"
+                                                                                           </text>
+                                                                                       }
+                                                                                   }>@(i+1)</li>
+                        }
+                    </ol>
+                    <span class="gd-carousel-control gd-carousel-no">
                         /
                     </span>
-            <span class="gd-carousel-control gd-carousel-no">
-                        3
+                    <span class="gd-carousel-control gd-carousel-no">
+                        @articles.Count
                     </span>
-            <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="next">
-                <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+                    <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="next">
+                        <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>*@
 </div>
