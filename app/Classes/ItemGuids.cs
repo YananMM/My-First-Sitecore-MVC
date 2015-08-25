@@ -15,6 +15,7 @@ namespace Landmark.Classes
         public static readonly String FooterRenderingViewGuid = "{CE360129-0EE2-47FC-A1D9-3A28105B1249}";
         public static readonly String T1PanelNavRenderingViewGuid = "{026C458F-E4BC-490B-A097-DBE0C6DA9459}";
         public static readonly String HeaderRenderingViewGuid = "{38268C3C-71E7-4775-8E91-FB4DF4667C34}";
+        public static readonly String TagsRenderingViewGuid = "{5E1A037B-CB78-4FFC-8758-7E66DC14EADC}";
         public static readonly String FooterNavRenderingViewGuid = "{5BBD6426-6C9C-4E73-BD1F-34BC6D63961E}";
         public static readonly String FooterConfigRenderingViewGuid = "{18C07F19-B608-411E-81E2-FDADAE97176D}";
         public static readonly String FooterSocialMediaRenderingGuid = "{5359BCC1-D4EB-4D7B-BBD8-11D1597BAB92}";
@@ -103,7 +104,10 @@ namespace Landmark.Classes
         public static readonly Item MoreItem = Sitecore.Context.Database.GetItem("{30811B28-1ECB-4137-B8BF-B962FF16D7E7}");
         public static readonly Item OfficialWebsiteItem = Sitecore.Context.Database.GetItem("{86B65A99-F8BE-42C1-A50F-A346ACFA9A6D}");
         public static readonly Item OpenningHoursItem = Sitecore.Context.Database.GetItem("{86EDB6E7-348D-4F43-AE03-3F0EA2F937AC}");
-        //public static readonly Item AddressItem = Sitecore.Context.Database.GetItem("{CA66929E-12DD-41D9-8D84-7C57E9C123B0}");
+        public static readonly Item DateTimeItem = Sitecore.Context.Database.GetItem("{6DABDA46-E90A-4BEA-AF61-1B9A385C31BF}");
+        public static readonly Item EnquiryItem = Sitecore.Context.Database.GetItem("{C236AA00-30F1-43BB-A426-C477DE3F264D}");
+        public static readonly Item VenueItem = Sitecore.Context.Database.GetItem("{19EF3D69-3DDC-4A84-A1F7-F93E2098929D}");
+        public static readonly Item WebsiteItem = Sitecore.Context.Database.GetItem("{AEC15D0C-B92E-47D7-991C-EE96110E609A}");
 
         public static readonly Item PhoneItem = Sitecore.Context.Database.GetItem("{4AAF25F5-0A1C-45AA-B81D-B27AD46F37C2}");
 
