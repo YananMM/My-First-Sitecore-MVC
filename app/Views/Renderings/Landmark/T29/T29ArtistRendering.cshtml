@@ -9,14 +9,14 @@
 }
 
 
-<div class="gd-artplace-profile">
+<a href="@Sitecore.Links.LinkManager.GetItemUrl(artist)" class="gd-artplace-profile">
     @*<img src="../files/landmark/images/artpiece/artpiece-person-01.png" alt="artpiece picture">*@
     @Html.Sitecore().Field("Artist Photo", artist)
     <div class="gd-artplace-profile-title">
         <h5>@Html.Sitecore().Field("Artist Name", artist)</h5>
         <p>@Html.Sitecore().Field("Artist Birthday Label", artist) @Html.Sitecore().Field("Artist Birthday Text", artist)</p>
     </div>
-</div>
+</a>
 
 <div class="gd-artplace-profile-info row">
     <div class="col-sm-12 gd-longarticle">

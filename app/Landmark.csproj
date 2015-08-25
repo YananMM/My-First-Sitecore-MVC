@@ -574,6 +574,11 @@
     <Content Include="Views\Renderings\Landmark\T3\T3ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T4\T4ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T4\T4SlideRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T9\T9ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T9\T9FormRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T9\T9UpdateDataRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T9\T9WriteToRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T10\T10ContentRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

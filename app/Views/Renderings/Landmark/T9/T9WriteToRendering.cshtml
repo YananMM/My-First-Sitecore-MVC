@@ -1,0 +1,37 @@
+﻿@using System.Diagnostics.Eventing.Reader
+@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.ContentSearch.Utilities
+@using Sitecore.Data.Items
+@model RenderingModel
+<div class="gd-contact-area">
+    <div class="gd-contact-heading">
+        <span class="icomoon-thin-arrow-R arrow-rotate-90 "></span>
+        <h3><span class="icomoon-quill"></span>@Html.Sitecore().Field("Contact Title")</h3>
+    </div>
+    <div class="gd-contact-body">
+        <p>@Html.Sitecore().Field("Contact Description")</p>
+        <div class="row">
+            <div class="table-responsive col-sm-6">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.AddressItem)</th>
+                            <td>
+                                @Html.Sitecore().Field("Contact Address")
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.FaxItem)</th>
+                            <td>@Html.Sitecore().Field("Contact Tax")</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.EmailItem)</th>
+                            <td><a href="mailto:@Html.Sitecore().Field("Contact Email")">@Html.Sitecore().Field("Contact Email")</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
