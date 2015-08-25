@@ -7,11 +7,11 @@
 {
     <div>
         @{
-            var shopPage = shoppingHelper.GetShopPageByTag(item.CurrentItem.ID.ToString());
-            if (shopPage != null)
-            {
-                <a href="@Sitecore.Links.LinkManager.GetItemUrl(shopPage)">@item.CurrentItem["Category Name"] - </a>
-            }
+    var shopPage = shoppingHelper.GetShopPageByTag(item.CurrentItem.ID.ToString());
+    if (shopPage != null)
+    {
+        <a href="@Sitecore.Links.LinkManager.GetItemUrl(shopPage)">@item.CurrentItem["Category Name"] - </a>
+    }
         }
 
         @foreach (var it in item.Children)

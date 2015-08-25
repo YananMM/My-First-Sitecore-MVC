@@ -5,7 +5,7 @@
 @using Landmark.Models
 @model RenderingModel
 <div class="gd-offers">
-    <h2>@Html.Sitecore().Field("Special Offers Label")</h2>
+    <h3>@Html.Sitecore().Field("Special Offers Label")</h3>
     <div class="row">
         @{
             var offers = LandmarkHelper.GetItemByTemplate(ItemGuids.T34SpecialOfferObject);

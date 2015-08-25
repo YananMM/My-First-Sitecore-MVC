@@ -1,0 +1,30 @@
+﻿@using System.Diagnostics.Eventing.Reader
+@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.ContentSearch.Utilities
+@using Sitecore.Data.Items
+@model RenderingModel
+<div class="gd-personal-data">
+    <h4>@Html.Sitecore().Field("Send Request Title")</h4>
+    <p>@Html.Sitecore().Field("Send Request Description")</p>
+    <div class="row">
+        <div class="table-responsive col-sm-6">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.TelephoneItem)</th>
+                        <td>@Html.Sitecore().Field("Telephone")</td>
+                    </tr>
+                    <tr>
+                        <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.EmailItem)</th>
+                        <td><a href="mailto:@Html.Sitecore().Field("Email")">@Html.Sitecore().Field("Send Request Email")</a></td>
+                    </tr>
+                    <tr>
+                        <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.AddressItem)</th>
+                        <td>@Html.Sitecore().Field("Address")</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

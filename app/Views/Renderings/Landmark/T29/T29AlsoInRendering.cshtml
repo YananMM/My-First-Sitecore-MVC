@@ -9,14 +9,13 @@
 
     var artPieces = helper.GetArtByBuilding(floor.Parent.ID.ToString());
 }
-
 <div class="gd-showcase" data-position="0">
     <a href="javascript:;" class="gd-showcase-control gd-showcase-left">
         <span class="icomoon-thin-arrow-L"></span>
     </a>
     <div class="container">
 
-        <h2>@Html.Sitecore().Field("Glossary Value", ItemGuids.AlsoInItem) @floor.Parent.Fields["Building Title"]</h2>
+        <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.AlsoInItem) @floor.Parent.Fields["Building Title"]</h3>
         <div class="gd-showcase-content">
             <ul class="gd-showcase-items clearfix">
 
@@ -27,12 +26,15 @@
                         <li>
                             <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
                                 @Html.Sitecore().Field("Art Image", item)
-                                <h3>@Html.Sitecore().Field("Art Title", item)</h3>
+                                <h4>@Html.Sitecore().Field("Art Title", item)</h4>
                                 @{
-                                    GroupedDroplinkField artistField = item.Fields["Artist"];
-                                    var artist = artistField.TargetItem.Fields["Artist Name"].ToString();
+                        GroupedDroplinkField artistField = item.Fields["Artist"];
+                        if (artistField.TargetItem != null)
+                        {
+                            var artist = artistField.TargetItem;
+                            <p>@artist.Fields["Artist Name"].ToString()</p>
+                        }
                                 }
-                                <p>@artist</p>
                             </a>
                         </li>
                     }

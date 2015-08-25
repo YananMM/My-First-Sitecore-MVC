@@ -17,251 +17,220 @@
         }
     </style>
     <style>
-        #directions-panel {
-            height: 100%;
-            float: right;
-            width: 30%;
-            overflow: auto;
-        }
+      #directions-panel {
+        height: 100%;
+        float: right;
+        width: 30%;
+        overflow: auto;
+      }
 
+      #map-canvas {
+        margin-right: 30%;
+      }
+
+      #control {
+        padding: 5px;
+        font-size: 14px;
+        font-family: Arial;
+        display: none;
+      }
+
+      @media print {
         #map-canvas {
-            margin-right: 30%;
+          height: 500px;
+          margin: 0;
         }
 
-        #control {
-            padding: 5px;
-            font-size: 14px;
-            font-family: Arial;
-            display: none;
+        #directions-panel {
+          float: none;
+          width: auto;
         }
+      }
 
-        @@media print {
-            #map-canvas {
-                height: 500px;
-                margin: 0;
-            }
-
-            #directions-panel {
-                float: none;
-                width: auto;
-            }
-        }
-
-        .adp-summary {
-            padding-left: 30px;
-        }
-
-            .adp-summary + div > table {
-                margin-left: 30px;
-            }
-
-        .adp-directions .adp-step,
-        .adp-directions .adp-substep {
-            border-top-color: #DEDEDE !important;
-            padding: 1em 0.5em !important;
-        }
-
-        .adp-placemark tr > td {
-            padding: 5px 15px;
-        }
+      .adp-summary {
+        padding-left: 30px;
+      }
+      .adp-summary+div>table {
+        margin-left: 30px;
+      }
+      .adp-directions .adp-step,
+      .adp-directions .adp-substep {
+        border-top-color: #DEDEDE!important;
+        padding: 1em 0.5em!important;
+      }
+      .adp-placemark tr>td {
+        padding: 5px 15px;
+      }
     </style>
     <style>
-        .hidden {
-            display: none;
+      .hidden {
+        display: none;
+      }
+      #directions-panel.gd-map-controls {
+        background-color: #F6F6F6;
+        color: #222222;
+        padding: 0;
+      }
+      #control.gd-map-heading {
+        padding: 25px;
+      }
+      .gd-map-dropdown {
+        position: relative;
+        z-index: 10;
+      }
+      .gd-map-dropdown>button,
+      .gd-map-dropdown a {
+        color: #222222;
+        display: block;
+        font-size: 12px;
+        font-family: 'Arial', sans-serif;
+        padding: 1em 2em;
+        text-decoration: none;
+      }
+      .gd-map-dropdown>button {
+        background-color: transparent;
+        border: 1px solid #CCCCCC;
+        color: #999999;
+        line-height: 1;
+        text-align: left;
+        width: 100%;
+      }
+      .gd-map-dropdown>button:hover,
+      .gd-map-dropdown>button:focus,
+      .gd-map-dropdown>button:active {
+        color: #222222;
+        cursor: pointer;
+      }
+      .gd-map-dropdown a {
+        line-height: 1.5;
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+      }
+      .gd-map-dropdown a:hover,
+      .gd-map-dropdown a:focus,
+      .gd-map-dropdown a:active {
+        background-color: #F5F5F5;
+      }
+      .gd-map-dropdown>.gd-map-options {
+        background-color: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 3em;
+      }
+      .gd-map-connector {
+        font-size: 12px;
+        line-height: 1;
+        padding: 1em 0;
+      }
+      .gd-map-input-group {
+        overflow: hidden;
+        position: relative;
+      }
+      .gd-map-input-group>* {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .gd-map-input-group>input,
+      .gd-map-input-group>button {
+        border: 1px solid #CCCCCC;
+        height: 36px;
+        line-height: 36px;
+        padding: 0;
+      }
+      .gd-map-input-group>input {
+        background-color: transparent;
+        display: block;
+        font-size: 12px;
+        float: left;
+        padding: 0 2em;
+        width: 65%;
+      }
+      .gd-map-input-group>input:focus,
+      .gd-map-input-group>input:active {
+        background-color: #FFFFFF;
+        color: #222222;
+        font-size: 14px;
+      }
+      .gd-map-input-group>button {
+        border-color: #222222;
+        background-color: transparent;
+        color: #222222;
+        display: block;
+        float: right;
+        text-align: center;
+        width: 34%;
+        -webkit-transition: all ease-out 0.3s;
+        -o-transition: all ease-out 0.3s;
+        transition: all ease-out 0.3s;
+      }
+      .gd-map-input-group>button:hover,
+      .gd-map-input-group>button:focus,
+      .gd-map-input-group>button:active {
+        background-color: #222222;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+      .gd-map-travelmode {
+        color: #666666;
+        font-size: 24px;
+        line-height: 1;
+        margin-top: 1em;
+      }
+      .gd-map-travelmode button {
+        border: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background-color: transparent;
+        margin: 0 10px;
+        padding: 0;
+      }
+      .gd-map-travelmode button:first-child {
+        margin-left: 0;
+      }
+      .gd-map-travelmode button:hover {
+        -webkit-text-shadow: 0 1px 3px;
+        text-shadow: 0 1px 3px;
+      }
+      .gd-map-travelmode .active {
+        color: #D4A962;
+      }
+
+      @media (max-width: 768px) {
+        #map-canvas {
+          height: 250px;
+          margin: 0;
         }
-
-        #directions-panel.gd-map-controls {
-            background-color: #F6F6F6;
-            color: #222222;
-            padding: 0;
+        #directions-panel {
+          float: none;
+          height: auto;
+          width: 100%;
         }
-
-        #control.gd-map-heading {
-            padding: 25px;
+        #map-canvas-m {
+          border-top: 1px solid #DDDDDD;
+          height: 350px;
+          margin: 25px -25px 0 -25px;
         }
-
-        .gd-map-dropdown {
-            position: relative;
-            z-index: 10;
-        }
-
-            .gd-map-dropdown > button,
-            .gd-map-dropdown a {
-                color: #222222;
-                display: block;
-                font-size: 12px;
-                font-family: 'Arial', sans-serif;
-                padding: 1em 2em;
-                text-decoration: none;
-            }
-
-            .gd-map-dropdown > button {
-                background-color: transparent;
-                border: 1px solid #CCCCCC;
-                color: #999999;
-                line-height: 1;
-                text-align: left;
-                width: 100%;
-            }
-
-                .gd-map-dropdown > button:hover,
-                .gd-map-dropdown > button:focus,
-                .gd-map-dropdown > button:active {
-                    color: #222222;
-                    cursor: pointer;
-                }
-
-            .gd-map-dropdown a {
-                line-height: 1.5;
-                -webkit-transition: none;
-                -o-transition: none;
-                transition: none;
-            }
-
-                .gd-map-dropdown a:hover,
-                .gd-map-dropdown a:focus,
-                .gd-map-dropdown a:active {
-                    background-color: #F5F5F5;
-                }
-
-            .gd-map-dropdown > .gd-map-options {
-                background-color: #FFFFFF;
-                border: 1px solid #CCCCCC;
-                -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
-                box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
-                left: 0;
-                position: absolute;
-                right: 0;
-                top: 3em;
-            }
-
-        .gd-map-connector {
-            font-size: 12px;
-            line-height: 1;
-            padding: 1em 0;
-        }
-
-        .gd-map-input-group {
-            overflow: hidden;
-            position: relative;
-        }
-
-            .gd-map-input-group > * {
-                -webkit-box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                box-sizing: border-box;
-            }
-
-            .gd-map-input-group > input,
-            .gd-map-input-group > button {
-                border: 1px solid #CCCCCC;
-                height: 36px;
-                line-height: 36px;
-                padding: 0;
-            }
-
-            .gd-map-input-group > input {
-                background-color: transparent;
-                display: block;
-                font-size: 12px;
-                float: left;
-                padding: 0 2em;
-                width: 65%;
-            }
-
-                .gd-map-input-group > input:focus,
-                .gd-map-input-group > input:active {
-                    background-color: #FFFFFF;
-                    color: #222222;
-                    font-size: 14px;
-                }
-
-            .gd-map-input-group > button {
-                border-color: #222222;
-                background-color: transparent;
-                color: #222222;
-                display: block;
-                float: right;
-                text-align: center;
-                width: 34%;
-                -webkit-transition: all ease-out 0.3s;
-                -o-transition: all ease-out 0.3s;
-                transition: all ease-out 0.3s;
-            }
-
-                .gd-map-input-group > button:hover,
-                .gd-map-input-group > button:focus,
-                .gd-map-input-group > button:active {
-                    background-color: #222222;
-                    color: #FFFFFF;
-                    cursor: pointer;
-                }
-
         .gd-map-travelmode {
-            color: #666666;
-            font-size: 24px;
-            line-height: 1;
-            margin-top: 1em;
+          text-align: center;
         }
-
-            .gd-map-travelmode button {
-                border: none;
-                -webkit-box-shadow: none;
-                box-shadow: none;
-                background-color: transparent;
-                margin: 0 10px;
-                padding: 0;
-            }
-
-                .gd-map-travelmode button:first-child {
-                    margin-left: 0;
-                }
-
-                .gd-map-travelmode button:hover {
-                    -webkit-text-shadow: 0 1px 3px;
-                    text-shadow: 0 1px 3px;
-                }
-
-            .gd-map-travelmode .active {
-                color: #D4A962;
-            }
-
-        @@media (max-width: 768px) {
-            #map-canvas {
-                height: 250px;
-                margin: 0;
-            }
-
-            #directions-panel {
-                float: none;
-                height: auto;
-                width: 100%;
-            }
-
-            #map-canvas-m {
-                border-top: 1px solid #DDDDDD;
-                height: 350px;
-                margin: 25px -25px 0 -25px;
-            }
-
-            .gd-map-travelmode {
-                text-align: center;
-            }
-
-            .adp {
-                background-color: #FFFFFF;
-            }
-
-            .gd-map-input-group > input,
-            .gd-map-dropdown > button {
-                border-color: #222222;
-                caption-side: #333333;
-            }
-
-            #control.gd-map-heading {
-                padding: 25px 20px;
-            }
+        .adp {
+          background-color: #FFFFFF;
         }
+        .gd-map-input-group>input,
+        .gd-map-dropdown>button {
+          border-color: #222222;
+          caption-side: #333333
+        }
+        #control.gd-map-heading {
+          padding: 25px 20px;
+        }
+      }
     </style>
     <script src="/files/landmark/js/lib/jquery-1.11.2.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
@@ -363,4 +332,3 @@
     </script>
 </body>
 </html>
-

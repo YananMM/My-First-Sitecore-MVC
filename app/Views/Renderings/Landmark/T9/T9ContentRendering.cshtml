@@ -1,0 +1,43 @@
+﻿@using System.Diagnostics.Eventing.Reader
+@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.ContentSearch.Utilities
+@using Sitecore.Data.Items
+@model RenderingModel
+
+<div class="container">
+    <div class="gd-pagetitle">
+        <div class="gd-pagetitle-heading">
+            <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionPage))" class="gd-link-audio">
+                @Html.Sitecore().Field("Link Text") <span class="icomoon-chevron-small-right"></span>
+            </a>
+            <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
+        </div>
+        <div class="gd-pagetitle-info">@Html.Sitecore().Field("Head Description")</div>
+    </div>
+</div>
+<div class="container">
+    <div class="gd-contact">
+        <div class="gd-contact-area">
+            <div class="gd-contact-heading">
+                <span class="icomoon-thin-arrow-R arrow-rotate-90"></span>
+                <h3><span class="icomoon-phone"></span>@Html.Sitecore().Field("Hotline Title")</h3>
+            </div>
+            <div class="gd-contact-body">
+                <p>
+                    @Html.Sitecore().Field("Phone Description") <a href="#">@Html.Sitecore().Field("Phone Number")</a>. <br>
+                    @Html.Sitecore().Field("Service Description") <a href="/t24.html">@Html.Sitecore().Field("Service Link Text")</a>
+                </p>
+            </div>
+        </div>
+        @Html.Sitecore().Placeholder("t9-form")
+        @Html.Sitecore().Placeholder("write-to")
+    </div>
+    @Html.Sitecore().Placeholder("update-data")
+    <div class="gd-contact-share">
+        <h4><span class="icomoon-share"></span>@Html.Sitecore().Field("Share Title")</h4>
+        <a href="#" class="gd-contact-share-icon"><span class="icomoon-facebook"></span></a>
+        <a href="#" class="gd-contact-share-icon"><span class="icomoon-instagram"></span></a>
+        <a href="#" class="gd-contact-share-icon"><span class="icomoon-sina-weibo"></span></a>
+    </div>
+</div>

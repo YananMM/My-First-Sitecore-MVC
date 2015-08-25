@@ -8,19 +8,18 @@
     var artist = helper.GetArtistByArt(Sitecore.Context.Item);
 }
 
-<div class="gd-artplace-profile row">
+
+<a href="@Sitecore.Links.LinkManager.GetItemUrl(artist)" class="gd-artplace-profile">
     @*<img src="../files/landmark/images/artpiece/artpiece-person-01.png" alt="artpiece picture">*@
-    <div class="col-sm-3">
-        @Html.Sitecore().Field("Artist Photo", artist)
-    </div>
-    <div class="col-sm-9">
-        <h4>@Html.Sitecore().Field("Artist Name", artist)</h4>
+    @Html.Sitecore().Field("Artist Photo", artist)
+    <div class="gd-artplace-profile-title">
+        <h5>@Html.Sitecore().Field("Artist Name", artist)</h5>
         <p>@Html.Sitecore().Field("Artist Birthday Label", artist) @Html.Sitecore().Field("Artist Birthday Text", artist)</p>
     </div>
-</div>
+</a>
 
 <div class="gd-artplace-profile-info row">
-    <div class="col-sm-12">
+    <div class="col-sm-12 gd-longarticle">
         <p>
             @Html.Sitecore().Field("Artist Description", artist)
         </p>

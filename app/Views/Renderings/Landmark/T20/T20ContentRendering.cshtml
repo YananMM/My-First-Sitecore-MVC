@@ -13,7 +13,7 @@
                 <div class="carousel-caption-inner">
                     <div class="gd-carousel-detail">
                         <div class="gd-mainimage-brief">
-                            <h1>@Html.Sitecore().Field("Cover Title", Sitecore.Context.Item)</h1>
+                            <h2>@Html.Sitecore().Field("Cover Title", Sitecore.Context.Item)</h2>
                             @Html.Sitecore().Field("Cover Content", Sitecore.Context.Item)
                             <form action="@Url.Action("ButtonRedirect", "Home")">
                                 @{
@@ -38,7 +38,6 @@
         </div>
     </div>
 </div>
-
 <div class="container" id="gd-audio-guide">
     <div class="row">
         <div class="col-sm-12  col-md-8 col-md-offset-2">
@@ -61,7 +60,9 @@
             {
                 <div class="col-sm-4">
                     <div class="gd-picture-des">
-                        @Html.Sitecore().Field("Image", guide)
+                        <div class="gd-pd-picture">
+                            @Html.Sitecore().Field("Image", guide)
+                        </div>
                         <div class="gd-pd-text">
                             <span>@guide.DisplayName</span>
                             @Html.Sitecore().Field("Text", guide)

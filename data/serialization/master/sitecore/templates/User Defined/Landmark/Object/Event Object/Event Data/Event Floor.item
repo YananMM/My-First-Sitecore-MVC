@@ -17,6 +17,13 @@ content-length: 8
 
 Droptree
 ----field----
+field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
+name: Source
+key: source
+content-length: 43
+
+/sitecore/content/Global/Landmark/Buildings
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -26,7 +33,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 9e97820f-1f63-4234-8811-600600592793
+revision: 2a5c0cef-a041-472b-adb0-9d0d33d00a34
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9e97820f-1f63-4234-8811-600600592793
+2a5c0cef-a041-472b-adb0-9d0d33d00a34
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150824T080905Z
+20150825T083505Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

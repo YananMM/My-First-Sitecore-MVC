@@ -1,0 +1,95 @@
+﻿@using System.Diagnostics.Eventing.Reader
+@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.ContentSearch.Utilities
+@using Sitecore.Data.Items
+@model RenderingModel
+
+<div class="gd-contact-area">
+    <div class="gd-contact-heading">
+        <span class="icomoon-thin-arrow-R arrow-rotate-90 "></span>
+        <h3><span class="icomoon-location"></span>CONTACT FORM BELOW</h3>
+    </div>
+    <div class="gd-contact-body">
+        <p>You can contact us by filling out following email form:</p>
+        <div class="row">
+            <div class="col-sm-9">
+                <form class="gd-contact-form" action="">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="title">TITLE *</label>
+                                <select class="form-control" id="title">
+                                    <option>PLEASE SELECT</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="firstname">FIRST NAME *</label>
+                                <input type="text" class="form-control" id="firstname">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="lastname">LAST NAME *</label>
+                                <input type="text" class="form-control" id="lastname">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="telephone">TELEPHONE</label>
+                                <input type="text" class="form-control" id="telephone">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="email">EMAIL *</label>
+                                <input type="text" class="form-control" id="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="enquiirytype">ENQUIRY TYPE *</label>
+                                <select class="form-control" id="enquiirytype">
+                                    <option>PLEASE SELECT</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label for="messsage">MESSSAGE*</label>
+                                <textarea class="form-control" rows="3" id="messsage"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row gd-contact-code  form-inline">
+                        <div class="col-sm-11">
+                            <p>PLEASE ENTER THE CODE FOR VERRIFICATION *</p>
+                            <img src="http://dummyimage.com/275x65" />
+                            <input type="text" id="code" class="form-control">
+                            <a href="#">Generate another code</a>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-black">SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

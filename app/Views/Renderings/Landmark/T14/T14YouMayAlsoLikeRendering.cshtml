@@ -15,7 +15,7 @@
             brandsYouMayAlsoLike = brandsYouMayAlsoLike.GetRange(0, 6);
         }
     }
-    
+
     int i = 1;
 
     foreach (var item in brandsYouMayAlsoLike)
@@ -23,7 +23,7 @@
 
         <div @if (i > 4) { <text>
              class="col-sm-2 col-xs-3 hidden-xs"
-             </text>   } class="col-sm-2 col-xs-3">
+             </text>     } class="col-sm-2 col-xs-3">
             <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item)" alt="@Html.Sitecore().Field("Brand Title", item)"></a>
         </div>
 i++;
