@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+id: {84B6090C-4878-4F0C-AA61-65CDED5284DE}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Page Base Object/Page Data/Is Shown In Navigation
-parent: {5D4B5095-02C6-45BA-8C86-F5D2B851F89A}
-name: Is Shown In Navigation
+path: /sitecore/templates/User Defined/Landmark/Page/T35 Page/Map Data/Map Data Page 2
+parent: {3161C6F8-C794-4A9F-80DF-7C5F32C4AD9F}
+name: Map Data Page 2
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,9 +13,9 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 8
+content-length: 16
 
-Checkbox
+Single-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -26,7 +26,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 889987d3-cc53-41fc-879b-73c6ea97d4d2
+revision: 96c74129-d43b-4413-8e2c-4256d39e9564
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150721T065108Z
+20150821T081359Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-889987d3-cc53-41fc-879b-73c6ea97d4d2
+96c74129-d43b-4413-8e2c-4256d39e9564
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150821T090901:635757449413547639Z
+20150824T093616:635760057766869147Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

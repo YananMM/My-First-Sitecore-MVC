@@ -1,0 +1,300 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Landmark Map Surroundings</title>
+    <link rel="stylesheet" type="text/css" href="/files/landmark/css/style.css" />
+    <style>
+        html, body, #map-canvas {
+            color: #222222;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+    <style>
+        #directions-panel {
+            height: 100%;
+            float: right;
+            width: 30%;
+            overflow: auto;
+        }
+
+        #map-canvas {
+            margin-right: 30%;
+        }
+
+        #control {
+            padding: 5px;
+            font-size: 14px;
+            font-family: Arial;
+            display: none;
+        }
+
+        @@media print {
+            #map-canvas {
+                height: 500px;
+                margin: 0;
+            }
+
+            #directions-panel {
+                float: none;
+                width: auto;
+            }
+        }
+    </style>
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        #directions-panel.gd-map-controls {
+            background-color: #F6F6F6;
+            color: #222222;
+            padding: 0;
+        }
+
+        #directions-panel .gd-list-guide {
+            background-color: transparent;
+            padding: 20px 0;
+        }
+
+            #directions-panel .gd-list-guide .list-group-item {
+                background-color: transparent;
+                line-height: 40px;
+                padding: 10px 35px 10px 95px;
+                position: relative;
+                -webkit-transition: background-color 0.2s ease-out;
+                -o-transition: background-color 0.2s ease-out;
+                transition: background-color 0.2s ease-out;
+            }
+
+                #directions-panel .gd-list-guide .list-group-item:hover,
+                #directions-panel .gd-list-guide .list-group-item:focus,
+                #directions-panel .gd-list-guide .list-group-item:active {
+                    background-color: #FFFFFF;
+                    cursor: pointer;
+                }
+
+        #gd-surroundings > li > .badge {
+            background: #666666 url(/files/landmark/images/map/map-icons.png) 0 0 no-repeat;
+            border-radius: 20px;
+            height: 40px;
+            left: 40px;
+            position: absolute;
+            top: 10px;
+            width: 40px;
+        }
+
+        #gd-surroundings > li.active > .badge {
+            background-color: #D4A962;
+        }
+
+        #gd-surroundings > li > #map-marker-01 {
+            background-position: 0 0;
+        }
+
+        #gd-surroundings > li > #map-marker-02 {
+            background-position: 0 -40px;
+        }
+
+        #gd-surroundings > li > #map-marker-03 {
+            background-position: 0 -80px;
+        }
+
+        #gd-surroundings > li > #map-marker-04 {
+            background-position: 0 -120px;
+        }
+
+        #gd-surroundings > li > #map-marker-05 {
+            background-position: 0 -160px;
+        }
+
+        #gd-surroundings > li > #map-marker-06 {
+            background-position: 0 -200px;
+        }
+
+        #gd-surroundings > li > #map-marker-07 {
+            background-position: 0 -240px;
+        }
+
+        #gd-surroundings > li > #map-marker-08 {
+            background-position: 0 -280px;
+        }
+
+        #gd-surroundings > li > #map-marker-09 {
+            background-position: 0 -320px;
+        }
+
+        #gd-surroundings > li > #map-marker-10 {
+            background-position: 0 -360px;
+        }
+
+        #gd-surroundings > li > #map-marker-11 {
+            background-position: 0 -400px;
+        }
+
+        #gd-surroundings > li > #map-marker-12 {
+            background-position: 0 -440px;
+        }
+
+        #gd-surroundings > li > #map-marker-13 {
+            background-position: 0 -480px;
+        }
+
+        @@media (max-width: 768px) {
+            #map-canvas {
+                margin-right: 0;
+                height: 405px;
+            }
+
+            #directions-panel.gd-map-controls {
+                border-bottom: 1px solid #DDDDDD;
+                float: none;
+                height: 180px;
+                width: 100%;
+            }
+
+                #directions-panel.gd-map-controls .gd-list-guide {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                    #directions-panel.gd-map-controls .gd-list-guide > .list-group-item {
+                        display: none;
+                        padding: 10px 0 10px 75px;
+                    }
+
+                        #directions-panel.gd-map-controls .gd-list-guide > .list-group-item.active {
+                            display: block;
+                        }
+
+                        #directions-panel.gd-map-controls .gd-list-guide > .list-group-item > .badge {
+                            left: 20px;
+                        }
+
+                #directions-panel.gd-map-controls .gd-controls-m {
+                    margin: 40px 20px 20px 20px;
+                }
+        }
+    </style>
+    <script src="/files/landmark/js/lib/jquery-1.11.2.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places,visualization"></script>
+    <script>
+        var map;
+        var infoWindow;
+        var service;
+        var userKeyword = 'drop off points';
+        var userMarkers = [];
+        var userMkrIcon = 'map-marker-01.png';
+
+        function initialize() {
+            map = new google.maps.Map(document.getElementById('map-canvas'), {
+                center: new google.maps.LatLng(22.280545, 114.157903),
+                zoom: 17
+                // styles: [
+                //   {
+                //     stylers: [
+                //       { visibility: 'simplified' }
+                //     ]
+                //   },
+                //   {
+                //     elementType: 'labels',
+                //     stylers: [
+                //       { visibility: 'off' }
+                //     ]
+                //   }
+                // ]
+            });
+
+            infoWindow = new google.maps.InfoWindow();
+            service = new google.maps.places.PlacesService(map);
+
+            google.maps.event.addListenerOnce(map, 'bounds_changed', performSearch);
+        }
+
+        function performSearch() {
+            var request = {
+                bounds: map.getBounds(),
+                keyword: userKeyword
+            };
+            service.radarSearch(request, callback);
+        }
+
+        function callback(results, status) {
+            if (status != google.maps.places.PlacesServiceStatus.OK) {
+                alert(status);
+                return;
+            }
+            for (var i = 0, result; result = results[i]; i++) {
+                createMarker(result);
+            }
+        }
+
+        function createMarker(place) {
+            var marker = new google.maps.Marker({
+                map: map,
+                position: place.geometry.location,
+                icon: {
+                    url: '@Url.Content("~/files/landmark/images/map/")' + userMkrIcon
+                    // Star
+                    // path: 'M 0,-24 6,-7 24,-7 10,4 15,21 0,11 -15,21 -10,4 -24,-7 -6,-7 z',
+                    // fillColor: '#ffff00',
+                    // fillOpacity: 1,
+                    // scale: 1/4,
+                    // strokeColor: '#bd8d2c',
+                    // strokeWeight: 1
+                }
+            });
+
+            userMarkers[userMarkers.length] = marker;
+
+            google.maps.event.addListener(marker, 'click', function () {
+                service.getDetails(place, function (result, status) {
+                    if (status != google.maps.places.PlacesServiceStatus.OK) {
+                        alert(status);
+                        return;
+                    }
+                    infoWindow.setContent(result.name);
+                    infoWindow.open(map, marker);
+                });
+            });
+        }
+
+        function clearMarkers() {
+            for (var i = 0; i < userMarkers.length; i++) {
+                userMarkers[i].setMap(null);
+            }
+            userMarkers.length = 0;
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+    @Html.Sitecore().Placeholder("t35-surrounding")
+    <div id="map-canvas"></div>
+    <script>
+        $(document).ready(function () {
+            $('#gd-surroundings>li').click(function () {
+                $(this).addClass('active').siblings().removeClass('active');
+                userKeyword = $(this).data('keyword');
+                userMkrIcon = $(this).find('.badge').attr('id') + '.png';
+                clearMarkers();
+                performSearch();
+            });
+
+            $('.gd-controls-m select').change(function () {
+                var gdActiveIndex = $(this).val();
+                $('#gd-surroundings>.list-group-item').eq(gdActiveIndex).click();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -29,6 +29,8 @@ namespace Landmark.Classes
         //public static readonly String T14TagsRenderingViewGuid = "{303EA462-99C6-447B-B3AA-C4F4F0441549}";
         public static readonly String T14AlsoOnFloorRenderingViewGuid = "{E4C9F730-0F32-481A-A631-814E9DD01CF0}";
         public static readonly String T14YouMayAlsoLikeRenderingViewGuid = "{3D3C605D-3A95-4D71-8206-C403D66EB91A}";
+        public static readonly String T35GetDirectionPage = "{AE130080-B8B6-4D9E-B863-C88DC329B657}";
+        public static readonly String T35SurroundingPage = "{54824316-017A-4B94-AD8E-F636473B510A}";
 
         //item id
         //public static readonly String PanelsFolderItemGuid = "{3BB40D54-8F7F-449B-B9DB-432C65EB4224}";
@@ -63,6 +65,7 @@ namespace Landmark.Classes
         public static readonly String T34Branch = "{8B38BE26-F07E-42C3-9C4E-6B7D1770BAB1}";
         public static readonly String HotelsPage = "{8A01BBF3-963D-4011-AC05-5DB0A2B4BA73}";
         public static readonly String T34SpecialOfferObject = "{D3130DE9-ABC4-4D10-92C8-75A8E9910245}";
+        public static readonly String T35StartingLocationObject = "{3E8C53BC-1805-434C-BD94-65316F9AFC71}";
 
         //item 
         public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}");

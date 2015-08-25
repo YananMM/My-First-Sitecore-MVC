@@ -1,0 +1,38 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@using Landmark.Models
+@model RenderingModel
+@{
+    var locations = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.T35GetDirectionPage, ItemGuids.T35StartingLocationObject);
+    var pageItem = Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionPage);
+}
+
+<div id="directions-panel" class="gd-map-controls">
+    <div id="control" class="gd-map-heading">
+        <div class="gd-map-dropdown">
+            <button type="button" data-value="">@Html.Sitecore().Field("StartIng Location Label", pageItem)</button>
+            <div class="gd-map-options hidden">
+                @foreach (var item in locations)
+                {
+                    <a href="javascript:;" data-value="@Html.Sitecore().Field("Starting Location", item), HK">@Html.Sitecore().Field("Starting Location", item)</a>
+                }
+            </div>
+        </div>
+        <div class="gd-map-connector">
+            - @Html.Sitecore().Field("OR Text", pageItem) -
+        </div>
+        <div class="gd-map-input-group">
+            <input type="text" name="" id="" placeholder="@Html.Sitecore().Field("Input Text", pageItem)">
+            <button type="button">@Html.Sitecore().Field("Button Text", pageItem)</button>
+        </div>
+        <div id="map-canvas-m" class="visible-xs"></div>
+        <div class="gd-map-travelmode">
+            <button type="button" data-travelmode="DRIVING" class="icomoon-aiga_taxi active"></button>
+            <button type="button" data-travelmode="TRANSIT" class="icomoon-uniE068"></button>
+            <button type="button" data-travelmode="WALKING" class="icomoon-directions-walk"></button>
+            <button type="button" class="icomoon-printer"></button>
+        </div>
+    </div>
+</div>

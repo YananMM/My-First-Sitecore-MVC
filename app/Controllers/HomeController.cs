@@ -47,6 +47,5 @@ namespace Landmark.Controllers
             Item target = Sitecore.Context.Database.GetItem(targetId);
             return Redirect(Sitecore.Links.LinkManager.GetItemUrl(target));
         }
-
     }
 }

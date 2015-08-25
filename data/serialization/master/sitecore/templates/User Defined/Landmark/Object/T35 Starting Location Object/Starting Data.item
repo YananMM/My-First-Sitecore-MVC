@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {5D4B5095-02C6-45BA-8C86-F5D2B851F89A}
+id: {E884762D-F462-4129-82CB-7858AD91BA59}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Page Base Object/Page Data
-parent: {2EE1034D-FA6F-4894-B5FD-AC31F548CE33}
-name: Page Data
+path: /sitecore/templates/User Defined/Landmark/Object/T35 Starting Location Object/Starting Data
+parent: {3E8C53BC-1805-434C-BD94-65316F9AFC71}
+name: Starting Data
 master: {00000000-0000-0000-0000-000000000000}
 template: {E269FBB5-3750-427A-9149-7AA950B49301}
 templatekey: Template section
@@ -12,7 +12,7 @@ templatekey: Template section
 ----version----
 language: en
 version: 1
-revision: ee316e72-c208-4e8e-98eb-59565dbfb155
+revision: 03977f7f-8d08-495b-99d9-1e6a2bfd60d8
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -20,7 +20,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150721T065107Z
+20150824T081703Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ee316e72-c208-4e8e-98eb-59565dbfb155
+03977f7f-8d08-495b-99d9-1e6a2bfd60d8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150821T090901:635757449411047496Z
+20150824T081704:635760010242660917Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

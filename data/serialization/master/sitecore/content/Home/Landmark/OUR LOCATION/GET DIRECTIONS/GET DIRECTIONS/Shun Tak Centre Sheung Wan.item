@@ -1,40 +1,26 @@
 ----item----
 version: 1
-id: {FD8517CE-5E31-4C65-8E5A-A15B3717795C}
+id: {FACD0F27-1189-4916-A1E6-55AFE19BE536}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Page Base Object/__Standard Values
-parent: {2EE1034D-FA6F-4894-B5FD-AC31F548CE33}
-name: __Standard Values
+path: /sitecore/content/Home/Landmark/OUR LOCATION/GET DIRECTIONS/GET DIRECTIONS/Shun Tak Centre Sheung Wan
+parent: {AE130080-B8B6-4D9E-B863-C88DC329B657}
+name: Shun Tak Centre Sheung Wan
 master: {00000000-0000-0000-0000-000000000000}
-template: {2EE1034D-FA6F-4894-B5FD-AC31F548CE33}
-templatekey: Page Base Object
+template: {3E8C53BC-1805-434C-BD94-65316F9AFC71}
+templatekey: T35 Starting Location Object
 
 ----version----
 language: en
 version: 1
-revision: 47575410-9ef5-441b-98b0-41c3c6878ee4
+revision: e38c7bc5-a429-487d-bcb5-b811225dccd2
 
 ----field----
-field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
-name: Page Title
-key: page title
-content-length: 5
+field: {38AC07B7-0A25-41CB-B0DE-51431856ADF2}
+name: Starting Location
+key: starting location
+content-length: 27
 
-$name
-----field----
-field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
-name: Is Shown In Navigation
-key: is shown in navigation
-content-length: 1
-
-1
-----field----
-field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
-name: Is Shown In Breadcrumb
-key: is shown in breadcrumb
-content-length: 1
-
-1
+Shun Tak Centre, Sheung Wan
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -48,7 +34,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150721T065138Z
+20150824T092910Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -62,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-47575410-9ef5-441b-98b0-41c3c6878ee4
+e38c7bc5-a429-487d-bcb5-b811225dccd2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150821T090759:635757448798692471Z
+20150824T093344:635760056242051932Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

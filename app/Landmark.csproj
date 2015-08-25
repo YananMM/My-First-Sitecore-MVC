@@ -255,8 +255,6 @@
     <Content Include="files\landmark\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="files\landmark\fonts\icomoon.svg" />
     <Content Include="files\landmark\iframes\t33-iframe.html" />
-    <Content Include="files\landmark\iframes\t35-iframe.html" />
-    <Content Include="files\landmark\iframes\t35-iframe2.html" />
     <Content Include="files\landmark\images\black-50.png" />
     <Content Include="files\landmark\images\black-80.png" />
     <Content Include="files\landmark\images\blank.png" />
@@ -569,6 +567,10 @@
     <Content Include="Views\Renderings\Landmark\T34\T34SpecialOffersRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T34\T34AboutHotelRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T33\T334BuildingsRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T35\T35SurroundingRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T35\T35GetDirectionRendering.cshtml" />
+    <Content Include="Views\Layouts\Landmark\T35GetDirectionLayout.cshtml" />
+    <Content Include="Views\Layouts\Landmark\T35SurroundingLayout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
