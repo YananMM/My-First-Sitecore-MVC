@@ -149,7 +149,7 @@
    }  
 }
 .t22{
-  h4{
+  h5{
   color: @gd-title-color;
   font-family: @font-family-serif;
   font-size: 15px;
@@ -159,7 +159,7 @@
                  font-size: 16px;
                 }
   }
-  .gd-pagetitle .gd-pagetitle-heading h1{
+  .gd-pagetitle .gd-pagetitle-heading h2{
     margin-bottom: 56px;
   }
   .art-gallery{
@@ -190,7 +190,7 @@
           font-size: 20px;
           vertical-align:middle;
         }
-      h3{
+      h4{
         margin: 5px 0 15px;
         span{
           display: block;
@@ -316,7 +316,7 @@
 }
 @media (min-width:@screen-sm){
   .t22{
-  .gd-pagetitle .gd-pagetitle-heading h1{
+  .gd-pagetitle .gd-pagetitle-heading h2{
     margin-bottom: 30px;
   }
   .art-gallery{
@@ -330,7 +330,7 @@
       text-align: left;
       width: 96%;
       .art-g-box-header{
-      h3{
+      h4{
         margin: 25px 0 10px;
         span{
           display: inline;
@@ -344,7 +344,7 @@
   }
  }
  .t22-svg {
-   h3 {
+   h4 {
      margin-bottom: 10px;
    }
  }
@@ -383,7 +383,7 @@
   }
 }
 .t34{
-  h2{
+  h3{
     color: @gd-title-color;
      display: block;
       font-family: @font-family-serif;
@@ -393,7 +393,7 @@
     margin: 40px 0 20px;
     padding: 0 10px;
     text-align: left;
-    h2{
+    h3{
       margin-bottom: 0;
     }
     
@@ -420,7 +420,7 @@
         }
       }
     }
-    h3{
+    h4{
     color: @gd-text-color;
       margin:0 0 10px;
     }
@@ -435,7 +435,7 @@
     padding: 0;
     margin: 80px 0 50px;
     text-align: center;
-    h2{
+    h3{
       margin-bottom: 50px;
     }
     .col-sm-4{
@@ -450,7 +450,7 @@
       padding:0;
       margin: 0 auto;
     }
-    h3{
+    h4{
       margin:0 0 19px;
     }
     p{
@@ -461,7 +461,7 @@
       }
     }
 .t29{
-  h4{
+  h5{
     color: @gd-title-color;
     margin-top:15px;
     margin-bottom:  20px;
@@ -469,7 +469,7 @@
      display: block;
       font-family: @font-family-serif;
       }
-  .gd-pagetitle .gd-pagetitle-heading h1{
+  .gd-pagetitle .gd-pagetitle-heading h2{
     margin-bottom: 15px;
   }
   .gd-artplace{
@@ -484,7 +484,7 @@
       margin-top: 30px;
       max-width: 100%;
     }
-      h1{
+      h2{
        margin-top: 0;
         line-height: 1.5;
       }
@@ -583,7 +583,7 @@
       }
   }
   }
-  h4{
+  h5{
     margin-top:35px;
       }
   .t29 .gd-longarticle p {
@@ -611,7 +611,7 @@
       }
     .gd-mainimage-brief{
       padding: 0 10px;
-      h2{
+      h3{
       margin-bottom: 25px; 
         &:after {
             margin-left: -15px;
@@ -654,7 +654,7 @@
      .gd-artist-details{
        .gd-mainimage-brief{
          padding: 0 ;
-         h2{
+         h3{
           &:after {
             margin-left:0;
           height: 0;
@@ -733,6 +733,37 @@
         }
       }
     }
+    @media (max-width: 767px) {
+      border-right: none;;
+      margin: 0 -20px;
+      .gd-fp-levelb {
+        border-left: none;
+        height: auto;
+        margin-bottom: 50px;
+        width: 100%;
+        a {
+          margin-bottom: 0;
+          padding-bottom: 1em;
+          padding-top: 1em;
+          > span {
+            display: inline;
+          }
+          .id {
+            float: right;
+            font-size: 14px;
+          }
+        }
+        .gd-mainimage-brief {
+          background-color: #F6F6F6;
+          padding: 30px 20px;
+          .gd-button-white {
+            background-color: transparent;
+            display: inline-block;
+            padding: 5px 15px;
+          }
+        }
+      }
+    }
   }
   .gd-mainimage-brief {
     padding-top: 20px;
@@ -751,6 +782,18 @@
   }
   .mapplic-levels {
     display: none;
+  }
+  .gd-floorplan-m {
+    margin: 30px 0;
+    .gd-controls-m {
+      margin: 20px 0;
+    }
+    .gd-floorplan-img-m {
+      text-align: center;
+      img {
+        width: 50%;
+      }
+    }
   }
 }
 
@@ -815,7 +858,7 @@
         >.carousel-caption {
             .gd-carousel-detail {
               .gd-mainimage-brief {
-                h2 {
+                h3 {
                   font-size: 48px;
                 }}}
         }
@@ -862,7 +905,7 @@
       .body-text;
         border-bottom: solid 1px #dedede;
       .gd-contact-heading{
-        h2{ 
+        h3{ 
           span{
             font-size: 18px;
             margin-right: 15px;
@@ -892,12 +935,12 @@
     margin: 60px 0 10px;
     padding: 30px;
      border: solid 1px #dedede;
-    h3{
+    h4{
       margin: 0 0  20px;
     }
   }
   .gd-contact-share{
-    h3{
+    h4{
       vertical-align: middle;
       line-height: 40px;
      display: inline-block;
@@ -907,7 +950,7 @@
             margin-right: 15px;
            }
     }
-    .primary-text;
+    .primary-text2;
     .gd-contact-share-icon{
       width: 40px;
       height: 40px;
@@ -933,14 +976,25 @@
     font-size: 12px;
     margin: 20px 0 0;
     .gd-contact-code{
-      margin: 20px 0 20px;
+      margin-top: 20px ;
+      margin-bottom: 20px ;
       .clearfix;
+      p{
+        font-size: 14px;
+      }
       img{
         float: left;
         margin-right: 20px;
+        border: solid 1px  #dedede;
+      }
+      input {
+       width: 40%;
       }
       a{
        display: inline-block;
+       text-decoration: underline;
+        color: #222;
+        margin-top: 8px;
       
       }
     }
@@ -951,7 +1005,25 @@
     margin: 50px 0 80px;
   }
 }
-
+.t27{
+  .gd-exclusive{
+    margin: 50px 0 80px;
+      .body-text;
+    h5{
+     font-size: 12px;
+      margin: 0;
+      padding: 0;
+      color: #666;
+    }
+    h3{
+     margin: 20px 00 25px;
+    }
+    p{
+      line-height: 2;
+    }
+  
+  }
+}
 
 
 

@@ -10,12 +10,12 @@
     ShoppingHelper shoppingHelper = new ShoppingHelper();
 }
 
-<h1>@Html.Sitecore().Field("Brand Title")</h1>
+<h2>@Html.Sitecore().Field("Brand Title")</h2>
 <div class="table-responsive gd-mainimage-table">
     <table>
         <tbody>
             <tr>
-                <th> @Html.Sitecore().Field("Glossary Value",ItemGuids.OpenningHoursItem) </th>
+                <th> @Html.Sitecore().Field("Glossary Value", ItemGuids.OpenningHoursItem) </th>
                 <td>
                     @Html.Sitecore().Field("Mon-Fri Opening Hours")<br>
                     @Html.Sitecore().Field("Sat-Sun Opening Hours")
@@ -32,13 +32,13 @@
                         var floor = shoppingHelper.GetShopFloor();
                     }
                     @Html.Sitecore().Field("Area"),@floor["Floor Title"],@floor.Parent["Building Title"]<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image",floor)" data-lighttitle="@Html.Sitecore().Field("Description")">
-                        <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.FloorPlanItem)
-                    </a>
+    <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.FloorPlanItem)
+</a>
                 </td>
             </tr>
         </tbody>
     </table>
 </div>
 <a href="@Html.Sitecore().Field("Official Website Url")" class="gd-link-brief">
-    @Html.Sitecore().Field("Glossary Value",ItemGuids.OfficialWebsiteItem) <span class="icomoon-chevron-small-right"></span>
+    @Html.Sitecore().Field("Glossary Value", ItemGuids.OfficialWebsiteItem) <span class="icomoon-chevron-small-right"></span>
 </a>

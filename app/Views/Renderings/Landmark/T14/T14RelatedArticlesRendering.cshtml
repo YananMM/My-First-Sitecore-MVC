@@ -4,7 +4,7 @@
     var slides = LandmarkHelper.GetItemByTemplate(ItemGuids.ButtomSlideObjectTemplate);
 }
 
-<!-- Wrapper for slides -->
+@*<!-- Wrapper for slides -->
 <div class="carousel-inner" role="listbox">
     @slides.Count
     @{
@@ -23,7 +23,7 @@
                 <div class="carousel-caption">
                     <div class="carousel-caption-inner">
                         <div class="gd-carousel-detail">
-                            <h3>@Html.Sitecore().Field("Slide Title", item)</h3>
+                            <h4>@Html.Sitecore().Field("Slide Title", item)</h4>
                             <p>@Html.Sitecore().Field("Slide Description", item)</p>
                             <form action="@Url.Action("ButtonRedirect", "Home")">
                                 @{
@@ -54,9 +54,12 @@
         <ol class="carousel-indicators gd-carousel-control gd-carousel-no">
             @for (int i = 0; i < slides.Count; i++)
             {
-                <li data-target="#gd-carousel-info" data-slide-to="@i" @{if (i == 0) { <text>
-                    class="active"
-                    </text>  }}>@(i + 1)</li>
+                <li data-target="#gd-carousel-info" data-slide-to="@i" @{if (i == 0)
+                                                                       {
+                                                                           <text>
+                                                                               class="active"
+                                                                           </text>
+                                                                       }}>@(i + 1)</li>
             }
         </ol>
         <span class="gd-carousel-control gd-carousel-no">
@@ -64,6 +67,72 @@
         </span>
         <span class="gd-carousel-control gd-carousel-no">
             @slides.Count
+        </span>
+        <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="next">
+            <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>*@
+
+<!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+    <div class="item active">
+        <div class="carousel-image" data-bgsrc="../files/landmark/images/example1.jpg"></div>
+        <div class="carousel-caption">
+            <div class="carousel-caption-inner">
+                <div class="gd-carousel-detail">
+                    <h4>Lorem ipsum dolor</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias porro soluta omnis praesentium accusantium aperiam eaque adipisci totam asperiores quam.</p>
+                    <button class="gd-button gd-button-white" type="button">DISCOVER MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="carousel-image" data-bgsrc="../files/landmark/images/shopdetail/shopdetail-article-01.jpg"></div>
+        <div class="carousel-caption">
+            <div class="carousel-caption-inner">
+                <div class="gd-carousel-detail">
+                    <h4>Lorem ipsum dolor</h4>
+                    <p>Lorem ipsum dolor sit amet. Necessitatibus dolorum corrupti perferendis, eos iure sit neque tenetur saepe!</p>
+                    <button class="gd-button gd-button-white" type="button">DISCOVER MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="carousel-image" data-bgsrc="../files/landmark/images/example1.jpg"></div>
+        <div class="carousel-caption">
+            <div class="carousel-caption-inner">
+                <div class="gd-carousel-detail">
+                    <h4>Lorem ipsum dolor</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eos saepe temporibus architecto magni neque eaque consequatur nesciunt harum laudantium saepe temporibus architecto magni neque eaque!</p>
+                    <button class="gd-button gd-button-white" type="button">DISCOVER MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Wrapper for controls -->
+<div class="carousel-footer">
+    <div class="gd-carousel-controls clearfix">
+        <!-- Controls -->
+        <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="prev">
+            <span class="icomoon-thin-arrow-L" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <!-- Indicators -->
+        <ol class="carousel-indicators gd-carousel-control gd-carousel-no">
+            <li data-target="#gd-carousel-info" data-slide-to="0" class="active">1</li>
+            <li data-target="#gd-carousel-info" data-slide-to="1">2</li>
+            <li data-target="#gd-carousel-info" data-slide-to="2">3</li>
+        </ol>
+        <span class="gd-carousel-control gd-carousel-no">
+            /
+        </span>
+        <span class="gd-carousel-control gd-carousel-no">
+            3
         </span>
         <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="next">
             <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>

@@ -8,10 +8,11 @@
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
-            <h1>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h1>
+            <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
         </div>
 
         <div id="gd-map-switcher" class="gd-pagetitle-menu hidden-xs">
+
             <a data-iframe="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionPage))" href="javascript:;" class="active">@Html.Sitecore().Field("Map Data Page 1")</a>
             <span class="gd-pagetitle-menu-gap">|</span>
             <a data-iframe="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35SurroundingPage))" href="javascript:;">@Html.Sitecore().Field("Map Data Page 2")</a>

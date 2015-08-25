@@ -16,26 +16,26 @@
 
         <div class="gd-pagetitle-menu hidden-xs">
             @Html.Sitecore().Field("Glossary Value", ItemGuids.ViewByItem) <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))" @if (Html.Sitecore().CurrentItem.ID.ToString() == ItemGuids.ByArtistPage) { <text>
-                                                                              class="active" </text>    }>
+                                                                              class="active" </text>       }>
                 @Html.Sitecore().Field("Glossary Value", ItemGuids.ArtistItem)
             </a>  <span class="gd-pagetitle-menu-gap">|</span>  <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByLocationPage))" @if (Html.Sitecore().CurrentItem.ID.ToString() == ItemGuids.ByLocationPage) { <text>
-                                                                   class="active" </text>    }>@Html.Sitecore().Field("Glossary Value", ItemGuids.LocationItem)</a>
+                                                                   class="active" </text>       }>@Html.Sitecore().Field("Glossary Value", ItemGuids.LocationItem)</a>
                                                             </div>
-        <div class="gd-controls-m visible-xs">
-            <div class="row">
-                <div class="col-xs-3">
-                    <p class="form-control-static">@Html.Sitecore().Field("Glossary Value", ItemGuids.ViewByItem)</p>
-                </div>
-                <div class="col-xs-9">
-                    <select class="form-control">
-                        <option value="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByLocationPage))">@Html.Sitecore().Field("Glossary Value", ItemGuids.LocationItem)</option>
-                        <option value="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))">@Html.Sitecore().Field("Glossary Value", ItemGuids.ArtistItem)</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </div>
+                                                            <div class="gd-controls-m visible-xs">
+                                                                <div class="row">
+                                                                    <div class="col-xs-3">
+                                                                        <p class="form-control-static">@Html.Sitecore().Field("Glossary Value", ItemGuids.ViewByItem)</p>
+                                                                    </div>
+                                                                    <div class="col-xs-9">
+                                                                        <select class="form-control">
+                                                                            <option value="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByLocationPage))">@Html.Sitecore().Field("Glossary Value", ItemGuids.LocationItem)</option>
+                                                                            <option value="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))">@Html.Sitecore().Field("Glossary Value", ItemGuids.ArtistItem)</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
 
-        @Html.Sitecore().Placeholder("by-artist")
-        @Html.Sitecore().Placeholder("by-location")
-</div>
+                                                        @Html.Sitecore().Placeholder("by-artist")
+                                                        @Html.Sitecore().Placeholder("by-location")
+                                                    </div>

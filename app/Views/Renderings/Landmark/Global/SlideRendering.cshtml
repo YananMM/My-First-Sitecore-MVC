@@ -29,19 +29,6 @@
             j++;
                 }
                 <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Slide Image", item)"></div>
-                @if (((CheckboxField) item.Fields["Has Slide Content"]).Checked)
-                {
-                    <div class="carousel-caption">
-                        <div class="carousel-caption-inner">
-                            <div class="gd-carousel-detail">
-                                <div class="gd-mainimage-brief">
-                                    @Html.Sitecore().Placeholder("slide-text")
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                }
-                
             </div>
         }
     }
@@ -56,14 +43,4 @@
         <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-</div>
-<!-- Caption -->
-<div class="carousel-caption">
-    <div class="carousel-caption-inner">
-        <div class="gd-carousel-detail">
-            <div class="gd-mainimage-brief">
-                @Html.Sitecore().Placeholder("slide-text")
-            </div>
-        </div>
-    </div>
 </div>

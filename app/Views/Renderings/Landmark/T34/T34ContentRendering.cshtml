@@ -12,6 +12,16 @@
 </div>
 <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-fixed" data-ride="carousel">
     @Html.Sitecore().Placeholder("t34-slides")
+
+    <div class="carousel-caption">
+        <div class="carousel-caption-inner">
+            <div class="gd-carousel-detail">
+                <div class="gd-mainimage-brief">
+                    @Html.Sitecore().Placeholder("slide-text")
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="container">
     <div class="gd-bigbrand">
@@ -19,9 +29,9 @@
     </div>
     <div class="gd-brief">
         <div class="gd-brief-heading">
-            <h2>
+            <h3>
                 @Html.Sitecore().Field("Content Title")
-            </h2>
+            </h3>
         </div>
         <div class="gd-brief-body">
             <div class="row">

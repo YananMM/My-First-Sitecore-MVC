@@ -109,7 +109,7 @@ namespace Landmark.Helper
                 {
                     GroupedDroplinkField artistField = item.Fields["Artist"];
                     var artist = artistField.TargetItem;
-                    if (artist.ID.ToString() == artistId)
+                    if (artist != null && artist.ID.ToString() == artistId)
                     {
                         artPieces.Add(item);
                     }
@@ -187,8 +187,8 @@ namespace Landmark.Helper
             List<ArtPieceByBuildingJson> models = new List<ArtPieceByBuildingJson>();
             List<Item> allArtPieces = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkArtTourItem, ItemGuids.T29Template);
             List<Item> artPiecesByBuilding = (from art in allArtPieces
-                                             where Sitecore.Context.Database.GetItem(art.Fields["Floor and Building"].Value).Parent.ID.ToString() == buildingId
-                                             select art).ToList();
+                                              where Sitecore.Context.Database.GetItem(art.Fields["Floor and Building"].Value).Parent.ID.ToString() == buildingId
+                                              select art).ToList();
             if (allArtPieces != null && artPiecesByBuilding.Count != 0)
             {
                 foreach (var item in artPiecesByBuilding)

@@ -13,27 +13,26 @@
             <div class="col-sm-12 visible-xs-block">
                 <div class="gd-pagetitle ">
                     <div class=" gd-pagetitle-heading">
-                        <h1>@Html.Sitecore().Field("Art Title"), @Html.Sitecore().Field("Created Time")</h1>
+                        <h2>@Html.Sitecore().Field("Art Title"), @Html.Sitecore().Field("Created Time")</h2>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6 text-center">
                 <div class="gd-pagetitle">
                     @*@{
-                            ImageField imageField = Sitecore.Context.Item.Fields["Art Image"];
+                        ImageField imageField = Sitecore.Context.Item.Fields["Art Image"];
 
-                            string alt = imageField.Alt;
-                            <img class="gd-lightbox-link" data-lightsrc="https://boredanddangerousblog.files.wordpress.com/2014/06/edgeoftomorrow2.jpg" src="../files/landmark/images/artpiece/artpiece-bigpic-01.jpg" alt="artpiece picture">
-                        }*@
+                        string alt = imageField.Alt;
+                        <img class="gd-lightbox-link" data-lightsrc="https://boredanddangerousblog.files.wordpress.com/2014/06/edgeoftomorrow2.jpg" src="../files/landmark/images/artpiece/artpiece-bigpic-01.jpg" alt="artpiece picture">
+                    }*@
                     @Html.Sitecore().Field("Art Image", new { @class = "gd-lightbox-link" })
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="gd-pagetitle">
                     <div class="hidden-xs gd-pagetitle-heading">
-                        <h1>@Html.Sitecore().Field("Art Title"), @Html.Sitecore().Field("Created Time")</h1>
+                        <h2>@Html.Sitecore().Field("Art Title"), @Html.Sitecore().Field("Created Time")</h2>
                     </div>
-
                     <div class="gd-artplace-details row">
                         <div class="col-sm-6 gd-artplace-info">
                             @Html.Sitecore().Field("Art Key")<br>
@@ -41,8 +40,8 @@
                         </div>
                         <div class="col-sm-6 text-right">
                             <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
-                            <span class="icomoon-sound-alt"></span>
-                            @Html.Sitecore().Field("Glossary Value", ItemGuids.ListenToCommentaryItem)
+                                <span class="icomoon-sound-alt"></span>
+                                @Html.Sitecore().Field("Glossary Value", ItemGuids.ListenToCommentaryItem)
                             </a>
                         </div>
                     </div>

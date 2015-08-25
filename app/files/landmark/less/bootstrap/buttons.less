@@ -90,6 +90,14 @@
   .button-variant(@btn-danger-color; @btn-danger-bg; @btn-danger-border);
 }
 
+.btn-black{
+  .button-variant(@gray-darker2;  @btn-default-bg; #222);
+  padding: 7px 20px;
+  &:focus, &:hover{
+    color: #fff;
+    background-color: @gray-darker2;
+  }
+}
 
 // Link buttons
 // -------------------------
