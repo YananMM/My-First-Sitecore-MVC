@@ -1,33 +1,26 @@
 ----item----
 version: 1
-id: {8B38BE26-F07E-42C3-9C4E-6B7D1770BAB1}
+id: {26972D9C-9835-45C1-A503-955830E19958}
 database: master
-path: /sitecore/templates/Branches/User Defined/Landmark/Page/T34 Page
-parent: {82187095-62EE-4583-B939-FE773A6BF9D4}
-name: T34 Page
+path: /sitecore/templates/User Defined/Landmark/Page/T3 Page/Page Data
+parent: {A81D9E00-46D9-49B7-A77D-79DB05A517E1}
+name: Page Data
 master: {00000000-0000-0000-0000-000000000000}
-template: {35E75C72-4985-4E09-88C3-0EAC6CD1E64F}
-templatekey: Branch
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
 
 ----version----
 language: en
 version: 1
-revision: bdf14e0b-15ab-4acf-9120-c3286ed76716
+revision: f1cc5893-f4bf-461e-a730-b1eae8b9f548
 
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150819T061955Z
+20150824T061401Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bdf14e0b-15ab-4acf-9120-c3286ed76716
+f1cc5893-f4bf-461e-a730-b1eae8b9f548
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150819T061955:635755619955640953Z
+20150824T070000Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

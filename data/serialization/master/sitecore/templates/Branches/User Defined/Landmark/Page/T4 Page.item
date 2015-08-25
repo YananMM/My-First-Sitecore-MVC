@@ -1,33 +1,33 @@
 ----item----
 version: 1
-id: {5D6E9332-6C65-4E1C-A656-292583E44E3E}
+id: {13FE3D68-15D9-47E4-8993-4C620C534BBC}
 database: master
-path: /sitecore/templates/Branches/User Defined/Landmark/Page/T34 Page/$name/Special Offers
-parent: {7EEB3D33-47A7-4EA5-ABAA-37C8D47C4873}
-name: Special Offers
+path: /sitecore/templates/Branches/User Defined/Landmark/Page/T4 Page
+parent: {82187095-62EE-4583-B939-FE773A6BF9D4}
+name: T4 Page
 master: {00000000-0000-0000-0000-000000000000}
-template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
-templatekey: Folder
+template: {35E75C72-4985-4E09-88C3-0EAC6CD1E64F}
+templatekey: Branch
 
-----field----
-field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
-name: __Masters
-key: __masters
-content-length: 38
-
-{D3130DE9-ABC4-4D10-92C8-75A8E9910245}
 ----version----
 language: en
 version: 1
-revision: a021577f-3771-4146-a15d-fa53528a1011
+revision: 1c03c237-6356-48f0-9f0f-68a7f16a0f4d
 
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150820T023539Z
+20150824T082926Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a021577f-3771-4146-a15d-fa53528a1011
+1c03c237-6356-48f0-9f0f-68a7f16a0f4d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150820T023922:635756351627065266Z
+20150824T082926Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

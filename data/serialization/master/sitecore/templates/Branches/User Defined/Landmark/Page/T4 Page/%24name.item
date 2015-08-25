@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {7BF691A4-FEEC-4B92-BE99-DC444724EC71}
+database: master
+path: /sitecore/templates/Branches/User Defined/Landmark/Page/T4 Page/$name
+parent: {13FE3D68-15D9-47E4-8993-4C620C534BBC}
+name: $name
+master: {00000000-0000-0000-0000-000000000000}
+template: {4CDF5CD9-40F0-4F0B-A095-7773CE6CF582}
+templatekey: T4 Page
+
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 7ce1f970-6cbc-4975-b0c2-0bef95fb830a
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150824T082926Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7ce1f970-6cbc-4975-b0c2-0bef95fb830a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150824T120552Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
