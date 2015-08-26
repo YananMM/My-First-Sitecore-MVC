@@ -1,6 +1,7 @@
 ﻿using System;
 using Sitecore.Data.Items;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 using Landmark.Classes;
@@ -220,6 +221,11 @@ namespace Landmark.Helper
                 imageURL = Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
             }
             return imageURL;
+        }
+
+        public static String ToValidDateTime(DateField datetime)
+        {
+            return datetime.DateTime.AddHours(8).ToString("hh:mmtt", CultureInfo.InvariantCulture);
         }
 
     }

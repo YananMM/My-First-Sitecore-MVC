@@ -2,9 +2,9 @@
 version: 1
 id: {CC414C5A-0BBF-4710-BD60-801121F777BC}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Event Object/Event Data/Event ToTime
+path: /sitecore/templates/User Defined/Landmark/Object/Event Object/Event Data/Event To Time
 parent: {2568A43E-67DB-484D-A97F-440014BFBC43}
-name: Event ToTime
+name: Event To Time
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -26,7 +26,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 2c7b0a24-352a-402c-82e0-44141494ef2e
+revision: 3ee09312-ca80-476b-9cf4-0857da7ef73f
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2c7b0a24-352a-402c-82e0-44141494ef2e
+3ee09312-ca80-476b-9cf4-0857da7ef73f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150824T080905Z
+20150825T083505Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

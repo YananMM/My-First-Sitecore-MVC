@@ -1,10 +1,22 @@
-﻿@using Landmark.Classes
+﻿@using System.Globalization
+@using Landmark.Classes
 @using Landmark.Helper
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @model RenderingModel
+@{
+    var fromDateField = (DateField) Sitecore.Context.Item.Fields["Event From Date"];
+    var fromDate = fromDateField.DateTime.ToString("d MMM yyyy",CultureInfo.InvariantCulture);
+    var toDateField = (DateField) Sitecore.Context.Item.Fields["Event To Date"];
+    var toDate = toDateField.DateTime.ToString("d MMM yyyy",CultureInfo.InvariantCulture);
+    var fromDateTimeField = (DateField) Sitecore.Context.Item.Fields["Event From Time"];
+    var fromDateTime = LandmarkHelper.ToValidDateTime(fromDateTimeField);
+    var toDateTimeField = (DateField) Sitecore.Context.Item.Fields["Event To Time"];
+    var toDateTime = LandmarkHelper.ToValidDateTime(toDateTimeField);
+    var floor = ((ReferenceField) Sitecore.Context.Item.Fields["Event Floor"]).TargetItem;
+    var building = floor.Parent;
+}
 <div class="container">
-
         <div class="gd-pagetitle">
             <div class="gd-pagetitle-heading">
                 <h1>@Sitecore.Context.Item.Parent["Page Title"].ToUpper()</h1>
@@ -24,20 +36,20 @@
                <table>
                                         <tbody>
                                             <tr>
-                                                <th>DATE &amp; TIME</th>
-                                                <td>1st Jan 2015 - 25th <br>Feb 2015 10am-10pm</td>
+                                                <th>@Html.Sitecore().Field("Glossary Value",ItemGuids.DateTimeItem)</th>
+                                                <td>@fromDate - @toDate @fromDateTime-@toDateTime</td>
                                             </tr>
                                             <tr>
-                                                <th>VENUE</th>
-                                                <td>3/F LANDMARK ATRIUM</td>
+                                                <th>@Html.Sitecore().Field("Glossary Value",ItemGuids.VenueItem)</th>
+                                                <td>@Html.Sitecore().Field("Floor Title",floor) @Html.Sitecore().Field("Building Title",building)</td>
                                             </tr>
                                             <tr>
-                                                <th>ENQUIRY</th>
-                                                <td>852-28823390</td>
+                                                <th>@Html.Sitecore().Field("Glossary Value",ItemGuids.EnquiryItem)</th>
+                                                <td>@Html.Sitecore().Field("Event Enquiry")</td>
                                             </tr>
                                             <tr>
-                                                <th>WEBSITE</th>
-                                                <td><a href="http://www.lightweight.com">www.lightweight.com</a></td>
+                                                <th>@Html.Sitecore().Field("Glossary Value",ItemGuids.WebsiteItem)</th>
+                                                <td>@Html.Sitecore().Field("Event Website")</td>
                                             </tr>
                                         </tbody>
                                     </table></div>
@@ -45,8 +57,13 @@
                                     <table>
                                         <tbody>
                                             <tr>
-                                                <th><span class="icomoon-price-tag"></span> TAGS</th>
-                                                <td>MEN, FASHION, SHOES</td>
+                                                <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem)</th>
+                                                <td> @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
+                {
+                    Cacheable = false,
+                    CacheKey = "tags",
+                    Cache_VaryByData = true
+                })</td>
                                             </tr>
                                         </tbody>
                                     </table>

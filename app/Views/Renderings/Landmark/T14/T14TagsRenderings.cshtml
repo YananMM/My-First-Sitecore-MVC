@@ -2,38 +2,19 @@
 @using Landmark.Helper
 @using Sitecore.Data.Items
 @model RenderingModel
-@{
-    ShoppingHelper shoppingHelper = new ShoppingHelper();
-    var tagsTrees = shoppingHelper.GetTagsTree();
-}
+
 <div class="table-responsive gd-tg-table">
     <table>
         <tbody>
             <tr>
                 <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem)</th>
-
-
                 <td>
-                    @foreach (var item in tagsTrees)
-                    {
-                        <div>
-                            @{
-                        var shopPage = shoppingHelper.GetShopPageByTag(item.CurrentItem.ID.ToString());
-                        if (shopPage != null)
-                        {
-                            <a href="@Sitecore.Links.LinkManager.GetItemUrl(shopPage)">@item.CurrentItem["Category Name"] - </a>
-                        }
-                            }
-
-                            @foreach (var it in item.Children)
-                            {
-                                var subPage = shoppingHelper.GetShopPageByTag(it.CurrentItem.ID.ToString());
-                                if (subPage != null)
-                                {
-                                    <a href="@Sitecore.Links.LinkManager.GetItemUrl(subPage.Children.First())">@it.CurrentItem["Category Name"],</a>}
-                            }
-                        </div>
-                    }
+                    @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
+                {
+                    Cacheable = false,
+                    CacheKey = "tags",
+                    Cache_VaryByData = true
+                })
                 </td>
             </tr>
         </tbody>
