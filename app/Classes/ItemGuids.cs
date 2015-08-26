@@ -33,7 +33,7 @@ namespace Landmark.Classes
         public static readonly String T35GetDirectionPage = "{AE130080-B8B6-4D9E-B863-C88DC329B657}";
         public static readonly String T35SurroundingPage = "{54824316-017A-4B94-AD8E-F636473B510A}";
         public static readonly String ContactUsPage = "{5EC2DEF7-B8CE-45CD-96CD-9967773B5808}";
-
+        public static readonly String GlossaryObject = "{7AD93F40-7320-4CD8-89A4-D4E4BB44ADF8}";
         //item id
         //public static readonly String PanelsFolderItemGuid = "{3BB40D54-8F7F-449B-B9DB-432C65EB4224}";
         //public static readonly String AdvertTemplateItemGuid = "{32677AD3-AB70-49BF-A525-08493045C4FA}";

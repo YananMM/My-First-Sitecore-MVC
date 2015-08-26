@@ -12,7 +12,7 @@ templatekey: T9 Page
 ----version----
 language: en
 version: 1
-revision: dac3ca23-5977-4733-8ddc-926555726ca2
+revision: 6800b612-52d7-45e8-9356-3ea752f5f614
 
 ----field----
 field: {29FA7895-CEF3-48F6-B527-5AD5FD93F772}
@@ -60,9 +60,9 @@ content-length: 1
 field: {C318572C-DE49-4951-AD27-5B609EB18ED5}
 name: Hotline Title
 key: hotline title
-content-length: 17
+content-length: 18
 
-CONCIERGE HOTLINE
+CONCIERGE HOTLINE 
 ----field----
 field: {E70AEC2A-A16E-4A82-B786-BD25A3F2EF66}
 name: Phone Description
@@ -128,39 +128,130 @@ content-length: 25
 communications@hkland.com
 ----field----
 field: {015F9EBF-FBE7-45A4-8ACF-6D3E1FD70788}
-name: Title
-key: title
+name: Personal Data Title
+key: personal data title
 content-length: 25
 
 Update your Personal Data
 ----field----
 field: {0ECA8548-9E6C-461B-A0A1-E52311F25631}
-name: Description
-key: description
+name: Personal Data Description
+key: personal data description
 content-length: 167
 
 To update or change any of your personal data or to unsubscribe promotional material from us, please send your request to us through any one of the following channels:
 ----field----
 field: {E9C6368F-DF54-46AA-B537-5636E15A1BA7}
-name: Telephone
-key: telephone
+name: Personal Data Telephone
+key: personal data telephone
 content-length: 15
 
 (852) 2842 8524
 ----field----
 field: {D9D52F60-A755-4475-A220-78056616BEDD}
-name: Email
-key: email
+name: Personal Data Email
+key: personal data email
 content-length: 25
 
 communications@hkland.com
 ----field----
 field: {9BA85F74-6A53-4A5E-A5C8-F6C5B1EF5DC1}
-name: Address
-key: address
+name: Personal Data Address
+key: personal data address
 content-length: 44
 
 8/F, One Exchange Square, Central, Hong Kong
+----field----
+field: {33966EB8-2866-4DFE-AE61-B0D517001A77}
+name: Form  Title
+key: form  title
+content-length: 19
+
+CONTACT FORM BELOW 
+----field----
+field: {740DEDA3-5321-4915-8375-EA20C537D859}
+name: Form  Description
+key: form  description
+content-length: 56
+
+You can contact us by filling out following email form: 
+----field----
+field: {829C2D70-1140-4717-A647-8921BE231188}
+name: Title Label
+key: title label
+content-length: 5
+
+TITLE
+----field----
+field: {DFF4A1E6-6F1F-44DB-B1B0-7E52D6FD93DD}
+name: First Name Label
+key: first name label
+content-length: 10
+
+FIRST NAME
+----field----
+field: {B35FF4AD-91A7-4C46-B574-C7E1733370A9}
+name: Last Name Label
+key: last name label
+content-length: 9
+
+LAST NAME
+----field----
+field: {B0480C65-53DB-4DEE-9F09-4866BDAB4754}
+name: Telephone Label
+key: telephone label
+content-length: 9
+
+TELEPHONE
+----field----
+field: {1EB4A4BB-E13D-464C-8F91-F7D25CDC3C25}
+name: Email Label
+key: email label
+content-length: 5
+
+EMAIL
+----field----
+field: {81CCD489-D00F-45F1-8F87-0655E5B5CE66}
+name: Enquiry Type Label
+key: enquiry type label
+content-length: 12
+
+ENQUIRY TYPE
+----field----
+field: {487F8DC1-3C5B-47E4-A9B9-EC410953C8A9}
+name: Message Label
+key: message label
+content-length: 7
+
+MESSAGE
+----field----
+field: {27CA26C8-B643-4FB3-B725-2D62E7E63BF2}
+name: Verrification Label
+key: verrification label
+content-length: 39
+
+PLEASE ENTER THE CODE FOR VERRIFICATION
+----field----
+field: {4651937A-8514-46A0-9911-422970DD3CD0}
+name: Generate another code Label
+key: generate another code label
+content-length: 21
+
+Generate another code
+----field----
+field: {63787F30-9458-4DE6-BF48-ADB0BC13C98F}
+name: Button Text
+key: button text
+content-length: 4
+
+SEND
+----field----
+field: {4057F83D-5702-465C-9782-BD46784E9E1D}
+name: Select Label
+key: select label
+content-length: 13
+
+PLEASE SELECT
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -174,14 +265,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dac3ca23-5977-4733-8ddc-926555726ca2
+6800b612-52d7-45e8-9356-3ea752f5f614
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150825T091639:635760909999204048Z
+20150826T082117:635761740779362875Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

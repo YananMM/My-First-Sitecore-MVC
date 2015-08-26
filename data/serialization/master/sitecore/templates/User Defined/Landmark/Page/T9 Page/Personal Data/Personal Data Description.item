@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {D9D52F60-A755-4475-A220-78056616BEDD}
+id: {0ECA8548-9E6C-461B-A0A1-E52311F25631}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T9 Page/Personal Data/Email
+path: /sitecore/templates/User Defined/Landmark/Page/T9 Page/Personal Data/Personal Data Description
 parent: {86010569-971A-41CE-99DF-F4839B1DCC43}
-name: Email
+name: Personal Data Description
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,20 +13,20 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 16
+content-length: 15
 
-Single-Line Text
+Multi-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-400
+200
 ----version----
 language: en
 version: 1
-revision: 9fee24eb-ea8b-4507-959d-d330b61fe124
+revision: 5a4194db-746d-47b0-80fb-745e75b49881
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150825T085646Z
+20150825T085615Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-9fee24eb-ea8b-4507-959d-d330b61fe124
+5a4194db-746d-47b0-80fb-745e75b49881
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150825T092145:635760913052468685Z
+20150826T082048:635761740488042875Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

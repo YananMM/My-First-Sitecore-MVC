@@ -4,25 +4,28 @@
 @using Sitecore.ContentSearch.Utilities
 @using Sitecore.Data.Items
 @model RenderingModel
+@{
+    var formTitleSelects = LandmarkHelper.GetItemsByRootAndTemplate(Sitecore.Context.Item.Children.SingleOrDefault(p => p.DisplayName == "Enquiry Type Selects").ID.ToString(), ItemGuids.GlossaryObject);
+}
 
 <div class="gd-contact-area">
     <div class="gd-contact-heading">
         <span class="icomoon-thin-arrow-R arrow-rotate-90 "></span>
         <h3>
-            <span class="icomoon-location"></span>CONTACT FORM BELOW
+            <span class="icomoon-location"></span>@Html.Sitecore().Field("Contact Form Title")
         </h3>
     </div>
     <div class="gd-contact-body">
-        <p>You can contact us by filling out following email form:</p>
+        <p>@Html.Sitecore().Field("Contact Form Description")</p>
         <div class="row">
             <div class="col-sm-9">
                 <form class="gd-contact-form" action="@Url.Action("AddCustomerMessage", "Home")" method="POST">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="title">TITLE *</label>
+                                <label for="title">@Html.Sitecore().Field("Title Label") *</label>
                                 <select class="form-control" id="title" name="Title" required>
-                                    <option value="">PLEASE SELECT</option>
+                                    <option value="">@Html.Sitecore().Field("Select Label")</option>
                                     <option value="Mr">Mr</option>
                                     <option value="Mrs">Mrs</option>
                                     <option value="Ms">Ms</option>
@@ -33,13 +36,13 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="firstname">FIRST NAME *</label>
+                                <label for="firstname">@Html.Sitecore().Field("First Name Label") *</label>
                                 <input type="text" class="form-control" id="firstname" name="FirstName" required>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="lastname">LAST NAME *</label>
+                                <label for="lastname">@Html.Sitecore().Field("Last Name Label") *</label>
                                 <input type="text" class="form-control" id="lastname" name="LastName" required>
                             </div>
                         </div>
@@ -47,13 +50,13 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="telephone">TELEPHONE</label>
+                                <label for="telephone">@Html.Sitecore().Field("Telephone Label")</label>
                                 <input type="text" class="form-control" id="telephone" name="Telephone">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="email">EMAIL *</label>
+                                <label for="email">@Html.Sitecore().Field("Email Label") *</label>
                                 <input class="form-control" id="email" type="email" name="Email" required>
                             </div>
                         </div>
@@ -61,9 +64,9 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <label for="enquiirytype">ENQUIRY TYPE *</label>
+                                <label for="enquiirytype">@Html.Sitecore().Field("Enquiry Type Label") *</label>
                                 <select class="form-control" id="enquiirytype" name="EnquiryType" required>
-                                    <option value="">PLEASE SELECT</option>
+                                    <option value="">@Html.Sitecore().Field("Select Label")</option>
                                     <option value="Promotion">Promotion</option>
                                     <option>3</option>
                                     <option value="Website contents">Website contents</option>
@@ -75,20 +78,20 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <label for="messsage">MESSSAGE*</label>
+                                <label for="messsage">@Html.Sitecore().Field("Message Label")*</label>
                                 <textarea class="form-control" rows="3" id="messsage" name="Message" required></textarea>
                             </div>
                         </div>
                     </div>
                     <div class="row gd-contact-code  form-inline">
                         <div class="col-sm-11">
-                            <p>PLEASE ENTER THE CODE FOR VERRIFICATION *</p>
+                            <p>@Html.Sitecore().Field("Verrification Label") *</p>
                             <img src="http://dummyimage.com/275x65" />
                             <input type="text" id="code" class="form-control">
-                            <a href="#">Generate another code</a>
+                            <a href="#">@Html.Sitecore().Field("Generate another code Label")</a>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-black">SEND</button>
+                    <button type="submit" class="btn btn-black">@Html.Sitecore().Field("Button Text")</button>
                 </form>
             </div>
         </div>
