@@ -38,6 +38,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -76,6 +84,8 @@
       <HintPath>..\lib\Sitecore.Mvc.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -131,6 +141,25 @@
     <Compile Include="Helper\LandmarkHelper.cs" />
     <Compile Include="Helper\ShoppingHelper.cs" />
     <Compile Include="Helper\SitecoreFieldHelper.cs" />
+    <Compile Include="Models\ContactUsForm.cs">
+      <DependentUpon>Landmark.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ContactUsFormModel.cs" />
+    <Compile Include="Models\Landmark.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Landmark.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Landmark.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Landmark.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Landmark.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Landmark.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\LandmarkModels.cs" />
     <Compile Include="Models\LandmarkSearchResultItem.cs" />
     <Compile Include="Models\TextValue.cs" />
@@ -484,6 +513,23 @@
       <TransformOnBuild>true</TransformOnBuild>
     </Content>
     <Content Include="files\landmark\css\style.css.map" />
+    <EntityDeploy Include="Models\Landmark.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Landmark.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Landmark.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Landmark.edmx</DependentUpon>
+      <LastGenOutput>Landmark.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Landmark.edmx.diagram">
+      <DependentUpon>Landmark.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Landmark.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Landmark.edmx</DependentUpon>
+      <LastGenOutput>Landmark.cs</LastGenOutput>
+    </Content>
     <None Include="Properties\PublishProfiles\DEV.pubxml" />
     <None Include="Properties\PublishProfiles\landmark.pubxml" />
     <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
@@ -685,6 +731,9 @@
     <Content Include="files\landmark\less\t11.less" />
     <Content Include="files\landmark\less\t13.less" />
     <None Include="Properties\PublishProfiles\local.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

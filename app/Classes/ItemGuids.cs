@@ -31,6 +31,7 @@ namespace Landmark.Classes
         public static readonly String T14YouMayAlsoLikeRenderingViewGuid = "{3D3C605D-3A95-4D71-8206-C403D66EB91A}";
         public static readonly String T35GetDirectionPage = "{AE130080-B8B6-4D9E-B863-C88DC329B657}";
         public static readonly String T35SurroundingPage = "{54824316-017A-4B94-AD8E-F636473B510A}";
+        public static readonly String ContactUsPage = "{5EC2DEF7-B8CE-45CD-96CD-9967773B5808}";
 
         //item id
         //public static readonly String PanelsFolderItemGuid = "{3BB40D54-8F7F-449B-B9DB-432C65EB4224}";

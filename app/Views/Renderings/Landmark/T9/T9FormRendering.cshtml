@@ -8,23 +8,24 @@
 <div class="gd-contact-area">
     <div class="gd-contact-heading">
         <span class="icomoon-thin-arrow-R arrow-rotate-90 "></span>
-        <h3><span class="icomoon-location"></span>CONTACT FORM BELOW</h3>
+        <h3>
+            <span class="icomoon-location"></span>CONTACT FORM BELOW
+        </h3>
     </div>
     <div class="gd-contact-body">
         <p>You can contact us by filling out following email form:</p>
         <div class="row">
             <div class="col-sm-9">
-                <form class="gd-contact-form" action="">
+                <form class="gd-contact-form" action="@Url.Action("AddCustomerMessage", "Home")" method="POST">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="title">TITLE *</label>
-                                <select class="form-control" id="title">
-                                    <option>PLEASE SELECT</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
+                                <select class="form-control" id="title" name="Title" required>
+                                    <option value="">PLEASE SELECT</option>
+                                    <option value="Mr">Mr</option>
+                                    <option value="Mrs">Mrs</option>
+                                    <option value="Ms">Ms</option>
                                 </select>
                             </div>
                         </div>
@@ -33,13 +34,13 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="firstname">FIRST NAME *</label>
-                                <input type="text" class="form-control" id="firstname">
+                                <input type="text" class="form-control" id="firstname" name="FirstName" required>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="lastname">LAST NAME *</label>
-                                <input type="text" class="form-control" id="lastname">
+                                <input type="text" class="form-control" id="lastname" name="LastName" required>
                             </div>
                         </div>
                     </div>
@@ -47,13 +48,13 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="telephone">TELEPHONE</label>
-                                <input type="text" class="form-control" id="telephone">
+                                <input type="text" class="form-control" id="telephone" name="Telephone">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="email">EMAIL *</label>
-                                <input type="text" class="form-control" id="email">
+                                <input class="form-control" id="email" type="email" name="Email" required>
                             </div>
                         </div>
                     </div>
@@ -61,11 +62,11 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="enquiirytype">ENQUIRY TYPE *</label>
-                                <select class="form-control" id="enquiirytype">
-                                    <option>PLEASE SELECT</option>
-                                    <option>2</option>
+                                <select class="form-control" id="enquiirytype" name="EnquiryType" required>
+                                    <option value="">PLEASE SELECT</option>
+                                    <option value="Promotion">Promotion</option>
                                     <option>3</option>
-                                    <option>4</option>
+                                    <option value="Website contents">Website contents</option>
                                     <option>5</option>
                                 </select>
                             </div>
@@ -75,7 +76,7 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="messsage">MESSSAGE*</label>
-                                <textarea class="form-control" rows="3" id="messsage"></textarea>
+                                <textarea class="form-control" rows="3" id="messsage" name="Message" required></textarea>
                             </div>
                         </div>
                     </div>

@@ -16,6 +16,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Landmark.Classes;
 using Sitecore.Data.Items;
 using Landmark.Models;
 using Landmark.Helper;
@@ -47,5 +48,66 @@ namespace Landmark.Controllers
             Item target = Sitecore.Context.Database.GetItem(targetId);
             return Redirect(Sitecore.Links.LinkManager.GetItemUrl(target));
         }
+
+        public ActionResult AddCustomerMessage(ContactUsFormModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    using (LandmarkSitecore_MasterEntities context = new LandmarkSitecore_MasterEntities())
+                    {
+                        ContactUsForm customer = new ContactUsForm()
+                        {
+                            Title = model.Title,
+                            FirstName = model.FirstName,
+                            LastName = model.LastName,
+                            Telephone = model.Telephone,
+                            Email = model.Email,
+                            EnquiryType = model.EnquiryType,
+                            Message = model.Message,
+                        };
+                        context.ContactUsForms.Add(customer);
+                        var result = context.SaveChanges();
+                        return Content(result.ToString());
+                    }
+                }
+                catch (Exception e)
+                {
+                    return Content(e.Message);
+                }
+            }
+            return RedirectToAction("ButtonRedirect", new { targetId = ItemGuids.ContactUsPage });
+        }
+
+
+        public string AddContact(ContactUsFormModel model)
+        {
+            if (string.IsNullOrEmpty(model.Email))
+            {
+                return "Email can not be empty";
+            }
+            else if (string.IsNullOrEmpty(model.LastName))
+            {
+
+            }
+            using (LandmarkSitecore_MasterEntities context = new LandmarkSitecore_MasterEntities())
+            {
+                ContactUsForm customer = new ContactUsForm()
+                {
+                    Title = model.Title,
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
+                    Telephone = model.Telephone,
+                    Email = model.Email,
+                    EnquiryType = model.EnquiryType,
+                    Message = model.Message,
+                };
+                context.ContactUsForms.Add(customer);
+                var result = context.SaveChanges();
+                return result.ToString();
+            }
+        }
+
     }
 }
