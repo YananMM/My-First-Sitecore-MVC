@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {22BB0060-412E-4AD4-9E69-9308523EFF1B}
+id: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Event Object/Event Data/Event Building
-parent: {2568A43E-67DB-484D-A97F-440014BFBC43}
-name: Event Building
+path: /sitecore/templates/User Defined/Landmark/Object/Article Object/Article Data/Article Type
+parent: {E97B3DE3-422F-425C-9BF7-B15B96E1E735}
+name: Article Type
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -17,16 +17,23 @@ content-length: 8
 
 Droptree
 ----field----
+field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
+name: Source
+key: source
+content-length: 46
+
+/sitecore/content/Global/Landmark/Article Type
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-600
+300
 ----version----
 language: en
 version: 1
-revision: 750a8b0e-19f6-444d-8f07-d1b86c193646
+revision: 3c3b2cca-6da3-4c9e-9262-328680af18f7
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +41,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150824T075219Z
+20150826T021650Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-750a8b0e-19f6-444d-8f07-d1b86c193646
+3c3b2cca-6da3-4c9e-9262-328680af18f7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150824T080905Z
+20150826T024842Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

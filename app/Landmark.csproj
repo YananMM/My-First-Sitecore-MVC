@@ -511,6 +511,7 @@
     <Content Include="packages.config" />
     <Content Include="App_Config\ConnectionStrings.config">
       <TransformOnBuild>true</TransformOnBuild>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="files\landmark\css\style.css.map" />
     <EntityDeploy Include="Models\Landmark.edmx">
@@ -619,12 +620,13 @@
     <Content Include="Views\Layouts\Landmark\T35SurroundingLayout.cshtml" />
     <Content Include="Views\Renderings\Landmark\T3\T3ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T4\T4ContentRendering.cshtml" />
-    <Content Include="Views\Renderings\Landmark\T4\T4SlideRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T9\T9ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T9\T9FormRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T9\T9UpdateDataRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T9\T9WriteToRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T10\T10ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\Global\TagsRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\Global\ReferenceArticlesRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -176,27 +176,12 @@ namespace Landmark.Helper
             return _webDb.SelectItems(query).ToList();
         }
 
-
-        /// <summary>
-        /// Gets the slides by template.
-        /// </summary>
-        /// <param name="templateId">The template unique identifier.</param>
-        /// <returns>List{Item}.</returns>
-        public static List<Item> GetItemByTemplate(string templateId)
+        public static List<Item> GetItemByTemplate(Item parent,string templateId)
         {
-            var item = Sitecore.Context.Item;
-            var query = string.Format("fast:{0}//*[{1}]", item.Paths.FullPath, "@@TemplateId='" + templateId + "'");
+            var query = string.Format("fast:{0}//*[{1}]", parent.Paths.FullPath, "@@TemplateId='" + templateId + "'");
             List<Item> slidesItems = _webDb.SelectItems(query).OrderBy(i => i.DisplayName).ToList();
             return slidesItems;
         }
-
-        //public static List<Item> GetItemByTemplate(string templateId)
-        //{
-        //    var item = Sitecore.Context.Item;
-        //    var query = string.Format("fast:{0}//*[{1}]", item.Paths.FullPath, "@@TemplateId='" + templateId + "'");
-        //    List<Item> slidesItems = _webDb.SelectItems(query).OrderBy(i => i.DisplayName).ToList();
-        //    return slidesItems;
-        //}
 
 
         public static String FileFieldSrc(string fieldName, Item item)
@@ -226,6 +211,31 @@ namespace Landmark.Helper
         public static String ToValidDateTime(DateField datetime)
         {
             return datetime.DateTime.AddHours(8).ToString("hh:mmtt", CultureInfo.InvariantCulture);
+        }
+
+        public static List<Item> GetItemsByTags(Item item)
+        {
+            var tagsField = (MultilistField)item.Fields["Tags"];
+            List<Item> relatedItems = new List<Item>();
+            if (tagsField != null)
+            {
+                var parentItem = item.Parent;
+                foreach (Item child in GetItemByTemplate(parentItem,ItemGuids.T4PageTemplate))
+                {
+                    if (child.ID.ToString() != item.ID.ToString())
+                    {
+                        var tags = (MultilistField)child.Fields["Tags"];
+                        if (tags != null)
+                        {
+                            if (tags.TargetIDs.Any(id => tagsField.TargetIDs.Contains(id)))
+                            {
+                                relatedItems.Add(child);
+                            }
+                        }
+                    }
+                }
+            }
+            return relatedItems;
         }
 
     }
