@@ -20,13 +20,13 @@ content-length: 38
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 447
+content-length: 555
 
-<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{F8D2E7E4-68AF-405D-8356-752922EACF54}"><r id="{53B49FDF-8B9A-4EDB-AA98-F3431087248C}" ph="" uid="{46F24932-BE2B-4802-AE33-569F3DD61C40}" /><r id="{4D96AF05-4FF7-458D-A3B4-38176C11421D}" ph="" uid="{6979F07A-7BFF-4953-A8BE-DF08A40FC829}" /><r id="{B8F13621-BBCA-43FA-9E29-E9FA95A106C0}" ph="" uid="{F7156840-2026-428E-B2DE-53637538F110}" /></d></r>
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{F8D2E7E4-68AF-405D-8356-752922EACF54}"><r id="{53B49FDF-8B9A-4EDB-AA98-F3431087248C}" ph="" uid="{46F24932-BE2B-4802-AE33-569F3DD61C40}" /><r id="{4D96AF05-4FF7-458D-A3B4-38176C11421D}" ph="" uid="{6979F07A-7BFF-4953-A8BE-DF08A40FC829}" /><r id="{B8F13621-BBCA-43FA-9E29-E9FA95A106C0}" ph="" uid="{F7156840-2026-428E-B2DE-53637538F110}" /><r id="{DC73415B-346B-43C5-B7CC-E8260D657A39}" ph="articles" uid="{60E7B8BD-AFDE-4E84-831E-467C31E58815}" /></d></r>
 ----version----
 language: en
 version: 1
-revision: 53231e6a-7b1a-42cf-b30e-8296eba592f2
+revision: 7d1b504a-87c3-4717-bfd5-f84e833f9b02
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-53231e6a-7b1a-42cf-b30e-8296eba592f2
+7d1b504a-87c3-4717-bfd5-f84e833f9b02
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150824T083109Z
+20150826T065515Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

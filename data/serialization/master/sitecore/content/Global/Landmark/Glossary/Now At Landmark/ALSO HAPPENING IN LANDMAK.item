@@ -1,47 +1,47 @@
 ----item----
 version: 1
-id: {2568A43E-67DB-484D-A97F-440014BFBC43}
+id: {F00CB9D5-2A9A-4C42-860A-4B0476B41C6F}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Event Object/Event Data
-parent: {841D4711-49A2-48B4-A64E-7CB50E5F7A48}
-name: Event Data
+path: /sitecore/content/Global/Landmark/Glossary/Now At Landmark/ALSO HAPPENING IN LANDMAK
+parent: {3FDC1E25-3B38-42A7-9489-3D1F3693A1BE}
+name: ALSO HAPPENING IN LANDMAK
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {7AD93F40-7320-4CD8-89A4-D4E4BB44ADF8}
+templatekey: Glossary Object
 
 ----version----
 language: en
 version: 1
-revision: ff1a0aa9-6a17-4c0f-bee5-fc8cf9584743
+revision: 66183f62-38c5-407f-8f38-a508e79c81a3
 
+----field----
+field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
+name: Glossary Value
+key: glossary value
+content-length: 25
+
+ALSO HAPPENING IN LANDMAK
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150824T075132Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
+20150826T081937Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-ff1a0aa9-6a17-4c0f-bee5-fc8cf9584743
+66183f62-38c5-407f-8f38-a508e79c81a3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150826T081857Z
+20150826T081937Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

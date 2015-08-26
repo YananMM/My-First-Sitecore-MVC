@@ -1,7 +1,7 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
 @{
-    var slides = LandmarkHelper.GetItemByTemplate(ItemGuids.ButtomSlideObjectTemplate);
+    var slides = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item,ItemGuids.ButtomSlideObjectTemplate);
 }
 
 @*<!-- Wrapper for slides -->

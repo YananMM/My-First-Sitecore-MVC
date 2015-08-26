@@ -1,0 +1,23 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@using Sitecore.Links
+@model RenderingModel
+@{
+    var articles = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item,ItemGuids.ReferenceObjectTemplate);
+}
+<div class="gd-promo-body">
+        @foreach (Item child in articles)
+        {
+            var referenceItem = ((ReferenceField) child.Fields["Reference Item"]).TargetItem;
+            <div class="gd-promo-box">
+                <a href="@LinkManager.GetItemUrl(referenceItem)">
+                    <img data-src='@Html.Sitecore().ImageFieldSrc("Reference Image", referenceItem)'>
+                    <h4>EVENT</h4>
+                    <h2>@Html.Sitecore().Field("Reference Title", referenceItem)</h2>
+                    <p>@Html.Sitecore().Field("Reference Content", referenceItem)</p>
+                </a>
+            </div>
+        }
+</div>

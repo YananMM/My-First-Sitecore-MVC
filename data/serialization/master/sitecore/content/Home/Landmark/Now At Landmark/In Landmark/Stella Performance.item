@@ -1,33 +1,40 @@
 ----item----
 version: 1
-id: {C0F0CA40-A2CF-4896-BE01-EFD958049342}
+id: {CB84F32B-7E70-40DB-9F57-CAEBBBF7634F}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T4 Page/Reference Data
-parent: {4CDF5CD9-40F0-4F0B-A095-7773CE6CF582}
-name: Reference Data
+path: /sitecore/content/Home/Landmark/Now At Landmark/In Landmark/Stella Performance
+parent: {8EF0153A-03AC-42F4-A481-C85C3BF94AB1}
+name: Stella Performance
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {7C9B7BB1-1F6A-46A4-B705-7D29296B30DA}
+templatekey: Reference Object
 
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 3
-
-300
 ----version----
 language: en
 version: 1
-revision: e5ad8179-2681-4e4b-8d60-4c04cd5ed8a7
+revision: 9c9949ee-21cb-446e-98a7-f4dc40049d9c
 
+----field----
+field: {A926C158-EB43-4596-BE85-F3EF93326EC8}
+name: Reference Item
+key: reference item
+content-length: 38
+
+{07D4ACB8-7EF3-40B9-8D1B-A5782241E8D3}
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150824T124938Z
+20150826T025456Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e5ad8179-2681-4e4b-8d60-4c04cd5ed8a7
+9c9949ee-21cb-446e-98a7-f4dc40049d9c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150826T064211Z
+20150826T030244Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

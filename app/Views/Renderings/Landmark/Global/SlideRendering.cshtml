@@ -3,7 +3,7 @@
 @using Sitecore.Data.Fields
 @model RenderingModel
 @{
-    var slides = LandmarkHelper.GetItemByTemplate(ItemGuids.SlideObjectTemplate);
+    var slides = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item,ItemGuids.SlideObjectTemplate);
 }
 <!-- Indicators -->
 <ol class="carousel-indicators">

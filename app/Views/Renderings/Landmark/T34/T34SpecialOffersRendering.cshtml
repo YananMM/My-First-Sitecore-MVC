@@ -8,7 +8,7 @@
     <h3>@Html.Sitecore().Field("Special Offers Label")</h3>
     <div class="row">
         @{
-            var offers = LandmarkHelper.GetItemByTemplate(ItemGuids.T34SpecialOfferObject);
+            var offers = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item,ItemGuids.T34SpecialOfferObject);
             foreach (var item in offers)
             {
                 <div class="col-sm-4">

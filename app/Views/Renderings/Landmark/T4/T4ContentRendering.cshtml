@@ -72,7 +72,7 @@
              <div  class="col-sm-8 gd-nd-details">
               @Html.Sitecore().Field("Page Content")
 @{
-    var images = LandmarkHelper.GetItemByTemplate(ItemGuids.ImageTextObjectTemplate);
+    var images = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item,ItemGuids.ImageTextObjectTemplate);
 }
 
 @if (images.Count > 0)
@@ -89,26 +89,18 @@
               </div>
             </div>
           </div>
+@{
+        var articles = LandmarkHelper.GetItemsByTags(Sitecore.Context.Item);
+    }
 
+    
+@if (articles.Any())
+{
 <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
     <div class="carousel-heading">
         <h2>@Html.Sitecore().Field("Glossary Value", ItemGuids.YouMayAlsoLikeItem)</h2>
     </div>
-    <!-- Wrapper for slides -->
-    @{
-        var articlesField = (MultilistField) Sitecore.Context.Item.Fields["Related Articles"];
-        List<Item> articles = new List<Item>();
-        if (articlesField != null)
-        {
-            foreach (var articleid in articlesField.TargetIDs)
-            {
-                articles.Add(Sitecore.Context.Database.GetItem(articleid));
-            }
-        }
-    }
-
-
-
+<!-- Wrapper for slides -->
 <div class="carousel-inner" role="listbox">
     @{
         int j = 0;
@@ -126,8 +118,8 @@
                 <div class="carousel-caption">
                     <div class="carousel-caption-inner">
                         <div class="gd-carousel-detail">
-                            <h3>@Html.Sitecore().Field("Reference Title")</h3>
-                            <p>@Html.Sitecore().Field("Reference Content")</p>
+                            <h3>@Html.Sitecore().Field("Reference Title",item)</h3>
+                            <p>@Html.Sitecore().Field("Reference Content",item)</p>
                         </div>
                     </div>
                 </div>
@@ -173,4 +165,5 @@
                 </div>
             </div>
         </div>
+}
 </div>

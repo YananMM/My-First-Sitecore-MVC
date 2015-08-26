@@ -1,4 +1,5 @@
-﻿@model RenderingModel
+﻿@using Landmark.Classes
+@model RenderingModel
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
@@ -26,41 +27,8 @@
     </div>
 <div class="gd-promotion">
     <div class="gd-promo-heading">
-          <h2>ALSO HAPPENING IN LANDMAK</h2>
+          <h2>@Html.Sitecore().Field("Glossary Value",ItemGuids.AlsoHappenInLandmarkItem)</h2>
         </div>
-        <div class="gd-promo-body">
-          <div class="gd-promo-box">
-            <a href="#">
-            <img data-src="../files/landmark/images/nowatlm/nowatlm-image-01.jpg">
-            <h4>EVENT</h4>
-            <h2>Pool Party</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummybook.</p>
-              </a>
-          </div>
-          <div class="gd-promo-box">
-            <a href="#">
-            <img data-src="../files/landmark/images/nowatlm/nowatlm-image-02.jpg">
-            <h4>PROMOOTION</h4>
-            <h2>Stella Performance</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummybook.</p>
-              </a>
-          </div>
-          <div class="gd-promo-box">
-            <a href="#">
-            <img data-src="../files/landmark/images/nowatlm/nowatlm-image-03.jpg">
-            <h4>PROMOOTION</h4>
-            <h2>Stella Performance</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummybook.</p>
-              </a>
-          </div>
-          <div class="gd-promo-box">
-            <a href="#">
-            <img data-src="../files/landmark/images/nowatlm/nowatlm-image-04.jpg">
-            <h4>PROMOOTION</h4>
-            <h2>Stella Performance</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummybook.</p>
-              </a>
-          </div>
-        </div>
+        @Html.Sitecore().Placeholder("articles")
       </div>
 </div>
