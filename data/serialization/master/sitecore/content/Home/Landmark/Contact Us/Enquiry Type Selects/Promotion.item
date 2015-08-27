@@ -1,23 +1,23 @@
 ----item----
 version: 1
-id: {C1340B2F-1B3A-4146-BF86-E74D08CC54DE}
+id: {EF9D88A4-8D77-4759-B209-B1B1A8F3CEE7}
 database: master
 path: /sitecore/content/Home/Landmark/Contact Us/Enquiry Type Selects/Promotion
-parent: {4871B9D3-D803-468E-B3A8-9C3E772F9109}
+parent: {FA961854-6B94-4B27-8B65-C0ACA3823F76}
 name: Promotion
 master: {00000000-0000-0000-0000-000000000000}
-template: {7AD93F40-7320-4CD8-89A4-D4E4BB44ADF8}
-templatekey: Glossary Object
+template: {55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}
+templatekey: Text Object
 
 ----version----
 language: en
 version: 1
-revision: 47593a37-28e2-48fa-b4b4-cdfec2c8ee4d
+revision: 67ad003c-a3a0-4e41-a4c5-98965005d823
 
 ----field----
-field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
-name: Glossary Value
-key: glossary value
+field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
+name: Value
+key: value
 content-length: 9
 
 Promotion
@@ -27,21 +27,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150826T083125Z
+20150826T101035Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-47593a37-28e2-48fa-b4b4-cdfec2c8ee4d
+67ad003c-a3a0-4e41-a4c5-98965005d823
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150826T083821:635761751011392892Z
+20150826T101035:635761806351890962Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,11 +1,23 @@
 ﻿@using System.Diagnostics.Eventing.Reader
 @using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Collections
 @using Sitecore.ContentSearch.Utilities
 @using Sitecore.Data.Items
 @model RenderingModel
 @{
-    var formTitleSelects = LandmarkHelper.GetItemsByRootAndTemplate(Sitecore.Context.Item.Children.SingleOrDefault(p => p.DisplayName == "Enquiry Type Selects").ID.ToString(), ItemGuids.GlossaryObject);
+    var enquiryFolder = Sitecore.Context.Item.Children.SingleOrDefault(p => p.DisplayName == "Enquiry Type Selects");
+    var titleFolder = Sitecore.Context.Item.Children.SingleOrDefault(p => p.DisplayName == "Title Selects");
+    List<Item> formEnquirySelects = new List<Item>();
+    List<Item> formTitleSelects = new ItemList();
+    if (enquiryFolder != null)
+    {
+        formEnquirySelects = LandmarkHelper.GetItemsByRootAndTemplate(enquiryFolder.ID.ToString(), ItemGuids.TextObject);
+    }
+    if (titleFolder != null)
+    {
+        formTitleSelects = LandmarkHelper.GetItemsByRootAndTemplate(titleFolder.ID.ToString(), ItemGuids.TextObject);
+    }
 }
 
 <div class="gd-contact-area">
@@ -26,9 +38,10 @@
                                 <label for="title">@Html.Sitecore().Field("Title Label") *</label>
                                 <select class="form-control" id="title" name="Title" required>
                                     <option value="">@Html.Sitecore().Field("Select Label")</option>
-                                    <option value="Mr">Mr</option>
-                                    <option value="Mrs">Mrs</option>
-                                    <option value="Ms">Ms</option>
+                                    @foreach (var item in formTitleSelects)
+                                    {
+                                        <option value="@item.DisplayName">@item.DisplayName</option>
+                                    }
                                 </select>
                             </div>
                         </div>
@@ -67,10 +80,10 @@
                                 <label for="enquiirytype">@Html.Sitecore().Field("Enquiry Type Label") *</label>
                                 <select class="form-control" id="enquiirytype" name="EnquiryType" required>
                                     <option value="">@Html.Sitecore().Field("Select Label")</option>
-                                    <option value="Promotion">Promotion</option>
-                                    <option>3</option>
-                                    <option value="Website contents">Website contents</option>
-                                    <option>5</option>
+                                    @foreach (var item in formEnquirySelects)
+                                    {
+                                        <option value="@item.DisplayName">@item.DisplayName</option>
+                                    }
                                 </select>
                             </div>
                         </div>
