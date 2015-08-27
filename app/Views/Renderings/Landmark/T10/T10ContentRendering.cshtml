@@ -8,17 +8,18 @@
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
-            <h2>CONTACT US</h2>
+            <h2>@Html.Sitecore().CurrentItem.Parent.Fields["Page Title"].ToString().ToUpper()</h2>
         </div>
     </div>
 </div>
+
 <div class="container">
     <div class="gd-brief">
         <div class="gd-brief-heading  text-center">
-            <h3>Thank you for reaching us</h3>
+            <h3>@Html.Sitecore().Field("Content Title")</h3>
         </div>
         <div class="gd-brief-body  text-center">
-            <p>Your enquiry is well recceived.</p>
+            <p>@Html.Sitecore().Field("Content Description")</p>
         </div>
     </div>
 
@@ -40,7 +41,7 @@
                 </div>
             </div>
             <div class="item">
-                <div class="carousel-image" data-bgsrc="../files/landmark/images/about/about-article-01.jpg"></div>
+                <div class="carousel-image" data-bgsrc="../files/landmark/images/images/hotel/hotel-article-01.jpg"></div>
                 <div class="carousel-caption">
                     <div class="carousel-caption-inner">
                         <div class="gd-carousel-detail">
@@ -52,7 +53,7 @@
                 </div>
             </div>
             <div class="item">
-                <div class="carousel-image" data-bgsrc="../files/landmark/images/example1.jpg"></div>
+                <div class="carousel-image" data-bgsrc="../files/landmark/images/hotel/hotel-article-02.jpg"></div>
                 <div class="carousel-caption">
                     <div class="carousel-caption-inner">
                         <div class="gd-carousel-detail ">

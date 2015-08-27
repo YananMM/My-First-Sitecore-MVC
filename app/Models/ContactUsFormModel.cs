@@ -78,5 +78,11 @@ namespace Landmark.Models
         /// <value>The message.</value>
         [Required]
         public string Message { get; set; }
+
+        /// <summary>
+        /// Gets or sets the validate code.
+        /// </summary>
+        /// <value>The validate code.</value>
+        public string ValidateCode { get; set; }
     }
 }

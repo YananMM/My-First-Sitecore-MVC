@@ -31,7 +31,7 @@
         <p>@Html.Sitecore().Field("Contact Form Description")</p>
         <div class="row">
             <div class="col-sm-9">
-                <form class="gd-contact-form" action="@Url.Action("AddCustomerMessage", "Home")" method="POST">
+                <form class="gd-contact-form" action="@Url.Action("AddCustomerMessage", "Home")" method="POST" id="myForm">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
@@ -99,14 +99,20 @@
                     <div class="row gd-contact-code  form-inline">
                         <div class="col-sm-11">
                             <p>@Html.Sitecore().Field("Verrification Label") *</p>
-                            <img src="http://dummyimage.com/275x65" />
-                            <input type="text" id="code" class="form-control">
-                            <a href="#">@Html.Sitecore().Field("Generate another code Label")</a>
+                            <img id="valiCode" style="cursor: pointer;" src="@Url.Action("GetValidateCode", "Home")" alt="ValidateCode" />
+                            <input type="text" id="code" class="form-control" name="ValidateCode" required>
+                            <a href="javascript:changeImg();">@Html.Sitecore().Field("Generate another code Label")</a>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-black">@Html.Sitecore().Field("Button Text")</button>
+                    <input type="submit" class="btn btn-black" value="@Html.Sitecore().Field("Button Text")">
                 </form>
             </div>
         </div>
     </div>
 </div>
+<script type="text/javascript">
+
+    function changeImg() {
+        document.getElementById("valiCode").src = "@Url.Action("GetValidateCode", "Home")?time=" + Math.random();
+    }
+</script>
