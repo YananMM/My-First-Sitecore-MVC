@@ -59,6 +59,7 @@ namespace Landmark.Controllers
                     {
                         ContactUsForm customer = new ContactUsForm()
                         {
+                            ID = Guid.NewGuid(),
                             Title = model.Title,
                             FirstName = model.FirstName,
                             LastName = model.LastName,

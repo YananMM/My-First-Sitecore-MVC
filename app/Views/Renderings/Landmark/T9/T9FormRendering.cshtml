@@ -40,7 +40,7 @@
                                     <option value="">@Html.Sitecore().Field("Select Label")</option>
                                     @foreach (var item in formTitleSelects)
                                     {
-                                        <option value="@item.DisplayName">@item.DisplayName</option>
+                                        <option value="@item.Name">@item.Name</option>
                                     }
                                 </select>
                             </div>
@@ -82,7 +82,7 @@
                                     <option value="">@Html.Sitecore().Field("Select Label")</option>
                                     @foreach (var item in formEnquirySelects)
                                     {
-                                        <option value="@item.DisplayName">@item.DisplayName</option>
+                                        <option value="@item.Name">@item.Name</option>
                                     }
                                 </select>
                             </div>

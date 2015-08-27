@@ -14,13 +14,13 @@ namespace Landmark.Models
     
     public partial class ContactUsForm
     {
-        public int ID { get; set; }
+        public System.Guid ID { get; set; }
         public string Title { get; set; }
-        public string LastName { get; set; }
         public string FirstName { get; set; }
+        public string LastName { get; set; }
         public string Telephone { get; set; }
         public string Email { get; set; }
-        public string EnquiryType { get; set; }
         public string Message { get; set; }
+        public string EnquiryType { get; set; }
     }
 }
