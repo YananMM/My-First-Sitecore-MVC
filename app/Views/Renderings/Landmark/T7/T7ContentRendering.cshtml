@@ -12,7 +12,10 @@
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
             <h2>@Sitecore.Context.Item["Page Title"].ToUpper()</h2>
-            <a href='@LandmarkHelper.FileFieldSrc("Floor Guide",activeItem)' class="gd-link-audio">
+@{
+    string pdf = LandmarkHelper.FileFieldSrc("Floor Guide", activeItem);
+}
+            <a href='@pdf' class="gd-link-audio"  target="_blank" onclick="scDownload(@pdf)" >
                 <span class="icomoon-download"></span> @Sitecore.Context.Item["Download Label"].ToUpper()
             </a>
         </div>

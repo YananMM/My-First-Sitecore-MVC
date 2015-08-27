@@ -3,6 +3,7 @@
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Landmark.Models
+@using Sitecore.Links
 @model RenderingModel
 
 @{
@@ -36,7 +37,7 @@
     <div id="gd-art-gallery">
 
     </div>
-    <a id="gd-art-gallery-loading" class="loding-more"><img src="../files/landmark/images/more.gif"></a>
+    <div class="navigation"><a href="@LinkManager.GetItemUrl(Sitecore.Context.Item)?building=2&page=2" class="gd-artlist-more">SEE MORE +</a></div>
 </div>
 
 
