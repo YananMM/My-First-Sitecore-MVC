@@ -1,47 +1,47 @@
 ----item----
 version: 1
-id: {E97B3DE3-422F-425C-9BF7-B15B96E1E735}
+id: {30D7A7AF-BF8C-4A89-B226-C621E44E1EFB}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Article Object/Article Data
-parent: {E0472501-0925-4F7F-A5BC-84F0ECA1B7F8}
-name: Article Data
+path: /sitecore/content/Global/Landmark/Glossary/Now At Landmark/DISCOVER MORE
+parent: {3FDC1E25-3B38-42A7-9489-3D1F3693A1BE}
+name: DISCOVER MORE
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {7AD93F40-7320-4CD8-89A4-D4E4BB44ADF8}
+templatekey: Glossary Object
 
 ----version----
 language: en
 version: 1
-revision: ea43d178-b42e-44d9-990c-3a8ff917887d
+revision: c662a3be-c3d5-44b9-9ea6-b06f5260e038
 
+----field----
+field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
+name: Glossary Value
+key: glossary value
+content-length: 13
+
+DISCOVER MORE
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150826T021650Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
+20150827T085009Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-ea43d178-b42e-44d9-990c-3a8ff917887d
+c662a3be-c3d5-44b9-9ea6-b06f5260e038
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150827T071510Z
+20150827T085009Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
