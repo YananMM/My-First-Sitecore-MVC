@@ -10,23 +10,31 @@
     var buildings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
 }
 <div class="row">
-    <div class="col-md-6">
-        <ul class="list-group gd-list-guide clearfix" id="gdfloorlist">
+    <div class="col-md-6" id="gd-list-locations">
+        <ul class="list-group gd-list-guide hidden-xs clearfix" id="gdfloorlist">
             @for (int i = 0; i < buildings.Count; i++)
             {
-                string cssclass = i==0? "active":string.Empty;
-                <li data-id="@buildings[i].ID.ToString()" data-location='@buildings[i].Fields["Building Svg Id"].Value' class="list-group-item @cssclass"><span class="badge">@(i+1)</span>@buildings[i].Fields["Building Title"].Value</li>
+                string cssclass = i == 0 ? "active" : string.Empty;
+                <li data-id="@buildings[i].ID.ToString()" data-location='@buildings[i].Fields["Building Svg Id"].Value' class="list-group-item @cssclass"><span class="badge">@(i + 1)</span>@buildings[i].Fields["Building Title"].Value</li>
             }
         </ul>
+        <div class="gd-controls-m visible-xs">
+            <select class="form-control">
+                @for (int i = 0; i < buildings.Count; i++)
+                {
+                    <option value="gdfpa@(i+1)"> @buildings[i].Fields["Building Title"].Value</option>
+                }
+            </select>
+        </div>
     </div>
     <div class="col-md-6">
         <div id="mapplic-t22"></div>
     </div>
 </div>
 <div class="gd-artlist">
-    <h2>LANDMARK ARTIUM</h2>
+    <h3>LANDMARK ARTIUM</h3>
     <div id="gd-art-gallery">
-        
+
     </div>
     <a id="gd-art-gallery-loading" class="loding-more"><img src="../files/landmark/images/more.gif"></a>
 </div>
@@ -34,6 +42,6 @@
 
 
 @*<script type="text/javascript" src="/files/landmark/js/lib/svgmap/js/hammer.min.js"></script>
-<script type="text/javascript" src="/files/landmark/js/lib/svgmap/js/jquery.easing.js"></script>
-<script type="text/javascript" src="/files/landmark/js/lib/svgmap/js/smoothscroll.js"></script>
-<script type="text/javascript" src="/files/landmark/js/lib/svgmap/mapplic/mapplic.js"></script>*@
+    <script type="text/javascript" src="/files/landmark/js/lib/svgmap/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="/files/landmark/js/lib/svgmap/js/smoothscroll.js"></script>
+    <script type="text/javascript" src="/files/landmark/js/lib/svgmap/mapplic/mapplic.js"></script>*@
