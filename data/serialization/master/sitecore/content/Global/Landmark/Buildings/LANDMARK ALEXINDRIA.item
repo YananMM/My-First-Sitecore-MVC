@@ -19,7 +19,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 2fe1cf72-f415-4988-8b6e-6190aae55c19
+revision: 093f1976-b95d-44c4-80e8-6d5df8735706
 
 ----field----
 field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
@@ -57,6 +57,13 @@ content-length: 6
 
 0.8533
 ----field----
+field: {4A1E2FC8-CB80-42C3-BCA9-4E7E9DA0CF91}
+name: Floor Guide
+key: floor guide
+content-length: 109
+
+<file mediaid="{8E5D4DBB-B6CA-461F-A514-E45BDC048248}" src="~/media/8e5d4dbbb6ca461fa514e45bdc048248.ashx" />
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2fe1cf72-f415-4988-8b6e-6190aae55c19
+093f1976-b95d-44c4-80e8-6d5df8735706
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150820T073908Z
+20150827T060754Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

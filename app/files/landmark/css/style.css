@@ -11806,11 +11806,48 @@ h4 {
 }
 .gd-promotion a:focus,
 .gd-promotion a:active {
-  color: #ffffff;
+  color: #c1a875;
   text-decoration: none;
 }
 .gd-promotion .gd-promo-heading {
   text-align: center;
+}
+.gd-promotion .gd-promo-filter {
+  margin: 60px 0;
+}
+.gd-promotion .gd-promo-filter > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.gd-promotion .gd-promo-filter > ul > li {
+  display: inline-block;
+  margin: 0;
+  padding: 0 30px;
+  border-left: solid 1px #222;
+}
+.gd-promotion .gd-promo-filter > ul > li:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+.gd-promotion .gd-promo-filter .gd-promo-brands {
+  float: right;
+  position: relative;
+}
+.gd-promotion .gd-promo-filter .gd-promo-brands .gd-promo-brands-area {
+  width: 100%;
+  border: solid 1px #222;
+  padding: 20px;
+  position: absolute;
+}
+.gd-promotion .gd-promo-filter .gd-promo-brands ul {
+  margin: 0;
+  padding: 0;
+}
+.gd-promotion .gd-promo-filter .gd-promo-brands ul li {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
 }
 .gd-promotion .gd-promo-body {
   margin-top: 30px;
@@ -11970,24 +12007,6 @@ h4 {
 .gd-content-details p {
   line-height: 2;
 }
-.gd-content-details dl {
-  font-size: 10px;
-  margin: 20px 0;
-  padding: 0;
-}
-.gd-content-details dl dt {
-  color: #d4a962;
-  display: inline-block;
-  margin-right: 10px;
-  font-weight: normal;
-}
-.gd-content-details dl dt span {
-  margin-right: 10px;
-}
-.gd-content-details dl dd {
-  color: #999999;
-  display: inline-block;
-}
 .gd-content-details ul {
   position: relative;
   list-style: none;
@@ -12007,6 +12026,26 @@ h4 {
 .gd-content-details .gd-link-map {
   font-size: 12px;
   color: #666;
+}
+dl.gd-content-details-tags {
+  font-size: 10px;
+  margin: 20px 0;
+  padding: 0;
+}
+dl.gd-content-details-tags dt {
+  color: #d4a962;
+  display: block;
+  margin-right: 10px;
+  float: left;
+  font-weight: normal;
+}
+dl.gd-content-details-tags dt span {
+  margin-right: 10px;
+}
+dl.gd-content-details-tags dd {
+  color: #999999;
+  margin-left: 70px;
+  display: block;
 }
 .gd-nd-slider-text {
   color: #666666;
@@ -12132,6 +12171,9 @@ h4 {
 .t14 .back-top {
   height: 0;
 }
+.t14 .gd-longarticle {
+  height: 150px;
+}
 @media (min-width: 768px) {
   .t14 .shopdetails-brand {
     margin: 25px 0 0;
@@ -12167,6 +12209,9 @@ h4 {
   }
   .t14 .shopdetails-brand .shopdetails-brand-body .row > .col-sm-2 > a > img {
     max-width: 100%;
+  }
+  .t14 .gd-longarticle {
+    height: 230px;
   }
 }
 .t22 h5 {
@@ -12442,6 +12487,9 @@ h4 {
     display: none;
   }
 }
+.t22-svg .gd-pagetitle .gd-controls-m {
+  margin-bottom: 10px;
+}
 .t33 .gd-mainimage-single .carousel-inner .item > .carousel-caption {
   background-color: #000000;
   background-color: rgba(0, 0, 0, 0.8);
@@ -12698,10 +12746,8 @@ h4 {
   background-color: #f6f6f6;
   position: relative;
 }
-.t29 .gd-longarticle p {
+.t29 .gd-longarticle {
   height: 84px;
-  line-height: 2;
-  overflow: hidden;
 }
 .t29 .back-top {
   height: 0;
@@ -12721,12 +12767,12 @@ h4 {
   h5 {
     margin-top: 35px;
   }
-  .t29 .gd-longarticle p {
+  .t29 .gd-longarticle {
     height: 77px;
   }
 }
 @media (min-width: 1000px) {
-  .t29 .gd-longarticle p {
+  .t29 .gd-longarticle {
     height: 84px;
   }
 }
@@ -12778,9 +12824,8 @@ h4 {
   display: block;
   margin-top: 20px;
 }
-.t30 .gd-longarticle p + p {
+.t30 .gd-longarticle {
   height: 84px;
-  overflow: hidden;
 }
 .t30 .back-top {
   height: 0;
@@ -13169,6 +13214,9 @@ h4 {
 }
 .t24 .gd-content-details .table-responsive table tr > th {
   width: 40%;
+}
+.t26 .gd-promotion {
+  margin-top: 60px;
 }
 @media (min-width: 1000px) {
   body,
@@ -13684,10 +13732,6 @@ h4 {
   height: 100%;
   overflow: hidden;
 }
-.page-freeze body {
-  height: 100%;
-  overflow: hidden;
-}
 .lazy-hidden {
   background: url('/files/landmark/images/more.gif') no-repeat 50% 50%;
   display: block;
@@ -13707,5 +13751,14 @@ h4 {
 input[type="checkbox"] {
   -webkit-appearance: checkbox;
   box-sizing: border-box;
+}
+.gd-longarticle > .gd-longarticle-switcher {
+  display: none;
+}
+.is-truncated {
+  height: auto!important;
+}
+.is-truncated .gd-longarticle-switcher {
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */

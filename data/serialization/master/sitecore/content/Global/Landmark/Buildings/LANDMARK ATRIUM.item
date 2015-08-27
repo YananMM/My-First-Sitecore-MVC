@@ -12,7 +12,7 @@ templatekey: Building Data
 ----version----
 language: en
 version: 1
-revision: 7d5443d7-6b87-4332-9ab6-cfa380157e92
+revision: 80f524e6-ad06-4b1a-a608-a6f602fb8098
 
 ----field----
 field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
@@ -50,6 +50,13 @@ content-length: 6
 
 0.4867
 ----field----
+field: {4A1E2FC8-CB80-42C3-BCA9-4E7E9DA0CF91}
+name: Floor Guide
+key: floor guide
+content-length: 109
+
+<file mediaid="{FDA7D14F-EAD1-482F-8299-FB70D78A4B6D}" src="~/media/fda7d14fead1482f8299fb70d78a4b6d.ashx" />
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -62,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7d5443d7-6b87-4332-9ab6-cfa380157e92
+80f524e6-ad06-4b1a-a608-a6f602fb8098
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150820T073926Z
+20150827T060808Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

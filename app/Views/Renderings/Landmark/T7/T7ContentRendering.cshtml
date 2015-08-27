@@ -5,13 +5,14 @@
 @model RenderingModel
 @{
     string src = Html.Sitecore().ImageFieldSrc("Map Menu Image", Sitecore.Context.Item);
-    ChildList buidings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
+    ChildList buildings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
+    Item activeItem = Request["buildingID"]==null?buildings[0]:Sitecore.Context.Database.GetItem(Request["buildingID"]);
 }
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
             <h2>@Sitecore.Context.Item["Page Title"].ToUpper()</h2>
-            <a href="#" class="gd-link-audio">
+            <a href='@LandmarkHelper.FileFieldSrc("Floor Guide",activeItem)' class="gd-link-audio">
                 <span class="icomoon-download"></span> @Sitecore.Context.Item["Download Label"].ToUpper()
             </a>
         </div>
@@ -20,18 +21,10 @@
             <ul>
                 @{
                     int i = 0;
-                    foreach (Item building in buidings)
+                    foreach (Item building in buildings)
                     {
-                        if (i == 0)
-                        {
-                            <li class="active" data-service=""><a href="#">@building.Fields["Building Title"].Value</a></li>
-                        }
-                        else
-                        {
-                            <li>
-                                <a href="#" data-form="">@building.Fields["Building Title"].Value</a>
-                            </li>
-                        }
+                        string cssclass = building.ID.ToString() == activeItem.ID.ToString() ? "active" : "";
+                        <li class="@cssclass" data-service=""><a href="?buildingID=@building.ID.ToString()" data-src="/Service/Landmark.asmx/GetFloorPlanJson?buildingID=@building.ID.ToString()">@building.Fields["Building Title"].Value</a></li>
                         i++;
                     }
                 }
