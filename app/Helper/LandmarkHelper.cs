@@ -208,9 +208,9 @@ namespace Landmark.Helper
             return imageURL;
         }
 
-        public static String ToValidDateTime(DateField datetime)
+        public static DateTime ToValidDateTime(DateField datetime)
         {
-            return datetime.DateTime.AddHours(8).ToString("hh:mmtt", CultureInfo.InvariantCulture);
+            return datetime.DateTime.AddHours(8);
         }
 
         public static List<Item> GetItemsByTags(Item item)

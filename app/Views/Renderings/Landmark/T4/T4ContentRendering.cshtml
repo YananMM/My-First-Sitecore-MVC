@@ -10,9 +10,9 @@
     var toDateField = (DateField) Sitecore.Context.Item.Fields["Event To Date"];
     var toDate = toDateField.DateTime.ToString("d MMM yyyy",CultureInfo.InvariantCulture);
     var fromDateTimeField = (DateField) Sitecore.Context.Item.Fields["Event From Time"];
-    var fromDateTime = LandmarkHelper.ToValidDateTime(fromDateTimeField);
+    var fromDateTime = LandmarkHelper.ToValidDateTime(fromDateTimeField).ToString("hh:mmtt", CultureInfo.InvariantCulture);
     var toDateTimeField = (DateField) Sitecore.Context.Item.Fields["Event To Time"];
-    var toDateTime = LandmarkHelper.ToValidDateTime(toDateTimeField);
+    var toDateTime = LandmarkHelper.ToValidDateTime(toDateTimeField).ToString("hh:mmtt", CultureInfo.InvariantCulture);
     var floor = ((ReferenceField) Sitecore.Context.Item.Fields["Event Floor"]).TargetItem;
     var building = floor.Parent;
 }

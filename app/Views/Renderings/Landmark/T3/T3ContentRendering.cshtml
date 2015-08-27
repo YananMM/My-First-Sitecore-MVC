@@ -1,5 +1,13 @@
-﻿@using Landmark.Classes
+﻿@using System.Globalization
+@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
 @model RenderingModel
+@{
+    var helper = new NowAtLandmarkHelper();
+    var latestItem = helper.GetLatestArticle();
+    DateField date = ((DateField) latestItem.Fields["Article Date"]);
+}
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
@@ -8,19 +16,20 @@
     </div>
     <div class="gd-newsdetails">
         <div class="gd-nd-info-text">@Html.Sitecore().Field("Page Content")</div>
-        @Html.Sitecore().Field("Page Banner Image")
+        @Html.Sitecore().Field("Article Slider Image",latestItem)
     </div>
     <div class="gd-brief">
         <div class="gd-brief-heading">
             <h2>
-                @Html.Sitecore().Field("Content Title")
+                @Html.Sitecore().Field("Article Headline",latestItem)
             </h2>
         </div>
         <div class="gd-brief-body">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    @Html.Sitecore().Field("Content Description")
-                    <button class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Button Text")</button>
+                    <p>@LandmarkHelper.ToValidDateTime(date).ToString("MMM dd,yyyy", CultureInfo.InvariantCulture)</p>
+                    <p>@Html.Sitecore().Field("Article Intro", latestItem)</p>
+                    <button class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Glossary Value", ItemGuids.DiscoverMoreItem)</button>
                 </div>
             </div>
         </div>
