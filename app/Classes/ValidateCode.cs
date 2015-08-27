@@ -145,7 +145,7 @@ namespace Landmark.Classes
             oRnd = new Random();
 
 
-            //生成驗證碼字串
+            //生成验证码字符串
             for (N1 = 0; N1 <= CodeLength - 1; N1++)
             {
                 sCode += oCharacter[oRnd.Next(oCharacter.Length)];
