@@ -55,22 +55,15 @@ namespace Landmark.Controllers
             {
                 try
                 {
-                    using (LandmarkSitecore_MasterEntities context = new LandmarkSitecore_MasterEntities())
+                    var result = AddContact(model);
+                    if (result == "1")
                     {
-                        ContactUsForm customer = new ContactUsForm()
-                        {
-                            ID = Guid.NewGuid(),
-                            Title = model.Title,
-                            FirstName = model.FirstName,
-                            LastName = model.LastName,
-                            Telephone = model.Telephone,
-                            Email = model.Email,
-                            EnquiryType = model.EnquiryType,
-                            Message = model.Message,
-                        };
-                        context.ContactUsForms.Add(customer);
-                        var result = context.SaveChanges();
-                        return Content(result.ToString());
+                        return RedirectToAction("ButtonRedirect", new { targetId = ItemGuids.ThankYouPage });
+                    }
+                    else
+                    {
+                        return Content(result);
+                        //return RedirectToAction("ButtonRedirect", new { targetId = ItemGuids.ContactUsPage });
                     }
                 }
                 catch (Exception e)
@@ -81,34 +74,68 @@ namespace Landmark.Controllers
             return RedirectToAction("ButtonRedirect", new { targetId = ItemGuids.ContactUsPage });
         }
 
-
         public string AddContact(ContactUsFormModel model)
         {
+            var code = Session["ValidateCode"].ToString();
             if (string.IsNullOrEmpty(model.Email))
             {
                 return "Email can not be empty";
             }
             else if (string.IsNullOrEmpty(model.LastName))
             {
-
+                return "Last Name can not be empty";
             }
-            using (LandmarkSitecore_MasterEntities context = new LandmarkSitecore_MasterEntities())
+            else if (string.IsNullOrEmpty(model.FirstName))
             {
-                ContactUsForm customer = new ContactUsForm()
+                return "First Name can not be empty";
+            }
+            else if (string.IsNullOrEmpty(model.Email))
+            {
+                return "Emial can not be empty";
+            }
+            else if (string.IsNullOrEmpty(model.EnquiryType))
+            {
+                return "Enquiry Type can not be empty";
+            }
+            else if (string.IsNullOrEmpty(model.Message))
+            {
+                return "Message can not be empty";
+            }
+            else if (code != model.ValidateCode)
+            {
+                return "Validate code is error";
+            }
+            else
+            {
+                using (LandmarkSitecore_MasterEntities context = new LandmarkSitecore_MasterEntities())
                 {
-                    Title = model.Title,
-                    FirstName = model.FirstName,
-                    LastName = model.LastName,
-                    Telephone = model.Telephone,
-                    Email = model.Email,
-                    EnquiryType = model.EnquiryType,
-                    Message = model.Message,
-                };
-                context.ContactUsForms.Add(customer);
-                var result = context.SaveChanges();
-                return result.ToString();
+                    ContactUsForm customer = new ContactUsForm()
+                    {
+                        ID = Guid.NewGuid(),
+                        Title = model.Title,
+                        FirstName = model.FirstName,
+                        LastName = model.LastName,
+                        Telephone = model.Telephone,
+                        Email = model.Email,
+                        EnquiryType = model.EnquiryType,
+                        Message = model.Message,
+                    };
+                    context.ContactUsForms.Add(customer);
+                    var result = context.SaveChanges();
+                    return result.ToString();
+                }
             }
         }
 
+        public ActionResult GetValidateCode()
+        {
+            Random oRnd;
+            ValidateCode vCode = new ValidateCode();
+            string code = vCode.CreateCode(5, out oRnd);
+            Session["ValidateCode"] = code;
+            ViewBag.Code = code;
+            var bytes = vCode.CreateValidateCode(5, 280, 60, 22);
+            return File(bytes, @"image/jpeg");
+        }
     }
 }

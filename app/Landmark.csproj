@@ -134,6 +134,7 @@
     <Compile Include="Classes\InstagramSocial.cs" />
     <Compile Include="Classes\ItemGuids.cs" />
     <Compile Include="Classes\Crawlers\LanguageFallbackCrawler.cs" />
+    <Compile Include="Classes\ValidateCode.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\ShoppingController.cs" />

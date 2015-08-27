@@ -33,6 +33,7 @@ namespace Landmark.Classes
         public static readonly String T35GetDirectionPage = "{AE130080-B8B6-4D9E-B863-C88DC329B657}";
         public static readonly String T35SurroundingPage = "{54824316-017A-4B94-AD8E-F636473B510A}";
         public static readonly String ContactUsPage = "{5EC2DEF7-B8CE-45CD-96CD-9967773B5808}";
+        public static readonly String ThankYouPage = "{C6045FFE-5883-49F7-AC6E-653919640DDB}";
         public static readonly String TextObject = "{55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}";
         //item id
         //public static readonly String PanelsFolderItemGuid = "{3BB40D54-8F7F-449B-B9DB-432C65EB4224}";
@@ -113,7 +114,7 @@ namespace Landmark.Classes
         public static readonly Item VenueItem = Sitecore.Context.Database.GetItem("{19EF3D69-3DDC-4A84-A1F7-F93E2098929D}");
         public static readonly Item WebsiteItem = Sitecore.Context.Database.GetItem("{AEC15D0C-B92E-47D7-991C-EE96110E609A}");
         public static readonly Item AlsoHappenInLandmarkItem = Sitecore.Context.Database.GetItem("{F00CB9D5-2A9A-4C42-860A-4B0476B41C6F}");
-        
+
         public static readonly Item PhoneItem = Sitecore.Context.Database.GetItem("{4AAF25F5-0A1C-45AA-B81D-B27AD46F37C2}");
 
         public static readonly Item AddressItem = Sitecore.Context.Database.GetItem("{86E8B0C2-6C91-45D9-949C-DE5C1CB64ED3}");
