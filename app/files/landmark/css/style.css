@@ -10862,6 +10862,7 @@ h4 {
 .gd-carousel-info .carousel-inner .carousel-caption .carousel-caption-inner .gd-carousel-detail p {
   color: #222222;
   font-size: 13px;
+  height: 80px;
   line-height: 2;
   margin: 0;
 }
@@ -11568,11 +11569,7 @@ h4 {
   min-height: 200px;
   overflow: hidden;
 }
-.gd-lightbox .modal-content .modal-body.has-overflow {
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-.gd-lightbox .modal-content .modal-body > img {
+.gd-lightbox .modal-content .modal-body img {
   display: block;
   max-width: 100%;
   max-height: 1200px;
@@ -12171,8 +12168,8 @@ dl.gd-content-details-tags dd {
 .t14 .back-top {
   height: 0;
 }
-.t14 .gd-longarticle {
-  height: 150px;
+.t14 .gd-longarticle > p {
+  height: auto;
 }
 @media (min-width: 768px) {
   .t14 .shopdetails-brand {
@@ -12210,8 +12207,8 @@ dl.gd-content-details-tags dd {
   .t14 .shopdetails-brand .shopdetails-brand-body .row > .col-sm-2 > a > img {
     max-width: 100%;
   }
-  .t14 .gd-longarticle {
-    height: 230px;
+  .t14 .gd-longarticle > p {
+    height: auto;
   }
 }
 .t22 h5 {
@@ -13760,5 +13757,11 @@ input[type="checkbox"] {
 }
 .is-truncated .gd-longarticle-switcher {
   display: inline-block;
+}
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #D4A962!important;
+  -webkit-border-radius: 3px!important;
+  -moz-border-radius: 3px!important;
+  border-radius: 3px!important;
 }
 /*# sourceMappingURL=style.css.map */

@@ -319,6 +319,15 @@
     <Content Include="files\landmark\images\title-arrow-ie.png" />
     <Content Include="files\landmark\images\title-arrow.png" />
     <Content Include="files\landmark\images\title-arrow2.png" />
+    <Content Include="App_Config\Include\Landmark.config">
+      <SubType>Designer</SubType>
+      <TransformOnBuild>true</TransformOnBuild>
+    </Content>
+    <Content Include="App_Config\Include\LandmarkSearch.config" />
+    <Content Include="App_Config\Landmark\RewriteMaps.config" />
+    <Content Include="App_Config\Landmark\RewriteRules.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="files\landmark\js\html5shiv-printshiv.min.js" />
     <Content Include="files\landmark\js\lib\bootstrap-select.js" />
     <Content Include="files\landmark\js\lib\bootstrap.min.js" />
@@ -332,10 +341,12 @@
     <Content Include="files\landmark\js\lib\jquery-migrate-1.2.1.min.js" />
     <Content Include="files\landmark\js\lib\jquery.bxslider.css" />
     <Content Include="files\landmark\js\lib\jquery.bxslider.min.js" />
+    <Content Include="files\landmark\js\lib\jquery.dotdotdot.min.js" />
     <Content Include="files\landmark\js\lib\jquery.easing.1.3.js" />
     <Content Include="files\landmark\js\lib\jquery.fitvids.js" />
     <Content Include="files\landmark\js\lib\jquery.fitvids.min.js" />
     <Content Include="files\landmark\js\lib\jquery.fullPage.js" />
+    <Content Include="files\landmark\js\lib\jquery.infinitescroll.js" />
     <Content Include="files\landmark\js\lib\jquery.lazyloadxt.bg.min.js" />
     <Content Include="files\landmark\js\lib\jquery.lazyloadxt.min.js" />
     <Content Include="files\landmark\js\lib\jquery.mousewheel.min.js" />
@@ -346,11 +357,17 @@
     <Content Include="files\landmark\js\lib\masonry.pkgd.min.js" />
     <Content Include="files\landmark\js\lib\modernizr-2.6.2.min.js" />
     <Content Include="files\landmark\js\lib\respond.js" />
+    <Content Include="files\landmark\js\lib\scrollbar\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="files\landmark\js\lib\scrollbar\jquery.mCustomScrollbar.min.css" />
     <Content Include="files\landmark\js\lib\selectivizr-min.js" />
     <Content Include="files\landmark\js\lib\svgmap\css\font-awesome.css" />
     <Content Include="files\landmark\js\lib\svgmap\css\map.css" />
     <Content Include="files\landmark\js\lib\svgmap\css\style.css" />
+    <Content Include="files\landmark\js\lib\svgmap\fonts\fontawesome-webfont.eot" />
     <Content Include="files\landmark\js\lib\svgmap\fonts\fontawesome-webfont.svg" />
+    <Content Include="files\landmark\js\lib\svgmap\fonts\fontawesome-webfont.ttf" />
+    <Content Include="files\landmark\js\lib\svgmap\fonts\fontawesome-webfont.woff" />
+    <Content Include="files\landmark\js\lib\svgmap\fonts\FontAwesome.otf" />
     <Content Include="files\landmark\js\lib\svgmap\images\apartment\lower-small.jpg" />
     <Content Include="files\landmark\js\lib\svgmap\images\apartment\lower.jpg" />
     <Content Include="files\landmark\js\lib\svgmap\images\apartment\upper-small.jpg" />
@@ -476,24 +493,11 @@
     <Content Include="files\landmark\js\lib\uisearch.js" />
     <Content Include="files\landmark\js\main.js" />
     <Content Include="files\landmark\js\npm.js" />
-    <Content Include="App_Config\Include\Landmark.config">
-      <SubType>Designer</SubType>
-      <TransformOnBuild>true</TransformOnBuild>
-    </Content>
-    <Content Include="App_Config\Include\LandmarkSearch.config" />
-    <Content Include="App_Config\Landmark\RewriteMaps.config" />
-    <Content Include="App_Config\Landmark\RewriteRules.config">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="mstile-144x144.png" />
     <Content Include="mstile-150x150.png" />
     <Content Include="mstile-310x150.png" />
     <Content Include="mstile-310x310.png" />
     <Content Include="mstile-70x70.png" />
-    <Content Include="files\landmark\js\lib\svgmap\fonts\fontawesome-webfont.eot" />
-    <Content Include="files\landmark\js\lib\svgmap\fonts\fontawesome-webfont.ttf" />
-    <Content Include="files\landmark\js\lib\svgmap\fonts\fontawesome-webfont.woff" />
-    <Content Include="files\landmark\js\lib\svgmap\fonts\FontAwesome.otf" />
     <None Include="App_Config\ConnectionStrings.DEV.config">
       <DependentUpon>ConnectionStrings.config</DependentUpon>
       <IsTransformFile>True</IsTransformFile>
