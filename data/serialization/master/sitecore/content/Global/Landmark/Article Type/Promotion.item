@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {570AE6CA-A88C-4319-BE72-F304687CD3F8}
+database: master
+path: /sitecore/content/Global/Landmark/Article Type/Promotion
+parent: {2F7748B7-07ED-413F-8B92-382DCE56A8C9}
+name: Promotion
+master: {00000000-0000-0000-0000-000000000000}
+template: {55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}
+templatekey: Text Object
+
+----version----
+language: en
+version: 1
+revision: 41e7ee04-1a6e-4a5d-b403-a8ac9255fb22
+
+----field----
+field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
+name: Value
+key: value
+content-length: 9
+
+Promotion
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150826T024704Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+41e7ee04-1a6e-4a5d-b403-a8ac9255fb22
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150826T024754Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

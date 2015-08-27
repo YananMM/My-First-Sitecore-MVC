@@ -11,12 +11,13 @@
         @foreach (Item child in articles)
         {
             var referenceItem = ((ReferenceField) child.Fields["Reference Item"]).TargetItem;
+            Item type = ((ReferenceField) referenceItem.Fields["Article Type"]).TargetItem;
             <div class="gd-promo-box">
                 <a href="@LinkManager.GetItemUrl(referenceItem)">
-                    <img data-src='@Html.Sitecore().ImageFieldSrc("Reference Image", referenceItem)'>
-                    <h4>EVENT</h4>
-                    <h2>@Html.Sitecore().Field("Reference Title", referenceItem)</h2>
-                    <p>@Html.Sitecore().Field("Reference Content", referenceItem)</p>
+                    <img data-src='@Html.Sitecore().ImageFieldSrc("Article Image", referenceItem)'>
+                    <h4>@type.Fields["Value"].ToString().ToUpper()</h4>
+                    <h2>@Html.Sitecore().Field("Article Headline", referenceItem)</h2>
+                    <p>@Html.Sitecore().Field("Article Intro", referenceItem)</p>
                 </a>
             </div>
         }

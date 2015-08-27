@@ -26,8 +26,36 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: ff0a859e-7b1d-492b-8b25-4e767cbdf127
+revision: 41e45458-3bfc-4646-95dc-b3ba4502a7b1
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 18
+
+Stella Performance
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 117
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummybook.<br>
+----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Image
+key: article image
+content-length: 58
+
+<image mediaid="{C8350D8D-2422-4F5C-BD8E-75E29FC3E0FD}" />
+----field----
+field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
+name: Article Type
+key: article type
+content-length: 38
+
+{0799CC76-D623-49FD-8025-8E9358A13B62}
 ----field----
 field: {D0682F10-5AE7-4391-AD4C-A32B5B301488}
 name: Event From Date
@@ -133,27 +161,6 @@ content-length: 38
 
 {F1CC2EDE-A165-4FC4-B47A-8C0DF29BDE27}
 ----field----
-field: {0EF19FDC-0255-4003-B176-1AA1BCD7823B}
-name: Reference Title
-key: reference title
-content-length: 110
-
-The iconic Mandarin Oriental, Hong Kong is the epitome of contemporary luxury combined with Oriental heritage.
-----field----
-field: {188812E9-FA7F-4318-9DC6-597BB0CC01A2}
-name: Reference Content
-key: reference content
-content-length: 363
-
-The Landmark Mandarin Oriental is simply one of the best luxury city hotels in the world. Our 113 guestrooms are amongst the largest hotel rooms in Hong Kong and each a masterpiece of contemporary design. We offer a cocoon of discreet serenity, attended by our legendary service. This is a highly exclusive experience in the premier business and fashion location.
-----field----
-field: {5C970403-0E03-4D2C-959C-83E169FA76CB}
-name: Reference Image
-key: reference image
-content-length: 58
-
-<image mediaid="{CBE9DFFD-A273-48D4-9518-793F6CF8EFB2}" />
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -166,14 +173,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ff0a859e-7b1d-492b-8b25-4e767cbdf127
+41e45458-3bfc-4646-95dc-b3ba4502a7b1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150826T030151Z
+20150826T114050Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

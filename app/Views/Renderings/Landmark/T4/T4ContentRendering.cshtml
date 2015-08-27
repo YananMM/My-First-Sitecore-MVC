@@ -114,12 +114,12 @@
                 @{
             j++;
                 }
-                <div class="carousel-image" data-bgsrc='@Html.Sitecore().ImageFieldSrc("Reference Image", item)'></div>
+                <div class="carousel-image" data-bgsrc='@Html.Sitecore().ImageFieldSrc("Article Image", item)'></div>
                 <div class="carousel-caption">
                     <div class="carousel-caption-inner">
                         <div class="gd-carousel-detail">
-                            <h3>@Html.Sitecore().Field("Reference Title",item)</h3>
-                            <p>@Html.Sitecore().Field("Reference Content",item)</p>
+                            <h3>@Html.Sitecore().Field("Article Headline",item)</h3>
+                            <p>@Html.Sitecore().Field("Article Intro",item)</p>
                         </div>
                     </div>
                 </div>
