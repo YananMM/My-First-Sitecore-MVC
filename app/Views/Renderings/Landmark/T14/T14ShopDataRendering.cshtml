@@ -32,8 +32,8 @@
                         var floor = shoppingHelper.GetShopFloor();
                     }
                     @Html.Sitecore().Field("Area"),@floor["Floor Title"],@floor.Parent["Building Title"]<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image",floor)" data-lighttitle="@Html.Sitecore().Field("Description")">
-    <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.FloorPlanItem)
-</a>
+                        <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.FloorPlanItem)
+                    </a>
                 </td>
             </tr>
         </tbody>

@@ -334,5 +334,13 @@ namespace Landmark.Helper
             return firstCategory;
         }
 
+
+        public List<Item> GetRelatedArticles()
+        {
+            List<Item> articles = new List<Item>();
+
+            return articles;
+        } 
+
     }
 }

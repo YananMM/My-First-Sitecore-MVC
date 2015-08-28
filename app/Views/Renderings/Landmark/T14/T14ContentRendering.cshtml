@@ -27,10 +27,11 @@
         <div class="gd-brief-heading">
             <h3>@Html.Sitecore().Field("Content Title") </h3>
         </div>
-        <div class="gd-brief-body gd-col-2">
+        <div class="gd-brief-body gd-longarticle">
             <p>
                 @Html.Sitecore().Field("Content Description")
             </p>
+            <a href="javascript:;" class="gd-longarticle-switcher">READ MORE +</a>
         </div>
     </div>
 
@@ -40,8 +41,9 @@
 
     <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
         <div class="carousel-heading">
-            <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.RealatedArticlesItem)</h3>
+            <h3>@Html.Sitecore().Field("Related Article Title")</h3>
         </div>
+        <!-- Wrapper for slides -->
         @Html.Sitecore().Placeholder("t14-related-articles")
     </div>
 </div>
@@ -56,7 +58,6 @@
             </ul>
         </div>
         <div class="shopdetails-brand-body">
-            <ul class="hidden" id="alsoLike"></ul>
             <div class="row">
                 @Html.Sitecore().Rendering(ItemGuids.T14YouMayAlsoLikeRenderingViewGuid, new
                 {

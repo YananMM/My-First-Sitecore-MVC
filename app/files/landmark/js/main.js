@@ -1340,7 +1340,7 @@ $(document).ready(function() {
       return false;
     } else {
       gdAudioFile = $(this).data('player');
-      gdAudioFrame= '<div class="gd-audio-frame" data-audiofile="' + gdAudioFile + '"><iframe src="/en/audioplayer/index.html" frameborder="0"></iframe></div>';
+      gdAudioFrame= '<div class="gd-audio-frame" data-audiofile="' + gdAudioFile + '"><iframe src="/files/landmark/audioplayer/index.html" frameborder="0"></iframe></div>';
       $(this).parent().addClass('gd-audio-wrapper').append(gdAudioFrame);
     }
   });

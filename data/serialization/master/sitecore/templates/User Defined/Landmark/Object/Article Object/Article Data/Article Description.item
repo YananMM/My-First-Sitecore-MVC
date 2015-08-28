@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {5A72B837-38B6-4210-B49D-60DAF41BF19F}
+id: {FD042E5B-D9C4-49D9-A035-2A44FE8B5FDC}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Related Article Object/Ratated Article Data/Slide Button Link
-parent: {016D4909-AC21-44FF-98FF-DACC50BE1E3B}
-name: Slide Button Link
+path: /sitecore/templates/User Defined/Landmark/Object/Article Object/Article Data/Article Description
+parent: {E97B3DE3-422F-425C-9BF7-B15B96E1E735}
+name: Article Description
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,20 +13,20 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 12
+content-length: 15
 
-General Link
+Multi-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
-content-length: 4
+content-length: 3
 
-1200
+800
 ----version----
 language: en
 version: 1
-revision: 295e35c0-1ba9-4f4b-9411-5b028c6f685a
+revision: de20f067-e78d-4723-8d05-7285f5667cef
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150805T023130Z
+20150828T082305Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-295e35c0-1ba9-4f4b-9411-5b028c6f685a
+de20f067-e78d-4723-8d05-7285f5667cef
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150807T010656Z
+20150828T082307:635763469876049990Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

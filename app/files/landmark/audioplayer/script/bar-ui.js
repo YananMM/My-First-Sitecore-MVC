@@ -25,10 +25,12 @@
    * Override globally by setting window.sm2BarPlayers.on = {}, or individually by window.sm2BarPlayers[0].on = {} etc.
    */
   players.on = {
-    /*
+    
     play: function(player) {
-      console.log('playing', player);
+      parent.console.log('playing', player);
+      parent.scTrackAudio('<Audio Name>');
     },
+    /*
     finish: function(player) {
       // each sound
       console.log('finish', player);
