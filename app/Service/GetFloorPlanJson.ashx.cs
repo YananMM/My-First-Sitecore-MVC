@@ -23,7 +23,7 @@ namespace Landmark.Service
         {
             context.Response.ContentType = "text/plain";
             ShoppingHelper helper = new ShoppingHelper();
-            ChildList buildings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
+            List<Item> buildings = LandmarkHelper.GetBuildings();
             Item building = buildings.First();
             FloorPlan floorplans = new FloorPlan();
             floorplans.mapheight = "525";

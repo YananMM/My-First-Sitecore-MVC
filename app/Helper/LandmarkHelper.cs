@@ -238,5 +238,22 @@ namespace Landmark.Helper
             return relatedItems;
         }
 
+        public static string GetFileName(string fieldName, Item item)
+        {
+            string name = string.Empty;
+            Sitecore.Data.Fields.FileField fileField = item.Fields[fieldName];
+            if (fileField != null && fileField.MediaItem != null)
+            {
+                Sitecore.Data.Items.MediaItem file = new Sitecore.Data.Items.MediaItem(fileField.MediaItem);
+                name = file.Name;
+            }
+            return name;
+        }
+
+        public static List<Item> GetBuildings()
+        {
+            return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.ToList();
+        }
+
     }
 }

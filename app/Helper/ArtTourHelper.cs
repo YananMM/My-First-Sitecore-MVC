@@ -18,6 +18,7 @@ using System.Web;
 using Landmark.Classes;
 using Landmark.Models;
 using Sitecore.Collections;
+using Sitecore.ContentSearch.LuceneProvider;
 using Sitecore.ContentSearch.Utilities;
 using Sitecore.Data;
 using Sitecore.Data.Fields;
@@ -228,6 +229,24 @@ namespace Landmark.Helper
                 return allArtists.OrderBy(p => p["Artist Name"].ToString()).ToList();
             }
             return new List<Item>();
+        }
+
+        public Item GetCurrentBuilding(string buildId = null)
+        {
+            buildId = buildId == null
+                ? LandmarkHelper.GetBuildings().FirstOrDefault().ID.ToString()
+                : buildId;
+            return Sitecore.Context.Database.GetItem(buildId);
+        }
+
+        public List<List<ArtPieceByBuildingJson>> GetArtistsByBuilding(string buildId = null, string page = null)
+        {
+            buildId = buildId == null
+                ? LandmarkHelper.GetBuildings().FirstOrDefault().ID.ToString()
+                : buildId;
+            page = page == null ? "1" : page;
+            var list = GetArtPieceJsonByBuilding(buildId);
+            return list;
         }
     }
 }

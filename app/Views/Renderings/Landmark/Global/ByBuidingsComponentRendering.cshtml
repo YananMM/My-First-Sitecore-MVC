@@ -1,9 +1,10 @@
 ﻿@using Landmark.Classes
+@using Landmark.Helper
 @using Sitecore.Collections
 @using Sitecore.Data.Items
 @model RenderingModel
 @{
-    ChildList buidings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
+    List<Item> buidings = LandmarkHelper.GetBuildings();
     Item allByBuildings = Sitecore.Context.Database.GetItem(ItemGuids.AllByBuildingsPage);
 }
 

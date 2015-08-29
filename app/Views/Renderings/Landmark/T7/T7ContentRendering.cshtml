@@ -5,7 +5,7 @@
 @model RenderingModel
 @{
     string src = Html.Sitecore().ImageFieldSrc("Map Menu Image", Sitecore.Context.Item);
-    ChildList buildings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
+    List<Item> buildings = LandmarkHelper.GetBuildings();
     Item activeItem = Request["buildingID"]==null?buildings[0]:Sitecore.Context.Database.GetItem(Request["buildingID"]);
 }
 <div class="container">
@@ -14,8 +14,9 @@
             <h2>@Sitecore.Context.Item["Page Title"].ToUpper()</h2>
 @{
     string pdf = LandmarkHelper.FileFieldSrc("Floor Guide", activeItem);
+    string name = LandmarkHelper.GetFileName("Floor Guide", activeItem);
 }
-            <a href='@pdf' class="gd-link-audio"  target="_blank" onclick="scDownload(@pdf)" >
+            <a href='@pdf' class="gd-link-audio"  target="_blank" onclick="scDownload(@name)" >
                 <span class="icomoon-download"></span> @Sitecore.Context.Item["Download Label"].ToUpper()
             </a>
         </div>

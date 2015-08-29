@@ -85,7 +85,7 @@ namespace Landmark.Service
         [ScriptMethod(ResponseFormat = ResponseFormat.Json, XmlSerializeString = false)]
         public void GetLocationJson()
         {
-            ChildList buildings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
+            List<Item> buildings = LandmarkHelper.GetBuildings();
             Item byLocationPage = Sitecore.Context.Database.GetItem(ItemGuids.ByLocationPage);
             FloorPlan floorplans = new FloorPlan();
             floorplans.mapheight = "300";

@@ -1,4 +1,5 @@
-﻿@using Landmark.Classes
+﻿@using System.Runtime.CompilerServices
+@using Landmark.Classes
 @using Landmark.Helper
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
@@ -8,15 +9,18 @@
 
 @{
     ArtTourHelper helper = new ArtTourHelper();
-    var buildings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
+    var buildings = LandmarkHelper.GetBuildings();
+    var building = helper.GetCurrentBuilding(Request["building"]);
+    var artpieces = helper.GetArtistsByBuilding(Request["building"],Request["page"]);
 }
 <div class="row">
     <div class="col-md-6" id="gd-list-locations">
         <ul class="list-group gd-list-guide hidden-xs clearfix" id="gdfloorlist">
             @for (int i = 0; i < buildings.Count; i++)
             {
-                string cssclass = i == 0 ? "active" : string.Empty;
-                <li data-id="@buildings[i].ID.ToString()" data-location='@buildings[i].Fields["Building Svg Id"].Value' class="list-group-item @cssclass"><span class="badge">@(i + 1)</span>@buildings[i].Fields["Building Title"].Value</li>
+                string cssclass = building.ID.ToString()  == buildings[i].ID.ToString() ? "active" : string.Empty;
+                <li data-id="@buildings[i].ID.ToString()" data-location='@buildings[i].Fields["Building Svg Id"].Value' class="list-group-item @cssclass"><span class="badge">@(i + 1)</span>
+                <a href="?building=@buildings[i].ID.ToString()&page=1">@buildings[i].Fields["Building Title"].Value</a></li>
             }
         </ul>
         <div class="gd-controls-m visible-xs">
@@ -33,10 +37,24 @@
     </div>
 </div>
 <div class="gd-artlist">
-    <h3>LANDMARK ARTIUM</h3>
+    <h3>@Html.Sitecore().Field("Building Title",building)</h3>
     <div id="gd-art-gallery">
-
-    </div>
+        @foreach (List<ArtPieceByBuildingJson> rowPieces in artpieces)
+        {
+            <div class="row">
+                @foreach (ArtPieceByBuildingJson piece in rowPieces)
+                {
+                <div class="col-sm-3">
+                  <a href="@piece.link">
+                    <img data-src="@piece.src" alt="artpiece picture">
+                    <h4>@piece.title</h4>
+                    <p>@piece.des</p>
+                </a>
+            </div>
+                }
+            </div>
+                }
+            </div>
     <div class="navigation"><a href="@LinkManager.GetItemUrl(Sitecore.Context.Item)?building=2&page=2" class="gd-artlist-more">SEE MORE +</a></div>
 </div>
 

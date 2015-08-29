@@ -44,7 +44,7 @@
                     <li>
                         <a href="#">@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBuidingsGuidItem)<span class="sprite-icon-down pull-right"></span></a>
                         @{
-                            ChildList buidings = Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children;
+                            List<Item> buidings = LandmarkHelper.GetBuildings();
                             Item allByBuildings = Sitecore.Context.Database.GetItem(ItemGuids.AllByBuildingsPage);
                         }
                         <ul>
