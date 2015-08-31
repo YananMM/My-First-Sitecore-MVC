@@ -1,0 +1,29 @@
+﻿@model RenderingModel
+
+<div class="container">
+    <div class="gd-pagetitle">
+        <div class="gd-pagetitle-heading">
+            <h2>@Html.Sitecore().Field("Page Title")</h2>
+        </div>
+        <div class="gd-pagetitle-menu"><a href="#" class="active">@Html.Sitecore().Field("Legal Title")</a> <span class="gd-pagetitle-menu-gap">|</span>  <a href="#policy">@Html.Sitecore().Field("Privacy Title")</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="gd-brief">
+        <div class="gd-brief-heading  gd-brief-heading-left">
+            <h3>@Html.Sitecore().Field("Legal Title")</h3>
+        </div>
+        <div class="gd-brief-body">
+           @Html.Sitecore().Field("Legal Content")
+        </div>
+    </div>
+    <div class="gd-brief" id="policy">
+        <div class="gd-brief-heading  gd-brief-heading-left">
+            <h3>@Html.Sitecore().Field("Privacy Title")</h3>
+        </div>
+        <div class="gd-brief-body">
+            @Html.Sitecore().Field("Privacy Content")
+        </div>
+    </div>
+</div>
