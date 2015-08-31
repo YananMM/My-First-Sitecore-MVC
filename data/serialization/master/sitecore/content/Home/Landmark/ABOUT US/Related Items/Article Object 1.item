@@ -12,15 +12,15 @@ templatekey: Article Object
 ----version----
 language: en
 version: 1
-revision: fbbd24ec-50a8-4f00-9d80-24ae99e0e7d6
+revision: 8767adfe-d368-43d8-b100-d95f54d9f036
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 12
+content-length: 17
 
-ONE LANDMARK
+Lorem ipsum dolor
 ----field----
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
@@ -36,12 +36,26 @@ content-length: 156
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias porro soluta omnis praesentium accusantium aperiam eaque adipisci totam asperiores quam.
 ----field----
-field: {FD042E5B-D9C4-49D9-A035-2A44FE8B5FDC}
-name: Article Description
-key: article description
-content-length: 145
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Slider Image
+key: article slider image
+content-length: 58
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+<image mediaid="{A85DBFA0-F014-443D-A2BF-684347060136}" />
+----field----
+field: {659B21B3-CEF7-4B63-8560-620BE63216AF}
+name: Button Text
+key: button text
+content-length: 13
+
+DISCOVER MORE
+----field----
+field: {C497F4DD-D534-4CC9-BBD9-798F45DD3C3F}
+name: Manual Link
+key: manual link
+content-length: 20
+
+Http://www.baidu.com
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -69,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fbbd24ec-50a8-4f00-9d80-24ae99e0e7d6
+8767adfe-d368-43d8-b100-d95f54d9f036
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150828T082459:635763470992593853Z
+20150831T095501:635766117011557481Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

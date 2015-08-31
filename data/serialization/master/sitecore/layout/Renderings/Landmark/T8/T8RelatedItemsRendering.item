@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {5B7E8B2C-A4C4-4E1E-B49A-A8239C704D89}
+id: {05EB8C8D-BE6B-4577-B868-583DD0A6FEE8}
 database: master
-path: /sitecore/layout/Renderings/Landmark/T11/T11ContentRendering
-parent: {634A9E0E-06A5-4814-A262-A193500B122F}
-name: T11ContentRendering
+path: /sitecore/layout/Renderings/Landmark/T8/T8RelatedItemsRendering
+parent: {71D41DE3-E228-43A6-B041-C769844F2592}
+name: T8RelatedItemsRendering
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
 templatekey: View rendering
@@ -13,16 +13,16 @@ templatekey: View rendering
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
 name: Path
 key: path
-content-length: 57
+content-length: 60
 
-/Views/Renderings/Landmark/T11/T11ContentRendering.cshtml
+/Views/Renderings/Landmark/T8/T8RelatedItemsRendering.cshtml
 ----field----
 field: {F4069D71-74D7-4422-941D-54B517CF3001}
 name: Placeholder
 key: placeholder
-content-length: 12
+content-length: 13
 
-content-area
+related-items
 ----field----
 field: {EF7C5528-7307-4E19-863B-DA19EED6A9ED}
 name: Open Properties after Add
@@ -33,7 +33,7 @@ content-length: 1
 ----version----
 language: en
 version: 1
-revision: 57ac54e0-7aa2-4e10-8387-777b6259b83c
+revision: 494c2824-18c1-45c3-8e2f-96020107f949
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,21 +41,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150722T074937Z
+20150831T082636Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-57ac54e0-7aa2-4e10-8387-777b6259b83c
+494c2824-18c1-45c3-8e2f-96020107f949
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150831T062351:635765990314510824Z
+20150831T082928:635766065686701867Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

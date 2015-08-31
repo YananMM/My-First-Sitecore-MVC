@@ -138,6 +138,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\ShoppingController.cs" />
+    <Compile Include="Helper\AboutUsHelper.cs" />
     <Compile Include="Helper\ArtTourHelper.cs" />
     <Compile Include="Helper\LandmarkHelper.cs" />
     <Compile Include="Helper\NowAtLandmarkHelper.cs" />
@@ -634,6 +635,8 @@
     <Content Include="Views\Renderings\Landmark\Global\TagsRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\Global\ReferenceArticlesRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T28\T28ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T12\T12ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T8\T8RelatedItemsRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

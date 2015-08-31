@@ -334,10 +334,17 @@ namespace Landmark.Helper
             return firstCategory;
         }
 
-
+        /// <summary>
+        /// Gets the related articles.
+        /// </summary>
+        /// <returns>List{Item}.</returns>
         public List<Item> GetRelatedArticles()
         {
             List<Item> articles = new List<Item>();
+
+            List<Item> List2 = new List<Item>();
+            
+
 
 
             return articles;
