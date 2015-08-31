@@ -1,18 +1,18 @@
 ----item----
 version: 1
-id: {D569AFE1-784D-41F5-AFC5-21C3F95F44FC}
+id: {02E46D15-C3E4-4887-9232-AA17C2348038}
 database: master
-path: /sitecore/content/Home/Landmark/Home Page
-parent: {497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}
-name: Home Page
+path: /sitecore/templates/User Defined/Landmark/Page/T14 Page/Related Article Data
+parent: {91A88069-9A0E-48B7-9509-BDE830A54D0E}
+name: Related Article Data
 master: {00000000-0000-0000-0000-000000000000}
-template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
-templatekey: Folder
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
 
 ----version----
 language: en
 version: 1
-revision: c301a1c4-8afb-407f-9998-dfa0e2f2b983
+revision: ae999ee7-51c4-402a-9b72-67cfb215a2f1
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -20,7 +20,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150721T074424Z
+20150827T103152Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c301a1c4-8afb-407f-9998-dfa0e2f2b983
+ae999ee7-51c4-402a-9b72-67cfb215a2f1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150721T074424Z
+20150828T014349:635763230296486823Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -19,8 +19,15 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: d7832243-ea90-4eca-86fd-b076a4b352b3
+revision: 2b371c7c-da10-4cfc-9c7a-f209aed0190a
 
+----field----
+field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{8FC4B657-6E15-44AF-B791-92E8147AF60D}" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d7832243-ea90-4eca-86fd-b076a4b352b3
+2b371c7c-da10-4cfc-9c7a-f209aed0190a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150807T011805Z
+20150828T064636:635763411960927435Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
