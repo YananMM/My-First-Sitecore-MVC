@@ -39,11 +39,14 @@
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <p>
                         @Html.Sitecore().Field("One Lanemark Content")
-                </p>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-   
-    @Html.Sitecore().Placeholder("related-items")
+
+    <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
+        @Html.Sitecore().Placeholder("related-items")
+    </div>
+
 </div>

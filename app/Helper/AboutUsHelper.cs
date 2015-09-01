@@ -35,10 +35,13 @@ namespace Landmark.Helper
             List<Item> items = new List<Item>();
             Item item = Sitecore.Context.Item;
             var formInternal = (CheckboxField)item.Fields["Related Articles From Internal Page"];
-            if (!formInternal.Checked)
+            if (formInternal != null)
             {
-                var root = item.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.RelatedItemFolder);
-                items = LandmarkHelper.GetItemsByRootAndTemplate(root.ID.ToString(), ItemGuids.ArticleObject);
+                if (!formInternal.Checked)
+                {
+                    var root = item.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.RelatedItemFolder);
+                    items = LandmarkHelper.GetItemsByRootAndTemplate(root.ID.ToString(), ItemGuids.ArticleObject);
+                }
             }
             else
             {

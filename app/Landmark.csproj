@@ -620,7 +620,6 @@
     <Content Include="Views\Renderings\Landmark\T34\T34PageTitleRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T34\T34SpecialOffersRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T34\T34AboutHotelRendering.cshtml" />
-    <Content Include="Views\Renderings\Landmark\T33\T334BuildingsRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T35\T35SurroundingRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T35\T35GetDirectionRendering.cshtml" />
     <Content Include="Views\Layouts\Landmark\T35GetDirectionLayout.cshtml" />
@@ -637,6 +636,7 @@
     <Content Include="Views\Renderings\Landmark\T28\T28ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T12\T12ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T8\T8RelatedItemsRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\Global\RelatedItemsRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
