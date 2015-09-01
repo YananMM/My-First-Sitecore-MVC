@@ -75,6 +75,8 @@ namespace Landmark.Classes
         public static readonly String ArticleObject = "{E0472501-0925-4F7F-A5BC-84F0ECA1B7F8}";
         public static readonly String RelatedItemFolder = "{5451FE7F-09B6-4620-AE8B-5B4A3610851E}";
 
+        //search template
+
         //item 
         public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}");
         public static readonly Item SearchPlaceHolderItem = Sitecore.Context.Database.GetItem("{ED07CD50-68B7-4E7A-BE15-F161360F4E07}");
