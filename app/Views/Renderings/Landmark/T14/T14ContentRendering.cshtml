@@ -39,11 +39,9 @@
         <img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image",Sitecore.Context.Item)">
     </div>
 
-    <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
-       
         @Html.Sitecore().Placeholder("t14-related-articles")
     </div>
-</div>
+
 
 <div class="shopdetails-brand">
     <a class="gd-link-brands" href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage))">@Html.Sitecore().Field("Glossary Value", ItemGuids.AllBrandsGuidItem)<span class="icomoon-chevron-small-right"></span></a>

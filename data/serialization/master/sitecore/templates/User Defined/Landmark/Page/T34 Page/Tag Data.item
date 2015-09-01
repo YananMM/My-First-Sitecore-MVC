@@ -1,21 +1,14 @@
 ----item----
 version: 1
-id: {0D6445AB-4A02-4A5D-8784-634D3D28D530}
+id: {399A798C-B590-45AA-9AFD-CBD54569C492}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T33 Page/Address Data/Address Text
-parent: {48117434-732D-4038-AA0A-03F7703D3F1E}
-name: Address Text
+path: /sitecore/templates/User Defined/Landmark/Page/T34 Page/Tag Data
+parent: {C08DC2B0-088B-4182-81C4-4D7510A741C0}
+name: Tag Data
 master: {00000000-0000-0000-0000-000000000000}
-template: {455A3E98-A627-4B40-8035-E683A0331AC7}
-templatekey: Template field
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
 
-----field----
-field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
-name: Type
-key: type
-content-length: 16
-
-Single-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -26,7 +19,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: e70ed926-5e12-46a1-aa62-72344f07e6b7
+revision: ed4bfa37-9204-40d2-8ca4-a21af7d714e6
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +27,28 @@ name: __Created
 key: __created
 content-length: 16
 
-20150818T065625Z
+20150901T064143Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-e70ed926-5e12-46a1-aa62-72344f07e6b7
+ed4bfa37-9204-40d2-8ca4-a21af7d714e6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150901T064221:635766865416056635Z
+20150901T064144:635766865041105189Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

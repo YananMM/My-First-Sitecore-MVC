@@ -37,5 +37,21 @@
     <div class="gd-location-map">
         <iframe src="/files/landmark/iframes/t33-iframe.html" frameborder="0"></iframe>
     </div>
-    @Html.Sitecore().Placeholder("iconic-building")
+    <div class="gd-brief">
+        <div class="gd-brief-heading">
+            <h3>@Html.Sitecore().Field("Content Title")</h3>
+        </div>
+        <div class="gd-brief-body gd-brief-center">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <p>
+                        @Html.Sitecore().Field("Content Description")
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
+        @Html.Sitecore().Placeholder("related-items")
+    </div>
 </div>
