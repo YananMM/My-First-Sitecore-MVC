@@ -1,1 +1,7 @@
-﻿@model Landmark.Models.LandmarkSearchResultItem
+﻿@using Landmark.Models
+@model Landmark.Models.SearchContentModel
+
+@foreach (LandmarkSearchResultItem item in Model.SearchResults)
+{
+    @item.FilterType<br/>
+}

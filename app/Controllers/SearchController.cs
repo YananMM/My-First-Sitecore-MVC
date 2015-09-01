@@ -24,6 +24,7 @@ namespace Landmark.Controllers
 
         public ActionResult SearchContent(string search)
         {
+            SearchContentModel model=new SearchContentModel();
             if (!string.IsNullOrEmpty(search))
             {
                 ViewData["SearchString"] = search;
@@ -36,14 +37,14 @@ namespace Landmark.Controllers
 
                 using (var context = index.CreateSearchContext())
                 {
-                    var searchItems = context.GetQueryable<LandmarkSearchResultItem>()
+                    model.SearchResults = context.GetQueryable<LandmarkSearchResultItem>()
                         .Where(item => item.Language.Equals(language) && item.Content.Contains(search))
                         .OrderBy(item=>item.FilterType)
                         .ToList();
-                    var total = searchItems.Count;
+                    var total = model.SearchResults.Count;
                     if (total > 0)
                     {
-                        return PartialView("/Views/Renderings/Landmark/T32/T32ContentRendering.cshtml");
+                        return PartialView("/Views/Renderings/Landmark/T32/T32ContentRendering.cshtml", model);
                     }
                     else
                     {
