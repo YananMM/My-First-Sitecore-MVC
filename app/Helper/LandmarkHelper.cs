@@ -255,5 +255,29 @@ namespace Landmark.Helper
             return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.ToList();
         }
 
+        /// <summary>
+        /// Gets the related items.
+        /// </summary>
+        /// <returns>List{Item}.</returns>
+        public static List<Item> GetRelatedItems()
+        {
+            List<Item> items = new List<Item>();
+            Item item = Sitecore.Context.Item;
+            var formInternal = (CheckboxField)item.Fields["Related Articles From Tags not Outside"];
+            if (formInternal != null)
+            {
+                if (!formInternal.Checked)
+                {
+                    var root = item.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.RelatedItemFolder);
+                    items = LandmarkHelper.GetItemsByRootAndTemplate(root.ID.ToString(), ItemGuids.ArticleObject);
+                }
+            }
+            else
+            {
+                var tags = item.Fields["Tags"];
+            }
+            return items;
+        }
+
     }
 }

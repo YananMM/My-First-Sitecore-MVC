@@ -19,7 +19,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: f52506df-abed-43e2-ab2f-d3474db84c51
+revision: d8614759-fbbb-45f5-9114-051f880d3926
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
@@ -64,6 +64,13 @@ content-length: 16
 
 OFFICIAL WEBSITE
 ----field----
+field: {72864CFD-F95D-457C-A6B3-73EC627E14C3}
+name: About Hotel Label
+key: about hotel label
+content-length: 16
+
+ABOUT THIS HOTEL
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -83,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f52506df-abed-43e2-ab2f-d3474db84c51
+d8614759-fbbb-45f5-9114-051f880d3926
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150819T091607:635755725673127648Z
+20150901T061543:635766849431132349Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

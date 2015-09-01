@@ -6,8 +6,7 @@
 @model RenderingModel
 
 @{
-    AboutUsHelper helper = new AboutUsHelper();
-    var relatedItems = helper.GetRelatedItems();
+    var relatedItems = LandmarkHelper.GetRelatedItems();
 }
 @if (relatedItems != null && relatedItems.Count != 0)
 {

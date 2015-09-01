@@ -1,18 +1,18 @@
 ----item----
 version: 1
-id: {F3CF887B-2363-44A7-B841-0F33BC485F15}
+id: {82E4FBE6-936C-40EA-8A4E-300D908ED8BD}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Articles Source Object/Articles Source Data
-parent: {1C5454D5-520A-4C85-BB07-649B1AB8AD71}
-name: Articles Source Data
+path: /sitecore/content/Home/Landmark/Around Central/Hotels/THE LANDMARK MADARIN ORIENTAL/Related Items
+parent: {C6800BF0-D6A7-4AF8-898C-0D27DB44BA1D}
+name: Related Items
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {5451FE7F-09B6-4620-AE8B-5B4A3610851E}
+templatekey: Related Item Folder
 
 ----version----
 language: en
 version: 1
-revision: c5671877-3da7-46cc-968c-598b74aefe33
+revision: 7055b388-ff2a-4aa0-8fff-30332179021f
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -20,28 +20,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150831T071406Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
+20150828T081038Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-c5671877-3da7-46cc-968c-598b74aefe33
+7055b388-ff2a-4aa0-8fff-30332179021f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150901T064646:635766868066838251Z
+20150828T082107:635763468675221307Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
