@@ -1,7 +1,21 @@
-﻿@using Landmark.Models
-@model Landmark.Models.SearchContentModel
-
-@foreach (LandmarkSearchResultItem item in Model.SearchResults)
-{
-    @item.GetItem().DisplayName<br/>
+﻿
+@using Landmark.Helper
+@using Landmark.Models
+@model RenderingModel
+@{
+    SearchHelper helper = new SearchHelper();
+    var results = helper.GetSearchResults(Request["value"]);
 }
+<div class="container">
+<div class="gd-pagetitle">
+    <div class="gd-pagetitle-heading">
+        <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
+    </div>
+<div class="gd-newsdetails">
+@foreach (LandmarkSearchResultItem item in results)
+{
+    <p>@item.GetItem().DisplayName</p>
+}
+</div>
+</div>
+</div>

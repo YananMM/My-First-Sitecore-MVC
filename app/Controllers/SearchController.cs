@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Landmark.Classes;
 using Landmark.Models;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.SearchTypes;
@@ -24,35 +25,7 @@ namespace Landmark.Controllers
 
         public ActionResult SearchContent(string search)
         {
-            SearchContentModel model=new SearchContentModel();
-            if (!string.IsNullOrEmpty(search))
-            {
-                ViewData["SearchString"] = search;
-                var language = Sitecore.Context.Language.Name.ToLower();
-                string indexName = Settings.GetSetting("LandmarkIndexName");
-                var index = ContentSearchManager.GetIndex(indexName);
-                //var query = PredicateBuilder.True<LandmarkSearchResultItem>();
-
-                //query = query.And(x => x.PageTitle.Contains(search));
-
-                using (var context = index.CreateSearchContext())
-                {
-                    model.SearchResults = context.GetQueryable<LandmarkSearchResultItem>()
-                        .Where(item => item.Language.Equals(language) && item.Content.Contains(search))
-                        .OrderBy(item=>item.FilterType)
-                        .ToList();
-                    var total = model.SearchResults.Count;
-                    if (total > 0)
-                    {
-                        return PartialView("/Views/Renderings/Landmark/T32/T32ContentRendering.cshtml", model);
-                    }
-                    else
-                    {
-                        return Content("No Search Result");
-                    }
-                }
-            }
-            return Content("Please input Search Content");
+            return Redirect(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.SearchResultsPage)) + "?value=" + search);
         }
 
     }

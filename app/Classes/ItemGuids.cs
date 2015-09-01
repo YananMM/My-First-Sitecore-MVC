@@ -76,7 +76,7 @@ namespace Landmark.Classes
         public static readonly String T4PageTemplate = "{4CDF5CD9-40F0-4F0B-A095-7773CE6CF582}";
         public static readonly String ArticleObject = "{E0472501-0925-4F7F-A5BC-84F0ECA1B7F8}";
         public static readonly String RelatedItemFolder = "{5451FE7F-09B6-4620-AE8B-5B4A3610851E}";
-
+        public static readonly String SearchResultsPage = "{4452D078-3946-43F3-9B42-84000F96BF5A}";
         //search template
 
         //item 
