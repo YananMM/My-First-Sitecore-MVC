@@ -3,5 +3,5 @@
 
 @foreach (LandmarkSearchResultItem item in Model.SearchResults)
 {
-    @item.FilterType<br/>
+    @item.GetItem().DisplayName<br/>
 }
