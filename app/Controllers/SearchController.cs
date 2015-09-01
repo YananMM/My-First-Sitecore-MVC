@@ -37,13 +37,13 @@ namespace Landmark.Controllers
                 using (var context = index.CreateSearchContext())
                 {
                     var searchItems = context.GetQueryable<LandmarkSearchResultItem>()
-                        .Where(item => item.Language.Equals(language) && item.PageTitle.Contains(search))
-                        .OrderBy(item => item.CreatedDate)
+                        .Where(item => item.Language.Equals(language) && item.Content.Contains(search))
+                        .OrderBy(item=>item.FilterType)
                         .ToList();
                     var total = searchItems.Count;
                     if (total > 0)
                     {
-                        return Content(total.ToString() + searchItems[0].Language + language);
+                        return PartialView("/Views/Renderings/Landmark/T32/T32ContentRendering.cshtml");
                     }
                     else
                     {

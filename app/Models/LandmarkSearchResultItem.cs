@@ -19,6 +19,14 @@ namespace Landmark.Models
         [IndexField("Page Title")]
         public string PageTitle { get; set; }
 
-        
+        [IndexField("filtertype")]
+        public String FilterType { get; set; }
+
+        public string ArticleIntro { get; set; }
+
+        public DateTime ArticleDate { get; set; }
+
+        public string BrandImage { get; set; }
+
     }
 }
