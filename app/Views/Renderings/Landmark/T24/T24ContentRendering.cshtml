@@ -4,46 +4,22 @@
 @using Sitecore.Data.Items
 @using Landmark.Models
 @model RenderingModel
-
+@{
+    Item overViewPage = Sitecore.Context.Database.GetItem(ItemGuids.OverviewPage);
+    Item valetParkingPage = Sitecore.Context.Database.GetItem(ItemGuids.ValetParkingPage);
+}
 
 <div class="container">
-    <div class="gd-pagetitle">
-        <div class="gd-pagetitle-heading">
-            <h2>@Html.Sitecore().Field("Page Titel").ToString().ToUpper()</h2>
-        </div>
-
-        <div class="gd-pagetitle-menu hidden-xs">
-            <a href="javascript:;" class="active">OVERVIEW</a>
-            <span class="gd-pagetitle-menu-gap">|</span>
-            <a href="t24-2.html">VALET PARKING</a>
-        </div>
-
-        <div class="gd-controls-m visible-xs">
-            <select class="form-control">
-                <option value="#">OVERVIEW</option>
-                <option value="t24-2.html">VALET PARKING</option>
-            </select>
-        </div>
-    </div>
+    @Html.Sitecore().Placeholder("page-title")
     <div class="gd-exclusive">
         <div class="row">
             <div class="col-sm-6 gd-full-img">
-                <img data-src="../files/landmark/images/exclusives/exclusivesdetail-big-02.jpg">
+                <img data-src="@Html.Sitecore().ImageFieldSrc("Service Image", Sitecore.Context.Item)">
             </div>
             <div class="col-sm-6">
                 <div class="gd-content-details">
-                    <h3>Lorem ipsum dolor sit amet</h3>
-                    <p>The following services and faciltitare available at LANDMARK:</p>
-                    <ul>
-                        <li> Restaurant recommendation &amp; reservation</li>
-                        <li> Free Wi-Fi service in LANDMARK ATRIUM, LANDMARK ALEXANDRA, LANDMARK CHATER, LANDMARK PRINCE'S, Exchange Square and Jardine House.</li>
-                        <li> Nursery &amp; baby changing room is available at LANDMARK PRINCE’S 3/F , Click here for the floorplan.</li>
-                        <li> Hong Kong map supply</li>
-                        <li> Local transportation information</li>
-                        <li> Lost &amp; found service</li>
-                        <li> Life-Saving AED devices providing 24/7 service</li>
-                    </ul>
-                    <p>For enquiry or assistance, please visit any of our Concierge Desks for or contact LANDMARK Concierge Hotline at <a href="javascript:;">2500 0555</a>.</p>
+                    <h3>@Html.Sitecore().Field("Service Title")</h3>
+                    @Html.Sitecore().Field("Service Content")
                     <hr>
                     <h4>CONCIERGE DESKS OPENING HOURS</h4>
                     <div class="table-responsive">

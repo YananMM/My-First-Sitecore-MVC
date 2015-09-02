@@ -36,6 +36,8 @@ namespace Landmark.Classes
         public static readonly String ThankYouPage = "{C6045FFE-5883-49F7-AC6E-653919640DDB}";
         public static readonly String TextObject = "{55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}";
         public static readonly String RelatedItemViewGuid = "{19B03C96-4203-4877-8AC0-2D03E76DA38B}";
+        public static readonly String OverviewPage = "{7C88DA46-5C88-465B-8F12-BBEC6991D8CB}";
+        public static readonly String ValetParkingPage = "{819779A7-6864-451A-83DA-703DF00AD09D}";
 
         //item id
         //public static readonly String PanelsFolderItemGuid = "{3BB40D54-8F7F-449B-B9DB-432C65EB4224}";

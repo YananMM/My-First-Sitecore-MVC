@@ -644,6 +644,7 @@
     <Content Include="Views\Renderings\Landmark\Global\RelatedItemsRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T24\T24ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T32\T32ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T24\T24PageTitleRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -89,6 +89,22 @@
 }
 
 }
+
+.gray-text4{
+      color: @gray;
+ a {
+      color: @gray;
+    &:hover{
+        color:@brand-primary;
+        text-decoration: none;
+    }
+    &:active{
+        color: @brand-primary;
+        text-decoration: none;
+    }
+}
+
+}
 .black-text{
       color: #222;
  a {
@@ -480,6 +496,12 @@
 
 }}
 
+// page freeze, disable page scroll
+.page-freeze {
+  height: 100%;
+  overflow: hidden;
+}
+
 .lazy-hidden {
   background: url('/files/landmark/images/more.gif') no-repeat 50% 50%;
   display: block;
@@ -500,4 +522,26 @@
 input[type="checkbox"]{ 
   -webkit-appearance: checkbox;
   box-sizing: border-box;
+}
+
+// jQuery plugin dotdotdot
+.gd-longarticle>.gd-longarticle-switcher {
+  display: none;
+}
+.is-truncated {
+  height: auto!important;
+}
+.gd-carousel-detail .is-truncated {
+  height: 80px!important;
+}
+.is-truncated .gd-longarticle-switcher {
+  display: inline-block;
+}
+
+// jQuery plugin scrollbar
+.mCS-dark-2.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: #D4A962!important;
+    -webkit-border-radius: 3px!important;
+    -moz-border-radius: 3px!important;
+    border-radius: 3px!important;
 }
