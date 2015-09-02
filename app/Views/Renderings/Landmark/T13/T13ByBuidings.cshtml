@@ -22,7 +22,7 @@
                     @foreach (Item brand in shoppingHelper.GetBrandsByBuildings(building.ID))
                     {
                         string src = Html.Sitecore().ImageFieldSrc("Brand Image", brand);
-                        <a title='@Html.Sitecore().Field("Brand Title", brand)' class="brand-box" href="@Sitecore.Links.LinkManager.GetItemUrl(brand)">
+                        <a title='@Html.Sitecore().Field("Brand Title", brand)' class="brand-box" href="@Sitecore.Links.LinkManager.GetItemUrl(brand)?category=@Sitecore.Context.Item.Parent.ID.ToString()">
                             <img data-src="@src" alt='@Html.Sitecore().Field("Brand Title", brand)' class="lazy-loaded">
                             <span>@Html.Sitecore().Field("Brand Title", brand)</span> 
                         </a>

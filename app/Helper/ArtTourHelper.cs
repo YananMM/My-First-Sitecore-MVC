@@ -244,8 +244,8 @@ namespace Landmark.Helper
             buildId = buildId == null
                 ? LandmarkHelper.GetBuildings().FirstOrDefault().ID.ToString()
                 : buildId;
-            page = page == null ? "1" : page;
-            var list = GetArtPieceJsonByBuilding(buildId);
+            int pagenumber = page == null ? 1 : Int32.Parse(page);
+            var list = GetArtPieceJsonByBuilding(buildId).Skip(pagenumber * 10).Take(10).ToList();
             return list;
         }
     }

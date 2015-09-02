@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {0FA2D774-BF23-4F2D-B0B3-AF08AF845DC6}
+id: {92B7488C-D3F7-4A08-BC2F-AC66A3C5157C}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Landmark Config/Landmark Data/Landmark Logo Image
+path: /sitecore/templates/User Defined/Landmark/Object/Landmark Config/Landmark Data/Copyright Right Text
 parent: {89812686-759E-4BB7-8AAD-DFECEF8C0F55}
-name: Landmark Logo Image
+name: Copyright Right Text
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,20 +13,20 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 5
+content-length: 16
 
-Image
+Single-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-200
+600
 ----version----
 language: en
 version: 1
-revision: 1a1d02a8-d41e-43ff-a9d3-439d006ee5dc
+revision: ba52685b-dcc0-4f02-b05c-90a635e869e7
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150721T072323Z
+20150902T092824Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-1a1d02a8-d41e-43ff-a9d3-439d006ee5dc
+ba52685b-dcc0-4f02-b05c-90a635e869e7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150902T092824Z
+20150902T092825Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -2,9 +2,9 @@
 version: 1
 id: {61C64C37-DD57-4575-BEE5-AC71398FABF6}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Landmark Config/Landmark Data/Copyright Text
+path: /sitecore/templates/User Defined/Landmark/Object/Landmark Config/Landmark Data/Copyright Left Text
 parent: {89812686-759E-4BB7-8AAD-DFECEF8C0F55}
-name: Copyright Text
+name: Copyright Left Text
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -26,7 +26,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 1e54f506-9879-439c-8a6b-f636e6e930a7
+revision: abacef98-06fe-40b5-a61b-8142b14f6556
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1e54f506-9879-439c-8a6b-f636e6e930a7
+abacef98-06fe-40b5-a61b-8142b14f6556
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150812T004551Z
+20150902T092824Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

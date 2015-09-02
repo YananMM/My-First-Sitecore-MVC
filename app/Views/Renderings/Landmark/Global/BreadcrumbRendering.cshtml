@@ -8,15 +8,25 @@
 @{
     var homePage = ItemGuids.LandmarkHomeItem;
     var currentPage = Sitecore.Context.Item;
+    Item category ;
     List<Item> items = new List<Item>();
     List<Item> breadcrumbs = new List<Item>();
+
+    if (Sitecore.Context.Item.Template.ID.ToString() == ItemGuids.T14ShopDetailsTemplate)
+    {
+        category = Sitecore.Context.Database.GetItem(Request["category"]);
+        items.Add(category);
+        items.Add(category.Parent);
+    }
+
     while (currentPage.ID != homePage.ID)
     {
         items.Add(currentPage.Parent);
         currentPage = currentPage.Parent;
     }
+
     items.Reverse();
-    if (items.Count >= 3)
+    @*if (items.Count >= 3)
     {
         for (int i = 0; i < 3; i++)
         {
@@ -29,14 +39,12 @@
         {
             breadcrumbs.Add(items[i]);
         }
-    }
-
-
+    }*@
 }
 
 <div class="col-xs-12">
     <ol class="breadcrumb">
-        @foreach (var item in breadcrumbs)
+        @foreach (var item in items)
         {
             <li>
                 <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">

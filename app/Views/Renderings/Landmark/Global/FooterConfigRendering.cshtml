@@ -11,8 +11,10 @@
             @Html.Sitecore().Field("Hongkong Land Link", ItemGuids.LandmarkConfigItem, new { text = "<img data-src='" + src + "' alt='HongKong Land'>" })
         </div>
         <div class="footer-copyright">
-            @*&copy; Copyright &copy; 2014 Hongkong Land Limited. All Rights Reserved*@
-            @Html.Sitecore().Field("Copyright Text", ItemGuids.LandmarkConfigItem)<a href="#">Legal &amp; Privacy</a>
+            @Html.Sitecore().Field("Copyright Left Text", ItemGuids.LandmarkConfigItem) 
+            @DateTime.Now.Year 
+            @Html.Sitecore().Field("Copyright Right Text", ItemGuids.LandmarkConfigItem)
+            <a href="#">Legal &amp; Privacy</a>
         </div>
     </div>
 </div>

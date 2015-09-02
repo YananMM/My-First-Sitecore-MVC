@@ -12,7 +12,7 @@ templatekey: Landmark Config
 ----version----
 language: en
 version: 1
-revision: f9061d03-797d-4792-97fc-ee19ecf50012
+revision: 375c9113-74e0-43b0-886e-61a25b1506c5
 
 ----field----
 field: {217B1155-8188-498E-84EB-92CEC31E5D09}
@@ -37,11 +37,18 @@ content-length: 58
 <image mediaid="{83C85E65-6960-4A14-9098-05896B7D4239}" />
 ----field----
 field: {61C64C37-DD57-4575-BEE5-AC71398FABF6}
-name: Copyright Text
-key: copyright text
-content-length: 61
+name: Copyright Left Text
+key: copyright left text
+content-length: 13
 
-© Copyright © 2014 Hongkong Land Limited. All Rights Reserved
+© Copyright ©
+----field----
+field: {92B7488C-D3F7-4A08-BC2F-AC66A3C5157C}
+name: Copyright Right Text
+key: copyright right text
+content-length: 42
+
+Hongkong Land Limited. All Rights Reserved
 ----field----
 field: {11D43F72-ECA1-4AAF-BAC0-2DE41F9BB4BD}
 name: Facebook Application App Key
@@ -104,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f9061d03-797d-4792-97fc-ee19ecf50012
+375c9113-74e0-43b0-886e-61a25b1506c5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150812T004827Z
+20150902T092840Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
