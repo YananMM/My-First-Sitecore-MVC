@@ -12,7 +12,7 @@ templatekey: Building Data
 ----version----
 language: en
 version: 1
-revision: ed9cfde8-2436-450b-bddf-eb2c1c911730
+revision: 42bd03bb-fc28-4d46-a17c-6b9c774cae92
 
 ----field----
 field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
@@ -57,6 +57,13 @@ content-length: 109
 
 <file mediaid="{FDA7D14F-EAD1-482F-8299-FB70D78A4B6D}" src="~/media/fda7d14fead1482f8299fb70d78a4b6d.ashx" />
 ----field----
+field: {4745EBC5-3D1D-4CB9-B088-06CFEB603F66}
+name: Opening Hours
+key: opening hours
+content-length: 17
+
+10am-7:30pm daily
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ed9cfde8-2436-450b-bddf-eb2c1c911730
+42bd03bb-fc28-4d46-a17c-6b9c774cae92
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150827T060819Z
+20150902T063621:635767725817050394Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

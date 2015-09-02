@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {6561C18F-7421-463C-9CD0-EE447DF7A94D}
+id: {B408E3E4-8C63-4D45-AFA0-6565B19781C2}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Building Data/Building Data
-parent: {873FCBBD-5F81-4DD2-B885-DFDCA194A5D1}
-name: Building Data
+path: /sitecore/templates/User Defined/Landmark/Page/T24 Page/Service Data
+parent: {3E0F5E19-4593-48D5-913E-8F5231119D02}
+name: Service Data
 master: {00000000-0000-0000-0000-000000000000}
 template: {E269FBB5-3750-427A-9149-7AA950B49301}
 templatekey: Template section
@@ -12,7 +12,7 @@ templatekey: Template section
 ----version----
 language: en
 version: 1
-revision: 0d4d2a2c-1c27-43dc-82e0-265d31c183a9
+revision: 03eb1b14-39b5-48a5-9311-b27f2dc99ea8
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -20,7 +20,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150721T070018Z
+20150902T021810Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0d4d2a2c-1c27-43dc-82e0-265d31c183a9
+03eb1b14-39b5-48a5-9311-b27f2dc99ea8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150902T063520:635767725208045561Z
+20150902T062615:635767719755463691Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -5,12 +5,10 @@
 @using Landmark.Models
 @model RenderingModel
 @{
-    Item overViewPage = Sitecore.Context.Database.GetItem(ItemGuids.OverviewPage);
-    Item valetParkingPage = Sitecore.Context.Database.GetItem(ItemGuids.ValetParkingPage);
+    var buildings = LandmarkHelper.GetBuildings();
 }
-
 <div class="container">
-    @Html.Sitecore().Placeholder("page-title")
+    @Html.Sitecore().Placeholder("t24page-title")
     <div class="gd-exclusive">
         <div class="row">
             <div class="col-sm-6 gd-full-img">
@@ -20,38 +18,28 @@
                 <div class="gd-content-details">
                     <h3>@Html.Sitecore().Field("Service Title")</h3>
                     @Html.Sitecore().Field("Service Content")
-                    <hr>
-                    <h4>CONCIERGE DESKS OPENING HOURS</h4>
-                    <div class="table-responsive">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <th>LANDMARK CHATER</th>
-                                    <td>10am-7:30pm daily</td>
-                                </tr>
-                                <tr>
-                                    <th>LANDMARK PRINCE'S (G/F)</th>
-                                    <td>10am-7:30pm daily</td>
-                                </tr>
-                                <tr>
-                                    <th>LANDMARK PRINCE'S (G/F)</th>
-                                    <td>10am-7:30pm daily</td>
-                                </tr>
-                                <tr>
-                                    <th>LANDMARK PRINCE'S (G/F)</th>
-                                    <td>10am-7:30pm daily</td>
-                                </tr>
-                                <tr>
-                                    <th>LANDMARK PRINCE'S (G/F)</th>
-                                    <td>10am-7:30pm daily</td>
-                                </tr>
-                                <tr>
-                                    <th>LANDMARK PRINCE'S (G/F)</th>
-                                    <td>10am-7:30pm daily</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+
+                    @if (Sitecore.Context.Item.ID.ToString() == ItemGuids.OverviewPage)
+                    {
+                        <hr>
+                        <h4>@Html.Sitecore().Field("Opening Hours Label")</h4>
+                        <div class="table-responsive">
+                            <table>
+                                <tbody>
+                                    @if (buildings != null && buildings.Count != 0)
+                                    {
+                                        foreach (var item in buildings)
+                                        {
+                                            <tr>
+                                                <th>@Html.Sitecore().Field("Building Title", item)</th>
+                                                <td>@Html.Sitecore().Field("Opening Hours", item)</td>
+                                            </tr>
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
                 </div>
             </div>
         </div>

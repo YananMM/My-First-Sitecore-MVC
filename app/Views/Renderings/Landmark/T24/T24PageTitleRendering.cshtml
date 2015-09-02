@@ -7,16 +7,22 @@
 @{
     Item overViewPage = Sitecore.Context.Database.GetItem(ItemGuids.OverviewPage);
     Item valetParkingPage = Sitecore.Context.Database.GetItem(ItemGuids.ValetParkingPage);
+    Item currentItem = Sitecore.Context.Item;
 }
 <div class="gd-pagetitle">
     <div class="gd-pagetitle-heading">
-        <h2>@Html.Sitecore().Field("Page Title", Sitecore.Context.Item.Parent).ToString().ToUpper()</h2>
+        <h2>@Html.Sitecore().Field("Page Title", currentItem.Parent).ToString().ToUpper()</h2>
     </div>
 
     <div class="gd-pagetitle-menu hidden-xs">
-        <a href="@Sitecore.Links.LinkManager.GetItemUrl(overViewPage)" class="active">@Html.Sitecore().Field("Page Title", overViewPage)</a>
+        <a href="@Sitecore.Links.LinkManager.GetItemUrl(overViewPage)" @if (currentItem.ID.ToString() == ItemGuids.OverviewPage) { <text>
+           class="active"
+           </text>  }>@Html.Sitecore().Field("Page Title", overViewPage)</a>
+
         <span class="gd-pagetitle-menu-gap">|</span>
-        <a href="@Sitecore.Links.LinkManager.GetItemUrl(valetParkingPage)">@Html.Sitecore().Field("Page Title", valetParkingPage)</a>
+        <a href="@Sitecore.Links.LinkManager.GetItemUrl(valetParkingPage)" @if (currentItem.ID.ToString() == ItemGuids.ValetParkingPage) { <text>
+           class="active"
+           </text>   }>@Html.Sitecore().Field("Page Title", valetParkingPage)</a>
     </div>
 
     <div class="gd-controls-m visible-xs">
