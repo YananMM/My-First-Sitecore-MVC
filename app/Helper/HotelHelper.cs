@@ -24,8 +24,16 @@ namespace Landmark.Helper
     /// <summary>
     /// Class AboutUsHelper.
     /// </summary>
-    public class AboutUsHelper
+    public class HotelHelper
     {
-        
+        public List<Item> GetHotelSlides()
+        {
+            List<Item> items = new List<Item>();
+            Item item = Sitecore.Context.Item;
+            var root = item.Children.SingleOrDefault(p => p.TemplateID.ToString() == "{ECC8D83D-3EDD-46DB-A4AB-0E22806BBE3A}");
+            items = root.Children.ToList();
+            return items;
+        }
+
     }
 }

@@ -48,7 +48,7 @@ i++;
             <ol class="carousel-indicators gd-carousel-control gd-carousel-no">
                 @for (int j = 0; j < relatedItems.Count; j++)
                 {
-                    <li data-target="#gd-carousel-info" data-slide-to="@i" @{ if (j == 0) { <text>
+                    <li data-target="#gd-carousel-info" data-slide-to="@j" @{ if (j == 0) { <text>
                         class="active"
                         </text>     } }>@(j + 1)</li>
                 }
