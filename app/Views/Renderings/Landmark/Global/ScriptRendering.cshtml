@@ -1,4 +1,14 @@
-﻿<link rel="stylesheet" type="text/css" href="/files/landmark/css/jquery.bxslider.css"></link>
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Items
+<!-- Social App Ids -->
+    <script>
+        // TODO: Change this App Id, anc change your app 'Site URL' settings
+        window.fbAppId = '@ItemGuids.LandmarkConfigItem.Fields["Facebook Application App Key"].Value';
+        window.wbAppKey = '@ItemGuids.LandmarkConfigItem.Fields["Weibo Application API Key"].Value';
+    </script>
+<!-- Social App Ids End -->
+<link rel="stylesheet" type="text/css" href="/files/landmark/css/jquery.bxslider.css"></link>
 <link rel="stylesheet" type="text/css" href="/files/landmark/css/bootstrap-select.css"></link>
 <!-- Dynamically generated global variables for the language options for date picker by Sitecore -->
 <script>
@@ -25,6 +35,10 @@
 <script src="/files/landmark/js/lib/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="/files/landmark/js/lib/jquery.infinitescroll.js"></script>
 <!-- Has problems on ie8 <script src="/files/landmark/js/lib/masonry.pkgd.min.js"></script> -->
+@if (LandmarkHelper.GetPageBodyClass().StartsWith("t13"))
+{
+<script src="/files/landmark/js/lib/masonry.pkgd.min.js"></script>
+}
 <script src="/files/landmark/js/main.js"></script>
 <script>
     jQuery.lazyLoadXT = {
@@ -35,4 +49,5 @@
         updateEvent: 'load orientationchange resize scroll shown.bs.collapse hidden.bs.collapse lazyupdate'
     };
 </script>
-<script type="text/javascript">_satellite.pageBottom();</script>
+
+<script type="text/javascript"> _satellite.pageBottom(); </script>
