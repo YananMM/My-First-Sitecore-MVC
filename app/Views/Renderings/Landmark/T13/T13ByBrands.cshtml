@@ -17,7 +17,7 @@
         }
         @foreach (var items in brands)
         {
-            <div class="brand-box brand-box-letter" id="@items.First().Group">@items.First().Group</div>
+            <div class="brand-box brand-box-letter" id="@items.First().Group.ToLower()">@items.First().Group</div>
             foreach (var item in items)
             {
                 <a class="brand-box" href="@Sitecore.Links.LinkManager.GetItemUrl(item.BrandItem)" title="@item.BrandItem["Brand Title"]">

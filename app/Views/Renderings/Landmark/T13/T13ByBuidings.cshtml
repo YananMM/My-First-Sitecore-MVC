@@ -16,8 +16,8 @@
         {
             if (shoppingHelper.GetBrandsByBuildings(building.ID).Count > 0)
             {
-                string id = building.Fields["Building Title"].Value.Replace(' ','-');
-                <h3 id="@id">@building.Fields["Building Title"].Value</h3>
+                string href = building.DisplayName.ToLower().Replace(" ","");
+                <h3 id="@href">@building.Fields["Building Title"].Value</h3>
                 <div class="brand-box-area clearfix">
                     @foreach (Item brand in shoppingHelper.GetBrandsByBuildings(building.ID))
                     {
