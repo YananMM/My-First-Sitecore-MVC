@@ -364,8 +364,36 @@
     <Content Include="files\landmark\js\lib\masonry.pkgd.min.js" />
     <Content Include="files\landmark\js\lib\modernizr-2.6.2.min.js" />
     <Content Include="files\landmark\js\lib\respond.js" />
+    <Content Include="files\landmark\js\lib\scrollbar\background.png" />
+    <Content Include="files\landmark\js\lib\scrollbar\bigplay.fw.png" />
+    <Content Include="files\landmark\js\lib\scrollbar\bigplay.png" />
+    <Content Include="files\landmark\js\lib\scrollbar\bigplay.svg" />
+    <Content Include="files\landmark\js\lib\scrollbar\controls-ted.png" />
+    <Content Include="files\landmark\js\lib\scrollbar\controls-wmp-bg.png" />
+    <Content Include="files\landmark\js\lib\scrollbar\controls-wmp.png" />
+    <Content Include="files\landmark\js\lib\scrollbar\controls.fw.png" />
+    <Content Include="files\landmark\js\lib\scrollbar\controls.png" />
+    <Content Include="files\landmark\js\lib\scrollbar\controls.svg" />
+    <Content Include="files\landmark\js\lib\scrollbar\DO NOT CHANGE THESE FILES. USE -src- FOLDER.txt" />
+    <Content Include="files\landmark\js\lib\scrollbar\flashmediaelement-cdn.swf" />
+    <Content Include="files\landmark\js\lib\scrollbar\flashmediaelement-debug.swf" />
+    <Content Include="files\landmark\js\lib\scrollbar\flashmediaelement.swf" />
+    <Content Include="files\landmark\js\lib\scrollbar\jquery.js" />
     <Content Include="files\landmark\js\lib\scrollbar\jquery.mCustomScrollbar.concat.min.js" />
     <Content Include="files\landmark\js\lib\scrollbar\jquery.mCustomScrollbar.min.css" />
+    <Content Include="files\landmark\js\lib\scrollbar\jumpforward.png" />
+    <Content Include="files\landmark\js\lib\scrollbar\loading.gif" />
+    <Content Include="files\landmark\js\lib\scrollbar\mediaelement-and-player.js" />
+    <Content Include="files\landmark\js\lib\scrollbar\mediaelement-and-player.min.js" />
+    <Content Include="files\landmark\js\lib\scrollbar\mediaelement.js" />
+    <Content Include="files\landmark\js\lib\scrollbar\mediaelement.min.js" />
+    <Content Include="files\landmark\js\lib\scrollbar\mediaelementplayer.css" />
+    <Content Include="files\landmark\js\lib\scrollbar\mediaelementplayer.js" />
+    <Content Include="files\landmark\js\lib\scrollbar\mediaelementplayer.min.css" />
+    <Content Include="files\landmark\js\lib\scrollbar\mediaelementplayer.min.js" />
+    <Content Include="files\landmark\js\lib\scrollbar\mejs-skins.css" />
+    <Content Include="files\landmark\js\lib\scrollbar\silverlightmediaelement.xap" />
+    <Content Include="files\landmark\js\lib\scrollbar\skipback.png" />
     <Content Include="files\landmark\js\lib\selectivizr-min.js" />
     <Content Include="files\landmark\js\lib\svgmap\css\font-awesome.css" />
     <Content Include="files\landmark\js\lib\svgmap\css\map.css" />
@@ -646,6 +674,7 @@
     <Content Include="Views\Renderings\Landmark\T24\T24ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T32\T32ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T24\T24PageTitleRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T15\T15ContentRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
