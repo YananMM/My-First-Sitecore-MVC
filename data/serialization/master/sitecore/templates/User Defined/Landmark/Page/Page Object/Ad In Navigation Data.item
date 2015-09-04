@@ -1,54 +1,47 @@
 ----item----
 version: 1
-id: {07A37ABC-D676-4737-8B14-79EC18486CE8}
+id: {DA1F83BE-2649-4696-B188-02DE9BFD2FC7}
 database: master
-path: /sitecore/content/Home/Landmark/Shopping
-parent: {497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}
-name: Shopping
+path: /sitecore/templates/User Defined/Landmark/Page/Page Object/Ad In Navigation Data
+parent: {AA7E76BD-BCAD-4597-9855-0493AABF8DAF}
+name: Ad In Navigation Data
 master: {00000000-0000-0000-0000-000000000000}
-template: {AA7E76BD-BCAD-4597-9855-0493AABF8DAF}
-templatekey: Page Object
-
-----field----
-field: {6FD695E7-7F6D-4CA5-8B49-A829E5950AE9}
-name: __Subitems Sorting
-key: __subitems sorting
-content-length: 0
-
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
 
 ----version----
 language: en
 version: 1
-revision: 084ad775-ae69-4678-8386-c9701a551432
+revision: 77ab5b8e-4396-40bf-a44c-61b826a32c47
 
-----field----
-field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
-name: Page Title
-key: page title
-content-length: 8
-
-Shopping
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150723T001735Z
+20150721T071130Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-084ad775-ae69-4678-8386-c9701a551432
+77ab5b8e-4396-40bf-a44c-61b826a32c47
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150807T011514Z
+20150721T071235Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -80,6 +80,7 @@ namespace Landmark.Classes
         public static readonly String RelatedItemFolder = "{5451FE7F-09B6-4620-AE8B-5B4A3610851E}";
         public static readonly String SearchResultsPage = "{4452D078-3946-43F3-9B42-84000F96BF5A}";
         public static readonly String HotelSlideObject = "{93B5F609-2F05-42E3-ABB2-9D903169CF9D}";
+        public static readonly String PageObject = "{AA7E76BD-BCAD-4597-9855-0493AABF8DAF}";
 
         //item 
         public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}");
