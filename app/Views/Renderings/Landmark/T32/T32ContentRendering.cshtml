@@ -1,21 +1,99 @@
 ﻿
+@using Landmark.Classes
 @using Landmark.Helper
 @using Landmark.Models
+@using Sitecore.Data.Items
 @model RenderingModel
 @{
     SearchHelper helper = new SearchHelper();
-    var results = helper.GetSearchResults(Request["value"]);
+    var results = helper.GetSearchResults(Request["value"],Request["type"]);
+    List<FilterTypeResults> types = helper.GetFilterTypes(Request["value"]);
 }
-<div class="container">
-<div class="gd-pagetitle">
-    <div class="gd-pagetitle-heading">
-        <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
+
+ <div class="container">
+        <div class="gd-pagetitle">
+            <div class="gd-pagetitle-heading">
+                <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
+            </div>
+              <div  class="gd-search-info">@results.Count search result(s) for <span>"@Request["value"]"</span></div>
+              <div  class="gd-search-filter hidden-xs">@Html.Sitecore().Field("Glossary Value",ItemGuids.FilterByItem)
+                <ul>
+                    <!--<li class="active"><a href="#">ALL</a></li>-->
+                @foreach (var type in types)
+                {
+                    if(Int32.Parse(type.count)>0)
+                        {<li><a href="#">@type.value (@type.count)</a></li>}
+                }
+          </ul>
+          </div>
+          
+        <div class="gd-controls-m visible-xs">
+                    <select class="form-control">
+                        <option value="#">ALL</option>
+                        @foreach (var type in types)
+                        {
+                            if(Int32.Parse(type.count)>0)
+                                {<option value="">@type.value (@type.count)</option>}
+                        }
+                    </select>
+        </div>
+          
+        </div>
+     <div class="gd-search">
+         @if (results.Select(item =>item.FilterType == Sitecore.Context.Database.GetItem(ItemGuids.ShoppingFilterType).Fields["Value"].Value).ToList().Count>0)
+         {
+            <div class="gd-search-heading">
+             <h3>@Html.Sitecore().Field("Glossary Value",ItemGuids.StoreDetailsItem)</h3>
+         </div>
+        }
+         
+         <div class="gd-search-body">
+             <ol>
+                 @foreach (var result in results)
+                 {
+                     if (result.FilterType == Sitecore.Context.Database.GetItem(ItemGuids.ShoppingFilterType).Fields["Value"].Value)
+                     {
+                         <li>
+                             <div class="gd-search-box2">
+                                 <div class="row">
+                                     <div class="col-sm-9">
+                                         <a href="#"><img data-src="../files/landmark/images/others/search-logo-01.png"></a>
+                                         <h4><a href="#">@result.PageTitle</a></h4>
+                                         <p>
+                                             <span class="icomoon-location2"></span> Shop 202, 2/F, LANDMARK ALEXANDRA
+                                         </p>
+                                         <p>
+                                             <span class="icomoon-phone"></span> 2265 0200
+                                         </p>
+                                         <a href="#" class="gd-search-link-brief">OFFICIAL WEBSITE<span class="icomoon-chevron-small-right"></span></a>
+                                     </div>
+                                     <div class="col-sm-3">
+                                         <h5>OPENING HOURS</h5>
+                                         <p>Mon-Sat <br>
+                                             Lunch 12noon – 2:30pm, <br>
+                                             Dinner 6:30pm – 10:30pm, <br>
+                                             Bar 12noon – 1am <br>
+                                             Sun closed
+                                         </p>
+                                     </div>
+                                 </div>
+                             </div>
+                         </li>
+                     }
+                     else
+                     {
+                         <li>
+                             <div class="gd-search-box">
+                                 <h5>@result.FilterType</h5>
+                                 <h4><a href="#">@result.PageTitle</a></h4>
+                                 <div>MAY 18, 2015</div>
+                             </div>
+                         </li>
+                     }
+
+                 }
+             </ol>
+         </div>
+     </div>
     </div>
-<div class="gd-newsdetails">
-@foreach (LandmarkSearchResultItem item in results)
-{
-    <p>@item.GetItem().DisplayName</p>
-}
-</div>
-</div>
-</div>
+    

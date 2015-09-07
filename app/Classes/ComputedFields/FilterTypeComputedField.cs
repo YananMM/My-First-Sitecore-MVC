@@ -5,6 +5,7 @@ using System.Web;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.ComputedFields;
 using Sitecore.Data;
+using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 
 namespace Landmark.Classes.ComputedFields
@@ -17,13 +18,12 @@ namespace Landmark.Classes.ComputedFields
             if (item == null)
                 return null;
 
-            if (item.TemplateID.ToString() == ItemGuids.T14ShopDetailsTemplate)
+            var field = (ReferenceField) item.Fields["Search Filter Type"];
+            if (field.TargetItem == null)
+                return null;
+            else
             {
-                return StringConstants.ShoppingType;
-            }
-            if (item.TemplateID.ToString() == ItemGuids.T4PageTemplate)
-            {
-                return StringConstants.NowAtLandmarkType;
+                return field.TargetItem.Fields["Value"].Value;
             }
 
             return null;

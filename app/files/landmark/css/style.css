@@ -5655,22 +5655,11 @@ button.close {
   z-index: 1040;
   -webkit-overflow-scrolling: touch;
   outline: 0;
-}
-.modal.fade .modal-dialog {
-  -webkit-transform: translate(0, -25%);
-  -ms-transform: translate(0, -25%);
-  -o-transform: translate(0, -25%);
-  transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
-  -moz-transition: -moz-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
-}
-.modal.in .modal-dialog {
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  transform: translate(0, 0);
+  /*&.fade .modal-dialog {
+    .translate(0, -25%);
+    .transition-transform(~"0.3s ease-out");
+  }
+  &.in .modal-dialog { .translate(0, 0) }*/
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -10544,7 +10533,7 @@ h4 {
   font-size: 13px;
   line-height: 2;
 }
-.gd-brief .gd-brief-body .text-center {
+.gd-brief .gd-brief-body.text-center {
   text-align: left;
 }
 .gd-brief .gd-brief-body p {
@@ -10585,7 +10574,7 @@ h4 {
   .gd-brief .gd-brief-body {
     font-size: 12px;
   }
-  .gd-brief .gd-brief-body .text-center {
+  .gd-brief .gd-brief-body.text-center {
     text-align: center;
   }
   .gd-brief .gd-brief-body.gd-brief-center {
@@ -10859,6 +10848,9 @@ h4 {
     float: left;
     width: 50%;
   }
+}
+.gd-carousel-info .carousel-inner .item > .carousel-image.gd-lightbox-video {
+  position: relative;
 }
 .gd-carousel-info .carousel-inner .carousel-caption {
   margin: 0;
@@ -11631,10 +11623,20 @@ h4 {
   min-height: 200px;
   overflow: hidden;
 }
-.gd-lightbox .modal-content .modal-body img {
+.gd-lightbox .modal-content .modal-body .gd-lightbox-img {
   display: block;
   max-width: 100%;
   max-height: 1200px;
+  margin: 0 auto;
+}
+.gd-lightbox .modal-content .modal-body .pin {
+  position: absolute;
+  font-size: 40px;
+  color: #d4a962;
+}
+.gd-lightbox .modal-content .modal-body video,
+.gd-lightbox .modal-content .modal-body .mejs-container {
+  display: block;
   margin: 0 auto;
 }
 .gd-lightbox-link:hover,
@@ -12258,6 +12260,66 @@ dl.gd-content-details-tags dd a:active {
 }
 .gd-dropdown.gd-dropdown-fill .dropdown-menu {
   width: 100%;
+}
+.gd-slick-slider .slick-arrow {
+  color: #999999;
+  font-size: 30px;
+  height: 30px;
+  line-height: 1;
+  margin-top: -15px;
+  width: 30px;
+}
+.gd-slick-slider .slick-arrow:hover,
+.gd-slick-slider .slick-arrow:focus,
+.gd-slick-slider .slick-arrow:active {
+  color: #666666;
+  font-size: 30px;
+}
+.gd-slick-slider .slick-arrow span {
+  display: block;
+}
+.gd-slick-slider .slick-prev {
+  left: -50px;
+}
+.gd-slick-slider .slick-next {
+  right: -50px;
+}
+.gd-slick-slider .slick-prev:before,
+.gd-slick-slider .slick-next:before {
+  content: "";
+  display: none;
+}
+.gd-slick-slider .gd-slick-item {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 300px;
+  margin: 0 15px;
+  position: relative;
+  padding-bottom: 130px;
+}
+.gd-slick-slider .gd-slick-item:focus {
+  outline: none;
+}
+.gd-slick-slider .gd-slick-item img {
+  height: 300px;
+}
+.gd-slick-slider .gd-slick-item .gd-slick-des {
+  color: #222222;
+  margin-top: 10px;
+  position: absolute;
+}
+.gd-slick-slider .gd-slick-item .gd-slick-des h3 {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+}
+.gd-slick-slider .gd-slick-item .gd-slick-des p {
+  font-size: 14px;
+  height: 90px;
+  line-height: 2;
+  margin: 0;
+  overflow: hidden;
 }
 .t35 > iframe {
   display: block;
@@ -13535,12 +13597,11 @@ dl.gd-content-details-tags dd a:active {
 .t32 .gd-search .gd-search-body ol li .gd-search-box,
 .t32 .gd-search .gd-search-body ol li .gd-search-box2 {
   margin: 0 0 30px;
-  padding: 0 0 30px;
+  padding: 0;
   display: block;
   font-size: 13px;
   color: #222222;
   font-family: Arial, sans-serif;
-  border-bottom: solid 1px #dedede;
 }
 @media (min-width: 768px) {
   .t32 .gd-search .gd-search-body ol li .gd-search-box,
@@ -13573,6 +13634,11 @@ dl.gd-content-details-tags dd a:active {
   text-decoration: none;
 }
 @media (min-width: 768px) {
+  .t32 .gd-search .gd-search-body ol li .gd-search-box {
+    border-bottom: solid 1px #dedede;
+    margin: 0 0 30px;
+    padding: 0 0 30px;
+  }
   .t32 .gd-search .gd-search-body ol li .gd-search-box h5 {
     padding-top: 10px;
     float: right;
