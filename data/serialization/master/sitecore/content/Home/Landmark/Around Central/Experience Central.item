@@ -12,7 +12,7 @@ templatekey: T15 Page
 ----version----
 language: en
 version: 1
-revision: 70cd1646-8ced-4ada-8496-8cba5b3a8b2d
+revision: e7d218ee-7bdc-447e-9551-b537df9c41e7
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -21,6 +21,13 @@ key: page title
 content-length: 18
 
 Experience Central
+----field----
+field: {E24E5C03-B6A3-4ACA-AB3C-B48ACEDDD01D}
+name: Page Introduction
+key: page introduction
+content-length: 231
+
+INTRODUCTION ABOUT MONTHLY EXCLUSIVES - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in convallis urna. Phasellus vitae ligula eu odio luctus tristique in in purus. Morbi vestibulum sodales lorem ac ullamcorper.
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-70cd1646-8ced-4ada-8496-8cba5b3a8b2d
+e7d218ee-7bdc-447e-9551-b537df9c41e7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150904T024626:635769315863605772Z
+20150907T092049:635772144496260862Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

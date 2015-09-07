@@ -140,7 +140,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\ShoppingController.cs" />
-    <Compile Include="Helper\HotelHelper.cs" />
+    <Compile Include="Helper\AroundCentralHelper.cs" />
     <Compile Include="Helper\ArtTourHelper.cs" />
     <Compile Include="Helper\LandmarkHelper.cs" />
     <Compile Include="Helper\NowAtLandmarkHelper.cs" />
@@ -678,6 +678,7 @@
     <Content Include="Views\Renderings\Landmark\T15\T15ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T25\T25ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T25\T25MoreAttractions.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T15\T15AlsoLikeRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

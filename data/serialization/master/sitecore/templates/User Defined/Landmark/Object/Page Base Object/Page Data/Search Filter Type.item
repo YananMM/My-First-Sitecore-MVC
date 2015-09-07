@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+id: {D238DB6D-29CE-4830-9D41-6A022AFB22A6}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Page Base Object/Page Data/Is Shown In Breadcrumb
+path: /sitecore/templates/User Defined/Landmark/Object/Page Base Object/Page Data/Search Filter Type
 parent: {5D4B5095-02C6-45BA-8C86-F5D2B851F89A}
-name: Is Shown In Breadcrumb
+name: Search Filter Type
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -15,18 +15,25 @@ name: Type
 key: type
 content-length: 8
 
-Checkbox
+Droptree
+----field----
+field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
+name: Source
+key: source
+content-length: 48
+
+/sitecore/content/Global/Landmark/Search Filters
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-300
+400
 ----version----
 language: en
 version: 1
-revision: 4ad572f8-d2ad-44f5-bc91-43cdd1727ebe
+revision: 70814899-e8d2-4c6a-b2c3-4cf139ce53a6
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,14 +41,14 @@ name: __Created
 key: __created
 content-length: 16
 
-20150819T093049Z
+20150907T035322Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-4ad572f8-d2ad-44f5-bc91-43cdd1727ebe
+70814899-e8d2-4c6a-b2c3-4cf139ce53a6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated

@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+id: {E24E5C03-B6A3-4ACA-AB3C-B48ACEDDD01D}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Page Base Object/Page Data/Is Shown In Breadcrumb
-parent: {5D4B5095-02C6-45BA-8C86-F5D2B851F89A}
-name: Is Shown In Breadcrumb
+path: /sitecore/templates/User Defined/Landmark/Page/T15 Page/Page Info/Page Introduction
+parent: {06E9B739-D1E7-4F75-8434-6D7435EB1414}
+name: Page Introduction
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,20 +13,20 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 8
+content-length: 15
 
-Checkbox
+Multi-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-300
+100
 ----version----
 language: en
 version: 1
-revision: 4ad572f8-d2ad-44f5-bc91-43cdd1727ebe
+revision: 2d29aaf4-6936-4e22-99d8-b32cedb9d2e6
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150819T093049Z
+20150907T092015Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-4ad572f8-d2ad-44f5-bc91-43cdd1727ebe
+2d29aaf4-6936-4e22-99d8-b32cedb9d2e6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150907T035347Z
+20150907T092033:635772144335781683Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
