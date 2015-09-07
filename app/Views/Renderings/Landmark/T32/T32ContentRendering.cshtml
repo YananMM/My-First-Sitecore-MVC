@@ -8,6 +8,7 @@
     SearchHelper helper = new SearchHelper();
     var results = helper.GetSearchResults(Request["value"],Request["type"]);
     List<FilterTypeResults> types = helper.GetFilterTypes(Request["value"]);
+    ShoppingHelper shoppingHelper = new ShoppingHelper();
 }
 
  <div class="container">
@@ -57,18 +58,21 @@
                              <div class="gd-search-box2">
                                  <div class="row">
                                      <div class="col-sm-9">
-                                         <a href="#"><img data-src="../files/landmark/images/others/search-logo-01.png"></a>
-                                         <h4><a href="#">@result.PageTitle</a></h4>
+                                         <a href="#"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image",result.GetItem())"></a>
+                                         <h4><a href="#">@Html.Sitecore().Field("Brand Title",result.GetItem())</a></h4>
                                          <p>
-                                             <span class="icomoon-location2"></span> Shop 202, 2/F, LANDMARK ALEXANDRA
+                                             @{
+                                                    var floor = shoppingHelper.GetShopFloor(result.GetItem());
+                                                }
+                                             <span class="icomoon-location2"></span>@Html.Sitecore().Field("Area"),@floor["Floor Title"],@floor.Parent["Building Title"]
                                          </p>
                                          <p>
-                                             <span class="icomoon-phone"></span> 2265 0200
+                                             <span class="icomoon-phone"></span>@Html.Sitecore().Field("Contact",result.GetItem())
                                          </p>
-                                         <a href="#" class="gd-search-link-brief">OFFICIAL WEBSITE<span class="icomoon-chevron-small-right"></span></a>
+                                         <a href="@Html.Sitecore().Field("Official Website Url")" class="gd-search-link-brief">@Html.Sitecore().Field("Glossary Value", ItemGuids.OfficialWebsiteItem)<span class="icomoon-chevron-small-right"></span></a>
                                      </div>
                                      <div class="col-sm-3">
-                                         <h5>OPENING HOURS</h5>
+                                         <h5>@Html.Sitecore().Field("Glossary Value", ItemGuids.OpenningHoursItem)</h5>
                                          <p>Mon-Sat <br>
                                              Lunch 12noon – 2:30pm, <br>
                                              Dinner 6:30pm – 10:30pm, <br>
@@ -86,7 +90,7 @@
                              <div class="gd-search-box">
                                  <h5>@result.FilterType</h5>
                                  <h4><a href="#">@result.PageTitle</a></h4>
-                                 <div>MAY 18, 2015</div>
+                                 <div>@result.GetItem().Statistics.Created.ToString("MMM dd,yyyy")</div>
                              </div>
                          </li>
                      }

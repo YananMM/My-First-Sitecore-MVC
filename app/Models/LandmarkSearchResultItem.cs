@@ -22,6 +22,9 @@ namespace Landmark.Models
         [IndexField("filtertype")]
         public String FilterType { get; set; }
 
+        [IndexField("filterorder")]
+        public String FilterOrder { get; set; }
+
         public string ArticleIntro { get; set; }
 
         public DateTime ArticleDate { get; set; }

@@ -257,10 +257,10 @@ namespace Landmark.Helper
         /// Gets the shop floor.
         /// </summary>
         /// <returns>Item.</returns>
-        public Item GetShopFloor()
+        public Item GetShopFloor(Item shopItem)
         {
             string floorId;
-            var floorField = GetFloorId(out floorId);
+            var floorField = GetFloorId(shopItem,out floorId);
             if (floorField != null)
             {
                 Item floor = Sitecore.Context.Database.GetItem(floorId);
@@ -269,10 +269,17 @@ namespace Landmark.Helper
             return null;
         }
 
+        private static MultilistField GetFloorId(Item shopItem,out string floorId)
+        {
+            MultilistField floorField = shopItem.Fields["Floor"];
+            floorId = floorField.TargetIDs.First().ToString();
+            return floorField;
+        }
+
         private static MultilistField GetFloorId(out string floorId)
         {
-            Item item = Sitecore.Context.Item;
-            MultilistField floorField = item.Fields["Floor"];
+            Item shop = Sitecore.Context.Item;
+            MultilistField floorField = shop.Fields["Floor"];
             floorId = floorField.TargetIDs.First().ToString();
             return floorField;
         }

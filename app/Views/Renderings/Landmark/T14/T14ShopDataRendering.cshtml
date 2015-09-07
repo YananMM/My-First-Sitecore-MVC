@@ -29,7 +29,7 @@
                 <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.WhereItem) </th>
                 <td>
                     @{
-                        var floor = shoppingHelper.GetShopFloor();
+                        var floor = shoppingHelper.GetShopFloor(Sitecore.Context.Item);
                     }
                     @Html.Sitecore().Field("Area"),@floor["Floor Title"],@floor.Parent["Building Title"]<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image",floor)" data-lighttitle="@Html.Sitecore().Field("Description")">
                         <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.FloorPlanItem)

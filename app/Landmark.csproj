@@ -129,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Classes\ComputedFields\FilterOrderComputedField.cs" />
     <Compile Include="Classes\ComputedFields\FilterTypeComputedField.cs" />
     <Compile Include="Classes\ConstantString.cs" />
     <Compile Include="Classes\EventHandlers\UserEvent.cs" />

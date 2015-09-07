@@ -18,6 +18,7 @@ namespace Landmark.Helper
         {
             
             List<LandmarkSearchResultItem> results = new List<LandmarkSearchResultItem>();
+            
             if (!string.IsNullOrEmpty(value))
             {
                 var language = Sitecore.Context.Language.Name.ToLower();
@@ -31,7 +32,6 @@ namespace Landmark.Helper
                 {
                     results = context.GetQueryable<LandmarkSearchResultItem>()
                         .Where(item => item.Language.Equals(language) && item.Content.Contains(value))
-                        .OrderBy(item => item.FilterType)
                         .ToList();
                     if(type!=null)
                         results = results.Where(item => item.FilterType == type).ToList();
@@ -44,7 +44,10 @@ namespace Landmark.Helper
                 }
                 
             }
-            return results;
+            IEnumerable<IGrouping<string, LandmarkSearchResultItem>> groups = results.GroupBy(x => x.FilterOrder);
+            IEnumerable<LandmarkSearchResultItem> smths = groups.SelectMany(group => group);
+            List<LandmarkSearchResultItem> groupResults = smths.ToList();
+            return groupResults;
         }
 
         public List<FilterTypeResults> GetFilterTypes(string value = null)
