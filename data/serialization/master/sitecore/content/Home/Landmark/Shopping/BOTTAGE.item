@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 2002ae53-f941-4dfa-b987-7b92772ea100
+revision: ee790a3f-113a-4eb6-af27-b3ced9d75e99
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -56,6 +56,13 @@ key: page title
 content-length: 7
 
 BOTTAGE
+----field----
+field: {D238DB6D-29CE-4830-9D41-6A022AFB22A6}
+name: Search Filter Type
+key: search filter type
+content-length: 38
+
+{3D3F4372-81D0-422E-BA25-5BB9B3A01B96}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -111,14 +118,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2002ae53-f941-4dfa-b987-7b92772ea100
+ee790a3f-113a-4eb6-af27-b3ced9d75e99
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150820T011547:635756301470946500Z
+20150907T035510Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 7e718ca7-939e-4ab7-bae2-648138c3e862
+revision: 2e862ae1-529e-43b8-84c0-46152d2258b8
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -70,6 +70,13 @@ key: page title
 content-length: 9
 
 ALEXANDRE
+----field----
+field: {D238DB6D-29CE-4830-9D41-6A022AFB22A6}
+name: Search Filter Type
+key: search filter type
+content-length: 38
+
+{3D3F4372-81D0-422E-BA25-5BB9B3A01B96}
 ----field----
 field: {2451A91F-FB4B-4A20-A899-C173F7C16F5D}
 name: Related Article Title
@@ -160,14 +167,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7e718ca7-939e-4ab7-bae2-648138c3e862
+2e862ae1-529e-43b8-84c0-46152d2258b8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150901T091148:635766955081065180Z
+20150907T035441Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

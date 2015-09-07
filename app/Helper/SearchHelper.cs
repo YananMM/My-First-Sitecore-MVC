@@ -7,6 +7,7 @@ using Landmark.Classes;
 using Landmark.Models;
 using Sitecore.ContentSearch;
 using Sitecore.Configuration;
+using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 
 namespace Landmark.Helper
