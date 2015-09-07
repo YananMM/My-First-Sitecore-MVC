@@ -14,13 +14,15 @@
     var artpieces = helper.GetArtistsByBuilding(Request["building"],Request["page"]);
 }
 <div class="row">
-    <div class="col-md-6" id="gd-list-locations">
+    <div id="gd-list-locations" class="col-md-6">
         <ul class="list-group gd-list-guide hidden-xs clearfix" id="gdfloorlist">
             @for (int i = 0; i < buildings.Count; i++)
             {
-                string cssclass = building.ID.ToString()  == buildings[i].ID.ToString() ? "active" : string.Empty;
-                <li data-id="@buildings[i].ID.ToString()" data-location='@buildings[i].Fields["Building Svg Id"].Value' class="list-group-item @cssclass"><span class="badge">@(i + 1)</span>
-                <a href="?building=@buildings[i].ID.ToString()&page=1">@buildings[i].Fields["Building Title"].Value</a></li>
+                string cssclass = building.ID.ToString() == buildings[i].ID.ToString() ? "active" : string.Empty;
+                <li data-id="@buildings[i].ID.ToString()" data-location='@buildings[i].Fields["Building Svg Id"].Value' class="list-group-item @cssclass">
+                    <span class="badge">@(i + 1)</span>
+                    <a href="?building=@buildings[i].ID.ToString()&page=1">@buildings[i].Fields["Building Title"].Value</a>
+                </li>
             }
         </ul>
         <div class="gd-controls-m visible-xs">
@@ -32,6 +34,7 @@
             </select>
         </div>
     </div>
+
     <div class="col-md-6">
         <div id="mapplic-t22"></div>
     </div>
@@ -55,7 +58,7 @@
             </div>
                 }
             </div>
-    <div class="navigation"><a href="@LinkManager.GetItemUrl(Sitecore.Context.Item)?building=2&page=2" class="gd-artlist-more">SEE MORE +</a></div>
+    <div class="navigation"><a id="gd-art-gallery-loading" href="@LinkManager.GetItemUrl(Sitecore.Context.Item)?building=2&page=2" class="loding-more">SEE MORE +</a></div>
 </div>
 
 

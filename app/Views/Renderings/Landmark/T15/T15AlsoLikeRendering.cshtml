@@ -5,10 +5,10 @@
 @using Landmark.Models
 @model RenderingModel
 @{
-    var artTourPage = Sitecore.Context.Database.GetItem("ArtTourPage");
+    var artTourPage = Sitecore.Context.Database.GetItem(ItemGuids.LandmarkArtTourItem);
 
     var relatedArticles = LandmarkHelper.GetRelatedItems();
-    
+
 }
 <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
     <div class="carousel-heading">
@@ -52,12 +52,13 @@
             <ol class="carousel-indicators gd-carousel-control gd-carousel-no">
                 <li data-target="#gd-carousel-info" data-slide-to="0" class="active">1</li>
                 <li data-target="#gd-carousel-info" data-slide-to="1">2</li>
+                <li data-target="#gd-carousel-info" data-slide-to="2">3</li>
             </ol>
             <span class="gd-carousel-control gd-carousel-no">
                 /
             </span>
             <span class="gd-carousel-control gd-carousel-no">
-                2
+                3
             </span>
             <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="next">
                 <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>

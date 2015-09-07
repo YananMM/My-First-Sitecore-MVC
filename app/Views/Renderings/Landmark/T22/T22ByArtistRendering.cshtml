@@ -11,12 +11,12 @@
 <div class="art-gallery">
     <div class="row" id="gd-art-gallery">
         <div class="col-sm-6">
-            
+
         </div>
         <div class="col-sm-6">
 
         </div>
     </div>
 
-    <div class="navigation"><a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Item)?page=2" class="gd-artlist-more">@Html.Sitecore().Field("Glossary Value", ItemGuids.MoreItem) +</a></div>
+    <div class="navigation"><a id="gd-art-gallery-loading" href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Item)?page=2" class="loding-more">@Html.Sitecore().Field("Glossary Value", ItemGuids.MoreItem) +</a></div>
 </div>
