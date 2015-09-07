@@ -2,9 +2,9 @@
 version: 1
 id: {AA7E76BD-BCAD-4597-9855-0493AABF8DAF}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/Shopping Page Object
+path: /sitecore/templates/User Defined/Landmark/Page/Page Object
 parent: {92EE2E2F-3AF3-4E3B-98AB-33DC20C2D966}
-name: Shopping Page Object
+name: Page Object
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
@@ -33,7 +33,7 @@ Network/32x32/environment.png
 ----version----
 language: en
 version: 1
-revision: a62bf648-5c48-49df-ad77-e4dd0dab0f1d
+revision: 39c5aaa8-5873-4adf-aed1-196a84366a41
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a62bf648-5c48-49df-ad77-e4dd0dab0f1d
+39c5aaa8-5873-4adf-aed1-196a84366a41
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150723T033740Z
+20150904T072644Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

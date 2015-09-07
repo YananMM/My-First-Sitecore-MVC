@@ -23,12 +23,17 @@ namespace Landmark.Helper
             return src;
         }
 
-        public List<Item> GetTheRestArticles()
+        public List<Item> GetTheRestArticles(string page=null)
         {
+            int pagenumber ;
+            pagenumber = page != null ? Int32.Parse(page) : 0;
+            int numberinonepage = ItemGuids.LandmarkConfigItem.Fields["Page"] == null
+                ? 10
+                : Int32.Parse(ItemGuids.LandmarkConfigItem.Fields["Page"].Value);
             var articles = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.T4PageTemplate)
                     .OrderBy(article => article.Fields["Article Date"].ToString());
             if (articles.Count()>1)
-                return articles.Reverse().Take(articles.Count() - 1).ToList();
+                return articles.Reverse().Take(articles.Count() - 1).Skip(pagenumber * numberinonepage).Take(numberinonepage).ToList();
             else
                 return new List<Item>();
         }

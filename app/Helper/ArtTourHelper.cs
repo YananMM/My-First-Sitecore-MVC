@@ -241,11 +241,14 @@ namespace Landmark.Helper
 
         public List<List<ArtPieceByBuildingJson>> GetArtistsByBuilding(string buildId = null, string page = null)
         {
+            int numberinonepage = ItemGuids.LandmarkConfigItem.Fields["Page"] == null
+                ? 10
+                : Int32.Parse(ItemGuids.LandmarkConfigItem.Fields["Page"].Value);
             buildId = buildId == null
                 ? LandmarkHelper.GetBuildings().FirstOrDefault().ID.ToString()
                 : buildId;
             int pagenumber = page == null ? 1 : Int32.Parse(page);
-            var list = GetArtPieceJsonByBuilding(buildId).Skip(pagenumber * 10).Take(10).ToList();
+            var list = GetArtPieceJsonByBuilding(buildId).Skip(pagenumber * numberinonepage).Take(numberinonepage).ToList();
             return list;
         }
     }
