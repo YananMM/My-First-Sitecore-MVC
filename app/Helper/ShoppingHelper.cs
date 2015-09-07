@@ -220,31 +220,6 @@ namespace Landmark.Helper
             return false;
         }
 
-        public List<TagsTree> GetTagsTree()
-        {
-            List<TagsTree> tagsTrees = new List<TagsTree>();
-            List<Item> allSubTags = new ItemList();
-            MultilistField tagsField = Sitecore.Context.Item.Fields["Tags"];
-            if (tagsField != null)
-            {
-                allSubTags = tagsField.GetItems().ToList();
-                var tagGroups = allSubTags.GroupBy(p => p.ParentID).Select(p => new { id = p.Key, children = p }).ToList();
-                foreach (var item in tagGroups)
-                {
-                    TagsTree tagsTree = new TagsTree()
-                    {
-                        CurrentItem = Sitecore.Context.Database.GetItem(item.id.ToString()),
-                        Children = item.children.Select(p => new TagsTree()
-                        {
-                            CurrentItem = Sitecore.Context.Database.GetItem(p.ID.ToString()),
-                        }).ToList()
-                    };
-                    tagsTrees.Add(tagsTree);
-                }
-            }
-            return tagsTrees;
-        }
-
         /// <summary>
         /// Gets the shop page by tag.
         /// </summary>

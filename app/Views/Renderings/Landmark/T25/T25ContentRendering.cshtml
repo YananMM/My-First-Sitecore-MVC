@@ -1,0 +1,88 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@using Landmark.Models
+@model RenderingModel
+@{
+    var tagsTrees = LandmarkHelper.GetTagsTree();
+}
+<div id="gd-carousel-mainimage-single" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-single">
+    <div class="carousel-inner">
+        <div class="item active">
+            <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Cover Image", Sitecore.Context.Item)"></div>
+            <div class="carousel-caption">
+                <div class="carousel-caption-inner">
+                    <div class="gd-carousel-detail">
+                        <div class="gd-mainimage-brief2">
+                            <h2>@Html.Sitecore().Field("Cover Title")</h2>
+                            @Html.Sitecore().Field("Cover Content")
+                            <div class="table-responsive gd-mainimage-table">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.PhoneItem)</th>
+                                            <td>@Html.Sitecore().Field("Cover Phone")</td>
+                                        </tr>
+                                        <tr>
+                                            <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.EmailItem)</th>
+                                            <td>
+                                                <a href="@Html.Sitecore().Field("Cover Email")">@Html.Sitecore().Field("Cover Email")</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.AddressItem)</th>
+                                            <td>
+                                                @Html.Sitecore().Field("Cover Address")
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table-responsive gd-tg-table">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem)</th>
+                                            <td>
+                                                @foreach (var item in tagsTrees)
+                                                {<text>@item.CurrentItem["Category Name"].ToUpper() - </text>
+                                                    int i = 1;
+                                                    foreach (var it in item.Children)
+                                                    {
+                                                        @it.CurrentItem["Category Name"].ToUpper()
+                                                        if (i != item.Children.Count)
+                                                        {<text>,</text>
+                                                        }
+                                                        i++;
+                                                    }
+                                                    <br/>
+                                                }
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="gd-brief">
+        <div class="gd-brief-heading">
+            <h3>@Html.Sitecore().Field("Content Title")</h3>
+        </div>
+        <div class="gd-brief-body gd-col-2">
+            <p>
+                @Html.Sitecore().Field("Content Description")
+            </p>
+        </div>
+    </div>
+    <div class="gd-location-map" data-lat="-37.820665" data-lng="144.943051">
+        <iframe src="/files/landmark/iframes/map-simple-iframe.html" frameborder="0"></iframe>
+    </div>
+    @Html.Sitecore().Placeholder("more-attrations")
+</div>

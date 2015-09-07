@@ -69,6 +69,7 @@ namespace Landmark.Models
         /// </summary>
         /// <value>The children.</value>
         public List<TagsTree> Children { get; set; }
+
     }
 
 

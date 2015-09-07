@@ -1,7 +1,7 @@
 ﻿@using Landmark.Helper
 @{
     ShoppingHelper shoppingHelper = new ShoppingHelper();
-    var tagsTrees = shoppingHelper.GetTagsTree();
+    var tagsTrees = LandmarkHelper.GetTagsTree();
 }
 @foreach (var item in tagsTrees)
 {

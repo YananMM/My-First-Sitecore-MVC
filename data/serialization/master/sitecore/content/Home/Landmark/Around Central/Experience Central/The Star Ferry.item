@@ -1,0 +1,131 @@
+----item----
+version: 1
+id: {7CE35DB6-F312-4242-9433-606655FB8489}
+database: master
+path: /sitecore/content/Home/Landmark/Around Central/Experience Central/The Star Ferry
+parent: {E973BDE0-11BC-4DD9-B949-08501F4D9353}
+name: The Star Ferry
+master: {00000000-0000-0000-0000-000000000000}
+template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
+templatekey: T25 Page
+
+----version----
+language: en
+version: 1
+revision: 3b28e598-e312-47d5-a6fe-f6dcce09bfcf
+
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 56
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 14
+
+The Star Ferry
+----field----
+field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
+name: Cover Image
+key: cover image
+content-length: 58
+
+<image mediaid="{DD0188AE-D1B3-4766-913F-EC45E6D37303}" />
+----field----
+field: {2A43DD2B-B00F-4A2D-B381-5E842EB6BBE5}
+name: Cover Content
+key: cover content
+content-length: 72
+
+<ul>
+    <li>ARTS &amp; PERFORMANCE</li>
+    <li>CITY ROMANCE</li>
+</ul>
+----field----
+field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
+name: Cover Phone
+key: cover phone
+content-length: 15
+
+(852) 2132 0188
+----field----
+field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
+name: Cover Email
+key: cover email
+content-length: 22
+
+lmhkg-enquiry@mohg.com
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 54
+
+123 Queen's Road Central Pier Road, Central, Hong Kong
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 14
+
+The Star Ferry
+----field----
+field: {DCBD6530-C867-4887-B668-FF8BBB4B7B25}
+name: Tags
+key: tags
+content-length: 194
+
+{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{A869505D-8B56-42B6-9460-9928607C3BD3}|{8DEEBCDA-AC9C-4B0C-AF81-8E493D219713}|{37DE7516-5325-4534-A035-A908D3D256D9}
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 20
+
+SEE MORE ATTRACTIONS
+----field----
+field: {5A6522FD-3283-478A-9C8C-F8F57332961A}
+name: Button Text
+key: button text
+content-length: 13
+
+DISCOVER MORE
+----field----
+field: {F1220F65-3306-4AB6-8AC1-904AE9CBEB22}
+name: Brief Introduction
+key: brief introduction
+content-length: 144
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150904T031811Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3b28e598-e312-47d5-a6fe-f6dcce09bfcf
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150907T072701:635772076210902241Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

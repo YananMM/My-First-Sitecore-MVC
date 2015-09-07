@@ -290,6 +290,7 @@
     <Content Include="files\landmark\fonts\bertholdakzidenzgroteskbelight.svg" />
     <Content Include="files\landmark\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="files\landmark\fonts\icomoon.svg" />
+    <Content Include="files\landmark\iframes\map-simple-iframe.html" />
     <Content Include="files\landmark\iframes\t33-iframe.html" />
     <Content Include="files\landmark\images\black-50.png" />
     <Content Include="files\landmark\images\black-80.png" />
@@ -675,6 +676,8 @@
     <Content Include="Views\Renderings\Landmark\T32\T32ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T24\T24PageTitleRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T15\T15ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T25\T25ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T25\T25MoreAttractions.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
