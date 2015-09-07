@@ -1,13 +1,13 @@
 ----item----
 version: 1
-id: {AA676B4A-E135-4B6F-8889-B9AFBDED5699}
+id: {D0F270A3-A25B-4CCB-ACC2-D8434D44B38F}
 database: master
-path: /sitecore/content/Home/Landmark/Dining
-parent: {497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}
-name: Dining
+path: /sitecore/content/Global/Landmark/Search Filters/Inspirations
+parent: {DBA5A7CD-C7AF-400D-B892-FF39BF474653}
+name: Inspirations
 master: {00000000-0000-0000-0000-000000000000}
-template: {3832F0F6-6342-4394-932C-2DDAB1164C97}
-templatekey: T11 Page
+template: {55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}
+templatekey: Text Object
 
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
@@ -15,40 +15,40 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-400
+500
 ----version----
 language: en
 version: 1
-revision: ba74c0f2-7ead-45c0-a43f-393f578be2f7
+revision: 4661e58b-7a26-4213-83b2-666898ad0354
 
 ----field----
-field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
-name: Page Title
-key: page title
-content-length: 6
+field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
+name: Value
+key: value
+content-length: 12
 
-Dining
+Inspirations
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150723T001748Z
+20150907T034516Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-ba74c0f2-7ead-45c0-a43f-393f578be2f7
+4661e58b-7a26-4213-83b2-666898ad0354
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150901T062146Z
+20150907T040941Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

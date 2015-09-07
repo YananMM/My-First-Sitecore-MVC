@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 2dd621ef-c5a1-4f8b-aa9f-610b2428be7b
+revision: 68ad7105-a83b-4497-9ace-47d69bbfc3a5
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -50,6 +50,13 @@ content-length: 10
 
 BALENCIAGA
 ----field----
+field: {D238DB6D-29CE-4830-9D41-6A022AFB22A6}
+name: Search Filter Type
+key: search filter type
+content-length: 38
+
+{3D3F4372-81D0-422E-BA25-5BB9B3A01B96}
+----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
 key: floor
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2dd621ef-c5a1-4f8b-aa9f-610b2428be7b
+68ad7105-a83b-4497-9ace-47d69bbfc3a5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150827T061235Z
+20150907T035501Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -12,7 +12,7 @@ templatekey: Hotel Page Object
 ----version----
 language: en
 version: 1
-revision: 234c0c38-7496-4d14-afc3-ba6d58850e23
+revision: b5ddd604-1f4c-4133-b140-bcc8e1803de5
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -36,6 +36,13 @@ content-length: 0
 
 
 ----field----
+field: {D238DB6D-29CE-4830-9D41-6A022AFB22A6}
+name: Search Filter Type
+key: search filter type
+content-length: 38
+
+{938C92E0-6C9F-4BEC-BDF4-1FD9423A1E54}
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-234c0c38-7496-4d14-afc3-ba6d58850e23
+b5ddd604-1f4c-4133-b140-bcc8e1803de5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150819T093736:635755738561014793Z
+20150907T040551Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
