@@ -4,7 +4,12 @@
 @using Sitecore.Data.Items
 @using Landmark.Models
 @model RenderingModel
+@{
+    var artTourPage = Sitecore.Context.Database.GetItem("ArtTourPage");
 
+    var relatedArticles = LandmarkHelper.GetRelatedItems();
+    
+}
 <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
     <div class="carousel-heading">
         <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.YouMayAlsoLikeItem)</h3>
@@ -12,12 +17,12 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <div class="carousel-image" data-bgsrc="../files/landmark/images/experience/experience-article-01.jpg"></div>
+            <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Cover Image", artTourPage)"></div>
             <div class="carousel-caption">
                 <div class="carousel-caption-inner">
                     <div class="gd-carousel-detail">
-                        <h4>The Landmark Mandarin Oriental is simply one of the best luxury city hotels in the world.</h4>
-                        <p>The Landmark Mandarin Oriental is simply one of the best luxury city hotels in the world. Our 113 guestrooms are amongst the largest hotel rooms in Hong Kong and each a masterpiece of contemporary design. We offer a cocoon of discreet serenity, attended by our legendary service. This is a highly exclusive experience in the premier business and fashion location.</p>
+                        <h4>@Html.Sitecore().Field("Page Title", artTourPage)</h4>
+                        <p>@Html.Sitecore().Field("Cover Content", artTourPage)</p>
                     </div>
                 </div>
             </div>
@@ -29,18 +34,6 @@
                     <div class="gd-carousel-detail">
                         <h4>The iconic Mandarin Oriental, Hong Kong is the epitome of contemporary luxury combined with Oriental heritage.</h4>
                         <p>Having delighted guests with its award-winning service and impressive facilities for nearly 50 years, it is the much loved address for those seeking an exclusive sanctuary in the heart of this exciting metropolis.</p>
-                        <button class="gd-button gd-button-white" type="button">DISCOVER MORE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="carousel-image" data-bgsrc="../files/landmark/images/hotel/hotel-article-02.jpg"></div>
-            <div class="carousel-caption">
-                <div class="carousel-caption-inner">
-                    <div class="gd-carousel-detail ">
-                        <h4>Lorem ipsum dolor</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eos saepe temporibus architecto magni neque eaque consequatur nesciunt harum laudantium saepe temporibus architecto magni neque eaque!</p>
                         <button class="gd-button gd-button-white" type="button">DISCOVER MORE</button>
                     </div>
                 </div>
@@ -59,13 +52,12 @@
             <ol class="carousel-indicators gd-carousel-control gd-carousel-no">
                 <li data-target="#gd-carousel-info" data-slide-to="0" class="active">1</li>
                 <li data-target="#gd-carousel-info" data-slide-to="1">2</li>
-                <li data-target="#gd-carousel-info" data-slide-to="2">3</li>
             </ol>
             <span class="gd-carousel-control gd-carousel-no">
                 /
             </span>
             <span class="gd-carousel-control gd-carousel-no">
-                3
+                2
             </span>
             <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="next">
                 <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>

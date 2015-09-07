@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {E24E5C03-B6A3-4ACA-AB3C-B48ACEDDD01D}
+id: {1025D25C-6AE7-49FC-8C2C-3FACAD13EB9E}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T15 Page/Page Info/Page Introduction
-parent: {06E9B739-D1E7-4F75-8434-6D7435EB1414}
-name: Page Introduction
+path: /sitecore/templates/User Defined/Landmark/Page/T15 Page/Tag Data/Tags
+parent: {C226036B-D1AF-4EA3-9F9E-6949A701D0C2}
+name: Tags
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,9 +13,16 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 15
+content-length: 8
 
-Multi-Line Text
+Treelist
+----field----
+field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
+name: Source
+key: source
+content-length: 38
+
+/sitecore/content/Global/Landmark/Tags
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -26,7 +33,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: db16a2eb-a402-4667-acd0-c2ba091dc359
+revision: df19f90a-81d2-4676-9214-e34762bb1ad6
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +41,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150907T092015Z
+20150907T104714Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-db16a2eb-a402-4667-acd0-c2ba091dc359
+df19f90a-81d2-4676-9214-e34762bb1ad6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150907T104736:635772196560158746Z
+20150907T104736:635772196560518767Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -7,11 +7,14 @@
 @{
     var experienceTypeFolder = Sitecore.Context.Database.GetItem(ItemGuids.ExperienceTypeFolder);
     var experienceTypes = experienceTypeFolder.Children.ToList();
+
+    AroundCentralHelper helper = new AroundCentralHelper();
+    var attractions = helper.GetAttractionsByExpercience(Request["experienceType"]);
 }
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
-            <h2>@Html.Sitecore().Field("Page Title")</h2>
+            <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
         </div>
         <div class="gd-pagetitle-info">@Html.Sitecore().Field("Page Introduction")</div>
     </div>
@@ -20,12 +23,12 @@
     <div class="gd-promotion">
         <div class="gd-promo-filter">
             <ul>
-                <li class="active"><a href="#">ALL</a></li>
-                @if (experienceTypes != null && experienceTypes.Count != 0)
+                <li class="active"><a href="@Url.Action("ButtonRedirect","Home")?targetId=@Sitecore.Context.Item.ID&experienceType=''">@Html.Sitecore().Field("Glossary Value", ItemGuids.AllItem)</a></li>
+                @if (experienceTypes.Count != 0)
                 {
                     foreach (var item in experienceTypes)
                     {
-                        <li><a href="#">@item.Fields["Value"]</a></li>
+                        <li><a href="@Url.Action("ButtonRedirect","Home")?targetId=@Sitecore.Context.Item.ID&experienceType=@item.Fields["Value"]">@item["Value"].ToUpper()</a></li>
                     }
                 }
             </ul>
@@ -66,5 +69,5 @@
         <div class="gd-promo-more"><a href="javascript:;">SEE MORE +</a></div>
     </div>
 
-   @Html.Sitecore().Placeholder("also-like")
+    @Html.Sitecore().Placeholder("also-like")
 </div>

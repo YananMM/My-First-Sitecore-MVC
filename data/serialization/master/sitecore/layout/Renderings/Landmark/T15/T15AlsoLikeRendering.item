@@ -2,9 +2,9 @@
 version: 1
 id: {E33A29A1-A353-47E8-B96D-058C5F3DA2B6}
 database: master
-path: /sitecore/layout/Renderings/Landmark/T15/T15ContentRendering
+path: /sitecore/layout/Renderings/Landmark/T15/T15AlsoLikeRendering
 parent: {521933EC-7ED3-4AB5-A694-37DE0EF00F54}
-name: T15ContentRendering
+name: T15AlsoLikeRendering
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
 templatekey: View rendering
@@ -33,7 +33,7 @@ content-length: 1
 ----version----
 language: en
 version: 1
-revision: 56dc6ae9-001f-4dd8-8030-26ac7b1f0b41
+revision: f72b0208-615c-4fef-a4c3-8fe49824d25b
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-56dc6ae9-001f-4dd8-8030-26ac7b1f0b41
+f72b0208-615c-4fef-a4c3-8fe49824d25b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150907T093052:635772150529465941Z
+20150907T104604:635772195649596665Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

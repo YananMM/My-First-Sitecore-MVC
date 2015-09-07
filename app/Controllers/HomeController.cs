@@ -49,6 +49,18 @@ namespace Landmark.Controllers
             return Redirect(Sitecore.Links.LinkManager.GetItemUrl(target));
         }
 
+        /// <summary>
+        /// Buttons the redirect.
+        /// </summary>
+        /// <param name="targetId">The target unique identifier.</param>
+        /// <param name="experienceType">Type of the experience.</param>
+        /// <returns>ActionResult.</returns>
+        public ActionResult ButtonRedirect(string targetId, string experienceType)
+        {
+            Item target = Sitecore.Context.Database.GetItem(targetId);
+            return Redirect(Sitecore.Links.LinkManager.GetItemUrl(target) + "?experienceType=" + experienceType);
+        }
+
         public ActionResult AddCustomerMessage(ContactUsFormModel model)
         {
             if (ModelState.IsValid)
@@ -137,5 +149,8 @@ namespace Landmark.Controllers
             var bytes = vCode.CreateValidateCode(5, 280, 60, 22);
             return File(bytes, @"image/jpeg");
         }
+
+       
+
     }
 }
