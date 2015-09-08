@@ -1,0 +1,93 @@
+----item----
+version: 1
+id: {BDE0D03E-96F3-42AE-A6AA-541D68847E08}
+database: master
+path: /sitecore/content/Home/Landmark/Inspiration/Monthly Exclusives/Caress Champagne Diamond Ring
+parent: {923DBE58-71DE-4B27-B0BA-C5DEF3D301B2}
+name: Caress Champagne Diamond Ring
+master: {A13598F7-D565-4FCC-A1EE-15E7C158F17B}
+template: {A46D7A20-B29F-4C4F-8922-0B70555CD6BC}
+templatekey: T27 Page
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: ba5628e5-7524-4bc7-aa83-be61f9fc39c3
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 29
+
+Caress Champagne Diamond Ring
+----field----
+field: {C9FE1BF7-0BCB-46A5-8910-5CC57B66B83E}
+name: Tags
+key: tags
+content-length: 38
+
+{C70FEE58-7079-41B5-A53C-F7B7805CE669}
+----field----
+field: {9CD70150-2F78-4321-9733-D645791D4D33}
+name: Product Name
+key: product name
+content-length: 29
+
+Caress Champagne Diamond Ring
+----field----
+field: {50C2C52F-9032-48D8-A2CB-378C7A6C0DDF}
+name: Product Price
+key: product price
+content-length: 9
+
+HK$85,000
+----field----
+field: {9B795896-A037-4861-B668-605DAC5DFF94}
+name: Product Image
+key: product image
+content-length: 58
+
+<image mediaid="{477334D8-93DD-448B-ADDF-2D1569ED2150}" />
+----field----
+field: {6B06AA4F-E59C-4937-BD25-BC272DB5063E}
+name: Brand
+key: brand
+content-length: 38
+
+{7091CC8A-E3E0-42B2-8927-636FF34C9239}
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150908T045849Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ba5628e5-7524-4bc7-aa83-be61f9fc39c3
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150908T071031Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

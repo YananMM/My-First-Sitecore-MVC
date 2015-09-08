@@ -1,0 +1,83 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@{
+    InspirationHelper helper = new InspirationHelper();
+    List<Item> articleObjects = helper.GetMonthlyExclusives(Request["category"],Request["brand"]).Where(item =>!((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
+    List<Item> articleDetailObjects = helper.GetMonthlyExclusives(Request["category"],Request["brand"]).Where(item=>((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
+    string[] alphabetsStrings = new[] {"a", "b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
+}
+
+<div class="container">
+
+    <div class="gd-pagetitle">
+        <div class="gd-pagetitle-heading">
+            <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
+        </div>
+        <div class="gd-pagetitle-info" >@Html.Sitecore().Field("Page Content")</div>
+    </div>
+
+        <div  class="gd-promotion">
+        </div>
+    <div class="gd-promotion">
+    <div class="gd-promo-filter">
+        <div class="gd-promo-brands">
+        <a class="btn gd-promo-brands-btn">@Html.Sitecore().Field("Glossary Value",ItemGuids.FindByBrandItem)</a>
+        <div class="gd-promo-brands-area">
+            <ul >
+                @for (int i = 0; i<alphabetsStrings.Length; i++)
+                {
+                    if (helper.IfBrandsAlphabetValid(alphabetsStrings[i]))
+                    {
+                        <li><a href="#@alphabetsStrings[i].ToLower()">@alphabetsStrings[i].ToUpper()</a></li>
+                    }
+                    else
+                    {
+                        <li class="disabled">@alphabetsStrings[i].ToUpper()</li>
+                    }
+                }
+
+            </ul>
+            <a href="#" class="gd-promo-brands-all">@Html.Sitecore().Field("Glossary Value",ItemGuids.ShowAllItem)</a>
+        </div>
+        </div>
+        <ul>
+            <li class="active"><a href="#">@Html.Sitecore().Field("Glossary Value", ItemGuids.AllTextItem)</a></li>
+            @foreach (var category in helper.GetCategories())
+            {
+                <li><a href="#">@Html.Sitecore().Field("Category Name",category)</a></li>
+            }
+        </ul>
+    </div>
+
+        <div class="gd-promo-body">
+
+            @foreach (Item detailedarticle in articleObjects)
+            {
+                var brand = ((MultilistField)detailedarticle.Fields["Brand"]).TargetIDs.FirstOrDefault();
+            <div class="gd-promo-box2">
+                <img data-src="@Html.Sitecore().ImageFieldSrc("Product Image",detailedarticle)">
+                <div class="gd-promo-box-text">
+                    <h5>@Html.Sitecore().Field("Brand Name",Sitecore.Context.Database.GetItem(brand))</h5>
+                    <h4>@Html.Sitecore().Field("Product Name",detailedarticle) (@Html.Sitecore().Field("Product Price",detailedarticle))</h4>
+                    <button class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Glossary Value",ItemGuids.DiscoverMoreItem)</button>
+                    <a href="javascript:;" class="gd-promo-share"><span class="icomoon-share"></span>@Html.Sitecore().Field("Glossary Value",ItemGuids.ShareItem)</a>
+                </div>
+            </div>
+            }
+           
+            @foreach (Item article in articleDetailObjects)
+            {
+                var brand = ((MultilistField) article.Fields["Brand"]).TargetIDs.FirstOrDefault();
+                <div class="gd-promo-box">
+                    <img data-src="@Html.Sitecore().ImageFieldSrc("Product Image",article)">
+                    <h5>@Html.Sitecore().Field("Brand Name",Sitecore.Context.Database.GetItem(brand))</h5>
+                    <h4>@Html.Sitecore().Field("Product Name",article) (@Html.Sitecore().Field("Product Price",article))</h4>
+                    <a href="javascript:;" class="gd-promo-share"><span class="icomoon-share"></span>@Html.Sitecore().Field("Glossary Value",ItemGuids.ShareItem)</a>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

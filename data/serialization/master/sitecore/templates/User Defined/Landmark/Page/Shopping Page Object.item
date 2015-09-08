@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {E04426CD-2C71-48F8-A1CA-C507C2CAB178}
+id: {AA7E76BD-BCAD-4597-9855-0493AABF8DAF}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/Page Object
+path: /sitecore/templates/User Defined/Landmark/Page/Shopping Page Object
 parent: {92EE2E2F-3AF3-4E3B-98AB-33DC20C2D966}
-name: Page Object
+name: Shopping Page Object
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
@@ -22,18 +22,18 @@ name: __Standard values
 key: __standard values
 content-length: 38
 
-{B4626B31-2D93-4B55-AE46-2DD5A633BC2C}
+{F7FA7CCE-DDE4-4DC7-AC4C-77A8E33D684F}
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
 content-length: 29
 
-network/32x32/environment.png
+Network/32x32/environment.png
 ----version----
 language: en
 version: 1
-revision: 277d9091-d3fe-4a43-b04e-396c2d7948a0
+revision: a9e3e4ff-f1af-4065-98c4-e46271f49a43
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,7 +41,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150819T055721Z
+20150721T071040Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-277d9091-d3fe-4a43-b04e-396c2d7948a0
+a9e3e4ff-f1af-4065-98c4-e46271f49a43
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150908T031128Z
+20150908T030712Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

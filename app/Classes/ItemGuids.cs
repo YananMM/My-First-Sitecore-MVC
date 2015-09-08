@@ -78,6 +78,7 @@ namespace Landmark.Classes
         public static readonly String T4PageTemplate = "{4CDF5CD9-40F0-4F0B-A095-7773CE6CF582}";
         public static readonly String ArticleObject = "{E0472501-0925-4F7F-A5BC-84F0ECA1B7F8}";
         public static readonly String RelatedItemFolder = "{5451FE7F-09B6-4620-AE8B-5B4A3610851E}";
+        public static readonly String T27Page = "{A46D7A20-B29F-4C4F-8922-0B70555CD6BC}";
         //search template
         public static readonly String SearchResultsPage = "{4452D078-3946-43F3-9B42-84000F96BF5A}";
         public static readonly String HotelSlideObject = "{93B5F609-2F05-42E3-ABB2-9D903169CF9D}";
@@ -134,9 +135,13 @@ namespace Landmark.Classes
         public static readonly Item PhoneItem = Sitecore.Context.Database.GetItem("{4AAF25F5-0A1C-45AA-B81D-B27AD46F37C2}");
         public static readonly Item StoreDetailsItem = Sitecore.Context.Database.GetItem("{58C95FD5-61B2-4DAE-9C5B-6BAE61A2D98D}");
         public static readonly Item AddressItem = Sitecore.Context.Database.GetItem("{86E8B0C2-6C91-45D9-949C-DE5C1CB64ED3}");
-
+        public static readonly Item FindByBrandItem = Sitecore.Context.Database.GetItem("{88028182-7209-4EBB-8CBA-1E6BBE40FCCF}");
         public static readonly Item EmailItem = Sitecore.Context.Database.GetItem("{E3B50ED3-8CDC-41DA-A5D4-176A55CBA63A}");
-
+        public static readonly Item ShowAllItem = Sitecore.Context.Database.GetItem("{2F9D72B2-FF66-4302-8ABB-BB5F7C697FE5}");
+        
+        public static readonly Item AllTextItem = Sitecore.Context.Database.GetItem("{0E954D78-0836-46D0-938A-29E235F975ED}");
+        public static readonly Item ShareItem = Sitecore.Context.Database.GetItem("{2224057F-0DA3-4D7E-9089-99CB8CC77C0F}");
+        
         public static readonly Item ViewMapItem = Sitecore.Context.Database.GetItem("{615AE910-37B4-44C8-B550-32DAA8CCF66B}");
         public static readonly Item FaxItem = Sitecore.Context.Database.GetItem("{4C157DD6-6AF2-4112-B610-AFFC84C6CCF1}");
         public static readonly Item TelephoneItem = Sitecore.Context.Database.GetItem("{0B3DA006-CBA6-44CA-9421-88965D431F2F}");
