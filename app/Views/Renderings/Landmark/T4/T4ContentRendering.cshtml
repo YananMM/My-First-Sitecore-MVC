@@ -5,108 +5,111 @@
 @using Sitecore.Data.Items
 @model RenderingModel
 @{
-    var fromDateField = (DateField) Sitecore.Context.Item.Fields["Event From Date"];
-    var fromDate = fromDateField.DateTime.ToString("d MMM yyyy",CultureInfo.InvariantCulture);
-    var toDateField = (DateField) Sitecore.Context.Item.Fields["Event To Date"];
-    var toDate = toDateField.DateTime.ToString("d MMM yyyy",CultureInfo.InvariantCulture);
-    var fromDateTimeField = (DateField) Sitecore.Context.Item.Fields["Event From Time"];
+    var fromDateField = (DateField)Sitecore.Context.Item.Fields["Event From Date"];
+    var fromDate = fromDateField.DateTime.ToString("d MMM yyyy", CultureInfo.InvariantCulture);
+    var toDateField = (DateField)Sitecore.Context.Item.Fields["Event To Date"];
+    var toDate = toDateField.DateTime.ToString("d MMM yyyy", CultureInfo.InvariantCulture);
+    var fromDateTimeField = (DateField)Sitecore.Context.Item.Fields["Event From Time"];
     var fromDateTime = LandmarkHelper.ToValidDateTime(fromDateTimeField).ToString("hh:mmtt", CultureInfo.InvariantCulture);
-    var toDateTimeField = (DateField) Sitecore.Context.Item.Fields["Event To Time"];
+    var toDateTimeField = (DateField)Sitecore.Context.Item.Fields["Event To Time"];
     var toDateTime = LandmarkHelper.ToValidDateTime(toDateTimeField).ToString("hh:mmtt", CultureInfo.InvariantCulture);
-    var floor = ((ReferenceField) Sitecore.Context.Item.Fields["Event Floor"]).TargetItem;
+    var floor = ((ReferenceField)Sitecore.Context.Item.Fields["Event Floor"]).TargetItem;
     var building = floor.Parent;
 }
 <div class="container">
-        <div class="gd-pagetitle">
-            <div class="gd-pagetitle-heading">
-                <h2>@Sitecore.Context.Item.Parent["Page Title"].ToUpper()</h2>
-            </div>
+    <div class="gd-pagetitle">
+        <div class="gd-pagetitle-heading">
+            <h2>@Sitecore.Context.Item.Parent["Page Title"].ToUpper()</h2>
         </div>
-      
-          <div  class="gd-newsdetails">
-              <h2>@Html.Sitecore().Field("Page Title")</h2>
-          <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage" data-ride="carousel">
+    </div>
+
+    <div class="gd-newsdetails">
+        <h3>@Html.Sitecore().Field("Page Title")</h3>
+        <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage" data-ride="carousel">
             @Html.Sitecore().Placeholder("t4-slides")
-          </div>
+        </div>
 
-            <div class="gd-nd-slider-text">@Html.Sitecore().Field("Page Subtitle")</div>
-            <div class="row gd-nd-details-area">
-             <div  class="col-sm-4">
-                 <div class="table-responsive">
-                     <table>
-                         <tbody>
-                         <tr>
-                             <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.DateTimeItem)</th>
-                             <td>@fromDate - @toDate @fromDateTime-@toDateTime</td>
-                         </tr>
-                         <tr>
-                             <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.VenueItem)</th>
-                             <td>@Html.Sitecore().Field("Floor Title", floor) @Html.Sitecore().Field("Building Title", building)</td>
-                         </tr>
-                         <tr>
-                             <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.EnquiryItem)</th>
-                             <td>@Html.Sitecore().Field("Event Enquiry")</td>
-                         </tr>
-                         <tr>
-                             <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.WebsiteItem)</th>
-                             <td>@Html.Sitecore().Field("Event Website")</td>
-                         </tr>
-                         </tbody>
-                     </table>
-                 </div>
+        <div class="gd-nd-slider-text">@Html.Sitecore().Field("Page Subtitle")</div>
+        <div class="row gd-nd-details-area">
+            <div class="col-sm-4">
+                <div class="table-responsive">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.DateTimeItem)</th>
+                                <td>@fromDate - @toDate @fromDateTime-@toDateTime</td>
+                            </tr>
+                            <tr>
+                                <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.VenueItem)</th>
+                                <td>@Html.Sitecore().Field("Floor Title", floor) @Html.Sitecore().Field("Building Title", building)</td>
+                            </tr>
+                            <tr>
+                                <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.EnquiryItem)</th>
+                                <td>@Html.Sitecore().Field("Event Enquiry")</td>
+                            </tr>
+                            <tr>
+                                <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.WebsiteItem)</th>
+                                <td>@Html.Sitecore().Field("Event Website")</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
- <dl class="gd-content-details-tags">
-         <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem)</dt> <dd>@Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
+                <dl class="gd-content-details-tags">
+                    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem)</dt>
+                    <dd>
+                        @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
                 {
                     Cacheable = false,
                     CacheKey = "tags",
                     Cache_VaryByData = true
-                })</dd>
-          </dl>
-                
-              </div>
-             <div  class="col-sm-8 gd-nd-details">
-              @Html.Sitecore().Field("Page Content")
-@{
-    var images = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item,ItemGuids.ImageTextObjectTemplate);
-}
+                })
+                    </dd>
+                </dl>
 
-@if (images.Count > 0)
-{
-                <div class="row">
-                 @foreach (var image in images)
-                 {
-                    string src = Html.Sitecore().ImageFieldSrc("Image", image);
-                    <img data-src="@src" class="lazy-loaded">
-                 }
-                </div>
-}
-                 @Html.Sitecore().Field("Bullets and Tables")
-              </div>
             </div>
-          </div>
-@{
+            <div class="col-sm-8 gd-nd-details">
+                @Html.Sitecore().Field("Page Content")
+                @{
+                    var images = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.ImageTextObjectTemplate);
+                }
+
+                @if (images.Count > 0)
+                {
+                    <div class="row">
+                        @foreach (var image in images)
+                        {
+                            string src = Html.Sitecore().ImageFieldSrc("Image", image);
+                            <div class="col-sm-6"><img data-src="@src"></div>
+                        }
+                    </div>
+                }
+                @Html.Sitecore().Field("Bullets and Tables")
+            </div>
+        </div>
+    </div>
+    @{
         var articles = LandmarkHelper.GetItemsByTags(Sitecore.Context.Item);
     }
 
-    
-@if (articles.Any())
-{
-<div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
-    <div class="carousel-heading">
-        <h2>@Html.Sitecore().Field("Glossary Value", ItemGuids.YouMayAlsoLikeItem)</h2>
-    </div>
-<!-- Wrapper for slides -->
-<div class="carousel-inner" role="listbox">
-    @{
+
+    @if (articles.Any())
+    {
+        <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
+            <div class="carousel-heading">
+                <h2>@Html.Sitecore().Field("Glossary Value", ItemGuids.YouMayAlsoLikeItem)</h2>
+            </div>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                @{
         int j = 0;
         foreach (var item in articles)
         {
             <div @{ if (j == 0) { <text>
                  class="item active"
-                 </text>        } else { <text>
+                 </text>          } else { <text>
                  class="item"
-                 </text>        } }>
+                 </text>          } }>
                 @{
             j++;
                 }
@@ -114,16 +117,16 @@
                 <div class="carousel-caption">
                     <div class="carousel-caption-inner">
                         <div class="gd-carousel-detail">
-                            <h3>@Html.Sitecore().Field("Article Headline",item)</h3>
-                            <p>@Html.Sitecore().Field("Article Intro",item)</p>
+                            <h3>@Html.Sitecore().Field("Article Headline", item)</h3>
+                            <p>@Html.Sitecore().Field("Article Intro", item)</p>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         }
-    }
-</div>
+                }
+            </div>
 
 
             <!-- Wrapper for controls -->
@@ -138,14 +141,9 @@
                     <ol class="carousel-indicators gd-carousel-control gd-carousel-no">
                         @for (int i = 0; i < articles.Count; i++)
                         {
-                            <li data-target="#gd-carousel-info" data-slide-to="@i" @{
-                                                                                       if (i == 0)
-                                                                                       {
-                                                                                           <text>
-                                                                                               class="active"
-                                                                                           </text>
-                                                                                       }
-                                                                                   }>@(i+1)</li>
+                            <li data-target="#gd-carousel-info" data-slide-to="@i" @{ if (i == 0) { <text>
+                                class="active"
+                                </text>   } }>@(i + 1)</li>
                         }
                     </ol>
                     <span class="gd-carousel-control gd-carousel-no">
@@ -161,5 +159,5 @@
                 </div>
             </div>
         </div>
-}
+    }
 </div>

@@ -18,13 +18,13 @@
     </div>
     <div class="gd-newsdetails">
         <div class="gd-nd-info-text">@Html.Sitecore().Field("Page Content")</div>
-        @Html.Sitecore().Field("Article Slider Image",latestItem)
+        @Html.Sitecore().Field("Article Slider Image", latestItem)
     </div>
     <div class="gd-brief">
         <div class="gd-brief-heading">
-            <h2>
-                @Html.Sitecore().Field("Article Headline",latestItem)
-            </h2>
+            <h3>
+                @Html.Sitecore().Field("Article Headline", latestItem)
+            </h3>
         </div>
         <div class="gd-brief-body">
             <div class="row">
@@ -36,28 +36,28 @@
             </div>
         </div>
     </div>
-<div class="gd-promotion">
-    <div class="gd-promo-heading">
-          <h2>@Html.Sitecore().Field("Glossary Value",ItemGuids.AlsoHappenInLandmarkItem)</h2>
+    <div class="gd-promotion">
+        <div class="gd-promo-heading">
+            <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.AlsoHappenInLandmarkItem)</h3>
         </div>
         @{
-    var articles = helper.GetTheRestArticles();
-}
-<div class="gd-promo-body">
-        @foreach (Item child in articles)
-        {
-            Item article = child.TemplateID.ToString() == ItemGuids.T4PageTemplate ? child : ((ReferenceField) child.Fields["Reference Item"]).TargetItem;
-            Item type = ((ReferenceField) article.Fields["Article Type"]).TargetItem;
-            <div class="gd-promo-box">
-                <a href="@LinkManager.GetItemUrl(article)">
-                    <img data-src='@Html.Sitecore().ImageFieldSrc("Article Thumb Image", article)'>
-                    <h4>@type.Fields["Value"].ToString().ToUpper()</h4>
-                    <h2>@Html.Sitecore().Field("Article Headline", article)</h2>
-                    <p>@Html.Sitecore().Field("Article Intro", article)</p>
-                </a>
-            </div>
+            var articles = helper.GetTheRestArticles();
         }
-</div>
+        <div class="gd-promo-body">
+            @foreach (Item child in articles)
+            {
+                Item article = child.TemplateID.ToString() == ItemGuids.T4PageTemplate ? child : ((ReferenceField)child.Fields["Reference Item"]).TargetItem;
+                Item type = ((ReferenceField)article.Fields["Article Type"]).TargetItem;
+                <div class="gd-promo-box">
+                    <a href="@LinkManager.GetItemUrl(article)">
+                        <img data-src='@Html.Sitecore().ImageFieldSrc("Article Thumb Image", article)'>
+                        <h5>@type.Fields["Value"].ToString().ToUpper()</h5>
+                        <h3>@Html.Sitecore().Field("Article Headline", article)</h3>
+                        <p>@Html.Sitecore().Field("Article Intro", article)</p>
+                    </a>
+                </div>
+            }
+        </div>
 
-      </div>
+    </div>
 </div>

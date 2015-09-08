@@ -21,7 +21,7 @@
             {
                 <div @if (i == 1) { <text>
                      class="item active"
-                     </text>            } class="item">
+                     </text>             } class="item">
                     <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Callout Image",item)"></div>
                     <div class="carousel-caption">
                         <div class="carousel-caption-inner">
@@ -53,7 +53,7 @@ i++;
                 {
                     <li data-target="#gd-carousel-info" data-slide-to="@j" @{ if (j == 0) { <text>
                         class="active"
-                        </text>      } }>@(j + 1)</li>
+                        </text>       } }>@(j + 1)</li>
                 }
             </ol>
             <span class="gd-carousel-control gd-carousel-no">

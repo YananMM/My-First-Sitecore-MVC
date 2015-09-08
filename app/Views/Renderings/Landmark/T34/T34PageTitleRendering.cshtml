@@ -17,12 +17,12 @@
 
     <a href="@Sitecore.Links.LinkManager.GetItemUrl(hotel1)" @if (Sitecore.Context.Item.ID == hotel1.ID) { <text>
        class="active"
-       </text>        }>@Html.Sitecore().Field("Page Title", hotel1)</a>
+       </text>          }>@Html.Sitecore().Field("Page Title", hotel1)</a>
 
     <span class="gd-pagetitle-menu-gap">|</span>
     <a @if (Sitecore.Context.Item.ID == hotel2.ID) { <text>
        class="active"
-       </text>         } href="@Sitecore.Links.LinkManager.GetItemUrl(hotel2)">@Html.Sitecore().Field("Page Title", hotel2)</a>
+       </text>           } href="@Sitecore.Links.LinkManager.GetItemUrl(hotel2)">@Html.Sitecore().Field("Page Title", hotel2)</a>
 </div>
 
 

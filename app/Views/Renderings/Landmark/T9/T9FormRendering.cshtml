@@ -22,7 +22,7 @@
 
 <div class="gd-contact-area">
     <div class="gd-contact-heading">
-        <span class="icomoon-thin-arrow-R arrow-rotate-90 "></span>
+        <span class="icomoon-thin-arrow-D"></span>
         <h3>
             <span class="icomoon-location"></span>@Html.Sitecore().Field("Contact Form Title")
         </h3>
@@ -36,13 +36,27 @@
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="title">@Html.Sitecore().Field("Title Label") *</label>
-                                <select class="form-control" id="title" name="Title" required>
-                                    <option value="">@Html.Sitecore().Field("Select Label")</option>
-                                    @foreach (var item in formTitleSelects)
-                                    {
-                                        <option value="@item.Name">@item.Name</option>
-                                    }
-                                </select>
+                                @*<select class="form-control" id="title" name="Title" required>
+                                        <option value="">@Html.Sitecore().Field("Select Label")</option>
+                                        @foreach (var item in formTitleSelects)
+                                        {
+                                            <option value="@item.Name">@item.Name</option>
+                                        }
+                                    </select>*@
+                                <div class="dropdown gd-dropdown gd-dropdown-fill">
+                                    <!-- User's selection will be stored here -->
+                                    <input type="hidden" name="Title" required>
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                        <span class="current">@Html.Sitecore().Field("Select Label")</span>
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        @foreach (var item in formTitleSelects)
+                                        {
+                                            <li><a href="javascript:;" data-value="@item.Name">@item.Name</a></li>
+                                        }
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -78,13 +92,27 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="enquiirytype">@Html.Sitecore().Field("Enquiry Type Label") *</label>
-                                <select class="form-control" id="enquiirytype" name="EnquiryType" required>
-                                    <option value="">@Html.Sitecore().Field("Select Label")</option>
-                                    @foreach (var item in formEnquirySelects)
-                                    {
-                                        <option value="@item.Name">@item.Name</option>
-                                    }
-                                </select>
+                                @*<select class="form-control" id="enquiirytype" name="EnquiryType" required>
+                                        <option value="">@Html.Sitecore().Field("Select Label")</option>
+                                        @foreach (var item in formEnquirySelects)
+                                        {
+                                            <option value="@item.Name">@item.Name</option>
+                                        }
+                                    </select>*@
+                                <div class="dropdown gd-dropdown gd-dropdown-fill">
+                                    <!-- User's selection will be stored here -->
+                                    <input type="hidden" name="EnquiryType" required>
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                        <span class="current">@Html.Sitecore().Field("Select Label")</span>
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        @foreach (var item in formEnquirySelects)
+                                        {
+                                            <li><a href="javascript:;" data-value="@item.Name">@item.Name</a></li>
+                                        }
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

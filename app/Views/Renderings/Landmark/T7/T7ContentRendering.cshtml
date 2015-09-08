@@ -28,7 +28,7 @@
                     foreach (Item building in buildings)
                     {
                         string cssclass = building.ID.ToString() == activeItem.ID.ToString() ? "active" : "";
-                        <li class="@cssclass" data-service=""><a href="?buildingID=@building.ID.ToString()" data-src="/Service/Landmark.asmx/GetFloorPlanJson?buildingID=@building.ID.ToString()">@building.Fields["Building Title"].Value</a></li>
+                        <li class="@cssclass" ><a href="?buildingID=@building.ID.ToString()" data-src="/Service/Landmark.asmx/GetFloorPlanJson?buildingID=@building.ID.ToString()" data-src-ie8="t7/floorplan2-ie8.json">@building.Fields["Building Title"].Value</a></li>
                         i++;
                     }
                 }
@@ -36,7 +36,29 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row visible-xs">
+        <div class="col-xs-12">
+            <div class="gd-floorplan-m">
+                <div class="gd-floorplan-img-m">
+                    <img src="../files/landmark/images/floorguide/examplefloorplan0.jpg">
+                </div>
+
+                <div class="gd-controls-m">
+                    <select id="gd-fp-building-m" class="form-control">
+                        <option value="0">LANDMARK PRINCE'S</option>
+                        <option value="1">LANDMARK ALEXANDRA</option>
+                        <option value="2">LANDMARK CHATER</option>
+                        <option value="3">OTHER BUILDINGS</option>
+                    </select>
+                </div>
+
+                <div class="gd-controls-m">
+                    <select id="gd-fp-levela-m" class="form-control"></select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="gd-floorplan-container">
         <div class="col-sm-3">
             <div class="gd-floorplan clearfix">
                 <div class="gd-fp-levela hidden-xs" id="gd-floors"></div>

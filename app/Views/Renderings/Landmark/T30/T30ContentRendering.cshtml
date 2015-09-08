@@ -61,13 +61,14 @@
                 </div>
             </div>
             <div class="col-sm-8 col-md-9 ">
-                <div class="gd-mainimage-brief gd-longarticle">
+                <div class="gd-mainimage-brief">
                     <div class="hidden-xs">
                         <h2>@Html.Sitecore().Field("Artist Name")</h2>
                         <p>@Html.Sitecore().Field("Artist Birthday Label") @Html.Sitecore().Field("Artist Birthday Text")</p>
                     </div>
-                    @Html.Sitecore().Field("Artist Description")
-                    <a href="javascript:;" class="gd-artist-more gd-longarticle-switcher">READ MORE +</a>
+                    <div class="gd-longarticle" data-text-on="READ MORE +" data-text-off="LESS -">
+                        @Html.Sitecore().Field("Artist Description")
+                    </div>
                 </div>
             </div>
         </div>
