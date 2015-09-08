@@ -48,6 +48,11 @@ namespace Landmark.Classes
         public static readonly String TwoNumbersTwoCaptionsTextLink = "{BC7C0D97-3B48-4FD9-B25D-AA3F37EE6C90}";
         public static readonly String T11PageTemplate = "{3832F0F6-6342-4394-932C-2DDAB1164C97}";
         public static readonly String ShoppingItem = "{07A37ABC-D676-4737-8B14-79EC18486CE8}";
+        public static readonly String DiningItem = "{AA676B4A-E135-4B6F-8889-B9AFBDED5699}";
+        public static readonly String NowAtLandmarkItem = "{F0A68E40-FB4F-4B85-969D-A6ADEE24DE6B}";
+        public static readonly String InspirationItem = "{C6CBC0CC-7FC3-440A-9294-167C0674E43A}";
+        public static readonly String AroundCentralItem = "{57B8DEB0-CDFF-4287-94D6-E19191142B1B}";
+        public static readonly String ServicesItem = "{3F10D5CB-044E-4981-AAEB-30903B76C304}";
         public static readonly String BuidingsFolder = "{4731A63F-BFED-4A7B-8650-1ED611731530}";
         public static readonly String T14ShopDetailsTemplate = "{91A88069-9A0E-48B7-9509-BDE830A54D0E}";
         public static readonly String ShoppingCategory = "{FB0C20EF-8DD8-4233-A9E8-3D1536412DB7}";

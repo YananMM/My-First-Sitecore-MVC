@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @model RenderingModel
 
@@ -14,12 +15,17 @@
     <div class="row">
         <div class="col-sm-9">
             <div class="gd-brief">
+                @{
+                    Item shoppingitem = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
+                }
                 <div class="gd-brief-heading gd-brief-heading-left">
-                    <h3>Shopping</h3>
+                    <h3>@Html.Sitecore().Field("Page Title",shoppingitem)</h3>
                 </div>
                 <div class="gd-brief-body">
                     <div class="row">
-                        <div class="col-sm-4">
+                        @foreach (Item levelone in shoppingitem.Children.Where(item => item.TemplateID.ToString() == ItemGuids.T11PageTemplate))
+                        {
+                            <div class="col-sm-4">
                             <dl>
                                 <dt>Men</dt>
                                 <dd><a href="">Lorem ipsum </a></dd>
@@ -27,71 +33,21 @@
                                 <dd><a href="">consectetur</a></dd>
                                 <dd><a href="">adipiscing elit</a></dd>
                             </dl>
-                            <dl>
-                                <dt>Women</dt>
-                                <dd><a href="">Lorem ipsum </a></dd>
-                                <dd><a href="">dolor sit amet </a></dd>
-                                <dd><a href="">consectetur</a></dd>
-                                <dd><a href="">adipiscing elit</a></dd>
-                            </dl>
-                            <dl>
-                                <dt>Lorem section</dt>
-                                <dd><a href="">Lorem ipsum </a></dd>
-                                <dd><a href="">dolor sit amet </a></dd>
-                                <dd><a href="">consectetur</a></dd>
-                                <dd><a href="">adipiscing elit</a></dd>
-                            </dl>
+                            
                         </div>
-                        <div class="col-sm-4">
-                            <dl>
-                                <dt>Lorem section</dt>
-                                <dd><a href="">Lorem ipsum </a></dd>
-                                <dd><a href="">dolor sit amet </a></dd>
-                                <dd><a href="">consectetur</a></dd>
-                                <dd><a href="">adipiscing elit</a></dd>
-                            </dl> <dl>
-                                <dt>Lorem section</dt>
-                                <dd><a href="">Lorem ipsum </a></dd>
-                                <dd><a href="">dolor sit amet </a></dd>
-                                <dd><a href="">consectetur</a></dd>
-                                <dd><a href="">adipiscing elit</a></dd>
-                            </dl> <dl>
-                                <dt>Lorem section</dt>
-                                <dd><a href="">Lorem ipsum </a></dd>
-                                <dd><a href="">dolor sit amet </a></dd>
-                                <dd><a href="">consectetur</a></dd>
-                                <dd><a href="">adipiscing elit</a></dd>
-                            </dl>
-                        </div>
-                        <div class="col-sm-4">
-                            <dl>
-                                <dt>Lorem section</dt>
-                                <dd><a href="">Lorem ipsum </a></dd>
-                                <dd><a href="">dolor sit amet </a></dd>
-                                <dd><a href="">consectetur</a></dd>
-                                <dd><a href="">adipiscing elit</a></dd>
-                            </dl> <dl>
-                                <dt>Lorem section</dt>
-                                <dd><a href="">Lorem ipsum </a></dd>
-                                <dd><a href="">dolor sit amet </a></dd>
-                                <dd><a href="">consectetur</a></dd>
-                                <dd><a href="">adipiscing elit</a></dd>
-                            </dl> <dl>
-                                <dt>Lorem section</dt>
-                                <dd><a href="">Lorem ipsum </a></dd>
-                                <dd><a href="">dolor sit amet </a></dd>
-                                <dd><a href="">consectetur</a></dd>
-                                <dd><a href="">adipiscing elit</a></dd>
-                            </dl>
-                        </div>
+                        }
+                        
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
             <div class="gd-brief">
+                @{
+                    Item diningitem = Sitecore.Context.Database.GetItem(ItemGuids.DiningItem);
+                }
                 <div class="gd-brief-heading gd-brief-heading-left">
-                    <h3>Dining </h3>
+                    <h3>@Html.Sitecore().Field("Page Title", diningitem) </h3>
                 </div>
                 <div class="gd-brief-body">
                     <dl>
@@ -109,23 +65,51 @@
     <div class="row">
         <div class="col-sm-3">
             <div class="gd-brief">
+                @{
+                    Item nowatlandmarkitem = Sitecore.Context.Database.GetItem(ItemGuids.NowAtLandmarkItem);
+                }
                 <div class="gd-brief-heading gd-brief-heading-left">
-                    <h3>Now at Landmark</h3>
+                    <h3>@Html.Sitecore().Field("Page Title",nowatlandmarkitem )</h3>
                 </div>
                 <div class="gd-brief-body">
                     <dl>
-                        <dt>Lorem section</dt>
-                        <dt>dolor sit amet </dt>
-                        <dt>consectetur </dt>
-                        <dt>adipiscing elit</dt>
+                        @foreach (Item child in nowatlandmarkitem.Children.Where(item=>item.TemplateID.ToString()==ItemGuids.T4PageTemplate))
+                        {
+                            <dt>@Html.Sitecore().Field("Page Title",child)</dt>
+                        }
                     </dl>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
             <div class="gd-brief">
+                @{
+                    Item inspirationitem = Sitecore.Context.Database.GetItem(ItemGuids.InspirationItem);
+                }
                 <div class="gd-brief-heading gd-brief-heading-left">
-                    <h3>Inspirations</h3>
+                    <h3>@Html.Sitecore().Field("Page Title", inspirationitem)</h3>
+                </div>
+                <div class="gd-brief-body">
+                    <dl>
+                        @foreach (Item levelone in inspirationitem.Children)
+                        {
+                            <dt>@Html.Sitecore().Field("Page Title", levelone)</dt>
+                            foreach (Item leveltwo in levelone.Children.Where(item => ((CheckboxField) item.Fields["Has Detailed"]).Checked))
+                             {
+                                <dd><a href="@Sitecore.Links.LinkManager.GetItemUrl(leveltwo)">@Html.Sitecore().Field("Page Title", leveltwo)</a></dd>
+                             }
+                        }
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="gd-brief">
+                @{
+                    Item aroundcentralitem = Sitecore.Context.Database.GetItem(ItemGuids.AroundCentralItem);
+                }
+                <div class="gd-brief-heading gd-brief-heading-left">
+                    <h3>@Html.Sitecore().Field("Page Title", aroundcentralitem)</h3>
                 </div>
                 <div class="gd-brief-body">
                     <dl>
@@ -140,24 +124,11 @@
         </div>
         <div class="col-sm-3">
             <div class="gd-brief">
+                @{
+                    Item serviceitem = Sitecore.Context.Database.GetItem(ItemGuids.ServicesItem);
+                }
                 <div class="gd-brief-heading gd-brief-heading-left">
-                    <h3>Around Central</h3>
-                </div>
-                <div class="gd-brief-body">
-                    <dl>
-                        <dt>Lorem section</dt>
-                        <dd><a href="">Lorem ipsum </a></dd>
-                        <dd><a href="">dolor sit amet </a></dd>
-                        <dd><a href="">consectetur</a></dd>
-                        <dd><a href="">adipiscing elit</a></dd>
-                    </dl>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="gd-brief">
-                <div class="gd-brief-heading gd-brief-heading-left">
-                    <h3>Services</h3>
+                    <h3>@Html.Sitecore().Field("Page Title", serviceitem)</h3>
                 </div>
                 <div class="gd-brief-body">
                     <dl>
