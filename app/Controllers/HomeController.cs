@@ -20,6 +20,7 @@ using Landmark.Classes;
 using Sitecore.Data.Items;
 using Landmark.Models;
 using Landmark.Helper;
+using System.Text.RegularExpressions;
 
 // <summary>
 // The Controllers namespace.
@@ -43,6 +44,7 @@ namespace Landmark.Controllers
         /// </summary>
         /// <param name="targetId">The target unique identifier.</param>
         /// <returns>ActionResult.</returns>
+        [HttpPost]
         public ActionResult ButtonRedirect(string targetId)
         {
             Item target = Sitecore.Context.Database.GetItem(targetId);
@@ -55,6 +57,7 @@ namespace Landmark.Controllers
         /// <param name="targetId">The target unique identifier.</param>
         /// <param name="experienceType">Type of the experience.</param>
         /// <returns>ActionResult.</returns>
+        [HttpGet]
         public ActionResult ButtonRedirect(string targetId, string experienceType)
         {
             Item target = Sitecore.Context.Database.GetItem(targetId);
@@ -91,6 +94,12 @@ namespace Landmark.Controllers
             var code = Session["ValidateCode"].ToString();
             if (string.IsNullOrEmpty(model.Email))
             {
+                string strRegex = @"^[_\.0-9a-z-]+@([0-9a-z][0-9a-z-]+\.){1,4}[a-z]{2,3}$";
+                Regex re = new Regex(strRegex);
+                if (re.IsMatch(model.Email))
+                {
+                    return "Please input correct Email";
+                }
                 return "Email can not be empty";
             }
             else if (string.IsNullOrEmpty(model.LastName))
