@@ -143,7 +143,7 @@ namespace Landmark.Classes
         public static readonly Item FindByBrandItem = Sitecore.Context.Database.GetItem("{88028182-7209-4EBB-8CBA-1E6BBE40FCCF}");
         public static readonly Item EmailItem = Sitecore.Context.Database.GetItem("{E3B50ED3-8CDC-41DA-A5D4-176A55CBA63A}");
         public static readonly Item ShowAllItem = Sitecore.Context.Database.GetItem("{2F9D72B2-FF66-4302-8ABB-BB5F7C697FE5}");
-        
+        public static readonly Item SeeAllExclusiveItem = Sitecore.Context.Database.GetItem("{4F5C3F3D-9AB5-424B-9C78-41DC7AEECB8F}");
         public static readonly Item AllTextItem = Sitecore.Context.Database.GetItem("{0E954D78-0836-46D0-938A-29E235F975ED}");
         public static readonly Item ShareItem = Sitecore.Context.Database.GetItem("{2224057F-0DA3-4D7E-9089-99CB8CC77C0F}");
         
