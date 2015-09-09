@@ -20,6 +20,7 @@ using Landmark.Classes;
 using Sitecore.Data.Items;
 using Landmark.Models;
 using Landmark.Helper;
+using System.Text.RegularExpressions;
 
 // <summary>
 // The Controllers namespace.
@@ -93,6 +94,12 @@ namespace Landmark.Controllers
             var code = Session["ValidateCode"].ToString();
             if (string.IsNullOrEmpty(model.Email))
             {
+                string strRegex = @"^[_\.0-9a-z-]+@([0-9a-z][0-9a-z-]+\.){1,4}[a-z]{2,3}$";
+                Regex re = new Regex(strRegex);
+                if (re.IsMatch(model.Email))
+                {
+                    return "Please input correct Email";
+                }
                 return "Email can not be empty";
             }
             else if (string.IsNullOrEmpty(model.LastName))
