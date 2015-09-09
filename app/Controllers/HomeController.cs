@@ -43,6 +43,7 @@ namespace Landmark.Controllers
         /// </summary>
         /// <param name="targetId">The target unique identifier.</param>
         /// <returns>ActionResult.</returns>
+        [HttpPost]
         public ActionResult ButtonRedirect(string targetId)
         {
             Item target = Sitecore.Context.Database.GetItem(targetId);
@@ -55,6 +56,7 @@ namespace Landmark.Controllers
         /// <param name="targetId">The target unique identifier.</param>
         /// <param name="experienceType">Type of the experience.</param>
         /// <returns>ActionResult.</returns>
+        [HttpGet]
         public ActionResult ButtonRedirect(string targetId, string experienceType)
         {
             Item target = Sitecore.Context.Database.GetItem(targetId);
