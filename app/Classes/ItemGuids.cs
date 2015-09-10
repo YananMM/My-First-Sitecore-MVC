@@ -157,6 +157,9 @@ namespace Landmark.Classes
         public static readonly Item TelephoneItem = Sitecore.Context.Database.GetItem("{0B3DA006-CBA6-44CA-9421-88965D431F2F}");
         public static readonly Item AllItem = Sitecore.Context.Database.GetItem("{4ACF0FF2-331F-47A8-994A-A3D709A2524F}");
 
+        public static readonly Item SeeMoreItem =
+            Sitecore.Context.Database.GetItem("{0BA79670-6D57-473C-B495-1A01DB6CA2CA}");
+
         public static readonly Item MagezineItem =
             Sitecore.Context.Database.GetItem("{8B359693-D433-4F44-98F8-9CEE5FA9B72F}");
     }
