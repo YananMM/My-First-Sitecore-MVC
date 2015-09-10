@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {E04426CD-2C71-48F8-A1CA-C507C2CAB178}
+id: {C3C40A55-7B62-4BCE-81E8-E097F5F30689}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/Hotel Page Object
+path: /sitecore/templates/User Defined/Landmark/Page/T36 Page
 parent: {92EE2E2F-3AF3-4E3B-98AB-33DC20C2D966}
-name: Hotel Page Object
+name: T36 Page
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
@@ -22,18 +22,18 @@ name: __Standard values
 key: __standard values
 content-length: 38
 
-{B4626B31-2D93-4B55-AE46-2DD5A633BC2C}
+{9D0C182A-9D7C-461F-966A-4647F8F2F4DF}
 ----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 23
+content-length: 20
 
-People/32x32/school.png
+Apps/32x32/Books.png
 ----version----
 language: en
 version: 1
-revision: 212e0790-2487-4637-91a1-9d6aa81aaed2
+revision: 7affa26a-7975-4179-a822-37efadd6f3da
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,7 +41,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150819T055721Z
+20150909T060304Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-212e0790-2487-4637-91a1-9d6aa81aaed2
+7affa26a-7975-4179-a822-37efadd6f3da
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150819T060935:635755613752686165Z
+20150909T060609:635773755699364338Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

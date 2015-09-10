@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {DA1F83BE-2649-4696-B188-02DE9BFD2FC7}
+id: {18C0BDBE-4DD4-4A5F-910D-7258B23D46B8}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/Page Object/Ad In Navigation Data
-parent: {AA7E76BD-BCAD-4597-9855-0493AABF8DAF}
-name: Ad In Navigation Data
+path: /sitecore/templates/User Defined/Landmark/Page/T36 Page/Slide Data
+parent: {C3C40A55-7B62-4BCE-81E8-E097F5F30689}
+name: Slide Data
 master: {00000000-0000-0000-0000-000000000000}
 template: {E269FBB5-3750-427A-9149-7AA950B49301}
 templatekey: Template section
@@ -12,7 +12,7 @@ templatekey: Template section
 ----version----
 language: en
 version: 1
-revision: 77ab5b8e-4396-40bf-a44c-61b826a32c47
+revision: 2c802548-dc34-40c2-840e-f0561d8e0edd
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -20,7 +20,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150721T071130Z
+20150909T085206Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-77ab5b8e-4396-40bf-a44c-61b826a32c47
+2c802548-dc34-40c2-840e-f0561d8e0edd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150721T071235Z
+20150909T085232:635773855527274168Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,47 +1,47 @@
 ----item----
 version: 1
-id: {B4626B31-2D93-4B55-AE46-2DD5A633BC2C}
+id: {4C157DD6-6AF2-4112-B610-AFFC84C6CCF1}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/Hotel Page Object/__Standard Values
-parent: {E04426CD-2C71-48F8-A1CA-C507C2CAB178}
-name: __Standard Values
+path: /sitecore/content/Global/Landmark/Glossary/FAX
+parent: {8B197E68-D618-4F66-9C07-BA8DD5DC096E}
+name: FAX
 master: {00000000-0000-0000-0000-000000000000}
-template: {E04426CD-2C71-48F8-A1CA-C507C2CAB178}
-templatekey: Hotel Page Object
+template: {7AD93F40-7320-4CD8-89A4-D4E4BB44ADF8}
+templatekey: Glossary Object
 
-----field----
-field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
-name: __Masters
-key: __masters
-content-length: 38
-
-{8B38BE26-F07E-42C3-9C4E-6B7D1770BAB1}
 ----version----
 language: en
 version: 1
-revision: 243178b2-1ac4-4ccb-b19f-c9deb9602580
+revision: 3da6fb66-0cd9-40a7-b4ab-56b1c6ee3e8a
 
+----field----
+field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
+name: Glossary Value
+key: glossary value
+content-length: 3
+
+FAX
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150819T060935Z
+20150825T085802Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-243178b2-1ac4-4ccb-b19f-c9deb9602580
+3da6fb66-0cd9-40a7-b4ab-56b1c6ee3e8a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150819T062332:635755622121664843Z
+20150825T085802:635760898825624956Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

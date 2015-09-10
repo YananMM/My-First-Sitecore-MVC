@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {4ACF0FF2-331F-47A8-994A-A3D709A2524F}
+id: {8B359693-D433-4F44-98F8-9CEE5FA9B72F}
 database: master
-path: /sitecore/content/Global/Landmark/Glossary/ALL
+path: /sitecore/content/Global/Landmark/Glossary/MAGAZINE
 parent: {8B197E68-D618-4F66-9C07-BA8DD5DC096E}
-name: ALL
+name: MAGAZINE
 master: {00000000-0000-0000-0000-000000000000}
 template: {7AD93F40-7320-4CD8-89A4-D4E4BB44ADF8}
 templatekey: Glossary Object
@@ -12,36 +12,36 @@ templatekey: Glossary Object
 ----version----
 language: en
 version: 1
-revision: e4ee523c-9741-4042-a20c-db027c3c6667
+revision: b4d8b7f3-171f-48cb-b288-1010acb8c9fc
 
 ----field----
 field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
 name: Glossary Value
 key: glossary value
-content-length: 3
+content-length: 8
 
-ALL
+MAGAZINE
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150907T100757Z
+20150909T080427Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-e4ee523c-9741-4042-a20c-db027c3c6667
+b4d8b7f3-171f-48cb-b288-1010acb8c9fc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150907T100757:635772172772868191Z
+20150909T080427:635773826671653720Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
