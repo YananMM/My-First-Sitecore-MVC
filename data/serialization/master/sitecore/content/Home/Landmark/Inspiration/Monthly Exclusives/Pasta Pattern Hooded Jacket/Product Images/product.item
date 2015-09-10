@@ -3,11 +3,11 @@ version: 1
 id: {1AF09101-A2ED-4148-806A-25A38A40E0D4}
 database: master
 path: /sitecore/content/Home/Landmark/Inspiration/Monthly Exclusives/Pasta Pattern Hooded Jacket/Product Images/product
-parent: {AA2BE883-28A8-4FEA-B544-B25DAEF3646F}
+parent: {D0E89F4B-E505-41CA-A05D-B483406ADAFE}
 name: product
 master: {A13598F7-D565-4FCC-A1EE-15E7C158F17B}
-template: {CFE5379F-402F-4FB5-A1C5-0E42CA464BC1}
-templatekey: Image Text Object
+template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
+templatekey: Slide Object
 
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
@@ -19,22 +19,22 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: ca192b52-ca5d-4991-a97a-54fe6514a5f9
+revision: 568ceae2-62f7-4cc3-8f95-39f343e7918c
 
 ----field----
-field: {0AB28A95-2EFC-4333-B617-155C738623C9}
-name: Image
-key: image
+field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
+name: Slide Image
+key: slide image
 content-length: 58
 
-<image mediaid="{51FAAAFF-ED3E-4FA7-A5E0-DC52703E5BE9}" />
+<image mediaid="{CD1574B3-7D94-40B3-BA65-F6E29275F6E7}" />
 ----field----
-field: {97376B76-2C43-4ECC-8E56-5322D1CBD35D}
-name: Text
-key: text
+field: {06BB0E44-EEED-4773-B420-9B6EB948A433}
+name: Slide Title
+key: slide title
 content-length: 4
 
-ffff
+ssss
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -62,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ca192b52-ca5d-4991-a97a-54fe6514a5f9
+568ceae2-62f7-4cc3-8f95-39f343e7918c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150908T050249Z
+20150909T080455Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

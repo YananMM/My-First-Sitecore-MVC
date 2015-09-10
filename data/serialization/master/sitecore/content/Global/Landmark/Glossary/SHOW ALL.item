@@ -1,47 +1,47 @@
 ----item----
 version: 1
-id: {4EB155BF-6134-48DF-9D86-EDFCAC1FD059}
+id: {2F9D72B2-FF66-4302-8ABB-BB5F7C697FE5}
 database: master
-path: /sitecore/templates/Branches/User Defined/Landmark/Page/T27 Page/$name/Product Images
-parent: {5A676E7A-9594-42F7-A2F3-766348EA35CF}
-name: Product Images
+path: /sitecore/content/Global/Landmark/Glossary/SHOW ALL
+parent: {8B197E68-D618-4F66-9C07-BA8DD5DC096E}
+name: SHOW ALL
 master: {00000000-0000-0000-0000-000000000000}
-template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
-templatekey: Folder
+template: {7AD93F40-7320-4CD8-89A4-D4E4BB44ADF8}
+templatekey: Glossary Object
 
-----field----
-field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
-name: __Masters
-key: __masters
-content-length: 38
-
-{FFC1447C-5F42-4419-AEF4-6175FB69507C}
 ----version----
 language: en
 version: 1
-revision: 1b9f6bc2-3ef0-4340-a758-df3e1160694f
+revision: bbf7e100-910a-467c-bccd-38f03a0f9f15
 
+----field----
+field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
+name: Glossary Value
+key: glossary value
+content-length: 8
+
+SHOW ALL
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150908T045337Z
+20150908T051126Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-1b9f6bc2-3ef0-4340-a758-df3e1160694f
+bbf7e100-910a-467c-bccd-38f03a0f9f15
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150909T074809Z
+20150908T051126Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
