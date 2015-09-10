@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {812D4614-C77D-4B0A-9729-D2FB3D830786}
+database: master
+path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine
+parent: {C6CBC0CC-7FC3-440A-9294-167C0674E43A}
+name: Landmark Magazine
+master: {00000000-0000-0000-0000-000000000000}
+template: {C3C40A55-7B62-4BCE-81E8-E097F5F30689}
+templatekey: T36 Page
+
+----version----
+language: en
+version: 1
+revision: 3a07011b-0aab-4da6-b30a-f1bafed11264
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 17
+
+Landmark Magazine
+----field----
+field: {6BB3166A-7A61-4717-AEA5-DDA25802F4B5}
+name: Title
+key: title
+content-length: 26
+
+LOREM IPSUM DOLOR SIT AMET
+----field----
+field: {C0A7371C-42B8-4F61-9688-E02AA13A497E}
+name: Content
+key: content
+content-length: 250
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+----field----
+field: {F8946599-1D5D-477F-8EA6-240613DAE580}
+name: Button Text
+key: button text
+content-length: 13
+
+DISCOVER MORE
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150909T073616Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3a07011b-0aab-4da6-b30a-f1bafed11264
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150909T085324:635773856046093842Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

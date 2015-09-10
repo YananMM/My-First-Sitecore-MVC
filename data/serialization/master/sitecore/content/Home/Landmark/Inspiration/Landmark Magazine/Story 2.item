@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {8C74A9B4-8717-405E-B5F8-BA750EBC09F5}
+database: master
+path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Story 2
+parent: {812D4614-C77D-4B0A-9729-D2FB3D830786}
+name: Story 2
+master: {00000000-0000-0000-0000-000000000000}
+template: {2EE73BEB-F8DA-4F35-BB46-C1B0B8AC3945}
+templatekey: T23 Page
+
+----version----
+language: en
+version: 1
+revision: 6df586c1-f5aa-4c31-b6ae-c60010610d78
+
+----field----
+field: {BA2CB119-1C77-40AA-B95E-79014CAFD7AD}
+name: Magazine Category
+key: magazine category
+content-length: 155
+
+{8CBE1EA5-CE5A-4D15-AEFD-F65BC164C06B}|{42FF35B6-477A-417F-84BA-B11860F3A311}|{63A24BBD-6863-4085-846D-54FAB9C86B80}|{9C462E8F-2C94-47DC-9B96-C7F51A1D058F}
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 7
+
+Story 2
+----field----
+field: {1B048735-3BE9-4505-A31A-0A13390BA75D}
+name: Story Name
+key: story name
+content-length: 7
+
+Story 2
+----field----
+field: {FB382F34-71A5-473A-8119-8F532D16AF39}
+name: Story Date
+key: story date
+content-length: 16
+
+20150908T160000Z
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150909T080141Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6df586c1-f5aa-4c31-b6ae-c60010610d78
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150909T110931:635773937718045211Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

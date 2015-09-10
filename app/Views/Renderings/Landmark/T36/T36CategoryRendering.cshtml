@@ -1,0 +1,35 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@using Landmark.Models
+@model RenderingModel
+@{
+    MagezineHelper helper = new MagezineHelper();
+    var maganizeGroups = helper.GetMaganizeGroups();
+}
+<div class="container">
+    @foreach (var item in maganizeGroups)
+    {
+        <div class="gd-promotion-box-area">
+            <div class="gd-promotion-box-heading">
+                <a class="gd-link-brands" href="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=@item.MaganizeCategory.Fields["Category Name"].Item.ID">@Html.Sitecore().Field("Glossary Value", ItemGuids.SeeMoreItem)<span class="icomoon-chevron-small-right"></span></a>
+                <h3>@item.MaganizeCategory.Fields["Category Name"].ToString().ToUpper()</h3>
+            </div>
+
+            <div class="slider variable-width gd-slick-slider">
+                @foreach (var it in item.Stories)
+                {
+                    <div class="gd-slick-item">
+                        <img data-lazy="@Html.Sitecore().ImageFieldSrc("Callout Image", it)" />
+                        <div class="gd-slick-des">
+                            <h3>@Html.Sitecore().Field("Story Name", it)</h3>
+                            <p>@Html.Sitecore().Field("Story Content", it)</p>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    }
+</div>

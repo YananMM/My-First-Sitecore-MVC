@@ -220,4 +220,13 @@ namespace Landmark.Models
         public string href;
     }
 
+    /// <summary>
+    /// Class MaganizeGroup.
+    /// </summary>
+    public class MaganizeGroup
+    {
+        public Item MaganizeCategory { get; set; }
+
+        public List<Item> Stories { get; set; } 
+    }
 }

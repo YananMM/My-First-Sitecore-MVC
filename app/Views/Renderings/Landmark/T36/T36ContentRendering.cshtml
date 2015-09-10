@@ -1,0 +1,55 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@using Landmark.Models
+@model RenderingModel
+@{
+    MagezineHelper helper = new MagezineHelper();
+    var magazineCategories = helper.GetAllMaganizeCategories();
+}
+
+<div class="container">
+    <div class="gd-pagetitle">
+        <div class="gd-pagetitle-heading">
+            <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
+        </div>
+
+        <div class="gd-pagetitle-menu hidden-xs">
+            <a href="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=''" class="active">@Html.Sitecore().Field("Glossary Value", ItemGuids.MagezineItem) </a>
+            @foreach (var item in magazineCategories)
+            {
+                <span class="gd-pagetitle-menu-gap">|</span>
+                <a href="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=@item.Fields["Category Name"].Item.ID">@item.Fields["Category Name"].ToString().ToUpper()</a>
+            }
+        </div>
+
+        <div class="gd-controls-m visible-xs">
+            <select class="form-control">
+                <option value="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=''">MAGAZINE</option>
+                @foreach (var item in magazineCategories)
+                {
+                    <option value="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=@item.Fields["Category Name"].Item.ID">@item.Fields["Category Name"].ToString().ToUpper()</option>
+                }
+            </select>
+        </div>
+    </div>
+</div>
+
+<div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-fixed" data-ride="carousel">
+    @Html.Sitecore().Placeholder("t36-slides")
+
+    <!-- Caption -->
+    <div class="carousel-caption">
+        <div class="carousel-caption-inner">
+            <div class="gd-carousel-detail">
+                <div class="gd-mainimage-brief">
+                    <h2>@Html.Sitecore().Field("Title")</h2>
+                    <p>@Html.Sitecore().Field("Content")</p>
+                    <button class="gd-button gd-button-reversed" type="button">@Html.Sitecore().Field("Button Text")</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.Sitecore().Placeholder("maganize-category")

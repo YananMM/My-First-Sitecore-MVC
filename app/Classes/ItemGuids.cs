@@ -84,6 +84,7 @@ namespace Landmark.Classes
         public static readonly String ArticleObject = "{E0472501-0925-4F7F-A5BC-84F0ECA1B7F8}";
         public static readonly String RelatedItemFolder = "{5451FE7F-09B6-4620-AE8B-5B4A3610851E}";
         public static readonly String T27Page = "{A46D7A20-B29F-4C4F-8922-0B70555CD6BC}";
+        public static readonly String T23PageTemplate = "{2EE73BEB-F8DA-4F35-BB46-C1B0B8AC3945}";
         //search template
         public static readonly String SearchResultsPage = "{4452D078-3946-43F3-9B42-84000F96BF5A}";
         public static readonly String HotelSlideObject = "{93B5F609-2F05-42E3-ABB2-9D903169CF9D}";
@@ -92,6 +93,10 @@ namespace Landmark.Classes
         public static readonly String PageObject = "{AA7E76BD-BCAD-4597-9855-0493AABF8DAF}";
         public static readonly String ExperienceTypeFolder = "{90A7869E-8AF3-4DEE-BD71-7AE422931D30}";
         public static readonly String ShoppingFilterType = "{3D3F4372-81D0-422E-BA25-5BB9B3A01B96}";
+        public static readonly String LandmarkMagazineFolder = "{3316BC5E-C1E1-4D24-AD86-4BC25D214996}";
+        public static readonly String MagazineCategoryPage = "{46D8EC6C-7FE1-4568-8AEA-3E6DE52A20F4}";
+        public static readonly String LandmarkMaganizePage = "{812D4614-C77D-4B0A-9729-D2FB3D830786}";
+
 
         //item 
         public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}");
@@ -152,5 +157,11 @@ namespace Landmark.Classes
         public static readonly Item FaxItem = Sitecore.Context.Database.GetItem("{4C157DD6-6AF2-4112-B610-AFFC84C6CCF1}");
         public static readonly Item TelephoneItem = Sitecore.Context.Database.GetItem("{0B3DA006-CBA6-44CA-9421-88965D431F2F}");
         public static readonly Item AllItem = Sitecore.Context.Database.GetItem("{4ACF0FF2-331F-47A8-994A-A3D709A2524F}");
+
+        public static readonly Item SeeMoreItem =
+            Sitecore.Context.Database.GetItem("{0BA79670-6D57-473C-B495-1A01DB6CA2CA}");
+
+        public static readonly Item MagezineItem =
+            Sitecore.Context.Database.GetItem("{8B359693-D433-4F44-98F8-9CEE5FA9B72F}");
     }
 }
