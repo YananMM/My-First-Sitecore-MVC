@@ -24,12 +24,12 @@
     <div class="gd-promotion">
         <div class="gd-promo-filter">
             <ul>
-                <li class="active"><a href="@Url.Action("ButtonRedirect","Home")?targetId=@Sitecore.Context.Item.ID&experienceType=''">@Html.Sitecore().Field("Glossary Value", ItemGuids.AllItem)</a></li>
+                <li class="active"><a href="@Url.Action("FilterRedirect", "Home")?targetId=@Sitecore.Context.Item.ID&experienceType=''">@Html.Sitecore().Field("Glossary Value", ItemGuids.AllItem)</a></li>
                 @if (experienceTypes.Count != 0)
                 {
                     foreach (var item in experienceTypes)
                     {
-                        <li><a href="@Url.Action("ButtonRedirect","Home")?targetId=@Sitecore.Context.Item.ID&experienceType=@item.Fields["Value"]">@item["Value"].ToUpper()</a></li>
+                        <li><a href="@Url.Action("FilterRedirect", "Home")?targetId=@Sitecore.Context.Item.ID&experienceType=@item.Fields["Value"]">@item["Value"].ToUpper()</a></li>
                     }
                 }
             </ul>

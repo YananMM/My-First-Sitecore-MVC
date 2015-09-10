@@ -145,6 +145,7 @@
     <Compile Include="Helper\ArtTourHelper.cs" />
     <Compile Include="Helper\InspirationHelper.cs" />
     <Compile Include="Helper\LandmarkHelper.cs" />
+    <Compile Include="Helper\MagezineHelper.cs" />
     <Compile Include="Helper\NowAtLandmarkHelper.cs" />
     <Compile Include="Helper\SearchHelper.cs" />
     <Compile Include="Helper\ShoppingHelper.cs" />
@@ -365,6 +366,34 @@
     <Content Include="files\landmark\js\lib\jquery.scrollTo.min.js" />
     <Content Include="files\landmark\js\lib\jquery.touchSwipe.min.js" />
     <Content Include="files\landmark\js\lib\masonry.pkgd.min.js" />
+    <Content Include="files\landmark\js\lib\mediaelement\background.png" />
+    <Content Include="files\landmark\js\lib\mediaelement\bigplay.fw.png" />
+    <Content Include="files\landmark\js\lib\mediaelement\bigplay.png" />
+    <Content Include="files\landmark\js\lib\mediaelement\bigplay.svg" />
+    <Content Include="files\landmark\js\lib\mediaelement\controls-ted.png" />
+    <Content Include="files\landmark\js\lib\mediaelement\controls-wmp-bg.png" />
+    <Content Include="files\landmark\js\lib\mediaelement\controls-wmp.png" />
+    <Content Include="files\landmark\js\lib\mediaelement\controls.fw.png" />
+    <Content Include="files\landmark\js\lib\mediaelement\controls.png" />
+    <Content Include="files\landmark\js\lib\mediaelement\controls.svg" />
+    <Content Include="files\landmark\js\lib\mediaelement\DO NOT CHANGE THESE FILES. USE -src- FOLDER.txt" />
+    <Content Include="files\landmark\js\lib\mediaelement\flashmediaelement-cdn.swf" />
+    <Content Include="files\landmark\js\lib\mediaelement\flashmediaelement-debug.swf" />
+    <Content Include="files\landmark\js\lib\mediaelement\flashmediaelement.swf" />
+    <Content Include="files\landmark\js\lib\mediaelement\jquery.js" />
+    <Content Include="files\landmark\js\lib\mediaelement\jumpforward.png" />
+    <Content Include="files\landmark\js\lib\mediaelement\loading.gif" />
+    <Content Include="files\landmark\js\lib\mediaelement\mediaelement-and-player.js" />
+    <Content Include="files\landmark\js\lib\mediaelement\mediaelement-and-player.min.js" />
+    <Content Include="files\landmark\js\lib\mediaelement\mediaelement.js" />
+    <Content Include="files\landmark\js\lib\mediaelement\mediaelement.min.js" />
+    <Content Include="files\landmark\js\lib\mediaelement\mediaelementplayer.css" />
+    <Content Include="files\landmark\js\lib\mediaelement\mediaelementplayer.js" />
+    <Content Include="files\landmark\js\lib\mediaelement\mediaelementplayer.min.css" />
+    <Content Include="files\landmark\js\lib\mediaelement\mediaelementplayer.min.js" />
+    <Content Include="files\landmark\js\lib\mediaelement\mejs-skins.css" />
+    <Content Include="files\landmark\js\lib\mediaelement\silverlightmediaelement.xap" />
+    <Content Include="files\landmark\js\lib\mediaelement\skipback.png" />
     <Content Include="files\landmark\js\lib\modernizr-2.6.2.min.js" />
     <Content Include="files\landmark\js\lib\respond.js" />
     <Content Include="files\landmark\js\lib\scrollbar\background.png" />
@@ -398,6 +427,12 @@
     <Content Include="files\landmark\js\lib\scrollbar\silverlightmediaelement.xap" />
     <Content Include="files\landmark\js\lib\scrollbar\skipback.png" />
     <Content Include="files\landmark\js\lib\selectivizr-min.js" />
+    <Content Include="files\landmark\js\lib\slick\ajax-loader.gif" />
+    <Content Include="files\landmark\js\lib\slick\fonts\slick.svg" />
+    <Content Include="files\landmark\js\lib\slick\slick-theme.css" />
+    <Content Include="files\landmark\js\lib\slick\slick.css" />
+    <Content Include="files\landmark\js\lib\slick\slick.js" />
+    <Content Include="files\landmark\js\lib\slick\slick.min.js" />
     <Content Include="files\landmark\js\lib\svgmap\css\font-awesome.css" />
     <Content Include="files\landmark\js\lib\svgmap\css\map.css" />
     <Content Include="files\landmark\js\lib\svgmap\css\style.css" />
@@ -576,6 +611,12 @@
       <DependentUpon>Landmark.edmx</DependentUpon>
       <LastGenOutput>Landmark.cs</LastGenOutput>
     </Content>
+    <Content Include="files\landmark\js\lib\slick\config.rb" />
+    <Content Include="files\landmark\js\lib\slick\fonts\slick.eot" />
+    <Content Include="files\landmark\js\lib\slick\fonts\slick.ttf" />
+    <Content Include="files\landmark\js\lib\slick\fonts\slick.woff" />
+    <Content Include="files\landmark\js\lib\slick\slick-theme.scss" />
+    <Content Include="files\landmark\js\lib\slick\slick.scss" />
     <None Include="Properties\PublishProfiles\DEV.pubxml" />
     <None Include="Properties\PublishProfiles\landmark.pubxml" />
     <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
@@ -684,6 +725,11 @@
     <Content Include="Views\Renderings\Landmark\T6\T6ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T26\T26ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T27\T27ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T17\T17ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T36\T36ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T23\T23ContentRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T36\T36CategoryRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T37\T37ContentRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
