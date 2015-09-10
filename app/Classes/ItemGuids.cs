@@ -104,6 +104,7 @@ namespace Landmark.Classes
         public static readonly Item SimplifiedChineseGuidItem = Sitecore.Context.Database.GetItem("{2FEA334B-684F-40E0-99A4-3CD3E4C704F3}");
         public static readonly Item ShareThisGuidItem = Sitecore.Context.Database.GetItem("{A54A3CE6-2BEC-47CF-A63F-4A2F964C6320}");
         public static readonly Item SeeAllBrandsGuidItem = Sitecore.Context.Database.GetItem("{D380FDA5-C54A-48D8-B246-21571AC525B7}");
+        public static readonly Item ListingGuidItem = Sitecore.Context.Database.GetItem("{DAEE85AD-9210-48C8-8E29-F7CADB157ECC}");
         public static readonly Item AlsoInterestedInGuidItem = Sitecore.Context.Database.GetItem("{A6F6E24F-8844-4588-9FE2-0765E5851963}");
         public static readonly Item AllBrandsGuidItem = Sitecore.Context.Database.GetItem("{4E305EBF-9B1D-4EEA-AAA7-59CD1B3DD3D5}");
         public static readonly Item ByBrandsGuidItem = Sitecore.Context.Database.GetItem("{23C8C729-14B1-45B9-9557-404516153453}");

@@ -23,20 +23,50 @@
                 </div>
                 <div class="gd-brief-body">
                     <div class="row">
-                        @foreach (Item levelone in shoppingitem.Children.Where(item => item.TemplateID.ToString() == ItemGuids.T11PageTemplate))
+                        <div class="col-sm-4">
+                        @foreach (Item levelone in shoppingitem.Children.Where(item => item.TemplateID.ToString() == ItemGuids.T11PageTemplate).Take(3))
                         {
-                            <div class="col-sm-4">
+
                             <dl>
-                                <dt>Men</dt>
-                                <dd><a href="">Lorem ipsum </a></dd>
-                                <dd><a href="">dolor sit amet </a></dd>
-                                <dd><a href="">consectetur</a></dd>
-                                <dd><a href="">adipiscing elit</a></dd>
+                                <dt><a href="@Sitecore.Links.LinkManager.GetItemUrl(levelone)">@Html.Sitecore().Field("Page Title", levelone)</a></dt>
+                                @foreach (Item leveltwo in levelone.Children)
+                                {
+                                    <dd><a href="@Sitecore.Links.LinkManager.GetItemUrl(leveltwo)">@Html.Sitecore().Field("Page Title", leveltwo)</a></dd>
+                                }
                             </dl>
-                            
-                        </div>
                         }
-                        
+                        </div>
+                        <div class="col-sm-4">
+                            @foreach (Item levelone in shoppingitem.Children.Where(item => item.TemplateID.ToString() == ItemGuids.T11PageTemplate).Skip(3).Take(5))
+                            {
+
+                                <dl>
+                                    <dt><a href="@Sitecore.Links.LinkManager.GetItemUrl(levelone)">@Html.Sitecore().Field("Page Title", levelone)</a></dt>
+                                    @foreach (Item leveltwo in levelone.Children)
+                                    {
+                                        <dd><a href="@Sitecore.Links.LinkManager.GetItemUrl(leveltwo)">@Html.Sitecore().Field("Page Title", leveltwo)</a></dd>
+                                    }
+                                </dl>
+
+
+                            }
+                        </div>
+                        <div class="col-sm-4">
+                            @foreach (Item levelone in shoppingitem.Children.Where(item => item.TemplateID.ToString() == ItemGuids.T11PageTemplate).Skip(8).Take(3))
+                            {
+                                <dl>
+                                    <dt><a href="@Sitecore.Links.LinkManager.GetItemUrl(levelone)">@Html.Sitecore().Field("Page Title", levelone)</a></dt>
+                                    @foreach (Item leveltwo in levelone.Children)
+                                    {
+                                        <dd><a href="@Sitecore.Links.LinkManager.GetItemUrl(leveltwo)">@Html.Sitecore().Field("Page Title", leveltwo)</a></dd>
+                                    }
+                                </dl>
+                            }
+                        <dl>
+                            <dt><a href="">@Html.Sitecore().Field("Glossary Value",ItemGuids.SeeAllBrandsGuidItem) (@Html.Sitecore().Field("Glossary Value",ItemGuids.ListingGuidItem))</a></dt>
+                            <dd><a href="">Shop Detail Page (brand pages under ALL categories)</a></dd>
+                        </dl>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,7 +105,7 @@
                     <dl>
                         @foreach (Item child in nowatlandmarkitem.Children.Where(item=>item.TemplateID.ToString()==ItemGuids.T4PageTemplate))
                         {
-                            <dt>@Html.Sitecore().Field("Page Title",child)</dt>
+                            <dt><a href="@Sitecore.Links.LinkManager.GetItemUrl(child)">@Html.Sitecore().Field("Page Title",child)</a></dt>
                         }
                     </dl>
                 </div>
@@ -93,7 +123,7 @@
                     <dl>
                         @foreach (Item levelone in inspirationitem.Children)
                         {
-                            <dt>@Html.Sitecore().Field("Page Title", levelone)</dt>
+                            <dt><a href="@Sitecore.Links.LinkManager.GetItemUrl(levelone)">@Html.Sitecore().Field("Page Title", levelone)</a></dt>
                             foreach (Item leveltwo in levelone.Children.Where(item => ((CheckboxField) item.Fields["Has Detailed"]).Checked))
                              {
                                 <dd><a href="@Sitecore.Links.LinkManager.GetItemUrl(leveltwo)">@Html.Sitecore().Field("Page Title", leveltwo)</a></dd>
@@ -113,11 +143,14 @@
                 </div>
                 <div class="gd-brief-body">
                     <dl>
-                        <dt>Lorem section</dt>
-                        <dd><a href="">Lorem ipsum </a></dd>
-                        <dd><a href="">dolor sit amet </a></dd>
-                        <dd><a href="">consectetur</a></dd>
-                        <dd><a href="">adipiscing elit</a></dd>
+                        @foreach (Item levelone in aroundcentralitem.Children)
+                        {
+                            <dt><a href="@Sitecore.Links.LinkManager.GetItemUrl(levelone)">@Html.Sitecore().Field("Page Title", levelone)</a></dt>
+                            foreach (Item leveltwo in levelone.Children)
+                             {
+                                <dd><a href="@Sitecore.Links.LinkManager.GetItemUrl(leveltwo)">@Html.Sitecore().Field("Page Title", leveltwo)</a></dd>
+                             }
+                        }
                     </dl>
                 </div>
             </div>
@@ -132,11 +165,14 @@
                 </div>
                 <div class="gd-brief-body">
                     <dl>
-                        <dt>Lorem section</dt>
-                        <dd><a href="">Lorem ipsum </a></dd>
-                        <dd><a href="">dolor sit amet </a></dd>
-                        <dd><a href="">consectetur</a></dd>
-                        <dd><a href="">adipiscing elit</a></dd>
+                         @foreach (Item levelone in serviceitem.Children)
+                        {
+                            <dt><a href="@Sitecore.Links.LinkManager.GetItemUrl(levelone)">@Html.Sitecore().Field("Page Title", levelone)</a></dt>
+                            foreach (Item leveltwo in levelone.Children)
+                             {
+                                <dd><a href="@Sitecore.Links.LinkManager.GetItemUrl(leveltwo)">@Html.Sitecore().Field("Page Title", leveltwo)</a></dd>
+                             }
+                        }
                     </dl>
                 </div>
             </div>
