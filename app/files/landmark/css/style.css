@@ -14469,6 +14469,16 @@ dl.gd-content-details-tags dd a:active {
 .t17 .gd-promotion-block2 .gd-promotion-block-text .gd-button {
   margin-top: 5px;
 }
+.t17 .gd-slick-slider {
+  margin-top: 30px;
+}
+.t17 .gd-slick-slider .gd-slick-item {
+  height: 200px;
+  padding-bottom: 0;
+}
+.t17 .gd-slick-slider .gd-slick-item img {
+  height: 200px;
+}
 @media (min-width: 768px) {
   .t17 .gd-promotion-block-area {
     margin-bottom: 80px;

@@ -345,6 +345,7 @@
     <Content Include="files\landmark\js\lib\bootstrap.min.js" />
     <Content Include="files\landmark\js\lib\classie.js" />
     <Content Include="files\landmark\js\lib\iscroll.js" />
+    <Content Include="files\landmark\js\lib\isotope.pkgd.min.js" />
     <Content Include="files\landmark\js\lib\jquery-1.11.2.min.js" />
     <Content Include="files\landmark\js\lib\jquery-1.9.0.js" />
     <Content Include="files\landmark\js\lib\jquery-1.9.0.min.js" />
@@ -393,6 +394,7 @@
     <Content Include="files\landmark\js\lib\mediaelement\mediaelementplayer.min.css" />
     <Content Include="files\landmark\js\lib\mediaelement\mediaelementplayer.min.js" />
     <Content Include="files\landmark\js\lib\mediaelement\mejs-skins.css" />
+    <Content Include="files\landmark\js\lib\mediaelement\play.png" />
     <Content Include="files\landmark\js\lib\mediaelement\silverlightmediaelement.xap" />
     <Content Include="files\landmark\js\lib\mediaelement\skipback.png" />
     <Content Include="files\landmark\js\lib\modernizr-2.6.2.min.js" />
@@ -618,6 +620,8 @@
     <Content Include="files\landmark\js\lib\slick\fonts\slick.woff" />
     <Content Include="files\landmark\js\lib\slick\slick-theme.scss" />
     <Content Include="files\landmark\js\lib\slick\slick.scss" />
+    <Content Include="files\landmark\less\pagespecific.less" />
+    <Content Include="files\landmark\less\components.less" />
     <None Include="Properties\PublishProfiles\DEV.pubxml" />
     <None Include="Properties\PublishProfiles\landmark.pubxml" />
     <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
