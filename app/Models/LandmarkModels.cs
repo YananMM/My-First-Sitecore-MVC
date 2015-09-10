@@ -225,7 +225,7 @@ namespace Landmark.Models
     /// </summary>
     public class MaganizeGroup
     {
-        public Item MaganizeCategory { get; set; }
+        public Item MagazineCategory { get; set; }
 
         public List<Item> Stories { get; set; } 
     }

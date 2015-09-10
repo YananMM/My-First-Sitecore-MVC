@@ -66,7 +66,7 @@ namespace Landmark.Helper
         /// Gets the maganize groups.
         /// </summary>
         /// <returns>List{MaganizeGroup}.</returns>
-        public List<MaganizeGroup> GetMaganizeGroups()
+        public List<MaganizeGroup> GetMagazineGroups()
         {
             List<MaganizeGroup> maganizeGroups = new List<MaganizeGroup>();
 
@@ -77,7 +77,7 @@ namespace Landmark.Helper
                 MaganizeGroup maganizeGroup = new MaganizeGroup()
                 {
                     Stories = GetStoriesByCategory(item.ID.ToString()),
-                    MaganizeCategory = item
+                    MagazineCategory = item
                 };
                 maganizeGroups.Add(maganizeGroup);
             }
