@@ -13,7 +13,7 @@
     {
         <div class="gd-promotion-box-area">
             <div class="gd-promotion-box-heading">
-                <a class="gd-link-brands" href="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=@item.MagazineCategory.Fields["Category Name"].Item.ID">@Html.Sitecore().Field("Glossary Value", ItemGuids.SeeMoreItem)<span class="icomoon-chevron-small-right"></span></a>
+                <a class="gd-link-brands" href="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=@item.MagazineCategory.ID">@Html.Sitecore().Field("Glossary Value", ItemGuids.SeeMoreItem)<span class="icomoon-chevron-small-right"></span></a>
                 <h3>@item.MagazineCategory.Fields["Category Name"].ToString().ToUpper()</h3>
             </div>
 

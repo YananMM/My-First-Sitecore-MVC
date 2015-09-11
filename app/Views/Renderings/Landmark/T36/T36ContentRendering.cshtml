@@ -13,7 +13,7 @@
         @Html.Sitecore().Rendering(ItemGuids.T36CategoryTypeViewGuid, new
             {
                 Cacheable = false,
-                CacheKey = "category-type",
+                CacheKey = "category-types",
                 Cache_VaryByData = true,
             })
     </div>
@@ -26,7 +26,7 @@
     <div class="carousel-caption">
         <div class="carousel-caption-inner">
             <div class="gd-carousel-detail">
-                <div class="gd-mainimage-brief">
+                <div class="gd-mainimage-brief3">
                     <h2>@Html.Sitecore().Field("Title")</h2>
                     <p>@Html.Sitecore().Field("Content")</p>
                 </div>

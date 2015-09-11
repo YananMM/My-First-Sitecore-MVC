@@ -12,7 +12,7 @@ templatekey: T23 Page
 ----version----
 language: en
 version: 1
-revision: 1987543b-e930-4515-aba7-f2dcaca2b7e0
+revision: 94435a5d-dc33-492e-998d-feae6bba6221
 
 ----field----
 field: {BA2CB119-1C77-40AA-B95E-79014CAFD7AD}
@@ -43,6 +43,13 @@ content-length: 182
 
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, </p>
 ----field----
+field: {5C0BBA56-2858-4953-8DD1-8B9766DC2A43}
+name: Callout Image
+key: callout image
+content-length: 58
+
+<image mediaid="{C8DB028B-980F-4CFA-B98E-4A31B132954E}" />
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1987543b-e930-4515-aba7-f2dcaca2b7e0
+94435a5d-dc33-492e-998d-feae6bba6221
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150909T111835:635773943155666225Z
+20150910T025447:635774504879745004Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -5,7 +5,9 @@
 @using Landmark.Models
 @model RenderingModel
 @{
+    MagezineHelper helper = new MagezineHelper();
     var parent = Sitecore.Context.Item.Parent;
+    var stories = helper.GetStoriesByCategory(Request["type"]);
 }
 <div class="container">
     <div class="gd-pagetitle">

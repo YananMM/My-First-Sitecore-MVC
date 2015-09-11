@@ -14,7 +14,7 @@
     @foreach (var item in magazineCategories)
     {
         <span class="gd-pagetitle-menu-gap">|</span>
-        <a href="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=@item.Fields["Category Name"].Item.ID">@item.Fields["Category Name"].ToString().ToUpper()</a>
+        <a href="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=@item.ID">@item.Fields["Category Name"].ToString().ToUpper()</a>
     }
 </div>
 
@@ -23,7 +23,7 @@
         <option value="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=''">MAGAZINE</option>
         @foreach (var item in magazineCategories)
         {
-            <option value="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=@item.Fields["Category Name"].Item.ID">@item.Fields["Category Name"].ToString().ToUpper()</option>
+            <option value="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=@item.ID">@item.Fields["Category Name"].ToString().ToUpper()</option>
         }
     </select>
 </div>

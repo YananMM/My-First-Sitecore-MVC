@@ -64,7 +64,7 @@
                 </div>
             }
         </div>
-        <div class="navigation gd-promo-more"><a href="@Url.Action("ButtonRedirect","Home")?targetID=@Sitecore.Context.Item.ID.ToString()">SEE MORE +</a></div>
+        <div class="navigation gd-promo-more"><a href="@Url.Action("ButtonRedirect","Home")?targetId=@Sitecore.Context.Item.ID.ToString()">@Html.Sitecore().Field("Glossary Value", ItemGuids.SeeMoreItem) +</a></div>
     </div>
     @Html.Sitecore().Placeholder("also-like")
 </div>

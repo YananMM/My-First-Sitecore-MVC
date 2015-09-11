@@ -12,15 +12,15 @@ templatekey: T23 Page
 ----version----
 language: en
 version: 1
-revision: 74aeffc0-aa2b-4921-8e3b-0ef434d2f367
+revision: b854d2a0-3522-4b44-b0d8-7a4d6cf92279
 
 ----field----
 field: {BA2CB119-1C77-40AA-B95E-79014CAFD7AD}
 name: Magazine Category
 key: magazine category
-content-length: 38
+content-length: 77
 
-{42FF35B6-477A-417F-84BA-B11860F3A311}
+{42FF35B6-477A-417F-84BA-B11860F3A311}|{8CBE1EA5-CE5A-4D15-AEFD-F65BC164C06B}
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -28,6 +28,13 @@ key: page title
 content-length: 7
 
 Story 4
+----field----
+field: {5C0BBA56-2858-4953-8DD1-8B9766DC2A43}
+name: Callout Image
+key: callout image
+content-length: 58
+
+<image mediaid="{E4D5EFB2-7C63-49E0-9796-939B550CC21B}" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-74aeffc0-aa2b-4921-8e3b-0ef434d2f367
+b854d2a0-3522-4b44-b0d8-7a4d6cf92279
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150909T100437:635773898777477938Z
+20150910T025338:635774504181295055Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
