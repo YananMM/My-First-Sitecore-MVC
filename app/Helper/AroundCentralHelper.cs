@@ -27,6 +27,10 @@ namespace Landmark.Helper
     public class AroundCentralHelper
     {
         /// <summary>
+        /// The _page size
+        /// </summary>
+        private int _pageSize = 6;
+        /// <summary>
         /// Gets the hotel slides.
         /// </summary>
         /// <returns>List{Item}.</returns>
@@ -60,6 +64,21 @@ namespace Landmark.Helper
                 return attractions;
             }
             return allAttractions;
-        } 
+        }
+
+        public List<Item> GetAttractionsByPager(int page = 1)
+        {
+            List<Item> attractions = new ItemList();
+            var allAttractions = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ExperienceCentral,
+                ItemGuids.T25PageTemplate);
+
+            if (allAttractions != null && allAttractions.Count != 0)
+            {
+                attractions =
+                    allAttractions.Skip((page - 1) * _pageSize)
+                        .Take(_pageSize).ToList();
+            }
+            return attractions;
+        }
     }
 }

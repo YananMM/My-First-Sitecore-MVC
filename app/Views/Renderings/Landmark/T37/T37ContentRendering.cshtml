@@ -1,1 +1,91 @@
-﻿
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@using Landmark.Models
+@model RenderingModel
+@{
+    var parent = Sitecore.Context.Item.Parent;
+}
+<div class="container">
+    <div class="gd-pagetitle">
+        <div class="gd-pagetitle-heading">
+            <h2>@parent["Page Title"].ToUpper()</h2>
+        </div>
+        @Html.Sitecore().Rendering(ItemGuids.T36CategoryTypeViewGuid, new
+            {
+                Cacheable = false,
+                CacheKey = "category-type",
+                Cache_VaryByData = true,
+            })
+    </div>
+    <div class="gd-magazine-info">
+        <div class="row">
+            <div class="col-sm-6">
+                <img data-src="../files/landmark/images/others/cateogry-bigimg-01.jpg">
+            </div>
+            <div class="col-sm-6">
+                <div class="gd-magazine-info-text">
+                    <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
+                    <h5>Jun 2015</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gd-promotion-box-area">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="gd-promotion-box">
+                    <img data-src="../files/landmark/images/others/cateogry-img-01.jpg">
+                    <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                    <h5>JUN 2015</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="gd-promotion-box">
+                    <img data-src="../files/landmark/images/others/cateogry-img-02.jpg">
+                    <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                    <h5>JUN 2015</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="gd-promotion-box">
+                    <img data-src="../files/landmark/images/others/cateogry-img-03.jpg">
+                    <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                    <h5>JUN 2015</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="gd-promotion-box">
+                    <img data-src="../files/landmark/images/others/cateogry-img-01.jpg">
+                    <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                    <h5>JUN 2015</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="gd-promotion-box">
+                    <img data-src="../files/landmark/images/others/cateogry-img-02.jpg">
+                    <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                    <h5>JUN 2015</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="gd-promotion-box">
+                    <img data-src="../files/landmark/images/others/cateogry-img-03.jpg">
+                    <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
+                    <h5>JUN 2015</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gd-promo-more"><a href="/en/t37.html?page=2">SEE MORE +</a></div>
+</div>

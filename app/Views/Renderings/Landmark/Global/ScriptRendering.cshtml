@@ -2,14 +2,15 @@
 @using Landmark.Helper
 @using Sitecore.Data.Items
 <!-- Social App Ids -->
-    <script>
-        // TODO: Change this App Id, anc change your app 'Site URL' settings
-        window.fbAppId = '@ItemGuids.LandmarkConfigItem.Fields["Facebook Application App Key"].Value';
-        window.wbAppKey = '@ItemGuids.LandmarkConfigItem.Fields["Weibo Application API Key"].Value';
-    </script>
+<script>
+    // TODO: Change this App Id, anc change your app 'Site URL' settings
+    window.fbAppId = '@ItemGuids.LandmarkConfigItem.Fields["Facebook Application App Key"].Value';
+    window.wbAppKey = '@ItemGuids.LandmarkConfigItem.Fields["Weibo Application API Key"].Value';
+</script>
 <!-- Social App Ids End -->
 <link rel="stylesheet" type="text/css" href="/files/landmark/css/jquery.bxslider.css"></link>
 <link rel="stylesheet" type="text/css" href="/files/landmark/css/bootstrap-select.css"></link>
+<link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/mediaelement/mediaelementplayer.min.css" />
 <!-- Dynamically generated global variables for the language options for date picker by Sitecore -->
 <script>
     var __gDatePickerRegion = "";	// use '' for EN otherwise use sc:language() value
@@ -32,14 +33,19 @@
 <script src="/files/landmark/js/lib/bootstrap.min.js"></script>
 <script src="/files/landmark/js/lib/bootstrap-select.js"></script>
 <script src="/files/landmark/js/lib/jquery.dotdotdot.min.js"></script>
+<script src="/files/landmark/js/lib/trunk8.js"></script>
 <script src="/files/landmark/js/lib/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="/files/landmark/js/lib/jquery.infinitescroll.js"></script>
-<!-- Has problems on ie8 <script src="/files/landmark/js/lib/masonry.pkgd.min.js"></script> -->
-@if (LandmarkHelper.GetPageBodyClass().StartsWith("t13"))
-{
+<script src="/files/landmark/js/lib/slick/slick.min.js"></script>
+@*@if (LandmarkHelper.GetPageBodyClass().StartsWith("t13"))
+    {*@
 <script src="/files/landmark/js/lib/masonry.pkgd.min.js"></script>
-}
+@*  }*@
+<script src="/files/landmark/js/lib/isotope.pkgd.min.js"></script>
+<script src="/files/landmark/js/lib/mediaelement/mediaelement-and-player.min.js"></script>
 <script src="/files/landmark/js/main.js"></script>
+<!-- Has problems on ie8 <script src="/files/landmark/js/lib/masonry.pkgd.min.js"></script> -->
+
 <script>
     jQuery.lazyLoadXT = {
         edgeX: 100,

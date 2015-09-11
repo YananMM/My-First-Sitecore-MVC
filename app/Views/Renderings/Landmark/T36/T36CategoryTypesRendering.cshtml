@@ -1,0 +1,29 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@using Landmark.Models
+@model RenderingModel
+@{
+    MagezineHelper helper = new MagezineHelper();
+    var magazineCategories = helper.GetAllMaganizeCategories();
+}
+
+<div class="gd-pagetitle-menu hidden-xs">
+    <a href="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=''" class="active">@Html.Sitecore().Field("Glossary Value", ItemGuids.MagezineItem) </a>
+    @foreach (var item in magazineCategories)
+    {
+        <span class="gd-pagetitle-menu-gap">|</span>
+        <a href="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=@item.Fields["Category Name"].Item.ID">@item.Fields["Category Name"].ToString().ToUpper()</a>
+    }
+</div>
+
+<div class="gd-controls-m visible-xs">
+    <select class="form-control">
+        <option value="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=''">MAGAZINE</option>
+        @foreach (var item in magazineCategories)
+        {
+            <option value="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=@item.Fields["Category Name"].Item.ID">@item.Fields["Category Name"].ToString().ToUpper()</option>
+        }
+    </select>
+</div>
