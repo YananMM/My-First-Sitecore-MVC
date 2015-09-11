@@ -26,17 +26,14 @@ namespace Landmark.Classes
         public static readonly String ByBuildingsRenderingViewGuid = "{B08E278B-BF3C-4994-A65D-D764193C6447}";
         public static readonly String T13SideBarRenderingViewGuid = "{A88DF21E-E1DB-408B-9BC5-14F36C83513D}";
         public static readonly String T13RelatedCategoryViewGuid = "{E12C109C-E610-4CB3-BA45-003C92C3FF96}";
+        public static readonly String T36CategoryTypeViewGuid = "{4AA1A1EF-AA1D-4520-B860-92DAD13AF05B}";
         //public static readonly String T14ShopDataRenderingViewGuid = "{CCD0CC2A-56DD-4990-9395-560FA0F62D7B}";
         //public static readonly String T14TagsRenderingViewGuid = "{303EA462-99C6-447B-B3AA-C4F4F0441549}";
         public static readonly String T14AlsoOnFloorRenderingViewGuid = "{E4C9F730-0F32-481A-A631-814E9DD01CF0}";
         public static readonly String T14YouMayAlsoLikeRenderingViewGuid = "{3D3C605D-3A95-4D71-8206-C403D66EB91A}";
-        public static readonly String T35GetDirectionPage = "{AE130080-B8B6-4D9E-B863-C88DC329B657}";
-        public static readonly String T35SurroundingPage = "{54824316-017A-4B94-AD8E-F636473B510A}";
-        public static readonly String ContactUsPage = "{5EC2DEF7-B8CE-45CD-96CD-9967773B5808}";
-        public static readonly String ThankYouPage = "{C6045FFE-5883-49F7-AC6E-653919640DDB}";
+        
         public static readonly String TextObject = "{55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}";
         public static readonly String RelatedItemViewGuid = "{19B03C96-4203-4877-8AC0-2D03E76DA38B}";
-        public static readonly String OverviewPage = "{7C88DA46-5C88-465B-8F12-BBEC6991D8CB}";
         public static readonly String ValetParkingPage = "{819779A7-6864-451A-83DA-703DF00AD09D}";
 
         //item id
@@ -86,6 +83,11 @@ namespace Landmark.Classes
         public static readonly String T27Page = "{A46D7A20-B29F-4C4F-8922-0B70555CD6BC}";
         public static readonly String T23PageTemplate = "{2EE73BEB-F8DA-4F35-BB46-C1B0B8AC3945}";
         public static readonly String T22PageTemplate = "{7B7A336C-48D6-4CD7-BC35-A4593F16F2D0}";
+        public static readonly String T35GetDirectionPage = "{AE130080-B8B6-4D9E-B863-C88DC329B657}";
+        public static readonly String T35SurroundingPage = "{54824316-017A-4B94-AD8E-F636473B510A}";
+        public static readonly String ContactUsPage = "{5EC2DEF7-B8CE-45CD-96CD-9967773B5808}";
+        public static readonly String ThankYouPage = "{C6045FFE-5883-49F7-AC6E-653919640DDB}";
+        public static readonly String OverviewPage = "{7C88DA46-5C88-465B-8F12-BBEC6991D8CB}";
         //search template
         public static readonly String SearchResultsPage = "{4452D078-3946-43F3-9B42-84000F96BF5A}";
         public static readonly String HotelSlideObject = "{93B5F609-2F05-42E3-ABB2-9D903169CF9D}";

@@ -48,6 +48,20 @@ h4{
   font-family: @font-family-serif;
   font-weight: normal;
 }
+h2,h3,h4{
+        color: @brand-golden;
+  a{
+      color: @brand-golden;
+    &:hover{
+        color: @gray;
+        text-decoration: none;
+    }
+    &:focus, &:active{
+        color: @brand-golden;
+        text-decoration: none;
+    }
+}
+}
 @media (min-width:@screen-sm) {
   h2{font-size: 25px;}
   h3{font-size: 22px;}
@@ -141,6 +155,51 @@ h4{
      display: block;
      color: #999999;
   }
+// gd hover effect image
+
+     .gd-hover-img{
+      display: block;
+       position: relative;
+   /*      &:after{
+           content: "";
+           position: absolute;
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0; 
+              display: block;
+              opacity: 0;
+              z-index: 20;
+              background: url("../images/black-50.png") repeat  transparent; 
+         }
+       &:hover{
+         &:after{
+              opacity: 0.5;
+              z-index: 20;
+             .transition(all, 0.2s, ease-out);
+         }
+       }*/
+       .gd-hover-img-mask{
+         font-size: 0;
+         opacity: 0;
+         position: absolute;
+       }
+       &:hover {
+        .gd-hover-img-mask{
+              width: 100%;
+              height: 100%;
+              left: 0;
+              top: 0; 
+              display: block;
+              opacity: 0.5;
+              z-index: 20;
+              position: absolute;
+             .transition(all, 0.2s, ease-out);
+              background: url("../images/black-50.png") repeat  transparent; 
+     }
+       }
+     }
+
 // gd bifbrands
   .gd-bigbrand{
    text-align: center;
@@ -151,6 +210,7 @@ h4{
    text-align: center;
     margin: 25px 0 15px;
     img{
+      width: 100%;
      max-width: 100%;
     }
   }
@@ -658,6 +718,7 @@ h4{
               padding: 0 20px 0 40px;
               .gd-button {
                 margin-top: 30px;
+                display: inline-block;
               }
             }
           }
@@ -668,11 +729,9 @@ h4{
 //  gd-mainimage
     @gdmi-height: 640px;
     @gdmi-height-md: 480px;
-    @gdmi-height-sm: 320px;
-    @gdmi-height-xs: 160px;
     .gd-mainimage {
       .carousel-indicators {
-        top: 135px;
+        top: 295px;
       }
       .carousel-inner {
         padding: 0;
@@ -680,7 +739,7 @@ h4{
         .item {
           >.carousel-image {
             float: none; 
-            height: @gdmi-height-xs;
+            height: 320px;
             width: 100%;
             background-size: cover !important;
             @media (min-width: 0px) {
@@ -716,7 +775,7 @@ h4{
                   color: #FFFFFF;
                   margin-bottom: 2em;
                 }
-                button {
+                .gd-button {
                   margin: 0;
                   margin-bottom: 2em;
                 }
@@ -793,18 +852,28 @@ h4{
   }
   
 }
-@media (min-width:450px) {
-    .gd-mainimage {
-      .carousel-indicators {
-        top: 295px;
-      }
-      .carousel-inner {
-        .item {
-          >.carousel-image {
-            height: @gdmi-height-sm;
-          }
-        }
-      }
+@media (min-width:380px) {
+.gd-mainimage {.carousel-indicators { top: 355px;}
+      .carousel-inner .item >.carousel-image {
+            height: 380px; }
+    }
+}
+@media (min-width:480px) {
+.gd-mainimage {.carousel-indicators { top: 425px;}
+      .carousel-inner .item >.carousel-image {
+            height: 450px; }
+    }
+}
+@media (min-width:540px) {
+.gd-mainimage {.carousel-indicators { top: 475px;}
+      .carousel-inner .item >.carousel-image {
+            height: 500px; }
+    }
+}
+@media (min-width:640px) {
+.gd-mainimage {.carousel-indicators { top: 575px;}
+      .carousel-inner .item >.carousel-image {
+            height: 600px; }
     }
 }
 @media (min-width:@screen-sm) {
@@ -937,7 +1006,7 @@ h4{
             @media (min-width: @screen-sm-min) {
             padding: 0 20px 0 40px;
             }
-            .gd-mainimage-brief {
+            .gd-mainimage-brief,.gd-mainimage-brief3 {
               text-align: left;
               p {
                 color: #FFFFFF;
@@ -1008,7 +1077,7 @@ h4{
     }
 
 //  gd Main Image Brief
-    .gd-mainimage-brief,.gd-mainimage-brief2 {
+    .gd-mainimage-brief,.gd-mainimage-brief2,.gd-mainimage-brief3  {
       h2 {
         line-height: 1.25;
         margin: 0 0 24px 0;
@@ -1069,6 +1138,14 @@ h4{
         margin-bottom: 5px;
       }
     }
+}
+.gd-mainimage-brief3 {
+  h2{ 
+    padding: 0;
+    &:after{
+    content: none;
+    }
+  }
 }
 //  gd Main Image List Brief
     .gd-mainimage-table {
@@ -1606,14 +1683,14 @@ h4{
       line-height: 1.5;
     }
     h5{
-    .body-text;
     .lightgray-text2;
       margin: 30px 0 15px;
     }
     .gd-promo-share{
+      font-size: 12px;
     .lightgray-text2;
       display: block;
-      margin: 30px 0 15px;
+      margin: 30px 0 0;
       .icomoon-share{
        margin-right: 8px;
       }
@@ -1638,6 +1715,46 @@ h4{
     margin-bottom: 60px;
     
   }
+
+
+//  gd promo share 
+    .gd-promo-share{
+      overflow: hidden;
+      position: relative;
+      &:before, &:after {
+        content: " ";
+        clear: both;
+        display: table;
+      }
+      &:hover {
+        .gd-promo-sharebox {
+          left: 80px;
+        }
+      }
+      .gd-promo-share-handle {
+        &:hover, &:focus, &:active {
+          cursor: pointer;
+        }
+        background-color: #FFFFFF;
+        float: left;
+        position: relative;
+        z-index: 20;
+      }
+      .gd-promo-sharebox {
+        left: -70px;
+        position: absolute;
+        top: 0;
+        -webkit-transition: left ease-out 0.5s;
+        -o-transition: left ease-out 0.5s;
+        transition: left ease-out 0.5s;
+        z-index: 10;
+        a{
+         padding:0 5px;
+        }
+      }
+    }
+
+
 //table-responsive
 .table-responsive{
       table {

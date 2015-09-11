@@ -1214,25 +1214,97 @@
        table tr > th {  width:40%;}
     }
   }
-  @media (max-width:@screen-sm){
-  
+  @media (max-width:@screen-xs-max){
+    .col-sm-6{
+    position: relative;
+      display: table;
+      width: 100%;
+      margin-bottom: 30px;
+    }
   .gd-full-img{
     width: 100%;
-    height: 320px;
+    height: 180px;
+    line-height: 1;
     overflow: hidden;
-    margin-bottom: 30px;
+    vertical-align: middle;
+    display:table-cell;
+    position: relative;
     img{
       position: absolute;
+      display: inline-block;
+    vertical-align: middle;
       width: 100%;
       height: auto;
-      top:-50%;
+      margin-top: -75%;
      }
   }
   }
+  
+@media (min-width:480px) {
+  .gd-full-img{ height: 240px;}
+}
+@media (min-width:540px) {
+  .gd-full-img{ height: 360px;}
+}
+@media (min-width:640px) {
+  .gd-full-img{ height: 400px;}
+}
 }
 .t26{
   .gd-promotion{
-   margin-top: 60px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 60px;
+    .gd-promo-box,
+    .gd-promo-box2 {
+      margin-right: 0;
+      padding: 0 15px;
+      width: 100%;
+    }
+    @media (min-width: @screen-sm-min) {
+      .gd-promo-box,
+      .gd-promo-box2 {
+        width: 33.3333%;
+      }
+    }
+    @media (min-width: @screen-lg-min) {
+      .gd-promo-box,
+      .gd-promo-box2 {
+        width: 25%;
+      }
+    }
+    .gd-promo-filter,
+    .gd-controls-m {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    .gd-promo-filter {
+      position: relative;
+      z-index: 1300;
+      .gd-promo-brands {
+        .disabled {
+          color: #B6B6B6;
+        }
+      }
+    }
+    .gd-promo-brands {
+      .gd-promo-brands-btn:after {
+        border-width: 5px 5px 0 5px;
+        border-color: black transparent transparent transparent;
+      }
+      .gd-promo-brands-area {
+        display: none;
+      }
+      &.active {
+        .gd-promo-brands-btn:after {
+          border-width: 0 5px 5px 5px;
+          border-color: transparent transparent black transparent;
+        } 
+        .gd-promo-brands-area {
+          display: block;
+        }
+      }
+    }
   }
 }
 
@@ -1409,10 +1481,10 @@
   }
 }
 .t17{
-  .body-text;
   .gd-brief{
     margin: 80px 0 80px;}
   .gd-promotion-block-area{
+  .body-text;
    margin-bottom: 30px; 
   }
   .gd-promotion-listarea{
@@ -1663,8 +1735,8 @@ border-right: 18px solid #f6f6f6;
   .gd-styor-block{
    margin: 30px 0 80px;
     .gd-content-auto-width{
-     width: auto;
-      margin: 0 auto;
+      display: inline-block;
+      text-align: left;
     }
   }
   .gd-content-details{

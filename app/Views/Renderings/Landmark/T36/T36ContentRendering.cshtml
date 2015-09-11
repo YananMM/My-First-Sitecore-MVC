@@ -4,35 +4,18 @@
 @using Sitecore.Data.Items
 @using Landmark.Models
 @model RenderingModel
-@{
-    MagezineHelper helper = new MagezineHelper();
-    var magazineCategories = helper.GetAllMaganizeCategories();
-}
 
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
             <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
         </div>
-
-        <div class="gd-pagetitle-menu hidden-xs">
-            <a href="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=''" class="active">@Html.Sitecore().Field("Glossary Value", ItemGuids.MagezineItem) </a>
-            @foreach (var item in magazineCategories)
+        @Html.Sitecore().Rendering(ItemGuids.T36CategoryTypeViewGuid, new
             {
-                <span class="gd-pagetitle-menu-gap">|</span>
-                <a href="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=@item.Fields["Category Name"].Item.ID">@item.Fields["Category Name"].ToString().ToUpper()</a>
-            }
-        </div>
-
-        <div class="gd-controls-m visible-xs">
-            <select class="form-control">
-                <option value="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=''">MAGAZINE</option>
-                @foreach (var item in magazineCategories)
-                {
-                    <option value="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=@item.Fields["Category Name"].Item.ID">@item.Fields["Category Name"].ToString().ToUpper()</option>
-                }
-            </select>
-        </div>
+                Cacheable = false,
+                CacheKey = "category-type",
+                Cache_VaryByData = true,
+            })
     </div>
 </div>
 

@@ -9,7 +9,7 @@
     var experienceTypes = experienceTypeFolder.Children.ToList();
 
     AroundCentralHelper helper = new AroundCentralHelper();
-    var attractions = helper.GetAttractionsByExpercience(Request["experienceType"]);
+    var attractions = helper.GetAttractionsByPager(Convert.ToInt32(Request["page"]));
 }
 
 <div class="container">
@@ -23,53 +23,48 @@
     </div>
     <div class="gd-promotion">
         <div class="gd-promo-filter">
-            <ul>
-                <li class="active"><a href="@Url.Action("FilterRedirect", "Home")?targetId=@Sitecore.Context.Item.ID&experienceType=''">@Html.Sitecore().Field("Glossary Value", ItemGuids.AllItem)</a></li>
+            <ul class="hidden-xs">
+                <li class="active"><a href="javascript:;" data-filter="*">@Html.Sitecore().Field("Glossary Value", ItemGuids.AllItem)</a></li>
                 @if (experienceTypes.Count != 0)
                 {
                     foreach (var item in experienceTypes)
                     {
-                        <li><a href="@Url.Action("FilterRedirect", "Home")?targetId=@Sitecore.Context.Item.ID&experienceType=@item.Fields["Value"]">@item["Value"].ToUpper()</a></li>
+                        <li><a data-filter="gdf-@item.ID.ToString().Trim('{').Trim('}')">@item["Value"].ToUpper()</a></li>
                     }
                 }
             </ul>
+            <div class="gd-controls-m visible-xs">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <select class="form-control">
+                            <option value="*">@Html.Sitecore().Field("Glossary Value", ItemGuids.AllItem)</option>
+                            @if (experienceTypes.Count != 0)
+                            {
+                                foreach (var item in experienceTypes)
+                                {
+                                    <option value="gdf-@item.ID.ToString().Trim('{').Trim('}')">@item["Value"].ToUpper()</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
         <div class="gd-promo-body">
-            <div class="gd-promo-box">
-                <img data-src="../files/landmark/images/experience/experience-image-01.jpg">
-                <h5>CITY ROMANCE | ARTS &amp; PERFORMANCE</h5>
-                <h3>The Star Ferry</h3>
-            </div>
-            <div class="gd-promo-box">
-                <img data-src="../files/landmark/images/experience/experience-image-02.jpg">
-                <h5>ARTS &amp; PERFORMANCE</h5>
-                <h3>Legislative Council</h3>
-            </div>
-            <div class="gd-promo-box">
-                <img data-src="../files/landmark/images/experience/experience-image-03.jpg">
-                <h5>CITY ROMANCE</h5>
-                <h3>Lan Kwai Fong</h3>
-            </div>
-            <div class="gd-promo-box">
-                <img data-src="../files/landmark/images/experience/experience-image-04.jpg">
-                <h5>ARTS &amp; PERFORMANCE</h5>
-                <h3>Chater Square</h3>
-            </div>
-            <div class="gd-promo-box">
-                <img data-src="../files/landmark/images/experience/experience-image-05.jpg">
-                <h5>ARTS &amp; PERFORMANCE</h5>
-                <h3>Western Market</h3>
-            </div>
-            <div class="gd-promo-box">
-                <img data-src="../files/landmark/images/experience/experience-image-06.jpg">
-                <h5>BRAND NAME</h5>
-                <h3>Janis (HK$10,530)</h3>
-            </div>
-        </div>
-        <div class="gd-promo-more"><a href="javascript:;">SEE MORE +</a></div>
-    </div>
+            @foreach (var item in attractions)
+            {
+                MultilistField experienceType = item.Fields["Experience Type"];
+                string[] types = experienceType.ToString().Split('|');
 
+                <div class="gd-promo-box @foreach (var type in types)
+                             {<text>gdf-@type.Replace("{", "").Replace("}", "")</text> }">
+                    <img src="@Html.Sitecore().ImageFieldSrc("Cover Image",item)">
+                    <h5>@Html.Sitecore().Field("Cover Content", item)</h5>
+                    <h3>@item["Cover Title"]</h3>
+                </div>
+            }
+        </div>
+        <div class="navigation gd-promo-more"><a href="@Url.Action("ButtonRedirect","Home")?targetID=@Sitecore.Context.Item.ID.ToString()">SEE MORE +</a></div>
+    </div>
     @Html.Sitecore().Placeholder("also-like")
 </div>
