@@ -63,6 +63,12 @@ namespace Landmark.Controllers
             return Redirect(Sitecore.Links.LinkManager.GetItemUrl(target) + "?type=" + type);
         }
 
+        public ActionResult DirectByPager(string targetId, int page)
+        {
+            Item target = Sitecore.Context.Database.GetItem(targetId);
+            return Redirect(Sitecore.Links.LinkManager.GetItemUrl(target) + "?page=" + page);
+        }
+
         public ActionResult AddCustomerMessage(ContactUsFormModel model)
         {
             if (ModelState.IsValid)

@@ -27,8 +27,7 @@
   players.on = {
     
     play: function(player) {
-      parent.console.log('playing', player);
-      parent.scTrackAudio('<Audio Name>');
+      parent.scTrackAudio(player.playlistController.getURL());
     },
     /*
     finish: function(player) {

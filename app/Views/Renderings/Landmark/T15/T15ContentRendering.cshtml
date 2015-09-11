@@ -10,6 +10,7 @@
 
     AroundCentralHelper helper = new AroundCentralHelper();
     var attractions = helper.GetAttractionsByPager(Convert.ToInt32(Request["page"]));
+    int page = 1;
 }
 
 <div class="container">
@@ -64,7 +65,7 @@
                 </div>
             }
         </div>
-        <div class="navigation gd-promo-more"><a href="@Url.Action("ButtonRedirect","Home")?targetId=@Sitecore.Context.Item.ID.ToString()">@Html.Sitecore().Field("Glossary Value", ItemGuids.SeeMoreItem) +</a></div>
+        <div class="navigation gd-promo-more"><a href="?page=2">@Html.Sitecore().Field("Glossary Value", ItemGuids.SeeMoreItem) +</a></div>
     </div>
     @Html.Sitecore().Placeholder("also-like")
 </div>

@@ -1745,6 +1745,40 @@ jQuery(function ($) {
 
                 $(this).next().toggle('slow');
             });
+            var gdValidator = new FormValidator('gd-contact-form', [{
+                name: 'gdtitle',
+                display: 'required',
+                rules: 'required'
+            }, {
+                name: 'firstname',
+                rules: 'required'
+            }, {
+                name: 'lastname',
+                rules: 'required'
+            }, {
+                name: 'telephone',
+                rules: 'numeric'
+            }, {
+                name: 'email',
+                rules: 'required|valid_email'
+            }, {
+                name: 'gdtype',
+                rules: 'required'
+            }, {
+                name: 'message',
+                rules: 'required'
+            }], function (errors, event) {
+                if (errors.length > 0) {
+                    // Show the errors
+                    $('.gd-contact-form .gd-form-error').remove();
+                    var gdErrorMsg = '<ol class="gd-form-error">';
+                    for (var looper = 0; looper < errors.length; looper++) {
+                        gdErrorMsg += '<li>' + $('[name=' + errors[looper].name + ']').data('error') + '</li>';
+                    }
+                    gdErrorMsg += '</ol>';
+                    $('.gd-contact-form').append(gdErrorMsg);
+                }
+            });
         }
 
 

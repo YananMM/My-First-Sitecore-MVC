@@ -54,12 +54,16 @@ namespace Landmark.Helper
         /// </summary>
         /// <param name="categoryName">Name of the category.</param>
         /// <returns>List{Item}.</returns>
-        public List<Item> GetStoriesByCategory(string categoryID) 
+        public List<Item> GetStoriesByCategory(string categoryID)
         {
             List<Item> stories = new ItemList();
             var allstories = GetAllStories();
-            stories = allstories.Where(p => p.Fields["Magazine Category"].ToString().Contains(categoryID)).ToList();
-            return stories;
+            if (!string.IsNullOrEmpty(categoryID))
+            {
+                stories = allstories.Where(p => p.Fields["Magazine Category"].ToString().Contains(categoryID)).OrderByDescending(p => p.Fields["Story Date"].ToString()).ToList();
+                return stories;
+            }
+            return allstories;
         }
 
         /// <summary>
