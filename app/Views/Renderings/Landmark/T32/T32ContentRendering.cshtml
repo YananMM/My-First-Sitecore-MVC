@@ -73,11 +73,8 @@
                                      </div>
                                      <div class="col-sm-3">
                                          <h5>@Html.Sitecore().Field("Glossary Value", ItemGuids.OpenningHoursItem)</h5>
-                                         <p>Mon-Sat <br>
-                                             Lunch 12noon – 2:30pm, <br>
-                                             Dinner 6:30pm – 10:30pm, <br>
-                                             Bar 12noon – 1am <br>
-                                             Sun closed
+                                         <p>@Html.Sitecore().Field("Mon-Fri Opening Hours",result.GetItem())<br>
+                                            @Html.Sitecore().Field("Sat-Sun Opening Hours",result.GetItem())
                                          </p>
                                      </div>
                                  </div>
