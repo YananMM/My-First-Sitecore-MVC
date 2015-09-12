@@ -5,7 +5,10 @@
 @using Landmark.Models
 @model RenderingModel
 @{
+    MagezineHelper helper = new MagezineHelper();
     var parent = Sitecore.Context.Item.Parent;
+    var stories = helper.GetStoriesByCategory(Request["type"]);
+
 }
 <div class="container">
     <div class="gd-pagetitle">
@@ -22,13 +25,17 @@
     <div class="gd-magazine-info">
         <div class="row">
             <div class="col-sm-6">
-                <img data-src="../files/landmark/images/others/cateogry-bigimg-01.jpg">
+                <img data-src="@Html.Sitecore().ImageFieldSrc("Callout Image", stories[7])">
             </div>
             <div class="col-sm-6">
                 <div class="gd-magazine-info-text">
-                    <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h3>
-                    <h5>Jun 2015</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam </p>
+                    <h3>@Html.Sitecore().Field("Story Name", stories[0])</h3>
+                    @{
+                        DateField storyDate = stories[0].Fields["Story Date"];
+                        var date = LandmarkHelper.ToValidDateTime(storyDate);
+                    }
+                    <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
+                    <p>@Html.Sitecore().Field("Story Content", stories[0])</p>
                 </div>
             </div>
         </div>

@@ -5740,7 +5740,7 @@ button.close {
 @media (min-width: 768px) {
   .modal-dialog {
     width: 600px;
-    margin: 30px auto;
+    margin: 40px auto;
   }
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -10559,9 +10559,10 @@ h4 a:active {
   color: #999999;
 }
 .gd-hover-img {
-  display: block;
+  display: inline-block !important;
   position: relative;
-  /*      &:after{
+  text-align: center;
+  /*&:before{
            content: "";
            position: absolute;
               width: 100%;
@@ -10573,8 +10574,8 @@ h4 a:active {
               z-index: 20;
               background: url("../images/black-50.png") repeat  transparent; 
          }
-       &:hover{
-         &:after{
+        &:hover{
+        &:before{
               opacity: 0.5;
               z-index: 20;
              .transition(all, 0.2s, ease-out);
@@ -10601,6 +10602,17 @@ h4 a:active {
   -ms-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   background: url("../images/black-50.png") repeat transparent;
+}
+.gd-hover-img2:hover img {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  filter: brightness(0.75);
+  -webkit-filter: brightness(0.75);
+  -moz-filter: brightness(0.75);
+  -o-filter: brightness(0.75);
 }
 .gd-bigbrand {
   text-align: center;
@@ -10833,6 +10845,11 @@ h4 a:active {
 }
 .gd-pagetitle .gd-pagetitle-menu a.active:hover {
   color: #222222;
+}
+.gd-pagetitle .gd-pagetitle-menu a:focus,
+.gd-pagetitle .gd-pagetitle-menu a:active {
+  color: #d4a962;
+  text-decoration: none;
 }
 .gd-pagetitle .gd-pagetitle-menu .gd-pagetitle-menu-gap {
   display: inline-block;
@@ -11340,6 +11357,7 @@ h4 a:active {
 @media (min-width: 1000px) {
   .gd-mainimage .carousel-inner .item > .carousel-image {
     height: 640px;
+    background-position: 50% 50% !important;
   }
   .gd-mainimage .carousel-inner .item > .carousel-caption .gd-carousel-detail {
     height: 640px;
@@ -12778,6 +12796,7 @@ dl.gd-content-details-tags dd a:active {
   }
 }
 .gd-promotion-box-area {
+  margin-bottom: 60px;
   position: relative;
 }
 .gd-promotion-box-area .gd-promotion-box-heading h3 {
@@ -12910,6 +12929,19 @@ dl.gd-content-details-tags dd a:active {
     color: #d4a962;
     text-decoration: none;
   }
+}
+.gd-form-error {
+  border: 1px solid #c41e3a;
+  border-radius: 3px;
+  margin-top: 20px;
+  padding: 10px 15px;
+}
+.gd-form-error li {
+  color: #c41e3a;
+  font-size: 14px;
+  line-height: 2;
+  list-style-position: inside;
+  padding: 0;
 }
 .t35 > iframe {
   display: block;
@@ -13464,6 +13496,8 @@ dl.gd-content-details-tags dd a:active {
 }
 .t28 .gd-brief {
   margin-bottom: 50px;
+  padding: 80px 0 0;
+  margin-top: -80px;
 }
 .t28 .gd-brief .gd-brief-heading {
   padding: 0 0 1em;
@@ -14320,11 +14354,17 @@ dl.gd-content-details-tags dd a:active {
     height: 400px;
   }
 }
+@media (min-width: 768px) {
+  .t24 .gd-full-img {
+    height: auto;
+  }
+}
 .t26 .gd-promotion {
   margin-left: -15px;
   margin-right: -15px;
   margin-top: 60px;
 }
+.t26 .gd-promotion .gd-grid-sizer,
 .t26 .gd-promotion .gd-promo-box,
 .t26 .gd-promotion .gd-promo-box2 {
   margin-right: 0;
@@ -14332,12 +14372,14 @@ dl.gd-content-details-tags dd a:active {
   width: 100%;
 }
 @media (min-width: 768px) {
+  .t26 .gd-promotion .gd-grid-sizer,
   .t26 .gd-promotion .gd-promo-box,
   .t26 .gd-promotion .gd-promo-box2 {
     width: 33.3333%;
   }
 }
 @media (min-width: 1300px) {
+  .t26 .gd-promotion .gd-grid-sizer,
   .t26 .gd-promotion .gd-promo-box,
   .t26 .gd-promotion .gd-promo-box2 {
     width: 25%;
@@ -14872,7 +14914,7 @@ dl.gd-content-details-tags dd a:active {
 .t23 .gd-content-details .col-sm-6 img,
 .t23 .gd-content-details .col-sm-4 img {
   border: solid 1px #e9e9e9;
-  margin: 10px 0 ;
+  margin: 4px 0 22px;
   width: 100%;
 }
 .t23 .gd-content-details .gd-content-details-heading {
@@ -14933,7 +14975,7 @@ dl.gd-content-details-tags dd a:active {
     padding-bottom: 0;
   }
   .t23 .gd-content-details .col-sm-6 img {
-    margin: 30px 0 50px;
+    margin: 4px 0 22px;
   }
   .t23 .gd-content-details .gd-content-details-heading {
     margin-bottom: 25px;

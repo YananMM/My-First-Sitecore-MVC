@@ -12,7 +12,7 @@ templatekey: T23 Page
 ----version----
 language: en
 version: 1
-revision: 6df586c1-f5aa-4c31-b6ae-c60010610d78
+revision: db1da9a0-cea5-4fb0-a149-b829d76a922d
 
 ----field----
 field: {BA2CB119-1C77-40AA-B95E-79014CAFD7AD}
@@ -43,6 +43,13 @@ content-length: 16
 
 20150908T160000Z
 ----field----
+field: {5C0BBA56-2858-4953-8DD1-8B9766DC2A43}
+name: Callout Image
+key: callout image
+content-length: 58
+
+<image mediaid="{FB9CB289-2619-4E83-80CC-5AE68B27D748}" />
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6df586c1-f5aa-4c31-b6ae-c60010610d78
+db1da9a0-cea5-4fb0-a149-b829d76a922d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150909T110931:635773937718045211Z
+20150910T025421:635774504615959917Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

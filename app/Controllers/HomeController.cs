@@ -44,7 +44,6 @@ namespace Landmark.Controllers
         /// </summary>
         /// <param name="targetId">The target unique identifier.</param>
         /// <returns>ActionResult.</returns>
-        [HttpPost]
         public ActionResult ButtonRedirect(string targetId)
         {
             Item target = Sitecore.Context.Database.GetItem(targetId);
@@ -55,13 +54,19 @@ namespace Landmark.Controllers
         /// Buttons the redirect.
         /// </summary>
         /// <param name="targetId">The target unique identifier.</param>
-        /// <param name="experienceType">Type of the experience.</param>
+        /// <param name="type">Type of the experience.</param>
         /// <returns>ActionResult.</returns>
         [HttpGet]
-        public ActionResult FilterRedirect(string targetId, string experienceType)
+        public ActionResult FilterRedirect(string targetId, string type)
         {
             Item target = Sitecore.Context.Database.GetItem(targetId);
-            return Redirect(Sitecore.Links.LinkManager.GetItemUrl(target) + "?experienceType=" + experienceType);
+            return Redirect(Sitecore.Links.LinkManager.GetItemUrl(target) + "?type=" + type);
+        }
+
+        public ActionResult DirectByPager(string targetId, int page)
+        {
+            Item target = Sitecore.Context.Database.GetItem(targetId);
+            return Redirect(Sitecore.Links.LinkManager.GetItemUrl(target) + "?page=" + page);
         }
 
         public ActionResult AddCustomerMessage(ContactUsFormModel model)
@@ -158,8 +163,6 @@ namespace Landmark.Controllers
             var bytes = vCode.CreateValidateCode(5, 280, 60, 22);
             return File(bytes, @"image/jpeg");
         }
-
-       
 
     }
 }
