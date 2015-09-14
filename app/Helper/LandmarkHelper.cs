@@ -3,6 +3,7 @@ using Sitecore.Data.Items;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Net.Mail;
 using System.Web;
 using Landmark.Classes;
 using Landmark.Models;
@@ -14,9 +15,9 @@ using Sitecore.Data.Fields;
 using Sitecore.Data.Managers;
 using Sitecore.Globalization;
 using Sitecore.Links;
-using Sitecore.Shell.Applications.ContentEditor;
 using Sitecore.Shell.Applications.ContentManager.ReturnFieldEditorValues;
 using Sitecore.Web.UI;
+using Attachment = Sitecore.Shell.Applications.ContentEditor.Attachment;
 using DateTime = System.DateTime;
 
 namespace Landmark.Helper
@@ -308,5 +309,23 @@ namespace Landmark.Helper
             }
             return tagsTrees;
         }
+
+        public static MailMessage ConstructEmailMessage(string emailBody, string subject, string mailTo, string from, string fromname)
+        {
+            var mailMessage = new MailMessage
+            {
+                Subject = subject,
+                IsBodyHtml = true,
+                Body = emailBody,
+                From = new MailAddress(from, fromname)
+            };
+
+
+            if (mailTo.Length > 0)
+                mailMessage.To.Add(mailTo);
+
+            return mailMessage;
+        }
+
     }
 }

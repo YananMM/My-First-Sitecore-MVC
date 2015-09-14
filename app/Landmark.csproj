@@ -128,6 +128,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\Landmark.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Landmark.resx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Classes\ComputedFields\FilterOrderComputedField.cs" />
     <Compile Include="Classes\ComputedFields\FilterTypeComputedField.cs" />
@@ -291,6 +296,7 @@
     <Content Include="files\landmark\css\bootstrap.css" />
     <Content Include="files\landmark\css\jquery.bxslider.css" />
     <Content Include="files\landmark\css\style.css" />
+    <None Include="files\landmark\email templates\ContactUsForm.html" />
     <Content Include="files\landmark\fonts\bertholdakzidenzgroteskbelight.svg" />
     <Content Include="files\landmark\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="files\landmark\fonts\icomoon.svg" />
@@ -746,7 +752,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="files\landmark\audioplayer\audio\" />
-    <Folder Include="files\landmark\email templates\" />
     <Folder Include="files\landmark\less\css\" />
     <Folder Include="Views\Sublayouts\" />
   </ItemGroup>
@@ -846,6 +851,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Landmark.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Landmark.designer.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
