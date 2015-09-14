@@ -2,9 +2,9 @@
 version: 1
 id: {07D4ACB8-7EF3-40B9-8D1B-A5782241E8D3}
 database: master
-path: /sitecore/content/Home/Landmark/Now At Landmark/Exclusively in LANDMARK S
+path: /sitecore/content/Home/Landmark/Now At Landmark/Exclusively in LANDMARK
 parent: {F0A68E40-FB4F-4B85-969D-A6ADEE24DE6B}
-name: Exclusively in LANDMARK S
+name: Exclusively in LANDMARK
 master: {13FE3D68-15D9-47E4-8993-4C620C534BBC}
 template: {4CDF5CD9-40F0-4F0B-A095-7773CE6CF582}
 templatekey: T4 Page
@@ -19,7 +19,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 3a9e7ba0-ac46-4b5a-a043-d6594c5dae69
+revision: 616c0f52-baed-43d5-b693-1a78db5da6ee
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -103,9 +103,9 @@ Exclusively in LANDMARK - Featuring 50 Exquisite Items for June
 field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
 name: Is Shown In Navigation
 key: is shown in navigation
-content-length: 0
+content-length: 1
 
-
+1
 ----field----
 field: {87411C38-6F62-4AAB-9119-465B82289CF5}
 name: Page Content
@@ -181,14 +181,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3a9e7ba0-ac46-4b5a-a043-d6594c5dae69
+616c0f52-baed-43d5-b693-1a78db5da6ee
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150907T035429Z
+20150914T132003Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

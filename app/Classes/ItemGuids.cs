@@ -94,7 +94,7 @@ namespace Landmark.Classes
         public static readonly String HotelSlideObject = "{93B5F609-2F05-42E3-ABB2-9D903169CF9D}";
         public static readonly String ExperienceCentral = "{E973BDE0-11BC-4DD9-B949-08501F4D9353}";
         public static readonly String T25PageTemplate = "{6837F6B8-D9D4-4693-85E2-3F1001C77B6A}";
-        public static readonly String PageObject = "{AA7E76BD-BCAD-4597-9855-0493AABF8DAF}";
+        public static readonly String ShoppingPageObject = "{AA7E76BD-BCAD-4597-9855-0493AABF8DAF}";
         public static readonly String ExperienceTypeFolder = "{90A7869E-8AF3-4DEE-BD71-7AE422931D30}";
         public static readonly String ShoppingFilterType = "{3D3F4372-81D0-422E-BA25-5BB9B3A01B96}";
         public static readonly String LandmarkMagazineFolder = "{3316BC5E-C1E1-4D24-AD86-4BC25D214996}";
@@ -156,7 +156,7 @@ namespace Landmark.Classes
         public static readonly Item SeeAllExclusiveItem = Sitecore.Context.Database.GetItem("{4F5C3F3D-9AB5-424B-9C78-41DC7AEECB8F}");
         public static readonly Item AllTextItem = Sitecore.Context.Database.GetItem("{0E954D78-0836-46D0-938A-29E235F975ED}");
         public static readonly Item ShareItem = Sitecore.Context.Database.GetItem("{2224057F-0DA3-4D7E-9089-99CB8CC77C0F}");
-        
+        public static readonly Item LearnMoreItem = Sitecore.Context.Database.GetItem("{3ADB531C-1F86-4963-859D-9525EE4D833A}");
         public static readonly Item ViewMapItem = Sitecore.Context.Database.GetItem("{615AE910-37B4-44C8-B550-32DAA8CCF66B}");
         public static readonly Item FaxItem = Sitecore.Context.Database.GetItem("{4C157DD6-6AF2-4112-B610-AFFC84C6CCF1}");
         public static readonly Item TelephoneItem = Sitecore.Context.Database.GetItem("{0B3DA006-CBA6-44CA-9421-88965D431F2F}");

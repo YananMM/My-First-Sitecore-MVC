@@ -1,33 +1,40 @@
 ----item----
 version: 1
-id: {8EF0153A-03AC-42F4-A481-C85C3BF94AB1}
+id: {501AE620-A22E-4C53-B6CF-49343A7BDA0F}
 database: master
-path: /sitecore/content/Home/Landmark/Now At Landmark/In Landmark
-parent: {F0A68E40-FB4F-4B85-969D-A6ADEE24DE6B}
-name: In Landmark
+path: /sitecore/content/Home/Landmark/Now At Landmark/Exclusively in LANDMARK/Images Folder/Image Text Object 2
+parent: {F02BA324-4D91-4B2E-B224-2693BC3C8EBA}
+name: Image Text Object 2
 master: {00000000-0000-0000-0000-000000000000}
-template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
-templatekey: Folder
+template: {CFE5379F-402F-4FB5-A1C5-0E42CA464BC1}
+templatekey: Image Text Object
 
-----field----
-field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
-name: __Masters
-key: __masters
-content-length: 77
-
-{A87A00B1-E6DB-45AB-8B54-636FEC3B5523}|{7C9B7BB1-1F6A-46A4-B705-7D29296B30DA}
 ----version----
 language: en
 version: 1
-revision: 5981280f-1efc-4a23-8e09-412641417c94
+revision: 6ef9abf6-eda7-4fc3-b067-5b6b400a376e
 
+----field----
+field: {0AB28A95-2EFC-4333-B617-155C738623C9}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{D8680AE5-598A-42CF-B9E6-F8B9F55D9D09}" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150825T115538Z
+20150824T120900Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5981280f-1efc-4a23-8e09-412641417c94
+6ef9abf6-eda7-4fc3-b067-5b6b400a376e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150825T115553Z
+20150824T120912Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

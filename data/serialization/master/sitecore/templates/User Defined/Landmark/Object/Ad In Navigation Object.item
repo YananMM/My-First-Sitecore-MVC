@@ -1,40 +1,40 @@
 ----item----
 version: 1
-id: {501AE620-A22E-4C53-B6CF-49343A7BDA0F}
+id: {1DB0E3CC-8D00-44A2-AD21-CB6E24CE96DF}
 database: master
-path: /sitecore/content/Home/Landmark/Now At Landmark/Exclusively in LANDMARK S/Images Folder/Image Text Object 2
-parent: {F02BA324-4D91-4B2E-B224-2693BC3C8EBA}
-name: Image Text Object 2
+path: /sitecore/templates/User Defined/Landmark/Object/Ad In Navigation Object
+parent: {CEB547EC-0F8A-4672-ABDC-37582EE88EE4}
+name: Ad In Navigation Object
 master: {00000000-0000-0000-0000-000000000000}
-template: {CFE5379F-402F-4FB5-A1C5-0E42CA464BC1}
-templatekey: Image Text Object
+template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
+templatekey: Template
 
+----field----
+field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
+name: __Base template
+key: __base template
+content-length: 38
+
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 25
+
+Apps/32x32/Technology.png
 ----version----
 language: en
 version: 1
-revision: 6ef9abf6-eda7-4fc3-b067-5b6b400a376e
+revision: 9861821b-07d7-4546-8f03-71294dcfa886
 
-----field----
-field: {0AB28A95-2EFC-4333-B617-155C738623C9}
-name: Image
-key: image
-content-length: 58
-
-<image mediaid="{D8680AE5-598A-42CF-B9E6-F8B9F55D9D09}" />
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150824T120900Z
+20150914T125404Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6ef9abf6-eda7-4fc3-b067-5b6b400a376e
+9861821b-07d7-4546-8f03-71294dcfa886
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150824T120912Z
+20150914T125531Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

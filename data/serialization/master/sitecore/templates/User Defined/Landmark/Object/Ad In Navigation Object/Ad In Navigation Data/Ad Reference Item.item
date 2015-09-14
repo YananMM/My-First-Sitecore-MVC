@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {2AA6F402-D9B6-4657-8D9F-5C6809420747}
+id: {D0CC41B3-3000-4ED5-870B-8C89E72C0DA0}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/Shopping Page Object/Ad In Navigation Data/Ad Reference Item
-parent: {DA1F83BE-2649-4696-B188-02DE9BFD2FC7}
+path: /sitecore/templates/User Defined/Landmark/Object/Ad In Navigation Object/Ad In Navigation Data/Ad Reference Item
+parent: {377D6445-D2E6-460A-A684-F8F9DC146381}
 name: Ad Reference Item
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
@@ -17,6 +17,13 @@ content-length: 8
 
 Droptree
 ----field----
+field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
+name: Source
+key: source
+content-length: 31
+
+/sitecore/content/Home/Landmark
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -26,7 +33,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: a892d653-939c-4d63-bcb1-a71fd0d3c94d
+revision: 22168da3-efe2-41b0-a067-f71696921731
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +41,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150721T071130Z
+20150914T125430Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-a892d653-939c-4d63-bcb1-a71fd0d3c94d
+22168da3-efe2-41b0-a067-f71696921731
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150721T071235Z
+20150914T125533Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
