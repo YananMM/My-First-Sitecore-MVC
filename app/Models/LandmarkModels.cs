@@ -229,4 +229,13 @@ namespace Landmark.Models
 
         public List<Item> Stories { get; set; } 
     }
+
+    public class StorySetting
+    {
+        public bool SliderOnTopNotLeft { get; set; }
+
+        public bool SliderFilltheScreen { get; set; }
+
+        public bool ShowBigCoverNotSmallCover { get; set; }
+    }
 }

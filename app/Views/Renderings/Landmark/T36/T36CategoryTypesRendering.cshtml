@@ -11,17 +11,18 @@
 }
 
 <div class="gd-pagetitle-menu hidden-xs">
-    <a href="@Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage)?type=''&page=1" class="active">@Html.Sitecore().Field("Glossary Value", ItemGuids.MagezineItem) </a>
+    <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage))" @if (Sitecore.Context.Item.ID.ToString() == ItemGuids.LandmarkMaganizePage)
+    { <text> class="active" </text>    }>@Html.Sitecore().Field("Glossary Value", ItemGuids.MagezineItem) </a>
     @foreach (var item in magazineCategories)
     {
         <span class="gd-pagetitle-menu-gap">|</span>
-        <a href="@Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage)?type=@item.ID&page=1">@item.Fields["Category Name"].ToString().ToUpper()</a>
+        <a href="@Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage)?type=@item.ID&page=1" @if (Request["type"] == item.ID.ToString()) { <text> class="active" </text>    }>@item.Fields["Category Name"].ToString().ToUpper()</a>
     }
 </div>
 
 <div class="gd-controls-m visible-xs">
     <select class="form-control">
-        <option value="@Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage)?type=''&page=1">MAGAZINE</option>
+        <option value="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage))">MAGAZINE</option>
         @foreach (var item in magazineCategories)
         {
             <option value="@Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage)?type=@item.ID&page=1">@item.Fields["Category Name"].ToString().ToUpper()</option>
