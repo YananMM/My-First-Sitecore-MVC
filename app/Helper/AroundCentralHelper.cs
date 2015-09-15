@@ -29,7 +29,7 @@ namespace Landmark.Helper
         /// <summary>
         /// The _page size
         /// </summary>
-        private int _pageSize = 2;
+        private int _pageSize = 6;
         /// <summary>
         /// Gets the hotel slides.
         /// </summary>
