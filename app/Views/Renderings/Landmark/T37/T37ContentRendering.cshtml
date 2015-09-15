@@ -3,13 +3,17 @@
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Landmark.Models
+@using Sitecore.Collections
 @model RenderingModel
 @{
     MagezineHelper helper = new MagezineHelper();
     var parent = Sitecore.Context.Item.Parent;
-    var stories = helper.GetStoriesByCategory(Request["type"]);
+    var stories = helper.GetStoriesByPager(Request["type"], Convert.ToInt32(Request["page"]));
+    List<Item> list1 = new ItemList();
+    List<Item> list2 = new ItemList();
 
 }
+
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
@@ -24,75 +28,85 @@
     </div>
     <div class="gd-magazine-info">
         <div class="row">
-            <div class="col-sm-6">
-                <img data-src="@Html.Sitecore().ImageFieldSrc("Callout Image", stories[7])">
-            </div>
-            <div class="col-sm-6">
-                <div class="gd-magazine-info-text">
-                    <h3>@Html.Sitecore().Field("Story Name", stories[0])</h3>
-                    @{
-                        DateField storyDate = stories[0].Fields["Story Date"];
-                        var date = LandmarkHelper.ToValidDateTime(storyDate);
-                    }
-                    <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
-                    <p>@Html.Sitecore().Field("Story Content", stories[0])</p>
+            @if (stories.Count() != 0)
+            {
+                <div class="col-sm-6">
+                    <img data-src="@Html.Sitecore().ImageFieldSrc("Callout Image", stories.First())">
                 </div>
-            </div>
+                <div class="col-sm-6">
+                    <div class="gd-magazine-info-text">
+                        <h3>@Html.Sitecore().Field("Story Name", stories.First())</h3>
+                        @{
+                DateField storyDate = stories.First().Fields["Story Date"];
+                var date = LandmarkHelper.ToValidDateTime(storyDate);
+                        }
+                        <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
+                        <p>@Html.Sitecore().Field("Story Content", stories.First())</p>
+                    </div>
+                </div>
+            }
         </div>
     </div>
+    @{
+        if (string.IsNullOrEmpty(Request["page"]) || Convert.ToInt32(Request["page"]) == 1)
+        {
+            var storyList = stories.GetRange(1, stories.Count - 1).ToList();
+            if (storyList.Count >= 3)
+            {
+                list1 = storyList.GetRange(0, 3);
+                list2 = storyList.GetRange(3, storyList.Count - 3);
+            }
+            else
+            {
+                list1 = storyList;
+            }
+            <h2>@storyList.Count</h2>
+        }
+    }
+    <h2>@list1.Count</h2>
+    <h2>@list2.Count</h2>
+    <h2>@stories.Count</h2>
     <div class="gd-promotion-box-area">
         <div class="row">
-            <div class="col-sm-4">
-                <div class="gd-promotion-box">
-                    <img data-src="../files/landmark/images/others/cateogry-img-01.jpg">
-                    <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
-                    <h5>JUN 2015</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="gd-promotion-box">
-                    <img data-src="../files/landmark/images/others/cateogry-img-02.jpg">
-                    <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
-                    <h5>JUN 2015</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="gd-promotion-box">
-                    <img data-src="../files/landmark/images/others/cateogry-img-03.jpg">
-                    <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
-                    <h5>JUN 2015</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
-                </div>
-            </div>
+            @if (list1.Count != 0)
+            {
+                foreach (var item in list1)
+                {
+                    <div class="col-sm-4">
+                        <div class="gd-promotion-box">
+                            <img data-src="@Html.Sitecore().ImageFieldSrc("Callout Image", item)">
+                            <h4><a href="#">@Html.Sitecore().Field("Story Name", item)</a></h4>
+                            @{
+                    DateField itemDate = item.Fields["Story Date"];
+                    var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
+                            }
+                            <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
+                            <p>@Html.Sitecore().Field("Story Content", item)</p>
+                        </div>
+                    </div>
+                }
+            }
         </div>
         <div class="row">
-            <div class="col-sm-4">
-                <div class="gd-promotion-box">
-                    <img data-src="../files/landmark/images/others/cateogry-img-01.jpg">
-                    <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
-                    <h5>JUN 2015</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="gd-promotion-box">
-                    <img data-src="../files/landmark/images/others/cateogry-img-02.jpg">
-                    <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
-                    <h5>JUN 2015</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="gd-promotion-box">
-                    <img data-src="../files/landmark/images/others/cateogry-img-03.jpg">
-                    <h4><a href="#">Lorem ipsum dolor sit amet</a></h4>
-                    <h5>JUN 2015</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
-                </div>
-            </div>
+            @if (list2.Count != 0)
+            {
+                foreach (var item in list2)
+                {
+                    <div class="col-sm-4">
+                        <div class="gd-promotion-box">
+                            <img data-src="@Html.Sitecore().ImageFieldSrc("Callout Image", item)">
+                            <h4><a href="#">@Html.Sitecore().Field("Story Name", item)</a></h4>
+                            @{
+                    DateField itemDate = item.Fields["Story Date"];
+                    var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
+                            }
+                            <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
+                            <p>@Html.Sitecore().Field("Story Content", item)</p>
+                        </div>
+                    </div>
+                }
+            }
         </div>
     </div>
-    <div class="gd-promo-more"><a href="/en/t37.html?page=2">SEE MORE +</a></div>
+    <div class="gd-promo-more"><a href="?type=@Request["type"]&page=2">@Html.Sitecore().Field("Glossary Value", ItemGuids.SeeMoreItem) +</a></div>
 </div>

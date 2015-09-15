@@ -60,7 +60,7 @@ namespace Landmark.Controllers
         public ActionResult FilterRedirect(string targetId, string type)
         {
             Item target = Sitecore.Context.Database.GetItem(targetId);
-            return Redirect(Sitecore.Links.LinkManager.GetItemUrl(target) + "?type=" + type);
+            return Redirect(Sitecore.Links.LinkManager.GetItemUrl(target) + "?type=" + type + "&page=1");
         }
 
         public ActionResult DirectByPager(string targetId, int page)
