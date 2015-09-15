@@ -12,8 +12,43 @@ templatekey: T23 Page
 ----version----
 language: en
 version: 1
-revision: 94435a5d-dc33-492e-998d-feae6bba6221
+revision: e0ed723b-55c9-45cc-ad2d-7f64438db040
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 7
+
+Story 1
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 631
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam
+----field----
+field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
+name: Article Thumb Image
+key: article thumb image
+content-length: 58
+
+<image mediaid="{9438BEBA-1EFA-4705-936E-3F894F8967D6}" />
+----field----
+field: {B966F61E-9F08-4674-AC01-EE1064020145}
+name: Article Date
+key: article date
+content-length: 16
+
+20150913T160000Z
+----field----
+field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
+name: Article Type
+key: article type
+content-length: 38
+
+{274E7EC5-2922-4472-8DCE-448B68642884}
 ----field----
 field: {BA2CB119-1C77-40AA-B95E-79014CAFD7AD}
 name: Magazine Category
@@ -29,27 +64,6 @@ content-length: 7
 
 Story 1
 ----field----
-field: {1B048735-3BE9-4505-A31A-0A13390BA75D}
-name: Story Name
-key: story name
-content-length: 7
-
-Story 1
-----field----
-field: {66A8422B-87F3-4B9B-B575-9551D754CE87}
-name: Story Content
-key: story content
-content-length: 182
-
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, </p>
-----field----
-field: {5C0BBA56-2858-4953-8DD1-8B9766DC2A43}
-name: Callout Image
-key: callout image
-content-length: 58
-
-<image mediaid="{C8DB028B-980F-4CFA-B98E-4A31B132954E}" />
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -62,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-94435a5d-dc33-492e-998d-feae6bba6221
+e0ed723b-55c9-45cc-ad2d-7f64438db040
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150910T025447:635774504879745004Z
+20150915T071139:635778978996056427Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
