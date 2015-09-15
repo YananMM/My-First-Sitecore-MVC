@@ -89,6 +89,7 @@ namespace Landmark.Classes
         public static readonly String ContactUsPage = "{5EC2DEF7-B8CE-45CD-96CD-9967773B5808}";
         public static readonly String ThankYouPage = "{C6045FFE-5883-49F7-AC6E-653919640DDB}";
         public static readonly String OverviewPage = "{7C88DA46-5C88-465B-8F12-BBEC6991D8CB}";
+        public static readonly String MonthlyExclusivePage = "{923DBE58-71DE-4B27-B0BA-C5DEF3D301B2}";
         //search template
         public static readonly String SearchResultsPage = "{4452D078-3946-43F3-9B42-84000F96BF5A}";
         public static readonly String HotelSlideObject = "{93B5F609-2F05-42E3-ABB2-9D903169CF9D}";
@@ -155,6 +156,8 @@ namespace Landmark.Classes
         public static readonly Item EmailItem = Sitecore.Context.Database.GetItem("{E3B50ED3-8CDC-41DA-A5D4-176A55CBA63A}");
         public static readonly Item ShowAllItem = Sitecore.Context.Database.GetItem("{2F9D72B2-FF66-4302-8ABB-BB5F7C697FE5}");
         public static readonly Item SeeAllExclusiveItem = Sitecore.Context.Database.GetItem("{4F5C3F3D-9AB5-424B-9C78-41DC7AEECB8F}");
+        public static readonly Item SeeAllExclusive = Sitecore.Context.Database.GetItem("{2283A3E4-45AE-4164-8C82-6D9F48D0602C}");
+        public static readonly Item ReadMoreItem = Sitecore.Context.Database.GetItem("{738E90D0-A3B0-46A3-8DF4-6FE1825B51D2}");
         public static readonly Item AllTextItem = Sitecore.Context.Database.GetItem("{0E954D78-0836-46D0-938A-29E235F975ED}");
         public static readonly Item ShareItem = Sitecore.Context.Database.GetItem("{2224057F-0DA3-4D7E-9089-99CB8CC77C0F}");
         public static readonly Item LearnMoreItem = Sitecore.Context.Database.GetItem("{3ADB531C-1F86-4963-859D-9525EE4D833A}");
@@ -166,5 +169,6 @@ namespace Landmark.Classes
 
         public static readonly Item MagezineItem =
             Sitecore.Context.Database.GetItem("{8B359693-D433-4F44-98F8-9CEE5FA9B72F}");
+
     }
 }

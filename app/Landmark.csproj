@@ -666,7 +666,6 @@
     <Content Include="Views\Renderings\Landmark\T11\T11ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\Global\BreadcrumbRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\Global\GeneralMainContentRendering.cshtml" />
-    <Content Include="Views\Renderings\Landmark\T11\T11PageTitle.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -677,7 +676,6 @@
     <Content Include="Views\Renderings\Landmark\T13\T13ByBuidings.cshtml" />
     <Content Include="Views\Renderings\Landmark\T13\T13ByBrands.cshtml" />
     <Content Include="Views\Renderings\Landmark\T13\T13SideBar.cshtml" />
-    <Content Include="Views\Renderings\Landmark\T11\T11BreadcrumbRendering.cshtml" />
     <Content Include="Service\Web.config" />
     <Content Include="Service\GetCategoryJson.ashx" />
     <Content Include="Views\Renderings\Landmark\T13\T13RelatedCategory.cshtml" />
@@ -754,6 +752,10 @@
     <Content Include="Views\Renderings\Landmark\T1\T1Panel4Slide1Rendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T1\T1Panel4Slide2Rendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T1\T1Panel4Slide3Rendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T11\T11RelatedExclusiveRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T11\T11PulledContent1Rendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T11\T11PulledContent2Rendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T11\T11PulledContent3Rendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

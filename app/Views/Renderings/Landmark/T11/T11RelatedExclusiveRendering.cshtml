@@ -1,0 +1,18 @@
+﻿@using Landmark.Helper
+@model RenderingModel
+@{
+    InspirationHelper inspirationHelper = new InspirationHelper();
+    ShoppingHelper shoppingHelper = new ShoppingHelper();
+    var exclusiveItem = inspirationHelper.GetMonthlyExclusives(category: shoppingHelper.GetCategoryFromItem(Sitecore.Context.Item.ID.ToString()).ID.ToString()).FirstOrDefault();
+}
+<div class=" menbox-2">
+    <a href="#"  class="menbox-img" >
+        <div class="menbox-img-mask"></div>
+        <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", exclusiveItem)" alt="landmark">
+    </a>
+    <div class="menbox-text">
+    <a href="#" class="menbox-title"><h3>@Html.Sitecore().Field("Article Headline", exclusiveItem)</h3></a>
+    <h4>EXCLUSIVES</h4>
+    <p>@Html.Sitecore().Field("Article Headline", exclusiveItem) (@Html.Sitecore().Field("Product Price", exclusiveItem))</p>
+    </div>
+</div>

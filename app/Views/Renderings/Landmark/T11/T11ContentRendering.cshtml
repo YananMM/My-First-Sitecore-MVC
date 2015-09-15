@@ -3,14 +3,24 @@
 @using Landmark.Helper
 @using Sitecore.ContentSearch.Utilities
 @using Sitecore.Data.Items
+@using Sitecore.Links
 @model RenderingModel
 
-@*@{
-        var advertsList = Sitecore.Context.Item.GetDescendantsByTemplateWithFallback(ItemGuids.AdvertTemplateItemGuid).Take(2);
-    }*@
 @{
     ShoppingHelper shoppingHelper = new ShoppingHelper();
 }
+<section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-xs-6">
+                <h2>@Sitecore.Context.Item["Page Title"].ToUpper()</h2>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-6 link-seeall">
+                <a href="@LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage))">@Html.Sitecore().Field("Glossary Value", ItemGuids.SeeAllBrandsGuidItem)<span class="icomoon-chevron-small-right"></span></a>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="content-area">
     <div class="container">
         <div class="row">
@@ -63,10 +73,17 @@
                 </div>
             </div>
 
-
+            <div class="col-lg-4 col-md-4 col-sm-4 menbox">
+                @Html.Sitecore().Placeholder("t11-exclusive")
+                <a href="@LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.MonthlyExclusivePage))" class="pull-right menbox-more">@Html.Sitecore().Field("Glossary Value",ItemGuids.SeeAllExclusive)<span class="icomoon-chevron-small-right"></span></a> </div>
+            </div>
         </div>
     </div>
 </section>
 <section class="content-area content-area-bg">
-    @*@Html.Sitecore().Placeholder("content-area content-area-bg")*@
+<div class="container2">
+    <div class="row">
+@Html.Sitecore().Placeholder("t11-pulled-content")
+    </div>
+  </div>
 </section>

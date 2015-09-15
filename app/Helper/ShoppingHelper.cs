@@ -330,7 +330,14 @@ namespace Landmark.Helper
 
 
             return articles;
-        } 
+        }
+
+        public Item GetCategoryFromItem(string itemid)
+        {
+            var allshoppingCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
+            Item category = allshoppingCategories.SingleOrDefault(p => p.DisplayName == _webDb.GetItem(itemid).DisplayName);
+            return category;
+        }
 
     }
 }

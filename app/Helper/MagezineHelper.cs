@@ -27,6 +27,8 @@ namespace Landmark.Helper
     /// </summary>
     public class MagezineHelper
     {
+        private int _pageSize = 6;
+
         /// <summary>
         /// Gets all maganize categories.
         /// </summary>
@@ -54,13 +56,16 @@ namespace Landmark.Helper
         /// </summary>
         /// <param name="categoryName">Name of the category.</param>
         /// <returns>List{Item}.</returns>
-        public List<Item> GetStoriesByCategory(string categoryID)
+        public List<Item> GetStoriesByCategory(string type)
         {
             List<Item> stories = new ItemList();
             var allstories = GetAllStories();
-            if (!string.IsNullOrEmpty(categoryID))
+            if (!string.IsNullOrEmpty(type))
             {
-                stories = allstories.Where(p => p.Fields["Magazine Category"].ToString().Contains(categoryID)).OrderByDescending(p => p.Fields["Story Date"].ToString()).ToList();
+                stories =
+                    allstories.Where(p => p.Fields["Magazine Category"].ToString().Contains(type))
+                        .OrderByDescending(p => p.Fields["Article Date"].ToString())
+                        .ToList();
                 return stories;
             }
             return allstories;
@@ -87,5 +92,30 @@ namespace Landmark.Helper
             }
             return maganizeGroups;
         }
+
+        /// <summary>
+        /// Gets the stories by pager.
+        /// </summary>
+        /// <param name="categoryID">The category unique identifier.</param>
+        /// <param name="page">The page.</param>
+        /// <returns>List{Item}.</returns>
+        public List<Item> GetStoriesByPager(string type, int page = 1)
+        {
+            List<Item> stories = new ItemList();
+            var allStories = GetStoriesByCategory(type);
+
+            if (allStories != null && allStories.Count != 0)
+            {
+                if (page == 1)
+                {
+                    _pageSize = 7;
+                }
+                stories =
+                    allStories.Skip((page - 1) * _pageSize)
+                        .Take(_pageSize).ToList();
+            }
+            return stories;
+        }
+
     }
 }

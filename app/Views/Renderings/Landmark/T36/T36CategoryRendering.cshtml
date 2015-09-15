@@ -13,7 +13,7 @@
     {
         <div class="gd-promotion-box-area">
             <div class="gd-promotion-box-heading">
-                <a class="gd-link-brands" href="@Url.Action("FilterRedirect", "Home")?targetId=@ItemGuids.MagazineCategoryPage&experienceType=@item.MagazineCategory.ID">@Html.Sitecore().Field("Glossary Value", ItemGuids.SeeMoreItem)<span class="icomoon-chevron-small-right"></span></a>
+                <a class="gd-link-brands" href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.MagazineCategoryPage))?type=@item.MagazineCategory.ID&page=1">@Html.Sitecore().Field("Glossary Value", ItemGuids.SeeMoreItem)<span class="icomoon-chevron-small-right"></span></a>
                 <h3>@item.MagazineCategory.Fields["Category Name"].ToString().ToUpper()</h3>
             </div>
 
@@ -21,10 +21,10 @@
                 @foreach (var it in item.Stories)
                 {
                     <div class="gd-slick-item">
-                        <img data-lazy="@Html.Sitecore().ImageFieldSrc("Callout Image", it)" />
-                        <div class="gd-slick-des">
-                            <h3>@Html.Sitecore().Field("Story Name", it)</h3>
-                            <p>@Html.Sitecore().Field("Story Content", it)</p>
+                        <img data-lazy="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", it)" />
+                        ><div class="gd-slick-des">
+                            <h3>@Html.Sitecore().Field("Article Headline", it)</h3>
+                            <p>@Html.Sitecore().Field("Article Intro", it)</p>
                         </div>
                     </div>
                 }
