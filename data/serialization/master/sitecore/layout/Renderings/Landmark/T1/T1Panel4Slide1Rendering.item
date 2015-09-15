@@ -1,18 +1,25 @@
 ----item----
 version: 1
-id: {9798FCDF-42E2-451D-94BA-15614E3F5537}
+id: {56F40119-D975-427F-B4DE-D4F8EAB1A56C}
 database: master
-path: /sitecore/content/Home/Landmark/Home Page/Lanmark Panels
-parent: {D569AFE1-784D-41F5-AFC5-21C3F95F44FC}
-name: Lanmark Panels
+path: /sitecore/layout/Renderings/Landmark/T1/T1Panel4Slide1Rendering
+parent: {6BFF641A-381C-404F-B0A5-95AAFBFE5BB9}
+name: T1Panel4Slide1Rendering
 master: {00000000-0000-0000-0000-000000000000}
-template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
-templatekey: Folder
+template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
+templatekey: View rendering
 
+----field----
+field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
+name: Path
+key: path
+content-length: 60
+
+/Views/Renderings/Landmark/T1/T1Panel4Slide1Rendering.cshtml
 ----version----
 language: en
 version: 1
-revision: 2cf47f24-dfd0-43c0-90f1-a038b410d29c
+revision: ba0d19d6-3256-4ecd-aac4-f3a6c53c54c3
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -20,28 +27,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150826T122844Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
+20150914T151348Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-2cf47f24-dfd0-43c0-90f1-a038b410d29c
+ba0d19d6-3256-4ecd-aac4-f3a6c53c54c3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150826T122844Z
+20150914T151430Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

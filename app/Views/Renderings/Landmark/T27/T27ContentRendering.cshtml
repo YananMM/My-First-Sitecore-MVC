@@ -20,7 +20,7 @@
             Item brandItem = Sitecore.Context.Database.GetItem(brand);
         }
         <h5><a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(brand))">@Html.Sitecore().Field("Brand Name",brandItem)</a></h5>
-        <h3>@Html.Sitecore().Field("Product Name")</h3>
+        <h3>@Html.Sitecore().Field("Article Title")</h3>
     </div>
       <div class="gd-exclusive">
 	  
@@ -82,7 +82,7 @@
         <h5><a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(brand))">@Html.Sitecore().Field("Brand Name",brandItem)</a></h5>
             <h3>@Html.Sitecore().Field("Product Name")</h3>
           </div>
-            @Html.Sitecore().Field("Page Content")
+            @Html.Sitecore().Field("Article Intro")
           <dl class="gd-content-details-tags">
               <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt> 
               <dd>@Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new

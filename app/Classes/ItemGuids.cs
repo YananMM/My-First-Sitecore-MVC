@@ -95,6 +95,7 @@ namespace Landmark.Classes
         public static readonly String ExperienceCentral = "{E973BDE0-11BC-4DD9-B949-08501F4D9353}";
         public static readonly String T25PageTemplate = "{6837F6B8-D9D4-4693-85E2-3F1001C77B6A}";
         public static readonly String ShoppingPageObject = "{AA7E76BD-BCAD-4597-9855-0493AABF8DAF}";
+        public static readonly String PageObject = "{E04426CD-2C71-48F8-A1CA-C507C2CAB178}";
         public static readonly String ExperienceTypeFolder = "{90A7869E-8AF3-4DEE-BD71-7AE422931D30}";
         public static readonly String ShoppingFilterType = "{3D3F4372-81D0-422E-BA25-5BB9B3A01B96}";
         public static readonly String LandmarkMagazineFolder = "{3316BC5E-C1E1-4D24-AD86-4BC25D214996}";
@@ -161,9 +162,7 @@ namespace Landmark.Classes
         public static readonly Item FaxItem = Sitecore.Context.Database.GetItem("{4C157DD6-6AF2-4112-B610-AFFC84C6CCF1}");
         public static readonly Item TelephoneItem = Sitecore.Context.Database.GetItem("{0B3DA006-CBA6-44CA-9421-88965D431F2F}");
         public static readonly Item AllItem = Sitecore.Context.Database.GetItem("{4ACF0FF2-331F-47A8-994A-A3D709A2524F}");
-
-        public static readonly Item SeeMoreItem =
-            Sitecore.Context.Database.GetItem("{0BA79670-6D57-473C-B495-1A01DB6CA2CA}");
+        public static readonly Item SeeMoreItem = Sitecore.Context.Database.GetItem("{0BA79670-6D57-473C-B495-1A01DB6CA2CA}");
 
         public static readonly Item MagezineItem =
             Sitecore.Context.Database.GetItem("{8B359693-D433-4F44-98F8-9CEE5FA9B72F}");

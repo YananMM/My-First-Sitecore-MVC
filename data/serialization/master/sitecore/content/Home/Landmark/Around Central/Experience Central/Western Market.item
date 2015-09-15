@@ -12,8 +12,22 @@ templatekey: T25 Page
 ----version----
 language: en
 version: 1
-revision: adb39db1-9b8f-4964-880b-6a6ba2f4a97f
+revision: a2be8a53-32ab-4aad-bcb5-5b40356a67be
 
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 14
+
+Western Market
+----field----
+field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
+name: Cover Image
+key: cover image
+content-length: 58
+
+<image mediaid="{0941AFDA-BAAD-409E-9AB9-22ABF1512A5A}" />
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -41,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-adb39db1-9b8f-4964-880b-6a6ba2f4a97f
+a2be8a53-32ab-4aad-bcb5-5b40356a67be
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150910T091143:635774731036990459Z
+20150911T092144:635775601046612291Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

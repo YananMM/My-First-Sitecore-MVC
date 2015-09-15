@@ -2,6 +2,7 @@
 @using Landmark.Helper
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
+@using Sitecore.Links
 @{
     InspirationHelper helper = new InspirationHelper();
     List<Item> articleObjects = helper.GetMonthlyExclusives(Request["category"],Request["brand"]).Where(item =>!((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
@@ -53,28 +54,37 @@
 
         <div class="gd-promo-body">
 
-            @foreach (Item detailedarticle in articleObjects)
+            @foreach (Item detailedarticle in articleDetailObjects)
             {
                 var brand = ((MultilistField)detailedarticle.Fields["Brand"]).TargetIDs.FirstOrDefault();
             <div class="gd-promo-box2">
-                <img data-src="@Html.Sitecore().ImageFieldSrc("Product Image",detailedarticle)">
+                <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image",detailedarticle)">
                 <div class="gd-promo-box-text">
-                    <h5>@Html.Sitecore().Field("Brand Name",Sitecore.Context.Database.GetItem(brand))</h5>
-                    <h4>@Html.Sitecore().Field("Product Name",detailedarticle) (@Html.Sitecore().Field("Product Price",detailedarticle))</h4>
-                    <button class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Glossary Value",ItemGuids.DiscoverMoreItem)</button>
-                    <a href="javascript:;" class="gd-promo-share"><span class="icomoon-share"></span>@Html.Sitecore().Field("Glossary Value",ItemGuids.ShareItem)</a>
+                    <h5>@Html.Sitecore().Field("Brand Title", Sitecore.Context.Database.GetItem(brand))</h5>
+                    <h4>@Html.Sitecore().Field("Article Headline", detailedarticle) (@Html.Sitecore().Field("Product Price", detailedarticle))</h4>
+                    <a class="gd-button gd-button-white" href="@LinkManager.GetItemUrl(detailedarticle)">@Html.Sitecore().Field("Glossary Value", ItemGuids.DiscoverMoreItem)</a>
+                    <div class="gd-promo-share">
+                        <div class="gd-promo-share-handle">
+                            <span class="icomoon-share"></span>@Html.Sitecore().Field("Glossary Value", ItemGuids.ShareItem)
+                        </div>
+                        <div class="gd-promo-sharebox">
+                            <a href="" class="icomoon-facebook"></a>
+                            <a href="" class="icomoon-twitter"></a>
+                            <a href="" class="icomoon-sina-weibo"></a>
+                            <a href="" class="icomoon-envelop"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             }
            
-            @foreach (Item article in articleDetailObjects)
+            @foreach (Item article in articleObjects)
             {
                 var brand = ((MultilistField) article.Fields["Brand"]).TargetIDs.FirstOrDefault();
                 <div class="gd-promo-box">
-                    <img data-src="@Html.Sitecore().ImageFieldSrc("Product Image",article)">
-                    <h5>@Html.Sitecore().Field("Brand Name",Sitecore.Context.Database.GetItem(brand))</h5>
-                    <h4>@Html.Sitecore().Field("Product Name",article) (@Html.Sitecore().Field("Product Price",article))</h4>
-                    <a href="javascript:;" class="gd-promo-share"><span class="icomoon-share"></span>@Html.Sitecore().Field("Glossary Value",ItemGuids.ShareItem)</a>
+                    <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image",article)">
+                    <h5>@Html.Sitecore().Field("Brand Title",Sitecore.Context.Database.GetItem(brand))</h5>
+                    <h4>@Html.Sitecore().Field("Article Headline",article) (@Html.Sitecore().Field("Product Price",article))</h4>
                 </div>
             }
 

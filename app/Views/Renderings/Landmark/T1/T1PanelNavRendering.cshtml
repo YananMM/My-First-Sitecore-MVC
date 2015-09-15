@@ -1,10 +1,11 @@
-﻿@model RenderingModel
+﻿@using Sitecore.Data.Fields
+@model RenderingModel
 
 <ul class="panel-nav hidden-xs hidden-sm">
-  <li><a href="#">nav</a></li>
-  @foreach (var item in Model.Item.Children)
-  {
-      <li><a href="#">nav</a></li>
-  }
-  <li><a href="#">nav</a></li>
+    <li><a href="#">nav</a></li>
+    @for (int i=0; i < Int32.Parse(Sitecore.Context.Item.Fields["Panels Number"].Value);i++)
+    {
+        <li><a href="#">nav</a></li>
+    }
+    <li><a href="#">nav</a></li>
 </ul>
