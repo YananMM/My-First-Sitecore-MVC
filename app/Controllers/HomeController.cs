@@ -14,6 +14,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
 using Landmark.Classes;
@@ -133,23 +135,40 @@ namespace Landmark.Controllers
             }
             else
             {
-                using (LandmarkSitecore_MasterEntities context = new LandmarkSitecore_MasterEntities())
+                var emailContent = Resources.Landmark.ContactUsForm;
+                Item contactUsFormItem = Sitecore.Context.Database.GetItem(ItemGuids.ContactUsPage);
+                var emailTo = contactUsFormItem.Fields["Email To"].Value;
+                var emailSubject = contactUsFormItem.Fields["Email Subject"].Value;
+                var emailBody = emailContent.Replace("{{Title}}", model.Title)
+                    .Replace("{{FirstName}}", model.FirstName)
+                    .Replace("{{LastName}}", model.LastName)
+                    .Replace("{{Telephone}}", model.Telephone)
+                    .Replace("{{Email}}", model.Email)
+                    .Replace("{{EnquiryType}}", model.EnquiryType)
+                    .Replace("{{Message}}", model.Message);
+                var email = LandmarkHelper.ConstructEmailMessage(
+                        emailBody,
+                        emailSubject,
+                        emailTo,
+                        "",
+                        "");
+                //Send the message.
+                SmtpClient client = new SmtpClient();
+                // Add credentials if the SMTP server requires them.
+                client.Credentials = CredentialCache.DefaultNetworkCredentials;
+
+                try
                 {
-                    ContactUsForm customer = new ContactUsForm()
-                    {
-                        ID = Guid.NewGuid(),
-                        Title = model.Title,
-                        FirstName = model.FirstName,
-                        LastName = model.LastName,
-                        Telephone = model.Telephone,
-                        Email = model.Email,
-                        EnquiryType = model.EnquiryType,
-                        Message = model.Message,
-                    };
-                    context.ContactUsForms.Add(customer);
-                    var result = context.SaveChanges();
-                    return result.ToString();
+                    client.Send(email);
+                    return "true";
                 }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Exception caught in CreateMessageWithAttachment(): {0}",
+                          ex.ToString());
+                    return ex.ToString();
+                }
+
             }
         }
 

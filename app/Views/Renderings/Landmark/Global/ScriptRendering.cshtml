@@ -3,9 +3,13 @@
 @using Sitecore.Data.Items
 <!-- Social App Ids -->
 <script>
-    // TODO: Change this App Id, anc change your app 'Site URL' settings
-    window.fbAppId = '@ItemGuids.LandmarkConfigItem.Fields["Facebook Application App Key"].Value';
-    window.wbAppKey = '@ItemGuids.LandmarkConfigItem.Fields["Weibo Application API Key"].Value';
+    // sitecore integration: these values should be managed in CMS as global settings
+    var gdSettings = {
+        fbAppId: '807096246077318',
+        wbAppKey: '3515982722',
+        ShortVersionContentNumberOfLines: 3,
+        LongVersionContentNumberOfLines: 7
+    };
 </script>
 <!-- Social App Ids End -->
 <link rel="stylesheet" type="text/css" href="/files/landmark/css/jquery.bxslider.css"></link>
