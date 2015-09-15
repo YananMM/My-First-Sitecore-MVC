@@ -100,6 +100,7 @@ namespace Landmark.Classes
         public static readonly String LandmarkMagazineFolder = "{3316BC5E-C1E1-4D24-AD86-4BC25D214996}";
         public static readonly String MagazineCategoryPage = "{46D8EC6C-7FE1-4568-8AEA-3E6DE52A20F4}";
         public static readonly String LandmarkMaganizePage = "{812D4614-C77D-4B0A-9729-D2FB3D830786}";
+        public static readonly string PageObject = "{E04426CD-2C71-48F8-A1CA-C507C2CAB178}";
 
 
         //item 
@@ -167,5 +168,6 @@ namespace Landmark.Classes
 
         public static readonly Item MagezineItem =
             Sitecore.Context.Database.GetItem("{8B359693-D433-4F44-98F8-9CEE5FA9B72F}");
+
     }
 }

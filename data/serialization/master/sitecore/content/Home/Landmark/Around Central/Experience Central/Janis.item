@@ -12,7 +12,7 @@ templatekey: T25 Page
 ----version----
 language: en
 version: 1
-revision: 3d63b462-83c6-424e-aa9c-1dfd40a05ebb
+revision: c0cd8d51-eb18-4935-92f9-0e0f8ce77d57
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -21,6 +21,13 @@ key: cover title
 content-length: 17
 
 Janis (HK$10,530)
+----field----
+field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
+name: Cover Image
+key: cover image
+content-length: 58
+
+<image mediaid="{8287AB21-2C4F-4B02-AC26-245B9214554B}" />
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3d63b462-83c6-424e-aa9c-1dfd40a05ebb
+c0cd8d51-eb18-4935-92f9-0e0f8ce77d57
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150910T091023:635774730232534447Z
+20150911T092027:635775600275178168Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

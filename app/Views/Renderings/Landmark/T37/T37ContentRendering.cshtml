@@ -35,13 +35,13 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="gd-magazine-info-text">
-                        <h3>@Html.Sitecore().Field("Story Name", stories.First())</h3>
+                        <h3>@Html.Sitecore().Field("Article Headline", stories.First())</h3>
                         @{
-                DateField storyDate = stories.First().Fields["Story Date"];
+                DateField storyDate = stories.First().Fields["Article Date"];
                 var date = LandmarkHelper.ToValidDateTime(storyDate);
                         }
                         <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
-                        <p>@Html.Sitecore().Field("Story Content", stories.First())</p>
+                        <p>@Html.Sitecore().Field("Article Intro", stories.First())</p>
                     </div>
                 </div>
             }
