@@ -31,7 +31,7 @@
             @if (stories.Count() != 0)
             {
                 <div class="col-sm-6">
-                    <img data-src="@Html.Sitecore().ImageFieldSrc("Callout Image", stories.First())">
+                    <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", stories.First())">
                 </div>
                 <div class="col-sm-6">
                     <div class="gd-magazine-info-text">
@@ -48,8 +48,6 @@
         </div>
     </div>
     @{
-        if (string.IsNullOrEmpty(Request["page"]) || Convert.ToInt32(Request["page"]) == 1)
-        {
             var storyList = stories.GetRange(1, stories.Count - 1).ToList();
             if (storyList.Count >= 3)
             {
@@ -60,12 +58,11 @@
             {
                 list1 = storyList;
             }
-            <h2>@storyList.Count</h2>
-        }
+            <h1>@storyList.Count</h1>
     }
+    <h2>@stories.Count</h2>
     <h2>@list1.Count</h2>
     <h2>@list2.Count</h2>
-    <h2>@stories.Count</h2>
     <div class="gd-promotion-box-area">
         <div class="row">
             @if (list1.Count != 0)
@@ -74,14 +71,14 @@
                 {
                     <div class="col-sm-4">
                         <div class="gd-promotion-box">
-                            <img data-src="@Html.Sitecore().ImageFieldSrc("Callout Image", item)">
-                            <h4><a href="#">@Html.Sitecore().Field("Story Name", item)</a></h4>
+                            <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", item)">
+                            <h4><a href="#">@Html.Sitecore().Field("Article Headline", item)</a></h4>
                             @{
-                    DateField itemDate = item.Fields["Story Date"];
+                    DateField itemDate = item.Fields["Article Date"];
                     var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
                             }
                             <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
-                            <p>@Html.Sitecore().Field("Story Content", item)</p>
+                            <p>@Html.Sitecore().Field("Article Intro", item)</p>
                         </div>
                     </div>
                 }
@@ -94,14 +91,14 @@
                 {
                     <div class="col-sm-4">
                         <div class="gd-promotion-box">
-                            <img data-src="@Html.Sitecore().ImageFieldSrc("Callout Image", item)">
-                            <h4><a href="#">@Html.Sitecore().Field("Story Name", item)</a></h4>
+                            <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", item)">
+                            <h4><a href="#">@Html.Sitecore().Field("Article Headline", item)</a></h4>
                             @{
-                    DateField itemDate = item.Fields["Story Date"];
+                    DateField itemDate = item.Fields["Article Date"];
                     var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
                             }
                             <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
-                            <p>@Html.Sitecore().Field("Story Content", item)</p>
+                            <p>@Html.Sitecore().Field("Article Intro", item)</p>
                         </div>
                     </div>
                 }

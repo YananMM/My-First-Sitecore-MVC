@@ -27,7 +27,7 @@ namespace Landmark.Helper
     /// </summary>
     public class MagezineHelper
     {
-        private int _pageSize = 1;
+        private int _pageSize = 6;
 
         /// <summary>
         /// Gets all maganize categories.
@@ -64,7 +64,7 @@ namespace Landmark.Helper
             {
                 stories =
                     allstories.Where(p => p.Fields["Magazine Category"].ToString().Contains(type))
-                        .OrderByDescending(p => p.Fields["Story Date"].ToString())
+                        .OrderByDescending(p => p.Fields["Article Date"].ToString())
                         .ToList();
                 return stories;
             }
@@ -106,7 +106,7 @@ namespace Landmark.Helper
 
             if (allStories != null && allStories.Count != 0)
             {
-                if (page == 1 || string.IsNullOrEmpty(page.ToString()))
+                if (page == 1)
                 {
                     _pageSize = 7;
                 }
