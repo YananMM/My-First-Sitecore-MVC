@@ -15,10 +15,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.UI.WebControls;
 using Landmark.Classes;
 using Landmark.Models;
 using Sitecore.Collections;
 using Sitecore.Data.Items;
+using Sitecore.Data.Fields;
 
 namespace Landmark.Helper
 {
@@ -27,6 +29,9 @@ namespace Landmark.Helper
     /// </summary>
     public class MagezineHelper
     {
+        /// <summary>
+        /// The _page size
+        /// </summary>
         private int _pageSize = 6;
 
         /// <summary>
@@ -117,5 +122,23 @@ namespace Landmark.Helper
             return stories;
         }
 
+        /// <summary>
+        /// Gets the story setting.
+        /// </summary>
+        /// <param name="item">The item.</param>
+        /// <returns>StorySetting.</returns>
+        public StorySetting GetStorySetting(Item item)
+        {
+            CheckboxField a = item.Fields["Slider On Top but not Left"];
+            CheckboxField b = item.Fields["Slider Fill the Screen"];
+            CheckboxField c = item.Fields["Show Big Cover not Small Cover"];
+            StorySetting setting = new StorySetting
+            {
+                SliderOnTopNotLeft = a.Checked,
+                SliderFilltheScreen = b.Checked,
+                ShowBigCoverNotSmallCover = c.Checked,
+            };
+            return setting;
+        }
     }
 }
