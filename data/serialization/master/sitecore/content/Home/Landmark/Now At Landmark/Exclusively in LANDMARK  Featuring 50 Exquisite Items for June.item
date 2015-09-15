@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 66e2e9c3-f0a3-46f4-b89d-cb910b45bbd7
+revision: 428a0746-afb0-4efb-91a1-ff5e7cbf0297
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -35,6 +35,29 @@ key: article headline
 content-length: 18
 
 Stella Performance
+----field----
+field: {C6A1042B-32D8-4691-9141-634124566798}
+name: Page Subtitle
+key: page subtitle
+content-length: 97
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+----field----
+field: {87411C38-6F62-4AAB-9119-465B82289CF5}
+name: Article Content
+key: article content
+content-length: 2606
+
+<p>This June, LANDMARK selects over 50 items exclusively available in Hong Kong in its 4 iconic connected buildings LANDMARK ATRIUM, LANDMARK ALEXANDRA, LANDMARK CHATER and LANDMARK PRINCE&rsquo;S, demonstrating LANDMARK&rsquo;s leading reputation as a cosmopolitan destination for leading luxury brands, unique finds, fine dining which culminates into a superlative lifestyle experience under one roof.</p>
+<p>Reminiscent of a European shopping experience with luxury flagship stores lined throughout the street, LANDMARK is home to around 30 flagship stores of top-tier luxury brands and over 50 shops totally unique to the city, as part of its 200 plus retailer portfolio of fashion, watches, accessories, homeware and more. Highlights of this month&rsquo;s LANDMARK Exclusive Items include FENDI&rsquo;s iconic Peekaboo bag presented in a multi-coloured orthogonal graphic, ETRO&rsquo;s summery Paisley Patterned Hooded Jacket, and a much sought after scent from French perfumer Fr&eacute;d&eacute;ric Malle, Ind&eacute;l&eacute;bile, available at Joyce Grooming. These and a wide array of luxury and fashion items can only be found at LANDMARK. To receive our latest news and register for upcoming events, please sign up for LANDMARK eNewsletter at www.landmark.hk; or follow us on Facebook at www.facebook.com/Landmark.hk; Instagram channel at www.instagram.com/landmarkhk or search &ldquo;landmarkhk&rdquo;; hashtags at #LANDMARKHK and #LANDMARKMEN; Sina Weibo account at www.weibo.com/landmarkhk.Reminiscent of a European shopping experience with luxury flagship stores lined throughout the street, LANDMARK is home to around 30 flagship stores of top-tier luxury brands and over 50 shops totally unique to the city, as part of its 200 plus retailer portfolio of fashion, watches, accessories, homeware and more. Highlights of this month&rsquo;s LANDMARK Exclusive Items include FENDI&rsquo;s iconic Peekaboo bag presented in a multi-coloured orthogonal graphic, ETRO&rsquo;s summery Paisley Patterned Hooded Jacket, and a much sought after scent from French perfumer Fr&eacute;d&eacute;ric Malle, Ind&eacute;l&eacute;bile, available at Joyce Grooming. These and a wide array of luxury and fashion items can only be found at LANDMARK. To receive our latest news and register for upcoming events, please sign up for LANDMARK eNewsletter at www.landmark.hk; or follow us on Facebook at www.facebook.com/Landmark.hk; Instagram channel at www.instagram.com/landmarkhk or search &ldquo;landmarkhk&rdquo;; hashtags at #LANDMARKHK and #LANDMARKMEN; Sina Weibo account at www.weibo.com/landmarkhk.</p>
+<br>
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 5
+
+yanan
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
@@ -58,12 +81,30 @@ content-length: 58
 
 <image mediaid="{C8350D8D-2422-4F5C-BD8E-75E29FC3E0FD}" />
 ----field----
+field: {4FAB9882-DABD-43FC-89B8-88CB318870D9}
+name: Bullets and Tables
+key: bullets and tables
+content-length: 267
+
+<ul>
+    <li>Roger Chan puts his stamp on his outfit</li>
+    <li>By sporting his own light-coloured, three-button stripped suit. Giving off a cool vibe with total &eacute;lan,</li>
+    <li>The side vents on this suit gives him a trim silhouette which also</li>
+</ul>
+----field----
 field: {B966F61E-9F08-4674-AC01-EE1064020145}
 name: Article Date
 key: article date
 content-length: 16
 
 20150922T160000Z
+----field----
+field: {52AFC268-9393-4DCD-BD87-3DF394BAD4B7}
+name: Type
+key: type
+content-length: 38
+
+{0799CC76-D623-49FD-8025-8E9358A13B62}
 ----field----
 field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
 name: Article Type
@@ -121,13 +162,6 @@ content-length: 109
 
 <link linktype="external" url="http://www.lightweight.com" anchor="" title="www.lightweight.com" target="" />
 ----field----
-field: {C6A1042B-32D8-4691-9141-634124566798}
-name: Page Subtitle
-key: page subtitle
-content-length: 97
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -142,39 +176,12 @@ content-length: 1
 
 1
 ----field----
-field: {87411C38-6F62-4AAB-9119-465B82289CF5}
-name: Page Content
-key: page content
-content-length: 2606
-
-<p>This June, LANDMARK selects over 50 items exclusively available in Hong Kong in its 4 iconic connected buildings LANDMARK ATRIUM, LANDMARK ALEXANDRA, LANDMARK CHATER and LANDMARK PRINCE&rsquo;S, demonstrating LANDMARK&rsquo;s leading reputation as a cosmopolitan destination for leading luxury brands, unique finds, fine dining which culminates into a superlative lifestyle experience under one roof.</p>
-<p>Reminiscent of a European shopping experience with luxury flagship stores lined throughout the street, LANDMARK is home to around 30 flagship stores of top-tier luxury brands and over 50 shops totally unique to the city, as part of its 200 plus retailer portfolio of fashion, watches, accessories, homeware and more. Highlights of this month&rsquo;s LANDMARK Exclusive Items include FENDI&rsquo;s iconic Peekaboo bag presented in a multi-coloured orthogonal graphic, ETRO&rsquo;s summery Paisley Patterned Hooded Jacket, and a much sought after scent from French perfumer Fr&eacute;d&eacute;ric Malle, Ind&eacute;l&eacute;bile, available at Joyce Grooming. These and a wide array of luxury and fashion items can only be found at LANDMARK. To receive our latest news and register for upcoming events, please sign up for LANDMARK eNewsletter at www.landmark.hk; or follow us on Facebook at www.facebook.com/Landmark.hk; Instagram channel at www.instagram.com/landmarkhk or search &ldquo;landmarkhk&rdquo;; hashtags at #LANDMARKHK and #LANDMARKMEN; Sina Weibo account at www.weibo.com/landmarkhk.Reminiscent of a European shopping experience with luxury flagship stores lined throughout the street, LANDMARK is home to around 30 flagship stores of top-tier luxury brands and over 50 shops totally unique to the city, as part of its 200 plus retailer portfolio of fashion, watches, accessories, homeware and more. Highlights of this month&rsquo;s LANDMARK Exclusive Items include FENDI&rsquo;s iconic Peekaboo bag presented in a multi-coloured orthogonal graphic, ETRO&rsquo;s summery Paisley Patterned Hooded Jacket, and a much sought after scent from French perfumer Fr&eacute;d&eacute;ric Malle, Ind&eacute;l&eacute;bile, available at Joyce Grooming. These and a wide array of luxury and fashion items can only be found at LANDMARK. To receive our latest news and register for upcoming events, please sign up for LANDMARK eNewsletter at www.landmark.hk; or follow us on Facebook at www.facebook.com/Landmark.hk; Instagram channel at www.instagram.com/landmarkhk or search &ldquo;landmarkhk&rdquo;; hashtags at #LANDMARKHK and #LANDMARKMEN; Sina Weibo account at www.weibo.com/landmarkhk.</p>
-<br>
-----field----
 field: {D238DB6D-29CE-4830-9D41-6A022AFB22A6}
 name: Search Filter Type
 key: search filter type
 content-length: 38
 
 {C746C9FE-DBBF-418F-BD38-467184F06FC4}
-----field----
-field: {4FAB9882-DABD-43FC-89B8-88CB318870D9}
-name: Bullets and Tables
-key: bullets and tables
-content-length: 267
-
-<ul>
-    <li>Roger Chan puts his stamp on his outfit</li>
-    <li>By sporting his own light-coloured, three-button stripped suit. Giving off a cool vibe with total &eacute;lan,</li>
-    <li>The side vents on this suit gives him a trim silhouette which also</li>
-</ul>
-----field----
-field: {52AFC268-9393-4DCD-BD87-3DF394BAD4B7}
-name: Type
-key: type
-content-length: 38
-
-{0799CC76-D623-49FD-8025-8E9358A13B62}
 ----field----
 field: {7ABD92FE-50B8-47CB-8AAC-938A1FB099A2}
 name: Tags
@@ -216,14 +223,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-66e2e9c3-f0a3-46f4-b89d-cb910b45bbd7
+428a0746-afb0-4efb-91a1-ff5e7cbf0297
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150914T131956Z
+20150914T143535Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

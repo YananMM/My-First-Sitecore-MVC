@@ -1,28 +1,14 @@
 ----item----
 version: 1
-id: {52AFC268-9393-4DCD-BD87-3DF394BAD4B7}
+id: {2B2F8052-1968-4A25-A4CA-DF6A92A74DF8}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T4 Page/Page Data/Type
-parent: {B7877A12-1F8A-4D8F-A76B-C7190F78FF16}
-name: Type
+path: /sitecore/templates/User Defined/Landmark/Page/T9 Page/Email Config Data
+parent: {CA9441FE-F422-4759-91CC-E1B871D976E0}
+name: Email Config Data
 master: {00000000-0000-0000-0000-000000000000}
-template: {455A3E98-A627-4B40-8035-E683A0331AC7}
-templatekey: Template field
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
 
-----field----
-field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
-name: Type
-key: type
-content-length: 8
-
-Droptree
-----field----
-field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
-name: Source
-key: source
-content-length: 46
-
-/sitecore/content/Global/Landmark/Article Type
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -33,7 +19,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: a6b96c0b-cf5e-4f61-bab6-a78314d631cf
+revision: b8f3ed87-ad72-404b-8de1-439a69d68671
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,21 +27,28 @@ name: __Created
 key: __created
 content-length: 16
 
-20150826T030058Z
+20150912T134846Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-a6b96c0b-cf5e-4f61-bab6-a78314d631cf
+b8f3ed87-ad72-404b-8de1-439a69d68671
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150827T123019Z
+20150912T134902Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

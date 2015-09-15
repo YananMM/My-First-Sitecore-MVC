@@ -1,4 +1,6 @@
 ﻿@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Mvc.Extensions
 @model RenderingModel
 @{
     InspirationHelper inspirationHelper = new InspirationHelper();
@@ -12,7 +14,7 @@
     </a>
     <div class="menbox-text">
     <a href="#" class="menbox-title"><h3>@Html.Sitecore().Field("Article Headline", exclusiveItem)</h3></a>
-    <h4>EXCLUSIVES</h4>
+    <h4>@Html.Sitecore().Field("Value",((ReferenceField)exclusiveItem.Fields["Article Type"]).TargetItem).ToString().ToUpper()</h4>
     <p>@Html.Sitecore().Field("Article Headline", exclusiveItem) (@Html.Sitecore().Field("Product Price", exclusiveItem))</p>
     </div>
 </div>

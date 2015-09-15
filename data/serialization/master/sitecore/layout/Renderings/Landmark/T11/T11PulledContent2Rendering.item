@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {21E32A3C-83E4-4B37-A57E-75D855DA925B}
+id: {315E8875-ADB6-459B-BD8C-69278984B890}
 database: master
-path: /sitecore/layout/Renderings/Landmark/T11/T11PageTitle
+path: /sitecore/layout/Renderings/Landmark/T11/T11PulledContent2Rendering
 parent: {634A9E0E-06A5-4814-A262-A193500B122F}
-name: T11PageTitle
+name: T11PulledContent2Rendering
 master: {00000000-0000-0000-0000-000000000000}
 template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
 templatekey: View rendering
@@ -13,20 +13,20 @@ templatekey: View rendering
 field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
 name: Path
 key: path
-content-length: 50
+content-length: 64
 
-/Views/Renderings/Landmark/T11/T11PageTitle.cshtml
+/Views/Renderings/Landmark/T11/T11PulledContent2Rendering.cshtml
 ----field----
 field: {F4069D71-74D7-4422-941D-54B517CF3001}
 name: Placeholder
 key: placeholder
-content-length: 0
+content-length: 18
 
-
+t11-pulled-content
 ----version----
 language: en
 version: 1
-revision: 2f5d3d01-0894-4794-836e-2362b0471b1a
+revision: 262fa201-d3d8-4269-a8ce-1b8d92b01c3a
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150722T075013Z
+20150915T132646Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-2f5d3d01-0894-4794-836e-2362b0471b1a
+262fa201-d3d8-4269-a8ce-1b8d92b01c3a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150729T004701Z
+20150915T132813Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
