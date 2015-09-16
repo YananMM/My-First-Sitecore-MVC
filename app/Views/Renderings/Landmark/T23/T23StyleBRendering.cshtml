@@ -1,5 +1,4 @@
-﻿
-@using Landmark.Classes
+﻿@using Landmark.Classes
 @using Landmark.Helper
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
@@ -32,52 +31,17 @@
             @Html.Sitecore().Field("Article Intro")
         </p>
         <div class="row">
-            <div class="col-sm-4"><img data-src="../files/landmark/images/story/story2-img-01.jpg"></div>
-            <div class="col-sm-4"><img data-src="../files/landmark/images/story/story2-img-02.jpg"></div>
+            <div class="col-sm-4"><img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image 1", currentItem)"></div>
+            <div class="col-sm-4"><img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image 1", currentItem)"></div>
         </div>
         <div class="little-list">
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-                    nonummy nibh euismod tincidunt ut laoreet dolore.
-                </li>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                <li> consectetuer adipiscing elit, sed diam nonummy nibh euismod.</li>
-            </ul>
+            @Html.Sitecore().Field("Cover List Description")
         </div>
 
         <dl class="gd-content-details-tags">
-            <dt> <span class="icomoon-price-tag"></span> TAGS:</dt>
+            <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
             <dd><a href="#">WOMEN</a>,<a href="#">FASHION</a>,<a href="#">JEWELRY</a></dd>
         </dl>
     </div>
-
-    <div class="gd-relate">
-        <div class="row">
-            <div class="col-sm-8">
-                <h3>RELATED STORIES</h3>
-                <div class="row">
-                    <div class="col-sm-6 clearfix">
-                        <img data-src="../files/landmark/images/story/story-related-01.jpg"><h5>EXLUSIVES</h5>
-                        <h4><a href="">The Thinking Man’s Guide to Style with Tom Stubbs</a></h4>
-                    </div>
-                    <div class="col-sm-6 clearfix">
-                        <img data-src="../files/landmark/images/story/story-related-02.jpg">
-                        <h5>EDITOR'S PICKS</h5>
-                        <h4><a href="">#Fashion Foreword with Tina Leung</a></h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="gd-relate-brand">
-                    <h3>RELATED BRANDS</h3>
-                    <h4><a href="">Alexander McQueen</a></h4>
-                    <h4><a href="">Balenciagav</a></h4>
-                    <h4><a href="">Burberry</a></h4>
-                    <h4><a href="">J.Lindeberg</a></h4>
-                    <h4><a href="">Miu Miu</a></h4>
-                </div>
-            </div>
-        </div>
-    </div>
+    @Html.Sitecore().Placeholder("t23-related")
 </div>

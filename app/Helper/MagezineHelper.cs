@@ -140,5 +140,14 @@ namespace Landmark.Helper
             };
             return setting;
         }
+
+        public List<Item> GetRelatedBrands()
+        {
+            List<Item> brands = new ItemList();
+
+
+
+            return brands;
+        } 
     }
 }

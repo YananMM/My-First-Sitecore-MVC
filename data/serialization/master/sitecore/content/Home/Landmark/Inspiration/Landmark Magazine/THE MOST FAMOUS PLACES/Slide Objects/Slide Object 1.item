@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {3E5F08FE-94F3-482C-8623-72A203088ED1}
+database: master
+path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/THE MOST FAMOUS PLACES/Slide Objects/Slide Object 1
+parent: {F0C9E6CF-87D1-4FC2-AA43-0740E07DD356}
+name: Slide Object 1
+master: {00000000-0000-0000-0000-000000000000}
+template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
+templatekey: Slide Object
+
+----version----
+language: en
+version: 1
+revision: 953bb06e-9140-4800-b5ab-01b69ce63995
+
+----field----
+field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{92F36633-17B4-4280-AF1C-8C2251C5981F}" />
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150909T082504Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+953bb06e-9140-4800-b5ab-01b69ce63995
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150915T091750:635779054707056848Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

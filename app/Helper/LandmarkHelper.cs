@@ -188,7 +188,6 @@ namespace Landmark.Helper
             return slidesItems;
         }
 
-
         public static String FileFieldSrc(string fieldName, Item item)
         {
             string fileURL = string.Empty;
@@ -283,7 +282,6 @@ namespace Landmark.Helper
             }
             return items;
         }
-
 
         public static List<TagsTree> GetTagsTree()
         {

@@ -12,7 +12,7 @@ templatekey: T23 Page
 ----version----
 language: en
 version: 1
-revision: e0ed723b-55c9-45cc-ad2d-7f64438db040
+revision: f22872eb-f418-4fe1-969f-4359469f3fd9
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -21,6 +21,13 @@ key: article headline
 content-length: 7
 
 Story 1
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 50
+
+TEXT BY SUSAN HAYES  | PHOTOGRAPHY BY ANDREW SMITH
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
@@ -64,6 +71,20 @@ content-length: 7
 
 Story 1
 ----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Slider on Right - style A
+key: slider on right - style a
+content-length: 1
+
+1
+----field----
+field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
+name: Tags
+key: tags
+content-length: 233
+
+{D78864A1-2B7D-466E-9889-10D52DE01CB5}|{636EF06F-E49A-47A6-88BB-B634CED946B7}|{1EE65BD4-D85F-49B6-940E-163147C042F1}|{8CBE1EA5-CE5A-4D15-AEFD-F65BC164C06B}|{42FF35B6-477A-417F-84BA-B11860F3A311}|{63A24BBD-6863-4085-846D-54FAB9C86B80}
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -76,14 +97,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e0ed723b-55c9-45cc-ad2d-7f64438db040
+f22872eb-f418-4fe1-969f-4359469f3fd9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150915T071139:635778978996056427Z
+20150916T080739:635779876596118505Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
