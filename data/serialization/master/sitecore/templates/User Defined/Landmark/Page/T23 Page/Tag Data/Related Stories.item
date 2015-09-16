@@ -1,25 +1,39 @@
 ----item----
 version: 1
-id: {632A70EC-7721-4EC6-9ABD-3838CC6E6F06}
+id: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T23 Page/Setting Data
-parent: {2EE73BEB-F8DA-4F35-BB46-C1B0B8AC3945}
-name: Setting Data
+path: /sitecore/templates/User Defined/Landmark/Page/T23 Page/Tag Data/Related Stories
+parent: {4FA17F7F-6D6B-4A68-9D11-F1F0F3DD3A74}
+name: Related Stories
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {455A3E98-A627-4B40-8035-E683A0331AC7}
+templatekey: Template field
 
+----field----
+field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
+name: Type
+key: type
+content-length: 8
+
+Treelist
+----field----
+field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
+name: Source
+key: source
+content-length: 38
+
+/sitecore/content/Global/Landmark/Tags
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-150
+100
 ----version----
 language: en
 version: 1
-revision: f1d8876f-7463-4efb-81c4-84c2f5fb0f96
+revision: fd07229f-c73e-4a78-b067-d035b09ad207
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -27,28 +41,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150909T112447Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
+20150909T113530Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-f1d8876f-7463-4efb-81c4-84c2f5fb0f96
+fd07229f-c73e-4a78-b067-d035b09ad207
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150916T012255:635779633750566346Z
+20150916T012255:635779633758266786Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
