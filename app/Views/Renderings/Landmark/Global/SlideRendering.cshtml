@@ -1,12 +1,13 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Landmark.Models
 @using Sitecore.Data.Fields
 @model RenderingModel
 @{
-    var slides = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.SlideObjectTemplate);
-
+    // var slides = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.SlideObjectTemplate);
+    var slideFolder = Sitecore.Context.Item.Children.SingleOrDefault(p => p.TemplateID.ToString() == "{EEEB8813-EBD2-415E-B4F0-72B52DDEF18E}");
+    var slides = slideFolder.Children.ToList();
     MagezineHelper helper = new MagezineHelper();
-    var setting = helper.GetStorySetting(Sitecore.Context.Item);
 }
 <!-- Indicators -->
 <ol class="carousel-indicators">
@@ -14,7 +15,7 @@
     {
         <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{if (i == 0) { <text>
             class="active"
-            </text>                   }}></li>
+            </text>                        }}></li>
     }
 </ol>
 <!-- Wrapper for slides -->
@@ -25,22 +26,27 @@
         {
             <div @{ if (j == 0) { <text>
                  class="item active"
-                 </text>               } else { <text>
+                 </text>                    } else { <text>
                  class="item"
-                 </text>               } }>
+                 </text>                    } }>
                 @{
             j++;
                 }
                 <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Slide Image", item)"></div>
-                @if (setting != null)
-                {
-                    <p @if (setting.StyleCD) { <text>
-                       class="gd-des-below text-center"
-                       </text>  } else { <text>
-                       class="gd-des-below"
-                       </text>  }>
-                        @Html.Sitecore().Field("Slide Title", item)
-                    </p>
+                @{
+            var currentItem = Sitecore.Context.Item;
+            StorySetting setting = new StorySetting();
+            if (currentItem.TemplateID.ToString() == ItemGuids.T23PageTemplate)
+            {
+                setting = helper.GetStorySetting(Sitecore.Context.Item);
+                <p @if (setting.StyleCD) { <text>
+                   class="gd-des-below text-center"
+                   </text>      } else { <text>
+                   class="gd-des-below"
+                   </text>      }>
+                    @Html.Sitecore().Field("Slide Title", item)
+                </p>
+            }
                 }
             </div>
         }
