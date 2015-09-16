@@ -1,47 +1,47 @@
 ----item----
 version: 1
-id: {F3C75FDD-5E0C-4C01-B590-369330D4F4AB}
+id: {6D3037FD-A4F4-464A-8BCE-30608F5CC64E}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/T1 Slide Variation Object/T1 Slide Variation Data
-parent: {A35B8BED-8B3F-4D30-8609-C81B9D925C0B}
-name: T1 Slide Variation Data
+path: /sitecore/content/Global/Landmark/Article Type/Magzine
+parent: {2F7748B7-07ED-413F-8B92-382DCE56A8C9}
+name: Magzine
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}
+templatekey: Text Object
 
 ----version----
 language: en
 version: 1
-revision: 76027a90-3cfd-4488-ac14-314a08341539
+revision: f0df9710-fa9a-4717-b8d7-8a224ec01332
 
+----field----
+field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
+name: Value
+key: value
+content-length: 7
+
+Magzine
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150721T073206Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
+20150916T031336Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-76027a90-3cfd-4488-ac14-314a08341539
+f0df9710-fa9a-4717-b8d7-8a224ec01332
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150916T030732Z
+20150916T031336Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

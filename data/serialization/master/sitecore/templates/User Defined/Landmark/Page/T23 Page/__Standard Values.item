@@ -19,8 +19,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: d1d157aa-7164-4307-9034-b3cc07fa587b
+revision: 9d19665f-f81d-4d2c-a080-7096fc5ca095
 
+----field----
+field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
+name: Article Type
+key: article type
+content-length: 38
+
+{6D3037FD-A4F4-464A-8BCE-30608F5CC64E}
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d1d157aa-7164-4307-9034-b3cc07fa587b
+9d19665f-f81d-4d2c-a080-7096fc5ca095
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150909T071001:635773794019256110Z
+20150916T031429Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

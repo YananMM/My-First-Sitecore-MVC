@@ -1,6 +1,8 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
 @using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@using Sitecore.Links
 @model RenderingModel
 @{
     var slideList = Model.Item.Children.ToList();
@@ -9,23 +11,35 @@
     <ul class="slider">
         @foreach (var item in slideList)
         {
-            
-            <li>
+            ReferenceField referenceField = (ReferenceField) item.Fields["Reference Item"];
+            ReferenceField sublineVersionsField = (ReferenceField) item.Fields["Sub Version Slide Style"];
+            if (referenceField != null && referenceField.TargetItem != null)
+            {
+                <li>
                 <div class="@LandmarkHelper.GetSlideClass(item) clearfix">
-                    <div class="panel-img" data-bg="@Html.Sitecore().ImageFieldSrc("Slide Image",item)"></div>
+                    <div class="panel-img" data-bg="@Html.Sitecore().ImageFieldSrc("Article Slider Image",referenceField.TargetItem)"></div>
                     <div class="panel-main">
                         <div class="panel-text">
                             <hgroup class="clearfix">
-                                @Html.Raw(Html.Sitecore().Field("Slide Title",item))
+                                @if (sublineVersionsField.Value.Equals(ItemGuids.TwoNumbersTwoCaptionsTextLink))
+                                {
+                                    @Html.Sitecore().Field("Article Headline 2", referenceField.TargetItem)
+                                }
+                                else
+                                {
+                                    @Html.Sitecore().Field("Article Headline", referenceField.TargetItem)
+                                }
                             </hgroup>
                             <div class="panel-content">
-                                @Html.Sitecore().Field("Slide Content",item)
+                                @Html.Sitecore().Field("Article Sub Headline",referenceField.TargetItem)
                             </div>
-                            @Html.Sitecore().Field("Slide Button Link", item, new {text = item["Slide Button Text"], @class = "btn btn-default"})
+                            <a class="btn btn-default" href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value",ItemGuids.DiscoverLandmarkStoriesItem)</a>
                         </div>
                     </div>
                 </div>
             </li>
+            }
+            
         }
     </ul>
 

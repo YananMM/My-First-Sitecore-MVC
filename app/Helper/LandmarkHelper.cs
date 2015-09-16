@@ -327,5 +327,22 @@ namespace Landmark.Helper
             return mailMessage;
         }
 
+        public static string GetCallOutImage(Item item)
+        {
+            string imageURL = string.Empty;
+            Sitecore.Data.Fields.ImageField imageField = item.Fields["Article Slider Image"];
+            if (imageField != null && imageField.MediaItem != null)
+            {
+                Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(imageField.MediaItem);
+                imageURL = Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
+            }
+            else
+            {
+                Item slider = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.SlideObjectTemplate).FirstOrDefault();
+                imageURL = FileFieldSrc("Slide Image",slider);
+            }
+            return imageURL;
+        }
+
     }
 }
