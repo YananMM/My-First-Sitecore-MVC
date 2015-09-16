@@ -129,14 +129,14 @@ namespace Landmark.Helper
         /// <returns>StorySetting.</returns>
         public StorySetting GetStorySetting(Item item)
         {
-            CheckboxField a = item.Fields["Slider On Top but not Left"];
-            CheckboxField b = item.Fields["Slider Fill the Screen"];
-            CheckboxField c = item.Fields["Show Big Cover not Small Cover"];
+            CheckboxField a = item.Fields["Slider on Right - style A"];
+            CheckboxField b = item.Fields["Slider on Top not Fill the screen - style B"];
+            CheckboxField c = item.Fields["Slider Fill the Screen - style C and D"];
             StorySetting setting = new StorySetting
             {
-                SliderOnTopNotLeft = a.Checked,
-                SliderFilltheScreen = b.Checked,
-                ShowBigCoverNotSmallCover = c.Checked,
+                StyleA = a.Checked,
+                StyleB = b.Checked,
+                StyleCD = c.Checked,
             };
             return setting;
         }

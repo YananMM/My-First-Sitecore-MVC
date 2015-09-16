@@ -740,6 +740,7 @@
     <Content Include="Views\Renderings\Landmark\T36\T36CategoryRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T37\T37ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T36\T36CategoryTypesRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T23\T23PageTitleRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\Global\AdInNavigationRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\Global\AdInNavigationInTwoColumnRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T1\T1Panel1Slide1Rendering.cshtml" />
@@ -756,6 +757,9 @@
     <Content Include="Views\Renderings\Landmark\T11\T11PulledContent1Rendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T11\T11PulledContent2Rendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T11\T11PulledContent3Rendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T23\T23StyleARendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T23\T23StyleBRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T23\T23StyleCDRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
