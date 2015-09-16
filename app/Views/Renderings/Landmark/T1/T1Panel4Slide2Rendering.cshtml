@@ -1,0 +1,20 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@model RenderingModel
+
+
+            <div class="panel-img-2" data-bg="@Html.Sitecore().ImageFieldSrc("Article Slider Image",Model.Item)"></div>
+            <div class="panel-main">
+                <div class="text-box-1 panel-text">
+                    <div class="text-box-area"></div>
+                    <hgroup class="clearfix">
+                        <h3>@Html.Sitecore().Field("Article Sub Headline", Model.Item)</h3>
+                        <h4>@Html.Sitecore().Field("Article Headline", Model.Item)</h4>
+                    </hgroup>
+                    <div class="panel-content">@Html.Sitecore().Field("Article Intro", Model.Item)</div>
+                    <a class="btn btn-default" href="@Sitecore.Links.LinkManager.GetItemUrl(Model.Item)">@Html.Sitecore().Field("Glossary Value",ItemGuids.DiscoverMoreItem)</a>
+                </div>
+                <a class="panel-link panel-text" href="#">SEE MORE ACCESSORIES<span class="icomoon-chevron-small-right"></span></a>
+            </div>
+            
+        

@@ -3,42 +3,8 @@
 
 <section class="panel-area">
     <div class="panel-7 clearfix">
-        <div class="panel-side1">
-            <div class="panel-img" data-bg="@Html.Sitecore().ImageFieldSrc("Panel Image",Model.Item)"></div>
-            <div class="panel-main">
-                <div class="panel-text text-box-1">
-                    <hgroup class="clearfix">
-                        <h3>@Html.Sitecore().Field("Panel Title")</h3>
-                        <h4>@Html.Sitecore().Field("Panel Sub Title")</h4>
-                    </hgroup>
-                    <div class="panel-content">@Html.Sitecore().Field("Panel Description")</div>
-                    @Html.Sitecore().Field("Panel Button Link", Model.Item, new { text = Html.Sitecore().Field("Panel Button Text"), @class = "btn btn-default" })
-                </div>
-                @Html.Sitecore().Field("Panel See More Link", Model.Item, new { text = Model.Item["Panel See More Text"] + "<span class='icomoon-chevron-small-right'></span>", @class = "panel-link panel-text" })
-            </div>
-        </div>
-        <div class="panel-side2 left">
-            <div class="panel-img" data-bg="@Html.Sitecore().ImageFieldSrc("Panel Image Bottom Left", Model.Item)"></div>
-            <div class="panel-main">
-                <div class="panel-text text-box-3">
-                    <hgroup class="clearfix">
-                        <h4>@Html.Sitecore().Field("Panel Sub Title Bottom Left")</h4>
-                        <h2>@Html.Sitecore().Field("Panel Title Bottom Left")</h2>
-                    </hgroup>
-                </div>
-            </div>
-        </div>
-
-        <div class="panel-side2">
-            <div class="panel-img" data-bg="@Html.Sitecore().ImageFieldSrc("Panel Image Bottom Right", Model.Item)"></div>
-            <div class="panel-main">
-                <div class="panel-text text-box-3">
-                    <hgroup class="clearfix">
-                        <h4>@Html.Sitecore().Field("Panel Sub Title Bottom Right")</h4>
-                        <h2>@Html.Sitecore().Field("Panel Title Bottom Right")</h2>
-                    </hgroup>
-                </div>
-            </div>
-        </div>
+       @Html.Sitecore().Placeholder("t1-panel3-slide1")
+        @Html.Sitecore().Placeholder("t1-panel3-slide2")
+        @Html.Sitecore().Placeholder("t1-panel3-slide3")
     </div>
 </section>

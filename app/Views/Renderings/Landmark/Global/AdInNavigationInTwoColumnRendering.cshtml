@@ -1,0 +1,21 @@
+﻿@using Landmark.Classes
+@using Sitecore.Links
+@model RenderingModel
+@{
+    var referenceItem = Model.Item;
+}
+@if (referenceItem != null)
+{
+    <div class="col-sm-4 col-sm-offset-1">
+        <div class="mega-product-area2 pull-right">
+            @Html.Sitecore().Field("Reference Image", referenceItem)
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="mega-product-area2 pull-right">
+            <h3>@Html.Sitecore().Field("Reference Title", referenceItem)</h3>
+            <p>@Html.Sitecore().Field("Reference Content", referenceItem)</p>
+            <a href="@LinkManager.GetItemUrl(referenceItem)">@Html.Sitecore().Field("Glossary Value", ItemGuids.LearnMoreItem) <span class="sprite-menu-r"></span></a>
+        </div>
+    </div>
+}

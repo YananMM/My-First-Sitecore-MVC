@@ -1,0 +1,14 @@
+﻿@using Landmark.Helper
+@model RenderingModel
+
+<div class="panel-side2 left">
+            <div class="panel-img" data-bg="@Html.Sitecore().ImageFieldSrc("Article Slider Image", Model.Item)"></div>
+            <div class="panel-main">
+                <div class="panel-text text-box-3">
+                    <hgroup class="clearfix">
+                        <h4>@Html.Sitecore().Field("Article Sub Headline",Model.Item)</h4>
+                        <h2>@Html.Sitecore().Field("Article Headline",Model.Item)</h2>
+                    </hgroup>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,19 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@using Landmark.Models
+@model RenderingModel
+@{
+    var currentItem = Sitecore.Context.Item;
+    var parent = currentItem.Parent;
+}
+<div class="gd-pagetitle-heading">
+    <h2>@parent["Page Title"].ToUpper()</h2>
+</div>
+@Html.Sitecore().Rendering(ItemGuids.T36CategoryTypeViewGuid, new
+            {
+                Cacheable = false,
+                CacheKey = "category-type",
+                Cache_VaryByData = true,
+            })

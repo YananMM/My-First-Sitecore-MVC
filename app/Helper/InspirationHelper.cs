@@ -16,12 +16,13 @@ namespace Landmark.Helper
         private Database _webDb = Factory.GetDatabase("web");
         public List<Item> GetMonthlyExclusives(string category=null,string brand=null)
         {
+            Item exclusiveItem = Sitecore.Context.Database.GetItem(ItemGuids.MonthlyExclusivePage);
             List<Item> articles = new List<Item>();
             if (category == null)
-                articles = Sitecore.Context.Item.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page).ToList();
+                articles = exclusiveItem.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page).ToList();
             else
             {
-                articles =  Sitecore.Context.Item.Children.ToList().Where(item=>item.TemplateID.ToString() == ItemGuids.T27Page 
+                articles = exclusiveItem.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page 
                 && ((MultilistField)item.Fields["Tags"]).TargetIDs.Contains(new ID(category))).ToList();
             }
             if(brand!=null)

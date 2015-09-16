@@ -20,14 +20,35 @@ content-length: 38
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
-content-length: 556
+content-length: 570
 
-<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{F8D2E7E4-68AF-405D-8356-752922EACF54}"><r id="{B8F13621-BBCA-43FA-9E29-E9FA95A106C0}" ph="" uid="{798F4534-8576-4292-9BB8-C2DD3FBF6EA2}" /><r id="{53B49FDF-8B9A-4EDB-AA98-F3431087248C}" ph="" uid="{F313763B-1E0D-4B6F-A552-4CA234B5BD79}" /><r id="{108DDF49-EFEF-45A4-A59D-4423A42073FF}" ph="" uid="{922D7862-9C10-4365-9267-742BC65879F7}" /><r id="{62C04FAA-F22E-40AA-81A2-08164556AF18}" ph="t4-slides" uid="{199C526F-8F11-488A-8E72-7151DB2D0410}" /></d></r>
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{F8D2E7E4-68AF-405D-8356-752922EACF54}"><r id="{B8F13621-BBCA-43FA-9E29-E9FA95A106C0}" ph="" uid="{798F4534-8576-4292-9BB8-C2DD3FBF6EA2}" /><r id="{53B49FDF-8B9A-4EDB-AA98-F3431087248C}" ph="" uid="{F313763B-1E0D-4B6F-A552-4CA234B5BD79}" /><r id="{05FD298F-42C9-4675-84B5-D82049EB0943}" ph="" uid="{922D7862-9C10-4365-9267-742BC65879F7}" /><r ds="" id="{62C04FAA-F22E-40AA-81A2-08164556AF18}" par="" ph="t27-slides" uid="{199C526F-8F11-488A-8E72-7151DB2D0410}" /></d></r>
 ----version----
 language: en
 version: 1
-revision: 5826ce26-5e63-4012-bfc8-f1340a3326d3
+revision: 52efa706-7ddb-4a5e-83c2-c829fb73c318
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 5
+
+$name
+----field----
+field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
+name: Article Type
+key: article type
+content-length: 38
+
+{B9138486-B144-4276-A0EA-098B0EB79541}
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 23
+
+EXCLUSIVELY IN LANDMARK
 ----field----
 field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
 name: Is Shown In Navigation
@@ -50,20 +71,6 @@ content-length: 38
 
 {D0F270A3-A25B-4CCB-ACC2-D8434D44B38F}
 ----field----
-field: {A29CB816-5F89-41F0-B447-4EA89D1748C0}
-name: Type
-key: type
-content-length: 38
-
-{570AE6CA-A88C-4319-BE72-F304687CD3F8}
-----field----
-field: {9CD70150-2F78-4321-9733-D645791D4D33}
-name: Product Name
-key: product name
-content-length: 5
-
-$name
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -76,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5826ce26-5e63-4012-bfc8-f1340a3326d3
+52efa706-7ddb-4a5e-83c2-c829fb73c318
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150908T045828Z
+20150915T140858Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

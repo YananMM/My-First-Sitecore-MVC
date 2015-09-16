@@ -1,0 +1,21 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Links
+@model RenderingModel
+@{
+    var style = RenderingContext.CurrentOrNull.Rendering.Parameters["style"];
+    string styleclass = style == "styleA" ? "menbox-3" : "menbox-4";
+}
+<div class="col-lg-4 col-md-4 col-sm-4 menbox ">
+<div class="menbox-4">
+    <a href="@LinkManager.GetItemUrl(Model.Item)" class="menbox-img">
+            <div class="menbox-img-mask"></div>
+            <img data-src="@Html.Sitecore().ImageFieldSrc("Article Slider Image", Model.Item)" alt=" image"> </a>
+    <div class="menbox-text">
+        <a href="@LinkManager.GetItemUrl(Model.Item)" class="menbox-title">
+            <h3>@Html.Sitecore().Field("Article Headline", Model.Item)</h3></a>
+        <p>@Html.Sitecore().Field("Article Intro", Model.Item) <a href="@LinkManager.GetItemUrl(Model.Item)">@Html.Sitecore().Field("Glossary Value", ItemGuids.ReadMoreItem)</a>
+        </p>
+    </div>
+</div>
+</div>
