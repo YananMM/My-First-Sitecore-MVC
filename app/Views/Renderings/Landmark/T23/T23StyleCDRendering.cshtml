@@ -12,6 +12,7 @@
     var date = LandmarkHelper.ToValidDateTime(storyDate);
     var video = Html.Sitecore().Field("video").ToString();
     MultilistField tags = (MultilistField)currentItem.Fields["Tags"];
+    var tagsTrees = LandmarkHelper.GetTagsTree();
 }
 <div class="container">
     <div class="gd-pagetitle">
@@ -95,10 +96,17 @@
 
                         <dl class="gd-content-details-tags">
                             <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
-                            <dd><a href="#">WOMEN</a>,<a href="#">FASHION</a>,<a href="#">JEWELRY</a></dd>
-                        </dl>
-                    </div>
+                            <dd>
+                                @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
+                                    {
+                                        Cacheable = false,
+                                        CacheKey = "tags",
+                                        Cache_VaryByData = true
+                                    })
+                        </dd>
+                    </dl>
                 </div>
+            </div>
             }
         }
     </div>
