@@ -3,7 +3,10 @@
 @using Sitecore.Data.Fields
 @model RenderingModel
 @{
-    var slides = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item,ItemGuids.SlideObjectTemplate);
+    var slides = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.SlideObjectTemplate);
+
+    MagezineHelper helper = new MagezineHelper();
+    var setting = helper.GetStorySetting(Sitecore.Context.Item);
 }
 <!-- Indicators -->
 <ol class="carousel-indicators">
@@ -11,7 +14,7 @@
     {
         <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{if (i == 0) { <text>
             class="active"
-            </text>            }}></li>
+            </text>                   }}></li>
     }
 </ol>
 <!-- Wrapper for slides -->
@@ -22,18 +25,28 @@
         {
             <div @{ if (j == 0) { <text>
                  class="item active"
-                 </text>        } else { <text>
+                 </text>               } else { <text>
                  class="item"
-                 </text>        } }>
+                 </text>               } }>
                 @{
             j++;
                 }
                 <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Slide Image", item)"></div>
+                @if (setting != null)
+                {
+                    <p @if (setting.StyleCD) { <text>
+                       class="gd-des-below text-center"
+                       </text>  } else { <text>
+                       class="gd-des-below"
+                       </text>  }>
+                        @Html.Sitecore().Field("Slide Title", item)
+                    </p>
+                }
             </div>
         }
     }
 </div>
-  <!-- Controls -->
+<!-- Controls -->
 <div class="gd-mainimage-controls">
     <a class="gd-mainimage-control" href="#gd-carousel-mainimage" role="button" data-slide="prev">
         <span class="icomoon-thin-arrow-L" aria-hidden="true"></span>

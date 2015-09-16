@@ -30,34 +30,35 @@
         <div class="row">
             @if (stories.Count() != 0)
             {
-                <div class="col-sm-6">
-                    <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", stories.First())">
-                </div>
-                <div class="col-sm-6">
-                    <div class="gd-magazine-info-text">
-                        <h3>@Html.Sitecore().Field("Article Headline", stories.First())</h3>
-                        @{
+                <a href="@Sitecore.Links.LinkManager.GetItemUrl(stories.First())">
+                    <div class="col-sm-6">
+                        <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", stories.First())">
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="gd-magazine-info-text">
+                            <h3>@Html.Sitecore().Field("Article Headline", stories.First())</h3>
+                            @{
                 DateField storyDate = stories.First().Fields["Article Date"];
                 var date = LandmarkHelper.ToValidDateTime(storyDate);
-                        }
-                        <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
-                        <p>@Html.Sitecore().Field("Article Intro", stories.First())</p>
+                            }
+                            <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
+                            <p>@Html.Sitecore().Field("Article Intro", stories.First())</p>
+                        </div>
                     </div>
-                </div>
-            }
+                </a> }
         </div>
     </div>
     @{
-            var storyList = stories.GetRange(1, stories.Count - 1).ToList();
-            if (storyList.Count >= 3)
-            {
-                list1 = storyList.GetRange(0, 3);
-                list2 = storyList.GetRange(3, storyList.Count - 3);
-            }
-            else
-            {
-                list1 = storyList;
-            }
+        var storyList = stories.GetRange(1, stories.Count - 1).ToList();
+        if (storyList.Count >= 3)
+        {
+            list1 = storyList.GetRange(0, 3);
+            list2 = storyList.GetRange(3, storyList.Count - 3);
+        }
+        else
+        {
+            list1 = storyList;
+        }
     }
     <div class="gd-promotion-box-area">
         <div class="row">
@@ -66,16 +67,18 @@
                 foreach (var item in list1)
                 {
                     <div class="col-sm-4">
-                        <div class="gd-promotion-box">
-                            <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", item)">
-                            <h4><a href="#">@Html.Sitecore().Field("Article Headline", item)</a></h4>
-                            @{
+                        <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
+                            <div class="gd-promotion-box">
+                                <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", item)">
+                                <h4><a href="#">@Html.Sitecore().Field("Article Headline", item)</a></h4>
+                                @{
                     DateField itemDate = item.Fields["Article Date"];
                     var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
-                            }
-                            <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
-                            <p>@Html.Sitecore().Field("Article Intro", item)</p>
-                        </div>
+                                }
+                                <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
+                                <p>@Html.Sitecore().Field("Article Intro", item)</p>
+                            </div>
+                        </a>
                     </div>
                 }
             }
@@ -86,16 +89,18 @@
                 foreach (var item in list2)
                 {
                     <div class="col-sm-4">
-                        <div class="gd-promotion-box">
-                            <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", item)">
-                            <h4><a href="#">@Html.Sitecore().Field("Article Headline", item)</a></h4>
-                            @{
+                        <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
+                            <div class="gd-promotion-box">
+                                <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", item)">
+                                <h4><a href="#">@Html.Sitecore().Field("Article Headline", item)</a></h4>
+                                @{
                     DateField itemDate = item.Fields["Article Date"];
                     var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
-                            }
-                            <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
-                            <p>@Html.Sitecore().Field("Article Intro", item)</p>
-                        </div>
+                                }
+                                <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
+                                <p>@Html.Sitecore().Field("Article Intro", item)</p>
+                            </div>
+                        </a>
                     </div>
                 }
             }

@@ -232,10 +232,10 @@ namespace Landmark.Models
 
     public class StorySetting
     {
-        public bool SliderOnTopNotLeft { get; set; }
+        public bool StyleA { get; set; }
 
-        public bool SliderFilltheScreen { get; set; }
+        public bool StyleB { get; set; }
 
-        public bool ShowBigCoverNotSmallCover { get; set; }
+        public bool StyleCD { get; set; }
     }
 }
