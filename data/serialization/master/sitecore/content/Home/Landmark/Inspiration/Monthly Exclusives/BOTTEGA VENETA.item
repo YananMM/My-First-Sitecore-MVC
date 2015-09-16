@@ -2,9 +2,9 @@
 version: 1
 id: {51E62FBA-8585-46DA-9DA3-AE84C56C2DC3}
 database: master
-path: /sitecore/content/Home/Landmark/Inspiration/Monthly Exclusives/Pasta Pattern Hooded Jacket
+path: /sitecore/content/Home/Landmark/Inspiration/Monthly Exclusives/BOTTEGA VENETA
 parent: {923DBE58-71DE-4B27-B0BA-C5DEF3D301B2}
-name: Pasta Pattern Hooded Jacket
+name: BOTTEGA VENETA
 master: {A13598F7-D565-4FCC-A1EE-15E7C158F17B}
 template: {A46D7A20-B29F-4C4F-8922-0B70555CD6BC}
 templatekey: T27 Page
@@ -19,15 +19,22 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 78bbd8a6-9a37-46a4-91d0-f2b9614aecc7
+revision: aeb4747b-920b-4beb-b183-a5115e9e293c
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 68
+content-length: 14
 
-Warm white asparagus, orange and asparagus emulsion and Iberico ham 
+BOTTEGA VENETA
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 22
+
+Python Leather Handbag
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
@@ -42,7 +49,7 @@ name: Article Slider Image
 key: article slider image
 content-length: 58
 
-<image mediaid="{1F0F6BBE-B504-497B-9C29-3579AE9D3391}" />
+<image mediaid="{FE31DDAF-D49D-45CB-BD68-AE988CE78CC6}" />
 ----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Thumb Image
@@ -56,7 +63,7 @@ name: Article Type
 key: article type
 content-length: 38
 
-{0799CC76-D623-49FD-8025-8E9358A13B62}
+{B9138486-B144-4276-A0EA-098B0EB79541}
 ----field----
 field: {F51B5F38-BDB7-4A90-93C8-12697B82CDBA}
 name: Product Price
@@ -105,14 +112,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-78bbd8a6-9a37-46a4-91d0-f2b9614aecc7
+aeb4747b-920b-4beb-b183-a5115e9e293c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150916T065707Z
+20150916T121036Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

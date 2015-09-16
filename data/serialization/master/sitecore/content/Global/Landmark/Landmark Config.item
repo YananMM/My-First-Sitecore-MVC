@@ -12,7 +12,7 @@ templatekey: Landmark Config
 ----version----
 language: en
 version: 1
-revision: b8c43027-85ca-46a0-b1b3-971acf0b78f8
+revision: f04884c9-3315-404a-bff3-698ea4d75dd0
 
 ----field----
 field: {217B1155-8188-498E-84EB-92CEC31E5D09}
@@ -92,6 +92,13 @@ content-length: 58
 
 <image mediaid="{F8D43AF6-8977-47D2-8361-E45222E334DA}" />
 ----field----
+field: {79DEFB2A-A211-480C-B68F-E2814DE75F3E}
+name: Site
+key: site
+content-length: 14
+
+@MO_LANDMARKHK
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -118,14 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b8c43027-85ca-46a0-b1b3-971acf0b78f8
+f04884c9-3315-404a-bff3-698ea4d75dd0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150904T034942Z
+20150916T130426Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

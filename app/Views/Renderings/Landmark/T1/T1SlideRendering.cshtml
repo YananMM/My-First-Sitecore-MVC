@@ -17,7 +17,7 @@
             {
                 <li>
                 <div class="@LandmarkHelper.GetSlideClass(item) clearfix">
-                    <div class="panel-img" data-bg="@Html.Sitecore().ImageFieldSrc("Article Slider Image",referenceField.TargetItem)"></div>
+                    <div class="panel-img" data-bg="@LandmarkHelper.GetCallOutImage(referenceField.TargetItem)"></div>
                     <div class="panel-main">
                         <div class="panel-text">
                             <hgroup class="clearfix">

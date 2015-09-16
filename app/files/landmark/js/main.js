@@ -86,7 +86,6 @@ $(document).ready(function() {
     isScrolling = false,
     origScrollPos = 0;
 
-
   /**********************************************************************************************************
    * Response Checkpoint
    **********************************************************************************************************/
@@ -1247,8 +1246,8 @@ $(document).ready(function() {
 
       // generate item array
       for(i = 0; i < items_L.length; i++){
-        items.push(items_L[i].innerHTML);
-        if (i < items_R.length) items.push(items_R[i].innerHTML);
+        items.push(items_L[i]);
+        if (i < items_R.length) items.push(items_R[i]);
       }
       
       if (page == 0) {
@@ -1338,6 +1337,7 @@ $(document).ready(function() {
       errorCallback: function(){},
       localMode    : true
       },function(arrayOfNewElems){
+        $(window).lazyLoadXT();
     });
   }
 
@@ -1401,24 +1401,18 @@ $(document).ready(function() {
       // handle pin location
       if ($link.hasClass('gd-lightbox-pin')){      
         var parts = $link.data('pin').split(','),
-            pinX = parseInt(parts[0]),
-            pinY = parseInt(parts[1]),
+            pinX = parseFloat(parts[0]),
+            pinY = parseFloat(parts[1]),
             $pin = $('#gd-lightbox .pin'),
             $img = $('#gd-lightbox .modal-body .gd-lightbox-img');
             
-        tmpimg = new Image();
-        tmpimg.onload = function(){
-          setTimeout(function(){
-            var imgW = tmpimg.width, imgH = tmpimg.height,
-                scaleX = $img.width() / imgW,  scaleY = $img.height() / imgH,
-                x = pinX * scaleX, y = pinY * scaleY;
-            $('#gd-lightbox .pin').css({
-              left: ($img.parent().width() - $img.width()) /2 + x - $pin.width() / 2 + 'px',
-              top: y - $pin.height() + 'px'
-            });
-          },200)
-        };
-        tmpimg.src = gdLightSrc;
+        setTimeout(function(){
+          var x = pinX * $img.width(), y = pinY *  $img.height();
+          $('#gd-lightbox .pin').css({
+            left: ($img.parent().width() - $img.width()) /2 + x - $pin.width() / 2 + 'px',
+            top: y - $pin.height() + 'px'
+          });
+        },200)
       }
 
       // handle video
@@ -1434,7 +1428,6 @@ $(document).ready(function() {
           iPadUseNativeControls: true,
           iPhoneUseNativeControls: true,
           AndroidUseNativeControls: true,
-          enablePluginDebug: true,
           plugins: ['flash','silverlight'],
           success: function (mediaElement, domObject) {
             mediaElement.addEventListener('play', function(e) {
@@ -1470,22 +1463,17 @@ $(document).ready(function() {
         $self = $(this)
         videoSrc = $(this).attr('src');
     if(isiOS() || isAndroid()){
-      $(this).click(function(){
-        scTrackVideo();
-        window.open(videoSrc);
-        return false;
-      });
+      $(this).replaceWith('<a href="'+videoSrc+'" target="_blank" onclick="scTrackVideo(\''+videoSrc+'\')"><div class="mejs-overlay-button"></div><img src="'+ $(this).attr('poster') +'"></a>');
     } else {
       $self.attr({
-        width: $self.width() + 'px',
-        height: $self.height() + 'px'
-      })
+        width: isIE8() ? 980 : $self.width(),
+        height: isIE8() ? 552 : $self.height()
+      });
       var player = new MediaElementPlayer(self,
       {
         iPadUseNativeControls: true,
         iPhoneUseNativeControls: true,
         AndroidUseNativeControls: true,
-        enablePluginDebug: true,
         plugins: ['flash','silverlight'],
         success: function (mediaElement, domObject) {
           mediaElement.addEventListener('play', function(e) {
@@ -1499,16 +1487,18 @@ $(document).ready(function() {
   /**********************************************************************************************************
    * Audio Player
    **********************************************************************************************************/
-  $('body').on('click', '[data-player]', function() {
+  $('body').on('click', '[data-player]', {}, function() {
     var gdAudioFile;
     var gdAudioFrame;
-    if ($('.gd-audio-frame').length) {
-      return false;
-    } else {
-      gdAudioFile = $(this).data('player');
-      gdAudioFrame= '<div class="gd-audio-frame" data-audiofile="' + gdAudioFile + '"><iframe src="/files/landmark/audioplayer/index.html" frameborder="0"></iframe></div>';
-      $(this).parent().addClass('gd-audio-wrapper').append(gdAudioFrame);
+    if ($('.gd-audio-wrapper').length) {
+      $('.gd-audio-frame').remove();
+      $('.gd-audio-wrapper').removeClass('gd-audio-wrapper');
+      //return false;
     }
+
+    gdAudioFile = $(this).data('player');
+    gdAudioFrame= '<div class="gd-audio-frame" data-audiofile="' + gdAudioFile + '"><iframe src="/files/landmark/audioplayer/index.html" frameborder="0"></iframe></div>';
+    $(this).parent().addClass('gd-audio-wrapper').append(gdAudioFrame);
   });
   /**********************************************************************************************************
    * T35 Google Map
@@ -1744,6 +1734,45 @@ $(document).ready(function() {
 
       $(this).next().toggle('slow');
     });
+    
+
+    var gdValidator = new FormValidator('gd-contact-form', [{
+        name: 'gdtitle',
+        display: 'required',
+        rules: 'required'
+    }, {
+        name: 'firstname',
+        rules: 'required|max_length[50]'
+    }, {
+        name: 'lastname',
+        rules: 'required|max_length[50]'
+    }, {
+        name: 'telephone',
+        rules: 'numeric|max_length[20]'
+    }, {
+        name: 'email',
+        rules: 'required|valid_email|max_length[254]'
+    }, {
+        name: 'gdtype',
+        rules: 'required'
+    }, {
+        name: 'message',
+        rules: 'required'
+    }, {
+        name: 'verifycode',
+        rules: 'required|decimal'
+    }], function(errors, event) {
+        if (errors.length > 0) {
+            // Show the errors
+            $('.gd-contact-form .gd-form-error').remove();
+            var gdErrorMsg = '<ol class="gd-form-error">';
+            for (var looper = 0; looper < errors.length; looper++) {
+              gdErrorMsg += '<li>' + $('[name=' + errors[looper].name + ']').data('error') + '</li>';
+            }
+            gdErrorMsg += '</ol>';
+            $('.gd-contact-form').append(gdErrorMsg);
+        }
+    });
   }
   
   
@@ -1751,8 +1780,140 @@ $(document).ready(function() {
    * T31
    **********************************************************************************************************/
   if ($('body').hasClass('t31')) {
+    var gdEPselected = false;
+    var gdIsHK       = false;
+    var gdValidator;
+    
+    gdValidator = new FormValidator('gd-contact-form', [{
+        name: 'gdtitle',
+        rules: 'required'
+    }, {
+        name: 'firstname',
+        rules: 'required|max_length[50]'
+    }, {
+        name: 'lastname',
+        rules: 'required|max_length[50]'
+    }, {
+        name: 'email',
+        rules: 'required|valid_email|max_length[254]'
+    }, {
+        name: 'room',
+        rules: 'required|max_length[50]',
+        depends: function() {
+          return gdEPselected;
+        }
+    }, {
+        name: 'building',
+        rules: 'required|max_length[50]',
+        depends: function() {
+          return gdEPselected;
+        }
+    }, {
+        name: 'street',
+        rules: 'required|max_length[50]',
+        depends: function() {
+          return gdEPselected;
+        }
+    }, {
+        name: 'area',
+        rules: 'max_length[50]',
+        depends: function() {
+          return gdEPselected;
+        }
+    }, {
+        name: 'district',
+        rules: 'required',
+        depends: function() {
+          return gdIsHK;
+        }
+    }, {
+        name: 'city',
+        rules: 'required|max_length[50]',
+        depends: function() {
+          return gdEPselected;
+        }
+    }, {
+        name: 'state',
+        rules: 'max_length[50]',
+        depends: function() {
+          return gdEPselected;
+        }
+    }, {
+        name: 'postal',
+        rules: 'max_length[10]'
+    }, {
+        name: 'gdcountry',
+        rules: 'required',
+        depends: function() {
+          return gdEPselected;
+        }
+    }, {
+        name: 'interests',
+        rules: 'required',
+        depends: function() {
+          return $('[name=interests]').val() === '' && $('[name=othersval]').val() === '';
+        }
+    }, {
+        name: 'others',
+        rules: 'required',
+        depends: function() {
+          return $('[name=othersval]').val() === '1';
+        }
+    }, {
+        name: 'legal',
+        rules: 'required'
+    }, {
+        name: 'privacy',
+        rules: 'required'
+    }, {
+        name: 'verifycode',
+        rules: 'required|decimal'
+    }], function(errors, event) {
+        if (errors.length > 0) {
+          // Show the errors
+          $('.gd-contact-form .gd-form-error').remove();
+          var gdErrorMsg = '<ol class="gd-form-error">';
+          for (var looper = 0; looper < errors.length; looper++) {
+            gdErrorMsg += '<li>' + $('[name=' + errors[looper].name + ']').data('error') + '</li>';
+          }
+          gdErrorMsg += '</ol>';
+          $('.gd-contact-form').append(gdErrorMsg);
+        }
+    });
+    
+    
     $('#gd-preferred-comm .dropdown-menu>li>a').click(function() {
       $('#gd-subforms>.tab-content>.tab-pane').eq($(this).data('value')).addClass('active in').siblings().removeClass('active in');
+      if ($(this).data('value') == '1') {
+        gdEPselected = true;
+      } else {
+        gdEPselected = false;
+      }
+      
+      $('.gd-contact-form .gd-form-error').remove();
+    });
+    
+    $('#gd-country .dropdown-menu>li>a').click(function() {
+      if ($(this).data('code') === 'hk') {
+        gdIsHK = true;
+        $('[name=district]').closest('.form-group').removeClass('hidden');
+      } else {
+        gdIsHK = false;
+        $('[name=district]').closest('.form-group').addClass('hidden');
+      }
+    });
+    
+    $('#gd-others').click(function(event) {
+      if ($(event.target).hasClass('form-control')) {
+        return false;
+      } else {
+        var gdOtherCtl = $(this).find('input.form-control');
+        if (gdOtherCtl.attr('disabled') !== 'disabled') {
+          gdOtherCtl.attr('disabled', 'disabled').val('');
+        } else {
+          gdOtherCtl.removeAttr('disabled');
+        }
+      }
     });
   }
   
@@ -1770,12 +1931,15 @@ $(document).ready(function() {
       gdAllPromos.isotope({filter: param});
     }
     
-    gdAllPromos.isotope({
-      itemSelector: '.gd-promo-body>*',
-      masonry: {
-        columnWidth: '.gd-promo-box'
-      }
-    });
+     gdAllPromos.imagesLoaded(function() {
+      gdAllPromos.isotope({
+        itemSelector: '.gd-promo-body>*',
+        masonry: {
+          columnWidth: '.gd-promo-box'
+        }
+      });
+     });
+
     
     gdAllPromos.infinitescroll({
       navSelector  : "div.navigation",
@@ -1783,6 +1947,10 @@ $(document).ready(function() {
       itemSelector : ".gd-promo-body>*"
     },function(items){
       gdAllPromos.append(items).isotope( 'appended', items );
+      gdAllPromos.imagesLoaded(function() {
+        gdAllPromos.isotope('layout');
+      });
+      
       $(window).unbind('.infscr');
     });
     $(window).unbind('.infscr');
@@ -1793,13 +1961,20 @@ $(document).ready(function() {
       return false;
     });
     
-    $('.gd-promo-filter a[data-filter]').click(function() {
+    $('body').on('click', function(event) {
+      if ($(event.target).parents('.gd-promo-brands').length < 1) {
+        $('.gd-promo-brands').removeClass('active');
+      }
+    });
+    
+    $('.gd-promo-filter a[data-filter]').click(function(event) {
+      event.preventDefault();
       if (!$(this).hasClass('disabled')) {
         $(this).parent().addClass('active').siblings().removeClass('active');
+        $(this).closest('.gd-promo-brands').removeClass('active');
         gdFilter = $(this).data('filter');
         gdFilt(gdFilter);
       }
-      return false;
     });
     
     $('.gd-promo-filter select').change(function() {
@@ -1855,6 +2030,11 @@ $(document).ready(function() {
     gdCurrentVal.text($(this).text());
     gdUserChosen.val(gdUserChoice);
     gdDropdownCtrl.removeClass('open');
+    if (gdCurrentVal.text().toLowerCase() !== 'please select') {
+      gdCurrentVal.css({'color': '#222222'});
+    } else {
+      gdCurrentVal.css({'color': '#999999'});
+    }
     return false;
   });
 
@@ -1866,7 +2046,12 @@ $(document).ready(function() {
     var gdCheckbox   = $(this).closest('.gd-checkbox-wrapper');
     var gdUserChosen = gdCheckbox.find('input[type=hidden]');
     var gdChosen    = [];
-    $(this).toggleClass('active');
+    if (gdCheckbox.data('type') === 'radio') {
+      $(this).addClass('active').siblings().removeClass('active');
+    } else {
+      $(this).toggleClass('active');
+    }
+    $(this).blur();
     gdCheckbox.find('.active').each(function() {
       gdChosen.push($(this).data('value'));
     });
@@ -1877,14 +2062,28 @@ $(document).ready(function() {
   /**********************************************************************************************************
    * slick slider
    **********************************************************************************************************/
+  $('.gd-slick-slider').on('setPosition', function(slick) {
+    var gdSlickControlsM = $(this).closest('.gd-slick-slider-wrapper').find('.gd-slick-controls-m');
+    gdSlickControlsM.find('.gd-slick-no-all').text($(this).find('.gd-slick-item').not('.slick-cloned').length);
+    gdSlickControlsM.find('.gd-slick-no-current').text(Number($(this).find('.slick-current').data('slick-index')) + 1);
+  });
+  
+  $('.gd-slick-controls-m span').click(function() {
+    var gdSlickSlider = $(this).closest('.gd-slick-slider-wrapper').find('.gd-slick-slider');
+    if ($(this).hasClass('icomoon-thin-arrow-L')) {
+      gdSlickSlider.slick('prev');
+    } else if ($(this).hasClass('icomoon-thin-arrow-R')) {
+      gdSlickSlider.slick('next');
+    }
+  });
+   
   $('.gd-slick-slider').slick({
-    lazyLoad: 'progressive',
     dots: false,
     infinite: true,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
-    centerMode: false,
+    centerMode: true,
     variableWidth: true,
     prevArrow: '<button type="button" class="slick-prev" tabindex="0" role="button"><span class="icomoon-thin-arrow-L"></span></button>',
     nextArrow: '<button type="button" class="slick-next" tabindex="0" role="button"><span class="icomoon-thin-arrow-R"></span></button>',
@@ -1918,7 +2117,7 @@ $(document).ready(function() {
   /**********************************************************************************************************
    * GD Promotion Tabcontrol
    **********************************************************************************************************/
-  $('body').on('click', '.tab-pane-switch', function() {
+  $('.gd-tab-intro').on('click', '.tab-pane-switch', function() {
     var gdCurrentPane    = $(this).next();
     if (gdCurrentPane.hasClass('active')) {
       $(this).find('span').text('+');
@@ -1926,6 +2125,11 @@ $(document).ready(function() {
       $(this).find('span').text('-');
     }
     gdCurrentPane.toggleClass('in active');
+    $('body').trigger('scroll');
+  });
+  
+  $('.gd-tab-intro').on('shown.bs.tab',  function() {
+    $('body').trigger('scroll');
   });
 
 });

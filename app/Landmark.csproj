@@ -350,6 +350,7 @@
     <Content Include="files\landmark\js\lib\bootstrap-select.js" />
     <Content Include="files\landmark\js\lib\bootstrap.min.js" />
     <Content Include="files\landmark\js\lib\classie.js" />
+    <Content Include="files\landmark\js\lib\imagesloaded.pkgd.min.js" />
     <Content Include="files\landmark\js\lib\iscroll.js" />
     <Content Include="files\landmark\js\lib\isotope.pkgd.min.js" />
     <Content Include="files\landmark\js\lib\jquery-1.11.2.min.js" />
@@ -762,6 +763,7 @@
     <Content Include="Views\Renderings\Landmark\T23\T23StyleCDRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T23\T23RelatedBrandsRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T23\T23RelatedRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\Global\MetaRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

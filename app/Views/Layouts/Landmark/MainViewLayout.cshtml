@@ -12,61 +12,12 @@
 <!--[if gt IE 9]><html class="no-js"><![endif]-->
 <!--[if !IE]><!--><html class="no-js"><!--<![endif]-->
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" type="text/css" href="/files/landmark/css/style.css" />
-    <meta name="description" content="description" />
-    <meta name="keywords" content="keywords" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <!--[if lt IE 9]>
-      <script src="/files/landmark/js/html5shiv-printshiv.min.js"></script>
-    <![endif]-->
-    <!--[if IE]>
-      <script src="/files/landmark/js/selectivizr-min.js"></script>
-    <![endif]-->
-    <!--[if IE 8]>
-      <style>
-        body,
-        body>.site-header {
-          width: 1200px!important;
-        }
-        body {
-          margin: 0 auto!important;
-        }
-        .site-header {
-          left: 0;
-          margin: 0 auto!important;
-          right: 0;
-        }
-      </style>
-    <![endif]-->
-    <script src="//assets.adobedtm.com/9aa8f444435d90ff3c53c568fb8779b4d42b2ce7/satelliteLib-b098935529a91c4c8c1f840db43224f01f6799dd.js"></script>
-@if (LandmarkHelper.GetPageBodyClass().StartsWith("t7"))
+    @Html.Sitecore().Rendering(ItemGuids.MetaRenderingViewGuid, new
 {
-    <link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/svgmap/mapplic/mapplic.css">
-    <!--[if lt IE 9]>
-        <link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/svgmap/mapplic/mapplic-ie.css">
-
-        <script type="text/javascript" src="/files/landmark/js/lib/svgmap/js/html5shiv.js"></script>
-    <![endif]-->
-}
-    <title>@Html.Sitecore().Field("Page Title")</title>
+    Cacheable = false,
+    CacheKey = "meta",
+    Cache_VaryByData = true
+})
 </head>
 <body class="en @LandmarkHelper.GetPageBodyClass()">
     @Html.Sitecore().Rendering(ItemGuids.HeaderRenderingViewGuid, new

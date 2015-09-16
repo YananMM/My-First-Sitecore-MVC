@@ -12,29 +12,29 @@ templatekey: T23 Page
 ----version----
 language: en
 version: 1
-revision: 25d0d43a-415d-4f9a-b71c-f00777050b30
+revision: cee2aede-1a89-4a8e-af17-a25854492067
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 7
+content-length: 17
 
-Story 5
+HOT BAGS FOR SALE
 ----field----
-field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
-name: Article Thumb Image
-key: article thumb image
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 158
+
+Generations of families sharing moments and making memories. All part of 208 fine stores and restaurants in 4 connected buildings that go by 1 name, LANDMARK.
+----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Slider Image
+key: article slider image
 content-length: 58
 
-<image mediaid="{C8DB028B-980F-4CFA-B98E-4A31B132954E}" />
-----field----
-field: {B966F61E-9F08-4674-AC01-EE1064020145}
-name: Article Date
-key: article date
-content-length: 16
-
-20150909T160000Z
+<image mediaid="{5732D6D7-7294-4356-B747-D802ECCC4FEE}" />
 ----field----
 field: {BA2CB119-1C77-40AA-B95E-79014CAFD7AD}
 name: Magazine Category
@@ -50,12 +50,15 @@ content-length: 7
 
 Story 5
 ----field----
-field: {4A9DD96E-7D7C-4825-B534-AB8C75545EAE}
-name: Slider on Top not Fill the screen - style B
-key: slider on top not fill the screen - style b
-content-length: 1
+field: {2A56A637-C446-4AC3-B2A5-F8BCC04B1B9B}
+name: Article Headline 2
+key: article headline 2
+content-length: 102
 
-1
+<hgroup class="clearfix">
+<h2><span>1</span>GENERATIONS</h2>
+<h2><span>1</span>NAME</h2>
+</hgroup><br>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -69,14 +72,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-25d0d43a-415d-4f9a-b71c-f00777050b30
+cee2aede-1a89-4a8e-af17-a25854492067
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150916T024205:635779681255733486Z
+20150916T124158Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

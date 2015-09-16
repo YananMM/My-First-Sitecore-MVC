@@ -14,6 +14,7 @@ namespace Landmark.Classes
         public static readonly String ScriptRenderingViewGuid = "{85E63E0F-B889-4A32-9EAD-DDFE06BC3573}";
         public static readonly String FooterRenderingViewGuid = "{CE360129-0EE2-47FC-A1D9-3A28105B1249}";
         public static readonly String T1PanelNavRenderingViewGuid = "{026C458F-E4BC-490B-A097-DBE0C6DA9459}";
+        public static readonly String MetaRenderingViewGuid = "{E33EA20C-C797-4298-8524-543AC8F1BD78}";
         public static readonly String HeaderRenderingViewGuid = "{38268C3C-71E7-4775-8E91-FB4DF4667C34}";
         public static readonly String TagsRenderingViewGuid = "{5E1A037B-CB78-4FFC-8758-7E66DC14EADC}";
         public static readonly String FooterNavRenderingViewGuid = "{5BBD6426-6C9C-4E73-BD1F-34BC6D63961E}";

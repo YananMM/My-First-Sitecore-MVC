@@ -26,7 +26,7 @@ content-length: 957
 ----version----
 language: en
 version: 1
-revision: f403c0b7-e137-4bbf-a3c9-d8cf12f2cd1f
+revision: 83887e68-3e4a-410c-884a-5ef2121bef72
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -35,6 +35,13 @@ key: article headline
 content-length: 0
 
 
+----field----
+field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
+name: Article Type
+key: article type
+content-length: 38
+
+{6D3037FD-A4F4-464A-8BCE-30608F5CC64E}
 ----field----
 field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
 name: __Final Renderings
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f403c0b7-e137-4bbf-a3c9-d8cf12f2cd1f
+83887e68-3e4a-410c-884a-5ef2121bef72
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150916T034545:635779719451758174Z
+20150916T071253Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

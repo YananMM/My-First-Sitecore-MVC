@@ -342,5 +342,26 @@ namespace Landmark.Helper
             return imageURL;
         }
 
+        public static string GetCurrentItemUrl()
+        {
+            string host = System.Web.HttpContext.Current.Request.Url.Scheme +
+                          Uri.SchemeDelimiter +
+                          System.Web.HttpContext.Current.Request.Url.Host;
+            string language = Sitecore.Context.Language.ToString();
+            return host + language + System.Web.HttpContext.Current.Request.RawUrl;
+        }
+
+        public static String GetTargetString(Item item, string field)
+        {
+            String target = "_self";
+            LinkField linkField = item.Fields[field];
+
+            if (linkField.LinkType == "external")
+            {
+                target = "_blank";
+            }
+            return target;
+        }
+
     }
 }
