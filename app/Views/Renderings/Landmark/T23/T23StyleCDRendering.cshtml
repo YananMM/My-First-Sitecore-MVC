@@ -1,5 +1,4 @@
-﻿
-@using Landmark.Classes
+﻿@using Landmark.Classes
 @using Landmark.Helper
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
@@ -11,6 +10,9 @@
     var setting = helper.GetStorySetting(currentItem);
     DateField storyDate = currentItem.Fields["Article Date"];
     var date = LandmarkHelper.ToValidDateTime(storyDate);
+    var video = Html.Sitecore().Field("video").ToString();
+    MultilistField tags = (MultilistField)currentItem.Fields["Tags"];
+    var tagsTrees = LandmarkHelper.GetTagsTree();
 }
 <div class="container">
     <div class="gd-pagetitle">
@@ -31,74 +33,82 @@
     <div class="gd-styor-block">
         <div class="gd-brief">
             <div class="gd-brief-heading">
-                <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed d</h3>
+                <h3>@Html.Sitecore().Field("Cover Title 1")</h3>
             </div>
             <div class="gd-brief-body text-center">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
                         <p>
-                            quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+                            @Html.Sitecore().Field("Cover Description 1")
                         </p>
-
                     </div>
                 </div>
             </div>
         </div>
         <div class="gd-bigpicture">
-            <video class="gd-video" type="video/mp4" src="/en/sample.mp4" controls poster="../files/landmark/images/story/story3-video-01.jpg"></video>
+            @{
+                if (!string.IsNullOrEmpty(video))
+                {
+                    <video class="gd-video" type="video/mp4" src="@video" controls poster="@Html.Sitecore().ImageFieldSrc("Cover Image 1", currentItem)"></video>
+                }
+                else
+                {
+                    <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image 1", currentItem)">
+                }
+            }
         </div>
     </div>
     <div class="gd-styor-block">
         <div class="gd-brief">
             <div class="gd-brief-heading">
-                <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed d</h3>
+                <h3>@Html.Sitecore().Field("Cover Title 2")</h3>
             </div>
             <div class="gd-brief-body text-center">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
                         <p>
-                            quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+                            @Html.Sitecore().Field("Cover Description 2")
                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @{
+            if (!string.IsNullOrEmpty(video))
+            {
+                <div class="gd-bigpicture">
+                    <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image 2", currentItem)">
+                </div>
+                <div class="gd-nd-slider-text">@Html.Sitecore().Field("Cover Text Line")</div>
+                <dl class="gd-content-details-tags">
+                    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
+                    <dd>
+                        <a href="#">WOMEN</a>,<a href="#">FASHION</a>,<a href="#">JEWELRY</a>
+                    </dd>
+                </dl>
+            }
+            else
+            {
+                <div class="gd-bigpicture">
+                    <div class="gd-content-auto-width">
+                        <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image 2", currentItem)">
+                        <div class="gd-nd-slider-text"> @Html.Sitecore().Field("Cover Text Line")</div>
 
-                    </div>
+                        <dl class="gd-content-details-tags">
+                            <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
+                            <dd>
+                                @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
+                                    {
+                                        Cacheable = false,
+                                        CacheKey = "tags",
+                                        Cache_VaryByData = true
+                                    })
+                        </dd>
+                    </dl>
                 </div>
             </div>
-        </div>
-        <div class="gd-bigpicture">
-            <img data-src="../files/landmark/images/story/story3-img-02.jpg">
-        </div>
-        <div class="gd-nd-slider-text"> LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED D</div>
-        <dl class="gd-content-details-tags">
-            <dt> <span class="icomoon-price-tag"></span> TAGS:</dt>
-            <dd><a href="#">WOMEN</a>,<a href="#">FASHION</a>,<a href="#">JEWELRY</a></dd>
-        </dl>
+            }
+        }
     </div>
-    <div class="gd-relate">
-        <div class="row">
-            <div class="col-sm-8">
-                <h3>RELATED STORIES</h3>
-                <div class="row">
-                    <div class="col-sm-6 clearfix">
-                        <img data-src="../files/landmark/images/story/story-related-01.jpg"><h5>EXLUSIVES</h5>
-                        <h4><a href="">The Thinking Man’s Guide to Style with Tom Stubbs</a></h4>
-                    </div>
-                    <div class="col-sm-6 clearfix">
-                        <img data-src="../files/landmark/images/story/story-related-02.jpg">
-                        <h5>EDITOR'S PICKS</h5>
-                        <h4><a href="">#Fashion Foreword with Tina Leung</a></h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="gd-relate-brand">
-                    <h3>RELATED BRANDS</h3>
-                    <h4><a href="">Alexander McQueen</a></h4>
-                    <h4><a href="">Balenciagav</a></h4>
-                    <h4><a href="">Burberry</a></h4>
-                    <h4><a href="">J.Lindeberg</a></h4>
-                    <h4><a href="">Miu Miu</a></h4>
-                </div>
-            </div>
-        </div>
-    </div>
+    @Html.Sitecore().Placeholder("t23-related")
 </div>

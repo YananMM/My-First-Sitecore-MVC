@@ -1,25 +1,19 @@
 ﻿@using Landmark.Helper
 @{
-    ShoppingHelper shoppingHelper = new ShoppingHelper();
     var tagsTrees = LandmarkHelper.GetTagsTree();
 }
 @foreach (var item in tagsTrees)
 {
     <div>
         @{
-    var shopPage = shoppingHelper.GetShopPageByTag(item.CurrentItem.ID.ToString());
-    if (shopPage != null)
-    {
-        <a href="@Sitecore.Links.LinkManager.GetItemUrl(shopPage)">@item.CurrentItem["Category Name"] - </a>
-    }
+
+            <a href="@Url.Action("SearchContent", "Search")?search=@item.CurrentItem["Category Name"]">@item.CurrentItem["Category Name"] - </a>
         }
 
         @foreach (var it in item.Children)
         {
-            var subPage = shoppingHelper.GetShopPageByTag(it.CurrentItem.ID.ToString());
-            if (subPage != null)
-            {
-                <a href="@Sitecore.Links.LinkManager.GetItemUrl(subPage.Children.First())">@it.CurrentItem["Category Name"],</a>}
+
+            <a href="@Url.Action("SearchContent", "Search")?search=@item.CurrentItem["Category Name"]">@it.CurrentItem["Category Name"],</a>
         }
     </div>
 }
