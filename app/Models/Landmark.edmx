@@ -5,7 +5,7 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="LandmarkSitecore_MasterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="ContactUsForms">
+        <EntityType Name="EmailSignup">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
@@ -13,22 +13,29 @@
           <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Telephone" Type="nvarchar" MaxLength="50" />
-          <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Message" Type="nvarchar" MaxLength="200" Nullable="false" />
-          <Property Name="EnquiryType" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="255" Nullable="false" />
+          <Property Name="Channel" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Room" Type="nvarchar" MaxLength="50" />
+          <Property Name="Building" Type="nvarchar" MaxLength="50" />
+          <Property Name="Street" Type="nvarchar" MaxLength="50" />
+          <Property Name="Area" Type="nvarchar" MaxLength="50" />
+          <Property Name="District" Type="nvarchar" MaxLength="50" />
+          <Property Name="City" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="State" Type="nvarchar" MaxLength="50" />
+          <Property Name="Postcode" Type="nvarchar" MaxLength="10" />
+          <Property Name="Country" Type="nvarchar" MaxLength="2" />
         </EntityType>
         <EntityContainer Name="LandmarkSitecore_MasterModelStoreContainer">
-          <EntitySet Name="ContactUsForms" EntityType="Self.ContactUsForms" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EmailSignup" EntityType="Self.EmailSignup" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="LandmarkSitecore_MasterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="LandmarkSitecore_MasterEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="ContactUsForms" EntityType="LandmarkSitecore_MasterModel.ContactUsForm" />
+          <EntitySet Name="EmailSignups" EntityType="LandmarkSitecore_MasterModel.EmailSignup" />
         </EntityContainer>
-        <EntityType Name="ContactUsForm">
+        <EntityType Name="EmailSignup">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
@@ -36,10 +43,17 @@
           <Property Name="Title" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Telephone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Message" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
-          <Property Name="EnquiryType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="Channel" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Room" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Building" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Street" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Area" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="District" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="City" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Postcode" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Country" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -47,13 +61,20 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="LandmarkSitecore_MasterModelStoreContainer" CdmEntityContainer="LandmarkSitecore_MasterEntities">
-          <EntitySetMapping Name="ContactUsForms">
-            <EntityTypeMapping TypeName="LandmarkSitecore_MasterModel.ContactUsForm">
-              <MappingFragment StoreEntitySet="ContactUsForms">
-                <ScalarProperty Name="EnquiryType" ColumnName="EnquiryType" />
-                <ScalarProperty Name="Message" ColumnName="Message" />
+          <EntitySetMapping Name="EmailSignups">
+            <EntityTypeMapping TypeName="LandmarkSitecore_MasterModel.EmailSignup">
+              <MappingFragment StoreEntitySet="EmailSignup">
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="Postcode" ColumnName="Postcode" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="District" ColumnName="District" />
+                <ScalarProperty Name="Area" ColumnName="Area" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="Building" ColumnName="Building" />
+                <ScalarProperty Name="Room" ColumnName="Room" />
+                <ScalarProperty Name="Channel" ColumnName="Channel" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
                 <ScalarProperty Name="LastName" ColumnName="LastName" />
                 <ScalarProperty Name="FirstName" ColumnName="FirstName" />
                 <ScalarProperty Name="Title" ColumnName="Title" />

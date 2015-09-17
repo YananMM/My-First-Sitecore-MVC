@@ -183,5 +183,11 @@ namespace Landmark.Controllers
             return File(bytes, @"image/jpeg");
         }
 
+
+        public ActionResult AddEmailSignup()
+        {
+            return View();
+        }
+
     }
 }
