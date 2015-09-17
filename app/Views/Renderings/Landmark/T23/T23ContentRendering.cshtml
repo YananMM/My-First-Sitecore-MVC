@@ -8,8 +8,7 @@
     var currentItem = Sitecore.Context.Item;
     MagezineHelper helper = new MagezineHelper();
     var setting = helper.GetStorySetting(currentItem);
-    DateField storyDate = currentItem.Fields["Article Date"];
-    var date = LandmarkHelper.ToValidDateTime(storyDate);
+  
 }
 @if (setting.StyleA)
 {

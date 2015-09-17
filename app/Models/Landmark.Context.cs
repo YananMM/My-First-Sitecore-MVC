@@ -25,6 +25,6 @@ namespace Landmark.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<ContactUsForm> ContactUsForms { get; set; }
+        public virtual DbSet<EmailSignup> EmailSignups { get; set; }
     }
 }

@@ -155,10 +155,10 @@
     <Compile Include="Helper\SearchHelper.cs" />
     <Compile Include="Helper\ShoppingHelper.cs" />
     <Compile Include="Helper\SitecoreFieldHelper.cs" />
-    <Compile Include="Models\ContactUsForm.cs">
+    <Compile Include="Models\ContactUsFormModel.cs" />
+    <Compile Include="Models\EmailSignup.cs">
       <DependentUpon>Landmark.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ContactUsFormModel.cs" />
     <Compile Include="Models\Landmark.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
