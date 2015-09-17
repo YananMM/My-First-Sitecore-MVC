@@ -6,7 +6,7 @@
 @{
     string src = Html.Sitecore().ImageFieldSrc("Map Menu Image", Sitecore.Context.Item);
     List<Item> buildings = LandmarkHelper.GetBuildings();
-    Item activeItem = Request["buildingID"]==null?buildings[0]:Sitecore.Context.Database.GetItem(Request["buildingID"]);
+    Item activeItem = string.IsNullOrEmpty(Request.QueryString["buildingID"])?buildings[0]:Sitecore.Context.Database.GetItem(Request["buildingID"]);
 }
 <div class="container">
     <div class="gd-pagetitle">
@@ -28,7 +28,8 @@
                     foreach (Item building in buildings)
                     {
                         string cssclass = building.ID.ToString() == activeItem.ID.ToString() ? "active" : "";
-                        <li class="@cssclass" ><a href="?buildingID=@building.ID.ToString()" data-src="/Service/Landmark.asmx/GetFloorPlanJson?buildingID=@building.ID.ToString()" data-src-ie8="t7/floorplan2-ie8.json">@building.Fields["Building Title"].Value</a></li>
+                        <li class="@cssclass"><a href="?buildingID=@building.ID.ToString()" data-src="/Service/Landmark.asmx/GetFloorPlanJson?buildingID=@building.ID.ToString()"
+ data-src-ie8="/Service/Landmark.asmx/GetFloorPlanJson?buildingID=@building.ID.ToString()">@building.Fields["Building Title"].Value</a></li>
                         i++;
                     }
                 }

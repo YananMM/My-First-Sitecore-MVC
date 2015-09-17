@@ -33,7 +33,6 @@ namespace Landmark.Service
         [ScriptMethod(ResponseFormat = ResponseFormat.Json, XmlSerializeString = false)]
         public void GetFloorPlanJson(string buildingID)
         {
-            
             Item building = Sitecore.Context.Database.GetItem(buildingID);
             FloorPlan floorplans = new FloorPlan();
             floorplans.mapheight = "525";

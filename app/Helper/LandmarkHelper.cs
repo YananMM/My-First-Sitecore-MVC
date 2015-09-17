@@ -15,6 +15,7 @@ using Sitecore.Data.Fields;
 using Sitecore.Data.Managers;
 using Sitecore.Globalization;
 using Sitecore.Links;
+using Sitecore.Mvc.Presentation;
 using Sitecore.Shell.Applications.ContentManager.ReturnFieldEditorValues;
 using Sitecore.Web.UI;
 using Attachment = Sitecore.Shell.Applications.ContentEditor.Attachment;
@@ -361,6 +362,15 @@ namespace Landmark.Helper
                 target = "_blank";
             }
             return target;
+        }
+
+        public static string GetValueFromCurrentRenderingParameters(string parameterName)
+        {
+            var rc = RenderingContext.CurrentOrNull;
+            if (rc == null || rc.Rendering == null) return (string)null;
+            var parametersAsString = rc.Rendering.Properties["Parameters"];
+            var parameters = HttpUtility.ParseQueryString(parametersAsString);
+            return parameters[parameterName];
         }
 
     }
