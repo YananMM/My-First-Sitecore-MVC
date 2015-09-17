@@ -1,68 +1,33 @@
 ----item----
 version: 1
-id: {A4555507-19C7-4408-8260-099B6115B6F9}
+id: {1B51D2BB-E8D2-4421-A075-F0A748D04D36}
 database: master
 path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Story 1
 parent: {812D4614-C77D-4B0A-9729-D2FB3D830786}
 name: Story 1
-master: {00000000-0000-0000-0000-000000000000}
+master: {019AAA6D-F7C8-4293-94EE-CF065B0A8A91}
 template: {2EE73BEB-F8DA-4F35-BB46-C1B0B8AC3945}
 templatekey: T23 Page
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
 
 ----version----
 language: en
 version: 1
-revision: f22872eb-f418-4fe1-969f-4359469f3fd9
+revision: a3c7aedd-339f-461b-b1af-1a55cad35a79
 
 ----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
 content-length: 7
 
 Story 1
-----field----
-field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
-name: Article Sub Headline
-key: article sub headline
-content-length: 50
-
-TEXT BY SUSAN HAYES  | PHOTOGRAPHY BY ANDREW SMITH
-----field----
-field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
-name: Article Intro
-key: article intro
-content-length: 631
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam
-----field----
-field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
-name: Article Thumb Image
-key: article thumb image
-content-length: 58
-
-<image mediaid="{9438BEBA-1EFA-4705-936E-3F894F8967D6}" />
-----field----
-field: {B966F61E-9F08-4674-AC01-EE1064020145}
-name: Article Date
-key: article date
-content-length: 16
-
-20150913T160000Z
-----field----
-field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
-name: Article Type
-key: article type
-content-length: 38
-
-{274E7EC5-2922-4472-8DCE-448B68642884}
-----field----
-field: {BA2CB119-1C77-40AA-B95E-79014CAFD7AD}
-name: Magazine Category
-key: magazine category
-content-length: 77
-
-{8CBE1EA5-CE5A-4D15-AEFD-F65BC164C06B}|{42FF35B6-477A-417F-84BA-B11860F3A311}
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -71,47 +36,26 @@ content-length: 7
 
 Story 1
 ----field----
-field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
-name: Slider on Right - style A
-key: slider on right - style a
-content-length: 1
-
-1
-----field----
-field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
-name: Tags
-key: tags
-content-length: 233
-
-{D78864A1-2B7D-466E-9889-10D52DE01CB5}|{636EF06F-E49A-47A6-88BB-B634CED946B7}|{1EE65BD4-D85F-49B6-940E-163147C042F1}|{8CBE1EA5-CE5A-4D15-AEFD-F65BC164C06B}|{42FF35B6-477A-417F-84BA-B11860F3A311}|{63A24BBD-6863-4085-846D-54FAB9C86B80}
-----field----
-field: {69FDFC37-F6B6-4D21-B8FA-AEBD204F9CA7}
-name: Related Brands
-key: related brands
-content-length: 116
-
-{D78864A1-2B7D-466E-9889-10D52DE01CB5}|{636EF06F-E49A-47A6-88BB-B634CED946B7}|{1EE65BD4-D85F-49B6-940E-163147C042F1}
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150909T080057Z
+20150917T102405Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-f22872eb-f418-4fe1-969f-4359469f3fd9
+a3c7aedd-339f-461b-b1af-1a55cad35a79
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150916T080739:635779876596118505Z
+20150917T102405:635780822455625051Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
