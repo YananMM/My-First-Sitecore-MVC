@@ -24,13 +24,16 @@
                     <div class="gd-content-details-heading">
                         @foreach (var item in children)
                         {
-                            if (item.TemplateID.ToString() == ItemGuids.ArticleObject)
+                            using (Html.EditFrame(item.ID))
                             {
-                                DateField storyDate = item.Fields["Article Date"];
-                                var date = LandmarkHelper.ToValidDateTime(storyDate);
-                                <h3>@Html.Sitecore().Field("Article Headline", item)</h3>
-                                <h5> @date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture) </h5>
-                                <h6> @Html.Sitecore().Field("Article Sub Headline", item) </h6>
+                                if (item.TemplateID.ToString() == ItemGuids.ArticleObject)
+                                {
+                                    DateField storyDate = item.Fields["Article Date"];
+                                    var date = LandmarkHelper.ToValidDateTime(storyDate);
+                                    <h3>@Html.Sitecore().Field("Article Headline", item)</h3>
+                                    <h5> @date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture) </h5>
+                                    <h6> @Html.Sitecore().Field("Article Sub Headline", item) </h6>
+                                }
                             }
                         }
                     </div>
@@ -45,40 +48,48 @@
                     <div class="gd-content-details-heading hidden-xs">
                         @foreach (var item in children)
                         {
-                            if (item.TemplateID.ToString() == ItemGuids.ArticleObject)
+                            using (Html.EditFrame(item.ID))
                             {
-                                DateField storyDate = item.Fields["Article Date"];
-                                var date = LandmarkHelper.ToValidDateTime(storyDate);
-                                <h3>@Html.Sitecore().Field("Article Headline", item)</h3>
-                                <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
-                                <h6>@Html.Sitecore().Field("Article Sub Headline", item)</h6>
+                                if (item.TemplateID.ToString() == ItemGuids.ArticleObject)
+                                {
+                                    DateField storyDate = item.Fields["Article Date"];
+                                    var date = LandmarkHelper.ToValidDateTime(storyDate);
+                                    <h3>@Html.Sitecore().Field("Article Headline", item)</h3>
+                                    <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
+                                    <h6>@Html.Sitecore().Field("Article Sub Headline", item)</h6>
+                                }
                             }
                         }
                     </div>
-
-                    @foreach (var item in children)
+                    @using (Html.EditFrame(currentItem.ID))
                     {
-                        if (item.TemplateID.ToString() == ItemGuids.ArticleObject)
+                        foreach (var item in children)
                         {
-                            <p>
-                                @Html.Sitecore().Field("Article Description", item)
-                            </p>
-                        }
-                        <div class="row">
-                            @if (item.TemplateID.ToString() == "{7830C468-324A-4216-B3B4-30C8EABA56B3}")
+                            using (Html.EditFrame(item.ID))
                             {
-                                <div class="col-sm-6">
-                                    <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image", item)">
+                                if (item.TemplateID.ToString() == ItemGuids.ArticleObject)
+                                {
+                                    @Html.Sitecore().Field("Article Description", item)
+                                }
+
+                                <div class="row">
+                                    @if (item.TemplateID.ToString() == "{7830C468-324A-4216-B3B4-30C8EABA56B3}")
+                                    {
+                                        <div class="col-sm-6">
+                                            <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image", item)">
+                                        </div>
+                                    }
                                 </div>
+                                if (item.TemplateID.ToString() == "{97AE2E0D-6A9F-4503-BC81-27EF29225C82}")
+                                {
+                                    <div class="little-list">
+                                        @Html.Sitecore().Field("Cover List Description", item)
+                                    </div>
+                                }
                             }
-                        </div>
-                        if (item.TemplateID.ToString() == "{97AE2E0D-6A9F-4503-BC81-27EF29225C82}")
-                        {
-                            <div class="little-list">
-                                @Html.Sitecore().Field("Cover List Description", item)
-                            </div>
                         }
                     }
+
                     <dl class="gd-content-details-tags">
                         <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
                         <dd>

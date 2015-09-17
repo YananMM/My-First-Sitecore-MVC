@@ -1,0 +1,49 @@
+﻿using Sitecore.Web.UI.WebControls;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using System.Web.UI;
+using Sitecore.Data;
+
+namespace Landmark.Helper
+{
+    public static class EditorFrameHelper
+    {
+        public static EditFrame EditFrameControl;
+
+        private class FrameEditor : IDisposable
+        {
+            private bool disposed;
+            private HtmlHelper html;
+
+            public FrameEditor(HtmlHelper html, ID id, string buttons = null)
+            {
+                this.html = html;
+                EditorFrameHelper.EditFrameControl = new EditFrame
+                {
+                    ID = id.ToString(),
+                    Buttons = buttons ?? "/sitecore/content/Applications/WebEdit/Edit Frame Buttons/Default"
+                };
+                HtmlTextWriter output = new HtmlTextWriter(html.ViewContext.Writer);
+                EditorFrameHelper.EditFrameControl.RenderFirstPart(output);
+            }
+
+            public void Dispose()
+            {
+                if (disposed) return;
+
+                disposed = true;
+
+                EditorFrameHelper.EditFrameControl.RenderLastPart(new HtmlTextWriter(html.ViewContext.Writer));
+                EditorFrameHelper.EditFrameControl.Dispose();
+            }
+        }
+
+        public static IDisposable EditFrame(this HtmlHelper html, ID id = null, string buttons = null)
+        {
+            return new FrameEditor(html, id, buttons);
+        }
+    }
+}
