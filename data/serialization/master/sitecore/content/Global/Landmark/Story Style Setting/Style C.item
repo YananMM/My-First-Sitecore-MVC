@@ -1,47 +1,47 @@
 ----item----
 version: 1
-id: {DEED1E20-84D2-497A-8CE6-FBD3EC7A11F1}
+id: {5F67048C-25C5-4496-962B-549B30D26D51}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T23 Page/Category Data
-parent: {2EE73BEB-F8DA-4F35-BB46-C1B0B8AC3945}
-name: Category Data
+path: /sitecore/content/Global/Landmark/Story Style Setting/Style C
+parent: {C189F80A-85D0-474C-A423-11802CE21680}
+name: Style C
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}
+templatekey: Text Object
 
 ----version----
 language: en
 version: 1
-revision: 8ba8df99-88a8-46dd-981f-51eed7a8982a
+revision: 8d78fd42-f5c1-4682-90ee-59fa841c941f
 
+----field----
+field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
+name: Value
+key: value
+content-length: 7
+
+Style C
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150909T074251Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
+20150917T113320Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-8ba8df99-88a8-46dd-981f-51eed7a8982a
+8d78fd42-f5c1-4682-90ee-59fa841c941f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150917T112609:635780859693744949Z
+20150917T113320:635780864009631804Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

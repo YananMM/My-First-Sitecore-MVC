@@ -24,11 +24,9 @@
             <div class="col-sm-6 pull-right">
                 <div class="gd-content-details visible-xs-block">
                     <div class="gd-content-details-heading">
-                        @{
-                            <h3>@Html.Sitecore().Field("Article Headline", currentItem)</h3>
-                            <h5> @date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture) </h5>
-                            <h6> @Html.Sitecore().Field("Article Sub Headline", currentItem) </h6>
-                        }
+                        <h3>@Html.Sitecore().Field("Article Headline", currentItem)</h3>
+                        <h5> @date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture) </h5>
+                        <h6> @Html.Sitecore().Field("Article Sub Headline", currentItem) </h6>
                     </div>
                 </div>
                 <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-withdes" data-ride="carousel">
@@ -39,34 +37,35 @@
                 <div class="gd-content-details">
 
                     <div class="gd-content-details-heading hidden-xs">
-                        @{
-                            <h3>@Html.Sitecore().Field("Article Headline", currentItem)</h3>
-                            <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
-                            <h6>@Html.Sitecore().Field("Article Sub Headline", currentItem)</h6>
-                        }
+                        <h3>@Html.Sitecore().Field("Article Headline", currentItem)</h3>
+                        <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
+                        <h6>@Html.Sitecore().Field("Article Sub Headline", currentItem)</h6>
                     </div>
 
                     @foreach (var item in children)
                     {
                         using (Html.EditFrame(item.ID))
                         {
-                            if (item.TemplateID.ToString() == ItemGuids.ArticleObject)
+                            if (item.TemplateID.ToString() == ItemGuids.TextContentTemplate)
                             {
                                 @Html.Sitecore().Field("Article Description", item)
                             }
-
-                            <div class="row">
-                                @*@if (item.TemplateID.ToString() == "{7830C468-324A-4216-B3B4-30C8EABA56B3}")
+                            else if (item.TemplateID.ToString() == ItemGuids.ImageFolderTemplate)
+                            {
+                                <div class="row">
+                                    foreach (var image in item.Children.ToList())
                                     {
-                                        <div class="col-sm-6">
-                                            <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image", item)">
-                                        </div>
-                                    }*@
-                            </div>
-                            if (item.TemplateID.ToString() == "{97AE2E0D-6A9F-4503-BC81-27EF29225C82}")
+                                    <div class="col-sm-6">
+                                        <img data-src="@Html.Sitecore().ImageFieldSrc("Image", image)">
+                                    </div>
+                                    }
+                                </div>
+
+                            }
+                            else if (item.TemplateID.ToString() == ItemGuids.UnorderedListTemplate)
                             {
                                 <div class="little-list">
-                                    @Html.Sitecore().Field("Cover List Description", item)
+                                    @Html.Sitecore().Field("Unordered List", item)
                                 </div>
                             }
                         }

@@ -36,7 +36,9 @@ namespace Landmark.Classes
         public static readonly String TextObject = "{55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}";
         public static readonly String RelatedItemViewGuid = "{19B03C96-4203-4877-8AC0-2D03E76DA38B}";
         public static readonly String ValetParkingPage = "{819779A7-6864-451A-83DA-703DF00AD09D}";
-
+        public static readonly String UnorderedListTemplate = "{17853181-56B2-4240-84FC-EFF772333FEC}";
+        public static readonly String TextContentTemplate = "{95710548-2E7F-4FD5-B97D-CAF1396CE80B}";
+        public static readonly String ImageFolderTemplate = "{EC3DBE3A-5E40-4B96-A67B-593FE8E67B72}";
         //item id
         //public static readonly String PanelsFolderItemGuid = "{3BB40D54-8F7F-449B-B9DB-432C65EB4224}";
         //public static readonly String AdvertTemplateItemGuid = "{32677AD3-AB70-49BF-A525-08493045C4FA}";

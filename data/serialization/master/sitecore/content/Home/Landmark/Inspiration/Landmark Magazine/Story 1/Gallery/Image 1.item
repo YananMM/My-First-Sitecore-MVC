@@ -1,26 +1,40 @@
 ----item----
 version: 1
-id: {DEED1E20-84D2-497A-8CE6-FBD3EC7A11F1}
+id: {AAB17DF2-8D0E-4384-8850-7EE8AC82D53B}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T23 Page/Category Data
-parent: {2EE73BEB-F8DA-4F35-BB46-C1B0B8AC3945}
-name: Category Data
+path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Story 1/Gallery/Image 1
+parent: {86690F49-EEED-4119-93E8-8985B4051CB0}
+name: Image 1
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {CFE5379F-402F-4FB5-A1C5-0E42CA464BC1}
+templatekey: Image Text Object
 
 ----version----
 language: en
 version: 1
-revision: 8ba8df99-88a8-46dd-981f-51eed7a8982a
+revision: 05784f81-4a18-48a5-8845-7367c17a111b
 
+----field----
+field: {0AB28A95-2EFC-4333-B617-155C738623C9}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{5F3817EC-39D0-40C2-9705-B7FCADB87CF5}" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150909T074251Z
+20150917T103721Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8ba8df99-88a8-46dd-981f-51eed7a8982a
+05784f81-4a18-48a5-8845-7367c17a111b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150917T112609:635780859693744949Z
+20150917T103906:635780831460250086Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
