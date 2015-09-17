@@ -21,7 +21,7 @@
                 @foreach (var it in item.Stories)
                 {
                     <div class="gd-slick-item">
-                        <img data-lazy="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", it)" />
+                        <img data-lazy="@LandmarkHelper.GetCallOutImage(it)" />
                         ><div class="gd-slick-des">
                             <h3>@Html.Sitecore().Field("Article Headline", it)</h3>
                             <p>@Html.Sitecore().Field("Article Intro", it)</p>

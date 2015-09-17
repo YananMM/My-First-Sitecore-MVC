@@ -32,7 +32,7 @@
             {
                 <a href="@Sitecore.Links.LinkManager.GetItemUrl(stories.First())">
                     <div class="col-sm-6">
-                        <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", stories.First())">
+                        <img data-src="@LandmarkHelper.GetCallOutImage(stories.First())">
                     </div>
                     <div class="col-sm-6">
                         <div class="gd-magazine-info-text">
@@ -69,7 +69,7 @@
                     <div class="col-sm-4">
                         <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
                             <div class="gd-promotion-box">
-                                <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", item)">
+                                <img data-src="@LandmarkHelper.GetCallOutImage(item)">
                                 <h4><a href="#">@Html.Sitecore().Field("Article Headline", item)</a></h4>
                                 @{
                     DateField itemDate = item.Fields["Article Date"];
@@ -91,7 +91,7 @@
                     <div class="col-sm-4">
                         <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
                             <div class="gd-promotion-box">
-                                <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", item)">
+                                <img data-src="@LandmarkHelper.GetCallOutImage(item)">
                                 <h4><a href="#">@Html.Sitecore().Field("Article Headline", item)</a></h4>
                                 @{
                     DateField itemDate = item.Fields["Article Date"];
