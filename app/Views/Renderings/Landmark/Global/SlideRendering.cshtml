@@ -39,7 +39,7 @@
             if (currentItem.TemplateID.ToString() == ItemGuids.T23PageTemplate)
             {
                 setting = helper.GetStorySetting(Sitecore.Context.Item);
-                <p @if (setting.StyleCD) { <text>
+                <p @if (setting == StorySetting.StyleCd) { <text>
                    class="gd-des-below text-center"
                    </text>      } else { <text>
                    class="gd-des-below"

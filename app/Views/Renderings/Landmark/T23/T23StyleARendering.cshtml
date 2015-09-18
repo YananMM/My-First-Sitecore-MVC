@@ -52,7 +52,7 @@
                             else if (item.TemplateID.ToString() == ItemGuids.ImageFolderTemplate)
                             {
                                 <div class="row">
-                                    foreach (var image in item.Children.ToList())
+                                    @foreach (var image in item.Children.ToList())
                                     {
                                     <div class="col-sm-6">
                                         <img data-src="@Html.Sitecore().ImageFieldSrc("Image", image)">

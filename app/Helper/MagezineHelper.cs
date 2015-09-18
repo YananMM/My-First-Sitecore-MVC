@@ -129,12 +129,12 @@ namespace Landmark.Helper
         /// <returns>StorySetting.</returns>
         public StorySetting GetStorySetting(Item item)
         {
-            var style = item.Fields["Page Style"].Item;
-            if (style.DisplayName == "Style A")
+            var style = item.Fields["Page Style"].ToString();
+            if (style == "Style A")
             {
                 return StorySetting.StyleA;
             }
-            else if (style.DisplayName == "Style B")
+            else if (style == "Style B")
             {
                 return StorySetting.StyleB;
             }

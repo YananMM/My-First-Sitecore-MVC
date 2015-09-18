@@ -19,8 +19,29 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: f4513332-4d5c-46f2-b020-331509ee1023
+revision: ba2fe0b0-4c9e-4cdb-9235-615bf5335f10
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 7
+
+Story 1
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 17
+
+laaaaaaaaaaaaaaaa
+----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Slider Image
+key: article slider image
+content-length: 283
+
+<image mediapath="/Images/Landmark/Inspirations/LandmarkMagazine/magazinemen01" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Inspirations/LandmarkMagazine/magazinemen01" mediaid="{E4D5EFB2-7C63-49E0-9796-939B550CC21B}" />
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -43,6 +64,13 @@ content-length: 7
 
 Style A
 ----field----
+field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
+name: Tags
+key: tags
+content-length: 155
+
+{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{585407EB-2AAB-454C-BB2B-2D9868FA53BA}|{1A1800EA-D40A-412C-970A-DBA534DC1F23}
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -55,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f4513332-4d5c-46f2-b020-331509ee1023
+ba2fe0b0-4c9e-4cdb-9235-615bf5335f10
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150917T113610:635780865706968886Z
+20150918T024155:635781409150052633Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
