@@ -11,6 +11,7 @@
     DateField storyDate = currentItem.Fields["Article Date"];
     var date = LandmarkHelper.ToValidDateTime(storyDate);
     var children = currentItem.Children.ToList();
+    CheckboxField inMiddel = currentItem.Fields["Block Text In Middle"];
 }
 <div class="container">
     <div class="gd-pagetitle">
@@ -50,37 +51,80 @@
                                 </div>
                             </div>
                         </div>
+                        @{
+                    FileField video = block.Fields["Video"];
+                    if (video.MediaItem != null)
+                    {
                         <div class="gd-bigpicture">
-                            @{
-                    var video = block.Fields["Video"];
-                    if (video != null)
-                    {
-                        <video class="gd-video" type="video/mp4" src="@Html.Sitecore().Field("Video", block)" width="100%" controls poster="@Html.Sitecore().ImageFieldSrc("Cover Image", block)"></video>
-                    }
-                    else
-                    {
-                        <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image", block)">
-                    }
-                            }
-
+                            <video class="gd-video" type="video/mp4" src="@Html.Sitecore().Field("Video", block)" width="100%" controls poster="@Html.Sitecore().ImageFieldSrc("Cover Image", block)"></video>
                         </div>
-                    </div>
-                    if (i == item.Children.Count)
-                    {
-                        <div class="gd-nd-slider-text">@Html.Sitecore().Field("Block Text")</div>
+                        if (i == item.Children.Count)
+                        {
+                        <div class="gd-nd-slider-text">@Html.Sitecore().Field("Block Text", currentItem)</div>
                         <dl class="gd-content-details-tags">
                             <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
                             <dd>
                                 @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
-                                   {
-                                       Cacheable = false,
-                                       CacheKey = "tags",
-                                       Cache_VaryByData = true
-                                   })
+                                        {
+                                            Cacheable = false,
+                                            CacheKey = "tags",
+                                            Cache_VaryByData = true
+                                        })
                             </dd>
                         </dl>
+                        }
+                    }
+                    else
+                    {
+                        if (inMiddel.Checked)
+                        {
+                        <div class="gd-bigpicture">
+                            <div class="gd-content-auto-width">
+                                <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image", block)">
+                                @if (i == item.Children.Count)
+                                    {
+                                <div class="gd-nd-slider-text">@Html.Sitecore().Field("Block Text", currentItem)</div>
+                                <dl class="gd-content-details-tags">
+                                    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
+                                    <dd>
+                                        @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
+                                                {
+                                                    Cacheable = false,
+                                                    CacheKey = "tags",
+                                                    Cache_VaryByData = true
+                                                })
+                                    </dd>
+                                </dl>
+                                    }
+                            </div>
+                        </div>
+                        }
+                        else
+                        {
+                        <div class="gd-bigpicture">
+                            <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image", block)">
+                        </div>
+                            if (i == item.Children.Count)
+                            {
+                        <div class="gd-nd-slider-text">@Html.Sitecore().Field("Block Text", currentItem)</div>
+                        <dl class="gd-content-details-tags">
+                            <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
+                            <dd>
+                                @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
+                                        {
+                                            Cacheable = false,
+                                            CacheKey = "tags",
+                                            Cache_VaryByData = true
+                                        })
+                            </dd>
+                        </dl>
+                            }
+                        }
                     }
                     i++;
+                        }
+                        }
+                    </div>
                 }
             }
         }
