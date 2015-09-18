@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {1B51D2BB-E8D2-4421-A075-F0A748D04D36}
+id: {67C7D89E-D84F-440E-A87F-0445847C06DF}
 database: master
-path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Story 1
+path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Story 3
 parent: {812D4614-C77D-4B0A-9729-D2FB3D830786}
-name: Story 1
+name: Story 3
 master: {019AAA6D-F7C8-4293-94EE-CF065B0A8A91}
 template: {2EE73BEB-F8DA-4F35-BB46-C1B0B8AC3945}
 templatekey: T23 Page
@@ -19,7 +19,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 6171b910-4101-415a-9c70-373fef641afe
+revision: 25417a14-ec2a-41ec-b5b4-b89662a5befd
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -27,28 +27,28 @@ name: Article Headline
 key: article headline
 content-length: 7
 
-Story 1
+Story 3
 ----field----
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 17
+content-length: 26
 
-laaaaaaaaaaaaaaaa
+33333333333333333333333333
 ----field----
-field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
-name: Article Slider Image
-key: article slider image
-content-length: 283
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 41
 
-<image mediapath="/Images/Landmark/Inspirations/LandmarkMagazine/magazinemen01" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Inspirations/LandmarkMagazine/magazinemen01" mediaid="{9438BEBA-1EFA-4705-936E-3F894F8967D6}" />
+33333333333333333333333333333333333333333
 ----field----
 field: {B966F61E-9F08-4674-AC01-EE1064020145}
 name: Article Date
 key: article date
 content-length: 16
 
-20150916T160000Z
+20150914T160000Z
 ----field----
 field: {BA2CB119-1C77-40AA-B95E-79014CAFD7AD}
 name: Magazine Category
@@ -62,49 +62,56 @@ name: Social Share Title
 key: social share title
 content-length: 7
 
-Story 1
+Story 3
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 7
 
-Story 1
+Story 3
 ----field----
 field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
 name: Page Style
 key: page style
 content-length: 7
 
-Style A
+Style C
 ----field----
 field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
 name: Tags
 key: tags
-content-length: 155
+content-length: 194
 
-{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{585407EB-2AAB-454C-BB2B-2D9868FA53BA}|{1A1800EA-D40A-412C-970A-DBA534DC1F23}
+{A869505D-8B56-42B6-9460-9928607C3BD3}|{83DA7F21-4D35-481C-B865-2A089D47AD10}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{8DEEBCDA-AC9C-4B0C-AF81-8E493D219713}|{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}
+----field----
+field: {9895039C-E7FC-40B8-848A-364F6472699A}
+name: Block Text
+key: block text
+content-length: 63
+
+LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED D
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150917T102405Z
+20150918T031828Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-6171b910-4101-415a-9c70-373fef641afe
+25417a14-ec2a-41ec-b5b4-b89662a5befd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150918T033421:635781440615882376Z
+20150918T075955:635781599956336128Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
