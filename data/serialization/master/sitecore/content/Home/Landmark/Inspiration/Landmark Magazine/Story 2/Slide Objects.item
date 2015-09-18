@@ -1,25 +1,25 @@
 ----item----
 version: 1
-id: {86690F49-EEED-4119-93E8-8985B4051CB0}
+id: {D7A76F93-DD51-4E97-B98F-7C6AE8C2124F}
 database: master
-path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Story 1/Gallery
-parent: {1B51D2BB-E8D2-4421-A075-F0A748D04D36}
-name: Gallery
-master: {019AAA6D-F7C8-4293-94EE-CF065B0A8A91}
-template: {EC3DBE3A-5E40-4B96-A67B-593FE8E67B72}
-templatekey: Images Folder
+path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Story 2/Slide Objects
+parent: {8C74A9B4-8717-405E-B5F8-BA750EBC09F5}
+name: Slide Objects
+master: {00000000-0000-0000-0000-000000000000}
+template: {EEEB8813-EBD2-415E-B4F0-72B52DDEF18E}
+templatekey: Slide Folder
 
 ----field----
-field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
-name: __Originator
-key: __originator
-content-length: 0
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 1
 
-
+0
 ----version----
 language: en
 version: 1
-revision: 02681099-10e0-4bb7-b3ea-12d14367784b
+revision: c6e17c3a-f1a0-4cd2-a959-8c538b81ecf6
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -27,21 +27,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150917T102405Z
+20150909T082451Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-02681099-10e0-4bb7-b3ea-12d14367784b
+c6e17c3a-f1a0-4cd2-a959-8c538b81ecf6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150917T102405:635780822457785174Z
+20150909T082456:635773838963736787Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

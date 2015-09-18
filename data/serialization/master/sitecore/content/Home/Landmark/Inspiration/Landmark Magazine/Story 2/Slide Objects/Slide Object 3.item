@@ -1,47 +1,47 @@
 ----item----
 version: 1
-id: {46D8EC6C-7FE1-4568-8AEA-3E6DE52A20F4}
+id: {069E7CFB-9536-48E4-A2EB-0751B55DB4D3}
 database: master
-path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Magazine Category
-parent: {812D4614-C77D-4B0A-9729-D2FB3D830786}
-name: Magazine Category
+path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Story 2/Slide Objects/Slide Object 3
+parent: {D7A76F93-DD51-4E97-B98F-7C6AE8C2124F}
+name: Slide Object 3
 master: {00000000-0000-0000-0000-000000000000}
-template: {2DB904A7-2885-422F-8B86-6767049FC749}
-templatekey: T37 Page
+template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
+templatekey: Slide Object
 
 ----version----
 language: en
 version: 1
-revision: a03c5ce5-117c-46a1-8cc6-155b13ecf592
+revision: 0d821460-25a4-4429-8715-21c28a924bb1
 
 ----field----
-field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
-name: Page Title
-key: page title
-content-length: 17
+field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
+name: Slide Image
+key: slide image
+content-length: 58
 
-Magazine Category
+<image mediaid="{F310CC1C-A968-457C-B95E-E46594BB79FB}" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150909T074544Z
+20150909T082526Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-a03c5ce5-117c-46a1-8cc6-155b13ecf592
+0d821460-25a4-4429-8715-21c28a924bb1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150909T074544:635773815443871528Z
+20150915T091838:635779055184484155Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
