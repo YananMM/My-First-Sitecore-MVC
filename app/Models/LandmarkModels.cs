@@ -227,15 +227,13 @@ namespace Landmark.Models
     {
         public Item MagazineCategory { get; set; }
 
-        public List<Item> Stories { get; set; } 
+        public List<Item> Stories { get; set; }
     }
 
-    public class StorySetting
+    public enum StorySetting
     {
-        public bool StyleA { get; set; }
-
-        public bool StyleB { get; set; }
-
-        public bool StyleCD { get; set; }
+        StyleA,
+        StyleB,
+        StyleCd
     }
 }

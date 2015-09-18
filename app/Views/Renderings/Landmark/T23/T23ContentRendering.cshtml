@@ -8,17 +8,17 @@
     var currentItem = Sitecore.Context.Item;
     MagezineHelper helper = new MagezineHelper();
     var setting = helper.GetStorySetting(currentItem);
-  
+
 }
-@if (setting.StyleA)
+@if (setting == StorySetting.StyleA)
 {
     @Html.Sitecore().Placeholder("style-a")
 }
-else if (setting.StyleB)
+else if (setting == StorySetting.StyleB)
 {
     @Html.Sitecore().Placeholder("style-b")
 }
-else if (setting.StyleCD)
+else if (setting == StorySetting.StyleB)
 {
     @Html.Sitecore().Placeholder("style-cd")
 }

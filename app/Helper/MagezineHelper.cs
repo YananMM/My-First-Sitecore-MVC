@@ -129,16 +129,19 @@ namespace Landmark.Helper
         /// <returns>StorySetting.</returns>
         public StorySetting GetStorySetting(Item item)
         {
-            CheckboxField a = item.Fields["Slider on Right - style A"];
-            CheckboxField b = item.Fields["Slider on Top not Fill the screen - style B"];
-            CheckboxField c = item.Fields["Slider Fill the Screen - style C and D"];
-            StorySetting setting = new StorySetting
+            var style = item.Fields["Page Style"].Item;
+            if (style.DisplayName == "Style A")
             {
-                StyleA = a.Checked,
-                StyleB = b.Checked,
-                StyleCD = c.Checked,
-            };
-            return setting;
+                return StorySetting.StyleA;
+            }
+            else if (style.DisplayName == "Style B")
+            {
+                return StorySetting.StyleB;
+            }
+            else
+            {
+                return StorySetting.StyleCd;
+            }
         }
 
         public List<Item> GetRelatedBrands()
@@ -148,6 +151,6 @@ namespace Landmark.Helper
 
 
             return brands;
-        } 
+        }
     }
 }
