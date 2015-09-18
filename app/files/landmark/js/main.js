@@ -65,7 +65,8 @@ getResponseEnv = function(){
     : isPad()
       ? 'pad'
       : 'phone';
-};
+},
+isEditMode = /[?&]sc_mode=edit\b/.test(window.location.href);
 
 jQuery(function($){
 $(document).ready(function() {
@@ -572,7 +573,7 @@ $(document).ready(function() {
         if ($slider.length && !$slider.data('slider')){
           var slider = $slider.bxSlider({
             speed: 1000,
-            auto: true,
+            auto: !isEditMode,
             pause: 5000,
             pager: false,
             controls: false,
@@ -2120,9 +2121,9 @@ $(document).ready(function() {
   $('.gd-tab-intro').on('click', '.tab-pane-switch', function() {
     var gdCurrentPane    = $(this).next();
     if (gdCurrentPane.hasClass('active')) {
-      $(this).find('span').text('+');
+      $(this).find('span').attr('class', 'off');
     } else {
-      $(this).find('span').text('-');
+      $(this).find('span').attr('class', 'on');
     }
     gdCurrentPane.toggleClass('in active');
     $('body').trigger('scroll');
