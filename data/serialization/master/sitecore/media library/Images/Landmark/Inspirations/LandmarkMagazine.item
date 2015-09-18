@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {0819E0BC-2ECD-4F3D-9E7D-C8E6CA05816E}
+id: {32E81967-D493-47B9-BB4B-A1E08A5BAAB8}
 database: master
-path: /sitecore/media library/Images/Landmark/Inspiration
-parent: {B8216A31-1396-4143-9866-AA4859AE8C3E}
-name: Inspiration
+path: /sitecore/media library/Images/Landmark/Inspirations/LandmarkMagazine
+parent: {7990EB43-DA51-45B3-89D6-C7A25DEFC680}
+name: LandmarkMagazine
 master: {00000000-0000-0000-0000-000000000000}
 template: {FE5DD826-48C6-436D-B87A-7C4210C7413B}
 templatekey: Media folder
@@ -12,7 +12,7 @@ templatekey: Media folder
 ----version----
 language: en
 version: 1
-revision: ccdc452a-1d26-4331-9cce-d592b464fd31
+revision: 7a58ab9a-025a-49d6-864e-7708ffff3abb
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -20,7 +20,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150908T045938Z
+20150910T024953Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ccdc452a-1d26-4331-9cce-d592b464fd31
+7a58ab9a-025a-49d6-864e-7708ffff3abb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150908T045938Z
+20150915T091521:635779053214881501Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

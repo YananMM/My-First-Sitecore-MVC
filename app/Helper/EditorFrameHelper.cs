@@ -18,12 +18,12 @@ namespace Landmark.Helper
             private bool disposed;
             private HtmlHelper html;
 
-            public FrameEditor(HtmlHelper html, ID id, string buttons = null)
+            public FrameEditor(HtmlHelper html, string dataSource = null, string buttons = null)
             {
                 this.html = html;
                 EditorFrameHelper.EditFrameControl = new EditFrame
                 {
-                    ID = id.ToString(),
+                    DataSource = dataSource ?? "/sitecore/content/home",
                     Buttons = buttons ?? "/sitecore/content/Applications/WebEdit/Edit Frame Buttons/Default"
                 };
                 HtmlTextWriter output = new HtmlTextWriter(html.ViewContext.Writer);
@@ -41,9 +41,9 @@ namespace Landmark.Helper
             }
         }
 
-        public static IDisposable EditFrame(this HtmlHelper html, ID id = null, string buttons = null)
+        public static IDisposable EditFrame(this HtmlHelper html, string dataSource = null, string buttons = null)
         {
-            return new FrameEditor(html, id, buttons);
+            return new FrameEditor(html, dataSource, buttons);
         }
     }
 }
