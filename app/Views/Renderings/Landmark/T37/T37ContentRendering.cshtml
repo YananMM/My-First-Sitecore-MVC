@@ -11,7 +11,6 @@
     var stories = helper.GetStoriesByPager(Request["type"], Convert.ToInt32(Request["page"]));
     List<Item> list1 = new ItemList();
     List<Item> list2 = new ItemList();
-
 }
 
 <div class="container">
@@ -48,7 +47,8 @@
                 </a> }
         </div>
     </div>
-    @{
+    @if (stories.Count > 1)
+    {
         var storyList = stories.GetRange(1, stories.Count - 1).ToList();
         if (storyList.Count >= 3)
         {

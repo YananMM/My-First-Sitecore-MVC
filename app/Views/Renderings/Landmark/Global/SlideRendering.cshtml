@@ -5,7 +5,7 @@
 @model RenderingModel
 @{
     // var slides = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.SlideObjectTemplate);
-    var slideFolder = Sitecore.Context.Item.Children.SingleOrDefault(p => p.TemplateID.ToString() == "{EEEB8813-EBD2-415E-B4F0-72B52DDEF18E}");
+    var slideFolder = Sitecore.Context.Item.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.SlideFolderTemplate);
     var slides = slideFolder.Children.ToList();
     MagezineHelper helper = new MagezineHelper();
 }
@@ -15,7 +15,7 @@
     {
         <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{if (i == 0) { <text>
             class="active"
-            </text>                        }}></li>
+            </text>                         }}></li>
     }
 </ol>
 <!-- Wrapper for slides -->
@@ -26,9 +26,9 @@
         {
             <div @{ if (j == 0) { <text>
                  class="item active"
-                 </text>                    } else { <text>
+                 </text>                     } else { <text>
                  class="item"
-                 </text>                    } }>
+                 </text>                     } }>
                 @{
             j++;
                 }
@@ -39,12 +39,15 @@
             if (currentItem.TemplateID.ToString() == ItemGuids.T23PageTemplate)
             {
                 setting = helper.GetStorySetting(Sitecore.Context.Item);
-                <p @if (setting == StorySetting.StyleCd) { <text>
-                   class="gd-des-below text-center"
-                   </text>      } else { <text>
-                   class="gd-des-below"
-                   </text>      }>
-                    @Html.Sitecore().Field("Slide Title", item)
+                <p @if (setting == StorySetting.StyleCd)
+                { <text>
+                    class="gd-des-below text-center"
+                </text>      }
+                else
+                { <text>
+                    class="gd-des-below"
+                </text>      }>
+                @Html.Sitecore().Field("Slide Title", item)
                 </p>
             }
                 }

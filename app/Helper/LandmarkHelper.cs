@@ -182,7 +182,7 @@ namespace Landmark.Helper
             return _webDb.SelectItems(query).ToList();
         }
 
-        public static List<Item> GetItemByTemplate(Item parent,string templateId)
+        public static List<Item> GetItemByTemplate(Item parent, string templateId)
         {
             var query = string.Format("fast:{0}//*[{1}]", parent.Paths.FullPath, "@@TemplateId='" + templateId + "'");
             List<Item> slidesItems = _webDb.SelectItems(query).OrderBy(i => i.DisplayName).ToList();
@@ -225,7 +225,7 @@ namespace Landmark.Helper
             if (tagsField != null)
             {
                 var parentItem = item.Parent;
-                foreach (Item child in GetItemByTemplate(parentItem,ItemGuids.T4PageTemplate))
+                foreach (Item child in GetItemByTemplate(parentItem, ItemGuids.T4PageTemplate))
                 {
                     if (child.ID.ToString() != item.ID.ToString())
                     {
@@ -333,12 +333,18 @@ namespace Landmark.Helper
             if (imageField != null && imageField.MediaItem != null)
             {
                 Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(imageField.MediaItem);
-                imageURL = Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
+                imageURL = Sitecore.StringUtil.EnsurePrefix('/',
+                    Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
             }
             else
             {
-                Item slider = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.SlideObjectTemplate).FirstOrDefault();
-                imageURL = FileFieldSrc("Slide Image",slider);
+                Item slider =
+                    LandmarkHelper.GetItemByTemplate(item, ItemGuids.SlideObjectTemplate)
+                        .FirstOrDefault();
+                if (slider != null)
+                {
+                    imageURL = FileFieldSrc("Slide Image", slider);
+                }
             }
             return imageURL;
         }

@@ -105,6 +105,7 @@ namespace Landmark.Classes
         public static readonly String LandmarkMagazineFolder = "{3316BC5E-C1E1-4D24-AD86-4BC25D214996}";
         public static readonly String MagazineCategoryPage = "{46D8EC6C-7FE1-4568-8AEA-3E6DE52A20F4}";
         public static readonly String LandmarkMaganizePage = "{812D4614-C77D-4B0A-9729-D2FB3D830786}";
+        public static readonly String SlideFolderTemplate = "{EEEB8813-EBD2-415E-B4F0-72B52DDEF18E}";
 
 
         //item 
