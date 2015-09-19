@@ -19,7 +19,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: ba2fe0b0-4c9e-4cdb-9235-615bf5335f10
+revision: 6171b910-4101-415a-9c70-373fef641afe
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -41,7 +41,21 @@ name: Article Slider Image
 key: article slider image
 content-length: 283
 
-<image mediapath="/Images/Landmark/Inspirations/LandmarkMagazine/magazinemen01" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Inspirations/LandmarkMagazine/magazinemen01" mediaid="{E4D5EFB2-7C63-49E0-9796-939B550CC21B}" />
+<image mediapath="/Images/Landmark/Inspirations/LandmarkMagazine/magazinemen01" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Inspirations/LandmarkMagazine/magazinemen01" mediaid="{9438BEBA-1EFA-4705-936E-3F894F8967D6}" />
+----field----
+field: {B966F61E-9F08-4674-AC01-EE1064020145}
+name: Article Date
+key: article date
+content-length: 16
+
+20150916T160000Z
+----field----
+field: {BA2CB119-1C77-40AA-B95E-79014CAFD7AD}
+name: Magazine Category
+key: magazine category
+content-length: 38
+
+{8CBE1EA5-CE5A-4D15-AEFD-F65BC164C06B}
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -83,14 +97,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ba2fe0b0-4c9e-4cdb-9235-615bf5335f10
+6171b910-4101-415a-9c70-373fef641afe
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150918T024155:635781409150052633Z
+20150918T033421:635781440615882376Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

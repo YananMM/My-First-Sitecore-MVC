@@ -6,8 +6,7 @@
 @model RenderingModel
 @{
     var currentItem = Sitecore.Context.Item;
-    MagezineHelper helper = new MagezineHelper();
-    var setting = helper.GetStorySetting(currentItem);
+   
     DateField storyDate = currentItem.Fields["Article Date"];
     var date = LandmarkHelper.ToValidDateTime(storyDate);
 }
@@ -27,26 +26,12 @@
     </div>
 
     <div class="gd-content-details">
-        <p>
-            @Html.Sitecore().Field("Article Intro")
-        </p>
-        <div class="row">
-            <div class="col-sm-4"><img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image 1", currentItem)"></div>
-            <div class="col-sm-4"><img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image 1", currentItem)"></div>
-        </div>
-        <div class="little-list">
-            @Html.Sitecore().Field("Cover List Description")
-        </div>
-
-        <dl class="gd-content-details-tags">
-            <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
-            <dd>@Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
-                {
-                    Cacheable = false,
-                    CacheKey = "tags",
-                    Cache_VaryByData = true
-                })</dd>
-        </dl>
+        @Html.Sitecore().Rendering(ItemGuids.T23AbCommonRendering, new
+                            {
+                                Cacheable = false,
+                                CacheKey = "ab-common",
+                                Cache_VaryByData = true
+                            })
     </div>
     @Html.Sitecore().Placeholder("t23-related")
 </div>

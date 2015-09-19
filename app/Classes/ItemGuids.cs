@@ -32,13 +32,16 @@ namespace Landmark.Classes
         //public static readonly String T14TagsRenderingViewGuid = "{303EA462-99C6-447B-B3AA-C4F4F0441549}";
         public static readonly String T14AlsoOnFloorRenderingViewGuid = "{E4C9F730-0F32-481A-A631-814E9DD01CF0}";
         public static readonly String T14YouMayAlsoLikeRenderingViewGuid = "{3D3C605D-3A95-4D71-8206-C403D66EB91A}";
-        
+        public static readonly String T23AbCommonRendering = "{50BAA888-14DE-49EE-ADEE-F2C50EE0F41C}";
+
+
         public static readonly String TextObject = "{55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}";
         public static readonly String RelatedItemViewGuid = "{19B03C96-4203-4877-8AC0-2D03E76DA38B}";
         public static readonly String ValetParkingPage = "{819779A7-6864-451A-83DA-703DF00AD09D}";
         public static readonly String UnorderedListTemplate = "{17853181-56B2-4240-84FC-EFF772333FEC}";
         public static readonly String TextContentTemplate = "{95710548-2E7F-4FD5-B97D-CAF1396CE80B}";
         public static readonly String ImageFolderTemplate = "{EC3DBE3A-5E40-4B96-A67B-593FE8E67B72}";
+        public static readonly String MultipleVisualBlocksTemplate = "{C9307810-5FD7-4B38-9DA0-F50538F83F7D}";
         //item id
         //public static readonly String PanelsFolderItemGuid = "{3BB40D54-8F7F-449B-B9DB-432C65EB4224}";
         //public static readonly String AdvertTemplateItemGuid = "{32677AD3-AB70-49BF-A525-08493045C4FA}";
@@ -86,7 +89,7 @@ namespace Landmark.Classes
         public static readonly String T27Page = "{A46D7A20-B29F-4C4F-8922-0B70555CD6BC}";
         public static readonly String T23PageTemplate = "{2EE73BEB-F8DA-4F35-BB46-C1B0B8AC3945}";
         public static readonly String T22PageTemplate = "{7B7A336C-48D6-4CD7-BC35-A4593F16F2D0}";
-		public static readonly String PageNotFoundItem = "{74CD14D9-357D-4514-AE09-744348A4F6E0}";
+        public static readonly String PageNotFoundItem = "{74CD14D9-357D-4514-AE09-744348A4F6E0}";
         public static readonly String T35GetDirectionPage = "{AE130080-B8B6-4D9E-B863-C88DC329B657}";
         public static readonly String T35SurroundingPage = "{54824316-017A-4B94-AD8E-F636473B510A}";
         public static readonly String ContactUsPage = "{5EC2DEF7-B8CE-45CD-96CD-9967773B5808}";

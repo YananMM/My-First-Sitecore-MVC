@@ -1,0 +1,55 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@using Landmark.Models
+@model RenderingModel
+@{
+    var currentItem = Sitecore.Context.Item;
+    MagezineHelper helper = new MagezineHelper();
+    var setting = helper.GetStorySetting(currentItem);
+
+    var children = currentItem.Children.ToList();
+}
+@using (Html.EditFrame(currentItem.Paths.FullPath))
+{
+    foreach (var item in children)
+    {
+        using (Html.EditFrame(item.Paths.FullPath))
+        {
+            if (item.TemplateID.ToString() == ItemGuids.TextContentTemplate)
+            {
+                @Html.Sitecore().Field("Article Description", item)
+            }
+            else if (item.TemplateID.ToString() == ItemGuids.ImageFolderTemplate)
+            {
+                <div class="row">
+                    @foreach (var image in item.Children.ToList())
+                    {
+                        <div @if (setting == StorySetting.StyleA) { <text> class="col-sm-6" </text>  } else if (setting == StorySetting.StyleB) { <text> class="col-sm-4" </text>  }>
+                            <img data-src="@Html.Sitecore().ImageFieldSrc("Image", image)">
+                        </div>
+                    }
+                </div>
+
+            }
+            else if (item.TemplateID.ToString() == ItemGuids.UnorderedListTemplate)
+            {
+                <div class="little-list">
+                    @Html.Sitecore().Field("Unordered List", item)
+                </div>
+            }
+        }
+    }
+}
+<dl class="gd-content-details-tags">
+    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
+    <dd>
+        @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
+                            {
+                                Cacheable = false,
+                                CacheKey = "tags",
+                                Cache_VaryByData = true
+                            })
+    </dd>
+</dl>
