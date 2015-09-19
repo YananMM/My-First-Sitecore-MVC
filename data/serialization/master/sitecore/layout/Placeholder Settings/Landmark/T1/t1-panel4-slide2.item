@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {826AC1A3-A164-44E0-AD55-8592EF04B1F7}
+id: {E48DF425-F49C-4B4B-AD4F-A713CB6E3CF8}
 database: master
-path: /sitecore/layout/Placeholder Settings/Landmark/T1/t1-panels
+path: /sitecore/layout/Placeholder Settings/Landmark/T1/t1-panel4-slide2
 parent: {3D738797-2FAA-493F-8188-60D311B91813}
-name: t1-panels
+name: t1-panel4-slide2
 master: {00000000-0000-0000-0000-000000000000}
 template: {5C547D4E-7111-4995-95B0-6B561751BF2E}
 templatekey: Placeholder
@@ -13,49 +13,42 @@ templatekey: Placeholder
 field: {7256BDAB-1FD2-49DD-B205-CB4873D2917C}
 name: Placeholder Key
 key: placeholder key
-content-length: 9
+content-length: 16
 
-t1-panels
+t1-panel4-slide2
 ----field----
 field: {E391B526-D0C5-439D-803E-17512EAE6222}
 name: Allowed Controls
 key: allowed controls
-content-length: 155
+content-length: 38
 
-{AE88466F-20AD-4773-AFB6-7E224A5CDA0B}|{0CA551B3-ED12-4121-B2A0-6F00AE808646}|{0F773A41-C5EF-4064-BAEF-319A60F6BF84}|{CEAC41A9-4324-4AA0-9AC9-2F854BEB1BB3}
+{959E1564-6DE9-4CB0-B761-5C64ED3BFEB2}
 ----version----
 language: en
 version: 1
-revision: e9924858-afc8-411d-9819-74ffea2c7ac7
+revision: 29ab4e38-aea7-4316-ba64-87d5128d5793
 
-----field----
-field: {87871FF5-1965-46D6-884F-01D6A0B9C4C1}
-name: Description
-key: description
-content-length: 19
-
-add panels here<br>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150917T092028Z
+20150919T160634Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-e9924858-afc8-411d-9819-74ffea2c7ac7
+29ab4e38-aea7-4316-ba64-87d5128d5793
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150918T005904Z
+20150919T160831Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

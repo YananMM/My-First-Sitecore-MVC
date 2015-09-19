@@ -6,6 +6,7 @@ using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Mvc.Helpers;
 using Sitecore.Data.Items;
+using Sitecore.Mvc.Presentation;
 
 namespace Landmark.Helper
 {
@@ -60,6 +61,12 @@ namespace Landmark.Helper
                 fileUrl = Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
             }
             return fileUrl;
+        }
+
+        public static HtmlString DynamicPlaceholder(this Sitecore.Mvc.Helpers.SitecoreHelper helper, string dynamicKey)
+        {
+            var currentRenderingId = RenderingContext.Current.Rendering.UniqueId;
+            return helper.Placeholder(string.Format("{0}_{1}", dynamicKey, currentRenderingId));
         }
     }
 

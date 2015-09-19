@@ -66,7 +66,15 @@ getResponseEnv = function(){
       ? 'pad'
       : 'phone';
 },
-isEditMode = /[?&]sc_mode=edit\b/.test(window.location.href);
+getScMode =  function (){
+  if (window.Sitecore) { 
+    if (Sitecore.PageModes.PageEditor) {
+     return 'pageeditor'; 
+    }
+    return 'preview'; 
+  } 
+  return 'visitor'; 
+};
 
 jQuery(function($){
 $(document).ready(function() {
@@ -573,7 +581,7 @@ $(document).ready(function() {
         if ($slider.length && !$slider.data('slider')){
           var slider = $slider.bxSlider({
             speed: 1000,
-            auto: !isEditMode,
+            autoStart: getScMode() != 'pageeditor',
             pause: 5000,
             pager: false,
             controls: false,
@@ -587,7 +595,7 @@ $(document).ready(function() {
               }, 100)
             },
             onSlideAfter: function(){
-              $(window).trigger('lazyupdate')
+              $(window).trigger('scroll');
             }
           });
           $slider.data('slider', slider);
@@ -688,7 +696,7 @@ $(document).ready(function() {
           $(window).trigger('scroll');
           $(window).lazyLoadXT();
           var slider = $('.panel-area:eq('+slideIndex+') .slider', $layout).data('slider');
-          if (slider){
+          if (slider && getScMode() != 'pageeditor'){
             slider.startAuto();
           }
         });
