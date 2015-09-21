@@ -15,6 +15,7 @@
           <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Email" Type="nvarchar" MaxLength="255" Nullable="false" />
           <Property Name="Channel" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Interest" Type="nvarchar" MaxLength="255" Nullable="false" />
           <Property Name="Room" Type="nvarchar" MaxLength="50" />
           <Property Name="Building" Type="nvarchar" MaxLength="50" />
           <Property Name="Street" Type="nvarchar" MaxLength="50" />
@@ -45,6 +46,7 @@
           <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="Channel" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Interest" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="Room" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Building" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Street" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -73,6 +75,7 @@
                 <ScalarProperty Name="Street" ColumnName="Street" />
                 <ScalarProperty Name="Building" ColumnName="Building" />
                 <ScalarProperty Name="Room" ColumnName="Room" />
+                <ScalarProperty Name="Interest" ColumnName="Interest" />
                 <ScalarProperty Name="Channel" ColumnName="Channel" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="LastName" ColumnName="LastName" />

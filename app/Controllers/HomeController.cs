@@ -186,6 +186,33 @@ namespace Landmark.Controllers
 
         public ActionResult AddEmailSignup(EmailSignupModel model)
         {
+            if (ModelState.IsValid)
+            {
+                using (LandmarkSitecore_MasterEntities context = new LandmarkSitecore_MasterEntities())
+                {
+                    EmailSignup emailSignup = new EmailSignup
+                    {
+                        ID = Guid.NewGuid(),
+                        Title = model.Title,
+                        FirstName = model.FirstName,
+                        LastName = model.LastName,
+                        Email = model.Email,
+                        Channel = model.Channel,
+                        Interest = model.Interests,
+                        Room = model.Room,
+                        Building = model.Building,
+                        Street = model.Street,
+                        Area = model.Area,
+                        State = model.State,
+                        City = model.City,
+                        Country = model.Country,
+                        Postcode = model.Postcode,
+                        District = model.District,
+                    };
+                    context.EmailSignups.Add(emailSignup);
+                    context.SaveChanges();
+                }
+            }
 
             return View();
         }

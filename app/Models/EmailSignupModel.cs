@@ -112,5 +112,11 @@ namespace Landmark.Models
         /// </summary>
         /// <value>The country.</value>
         public string Country { get; set; }
+
+        /// <summary>
+        /// Gets or sets the interest.
+        /// </summary>
+        /// <value>The interest.</value>
+        public string Interests { get; set; }
     }
 }
