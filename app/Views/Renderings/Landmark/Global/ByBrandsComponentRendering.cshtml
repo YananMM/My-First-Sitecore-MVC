@@ -1,16 +1,20 @@
-﻿@using Landmark.Helper
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Items
 @model RenderingModel
 
 @{
     ShoppingHelper shoppingHelper=new ShoppingHelper();
     string[] alphabetsStrings = new[] {"a", "b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
+    Item allbrandsItem = Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage);
 }
 
 @for (int i = 0; i<alphabetsStrings.Length; i++)
 {
     if (shoppingHelper.IfBrandsAlphabetValid(alphabetsStrings[i]))
     {
-        <li><a href="#@alphabetsStrings[i].ToLower()">@alphabetsStrings[i].ToUpper()</a></li>
+        string href=Sitecore.Links.LinkManager.GetItemUrl(allbrandsItem)+"#"+alphabetsStrings[i].ToLower();
+        <li><a href="@href">@alphabetsStrings[i].ToUpper()</a></li>
     }
     else
     {
