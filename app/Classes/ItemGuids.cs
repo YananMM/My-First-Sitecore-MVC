@@ -96,6 +96,7 @@ namespace Landmark.Classes
         public static readonly String ThankYouPage = "{C6045FFE-5883-49F7-AC6E-653919640DDB}";
         public static readonly String OverviewPage = "{7C88DA46-5C88-465B-8F12-BBEC6991D8CB}";
         public static readonly String MonthlyExclusivePage = "{923DBE58-71DE-4B27-B0BA-C5DEF3D301B2}";
+        public static readonly String InterestsFolder = "{840B3FE7-8EEA-4D6D-9797-4B799BDDF1A8}";
         //search template
         public static readonly String SearchResultsPage = "{4452D078-3946-43F3-9B42-84000F96BF5A}";
         public static readonly String HotelSlideObject = "{93B5F609-2F05-42E3-ABB2-9D903169CF9D}";

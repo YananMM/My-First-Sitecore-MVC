@@ -184,8 +184,9 @@ namespace Landmark.Controllers
         }
 
 
-        public ActionResult AddEmailSignup()
+        public ActionResult AddEmailSignup(EmailSignupModel model)
         {
+
             return View();
         }
 

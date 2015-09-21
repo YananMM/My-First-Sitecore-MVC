@@ -42,6 +42,12 @@ namespace Landmark.Models
         public string FirstName { get; set; }
 
         /// <summary>
+        /// Gets or sets the last name.
+        /// </summary>
+        /// <value>The last name.</value>
+        public string LastName { get; set; }
+
+        /// <summary>
         /// Gets or sets the email.
         /// </summary>
         /// <value>The email.</value>

@@ -1,0 +1,302 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@model RenderingModel
+@{
+    var currentItem = Sitecore.Context.Item;
+    var interestsFolder = currentItem.Children.SingleOrDefault(p => p.DisplayName == "Interests");
+    var countryFolder = currentItem.Children.SingleOrDefault(p => p.DisplayName == "Countries");
+    var channelFolder = currentItem.Children.SingleOrDefault(p => p.DisplayName == "Channels");
+    var titleFolder = currentItem.Children.SingleOrDefault(p => p.DisplayName == "Title Selects");
+    var districtFolder = currentItem.Children.SingleOrDefault(p => p.DisplayName == "Districts");
+    var interest = interestsFolder.Children.ToList();
+    var countries = countryFolder.Children.ToList();
+    var channels = channelFolder.Children.ToList();
+    var titleSelects = titleFolder.Children.ToList();
+    var districts = districtFolder.Children.ToList();
+}
+<div class="container">
+    <div class="gd-pagetitle">
+        <div class="gd-pagetitle-heading">
+            <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
+        </div>
+    </div>
+</div>
+<div class="container gd-form-contents">
+    <div class="gd-contact">
+        <div class="gd-contact-area">
+            <div class="gd-contact-body">
+                <form class="gd-contact-form" name="gd-contact-form" action="@Url.Action("AddEmailSignup", "Home")" method="POST">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="gd-contact-intro">
+                                <p>
+                                    @Html.Sitecore().Field("Page Description")
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="title">@Html.Sitecore().Field("Title Label") *</label>
+                                        <div class="dropdown gd-dropdown gd-dropdown-fill">
+                                            <!-- User's selection will be stored here -->
+                                            <input type="hidden" name="Title" data-error="Title is missing.">
+                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                <span class="current">@Html.Sitecore().Field("Select Label")T</span>
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                @if (titleSelects.Count != 0)
+                                                {
+                                                    foreach (var item in titleSelects)
+                                                    {
+                                                        <li><a href="javascript:;" data-value="@item.Fields["Value"]">@item.Fields["Value"].</a></li>
+                                                    }
+                                                }
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="firstname">@Html.Sitecore().Field("First Name") *</label>
+                                        <input type="text" class="form-control" id="firstname" name="FirstName" data-error="First name is missing.">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="lastname">@Html.Sitecore().Field("Last Name") *</label>
+                                        <input type="text" class="form-control" id="lastname" name="LastName" data-error="Last name is missing.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="email">@Html.Sitecore().Field("Email Label") *</label>
+                                        <input type="email" class="form-control" id="email" name="Email" data-error="Email is missing or Email format is invalid.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label for="title">@Html.Sitecore().Field("Channels Label")</label>
+                                        <div class="dropdown gd-dropdown gd-dropdown-fill" id="gd-preferred-comm">
+                                            <!-- User's selection will be stored here -->
+                                            <input type="hidden" name="Channel" value="0">
+                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                @if (channels.Count != 0)
+                                                {
+                                                    int i = 1;
+                                                    foreach (var item in channels)
+                                                    {
+                                                        <span @if (i == 1) { <text> class="current" </text>      } else { <text> class="caret" </text>    }>@item.Fields["Value"]</span>
+                                                    }
+                                                }
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                @if (channels.Count != 0)
+                                                {
+                                                    foreach (var item in channels)
+                                                    {
+                                                        <li><a href="javascript:;" data-value="@item.Fields["Value"]">@item.Fields["Value"]</a></li>
+                                                    }
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gd-subforms" id="gd-subforms">
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane fade in active"></div>
+                                    <div class="tab-pane fade">
+                                        <p>@Html.Sitecore().Field("Postal Address")</p>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="room">@Html.Sitecore().Field("Room Label") *</label>
+                                                    <input type="text" class="form-control" id="room" name="Room" data-error="Room is missing.">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="building">@Html.Sitecore().Field("Building Label") *</label>
+                                                    <input type="text" class="form-control" id="building" name="Building" data-error="Building is missing.">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="street">@Html.Sitecore().Field("Street Label") *</label>
+                                                    <input type="text" class="form-control" id="street" name="Street" data-error="Street is missing.">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="area">@Html.Sitecore().Field("Area Label")</label>
+                                                    <input type="text" class="form-control" id="area" name="Area" data-error="Incorrect area name.">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group hidden">
+                                                    <label class="hidden-xs">&nbsp;</label>
+                                                    <div class="gd-checkbox-wrapper" data-type="radio">
+                                                        <input type="hidden" name="District" data-error="District is missing.">
+                                                        @if (districts.Count != 0)
+                                                        {
+                                                            foreach (var item in districts)
+                                                            {
+                                                                <span class="gd-checkbox" data-value="@item.Fields["Value"]">@item.Fields["Value"]</span>
+                                                            }
+                                                        }
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="state">@Html.Sitecore().Field("State Label")</label>
+                                                    <input type="text" class="form-control" id="State" name="state" data-error="Incorrect state name.">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="city">@Html.Sitecore().Field("City Label") *</label>
+                                                    <input type="text" class="form-control" id="City" name="city" data-error="City is missing.">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="postal">@Html.Sitecore().Field("Postcode Label")</label>
+                                                    <input type="text" class="form-control" id="Postcode" name="postal" data-error="Incorrect postal code.">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label>@Html.Sitecore().Field("Country Label") *</label>
+                                                    <div class="dropdown gd-dropdown gd-dropdown-fill" id="gd-country">
+                                                        <!-- User's selection will be stored here -->
+                                                        <input type="hidden" name="Country" data-error="Country is missing.">
+                                                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                            <span class="current">@Html.Sitecore().Field("Select Label")</span>
+                                                            <span class="caret"></span>
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            @if (countries.Count != 0)
+                                                            {
+                                                                foreach (var item in countries)
+                                                                {
+                                                                    <li><a href="javascript:;" data-value="@item.Fields["Value"]" data-code="@item.Fields["Value"]">@item.Fields["Value"]</a></li>
+                                                                }
+                                                            }
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label>@Html.Sitecore().Field("Interests Label") *</label>
+                                        <div class="gd-checkbox-wrapper gd-interests">
+                                            <input type="hidden" name="interests" data-error="Please select one interests item at least.">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <span class="gd-checkbox" data-value="0">Shopping</span>
+                                                    <span class="gd-checkbox" data-value="2">Home &amp; Kids</span>
+                                                    <span class="gd-checkbox" data-value="4">Gadgets</span>
+                                                    <span class="gd-checkbox" data-value="6">Arts</span>
+                                                    <span class="gd-checkbox" data-value="8">Movies</span>
+                                                    <span class="gd-checkbox" data-value="10">Sports/Fitness</span>
+                                                    <span class="gd-checkbox" data-value="12">Social Responsibilty</span>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <span class="gd-checkbox" data-value="1">Fashion</span>
+                                                    <span class="gd-checkbox" data-value="3">Books</span>
+                                                    <span class="gd-checkbox" data-value="5">Automobiles</span>
+                                                    <span class="gd-checkbox" data-value="7">Music</span>
+                                                    <span class="gd-checkbox" data-value="9">Photography</span>
+                                                    <span class="gd-checkbox" data-value="11">Travelling</span>
+                                                </div>
+                                                <div class="col-xs-12">
+                                                    <div class="gd-others" id="gd-others">
+                                                        <div class="gd-checkbox-wrapper">
+                                                            <input type="hidden" name="othersval">
+                                                            <span class="gd-checkbox" data-value="1">
+                                                                @Html.Sitecore().Field("Other Label") (@Html.Sitecore().Field("Specify")
+                                                            </span>
+                                                        </div>
+                                                        <input type="text" class="form-control" name="Other" data-error="Please specify other interests." disabled="disabled">
+                                                        <span>)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row gd-verify-code">
+                                <div class="col-sm-12">
+                                    <p>@Html.Sitecore().Field("Verification") *</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <img id="valiCode" style="cursor: pointer;" src="@Url.Action("GetValidateCode", "Home")" alt="ValidateCode" />
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" id="code" class="form-control" name="verifycode" data-error="Please provide a correct verification code.">
+                                    <a href="javascript:changeImg();">@Html.Sitecore().Field("Generate Code")</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 hidden-xs gd-full-img">
+                            <img data-src="@Html.Sitecore().ImageFieldSrc("Image", Sitecore.Context.Item)">
+                        </div>
+                    </div>
+                    <div class="row gd-legals">
+                        <div class="col-xs-12">
+                            <p>
+                                @Html.Sitecore().Field("Prompt Message")
+                            </p>
+                            <div class="gd-checkbox-wrapper">
+                                <input type="hidden" name="legal" data-error="You need to agree to our legal items.">
+                                <span class="gd-checkbox" data-value="1">
+                                    @Html.Sitecore().Field("Confirm Message")
+                                </span>
+                            </div>
+                            <div class="gd-checkbox-wrapper">
+                                <input type="hidden" name="privacy" data-error="You need to agree to our privacy items.">
+                                <span class="gd-checkbox" data-value="1"> @Html.Sitecore().Field("Agree Message")</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-black">@Html.Sitecore().Field("Button Label")</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    function changeImg() {
+        document.getElementById("valiCode").src = "@Url.Action("GetValidateCode", "Home")?time=" + Math.random();
+    }
+</script>

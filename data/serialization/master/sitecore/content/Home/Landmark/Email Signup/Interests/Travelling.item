@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {33FC1178-1A06-4B67-8E92-64A12FB90639}
+database: master
+path: /sitecore/content/Home/Landmark/Email Signup/Interests/Travelling
+parent: {840B3FE7-8EEA-4D6D-9797-4B799BDDF1A8}
+name: Travelling
+master: {00000000-0000-0000-0000-000000000000}
+template: {55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}
+templatekey: Text Object
+
+----version----
+language: en
+version: 1
+revision: 57fd088d-5832-4b20-bf1e-84f1fbf649bb
+
+----field----
+field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
+name: Value
+key: value
+content-length: 10
+
+Travelling
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150921T022758Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+57fd088d-5832-4b20-bf1e-84f1fbf649bb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150921T022758:635783992788647141Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
