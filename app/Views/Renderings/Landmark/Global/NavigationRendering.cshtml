@@ -57,25 +57,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 col-md-3  col-sm-3">
-                                        <div class="mega-product-area pull-right">
-                                            @{
-                                ReferenceField referenceField = (ReferenceField)item.Fields["Ad Reference Item"];
-                                            }
-                                            @if (referenceField != null)
-                                            {
-                                                if (referenceField.TargetItem != null)
-                                                {
-                                                    @Html.Sitecore().Field("Article Thumb Image", referenceField.TargetItem)
-                                                    <h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
-
-                                                    <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
-                                                    <a href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", ItemGuids.LearnMoreItem) <span class="sprite-menu-r"></span></a>
-                                                }
-                                            }
-
-                                        </div>
-                                    </div>
+                                    @Html.Sitecore().DynamicPlaceholder("magamenu-curated-content")
                                 </div>
                             }
                             else
@@ -89,31 +71,7 @@
                                             }
                                         </ul>
                                     </div>
-                                    <div class="col-sm-9  menu-equal-height">
-                                        <div class="row">
-                                            @{
-                                ReferenceField referenceField = (ReferenceField)item.Fields["Ad Reference Item"];
-                                            }
-                                            <div class="col-sm-4 col-sm-offset-1">
-                                                <div class="mega-product-area2 pull-right">
-                                                    @if (referenceField != null)
-                                                    {
-                                                        @Html.Sitecore().Field("Article Thumb Image", referenceField.TargetItem)
-                                                    }
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="mega-product-area2 pull-right">
-                                                    @if (referenceField != null)
-                                                    {
-													<h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
-                                                    <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
-                                                    <a href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", ItemGuids.LearnMoreItem) <span class="sprite-menu-r"></span></a>
-													}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @Html.Sitecore().DynamicPlaceholder("magamenu-curated-content")
                                 </div>
                             }
                         </div>
@@ -148,25 +106,7 @@
                                         }
                                     </ul>
                                 </div>
-                                <div class="col-sm-7  menu-equal-height">
-                                    <div class="row">
-                                        @{
-                                            ReferenceField referenceField = (ReferenceField) item.Fields["Ad Reference Item"];
-                                        }
-                                        <div class="col-sm-4 col-sm-offset-1">
-                                            <div class="mega-product-area2 pull-right">
-                                                @Html.Sitecore().Field("Article Thumb Image", referenceField.TargetItem)
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="mega-product-area2 pull-right">
-                                                <h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
-                                                <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
-                                                <a href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", ItemGuids.LearnMoreItem) <span class="sprite-menu-r"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                @Html.Sitecore().DynamicPlaceholder("magamenu-curated-content")
                             </div>
                             }
                             else
@@ -180,30 +120,7 @@
                                             }
                                         </ul>
                                     </div>
-                                    <div class="col-sm-9  menu-equal-height">
-                                        <div class="row">
-                                            @{
-                                ReferenceField referenceField = (ReferenceField)item.Fields["Ad Reference Item"];
-                                            }
-                                            <div class="col-sm-4 col-sm-offset-1">
-                                                <div class="mega-product-area2 pull-right">
-                                                    @if (referenceField != null && referenceField.TargetItem!=null)
-                                                    {
-                                                        @Html.Sitecore().Field("Article Thumb Image", referenceField.TargetItem)
-                                                    }
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="mega-product-area2 pull-right">
-                                                    @if (referenceField != null && referenceField.TargetItem != null)
-                                                    {
-                                                        <h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
-                                                    <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
-                                                    <a href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", ItemGuids.LearnMoreItem) <span class="sprite-menu-r"></span></a>
-													}                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @Html.Sitecore().DynamicPlaceholder("magamenu-curated-content")
                                 </div>
                             }
                         </div>

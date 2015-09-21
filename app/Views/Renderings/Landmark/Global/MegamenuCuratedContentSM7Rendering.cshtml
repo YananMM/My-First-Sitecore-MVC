@@ -1,0 +1,20 @@
+﻿@using Landmark.Classes
+@using Sitecore.Links
+@model RenderingModel
+
+<div class="col-sm-7  menu-equal-height">
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-1">
+            <div class="mega-product-area2 pull-right">
+                @Html.Sitecore().Field("Article Thumb Image", Model.Item)
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="mega-product-area2 pull-right">
+                <h3>@Html.Sitecore().Field("Article Headline", Model.Item)</h3>
+                <p>@Html.Sitecore().Field("Article Intro", Model.Item)</p>
+                <a href="@LinkManager.GetItemUrl(Model.Item)">@Html.Sitecore().Field("Glossary Value", ItemGuids.LearnMoreItem) <span class="sprite-menu-r"></span></a>
+            </div>
+        </div>
+    </div>
+</div>

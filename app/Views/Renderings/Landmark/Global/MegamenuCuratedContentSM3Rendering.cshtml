@@ -1,0 +1,12 @@
+﻿@using Landmark.Classes
+@using Sitecore.Links
+@model RenderingModel
+<div class="col-lg-3 col-md-3  col-sm-3">
+    <div class="mega-product-area pull-right">
+        @Html.Sitecore().Field("Article Thumb Image", Model.Item)
+        <h3>@Html.Sitecore().Field("Article Headline", Model.Item)</h3>
+
+        <p>@Html.Sitecore().Field("Article Intro", Model.Item)</p>
+        <a href="@LinkManager.GetItemUrl(Model.Item)">@Html.Sitecore().Field("Glossary Value", ItemGuids.LearnMoreItem) <span class="sprite-menu-r"></span></a>
+    </div>
+</div>
