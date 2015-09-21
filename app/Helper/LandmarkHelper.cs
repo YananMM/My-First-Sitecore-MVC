@@ -358,7 +358,7 @@ namespace Landmark.Helper
             return host + "/" +language + System.Web.HttpContext.Current.Request.RawUrl;
         }
 
-        public static string GetImageItemAbsoluteUrl(string imageid)
+        public static string GetImageItemAbsoluteUrl(ID imageid)
         {
             string imageUrl = string.Empty;
             Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(Sitecore.Context.Database.GetItem(imageid));
