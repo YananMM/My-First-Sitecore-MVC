@@ -355,7 +355,7 @@ namespace Landmark.Helper
                           Uri.SchemeDelimiter +
                           System.Web.HttpContext.Current.Request.Url.Host;
             string language = Sitecore.Context.Language.ToString();
-            return host + language + System.Web.HttpContext.Current.Request.RawUrl;
+            return host + "/" +language + System.Web.HttpContext.Current.Request.RawUrl;
         }
 
         public static String GetTargetString(Item item, string field)
