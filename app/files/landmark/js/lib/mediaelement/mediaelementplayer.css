@@ -10,11 +10,14 @@
 
 .mejs-container {
 	position: relative;
-	background: #F6F6F6;
 	font-family: Helvetica, Arial;
 	text-align: left;
 	vertical-align: top;
 	text-indent: 0;
+}
+
+.modal .mejs-container {
+	background: #F6F6F6;
 }
 
 .mejs-container:focus { 

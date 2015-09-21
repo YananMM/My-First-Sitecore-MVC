@@ -1,8 +1,13 @@
 ﻿@using Landmark.Classes
+@using Landmark.Helper
 
 <div class="panel-layout">
     @Html.Sitecore().Placeholder("t1-slides")
+@using (Html.EditFrame(Sitecore.Context.Item.Paths.FullPath))
+{
     @Html.Sitecore().Placeholder("t1-panels")
+}
+    
     @Html.Sitecore().Placeholder("t1-instagram")
 </div>
 @Html.Sitecore().Rendering(ItemGuids.T1PanelNavRenderingViewGuid, new

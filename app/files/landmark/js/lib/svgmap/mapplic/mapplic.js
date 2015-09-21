@@ -76,7 +76,7 @@
 					s.hide();
 				});
 				this.image = $('<img>').addClass('mapplic-tooltip-image').hide().appendTo(this.el);
-				this.title = $('<h4></h4>').addClass('mapplic-tooltip-title').appendTo(this.el);
+				this.title = $('<h5></h5>').addClass('mapplic-tooltip-title').appendTo(this.el);
 				this.content = $('<div></div>').addClass('mapplic-tooltip-content').appendTo(this.el);
 				this.desc = $('<div></div>').addClass('mapplic-tooltip-description').appendTo(this.content);
 				this.link = $('<a>More</a>').addClass('mapplic-tooltip-link').attr('href', '#').hide().appendTo(this.el);
@@ -192,7 +192,7 @@
 
 				// Construct
 				this.el = $('<div></div>').addClass('mapplic-tooltip mapplic-hovertip');
-				this.title = $('<h4></h4>').addClass('mapplic-tooltip-title').appendTo(this.el);
+				this.title = $('<h5></h5>').addClass('mapplic-tooltip-title').appendTo(this.el);
 				$('<div></div>').addClass('mapplic-tooltip-triangle').appendTo(this.el);
 
 				// Events 
@@ -443,7 +443,7 @@
 				}).appendTo(item);
 
 				if (data.thumbnail) $('<img>').attr('src', data.thumbnail).addClass('mapplic-list-thumbnail').appendTo(link);
-				$('<h4></h4>').text(data.title).appendTo(link)
+				$('<h5></h5>').text(data.title).appendTo(link)
 				$('<span></span>').html(data.about).appendTo(link);
 				var category = $('.mapplic-list-category[data-category="' + data.category + '"]');
 

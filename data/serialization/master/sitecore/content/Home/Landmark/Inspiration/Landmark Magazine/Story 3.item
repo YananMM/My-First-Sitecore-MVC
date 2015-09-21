@@ -19,7 +19,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 25417a14-ec2a-41ec-b5b4-b89662a5befd
+revision: d63562e5-d002-46df-8fe3-f2ea0c6a85d5
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -42,6 +42,13 @@ key: article intro
 content-length: 41
 
 33333333333333333333333333333333333333333
+----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Slider Image
+key: article slider image
+content-length: 58
+
+<image mediaid="{60FDF4D5-050B-4591-88AD-0DC2495D7241}" />
 ----field----
 field: {B966F61E-9F08-4674-AC01-EE1064020145}
 name: Article Date
@@ -104,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-25417a14-ec2a-41ec-b5b4-b89662a5befd
+d63562e5-d002-46df-8fe3-f2ea0c6a85d5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150918T075955:635781599956336128Z
+20150921T031911Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

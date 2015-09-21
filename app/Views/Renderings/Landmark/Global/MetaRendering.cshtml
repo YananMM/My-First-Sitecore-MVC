@@ -1,6 +1,9 @@
-﻿@using Landmark.Classes
+﻿@using System.Xml.Schema
+@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Data.Fields
 @using Sitecore.Links
+@using Sitecore.Shell.Applications.ContentEditor
  <script src="//assets.adobedtm.com/9aa8f444435d90ff3c53c568fb8779b4d42b2ce7/satelliteLib-b098935529a91c4c8c1f840db43224f01f6799dd.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -9,25 +12,27 @@
     <link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/scrollbar/jquery.mCustomScrollbar.min.css" />
     <link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/slick/slick-theme.css" />
-    <meta name="description" content="description" />
-    <meta name="keywords" content="keywords" />
+    <meta name="description" content="@Sitecore.Context.Item.Fields["Meta Description"].Value" />
+    <meta name="keywords" content="@Sitecore.Context.Item.Fields["Meta Keywords"].Value" />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="@LandmarkHelper.GetCurrentItemUrl()" />
-    <meta property="og:title" content="Share Title Here" />
-    <meta property="og:description" content="Share Description Here!" />
-    <meta property="og:image" content="http://lmk-html-dev.iis.guat.me/files/landmark/images/men/men-001.jpg" />
-    <meta property="og:image" content="http://lmk-html-dev.iis.guat.me/files/landmark/images/product-img/main-012.jpg" />
-    <meta property="og:image" content="http://lmk-html-dev.iis.guat.me/files/landmark/images/shopdetail/shopdetail-slider-01.jpg" />
-    <meta property="og:image" content="http://lmk-html-dev.iis.guat.me/files/landmark/images/arttourlanding/arttourlanding-slider-01.jpg" />
-    <meta property="og:image" content="http://lmk-html-dev.iis.guat.me/files/landmark/images/artpiece/artpiece-bigpic-01.jpg" />
-    <meta property="og:image" content="http://lmk-html-dev.iis.guat.me/files/landmark/images/hotel/hotel-slider-01.jpg" />
-    <meta property="og:image" content="http://lmk-html-dev.iis.guat.me/files/landmark/images/nowatlm/nowatlm-banner-01.jpg" />
-    <meta property="og:image" content="http://lmk-html-dev.iis.guat.me/files/landmark/images/exclusives/exclusives-image-01.jpg" />
-    <meta property="og:image" content="http://lmk-html-dev.iis.guat.me/files/landmark/images/attractiondetail/attractiondetail-banner-01.jpg" />
+    <meta property="og:title" content="@Sitecore.Context.Item.Fields["Social Share Title"].Value" />
+    <meta property="og:description" content="@Sitecore.Context.Item.Fields["Social Share Description"].Value"/>
+@{
+    var imagesId = ((MultilistField) Sitecore.Context.Item.Fields["Social Share Images"]).TargetIDs;
+    var firstImage = imagesId.FirstOrDefault();
+}
+@foreach (var imageid in imagesId)
+{
+  <meta property="og:image" content="@Sitecore.StringUtil.EnsurePrefix('/', LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(imageid)))" />
+}
+    
+    
+    
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@Html.Sitecore().Field("Site",ItemGuids.LandmarkConfigItem)">
-    <meta name="twitter:title" content="Share Title Here">
-    <meta name="twitter:description" content="Share Description Here!">
+    <meta name="twitter:site" content="@ItemGuids.LandmarkConfigItem.Fields["Site"].Value">
+    <meta name="twitter:title" content="@Sitecore.Context.Item.Fields["Social Share Title"].Value">
+    <meta name="twitter:description" content="@Sitecore.Context.Item.Fields["Social Share Description"].Value">
     <meta name="twitter:image" content="http://lmk-html-dev.iis.guat.me/files/landmark/images/men/men-001.jpg">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
