@@ -358,6 +358,17 @@ namespace Landmark.Helper
             return host + "/" +language + System.Web.HttpContext.Current.Request.RawUrl;
         }
 
+        public static string GetImageItemAbsoluteUrl(string imageid)
+        {
+            string imageUrl = string.Empty;
+            Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(Sitecore.Context.Database.GetItem(imageid));
+            imageUrl = System.Web.HttpContext.Current.Request.Url.Scheme +
+                              Uri.SchemeDelimiter +
+                              System.Web.HttpContext.Current.Request.Url.Host + "/" + Sitecore.Context.Language.ToString()
+                              + Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
+            return imageUrl;
+        }
+
         public static String GetTargetString(Item item, string field)
         {
             String target = "_self";

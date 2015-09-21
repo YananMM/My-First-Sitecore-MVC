@@ -20,20 +20,17 @@
     <meta property="og:description" content="@Sitecore.Context.Item.Fields["Social Share Description"].Value"/>
 @{
     var imagesId = ((MultilistField) Sitecore.Context.Item.Fields["Social Share Images"]).TargetIDs;
-    var firstImage = imagesId.FirstOrDefault();
+    var firstImageUrl = LandmarkHelper.GetImageItemAbsoluteUrl(imagesId.FirstOrDefault().ToString());
 }
 @foreach (var imageid in imagesId)
 {
-  <meta property="og:image" content="@Sitecore.StringUtil.EnsurePrefix('/', LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(imageid)))" />
+    <meta property="og:image" content="@LandmarkHelper.GetImageItemAbsoluteUrl(imageid.ToString())" />
 }
-    
-    
-    
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@ItemGuids.LandmarkConfigItem.Fields["Site"].Value">
     <meta name="twitter:title" content="@Sitecore.Context.Item.Fields["Social Share Title"].Value">
     <meta name="twitter:description" content="@Sitecore.Context.Item.Fields["Social Share Description"].Value">
-    <meta name="twitter:image" content="http://lmk-html-dev.iis.guat.me/files/landmark/images/men/men-001.jpg">
+    <meta name="twitter:image" content="@LandmarkHelper.GetImageItemAbsoluteUrl(firstImageUrl)">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
