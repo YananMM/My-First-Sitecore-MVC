@@ -20,7 +20,7 @@
 
     <div class="gd-content-details">
         <h3>@Html.Sitecore().Field("Article Headline")</h3>
-        <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
+        <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
         <h6>@Html.Sitecore().Field("Article Sub Headline")</h6>
     </div>
 </div>
@@ -60,69 +60,68 @@
                         </div>
                         if (i == item.Children.Count)
                         {
-                        <div class="gd-nd-slider-text">@Html.Sitecore().Field("Block Text", currentItem)</div>
-                        <dl class="gd-content-details-tags">
-                            <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
-                            <dd>
-                                @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
+                            <div class="gd-nd-slider-text">@Html.Sitecore().Field("Block Text", currentItem)</div>
+                            <dl class="gd-content-details-tags">
+                                <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
+                                <dd>
+                                    @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
                                         {
                                             Cacheable = false,
                                             CacheKey = "tags",
                                             Cache_VaryByData = true
                                         })
-                            </dd>
-                        </dl>
+                                </dd>
+                            </dl>
                         }
                     }
                     else
                     {
                         if (inMiddel.Checked)
                         {
-                        <div class="gd-bigpicture">
-                            <div class="gd-content-auto-width">
-                                <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image", block)">
-                                @if (i == item.Children.Count)
+                            <div class="gd-bigpicture">
+                                <div class="gd-content-auto-width">
+                                    <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image", block)">
+                                    @if (i == item.Children.Count)
                                     {
-                                <div class="gd-nd-slider-text">@Html.Sitecore().Field("Block Text", currentItem)</div>
-                                <dl class="gd-content-details-tags">
-                                    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
-                                    <dd>
-                                        @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
+                                        <div class="gd-nd-slider-text">@Html.Sitecore().Field("Block Text", currentItem)</div>
+                                        <dl class="gd-content-details-tags">
+                                            <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
+                                            <dd>
+                                                @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
                                                 {
                                                     Cacheable = false,
                                                     CacheKey = "tags",
                                                     Cache_VaryByData = true
                                                 })
-                                    </dd>
-                                </dl>
+                                            </dd>
+                                        </dl>
                                     }
+                                </div>
                             </div>
-                        </div>
                         }
                         else
                         {
-                        <div class="gd-bigpicture">
-                            <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image", block)">
-                        </div>
+                            <div class="gd-bigpicture">
+                                <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image", block)">
+                            </div>
                             if (i == item.Children.Count)
                             {
-                        <div class="gd-nd-slider-text">@Html.Sitecore().Field("Block Text", currentItem)</div>
-                        <dl class="gd-content-details-tags">
-                            <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
-                            <dd>
-                                @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
+                                <div class="gd-nd-slider-text">@Html.Sitecore().Field("Block Text", currentItem)</div>
+                                <dl class="gd-content-details-tags">
+                                    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
+                                    <dd>
+                                        @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
                                         {
                                             Cacheable = false,
                                             CacheKey = "tags",
                                             Cache_VaryByData = true
                                         })
-                            </dd>
-                        </dl>
+                                    </dd>
+                                </dl>
                             }
                         }
                     }
                     i++;
-                        }
                         }
                     </div>
                 }

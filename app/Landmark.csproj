@@ -160,6 +160,7 @@
     <Compile Include="Models\EmailSignup.cs">
       <DependentUpon>Landmark.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\EmailSignupModel.cs" />
     <Compile Include="Models\Landmark.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

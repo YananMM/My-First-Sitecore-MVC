@@ -21,7 +21,7 @@
                 <div class="gd-content-details visible-xs-block">
                     <div class="gd-content-details-heading">
                         <h3>@Html.Sitecore().Field("Article Headline", currentItem)</h3>
-                        <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture) </h5>
+                        <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper() </h5>
                         <h6>@Html.Sitecore().Field("Article Sub Headline", currentItem) </h6>
                     </div>
                 </div>

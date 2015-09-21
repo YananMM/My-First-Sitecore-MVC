@@ -40,7 +40,7 @@
                 DateField storyDate = stories.First().Fields["Article Date"];
                 var date = LandmarkHelper.ToValidDateTime(storyDate);
                             }
-                            <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
+                            <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
                             <p>@Html.Sitecore().Field("Article Intro", stories.First())</p>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                     DateField itemDate = item.Fields["Article Date"];
                     var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
                                 }
-                                <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
+                                <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
                                 <p>@Html.Sitecore().Field("Article Intro", item)</p>
                             </div>
                         </a>
@@ -97,7 +97,7 @@
                     DateField itemDate = item.Fields["Article Date"];
                     var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
                                 }
-                                <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
+                                <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
                                 <p>@Html.Sitecore().Field("Article Intro", item)</p>
                             </div>
                         </a>
