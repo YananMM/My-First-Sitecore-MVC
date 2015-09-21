@@ -66,14 +66,14 @@ getResponseEnv = function(){
       ? 'pad'
       : 'phone';
 },
-getScMode = function () {
-    if (window.Sitecore) {
-        if (Sitecore.PageModes.PageEditor) {
-            return 'pageeditor';
-        }
-        return 'preview';
+getScMode =  function (){
+  if (window.Sitecore) { 
+    if (Sitecore.PageModes.PageEditor) {
+     return 'pageeditor'; 
     }
-    return 'visitor';
+    return 'preview'; 
+  } 
+  return 'visitor'; 
 };
 
 jQuery(function($){
@@ -581,7 +581,7 @@ $(document).ready(function() {
         if ($slider.length && !$slider.data('slider')){
           var slider = $slider.bxSlider({
             speed: 1000,
-            auto: getScMode() != 'pageeditor',
+            autoStart: getScMode() != 'pageeditor',
             pause: 5000,
             pager: false,
             controls: false,
@@ -595,7 +595,7 @@ $(document).ready(function() {
               }, 100)
             },
             onSlideAfter: function(){
-              $(window).trigger('lazyupdate')
+              $(window).trigger('scroll');
             }
           });
           $slider.data('slider', slider);
@@ -696,7 +696,7 @@ $(document).ready(function() {
           $(window).trigger('scroll');
           $(window).lazyLoadXT();
           var slider = $('.panel-area:eq('+slideIndex+') .slider', $layout).data('slider');
-          if (slider){
+          if (slider && getScMode() != 'pageeditor'){
             slider.startAuto();
           }
         });
@@ -2129,9 +2129,9 @@ $(document).ready(function() {
   $('.gd-tab-intro').on('click', '.tab-pane-switch', function() {
     var gdCurrentPane    = $(this).next();
     if (gdCurrentPane.hasClass('active')) {
-        $(this).find('span').attr('class', 'off');
+      $(this).find('span').attr('class', 'off');
     } else {
-        $(this).find('span').attr('class', 'on');
+      $(this).find('span').attr('class', 'on');
     }
     gdCurrentPane.toggleClass('in active');
     $('body').trigger('scroll');
