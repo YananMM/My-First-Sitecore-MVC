@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {8CAD9277-2A9B-48C9-90CC-8E8272CD1B06}
+id: {6B325FEA-F4E1-4812-983F-40784147336C}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T28 Page/Content Data/Legal Title
-parent: {DEBB0D58-E5EE-4994-B11C-1493F16A419A}
-name: Legal Title
+path: /sitecore/templates/User Defined/Landmark/Page/T28 Page/Legal Data/Legal Content
+parent: {57F0E88D-31DE-442C-BC43-ED32EBBD6C1A}
+name: Legal Content
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -20,13 +20,13 @@ Single-Line Text
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
-content-length: 3
+content-length: 2
 
-100
+50
 ----version----
 language: en
 version: 1
-revision: 17a7f872-da85-48f2-aed8-6f10bfe23923
+revision: 04f32dab-7b8b-44ae-9dcb-e5f7a7594a05
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150831T020831Z
+20150922T093442Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-17a7f872-da85-48f2-aed8-6f10bfe23923
+04f32dab-7b8b-44ae-9dcb-e5f7a7594a05
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150831T022420:635765846604421077Z
+20150922T093711:635785114315574812Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

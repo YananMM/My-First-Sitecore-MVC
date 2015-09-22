@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {B247FB51-F0B6-4ECB-AAE1-0749ACCA5A19}
+id: {85FC0C67-C965-466C-8BCE-1C73A2B990EE}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T28 Page/Content Data/Legal Content
+path: /sitecore/templates/User Defined/Landmark/Page/T28 Page/Privacy Data/Privacy Title
 parent: {DEBB0D58-E5EE-4994-B11C-1493F16A419A}
-name: Legal Content
+name: Privacy Title
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,20 +13,20 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 9
+content-length: 16
 
-Rich Text
+Single-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-200
+300
 ----version----
 language: en
 version: 1
-revision: 9e0ca85b-3fe4-4834-9b91-d08b5b929407
+revision: 66930d39-3db4-4730-9ae8-46fcc67c37ae
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9e0ca85b-3fe4-4834-9b91-d08b5b929407
+66930d39-3db4-4730-9ae8-46fcc67c37ae
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150831T022420:635765846604701093Z
+20150922T093443:635785112834760114Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
