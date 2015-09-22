@@ -7,7 +7,7 @@ parent: {812D4614-C77D-4B0A-9729-D2FB3D830786}
 name: Story 4
 master: {019AAA6D-F7C8-4293-94EE-CF065B0A8A91}
 template: {2EE73BEB-F8DA-4F35-BB46-C1B0B8AC3945}
-templatekey: T23 Page
+templatekey: T23 Page AB
 
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
@@ -19,7 +19,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 9f7b3873-f94d-4750-81b8-18a0677f5c63
+revision: 82c9786b-8113-472f-862f-f7b8e5d60bb6
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -67,9 +67,9 @@ Story 4
 field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
 name: Page Style
 key: page style
-content-length: 7
+content-length: 0
 
-Style C
+
 ----field----
 field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
 name: Tags
@@ -77,20 +77,6 @@ key: tags
 content-length: 194
 
 {09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{A869505D-8B56-42B6-9460-9928607C3BD3}|{B897BD2C-C2EA-4F88-BE9E-AA3F3EBE8FDF}|{01E67855-9741-4C1C-9FCD-2432982120B6}|{585407EB-2AAB-454C-BB2B-2D9868FA53BA}
-----field----
-field: {9895039C-E7FC-40B8-848A-364F6472699A}
-name: Block Text
-key: block text
-content-length: 63
-
-LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED D
-----field----
-field: {DB6C6A8D-FAF4-4958-8008-4DAD7BA5168D}
-name: Block Text In Middle
-key: block text in middle
-content-length: 1
-
-1
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -104,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9f7b3873-f94d-4750-81b8-18a0677f5c63
+82c9786b-8113-472f-862f-f7b8e5d60bb6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150921T031931Z
+20150922T052730:635784964506546226Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,0 +1,79 @@
+----item----
+version: 1
+id: {3E671066-0147-4341-9A10-99A5B11B7983}
+database: master
+path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Story 5
+parent: {812D4614-C77D-4B0A-9729-D2FB3D830786}
+name: Story 5
+master: {48DA220E-BFA8-4789-8191-0FD9A3C0DB43}
+template: {2F6A4A9C-C7DC-439D-8310-3A2EF0617158}
+templatekey: T23 Page CD
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{EEEB8813-EBD2-415E-B4F0-72B52DDEF18E}
+----version----
+language: en
+version: 1
+revision: cc401493-e34e-46cc-960f-3c26f69b576b
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 7
+
+Story 5
+----field----
+field: {293A5D35-684E-4AA0-B022-4603ED513547}
+name: Text Line
+key: text line
+content-length: 63
+
+LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED D
+----field----
+field: {BF97D987-B97A-48C2-BD76-141998D35D71}
+name: Text on Middle
+key: text on middle
+content-length: 1
+
+1
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150922T061704Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+cc401493-e34e-46cc-960f-3c26f69b576b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150922T064314:635785009945435182Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -10,15 +10,18 @@
     var setting = helper.GetStorySetting(currentItem);
 
 }
-@if (setting == StorySetting.StyleA)
+@if (currentItem.TemplateName == "T23 Page AB")
 {
-    @Html.Sitecore().Placeholder("style-a")
+    if (setting == StorySetting.StyleA)
+    {
+        @Html.Sitecore().Placeholder("style-a")
+    }
+    else if (setting == StorySetting.StyleB)
+    {
+        @Html.Sitecore().Placeholder("style-b")
+    }
 }
-else if (setting == StorySetting.StyleB)
-{
-    @Html.Sitecore().Placeholder("style-b")
-}
-else if (setting == StorySetting.StyleCd)
+else if (currentItem.TemplateName == "T23 Page CD")
 {
     @Html.Sitecore().Placeholder("style-cd")
 }
