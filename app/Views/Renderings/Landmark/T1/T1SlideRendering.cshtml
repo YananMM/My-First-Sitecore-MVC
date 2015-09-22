@@ -16,27 +16,35 @@
             if (referenceField != null && referenceField.TargetItem != null)
             {
                 <li>
-                <div class="@LandmarkHelper.GetSlideClass(item) clearfix">
-                    <div class="panel-img" data-bg="@LandmarkHelper.GetCallOutImage(referenceField.TargetItem)"></div>
-                    <div class="panel-main">
-                        <div class="panel-text">
-                            <hgroup class="clearfix">
-                                @if (sublineVersionsField.Value.Equals(ItemGuids.TwoNumbersTwoCaptionsTextLink))
-                                {
-                                    @Html.Sitecore().Field("Article Headline 2", referenceField.TargetItem)
-                                }
-                                else
-                                {
-                                    @Html.Sitecore().Field("Article Headline", referenceField.TargetItem)
-                                }
-                            </hgroup>
-                            <div class="panel-content">
-                                @Html.Sitecore().Field("Article Sub Headline",referenceField.TargetItem)
+                    <div class="@LandmarkHelper.GetSlideClass(referenceField.TargetItem) clearfix">
+                        @if (string.IsNullOrEmpty(referenceField.TargetItem.Fields["Slide Video"].Value))
+                        {
+                            <div class="panel-img" data-bg="@LandmarkHelper.GetCallOutImage(referenceField.TargetItem)"></div>
+                        }
+                        else
+                        {
+                            <div class="panel-img gd-lightbox-link gd-lightbox-video" data-bg="@LandmarkHelper.GetCallOutImage(referenceField.TargetItem)" data-lightsrc="@referenceField.TargetItem.Fields["Article Video"].Value" data-lighttitle="@referenceField.TargetItem.Fields["Slide Title"].Value" data-lightposter="@LandmarkHelper.ImageFieldSrc("Article Video Poster",referenceField.TargetItem)"></div>
+                        }
+                        
+                        <div class="panel-main">
+                            <div class="panel-text">
+                                <hgroup class="clearfix">
+                                    @if (sublineVersionsField.Value.Equals(ItemGuids.TwoNumbersTwoCaptionsTextLink))
+                                    {
+                                        @Html.Sitecore().Field("Article Headline 2", referenceField.TargetItem)
+                                    }
+                                    else
+                                    {
+                                        @Html.Sitecore().Field("Article Headline", referenceField.TargetItem)
+                                    }
+                                </hgroup>
+                                <div class="panel-content">
+                                    @Html.Sitecore().Field("Article Sub Headline", referenceField.TargetItem)
+                                </div>
+                                <a class="btn btn-default" href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", ItemGuids.DiscoverLandmarkStoriesItem)</a>
                             </div>
-                            <a class="btn btn-default" href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value",ItemGuids.DiscoverLandmarkStoriesItem)</a>
                         </div>
                     </div>
-                </div>
             </li>
             }
             

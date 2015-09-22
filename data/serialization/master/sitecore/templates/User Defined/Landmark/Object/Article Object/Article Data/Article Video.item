@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {0BAD0FAC-1374-40D1-934C-58F2ADB30F64}
+id: {A5253420-25FF-4F30-B9F4-99A124B00A3E}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/T1 Slide Variation Object/T1 Slide Variation Data/Slide Title
-parent: {F3C75FDD-5E0C-4C01-B590-369330D4F4AB}
-name: Slide Title
+path: /sitecore/templates/User Defined/Landmark/Object/Article Object/Article Data/Article Video
+parent: {E97B3DE3-422F-425C-9BF7-B15B96E1E735}
+name: Article Video
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -22,11 +22,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-200
+550
 ----version----
 language: en
 version: 1
-revision: f7f8c95d-39f3-494e-a808-4c36bff31671
+revision: 770a852f-91c1-4e2d-90c8-67a569e8799a
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150721T073206Z
+20150922T063929Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-f7f8c95d-39f3-494e-a808-4c36bff31671
+770a852f-91c1-4e2d-90c8-67a569e8799a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150721T081200Z
+20150922T064012Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
