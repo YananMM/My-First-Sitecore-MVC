@@ -12,7 +12,7 @@ templatekey: T32 Page
 ----version----
 language: en
 version: 1
-revision: 8891ab6b-3fab-4834-8b32-311133b9ce78
+revision: b6aed5f2-6e41-4403-ac61-457f5531cb53
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -21,6 +21,13 @@ key: page title
 content-length: 14
 
 Search Results
+----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8891ab6b-3fab-4834-8b32-311133b9ce78
+b6aed5f2-6e41-4403-ac61-457f5531cb53
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150901T144207Z
+20150922T014730Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

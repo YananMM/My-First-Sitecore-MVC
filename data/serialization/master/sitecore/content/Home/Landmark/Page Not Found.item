@@ -12,7 +12,7 @@ templatekey: T6 Page
 ----version----
 language: en
 version: 1
-revision: 57526132-ae22-4c91-a3db-75b11a0fc456
+revision: 615fcd22-d043-4cd0-9b4f-70f6f927d375
 
 ----field----
 field: {89087DA4-BB0C-484A-8DA4-1DF652116FE6}
@@ -30,6 +30,13 @@ content-length: 14
 
 Page Not Found
 ----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -42,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-57526132-ae22-4c91-a3db-75b11a0fc456
+615fcd22-d043-4cd0-9b4f-70f6f927d375
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150910T083904Z
+20150922T015005Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

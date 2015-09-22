@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 98bee69e-22bf-49b4-adfe-305a108c80a4
+revision: 76a4110b-36c9-4767-9b2a-82b6610f97ac
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -55,9 +55,10 @@ yanan
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
-content-length: 117
+content-length: 115
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummybook.<br>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummybook.
+
 ----field----
 field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
 name: Article Slider Image
@@ -69,9 +70,9 @@ content-length: 58
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Thumb Image
 key: article thumb image
-content-length: 58
+content-length: 65
 
-<image mediaid="{4A3F7962-D391-4C27-B8FD-BD17A0E4182D}" />
+<image mediaid="{4A3F7962-D391-4C27-B8FD-BD17A0E4182D}" ></image>
 ----field----
 field: {4FAB9882-DABD-43FC-89B8-88CB318870D9}
 name: Bullets and Tables
@@ -187,14 +188,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-98bee69e-22bf-49b4-adfe-305a108c80a4
+76a4110b-36c9-4767-9b2a-82b6610f97ac
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150921T121502Z
+20150921T151638Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -202,3 +203,10 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

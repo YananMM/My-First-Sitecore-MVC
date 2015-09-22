@@ -19,7 +19,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 58e09f44-ff9f-44db-ac4d-51eeacd7a4d3
+revision: 13f14772-dd8c-4522-bf3d-49da94726d63
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -62,9 +62,9 @@ content-length: 58
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Thumb Image
 key: article thumb image
-content-length: 58
+content-length: 65
 
-<image mediaid="{3E178502-4784-4A96-A97E-CA3EDD08CF96}" />
+<image mediaid="{3E178502-4784-4A96-A97E-CA3EDD08CF96}" ></image>
 ----field----
 field: {4FAB9882-DABD-43FC-89B8-88CB318870D9}
 name: Bullets and Tables
@@ -152,14 +152,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-58e09f44-ff9f-44db-ac4d-51eeacd7a4d3
+13f14772-dd8c-4522-bf3d-49da94726d63
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150921T121643Z
+20150921T151638Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -167,3 +167,10 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

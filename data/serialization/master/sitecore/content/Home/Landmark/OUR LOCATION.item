@@ -19,7 +19,7 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: 8c40c138-1598-44fd-bf5e-8ab3c52ffc57
+revision: e804666f-5846-4a8e-a365-4d9ffae7997a
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
@@ -57,6 +57,13 @@ content-length: 12
 
 OUR LOCATION
 ----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
 field: {A226DDC8-EF57-486D-B926-CA77063BC5A4}
 name: Address Label
 key: address label
@@ -90,14 +97,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8c40c138-1598-44fd-bf5e-8ab3c52ffc57
+e804666f-5846-4a8e-a365-4d9ffae7997a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150901T032503:635766747037275756Z
+20150922T014720Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
