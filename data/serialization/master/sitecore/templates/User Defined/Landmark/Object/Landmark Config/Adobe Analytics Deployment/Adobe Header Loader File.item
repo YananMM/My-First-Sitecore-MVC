@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {3534AD05-BF49-4763-822B-25D97D9F7283}
+id: {D37C539D-7503-4329-8B5F-61AC0D0E0B6F}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Brand Object/Floor Data/Floor
-parent: {04D8EB83-3E38-43CC-9E9B-4492EC1822DF}
-name: Floor
+path: /sitecore/templates/User Defined/Landmark/Object/Landmark Config/Adobe Analytics Deployment/Adobe Header Loader File
+parent: {A8F9403A-6554-44E4-AC90-A761165103D6}
+name: Adobe Header Loader File
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,16 +13,9 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 8
+content-length: 15
 
-Treelist
-----field----
-field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
-name: Source
-key: source
-content-length: 43
-
-/sitecore/content/Global/Landmark/Buildings
+Multi-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -33,7 +26,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: a3a83dd6-5352-4ef4-8bfd-8f718e61d88c
+revision: 9b125fac-6f40-4ba7-97b2-0fa2485a883f
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150804T025948Z
+20150921T132421Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-a3a83dd6-5352-4ef4-8bfd-8f718e61d88c
+9b125fac-6f40-4ba7-97b2-0fa2485a883f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150922T031803Z
+20150921T132421Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
