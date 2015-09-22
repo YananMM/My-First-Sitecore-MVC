@@ -183,7 +183,11 @@ namespace Landmark.Controllers
             return File(bytes, @"image/jpeg");
         }
 
-
+        /// <summary>
+        /// Adds the email signup.
+        /// </summary>
+        /// <param name="model">The model.</param>
+        /// <returns>ActionResult.</returns>
         public ActionResult AddEmailSignup(EmailSignupModel model)
         {
             if (ModelState.IsValid)
@@ -213,7 +217,6 @@ namespace Landmark.Controllers
                     context.SaveChanges();
                 }
             }
-
             return View();
         }
 

@@ -5,6 +5,35 @@
 @using Landmark.Models
 @model RenderingModel
 
+<div class="container">
+    <div class="gd-pagetitle">
+        <div class="gd-pagetitle-heading">
+            <h2>CAMPAIGN TITLE</h2>
+        </div>
+
+        <div class="gd-pagetitle-menu hidden-xs">
+            <a href="javascript:;" class="active">HOME </a>
+            <span class="gd-pagetitle-menu-gap">|</span>
+            <a href="javascript:;">PAGE 1</a>
+            <span class="gd-pagetitle-menu-gap">|</span>
+            <a href="javascript:;">PAGE 2</a>
+            <span class="gd-pagetitle-menu-gap">|</span>
+            <a href="javascript:;">PAGE3</a>
+            <span class="gd-pagetitle-menu-gap">|</span>
+            <a href="javascript:;">PAGE 4</a>
+        </div>
+
+        <div class="gd-controls-m visible-xs">
+            <select class="form-control">
+                <option value="#">HOME</option>
+                <option value="#">PAGE 1</option>
+                <option value="#">PAGE 2</option>
+                <option value="#">PAGE 3</option>
+                <option value="#">PAGE 4</option>
+            </select>
+        </div>
+    </div>
+</div>
 <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-fixed" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -41,10 +70,10 @@
     <div class="carousel-caption">
         <div class="carousel-caption-inner">
             <div class="gd-carousel-detail">
-                <div class="gd-mainimage-brief">
+                <div class="gd-mainimage-brief3">
                     <h2>LOREM IPSUM DOLOR SIT AMET</h2>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex</p>
-                    <button class="gd-button gd-button-reversed" type="button">DISCOVER MORE</button>
+                    <a href="#" class="gd-button gd-button-reversed" type="button">DISCOVER MORE</a>
                 </div>
             </div>
         </div>
@@ -55,32 +84,54 @@
     <div class="row">
         <div class="col-sm-6">
             <div class="gd-promotion-box">
-                <img data-src="../files/landmark/images/promotion/promotion-img-01.jpg">
-                <h3> <a href="#">Lorem ipsum dolor sit amet</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
+                <a href="#" class="gd-hover-img">
+                    <div class="gd-hover-img-area">
+                        <div class="gd-hover-img-mask"></div>
+                        <img data-src="../files/landmark/images/promotion/promotion-img-01.jpg">
+                    </div>
+                    <h3> Lorem ipsum dolor sit amet</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
+                </a>
             </div>
         </div>
         <div class="col-sm-6">
             <div class="gd-promotion-box">
-                <img data-src="../files/landmark/images/promotion/promotion-img-02.jpg">
-                <h3> <a href="#">Lorem ipsum dolor sit amet</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
+                <a href="#" class="gd-hover-img">
+                    <div class="gd-hover-img-area">
+                        <div class="gd-hover-img-mask"></div>
+                        <img data-src="../files/landmark/images/promotion/promotion-img-02.jpg">
+                    </div>
+                    <h3> Lorem ipsum dolor sit amet</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
+                </a>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-sm-6">
             <div class="gd-promotion-box">
-                <img data-src="../files/landmark/images/promotion/promotion-img-03.jpg">
-                <h3> <a href="#">Lorem ipsum dolor sit amet</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
+
+                <a href="#" class="gd-hover-img">
+                    <div class="gd-hover-img-area">
+                        <div class="gd-hover-img-mask"></div>
+                        <img data-src="../files/landmark/images/promotion/promotion-img-03.jpg">
+                    </div>
+                    <h3> Lorem ipsum dolor sit amet</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
+                </a>
             </div>
         </div>
         <div class="col-sm-6">
             <div class="gd-promotion-box">
-                <img data-src="../files/landmark/images/promotion/promotion-img-04.jpg">
-                <h3> <a href="#">Lorem ipsum dolor sit amet</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam </p>
+
+                <a href="#" class="gd-hover-img">
+                    <div class="gd-hover-img-area">
+                        <div class="gd-hover-img-mask"></div>
+                        <img data-src="../files/landmark/images/promotion/promotion-img-04.jpg">
+                    </div>
+                    <h3> Lorem ipsum dolor sit amet</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
+                </a>
             </div>
         </div>
     </div>
