@@ -9,18 +9,6 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
 templatekey: Floor Object
 
-----version----
-language: en
-version: 1
-revision: 68682ce7-d7c4-4598-afe6-2b21dc683ccf
-
-----field----
-field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
-name: Floor Title
-key: floor title
-content-length: 3
-
-1/F
 ----field----
 field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
 name: Floor Image
@@ -35,6 +23,18 @@ key: floor svg file
 content-length: 109
 
 <file mediaid="{05C339CA-2EBF-49C5-AB80-DE0FBC1350E5}" src="~/media/05c339ca2ebf49c5ab80de0fbc1350e5.ashx" />
+----version----
+language: en
+version: 1
+revision: 68682ce7-d7c4-4598-afe6-2b21dc683ccf
+
+----field----
+field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
+name: Floor Title
+key: floor title
+content-length: 3
+
+1/F
 ----field----
 field: {FF370512-19AC-4386-B26B-D64C14BF4693}
 name: Is Shown

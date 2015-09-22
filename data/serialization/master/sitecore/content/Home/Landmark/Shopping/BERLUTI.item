@@ -10,6 +10,13 @@ template: {91A88069-9A0E-48B7-9509-BDE830A54D0E}
 templatekey: T14 Page
 
 ----field----
+field: {DDA15F2F-F719-4896-A8A7-2FC0FE5C5500}
+name: Brand Image
+key: brand image
+content-length: 58
+
+<image mediaid="{05FE2CC2-7E83-4FF2-BF8B-C7C34041539A}" />
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -35,13 +42,6 @@ key: brand title
 content-length: 7
 
 BERLUTI
-----field----
-field: {DDA15F2F-F719-4896-A8A7-2FC0FE5C5500}
-name: Brand Image
-key: brand image
-content-length: 58
-
-<image mediaid="{05FE2CC2-7E83-4FF2-BF8B-C7C34041539A}" />
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title

@@ -9,6 +9,13 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {3E0F5E19-4593-48D5-913E-8F5231119D02}
 templatekey: T24 Page
 
+----field----
+field: {36B41602-6322-4E30-9E08-85BB3F6F0693}
+name: Service Image
+key: service image
+content-length: 58
+
+<image mediaid="{E8A33307-5910-4353-8345-660F4BDAE841}" />
 ----version----
 language: en
 version: 1
@@ -28,13 +35,6 @@ key: search filter type
 content-length: 38
 
 {FCEE6FFF-F78D-4AF3-A04E-D26A11DD123D}
-----field----
-field: {36B41602-6322-4E30-9E08-85BB3F6F0693}
-name: Service Image
-key: service image
-content-length: 58
-
-<image mediaid="{E8A33307-5910-4353-8345-660F4BDAE841}" />
 ----field----
 field: {DFF5288B-8FFB-47AE-B6F4-50BEEFA40931}
 name: Service Title

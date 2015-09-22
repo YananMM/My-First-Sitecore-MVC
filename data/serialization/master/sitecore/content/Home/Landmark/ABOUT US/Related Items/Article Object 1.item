@@ -9,6 +9,13 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {E0472501-0925-4F7F-A5BC-84F0ECA1B7F8}
 templatekey: Article Object
 
+----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Slider Image
+key: article slider image
+content-length: 58
+
+<image mediaid="{A85DBFA0-F014-443D-A2BF-684347060136}" />
 ----version----
 language: en
 version: 1
@@ -35,13 +42,6 @@ key: article intro
 content-length: 156
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias porro soluta omnis praesentium accusantium aperiam eaque adipisci totam asperiores quam.
-----field----
-field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
-name: Article Slider Image
-key: article slider image
-content-length: 58
-
-<image mediaid="{A85DBFA0-F014-443D-A2BF-684347060136}" />
 ----field----
 field: {659B21B3-CEF7-4B63-8560-620BE63216AF}
 name: Button Text

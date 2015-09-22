@@ -10,6 +10,13 @@ template: {91A88069-9A0E-48B7-9509-BDE830A54D0E}
 templatekey: T14 Page
 
 ----field----
+field: {DDA15F2F-F719-4896-A8A7-2FC0FE5C5500}
+name: Brand Image
+key: brand image
+content-length: 58
+
+<image mediaid="{1AB3BDCA-4FB1-4129-A520-4B9B3508F9C5}" />
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -35,13 +42,6 @@ key: brand title
 content-length: 6
 
 CELINE
-----field----
-field: {DDA15F2F-F719-4896-A8A7-2FC0FE5C5500}
-name: Brand Image
-key: brand image
-content-length: 58
-
-<image mediaid="{1AB3BDCA-4FB1-4129-A520-4B9B3508F9C5}" />
 ----field----
 field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
 name: Buildings

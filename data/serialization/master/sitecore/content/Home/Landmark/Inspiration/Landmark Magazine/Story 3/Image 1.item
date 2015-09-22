@@ -10,6 +10,13 @@ template: {DCB0CBFD-E8BA-49C0-9214-577C18B7BF25}
 templatekey: T23 Cover Object
 
 ----field----
+field: {46B8E02C-A52F-4DA5-998F-8783C05660DB}
+name: Cover Image
+key: cover image
+content-length: 58
+
+<image mediaid="{F8CC4C8F-6726-4450-A26E-5246EC575C1E}" />
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -21,13 +28,6 @@ language: en
 version: 1
 revision: 8e510401-5ae2-4191-8da1-5b748fcc0aa8
 
-----field----
-field: {46B8E02C-A52F-4DA5-998F-8783C05660DB}
-name: Cover Image
-key: cover image
-content-length: 58
-
-<image mediaid="{F8CC4C8F-6726-4450-A26E-5246EC575C1E}" />
 ----field----
 field: {43CD37FA-B9F5-4AF2-AA66-8BA9F1F08566}
 name: Smaller Image

@@ -9,11 +9,11 @@
 
             <a href="@Url.Action("SearchContent", "Search")?search=@item.CurrentItem["Category Name"]">@item.CurrentItem["Category Name"] - </a>
         }
-
-        @foreach (var it in item.Children)
+        @for (int i=0;i<item.Children.Count;i++)
         {
-
-            <a href="@Url.Action("SearchContent", "Search")?search=@item.CurrentItem["Category Name"]">@it.CurrentItem["Category Name"],</a>
+            var splitStr = i == (item.Children.Count - 1) ? "" : ",";
+        <a href="@Url.Action("SearchContent", "Search")?search=@item.CurrentItem["Category Name"]">@item.Children[i].CurrentItem["Category Name"]
+        @splitStr</a>
         }
     </div>
 }

@@ -25,6 +25,9 @@ namespace Landmark.Models
         [IndexField("filterorder")]
         public String FilterOrder { get; set; }
 
+        [IndexField("tag")]
+        public String Tag { get; set; }
+
         public string ArticleIntro { get; set; }
 
         public DateTime ArticleDate { get; set; }

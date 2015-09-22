@@ -9,6 +9,13 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
+----field----
+field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
+name: Cover Image
+key: cover image
+content-length: 58
+
+<image mediaid="{DD0188AE-D1B3-4766-913F-EC45E6D37303}" />
 ----version----
 language: en
 version: 1
@@ -28,13 +35,6 @@ key: cover title
 content-length: 14
 
 The Star Ferry
-----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
-
-<image mediaid="{DD0188AE-D1B3-4766-913F-EC45E6D37303}" />
 ----field----
 field: {2A43DD2B-B00F-4A2D-B381-5E842EB6BBE5}
 name: Cover Content

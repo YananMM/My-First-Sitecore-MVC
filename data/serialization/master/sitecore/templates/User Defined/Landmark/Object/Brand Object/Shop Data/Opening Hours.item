@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {C4C77DCE-BD77-4F57-8B15-88AD9F46F583}
+id: {3DED45C4-C26E-4498-9909-AB777C4D1244}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Brand Object/Shop Data/Sat-Sun Opening Hours
+path: /sitecore/templates/User Defined/Landmark/Object/Brand Object/Shop Data/Opening Hours
 parent: {81C5DAD4-A26D-454D-A495-6170B345B163}
-name: Sat-Sun Opening Hours
+name: Opening Hours
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,28 +13,28 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 16
+content-length: 15
 
-Single-Line Text
+Multi-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-400
+200
 ----version----
 language: en
 version: 1
-revision: 916befd9-6c05-43f4-9e89-8041bd96cfdf
+revision: aa80c7fb-2b22-4cfe-96c9-e282ca18e27b
 
 ----field----
 field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
 name: __Short description
 key: __short description
-content-length: 27
+content-length: 0
 
-Format(Sat-Sun: 9:00-22:00)
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-916befd9-6c05-43f4-9e89-8041bd96cfdf
+aa80c7fb-2b22-4cfe-96c9-e282ca18e27b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150922T031802Z
+20150922T134205Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

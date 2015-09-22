@@ -10,6 +10,13 @@ template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
 templatekey: Slide Object
 
 ----field----
+field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{8C1497B8-372D-4618-A9FA-7732B1C474FD}" />
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -21,13 +28,6 @@ language: en
 version: 1
 revision: fd498e46-ab26-44c0-9b37-5938ff4c1c6a
 
-----field----
-field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
-name: Slide Image
-key: slide image
-content-length: 58
-
-<image mediaid="{8C1497B8-372D-4618-A9FA-7732B1C474FD}" />
 ----field----
 field: {EA18DD4F-8CA0-4115-9FDA-AF1CBFC569D0}
 name: Has Slide Content

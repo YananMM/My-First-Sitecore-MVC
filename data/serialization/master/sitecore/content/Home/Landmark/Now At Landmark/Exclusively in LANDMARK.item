@@ -10,6 +10,20 @@ template: {4CDF5CD9-40F0-4F0B-A095-7773CE6CF582}
 templatekey: T4 Page
 
 ----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Slider Image
+key: article slider image
+content-length: 58
+
+<image mediaid="{552D2B1F-C3D2-4168-BF52-3E545B09B90C}" />
+----field----
+field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
+name: Article Thumb Image
+key: article thumb image
+content-length: 65
+
+<image mediaid="{3E178502-4784-4A96-A97E-CA3EDD08CF96}" ></image>
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -51,20 +65,6 @@ key: article intro
 content-length: 112
 
 Lorem Ipsum is simply dummy text of the printing and typesetting industry been the industry's standard dummybook
-----field----
-field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
-name: Article Slider Image
-key: article slider image
-content-length: 58
-
-<image mediaid="{552D2B1F-C3D2-4168-BF52-3E545B09B90C}" />
-----field----
-field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
-name: Article Thumb Image
-key: article thumb image
-content-length: 65
-
-<image mediaid="{3E178502-4784-4A96-A97E-CA3EDD08CF96}" ></image>
 ----field----
 field: {4FAB9882-DABD-43FC-89B8-88CB318870D9}
 name: Bullets and Tables
