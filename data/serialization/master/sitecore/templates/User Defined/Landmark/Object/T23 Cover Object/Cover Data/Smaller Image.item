@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {BF97D987-B97A-48C2-BD76-141998D35D71}
+id: {43CD37FA-B9F5-4AF2-AA66-8BA9F1F08566}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T23 Page CD/Text Data/Text on Middle
-parent: {932D690A-DE77-4579-8F91-62F6964E8F24}
-name: Text on Middle
+path: /sitecore/templates/User Defined/Landmark/Object/T23 Cover Object/Cover Data/Smaller Image
+parent: {5800ADDD-A2BB-490A-87D3-0716A67EB10E}
+name: Smaller Image
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -26,7 +26,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: aa901a83-2a9b-41bb-9a64-2cddf3545078
+revision: 1d232a92-51d9-40f0-9562-04e921c5f443
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150922T064251Z
+20150922T080147Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-aa901a83-2a9b-41bb-9a64-2cddf3545078
+1d232a92-51d9-40f0-9562-04e921c5f443
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150922T064252:635785009724672555Z
+20150922T081229:635785063499598304Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

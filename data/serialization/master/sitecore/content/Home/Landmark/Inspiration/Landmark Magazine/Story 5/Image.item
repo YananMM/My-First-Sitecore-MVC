@@ -6,8 +6,8 @@ path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Story 5/Imag
 parent: {3E671066-0147-4341-9A10-99A5B11B7983}
 name: Image
 master: {48DA220E-BFA8-4789-8191-0FD9A3C0DB43}
-template: {CFE5379F-402F-4FB5-A1C5-0E42CA464BC1}
-templatekey: Image Text Object
+template: {DCB0CBFD-E8BA-49C0-9214-577C18B7BF25}
+templatekey: T23 Cover Object
 
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
@@ -19,15 +19,8 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 0df7b4b9-0a93-4287-931c-32b0a0cf709c
+revision: b7d38714-0636-48fa-a10d-98177481e0e0
 
-----field----
-field: {0AB28A95-2EFC-4333-B617-155C738623C9}
-name: Image
-key: image
-content-length: 58
-
-<image mediaid="{C3EBC177-3670-4DF8-9AE5-3B7C6317E347}" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -55,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0df7b4b9-0a93-4287-931c-32b0a0cf709c
+b7d38714-0636-48fa-a10d-98177481e0e0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150922T061905:635784995453596296Z
+20150922T080415:635785058553485403Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

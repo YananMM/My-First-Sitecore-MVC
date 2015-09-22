@@ -32,11 +32,11 @@
     <div class="gd-styor-block">
         @using (Html.EditFrame(currentItem.Paths.FullPath))
         {
+            int i = 1;
             foreach (var item in children)
             {
                 if (item.TemplateName == "Content Object")
                 {
-                    int i = 1;
                     <div class="gd-brief">
                         <div class="gd-brief-heading">
                             <h3>@Html.Sitecore().Field("Content Title", item)</h3>
@@ -52,34 +52,108 @@
                 }
                 else
                 {
-                    <div class="gd-bigpicture">
-                        @{
-                    if (item.TemplateName == "Image Text Object")
+                    if (item.TemplateName == "T23 Cover Object")
                     {
-                        <img data-src="@Html.Sitecore().ImageFieldSrc("Image", item)">
+                        var smaller = (CheckboxField)item.Fields["Smaller Image"];
+                        if (smaller.Checked)
+                        {
+                            <div class="gd-bigpicture">
+                                <div class="gd-content-auto-width">
+                                    <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image", item)">
+                                    @if (i == children.Count)
+                                    {
+                                        <div class="gd-nd-slider-text">@Html.Sitecore().Field("Text Line")</div>
+                                        <dl class="gd-content-details-tags">
+                                            <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
+                                            <dd>
+                                                @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
+                                                        {
+                                                            Cacheable = false,
+                                                            CacheKey = "tags",
+                                                            Cache_VaryByData = true
+                                                        })
+                                            </dd>
+                                        </dl>
+                                    }
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="gd-bigpicture">
+                                <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image", item)">
+                            </div>
+                            if (i == children.Count)
+                            {
+                                <div class="gd-nd-slider-text">@Html.Sitecore().Field("Text Line")</div>
+                                <dl class="gd-content-details-tags">
+                                    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
+                                    <dd>
+                                        @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
+                                                    {
+                                                        Cacheable = false,
+                                                        CacheKey = "tags",
+                                                        Cache_VaryByData = true
+                                                    })
+                                    </dd>
+                                </dl>
+                            }
+                        }
                     }
 
                     else if (item.TemplateName == "Video Object")
                     {
-                        <video class="gd-video" type="video/mp4" src="@Html.Sitecore().Field("Video File", item)" width="100%" controls poster="@Html.Sitecore().ImageFieldSrc("Video Image", item)"></video>
-                    }
+                        var smaller = (CheckboxField)item.Fields["Smaller Image"];
+                        if (smaller.Checked)
+                        {
+                            <div class="gd-bigpicture">
+                                <div class="gd-content-auto-width">
+                                    <video class="gd-video" type="video/mp4" src="@Html.Sitecore().Field("Video File", item)" width="100%" controls poster="@Html.Sitecore().ImageFieldSrc("Video Image", item)"></video>
+                                    @if (i == children.Count)
+                                    {
+                                        <div class="gd-nd-slider-text">@Html.Sitecore().Field("Text Line")</div>
+                                        <dl class="gd-content-details-tags">
+                                            <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
+                                            <dd>
+                                                @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
+                                                {
+                                                    Cacheable = false,
+                                                    CacheKey = "tags",
+                                                    Cache_VaryByData = true
+                                                })
+                                            </dd>
+                                        </dl>
+                                    }
+                                </div>
+                            </div>
                         }
-                    </div>
+                        else
+                        {
+                            <div class="gd-bigpicture">
+                                <video class="gd-video" type="video/mp4" src="@Html.Sitecore().FileFieldUrl("Video File", item)" width="100%" controls poster="@Html.Sitecore().ImageFieldSrc("Video Image", item)"></video>
+                            </div>
+                            if (i == children.Count)
+                            {
+                                <div class="gd-nd-slider-text">@Html.Sitecore().Field("Text Line")</div>
+                                <dl class="gd-content-details-tags">
+                                    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
+                                    <dd>
+                                        @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
+                                                {
+                                                    Cacheable = false,
+                                                    CacheKey = "tags",
+                                                    Cache_VaryByData = true
+                                                })
+                                    </dd>
+                                </dl>
+                            }
+                        }
+                    }
                 }
+                i++;
             }
         }
-        <div class="gd-nd-slider-text"> LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED D</div>
-        <dl class="gd-content-details-tags">
-            <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt>
-            <dd>
-                @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
-                            {
-                                Cacheable = false,
-                                CacheKey = "tags",
-                                Cache_VaryByData = true
-                            })
-            </dd>
-        </dl>
+
         @Html.Sitecore().Placeholder("t23-related")
     </div>
 </div>

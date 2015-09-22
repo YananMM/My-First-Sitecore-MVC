@@ -4,71 +4,79 @@
 @using Sitecore.Data.Fields
 @using Sitecore.Links
 @using Sitecore.Shell.Applications.ContentEditor
- <script src="//assets.adobedtm.com/9aa8f444435d90ff3c53c568fb8779b4d42b2ce7/satelliteLib-b098935529a91c4c8c1f840db43224f01f6799dd.js"></script>
+<script src="//assets.adobedtm.com/9aa8f444435d90ff3c53c568fb8779b4d42b2ce7/satelliteLib-b098935529a91c4c8c1f840db43224f01f6799dd.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" type="text/css" href="/files/landmark/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/scrollbar/jquery.mCustomScrollbar.min.css" />
-    <link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/slick/slick-theme.css" />
-    <meta name="description" content="@Sitecore.Context.Item.Fields["Meta Description"].Value" />
-    <meta name="keywords" content="@Sitecore.Context.Item.Fields["Meta Keywords"].Value" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="@LandmarkHelper.GetCurrentItemUrl()" />
-    <meta property="og:title" content="@Sitecore.Context.Item.Fields["Social Share Title"].Value" />
-    <meta property="og:description" content="@Sitecore.Context.Item.Fields["Social Share Description"].Value"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="/files/landmark/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/scrollbar/jquery.mCustomScrollbar.min.css" />
+<link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/slick/slick-theme.css" />
+<meta name="description" content="@Sitecore.Context.Item.Fields["Meta Description"].Value" />
+<meta name="keywords" content="@Sitecore.Context.Item.Fields["Meta Keywords"].Value" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="@LandmarkHelper.GetCurrentItemUrl()" />
+<meta property="og:title" content="@Sitecore.Context.Item.Fields["Social Share Title"].Value" />
+<meta property="og:description" content="@Sitecore.Context.Item.Fields["Social Share Description"].Value" />
 @{
-    var imagesId = ((MultilistField) Sitecore.Context.Item.Fields["Social Share Images"]).TargetIDs;
-    var firstImageUrl = LandmarkHelper.GetImageItemAbsoluteUrl(imagesId.FirstOrDefault());
+    string firstImageUrl = "";
+    var socialShareImages = (MultilistField)Sitecore.Context.Item.Fields["Social Share Images"];
+    if (socialShareImages != null)
+    {
+        var imagesId = socialShareImages.TargetIDs;
+        if (imagesId != null && imagesId.Count() != 0)
+        {
+            firstImageUrl = LandmarkHelper.GetImageItemAbsoluteUrl(imagesId.FirstOrDefault());
+            foreach (var imageid in imagesId)
+            {
+                <meta property="og:image" content="@LandmarkHelper.GetImageItemAbsoluteUrl(imageid)" />
+            }
+        }
+    }
 }
-@foreach (var imageid in imagesId)
-{
-    <meta property="og:image" content="@LandmarkHelper.GetImageItemAbsoluteUrl(imageid)" />
-}
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@ItemGuids.LandmarkConfigItem.Fields["Site"].Value">
-    <meta name="twitter:title" content="@Sitecore.Context.Item.Fields["Social Share Title"].Value">
-    <meta name="twitter:description" content="@Sitecore.Context.Item.Fields["Social Share Description"].Value">
-    <meta name="twitter:image" content="@firstImageUrl">
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <!--[if lt IE 9]>
-      <script src="/files/landmark/js/html5shiv-printshiv.min.js"></script>
-    <![endif]-->
-    <!--[if IE]>
-      <script src="/files/landmark/js/selectivizr-min.js"></script>
-    <![endif]-->
-    <!--[if IE 8]>
-      <style>
-        body,
-        body>.site-header , .mega-menu{
-          width: 1200px!important;
-        }
-        body {
-          margin: 0 auto!important;
-        }
-        .site-header {
-          left: 0;
-          margin: 0 auto!important;
-          right: 0;
-        }
-      </style>
-    <![endif]-->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ItemGuids.LandmarkConfigItem.Fields["Site"].Value">
+<meta name="twitter:title" content="@Sitecore.Context.Item.Fields["Social Share Title"].Value">
+<meta name="twitter:description" content="@Sitecore.Context.Item.Fields["Social Share Description"].Value">
+<meta name="twitter:image" content="@firstImageUrl">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<!--[if lt IE 9]>
+  <script src="/files/landmark/js/html5shiv-printshiv.min.js"></script>
+<![endif]-->
+<!--[if IE]>
+  <script src="/files/landmark/js/selectivizr-min.js"></script>
+<![endif]-->
+<!--[if IE 8]>
+  <style>
+    body,
+    body>.site-header , .mega-menu{
+      width: 1200px!important;
+    }
+    body {
+      margin: 0 auto!important;
+    }
+    .site-header {
+      left: 0;
+      margin: 0 auto!important;
+      right: 0;
+    }
+  </style>
+<![endif]-->
 @if (LandmarkHelper.GetPageBodyClass().StartsWith("t7"))
 {
     <link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/svgmap/mapplic/mapplic.css">
@@ -78,5 +86,4 @@
         <script type="text/javascript" src="/files/landmark/js/lib/svgmap/js/html5shiv.js"></script>
     <![endif]-->
 }
-    <title>@Html.Sitecore().Field("Page Title")</title>
-   
+<title>@Html.Sitecore().Field("Page Title")</title>
