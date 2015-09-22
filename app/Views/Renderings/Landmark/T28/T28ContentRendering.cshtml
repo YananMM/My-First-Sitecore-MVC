@@ -5,7 +5,7 @@
         <div class="gd-pagetitle-heading">
             <h2>@Html.Sitecore().Field("Page Title")</h2>
         </div>
-        <div class="gd-pagetitle-menu"><a href="#" class="active">@Html.Sitecore().Field("Legal Title")</a> <span class="gd-pagetitle-menu-gap">|</span>  <a href="#policy">@Html.Sitecore().Field("Privacy Title")</a>
+        <div class="gd-pagetitle-menu"><a href="#" class="active">@Html.Sitecore().Field("Legal Title")</a> <span class="gd-pagetitle-menu-gap">|</span>  <a href="#policy">@Html.Sitecore().Field("Privacy Title")</a><span class="gd-pagetitle-menu-gap">|</span>  <a href="#terms">@Html.Sitecore().Field("Terms Title")</a>
         </div>
     </div>
 </div>
@@ -16,6 +16,8 @@
         </div>
         <div class="gd-brief-body">
             @Html.Sitecore().Field("Legal Content")
+            @Html.Sitecore().Field("Legal Images Content")
+            @Html.Sitecore().Field("Legal Bottom Content")
         </div>
     </div>
     <div class="gd-brief" id="policy">
@@ -24,6 +26,14 @@
         </div>
         <div class="gd-brief-body">
             @Html.Sitecore().Field("Privacy Content")
+        </div>
+    </div>
+    <div class="gd-brief" id="terms">
+        <div class="gd-brief-heading  gd-brief-heading-left">
+            <h3>@Html.Sitecore().Field("Terms Title")</h3>
+        </div>
+        <div class="gd-brief-body">
+            @Html.Sitecore().Field("Terms Content")
         </div>
     </div>
 </div>
