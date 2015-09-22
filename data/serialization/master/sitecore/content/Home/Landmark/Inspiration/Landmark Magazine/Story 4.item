@@ -6,9 +6,16 @@ path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Story 4
 parent: {812D4614-C77D-4B0A-9729-D2FB3D830786}
 name: Story 4
 master: {019AAA6D-F7C8-4293-94EE-CF065B0A8A91}
-template: {2EE73BEB-F8DA-4F35-BB46-C1B0B8AC3945}
-templatekey: T23 Page AB
+template: {2F6A4A9C-C7DC-439D-8310-3A2EF0617158}
+templatekey: T23 Page CD
 
+----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Slider Image
+key: article slider image
+content-length: 58
+
+<image mediaid="{5732D6D7-7294-4356-B747-D802ECCC4FEE}" />
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -19,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 82c9786b-8113-472f-862f-f7b8e5d60bb6
+revision: a12d4b4b-4e49-46c0-a2be-71b4fed8aee6
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -36,14 +43,7 @@ content-length: 393
 
 Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
 ----field----
-field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
-name: Article Slider Image
-key: article slider image
-content-length: 58
-
-<image mediaid="{5732D6D7-7294-4356-B747-D802ECCC4FEE}" />
-----field----
-field: {BA2CB119-1C77-40AA-B95E-79014CAFD7AD}
+field: {28A224A8-EA7D-4F31-ABB4-CC72047EE1BA}
 name: Magazine Category
 key: magazine category
 content-length: 77
@@ -64,14 +64,7 @@ content-length: 7
 
 Story 4
 ----field----
-field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
-name: Page Style
-key: page style
-content-length: 0
-
-
-----field----
-field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
+field: {2F0F0DCD-D850-446C-9238-E6C8F94D94F2}
 name: Tags
 key: tags
 content-length: 194
@@ -90,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-82c9786b-8113-472f-862f-f7b8e5d60bb6
+a12d4b4b-4e49-46c0-a2be-71b4fed8aee6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150922T052730:635784964506546226Z
+20150922T072823:635785037033074506Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

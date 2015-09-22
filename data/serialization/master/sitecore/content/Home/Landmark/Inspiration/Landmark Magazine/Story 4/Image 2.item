@@ -1,14 +1,21 @@
 ----item----
 version: 1
-id: {DC84FBA5-00C6-4E82-8BF0-D5D75E1CDE04}
+id: {D104F044-E7CE-47E0-8D0E-7D1C10D37C0C}
 database: master
-path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Story 4/Image
+path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Story 4/Image 2
 parent: {9FC96AE5-974A-4A83-8DCA-F2114AE9100A}
-name: Image
+name: Image 2
 master: {48DA220E-BFA8-4789-8191-0FD9A3C0DB43}
 template: {DCB0CBFD-E8BA-49C0-9214-577C18B7BF25}
 templatekey: T23 Cover Object
 
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 2
+
+87
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -19,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: fa8a4708-3e82-472c-9871-fb2f16b9ec79
+revision: 7ff4a0df-5e28-4d55-a33b-9d57c4ccfa21
 
 ----field----
 field: {46B8E02C-A52F-4DA5-998F-8783C05660DB}
@@ -27,14 +34,7 @@ name: Cover Image
 key: cover image
 content-length: 58
 
-<image mediaid="{A3A7A994-5612-434B-BDB9-B99BFE3CA8CE}" />
-----field----
-field: {43CD37FA-B9F5-4AF2-AA66-8BA9F1F08566}
-name: Smaller Image
-key: smaller image
-content-length: 1
-
-1
+<image mediaid="{F8CC4C8F-6726-4450-A26E-5246EC575C1E}" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -62,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fa8a4708-3e82-472c-9871-fb2f16b9ec79
+7ff4a0df-5e28-4d55-a33b-9d57c4ccfa21
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150922T080713:635785060330357034Z
+20150922T080732:635785060525278183Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

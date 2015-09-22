@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {D834AF8F-C33A-4F31-81C5-DF493E5EBC73}
+id: {F4FDE8C8-581B-464F-8737-3C24D43DF1A2}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Video Object/Video Data/Video File
-parent: {08F976E5-66C9-4C4D-AFA9-CF7AB07245F7}
-name: Video File
+path: /sitecore/templates/User Defined/Landmark/Page/T28 Page/Privacy Data/Privacy Content
+parent: {DEBB0D58-E5EE-4994-B11C-1493F16A419A}
+name: Privacy Content
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,20 +13,20 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 4
+content-length: 9
 
-File
+Rich Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-100
+400
 ----version----
 language: en
 version: 1
-revision: 38bafe49-b002-4bd6-8e8d-5213ab4f306c
+revision: 8f05b3b6-813e-45d3-b02b-c2cbe630a6b1
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150922T060905Z
+20150831T020831Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-38bafe49-b002-4bd6-8e8d-5213ab4f306c
+8f05b3b6-813e-45d3-b02b-c2cbe630a6b1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150922T081250:635785063709700322Z
+20150922T093443:635785112835040130Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

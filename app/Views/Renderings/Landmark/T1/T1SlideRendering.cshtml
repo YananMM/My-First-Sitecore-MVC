@@ -16,8 +16,8 @@
             if (referenceField != null && referenceField.TargetItem != null)
             {
                 <li>
-                    <div class="@LandmarkHelper.GetSlideClass(referenceField.TargetItem) clearfix">
-                        @if (string.IsNullOrEmpty(referenceField.TargetItem.Fields["Slide Video"].Value))
+                    <div class="@LandmarkHelper.GetSlideClass(item) clearfix">
+                        @if (string.IsNullOrEmpty(referenceField.TargetItem.Fields["Article Video"].Value))
                         {
                             <div class="panel-img" data-bg="@LandmarkHelper.GetCallOutImage(referenceField.TargetItem)"></div>
                         }
@@ -45,7 +45,7 @@
                             </div>
                         </div>
                     </div>
-            </li>
+                </li>
             }
             
         }

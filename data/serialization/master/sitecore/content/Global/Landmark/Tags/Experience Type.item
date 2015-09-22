@@ -1,33 +1,33 @@
 ----item----
 version: 1
-id: {F8D0988D-9452-4964-90B5-BD405E2559A3}
+id: {90A7869E-8AF3-4DEE-BD71-7AE422931D30}
 database: master
-path: /sitecore/templates/Branches/User Defined/Landmark/Page/T23 Page CD/$name/Image
-parent: {DEB69C58-D1F0-4D24-904C-A009B331B9E3}
-name: Image
+path: /sitecore/content/Global/Landmark/Tags/Experience Type
+parent: {CDED756E-2A30-4B6B-B19A-A3F7E42EC893}
+name: Experience Type
 master: {00000000-0000-0000-0000-000000000000}
-template: {CFE5379F-402F-4FB5-A1C5-0E42CA464BC1}
-templatekey: Image Text Object
+template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+templatekey: Folder
 
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 77
+
+{A87A00B1-E6DB-45AB-8B54-636FEC3B5523}|{55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}
 ----version----
 language: en
 version: 1
-revision: 19cf9392-75ec-41f1-8a1e-41bf5511dc4f
+revision: 30f7ee77-352e-4f78-9ed6-c331bc375ec3
 
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150922T060444Z
+20150907T082428Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-19cf9392-75ec-41f1-8a1e-41bf5511dc4f
+30f7ee77-352e-4f78-9ed6-c331bc375ec3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150922T060444:635784986849024142Z
+20150922T053805:635784970853969278Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

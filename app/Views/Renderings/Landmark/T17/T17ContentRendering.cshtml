@@ -12,9 +12,9 @@
         </div>
 
         <div class="gd-pagetitle-menu hidden-xs">
-            <a href="javascript:;" class="active">HOME </a>
+            <a href="javascript:;" class="active">@Html.Sitecore().Field("Page Title") </a>
             <span class="gd-pagetitle-menu-gap">|</span>
-            <a href="javascript:;">PAGE 1</a>
+            <a href="javascript:;">@Sitecore.Context.Item.Children.FirstOrDefault().DisplayName</a>
             <span class="gd-pagetitle-menu-gap">|</span>
             <a href="javascript:;">PAGE 2</a>
             <span class="gd-pagetitle-menu-gap">|</span>

@@ -10,16 +10,30 @@ template: {2F6A4A9C-C7DC-439D-8310-3A2EF0617158}
 templatekey: T23 Page CD
 
 ----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Slider Image
+key: article slider image
+content-length: 58
+
+<image mediaid="{60FDF4D5-050B-4591-88AD-0DC2495D7241}" />
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
 content-length: 0
 
 
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 116
+
+{4F401F16-FF51-4484-83FA-B905DAB54D97}|{CFE5379F-402F-4FB5-A1C5-0E42CA464BC1}|{82C6EA0F-D0F2-4F40-BA8A-F5E39A10D5B5}
 ----version----
 language: en
 version: 1
-revision: 8b5854e3-e8ca-4196-b8db-2e9e2b5ec32f
+revision: 747a2a23-3a43-45f2-a8ba-2d3346797a62
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -42,13 +56,6 @@ key: article intro
 content-length: 41
 
 33333333333333333333333333333333333333333
-----field----
-field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
-name: Article Slider Image
-key: article slider image
-content-length: 58
-
-<image mediaid="{60FDF4D5-050B-4591-88AD-0DC2495D7241}" />
 ----field----
 field: {B966F61E-9F08-4674-AC01-EE1064020145}
 name: Article Date
@@ -85,6 +92,13 @@ content-length: 194
 
 {A869505D-8B56-42B6-9460-9928607C3BD3}|{83DA7F21-4D35-481C-B865-2A089D47AD10}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{8DEEBCDA-AC9C-4B0C-AF81-8E493D219713}|{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}
 ----field----
+field: {293A5D35-684E-4AA0-B022-4603ED513547}
+name: Text Line
+key: text line
+content-length: 63
+
+LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED D
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -97,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8b5854e3-e8ca-4196-b8db-2e9e2b5ec32f
+747a2a23-3a43-45f2-a8ba-2d3346797a62
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150922T053108:635784966681360618Z
+20150922T075214:635785051347213228Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

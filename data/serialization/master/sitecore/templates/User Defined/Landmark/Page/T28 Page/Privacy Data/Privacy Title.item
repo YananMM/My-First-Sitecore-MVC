@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {BF97D987-B97A-48C2-BD76-141998D35D71}
+id: {85FC0C67-C965-466C-8BCE-1C73A2B990EE}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T23 Page CD/Text Data/Text on Middle
-parent: {932D690A-DE77-4579-8F91-62F6964E8F24}
-name: Text on Middle
+path: /sitecore/templates/User Defined/Landmark/Page/T28 Page/Privacy Data/Privacy Title
+parent: {DEBB0D58-E5EE-4994-B11C-1493F16A419A}
+name: Privacy Title
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,20 +13,20 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 8
+content-length: 16
 
-Checkbox
+Single-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-200
+300
 ----version----
 language: en
 version: 1
-revision: aa901a83-2a9b-41bb-9a64-2cddf3545078
+revision: 66930d39-3db4-4730-9ae8-46fcc67c37ae
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150922T064251Z
+20150831T020831Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-aa901a83-2a9b-41bb-9a64-2cddf3545078
+66930d39-3db4-4730-9ae8-46fcc67c37ae
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150922T064252:635785009724672555Z
+20150922T093443:635785112834760114Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
