@@ -7,122 +7,111 @@
 @{
     var currentItem = Sitecore.Context.Item;
     var pageTitle = currentItem.DisplayName.ToLower();
+    var children = currentItem.Children.ToList();
 }
 <div class="container">
     <div class="gd-pagetitle">
         @Html.Sitecore().Placeholder("t17-page-title")
-
     </div>
 </div>
 <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-fixed" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#gd-carousel-mainimage" data-slide-to="0" class="active"></li>
-        <li data-target="#gd-carousel-mainimage" data-slide-to="1"></li>
-        <li data-target="#gd-carousel-mainimage" data-slide-to="2"></li>
-    </ol>
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <div class="carousel-image" data-bgsrc="../files/landmark/images/promotion/promotion-slider-01.jpg"></div>
-        </div>
-        <div class="item">
-            <div class="carousel-image" data-bgsrc="../files/landmark/images/hotel/hotel-slider-01.jpg"></div>
-        </div>
-        <div class="item">
-            <div class="carousel-image" data-bgsrc="../files/landmark/images/hotel/hotel-slider-02.jpg"></div>
-        </div>
-    </div>
-    <!-- Controls -->
-    <div class="gd-mainimage-controls">
-        <a class="gd-mainimage-control" href="#gd-carousel-mainimage" role="button" data-slide="prev">
-            <span class="icomoon-thin-arrow-L" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="gd-mainimage-control" href="#gd-carousel-mainimage" role="button" data-slide="next">
-            <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-
-
+    @Html.Sitecore().Placeholder("t17-slide")
     <!-- Caption -->
     <div class="carousel-caption">
         <div class="carousel-caption-inner">
             <div class="gd-carousel-detail">
                 <div class="gd-mainimage-brief3">
-                    <h2>LOREM IPSUM DOLOR SIT AMET</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex</p>
-                    <a href="#" class="gd-button gd-button-reversed" type="button">DISCOVER MORE</a>
+                    <h2>@Html.Sitecore().Field("Carousel Title")</h2>
+                    <p>@Html.Sitecore().Field("Carousel Description")</p>
+                    <a href="@Html.Sitecore().Field("Button Link")" class="gd-button gd-button-reversed" type="button">@Html.Sitecore().Field("Button Text")</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<div class="container">
-
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="gd-promotion-box">
-                <a href="#" class="gd-hover-img">
-                    <div class="gd-hover-img-area">
-                        <div class="gd-hover-img-mask"></div>
-                        <img data-src="../files/landmark/images/promotion/promotion-img-01.jpg">
+@using (Html.EditFrame(currentItem.Paths.FullPath))
+{
+    if (children.Count != 0)
+    {
+        foreach (var item in children)
+        {
+            if (item.TemplateID.ToString() == ItemGuids.TwoImageColumns)
+            {
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="gd-promotion-box">
+                                <a href="@Html.Sitecore().Field("Left Link")" class="gd-hover-img">
+                                    <div class="gd-hover-img-area">
+                                        <div class="gd-hover-img-mask"></div>
+                                        <img data-src="@Html.Sitecore().ImageFieldSrc("Left Image", item)">
+                                    </div>
+                                    <h3>@Html.Sitecore().Field("Left Title", item)</h3>
+                                    <p>@Html.Sitecore().Field("Left Description", item)</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="gd-promotion-box">
+                                <a href="@Html.Sitecore().Field("Right Link")" class="gd-hover-img">
+                                    <div class="gd-hover-img-area">
+                                        <div class="gd-hover-img-mask"></div>
+                                        <img data-src="@Html.Sitecore().ImageFieldSrc("Right Image", item)">
+                                    </div>
+                                    <h3>@Html.Sitecore().Field("Right Title", item)</h3>
+                                    <p>@Html.Sitecore().Field("Right Description", item)</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <h3> Lorem ipsum dolor sit amet</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
-                </a>
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="gd-promotion-box">
-                <a href="#" class="gd-hover-img">
-                    <div class="gd-hover-img-area">
-                        <div class="gd-hover-img-mask"></div>
-                        <img data-src="../files/landmark/images/promotion/promotion-img-02.jpg">
+                </div>
+            }
+            else if (item.TemplateID.ToString() == ItemGuids.TextColumn)
+            {
+                <div class="container">
+                    <div class="gd-brief">
+                        <div class="gd-brief-body gd-col-2 gd-longarticle" data-text-on="DISCOVER MORE >" data-text-off="LESS -">
+                            @Html.Sitecore().Field("Text Content")
+                        </div>
                     </div>
-                    <h3> Lorem ipsum dolor sit amet</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="gd-promotion-box">
+                </div>
+            }
+            else if (item.TemplateID.ToString() == ItemGuids.OneImage)
+            {
+                <div class="gd-promotion-block-area">
+                    <div class="gd-promotion-block clearfix">
+                        <div class="gd-promotion-block-img" style=" background-image:url(../files/landmark/images/promotion/promotion-bg-img-01.jpg)" data-bgsrc="../files/landmark/images/promotion/promotion-bg-img-02.jpg">
+                        </div>
+                        <div class="gd-promotion-block-text">
+                            <div class="gd-promotion-block-textarea">
+                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p><a href="#" class="gd-button gd-button-transparent" type="button">DISCOVER MORE</a>
 
-                <a href="#" class="gd-hover-img">
-                    <div class="gd-hover-img-area">
-                        <div class="gd-hover-img-mask"></div>
-                        <img data-src="../files/landmark/images/promotion/promotion-img-03.jpg">
+                            </div>
+                        </div>
                     </div>
-                    <h3> Lorem ipsum dolor sit amet</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
-                </a>
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="gd-promotion-box">
+                    <div class="gd-promotion-block2 clearfix">
+                        <div class="gd-promotion-block-img" style=" background-image:url(../files/landmark/images/promotion/promotion-bg-img-02.jpg)" data-bgsrc="../files/landmark/images/promotion/promotion-bg-img-02.jpg">
+                        </div>
+                        <div class="gd-promotion-block-text">
+                            <div class="gd-promotion-block-textarea">
+                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p><a href="#" class="gd-button gd-button-transparent" type="button">DISCOVER MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    }
+}
 
-                <a href="#" class="gd-hover-img">
-                    <div class="gd-hover-img-area">
-                        <div class="gd-hover-img-mask"></div>
-                        <img data-src="../files/landmark/images/promotion/promotion-img-04.jpg">
-                    </div>
-                    <h3> Lorem ipsum dolor sit amet</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 <script type="text/javascript">
-    jQuery(function () {
-        var pageTitle = '@pageTitle';
-        if (pageTitle === 'promotion') {
-            window.Location = "@Url.Action("ButtonRedirect", "Home")?targetId={D6F4FCEC-2289-48D1-A1B2-CF17F4062B70}";
-        }
-    });
+    var pageTitle = '@pageTitle';
+    //alert(pageTitle);
+    if (pageTitle === 'promotion') {
+        window.Location = "@Url.Action("ButtonRedirect", "Home")?targetId={D6F4FCEC-2289-48D1-A1B2-CF17F4062B70}";
+    }
 </script>

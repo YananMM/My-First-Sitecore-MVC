@@ -1,6 +1,7 @@
 ﻿using Sitecore.Data.Items;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 using Sitecore.Web.UI;
@@ -111,6 +112,11 @@ namespace Landmark.Classes
         public static readonly String LandmarkMaganizePage = "{812D4614-C77D-4B0A-9729-D2FB3D830786}";
         public static readonly String SlideFolderTemplate = "{EEEB8813-EBD2-415E-B4F0-72B52DDEF18E}";
 
+        public static readonly String TwoImageColumns = "{C9F47999-9F13-42F2-9AC5-C5DB6FCF4A69}";
+        public static readonly String TextColumn = "{95710548-2E7F-4FD5-B97D-CAF1396CE80B}";
+        public static readonly String OneImage = "{16F1704D-42DB-450A-829C-193F500489E0}";
+        public static readonly String ImageSlider = "{DE5C1439-8A10-4B6F-8FE5-6AA7CD9C5526}";
+        public static readonly String Tab = "{8D48118F-0385-48B6-A944-F615A3A610BC}";
 
         //item 
         public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}");
@@ -178,6 +184,8 @@ namespace Landmark.Classes
 
         public static readonly Item MagezineItem =
             Sitecore.Context.Database.GetItem("{8B359693-D433-4F44-98F8-9CEE5FA9B72F}");
+
+        public static readonly Item ListenToCommentaryAltItem = Sitecore.Context.Database.GetItem("{36C61E1D-7652-4DD4-8CCA-DDF1067D89D3}");
 
     }
 }
