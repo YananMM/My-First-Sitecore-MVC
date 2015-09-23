@@ -9,11 +9,6 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {CFE5379F-402F-4FB5-A1C5-0E42CA464BC1}
 templatekey: Image Text Object
 
-----version----
-language: en
-version: 1
-revision: 8a5a2c43-45e8-4832-8690-0adfdf9e10d6
-
 ----field----
 field: {0AB28A95-2EFC-4333-B617-155C738623C9}
 name: Image
@@ -21,6 +16,11 @@ key: image
 content-length: 58
 
 <image mediaid="{211FAB30-43E6-4476-B82A-957131CED6F9}" />
+----version----
+language: en
+version: 1
+revision: 8a5a2c43-45e8-4832-8690-0adfdf9e10d6
+
 ----field----
 field: {97376B76-2C43-4ECC-8E56-5322D1CBD35D}
 name: Text

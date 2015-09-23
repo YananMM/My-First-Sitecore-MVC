@@ -10,6 +10,13 @@ template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
 templatekey: Slide Object
 
 ----field----
+field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{F310CC1C-A968-457C-B95E-E46594BB79FB}" />
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -21,13 +28,6 @@ language: en
 version: 1
 revision: b9a17e34-3e03-47e2-95c1-bb9c6d8d9156
 
-----field----
-field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
-name: Slide Image
-key: slide image
-content-length: 58
-
-<image mediaid="{F310CC1C-A968-457C-B95E-E46594BB79FB}" />
 ----field----
 field: {06BB0E44-EEED-4773-B420-9B6EB948A433}
 name: Slide Title

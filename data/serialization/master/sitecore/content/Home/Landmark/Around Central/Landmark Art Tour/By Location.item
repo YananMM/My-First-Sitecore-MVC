@@ -10,6 +10,13 @@ template: {7B7A336C-48D6-4CD7-BC35-A4593F16F2D0}
 templatekey: T22 Page
 
 ----field----
+field: {03433C47-052F-4517-97AC-93A9F4BFD2CE}
+name: Buildings Map Image
+key: buildings map image
+content-length: 58
+
+<image mediaid="{78A02E50-037C-4856-AB46-9A025EB69E34}" />
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -28,13 +35,6 @@ language: en
 version: 1
 revision: 1291ca76-306c-42a6-b48d-bdee07cb3b06
 
-----field----
-field: {03433C47-052F-4517-97AC-93A9F4BFD2CE}
-name: Buildings Map Image
-key: buildings map image
-content-length: 58
-
-<image mediaid="{78A02E50-037C-4856-AB46-9A025EB69E34}" />
 ----field----
 field: {B444FA5E-2123-42E2-9665-B4C020D24442}
 name: Buildings Map File

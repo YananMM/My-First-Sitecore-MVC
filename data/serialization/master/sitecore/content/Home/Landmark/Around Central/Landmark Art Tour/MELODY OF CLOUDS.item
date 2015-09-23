@@ -10,6 +10,13 @@ template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
 templatekey: T29 Page
 
 ----field----
+field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
+name: Art Image
+key: art image
+content-length: 58
+
+<image mediaid="{484906C6-590F-4E1C-867B-7BD4351581C9}" />
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -70,13 +77,6 @@ key: art key
 content-length: 13
 
 OIL ON CANVAS
-----field----
-field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
-name: Art Image
-key: art image
-content-length: 58
-
-<image mediaid="{484906C6-590F-4E1C-867B-7BD4351581C9}" />
 ----field----
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description

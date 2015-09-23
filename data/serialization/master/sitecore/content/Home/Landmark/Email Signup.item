@@ -9,6 +9,13 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {E3002EEE-05A1-4964-9453-0F4283B00293}
 templatekey: T31 Page
 
+----field----
+field: {80D4F2EF-F96A-451E-9315-0DE1596D45F3}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{B816EEE7-20AA-4823-AB20-EA05B255E20D}" />
 ----version----
 language: en
 version: 1
@@ -203,13 +210,6 @@ key: agree message
 content-length: 77
 
 I agree to the use of my personal data for direct marketing of Hongkong Land.
-----field----
-field: {80D4F2EF-F96A-451E-9315-0DE1596D45F3}
-name: Image
-key: image
-content-length: 58
-
-<image mediaid="{B816EEE7-20AA-4823-AB20-EA05B255E20D}" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner

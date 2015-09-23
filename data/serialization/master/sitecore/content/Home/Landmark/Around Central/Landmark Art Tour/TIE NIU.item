@@ -9,6 +9,13 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
 templatekey: T29 Page
 
+----field----
+field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
+name: Art Image
+key: art image
+content-length: 58
+
+<image mediaid="{997571B0-F8CB-4EE5-AEC3-E3185510DC93}" />
 ----version----
 language: en
 version: 1
@@ -56,13 +63,6 @@ key: art key
 content-length: 16
 
 ART OF SCULPTURE
-----field----
-field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
-name: Art Image
-key: art image
-content-length: 58
-
-<image mediaid="{997571B0-F8CB-4EE5-AEC3-E3185510DC93}" />
 ----field----
 field: {22B6E709-1F38-4AF9-8D6C-7E3443E4F3ED}
 name: Floor and Building

@@ -9,11 +9,6 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {427B09DC-F914-4895-80D7-8A08C89A3119}
 templatekey: Landmark Config
 
-----version----
-language: en
-version: 1
-revision: f04884c9-3315-404a-bff3-698ea4d75dd0
-
 ----field----
 field: {217B1155-8188-498E-84EB-92CEC31E5D09}
 name: Landmark Logo
@@ -35,6 +30,18 @@ key: hongkong land image
 content-length: 58
 
 <image mediaid="{83C85E65-6960-4A14-9098-05896B7D4239}" />
+----field----
+field: {7C82EAD3-757C-4A78-A5A8-D108A51C835A}
+name: Portrait Only Image
+key: portrait only image
+content-length: 58
+
+<image mediaid="{F8D43AF6-8977-47D2-8361-E45222E334DA}" />
+----version----
+language: en
+version: 1
+revision: 6cf948f8-0db9-4d95-a1ee-eebcc6463e57
+
 ----field----
 field: {61C64C37-DD57-4575-BEE5-AC71398FABF6}
 name: Copyright Left Text
@@ -85,19 +92,26 @@ content-length: 75
 
 This site is best experienced in portrait mode. Please rotate your device. 
 ----field----
-field: {7C82EAD3-757C-4A78-A5A8-D108A51C835A}
-name: Portrait Only Image
-key: portrait only image
-content-length: 58
-
-<image mediaid="{F8D43AF6-8977-47D2-8361-E45222E334DA}" />
-----field----
 field: {79DEFB2A-A211-480C-B68F-E2814DE75F3E}
 name: Site
 key: site
 content-length: 14
 
 @MO_LANDMARKHK
+----field----
+field: {D37C539D-7503-4329-8B5F-61AC0D0E0B6F}
+name: Adobe Header Loader File
+key: adobe header loader file
+content-length: 143
+
+<script src="//assets.adobedtm.com/9aa8f444435d90ff3c53c568fb8779b4d42b2ce7/satelliteLib-b098935529a91c4c8c1f840db43224f01f6799dd.js"></script>
+----field----
+field: {138DE222-3B71-4E36-B9D2-8AD12B4618D9}
+name: Adobe Body Loader File
+key: adobe body loader file
+content-length: 66
+
+<script type="text/javascript"> _satellite.pageBottom(); </script>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -125,14 +139,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f04884c9-3315-404a-bff3-698ea4d75dd0
+6cf948f8-0db9-4d95-a1ee-eebcc6463e57
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150916T130426Z
+20150922T064714Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

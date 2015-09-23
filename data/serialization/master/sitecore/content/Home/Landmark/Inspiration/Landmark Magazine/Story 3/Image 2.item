@@ -10,6 +10,13 @@ template: {DCB0CBFD-E8BA-49C0-9214-577C18B7BF25}
 templatekey: T23 Cover Object
 
 ----field----
+field: {46B8E02C-A52F-4DA5-998F-8783C05660DB}
+name: Cover Image
+key: cover image
+content-length: 58
+
+<image mediaid="{C3EBC177-3670-4DF8-9AE5-3B7C6317E347}" />
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -21,13 +28,6 @@ language: en
 version: 1
 revision: 1219851e-a008-4849-9755-1053f1e74f8b
 
-----field----
-field: {46B8E02C-A52F-4DA5-998F-8783C05660DB}
-name: Cover Image
-key: cover image
-content-length: 58
-
-<image mediaid="{C3EBC177-3670-4DF8-9AE5-3B7C6317E347}" />
 ----field----
 field: {43CD37FA-B9F5-4AF2-AA66-8BA9F1F08566}
 name: Smaller Image

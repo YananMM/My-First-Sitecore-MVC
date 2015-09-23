@@ -9,6 +9,13 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
+----field----
+field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
+name: Cover Image
+key: cover image
+content-length: 58
+
+<image mediaid="{8287AB21-2C4F-4B02-AC26-245B9214554B}" />
 ----version----
 language: en
 version: 1
@@ -21,13 +28,6 @@ key: cover title
 content-length: 17
 
 Janis (HK$10,530)
-----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
-
-<image mediaid="{8287AB21-2C4F-4B02-AC26-245B9214554B}" />
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title

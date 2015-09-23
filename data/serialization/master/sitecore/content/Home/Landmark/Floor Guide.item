@@ -10,6 +10,13 @@ template: {7F83D69B-62DB-4004-A011-02C3B1328E3F}
 templatekey: T7 Page
 
 ----field----
+field: {611417F5-F6A0-41DF-97F3-1A0D9A5D3CDA}
+name: Map Menu Image
+key: map menu image
+content-length: 58
+
+<image mediaid="{8EDAD5A6-7A83-4FA4-AA41-93230568940D}" />
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -21,13 +28,6 @@ language: en
 version: 1
 revision: 0f9ba00a-d61d-429e-b44c-f6908810cb03
 
-----field----
-field: {611417F5-F6A0-41DF-97F3-1A0D9A5D3CDA}
-name: Map Menu Image
-key: map menu image
-content-length: 58
-
-<image mediaid="{8EDAD5A6-7A83-4FA4-AA41-93230568940D}" />
 ----field----
 field: {54AE07D5-2553-48E1-BC5F-982A625D7A3F}
 name: Map Width

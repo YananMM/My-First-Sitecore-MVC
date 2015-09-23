@@ -9,11 +9,6 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
 templatekey: Slide Object
 
-----version----
-language: en
-version: 1
-revision: 9dd1c716-e9ed-4543-8a3d-584152e06ada
-
 ----field----
 field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
 name: Slide Image
@@ -21,6 +16,11 @@ key: slide image
 content-length: 58
 
 <image mediaid="{552D2B1F-C3D2-4168-BF52-3E545B09B90C}" />
+----version----
+language: en
+version: 1
+revision: 9dd1c716-e9ed-4543-8a3d-584152e06ada
+
 ----field----
 field: {EA18DD4F-8CA0-4115-9FDA-AF1CBFC569D0}
 name: Has Slide Content

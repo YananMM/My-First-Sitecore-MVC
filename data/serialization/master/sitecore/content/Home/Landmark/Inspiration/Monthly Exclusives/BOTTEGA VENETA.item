@@ -10,6 +10,20 @@ template: {A46D7A20-B29F-4C4F-8922-0B70555CD6BC}
 templatekey: T27 Page
 
 ----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Slider Image
+key: article slider image
+content-length: 58
+
+<image mediaid="{FE31DDAF-D49D-45CB-BD68-AE988CE78CC6}" />
+----field----
+field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
+name: Article Thumb Image
+key: article thumb image
+content-length: 65
+
+<image mediaid="{8FDB6E03-C967-4010-80E8-E8FA816AB92E}" ></image>
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -44,20 +58,6 @@ content-length: 670
 Alessi is an inspirational Italian tableware brand that is famous for commissioning famous designers to create everyday objects. The results are often breath-taking and always intriguing. An example of this collaboration is the fruit holder designed by Emma Silvestris. When inserted in a fruit bowl, it creates a new object that can hold salad, pasta or other dishes. Now, the celebrated Mediterraneo fruit bowl comes in a new, limited-edition version in sky blue. Anyone seeking an idea to perk up their table settings for the coming season can head straight to the Alessi&rsquo;s LANDMARK PRINCE&rsquo;S store, where the blue Mediterraneo is exclusively available.
 
 
-----field----
-field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
-name: Article Slider Image
-key: article slider image
-content-length: 58
-
-<image mediaid="{FE31DDAF-D49D-45CB-BD68-AE988CE78CC6}" />
-----field----
-field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
-name: Article Thumb Image
-key: article thumb image
-content-length: 65
-
-<image mediaid="{8FDB6E03-C967-4010-80E8-E8FA816AB92E}" ></image>
 ----field----
 field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
 name: Article Type
