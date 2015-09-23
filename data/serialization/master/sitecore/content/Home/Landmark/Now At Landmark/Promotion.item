@@ -1,0 +1,107 @@
+----item----
+version: 1
+id: {42B4F49F-6707-4FBC-8F85-38315D4177F3}
+database: master
+path: /sitecore/content/Home/Landmark/Now At Landmark/Promotion
+parent: {F0A68E40-FB4F-4B85-969D-A6ADEE24DE6B}
+name: Promotion
+master: {00000000-0000-0000-0000-000000000000}
+template: {3B297975-145B-4CF7-972E-8B2721725C8F}
+templatekey: T17 Page
+
+----field----
+field: {F7D48A55-2158-4F02-9356-756654404F73}
+name: __Standard values
+key: __standard values
+content-length: 0
+
+
+----field----
+field: {39C4902E-9960-4469-AEEF-E878E9C8218F}
+name: __Hidden
+key: __hidden
+content-length: 0
+
+
+----field----
+field: {56776EDF-261C-4ABC-9FE7-70C618795239}
+name: __Help link
+key: __help link
+content-length: 0
+
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 594
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{39D42A05-61C6-48CF-AD44-D9D461CF8209}"><p:d /></r><r uid="{C8CE90AA-9DCE-47C5-9747-C4990535B81F}"><p:d /></r><r uid="{56D14851-9AF7-45F2-95C7-104F87CFBE60}" p:before="r[@uid='{BDDC6840-62B3-4786-A17A-F07186033485}']" s:id="{81812890-F973-4078-8B1E-347D258403FD}" s:ph="" /><r uid="{BDDC6840-62B3-4786-A17A-F07186033485}" s:id="{53B49FDF-8B9A-4EDB-AA98-F3431087248C}" s:ph="" /><r uid="{020AA0F2-E164-4D35-AA18-7ED1F121E2EE}"><p:d /></r><r uid="{8617FB0E-BB0E-463A-9D13-CD2EEA3731CF}"><p:d /></r></d></r>
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 0
+
+
+----field----
+field: {CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}
+name: __Default workflow
+key: __default workflow
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: a0f922f4-bcf2-4145-b15f-1d432f0e0762
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 9
+
+Promotion
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150922T034249Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a0f922f4-bcf2-4145-b15f-1d432f0e0762
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150923T094328:635785982085268676Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 0
+
+

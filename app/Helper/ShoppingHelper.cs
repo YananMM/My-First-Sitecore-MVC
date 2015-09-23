@@ -94,7 +94,7 @@ namespace Landmark.Helper
                                              where item.DisplayName == category.DisplayName
                                              select new TextValue
                                              {
-                                                 text = category["Category Name"],
+                                                 text = category["Tag Name"],
                                                  value = item.ID.ToString()
                                              }).ToList();
             foreach (var item in firstCategory)
@@ -125,7 +125,7 @@ namespace Landmark.Helper
             {
                 if (item.DisplayName == currentShoppingPage.DisplayName)
                 {
-                    var relatedCategories = item.Fields["Related Categoryies"].ToString();
+                    var relatedCategories = item.Fields["Related Tags"].ToString();
                     if (!string.IsNullOrEmpty(relatedCategories))
                     {
                         relatedCategoriesIDs = relatedCategories.Split('|').ToList();
@@ -163,7 +163,7 @@ namespace Landmark.Helper
             List<Item> brandsByBuildings = new List<Item>();
             foreach (Item brand in brandsItems)
             {
-                var buildingsField = (ReferenceField)brand.Fields["Buildings"];
+                var buildingsField = (ReferenceField)brand.Fields["Building"];
                 if (buildingsField != null && buildingsField.TargetItem!=null)
                 {
                     if (buildingsField.TargetItem.ID.Guid == buildingId.Guid)
@@ -189,7 +189,7 @@ namespace Landmark.Helper
                     Item categoryItem = _webDb.GetItem(categoryId);
                     if (tagsField.TargetIDs.Any(id => _webDb.GetItem(id).DisplayName == categoryItem.DisplayName && _webDb.GetItem(id).Parent.DisplayName == categoryItem.Parent.DisplayName))
                     {
-                        var buildingsField = (ReferenceField)brand.Fields["Buildings"];
+                        var buildingsField = (ReferenceField)brand.Fields["Building"];
                         if (buildingsField != null && buildingsField.TargetItem!=null)
                         {
                             if (!buildingsByCategory.Contains(buildingsField.TargetItem))

@@ -7,7 +7,7 @@ parent: {3FBE00DD-2724-453D-8208-D0E3425672F1}
 name: Wines and Spirits
 master: {00000000-0000-0000-0000-000000000000}
 template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
-templatekey: Category Object
+templatekey: Tag Object
 
 ----version----
 language: en
@@ -16,8 +16,8 @@ revision: 664c21e2-8cc0-46c3-bff2-55c35082a2e4
 
 ----field----
 field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
-name: Category Name
-key: category name
+name: Tag Name
+key: tag name
 content-length: 15
 
 Wines & Spirits

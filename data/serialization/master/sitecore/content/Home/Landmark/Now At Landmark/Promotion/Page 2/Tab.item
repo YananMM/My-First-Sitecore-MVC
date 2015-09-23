@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {7583C238-9C6E-42F1-B317-5C16BB4D4739}
+database: master
+path: /sitecore/content/Home/Landmark/Now At Landmark/Promotion/Page 2/Tab
+parent: {9C2BB7E7-012D-4AAF-BFBD-E3BBAFF96EE5}
+name: Tab
+master: {9D876F6A-C8AA-4C7E-B460-F10C42F31409}
+template: {8D48118F-0385-48B6-A944-F615A3A610BC}
+templatekey: Tab
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 88590c12-5911-47b1-a12c-4862b2997cf7
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150923T090842Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+88590c12-5911-47b1-a12c-4862b2997cf7
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150923T090842:635785961229455792Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

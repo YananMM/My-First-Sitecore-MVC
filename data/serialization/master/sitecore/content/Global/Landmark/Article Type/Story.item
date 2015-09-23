@@ -6,18 +6,18 @@ path: /sitecore/content/Global/Landmark/Article Type/Story
 parent: {2F7748B7-07ED-413F-8B92-382DCE56A8C9}
 name: Story
 master: {00000000-0000-0000-0000-000000000000}
-template: {55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}
-templatekey: Text Object
+template: {3DB6DB24-E91F-4256-A077-8CD7926D4969}
+templatekey: Article Type
 
 ----version----
 language: en
 version: 1
-revision: 46676f1e-58eb-47e0-a363-7f3e99f73715
+revision: d8249b2c-9f93-4c3b-b0c7-8ba06d183195
 
 ----field----
-field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
-name: Value
-key: value
+field: {3CFBCC26-03CC-4185-B735-34225B515556}
+name: Article Type
+key: article type
 content-length: 5
 
 Story
@@ -34,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-46676f1e-58eb-47e0-a363-7f3e99f73715
+d8249b2c-9f93-4c3b-b0c7-8ba06d183195
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150915T015757:635778790777410936Z
+20150923T062331Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,0 +1,40 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@using Landmark.Models
+@model RenderingModel
+@{
+    var currentItem = Sitecore.Context.Item;
+    var parentItem = currentItem.Parent;
+
+}
+<div class="gd-pagetitle-heading">
+    <h2>@Html.Sitecore().Field("Page Title", parentItem).ToString().ToUpper()</h2>
+</div>
+
+<div class="gd-pagetitle-menu hidden-xs">
+    @{
+        int i = 1;
+        foreach (var item in parentItem.Children.ToList())
+        {
+            <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)" @if (i == 1) { <text>
+               class="active"
+               </text>       }>@Html.Sitecore().Field("Page Title", item)</a>
+            if (i != parentItem.Children.Count)
+            {
+                <span class="gd-pagetitle-menu-gap">|</span>
+            }
+            i++;
+        }
+    }
+</div>
+
+<div class="gd-controls-m visible-xs">
+    <select class="form-control">
+        @foreach (var item in parentItem.Children.ToList())
+        {
+            <option value="@Sitecore.Links.LinkManager.GetItemUrl(item)">@Html.Sitecore().Field("Page Title", item)</option>
+        }
+    </select>
+</div>

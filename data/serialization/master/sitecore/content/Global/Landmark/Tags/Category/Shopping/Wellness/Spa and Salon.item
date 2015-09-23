@@ -7,7 +7,7 @@ parent: {101C4A58-6D7D-4905-AD44-F0F054282440}
 name: Spa and Salon
 master: {00000000-0000-0000-0000-000000000000}
 template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
-templatekey: Category Object
+templatekey: Tag Object
 
 ----version----
 language: en
@@ -16,8 +16,8 @@ revision: 82fa3f5b-57c0-4f66-ae69-4866a5870da9
 
 ----field----
 field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
-name: Category Name
-key: category name
+name: Tag Name
+key: tag name
 content-length: 11
 
 Spa & Salon

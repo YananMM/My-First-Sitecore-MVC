@@ -7,7 +7,7 @@ parent: {FCDCFA36-AC20-495B-A6A3-B1FAEB5B4735}
 name: Art
 master: {00000000-0000-0000-0000-000000000000}
 template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
-templatekey: Category Object
+templatekey: Tag Object
 
 ----version----
 language: en
@@ -16,8 +16,8 @@ revision: 4a2a5909-8ec6-4ca0-bdea-77d094c54bf8
 
 ----field----
 field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
-name: Category Name
-key: category name
+name: Tag Name
+key: tag name
 content-length: 3
 
 Art

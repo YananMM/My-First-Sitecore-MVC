@@ -257,7 +257,7 @@ namespace Landmark.Helper
 
         public static List<Item> GetBuildings()
         {
-            return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.ToList();
+            return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.OrderBy(p => p.DisplayName).ToList();
         }
 
         /// <summary>

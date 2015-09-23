@@ -6,21 +6,28 @@ path: /sitecore/content/Global/Landmark/Article Type/Event
 parent: {2F7748B7-07ED-413F-8B92-382DCE56A8C9}
 name: Event
 master: {00000000-0000-0000-0000-000000000000}
-template: {55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}
-templatekey: Text Object
+template: {3DB6DB24-E91F-4256-A077-8CD7926D4969}
+templatekey: Article Type
 
 ----version----
 language: en
 version: 1
-revision: 7a06d1a5-33e6-4fc0-80ab-763b7f4ff0ca
+revision: 2e7885c4-eb3a-4116-88d0-dacdb0f10ca3
 
 ----field----
-field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
-name: Value
-key: value
+field: {3CFBCC26-03CC-4185-B735-34225B515556}
+name: Article Type
+key: article type
 content-length: 5
 
 Event
+----field----
+field: {69F52B0C-E7AD-4872-8398-51CF10D649B6}
+name: See More Article Text
+key: see more article text
+content-length: 21
+
+SEE MORE INSPIRATIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7a06d1a5-33e6-4fc0-80ab-763b7f4ff0ca
+2e7885c4-eb3a-4116-88d0-dacdb0f10ca3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150826T024810Z
+20150923T062453Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

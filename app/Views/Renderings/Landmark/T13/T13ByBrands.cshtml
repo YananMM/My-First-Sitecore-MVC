@@ -3,9 +3,15 @@
 @using Sitecore.Data.Items
 @model RenderingModel
 <div class="masonry-area clearfix">
+    @Html.Sitecore().Rendering(ItemGuids.T13MobileSideBarRendering, new
+            {
+                Cacheable = false,
+                CacheKey = "by-brands-buidings",
+                Cache_VaryByData = true,
+            })
     <div class="brand-box-area">
         @{
-            ShoppingHelper shoppingHelper=new ShoppingHelper();
+            ShoppingHelper shoppingHelper = new ShoppingHelper();
             Item parentItem = Sitecore.Context.Item.Parent;
             var brandModels = shoppingHelper.GetBrandModels();
             if (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem))

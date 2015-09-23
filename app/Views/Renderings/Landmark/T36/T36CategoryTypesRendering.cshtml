@@ -16,7 +16,7 @@
     @foreach (var item in magazineCategories)
     {
         <span class="gd-pagetitle-menu-gap">|</span>
-        <a href="@Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage)?type=@item.ID&page=1" @if (Request["type"] == item.ID.ToString()) { <text> class="active" </text>    }>@item.Fields["Category Name"].ToString().ToUpper()</a>
+        <a href="@Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage)?type=@item.ID&page=1" @if (Request["type"] == item.ID.ToString()) { <text> class="active" </text>    }>@item.Fields["Tag Name"].ToString().ToUpper()</a>
     }
 </div>
 
@@ -25,7 +25,7 @@
         <option value="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage))">MAGAZINE</option>
         @foreach (var item in magazineCategories)
         {
-            <option value="@Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage)?type=@item.ID&page=1">@item.Fields["Category Name"].ToString().ToUpper()</option>
+            <option value="@Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage)?type=@item.ID&page=1">@item.Fields["Tag Name"].ToString().ToUpper()</option>
         }
     </select>
 </div>

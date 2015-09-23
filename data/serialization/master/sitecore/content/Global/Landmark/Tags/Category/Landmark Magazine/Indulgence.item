@@ -7,7 +7,7 @@ parent: {3316BC5E-C1E1-4D24-AD86-4BC25D214996}
 name: Indulgence
 master: {00000000-0000-0000-0000-000000000000}
 template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
-templatekey: Category Object
+templatekey: Tag Object
 
 ----version----
 language: en
@@ -16,8 +16,8 @@ revision: e326d389-f250-4ee4-8a81-bf8747198ee9
 
 ----field----
 field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
-name: Category Name
-key: category name
+name: Tag Name
+key: tag name
 content-length: 10
 
 Indulgence

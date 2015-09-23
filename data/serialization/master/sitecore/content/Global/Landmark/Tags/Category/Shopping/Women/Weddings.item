@@ -7,7 +7,7 @@ parent: {584512EB-189E-4FEF-9280-3F893DD9A9E1}
 name: Weddings
 master: {00000000-0000-0000-0000-000000000000}
 template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
-templatekey: Category Object
+templatekey: Tag Object
 
 ----version----
 language: en
@@ -16,8 +16,8 @@ revision: 06793eca-4399-447d-aa43-24aeb45b7e0d
 
 ----field----
 field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
-name: Category Name
-key: category name
+name: Tag Name
+key: tag name
 content-length: 8
 
 Weddings

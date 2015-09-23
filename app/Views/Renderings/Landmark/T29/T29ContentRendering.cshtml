@@ -19,12 +19,16 @@
             </div>
             <div class="col-sm-6 text-center">
                 <div class="gd-pagetitle">
-                    @*@{
+                    @{
                         ImageField imageField = Sitecore.Context.Item.Fields["Art Image"];
 
                         string alt = imageField.Alt;
-                        <img class="gd-lightbox-link" data-lightsrc="https://boredanddangerousblog.files.wordpress.com/2014/06/edgeoftomorrow2.jpg" src="../files/landmark/images/artpiece/artpiece-bigpic-01.jpg" alt="artpiece picture">
-                    }*@
+                        <a href="javascript:;" class="gd-lightbox-link gd-hover-img" data-lightsrc="../files/landmark/images/artpiece/artpiece-bigpic-01.jpg">
+                            <div class="gd-hover-img-mask"></div>
+                            <img src="../files/landmark/images/artpiece/artpiece-bigpic-01.jpg" alt="artpiece picture">
+                        </a>
+                    }
+                    
                     @Html.Sitecore().Field("Art Image", new { @class = "gd-lightbox-link" })
                 </div>
             </div>
@@ -38,12 +42,32 @@
                             @Html.Sitecore().Field("Art Key")<br>
                             @Html.Sitecore().Field("Art Size")
                         </div>
-                        <div class="col-sm-6 text-right">
-                            <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
-                                <span class="icomoon-sound-alt"></span>
-                                @Html.Sitecore().Field("Glossary Value", ItemGuids.ListenToCommentaryItem)
-                            </a>
-                        </div>
+                        @if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
+                        {
+                            <div class="col-sm-12 text-right">
+                                <div>
+                                    <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
+                                        <span class="icomoon-sound-alt"></span>
+                                        @Html.Sitecore().Field("Glossary Value", ItemGuids.ListenToCommentaryItem)
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary Alt", Sitecore.Context.Item)">
+                                        <span class="icomoon-sound-alt"></span>
+                                        @Html.Sitecore().Field("Glossary Value", ItemGuids.ListenToCommentaryAltItem)
+                                    </a>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="col-sm-4 text-right">
+                                <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
+                                    <span class="icomoon-sound-alt"></span>
+                                    @Html.Sitecore().Field("Glossary Value", ItemGuids.ListenToCommentaryItem)
+                                </a>
+                            </div>
+                        }
                     </div>
                     <div class="gd-artplace-details row">
                         <div class="col-sm-3 col-md-2  gd-artplace-location">@Html.Sitecore().Field("Glossary Value", ItemGuids.LocationItem)</div>

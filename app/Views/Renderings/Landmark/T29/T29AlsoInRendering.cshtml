@@ -24,16 +24,19 @@
                     foreach (var item in artPieces)
                     {
                         <li>
-                            <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
-                                @Html.Sitecore().Field("Art Image", item)
+                            <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)" class="gd-hover-img">
+                                <div class="gd-hover-img-area">
+                                    <div class="gd-hover-img-mask"></div>
+                                    @Html.Sitecore().Field("Art Image", item)
+                                </div>
                                 <h4>@Html.Sitecore().Field("Art Title", item)</h4>
                                 @{
-                        GroupedDroplinkField artistField = item.Fields["Artist"];
-                        if (artistField.TargetItem != null)
-                        {
-                            var artist = artistField.TargetItem;
-                            <p>@artist.Fields["Artist Name"].ToString()</p>
-                        }
+                                    GroupedDroplinkField artistField = item.Fields["Artist"];
+                                    if (artistField.TargetItem != null)
+                                    {
+                                        var artist = artistField.TargetItem;
+                                        <p>@artist.Fields["Artist Name"].ToString()</p>
+                                    }
                                 }
                             </a>
                         </li>

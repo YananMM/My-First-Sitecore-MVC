@@ -27,12 +27,18 @@
             </ul>
             <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBuidingsGuidItem)</h3>
             <ul class="brands-gap">
-                @Html.Sitecore().Rendering(ItemGuids.ByBuildingsRenderingViewGuid, new
+                @{
+                    List<Item> buidings = LandmarkHelper.GetBuildings();
+                    Item contextItem = Sitecore.Context.Item;
+                    Item firstParentItem = contextItem.Parent;
+                    Item allByBuildings = firstParentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) ? Sitecore.Context.Database.GetItem(ItemGuids.AllByBuildingsPage):contextItem;
+                }
+
+                @foreach (Item building in buidings)
                 {
-                    Cacheable = false,
-                    CacheKey = "bybuildings",
-                    Cache_VaryByData = true
-                })
+                    string href=Sitecore.Links.LinkManager.GetItemUrl(allByBuildings)+"#"+building.DisplayName.ToLower().Replace(" ","");
+                    <li><a href="@href">@building.Fields["Building Title"].Value</a></li>
+                }
             </ul>
             <form class="form-goto" data-handler-get-catetories="/Service/GetCategoryJson.ashx/" method="POST" action="@Url.Action("GoTo", "Shopping")">
                 <h3>

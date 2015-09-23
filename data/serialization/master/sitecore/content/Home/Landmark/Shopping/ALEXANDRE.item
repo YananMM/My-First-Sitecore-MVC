@@ -33,7 +33,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 2e862ae1-529e-43b8-84c0-46152d2258b8
+revision: 6691972a-9aca-48bd-9b57-39cf9a8c96c7
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -44,8 +44,8 @@ content-length: 9
 ALEXANDRE
 ----field----
 field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
-name: Buildings
-key: buildings
+name: Building
+key: building
 content-length: 38
 
 {E76CEFC9-801C-4694-9A63-0C6132F20741}
@@ -95,9 +95,17 @@ content-length: 77
 field: {3DED45C4-C26E-4498-9909-AB777C4D1244}
 name: Opening Hours
 key: opening hours
+content-length: 47
+
+Mon-Fri: 9:00-20:00<br>
+Sat-Sun: 9:00-22:00<br>
+----field----
+field: {C4C77DCE-BD77-4F57-8B15-88AD9F46F583}
+name: Sat-Sun Opening Hours
+key: sat-sun opening hours
 content-length: 19
 
-Mon-Fri: 9:00-20:00
+Sat-Sun: 9:00-22:00
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -160,14 +168,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2e862ae1-529e-43b8-84c0-46152d2258b8
+6691972a-9aca-48bd-9b57-39cf9a8c96c7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150907T035441Z
+20150922T141014Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

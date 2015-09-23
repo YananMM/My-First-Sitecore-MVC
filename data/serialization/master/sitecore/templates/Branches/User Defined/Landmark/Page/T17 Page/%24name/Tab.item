@@ -1,33 +1,19 @@
 ----item----
 version: 1
-id: {C733BE76-3EEC-4C1D-8835-EF9F1AE842E5}
+id: {6E67F4E3-48C9-4984-ACFC-957E63BDA4B5}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Category Object/__Standard Values
-parent: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
-name: __Standard Values
+path: /sitecore/templates/Branches/User Defined/Landmark/Page/T17 Page/$name/Tab
+parent: {9DF17026-5E54-4C81-B685-200E33EE0DDF}
+name: Tab
 master: {00000000-0000-0000-0000-000000000000}
-template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
-templatekey: Category Object
+template: {8D48118F-0385-48B6-A944-F615A3A610BC}
+templatekey: Tab
 
-----field----
-field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
-name: __Masters
-key: __masters
-content-length: 38
-
-{753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
 ----version----
 language: en
 version: 1
-revision: ac633731-0ce9-4c34-82f6-47c23a7e798a
+revision: ce8d20f0-1920-4b0c-b12a-33b20d7e0db0
 
-----field----
-field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
-name: Category Name
-key: category name
-content-length: 5
-
-$name
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -41,7 +27,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150721T070251Z
+20150923T090559Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ac633731-0ce9-4c34-82f6-47c23a7e798a
+ce8d20f0-1920-4b0c-b12a-33b20d7e0db0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150721T081857Z
+20150923T090559:635785959595522336Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

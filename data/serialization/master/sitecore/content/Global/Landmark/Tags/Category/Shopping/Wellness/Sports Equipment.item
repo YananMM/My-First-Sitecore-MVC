@@ -7,7 +7,7 @@ parent: {101C4A58-6D7D-4905-AD44-F0F054282440}
 name: Sports Equipment
 master: {00000000-0000-0000-0000-000000000000}
 template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
-templatekey: Category Object
+templatekey: Tag Object
 
 ----version----
 language: en
@@ -16,8 +16,8 @@ revision: 4fa1a481-cc42-4d5b-865b-64c56aa6bf81
 
 ----field----
 field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
-name: Category Name
-key: category name
+name: Tag Name
+key: tag name
 content-length: 16
 
 Sports Equipment

@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
+id: {AF3CD4E7-BD52-4180-90BB-1796FAE88FC2}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Category Object
+path: /sitecore/templates/User Defined/Landmark/Object/Image Item
 parent: {CEB547EC-0F8A-4672-ABDC-37582EE88EE4}
-name: Category Object
+name: Image Item
 master: {00000000-0000-0000-0000-000000000000}
 template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
 templatekey: Template
@@ -17,23 +17,16 @@ content-length: 38
 
 {1930BBEB-7805-471A-A3BE-4858AC7CF696}
 ----field----
-field: {F7D48A55-2158-4F02-9356-756654404F73}
-name: __Standard values
-key: __standard values
-content-length: 38
-
-{C733BE76-3EEC-4C1D-8835-EF9F1AE842E5}
-----field----
 field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
 name: __Icon
 key: __icon
-content-length: 24
+content-length: 36
 
-Business/32x32/index.png
+SoftwareV2/32x32/photo_landscape.png
 ----version----
 language: en
 version: 1
-revision: 2868f919-df9e-4267-87e8-000adbbc4069
+revision: ee48e0ad-4c45-459c-9f68-5cf7c56a4166
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,7 +34,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150721T070208Z
+20150923T082455Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -55,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2868f919-df9e-4267-87e8-000adbbc4069
+ee48e0ad-4c45-459c-9f68-5cf7c56a4166
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150721T082250Z
+20150923T084756:635785948763982807Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -12,24 +12,30 @@
 }
 
 <div class="masonry-area clearfix">
-        @foreach (Item building in buildings)
-        {
-            if (shoppingHelper.GetBrandsByBuildings(building.ID).Count > 0)
+@Html.Sitecore().Rendering(ItemGuids.T13MobileSideBarRendering, new
             {
-                string href = building.DisplayName.ToLower().Replace(" ","");
-                <h3 id="@href">@building.Fields["Building Title"].Value</h3>
-                <div class="brand-box-area clearfix">
-                    @foreach (Item brand in shoppingHelper.GetBrandsByBuildings(building.ID))
-                    {
-                        string src = Html.Sitecore().ImageFieldSrc("Brand Image", brand);
-                        <a title='@Html.Sitecore().Field("Brand Title", brand)' class="brand-box" href="@Sitecore.Links.LinkManager.GetItemUrl(brand)?category=@Sitecore.Context.Item.Parent.ID.ToString()">
-                            <img data-src="@src" alt='@Html.Sitecore().Field("Brand Title", brand)' class="lazy-loaded">
-                            <span>@Html.Sitecore().Field("Brand Title", brand)</span> 
-                        </a>
-                    }
+                Cacheable = false,
+                CacheKey = "by-brands-buidings",
+                Cache_VaryByData = true,
+            })
+    @foreach (Item building in buildings)
+    {
+        if (shoppingHelper.GetBrandsByBuildings(building.ID).Count > 0)
+        {
+            string href = building.DisplayName.ToLower().Replace(" ", "");
+            <h3 id="@href">@building.Fields["Building Title"].Value</h3>
+            <div class="brand-box-area clearfix">
+                @foreach (Item brand in shoppingHelper.GetBrandsByBuildings(building.ID))
+                {
+                    string src = Html.Sitecore().ImageFieldSrc("Brand Image", brand);
+                    <a title='@Html.Sitecore().Field("Brand Title", brand)' class="brand-box" href="@Sitecore.Links.LinkManager.GetItemUrl(brand)?category=@Sitecore.Context.Item.Parent.ID.ToString()">
+                        <img data-src="@src" alt='@Html.Sitecore().Field("Brand Title", brand)' class="lazy-loaded">
+                        <span>@Html.Sitecore().Field("Brand Title", brand)</span> 
+                    </a>
+                }
 
-                </div>
-            }
+            </div>
         }
+    }
 </div>
 

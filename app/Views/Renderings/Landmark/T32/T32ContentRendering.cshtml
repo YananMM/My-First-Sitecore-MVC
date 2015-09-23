@@ -16,7 +16,7 @@
             <div class="gd-pagetitle-heading">
                 <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
             </div>
-              <div  class="gd-search-info">@results.Count search result(s) for <span>"@Request["value"]"</span></div>
+            <div class="gd-search-infomation">@results.Count search result(s) for <span>"@Request["value"]"</span></div>
               <div  class="gd-search-filter hidden-xs">@Html.Sitecore().Field("Glossary Value",ItemGuids.FilterByItem)
                 <ul>
                     <!--<li class="active"><a href="#">ALL</a></li>-->
