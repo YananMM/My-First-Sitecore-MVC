@@ -6,29 +6,35 @@
 @model RenderingModel
 @{
     var currentItem = Sitecore.Context.Item;
+    var parentItem = currentItem.Parent;
+
 }
 <div class="gd-pagetitle-heading">
-    <h2>@Html.Sitecore().Field("Page Title", currentItem.Parent).ToString().ToUpper()</h2>
+    <h2>@Html.Sitecore().Field("Page Title", parentItem).ToString().ToUpper()</h2>
 </div>
 
 <div class="gd-pagetitle-menu hidden-xs">
-    <a href="javascript:;" class="active">@Html.Sitecore().Field("Page Title") </a>
-    <span class="gd-pagetitle-menu-gap">|</span>
-    <a href="javascript:;">PAGE 1</a>
-    <span class="gd-pagetitle-menu-gap">|</span>
-    <a href="javascript:;">PAGE 2</a>
-    <span class="gd-pagetitle-menu-gap">|</span>
-    <a href="javascript:;">PAGE3</a>
-    <span class="gd-pagetitle-menu-gap">|</span>
-    <a href="javascript:;">PAGE 4</a>
+    @{
+        int i = 1;
+        foreach (var item in parentItem.Children.ToList())
+        {
+            <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)" @if (i == 1) { <text>
+               class="active"
+               </text>       }>@Html.Sitecore().Field("Page Title", item)</a>
+            if (i != parentItem.Children.Count)
+            {
+                <span class="gd-pagetitle-menu-gap">|</span>
+            }
+            i++;
+        }
+    }
 </div>
 
 <div class="gd-controls-m visible-xs">
     <select class="form-control">
-        <option value="#">HOME</option>
-        <option value="#">PAGE 1</option>
-        <option value="#">PAGE 2</option>
-        <option value="#">PAGE 3</option>
-        <option value="#">PAGE 4</option>
+        @foreach (var item in parentItem.Children.ToList())
+        {
+            <option value="@Sitecore.Links.LinkManager.GetItemUrl(item)">@Html.Sitecore().Field("Page Title", item)</option>
+        }
     </select>
 </div>
