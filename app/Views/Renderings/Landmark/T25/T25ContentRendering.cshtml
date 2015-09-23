@@ -46,19 +46,20 @@
                                             <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem)</th>
                                             <td>
                                                 @foreach (var item in tagsTrees)
-                                                {<text>@item.CurrentItem["Category Name"].ToUpper() - </text>
+                                                {<a href="javascript:;">
+                                                    @item.CurrentItem["Category Name"].ToUpper() - </a>
                                                     int i = 1;
                                                     foreach (var it in item.Children)
                                                     {
-                                                        @it.CurrentItem["Category Name"].ToUpper()
+                                                        <a href="javascript:;">@it.CurrentItem["Category Name"].ToUpper()</a>
                                                         if (i != item.Children.Count)
                                                         {<text>,</text>
                                                         }
                                                         i++;
-                                                    }
-                                                    <br />
-                                                }
-                                            </td>
+                                                        }
+                                                        <br />
+                                                        }
+</td>
                                         </tr>
                                     </tbody>
                                 </table>
