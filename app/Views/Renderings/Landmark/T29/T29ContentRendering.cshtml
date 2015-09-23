@@ -38,12 +38,32 @@
                             @Html.Sitecore().Field("Art Key")<br>
                             @Html.Sitecore().Field("Art Size")
                         </div>
-                        <div class="col-sm-6 text-right">
-                            <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
-                                <span class="icomoon-sound-alt"></span>
-                                @Html.Sitecore().Field("Glossary Value", ItemGuids.ListenToCommentaryItem)
-                            </a>
-                        </div>
+                        @if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
+                        {
+                            <div class="col-sm-12 text-right">
+                                <div>
+                                    <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
+                                        <span class="icomoon-sound-alt"></span>
+                                        @Html.Sitecore().Field("Glossary Value", ItemGuids.ListenToCommentaryItem)
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary Alt", Sitecore.Context.Item)">
+                                        <span class="icomoon-sound-alt"></span>
+                                        @Html.Sitecore().Field("Glossary Value", ItemGuids.ListenToCommentaryAltItem)
+                                    </a>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="col-sm-4 text-right">
+                                <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
+                                    <span class="icomoon-sound-alt"></span>
+                                    @Html.Sitecore().Field("Glossary Value", ItemGuids.ListenToCommentaryItem)
+                                </a>
+                            </div>
+                        }
                     </div>
                     <div class="gd-artplace-details row">
                         <div class="col-sm-3 col-md-2  gd-artplace-location">@Html.Sitecore().Field("Glossary Value", ItemGuids.LocationItem)</div>
