@@ -88,12 +88,23 @@
         text-decoration: none;
       }
       .gd-map-dropdown>button {
-        background-color: transparent;
+        background-color: #FFFFFF;
         border: 1px solid #CCCCCC;
-        color: #999999;
+        color: #222222;
         line-height: 1;
+        position: relative;
         text-align: left;
         width: 100%;
+      }
+      .gd-map-dropdown>button:after {
+        border: 5px solid transparent;
+        border-color: #000000 transparent transparent transparent;
+        content: " ";
+        display: block;
+        margin-top: -2px;
+        position: absolute;
+        right: 15px;
+        top: 50%;
       }
       .gd-map-dropdown>button:hover,
       .gd-map-dropdown>button:focus,
@@ -144,7 +155,7 @@
         padding: 0;
       }
       .gd-map-input-group>input {
-        background-color: transparent;
+        background-color: #FFFFFF;
         display: block;
         font-size: 12px;
         float: left;
@@ -153,7 +164,6 @@
       }
       .gd-map-input-group>input:focus,
       .gd-map-input-group>input:active {
-        background-color: #FFFFFF;
         color: #222222;
         font-size: 14px;
       }
@@ -232,6 +242,7 @@
         }
       }
     </style>
+
     <script src="/files/landmark/js/lib/jquery-1.11.2.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     <script>
@@ -265,6 +276,7 @@
         var gdMapTravelMode = 'DRIVING';
         function calcRoute() {
             //var start = document.getElementById('start').value;
+            parent.scGoogleUsage(gdMapStart); // tracking
             var start = gdMapStart;
             var end = gdMapEnd;
             var request = {
@@ -300,19 +312,22 @@
         }
 
         $('body').on('click', function (event) {
-            if ($(event.target).parents('.gd-map-dropdown').length) {
-                $('.gd-map-options').removeClass('hidden');
-            } else {
+            if ($(event.target).parents('.gd-map-dropdown').length < 1) {
                 $('.gd-map-options').addClass('hidden');
             }
         });
 
-        $('body').on('click', '.gd-map-dropdown a', function (event) {
+        $('body').on('click', '.gd-map-dropdown', function (event) {
+            var gdClickElement = $(event.target);
             event.stopPropagation();
-            gdMapStart = $(this).data('value');
-            $('.gd-map-dropdown>button').text($(this).text());
-            $(this).parent().addClass('hidden');
-            calcRoute();
+            if (gdClickElement.prop('tagName').toLowerCase() === 'a') {
+                gdMapStart = gdClickElement.data('value');
+                $('.gd-map-dropdown>button').text(gdClickElement.text());
+                gdClickElement.parent().addClass('hidden');
+                calcRoute();
+            } else if (gdClickElement.prop('tagName').toLowerCase() === 'button') {
+                gdClickElement.next().toggleClass('hidden');
+            }
         });
 
         $('body').on('click', '.gd-map-input-group button', function () {

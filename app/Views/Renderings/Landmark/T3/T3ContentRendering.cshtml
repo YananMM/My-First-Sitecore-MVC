@@ -49,8 +49,11 @@
                 Item article = child.TemplateID.ToString() == ItemGuids.T4PageTemplate ? child : ((ReferenceField)child.Fields["Reference Item"]).TargetItem;
                 Item type = ((ReferenceField)article.Fields["Article Type"]).TargetItem;
                 <div class="gd-promo-box">
-                    <a href="@LinkManager.GetItemUrl(article)">
-                        <img data-src='@Html.Sitecore().ImageFieldSrc("Article Thumb Image", article)'>
+                    <a href="@LinkManager.GetItemUrl(article)" class="gd-hover-img">
+                        <div class="gd-hover-img-area">
+                            <div class="gd-hover-img-mask"></div>
+                            <img data-src='@Html.Sitecore().ImageFieldSrc("Article Thumb Image", article)'>
+                        </div>
                         <h5>@type.Fields["Value"].ToString().ToUpper()</h5>
                         <h3>@Html.Sitecore().Field("Article Headline", article)</h3>
                         <p>@Html.Sitecore().Field("Article Intro", article)</p>

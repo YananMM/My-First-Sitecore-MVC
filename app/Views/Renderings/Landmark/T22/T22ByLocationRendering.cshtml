@@ -47,17 +47,20 @@
             <div class="row">
                 @foreach (ArtPieceByBuildingJson piece in rowPieces)
                 {
-                <div class="col-sm-3">
-                  <a href="@piece.link">
-                    <img data-src="@piece.src" alt="artpiece picture">
-                    <h4>@piece.title</h4>
-                    <p>@piece.des</p>
-                </a>
-            </div>
+                    <div class="col-sm-3 text-center">
+                        <a href="@piece.link" class="gd-hover-img">
+                            <div class="gd-hover-img-area">
+                                <div class="gd-hover-img-mask"></div>
+                                <img data-src="@piece.src" alt="artpiece picture">
+                            </div>
+                            <h4>@piece.title</h4>
+                            <p>@piece.des</p>                
+                        </a>
+                    </div>
                 }
             </div>
-                }
-            </div>
+        }
+    </div>
     <div class="navigation"><a id="gd-art-gallery-loading" href="@LinkManager.GetItemUrl(Sitecore.Context.Item)?building=2&page=2" class="loding-more">SEE MORE +</a></div>
 </div>
 
