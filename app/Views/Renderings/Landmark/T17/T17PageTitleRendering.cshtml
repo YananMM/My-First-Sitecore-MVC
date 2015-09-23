@@ -1,0 +1,34 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Data.Items
+@using Landmark.Models
+@model RenderingModel
+@{
+    var currentItem = Sitecore.Context.Item;
+}
+<div class="gd-pagetitle-heading">
+    <h2>@Html.Sitecore().Field("Page Title", currentItem.Parent).ToString().ToUpper()</h2>
+</div>
+
+<div class="gd-pagetitle-menu hidden-xs">
+    <a href="javascript:;" class="active">@Html.Sitecore().Field("Page Title") </a>
+    <span class="gd-pagetitle-menu-gap">|</span>
+    <a href="javascript:;">PAGE 1</a>
+    <span class="gd-pagetitle-menu-gap">|</span>
+    <a href="javascript:;">PAGE 2</a>
+    <span class="gd-pagetitle-menu-gap">|</span>
+    <a href="javascript:;">PAGE3</a>
+    <span class="gd-pagetitle-menu-gap">|</span>
+    <a href="javascript:;">PAGE 4</a>
+</div>
+
+<div class="gd-controls-m visible-xs">
+    <select class="form-control">
+        <option value="#">HOME</option>
+        <option value="#">PAGE 1</option>
+        <option value="#">PAGE 2</option>
+        <option value="#">PAGE 3</option>
+        <option value="#">PAGE 4</option>
+    </select>
+</div>

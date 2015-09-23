@@ -4,34 +4,14 @@
 @using Sitecore.Data.Items
 @using Landmark.Models
 @model RenderingModel
-
+@{
+    var currentItem = Sitecore.Context.Item;
+    var pageTitle = currentItem.DisplayName.ToLower();
+}
 <div class="container">
     <div class="gd-pagetitle">
-        <div class="gd-pagetitle-heading">
-            <h2>CAMPAIGN TITLE</h2>
-        </div>
+        @Html.Sitecore().Placeholder("t17-page-title")
 
-        <div class="gd-pagetitle-menu hidden-xs">
-            <a href="javascript:;" class="active">@Html.Sitecore().Field("Page Title") </a>
-            <span class="gd-pagetitle-menu-gap">|</span>
-            <a href="javascript:;">@Sitecore.Context.Item.Children.FirstOrDefault().DisplayName</a>
-            <span class="gd-pagetitle-menu-gap">|</span>
-            <a href="javascript:;">PAGE 2</a>
-            <span class="gd-pagetitle-menu-gap">|</span>
-            <a href="javascript:;">PAGE3</a>
-            <span class="gd-pagetitle-menu-gap">|</span>
-            <a href="javascript:;">PAGE 4</a>
-        </div>
-
-        <div class="gd-controls-m visible-xs">
-            <select class="form-control">
-                <option value="#">HOME</option>
-                <option value="#">PAGE 1</option>
-                <option value="#">PAGE 2</option>
-                <option value="#">PAGE 3</option>
-                <option value="#">PAGE 4</option>
-            </select>
-        </div>
     </div>
 </div>
 <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-fixed" data-ride="carousel">
@@ -89,7 +69,7 @@
                         <div class="gd-hover-img-mask"></div>
                         <img data-src="../files/landmark/images/promotion/promotion-img-01.jpg">
                     </div>
-                    <h3> Lorem ipsum dolor sit amet</h3>
+                    <h3> Lorem ipsum dolor sit amet</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
                 </a>
             </div>
@@ -101,7 +81,7 @@
                         <div class="gd-hover-img-mask"></div>
                         <img data-src="../files/landmark/images/promotion/promotion-img-02.jpg">
                     </div>
-                    <h3> Lorem ipsum dolor sit amet</h3>
+                    <h3> Lorem ipsum dolor sit amet</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
                 </a>
             </div>
@@ -116,7 +96,7 @@
                         <div class="gd-hover-img-mask"></div>
                         <img data-src="../files/landmark/images/promotion/promotion-img-03.jpg">
                     </div>
-                    <h3> Lorem ipsum dolor sit amet</h3>
+                    <h3> Lorem ipsum dolor sit amet</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
                 </a>
             </div>
@@ -129,10 +109,19 @@
                         <div class="gd-hover-img-mask"></div>
                         <img data-src="../files/landmark/images/promotion/promotion-img-04.jpg">
                     </div>
-                    <h3> Lorem ipsum dolor sit amet</h3>
+                    <h3> Lorem ipsum dolor sit amet</h3>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p>
                 </a>
             </div>
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    jQuery(function () {
+        var pageTitle = '@pageTitle';
+        if (pageTitle === 'promotion') {
+            window.Location = "@Url.Action("ButtonRedirect", "Home")?targetId={D6F4FCEC-2289-48D1-A1B2-CF17F4062B70}";
+        }
+    });
+</script>
