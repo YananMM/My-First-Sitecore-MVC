@@ -94,7 +94,7 @@ namespace Landmark.Helper
                                              where item.DisplayName == category.DisplayName
                                              select new TextValue
                                              {
-                                                 text = category["Category Name"],
+                                                 text = category["Tag Name"],
                                                  value = item.ID.ToString()
                                              }).ToList();
             foreach (var item in firstCategory)
@@ -125,7 +125,7 @@ namespace Landmark.Helper
             {
                 if (item.DisplayName == currentShoppingPage.DisplayName)
                 {
-                    var relatedCategories = item.Fields["Related Categoryies"].ToString();
+                    var relatedCategories = item.Fields["Related Tags"].ToString();
                     if (!string.IsNullOrEmpty(relatedCategories))
                     {
                         relatedCategoriesIDs = relatedCategories.Split('|').ToList();
