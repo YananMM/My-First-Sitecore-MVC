@@ -7,7 +7,7 @@ parent: {45EE72B3-0021-4A62-AA7F-55E291FB3979}
 name: Kitchen and Tableware
 master: {00000000-0000-0000-0000-000000000000}
 template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
-templatekey: Category Object
+templatekey: Tag Object
 
 ----version----
 language: en
@@ -16,8 +16,8 @@ revision: 107c8b82-6876-479a-a8d5-9a5f3331fab6
 
 ----field----
 field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
-name: Category Name
-key: category name
+name: Tag Name
+key: tag name
 content-length: 19
 
 Kitchen & Tableware

@@ -2,9 +2,9 @@
 version: 1
 id: {D5813FF6-BAE9-4C58-98C3-A43A84E0F59B}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Category Object/Category Data
+path: /sitecore/templates/User Defined/Landmark/Object/Tag Object/Tag Data
 parent: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
-name: Category Data
+name: Tag Data
 master: {00000000-0000-0000-0000-000000000000}
 template: {E269FBB5-3750-427A-9149-7AA950B49301}
 templatekey: Template section
@@ -12,7 +12,7 @@ templatekey: Template section
 ----version----
 language: en
 version: 1
-revision: ee97f0ff-b735-4510-a528-a19ba9a63f5b
+revision: 58b05f0b-1869-4116-a635-272713a21a40
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ee97f0ff-b735-4510-a528-a19ba9a63f5b
+58b05f0b-1869-4116-a635-272713a21a40
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150916T123457Z
+20150923T031716:635785750364354122Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

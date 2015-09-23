@@ -2,12 +2,12 @@
 version: 1
 id: {C733BE76-3EEC-4C1D-8835-EF9F1AE842E5}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Category Object/__Standard Values
+path: /sitecore/templates/User Defined/Landmark/Object/Tag Object/__Standard Values
 parent: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
 name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
 template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
-templatekey: Category Object
+templatekey: Tag Object
 
 ----field----
 field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
@@ -23,8 +23,8 @@ revision: ac633731-0ce9-4c34-82f6-47c23a7e798a
 
 ----field----
 field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
-name: Category Name
-key: category name
+name: Tag Name
+key: tag name
 content-length: 5
 
 $name

@@ -7,7 +7,7 @@ parent: {FB0C20EF-8DD8-4233-A9E8-3D1536412DB7}
 name: Men
 master: {00000000-0000-0000-0000-000000000000}
 template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
-templatekey: Category Object
+templatekey: Tag Object
 
 ----field----
 field: {6FD695E7-7F6D-4CA5-8B49-A829E5950AE9}
@@ -23,15 +23,15 @@ revision: ae2aba31-2231-4189-b15c-cc3fea7d8d20
 
 ----field----
 field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
-name: Category Name
-key: category name
+name: Tag Name
+key: tag name
 content-length: 3
 
 Men
 ----field----
 field: {D9FA22B1-BBD4-4BDC-BFB5-42CB9F2CBCA1}
-name: Related Categoryies
-key: related categoryies
+name: Related Tags
+key: related tags
 content-length: 155
 
 {584512EB-189E-4FEF-9280-3F893DD9A9E1}|{F1CC2EDE-A165-4FC4-B47A-8C0DF29BDE27}|{101C4A58-6D7D-4905-AD44-F0F054282440}|{26D53B44-8352-4FCC-992A-B01A3C7A2384}
