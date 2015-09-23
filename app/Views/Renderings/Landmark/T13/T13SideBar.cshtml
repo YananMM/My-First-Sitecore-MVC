@@ -31,7 +31,7 @@
                     List<Item> buidings = LandmarkHelper.GetBuildings();
                     Item contextItem = Sitecore.Context.Item;
                     Item firstParentItem = contextItem.Parent;
-                    Item allByBuildings = firstParentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) ? Sitecore.Context.Database.GetItem(ItemGuids.AllByBuildingsPage):contextItem;
+                    Item allByBuildings = firstParentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) ? Sitecore.Context.Database.GetItem(ItemGuids.AllByBuildingsPage):contextItem.Parent.Children.Where(item=>item.DisplayName=="By Buildings").FirstOrDefault();
                 }
 
                 @foreach (Item building in buidings)
