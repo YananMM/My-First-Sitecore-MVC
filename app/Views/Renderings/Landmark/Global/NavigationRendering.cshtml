@@ -11,7 +11,7 @@
         @foreach (Item item in LandmarkHelper.GetChildrenPageInNavigation(ItemGuids.LandmarkHomeItem).Take(3))
         {
             <li>
-                <a href="@LinkManager.GetItemUrl(item)">@item["Page Title"].ToUpper()</a>
+                <a href="@LandmarkHelper.GetItemUrl(item)">@item["Page Title"].ToUpper()</a>
                 @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count > 0)
                 {
                     <nav class="mega-menu">
@@ -29,7 +29,7 @@
                                                         {
                                                             if (childItem.TemplateID.ToString().Equals(ItemGuids.T11PageTemplate))
                                                             {
-                                                                <li><a href="@LinkManager.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
+                                                                <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
                                                             }
                                                         }
                                                     </ul>
@@ -85,7 +85,7 @@
                                         <ul>
                                             @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
                                             {
-                                                <li><a href="@LinkManager.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
+                                                <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
                                             }
                                         </ul>
                                     </div>
@@ -132,7 +132,7 @@
         @foreach (Item item in LandmarkHelper.GetChildrenPageInNavigation(ItemGuids.LandmarkHomeItem).Skip(3).Take(3))
         {
             <li>
-                <a href="@LinkManager.GetItemUrl(item)">@item["Page Title"].ToUpper()</a>
+                <a href="@LandmarkHelper.GetItemUrl(item)">@item["Page Title"].ToUpper()</a>
                 @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count > 0)
                 {
                     <nav class="mega-menu">
@@ -144,7 +144,7 @@
                                     <ul class=" mega-category">
                                         @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
                                         {
-                                            <li><a href="@LinkManager.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
+                                            <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
                                         }
                                     </ul>
                                 </div>
@@ -176,7 +176,7 @@
                                         <ul>
                                             @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
                                             {
-                                                <li><a href="@LinkManager.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
+                                                <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
                                             }
                                         </ul>
                                     </div>

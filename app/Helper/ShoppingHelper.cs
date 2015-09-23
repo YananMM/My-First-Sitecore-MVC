@@ -163,10 +163,10 @@ namespace Landmark.Helper
             List<Item> brandsByBuildings = new List<Item>();
             foreach (Item brand in brandsItems)
             {
-                var buildingsField = (MultilistField)brand.Fields["Buildings"];
-                if (buildingsField != null)
+                var buildingsField = (ReferenceField)brand.Fields["Buildings"];
+                if (buildingsField != null && buildingsField.TargetItem!=null)
                 {
-                    if (buildingsField.TargetIDs.Any(id => id.Guid == buildingId.Guid))
+                    if (buildingsField.TargetItem.ID.Guid == buildingId.Guid)
                     {
                         brandsByBuildings.Add(brand);
                     }
@@ -189,12 +189,12 @@ namespace Landmark.Helper
                     Item categoryItem = _webDb.GetItem(categoryId);
                     if (tagsField.TargetIDs.Any(id => _webDb.GetItem(id).DisplayName == categoryItem.DisplayName && _webDb.GetItem(id).Parent.DisplayName == categoryItem.Parent.DisplayName))
                     {
-                        var buildingsField = (MultilistField)brand.Fields["Buildings"];
-                        if (buildingsField.TargetIDs != null && buildingsField.TargetIDs.Any())
+                        var buildingsField = (ReferenceField)brand.Fields["Buildings"];
+                        if (buildingsField != null && buildingsField.TargetItem!=null)
                         {
-                            foreach (ID buidId in buildingsField.TargetIDs.Where(buidId => !buildingsByCategory.Contains(_webDb.GetItem(buidId))))
+                            if (!buildingsByCategory.Contains(buildingsField.TargetItem))
                             {
-                                buildingsByCategory.Add(_webDb.GetItem(buidId));
+                                buildingsByCategory.Add(buildingsField.TargetItem);
                             }
                         }
                     }

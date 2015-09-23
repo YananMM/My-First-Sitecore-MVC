@@ -390,5 +390,22 @@ namespace Landmark.Helper
             return parameters[parameterName];
         }
 
+        public static bool IsFalsePage(Item item)
+        {
+            if (item.Template.ID.ToString() == ItemGuids.PageObject || item.Template.ID.ToString() == ItemGuids.ShoppingPageObject)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static string GetItemUrl(Item item)
+        {
+            string url = LinkManager.GetItemUrl(item);
+            if (IsFalsePage(item))
+                url = string.Empty;
+            return url;
+        }
+
     }
 }

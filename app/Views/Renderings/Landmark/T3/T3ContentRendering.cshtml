@@ -51,7 +51,7 @@
                 <div class="gd-promo-box">
                     <a href="@LinkManager.GetItemUrl(article)">
                         <img data-src='@Html.Sitecore().ImageFieldSrc("Article Thumb Image", article)'>
-                        <h5>@type.Fields["Value"].ToString().ToUpper()</h5>
+                        <h5>@type.Fields["Article Type"].ToString().ToUpper()</h5>
                         <h3>@Html.Sitecore().Field("Article Headline", article)</h3>
                         <p>@Html.Sitecore().Field("Article Intro", article)</p>
                     </a>
