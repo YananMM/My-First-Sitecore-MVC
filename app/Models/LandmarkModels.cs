@@ -98,42 +98,6 @@ namespace Landmark.Models
     }
 
     /// <summary>
-    /// Class ArtPieceJson.
-    /// </summary>
-    public class ArtPieceByArtistJson
-    {
-        /// <summary>
-        /// Gets or sets the avatar.
-        /// </summary>
-        /// <value>The avatar.</value>
-        public string avatar { get; set; }
-
-        /// <summary>
-        /// Gets or sets the name.
-        /// </summary>
-        /// <value>The name.</value>
-        public string name { get; set; }
-
-        /// <summary>
-        /// Gets or sets the date.
-        /// </summary>
-        /// <value>The date.</value>
-        public string date { get; set; }
-
-        /// <summary>
-        /// Gets or sets the link.
-        /// </summary>
-        /// <value>The link.</value>
-        public string link { get; set; }
-
-        /// <summary>
-        /// Gets or sets the work.
-        /// </summary>
-        /// <value>The work.</value>
-        public List<Work> work { get; set; }
-    }
-
-    /// <summary>
     /// Class Work.
     /// </summary>
     public class Work
@@ -162,21 +126,6 @@ namespace Landmark.Models
         /// <value>The link.</value>
         public string link { get; set; }
     }
-
-    /// <summary>
-    /// Class ArtPieceByBuildingJson.
-    /// </summary>
-    public class ArtPieceByBuildingJson
-    {
-        public string title { get; set; }
-
-        public string des { get; set; }
-
-        public string src { get; set; }
-
-        public string link { get; set; }
-    }
-
 
     public class FloorPlan
     {
