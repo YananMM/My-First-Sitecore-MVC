@@ -17,13 +17,13 @@
             {
                 <li>
                     <div class="@LandmarkHelper.GetSlideClass(item) clearfix">
-                        @if (string.IsNullOrEmpty(referenceField.TargetItem.Fields["Article Video"].Value))
+                        @if (string.IsNullOrEmpty(item.Fields["Slide Video"].Value))
                         {
                             <div class="panel-img" data-bg="@LandmarkHelper.GetCallOutImage(referenceField.TargetItem)"></div>
                         }
                         else
                         {
-                            <div class="panel-img gd-lightbox-link gd-lightbox-video" data-bg="@LandmarkHelper.GetCallOutImage(referenceField.TargetItem)" data-lightsrc="@referenceField.TargetItem.Fields["Article Video"].Value" data-lighttitle="@referenceField.TargetItem.Fields["Slide Title"].Value" data-lightposter="@LandmarkHelper.ImageFieldSrc("Article Video Poster",referenceField.TargetItem)"></div>
+                            <div class="panel-img gd-lightbox-link gd-lightbox-video" data-bg="@LandmarkHelper.GetCallOutImage(referenceField.TargetItem)" data-lightsrc="@item.Fields["Slide Video"].Value" data-lighttitle="@referenceField.TargetItem.Fields["Article Headline"].Value" data-lightposter="@LandmarkHelper.ImageFieldSrc("Slide Video Poster",item)"></div>
                         }
                         
                         <div class="panel-main">

@@ -17,6 +17,20 @@ content-length: 58
 
 <image mediaid="{8FC4B657-6E15-44AF-B791-92E8147AF60D}" />
 ----field----
+field: {EA18DD4F-8CA0-4115-9FDA-AF1CBFC569D0}
+name: Slide Video
+key: slide video
+content-length: 0
+
+
+----field----
+field: {B9AB8197-892E-4252-8F10-04B378E67805}
+name: Has Slide Content
+key: has slide content
+content-length: 1
+
+1
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -26,7 +40,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 2b371c7c-da10-4cfc-9c7a-f209aed0190a
+revision: ccc13b7a-3328-4671-950a-329536eb0dd7
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -55,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2b371c7c-da10-4cfc-9c7a-f209aed0190a
+ccc13b7a-3328-4671-950a-329536eb0dd7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150828T064636:635763411960927435Z
+20150924T140440Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

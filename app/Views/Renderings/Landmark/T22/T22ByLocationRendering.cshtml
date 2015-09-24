@@ -13,8 +13,8 @@
     ArtTourHelper helper = new ArtTourHelper();
     var buildings = LandmarkHelper.GetBuildings();
     var building = helper.GetCurrentBuilding(Request["building"]);
-    var page = int.Parse(Request["page"] ?? "0");
-    var artpieces = helper.GetArtPieceByBuilding(building.ID.ToString()).Skip((page - 1) * 4).Take(4);
+    var page = int.Parse(Request["page"] ?? "1");
+    var artpieces = helper.GetArtPieceByBuildingSvgId(building.Fields["Building Svg Id"].Value).Skip((page - 1) * 2).Take(2);
 }
 <div class="row">
     <div id="gd-list-locations" class="col-md-6">
@@ -39,7 +39,7 @@
     </div>
 
     <div class="col-md-6">
-        <div id="mapplic-t22" data-src="t22-2/floorplan.json" data-src-ie8="t22-2/floorplan.json"></div>
+        <div id="mapplic-t22" data-src="/Service/Landmark.asmx/GetLocationJson" data-src-ie8="/Service/Landmark.asmx/GetLocationJson"></div>
     </div>
 </div>
 <div class="gd-artlist">

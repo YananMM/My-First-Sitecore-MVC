@@ -13,13 +13,12 @@
     var shoppingItems = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
     foreach (var item in shoppingItems)
     {
-            foreach (var id in relatedCategorieIDs)
+        foreach (var id in relatedCategorieIDs)
+        {
+            var category = Sitecore.Context.Database.GetItem(id);
+            if (category.DisplayName == item.DisplayName)
             {
-                var category = Sitecore.Context.Database.GetItem(id);
-                if (category.DisplayName == item.DisplayName)
-                {
-                    <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@item.DisplayName</a></li>
-                }
+                <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@item.DisplayName</a></li>
             }
         }
     }

@@ -32,7 +32,16 @@
                 @{
             j++;
                 }
-                <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Slide Image", item)"></div>
+                
+                @if (string.IsNullOrEmpty(item.Fields["Slide Video"].Value))
+                {
+                    <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Slide Image", item)"></div>
+                }
+                else
+                {
+                    <div class="carousel-image gd-lightbox-link gd-lightbox-video" data-bg="@Html.Sitecore().ImageFieldSrc("Slide Image", item)" data-lightsrc="@item.Fields["Article Video"].Value" data-lighttitle="@item.Fields["Slide Title"].Value" data-lightposter="@LandmarkHelper.ImageFieldSrc("Slide Video Poster",item)"></div>
+                }
+
                 @{
             var currentItem = Sitecore.Context.Item;
             StorySetting setting = new StorySetting();
