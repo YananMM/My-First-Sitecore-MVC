@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {AB8E7FCE-204D-4C35-8A1E-0DA78097AB7A}
+id: {EA412C5B-16DD-4D0E-BF60-2D3F26A12455}
 database: master
-path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/QI BAI SHI
+path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/WU DAO ZI
 parent: {5C03DD0D-4881-4A9B-A58D-5FFA101B3533}
-name: QI BAI SHI
+name: WU DAO ZI
 master: {00000000-0000-0000-0000-000000000000}
 template: {EC149566-D74F-4E4F-9F2C-A0745E72988E}
 templatekey: T30 Page
@@ -12,64 +12,43 @@ templatekey: T30 Page
 ----version----
 language: en
 version: 1
-revision: 81257b0f-2b7c-4069-a15e-63025700aa33
+revision: 17818ef4-ba80-4ba8-8ba9-5c94ca843882
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
 name: Artist Name
 key: artist name
-content-length: 10
+content-length: 9
 
-QI BAI SHI
-----field----
-field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
-name: Artist Birthday Label
-key: artist birthday label
-content-length: 2
-
-b.
-----field----
-field: {93A3D698-0006-4B8F-A76C-908CE6699071}
-name: Artist Birthday Text
-key: artist birthday text
-content-length: 4
-
-1864
+WU DAO ZI
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 10
+content-length: 9
 
-QI BAI SHI
-----field----
-field: {BDC35CB5-CB1C-475A-B47D-F3A7FE58ECFF}
-name: Call Link Text
-key: call link text
-content-length: 16
-
-ARTIST BOIGRAPHY
+WU DAO ZI
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150814T032422Z
+20150924T100106Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-81257b0f-2b7c-4069-a15e-63025700aa33
+17818ef4-ba80-4ba8-8ba9-5c94ca843882
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150924T092924:635786837649322220Z
+20150924T100121:635786856819038665Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

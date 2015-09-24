@@ -15,6 +15,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.UI;
 using Landmark.Classes;
 using Landmark.Models;
 using Sitecore.Collections;
@@ -23,6 +24,7 @@ using Sitecore.ContentSearch.Utilities;
 using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
+using Sitecore.Data.Query;
 using Sitecore.Mvc.Helpers;
 using Sitecore.Web.UI.XslControls;
 
@@ -241,13 +243,40 @@ namespace Landmark.Helper
 
         public List<List<ArtPieceByBuildingJson>> GetArtistsByBuilding(string buildId = null, string page = null)
         {
-            
+
             buildId = buildId == null
                 ? LandmarkHelper.GetBuildings().FirstOrDefault().ID.ToString()
                 : buildId;
             int pagenumber = page == null ? 1 : Int32.Parse(page);
             var list = GetArtPieceJsonByBuilding(buildId).Skip(pagenumber * LandmarkHelper.NumberInOnePage).Take(LandmarkHelper.NumberInOnePage).ToList();
             return list;
+        }
+
+        public List<Item> GetArtsByArtistPager(string artistId, int page = 1)
+        {
+            var arts = GetArtByArtist(artistId);
+            return arts.Skip((page - 1) * 2).Take(2).ToList();
+        }
+
+        public List<ArtPieceModel> GetArtistArtsByPager(int page = 1)
+        {
+            var pageSizeField = Sitecore.Context.Item.Fields["Page Size"];
+
+            List<ArtPieceModel> models = new List<ArtPieceModel>();
+            var artists = GetAllArtists();
+            if (artists != null)
+            {
+                foreach (var item in artists)
+                {
+                    ArtPieceModel model = new ArtPieceModel();
+                    var atrs = GetArtByArtist(item.ID.ToString());
+                    model.Artist = item;
+                    model.ArtPieces = GetArtsByArtistPager(item.ID.ToString());
+                    models.Add(model);
+                }
+            }
+            return models.Skip((page - 1) * Convert.ToInt32(pageSizeField.Value))
+                        .Take(Convert.ToInt32(pageSizeField.Value)).ToList();
         }
     }
 }

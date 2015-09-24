@@ -4,10 +4,10 @@
 @using Sitecore.Data.Items
 @using Landmark.Models
 @model RenderingModel
-
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
+
             <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkArtTourItem))#gd-audio-guide" class="gd-link-audio">
                 <span class="icomoon-sound-alt"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.MobileAudioGuideItem) <span class="icomoon-chevron-small-right"></span>
             </a>
@@ -16,10 +16,10 @@
 
         <div class="gd-pagetitle-menu hidden-xs">
             @Html.Sitecore().Field("Glossary Value", ItemGuids.ViewByItem) <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))" @if (Html.Sitecore().CurrentItem.ID.ToString() == ItemGuids.ByArtistPage) { <text>
-                                                                              class="active" </text>          }>
+                                                                              class="active" </text>           }>
                 @Html.Sitecore().Field("Glossary Value", ItemGuids.ArtistItem)
             </a>  <span class="gd-pagetitle-menu-gap">|</span>  <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByLocationPage))" @if (Html.Sitecore().CurrentItem.ID.ToString() == ItemGuids.ByLocationPage) { <text>
-                                                                   class="active" </text>          }>@Html.Sitecore().Field("Glossary Value", ItemGuids.LocationItem)</a>
+                                                                   class="active" </text>           }>@Html.Sitecore().Field("Glossary Value", ItemGuids.LocationItem)</a>
                                                             </div>
                                                             <div class="gd-controls-m visible-xs">
                                                                 <div class="row">
