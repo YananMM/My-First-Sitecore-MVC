@@ -51,20 +51,10 @@
         </div>
         <div class="shopdetails-brand-body">
             <div class="row">
-                @Html.Sitecore().Rendering(ItemGuids.T14YouMayAlsoLikeRenderingViewGuid, new
-                {
-                    Cacheable = false,
-                    CacheKey = "also-like",
-                    Cache_VaryByData = true
-                })
+                @Html.Sitecore().Rendering(ItemGuids.T14YouMayAlsoLikeRenderingViewGuid)
             </div>
             <div class="row hidden">
-                @Html.Sitecore().Rendering(ItemGuids.T14AlsoOnFloorRenderingViewGuid, new
-                {
-                    Cacheable = false,
-                    CacheKey = "also-on-this-floor",
-                    Cache_VaryByData = true
-                })
+                @Html.Sitecore().Rendering(ItemGuids.T14AlsoOnFloorRenderingViewGuid)
             </div>
         </div>
     </div>

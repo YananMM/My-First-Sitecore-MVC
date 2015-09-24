@@ -5,12 +5,12 @@
 <script>
   var DataLayer = { 
     /* page level data, populate value when applicable */ 
-    'shop_name': 'shop name', 
-    'building_name': 'building name', 
-    'restaurant_name': 'restaurant_name', 
-    'article_title': 'article title', 
-    'language': '',
-    'pageName': 'page name'
+      'shop_name': @AdobeTrackingDataLayerHelper.GetShopName(),
+      'building_name': @AdobeTrackingDataLayerHelper.GetBuildingName(), 
+      'restaurant_name': @AdobeTrackingDataLayerHelper.GetRestaurantName(), 
+      'article_title': @AdobeTrackingDataLayerHelper.GetArticleTitle(), 
+      'language': '',
+      'pageName': @AdobeTrackingDataLayerHelper.GetPageName()
   }
 </script>
 <header class="site-header">
@@ -39,12 +39,7 @@
                 }
             </div>
         </div>
-        @Html.Sitecore().Rendering(ItemGuids.NavigationRenderingViewGuid, new
-        {
-            Cacheable = false,
-            CacheKey = "navigation",
-            Cache_VaryByData = true
-        })
+        @Html.Sitecore().Rendering(ItemGuids.NavigationRenderingViewGuid)
     </div>
 
     <!--mobile menu-->
@@ -67,12 +62,7 @@
 
             <div class="mobile-menu">
                 <div class="scroll-content">
-                    @Html.Sitecore().Rendering(ItemGuids.MobileNavigationRenderingViewGuid, new
-                    {
-                        Cacheable = false,
-                        CacheKey = "mobile-navigation",
-                        Cache_VaryByData = true
-                    })
+                    @Html.Sitecore().Rendering(ItemGuids.MobileNavigationRenderingViewGuid)
                     <div class="language">
                         <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", ItemGuids.TraditionalChineseGuidItem)</a>
                         <span class="gap">|</span>

@@ -257,7 +257,7 @@ namespace Landmark.Helper
 
         public static List<Item> GetBuildings()
         {
-            return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.ToList();
+            return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.OrderBy(p => p.DisplayName).ToList();
         }
 
         /// <summary>
@@ -388,6 +388,23 @@ namespace Landmark.Helper
             var parametersAsString = rc.Rendering.Properties["Parameters"];
             var parameters = HttpUtility.ParseQueryString(parametersAsString);
             return parameters[parameterName];
+        }
+
+        public static bool IsFalsePage(Item item)
+        {
+            if (item.Template.ID.ToString() == ItemGuids.PageObject || item.Template.ID.ToString() == ItemGuids.ShoppingPageObject)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static string GetItemUrl(Item item)
+        {
+            string url = LinkManager.GetItemUrl(item);
+            if (IsFalsePage(item))
+                url = string.Empty;
+            return url;
         }
 
     }

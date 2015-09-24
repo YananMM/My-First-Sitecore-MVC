@@ -47,11 +47,11 @@
                                             <td>
                                                 @foreach (var item in tagsTrees)
                                                 {<a href="javascript:;">
-                                                    @item.CurrentItem["Category Name"].ToUpper() - </a>
+                                                    @item.CurrentItem["Tag Name"].ToUpper() - </a>
                                                     int i = 1;
                                                     foreach (var it in item.Children)
                                                     {
-                                                        <a href="javascript:;">@it.CurrentItem["Category Name"].ToUpper()</a>
+                                                        <a href="javascript:;">@it.CurrentItem["Tag Name"].ToUpper()</a>
                                                         if (i != item.Children.Count)
                                                         {<text>,</text>
                                                         }

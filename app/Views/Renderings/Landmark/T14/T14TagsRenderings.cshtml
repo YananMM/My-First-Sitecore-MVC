@@ -9,12 +9,7 @@
             <tr>
                 <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</th>
                 <td>
-                    @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
-                {
-                    Cacheable = false,
-                    CacheKey = "tags",
-                    Cache_VaryByData = true
-                })
+                    @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid)
                 </td>
             </tr>
         </tbody>

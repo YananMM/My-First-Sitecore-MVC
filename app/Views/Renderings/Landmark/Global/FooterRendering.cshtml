@@ -6,31 +6,16 @@
         <div class="container">
             <div class="row">
                 <div class="footer-nav-area">
-                    @Html.Sitecore().Rendering(ItemGuids.FooterNavRenderingViewGuid, new
-                    {
-                        Cacheable = false,
-                        CacheKey = "footer-nav",
-                        Cache_VaryByData = true
-                    })
+                    @Html.Sitecore().Rendering(ItemGuids.FooterNavRenderingViewGuid)
                 </div>
                 <div class="footer-signup">
-                    @Html.Sitecore().Rendering(ItemGuids.FooterSocialMediaRenderingGuid, new
-                    {
-                        Cacheable = false,
-                        CacheKey = "social-media",
-                        Cache_VaryByData = true
-                    })
+                    @Html.Sitecore().Rendering(ItemGuids.FooterSocialMediaRenderingGuid)
                 </div>
             </div>
         </div>
     </section>
     <section class="footer-info">
-        @Html.Sitecore().Rendering(ItemGuids.FooterConfigRenderingViewGuid, new
-        {
-            Cacheable = false,
-            CacheKey = "footer-config",
-            Cache_VaryByData = true
-        })
+        @Html.Sitecore().Rendering(ItemGuids.FooterConfigRenderingViewGuid)
     </section>
 </footer>
 

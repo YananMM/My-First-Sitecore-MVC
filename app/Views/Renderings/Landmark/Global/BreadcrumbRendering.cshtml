@@ -47,7 +47,7 @@
     <ol class="breadcrumb">
         @foreach (var item in items)
         {
-            string href = item.Template.ID.ToString() != ItemGuids.PageObject?@Sitecore.Links.LinkManager.GetItemUrl(item):"#"; 
+            string href = LandmarkHelper.IsFalsePage(item)?"#":@Sitecore.Links.LinkManager.GetItemUrl(item); 
             <li>
                 <a href=@href>
                     @if (item.ID == homePage.ID)

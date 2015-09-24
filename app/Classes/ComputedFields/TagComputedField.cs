@@ -22,7 +22,7 @@ namespace Landmark.Classes.ComputedFields
                 List<string> tags=new List<string>();
                 foreach (var id in field.TargetIDs)
                 {
-                    tags.Add(Sitecore.Context.Database.GetItem(id).Fields["Category Name"].Value);
+                    tags.Add(Sitecore.Context.Database.GetItem(id).Fields["Tag Name"].Value);
                 }
                 return tags;
             }

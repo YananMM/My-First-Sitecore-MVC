@@ -7,12 +7,12 @@
     <div>
         @{
 
-            <a href="@Url.Action("SearchContent", "Search")?search=@item.CurrentItem["Category Name"]">@item.CurrentItem["Category Name"] - </a>
+            <a href="@Url.Action("SearchContent", "Search")?search=@item.CurrentItem["Tag Name"]">@item.CurrentItem["Tag Name"] - </a>
         }
         @for (int i=0;i<item.Children.Count;i++)
         {
             var splitStr = i == (item.Children.Count - 1) ? "" : ",";
-        <a href="@Url.Action("SearchContent", "Search")?search=@item.CurrentItem["Category Name"]">@item.Children[i].CurrentItem["Category Name"]
+        <a href="@Url.Action("SearchContent", "Search")?search=@item.CurrentItem["Tag Name"]">@item.Children[i].CurrentItem["Tag Name"]
         @splitStr</a>
         }
     </div>

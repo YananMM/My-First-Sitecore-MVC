@@ -34,6 +34,7 @@ namespace Landmark.Classes
         public static readonly String T14AlsoOnFloorRenderingViewGuid = "{E4C9F730-0F32-481A-A631-814E9DD01CF0}";
         public static readonly String T14YouMayAlsoLikeRenderingViewGuid = "{3D3C605D-3A95-4D71-8206-C403D66EB91A}";
         public static readonly String T23AbCommonRendering = "{50BAA888-14DE-49EE-ADEE-F2C50EE0F41C}";
+        public static readonly String T13MobileSideBarRendering = "{B89D1207-4BB5-44E1-ACF6-FA2803FE5B06}";
 
 
         public static readonly String TextObject = "{55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}";
@@ -118,6 +119,8 @@ namespace Landmark.Classes
         public static readonly String ImageSlider = "{DE5C1439-8A10-4B6F-8FE5-6AA7CD9C5526}";
         public static readonly String Tab = "{8D48118F-0385-48B6-A944-F615A3A610BC}";
 
+        public static readonly String ContactSuccessPage = "{C6045FFE-5883-49F7-AC6E-653919640DDB}";
+
         //item 
         public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}");
         public static readonly Item SearchPlaceHolderItem = Sitecore.Context.Database.GetItem("{ED07CD50-68B7-4E7A-BE15-F161360F4E07}");
@@ -180,6 +183,7 @@ namespace Landmark.Classes
         public static readonly Item TelephoneItem = Sitecore.Context.Database.GetItem("{0B3DA006-CBA6-44CA-9421-88965D431F2F}");
         public static readonly Item DiscoverLandmarkStoriesItem = Sitecore.Context.Database.GetItem("{5731F621-01CE-4596-9DA3-55A231D0D21F}");
         public static readonly Item AllItem = Sitecore.Context.Database.GetItem("{4ACF0FF2-331F-47A8-994A-A3D709A2524F}");
+        public static readonly Item SortAndGoToItem = Sitecore.Context.Database.GetItem("{A67F7267-0402-4356-9EDF-5F1016C67F15}");
         public static readonly Item SeeMoreItem = Sitecore.Context.Database.GetItem("{0BA79670-6D57-473C-B495-1A01DB6CA2CA}");
 
         public static readonly Item MagezineItem =

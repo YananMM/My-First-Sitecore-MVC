@@ -1,0 +1,70 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@using Landmark.Models
+@using Sitecore.Data.Items
+
+@{
+    string[] alphabetsStrings = new[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
+    Item currentPage = Sitecore.Context.Item;
+    string allByBrandsPageID = ItemGuids.AllByBrandsPage;
+    string allByBuildingsPageID = ItemGuids.AllByBuildingsPage;
+    ShoppingHelper shoppingHelper=new ShoppingHelper();
+    List<TextValue> categories = shoppingHelper.GetFirstCategory();
+}
+
+<div class="visible-xs-block">
+    <button type="button" class="btn btn-default btn-block btn-brand popup-trigger" data-popup="#mobile-sort-and-go" aria-expanded="true"> SORT AND GO TO </button>
+    <div id="mobile-sort-and-go" class="popup-overlay hide">
+    <div class="brand-menu-area popup-content">
+        <a  class="close-popup" href="" >@Html.Sitecore().Field("Glossary Value",ItemGuids.SortAndGoToItem) </a>
+        <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBrandsGuidItem)</h3>
+        <ul class="brands clearfix">
+        @Html.Sitecore().Rendering(ItemGuids.ByBrandsRenderingViewGuid)
+        </ul>
+        <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBuidingsGuidItem)</h3>
+        <ul class="brands-gap">
+         @{
+                    List<Item> buidings = LandmarkHelper.GetBuildings();
+                    Item contextItem = Sitecore.Context.Item;
+                    Item firstParentItem = contextItem.Parent;
+                    Item allByBuildings = firstParentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) ? Sitecore.Context.Database.GetItem(ItemGuids.AllByBuildingsPage):contextItem.Parent.Children.Where(item=>item.DisplayName=="By Buildings").FirstOrDefault();
+                }
+
+                @foreach (Item building in buidings)
+                {
+                    string href=Sitecore.Links.LinkManager.GetItemUrl(allByBuildings)+"#"+building.DisplayName.ToLower().Replace(" ","");
+                    <li><a href="@href">@building.Fields["Building Title"].Value</a></li>
+                }
+        <li><a href="#">ALSO CLOSE BY...</a></li>
+        </ul>
+        <form class="form-goto" data-handler-get-catetories="/Service/GetCategoryJson.ashx/" method="POST" action="@Url.Action("GoTo", "Shopping")">
+        <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.GoToGuidItem)<a class="sub-title" href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage))">@Html.Sitecore().Field("Glossary Value", ItemGuids.AllBrandsGuidItem)<span class="sprite-small-r">&gt;</span></a></h3>
+        <div class="form-group">
+            <div class="brand-select clearfix">
+            <select id="category" name="category" class="selectpicker form-control" data-style="btn-primary">
+                @foreach (var item in categories)
+                {
+                    <option value="@item.value">@item.text.ToUpper()</option>
+                }
+            </select>
+            <select id="childcategory" name="childcategory" class="selectpicker form-control" data-style="btn-primary">
+                @foreach (var item in categories.First().children)
+                {
+                    <option value="@item.value">@item.text.ToUpper()</option>
+                }
+            </select>
+            </div>
+            <button type="submit" class="btn btn-default">@Html.Sitecore().Field("Glossary Value", ItemGuids.GoGuidItem)</button>
+        </div>
+        </form>
+        @if (allByBrandsPageID != currentPage.ID.ToString() && allByBuildingsPageID != currentPage.ID.ToString())
+            {
+                <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.SeeAlsoGuidItem)</h3>
+                <ul>
+                    @Html.Sitecore().Rendering(ItemGuids.T13RelatedCategoryViewGuid)
+                </ul>
+            }
+    </div>
+    </div>
+</div>
+            

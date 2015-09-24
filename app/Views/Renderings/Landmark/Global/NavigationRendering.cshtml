@@ -11,7 +11,7 @@
         @foreach (Item item in LandmarkHelper.GetChildrenPageInNavigation(ItemGuids.LandmarkHomeItem).Take(3))
         {
             <li>
-                <a href="@LinkManager.GetItemUrl(item)">@item["Page Title"].ToUpper()</a>
+                <a href="@LandmarkHelper.GetItemUrl(item)">@item["Page Title"].ToUpper()</a>
                 @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count > 0)
                 {
                     <nav class="mega-menu">
@@ -29,7 +29,7 @@
                                                         {
                                                             if (childItem.TemplateID.ToString().Equals(ItemGuids.T11PageTemplate))
                                                             {
-                                                                <li><a href="@LinkManager.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
+                                                                <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
                                                             }
                                                         }
                                                     </ul>
@@ -37,21 +37,11 @@
                                                 <div class="col-lg-3 col-md-3 col-sm-3">
                                                     <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBrandsGuidItem)</h3>
                                                     <ul class="mega-brands">
-                                                        @Html.Sitecore().Rendering(ItemGuids.ByBrandsRenderingViewGuid, new
-                                                    {
-                                                        Cacheable = false,
-                                                        CacheKey = "bybrands",
-                                                        Cache_VaryByData = true
-                                                    })
+                                                        @Html.Sitecore().Rendering(ItemGuids.ByBrandsRenderingViewGuid)
                                                     </ul>
                                                     <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBuidingsGuidItem)</h3>
                                                     <ul class="brands-gap">
-                                                        @Html.Sitecore().Rendering(ItemGuids.ByBuildingsRenderingViewGuid, new
-                                                    {
-                                                        Cacheable = false,
-                                                        CacheKey = "bybuildings",
-                                                        Cache_VaryByData = true
-                                                    })
+                                                        @Html.Sitecore().Rendering(ItemGuids.ByBuildingsRenderingViewGuid)
                                                     </ul>
                                                 </div>
                                             </div>
@@ -85,7 +75,7 @@
                                         <ul>
                                             @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
                                             {
-                                                <li><a href="@LinkManager.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
+                                                <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
                                             }
                                         </ul>
                                     </div>
@@ -132,7 +122,7 @@
         @foreach (Item item in LandmarkHelper.GetChildrenPageInNavigation(ItemGuids.LandmarkHomeItem).Skip(3).Take(3))
         {
             <li>
-                <a href="@LinkManager.GetItemUrl(item)">@item["Page Title"].ToUpper()</a>
+                <a href="@LandmarkHelper.GetItemUrl(item)">@item["Page Title"].ToUpper()</a>
                 @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count > 0)
                 {
                     <nav class="mega-menu">
@@ -176,7 +166,7 @@
                                         <ul>
                                             @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
                                             {
-                                                <li><a href="@LinkManager.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
+                                                <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
                                             }
                                         </ul>
                                     </div>

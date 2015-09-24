@@ -47,7 +47,7 @@
             <li class="active"><a href="#">@Html.Sitecore().Field("Glossary Value", ItemGuids.AllTextItem)</a></li>
             @foreach (var category in helper.GetCategories())
             {
-                <li><a href="#">@Html.Sitecore().Field("Category Name",category)</a></li>
+                <li><a href="#">@Html.Sitecore().Field("Tag Name",category)</a></li>
             }
         </ul>
     </div>

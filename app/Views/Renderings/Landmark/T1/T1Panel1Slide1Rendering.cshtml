@@ -1,6 +1,12 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Data.Fields
+@using Sitecore.Links
 @model RenderingModel
+@{
+    ReferenceField articleType = (ReferenceField) Model.Item.Fields["Article Type"];
+}
+
 <div class="panel-img" data-bg="@Html.Sitecore().ImageFieldSrc("Article Slider Image", Model.Item)"></div>
 <div class="panel-main">
     <div class="text-box-1 panel-text ">
@@ -12,7 +18,10 @@
         <div class="panel-content">
             @Html.Sitecore().Field("Article Intro", Model.Item)
         </div>
-        <a class="btn btn-default" href="@Sitecore.Links.LinkManager.GetItemUrl(Model.Item)">@Html.Sitecore().Field("Glossary Value",ItemGuids.DiscoverMoreItem)</a>
+        <a class="btn btn-default" href="@Sitecore.Links.LinkManager.GetItemUrl(Model.Item)">@Html.Sitecore().Field("Glossary Value", ItemGuids.DiscoverMoreItem)</a>
     </div>
-    <a class="panel-link panel-text" href="#">SEE MORE INSPIRATIONS<span class="icomoon-chevron-small-right"></span></a>
+    @if (articleType != null && articleType.TargetItem != null && !string.IsNullOrEmpty(articleType.TargetItem.Fields["See More Article Text"].Value))
+    {
+        <a class="panel-link panel-text" href="@LinkManager.GetItemUrl(Model.Item.Parent)">@articleType.TargetItem.Fields["See More Article Text"].Value<span class="icomoon-chevron-small-right"></span></a>
+    }
 </div>

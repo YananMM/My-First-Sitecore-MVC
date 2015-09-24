@@ -11,9 +11,4 @@
 <div class="gd-pagetitle-heading">
     <h2>@parent["Page Title"].ToUpper()</h2>
 </div>
-@Html.Sitecore().Rendering(ItemGuids.T36CategoryTypeViewGuid, new
-            {
-                Cacheable = false,
-                CacheKey = "category-type",
-                Cache_VaryByData = true,
-            })
+@Html.Sitecore().Rendering(ItemGuids.T36CategoryTypeViewGuid)

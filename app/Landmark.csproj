@@ -147,6 +147,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\ShoppingController.cs" />
+    <Compile Include="Helper\AdobeTrackingDataLayerHelper.cs" />
     <Compile Include="Helper\AroundCentralHelper.cs" />
     <Compile Include="Helper\ArtTourHelper.cs" />
     <Compile Include="Helper\EditorFrameHelper.cs" />
@@ -772,6 +773,7 @@
     <Content Include="Views\Renderings\Landmark\T23\T23ABCommonRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T31\T31ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T17\T17PageTitleRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T13\T13MobileSideBar.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

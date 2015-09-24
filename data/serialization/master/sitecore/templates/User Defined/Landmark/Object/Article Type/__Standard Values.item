@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {0799CC76-D623-49FD-8025-8E9358A13B62}
+id: {5818DEA5-E2F5-48E9-9FC7-1D240975EAC3}
 database: master
-path: /sitecore/content/Global/Landmark/Article Type/Event
-parent: {2F7748B7-07ED-413F-8B92-382DCE56A8C9}
-name: Event
+path: /sitecore/templates/User Defined/Landmark/Object/Article Type/__Standard Values
+parent: {3DB6DB24-E91F-4256-A077-8CD7926D4969}
+name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
 template: {3DB6DB24-E91F-4256-A077-8CD7926D4969}
 templatekey: Article Type
@@ -12,7 +12,7 @@ templatekey: Article Type
 ----version----
 language: en
 version: 1
-revision: 2e7885c4-eb3a-4116-88d0-dacdb0f10ca3
+revision: 5a6ddfd4-9356-449f-af35-f36f297194bd
 
 ----field----
 field: {3CFBCC26-03CC-4185-B735-34225B515556}
@@ -20,35 +20,42 @@ name: Article Type
 key: article type
 content-length: 5
 
-Event
+$name
 ----field----
-field: {69F52B0C-E7AD-4872-8398-51CF10D649B6}
-name: See More Article Text
-key: see more article text
-content-length: 21
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
 
-SEE MORE INSPIRATIONS
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150826T024810Z
+20150923T062101Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-2e7885c4-eb3a-4116-88d0-dacdb0f10ca3
+5a6ddfd4-9356-449f-af35-f36f297194bd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150923T062453Z
+20150923T062138Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
