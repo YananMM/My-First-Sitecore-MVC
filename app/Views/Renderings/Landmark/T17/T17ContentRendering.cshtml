@@ -71,33 +71,115 @@
                 <div class="container">
                     <div class="gd-brief">
                         <div class="gd-brief-body gd-col-2 gd-longarticle" data-text-on="DISCOVER MORE >" data-text-off="LESS -">
-                            @Html.Sitecore().Field("Text Content")
+                            <p>
+                                @Html.Sitecore().Field("Text Content", item)
+                            </p>
                         </div>
                     </div>
                 </div>
             }
+
             else if (item.TemplateID.ToString() == ItemGuids.OneImage)
             {
                 <div class="gd-promotion-block-area">
-                    <div class="gd-promotion-block clearfix">
-                        <div class="gd-promotion-block-img" style=" background-image:url(../files/landmark/images/promotion/promotion-bg-img-01.jpg)" data-bgsrc="../files/landmark/images/promotion/promotion-bg-img-02.jpg">
+                    @{
+                var left = (CheckboxField)item.Fields["Photo Alignment Left"];
+                    }
+                    <div @if (left.Checked) { <text>
+                         class="gd-promotion-block clearfix"
+                         </text>                                 } else { <text> class="gd-promotion-block2 clearfix" </text>                                }>
+                        <div class="gd-promotion-block-img" style="background-image: url(@Html.Sitecore().ImageFieldSrc("Image",item))" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Image",item)">
                         </div>
                         <div class="gd-promotion-block-text">
                             <div class="gd-promotion-block-textarea">
-                                <h3>Lorem ipsum dolor sit amet</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p><a href="#" class="gd-button gd-button-transparent" type="button">DISCOVER MORE</a>
-
+                                <h3>@Html.Sitecore().Field("Title", item)</h3>
+                                @Html.Sitecore().Field("Description", item)
                             </div>
                         </div>
                     </div>
-                    <div class="gd-promotion-block2 clearfix">
-                        <div class="gd-promotion-block-img" style=" background-image:url(../files/landmark/images/promotion/promotion-bg-img-02.jpg)" data-bgsrc="../files/landmark/images/promotion/promotion-bg-img-02.jpg">
+                </div>
+            }
+            else if (item.TemplateID.ToString() == ItemGuids.ImageSlider)
+            {
+                <div class="container">
+                    <div class="gd-promotion-listarea">
+                        <h3>@Html.Sitecore().Field("Title", item)</h3>
+                        @Html.Sitecore().Field("Description", item)
+                        <a>@Html.Sitecore().Field("Link Text", item)<span class="icomoon-chevron-small-right"></span></a>
+
+                        <div class="gd-slick-slider-wrapper">
+                            <div class="slider variable-width gd-slick-slider">
+                                @{
+                var slides = item.Children.ToList();
+                if (slides.Count != 0)
+                {
+                    foreach (var slide in slides)
+                    {
+                        <div class="gd-slick-item">
+                            @Html.Sitecore().Field("Image", slide)
                         </div>
-                        <div class="gd-promotion-block-text">
-                            <div class="gd-promotion-block-textarea">
-                                <h3>Lorem ipsum dolor sit amet</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam</p><a href="#" class="gd-button gd-button-transparent" type="button">DISCOVER MORE</a>
+                    }
+                }
+                                }
                             </div>
+                            <div class="gd-slick-controls-m">
+                                <span class="icomoon-thin-arrow-L"></span>
+                                <span class="gd-slick-no-current"></span>
+                                <span class="gd-slick-no-dash">/</span>
+                                <span class="gd-slick-no-all"></span>
+                                <span class="icomoon-thin-arrow-R"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            else if (item.TemplateID.ToString() == ItemGuids.Tab)
+            {
+                <div class="container">
+                    <div class="gd-tab-intro">
+                        <h3>@Html.Sitecore().Field("Title", item)</h3>
+                        <!-- Nav tabs -->
+                        @{
+                var tabs = item.Children.ToList();
+                int i = 1;
+                int j = 1;
+                        }
+                        <ul class="nav nav-tabs" role="tablist">
+
+                            @foreach (var tab in tabs)
+                            {
+                                <li @if (i == 1) { <text> class="active" </text>              }><a href="#@tab.ID.ToString().Trim('{').Trim('}')" data-toggle="tab">@tab.Fields["Name"]</a></li>
+i++;
+                            }
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            @foreach (var tab in tabs)
+                            {
+                                <a class="tab-pane-switch" href="javascript:;">
+                                    @tab.Fields["Name"]<span @if (j == 1) { <text>
+                                                             class="on"
+                                                             </text>     } else { <text> class="off" </text>     }></span>
+                                </a>
+                                <div @if (j == 1) { <text>
+                                     class="tab-pane fade in active"
+                                     </text>      } else { <text> class="tab-pane fade" </text>     } id="@tab.ID.ToString().Trim('{').Trim('}')">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <img data-src="@Html.Sitecore().ImageFieldSrc("Image",tab)" alt="">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="intro-wrapper">
+                                                <p>
+                                                    @Html.Sitecore().Field("Description", tab)<br><a>@Html.Sitecore().Field("Link Text",tab)<span class="icomoon-chevron-small-right"></span></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+j++;
+                            }
                         </div>
                     </div>
                 </div>

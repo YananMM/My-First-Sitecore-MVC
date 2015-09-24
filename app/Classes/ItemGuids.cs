@@ -114,7 +114,7 @@ namespace Landmark.Classes
         public static readonly String SlideFolderTemplate = "{EEEB8813-EBD2-415E-B4F0-72B52DDEF18E}";
 
         public static readonly String TwoImageColumns = "{C9F47999-9F13-42F2-9AC5-C5DB6FCF4A69}";
-        public static readonly String TextColumn = "{95710548-2E7F-4FD5-B97D-CAF1396CE80B}";
+        public static readonly String TextColumn = "{8125C406-0B8B-4A8B-8722-7F6156E285F8}";
         public static readonly String OneImage = "{16F1704D-42DB-450A-829C-193F500489E0}";
         public static readonly String ImageSlider = "{DE5C1439-8A10-4B6F-8FE5-6AA7CD9C5526}";
         public static readonly String Tab = "{8D48118F-0385-48B6-A944-F615A3A610BC}";
