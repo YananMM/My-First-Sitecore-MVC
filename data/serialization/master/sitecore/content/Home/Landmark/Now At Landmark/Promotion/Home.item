@@ -12,8 +12,36 @@ templatekey: T17 Page
 ----version----
 language: en
 version: 1
-revision: 9d586709-a88d-4d47-8b96-4bb09fad2515
+revision: 72638096-e6b6-40a5-b249-a32078e3bd52
 
+----field----
+field: {800225A2-E2E6-4AF9-94E6-37C5907002B3}
+name: Carousel Title
+key: carousel title
+content-length: 26
+
+LOREM IPSUM DOLOR SIT AMET
+----field----
+field: {06EB99B9-EA71-42B2-932D-C78F48FE5D94}
+name: Carousel Description
+key: carousel description
+content-length: 250
+
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+----field----
+field: {1C47499E-5BD2-4D88-B994-1362543DDEA3}
+name: Button Link
+key: button link
+content-length: 20
+
+http://www.baidu.com
+----field----
+field: {30525E68-92E2-4B07-B1EE-41300938E684}
+name: Button Text
+key: button text
+content-length: 13
+
+DISCOVER MORE
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -34,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9d586709-a88d-4d47-8b96-4bb09fad2515
+72638096-e6b6-40a5-b249-a32078e3bd52
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150923T094328:635785982086088723Z
+20150924T073010:635786766101139898Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

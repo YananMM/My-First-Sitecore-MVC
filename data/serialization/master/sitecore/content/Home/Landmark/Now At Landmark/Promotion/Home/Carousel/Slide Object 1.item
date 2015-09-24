@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {F16629DA-A7B7-42B8-9D42-A552A6C30B77}
+database: master
+path: /sitecore/content/Home/Landmark/Now At Landmark/Promotion/Home/Carousel/Slide Object 1
+parent: {8F350F92-A1E4-4EB0-A5CE-E991CB617788}
+name: Slide Object 1
+master: {00000000-0000-0000-0000-000000000000}
+template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
+templatekey: Slide Object
+
+----field----
+field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{92F36633-17B4-4280-AF1C-8C2251C5981F}" />
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+-50
+----version----
+language: en
+version: 1
+revision: ee04f859-554a-4778-bc19-7820d2e0d306
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150909T082504Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ee04f859-554a-4778-bc19-7820d2e0d306
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150917T102635:635780823957690964Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
