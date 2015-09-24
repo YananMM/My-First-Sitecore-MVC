@@ -3,12 +3,7 @@
 @using Sitecore.Data.Items
 @model RenderingModel
 <div class="masonry-area clearfix">
-    @Html.Sitecore().Rendering(ItemGuids.T13MobileSideBarRendering, new
-            {
-                Cacheable = false,
-                CacheKey = "by-brands-buidings",
-                Cache_VaryByData = true,
-            })
+    @Html.Sitecore().Rendering(ItemGuids.T13MobileSideBarRendering)
     <div class="brand-box-area">
         @{
             ShoppingHelper shoppingHelper = new ShoppingHelper();

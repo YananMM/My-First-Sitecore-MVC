@@ -6,10 +6,5 @@
     <div class="carousel-heading">
         <h3>@Html.Sitecore().Field("Related Article Title")</h3>
     </div>
-    @Html.Sitecore().Rendering(ItemGuids.RelatedItemViewGuid, new
-                {
-                    Cacheable = false,
-                    CacheKey = "related-articles",
-                    Cache_VaryByData = true
-                })
+    @Html.Sitecore().Rendering(ItemGuids.RelatedItemViewGuid)
 </div>

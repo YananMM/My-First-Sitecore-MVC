@@ -12,12 +12,7 @@
 }
 
 <div class="masonry-area clearfix">
-@Html.Sitecore().Rendering(ItemGuids.T13MobileSideBarRendering, new
-            {
-                Cacheable = false,
-                CacheKey = "by-brands-buidings",
-                Cache_VaryByData = true,
-            })
+@Html.Sitecore().Rendering(ItemGuids.T13MobileSideBarRendering)
     @foreach (Item building in buildings)
     {
         if (shoppingHelper.GetBrandsByBuildings(building.ID).Count > 0)

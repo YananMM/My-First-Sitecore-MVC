@@ -12,32 +12,12 @@
 <!--[if gt IE 9]><html class="no-js"><![endif]-->
 <!--[if !IE]><!--><html class="no-js"><!--<![endif]-->
 <head>
-    @Html.Sitecore().Rendering(ItemGuids.MetaRenderingViewGuid, new
-{
-    Cacheable = false,
-    CacheKey = "meta",
-    Cache_VaryByData = true
-})
+    @Html.Sitecore().Rendering(ItemGuids.MetaRenderingViewGuid)
 </head>
 <body class="en @LandmarkHelper.GetPageBodyClass()">
-    @Html.Sitecore().Rendering(ItemGuids.HeaderRenderingViewGuid, new
-{
-    Cacheable = false,
-    CacheKey = "header",
-    Cache_VaryByData = true
-})
+    @Html.Sitecore().Rendering(ItemGuids.HeaderRenderingViewGuid)
     @Html.Sitecore().Placeholder("main-content")
-    @Html.Sitecore().Rendering(ItemGuids.FooterRenderingViewGuid, new
-{
-    Cacheable = false,
-    CacheKey = "footer",
-    Cache_VaryByData = true
-})
-    @Html.Sitecore().Rendering(ItemGuids.ScriptRenderingViewGuid, new
-{
-    Cacheable = false,
-    CacheKey = "script",
-    Cache_VaryByData = true
-})
+    @Html.Sitecore().Rendering(ItemGuids.FooterRenderingViewGuid)
+    @Html.Sitecore().Rendering(ItemGuids.ScriptRenderingViewGuid)
 </body>
 </html>

@@ -86,12 +86,7 @@
             @Html.Sitecore().Field("Article Intro")
           <dl class="gd-content-details-tags">
               <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt> 
-              <dd>@Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid, new
-                {
-                    Cacheable = false,
-                    CacheKey = "tags",
-                    Cache_VaryByData = true
-                })</dd>
+              <dd>@Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid)</dd>
           </dl>
           <hr>
           <div class="row">

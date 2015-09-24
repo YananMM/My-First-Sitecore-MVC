@@ -26,12 +26,7 @@
     </div>
 
     <div class="gd-content-details">
-        @Html.Sitecore().Rendering(ItemGuids.T23AbCommonRendering, new
-                            {
-                                Cacheable = false,
-                                CacheKey = "ab-common",
-                                Cache_VaryByData = true
-                            })
+        @Html.Sitecore().Rendering(ItemGuids.T23AbCommonRendering)
     </div>
     @Html.Sitecore().Placeholder("t23-related")
 </div>

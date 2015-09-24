@@ -19,12 +19,7 @@
         <a  class="close-popup" href="" >@Html.Sitecore().Field("Glossary Value",ItemGuids.SortAndGoToItem) </a>
         <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBrandsGuidItem)</h3>
         <ul class="brands clearfix">
-        @Html.Sitecore().Rendering(ItemGuids.ByBrandsRenderingViewGuid, new
-            {
-                Cacheable = false,
-                CacheKey = "bybrands",
-                Cache_VaryByData = true
-            })
+        @Html.Sitecore().Rendering(ItemGuids.ByBrandsRenderingViewGuid)
         </ul>
         <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.ByBuidingsGuidItem)</h3>
         <ul class="brands-gap">
@@ -66,12 +61,7 @@
             {
                 <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.SeeAlsoGuidItem)</h3>
                 <ul>
-                    @Html.Sitecore().Rendering(ItemGuids.T13RelatedCategoryViewGuid, new
-                    {
-                        Cacheable = false,
-                        CacheKey = "relatedCategory",
-                        Cache_VaryByData = true
-                    })
+                    @Html.Sitecore().Rendering(ItemGuids.T13RelatedCategoryViewGuid)
                 </ul>
             }
     </div>
