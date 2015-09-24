@@ -1,4 +1,6 @@
 ﻿@using System.Runtime.CompilerServices
+@using System.Collections.Generic;
+@using System.Linq;
 @using Landmark.Classes
 @using Landmark.Helper
 @using Sitecore.Data.Fields
@@ -11,7 +13,8 @@
     ArtTourHelper helper = new ArtTourHelper();
     var buildings = LandmarkHelper.GetBuildings();
     var building = helper.GetCurrentBuilding(Request["building"]);
-    var artpieces = helper.GetArtistsByBuilding(Request["building"],Request["page"]);
+    var page = int.Parse(Request["page"] ?? "0");
+    var artpieces = helper.GetArtPieceByBuilding(building.ID.ToString()).Skip((page - 1) * 4).Take(4);
 }
 <div class="row">
     <div id="gd-list-locations" class="col-md-6">
@@ -19,9 +22,9 @@
             @for (int i = 0; i < buildings.Count; i++)
             {
                 string cssclass = building.ID.ToString() == buildings[i].ID.ToString() ? "active" : string.Empty;
-                <li data-id="@buildings[i].ID.ToString()" data-location='@buildings[i].Fields["Building Svg Id"].Value' class="list-group-item @cssclass">
+                <li data-location="@buildings[i].Fields["Building Svg Id"].Value" class="list-group-item @cssclass">
                     <span class="badge">@(i + 1)</span>
-                    <a href="?building=@buildings[i].ID.ToString()&page=1">@buildings[i].Fields["Building Title"].Value</a>
+                    @buildings[i].Fields["Building Title"].Value
                 </li>
             }
         </ul>
@@ -29,7 +32,7 @@
             <select class="form-control">
                 @for (int i = 0; i < buildings.Count; i++)
                 {
-                    <option value="gdfpa@(i+1)"> @buildings[i].Fields["Building Title"].Value</option>
+                    <option value="@buildings[i].Fields["Building Svg Id"].Value">@buildings[i].Fields["Building Title"].Value</option>
                 }
             </select>
         </div>
@@ -42,26 +45,25 @@
 <div class="gd-artlist">
     <h3>@Html.Sitecore().Field("Building Title",building)</h3>
     <div id="gd-art-gallery">
-        @foreach (List<ArtPieceByBuildingJson> rowPieces in artpieces)
-        {
-            <div class="row">
-                @foreach (ArtPieceByBuildingJson piece in rowPieces)
-                {
-                    <div class="col-sm-3 text-center">
-                        <a href="@piece.link" class="gd-hover-img">
-                            <div class="gd-hover-img-area">
-                                <div class="gd-hover-img-mask"></div>
-                                <img data-src="@piece.src" alt="artpiece picture">
-                            </div>
-                            <h4>@piece.title</h4>
-                            <p>@piece.des</p>                
-                        </a>
-                    </div>
-                }
-            </div>
-        }
+        <div class="row">
+            @foreach (Item piece in artpieces)
+            {
+                <div class="col-sm-3 text-center">
+                    <a href="@LinkManager.GetItemUrl(piece)" class="gd-hover-img">
+                        <div class="gd-hover-img-area">
+                            <div class="gd-hover-img-mask"></div>
+                            <img data-src="@SitecoreFieldHelper.ImageFieldSrc("Art Image", piece)" alt="artpiece picture">
+                        </div>
+                        <h4>@piece.Fields["Art Title"].Value</h4>
+                        <p>@piece.Fields["Art Description"].Value</p>
+                    </a>
+                </div>
+            }
+        </div>
     </div>
-    <div class="navigation"><a id="gd-art-gallery-loading" href="@LinkManager.GetItemUrl(Sitecore.Context.Item)?building=2&page=2" class="loding-more">SEE MORE +</a></div>
+    <div class="navigation gd-promo-more">
+        <a href="?building=@buildings.First().ID.ToString()&page=2">SEE MORE +</a>
+    </div>
 </div>
 
 

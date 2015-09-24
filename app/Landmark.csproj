@@ -186,9 +186,6 @@
     <Compile Include="Pipelines\GetChromeData\GetDynamicPlaceholderChromeData.cs" />
     <Compile Include="Pipelines\HttpRequest\NotFoundProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service\GetArtPieceJsonByArtists.ashx.cs">
-      <DependentUpon>GetArtPieceJsonByArtists.ashx</DependentUpon>
-    </Compile>
     <Compile Include="Service\GetCategoryJson.ashx.cs">
       <DependentUpon>GetCategoryJson.ashx</DependentUpon>
     </Compile>
@@ -704,7 +701,6 @@
     <Content Include="Views\Renderings\Landmark\T22\T22ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T22\T22ByArtistRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T22\T22ByLocationRendering.cshtml" />
-    <Content Include="Service\GetArtPieceJsonByArtists.ashx" />
     <Content Include="Views\Renderings\Landmark\T7\T7ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T8\T8ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T8\T8SlideTextRendering.cshtml" />

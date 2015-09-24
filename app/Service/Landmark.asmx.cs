@@ -123,18 +123,5 @@ namespace Landmark.Service
             }
             return result;
         }
-
-        [WebMethod]
-        [ScriptMethod(ResponseFormat = ResponseFormat.Json, XmlSerializeString = false)]
-        public void GetArtsJson(string buildingID)
-        {
-            Item building = Sitecore.Context.Database.GetItem(buildingID);
-            var list = _artsHelper.GetArtPieceJsonByBuilding(buildingID);
-            JavaScriptSerializer js = new JavaScriptSerializer();
-            string strJSON = js.Serialize(list);
-            Context.Response.Write(strJSON);
-            Context.Response.ContentType = "application/json";
-        }
-
     }
 }
