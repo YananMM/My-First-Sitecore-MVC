@@ -96,7 +96,7 @@
                                             }
                                             <div class="col-sm-4 col-sm-offset-1">
                                                 <div class="mega-product-area2 pull-right">
-                                                    @if (referenceField != null)
+                                                    @if (referenceField != null && referenceField.TargetItem != null)
                                                     {
                                                         @Html.Sitecore().Field("Article Thumb Image", referenceField.TargetItem)
                                                     }
@@ -104,12 +104,12 @@
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="mega-product-area2 pull-right">
-                                                    @if (referenceField != null)
+                                                    @if (referenceField != null && referenceField.TargetItem != null)
                                                     {
-													<h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
-                                                    <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
-                                                    <a href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", ItemGuids.LearnMoreItem) <span class="sprite-menu-r"></span></a>
-													}
+                                                        <h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
+                                                        <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
+                                                        <a href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", ItemGuids.LearnMoreItem) <span class="sprite-menu-r"></span></a>
+                                                    }
                                                 </div>
                                             </div>
                                         </div>
@@ -139,35 +139,35 @@
                         <div class="container">
                             @if (item.TemplateID.ToString() == ItemGuids.ShoppingPageObject)
                             {
-                            <div class="row row-equal">
-                                <div class="col-sm-5 mega-menu-area2">
-                                    <ul class=" mega-category">
-                                        @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
-                                        {
-                                            <li><a href="@LinkManager.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
-                                        }
-                                    </ul>
-                                </div>
-                                <div class="col-sm-7  menu-equal-height">
-                                    <div class="row">
-                                        @{
-                                            ReferenceField referenceField = (ReferenceField) item.Fields["Ad Reference Item"];
-                                        }
-                                        <div class="col-sm-4 col-sm-offset-1">
-                                            <div class="mega-product-area2 pull-right">
-                                                @Html.Sitecore().Field("Article Thumb Image", referenceField.TargetItem)
+                                <div class="row row-equal">
+                                    <div class="col-sm-5 mega-menu-area2">
+                                        <ul class=" mega-category">
+                                            @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
+                                            {
+                                                <li><a href="@LinkManager.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
+                                            }
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-7  menu-equal-height">
+                                        <div class="row">
+                                            @{
+                                ReferenceField referenceField = (ReferenceField)item.Fields["Ad Reference Item"];
+                                            }
+                                            <div class="col-sm-4 col-sm-offset-1">
+                                                <div class="mega-product-area2 pull-right">
+                                                    @Html.Sitecore().Field("Article Thumb Image", referenceField.TargetItem)
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="mega-product-area2 pull-right">
-                                                <h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
-                                                <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
-                                                <a href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", ItemGuids.LearnMoreItem) <span class="sprite-menu-r"></span></a>
+                                            <div class="col-sm-4">
+                                                <div class="mega-product-area2 pull-right">
+                                                    <h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
+                                                    <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
+                                                    <a href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", ItemGuids.LearnMoreItem) <span class="sprite-menu-r"></span></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                             }
                             else
                             {
@@ -187,7 +187,7 @@
                                             }
                                             <div class="col-sm-4 col-sm-offset-1">
                                                 <div class="mega-product-area2 pull-right">
-                                                    @if (referenceField != null && referenceField.TargetItem!=null)
+                                                    @if (referenceField != null && referenceField.TargetItem != null)
                                                     {
                                                         @Html.Sitecore().Field("Article Thumb Image", referenceField.TargetItem)
                                                     }
@@ -198,9 +198,10 @@
                                                     @if (referenceField != null && referenceField.TargetItem != null)
                                                     {
                                                         <h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
-                                                    <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
-                                                    <a href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", ItemGuids.LearnMoreItem) <span class="sprite-menu-r"></span></a>
-													}                                                </div>
+                                                        <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
+                                                        <a href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", ItemGuids.LearnMoreItem) <span class="sprite-menu-r"></span></a>
+                                                    }
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
