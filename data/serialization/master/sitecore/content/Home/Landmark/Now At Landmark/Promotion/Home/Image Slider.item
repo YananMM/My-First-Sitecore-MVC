@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {18668F99-48DE-4AC7-8CA8-E29E7A7DF986}
+id: {85E2C882-6B65-4FD3-98E9-1AB9E58A1FFE}
 database: master
-path: /sitecore/content/Home/Landmark/Now At Landmark/Promotion/Page 2/Image Slider
-parent: {9C2BB7E7-012D-4AAF-BFBD-E3BBAFF96EE5}
+path: /sitecore/content/Home/Landmark/Now At Landmark/Promotion/Home/Image Slider
+parent: {D6F4FCEC-2289-48D1-A1B2-CF17F4062B70}
 name: Image Slider
 master: {9D876F6A-C8AA-4C7E-B460-F10C42F31409}
 template: {DE5C1439-8A10-4B6F-8FE5-6AA7CD9C5526}
@@ -19,7 +19,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: ddd7d610-3a35-4ab1-acb3-549459a17c07
+revision: 04f2841e-47a7-433f-9197-aded1771aab2
 
 ----field----
 field: {0F632677-C0FD-4C63-BE41-FEB2C079723A}
@@ -35,6 +35,13 @@ key: description
 content-length: 430
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+----field----
+field: {ADC21D10-A7C5-49F4-BF0A-E166DBA7418B}
+name: Link
+key: link
+content-length: 20
+
+http://www.baidu.com
 ----field----
 field: {6CB19ED4-2D01-4A4A-A8B7-9BDBE5AF8945}
 name: Link Text
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ddd7d610-3a35-4ab1-acb3-549459a17c07
+04f2841e-47a7-433f-9197-aded1771aab2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150924T034957:635786633975288225Z
+20150924T053045:635786694452861851Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

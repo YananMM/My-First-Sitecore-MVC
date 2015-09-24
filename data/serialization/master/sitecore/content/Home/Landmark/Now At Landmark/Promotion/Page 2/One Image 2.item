@@ -19,7 +19,7 @@ content-length: 2
 ----version----
 language: en
 version: 1
-revision: e6ee8d1a-b623-4548-b4ec-3a96cbac8280
+revision: 60fe5e2d-6882-4ad4-8e5a-16d18a463e1c
 
 ----field----
 field: {97F51297-FC43-4698-96C8-6A5D00CD0384}
@@ -35,6 +35,13 @@ key: description
 content-length: 129
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+----field----
+field: {603B0C13-6211-4E8A-899F-F03C044BE7A5}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{EA95536E-5637-4C85-90DC-4EB51F03CB16}" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -62,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e6ee8d1a-b623-4548-b4ec-3a96cbac8280
+60fe5e2d-6882-4ad4-8e5a-16d18a463e1c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150924T023551:635786589512285087Z
+20150924T024144:635786593040646898Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,11 +1,11 @@
 ----item----
 version: 1
-id: {95B0557C-E5C9-46F7-8C24-44388D35BB98}
+id: {EC0CCFF0-B908-4397-96C0-204908D82DA4}
 database: master
-path: /sitecore/content/Home/Landmark/Now At Landmark/Promotion/Page 2/One Image 1
-parent: {9C2BB7E7-012D-4AAF-BFBD-E3BBAFF96EE5}
-name: One Image 1
-master: {9D876F6A-C8AA-4C7E-B460-F10C42F31409}
+path: /sitecore/content/Home/Landmark/Now At Landmark/Promotion/Home/One Image 2
+parent: {D6F4FCEC-2289-48D1-A1B2-CF17F4062B70}
+name: One Image 2
+master: {00000000-0000-0000-0000-000000000000}
 template: {16F1704D-42DB-450A-829C-193F500489E0}
 templatekey: One Image
 
@@ -15,18 +15,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 2
 
-88
-----field----
-field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
-name: __Originator
-key: __originator
-content-length: 0
-
-
+94
 ----version----
 language: en
 version: 1
-revision: 6a75fd0d-eb74-4781-83aa-6443cecae64a
+revision: 60fe5e2d-6882-4ad4-8e5a-16d18a463e1c
 
 ----field----
 field: {97F51297-FC43-4698-96C8-6A5D00CD0384}
@@ -48,21 +41,7 @@ name: Image
 key: image
 content-length: 58
 
-<image mediaid="{B1B75920-DA6B-4857-A38C-CCE018B3338E}" />
-----field----
-field: {C739E86B-16E3-4FD6-8FB9-99E4C77A9940}
-name: Button Text
-key: button text
-content-length: 13
-
-DISCOVER MORE
-----field----
-field: {EC2BAE48-B718-4689-A2A4-9C559F548644}
-name: Photo Alignment Left
-key: photo alignment left
-content-length: 1
-
-1
+<image mediaid="{EA95536E-5637-4C85-90DC-4EB51F03CB16}" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -76,7 +55,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150923T090842Z
+20150924T023522Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -90,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6a75fd0d-eb74-4781-83aa-6443cecae64a
+60fe5e2d-6882-4ad4-8e5a-16d18a463e1c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150924T024120:635786592809573681Z
+20150924T024144:635786593040646898Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
