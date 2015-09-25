@@ -15,7 +15,7 @@
     {
         <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{if (i == 0) { <text>
             class="active"
-            </text>                         }}></li>
+            </text>                          }}></li>
     }
 </ol>
 <!-- Wrapper for slides -->
@@ -26,14 +26,14 @@
         {
             <div @{ if (j == 0) { <text>
                  class="item active"
-                 </text>                     } else { <text>
+                 </text>                      } else { <text>
                  class="item"
-                 </text>                     } }>
+                 </text>                      } }>
                 @{
             j++;
                 }
-                
-                @if (string.IsNullOrEmpty(item.Fields["Slide Video"].Value))
+
+                @if (item.Fields["Slide Video"] == null)
                 {
                     <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Slide Image", item)"></div>
                 }
@@ -43,22 +43,19 @@
                 }
 
                 @{
-            var currentItem = Sitecore.Context.Item;
-            StorySetting setting = new StorySetting();
-            if (currentItem.TemplateID.ToString() == ItemGuids.T23PageTemplate)
-            {
-                setting = helper.GetStorySetting(Sitecore.Context.Item);
-                <p @if (setting == StorySetting.StyleCd)
-                { <text>
-                    class="gd-des-below text-center"
-                </text>      }
-                else
-                { <text>
-                    class="gd-des-below"
-                </text>      }>
-                @Html.Sitecore().Field("Slide Title", item)
-                </p>
-            }
+                var currentItem = Sitecore.Context.Item;
+                StorySetting setting = new StorySetting();
+                if (currentItem.TemplateID.ToString() == ItemGuids.T23PageTemplate)
+                {
+                    setting = helper.GetStorySetting(Sitecore.Context.Item);
+                    <p @if (setting == StorySetting.StyleCd) { <text>
+                       class="gd-des-below text-center"
+                       </text>       } else { <text>
+                       class="gd-des-below"
+                       </text>       }>
+                        @Html.Sitecore().Field("Slide Title", item)
+                    </p>
+                }
                 }
             </div>
         }

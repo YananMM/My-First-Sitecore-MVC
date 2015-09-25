@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {03FEDD1D-8EF0-447F-AEA4-82DA62EA29C5}
+id: {1D404C6D-69F2-47D7-83F7-A570104AAF97}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T23 Page CD/Tag Data/Related Brands
-parent: {DCAF9E75-7FE2-48A1-B4C5-ABEDBD69EF65}
-name: Related Brands
+path: /sitecore/templates/User Defined/Landmark/Page/T31 Page/Other Data/Gender
+parent: {58EEF2E6-54B4-47FA-B46A-74CDDB5A63CD}
+name: Gender
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,16 +13,9 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 8
+content-length: 16
 
-Treelist
-----field----
-field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
-name: Source
-key: source
-content-length: 45
-
-/sitecore/content/Global/Landmark/Tags/Brands
+Single-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -33,7 +26,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 35a27fd3-b8e4-4a5b-81f0-e5318f2c0b72
+revision: d12d3e10-0c3c-4df0-8bf5-49c3bf4d0991
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150915T110835Z
+20150925T020650Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-35a27fd3-b8e4-4a5b-81f0-e5318f2c0b72
+d12d3e10-0c3c-4df0-8bf5-49c3bf4d0991
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150922T064252:635785009724052519Z
+20150925T035718:635787502388397780Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {69FDFC37-F6B6-4D21-B8FA-AEBD204F9CA7}
+id: {DBB739D1-3809-4F5E-8F92-875D53D271A3}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T23 Page AB/Tag Data/Related Brands
-parent: {4FA17F7F-6D6B-4A68-9D11-F1F0F3DD3A74}
-name: Related Brands
+path: /sitecore/templates/User Defined/Landmark/Page/T31 Page/Other Data/IpAddress
+parent: {58EEF2E6-54B4-47FA-B46A-74CDDB5A63CD}
+name: IpAddress
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,27 +13,20 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 8
+content-length: 16
 
-Treelist
-----field----
-field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
-name: Source
-key: source
-content-length: 45
-
-/sitecore/content/Global/Landmark/Tags/Brands
+Single-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-200
+100
 ----version----
 language: en
 version: 1
-revision: 860d453a-3a92-45f9-ac48-5147e91e836b
+revision: 91a7a75e-93b5-4a35-8da3-03a984d4d8f2
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150915T110835Z
+20150925T020650Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-860d453a-3a92-45f9-ac48-5147e91e836b
+91a7a75e-93b5-4a35-8da3-03a984d4d8f2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150918T092755:635781652751255825Z
+20150925T035718:635787502387787745Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

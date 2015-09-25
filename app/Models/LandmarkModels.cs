@@ -185,4 +185,11 @@ namespace Landmark.Models
         StyleB,
         StyleCd
     }
+
+    public class RelatedItem
+    {
+        public Item Item { get; set; }
+
+        public int TagCount { get; set; }
+    }
 }

@@ -164,7 +164,7 @@ namespace Landmark.Helper
             foreach (Item brand in brandsItems)
             {
                 var buildingsField = (ReferenceField)brand.Fields["Building"];
-                if (buildingsField != null && buildingsField.TargetItem!=null)
+                if (buildingsField != null && buildingsField.TargetItem != null)
                 {
                     if (buildingsField.TargetItem.ID.Guid == buildingId.Guid)
                     {
@@ -190,7 +190,7 @@ namespace Landmark.Helper
                     if (tagsField.TargetIDs.Any(id => _webDb.GetItem(id).DisplayName == categoryItem.DisplayName && _webDb.GetItem(id).Parent.DisplayName == categoryItem.Parent.DisplayName))
                     {
                         var buildingsField = (ReferenceField)brand.Fields["Building"];
-                        if (buildingsField != null && buildingsField.TargetItem!=null)
+                        if (buildingsField != null && buildingsField.TargetItem != null)
                         {
                             if (!buildingsByCategory.Contains(buildingsField.TargetItem))
                             {
@@ -260,7 +260,7 @@ namespace Landmark.Helper
         public Item GetShopFloor(Item shopItem)
         {
             string floorId;
-            var floorField = GetFloorId(shopItem,out floorId);
+            var floorField = GetFloorId(shopItem, out floorId);
             if (floorField != null)
             {
                 Item floor = Sitecore.Context.Database.GetItem(floorId);
@@ -269,7 +269,7 @@ namespace Landmark.Helper
             return null;
         }
 
-        private static MultilistField GetFloorId(Item shopItem,out string floorId)
+        private static MultilistField GetFloorId(Item shopItem, out string floorId)
         {
             MultilistField floorField = shopItem.Fields["Floor"];
             floorId = floorField.TargetIDs.First().ToString();
@@ -320,16 +320,37 @@ namespace Landmark.Helper
         /// Gets the related articles.
         /// </summary>
         /// <returns>List{Item}.</returns>
-        public List<Item> GetRelatedArticles()
+        public List<RelatedItem> GetRelatedArticles(Item item)
         {
-            List<Item> articles = new List<Item>();
+            List<RelatedItem> relatedArticle = new List<RelatedItem>();
+            var t4Pages = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.NowAtLandmarkItem, ItemGuids.T4PageTemplate);
+            var t27Pages = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.MonthlyExclusivePage, ItemGuids.T27Page);
+            var t23PagesAB = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage,
+                ItemGuids.T23PageTemplate);
+            var t23PageCD = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage,
+                ItemGuids.T23PageCDTemplate);
 
-            List<Item> List2 = new List<Item>();
-            
+            var allArticles = t4Pages.Concat(t27Pages).Concat(t23PagesAB).Concat(t23PageCD).ToList();
 
+            var brandTagsField = item.Fields["Tags"];
+            var brandTags = brandTagsField.ToString().Split('|').ToList();
+            foreach (var article in allArticles)
+            {
+                var articleTagsField = article.Fields["Tags"];
+                var articleTags = articleTagsField.ToString().Split().ToList();
+                var tags = articleTags.Intersect(brandTags).ToList();
 
-
-            return articles;
+                if (tags.Count() != 0)
+                {
+                    RelatedItem relatedItem = new RelatedItem
+                    {
+                        Item = article,
+                        TagCount = tags.Count()
+                    };
+                    relatedArticle.Add(relatedItem);
+                }
+            }
+            return relatedArticle.OrderBy(p => p.TagCount).ToList();
         }
 
         public Item GetCategoryFromItem(string itemid)

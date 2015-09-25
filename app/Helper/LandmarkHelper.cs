@@ -280,6 +280,7 @@ namespace Landmark.Helper
             else
             {
                 var tags = item.Fields["Tags"];
+
             }
             return items;
         }
@@ -355,7 +356,7 @@ namespace Landmark.Helper
                           Uri.SchemeDelimiter +
                           System.Web.HttpContext.Current.Request.Url.Host;
             string language = Sitecore.Context.Language.ToString();
-            return host + "/" +language + System.Web.HttpContext.Current.Request.RawUrl;
+            return host + "/" + language + System.Web.HttpContext.Current.Request.RawUrl;
         }
 
         public static string GetImageItemAbsoluteUrl(ID imageid)
