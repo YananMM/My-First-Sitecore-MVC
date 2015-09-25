@@ -589,12 +589,15 @@ $(document).ready(function() {
             useCSS: false,
             onSliderLoad: function(){
               setAnimation();
+              $slider.find('*[data-bg]').each(function(){
+                $(this).css('background-image', 'url(' +$(this).data('bg') + ')')
+              });
               $(window).lazyLoadXT();
               setTimeout(function(){
                 $(window).trigger('resize')
               }, 100)
             },
-            onSlideAfter: function(){
+            onSlideAfter: function($slide){
               $(window).trigger('scroll');
             }
           });
@@ -1618,9 +1621,18 @@ $(document).ready(function() {
     var gdTextAft = gdTextOri.slice(gdTextBrk);
     gdTextPar.html(gdTextBef + gdTextAft);
   };
-  
+  var gdTextLines = (function() {
+    if ($('.gd-longarticle p').length > 1) {
+      var gdTextSample = $('.gd-longarticle p').eq(0);
+      var gdTextLh     = gdTextSample.css('lineHeight').indexOf('px') > 0 ? (gdTextSample.css('lineHeight').slice(0, -2) / gdTextSample.css('fontSize').slice(0, -2)) : Number(gdTextSample.css('lineHeight'));
+      return gdTextLh * gdSettings.LongVersionContentNumberOfLines;
+    } else {
+      return gdSettings.LongVersionContentNumberOfLines;
+    }
+  })();
+
   $('.gd-longarticle').trunk8({
-    lines: gdSettings.LongVersionContentNumberOfLines + 1,
+    lines: gdTextLines,
     fill: '&hellip; <a id="read-more" href="#">' + gdTextOn + '</a>',
     onTruncate: gdTextFunc
   });
@@ -1801,7 +1813,7 @@ $(document).ready(function() {
     var gdValidator;
     
     gdValidator = new FormValidator('gd-contact-form', [{
-        name: 'gdtitle',
+        name: 'title',
         rules: 'required'
     }, {
         name: 'firstname',
@@ -1855,10 +1867,10 @@ $(document).ready(function() {
           return gdEPselected;
         }
     }, {
-        name: 'postal',
+        name: 'postcode',
         rules: 'max_length[10]'
     }, {
-        name: 'gdcountry',
+        name: 'country',
         rules: 'required',
         depends: function() {
           return gdEPselected;
@@ -1867,23 +1879,23 @@ $(document).ready(function() {
         name: 'interests',
         rules: 'required',
         depends: function() {
-          return $('[name=interests]').val() === '' && $('[name=othersval]').val() === '';
+          return $('[name=interests]').val() === '';
         }
     }, {
         name: 'others',
         rules: 'required',
         depends: function() {
-          return $('[name=othersval]').val() === '1';
+          return $(this).prev('.gd-checkbox').hasClass('active');
         }
     }, {
         name: 'legal',
         rules: 'required'
     }, {
-        name: 'privacy',
+        name: 'optin',
         rules: 'required'
     }, {
         name: 'verifycode',
-        rules: 'required|decimal'
+        rules: 'required|callback_check_captcha'
     }], function(errors, event) {
         if (errors.length > 0) {
           // Show the errors
@@ -1895,6 +1907,21 @@ $(document).ready(function() {
           gdErrorMsg += '</ol>';
           $('.gd-contact-form').append(gdErrorMsg);
         }
+    });
+
+    gdValidator.registerCallback('check_captcha', function(value) {
+      var isMatch = false;
+      $.ajax({
+        async: false,
+        url: $('form[name=gd-contact-form]').data('captchaUrl'),
+        data: {captcha: value},
+        success: function(result){
+          isMatch = result;
+        },
+        dataType: 'json'
+      });
+
+      return isMatch;
     });
     
     
@@ -1931,6 +1958,11 @@ $(document).ready(function() {
         }
       }
     });
+
+    $('[name=others]').change(function(){
+      var val = $(this).val();
+      $(this).prev('.gd-checkbox').data('value', val).trigger('update');
+    })
   }
   
   
@@ -1960,7 +1992,10 @@ $(document).ready(function() {
     gdAllPromos.infinitescroll({
       navSelector  : "div.navigation",
       nextSelector : "div.navigation a:first",
-      itemSelector : ".gd-promo-body>*"
+      itemSelector : ".gd-promo-body>*",
+      loadingText  : "Loading ...",
+      animate      : false
+      
     },function(items){
       gdAllPromos.append(items).isotope( 'appended', items );
       gdAllPromos.imagesLoaded(function() {
@@ -2020,7 +2055,9 @@ $(document).ready(function() {
     gdPromoBox.infinitescroll({
       navSelector  : "div.gd-promo-more",
       nextSelector : "div.gd-promo-more a:first",
-      itemSelector : ".gd-promotion-box-area>*"
+      itemSelector : ".gd-promotion-box-area>*",
+      loadingText  : "Loading ...",
+      animate      : false
     },function(){
       $(window).unbind('.infscr');
       $(window).lazyLoadXT();
@@ -2058,14 +2095,16 @@ $(document).ready(function() {
   /**********************************************************************************************************
    * GD Checkbox control
    **********************************************************************************************************/
-  $('body').on('click', '.gd-checkbox', function() {
+  $('body').on('click update', '.gd-checkbox', function(e) {
     var gdCheckbox   = $(this).closest('.gd-checkbox-wrapper');
     var gdUserChosen = gdCheckbox.find('input[type=hidden]');
     var gdChosen    = [];
-    if (gdCheckbox.data('type') === 'radio') {
-      $(this).addClass('active').siblings().removeClass('active');
-    } else {
-      $(this).toggleClass('active');
+    if (e.type == 'click'){
+      if (gdCheckbox.data('type') === 'radio') {
+        $(this).addClass('active').siblings().removeClass('active');
+      } else {
+        $(this).toggleClass('active');
+      }
     }
     $(this).blur();
     gdCheckbox.find('.active').each(function() {
