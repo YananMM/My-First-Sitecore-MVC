@@ -33,13 +33,13 @@
             j++;
                 }
 
-                @if (item.Fields["Slide Video"] == null)
+                @if (string.IsNullOrEmpty(item.Fields["Slide Video"].Value))
                 {
                     <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Slide Image", item)"></div>
                 }
                 else
                 {
-                    <div class="carousel-image gd-lightbox-link gd-lightbox-video" data-bg="@Html.Sitecore().ImageFieldSrc("Slide Image", item)" data-lightsrc="@item.Fields["Article Video"].Value" data-lighttitle="@item.Fields["Slide Title"].Value" data-lightposter="@LandmarkHelper.ImageFieldSrc("Slide Video Poster",item)"></div>
+                    <div class="carousel-image gd-lightbox-link gd-lightbox-video" data-bg="@Html.Sitecore().ImageFieldSrc("Slide Image", item)" data-lightsrc="@item.Fields["Slide Video"].Value" data-lighttitle="@item.Fields["Slide Title"].Value" data-lightposter="@LandmarkHelper.ImageFieldSrc("Slide Video Poster",item)"></div>
                 }
 
                 @{

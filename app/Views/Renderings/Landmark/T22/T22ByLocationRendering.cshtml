@@ -13,8 +13,8 @@
     ArtTourHelper helper = new ArtTourHelper();
     var buildings = LandmarkHelper.GetBuildings();
     var building = helper.GetCurrentBuilding(Request["building"]);
-    var page = int.Parse(Request["page"] ?? "1");
-    var artpieces = helper.GetArtPieceByBuildingSvgId(building.Fields["Building Svg Id"].Value).Skip((page - 1) * 2).Take(2);
+    var page = Request["page"] ?? "1";
+    var artpieces = helper.GetArtPieceByBuildingSvgId(building.Fields["Building Svg Id"].Value,page);
 }
 <div class="row">
     <div id="gd-list-locations" class="col-md-6">

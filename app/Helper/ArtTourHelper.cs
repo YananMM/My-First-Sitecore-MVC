@@ -124,7 +124,7 @@ namespace Landmark.Helper
         /// <summary>
         /// Gets the art piece json by building.
         /// </summary>
-        public List<Item> GetArtPieceByBuildingSvgId(string id)
+        public List<Item> GetArtPieceByBuildingSvgId(string id,string page=null)
         {
             var buildings = LandmarkHelper.GetBuildings();
             Item buildingItem = buildings.Where(b=>b.Fields["Building Svg Id"].Value==id).ToList().FirstOrDefault();
@@ -132,7 +132,8 @@ namespace Landmark.Helper
             List<Item> artPiecesByBuilding = (from art in allArtPieces
                                               where Sitecore.Context.Database.GetItem(art.Fields["Floor and Building"].Value).Parent.ID.ToString() == buildingItem.ID.ToString()
                                               select art).ToList();
-            return artPiecesByBuilding;
+            int intPage = Int32.Parse(page??"1");
+            return artPiecesByBuilding.Skip((intPage - 1) * 4).Take(4).ToList();
         }
 
         /// <summary>

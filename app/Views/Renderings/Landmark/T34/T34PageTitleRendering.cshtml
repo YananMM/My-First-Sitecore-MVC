@@ -6,7 +6,6 @@
 @model RenderingModel
 @{
     var hotels = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.HotelsPage, ItemGuids.T34Template);
-    hotels.Reverse();
     var hotel1 = hotels[0];
     var hotel2 = hotels[1];
 }

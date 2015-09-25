@@ -9,10 +9,17 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {EC149566-D74F-4E4F-9F2C-A0745E72988E}
 templatekey: T30 Page
 
+----field----
+field: {9BD250FA-ED47-4245-87A3-B0A834FC78E8}
+name: Artist Photo
+key: artist photo
+content-length: 58
+
+<image mediaid="{F2ACB0A4-3EAD-404A-94AF-5A8FCA4E8421}" />
 ----version----
 language: en
 version: 1
-revision: 484f70b2-bccb-41e1-a592-db9e9478f5bb
+revision: 76157c3b-0b47-4985-a2c4-18c7be9c5480
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -36,6 +43,15 @@ content-length: 4
 
 1085
 ----field----
+field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
+name: Artist Description
+key: artist description
+content-length: 371
+
+<p>Born and raised in Hong Kong, of Eurasian heritage, Maria Lobo&rsquo;s art training took her to Italy, Spain, Canada and the USA. </p>
+<p>Maria returned to Hong Kong in 1994, having been part of the San Francisco Hunters Point Artists&rsquo; Community. A decade later, Maria returned to North America and currently resides in San Francisco and exhibit&hellip;</p>
+<br>
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -55,14 +71,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-484f70b2-bccb-41e1-a592-db9e9478f5bb
+76157c3b-0b47-4985-a2c4-18c7be9c5480
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150814T032345:635751194257065538Z
+20150925T073010Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
