@@ -10,7 +10,7 @@
             <div class="gd-pagetitle-heading">
                 <h2>@Html.Sitecore().Field("Page Title")</h2>
               <a href="@LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.MonthlyExclusivePage))" class="gd-link-audio">
-                   @Html.Sitecore().Field("Glossary Value",ItemGuids.SeeAllExclusiveItem) <span class="icomoon-chevron-small-right"></span>
+                   @Html.Sitecore().Field("Glossary Value",SitecoreItems.SeeAllExclusiveItem) <span class="icomoon-chevron-small-right"></span>
                 </a>
             </div>
         </div>
@@ -20,8 +20,8 @@
             var brand = ((MultilistField)Sitecore.Context.Item.Fields["Brand"]).TargetIDs.FirstOrDefault();
             Item brandItem = Sitecore.Context.Database.GetItem(brand);
         }
-        <h5><a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(brand))">@Html.Sitecore().Field("Brand Name",brandItem)</a></h5>
-        <h3>@Html.Sitecore().Field("Article Title")</h3>
+        <h5><a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(brand))">@Html.Sitecore().Field("Brand Title",brandItem)</a></h5>
+        <h3>@Html.Sitecore().Field("Article Headline")</h3>
     </div>
       <div class="gd-exclusive">
 	  
@@ -80,13 +80,13 @@
         <div class="gd-content-details">
           <div class="hidden-xs">
           
-        <h5><a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(brand))">@Html.Sitecore().Field("Brand Name",brandItem)</a></h5>
-            <h3>@Html.Sitecore().Field("Product Name")</h3>
+        <h5><a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(brand))">@Html.Sitecore().Field("Brand Title",brandItem)</a></h5>
+            <h3>@Html.Sitecore().Field("Article Headline")</h3>
           </div>
             @Html.Sitecore().Field("Article Intro")
           <dl class="gd-content-details-tags">
-              <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem):</dt> 
-              <dd>@Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid)</dd>
+              <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem):</dt> 
+              <dd>@Html.Sitecore().Rendering(SitecoreRenderingViewGuids.TagsRenderingViewGuid)</dd>
           </dl>
           <hr>
           <div class="row">
@@ -95,17 +95,17 @@
                             <table>
                                 <tbody>
                                     <tr>
-                                        <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.OpenningHoursItem)</th>
+                                        <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.OpenningHoursItem)</th>
                                         <td>
                                             @Html.Sitecore().Field("Opening Hours",brandItem)
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.ContactItem)</th>
+                                        <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.ContactItem)</th>
                                         <td>@Html.Sitecore().Field("Contact",brandItem)</td>
                                     </tr>
                                     <tr>
-                                        <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.WhereItem) </th>
+                                        <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.WhereItem) </th>
                                         <td>
 
 
@@ -114,7 +114,7 @@
                         var floor = shoppingHelper.GetShopFloor(brandItem);
                     }
                     @Html.Sitecore().Field("Area"),@floor["Floor Title"],@floor.Parent["Building Title"]<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image",floor)" data-lighttitle="@Html.Sitecore().Field("Description")">
-                        <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.FloorPlanItem)
+                        <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.FloorPlanItem)
                                             </a>
                                         </td>
                                     </tr>

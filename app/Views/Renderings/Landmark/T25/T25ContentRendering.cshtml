@@ -21,17 +21,17 @@
                                 <table>
                                     <tbody>
                                         <tr>
-                                            <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.PhoneItem)</th>
+                                            <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.PhoneItem)</th>
                                             <td>@Html.Sitecore().Field("Cover Phone")</td>
                                         </tr>
                                         <tr>
-                                            <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.EmailItem)</th>
+                                            <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.EmailItem)</th>
                                             <td>
                                                 <a href="@Html.Sitecore().Field("Cover Email")">@Html.Sitecore().Field("Cover Email")</a>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.AddressItem)</th>
+                                            <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.AddressItem)</th>
                                             <td>
                                                 @Html.Sitecore().Field("Cover Address")
                                             </td>
@@ -43,7 +43,7 @@
                                 <table>
                                     <tbody>
                                         <tr>
-                                            <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem)</th>
+                                            <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem)</th>
                                             <td>
                                                 @foreach (var item in tagsTrees)
                                                 {<a href="javascript:;">

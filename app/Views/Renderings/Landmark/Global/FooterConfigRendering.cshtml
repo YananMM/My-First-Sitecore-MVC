@@ -2,18 +2,18 @@
 @using Landmark.Helper
 @using Landmark.Classes
 @{
-    string src = Html.Sitecore().ImageFieldSrc("Hongkong Land Image", ItemGuids.LandmarkConfigItem);
+    string src = Html.Sitecore().ImageFieldSrc("Hongkong Land Image", SitecoreItems.LandmarkConfigItem);
 }
 <div class="container">
     <div class="row">
         <div class="footer-logo">
             @*<a href=""><img data-src="/files/landmark/images/logo-footer.png" alt="HongKong Land"></a>*@
-            @Html.Sitecore().Field("Hongkong Land Link", ItemGuids.LandmarkConfigItem, new { text = "<img data-src='" + src + "' alt='HongKong Land'>" })
+            @Html.Sitecore().Field("Hongkong Land Link", SitecoreItems.LandmarkConfigItem, new { text = "<img data-src='" + src + "' alt='HongKong Land'>" })
         </div>
         <div class="footer-copyright">
-            @Html.Sitecore().Field("Copyright Left Text", ItemGuids.LandmarkConfigItem) 
+            @Html.Sitecore().Field("Copyright Left Text", SitecoreItems.LandmarkConfigItem) 
             @DateTime.Now.Year 
-            @Html.Sitecore().Field("Copyright Right Text", ItemGuids.LandmarkConfigItem)
+            @Html.Sitecore().Field("Copyright Right Text", SitecoreItems.LandmarkConfigItem)
             <a href="#">Legal &amp; Privacy</a>
         </div>
     </div>

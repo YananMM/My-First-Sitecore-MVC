@@ -1,0 +1,24 @@
+﻿@using Landmark.Classes
+@using Landmark.Helper
+@model RenderingModel
+
+<div  class="col-sm-12 gd-nd-details">
+    @Html.Sitecore().Field("Article Content")
+    @{
+        var images = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.ImageTextObjectTemplate);
+    }
+
+    @if (images.Count > 0)
+    {
+        <div class="row">
+            @foreach (var image in images)
+            {
+                string src = Html.Sitecore().ImageFieldSrc("Image", image);
+                <div class="col-sm-6"><img data-src="@src">
+                </div>
+            }
+        </div>
+    }
+    @Html.Sitecore().Field("Bullets and Tables")
+</div>
+            

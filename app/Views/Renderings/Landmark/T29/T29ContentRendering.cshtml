@@ -44,13 +44,13 @@
                                 <div>
                                     <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
                                         <span class="icomoon-sound-alt"></span>
-                                        @Html.Sitecore().Field("Glossary Value", ItemGuids.ListenToCommentaryItem)
+                                        @Html.Sitecore().Field("Glossary Value", SitecoreItems.ListenToCommentaryItem)
                                     </a>
                                 </div>
                                 <div>
                                     <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary Alt", Sitecore.Context.Item)">
                                         <span class="icomoon-sound-alt"></span>
-                                        @Html.Sitecore().Field("Glossary Value", ItemGuids.ListenToCommentaryAltItem)
+                                        @Html.Sitecore().Field("Glossary Value", SitecoreItems.ListenToCommentaryAltItem)
                                     </a>
                                 </div>
                             </div>
@@ -60,20 +60,20 @@
                             <div class="col-sm-4 text-right">
                                 <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
                                     <span class="icomoon-sound-alt"></span>
-                                    @Html.Sitecore().Field("Glossary Value", ItemGuids.ListenToCommentaryItem)
+                                    @Html.Sitecore().Field("Glossary Value", SitecoreItems.ListenToCommentaryItem)
                                 </a>
                             </div>
                         }
                     </div>
                     <div class="gd-artplace-details row">
-                        <div class="col-sm-3 col-md-2  gd-artplace-location">@Html.Sitecore().Field("Glossary Value", ItemGuids.LocationItem)</div>
+                        <div class="col-sm-3 col-md-2  gd-artplace-location">@Html.Sitecore().Field("Glossary Value", SitecoreItems.LocationItem)</div>
                         @{
                             var floor = helper.GetFloor(Sitecore.Context.Item);
                         }
                         <div class="col-sm-9 col-md-10 gd-artplace-location-info">
                             @floor.Fields["Floor Title"] @floor.Parent.Fields["Building Title"]<br>
                             <a href="javascript:;" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image",floor)" data-lighttitle="PUT LIGHTBOX TITLE HERE">
-                                <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.FloorPlanItem)
+                                <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.FloorPlanItem)
                             </a>
                         </div>
                     </div>

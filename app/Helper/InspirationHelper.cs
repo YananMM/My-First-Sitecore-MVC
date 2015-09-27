@@ -71,5 +71,29 @@ namespace Landmark.Helper
             }
             return categories;
         }
+
+        public string GetTagsFilter(Item item)
+        {
+            string tagsClass = string.Empty;
+            var tagsField = (MultilistField) item.Fields["Tags"];
+
+            if (tagsField != null && tagsField.TargetIDs.Count() > 0)
+            {
+                foreach (var tag in tagsField.TargetIDs)
+                {
+                    tagsClass += " gdf-" + tag.ToString().ToLower();
+                }
+            }
+            
+            return tagsClass;
+        }
+
+        public string GetAlphabet(ID id)
+        {
+            string alphabetFilter = string.Empty;
+            Item brand = _webDb.GetItem(id);
+            alphabetFilter += "gdf-" + brand.Fields["Brand Title"].Value.ToLower()[0];
+            return alphabetFilter;
+        }
     }
 }

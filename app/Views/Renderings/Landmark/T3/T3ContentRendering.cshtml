@@ -31,14 +31,14 @@
                 <div class="col-md-12 text-center">
                     <p>@LandmarkHelper.ToValidDateTime(date).ToString("MMM dd,yyyy", CultureInfo.InvariantCulture)</p>
                     <p>@Html.Sitecore().Field("Article Intro", latestItem)</p>
-                    <button class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Glossary Value", ItemGuids.DiscoverMoreItem)</button>
+                    <button class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverMoreItem)</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="gd-promotion">
         <div class="gd-promo-heading">
-            <h3>@Html.Sitecore().Field("Glossary Value", ItemGuids.AlsoHappenInLandmarkItem)</h3>
+            <h3>@Html.Sitecore().Field("Glossary Value", SitecoreItems.AlsoHappenInLandmarkItem)</h3>
         </div>
         @{
             var articles = helper.GetTheRestArticles();

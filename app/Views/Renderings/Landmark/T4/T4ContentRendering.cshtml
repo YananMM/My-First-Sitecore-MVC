@@ -4,18 +4,7 @@
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @model RenderingModel
-@{
-    var fromDateField = (DateField)Sitecore.Context.Item.Fields["Event From Date"];
-    var fromDate = fromDateField.DateTime.ToString("d MMM yyyy", CultureInfo.InvariantCulture);
-    var toDateField = (DateField)Sitecore.Context.Item.Fields["Event To Date"];
-    var toDate = toDateField.DateTime.ToString("d MMM yyyy", CultureInfo.InvariantCulture);
-    var fromDateTimeField = (DateField)Sitecore.Context.Item.Fields["Event From Time"];
-    var fromDateTime = LandmarkHelper.ToValidDateTime(fromDateTimeField).ToString("hh:mmtt", CultureInfo.InvariantCulture);
-    var toDateTimeField = (DateField)Sitecore.Context.Item.Fields["Event To Time"];
-    var toDateTime = LandmarkHelper.ToValidDateTime(toDateTimeField).ToString("hh:mmtt", CultureInfo.InvariantCulture);
-    var floor = ((ReferenceField)Sitecore.Context.Item.Fields["Event Floor"]).TargetItem;
-    var building = floor.Parent;
-}
+
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
@@ -31,56 +20,14 @@
 
         <div class="gd-nd-slider-text">@Html.Sitecore().Field("Article Sub Headline")</div>
         <div class="row gd-nd-details-area">
-            <div class="col-sm-4">
-                <div class="table-responsive">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.DateTimeItem)</th>
-                                <td>@fromDate - @toDate @fromDateTime-@toDateTime</td>
-                            </tr>
-                            <tr>
-                                <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.VenueItem)</th>
-                                <td>@Html.Sitecore().Field("Floor Title", floor) @Html.Sitecore().Field("Building Title", building)</td>
-                            </tr>
-                            <tr>
-                                <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.EnquiryItem)</th>
-                                <td>@Html.Sitecore().Field("Event Enquiry")</td>
-                            </tr>
-                            <tr>
-                                <th>@Html.Sitecore().Field("Glossary Value", ItemGuids.WebsiteItem)</th>
-                                <td>@Html.Sitecore().Field("Event Website")</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <dl class="gd-content-details-tags">
-                    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.TagsItem)</dt>
-                    <dd>
-                        @Html.Sitecore().Rendering(ItemGuids.TagsRenderingViewGuid)
-                    </dd>
-                </dl>
-
-            </div>
-            <div class="col-sm-8 gd-nd-details">
-                @Html.Sitecore().Field("Article Content")
-                @{
-                    var images = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.ImageTextObjectTemplate);
-                }
-
-                @if (images.Count > 0)
-                {
-                    <div class="row">
-                        @foreach (var image in images)
-                        {
-                            string src = Html.Sitecore().ImageFieldSrc("Image", image);
-                            <div class="col-sm-6"><img data-src="@src"></div>
-                        }
-                    </div>
-                }
-                @Html.Sitecore().Field("Bullets and Tables")
-            </div>
+        @if (((ReferenceField) Sitecore.Context.Item.Fields["Article Type"]).TargetItem.ID.ToString() == ItemGuids.EventTypeArticle)
+        {
+            @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T4DetailsRendering)
+        }
+        else
+        {
+          @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T4_2DetailsRendering)
+        }
         </div>
     </div>
     @{
@@ -92,7 +39,7 @@
     {
         <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
             <div class="carousel-heading">
-                <h2>@Html.Sitecore().Field("Glossary Value", ItemGuids.YouMayAlsoLikeItem)</h2>
+                <h2>@Html.Sitecore().Field("Glossary Value", SitecoreItems.YouMayAlsoLikeItem)</h2>
             </div>
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">

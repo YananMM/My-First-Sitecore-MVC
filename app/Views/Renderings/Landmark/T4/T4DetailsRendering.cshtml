@@ -1,0 +1,68 @@
+﻿@using System.Globalization
+@using Landmark.Classes
+@using Landmark.Helper
+@using Sitecore.Data.Fields
+@model RenderingModel
+@{
+    var fromDateField = (DateField)Sitecore.Context.Item.Fields["Event From Date"];
+    var fromDate = fromDateField.DateTime.ToString("d MMM yyyy", CultureInfo.InvariantCulture);
+    var toDateField = (DateField)Sitecore.Context.Item.Fields["Event To Date"];
+    var toDate = toDateField.DateTime.ToString("d MMM yyyy", CultureInfo.InvariantCulture);
+    var fromDateTimeField = (DateField)Sitecore.Context.Item.Fields["Event From Time"];
+    var fromDateTime = LandmarkHelper.ToValidDateTime(fromDateTimeField).ToString("hh:mmtt", CultureInfo.InvariantCulture);
+    var toDateTimeField = (DateField)Sitecore.Context.Item.Fields["Event To Time"];
+    var toDateTime = LandmarkHelper.ToValidDateTime(toDateTimeField).ToString("hh:mmtt", CultureInfo.InvariantCulture);
+    var floor = ((ReferenceField)Sitecore.Context.Item.Fields["Event Floor"]).TargetItem;
+    var building = floor.Parent;
+}
+<div class="col-sm-4">
+                <div class="table-responsive">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.DateTimeItem)</th>
+                            <td>@fromDate - @toDate @fromDateTime-@toDateTime</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.VenueItem)</th>
+                            <td>@Html.Sitecore().Field("Floor Title", floor) @Html.Sitecore().Field("Building Title", building)</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.EnquiryItem)</th>
+                            <td>@Html.Sitecore().Field("Event Enquiry")</td>
+                        </tr>
+                        <tr>
+                            <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.WebsiteItem)</th>
+                            <td>@Html.Sitecore().Field("Event Website")</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <dl class="gd-content-details-tags">
+                    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem)</dt>
+                    <dd>
+                        @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.TagsRenderingViewGuid)
+                    </dd>
+                </dl>
+
+            </div>
+            <div class="col-sm-8 gd-nd-details">
+                @Html.Sitecore().Field("Article Content")
+                @{
+                    var images = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.ImageTextObjectTemplate);
+                }
+
+                @if (images.Count > 0)
+                {
+                    <div class="row">
+                        @foreach (var image in images)
+                        {
+                            string src = Html.Sitecore().ImageFieldSrc("Image", image);
+                            <div class="col-sm-6"><img data-src="@src">
+                            </div>
+                        }
+                    </div>
+                }
+                @Html.Sitecore().Field("Bullets and Tables")
+            </div>

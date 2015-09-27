@@ -18,7 +18,7 @@
         <div class="gd-pagetitle-heading">
             <h2>@parent["Page Title"].ToUpper()</h2>
         </div>
-        @Html.Sitecore().Rendering(ItemGuids.T36CategoryTypeViewGuid)
+        @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T36CategoryTypeViewGuid)
     </div>
     <div class="gd-magazine-info">
         <div class="row">
@@ -101,5 +101,5 @@
             }
         </div>
     </div>
-    <div class="gd-promo-more"><a href="?type=@Request["type"]&page=2">@Html.Sitecore().Field("Glossary Value", ItemGuids.SeeMoreItem) +</a></div>
+    <div class="gd-promo-more"><a href="?type=@Request["type"]&page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem) +</a></div>
 </div>

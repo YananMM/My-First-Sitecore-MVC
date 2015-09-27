@@ -9,10 +9,17 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {3E0F5E19-4593-48D5-913E-8F5231119D02}
 templatekey: T24 Page
 
+----field----
+field: {36B41602-6322-4E30-9E08-85BB3F6F0693}
+name: Service Image
+key: service image
+content-length: 58
+
+<image mediaid="{E8A33307-5910-4353-8345-660F4BDAE841}" />
 ----version----
 language: en
 version: 1
-revision: 094a9422-c470-467d-8a2c-bef0ac19b911
+revision: 5ddd93bd-41f7-4dae-8738-28f3f6f3feba
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -29,6 +36,27 @@ content-length: 38
 
 {FCEE6FFF-F78D-4AF3-A04E-D26A11DD123D}
 ----field----
+field: {DFF5288B-8FFB-47AE-B6F4-50BEEFA40931}
+name: Service Title
+key: service title
+content-length: 75
+
+Headline: tique in in purus. Morbi vestibulum sodales lorem ac ullamcorper.
+----field----
+field: {2BB28A47-AC7C-4226-B782-7D49F761541E}
+name: Service Content
+key: service content
+content-length: 596
+
+<p>Shopping and dining in LANDMARK is even more pleasurable with our valet parking service. Simply drive up to the Valet Parking entrance located on Queen's Road Central, next to The Landmark Mandarin Oriental, and our parking attendants will take care of the rest.
+</p>
+<p>The service is available daily from noon until midnight for a charge of HK$200 for the first two hours, and HK$50 per hour thereafter.
+</p>
+<p>Enjoy the ultimate in luxury and the ultimate in service in LANDMARK!
+</p>
+<p><a href="~/link.aspx?_id=4F4D0D9BFE4D4BFAA7BC2F0FE98DFAA1&amp;_z=z">Legal Privacy</a> apply.</p>
+<br>
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -41,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-094a9422-c470-467d-8a2c-bef0ac19b911
+5ddd93bd-41f7-4dae-8738-28f3f6f3feba
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150907T040517Z
+20150927T143602Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

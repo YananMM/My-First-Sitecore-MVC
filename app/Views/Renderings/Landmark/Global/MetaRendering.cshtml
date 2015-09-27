@@ -5,7 +5,7 @@
 @using Sitecore.Links
 @using Sitecore.Shell.Applications.ContentEditor
 
-@Html.Sitecore().Field("Adobe Header Loader File", ItemGuids.LandmarkConfigItem)
+@Html.Sitecore().Field("Adobe Header Loader File", SitecoreItems.LandmarkConfigItem)
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -37,7 +37,7 @@
 }
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@ItemGuids.LandmarkConfigItem.Fields["Site"].Value">
+<meta name="twitter:site" content="@SitecoreItems.LandmarkConfigItem.Fields["Site"].Value">
 <meta name="twitter:title" content="@Sitecore.Context.Item.Fields["Social Share Title"].Value">
 <meta name="twitter:description" content="@Sitecore.Context.Item.Fields["Social Share Description"].Value">
 <meta name="twitter:image" content="@firstImageUrl">

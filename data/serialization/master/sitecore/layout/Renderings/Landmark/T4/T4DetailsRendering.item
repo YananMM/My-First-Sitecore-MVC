@@ -1,32 +1,25 @@
 ----item----
 version: 1
-id: {87411C38-6F62-4AAB-9119-465B82289CF5}
+id: {216109CB-A984-47AD-BC7C-6BD563C0099C}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T4 Page/Article Data/Article Content
-parent: {B7877A12-1F8A-4D8F-A76B-C7190F78FF16}
-name: Article Content
+path: /sitecore/layout/Renderings/Landmark/T4/T4DetailsRendering
+parent: {A6C698BC-58E7-4522-A7BD-FBF69CE8B7C1}
+name: T4DetailsRendering
 master: {00000000-0000-0000-0000-000000000000}
-template: {455A3E98-A627-4B40-8035-E683A0331AC7}
-templatekey: Template field
+template: {99F8905D-4A87-4EB8-9F8B-A9BEBFB3ADD6}
+templatekey: View rendering
 
 ----field----
-field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
-name: Type
-key: type
-content-length: 9
+field: {51B435BC-F7B9-478A-9C51-52916AF96FF5}
+name: Path
+key: path
+content-length: 55
 
-Rich Text
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 3
-
-200
+/Views/Renderings/Landmark/T4/T4DetailsRendering.cshtml
 ----version----
 language: en
 version: 1
-revision: a19177f2-fc30-4b65-9378-68ffcbfd9eac
+revision: 5e22ef83-6316-4dd1-9774-dcc3c458b6b4
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +27,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150824T070110Z
+20150927T123008Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-a19177f2-fc30-4b65-9378-68ffcbfd9eac
+5e22ef83-6316-4dd1-9774-dcc3c458b6b4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150927T123354Z
+20150927T123019Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

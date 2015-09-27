@@ -10,33 +10,6 @@ namespace Landmark.Classes
 {
     public abstract class ItemGuids
     {
-        //rendering guids
-        public static readonly String GlossaryRenderingViewGuid = "{3825AF49-B359-4B8D-85CC-809873CB0FFD}";
-        public static readonly String ScriptRenderingViewGuid = "{85E63E0F-B889-4A32-9EAD-DDFE06BC3573}";
-        public static readonly String FooterRenderingViewGuid = "{CE360129-0EE2-47FC-A1D9-3A28105B1249}";
-        public static readonly String T1PanelNavRenderingViewGuid = "{026C458F-E4BC-490B-A097-DBE0C6DA9459}";
-        public static readonly String MetaRenderingViewGuid = "{E33EA20C-C797-4298-8524-543AC8F1BD78}";
-        public static readonly String HeaderRenderingViewGuid = "{38268C3C-71E7-4775-8E91-FB4DF4667C34}";
-        public static readonly String TagsRenderingViewGuid = "{5E1A037B-CB78-4FFC-8758-7E66DC14EADC}";
-        public static readonly String FooterNavRenderingViewGuid = "{5BBD6426-6C9C-4E73-BD1F-34BC6D63961E}";
-        public static readonly String FooterConfigRenderingViewGuid = "{18C07F19-B608-411E-81E2-FDADAE97176D}";
-        public static readonly String FooterSocialMediaRenderingGuid = "{5359BCC1-D4EB-4D7B-BBD8-11D1597BAB92}";
-        public static readonly String NavigationRenderingViewGuid = "{C72D39E8-5FD2-40F6-B815-83DAD5E92CC3}";
-        public static readonly String MobileNavigationRenderingViewGuid = "{61EC411E-0F20-4B97-A0D4-A880A4ACD3E5}";
-        //public static readonly String T11BreadcrymbRenderingViewGuid = "{C85A5336-5D9F-47A0-ADBD-DA8F6975E51B}";
-        public static readonly String ByBrandsRenderingViewGuid = "{0B02D3EC-0648-4B99-BEB4-8575C48FAE64}";
-        public static readonly String ByBuildingsRenderingViewGuid = "{B08E278B-BF3C-4994-A65D-D764193C6447}";
-        public static readonly String T13SideBarRenderingViewGuid = "{A88DF21E-E1DB-408B-9BC5-14F36C83513D}";
-        public static readonly String T13RelatedCategoryViewGuid = "{E12C109C-E610-4CB3-BA45-003C92C3FF96}";
-        public static readonly String T36CategoryTypeViewGuid = "{4AA1A1EF-AA1D-4520-B860-92DAD13AF05B}";
-        //public static readonly String T14ShopDataRenderingViewGuid = "{CCD0CC2A-56DD-4990-9395-560FA0F62D7B}";
-        //public static readonly String T14TagsRenderingViewGuid = "{303EA462-99C6-447B-B3AA-C4F4F0441549}";
-        public static readonly String T14AlsoOnFloorRenderingViewGuid = "{E4C9F730-0F32-481A-A631-814E9DD01CF0}";
-        public static readonly String T14YouMayAlsoLikeRenderingViewGuid = "{3D3C605D-3A95-4D71-8206-C403D66EB91A}";
-        public static readonly String T23AbCommonRendering = "{50BAA888-14DE-49EE-ADEE-F2C50EE0F41C}";
-        public static readonly String T13MobileSideBarRendering = "{B89D1207-4BB5-44E1-ACF6-FA2803FE5B06}";
-
-
         public static readonly String TextObject = "{55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}";
         public static readonly String RelatedItemViewGuid = "{19B03C96-4203-4877-8AC0-2D03E76DA38B}";
         public static readonly String ValetParkingPage = "{819779A7-6864-451A-83DA-703DF00AD09D}";
@@ -121,76 +94,6 @@ namespace Landmark.Classes
         public static readonly String Tab = "{8D48118F-0385-48B6-A944-F615A3A610BC}";
 
         public static readonly String ContactSuccessPage = "{C6045FFE-5883-49F7-AC6E-653919640DDB}";
-
-        //item 
-        public static readonly Item LandmarkHomeItem = Sitecore.Context.Database.GetItem("{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}");
-        public static readonly Item SearchPlaceHolderItem = Sitecore.Context.Database.GetItem("{ED07CD50-68B7-4E7A-BE15-F161360F4E07}");
-        public static readonly Item LandmarkConfigItem = Sitecore.Context.Database.GetItem("{EE7EA867-0191-406D-8B84-A28B236CD725}");
-        public static readonly Item FooterNavigationItem = Sitecore.Context.Database.GetItem("{5B9F3F5E-A640-4D05-8CF6-3A4591751CA9}");
-        public static readonly Item ScrollToBeginGuidItem = Sitecore.Context.Database.GetItem("{6EA65B2A-282C-412A-8033-536E855F630F}");
-        public static readonly Item TopGuidItem = Sitecore.Context.Database.GetItem("{07F2749E-EAF3-4ADB-901F-E0454763D0DF}");
-        public static readonly Item TraditionalChineseGuidItem = Sitecore.Context.Database.GetItem("{28645F0A-B081-4EB2-912D-691E017B8836}");
-        public static readonly Item SimplifiedChineseGuidItem = Sitecore.Context.Database.GetItem("{2FEA334B-684F-40E0-99A4-3CD3E4C704F3}");
-        public static readonly Item ShareThisGuidItem = Sitecore.Context.Database.GetItem("{A54A3CE6-2BEC-47CF-A63F-4A2F964C6320}");
-        public static readonly Item SeeAllBrandsGuidItem = Sitecore.Context.Database.GetItem("{D380FDA5-C54A-48D8-B246-21571AC525B7}");
-        public static readonly Item ListingGuidItem = Sitecore.Context.Database.GetItem("{DAEE85AD-9210-48C8-8E29-F7CADB157ECC}");
-        public static readonly Item AlsoInterestedInGuidItem = Sitecore.Context.Database.GetItem("{A6F6E24F-8844-4588-9FE2-0765E5851963}");
-        public static readonly Item AllBrandsGuidItem = Sitecore.Context.Database.GetItem("{4E305EBF-9B1D-4EEA-AAA7-59CD1B3DD3D5}");
-        public static readonly Item ByBrandsGuidItem = Sitecore.Context.Database.GetItem("{23C8C729-14B1-45B9-9557-404516153453}");
-        public static readonly Item ByBuidingsGuidItem = Sitecore.Context.Database.GetItem("{7B87FE4A-D9B2-4451-BB6D-441B01B1462A}");
-        public static readonly Item GoGuidItem = Sitecore.Context.Database.GetItem("{EB7EDF9B-07D2-4CD9-8B21-AF7A15800F98}");
-        public static readonly Item GoToGuidItem = Sitecore.Context.Database.GetItem("{6A742FAE-6615-4BE5-A8A9-4471DFDC60E5}");
-        public static readonly Item SeeAlsoGuidItem = Sitecore.Context.Database.GetItem("{E9CD2E74-E53B-4711-9DB6-88D3DEFA14FC}");
-        public static readonly Item ContactItem = Sitecore.Context.Database.GetItem("{D6F1BBEB-2483-44F1-A547-68D6AE8E2A51}");
-        public static readonly Item WhereItem = Sitecore.Context.Database.GetItem("{C01AD804-C7C9-4791-8CFC-DA35B6D09179}");
-        public static readonly Item AlsoOnThisFloorItem = Sitecore.Context.Database.GetItem("{6C2FE71F-0F24-49BD-A345-7C98BDE4B249}");
-        public static readonly Item YouMayAlsoLikeItem = Sitecore.Context.Database.GetItem("{23815E63-F3F5-48BE-BBEA-5CA6D8CCFECA}");
-        public static readonly Item TagsItem = Sitecore.Context.Database.GetItem("{B05FA79E-B0AC-4D78-9175-ADA8305B5B5B}");
-        public static readonly Item FloorPlanItem = Sitecore.Context.Database.GetItem("{B6888C19-B10C-4662-8E41-7AC2CCE8419A}");
-        public static readonly Item ByCategoryGuidItem = Sitecore.Context.Database.GetItem("{E7E0A523-FFB0-4842-9DD0-7047B1F313B9}");
-        public static readonly Item RealatedArticlesItem = Sitecore.Context.Database.GetItem("{70032C39-DB3A-42F1-91FC-9D85BE84A3F7}");
-        public static readonly Item MobileAudioGuideItem = Sitecore.Context.Database.GetItem("{DD2597D1-42CF-4A71-BD93-8A05851B91B9}");
-        public static readonly Item ListenToCommentaryItem = Sitecore.Context.Database.GetItem("{55FAB28E-6000-4382-833A-4A29C8CA38B0}");
-        public static readonly Item LocationItem = Sitecore.Context.Database.GetItem("{944602F7-94FA-4927-8D72-65326C2F9C32}");
-        public static readonly Item AlsoInItem = Sitecore.Context.Database.GetItem("{0F082781-8037-4643-96F6-88104B58539A}");
-        public static readonly Item ByThisArtistItem = Sitecore.Context.Database.GetItem("{B8DBA1C5-3950-4A13-A460-7C7A1795B682}");
-        public static readonly Item ViewByItem = Sitecore.Context.Database.GetItem("{79222D4A-7956-4441-9D67-B080494D69BC}");
-        public static readonly Item ArtistItem = Sitecore.Context.Database.GetItem("{66B7043C-69C4-4212-A719-F4CE6EBCCB19}");
-        public static readonly Item MoreItem = Sitecore.Context.Database.GetItem("{30811B28-1ECB-4137-B8BF-B962FF16D7E7}");
-        public static readonly Item OfficialWebsiteItem = Sitecore.Context.Database.GetItem("{86B65A99-F8BE-42C1-A50F-A346ACFA9A6D}");
-        public static readonly Item OpenningHoursItem = Sitecore.Context.Database.GetItem("{86EDB6E7-348D-4F43-AE03-3F0EA2F937AC}");
-        public static readonly Item DateTimeItem = Sitecore.Context.Database.GetItem("{6DABDA46-E90A-4BEA-AF61-1B9A385C31BF}");
-        public static readonly Item EnquiryItem = Sitecore.Context.Database.GetItem("{C236AA00-30F1-43BB-A426-C477DE3F264D}");
-        public static readonly Item VenueItem = Sitecore.Context.Database.GetItem("{19EF3D69-3DDC-4A84-A1F7-F93E2098929D}");
-        public static readonly Item WebsiteItem = Sitecore.Context.Database.GetItem("{AEC15D0C-B92E-47D7-991C-EE96110E609A}");
-        public static readonly Item DiscoverMoreItem = Sitecore.Context.Database.GetItem("{30D7A7AF-BF8C-4A89-B226-C621E44E1EFB}");
-        public static readonly Item AlsoHappenInLandmarkItem = Sitecore.Context.Database.GetItem("{F00CB9D5-2A9A-4C42-860A-4B0476B41C6F}");
-        public static readonly Item SearchFilterTypes = Sitecore.Context.Database.GetItem("{DBA5A7CD-C7AF-400D-B892-FF39BF474653}");
-        public static readonly Item FilterByItem = Sitecore.Context.Database.GetItem("{C477E1B6-E381-43A7-9B3F-E5A6F15D9A74}");
-        public static readonly Item PhoneItem = Sitecore.Context.Database.GetItem("{4AAF25F5-0A1C-45AA-B81D-B27AD46F37C2}");
-        public static readonly Item StoreDetailsItem = Sitecore.Context.Database.GetItem("{58C95FD5-61B2-4DAE-9C5B-6BAE61A2D98D}");
-        public static readonly Item AddressItem = Sitecore.Context.Database.GetItem("{86E8B0C2-6C91-45D9-949C-DE5C1CB64ED3}");
-        public static readonly Item FindByBrandItem = Sitecore.Context.Database.GetItem("{88028182-7209-4EBB-8CBA-1E6BBE40FCCF}");
-        public static readonly Item EmailItem = Sitecore.Context.Database.GetItem("{E3B50ED3-8CDC-41DA-A5D4-176A55CBA63A}");
-        public static readonly Item ShowAllItem = Sitecore.Context.Database.GetItem("{2F9D72B2-FF66-4302-8ABB-BB5F7C697FE5}");
-        public static readonly Item SeeAllExclusiveItem = Sitecore.Context.Database.GetItem("{4F5C3F3D-9AB5-424B-9C78-41DC7AEECB8F}");
-        public static readonly Item SeeAllExclusive = Sitecore.Context.Database.GetItem("{2283A3E4-45AE-4164-8C82-6D9F48D0602C}");
-        public static readonly Item ReadMoreItem = Sitecore.Context.Database.GetItem("{738E90D0-A3B0-46A3-8DF4-6FE1825B51D2}");
-        public static readonly Item AllTextItem = Sitecore.Context.Database.GetItem("{0E954D78-0836-46D0-938A-29E235F975ED}");
-        public static readonly Item ShareItem = Sitecore.Context.Database.GetItem("{2224057F-0DA3-4D7E-9089-99CB8CC77C0F}");
-        public static readonly Item LearnMoreItem = Sitecore.Context.Database.GetItem("{3ADB531C-1F86-4963-859D-9525EE4D833A}");
-        public static readonly Item ViewMapItem = Sitecore.Context.Database.GetItem("{615AE910-37B4-44C8-B550-32DAA8CCF66B}");
-        public static readonly Item FaxItem = Sitecore.Context.Database.GetItem("{4C157DD6-6AF2-4112-B610-AFFC84C6CCF1}");
-        public static readonly Item TelephoneItem = Sitecore.Context.Database.GetItem("{0B3DA006-CBA6-44CA-9421-88965D431F2F}");
-        public static readonly Item DiscoverLandmarkStoriesItem = Sitecore.Context.Database.GetItem("{5731F621-01CE-4596-9DA3-55A231D0D21F}");
-        public static readonly Item AllItem = Sitecore.Context.Database.GetItem("{4ACF0FF2-331F-47A8-994A-A3D709A2524F}");
-        public static readonly Item SortAndGoToItem = Sitecore.Context.Database.GetItem("{A67F7267-0402-4356-9EDF-5F1016C67F15}");
-        public static readonly Item SeeMoreItem = Sitecore.Context.Database.GetItem("{0BA79670-6D57-473C-B495-1A01DB6CA2CA}");
-
-        public static readonly Item MagezineItem =
-            Sitecore.Context.Database.GetItem("{8B359693-D433-4F44-98F8-9CEE5FA9B72F}");
-
-        public static readonly Item ListenToCommentaryAltItem = Sitecore.Context.Database.GetItem("{36C61E1D-7652-4DD4-8CCA-DDF1067D89D3}");
-
+        public static readonly String EventTypeArticle = "{0799CC76-D623-49FD-8025-8E9358A13B62}";
     }
 }

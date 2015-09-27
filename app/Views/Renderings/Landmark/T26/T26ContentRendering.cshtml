@@ -4,9 +4,9 @@
 @using Sitecore.Data.Items
 @using Sitecore.Links
 @{
-    InspirationHelper helper = new InspirationHelper();
-    List<Item> articleObjects = helper.GetMonthlyExclusives(Request["category"],Request["brand"]).Where(item =>!((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
-    List<Item> articleDetailObjects = helper.GetMonthlyExclusives(Request["category"],Request["brand"]).Where(item=>((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
+    InspirationHelper inspirationHelper = new InspirationHelper();
+    List<Item> articleObjects = inspirationHelper.GetMonthlyExclusives(Request["category"],Request["brand"]).Where(item =>!((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
+    List<Item> articleDetailObjects = inspirationHelper.GetMonthlyExclusives(Request["category"],Request["brand"]).Where(item=>((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
     string[] alphabetsStrings = new[] {"a", "b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
 }
 
@@ -24,14 +24,14 @@
     <div class="gd-promotion">
     <div class="gd-promo-filter">
         <div class="gd-promo-brands">
-        <a class="btn gd-promo-brands-btn">@Html.Sitecore().Field("Glossary Value",ItemGuids.FindByBrandItem)</a>
+        <a class="btn gd-promo-brands-btn">@Html.Sitecore().Field("Glossary Value",SitecoreItems.FindByBrandItem)</a>
         <div class="gd-promo-brands-area">
             <ul >
                 @for (int i = 0; i<alphabetsStrings.Length; i++)
                 {
-                    if (helper.IfBrandsAlphabetValid(alphabetsStrings[i]))
+                    if (inspirationHelper.IfBrandsAlphabetValid(alphabetsStrings[i]))
                     {
-                        <li><a href="#@alphabetsStrings[i].ToLower()">@alphabetsStrings[i].ToUpper()</a></li>
+                        <li><a href="javascript:;" data-filter="gdfb-@alphabetsStrings[i].ToLower()">@alphabetsStrings[i].ToUpper()</a></li>
                     }
                     else
                     {
@@ -40,14 +40,14 @@
                 }
 
             </ul>
-            <a href="#" class="gd-promo-brands-all">@Html.Sitecore().Field("Glossary Value",ItemGuids.ShowAllItem)</a>
+            <a href="#" class="gd-promo-brands-all">@Html.Sitecore().Field("Glossary Value",SitecoreItems.ShowAllItem)</a>
         </div>
         </div>
         <ul>
-            <li class="active"><a href="#">@Html.Sitecore().Field("Glossary Value", ItemGuids.AllTextItem)</a></li>
-            @foreach (var category in helper.GetCategories())
+            <li class="active"><a href="#">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AllTextItem)</a></li>
+            @foreach (var category in inspirationHelper.GetCategories())
             {
-                <li><a href="#">@Html.Sitecore().Field("Tag Name",category)</a></li>
+                <li><a href="#" data-filter="gdf-@category.ID.ToString().ToLower()">@Html.Sitecore().Field("Tag Name",category)</a></li>
             }
         </ul>
     </div>
@@ -57,7 +57,7 @@
             @foreach (Item detailedarticle in articleDetailObjects)
             {
                 var brand = ((MultilistField)detailedarticle.Fields["Brand"]).TargetIDs.FirstOrDefault();
-            <div class="gd-promo-box2">
+            <div class="gd-promo-box2 @inspirationHelper.GetAlphabet(brand) @inspirationHelper.GetTagsFilter(detailedarticle)">
                 <meta property="og:description" content="Share Description Here! 1" />
                 <meta property="og:image" content="http://lmk-html-dev.iis.guat.me/files/landmark/images/men/men-001.jpg" />
                 <meta property="og:image" content="http://lmk-html-dev.iis.guat.me/files/landmark/images/product-img/main-012.jpg" />
@@ -72,10 +72,10 @@
                 <div class="gd-promo-box-text">
                     <h5>@Html.Sitecore().Field("Brand Title", Sitecore.Context.Database.GetItem(brand))</h5>
                     <h4>@Html.Sitecore().Field("Article Headline", detailedarticle) (@Html.Sitecore().Field("Product Price", detailedarticle))</h4>
-                    <a class="gd-button gd-button-white" href="@LinkManager.GetItemUrl(detailedarticle)">@Html.Sitecore().Field("Glossary Value", ItemGuids.DiscoverMoreItem)</a>
+                    <a class="gd-button gd-button-white" href="@LinkManager.GetItemUrl(detailedarticle)">@Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverMoreItem)</a>
                     <div class="gd-promo-share">
                         <div class="gd-promo-share-handle">
-                            <span class="icomoon-share"></span>@Html.Sitecore().Field("Glossary Value", ItemGuids.ShareItem)
+                            <span class="icomoon-share"></span>@Html.Sitecore().Field("Glossary Value", SitecoreItems.ShareItem)
                         </div>
                         <div class="gd-promo-sharebox">
                             <a href="" class="icomoon-facebook"></a>
@@ -91,7 +91,7 @@
             @foreach (Item article in articleObjects)
             {
                 var brand = ((MultilistField) article.Fields["Brand"]).TargetIDs.FirstOrDefault();
-                <div class="gd-promo-box">
+                <div class="gd-promo-box @inspirationHelper.GetAlphabet(brand) @inspirationHelper.GetTagsFilter(article)">
                     <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image",article)">
                     <h5>@Html.Sitecore().Field("Brand Title",Sitecore.Context.Database.GetItem(brand))</h5>
                     <h4>@Html.Sitecore().Field("Article Headline",article) (@Html.Sitecore().Field("Product Price",article))</h4>

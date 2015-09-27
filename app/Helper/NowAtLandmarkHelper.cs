@@ -27,9 +27,9 @@ namespace Landmark.Helper
         {
             int pagenumber ;
             pagenumber = page != null ? Int32.Parse(page) : 0;
-            int numberinonepage = ItemGuids.LandmarkConfigItem.Fields["Page"] == null
+            int numberinonepage = SitecoreItems.LandmarkConfigItem.Fields["Page"] == null
                 ? 10
-                : Int32.Parse(ItemGuids.LandmarkConfigItem.Fields["Page"].Value);
+                : Int32.Parse(SitecoreItems.LandmarkConfigItem.Fields["Page"].Value);
             var articles = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.T4PageTemplate)
                     .OrderBy(article => article.Fields["Article Date"].ToString());
             if (articles.Count()>1)

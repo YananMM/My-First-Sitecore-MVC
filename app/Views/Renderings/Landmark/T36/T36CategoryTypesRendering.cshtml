@@ -12,7 +12,7 @@
 
 <div class="gd-pagetitle-menu hidden-xs">
     <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage))" @if (Sitecore.Context.Item.ID.ToString() == ItemGuids.LandmarkMaganizePage)
-    { <text> class="active" </text>    }>@Html.Sitecore().Field("Glossary Value", ItemGuids.MagezineItem) </a>
+    { <text> class="active" </text>    }>@Html.Sitecore().Field("Glossary Value", SitecoreItems.MagezineItem) </a>
     @foreach (var item in magazineCategories)
     {
         <span class="gd-pagetitle-menu-gap">|</span>

@@ -9,27 +9,27 @@
         <div class="gd-pagetitle-heading">
 
             <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkArtTourItem))#gd-audio-guide" class="gd-link-audio">
-                <span class="icomoon-sound-alt"></span> @Html.Sitecore().Field("Glossary Value", ItemGuids.MobileAudioGuideItem) <span class="icomoon-chevron-small-right"></span>
+                <span class="icomoon-sound-alt"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.MobileAudioGuideItem) <span class="icomoon-chevron-small-right"></span>
             </a>
             <h2>@Html.Sitecore().Field("Page Title")</h2>
         </div>
 
         <div class="gd-pagetitle-menu hidden-xs">
-            @Html.Sitecore().Field("Glossary Value", ItemGuids.ViewByItem) <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))" @if (Html.Sitecore().CurrentItem.ID.ToString() == ItemGuids.ByArtistPage) { <text>
+            @Html.Sitecore().Field("Glossary Value", SitecoreItems.ViewByItem) <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))" @if (Html.Sitecore().CurrentItem.ID.ToString() == ItemGuids.ByArtistPage) { <text>
                                                                               class="active" </text>           }>
-                @Html.Sitecore().Field("Glossary Value", ItemGuids.ArtistItem)
+                @Html.Sitecore().Field("Glossary Value", SitecoreItems.ArtistItem)
             </a>  <span class="gd-pagetitle-menu-gap">|</span>  <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByLocationPage))" @if (Html.Sitecore().CurrentItem.ID.ToString() == ItemGuids.ByLocationPage) { <text>
-                                                                   class="active" </text>           }>@Html.Sitecore().Field("Glossary Value", ItemGuids.LocationItem)</a>
+                                                                   class="active" </text>           }>@Html.Sitecore().Field("Glossary Value", SitecoreItems.LocationItem)</a>
                                                             </div>
                                                             <div class="gd-controls-m visible-xs">
                                                                 <div class="row">
                                                                     <div class="col-xs-3">
-                                                                        <p class="form-control-static">@Html.Sitecore().Field("Glossary Value", ItemGuids.ViewByItem)</p>
+                                                                        <p class="form-control-static">@Html.Sitecore().Field("Glossary Value", SitecoreItems.ViewByItem)</p>
                                                                     </div>
                                                                     <div class="col-xs-9">
                                                                         <select class="form-control">
-                                                                            <option value="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByLocationPage))">@Html.Sitecore().Field("Glossary Value", ItemGuids.LocationItem)</option>
-                                                                            <option value="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))">@Html.Sitecore().Field("Glossary Value", ItemGuids.ArtistItem)</option>
+                                                                            <option value="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByLocationPage))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.LocationItem)</option>
+                                                                            <option value="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.ArtistItem)</option>
                                                                         </select>
                                                                     </div>
                                                                 </div>

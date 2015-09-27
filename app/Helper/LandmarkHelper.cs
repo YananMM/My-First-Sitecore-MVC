@@ -27,9 +27,9 @@ namespace Landmark.Helper
     {
         private static Database _webDb = Factory.GetDatabase("web");
 
-        public static int NumberInOnePage = ItemGuids.LandmarkConfigItem.Fields["Page"] == null
+        public static int NumberInOnePage = SitecoreItems.LandmarkConfigItem.Fields["Page"] == null
                 ? 10
-                : Int32.Parse(ItemGuids.LandmarkConfigItem.Fields["Page"].Value);
+                : Int32.Parse(SitecoreItems.LandmarkConfigItem.Fields["Page"].Value);
 
         public static bool HasValidVersion()
         {
@@ -187,6 +187,13 @@ namespace Landmark.Helper
             var query = string.Format("fast:{0}//*[{1}]", parent.Paths.FullPath, "@@TemplateId='" + templateId + "'");
             List<Item> slidesItems = _webDb.SelectItems(query).OrderBy(i => i.DisplayName).ToList();
             return slidesItems;
+        }
+
+        public static List<Item> GetItemsByItemsTemplates(this Item item, params Guid[] templateIds)
+        {
+            var queryTemplateArguments = templateIds.Select(tId => "@@TemplateId='{" + tId.ToString().ToUpper() + "}'").ToArray();
+            var query = string.Format("fast:{0}//*[{1}]", item.Paths.FullPath, string.Join(" or ", queryTemplateArguments));
+            return item.Database.SelectItems(query).ToList();
         }
 
         public static String FileFieldSrc(string fieldName, Item item)

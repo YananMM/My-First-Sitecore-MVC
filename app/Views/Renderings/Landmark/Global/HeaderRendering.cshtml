@@ -23,23 +23,23 @@
                   <a href="" class="icomoon-facebook"></a>
                   <a href="" class="icomoon-twitter"></a>
                   <a href="" class="icomoon-sina-weibo"></a>
-                  <a href='@ItemGuids.LandmarkConfigItem.Fields["Share Email To"].Value' class="icomoon-envelop"></a>
+                  <a href='@SitecoreItems.LandmarkConfigItem.Fields["Share Email To"].Value' class="icomoon-envelop"></a>
                 </div>
               </div>
-            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-HK")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", ItemGuids.TraditionalChineseGuidItem)</a> |
-            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-CN")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", ItemGuids.SimplifiedChineseGuidItem)</a>
+            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-HK")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", SitecoreItems.TraditionalChineseGuidItem)</a> |
+            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-CN")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SimplifiedChineseGuidItem)</a>
             <div class="sb-search">
                 @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
                 {
                     @Html.Sitecore().FormHandler("Search", "SearchContent")
-                    <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", ItemGuids.SearchPlaceHolderItem)" class="sb-search-input form-control">
+                    <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", SitecoreItems.SearchPlaceHolderItem)" class="sb-search-input form-control">
                     <input class="sb-search-submit" type="submit" value="">
                     <a class="sb-search-clear icomoon-circle-with-cross" href="javascript:;"></a>
                     <span class="icomoon-search"></span>
                 }
             </div>
         </div>
-        @Html.Sitecore().Rendering(ItemGuids.NavigationRenderingViewGuid)
+        @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.NavigationRenderingViewGuid)
     </div>
 
     <!--mobile menu-->
@@ -53,7 +53,7 @@
                 @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
                 {
                     @Html.Sitecore().FormHandler("Search", "SearchContent")
-                    <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", ItemGuids.SearchPlaceHolderItem)" class="sb-search-input form-control">
+                    <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", SitecoreItems.SearchPlaceHolderItem)" class="sb-search-input form-control">
                     <input class="sb-search-submit" type="submit" value="">
                     <a class="sb-search-clear icomoon-circle-with-cross" href="javascript:;"></a>
                     <span class="icomoon-search"></span>
@@ -62,17 +62,17 @@
 
             <div class="mobile-menu">
                 <div class="scroll-content">
-                    @Html.Sitecore().Rendering(ItemGuids.MobileNavigationRenderingViewGuid)
+                    @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.MobileNavigationRenderingViewGuid)
                     <div class="language">
-                        <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", ItemGuids.TraditionalChineseGuidItem)</a>
+                        <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", SitecoreItems.TraditionalChineseGuidItem)</a>
                         <span class="gap">|</span>
-                        <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", ItemGuids.SimplifiedChineseGuidItem)</a>
+                        <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SimplifiedChineseGuidItem)</a>
                     </div>
                 </div>
             </div>
             <h1>
-                <a href="@Sitecore.Links.LinkManager.GetItemUrl(ItemGuids.LandmarkHomeItem)">
-                    <img class="responsive-logo" src="@Html.Sitecore().ImageFieldSrc("Landmark Logo",ItemGuids.LandmarkConfigItem)" alt="landmark">
+                <a href="@Sitecore.Links.LinkManager.GetItemUrl(SitecoreItems.LandmarkHomeItem)">
+                    <img class="responsive-logo" src="@Html.Sitecore().ImageFieldSrc("Landmark Logo",SitecoreItems.LandmarkConfigItem)" alt="landmark">
                 </a>
             </h1>
         </nav>

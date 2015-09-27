@@ -15,7 +15,7 @@
                         <h4>@Html.Sitecore().Field("Article Sub Headline",Model.Item)</h4>
                     </hgroup>
                     <div class="panel-content">@Html.Sitecore().Field("Article Intro",Model.Item)</div>
-                    <a class="btn btn-default" href="@Sitecore.Links.LinkManager.GetItemUrl(Model.Item)">@Html.Sitecore().Field("Glossary Value",ItemGuids.DiscoverMoreItem)</a>
+                    <a class="btn btn-default" href="@Sitecore.Links.LinkManager.GetItemUrl(Model.Item)">@Html.Sitecore().Field("Glossary Value",SitecoreItems.DiscoverMoreItem)</a>
                 </div>
                 @if (articleType != null && articleType.TargetItem != null && !string.IsNullOrEmpty(articleType.TargetItem.Fields["See More Article Text"].Value))
     {

@@ -41,20 +41,20 @@
 
 
 <div class="shopdetails-brand">
-    <a class="gd-link-brands" href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage))">@Html.Sitecore().Field("Glossary Value", ItemGuids.AllBrandsGuidItem)<span class="icomoon-chevron-small-right"></span></a>
+    <a class="gd-link-brands" href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AllBrandsGuidItem)<span class="icomoon-chevron-small-right"></span></a>
     <div class="container">
         <div class="shopdetails-brand-header">
             <ul>
-                <li><a href="javascript:;" class="active">@Html.Sitecore().Field("Glossary Value", ItemGuids.YouMayAlsoLikeItem)</a></li>
-                <li><a href="javascript:;">@Html.Sitecore().Field("Glossary Value", ItemGuids.AlsoOnThisFloorItem)</a></li>
+                <li><a href="javascript:;" class="active">@Html.Sitecore().Field("Glossary Value", SitecoreItems.YouMayAlsoLikeItem)</a></li>
+                <li><a href="javascript:;">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AlsoOnThisFloorItem)</a></li>
             </ul>
         </div>
         <div class="shopdetails-brand-body">
             <div class="row">
-                @Html.Sitecore().Rendering(ItemGuids.T14YouMayAlsoLikeRenderingViewGuid)
+                @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T14YouMayAlsoLikeRenderingViewGuid)
             </div>
             <div class="row hidden">
-                @Html.Sitecore().Rendering(ItemGuids.T14AlsoOnFloorRenderingViewGuid)
+                @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T14AlsoOnFloorRenderingViewGuid)
             </div>
         </div>
     </div>

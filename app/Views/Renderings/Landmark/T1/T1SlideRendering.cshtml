@@ -41,7 +41,7 @@
                                 <div class="panel-content">
                                     @Html.Sitecore().Field("Article Sub Headline", referenceField.TargetItem)
                                 </div>
-                                <a class="btn btn-default" href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", ItemGuids.DiscoverLandmarkStoriesItem)</a>
+                                <a class="btn btn-default" href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverLandmarkStoriesItem)</a>
                             </div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
     </ul>
 
     <div class="scroll-area"> <a href="#"><span class="sprite-scroll"></span><br>
-    <span class="hidden-xs">@Html.Sitecore().Field("Glossary Value", ItemGuids.ScrollToBeginGuidItem)</span> </a> </div>
+    <span class="hidden-xs">@Html.Sitecore().Field("Glossary Value", SitecoreItems.ScrollToBeginGuidItem)</span> </a> </div>
     <div class="prev"> <a href="#"><span class="sprite-icon-l"></span></a> </div>
     <div class="next"> <a href="#"><span class="sprite-icon-r"></span></a> </div>
 </section>

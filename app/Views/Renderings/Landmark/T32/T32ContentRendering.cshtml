@@ -17,7 +17,7 @@
                 <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
             </div>
             <div class="gd-search-infomation">@results.Count search result(s) for <span>"@Request["value"]"</span></div>
-              <div  class="gd-search-filter hidden-xs">@Html.Sitecore().Field("Glossary Value",ItemGuids.FilterByItem)
+              <div  class="gd-search-filter hidden-xs">@Html.Sitecore().Field("Glossary Value",SitecoreItems.FilterByItem)
                 <ul>
                     <!--<li class="active"><a href="#">ALL</a></li>-->
                 @foreach (var type in types)
@@ -44,7 +44,7 @@
          @if (results.Select(item =>item.FilterType == Sitecore.Context.Database.GetItem(ItemGuids.ShoppingFilterType).Fields["Value"].Value).ToList().Count>0)
          {
             <div class="gd-search-heading">
-             <h3>@Html.Sitecore().Field("Glossary Value",ItemGuids.StoreDetailsItem)</h3>
+             <h3>@Html.Sitecore().Field("Glossary Value",SitecoreItems.StoreDetailsItem)</h3>
          </div>
         }
          
@@ -69,10 +69,10 @@
                                          <p>
                                              <span class="icomoon-phone"></span>@Html.Sitecore().Field("Contact",result.GetItem())
                                          </p>
-                                         <a href="@Html.Sitecore().Field("Official Website Url")" class="gd-search-link-brief">@Html.Sitecore().Field("Glossary Value", ItemGuids.OfficialWebsiteItem)<span class="icomoon-chevron-small-right"></span></a>
+                                         <a href="@Html.Sitecore().Field("Official Website Url")" class="gd-search-link-brief">@Html.Sitecore().Field("Glossary Value", SitecoreItems.OfficialWebsiteItem)<span class="icomoon-chevron-small-right"></span></a>
                                      </div>
                                      <div class="col-sm-3">
-                                         <h5>@Html.Sitecore().Field("Glossary Value", ItemGuids.OpenningHoursItem)</h5>
+                                         <h5>@Html.Sitecore().Field("Glossary Value", SitecoreItems.OpenningHoursItem)</h5>
                                          <p>@Html.Sitecore().Field("Opening Hours",result.GetItem())
                                          </p>
                                      </div>

@@ -6,23 +6,23 @@
         <div class="container">
             <div class="row">
                 <div class="footer-nav-area">
-                    @Html.Sitecore().Rendering(ItemGuids.FooterNavRenderingViewGuid)
+                    @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.FooterNavRenderingViewGuid)
                 </div>
                 <div class="footer-signup">
-                    @Html.Sitecore().Rendering(ItemGuids.FooterSocialMediaRenderingGuid)
+                    @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.FooterSocialMediaRenderingGuid)
                 </div>
             </div>
         </div>
     </section>
     <section class="footer-info">
-        @Html.Sitecore().Rendering(ItemGuids.FooterConfigRenderingViewGuid)
+        @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.FooterConfigRenderingViewGuid)
     </section>
 </footer>
 
 <div id="portrait_only" class="portrait_only hidden">
     <div class="content">
-        <p>@Html.Sitecore().Field("Portrait Only Text", ItemGuids.LandmarkConfigItem)</p>
-        @Html.Sitecore().Field("Portrait Only Image", ItemGuids.LandmarkConfigItem,new{@class="rotate_icon",width="100",height="100"})
+        <p>@Html.Sitecore().Field("Portrait Only Text", SitecoreItems.LandmarkConfigItem)</p>
+        @Html.Sitecore().Field("Portrait Only Image", SitecoreItems.LandmarkConfigItem,new{@class="rotate_icon",width="100",height="100"})
     </div>
 </div>
 

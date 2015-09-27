@@ -52,7 +52,7 @@ namespace Landmark.Helper
 
         public List<FilterTypeResults> GetFilterTypes(string value = null)
         {
-            List<Item> types = ItemGuids.SearchFilterTypes.Children.ToList();
+            List<Item> types = SitecoreItems.SearchFilterTypes.Children.ToList();
             List<FilterTypeResults> filterresults = new List<FilterTypeResults>();
             foreach (Item filtertype in types)
             {

@@ -12,12 +12,12 @@
 <!--[if gt IE 9]><html class="no-js"><![endif]-->
 <!--[if !IE]><!--><html class="no-js"><!--<![endif]-->
 <head>
-    @Html.Sitecore().Rendering(ItemGuids.MetaRenderingViewGuid)
+    @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.MetaRenderingViewGuid)
 </head>
 <body class="en @LandmarkHelper.GetPageBodyClass()">
-    @Html.Sitecore().Rendering(ItemGuids.HeaderRenderingViewGuid)
+    @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.HeaderRenderingViewGuid)
     @Html.Sitecore().Placeholder("main-content")
-    @Html.Sitecore().Rendering(ItemGuids.FooterRenderingViewGuid)
-    @Html.Sitecore().Rendering(ItemGuids.ScriptRenderingViewGuid)
+    @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.FooterRenderingViewGuid)
+    @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.ScriptRenderingViewGuid)
 </body>
 </html>

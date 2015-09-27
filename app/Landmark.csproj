@@ -146,6 +146,8 @@
     <Compile Include="Classes\InstagramSocial.cs" />
     <Compile Include="Classes\ItemGuids.cs" />
     <Compile Include="Classes\Crawlers\LanguageFallbackCrawler.cs" />
+    <Compile Include="Classes\SitecoreItems.cs" />
+    <Compile Include="Classes\SitecoreRenderingViewGuids.cs" />
     <Compile Include="Classes\StringConstants.cs" />
     <Compile Include="Classes\ValidateCode.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -774,6 +776,8 @@
     <Content Include="Views\Renderings\Landmark\T31\T31ContentRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T17\T17PageTitleRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T13\T13MobileSideBar.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T4\T4DetailsRendering.cshtml" />
+    <Content Include="Views\Renderings\Landmark\T4\T4_2DetailsRendering.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
