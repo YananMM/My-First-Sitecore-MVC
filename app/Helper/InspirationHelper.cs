@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using Landmark.Classes;
 using Landmark.Models;
+using Sitecore.Collections;
 using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Fields;
@@ -14,7 +15,7 @@ namespace Landmark.Helper
     public class InspirationHelper
     {
         private Database _webDb = Factory.GetDatabase("web");
-        public List<Item> GetMonthlyExclusives(string category=null,string brand=null)
+        public List<Item> GetMonthlyExclusives(string category = null, string brand = null)
         {
             Item exclusiveItem = Sitecore.Context.Database.GetItem(ItemGuids.MonthlyExclusivePage);
             List<Item> articles = new List<Item>();
@@ -22,10 +23,10 @@ namespace Landmark.Helper
                 articles = exclusiveItem.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page).ToList();
             else
             {
-                articles = exclusiveItem.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page 
+                articles = exclusiveItem.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page
                 && ((MultilistField)item.Fields["Tags"]).TargetIDs.Contains(new ID(category))).ToList();
             }
-            if(brand!=null)
+            if (brand != null)
                 articles = articles.Where(item => ((MultilistField)item.Fields["Tags"]).TargetIDs.Contains(new ID(brand))).ToList();
             return articles;
         }
@@ -37,7 +38,7 @@ namespace Landmark.Helper
             foreach (var article in articles)
             {
                 var brand = ((MultilistField)article.Fields["Brand"]).TargetIDs.FirstOrDefault();
-                if (_webDb.GetItem(brand)!= null)
+                if (_webDb.GetItem(brand) != null)
                     brands.Add(_webDb.GetItem(brand));
             }
 
@@ -62,10 +63,10 @@ namespace Landmark.Helper
                 {
                     foreach (var id in tagField.TargetIDs)
                     {
-                        
-                            if (!categories.Contains(_webDb.GetItem(id)))
-                                categories.Add(_webDb.GetItem(id));
-                        
+
+                        if (!categories.Contains(_webDb.GetItem(id)))
+                            categories.Add(_webDb.GetItem(id));
+
                     }
                 }
             }
@@ -75,7 +76,7 @@ namespace Landmark.Helper
         public string GetTagsFilter(Item item)
         {
             string tagsClass = string.Empty;
-            var tagsField = (MultilistField) item.Fields["Tags"];
+            var tagsField = (MultilistField)item.Fields["Tags"];
 
             if (tagsField != null && tagsField.TargetIDs.Count() > 0)
             {
@@ -84,7 +85,7 @@ namespace Landmark.Helper
                     tagsClass += " gdf-" + tag.ToString().ToLower();
                 }
             }
-            
+
             return tagsClass;
         }
 
@@ -94,6 +95,51 @@ namespace Landmark.Helper
             Item brand = _webDb.GetItem(id);
             alphabetFilter += "gdf-" + brand.Fields["Brand Title"].Value.ToLower()[0];
             return alphabetFilter;
+        }
+
+        /// <summary>
+        /// Gets the related stories.
+        /// </summary>
+        /// <returns>List{RelatedItem}.</returns>
+        public List<RelatedItem> GetRelatedItems(string type)
+        {
+            List<RelatedItem> relatedItems = new List<RelatedItem>();
+            var currentItem = Sitecore.Context.Item;
+            List<Item> allItems = new ItemList();
+            if (type == "story")
+            {
+                var t23PagesAB = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage,
+                    ItemGuids.T23PageTemplate);
+                var t23PageCD = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage,
+                    ItemGuids.T23PageCDTemplate);
+
+                allItems = t23PagesAB.Union(t23PageCD).ToList();
+            }
+            else if (type == "brands")
+            {
+                var brands = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem,
+                    ItemGuids.T14ShopDetailsTemplate);
+                allItems = brands;
+            }
+            var currentTagsField = currentItem.Fields["tags"];
+            var itemTags = currentTagsField.ToString().Split('|').ToList();
+
+            foreach (var item in allItems)
+            {
+                var itemTagsField = item.Fields["Tags"];
+                var storyTags = itemTagsField.ToString().Split('|').ToList();
+                var tags = storyTags.Intersect(itemTags).ToList();
+                if (tags.Count != 0)
+                {
+                    RelatedItem relatedItem = new RelatedItem
+                    {
+                        Item = item,
+                        TagCount = tags.Count()
+                    };
+                    relatedItems.Add(relatedItem);
+                }
+            }
+            return relatedItems.OrderBy(p => p.TagCount).ToList();
         }
     }
 }

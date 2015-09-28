@@ -33,7 +33,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 76bb3a2a-d0aa-4ad2-8863-2fdf788560c8
+revision: d64e8cf6-0acb-4d19-901f-36a06b9961a7
 
 ----field----
 field: {21B45344-DBEB-439F-B9B4-FADCD4757389}
@@ -56,13 +56,6 @@ key: getting here text
 content-length: 12
 
 GETTING HERE
-----field----
-field: {A1A0CEDA-7D4F-4929-91BA-7787FA73F5F3}
-name: Related Articles From Tags not Outside
-key: related articles from tags not outside
-content-length: 0
-
-
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
@@ -95,7 +88,7 @@ ONE LANDMARK
 field: {F9086B75-3D7A-4CC8-980D-612CE5CD240B}
 name: One Lanemark Content
 key: one lanemark content
-content-length: 271
+content-length: 277
 
 <div class="gd-brief-body">
 <div class="row">
@@ -104,6 +97,13 @@ content-length: 271
 </div>
 </div>
 </div>
+----field----
+field: {51F08BE7-E483-4F5C-99C6-343ACAE22311}
+name: Related Page
+key: related page
+content-length: 77
+
+{F8311E33-9D80-46B1-AAF7-CDB5F92F23D4}|{1B51D2BB-E8D2-4421-A075-F0A748D04D36}
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -117,14 +117,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-76bb3a2a-d0aa-4ad2-8863-2fdf788560c8
+d64e8cf6-0acb-4d19-901f-36a06b9961a7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150922T014711Z
+20150928T091551:635790285513952962Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

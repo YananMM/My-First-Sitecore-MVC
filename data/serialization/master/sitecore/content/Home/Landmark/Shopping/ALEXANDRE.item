@@ -33,7 +33,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 6691972a-9aca-48bd-9b57-39cf9a8c96c7
+revision: c86ef80a-e7a2-40d0-b3fb-8c564d64217a
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -44,8 +44,8 @@ content-length: 9
 ALEXANDRE
 ----field----
 field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
-name: Building
-key: building
+name: Buildings
+key: buildings
 content-length: 38
 
 {E76CEFC9-801C-4694-9A63-0C6132F20741}
@@ -88,9 +88,9 @@ RELATED ARTICLE
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 77
+content-length: 233
 
-{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{8DEEBCDA-AC9C-4B0C-AF81-8E493D219713}
+{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}|{01E67855-9741-4C1C-9FCD-2432982120B6}|{B897BD2C-C2EA-4F88-BE9E-AA3F3EBE8FDF}
 ----field----
 field: {3DED45C4-C26E-4498-9909-AB777C4D1244}
 name: Opening Hours
@@ -168,14 +168,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6691972a-9aca-48bd-9b57-39cf9a8c96c7
+c86ef80a-e7a2-40d0-b3fb-8c564d64217a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150922T141014Z
+20150928T025024:635790054243935074Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

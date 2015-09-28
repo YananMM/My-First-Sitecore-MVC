@@ -33,7 +33,7 @@
             j++;
                 }
 
-                @if (string.IsNullOrEmpty(item.Fields["Slide Video"].Value))
+                @if (item.Fields["Slide Video"]== null)
                 {
                     <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Slide Image", item)"></div>
                 }

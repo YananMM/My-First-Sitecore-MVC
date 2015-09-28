@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 58b9589b-c016-44ec-8d92-dd0915c37a9e
+revision: 8756633f-660f-4109-902e-d74a1e8f8a04
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -85,6 +85,13 @@ content-length: 7
 
 Style B
 ----field----
+field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
+name: Tags
+key: tags
+content-length: 155
+
+{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -97,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-58b9589b-c016-44ec-8d92-dd0915c37a9e
+8756633f-660f-4109-902e-d74a1e8f8a04
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150918T074625:635781591853232657Z
+20150928T025202:635790055228761403Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

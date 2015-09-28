@@ -5,10 +5,7 @@
 @using Landmark.Models
 @model RenderingModel
 @{
-    var artTourPage = Sitecore.Context.Database.GetItem(ItemGuids.LandmarkArtTourItem);
-
-    var relatedArticles = LandmarkHelper.GetRelatedItems();
-
+    var relatedItems = LandmarkHelper.GetRelatedItems();
 }
 <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
     <div class="carousel-heading">
@@ -16,29 +13,27 @@
     </div>
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Cover Image", artTourPage)"></div>
-            <div class="carousel-caption">
-                <div class="carousel-caption-inner">
-                    <div class="gd-carousel-detail">
-                        <h4>@Html.Sitecore().Field("Page Title", artTourPage)</h4>
-                        <p>@Html.Sitecore().Field("Cover Content", artTourPage)</p>
+        @if (relatedItems.Count != 0)
+        {
+            int i = 1;
+            foreach (var item in relatedItems)
+            {
+                var image = LandmarkHelper.GetCallOutImage(item);
+
+                <div @if (i == 1) { <text> class="item active" </text>   } else { <text> class="item" </text>   }>
+                    <div class="carousel-image" data-bgsrc="@image"></div>
+                    <div class="carousel-caption">
+                        <div class="carousel-caption-inner">
+                            <div class="gd-carousel-detail">
+                                <h4>@item.Fields["Article Headline"]</h4>
+                                <p>@Html.Sitecore().Field("Article Info", item)</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="carousel-image" data-bgsrc="../files/landmark/images/nowatlm/nowatlm-article-01.jpg"></div>
-            <div class="carousel-caption">
-                <div class="carousel-caption-inner">
-                    <div class="gd-carousel-detail">
-                        <h4>The iconic Mandarin Oriental, Hong Kong is the epitome of contemporary luxury combined with Oriental heritage.</h4>
-                        <p>Having delighted guests with its award-winning service and impressive facilities for nearly 50 years, it is the much loved address for those seeking an exclusive sanctuary in the heart of this exciting metropolis.</p>
-                        <button class="gd-button gd-button-white" type="button">DISCOVER MORE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+i++;
+            }
+        }
     </div>
     <!-- Wrapper for controls -->
     <div class="carousel-footer">
@@ -50,15 +45,21 @@
             </a>
             <!-- Indicators -->
             <ol class="carousel-indicators gd-carousel-control gd-carousel-no">
-                <li data-target="#gd-carousel-info" data-slide-to="0" class="active">1</li>
-                <li data-target="#gd-carousel-info" data-slide-to="1">2</li>
-                <li data-target="#gd-carousel-info" data-slide-to="2">3</li>
+                @if (relatedItems.Count > 0)
+                {
+                    int i = 1;
+                    foreach (var item in relatedItems)
+                    {
+                        <li data-target="#gd-carousel-info" data-slide-to="@(i - 1)" @if (i == 1) { <text> class="active" </text>    }>@i</li>
+i++;
+                    }
+                }
             </ol>
             <span class="gd-carousel-control gd-carousel-no">
                 /
             </span>
             <span class="gd-carousel-control gd-carousel-no">
-                3
+                @relatedItems.Count
             </span>
             <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="next">
                 <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>
