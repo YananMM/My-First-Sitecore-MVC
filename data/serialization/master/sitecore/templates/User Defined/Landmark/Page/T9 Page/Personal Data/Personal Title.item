@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {0ECA8548-9E6C-461B-A0A1-E52311F25631}
+id: {015F9EBF-FBE7-45A4-8ACF-6D3E1FD70788}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T9 Page/Personal Data/Personal Data Description
+path: /sitecore/templates/User Defined/Landmark/Page/T9 Page/Personal Data/Personal Title
 parent: {86010569-971A-41CE-99DF-F4839B1DCC43}
-name: Personal Data Description
+name: Personal Title
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,20 +13,20 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 15
+content-length: 16
 
-Multi-Line Text
+Single-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-200
+100
 ----version----
 language: en
 version: 1
-revision: 6158974f-4de7-4ee5-adc7-6d2bbf4b1238
+revision: dc39ff5e-8b19-4917-a29a-567a2b853829
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150825T085615Z
+20150825T085417Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-6158974f-4de7-4ee5-adc7-6d2bbf4b1238
+dc39ff5e-8b19-4917-a29a-567a2b853829
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150922T135332Z
+20150928T075353Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

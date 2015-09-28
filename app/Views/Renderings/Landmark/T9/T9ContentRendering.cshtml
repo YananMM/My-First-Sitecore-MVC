@@ -24,10 +24,7 @@
                 <h3><span class="icomoon-phone"></span>@Html.Sitecore().Field("Hotline Title")</h3>
             </div>
             <div class="gd-contact-body">
-                <p>
-                    @Html.Sitecore().Field("Phone Description") <a href="#">@Html.Sitecore().Field("Phone Number")</a>. <br>
-                    @Html.Sitecore().Field("Service Description") <a href="/t24.html">@Html.Sitecore().Field("Service Link Text")</a>
-                </p>
+                @Html.Sitecore().Field("Hotline Text")
             </div>
         </div>
         @Html.Sitecore().Placeholder("t9-form")

@@ -19,7 +19,7 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: feaf675a-f22f-45e9-8285-158bc57f20fe
+revision: b8200013-83ac-4555-9312-1db48e1caf12
 
 ----field----
 field: {29FA7895-CEF3-48F6-B527-5AD5FD93F772}
@@ -67,37 +67,16 @@ content-length: 1
 field: {C318572C-DE49-4951-AD27-5B609EB18ED5}
 name: Hotline Title
 key: hotline title
-content-length: 18
+content-length: 17
 
-CONCIERGE HOTLINE 
+CONCIERGE HOTLINE
 ----field----
-field: {E70AEC2A-A16E-4A82-B786-BD25A3F2EF66}
-name: Phone Description
-key: phone description
-content-length: 65
+field: {D226C16F-EBCF-4C17-9290-CF3F037CF316}
+name: Hotline Text
+key: hotline text
+content-length: 163
 
-For general queries, please contact LANDMARK Concierge Hotline at
-----field----
-field: {4CD0363B-D4FB-49D5-A830-C1B639B00117}
-name: Phone Number
-key: phone number
-content-length: 9
-
-2500 0555
-----field----
-field: {7CED3FFC-50EC-4670-8A07-B5A3C610245B}
-name: Service Description
-key: service description
-content-length: 37
-
-You may learn more about our services
-----field----
-field: {1CA69747-4F6C-4FA6-A680-4F67F4F42F3D}
-name: Service Link Text
-key: service link text
-content-length: 4
-
-here
+<p>For general queries, please contact LANDMARK Concierge Hotline at <a href="#">2500 0555</a>. <br>You may learn more about our services <a href="#">here</a>.</p>
 ----field----
 field: {0945F25A-68F1-4854-A522-720085C48CDE}
 name: Contact Title
@@ -135,36 +114,36 @@ content-length: 25
 communications@hkland.com
 ----field----
 field: {015F9EBF-FBE7-45A4-8ACF-6D3E1FD70788}
-name: Personal Data Title
-key: personal data title
+name: Personal Title
+key: personal title
 content-length: 25
 
 Update your Personal Data
 ----field----
 field: {0ECA8548-9E6C-461B-A0A1-E52311F25631}
-name: Personal Data Description
-key: personal data description
+name: Personal Description
+key: personal description
 content-length: 167
 
 To update or change any of your personal data or to unsubscribe promotional material from us, please send your request to us through any one of the following channels:
 ----field----
 field: {E9C6368F-DF54-46AA-B537-5636E15A1BA7}
-name: Personal Data Telephone
-key: personal data telephone
+name: Personal Telephone
+key: personal telephone
 content-length: 15
 
 (852) 2842 8524
 ----field----
 field: {D9D52F60-A755-4475-A220-78056616BEDD}
-name: Personal Data Email
-key: personal data email
+name: Personal Email
+key: personal email
 content-length: 25
 
 communications@hkland.com
 ----field----
 field: {9BA85F74-6A53-4A5E-A5C8-F6C5B1EF5DC1}
-name: Personal Data Address
-key: personal data address
+name: Personal Address
+key: personal address
 content-length: 44
 
 8/F, One Exchange Square, Central, Hong Kong
@@ -286,14 +265,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-feaf675a-f22f-45e9-8285-158bc57f20fe
+b8200013-83ac-4555-9312-1db48e1caf12
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150912T134932Z
+20150928T075422Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
