@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {1CA69747-4F6C-4FA6-A680-4F67F4F42F3D}
+id: {D9D52F60-A755-4475-A220-78056616BEDD}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T9 Page/Hotline Data/Service Link Text
-parent: {86013A35-2829-4240-A33E-98132E04B677}
-name: Service Link Text
+path: /sitecore/templates/User Defined/Landmark/Page/T9 Page/Personal Data/Personal Email
+parent: {86010569-971A-41CE-99DF-F4839B1DCC43}
+name: Personal Email
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -22,11 +22,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-500
+400
 ----version----
 language: en
 version: 1
-revision: a34c1fc9-4cfa-4247-aaea-d44c8d0fec6e
+revision: 9318c5b8-56b0-4a07-b458-eb59fbe2c6d3
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150825T083248Z
+20150825T085646Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-a34c1fc9-4cfa-4247-aaea-d44c8d0fec6e
+9318c5b8-56b0-4a07-b458-eb59fbe2c6d3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150922T135332Z
+20150928T075353Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

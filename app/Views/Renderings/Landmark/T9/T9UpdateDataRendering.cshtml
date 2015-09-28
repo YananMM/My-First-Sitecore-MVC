@@ -5,23 +5,23 @@
 @using Sitecore.Data.Items
 @model RenderingModel
 <div class="gd-personal-data">
-    <h4>@Html.Sitecore().Field("Send Request Title")</h4>
-    <p>@Html.Sitecore().Field("Send Request Description")</p>
+    <h4>@Html.Sitecore().Field("Personal Title")</h4>
+    <p>@Html.Sitecore().Field("Personal Description")</p>
     <div class="row">
         <div class="table-responsive col-sm-6">
             <table>
                 <tbody>
                     <tr>
                         <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.TelephoneItem)</th>
-                        <td>@Html.Sitecore().Field("Telephone")</td>
+                        <td>@Html.Sitecore().Field("Personal Telephone")</td>
                     </tr>
                     <tr>
                         <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.EmailItem)</th>
-                        <td><a href="mailto:@Html.Sitecore().Field("Email")">@Html.Sitecore().Field("Send Request Email")</a></td>
+                        <td><a href="mailto:@Html.Sitecore().Field("Email")">@Html.Sitecore().Field("Personal Email")</a></td>
                     </tr>
                     <tr>
                         <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.AddressItem)</th>
-                        <td>@Html.Sitecore().Field("Address")</td>
+                        <td>@Html.Sitecore().Field("Personal Address")</td>
                     </tr>
                 </tbody>
             </table>
