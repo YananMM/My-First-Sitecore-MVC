@@ -52,7 +52,7 @@
              <ol>
                  @foreach (var result in results)
                  {
-                     if (result.FilterType == Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem).Fields["Page Title"].Value)
+                     if (result.FilterType == Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem).Fields["Page Title"].Value && result.GetItem().TemplateID.ToString() == ItemGuids.T14ShopDetailsTemplate)
                      {
                          <li>
                              <div class="gd-search-box2">

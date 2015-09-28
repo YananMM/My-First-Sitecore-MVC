@@ -19,10 +19,10 @@ namespace Landmark.Classes.ComputedFields
             var field = (MultilistField)item.Fields["Tags"];
             if (field != null && field.TargetIDs != null)
             {
-                List<string> tags=new List<string>();
+                string tags=string.Empty;
                 foreach (var id in field.TargetIDs)
                 {
-                    tags.Add(Sitecore.Context.Database.GetItem(id).Fields["Tag Name"].Value);
+                    tags+=Sitecore.Context.Database.GetItem(id).Fields["Tag Name"].Value;
                 }
                 return tags;
             }
