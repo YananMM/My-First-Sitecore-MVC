@@ -100,7 +100,7 @@
                     Item nowatlandmarkitem = Sitecore.Context.Database.GetItem(ItemGuids.NowAtLandmarkItem);
                 }
                 <div class="gd-brief-heading gd-brief-heading-left">
-                    <h3>@Html.Sitecore().Field("Page Title",nowatlandmarkitem )</h3>
+                    <h3><a href="@LinkManager.GetItemUrl(nowatlandmarkitem)">@Html.Sitecore().Field("Page Title",nowatlandmarkitem )</a></h3>
                 </div>
                 @*<div class="gd-brief-body">
                     <dl>

@@ -78,7 +78,7 @@ namespace Landmark.Controllers
                 try
                 {
                     var result = AddContact(model);
-                    if (result == "1")
+                    if (result == "true")
                     {
                         return RedirectToAction("ButtonRedirect", new { targetId = ItemGuids.ThankYouPage });
                     }
@@ -150,8 +150,8 @@ namespace Landmark.Controllers
                         emailBody,
                         emailSubject,
                         emailTo,
-                        "",
-                        "");
+                        model.Email,
+                        model.FirstName);
                 //Send the message.
                 SmtpClient client = new SmtpClient();
                 // Add credentials if the SMTP server requires them.
@@ -179,7 +179,7 @@ namespace Landmark.Controllers
             string code = vCode.CreateCode(5, out oRnd);
             Session["ValidateCode"] = code;
             ViewBag.Code = code;
-            var bytes = vCode.CreateValidateCode(5, 280, 60, 22);
+            var bytes = vCode.CreateValidateCode(5, 280, 60, 22,code,oRnd);
             return File(bytes, @"image/jpeg");
         }
 

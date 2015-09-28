@@ -56,7 +56,7 @@ namespace Landmark.Classes
         /// <param name="Height">The height.</param>
         /// <param name="FontSize">Size of the font.</param>
         /// <returns>System.Byte[][].</returns>
-        public byte[] CreateValidateCode(int CodeLength, int Width, int Height, int FontSize)
+        public byte[] CreateValidateCode(int CodeLength, int Width, int Height, int FontSize, string sCode, Random oRnd)
         {
             //颜色列表，用于验证码，噪点，噪线
             Color[] oColors =
@@ -81,8 +81,8 @@ namespace Landmark.Classes
             Font oFont = null;
             Color oColor = default(Color);
 
-            Random oRnd;
-            var sCode = CreateCode(CodeLength, out oRnd);
+            //Random oRnd;
+            //var sCode = CreateCode(CodeLength, out oRnd);
 
             oBmp = new Bitmap(Width, Height);
             oGraphics = Graphics.FromImage(oBmp);

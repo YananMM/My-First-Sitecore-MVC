@@ -3,11 +3,12 @@
 @using Landmark.Helper
 @using Landmark.Models
 @using Sitecore.Data.Items
+@using Sitecore.Links
 @model RenderingModel
 @{
     SearchHelper helper = new SearchHelper();
-    var results = helper.GetSearchResults(Request["value"],Request["type"]);
-    List<FilterTypeResults> types = helper.GetFilterTypes(Request["value"]);
+    var results = helper.GetSearchResults(Request["searchString"],Request["type"]);
+    List<FilterTypeResults> types = helper.GetFilterTypes(Request["searchString"]);
     ShoppingHelper shoppingHelper = new ShoppingHelper();
 }
 
@@ -16,7 +17,7 @@
             <div class="gd-pagetitle-heading">
                 <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
             </div>
-            <div class="gd-search-infomation">@results.Count search result(s) for <span>"@Request["value"]"</span></div>
+            <div class="gd-search-infomation">@results.Count search result(s) for <span>"@Request["searchString"]"</span></div>
               <div  class="gd-search-filter hidden-xs">@Html.Sitecore().Field("Glossary Value",SitecoreItems.FilterByItem)
                 <ul>
                     <!--<li class="active"><a href="#">ALL</a></li>-->
@@ -41,25 +42,24 @@
           
         </div>
      <div class="gd-search">
-         @if (results.Select(item =>item.FilterType == Sitecore.Context.Database.GetItem(ItemGuids.ShoppingFilterType).Fields["Value"].Value).ToList().Count>0)
-         {
+
             <div class="gd-search-heading">
              <h3>@Html.Sitecore().Field("Glossary Value",SitecoreItems.StoreDetailsItem)</h3>
          </div>
-        }
+
          
          <div class="gd-search-body">
              <ol>
                  @foreach (var result in results)
                  {
-                     if (result.FilterType == Sitecore.Context.Database.GetItem(ItemGuids.ShoppingFilterType).Fields["Value"].Value)
+                     if (result.FilterType == Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem).Fields["Page Title"].Value)
                      {
                          <li>
                              <div class="gd-search-box2">
                                  <div class="row">
                                      <div class="col-sm-9">
-                                         <a href="#"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image",result.GetItem())"></a>
-                                         <h4><a href="#">@Html.Sitecore().Field("Brand Title",result.GetItem())</a></h4>
+                                         <a href="@LinkManager.GetItemUrl(result.GetItem())"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image",result.GetItem())"></a>
+                                         <h4><a href="@LinkManager.GetItemUrl(result.GetItem())">@Html.Sitecore().Field("Brand Title",result.GetItem())</a></h4>
                                          <p>
                                              @{
                                                     var floor = shoppingHelper.GetShopFloor(result.GetItem());
@@ -85,7 +85,7 @@
                          <li>
                              <div class="gd-search-box">
                                  <h5>@result.FilterType</h5>
-                                 <h4><a href="#">@result.PageTitle</a></h4>
+                                 <h4><a href="@LinkManager.GetItemUrl(result.GetItem())">@result.PageTitle</a></h4>
                                  <div>@result.GetItem().Statistics.Created.ToString("MMM dd,yyyy")</div>
                              </div>
                          </li>

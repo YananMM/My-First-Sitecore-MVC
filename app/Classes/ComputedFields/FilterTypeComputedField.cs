@@ -17,16 +17,13 @@ namespace Landmark.Classes.ComputedFields
             Item item = indexable as SitecoreIndexableItem;
             if (item == null)
                 return null;
-
-            var field = (ReferenceField) item.Fields["Search Filter Type"];
-            if (field.TargetItem == null)
-                return null;
-            else
+            while(item.Parent.ID.ToString() != SitecoreItems.LandmarkHomeItem.ID.ToString())
             {
-                return field.TargetItem.Fields["Value"].Value;
+                item = item.Parent;
             }
+            var field = item.Fields["Page Title"];
 
-            return null;
+            return field.Value;
         }
         public string FieldName { get; set; }
         public string ReturnType { get; set; }
