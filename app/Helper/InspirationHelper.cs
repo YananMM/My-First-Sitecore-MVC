@@ -14,19 +14,11 @@ namespace Landmark.Helper
     public class InspirationHelper
     {
         private Database _webDb = Factory.GetDatabase("web");
-        public List<Item> GetMonthlyExclusives(string category=null,string brand=null)
+        public List<Item> GetMonthlyExclusives()
         {
             Item exclusiveItem = Sitecore.Context.Database.GetItem(ItemGuids.MonthlyExclusivePage);
             List<Item> articles = new List<Item>();
-            if (category == null)
-                articles = exclusiveItem.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page).ToList();
-            else
-            {
-                articles = exclusiveItem.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page 
-                && ((MultilistField)item.Fields["Tags"]).TargetIDs.Contains(new ID(category))).ToList();
-            }
-            if(brand!=null)
-                articles = articles.Where(item => ((MultilistField)item.Fields["Tags"]).TargetIDs.Contains(new ID(brand))).ToList();
+            articles = exclusiveItem.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page).ToList();
             return articles;
         }
 
@@ -81,7 +73,7 @@ namespace Landmark.Helper
             {
                 foreach (var tag in tagsField.TargetIDs)
                 {
-                    tagsClass += " gdf-" + tag.ToString().ToLower();
+                    tagsClass += " gdf-" +_webDb.GetItem(tag).DisplayName.ToLower().Replace(" ","");
                 }
             }
             

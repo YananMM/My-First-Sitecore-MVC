@@ -5,8 +5,8 @@
 @using Sitecore.Links
 @{
     InspirationHelper inspirationHelper = new InspirationHelper();
-    List<Item> articleObjects = inspirationHelper.GetMonthlyExclusives(Request["category"],Request["brand"]).Where(item =>!((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
-    List<Item> articleDetailObjects = inspirationHelper.GetMonthlyExclusives(Request["category"],Request["brand"]).Where(item=>((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
+    List<Item> articleObjects = inspirationHelper.GetMonthlyExclusives().Where(item =>!((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
+    List<Item> articleDetailObjects = inspirationHelper.GetMonthlyExclusives().Where(item=>((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
     string[] alphabetsStrings = new[] {"a", "b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
 }
 
@@ -31,7 +31,7 @@
                 {
                     if (inspirationHelper.IfBrandsAlphabetValid(alphabetsStrings[i]))
                     {
-                        <li><a href="javascript:;" data-filter="gdfb-@alphabetsStrings[i].ToLower()">@alphabetsStrings[i].ToUpper()</a></li>
+                        <li><a href="javascript:;" data-filter="gdf-@alphabetsStrings[i].ToLower()">@alphabetsStrings[i].ToUpper()</a></li>
                     }
                     else
                     {
@@ -44,10 +44,10 @@
         </div>
         </div>
         <ul>
-            <li class="active"><a href="#">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AllTextItem)</a></li>
+            <li class="active"><a href="javascript:;" data-filter="*">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AllTextItem)</a></li>
             @foreach (var category in inspirationHelper.GetCategories())
             {
-                <li><a href="#" data-filter="gdf-@category.ID.ToString().ToLower()">@Html.Sitecore().Field("Tag Name",category)</a></li>
+                <li><a href="#" data-filter="gdf-@category.DisplayName.ToLower().Replace(" ","")">@Html.Sitecore().Field("Tag Name",category)</a></li>
             }
         </ul>
     </div>
