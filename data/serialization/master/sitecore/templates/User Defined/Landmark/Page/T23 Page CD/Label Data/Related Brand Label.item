@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {8B055347-174E-4D86-8B2D-22ACFAB67D14}
+id: {FB3C1675-E922-423C-8FDA-F626ABB58AAC}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Brand Object/Floor Data/LocationX
-parent: {04D8EB83-3E38-43CC-9E9B-4492EC1822DF}
-name: LocationX
+path: /sitecore/templates/User Defined/Landmark/Page/T23 Page CD/Label Data/Related Brand Label
+parent: {CE8A9A25-370B-4FA4-982B-C0FDBDF4972B}
+name: Related Brand Label
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -22,11 +22,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-400
+200
 ----version----
 language: en
 version: 1
-revision: 5359aa15-e628-4d1e-a52f-d9a98aacd251
+revision: 0deb8843-0957-486d-bd3d-2c687cbc23eb
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150804T031119Z
+20150928T094408Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-5359aa15-e628-4d1e-a52f-d9a98aacd251
+0deb8843-0957-486d-bd3d-2c687cbc23eb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150922T134142Z
+20150928T094409:635790302496924333Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

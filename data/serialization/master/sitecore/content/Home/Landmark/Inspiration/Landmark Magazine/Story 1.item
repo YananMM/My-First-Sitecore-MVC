@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: bb078c00-bbdc-4971-a962-6b789390ee59
+revision: 4458c29a-9ab5-4736-a4df-edadd64e58dc
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -83,7 +83,21 @@ name: Tags
 key: tags
 content-length: 155
 
-{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{585407EB-2AAB-454C-BB2B-2D9868FA53BA}|{1A1800EA-D40A-412C-970A-DBA534DC1F23}
+{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}
+----field----
+field: {C7837E33-73D8-4328-9350-8A9CFD1819F4}
+name: Related Story Label
+key: related story label
+content-length: 15
+
+RELATED STORIES
+----field----
+field: {7995D136-5108-4429-8656-CDF120ED27B4}
+name: Related Brand Label
+key: related brand label
+content-length: 14
+
+RELATED BRANDS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -97,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bb078c00-bbdc-4971-a962-6b789390ee59
+4458c29a-9ab5-4736-a4df-edadd64e58dc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150921T030257Z
+20150928T095607:635790309673154789Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

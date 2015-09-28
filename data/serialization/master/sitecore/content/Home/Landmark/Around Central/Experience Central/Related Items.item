@@ -1,18 +1,18 @@
 ----item----
 version: 1
-id: {62BCB71B-041C-4290-9DAB-1444D309A141}
+id: {55FFCE73-C93F-49C7-884E-8A123F24860F}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Brand Object/Brand Data
-parent: {FE57AFD0-1D81-48B5-99D7-FAD3CB2B103B}
-name: Brand Data
+path: /sitecore/content/Home/Landmark/Around Central/Experience Central/Related Items
+parent: {E973BDE0-11BC-4DD9-B949-08501F4D9353}
+name: Related Items
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {5451FE7F-09B6-4620-AE8B-5B4A3610851E}
+templatekey: Related Item Folder
 
 ----version----
 language: en
 version: 1
-revision: d7f79653-5ba5-459f-8fc0-dd0212cb8dd2
+revision: 7055b388-ff2a-4aa0-8fff-30332179021f
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -20,28 +20,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150721T065415Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
+20150828T081038Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-d7f79653-5ba5-459f-8fc0-dd0212cb8dd2
+7055b388-ff2a-4aa0-8fff-30332179021f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150922T134142Z
+20150828T082107:635763468675221307Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -33,7 +33,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 68ad7105-a83b-4497-9ace-47d69bbfc3a5
+revision: 0a12ab48-b8e9-4955-9981-22181695cf73
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -57,6 +57,13 @@ content-length: 38
 
 {3D3F4372-81D0-422E-BA25-5BB9B3A01B96}
 ----field----
+field: {2451A91F-FB4B-4A20-A899-C173F7C16F5D}
+name: Related Article Title
+key: related article title
+content-length: 15
+
+RELATED ARTICLE
+----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
 key: floor
@@ -76,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-68ad7105-a83b-4497-9ace-47d69bbfc3a5
+0a12ab48-b8e9-4955-9981-22181695cf73
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150907T035501Z
+20150925T032129:635787480893928367Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

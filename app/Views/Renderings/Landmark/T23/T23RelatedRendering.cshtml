@@ -5,32 +5,41 @@
 @using Landmark.Models
 @model RenderingModel
 @{
-    var tags = Sitecore.Context.Item.Fields["tags"];
+    InspirationHelper helper = new InspirationHelper();
+    var relatedStoris = helper.GetRelatedItems("story");
+    relatedStoris = (relatedStoris.Count > 2) ? relatedStoris.Take(2).ToList() : relatedStoris;
+    var relatedBrands = helper.GetRelatedItems("brands");
+    relatedBrands = (relatedBrands.Count > 2) ? relatedBrands.Take(2).ToList() : relatedBrands;
 }
 <div class="gd-relate">
     <div class="row">
         <div class="col-sm-8">
-            <h3>RELATED STORIES</h3>
+            <h3>@Html.Sitecore().Field("Related Story Label")</h3>
             <div class="row">
-                <div class="col-sm-6 clearfix">
-                    <img data-src="../files/landmark/images/story/story-related-01.jpg"><h5>EXLUSIVES</h5>
-                    <h4><a href="">The Thinking Man’s Guide to Style with Tom Stubbs</a></h4>
-                </div>
-                <div class="col-sm-6 clearfix">
-                    <img data-src="../files/landmark/images/story/story-related-02.jpg">
-                    <h5>EDITOR'S PICKS</h5>
-                    <h4><a href="">#Fashion Foreword with Tina Leung</a></h4>
-                </div>
+                @if (relatedStoris.Count != 0)
+                {
+                    foreach (var item in relatedStoris)
+                    {
+                        var image = LandmarkHelper.GetCallOutImage(item.Item);
+                        <div class="col-sm-6 clearfix">
+                            <img data-src="@image">
+                            <h5>@Html.Sitecore().Field("Article Headline", item.Item)</h5>
+                            <h4><a href="">@Html.Sitecore().Field("Article Intro", item.Item)</a></h4>
+                        </div>
+                    }
+                }
             </div>
         </div>
         <div class="col-sm-4">
             <div class="gd-relate-brand">
-                <h3>RELATED BRANDS</h3>
-                <h4><a href="">Alexander McQueen</a></h4>
-                <h4><a href="">Balenciagav</a></h4>
-                <h4><a href="">Burberry</a></h4>
-                <h4><a href="">J.Lindeberg</a></h4>
-                <h4><a href="">Miu Miu</a></h4>
+                <h3>@Html.Sitecore().Field("Related Brand Label")</h3>
+                @if (relatedBrands.Count != 0)
+                {
+                    foreach (var item in relatedBrands)
+                    {
+                        <h4><a href="@Sitecore.Links.LinkManager.GetItemUrl(item.Item)">@Html.Sitecore().Field("Brand Title", item.Item)</a></h4>
+                    }
+                }
             </div>
         </div>
     </div>

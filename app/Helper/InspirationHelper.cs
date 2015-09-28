@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using Landmark.Classes;
 using Landmark.Models;
+using Sitecore.Collections;
 using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Fields;
@@ -86,6 +87,50 @@ namespace Landmark.Helper
             Item brand = _webDb.GetItem(id);
             alphabetFilter += "gdf-" + brand.Fields["Brand Title"].Value.ToLower()[0];
             return alphabetFilter;
+        }
+        /// <summary>
+        /// Gets the related stories.
+        /// </summary>
+        /// <returns>List{RelatedItem}.</returns>
+        public List<RelatedItem> GetRelatedItems(string type)
+        {
+            List<RelatedItem> relatedItems = new List<RelatedItem>();
+            var currentItem = Sitecore.Context.Item;
+            List<Item> allItems = new ItemList();
+            if (type == "story")
+            {
+                var t23PagesAB = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage,
+                    ItemGuids.T23PageTemplate);
+                var t23PageCD = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage,
+                    ItemGuids.T23PageCDTemplate);
+
+                allItems = t23PagesAB.Union(t23PageCD).ToList();
+            }
+            else if (type == "brands")
+            {
+                var brands = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem,
+                    ItemGuids.T14ShopDetailsTemplate);
+                allItems = brands;
+            }
+            var currentTagsField = currentItem.Fields["tags"];
+            var itemTags = currentTagsField.ToString().Split('|').ToList();
+
+            foreach (var item in allItems)
+            {
+                var itemTagsField = item.Fields["Tags"];
+                var storyTags = itemTagsField.ToString().Split('|').ToList();
+                var tags = storyTags.Intersect(itemTags).ToList();
+                if (tags.Count != 0)
+                {
+                    RelatedItem relatedItem = new RelatedItem
+                    {
+                        Item = item,
+                        TagCount = tags.Count()
+                    };
+                    relatedItems.Add(relatedItem);
+                }
+            }
+            return relatedItems.OrderBy(p => p.TagCount).ToList();
         }
     }
 }

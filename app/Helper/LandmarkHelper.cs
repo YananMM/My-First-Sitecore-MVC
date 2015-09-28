@@ -267,6 +267,24 @@ namespace Landmark.Helper
             return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.OrderBy(p => p.DisplayName).ToList();
         }
 
+
+        /// <summary>
+        /// Gets all articles.
+        /// </summary>
+        /// <returns>List{Item}.</returns>
+        public static List<Item> GetAllArticles()
+        {
+            var t4Pages = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.NowAtLandmarkItem, ItemGuids.T4PageTemplate);
+            var t27Pages = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.MonthlyExclusivePage, ItemGuids.T27Page);
+            var t23PagesAB = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage,
+                ItemGuids.T23PageTemplate);
+            var t23PageCD = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage,
+                ItemGuids.T23PageCDTemplate);
+            var t25pages = GetItemsByRootAndTemplate(ItemGuids.AroundCentralItem, ItemGuids.T25PageTemplate);
+            var allArticles = t4Pages.Union(t27Pages).Union(t23PagesAB).Union(t23PageCD).Union(t25pages).ToList();
+            return allArticles;
+        }
+
         /// <summary>
         /// Gets the related items.
         /// </summary>
@@ -274,21 +292,61 @@ namespace Landmark.Helper
         public static List<Item> GetRelatedItems()
         {
             List<Item> items = new List<Item>();
+            List<RelatedItem> relatedArticle = new List<RelatedItem>();
             Item item = Sitecore.Context.Item;
-            var formInternal = (CheckboxField)item.Fields["Related Articles From Tags not Outside"];
-            if (formInternal != null)
+            var relatedItemFolder = item.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.RelatedItemFolder);
+            var relatedItems = GetItemsByRootAndTemplate(relatedItemFolder.ID.ToString(), ItemGuids.ArticleObject);
+
+            var allArticles = GetAllArticles();
+            var itemTagsField = item.Fields["Tags"];
+            var attractionTags = itemTagsField.ToString().Split('|').ToList();
+            foreach (var article in allArticles)
             {
-                if (!formInternal.Checked)
+                var articleTagsField = article.Fields["Tags"];
+                var articleTags = articleTagsField.ToString().Split('|').ToList();
+                var tags = articleTags.Intersect(attractionTags).ToList();
+
+                if (tags.Count() != 0)
                 {
-                    var root = item.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.RelatedItemFolder);
-                    items = LandmarkHelper.GetItemsByRootAndTemplate(root.ID.ToString(), ItemGuids.ArticleObject);
+                    RelatedItem relatedItem = new RelatedItem
+                    {
+                        Item = article,
+                        TagCount = tags.Count()
+                    };
+                    relatedArticle.Add(relatedItem);
+                    relatedArticle = relatedArticle.OrderBy(p => p.TagCount).ToList();
                 }
             }
-            else
+            items.Add(relatedItems.FirstOrDefault());
+            if (relatedArticle.FirstOrDefault() != null)
             {
-                var tags = item.Fields["Tags"];
-
+                items.Add(relatedArticle.FirstOrDefault().Item);
             }
+            return items;
+        }
+
+        /// <summary>
+        /// Gets the related pages.
+        /// </summary>
+        /// <returns>List{Item}.</returns>
+        public static List<Item> GetRelatedPages()
+        {
+            List<Item> items = new List<Item>();
+            Item item = Sitecore.Context.Item;
+            var relatedItemFolder = item.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.RelatedItemFolder);
+            var relatedItems = GetItemsByRootAndTemplate(relatedItemFolder.ID.ToString(), ItemGuids.ArticleObject);
+
+            var relatedPagesField = item.Fields["Related Page"];
+            var relatedPagesIds = relatedPagesField.ToString().Split('|').ToList();
+            if (relatedPagesIds.Count != 0)
+            {
+                foreach (var pageId in relatedPagesIds)
+                {
+                    var pageItem = Sitecore.Context.Database.GetItem(pageId);
+                    items.Add(pageItem);
+                }
+            }
+            items.AddRange(relatedItems);
             return items;
         }
 

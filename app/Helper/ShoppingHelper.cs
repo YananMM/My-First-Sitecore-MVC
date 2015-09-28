@@ -323,21 +323,14 @@ namespace Landmark.Helper
         public List<RelatedItem> GetRelatedArticles(Item item)
         {
             List<RelatedItem> relatedArticle = new List<RelatedItem>();
-            var t4Pages = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.NowAtLandmarkItem, ItemGuids.T4PageTemplate);
-            var t27Pages = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.MonthlyExclusivePage, ItemGuids.T27Page);
-            var t23PagesAB = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage,
-                ItemGuids.T23PageTemplate);
-            var t23PageCD = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage,
-                ItemGuids.T23PageCDTemplate);
-
-            var allArticles = t4Pages.Concat(t27Pages).Concat(t23PagesAB).Concat(t23PageCD).ToList();
+            var allArticles = LandmarkHelper.GetAllArticles();
 
             var brandTagsField = item.Fields["Tags"];
             var brandTags = brandTagsField.ToString().Split('|').ToList();
             foreach (var article in allArticles)
             {
                 var articleTagsField = article.Fields["Tags"];
-                var articleTags = articleTagsField.ToString().Split().ToList();
+                var articleTags = articleTagsField.ToString().Split('|').ToList();
                 var tags = articleTags.Intersect(brandTags).ToList();
 
                 if (tags.Count() != 0)
