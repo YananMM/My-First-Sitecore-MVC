@@ -1765,31 +1765,33 @@ $(document).ready(function() {
     
 
     var gdValidator = new FormValidator('gd-contact-form', [{
-        name: 'gdtitle',
+        name: 'Title',
         display: 'required',
         rules: 'required'
     }, {
-        name: 'firstname',
+        name: 'FirstName',
         rules: 'required|max_length[50]'
     }, {
-        name: 'lastname',
+        name: 'LastName',
         rules: 'required|max_length[50]'
     }, {
-        name: 'telephone',
+        name: 'Telephone',
         rules: 'numeric|max_length[20]'
     }, {
-        name: 'email',
+        name: 'Email',
         rules: 'required|valid_email|max_length[254]'
     }, {
-        name: 'gdtype',
+        name: 'EnquiryType',
         rules: 'required'
     }, {
-        name: 'message',
+        name: 'Message',
         rules: 'required'
-    }, {
-        name: 'verifycode',
-        rules: 'required|decimal'
-    }], function(errors, event) {
+    }
+    , {
+        name: 'ValidateCode',
+        rules: 'required'
+    }
+    ], function (errors, event) {
         if (errors.length > 0) {
             // Show the errors
             $('.gd-contact-form .gd-form-error').remove();
@@ -1983,7 +1985,7 @@ $(document).ready(function() {
       gdAllPromos.isotope({
         itemSelector: '.gd-promo-body>*',
         masonry: {
-          columnWidth: '.gd-promo-box'
+          columnWidth: '.gd-promo-body>[class*=gd-promo-box]'
         }
       });
      });

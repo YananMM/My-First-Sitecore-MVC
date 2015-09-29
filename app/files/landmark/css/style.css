@@ -6713,6 +6713,27 @@ button.close {
 .site-header nav h1 .responsive-logo {
   width: 100%;
 }
+.site-header .mobile-share {
+  color: #999999;
+  padding: 20px 0 10px 10px;
+}
+.site-header .mobile-share a {
+  color: #999999;
+}
+.site-header .mobile-share a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.site-header .mobile-share a:focus,
+.site-header .mobile-share a:active {
+  color: #ffffff;
+  text-decoration: none;
+}
+.site-header .mobile-share a {
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 10px;
+}
 .site-header .language {
   line-height: 40px;
 }
@@ -7781,7 +7802,7 @@ button.close {
   padding: 13px 0px 13px 20px;
 }
 .mobile-menu > .scroll-content .language {
-  padding: 20px 0 20px 10px;
+  padding: 0 0 20px 10px;
   color: #999999;
 }
 .mobile-menu > .scroll-content .language a {
@@ -8112,6 +8133,9 @@ button.close {
 }
 .icomoon-download:before {
   content: "\e616";
+}
+.icomoon-checkmark:before {
+  content: "\e61f";
 }
 .t1 {
   background-color: #000000;
@@ -12909,14 +12933,16 @@ dl.gd-content-details-tags dd a:active {
   background-color: #FFFFFF;
   content: " ";
   display: inline-block;
+  font-family: "icomoon";
   height: 20px;
+  line-height: 20px;
   left: 0;
   position: absolute;
+  text-align: center;
   width: 20px;
 }
 .gd-checkbox-wrapper .gd-checkbox.active:before {
-  background-color: #D4A962;
-  border-color: #A46C11;
+  content: "\e61f";
 }
 @media (max-width: 768px) {
   .gd-checkbox-wrapper .gd-checkbox {
@@ -12925,6 +12951,8 @@ dl.gd-content-details-tags dd a:active {
   }
   .gd-checkbox-wrapper .gd-checkbox:before {
     height: 30px;
+    line-height: 30px;
+    text-align: center;
     width: 30px;
   }
 }
@@ -14586,6 +14614,13 @@ dl.gd-content-details-tags dd a:active {
   margin-left: -15px;
   margin-right: -15px;
   margin-top: 60px;
+  margin-bottom: 60px;
+}
+.t26 .gd-promotion:before,
+.t26 .gd-promotion:after {
+  content: " ";
+  display: table;
+  clear: both;
 }
 .t26 .gd-promotion .gd-grid-sizer,
 .t26 .gd-promotion .gd-promo-box,
@@ -14629,6 +14664,18 @@ dl.gd-content-details-tags dd a:active {
 }
 .t26 .gd-promotion .gd-promo-brands.active .gd-promo-brands-area {
   display: block;
+}
+.t26 .gd-promotion .gd-promo-body {
+  padding-bottom: 30px;
+}
+.t26 .gd-promotion .gd-promo-body #infscr-loading {
+  bottom: 5px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.t26 .gd-promotion .gd-promo-more {
+  margin-bottom: 0;
 }
 .modal-body .gd-location-map {
   height: 100%;
@@ -15145,7 +15192,7 @@ dl.gd-content-details-tags dd a:active {
 @media (min-width: 768px) {
   .t37 h3 {
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .t37 .gd-magazine-info .row {
     display: table;
@@ -15155,6 +15202,9 @@ dl.gd-content-details-tags dd a:active {
     vertical-align: middle;
     height: 100%;
     float: none !important;
+  }
+  .t37 .gd-magazine-info .row .col-sm-6 .gd-magazine-info-text h5 {
+    margin-bottom: 20px;
   }
   .t37 .gd-promotion-box-area .gd-promo-more {
     margin-top: 50px;
@@ -15319,8 +15369,18 @@ dl.gd-content-details-tags dd a:active {
   margin: 50px 0;
   text-align: center;
 }
+.t15 .gd-promotion {
+  margin-bottom: 60px;
+}
+.t15 .gd-promotion:before,
+.t15 .gd-promotion:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
 .t15 .gd-promo-body {
   margin: 0 -15px;
+  padding-bottom: 30px;
 }
 .t15 .gd-promo-body .gd-promo-box {
   -webkit-box-sizing: border-box;
@@ -15331,10 +15391,19 @@ dl.gd-content-details-tags dd a:active {
   padding-right: 15px;
   width: 33.3333%;
 }
+.t15 .gd-promo-body #infscr-loading {
+  bottom: 5px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
 @media (max-width: 768px) {
   .t15 .gd-promo-body .gd-promo-box {
     width: 50%;
   }
+}
+.t15 .gd-promo-more {
+  margin-bottom: 0;
 }
 @media (min-width: 1000px) {
   body,
@@ -15912,4 +15981,14 @@ input[type="checkbox"] {
 #infscr-loading {
   font-size: 12px;
   text-align: center;
+}
+#infscr-loading > div {
+  display: inline-block;
+  line-height: 20px;
+  padding-left: 5px;
+}
+#infscr-loading > div em {
+  color: #d4a962;
+  font-size: 12px;
+  font-style: normal;
 }

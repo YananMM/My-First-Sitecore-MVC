@@ -82,11 +82,11 @@ namespace Landmark.Controllers
                     {
                         return RedirectToAction("ButtonRedirect", new { targetId = ItemGuids.ThankYouPage });
                     }
-                    else
-                    {
-                        return Content(result);
-                        //return RedirectToAction("ButtonRedirect", new { targetId = ItemGuids.ContactUsPage });
-                    }
+                    //else
+                    //{
+                    //    return Content(result);
+                    //    //return RedirectToAction("ButtonRedirect", new { targetId = ItemGuids.ContactUsPage });
+                    //}
                 }
                 catch (Exception e)
                 {
