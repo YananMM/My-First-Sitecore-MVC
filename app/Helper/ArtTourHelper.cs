@@ -70,7 +70,6 @@ namespace Landmark.Helper
             return null;
         }
 
-
         /// <summary>
         /// Gets the aet by building.
         /// </summary>

@@ -101,9 +101,9 @@ namespace Landmark.Controllers
             var code = Session["ValidateCode"].ToString();
             if (string.IsNullOrEmpty(model.Email))
             {
-                string strRegex = @"^[_\.0-9a-z-]+@([0-9a-z][0-9a-z-]+\.){1,4}[a-z]{2,3}$";
+                string strRegex = @"^[a-zA-Z0-9_+.-]+\@([a-zA-Z0-9-]+\.)+[a-zA-Z0-9]{2,4}$";
                 Regex re = new Regex(strRegex);
-                if (re.IsMatch(model.Email))
+                if (!re.IsMatch(model.Email))
                 {
                     return "Please input correct Email";
                 }
@@ -178,9 +178,18 @@ namespace Landmark.Controllers
             ValidateCode vCode = new ValidateCode();
             string code = vCode.CreateCode(5, out oRnd);
             Session["ValidateCode"] = code;
-            ViewBag.Code = code;
-            var bytes = vCode.CreateValidateCode(5, 280, 60, 22,code,oRnd);
+            var bytes = vCode.CreateValidateCode(5, 280, 60, 22, code, oRnd);
             return File(bytes, @"image/jpeg");
+        }
+
+        public ActionResult CheckCaptcha(string captcha)
+        {
+            var code = Session["ValidateCode"].ToString();
+            if (captcha == code)
+            {
+                return Json(true);
+            }
+            return Json(false);
         }
 
         /// <summary>
@@ -190,34 +199,49 @@ namespace Landmark.Controllers
         /// <returns>ActionResult.</returns>
         public ActionResult AddEmailSignup(EmailSignupModel model)
         {
-            if (ModelState.IsValid)
+            try
             {
-                using (LandmarkSitecore_MasterEntities context = new LandmarkSitecore_MasterEntities())
+                if (ModelState.IsValid)
                 {
-                    EmailSignup emailSignup = new EmailSignup
+                    string strRegex = @"^[a-zA-Z0-9_+.-]+\@([a-zA-Z0-9-]+\.)+[a-zA-Z0-9]{2,4}$";
+                    Regex re = new Regex(strRegex);
+                    if (!re.IsMatch(model.Email))
                     {
-                        ID = Guid.NewGuid(),
-                        Title = model.Title,
-                        FirstName = model.FirstName,
-                        LastName = model.LastName,
-                        Email = model.Email,
-                        Channel = model.Channel,
-                        Interest = model.Interests,
-                        Room = model.Room,
-                        Building = model.Building,
-                        Street = model.Street,
-                        Area = model.Area,
-                        State = model.State,
-                        City = model.City,
-                        Country = model.Country,
-                        Postcode = model.Postcode,
-                        District = model.District,
-                    };
-                    context.EmailSignups.Add(emailSignup);
-                    context.SaveChanges();
+                        return Content("Please input correct Email");
+                    }
+
+                    using (LandmarkSitecore_MasterEntities context = new LandmarkSitecore_MasterEntities())
+                    {
+                        EmailSignup emailSignup = new EmailSignup
+                        {
+                            ID = Guid.NewGuid(),
+                            Title = model.Title,
+                            FirstName = model.FirstName,
+                            LastName = model.LastName,
+                            Email = model.Email,
+                            Channel = model.Channel,
+                            Interest = model.Interests,
+                            Room = model.Room,
+                            Building = model.Building,
+                            Street = model.Street,
+                            Area = model.Area,
+                            State = model.State,
+                            City = model.City,
+                            Country = model.Country,
+                            Postcode = model.Postcode,
+                            District = model.District,
+                            IpAddress = Request.UserHostAddress,
+                        };
+                        context.EmailSignups.Add(emailSignup);
+                        context.SaveChanges();
+                    }
                 }
             }
-            return View();
+            catch (Exception e)
+            {
+                return Content(e.StackTrace);
+            }
+            return RedirectToAction("ButtonRedirect", new { targetId = ItemGuids.ThankYouPage });
         }
 
     }
