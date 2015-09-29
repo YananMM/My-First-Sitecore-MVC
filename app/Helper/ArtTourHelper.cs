@@ -120,20 +120,20 @@ namespace Landmark.Helper
             }
             return artPieces;
         }
-        
+
         /// <summary>
         /// Gets the art piece json by building.
         /// </summary>
-        public List<Item> GetArtPieceByBuildingSvgId(string id,string page=null)
+        public List<Item> GetArtPieceByBuildingSvgId(string id, string page = null)
         {
             var buildings = LandmarkHelper.GetBuildings();
-            Item buildingItem = buildings.Where(b=>b.Fields["Building Svg Id"].Value==id).ToList().FirstOrDefault();
+            Item buildingItem = buildings.Where(b => b.Fields["Building Svg Id"].Value == id).ToList().FirstOrDefault();
             List<Item> allArtPieces = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkArtTourItem, ItemGuids.T29Template);
             List<Item> artPiecesByBuilding = (from art in allArtPieces
                                               where Sitecore.Context.Database.GetItem(art.Fields["Floor and Building"].Value).Parent.ID.ToString() == buildingItem.ID.ToString()
                                               select art).ToList();
-            int intPage = Int32.Parse(page??"1");
-            return artPiecesByBuilding.Skip((intPage - 1) * 4).Take(4).ToList();
+            int intPage = Int32.Parse(page ?? "1");
+            return artPiecesByBuilding.Skip((intPage - 1) * 1).Take(1).ToList();
         }
 
         /// <summary>
@@ -144,7 +144,7 @@ namespace Landmark.Helper
         {
             List<Item> allArtists = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkArtTourItem,
                 ItemGuids.T30Template).ToList();
-            if (allArtists != null)
+            if (allArtists.Count != 0)
             {
                 return allArtists.OrderBy(p => p["Artist Name"].ToString()).ToList();
             }

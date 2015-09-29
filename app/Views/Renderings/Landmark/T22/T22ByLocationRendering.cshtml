@@ -14,7 +14,7 @@
     var buildings = LandmarkHelper.GetBuildings();
     var building = helper.GetCurrentBuilding(Request["building"]);
     var page = Request["page"] ?? "1";
-    var artpieces = helper.GetArtPieceByBuildingSvgId(building.Fields["Building Svg Id"].Value,page);
+    var artpieces = helper.GetArtPieceByBuildingSvgId(building.Fields["Building Svg Id"].Value, page);
 }
 <div class="row">
     <div id="gd-list-locations" class="col-md-6">
@@ -38,12 +38,12 @@
         </div>
     </div>
 
-    <div class="col-md-6">
-        <div id="mapplic-t22" data-src="/Service/Landmark.asmx/GetLocationJson" data-src-ie8="/Service/Landmark.asmx/GetLocationJson"></div>
-    </div>
+    @*<div class="col-md-6">
+            <div id="mapplic-t22" data-src="/Service/Landmark.asmx/GetLocationJson" data-src-ie8="/Service/Landmark.asmx/GetLocationJson"></div>
+        </div>*@
 </div>
 <div class="gd-artlist">
-    <h3>@Html.Sitecore().Field("Building Title",building)</h3>
+    <h3>@Html.Sitecore().Field("Building Title", building)</h3>
     <div id="gd-art-gallery">
         <div class="row">
             @foreach (Item piece in artpieces)
