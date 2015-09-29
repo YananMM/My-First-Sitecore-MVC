@@ -15,11 +15,17 @@ namespace Landmark.Helper
     public class InspirationHelper
     {
         private Database _webDb = Factory.GetDatabase("web");
-        public List<Item> GetMonthlyExclusives()
+        public List<Item> GetMonthlyExclusives(string category = null)
         {
             Item exclusiveItem = Sitecore.Context.Database.GetItem(ItemGuids.MonthlyExclusivePage);
             List<Item> articles = new List<Item>();
-            articles = exclusiveItem.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page).ToList();
+            if (category == null)
+                articles = exclusiveItem.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page).ToList();
+            else
+            {
+                articles = exclusiveItem.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page
+                && ((MultilistField)item.Fields["Tags"]).TargetIDs.Contains(new ID(category))).ToList();
+            }
             return articles;
         }
 

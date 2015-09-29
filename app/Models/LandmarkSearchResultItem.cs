@@ -19,6 +19,24 @@ namespace Landmark.Models
         [IndexField("Page Title")]
         public string PageTitle { get; set; }
 
+        [IndexField("Page Content")]
+        public string PageContent { get; set; }
+
+        [IndexField("Content Title")]
+        public string ContentTitle { get; set; }
+
+        [IndexField("Content Description")]
+        public string ContentDescription { get; set; }
+
+        [IndexField("Article Title")]
+        public string ArticleTitle { get; set; }
+
+        [IndexField("Article Subtitle")]
+        public string ArticleSubtitle { get; set; }
+
+        [IndexField("Article Intro")]
+        public string ArticleIntro { get; set; }
+
         [IndexField("filtertype")]
         public String FilterType { get; set; }
 
@@ -27,12 +45,5 @@ namespace Landmark.Models
 
         [IndexField("tag")]
         public String Tag { get; set; }
-
-        public string ArticleIntro { get; set; }
-
-        public DateTime ArticleDate { get; set; }
-
-        public string BrandImage { get; set; }
-
     }
 }

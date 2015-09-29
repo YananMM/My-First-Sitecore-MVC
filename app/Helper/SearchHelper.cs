@@ -9,6 +9,7 @@ using Sitecore.ContentSearch;
 using Sitecore.Configuration;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
+using Sitecore.Mvc.Extensions;
 
 namespace Landmark.Helper
 {
@@ -31,7 +32,10 @@ namespace Landmark.Helper
                 using (var context = index.CreateSearchContext())
                 {
                     results = context.GetQueryable<LandmarkSearchResultItem>()
-                        .Where(item => item.Language.Equals(language) && item.Content.Contains(searchString))
+                        .Where(item => item.Language.Equals(language) && 
+                            (item.PageTitle.Contains(searchString) || item.PageContent.Contains(searchString) || item.ContentTitle.Contains(searchString)
+                            ||item.ContentDescription.Contains(searchString) || item.Tag.Contains(searchString)
+                            || item.ArticleTitle.Contains(searchString) || item.ArticleIntro.Contains(searchString) ||item.ArticleSubtitle.Contains(searchString)))
                         .ToList();
                     if(type!=null)
                         results = results.Where(item => item.FilterType == type).ToList();

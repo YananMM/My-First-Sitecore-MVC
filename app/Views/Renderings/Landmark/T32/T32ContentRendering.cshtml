@@ -42,10 +42,13 @@
           
         </div>
      <div class="gd-search">
-
+        @if (results.Where(result=>result.FilterType== Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem).Fields["Page Title"].Value && result.GetItem().TemplateID.ToString() == ItemGuids.T14ShopDetailsTemplate).ToList().Count>0)
+        {
             <div class="gd-search-heading">
-             <h3>@Html.Sitecore().Field("Glossary Value",SitecoreItems.StoreDetailsItem)</h3>
-         </div>
+                <h3>@Html.Sitecore().Field("Glossary Value", SitecoreItems.StoreDetailsItem)</h3>
+            </div>
+        }
+         
 
          
          <div class="gd-search-body">
@@ -64,7 +67,7 @@
                                              @{
                                                     var floor = shoppingHelper.GetShopFloor(result.GetItem());
                                                 }
-                                             <span class="icomoon-location2"></span>@Html.Sitecore().Field("Area"),@floor["Floor Title"],@floor.Parent["Building Title"]
+                                             <span class="icomoon-location2"></span>@Html.Sitecore().Field("Area",result.GetItem()),@floor["Floor Title"],@floor.Parent["Building Title"]
                                          </p>
                                          <p>
                                              <span class="icomoon-phone"></span>@Html.Sitecore().Field("Contact",result.GetItem())

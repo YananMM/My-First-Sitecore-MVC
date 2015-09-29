@@ -33,7 +33,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 462c4239-0044-452d-9708-3e495cccde4f
+revision: ef4f4682-e2ba-47ea-9041-b31ea2393cf8
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -44,8 +44,8 @@ content-length: 15
 CENTRAL WEDDING
 ----field----
 field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
-name: Buildings
-key: buildings
+name: Building
+key: building
 content-length: 38
 
 {04AF3BF4-1C4D-43BC-9884-1431E3A44B11}
@@ -56,13 +56,6 @@ key: page title
 content-length: 15
 
 CENTRAL WEDDING
-----field----
-field: {D238DB6D-29CE-4830-9D41-6A022AFB22A6}
-name: Search Filter Type
-key: search filter type
-content-length: 38
-
-{3D3F4372-81D0-422E-BA25-5BB9B3A01B96}
 ----field----
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
@@ -98,14 +91,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-462c4239-0044-452d-9708-3e495cccde4f
+ef4f4682-e2ba-47ea-9041-b31ea2393cf8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150922T140100Z
+20150928T182545Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
