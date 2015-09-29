@@ -29,7 +29,7 @@
     <div class="gd-contact">
         <div class="gd-contact-area">
             <div class="gd-contact-body">
-                <form class="gd-contact-form" name="gd-contact-form" action="@Url.Action("AddEmailSignup", "Home")" method="POST" data-captcha-url="/fake-handlers/checkcaptcha.json">
+                <form class="gd-contact-form" name="gd-contact-form" action="@Url.Action("AddEmailSignup", "Home")" method="POST" data-captcha-url="@Url.Action("CheckCaptcha", "Home")">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="gd-contact-intro">
@@ -97,8 +97,8 @@
                                                     int i = 1;
                                                     foreach (var item in channels)
                                                     {
-                                                        <span @if (i == 1) { <text> class="current" </text>  } else { <text> class="caret" </text>  }>@item.Fields["Value"]</span>
-                                                        i++;
+                                                        <span @if (i == 1) { <text> class="current" </text>      } else { <text> class="caret" </text>      }>@item.Fields["Value"]</span>
+i++;
                                                     }
                                                 }
                                             </button>
@@ -235,23 +235,18 @@
                                                     {
                                                         foreach (var item in list1)
                                                         {
-                                                            <span class="gd-checkbox" data-value="@item.DisplayName">@item.Fields["Value"]</span>
+                                                            <span class="gd-checkbox" data-value="@item.Fields["Value"]">@item.Fields["Value"]</span>
                                                         }
                                                     }
-                                                    <span class="gd-checkbox" data-value="2">Home &amp; Kids</span>
-                                                    <span class="gd-checkbox" data-value="4">Gadgets</span>
-                                                    <span class="gd-checkbox" data-value="6">Arts</span>
-                                                    <span class="gd-checkbox" data-value="8">Movies</span>
-                                                    <span class="gd-checkbox" data-value="10">Sports/Fitness</span>
-                                                    <span class="gd-checkbox" data-value="12">Social Responsibilty</span>
                                                 </div>
                                                 <div class="col-xs-6">
-                                                    <span class="gd-checkbox" data-value="1">Fashion</span>
-                                                    <span class="gd-checkbox" data-value="3">Books</span>
-                                                    <span class="gd-checkbox" data-value="5">Automobiles</span>
-                                                    <span class="gd-checkbox" data-value="7">Music</span>
-                                                    <span class="gd-checkbox" data-value="9">Photography</span>
-                                                    <span class="gd-checkbox" data-value="11">Travelling</span>
+                                                    @if (list2.Count != 0)
+                                                    {
+                                                        foreach (var item in list2)
+                                                        {
+                                                            <span class="gd-checkbox" data-value="@item.Fields["Value"]">@item.Fields["Value"]</span>
+                                                        }
+                                                    }
                                                 </div>
                                                 <div class="col-xs-12">
                                                     <div class="gd-others" id="gd-others">
@@ -304,7 +299,6 @@
                     </div>
                     <button type="submit" class="btn btn-black">@Html.Sitecore().Field("Button Label")</button>
                 </form>
-
             </div>
         </div>
     </div>
@@ -314,4 +308,5 @@
     function changeImg() {
         document.getElementById("valiCode").src = "@Url.Action("GetValidateCode", "Home")?time=" + Math.random();
     }
+
 </script>

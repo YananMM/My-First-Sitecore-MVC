@@ -30,5 +30,8 @@ namespace Landmark.Models
         public string State { get; set; }
         public string Postcode { get; set; }
         public string Country { get; set; }
+        public string IpAddress { get; set; }
+        public string Gender { get; set; }
+        public Nullable<bool> OptIn { get; set; }
     }
 }

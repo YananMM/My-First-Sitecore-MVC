@@ -333,9 +333,16 @@ namespace Landmark.Helper
         {
             List<Item> items = new List<Item>();
             Item item = Sitecore.Context.Item;
-            var relatedItemFolder = item.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.RelatedItemFolder);
-            var relatedItems = GetItemsByRootAndTemplate(relatedItemFolder.ID.ToString(), ItemGuids.ArticleObject);
-
+            List<Item> relatedItems = new List<Item>();
+            if (item.ID.ToString() != ItemGuids.ThankYouPage)
+            {
+                var relatedItemFolder =  
+                    item.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.RelatedItemFolder);
+                if (relatedItemFolder != null)
+                {
+                    relatedItems = GetItemsByRootAndTemplate(relatedItemFolder.ID.ToString(), ItemGuids.ArticleObject);
+                }
+            }
             var relatedPagesField = item.Fields["Related Page"];
             var relatedPagesIds = relatedPagesField.ToString().Split('|').ToList();
             if (relatedPagesIds.Count != 0)

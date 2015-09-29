@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+id: {1A103714-8A11-45A7-B94D-5FA2D0DDD1C8}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Page Base Object/Page Data/Is Shown In Navigation
-parent: {5D4B5095-02C6-45BA-8C86-F5D2B851F89A}
-name: Is Shown In Navigation
+path: /sitecore/templates/User Defined/Landmark/Page/T10 Page/Explore Data/Related Page
+parent: {07862CA2-ACA4-4ED7-B43D-AED923245FE5}
+name: Related Page
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -15,7 +15,14 @@ name: Type
 key: type
 content-length: 8
 
-Checkbox
+Treelist
+----field----
+field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
+name: Source
+key: source
+content-length: 31
+
+/sitecore/content/Home/Landmark
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -26,7 +33,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: e1c55934-d8f7-4589-a76b-e497b7a3e735
+revision: 33da1f1f-6656-4c91-b098-689700681bb4
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +41,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150721T065108Z
+20150929T020536Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-e1c55934-d8f7-4589-a76b-e497b7a3e735
+33da1f1f-6656-4c91-b098-689700681bb4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150929T030530:635790927305934472Z
+20150929T033242:635790943629378119Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
