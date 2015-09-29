@@ -1893,6 +1893,9 @@ $(document).ready(function() {
     }, {
         name: 'optin',
         rules: 'required'
+    }, {
+        name: 'verifycode',
+        rules: 'required|callback_check_captcha'
     }], function(errors, event) {
         if (errors.length > 0) {
           // Show the errors
@@ -1906,20 +1909,20 @@ $(document).ready(function() {
         }
     });
 
-    //gdValidator.registerCallback('check_captcha', function(value) {
-    //  var isMatch = false;
-    //  $.ajax({
-    //    async: false,
-    //    url: $('form[name=gd-contact-form]').data('captchaUrl'),
-    //    data: {captcha: value},
-    //    success: function(result){
-    //      isMatch = result;
-    //    },
-    //    dataType: 'json'
-    //  });
+    gdValidator.registerCallback('check_captcha', function(value) {
+      var isMatch = false;
+      $.ajax({
+        async: false,
+        url: $('form[name=gd-contact-form]').data('captchaUrl'),
+        data: {captcha: value},
+        success: function(result){
+          isMatch = result;
+        },
+        dataType: 'json'
+      });
 
-    //  return isMatch;
-    //});
+      return isMatch;
+    });
     
     
     $('#gd-preferred-comm .dropdown-menu>li>a').click(function() {
