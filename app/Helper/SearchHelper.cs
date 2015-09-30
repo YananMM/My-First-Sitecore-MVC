@@ -34,7 +34,7 @@ namespace Landmark.Helper
                     results = context.GetQueryable<LandmarkSearchResultItem>()
                         .Where(item => item.Language.Equals(language) && 
                             (item.PageTitle.Contains(searchString) || item.PageContent.Contains(searchString) || item.ContentTitle.Contains(searchString)
-                            ||item.ContentDescription.Contains(searchString) || item.Tag.Contains(searchString)
+                            ||item.ContentDescription.Contains(searchString) || item.Tags.Contains(searchString)
                             || item.ArticleTitle.Contains(searchString) || item.ArticleIntro.Contains(searchString) ||item.ArticleSubtitle.Contains(searchString)))
                         .ToList();
                     if(type!=null)

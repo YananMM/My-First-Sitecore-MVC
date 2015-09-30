@@ -7,6 +7,8 @@
     ShoppingHelper shoppingHelper = new ShoppingHelper();
     var exclusiveItem = inspirationHelper.GetMonthlyExclusives(category: shoppingHelper.GetCategoryFromItem(Sitecore.Context.Item.ID.ToString()).ID.ToString()).FirstOrDefault();
 }
+@if(exclusiveItem!=null)
+{
 <div class=" menbox-2">
     <a href="#"  class="menbox-img" >
         <div class="menbox-img-mask"></div>
@@ -18,3 +20,4 @@
     <p>@Html.Sitecore().Field("Article Headline", exclusiveItem) (@Html.Sitecore().Field("Product Price", exclusiveItem))</p>
     </div>
 </div>
+}

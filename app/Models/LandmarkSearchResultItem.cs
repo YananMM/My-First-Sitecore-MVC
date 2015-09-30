@@ -43,7 +43,7 @@ namespace Landmark.Models
         [IndexField("filterorder")]
         public String FilterOrder { get; set; }
 
-        [IndexField("tag")]
-        public String Tag { get; set; }
+        [IndexField("tags")]
+        public String Tags { get; set; }
     }
 }
