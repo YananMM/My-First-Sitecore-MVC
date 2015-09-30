@@ -39,6 +39,7 @@ namespace Landmark.Service
             floorplans.mapwidth = "700";
             floorplans.categories =
                (from Item floor in building.Children
+                where _shopHelper.GetBrandsByFloor(floor).Count > 0
                 select new Floor
                 {
                     id = "floor-" + floor.ID.ToShortID(),
