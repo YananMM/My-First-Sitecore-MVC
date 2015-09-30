@@ -132,6 +132,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Applications\Landmark\EmailSignupExport.aspx.cs">
+      <DependentUpon>EmailSignupExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Applications\Landmark\EmailSignupExport.aspx.designer.cs">
+      <DependentUpon>EmailSignupExport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_GlobalResources\Landmark.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -164,13 +171,6 @@
     <Compile Include="Helper\SearchHelper.cs" />
     <Compile Include="Helper\ShoppingHelper.cs" />
     <Compile Include="Helper\SitecoreFieldHelper.cs" />
-    <Compile Include="layouts\Landmark\EmailSignupExport.aspx.cs">
-      <DependentUpon>EmailSignupExport.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="layouts\Landmark\EmailSignupExport.aspx.designer.cs">
-      <DependentUpon>EmailSignupExport.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Models\ContactUsFormModel.cs" />
     <Compile Include="Models\EmailSignup.cs">
       <DependentUpon>Landmark.tt</DependentUpon>
@@ -229,6 +229,7 @@
     <Content Include="apple-touch-icon-76x76.png" />
     <Content Include="apple-touch-icon-precomposed.png" />
     <Content Include="apple-touch-icon.png" />
+    <Content Include="Applications\Landmark\EmailSignupExport.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon-160x160.png" />
     <Content Include="favicon-16x16.png" />
@@ -594,7 +595,6 @@
     <Content Include="files\landmark\js\lib\validate.min.js" />
     <Content Include="files\landmark\js\main.js" />
     <Content Include="files\landmark\js\npm.js" />
-    <Content Include="layouts\Landmark\EmailSignupExport.aspx" />
     <Content Include="mstile-144x144.png" />
     <Content Include="mstile-150x150.png" />
     <Content Include="mstile-310x150.png" />

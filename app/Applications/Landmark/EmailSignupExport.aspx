@@ -15,6 +15,7 @@
             <asp:calendar runat="server" ID="fromDate"></asp:calendar>
             <label>To Date:</label>
             <asp:calendar runat="server" ID="toDate"></asp:calendar>
+            <asp:button runat="server" text="Export" ID="exportBtn" OnClick="ExportBtn_Click" />
         </div>
     </div>
     </form>
