@@ -80,7 +80,7 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label for="email">@Html.Sitecore().Field("Email Label") *</label>
-                                        <input type="email" class="form-control" id="email" name="Email" data-error="Email is missing or Email format is invalid.">
+                                        <input type="email" class="form-control" id="email" name="email" data-error="Email is missing or Email format is invalid.">
                                     </div>
                                 </div>
                             </div>
@@ -90,7 +90,7 @@
                                         <label for="title">@Html.Sitecore().Field("Channels Label")</label>
                                         <div class="dropdown gd-dropdown gd-dropdown-fill" id="gd-preferred-comm">
                                             <!-- User's selection will be stored here -->
-                                            <input type="hidden" name="Channel" value="0">
+                                            <input type="hidden" name="channel" value="0">
                                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
                                                 @if (channels.Count != 0)
                                                 {
@@ -128,13 +128,13 @@ i++;
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="room">@Html.Sitecore().Field("Room Label") *</label>
-                                                    <input type="text" class="form-control" id="room" name="Room" data-error="Room is missing.">
+                                                    <input type="text" class="form-control" id="room" name="room" data-error="Room is missing.">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="building">@Html.Sitecore().Field("Building Label") *</label>
-                                                    <input type="text" class="form-control" id="building" name="Building" data-error="Building is missing.">
+                                                    <input type="text" class="form-control" id="building" name="building" data-error="Building is missing.">
                                                 </div>
                                             </div>
                                         </div>
@@ -142,7 +142,7 @@ i++;
                                             <div class="col-sm-12">
                                                 <div class="form-group">
                                                     <label for="street">@Html.Sitecore().Field("Street Label") *</label>
-                                                    <input type="text" class="form-control" id="street" name="Street" data-error="Street is missing.">
+                                                    <input type="text" class="form-control" id="street" name="street" data-error="Street is missing.">
                                                 </div>
                                             </div>
                                         </div>
@@ -150,14 +150,14 @@ i++;
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="area">@Html.Sitecore().Field("Area Label")</label>
-                                                    <input type="text" class="form-control" id="area" name="Area" data-error="Incorrect area name.">
+                                                    <input type="text" class="form-control" id="area" name="area" data-error="Incorrect area name.">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group hidden">
                                                     <label class="hidden-xs">&nbsp;</label>
                                                     <div class="gd-checkbox-wrapper" data-type="radio">
-                                                        <input type="hidden" name="District" data-error="District is missing.">
+                                                        <input type="hidden" name="district" data-error="District is missing.">
                                                         @if (districts.Count != 0)
                                                         {
                                                             foreach (var item in districts)
@@ -173,13 +173,13 @@ i++;
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="state">@Html.Sitecore().Field("State Label")</label>
-                                                    <input type="text" class="form-control" id="State" name="state" data-error="Incorrect state name.">
+                                                    <input type="text" class="form-control" id="state" name="state" data-error="Incorrect state name.">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="city">@Html.Sitecore().Field("City Label") *</label>
-                                                    <input type="text" class="form-control" id="City" name="city" data-error="City is missing.">
+                                                    <input type="text" class="form-control" id="city" name="city" data-error="City is missing.">
                                                 </div>
                                             </div>
                                         </div>
@@ -187,7 +187,7 @@ i++;
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="postcode">@Html.Sitecore().Field("Postcode Label")</label>
-                                                    <input type="text" class="form-control" id="Postcode" name="postcode" data-error="Incorrect postal code.">
+                                                    <input type="text" class="form-control" id="postcode" name="postcode" data-error="Incorrect postal code.">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
@@ -195,7 +195,7 @@ i++;
                                                     <label>@Html.Sitecore().Field("Country Label") *</label>
                                                     <div class="dropdown gd-dropdown gd-dropdown-fill" id="gd-country">
                                                         <!-- User's selection will be stored here -->
-                                                        <input type="hidden" name="Country" data-error="Country is missing.">
+                                                        <input type="hidden" name="country" data-error="Country is missing.">
                                                         <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
                                                             <span class="current">@Html.Sitecore().Field("Select Label")</span>
                                                             <span class="caret"></span>
@@ -222,7 +222,7 @@ i++;
                                     <div class="form-group">
                                         <label>@Html.Sitecore().Field("Interests Label") *</label>
                                         <div class="gd-checkbox-wrapper gd-interests">
-                                            <input type="hidden" name="Interests" data-error="Please select one interests item at least." value="">
+                                            <input type="hidden" name="interests" data-error="Please select one interests item at least." value="">
                                             <div class="row">
                                                 @{
                                                     var count = interests.Count;
@@ -253,7 +253,7 @@ i++;
                                                         <span class="gd-checkbox" data-value="">
                                                             @Html.Sitecore().Field("Other Label") (@Html.Sitecore().Field("Specify")
                                                         </span>
-                                                        <input type="text" class="form-control" name="Other" data-error="Please specify other interests." disabled="disabled">
+                                                        <input type="text" class="form-control" name="other" data-error="Please specify other interests." disabled="disabled">
                                                         <span>)</span>
                                                     </div>
                                                 </div>
