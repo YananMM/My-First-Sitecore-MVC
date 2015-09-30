@@ -1,0 +1,13 @@
+﻿@model RenderingModel
+@{
+    var currentItem = Sitecore.Context.Item;
+    var pageTitle = currentItem.DisplayName.ToLower();
+    var homePage = currentItem.Children.FirstOrDefault();
+}
+<script src="/files/landmark/js/lib/jquery-1.11.2.min.js"></script>
+
+<script language="javascript" type="text/javascript">
+    $(document).ready(function () {
+        window.Location.href = 'http://dev.landmark.com/@Sitecore.Links.LinkManager.GetItemUrl(homePage)';
+    })
+</script>
