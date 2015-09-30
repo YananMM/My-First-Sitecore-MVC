@@ -164,6 +164,13 @@
     <Compile Include="Helper\SearchHelper.cs" />
     <Compile Include="Helper\ShoppingHelper.cs" />
     <Compile Include="Helper\SitecoreFieldHelper.cs" />
+    <Compile Include="layouts\Landmark\EmailSignupExport.aspx.cs">
+      <DependentUpon>EmailSignupExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\Landmark\EmailSignupExport.aspx.designer.cs">
+      <DependentUpon>EmailSignupExport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\ContactUsFormModel.cs" />
     <Compile Include="Models\EmailSignup.cs">
       <DependentUpon>Landmark.tt</DependentUpon>
@@ -587,6 +594,7 @@
     <Content Include="files\landmark\js\lib\validate.min.js" />
     <Content Include="files\landmark\js\main.js" />
     <Content Include="files\landmark\js\npm.js" />
+    <Content Include="layouts\Landmark\EmailSignupExport.aspx" />
     <Content Include="mstile-144x144.png" />
     <Content Include="mstile-150x150.png" />
     <Content Include="mstile-310x150.png" />
