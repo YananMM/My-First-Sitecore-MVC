@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {03B581DC-FFC5-40BF-ACD6-032D9DF5586E}
+database: master
+path: /sitecore/content/Home/Landmark/Dining/Kids/Shoes/By Brands
+parent: {CC9D6B80-BE9E-4B7C-B4D9-4ABEF6010227}
+name: By Brands
+master: {EF72B181-F50E-46E5-84B4-74392DA7AA04}
+template: {0B591CE8-50CB-4CF5-9CBF-F2F6E61F23E8}
+templatekey: T13 Page
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 53d9ef2b-89ba-4ce4-a42d-231d9b4268cb
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 9
+
+By Brands
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150910T020221Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+53d9ef2b-89ba-4ce4-a42d-231d9b4268cb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150910T020221Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
