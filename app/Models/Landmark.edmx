@@ -28,6 +28,7 @@
           <Property Name="IpAddress" Type="nvarchar" MaxLength="50" />
           <Property Name="Gender" Type="nvarchar" MaxLength="10" />
           <Property Name="OptIn" Type="bit" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
         </EntityType>
         <EntityContainer Name="LandmarkSitecore_MasterModelStoreContainer">
           <EntitySet Name="EmailSignup" EntityType="Self.EmailSignup" Schema="dbo" store:Type="Tables" />
@@ -62,6 +63,7 @@
           <Property Name="IpAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
           <Property Name="OptIn" Type="Boolean" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -72,6 +74,7 @@
           <EntitySetMapping Name="EmailSignups">
             <EntityTypeMapping TypeName="LandmarkSitecore_MasterModel.EmailSignup">
               <MappingFragment StoreEntitySet="EmailSignup">
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
                 <ScalarProperty Name="OptIn" ColumnName="OptIn" />
                 <ScalarProperty Name="Gender" ColumnName="Gender" />
                 <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />

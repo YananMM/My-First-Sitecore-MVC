@@ -231,6 +231,7 @@ namespace Landmark.Controllers
                             Postcode = model.Postcode,
                             District = model.District,
                             IpAddress = Request.UserHostAddress,
+                            CreatedOn = DateTime.Now
                         };
                         context.EmailSignups.Add(emailSignup);
                         context.SaveChanges();

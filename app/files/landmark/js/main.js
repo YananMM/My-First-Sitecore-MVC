@@ -1884,7 +1884,7 @@ $(document).ready(function() {
           return $('[name=interests]').val() === '';
         }
     }, {
-        name: 'others',
+        name: 'other',
         rules: 'required',
         depends: function() {
           return $(this).prev('.gd-checkbox').hasClass('active');
