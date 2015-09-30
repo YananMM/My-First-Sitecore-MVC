@@ -1,6 +1,6 @@
 ----item----
 version: 1
-id: {3DED45C4-C26E-4498-9909-AB777C4D1244}
+id: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 database: master
 path: /sitecore/templates/User Defined/Landmark/Object/Brand Object/Shop Data/Opening Hours
 parent: {81C5DAD4-A26D-454D-A495-6170B345B163}
@@ -22,18 +22,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-200
+250
 ----version----
 language: en
 version: 1
-revision: 92404d48-f640-456d-ac95-a2487f8205e0
-
-----field----
-field: {9541E67D-CE8C-4225-803D-33F7F29F09EF}
-name: __Short description
-key: __short description
-content-length: 0
-
+revision: 70d45e58-9df1-4f91-b4e8-3099f90ffe1c
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150804T003248Z
+20150930T154252Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-92404d48-f640-456d-ac95-a2487f8205e0
+70d45e58-9df1-4f91-b4e8-3099f90ffe1c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150930T144838Z
+20150930T154300Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
