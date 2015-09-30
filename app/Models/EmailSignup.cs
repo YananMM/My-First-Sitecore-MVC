@@ -33,5 +33,6 @@ namespace Landmark.Models
         public string IpAddress { get; set; }
         public string Gender { get; set; }
         public Nullable<bool> OptIn { get; set; }
+        public System.DateTime CreatedOn { get; set; }
     }
 }

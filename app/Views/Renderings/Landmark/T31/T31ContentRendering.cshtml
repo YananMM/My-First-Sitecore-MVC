@@ -43,7 +43,7 @@
                                         <label for="title">@Html.Sitecore().Field("Title Label") *</label>
                                         <div class="dropdown gd-dropdown gd-dropdown-fill">
                                             <!-- User's selection will be stored here -->
-                                            <input type="hidden" name="Title" data-error="Title is missing.">
+                                            <input type="hidden" name="title" data-error="Title is missing.">
                                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
                                                 <span class="current">@Html.Sitecore().Field("Select Label")T</span>
                                                 <span class="caret"></span>
@@ -66,13 +66,13 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="firstname">@Html.Sitecore().Field("First Name") *</label>
-                                        <input type="text" class="form-control" id="firstname" name="FirstName" data-error="First name is missing.">
+                                        <input type="text" class="form-control" id="firstname" name="firstname" data-error="First name is missing.">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="lastname">@Html.Sitecore().Field("Last Name") *</label>
-                                        <input type="text" class="form-control" id="lastname" name="LastName" data-error="Last name is missing.">
+                                        <input type="text" class="form-control" id="lastname" name="lastname" data-error="Last name is missing.">
                                     </div>
                                 </div>
                             </div>
@@ -222,7 +222,7 @@ i++;
                                     <div class="form-group">
                                         <label>@Html.Sitecore().Field("Interests Label") *</label>
                                         <div class="gd-checkbox-wrapper gd-interests">
-                                            <input type="hidden" name="Interests" data-error="Please select one interests item at least.">
+                                            <input type="hidden" name="Interests" data-error="Please select one interests item at least." value="">
                                             <div class="row">
                                                 @{
                                                     var count = interests.Count;

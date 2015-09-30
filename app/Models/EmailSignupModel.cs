@@ -119,6 +119,12 @@ namespace Landmark.Models
         /// </summary>
         /// <value>The interest.</value>
         public string Interests { get; set; }
+
+        /// <summary>
+        /// Gets or sets the created configuration.
+        /// </summary>
+        /// <value>The created configuration.</value>
+        public DateTime CreatedOn { get; set; }
     }
 
     public class EmailSignUpCsvModel {
@@ -277,6 +283,8 @@ namespace Landmark.Models
         [CsvColumn(Name = "INTEREST_OTHERS", FieldIndex = 31)]
         public string InterestOthers { get; set; }
 
+        public DateTime CreatedOn { get; set; }
+
         public EmailSignUpCsvModel() { }
         public EmailSignUpCsvModel(EmailSignupModel model)
         {
@@ -298,6 +306,7 @@ namespace Landmark.Models
             City = model.City;
             Postcode = model.Postcode;
             Country = model.Country;
+            CreatedOn = model.CreatedOn;
 
             // ugly conversion codes
             var interests = model.Interests.Split(',');
