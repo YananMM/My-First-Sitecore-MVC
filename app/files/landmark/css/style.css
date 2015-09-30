@@ -13123,6 +13123,18 @@ dl.gd-content-details-tags dd a:active {
 .t35 #gd-map-switcher-m {
   margin: 30px 0;
 }
+@media print {
+  .t35 > .site-header,
+  .t35 > .page-header,
+  .t35 > .container,
+  .t35 > .back-top,
+  .t35 > .site-footer {
+    display: none;
+  }
+  .t35 > iframe {
+    height: 1700px;
+  }
+}
 .t8 .gd-brief {
   margin-top: 53px;
 }
