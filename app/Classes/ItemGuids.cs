@@ -42,7 +42,7 @@ namespace Landmark.Classes
         public static readonly String SlideObjectTemplate = "{FFC1447C-5F42-4419-AEF4-6175FB69507C}";
         public static readonly String ButtomSlideObjectTemplate = "{BCC31564-C738-41D5-ABA5-FD436557DF85}";
         public static readonly String ImageTextObjectTemplate = "{CFE5379F-402F-4FB5-A1C5-0E42CA464BC1}";
-        public static readonly String NewsletterSignUpPage = "{5E154158-9B1A-4471-ADE5-B5CC226B1161}";
+        public static readonly String NewsletterSignUpPage = "{0610C5FA-FA5E-415A-8D8E-7DAE9445C1E3}";
         public static readonly String FooterSocialMediaFolderItem = "{08BB2BC5-ACFC-4418-AED0-4B8DC6D1B0CA}";
         public static readonly String LandmarkArtTourItem = "{5C03DD0D-4881-4A9B-A58D-5FFA101B3533}";
         public static readonly String T29Template = "{ADE0F061-FF28-4CDB-B6C3-14021D75355A}";

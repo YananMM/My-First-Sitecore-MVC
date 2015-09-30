@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {28DC69B3-B11B-4CFE-BB76-B97B318E95E1}
+database: master
+path: /sitecore/content/Global/Landmark/Tags/Category/Dining/Women/Accessories
+parent: {4473C75A-A1E4-47EC-A147-C32260BAE131}
+name: Accessories
+master: {00000000-0000-0000-0000-000000000000}
+template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
+templatekey: Tag Object
+
+----version----
+language: en
+version: 1
+revision: fe5ef8b5-c8f9-426d-a440-729af75a7a5e
+
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 11
+
+Accessories
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150721T082437Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fe5ef8b5-c8f9-426d-a440-729af75a7a5e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150721T082437Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

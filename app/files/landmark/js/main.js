@@ -1012,7 +1012,7 @@ $(document).ready(function() {
         deeplinking: false,
         fullscreen: false,
         hovertip: true,
-        developer: false,
+        developer: true,
         maxscale: 1.5,
         clearbutton: true,
         zoom: true,

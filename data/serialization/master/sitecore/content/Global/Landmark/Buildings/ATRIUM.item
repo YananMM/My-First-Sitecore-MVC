@@ -1,0 +1,93 @@
+----item----
+version: 1
+id: {04AF3BF4-1C4D-43BC-9884-1431E3A44B11}
+database: master
+path: /sitecore/content/Global/Landmark/Buildings/ATRIUM
+parent: {4731A63F-BFED-4A7B-8650-1ED611731530}
+name: ATRIUM
+master: {00000000-0000-0000-0000-000000000000}
+template: {873FCBBD-5F81-4DD2-B885-DFDCA194A5D1}
+templatekey: Building Data
+
+----field----
+field: {4A1E2FC8-CB80-42C3-BCA9-4E7E9DA0CF91}
+name: Floor Guide
+key: floor guide
+content-length: 109
+
+<file mediaid="{FDA7D14F-EAD1-482F-8299-FB70D78A4B6D}" src="~/media/fda7d14fead1482f8299fb70d78a4b6d.ashx" />
+----version----
+language: en
+version: 1
+revision: 13f79ee4-768c-4c6b-bf5e-d9ce27c526ce
+
+----field----
+field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
+name: Building Title
+key: building title
+content-length: 6
+
+ATRIUM
+----field----
+field: {5471CA9B-9D9E-4332-8B37-905B47BCE65F}
+name: Building Address
+key: building address
+content-length: 54
+
+15 Queen's Road Central, LANDMARK, Central, Hong Kong.
+----field----
+field: {7EF17060-F50C-4CA3-8021-1802F0672C00}
+name: Building Svg Id
+key: building svg id
+content-length: 6
+
+gdfpa2
+----field----
+field: {E657A707-C854-4316-BDA6-B63559885398}
+name: LocationX
+key: locationx
+content-length: 6
+
+0.8756
+----field----
+field: {12796E88-1E57-4ECB-B6A2-66BC957940D1}
+name: LocationY
+key: locationy
+content-length: 6
+
+0.4867
+----field----
+field: {4745EBC5-3D1D-4CB9-B088-06CFEB603F66}
+name: Opening Hours
+key: opening hours
+content-length: 17
+
+10am-7:30pm daily
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150721T083914Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+13f79ee4-768c-4c6b-bf5e-d9ce27c526ce
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150930T140837Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

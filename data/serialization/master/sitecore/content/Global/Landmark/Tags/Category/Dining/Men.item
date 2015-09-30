@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {27A5CBCE-DDD5-44AE-A9E3-82E1117275A5}
+database: master
+path: /sitecore/content/Global/Landmark/Tags/Category/Dining/Men
+parent: {26C999E2-4351-4F83-9201-5C5662D9FDC5}
+name: Men
+master: {00000000-0000-0000-0000-000000000000}
+template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
+templatekey: Tag Object
+
+----field----
+field: {6FD695E7-7F6D-4CA5-8B49-A829E5950AE9}
+name: __Subitems Sorting
+key: __subitems sorting
+content-length: 38
+
+{C1FF011E-B02A-44E3-8444-9FC89CFC28CE}
+----version----
+language: en
+version: 1
+revision: ae2aba31-2231-4189-b15c-cc3fea7d8d20
+
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 3
+
+Men
+----field----
+field: {D9FA22B1-BBD4-4BDC-BFB5-42CB9F2CBCA1}
+name: Related Tags
+key: related tags
+content-length: 155
+
+{584512EB-189E-4FEF-9280-3F893DD9A9E1}|{F1CC2EDE-A165-4FC4-B47A-8C0DF29BDE27}|{101C4A58-6D7D-4905-AD44-F0F054282440}|{26D53B44-8352-4FCC-992A-B01A3C7A2384}
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150721T081825Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ae2aba31-2231-4189-b15c-cc3fea7d8d20
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20150803T061217:635741791373990505Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
