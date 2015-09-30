@@ -17,7 +17,7 @@ namespace Landmark.Pipelines.HttpRequest
         {
             if ((Sitecore.Context.Item != null && !(new LayoutField(Sitecore.Context.Item).Value).IsNullOrEmpty()) || Sitecore.Context.Site == null || Sitecore.Context.Database == null
                 || Sitecore.Context.Database != Sitecore.Configuration.Factory.GetDatabase("web") || Sitecore.Context.IsAdministrator
-                || args.Url.FilePath.ToLower().StartsWith("/service/") || args.Url.FilePath.ToLower().StartsWith("/sitecore/") 
+                || args.Url.FilePath.ToLower().StartsWith("/service/") || args.Url.FilePath.ToLower().StartsWith("/sitecore") || args.Url.FilePath.ToLower().StartsWith("/applications") 
                 )
             {
                 return;
