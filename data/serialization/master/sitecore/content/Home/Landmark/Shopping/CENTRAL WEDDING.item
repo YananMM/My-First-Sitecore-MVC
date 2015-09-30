@@ -44,8 +44,8 @@ content-length: 15
 CENTRAL WEDDING
 ----field----
 field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
-name: Buildings
-key: buildings
+name: Building
+key: building
 content-length: 38
 
 {04AF3BF4-1C4D-43BC-9884-1431E3A44B11}
@@ -56,6 +56,13 @@ key: page title
 content-length: 15
 
 CENTRAL WEDDING
+----field----
+field: {D238DB6D-29CE-4830-9D41-6A022AFB22A6}
+name: Search Filter Type
+key: search filter type
+content-length: 0
+
+
 ----field----
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags

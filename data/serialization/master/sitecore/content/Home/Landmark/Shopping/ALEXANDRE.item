@@ -44,8 +44,8 @@ content-length: 9
 ALEXANDRE
 ----field----
 field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
-name: Buildings
-key: buildings
+name: Building
+key: building
 content-length: 38
 
 {E76CEFC9-801C-4694-9A63-0C6132F20741}
@@ -70,6 +70,13 @@ key: page title
 content-length: 9
 
 ALEXANDRE
+----field----
+field: {D238DB6D-29CE-4830-9D41-6A022AFB22A6}
+name: Search Filter Type
+key: search filter type
+content-length: 0
+
+
 ----field----
 field: {2451A91F-FB4B-4A20-A899-C173F7C16F5D}
 name: Related Article Title
