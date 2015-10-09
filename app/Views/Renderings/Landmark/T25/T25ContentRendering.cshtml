@@ -21,29 +21,41 @@
                                 <table>
                                     <tbody>
                                         <tr>
-                                            @{
-                                                var phoneValue = SitecoreItems.PhoneItem.Fields["Glossary Value"].ToString();
-                                                if (!string.IsNullOrEmpty(phoneValue))
-                                                {
-                                                    <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.PhoneItem)</th>
+                                            <th>
+                                                @{
+                                                    var phoneValue = SitecoreItems.PhoneItem.Fields["Glossary Value"].ToString();
+                                                    if (!string.IsNullOrEmpty(phoneValue))
+                                                    {
+                                                        @Html.Sitecore().Field("Glossary Value", SitecoreItems.PhoneItem)
+                                                    }
                                                 }
-                                            }
+                                            </th>
                                             <td>@Html.Sitecore().Field("Cover Phone")</td>
                                         </tr>
                                         <tr>
-                                            @{
-                                                var emailValue = SitecoreItems.PhoneItem.Fields["Glossary Value"].ToString();
-                                                if (!string.IsNullOrEmpty(emailValue))
-                                                {
-                                                    <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.EmailItem)</th>
+                                            <th>
+                                                @{
+                                                    var websiteValue = SitecoreItems.WebsiteItem.Fields["Glossary Value"].ToString();
+                                                    if (!string.IsNullOrEmpty(websiteValue))
+                                                    {
+                                                        @Html.Sitecore().Field("Glossary Value", SitecoreItems.WebsiteItem)
+                                                    }
                                                 }
-                                            }
+                                            </th>
                                             <td>
                                                 <a href="@Html.Sitecore().Field("Cover Email")">@Html.Sitecore().Field("Cover Email")</a>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.AddressItem)</th>
+                                            <th>
+                                                @{
+                                                    var addressValue = SitecoreItems.AddressItem.Fields["Glossary Value"].ToString();
+                                                    if (!string.IsNullOrEmpty(addressValue))
+                                                    {
+                                                        @Html.Sitecore().Field("Glossary Value", SitecoreItems.AddressItem)
+                                                    }
+                                                }
+                                            </th>
                                             <td>
                                                 @Html.Sitecore().Field("Cover Address")
                                             </td>

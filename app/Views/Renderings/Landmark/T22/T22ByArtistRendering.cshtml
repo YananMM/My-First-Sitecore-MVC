@@ -8,7 +8,7 @@
 @{
     ArtTourHelper helper = new ArtTourHelper();
     var page = int.Parse(Request["page"] ?? "0");
-    var artists = helper.GetAllArtists().Skip((page - 1) * 4).Take(4);
+    var artists = helper.GetAllArtists().Skip((page - 1) * 1).Take(1);
 }
 <div class="art-gallery">
     <div class="row" id="gd-art-gallery">
@@ -55,6 +55,6 @@
         <div class="col-sm-6"></div>
     </div>
     <div class="navigation gd-promo-more">
-        <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Item)?page=2">SEE MORE +</a>
+        <a href="@LinkManager.GetItemUrl(Sitecore.Context.Item)?page=2">SEE MORE +</a>
     </div>
 </div>

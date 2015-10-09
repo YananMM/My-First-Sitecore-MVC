@@ -77,5 +77,7 @@ namespace Landmark.Classes
         public static readonly Item MagezineItem = _web.GetItem("{8B359693-D433-4F44-98F8-9CEE5FA9B72F}");
         public static readonly Item ListenToCommentaryAltItem = _web.GetItem("{36C61E1D-7652-4DD4-8CCA-DDF1067D89D3}");
         public static readonly Item RelatedArticleItem = _web.GetItem("{9E9393AC-EDD4-4F2B-BDC8-A95A7400FA64}");
+        public static readonly Item LegalPrivacyItem = _web.GetItem("{4F4D0D9B-FE4D-4BFA-A7BC-2F0FE98DFAA1}");
+
     }
 }

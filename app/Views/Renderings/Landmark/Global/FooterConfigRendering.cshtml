@@ -14,7 +14,7 @@
             @Html.Sitecore().Field("Copyright Left Text", SitecoreItems.LandmarkConfigItem) 
             @DateTime.Now.Year 
             @Html.Sitecore().Field("Copyright Right Text", SitecoreItems.LandmarkConfigItem)
-            <a href="#">Legal &amp; Privacy</a>
+            <a href="@Sitecore.Links.LinkManager.GetItemUrl(SitecoreItems.LegalPrivacyItem)">Legal &amp; Privacy</a>
         </div>
     </div>
 </div>
