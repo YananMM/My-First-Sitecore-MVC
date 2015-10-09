@@ -92,15 +92,8 @@
                                             <!-- User's selection will be stored here -->
                                             <input type="hidden" name="channel" value="0">
                                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                                @if (channels.Count != 0)
-                                                {
-                                                    int i = 1;
-                                                    foreach (var item in channels)
-                                                    {
-                                                        <span @if (i == 1) { <text> class="current" </text>        } else { <text> class="caret" </text>        }>@item.Fields["Value"]</span>
-i++;
-                                                    }
-                                                }
+                                                <span class="current">@channels.FirstOrDefault().Fields["Value"]</span>
+                                                <span class="caret"></span>
                                             </button>
                                             <ul class="dropdown-menu">
                                                 @if (channels.Count != 0)
