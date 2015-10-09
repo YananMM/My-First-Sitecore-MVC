@@ -6,6 +6,10 @@
 @model RenderingModel
 @{
     var attractions = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ExperienceCentral, ItemGuids.T25PageTemplate);
+
+    var current = Sitecore.Context.Item;
+
+    attractions = attractions.Where(p => p.ID != current.ID).ToList();
 }
 
 <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
@@ -14,14 +18,14 @@
     </div>
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-        @if (attractions != null && attractions.Count != 0)
+        @if (attractions.Count != 0)
         {
             int i = 1;
             foreach (var item in attractions)
             {
                 <div @if (i == 1) { <text>
                      class="item active"
-                     </text>             } class="item">
+                     </text>              } class="item">
                     <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Callout Image",item)"></div>
                     <div class="carousel-caption">
                         <div class="carousel-caption-inner">
@@ -40,32 +44,35 @@ i++;
         }
     </div>
     <!-- Wrapper for controls -->
-    <div class="carousel-footer">
-        <div class="gd-carousel-controls clearfix">
-            <!-- Controls -->
-            <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="prev">
-                <span class="icomoon-thin-arrow-L" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <!-- Indicators -->
-            <ol class="carousel-indicators gd-carousel-control gd-carousel-no">
-                @for (int j = 0; j < attractions.Count; j++)
-                {
-                    <li data-target="#gd-carousel-info" data-slide-to="@j" @{ if (j == 0) { <text>
-                        class="active"
-                        </text>       } }>@(j + 1)</li>
-                }
-            </ol>
-            <span class="gd-carousel-control gd-carousel-no">
-                /
-            </span>
-            <span class="gd-carousel-control gd-carousel-no">
-                @attractions.Count
-            </span>
-            <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="next">
-                <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+    @if (attractions.Count != 0)
+    {
+        <div class="carousel-footer">
+            <div class="gd-carousel-controls clearfix">
+                <!-- Controls -->
+                <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="prev">
+                    <span class="icomoon-thin-arrow-L" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <!-- Indicators -->
+                <ol class="carousel-indicators gd-carousel-control gd-carousel-no">
+                    @for (int j = 0; j < attractions.Count; j++)
+                    {
+                        <li data-target="#gd-carousel-info" data-slide-to="@j" @{ if (j == 0) { <text>
+                            class="active"
+                            </text>  } }>@(j + 1)</li>
+                    }
+                </ol>
+                <span class="gd-carousel-control gd-carousel-no">
+                    /
+                </span>
+                <span class="gd-carousel-control gd-carousel-no">
+                    @attractions.Count
+                </span>
+                <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="next">
+                    <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
-    </div>
+    }
 </div>

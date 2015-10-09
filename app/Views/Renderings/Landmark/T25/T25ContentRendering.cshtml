@@ -21,11 +21,23 @@
                                 <table>
                                     <tbody>
                                         <tr>
-                                            <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.PhoneItem)</th>
+                                            @{
+                                                var phoneValue = SitecoreItems.PhoneItem.Fields["Glossary Value"].ToString();
+                                                if (!string.IsNullOrEmpty(phoneValue))
+                                                {
+                                                    <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.PhoneItem)</th>
+                                                }
+                                            }
                                             <td>@Html.Sitecore().Field("Cover Phone")</td>
                                         </tr>
                                         <tr>
-                                            <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.EmailItem)</th>
+                                            @{
+                                                var emailValue = SitecoreItems.PhoneItem.Fields["Glossary Value"].ToString();
+                                                if (!string.IsNullOrEmpty(emailValue))
+                                                {
+                                                    <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.EmailItem)</th>
+                                                }
+                                            }
                                             <td>
                                                 <a href="@Html.Sitecore().Field("Cover Email")">@Html.Sitecore().Field("Cover Email")</a>
                                             </td>
@@ -47,7 +59,8 @@
                                             <td>
                                                 @foreach (var item in tagsTrees)
                                                 {<a href="javascript:;">
-                                                    @item.CurrentItem["Tag Name"].ToUpper() - </a>
+                                                    @item.CurrentItem["Tag Name"].ToUpper() -
+                                                </a>
                                                     int i = 1;
                                                     foreach (var it in item.Children)
                                                     {
@@ -56,10 +69,10 @@
                                                         {<text>,</text>
                                                         }
                                                         i++;
-                                                        }
-                                                        <br />
-                                                        }
-</td>
+                                                    }
+                                                    <br />
+                                                }
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -78,9 +91,7 @@
             <h3>@Html.Sitecore().Field("Content Title")</h3>
         </div>
         <div class="gd-brief-body gd-col-2">
-            <p>
-                @Html.Sitecore().Field("Content Description")
-            </p>
+            @Html.Sitecore().Field("Content Description")
         </div>
     </div>
     <div class="gd-location-map" data-lat="-37.820665" data-lng="144.943051">

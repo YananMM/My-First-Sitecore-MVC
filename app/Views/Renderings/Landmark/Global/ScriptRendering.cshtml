@@ -46,17 +46,19 @@
     {*@
 <script src="/files/landmark/js/lib/masonry.pkgd.min.js"></script>
 @*  }*@
+
+<script src="/files/landmark/js/lib/isotope.pkgd.min.js"></script>
+<script src="/files/landmark/js/lib/validate.min.js"></script>
+<script src="/files/landmark/js/lib/mediaelement/mediaelement-and-player.min.js"></script>
+<script src="/files/landmark/js/main.js"></script>
+
 @if (LandmarkHelper.GetPageBodyClass().StartsWith("t7") || LandmarkHelper.GetPageBodyClass().StartsWith("t22"))
-    {
+{
     <script type="text/javascript" src="/files/landmark/js/lib/svgmap/js/hammer.min.js"></script>
     <script type="text/javascript" src="/files/landmark/js/lib/svgmap/js/jquery.easing.js"></script>
     <script type="text/javascript" src="/files/landmark/js/lib/svgmap/js/smoothscroll.js"></script>
     <script type="text/javascript" src="/files/landmark/js/lib/svgmap/mapplic/mapplic.js"></script>
 }
-<script src="/files/landmark/js/lib/isotope.pkgd.min.js"></script>
-<script src="/files/landmark/js/lib/validate.min.js"></script>
-<script src="/files/landmark/js/lib/mediaelement/mediaelement-and-player.min.js"></script>
-<script src="/files/landmark/js/main.js"></script>
 <!-- Has problems on ie8 <script src="/files/landmark/js/lib/masonry.pkgd.min.js"></script> -->
 
 <script>
@@ -68,5 +70,5 @@
         updateEvent: 'load orientationchange resize scroll shown.bs.collapse hidden.bs.collapse lazyupdate'
     };
 </script>
-
+<script type="text/javascript">_satellite.pageBottom();</script>
 @Html.Sitecore().Field("Adobe Body Loader File",SitecoreItems.LandmarkConfigItem)

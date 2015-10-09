@@ -34,13 +34,13 @@
                         <h2>@Html.Sitecore().Field("Art Title"), @Html.Sitecore().Field("Created Time")</h2>
                     </div>
                     <div class="gd-artplace-details row">
-                        <div class="col-sm-6 gd-artplace-info">
+                        <div class="col-sm-12 gd-artplace-info">
                             @Html.Sitecore().Field("Art Key")<br>
                             @Html.Sitecore().Field("Art Size")
                         </div>
                         @if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
                         {
-                            <div class="col-sm-12 text-right">
+                            <div class="col-sm-4 text-right">
                                 <div>
                                     <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
                                         <span class="icomoon-sound-alt"></span>

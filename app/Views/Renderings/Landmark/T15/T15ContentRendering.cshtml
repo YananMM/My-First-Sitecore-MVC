@@ -30,7 +30,7 @@
                 {
                     foreach (var item in experienceTypes)
                     {
-                        <li><a data-filter="gdf-@item.ID.ToString().Trim('{').Trim('}')">@item.DisplayName.ToUpper()</a></li>
+                        <li><a data-filter="gdf-@item.ID.ToString().Trim('{').Trim('}')">@item.Fields["Tag Name"].ToString().ToUpper()</a></li>
                     }
                 }
             </ul>
@@ -43,7 +43,7 @@
                             {
                                 foreach (var item in experienceTypes)
                                 {
-                                    <option value="gdf-@item.ID.ToString().Trim('{').Trim('}')">@item.DisplayName.ToUpper()</option>
+                                    <option value="gdf-@item.ID.ToString().Trim('{').Trim('}')">@item.Fields["Tag Name"].ToString().ToUpper()</option>
                                 }
                             }
                         </select>
@@ -57,16 +57,18 @@
                 MultilistField experienceType = item.Fields["Experience Type"];
                 string[] types = experienceType.ToString().Split('|');
                 <div class="gd-promo-box @foreach (var type in types)
-                             {<text>gdf-@type.Replace("{", "").Replace("}", "")</text> }">
+                                         {<text>gdf-@type.Replace("{", "").Replace("}", "")</text>
+                                         }">
                     <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
-                        <img src="@Html.Sitecore().ImageFieldSrc("Cover Image",item)">
+                        <img src="@Html.Sitecore().ImageFieldSrc("Cover Image", item)">
                     </a>
                     <h5>@Html.Sitecore().Field("Cover Content", item)</h5>
                     <h3>@item["Cover Title"]</h3>
                 </div>
             }
         </div>
-        <div class="navigation gd-promo-more"><a href="?page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem) +</a></div>
+        <div class="navigation gd-promo-more"><a href="?page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem) +</a>
+        </div>
     </div>
     @Html.Sitecore().Placeholder("also-like")
 </div>

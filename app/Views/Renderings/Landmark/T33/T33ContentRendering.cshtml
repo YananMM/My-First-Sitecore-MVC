@@ -14,7 +14,7 @@
                     <div class="gd-carousel-detail">
                         <div class="gd-mainimage-brief">
                             <h2>@Html.Sitecore().Field("Cover Title")</h2>
-                            <p>@Html.Sitecore().Field("Cover Description")</p>
+                            @Html.Sitecore().Field("Cover Description")
                         </div>
                     </div>
                 </div>
@@ -44,9 +44,7 @@
         <div class="gd-brief-body gd-brief-center">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <p>
-                        @Html.Sitecore().Field("Content Description")
-                    </p>
+                    @Html.Sitecore().Field("Content Description")
                 </div>
             </div>
         </div>

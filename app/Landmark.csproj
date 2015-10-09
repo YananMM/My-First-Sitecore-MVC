@@ -132,13 +132,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Applications\Landmark\EmailSignupExport.aspx.cs">
-      <DependentUpon>EmailSignupExport.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Applications\Landmark\EmailSignupExport.aspx.designer.cs">
-      <DependentUpon>EmailSignupExport.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_GlobalResources\Landmark.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -199,6 +192,9 @@
     <Compile Include="Pipelines\GetChromeData\GetDynamicPlaceholderChromeData.cs" />
     <Compile Include="Pipelines\HttpRequest\NotFoundProcessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\CheckCaptcha.ashx.cs">
+      <DependentUpon>CheckCaptcha.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Service\GetCategoryJson.ashx.cs">
       <DependentUpon>GetCategoryJson.ashx</DependentUpon>
     </Compile>
@@ -229,7 +225,6 @@
     <Content Include="apple-touch-icon-76x76.png" />
     <Content Include="apple-touch-icon-precomposed.png" />
     <Content Include="apple-touch-icon.png" />
-    <Content Include="Applications\Landmark\EmailSignupExport.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon-160x160.png" />
     <Content Include="favicon-16x16.png" />
@@ -787,6 +782,7 @@
     <Content Include="Views\Renderings\Landmark\T4\T4DetailsRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T4\T4_2DetailsRendering.cshtml" />
     <Content Include="Views\Layouts\Landmark\T17PromotionLayout.cshtml" />
+    <Content Include="Service\CheckCaptcha.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

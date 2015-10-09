@@ -11,6 +11,20 @@
     margin: 30px 0;
   }
 }
+@media print {
+  .t35 {
+    >.site-header,
+    >.page-header,
+    >.container,
+    >.back-top,
+    >.site-footer {
+      display: none;
+    }
+    >iframe {
+      height: 1700px;
+    }
+  }
+}
 .t8{
   .gd-brief{
     margin-top: 53px;
@@ -502,6 +516,9 @@
       padding-top: 10px; 
     }
     .gd-pagetitle{
+      >a {
+        display: inline-block;
+      }
     >img {
       cursor: pointer;
       margin-top: 30px;
@@ -538,9 +555,10 @@
         }
       }
       .text-right{
-         .gd-button,.gd-audio-frame{
-           margin-top: 20px;
-        width: 80%;
+        .gd-button,.gd-audio-frame{
+          margin-top: 5px;
+          width: 225px;
+          line-height: 20px;
         }
       }
     }
@@ -607,9 +625,12 @@
     
   .gd-artplace-details{
       .text-right{
-         .gd-button,.gd-audio-frame{
-           margin-top: 0;
-        width: 100%;
+        .gd-button,.gd-audio-frame{
+          margin-top: 5px;
+          width: 225px;
+          float: left;
+          margin-right: 10px;
+          line-height: 20px;
         }
       }
   }
@@ -942,6 +963,7 @@
     .col-sm-9 img{ 
       margin: 30px 20px 50px 0;
       width: auto;
+        max-width: 45%;
     }
       }
   }
@@ -1087,22 +1109,53 @@
       }
     }
     @media (min-width:@screen-sm){
-    .gd-contact-code{
-      img{
-        float: left;
-        margin-right: 20px;
-        border: solid 1px  #dedede;
-      }
-      input {
-        margin: 0;
-        width: 40%;
+      .gd-contact-code{
+        img{
+          float: left;
+          margin-right: 20px;
+          border: solid 1px  #dedede;
+        }
+        input {
+          margin: 0;
+          width: 40%;
+        }
       }
     }
+    input.form-control,
+    textarea.form-control {
+      color: #222222;
+    }
+  }
+  .gd-dropdown {
+    .current {
+      color: #999999;
+    }
+  }
+  button.btn-black:focus {
+    background-color: #FFFFFF;
+    color: #222222;
+  }
+  button.btn-black:active {
+    background-color: #222222;
+    color: #FFFFFF;
+  }
+}
+.t9 {
+  .gd-pagetitle .gd-pagetitle-info {
+    margin-bottom: 0;
+  }
+}
+.ie8{
+  .t9 .gd-contact-share .gd-contact-share-icon{
+   border: none;
+    background: url("../images/sprite.png") no-repeat -9px -340px;
+    &:hover{
+     background-position: -9px -300px;
     }
   }
 }
 .t31 {
-  .gd-contact .gd-contact-area {
+  .container .gd-contact .gd-contact-area {
     border-bottom: none;
     .gd-contact-body {
       margin: 0;
@@ -1111,18 +1164,25 @@
   .gd-form-contents {
     margin-bottom: 60px;
     margin-top: 30px;
-    .gd-contact-body {
+    .gd-contact-intro {
       >p {
-        line-height: 2;
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 20px;
       }
     }
   }
   .gd-subforms {
-    border-bottom: 1px solid #DDDDDD;
-    border-top: 1px solid #DDDDDD;
-    margin: 20px 0;
-    padding: 20px 0;
     .tab-pane {
+      &:first-child {
+        border: none;
+        margin: 0;
+        padding: 0;
+      }
+      border-bottom: 1px solid #DDDDDD;
+      border-top: 1px solid #DDDDDD;
+      margin: 20px 0;
+      padding: 20px 0;
       >p {
         font-size: 14px;
         margin-bottom: 15px;
@@ -1137,14 +1197,6 @@
       display: block;
       margin-bottom: 30px;
       padding-left: 40px;
-    }
-    .others {
-      .form-control {
-        display: inline-block;
-        height: 20px;
-        line-height: 20px;
-        width: 150px;
-      }
     }
   }
   .gd-verify-code {
@@ -1168,6 +1220,9 @@
     margin-bottom: 30px;
     p {
       margin-bottom: 15px;
+      a {
+        color: #D4A962;
+      }
     }
     .gd-checkbox-wrapper {
       margin-bottom: 15px;
@@ -1175,6 +1230,53 @@
         padding-left: 40px;
       }
     }
+  }
+  .tab-pane {
+    .gd-checkbox-wrapper {
+      overflow: hidden;
+      .gd-checkbox {
+        float: left;
+        width: 33.3333%;
+      }
+    }
+  }
+  .gd-others {
+    display: table;
+    .gd-checkbox-wrapper {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    >* {
+      display: inline-block;
+      float: left;
+    }
+    .gd-checkbox {
+      display: inline-block;
+      margin: 0;
+    }
+    .form-control {
+      display: inline-block;
+      height: 20px;
+      line-height: 20px;
+      padding: 0 2px;
+      width: 150px;
+    }
+    @media (max-width: @screen-sm-min) {
+      >.form-control,
+      >span {
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+  #gd-preferred-comm {
+    .current {
+      color: #222222;
+    }
+  }
+  .gd-dropdown .btn {
+    font-size: 12px;
+    padding-left: 20px;
   }
 }
 .t10{
@@ -1257,10 +1359,22 @@
 }
 }
 .t26{
+  .gd-pagetitle .gd-pagetitle-info{
+    @media  (min-width: @screen-sm-min){
+        margin-bottom: 0;
+    }
+  }
   .gd-promotion{
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
     margin-left: -15px;
     margin-right: -15px;
-    margin-top: 60px;
+    margin-top: 0px;
+    margin-bottom: 60px;
     .gd-grid-sizer,
     .gd-promo-box,
     .gd-promo-box2 {
@@ -1305,14 +1419,26 @@
         display: none;
       }
       &.active {
-        .gd-promo-brands-btn:after {
-          border-width: 0 5px 5px 5px;
-          border-color: transparent transparent black transparent;
-        } 
+        // .gd-promo-brands-btn:after {
+        //   border-width: 0 5px 5px 5px;
+        //   border-color: transparent transparent black transparent;
+        // } 
         .gd-promo-brands-area {
           display: block;
         }
       }
+    }
+    .gd-promo-body {
+      padding-bottom: 30px;
+      #infscr-loading {
+        bottom: 5px;
+        left: 0;
+        position: absolute;
+        right: 0;
+      }
+    }
+    .gd-promo-more {
+      margin-bottom: 0;
     }
   }
 }
@@ -1332,8 +1458,8 @@
    .gd-controls-m{
      margin-top: 20px;
     }
-  .gd-pagetitle {t32
-  .gd-search-info{
+  .gd-pagetitle {
+    .gd-search-infomation{
     font-size: 15px;
     color: @gray-darker2;
     font-family: @font-family-serif;
@@ -1343,11 +1469,11 @@
     span{
       color: @brand-golden;
     }
-  }
+   }
     .gd-search-filter{
       font-size: 12px;
       margin: 18px  0 0;
-  .black-text2;
+      .black-text2;
     >ul{
       display: inline;
       list-style: none;
@@ -1411,6 +1537,7 @@
             margin: 0 0 30px;
             padding: 0 0 30px;
             h5{
+              color: @gray-light;
               padding-top: 10px;
               float:right; 
             }
@@ -1418,7 +1545,9 @@
                 width: 80%;
               }
             }
-          
+            > div{
+              font-size: 12px;
+            }
           }
           .gd-search-box2{
             margin-top: -30px;
@@ -1451,6 +1580,7 @@
               margin: 10px 0  30px  0;
                color: @gray;
                vertical-align: middle;
+            font-size: 12px;
              .icomoon-chevron-small-right{
               display: inline-block;
               padding-bottom: 3px;
@@ -1480,10 +1610,12 @@
 @-moz-document url-prefix() {
  .t32 .gd-search .gd-search-body ol li .gd-search-box2{  margin-top: 0;} 
 }
-
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .t32 .gd-search .gd-search-body ol li .gd-search-box2{  margin-top: 0;  padding-top: 0;}
+}
 .t6{
-.body-text;
   .gd-error{
+.body-text;
    margin: 50px 0;}
   .gd-carousel-info{
    margin-top: 80px;
@@ -1491,17 +1623,27 @@
 }
 .t17{
   .gd-brief{
-    margin: 80px 0 80px;}
+    margin: 80px 0 80px;
+  }
   .gd-promotion-block-area{
   .body-text;
    margin-bottom: 30px; 
   }
   .gd-promotion-listarea{
+  .body-text;
      margin:0 0 80px;
-    > a{
+    >  a{
       display: block;
+      margin-top: 15px; 
       color: @brand-golden;
-      margin-top: 15px;
+    &:hover{
+        color: @gray;
+        text-decoration: none;
+    }
+    &:focus, &:active{
+        color: @brand-golden;
+        text-decoration: none;
+    }
   .icomoon-chevron-small-right{
     display: inline-block;
     padding-bottom: 3px;
@@ -1547,6 +1689,7 @@
           border-bottom: 10px solid #f6f6f6;  
         }
       .gd-button{
+        display: inline-block;
        margin-top: 5px;
       }
     }
@@ -1558,6 +1701,32 @@
       padding-bottom: 0;
       img {
         height: 200px;
+      }
+    }
+  }
+
+  @media (max-width: @screen-sm-min) {
+    .slick-arrow {
+      display: none;
+      opacity: 0;
+    }
+    .slick-prev {
+      left: 0;
+    }
+    .slick-next {
+      right: 0;
+    }
+  }
+
+  .gd-tab-intro {
+    h3 {
+      margin-bottom: 30px;
+    }
+    .tab-pane {
+      margin: 25px 0;
+      .intro-wrapper {
+        height: auto;
+        margin-top: 25px;
       }
     }
   }
@@ -1597,9 +1766,9 @@
           left: -17px;
           top: 50%;
           margin-top: -17px;
-border-top: 18px solid transparent; 
-border-bottom: 18px solid transparent; 
-border-right: 18px solid #f6f6f6;  
+          border-top: 18px solid transparent; 
+          border-bottom: 18px solid transparent; 
+          border-right: 18px solid #f6f6f6;  
         }
       .gd-button{
        margin-top: 20px;
@@ -1622,15 +1791,15 @@ border-right: 18px solid #f6f6f6;
       width: 50%;
       margin-right: 50%;
       margin-left: 0;
-      &:after{
+      &:after {
         left: auto;
-          right: -17px;
-          margin-top: -17px;
-       border-top: 18px solid transparent; 
-       border-bottom: 18px solid transparent; 
-       border-left: 18px solid #f6f6f6; 
-       border-right: none;   
-  }
+        right: -17px;
+        margin-top: -17px;
+        border-top: 18px solid transparent; 
+        border-bottom: 18px solid transparent; 
+        border-left: 18px solid #f6f6f6; 
+        border-right: none;   
+      }
    
     }
     
@@ -1658,7 +1827,6 @@ border-right: 18px solid #f6f6f6;
 }
 
 .t37{
-  .body-text; 
   h3{
       line-height: 1.5;
        margin-bottom: 10px;
@@ -1671,6 +1839,7 @@ border-right: 18px solid #f6f6f6;
           line-height: 2;
          }
   .gd-magazine-info{
+  .body-text; 
     .row{
       .col-sm-6{
         img{
@@ -1680,6 +1849,7 @@ border-right: 18px solid #f6f6f6;
     }
   }
   .gd-promotion-box-area{
+  .body-text; 
     .gd-promo-more{
      margin-top: 30px;
     }
@@ -1689,11 +1859,8 @@ border-right: 18px solid #f6f6f6;
   .t37{
   h3{
       line-height: 1.5;
-       margin-bottom: 20px;
+       margin-bottom: 10px;
      }
-        h5{
-          margin-bottom: 20px;
-        }
   .gd-magazine-info{
     .row{
       display: table;
@@ -1703,7 +1870,9 @@ border-right: 18px solid #f6f6f6;
         height: 100%;
         float: none !important;
       .gd-magazine-info-text{
-       
+        h5{
+         margin-bottom: 20px;
+        }
     }
       }
     }
@@ -1792,6 +1961,9 @@ border-right: 18px solid #f6f6f6;
       padding-top: 30px;
     }
   }
+  .gd-mainimage-withdes .carousel-indicators {
+    bottom: 60px;
+  }
 }
 
 @media (min-width:@screen-sm){
@@ -1852,6 +2024,9 @@ border-right: 18px solid #f6f6f6;
 }
 
 .t3 {
+  .gd-brief {
+    margin-bottom: 40px;
+  }
   .gd-promo-body {
     margin: 0 -15px 15px -15px;
     .gd-promo-box {
@@ -1863,7 +2038,7 @@ border-right: 18px solid #f6f6f6;
         display: block;
       }
     }
-    @media (max-width: @screen-sm-min) {
+    @media (max-width:@screen-xs-max) {
       .gd-promo-box {
         width: 100%;
       }
@@ -1877,21 +2052,46 @@ border-right: 18px solid #f6f6f6;
 
 
 .t15 {
+  .gd-pagetitle .gd-pagetitle-info{
+   margin-bottom: 0;
+  }
+  .gd-promotion {
+    &:before,
+    &:after {
+      content: " ";
+      clear: both;
+      display: table;
+    }
+    margin: 0 0 60px;
+  }
   .gd-promo-body {
     margin: 0 -15px;
+    padding-bottom: 30px;
 
     .gd-promo-box {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
       margin-right: 0;
       padding-left: 15px;
       padding-right: 15px;
-      width: 25%;
+      width: 33.3333%;
     }
 
+    #infscr-loading {
+      bottom: 5px;
+      left: 0;
+      position: absolute;
+      right: 0;
+    }
     @media (max-width: @screen-sm-min) {
       .gd-promo-box {
-        width: 50%;
+        width: 100%;
       }
     }
+  }
+  .gd-promo-more {
+    margin-bottom: 0;
   }
 }
 

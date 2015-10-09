@@ -39,7 +39,7 @@
             finishedMsg: "<em>Congratulations, you've reached the end of the internet.</em>",
             img: '/files/landmark/images/more.gif',
             msg: null,
-            msgText: '<em>Loading the next set of posts...</em>',
+            msgText: '<em>Loading ...</em>',
             selector: null,
             speed: 0,
             start: undefined

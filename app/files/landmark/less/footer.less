@@ -5,7 +5,7 @@
   .footer-nav{
     background-color: @gray-dark;
     padding: 26px 20px 25px;
-    font-family: @font-family-serif;
+    font-family: @font-family-sans-serif;
     ul{
       list-style: none;
       margin: 0;
@@ -37,8 +37,15 @@
   .footer-info{
     background-color: @gray-base;
     padding: 25px 10px 29px;
-      .white-text;
+    .white-text;
     font-size: 0.92em;
+    p {
+      color: #BBBBBB;
+      margin: 10px 0;
+      a {
+        color: @brand-golden;
+      }
+    }
     .footer-copyright{
       margin: 15px 20px 0 0;
       a{
@@ -106,6 +113,23 @@
 }
 }
 }
+@media (max-width: 767px) {
+  .site-footer {
+    .footer-info {
+      .footer-logo {
+        margin: 15px 0;
+      }
+      .footer-copyright {
+        margin: 15px 0;
+      }
+      .footer-legal {
+        a {
+          color: @brand-golden;
+        }
+      }
+    }
+  }
+}
 @media (min-width: @screen-sm) {
 .site-footer{
   width: 100%;
@@ -113,11 +137,14 @@
   .footer-nav{
     background-color: @gray-dark;
     padding:23px 0 17px;
-    font-family: @font-family-serif;
+    font-family: @font-family-sans-serif;
+    >.container>.row {
+      margin: 0;
+    }
     .footer-nav-area{
       width: 100%;
       float: none;
-      padding-left: 10px;
+      padding-left: 0;
       padding-right: 10px;
       vertical-align: middle;
       font-size: 1.083em;
@@ -142,7 +169,7 @@
       width: 100%;
       float: none;
       padding-left: 10px;
-       padding-right: 10px;
+      padding-right: 0;
       padding-top: 15px;
       vertical-align: middle;
       .gray-text;
@@ -175,18 +202,22 @@
   .footer-info{
     background-color: @gray-base;
     padding: 9px 0 9px;
-   .footer-logo{
-      width: 30%;
+    p {
+      color: #BBBBBB;
+      a {
+        color: @brand-golden;
+      }
+    }
+    .footer-logo{
       float: left;
-padding-left: 10px;
-padding-right: 10px;
+      padding-left: 0;
+      padding-right: 10px;
       vertical-align: middle;
     }
     .footer-copyright{
-      width: 68%;
-      float: right;
+      float: left;
       padding-left: 10px;
-       padding-right:10px;
+      padding-right:0;
       vertical-align: middle;
       margin:0 ;
       padding-top: 5px;
@@ -194,6 +225,12 @@ padding-right: 10px;
       a{ 
         margin:0 0 0 30px;
         display: inline-block;
+      }
+    }
+    .footer-legal {
+      text-align: right;
+      @media (max-width: 767px) {
+        text-align: left;
       }
     }
   }
