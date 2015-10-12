@@ -15,11 +15,11 @@ name: Artist Photo
 key: artist photo
 content-length: 58
 
-<image mediaid="{F2ACB0A4-3EAD-404A-94AF-5A8FCA4E8421}" />
+<image mediaid="{65145DC1-6309-4885-BCB8-80698FE70BF5}" />
 ----version----
 language: en
 version: 1
-revision: 76157c3b-0b47-4985-a2c4-18c7be9c5480
+revision: 4f9e4758-e77d-44b8-9457-0968f22d85df
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -28,6 +28,13 @@ key: artist name
 content-length: 13
 
 ZHANG ZE DUAN
+----field----
+field: {55493757-0DCA-49BC-8139-884B29E177E9}
+name: Artist Photo Description
+key: artist photo description
+content-length: 38
+
+{48098CED-9711-4F65-92B3-BB8810A11806}
 ----field----
 field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
 name: Artist Birthday Label
@@ -46,10 +53,11 @@ content-length: 4
 field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
 name: Artist Description
 key: artist description
-content-length: 371
+content-length: 1674
 
 <p>Born and raised in Hong Kong, of Eurasian heritage, Maria Lobo&rsquo;s art training took her to Italy, Spain, Canada and the USA. </p>
-<p>Maria returned to Hong Kong in 1994, having been part of the San Francisco Hunters Point Artists&rsquo; Community. A decade later, Maria returned to North America and currently resides in San Francisco and exhibit&hellip;</p>
+<p>Maria returned to Hong Kong in 1994, having been part of the San Francisco Hunters Point Artists&rsquo; Community. A decade later, Maria returned to North America and currently resides in San Francisco and exhibit&hellip;Maria returned to Hong Kong in 1994, having been part of the San Francisco Hunters Point Artists&rsquo; Community. A decade later, Maria returned to North America and currently resides in San Francisco and exhibit&hellip;Maria returned to Hong Kong in 1994, having been part of the San Francisco Hunters Point Artists&rsquo; Community. A decade later, Maria returned to North America and currently resides in San Francisco and exhibit.Maria returned to Hong Kong in 1994, having been part of the San Francisco Hunters Point Artists&rsquo; Community. A decade later, Maria returned to North America and currently resides in San Francisco and exhibit.Maria returned to Hong Kong in 1994, having been part of the San Francisco Hunters Point Artists&rsquo; Community. A decade later, Maria returned to North America and currently resides in San Francisco and exhibit.Maria returned to Hong Kong in 1994, having been part of the San Francisco Hunters Point Artists&rsquo; Community. A decade later, Maria returned to North America and currently resides in San Francisco and exhibitMaria returned to Hong Kong in 1994, having been part of the San Francisco Hunters Point Artists&rsquo; Community. A decade later, Maria returned to North America and currently resides in San Francisco and exhibit</p>
+<p>&nbsp;</p>
 <br>
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -71,14 +79,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-76157c3b-0b47-4985-a2c4-18c7be9c5480
+4f9e4758-e77d-44b8-9457-0968f22d85df
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150925T073010Z
+20151012T073024:635802318243018269Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -21,7 +21,7 @@
                 <div class="gd-pagetitle">
                     @{
                         ImageField imageField = Sitecore.Context.Item.Fields["Art Image"];
-                        <a href="javascript:;" class="gd-lightbox-link gd-hover-img" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Art Image", Sitecore.Context.Item)">
+                        <a href="javascript:;" class="gd-lightbox-link gd-hover-img" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Art Image", Sitecore.Context.Item)" data-lighttitle="@Sitecore.Context.Item.Fields["Art Title"]">
                             <div class="gd-hover-img-mask"></div>
                             <img src="@Html.Sitecore().ImageFieldSrc("Art Image", Sitecore.Context.Item)" alt="@imageField.Alt">
                         </a>
@@ -72,7 +72,7 @@
                         }
                         <div class="col-sm-9 col-md-10 gd-artplace-location-info">
                             @floor.Fields["Floor Title"] @floor.Parent.Fields["Building Title"]<br>
-                            <a href="javascript:;" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image",floor)" data-lighttitle="PUT LIGHTBOX TITLE HERE">
+                            <a href="javascript:;" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image",floor)" data-lighttitle="@floor.Fields["Floor Title"] @floor.Parent.Fields["Building Title"]">
                                 <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.FloorPlanItem)
                             </a>
                         </div>
