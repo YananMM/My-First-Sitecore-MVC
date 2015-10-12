@@ -6,6 +6,7 @@
 @model RenderingModel
 @{
     var tagsTrees = LandmarkHelper.GetTagsTree();
+    var currentItem = Sitecore.Context.Item;
 }
 <div id="gd-carousel-mainimage-single" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-single">
     <div class="carousel-inner">
@@ -16,7 +17,15 @@
                     <div class="gd-carousel-detail">
                         <div class="gd-mainimage-brief2">
                             <h2>@Html.Sitecore().Field("Cover Title")</h2>
-                            @Html.Sitecore().Field("Cover Content")
+                            <ul>
+                                @{
+                                    MultilistField experienceType = currentItem.Fields["Experience Type"];
+                                    foreach (var type in experienceType)
+                                    {
+                                       <li>@Sitecore.Context.Database.GetItem(type.ToString()).Fields["Tag Name"].ToString().ToUpper()</li> 
+                                    }
+                                }
+                            </ul>
                             <div class="table-responsive gd-mainimage-table">
                                 <table>
                                     <tbody>

@@ -19,7 +19,7 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: fec6ecc5-7055-4432-bf74-01734fafceb1
+revision: 50c32175-64a4-4a01-b9da-f3b2af42a240
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -36,6 +36,20 @@ content-length: 12
 
 Attraction 1
 ----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 20
+
+SEE MORE ATTRACTIONS
+----field----
+field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
+name: Experience Type
+key: experience type
+content-length: 77
+
+{B0EB0EDF-4E95-4BE6-9BEE-4DC2D2DA7E86}|{ED3568AF-EFF9-439E-BE3E-C2F93A72CBCA}
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -48,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fec6ecc5-7055-4432-bf74-01734fafceb1
+50c32175-64a4-4a01-b9da-f3b2af42a240
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150911T094424:635775614643589994Z
+20151009T023533:635799549333272672Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

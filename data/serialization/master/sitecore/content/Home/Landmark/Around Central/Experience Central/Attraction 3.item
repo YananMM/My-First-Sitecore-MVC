@@ -19,7 +19,7 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: 0ccb2560-741f-47c7-937b-6d5b795e3947
+revision: ae866ff8-0e8f-43da-abde-93a1f2e2da1b
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -36,6 +36,13 @@ content-length: 12
 
 Attraction 3
 ----field----
+field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
+name: Experience Type
+key: experience type
+content-length: 38
+
+{DA1C68B3-0958-4250-A9F6-2F03EAA17545}
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0ccb2560-741f-47c7-937b-6d5b795e3947
+ae866ff8-0e8f-43da-abde-93a1f2e2da1b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150911T094504:635775615048313143Z
+20151009T023449:635799548895762672Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

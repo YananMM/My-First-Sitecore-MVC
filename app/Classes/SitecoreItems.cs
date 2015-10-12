@@ -71,7 +71,7 @@ namespace Landmark.Classes
         public static readonly Item FaxItem = _web.GetItem("{4C157DD6-6AF2-4112-B610-AFFC84C6CCF1}");
         public static readonly Item TelephoneItem = _web.GetItem("{0B3DA006-CBA6-44CA-9421-88965D431F2F}");
         public static readonly Item DiscoverLandmarkStoriesItem = _web.GetItem("{5731F621-01CE-4596-9DA3-55A231D0D21F}");
-        public static readonly Item AllItem = _web.GetItem("{4ACF0FF2-331F-47A8-994A-A3D709A2524F}");
+        public static readonly Item AllItem = _web.GetItem("{4DF62358-121E-4AB9-8F15-E53312FF3BC0}");
         public static readonly Item SortAndGoToItem = _web.GetItem("{A67F7267-0402-4356-9EDF-5F1016C67F15}");
         public static readonly Item SeeMoreItem = _web.GetItem("{0BA79670-6D57-473C-B495-1A01DB6CA2CA}");
         public static readonly Item MagezineItem = _web.GetItem("{8B359693-D433-4F44-98F8-9CEE5FA9B72F}");

@@ -62,12 +62,27 @@
                     <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
                         <img src="@Html.Sitecore().ImageFieldSrc("Cover Image", item)">
                     </a>
-                    <h5>@Html.Sitecore().Field("Key Value", item)</h5>
+                    <h5>
+                        @{
+                                         int i = 1;
+                                         foreach (var id in types)
+                                         {
+                                             var type = Sitecore.Context.Database.GetItem(id);
+                                            <text>@type.Fields["Tag Name"].ToString().ToUpper()</text>
+                                             if (i < types.Count())
+                                             {
+                                                <text>|</text>
+                                             }
+                                             i++;
+                                         }
+                        }
+                    </h5>
                     <h3>@item["Cover Title"]</h3>
                 </div>
             }
         </div>
-        <div class="navigation gd-promo-more"><a href="?page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem) +</a>
+        <div class="navigation gd-promo-more">
+            <a href="?page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem) +</a>
         </div>
     </div>
     @Html.Sitecore().Placeholder("also-like")

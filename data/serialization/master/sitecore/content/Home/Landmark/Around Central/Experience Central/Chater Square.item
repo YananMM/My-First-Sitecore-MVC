@@ -19,8 +19,15 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: cbd3db42-64fe-4877-ab19-5bde3d1b93b2
+revision: 7843f6fa-7222-4b9b-8d08-7c07e8ba36eb
 
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 21
+
+This is Chater Square
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
 name: Cover Title
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cbd3db42-64fe-4877-ab19-5bde3d1b93b2
+7843f6fa-7222-4b9b-8d08-7c07e8ba36eb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150911T092005:635775600053405483Z
+20151008T071031:635798850315707689Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
