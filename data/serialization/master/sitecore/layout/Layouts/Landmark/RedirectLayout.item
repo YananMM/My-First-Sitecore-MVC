@@ -2,9 +2,9 @@
 version: 1
 id: {0098F1FC-647C-4B8B-B3D5-0E3F0D376A19}
 database: master
-path: /sitecore/layout/Layouts/Landmark/T17PromotionLayout
+path: /sitecore/layout/Layouts/Landmark/RedirectLayout
 parent: {6051CFC1-BC50-40C3-9816-3F6E59B273F2}
-name: T17PromotionLayout
+name: RedirectLayout
 master: {00000000-0000-0000-0000-000000000000}
 template: {3A45A723-64EE-4919-9D41-02FD40FD1466}
 templatekey: Layout
@@ -13,13 +13,13 @@ templatekey: Layout
 field: {A036B2BC-BA04-44F6-A75F-BAE6CD242ABF}
 name: Path
 key: path
-content-length: 49
+content-length: 45
 
-/Views/Layouts/Landmark/T17PromotionLayout.cshtml
+/Views/Layouts/Landmark/RedirectLayout.cshtml
 ----version----
 language: en
 version: 1
-revision: f74657b6-763c-4766-ae4d-c38517b37794
+revision: 917398f5-b6cc-418a-a6de-0e204a3b8b62
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f74657b6-763c-4766-ae4d-c38517b37794
+917398f5-b6cc-418a-a6de-0e204a3b8b62
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150930T032601:635791803619263047Z
+20151012T064636Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

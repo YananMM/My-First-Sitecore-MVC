@@ -17,6 +17,7 @@ using Sitecore.Globalization;
 using Sitecore.Links;
 using Sitecore.Mvc.Presentation;
 using Sitecore.Shell.Applications.ContentManager.ReturnFieldEditorValues;
+using Sitecore.StringExtensions;
 using Sitecore.Web.UI;
 using Attachment = Sitecore.Shell.Applications.ContentEditor.Attachment;
 using DateTime = System.DateTime;
@@ -465,7 +466,7 @@ namespace Landmark.Helper
 
         public static bool IsFalsePage(Item item)
         {
-            if (item.Template.ID.ToString() == ItemGuids.PageObject || item.Template.ID.ToString() == ItemGuids.ShoppingPageObject)
+            if ((item.Template.ID.ToString() == ItemGuids.PageObject || item.Template.ID.ToString() == ItemGuids.ShoppingPageObject) && (new LayoutField(Sitecore.Context.Item).Value).IsNullOrEmpty())
             {
                 return true;
             }
