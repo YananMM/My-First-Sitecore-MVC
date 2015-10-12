@@ -64,7 +64,7 @@ namespace Landmark.Classes
         public static readonly Item SeeAllExclusiveItem = _web.GetItem("{4F5C3F3D-9AB5-424B-9C78-41DC7AEECB8F}");
         public static readonly Item SeeAllExclusive = _web.GetItem("{2283A3E4-45AE-4164-8C82-6D9F48D0602C}");
         public static readonly Item ReadMoreItem = _web.GetItem("{738E90D0-A3B0-46A3-8DF4-6FE1825B51D2}");
-        public static readonly Item AllTextItem = _web.GetItem("{0E954D78-0836-46D0-938A-29E235F975ED}");
+        public static readonly Item AllTextItem = _web.GetItem("{48098CED-9711-4F65-92B3-BB8810A11806}");
         public static readonly Item ShareItem = _web.GetItem("{2224057F-0DA3-4D7E-9089-99CB8CC77C0F}");
         public static readonly Item LearnMoreItem = _web.GetItem("{3ADB531C-1F86-4963-859D-9525EE4D833A}");
         public static readonly Item ViewMapItem = _web.GetItem("{615AE910-37B4-44C8-B550-32DAA8CCF66B}");
