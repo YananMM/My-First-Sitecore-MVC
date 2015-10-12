@@ -522,7 +522,7 @@
 
         updatePath: function(path){
             this.options.path = this._determinepath(path);
-            this.options.state.currPage = 1;
+            this.options.state.currPage = 0;
         },
         // Bind to scroll
         bind: function infscr_bind() {
