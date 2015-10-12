@@ -61,9 +61,17 @@ namespace Landmark.Helper
                 {
                     foreach (var id in tagField.TargetIDs)
                     {
-                        
-                            if (!categories.Contains(_webDb.GetItem(id)))
-                                categories.Add(_webDb.GetItem(id));
+                        bool has = false;
+                        foreach (var category in categories)
+                        {
+                            if (category.ID.ToString() == id.ToString())
+                            {
+                                has = true;
+                                break;
+                            }
+                        }
+                        if (!has)
+                            categories.Add(_webDb.GetItem(id));
                         
                     }
                 }

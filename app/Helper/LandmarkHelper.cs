@@ -190,11 +190,11 @@ namespace Landmark.Helper
             return slidesItems;
         }
 
-        public static List<Item> GetItemsByItemsTemplates(this Item item, params Guid[] templateIds)
+        public static List<Item> GetItemsByItemsTemplates(Item parent, Guid[] templateIds)
         {
             var queryTemplateArguments = templateIds.Select(tId => "@@TemplateId='{" + tId.ToString().ToUpper() + "}'").ToArray();
-            var query = string.Format("fast:{0}//*[{1}]", item.Paths.FullPath, string.Join(" or ", queryTemplateArguments));
-            return item.Database.SelectItems(query).ToList();
+            var query = string.Format("fast:{0}//*[{1}]", parent.Paths.FullPath, string.Join(" or ", queryTemplateArguments));
+            return parent.Database.SelectItems(query).ToList();
         }
 
         public static String FileFieldSrc(string fieldName, Item item)

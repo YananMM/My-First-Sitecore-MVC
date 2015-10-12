@@ -7466,6 +7466,12 @@ button.close {
   display: block;
   margin-top: 15px;
 }
+.site-footer .footer-info .footer-legal a {
+  color: #FFFFFF;
+}
+.site-footer .footer-info .footer-legal a:hover {
+  color: #999999;
+}
 .portrait_only {
   position: fixed;
   top: 0;
@@ -7520,8 +7526,11 @@ button.close {
   .site-footer .footer-info .footer-copyright {
     margin: 15px 0;
   }
-  .site-footer .footer-info .footer-legal a {
-    color: #d4a962;
+  .site-footer .footer-info .footer-legal p {
+    margin-top: 0;
+  }
+  .site-footer .footer-info .footer-legal p a {
+    color: #FFFFFF;
   }
 }
 @media (min-width: 768px) {
@@ -12136,8 +12145,12 @@ h4 a:active {
   text-align: center;
   width: 300px;
 }
+.gd-showcase .gd-showcase-content > ul > li > a {
+  display: block;
+}
 .gd-showcase .gd-showcase-content > ul > li img {
-  width: 100%;
+  max-width: 100%;
+  width: auto;
 }
 .gd-showcase .gd-showcase-content > ul > li h4,
 .gd-showcase .gd-showcase-content > ul > li p {
@@ -13763,10 +13776,10 @@ dl.gd-content-details-tags dd a:active {
 }
 .t29 .gd-artplace .gd-pagetitle > a {
   display: inline-block;
-}
-.t29 .gd-artplace .gd-pagetitle > img {
-  cursor: pointer;
   margin-top: 30px;
+}
+.t29 .gd-artplace .gd-pagetitle > a > img {
+  cursor: pointer;
   max-width: 100%;
 }
 .t29 .gd-artplace .gd-pagetitle h2 {
@@ -13914,6 +13927,11 @@ dl.gd-content-details-tags dd a:active {
     left: auto;
     right: 10px;
     margin-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .t29 .gd-link-brands {
+    float: none;
   }
 }
 .t30 .gd-artist {
@@ -15477,6 +15495,10 @@ dl.gd-content-details-tags dd a:active {
 }
 .t15 .gd-promo-more {
   margin-bottom: 0;
+}
+.gd-artlist .gd-hover-img-area img {
+  width: auto;
+  max-width: 100%;
 }
 @media (min-width: 1000px) {
   body,

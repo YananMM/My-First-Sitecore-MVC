@@ -46,17 +46,20 @@
         <div class="gd-promo-body">
             @foreach (Item child in articles)
             {
-                Item article = child.TemplateID.ToString() == ItemGuids.T4PageTemplate ? child : ((ReferenceField)child.Fields["Reference Item"]).TargetItem;
-                Item type = ((ReferenceField)article.Fields["Article Type"]).TargetItem;
+                @*Item article = child.TemplateID.ToString() == ItemGuids.T4PageTemplate ? child : ((ReferenceField)child.Fields["Reference Item"]).TargetItem;*@
+                ReferenceField typeField = ((ReferenceField)child.Fields["Article Type"]);
                 <div class="gd-promo-box">
-                    <a href="@LinkManager.GetItemUrl(article)" class="gd-hover-img">
+                    <a href="@LinkManager.GetItemUrl(child)" class="gd-hover-img">
                         <div class="gd-hover-img-area">
                             <div class="gd-hover-img-mask"></div>
-                            <img data-src='@Html.Sitecore().ImageFieldSrc("Article Thumb Image", article)'>
+                            <img data-src='@Html.Sitecore().ImageFieldSrc("Article Thumb Image", child)'>
                         </div>
-                        <h5>@type.Fields["See More Article Text"].ToString().ToUpper()</h5>
-                        <h3>@Html.Sitecore().Field("Article Headline", article)</h3>
-                        <p>@Html.Sitecore().Field("Article Intro", article)</p>
+                        @if (typeField != null && typeField.TargetItem != null)
+                        {
+                            <h5>@typeField.TargetItem.Fields["Article Type"].ToString().ToUpper()</h5>
+                        }
+                        <h3>@Html.Sitecore().Field("Article Headline", child)</h3>
+                        <p>@Html.Sitecore().Field("Article Intro", child)</p>
                     </a>
                 </div>
             }

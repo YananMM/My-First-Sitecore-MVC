@@ -46,7 +46,7 @@
                         </div>
                         @if (pieces.Count > 2)
                         {
-                            <a href="?artist=@artist.ID.ToString()" class="gd-artlist-more" data-toggletext="SEE LESS -">SEE MORE +</a>
+                            <a href="?artist=@artist.ID.ToString()" class="gd-artlist-more" data-toggletext="@Html.Sitecore().Field("Glossary Value",SitecoreItems.SeeLessGlossaryItem)">@Html.Sitecore().Field("Glossary Value",SitecoreItems.SeeMoreGlossaryItem)</a>
                         }
                     </div>
                 </div>
@@ -55,6 +55,6 @@
         <div class="col-sm-6"></div>
     </div>
     <div class="navigation gd-promo-more">
-        <a href="@LinkManager.GetItemUrl(Sitecore.Context.Item)?page=2">SEE MORE +</a>
+        <a href="@LinkManager.GetItemUrl(Sitecore.Context.Item)?page=2">@Html.Sitecore().Field("Glossary Value",SitecoreItems.SeeMoreGlossaryItem)</a>
     </div>
 </div>
