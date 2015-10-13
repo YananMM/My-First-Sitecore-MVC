@@ -146,6 +146,7 @@
     <Compile Include="Classes\InstagramSocial.cs" />
     <Compile Include="Classes\ItemGuids.cs" />
     <Compile Include="Classes\Crawlers\LanguageFallbackCrawler.cs" />
+    <Compile Include="Classes\PreventDuplicates.cs" />
     <Compile Include="Classes\SitecoreItems.cs" />
     <Compile Include="Classes\SitecoreRenderingViewGuids.cs" />
     <Compile Include="Classes\StringConstants.cs" />
@@ -188,6 +189,7 @@
     <Compile Include="Models\LandmarkSearchResultItem.cs" />
     <Compile Include="Models\SearchContentModel.cs" />
     <Compile Include="Models\TextValue.cs" />
+    <Compile Include="Pipelines\DuplicateItem.cs" />
     <Compile Include="Pipelines\GetPlaceholderRenderings\GetDynamicKeyAllowedRenderings.cs" />
     <Compile Include="Pipelines\GetChromeData\GetDynamicPlaceholderChromeData.cs" />
     <Compile Include="Pipelines\HttpRequest\NotFoundProcessor.cs" />
