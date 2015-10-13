@@ -132,6 +132,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Applications\Landmark\EmailSignupExport.aspx.cs">
+      <DependentUpon>EmailSignupExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Applications\Landmark\EmailSignupExport.aspx.designer.cs">
+      <DependentUpon>EmailSignupExport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_GlobalResources\Landmark.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -146,7 +153,7 @@
     <Compile Include="Classes\InstagramSocial.cs" />
     <Compile Include="Classes\ItemGuids.cs" />
     <Compile Include="Classes\Crawlers\LanguageFallbackCrawler.cs" />
-    <Compile Include="Classes\PreventDuplicates.cs" />
+    <Compile Include="Classes\Customtation\PreventDuplicates.cs" />
     <Compile Include="Classes\SitecoreItems.cs" />
     <Compile Include="Classes\SitecoreRenderingViewGuids.cs" />
     <Compile Include="Classes\StringConstants.cs" />
@@ -189,7 +196,6 @@
     <Compile Include="Models\LandmarkSearchResultItem.cs" />
     <Compile Include="Models\SearchContentModel.cs" />
     <Compile Include="Models\TextValue.cs" />
-    <Compile Include="Pipelines\DuplicateItem.cs" />
     <Compile Include="Pipelines\GetPlaceholderRenderings\GetDynamicKeyAllowedRenderings.cs" />
     <Compile Include="Pipelines\GetChromeData\GetDynamicPlaceholderChromeData.cs" />
     <Compile Include="Pipelines\HttpRequest\NotFoundProcessor.cs" />
@@ -227,6 +233,7 @@
     <Content Include="apple-touch-icon-76x76.png" />
     <Content Include="apple-touch-icon-precomposed.png" />
     <Content Include="apple-touch-icon.png" />
+    <Content Include="Applications\Landmark\EmailSignupExport.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="favicon-160x160.png" />
     <Content Include="favicon-16x16.png" />
