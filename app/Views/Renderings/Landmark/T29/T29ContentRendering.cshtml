@@ -72,7 +72,12 @@
                         }
                         <div class="col-sm-9 col-md-10 gd-artplace-location-info">
                             @floor.Fields["Floor Title"] @floor.Parent.Fields["Building Title"]<br>
-                            <a href="javascript:;" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image",floor)" data-lighttitle="@floor.Fields["Floor Title"] @floor.Parent.Fields["Building Title"]">
+                            @{
+                                string text="";
+                                var lightBox = Sitecore.Context.Item.Fields["Light Box Text"];
+                                text = lightBox + " " + floor.Fields["Floor Title"] + " of " + floor.Parent.Fields["Building Title"];
+                            }
+                            <a href="javascript:;" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image",floor)" data-lighttitle="@text">
                                 <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.FloorPlanItem)
                             </a>
                         </div>
