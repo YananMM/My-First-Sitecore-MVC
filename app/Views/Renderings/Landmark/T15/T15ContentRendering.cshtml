@@ -25,7 +25,7 @@
     <div class="gd-promotion">
         <div class="gd-promo-filter">
             <ul class="hidden-xs">
-                <li class="active"><a href="javascript:;" data-filter="*">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AllItem)</a></li>
+                <li class="active"><a href="javascript:;" data-filter="*">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AllTextItem)</a></li>
                 @if (experienceTypes.Count != 0)
                 {
                     foreach (var item in experienceTypes)
