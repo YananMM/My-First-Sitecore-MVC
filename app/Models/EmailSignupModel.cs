@@ -286,7 +286,7 @@ namespace Landmark.Models
         public DateTime CreatedOn { get; set; }
 
         public EmailSignUpCsvModel() { }
-        public EmailSignUpCsvModel(EmailSignupModel model)
+        public EmailSignUpCsvModel(EmailSignup model)
         {
             Title = model.Title;
             FirstName = model.FirstName;
@@ -309,7 +309,7 @@ namespace Landmark.Models
             CreatedOn = model.CreatedOn;
 
             // ugly conversion codes
-            var interests = model.Interests.Split(',');
+            var interests = model.Interest.Split(',');
             // you may want to make this not hard-coded
             var predefined = new[] { 
                 "Shoppping", "Fashion", "Home Kids",
@@ -331,7 +331,7 @@ namespace Landmark.Models
             InterestSports      = interests.Contains(predefined[10]) ? "Yes" : "No";
             InterestTravelling  = interests.Contains(predefined[11]) ? "Yes" : "No";
             InterestSocialResponsibility = interests.Contains(predefined[12]) ? "Yes" : "No";
-            InterestOthers = model.Interests.Split(',').Except(predefined).First();
+            InterestOthers = model.Interest.Split(',').Except(predefined).First();
         }
     }
 }
