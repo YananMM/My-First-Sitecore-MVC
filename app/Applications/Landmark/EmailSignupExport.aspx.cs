@@ -9,6 +9,7 @@ using System.Web.UI.WebControls;
 using Landmark.Classes;
 using Landmark.Models;
 using LINQtoCSV;
+using Sitecore.Web;
 
 namespace Landmark.layouts.Landmark
 {
@@ -16,7 +17,13 @@ namespace Landmark.layouts.Landmark
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Sitecore.Context.User.IsAuthenticated)
+            {
+                string host =System.Web.HttpContext.Current.Request.Url.Scheme +
+                          Uri.SchemeDelimiter +
+                          System.Web.HttpContext.Current.Request.Url.Host;
+                Response.Redirect(host+"/sitecore");
+            }
         }
 
         protected void ExportBtn_Click(object sender, EventArgs e)
