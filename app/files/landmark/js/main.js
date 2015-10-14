@@ -1584,7 +1584,6 @@ $(document).ready(function() {
             // retrieve by ajax then trigger event again
             $.get(gdShowcaseNextUrl.replace(/([&?])startindex=\d+$/, '$1startindex=' + gdShowcaseNo), function(html){
               var items = $(html);
-              console.log(items);
               items.css('width', gdShowcaseItems.find('>li:first').css('width'));
               gdShowcaseItems.append(items);
               $(window).lazyLoadXT();
@@ -1622,14 +1621,7 @@ $(document).ready(function() {
    **********************************************************************************************************/
   var gdTextOn   = $('.gd-longarticle').eq(0).data('text-on');
   var gdTextOff  = $('.gd-longarticle').eq(0).data('text-off');
-  var gdTextFunc = function() {
-    var gdTextPar = $('#read-more').parent();
-    var gdTextOri = gdTextPar.html();
-    var gdTextBrk = gdTextOri.indexOf('…');
-    var gdTextBef = gdTextOri.slice(0, gdTextOri.lastIndexOf(' ', gdTextBrk))
-    var gdTextAft = gdTextOri.slice(gdTextBrk);
-    gdTextPar.html(gdTextBef + gdTextAft);
-  };
+  
   var gdTextLines = (function() {
     if ($('.gd-longarticle p').length > 1) {
       var gdTextSample = $('.gd-longarticle p').eq(0);
@@ -1642,9 +1634,30 @@ $(document).ready(function() {
 
   $('.gd-longarticle').trunk8({
     lines: gdTextLines,
-    fill: '&hellip; <a id="read-more" href="#">' + gdTextOn + '</a>',
-    onTruncate: gdTextFunc
+    fill: '&hellip; <a id="read-more" href="#">' + gdTextOn + '</a>'
   });
+  
+  var gdTextFunc = function() {
+    var gdTextPar = $('#read-more').parent();
+    var gdTextOri = gdTextPar.html().toString();
+    var gdTextBrk = gdTextOri.indexOf('…');
+    var gdTextBef = gdTextOri.slice(0, gdTextOri.lastIndexOf(' ', gdTextBrk))
+    var gdTextAft = gdTextOri.slice(gdTextBrk);
+    gdTextPar.html(gdTextBef + gdTextAft);
+  };
+  
+  var gdTrunkCheckTimer;
+  function gdTrunkCheck() {
+    if ($('#read-more').length > 0) {
+      clearTimeout(gdTrunkCheckTimer);
+      gdTextFunc();
+    } else {
+      gdTrunkCheckTimer = setTimeout(function() {
+        gdTrunkCheck();
+      }, 200);
+    }
+  };
+  gdTrunkCheck();
   
   $('#read-more').live('click', function (event) {
     $(this).closest('.gd-longarticle').trunk8('revert').append(' <a id="read-less" href="javascript:;">' + gdTextOff + '</a>');
@@ -1661,7 +1674,7 @@ $(document).ready(function() {
   /**********************************************************************************************************
    * Text in bottom slider
    **********************************************************************************************************/
-  var gdBottomSliderFunc = function() {
+  var gdBottomSliderFunc = function(textHeight) {
     $('#gd-carousel-info .gd-carousel-detail p').dotdotdot({
       ellipsis	: '... ',
       wrap		: 'word',
@@ -1669,14 +1682,22 @@ $(document).ready(function() {
       after		: null,
       watch		: true,
       tolerance	: 0,
-      height: (isIE8() ? 28 : parseInt($('#gd-carousel-info .gd-carousel-detail p').css('lineHeight'))) * gdSettings.ShortVersionContentNumberOfLines,
+      height: textHeight,
       lastCharacter	: {
         remove		: [ ' ', ',', ';', '.', '!', '?' ],
         noEllipsis	: []
       }
     });
   }
-  gdBottomSliderFunc();
+  if ($('#gd-carousel-info').length) {
+    var gdBottomTextFZ     = $('#gd-carousel-info .gd-carousel-detail p').eq(0).css('fontSize');
+        gdBottomTextFZ     = gdBottomTextFZ.indexOf('px') > 0 ? gdBottomTextFZ.slice(0, -2) : gdBottomTextFZ;
+    var gdBottomTextLH     = $('#gd-carousel-info .gd-carousel-detail p').eq(0).css('lineHeight');
+        gdBottomTextLH     = gdBottomTextLH.indexOf('px') > 0 ? gdBottomTextLH.slice(0, -2) : (gdBottomTextLH * gdBottomTextFZ);
+    var gdBottomTextHeight = gdBottomTextLH * gdSettings.ShortVersionContentNumberOfLines;
+
+    gdBottomSliderFunc( gdBottomTextHeight );
+  }
   
   /**********************************************************************************************************
    * Text in Magazine
