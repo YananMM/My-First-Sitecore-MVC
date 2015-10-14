@@ -19,16 +19,16 @@ namespace Landmark.layouts.Landmark
         {
             if (!Sitecore.Context.User.IsAuthenticated)
             {
-                string host =System.Web.HttpContext.Current.Request.Url.Scheme +
+                string host = System.Web.HttpContext.Current.Request.Url.Scheme +
                           Uri.SchemeDelimiter +
                           System.Web.HttpContext.Current.Request.Url.Host;
-                Response.Redirect(host+"/sitecore");
+                Response.Redirect(host + "/sitecore");
             }
         }
 
         protected void ExportBtn_Click(object sender, EventArgs e)
         {
-            using (LandmarkSitecore_MasterEntities context = new LandmarkSitecore_MasterEntities())
+            using (LandmarkEntities context = new LandmarkEntities())
             {
                 var results =
                     context.EmailSignups.Where(
@@ -36,7 +36,7 @@ namespace Landmark.layouts.Landmark
                 List<EmailSignUpCsvModel> signups = new List<EmailSignUpCsvModel>();
                 foreach (var result in results)
                 {
-                    
+
                     signups.Add(new EmailSignUpCsvModel(result));
                 }
 
