@@ -13,10 +13,10 @@ namespace Landmark.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class LandmarkSitecore_MasterEntities : DbContext
+    public partial class LandmarkEntities : DbContext
     {
-        public LandmarkSitecore_MasterEntities()
-            : base("name=LandmarkSitecore_MasterEntities")
+        public LandmarkEntities()
+            : base("name=LandmarkEntities")
         {
         }
     

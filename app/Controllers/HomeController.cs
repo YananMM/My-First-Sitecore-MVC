@@ -210,7 +210,7 @@ namespace Landmark.Controllers
                         return Content("Please input correct Email");
                     }
 
-                    using (LandmarkSitecore_MasterEntities context = new LandmarkSitecore_MasterEntities())
+                    using (LandmarkEntities context = new LandmarkEntities())
                     {
                         EmailSignup emailSignup = new EmailSignup
                         {

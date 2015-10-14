@@ -626,6 +626,14 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="files\landmark\css\style.css.map" />
+    <Content Include="files\landmark\js\lib\slick\config.rb" />
+    <Content Include="files\landmark\js\lib\slick\fonts\slick.eot" />
+    <Content Include="files\landmark\js\lib\slick\fonts\slick.ttf" />
+    <Content Include="files\landmark\js\lib\slick\fonts\slick.woff" />
+    <Content Include="files\landmark\js\lib\slick\slick-theme.scss" />
+    <Content Include="files\landmark\js\lib\slick\slick.scss" />
+    <Content Include="files\landmark\less\pagespecific.less" />
+    <Content Include="files\landmark\less\components.less" />
     <EntityDeploy Include="Models\Landmark.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Landmark.Designer.cs</LastGenOutput>
@@ -643,14 +651,6 @@
       <DependentUpon>Landmark.edmx</DependentUpon>
       <LastGenOutput>Landmark.cs</LastGenOutput>
     </Content>
-    <Content Include="files\landmark\js\lib\slick\config.rb" />
-    <Content Include="files\landmark\js\lib\slick\fonts\slick.eot" />
-    <Content Include="files\landmark\js\lib\slick\fonts\slick.ttf" />
-    <Content Include="files\landmark\js\lib\slick\fonts\slick.woff" />
-    <Content Include="files\landmark\js\lib\slick\slick-theme.scss" />
-    <Content Include="files\landmark\js\lib\slick\slick.scss" />
-    <Content Include="files\landmark\less\pagespecific.less" />
-    <Content Include="files\landmark\less\components.less" />
     <None Include="Properties\PublishProfiles\DEV.pubxml" />
     <None Include="Properties\PublishProfiles\landmark.pubxml" />
     <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
