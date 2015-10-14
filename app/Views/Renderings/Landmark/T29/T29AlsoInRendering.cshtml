@@ -27,8 +27,9 @@
                             <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)" class="gd-hover-img">
                                 <div class="gd-hover-img-area">
                                     <div class="gd-hover-img-mask"></div>
-                                    @Html.Sitecore().Field("Art Image", item)
+                                    <img data-src="@Html.Sitecore().ImageFieldSrc("Art Image", item)" alt="">
                                 </div>
+
                                 <h4>@Html.Sitecore().Field("Art Title", item)</h4>
                                 @{
                         GroupedDroplinkField artistField = item.Fields["Artist"];

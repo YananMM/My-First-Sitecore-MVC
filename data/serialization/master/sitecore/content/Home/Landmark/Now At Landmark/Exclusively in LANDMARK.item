@@ -33,15 +33,23 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 26672a25-fb96-4479-9838-2d707f441f6c
+revision: 427c5e4a-3334-4ecf-8cc7-f7189ef6e51a
 
+----field----
+field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
+name: Article Content
+key: article content
+content-length: 2607
+
+<p>This June, LANDMARK selects over 50 items exclusively available in Hong Kong in its 4 iconic connected buildings LANDMARK ATRIUM, LANDMARK ALEXANDRA, LANDMARK CHATER and LANDMARK PRINCE&rsquo;S, demonstrating LANDMARK&rsquo;s leading reputation as a cosmopolitan destination for leading luxury brands, unique finds, fine dining which culminates into a superlative lifestyle experience under one roof.</p>
+<p>Reminiscent of a European shopping experience with luxury flagship stores lined throughout the street, LANDMARK is home to around 30 flagship stores of top-tier luxury brands and over 50 shops totally unique to the city, as part of its 200 plus retailer portfolio of fashion, watches, accessories, homeware and more. Highlights of this month&rsquo;s LANDMARK Exclusive Items include FENDI&rsquo;s iconic Peekaboo bag presented in a multi-coloured orthogonal graphic, ETRO&rsquo;s summery Paisley Patterned Hooded Jacket, and a much sought after scent from French perfumer Fr&eacute;d&eacute;ric Malle, Ind&eacute;l&eacute;bile, available at Joyce Grooming. These and a wide array of luxury and fashion items can only be found at LANDMARK. To receive our latest news and register for upcoming events, please sign up for LANDMARK eNewsletter at www.landmark.hk; or follow us on Facebook at www.facebook.com/Landmark.hk; Instagram channel at www.instagram.com/landmarkhk or search &ldquo;landmarkhk&rdquo;; hashtags at #LANDMARKHK and #LANDMARKMEN; Sina Weibo account at www.weibo.com/landmarkhk.Reminiscent of a European shopping experience with luxury flagship stores lined throughout the street, LANDMARK is home to around 30 flagship stores of top-tier luxury brands and over 50 shops totally unique to the city, as part of its 200 plus retailer portfolio of fashion, watches, accessories, homeware and more. Highlights of this month&rsquo;s LANDMARK Exclusive Items include FENDI&rsquo;s iconic Peekaboo bag presented in a multi-coloured orthogonal graphic, ETRO&rsquo;s summery Paisley Patterned Hooded Jacket, and a much sought after scent from French perfumer Fr&eacute;d&eacute;ric Malle, Ind&eacute;l&eacute;bile, available at Joyce Grooming. These and a wide array of luxury and fashion items can only be found at LANDMARK. To receive our latest news and register for upcoming events, please sign up for LANDMARK eNewsletter at www.landmark.hk; or follow us on Facebook at www.facebook.com/Landmark.hk; Instagram channel at www.instagram.com/landmarkhk or search &ldquo;landmarkhk&rdquo;; hashtags at #LANDMARKHK and #LANDMARKMEN; Sina Weibo account at www.weibo.com/landmarkhk.&nbsp;</p>
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 10
+content-length: 50
 
-Pool Party
+Pool Party - Featuring 50 Exquisite Items for June
 ----field----
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
@@ -49,6 +57,17 @@ key: article sub headline
 content-length: 4
 
 lili
+----field----
+field: {C5EC7AC3-3E61-41EE-89FD-B0A92D124ECA}
+name: Bullets and Tables
+key: bullets and tables
+content-length: 268
+
+<ul>
+    <li>Roger Chan puts his stamp on his outfit</li>
+    <li> By sporting his own light-coloured, three-button stripped suit. Giving off a cool vibe with total &eacute;lan,</li>
+    <li>The side vents on this suit gives him a trim silhouette which also</li>
+</ul>
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
@@ -71,19 +90,40 @@ content-length: 38
 
 {570AE6CA-A88C-4319-BE72-F304687CD3F8}
 ----field----
+field: {D0682F10-5AE7-4391-AD4C-A32B5B301488}
+name: Event From Date
+key: event from date
+content-length: 16
+
+20151006T160000Z
+----field----
+field: {821DF203-FA52-4076-94A5-1C6C91098B56}
+name: Event To Date
+key: event to date
+content-length: 16
+
+20151008T160000Z
+----field----
 field: {F23BEBDE-D0C1-482B-9670-C0BD140DB78C}
 name: Event From Time
 key: event from time
-content-length: 0
+content-length: 16
 
-
+20151007T000000Z
 ----field----
 field: {CC414C5A-0BBF-4710-BD60-801121F777BC}
 name: Event To Time
 key: event to time
 content-length: 16
 
-20150824T090000Z
+20151007T230000Z
+----field----
+field: {1A295EA6-6C43-42E9-864C-2C5EAC33DF7F}
+name: Event Enquiry
+key: event enquiry
+content-length: 12
+
+852-28823390
 ----field----
 field: {EC53624E-6FA2-43CD-BE2A-65DD4663B148}
 name: Event Floor
@@ -132,14 +172,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-26672a25-fb96-4479-9838-2d707f441f6c
+427c5e4a-3334-4ecf-8cc7-f7189ef6e51a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150928T182545Z
+20151014T081127:635804070876803187Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

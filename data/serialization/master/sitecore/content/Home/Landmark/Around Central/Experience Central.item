@@ -12,7 +12,7 @@ templatekey: T15 Page
 ----version----
 language: en
 version: 1
-revision: 724879eb-56a6-445a-a2ab-70107e0ca4ec
+revision: 768b11ac-ebce-40c6-aaa7-4470d6c78114
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -22,12 +22,26 @@ content-length: 18
 
 Experience Central
 ----field----
+field: {F6C0802D-1D44-454B-BFE0-335444BD573B}
+name: Callout Image
+key: callout image
+content-length: 58
+
+<image mediaid="{565C8237-EB6D-4406-9897-4124AF0202F9}" />
+----field----
 field: {E24E5C03-B6A3-4ACA-AB3C-B48ACEDDD01D}
 name: Page Introduction
 key: page introduction
 content-length: 231
 
 INTRODUCTION ABOUT MONTHLY EXCLUSIVES - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in convallis urna. Phasellus vitae ligula eu odio luctus tristique in in purus. Morbi vestibulum sodales lorem ac ullamcorper.
+----field----
+field: {D7127F86-CC6F-4DFE-A125-92E0898CC171}
+name: Button Text
+key: button text
+content-length: 13
+
+DISCOVER MORE
 ----field----
 field: {1025D25C-6AE7-49FC-8C2C-3FACAD13EB9E}
 name: Tags
@@ -48,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-724879eb-56a6-445a-a2ab-70107e0ca4ec
+768b11ac-ebce-40c6-aaa7-4470d6c78114
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150907T104935:635772197759237330Z
+20151014T073437:635804048775619072Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

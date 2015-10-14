@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {1025D25C-6AE7-49FC-8C2C-3FACAD13EB9E}
+id: {D7127F86-CC6F-4DFE-A125-92E0898CC171}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T15 Page/Tag Data/Tags
-parent: {C226036B-D1AF-4EA3-9F9E-6949A701D0C2}
-name: Tags
+path: /sitecore/templates/User Defined/Landmark/Page/T15 Page/Page Info/Button Text
+parent: {06E9B739-D1E7-4F75-8434-6D7435EB1414}
+name: Button Text
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,27 +13,20 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 8
+content-length: 16
 
-Treelist
-----field----
-field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
-name: Source
-key: source
-content-length: 38
-
-/sitecore/content/Global/Landmark/Tags
+Single-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-100
+200
 ----version----
 language: en
 version: 1
-revision: 23eb44ea-237a-4b15-8ee8-c5fe3ae13d24
+revision: aa828131-169e-46cc-a355-61c23ce98879
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150907T104714Z
+20151014T073405Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-23eb44ea-237a-4b15-8ee8-c5fe3ae13d24
+aa828131-169e-46cc-a355-61c23ce98879
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151014T073407:635804048477612027Z
+20151014T073407:635804048476981991Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
