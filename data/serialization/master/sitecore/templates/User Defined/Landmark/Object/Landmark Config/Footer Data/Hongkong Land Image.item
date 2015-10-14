@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {87228212-11A4-40BB-8B1A-783034F383EA}
+id: {A4425FD4-2373-43DE-8C27-6BF0EED38973}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Landmark Config/Portrait Only Data/Portrait Only Text
-parent: {EA4622F8-1BA4-4F16-99E4-B20C272BD7F8}
-name: Portrait Only Text
+path: /sitecore/templates/User Defined/Landmark/Object/Landmark Config/Footer Data/Hongkong Land Image
+parent: {E906AACF-7038-45E8-8DB4-9624070D14CD}
+name: Hongkong Land Image
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,20 +13,27 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 16
+content-length: 5
 
-Single-Line Text
+Image
+----field----
+field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
+name: Source
+key: source
+content-length: 39
+
+/sitecore/media library/Images/Landmark
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-100
+300
 ----version----
 language: en
 version: 1
-revision: 83fb11af-69e9-4656-a533-e8f18534ba1a
+revision: 02377fc2-d378-4d16-9c5a-0ce1f9d0f097
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,14 +41,14 @@ name: __Created
 key: __created
 content-length: 16
 
-20150812T004551Z
+20151014T135115Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-83fb11af-69e9-4656-a533-e8f18534ba1a
+02377fc2-d378-4d16-9c5a-0ce1f9d0f097
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated

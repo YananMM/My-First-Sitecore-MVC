@@ -7,7 +7,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-            @Html.Sitecore().Field("Footer Content")
+            @Html.Sitecore().Field("Footer Content",SitecoreItems.LandmarkConfigItem)
             <div class="footer-logo">
                 @Html.Sitecore().Field("Hongkong Land Link", SitecoreItems.LandmarkConfigItem, new {text = "<img data-src='" + src + "' alt='HongKong Land'>"})
             </div>

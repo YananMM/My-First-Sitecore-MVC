@@ -40,7 +40,7 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: 006e328d-8eec-4534-a8d6-d073885fb9e9
+revision: ee6ecaf5-7a96-44af-bac0-3237fda0f67d
 
 ----field----
 field: {61C64C37-DD57-4575-BEE5-AC71398FABF6}
@@ -120,6 +120,35 @@ content-length: 25
 
 D:\Sitecore\Landmark\CSV\
 ----field----
+field: {6FCBA4D7-B564-46B9-9340-72AF4FD96C9C}
+name: Footer Content
+key: footer content
+content-length: 252
+
+<p>For general queries, please contact LANDMARK Concierge Hotline at <a href="#">2500 0555</a>.</p>
+<p>For update or change any of your personal data, or if you do not wish to receive promotional material from us, please <a href="#">click here</a>.</p>
+----field----
+field: {A4425FD4-2373-43DE-8C27-6BF0EED38973}
+name: Hongkong Land Image
+key: hongkong land image
+content-length: 58
+
+<image mediaid="{83C85E65-6960-4A14-9098-05896B7D4239}" />
+----field----
+field: {906CE553-DBE3-477E-AD2D-C461ECFC7B3A}
+name: Copyright Left Text
+key: copyright left text
+content-length: 14
+
+© Copyright © 
+----field----
+field: {A1032072-A1DD-4584-B99B-B2DE30D79347}
+name: Copyright Right Text
+key: copyright right text
+content-length: 43
+
+ Hongkong Land Limited. All Rights Reserved
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -146,14 +175,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-006e328d-8eec-4534-a8d6-d073885fb9e9
+ee6ecaf5-7a96-44af-bac0-3237fda0f67d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151014T013709Z
+20151014T135231Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
