@@ -1539,13 +1539,17 @@ h2,h3,h4{
             align-items: center;
           }
           >li {
+            >a {
+              display: block;
+            }
             float: left;
             list-style-type: none;
             padding: 0 10px;
             text-align: center;
             width: 300px;
             img {
-              width: 100%;
+              max-width: 100%;
+              width: auto;
             }
             h4,p{
             text-align: left;

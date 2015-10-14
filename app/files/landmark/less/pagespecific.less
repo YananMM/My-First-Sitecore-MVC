@@ -1,167 +1,3 @@
-.t35 {
-  >iframe {
-    display: block;
-    height: 850px;
-    width: 100%;
-    @media (max-width:@screen-xs-min) {
-      height: 585px;
-    }
-  }
-  #gd-map-switcher-m {
-    margin: 30px 0;
-  }
-}
-@media print {
-  .t35 {
-    >.site-header,
-    >.page-header,
-    >.container,
-    >.back-top,
-    >.site-footer {
-      display: none;
-    }
-    >iframe {
-      height: 1700px;
-    }
-  }
-}
-.t8{
-  .gd-brief{
-    margin-top: 53px;
-  }
-  #gd-carousel-info{
-    margin-top: 25px;
-  }
-  .gd-mainimage .carousel-inner .item > .carousel-caption .gd-carousel-detail{
-   height: 260px;
-    @media (min-width:@screen-sm) {
-    height: @gdmi-height-md;
-    }
-    @media (min-width:@screen-md) {
-    height: @gdmi-height;
-    }
-  }
-}
-
-.t14{
-  .gd-brief{
-    margin-top: 53px;
-  }
-  .gd-bigbrand{
-   text-align: center;
-    margin: 30px 0 50px;
-    @media (min-width:@screen-sm) {
-    margin: 41px 0 50px;
-    
-    }
-  }
-  .shopdetails-brand{
-    margin: 25px 0 0;
-    background-color: #f6f6f6;
-    padding: 30px 0 60px;
-    position: relative;
-    .gd-link-brands{
-      display: block;
-      float: none;
-      position: absolute;
-      bottom: 10px;
-      top: auto;
-      left: 50%;
-      right: auto;
-      margin-left: -55px;
-    }
-    ul {
-     margin: 0;
-      padding: 0;
-      li{
-     margin: 0;
-      padding: 0 ;
-     display: inline-block;
-        .black-text2;
-        a{
-          padding-bottom: 10px;
-        }
-        a.active{
-          border-bottom: solid 1px #D4A962;
-          color: @brand-golden;
-        }
-    }
-    }
-    .shopdetails-brand-header{
-      text-align: center;
-      ul li {
-        margin: 0 0 0 10px;
-        padding-left: 12px;
-         border-left: solid 1px #222;
-        &:first-child{
-        padding-left: 0;
-        border-left: none;
-        }
-      }
-    }
-    .shopdetails-brand-body{
-      padding: 0;
-      margin-top: 30px;
-      .row>.col-sm-2{
-        text-align: center;
-        line-height: 76px;
-        >a {
-          display:block;
-          >img {
-            max-width: 80%;
-          }
-        }
-       }
-    }
-  }
-  .back-top {
-    height: 0;
-  }
-}
- @media (min-width:@screen-sm) {
-   .t14{
-  .shopdetails-brand{ 
-    margin: 25px 0 0;
-    background-color: #f6f6f6;
-    padding: 60px 0;
-    position: relative;
-    .gd-link-brands{
-      display: block;
-      float: right;
-      position: absolute;
-      bottom: auto;
-      text-align: center;
-      top: 58px;
-      left: auto;
-      right: 10px;
-      margin-left: 0;
-    }
-    .shopdetails-brand-header{
-      text-align: center;
-      ul li {
-        margin: 0 0 0 28px;
-        padding-left: 30px;
-         border-left: solid 1px #222;
-        &:first-child{
-        padding-left: 0;
-        border-left: none;
-        }
-      }
-    }
-    .shopdetails-brand-body{
-      margin-top: 43px;
-      
-      .row>.col-sm-2{
-        >a {
-          >img {
-            max-width: 100%;
-          }
-        }
-      }
-    }
-  }
-   }  
-}
 .t22{
   h5{
   color: @gd-title-color;
@@ -372,7 +208,7 @@
      margin-bottom: 10px;
    }
  }
-.t33{
+.t25, .t33{
   .gd-mainimage-single .carousel-inner .item > .carousel-caption{
       background: url(../images/black-80.png);
       background: rgba(0, 0, 0, 0.8);
@@ -518,12 +354,12 @@
     .gd-pagetitle{
       >a {
         display: inline-block;
+        margin-top: 30px;
+        >img {
+          cursor: pointer;
+          max-width: 100%;
+        }
       }
-    >img {
-      cursor: pointer;
-      margin-top: 30px;
-      max-width: 100%;
-    }
       h2{
        margin-top: 0;
         line-height: 1.5;
@@ -656,51 +492,61 @@
     }
   }
 }
-
-.t30{
-  .gd-artist{
-    position: relative;
-    background-color: #252525;
-    padding: 30px 10px 60px;
-       .gray-text3;
-    .col-md-3{
-     margin-bottom: 30px;
+@media (max-width: @screen-xs) {
+  .t29 {
+    .gd-link-brands {
+      float: none;
     }
-    .gd-artist-details{
-      .gd-artist-info{
-        width: 80%;
-        text-align: center;
-        margin: 30px auto 20px;
-      }
-    .gd-mainimage-brief{
-      padding: 0 10px;
-      h3{
-      margin-bottom: 25px; 
-        &:after {
-            margin-left: -15px;
-          left: 50%;
-          bottom: 0;
-          border-top: 1px solid @gd-title-color;
-          content: " ";
-          height: 0;
-          position: absolute;
-          width: 30px;
-        }
-      }
-      p{
-      color: white;
-      }
-      .gd-artist-more{
-        display: block;
-        margin-top: 20px;
-      }
-    }
-    }
-  }
-  .back-top {
-    height: 0;
   }
 }
+
+@media all {
+  .t30 {
+    .gd-artist{
+      position: relative;
+      background-color: #252525;
+      padding: 30px 10px 60px;
+         .gray-text3;
+      .col-md-3{
+       margin-bottom: 30px;
+      }
+      .gd-artist-details{
+        .gd-artist-info{
+          width: 80%;
+          text-align: center;
+          margin: 30px auto 20px;
+        }
+      .gd-mainimage-brief{
+        padding: 0 10px;
+        h3{
+        margin-bottom: 25px; 
+          &:after {
+              margin-left: -15px;
+            left: 50%;
+            bottom: 0;
+            border-top: 1px solid @gd-title-color;
+            content: " ";
+            height: 0;
+            position: absolute;
+            width: 30px;
+          }
+        }
+        p{
+        color: white;
+        }
+        .gd-artist-more{
+          display: block;
+          margin-top: 20px;
+        }
+      }
+      }
+    }
+    .back-top {
+      height: 0;
+    }
+  }
+}
+  
 @media (min-width:@screen-sm) { 
   .t30{
    .gd-artist { 
@@ -2095,7 +1941,181 @@
   }
 }
 
+.t35 {
+  >iframe {
+    display: block;
+    height: 850px;
+    width: 100%;
+    @media (max-width:@screen-xs-min) {
+      height: 585px;
+    }
+  }
+  #gd-map-switcher-m {
+    margin: 30px 0;
+  }
+}
+@media print {
+  .t35 {
+    >.site-header,
+    >.page-header,
+    >.container,
+    >.back-top,
+    >.site-footer {
+      display: none;
+    }
+    >iframe {
+      height: 1700px;
+    }
+  }
+}
+.t8{
+  .gd-brief{
+    margin-top: 53px;
+  }
+  #gd-carousel-info{
+    margin-top: 25px;
+  }
+  .gd-mainimage .carousel-inner .item > .carousel-caption .gd-carousel-detail{
+   height: 260px;
+    @media (min-width:@screen-sm) {
+    height: @gdmi-height-md;
+    }
+    @media (min-width:@screen-md) {
+    height: @gdmi-height;
+    }
+  }
+}
 
+.t14{
+  .gd-brief{
+    margin-top: 53px;
+  }
+  .gd-bigbrand{
+   text-align: center;
+    margin: 30px 0 50px;
+    @media (min-width:@screen-sm) {
+    margin: 41px 0 50px;
+    
+    }
+  }
+  .shopdetails-brand{
+    margin: 25px 0 0;
+    background-color: #f6f6f6;
+    padding: 30px 0 60px;
+    position: relative;
+    .gd-link-brands{
+      display: block;
+      float: none;
+      position: absolute;
+      bottom: 10px;
+      top: auto;
+      left: 50%;
+      right: auto;
+      margin-left: -55px;
+    }
+    ul {
+     margin: 0;
+      padding: 0;
+      li{
+     margin: 0;
+      padding: 0 ;
+     display: inline-block;
+        .black-text2;
+        a{
+          padding-bottom: 10px;
+        }
+        a.active{
+          border-bottom: solid 1px #D4A962;
+          color: @brand-golden;
+        }
+    }
+    }
+    .shopdetails-brand-header{
+      text-align: center;
+      ul li {
+        margin: 0 0 0 10px;
+        padding-left: 12px;
+         border-left: solid 1px #222;
+        &:first-child{
+        padding-left: 0;
+        border-left: none;
+        }
+      }
+    }
+    .shopdetails-brand-body{
+      padding: 0;
+      margin-top: 30px;
+      .row>.col-sm-2{
+        text-align: center;
+        line-height: 76px;
+        >a {
+          display:block;
+          >img {
+            max-width: 80%;
+          }
+        }
+       }
+    }
+  }
+  .back-top {
+    height: 0;
+  }
+}
+ @media (min-width:@screen-sm) {
+   .t14{
+  .shopdetails-brand{ 
+    margin: 25px 0 0;
+    background-color: #f6f6f6;
+    padding: 60px 0;
+    position: relative;
+    .gd-link-brands{
+      display: block;
+      float: right;
+      position: absolute;
+      bottom: auto;
+      text-align: center;
+      top: 58px;
+      left: auto;
+      right: 10px;
+      margin-left: 0;
+    }
+    .shopdetails-brand-header{
+      text-align: center;
+      ul li {
+        margin: 0 0 0 28px;
+        padding-left: 30px;
+         border-left: solid 1px #222;
+        &:first-child{
+        padding-left: 0;
+        border-left: none;
+        }
+      }
+    }
+    .shopdetails-brand-body{
+      margin-top: 43px;
+      
+      .row>.col-sm-2{
+        >a {
+          >img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+   }  
+}
+
+@media all {
+  .gd-artlist {
+    .gd-hover-img-area {
+      img {
+        width: auto;
+        max-width: 100%;
+      }
+    }
+  }
+}
 
 
 
