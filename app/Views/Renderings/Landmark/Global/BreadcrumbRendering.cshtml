@@ -13,11 +13,14 @@
     List<Item> items = new List<Item>();
     List<Item> breadcrumbs = new List<Item>();
 
-    if (Sitecore.Context.Item.Template.ID.ToString() == ItemGuids.T14ShopDetailsTemplate)
+    if (Request["category"] != null)
     {
-        category = Sitecore.Context.Database.GetItem(Request["category"]);
-        items.Add(category);
-        items.Add(category.Parent);
+        if (Sitecore.Context.Item.Template.ID.ToString() == ItemGuids.T14ShopDetailsTemplate)
+        {
+            category = Sitecore.Context.Database.GetItem(Request["category"]);
+            items.Add(category);
+            items.Add(category.Parent);
+        }
     }
 
     while (currentPage.ID != homePage.ID)

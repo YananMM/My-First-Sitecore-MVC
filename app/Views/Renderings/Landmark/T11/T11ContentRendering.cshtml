@@ -33,7 +33,7 @@
                     }
                 </ul>
                 <p>
-                    @Html.Sitecore().Field("Glossary Value", SitecoreItems.AlsoInterestedInGuidItem) 
+                    @Html.Sitecore().Field("Glossary Value", SitecoreItems.AlsoInterestedInGuidItem) <br/>
                     @{
                         List<string> relatedCategorieIDs = shoppingHelper.GetRelatedCategoriesIDs();
                         var shoppingItems = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
