@@ -2,12 +2,15 @@
 @{
     var currentItem = Sitecore.Context.Item;
     var childPage = currentItem.Children.FirstOrDefault();
-    var hostName = HttpContext.Current.Request.Url.Host;
+    string host = System.Web.HttpContext.Current.Request.Url.Scheme +
+                          Uri.SchemeDelimiter +
+                          System.Web.HttpContext.Current.Request.Url.Host;
+    string language = Sitecore.Context.Language.ToString();
 }
 <script src="/files/landmark/js/lib/jquery-1.11.2.min.js"></script>
 
 <script language="javascript" type="text/javascript">
     $(document).ready(function () {
-        self.location = "http://@hostName@Sitecore.Links.LinkManager.GetItemUrl(childPage)";
+        self.location = host + "/" + language + "@Sitecore.Links.LinkManager.GetItemUrl(childPage)";
     })
 </script>
