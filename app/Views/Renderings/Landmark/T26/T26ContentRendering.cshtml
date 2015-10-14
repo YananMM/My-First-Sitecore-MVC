@@ -51,15 +51,15 @@
         <div class="gd-controls-m visible-xs">
             <div class="row">
                 <div class="col-xs-4">
-                    <p class="form-control-static">FILTER BY</p>
+                    <p class="form-control-static">@Html.Sitecore().Field("Glossary Value", SitecoreItems.FilterByItem)</p>
                 </div>
                 <div class="col-xs-8">
                     <select class="form-control">
-                        <option value="*">ALL</option>
-                        <option value="gdf-women">WOMEN</option>
-                        <option value="gdf-men">MEN</option>
-                        <option value="gdf-lifestyle">LIFESTYLE</option>
-                        <option value="gdf-food">FOOD</option>
+                        <option value="*">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AllTextItem)</option>
+                        @foreach (var category in inspirationHelper.GetCategories())
+                        {
+                            <option value="gdf-@category.DisplayName.ToLower().Replace(" ","")">@Html.Sitecore().Field("Tag Name", category).ToString().ToUpper()</option>
+                        }
                     </select>
                 </div>
             </div>
@@ -68,12 +68,14 @@
             <div class="row">
                 <div class="col-xs-12">
                     <select class="form-control">
-                        <option value="*">FIND BY BRANDS</option>
-                        <option value="gdfb-a">A</option>
-                        <option value="gdfb-b">B</option>
-                        <option value="gdfb-c">C</option>
-                        <option value="gdfb-d">D</option>
-                        <option value="gdfb-e">...</option>
+                        <option value="*">@Html.Sitecore().Field("Glossary Value", SitecoreItems.FindByBrandItem)</option>
+                        @for (int i = 0; i < alphabetsStrings.Length; i++)
+                        {
+                            if (inspirationHelper.IfBrandsAlphabetValid(alphabetsStrings[i]))
+                            {
+                                <option value="gdf-@alphabetsStrings[i].ToLower()">@alphabetsStrings[i].ToUpper()</option>
+                            }
+                        }
                     </select>
                 </div>
             </div>
