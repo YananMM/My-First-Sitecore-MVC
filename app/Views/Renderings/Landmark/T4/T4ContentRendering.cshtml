@@ -20,14 +20,14 @@
 
         <div class="gd-nd-slider-text">@Html.Sitecore().Field("Article Sub Headline")</div>
         <div class="row gd-nd-details-area">
-        @if (((ReferenceField) Sitecore.Context.Item.Fields["Article Type"]).TargetItem.ID.ToString() == ItemGuids.EventTypeArticle)
-        {
-            @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T4DetailsRendering)
-        }
-        else
-        {
-          @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T4_2DetailsRendering)
-        }
+            @if (((ReferenceField)Sitecore.Context.Item.Fields["Article Type"]).TargetItem.ID.ToString() == ItemGuids.EventTypeArticle)
+            {
+                @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T4DetailsRendering)
+            }
+            else
+            {
+                @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T4_2DetailsRendering)
+            }
         </div>
     </div>
     @{
@@ -49,9 +49,9 @@
         {
             <div @{ if (j == 0) { <text>
                  class="item active"
-                 </text>          } else { <text>
+                 </text>           } else { <text>
                  class="item"
-                 </text>          } }>
+                 </text>           } }>
                 @{
             j++;
                 }
@@ -61,6 +61,7 @@
                         <div class="gd-carousel-detail">
                             <h3>@Html.Sitecore().Field("Article Headline", item)</h3>
                             <p>@Html.Sitecore().Field("Article Intro", item)</p>
+                            <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)" class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Button Text")</a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +86,7 @@
                         {
                             <li data-target="#gd-carousel-info" data-slide-to="@i" @{ if (i == 0) { <text>
                                 class="active"
-                                </text>   } }>@(i + 1)</li>
+                                </text>    } }>@(i + 1)</li>
                         }
                     </ol>
                     <span class="gd-carousel-control gd-carousel-no">
