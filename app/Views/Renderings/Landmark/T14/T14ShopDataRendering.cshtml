@@ -15,17 +15,44 @@
     <table>
         <tbody>
             <tr>
-                <th> @Html.Sitecore().Field("Glossary Value", SitecoreItems.OpenningHoursItem) </th>
+                <th>
+                    @{
+                        var openingHour = SitecoreItems.OpenningHoursItem.Fields["Glossary Value"].ToString();
+                        if (!string.IsNullOrEmpty(openingHour))
+                        {<text>
+                            @Html.Sitecore().Field("Glossary Value", SitecoreItems.OpenningHoursItem)
+                        </text>
+                        }
+                    }
+                </th>
                 <td>
                     @Html.Sitecore().Field("Opening Hours")
                 </td>
             </tr>
             <tr>
-                <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.ContactItem) </th>
+                <th>
+                    @{
+                        var contact = SitecoreItems.ContactItem.Fields["Glossary Value"].ToString();
+                        if (!string.IsNullOrEmpty(contact))
+                        {<text>
+                            @Html.Sitecore().Field("Glossary Value", SitecoreItems.ContactItem)
+                        </text>
+                        }
+                    }
+                </th>
                 <td>@Html.Sitecore().Field("Contact")</td>
             </tr>
             <tr>
-                <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.WhereItem) </th>
+                <th>
+                    @{
+                        var where = SitecoreItems.WhereItem.Fields["Glossary Value"].ToString();
+                        if (!string.IsNullOrEmpty(where))
+                        {<text>
+                            @Html.Sitecore().Field("Glossary Value", SitecoreItems.WhereItem)
+                        </text>
+                        }
+                    }
+                </th>
                 <td>
                     @{
                         var floor = shoppingHelper.GetShopFloor(Sitecore.Context.Item);

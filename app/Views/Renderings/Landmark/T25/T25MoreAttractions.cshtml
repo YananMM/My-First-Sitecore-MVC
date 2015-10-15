@@ -32,9 +32,7 @@
                             <div class="gd-carousel-detail">
                                 <h4>@Html.Sitecore().Field("Cover Title", item)</h4>
                                 <p>@Html.Sitecore().Field("Brief Introduction", item)</p>
-                                <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
-                                    <button class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Button Text")</button>
-                                </a>
+                                <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)" class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Button Text")</a>
                             </div>
                         </div>
                     </div>

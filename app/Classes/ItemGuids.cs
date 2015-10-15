@@ -96,5 +96,6 @@ namespace Landmark.Classes
 
         public static readonly String ContactSuccessPage = "{C6045FFE-5883-49F7-AC6E-653919640DDB}";
         public static readonly String EventTypeArticle = "{0799CC76-D623-49FD-8025-8E9358A13B62}";
+        public static readonly string AboutHotelFolder = "{ECC8D83D-3EDD-46DB-A4AB-0E22806BBE3A}";
     }
 }

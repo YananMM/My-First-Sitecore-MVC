@@ -38,7 +38,7 @@ namespace Landmark.Helper
         {
             List<Item> items = new List<Item>();
             Item item = Sitecore.Context.Item;
-            var root = item.Children.SingleOrDefault(p => p.TemplateID.ToString() == "{ECC8D83D-3EDD-46DB-A4AB-0E22806BBE3A}");
+            var root = item.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.AboutHotelFolder);
             items = root.Children.ToList();
             return items;
         }
