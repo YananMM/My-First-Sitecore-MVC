@@ -9,10 +9,17 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {EC149566-D74F-4E4F-9F2C-A0745E72988E}
 templatekey: T30 Page
 
+----field----
+field: {9BD250FA-ED47-4245-87A3-B0A834FC78E8}
+name: Artist Photo
+key: artist photo
+content-length: 58
+
+<image mediaid="{4923A8BA-7F97-4AC0-9C4E-DDABC4B2E726}" />
 ----version----
 language: en
 version: 1
-revision: 81257b0f-2b7c-4069-a15e-63025700aa33
+revision: 74768668-9e82-43ec-979c-1b0e4dd5cfd2
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -62,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-81257b0f-2b7c-4069-a15e-63025700aa33
+74768668-9e82-43ec-979c-1b0e4dd5cfd2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150924T092924:635786837649322220Z
+20151015T030113:635804748731844278Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
