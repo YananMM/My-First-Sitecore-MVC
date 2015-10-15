@@ -8,247 +8,281 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Landmark Map Guide</title>
-    <link rel="stylesheet" type="text/css" href="/files/landmark/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="not print" href="/files/landmark/css/style.css" />
     <style>
         html, body, #map-canvas {
-            height: 100%;
-            margin: 0px;
-            padding: 0px;
+          height: 100%;
+          margin: 0px;
+          padding: 0px
         }
-    </style>
-    <style>
-      #directions-panel {
-        height: 100%;
-        float: right;
-        width: 30%;
-        overflow: auto;
-      }
-
-      #map-canvas {
-        margin-right: 30%;
-      }
-
-      #control {
-        padding: 5px;
-        font-size: 14px;
-        font-family: Arial;
-        display: none;
-      }
-
-      @@media print {
         #map-canvas {
-          height: 500px;
-          margin: 0;
+          height: 850px;
         }
 
         #directions-panel {
-          float: none;
-          width: auto;
+          height: 100%;
+          float: right;
+          width: 30%;
+          overflow: auto;
         }
-      }
 
-      .adp-summary {
-        padding-left: 30px;
-      }
-      .adp-summary+div>table {
-        margin-left: 30px;
-      }
-      .adp-directions .adp-step,
-      .adp-directions .adp-substep {
-        border-top-color: #DEDEDE!important;
-        padding: 1em 0.5em!important;
-      }
-      .adp-placemark tr>td {
-        padding: 5px 15px;
-      }
-    </style>
-    <style>
-      .hidden {
-        display: none;
-      }
-      #directions-panel.gd-map-controls {
-        background-color: #F6F6F6;
-        color: #222222;
-        padding: 0;
-      }
-      #control.gd-map-heading {
-        padding: 25px;
-      }
-      .gd-map-dropdown {
-        position: relative;
-        z-index: 10;
-      }
-      .gd-map-dropdown>button,
-      .gd-map-dropdown a {
-        color: #222222;
-        display: block;
-        font-size: 12px;
-        font-family: 'Arial', sans-serif;
-        padding: 1em 2em;
-        text-decoration: none;
-      }
-      .gd-map-dropdown>button {
-        background-color: #FFFFFF;
-        border: 1px solid #CCCCCC;
-        color: #222222;
-        line-height: 1;
-        position: relative;
-        text-align: left;
-        width: 100%;
-      }
-      .gd-map-dropdown>button:after {
-        border: 5px solid transparent;
-        border-color: #000000 transparent transparent transparent;
-        content: " ";
-        display: block;
-        margin-top: -2px;
-        position: absolute;
-        right: 15px;
-        top: 50%;
-      }
-      .gd-map-dropdown>button:hover,
-      .gd-map-dropdown>button:focus,
-      .gd-map-dropdown>button:active {
-        color: #222222;
-        cursor: pointer;
-      }
-      .gd-map-dropdown a {
-        line-height: 1.5;
-        -webkit-transition: none;
-        -o-transition: none;
-        transition: none;
-      }
-      .gd-map-dropdown a:hover,
-      .gd-map-dropdown a:focus,
-      .gd-map-dropdown a:active {
-        background-color: #F5F5F5;
-      }
-      .gd-map-dropdown>.gd-map-options {
-        background-color: #FFFFFF;
-        border: 1px solid #CCCCCC;
-        -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
-        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 3em;
-      }
-      .gd-map-connector {
-        font-size: 12px;
-        line-height: 1;
-        padding: 1em 0;
-      }
-      .gd-map-input-group {
-        overflow: hidden;
-        position: relative;
-      }
-      .gd-map-input-group>* {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-      }
-      .gd-map-input-group>input,
-      .gd-map-input-group>button {
-        border: 1px solid #CCCCCC;
-        height: 36px;
-        line-height: 36px;
-        padding: 0;
-      }
-      .gd-map-input-group>input {
-        background-color: #FFFFFF;
-        display: block;
-        font-size: 12px;
-        float: left;
-        padding: 0 2em;
-        width: 65%;
-      }
-      .gd-map-input-group>input:focus,
-      .gd-map-input-group>input:active {
-        color: #222222;
-        font-size: 14px;
-      }
-      .gd-map-input-group>button {
-        border-color: #222222;
-        background-color: transparent;
-        color: #222222;
-        display: block;
-        float: right;
-        text-align: center;
-        width: 34%;
-        -webkit-transition: all ease-out 0.3s;
-        -o-transition: all ease-out 0.3s;
-        transition: all ease-out 0.3s;
-      }
-      .gd-map-input-group>button:hover,
-      .gd-map-input-group>button:focus,
-      .gd-map-input-group>button:active {
-        background-color: #222222;
-        color: #FFFFFF;
-        cursor: pointer;
-      }
-      .gd-map-travelmode {
-        color: #666666;
-        font-size: 24px;
-        line-height: 1;
-        margin-top: 1em;
-      }
-      .gd-map-travelmode button {
-        border: none;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        background-color: transparent;
-        margin: 0 10px;
-        padding: 0;
-      }
-      .gd-map-travelmode button:first-child {
-        margin-left: 0;
-      }
-      .gd-map-travelmode button:hover {
-        -webkit-text-shadow: 0 1px 3px;
-        text-shadow: 0 1px 3px;
-      }
-      .gd-map-travelmode .active {
-        color: #D4A962;
-      }
-
-      @@media (max-width: 768px) {
         #map-canvas {
-          height: 250px;
-          margin: 0;
+          margin-right: 30%;
         }
-        #directions-panel {
-          float: none;
-          height: auto;
-          width: 100%;
+
+        #control {
+          padding: 5px;
+          font-size: 14px;
+          font-family: Arial;
+          display: none;
         }
-        #map-canvas-m {
-          border-top: 1px solid #DDDDDD;
-          height: 350px;
-          margin: 25px -25px 0 -25px;
+
+        .adp-summary {
+          padding-left: 30px;
         }
-        .gd-map-travelmode {
-          text-align: center;
+        .adp-summary+div>table {
+          margin-left: 30px;
         }
-        .adp {
-          background-color: #FFFFFF;
+        table.adp-directions {
+          width: 100%!important;
         }
-        .gd-map-input-group>input,
-        .gd-map-dropdown>button {
-          border-color: #222222;
-          caption-side: #333333
+        .adp-directions .adp-step,
+        .adp-directions .adp-substep {
+          border-top-color: #DEDEDE!important;
+          padding: 1em 0.5em!important;
+        }
+        .adp-placemark tr>td {
+          padding: 5px 15px;
+        }
+
+        .hidden {
+          display: none;
+        }
+        #directions-panel.gd-map-controls {
+          background-color: #F6F6F6;
+          color: #222222;
+          padding: 0;
         }
         #control.gd-map-heading {
-          padding: 25px 20px;
+          padding: 25px;
         }
-      }
-    </style>
+        .gd-map-dropdown {
+          position: relative;
+          z-index: 10;
+        }
+        .gd-map-dropdown>button,
+        .gd-map-dropdown a {
+          color: #222222;
+          display: block;
+          font-size: 12px;
+          font-family: 'Arial', sans-serif;
+          padding: 1em 2em;
+          text-decoration: none;
+        }
+        .gd-map-dropdown>button {
+          background-color: #FFFFFF;
+          border: 1px solid #CCCCCC;
+          color: #222222;
+          line-height: 1;
+          position: relative;
+          text-align: left;
+          width: 100%;
+        }
+        .gd-map-dropdown>button:after {
+          border: 5px solid transparent;
+          border-color: #000000 transparent transparent transparent;
+          content: " ";
+          display: block;
+          margin-top: -2px;
+          position: absolute;
+          right: 15px;
+          top: 50%;
+        }
+        .gd-map-dropdown>button:hover,
+        .gd-map-dropdown>button:focus,
+        .gd-map-dropdown>button:active {
+          color: #222222;
+          cursor: pointer;
+        }
+        .gd-map-dropdown a {
+          line-height: 1.5;
+          -webkit-transition: none;
+          -o-transition: none;
+          transition: none;
+        }
+        .gd-map-dropdown a:hover,
+        .gd-map-dropdown a:focus,
+        .gd-map-dropdown a:active {
+          background-color: #F5F5F5;
+        }
+        .gd-map-dropdown>.gd-map-options {
+          background-color: #FFFFFF;
+          border: 1px solid #CCCCCC;
+          -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+          box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+          left: 0;
+          position: absolute;
+          right: 0;
+          top: 3em;
+        }
+        .gd-map-connector {
+          font-size: 12px;
+          line-height: 1;
+          padding: 1em 0;
+        }
+        .gd-map-input-group {
+          overflow: hidden;
+          position: relative;
+        }
+        .gd-map-input-group>* {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+        .gd-map-input-group>input,
+        .gd-map-input-group>button {
+          border: 1px solid #CCCCCC;
+          height: 36px;
+          line-height: 36px;
+          padding: 0;
+        }
+        .gd-map-input-group>input {
+          background-color: #FFFFFF;
+          display: block;
+          font-size: 12px;
+          float: left;
+          padding: 0 2em;
+          width: 65%;
+        }
+        .gd-map-input-group>input:focus,
+        .gd-map-input-group>input:active {
+          color: #222222;
+          font-size: 14px;
+        }
+        .gd-map-input-group>button {
+          border-color: #222222;
+          background-color: transparent;
+          color: #222222;
+          display: block;
+          float: right;
+          text-align: center;
+          width: 34%;
+          -webkit-transition: all ease-out 0.3s;
+          -o-transition: all ease-out 0.3s;
+          transition: all ease-out 0.3s;
+        }
+        .gd-map-input-group>button:hover,
+        .gd-map-input-group>button:focus,
+        .gd-map-input-group>button:active {
+          background-color: #222222;
+          color: #FFFFFF;
+          cursor: pointer;
+        }
+        .gd-map-travelmode {
+          color: #666666;
+          font-size: 24px;
+          line-height: 1;
+          margin-top: 1em;
+        }
+        .gd-map-travelmode button {
+          border: none;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          background-color: transparent;
+          margin: 0 10px;
+          padding: 0;
+        }
+        .gd-map-travelmode button:first-child {
+          margin-left: 0;
+        }
+        .gd-map-travelmode button:hover {
+          -webkit-text-shadow: 0 1px 3px;
+          text-shadow: 0 1px 3px;
+        }
+        .gd-map-travelmode .active {
+          color: #D4A962;
+        }
+        #gd-print-map[disabled] {
+          color: #AFAFAF;
+        }
+        #gd-print-map[disabled]:hover,
+        #gd-print-map[disabled]:focus,
+        #gd-print-map[disabled]:active {
+          text-shadow: none;
+        }
 
+        @@media (max-width: 768px) {
+          #map-canvas {
+            height: 250px;
+            margin: 0;
+          }
+          #directions-panel {
+            float: none;
+            height: auto;
+            width: 100%;
+          }
+          #map-canvas-m {
+            border-top: 1px solid #DDDDDD;
+            height: 350px;
+            margin: 25px -25px 0 -25px;
+          }
+          .gd-map-travelmode {
+            text-align: center;
+          }
+          .adp {
+            background-color: #FFFFFF;
+          }
+          .gd-map-input-group>input,
+          .gd-map-dropdown>button {
+            border-color: #222222;
+            caption-side: #333333
+          }
+          #control.gd-map-heading {
+            padding: 25px 20px;
+          }
+        }
+
+        @@media print {
+          html, body,
+          #map-canvas {
+            height: 850px!important;
+            margin-right: 0;
+            width: 100%;
+          }
+          #directions-panel.gd-map-controls {
+            display: block;!important;
+            float: none;
+            height: 675px;
+            width: 100%;
+          }
+          .gd-map-controls .gd-map-heading {
+            display: none!important;
+          }
+          .adp-directions .adp-step,
+          .adp-directions .adp-substep {
+            border-top-color: #DEDEDE!important;
+            font-size: 12px;
+            padding: 0!important;
+          }
+          .adp-placemark tr>td img {
+            display: none;
+          }
+          .adp-placemark tr>td {
+            padding: 2px 2px;
+          }
+        }
+    </style>
+</head>
+<body>
+    @Html.Sitecore().Placeholder("get-direction")
+    <div id="map-canvas" class="hidden-xs"></div>
     <script src="/files/landmark/js/lib/jquery-1.11.2.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
     <script>
         var directionsDisplay;
         var directionsService = new google.maps.DirectionsService();
         var gdMapId;
+        var gdMapReseted = false;
 
         if ($(window).width() >= 768) {
             gdMapId = 'map-canvas';
@@ -260,7 +294,8 @@
             directionsDisplay = new google.maps.DirectionsRenderer();
             var mapOptions = {
                 zoom: 12,
-                center: new google.maps.LatLng(22.280545, 114.157903)
+                center: new google.maps.LatLng(22.280545, 114.157903),
+                styles: [{ "featureType": "landscape", "elementType": "all", "stylers": [{ "visibility": "simplified" }, { "lightness": "58" }] }, { "featureType": "landscape", "elementType": "labels.text", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape.man_made", "elementType": "geometry", "stylers": [{ "visibility": "on" }] }, { "featureType": "landscape.natural", "elementType": "geometry", "stylers": [{ "saturation": "-60" }] }, { "featureType": "poi", "elementType": "labels", "stylers": [{ "visibility": "off" }] }, { "featureType": "poi", "elementType": "labels.text", "stylers": [{ "visibility": "simplified" }, { "lightness": "22" }, { "weight": "1" }, { "saturation": "-100" }] }, { "featureType": "poi", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "poi.park", "elementType": "geometry", "stylers": [{ "color": "#e3eed3" }] }, { "featureType": "poi.park", "elementType": "labels", "stylers": [{ "visibility": "on" }, { "lightness": 20 }] }, { "featureType": "road", "elementType": "all", "stylers": [{ "visibility": "simplified" }, { "saturation": "-100" }] }, { "featureType": "road", "elementType": "geometry.fill", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "road", "elementType": "labels.text", "stylers": [{ "visibility": "off" }] }, { "featureType": "road", "elementType": "labels.icon", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "road.highway", "elementType": "geometry", "stylers": [{ "color": "#dfd7ca" }] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [{ "color": "#e9e9e9" }] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [{ "color": "#ffffff" }] }, { "featureType": "transit", "elementType": "labels.text", "stylers": [{ "visibility": "simplified" }] }, { "featureType": "transit", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "visibility": "on" }, { "color": "#b5cbe4" }] }]
             };
             var map = new google.maps.Map(document.getElementById(gdMapId), mapOptions);
             directionsDisplay.setMap(map);
@@ -269,6 +304,9 @@
             var control = document.getElementById('control');
             control.style.display = 'block';
             //map.controls[google.maps.ControlPosition.TOP_CENTER].push(control);
+
+            gdMapReseted = true;
+            $('#gd-print-map').attr('disabled', 'disabled');
         }
 
         var gdMapStart;
@@ -290,16 +328,15 @@
                     gdResizeFrame();
                 }
             });
+
+            gdMapReseted = false;
+            $('#gd-print-map').removeAttr('disabled');
         }
 
         google.maps.event.addDomListener(window, 'load', initialize);
 
-    </script>
-</head>
-<body>
-    @Html.Sitecore().Placeholder("get-direction")
-    <div id="map-canvas" class="hidden-xs"></div>
-    <script>
+
+
         var gdThisFrame = $('#gd-map-container', window.parent.document);
         var gdFrameHeight;
         var gdResizeFrame = function () {
@@ -323,6 +360,7 @@
             if (gdClickElement.prop('tagName').toLowerCase() === 'a') {
                 gdMapStart = gdClickElement.data('value');
                 $('.gd-map-dropdown>button').text(gdClickElement.text());
+                $('.gd-map-input-group>input').val('');
                 gdClickElement.parent().addClass('hidden');
                 calcRoute();
             } else if (gdClickElement.prop('tagName').toLowerCase() === 'button') {
@@ -330,10 +368,26 @@
             }
         });
 
+        var gdUserDestination;
+        $('.gd-map-input-group>input').on('keydown', function () {
+            gdUserDestination = $(this).val();
+        });
+        $('.gd-map-input-group>input').on('keyup', function () {
+            if (gdUserDestination !== $(this).val()) {
+                $('.gd-map-dropdown>button').text('STARTING LOCATION');
+                if (!gdMapReseted) {
+                    $('.gd-map-controls>.adp').remove();
+                    initialize()
+                }
+            }
+        });
+
         $('body').on('click', '.gd-map-input-group button', function () {
-            var gdMyLocation = $.trim($(this).prev().val()) || 'Joliet';
+            var gdMyLocation = $.trim($(this).prev().val());
             gdMapStart = gdMyLocation;
-            calcRoute();
+            if ($.trim(gdMapStart) !== '') {
+                calcRoute();
+            }
         });
 
         $('body').on('click', 'button[data-travelmode]', function () {
@@ -344,6 +398,11 @@
             }
         })
 
+        $('#gd-print-map').click(function () {
+            if ($('.gd-map-controls>.adp').length == 1) {
+                window.print();
+            }
+        });
     </script>
 </body>
 </html>
