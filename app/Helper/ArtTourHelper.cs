@@ -132,7 +132,7 @@ namespace Landmark.Helper
                                               where Sitecore.Context.Database.GetItem(art.Fields["Floor and Building"].Value).Parent.ID.ToString() == buildingItem.ID.ToString()
                                               select art).ToList();
             int intPage = Int32.Parse(page ?? "1");
-            return artPiecesByBuilding.Skip((intPage - 1) * 1).Take(4).ToList();
+            return artPiecesByBuilding.Skip((intPage - 1) * 10).Take(10).ToList();
         }
 
         /// <summary>

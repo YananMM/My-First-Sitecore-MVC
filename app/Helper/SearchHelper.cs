@@ -17,7 +17,6 @@ namespace Landmark.Helper
     {
         public List<LandmarkSearchResultItem> GetSearchResults(string searchString=null,string type=null,string page=null)
         {
-            
             List<LandmarkSearchResultItem> results = new List<LandmarkSearchResultItem>();
 
             if (!string.IsNullOrEmpty(searchString))
@@ -31,18 +30,20 @@ namespace Landmark.Helper
 
                 using (var context = index.CreateSearchContext())
                 {
+                    
                     results = context.GetQueryable<LandmarkSearchResultItem>()
                         .Where(item => item.Language.Equals(language) && 
                             (item.PageTitle.Contains(searchString) || item.PageContent.Contains(searchString) || item.ContentTitle.Contains(searchString)
-                            ||item.ContentDescription.Contains(searchString) || item.Tags.Contains(searchString)
+                            || item.ContentDescription.Contains(searchString) || item.Tags.Contains(searchString)
                             || item.ArticleTitle.Contains(searchString) || item.ArticleIntro.Contains(searchString) ||item.ArticleSubtitle.Contains(searchString)))
+                            .OrderBy(item=>item.FilterOrder)
                         .ToList();
                     if(type!=null)
                         results = results.Where(item => item.FilterType == type).ToList();
                     if (page != null)
                     {
                         int pagenumber = page == null ? 1 : Int32.Parse(page);
-                        results = results.Skip(pagenumber * LandmarkHelper.NumberInOnePage).Take(LandmarkHelper.NumberInOnePage).ToList();
+                        results = results.Skip((pagenumber - 1) * 10).Take(10).ToList();
                     }
                      
                 }

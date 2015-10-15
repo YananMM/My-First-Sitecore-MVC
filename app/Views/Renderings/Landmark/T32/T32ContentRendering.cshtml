@@ -7,7 +7,8 @@
 @model RenderingModel
 @{
     SearchHelper helper = new SearchHelper();
-    var results = helper.GetSearchResults(Request["searchString"],Request["type"]);
+    var page = Request["page"] ?? "1";
+    var results = helper.GetSearchResults(Request["searchString"],Request["type"],page);
     List<FilterTypeResults> types = helper.GetFilterTypes(Request["searchString"]);
     ShoppingHelper shoppingHelper = new ShoppingHelper();
 }
@@ -24,7 +25,7 @@
                 @foreach (var type in types)
                 {
                     if(Int32.Parse(type.count)>0)
-                        {<li><a href="#">@type.value (@type.count)</a></li>}
+                        {<li><a href="?searchString=@Request["searchString"]&type=@type.value">@type.value (@type.count)</a></li>}
                 }
           </ul>
           </div>
@@ -55,7 +56,7 @@
              <ol>
                  @foreach (var result in results)
                  {
-                     if (result.FilterType == Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem).Fields["Page Title"].Value && result.GetItem().TemplateID.ToString() == ItemGuids.T14ShopDetailsTemplate)
+                     if ( result.GetItem().TemplateID.ToString() == ItemGuids.T14ShopDetailsTemplate)
                      {
                          <li>
                              <div class="gd-search-box2">

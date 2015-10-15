@@ -5,24 +5,26 @@ using System.Web;
 using Sitecore.ContentSearch;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
+using Sitecore.ContentSearch.ComputedFields;
+using Sitecore.Configuration;
 
 namespace Landmark.Classes.ComputedFields
 {
-    public class TagComputedField
+    public class TagComputedField : IComputedIndexField
     {
         public object ComputeFieldValue(IIndexable indexable)
-        {
+        { 
             Item item = indexable as SitecoreIndexableItem;
             if (item == null)
                 return null;
 
             var field = (MultilistField)item.Fields["Tags"];
-            if (field != null && field.TargetIDs != null)
+            if (field != null && field.TargetIDs != null )
             {
                 string tags=string.Empty;
                 foreach (var id in field.TargetIDs)
                 {
-                    tags += Sitecore.Context.Database.GetItem(id).Fields["Tag Name"].Value;
+                    tags += Factory.GetDatabase("web").GetItem(id).Fields["Tag Name"].Value+",";
                 }
                 return tags;
             }
