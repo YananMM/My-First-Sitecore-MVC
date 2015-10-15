@@ -18,19 +18,10 @@ namespace Landmark.Helper
                     .First();
         }
 
-        public string GetCallOutSliderImage(Item item)
-        {
-            string src = string.Empty;
-            return src;
-        }
-
         public List<Item> GetTheRestArticles(string page=null)
         {
             int pagenumber ;
-            pagenumber = page != null ? Int32.Parse(page) : 0;
-            int numberinonepage = SitecoreItems.LandmarkConfigItem.Fields["Page"] == null
-                ? 10
-                : Int32.Parse(SitecoreItems.LandmarkConfigItem.Fields["Page"].Value);
+            pagenumber = page != null ? Int32.Parse(page) : 1;
             List<Item> articles = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.T4PageTemplate)
                 .Where(article => article.ID.ToString() != GetLatestArticle().ID.ToString())
                     .OrderBy(article => article.Fields["Article Date"].ToString()).ToList();
@@ -43,7 +34,7 @@ namespace Landmark.Helper
                 }
             }
             if (articles.Count()>1)
-                return articles.Skip(pagenumber * numberinonepage).Take(numberinonepage).ToList();
+                return articles.Skip((pagenumber-1) * 10).Take(10).ToList();
             else
                 return new List<Item>();
         }
