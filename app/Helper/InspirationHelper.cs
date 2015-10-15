@@ -29,6 +29,32 @@ namespace Landmark.Helper
             return articles;
         }
 
+        public List<Item> GetDetailedExclusives(string page = null)
+        {
+            List<Item> results = null;
+            int pagenumber;
+            pagenumber = page != null ? Int32.Parse(page) : 1;
+            results = GetMonthlyExclusives().Where(item => ((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
+            if (results.Count() > pagenumber * 8)
+            {
+                results = results.Skip((pagenumber - 1) * 8).Take(8).ToList();
+            }
+            return results;
+        }
+
+        public List<Item> GetNotDetailedExclusives(string page = null)
+        {
+            List<Item> results = null;
+            int pagenumber;
+            pagenumber = page != null ? Int32.Parse(page) : 1;
+            results = GetMonthlyExclusives().Where(item => !((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
+            if (results.Count() < pagenumber * 8)
+            {
+                results = results.Take(Int32.Parse(page) * 8 - GetDetailedExclusives(page).Count()).ToList();
+            }
+            return results;
+        }
+
         public bool IfBrandsAlphabetValid(string s)
         {
             List<Item> articles = GetMonthlyExclusives();

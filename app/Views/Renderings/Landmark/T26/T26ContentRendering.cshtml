@@ -5,8 +5,9 @@
 @using Sitecore.Links
 @{
     InspirationHelper inspirationHelper = new InspirationHelper();
-    List<Item> articleObjects = inspirationHelper.GetMonthlyExclusives().Where(item => !((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
-    List<Item> articleDetailObjects = inspirationHelper.GetMonthlyExclusives().Where(item => ((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
+    var page = Request["page"] ?? "1";
+    List<Item> articleObjects = inspirationHelper.GetDetailedExclusives(page);
+    List<Item> articleDetailObjects = inspirationHelper.GetNotDetailedExclusives(page);
     string[] alphabetsStrings = new[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
 }
 
@@ -14,6 +15,7 @@
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
             <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
+@articleDetailObjects.Count
         </div>
         <div class="gd-pagetitle-info">@Html.Sitecore().Field("Page Content")</div>
     </div>
