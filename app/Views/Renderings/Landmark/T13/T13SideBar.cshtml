@@ -10,15 +10,33 @@
     Item currentPage = Sitecore.Context.Item;
     string allByBrandsPageID = ItemGuids.AllByBrandsPage;
     string allByBuildingsPageID = ItemGuids.AllByBuildingsPage;
-    ShoppingHelper shoppingHelper=new ShoppingHelper();
+    ShoppingHelper shoppingHelper = new ShoppingHelper();
     List<TextValue> categories = shoppingHelper.GetFirstCategory();
+    Item parentItem = Sitecore.Context.Item.Parent;
+    var brandModels = shoppingHelper.GetBrandModels();
+    if (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem))
+    {
+        var currentTag = shoppingHelper.GetCurrentCategory(currentPage);
+        brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
+    }
 }
 <div class="brand-menu hidden-xs">
     <div class="brand-menu-area">
         <div class="scroll-content">
             <h3>@Html.Sitecore().Field("Glossary Value", SitecoreItems.ByBrandsGuidItem)</h3>
             <ul class="brands-gap brands clearfix">
-                @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.ByBrandsRenderingViewGuid)
+                @for (int i = 0; i < alphabetsStrings.Length; i++)
+                {
+                    if (shoppingHelper.checkBrandStatus(brandModels, alphabetsStrings[i]))
+                    {
+                        string href = Sitecore.Links.LinkManager.GetItemUrl(currentPage.Parent) + "/by-brands#" + alphabetsStrings[i].ToLower();
+                        <li><a href="@href">@alphabetsStrings[i].ToUpper()</a></li>
+                    }
+                    else
+                    {
+                        <li class="disabled">@alphabetsStrings[i].ToUpper()</li>
+                    }
+                }
             </ul>
             <h3>@Html.Sitecore().Field("Glossary Value", SitecoreItems.ByBuidingsGuidItem)</h3>
             <ul class="brands-gap">
@@ -26,12 +44,12 @@
                     List<Item> buidings = LandmarkHelper.GetBuildings();
                     Item contextItem = Sitecore.Context.Item;
                     Item firstParentItem = contextItem.Parent;
-                    Item allByBuildings = firstParentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) ? Sitecore.Context.Database.GetItem(ItemGuids.AllByBuildingsPage):contextItem.Parent.Children.Where(item=>item.DisplayName=="By Buildings").FirstOrDefault();
+                    Item allByBuildings = firstParentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) ? Sitecore.Context.Database.GetItem(ItemGuids.AllByBuildingsPage) : contextItem.Parent.Children.Where(item => item.DisplayName == "By Buildings").FirstOrDefault();
                 }
 
                 @foreach (Item building in buidings)
                 {
-                    string href=Sitecore.Links.LinkManager.GetItemUrl(allByBuildings)+"#"+building.DisplayName.ToLower().Replace(" ","");
+                    string href = Sitecore.Links.LinkManager.GetItemUrl(currentPage.Parent) + "/by-buildings#" + building.DisplayName.ToLower().Replace(" ", "");
                     <li><a href="@href">@building.Fields["Building Title"].Value</a></li>
                 }
             </ul>

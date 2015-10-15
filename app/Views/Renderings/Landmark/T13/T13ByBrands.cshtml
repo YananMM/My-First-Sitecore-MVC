@@ -2,20 +2,21 @@
 @using Landmark.Helper
 @using Sitecore.Data.Items
 @model RenderingModel
+@{
+    ShoppingHelper shoppingHelper = new ShoppingHelper();
+    Item parentItem = Sitecore.Context.Item.Parent;
+    var brandModels = shoppingHelper.GetBrandModels();
+    if (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem))
+    {
+        var currentTag = shoppingHelper.GetCurrentCategory(Sitecore.Context.Item);
+        brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
+    }
+    var brands = brandModels.GroupBy(p => p.Group).ToList();
+}
 <div class="masonry-area clearfix">
     @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T13MobileSideBarRendering)
     <div class="brand-box-area">
-        @{
-            ShoppingHelper shoppingHelper = new ShoppingHelper();
-            Item parentItem = Sitecore.Context.Item.Parent;
-            var brandModels = shoppingHelper.GetBrandModels();
-            if (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem))
-            {
-                var currentTag = shoppingHelper.GetCurrentCategory();
-                brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
-            }
-            var brands = brandModels.GroupBy(p => p.Group).ToList();
-        }
+      
         @foreach (var items in brands)
         {
             <div class="brand-box brand-box-letter" id="@items.First().Group.ToLower()">@items.First().Group</div>

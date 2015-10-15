@@ -40,11 +40,11 @@ namespace Landmark.Helper
         /// <summary>
         /// Gets the current category.
         /// </summary>
-        /// <returns>System.String.</returns>
-        public string GetCurrentCategory()
+        /// <returns>System.String.</returns> 
+        public string GetCurrentCategory(Item currentItem)
         {
-            var parentItem = Sitecore.Context.Item.Parent;
-            var grandParentItem = Sitecore.Context.Item.Parent.Parent;
+            var parentItem = currentItem.Parent;
+            var grandParentItem = parentItem.Parent;
             var allshoppingCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
             var grandParentCategorys = allshoppingCategories.SingleOrDefault(p => p.DisplayName == grandParentItem.DisplayName);
             var parentCategorys = LandmarkHelper.GetItemsByRootAndTemplate(grandParentCategorys.ID.ToString(), ItemGuids.CategoryObjectTemplate);
@@ -155,13 +155,29 @@ namespace Landmark.Helper
             return false;
         }
 
-        public List<Item> GetBrandsByBuildings(ID buildingId)
+        public List<Item> GetBrandsByBuildings(string category, ID buildingId)
         {
             Item shopping = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
             var query = string.Format("fast:{0}//*[{1}]", shopping.Paths.FullPath, "@@TemplateId='" + ItemGuids.T14ShopDetailsTemplate + "'");
             List<Item> brandsItems = _webDb.SelectItems(query).ToList();
+            List<Item> brandsByCategory = new List<Item>();
+            if (!string.IsNullOrEmpty(category))
+            {
+                foreach (var brand in brandsItems)
+                {
+                    var tagField = brand.Fields["Tags"];
+                    if (tagField.Value.Contains(category))
+                    {
+                        brandsByCategory.Add(brand);
+                    }
+                }
+            }
+            else
+            {
+                brandsByCategory = brandsItems;
+            }
             List<Item> brandsByBuildings = new List<Item>();
-            foreach (Item brand in brandsItems)
+            foreach (Item brand in brandsByCategory)
             {
                 var buildingsField = (ReferenceField)brand.Fields["Building"];
                 if (buildingsField != null && buildingsField.TargetItem != null)
@@ -213,6 +229,24 @@ namespace Landmark.Helper
             foreach (Item brand in brandsItems)
             {
                 if (brand.Fields["Brand Title"].Value.ToLower().StartsWith(s))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Checks the brand status.
+        /// </summary>
+        /// <param name="brandModels">The brand models.</param>
+        /// <param name="s">The arguments.</param>
+        /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        public bool checkBrandStatus(List<LandmarkBrandModel> brandModels, string s)
+        {
+            foreach (var brand in brandModels)
+            {
+                if (brand.BrandItem.Fields["Brand Title"].Value.ToLower().StartsWith(s))
                 {
                     return true;
                 }
