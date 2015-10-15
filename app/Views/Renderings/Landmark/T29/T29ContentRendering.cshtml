@@ -74,7 +74,7 @@
                             @floor.Fields["Floor Title"] @floor.Parent.Fields["Building Title"]<br>
                             @{
                                 string text="";
-                                var lightBox = Sitecore.Context.Item.Fields["Light Box Text"];
+                                var lightBox = Html.Sitecore().Field("Light Box Text");
                                 text = lightBox + " " + floor.Fields["Floor Title"] + " of " + floor.Parent.Fields["Building Title"];
                             }
                             <a href="javascript:;" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image",floor)" data-lighttitle="@text">

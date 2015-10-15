@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 48844b49-b42f-4d89-9a47-0352ab1c14c9
+revision: c163556d-0311-405c-85a2-6338ac69ba58
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -39,9 +39,9 @@ MQUEEN
 field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
 name: Building
 key: building
-content-length: 0
+content-length: 38
 
-
+{02889C6B-A746-41A3-9A77-8E50903D065D}
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -50,12 +50,19 @@ content-length: 6
 
 MQUEEN
 ----field----
+field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
+name: Tags
+key: tags
+content-length: 38
+
+{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}
+----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
 key: floor
-content-length: 0
+content-length: 38
 
-
+{79EBEDCD-CED4-4C05-993C-D8B6F30BE2E0}
 ----field----
 field: {5350FA4D-170D-4926-8B21-97068A9C599F}
 name: Area
@@ -90,14 +97,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-48844b49-b42f-4d89-9a47-0352ab1c14c9
+c163556d-0311-405c-85a2-6338ac69ba58
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150820T011547:635756301471556535Z
+20151014T111817:635804182972254680Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
