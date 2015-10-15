@@ -5,7 +5,7 @@
     var childPage = currentItem.Children.FirstOrDefault();
     string host = HttpContext.Current.Request.Url.Scheme +
                           Uri.SchemeDelimiter +
-                          HttpContext.Current.Request.Url.Host+HttpContext.Current.Request.Url.Port;
+                          HttpContext.Current.Request.Url.Host;
     string language = Sitecore.Context.Language.ToString();
 }
 <script src="/files/landmark/js/lib/jquery-1.11.2.min.js"></script>
