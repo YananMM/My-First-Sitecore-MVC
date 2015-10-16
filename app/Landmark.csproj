@@ -207,9 +207,6 @@
     <Compile Include="Service\GetCategoryJson.ashx.cs">
       <DependentUpon>GetCategoryJson.ashx</DependentUpon>
     </Compile>
-    <Compile Include="Service\GetFloorPlanJson.ashx.cs">
-      <DependentUpon>GetFloorPlanJson.ashx</DependentUpon>
-    </Compile>
     <Compile Include="Service\Landmark.asmx.cs">
       <DependentUpon>Landmark.asmx</DependentUpon>
       <SubType>Component</SubType>
@@ -235,7 +232,6 @@
     <Content Include="apple-touch-icon-precomposed.png" />
     <Content Include="apple-touch-icon.png" />
     <Content Include="Applications\Landmark\EmailSignupExport.aspx" />
-    <Content Include="Content\Site.css" />
     <Content Include="favicon-160x160.png" />
     <Content Include="favicon-16x16.png" />
     <Content Include="favicon-192x192.png" />
@@ -655,10 +651,6 @@
     <None Include="Properties\PublishProfiles\DEV.pubxml" />
     <None Include="Properties\PublishProfiles\landmark.pubxml" />
     <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Service\Landmark.asmx" />
     <Content Include="sitecore\Landmark\UserCreated.aspx" />
     <Content Include="Views\web.config">
@@ -705,7 +697,6 @@
     <Content Include="Views\Renderings\Landmark\T13\T13RelatedCategory.cshtml" />
     <Content Include="Views\Renderings\Landmark\T1\T1InstagramRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T14\T14ContentRendering.cshtml" />
-    <Content Include="Service\GetFloorPlanJson.ashx" />
     <Content Include="Views\Renderings\Landmark\Global\SlideRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T14\T14ShopDataRendering.cshtml" />
     <Content Include="Views\Renderings\Landmark\T14\T14AlsoOnThisFloorRendering.cshtml" />
