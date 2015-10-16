@@ -211,13 +211,6 @@
       <DependentUpon>Landmark.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="sitecore\Landmark\UserCreated.aspx.cs">
-      <DependentUpon>UserCreated.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="sitecore\Landmark\UserCreated.aspx.designer.cs">
-      <DependentUpon>UserCreated.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="apple-touch-icon-114x114.png" />
@@ -652,7 +645,6 @@
     <None Include="Properties\PublishProfiles\landmark.pubxml" />
     <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
     <Content Include="Service\Landmark.asmx" />
-    <Content Include="sitecore\Landmark\UserCreated.aspx" />
     <Content Include="Views\web.config">
       <SubType>Designer</SubType>
     </Content>
