@@ -36,7 +36,9 @@
                 var date = LandmarkHelper.ToValidDateTime(storyDate);
                             }
                             <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
-                            <p>@Html.Sitecore().Field("Article Intro", stories.First())</p>
+                            <div class="gd-longarticle-fixedlines">
+                                <p>@Html.Sitecore().Field("Article Intro", stories.First())</p>
+                            </div>
                         </div>
                     </div>
                 </a> }
@@ -101,5 +103,6 @@
             }
         </div>
     </div>
-    <div class="gd-promo-more"><a href="?type=@Request["type"]&page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem) +</a></div>
+    <div class="gd-promo-more"><a href="?type=@Request["type"]&page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem) +</a>
+    </div>
 </div>

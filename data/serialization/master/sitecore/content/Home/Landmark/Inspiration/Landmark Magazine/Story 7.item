@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {3E671066-0147-4341-9A10-99A5B11B7983}
+id: {DC993ACA-55F0-4963-BD94-A92F34DA2436}
 database: master
-path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Story 5
+path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Story 7
 parent: {812D4614-C77D-4B0A-9729-D2FB3D830786}
-name: Story 5
+name: Story 7
 master: {48DA220E-BFA8-4789-8191-0FD9A3C0DB43}
 template: {2F6A4A9C-C7DC-439D-8310-3A2EF0617158}
 templatekey: T23 Page CD
@@ -20,13 +20,13 @@ content-length: 0
 field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
 name: __Masters
 key: __masters
-content-length: 116
+content-length: 233
 
-{4F401F16-FF51-4484-83FA-B905DAB54D97}|{CFE5379F-402F-4FB5-A1C5-0E42CA464BC1}|{82C6EA0F-D0F2-4F40-BA8A-F5E39A10D5B5}
+{4F401F16-FF51-4484-83FA-B905DAB54D97}|{82C6EA0F-D0F2-4F40-BA8A-F5E39A10D5B5}|{DCB0CBFD-E8BA-49C0-9214-577C18B7BF25}|{EC3DBE3A-5E40-4B96-A67B-593FE8E67B72}|{95710548-2E7F-4FD5-B97D-CAF1396CE80B}|{C9307810-5FD7-4B38-9DA0-F50538F83F7D}
 ----version----
 language: en
 version: 1
-revision: 1e277937-ed51-4f55-b2e1-d93a527d782d
+revision: 847c0f71-8c24-46ef-a1a9-535a67ce3bf2
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -34,49 +34,56 @@ name: Article Headline
 key: article headline
 content-length: 7
 
-Story 5
+Story 7
+----field----
+field: {B966F61E-9F08-4674-AC01-EE1064020145}
+name: Article Date
+key: article date
+content-length: 16
+
+20151014T160000Z
+----field----
+field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
+name: Article Type
+key: article type
+content-length: 38
+
+{274E7EC5-2922-4472-8DCE-448B68642884}
 ----field----
 field: {28A224A8-EA7D-4F31-ABB4-CC72047EE1BA}
 name: Magazine Category
 key: magazine category
 content-length: 77
 
-{9C462E8F-2C94-47DC-9B96-C7F51A1D058F}|{8CBE1EA5-CE5A-4D15-AEFD-F65BC164C06B}
+{42FF35B6-477A-417F-84BA-B11860F3A311}|{8CBE1EA5-CE5A-4D15-AEFD-F65BC164C06B}
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 7
 
-Story 5
-----field----
-field: {293A5D35-684E-4AA0-B022-4603ED513547}
-name: Text Line
-key: text line
-content-length: 63
-
-LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED D
+Story 7
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150922T061704Z
+20151016T022857Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-1e277937-ed51-4f55-b2e1-d93a527d782d
+847c0f71-8c24-46ef-a1a9-535a67ce3bf2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151016T022053:635805588537446281Z
+20151016T023100:635805594602833201Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

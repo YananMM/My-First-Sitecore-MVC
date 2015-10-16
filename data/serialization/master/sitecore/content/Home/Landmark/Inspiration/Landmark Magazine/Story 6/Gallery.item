@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {477F1336-1556-459E-942A-705A3B74AE75}
+database: master
+path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Story 6/Gallery
+parent: {0B67F081-D000-4A9A-B96A-1EE71C23F61A}
+name: Gallery
+master: {019AAA6D-F7C8-4293-94EE-CF065B0A8A91}
+template: {EC3DBE3A-5E40-4B96-A67B-593FE8E67B72}
+templatekey: Images Folder
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 7c3684f1-15c3-46ae-9d2c-c1d8a279aa6a
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151016T021820Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7c3684f1-15c3-46ae-9d2c-c1d8a279aa6a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151016T021820:635805587002658496Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

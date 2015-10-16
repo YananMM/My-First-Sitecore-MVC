@@ -52,7 +52,10 @@ namespace Landmark.Helper
         public List<Item> GetAllStories()
         {
             List<Item> stories = new ItemList();
-            stories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage, ItemGuids.T23PageTemplate);
+            var storiesAB = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage, ItemGuids.T23PageTemplate);
+            var storiesCD = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage, ItemGuids.T23PageCDTemplate);
+            stories.AddRange(storiesAB);
+            stories.AddRange(storiesCD);
             return stories;
         }
 
