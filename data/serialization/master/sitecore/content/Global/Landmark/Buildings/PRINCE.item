@@ -12,7 +12,7 @@ templatekey: Building Data
 ----version----
 language: en
 version: 1
-revision: df3f7b79-4ee4-4236-8789-e9f257bdb2e7
+revision: 8689787e-8cd1-4e73-9506-c979b65a7cea
 
 ----field----
 field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
@@ -21,6 +21,27 @@ key: building title
 content-length: 6
 
 PRINCE
+----field----
+field: {7EF17060-F50C-4CA3-8021-1802F0672C00}
+name: Building Svg Id
+key: building svg id
+content-length: 6
+
+gdfpa4
+----field----
+field: {E657A707-C854-4316-BDA6-B63559885398}
+name: LocationX
+key: locationx
+content-length: 6
+
+0.6267
+----field----
+field: {12796E88-1E57-4ECB-B6A2-66BC957940D1}
+name: LocationY
+key: locationy
+content-length: 6
+
+0.4600
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -34,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-df3f7b79-4ee4-4236-8789-e9f257bdb2e7
+8689787e-8cd1-4e73-9506-c979b65a7cea
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150930T140900Z
+20151012T032229Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
