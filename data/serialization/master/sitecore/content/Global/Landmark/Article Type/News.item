@@ -1,33 +1,33 @@
 ----item----
 version: 1
-id: {D7EE8EE3-060A-4FBC-B482-B35DFBEB239D}
+id: {AAC847A9-FC98-4E88-8DE6-8B6B697697B3}
 database: master
-path: /sitecore/templates/Branches/User Defined/Landmark/Page/T4 Page/$name/Slide Objects
-parent: {7BF691A4-FEEC-4B92-BE99-DC444724EC71}
-name: Slide Objects
+path: /sitecore/content/Global/Landmark/Article Type/News
+parent: {2F7748B7-07ED-413F-8B92-382DCE56A8C9}
+name: News
 master: {00000000-0000-0000-0000-000000000000}
-template: {EEEB8813-EBD2-415E-B4F0-72B52DDEF18E}
-templatekey: Slide Folder
+template: {55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}
+templatekey: Text Object
+
+----version----
+language: zh-CN
+version: 1
+revision: e9e9321d-162a-4384-ab71-5643dcd67972
 
 ----field----
-field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
-name: __Masters
-key: __masters
-content-length: 38
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
 
-{FFC1447C-5F42-4419-AEF4-6175FB69507C}
-----version----
-language: en
-version: 1
-revision: 45d0183c-9b8c-4bdc-a01b-f65ceeac96b0
-
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150824T083017Z
+20151019T135337Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-45d0183c-9b8c-4bdc-a01b-f65ceeac96b0
+e9e9321d-162a-4384-ab71-5643dcd67972
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151019T140348Z
+20151019T135337Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

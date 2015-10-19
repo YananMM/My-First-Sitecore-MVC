@@ -13,9 +13,9 @@ templatekey: T3 Page
 field: {58467D14-852B-4A9C-B619-676CE5518FB8}
 name: Page Banner Image
 key: page banner image
-content-length: 58
+content-length: 0
 
-<image mediaid="{8C1497B8-372D-4618-A9FA-7732B1C474FD}" />
+
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -26,22 +26,23 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: a2242a41-9673-4769-8926-d6ff89522121
+revision: 6c562311-050a-4199-ba73-0f6751693c1d
 
 ----field----
 field: {D0CC41B3-3000-4ED5-870B-8C89E72C0DA0}
 name: Ad Reference Item
 key: ad reference item
-content-length: 38
+content-length: 0
 
-{52D6EB05-D74E-45ED-851C-CA9A6B774D41}
+
 ----field----
 field: {7CC3F102-0637-40CD-A8B7-2A02ABF5C1F6}
 name: Page Content
 key: page content
-content-length: 249
+content-length: 60
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br>
+Find out more about the latest happenings at LANDMARK. 
+<br>
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -69,14 +70,124 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a2242a41-9673-4769-8926-d6ff89522121
+6c562311-050a-4199-ba73-0f6751693c1d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150914T125655Z
+20151019T143251Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 3d2ab9cb-aa31-4725-a80c-33761b5784f0
+
+----field----
+field: {7CC3F102-0637-40CD-A8B7-2A02ABF5C1F6}
+name: Page Content
+key: page content
+content-length: 16
+
+探索置地广场最新资讯。
+<br>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151019T143302Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3d2ab9cb-aa31-4725-a80c-33761b5784f0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151019T143318Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: d1956fda-202f-4bf3-8cb0-4e61c2e83e63
+
+----field----
+field: {7CC3F102-0637-40CD-A8B7-2A02ABF5C1F6}
+name: Page Content
+key: page content
+content-length: 16
+
+探索置地廣塲最新資訊。
+<br>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151019T143324Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d1956fda-202f-4bf3-8cb0-4e61c2e83e63
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151019T143407Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

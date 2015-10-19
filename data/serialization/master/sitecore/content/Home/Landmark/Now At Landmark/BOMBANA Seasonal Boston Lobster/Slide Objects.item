@@ -1,33 +1,40 @@
 ----item----
 version: 1
-id: {D7EE8EE3-060A-4FBC-B482-B35DFBEB239D}
+id: {27DAFE32-9787-4052-8090-4B33FA5C10E7}
 database: master
-path: /sitecore/templates/Branches/User Defined/Landmark/Page/T4 Page/$name/Slide Objects
-parent: {7BF691A4-FEEC-4B92-BE99-DC444724EC71}
+path: /sitecore/content/Home/Landmark/Now At Landmark/BOMBANA Seasonal Boston Lobster/Slide Objects
+parent: {3E551A3A-E38C-456F-B6D6-A3C8C77421BF}
 name: Slide Objects
-master: {00000000-0000-0000-0000-000000000000}
+master: {13FE3D68-15D9-47E4-8993-4C620C534BBC}
 template: {EEEB8813-EBD2-415E-B4F0-72B52DDEF18E}
 templatekey: Slide Folder
 
 ----field----
-field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
-name: __Masters
-key: __masters
-content-length: 38
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
 
-{FFC1447C-5F42-4419-AEF4-6175FB69507C}
+
 ----version----
-language: en
+language: zh-CN
 version: 1
-revision: 45d0183c-9b8c-4bdc-a01b-f65ceeac96b0
+revision: 105790b8-3bad-42f0-884e-4a32daaef98d
 
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150824T083017Z
+20151019T143946Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-45d0183c-9b8c-4bdc-a01b-f65ceeac96b0
+105790b8-3bad-42f0-884e-4a32daaef98d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151019T140348Z
+20151019T143946Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
