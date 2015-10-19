@@ -26,15 +26,16 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: bb87e868-dc7e-4aa2-8a2f-676bfc991d99
+revision: 6b7b9ebf-5526-4cd2-bcdb-f12471bef9c2
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
-content-length: 27
+content-length: 173
 
-<h3>4 ICONIC BUILDINGS</h3>
+<h3></h3>
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">4 Buildings 1 Name</p>
 ----field----
 field: {7C1E3BE1-8424-4A87-BF99-116E943351D5}
 name: Cover Title
@@ -46,9 +47,11 @@ OUR LOCATION
 field: {8632183B-5266-472C-85E8-E305EE62366F}
 name: Cover Description
 key: cover description
-content-length: 131
+content-length: 259
 
-<span>Our buildings are conveniently located at the heart of the city with easy access by different means of transportation.</span>
+<span>
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">Located at the heart of the city, LANDMARK is easily accessible by a variety of transport options. </p>
+</span>
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -85,12 +88,19 @@ content-length: 14
 
 GET DIRECTIONS
 ----field----
+field: {2EDF00D2-44BE-46A6-9FA8-4BED0A80B528}
+name: Button Link
+key: button link
+content-length: 182
+
+<link id="{C4B0C207-D66A-4E2F-9469-6B8FF62A4CB1}" querystring="" text="" title="" class="" linktype="internal" url="/Home/Landmark/OUR LOCATION/Directions" target="Active Browser" />
+----field----
 field: {E746F7B8-3A32-4130-9BD3-66F7C52A027C}
 name: Related Page
 key: related page
-content-length: 77
+content-length: 0
 
-{67C7D89E-D84F-440E-A87F-0445847C06DF}|{3E671066-0147-4341-9A10-99A5B11B7983}
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -104,14 +114,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bb87e868-dc7e-4aa2-8a2f-676bfc991d99
+6b7b9ebf-5526-4cd2-bcdb-f12471bef9c2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151013T095053:635803266534797456Z
+20151019T104106:635808480668743601Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -119,3 +129,195 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: a15a7189-0886-4d37-b638-8f2120183ec8
+
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 19
+
+4座地标建筑&nbsp; 1个矜贵名号
+----field----
+field: {7C1E3BE1-8424-4A87-BF99-116E943351D5}
+name: Cover Title
+key: cover title
+content-length: 12
+
+OUR LOCATION
+----field----
+field: {8632183B-5266-472C-85E8-E305EE62366F}
+name: Cover Description
+key: cover description
+content-length: 176
+
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">置地广场位处城中核心地带，交通方便，可搭乘多种交通工具抵达 。</p>
+----field----
+field: {A226DDC8-EF57-486D-B926-CA77063BC5A4}
+name: Address Label
+key: address label
+content-length: 7
+
+ADDRESS
+----field----
+field: {0D6445AB-4A02-4A5D-8784-634D3D28D530}
+name: Address Text
+key: address text
+content-length: 55
+
+  15 Queen's Road Central, LANDMARK, Central, Hong Kong
+----field----
+field: {FED81EE2-0129-4F01-B629-B7F97045D302}
+name: Button Text
+key: button text
+content-length: 14
+
+GET DIRECTIONS
+----field----
+field: {2EDF00D2-44BE-46A6-9FA8-4BED0A80B528}
+name: Button Link
+key: button link
+content-length: 182
+
+<link id="{C4B0C207-D66A-4E2F-9469-6B8FF62A4CB1}" querystring="" text="" title="" class="" linktype="internal" url="/Home/Landmark/OUR LOCATION/Directions" target="Active Browser" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151019T103051Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a15a7189-0886-4d37-b638-8f2120183ec8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151019T104107:635808480673933898Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 22
+
+sitecore\virtualssuser
+----version----
+language: zh-HK
+version: 1
+revision: 75f6ae44-de90-4329-a0d6-d08819ccb58b
+
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 164
+
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">4座地標建築&nbsp; 1個矜貴名字</p>
+----field----
+field: {7C1E3BE1-8424-4A87-BF99-116E943351D5}
+name: Cover Title
+key: cover title
+content-length: 12
+
+OUR LOCATION
+----field----
+field: {8632183B-5266-472C-85E8-E305EE62366F}
+name: Cover Description
+key: cover description
+content-length: 175
+
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">置地廣塲位處城中核心地帶，交通方便，可乘搭多種交通工具到達。</p>
+----field----
+field: {A226DDC8-EF57-486D-B926-CA77063BC5A4}
+name: Address Label
+key: address label
+content-length: 7
+
+ADDRESS
+----field----
+field: {0D6445AB-4A02-4A5D-8784-634D3D28D530}
+name: Address Text
+key: address text
+content-length: 55
+
+  15 Queen's Road Central, LANDMARK, Central, Hong Kong
+----field----
+field: {FED81EE2-0129-4F01-B629-B7F97045D302}
+name: Button Text
+key: button text
+content-length: 14
+
+GET DIRECTIONS
+----field----
+field: {2EDF00D2-44BE-46A6-9FA8-4BED0A80B528}
+name: Button Link
+key: button link
+content-length: 182
+
+<link id="{C4B0C207-D66A-4E2F-9469-6B8FF62A4CB1}" querystring="" text="" title="" class="" linktype="internal" url="/Home/Landmark/OUR LOCATION/Directions" target="Active Browser" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151019T103337Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+75f6ae44-de90-4329-a0d6-d08819ccb58b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151019T104107:635808480675283975Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 22
+
+sitecore\virtualssuser

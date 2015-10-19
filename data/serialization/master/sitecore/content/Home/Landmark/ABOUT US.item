@@ -33,7 +33,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: d64e8cf6-0acb-4d19-901f-36a06b9961a7
+revision: bf671942-6492-4705-8d3a-92579a523fc0
 
 ----field----
 field: {21B45344-DBEB-439F-B9B4-FADCD4757389}
@@ -46,9 +46,10 @@ ABOUT LANDMARK
 field: {5E057E7B-0DAD-451B-8A10-E18630950944}
 name: About Description
 key: about description
-content-length: 86
+content-length: 94
 
-LANDMARK represents the epitome of top-tier luxury shopping and lifestyle experiences.
+Where sophisticated lifestyle meets exclusive shopping and dining in the heart of the city. 
+
 ----field----
 field: {CB4CBA97-6C68-4638-BA40-BF9C1D73A01D}
 name: Getting Here Text
@@ -81,29 +82,30 @@ content-length: 0
 field: {A16CBCA7-2C90-41E7-8D99-731ACC38B6C2}
 name: One Lanemark Title
 key: one lanemark title
-content-length: 12
+content-length: 23
 
-ONE LANDMARK
+The essence of LANDMARK
 ----field----
 field: {F9086B75-3D7A-4CC8-980D-612CE5CD240B}
 name: One Lanemark Content
 key: one lanemark content
-content-length: 277
+content-length: 417
 
 <div class="gd-brief-body">
 <div class="row">
 <div class="col-md-8 col-md-offset-2 text-center">
-<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+<p> </p>
 </div>
 </div>
 </div>
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">Home to the world's most exclusive brands, with a spirit that imbues 208 fine stores and restaurants in 4 buildings and 1 name &ndash; LANDMARK. </p>
 ----field----
 field: {51F08BE7-E483-4F5C-99C6-343ACAE22311}
 name: Related Page
 key: related page
 content-length: 77
 
-{F8311E33-9D80-46B1-AAF7-CDB5F92F23D4}|{1B51D2BB-E8D2-4421-A075-F0A748D04D36}
+{1B51D2BB-E8D2-4421-A075-F0A748D04D36}|{7A1BF6CA-1E82-4F53-A482-D8BACD770875}
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -117,14 +119,207 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d64e8cf6-0acb-4d19-901f-36a06b9961a7
+bf671942-6492-4705-8d3a-92579a523fc0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150928T091551:635790285513952962Z
+20151019T102346:635808470261418336Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 0bfdd1e7-fe3c-4d6f-8122-f86d43ee3e75
+
+----field----
+field: {21B45344-DBEB-439F-B9B4-FADCD4757389}
+name: About Title
+key: about title
+content-length: 14
+
+ABOUT LANDMARK
+----field----
+field: {5E057E7B-0DAD-451B-8A10-E18630950944}
+name: About Description
+key: about description
+content-length: 39
+
+高雅的生活品位，不一样的购物乐趣，以及特色美馔佳肴，尽皆汇聚城中核心地带。
+
+----field----
+field: {CB4CBA97-6C68-4638-BA40-BF9C1D73A01D}
+name: Getting Here Text
+key: getting here text
+content-length: 12
+
+GETTING HERE
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 157
+
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">始自1904年的辉煌历史</p>
+----field----
+field: {A16CBCA7-2C90-41E7-8D99-731ACC38B6C2}
+name: One Lanemark Title
+key: one lanemark title
+content-length: 6
+
+置地广场特色
+----field----
+field: {F9086B75-3D7A-4CC8-980D-612CE5CD240B}
+name: One Lanemark Content
+key: one lanemark content
+content-length: 56
+
+包罗全球最为独特出众的品牌；208家最优质的名店与食府，全可在4座地标建筑和1个矜贵名号中找到 ── 置地广场。
+----field----
+field: {51F08BE7-E483-4F5C-99C6-343ACAE22311}
+name: Related Page
+key: related page
+content-length: 77
+
+{1B51D2BB-E8D2-4421-A075-F0A748D04D36}|{7A1BF6CA-1E82-4F53-A482-D8BACD770875}
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151019T101705Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0bfdd1e7-fe3c-4d6f-8122-f86d43ee3e75
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151019T102313:635808469932519524Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 460539d3-ef37-4dca-bfc4-4477f929e2c9
+
+----field----
+field: {21B45344-DBEB-439F-B9B4-FADCD4757389}
+name: About Title
+key: about title
+content-length: 14
+
+ABOUT LANDMARK
+----field----
+field: {5E057E7B-0DAD-451B-8A10-E18630950944}
+name: About Description
+key: about description
+content-length: 37
+
+高雅生活品味，不一樣的購物樂趣，以及特色美饌佳餚，盡皆匯聚於城中核心地帶。
+----field----
+field: {CB4CBA97-6C68-4638-BA40-BF9C1D73A01D}
+name: Getting Here Text
+key: getting here text
+content-length: 12
+
+GETTING HERE
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 157
+
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">始自1904年的輝煌歷史</p>
+----field----
+field: {A16CBCA7-2C90-41E7-8D99-731ACC38B6C2}
+name: One Lanemark Title
+key: one lanemark title
+content-length: 6
+
+置地廣塲特色
+----field----
+field: {F9086B75-3D7A-4CC8-980D-612CE5CD240B}
+name: One Lanemark Content
+key: one lanemark content
+content-length: 200
+
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">包羅全球最獨特出眾的品牌；208家最優質的名店與食府，全可在4座地標建築和1個矜貴名字中找到 ── 置地廣塲。</p>
+----field----
+field: {51F08BE7-E483-4F5C-99C6-343ACAE22311}
+name: Related Page
+key: related page
+content-length: 77
+
+{1B51D2BB-E8D2-4421-A075-F0A748D04D36}|{7A1BF6CA-1E82-4F53-A482-D8BACD770875}
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151019T102020Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+460539d3-ef37-4dca-bfc4-4477f929e2c9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151019T102424:635808470647660428Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

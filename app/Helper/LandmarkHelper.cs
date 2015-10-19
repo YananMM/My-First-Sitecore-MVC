@@ -393,7 +393,6 @@ namespace Landmark.Helper
                 From = new MailAddress(from, fromname)
             };
 
-
             if (mailTo.Length > 0)
                 mailMessage.To.Add(mailTo);
 

@@ -19,7 +19,7 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: b8200013-83ac-4555-9312-1db48e1caf12
+revision: e23ff86e-89b6-480e-aaa9-5267d17198e9
 
 ----field----
 field: {29FA7895-CEF3-48F6-B527-5AD5FD93F772}
@@ -32,9 +32,9 @@ GETTING HERE
 field: {A2BC7939-8EC4-4E69-9A98-2844135FF6AA}
 name: Head Description
 key: head description
-content-length: 44
+content-length: 50
 
-You may contact us via different channels...
+You may contact us through the following channels:
 ----field----
 field: {696EC371-26D4-4036-9C9F-1FA22FAC2617}
 name: Share Title
@@ -67,30 +67,30 @@ content-length: 1
 field: {C318572C-DE49-4951-AD27-5B609EB18ED5}
 name: Hotline Title
 key: hotline title
-content-length: 17
+content-length: 21
 
-CONCIERGE HOTLINE
+Contact Our Concierge
 ----field----
 field: {D226C16F-EBCF-4C17-9290-CF3F037CF316}
 name: Hotline Text
 key: hotline text
-content-length: 163
+content-length: 192
 
-<p>For general queries, please contact LANDMARK Concierge Hotline at <a href="#">2500 0555</a>. <br>You may learn more about our services <a href="#">here</a>.</p>
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">Please call our Concierge Hotline at 2500 0555.</p>
 ----field----
 field: {0945F25A-68F1-4854-A522-720085C48CDE}
 name: Contact Title
 key: contact title
-content-length: 11
+content-length: 14
 
-WRITE TO US
+Send a Message
 ----field----
 field: {ED2D1681-2592-4884-BA78-791936EA8091}
 name: Contact Description
 key: contact description
-content-length: 91
+content-length: 64
 
-Alternatively, you can write to us or send your corporate enquiry to the following address.
+Alternatively, you can send your enquiry to us by post or email.
 ----field----
 field: {660ECB07-01AD-4019-9DB2-89EC7DA156BB}
 name: Contact Address
@@ -118,21 +118,21 @@ name: Personal Title
 key: personal title
 content-length: 25
 
-Update your Personal Data
+Update Your Personal Data
 ----field----
 field: {0ECA8548-9E6C-461B-A0A1-E52311F25631}
 name: Personal Description
 key: personal description
-content-length: 167
+content-length: 160
 
-To update or change any of your personal data or to unsubscribe promotional material from us, please send your request to us through any one of the following channels:
+If you wish to update your personal data or choose not to receive our promotional materials, please send your request through any one of the following channels:
 ----field----
 field: {E9C6368F-DF54-46AA-B537-5636E15A1BA7}
 name: Personal Telephone
 key: personal telephone
-content-length: 15
+content-length: 10
 
-(852) 2842 8524
+2842 8524 
 ----field----
 field: {D9D52F60-A755-4475-A220-78056616BEDD}
 name: Personal Email
@@ -151,16 +151,17 @@ content-length: 44
 field: {33966EB8-2866-4DFE-AE61-B0D517001A77}
 name: Contact Form Title
 key: contact form title
-content-length: 19
+content-length: 20
 
-CONTACT FORM BELOW 
+Fill in Contact Form
 ----field----
 field: {740DEDA3-5321-4915-8375-EA20C537D859}
 name: Contact Form Description
 key: contact form description
-content-length: 56
+content-length: 55
 
-You can contact us by filling out following email form: 
+You may leave a message by filling in the form below.
+
 ----field----
 field: {829C2D70-1140-4717-A647-8921BE231188}
 name: Title Label
@@ -265,14 +266,416 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b8200013-83ac-4555-9312-1db48e1caf12
+e23ff86e-89b6-480e-aaa9-5267d17198e9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
+content-length: 35
+
+20151019T110154:635808493142457057Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 573ffebc-f1a1-4db8-aaef-66670ffcaf9f
+
+----field----
+field: {29FA7895-CEF3-48F6-B527-5AD5FD93F772}
+name: Link Text
+key: link text
+content-length: 12
+
+GETTING HERE
+----field----
+field: {A2BC7939-8EC4-4E69-9A98-2844135FF6AA}
+name: Head Description
+key: head description
+content-length: 14
+
+您可通过以下方式与我们联络：
+----field----
+field: {696EC371-26D4-4036-9C9F-1FA22FAC2617}
+name: Share Title
+key: share title
 content-length: 16
 
-20150928T075422Z
+GET CONNECTED ON
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 10
+
+Contact Us
+----field----
+field: {C318572C-DE49-4951-AD27-5B609EB18ED5}
+name: Hotline Title
+key: hotline title
+content-length: 7
+
+联络礼宾服务处
+----field----
+field: {D226C16F-EBCF-4C17-9290-CF3F037CF316}
+name: Hotline Text
+key: hotline text
+content-length: 169
+
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">请致电我们的礼宾服务处热线：2500 0555。</p>
+----field----
+field: {0945F25A-68F1-4854-A522-720085C48CDE}
+name: Contact Title
+key: contact title
+content-length: 4
+
+发送信息
+----field----
+field: {ED2D1681-2592-4884-BA78-791936EA8091}
+name: Contact Description
+key: contact description
+content-length: 18
+
+您也可通过邮件或电邮方式向我们咨询。
+----field----
+field: {660ECB07-01AD-4019-9DB2-89EC7DA156BB}
+name: Contact Address
+key: contact address
+content-length: 13
+
+香港中环交易广场第一期八楼
+----field----
+field: {6C81FA53-36C5-4930-AF72-E81F85BA21B6}
+name: Contact Fax
+key: contact fax
+content-length: 15
+
+(852) 2530 4725
+----field----
+field: {0605BAE7-53D9-436D-83E2-15C84CBDC05F}
+name: Contact Email
+key: contact email
+content-length: 25
+
+communications@hkland.com
+----field----
+field: {015F9EBF-FBE7-45A4-8ACF-6D3E1FD70788}
+name: Personal Title
+key: personal title
+content-length: 8
+
+更新您的个人资料
+----field----
+field: {0ECA8548-9E6C-461B-A0A1-E52311F25631}
+name: Personal Description
+key: personal description
+content-length: 43
+
+如果您需要更新个人资料，或不再希望接收我们的推广资料，请选取以下任何一种方式告诉我们。
+----field----
+field: {E9C6368F-DF54-46AA-B537-5636E15A1BA7}
+name: Personal Telephone
+key: personal telephone
+content-length: 9
+
+2842 8524
+----field----
+field: {D9D52F60-A755-4475-A220-78056616BEDD}
+name: Personal Email
+key: personal email
+content-length: 26
+
+communications@hkland.com 
+----field----
+field: {9BA85F74-6A53-4A5E-A5C8-F6C5B1EF5DC1}
+name: Personal Address
+key: personal address
+content-length: 13
+
+香港中环交易广场第一期八楼
+----field----
+field: {33966EB8-2866-4DFE-AE61-B0D517001A77}
+name: Contact Form Title
+key: contact form title
+content-length: 6
+
+填写联络表格
+----field----
+field: {740DEDA3-5321-4915-8375-EA20C537D859}
+name: Contact Form Description
+key: contact form description
+content-length: 11
+
+您可填写以下表格留言。
+----field----
+field: {829C2D70-1140-4717-A647-8921BE231188}
+name: Title Label
+key: title label
+content-length: 5
+
+TITLE
+----field----
+field: {DFF4A1E6-6F1F-44DB-B1B0-7E52D6FD93DD}
+name: First Name Label
+key: first name label
+content-length: 10
+
+FIRST NAME
+----field----
+field: {7C9358DA-9737-4E16-8139-C84FF5578F77}
+name: Email Subject
+key: email subject
+content-length: 15
+
+Contact Us Form
+----field----
+field: {9540AFF3-ADC2-4E62-9384-442216128E1D}
+name: Email To
+key: email to
+content-length: 16
+
+yanan@gruden.com
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151019T105015Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+573ffebc-f1a1-4db8-aaef-66670ffcaf9f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151019T112806:635808508862212481Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 4e3f8253-812e-48bc-b447-ce708f7f2577
+
+----field----
+field: {29FA7895-CEF3-48F6-B527-5AD5FD93F772}
+name: Link Text
+key: link text
+content-length: 12
+
+GETTING HERE
+----field----
+field: {A2BC7939-8EC4-4E69-9A98-2844135FF6AA}
+name: Head Description
+key: head description
+content-length: 14
+
+您可透過以下方式與我們聯絡：
+----field----
+field: {696EC371-26D4-4036-9C9F-1FA22FAC2617}
+name: Share Title
+key: share title
+content-length: 16
+
+GET CONNECTED ON
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 10
+
+Contact Us
+----field----
+field: {C318572C-DE49-4951-AD27-5B609EB18ED5}
+name: Hotline Title
+key: hotline title
+content-length: 7
+
+聯絡禮賓服務處
+----field----
+field: {D226C16F-EBCF-4C17-9290-CF3F037CF316}
+name: Hotline Text
+key: hotline text
+content-length: 169
+
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">請致電我們的禮賓服務處熱線：2500 0555。</p>
+----field----
+field: {0945F25A-68F1-4854-A522-720085C48CDE}
+name: Contact Title
+key: contact title
+content-length: 4
+
+發送信息
+----field----
+field: {ED2D1681-2592-4884-BA78-791936EA8091}
+name: Contact Description
+key: contact description
+content-length: 18
+
+您也可透過郵寄或電郵方式向我們咨詢。
+----field----
+field: {660ECB07-01AD-4019-9DB2-89EC7DA156BB}
+name: Contact Address
+key: contact address
+content-length: 14
+
+香港中環交易廣場第一期八樓 
+----field----
+field: {6C81FA53-36C5-4930-AF72-E81F85BA21B6}
+name: Contact Fax
+key: contact fax
+content-length: 15
+
+(852) 2530 4725
+----field----
+field: {0605BAE7-53D9-436D-83E2-15C84CBDC05F}
+name: Contact Email
+key: contact email
+content-length: 25
+
+communications@hkland.com
+----field----
+field: {015F9EBF-FBE7-45A4-8ACF-6D3E1FD70788}
+name: Personal Title
+key: personal title
+content-length: 8
+
+更新您的個人資料
+----field----
+field: {0ECA8548-9E6C-461B-A0A1-E52311F25631}
+name: Personal Description
+key: personal description
+content-length: 43
+
+如果您需要更新個人資料，或不再希望接收我們的推廣資料，請選取以下任何一種方式告訴我們。
+----field----
+field: {E9C6368F-DF54-46AA-B537-5636E15A1BA7}
+name: Personal Telephone
+key: personal telephone
+content-length: 10
+
+2842 8524 
+----field----
+field: {D9D52F60-A755-4475-A220-78056616BEDD}
+name: Personal Email
+key: personal email
+content-length: 26
+
+communications@hkland.com 
+----field----
+field: {9BA85F74-6A53-4A5E-A5C8-F6C5B1EF5DC1}
+name: Personal Address
+key: personal address
+content-length: 14
+
+香港中環交易廣場第一期八樓 
+----field----
+field: {33966EB8-2866-4DFE-AE61-B0D517001A77}
+name: Contact Form Title
+key: contact form title
+content-length: 6
+
+填寫聯絡表格
+----field----
+field: {740DEDA3-5321-4915-8375-EA20C537D859}
+name: Contact Form Description
+key: contact form description
+content-length: 11
+
+您可填寫以下表格留言。
+----field----
+field: {829C2D70-1140-4717-A647-8921BE231188}
+name: Title Label
+key: title label
+content-length: 5
+
+TITLE
+----field----
+field: {DFF4A1E6-6F1F-44DB-B1B0-7E52D6FD93DD}
+name: First Name Label
+key: first name label
+content-length: 10
+
+FIRST NAME
+----field----
+field: {7C9358DA-9737-4E16-8139-C84FF5578F77}
+name: Email Subject
+key: email subject
+content-length: 15
+
+Contact Us Form
+----field----
+field: {9540AFF3-ADC2-4E62-9384-442216128E1D}
+name: Email To
+key: email to
+content-length: 16
+
+yanan@gruden.com
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151019T105244Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4e3f8253-812e-48bc-b447-ce708f7f2577
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151019T112809:635808508895988203Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
