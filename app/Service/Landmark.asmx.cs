@@ -115,7 +115,7 @@ namespace Landmark.Service
         private bool IfBrowserIsIE8()
         {
             bool result = false;
-            if(Context.Request.Browser.Type.ToUpper().Contains("InternetExplorer"))
+            if(Context.Request.Browser.Type.ToLower().Contains("internetexplorer"))
             {
                 if (Context.Request.Browser.MajorVersion == 8)
                 {

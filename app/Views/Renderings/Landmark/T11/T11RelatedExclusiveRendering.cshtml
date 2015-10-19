@@ -12,11 +12,11 @@
 <div class=" menbox-2">
     <a href="#"  class="menbox-img" >
         <div class="menbox-img-mask"></div>
-        <img data-src="@LandmarkHelper.GetCallOutImage(exclusiveItem)" alt="landmark">
+        <img data-src="@LandmarkHelper.GetCallOutImage(exclusiveItem)" alt="landmark" class="lazy-loaded">
     </a>
     <div class="menbox-text">
     <a href="#" class="menbox-title"><h3>@Html.Sitecore().Field("Article Headline", exclusiveItem)</h3></a>
-    <h4>@Html.Sitecore().Field("Value",((ReferenceField)exclusiveItem.Fields["Article Type"]).TargetItem).ToString().ToUpper()</h4>
+    <h4>@Html.Sitecore().Field("Article Type",((ReferenceField)exclusiveItem.Fields["Article Type"]).TargetItem).ToString().ToUpper()</h4>
     <p>@Html.Sitecore().Field("Article Headline", exclusiveItem) (@Html.Sitecore().Field("Product Price", exclusiveItem))</p>
     </div>
 </div>

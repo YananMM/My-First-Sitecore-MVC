@@ -466,7 +466,7 @@ namespace Landmark.Helper
 
         public static bool IsFalsePage(Item item)
         {
-            if ((item.Template.ID.ToString() == ItemGuids.PageObject || item.Template.ID.ToString() == ItemGuids.ShoppingPageObject) && (new LayoutField(Sitecore.Context.Item).Value).IsNullOrEmpty())
+            if (item.Template.ID.ToString() == ItemGuids.PageObject || item.Template.ID.ToString() == ItemGuids.ShoppingPageObject) 
             {
                 return true;
             }
@@ -477,7 +477,7 @@ namespace Landmark.Helper
         {
             string url = LinkManager.GetItemUrl(item);
             if (IsFalsePage(item))
-                url = string.Empty;
+                url = "#";
             return url;
         }
 
