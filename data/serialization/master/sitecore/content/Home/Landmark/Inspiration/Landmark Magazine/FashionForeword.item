@@ -1,0 +1,142 @@
+----item----
+version: 1
+id: {1B51D2BB-E8D2-4421-A075-F0A748D04D36}
+database: master
+path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/FashionForeword
+parent: {812D4614-C77D-4B0A-9729-D2FB3D830786}
+name: FashionForeword
+master: {019AAA6D-F7C8-4293-94EE-CF065B0A8A91}
+template: {2EE73BEB-F8DA-4F35-BB46-C1B0B8AC3945}
+templatekey: T23 Page AB
+
+----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Slider Image
+key: article slider image
+content-length: 283
+
+<image mediapath="/Images/Landmark/Inspirations/LandmarkMagazine/magazinemen01" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Inspirations/LandmarkMagazine/magazinemen01" mediaid="{086E9601-7B53-409C-84D0-BE60EA4C904C}" />
+----field----
+field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
+name: Article Thumb Image
+key: article thumb image
+content-length: 0
+
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: a56caea0-25fc-455f-a6d8-dedf26321072
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 31
+
+FashionForeword with Tina Leung
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 13
+
+by Tina Leung
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 109
+
+Roger Vivier’s Bruno Frisoni talks to our fashion director about inspiration, aspiration and the power of now
+----field----
+field: {B966F61E-9F08-4674-AC01-EE1064020145}
+name: Article Date
+key: article date
+content-length: 16
+
+20151018T160000Z
+----field----
+field: {BA2CB119-1C77-40AA-B95E-79014CAFD7AD}
+name: Magazine Category
+key: magazine category
+content-length: 38
+
+{8CBE1EA5-CE5A-4D15-AEFD-F65BC164C06B}
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+Story 1
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 15
+
+FashionForeword
+----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
+----field----
+field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
+name: Tags
+key: tags
+content-length: 155
+
+{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}
+----field----
+field: {C7837E33-73D8-4328-9350-8A9CFD1819F4}
+name: Related Story Label
+key: related story label
+content-length: 15
+
+RELATED STORIES
+----field----
+field: {7995D136-5108-4429-8656-CDF120ED27B4}
+name: Related Brand Label
+key: related brand label
+content-length: 14
+
+RELATED BRANDS
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150917T102405Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a56caea0-25fc-455f-a6d8-dedf26321072
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151019T062942:635808329827525977Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

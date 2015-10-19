@@ -56,10 +56,13 @@
                 <td>
                     @{
                         var floor = shoppingHelper.GetShopFloor(Sitecore.Context.Item);
+
+                        var whereDescription = Html.Sitecore().Field("Area") + "," + floor["Floor Title"];
+                        var fullWhere = whereDescription + "," + floor.Parent["Building Title"];
                     }
-                    @Html.Sitecore().Field("Area"),@floor["Floor Title"],@floor.Parent["Building Title"]<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image",floor)" data-lighttitle="@Html.Sitecore().Field("Description")">
-                        <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.FloorPlanItem)
-                    </a>
+                    @fullWhere<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image",floor)" data-lighttitle="@Html.Sitecore().Field("Light Box Text") @whereDescription of @floor.Parent["Building Title"]">
+    <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.FloorPlanItem)
+</a>
                 </td>
             </tr>
         </tbody>

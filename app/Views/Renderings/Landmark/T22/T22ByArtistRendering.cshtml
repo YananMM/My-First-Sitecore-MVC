@@ -23,7 +23,7 @@
                         <img data-src="@SitecoreFieldHelper.ImageFieldSrc("Artist Photo", artist)">
                         <div class="art-g-box-header-text">
                             <h4>@Html.Sitecore().Field("Artist Name", artist)<span>@Html.Sitecore().Field("Artist Birthday Label", artist) @Html.Sitecore().Field("Artist Birthday Text", artist)</span></h4>
-                            <a>ARTIST BOIGRAPHY<span class="icomoon-chevron-small-right"></span></a>
+                            <a href="@LinkManager.GetItemUrl(artist)">@Html.Sitecore().Field("Biography Link Text")<span class="icomoon-chevron-small-right"></span></a>
                         </div>
                     </div>
 
@@ -55,6 +55,6 @@
         <div class="col-sm-6"></div>
     </div>
     <div class="navigation gd-promo-more">
-        <a href="@LinkManager.GetItemUrl(Sitecore.Context.Item)?page=2">@Html.Sitecore().Field("Glossary Value",SitecoreItems.SeeMoreGlossaryItem)</a>
+        <a href="@LinkManager.GetItemUrl(Sitecore.Context.Item)?page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreGlossaryItem)</a>
     </div>
 </div>
