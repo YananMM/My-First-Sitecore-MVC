@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {7C65B306-53C0-4879-8BD6-858658D08D33}
+id: {FACD0F27-1189-4916-A1E6-55AFE19BE536}
 database: master
-path: /sitecore/content/Home/Landmark/OUR LOCATION/GET DIRECTIONS/GET DIRECTIONS/Hong Kong International Airport
+path: /sitecore/content/Home/Landmark/OUR LOCATION/Directions/Getting Here/Shun Tak Centre Sheung Wan
 parent: {AE130080-B8B6-4D9E-B863-C88DC329B657}
-name: Hong Kong International Airport
+name: Shun Tak Centre Sheung Wan
 master: {00000000-0000-0000-0000-000000000000}
 template: {3E8C53BC-1805-434C-BD94-65316F9AFC71}
 templatekey: T35 Starting Location Object
@@ -12,15 +12,15 @@ templatekey: T35 Starting Location Object
 ----version----
 language: en
 version: 1
-revision: 5d5d70c1-7016-4889-9add-576652f31824
+revision: e38c7bc5-a429-487d-bcb5-b811225dccd2
 
 ----field----
 field: {38AC07B7-0A25-41CB-B0DE-51431856ADF2}
 name: Starting Location
 key: starting location
-content-length: 31
+content-length: 27
 
-Hong Kong International Airport
+Shun Tak Centre, Sheung Wan
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -34,7 +34,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150824T092630Z
+20150824T092910Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5d5d70c1-7016-4889-9add-576652f31824
+e38c7bc5-a429-487d-bcb5-b811225dccd2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150824T093219:635760055394133434Z
+20150824T093344:635760056242051932Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

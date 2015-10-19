@@ -26,7 +26,7 @@
             {
                 <a href="@Sitecore.Links.LinkManager.GetItemUrl(stories.First())">
                     <div class="col-sm-6">
-                        <img data-src="@LandmarkHelper.GetCallOutImage(stories.First())">
+                        <img data-src="@LandmarkHelper.GetCallOutImage(stories.First())"/>
                     </div>
                     <div class="col-sm-6">
                         <div class="gd-magazine-info-text">
@@ -66,8 +66,8 @@
                     <div class="col-sm-4">
                         <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
                             <div class="gd-promotion-box">
-                                <img data-src="@LandmarkHelper.GetCallOutImage(item)">
-                                <h4><a href="#">@Html.Sitecore().Field("Article Headline", item)</a></h4>
+                                <img data-src="@LandmarkHelper.GetCallOutImage(item)"/>
+                                <h4><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@Html.Sitecore().Field("Article Headline", item)</a></h4>
                                 @{
                     DateField itemDate = item.Fields["Article Date"];
                     var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
@@ -88,8 +88,8 @@
                     <div class="col-sm-4">
                         <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
                             <div class="gd-promotion-box">
-                                <img data-src="@LandmarkHelper.GetCallOutImage(item)">
-                                <h4><a href="#">@Html.Sitecore().Field("Article Headline", item)</a></h4>
+                                <img data-src="@LandmarkHelper.GetCallOutImage(item)"/>
+                                <h4><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@Html.Sitecore().Field("Article Headline", item)</a></h4>
                                 @{
                     DateField itemDate = item.Fields["Article Date"];
                     var itemdate = LandmarkHelper.ToValidDateTime(itemDate);

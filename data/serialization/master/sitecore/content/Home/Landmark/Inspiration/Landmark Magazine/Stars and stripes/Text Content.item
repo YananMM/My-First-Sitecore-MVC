@@ -1,9 +1,9 @@
 ----item----
 version: 1
-id: {BBB4814C-4407-40DF-964A-10B32793611B}
+id: {D7F82594-714A-40A2-B291-E0EB128F24C9}
 database: master
-path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Grey matters/Text Content
-parent: {7A1BF6CA-1E82-4F53-A482-D8BACD770875}
+path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Stars and stripes/Text Content
+parent: {D8134F1F-917E-46E8-BC8E-995B43E818CC}
 name: Text Content
 master: {019AAA6D-F7C8-4293-94EE-CF065B0A8A91}
 template: {95710548-2E7F-4FD5-B97D-CAF1396CE80B}
@@ -13,9 +13,9 @@ templatekey: Text Content
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
-content-length: 3
+content-length: 2
 
-250
+50
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -26,15 +26,15 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: a2191180-b3a2-4f64-ab54-29bfa711f73d
+revision: 6ff76081-b52a-45f7-831f-47b9df7cdc09
 
 ----field----
 field: {C487FA5B-2267-414F-A814-BA9CE7B96003}
 name: Article Description
 key: article description
-content-length: 239
+content-length: 481
 
-<p>There&rsquo;s a touch of the femme fatale in these high-collar pumps from Spanish stiletto master Manolo Blahnik&rsquo;s new collection, Espedal. Available in smoky grey or midnight navy suede, they&rsquo;ll add drama to any outfit.</p>
+Brogues and boyfriend jeans are still hot for autumn/winter 2015, but borrowing from the men needn&rsquo;t mean dialing down the wattage. Roger Vivier mixes masculine lines with feminine proportions for the perfect pair of flats to see you through the change in season. Complete the sleek and chic look with this coveted star leather wallet, also from Roger Vivier. Again, proportions are small to balance the look for a retro feminine edge that has star style written all over it.
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -48,7 +48,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150918T030745Z
+20151016T022921Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -62,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a2191180-b3a2-4f64-ab54-29bfa711f73d
+6ff76081-b52a-45f7-831f-47b9df7cdc09
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151019T065522:635808345221086438Z
+20151019T071824:635808359041216904Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -80,15 +80,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 544d7f55-fe31-4428-9bd6-994541ecb351
+revision: 21607434-136e-49cf-bf1d-48fa4427630f
 
 ----field----
 field: {C487FA5B-2267-414F-A814-BA9CE7B96003}
 name: Article Description
 key: article description
-content-length: 89
+content-length: 118
 
-<p>西班牙鞋履大师Manolo Blahnik最新推出的Espedal高鞋领麖皮高跟鞋，散发着蛇蝎美人的独特风韵。备有烟熏灰及午夜军蓝两种颜色，配搭任何服饰都瞩目亮丽。</p>
+<p>雕花鞋和男朋友牛仔裤仍是2015年秋冬大热，但取材男装却无损女性电力。Roger Vivier以阳刚线条结合娇媚设计，带来今年秋冬备受追捧的完美平底鞋，配衬品牌小巧可爱的星形图案手袋，更是型格十足，可突显复古的女性化形象。</p>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -102,7 +102,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151019T101144Z
+20151019T101504Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -116,14 +116,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-544d7f55-fe31-4428-9bd6-994541ecb351
+21607434-136e-49cf-bf1d-48fa4427630f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151019T101151:635808463113699510Z
+20151019T101520:635808465206699223Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -134,15 +134,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 24b0affd-8f35-478a-9f3d-d068060e1715
+revision: cd501d9a-e14d-4ae1-88e8-93b6f8e1d679
 
 ----field----
 field: {C487FA5B-2267-414F-A814-BA9CE7B96003}
 name: Article Description
 key: article description
-content-length: 82
+content-length: 118
 
-西班牙鞋履大師Manolo Blahnik最新推出的Espedal高鞋領麖皮高跟鞋，散發著蛇蠍美人的獨特風韻。備有煙燻灰及午夜軍藍兩種顏色，配搭任何服飾都矚目亮麗。
+<p>雕花鞋和男朋友牛仔褲仍是2015年秋冬大熱，但取材男裝卻無損女性電力。Roger Vivier以陽剛線條結合嬌媚設計，帶來今年秋冬備受追捧的完美平底鞋，配襯品牌小巧可愛的星形圖案手袋，更是型格十足，可突顯復古的女性化形象。</p>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -156,7 +156,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151019T101158Z
+20151019T101359Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -170,14 +170,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-24b0affd-8f35-478a-9f3d-d068060e1715
+cd501d9a-e14d-4ae1-88e8-93b6f8e1d679
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151019T101244:635808463647820060Z
+20151019T101409:635808464493548433Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

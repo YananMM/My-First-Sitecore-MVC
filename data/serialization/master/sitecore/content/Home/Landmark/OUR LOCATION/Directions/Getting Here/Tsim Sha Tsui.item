@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {FACD0F27-1189-4916-A1E6-55AFE19BE536}
+id: {F1179232-D797-4C86-850F-DFE60A7E084A}
 database: master
-path: /sitecore/content/Home/Landmark/OUR LOCATION/GET DIRECTIONS/GET DIRECTIONS/Shun Tak Centre Sheung Wan
+path: /sitecore/content/Home/Landmark/OUR LOCATION/Directions/Getting Here/Tsim Sha Tsui
 parent: {AE130080-B8B6-4D9E-B863-C88DC329B657}
-name: Shun Tak Centre Sheung Wan
+name: Tsim Sha Tsui
 master: {00000000-0000-0000-0000-000000000000}
 template: {3E8C53BC-1805-434C-BD94-65316F9AFC71}
 templatekey: T35 Starting Location Object
@@ -12,15 +12,15 @@ templatekey: T35 Starting Location Object
 ----version----
 language: en
 version: 1
-revision: e38c7bc5-a429-487d-bcb5-b811225dccd2
+revision: 76e86607-cfe2-4d5b-9d53-9f5e6cc87475
 
 ----field----
 field: {38AC07B7-0A25-41CB-B0DE-51431856ADF2}
 name: Starting Location
 key: starting location
-content-length: 27
+content-length: 13
 
-Shun Tak Centre, Sheung Wan
+Tsim Sha Tsui
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -34,7 +34,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150824T092910Z
+20150824T092956Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e38c7bc5-a429-487d-bcb5-b811225dccd2
+76e86607-cfe2-4d5b-9d53-9f5e6cc87475
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150824T093344:635760056242051932Z
+20150824T093019:635760054197144970Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -26,29 +26,29 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 872b2a3e-d56d-4e65-8513-52ce28e64a77
+revision: 23147437-2f59-4a5b-a258-1e3b5bf98871
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 7
+content-length: 12
 
-Story 2
+Grey matters
 ----field----
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 49
+content-length: 22
 
-TEXT BY SUSAN HAYES | PHOTOGRAPHY BY ANDREW SMITH
+by Andrew J. Loiterton
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
-content-length: 36
+content-length: 55
 
-222222222222222222222222222222222222
+Espedal suede pump by Manolo Blahnik, LANDMARK ATRIUM. 
 ----field----
 field: {B966F61E-9F08-4674-AC01-EE1064020145}
 name: Article Date
@@ -74,9 +74,9 @@ Story 2
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 7
+content-length: 12
 
-Story 2
+Grey matters
 ----field----
 field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
 name: Page Style
@@ -104,14 +104,150 @@ name: __Revision
 key: __revision
 content-length: 36
 
-872b2a3e-d56d-4e65-8513-52ce28e64a77
+23147437-2f59-4a5b-a258-1e3b5bf98871
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151019T063500:635808333001207501Z
+20151019T090552:635808423527245294Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 8354106b-24c4-4579-a13a-aec5d556d6ce
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 12
+
+Grey matters
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 34
+
+Photography by Andrew J. Loiterton
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 34
+
+Manolo Blahnik Espeda麖皮高跟鞋，置地廣塲中庭。
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151019T101023Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8354106b-24c4-4579-a13a-aec5d556d6ce
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151019T101135:635808462951420228Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 762e69d0-fa06-441a-aea2-92a9653e53df
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 12
+
+Grey matters
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 22
+
+by Andrew J. Loiterton
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 34
+
+Manolo Blahnik Espeda麖皮高跟鞋，置地廣塲中庭。
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151019T101208Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+762e69d0-fa06-441a-aea2-92a9653e53df
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151019T101251:635808463710063620Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

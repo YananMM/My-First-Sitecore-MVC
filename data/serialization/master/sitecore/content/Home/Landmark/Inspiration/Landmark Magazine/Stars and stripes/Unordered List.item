@@ -1,26 +1,26 @@
 ----item----
 version: 1
-id: {F1179232-D797-4C86-850F-DFE60A7E084A}
+id: {4F784D71-C059-4CF9-8DDF-C09F7C2BDB5D}
 database: master
-path: /sitecore/content/Home/Landmark/OUR LOCATION/GET DIRECTIONS/GET DIRECTIONS/Tsim Sha Tsui
-parent: {AE130080-B8B6-4D9E-B863-C88DC329B657}
-name: Tsim Sha Tsui
-master: {00000000-0000-0000-0000-000000000000}
-template: {3E8C53BC-1805-434C-BD94-65316F9AFC71}
-templatekey: T35 Starting Location Object
+path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Stars and stripes/Unordered List
+parent: {D8134F1F-917E-46E8-BC8E-995B43E818CC}
+name: Unordered List
+master: {019AAA6D-F7C8-4293-94EE-CF065B0A8A91}
+template: {17853181-56B2-4240-84FC-EFF772333FEC}
+templatekey: Unordered List
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
 
 ----version----
 language: en
 version: 1
-revision: 76e86607-cfe2-4d5b-9d53-9f5e6cc87475
+revision: e67bb179-3695-4bed-9e7c-89abde18ae55
 
-----field----
-field: {38AC07B7-0A25-41CB-B0DE-51431856ADF2}
-name: Starting Location
-key: starting location
-content-length: 13
-
-Tsim Sha Tsui
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -34,7 +34,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150824T092956Z
+20151016T022921Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-76e86607-cfe2-4d5b-9d53-9f5e6cc87475
+e67bb179-3695-4bed-9e7c-89abde18ae55
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150824T093019:635760054197144970Z
+20151016T022921:635805593616936811Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
