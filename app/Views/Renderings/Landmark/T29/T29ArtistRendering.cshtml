@@ -20,9 +20,9 @@
 
 
 <div class="gd-artplace-profile-info row">
-    <div class="col-sm-12 gd-longarticle" data-text-on="READ MORE +" data-text-off="LESS -">
-        <p>
-            @Html.Sitecore().Field("Art Description")
-        </p>
+    <div class="col-sm-12 gd-longarticle" data-text-on="@Html.Sitecore().Field("Glossary Value", SitecoreItems.ReadMoreItem) +" data-text-off="@Html.Sitecore().Field("Glossary Value",SitecoreItems.LessItem) -">
+    <p>
+    @Html.Sitecore().Field("Art Description")
+    </p>
     </div>
 </div>

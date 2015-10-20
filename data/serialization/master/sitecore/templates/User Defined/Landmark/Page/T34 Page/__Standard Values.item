@@ -26,8 +26,22 @@ content-length: 957
 ----version----
 language: en
 version: 1
-revision: b449e98c-4c39-42ba-8ab6-8d54030dfc42
+revision: fa3b5f95-e7fe-4942-b66e-5149be01c6b8
 
+----field----
+field: {1A99422C-DB81-4A3F-BACA-A26FC14DC5EB}
+name: Special Offers Label
+key: special offers label
+content-length: 14
+
+Special Offers
+----field----
+field: {72864CFD-F95D-457C-A6B3-73EC627E14C3}
+name: About Hotel Label
+key: about hotel label
+content-length: 15
+
+About The Hotel
 ----field----
 field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
 name: __Final Renderings
@@ -48,14 +62,136 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b449e98c-4c39-42ba-8ab6-8d54030dfc42
+fa3b5f95-e7fe-4942-b66e-5149be01c6b8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150902T085918:635767811583975981Z
+20151020T110355:635809358358288941Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: cc962079-0401-48a8-a36c-dc7c0e46b747
+
+----field----
+field: {1A99422C-DB81-4A3F-BACA-A26FC14DC5EB}
+name: Special Offers Label
+key: special offers label
+content-length: 4
+
+特别优惠
+----field----
+field: {72864CFD-F95D-457C-A6B3-73EC627E14C3}
+name: About Hotel Label
+key: about hotel label
+content-length: 4
+
+关於酒店
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151020T110332Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+cc962079-0401-48a8-a36c-dc7c0e46b747
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151020T110410:635809358508837552Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 418c04e6-a863-4902-a05a-a378fdb6f35c
+
+----field----
+field: {1A99422C-DB81-4A3F-BACA-A26FC14DC5EB}
+name: Special Offers Label
+key: special offers label
+content-length: 4
+
+特別優惠
+----field----
+field: {72864CFD-F95D-457C-A6B3-73EC627E14C3}
+name: About Hotel Label
+key: about hotel label
+content-length: 4
+
+關於酒店
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151020T110319Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+418c04e6-a863-4902-a05a-a378fdb6f35c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151020T110402:635809358427562903Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -105,10 +105,13 @@
                     }
                 }
                     }
-                    <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", detailedarticle)">
+
+                    <a href="@LinkManager.GetItemUrl(detailedarticle)"><img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", detailedarticle)"></a>
                     <div class="gd-promo-box-text">
                         <h5>@Html.Sitecore().Field("Brand Title", Sitecore.Context.Database.GetItem(brand))</h5>
-                        <h4>@Html.Sitecore().Field("Article Headline", detailedarticle) (@Html.Sitecore().Field("Product Price", detailedarticle))</h4>
+                        <a href="@LinkManager.GetItemUrl(detailedarticle)">
+                            <h4>@Html.Sitecore().Field("Article Headline", detailedarticle) (@Html.Sitecore().Field("Product Price", detailedarticle))</h4>
+                        </a>
                         <a class="gd-button gd-button-white" href="@LinkManager.GetItemUrl(detailedarticle)">@Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverMoreItem)</a>
                         <div class="gd-promo-share">
                             <div class="gd-promo-share-handle">

@@ -25,8 +25,7 @@
                     @{
                         var image = LandmarkHelper.GetCallOutImage(item.Item);
                         string video = "";
-                        string videoTemplateId = "{82C6EA0F-D0F2-4F40-BA8A-F5E39A10D5B5}";
-                        var videoItem = item.Item.Children.SingleOrDefault(p => p.TemplateID.ToString() == videoTemplateId);
+                        var videoItem = item.Item.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.VideoObject);
                         if (videoItem != null)
                         {
                             video = videoItem.Fields["Video File"].ToString();

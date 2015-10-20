@@ -106,7 +106,7 @@
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <label for="messsage">@Html.Sitecore().Field("Message Label")*</label>
-                                <textarea class="form-control" rows="3" id="messsage" name="Message"></textarea>
+                                <textarea class="form-control" rows="3" id="messsage" name="Message" data-error="Please provide feedback message."></textarea>
                             </div>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                         <div class="col-sm-11">
                             <p>@Html.Sitecore().Field("Verrification Label") *</p>
                             <img id="valiCode" style="cursor: pointer;" src="@Url.Action("GetValidateCode", "Home")" alt="ValidateCode" />
-                            <input type="text" id="code" class="form-control" name="ValidateCode">
+                            <input type="text" id="code" class="form-control" name="ValidateCode" data-error="Please provide a correct verification code.">
                             <a href="javascript:changeImg();">@Html.Sitecore().Field("Generate another code Label")</a>
                         </div>
                     </div>

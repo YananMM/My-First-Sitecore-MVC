@@ -827,12 +827,28 @@ jQuery(function ($) {
 
 
             // brands link scroll
-            $('.brand-menu-area a[href^=#]').on('click', function (e) {
-                e.preventDefault();
-                if ($(this).parents('.popup-overlay').length) {
-                    $(this).parents('.popup-overlay').find('.close-popup').trigger('click')
+            $('.brand-menu-area .brands-gap>li>a').on('click', function(e){
+      
+                var gdCurrentLoc = location.pathname;
+                gdCurrentLoc = gdCurrentLoc.slice( gdCurrentLoc.lastIndexOf('/') );
+                var gdAnchorLoc  = $(this).attr('href');
+                var gdAnchor     = gdAnchorLoc.slice( gdAnchorLoc.indexOf('#') );
+      
+                if ( gdAnchorLoc.indexOf('/') > -1 ) {
+                    gdAnchorLoc = gdAnchorLoc.slice( gdAnchorLoc.lastIndexOf('/'), gdAnchorLoc.lastIndexOf('#') );
+                } else if ( gdAnchorLoc.slice( 0, 1) === '#' ) {
+                    gdAnchorLoc = '';
+                } else {
+                    gdAnchorLoc = gdAnchorLoc.slice( 0, gdAnchorLoc.indexOf('#') )
                 }
-                $.scrollTo($(this).attr('href'), 1000, { axis: 'y', offset: -$('.brand-list').offset().top + (isDesktop() ? 160 : 70) })
+
+                if (gdAnchorLoc === gdCurrentLoc || gdAnchorLoc === '') {
+                    e.preventDefault();
+                    if ($(this).parents('.popup-overlay').length) {
+                        $(this).parents('.popup-overlay').find('.close-popup').trigger('click')
+                    }
+                    $.scrollTo(gdAnchor, 1000, { axis: 'y', offset: -$('.brand-list').offset().top + (isDesktop() ? 160 : 70) })
+                }
             });
 
             // T13 Anchor Link
@@ -1688,7 +1704,7 @@ jQuery(function ($) {
                 }
             });
         }
-        if ($('#gd-carousel-info').length) {
+        if (!$('body').hasClass('t34') && $('#gd-carousel-info').length) {
             var gdBottomTextFZ = $('#gd-carousel-info .gd-carousel-detail p').eq(0).css('fontSize');
             gdBottomTextFZ = gdBottomTextFZ.indexOf('px') > 0 ? gdBottomTextFZ.slice(0, -2) : gdBottomTextFZ;
             var gdBottomTextLH = $('#gd-carousel-info .gd-carousel-detail p').eq(0).css('lineHeight');
@@ -1780,7 +1796,7 @@ jQuery(function ($) {
          * Image mask
          **********************************************************************************************************/
         if ($('body').hasClass('t29') || $('body').hasClass('t30')) {
-            $('body').on('mouseenter', '.gd-showcase .gd-hover-img-area, .gd-artlist .gd-hover-img-area', function () {
+            $('body').on('mouseenter', '.gd-hover-img', function () {
                 var gdImgWidth = $(this).find('img').width();
                 var gdImgMask = $(this).find('.gd-hover-img-mask');
                 gdImgMask.css({ 'width': gdImgWidth, 'left': ($(this).width() - gdImgWidth) / 2 });

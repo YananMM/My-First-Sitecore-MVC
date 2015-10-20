@@ -64,6 +64,7 @@ namespace Landmark.Classes
         public static readonly Item SeeAllExclusiveItem = _web.GetItem("{4F5C3F3D-9AB5-424B-9C78-41DC7AEECB8F}");
         public static readonly Item SeeAllExclusive = _web.GetItem("{2283A3E4-45AE-4164-8C82-6D9F48D0602C}");
         public static readonly Item ReadMoreItem = _web.GetItem("{738E90D0-A3B0-46A3-8DF4-6FE1825B51D2}");
+        public static readonly Item LessItem = _web.GetItem("{574B48FD-7EDF-4621-887B-780E276EB093}");
         public static readonly Item AllTextItem = _web.GetItem("{48098CED-9711-4F65-92B3-BB8810A11806}");
         public static readonly Item ShareItem = _web.GetItem("{2224057F-0DA3-4D7E-9089-99CB8CC77C0F}");
         public static readonly Item LearnMoreItem = _web.GetItem("{3ADB531C-1F86-4963-859D-9525EE4D833A}");
@@ -80,7 +81,7 @@ namespace Landmark.Classes
         public static readonly Item SeeMoreGlossaryItem = _web.GetItem("{4C26DD8F-E35D-4723-A63D-EBC091B5517B}");
         public static readonly Item SeeLessGlossaryItem = _web.GetItem("{ECE9A631-616F-4180-A886-8DAE0A8C7ECE}");
         public static readonly Item PleaseSelectItem = _web.GetItem("{07350BF2-59EF-414F-B432-AA8386002AD3}");
-
+        public static readonly Item ArtItem = _web.GetItem("{AB0C8815-0927-4C82-9430-D9FFC89A5C5E}");
 
     }
 }
