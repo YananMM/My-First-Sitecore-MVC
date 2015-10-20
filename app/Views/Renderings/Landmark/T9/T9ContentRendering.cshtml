@@ -34,8 +34,14 @@
     @Html.Sitecore().Placeholder("update-data")
     <div class="gd-contact-share">
         <h4><span class="icomoon-share"></span>@Html.Sitecore().Field("Share Title")</h4>
-        <a href="#" class="gd-contact-share-icon"><span class="icomoon-facebook"></span></a>
-        <a href="#" class="gd-contact-share-icon"><span class="icomoon-instagram"></span></a>
-        <a href="#" class="gd-contact-share-icon"><span class="icomoon-sina-weibo"></span></a>
+@{
+    List<Item> mediaItems = Sitecore.Context.Database.GetItem(ItemGuids.ContactUsFormSocailFolder).Children.ToList();
+}
+ @foreach (var item in mediaItems)
+    {
+        var css = item.Fields["Social Media Css"].Value;
+        var title =item.Fields["Social Media Title"].Value;
+        @Html.Sitecore().Field("Social Media Link", item, new {title=title, text = "<span class='" + css + "'></span>" })
+    }
     </div>
 </div>

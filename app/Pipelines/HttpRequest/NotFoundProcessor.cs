@@ -22,7 +22,7 @@ namespace Landmark.Pipelines.HttpRequest
             {
                 return;
             }
-            
+
             //Item findItem = Sitecore.Context.Database.GetItem(SitecoreItemGuids.FindPropertiesOffersItem.ToString());
             //string path = args.StartPath + "/" + findItem.Name + args.LocalPath.Replace("-", " ");
             //Item context = Sitecore.Context.Database.GetItem(path);
