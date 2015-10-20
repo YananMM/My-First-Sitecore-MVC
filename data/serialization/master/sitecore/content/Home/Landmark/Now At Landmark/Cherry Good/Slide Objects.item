@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {91BE8432-9E2F-48F1-A62E-686F8B61A219}
+database: master
+path: /sitecore/content/Home/Landmark/Now At Landmark/Cherry Good/Slide Objects
+parent: {77BE89B6-5EED-445F-9573-E270FE3B8191}
+name: Slide Objects
+master: {13FE3D68-15D9-47E4-8993-4C620C534BBC}
+template: {EEEB8813-EBD2-415E-B4F0-72B52DDEF18E}
+templatekey: Slide Folder
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: c27bd8d8-1425-4988-a989-a1f6ed3e146b
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151020T014127Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c27bd8d8-1425-4988-a989-a1f6ed3e146b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151020T014127Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -79,8 +79,8 @@ namespace Landmark.Classes
         public static readonly Item LegalPrivacyItem = _web.GetItem("{4F4D0D9B-FE4D-4BFA-A7BC-2F0FE98DFAA1}");
         public static readonly Item SeeMoreGlossaryItem = _web.GetItem("{4C26DD8F-E35D-4723-A63D-EBC091B5517B}");
         public static readonly Item SeeLessGlossaryItem = _web.GetItem("{ECE9A631-616F-4180-A886-8DAE0A8C7ECE}");
-        
-        
+        public static readonly Item PleaseSelectItem = _web.GetItem("{07350BF2-59EF-414F-B432-AA8386002AD3}");
+
 
     }
 }

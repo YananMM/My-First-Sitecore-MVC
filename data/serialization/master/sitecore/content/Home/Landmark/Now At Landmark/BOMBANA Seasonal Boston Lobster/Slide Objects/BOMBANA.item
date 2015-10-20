@@ -17,6 +17,39 @@ content-length: 58
 
 <image mediaid="{116AF355-E142-4C78-A123-C0C1F31C7D4D}" />
 ----version----
+language: en
+version: 1
+revision: ef3d8cd6-254c-4ea2-84f2-a78e786231de
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151020T052849Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ef3d8cd6-254c-4ea2-84f2-a78e786231de
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151020T052849Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
 language: zh-CN
 version: 1
 revision: a3a5bde6-c053-4f49-8327-b169232f81fe
