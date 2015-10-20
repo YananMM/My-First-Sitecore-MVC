@@ -2,9 +2,9 @@
 version: 1
 id: {0610C5FA-FA5E-415A-8D8E-7DAE9445C1E3}
 database: master
-path: /sitecore/content/Home/Landmark/Email Signup
+path: /sitecore/content/Home/Landmark/Keep Yourself Updated
 parent: {497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}
-name: Email Signup
+name: Keep Yourself Updated
 master: {00000000-0000-0000-0000-000000000000}
 template: {E3002EEE-05A1-4964-9453-0F4283B00293}
 templatekey: T31 Page
@@ -19,7 +19,7 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: ead6af7f-d179-4d29-85df-7099e2233ae2
+revision: 61fdf336-a51f-4aef-bc73-77d69deb44e5
 
 ----field----
 field: {83133543-4F66-49A1-8E74-25AE281CBBE3}
@@ -53,9 +53,9 @@ EMAIL
 field: {160EE92C-8DFD-4550-A620-07EFF6D216E4}
 name: Channels Label
 key: channels label
-content-length: 37
+content-length: 34
 
-YOUR PREFERRED COMMUNICATION CHANNELS
+Preferred communication channel(s)
 ----field----
 field: {F0EB57E5-4A33-44C8-A0CB-0DB5BBC92D4E}
 name: Room Label
@@ -123,9 +123,9 @@ INTERESTS
 field: {63D056DA-E265-4705-B896-46C602F15CBE}
 name: Button Label
 key: button label
-content-length: 4
+content-length: 7
 
-SEND
+Sign Up
 ----field----
 field: {2CACBF3D-EF6B-40BB-8024-5379A8EC0EB6}
 name: Select Label
@@ -144,9 +144,9 @@ Others
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 12
+content-length: 21
 
-Email Signup
+Keep Yourself Updated
 ----field----
 field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
 name: Is Shown In Navigation
@@ -158,9 +158,9 @@ content-length: 0
 field: {DB82C923-745B-4A88-8064-A667F0E1EA4F}
 name: Page Description
 key: page description
-content-length: 383
+content-length: 198
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in convallis urna. Phasellus vitae ligula eu odio luctus tristique in in purus. Morbi vestibulum sodales lorem ac ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in convallis urna. Phasellus vitae ligula eu odio luctus tristique in in purus. Morbi vestibulum sodales lorem ac ullamcorper.
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">Sign up to receive the latest updates from LANDMARK. </p>
 ----field----
 field: {9456FE89-6DA1-4AB3-AE7F-EE4A672B171D}
 name: Postal Address
@@ -237,14 +237,171 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ead6af7f-d179-4d29-85df-7099e2233ae2
+61fdf336-a51f-4aef-bc73-77d69deb44e5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
+content-length: 35
+
+20151019T114123:635808516832125172Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: e344d790-b59e-48dd-a5dd-7178333bbf2b
+
+----field----
+field: {160EE92C-8DFD-4550-A620-07EFF6D216E4}
+name: Channels Label
+key: channels label
+content-length: 6
+
+选择联系方式
+----field----
+field: {63D056DA-E265-4705-B896-46C602F15CBE}
+name: Button Label
+key: button label
+content-length: 4
+
+注册加入
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 6
+
+掌握最新资讯
+----field----
+field: {DC98EFC7-B520-4D74-8D80-D59F59A1780B}
+name: Specify
+key: specify
+content-length: 3
+
+请列明
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
 content-length: 16
 
-20150922T014754Z
+20151019T113305Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e344d790-b59e-48dd-a5dd-7178333bbf2b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151019T114716:635808520362793457Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 9dcc8c25-3d03-4207-b169-f1fe538ddeaa
+
+----field----
+field: {160EE92C-8DFD-4550-A620-07EFF6D216E4}
+name: Channels Label
+key: channels label
+content-length: 6
+
+選擇聯繫方式
+----field----
+field: {63D056DA-E265-4705-B896-46C602F15CBE}
+name: Button Label
+key: button label
+content-length: 4
+
+註冊加入
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 6
+
+掌握最新資訊
+----field----
+field: {DB82C923-745B-4A88-8064-A667F0E1EA4F}
+name: Page Description
+key: page description
+content-length: 16
+
+註冊加入，以獲取置地廣塲最新資訊
+----field----
+field: {DC98EFC7-B520-4D74-8D80-D59F59A1780B}
+name: Specify
+key: specify
+content-length: 3
+
+請列明
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151019T113310Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9dcc8c25-3d03-4207-b169-f1fe538ddeaa
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151019T114720:635808520404003983Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
