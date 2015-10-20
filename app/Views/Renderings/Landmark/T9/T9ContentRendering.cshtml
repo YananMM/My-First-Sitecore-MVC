@@ -41,7 +41,7 @@
     {
         var css = item.Fields["Social Media Css"].Value;
         var title =item.Fields["Social Media Title"].Value;
-        @Html.Sitecore().Field("Social Media Link", item, new {title=title, text = "<span class='" + css + "'></span>" })
+        @Html.Sitecore().Field("Social Media Link", item, new {title=title, text = "<span class='" + css + "'></span>" ,@class="gd-contact-share-icon"})
     }
     </div>
 </div>
