@@ -5,10 +5,10 @@
 <script>
     // sitecore integration: these values should be managed in CMS as global settings
     var gdSettings = {
-        fbAppId: '807096246077318',
-        wbAppKey: '3515982722',
-        ShortVersionContentNumberOfLines: 3,
-        LongVersionContentNumberOfLines: 7
+        fbAppId:' @SitecoreItems.LandmarkConfigItem.Fields["Facebook Application App Key"]',
+        wbAppKey: '@SitecoreItems.LandmarkConfigItem.Fields["Weibo Application API Key"]',
+        ShortVersionContentNumberOfLines: @SitecoreItems.LandmarkConfigItem.Fields["Short Version Content Number Of Lines"],
+        LongVersionContentNumberOfLines: @SitecoreItems.LandmarkConfigItem.Fields["Long Version Content Number Of Lines"]
     };
 </script>
 <!-- Social App Ids End -->

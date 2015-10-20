@@ -56,7 +56,7 @@ namespace Landmark.Helper
             string pageName = string.Empty;
             if (Sitecore.Context.Item.ID.ToString() == ItemGuids.PageNotFoundItem)
                 pageName = "404";
-            if (Sitecore.Context.Item.ID.ToString() == ItemGuids.PageNotFoundItem)
+            if (Sitecore.Context.Item.ID.ToString() == ItemGuids.EmailSignUpThankYouPage)
                 pageName = "email_success";
             if (Sitecore.Context.Item.ID.ToString() == ItemGuids.ContactSuccessPage)
                 pageName = "contact_success";

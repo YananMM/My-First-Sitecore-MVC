@@ -242,7 +242,7 @@ namespace Landmark.Controllers
             {
                 return Content(e.StackTrace);
             }
-            return RedirectToAction("ButtonRedirect", new { targetId = ItemGuids.ThankYouPage });
+            return RedirectToAction("ButtonRedirect", new { targetId = ItemGuids.EmailSignUpThankYouPage });
         }
 
     }

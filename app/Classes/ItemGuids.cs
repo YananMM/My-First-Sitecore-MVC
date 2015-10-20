@@ -71,6 +71,7 @@ namespace Landmark.Classes
         public static readonly String T35SurroundingPage = "{54824316-017A-4B94-AD8E-F636473B510A}";
         public static readonly String ContactUsPage = "{5EC2DEF7-B8CE-45CD-96CD-9967773B5808}";
         public static readonly String ThankYouPage = "{C6045FFE-5883-49F7-AC6E-653919640DDB}";
+        public static readonly String EmailSignUpThankYouPage = "{1CA862DB-1C2C-49BC-8775-C4B44E20D358}";
         public static readonly String OverviewPage = "{7C88DA46-5C88-465B-8F12-BBEC6991D8CB}";
         public static readonly String MonthlyExclusivePage = "{923DBE58-71DE-4B27-B0BA-C5DEF3D301B2}";
         public static readonly String InterestsFolder = "{840B3FE7-8EEA-4D6D-9797-4B799BDDF1A8}";

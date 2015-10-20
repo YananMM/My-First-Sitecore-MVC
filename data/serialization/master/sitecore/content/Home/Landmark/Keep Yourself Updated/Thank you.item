@@ -1,0 +1,215 @@
+----item----
+version: 1
+id: {1CA862DB-1C2C-49BC-8775-C4B44E20D358}
+database: master
+path: /sitecore/content/Home/Landmark/Keep Yourself Updated/Thank you
+parent: {0610C5FA-FA5E-415A-8D8E-7DAE9445C1E3}
+name: Thank you
+master: {00000000-0000-0000-0000-000000000000}
+template: {405CC2BD-9153-4979-8D48-9A664FE2B231}
+templatekey: T10 Page
+
+----version----
+language: en
+version: 1
+revision: ade8dc6b-eb03-45a2-a202-b758149d9178
+
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 173
+
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">Thank you for your message. </p>
+----field----
+field: {21E6F874-C520-4CA3-9254-8CDB1B083474}
+name: Explore Label
+key: explore label
+content-length: 16
+
+EXPLORE LANDMARK
+----field----
+field: {1A103714-8A11-45A7-B94D-5FA2D0DDD1C8}
+name: Related Page
+key: related page
+content-length: 116
+
+{51E62FBA-8585-46DA-9DA3-AE84C56C2DC3}|{7A1BF6CA-1E82-4F53-A482-D8BACD770875}|{1B51D2BB-E8D2-4421-A075-F0A748D04D36}
+----field----
+field: {9BFE1A1D-C5BB-4232-BCCD-421A18093480}
+name: Button Text
+key: button text
+content-length: 13
+
+DISCOVER MORE
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 9
+
+Thank you
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150827T030805Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ade8dc6b-eb03-45a2-a202-b758149d9178
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151019T113022:635808510220578743Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 9b59323f-5d9e-489e-887b-b5ff6699731e
+
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 152
+
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">谢谢您的意见。</p>
+----field----
+field: {21E6F874-C520-4CA3-9254-8CDB1B083474}
+name: Explore Label
+key: explore label
+content-length: 7
+
+探索置地广场 
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151019T112826Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9b59323f-5d9e-489e-887b-b5ff6699731e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151019T113010:635808510101556703Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: d1c8a464-24a5-45ca-9363-1736667455b4
+
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 152
+
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">謝謝您的意見。</p>
+----field----
+field: {21E6F874-C520-4CA3-9254-8CDB1B083474}
+name: Explore Label
+key: explore label
+content-length: 7
+
+探索置地廣塲 
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151019T112822Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d1c8a464-24a5-45ca-9363-1736667455b4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151019T113015:635808510153720439Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -63,6 +63,7 @@
             <div class="mobile-menu">
                 <div class="scroll-content">
                     @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.MobileNavigationRenderingViewGuid)
+
                     <div class="language">
                         <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", SitecoreItems.TraditionalChineseGuidItem)</a>
                         <span class="gap">|</span>
