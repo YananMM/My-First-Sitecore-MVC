@@ -26,7 +26,7 @@ content-length: 556
 ----version----
 language: en
 version: 1
-revision: e40b29fe-76c3-41b7-b877-6bb9ca8d3b5b
+revision: 3c671f29-015e-496a-909d-14c2c0859682
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -35,6 +35,13 @@ key: article headline
 content-length: 5
 
 $name
+----field----
+field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
+name: Article Type
+key: article type
+content-length: 38
+
+{8EDA7C13-E08B-4F7A-ABCE-AAD34DDF1B96}
 ----field----
 field: {A9B5DD8A-AD08-4D6A-B20C-7E8107C7E952}
 name: Button Text
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e40b29fe-76c3-41b7-b877-6bb9ca8d3b5b
+3c671f29-015e-496a-909d-14c2c0859682
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151015T072425:635804906651529041Z
+20151021T035522Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
