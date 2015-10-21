@@ -9,6 +9,8 @@
     var slides = slideFolder.Children.ToList();
     MagezineHelper helper = new MagezineHelper();
 }
+@if (slides.Count > 0)
+{
 <!-- Indicators -->
 <ol class="carousel-indicators">
     @for (int i = 0; i < slides.Count; i++)
@@ -72,3 +74,4 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
+}
