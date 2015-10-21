@@ -10,6 +10,13 @@ template: {2EE73BEB-F8DA-4F35-BB46-C1B0B8AC3945}
 templatekey: T23 Page AB
 
 ----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Slider Image
+key: article slider image
+content-length: 58
+
+<image mediaid="{EFE03547-1983-45CD-A741-349C37603534}" />
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -19,7 +26,21 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 0709fc18-f071-4d26-bb0a-5dd20bc4b265
+revision: d452bd7d-8b16-4387-8be3-cf2f6a2b4865
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 8
+
+Trending
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 0
+
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -28,6 +49,13 @@ key: page title
 content-length: 8
 
 Trending
+----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -41,14 +69,101 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0709fc18-f071-4d26-bb0a-5dd20bc4b265
+d452bd7d-8b16-4387-8be3-cf2f6a2b4865
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151019T080701:635808388214505521Z
+20151021T092320:635810162003637835Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 333fed63-7662-4b0b-98c3-feab733f18aa
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 9
+
+Trending 
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 0
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151021T060739Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+333fed63-7662-4b0b-98c3-feab733f18aa
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151021T060934:635810045741878043Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 0bc6d41c-9a23-4000-8d50-fba15dfb49be
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 9
+
+Trending 
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151021T060900Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0bc6d41c-9a23-4000-8d50-fba15dfb49be
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151021T061105:635810046653080161Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

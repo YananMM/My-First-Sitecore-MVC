@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 0982a360-d28a-404b-a6db-e5da4fc472bc
+revision: 1c43d08e-8651-4cba-8207-7150fa49b0eb
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -64,6 +64,13 @@ content-length: 17
 
 Stars and stripes
 ----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -76,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0982a360-d28a-404b-a6db-e5da4fc472bc
+1c43d08e-8651-4cba-8207-7150fa49b0eb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151019T090613:635808423730166901Z
+20151021T092305:635810161854249291Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

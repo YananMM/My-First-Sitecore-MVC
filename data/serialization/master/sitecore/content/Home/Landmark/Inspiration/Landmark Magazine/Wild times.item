@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: d6118e74-4bfa-4fa0-affc-6103efb040cd
+revision: f6eded50-85a8-4f21-bde6-b712c5279ca9
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -57,6 +57,13 @@ content-length: 10
 
 Wild times
 ----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style B
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -69,14 +76,129 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d6118e74-4bfa-4fa0-affc-6103efb040cd
+f6eded50-85a8-4f21-bde6-b712c5279ca9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151019T075952:635808383924180129Z
+20151021T092325:635810162056550862Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 33720a96-9a13-421a-b55a-950a3fcaff73
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 11
+
+Wild times 
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 34
+
+Photography by Andrew J. Loiterton
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 43
+
+Miu Miu Amiulet手袋及Leopard Bicolore鞋，置地广塲中庭。
+----field----
+field: {B966F61E-9F08-4674-AC01-EE1064020145}
+name: Article Date
+key: article date
+content-length: 16
+
+20151020T160000Z
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151021T060621Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+33720a96-9a13-421a-b55a-950a3fcaff73
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151021T060725:635810044457224565Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: bb141c23-08a4-449c-9384-7cd8bcb467c3
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 11
+
+Wild times 
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 22
+
+by Andrew J. Loiterton
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 43
+
+Miu Miu Amiulet手袋及Leopard Bicolore鞋，置地廣塲中庭。
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151021T060550Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+bb141c23-08a4-449c-9384-7cd8bcb467c3
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151021T060611:635810043715062116Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
