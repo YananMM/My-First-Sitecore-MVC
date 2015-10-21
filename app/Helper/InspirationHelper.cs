@@ -61,9 +61,13 @@ namespace Landmark.Helper
             List<Item> brands = new List<Item>();
             foreach (var article in articles)
             {
-                var brand = ((MultilistField)article.Fields["Brand"]).TargetIDs.FirstOrDefault();
-                if (_webDb.GetItem(brand)!= null)
-                    brands.Add(_webDb.GetItem(brand));
+                MultilistField brandField = ((MultilistField)article.Fields["Brand"]);
+                if (brandField != null && brandField.TargetIDs!=null && brandField.TargetIDs.Length>0)
+                {
+                    var brand = brandField.TargetIDs.FirstOrDefault();
+                    if (_webDb.GetItem(brand) != null)
+                        brands.Add(_webDb.GetItem(brand));
+                }
             }
 
             foreach (Item brand in brands)
@@ -124,8 +128,12 @@ namespace Landmark.Helper
         public string GetAlphabet(ID id)
         {
             string alphabetFilter = string.Empty;
-            Item brand = _webDb.GetItem(id);
-            alphabetFilter += "gdf-" + brand.Fields["Brand Title"].Value.ToLower()[0];
+            if (!id.IsNull)
+            {
+                Item brand = _webDb.GetItem(id);
+                alphabetFilter += "gdf-" + brand.Fields["Brand Title"].Value.ToLower()[0];
+            }
+
             return alphabetFilter;
         }
         /// <summary>
