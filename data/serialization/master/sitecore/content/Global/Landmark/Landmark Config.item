@@ -33,7 +33,7 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: ee6ecaf5-7a96-44af-bac0-3237fda0f67d
+revision: d4fc6ee0-7c45-4317-b2e9-a31f72732a18
 
 ----field----
 field: {11D43F72-ECA1-4AAF-BAC0-2DE41F9BB4BD}
@@ -56,6 +56,20 @@ key: share email to
 content-length: 16
 
 yanan@gruden.com
+----field----
+field: {14ADB810-9773-4BB1-81FF-65991A67F2F9}
+name: Short Version Content Number Of Lines
+key: short version content number of lines
+content-length: 1
+
+3
+----field----
+field: {88D28DBC-C123-4B9D-908A-D26BFC74AAA9}
+name: Long Version Content Number Of Lines
+key: long version content number of lines
+content-length: 1
+
+7
 ----field----
 field: {87228212-11A4-40BB-8B1A-783034F383EA}
 name: Portrait Only Text
@@ -147,14 +161,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ee6ecaf5-7a96-44af-bac0-3237fda0f67d
+d4fc6ee0-7c45-4317-b2e9-a31f72732a18
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151014T135231Z
+20151020T171731Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
