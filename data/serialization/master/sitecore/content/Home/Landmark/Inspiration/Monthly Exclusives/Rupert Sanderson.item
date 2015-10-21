@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {79DE2D44-1DFA-4483-9FFA-59380ED2EF43}
+database: master
+path: /sitecore/content/Home/Landmark/Inspiration/Monthly Exclusives/Rupert Sanderson
+parent: {923DBE58-71DE-4B27-B0BA-C5DEF3D301B2}
+name: Rupert Sanderson
+master: {A13598F7-D565-4FCC-A1EE-15E7C158F17B}
+template: {A46D7A20-B29F-4C4F-8922-0B70555CD6BC}
+templatekey: T27 Page
+
+----field----
+field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
+name: Article Thumb Image
+key: article thumb image
+content-length: 58
+
+<image mediaid="{A84F3A07-0940-43BF-A295-696635F54D4B}" />
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 38896420-e971-41a7-b72e-ff9657d4045c
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 16
+
+Rupert Sanderson
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 44
+
+MAYLENE Lemon Gold Black Patent (HK$5,380)
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 16
+
+Rupert Sanderson
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151021T162312Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+38896420-e971-41a7-b72e-ff9657d4045c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151021T162353Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

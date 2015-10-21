@@ -1,0 +1,83 @@
+----item----
+version: 1
+id: {FADFF895-110A-4F97-919A-BD1DD5C6C4B3}
+database: master
+path: /sitecore/content/Home/Landmark/Inspiration/Monthly Exclusives/EMPORIO ARMANI
+parent: {923DBE58-71DE-4B27-B0BA-C5DEF3D301B2}
+name: EMPORIO ARMANI
+master: {A13598F7-D565-4FCC-A1EE-15E7C158F17B}
+template: {A46D7A20-B29F-4C4F-8922-0B70555CD6BC}
+templatekey: T27 Page
+
+----field----
+field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
+name: Article Thumb Image
+key: article thumb image
+content-length: 58
+
+<image mediaid="{D92B9CEE-4C1E-411E-AF0B-FBCB740C0EC6}" />
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 547d5df4-429d-4344-a88a-72d8559d070b
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 14
+
+EMPORIO ARMANI
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 105
+
+Soft Touched Nappa Leather Bag
+with heat embossed brand name
+and a big and trendy buckle
+(HK$11,000)
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 14
+
+EMPORIO ARMANI
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151021T163932Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+547d5df4-429d-4344-a88a-72d8559d070b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151021T164010Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

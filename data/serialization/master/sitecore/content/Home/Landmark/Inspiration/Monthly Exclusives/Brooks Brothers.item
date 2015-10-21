@@ -1,0 +1,84 @@
+----item----
+version: 1
+id: {BEA31D5F-1E33-4EBB-81BB-5D2188DF49A0}
+database: master
+path: /sitecore/content/Home/Landmark/Inspiration/Monthly Exclusives/Brooks Brothers
+parent: {923DBE58-71DE-4B27-B0BA-C5DEF3D301B2}
+name: Brooks Brothers
+master: {A13598F7-D565-4FCC-A1EE-15E7C158F17B}
+template: {A46D7A20-B29F-4C4F-8922-0B70555CD6BC}
+templatekey: T27 Page
+
+----field----
+field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
+name: Article Thumb Image
+key: article thumb image
+content-length: 58
+
+<image mediaid="{B3B5D9A2-5334-4D47-BA2E-85BB31B883E3}" />
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 2819e37f-ad38-4271-9a22-6d62eb1ab932
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 15
+
+Brooks Brothers
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 132
+
+Black Fleece by Brooks Brothers
+Plaid Briefcase
+(HK$8,990)
+Black Fleece by Brooks Brothers
+Pebble Leather Card Case 
+(HK$1,990)
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 15
+
+Brooks Brothers
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151021T163603Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2819e37f-ad38-4271-9a22-6d62eb1ab932
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151021T163641Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

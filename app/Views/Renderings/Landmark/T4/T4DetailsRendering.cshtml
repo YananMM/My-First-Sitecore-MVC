@@ -4,14 +4,7 @@
 @using Sitecore.Data.Fields
 @model RenderingModel
 @{
-    var fromDateField = (DateField)Sitecore.Context.Item.Fields["Event From Date"];
-    var fromDate = fromDateField.DateTime.ToString("d MMM yyyy", CultureInfo.InvariantCulture);
-    var toDateField = (DateField)Sitecore.Context.Item.Fields["Event To Date"];
-    var toDate = toDateField.DateTime.ToString("d MMM yyyy", CultureInfo.InvariantCulture);
-    var fromDateTimeField = (DateField)Sitecore.Context.Item.Fields["Event From Time"];
-    var fromDateTime = LandmarkHelper.ToValidDateTime(fromDateTimeField).ToString("hh:mmtt", CultureInfo.InvariantCulture);
-    var toDateTimeField = (DateField)Sitecore.Context.Item.Fields["Event To Time"];
-    var toDateTime = LandmarkHelper.ToValidDateTime(toDateTimeField).ToString("hh:mmtt", CultureInfo.InvariantCulture);
+    var openningHours = Sitecore.Context.Item.Fields["Openning Hours"];
     var floor = ((ReferenceField)Sitecore.Context.Item.Fields["Event Floor"]).TargetItem;
     var building = floor.Parent;
 }
@@ -21,7 +14,7 @@
                         <tbody>
                         <tr>
                             <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.DateTimeItem)</th>
-                            <td>@fromDate - @toDate @fromDateTime-@toDateTime</td>
+                            <td>@openningHours</td>
                         </tr>
                         <tr>
                             <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.VenueItem)</th>
