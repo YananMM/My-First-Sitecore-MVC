@@ -132,10 +132,10 @@
             {
                 var brand = ((MultilistField)article.Fields["Brand"]).TargetIDs.FirstOrDefault();
                 <div class="gd-promo-box @inspirationHelper.GetAlphabet(brand) @inspirationHelper.GetTagsFilter(article)">
-                    <img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", article)">
+                    <a href="@LinkManager.GetItemUrl(article)"><img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", article)"></a>
                     <h5>@Html.Sitecore().Field("Brand Title", Sitecore.Context.Database.GetItem(brand))</h5>
-                    <h4>@Html.Sitecore().Field("Article Headline", article) (@Html.Sitecore().Field("Product Price", article))</h4>
-                </div>
+                    <a href="@LinkManager.GetItemUrl(article)"><h4>@Html.Sitecore().Field("Article Headline", article) (@Html.Sitecore().Field("Product Price", article))</h4></a>
+</div>
             }
         </div>
         <div class="navigation gd-promo-more"><a href="?page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem) +</a></div>

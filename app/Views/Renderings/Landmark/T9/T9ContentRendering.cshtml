@@ -5,13 +5,15 @@
 @using Sitecore.Data.Items
 @model RenderingModel
 
+
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
+
+            <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
             <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionPage))" class="gd-link-audio">
                 @Html.Sitecore().Field("Link Text") <span class="icomoon-chevron-small-right"></span>
             </a>
-            <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
         </div>
         <div class="gd-pagetitle-info">@Html.Sitecore().Field("Head Description")</div>
     </div>
@@ -34,14 +36,14 @@
     @Html.Sitecore().Placeholder("update-data")
     <div class="gd-contact-share">
         <h4><span class="icomoon-share"></span>@Html.Sitecore().Field("Share Title")</h4>
-@{
-    List<Item> mediaItems = Sitecore.Context.Database.GetItem(ItemGuids.ContactUsFormSocailFolder).Children.ToList();
-}
- @foreach (var item in mediaItems)
-    {
-        var css = item.Fields["Social Media Css"].Value;
-        var title =item.Fields["Social Media Title"].Value;
-        @Html.Sitecore().Field("Social Media Link", item, new {title=title, text = "<span class='" + css + "'></span>" ,@class="gd-contact-share-icon"})
-    }
+        @{
+            List<Item> mediaItems = Sitecore.Context.Database.GetItem(ItemGuids.ContactUsFormSocailFolder).Children.ToList();
+        }
+        @foreach (var item in mediaItems)
+        {
+            var css = item.Fields["Social Media Css"].Value;
+            var title = item.Fields["Social Media Title"].Value;
+            @Html.Sitecore().Field("Social Media Link", item, new { title = title, text = "<span class='" + css + "'></span>", @class = "gd-contact-share-icon" })
+        }
     </div>
 </div>

@@ -1,14 +1,21 @@
 ----item----
 version: 1
-id: {3B20B505-6B94-415D-BBCB-353E9879E7B6}
+id: {4387AB2D-A9E2-443C-ADB4-A0DFD9B16027}
 database: master
-path: /sitecore/content/Home/Landmark/Inspiration/Monthly Exclusives/Hackett London Makes Summer a Breeze for Gentlemen/Slider Objects
-parent: {FAF98A04-2986-46BB-8CC5-7AB0833BA300}
-name: Slider Objects
+path: /sitecore/content/Home/Landmark/Inspiration/Monthly Exclusives/Copy of Copy of Caress Champagne Diamond Ring/Slider Objects/product1
+parent: {F6A956CA-26DE-483C-AB45-14779528C4AF}
+name: product1
 master: {A13598F7-D565-4FCC-A1EE-15E7C158F17B}
-template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
-templatekey: Folder
+template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
+templatekey: Slide Object
 
+----field----
+field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{1F0F6BBE-B504-497B-9C29-3579AE9D3391}" />
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -16,25 +23,25 @@ key: __originator
 content-length: 0
 
 
-----field----
-field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
-name: __Masters
-key: __masters
-content-length: 38
-
-{FFC1447C-5F42-4419-AEF4-6175FB69507C}
 ----version----
 language: en
 version: 1
-revision: 710af7f4-8c4d-4e73-8b7a-a15d6ed8a7dc
+revision: 73d46b9a-d627-4ee2-9620-921837babab2
 
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20151021T004409Z
+20150908T045850Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-710af7f4-8c4d-4e73-8b7a-a15d6ed8a7dc
+73d46b9a-d627-4ee2-9620-921837babab2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151021T004409Z
+20150909T080439Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
