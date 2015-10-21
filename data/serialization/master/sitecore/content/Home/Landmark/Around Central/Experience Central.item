@@ -12,7 +12,7 @@ templatekey: T15 Page
 ----version----
 language: en
 version: 1
-revision: 768b11ac-ebce-40c6-aaa7-4470d6c78114
+revision: b20b8e4f-b690-42a0-831d-2d7694aacda6
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -32,9 +32,9 @@ content-length: 58
 field: {E24E5C03-B6A3-4ACA-AB3C-B48ACEDDD01D}
 name: Page Introduction
 key: page introduction
-content-length: 231
+content-length: 128
 
-INTRODUCTION ABOUT MONTHLY EXCLUSIVES - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in convallis urna. Phasellus vitae ligula eu odio luctus tristique in in purus. Morbi vestibulum sodales lorem ac ullamcorper.
+Need advice on how to spend a day around Central? We offer a wide range of suggestions to help you plan your Central experience.
 ----field----
 field: {D7127F86-CC6F-4DFE-A125-92E0898CC171}
 name: Button Text
@@ -42,6 +42,13 @@ key: button text
 content-length: 13
 
 DISCOVER MORE
+----field----
+field: {2F18A182-5DC3-49BF-B18A-2E8F7A3AD41A}
+name: Heading  leadin
+key: heading  leadin
+content-length: 17
+
+Other Suggestions
 ----field----
 field: {1025D25C-6AE7-49FC-8C2C-3FACAD13EB9E}
 name: Tags
@@ -62,14 +69,164 @@ name: __Revision
 key: __revision
 content-length: 36
 
-768b11ac-ebce-40c6-aaa7-4470d6c78114
+b20b8e4f-b690-42a0-831d-2d7694aacda6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151014T073437:635804048775619072Z
+20151020T093033:635809302330724348Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: bd3323bd-9a1f-4248-aa06-cc98d5827854
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+感受中环
+----field----
+field: {E24E5C03-B6A3-4ACA-AB3C-B48ACEDDD01D}
+name: Page Introduction
+key: page introduction
+content-length: 46
+
+想知道如何在中环度过美好一天？我们为您构思了多个别具特色的建议，帮助您打造最精彩的中环行程。
+----field----
+field: {D7127F86-CC6F-4DFE-A125-92E0898CC171}
+name: Button Text
+key: button text
+content-length: 13
+
+DISCOVER MORE
+----field----
+field: {2F18A182-5DC3-49BF-B18A-2E8F7A3AD41A}
+name: Heading  leadin
+key: heading  leadin
+content-length: 4
+
+其他建议
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151020T062332Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+bd3323bd-9a1f-4248-aa06-cc98d5827854
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151020T093057:635809302573278221Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 4fc868f3-73ac-4df7-b431-d60ad8d36e77
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+感受中環
+----field----
+field: {E24E5C03-B6A3-4ACA-AB3C-B48ACEDDD01D}
+name: Page Introduction
+key: page introduction
+content-length: 46
+
+要知道如何在中環度過美好一天？我們為您構思了多個別具特色的建議，幫助你打造最精彩的中環行程。
+----field----
+field: {D7127F86-CC6F-4DFE-A125-92E0898CC171}
+name: Button Text
+key: button text
+content-length: 13
+
+DISCOVER MORE
+----field----
+field: {2F18A182-5DC3-49BF-B18A-2E8F7A3AD41A}
+name: Heading  leadin
+key: heading  leadin
+content-length: 4
+
+其他建議
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151020T090837Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4fc868f3-73ac-4df7-b431-d60ad8d36e77
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151020T093043:635809302431500112Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

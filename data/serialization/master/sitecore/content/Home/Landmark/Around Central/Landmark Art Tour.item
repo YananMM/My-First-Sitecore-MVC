@@ -19,15 +19,15 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: 283ab07f-3dfe-42c4-b06d-9329570d2057
+revision: e5f5756f-ebde-4bc8-a580-d5a7708e31b8
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
-content-length: 18
+content-length: 37
 
-LANDMARK ART GUIDE
+Experience on Your&nbsp;&nbsp; Mobile
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -46,12 +46,16 @@ CENTRAL ART GUIDE
 field: {B6B6B6BA-80E1-4E09-AF00-5EB6A4D05221}
 name: Cover Content
 key: cover content
-content-length: 148
+content-length: 223
 
-<p>How to spend a day with your friends and family in Central?<br>
-Check out our one-day recommendation and experience
-the best of Central.</p>
-<br>
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">Discover some of the world&rsquo;s finest art pieces &ndash; here at LANDMARK.</p>
+----field----
+field: {6FB1ECCD-564A-4779-9CBB-F63D72BF42FD}
+name: Button Text
+key: button text
+content-length: 14
+
+Start the Tour
 ----field----
 field: {2511C4C1-908A-4C03-B12B-52B5E95CA051}
 name: Button Link
@@ -72,14 +76,178 @@ name: __Revision
 key: __revision
 content-length: 36
 
-283ab07f-3dfe-42c4-b06d-9329570d2057
+e5f5756f-ebde-4bc8-a580-d5a7708e31b8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150930T072316:635791945963344662Z
+20151020T101937:635809331777498607Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: dfe1da07-ebc5-49ca-a38d-b6a4fd0d44ad
+
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 149
+
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">手机体验</p>
+----field----
+field: {801CA251-92F3-4B68-945C-3FBB6DEA8A56}
+name: Cover Title
+key: cover title
+content-length: 6
+
+中环艺术导赏
+----field----
+field: {B6B6B6BA-80E1-4E09-AF00-5EB6A4D05221}
+name: Cover Content
+key: cover content
+content-length: 167
+
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">来自世界各地美不胜收的艺术品，尽在置地广塲。</p>
+----field----
+field: {6FB1ECCD-564A-4779-9CBB-F63D72BF42FD}
+name: Button Text
+key: button text
+content-length: 4
+
+开始观赏
+----field----
+field: {2511C4C1-908A-4C03-B12B-52B5E95CA051}
+name: Button Link
+key: button link
+content-length: 28
+
+<link linktype="internal" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151020T101021Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+dfe1da07-ebc5-49ca-a38d-b6a4fd0d44ad
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151020T101331:635809328114339086Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: b513191b-392e-4792-8a82-59902ced7243
+
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 4
+
+手機體驗
+----field----
+field: {801CA251-92F3-4B68-945C-3FBB6DEA8A56}
+name: Cover Title
+key: cover title
+content-length: 6
+
+中環藝術導賞
+----field----
+field: {B6B6B6BA-80E1-4E09-AF00-5EB6A4D05221}
+name: Cover Content
+key: cover content
+content-length: 167
+
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">來自世界各地美不勝收的藝術品，盡在置地廣塲。</p>
+----field----
+field: {6FB1ECCD-564A-4779-9CBB-F63D72BF42FD}
+name: Button Text
+key: button text
+content-length: 4
+
+開始觀賞
+----field----
+field: {2511C4C1-908A-4C03-B12B-52B5E95CA051}
+name: Button Link
+key: button link
+content-length: 28
+
+<link linktype="internal" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151020T101004Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b513191b-392e-4792-8a82-59902ced7243
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151020T101426:635809328666400662Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
