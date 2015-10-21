@@ -1,61 +1,47 @@
 ----item----
 version: 1
-id: {540B064A-3716-44D3-B565-569776865995}
+id: {3101AA41-539C-43A2-AF86-79DEBE684E2A}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Slide Object/__Standard Values
-parent: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
-name: __Standard Values
+path: /sitecore/content/Home/Landmark/Inspiration/Monthly Exclusives/Walking Down the Aisle in Style with Charlotte Olympia/Slider Objects/Walking Down the Aisle in Style with Charlotte Olympia
+parent: {7E1BF689-51B4-48CE-BA8F-0CCE45E3FF34}
+name: Walking Down the Aisle in Style with Charlotte Olympia
 master: {00000000-0000-0000-0000-000000000000}
 template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
 templatekey: Slide Object
 
 ----field----
-field: {EA18DD4F-8CA0-4115-9FDA-AF1CBFC569D0}
-name: Slide Video
-key: slide video
-content-length: 0
+field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
+name: Slide Image
+key: slide image
+content-length: 58
 
-
+<image mediaid="{8D214A2B-A44B-4401-8AD4-15728D11E185}" />
 ----version----
 language: en
 version: 1
-revision: 65b84cd4-49a4-4b0e-965d-73bdabe4bb99
+revision: a4928ee1-7ac4-4765-b833-1d2dcf0198d4
 
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150824T091919Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
+20151021T065401Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-65b84cd4-49a4-4b0e-965d-73bdabe4bb99
+a4928ee1-7ac4-4765-b833-1d2dcf0198d4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151021T113346Z
+20151021T120727Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
