@@ -5,9 +5,10 @@
 @model RenderingModel
 @{
     ReferenceField articleType = (ReferenceField) Model.Item.Fields["Article Type"];
+    string src = LandmarkHelper.GetCallOutImage(Model.Item);
 }
         <div class="panel-side1">
-            <div class="panel-img" data-bg="@Html.Sitecore().ImageFieldSrc("Article Slider Image", Model.Item)"></div>
+            <div class="panel-img" data-bg="@src"></div>
         </div>
         <div class="panel-side2">
             <div class="panel-main">

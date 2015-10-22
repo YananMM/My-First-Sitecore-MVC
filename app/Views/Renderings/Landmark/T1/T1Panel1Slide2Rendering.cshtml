@@ -1,6 +1,9 @@
 ﻿@using Landmark.Helper
 @model RenderingModel
-<div class="panel-img" data-bg="@Html.Sitecore().ImageFieldSrc("Article Slider Image", Model.Item)"></div>
+@{
+    string src = LandmarkHelper.GetCallOutImage(Model.Item);
+}
+<div class="panel-img" data-bg="@src"></div>
 <div class="panel-main">
     <div class="panel-text text-box-2">
         <hgroup class="clearfix">
