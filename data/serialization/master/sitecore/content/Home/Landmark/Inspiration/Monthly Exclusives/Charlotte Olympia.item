@@ -26,24 +26,21 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 31adeb39-329b-46e5-81a7-55932049e1a2
+revision: e3b1db28-7dd0-48e2-8304-9ab836c5f5d7
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 17
+content-length: 148
 
-Charlotte Olympia
+Pouty Passport Holder White Marble Prints (HK$3,300) Kitty Flats Chartreuse Polished Calfskin (HK$4,950) Feline Shoulder Purse Chartreuse (HK$6,800)
 ----field----
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 152
+content-length: 0
 
-Pouty Passport Holder White Marble Prints (HK$3,300)
-Kitty Flats Chartreuse Polished Calfskin (HK$4,950)
-Feline Shoulder Purse Chartreuse (HK$6,800)
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -65,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-31adeb39-329b-46e5-81a7-55932049e1a2
+e3b1db28-7dd0-48e2-8304-9ab836c5f5d7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151021T160250Z
+20151023T143053Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -80,3 +77,128 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: f595c606-8906-4080-8129-5746825e8c8d
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 153
+
+Pouty Passport Holder White Marble Prints
+(港幣3,300元)
+Kitty Flats Chartreuse Polished Calfskin
+(港幣4,950元)
+Feline Shoulder Purse Chartreuse
+(港幣6,800元)
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 0
+
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151022T010401Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f595c606-8906-4080-8129-5746825e8c8d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151023T141945Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+extranet\Anonymous
+----version----
+language: zh-HK
+version: 1
+revision: 7e9cc5c7-540c-4e21-a28f-d8e26234c172
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 153
+
+Pouty Passport Holder White Marble Prints
+(港幣3,300元)
+Kitty Flats Chartreuse Polished Calfskin
+(港幣4,950元)
+Feline Shoulder Purse Chartreuse
+(港幣6,800元)
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151023T141945Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7e9cc5c7-540c-4e21-a28f-d8e26234c172
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151023T141945Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+extranet\Anonymous

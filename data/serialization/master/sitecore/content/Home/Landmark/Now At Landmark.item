@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 06df5e6c-c0d6-4081-a9b7-e7f1bc180b86
+revision: 71d562a1-8a78-4ba3-9a2a-79bcb6853d76
 
 ----field----
 field: {D0CC41B3-3000-4ED5-870B-8C89E72C0DA0}
@@ -36,13 +36,19 @@ content-length: 0
 
 
 ----field----
-field: {7CC3F102-0637-40CD-A8B7-2A02ABF5C1F6}
-name: Page Content
-key: page content
-content-length: 60
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 53
 
-Find out more about the latest happenings at LANDMARK. 
-<br>
+Promotions, Events in Luxury Shopping Mall | LANDMARK
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 140
+
+Visit the official site to explore our latest promotion news, events, exhibitions and fashion trends that happen all year round in LANDMARK.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -70,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-06df5e6c-c0d6-4081-a9b7-e7f1bc180b86
+71d562a1-8a78-4ba3-9a2a-79bcb6853d76
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151020T061601Z
+20151023T024246Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -88,16 +94,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 3d2ab9cb-aa31-4725-a80c-33761b5784f0
+revision: 1b3c4415-4462-4dc5-bb1d-739ce0ea474c
 
 ----field----
-field: {7CC3F102-0637-40CD-A8B7-2A02ABF5C1F6}
-name: Page Content
-key: page content
-content-length: 16
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 18
 
-探索置地广场最新资讯。
-<br>
+香港购物中心优惠及活动 | 置地广塲
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 48
+
+请即登陆置地广塲官方网站及浏览我们最新推广优惠，活动，展览和时尚潮流的趋势，我们会不断更新资讯。
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -125,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3d2ab9cb-aa31-4725-a80c-33761b5784f0
+1b3c4415-4462-4dc5-bb1d-739ce0ea474c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151019T143318Z
+20151023T100842Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -143,16 +155,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: d1956fda-202f-4bf3-8cb0-4e61c2e83e63
+revision: 7a08d38c-9b6f-4809-9d69-7524455eed4a
 
 ----field----
-field: {7CC3F102-0637-40CD-A8B7-2A02ABF5C1F6}
-name: Page Content
-key: page content
-content-length: 16
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 20
 
-探索置地廣塲最新資訊。
-<br>
+香港豪華購物中心優惠及活動 | 置地廣塲
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 48
+
+請即登入置地廣塲官方網站及瀏覽我們最新推廣優惠，活動，展覽和時尚潮流的趨勢，我們會不斷更新資訊。
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -180,14 +198,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d1956fda-202f-4bf3-8cb0-4e61c2e83e63
+7a08d38c-9b6f-4809-9d69-7524455eed4a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151019T143407Z
+20151023T145943Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

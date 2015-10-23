@@ -26,29 +26,22 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 8a477bcb-e431-46b0-905c-f68ba8671243
+revision: 4fac7f65-8960-4a47-905a-276552dcac0f
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 23
+content-length: 187
 
-Adler Jewellery Limited
+Bangle in 18kt White Gold Set  with 575 diamonds 9.35 carats (HK$160,000) Earrings in 18kt White Gold Set  with 2 pear shape diamonds 0.80 carats  and 220 diamonds 3.06 carats (HK$68,000)
 ----field----
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 59
+content-length: 0
 
-Bangle in 18kt White Gold Set with 575 diamonds 9.35 carats
-----field----
-field: {F51B5F38-BDB7-4A90-93C8-12697B82CDBA}
-name: Product Price
-key: product price
-content-length: 10
 
-HK$160,000
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -69,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8a477bcb-e431-46b0-905c-f68ba8671243
+4fac7f65-8960-4a47-905a-276552dcac0f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151021T155252Z
+20151023T142905Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -84,3 +77,126 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: fd01cc25-c6fd-4f59-8a77-8d8f6e28354f
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 75
+
+18K白金鑲嵌手鐲配9.35卡鑽石
+(港幣160,000元)
+18K白金鑲嵌耳環
+配0.8卡梨形鑽石和 3.06卡鑽石
+(港幣68,000元)
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 0
+
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151022T003328Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fd01cc25-c6fd-4f59-8a77-8d8f6e28354f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151023T141944Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+extranet\Anonymous
+----version----
+language: zh-HK
+version: 1
+revision: 25852080-a898-48d0-b0f8-775418012014
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 75
+
+18K白金鑲嵌手鐲配9.35卡鑽石
+(港幣160,000元)
+18K白金鑲嵌耳環
+配0.8卡梨形鑽石和 3.06卡鑽石
+(港幣68,000元)
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151023T141944Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+25852080-a898-48d0-b0f8-775418012014
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151023T141944Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+extranet\Anonymous

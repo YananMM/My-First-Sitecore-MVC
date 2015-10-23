@@ -26,27 +26,21 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 86503c50-44fa-4e24-850f-6cac63017b60
+revision: f02daef2-6127-4ef8-b6e3-445f9d482351
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 13
+content-length: 131
 
-Louis Vuitton
+Monogram Trunk Dice Game Set  (HK$23,000) Monogram Trunk Domino Game Set (HK$25,700) Monogram Trunk Playing Card Set  (HK$22,000)  
 ----field----
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 138
+content-length: 0
 
-Monogram Trunk Dice Game Set
- (HK$23,000)
-Monogram Trunk Domino Game Set
-(HK$25,700)
-Monogram Trunk Playing Card Set 
-(HK$22,000)  
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -68,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-86503c50-44fa-4e24-850f-6cac63017b60
+f02daef2-6127-4ef8-b6e3-445f9d482351
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151021T165900Z
+20151023T144501Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -83,3 +77,128 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 467094d3-ba98-4092-874f-364bf3ea4916
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 136
+
+Monogram Trunk Dice Game Set
+ (港幣23,000元)
+Monogram Trunk Domino Game Set
+(港幣25,700元)
+Monogram Trunk Playing Card Set 
+(港幣22,000元)  
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 0
+
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151022T061952Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+467094d3-ba98-4092-874f-364bf3ea4916
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151023T142001Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+extranet\Anonymous
+----version----
+language: zh-HK
+version: 1
+revision: 6725066d-9d36-4fc2-a6e2-68cf83d9657e
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 136
+
+Monogram Trunk Dice Game Set
+ (港幣23,000元)
+Monogram Trunk Domino Game Set
+(港幣25,700元)
+Monogram Trunk Playing Card Set 
+(港幣22,000元)  
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151023T142001Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6725066d-9d36-4fc2-a6e2-68cf83d9657e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151023T142001Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+extranet\Anonymous

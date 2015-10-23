@@ -26,24 +26,21 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: ba3773b0-620b-423b-be65-af8c4c172308
+revision: d436e2e3-8317-4c3d-bedb-3c23f80b43cc
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 17
+content-length: 67
 
-THE SWANK (Men's)
+ANDREA INCONTRI x THE SWANK  60th Anniversary Backpack  (HK$14,990)
 ----field----
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 71
+content-length: 0
 
-ANDREA INCONTRI x THE SWANK 
-60th Anniversary Backpack
- (HK$14,990)
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -65,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ba3773b0-620b-423b-be65-af8c4c172308
+d436e2e3-8317-4c3d-bedb-3c23f80b43cc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151021T165440Z
+20151023T144303Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -80,3 +77,122 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: ce942846-7ea7-46bd-ae93-5915b399a6a0
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 69
+
+ANDREA INCONTRI x THE SWANK 
+60th Anniversary Backpack 
+(港幣14,990元)
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 0
+
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151022T060723Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ce942846-7ea7-46bd-ae93-5915b399a6a0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151023T142016Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+extranet\Anonymous
+----version----
+language: zh-HK
+version: 1
+revision: f131f05b-bc5e-45dc-9f40-b2db6f1dd9e8
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 69
+
+ANDREA INCONTRI x THE SWANK 
+60th Anniversary Backpack 
+(港幣14,990元)
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151023T142015Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f131f05b-bc5e-45dc-9f40-b2db6f1dd9e8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151023T142015Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+extranet\Anonymous

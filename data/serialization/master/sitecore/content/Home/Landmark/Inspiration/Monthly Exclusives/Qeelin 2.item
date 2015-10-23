@@ -26,22 +26,21 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 7fcca336-244d-46aa-85e5-2a4a98106ccd
+revision: 0a592cb0-e5e8-47ff-921b-2ea5b9f63f6e
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 6
+content-length: 89
 
-Qeelin
+PRETTY Bo Bo 18K White Gold Pendant with pave pink sapphires and diamond bag (HK$129,800)
 ----field----
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 91
+content-length: 0
 
-PRETTY Bo Bo 18K White Gold Pendant with pave pink sapphires and diamond bag (HK$129,800)
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -63,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7fcca336-244d-46aa-85e5-2a4a98106ccd
+0a592cb0-e5e8-47ff-921b-2ea5b9f63f6e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151021T162218Z
+20151023T143314Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -78,3 +77,122 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: b1307fba-49ea-4963-9d93-147b9b5fb4c5
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 39
+
+Bo Bo系列18K 白金吊墜
+鑲鑽石及粉紅寶石
+(港幣129,800元)
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 0
+
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151022T013758Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b1307fba-49ea-4963-9d93-147b9b5fb4c5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151023T142008Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+extranet\Anonymous
+----version----
+language: zh-HK
+version: 1
+revision: 63ed43b5-0435-47b3-b903-0a0dda1fa0d5
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 39
+
+Bo Bo系列18K 白金吊墜
+鑲鑽石及粉紅寶石
+(港幣129,800元)
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151023T142007Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+63ed43b5-0435-47b3-b903-0a0dda1fa0d5
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151023T142007Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+extranet\Anonymous

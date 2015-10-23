@@ -26,24 +26,21 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: e0b75d58-dd68-435b-8f7f-d98009b599e4
+revision: 41c77b17-83a3-4dbc-9f1c-6014d96c7646
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 11
+content-length: 92
 
-i.d. Stores
+DKNY Lenox Urban Essent Travel Mug (HK$300 each) JIA Nest Chopsticks and Spoon Set  (HK$330)
 ----field----
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 96
+content-length: 0
 
-DKNY Lenox Urban Essent Travel Mug (HK$300 each)
-JIA Nest Chopsticks and Spoon Set 
-(HK$330)
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -65,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e0b75d58-dd68-435b-8f7f-d98009b599e4
+41c77b17-83a3-4dbc-9f1c-6014d96c7646
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151021T165745Z
+20151023T144355Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -80,3 +77,124 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 9ef2a1dc-37a5-4ba3-acd6-98e540cae8da
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 49
+
+DKNY Lenox 旅行杯
+ (每款港幣300元)
+JIA好食成雙筷匙組
+(港幣330元)
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 0
+
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151022T061810Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9ef2a1dc-37a5-4ba3-acd6-98e540cae8da
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151023T141956Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+extranet\Anonymous
+----version----
+language: zh-HK
+version: 1
+revision: aabdfafb-1385-40a2-9fb7-5798dbaddcb0
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 49
+
+DKNY Lenox 旅行杯
+ (每款港幣300元)
+JIA好食成雙筷匙組
+(港幣330元)
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151023T141956Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+aabdfafb-1385-40a2-9fb7-5798dbaddcb0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151023T141956Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+extranet\Anonymous

@@ -26,33 +26,22 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: bdd129b1-2ecb-4602-bbb5-7d26ee93d269
+revision: 2131931d-50c7-4d4d-b1a8-0a28f877b11b
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 7
+content-length: 247
 
-Cartier
+(Left) Onyx and Agate C de Cartier Bag  in Taurillon leather  (Special Edition Exclusive for Hong Kong, Korea, Singapore)  (HK$16,800) (Right) Cartier Jeanne Toussaint Bag  in Blue Ostrich and Calfskin    Limited edition out of 100 pcs (HK$56,000)
 ----field----
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 248
+content-length: 0
 
-(Left) Onyx and Agate C de Cartier Bag 
-in Taurillon leather 
-(Special Edition Exclusive for Hong Kong, Korea, Singapore) 
-(Left) Onyx and Agate C de Cartier Bag in Taurillon leather (Special Edition Exclusive for Hong Kong, Korea, Singapore) 
 
-----field----
-field: {F51B5F38-BDB7-4A90-93C8-12697B82CDBA}
-name: Product Price
-key: product price
-content-length: 9
-
-HK$16,800
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -73,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bdd129b1-2ecb-4602-bbb5-7d26ee93d269
+2131931d-50c7-4d4d-b1a8-0a28f877b11b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151021T160006Z
+20151023T143030Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -88,3 +77,126 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 0ee12423-19cd-4422-950d-20ca3a263bb9
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 107
+
+ (左) C de Cartier 縞瑪瑙色手提袋
+香港、南韓、新加坡限定發售
+(港幣16,800元)
+(右) 卡地亞 Jeanne Toussaint 藍色手提袋
+全球限量100個 (港幣56,000元)
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 0
+
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151022T004625Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+0ee12423-19cd-4422-950d-20ca3a263bb9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151023T141945Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+extranet\Anonymous
+----version----
+language: zh-HK
+version: 1
+revision: a41c31d4-fa36-4c25-9d0a-40e2ec362503
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 107
+
+ (左) C de Cartier 縞瑪瑙色手提袋
+香港、南韓、新加坡限定發售
+(港幣16,800元)
+(右) 卡地亞 Jeanne Toussaint 藍色手提袋
+全球限量100個 (港幣56,000元)
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151023T141945Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a41c31d4-fa36-4c25-9d0a-40e2ec362503
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151023T141945Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+extranet\Anonymous

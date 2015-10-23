@@ -26,30 +26,21 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: a43ed1cc-61c2-4f71-8cd3-6e604a9d214e
+revision: e0f5c143-c6b7-478f-886f-ef121278a502
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 20
+content-length: 286
 
-Tayma Fine Jewellery
+(Top Right) Opal, Paraiba Tourmaline Ring  with diamonds in 18K yellow gold  (HK$159,000) (Left) Opal, Paraiba Tourmaline Flower Pendant  with diamonds in 18K yellow gold  (HK$398,000) (Bottom Right) Opal, Paraiba Tourmaline Flower Pendant  with diamonds in 18K yellow gold (HK$259,800)
 ----field----
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 296
+content-length: 0
 
-(Top Right) Opal, Paraiba Tourmaline Ring 
-with diamonds in 18K yellow gold 
-(HK$159,000)
-(Left) Opal, Paraiba Tourmaline Flower Pendant 
-with diamonds in 18K yellow gold 
-(HK$398,000)
-(Bottom Right) Opal, Paraiba Tourmaline Flower Pendant 
-with diamonds in 18K yellow gold
-(HK$259,800)
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -71,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a43ed1cc-61c2-4f71-8cd3-6e604a9d214e
+e0f5c143-c6b7-478f-886f-ef121278a502
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151021T162543Z
+20151023T143354Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -86,3 +77,132 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 4d1c455c-8ace-4c47-a1e5-bfe24346b698
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 122
+
+(右上) 奧寶，帕拉依巴碧璽及鑽石18K金戒指
+(港幣159,000元)
+(左) 奧寶，帕拉依巴碧璽及鑽石
+18K金花形垂飾
+(港幣398,000元)
+(右下) 奧寶，帕拉依巴碧璽及鑽石
+18K金花形垂飾
+(港幣259,800元)
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 0
+
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151022T014458Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4d1c455c-8ace-4c47-a1e5-bfe24346b698
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151023T142012Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+extranet\Anonymous
+----version----
+language: zh-HK
+version: 1
+revision: a3c133f5-f3e7-4b96-b0d8-2e06ce1a809d
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 122
+
+(右上) 奧寶，帕拉依巴碧璽及鑽石18K金戒指
+(港幣159,000元)
+(左) 奧寶，帕拉依巴碧璽及鑽石
+18K金花形垂飾
+(港幣398,000元)
+(右下) 奧寶，帕拉依巴碧璽及鑽石
+18K金花形垂飾
+(港幣259,800元)
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151023T142012Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+extranet\Anonymous
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a3c133f5-f3e7-4b96-b0d8-2e06ce1a809d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151023T142012Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+extranet\Anonymous

@@ -173,6 +173,9 @@
     <Compile Include="Helper\SearchHelper.cs" />
     <Compile Include="Helper\ShoppingHelper.cs" />
     <Compile Include="Helper\SitecoreFieldHelper.cs" />
+    <Compile Include="Internal Handlers\CopyContent.ashx.cs">
+      <DependentUpon>CopyContent.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Models\ContactUsFormModel.cs" />
     <Compile Include="Models\EmailSignup.cs">
       <DependentUpon>Landmark.tt</DependentUpon>
@@ -641,6 +644,7 @@
       <DependentUpon>Landmark.edmx</DependentUpon>
       <LastGenOutput>Landmark.cs</LastGenOutput>
     </Content>
+    <Content Include="Internal Handlers\CopyContent.ashx" />
     <None Include="Properties\PublishProfiles\DEV.pubxml" />
     <None Include="Properties\PublishProfiles\landmark.pubxml" />
     <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
