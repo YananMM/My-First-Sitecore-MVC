@@ -7,12 +7,10 @@
     var currentItem = Sitecore.Context.Item;
     var interestsFolder = currentItem.Children.SingleOrDefault(p => p.DisplayName == "Interests");
     var countryFolder = currentItem.Children.SingleOrDefault(p => p.DisplayName == "Countries");
-    var channelFolder = currentItem.Children.SingleOrDefault(p => p.DisplayName == "Channels");
     var titleFolder = currentItem.Children.SingleOrDefault(p => p.DisplayName == "Title Selects");
     var districtFolder = currentItem.Children.SingleOrDefault(p => p.DisplayName == "Districts");
     var interests = interestsFolder.Children.ToList();
     var countries = countryFolder.Children.ToList();
-    var channels = channelFolder.Children.ToList();
     var titleSelects = titleFolder.Children.ToList();
     var districts = districtFolder.Children.ToList();
     List<Item> list1 = new List<Item>();
@@ -92,19 +90,12 @@
                                             <!-- User's selection will be stored here -->
                                             <input type="hidden" name="channel" value="0">
                                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                                <span class="current">@channels.FirstOrDefault().Fields["Value"]</span>
+                                                <span class="current">@Html.Sitecore().Field("Glossary Value",SitecoreItems.EmailOnlyItem)</span>
                                                 <span class="caret"></span>
                                             </button>
                                             <ul class="dropdown-menu">
-                                                @if (channels.Count != 0)
-                                                {
-                                                    int i = 0;
-                                                    foreach (var item in channels)
-                                                    {
-                                                        <li><a href="javascript:;" data-value="@i">@item.Fields["Value"]</a></li>
-                                                        i++;
-                                                    }
-                                                }
+                                                <li><a href="javascript:;" data-value="@SitecoreItems.EmailOnlyItem.ID.ToShortID()">@Html.Sitecore().Field("Glossary Value", SitecoreItems.EmailOnlyItem)</a></li>
+                                                <li><a href="javascript:;" data-value="@SitecoreItems.EmailPostalAddressItem.ID.ToShortID()">@Html.Sitecore().Field("Glossary Value",SitecoreItems.EmailPostalAddressItem)</a></li>
                                             </ul>
                                         </div>
                                     </div>

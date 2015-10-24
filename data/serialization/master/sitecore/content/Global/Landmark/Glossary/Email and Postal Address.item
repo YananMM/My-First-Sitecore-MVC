@@ -1,54 +1,47 @@
 ----item----
 version: 1
-id: {1B497595-DC89-46C4-8A88-385D93472892}
+id: {45E8443F-D90C-42BB-B34C-F4A6BEF2D17E}
 database: master
-path: /sitecore/content/Home/Landmark/Email Signup/Channels/Email only
-parent: {59EA1638-BDC4-4C87-9011-6CD479DAD86A}
-name: Email only
+path: /sitecore/content/Global/Landmark/Glossary/Email and Postal Address
+parent: {8B197E68-D618-4F66-9C07-BA8DD5DC096E}
+name: Email and Postal Address
 master: {00000000-0000-0000-0000-000000000000}
-template: {55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}
-templatekey: Text Object
+template: {7AD93F40-7320-4CD8-89A4-D4E4BB44ADF8}
+templatekey: Glossary Object
 
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 1
-
-0
 ----version----
 language: en
 version: 1
-revision: 80ead0ac-bc40-4ccc-8a6d-9fb56ade3968
+revision: 02a4a2b6-cf4a-4884-8cc7-21fe51f87cef
 
 ----field----
-field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
-name: Value
-key: value
-content-length: 10
+field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
+name: Glossary Value
+key: glossary value
+content-length: 24
 
-Email only
+Email and Postal Address
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150921T074620Z
+20151024T200851Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-80ead0ac-bc40-4ccc-8a6d-9fb56ade3968
+02a4a2b6-cf4a-4884-8cc7-21fe51f87cef
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151019T114237:635808517578929523Z
+20151024T200851Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -59,15 +52,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: b2b47b25-6f2a-4f93-9983-569074c499be
+revision: 0478184e-44fb-428d-bb33-8a961799700b
 
 ----field----
-field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
-name: Value
-key: value
-content-length: 7
+field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
+name: Glossary Value
+key: glossary value
+content-length: 10
 
-只通过电邮接收
+以电邮及邮寄地址接收
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -81,7 +74,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151019T114250Z
+20151024T201415Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -95,14 +88,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b2b47b25-6f2a-4f93-9983-569074c499be
+0478184e-44fb-428d-bb33-8a961799700b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151019T114339:635808518198801534Z
+20151024T201418Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -113,15 +106,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 96845cc7-05c0-4f55-bb65-00f29e823a13
+revision: 11d9af05-467f-4d5d-b5e1-a1f5663d491c
 
 ----field----
-field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
-name: Value
-key: value
-content-length: 7
+field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
+name: Glossary Value
+key: glossary value
+content-length: 10
 
-只透過電郵接收
+以電郵及郵寄地址接收
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -135,7 +128,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151019T114307Z
+20151024T201445Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -149,14 +142,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-96845cc7-05c0-4f55-bb65-00f29e823a13
+11d9af05-467f-4d5d-b5e1-a1f5663d491c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151019T114312:635808517923991266Z
+20151024T201448Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
