@@ -12,7 +12,7 @@ templatekey: T6 Page
 ----version----
 language: en
 version: 1
-revision: 615fcd22-d043-4cd0-9b4f-70f6f927d375
+revision: 78bb2ee3-a248-483b-be67-d505cfd0ba76
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -21,6 +21,14 @@ key: page title
 content-length: 14
 
 Page Not Found
+----field----
+field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
+name: Page Content
+key: page content
+content-length: 156
+
+<p>Sorry, your request is not available.</p>
+<p>We have the following suggestions as alternatives, or you may wish to search again with the above menu. </p>
 ----field----
 field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
 name: Is Shown In Navigation
@@ -41,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-615fcd22-d043-4cd0-9b4f-70f6f927d375
+78bb2ee3-a248-483b-be67-d505cfd0ba76
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150922T015005Z
+20151024T191017Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -59,7 +67,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 406edf62-fcfe-4216-af79-fe8bee151611
+revision: a67000df-23a0-4af8-b098-c99c5097922c
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -68,6 +76,14 @@ key: page title
 content-length: 4
 
 页面错误
+----field----
+field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
+name: Page Content
+key: page content
+content-length: 55
+
+<p>很抱歉，我们无法处理您的要求。</p>
+<p>您可参考以下意见作为选择，或经由上述选项重新搜索。</p>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -95,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-406edf62-fcfe-4216-af79-fe8bee151611
+a67000df-23a0-4af8-b098-c99c5097922c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150910T133411Z
+20151024T191055Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -113,7 +129,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: f467d5c6-94b7-4d95-b5e4-c38f66ab701c
+revision: 6bac813e-6e86-4639-a111-119d3829526e
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -122,6 +138,15 @@ key: page title
 content-length: 4
 
 頁面錯誤
+----field----
+field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
+name: Page Content
+key: page content
+content-length: 55
+
+<p>很抱歉，我們無法處理您的要求。</p>
+<p>您可參考以下意見作選擇，或經由以上選項重新搜索。</p>
+
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -149,14 +174,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f467d5c6-94b7-4d95-b5e4-c38f66ab701c
+6bac813e-6e86-4639-a111-119d3829526e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150910T133444Z
+20151024T191135Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
