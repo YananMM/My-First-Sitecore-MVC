@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {EB674B45-690B-4D13-9ACE-F0DC7FD8E009}
+database: master
+path: /sitecore/content/Home/Landmark/Now At Landmark/Christofle Combines French Flair with Japanese Wood carving Techniques/Slide Objects/Christofle
+parent: {5235B661-7EBC-4D93-BA16-9230DAA83313}
+name: Christofle
+master: {00000000-0000-0000-0000-000000000000}
+template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
+templatekey: Slide Object
+
+----field----
+field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{29B6662B-74CF-4F76-AC46-FA0D0EB85144}" />
+----version----
+language: en
+version: 1
+revision: abe614be-b610-4e1f-86fc-57eca8ceb3a1
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151020T022520Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+abe614be-b610-4e1f-86fc-57eca8ceb3a1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151020T022629Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -7928,7 +7928,7 @@ button.close {
 }
 .site-header nav.mega-menu .mega-menu-area ul li a:hover,
 .site-header nav.mega-menu .mega-menu-area2 ul li a:hover {
-  color: #666;
+  color: #ffffff;
   text-decoration: none;
 }
 .site-header nav.mega-menu .mega-menu-area ul li a:focus,
@@ -11467,7 +11467,7 @@ h4 a:active {
 }
 @media (min-width: 768px) {
   .gd-mainimage-single .carousel-inner .item > .carousel-caption {
-    width: 50%;
+    width: 33%;
   }
 }
 @media (min-width: 1000px) {
@@ -11520,7 +11520,7 @@ h4 a:active {
     position: absolute;
     right: 0;
     top: 0;
-    width: 50%;
+    width: 33%;
   }
 }
 @media (min-width: 1000px) {
@@ -13284,7 +13284,10 @@ dl.gd-content-details-tags dd a:active {
 }
 .t22 .art-gallery .gd-artlist {
   text-align: left;
-  margin: 30px 0 50px;
+  margin: 30px 0 5px;
+}
+.t22 .art-gallery .gd-artlist > .row {
+  margin-bottom: 25px;
 }
 .t22 .art-gallery .gd-artlist .row {
   margin-left: -5px;
@@ -13545,6 +13548,9 @@ dl.gd-content-details-tags dd a:active {
 .t34 .gd-offers p {
   color: #222222;
 }
+.t34 .gd-carousel-info .carousel-inner .carousel-caption .carousel-caption-inner .gd-carousel-detail p {
+  height: auto;
+}
 @media (min-width: 768px) {
   .t34 .gd-offers {
     padding: 0;
@@ -13617,7 +13623,7 @@ dl.gd-content-details-tags dd a:active {
   padding-top: 10px;
 }
 .t29 .gd-artplace .gd-pagetitle > a {
-  display: inline-block;
+  display: block;
   margin-top: 30px;
 }
 .t29 .gd-artplace .gd-pagetitle > a > img {
@@ -15557,7 +15563,7 @@ dl.gd-content-details-tags dd a:active {
   color: #999999;
 }
 .gray-text2 a:hover {
-  color: #666;
+  color: #ffffff;
   text-decoration: none;
 }
 .gray-text2 a:focus,
@@ -16103,3 +16109,4 @@ input[type="checkbox"] {
   font-size: 12px;
   font-style: normal;
 }
+/*# sourceMappingURL=style.css.map */
