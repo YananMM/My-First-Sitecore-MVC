@@ -1,0 +1,133 @@
+----item----
+version: 1
+id: {3E29F4A9-C3E3-413A-A76E-7AA787128F08}
+database: master
+path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/Golden Sweep 2011
+parent: {5C03DD0D-4881-4A9B-A58D-5FFA101B3533}
+name: Golden Sweep 2011
+master: {00000000-0000-0000-0000-000000000000}
+template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
+templatekey: T29 Page
+
+----field----
+field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
+name: Art Image
+key: art image
+content-length: 58
+
+<image mediaid="{77F9BE45-87E1-4F7D-8476-19DA847DD512}" />
+----version----
+language: en
+version: 1
+revision: fa165e44-c4e7-4fe7-b137-6dd421914ba7
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 18
+
+Golden Sweep, 2011
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 18
+
+Golden Sweep, 2011
+----field----
+field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
+name: Artist
+key: artist
+content-length: 38
+
+{A71F51B3-1962-416E-951A-5B4F5BD1514B}
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{8A749ED1-62D7-45D0-A6B7-491B58BF9339}" src="~/media/8a749ed162d745d0a6b7491b58bf9339.ashx" />
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151026T091234Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fa165e44-c4e7-4fe7-b137-6dd421914ba7
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151026T091508:635814477080386870Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 964ca061-ec69-48b1-b634-b0d8722ff522
+
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 18
+
+Golden Sweep, 2011
+----field----
+field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
+name: Artist
+key: artist
+content-length: 38
+
+{A71F51B3-1962-416E-951A-5B4F5BD1514B}
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{EAB7F8EC-5A2E-4152-8855-385E07CD3440}" src="~/media/eab7f8ec5a2e41528855385e07cd3440.ashx" />
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151026T091744Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+964ca061-ec69-48b1-b634-b0d8722ff522
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151026T092352:635814482320506588Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

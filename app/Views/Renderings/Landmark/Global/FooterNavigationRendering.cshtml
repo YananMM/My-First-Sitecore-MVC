@@ -7,6 +7,6 @@
 <ul>
     @foreach (var item in footerList)
     {
-        <li>@Html.Sitecore().Field("Link URL", item, new { text = item["Link Text"] })</li>
+        <li>@Html.Sitecore().Field("Link URL", item, new { text = item.Fields["Link Text"] })</li>
     }
 </ul>

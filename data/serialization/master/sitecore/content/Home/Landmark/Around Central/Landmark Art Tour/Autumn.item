@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {17019BE1-E550-4295-9C41-2919A948E14C}
+id: {7F99435F-1D05-4DA8-96DA-446EE7C2988E}
 database: master
-path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/MELODY OF CLOUDS
+path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/Autumn
 parent: {5C03DD0D-4881-4A9B-A58D-5FFA101B3533}
-name: MELODY OF CLOUDS
+name: Autumn
 master: {00000000-0000-0000-0000-000000000000}
 template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
 templatekey: T29 Page
@@ -15,75 +15,61 @@ name: Art Image
 key: art image
 content-length: 58
 
-<image mediaid="{B3137F08-0C2F-40BE-A5DB-5AA3804AB36E}" />
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 3
-
-500
+<image mediaid="{EE8F33D1-3A53-4275-AAF4-6A6969DD1822}" />
 ----version----
 language: en
 version: 1
-revision: 7baed8cd-62e2-414e-a884-a675f1981962
+revision: 825168e4-f2e7-4352-9314-250a07d0480b
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 16
+content-length: 12
 
-MELODY OF CLOUDS
+Autumn, 2000
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 21
+content-length: 12
 
-MELODY OF CLOUDS,2013
+Autumn, 2000
 ----field----
 field: {04670F13-3F17-47AC-B6AA-858F246682E0}
 name: Created Time
 key: created time
-content-length: 4
+content-length: 0
 
-1996
+
 ----field----
 field: {25ECD930-4134-4B41-A387-D063717B49B9}
 name: Art Size
 key: art size
-content-length: 10
+content-length: 0
 
-160X200 CM
+
 ----field----
 field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
 name: Artist
 key: artist
 content-length: 38
 
-{BE7B77B5-6010-472D-AA52-764C4E716EA0}
+{A71F51B3-1962-416E-951A-5B4F5BD1514B}
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
 key: commentary
 content-length: 109
 
-<file mediaid="{70E73511-A14A-4BA7-A347-5D980678306A}" src="~/media/70e73511a14a4ba7a3475d980678306a.ashx" />
+<file mediaid="{F76C030C-B7D8-4F07-855D-545BBF5BF4BF}" src="~/media/f76c030cb7d84f07855d545bbf5bf4bf.ashx" />
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
 key: art key
-content-length: 13
+content-length: 0
 
-OIL ON CANVAS
-----field----
-field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
-name: Art Description
-key: art description
-content-length: 80
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit porro, nemo modi.
 ----field----
 field: {22B6E709-1F38-4AF9-8D6C-7E3443E4F3ED}
 name: Floor and Building
@@ -92,33 +78,26 @@ content-length: 38
 
 {79EBEDCD-CED4-4C05-993C-D8B6F30BE2E0}
 ----field----
-field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
-name: Light Box Text
-key: light box text
-content-length: 15
-
-You are viewing
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150810T002837Z
+20150812T035120Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-7baed8cd-62e2-414e-a884-a675f1981962
+825168e4-f2e7-4352-9314-250a07d0480b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T064554:635814387545145747Z
+20151026T090152:635814469128192030Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -129,43 +108,57 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 879d6f7c-00e6-4f09-a0a5-e3248447a0f7
+revision: 880be5b2-eb0b-44dc-97da-c86f171723cd
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 12
+
+Autumn, 2000
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 21
+content-length: 12
 
-MELODY OF CLOUDS,2013
+Autumn, 2000
+----field----
+field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
+name: Artist
+key: artist
+content-length: 38
+
+{A71F51B3-1962-416E-951A-5B4F5BD1514B}
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
 key: commentary
 content-length: 109
 
-<file mediaid="{2110C18D-623C-47F7-A2ED-01DE4C1D2CA2}" src="~/media/2110c18d623c47f7a2ed01de4c1d2ca2.ashx" />
+<file mediaid="{AD89CC0F-5278-4A18-B9E5-FFF45055D6B5}" src="~/media/ad89cc0f52784a18b9e5fff45055d6b5.ashx" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20151026T064437Z
+20151026T090135Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-879d6f7c-00e6-4f09-a0a5-e3248447a0f7
+880be5b2-eb0b-44dc-97da-c86f171723cd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T064549:635814387498543082Z
+20151026T090221:635814469414218390Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -176,43 +169,50 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: a0057096-94ca-48a8-8081-9ee59683aeee
+revision: ac27a980-c452-4db6-a620-2b653d0a1a13
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 12
+
+Autumn, 2000
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 21
+content-length: 12
 
-MELODY OF CLOUDS,2013
+Autumn, 2000
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
 key: commentary
 content-length: 109
 
-<file mediaid="{58B13F57-E404-4EE5-A5BC-7C62BFA6FF99}" src="~/media/58b13f57e4044ee5a5bc7c62bfa6ff99.ashx" />
+<file mediaid="{7D8084E5-0D0A-48ED-BEAD-942CC32D775D}" src="~/media/7d8084e50d0a48edbead942cc32d775d.ashx" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20151026T064307Z
+20151026T090228Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-a0057096-94ca-48a8-8081-9ee59683aeee
+ac27a980-c452-4db6-a620-2b653d0a1a13
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T064626:635814387863853976Z
+20151026T090250:635814469708845242Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

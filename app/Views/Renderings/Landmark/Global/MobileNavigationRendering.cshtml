@@ -11,7 +11,7 @@
     @foreach (Item item in LandmarkHelper.GetChildrenPageInNavigation(SitecoreItems.LandmarkHomeItem))
     {
 
-        <li><a href="@LandmarkHelper.GetItemUrl(item)">@item["Page Title"].ToUpper()<span class="sprite-icon-down pull-right"></span></a>
+        <li><a href="@LandmarkHelper.GetItemUrl(item)">@item.Fields["Page Title"].Value.ToUpper()<span class="sprite-icon-down pull-right"></span></a>
             @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count>0)
             {
                 if (item.ID.ToString().Equals(ItemGuids.ShoppingItem))
@@ -56,7 +56,7 @@
                      <ul class="sub-menu">
                         @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
                         {
-                            <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
+                            <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(childItem)">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
                         }
                     </ul>
                  }

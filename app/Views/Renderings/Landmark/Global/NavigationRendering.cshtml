@@ -14,7 +14,7 @@
             {
                 <li @if (j == 3) {
                     <text> class="pull-right" </text>  }>
-                    <a href="@LandmarkHelper.GetItemUrl(item)">@item["Page Title"].ToUpper()</a>
+                    <a href="@LandmarkHelper.GetItemUrl(item)">@item.Fields["Page Title"].Value.ToUpper()</a>
                     @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count > 0)
             {
             <nav class="mega-menu">
@@ -26,13 +26,13 @@
                                 <div class=" mega-menu-area">
                                     <div class="row">
                                         <div class="col-lg-9 col-md-9 col-sm-9">
-                                            <h3>@item["Page Title"].ToUpper()</h3>
+                                            <h3>@item.Fields["Page Title"].Value.ToUpper()</h3>
                                             <ul class=" mega-category">
                                                 @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
                                                     {
                                                         if (childItem.TemplateID.ToString().Equals(ItemGuids.T11PageTemplate))
                                                         {
-                                                    <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
+                                                    <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
                                                         }
                                                     }
                                             </ul>
@@ -78,7 +78,7 @@
                                 <ul>
                                     @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
                                         {
-                                        <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
+                                        <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
                                         }
                                 </ul>
                             </div>
@@ -130,7 +130,7 @@
             foreach (Item item in LandmarkHelper.GetChildrenPageInNavigation(SitecoreItems.LandmarkHomeItem).Skip(3).Take(3))
             {
                 <li @if (i == 3) { <text> class="pull-right" </text> }>
-                    <a href="@LandmarkHelper.GetItemUrl(item)">@item["Page Title"].ToUpper()</a>
+                    <a href="@LandmarkHelper.GetItemUrl(item)">@item.Fields["Page Title"].Value.ToUpper()</a>
                     @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count > 0)
                     {
                         <nav class="mega-menu">
@@ -142,7 +142,7 @@
                                             <ul class=" mega-category">
                                                 @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
                                                 {
-                                                    <li><a href="@LinkManager.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
+                                                    <li><a href="@LinkManager.GetItemUrl(childItem)">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
                                                 }
                                             </ul>
                                         </div>
@@ -175,7 +175,7 @@
 
                                                 @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
                                                 {
-                                                    <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem["Page Title"].ToUpper()</a></li>
+                                                    <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
                                                 }
                                             </ul>
                                         </div>
