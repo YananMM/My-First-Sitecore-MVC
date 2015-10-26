@@ -1760,15 +1760,25 @@ $(document).ready(function() {
   /**********************************************************************************************************
    * Back To Top Button
    **********************************************************************************************************/
+  var gdBackTopPosX = 20;
+
+  $(window).on('resize', function() {
+    if ($(window).width() > 1920) {
+      gdBackTopPosX = ($(window).width() - 1920) / 2 + 20;
+    } else {
+      gdBackTopPosX = 20;
+    }
+  });
+  $(window).trigger('resize');
+
   $(window).on('scroll', function() {
-
     if ($('body').height() > $(window).height() && $(window).scrollTop() / $(window).height() > 0.25) {
-
       if (!isIE8() && $(window).scrollTop() + $(window).height() > $('body').height() - $('.site-footer').height()) {
-        $backToTopBtn.addClass('bottom');
+        $backToTopBtn.removeAttr('style').css({'display': 'block'}).addClass('bottom');
       } else {
-        $backToTopBtn.removeClass('bottom');
+        $backToTopBtn.removeClass('bottom').css({'right': gdBackTopPosX});
       }
+
       if (!$backToTopBtn.is(':visible') && !$backToTopBtn.data('animating')) {
         $backToTopBtn.data('animating', true).fadeIn(500, function() {
           $(this).data('animating', false);

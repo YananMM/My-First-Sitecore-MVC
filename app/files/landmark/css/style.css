@@ -7169,6 +7169,9 @@ button.close {
     color: #c1a875;
     text-decoration: none;
   }
+  .site-header nav a.active {
+    color: #d4a962;
+  }
   .site-header nav .menu-left {
     margin: 131px 0 0 0;
     float: left;
@@ -7759,6 +7762,9 @@ button.close {
   padding: 0;
   /* submenu*/
   /* sub-submenu*/
+}
+.mobile-menu > .scroll-content > ul > li.current > a {
+  color: #c1a875;
 }
 .mobile-menu > .scroll-content > ul > li span {
   margin-right: 20px;
@@ -15789,8 +15795,8 @@ dl.gd-content-details-tags dd a:active {
   .back-top .back-to-top {
     position: fixed;
     font-weight: bold;
-    right: 2em;
-    bottom: 2em;
+    right: 20px;
+    bottom: 20px;
     background-color: #444444;
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid #444444;
@@ -15806,7 +15812,7 @@ dl.gd-content-details-tags dd a:active {
   }
   .back-top .back-to-top.bottom {
     position: absolute;
-    bottom: 2em;
+    bottom: 20px;
   }
   .back-top .back-to-top.active {
     opacity: 1;
@@ -16109,4 +16115,3 @@ input[type="checkbox"] {
   font-size: 12px;
   font-style: normal;
 }
-/*# sourceMappingURL=style.css.map */

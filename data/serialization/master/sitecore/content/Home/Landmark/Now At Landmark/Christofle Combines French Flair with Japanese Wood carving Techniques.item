@@ -17,12 +17,12 @@ content-length: 58
 
 <image mediaid="{29B6662B-74CF-4F76-AC46-FA0D0EB85144}" />
 ----field----
-field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
-name: Article Thumb Image
-key: article thumb image
-content-length: 58
+field: {B966F61E-9F08-4674-AC01-EE1064020145}
+name: Article Date
+key: article date
+content-length: 16
 
-<image mediaid="{29B6662B-74CF-4F76-AC46-FA0D0EB85144}" />
+20150831T160000Z
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -40,7 +40,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 2a07d439-0aa9-4653-8602-2ec0932271fd
+revision: 6ec84808-7f4e-47c6-b7a9-52dc3ac4e10b
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
@@ -62,6 +62,17 @@ content-length: 70
 
 Christofle Combines French Flair with Japanese Wood-carving Techniques
 ----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 152
+
+Christofle 
+Address: Shop 117, 1/F, LANDMARK PRINCE'S 
+Telephone: 2869 7311 
+Opening Hours: Mon to Sat 10am-7pm; Sun & Public Holidays 10:30am-7pm 
+
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -81,14 +92,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2a07d439-0aa9-4653-8602-2ec0932271fd
+6ec84808-7f4e-47c6-b7a9-52dc3ac4e10b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151020T021131Z
+20151026T134659Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -10,6 +10,20 @@ template: {4CDF5CD9-40F0-4F0B-A095-7773CE6CF582}
 templatekey: T4 Page
 
 ----field----
+field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
+name: Article Thumb Image
+key: article thumb image
+content-length: 58
+
+<image mediaid="{49F5CA6B-EDA5-4C5F-ADC8-D701F0B550CD}" />
+----field----
+field: {B966F61E-9F08-4674-AC01-EE1064020145}
+name: Article Date
+key: article date
+content-length: 16
+
+20150831T160000Z
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -26,19 +40,39 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 8f1ff15d-5034-43e5-b0b7-d85f725ca3f5
+revision: 8ab836f8-430d-4d0c-9421-4f88c591d14a
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
 key: article content
-content-length: 763
+content-length: 1250
 
 <p>Japan is famous for its cherry blossom and its cherries. The Morello cherry is one of the most popular varieties, and is dark-skinned and tart; it also is the inspiration behind an amazing dessert that is a balance of sweet, sour and texture. </p>
 
 <p>Chef Eddie of ZUMA has taken advantage of this wonderful seasonal fruit to create a yoghurt ice-cream and meringue that provides the perfect conclusion to a meal at this top spot in LANDMARK ATRIUM. </p>
 
 <p>Eddie uses organic Japanese soy milk to make his own homemade almond tofu, which he then pairs with the mouthwateringly smooth and silky ice-cream, crispy meringue and the sour Morello cherries. The dessert – which is bursting with taste – is being served exclusively at ZUMA during September. </p>
+<p>ZUMA Restaurant
+</p>
+<p>Address: Shop 501-503, 5/F, LANDMARK ATRIUM
+</p>
+<p>Telephone: 3657 6388
+</p>
+<p>Opening Hours:
+Lunch: Mon to Fri 12:00noon - 2:30pm;
+Dinner: Mon to Fri 6:00pm &ndash; 11:00pm; Sat &amp; Sun 6:30pm &ndash; 11:00pm </p>
+<p>ZUMA Lounge &amp; Bar
+</p>
+<p>Address: Shop 601-603, 6/F, LANDMARK ATRIUM </p>
+<p>
+Telephone: 3657 6388
+</p>
+<p>Opening Hours:
+Mon to Wed 12noon - 1:30am;
+Thur &amp; Fri 12noon &ndash; 2:00pm
+Sat &amp; Sun 5:00pm &ndash; 1:00am </p>
+<br>
 
 
 ----field----
@@ -68,14 +102,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8f1ff15d-5034-43e5-b0b7-d85f725ca3f5
+8ab836f8-430d-4d0c-9421-4f88c591d14a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151020T014424Z
+20151026T134502Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

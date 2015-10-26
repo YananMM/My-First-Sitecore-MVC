@@ -24,18 +24,6 @@ content-length: 58
 
 <image mediaid="{4DBC9670-3CD1-4A75-93FD-3DD19B87AA0F}" />
 ----field----
-field: {7C82EAD3-757C-4A78-A5A8-D108A51C835A}
-name: Portrait Only Image
-key: portrait only image
-content-length: 58
-
-<image mediaid="{F8D43AF6-8977-47D2-8361-E45222E334DA}" />
-----version----
-language: en
-version: 1
-revision: d4fc6ee0-7c45-4317-b2e9-a31f72732a18
-
-----field----
 field: {11D43F72-ECA1-4AAF-BAC0-2DE41F9BB4BD}
 name: Facebook Application App Key
 key: facebook application app key
@@ -71,19 +59,12 @@ content-length: 1
 
 7
 ----field----
-field: {87228212-11A4-40BB-8B1A-783034F383EA}
-name: Portrait Only Text
-key: portrait only text
-content-length: 75
+field: {7C82EAD3-757C-4A78-A5A8-D108A51C835A}
+name: Portrait Only Image
+key: portrait only image
+content-length: 58
 
-This site is best experienced in portrait mode. Please rotate your device. 
-----field----
-field: {79DEFB2A-A211-480C-B68F-E2814DE75F3E}
-name: Site
-key: site
-content-length: 14
-
-@MO_LANDMARKHK
+<image mediaid="{F8D43AF6-8977-47D2-8361-E45222E334DA}" />
 ----field----
 field: {D37C539D-7503-4329-8B5F-61AC0D0E0B6F}
 name: Adobe Header Loader File
@@ -105,6 +86,25 @@ key: csv folder
 content-length: 25
 
 D:\Sitecore\Landmark\CSV\
+----version----
+language: en
+version: 1
+revision: d4fc6ee0-7c45-4317-b2e9-a31f72732a18
+
+----field----
+field: {87228212-11A4-40BB-8B1A-783034F383EA}
+name: Portrait Only Text
+key: portrait only text
+content-length: 75
+
+This site is best experienced in portrait mode. Please rotate your device. 
+----field----
+field: {79DEFB2A-A211-480C-B68F-E2814DE75F3E}
+name: Site
+key: site
+content-length: 14
+
+@MO_LANDMARKHK
 ----field----
 field: {6FCBA4D7-B564-46B9-9340-72AF4FD96C9C}
 name: Footer Content

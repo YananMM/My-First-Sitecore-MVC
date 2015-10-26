@@ -10,6 +10,13 @@ template: {2EE73BEB-F8DA-4F35-BB46-C1B0B8AC3945}
 templatekey: T23 Page AB
 
 ----field----
+field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
+name: Article Type
+key: article type
+content-length: 38
+
+{274E7EC5-2922-4472-8DCE-448B68642884}
+----field----
 field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
 name: __Masters
 key: __masters
@@ -28,13 +35,6 @@ language: en
 version: 1
 revision: 16692623-6564-4174-b670-54eac372b0a6
 
-----field----
-field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
-name: Article Type
-key: article type
-content-length: 38
-
-{274E7EC5-2922-4472-8DCE-448B68642884}
 ----field----
 field: {C7837E33-73D8-4328-9350-8A9CFD1819F4}
 name: Related Story Label

@@ -33,7 +33,7 @@ content-length: 145
 ----version----
 language: en
 version: 1
-revision: 570490e8-302d-4f0c-827e-57af4bead7bd
+revision: 75318fcf-b09d-496b-9b9a-bb617f83aa02
 
 ----field----
 field: {D0CC41B3-3000-4ED5-870B-8C89E72C0DA0}
@@ -41,7 +41,7 @@ name: Ad Reference Item
 key: ad reference item
 content-length: 38
 
-{52D6EB05-D74E-45ED-851C-CA9A6B774D41}
+{3E551A3A-E38C-456F-B6D6-A3C8C77421BF}
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -49,6 +49,13 @@ key: page title
 content-length: 8
 
 Services
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -62,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-570490e8-302d-4f0c-827e-57af4bead7bd
+75318fcf-b09d-496b-9b9a-bb617f83aa02
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151015T113636:635805057965212767Z
+20151024T200324Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

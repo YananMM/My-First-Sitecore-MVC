@@ -15,11 +15,11 @@ name: Service Image
 key: service image
 content-length: 58
 
-<image mediaid="{E8A33307-5910-4353-8345-660F4BDAE841}" />
+<image mediaid="{72849CCC-20BD-464E-9131-21E2FAE66393}" />
 ----version----
 language: en
 version: 1
-revision: 6ed9b327-a7e9-4ab4-9084-a672958a9220
+revision: c5b90daa-012a-4b12-85f0-078579f4c5a6
 
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
@@ -46,23 +46,27 @@ VALET PARKING
 field: {DFF5288B-8FFB-47AE-B6F4-50BEEFA40931}
 name: Service Title
 key: service title
-content-length: 75
+content-length: 22
 
-Headline: tique in in purus. Morbi vestibulum sodales lorem ac ullamcorper.
+Valet Parking Services
 ----field----
 field: {2BB28A47-AC7C-4226-B782-7D49F761541E}
 name: Service Content
 key: service content
-content-length: 596
+content-length: 1072
 
-<p>Shopping and dining in LANDMARK is even more pleasurable with our valet parking service. Simply drive up to the Valet Parking entrance located on Queen's Road Central, next to The Landmark Mandarin Oriental, and our parking attendants will take care of the rest.
-</p>
-<p>The service is available daily from noon until midnight for a charge of HK$200 for the first two hours, and HK$50 per hour thereafter.
-</p>
-<p>Enjoy the ultimate in luxury and the ultimate in service in LANDMARK!
-</p>
-<p><a href="~/link.aspx?_id=4F4D0D9BFE4D4BFAA7BC2F0FE98DFAA1&amp;_z=z">Legal Privacy</a> apply.</p>
-<br>
+
+
+                                <p>Shopping and dining in LANDMARK is even more pleasurable with our valet parking service. Simply drive up to the Valet Parking entrance located on Queen's Road Central, next to The Landmark Mandarin Oriental, and our parking attendants will take care of the rest.</p>
+
+                                <p>The service is available daily from noon until midnight for a charge of HK$200 for the first two hours, and HK$50 per hour thereafter.</p>
+
+                                <p>For our valued customers, we are pleased to extend 2 hours of free valet parking with a total spend of HK$3000 or more on the same day at the shops and restaurants located inside LANDMARK ATRIUM, LANDMARK PRINCE'S, LANDMARK ALEXANDRA, and LANDMARK CHATER. Simply present your same-day receipts to the Concierge located on G/F, LANDMARK ATRIUM, for parking validation.</p>
+
+                                <p>Enjoy the ultimate in luxury and the ultimate in service in LANDMARK!</p>
+
+                                <p>Terms and conditions apply.</p>
+							
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -76,14 +80,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6ed9b327-a7e9-4ab4-9084-a672958a9220
+c5b90daa-012a-4b12-85f0-078579f4c5a6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T100358Z
+20151026T154440Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,7 +98,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 866a7639-e3ed-419e-8a91-1fca8fc5cb00
+revision: 987ead2a-8d04-4aea-8089-876da7470dac
 
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
@@ -110,6 +114,40 @@ key: meta description
 content-length: 39
 
 置地广塲提供代客泊车服务，为方便起见，只须驾车至代客泊车处，便有专人为您代劳。
+----field----
+field: {DFF5288B-8FFB-47AE-B6F4-50BEEFA40931}
+name: Service Title
+key: service title
+content-length: 4
+
+泊车服务
+----field----
+field: {2BB28A47-AC7C-4226-B782-7D49F761541E}
+name: Service Content
+key: service content
+content-length: 893
+
+
+
+                                <p>现在亲临<span class="font_meiryo">置</span>地广场购物和用膳，可以享用我们的泊车服务，轻松享受吃喝消费的乐趣！只须驾车至皇后大道中<span class="font_meiryo">置</span>地文华东方酒店旁的代客泊车处，便有专人为您代劳。</p>
+
+                                <br>
+
+                                <p>泊车服务每天由中午12时至午夜零时，首两小时收费为港币200元，其后每小时为港币50元。</p>
+
+                                <br>
+
+                                <p>此外，现凡于<span class="font_meiryo">置</span>地广场中庭、<span class="font_meiryo">置</span>地太子、<span class="font_meiryo">置</span>地历山和<span class="font_meiryo">置</span>地遮打的商店或食肆消费满港币3,000元或以上，并于<span class="font_meiryo">置</span>地广场中庭地下服务处出示当天消费帐单，即可享额外两小时免费泊车服务。</p>
+
+                                <br>
+
+                                <p>诚邀您尊享<span class="font_meiryo">置</span>地广场的奢华体验和极致服务！</p>
+
+                                <br>
+
+                                <p>须受有关条款及细则约束。</p>
+
+                                <br>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -137,14 +175,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-866a7639-e3ed-419e-8a91-1fca8fc5cb00
+987ead2a-8d04-4aea-8089-876da7470dac
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T152523Z
+20151026T154621Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -155,7 +193,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 5c381c87-5765-4493-94dc-776544503eb2
+revision: dc4209ed-b195-47f4-adb0-a7a9f5d03dd7
 
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
@@ -171,6 +209,41 @@ key: meta description
 content-length: 39
 
 置地廣塲提供代客泊車服務，為方便起見，只須駕車至代客泊車處，便有專人為您代勞。
+----field----
+field: {DFF5288B-8FFB-47AE-B6F4-50BEEFA40931}
+name: Service Title
+key: service title
+content-length: 4
+
+泊車服務
+----field----
+field: {2BB28A47-AC7C-4226-B782-7D49F761541E}
+name: Service Content
+key: service content
+content-length: 892
+
+
+
+                                <p>現在親臨<span class="font_meiryo">置</span>地廣塲購物和用膳，可以享用我們的泊車服務，輕鬆享受吃喝消費的樂趣！只須駕車至皇后大道中<span class="font_meiryo">置</span>地文華東方酒店旁的代客泊車處，便有專人為您代勞。</p>
+
+                                <br>
+
+                                <p>泊車服務每天由中午12時至午夜零時，首兩小時收費為港幣200元，其後每小時為港幣50元。</p>
+
+                                <br>
+
+                                <p>此外，現凡於<span class="font_meiryo">置</span>地廣塲中庭、<span class="font_meiryo">置</span>地太子、<span class="font_meiryo">置</span>地歷山和<span class="font_meiryo">置</span>地遮打的商店或食肆消費滿港幣3,000元或以上，並於<span class="font_meiryo">置</span>地廣塲中庭地下服務處出示即日收據，即可享額外兩小時免費泊車服務。</p>
+
+                                <br>
+
+                                <p>誠邀您尊享<span class="font_meiryo">置</span>地廣塲的奢華體驗和極致服務！</p>
+
+                                <br>
+
+                                <p>須受有關條款及細則約束。</p>
+
+                                <br>
+
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -198,14 +271,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5c381c87-5765-4493-94dc-776544503eb2
+dc4209ed-b195-47f4-adb0-a7a9f5d03dd7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T151046Z
+20151026T154605Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -2,10 +2,17 @@
 @using Landmark.Classes
 @using Landmark.Helper
 @using Sitecore.Data.Fields
+@using Sitecore.Data.Items
 @model RenderingModel
 @{
-    var openningHours = Sitecore.Context.Item.Fields["Openning Hours"];
-    var floor = ((ReferenceField)Sitecore.Context.Item.Fields["Event Floor"]).TargetItem;
+    Item shopItem = Sitecore.Context.Item;
+    MultilistField shopField = Sitecore.Context.Item.Fields["Brand"];
+    if (shopField != null && shopField.TargetIDs != null && shopField.TargetIDs.Length > 0)
+    {
+        shopItem = Sitecore.Context.Database.GetItem(shopField.TargetIDs.FirstOrDefault());
+    }
+    var openningHours = shopItem.Fields["Openning Hours"];
+    var floor = ((ReferenceField)shopItem.Fields["Floor"]).TargetItem;
     var building = floor.Parent;
 }
 <div class="col-sm-4">
@@ -22,11 +29,11 @@
                         </tr>
                         <tr>
                             <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.EnquiryItem)</th>
-                            <td>@Html.Sitecore().Field("Event Enquiry")</td>
+                            <td>@Html.Sitecore().Field("Contact")</td>
                         </tr>
                         <tr>
                             <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.WebsiteItem)</th>
-                            <td>@Html.Sitecore().Field("Event Website")</td>
+                            <td>@Html.Sitecore().Field("Official Website")</td>
                         </tr>
                         </tbody>
                     </table>

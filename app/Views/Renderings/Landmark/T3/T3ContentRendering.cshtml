@@ -9,6 +9,7 @@
     var helper = new NowAtLandmarkHelper();
     var latestItem = helper.GetLatestArticle();
     DateField date = ((DateField) latestItem.Fields["Article Date"]);
+    string src = LandmarkHelper.GetCallOutImage(latestItem);
 }
 <div class="container">
     <div class="gd-pagetitle">
@@ -18,7 +19,7 @@
     </div>
     <div class="gd-newsdetails">
         <div class="gd-nd-info-text">@Html.Sitecore().Field("Page Content")</div>
-        @Html.Sitecore().Field("Article Slider Image", latestItem)
+        <img data-src="@src"/>
     </div>
     <div class="gd-brief">
         <div class="gd-brief-heading">

@@ -10,6 +10,13 @@ template: {4CDF5CD9-40F0-4F0B-A095-7773CE6CF582}
 templatekey: T4 Page
 
 ----field----
+field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
+name: Article Thumb Image
+key: article thumb image
+content-length: 58
+
+<image mediaid="{AFA9FF5E-795F-4291-A811-DB2A4922B291}" />
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -26,7 +33,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: c1ada38c-684f-45ed-9cb6-7e449a215c87
+revision: 266c12ee-1393-4033-9ead-05edc1b7ed4b
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
@@ -49,6 +56,17 @@ content-length: 54
 
 Walking Down the Aisle in Style with Charlotte Olympia
 ----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 122
+
+Charlotte Olympia 
+Address: Shop 221, 2/F, LANDMARK ATRIUM 
+Telephone: 2142 9008 
+Opening Hours: 10:30am-7:30pm daily
+
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -68,14 +86,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c1ada38c-684f-45ed-9cb6-7e449a215c87
+266c12ee-1393-4033-9ead-05edc1b7ed4b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151019T150457Z
+20151026T134039Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

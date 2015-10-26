@@ -10,6 +10,13 @@ template: {A46D7A20-B29F-4C4F-8922-0B70555CD6BC}
 templatekey: T27 Page
 
 ----field----
+field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
+name: Article Type
+key: article type
+content-length: 38
+
+{B9138486-B144-4276-A0EA-098B0EB79541}
+----field----
 field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
 name: __Masters
 key: __masters
@@ -35,13 +42,6 @@ key: article headline
 content-length: 5
 
 $name
-----field----
-field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
-name: Article Type
-key: article type
-content-length: 38
-
-{B9138486-B144-4276-A0EA-098B0EB79541}
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

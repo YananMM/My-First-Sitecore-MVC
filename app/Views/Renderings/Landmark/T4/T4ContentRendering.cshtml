@@ -20,7 +20,10 @@
 
         <div class="gd-nd-slider-text">@Html.Sitecore().Field("Article Sub Headline")</div>
         <div class="row gd-nd-details-area">
-            @if (((ReferenceField)Sitecore.Context.Item.Fields["Article Type"]).TargetItem.ID.ToString() == ItemGuids.EventTypeArticle)
+            @{
+                MultilistField shopField = Sitecore.Context.Item.Fields["Brand"];
+            }
+            @if ((shopField != null && shopField.TargetIDs != null && shopField.TargetIDs.Length > 0) || !string.IsNullOrEmpty(Sitecore.Context.Item.Fields["Openning Hours"].Value))
             {
                 @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T4DetailsRendering)
             }

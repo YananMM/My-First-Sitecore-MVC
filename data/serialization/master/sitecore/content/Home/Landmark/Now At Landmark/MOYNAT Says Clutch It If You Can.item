@@ -26,7 +26,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 400bbb35-adb5-43c2-b36f-9d192c6bbe65
+revision: 710f96fe-230b-4298-90f8-0c74b81d7914
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
@@ -50,6 +50,24 @@ content-length: 35
 
 MOYNAT Says ‘Clutch It If You Can!’
 ----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 146
+
+MOYNAT
+Address: Shop G13, G/F, LANDMARK ATRIUM
+Telephone: 2596 0555
+Opening Hours: Mon to Sat 10:30am-7:30pm; Sun & Public holidays 11am-7pm 
+
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 0
+
+
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -69,14 +87,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-400bbb35-adb5-43c2-b36f-9d192c6bbe65
+710f96fe-230b-4298-90f8-0c74b81d7914
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151019T143707Z
+20151026T134013Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

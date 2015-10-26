@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Web;
 using Landmark.Classes;
 using Landmark.Models;
@@ -35,11 +36,7 @@ namespace Landmark.Helper
             int pagenumber;
             pagenumber = page != null ? Int32.Parse(page) : 1;
             results = GetMonthlyExclusives().Where(item => ((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
-            if (results.Count() > pagenumber * 8)
-            {
-                results = results.Skip((pagenumber - 1) * 8).Take(8).ToList();
-            }
-            return results;
+            return results.Skip((pagenumber - 1) * 8).Take(8).ToList();
         }
 
         public List<Item> GetNotDetailedExclusives(string page = null)
@@ -47,12 +44,26 @@ namespace Landmark.Helper
             List<Item> results = null;
             int pagenumber;
             pagenumber = page != null ? Int32.Parse(page) : 1;
+            List<Item> detailedItems = GetDetailedExclusives(page); 
             results = GetMonthlyExclusives().Where(item => !((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
-            if (results.Count() < pagenumber * 8)
+            if (detailedItems.Count() > pagenumber * 8)
             {
-                results = results.Take(Int32.Parse(page) * 8 - GetDetailedExclusives(page).Count()).ToList();
+                return null;
             }
-            return results;
+            else
+            {
+                int detailsPageNumber = detailedItems.Count()/8+1;
+                int lastPageDetailsNumber = detailedItems.Count%8;
+                if (detailsPageNumber <= pagenumber)
+                {
+                    return results.Skip((pagenumber-detailsPageNumber)*8).Take(8 - lastPageDetailsNumber).ToList();
+                }
+                else
+                {
+                    return results.Skip(8 - lastPageDetailsNumber + (pagenumber - detailsPageNumber) * 8).Take(8).ToList();
+                }
+                //return GetMonthlyExclusives().Skip((pagenumber - 1) * 8 - detailedItems.Count()).Take(8 - detailedItems.Count()).ToList();
+            }
         }
 
         public bool IfBrandsAlphabetValid(string s)

@@ -10,6 +10,13 @@ template: {2F6A4A9C-C7DC-439D-8310-3A2EF0617158}
 templatekey: T23 Page CD
 
 ----field----
+field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
+name: Article Type
+key: article type
+content-length: 38
+
+{274E7EC5-2922-4472-8DCE-448B68642884}
+----field----
 field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
 name: __Masters
 key: __masters
@@ -28,13 +35,6 @@ language: en
 version: 1
 revision: 5ff3873d-dd6e-40cb-a239-032ade881860
 
-----field----
-field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
-name: Article Type
-key: article type
-content-length: 38
-
-{274E7EC5-2922-4472-8DCE-448B68642884}
 ----field----
 field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
 name: __Final Renderings

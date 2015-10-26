@@ -1,13 +1,14 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Data
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Sitecore.Links
 @{
     InspirationHelper inspirationHelper = new InspirationHelper();
     var page = Request["page"] ?? "1";
-    List<Item> articleObjects = inspirationHelper.GetDetailedExclusives(page);
-    List<Item> articleDetailObjects = inspirationHelper.GetNotDetailedExclusives(page);
+    List<Item> articleDetailObjects = inspirationHelper.GetDetailedExclusives(page);
+    List<Item> articleObjects = inspirationHelper.GetNotDetailedExclusives(page);
     string[] alphabetsStrings = new[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
 }
 
@@ -86,8 +87,18 @@
 
             @foreach (Item detailedarticle in articleDetailObjects)
             {
-                var brand = ((MultilistField)detailedarticle.Fields["Brand"]).TargetIDs.FirstOrDefault();
-                <div class="gd-promo-box2 @inspirationHelper.GetAlphabet(brand) @inspirationHelper.GetTagsFilter(detailedarticle)">
+                MultilistField brandField = detailedarticle.Fields["Brand"];
+                ID brand= new ID();
+                string alphabet = string.Empty;
+                string brandTitle = string.Empty;
+                if (brandField != null && brandField.TargetIDs != null && brandField.TargetIDs.Length > 0)
+                {
+                    brand = brandField.TargetIDs.FirstOrDefault();
+                    alphabet = inspirationHelper.GetAlphabet(brand);
+                    brandTitle = Sitecore.Context.Database.GetItem(brand).Fields["Brand Title"].Value;
+                }
+                //var brand = ((MultilistField)detailedarticle.Fields["Brand"]).TargetIDs.FirstOrDefault();
+                <div class="gd-promo-box2 @alphabet @inspirationHelper.GetTagsFilter(detailedarticle)">
                     <meta property="og:description" content="@detailedarticle.Fields["Social Share Description"].Value" />
                     @{
                 string firstImageUrl = string.Empty;
@@ -108,9 +119,9 @@
 
                     <a href="@LinkManager.GetItemUrl(detailedarticle)"><img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", detailedarticle)"></a>
                     <div class="gd-promo-box-text">
-                        <h5>@Html.Sitecore().Field("Brand Title", Sitecore.Context.Database.GetItem(brand))</h5>
+                        <h5>@brandTitle</h5>
                         <a href="@LinkManager.GetItemUrl(detailedarticle)">
-                            <h4>@Html.Sitecore().Field("Article Headline", detailedarticle) (@Html.Sitecore().Field("Product Price", detailedarticle))</h4>
+                            <h4>@Html.Sitecore().Field("Article Headline", detailedarticle)</h4>
                         </a>
                         <a class="gd-button gd-button-white" href="@LinkManager.GetItemUrl(detailedarticle)">@Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverMoreItem)</a>
                         <div class="gd-promo-share">
@@ -130,11 +141,20 @@
 
             @foreach (Item article in articleObjects)
             {
-                var brand = ((MultilistField)article.Fields["Brand"]).TargetIDs.FirstOrDefault();
-                <div class="gd-promo-box @inspirationHelper.GetAlphabet(brand) @inspirationHelper.GetTagsFilter(article)">
+                MultilistField brandField = article.Fields["Brand"];
+                ID brand = new ID();
+                string alphabet = string.Empty;
+                string brandTitle = string.Empty;
+                if (brandField != null && brandField.TargetIDs != null && brandField.TargetIDs.Length > 0)
+                {
+                    brand = brandField.TargetIDs.FirstOrDefault();
+                    alphabet = inspirationHelper.GetAlphabet(brand);
+                    brandTitle = Sitecore.Context.Database.GetItem(brand).Fields["Brand Title"].Value;
+                }
+                <div class="gd-promo-box @alphabet @inspirationHelper.GetTagsFilter(article)">
                     <a href="@LinkManager.GetItemUrl(article)"><img data-src="@Html.Sitecore().ImageFieldSrc("Article Thumb Image", article)"></a>
-                    <h5>@Html.Sitecore().Field("Brand Title", Sitecore.Context.Database.GetItem(brand))</h5>
-                    <a href="@LinkManager.GetItemUrl(article)"><h4>@Html.Sitecore().Field("Article Headline", article) (@Html.Sitecore().Field("Product Price", article))</h4></a>
+                    <h5>@brandTitle</h5>
+                    <a href="@LinkManager.GetItemUrl(article)"><h4>@Html.Sitecore().Field("Article Headline", article)</h4></a>
 </div>
             }
         </div>
