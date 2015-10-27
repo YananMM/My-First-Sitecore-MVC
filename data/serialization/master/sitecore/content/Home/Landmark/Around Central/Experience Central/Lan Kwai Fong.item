@@ -13,13 +13,27 @@ templatekey: T25 Page
 field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
 name: Cover Image
 key: cover image
-content-length: 0
+content-length: 58
 
+<image mediaid="{98362243-D400-48E5-BA09-722D4A7B701A}" />
+----field----
+field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
+name: Landing thumb Image
+key: landing thumb image
+content-length: 58
 
+<image mediaid="{060733E5-00DE-4968-B722-17DBBD4060B8}" />
+----field----
+field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
+name: Experience Type
+key: experience type
+content-length: 38
+
+{B0EB0EDF-4E95-4BE6-9BEE-4DC2D2DA7E86}
 ----version----
 language: en
 version: 1
-revision: 0f8bf00f-a902-436a-8b23-dadf8e1bf38b
+revision: 004f0c7d-d420-47b3-9acf-59baf277e547
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -29,19 +43,33 @@ content-length: 13
 
 Lan Kwai Fong
 ----field----
+field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
+name: Cover Website
+key: cover website
+content-length: 29
+
+http://www.lankwaifong.com/en
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 33
+
+Lan Kwai Fong, Central, Hong Kong
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 88
+
+<strong>Hong Kong&rsquo;s iconic night district offers a world of entertainment</strong>
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 13
 
 Lan Kwai Fong
-----field----
-field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
-name: Experience Type
-key: experience type
-content-length: 38
-
-{B0EB0EDF-4E95-4BE6-9BEE-4DC2D2DA7E86}
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -55,18 +83,154 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0f8bf00f-a902-436a-8b23-dadf8e1bf38b
+004f0c7d-d420-47b3-9acf-59baf277e547
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151019T034147:635808229071813080Z
+20151027T031408:635815124480466036Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 22
+content-length: 14
 
-sitecore\virtualssuser
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: ab3fb4e6-86ab-41f5-be86-ad4035496664
+
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 3
+
+兰桂坊
+----field----
+field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
+name: Cover Website
+key: cover website
+content-length: 29
+
+http://www.lankwaifong.com/zh
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 7
+
+香港中环兰桂坊
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 35
+
+<strong>香港的经典夜生活区，娱乐消遣一站云集</strong>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 3
+
+兰桂坊
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151027T030826Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ab3fb4e6-86ab-41f5-be86-ad4035496664
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T031314:635815123940725165Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: ae5e1783-03f3-4ad8-af60-5aa8e88fbd3d
+
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 3
+
+蘭桂坊
+----field----
+field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
+name: Cover Website
+key: cover website
+content-length: 29
+
+http://www.lankwaifong.com/zh
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 7
+
+香港中環蘭桂坊
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 35
+
+<strong>香港的經典夜生活區，娛樂消遣共冶一爐</strong>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 3
+
+蘭桂坊
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151027T031022Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ae5e1783-03f3-4ad8-af60-5aa8e88fbd3d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T031346:635815124265053715Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

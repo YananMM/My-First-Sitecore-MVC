@@ -1,0 +1,208 @@
+----item----
+version: 1
+id: {604F9BFE-1E3F-437D-BA98-0EF5CC1C886A}
+database: master
+path: /sitecore/content/Home/Landmark/Around Central/Experience Central/Hollywood Road
+parent: {E973BDE0-11BC-4DD9-B949-08501F4D9353}
+name: Hollywood Road
+master: {00000000-0000-0000-0000-000000000000}
+template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
+templatekey: T25 Page
+
+----field----
+field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
+name: Cover Image
+key: cover image
+content-length: 58
+
+<image mediaid="{547D287B-171B-4F84-8B73-BE5900D90331}" />
+----field----
+field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
+name: Landing thumb Image
+key: landing thumb image
+content-length: 58
+
+<image mediaid="{8F941157-78BF-4A72-86FE-917FD24038D2}" />
+----field----
+field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
+name: Experience Type
+key: experience type
+content-length: 77
+
+{DA1C68B3-0958-4250-A9F6-2F03EAA17545}|{B0EB0EDF-4E95-4BE6-9BEE-4DC2D2DA7E86}
+----version----
+language: en
+version: 1
+revision: dea56a3c-af97-486c-be33-616767a277c7
+
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 14
+
+Hollywood Road
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 38
+
+Hollywood Road, Sheung Wan, Hong Kong 
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 109
+
+<strong>Famous street &lsquo;time travels&rsquo; from HK&rsquo;s earliest days up to the present day</strong>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 14
+
+Hollywood Road
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151027T083108Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+dea56a3c-af97-486c-be33-616767a277c7
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T083224:635815315448871227Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 15288334-7ec4-4873-bc8c-c12ee6431028
+
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 4
+
+荷李活道
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 8
+
+香港上环荷李活道
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 36
+
+<strong>从香港的开埠时期，穿越至今天的城市新貌</strong>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151027T083332Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+15288334-7ec4-4873-bc8c-c12ee6431028
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T083359:635815316395745385Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: a9772a44-39a7-4340-b3cf-51f787e311c4
+
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 4
+
+荷李活道
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 8
+
+香港上環荷李活道
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 36
+
+<strong>從香港的開埠時期，穿梭至今天的城市新貌</strong>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+荷李活道
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151027T083236Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+a9772a44-39a7-4340-b3cf-51f787e311c4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T083318:635815315982671758Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

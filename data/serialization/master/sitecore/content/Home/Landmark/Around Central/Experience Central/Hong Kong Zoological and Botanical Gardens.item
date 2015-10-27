@@ -1,0 +1,229 @@
+----item----
+version: 1
+id: {CDF6E866-A8D0-43D3-AB7F-E7E020738A1F}
+database: master
+path: /sitecore/content/Home/Landmark/Around Central/Experience Central/Hong Kong Zoological and Botanical Gardens
+parent: {E973BDE0-11BC-4DD9-B949-08501F4D9353}
+name: Hong Kong Zoological and Botanical Gardens
+master: {00000000-0000-0000-0000-000000000000}
+template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
+templatekey: T25 Page
+
+----field----
+field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
+name: Cover Image
+key: cover image
+content-length: 58
+
+<image mediaid="{6E20E0E5-39DD-4C58-B1ED-DDBE15C9DFA0}" />
+----field----
+field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
+name: Cover Phone
+key: cover phone
+content-length: 15
+
+(852) 2530 0154
+----field----
+field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
+name: Landing thumb Image
+key: landing thumb image
+content-length: 58
+
+<image mediaid="{615D85CF-CAE0-403F-9939-B817C2FCFE51}" />
+----field----
+field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
+name: Experience Type
+key: experience type
+content-length: 38
+
+{ED3568AF-EFF9-439E-BE3E-C2F93A72CBCA}
+----version----
+language: en
+version: 1
+revision: c2a13787-4e8a-43b7-a427-0fba56ff39fb
+
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 42
+
+Hong Kong Zoological and Botanical Gardens
+----field----
+field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
+name: Cover Website
+key: cover website
+content-length: 38
+
+http://www.lcsd.gov.hk/tc/parks/hkzbg/
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 31
+
+Albany Road, Central, Hong Kong
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 107
+
+<strong>Green, peaceful sanctuary home to 300 birds, 70 mammals, 20 reptiles and 900 plant species</strong>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 42
+
+Hong Kong Zoological and Botanical Gardens
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150911T094329Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c2a13787-4e8a-43b7-a427-0fba56ff39fb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T025038:635815110389950105Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: cd0a081b-d8e2-48cf-a25e-13105ad17d49
+
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 7
+
+香港动植物公园
+----field----
+field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
+name: Cover Website
+key: cover website
+content-length: 38
+
+http://www.lcsd.gov.hk/tc/parks/hkzbg/
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 216
+
+<p><strong>300</strong><strong>种雀鸟、</strong><strong>70</strong><strong>种哺乳类动物、</strong><strong>20</strong><strong>种爬行类动物及</strong><strong>900</strong><strong>种</strong><strong>植物的宁静绿化栖息地</strong><strong></strong></p>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151027T025140Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+cd0a081b-d8e2-48cf-a25e-13105ad17d49
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T025342:635815112228715276Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 6fc40fa4-a3fe-4dba-acfe-9841f65588a1
+
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 7
+
+香港動植物公園
+----field----
+field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
+name: Cover Website
+key: cover website
+content-length: 38
+
+http://www.lcsd.gov.hk/tc/parks/hkzbg/
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 8
+
+香港中環雅賓利道
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 58
+
+<strong>300種雀鳥、70種哺乳類動物、20種爬行類動物及900個植物品種的寧靜綠化棲息地</strong>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 7
+
+香港動植物公園
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151027T025052Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6fc40fa4-a3fe-4dba-acfe-9841f65588a1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T025340:635815112203823853Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

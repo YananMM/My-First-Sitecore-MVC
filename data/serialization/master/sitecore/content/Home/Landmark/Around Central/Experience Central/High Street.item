@@ -1,0 +1,236 @@
+----item----
+version: 1
+id: {DF20D085-C5E9-473D-A26F-FD39F82C68ED}
+database: master
+path: /sitecore/content/Home/Landmark/Around Central/Experience Central/High Street
+parent: {E973BDE0-11BC-4DD9-B949-08501F4D9353}
+name: High Street
+master: {00000000-0000-0000-0000-000000000000}
+template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
+templatekey: T25 Page
+
+----field----
+field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
+name: Cover Image
+key: cover image
+content-length: 58
+
+<image mediaid="{56114525-3160-4D5D-A9F6-C1389AFB4056}" />
+----field----
+field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
+name: Landing thumb Image
+key: landing thumb image
+content-length: 58
+
+<image mediaid="{C377A9BD-86AE-479E-8DB0-8EA87D512E36}" />
+----field----
+field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
+name: Experience Type
+key: experience type
+content-length: 38
+
+{DA1C68B3-0958-4250-A9F6-2F03EAA17545}
+----version----
+language: en
+version: 1
+revision: 4cfe0d48-c3b8-4a55-b9c5-8c7731c11daf
+
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 11
+
+High Street
+----field----
+field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
+name: Cover Website
+key: cover website
+content-length: 48
+
+http://www.amo.gov.hk/en/trails_west1.php?tid=20
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 37
+
+High Street, Sai Ying Pun, Hong Kong 
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 80
+
+<strong>Historic architecture and spooky tales make this a popular spot</strong>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 11
+
+High Street
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151027T070818Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4cfe0d48-c3b8-4a55-b9c5-8c7731c11daf
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T071034:635815266349122882Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 735ed3b2-8cb1-471f-94ee-ab0461fee862
+
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 2
+
+高街
+----field----
+field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
+name: Cover Website
+key: cover website
+content-length: 69
+
+http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/trails_west1.php?tid=20
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 7
+
+香港西营盘高街
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 38
+
+<p><strong>历史建筑和鬼故事打造热门景点</strong></p>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 2
+
+高街
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151027T071139Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+735ed3b2-8cb1-471f-94ee-ab0461fee862
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T071227:635815267473317182Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 2c6fd7cc-0d89-4391-b12b-6751cd7a83df
+
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 2
+
+高街
+----field----
+field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
+name: Cover Website
+key: cover website
+content-length: 48
+
+http://www.amo.gov.hk/b5/trails_west1.php?tid=20
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 7
+
+香港西營盤高街
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 38
+
+<p><strong>歷史建築和鬼故事打造熱門景點</strong></p>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 2
+
+高街
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151027T071049Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2c6fd7cc-0d89-4391-b12b-6751cd7a83df
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T071133:635815266930836154Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

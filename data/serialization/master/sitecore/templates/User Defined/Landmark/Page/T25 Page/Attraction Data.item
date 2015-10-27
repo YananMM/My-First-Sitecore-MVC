@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {21EAC0D5-7F7D-43A4-9F2B-9559031D2217}
+database: master
+path: /sitecore/templates/User Defined/Landmark/Page/T25 Page/Attraction Data
+parent: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
+name: Attraction Data
+master: {00000000-0000-0000-0000-000000000000}
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
+
+----version----
+language: en
+version: 1
+revision: 534ba68a-06b9-4f87-a160-83acdb011be0
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150904T031312Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+534ba68a-06b9-4f87-a160-83acdb011be0
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T024952:635815109923313415Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

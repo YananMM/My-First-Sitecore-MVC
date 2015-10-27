@@ -1,0 +1,215 @@
+----item----
+version: 1
+id: {B725D5CB-3AB8-4C82-B79D-52A52CB7011D}
+database: master
+path: /sitecore/content/Home/Landmark/Around Central/Experience Central/Mak Noodle
+parent: {E973BDE0-11BC-4DD9-B949-08501F4D9353}
+name: Mak Noodle
+master: {00000000-0000-0000-0000-000000000000}
+template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
+templatekey: T25 Page
+
+----field----
+field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
+name: Cover Image
+key: cover image
+content-length: 58
+
+<image mediaid="{7C2CEFC7-C7B5-48B1-957F-89926D8E94B0}" />
+----field----
+field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
+name: Cover Phone
+key: cover phone
+content-length: 15
+
+(852) 2854 3810
+----field----
+field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
+name: Landing thumb Image
+key: landing thumb image
+content-length: 58
+
+<image mediaid="{66492213-54F4-4870-AF76-DA6994BA4D7F}" />
+----field----
+field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
+name: Experience Type
+key: experience type
+content-length: 38
+
+{B0EB0EDF-4E95-4BE6-9BEE-4DC2D2DA7E86}
+----version----
+language: en
+version: 1
+revision: 3fdfcb9b-c2a9-4b1b-9c25-c3da1068b131
+
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 40
+
+77 Wellington Street, Central, Hong Kong
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 72
+
+<strong>World-famous wonton noodles draw fans from near and far</strong>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 10
+
+Mak Noodle
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151027T091024Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3fdfcb9b-c2a9-4b1b-9c25-c3da1068b131
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T091207:635815339270013718Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: bc80a90f-c670-4e33-8891-f1ed1518fa2a
+
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 7
+
+麦奀云吞面世家
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 11
+
+香港中环威灵顿街77号
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 34
+
+<strong>享誉全球的云吞面，粉丝遍及世界各地</strong>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 7
+
+麦奀云吞面世家
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151027T093300Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+bc80a90f-c670-4e33-8891-f1ed1518fa2a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T093340:635815352208643765Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 36dfcdb4-f81d-4072-b416-1b578ab10e8c
+
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 7
+
+麥奀雲吞麵世家
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 12
+
+香港中環威靈頓街77號 
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 34
+
+<strong>享譽全球的雲吞麵，粉絲遍及世界各地</strong>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 7
+
+麥奀雲吞麵世家
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151027T093206Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+36dfcdb4-f81d-4072-b416-1b578ab10e8c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T093244:635815351649731797Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

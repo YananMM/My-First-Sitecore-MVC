@@ -1,0 +1,243 @@
+----item----
+version: 1
+id: {AF0AD6EA-A3CC-4EBD-93C7-4950493DA521}
+database: master
+path: /sitecore/content/Home/Landmark/Around Central/Experience Central/Yung Kee Restaurant
+parent: {E973BDE0-11BC-4DD9-B949-08501F4D9353}
+name: Yung Kee Restaurant
+master: {00000000-0000-0000-0000-000000000000}
+template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
+templatekey: T25 Page
+
+----field----
+field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
+name: Cover Image
+key: cover image
+content-length: 58
+
+<image mediaid="{0AAEE696-84DF-467D-9AF2-E65A7525F8C6}" />
+----field----
+field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
+name: Cover Phone
+key: cover phone
+content-length: 16
+
+ (852) 2522 1624
+----field----
+field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
+name: Landing thumb Image
+key: landing thumb image
+content-length: 58
+
+<image mediaid="{34066BE8-5D11-4228-ACC0-35721075143C}" />
+----field----
+field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
+name: Experience Type
+key: experience type
+content-length: 38
+
+{B0EB0EDF-4E95-4BE6-9BEE-4DC2D2DA7E86}
+----version----
+language: en
+version: 1
+revision: 5cc52a2b-e4b6-43d5-8d50-354f409e568c
+
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 20
+
+Yung Kee Restaurant 
+----field----
+field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
+name: Cover Website
+key: cover website
+content-length: 37
+
+ http://www.yungkee.com.hk/index.html
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 45
+
+ 32-40 Wellington Street, Central, Hong Kong 
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 96
+
+<strong>Renowned roast goose restaurant that&rsquo;s a favourite of the rich and famous</strong>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 19
+
+Yung Kee Restaurant
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151027T090619Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5cc52a2b-e4b6-43d5-8d50-354f409e568c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T090820:635815337000693920Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: d7b673a3-a177-426b-8ca7-ba1ece897073
+
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 4
+
+镛记酒家
+----field----
+field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
+name: Cover Website
+key: cover website
+content-length: 36
+
+http://www.yungkee.com.hk/index.html
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 14
+
+香港中环威灵顿街32-40号
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 32
+
+<strong>驰名烧鹅酒家，是名人富豪的至爱</strong>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+镛记酒家
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151027T090922Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d7b673a3-a177-426b-8ca7-ba1ece897073
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T091007:635815338079795641Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 070d2207-6932-4bf2-9865-72112652f60a
+
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 4
+
+鏞記酒家
+----field----
+field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
+name: Cover Website
+key: cover website
+content-length: 36
+
+http://www.yungkee.com.hk/index.html
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 14
+
+香港中環威靈頓街32-40號
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 33
+
+<strong>馳名燒鵝酒家，是名人富豪的至愛 </strong>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+鏞記酒家
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151027T090828Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+070d2207-6932-4bf2-9865-72112652f60a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151027T090914:635815337548015225Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
