@@ -11,8 +11,8 @@ templatekey: T27 Page
 
 ----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
-name: Article Thumb Image
-key: article thumb image
+name: Article Portrait Callout Image
+key: article portrait callout image
 content-length: 58
 
 <image mediaid="{9E975298-E2E9-4619-9F96-29AC54133278}" />
@@ -42,6 +42,13 @@ key: article sub headline
 content-length: 0
 
 
+----field----
+field: {F51B5F38-BDB7-4A90-93C8-12697B82CDBA}
+name: Product Price
+key: product price
+content-length: 9
+
+HK$22,500
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title

@@ -16,10 +16,17 @@ key: artist photo
 content-length: 58
 
 <image mediaid="{C422D6A3-704D-4629-8668-E62FB7488184}" />
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 4
+
+1200
 ----version----
 language: en
 version: 1
-revision: ad6d8d4c-5ee3-40f6-85a0-aaa8bd1b2c75
+revision: 82e4aca3-ca90-4b2b-8fbb-a7877a49001a
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -72,14 +79,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ad6d8d4c-5ee3-40f6-85a0-aaa8bd1b2c75
+82e4aca3-ca90-4b2b-8fbb-a7877a49001a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151026T081955:635814443957952375Z
+20151027T073038Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

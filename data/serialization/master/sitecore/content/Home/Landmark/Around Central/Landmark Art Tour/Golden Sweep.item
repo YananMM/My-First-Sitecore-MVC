@@ -10,16 +10,30 @@ template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
 templatekey: T29 Page
 
 ----field----
+field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
+name: Artist
+key: artist
+content-length: 38
+
+{A71F51B3-1962-416E-951A-5B4F5BD1514B}
+----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
 content-length: 58
 
 <image mediaid="{27DE26A8-12F6-44B7-8EE2-85F743EEA6D3}" />
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 4
+
+1700
 ----version----
 language: en
 version: 1
-revision: 8f9707ab-02c2-48c2-8758-749a2faf7550
+revision: d9ecb9ee-df8d-43fc-a6df-e5a867170bd1
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -35,13 +49,6 @@ key: art title
 content-length: 18
 
 Golden Sweep, 2010
-----field----
-field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
-name: Artist
-key: artist
-content-length: 38
-
-{A71F51B3-1962-416E-951A-5B4F5BD1514B}
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
@@ -62,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8f9707ab-02c2-48c2-8758-749a2faf7550
+d9ecb9ee-df8d-43fc-a6df-e5a867170bd1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151026T091046:635814474465187289Z
+20151027T073039Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -96,13 +103,6 @@ key: art title
 content-length: 18
 
 Golden Sweep, 2010
-----field----
-field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
-name: Artist
-key: artist
-content-length: 38
-
-{A71F51B3-1962-416E-951A-5B4F5BD1514B}
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
@@ -157,13 +157,6 @@ key: art title
 content-length: 18
 
 Golden Sweep, 2010
-----field----
-field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
-name: Artist
-key: artist
-content-length: 38
-
-{A71F51B3-1962-416E-951A-5B4F5BD1514B}
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary

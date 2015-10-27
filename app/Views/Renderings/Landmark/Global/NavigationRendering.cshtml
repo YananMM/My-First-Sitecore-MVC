@@ -59,7 +59,8 @@
                                         {
                                             if (referenceField.TargetItem != null)
                                             {
-                                        @Html.Sitecore().Field("Article Thumb Image", referenceField.TargetItem)
+                                                string imageSrc = LandmarkHelper.GetCallOutImage(referenceField.TargetItem);
+                                                <img src="@imageSrc"/>
                                         <h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
 
                                         <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
@@ -91,7 +92,8 @@
                                         <div class="mega-product-area2 pull-right">
                                             @if (referenceField != null && referenceField.TargetItem != null)
                                                 {
-                                                @Html.Sitecore().Field("Article Thumb Image", referenceField.TargetItem)
+                                                string imageSrc = LandmarkHelper.GetCallOutImage(referenceField.TargetItem);
+                                                <img src="@imageSrc"/>
                                                 }
                                         </div>
                                     </div>
@@ -188,7 +190,8 @@
                                                     <div class="mega-product-area2 pull-right">
                                                         @if (referenceField != null && referenceField.TargetItem != null)
                                                         {
-                                                            @Html.Sitecore().Field("Article Thumb Image", referenceField.TargetItem)
+                                                            string imageSrc = LandmarkHelper.GetCallOutImage(referenceField.TargetItem);
+                                                            <img src="@imageSrc"/>
                                                         }
                                                     </div>
                                                 </div>

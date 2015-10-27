@@ -10,16 +10,30 @@ template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
 templatekey: T29 Page
 
 ----field----
+field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
+name: Artist
+key: artist
+content-length: 38
+
+{A71F51B3-1962-416E-951A-5B4F5BD1514B}
+----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
 content-length: 58
 
 <image mediaid="{6D4DAD38-8646-4DFE-8462-74DC1A70D5B3}" />
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 4
+
+1888
 ----version----
 language: en
 version: 1
-revision: 630709d1-d6fd-436d-b89b-be7efb8974d1
+revision: f3ed570c-1d0e-4331-9fb9-af7123f590b7
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -35,13 +49,6 @@ key: art title
 content-length: 12
 
 Spring, 2000
-----field----
-field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
-name: Artist
-key: artist
-content-length: 38
-
-{A71F51B3-1962-416E-951A-5B4F5BD1514B}
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
@@ -62,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-630709d1-d6fd-436d-b89b-be7efb8974d1
+f3ed570c-1d0e-4331-9fb9-af7123f590b7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151026T093943:635814491837090905Z
+20151027T073106Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -96,13 +103,6 @@ key: art title
 content-length: 12
 
 Spring, 2000
-----field----
-field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
-name: Artist
-key: artist
-content-length: 38
-
-{A71F51B3-1962-416E-951A-5B4F5BD1514B}
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
@@ -157,13 +157,6 @@ key: art title
 content-length: 12
 
 Spring, 2000
-----field----
-field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
-name: Artist
-key: artist
-content-length: 38
-
-{A71F51B3-1962-416E-951A-5B4F5BD1514B}
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary

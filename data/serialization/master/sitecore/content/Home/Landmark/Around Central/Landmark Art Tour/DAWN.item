@@ -10,6 +10,20 @@ template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
 templatekey: T29 Page
 
 ----field----
+field: {04670F13-3F17-47AC-B6AA-858F246682E0}
+name: Created Time
+key: created time
+content-length: 4
+
+1988
+----field----
+field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
+name: Artist
+key: artist
+content-length: 38
+
+{BE7B77B5-6010-472D-AA52-764C4E716EA0}
+----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
@@ -33,7 +47,7 @@ content-length: 158
 ----version----
 language: en
 version: 1
-revision: d352696f-41ec-40b5-aaeb-c9e23ba38ee7
+revision: 5395b8f4-f55b-406b-af0f-1488022e3587
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -50,26 +64,12 @@ content-length: 9
 
 Dawn,2013
 ----field----
-field: {04670F13-3F17-47AC-B6AA-858F246682E0}
-name: Created Time
-key: created time
-content-length: 4
-
-1988
-----field----
 field: {25ECD930-4134-4B41-A387-D063717B49B9}
 name: Art Size
 key: art size
 content-length: 13
 
 220 X 220 CM 
-----field----
-field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
-name: Artist
-key: artist
-content-length: 38
-
-{BE7B77B5-6010-472D-AA52-764C4E716EA0}
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
@@ -111,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d352696f-41ec-40b5-aaeb-c9e23ba38ee7
+5395b8f4-f55b-406b-af0f-1488022e3587
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151026T065557:635814393575400658Z
+20151027T072820Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -138,13 +138,6 @@ key: art title
 content-length: 9
 
 Dawn,2013
-----field----
-field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
-name: Artist
-key: artist
-content-length: 38
-
-{BE7B77B5-6010-472D-AA52-764C4E716EA0}
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
@@ -192,13 +185,6 @@ key: art title
 content-length: 9
 
 Dawn,2013
-----field----
-field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
-name: Artist
-key: artist
-content-length: 38
-
-{BE7B77B5-6010-472D-AA52-764C4E716EA0}
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary

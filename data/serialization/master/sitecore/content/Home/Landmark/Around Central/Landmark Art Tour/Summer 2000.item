@@ -10,12 +10,26 @@ template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
 templatekey: T29 Page
 
 ----field----
+field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
+name: Artist
+key: artist
+content-length: 38
+
+{A71F51B3-1962-416E-951A-5B4F5BD1514B}
+----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
 content-length: 58
 
 <image mediaid="{87AD22D3-B4C3-4DDF-A85A-F098CB42C622}" />
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 4
+
+1894
 ----version----
 language: zh-CN
 version: 1
@@ -35,13 +49,6 @@ key: art title
 content-length: 12
 
 Summer, 2000
-----field----
-field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
-name: Artist
-key: artist
-content-length: 38
-
-{A71F51B3-1962-416E-951A-5B4F5BD1514B}
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
@@ -96,13 +103,6 @@ key: art title
 content-length: 12
 
 Summer, 2000
-----field----
-field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
-name: Artist
-key: artist
-content-length: 38
-
-{A71F51B3-1962-416E-951A-5B4F5BD1514B}
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
