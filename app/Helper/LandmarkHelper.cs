@@ -402,7 +402,7 @@ namespace Landmark.Helper
         public static string GetCallOutImage(Item item)
         {
             string imageURL = string.Empty;
-            Sitecore.Data.Fields.ImageField imageField = item.Fields["Article Slider Image"];
+            Sitecore.Data.Fields.ImageField imageField = item.Fields["Article Callout Image"];
             if (imageField != null && imageField.MediaItem != null)
             {
                 Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(imageField.MediaItem);

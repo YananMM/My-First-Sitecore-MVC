@@ -25,11 +25,11 @@ namespace Landmark.Internal_Handlers
             foreach (Item i in items)
             {
                 Item enLanguageItem = Factory.GetDatabase("master").GetItem(i.ID, Sitecore.Globalization.Language.Parse("en"));
-                Item scLanguageItem = Factory.GetDatabase("master").GetItem(i.ID, Sitecore.Globalization.Language.Parse("zh-CN"));
-                Item tcLanguageItem = Factory.GetDatabase("master").GetItem(i.ID, Sitecore.Globalization.Language.Parse("zh-HK"));
+                //Item scLanguageItem = Factory.GetDatabase("master").GetItem(i.ID, Sitecore.Globalization.Language.Parse("zh-CN"));
+                //Item tcLanguageItem = Factory.GetDatabase("master").GetItem(i.ID, Sitecore.Globalization.Language.Parse("zh-HK"));
                 using (new SecurityDisabler())
                 {
-                    tcLanguageItem.Editing.BeginEdit();
+                    /*tcLanguageItem.Editing.BeginEdit();
                     tcLanguageItem.Fields["Article Headline"].Value = scLanguageItem.Fields["Article Sub Headline"].Value;
                     tcLanguageItem.Editing.AcceptChanges();
 
@@ -37,15 +37,15 @@ namespace Landmark.Internal_Handlers
                     scLanguageItem.Editing.BeginEdit();
                     scLanguageItem.Fields["Article Headline"].Value = scLanguageItem.Fields["Article Sub Headline"].Value;
                     scLanguageItem.Fields["Article Sub Headline"].Value = "";
-                    scLanguageItem.Editing.AcceptChanges();
+                    scLanguageItem.Editing.AcceptChanges();*/
 
                     enLanguageItem.Editing.BeginEdit();
                     enLanguageItem.Fields["Article Headline"].Value = enLanguageItem.Fields["Article Sub Headline"].Value;
-                    enLanguageItem.Fields["Article Sub Headline"].Value = "";
                     enLanguageItem.Editing.AcceptChanges();
                 }
 
             }
+
             
             
             context.Response.ContentType = "text/plain";
