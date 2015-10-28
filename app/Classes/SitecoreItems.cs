@@ -80,7 +80,7 @@ namespace Landmark.Classes
         public static readonly Item LegalPrivacyItem = _web.GetItem("{4F4D0D9B-FE4D-4BFA-A7BC-2F0FE98DFAA1}");
         public static readonly Item SeeMoreGlossaryItem = _web.GetItem("{4C26DD8F-E35D-4723-A63D-EBC091B5517B}");
         public static readonly Item SeeLessGlossaryItem = _web.GetItem("{ECE9A631-616F-4180-A886-8DAE0A8C7ECE}");
-        public static readonly Item PleaseSelectItem = _web.GetItem("{07350BF2-59EF-414F-B432-AA8386002AD3}");
+        public static readonly Item PleaseSelectItem = _web.GetItem("{0109CF64-3B7A-4AB6-84A9-9966051E2DF4}");
         public static readonly Item ArtItem = _web.GetItem("{AB0C8815-0927-4C82-9430-D9FFC89A5C5E}");
         public static readonly Item EmailOnlyItem = _web.GetItem("{F21D5148-ECCD-43FC-AE07-184D0847F730}");
         public static readonly Item EmailPostalAddressItem = _web.GetItem("{45E8443F-D90C-42BB-B34C-F4A6BEF2D17E}");
