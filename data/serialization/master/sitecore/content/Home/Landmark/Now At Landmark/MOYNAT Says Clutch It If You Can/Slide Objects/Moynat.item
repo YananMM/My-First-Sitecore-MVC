@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {2CF21A2D-CBB8-41F7-99EE-4C915714EBA9}
+database: master
+path: /sitecore/content/Home/Landmark/Now At Landmark/MOYNAT Says Clutch It If You Can/Slide Objects/Moynat
+parent: {B9A5287B-7BCF-407E-85D7-BADD948E6499}
+name: Moynat
+master: {00000000-0000-0000-0000-000000000000}
+template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
+templatekey: Slide Object
+
+----field----
+field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
+name: Slide Image
+key: slide image
+content-length: 263
+
+<image mediapath="/Images/Landmark/Now at landmark/Aug/Ex Moynat1600" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Now at landmark/Aug/Ex Moynat1600" mediaid="{19A59E1A-0FA9-42F4-A245-2455268E82CE}" />
+----version----
+language: en
+version: 1
+revision: 62076a39-74d4-466b-9bda-2f9f899c8c78
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151028T135838Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+62076a39-74d4-466b-9bda-2f9f899c8c78
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151028T140014Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

@@ -10,6 +10,20 @@ template: {86210711-016D-4540-BDB5-64FEA2BC5A72}
 templatekey: T26 Page
 
 ----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 1
+
+1
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 1
+
+1
+----field----
 field: {6FD695E7-7F6D-4CA5-8B49-A829E5950AE9}
 name: __Subitems Sorting
 key: __subitems sorting
@@ -56,20 +70,6 @@ key: page content
 content-length: 70
 
 Explore our collection of exclusive items – only available at LANDMARK
-----field----
-field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
-name: Is Shown In Navigation
-key: is shown in navigation
-content-length: 1
-
-1
-----field----
-field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
-name: Is Shown In Breadcrumb
-key: is shown in breadcrumb
-content-length: 1
-
-1
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

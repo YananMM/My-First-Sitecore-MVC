@@ -17,6 +17,41 @@ content-length: 58
 
 <image mediaid="{1AB3BDCA-4FB1-4129-A520-4B9B3508F9C5}" />
 ----field----
+field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
+name: Building
+key: building
+content-length: 38
+
+{E76CEFC9-801C-4694-9A63-0C6132F20741}
+----field----
+field: {3534AD05-BF49-4763-822B-25D97D9F7283}
+name: Floor
+key: floor
+content-length: 38
+
+{E4D421D6-DCB0-40F4-B554-A52F83DC40EF}
+----field----
+field: {8B055347-174E-4D86-8B2D-22ACFAB67D14}
+name: LocationX
+key: locationx
+content-length: 6
+
+0.2975
+----field----
+field: {624D2412-1023-406B-9A02-A915293A6BA6}
+name: LocationY
+key: locationy
+content-length: 6
+
+0.1690
+----field----
+field: {3AEEB76E-6DA8-4ADC-AFA7-13BB46A57CC1}
+name: Svg Id
+key: svg id
+content-length: 7
+
+shop-B2
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -43,26 +78,12 @@ content-length: 6
 
 CELINE
 ----field----
-field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
-name: Building
-key: building
-content-length: 38
-
-{E76CEFC9-801C-4694-9A63-0C6132F20741}
-----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 6
 
 CELINE
-----field----
-field: {3534AD05-BF49-4763-822B-25D97D9F7283}
-name: Floor
-key: floor
-content-length: 38
-
-{E4D421D6-DCB0-40F4-B554-A52F83DC40EF}
 ----field----
 field: {5350FA4D-170D-4926-8B21-97068A9C599F}
 name: Area
@@ -77,27 +98,6 @@ key: description
 content-length: 16
 
 This is shop 012
-----field----
-field: {8B055347-174E-4D86-8B2D-22ACFAB67D14}
-name: LocationX
-key: locationx
-content-length: 6
-
-0.2975
-----field----
-field: {624D2412-1023-406B-9A02-A915293A6BA6}
-name: LocationY
-key: locationy
-content-length: 6
-
-0.1690
-----field----
-field: {3AEEB76E-6DA8-4ADC-AFA7-13BB46A57CC1}
-name: Svg Id
-key: svg id
-content-length: 7
-
-shop-B2
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

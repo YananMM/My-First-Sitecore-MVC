@@ -9,18 +9,6 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {2EB78109-C1A5-456C-8149-13324F528F36}
 templatekey: T12 Page
 
-----version----
-language: en
-version: 1
-revision: e578f941-312d-495f-8162-a40e322ff648
-
-----field----
-field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
-name: Page Title
-key: page title
-content-length: 7
-
-Sitemap
 ----field----
 field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
 name: Is Shown In Navigation
@@ -35,6 +23,18 @@ key: is shown in breadcrumb
 content-length: 0
 
 
+----version----
+language: en
+version: 1
+revision: e578f941-312d-495f-8162-a40e322ff648
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 7
+
+Sitemap
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

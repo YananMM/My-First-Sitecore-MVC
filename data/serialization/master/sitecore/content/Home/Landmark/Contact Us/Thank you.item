@@ -9,6 +9,13 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {405CC2BD-9153-4979-8D48-9A664FE2B231}
 templatekey: T10 Page
 
+----field----
+field: {1A103714-8A11-45A7-B94D-5FA2D0DDD1C8}
+name: Related Page
+key: related page
+content-length: 116
+
+{51E62FBA-8585-46DA-9DA3-AE84C56C2DC3}|{7A1BF6CA-1E82-4F53-A482-D8BACD770875}|{1B51D2BB-E8D2-4421-A075-F0A748D04D36}
 ----version----
 language: en
 version: 1
@@ -28,13 +35,6 @@ key: explore label
 content-length: 16
 
 EXPLORE LANDMARK
-----field----
-field: {1A103714-8A11-45A7-B94D-5FA2D0DDD1C8}
-name: Related Page
-key: related page
-content-length: 116
-
-{51E62FBA-8585-46DA-9DA3-AE84C56C2DC3}|{7A1BF6CA-1E82-4F53-A482-D8BACD770875}|{1B51D2BB-E8D2-4421-A075-F0A748D04D36}
 ----field----
 field: {9BFE1A1D-C5BB-4232-BCCD-421A18093480}
 name: Button Text

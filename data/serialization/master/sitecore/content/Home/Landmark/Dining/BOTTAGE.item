@@ -17,6 +17,34 @@ content-length: 58
 
 <image mediaid="{080DA8C5-1F26-4EA1-B081-80511EACA1E7}" />
 ----field----
+field: {3534AD05-BF49-4763-822B-25D97D9F7283}
+name: Floor
+key: floor
+content-length: 38
+
+{375FC2F4-E801-442F-B1EA-B75EFB86BB39}
+----field----
+field: {8B055347-174E-4D86-8B2D-22ACFAB67D14}
+name: LocationX
+key: locationx
+content-length: 6
+
+0.2975
+----field----
+field: {624D2412-1023-406B-9A02-A915293A6BA6}
+name: LocationY
+key: locationy
+content-length: 6
+
+0.1690
+----field----
+field: {3AEEB76E-6DA8-4ADC-AFA7-13BB46A57CC1}
+name: Svg Id
+key: svg id
+content-length: 7
+
+shop-B1
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -50,13 +78,6 @@ content-length: 7
 
 BOTTAGE
 ----field----
-field: {3534AD05-BF49-4763-822B-25D97D9F7283}
-name: Floor
-key: floor
-content-length: 38
-
-{375FC2F4-E801-442F-B1EA-B75EFB86BB39}
-----field----
 field: {5350FA4D-170D-4926-8B21-97068A9C599F}
 name: Area
 key: area
@@ -70,27 +91,6 @@ key: description
 content-length: 21
 
 SHOP DESCRIPTION HERE
-----field----
-field: {8B055347-174E-4D86-8B2D-22ACFAB67D14}
-name: LocationX
-key: locationx
-content-length: 6
-
-0.2975
-----field----
-field: {624D2412-1023-406B-9A02-A915293A6BA6}
-name: LocationY
-key: locationy
-content-length: 6
-
-0.1690
-----field----
-field: {3AEEB76E-6DA8-4ADC-AFA7-13BB46A57CC1}
-name: Svg Id
-key: svg id
-content-length: 7
-
-shop-B1
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

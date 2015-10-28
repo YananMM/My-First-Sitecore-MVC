@@ -9,6 +9,13 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {D931A074-6489-494D-ABA7-AD15032CF10C}
 templatekey: T15 Page
 
+----field----
+field: {1025D25C-6AE7-49FC-8C2C-3FACAD13EB9E}
+name: Tags
+key: tags
+content-length: 116
+
+{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{8DEEBCDA-AC9C-4B0C-AF81-8E493D219713}
 ----version----
 language: en
 version: 1
@@ -56,13 +63,6 @@ key: heading  leadin
 content-length: 17
 
 Other Suggestions
-----field----
-field: {1025D25C-6AE7-49FC-8C2C-3FACAD13EB9E}
-name: Tags
-key: tags
-content-length: 116
-
-{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{8DEEBCDA-AC9C-4B0C-AF81-8E493D219713}
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

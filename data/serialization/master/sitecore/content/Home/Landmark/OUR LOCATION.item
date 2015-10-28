@@ -17,6 +17,20 @@ content-length: 58
 
 <image mediaid="{D61C0136-C7F6-4110-8D4A-C40B3B45BA60}" />
 ----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {E746F7B8-3A32-4130-9BD3-66F7C52A027C}
+name: Related Page
+key: related page
+content-length: 0
+
+
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -74,13 +88,6 @@ content-length: 12
 
 OUR LOCATION
 ----field----
-field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
-name: Is Shown In Navigation
-key: is shown in navigation
-content-length: 0
-
-
-----field----
 field: {A226DDC8-EF57-486D-B926-CA77063BC5A4}
 name: Address Label
 key: address label
@@ -108,13 +115,6 @@ key: button link
 content-length: 182
 
 <link id="{C4B0C207-D66A-4E2F-9469-6B8FF62A4CB1}" querystring="" text="" title="" class="" linktype="internal" url="/Home/Landmark/OUR LOCATION/Directions" target="Active Browser" />
-----field----
-field: {E746F7B8-3A32-4130-9BD3-66F7C52A027C}
-name: Related Page
-key: related page
-content-length: 0
-
-
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

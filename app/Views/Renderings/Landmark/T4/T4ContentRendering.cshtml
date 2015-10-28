@@ -4,7 +4,9 @@
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @model RenderingModel
-
+@{
+    DateField date = (DateField) Sitecore.Context.Item.Fields["Article Date"];
+}
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
@@ -14,6 +16,10 @@
 
     <div class="gd-newsdetails">
         <h3>@Html.Sitecore().Field("Article Headline")</h3>
+        @if (date.Value == null)
+        {
+            <p>@LandmarkHelper.ToValidDateTime(date).ToString("d")</p>
+        }
         <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage" data-ride="carousel">
             @Html.Sitecore().Placeholder("t4-slides")
         </div>

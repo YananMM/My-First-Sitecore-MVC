@@ -38,6 +38,20 @@ content-length: 38
 
 {63A24BBD-6863-4085-846D-54FAB9C86B80}
 ----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
+----field----
+field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
+name: Tags
+key: tags
+content-length: 155
+
+{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -84,20 +98,6 @@ key: page title
 content-length: 15
 
 FashionForeword
-----field----
-field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
-name: Page Style
-key: page style
-content-length: 7
-
-Style A
-----field----
-field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
-name: Tags
-key: tags
-content-length: 155
-
-{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}
 ----field----
 field: {C7837E33-73D8-4328-9350-8A9CFD1819F4}
 name: Related Story Label
@@ -174,13 +174,6 @@ content-length: 31
 
 FashionForeword with Tina Leung
 ----field----
-field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
-name: Page Style
-key: page style
-content-length: 7
-
-Style A
-----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -255,13 +248,6 @@ key: page title
 content-length: 31
 
 FashionForeword with Tina Leung
-----field----
-field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
-name: Page Style
-key: page style
-content-length: 7
-
-Style A
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner

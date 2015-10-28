@@ -10,6 +10,13 @@ template: {E04426CD-2C71-48F8-A1CA-C507C2CAB178}
 templatekey: Page Object
 
 ----field----
+field: {D0CC41B3-3000-4ED5-870B-8C89E72C0DA0}
+name: Ad Reference Item
+key: ad reference item
+content-length: 38
+
+{52D6EB05-D74E-45ED-851C-CA9A6B774D41}
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -101,13 +108,6 @@ language: en
 version: 3
 revision: 6b8ed450-cd70-437e-905f-7ac8bfd411ab
 
-----field----
-field: {D0CC41B3-3000-4ED5-870B-8C89E72C0DA0}
-name: Ad Reference Item
-key: ad reference item
-content-length: 38
-
-{52D6EB05-D74E-45ED-851C-CA9A6B774D41}
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title

@@ -9,6 +9,13 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {2DFE4A09-A911-4315-92D8-CA78E512202C}
 templatekey: T32 Page
 
+----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
 ----version----
 language: en
 version: 1
@@ -21,13 +28,6 @@ key: page title
 content-length: 14
 
 Search Results
-----field----
-field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
-name: Is Shown In Navigation
-key: is shown in navigation
-content-length: 0
-
-
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

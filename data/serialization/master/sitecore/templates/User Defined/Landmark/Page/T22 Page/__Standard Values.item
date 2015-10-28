@@ -1,0 +1,173 @@
+----item----
+version: 1
+id: {1E33E4EF-065B-4A6F-B952-B34A9ABFB27E}
+database: master
+path: /sitecore/templates/User Defined/Landmark/Page/T22 Page/__Standard Values
+parent: {7B7A336C-48D6-4CD7-BC35-A4593F16F2D0}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {7B7A336C-48D6-4CD7-BC35-A4593F16F2D0}
+templatekey: T22 Page
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 447
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{F8D2E7E4-68AF-405D-8356-752922EACF54}"><r id="{B8F13621-BBCA-43FA-9E29-E9FA95A106C0}" ph="" uid="{50EEE8C6-DB39-4E64-8D9A-6EBD81A48E3D}" /><r id="{53B49FDF-8B9A-4EDB-AA98-F3431087248C}" ph="" uid="{52C91436-12EB-4C15-8140-374121822977}" /><r id="{932653F7-1F86-4E47-8550-128F7458E401}" ph="" uid="{CD2C4C0E-8BEF-44DF-B709-4E50AFCBF9E5}" /></d></r>
+----version----
+language: en
+version: 1
+revision: 47d353dd-f620-4f70-9df5-5e00c5cd32a8
+
+----field----
+field: {D8E8C58F-EDCE-49A9-948C-8558FEBF587D}
+name: Biography Link Text
+key: biography link text
+content-length: 16
+
+About the Artist
+----field----
+field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
+name: __Final Renderings
+key: __final renderings
+content-length: 447
+
+<r xmlns:xsd="http://www.w3.org/2001/XMLSchema" ><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}" l="{F8D2E7E4-68AF-405D-8356-752922EACF54}"><r id="{B8F13621-BBCA-43FA-9E29-E9FA95A106C0}" ph="" uid="{50EEE8C6-DB39-4E64-8D9A-6EBD81A48E3D}" /><r id="{53B49FDF-8B9A-4EDB-AA98-F3431087248C}" ph="" uid="{52C91436-12EB-4C15-8140-374121822977}" /><r id="{932653F7-1F86-4E47-8550-128F7458E401}" ph="" uid="{CD2C4C0E-8BEF-44DF-B709-4E50AFCBF9E5}" /></d></r>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150812T053756Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+47d353dd-f620-4f70-9df5-5e00c5cd32a8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151020T102319:635809333990155163Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 9eaeb517-962b-4ff7-b30f-07e02bf6f857
+
+----field----
+field: {D8E8C58F-EDCE-49A9-948C-8558FEBF587D}
+name: Biography Link Text
+key: biography link text
+content-length: 5
+
+关於艺术家
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151020T102300Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9eaeb517-962b-4ff7-b30f-07e02bf6f857
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151020T102303:635809333832936171Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 584b5503-281d-4c84-954b-9482aff1b807
+
+----field----
+field: {D8E8C58F-EDCE-49A9-948C-8558FEBF587D}
+name: Biography Link Text
+key: biography link text
+content-length: 5
+
+關於藝術家
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151020T102234Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+584b5503-281d-4c84-954b-9482aff1b807
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151020T102248:635809333689447964Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

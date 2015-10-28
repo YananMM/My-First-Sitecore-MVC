@@ -9,6 +9,20 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {C3C40A55-7B62-4BCE-81E8-E097F5F30689}
 templatekey: T36 Page
 
+----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 1
+
+1
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 1
+
+1
 ----version----
 language: en
 version: 1
@@ -35,20 +49,6 @@ key: page title
 content-length: 17
 
 Landmark Magazine
-----field----
-field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
-name: Is Shown In Navigation
-key: is shown in navigation
-content-length: 1
-
-1
-----field----
-field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
-name: Is Shown In Breadcrumb
-key: is shown in breadcrumb
-content-length: 0
-
-
 ----field----
 field: {6BB3166A-7A61-4717-AEA5-DDA25802F4B5}
 name: Title
@@ -110,20 +110,6 @@ key: page title
 content-length: 17
 
 Landmark Magazine
-----field----
-field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
-name: Is Shown In Navigation
-key: is shown in navigation
-content-length: 1
-
-1
-----field----
-field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
-name: Is Shown In Breadcrumb
-key: is shown in breadcrumb
-content-length: 1
-
-1
 ----field----
 field: {6BB3166A-7A61-4717-AEA5-DDA25802F4B5}
 name: Title
@@ -199,20 +185,6 @@ key: page title
 content-length: 17
 
 Landmark Magazine
-----field----
-field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
-name: Is Shown In Navigation
-key: is shown in navigation
-content-length: 1
-
-1
-----field----
-field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
-name: Is Shown In Breadcrumb
-key: is shown in breadcrumb
-content-length: 1
-
-1
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
