@@ -30,10 +30,17 @@ key: __originator
 content-length: 0
 
 
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 155
+
+{EEEB8813-EBD2-415E-B4F0-72B52DDEF18E}|{EC3DBE3A-5E40-4B96-A67B-593FE8E67B72}|{95710548-2E7F-4FD5-B97D-CAF1396CE80B}|{17853181-56B2-4240-84FC-EFF772333FEC}
 ----version----
 language: en
 version: 1
-revision: 57f43876-325b-4e2b-94ff-f7d3588c21f0
+revision: ee98966b-f6f7-4c62-b35a-c0417ff78306
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -85,14 +92,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-57f43876-325b-4e2b-94ff-f7d3588c21f0
+ee98966b-f6f7-4c62-b35a-c0417ff78306
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151027T072319:635815273990899966Z
+20151028T083648:635816182087205575Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,9 +108,9 @@ content-length: 14
 
 sitecore\admin
 ----version----
-language: zh-HK
+language: zh-CN
 version: 1
-revision: e8e2de70-11f6-4b83-b681-e21aa088c5be
+revision: ba0ade1c-1ec9-4ed4-98ef-2004a7031262
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -129,6 +136,90 @@ Joyce Wang, Hong Kong’s new design wunderkind,
 weighs in on redefining luxury
 
 ----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 15
+
+Changing spaces
+----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151028T083621Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ba0ade1c-1ec9-4ed4-98ef-2004a7031262
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151028T084407:635816186477936710Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: b09e1ab8-1102-420b-824a-3ed0709f570c
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 15
+
+Changing spaces
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 26
+
+Words by Elizabeth Choppin
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 81
+
+Joyce Wang, Hong Kong’s new design wunderkind, 
+weighs in on redefining luxury
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 15
+
+Changing spaces
+----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -141,14 +232,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e8e2de70-11f6-4b83-b681-e21aa088c5be
+b09e1ab8-1102-420b-824a-3ed0709f570c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151021T114129:635810244899029180Z
+20151028T083903:635816183439382915Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

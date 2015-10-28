@@ -87,7 +87,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: bd3bf872-3bdf-48fa-ba5a-fe73313e9e19
+revision: 79b9db9c-10b2-42a8-9fbf-e6b4cce48e14
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -96,6 +96,20 @@ key: article headline
 content-length: 9
 
 Big bang 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 8
+
+Big bang
+----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -109,14 +123,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bd3bf872-3bdf-48fa-ba5a-fe73313e9e19
+79b9db9c-10b2-42a8-9fbf-e6b4cce48e14
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151028T071446:635816132864310186Z
+20151028T084353:635816186336988649Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -127,7 +141,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: ef7e3a11-670a-43d2-9738-41e41713b66d
+revision: 9ce94055-ef7a-4591-8fc7-fa188c48115d
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -136,6 +150,20 @@ key: article headline
 content-length: 8
 
 Big bang
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 8
+
+Big bang
+----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -149,14 +177,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ef7e3a11-670a-43d2-9738-41e41713b66d
+9ce94055-ef7a-4591-8fc7-fa188c48115d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151021T081703:635810122237793359Z
+20151028T084345:635816186258464157Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

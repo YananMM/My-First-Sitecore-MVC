@@ -101,7 +101,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 55ba268d-c645-435a-a5d1-b3004a4421e5
+revision: 1b09ee7d-77d3-418f-9740-38b9d2774a82
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -128,6 +128,20 @@ key: article intro
 content-length: 236
 
 Hairstyles have defined eras: the beehive became a de facto symbol of the 1960s, and Jane Birkin’s fringed look an emblem of the 1970s. Here, we team iconic tresses from five decades with contemporary fine jewels that speak to the times
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 10
+
+Time locks
+----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -141,14 +155,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-55ba268d-c645-435a-a5d1-b3004a4421e5
+1b09ee7d-77d3-418f-9740-38b9d2774a82
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151028T072100:635816136600373877Z
+20151028T085754:635816194749939842Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -159,7 +173,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 3ad4dd56-156c-4389-8618-24b3c2fed47f
+revision: 1185283c-ce8b-4a85-a96b-1756773ea684
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -187,6 +201,20 @@ content-length: 236
 
 Hairstyles have defined eras: the beehive became a de facto symbol of the 1960s, and Jane Birkin’s fringed look an emblem of the 1970s. Here, we team iconic tresses from five decades with contemporary fine jewels that speak to the times
 ----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 10
+
+Time locks
+----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -199,14 +227,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3ad4dd56-156c-4389-8618-24b3c2fed47f
+1185283c-ce8b-4a85-a96b-1756773ea684
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151028T072142:635816137021317954Z
+20151028T085801:635816194814333525Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

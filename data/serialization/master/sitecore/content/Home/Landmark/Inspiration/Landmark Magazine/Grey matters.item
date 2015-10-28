@@ -122,7 +122,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 8354106b-24c4-4579-a13a-aec5d556d6ce
+revision: eeb59187-d8c5-427c-a3c4-ee52460ce590
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -145,6 +145,20 @@ key: article intro
 content-length: 34
 
 Manolo Blahnik Espeda麖皮高跟鞋，置地廣塲中庭。
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 12
+
+Grey matters
+----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -172,14 +186,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8354106b-24c4-4579-a13a-aec5d556d6ce
+eeb59187-d8c5-427c-a3c4-ee52460ce590
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151019T101135:635808462951420228Z
+20151028T085142:635816191026256859Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -190,7 +204,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 762e69d0-fa06-441a-aea2-92a9653e53df
+revision: 612a2536-e555-4d27-a446-38c50ca748aa
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -213,6 +227,20 @@ key: article intro
 content-length: 34
 
 Manolo Blahnik Espeda麖皮高跟鞋，置地廣塲中庭。
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 12
+
+Grey matters
+----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -240,14 +268,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-762e69d0-fa06-441a-aea2-92a9653e53df
+612a2536-e555-4d27-a446-38c50ca748aa
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151019T101251:635808463710063620Z
+20151028T085129:635816190891069127Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

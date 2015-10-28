@@ -94,8 +94,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: c5968125-0299-45d8-8325-3215be309e03
+revision: bcc66411-c869-487a-b713-5d8fe9c6a141
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 19
+
+On the Catwalk AW15
+----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -109,14 +123,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c5968125-0299-45d8-8325-3215be309e03
+bcc66411-c869-487a-b713-5d8fe9c6a141
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151021T081315:635810119958512992Z
+20151028T085423:635816192630058592Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -127,7 +141,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: ee441601-4ea3-449d-9548-ff53a356210a
+revision: 8b67a41e-cb82-430c-92b9-4a1724d8c41a
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -144,6 +158,20 @@ content-length: 20
 
 The ’60s Style Shift
 ----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 19
+
+On the Catwalk AW15
+----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -156,14 +184,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ee441601-4ea3-449d-9548-ff53a356210a
+8b67a41e-cb82-430c-92b9-4a1724d8c41a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151028T070141:635816125018751446Z
+20151028T085417:635816192576395522Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

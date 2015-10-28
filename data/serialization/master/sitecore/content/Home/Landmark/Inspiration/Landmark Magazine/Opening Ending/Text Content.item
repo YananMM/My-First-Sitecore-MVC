@@ -1,40 +1,27 @@
 ----item----
 version: 1
-id: {D0AC407A-E394-44E2-A5FD-63533BE5121B}
+id: {7FA12D7A-0315-4126-BA86-7A6B1922284F}
 database: master
-path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Foot work/Text Content
-parent: {289019DB-83A9-44D7-9AAD-1BAC26B84C3F}
+path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Opening Ending/Text Content
+parent: {5E81BDEC-3DBB-4EDC-9A16-4909AE78F796}
 name: Text Content
-master: {019AAA6D-F7C8-4293-94EE-CF065B0A8A91}
+master: {00000000-0000-0000-0000-000000000000}
 template: {95710548-2E7F-4FD5-B97D-CAF1396CE80B}
 templatekey: Text Content
-
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 2
-
-50
-----field----
-field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
-name: __Originator
-key: __originator
-content-length: 0
-
 
 ----version----
 language: en
 version: 1
-revision: de90236b-eb86-4d33-acbe-02725f6aeee8
+revision: b6d75631-53da-4a79-acd2-3d770b25cc5f
 
 ----field----
 field: {C487FA5B-2267-414F-A814-BA9CE7B96003}
 name: Article Description
 key: article description
-content-length: 400
+content-length: 717
 
-For style as individual as you are, Paris-based brothers Pierre and Christophe Corthay always deliver. What better way to add a dash of drama to your outfit this autumn than with a pair of electro-candy patent leather shoes? Go as bold as you dare in on-trend orange with purple laces, or make a subtle statement in burgundy brogues. Can&rsquo;t decide? Get both and change them up to suit your mood.
+<p>Damiani, the newest addition to Landmark Atrium, has lovers of fine jewellery all aflutter. The boutique&rsquo;s soft neutral tones provide the perfect backdrop for the exquisite pieces, letting the creations themselves do the talking. </p>
+<p>On show at the Italian watch and jewellery store is the Anima range, which has been reimagined for the 21st century in new and striking colour combinations. Inspired by a floral motif, the rings, bracelets and earrings of the Anima collection team pink and yellow gold with brown and white diamonds, as well as blue and purple sapphires. Amethysts, aquamarine and smoky quartz provide the finishing touches for a collection that is as contemporary as it is timeless.</p>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -48,7 +35,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151021T102839Z
+20151028T083950Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -62,14 +49,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-de90236b-eb86-4d33-acbe-02725f6aeee8
+b6d75631-53da-4a79-acd2-3d770b25cc5f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151021T103028:635810202288932022Z
+20151028T083959:635816183999334942Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -80,15 +67,16 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 911b14c4-feba-45f4-ab29-a916a876189f
+revision: 538c7676-6a5b-4891-9d38-fb2ba6a9a21b
 
 ----field----
 field: {C487FA5B-2267-414F-A814-BA9CE7B96003}
 name: Article Description
 key: article description
-content-length: 322
+content-length: 212
 
-巴黎鞋匠兄弟Pierre和Christophe Corthay總能滿足形象別樹一幟的男士們。今年秋天，如果想為一身打扮增添矚目亮點，最簡單的做法，莫過於穿上一雙糖果色彩的漆皮鞋。橙色鞋身配紫色鞋帶是今秋大熱，但如果擔心效果太過「驚人」，可以選擇低調一點的酒紅色。心大心細？都買下好了，到時候視乎心情，高調有時，低調亦有時。巴黎鞋匠兄弟Pierre和Christophe Corthay總能滿足形象別樹一幟的男士們。今年秋天，如果想為一身打扮增添矚目亮點，最簡單的做法，莫過於穿上一雙糖果色彩的漆皮鞋。橙色鞋身配紫色鞋帶是今秋大熱，但如果擔心效果太過「驚人」，可以選擇低調一點的酒紅色。心大心細？都買下好了，到時候視乎心情，高調有時，低調亦有時。
+<p>置地廣塲中庭新開張的意大利鐘錶首飾品牌Damiani，讓所有熱愛精美珠寶的人心馳神往。新店以柔和自然的色調，襯托高貴優雅的首飾，突顯珠寶本身的魅力。</p>
+<p>於新店有售的經典系列Anima換上21世紀的全新形象，大膽的顏色配搭無出其右。靈感源自花卉圖案的Anima系列，以玫瑰金和黄金，配合啡鑽和白鑽、藍寶石和紫寶石，加上紫晶、淺藍晶和茶晶的點綴，創作出時尚而永恒的戒指、手鐲和耳環等，教珠寶迷趨之若鶩。</p>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -102,7 +90,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151028T081016Z
+20151028T084208Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -116,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-911b14c4-feba-45f4-ab29-a916a876189f
+538c7676-6a5b-4891-9d38-fb2ba6a9a21b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151028T081023:635816166238319070Z
+20151028T084214:635816185347692064Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -134,15 +122,16 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 8b71b90c-60fa-46e7-8656-81c1bb6da671
+revision: 0828a2cf-18fc-41d4-a397-fd97cbed5d4f
 
 ----field----
 field: {C487FA5B-2267-414F-A814-BA9CE7B96003}
 name: Article Description
 key: article description
-content-length: 168
+content-length: 212
 
-<p>巴黎鞋匠兄弟Pierre和Christophe Corthay總能滿足形象別樹一幟的男士們。今年秋天，如果想為一身打扮增添矚目亮點，最簡單的做法，莫過於穿上一雙糖果色彩的漆皮鞋。橙色鞋身配紫色鞋帶是今秋大熱，但如果擔心效果太過「驚人」，可以選擇低調一點的酒紅色。心大心細？都買下好了，到時候視乎心情，高調有時，低調亦有時。</p>
+<p>置地廣塲中庭新開張的意大利鐘錶首飾品牌Damiani，讓所有熱愛精美珠寶的人心馳神往。新店以柔和自然的色調，襯托高貴優雅的首飾，突顯珠寶本身的魅力。</p>
+<p>於新店有售的經典系列Anima換上21世紀的全新形象，大膽的顏色配搭無出其右。靈感源自花卉圖案的Anima系列，以玫瑰金和黄金，配合啡鑽和白鑽、藍寶石和紫寶石，加上紫晶、淺藍晶和茶晶的點綴，創作出時尚而永恒的戒指、手鐲和耳環等，教珠寶迷趨之若鶩。</p>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -156,7 +145,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151021T103151Z
+20151028T084220Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -170,14 +159,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8b71b90c-60fa-46e7-8656-81c1bb6da671
+0828a2cf-18fc-41d4-a397-fd97cbed5d4f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151021T103159:635810203196043906Z
+20151028T084225:635816185457018317Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -143,15 +143,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f49d2233-e3ec-47da-9912-fae802ee999f
+revision: ff8897c6-924a-41a2-b0ab-ef247c097f5b
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 32
+content-length: 31
 
-#FashionForeword with Tina Leung
+FashionForeword with Tina Leung
 ----field----
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
@@ -166,6 +166,20 @@ key: article intro
 content-length: 109
 
 Roger Vivier’s Bruno Frisoni talks to our fashion director about inspiration, aspiration and the power of now
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 31
+
+FashionForeword with Tina Leung
+----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -193,14 +207,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f49d2233-e3ec-47da-9912-fae802ee999f
+ff8897c6-924a-41a2-b0ab-ef247c097f5b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151020T023116:635809050765706885Z
+20151028T085015:635816190150976796Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -211,7 +225,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: e68e7ecd-ae0c-4263-8eb7-8d90f55889e8
+revision: cc458d40-b140-46e0-8d87-0361a85bf4d5
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -234,6 +248,20 @@ key: article intro
 content-length: 109
 
 Roger Vivier’s Bruno Frisoni talks to our fashion director about inspiration, aspiration and the power of now
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 31
+
+FashionForeword with Tina Leung
+----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -261,14 +289,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e68e7ecd-ae0c-4263-8eb7-8d90f55889e8
+cc458d40-b140-46e0-8d87-0361a85bf4d5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151019T100929:635808461697068483Z
+20151028T085020:635816190208510087Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
