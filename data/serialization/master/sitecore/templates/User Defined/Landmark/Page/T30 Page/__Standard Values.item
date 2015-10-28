@@ -19,8 +19,15 @@ content-length: 547
 ----version----
 language: en
 version: 1
-revision: aa8dea1b-fcf4-4dcf-b09f-30038f54ee83
+revision: 77022679-c548-41e2-9a26-741ffeaee08b
 
+----field----
+field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
+name: Artist Name
+key: artist name
+content-length: 5
+
+$name
 ----field----
 field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
 name: __Final Renderings
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-aa8dea1b-fcf4-4dcf-b09f-30038f54ee83
+77022679-c548-41e2-9a26-741ffeaee08b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150811T074547:635748759474057863Z
+20151027T134235Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
