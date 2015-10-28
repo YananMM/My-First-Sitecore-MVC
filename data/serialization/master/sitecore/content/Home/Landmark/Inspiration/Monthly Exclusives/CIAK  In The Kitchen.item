@@ -2,20 +2,27 @@
 version: 1
 id: {2021A466-9DFF-4CC7-A199-D97DC75373BB}
 database: master
-path: /sitecore/content/Home/Landmark/Inspiration/Monthly Exclusives/CIAK - In The Kitchen
+path: /sitecore/content/Home/Landmark/Inspiration/Monthly Exclusives/CIAK  In The Kitchen
 parent: {923DBE58-71DE-4B27-B0BA-C5DEF3D301B2}
-name: CIAK - In The Kitchen
+name: CIAK  In The Kitchen
 master: {A13598F7-D565-4FCC-A1EE-15E7C158F17B}
 template: {A46D7A20-B29F-4C4F-8922-0B70555CD6BC}
 templatekey: T27 Page
 
 ----field----
-field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
-name: Article Portrait Callout Image
-key: article portrait callout image
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
 content-length: 58
 
 <image mediaid="{302741BF-DEA9-46E4-996C-6EEF928EC0D6}" />
+----field----
+field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
+name: Article Portrait Callout Image
+key: article portrait callout image
+content-length: 0
+
+
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -26,7 +33,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 899d84b7-4f94-4bf2-b101-f9562315ca53
+revision: a2b06541-0415-4819-94af-9d90258ba965
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -62,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-899d84b7-4f94-4bf2-b101-f9562315ca53
+a2b06541-0415-4819-94af-9d90258ba965
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T144613Z
+20151028T052515Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
