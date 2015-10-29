@@ -20,16 +20,16 @@
             <div class="slider variable-width gd-slick-slider">
                 @foreach (var it in item.Stories)
                 {
-                    <div class="gd-slick-item gd-hover-img">
+                    <a class="gd-slick-item gd-hover-img" href="@Sitecore.Links.LinkManager.GetItemUrl(it)">
                         <div class="gd-hover-img-area">
                             <div class="gd-hover-img-mask"></div>
-                            <img src="@LandmarkHelper.GetCallOutImage(it)" />
+                            <img data-src="@LandmarkHelper.GetCallOutImage(it)" />
                         </div>
                         <div class="gd-slick-des">
                             <h3>@Html.Sitecore().Field("Article Headline", it)</h3>
                             <p>@Html.Sitecore().Field("Article Intro", it)</p>
                         </div>
-                    </div>
+                    </a>
                 }
 
             </div>

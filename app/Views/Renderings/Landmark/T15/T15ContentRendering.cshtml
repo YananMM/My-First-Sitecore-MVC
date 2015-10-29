@@ -66,7 +66,10 @@
                                          foreach (var id in types)
                                          {
                                              var type = Sitecore.Context.Database.GetItem(id);
-                                            <text>@type.Fields["Tag Name"].ToString().ToUpper()</text>
+                                             if (type != null)
+                                             {
+                                                <text>@type.Fields["Tag Name"].ToString().ToUpper()</text>
+                                             }
                                              if (i < types.Count())
                                              {
                                                 <text>|</text>

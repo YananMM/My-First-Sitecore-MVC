@@ -337,7 +337,7 @@ namespace Landmark.Helper
             List<Item> relatedItems = new List<Item>();
             if (item.ID.ToString() != ItemGuids.ThankYouPage)
             {
-                var relatedItemFolder =  
+                var relatedItemFolder =
                     item.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.RelatedItemFolder);
                 if (relatedItemFolder != null)
                 {
@@ -345,13 +345,12 @@ namespace Landmark.Helper
                 }
             }
             var relatedPagesField = item.Fields["Related Page"];
-            var relatedPagesIds = relatedPagesField.ToString().Split('|').ToList();
-            if (relatedPagesIds.Count != 0)
+            if (relatedPagesField != null)
             {
-                foreach (var pageId in relatedPagesIds)
+                var relatedPagesIds = relatedPagesField.ToString().Split('|').ToList();
+                if (relatedPagesIds.Count != 0)
                 {
-                    var pageItem = Sitecore.Context.Database.GetItem(pageId);
-                    items.Add(pageItem);
+                    items.AddRange(relatedPagesIds.Select(pageId => Sitecore.Context.Database.GetItem(pageId)));
                 }
             }
             items.AddRange(relatedItems);
@@ -401,7 +400,7 @@ namespace Landmark.Helper
 
         public static string GetCallOutImage(Item item)
         {
-            string imageURL = string.Empty;
+            string imageURL = "";
             Sitecore.Data.Fields.ImageField imageField = item.Fields["Article Callout Image"];
             if (imageField != null && imageField.MediaItem != null)
             {
@@ -411,12 +410,11 @@ namespace Landmark.Helper
             }
             else
             {
-                Item slider =
-                    LandmarkHelper.GetItemByTemplate(item, ItemGuids.SlideObjectTemplate)
-                        .FirstOrDefault();
-                if (slider != null)
+                var sliders =
+                    LandmarkHelper.GetItemByTemplate(item, ItemGuids.SlideObjectTemplate);
+                if (sliders != null && sliders.Count != 0)
                 {
-                    imageURL = FileFieldSrc("Slide Image", slider);
+                    imageURL = FileFieldSrc("Slide Image", sliders.FirstOrDefault());
                 }
             }
             return imageURL;
@@ -465,7 +463,7 @@ namespace Landmark.Helper
 
         public static bool IsFalsePage(Item item)
         {
-            if (item.Template.ID.ToString() == ItemGuids.PageObject || item.Template.ID.ToString() == ItemGuids.ShoppingPageObject) 
+            if (item.Template.ID.ToString() == ItemGuids.PageObject || item.Template.ID.ToString() == ItemGuids.ShoppingPageObject)
             {
                 return true;
             }
@@ -477,7 +475,7 @@ namespace Landmark.Helper
             string url = LinkManager.GetItemUrl(item);
             if (IsFalsePage(item))
             {
-                if((new LayoutField(item).Value).IsNullOrEmpty())
+                if ((new LayoutField(item).Value).IsNullOrEmpty())
                     url = "#";
             }
             return url;

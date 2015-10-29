@@ -30,6 +30,11 @@
     >li{
       margin: 0;
       padding: 0;
+      &.current {
+        > a {
+          color: @brand-primary;
+        }
+      }
       span{
         margin-right: 20px;
       }
@@ -94,7 +99,7 @@
     }
     }
     .language{
-      padding: 20px 0 20px 10px;
+      padding: 0 0 20px 10px;
     .gray-text;
       .lang-cn{
       font-size: 1.08em;
