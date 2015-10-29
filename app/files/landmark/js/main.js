@@ -1856,7 +1856,7 @@ $(document).ready(function() {
         rules: 'required'
     }, {
         name: 'ValidateCode',
-        rules: 'required|decimal'
+        rules: 'required'
     }], function(errors, event) {
         if (errors.length > 0) {
             // Show the errors
