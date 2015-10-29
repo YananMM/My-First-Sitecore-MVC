@@ -6,12 +6,9 @@
 @model RenderingModel
 @{
     var currentItem = Sitecore.Context.Item;
-    MagezineHelper helper = new MagezineHelper();
-    var setting = helper.GetStorySetting(currentItem);
     DateField storyDate = currentItem.Fields["Article Date"];
     var date = LandmarkHelper.ToValidDateTime(storyDate);
     var children = currentItem.Children.ToList();
-    CheckboxField inMiddel = currentItem.Fields["Block Text In Middle"];
 }
 <div class="container">
     <div class="gd-pagetitle">
@@ -20,7 +17,10 @@
 
     <div class="gd-content-details">
         <h3>@Html.Sitecore().Field("Article Headline")</h3>
-        <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
+       @if (storyDate.ToString() != "Monday, January 01, 0001 12:00 AM")
+       {
+           <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
+       }
         <h6>@Html.Sitecore().Field("Article Sub Headline")</h6>
     </div>
 </div>
