@@ -15,7 +15,7 @@ namespace Landmark.Helper
             return
                 LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.T4PageTemplate)
                     .OrderBy(article => article.Fields["Article Date"].ToString())
-                    .First();
+                    .Last();
         }
 
         public List<Item> GetTheRestArticles(string page=null)
