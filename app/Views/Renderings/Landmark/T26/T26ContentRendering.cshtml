@@ -154,9 +154,9 @@
                     brandTitle = Sitecore.Context.Database.GetItem(brand).Fields["Brand Title"].Value;
                 }
                 <div class="gd-promo-box @alphabet @inspirationHelper.GetTagsFilter(article)">
-                    <a href="@LinkManager.GetItemUrl(article)"><img data-src="@imagesrc"></a>
+                    <a href="#"><img data-src="@imagesrc"></a>
                     <h5>@brandTitle</h5>
-                    <a href="@LinkManager.GetItemUrl(article)"><h4>@Html.Sitecore().Field("Article Headline", article)</h4></a>
+                    <a href="#"><h4>@Html.Sitecore().Field("Article Headline", article)</h4></a>
 </div>
             }
         </div>

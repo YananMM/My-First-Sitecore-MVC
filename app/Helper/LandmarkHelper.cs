@@ -476,7 +476,10 @@ namespace Landmark.Helper
         {
             string url = LinkManager.GetItemUrl(item);
             if (IsFalsePage(item))
-                url = "#";
+            {
+                if((new LayoutField(item).Value).IsNullOrEmpty())
+                    url = "#";
+            }
             return url;
         }
 
