@@ -401,7 +401,7 @@ namespace Landmark.Helper
 
         public static string GetCallOutImage(Item item)
         {
-            string imageURL = string.Empty;
+            string imageURL = "";
             Sitecore.Data.Fields.ImageField imageField = item.Fields["Article Callout Image"];
             if (imageField != null && imageField.MediaItem != null)
             {
