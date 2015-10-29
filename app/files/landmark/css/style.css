@@ -12574,6 +12574,11 @@ h4 a:active {
   line-height: 1.5;
   margin: 50px 0 30px;
 }
+.gd-newsdetails h5 {
+  float: right;
+  margin-top: -52px;
+  padding-bottom: 0;
+}
 .gd-newsdetails .gd-nd-info-text {
   margin-bottom: 25px;
 }
@@ -14238,7 +14243,8 @@ dl.gd-content-details-tags dd a:active {
 }
 .t9 .gd-contact-share .gd-contact-share-icon:hover,
 .t31 .gd-contact-share .gd-contact-share-icon:hover {
-  border: none;
+  color: #fff;
+  border: solid 2px #d4a962;
   background-color: #d4a962;
 }
 @media (min-width: 768px) {
@@ -16115,3 +16121,4 @@ input[type="checkbox"] {
   font-size: 12px;
   font-style: normal;
 }
+/*# sourceMappingURL=style.css.map */
