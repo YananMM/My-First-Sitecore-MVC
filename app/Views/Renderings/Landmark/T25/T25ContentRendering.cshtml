@@ -22,32 +22,29 @@
                                     MultilistField experienceType = currentItem.Fields["Experience Type"];
                                     foreach (var type in experienceType)
                                     {
-                                       <li>@Sitecore.Context.Database.GetItem(type.ToString()).Fields["Tag Name"].ToString().ToUpper()</li> 
+                                        <li>@Sitecore.Context.Database.GetItem(type.ToString()).Fields["Tag Name"].ToString().ToUpper()</li>
                                     }
                                 }
                             </ul>
                             <div class="table-responsive gd-mainimage-table">
                                 <table>
                                     <tbody>
-                                        <tr>
-                                            <th>
-                                                @{
-                                                    var phoneValue = SitecoreItems.PhoneItem.Fields["Glossary Value"].ToString();
-                                                    if (!string.IsNullOrEmpty(phoneValue))
-                                                    {
-                                                        @Html.Sitecore().Field("Glossary Value", SitecoreItems.PhoneItem)
-                                                    }
-                                                }
-                                            </th>
-                                            <td>@Html.Sitecore().Field("Cover Phone")</td>
-                                        </tr>
+                                        @if (!string.IsNullOrEmpty(currentItem.Fields["Cover Phone"].ToString()))
+                                        {
+                                            <tr>
+                                                <th>
+                                                    @Html.Sitecore().Field("Glossary Value", SitecoreItems.PhoneItem).ToString().ToUpper()
+                                                </th>
+                                                <td>@Html.Sitecore().Field("Cover Phone")</td>
+                                            </tr>
+                                        }
                                         <tr>
                                             <th>
                                                 @{
                                                     var websiteValue = SitecoreItems.WebsiteItem.Fields["Glossary Value"].ToString();
                                                     if (!string.IsNullOrEmpty(websiteValue))
                                                     {
-                                                        @Html.Sitecore().Field("Glossary Value", SitecoreItems.WebsiteItem)
+                                                        @Html.Sitecore().Field("Glossary Value", SitecoreItems.WebsiteItem).ToString().ToUpper()
                                                     }
                                                 }
                                             </th>
@@ -61,7 +58,7 @@
                                                     var addressValue = SitecoreItems.AddressItem.Fields["Glossary Value"].ToString();
                                                     if (!string.IsNullOrEmpty(addressValue))
                                                     {
-                                                        @Html.Sitecore().Field("Glossary Value", SitecoreItems.AddressItem)
+                                                        @Html.Sitecore().Field("Glossary Value", SitecoreItems.AddressItem).ToString().ToUpper()
                                                     }
                                                 }
                                             </th>
@@ -76,7 +73,7 @@
                                 <table>
                                     <tbody>
                                         <tr>
-                                            <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem)</th>
+                                            <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem).ToString().ToUpper()</th>
                                             <td>
                                                 @foreach (var item in tagsTrees)
                                                 {<a href="javascript:;">
