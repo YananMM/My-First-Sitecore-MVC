@@ -176,6 +176,9 @@
     <Compile Include="Internal Handlers\CopyContent.ashx.cs">
       <DependentUpon>CopyContent.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Internal Handlers\ImportShopDetails.ashx.cs">
+      <DependentUpon>ImportShopDetails.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Models\ContactUsFormModel.cs" />
     <Compile Include="Models\EmailSignup.cs">
       <DependentUpon>Landmark.tt</DependentUpon>
@@ -228,6 +231,12 @@
     <Content Include="apple-touch-icon-precomposed.png" />
     <Content Include="apple-touch-icon.png" />
     <Content Include="Applications\Landmark\EmailSignupExport.aspx" />
+    <Content Include="artpiece-xy.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="dine-tags.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="favicon-160x160.png" />
     <Content Include="favicon-16x16.png" />
     <Content Include="favicon-192x192.png" />
@@ -645,10 +654,20 @@
       <LastGenOutput>Landmark.cs</LastGenOutput>
     </Content>
     <Content Include="Internal Handlers\CopyContent.ashx" />
+    <Content Include="Internal Handlers\ImportShopDetails.ashx" />
     <None Include="Properties\PublishProfiles\DEV.pubxml" />
     <None Include="Properties\PublishProfiles\landmark.pubxml" />
     <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />
     <Content Include="Service\Landmark.asmx" />
+    <Content Include="shop-details.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shop-tags.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="shop-xy.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Views\web.config">
       <SubType>Designer</SubType>
     </Content>
