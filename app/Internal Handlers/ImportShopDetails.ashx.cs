@@ -863,22 +863,6 @@ namespace Landmark.Internal_Handlers
                                 // Todo: Shop_OTHER
                                 tags.Add("");
                             }
-                            else if (shopTag.Shop_MEN.StartsWith("Y"))
-                            {
-                                tags.Add("");
-                            }
-                            else if (shopTag.Shop_MEN.StartsWith("Y"))
-                            {
-                                tags.Add("");
-                            }
-                            else if (shopTag.Shop_MEN.StartsWith("Y"))
-                            {
-                                tags.Add("");
-                            }
-                            else if (shopTag.Shop_MEN.StartsWith("Y"))
-                            {
-                                tags.Add("");
-                            }
                             #endregion
                         }
                         else if (isDine)
