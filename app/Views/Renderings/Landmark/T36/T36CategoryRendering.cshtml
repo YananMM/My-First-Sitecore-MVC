@@ -9,6 +9,7 @@
     var magazineGroups = helper.GetMagazineGroups();
 }
 <div class="container">
+
     @foreach (var item in magazineGroups)
     {
         <div class="gd-promotion-box-area">
@@ -23,7 +24,7 @@
                     <a class="gd-slick-item gd-hover-img" href="@Sitecore.Links.LinkManager.GetItemUrl(it)">
                         <div class="gd-hover-img-area">
                             <div class="gd-hover-img-mask"></div>
-                            <img data-src="@LandmarkHelper.GetCallOutImage(it)" />
+                            <img src="@LandmarkHelper.GetCallOutImage(it)"/>
                         </div>
                         <div class="gd-slick-des">
                             <h3>@Html.Sitecore().Field("Article Headline", it)</h3>

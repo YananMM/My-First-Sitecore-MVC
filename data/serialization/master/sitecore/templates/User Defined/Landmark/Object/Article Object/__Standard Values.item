@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {9FC3BD1B-0EFC-4246-B307-806DD26D3639}
+database: master
+path: /sitecore/templates/User Defined/Landmark/Object/Article Object/__Standard Values
+parent: {E0472501-0925-4F7F-A5BC-84F0ECA1B7F8}
+name: __Standard Values
+master: {00000000-0000-0000-0000-000000000000}
+template: {E0472501-0925-4F7F-A5BC-84F0ECA1B7F8}
+templatekey: Article Object
+
+----field----
+field: {B966F61E-9F08-4674-AC01-EE1064020145}
+name: Article Date
+key: article date
+content-length: 16
+
+20151028T160000Z
+----version----
+language: en
+version: 1
+revision: 47d0f8e3-1da9-49f3-bc14-32ffd8a9882d
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151029T082210Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+47d0f8e3-1da9-49f3-bc14-32ffd8a9882d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151029T085153:635817055134926055Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

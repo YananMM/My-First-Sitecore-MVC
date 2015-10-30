@@ -67,7 +67,7 @@
                         <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
                             <div class="gd-promotion-box">
                                 <img data-src="@LandmarkHelper.GetCallOutImage(item)"/>
-                                <h4><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@Html.Sitecore().Field("Article Headline", item)</a></h4>
+                                <h4>@Html.Sitecore().Field("Article Headline", item)</h4>
                                 @{
                     DateField itemDate = item.Fields["Article Date"];
                     var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
@@ -89,7 +89,7 @@
                         <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
                             <div class="gd-promotion-box">
                                 <img data-src="@LandmarkHelper.GetCallOutImage(item)"/>
-                                <h4><a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">@Html.Sitecore().Field("Article Headline", item)</a></h4>
+                                <h4>@Html.Sitecore().Field("Article Headline", item)</h4>
                                 @{
                     DateField itemDate = item.Fields["Article Date"];
                     var itemdate = LandmarkHelper.ToValidDateTime(itemDate);

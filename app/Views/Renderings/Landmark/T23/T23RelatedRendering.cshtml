@@ -5,8 +5,11 @@
 @using Landmark.Models
 @model RenderingModel
 @{
+    var currentItem = Sitecore.Context.Item;
     InspirationHelper helper = new InspirationHelper();
     var relatedStoris = helper.GetRelatedItems("story");
+
+    relatedStoris = relatedStoris.Where(p => p.Item.ID.ToString() != currentItem.ID.ToString()).ToList();
     relatedStoris = (relatedStoris.Count > 2) ? relatedStoris.Take(2).ToList() : relatedStoris;
     var relatedBrands = helper.GetRelatedItems("brands");
     relatedBrands = (relatedBrands.Count > 2) ? relatedBrands.Take(2).ToList() : relatedBrands;
