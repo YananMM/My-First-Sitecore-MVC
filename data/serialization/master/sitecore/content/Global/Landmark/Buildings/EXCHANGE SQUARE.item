@@ -1,61 +1,54 @@
 ----item----
 version: 1
-id: {D436403A-500F-4DB4-ADF6-32165C306C55}
+id: {0B9F0C48-A026-4AEF-B968-A106E8B2A8E4}
 database: master
-path: /sitecore/content/Global/Landmark/Buildings/PRINCE
+path: /sitecore/content/Global/Landmark/Buildings/EXCHANGE SQUARE
 parent: {4731A63F-BFED-4A7B-8650-1ED611731530}
-name: PRINCE
+name: EXCHANGE SQUARE
 master: {00000000-0000-0000-0000-000000000000}
 template: {873FCBBD-5F81-4DD2-B885-DFDCA194A5D1}
 templatekey: Building Data
 
-----field----
-field: {BF9DA807-1A47-4989-952D-5A3E7691E3FC}
-name: Is Landmark
-key: is landmark
-content-length: 1
-
-1
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-500
+550
 ----version----
 language: en
 version: 1
-revision: 8692d424-ddfd-41fe-afca-88f7cecce6a4
+revision: c3d5cc93-9555-4638-80de-abd3013d0899
 
 ----field----
 field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
 name: Building Title
 key: building title
-content-length: 6
+content-length: 15
 
-PRINCE
+EXCHANGE SQUARE
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150930T135152Z
+20151027T071328Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-8692d424-ddfd-41fe-afca-88f7cecce6a4
+c3d5cc93-9555-4638-80de-abd3013d0899
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151027T071407Z
+20151027T071412Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
