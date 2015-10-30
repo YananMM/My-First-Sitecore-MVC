@@ -456,7 +456,7 @@ namespace Landmark.Internal_Handlers
                 var itemName = GenItemName(detail.NameEn);
                 var shopItem = shopFolder.Children.FirstOrDefault(i => i.Name == itemName)
                         ?? diningFolder.Children.FirstOrDefault(i => i.Name == itemName)
-                        ?? _masterDb.CreateItemPath("/sitecore/content/Home/Landmark/Shopping/" + itemName, _shopTemplate);
+                        ?? _masterDb.CreateItemPath("/sitecore/content/Home/Landmark/"+ (isShop?"Shopping/":"Dining/") + itemName, _shopTemplate);
 
                 foreach (var language in shopItem.Languages)
                 {
