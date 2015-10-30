@@ -24,6 +24,13 @@ content-length: 38
 
 {42FF35B6-477A-417F-84BA-B11860F3A311}
 ----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -33,7 +40,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: ba65183a-fe73-427c-a469-b8c399ab32a2
+revision: e370f98d-9a5d-4613-b248-e7270a97e2b9
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -57,13 +64,6 @@ content-length: 10
 
 Hat tricks
 ----field----
-field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
-name: Page Style
-key: page style
-content-length: 7
-
-Style A
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -76,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ba65183a-fe73-427c-a469-b8c399ab32a2
+e370f98d-9a5d-4613-b248-e7270a97e2b9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151027T072417:635815274579343623Z
+20151028T085204:635816191245499399Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -92,9 +92,9 @@ content-length: 14
 
 sitecore\admin
 ----version----
-language: zh-HK
+language: zh-CN
 version: 1
-revision: 16b64dc8-de06-46c7-a788-046f600eb3dd
+revision: 3da0ab8b-d85b-4909-8c77-9a077ccf3199
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -111,6 +111,67 @@ content-length: 34
 
 Photography by Andrew J. Loiterton
 ----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 10
+
+Hat tricks
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151028T081216Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3da0ab8b-d85b-4909-8c77-9a077ccf3199
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151028T085159:635816191192126347Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 3fa9e0e9-57d0-499c-a0e1-768b01e9dd33
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 10
+
+Hat tricks
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 34
+
+Photography by Andrew J. Loiterton
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 10
+
+Hat tricks
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -123,14 +184,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-16b64dc8-de06-46c7-a788-046f600eb3dd
+3fa9e0e9-57d0-499c-a0e1-768b01e9dd33
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151021T103506:635810205061920628Z
+20151028T081302:635816167827639974Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -30,9 +30,12 @@
         <div class="gd-brief-body">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p>@LandmarkHelper.ToValidDateTime(date).ToString("MMM dd,yyyy", CultureInfo.InvariantCulture)</p>
-                    <p>@Html.Sitecore().Field("Article Intro", latestItem)</p>
-<a href="@LinkManager.GetItemUrl(latestItem)" class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverMoreItem)</a>
+                    @if (date.Value!=null)
+                    {
+                        <p>@LandmarkHelper.ToValidDateTime(date).ToString("MMM dd,yyyy", CultureInfo.InvariantCulture)</p>
+                    }
+                    <p>@Html.Sitecore().Field("Article Content", latestItem)</p>
+                    <a href="@LinkManager.GetItemUrl(latestItem)" class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverMoreItem)</a>
                 </div>
             </div>
         </div>
@@ -55,7 +58,7 @@
                     <a href="@LinkManager.GetItemUrl(child)" class="gd-hover-img">
                         <div class="gd-hover-img-area">
                             <div class="gd-hover-img-mask"></div>
-                            <img data-src='@imagesrc'>
+                            <img data-src='@imagesrc' class="lazy-loaded">
                         </div>
                         @if (typeField != null && typeField.TargetItem != null)
                         {

@@ -11,16 +11,24 @@
 }
 @if (slides.Count > 0)
 {
-<!-- Indicators -->
-<ol class="carousel-indicators">
-    @for (int i = 0; i < slides.Count; i++)
+    <!-- Indicators -->
+    if (slides.Count > 1)
     {
-        <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{if (i == 0) { <text>
-            class="active"
-            </text>                          }}></li>
+        <ol class="carousel-indicators">
+            @for (int i = 0; i < slides.Count; i++)
+            {
+                <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{
+                                                                                if (i == 0)
+                                                                                {
+                                                                                    <text>
+                                                                                        class="active"
+                                                                                    </text>
+                                                                                }
+                                                                            }></li>
+            }
+        </ol>
     }
-</ol>
-<!-- Wrapper for slides -->
+    <!-- Wrapper for slides -->
 <div class="carousel-inner" role="listbox">
     @{
         int j = 0;
@@ -63,8 +71,10 @@
         }
     }
 </div>
-<!-- Controls -->
-<div class="gd-mainimage-controls">
+    <!-- Controls -->
+  if (slides.Count > 1)
+   {
+       <div class="gd-mainimage-controls">
     <a class="gd-mainimage-control" href="#gd-carousel-mainimage" role="button" data-slide="prev">
         <span class="icomoon-thin-arrow-L" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -74,4 +84,6 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
+   }  
+
 }

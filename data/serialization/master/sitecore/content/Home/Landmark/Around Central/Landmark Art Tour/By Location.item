@@ -17,6 +17,13 @@ content-length: 58
 
 <image mediaid="{78A02E50-037C-4856-AB46-9A025EB69E34}" />
 ----field----
+field: {B444FA5E-2123-42E2-9665-B4C020D24442}
+name: Buildings Map File
+key: buildings map file
+content-length: 109
+
+<file mediaid="{CEF1AA67-BDBB-444E-A857-25DDF85C13A5}" src="~/media/cef1aa67bdbb444ea85725ddf85c13a5.ashx" />
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -35,13 +42,6 @@ language: en
 version: 1
 revision: 093676c6-4abd-464f-bb0f-905d90bb43b3
 
-----field----
-field: {B444FA5E-2123-42E2-9665-B4C020D24442}
-name: Buildings Map File
-key: buildings map file
-content-length: 109
-
-<file mediaid="{CEF1AA67-BDBB-444E-A857-25DDF85C13A5}" src="~/media/cef1aa67bdbb444ea85725ddf85c13a5.ashx" />
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title

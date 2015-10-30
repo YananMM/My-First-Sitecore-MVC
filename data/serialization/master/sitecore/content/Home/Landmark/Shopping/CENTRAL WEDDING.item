@@ -17,6 +17,27 @@ content-length: 58
 
 <image mediaid="{2EA169A4-5231-4184-A368-23A5E21C50F8}" />
 ----field----
+field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
+name: Building
+key: building
+content-length: 38
+
+{04AF3BF4-1C4D-43BC-9884-1431E3A44B11}
+----field----
+field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
+name: Tags
+key: tags
+content-length: 77
+
+{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{8DEEBCDA-AC9C-4B0C-AF81-8E493D219713}
+----field----
+field: {3534AD05-BF49-4763-822B-25D97D9F7283}
+name: Floor
+key: floor
+content-length: 38
+
+{3F85EF25-5B91-488B-B672-E6DAC79E4C87}
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -43,33 +64,12 @@ content-length: 15
 
 CENTRAL WEDDING
 ----field----
-field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
-name: Building
-key: building
-content-length: 38
-
-{04AF3BF4-1C4D-43BC-9884-1431E3A44B11}
-----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 15
 
 CENTRAL WEDDING
-----field----
-field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
-name: Tags
-key: tags
-content-length: 77
-
-{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{8DEEBCDA-AC9C-4B0C-AF81-8E493D219713}
-----field----
-field: {3534AD05-BF49-4763-822B-25D97D9F7283}
-name: Floor
-key: floor
-content-length: 38
-
-{3F85EF25-5B91-488B-B672-E6DAC79E4C87}
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

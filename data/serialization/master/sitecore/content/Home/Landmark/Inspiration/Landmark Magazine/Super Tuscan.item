@@ -24,16 +24,30 @@ content-length: 38
 
 {9C462E8F-2C94-47DC-9B96-C7F51A1D058F}
 ----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
 content-length: 0
 
 
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 155
+
+{EEEB8813-EBD2-415E-B4F0-72B52DDEF18E}|{EC3DBE3A-5E40-4B96-A67B-593FE8E67B72}|{95710548-2E7F-4FD5-B97D-CAF1396CE80B}|{17853181-56B2-4240-84FC-EFF772333FEC}
 ----version----
 language: en
 version: 1
-revision: d6795aa9-6e44-44b8-a914-02a743b1ebf8
+revision: efea14dd-f100-40b2-841d-945a3873af63
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -67,13 +81,6 @@ content-length: 12
 
 Super Tuscan
 ----field----
-field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
-name: Page Style
-key: page style
-content-length: 7
-
-Style A
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -86,14 +93,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d6795aa9-6e44-44b8-a914-02a743b1ebf8
+efea14dd-f100-40b2-841d-945a3873af63
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151027T072526:635815275267272971Z
+20151028T082604:635816175647627252Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -102,9 +109,9 @@ content-length: 14
 
 sitecore\admin
 ----version----
-language: zh-HK
+language: zh-CN
 version: 1
-revision: f9dbc83d-f27f-4ed6-8d59-09e8c6e3fedd
+revision: 8efa4337-cbb4-406a-b518-eb85ac660d3c
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -130,6 +137,76 @@ content-length: 153
 
 “Delicious autumn! My very soul is wedded to it, and if I were a bird I would fly about the earth seeking the successive autumns.” – GEORGE ELIOT, Author
 ----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 12
+
+Super Tuscan
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151028T082622Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8efa4337-cbb4-406a-b518-eb85ac660d3c
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151028T085628:635816193881910193Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 150fa5b2-f996-41a5-9569-ebcc1e432e48
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 12
+
+Super Tuscan
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Sub Headline
+key: article sub headline
+content-length: 59
+
+Photography by Andrew J. Loiterton
+Styling by Kate Jones
+
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 153
+
+“Delicious autumn! My very soul is wedded to it, and if I were a bird I would fly about the earth seeking the successive autumns.” – GEORGE ELIOT, Author
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 12
+
+Super Tuscan
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -142,14 +219,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f9dbc83d-f27f-4ed6-8d59-09e8c6e3fedd
+150fa5b2-f996-41a5-9569-ebcc1e432e48
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151021T112859:635810237395990031Z
+20151028T082753:635816176738729660Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

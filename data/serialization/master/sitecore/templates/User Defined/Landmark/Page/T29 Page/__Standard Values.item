@@ -19,8 +19,15 @@ content-length: 647
 ----version----
 language: en
 version: 1
-revision: 76901d26-423a-4f55-bde4-ebe79db2244a
+revision: 9391bb85-02c4-4558-8f58-1e63b74d4e3c
 
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 5
+
+$name
 ----field----
 field: {BA9C02AD-A33F-455F-A31F-255E2E2308EB}
 name: Commentary Alt
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-76901d26-423a-4f55-bde4-ebe79db2244a
+9391bb85-02c4-4558-8f58-1e63b74d4e3c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151020T104258:635809345785469817Z
+20151027T130218Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

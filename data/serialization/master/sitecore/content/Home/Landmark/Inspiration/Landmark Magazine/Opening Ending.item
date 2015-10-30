@@ -24,16 +24,30 @@ content-length: 38
 
 {9C462E8F-2C94-47DC-9B96-C7F51A1D058F}
 ----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
 content-length: 0
 
 
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 155
+
+{EEEB8813-EBD2-415E-B4F0-72B52DDEF18E}|{95710548-2E7F-4FD5-B97D-CAF1396CE80B}|{EC3DBE3A-5E40-4B96-A67B-593FE8E67B72}|{17853181-56B2-4240-84FC-EFF772333FEC}
 ----version----
 language: en
 version: 1
-revision: 6de808a9-0aa1-475d-a0bf-9d1689703290
+revision: 886aeafe-3d7f-4eff-9d47-157021c730ac
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -57,13 +71,6 @@ content-length: 14
 
 Opening Ending
 ----field----
-field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
-name: Page Style
-key: page style
-content-length: 7
-
-Style A
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -76,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6de808a9-0aa1-475d-a0bf-9d1689703290
+886aeafe-3d7f-4eff-9d47-157021c730ac
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151027T072503:635815275037879850Z
+20151028T083945:635816183858046861Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -92,9 +99,9 @@ content-length: 14
 
 sitecore\admin
 ----version----
-language: zh-HK
+language: zh-CN
 version: 1
-revision: 2fd9a3ed-672b-49d9-9934-09cd3b6341cd
+revision: 1e768ccc-2680-43de-ae97-5fc3cc3c1ff1
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -111,6 +118,67 @@ content-length: 22
 
 The latest at LANDMARK
 ----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 14
+
+Opening Ending
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151028T084009Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+1e768ccc-2680-43de-ae97-5fc3cc3c1ff1
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151028T084205:635816185259437016Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 1f46164e-963b-4216-a963-dc1b3e5f06ab
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 14
+
+Opening Ending
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 22
+
+The latest at LANDMARK
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 14
+
+Opening Ending
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -123,14 +191,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2fd9a3ed-672b-49d9-9934-09cd3b6341cd
+1f46164e-963b-4216-a963-dc1b3e5f06ab
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151021T114417:635810246574965038Z
+20151028T084218:635816185385694238Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

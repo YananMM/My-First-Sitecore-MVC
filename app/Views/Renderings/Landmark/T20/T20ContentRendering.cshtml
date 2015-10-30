@@ -2,6 +2,7 @@
 @using Landmark.Helper
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
+@using Sitecore.Links
 @model RenderingModel
 
 
@@ -22,9 +23,9 @@
                                     {
                                         <input type="hidden" value="@linkField.TargetItem.ID" name="targetId" />
                                     }
-                                    <button type="submit" class="gd-button gd-button-reversed">
-                                        @Html.Sitecore().Field("Button Text", Sitecore.Context.Item)
-                                    </button>
+                                    <a href="@LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))" type="button" class="gd-button gd-button-reversed">
+                                    @Html.Sitecore().Field("Button Text", Sitecore.Context.Item)
+                                </a>
                                 }
                             </form>
 

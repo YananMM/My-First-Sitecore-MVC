@@ -9,18 +9,6 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {2EE1034D-FA6F-4894-B5FD-AC31F548CE33}
 templatekey: Page Base Object
 
-----version----
-language: en
-version: 1
-revision: 47575410-9ef5-441b-98b0-41c3c6878ee4
-
-----field----
-field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
-name: Page Title
-key: page title
-content-length: 5
-
-$name
 ----field----
 field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
 name: Is Shown In Navigation
@@ -35,6 +23,18 @@ key: is shown in breadcrumb
 content-length: 1
 
 1
+----version----
+language: en
+version: 1
+revision: 47575410-9ef5-441b-98b0-41c3c6878ee4
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 5
+
+$name
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner

@@ -9,6 +9,13 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {A0884B94-3F8A-4677-A4A9-A0F3256B7E75}
 templatekey: Tab Item
 
+----field----
+field: {E5093BC2-C762-4710-B3E2-7C1676FBF908}
+name: Image
+key: image
+content-length: 58
+
+<image mediaid="{EA95536E-5637-4C85-90DC-4EB51F03CB16}" />
 ----version----
 language: en
 version: 1
@@ -21,13 +28,6 @@ key: name
 content-length: 5
 
 Tab 2
-----field----
-field: {E5093BC2-C762-4710-B3E2-7C1676FBF908}
-name: Image
-key: image
-content-length: 58
-
-<image mediaid="{EA95536E-5637-4C85-90DC-4EB51F03CB16}" />
 ----field----
 field: {5DE29C6B-6EFA-4AE8-BF7A-9F11144F0DC2}
 name: Description

@@ -13,9 +13,23 @@ templatekey: T4 Page
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Portrait Callout Image
 key: article portrait callout image
-content-length: 58
+content-length: 0
 
-<image mediaid="{CDCD367E-EDCB-499F-8FD3-7042ED92BE42}" />
+
+----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -33,7 +47,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: a9fbeee5-cce8-4f2f-b6fd-7faf623de3e9
+revision: 6a90fdc8-fa8d-42f4-93c0-599f86fc6086
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
@@ -72,20 +86,6 @@ content-length: 42
 
 Heather March Brings Elegance to the Table
 ----field----
-field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
-name: Is Shown In Navigation
-key: is shown in navigation
-content-length: 0
-
-
-----field----
-field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
-name: Is Shown In Breadcrumb
-key: is shown in breadcrumb
-content-length: 0
-
-
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -98,14 +98,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a9fbeee5-cce8-4f2f-b6fd-7faf623de3e9
+6a90fdc8-fa8d-42f4-93c0-599f86fc6086
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151026T134404Z
+20151028T071145Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

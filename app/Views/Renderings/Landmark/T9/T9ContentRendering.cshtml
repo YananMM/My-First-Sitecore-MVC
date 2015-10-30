@@ -35,7 +35,7 @@
     </div>
     @Html.Sitecore().Placeholder("update-data")
     <div class="gd-contact-share">
-        <h4><span class="icomoon-share"></span>@Html.Sitecore().Field("Share Title")</h4>
+        <h4>@Html.Sitecore().Field("Share Title")</h4>
         @{
             List<Item> mediaItems = Sitecore.Context.Database.GetItem(ItemGuids.ContactUsFormSocailFolder).Children.ToList();
         }

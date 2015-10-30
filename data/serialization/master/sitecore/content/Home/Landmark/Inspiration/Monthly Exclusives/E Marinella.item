@@ -10,12 +10,19 @@ template: {A46D7A20-B29F-4C4F-8922-0B70555CD6BC}
 templatekey: T27 Page
 
 ----field----
-field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
-name: Article Portrait Callout Image
-key: article portrait callout image
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
 content-length: 58
 
 <image mediaid="{2A89F0A2-1DF1-42A3-B202-78A695546B75}" />
+----field----
+field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
+name: Article Portrait Callout Image
+key: article portrait callout image
+content-length: 0
+
+
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -26,7 +33,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 606484cb-462a-49bf-ab93-eb4840e3dd1f
+revision: db84394b-d29c-4aec-9cea-4feb21915ee3
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -62,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-606484cb-462a-49bf-ab93-eb4840e3dd1f
+db84394b-d29c-4aec-9cea-4feb21915ee3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T143617Z
+20151028T051920Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

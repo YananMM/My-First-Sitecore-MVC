@@ -9,10 +9,17 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {E3B0C164-8AB5-4BF5-83CB-E2E51AA87166}
 templatekey: General Link Object
 
+----field----
+field: {786F352A-8163-4B1F-845E-33183FDB61A9}
+name: Link URL
+key: link url
+content-length: 83
+
+<link linktype="external" url="http://landmarkpressroom.hk/" anchor="" target="" />
 ----version----
 language: en
 version: 1
-revision: 732b468e-05aa-48b0-b1dd-c7617a7a03f5
+revision: e8058195-6e7c-4f5a-8863-9eb550f44c23
 
 ----field----
 field: {95B968E4-4479-481D-AE50-9D0083BC242E}
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-732b468e-05aa-48b0-b1dd-c7617a7a03f5
+e8058195-6e7c-4f5a-8863-9eb550f44c23
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150721T083355Z
+20151029T052030Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

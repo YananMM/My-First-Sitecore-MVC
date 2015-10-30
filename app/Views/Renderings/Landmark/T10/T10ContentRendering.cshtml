@@ -31,7 +31,7 @@
         </div>
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-            @if (pages.Count != 0)
+            @if (pages !=null && pages.Count != 0)
             {
                 int i = 1;
                 foreach (var item in pages)
@@ -70,7 +70,7 @@ i++;
                     /
                 </span>
                 <span class="gd-carousel-control gd-carousel-no">
-                    3
+                    @pages.Count
                 </span>
                 <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="next">
                     <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>

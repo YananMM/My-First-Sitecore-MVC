@@ -9,11 +9,6 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {4618F3F9-EDEA-49B3-A7D5-16E24B7BD21E}
 templatekey: Social Media Object
 
-----version----
-language: en
-version: 1
-revision: ff07a899-7e07-451d-bc82-f2f654258fb6
-
 ----field----
 field: {513101BC-BF57-4461-8454-DDA9D7527C51}
 name: Social Media Title
@@ -21,6 +16,11 @@ key: social media title
 content-length: 5
 
 $name
+----version----
+language: en
+version: 1
+revision: ff07a899-7e07-451d-bc82-f2f654258fb6
+
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner

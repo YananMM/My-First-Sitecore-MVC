@@ -10,6 +10,20 @@ template: {E04426CD-2C71-48F8-A1CA-C507C2CAB178}
 templatekey: Page Object
 
 ----field----
+field: {D0CC41B3-3000-4ED5-870B-8C89E72C0DA0}
+name: Ad Reference Item
+key: ad reference item
+content-length: 38
+
+{3E551A3A-E38C-456F-B6D6-A3C8C77421BF}
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -36,26 +50,12 @@ version: 1
 revision: 75318fcf-b09d-496b-9b9a-bb617f83aa02
 
 ----field----
-field: {D0CC41B3-3000-4ED5-870B-8C89E72C0DA0}
-name: Ad Reference Item
-key: ad reference item
-content-length: 38
-
-{3E551A3A-E38C-456F-B6D6-A3C8C77421BF}
-----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 8
 
 Services
-----field----
-field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
-name: Is Shown In Breadcrumb
-key: is shown in breadcrumb
-content-length: 0
-
-
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

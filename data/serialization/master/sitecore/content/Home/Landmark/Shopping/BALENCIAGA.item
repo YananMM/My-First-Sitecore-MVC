@@ -17,6 +17,20 @@ content-length: 58
 
 <image mediaid="{2460FB1C-213C-4E3C-86AB-0DAB474D7B8A}" />
 ----field----
+field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
+name: Building
+key: building
+content-length: 38
+
+{02889C6B-A746-41A3-9A77-8E50903D065D}
+----field----
+field: {3534AD05-BF49-4763-822B-25D97D9F7283}
+name: Floor
+key: floor
+content-length: 38
+
+{BDA32531-667F-420C-881F-4550CD6E755E}
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -43,26 +57,12 @@ content-length: 10
 
 BALENCIAGA
 ----field----
-field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
-name: Building
-key: building
-content-length: 38
-
-{02889C6B-A746-41A3-9A77-8E50903D065D}
-----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 10
 
 BALENCIAGA
-----field----
-field: {3534AD05-BF49-4763-822B-25D97D9F7283}
-name: Floor
-key: floor
-content-length: 38
-
-{BDA32531-667F-420C-881F-4550CD6E755E}
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

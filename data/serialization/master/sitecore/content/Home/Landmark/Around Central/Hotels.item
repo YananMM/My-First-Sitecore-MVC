@@ -10,6 +10,20 @@ template: {E04426CD-2C71-48F8-A1CA-C507C2CAB178}
 templatekey: Page Object
 
 ----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 1
+
+1
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
 name: __Renderings
 key: __renderings
@@ -28,20 +42,6 @@ key: page title
 content-length: 6
 
 Hotels
-----field----
-field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
-name: Is Shown In Navigation
-key: is shown in navigation
-content-length: 1
-
-1
-----field----
-field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
-name: Is Shown In Breadcrumb
-key: is shown in breadcrumb
-content-length: 0
-
-
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

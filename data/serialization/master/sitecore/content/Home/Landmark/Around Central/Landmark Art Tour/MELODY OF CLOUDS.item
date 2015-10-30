@@ -24,12 +24,26 @@ content-length: 38
 
 {BE7B77B5-6010-472D-AA52-764C4E716EA0}
 ----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{58B13F57-E404-4EE5-A5BC-7C62BFA6FF99}" src="~/media/58b13f57e4044ee5a5bc7c62bfa6ff99.ashx" />
+----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
 content-length: 58
 
 <image mediaid="{B3137F08-0C2F-40BE-A5DB-5AA3804AB36E}" />
+----field----
+field: {22B6E709-1F38-4AF9-8D6C-7E3443E4F3ED}
+name: Floor and Building
+key: floor and building
+content-length: 38
+
+{79EBEDCD-CED4-4C05-993C-D8B6F30BE2E0}
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -64,13 +78,6 @@ content-length: 10
 
 160X200 CM
 ----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{70E73511-A14A-4BA7-A347-5D980678306A}" src="~/media/70e73511a14a4ba7a3475d980678306a.ashx" />
-----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
 key: art key
@@ -84,13 +91,6 @@ key: art description
 content-length: 80
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit porro, nemo modi.
-----field----
-field: {22B6E709-1F38-4AF9-8D6C-7E3443E4F3ED}
-name: Floor and Building
-key: floor and building
-content-length: 38
-
-{79EBEDCD-CED4-4C05-993C-D8B6F30BE2E0}
 ----field----
 field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
 name: Light Box Text
@@ -139,13 +139,6 @@ content-length: 21
 
 MELODY OF CLOUDS,2013
 ----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{2110C18D-623C-47F7-A2ED-01DE4C1D2CA2}" src="~/media/2110c18d623c47f7a2ed01de4c1d2ca2.ashx" />
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -185,13 +178,6 @@ key: art title
 content-length: 21
 
 MELODY OF CLOUDS,2013
-----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{58B13F57-E404-4EE5-A5BC-7C62BFA6FF99}" src="~/media/58b13f57e4044ee5a5bc7c62bfa6ff99.ashx" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

@@ -38,6 +38,20 @@ content-length: 38
 
 {63A24BBD-6863-4085-846D-54FAB9C86B80}
 ----field----
+field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
+name: Page Style
+key: page style
+content-length: 7
+
+Style A
+----field----
+field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
+name: Tags
+key: tags
+content-length: 155
+
+{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -85,20 +99,6 @@ content-length: 15
 
 FashionForeword
 ----field----
-field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
-name: Page Style
-key: page style
-content-length: 7
-
-Style A
-----field----
-field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
-name: Tags
-key: tags
-content-length: 155
-
-{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}
-----field----
 field: {C7837E33-73D8-4328-9350-8A9CFD1819F4}
 name: Related Story Label
 key: related story label
@@ -143,15 +143,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f49d2233-e3ec-47da-9912-fae802ee999f
+revision: ff8897c6-924a-41a2-b0ab-ef247c097f5b
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 32
+content-length: 31
 
-#FashionForeword with Tina Leung
+FashionForeword with Tina Leung
 ----field----
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
@@ -166,6 +166,13 @@ key: article intro
 content-length: 109
 
 Roger Vivier’s Bruno Frisoni talks to our fashion director about inspiration, aspiration and the power of now
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 31
+
+FashionForeword with Tina Leung
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -193,14 +200,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f49d2233-e3ec-47da-9912-fae802ee999f
+ff8897c6-924a-41a2-b0ab-ef247c097f5b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151020T023116:635809050765706885Z
+20151028T085015:635816190150976796Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -211,7 +218,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: e68e7ecd-ae0c-4263-8eb7-8d90f55889e8
+revision: cc458d40-b140-46e0-8d87-0361a85bf4d5
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -234,6 +241,13 @@ key: article intro
 content-length: 109
 
 Roger Vivier’s Bruno Frisoni talks to our fashion director about inspiration, aspiration and the power of now
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 31
+
+FashionForeword with Tina Leung
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -261,14 +275,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e68e7ecd-ae0c-4263-8eb7-8d90f55889e8
+cc458d40-b140-46e0-8d87-0361a85bf4d5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151019T100929:635808461697068483Z
+20151028T085020:635816190208510087Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
