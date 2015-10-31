@@ -482,7 +482,7 @@ namespace Landmark.Helper
             foreach (Language culture in languagesCollection)
             {
                 Language sourceLanguage = LanguageManager.GetLanguage(culture.Name, Factory.GetDatabase("web"));
-                if (!Sitecore.Context.Culture.EnglishName.Equals(culture.CultureInfo.EnglishName))
+                if (!Sitecore.Context.Culture.EnglishName.Contains(culture.CultureInfo.EnglishName))
                     languages.Add(sourceLanguage);
             }
             return languages;

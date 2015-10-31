@@ -30,7 +30,7 @@
         <div class="gd-brief-body">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    @if (date.Value!=null)
+                    @if (!string.IsNullOrEmpty(date.Value))
                     {
                         <p>@LandmarkHelper.ToValidDateTime(date).ToString("MMM dd,yyyy", CultureInfo.InvariantCulture)</p>
                     }
@@ -52,7 +52,7 @@
             @foreach (Item child in articles)
             {
                 @*Item article = child.TemplateID.ToString() == ItemGuids.T4PageTemplate ? child : ((ReferenceField)child.Fields["Reference Item"]).TargetItem;*@
-                ReferenceField typeField = ((ReferenceField)child.Fields["Article Type"]);
+                ReferenceField typeField = ((ReferenceField) child.Fields["Article Type"]);
                 string imagesrc = LandmarkHelper.GetCallOutImage(child);
                 <div class="gd-promo-box">
                     <a href="@LinkManager.GetItemUrl(child)" class="gd-hover-img">
@@ -72,7 +72,10 @@
         </div>
 
     </div>
-<div class="navigation gd-promo-more">
-        <a href="?page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreGlossaryItem)</a>
-    </div>
+    @if (helper.GetTheRestArticles((Int32.Parse(page)+1).ToString()).Count > 0)
+    {
+        <div class="navigation gd-promo-more">
+            <a href="?page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreGlossaryItem)</a>
+        </div>
+    }
 </div>
