@@ -8,66 +8,63 @@
 @model RenderingModel
 @{
     ShoppingHelper shoppingHelper = new ShoppingHelper();
+    var currentItem = Sitecore.Context.Item;
 }
 
 <h2>@Html.Sitecore().Field("Brand Title")</h2>
 <div class="table-responsive gd-mainimage-table">
     <table>
         <tbody>
-            <tr>
-                <th>
-                    @{
-                        var openingHour = SitecoreItems.OpenningHoursItem.Fields["Glossary Value"].ToString();
-                        if (!string.IsNullOrEmpty(openingHour))
-                        {<text>
-                            @Html.Sitecore().Field("Glossary Value", SitecoreItems.OpenningHoursItem)
-                        </text>
-                        }
-                    }
-                </th>
-                <td>
-                    @Html.Sitecore().Field("Opening Hours")
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    @{
-                        var contact = SitecoreItems.ContactItem.Fields["Glossary Value"].ToString();
-                        if (!string.IsNullOrEmpty(contact))
-                        {<text>
-                            @Html.Sitecore().Field("Glossary Value", SitecoreItems.ContactItem)
-                        </text>
-                        }
-                    }
-                </th>
-                <td>@Html.Sitecore().Field("Contact")</td>
-            </tr>
-            <tr>
-                <th>
-                    @{
-                        var where = SitecoreItems.WhereItem.Fields["Glossary Value"].ToString();
-                        if (!string.IsNullOrEmpty(where))
-                        {<text>
-                            @Html.Sitecore().Field("Glossary Value", SitecoreItems.WhereItem)
-                        </text>
-                        }
-                    }
-                </th>
-                <td>
-                    @{
-                        var floor = shoppingHelper.GetShopFloor(Sitecore.Context.Item);
-
-                        var whereDescription = Html.Sitecore().Field("Area") + "," + floor["Floor Title"];
-                        var fullWhere = whereDescription + "," + floor.Parent["Building Title"];
-                    }
-                    @fullWhere<br><a href="#" class="gd-link-map gd-lightbox-link gd-lightbox-pin" data-pin="@Html.Sitecore().ImageFieldSrc("LocationX",Sitecore.Context.Item),@Html.Sitecore().ImageFieldSrc("LocationY",Sitecore.Context.Item)" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image",floor)" data-lighttitle="@Html.Sitecore().Field("Light Box Text") @whereDescription of @floor.Parent["Building Title"]">
-    <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.FloorPlanItem)
-</a>
-                </td>
-            </tr>
+        @{
+            var openingHour = currentItem.Fields["Opening Hours"].ToString();
+            if (!string.IsNullOrEmpty(openingHour))
+            {
+                <tr>
+                    <th>
+                        @Html.Sitecore().Field("Glossary Value", SitecoreItems.OpenningHoursItem).ToString().ToUpper()
+                    </th>
+                    <td>
+                        @Html.Sitecore().Field("Opening Hours")
+                    </td>
+                </tr>
+            }
+        }
+        @{
+            var contact = currentItem.Fields["Contact"].ToString();
+            if (!string.IsNullOrEmpty(contact))
+            {
+                <tr>
+                    <th>
+                        @Html.Sitecore().Field("Glossary Value", SitecoreItems.ContactItem).ToString().ToUpper()
+                    </th>
+                    <td>@Html.Sitecore().Field("Contact")</td>
+                </tr>
+            }
+        }
+        @{
+            var floor = shoppingHelper.GetShopFloor(currentItem);
+            var whereDescription = Html.Sitecore().Field("Area") + "," + floor["Floor Title"];
+            var fullWhere = whereDescription + "," + floor.Parent["Building Title"];
+            if (!string.IsNullOrEmpty(fullWhere))
+            {
+                <tr>
+                    <th>
+                        @Html.Sitecore().Field("Glossary Value", SitecoreItems.WhereItem).ToString().ToUpper()
+                    </th>
+                    <td>
+                        @fullWhere<br><a href="#" class="gd-link-map gd-lightbox-link gd-lightbox-pin" data-pin="@Html.Sitecore().ImageFieldSrc("LocationX", Sitecore.Context.Item),@Html.Sitecore().ImageFieldSrc("LocationY", Sitecore.Context.Item)" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)" data-lighttitle="@Html.Sitecore().Field("Light Box Text") @whereDescription of @floor.Parent["Building Title"]">
+                            <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.FloorPlanItem).ToString().ToUpper()
+                        </a>
+                    </td>
+                </tr>
+            }
+        }
         </tbody>
     </table>
 </div>
-<a href="@Html.Sitecore().Field("Official Website Url")" class="gd-link-brief">
-    @Html.Sitecore().Field("Glossary Value", SitecoreItems.OfficialWebsiteItem) <span class="icomoon-chevron-small-right"></span>
-</a>
+@if (!string.IsNullOrEmpty(currentItem.Fields["Official Website Url"].ToString()))
+{
+    <a href="@Html.Sitecore().Field("Official Website Url")" class="gd-link-brief">
+        @Html.Sitecore().Field("Glossary Value", SitecoreItems.OfficialWebsiteItem).ToString().ToUpper() <span class="icomoon-chevron-small-right"></span>
+    </a>
+}
