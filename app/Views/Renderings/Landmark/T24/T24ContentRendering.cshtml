@@ -11,8 +11,10 @@
     @Html.Sitecore().Placeholder("t24page-title")
     <div class="gd-exclusive">
         <div class="row">
-            <div class="col-sm-6 gd-full-img">
-                <img data-src="@Html.Sitecore().ImageFieldSrc("Service Image", Sitecore.Context.Item)">
+            <div class="col-sm-6">
+                <div class="gd-full-img">
+                    <img data-src="@Html.Sitecore().ImageFieldSrc("Service Image", Sitecore.Context.Item)" class="lazy-loaded">
+                </div>
             </div>
             <div class="col-sm-6">
                 <div class="gd-content-details">

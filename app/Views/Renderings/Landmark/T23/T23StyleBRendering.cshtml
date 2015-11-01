@@ -19,7 +19,7 @@
     <div class="gd-content-details">
         <h3>@Html.Sitecore().Field("Article Headline")</h3>
         @if (storyDate.ToString() != "Monday, January 01, 0001 12:00 AM")
-        {
+        {h
             <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
         }
         <h6>@Html.Sitecore().Field("Article Sub Headline")</h6>
