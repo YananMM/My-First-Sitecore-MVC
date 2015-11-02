@@ -569,42 +569,42 @@ namespace Landmark.Internal_Handlers
                             if (shopTag.Location_Atrium.StartsWith("Y"))
                             {
                                 // TODO: Location_Atrium
-                                tags.Add("");
+                                tags.Add("{C034122F-A68F-4E3C-827E-C1898533C08E}");
                             }
                             else if (shopTag.Location_Princes.StartsWith("Y"))
                             {
                                 // TODO: Location_Princes
-                                tags.Add("");
+                                tags.Add("{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}");
                             }
                             else if (shopTag.Location_Alexendra.StartsWith("Y"))
                             {
                                 // TODO: Location_Alexendra
-                                tags.Add("");
+                                tags.Add("{B597804A-C4D7-44FB-9FAC-490726EEB3D9}");
                             }
                             else if (shopTag.Location_Chater.StartsWith("Y"))
                             {
                                 // TODO: Location_Chater
-                                tags.Add("");
+                                tags.Add("{37C1F81A-7605-4539-808B-C4B487FDB8DE}");
                             }
                             else if (shopTag.Location_Other_EdinburghTower.StartsWith("Y"))
                             {
                                 // TODO: Location_Other_EdinburghTower
-                                tags.Add("");
+                                tags.Add("{132E7671-084F-4DFD-9173-FEFB6A67FBAA}");
                             }
                             else if (shopTag.Location_Other_JardineHouse.StartsWith("Y"))
                             {
                                 // TODO: Location_Other_JardineHouse
-                                tags.Add("");
+                                tags.Add("{1DA4C84C-5353-4961-9C01-4A480E81C865}");
                             }
                             else if (shopTag.Location_Other_MandarinOrientalHotel.StartsWith("Y"))
                             {
                                 // TODO: Location_Other_MandarinOrientalHotel
-                                tags.Add("");
+                                tags.Add("{6ADD337A-5273-4504-AD72-8C601D69C6F9}");
                             }
                             else if (shopTag.Location_Other_OneExchangeSquare.StartsWith("Y"))
                             {
                                 // TODO: Location_Other_OneExchangeSquare
-                                tags.Add("");
+                                tags.Add("{838D33D8-9AC8-4369-AB18-9470EADCD49B}");
                             }
                             else if (shopTag.Shop_MEN.StartsWith("Y"))
                             {
@@ -674,7 +674,7 @@ namespace Landmark.Internal_Handlers
                             else if (shopTag.Shop_MEN_VIPRoom.StartsWith("Y"))
                             {
                                 // TODO: Shop_MEN_VIPRoom
-                                tags.Add("");
+                                tags.Add("{56FED65F-5267-4350-B440-F22DC2B2218F}");
                             }
                             else if (shopTag.Shop_MEN_LANDMARKMEN.StartsWith("Y"))
                             {
@@ -691,7 +691,7 @@ namespace Landmark.Internal_Handlers
                             else if (shopTag.Shop_WOMEN_ActiveWear.StartsWith("Y"))
                             {
                                 // TODO: Shop_WOMEN_ActiveWear
-                                tags.Add("");
+                                tags.Add("{BF280597-458A-45C0-97FE-ED4614C75CAF}");
                             }
                             else if (shopTag.Shop_WOMEN_Bags.StartsWith("Y"))
                             {
@@ -712,7 +712,7 @@ namespace Landmark.Internal_Handlers
                             else if (shopTag.Shop_WOMEN_VIPRoom.StartsWith("Y"))
                             {
                                 // TODO: Shop_WOMEN_VIPRoom
-                                tags.Add("");
+                                tags.Add("{6CD9230F-42B3-476C-B074-F2C099B8C515}");
                             }
                             else if (shopTag.Shop_CHILDRENBABIES.StartsWith("Y"))
                             {
@@ -861,7 +861,7 @@ namespace Landmark.Internal_Handlers
                             else if (shopTag.Shop_OTHER.StartsWith("Y"))
                             {
                                 // Todo: Shop_OTHER
-                                tags.Add("");
+                                tags.Add("{A8B038A4-45C9-4690-A418-2712B2650DEC}");
                             }
                             #endregion
                         }
@@ -872,47 +872,47 @@ namespace Landmark.Internal_Handlers
                             if (dineTag.Location_Atrium.StartsWith("Y"))
                             {
                                 // TODO: Location_Atrium
-                                tags.Add("");
+                                tags.Add("{C034122F-A68F-4E3C-827E-C1898533C08E}");
                             }
                             else if (dineTag.Location_Princes.StartsWith("Y"))
                             {
                                 // TODO: Location_Princes
-                                tags.Add("");
+                                tags.Add("{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}");
                             }
                             else if (dineTag.Location_Alexendra.StartsWith("Y"))
                             {
                                 // TODO: Location_Alexendra
-                                tags.Add("");
+                                tags.Add("{B597804A-C4D7-44FB-9FAC-490726EEB3D9}");
                             }
                             else if (dineTag.Location_Chater.StartsWith("Y"))
                             {
                                 // TODO: Location_Chater
-                                tags.Add("");
+                                tags.Add("{37C1F81A-7605-4539-808B-C4B487FDB8DE}");
                             }
                             else if (dineTag.Location_Other_EdinburghTower.StartsWith("Y"))
                             {
                                 // TODO: Location_Other_EdinburghTower
-                                tags.Add("");
+                                tags.Add("{132E7671-084F-4DFD-9173-FEFB6A67FBAA}");
                             }
                             else if (dineTag.Location_Other_JardineHouse.StartsWith("Y"))
                             {
                                 // TODO: Location_Other_JardineHouse
-                                tags.Add("");
+                                tags.Add("{1DA4C84C-5353-4961-9C01-4A480E81C865}");
                             }
                             else if (dineTag.Location_Other_MandarinOrientalHotel.StartsWith("Y"))
                             {
                                 // TODO: Location_Other_MandarinOrientalHotel
-                                tags.Add("");
+                                tags.Add("{6ADD337A-5273-4504-AD72-8C601D69C6F9}");
                             }
                             else if (dineTag.Location_Other_OneExchangeSquare.StartsWith("Y"))
                             {
                                 // TODO: Location_Other_OneExchangeSquare
-                                tags.Add("");
+                                tags.Add("{838D33D8-9AC8-4369-AB18-9470EADCD49B}");
                             }
                             else if (dineTag.Location_Other_TwoExchangeSquare.StartsWith("Y"))
                             {
                                 // TODO: Location_Other_TwoExchangeSquare
-                                tags.Add("");
+                                tags.Add("{B7798E58-05C8-4513-9C8C-F953674DA86D}");
                             }
                             else if (dineTag.Dining_MichelinStarRestaurants.StartsWith("Y"))
                             {
@@ -1022,27 +1022,27 @@ namespace Landmark.Internal_Handlers
             {
                 case ("the-forum"):
                     // todo
-                    floor = "";
+                    floor = "{1009E80F-6461-43D7-B0F9-C2ACB929C17E}";
                     break;
                 case ("1&2exchangesquare-1F"):
                     // todo
-                    floor = "";
+                    floor = "{0C3168A1-1A15-4920-9948-5AE01E8D628B}";
                     break;
                 case ("1exchangesquare - 3F"):
                     // todo
-                    floor = "";
+                    floor = "{1363D861-B152-4162-9005-82872E183741}";
                     break;
                 case ("3exchangesquare"):
                     // todo
-                    floor = "";
+                    floor = "{8EAF2B69-A302-4833-8376-60E1E9010D6E}";
                     break;
                 case ("jardine-house-01-GF"):
                     // todo
-                    floor = "";
+                    floor = "{EDD97B8A-24FC-4629-8091-97ED4D907003}";
                     break;
                 case ("jardine-house-02-1F"):
                     // todo
-                    floor = "";
+                    floor = "{3C2CE7FA-F1B0-42A6-9FC3-53D53BDD6ABF}";
                     break;
                 case ("landmark-alexandra-01-BF"):
                     floor = "{6845F4BA-3515-4E03-9A10-373D6A7F144B}";

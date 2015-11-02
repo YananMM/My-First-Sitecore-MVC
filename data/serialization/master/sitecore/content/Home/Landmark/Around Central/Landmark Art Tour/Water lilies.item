@@ -2,9 +2,9 @@
 version: 1
 id: {FBABEEF1-95EE-4C23-86DF-9A5402822EC0}
 database: master
-path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/Water-lilies
+path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/Water lilies
 parent: {5C03DD0D-4881-4A9B-A58D-5FFA101B3533}
-name: Water-lilies
+name: Water lilies
 master: {00000000-0000-0000-0000-000000000000}
 template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
 templatekey: T29 Page
@@ -16,6 +16,13 @@ key: created time
 content-length: 4
 
 2012
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 10
+
+150X200 CM
 ----field----
 field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
 name: Artist
@@ -54,7 +61,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 9f6afec8-9dca-41b3-b2f3-efa2428a4cc5
+revision: 1559f1aa-7b15-4e3c-9d55-2c788eec217d
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -70,13 +77,6 @@ key: art title
 content-length: 18
 
 Water lilies, 2013
-----field----
-field: {25ECD930-4134-4B41-A387-D063717B49B9}
-name: Art Size
-key: art size
-content-length: 10
-
-150X200 CM
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -104,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9f6afec8-9dca-41b3-b2f3-efa2428a4cc5
+1559f1aa-7b15-4e3c-9d55-2c788eec217d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151027T072820Z
+20151031T024222Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

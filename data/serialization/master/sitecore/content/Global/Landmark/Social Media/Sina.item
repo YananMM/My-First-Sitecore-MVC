@@ -9,11 +9,6 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {4618F3F9-EDEA-49B3-A7D5-16E24B7BD21E}
 templatekey: Social Media Object
 
-----version----
-language: en
-version: 1
-revision: a328d84f-fb96-4204-838e-ddcda450b5ff
-
 ----field----
 field: {513101BC-BF57-4461-8454-DDA9D7527C51}
 name: Social Media Title
@@ -28,6 +23,11 @@ key: social media css
 content-length: 18
 
 icomoon-sina-weibo
+----version----
+language: en
+version: 1
+revision: a328d84f-fb96-4204-838e-ddcda450b5ff
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

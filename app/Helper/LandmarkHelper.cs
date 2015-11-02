@@ -74,18 +74,11 @@ namespace Landmark.Helper
         {
             string result = url;
             //Translate language codes
-            result = result.Replace("/zh-HK/", "/tc/");
-            result = result.Replace("/zh-CN/", "/sc/");
-            //Fix root paths
-            result = result.Replace("/en.aspx", "/en/default.aspx");
-            result = result.Replace("/tc.aspx", "/tc/default.aspx");
-            result = result.Replace("/zh-HK.aspx", "/tc/default.aspx");
-            result = result.Replace("/sc.aspx", "/sc/default.aspx");
-            result = result.Replace("/zh-CN.aspx", "/sc/default.aspx");
-            //Fix double prefixes
-            result = result.Replace("/en/en/", "/en/");
-            result = result.Replace("/sc/sc/", "/sc/");
-            result = result.Replace("/tc/tc/", "/tc/");
+            result = result.Replace("/zh-hk/", "/tc/");
+            result = result.Replace("/zh-cn/", "/sc/");
+            result = result.Replace("/zh-hk", "/tc/");
+            result = result.Replace("/zh-cn", "/sc/");
+
             return result;
         }
 
@@ -479,6 +472,20 @@ namespace Landmark.Helper
                     url = "#";
             }
             return url;
+        }
+
+        public static IEnumerable<Language> GetLanguages()
+        {
+            LanguageCollection languagesCollection = Sitecore.Context.Database.GetLanguages();
+            List<CultureInfo> cultureInfos = new List<CultureInfo>();
+            List<Language> languages = new List<Language>();
+            foreach (Language culture in languagesCollection)
+            {
+                Language sourceLanguage = LanguageManager.GetLanguage(culture.Name, Factory.GetDatabase("web"));
+                if (!Sitecore.Context.Culture.EnglishName.Contains(culture.CultureInfo.EnglishName))
+                    languages.Add(sourceLanguage);
+            }
+            return languages;
         }
 
     }

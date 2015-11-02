@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {1DA4C84C-5353-4961-9C01-4A480E81C865}
+id: {132E7671-084F-4DFD-9173-FEFB6A67FBAA}
 database: master
-path: /sitecore/content/Global/Landmark/Tags/Location/Other/Jardine House
+path: /sitecore/content/Global/Landmark/Tags/Category/Location/Other/Edinburgh Tower
 parent: {98A1A184-04E6-414A-BEBF-4670AD3532E0}
-name: Jardine House
+name: Edinburgh Tower
 master: {00000000-0000-0000-0000-000000000000}
 template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
 templatekey: Tag Object
@@ -12,36 +12,36 @@ templatekey: Tag Object
 ----version----
 language: en
 version: 1
-revision: fcf50e6c-b467-4765-a78f-c3969d02680c
+revision: 3392d66f-429d-473a-8709-cda62ea83dbd
 
 ----field----
 field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
 name: Tag Name
 key: tag name
-content-length: 13
+content-length: 15
 
-Jardine House
+Edinburgh Tower
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20151029T083105Z
+20151029T083051Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-fcf50e6c-b467-4765-a78f-c3969d02680c
+3392d66f-429d-473a-8709-cda62ea83dbd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151029T083105Z
+20151029T083051Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

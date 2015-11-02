@@ -1,0 +1,51 @@
+----item----
+version: 1
+id: {C034122F-A68F-4E3C-827E-C1898533C08E}
+database: master
+path: /sitecore/content/Global/Landmark/Tags/Category/Location/Atrium
+parent: {5DBD5524-2BFC-457C-820E-03D90C78DA6D}
+name: Atrium
+master: {00000000-0000-0000-0000-000000000000}
+template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
+templatekey: Tag Object
+
+----version----
+language: en
+version: 1
+revision: d722a42c-d6f3-4686-977f-d692f29887d4
+
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 6
+
+Atrium
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151029T082921Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+d722a42c-d6f3-4686-977f-d692f29887d4
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151029T082921Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
