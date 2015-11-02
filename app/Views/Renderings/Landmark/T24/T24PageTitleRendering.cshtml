@@ -27,8 +27,18 @@
 
     <div class="gd-controls-m visible-xs">
         <select class="form-control">
-            <option value="@Sitecore.Links.LinkManager.GetItemUrl(overViewPage)">@Html.Sitecore().Field("Page Title", overViewPage)</option>
-            <option value="@Sitecore.Links.LinkManager.GetItemUrl(valetParkingPage)">@Html.Sitecore().Field("Page Title", valetParkingPage)</option>
+            @if (Sitecore.Context.Item.ID.ToString() == overViewPage.ID.ToString())
+            {
+                <option value="@Sitecore.Links.LinkManager.GetItemUrl(overViewPage)">@Html.Sitecore().Field("Page Title", overViewPage)</option>
+                <option value="@Sitecore.Links.LinkManager.GetItemUrl(valetParkingPage)">@Html.Sitecore().Field("Page Title", valetParkingPage)</option>
+            }
+            else
+            {
+                <option value="@Sitecore.Links.LinkManager.GetItemUrl(valetParkingPage)">@Html.Sitecore().Field("Page Title", valetParkingPage)</option>
+                <option value="@Sitecore.Links.LinkManager.GetItemUrl(overViewPage)">@Html.Sitecore().Field("Page Title", overViewPage)</option>
+                
+            }
+            
         </select>
     </div>
 </div>

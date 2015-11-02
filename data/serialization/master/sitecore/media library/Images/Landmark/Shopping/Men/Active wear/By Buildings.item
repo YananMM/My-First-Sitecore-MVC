@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {510FF6EF-04F1-48A9-AB9F-7B9666EF8897}
+database: master
+path: /sitecore/content/Home/Landmark/Shopping/Men/Active wear/By Buildings
+parent: {74474DF1-94A2-4F8C-8E8F-E91F1B840AE0}
+name: By Buildings
+master: {EF72B181-F50E-46E5-84B4-74392DA7AA04}
+template: {0B591CE8-50CB-4CF5-9CBF-F2F6E61F23E8}
+templatekey: T13 Page
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 186
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{F408832F-6563-4BDE-B59A-22078F27CA99}" s:id="{65C42F4A-B30F-45FA-804C-6638E3BB75F4}" /></d></r>
+----version----
+language: en
+version: 1
+revision: ebebfa2b-9ad7-40b9-a048-c1a43d16783a
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 11
+
+By Buidings
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150910T015905Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ebebfa2b-9ad7-40b9-a048-c1a43d16783a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150910T015905Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
