@@ -1,7 +1,13 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Data.Items
+@using Sitecore.Data.Managers
+@using Sitecore.Globalization
 @model RenderingModel
-
+@{
+    var languages = LandmarkHelper.GetLanguages();
+    int i = 1;
+}
 <script>
   var DataLayer = { 
     /* page level data, populate value when applicable */ 
@@ -20,14 +26,29 @@
             <div class="header-social-wrapper">
                 <a href="" class="icomoon-share"></a>
                 <div class="header-social">
-                  <a href="" class="icomoon-facebook"></a>
-                  <a href="" class="icomoon-twitter"></a>
-                  <a href="" class="icomoon-sina-weibo"></a>
-                  <a href='@SitecoreItems.LandmarkConfigItem.Fields["Share Email To"].Value' class="icomoon-envelop"></a>
+                    <a href="" class="icomoon-facebook"></a>
+                    <a href="" class="icomoon-twitter"></a>
+                    <a href="" class="icomoon-sina-weibo"></a>
+                    <a href='@SitecoreItems.LandmarkConfigItem.Fields["Share Email To"].Value' class="icomoon-envelop"></a>
                 </div>
-              </div>
-            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-HK")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", SitecoreItems.TraditionalChineseGuidItem)</a> |
-            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "zh-CN")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SimplifiedChineseGuidItem)</a>
+            </div>
+            @foreach (var lan in languages)
+            {
+                foreach (Item languageText in SitecoreItems.LanguageFolderGuidItem.Children)
+                {
+                    if (languageText.DisplayName == lan.Name)
+                    {
+                        <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, @lan.Name)" class="lang-cn">@Html.Sitecore().Field("Value", languageText)</a>
+                    }
+                }
+                
+                if (i != languages.Count())
+                {
+                    @Html.Raw(" | ")
+                }
+                i ++;
+            }
+            
             <div class="sb-search">
                 @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
                 {
@@ -65,9 +86,22 @@
                     @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.MobileNavigationRenderingViewGuid)
 
                     <div class="language">
-                        <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", SitecoreItems.TraditionalChineseGuidItem)</a>
-                        <span class="gap">|</span>
-                        <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, "")" class="lang-cn">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SimplifiedChineseGuidItem)</a>
+                        @foreach (var lan in languages)
+                        {
+                            foreach (Item languageText in SitecoreItems.LanguageFolderGuidItem.Children)
+                            {
+                                if (languageText.DisplayName == lan.Name)
+                                {
+                                    <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, @lan.Name)" class="lang-cn">@Html.Sitecore().Field("Value", languageText)</a>
+                                }
+                            }
+                
+                            if (i != languages.Count())
+                            {
+                                <span class="gap">|</span>
+                            }
+                            i++;
+                        }
                     </div>
                 </div>
             </div>

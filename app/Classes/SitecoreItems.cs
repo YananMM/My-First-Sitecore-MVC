@@ -18,8 +18,7 @@ namespace Landmark.Classes
         public static readonly Item FooterNavigationItem = _web.GetItem("{5B9F3F5E-A640-4D05-8CF6-3A4591751CA9}");
         public static readonly Item ScrollToBeginGuidItem = _web.GetItem("{6EA65B2A-282C-412A-8033-536E855F630F}");
         public static readonly Item TopGuidItem = _web.GetItem("{07F2749E-EAF3-4ADB-901F-E0454763D0DF}");
-        public static readonly Item TraditionalChineseGuidItem = _web.GetItem("{28645F0A-B081-4EB2-912D-691E017B8836}");
-        public static readonly Item SimplifiedChineseGuidItem = _web.GetItem("{2FEA334B-684F-40E0-99A4-3CD3E4C704F3}");
+        public static readonly Item LanguageFolderGuidItem = _web.GetItem("{6BABA812-3842-453E-8324-F863E699A92A}");
         public static readonly Item ShareThisGuidItem = _web.GetItem("{A54A3CE6-2BEC-47CF-A63F-4A2F964C6320}");
         public static readonly Item SeeAllBrandsGuidItem = _web.GetItem("{D380FDA5-C54A-48D8-B246-21571AC525B7}");
         public static readonly Item ListingGuidItem = _web.GetItem("{DAEE85AD-9210-48C8-8E29-F7CADB157ECC}");

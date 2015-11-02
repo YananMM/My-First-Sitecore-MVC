@@ -10,32 +10,6 @@ template: {873FCBBD-5F81-4DD2-B885-DFDCA194A5D1}
 templatekey: Building Data
 
 ----field----
-field: {4A1E2FC8-CB80-42C3-BCA9-4E7E9DA0CF91}
-name: Floor Guide
-key: floor guide
-content-length: 109
-
-<file mediaid="{FDA7D14F-EAD1-482F-8299-FB70D78A4B6D}" src="~/media/fda7d14fead1482f8299fb70d78a4b6d.ashx" />
-----version----
-language: en
-version: 1
-revision: 97883dac-512d-4557-bd87-bdab01f02012
-
-----field----
-field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
-name: Building Title
-key: building title
-content-length: 6
-
-CHATER
-----field----
-field: {5471CA9B-9D9E-4332-8B37-905B47BCE65F}
-name: Building Address
-key: building address
-content-length: 54
-
-15 Queen's Road Central, LANDMARK, Central, Hong Kong.
-----field----
 field: {7EF17060-F50C-4CA3-8021-1802F0672C00}
 name: Building Svg Id
 key: building svg id
@@ -57,6 +31,46 @@ content-length: 6
 
 0.5900
 ----field----
+field: {4A1E2FC8-CB80-42C3-BCA9-4E7E9DA0CF91}
+name: Floor Guide
+key: floor guide
+content-length: 109
+
+<file mediaid="{FDA7D14F-EAD1-482F-8299-FB70D78A4B6D}" src="~/media/fda7d14fead1482f8299fb70d78a4b6d.ashx" />
+----field----
+field: {BF9DA807-1A47-4989-952D-5A3E7691E3FC}
+name: Is Landmark
+key: is landmark
+content-length: 1
+
+1
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
+----version----
+language: en
+version: 1
+revision: 9bf898d4-21da-4f45-82ce-6247d22697b4
+
+----field----
+field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
+name: Building Title
+key: building title
+content-length: 6
+
+CHATER
+----field----
+field: {5471CA9B-9D9E-4332-8B37-905B47BCE65F}
+name: Building Address
+key: building address
+content-length: 54
+
+15 Queen's Road Central, LANDMARK, Central, Hong Kong.
+----field----
 field: {4745EBC5-3D1D-4CB9-B088-06CFEB603F66}
 name: Opening Hours
 key: opening hours
@@ -76,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-97883dac-512d-4557-bd87-bdab01f02012
+9bf898d4-21da-4f45-82ce-6247d22697b4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150930T140915Z
+20151027T071406Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
