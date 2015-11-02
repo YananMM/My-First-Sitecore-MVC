@@ -5,7 +5,15 @@
         <div class="gd-pagetitle-heading">
             <h2>@Html.Sitecore().Field("Page Title")</h2>
         </div>
-        <div class="gd-pagetitle-menu"><a href="#" class="active">@Html.Sitecore().Field("Legal Title")</a> <span class="gd-pagetitle-menu-gap">|</span>  <a href="#policy">@Html.Sitecore().Field("Privacy Title")</a><span class="gd-pagetitle-menu-gap">|</span>  <a href="#terms">@Html.Sitecore().Field("Terms Title")</a>
+        <div class="gd-pagetitle-menu  hidden-xs">
+            <a href="#" class="active">@Html.Sitecore().Field("Legal Title").ToString().ToUpper()</a> <span class="gd-pagetitle-menu-gap">|</span>  <a href="#policy">@Html.Sitecore().Field("Privacy Title").ToString().ToUpper()</a><span class="gd-pagetitle-menu-gap">|</span>  <a href="#terms">@Html.Sitecore().Field("Terms Title").ToString().ToUpper()</a>
+        </div>
+        <div class="gd-controls-m visible-xs">
+            <select class="form-control">
+                <option value="#">@Html.Sitecore().Field("Legal Title").ToString().ToUpper()</option>
+                <option value="#policy">@Html.Sitecore().Field("Privacy Title").ToString().ToUpper()</option>
+                <option value="#terms">@Html.Sitecore().Field("Terms Title").ToString().ToUpper()</option>
+            </select>
         </div>
     </div>
 </div>

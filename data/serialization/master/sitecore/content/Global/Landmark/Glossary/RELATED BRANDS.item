@@ -1,47 +1,47 @@
 ----item----
 version: 1
-id: {08F976E5-66C9-4C4D-AFA9-CF7AB07245F7}
+id: {ED1B7841-C842-4A32-AA89-45FF75BA8865}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Video Object/Video Data
-parent: {82C6EA0F-D0F2-4F40-BA8A-F5E39A10D5B5}
-name: Video Data
+path: /sitecore/content/Global/Landmark/Glossary/RELATED BRANDS
+parent: {8B197E68-D618-4F66-9C07-BA8DD5DC096E}
+name: RELATED BRANDS
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {7AD93F40-7320-4CD8-89A4-D4E4BB44ADF8}
+templatekey: Glossary Object
 
 ----version----
 language: en
 version: 1
-revision: b7a85fd2-0659-4c32-b99b-f33120ff698f
+revision: c124b61d-f6ef-4f75-a571-868cd61dc4cd
 
+----field----
+field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
+name: Glossary Value
+key: glossary value
+content-length: 14
+
+RELATED BRANDS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150922T060905Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
+20151102T111804Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-b7a85fd2-0659-4c32-b99b-f33120ff698f
+c124b61d-f6ef-4f75-a571-868cd61dc4cd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151102T120002:635820624021445165Z
+20151102T112336:635820602169585310Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

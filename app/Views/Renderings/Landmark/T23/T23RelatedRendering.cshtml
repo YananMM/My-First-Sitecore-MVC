@@ -17,7 +17,7 @@
 <div class="gd-relate">
     <div class="row">
         <div class="col-sm-8">
-            <h3>@Html.Sitecore().Field("Related Story Label")</h3>
+            <h3>@Html.Sitecore().Field("Glossary Value", SitecoreItems.RelatedStoriesItem)</h3>
             <div class="row">
                 @if (relatedStoris.Count != 0)
                 {
@@ -41,7 +41,7 @@
         </div>
         <div class="col-sm-4">
             <div class="gd-relate-brand">
-                <h3>@Html.Sitecore().Field("Related Brand Label")</h3>
+                <h3>@Html.Sitecore().Field("Glossary Value", SitecoreItems.RelatedBrandItem)</h3>
                 @if (relatedBrands.Count != 0)
                 {
                     foreach (var item in relatedBrands)

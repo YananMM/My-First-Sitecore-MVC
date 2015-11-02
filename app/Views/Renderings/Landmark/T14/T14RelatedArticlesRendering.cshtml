@@ -31,7 +31,7 @@
                             video = videoItem.Fields["Video File"].ToString();
                         }
                     }
-                    <div class="carousel-image gd-lightbox-link gd-lightbox-video" data-lightsrc="@video" data-lighttitle="PUT LIGHTBOX TITLE HERE" data-lightposter="@image" data-bgsrc="@image"></div>
+                    <div class="carousel-image gd-lightbox-link gd-lightbox-video" data-lightsrc="@video" data-lighttitle="@item.Item.Fields["Article Headline"]" data-lightposter="@image" data-bgsrc="@image"></div>
                     <div class="carousel-caption">
                         <div class="carousel-caption-inner">
                             <div class="gd-carousel-detail">
