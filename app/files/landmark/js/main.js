@@ -279,9 +279,11 @@ $(document).ready(function() {
     });
 
     $('li > a:has(+ ul)', $mobileMainMenu).on('click', function(e){
-      e.preventDefault();
-      $(this).parent().toggleClass('active');
-      $(this).next('ul').slideToggle(handleMobileMenuHeight);
+      if ($(e.target).is('span')){
+        e.preventDefault();
+        $(this).parent().toggleClass('active');
+        $(this).next('ul').slideToggle(handleMobileMenuHeight);
+      }
     });
 
     $(window).on('resize', handleMobileMenuHeight);
@@ -1856,7 +1858,7 @@ $(document).ready(function() {
         rules: 'required'
     }, {
         name: 'ValidateCode',
-        rules: 'required'
+        rules: 'required|decimal'
     }], function(errors, event) {
         if (errors.length > 0) {
             // Show the errors
