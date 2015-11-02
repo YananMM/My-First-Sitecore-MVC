@@ -6,6 +6,14 @@
     InspirationHelper inspirationHelper = new InspirationHelper();
     ShoppingHelper shoppingHelper = new ShoppingHelper();
     var exclusiveItem = inspirationHelper.GetMonthlyExclusives(category: shoppingHelper.GetCategoryFromItem(Sitecore.Context.Item.ID.ToString()).ID.ToString()).FirstOrDefault();
+    MultilistField brandField = ((MultilistField)exclusiveItem.Fields["Brand"]);
+    Sitecore.Data.Items.Item brandItem = null;
+    if (brandField != null && brandField.TargetIDs != null && brandField.TargetIDs.Length > 0)
+    {
+        var brand = brandField.TargetIDs.FirstOrDefault();
+        if (Sitecore.Context.Database.GetItem(brand) != null)
+        {brandItem = Sitecore.Context.Database.GetItem(brand);}
+    }
 }
 @if(exclusiveItem!=null)
 {
@@ -15,9 +23,17 @@
         <img data-src="@LandmarkHelper.GetCallOutImage(exclusiveItem)" alt="landmark" class="lazy-loaded">
     </a>
     <div class="menbox-text">
-    <a href="#" class="menbox-title"><h3>@Html.Sitecore().Field("Article Headline", exclusiveItem)</h3></a>
-    <h4>@Html.Sitecore().Field("Article Type",((ReferenceField)exclusiveItem.Fields["Article Type"]).TargetItem).ToString().ToUpper()</h4>
-    <p>@Html.Sitecore().Field("Article Headline", exclusiveItem) (@Html.Sitecore().Field("Product Price", exclusiveItem))</p>
+        
+            @if (brandItem != null)
+            {
+                <a href="#" class="menbox-title">
+                    <h3>@Html.Sitecore().Field("Brand Title", brandItem)</h3>
+                </a>
+            }
+            
+        
+        <h4>@Html.Sitecore().Field("Article Type", ((ReferenceField) exclusiveItem.Fields["Article Type"]).TargetItem).ToString().ToUpper()</h4>
+        <p>@Html.Sitecore().Field("Article Headline", exclusiveItem)</p>
     </div>
 </div>
 }

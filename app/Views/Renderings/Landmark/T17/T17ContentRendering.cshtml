@@ -23,7 +23,10 @@
                 <div class="gd-mainimage-brief3">
                     <h2>@Html.Sitecore().Field("Carousel Title")</h2>
                     <p>@Html.Sitecore().Field("Carousel Description")</p>
-                    <a href="@Html.Sitecore().Field("Button Link")" class="gd-button gd-button-reversed" type="button">@Html.Sitecore().Field("Button Text")</a>
+                    @{
+                        LinkField link = Sitecore.Context.Item.Fields["Button Link"];
+                    }
+                    <a href="@link.Url" target="@LandmarkHelper.GetLinkTarget(Sitecore.Context.Item,"Button Link")" class="gd-button gd-button-reversed" type="button">@Html.Sitecore().Field("Button Text")</a>
                 </div>
             </div>
         </div>
@@ -41,7 +44,10 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="gd-promotion-box">
-                                <a href="@Html.Sitecore().Field("Left Link")" class="gd-hover-img">
+                                @{
+                LinkField leftlink = Sitecore.Context.Item.Fields["Left Link"];
+                    }
+                                <a href="@leftlink.Url" target="@LandmarkHelper.GetLinkTarget(Sitecore.Context.Item,"Left Link")" class="gd-hover-img">
                                     <div class="gd-hover-img-area">
                                         <div class="gd-hover-img-mask"></div>
                                         <img data-src="@Html.Sitecore().ImageFieldSrc("Left Image", item)">
@@ -53,7 +59,10 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="gd-promotion-box">
-                                <a href="@Html.Sitecore().Field("Right Link")" class="gd-hover-img">
+                                @{
+                LinkField rightlink = Sitecore.Context.Item.Fields["Right Link"];
+                    }
+                                <a href="@rightlink.Url" target="@LandmarkHelper.GetLinkTarget(Sitecore.Context.Item,"Right Link")" class="gd-hover-img">
                                     <div class="gd-hover-img-area">
                                         <div class="gd-hover-img-mask"></div>
                                         <img data-src="@Html.Sitecore().ImageFieldSrc("Right Image", item)">

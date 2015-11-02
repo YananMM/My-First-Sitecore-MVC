@@ -488,5 +488,14 @@ namespace Landmark.Helper
             return languages;
         }
 
+        public static string GetLinkTarget(Item item, string linkName)
+        {
+            string target = "_self";
+            LinkField linkField = item.Fields[linkName];
+            if (linkField.LinkType == "external")
+                target = "_blank";
+            return target;
+        }
+
     }
 }

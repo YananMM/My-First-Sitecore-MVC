@@ -13,6 +13,7 @@
     {
         var css = item.Fields["Social Media Css"].Value;
         var title =item.Fields["Social Media Title"].Value;
-        @Html.Sitecore().Field("Social Media Link", item, new {title=title, text = "<span class='" + css + "'></span>" })
+        var target = LandmarkHelper.GetLinkTarget(item, "Social Media Link");
+        @Html.Sitecore().Field("Social Media Link", item, new {title=title, text = "<span class='" + css + "'></span>" ,target=target})
     }
 </div>
