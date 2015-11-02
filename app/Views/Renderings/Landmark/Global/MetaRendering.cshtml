@@ -17,8 +17,8 @@
 <meta name="keywords" content="@Sitecore.Context.Item.Fields["Meta Keywords"].Value" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="@LandmarkHelper.GetCurrentItemUrl()" />
-<meta property="og:title" content="@Sitecore.Context.Item.Fields["Social Share Title"].Value" />
-<meta property="og:description" content="@Sitecore.Context.Item.Fields["Social Share Description"].Value" />
+<meta property="og:title" content="@LandmarkHelper.GetPageSocialTitle()" />
+<meta property="og:description" content="@LandmarkHelper.GetPageSocialDescription()" />
 @{
     string firstImageUrl = string.Empty;
     MultilistField imageField = (MultilistField)Sitecore.Context.Item.Fields["Social Share Images"];
@@ -33,7 +33,27 @@
             }
             firstImageUrl = LandmarkHelper.GetImageItemAbsoluteUrl(imagesId.FirstOrDefault());
         }
+        else
+        {
+            var currentItem = Sitecore.Context.Item;
+            var slideFolder = currentItem.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.SlideFolderTemplate);
+            if (slideFolder != null)
+            {
+                var slides = slideFolder.Children.ToList();
+                if (slides.Count > 0)
+                {
+                    ImageField firstImageField = (ImageField) slides[0].Fields["Slide Image"];
+                    foreach (var slide in slides)
+                    {
+                        ImageField image = slide.Fields["Slide Image"];
+                        <meta property="og:image" content="@LandmarkHelper.GetImageItemAbsoluteUrl(image.MediaID)"/>
+                    }
+                    firstImageUrl = LandmarkHelper.GetImageItemAbsoluteUrl(firstImageField.MediaID);
+                }
+            }
+        }
     }
+    
 }
 
 <meta name="twitter:card" content="summary_large_image">

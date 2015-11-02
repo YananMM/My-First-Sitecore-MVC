@@ -29,14 +29,16 @@
                         <div class="panel-main">
                             <div class="panel-text">
                                 <hgroup class="clearfix">
-                                    @if (sublineVersionsField.Value.Equals(ItemGuids.TwoNumbersTwoCaptionsTextLink))
-                                    {
-                                        @Html.Sitecore().Field("Article Headline 2", referenceField.TargetItem)
-                                    }
-                                    else
-                                    {
-                                        @Html.Sitecore().Field("Article Headline", referenceField.TargetItem)
-                                    }
+                                    <h3>
+                                        @if (sublineVersionsField.Value.Equals(ItemGuids.TwoNumbersTwoCaptionsTextLink))
+                                        {
+                                            @Html.Sitecore().Field("Article Headline 2", referenceField.TargetItem)
+                                        }
+                                        else
+                                        {
+                                            @Html.Sitecore().Field("Article Headline", referenceField.TargetItem)
+                                        }
+                                    </h3>
                                 </hgroup>
                                 <div class="panel-content">
                                     @Html.Sitecore().Field("Article Sub Headline", referenceField.TargetItem)

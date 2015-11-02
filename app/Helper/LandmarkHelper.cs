@@ -419,7 +419,7 @@ namespace Landmark.Helper
                           Uri.SchemeDelimiter +
                           System.Web.HttpContext.Current.Request.Url.Host;
             string language = Sitecore.Context.Language.ToString();
-            return host + "/" + language + System.Web.HttpContext.Current.Request.RawUrl;
+            return host + System.Web.HttpContext.Current.Request.RawUrl;
         }
 
         public static string GetImageItemAbsoluteUrl(ID imageid)
@@ -495,6 +495,24 @@ namespace Landmark.Helper
             if (linkField.LinkType == "external")
                 target = "_blank";
             return target;
+        }
+
+        public static string GetPageSocialTitle()
+        {
+            string socialTitle = string.Empty;
+            socialTitle = Sitecore.Context.Item.Fields["Social Share Title"].Value;
+            if (string.IsNullOrEmpty(socialTitle))
+                socialTitle = Sitecore.Context.Item.Fields["Meta Keywords"].Value;
+            return socialTitle;
+        }
+
+        public static string GetPageSocialDescription()
+        {
+            string socialTitle = string.Empty;
+            socialTitle = Sitecore.Context.Item.Fields["Social Share Description"].Value;
+            if (string.IsNullOrEmpty(socialTitle))
+                socialTitle = Sitecore.Context.Item.Fields["Meta Description"].Value;
+            return socialTitle;
         }
 
     }
