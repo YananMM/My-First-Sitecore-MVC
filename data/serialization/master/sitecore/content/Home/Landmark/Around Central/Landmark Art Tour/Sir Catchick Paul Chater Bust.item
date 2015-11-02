@@ -17,26 +17,12 @@ content-length: 0
 
 
 ----field----
-field: {25ECD930-4134-4B41-A387-D063717B49B9}
-name: Art Size
-key: art size
-content-length: 0
-
-
-----field----
 field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
 name: Artist
 key: artist
 content-length: 38
 
 {EA412C5B-16DD-4D0E-BF60-2D3F26A12455}
-----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{FBC2FB58-BD37-49D0-9B74-B189B1F8331E}" src="~/media/fbc2fb58bd3749d09b74b189b1f8331e.ashx" />
 ----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
@@ -57,11 +43,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-1000
+1200
 ----version----
 language: en
 version: 1
-revision: 8c4d7e5e-cfd6-4025-bf71-808013c9c68b
+revision: 4ed98973-d685-47e0-bf2b-8979cff64081
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -78,6 +64,13 @@ content-length: 31
 
 Sir Catchick Paul Chater (Bust)
 ----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 233
+
+<file mediaid="{7F41CCC9-6687-4B11-B3CE-3EF687CD26CC}" src="~/media/7f41ccc966874b11b3ce3ef687cd26cc.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Chu Tat Shing b1942/Sir Catchick Paul Chater Bust/i_0305_eng02" />
+----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
 key: art key
@@ -88,8 +81,15 @@ content-length: 0
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 0
+content-length: 1808
 
+"Chu Tat Shing is a celebrated sculptor whose artworks have been shown at several prestigious exhibitions including the Chinese National Art Exhibition, Hong Kong Art Biennial Exhibition, Hong Kong Sculptors Association Exhibition and the 14th Asian Fine Arts Exhibition to name a few.
+
+Chu Tat Shing was born in Hubei, Wuhan in 1942. Studying at the Department of Sculpture of the Hubei Institute of Fine Arts under the guidance and teaching of Zhang Zu Wu, he developed his skills and eventually stayed on to become an instructor.  In 1978, at the end of the Cultural Revolution, Chu was admitted onto a postgraduate programme at the Department of Sculpture of the China Central Academy of Fine Arts.  
+
+After graduating, he moved and eventually settled in Hong Kong, actively engaging with the local art community as a sculptor and teacher.  With a view to promoting the art of sculpture in Hong Kong, Chu regularly conducts talks and workshops at the city’s museums and schools.  His sculptures can be found all over Hong Kong from here at Chater House to many other popular public locations including Kowloon Park, Hong Kong Park and the Dr Sun Yat-sen Museum.
+
+This bust sculpture, which is on permanent display in this building, was created by Chu Tat Shing in memory of Sir Catchick Paul Chater.  Sir Chater was one of Hong Kong’s most legendary businessmen and one of the founders of Hongkong Land.  Sir Chater was instrumental in helping to set up some of today’s most recognisable companies including The Dairy Farm Co. Ltd. and The Hong Kong Electric Co. Ltd.  He was a driving force behind the reclamation of Victoria Harbour and was pivotal in the colonial government’s success in many land development projects. This statue by Chu Tat Shing pays tribute to a true Hong Kong visionary."
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -104,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8c4d7e5e-cfd6-4025-bf71-808013c9c68b
+4ed98973-d685-47e0-bf2b-8979cff64081
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T073038Z
+20151102T051337:635820380178708158Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -122,22 +122,41 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 8ae3d9a3-5153-4146-95b4-ebac79bed47a
+revision: 84af6b15-8e0e-4fd1-994d-123d3ce2e8b9
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 31
+content-length: 30
 
-Sir Catchick Paul Chater (Bust)
+Sir Catchick Paul Chater (半身像)
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 31
+content-length: 30
 
-Sir Catchick Paul Chater (Bust)
+Sir Catchick Paul Chater (半身像)
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 234
+
+<file mediaid="{188A538D-836D-4DD7-B20D-4AA82375183B}" src="~/media/188a538d836d4dd7b20d4aa82375183b.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Chu Tat Shing b1942/Sir Catchick Paul Chater Bust/i_0205_mand02" />
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 384
+
+"朱达诚在一九四二年出生于湖北省武汉。他曾就读湖北美术学院雕塑系，在雕塑大师张祖武的指导和教授下，磨练出娴熟的雕刻技巧，后来还担任该学系的导师。一九七八年文化大革命结束，朱达诚考进中央美术学院雕塑系研究生班，继续研习雕塑艺术。 
+
+毕业后，朱达诚移居香港，并以雕塑家和教师的身份，积极投入本地艺术圈。他定期在博物馆及学校举办讲座和工作坊，推动本土雕塑艺术的发展。除了遮打大厦外，他的雕塑还见于香港各地，包括九龙公园、香港公园及孙中山纪念馆。
+
+朱达诚为纪念遮打爵士而铸造的半身像，现放置于遮打大厦作永久展览。遮打爵士是置地公司创办人之一，亦是香港一位传奇的商人。他曾致力协助成立多家知名企业，包括牛奶公司及港灯。遮打爵士积极推动维多利亚港的填海计划，对当年殖民地政府成功推行多个土地发展项目居功至伟。这件朱达诚的雕塑表达了对这位高瞻远瞩的香港商人的敬意。"
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -151,14 +170,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8ae3d9a3-5153-4146-95b4-ebac79bed47a
+84af6b15-8e0e-4fd1-994d-123d3ce2e8b9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T071833:635814407138646431Z
+20151102T024200:635820289203414669Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -169,22 +188,41 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 391a95cd-64b8-456f-93c0-92ffc7d14866
+revision: 2155e704-fa44-4087-9b4b-7b8691a38a38
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 31
+content-length: 30
 
-Sir Catchick Paul Chater (Bust)
+Sir Catchick Paul Chater (半身像)
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 31
+content-length: 30
 
-Sir Catchick Paul Chater (Bust)
+Sir Catchick Paul Chater (半身像)
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{FBC2FB58-BD37-49D0-9B74-B189B1F8331E}" src="~/media/fbc2fb58bd3749d09b74b189b1f8331e.ashx" />
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 384
+
+"朱達誠在一九四二年出生於湖北省武漢。他曾就讀湖北美術學院雕塑系，在雕塑大師張祖武的指導和教授下，磨練出嫻熟的雕刻技巧，後來還擔任該學系的導師。一九七八年文化大革命結束，朱達誠考進中央美術學院雕塑系研究生班，繼續研習雕塑藝術。 
+
+畢業後，朱達誠移居香港，並以雕塑家和教師的身份，積極投入本地藝術圈。他定期在博物館及學校舉辦講座和工作坊，推動本土雕塑藝術的發展。除了遮打大廈外，他的雕塑還見於香港各地，包括九龍公園、香港公園及孫中山紀念館。
+
+朱達誠為紀念遮打爵士而鑄造的半身像，現放置於遮打大廈作永久展覽。遮打爵士是置地公司創辦人之一，亦是香港一位傳奇的商人。他曾致力協助成立多家知名企業，包括牛奶公司及港燈。遮打爵士積極推動維多利亞港的填海計劃，對當年殖民地政府成功推行多個土地發展項目居功至偉。這件朱達誠的雕塑表達了對這位高瞻遠矚的香港商人的敬意。"
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -198,14 +236,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-391a95cd-64b8-456f-93c0-92ffc7d14866
+2155e704-fa44-4087-9b4b-7b8691a38a38
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T071904:635814407442543813Z
+20151102T024158:635820289182393466Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

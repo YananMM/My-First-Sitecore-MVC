@@ -17,13 +17,6 @@ content-length: 38
 
 {A71F51B3-1962-416E-951A-5B4F5BD1514B}
 ----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{B9436D70-67E1-4F97-A8F0-BB5C0D392FC7}" src="~/media/b9436d7067e14f97a8f0bb5c0d392fc7.ashx" />
-----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
@@ -36,11 +29,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-1875
+2200
 ----version----
 language: en
 version: 1
-revision: cf398ab5-ef3b-4fc6-ab33-2b5292515939
+revision: 41d77d86-0ddb-4005-9e4c-63035f59a552
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -56,6 +49,39 @@ key: art title
 content-length: 22
 
 Jade Pool Mirror, 2011
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+400 x 200 cm
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 242
+
+<file mediaid="{CC2E5D60-C56F-4A34-BF97-E27715233992}" src="~/media/cc2e5d60c56f4a34bf97e27715233992.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Han Xin b1955/Jade Pool Mirror 2011/i_3010_hon_xin_jade pool mirror_eng" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 25
+
+Acrylic and oil on canvas
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 693
+
+"In this monumental painting, Shanghai-born artist Han Xin invites the viewer into a nuanced world of light and shadow. The willow is a recurring motif in Chinese art and a tree of great mythological significance. Han Xin brings the majestic weeping willows to life with vibrant brushwork and a crescendo of colours. The clear greens of one canvas convey the bright heat of summer.
+
+Han Xin has studied, worked and exhibited widely in China, the United States and France and has synthesized his diverse experiences to become a master of mood and pattern. His light-filled canvassed reflect an innately confident and optimistic nature.
+
+Hongkong Land acquired “Jade Pool Mirror” in 2011."
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -69,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cf398ab5-ef3b-4fc6-ab33-2b5292515939
+41d77d86-0ddb-4005-9e4c-63035f59a552
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T073102Z
+20151102T051348:635820380285794283Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,22 +113,55 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: a19d558a-8dc1-4a82-8769-8faf33127ae1
+revision: 99e6ef8d-a05e-4683-a8b0-c9244be4cb2d
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 22
+content-length: 9
 
-Jade Pool Mirror, 2011
+晴湖镜碧，2011
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 22
+content-length: 9
 
-Jade Pool Mirror, 2011
+晴湖镜碧，2011
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+400 x 200 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 243
+
+<file mediaid="{15082D9F-0992-4F79-BFF8-CFEF5831ABFF}" src="~/media/15082d9f09924f79bff8cfef5831abff.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Han Xin b1955/Jade Pool Mirror 2011/i_3010_hon_xin_jade pool mirror_mand" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 10
+
+压克力颜料及油彩画布
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 208
+
+"透过这幅雄伟的作品，生于上海的画家韩辛引领观赏者进入一个微妙的光影世界。在中国文化之中，柳树有着重要象征意义，亦经常出现于艺术品当中。韩辛以生动的笔触及层叠的色彩为茂盛的柳树带来了生命。翠绿的颜色标示着盛夏的生意盎然。
+
+韩辛足迹遍布美国、中国及法国，丰富的阅历使他在表达情感及构图的技巧上都达至大师级的境界，而他的自信及乐观的性情亦在其作品上完全表露无遗。
+
+置地公司于二零一一年购入“晴湖镜碧”。"
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -116,14 +175,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a19d558a-8dc1-4a82-8769-8faf33127ae1
+99e6ef8d-a05e-4683-a8b0-c9244be4cb2d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T093330:635814488108047616Z
+20151102T030121:635820300818969040Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -134,22 +193,55 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 0584fdd9-53db-406e-8756-57c854179679
+revision: f60f1678-3a30-4285-8484-0907f62d8efc
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 22
+content-length: 9
 
-Jade Pool Mirror, 2011
+晴湖镜碧，2011
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 22
+content-length: 9
 
-Jade Pool Mirror, 2011
+晴湖镜碧，2011
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+400 x 200 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{B9436D70-67E1-4F97-A8F0-BB5C0D392FC7}" src="~/media/b9436d7067e14f97a8f0bb5c0d392fc7.ashx" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 10
+
+壓克力顏料及油彩畫布
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 208
+
+"透過這幅雄偉的作品，生於上海的畫家韓辛引領觀賞者進入一個微妙的光影世界。在中國文化之中，柳樹有著重要象徵意義，亦經常出現於藝術品當中。韓辛以生動的筆觸及層疊的色彩為茂盛的柳樹帶來了生命。翠綠的顏色標示著盛夏的生意盎然。
+
+韓辛足跡遍佈美國、中國及法國，豐富的閱歷使他在表達情感及構圖的技巧上都達至大師級的境界，而他的自信及樂觀的性情亦在其作品上完全表露無遺。
+
+置地公司於二零一一年購入「晴湖鏡碧」。"
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -163,14 +255,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0584fdd9-53db-406e-8756-57c854179679
+f60f1678-3a30-4285-8484-0907f62d8efc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T093430:635814488708131939Z
+20151102T030113:635820300735994294Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

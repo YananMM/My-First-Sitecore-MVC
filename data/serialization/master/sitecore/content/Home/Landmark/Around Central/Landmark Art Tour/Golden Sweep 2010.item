@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {C905EE11-EC89-4183-B703-9F2463B6003D}
+id: {3CC94556-09E9-45F5-8C02-783367CC9711}
 database: master
-path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/Winter 2000
+path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/Golden Sweep 2010
 parent: {5C03DD0D-4881-4A9B-A58D-5FFA101B3533}
-name: Winter 2000
+name: Golden Sweep 2010
 master: {00000000-0000-0000-0000-000000000000}
 template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
 templatekey: T29 Page
@@ -22,47 +22,47 @@ name: Art Image
 key: art image
 content-length: 58
 
-<image mediaid="{59A6A876-4897-4CBE-9350-E331FB1706A4}" />
+<image mediaid="{27DE26A8-12F6-44B7-8EE2-85F743EEA6D3}" />
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 4
 
-2500
+1900
 ----version----
 language: en
 version: 1
-revision: 01268f0a-598f-43b1-a67e-39b8a8435aa4
+revision: 2416648c-0be5-4e10-ba6f-ad0329e227e3
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 12
+content-length: 18
 
-Winter, 2000
+Golden Sweep, 2010
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 12
+content-length: 18
 
-Winter, 2000
+Golden Sweep, 2010
 ----field----
 field: {25ECD930-4134-4B41-A387-D063717B49B9}
 name: Art Size
 key: art size
 content-length: 12
 
-198 x 169 cm
+180 x 100 cm
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
 key: commentary
-content-length: 209
+content-length: 109
 
-<file mediaid="{8F159591-E8E1-4B98-A14A-546AF4981687}" src="~/media/8f159591e8e14b98a14a546af4981687.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Han Xin b1955/Winter 2000/i_0305_eng17" />
+<file mediaid="{22DB22A3-4E6C-4F5E-8CB1-2A3A47290163}" src="~/media/22db22a34e6c4f5e8cb12a3a47290163.ashx" />
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -74,13 +74,13 @@ Acrylic and oil on canvas
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 701
+content-length: 706
 
-"In this series of four large paintings, Shanghai-born artist Han Xin used the symbolism of a doorway to represent Hong Kong’s position as the gateway to China. Painted while he was living in the United States, the doors also represent a look back on his native China. He chose a pair of majestic doors from the Forbidden City and infused each one with the light and colour of a different season.
+"In this monumental painting, Shanghai-born artist Han Xin invites the viewer into a nuanced world of light and shadow. The willow is a recurring motif in Chinese art and a tree of great mythological significance. Han Xin brings the majestic weeping willows to life with vibrant brushwork and a crescendo of colours. The rich reds and oranges of the second painting project the warm glow of autumn.
 
-Han Xin has studied, worked and exhibited widely in China, the United States and France and has synthesised his diverse experiences to become a master of mood and pattern. His light-filled canvasses reflect an innately confident and optimistic nature.
+Han Xin has studied, worked and exhibited widely in China, the United States and France and has synthesized his diverse experiences to become a master of mood and pattern. His light-filled canvassed reflect an innately confident and optimistic nature.
 
-Hongkong Land commissioned these paintings."
+Hongkong Land acquired “Golden Sweep” in 2011."
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -88,21 +88,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20151026T094633Z
+20151026T090932Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-01268f0a-598f-43b1-a67e-39b8a8435aa4
+2416648c-0be5-4e10-ba6f-ad0329e227e3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151102T051348:635820380288444434Z
+20151102T051348:635820380283724164Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -113,36 +113,36 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 7ae6f07d-7bb7-4dd4-8225-5efc06ceda90
+revision: 0ee5b6d5-7f0f-4985-b693-f0f444838b51
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 7
+content-length: 9
 
-冬, 2000
+梳扫金黄，2010
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 7
+content-length: 9
 
-冬, 2000
+梳扫金黄，2010
 ----field----
 field: {25ECD930-4134-4B41-A387-D063717B49B9}
 name: Art Size
 key: art size
 content-length: 12
 
-198 x 169 厘米
+180 x 100 厘米
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
 key: commentary
-content-length: 210
+content-length: 216
 
-<file mediaid="{EC52D89F-134F-47E9-AC29-40A94DF17435}" src="~/media/ec52d89f134f47e9ac2940a94df17435.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Han Xin b1955/Winter 2000/i_0205_mand17" />
+<file mediaid="{9911270E-DC10-4B72-BAFA-F290F23432FC}" src="~/media/9911270edc104b72bafaf290f23432fc.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Han Xin b1955/Golden Sweep 2010/i_0205_mand15" />
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -154,13 +154,13 @@ content-length: 10
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 195
+content-length: 208
 
-"在这四幅大型作品中，上海出生的画家韩辛以城门的意象来表现香港作为中国门户城市的角色。韩辛在旅居美国期间创作这些油画，以紫禁城的一对城门作为素材，展现四季的不同光影和色彩，同时遥寄对祖国的一份情怀。
+"透过这幅雄伟的作品，生于上海的画家韩辛引领观赏者进入一个微妙的光影世界。在中国文化之中，柳树有着重要象征意义，亦经常出现于艺术品当中。韩辛以生动的笔触及层叠的色彩为茂盛的柳树带来了生命。丰富的橘红色则渗透出秋日的暖意。
 
-韩辛曾于中、美、法三地研习、工作及举办展览会。他将三地的生活体验融入画作，尤其善于驾驭气氛和构图。他的作品清新明亮，体现他自信、豁达的性格。
+韩辛足迹遍布美国、中国及法国，丰富的阅历使他在表达情感及构图的技巧上都达至大师级的境界，而他的自信及乐观的性情亦在其作品上完全表露无遗。
 
-置地公司委托韩辛创作这些画作。"
+置地公司于二零一一年购入「梳扫金黄」。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -168,21 +168,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20151026T094859Z
+20151026T091052Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-7ae6f07d-7bb7-4dd4-8225-5efc06ceda90
+0ee5b6d5-7f0f-4985-b693-f0f444838b51
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151102T031648:635820310083388935Z
+20151102T033456:635820320960891092Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -193,36 +193,36 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: aee207ba-6816-4216-b3e7-d4fca644df4a
+revision: 62a37fc9-d4f4-45be-9398-99200b81779b
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 7
+content-length: 9
 
-冬, 2000
+梳掃金黃，2010
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 7
+content-length: 9
 
-冬, 2000
+梳掃金黃，2010
 ----field----
 field: {25ECD930-4134-4B41-A387-D063717B49B9}
 name: Art Size
 key: art size
 content-length: 12
 
-198 x 169 厘米
+180 x 100 厘米
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
 key: commentary
 content-length: 109
 
-<file mediaid="{BCF84546-D691-4A93-99C5-AC7C11DAC93B}" src="~/media/bcf84546d6914a9399c5ac7c11dac93b.ashx" />
+<file mediaid="{22DB22A3-4E6C-4F5E-8CB1-2A3A47290163}" src="~/media/22db22a34e6c4f5e8cb12a3a47290163.ashx" />
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -234,13 +234,13 @@ content-length: 10
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 195
+content-length: 208
 
-"在這四幅大型作品中，上海出生的畫家韓辛以城門的意象來表現香港作為中國門戶城市的角色。韓辛在旅居美國期間創作這些油畫，以紫禁城的一對城門作為素材，展現四季的不同光影和色彩，同時遙寄對祖國的一份情懷。
+"透過這幅雄偉的作品，生於上海的畫家韓辛引領觀賞者進入一個微妙的光影世界。在中國文化之中，柳樹有著重要象徵意義，亦經常出現於藝術品當中。韓辛以生動的筆觸及層疊的色彩為茂盛的柳樹帶來了生命。豐富的橘紅色則滲透出秋日的暖意。
 
-韓辛曾於中、美、法三地研習、工作及舉辦展覽會。他將三地的生活體驗融入畫作，尤其善於駕馭氣氛和構圖。他的作品清新明亮，體現他自信、豁達的性格。
+韓辛足跡遍佈美國、中國及法國，豐富的閱歷使他在表達情感及構圖的技巧上都達至大師級的境界，而他的自信及樂觀的性情亦在其作品上完全表露無遺。
 
-置地公司委託韓辛創作這些畫作。"
+置地公司於二零一一年購入「梳掃金黃」。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -248,21 +248,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20151026T094955Z
+20151026T091121Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-aee207ba-6816-4216-b3e7-d4fca644df4a
+62a37fc9-d4f4-45be-9398-99200b81779b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151102T031624:635820309840645051Z
+20151102T033448:635820320880556497Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

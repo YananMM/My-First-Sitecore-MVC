@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {FB999FF8-6D05-4A15-A7AE-3271D8AB2F22}
+id: {1A2F0956-2DB6-4C8B-9E4A-C275D57AE407}
 database: master
-path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/Endless Silky Shadows
+path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/Taichi Series Right Heel Kick 1991
 parent: {5C03DD0D-4881-4A9B-A58D-5FFA101B3533}
-name: Endless Silky Shadows
+name: Taichi Series Right Heel Kick 1991
 master: {00000000-0000-0000-0000-000000000000}
 template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
 templatekey: T29 Page
@@ -15,68 +15,61 @@ name: Artist
 key: artist
 content-length: 38
 
-{A71F51B3-1962-416E-951A-5B4F5BD1514B}
-----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{3D88CD4E-A13B-495C-B338-8C0C71FEB890}" src="~/media/3d88cd4ea13b495cb3388c0c71feb890.ashx" />
-----field----
-field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
-name: Art Image
-key: art image
-content-length: 58
-
-<image mediaid="{3877903B-CD90-445D-A491-59D580EAC4E3}" />
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 4
-
-1600
+{0803E9C4-1396-4ED5-A11A-F685C0BB5EFB}
 ----version----
 language: en
 version: 1
-revision: 75f5be10-7c7c-4b45-b2f6-e73a533e6271
+revision: 197981fe-52cb-4327-ad03-181ea9ff6858
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 21
+content-length: 34
 
-Endless Silky Shadows
+Taichi Series Right Heel Kick 1991
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 27
+content-length: 34
 
-Endless Silky Shadows, 2010
+Taichi Series Right Heel Kick 1991
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 22
+
+215 x 192.3 x 150.2 cm
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 15
+
+Bronze, Ed. 4/6
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20151026T090315Z
+20151102T055243Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-75f5be10-7c7c-4b45-b2f6-e73a533e6271
+197981fe-52cb-4327-ad03-181ea9ff6858
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T073039Z
+20151102T055444:635820404840498731Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,43 +80,57 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: a0577902-967c-4a83-9788-86b8c5f7c6dc
+revision: 5c27c567-9018-49b6-8e81-d8f9a8d69e2e
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 27
+content-length: 14
 
-Endless Silky Shadows, 2010
+太极 - 右蹬脚, 1991
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 27
+content-length: 14
 
-Endless Silky Shadows, 2010
+太极 - 右蹬脚, 1991
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 22
+
+215 x 192.3 x 150.2 厘米
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 12
+
+青铜雕塑, 版数 4/6
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20151026T090810Z
+20151102T055314Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-a0577902-967c-4a83-9788-86b8c5f7c6dc
+5c27c567-9018-49b6-8e81-d8f9a8d69e2e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T090945:635814473855342408Z
+20151102T055438:635820404786975670Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -134,43 +141,57 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 8f7b0365-7353-444f-b5cb-4fe6751ebc62
+revision: c808bbb3-182e-4f40-94e7-1abfa52d2c3e
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 27
+content-length: 14
 
-Endless Silky Shadows, 2010
+太極 - 右蹬腳, 1991
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 27
+content-length: 14
 
-Endless Silky Shadows, 2010
+太極 - 右蹬腳, 1991
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 22
+
+215 x 192.3 x 150.2 厘米
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 12
+
+青銅雕塑, 版數 4/6
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20151026T090847Z
+20151102T055258Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-8f7b0365-7353-444f-b5cb-4fe6751ebc62
+c808bbb3-182e-4f40-94e7-1abfa52d2c3e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T090939:635814473792478812Z
+20151102T055441:635820404815247287Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

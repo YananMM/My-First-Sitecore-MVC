@@ -10,26 +10,12 @@ template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
 templatekey: T29 Page
 
 ----field----
-field: {25ECD930-4134-4B41-A387-D063717B49B9}
-name: Art Size
-key: art size
-content-length: 18
-
-137 x 102 x 335 cm
-----field----
 field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
 name: Artist
 key: artist
 content-length: 38
 
-{EA412C5B-16DD-4D0E-BF60-2D3F26A12455}
-----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{E98D781A-3CFE-44B7-9798-A5097DDA6C70}" src="~/media/e98d781a3cfe44b79798a5097dda6c70.ashx" />
+{6C920E67-89CD-42AB-9183-FEB16B905B84}
 ----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
@@ -50,11 +36,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-1300
+1500
 ----version----
 language: en
 version: 1
-revision: 950efc0b-54d1-4929-a02f-1fd765e316e4
+revision: cf1632cc-d795-4f03-aebf-6d02639a27a3
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -70,6 +56,39 @@ key: art title
 content-length: 63
 
 Water Buffalo I Standing, 1988 and Water Buffalo II Lying, 1987
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 37
+
+137 x 102 x 335 cm; 86 x 102 x 287 cm
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 304
+
+<file mediaid="{D625FAFC-A51E-4F6E-80E3-7E4CD7C34DAD}" src="~/media/d625fafca51e4f6e80e37e4cd7c34dad.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Dame Elisabeth Jean Frink CH DBE RA 1930-1993/Water Buffalo I Standing 1988 and Water Buffalo II Lying 1987/i_3010_dame_elisabeth_eng" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 15
+
+Bronze, Ed. 1/2
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 756
+
+"Dame Elisabeth Frink was a leading figure in British sculpture. She studied at the Chelsea School of Art from 1949 to 1953 and was part of the post-war group of British sculptors who became known as the Geometry of Fear School. She was awarded honorary doctorates from several universities, and was given the title CBE and Dame. 
+
+Although Frink made many drawings and prints, she is best known for her bronze outdoor sculptures. Untouched by passing fashions, Frink created mostly figurative sculptures, the human male and animals being among her favorite subjects. Her experience of different landscapes made her increasingly enthusiastic about her sculptures being shown in the open air. 
+
+Hongkong Land commissioned the Water Buffaloes in 1986."
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -83,14 +102,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-950efc0b-54d1-4929-a02f-1fd765e316e4
+cf1632cc-d795-4f03-aebf-6d02639a27a3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151031T024343Z
+20151102T051338:635820380181828336Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +120,56 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 22013871-3689-4a54-b794-0b00892b9877
+revision: dd078df6-84b1-4a72-a050-12b0fbbaf612
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 29
+
+水牛一 ：站立, 1988 及 水牛二 ：俯卧, 1987
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 63
+content-length: 29
 
-Water Buffalo I Standing, 1988 and Water Buffalo II Lying, 1987
+水牛一 ：站立, 1988 及 水牛二 ：俯卧, 1987
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 36
+
+137 x 102 x 335 厘米; 86 x 102 x 287厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 305
+
+<file mediaid="{664F1DCD-7CE2-475E-BEBB-12FEA28140A5}" src="~/media/664f1dcd7ce2475ebebb12fea28140a5.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Dame Elisabeth Jean Frink CH DBE RA 1930-1993/Water Buffalo I Standing 1988 and Water Buffalo II Lying 1987/i_3010_dame_elisabeth_mand" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 12
+
+青铜雕塑, 版数 1/2
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 266
+
+"伊利莎伯‧霍龄女爵士是英国雕刻界的佼佼者。她于一九四九年至一九五三年就读切尔西艺术学校，并加入英国的战后雕刻家小组Geometry of Fear School。她获多间大学颁发荣誉博士学位，并获授司令勋章及女爵士等殊荣。
+
+伊利莎伯‧霍龄女爵士创作的绘画及版画多不胜数，其中以铜刻户外雕塑最广为人知。她没有盲目跟随潮流，主要创作充满象征意义的雕刻，其中男性及动物是她最喜欢的题材。她喜爱感受不同的自然景貌，令她日益热衷在户外场地展出其雕塑作品。
+
+置地公司于一九八六年委托伊利莎伯‧霍龄女爵士创作两头水牛雕塑。
+"
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -123,14 +183,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-22013871-3689-4a54-b794-0b00892b9877
+dd078df6-84b1-4a72-a050-12b0fbbaf612
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T083108:635814450680336873Z
+20151102T042541:635820351417183093Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -141,22 +201,55 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: c4cff4dc-db85-415a-bd73-8bb0dd07d9b1
+revision: f8e07e29-d47d-4c8f-898f-1f4fa35961e4
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 63
+content-length: 29
 
-Water Buffalo I Standing, 1988 and Water Buffalo II Lying, 1987
+水牛一 ：站立, 1988 及 水牛二 ：俯臥, 1987
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 63
+content-length: 29
 
-Water Buffalo I Standing, 1988 and Water Buffalo II Lying, 1987
+水牛一 ：站立, 1988 及 水牛二 ：俯臥, 1987
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 36
+
+137 x 102 x 335 厘米; 86 x 102 x 287厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{E98D781A-3CFE-44B7-9798-A5097DDA6C70}" src="~/media/e98d781a3cfe44b79798a5097dda6c70.ashx" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 12
+
+青銅雕塑, 版數 1/2
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 264
+
+"伊利莎伯‧霍齡女爵士是英國雕刻界的佼佼者。她於一九四九年至一九五三年就讀切爾西藝術學校，並加入英國的戰後雕刻家小組Geometry of Fear School。她獲多間大學頒發榮譽博士學位，並獲授司令勳章及女爵士等殊榮。
+
+伊利莎伯‧霍齡女爵士創作的繪畫及版畫多不勝數，其中以銅刻戶外雕塑最廣為人知。她沒有盲目跟隨潮流，主要創作充滿象徵意義的雕刻，其中男性及動物是她最喜歡的題材。她喜愛感受不同的自然景貌，令她日益熱衷在戶外場地展出其雕塑作品。
+
+置地公司於一九八六年委託伊利莎伯‧霍齡女爵士創作兩頭水牛雕塑。"
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -170,14 +263,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c4cff4dc-db85-415a-bd73-8bb0dd07d9b1
+f8e07e29-d47d-4c8f-898f-1f4fa35961e4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T083143:635814451039097393Z
+20151102T042544:635820351449194924Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

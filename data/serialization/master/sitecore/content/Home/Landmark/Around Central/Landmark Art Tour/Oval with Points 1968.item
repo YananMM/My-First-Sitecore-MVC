@@ -17,13 +17,6 @@ content-length: 38
 
 {6F116811-F0EF-4D0E-B970-AA69DE246581}
 ----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{AA68F658-43D2-4570-9062-B3B1D44ED8BB}" src="~/media/aa68f65843d245709062b3b1d44ed8bb.ashx" />
-----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
@@ -36,11 +29,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-2700
+2800
 ----version----
 language: en
 version: 1
-revision: 0cbbf046-d444-402c-a668-37fe5dff4d49
+revision: 1fddd870-5b4f-4de6-8277-076b9ca95bca
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -57,6 +50,39 @@ content-length: 22
 
 Oval with Points, 1968
 ----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 21
+
+351.5 x 272 x 45.5 cm
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 247
+
+<file mediaid="{D9F9D288-5100-4ADE-9AC7-1437E701DA55}" src="~/media/d9f9d28851004ade9ac71437e701da55.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Henry Moore OM CH FBA 1898-1986/Oval with Points 1968/i_3010_henry_moore_eng" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 15
+
+Bronze, Ed. 3/6
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 935
+
+"The British sculptor Henry Moore was one of the most influential public sculptors of the 20th century. He drew on studies of Classical, pre-Columbian and African art to create original and truly modern sculptural forms, usually in marble or cast bronze. Abstractions of organic shapes and the human body were his primary motifs. Many of his forms are abstractions of the human body; often pierced or containing hollow spaces.
+
+“Oval with Points” is one of a number Moore’s sculptures featuring points. Here, they reach out to meet each other but do not touch, creating both drama and dynamic tension. Rather than appearing as signs of aggression, the points flow naturally from the organic and voluptuous exterior forms. Some viewers suggest that the unevenly weighted holes above and below the points are metaphoric references to the division between a human head and torso.
+
+Hongkong Land acquired “Oval with Points” in 1974."
+
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -69,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0cbbf046-d444-402c-a668-37fe5dff4d49
+1fddd870-5b4f-4de6-8277-076b9ca95bca
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T132359Z
+20151102T051349:635820380290374545Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,7 +113,54 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 3ec31823-007a-4cf6-837b-9f218d4edad4
+revision: 9d488450-beb8-418f-9b70-73ac7b9f5a60
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 8
+
+尖环, 1968
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 8
+
+尖环, 1968
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 21
+
+351.5 x 272 x 45.5 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{AA68F658-43D2-4570-9062-B3B1D44ED8BB}" src="~/media/aa68f65843d245709062b3b1d44ed8bb.ashx" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 12
+
+青铜雕塑, 版数 3/6
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 294
+
+"英国雕塑家亨利·摩尔是二十世纪其中一位极具影响力的公共雕塑家，深受古典、前哥伦布时期及非洲雕塑艺术的影响。他常以大理石和青铜作素材，其雕塑品充满创意和现代气息。摩尔主要以有机生物和人体的抽象形态为设计主题，其作品经常出现穿刺和孔洞,,当中不少是人体的抽象形态。
+
+「尖环」是摩尔多项呈现尖角的雕塑创作之一，当中伸出的尖角渴望互相触碰但却可望而不可及，因此营造出一种戏剧性的趣味和动感的张力。这些尖角并没有展现张牙舞爪的侵略意味，而像是从有机而丰满的外部形体自然流出，浑然天成。有人认为，尖角上下的孔洞大小不一，是代表头颅与躯干的分界。
+
+置地公司于一九七四年购入「尖环」。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -102,14 +175,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3ec31823-007a-4cf6-837b-9f218d4edad4
+9d488450-beb8-418f-9b70-73ac7b9f5a60
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T130638Z
+20151102T023002:635820282026634180Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -120,7 +193,54 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 47ec6621-96a9-4c04-8da4-75cb81d0bf76
+revision: bb6d55de-517a-47a8-875c-e656133fa206
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 8
+
+尖環, 1968
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 8
+
+尖環, 1968
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 21
+
+351.5 x 272 x 45.5 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 248
+
+<file mediaid="{40D9C27D-3D88-437C-8393-68141E952C82}" src="~/media/40d9c27d3d88437c839368141e952c82.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Henry Moore OM CH FBA 1898-1986/Oval with Points 1968/i_3010_henry_moore_cant" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 12
+
+青銅雕塑, 版數 3/6
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 294
+
+"英國雕塑家亨利‧摩爾是二十世紀其中一位極具影響力的公共雕塑家，深受古典、前哥倫布時期及非洲雕塑藝術的影響。他常以大理石和青銅作素材，其雕塑品充滿創意和現代氣息。摩爾主要以有機生物和人體的抽象形態為設計主題，其作品經常出現穿刺和孔洞,,當中不少是人體的抽象形態。
+
+「尖環」是摩爾多項呈現尖角的雕塑創作之一，當中伸出的尖角渴望互相觸碰但卻可望而不可及，因此營造出一種戲劇性的趣味和動感的張力。這些尖角並沒有展現張牙舞爪的侵略意味，而像是從有機而豐滿的外部形體自然流出，渾然天成。有人認為，尖角上下的孔洞大小不一，是代表頭顱與軀幹的分界。
+
+置地公司於一九七四年購入「尖環」。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -135,14 +255,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-47ec6621-96a9-4c04-8da4-75cb81d0bf76
+bb6d55de-517a-47a8-875c-e656133fa206
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T130623Z
+20151102T022959:635820281992712240Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

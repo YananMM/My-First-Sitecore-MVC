@@ -17,13 +17,6 @@ content-length: 38
 
 {40C90077-5EBC-4F25-8067-EF6FBE9556AA}
 ----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{D8C6BEC5-FC25-4E9C-BF6B-D9D2ABC007CA}" src="~/media/d8c6bec5fc254e9cbf6bd9d2abc007ca.ashx" />
-----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
@@ -36,11 +29,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-4600
+6600
 ----version----
 language: en
 version: 1
-revision: 9c6afa8d-424f-47f6-82c4-0a6bdfe4eb00
+revision: 05f7c943-3a6c-4a72-aee8-87d8b90b3f78
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -57,6 +50,39 @@ content-length: 43
 
 The Silk Road Series Kweilin River II, 1982
 ----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+149 x 119 cm
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 262
+
+<file mediaid="{441E738C-3E2A-4110-B6A5-7F0DABE73FAA}" src="~/media/441e738c3e2a4110b6a57f0dabe73faa.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Sir Sidney Nolan OM AC RA 1917-1992/The Silk Road Series Kweilin River II 1982/i_0305_eng09" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 17
+
+Acrylic on canvas
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 959
+
+"The Australian expressionist painter Sir Sidney Nolan was extraordinarily prolific, producing more than 10,000 significant works. He returned to favourite themes again and again - Australian landscapes and explorers, African, Antarctic and European landscapes, and Chinese and Australian-inspired abstractions.
+
+Largely self taught, Sir Sidney had a passion for ideas, literature and art. He never relied on one style or technique, experimenting throughout his life both with figurative and abstract work. He explored many media including charcoal drawing, collage, printmaking and painting with enamel, acrylic and spray paint.
+
+Sir Sidney travelled widely and responded to the spirit of each place he visited. He made the first of several trips to China in 1965. The eight paintings displayed in Exchange Square were painted in 1982 and purchased by Hongkong Land in 1984. They were inspired by a trip to Guilin, the Yangtze River and the Himalayas."
+
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -69,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9c6afa8d-424f-47f6-82c4-0a6bdfe4eb00
+05f7c943-3a6c-4a72-aee8-87d8b90b3f78
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T161618Z
+20151102T051352:635820380325226538Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,7 +113,54 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 1e1f3d2e-c37d-4c63-bdb6-88abecd1c0ca
+revision: 2b10d7f7-ea22-4323-8a52-351b4f30cf22
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 43
+
+The Silk Road Series Kweilin River II, 1982
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 43
+
+The Silk Road Series Kweilin River II, 1982
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+149 x 119 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 263
+
+<file mediaid="{604DD70E-0704-412C-88E5-E5BBCB662880}" src="~/media/604dd70e0704412c88e5e5bbcb662880.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Sir Sidney Nolan OM AC RA 1917-1992/The Silk Road Series Kweilin River II 1982/i_0205_mand09" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 7
+
+压克力颜料画布
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 330
+
+"悉尼．诺兰爵士是澳洲表现主义画家，一生创作了逾万幅重要作品，十分多产。他喜爱的题材包括澳洲的自然景色与探险家、关于非洲、南极和欧洲的景色，以及具有中国和澳洲色彩的抽象作品。
+
+诺兰爵士热爱创意、文学和艺术，在创作上可说是无师自通。他从不会只坚守一种风格或技巧，而是终生以具象及抽象作品作不同尝试。他曾探索多种艺术媒介，包括木炭画、美术拼贴画、版画、搪瓷画、压克力颜料画布及喷漆画等。
+
+诺兰爵士生前周游列国，并从所到每个地方的精神面貌吸收创作灵感。他于一九六五年首次到中国旅行，其后多次旧地重游。交易广塲展出诺兰爵士于一九八二年创作的八幅压克力颜料画布，是置地公司于一九八四年购入，这些画作的创作灵感来自诺兰爵士曾游历的桂林、长江及喜马拉雅山。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -102,14 +175,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1e1f3d2e-c37d-4c63-bdb6-88abecd1c0ca
+2b10d7f7-ea22-4323-8a52-351b4f30cf22
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T160403Z
+20151102T032131:635820312913870829Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -120,7 +193,54 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 8497b6db-fc46-4f96-b2fd-ec123877aa23
+revision: fb7e2857-8d9b-491d-ab95-6e7cef4def8a
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 43
+
+The Silk Road Series Kweilin River II, 1982
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 43
+
+The Silk Road Series Kweilin River II, 1982
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+149 x 119 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{D8C6BEC5-FC25-4E9C-BF6B-D9D2ABC007CA}" src="~/media/d8c6bec5fc254e9cbf6bd9d2abc007ca.ashx" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 7
+
+壓克力顏料畫布
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 330
+
+"悉尼．諾蘭爵士是澳洲表現主義畫家，一生創作了逾萬幅重要作品，十分多產。他喜愛的題材包括澳洲的自然景色與探險家、關於非洲、南極和歐洲的景色，以及具有中國和澳洲色彩的抽象作品。
+
+諾蘭爵士熱愛創意、文學和藝術，在創作上可說是無師自通。他從不會只堅守一種風格或技巧，而是終生以具象及抽象作品作不同嘗試。他曾探索多種藝術媒介，包括木炭畫、美術拼貼畫、版畫、搪瓷畫、壓克力顏料畫布及噴漆畫等。
+
+諾蘭爵士生前周遊列國，並從所到每個地方的精神面貌吸收創作靈感。他於一九六五年首次到中國旅行，其後多次舊地重遊。交易廣塲展出諾蘭爵士於一九八二年創作的八幅壓克力顏料畫布，是置地公司於一九八四年購入，這些畫作的創作靈感來自諾蘭爵士曾遊歷的桂林、長江及喜馬拉雅山。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -135,14 +255,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8497b6db-fc46-4f96-b2fd-ec123877aa23
+fb7e2857-8d9b-491d-ab95-6e7cef4def8a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T160417Z
+20151102T032124:635820312847747047Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

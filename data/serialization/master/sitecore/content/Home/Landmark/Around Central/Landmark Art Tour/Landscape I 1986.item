@@ -17,13 +17,6 @@ content-length: 38
 
 {40C90077-5EBC-4F25-8067-EF6FBE9556AA}
 ----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{D59CED31-83EA-4633-B7AA-89158A555363}" src="~/media/d59ced3183ea4633b7aa89158a555363.ashx" />
-----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
@@ -36,11 +29,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-4600
+6100
 ----version----
 language: en
 version: 1
-revision: d908ba0c-5cd7-4201-a4ec-8e138cd91398
+revision: 12f365fc-0367-49ca-a3ff-0fef5558138a
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -57,6 +50,39 @@ content-length: 17
 
 Landscape I, 1986
 ----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+452 x 300 cm
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{D59CED31-83EA-4633-B7AA-89158A555363}" src="~/media/d59ced3183ea4633b7aa89158a555363.ashx" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 17
+
+Acrylic on canvas
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 889
+
+"The Australian expressionist painter Sir Sidney Nolan was extraordinarily prolific, producing more than 10,000 significant works. He returned to favourite themes again and again - Australian landscapes and explorers, African, Antarctic and European landscapes, and Chinese and Australian-inspired abstractions.
+
+Largely self taught, Sir Sidney had a passion for ideas, literature and art. He never relied on one style or technique, experimenting throughout his life both with figurative and abstract work. He explored many media including charcoal drawing, collage, printmaking and painting with enamel, acrylic and spray paint.
+
+Landscape I and Landscape II were commissioned for Exchange Square by Hongkong Land. Because of their sizes, they were painted on the floor of the artist’s studio as the canvas was rolled out. The paintings were publicy unveiled by the artist himself."
+
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -69,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d908ba0c-5cd7-4201-a4ec-8e138cd91398
+12f365fc-0367-49ca-a3ff-0fef5558138a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T161619Z
+20151102T051351:635820380316426035Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,7 +113,54 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 0521a476-8554-46a4-9abc-6ee0a2701b58
+revision: a56050c9-262c-44e9-8211-d2e2242b5ac2
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 8
+
+山水一，1986
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 8
+
+山水一，1986
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+452 x 300 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 122
+
+<file mediaid="{61363F24-E563-475E-8D7F-62048C8B5646}" src="~/media/61363f24e563475e8d7f62048c8b5646.ashx" mediapath="" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 7
+
+压克力颜料画布
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 271
+
+"悉尼．諾蘭爵士是澳洲表現主義畫家，一生創作了逾萬幅著作，十分多產。他喜愛的題材包括澳洲的自然景色與探險家、關於非洲、南極和歐洲的景色，以及具有中國和澳洲色彩的抽象作品。
+
+諾蘭爵士熱愛創意、文學和藝術，在創作上可說是無師自通。他從不會只堅守一種風格或技巧，而是終生以具象及抽象作品作不同嘗試。他曾探索多種藝術媒介，包括木炭畫、美術拼貼畫、版畫、搪瓷畫、壓克力顏料畫布及噴漆畫等。
+
+置地公司委託諾蘭爵士創作「山水一和二」設置於交易廣塲入口，由諾蘭爵士揭幕。由於畫作面積龐大，諾蘭爵士於創作時，須將畫作擺放於工作室之地面上繪畫。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -102,14 +175,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0521a476-8554-46a4-9abc-6ee0a2701b58
+a56050c9-262c-44e9-8211-d2e2242b5ac2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T155845Z
+20151102T030709:635820304293167753Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -120,7 +193,54 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: ddb4ed34-9f47-440a-921f-9b8f8bf1e91b
+revision: 0b9bb24b-4fd9-48c4-b841-40910a55c25f
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 8
+
+山水一，1986
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 8
+
+山水一，1986
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+452 x 300 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 237
+
+<file mediaid="{5868A463-13F0-4784-A549-A12EAC93CAA5}" src="~/media/5868a46313f04784a549a12eac93caa5.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Sir Sidney Nolan OM AC RA 1917-1992/Landscape I 1986/i_0305_cant10" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 7
+
+壓克力顏料畫布
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 271
+
+"悉尼．諾蘭爵士是澳洲表現主義畫家，一生創作了逾萬幅著作，十分多產。他喜愛的題材包括澳洲的自然景色與探險家、關於非洲、南極和歐洲的景色，以及具有中國和澳洲色彩的抽象作品。
+
+諾蘭爵士熱愛創意、文學和藝術，在創作上可說是無師自通。他從不會只堅守一種風格或技巧，而是終生以具象及抽象作品作不同嘗試。他曾探索多種藝術媒介，包括木炭畫、美術拼貼畫、版畫、搪瓷畫、壓克力顏料畫布及噴漆畫等。
+
+置地公司委託諾蘭爵士創作「山水一和二」設置於交易廣塲入口，由諾蘭爵士揭幕。由於畫作面積龐大，諾蘭爵士於創作時，須將畫作擺放於工作室之地面上繪畫。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -135,14 +255,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ddb4ed34-9f47-440a-921f-9b8f8bf1e91b
+0b9bb24b-4fd9-48c4-b841-40910a55c25f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T155829Z
+20151102T030723:635820304435295882Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

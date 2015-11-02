@@ -17,13 +17,6 @@ content-length: 0
 
 
 ----field----
-field: {25ECD930-4134-4B41-A387-D063717B49B9}
-name: Art Size
-key: art size
-content-length: 0
-
-
-----field----
 field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
 name: Artist
 key: artist
@@ -34,9 +27,9 @@ content-length: 38
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
-content-length: 331
+content-length: 0
 
-<image mediapath="/Images/Landmark/Around Central/Landmark Art Tour/Chu Hon Sun b1950/MankindES31920px" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Around Central/Landmark Art Tour/Chu Hon Sun b1950/MankindES31920px" mediaid="{0A923A8B-792A-470A-9B78-40C45860C740}" />
+
 ----field----
 field: {22B6E709-1F38-4AF9-8D6C-7E3443E4F3ED}
 name: Floor and Building
@@ -48,13 +41,13 @@ content-length: 38
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
-content-length: 3
+content-length: 4
 
-800
+1000
 ----version----
 language: en
 version: 1
-revision: f2d642d3-262f-41a5-8f8d-6395686ab6ac
+revision: cc1a5562-3a0d-41d2-96b1-eb6f682bee97
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -71,11 +64,30 @@ content-length: 11
 
 Mankind_ES3
 ----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 18
+
+430 x 295 x 225 cm
+----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
 key: art key
-content-length: 0
+content-length: 6
 
+Marble
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 863
+
+"Following his graduation from the Chinese University of Hong Kong (CUHK) in 1976 with a degree in Fine Arts, sculptor Chu Hon Sun was awarded a scholarship by the Italian Cultural Department to study stone sculpting at the Academy of Fine Arts in Carrara, site of the world-famous marble quarries. Chu returned to Hong Kong and lectured at CUHK from 1982 to 1990. During this time, he continued to create his own works, among them “Swallows”, a marble statue set within the ornamental pond at Chater gardens, Central.
+
+Since setting in Canada, Chu has continued to return to Hong Kong as a visiting artist of Chung Chi College at CUHK.
+
+“Mankind” is a marble assemblage expressing the confluence between artistic romanticism and Chu’s disposition towards self-analysis and introspection. It was unveiled in the lobby of Three Exchange Square in July 1989."
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -90,14 +102,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f2d642d3-262f-41a5-8f8d-6395686ab6ac
+cc1a5562-3a0d-41d2-96b1-eb6f682bee97
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151031T031442Z
+20151102T051337:635820380177778105Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,15 +120,42 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 736bef99-3901-44a3-81b8-aa888d9f0aa5
+revision: 0470a7cc-44b5-4f04-9420-7b985a9d4a42
 
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 11
+content-length: 2
 
-Mankind_ES3
+人类
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 18
+
+430 x 295 x 225 厘米
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 2
+
+云石
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 295
+
+"雕塑家朱汉新于一九七六年毕业于香港中文大学，获美术学位，其后获意大利文化部颁发奖学金，前往位于世界着名云石矿场的卡拉拉美术学院研习石雕。
+
+朱氏返港后，于一九八二年至一九九零年间在香港中文大学任教，并继续从事艺术创作。他的作品包括位于中环遮打花园水池的云石雕塑“春燕”，以及在“东涌艺术径”展出的“日出而作”。“东涌艺术径”是全港首个设于屋邨内的公共艺术展览场，摆放了二十六件作品，
+朱氏定居加拿大，但不时返港于香港中文大学祟基学院担任客座艺术家。
+
+「人类」由多块云石组成，朱氏以浪漫的表达手法表现他对人类反思内省的信念。该作品于一九八九年七月在交易广场第三座大堂揭幕。"
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -130,14 +169,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-736bef99-3901-44a3-81b8-aa888d9f0aa5
+0470a7cc-44b5-4f04-9420-7b985a9d4a42
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T065442:635814392829928019Z
+20151102T020638:635820267982560905Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -148,15 +187,42 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: bfd46d8e-4f0a-4e42-ae93-79f9f42a925e
+revision: 11003ca9-f0ec-4427-81fb-006457b23c05
 
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 11
+content-length: 2
 
-Mankind_ES3
+人類
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 18
+
+430 x 295 x 225 厘米
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 2
+
+雲石
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 295
+
+"雕塑家朱漢新於一九七六年畢業於香港中文大學，獲美術學位，其後獲意大利文化部頒發獎學金，前往位於世界著名雲石礦場的卡拉拉美術學院研習石雕。
+
+朱氏返港後，於一九八二年至一九九零年間在香港中文大學任教，並繼續從事藝術創作。他的作品包括位於中環遮打花園水池的雲石雕塑「春燕」，以及在「東涌藝術徑」展出的「日出而作」。「東涌藝術徑」是全港首個設於屋邨內的公共藝術展覽場，擺放了二十六件作品，
+朱氏定居加拿大，但不時返港於香港中文大學祟基學院擔任客座藝術家。
+
+「人類」由多塊雲石組成，朱氏以浪漫的表達手法表現他對人類反思內省的信念。該作品於一九八九年七月在交易廣場第三座大堂揭幕。"
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -170,14 +236,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bfd46d8e-4f0a-4e42-ae93-79f9f42a925e
+11003ca9-f0ec-4427-81fb-006457b23c05
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T065455:635814392954925169Z
+20151102T020641:635820268014202715Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

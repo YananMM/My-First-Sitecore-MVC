@@ -29,11 +29,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-2600
+2700
 ----version----
 language: en
 version: 1
-revision: 017428fa-545d-4204-8ab8-2f3615fbc574
+revision: 43a5d1bd-bb0f-40a7-a63b-7912ed1ed047
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -50,6 +50,30 @@ content-length: 11
 
 Double Oval
 ----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 21
+
+3550 x 6350 x 4000 mm
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 6
+
+Bronze
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 1305
+
+"The British sculptor Henry Moore was one of the most influential public sculptors of the 20th century. He drew on studies of Classical, pre-Columbian and African art to create original and truly modern sculptural forms, usually in marble or cast bronze. Abstractions of organic shapes and the human body were his primary motifs. Many of his forms are abstractions of the human body; often pierced or containing hollow spaces.
+
+“Double Oval” expresses a seemingly impossible balance between bulk and grace. The surface, smooth in some places and rough in others, gives the sculpture a tactile quality and creates a sensation of depth and shade. Like many of Moore’s works, “Double Oval” contains hollow spaces, which not only offer the viewer a glimpse of the landscape beyond and portion of the other form, but also heightens the sense of balance and harmony. The emotional power of the sculpture is enhanced by its monumental size. Hongkong Land acquired by its monumental size. Hongkong Land acquired “Double Oval” in 1975. It was originally placed in Connaught Gardens, adjacent to Jardine House in 1977, in memory of Mr Vernon Roberts, J.P., the Director and General Manager of Hongkong Land from January 1964 to October 1977. The sculpture was moved to its current position on 18th August 2008."
+
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -62,14 +86,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-017428fa-545d-4204-8ab8-2f3615fbc574
+43a5d1bd-bb0f-40a7-a63b-7912ed1ed047
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T132322Z
+20151102T051349:635820380290124530Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -80,7 +104,46 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 77d062b2-22fd-4c4f-8121-66c4d644b611
+revision: 7fd67281-fb8f-4c84-9032-afb08e916ffa
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 2
+
+对环
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 2
+
+对环
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 21
+
+3550 x 6350 x 4000 毫米
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 4
+
+青铜雕塑
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 358
+
+"英国雕塑家亨利·摩尔是二十世纪其中一位极具影响力的公共雕塑家，深受古典、前哥伦布时期及非洲雕塑艺术的影响。他常以大理石和青铜作素材，其雕塑品充满创意和现代气息。摩尔主要以有机生物和人体的抽象形态为设计主题，其作品经常出现穿刺和孔洞,,当中不少是人体的抽象形态。
+“对环”表达浑厚与雅致的平衡。作品表面粗幼有致，带来不同的触感，并营造出深度与阴暗的感觉。与摩尔其他许多作品一样，“对环”满布孔洞，除了带来窥探外界景物及其他形态的空间外，更予人均衡和谐之感。这项作品体积庞大，令所呈现的情感力量更加澎湃。
+
+置地公司于一九七五年购入「对环」。于一九七七立“对环”于康乐花园以纪念罗弼时太平绅士，他曾于一九六四年一月至一九七七年十月期间担任置地公司的董事兼总经理。「对环」于二零零八年八月十八移放于现今位置。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -95,14 +158,86 @@ name: __Revision
 key: __revision
 content-length: 36
 
-77d062b2-22fd-4c4f-8121-66c4d644b611
+7fd67281-fb8f-4c84-9032-afb08e916ffa
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
+content-length: 35
+
+20151102T020339:635820266191138442Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: cb483c36-b2e4-419f-8a3b-621736824a84
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 2
+
+對環
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 2
+
+對環
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 21
+
+3550 x 6350 x 4000 毫米
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 4
+
+青銅雕塑
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 358
+
+"英國雕塑家亨利‧摩爾是二十世紀其中一位極具影響力的公共雕塑家，深受古典、前哥倫布時期及非洲雕塑藝術的影響。他常以大理石和青銅作素材，其雕塑品充滿創意和現代氣息。摩爾主要以有機生物和人體的抽象形態為設計主題，其作品經常出現穿刺和孔洞,,當中不少是人體的抽象形態。
+「對環」表達渾厚與雅致的平衡。作品表面粗幼有致，帶來不同的觸感，並營造出深度與陰暗的感覺。與摩爾其他許多作品一樣，「對環」滿佈孔洞，除了帶來窺探外界景物及其他形態的空間外，更予人均衡和諧之感。這項作品體積龐大，令所呈現的情感力量更加澎湃。
+
+置地公司於一九七五年購入「對環」。於一九七七立「對環」於康樂花園以紀念羅弼時太平紳士，他曾於一九六四年一月至一九七七年十月期間擔任置地公司的董事兼總經理。「對環」於二零零八年八月十八移放於現今位置。"
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
 content-length: 16
 
-20151027T073227Z
+20151102T015202Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+cb483c36-b2e4-419f-8a3b-621736824a84
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151102T020321:635820266017398504Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -17,13 +17,6 @@ content-length: 38
 
 {D6F769DA-5D1B-49DD-A4FF-3D6C742F92B3}
 ----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{41D193BB-F3A4-4A92-BE37-03E3A080C017}" src="~/media/41d193bbf3a44a92be3703e3a080c017.ashx" />
-----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
@@ -36,11 +29,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-3100
+3200
 ----version----
 language: en
 version: 1
-revision: cd346ec0-6367-4c57-949f-50461a10a8a0
+revision: fbb84648-8a29-49c8-917a-354d7c55a628
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -57,6 +50,39 @@ content-length: 49
 
 The Making of the Spheres III Crimson Cloud, 1988
 ----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+220 x 220 cm
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 250
+
+<file mediaid="{B61A783E-23AE-4C6C-8092-F9A54CF20100}" src="~/media/b61a783e23ae4c6c8092f9a54cf20100.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Hon Chi Fun b1922/The Making of the Spheres III Crimson Cloud 1988/i_0305_eng05" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 25
+
+Acrylic and oil on canvas
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 1052
+
+"A Hong Kong native, Hon Chi Fun belongs to a group of painters who, in the 1960s, pioneered a new sensibility within the local art community. Hon Chi Fun studied printmaking in New York and travelled to Europe and South America before settling for some years in Canada. He has exhibited widely in Asia and North America and his paintings are found in private collections and museums, including the Hong Kong Museum of Art.
+
+In his early works Hon Chi Fun used the Chinese medium of Chinese ink, brush and paper, while introducing elements of Surrealism, graphic design and various western techniques. Landscape subject matter was often rendered in sprayed or splashed ink, a successful evolution of Chinese painting incorporating both tradition and modernity. Increasingly he found the western media of oil and acrylic to be an attractive alternative to Chinese ink.
+
+The series of four paintings commissioned by Hongkong Land portray his exploration of the circle and its various symbolic connotations such as unity, completion and perfection."
+
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -69,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cd346ec0-6367-4c57-949f-50461a10a8a0
+fbb84648-8a29-49c8-917a-354d7c55a628
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T133741Z
+20151102T051349:635820380293214707Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,7 +113,54 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: b9a0180a-35a2-43e0-8171-3180e6f39e85
+revision: 00946799-b7a7-4025-87fd-e00bc671a015
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 11
+
+宇缘三：丹云，1988
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 11
+
+宇缘三：丹云，1988
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+220 x 220 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 251
+
+<file mediaid="{1D89F420-F4CA-4808-B52D-1F0E17BF1E10}" src="~/media/1d89f420f4ca4808b52d1f0e17bf1e10.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Hon Chi Fun b1922/The Making of the Spheres III Crimson Cloud 1988/i_0205_mand05" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 10
+
+压克力颜料及油彩画布
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 279
+
+"本港画家韩志勋属于一九六零年代初期香港的新派画家。他曾于纽约研习版画，并曾周游欧洲及南美洲等地，其后移居加拿大多年。他的作品曾于亚洲及北美洲等地作广泛展览，并为私人及博物馆，包括香港艺术馆所珍藏。
+
+韩志勋的早期作品以中国水墨、毛笔和宣纸为媒介，同时融入平面设计、超现实主义元素以及多种西方技法。他常以喷墨或泼墨手法表达风景题材，展现国画揉合传统与现代的成功演化。韩亦渐觉油彩及压克力颜料等西方媒材是中国水墨以外的另一选择。
+
+置地公司委托韩志勋创作这一组四幅的作品，他透过这些作品，探索圆形的象征以及圆形所代表的团结、圆满及完美等各种含义。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -102,14 +175,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b9a0180a-35a2-43e0-8171-3180e6f39e85
+00946799-b7a7-4025-87fd-e00bc671a015
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T133655Z
+20151102T021626:635820273861187143Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -120,7 +193,54 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 1fb2f695-bb70-478c-a798-7449dd916400
+revision: eb21783d-9ae5-46ba-97a5-e486415c110b
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 11
+
+宇緣三：丹雲，1988
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 11
+
+宇緣三：丹雲，1988
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+220 x 220 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{41D193BB-F3A4-4A92-BE37-03E3A080C017}" src="~/media/41d193bbf3a44a92be3703e3a080c017.ashx" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 10
+
+壓克力顏料及油彩畫布
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 279
+
+"本港畫家韓志勳屬於一九六零年代初期香港的新派畫家。他曾於紐約研習版畫，並曾周遊歐洲及南美洲等地，其後移居加拿大多年。他的作品曾於亞洲及北美洲等地作廣泛展覽，並為私人及博物館，包括香港藝術館所珍藏。
+
+韓志勳的早期作品以中國水墨、毛筆和宣紙為媒介，同時融入平面設計、超現實主義元素以及多種西方技法。他常以噴墨或潑墨手法表達風景題材，展現國畫揉合傳統與現代的成功演化。韓亦漸覺油彩及壓克力顏料等西方媒材是中國水墨以外的另一選擇。
+
+置地公司委託韓志勳創作這一組四幅的作品，他透過這些作品，探索圓形的象徵以及圓形所代表的團結、圓滿及完美等各種含義。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -135,14 +255,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1fb2f695-bb70-478c-a798-7449dd916400
+eb21783d-9ae5-46ba-97a5-e486415c110b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T133713Z
+20151102T021551:635820273512387193Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

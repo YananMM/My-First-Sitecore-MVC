@@ -17,30 +17,23 @@ content-length: 38
 
 {92679531-11AA-4707-A726-4C08250B194D}
 ----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{88FABDCA-5587-4312-B07C-E314443EDE11}" src="~/media/88fabdca55874312b07ce314443ede11.ashx" />
-----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
-content-length: 441
+content-length: 0
 
-<image mediapath="/Images/Landmark/Around Central/Landmark Art Tour/Li Wan Fai Danny b1954 - New/Dragon Back At Dawn 2013/iDragonBackw630LiWanFaiDannyresized" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Around Central/Landmark Art Tour/Li Wan Fai Danny b1954 - New/Dragon Back At Dawn 2013/iDragonBackw630LiWanFaiDannyresized" mediaid="{B583957C-666A-4E40-A3EB-812249C58019}" />
+
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 4
 
-4200
+4500
 ----version----
 language: en
 version: 1
-revision: acdc6943-f59c-4992-8407-d5ae2f411a31
+revision: fb8cd04c-2baf-43ca-9cc5-77ce00416f4b
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -57,6 +50,39 @@ content-length: 27
 
 Dragon's Back At Dawn, 2013
 ----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 11
+
+180 x 120cm
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 232
+
+<file mediaid="{3B53911F-A3E5-4D82-A8E7-DC138D374EE1}" src="~/media/3b53911fa3e54d82a8e7dc138d374ee1.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Li Wan Fai Danny b1954 - New/Dragon Back At Dawn 2013/i_eng03" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 17
+
+Acrylic on Canvas
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 1094
+
+"Born in Hong Kong, Danny, Li Wan Fai learned western painting in the late ‘60s from Chiang Wing-sin, an established oil painter from China.  His continuous experimentations with different techniques led him to develop his individualistic style.  In 1984, Li’s debut solo exhibition in Royce Gallery, Sydney, Australia brought him recognition.  His work was selected for the XXI and the XXII Prix International D’Art Contemporain de Monte-Carlo in 1987 and 1988. He also participated in the Contemporary Hong Kong Art Biennial from 1985 to 1996.    
+
+Li demonstrates his characteristic approach of expressive brushstrokes, rich hues, and elegant composition; and vividly renders the rugged undulating spinal ridge of the Dragon’s Back on the canvas.  He contrasts the intense shady pigments on the foreground with the soft yellow and white colours to dramatise the breathtaking moment of breaking dawn above the distant South China Sea.  The work unveils a massive elongated dragon lying asleep along the calm misty shore.
+
+Hongkong Land commissioned the “Dragon’s Back At Dawn” in 2012."
+
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -69,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-acdc6943-f59c-4992-8407-d5ae2f411a31
+fb8cd04c-2baf-43ca-9cc5-77ce00416f4b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T152558Z
+20151102T051350:635820380304585358Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,7 +113,54 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 708001cc-e9d1-48dd-a1e8-b7072349d8a1
+revision: 710b67cf-7cb8-4aea-accc-12dca3b778ac
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 12
+
+龙脊山，曙光, 2013
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 12
+
+龙脊山，曙光, 2013
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 11
+
+180 x 120厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 233
+
+<file mediaid="{22C626A3-DD98-47C9-A7BB-7CD02B3B8EB3}" src="~/media/22c626a3dd9847c9a7bb7cd02b3b8eb3.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Li Wan Fai Danny b1954 - New/Dragon Back At Dawn 2013/i_mand03" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 7
+
+压克力颜料画布
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 352
+
+"李运辉于香港出生，六十年代后期师从着名中国油画家蒋荣先学习西洋画。他勇于尝试不同的绘画技巧，创出自成一家的个人风格。一九八四年，李运辉在澳洲悉尼的Royce Gallery举行首次个人展，大获好评。他的作品于一九八七及一九八八年获选角逐第二十一及二十二届Prix International D’Art Contemporain de Monte-Carlo。他亦于一九八五至一九九六年间参加香港当代艺术双年展。
+
+李运辉结合鲜明笔触、丰富色调与优美构图，以独特手法将山势绵延起伏的龙脊描绘得活灵活现。画中以柔和的黄白色对照前方浓郁、阴暗的色泽，凸显远方南中国海曙光初现的摄人美景，作品展现的龙脊宛如一条沿着迷蒙海岸躺卧的沉睡巨龙。
+
+置地公司于二零一二年委托李志章创作「龙脊山，曙光」。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -102,14 +175,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-708001cc-e9d1-48dd-a1e8-b7072349d8a1
+710b67cf-7cb8-4aea-accc-12dca3b778ac
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T152222Z
+20151102T034549:635820327496564912Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -120,7 +193,54 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 1a906050-cd88-4b5d-b99c-7901d529081b
+revision: 13f1902f-c1c7-4e4b-a400-2cb311b68434
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 12
+
+龍脊山，曙光, 2013
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 12
+
+龍脊山，曙光, 2013
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 11
+
+180 x 120厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{88FABDCA-5587-4312-B07C-E314443EDE11}" src="~/media/88fabdca55874312b07ce314443ede11.ashx" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 7
+
+壓克力顏料畫布
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 352
+
+"李運輝於香港出生，六十年代後期師從著名中國油畫家蔣榮先學習西洋畫。他勇於嘗試不同的繪畫技巧，創出自成一家的個人風格。一九八四年，李運輝在澳洲悉尼的Royce Gallery舉行首次個人展，大獲好評。他的作品於一九八七及一九八八年獲選角逐第二十一及二十二屆Prix International D’Art Contemporain de Monte-Carlo。他亦於一九八五至一九九六年間參加香港當代藝術雙年展。
+
+李運輝結合鮮明筆觸、豐富色調與優美構圖，以獨特手法將山勢綿延起伏的龍脊描繪得活靈活現。畫中以柔和的黃白色對照前方濃郁、陰暗的色澤，凸顯遠方南中國海曙光初現的攝人美景，作品展現的龍脊宛如一條沿著迷濛海岸躺臥的沉睡巨龍。
+
+置地公司於二零一二年委託李志章創作「龍脊山，曙光」。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -135,14 +255,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1a906050-cd88-4b5d-b99c-7901d529081b
+13f1902f-c1c7-4e4b-a400-2cb311b68434
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T152235Z
+20151102T034606:635820327661594351Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

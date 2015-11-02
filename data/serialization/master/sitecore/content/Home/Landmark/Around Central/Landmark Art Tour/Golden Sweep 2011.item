@@ -17,13 +17,6 @@ content-length: 38
 
 {A71F51B3-1962-416E-951A-5B4F5BD1514B}
 ----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{EAB7F8EC-5A2E-4152-8855-385E07CD3440}" src="~/media/eab7f8ec5a2e41528855385e07cd3440.ashx" />
-----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
@@ -36,11 +29,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-1800
+2000
 ----version----
 language: en
 version: 1
-revision: 9f1f2ca2-21e7-4f5c-a532-00d7dbb60c62
+revision: bc4e8f6e-3b3b-4ae9-8ca9-38d8603b2cd5
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -57,6 +50,39 @@ content-length: 18
 
 Golden Sweep, 2011
 ----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+400 x 200 cm
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 233
+
+<file mediaid="{8A749ED1-62D7-45D0-A6B7-491B58BF9339}" src="~/media/8a749ed162d745d0a6b7491b58bf9339.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Han Xin b1955/Golden Sweep 2011/i_3010_hon_xin_goldensweep_eng" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 25
+
+Acrylic and oil on canvas
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 706
+
+"In this monumental painting, Shanghai-born artist Han Xin invites the viewer into a nuanced world of light and shadow. The willow is a recurring motif in Chinese art and a tree of great mythological significance. Han Xin brings the majestic weeping willows to life with vibrant brushwork and a crescendo of colours. The rich reds and oranges of the second painting project the warm glow of autumn.
+
+Han Xin has studied, worked and exhibited widely in China, the United States and France and has synthesized his diverse experiences to become a master of mood and pattern. His light-filled canvassed reflect an innately confident and optimistic nature.
+
+Hongkong Land acquired “Golden Sweep” in 2011."
+
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -69,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9f1f2ca2-21e7-4f5c-a532-00d7dbb60c62
+bc4e8f6e-3b3b-4ae9-8ca9-38d8603b2cd5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T073039Z
+20151102T051348:635820380284424204Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,15 +113,55 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 964ca061-ec69-48b1-b634-b0d8722ff522
+revision: aaec2002-bb66-4fb7-90d7-fe6c68849d6f
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 9
+
+梳扫金黄，2011
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 18
+content-length: 9
 
-Golden Sweep, 2011
+梳扫金黄，2011
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+400 x 200 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{EAB7F8EC-5A2E-4152-8855-385E07CD3440}" src="~/media/eab7f8ec5a2e41528855385e07cd3440.ashx" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 10
+
+压克力颜料及油彩画布
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 208
+
+"透过这幅雄伟的作品，生于上海的画家韩辛引领观赏者进入一个微妙的光影世界。在中国文化之中，柳树有着重要象征意义，亦经常出现于艺术品当中。韩辛以生动的笔触及层叠的色彩为茂盛的柳树带来了生命。丰富的橘红色则渗透出秋日的暖意。
+
+韩辛足迹遍布美国、中国及法国，丰富的阅历使他在表达情感及构图的技巧上都达至大师级的境界，而他的自信及乐观的性情亦在其作品上完全表露无遗。
+
+置地公司于二零一一年购入「梳扫金黄」。"
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -109,14 +175,94 @@ name: __Revision
 key: __revision
 content-length: 36
 
-964ca061-ec69-48b1-b634-b0d8722ff522
+aaec2002-bb66-4fb7-90d7-fe6c68849d6f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T092352:635814482320506588Z
+20151102T030349:635820302296013522Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 912cb17c-585d-4245-a83a-84fdc017551f
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 9
+
+梳掃金黃，2011
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 9
+
+梳掃金黃，2011
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+400 x 200 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{78DAFAC9-95AB-4DBB-9107-F72BEDE0EA73}" src="~/media/78dafac995ab4dbb9107f72bede0ea73.ashx" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 10
+
+壓克力顏料及油彩畫布
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 208
+
+"透過這幅雄偉的作品，生於上海的畫家韓辛引領觀賞者進入一個微妙的光影世界。在中國文化之中，柳樹有著重要象徵意義，亦經常出現於藝術品當中。韓辛以生動的筆觸及層疊的色彩為茂盛的柳樹帶來了生命。豐富的橘紅色則滲透出秋日的暖意。
+
+韓辛足跡遍佈美國、中國及法國，豐富的閱歷使他在表達情感及構圖的技巧上都達至大師級的境界，而他的自信及樂觀的性情亦在其作品上完全表露無遺。
+
+置地公司於二零一一年購入「梳掃金黃」。"
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151102T030135Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+912cb17c-585d-4245-a83a-84fdc017551f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151102T030347:635820302271062095Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

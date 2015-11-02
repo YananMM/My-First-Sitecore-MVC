@@ -17,13 +17,6 @@ content-length: 38
 
 {11FBDB90-89AA-4C20-BDBF-2F66858B0019}
 ----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{AF58D69F-1E00-41B4-B68A-9A743D7F0CC0}" src="~/media/af58d69f1e0041b4b68a9a743d7f0cc0.ashx" />
-----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
@@ -36,11 +29,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-4000
+4200
 ----version----
 language: en
 version: 1
-revision: 9f3ede1e-7eb0-4645-8b23-db541c66f4ed
+revision: aa149bda-477b-402c-b37d-c768ee727c16
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -57,6 +50,39 @@ content-length: 20
 
 Starling Inlet, 2013
 ----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 11
+
+180 x 120cm
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 219
+
+<file mediaid="{22974D52-720F-4954-BE91-F496A13C620F}" src="~/media/22974d52720f4954be91f496a13c620f.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Lee Chi Cheung b1951/Starling Inlet 2013/i_eng01" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 18
+
+Acrylic on Canvas 
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 1031
+
+"Lee Chi Cheung was born in Xiamen of Fujian Province, China, and he grew up in Hong Kong. In 1968, he started studying Chinese painting at Fan Fung Studio. The following year he had his debut exhibition at the City Museum and Art Gallery the following year. In 1973, he received the Fine Arts Award at The Royal Over-Seas League Art Exhibition in London. He has held over 30 solo and group exhibitions in the UNITED STATES, UNITED KINGDOM, Monaco, Taiwan, The Philippines, China and Hong Kong.  
+
+Lee constructs a pictorial landscape of the sleepy jagged inlet with echoes of the past. He represents the craggy hills with expressive, stylised, textured ts’un strokes and orderly contours. Further afield, the sweeping range of Wu Tong Shan can be viewed across the Sham Chun River in China.  This painting engages an emotional affinity towards nostalgia of when these remote lowlands were covered with paddy fields, devoid, otherwise, of signs of human existence. 
+ 
+Hongkong Land commissioned the “Starling Inlet” in 2012."
+
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -69,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9f3ede1e-7eb0-4645-8b23-db541c66f4ed
+aa149bda-477b-402c-b37d-c768ee727c16
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T151136Z
+20151102T051350:635820380301925205Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,7 +113,54 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: c59139ce-6dac-4e43-acd4-ca18681bc54f
+revision: 65610778-d2b9-4bcc-9d0c-802011e00c55
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 10
+
+沙头角海, 2013
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 10
+
+沙头角海, 2013
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 11
+
+180 x 120厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 220
+
+<file mediaid="{8E15DAA4-14F4-4861-BAF7-5D90AC604F55}" src="~/media/8e15daa414f44861baf75d90ac604f55.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Lee Chi Cheung b1951/Starling Inlet 2013/i_mand01" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 8
+
+压克力颜料画布 
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 287
+
+"李志章生于福建省厦门市，在香港长大。一九六八年，他在薰风美术院开始学习国画，翌年在香港博物美术馆举办其首个艺术展。一九七三年，他获英国皇家海外艺术联展颁发优异奖。李志章曾于美国、英国、摩纳哥、台湾、菲律宾、中国及香港等地举办三十多场个人及团体展览。 
+
+这画作气氛恬静宁谧，交错的内湾渗着一抹淡淡的古雅色彩。李氏运用表达力强、风格独特的皴法来表达山石厚重的质感，配合错落有致的线条，勾勒出峻峭崎岖的山势。画中的中国深圳河可远眺连绵不绝的梧桐山，表达画家缅怀这片偏僻山野昔日阡陌纵横、人迹罕至的风貌。 
+
+置地公司于二零一二年委托李志章创作「香港新界沙头角」。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -102,14 +175,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c59139ce-6dac-4e43-acd4-ca18681bc54f
+65610778-d2b9-4bcc-9d0c-802011e00c55
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T150855Z
+20151102T034023:635820324239448615Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -120,7 +193,54 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 5a2520cf-fd11-4b8a-8b18-687f4b08d762
+revision: e6588d2c-997f-4369-905c-74c1ca1d2f89
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 10
+
+沙頭角海, 2013
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 10
+
+沙頭角海, 2013
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 11
+
+180 x 120厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{AF58D69F-1E00-41B4-B68A-9A743D7F0CC0}" src="~/media/af58d69f1e0041b4b68a9a743d7f0cc0.ashx" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 8
+
+壓克力顏料畫布 
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 287
+
+"李志章生於福建省廈門市，在香港長大。一九六八年，他在薰風美術院開始學習國畫，翌年在香港博物美術館舉辦其首個藝術展。一九七三年，他獲英國皇家海外藝術聯展頒發優異獎。李志章曾於美國、英國、摩納哥、台灣、菲律賓、中國及香港等地舉辦三十多場個人及團體展覽。 
+
+這畫作氣氛恬靜寧謐，交錯的內灣滲著一抹淡淡的古雅色彩。李氏運用表達力強、風格獨特的皴法來表達山石厚重的質感，配合錯落有致的線條，勾勒出峻峭崎嶇的山勢。畫中的中國深圳河可遠眺連綿不絕的梧桐山，表達畫家緬懷這片偏僻山野昔日阡陌縱橫、人跡罕至的風貌。 
+
+置地公司於二零一二年委託李志章創作「香港新界沙頭角」。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -135,14 +255,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5a2520cf-fd11-4b8a-8b18-687f4b08d762
+e6588d2c-997f-4369-905c-74c1ca1d2f89
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T150914Z
+20151102T034013:635820324136422722Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

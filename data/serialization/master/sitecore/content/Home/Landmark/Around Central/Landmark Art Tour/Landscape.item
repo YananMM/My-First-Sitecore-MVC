@@ -17,13 +17,6 @@ content-length: 38
 
 {571ECB3F-767C-4039-BFD6-AC6E31C54FCD}
 ----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{00646379-595D-446C-88AF-5C8EAEFB9DEF}" src="~/media/00646379595d446c88af5c8eaefb9def.ashx" />
-----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
@@ -36,11 +29,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-4800
+6800
 ----version----
 language: en
 version: 1
-revision: 7c015c50-2952-47ef-89da-d23cbf84a57b
+revision: b4118e75-2814-4ab9-b7ae-7c706a482611
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -57,6 +50,39 @@ content-length: 9
 
 Landscape
 ----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+160 x 450 cm
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{00646379-595D-446C-88AF-5C8EAEFB9DEF}" src="~/media/00646379595d446c88af5c8eaefb9def.ashx" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 31
+
+Chinese ink and colour on paper
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 749
+
+"Yeung Yick Chung was a key member of the New Ink Movement, an important artistic movement in the 1970s. Led by painter Lui Shou-kwan, the movement laid the foundations for modern ink painting by combining the best of Western and Chinese aesthetics.
+
+Born in Jieyang District of Guangdong Province, Yeung settled in Hong Kong in 1949. He gave his first exhibition ten years later at the Hong Kong Arts Festival. While Hong Kong was emerging as a centre of new ink art, Yeung and several contemporaries founded the One Art Group. Yeung was a frequent exhibitor with this group, participating in many group and one-man shows at museums and galleries in Hong Kong, Taiwan and the United States.
+
+Hongkong Land acquired """"Landscape"""" in 1982."
+
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -69,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7c015c50-2952-47ef-89da-d23cbf84a57b
+b4118e75-2814-4ab9-b7ae-7c706a482611
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T162333Z
+20151102T051352:635820380326376604Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,7 +113,54 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 14d41200-01fa-4aa0-bfc9-e9eea6bd28ba
+revision: ff6f0039-d052-4407-9722-3ca72d42beb6
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+神岳探幽
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 4
+
+神岳探幽
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+160 x 450 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 221
+
+<file mediaid="{B46B3A99-E30D-47DC-AD9B-F1C86E64C77D}" src="~/media/b46b3a99e30d47dcad9bf1c86e64c77d.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Yeung Yick Chung 1921-1981/Landscape/i_0205_mand22" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 4
+
+水墨纸本
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 219
+
+"杨鷁翀是「新水墨运动」的骨干成员。这项重要的艺术运动是由画家吕寿琨于一九七零年代发起，将中、西方的美学观融汇贯通，开创现代水墨画的新风格。
+
+杨氏生于广东省揭阳区，于一九四九年定居香港，十年后在香港艺术节举办他的第一个展览。随着香港逐渐成为新水墨艺术中心，杨氏与数位同期画家成立「一画会」，并成为当中最常举办展览的会员。他还参与香港、台湾及美国的博物馆及艺廊的多个团体展及个人展。
+
+置地公司于一九八二年购入「神岳探幽」。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -102,14 +175,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-14d41200-01fa-4aa0-bfc9-e9eea6bd28ba
+ff6f0039-d052-4407-9722-3ca72d42beb6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T162145Z
+20151102T023407:635820284470813979Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -120,7 +193,54 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 929a895c-e2fa-46ef-b4c3-8002829c3c03
+revision: 14df8df4-ffc7-4b16-bd32-4aff9578683f
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+神嶽探幽
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 4
+
+神嶽探幽
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+160 x 450 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{00646379-595D-446C-88AF-5C8EAEFB9DEF}" src="~/media/00646379595d446c88af5c8eaefb9def.ashx" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 4
+
+水墨紙本
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 219
+
+"楊鷁翀是「新水墨運動」的骨幹成員。這項重要的藝術運動是由畫家呂壽琨於一九七零年代發起，將中、西方的美學觀融匯貫通，開創現代水墨畫的新風格。
+
+楊氏生於廣東省揭陽區，於一九四九年定居香港，十年後在香港藝術節舉辦他的第一個展覽。隨著香港逐漸成為新水墨藝術中心，楊氏與數位同期畫家成立「一畫會」，並成為當中最常舉辦展覽的會員。他還參與香港、台灣及美國的博物館及藝廊的多個團體展及個人展。
+
+置地公司於一九八二年購入「神嶽探幽」。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -135,14 +255,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-929a895c-e2fa-46ef-b4c3-8002829c3c03
+14df8df4-ffc7-4b16-bd32-4aff9578683f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T162212Z
+20151102T023309:635820283891550847Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -17,13 +17,6 @@ content-length: 38
 
 {A71F51B3-1962-416E-951A-5B4F5BD1514B}
 ----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{66BD7D2A-3779-421B-825C-3778D0DFD649}" src="~/media/66bd7d2a3779421b825c3778d0dfd649.ashx" />
-----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
@@ -36,11 +29,91 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-1894
+2400
+----version----
+language: en
+version: 1
+revision: 8151d81c-f3d6-4272-aae3-f26166d46056
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 11
+
+Summer 2000
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 11
+
+Summer 2000
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+198 x 169 cm
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{1956A226-3401-43FB-977F-9E335E7D2DC8}" src="~/media/1956a226340143fb977f9e335e7d2dc8.ashx" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 25
+
+Acrylic and oil on canvas
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 701
+
+"In this series of four large paintings, Shanghai-born artist Han Xin used the symbolism of a doorway to represent Hong Kong’s position as the gateway to China. Painted while he was living in the United States, the doors also represent a look back on his native China. He chose a pair of majestic doors from the Forbidden City and infused each one with the light and colour of a different season.
+
+Han Xin has studied, worked and exhibited widely in China, the United States and France and has synthesised his diverse experiences to become a master of mood and pattern. His light-filled canvasses reflect an innately confident and optimistic nature.
+
+Hongkong Land commissioned these paintings."
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151102T022110Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8151d81c-f3d6-4272-aae3-f26166d46056
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151102T051348:635820380287784397Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: ab18340c-3d5f-4b0c-bc8c-f974513f1bce
+revision: 2fec82e5-f3b0-414f-b5fb-79b2bea38590
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -53,9 +126,42 @@ Summer, 2000
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
+content-length: 6
+
+夏，2000
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
 content-length: 12
 
-Summer, 2000
+198 x 169 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 210
+
+<file mediaid="{FF4DA0E1-F89D-484B-8909-A82A00369757}" src="~/media/ff4da0e1f89d484b8909a82a00369757.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Han Xin b1955/Summer 2000/i_0205_mand13" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 10
+
+压克力颜料及油彩画布
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 195
+
+"在这四幅大型作品中，上海出生的画家韩辛以城门的意象来表现香港作为中国门户城市的角色。韩辛在旅居美国期间创作这些油画，以紫禁城的一对城门作为素材，展现四季的不同光影和色彩，同时遥寄对祖国的一份情怀。
+
+韩辛曾于中、美、法三地研习、工作及举办展览会。他将三地的生活体验融入画作，尤其善于驾驭气氛和构图。他的作品清新明亮，体现他自信、豁达的性格。
+
+置地公司委托韩辛创作这些画作。"
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -69,14 +175,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ab18340c-3d5f-4b0c-bc8c-f974513f1bce
+2fec82e5-f3b0-414f-b5fb-79b2bea38590
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T094355:635814494359155159Z
+20151102T022340:635820278201685406Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,7 +193,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: de2a7b11-be35-4b77-b964-c646dacf627b
+revision: f67ddef9-25a0-4d92-9cc0-5a396278aab4
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -100,9 +206,42 @@ Summer, 2000
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
+content-length: 6
+
+夏，2000
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
 content-length: 12
 
-Summer, 2000
+198 x 169 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{66BD7D2A-3779-421B-825C-3778D0DFD649}" src="~/media/66bd7d2a3779421b825c3778d0dfd649.ashx" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 10
+
+壓克力顏料及油彩畫布
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 195
+
+"在這四幅大型作品中，上海出生的畫家韓辛以城門的意象來表現香港作為中國門戶城市的角色。韓辛在旅居美國期間創作這些油畫，以紫禁城的一對城門作為素材，展現四季的不同光影和色彩，同時遙寄對祖國的一份情懷。
+
+韓辛曾於中、美、法三地研習、工作及舉辦展覽會。他將三地的生活體驗融入畫作，尤其善於駕馭氣氛和構圖。他的作品清新明亮，體現他自信、豁達的性格。
+
+置地公司委託韓辛創作這些畫作。"
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -116,14 +255,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-de2a7b11-be35-4b77-b964-c646dacf627b
+f67ddef9-25a0-4d92-9cc0-5a396278aab4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T094322:635814494029006275Z
+20151102T022327:635820278079418412Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

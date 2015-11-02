@@ -10,13 +10,6 @@ template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
 templatekey: T29 Page
 
 ----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{52346A15-2A77-4618-ADD6-23E274DFF111}" src="~/media/52346a152a774618add623e274dff111.ashx" />
-----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
@@ -29,11 +22,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-1100
+1300
 ----version----
 language: en
 version: 1
-revision: 5af926af-9033-460b-87b6-4458239bdd2f
+revision: c52d36a8-6779-414b-a934-846fcc0bb1b2
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -50,6 +43,25 @@ content-length: 33
 
 Sir Catchick Paul Chater (Plaque)
 ----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 235
+
+<file mediaid="{64468ED4-6915-4CC1-B27C-BD6DA68BC143}" src="~/media/64468ed469154cc1b27cbd6da68bc143.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Chu Tat Shing b1942/Sir Catchick Paul Chater Plaque/i_0305_eng01" />
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 1372
+
+"Chu Tat Shing was born in Hubei, Wuhan in 1942.  He is a celebrated sculptor and an active supporter of the development of the 3-dimensional art in Hong Kong. Under the guidance of Zhang Zu Wu at the Department of Sculpture of the Hubei Institute of Fine Arts, Chu developed his skills and eventually stayed on at the department to become an instructor. 
+
+In 1978, at the end of the Cultural Revolution, he was admitted on to a postgraduate programme at the Department of Sculpture of the China Central Academy of Fine Arts.  Upon graduation, he moved and eventually settled in Hong Kong, actively engaging with the local art community as a sculptor and teacher. A long-time member of the Hong Kong Sculpture Society, he also served on the Board of Directors of the Hong Kong Artists Association.  In 2007, he was awarded a medal of honour by the Hong Kong SAR Government for his contributions to arts and culture.
+
+This plaque at Chater House was created by Chu Tat Shing in memory of Sir Catchick Paul Chater, one of the founders of Hongkong Land.  Sir Chater was a very successful businessman who helped shape Hong Kong in its early days.  He was instrumental in the reclamation of Victoria Harbour and was pivotal in the colonial government’s success in many land development projects. The plaque pays tribute to Sir Chater’s contributions in shaping Central. "
+
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -62,14 +74,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5af926af-9033-460b-87b6-4458239bdd2f
+c52d36a8-6779-414b-a934-846fcc0bb1b2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T073038Z
+20151102T051337:635820380179988231Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -80,22 +92,41 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: c2b62bd3-63af-464b-a2e3-801ce1ee2b1a
+revision: 4b236970-3999-4f82-ae1d-07642160ddd5
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 33
+content-length: 29
 
-Sir Catchick Paul Chater (Plaque)
+Sir Catchick Paul Chater (牌匾)
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 33
+content-length: 29
 
-Sir Catchick Paul Chater (Plaque)
+Sir Catchick Paul Chater (牌匾)
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 236
+
+<file mediaid="{4555151F-C081-48B2-AA63-08DE698CB973}" src="~/media/4555151fc08148b2aa6308de698cb973.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Chu Tat Shing b1942/Sir Catchick Paul Chater Plaque/i_0205_mand01" />
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 378
+
+"朱达诚于一九四二年在湖北省武汉出生，是着名雕塑家，并积极推动香港雕塑艺术的发展。他曾就读湖北美术学院雕塑系，在雕塑大师张祖武的指导和教授下，磨练出娴熟的雕刻技巧，后来还担任该系的导师。
+
+一九七八年文化大革命结束，朱达诚考进中央美术学院雕塑系研究生班，继续研习雕塑艺术。毕业后，他移居香港，并以雕塑家和教师的身份，积极投入本地艺术圈。除了是香港雕塑学会的长期会员外，他亦曾是香港美术家协会理事会成员。二零零七年，朱达诚获香港特区政府颁授荣誉勋章，以表扬他对推动文化艺术发展的贡献。
+
+朱达诚为纪念置地公司创办人之一的遮打爵士而铸造的牌匾，现放置于遮打大厦。遮打爵士是一位非常成功的商人，并影响了香港早年发展。维多利亚港填海计划以及当年殖民地政府多个土地发展项目之所以能成功推行，他居功至伟。这块牌匾是向遮打爵士推动中环发展的成就表达敬意。 "
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -109,14 +140,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c2b62bd3-63af-464b-a2e3-801ce1ee2b1a
+4b236970-3999-4f82-ae1d-07642160ddd5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T080916:635814437564636698Z
+20151102T023745:635820286653308811Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -127,22 +158,41 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: c76ef037-d874-48a3-b8a3-ec8947c9dbbf
+revision: 539cc34a-51af-487e-b808-ca86a93664a1
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 33
+content-length: 29
 
-Sir Catchick Paul Chater (Plaque)
+Sir Catchick Paul Chater (牌匾)
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 33
+content-length: 29
 
-Sir Catchick Paul Chater (Plaque)
+Sir Catchick Paul Chater (牌匾)
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{52346A15-2A77-4618-ADD6-23E274DFF111}" src="~/media/52346a152a774618add623e274dff111.ashx" />
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 378
+
+"朱達誠於一九四二年在湖北省武漢出生，是著名雕塑家，並積極推動香港雕塑藝術的發展。他曾就讀湖北美術學院雕塑系，在雕塑大師張祖武的指導和教授下，磨練出嫻熟的雕刻技巧，後來還擔任該系的導師。
+
+一九七八年文化大革命結束，朱達誠考進中央美術學院雕塑系研究生班，繼續研習雕塑藝術。畢業後，他移居香港，並以雕塑家和教師的身份，積極投入本地藝術圈。除了是香港雕塑學會的長期會員外，他亦曾是香港美術家協會理事會成員。二零零七年，朱達誠獲香港特區政府頒授榮譽勳章，以表揚他對推動文化藝術發展的貢獻。
+
+朱達誠為紀念置地公司創辦人之一的遮打爵士而鑄造的牌匾，現放置於遮打大廈。遮打爵士是一位非常成功的商人，並影響了香港早年發展。維多利亞港填海計劃以及當年殖民地政府多個土地發展項目之所以能成功推行，他居功至偉。這塊牌匾是向遮打爵士推動中環發展的成就表達敬意。 "
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -156,14 +206,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c76ef037-d874-48a3-b8a3-ec8947c9dbbf
+539cc34a-51af-487e-b808-ca86a93664a1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151026T080848:635814437288030877Z
+20151102T023746:635820286669829756Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

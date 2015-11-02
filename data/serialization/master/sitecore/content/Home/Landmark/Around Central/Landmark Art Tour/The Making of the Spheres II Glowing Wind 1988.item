@@ -10,19 +10,19 @@ template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
 templatekey: T29 Page
 
 ----field----
+field: {04670F13-3F17-47AC-B6AA-858F246682E0}
+name: Created Time
+key: created time
+content-length: 0
+
+
+----field----
 field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
 name: Artist
 key: artist
 content-length: 38
 
 {D6F769DA-5D1B-49DD-A4FF-3D6C742F92B3}
-----field----
-field: {03880D3C-1C45-403F-8E60-29125FB34318}
-name: Commentary
-key: commentary
-content-length: 109
-
-<file mediaid="{31E421C7-EA94-4B16-898C-BCDF6D41C30B}" src="~/media/31e421c7ea944b16898cbcdf6d41c30b.ashx" />
 ----field----
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
@@ -36,11 +36,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-3000
+3100
 ----version----
 language: en
 version: 1
-revision: 7906319e-b49b-4292-995a-22718071e07b
+revision: e2f722ea-1cc8-4733-92ce-5389df5632d7
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -57,6 +57,39 @@ content-length: 47
 
 The Making of the Spheres II Glowing Wind, 1988
 ----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+220 x 220 cm
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{31E421C7-EA94-4B16-898C-BCDF6D41C30B}" src="~/media/31e421c7ea944b16898cbcdf6d41c30b.ashx" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 25
+
+Acrylic and oil on canvas
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 1052
+
+"A Hong Kong native, Hon Chi Fun belongs to a group of painters who, in the 1960s, pioneered a new sensibility within the local art community. Hon Chi Fun studied printmaking in New York and travelled to Europe and South America before settling for some years in Canada. He has exhibited widely in Asia and North America and his paintings are found in private collections and museums, including the Hong Kong Museum of Art.
+
+In his early works Hon Chi Fun used the Chinese medium of Chinese ink, brush and paper, while introducing elements of Surrealism, graphic design and various western techniques. Landscape subject matter was often rendered in sprayed or splashed ink, a successful evolution of Chinese painting incorporating both tradition and modernity. Increasingly he found the western media of oil and acrylic to be an attractive alternative to Chinese ink.
+
+The series of four paintings commissioned by Hongkong Land portray his exploration of the circle and its various symbolic connotations such as unity, completion and perfection."
+
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -69,14 +102,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7906319e-b49b-4292-995a-22718071e07b
+e2f722ea-1cc8-4733-92ce-5389df5632d7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T133435Z
+20151102T051349:635820380292514667Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,7 +120,47 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 6dc51971-7341-481d-94ad-ec82c78f6075
+revision: 2230d0fe-c687-4307-b094-7c867bac78d5
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 11
+
+宇缘二：炽风，1988
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+220 x 220 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 249
+
+<file mediaid="{B88A2954-C96B-4B63-9E98-E3282DF93236}" src="~/media/b88a2954c96b4b639e98e3282df93236.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Hon Chi Fun b1922/The Making of the Spheres II Glowing Wind 1988/i_0205_mand04" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 10
+
+压克力颜料及油彩画布
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 279
+
+"本港画家韩志勋属于一九六零年代初期香港的新派画家。他曾于纽约研习版画，并曾周游欧洲及南美洲等地，其后移居加拿大多年。他的作品曾于亚洲及北美洲等地作广泛展览，并为私人及博物馆，包括香港艺术馆所珍藏。
+
+韩志勋的早期作品以中国水墨、毛笔和宣纸为媒介，同时融入平面设计、超现实主义元素以及多种西方技法。他常以喷墨或泼墨手法表达风景题材，展现国画揉合传统与现代的成功演化。韩亦渐觉油彩及压克力颜料等西方媒材是中国水墨以外的另一选择。
+
+置地公司委托韩志勋创作这一组四幅的作品，他透过这些作品，探索圆形的象征以及圆形所代表的团结、圆满及完美等各种含义。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -102,14 +175,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6dc51971-7341-481d-94ad-ec82c78f6075
+2230d0fe-c687-4307-b094-7c867bac78d5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T133315Z
+20151102T021301:635820271816540196Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -120,21 +193,54 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: d63222f3-b535-4649-af6f-7a904292a47e
+revision: e28557d8-8eb3-48a9-887b-2a367de8ed5c
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 0
+content-length: 11
 
-
+宇緣二：熾風，1988
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 0
+content-length: 11
 
+宇緣二：熾風，1988
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 12
+
+220 x 220 厘米
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 249
+
+<file mediaid="{6283A707-5423-4EFE-BF07-740AFEE64933}" src="~/media/6283a70754234efebf07740afee64933.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Hon Chi Fun b1922/The Making of the Spheres II Glowing Wind 1988/i_0305_cant04" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 10
+
+壓克力顏料及油彩畫布
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 279
+
+"本港畫家韓志勳屬於一九六零年代初期香港的新派畫家。他曾於紐約研習版畫，並曾周遊歐洲及南美洲等地，其後移居加拿大多年。他的作品曾於亞洲及北美洲等地作廣泛展覽，並為私人及博物館，包括香港藝術館所珍藏。
+
+韓志勳的早期作品以中國水墨、毛筆和宣紙為媒介，同時融入平面設計、超現實主義元素以及多種西方技法。他常以噴墨或潑墨手法表達風景題材，展現國畫揉合傳統與現代的成功演化。韓亦漸覺油彩及壓克力顏料等西方媒材是中國水墨以外的另一選擇。
+
+置地公司委託韓志勳創作這一組四幅的作品，他透過這些作品，探索圓形的象徵以及圓形所代表的團結、圓滿及完美等各種含義。"
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -149,14 +255,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d63222f3-b535-4649-af6f-7a904292a47e
+e28557d8-8eb3-48a9-887b-2a367de8ed5c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151027T133300Z
+20151102T021304:635820271840561570Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
