@@ -20,9 +20,9 @@
 
                 <div class="art-g-box @goldLineClass">
                     <div class="art-g-box-header">
-                        <img data-src="@SitecoreFieldHelper.ImageFieldSrc("Artist Photo", artist)">
+                        <img data-src="@SitecoreFieldHelper.ImageFieldSrc("Artist Photo", artist)" width="100">
                         <div class="art-g-box-header-text">
-                            <h4>@Html.Sitecore().Field("Artist Name", artist)<span>@Html.Sitecore().Field("Artist Birthday Label", artist) @Html.Sitecore().Field("Artist Birthday Text", artist)</span></h4>
+                            <h4>@Html.Sitecore().Field("Artist Name", artist)<span>@Html.Sitecore().Field("Artist Birthday Label", artist) @Html.Sitecore().Field("Artist Birthday", artist).ToString().ToUpper()</span></h4>
                             <a href="@LinkManager.GetItemUrl(artist)">@Html.Sitecore().Field("Biography Link Text")<span class="icomoon-chevron-small-right"></span></a>
                         </div>
                     </div>

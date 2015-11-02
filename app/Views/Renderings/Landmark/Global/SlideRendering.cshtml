@@ -5,9 +5,10 @@
 @model RenderingModel
 @{
     // var slides = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.SlideObjectTemplate);
-    var slideFolder = Sitecore.Context.Item.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.SlideFolderTemplate);
-    var slides = slideFolder.Children.ToList();
     MagezineHelper helper = new MagezineHelper();
+    var currentItem = Sitecore.Context.Item;
+    var slideFolder = currentItem.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.SlideFolderTemplate);
+    var slides = slideFolder.Children.ToList();
 }
 @if (slides.Count > 0)
 {
@@ -17,73 +18,73 @@
         <ol class="carousel-indicators">
             @for (int i = 0; i < slides.Count; i++)
             {
-                <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{
-                                                                                if (i == 0)
-                                                                                {
-                                                                                    <text>
-                                                                                        class="active"
-                                                                                    </text>
-                                                                                }
-                                                                            }></li>
+                <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{ if (i == 0) { <text>
+                    class="active"
+                    </text>  } }></li>
             }
         </ol>
     }
     <!-- Wrapper for slides -->
-<div class="carousel-inner" role="listbox">
-    @{
-        int j = 0;
-        foreach (var item in slides)
-        {
-            <div @{ if (j == 0) { <text>
-                 class="item active"
-                 </text>                      } else { <text>
-                 class="item"
-                 </text>                      } }>
-                @{
-            j++;
-                }
+    <div class="carousel-inner" role="listbox">
+        @{
+    int j = 0;
+    foreach (var item in slides)
+    {
+            <div @{ if (j == 0)
+             { <text>
+                class="item active"
+            </text>                      }
+             else
+             { <text>
+                class="item"
+            </text>                      } }>
+            @{
+        j++;
+            }
 
-                @if (string.IsNullOrEmpty(item.Fields["Slide Video"].Value))
-                {
+            @if (string.IsNullOrEmpty(item.Fields["Slide Video"].Value))
+            {
                     <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Slide Image", item)"></div>
-                }
-                else
-                {
-                    <div class="carousel-image gd-lightbox-link gd-lightbox-video" data-bg="@Html.Sitecore().ImageFieldSrc("Slide Image", item)" data-lightsrc="@item.Fields["Slide Video"].Value" data-lighttitle="@item.Fields["Slide Title"].Value" data-lightposter="@LandmarkHelper.ImageFieldSrc("Slide Video Poster",item)"></div>
-                }
+            }
+            else
+            {
+                    <div class="carousel-image gd-lightbox-link gd-lightbox-video" data-bg="@Html.Sitecore().ImageFieldSrc("Slide Image", item)" data-lightsrc="@item.Fields["Slide Video"].Value" data-lighttitle="@item.Fields["Slide Title"].Value" data-lightposter="@LandmarkHelper.ImageFieldSrc("Slide Video Poster", item)"></div>
+            }
 
-                @{
-                var currentItem = Sitecore.Context.Item;
-                StorySetting setting = new StorySetting();
-                if (currentItem.TemplateID.ToString() == ItemGuids.T23PageTemplate)
-                {
-                    setting = helper.GetStorySetting(Sitecore.Context.Item);
-                    <p @if (setting == StorySetting.StyleCd) { <text>
-                       class="gd-des-below text-center"
-                       </text>       } else { <text>
-                       class="gd-des-below"
-                       </text>       }>
-                        @Html.Sitecore().Field("Slide Title", item)
+            @{
+            StorySetting setting = new StorySetting();
+            if (currentItem.TemplateID.ToString() == ItemGuids.T23PageTemplate || currentItem.TemplateID.ToString() == ItemGuids.T23PageCDTemplate)
+            {
+                setting = helper.GetStorySetting(Sitecore.Context.Item);
+                    <p @if (setting == StorySetting.StyleCd)
+                    { <text>
+                        class="gd-des-below text-center"
+                    </text>       }
+                    else
+                    { <text>
+                        class="gd-des-below"
+                    </text>       }>
+                    @Html.Sitecore().Field("Slide Title", item)
                     </p>
-                }
-                }
+            }
+            }
             </div>
-        }
     }
-</div>
+        }
+    </div>
     <!-- Controls -->
-  if (slides.Count > 1)
-   {
-       <div class="gd-mainimage-controls">
-    <a class="gd-mainimage-control" href="#gd-carousel-mainimage" role="button" data-slide="prev">
-        <span class="icomoon-thin-arrow-L" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="gd-mainimage-control" href="#gd-carousel-mainimage" role="button" data-slide="next">
-        <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-   }  
+    if (slides.Count > 1)
+    {
+        <div class="gd-mainimage-controls">
+            <a class="gd-mainimage-control" href="#gd-carousel-mainimage" role="button" data-slide="prev">
+                <span class="icomoon-thin-arrow-L" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="gd-mainimage-control" href="#gd-carousel-mainimage" role="button" data-slide="next">
+                <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    }
 
 }

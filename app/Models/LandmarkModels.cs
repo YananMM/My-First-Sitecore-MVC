@@ -179,6 +179,12 @@ namespace Landmark.Models
         public List<Item> Stories { get; set; }
     }
 
+    public class MaganizeGroupByRandom
+    {
+        public List<Item> Random4Stories { get; set; } 
+        public List<MaganizeGroup> MaganizeGroups { get; set; } 
+    }
+
     public enum StorySetting
     {
         StyleA,

@@ -16,7 +16,7 @@
                 <div class="carousel-caption-inner">
                     <div class="gd-carousel-detail">
                         <div class="gd-mainimage-brief2">
-                            <h2>@Html.Sitecore().Field("Cover Title")</h2>
+                            <h2>@Html.Sitecore().Field("Cover Title").ToString().ToUpper()</h2>
                             <ul>
                                 @{
                                     MultilistField experienceType = currentItem.Fields["Experience Type"];
@@ -38,60 +38,57 @@
                                                 <td>@Html.Sitecore().Field("Cover Phone")</td>
                                             </tr>
                                         }
-                                        <tr>
-                                            <th>
-                                                @{
-                                                    var websiteValue = SitecoreItems.WebsiteItem.Fields["Glossary Value"].ToString();
-                                                    if (!string.IsNullOrEmpty(websiteValue))
-                                                    {
-                                                        @Html.Sitecore().Field("Glossary Value", SitecoreItems.WebsiteItem).ToString().ToUpper()
-                                                    }
-                                                }
-                                            </th>
-                                            <td>
-                                                <a href="@Html.Sitecore().Field("Cover Email")">@Html.Sitecore().Field("Cover Email")</a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th>
-                                                @{
-                                                    var addressValue = SitecoreItems.AddressItem.Fields["Glossary Value"].ToString();
-                                                    if (!string.IsNullOrEmpty(addressValue))
-                                                    {
-                                                        @Html.Sitecore().Field("Glossary Value", SitecoreItems.AddressItem).ToString().ToUpper()
-                                                    }
-                                                }
-                                            </th>
-                                            <td>
-                                                @Html.Sitecore().Field("Cover Address")
-                                            </td>
-                                        </tr>
+                                        @if (!string.IsNullOrEmpty(currentItem.Fields["Cover Website"].ToString()))
+                                        {
+                                            <tr>
+                                                <th>
+                                                    @Html.Sitecore().Field("Glossary Value", SitecoreItems.WebsiteItem).ToString().ToUpper()
+                                                </th>
+                                                <td>
+                                                    <a href="@Html.Sitecore().Field("Cover Website")">@Html.Sitecore().Field("Cover Website")</a>
+                                                </td>
+                                            </tr>
+                                        }
+                                        @if (!string.IsNullOrEmpty(currentItem.Fields["Cover Address"].ToString()))
+                                        {
+                                            <tr>
+                                                <th>
+                                                    @Html.Sitecore().Field("Glossary Value", SitecoreItems.AddressItem).ToString().ToUpper()
+                                                </th>
+                                                <td>
+                                                    @Html.Sitecore().Field("Cover Address")
+                                                </td>
+                                            </tr>
+                                        }
                                     </tbody>
                                 </table>
                             </div>
                             <div class="table-responsive gd-tg-table">
                                 <table>
                                     <tbody>
-                                        <tr>
-                                            <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem).ToString().ToUpper()</th>
-                                            <td>
-                                                @foreach (var item in tagsTrees)
-                                                {<a href="javascript:;">
-                                                    @item.CurrentItem["Tag Name"].ToUpper() -
-                                                </a>
-                                                    int i = 1;
-                                                    foreach (var it in item.Children)
-                                                    {
-                                                        <a href="javascript:;">@it.CurrentItem["Tag Name"].ToUpper()</a>
-                                                        if (i != item.Children.Count)
-                                                        {<text>,</text>
+                                        @if (tagsTrees !=null && tagsTrees.Count!=0)
+                                        {
+                                            <tr>
+                                                <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem).ToString().ToUpper()</th>
+                                                <td>
+                                                    @foreach (var item in tagsTrees)
+                                                    {<a href="javascript:;">
+                                                        @item.CurrentItem["Tag Name"].ToUpper() -
+                                                    </a>
+                                                        int i = 1;
+                                                        foreach (var it in item.Children)
+                                                        {
+                                                            <a href="javascript:;">@it.CurrentItem["Tag Name"].ToUpper()</a>
+                                                            if (i != item.Children.Count)
+                                                            {<text>,</text>
+                                                            }
+                                                            i++;
                                                         }
-                                                        i++;
+                                                        <br />
                                                     }
-                                                    <br />
-                                                }
-                                            </td>
-                                        </tr>
+                                                </td>
+                                            </tr>
+                                        }
                                     </tbody>
                                 </table>
                             </div>

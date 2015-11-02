@@ -6,11 +6,10 @@
 @model RenderingModel
 @{
     MagezineHelper helper = new MagezineHelper();
-    var magazineGroups = helper.GetMagazineGroups();
 }
 <div class="container">
 
-    @foreach (var item in magazineGroups)
+    @foreach (var item in magazineGroups.MaganizeGroups)
     {
         <div class="gd-promotion-box-area">
             <div class="gd-promotion-box-heading">

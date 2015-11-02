@@ -37,9 +37,11 @@ namespace Landmark.Controllers
         /// </summary>
         /// <param name="childcategory">The childcategory.</param>
         /// <returns>ActionResult.</returns>
-        public ActionResult GoTo(string childcategory)
+        public ActionResult GoTo(string category, string childcategory)
         {
             Item shoppingCategory = Sitecore.Context.Database.GetItem(childcategory);
+            Session["category"] = category;
+            Session["childcategory"] = childcategory;
             return Redirect(Sitecore.Links.LinkManager.GetItemUrl(shoppingCategory.Children.First()));
         }
 

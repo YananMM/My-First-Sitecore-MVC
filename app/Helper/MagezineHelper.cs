@@ -56,7 +56,35 @@ namespace Landmark.Helper
             var storiesCD = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage, ItemGuids.T23PageCDTemplate);
             stories.AddRange(storiesAB);
             stories.AddRange(storiesCD);
-            return stories;
+            return stories.OrderByDescending(p => p.Fields["Article Date"].ToString()).ToList();
+        }
+
+        /// <summary>
+        /// Gets the top10 stories.
+        /// </summary>
+        /// <returns>List{Item}.</returns>
+        public List<Item> GetTop10Stories()
+        {
+            var allStories = GetAllStories();
+            var top10Stories = allStories.Count >= 10 ? allStories.Take(10) : allStories;
+            return top10Stories.ToList();
+        }
+
+        /// <summary>
+        /// Gets the random4 list.
+        /// </summary>
+        /// <returns>List{Item}.</returns>
+        public List<Item> GetRandom4List()
+        {
+            var top10Stories = GetTop10Stories();
+            Random random = new Random();
+            List<Item> randomList = new ItemList();
+            foreach (var item in top10Stories)
+            {
+                randomList.Insert(random.Next(randomList.Count), item);
+            }
+            var random4 = randomList.Count >= 4 ? randomList.Take(4).ToList() : randomList;
+            return random4;
         }
 
         /// <summary>
@@ -64,10 +92,24 @@ namespace Landmark.Helper
         /// </summary>
         /// <param name="categoryName">Name of the category.</param>
         /// <returns>List{Item}.</returns>
+        public List<Item> GetStoriesByCategory(string type, List<Item> random4List)
+        {
+            List<Item> stories = new ItemList();
+            var allstories = GetAllStories().Except(random4List).ToList();
+            if (!string.IsNullOrEmpty(type))
+            {
+                stories =
+                    allstories.Where(p => p.Fields["Magazine Category"].ToString().Contains(type))
+                        .OrderByDescending(p => p.Fields["Article Date"].ToString())
+                        .ToList();
+                return stories;
+            }
+            return allstories;
+        }
         public List<Item> GetStoriesByCategory(string type)
         {
             List<Item> stories = new ItemList();
-            var allstories = GetAllStories();
+            var allstories = GetAllStories().ToList();
             if (!string.IsNullOrEmpty(type))
             {
                 stories =
@@ -83,22 +125,23 @@ namespace Landmark.Helper
         /// Gets the maganize groups.
         /// </summary>
         /// <returns>List{MaganizeGroup}.</returns>
-        public List<MaganizeGroup> GetMagazineGroups()
+        public MaganizeGroupByRandom GetMagazineGroupsByRandom()
         {
-            List<MaganizeGroup> maganizeGroups = new List<MaganizeGroup>();
+            MaganizeGroupByRandom maganizeGroupsByRandom = new MaganizeGroupByRandom();
+            var random4List = GetRandom4List();
+            maganizeGroupsByRandom.Random4Stories = random4List;
 
-            //var categories = GetAllMaganizeCategories().OrderByDescending(p => p.Fields[Sitecore.FieldIDs.ArchiveDate]);
             var categories = GetAllMaganizeCategories();
             foreach (var item in categories)
             {
                 MaganizeGroup maganizeGroup = new MaganizeGroup()
                 {
-                    Stories = GetStoriesByCategory(item.ID.ToString()),
+                    Stories = GetStoriesByCategory(item.ID.ToString(), random4List),
                     MagazineCategory = item
                 };
-                maganizeGroups.Add(maganizeGroup);
+                maganizeGroupsByRandom.MaganizeGroups.Add(maganizeGroup);
             }
-            return maganizeGroups;
+            return maganizeGroupsByRandom;
         }
 
         /// <summary>
