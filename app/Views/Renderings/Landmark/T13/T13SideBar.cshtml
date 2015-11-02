@@ -19,6 +19,7 @@
         var currentTag = shoppingHelper.GetCurrentCategory(currentPage);
         brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
     }
+    var category = currentPage.Parent.Parent.DisplayName;
 }
 <div class="brand-menu hidden-xs">
     <div class="brand-menu-area">
@@ -61,13 +62,22 @@
                     <select id="category" name="category" class="selectpicker form-control" data-style="btn-primary">
                         @foreach (var item in categories)
                         {
-                            <option value="@item.value">@item.text.ToUpper()</option>
+                            <option value="@item.value" @if (category == item.text) { <text>
+                                    selected="selected"
+                                    </text>  }>
+                                @item.text.ToUpper()
+                            </option>
                         }
                     </select>
                     <select id="childcategory" name="childcategory" class="selectpicker form-control" data-style="btn-primary">
-                        @foreach (var item in categories.First().children)
+                        @foreach (var item in categories.SingleOrDefault(p => p.text == category).children)
                         {
-                            <option value="@item.value">@item.text.ToUpper()</option>
+                            var subcategory = currentPage.Parent.DisplayName;
+                            <option value="@item.value" @if (subcategory == item.text) { <text>
+                                    selected="selected"
+                                    </text> }>
+                                @item.text.ToUpper()
+                                </option>
                         }
                     </select>
                     <button type="submit" class="btn btn-default">@Html.Sitecore().Field("Glossary Value", SitecoreItems.GoGuidItem)</button>
