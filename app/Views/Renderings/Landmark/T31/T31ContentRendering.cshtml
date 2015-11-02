@@ -27,7 +27,7 @@
     <div class="gd-contact">
         <div class="gd-contact-area">
             <div class="gd-contact-body">
-                <form class="gd-contact-form" name="gd-contact-form" action="@Url.Action("AddEmailSignup", "Home")" method="POST" data-captcha-url="/Service/CheckCaptcha.ashx/">
+                <form class="gd-contact-form" name="gd-contact-form" action="@Url.Action("AddEmailSignup", "Home")" method="POST" data-captcha-url="/Service/CheckCaptcha.ashx?captcha=">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="gd-contact-intro">
@@ -43,7 +43,7 @@
                                             <!-- User's selection will be stored here -->
                                             <input type="hidden" name="title" data-error="Title is missing.">
                                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                                <span class="current">@Html.Sitecore().Field("Glossary Value",SitecoreItems.PleaseSelectItem)</span>
+                                                <span class="current">@Html.Sitecore().Field("Glossary Value", SitecoreItems.PleaseSelectItem)</span>
                                                 <span class="caret"></span>
                                             </button>
                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -90,12 +90,12 @@
                                             <!-- User's selection will be stored here -->
                                             <input type="hidden" name="channel" value="0">
                                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                                <span class="current">@Html.Sitecore().Field("Glossary Value",SitecoreItems.EmailOnlyItem)</span>
+                                                <span class="current">@Html.Sitecore().Field("Glossary Value", SitecoreItems.EmailOnlyItem)</span>
                                                 <span class="caret"></span>
                                             </button>
                                             <ul class="dropdown-menu">
                                                 <li><a href="javascript:;" data-value="0">@Html.Sitecore().Field("Glossary Value", SitecoreItems.EmailOnlyItem)</a></li>
-                                                <li><a href="javascript:;" data-value="1">@Html.Sitecore().Field("Glossary Value",SitecoreItems.EmailPostalAddressItem)</a></li>
+                                                <li><a href="javascript:;" data-value="1">@Html.Sitecore().Field("Glossary Value", SitecoreItems.EmailPostalAddressItem)</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -181,7 +181,7 @@
                                                         <!-- User's selection will be stored here -->
                                                         <input type="hidden" name="country" data-error="Country is missing.">
                                                         <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                                            <span class="current">@Html.Sitecore().Field("Glossary Value",SitecoreItems.PleaseSelectItem)</span>
+                                                            <span class="current">@Html.Sitecore().Field("Glossary Value", SitecoreItems.PleaseSelectItem)</span>
                                                             <span class="caret"></span>
                                                         </button>
                                                         <ul class="dropdown-menu">

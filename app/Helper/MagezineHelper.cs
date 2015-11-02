@@ -19,6 +19,7 @@ using System.Web.UI.WebControls;
 using Landmark.Classes;
 using Landmark.Models;
 using Sitecore.Collections;
+using Sitecore.ContentSearch.Utilities;
 using Sitecore.Data.Items;
 using Sitecore.Data.Fields;
 
@@ -95,7 +96,11 @@ namespace Landmark.Helper
         public List<Item> GetStoriesByCategory(string type, List<Item> random4List)
         {
             List<Item> stories = new ItemList();
-            var allstories = GetAllStories().Except(random4List).ToList();
+            var allstories = GetAllStories();
+            foreach (var item in random4List)
+            {
+                allstories = allstories.RemoveWhere(p=>p.ID == item.ID).ToList();
+            }
             if (!string.IsNullOrEmpty(type))
             {
                 stories =
@@ -130,7 +135,7 @@ namespace Landmark.Helper
             MaganizeGroupByRandom maganizeGroupsByRandom = new MaganizeGroupByRandom();
             var random4List = GetRandom4List();
             maganizeGroupsByRandom.Random4Stories = random4List;
-
+            List<MaganizeGroup> random4Stories = new List<MaganizeGroup>();
             var categories = GetAllMaganizeCategories();
             foreach (var item in categories)
             {
@@ -139,8 +144,9 @@ namespace Landmark.Helper
                     Stories = GetStoriesByCategory(item.ID.ToString(), random4List),
                     MagazineCategory = item
                 };
-                maganizeGroupsByRandom.MaganizeGroups.Add(maganizeGroup);
+                random4Stories.Add(maganizeGroup);
             }
+            maganizeGroupsByRandom.MaganizeGroups = random4Stories;
             return maganizeGroupsByRandom;
         }
 

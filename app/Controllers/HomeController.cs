@@ -185,7 +185,7 @@ namespace Landmark.Controllers
         public ActionResult CheckCaptcha(string captcha)
         {
             var code = Session["ValidateCode"].ToString();
-            if (captcha == code)
+            if (Request["captcha"] == code)
             {
                 return Json(true);
             }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace Landmark.Service
 {
@@ -14,8 +15,7 @@ namespace Landmark.Service
         public void ProcessRequest(HttpContext context)
         {
             context.Response.ContentType = "text/plain";
-           // var code = Session["ValidateCode"].ToString();
-           
+            //var code = Session["ValidateCode"].ToString();
         }
 
         public bool IsReusable
