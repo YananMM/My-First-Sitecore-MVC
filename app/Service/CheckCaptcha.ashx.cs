@@ -14,8 +14,9 @@ namespace Landmark.Service
 
         public void ProcessRequest(HttpContext context)
         {
-            context.Response.ContentType = "text/plain";
-            //var code = Session["ValidateCode"].ToString();
+            context.Response.ContentType = "application/json";
+            var match = context.Request.Params["captcha"] == context.Session["ValidateCode"].ToString();
+            context.Response.Write(match ? "true" : "false"); 
         }
 
         public bool IsReusable
