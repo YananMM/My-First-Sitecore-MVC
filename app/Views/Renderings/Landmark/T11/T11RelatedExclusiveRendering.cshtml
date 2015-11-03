@@ -5,15 +5,22 @@
 @{
     InspirationHelper inspirationHelper = new InspirationHelper();
     ShoppingHelper shoppingHelper = new ShoppingHelper();
-    var exclusiveItem = inspirationHelper.GetMonthlyExclusives(category: shoppingHelper.GetCategoryFromItem(Sitecore.Context.Item.ID.ToString()).ID.ToString()).FirstOrDefault();
-    MultilistField brandField = ((MultilistField)exclusiveItem.Fields["Brand"]);
     Sitecore.Data.Items.Item brandItem = null;
-    if (brandField != null && brandField.TargetIDs != null && brandField.TargetIDs.Length > 0)
+    var exclusiveItem = inspirationHelper.GetMonthlyExclusives(category: shoppingHelper.GetCategoryFromItem(Sitecore.Context.Item.ID.ToString()).ID.ToString()).FirstOrDefault();
+    if (exclusiveItem != null)
     {
-        var brand = brandField.TargetIDs.FirstOrDefault();
-        if (Sitecore.Context.Database.GetItem(brand) != null)
-        {brandItem = Sitecore.Context.Database.GetItem(brand);}
+        if (exclusiveItem.Fields["Brand"] != null)
+        {
+            MultilistField brandField = ((MultilistField)exclusiveItem.Fields["Brand"]);
+            if (brandField != null && brandField.TargetIDs != null && brandField.TargetIDs.Length > 0)
+            {
+                var brand = brandField.TargetIDs.FirstOrDefault();
+                if (Sitecore.Context.Database.GetItem(brand) != null)
+                { brandItem = Sitecore.Context.Database.GetItem(brand); }
+            }
+        }
     }
+    
 }
 @if(exclusiveItem!=null)
 {
