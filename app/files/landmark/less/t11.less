@@ -3,7 +3,7 @@
   background-color: @gray-darker3;
   .content-area{
   .gray-text-line;
-    padding: 0 10px 29px;
+    padding: 0 0 29px;
     &.content-area-bg{
       margin-bottom: 0;
       background-color: @gray-darker2;
@@ -17,9 +17,9 @@
     -webkit-column-count: 2;
     -moz-column-gap:40px;
     -webkit-column-gap:40px;
-    height: 123px;
+    height:auto;
     padding: 0;
-    margin: 0;
+    margin: 0 0 15px;
     font-family: @font-family-serif;
     .white-text;
     
@@ -27,12 +27,13 @@
       display: block;
       padding:0;
       margin: 0;
+      -webkit-column-break-inside:avoid; 
       a{
-        border-bottom: 1px solid #444444;
         display: block;
-        padding: 8px 0;
+        padding: 12px 0;
         width: 100%;
         text-decoration: none;
+        border-bottom: 1px solid #444444;
       }
     }
     }
@@ -305,7 +306,6 @@
         padding:22px 22px 9px;
       h3{
         font-size: 1.23em;
-        white-space:nowrap;
       }
       }
     }
