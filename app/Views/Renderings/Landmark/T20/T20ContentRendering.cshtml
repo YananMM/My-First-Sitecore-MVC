@@ -16,19 +16,9 @@
                         <div class="gd-mainimage-brief">
                             <h2>@Html.Sitecore().Field("Cover Title", Sitecore.Context.Item)</h2>
                             @Html.Sitecore().Field("Cover Content", Sitecore.Context.Item)
-                            <form action="@Url.Action("ButtonRedirect", "Home")">
-                                @{
-                                    LinkField linkField = Sitecore.Context.Item.Fields["Button Link"];
-                                    if (linkField != null && linkField.TargetItem != null)
-                                    {
-                                        <input type="hidden" value="@linkField.TargetItem.ID" name="targetId" />
-                                    }
-                                    <a href="@LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))" type="button" class="gd-button gd-button-reversed">
-                                    @Html.Sitecore().Field("Button Text", Sitecore.Context.Item)
-                                </a>
-                                }
-                            </form>
-
+                            <a href="@LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))" type="button" class="gd-button gd-button-reversed">
+                                @Html.Sitecore().Field("Button Text", Sitecore.Context.Item)
+                            </a>
                             <a href="#gd-audio-guide" class="gd-link-audio">
                                 <span class="icomoon-sound-alt"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.MobileAudioGuideItem) <span class="icomoon-chevron-small-right"></span>
                             </a>

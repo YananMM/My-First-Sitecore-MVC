@@ -7,46 +7,53 @@
     var current = Sitecore.Context.Item;
     ArtTourHelper helper = new ArtTourHelper();
     var floor = helper.GetFloor(current);
-    var artPieces = helper.GetArtByBuilding(floor.Parent.ID.ToString()).Where(p => p.ID != current.ID).ToList();
+    List<Item> artPieces = new List<Item>();
+    if (floor != null)
+    {
+        artPieces = helper.GetArtByBuilding(floor.Parent.ID.ToString()).Where(p => p.ID != current.ID).ToList();
+    }
 }
-<div class="gd-showcase" data-position="0" data-nexturl="/en/t29-next.html?startindex=6">
-    <a href="javascript:;" class="gd-showcase-control gd-showcase-left">
-        <span class="icomoon-thin-arrow-L"></span>
-    </a>
-    <div class="container">
+@if (floor != null)
+{
+    <div class="gd-showcase" data-position="0" data-nexturl="/en/t29-next.html?startindex=6">
+        <a href="javascript:;" class="gd-showcase-control gd-showcase-left">
+            <span class="icomoon-thin-arrow-L"></span>
+        </a>
+        <div class="container">
 
-        <h3>@SitecoreItems.AlsoInItem.Fields["Glossary Value"].Value.ToUpper() @floor.Parent.Fields["Building Title"]@Html.Sitecore().Field("Glossary Value", SitecoreItems.ArtItem)</h3>
-        <div class="gd-showcase-content">
-            <ul class="gd-showcase-items clearfix">
+            <h3>@SitecoreItems.AlsoInItem.Fields["Glossary Value"].Value.ToUpper() @floor.Parent.Fields["Building Title"]@Html.Sitecore().Field("Glossary Value", SitecoreItems.ArtItem)</h3>
+            <div class="gd-showcase-content">
+                <ul class="gd-showcase-items clearfix">
 
-                @if (artPieces.Count != 0)
-                {
-                    foreach (var item in artPieces)
+                    @if (artPieces.Count != 0)
                     {
-                        <li>
-                            <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)" class="gd-hover-img">
-                                <div class="gd-hover-img-area">
-                                    <div class="gd-hover-img-mask"></div>
-                                    <img data-src="@Html.Sitecore().ImageFieldSrc("Art Image", item)" alt="">
-                                </div>
-
-                                <h4>@Html.Sitecore().Field("Art Title", item)</h4>
-                                @{
-                        GroupedDroplinkField artistField = item.Fields["Artist"];
-                        if (artistField.TargetItem != null)
+                        foreach (var item in artPieces)
                         {
-                            var artist = artistField.TargetItem;
-                            <p>@artist.Fields["Artist Name"].ToString()</p>
+                            <li>
+                                <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)" class="gd-hover-img">
+                                    <div class="gd-hover-img-area">
+                                        <div class="gd-hover-img-mask"></div>
+                                        <img data-src="@Html.Sitecore().ImageFieldSrc("Art Image", item)" alt="">
+                                    </div>
+
+                                    <h4>@Html.Sitecore().Field("Art Title", item)</h4>
+                                    @{
+                                        GroupedDroplinkField artistField = item.Fields["Artist"];
+                                        if (artistField.TargetItem != null)
+                                        {
+                                            var artist = artistField.TargetItem;
+                                            <p>@artist.Fields["Artist Name"].ToString()</p>
+                                        }
+                                    }
+                                </a>
+                            </li>
                         }
-                                }
-                            </a>
-                        </li>
                     }
-                }
-            </ul>
+                </ul>
+            </div>
         </div>
+        <a href="javascript:;" class="gd-showcase-control gd-showcase-right">
+            <span class="icomoon-thin-arrow-R"></span>
+        </a>
     </div>
-    <a href="javascript:;" class="gd-showcase-control gd-showcase-right">
-        <span class="icomoon-thin-arrow-R"></span>
-    </a>
-</div>
+}

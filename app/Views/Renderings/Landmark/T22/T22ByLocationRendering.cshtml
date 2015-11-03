@@ -13,13 +13,18 @@
    <link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/svgmap/mapplic/mapplic-ie.css">
    <script type="text/javascript" src="/files/landmark/js/lib/svgmap/js/html5shiv.js"></script>
  <![endif]-->
-
 @{
     ArtTourHelper helper = new ArtTourHelper();
     var buildings = LandmarkHelper.GetBuildings();
     var building = helper.GetCurrentBuilding(Request["building"]);
     var page = Request["page"] ?? "1";
-    var artpieces = helper.GetArtPieceByBuildingSvgId(building.Fields["Building Svg Id"].Value, page);
+    List<Item> artpieces = new List<Item>();
+    if (building != null)
+    {
+        var svgId = building.Fields["Building Svg Id"];
+
+        artpieces = (svgId != null && !string.IsNullOrEmpty(svgId.Value)) ? helper.GetArtPieceByBuildingSvgId(svgId.Value, page) : new List<Item>();
+    }
 }
 <div class="row">
     <div id="gd-list-locations" class="col-md-6">
@@ -51,18 +56,21 @@
     <h3>@Html.Sitecore().Field("Building Title", building)</h3>
     <div id="gd-art-gallery">
         <div class="row">
-            @foreach (Item piece in artpieces)
+            @if (artpieces.Count != 0)
             {
-                <div class="col-sm-3 text-center">
-                    <a href="@LinkManager.GetItemUrl(piece)" class="gd-hover-img">
-                        <div class="gd-hover-img-area">
-                            <div class="gd-hover-img-mask"></div>
-                            <img data-src="@SitecoreFieldHelper.ImageFieldSrc("Art Image", piece)" alt="artpiece picture">
-                        </div>
-                        <h4>@piece.Fields["Art Title"].Value</h4>
-                        <p>@piece.Fields["Art Description"].Value</p>
-                    </a>
-                </div>
+                foreach (Item piece in artpieces)
+                {
+                    <div class="col-sm-3 text-center">
+                        <a href="@LinkManager.GetItemUrl(piece)" class="gd-hover-img">
+                            <div class="gd-hover-img-area">
+                                <div class="gd-hover-img-mask"></div>
+                                <img data-src="@SitecoreFieldHelper.ImageFieldSrc("Art Image", piece)" alt="artpiece picture">
+                            </div>
+                            <h4>@piece.Fields["Art Title"].Value</h4>
+                            <p>@piece.Fields["Art Description"].Value</p>
+                        </a>
+                    </div>
+                }
             }
         </div>
     </div>

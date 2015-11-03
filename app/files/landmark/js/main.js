@@ -116,6 +116,9 @@ $(document).ready(function() {
     window.location.reload(true);
   });
 
+  //if(isPhone() && $(window).height() < $(window).width()){
+  //  $('.portrait_only').removeClass('hidden');
+  //}
   /**********************************************************************************************************
    * Menu
    **********************************************************************************************************/
@@ -535,8 +538,8 @@ $(document).ready(function() {
       footerDuration = 1,
       easing = Quad.easeInOut;
 
-    if(isPhone() && $(window).height() < $(window).width()){
-      $('.portrait_only').removeClass('hidden');
+    if (isPhone() && $(window).height() < $(window).width()) {
+        $('.portrait_only').removeClass('hidden');
     }
 
     // turn off default animation handling

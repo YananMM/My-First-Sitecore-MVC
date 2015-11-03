@@ -24,18 +24,19 @@
                     foreach (var item in relatedStoris)
                     {
                         var image = LandmarkHelper.GetCallOutImage(item.Item);
-                        <div class="col-sm-6 clearfix">
-                            <img data-src="@image">
-                            @{
+                        <a href="@Sitecore.Links.LinkManager.GetItemUrl(item.Item)">
+                            <div class="col-sm-6 clearfix">
+                                <img data-src="@image">
+                                @{
                         MultilistField categories = item.Item.Fields["Magazine Category"];
                         foreach (var category in categories)
                         {
                             <h5>@Sitecore.Context.Database.GetItem(category.ToString()).Fields["Tag Name"].ToString().ToUpper()</h5>
                         }
-                            }
-                            <h4><a href="">@Html.Sitecore().Field("Article Headline", item.Item)</a></h4>
-                        </div>
-                    }
+                                }
+                                <h4>@Html.Sitecore().Field("Article Headline", item.Item)</h4>
+                            </div>
+                        </a>  }
                 }
             </div>
         </div>
