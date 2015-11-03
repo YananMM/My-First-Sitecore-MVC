@@ -125,12 +125,28 @@ namespace Landmark.Helper
         /// </summary>
         public List<Item> GetArtPieceByBuildingSvgId(string id, string page = null)
         {
+
             var buildings = LandmarkHelper.GetBuildings();
-            Item buildingItem = buildings.Where(b => b.Fields["Building Svg Id"].Value == id).ToList().FirstOrDefault();
-            List<Item> allArtPieces = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkArtTourItem, ItemGuids.T29Template);
-            List<Item> artPiecesByBuilding = (from art in allArtPieces
-                                              where Sitecore.Context.Database.GetItem(art.Fields["Floor and Building"].Value).Parent.ID.ToString() == buildingItem.ID.ToString()
-                                              select art).ToList();
+            Item buildingItem =
+                buildings.Where(b => b.Fields["Building Svg Id"].ToString() == id).ToList().FirstOrDefault();
+            List<Item> allArtPieces = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkArtTourItem,
+                ItemGuids.T29Template);
+            List<Item> artPiecesByBuilding = new List<Item>();
+            if (buildingItem != null)
+            {
+                foreach (var art in allArtPieces)
+                {
+                    var floorBuilding = art.Fields["Floor and Building"].Value;
+                    if (!string.IsNullOrEmpty(floorBuilding))
+                    {
+                        if (Sitecore.Context.Database.GetItem(floorBuilding).Parent.ID.ToString() ==
+                            buildingItem.ID.ToString())
+                        {
+                            artPiecesByBuilding.Add(art);
+                        }
+                    }
+                }
+            }
             int intPage = Int32.Parse(page ?? "1");
             return artPiecesByBuilding.Skip((intPage - 1) * 10).Take(10).ToList();
         }

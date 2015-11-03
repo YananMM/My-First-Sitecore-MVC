@@ -571,14 +571,25 @@ border-bottom: 18px solid @gray-darker;
       height: 55%;
       width: 100%;
         bottom: 0;
-        left: 0;
-    .panel-img{
+        left: 0; 
+        .panel-img{
       height: 100%;
       width: 50%;
       left: 50%;
       bottom: 0;
       position: absolute;
       
+        &:after{
+        content: "";
+          position: absolute;
+          left: -7px;
+          top: 50%;
+          z-index: 1000;
+          margin-top: -17px;
+border-top: 18px solid transparent; 
+border-bottom:18px solid transparent ; 
+border-left: 18px solid @gray-darker;   
+        }
     }
   .panel-main{
       position: absolute;
@@ -589,6 +600,18 @@ border-bottom: 18px solid @gray-darker;
     bottom: 0;
     display: table;
   }
+       .panel-img-2{
+          hgroup{
+           position: absolute;
+            left: 40px;
+            bottom: 32px;
+            h2{
+            display: inline;
+      background:url("../images/title-arrow2.png") no-repeat 100%  100% ;
+      padding-right: 29px;
+            }
+          }
+        } 
       }
     }
     
@@ -1299,7 +1322,7 @@ border-right: 18px solid @gray-darker;
       .panel-side2{
       position: absolute;
       height: 100%;
-      width: 34%;
+      width: 67%;
         bottom: 0;
         left:33%;
     .panel-img{
@@ -1312,13 +1335,23 @@ border-right: 18px solid @gray-darker;
         
         content: none;
         }
-      
+      .panel-arrow{
+          position: absolute;
+          left:0;
+          top: 75%;
+          margin-top: -17px;
+border-top: 18px solid transparent; 
+border-bottom: 18px solid transparent; 
+border-left: 18px solid @gray-darker;  
+          z-index: 10;
+          
+      }
     }
     .panel-img-2{
         top: 0;
         left: 0;
       height: 50%;
-      width: 100%;
+      width: 50%;
     }
   .panel-main{
       top: auto;
@@ -1327,38 +1360,9 @@ border-right: 18px solid @gray-darker;
       position: absolute;
       height: 50%;
       vertical-align: middle;
-      width: 100.5%;
-      z-index: 0;
-
-      &:after{
-        content: "";
-        position: absolute;
-        left: 50%;
-        top: -17px;
-        margin-left: -17px;
-        border-left: 18px solid transparent;
-        border-right: 18px solid transparent;
-        border-bottom: 18px solid @gray-darker;
-      }
+      width: 50.5%;
+          z-index: 0;
   }
-      }
-    .panel-side3{
-        position: absolute;
-        top: 0;
-        left: 67%;
-        height: 100%;
-        width: 33%;
-        .panel-img{
-          height: 100%;
-          width: 100%;
-        }
-        
-        .panel-main{
-          position: absolute;
-          bottom:0;
-          width: 100%;
-          left: 0;
-        }
       }
     }
     

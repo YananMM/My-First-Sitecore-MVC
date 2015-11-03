@@ -8773,6 +8773,17 @@ button.close {
   bottom: 0;
   position: absolute;
 }
+.t1 .panel-area .panel-8 .panel-side2 .panel-img:after {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 50%;
+  z-index: 1000;
+  margin-top: -17px;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent ;
+  border-left: 18px solid #1d1d1d;
+}
 .t1 .panel-area .panel-8 .panel-side2 .panel-main {
   position: absolute;
   height: 100%;
@@ -8781,6 +8792,16 @@ button.close {
   left: 0;
   bottom: 0;
   display: table;
+}
+.t1 .panel-area .panel-8 .panel-side2 .panel-img-2 hgroup {
+  position: absolute;
+  left: 40px;
+  bottom: 32px;
+}
+.t1 .panel-area .panel-8 .panel-side2 .panel-img-2 hgroup h2 {
+  display: inline;
+  background: url("../images/title-arrow2.png") no-repeat 100% 100%;
+  padding-right: 29px;
 }
 .t1 .panel-area .instagram-area {
   width: 100%;
@@ -9450,7 +9471,7 @@ button.close {
   .t1 .panel-area .panel-8 .panel-side2 {
     position: absolute;
     height: 100%;
-    width: 34%;
+    width: 67%;
     bottom: 0;
     left: 33%;
   }
@@ -9464,11 +9485,21 @@ button.close {
   .t1 .panel-area .panel-8 .panel-side2 .panel-img:after {
     content: none;
   }
+  .t1 .panel-area .panel-8 .panel-side2 .panel-img .panel-arrow {
+    position: absolute;
+    left: 0;
+    top: 75%;
+    margin-top: -17px;
+    border-top: 18px solid transparent;
+    border-bottom: 18px solid transparent;
+    border-left: 18px solid #1d1d1d;
+    z-index: 10;
+  }
   .t1 .panel-area .panel-8 .panel-side2 .panel-img-2 {
     top: 0;
     left: 0;
     height: 50%;
-    width: 100%;
+    width: 50%;
   }
   .t1 .panel-area .panel-8 .panel-side2 .panel-main {
     top: auto;
@@ -9477,35 +9508,8 @@ button.close {
     position: absolute;
     height: 50%;
     vertical-align: middle;
-    width: 100.5%;
+    width: 50.5%;
     z-index: 0;
-  }
-  .t1 .panel-area .panel-8 .panel-side2 .panel-main:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: -17px;
-    margin-left: -17px;
-    border-left: 18px solid transparent;
-    border-right: 18px solid transparent;
-    border-bottom: 18px solid #1d1d1d;
-  }
-  .t1 .panel-area .panel-8 .panel-side3 {
-    position: absolute;
-    top: 0;
-    left: 67%;
-    height: 100%;
-    width: 33%;
-  }
-  .t1 .panel-area .panel-8 .panel-side3 .panel-img {
-    height: 100%;
-    width: 100%;
-  }
-  .t1 .panel-area .panel-8 .panel-side3 .panel-main {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    left: 0;
   }
   .t1 .panel-area .instagram-area .instagram-inner {
     padding-bottom: 150px;
@@ -12802,13 +12806,13 @@ dl.gd-content-details-tags dd a:active {
   margin: 0 15px;
   position: relative;
   padding-bottom: 130px;
-  /*
-        img {
-          height: 300px;
-        }*/
 }
 .gd-slick-slider .gd-slick-item:focus {
   outline: none;
+}
+.gd-slick-slider .gd-slick-item img {
+  height: 300px;
+  width: auto !important;
 }
 .gd-slick-slider .gd-slick-item .gd-slick-des {
   color: #222222;
@@ -13653,8 +13657,7 @@ dl.gd-content-details-tags dd a:active {
 }
 .t29 .gd-artplace .gd-pagetitle > a > img {
   cursor: pointer;
-  width: 100px;
-  height: 100px;
+  max-width: 100%;
 }
 .t29 .gd-artplace .gd-pagetitle h2 {
   margin-top: 0;
@@ -13719,6 +13722,8 @@ dl.gd-content-details-tags dd a:active {
 }
 .t29 .gd-artplace .gd-artplace-profile img {
   float: left;
+  width: 100px;
+  height: 100px;
 }
 .t29 .gd-artplace .gd-artplace-profile .gd-artplace-profile-title {
   margin-left: 130px;
