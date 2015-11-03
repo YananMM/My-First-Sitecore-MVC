@@ -24,14 +24,15 @@
                 <div @if (i == 1) { <text> class="item active" </text>    } else { <text> class="item" </text>    }>
                     @{
                         var image = LandmarkHelper.GetCallOutImage(item.Item);
-                        string video = "";
+                        string videoAttrs = "", videoClass = "";
                         var videoItem = item.Item.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.VideoObject);
                         if (videoItem != null)
                         {
-                            video = videoItem.Fields["Video File"].ToString();
+                            videoAttrs = "data-lightsrc=\"" + videoItem.Fields["Video File"].Value + "\" data-lighttitle=\"" + item.Item.Fields["Article Headline"].Value + "\"  data-lightposter=\"" + image + "\"";
+                            videoClass = "gd-lightbox-link gd-lightbox-video";
                         }
                     }
-                    <div class="carousel-image gd-lightbox-link gd-lightbox-video" data-lightsrc="@video" data-lighttitle="PUT LIGHTBOX TITLE HERE" data-lightposter="@image" data-bgsrc="@image"></div>
+                    <div class="carousel-image @videoClass" @videoAttrs data-bgsrc="@image"></div>
                     <div class="carousel-caption">
                         <div class="carousel-caption-inner">
                             <div class="gd-carousel-detail">
