@@ -579,17 +579,6 @@ border-bottom: 18px solid @gray-darker;
       bottom: 0;
       position: absolute;
       
-        &:after{
-        content: "";
-          position: absolute;
-          left: -7px;
-          top: 50%;
-          z-index: 1000;
-          margin-top: -17px;
-border-top: 18px solid transparent; 
-border-bottom:18px solid transparent ; 
-border-left: 18px solid @gray-darker;   
-        }
     }
   .panel-main{
       position: absolute;
@@ -1287,7 +1276,7 @@ border-right: 18px solid @gray-darker;
     //panel style effect 8
     .panel-8{
       
-      //panel style effect8 part 2 
+      //panel style effect8 part 1 
       .panel-side1{
         position: absolute;
         top: 0;
@@ -1310,7 +1299,7 @@ border-right: 18px solid @gray-darker;
       .panel-side2{
       position: absolute;
       height: 100%;
-      width: 67%;
+      width: 34%;
         bottom: 0;
         left:33%;
     .panel-img{
@@ -1323,23 +1312,13 @@ border-right: 18px solid @gray-darker;
         
         content: none;
         }
-      .panel-arrow{
-          position: absolute;
-          left:0;
-          top: 75%;
-          margin-top: -17px;
-border-top: 18px solid transparent; 
-border-bottom: 18px solid transparent; 
-border-left: 18px solid @gray-darker;  
-          z-index: 10;
-          
-      }
+      
     }
     .panel-img-2{
         top: 0;
         left: 0;
       height: 50%;
-      width: 50%;
+      width: 100%;
     }
   .panel-main{
       top: auto;
@@ -1348,9 +1327,38 @@ border-left: 18px solid @gray-darker;
       position: absolute;
       height: 50%;
       vertical-align: middle;
-      width: 50.5%;
-          z-index: 0;
+      width: 100.5%;
+      z-index: 0;
+
+      &:after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -17px;
+        margin-left: -17px;
+        border-left: 18px solid transparent;
+        border-right: 18px solid transparent;
+        border-bottom: 18px solid @gray-darker;
+      }
   }
+      }
+    .panel-side3{
+        position: absolute;
+        top: 0;
+        left: 67%;
+        height: 100%;
+        width: 33%;
+        .panel-img{
+          height: 100%;
+          width: 100%;
+        }
+        
+        .panel-main{
+          position: absolute;
+          bottom:0;
+          width: 100%;
+          left: 0;
+        }
       }
     }
     
