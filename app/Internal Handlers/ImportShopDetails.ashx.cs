@@ -13,7 +13,11 @@ using Sitecore.Data.Items;
 using Sitecore.Publishing;
 using Sitecore.SecurityModel;
 using Landmark.Classes;
+using Landmark.Helper;
+using Landmark.Models;
 using Sitecore.Data.Fields;
+using Sitecore.Links;
+using Sitecore.Mvc.Extensions;
 
 
 namespace Landmark.Internal_Handlers
@@ -391,8 +395,8 @@ namespace Landmark.Internal_Handlers
     /// </summary>
     public class ImportShopDetails : IHttpHandler
     {
-        const string LogoDir = "/sitecore/media library/Images/Landmark/Brands/";
-        const string SliderDir = "/sitecore/media library/Images/Landmark/Shopping/ShopDetail";
+        const string LogoDir = "/sitecore/media library/Images/Landmark/Brands/Logo/";
+        const string SliderDir = "/sitecore/media library/Images/Landmark/Shopping/ShopDetail/Slider/";
         private readonly Database _webDb = Factory.GetDatabase("web");
         private readonly Database _masterDb = Factory.GetDatabase("master");
         private readonly Item _shopTemplate, _folderTemplate, _sliderImageTemplate;
@@ -466,10 +470,6 @@ namespace Landmark.Internal_Handlers
                                    _masterDb.CreateItemPath(
                                        "/sitecore/content/Home/Landmark/" + (isShop ? "Shopping/" : "Dining/") +
                                        itemName, _shopTemplate);
-                    if (isShop)
-                        shopFolder.Add(detail.NameEn, new TemplateID(new ID("{91A88069-9A0E-48B7-9509-BDE830A54D0E}")));
-                    if (isDine)
-                        diningFolder.Add(detail.NameEn, new TemplateID(new ID("{91A88069-9A0E-48B7-9509-BDE830A54D0E}")));
 
                     foreach (var language in shopItem.Languages)
                     {
@@ -545,12 +545,10 @@ namespace Landmark.Internal_Handlers
                             //((CheckboxField) version.Fields["Is Shown In Navigation"]).Checked = true;
                             //((CheckboxField)version.Fields["Is Shown In Breadcrum"]).Checked = true;
                             // Brand Image
-                            var brandImage = logoFolder.GetChildren().FirstOrDefault(i => i.DisplayName == detail.Logo);
+                            Item brandImage = logoFolder.GetChildren().FirstOrDefault(i => i.DisplayName == detail.Logo);
                             if (brandImage != null)
                             {
-                                ImageField brandImageField = ((ImageField) version.Fields["Brand Image"]);
-                                brandImageField.MediaID = brandImage.ID;
-                                //version.Fields["Brand Image"].Value = brandImage.ID.ToString();
+                                SetImageFieldValue(brandImage.ID.ToString(), version, "Brand Image");
                             }
                             // Slider Image
                             var mySliderFolder = version.GetChildren()
@@ -562,12 +560,13 @@ namespace Landmark.Internal_Handlers
                             var sliderImages = sliderFolder.Children.Where(i => i.DisplayName.StartsWith(detail.Slider));
                             foreach (var image in sliderImages)
                             {
-                                if (mySliderFolder.Children.Any(i => i.DisplayName == image.DisplayName))
-                                    continue;
-                                var newImage =
+                                /*if (mySliderFolder.Children.Any(i => i.DisplayName == image.DisplayName))
+                                    continue;*/
+                                var newImage = mySliderFolder.Children.FirstOrDefault(i => i.DisplayName == image.DisplayName) ??
                                     _masterDb.CreateItemPath(mySliderFolder.Paths.FullPath + "/" + image.DisplayName,
                                         _sliderImageTemplate);
-                                var ImgVersion = _masterDb.GetItem(shopItem.ID, language);
+
+                                var ImgVersion = _masterDb.GetItem(newImage.ID, language);
 
                                 if (ImgVersion.Versions.Count == 0)
                                 {
@@ -575,8 +574,9 @@ namespace Landmark.Internal_Handlers
                                 }
                                 if (language.Name == "en")
                                 {
-                                    ImgVersion.Fields["Slide Image"].Value = image.ID.ToString();
+                                    SetImageFieldValue(image.ID.ToString(), ImgVersion, "Slide Image");
                                 }
+                                mySliderFolder.Add(ImgVersion.DisplayName, new TemplateID(new ID("{FFC1447C-5F42-4419-AEF4-6175FB69507C}")));
                             }
 
                             // following are shared values, fill "en" version only
@@ -589,45 +589,70 @@ namespace Landmark.Internal_Handlers
                                 #region shop tags
 
                                 var shopTag = shopTags.Single(t => t.Name == detail.NameEn);
-                                if (shopTag.Location_Atrium.StartsWith("Y"))
+
+                                if (shopTag.Location_Atrium != null)
                                 {
-                                    // TODO: Location_Atrium
-                                    tags.Add("{C034122F-A68F-4E3C-827E-C1898533C08E}");
+                                    if (shopTag.Location_Atrium.StartsWith("Y"))
+                                    {
+                                        // TODO: Location_Atrium
+                                        tags.Add("{C034122F-A68F-4E3C-827E-C1898533C08E}");
+                                    }
                                 }
-                                else if (shopTag.Location_Princes.StartsWith("Y"))
+                                if (shopTag.Location_Princes != null)
                                 {
-                                    // TODO: Location_Princes
-                                    tags.Add("{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}");
+                                    if (shopTag.Location_Princes.StartsWith("Y"))
+                                    {
+                                        // TODO: Location_Princes
+                                        tags.Add("{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}");
+                                    }
                                 }
-                                else if (shopTag.Location_Alexendra.StartsWith("Y"))
+                                if (shopTag.Location_Alexendra != null)
                                 {
-                                    // TODO: Location_Alexendra
-                                    tags.Add("{B597804A-C4D7-44FB-9FAC-490726EEB3D9}");
+                                    if (shopTag.Location_Alexendra.StartsWith("Y"))
+                                    {
+                                        // TODO: Location_Alexendra
+                                        tags.Add("{B597804A-C4D7-44FB-9FAC-490726EEB3D9}");
+                                    }
                                 }
-                                else if (shopTag.Location_Chater.StartsWith("Y"))
+                                if (shopTag.Location_Chater != null)
                                 {
-                                    // TODO: Location_Chater
-                                    tags.Add("{37C1F81A-7605-4539-808B-C4B487FDB8DE}");
+                                    if (shopTag.Location_Chater.StartsWith("Y"))
+                                    {
+                                        // TODO: Location_Chater
+                                        tags.Add("{37C1F81A-7605-4539-808B-C4B487FDB8DE}");
+                                    }
                                 }
-                                else if (shopTag.Location_Other_EdinburghTower.StartsWith("Y"))
+                                if (shopTag.Location_Other_EdinburghTower != null)
                                 {
-                                    // TODO: Location_Other_EdinburghTower
-                                    tags.Add("{132E7671-084F-4DFD-9173-FEFB6A67FBAA}");
+                                    if (shopTag.Location_Other_EdinburghTower.StartsWith("Y"))
+                                    {
+                                        // TODO: Location_Other_EdinburghTower
+                                        tags.Add("{132E7671-084F-4DFD-9173-FEFB6A67FBAA}");
+                                    }
                                 }
-                                else if (shopTag.Location_Other_JardineHouse.StartsWith("Y"))
+                                if (shopTag.Location_Other_JardineHouse != null)
                                 {
-                                    // TODO: Location_Other_JardineHouse
-                                    tags.Add("{1DA4C84C-5353-4961-9C01-4A480E81C865}");
+                                    if (shopTag.Location_Other_JardineHouse.StartsWith("Y"))
+                                    {
+                                        // TODO: Location_Other_JardineHouse
+                                        tags.Add("{1DA4C84C-5353-4961-9C01-4A480E81C865}");
+                                    }
                                 }
-                                else if (shopTag.Location_Other_MandarinOrientalHotel.StartsWith("Y"))
+                                if (shopTag.Location_Other_MandarinOrientalHotel != null)
                                 {
-                                    // TODO: Location_Other_MandarinOrientalHotel
-                                    tags.Add("{6ADD337A-5273-4504-AD72-8C601D69C6F9}");
+                                    if (shopTag.Location_Other_MandarinOrientalHotel.StartsWith("Y"))
+                                    {
+                                        // TODO: Location_Other_MandarinOrientalHotel
+                                        tags.Add("{6ADD337A-5273-4504-AD72-8C601D69C6F9}");
+                                    }
                                 }
-                                else if (shopTag.Location_Other_OneExchangeSquare.StartsWith("Y"))
+                                if (shopTag.Location_Other_OneExchangeSquare != null)
                                 {
-                                    // TODO: Location_Other_OneExchangeSquare
-                                    tags.Add("{838D33D8-9AC8-4369-AB18-9470EADCD49B}");
+                                    if (shopTag.Location_Other_OneExchangeSquare.StartsWith("Y"))
+                                    {
+                                        // TODO: Location_Other_OneExchangeSquare
+                                        tags.Add("{838D33D8-9AC8-4369-AB18-9470EADCD49B}");
+                                    }
                                 }
                                 else if (shopTag.Shop_MEN.StartsWith("Y"))
                                 {
@@ -894,50 +919,81 @@ namespace Landmark.Internal_Handlers
                                 #region dining tags
 
                                 var dineTag = dineTags.Single(t => t.Name == detail.NameEn);
-                                if (dineTag.Location_Atrium.StartsWith("Y"))
+                                if (dineTag.Location_Atrium != null)
                                 {
-                                    // TODO: Location_Atrium
-                                    tags.Add("{C034122F-A68F-4E3C-827E-C1898533C08E}");
+
                                 }
-                                else if (dineTag.Location_Princes.StartsWith("Y"))
+                                if (dineTag.Location_Atrium != null)
                                 {
-                                    // TODO: Location_Princes
-                                    tags.Add("{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}");
+                                    if (dineTag.Location_Atrium.StartsWith("Y"))
+                                    {
+                                        // TODO: Location_Atrium
+                                        tags.Add("{C034122F-A68F-4E3C-827E-C1898533C08E}");
+                                    }
                                 }
-                                else if (dineTag.Location_Alexendra.StartsWith("Y"))
+                                if (dineTag.Location_Princes != null)
                                 {
-                                    // TODO: Location_Alexendra
+                                    if (dineTag.Location_Princes.StartsWith("Y"))
+                                    {
+                                        // TODO: Location_Princes
+                                        tags.Add("{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}");
+                                    }
+                                }
+                                if (dineTag.Location_Alexendra != null)
+                                {
+                                    if (dineTag.Location_Alexendra.StartsWith("Y"))
+                                    {
+                                        // TODO: Location_Alexendra
                                     tags.Add("{B597804A-C4D7-44FB-9FAC-490726EEB3D9}");
+                                    }
                                 }
-                                else if (dineTag.Location_Chater.StartsWith("Y"))
+                                if (dineTag.Location_Chater != null)
                                 {
-                                    // TODO: Location_Chater
-                                    tags.Add("{37C1F81A-7605-4539-808B-C4B487FDB8DE}");
+                                    if (dineTag.Location_Chater.StartsWith("Y"))
+                                    {
+                                        // TODO: Location_Chater
+                                        tags.Add("{37C1F81A-7605-4539-808B-C4B487FDB8DE}");
+                                    }
                                 }
-                                else if (dineTag.Location_Other_EdinburghTower.StartsWith("Y"))
+                                if (dineTag.Location_Other_EdinburghTower != null)
                                 {
-                                    // TODO: Location_Other_EdinburghTower
-                                    tags.Add("{132E7671-084F-4DFD-9173-FEFB6A67FBAA}");
+                                    if (dineTag.Location_Other_EdinburghTower.StartsWith("Y"))
+                                    {
+                                        // TODO: Location_Other_EdinburghTower
+                                        tags.Add("{132E7671-084F-4DFD-9173-FEFB6A67FBAA}");
+                                    }
                                 }
-                                else if (dineTag.Location_Other_JardineHouse.StartsWith("Y"))
+                                if (dineTag.Location_Other_JardineHouse != null)
                                 {
-                                    // TODO: Location_Other_JardineHouse
-                                    tags.Add("{1DA4C84C-5353-4961-9C01-4A480E81C865}");
+                                    if (dineTag.Location_Other_JardineHouse.StartsWith("Y"))
+                                    {
+                                        // TODO: Location_Other_JardineHouse
+                                        tags.Add("{1DA4C84C-5353-4961-9C01-4A480E81C865}");
+                                    }
                                 }
-                                else if (dineTag.Location_Other_MandarinOrientalHotel.StartsWith("Y"))
+                                if (dineTag.Location_Other_MandarinOrientalHotel != null)
                                 {
-                                    // TODO: Location_Other_MandarinOrientalHotel
-                                    tags.Add("{6ADD337A-5273-4504-AD72-8C601D69C6F9}");
+                                    if (dineTag.Location_Other_MandarinOrientalHotel.StartsWith("Y"))
+                                    {
+                                        // TODO: Location_Other_MandarinOrientalHotel
+                                        tags.Add("{6ADD337A-5273-4504-AD72-8C601D69C6F9}");
+                                    }
                                 }
-                                else if (dineTag.Location_Other_OneExchangeSquare.StartsWith("Y"))
+                                if (dineTag.Location_Other_OneExchangeSquare != null)
                                 {
-                                    // TODO: Location_Other_OneExchangeSquare
-                                    tags.Add("{838D33D8-9AC8-4369-AB18-9470EADCD49B}");
+                                    if (dineTag.Location_Other_OneExchangeSquare.StartsWith("Y"))
+                                    {
+                                        // TODO: Location_Other_OneExchangeSquare
+                                        tags.Add("{838D33D8-9AC8-4369-AB18-9470EADCD49B}");
+                                    }
                                 }
-                                else if (dineTag.Location_Other_TwoExchangeSquare.StartsWith("Y"))
+                                if (dineTag.Location_Other_TwoExchangeSquare != null)
                                 {
-                                    // TODO: Location_Other_TwoExchangeSquare
-                                    tags.Add("{B7798E58-05C8-4513-9C8C-F953674DA86D}");
+                                    if (dineTag.Location_Other_TwoExchangeSquare.StartsWith("Y"))
+                                    {
+                                        // TODO: Location_Other_TwoExchangeSquare
+                                        tags.Add("{B7798E58-05C8-4513-9C8C-F953674DA86D}");
+                                    }
                                 }
                                 else if (dineTag.Dining_MichelinStarRestaurants.StartsWith("Y"))
                                 {
@@ -998,33 +1054,41 @@ namespace Landmark.Internal_Handlers
 
                                 #endregion
                             }
-                            version.Fields["Tags"].Value = string.Join("|", tags);
-
-                            // Floor & Location
-                            var locs = shopXYs.Where(l => GenItemName(l.Name) == itemName)
-                                .Take(1); // we can only handle one location for one shop
-                            foreach (var loc in locs)
+                            using (new EditContext(version))
                             {
-                                version.Fields["Floor"].Value = GetFloorId(loc.Filename);
-                                version.Fields["Svg Id"].Value = loc.MapId;
-                                version.Fields["LocationX"].Value = loc.X;
-                                version.Fields["LocationY"].Value = loc.Y;
+                                version.Fields["Tags"].Value = string.Join("|", tags);
+                                // Floor & Location
+                                var locs = shopXYs.Where(l => GenItemName(l.Name) == itemName)
+                                    .Take(1); // we can only handle one location for one shop
+                                foreach (var loc in locs)
+                                {
+                                    version.Fields["Floor"].Value = GetFloorId(loc.Filename);
+                                    version.Fields["Svg Id"].Value = loc.MapId;
+                                    version.Fields["LocationX"].Value = loc.X;
+                                    version.Fields["LocationY"].Value = loc.Y;
+                                }
                             }
                         }
                         version.Editing.AcceptChanges();
                     }
                 }
+            }
 
-                foreach (var artxy in artXYs)
+            foreach (var artxy in artXYs)
+            {
+                var title = artxy.Name.Substring(artxy.Name.LastIndexOf("-") + 1).Trim();
+                var artpiece = LandmarkHelper.GetItemByTemplate(artFolder, "{ADE0F061-FF28-4CDB-B6C3-14021D75355A}").FirstOrDefault(i => i.Fields["Page Title"].Value == title);
+                if (artpiece == null)
+                    continue;
+                var version = _masterDb.GetItem(artpiece.ID, artpiece.Languages.First());
+                using (new SecurityDisabler())
                 {
-                    var title = artxy.Name.Substring(artxy.Name.LastIndexOf("-") + 1).Trim();
-                    var artpiece = artFolder.Children.FirstOrDefault(i => i.Fields["Page Title"].Value == title);
-                    if (artpiece == null)
-                        continue;
-                    var version = _masterDb.GetItem(artpiece.ID, artpiece.Languages.First());
-                    version.Fields["Floor and Building"].Value = GetFloorId(artxy.Filename);
-                    version.Fields["LocationX"].Value = artxy.X;
-                    version.Fields["LocationY"].Value = artxy.Y;
+                    using (new EditContext(version))
+                    {
+                        version.Fields["Floor and Building"].Value = GetFloorId(artxy.Filename);
+                        version.Fields["LocationX"].Value = artxy.X;
+                        version.Fields["LocationY"].Value = artxy.Y;
+                    }
                 }
             }
         }
@@ -1129,5 +1193,24 @@ namespace Landmark.Internal_Handlers
             }
             return floor;
         }
+
+        public void SetImageFieldValue(string imageid, Item item, string imageField)
+        {
+            using (new SecurityDisabler())
+            {
+                MediaItem imageItem = _masterDb.GetItem(imageid);
+            if (imageItem != null)
+            {
+                using (new EditContext(item))
+                {
+                    Sitecore.Data.Fields.ImageField imagefield = item.Fields[imageField];
+                    imagefield.Alt = imageItem.Alt;
+                    imagefield.MediaID = imageItem.ID;
+                }
+                //item.Fields[imageField].Value =
+                //    @"<image mediapath="" alt="""+"test"+@" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="" mediaid="+imageid+" />";
+            }
+        }
+    }
     }
 }
