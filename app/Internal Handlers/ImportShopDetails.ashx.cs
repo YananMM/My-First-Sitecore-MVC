@@ -11,6 +11,9 @@ using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Items;
 using Sitecore.Publishing;
+using Sitecore.SecurityModel;
+using Landmark.Classes;
+using Sitecore.Data.Fields;
 
 
 namespace Landmark.Internal_Handlers
@@ -388,7 +391,7 @@ namespace Landmark.Internal_Handlers
     /// </summary>
     public class ImportShopDetails : IHttpHandler
     {
-        const string LogoDir = "/sitecore/media library/Images/Landmark/Brands";
+        const string LogoDir = "/sitecore/media library/Images/Landmark/Brands/";
         const string SliderDir = "/sitecore/media library/Images/Landmark/Shopping/ShopDetail";
         private readonly Database _webDb = Factory.GetDatabase("web");
         private readonly Database _masterDb = Factory.GetDatabase("master");
@@ -397,7 +400,7 @@ namespace Landmark.Internal_Handlers
 
         public ImportShopDetails()
         {
-            _shopTemplate = _masterDb.GetItem("/sitecore/templates/User Defined/Landmark/Page/Shopping Page Object");
+            _shopTemplate = _masterDb.GetItem("/sitecore/templates/User Defined/Landmark/Page/T14 Page");
             _folderTemplate = _masterDb.GetItem("/sitecore/templates/User Defined/Landmark/Object/Slide Folder");
             _sliderImageTemplate = _masterDb.GetItem("/sitecore/templates/User Defined/Landmark/Object/Slide Object ");
 
@@ -409,35 +412,35 @@ namespace Landmark.Internal_Handlers
 
             
             var details =
-                new CsvContext().Read<CsvShopDetail>("shop-details.txt", new CsvFileDescription
+                new CsvContext().Read<CsvShopDetail>(@SitecoreItems.LandmarkConfigItem.Fields["CSV Folder"].Value + "shop-details.txt", new CsvFileDescription
                 {
                     SeparatorChar = '\t',
                     FirstLineHasColumnNames = false,
                     EnforceCsvColumnAttribute = true
                 }).Skip(1);
             var shopTags =
-            new CsvContext().Read<CsvShopTags>("shop-tags.txt", new CsvFileDescription
+            new CsvContext().Read<CsvShopTags>(@SitecoreItems.LandmarkConfigItem.Fields["CSV Folder"].Value + "shop-tags.txt", new CsvFileDescription
             {
                 SeparatorChar = '\t',
                 FirstLineHasColumnNames = false,
                 EnforceCsvColumnAttribute = true
             }).Skip(1).Where(t => !string.IsNullOrEmpty(t.Name)).ToList();
             var dineTags =
-            new CsvContext().Read<CsvDineTags>("dine-tags.txt", new CsvFileDescription
+            new CsvContext().Read<CsvDineTags>(@SitecoreItems.LandmarkConfigItem.Fields["CSV Folder"].Value + "dine-tags.txt", new CsvFileDescription
             {
                 SeparatorChar = '\t',
                 FirstLineHasColumnNames = false,
                 EnforceCsvColumnAttribute = true
             }).Skip(1).Where(t => !string.IsNullOrEmpty(t.Name)).ToList();
             var shopXYs =
-               new CsvContext().Read<CsvShopXY>("shop-xy.txt", new CsvFileDescription
+               new CsvContext().Read<CsvShopXY>(@SitecoreItems.LandmarkConfigItem.Fields["CSV Folder"].Value + "shop-xy.txt", new CsvFileDescription
                {
                    SeparatorChar = '\t',
                    FirstLineHasColumnNames = false,
                    EnforceCsvColumnAttribute = true
                }).Skip(1).Where(t => !string.IsNullOrEmpty(t.Name) && !string.IsNullOrEmpty(t.Filename)).ToList();
             var artXYs =
-               new CsvContext().Read<CsvArtXY>("artpiece-xy.txt", new CsvFileDescription
+               new CsvContext().Read<CsvArtXY>(@SitecoreItems.LandmarkConfigItem.Fields["CSV Folder"].Value+"artpiece-xy.txt", new CsvFileDescription
                {
                    SeparatorChar = '\t',
                    FirstLineHasColumnNames = false,
@@ -449,555 +452,580 @@ namespace Landmark.Internal_Handlers
             var artFolder = _masterDb.GetItem("/sitecore/content/Home/Landmark/Around Central/Landmark Art Tour");
             var logoFolder = _masterDb.GetItem(LogoDir);
             var sliderFolder = _masterDb.GetItem(SliderDir);
+
             foreach (var detail in details)
             {
-                var isShop = shopTags.Any(t => t.Name == detail.NameEn);
-                var isDine = dineTags.Any(t => t.Name == detail.NameEn);
-                var itemName = GenItemName(detail.NameEn);
-                var shopItem = shopFolder.Children.FirstOrDefault(i => i.Name == itemName)
-                        ?? diningFolder.Children.FirstOrDefault(i => i.Name == itemName)
-                        ?? _masterDb.CreateItemPath("/sitecore/content/Home/Landmark/"+ (isShop?"Shopping/":"Dining/") + itemName, _shopTemplate);
-
-                foreach (var language in shopItem.Languages)
+                using (new SecurityDisabler())
                 {
-                    var version = _masterDb.GetItem(shopItem.ID, language);
+                    var isShop = shopTags.Any(t => t.Name == detail.NameEn);
+                    var isDine = dineTags.Any(t => t.Name == detail.NameEn);
+                    var itemName = GenItemName(detail.NameEn);
+                    var shopItem = shopFolder.Children.FirstOrDefault(i => i.Name == itemName)
+                                   ?? diningFolder.Children.FirstOrDefault(i => i.Name == itemName)
+                                   ??
+                                   _masterDb.CreateItemPath(
+                                       "/sitecore/content/Home/Landmark/" + (isShop ? "Shopping/" : "Dining/") +
+                                       itemName, _shopTemplate);
+                    if (isShop)
+                        shopFolder.Add(detail.NameEn, new TemplateID(new ID("{91A88069-9A0E-48B7-9509-BDE830A54D0E}")));
+                    if (isDine)
+                        diningFolder.Add(detail.NameEn, new TemplateID(new ID("{91A88069-9A0E-48B7-9509-BDE830A54D0E}")));
 
-                    if (version.Versions.Count == 0)
+                    foreach (var language in shopItem.Languages)
                     {
-                        version = version.Versions.AddVersion();
-                    }
+                        var version = _masterDb.GetItem(shopItem.ID, language);
 
-                    using (new EditContext(version))
-                    {
-                        switch (language.Name)
+                        if (version.Versions.Count == 0)
                         {
-                            case "en":
-                                version.Fields["Brand Title"].Value = detail.NameEn;
-                                version.Fields["Page Title"].Value = detail.NameEn;
-                                version.Fields["Content Title"].Value = detail.HeadingEn;
-
-                                version.Fields["Meta Keywords"].Value = detail.Keywords;
-                                version.Fields["Meta Description"].Value = detail.HeadingEn;
-                                version.Fields["Social Share Title"].Value = detail.NameEn;
-                                version.Fields["Social Share Description"].Value = detail.HeadingEn;
-
-                                version.Fields["Content Description"].Value = detail.BodyEn;
-                                version.Fields["Page Content"].Value = detail.BodyEn;
-                                
-                                version.Fields["Area"].Value = detail.AddressEn;
-                                version.Fields["Description"].Value = detail.HeadingEn;
-                                version.Fields["Openning Hours"].Value = detail.OpenEn;
-                                version.Fields["Contact"].Value = detail.TelEn;
-                                //version.Fields["Official Website"].Value = ???;
-                                break;
-                            case "zh-CN":
-                                version.Fields["Brand Title"].Value = detail.NameSc;
-                                version.Fields["Page Title"].Value = detail.NameSc;
-                                version.Fields["Content Title"].Value = detail.HeadingSc;
-
-                                version.Fields["Meta Keywords"].Value = detail.Keywords;
-                                version.Fields["Meta Description"].Value = detail.HeadingSc;
-                                version.Fields["Social Share Title"].Value = detail.NameSc;
-                                version.Fields["Social Share Description"].Value = detail.HeadingSc;
-
-                                version.Fields["Content Description"].Value = detail.BodySc;
-                                version.Fields["Page Content"].Value = detail.BodySc;
-                                
-                                version.Fields["Area"].Value = detail.AddressSc;
-                                version.Fields["Description"].Value = detail.HeadingSc;
-                                version.Fields["Openning Hours"].Value = detail.OpenSc;
-                                version.Fields["Contact"].Value = detail.TelSc;
-                                break;
-                            case "zh-HK":
-                                version.Fields["Brand Title"].Value = detail.NameTc;
-                                version.Fields["Page Title"].Value = detail.NameTc;
-                                version.Fields["Content Title"].Value = detail.HeadingTc;
-
-                                version.Fields["Meta Keywords"].Value = detail.Keywords;
-                                version.Fields["Meta Description"].Value = detail.HeadingTc;
-                                version.Fields["Social Share Title"].Value = detail.NameTc;
-                                version.Fields["Social Share Description"].Value = detail.HeadingTc;
-
-                                version.Fields["Content Description"].Value = detail.BodyTc;
-                                version.Fields["Page Content"].Value = detail.BodyTc;
-                                
-                                version.Fields["Area"].Value = detail.AddressTc;
-                                version.Fields["Description"].Value = detail.HeadingTc;
-                                version.Fields["Openning Hours"].Value = detail.OpenTc;
-                                version.Fields["Contact"].Value = detail.TelTc;
-                                break;
+                            version = version.Versions.AddVersion();
                         }
 
-                        version.Fields["Is Shown In Navigation"].Value = "1";
-                        version.Fields["Is Shown In Breadcrumb"].Value = "1";
-                        // Brand Image
-                        var brandImage = logoFolder.GetChildren().FirstOrDefault(i => i.DisplayName == detail.Logo);
-                        if (brandImage != null)
+                        using (new EditContext(version))
                         {
-                            version.Fields["Brand Image"].Value = brandImage.ID.ToString();
-                        }
-                        // Slider Image
-                        var mySliderFolder = version.GetChildren()
-                            .FirstOrDefault(i => i.DisplayName == "Shop Main Page") ?? _masterDb.CreateItemPath(version.Paths.FullPath + "/Shop Main Page", _folderTemplate);
-                        var sliderImages = sliderFolder.Children.Where(i => i.DisplayName.StartsWith(detail.Slider));
-                        foreach (var image in sliderImages)
-                        {
-                            if (mySliderFolder.Children.Any(i => i.DisplayName == image.DisplayName))
+                            version.Editing.BeginEdit();
+                            switch (language.Name)
+                            {
+                                case "en":
+                                    version.Fields["Brand Title"].SetValue(detail.NameEn,true);
+                                    version.Fields["Page Title"].SetValue( detail.NameEn,true);
+                                    version.Fields["Content Title"].SetValue( detail.HeadingEn,true);
+
+                                    version.Fields["Meta Keywords"].SetValue( detail.Keywords,true);
+                                    version.Fields["Meta Description"].SetValue( detail.HeadingEn,true);
+                                    version.Fields["Social Share Title"].SetValue( detail.NameEn,true);
+                                    version.Fields["Social Share Description"].SetValue( detail.HeadingEn,true);
+
+                                    version.Fields["Content Description"].SetValue(  detail.BodyEn,true);
+                                    version.Fields["Page Content"].SetValue(  detail.BodyEn,true);
+
+                                    version.Fields["Area"].SetValue(  detail.AddressEn,true);
+                                    version.Fields["Description"].SetValue( detail.HeadingEn,true);
+                                    version.Fields["Openning Hours"].SetValue(  detail.OpenEn,true);
+                                    version.Fields["Contact"].SetValue( detail.TelEn,true);
+                                    //version.Fields["Official Website"].Value = ???;
+                                    break;
+                                case "zh-CN":
+                                    version.Fields["Brand Title"].SetValue(  detail.NameSc,true);
+                                    version.Fields["Page Title"].SetValue(  detail.NameSc,true);
+                                    version.Fields["Content Title"].SetValue(  detail.HeadingSc,true);
+
+                                    version.Fields["Meta Keywords"].SetValue( detail.Keywords,true);
+                                    version.Fields["Meta Description"].SetValue(  detail.HeadingSc,true);
+                                    version.Fields["Social Share Title"].SetValue(  detail.NameSc,true);
+                                    version.Fields["Social Share Description"].SetValue(  detail.HeadingSc,true);
+
+                                    version.Fields["Content Description"].SetValue(  detail.BodySc,true);
+                                    version.Fields["Page Content"].SetValue(  detail.BodySc,true);
+
+                                    version.Fields["Area"].SetValue(detail.AddressSc,true);
+                                    version.Fields["Description"].SetValue( detail.HeadingSc,true);
+                                    version.Fields["Openning Hours"].SetValue(detail.OpenSc,true);
+                                    version.Fields["Contact"].SetValue(detail.TelSc,true);
+                                    break;
+                                case "zh-HK":
+                                    version.Fields["Brand Title"].SetValue( detail.NameTc,true);
+                                    version.Fields["Page Title"].SetValue( detail.NameTc,true);
+                                    version.Fields["Content Title"].SetValue( detail.HeadingTc,true);
+
+                                    version.Fields["Meta Keywords"].SetValue(detail.Keywords,true);
+                                    version.Fields["Meta Description"].SetValue( detail.HeadingTc,true);
+                                    version.Fields["Social Share Title"].SetValue( detail.NameTc,true);
+                                    version.Fields["Social Share Description"].SetValue(detail.HeadingTc,true);
+
+                                    version.Fields["Content Description"].SetValue( detail.BodyTc,true);
+                                    version.Fields["Page Content"].SetValue( detail.BodyTc,true);
+
+                                    version.Fields["Area"].SetValue( detail.AddressTc,true);
+                                    version.Fields["Description"].SetValue( detail.HeadingTc,true);
+                                    version.Fields["Openning Hours"].SetValue( detail.OpenTc,true);
+                                    version.Fields["Contact"].SetValue(detail.TelTc, true);
+                                    break;
+                            }
+
+                            //((CheckboxField) version.Fields["Is Shown In Navigation"]).Checked = true;
+                            //((CheckboxField)version.Fields["Is Shown In Breadcrum"]).Checked = true;
+                            // Brand Image
+                            var brandImage = logoFolder.GetChildren().FirstOrDefault(i => i.DisplayName == detail.Logo);
+                            if (brandImage != null)
+                            {
+                                ImageField brandImageField = ((ImageField) version.Fields["Brand Image"]);
+                                brandImageField.MediaID = brandImage.ID;
+                                //version.Fields["Brand Image"].Value = brandImage.ID.ToString();
+                            }
+                            // Slider Image
+                            var mySliderFolder = version.GetChildren()
+                                .FirstOrDefault(i => i.DisplayName == "Shop Main Page") ??
+                                                 _masterDb.CreateItemPath(version.Paths.FullPath + "/Shop Main Page",
+                                                     _folderTemplate);
+                            version.Add("Shop Main Page",
+                                new TemplateID(new ID("{EEEB8813-EBD2-415E-B4F0-72B52DDEF18E}")));
+                            var sliderImages = sliderFolder.Children.Where(i => i.DisplayName.StartsWith(detail.Slider));
+                            foreach (var image in sliderImages)
+                            {
+                                if (mySliderFolder.Children.Any(i => i.DisplayName == image.DisplayName))
+                                    continue;
+                                var newImage =
+                                    _masterDb.CreateItemPath(mySliderFolder.Paths.FullPath + "/" + image.DisplayName,
+                                        _sliderImageTemplate);
+                                var ImgVersion = _masterDb.GetItem(shopItem.ID, language);
+
+                                if (ImgVersion.Versions.Count == 0)
+                                {
+                                    ImgVersion = ImgVersion.Versions.AddVersion();
+                                }
+                                if (language.Name == "en")
+                                {
+                                    ImgVersion.Fields["Slide Image"].Value = image.ID.ToString();
+                                }
+                            }
+
+                            // following are shared values, fill "en" version only
+                            if (language.Name != "en")
                                 continue;
-                            var newImage = _masterDb.CreateItemPath(mySliderFolder.Paths.FullPath + "/" + image.DisplayName, _sliderImageTemplate);
-                            var ImgVersion = _masterDb.GetItem(shopItem.ID, language);
+                            // Tags
+                            var tags = new List<string>();
+                            if (isShop)
+                            {
+                                #region shop tags
 
-                            if (ImgVersion.Versions.Count == 0)
-                            {
-                                ImgVersion = ImgVersion.Versions.AddVersion();
-                            }
-                            if (language.Name == "en")
-                            {
-                                ImgVersion.Fields["Slide Image"].Value = image.ID.ToString();
-                            }
-                        }
-
-                        // following are shared values, fill "en" version only
-                        if (language.Name != "en") 
-                            continue;
-                        // Tags
-                        var tags = new List<string>();
-                        if (isShop)
-                        {
-                            #region shop tags
-                            var shopTag = shopTags.Single(t => t.Name == detail.NameEn);
-                            if (shopTag.Location_Atrium.StartsWith("Y"))
-                            {
-                                // TODO: Location_Atrium
-                                tags.Add("{C034122F-A68F-4E3C-827E-C1898533C08E}");
-                            }
-                            else if (shopTag.Location_Princes.StartsWith("Y"))
-                            {
-                                // TODO: Location_Princes
-                                tags.Add("{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}");
-                            }
-                            else if (shopTag.Location_Alexendra.StartsWith("Y"))
-                            {
-                                // TODO: Location_Alexendra
-                                tags.Add("{B597804A-C4D7-44FB-9FAC-490726EEB3D9}");
-                            }
-                            else if (shopTag.Location_Chater.StartsWith("Y"))
-                            {
-                                // TODO: Location_Chater
-                                tags.Add("{37C1F81A-7605-4539-808B-C4B487FDB8DE}");
-                            }
-                            else if (shopTag.Location_Other_EdinburghTower.StartsWith("Y"))
-                            {
-                                // TODO: Location_Other_EdinburghTower
-                                tags.Add("{132E7671-084F-4DFD-9173-FEFB6A67FBAA}");
-                            }
-                            else if (shopTag.Location_Other_JardineHouse.StartsWith("Y"))
-                            {
-                                // TODO: Location_Other_JardineHouse
-                                tags.Add("{1DA4C84C-5353-4961-9C01-4A480E81C865}");
-                            }
-                            else if (shopTag.Location_Other_MandarinOrientalHotel.StartsWith("Y"))
-                            {
-                                // TODO: Location_Other_MandarinOrientalHotel
-                                tags.Add("{6ADD337A-5273-4504-AD72-8C601D69C6F9}");
-                            }
-                            else if (shopTag.Location_Other_OneExchangeSquare.StartsWith("Y"))
-                            {
-                                // TODO: Location_Other_OneExchangeSquare
-                                tags.Add("{838D33D8-9AC8-4369-AB18-9470EADCD49B}");
-                            }
-                            else if (shopTag.Shop_MEN.StartsWith("Y"))
-                            {
-                                tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
-                            }
+                                var shopTag = shopTags.Single(t => t.Name == detail.NameEn);
+                                if (shopTag.Location_Atrium.StartsWith("Y"))
+                                {
+                                    // TODO: Location_Atrium
+                                    tags.Add("{C034122F-A68F-4E3C-827E-C1898533C08E}");
+                                }
+                                else if (shopTag.Location_Princes.StartsWith("Y"))
+                                {
+                                    // TODO: Location_Princes
+                                    tags.Add("{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}");
+                                }
+                                else if (shopTag.Location_Alexendra.StartsWith("Y"))
+                                {
+                                    // TODO: Location_Alexendra
+                                    tags.Add("{B597804A-C4D7-44FB-9FAC-490726EEB3D9}");
+                                }
+                                else if (shopTag.Location_Chater.StartsWith("Y"))
+                                {
+                                    // TODO: Location_Chater
+                                    tags.Add("{37C1F81A-7605-4539-808B-C4B487FDB8DE}");
+                                }
+                                else if (shopTag.Location_Other_EdinburghTower.StartsWith("Y"))
+                                {
+                                    // TODO: Location_Other_EdinburghTower
+                                    tags.Add("{132E7671-084F-4DFD-9173-FEFB6A67FBAA}");
+                                }
+                                else if (shopTag.Location_Other_JardineHouse.StartsWith("Y"))
+                                {
+                                    // TODO: Location_Other_JardineHouse
+                                    tags.Add("{1DA4C84C-5353-4961-9C01-4A480E81C865}");
+                                }
+                                else if (shopTag.Location_Other_MandarinOrientalHotel.StartsWith("Y"))
+                                {
+                                    // TODO: Location_Other_MandarinOrientalHotel
+                                    tags.Add("{6ADD337A-5273-4504-AD72-8C601D69C6F9}");
+                                }
+                                else if (shopTag.Location_Other_OneExchangeSquare.StartsWith("Y"))
+                                {
+                                    // TODO: Location_Other_OneExchangeSquare
+                                    tags.Add("{838D33D8-9AC8-4369-AB18-9470EADCD49B}");
+                                }
+                                else if (shopTag.Shop_MEN.StartsWith("Y"))
+                                {
+                                    tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
+                                }
                                 ////
-                            else if (shopTag.Shop_MEN.StartsWith("Y"))
-                            {
-                                tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
-                            }
-                            else if (shopTag.Shop_MEN.StartsWith("Y"))
-                            {
-                                tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
-                            }
-                            else if (shopTag.Shop_MEN.StartsWith("Y"))
-                            {
-                                tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
-                            }
-                            else if (shopTag.Shop_MEN.StartsWith("Y"))
-                            {
-                                tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
-                            }
-                            else if (shopTag.Shop_MEN.StartsWith("Y"))
-                            {
-                                tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
-                            }
-                            else if (shopTag.Shop_MEN.StartsWith("Y"))
-                            {
-                                tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
-                            }
-                            else if (shopTag.Shop_MEN.StartsWith("Y"))
-                            {
-                                tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
-                            }
-                            else if (shopTag.Shop_MEN.StartsWith("Y"))
-                            {
-                                tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
-                            }
-                            else if (shopTag.Shop_MEN.StartsWith("Y"))
-                            {
-                                tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
-                            }
-                            else if (shopTag.Shop_MEN_Accessories.StartsWith("Y"))
-                            {
-                                tags.Add("{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}");
-                            }
-                            else if (shopTag.Shop_MEN_ActiveWear.StartsWith("Y"))
-                            {
-                                tags.Add("{39F78176-04AD-4110-8AC4-AA392CC79C2E}");
-                            }
-                            else if (shopTag.Shop_MEN_Bags.StartsWith("Y"))
-                            {
-                                tags.Add("{8DEEBCDA-AC9C-4B0C-AF81-8E493D219713}");
-                            }
-                            else if (shopTag.Shop_MEN_Fashion.StartsWith("Y"))
-                            {
-                                tags.Add("{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}");
-                            }
-                            else if (shopTag.Shop_MEN_MadeToMeasure.StartsWith("Y"))
-                            {
-                                tags.Add("{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}");
-                            }
-                            else if (shopTag.Shop_MEN_Shoes.StartsWith("Y"))
-                            {
-                                tags.Add("{37DE7516-5325-4534-A035-A908D3D256D9}");
-                            }
-                            else if (shopTag.Shop_MEN_VIPRoom.StartsWith("Y"))
-                            {
-                                // TODO: Shop_MEN_VIPRoom
-                                tags.Add("{56FED65F-5267-4350-B440-F22DC2B2218F}");
-                            }
-                            else if (shopTag.Shop_MEN_LANDMARKMEN.StartsWith("Y"))
-                            {
-                                tags.Add("{111013C6-0BCD-4E1C-8CCA-7D7DDC405B0A}");
-                            }
-                            else if (shopTag.Shop_WOMEN.StartsWith("Y"))
-                            {
-                                tags.Add("{584512EB-189E-4FEF-9280-3F893DD9A9E1}");
-                            }
-                            else if (shopTag.Shop_WOMEN_Accessories.StartsWith("Y"))
-                            {
-                                tags.Add("{7895E95B-BA35-4C28-9325-0BB7443E6945}");
-                            }
-                            else if (shopTag.Shop_WOMEN_ActiveWear.StartsWith("Y"))
-                            {
-                                // TODO: Shop_WOMEN_ActiveWear
-                                tags.Add("{BF280597-458A-45C0-97FE-ED4614C75CAF}");
-                            }
-                            else if (shopTag.Shop_WOMEN_Bags.StartsWith("Y"))
-                            {
-                                tags.Add("{1A1800EA-D40A-412C-970A-DBA534DC1F23}");
-                            }
-                            else if (shopTag.Shop_WOMEN_CocktailDressesGowns.StartsWith("Y"))
-                            {
-                                tags.Add("{585407EB-2AAB-454C-BB2B-2D9868FA53BA}");
-                            }
-                            else if (shopTag.Shop_WOMEN_Fashion.StartsWith("Y"))
-                            {
-                                tags.Add("{01E67855-9741-4C1C-9FCD-2432982120B6}");
-                            }
-                            else if (shopTag.Shop_WOMEN_Shoes.StartsWith("Y"))
-                            {
-                                tags.Add("{89884B9A-3DE7-47AD-BC7F-F2500B956EFD}");
-                            }
-                            else if (shopTag.Shop_WOMEN_VIPRoom.StartsWith("Y"))
-                            {
-                                // TODO: Shop_WOMEN_VIPRoom
-                                tags.Add("{6CD9230F-42B3-476C-B074-F2C099B8C515}");
-                            }
-                            else if (shopTag.Shop_CHILDRENBABIES.StartsWith("Y"))
-                            {
-                                tags.Add("{F1CC2EDE-A165-4FC4-B47A-8C0DF29BDE27}");
-                            }
-                            else if (shopTag.Shop_CHILDRENBABIES_Accessories.StartsWith("Y"))
-                            {
-                                tags.Add("{73D42903-0C38-4D70-A14E-C773BDCFBCC6}");
-                            }
-                            else if (shopTag.Shop_CHILDRENBABIES_Clothing.StartsWith("Y"))
-                            {
-                                tags.Add("{A869505D-8B56-42B6-9460-9928607C3BD3}");
-                            }
-                            else if (shopTag.Shop_CHILDRENBABIES_Shoes.StartsWith("Y"))
-                            {
-                                tags.Add("{83DA7F21-4D35-481C-B865-2A089D47AD10}");
-                            }
-                            else if (shopTag.Shop_CHILDRENBABIES_Toys.StartsWith("Y"))
-                            {
-                                tags.Add("{BB0E8159-D1DF-4198-9007-2E5DB5A725BE}");
-                            }
-                            else if (shopTag.Shop_WELLNESS.StartsWith("Y"))
-                            {
-                                tags.Add("{101C4A58-6D7D-4905-AD44-F0F054282440}");
-                            }
-                            else if (shopTag.Shop_WELLNESS_Fragrance.StartsWith("Y"))
-                            {
-                                tags.Add("{30E208D0-F316-47A5-A174-6B83D8C7A47F}");
-                            }
-                            else if (shopTag.Shop_WELLNESS_GymPool.StartsWith("Y"))
-                            {
-                                tags.Add("{FBD8F196-12F3-4A12-AD62-DB44CBE512AB}");
-                            }
-                            else if (shopTag.Shop_WELLNESS_SpaSalon.StartsWith("Y"))
-                            {
-                                tags.Add("{E95D9EB0-E7E3-4CA5-A41F-B1AF769A5F72}");
-                            }
-                            else if (shopTag.Shop_WELLNESS_SportsEquipment.StartsWith("Y"))
-                            {
-                                tags.Add("{F0DE64CF-AF62-4867-B6BA-09FF60AFBF06}");
-                            }
-                            else if (shopTag.Shop_WELLNESS_SkinPersonalCareMakeup.StartsWith("Y"))
-                            {
-                                tags.Add("{7F1B0BFA-C6FF-4BAD-89B9-25D56D36DA5E}");
-                            }
-                            else if (shopTag.Shop_HOME.StartsWith("Y"))
-                            {
-                                tags.Add("{45EE72B3-0021-4A62-AA7F-55E291FB3979}");
-                            }
-                            else if (shopTag.Shop_HOME_BedBath.StartsWith("Y"))
-                            {
-                                tags.Add("{99F41C3C-714B-4A12-8627-A3959AE90310}");
-                            }
-                            else if (shopTag.Shop_HOME_Decor.StartsWith("Y"))
-                            {
-                                tags.Add("{0D148D44-13B2-49E5-97C6-B748E2BB08D5}");
-                            }
-                            else if (shopTag.Shop_HOME_Florists.StartsWith("Y"))
-                            {
-                                tags.Add("{2BD4244A-C395-49FB-A414-0F403174458A}");
-                            }
-                            else if (shopTag.Shop_HOME_GiftsAccessories.StartsWith("Y"))
-                            {
-                                tags.Add("{EBC7CBA8-4A32-42F7-8E0C-4B9322F6E859}");
-                            }
-                            else if (shopTag.Shop_HOME_KitchenTableware.StartsWith("Y"))
-                            {
-                                tags.Add("{34DEB1F1-7863-44BE-A67A-8E1900EFB90F}");
-                            }
-                            else if (shopTag.Shop_FOODWINE.StartsWith("Y"))
-                            {
-                                tags.Add("{3FBE00DD-2724-453D-8208-D0E3425672F1}");
-                            }
-                            else if (shopTag.Shop_FOODWINE_ChocolatiersPatisseriesCafes.StartsWith("Y"))
-                            {
-                                tags.Add("{EBC788C5-2B1A-4853-A671-BCDDF5C2716B}");
-                            }
-                            else if (shopTag.Shop_FOODWINE_GourmetMarket.StartsWith("Y"))
-                            {
-                                tags.Add("{B5EE2159-7D90-447E-AED3-20FDDBE05589}");
-                            }
-                            else if (shopTag.Shop_FOODWINE_Tobacconists.StartsWith("Y"))
-                            {
-                                tags.Add("{B9A9726C-B191-4F45-B394-15511A052704}");
-                            }
-                            else if (shopTag.Shop_FOODWINE_WinesSpirits.StartsWith("Y"))
-                            {
-                                tags.Add("{30563DB6-3409-4BF6-AFC9-1050A7240A30}");
-                            }
-                            else if (shopTag.Shop_Gadgets.StartsWith("Y"))
-                            {
-                                tags.Add("{4BAF85E9-53CA-435A-89FF-5C51E7F9750C}");
-                            }
-                            else if (shopTag.Shop_Gadgets_Accessories.StartsWith("Y"))
-                            {
-                                tags.Add("{D509AB0E-0999-43AF-808B-6AEB1FE814E7}");
-                            }
-                            else if (shopTag.Shop_Gadgets_AudioVisual.StartsWith("Y"))
-                            {
-                                tags.Add("{02EB02B5-7016-403C-8407-53E7445DB9BD}");
-                            }
-                            else if (shopTag.Shop_Gadgets_Photography.StartsWith("Y"))
-                            {
-                                tags.Add("{32DD0452-44B5-429E-BC2D-D230597366C0}");
-                            }
-                            else if (shopTag.Shop_BooksPhotos.StartsWith("Y"))
-                            {
-                                tags.Add("{362A498E-7EAB-47A3-9196-C6D5F3B4DAC3}");
-                            }
-                            else if (shopTag.Shop_BooksPhotos_BooksNewspapersMagazines.StartsWith("Y"))
-                            {
-                                tags.Add("{716DD4EF-A6E5-49CF-9C4B-8DD7EDFD441A}");
-                            }
-                            else if (shopTag.Shop_BooksPhotos_PhotosPrinting.StartsWith("Y"))
-                            {
-                                tags.Add("{9D8452D6-1B63-4674-9379-143BC8D09340}");
-                            }
-                            else if (shopTag.Shop_BooksPhotos_Stationary.StartsWith("Y"))
-                            {
-                                tags.Add("{43B3E7AE-04E4-4228-A4A0-17EC764526CF}");
-                            }
-                            else if (shopTag.Shop_ArtAntiques.StartsWith("Y"))
-                            {
-                                tags.Add("{FCDCFA36-AC20-495B-A6A3-B1FAEB5B4735}");
-                            }
-                            else if (shopTag.Shop_ArtAntiques_Art.StartsWith("Y"))
-                            {
-                                tags.Add("{AA3EA496-8DBA-4B9F-8052-4126BF95286E}");
-                            }
-                            else if (shopTag.Shop_ArtAntiques_Antiques.StartsWith("Y"))
-                            {
-                                tags.Add("{35F62E5A-E18A-4BBC-822B-72BBF10FAD99}");
-                            }
-                            else if (shopTag.Shop_JEWELLERYWATCHES.StartsWith("Y"))
-                            {
-                                tags.Add("{C70FEE58-7079-41B5-A53C-F7B7805CE669}");
-                            }
-                            else if (shopTag.Shop_EYEWEAR.StartsWith("Y"))
-                            {
-                                tags.Add("{26D53B44-8352-4FCC-992A-B01A3C7A2384}");
-                            }
-                            else if (shopTag.Shop_ClothingCare.StartsWith("Y"))
-                            {
-                                tags.Add("{E7DB6523-9921-4A16-A2BD-48A166E5B3F3}");
-                            }
-                            else if (shopTag.Shop_OTHER.StartsWith("Y"))
-                            {
-                                // Todo: Shop_OTHER
-                                tags.Add("{A8B038A4-45C9-4690-A418-2712B2650DEC}");
-                            }
-                            #endregion
-                        }
-                        else if (isDine)
-                        {
-                            #region dining tags
-                            var dineTag = dineTags.Single(t => t.Name == detail.NameEn);
-                            if (dineTag.Location_Atrium.StartsWith("Y"))
-                            {
-                                // TODO: Location_Atrium
-                                tags.Add("{C034122F-A68F-4E3C-827E-C1898533C08E}");
-                            }
-                            else if (dineTag.Location_Princes.StartsWith("Y"))
-                            {
-                                // TODO: Location_Princes
-                                tags.Add("{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}");
-                            }
-                            else if (dineTag.Location_Alexendra.StartsWith("Y"))
-                            {
-                                // TODO: Location_Alexendra
-                                tags.Add("{B597804A-C4D7-44FB-9FAC-490726EEB3D9}");
-                            }
-                            else if (dineTag.Location_Chater.StartsWith("Y"))
-                            {
-                                // TODO: Location_Chater
-                                tags.Add("{37C1F81A-7605-4539-808B-C4B487FDB8DE}");
-                            }
-                            else if (dineTag.Location_Other_EdinburghTower.StartsWith("Y"))
-                            {
-                                // TODO: Location_Other_EdinburghTower
-                                tags.Add("{132E7671-084F-4DFD-9173-FEFB6A67FBAA}");
-                            }
-                            else if (dineTag.Location_Other_JardineHouse.StartsWith("Y"))
-                            {
-                                // TODO: Location_Other_JardineHouse
-                                tags.Add("{1DA4C84C-5353-4961-9C01-4A480E81C865}");
-                            }
-                            else if (dineTag.Location_Other_MandarinOrientalHotel.StartsWith("Y"))
-                            {
-                                // TODO: Location_Other_MandarinOrientalHotel
-                                tags.Add("{6ADD337A-5273-4504-AD72-8C601D69C6F9}");
-                            }
-                            else if (dineTag.Location_Other_OneExchangeSquare.StartsWith("Y"))
-                            {
-                                // TODO: Location_Other_OneExchangeSquare
-                                tags.Add("{838D33D8-9AC8-4369-AB18-9470EADCD49B}");
-                            }
-                            else if (dineTag.Location_Other_TwoExchangeSquare.StartsWith("Y"))
-                            {
-                                // TODO: Location_Other_TwoExchangeSquare
-                                tags.Add("{B7798E58-05C8-4513-9C8C-F953674DA86D}");
-                            }
-                            else if (dineTag.Dining_MichelinStarRestaurants.StartsWith("Y"))
-                            {
-                                tags.Add("{BC0F4B93-552A-418E-B620-7B7F13506613}");
-                            }
-                            else if (dineTag.Dining_Chinese.StartsWith("Y"))
-                            {
-                                tags.Add("{50CB2BA4-EF38-46ED-908C-1CAD2F171849}");
-                            }
-                            else if (dineTag.Dining_Japanese.StartsWith("Y"))
-                            {
-                                tags.Add("{C7F06241-2951-4647-8610-4853F73C07DF}");
-                            }
-                            else if (dineTag.Dining_Asian.StartsWith("Y"))
-                            {
-                                tags.Add("{983E7317-DB51-4EFE-9081-671D78C971C2}");
-                            }
-                            else if (dineTag.Dining_French.StartsWith("Y"))
-                            {
-                                tags.Add("{23B609A4-BF3A-4CE8-A076-39FA72C6DEBD}");
-                            }
-                            else if (dineTag.Dining_Italian.StartsWith("Y"))
-                            {
-                                tags.Add("{D0DDCCBB-558D-491F-AA49-46E8217BC26B}");
-                            }
-                            else if (dineTag.Dining_British.StartsWith("Y"))
-                            {
-                                tags.Add("{0F14B930-2EC3-4D43-A588-AB95F82C81E5}");
-                            }
-                            else if (dineTag.Dining_Western.StartsWith("Y"))
-                            {
-                                tags.Add("{6B69973D-6FCC-45B2-9C75-ECCBC56F42FC}");
-                            }
-                            else if (dineTag.Dining_International.StartsWith("Y"))
-                            {
-                                tags.Add("{C0BFF7F2-6271-4B95-9914-19628F56860B}");
-                            }
-                            else if (dineTag.Dining_CasualDining.StartsWith("Y"))
-                            {
-                                tags.Add("{410058FD-4835-43BD-9FC0-430DAF3C8381}");
-                            }
-                            else if (dineTag.Dining_FineDining.StartsWith("Y"))
-                            {
-                                tags.Add("{BA9D8236-ECD5-4824-B120-46B95D7FB13C}");
-                            }
-                            else if (dineTag.Dining_Cafes.StartsWith("Y"))
-                            {
-                                tags.Add("{D84B1172-716F-4E5A-8CF0-7D22C9A221C1}");
-                            }
-                            else if (dineTag.Dining_AfternoonTea.StartsWith("Y"))
-                            {
-                                tags.Add("{CE078BA5-479D-42FE-BAB4-50A1459A29AA}");
-                            }
-                            else if (dineTag.Dining_CocktailBars.StartsWith("Y"))
-                            {
-                                tags.Add("{2ED5B361-4D7A-4A48-B63E-8FE23B71DB8E}");
-                            }
-                            #endregion
-                        }
-                        version.Fields["Tags"].Value = string.Join("|", tags);
+                                else if (shopTag.Shop_MEN.StartsWith("Y"))
+                                {
+                                    tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
+                                }
+                                else if (shopTag.Shop_MEN.StartsWith("Y"))
+                                {
+                                    tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
+                                }
+                                else if (shopTag.Shop_MEN.StartsWith("Y"))
+                                {
+                                    tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
+                                }
+                                else if (shopTag.Shop_MEN.StartsWith("Y"))
+                                {
+                                    tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
+                                }
+                                else if (shopTag.Shop_MEN.StartsWith("Y"))
+                                {
+                                    tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
+                                }
+                                else if (shopTag.Shop_MEN.StartsWith("Y"))
+                                {
+                                    tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
+                                }
+                                else if (shopTag.Shop_MEN.StartsWith("Y"))
+                                {
+                                    tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
+                                }
+                                else if (shopTag.Shop_MEN.StartsWith("Y"))
+                                {
+                                    tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
+                                }
+                                else if (shopTag.Shop_MEN.StartsWith("Y"))
+                                {
+                                    tags.Add("{385A8E74-CC78-4C89-A66D-1021D757C01C}");
+                                }
+                                else if (shopTag.Shop_MEN_Accessories.StartsWith("Y"))
+                                {
+                                    tags.Add("{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}");
+                                }
+                                else if (shopTag.Shop_MEN_ActiveWear.StartsWith("Y"))
+                                {
+                                    tags.Add("{39F78176-04AD-4110-8AC4-AA392CC79C2E}");
+                                }
+                                else if (shopTag.Shop_MEN_Bags.StartsWith("Y"))
+                                {
+                                    tags.Add("{8DEEBCDA-AC9C-4B0C-AF81-8E493D219713}");
+                                }
+                                else if (shopTag.Shop_MEN_Fashion.StartsWith("Y"))
+                                {
+                                    tags.Add("{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}");
+                                }
+                                else if (shopTag.Shop_MEN_MadeToMeasure.StartsWith("Y"))
+                                {
+                                    tags.Add("{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}");
+                                }
+                                else if (shopTag.Shop_MEN_Shoes.StartsWith("Y"))
+                                {
+                                    tags.Add("{37DE7516-5325-4534-A035-A908D3D256D9}");
+                                }
+                                else if (shopTag.Shop_MEN_VIPRoom.StartsWith("Y"))
+                                {
+                                    // TODO: Shop_MEN_VIPRoom
+                                    tags.Add("{56FED65F-5267-4350-B440-F22DC2B2218F}");
+                                }
+                                else if (shopTag.Shop_MEN_LANDMARKMEN.StartsWith("Y"))
+                                {
+                                    tags.Add("{111013C6-0BCD-4E1C-8CCA-7D7DDC405B0A}");
+                                }
+                                else if (shopTag.Shop_WOMEN.StartsWith("Y"))
+                                {
+                                    tags.Add("{584512EB-189E-4FEF-9280-3F893DD9A9E1}");
+                                }
+                                else if (shopTag.Shop_WOMEN_Accessories.StartsWith("Y"))
+                                {
+                                    tags.Add("{7895E95B-BA35-4C28-9325-0BB7443E6945}");
+                                }
+                                else if (shopTag.Shop_WOMEN_ActiveWear.StartsWith("Y"))
+                                {
+                                    // TODO: Shop_WOMEN_ActiveWear
+                                    tags.Add("{BF280597-458A-45C0-97FE-ED4614C75CAF}");
+                                }
+                                else if (shopTag.Shop_WOMEN_Bags.StartsWith("Y"))
+                                {
+                                    tags.Add("{1A1800EA-D40A-412C-970A-DBA534DC1F23}");
+                                }
+                                else if (shopTag.Shop_WOMEN_CocktailDressesGowns.StartsWith("Y"))
+                                {
+                                    tags.Add("{585407EB-2AAB-454C-BB2B-2D9868FA53BA}");
+                                }
+                                else if (shopTag.Shop_WOMEN_Fashion.StartsWith("Y"))
+                                {
+                                    tags.Add("{01E67855-9741-4C1C-9FCD-2432982120B6}");
+                                }
+                                else if (shopTag.Shop_WOMEN_Shoes.StartsWith("Y"))
+                                {
+                                    tags.Add("{89884B9A-3DE7-47AD-BC7F-F2500B956EFD}");
+                                }
+                                else if (shopTag.Shop_WOMEN_VIPRoom.StartsWith("Y"))
+                                {
+                                    // TODO: Shop_WOMEN_VIPRoom
+                                    tags.Add("{6CD9230F-42B3-476C-B074-F2C099B8C515}");
+                                }
+                                else if (shopTag.Shop_CHILDRENBABIES.StartsWith("Y"))
+                                {
+                                    tags.Add("{F1CC2EDE-A165-4FC4-B47A-8C0DF29BDE27}");
+                                }
+                                else if (shopTag.Shop_CHILDRENBABIES_Accessories.StartsWith("Y"))
+                                {
+                                    tags.Add("{73D42903-0C38-4D70-A14E-C773BDCFBCC6}");
+                                }
+                                else if (shopTag.Shop_CHILDRENBABIES_Clothing.StartsWith("Y"))
+                                {
+                                    tags.Add("{A869505D-8B56-42B6-9460-9928607C3BD3}");
+                                }
+                                else if (shopTag.Shop_CHILDRENBABIES_Shoes.StartsWith("Y"))
+                                {
+                                    tags.Add("{83DA7F21-4D35-481C-B865-2A089D47AD10}");
+                                }
+                                else if (shopTag.Shop_CHILDRENBABIES_Toys.StartsWith("Y"))
+                                {
+                                    tags.Add("{BB0E8159-D1DF-4198-9007-2E5DB5A725BE}");
+                                }
+                                else if (shopTag.Shop_WELLNESS.StartsWith("Y"))
+                                {
+                                    tags.Add("{101C4A58-6D7D-4905-AD44-F0F054282440}");
+                                }
+                                else if (shopTag.Shop_WELLNESS_Fragrance.StartsWith("Y"))
+                                {
+                                    tags.Add("{30E208D0-F316-47A5-A174-6B83D8C7A47F}");
+                                }
+                                else if (shopTag.Shop_WELLNESS_GymPool.StartsWith("Y"))
+                                {
+                                    tags.Add("{FBD8F196-12F3-4A12-AD62-DB44CBE512AB}");
+                                }
+                                else if (shopTag.Shop_WELLNESS_SpaSalon.StartsWith("Y"))
+                                {
+                                    tags.Add("{E95D9EB0-E7E3-4CA5-A41F-B1AF769A5F72}");
+                                }
+                                else if (shopTag.Shop_WELLNESS_SportsEquipment.StartsWith("Y"))
+                                {
+                                    tags.Add("{F0DE64CF-AF62-4867-B6BA-09FF60AFBF06}");
+                                }
+                                else if (shopTag.Shop_WELLNESS_SkinPersonalCareMakeup.StartsWith("Y"))
+                                {
+                                    tags.Add("{7F1B0BFA-C6FF-4BAD-89B9-25D56D36DA5E}");
+                                }
+                                else if (shopTag.Shop_HOME.StartsWith("Y"))
+                                {
+                                    tags.Add("{45EE72B3-0021-4A62-AA7F-55E291FB3979}");
+                                }
+                                else if (shopTag.Shop_HOME_BedBath.StartsWith("Y"))
+                                {
+                                    tags.Add("{99F41C3C-714B-4A12-8627-A3959AE90310}");
+                                }
+                                else if (shopTag.Shop_HOME_Decor.StartsWith("Y"))
+                                {
+                                    tags.Add("{0D148D44-13B2-49E5-97C6-B748E2BB08D5}");
+                                }
+                                else if (shopTag.Shop_HOME_Florists.StartsWith("Y"))
+                                {
+                                    tags.Add("{2BD4244A-C395-49FB-A414-0F403174458A}");
+                                }
+                                else if (shopTag.Shop_HOME_GiftsAccessories.StartsWith("Y"))
+                                {
+                                    tags.Add("{EBC7CBA8-4A32-42F7-8E0C-4B9322F6E859}");
+                                }
+                                else if (shopTag.Shop_HOME_KitchenTableware.StartsWith("Y"))
+                                {
+                                    tags.Add("{34DEB1F1-7863-44BE-A67A-8E1900EFB90F}");
+                                }
+                                else if (shopTag.Shop_FOODWINE.StartsWith("Y"))
+                                {
+                                    tags.Add("{3FBE00DD-2724-453D-8208-D0E3425672F1}");
+                                }
+                                else if (shopTag.Shop_FOODWINE_ChocolatiersPatisseriesCafes.StartsWith("Y"))
+                                {
+                                    tags.Add("{EBC788C5-2B1A-4853-A671-BCDDF5C2716B}");
+                                }
+                                else if (shopTag.Shop_FOODWINE_GourmetMarket.StartsWith("Y"))
+                                {
+                                    tags.Add("{B5EE2159-7D90-447E-AED3-20FDDBE05589}");
+                                }
+                                else if (shopTag.Shop_FOODWINE_Tobacconists.StartsWith("Y"))
+                                {
+                                    tags.Add("{B9A9726C-B191-4F45-B394-15511A052704}");
+                                }
+                                else if (shopTag.Shop_FOODWINE_WinesSpirits.StartsWith("Y"))
+                                {
+                                    tags.Add("{30563DB6-3409-4BF6-AFC9-1050A7240A30}");
+                                }
+                                else if (shopTag.Shop_Gadgets.StartsWith("Y"))
+                                {
+                                    tags.Add("{4BAF85E9-53CA-435A-89FF-5C51E7F9750C}");
+                                }
+                                else if (shopTag.Shop_Gadgets_Accessories.StartsWith("Y"))
+                                {
+                                    tags.Add("{D509AB0E-0999-43AF-808B-6AEB1FE814E7}");
+                                }
+                                else if (shopTag.Shop_Gadgets_AudioVisual.StartsWith("Y"))
+                                {
+                                    tags.Add("{02EB02B5-7016-403C-8407-53E7445DB9BD}");
+                                }
+                                else if (shopTag.Shop_Gadgets_Photography.StartsWith("Y"))
+                                {
+                                    tags.Add("{32DD0452-44B5-429E-BC2D-D230597366C0}");
+                                }
+                                else if (shopTag.Shop_BooksPhotos.StartsWith("Y"))
+                                {
+                                    tags.Add("{362A498E-7EAB-47A3-9196-C6D5F3B4DAC3}");
+                                }
+                                else if (shopTag.Shop_BooksPhotos_BooksNewspapersMagazines.StartsWith("Y"))
+                                {
+                                    tags.Add("{716DD4EF-A6E5-49CF-9C4B-8DD7EDFD441A}");
+                                }
+                                else if (shopTag.Shop_BooksPhotos_PhotosPrinting.StartsWith("Y"))
+                                {
+                                    tags.Add("{9D8452D6-1B63-4674-9379-143BC8D09340}");
+                                }
+                                else if (shopTag.Shop_BooksPhotos_Stationary.StartsWith("Y"))
+                                {
+                                    tags.Add("{43B3E7AE-04E4-4228-A4A0-17EC764526CF}");
+                                }
+                                else if (shopTag.Shop_ArtAntiques.StartsWith("Y"))
+                                {
+                                    tags.Add("{FCDCFA36-AC20-495B-A6A3-B1FAEB5B4735}");
+                                }
+                                else if (shopTag.Shop_ArtAntiques_Art.StartsWith("Y"))
+                                {
+                                    tags.Add("{AA3EA496-8DBA-4B9F-8052-4126BF95286E}");
+                                }
+                                else if (shopTag.Shop_ArtAntiques_Antiques.StartsWith("Y"))
+                                {
+                                    tags.Add("{35F62E5A-E18A-4BBC-822B-72BBF10FAD99}");
+                                }
+                                else if (shopTag.Shop_JEWELLERYWATCHES.StartsWith("Y"))
+                                {
+                                    tags.Add("{C70FEE58-7079-41B5-A53C-F7B7805CE669}");
+                                }
+                                else if (shopTag.Shop_EYEWEAR.StartsWith("Y"))
+                                {
+                                    tags.Add("{26D53B44-8352-4FCC-992A-B01A3C7A2384}");
+                                }
+                                else if (shopTag.Shop_ClothingCare.StartsWith("Y"))
+                                {
+                                    tags.Add("{E7DB6523-9921-4A16-A2BD-48A166E5B3F3}");
+                                }
+                                else if (shopTag.Shop_OTHER.StartsWith("Y"))
+                                {
+                                    // Todo: Shop_OTHER
+                                    tags.Add("{A8B038A4-45C9-4690-A418-2712B2650DEC}");
+                                }
 
-                        // Floor & Location
-                        var locs = shopXYs.Where(l => GenItemName(l.Name) == itemName)
-                            .Take(1);   // we can only handle one location for one shop
-                        foreach(var loc in locs)
-                        {
-                            version.Fields["Floor"].Value = GetFloorId(loc.Filename);
-                            version.Fields["Svg Id"].Value = loc.MapId;
-                            version.Fields["LocationX"].Value = loc.X;
-                            version.Fields["LocationY"].Value = loc.Y;
+                                #endregion
+                            }
+                            else if (isDine)
+                            {
+                                #region dining tags
+
+                                var dineTag = dineTags.Single(t => t.Name == detail.NameEn);
+                                if (dineTag.Location_Atrium.StartsWith("Y"))
+                                {
+                                    // TODO: Location_Atrium
+                                    tags.Add("{C034122F-A68F-4E3C-827E-C1898533C08E}");
+                                }
+                                else if (dineTag.Location_Princes.StartsWith("Y"))
+                                {
+                                    // TODO: Location_Princes
+                                    tags.Add("{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}");
+                                }
+                                else if (dineTag.Location_Alexendra.StartsWith("Y"))
+                                {
+                                    // TODO: Location_Alexendra
+                                    tags.Add("{B597804A-C4D7-44FB-9FAC-490726EEB3D9}");
+                                }
+                                else if (dineTag.Location_Chater.StartsWith("Y"))
+                                {
+                                    // TODO: Location_Chater
+                                    tags.Add("{37C1F81A-7605-4539-808B-C4B487FDB8DE}");
+                                }
+                                else if (dineTag.Location_Other_EdinburghTower.StartsWith("Y"))
+                                {
+                                    // TODO: Location_Other_EdinburghTower
+                                    tags.Add("{132E7671-084F-4DFD-9173-FEFB6A67FBAA}");
+                                }
+                                else if (dineTag.Location_Other_JardineHouse.StartsWith("Y"))
+                                {
+                                    // TODO: Location_Other_JardineHouse
+                                    tags.Add("{1DA4C84C-5353-4961-9C01-4A480E81C865}");
+                                }
+                                else if (dineTag.Location_Other_MandarinOrientalHotel.StartsWith("Y"))
+                                {
+                                    // TODO: Location_Other_MandarinOrientalHotel
+                                    tags.Add("{6ADD337A-5273-4504-AD72-8C601D69C6F9}");
+                                }
+                                else if (dineTag.Location_Other_OneExchangeSquare.StartsWith("Y"))
+                                {
+                                    // TODO: Location_Other_OneExchangeSquare
+                                    tags.Add("{838D33D8-9AC8-4369-AB18-9470EADCD49B}");
+                                }
+                                else if (dineTag.Location_Other_TwoExchangeSquare.StartsWith("Y"))
+                                {
+                                    // TODO: Location_Other_TwoExchangeSquare
+                                    tags.Add("{B7798E58-05C8-4513-9C8C-F953674DA86D}");
+                                }
+                                else if (dineTag.Dining_MichelinStarRestaurants.StartsWith("Y"))
+                                {
+                                    tags.Add("{BC0F4B93-552A-418E-B620-7B7F13506613}");
+                                }
+                                else if (dineTag.Dining_Chinese.StartsWith("Y"))
+                                {
+                                    tags.Add("{50CB2BA4-EF38-46ED-908C-1CAD2F171849}");
+                                }
+                                else if (dineTag.Dining_Japanese.StartsWith("Y"))
+                                {
+                                    tags.Add("{C7F06241-2951-4647-8610-4853F73C07DF}");
+                                }
+                                else if (dineTag.Dining_Asian.StartsWith("Y"))
+                                {
+                                    tags.Add("{983E7317-DB51-4EFE-9081-671D78C971C2}");
+                                }
+                                else if (dineTag.Dining_French.StartsWith("Y"))
+                                {
+                                    tags.Add("{23B609A4-BF3A-4CE8-A076-39FA72C6DEBD}");
+                                }
+                                else if (dineTag.Dining_Italian.StartsWith("Y"))
+                                {
+                                    tags.Add("{D0DDCCBB-558D-491F-AA49-46E8217BC26B}");
+                                }
+                                else if (dineTag.Dining_British.StartsWith("Y"))
+                                {
+                                    tags.Add("{0F14B930-2EC3-4D43-A588-AB95F82C81E5}");
+                                }
+                                else if (dineTag.Dining_Western.StartsWith("Y"))
+                                {
+                                    tags.Add("{6B69973D-6FCC-45B2-9C75-ECCBC56F42FC}");
+                                }
+                                else if (dineTag.Dining_International.StartsWith("Y"))
+                                {
+                                    tags.Add("{C0BFF7F2-6271-4B95-9914-19628F56860B}");
+                                }
+                                else if (dineTag.Dining_CasualDining.StartsWith("Y"))
+                                {
+                                    tags.Add("{410058FD-4835-43BD-9FC0-430DAF3C8381}");
+                                }
+                                else if (dineTag.Dining_FineDining.StartsWith("Y"))
+                                {
+                                    tags.Add("{BA9D8236-ECD5-4824-B120-46B95D7FB13C}");
+                                }
+                                else if (dineTag.Dining_Cafes.StartsWith("Y"))
+                                {
+                                    tags.Add("{D84B1172-716F-4E5A-8CF0-7D22C9A221C1}");
+                                }
+                                else if (dineTag.Dining_AfternoonTea.StartsWith("Y"))
+                                {
+                                    tags.Add("{CE078BA5-479D-42FE-BAB4-50A1459A29AA}");
+                                }
+                                else if (dineTag.Dining_CocktailBars.StartsWith("Y"))
+                                {
+                                    tags.Add("{2ED5B361-4D7A-4A48-B63E-8FE23B71DB8E}");
+                                }
+
+                                #endregion
+                            }
+                            version.Fields["Tags"].Value = string.Join("|", tags);
+
+                            // Floor & Location
+                            var locs = shopXYs.Where(l => GenItemName(l.Name) == itemName)
+                                .Take(1); // we can only handle one location for one shop
+                            foreach (var loc in locs)
+                            {
+                                version.Fields["Floor"].Value = GetFloorId(loc.Filename);
+                                version.Fields["Svg Id"].Value = loc.MapId;
+                                version.Fields["LocationX"].Value = loc.X;
+                                version.Fields["LocationY"].Value = loc.Y;
+                            }
                         }
+                        version.Editing.AcceptChanges();
                     }
                 }
-            }
 
-            foreach (var artxy in artXYs)
-            {
-                var title = artxy.Name.Substring(artxy.Name.LastIndexOf("-") + 1).Trim();
-                var artpiece = artFolder.Children.FirstOrDefault(i => i.Fields["Page Title"].Value == title);
-                if (artpiece == null)
-                    continue;
-                var version = _masterDb.GetItem(artpiece.ID, artpiece.Languages.First());
-                version.Fields["Floor and Building"].Value = GetFloorId(artxy.Filename);
-                version.Fields["LocationX"].Value = artxy.X;
-                version.Fields["LocationY"].Value = artxy.Y;
+                foreach (var artxy in artXYs)
+                {
+                    var title = artxy.Name.Substring(artxy.Name.LastIndexOf("-") + 1).Trim();
+                    var artpiece = artFolder.Children.FirstOrDefault(i => i.Fields["Page Title"].Value == title);
+                    if (artpiece == null)
+                        continue;
+                    var version = _masterDb.GetItem(artpiece.ID, artpiece.Languages.First());
+                    version.Fields["Floor and Building"].Value = GetFloorId(artxy.Filename);
+                    version.Fields["LocationX"].Value = artxy.X;
+                    version.Fields["LocationY"].Value = artxy.Y;
+                }
             }
         }
 
@@ -1034,7 +1062,7 @@ namespace Landmark.Internal_Handlers
                     break;
                 case ("3exchangesquare"):
                     // todo
-                    floor = "{8EAF2B69-A302-4833-8376-60E1E9010D6E}";
+                    floor = "{3779275D-C296-4BF7-9F73-4ED1F1B9DB7F}";
                     break;
                 case ("jardine-house-01-GF"):
                     // todo

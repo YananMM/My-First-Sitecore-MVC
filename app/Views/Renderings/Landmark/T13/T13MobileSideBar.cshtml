@@ -32,8 +32,11 @@
 
                 @foreach (Item building in buidings)
                 {
-                    string href=Sitecore.Links.LinkManager.GetItemUrl(allByBuildings)+"#"+building.DisplayName.ToLower().Replace(" ","");
-                    <li><a href="@href">@building.Fields["Building Title"].Value</a></li>
+                    if (allByBuildings != null)
+                    {
+                        string href = Sitecore.Links.LinkManager.GetItemUrl(allByBuildings) + "#" + building.DisplayName.ToLower().Replace(" ", "");
+                        <li><a href="@href">@building.Fields["Building Title"].Value</a></li>
+                    }
                 }
         <li><a href="#">ALSO CLOSE BY...</a></li>
         </ul>

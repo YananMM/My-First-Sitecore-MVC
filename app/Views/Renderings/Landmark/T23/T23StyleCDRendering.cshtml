@@ -17,10 +17,10 @@
 
     <div class="gd-content-details">
         <h3>@Html.Sitecore().Field("Article Headline")</h3>
-       @if (storyDate.ToString() != "Monday, January 01, 0001 12:00 AM")
-       {
-           <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
-       }
+        @if (storyDate.ToString() != "Monday, January 01, 0001 12:00 AM")
+        {
+            <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
+        }
         <h6>@Html.Sitecore().Field("Article Sub Headline")</h6>
     </div>
 </div>
@@ -60,9 +60,9 @@
                             <div class="gd-bigpicture">
                                 <div class="gd-content-auto-width">
                                     <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image", item)">
+                                    <div class="gd-nd-slider-text">@Html.Sitecore().Field("Cover Description")</div>
                                     @if (i == children.Count)
                                     {
-                                        <div class="gd-nd-slider-text">@Html.Sitecore().Field("Text Line")</div>
                                         <dl class="gd-content-details-tags">
                                             <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem):</dt>
                                             <dd>
@@ -78,9 +78,9 @@
                             <div class="gd-bigpicture">
                                 <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image", item)">
                             </div>
+                            <div class="gd-nd-slider-text">@Html.Sitecore().Field("Cover Description")</div>
                             if (i == children.Count)
                             {
-                                <div class="gd-nd-slider-text">@Html.Sitecore().Field("Text Line")</div>
                                 <dl class="gd-content-details-tags">
                                     <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem):</dt>
                                     <dd>
@@ -99,9 +99,9 @@
                             <div class="gd-bigpicture">
                                 <div class="gd-content-auto-width">
                                     <video class="gd-video" type="video/mp4" src="@Html.Sitecore().Field("Video File", item)" width="100%" controls poster="@Html.Sitecore().ImageFieldSrc("Video Image", item)"></video>
+                                    <div class="gd-nd-slider-text">@Html.Sitecore().Field("Video Description", item)</div>
                                     @if (i == children.Count)
                                     {
-                                        <div class="gd-nd-slider-text">@Html.Sitecore().Field("Text Line")</div>
                                         <dl class="gd-content-details-tags">
                                             <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem):</dt>
                                             <dd>
@@ -117,9 +117,9 @@
                             <div class="gd-bigpicture">
                                 <video class="gd-video" type="video/mp4" src="@Html.Sitecore().FileFieldUrl("Video File", item)" width="100%" controls poster="@Html.Sitecore().ImageFieldSrc("Video Image", item)"></video>
                             </div>
+                            <div class="gd-nd-slider-text">@Html.Sitecore().Field("Video Description")</div>
                             if (i == children.Count)
                             {
-                                <div class="gd-nd-slider-text">@Html.Sitecore().Field("Text Line")</div>
                                 <dl class="gd-content-details-tags">
                                     <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem):</dt>
                                     <dd>

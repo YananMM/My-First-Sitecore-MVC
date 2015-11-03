@@ -94,7 +94,7 @@ namespace Landmark.Helper
                                              where item.DisplayName == category.DisplayName
                                              select new TextValue
                                              {
-                                                 text = category["Tag Name"],
+                                                 text = category.DisplayName,
                                                  value = item.ID.ToString()
                                              }).ToList();
             foreach (var item in firstCategory)
@@ -103,7 +103,7 @@ namespace Landmark.Helper
                 List<TextValue> children =
                     subCategoriess.Select(p => new TextValue
                     {
-                        text = p["Page Title"],
+                        text = p.DisplayName,
                         value = p.ID.ToString()
                     }).ToList();
                 item.children = children;

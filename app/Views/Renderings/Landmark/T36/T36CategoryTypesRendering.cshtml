@@ -8,15 +8,15 @@
     MagezineHelper helper = new MagezineHelper();
     var magazineCategories = helper.GetAllMaganizeCategories();
     var magazineCategoryPage = Sitecore.Context.Database.GetItem(ItemGuids.MagazineCategoryPage);
+    var currentItem = Sitecore.Context.Item;
 }
 
 <div class="gd-pagetitle-menu hidden-xs">
-    <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage))" @if (Sitecore.Context.Item.ID.ToString() == ItemGuids.LandmarkMaganizePage)
-    { <text> class="active" </text>    }>@Html.Sitecore().Field("Glossary Value", SitecoreItems.MagezineItem) </a>
+    <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage))" @if (currentItem.ID.ToString() == ItemGuids.LandmarkMaganizePage) { <text> class="active" </text>      }>@Html.Sitecore().Field("Glossary Value", SitecoreItems.MagezineItem) </a>
     @foreach (var item in magazineCategories)
     {
         <span class="gd-pagetitle-menu-gap">|</span>
-        <a href="@Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage)?type=@item.ID&page=1" @if (Request["type"] == item.ID.ToString()) { <text> class="active" </text>    }>@item.Fields["Tag Name"].ToString().ToUpper()</a>
+        <a href="@Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage)?type=@item.ID&page=1" @if (Request["type"] == item.ID.ToString() || ((currentItem.Fields["Magazine Category"] != null) ? currentItem.Fields["Magazine Category"].ToString().Contains(item.ID.ToString()) : false)) { <text> class="active" </text>      }>@item.Fields["Tag Name"].ToString().ToUpper()</a>
     }
 </div>
 

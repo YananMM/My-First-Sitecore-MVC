@@ -1,5 +1,6 @@
 ﻿@model RenderingModel
 @using Landmark.Classes
+@using Landmark.Helper
 
 @{
     var footerList = SitecoreItems.FooterNavigationItem.Children.ToList();
@@ -7,6 +8,7 @@
 <ul>
     @foreach (var item in footerList)
     {
-        <li>@Html.Sitecore().Field("Link URL", item, new { text = item.Fields["Link Text"] })</li>
+        var target = LandmarkHelper.GetLinkTarget(item, "Link URL");
+        <li>@Html.Sitecore().Field("Link URL", item, new { text = item.Fields["Link Text"],target=target })</li>
     }
 </ul>
