@@ -9,52 +9,93 @@
     ArtTourHelper helper = new ArtTourHelper();
     var page = int.Parse(Request["page"] ?? "0");
     var artists = helper.GetAllArtists().Skip((page - 1) * 4).Take(4);
+
+    var singleArtist = Request["artist"];
 }
-<div class="art-gallery">
-    <div class="row" id="gd-art-gallery">
+@if (singleArtist != null)
+{
+    var pieces = helper.GetArtByArtist(singleArtist);
+    var oddPieces = pieces.Where((c, i) => i % 2 == 0);
+    var evenPieces = pieces.Where((c, i) => i % 2 != 0);
+    <div id="more-contents">
         <div class="col-sm-6">
-            @foreach (Item artist in artists)
+            @foreach (var piece in oddPieces)
             {
-                var pieces = helper.GetArtByArtist(artist.ID.ToString());
-                var goldLineClass = pieces.Count > 2 ? "gold-line" : "";
-
-                <div class="art-g-box @goldLineClass">
-                    <div class="art-g-box-header">
-                        <img data-src="@SitecoreFieldHelper.ImageFieldSrc("Artist Photo", artist)" width="100">
-                        <div class="art-g-box-header-text">
-                            <h4>@Html.Sitecore().Field("Artist Name", artist)<span>@Html.Sitecore().Field("Artist Birthday Label", artist) @Html.Sitecore().Field("Artist Birthday", artist).ToString().ToUpper()</span></h4>
-                            <a href="@LinkManager.GetItemUrl(artist)">@Html.Sitecore().Field("Biography Link Text")<span class="icomoon-chevron-small-right"></span></a>
+                <article>
+                    <a href="@LinkManager.GetItemUrl(piece)" class="gd-hover-img">
+                        <div class="gd-hover-img-area">
+                            <div class="gd-hover-img-mask"></div><img data-src="@SitecoreFieldHelper.ImageFieldSrc("Art Image", piece)" alt="artpiece picture">
                         </div>
-                    </div>
-
-                    <div class="gd-artlist">
-                        <div class="row">
-                            @foreach (var piece in pieces.Take(2))
-                            {
-                                <div class="col-sm-6">
-                                    <article>
-                                        <a href="@LinkManager.GetItemUrl(piece)" class="gd-hover-img">
-                                            <div class="gd-hover-img-area">
-                                                <div class="gd-hover-img-mask"></div><img data-src="@SitecoreFieldHelper.ImageFieldSrc("Art Image", piece)" alt="artpiece picture">
-                                            </div>
-                                            <h5>@piece.Fields["Art Title"].Value</h5>
-                                            <p>@piece.Fields["Art Size"].Value</p>
-                                        </a>
-                                    </article>
-                                </div>
-                            }
-                        </div>
-                        @if (pieces.Count > 2)
-                        {
-                            <a href="?artist=@artist.ID.ToString()" class="gd-artlist-more" data-toggletext="@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeLessGlossaryItem) -">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem) + </a>
-                        }
-                    </div>
-                </div>
+                        <h5>@piece.Fields["Art Title"].Value</h5>
+                        <p>@piece.Fields["Art Size"].Value</p>
+                    </a>
+                </article>
             }
         </div>
-        <div class="col-sm-6"></div>
+        <div class="col-sm-6">
+            @foreach (var piece in evenPieces)
+            {
+                <article>
+                    <a href="@LinkManager.GetItemUrl(piece)" class="gd-hover-img">
+                        <div class="gd-hover-img-area">
+                            <div class="gd-hover-img-mask"></div><img data-src="@SitecoreFieldHelper.ImageFieldSrc("Art Image", piece)" alt="artpiece picture">
+                        </div>
+                        <h5>@piece.Fields["Art Title"].Value</h5>
+                        <p>@piece.Fields["Art Size"].Value</p>
+                    </a>
+                </article>
+            }
+        </div>
     </div>
-    <div class="navigation gd-promo-more">
-        <a href="@LinkManager.GetItemUrl(Sitecore.Context.Item)?page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreGlossaryItem)</a>
+}
+else
+{
+    <div class="art-gallery">
+        <div class="row" id="gd-art-gallery">
+            <div class="col-sm-6">
+                @foreach (Item artist in artists)
+                {
+                    var pieces = helper.GetArtByArtist(artist.ID.ToString());
+                    var goldLineClass = pieces.Count > 2 ? "gold-line" : "";
+
+                    <div class="art-g-box @goldLineClass">
+                        <div class="art-g-box-header">
+                            <img data-src="@SitecoreFieldHelper.ImageFieldSrc("Artist Photo", artist)" width="100">
+                            <div class="art-g-box-header-text">
+                                <h4>@Html.Sitecore().Field("Artist Name", artist)<span>@Html.Sitecore().Field("Artist Birthday Label", artist) @Html.Sitecore().Field("Artist Birthday", artist).ToString().ToUpper()</span></h4>
+                                <a href="@LinkManager.GetItemUrl(artist)">@Html.Sitecore().Field("Biography Link Text")<span class="icomoon-chevron-small-right"></span></a>
+                            </div>
+                        </div>
+
+                        <div class="gd-artlist">
+                            <div class="row">
+                                @foreach (var piece in pieces.Take(2))
+                                {
+                                    <div class="col-sm-6">
+                                        <article>
+                                            <a href="@LinkManager.GetItemUrl(piece)" class="gd-hover-img">
+                                                <div class="gd-hover-img-area">
+                                                    <div class="gd-hover-img-mask"></div><img data-src="@SitecoreFieldHelper.ImageFieldSrc("Art Image", piece)" alt="artpiece picture">
+                                                </div>
+                                                <h5>@piece.Fields["Art Title"].Value</h5>
+                                                <p>@piece.Fields["Art Size"].Value</p>
+                                            </a>
+                                        </article>
+                                    </div>
+                                }
+                            </div>
+                            @if (pieces.Count > 2)
+                            {
+                                <a href="?artist=@artist.ID.ToString() #more-contents" class="gd-artlist-more" data-toggletext="@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeLessGlossaryItem) -">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem) + </a>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="col-sm-6"></div>
+        </div>
+        <div class="navigation gd-promo-more">
+            <a href="@LinkManager.GetItemUrl(Sitecore.Context.Item)?page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreGlossaryItem)</a>
+        </div>
     </div>
-</div>
+}
