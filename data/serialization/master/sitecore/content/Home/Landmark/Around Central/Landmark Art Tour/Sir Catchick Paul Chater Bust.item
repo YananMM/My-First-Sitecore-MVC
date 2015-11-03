@@ -36,7 +36,21 @@ name: Floor and Building
 key: floor and building
 content-length: 38
 
-{79EBEDCD-CED4-4C05-993C-D8B6F30BE2E0}
+{BA634CEC-AF14-4B7B-BDA1-B2A8511745C3}
+----field----
+field: {69F11CBB-E43D-494F-B6DE-01317737B10A}
+name: LocationX
+key: locationx
+content-length: 6
+
+0.3179
+----field----
+field: {8FEE9C73-6C39-4E4B-BDCA-2E9B3F232612}
+name: LocationY
+key: locationy
+content-length: 5
+
+0.311
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -47,7 +61,7 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: 4ed98973-d685-47e0-bf2b-8979cff64081
+revision: c3d64850-131f-44e9-83fb-4723fcc8506c
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -104,21 +118,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4ed98973-d685-47e0-bf2b-8979cff64081
+c3d64850-131f-44e9-83fb-4723fcc8506c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T051337:635820380178708158Z
+20151103T072923Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 18
 
-sitecore\admin
+extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
