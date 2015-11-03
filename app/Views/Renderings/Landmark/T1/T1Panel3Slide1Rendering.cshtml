@@ -12,7 +12,7 @@
             <div class="panel-main">
                 <div class="panel-text text-box-1">
                     <hgroup class="clearfix">
-                        <h3>@Html.Sitecore().Field("Article Headline",Model.Item)</h3>
+                        <h3><a href="@LinkManager.GetItemUrl(Model.Item)">@Html.Sitecore().Field("Article Headline", Model.Item)</a></h3>
                         <h4>@Html.Sitecore().Field("Article Sub Headline",Model.Item)</h4>
                     </hgroup>
                     <div class="panel-content">@Html.Sitecore().Field("Article Intro",Model.Item)</div>

@@ -31,7 +31,7 @@
         <p>@Html.Sitecore().Field("Contact Form Description")</p>
         <div class="row">
             <div class="col-sm-9">
-                <form class="gd-contact-form" name="gd-contact-form" action="@Url.Action("AddCustomerMessage", "Home")" method="POST" id="myForm">
+                <form class="gd-contact-form" name="gd-contact-form" action="@Url.Action("AddCustomerMessage", "Home")" method="POST" id="myForm" data-captcha-url="/Service/CheckCaptcha.ashx">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="form-group">
