@@ -1653,7 +1653,8 @@ $(document).ready(function() {
 
   $('.gd-longarticle').trunk8({
     lines: gdTextLines,
-    fill: '&hellip; <a id="read-more" href="#">' + gdTextOn + '</a>'
+    fill: '&hellip; <a id="read-more" href="#">' + gdTextOn + '</a>',
+    tooltip: false
   });
   
   var gdTextFunc = function() {
@@ -1858,7 +1859,7 @@ $(document).ready(function() {
         rules: 'required'
     }, {
         name: 'ValidateCode',
-        rules: 'required|decimal'
+        rules: 'required|callback_check_captcha'
     }], function(errors, event) {
         if (errors.length > 0) {
             // Show the errors
@@ -1870,6 +1871,21 @@ $(document).ready(function() {
             gdErrorMsg += '</ol>';
             $('.gd-contact-form').append(gdErrorMsg);
         }
+    });
+
+    gdValidator.registerCallback('check_captcha', function(value) {
+      var isMatch = false;
+      $.ajax({
+        async: false,
+        url: $('form[name=gd-contact-form]').data('captchaUrl'),
+        data: {captcha: value},
+        success: function(result){
+          isMatch = result;
+        },
+        dataType: 'json'
+      });
+
+      return isMatch;
     });
   }
   
