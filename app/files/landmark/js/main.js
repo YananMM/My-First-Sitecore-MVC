@@ -119,7 +119,6 @@ $(document).ready(function() {
   //if(isPhone() && $(window).height() < $(window).width()){
   //  $('.portrait_only').removeClass('hidden');
   //}
-
   /**********************************************************************************************************
    * Menu
    **********************************************************************************************************/
@@ -538,6 +537,7 @@ $(document).ready(function() {
       panelDuration = 1.5,
       footerDuration = 1,
       easing = Quad.easeInOut;
+
     if (isPhone() && $(window).height() < $(window).width()) {
         $('.portrait_only').removeClass('hidden');
     }

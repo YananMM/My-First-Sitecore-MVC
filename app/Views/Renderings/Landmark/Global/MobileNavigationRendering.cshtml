@@ -70,13 +70,8 @@
 
 <div class="mobile-share">
           @Html.Sitecore().Field("Glossary Value",SitecoreItems.ShareItem)
-    
-    @foreach (var item in mediaItems)
-    {
-        var css = item.Fields["Social Media Css"].Value;
-        var title =item.Fields["Social Media Title"].Value;
-        var target = LandmarkHelper.GetLinkTarget(item, "Social Media Link");
-        @Html.Sitecore().Field("Social Media Link", item, new {title=title, text = "<span class='" + css + "'></span>" ,target=target})
-    }
-    <a href="" class="icomoon-envelop"></a>
+            <a href="" class="icomoon-facebook"></a>
+            <a href="" class="icomoon-twitter"></a>
+            <a href="" class="icomoon-sina-weibo"></a>
+            <a href='mailto:@SitecoreItems.LandmarkConfigItem.Fields["Share Email To"].Value' class="icomoon-envelop"></a>
         </div>
