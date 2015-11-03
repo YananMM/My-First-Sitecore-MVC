@@ -116,10 +116,6 @@ $(document).ready(function() {
     window.location.reload(true);
   });
 
-  if(isPhone() && $(window).height() < $(window).width()){
-    $('.portrait_only').removeClass('hidden');
-  }
-
   /**********************************************************************************************************
    * Menu
    **********************************************************************************************************/
@@ -538,6 +534,10 @@ $(document).ready(function() {
       panelDuration = 1.5,
       footerDuration = 1,
       easing = Quad.easeInOut;
+
+    if(isPhone() && $(window).height() < $(window).width()){
+      $('.portrait_only').removeClass('hidden');
+    }
 
     // turn off default animation handling
     $(window).off('scroll.mainNavShrinkAnimation touchmove.mainNavShrinkAnimation');

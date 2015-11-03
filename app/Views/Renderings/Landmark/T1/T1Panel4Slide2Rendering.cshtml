@@ -8,21 +8,12 @@
     string src = LandmarkHelper.GetCallOutImage(Model.Item);
 }
 
-            <div class="panel-img-2" data-bg="@src"></div>
-            <div class="panel-main">
-                <div class="text-box-1 panel-text">
-                    <div class="text-box-area"></div>
-                    <hgroup class="clearfix">
-                        <h3>@Html.Sitecore().Field("Article Sub Headline", Model.Item)</h3>
-                        <h4>@Html.Sitecore().Field("Article Headline", Model.Item)</h4>
-                    </hgroup>
-                    <div class="panel-content">@Html.Sitecore().Field("Article Intro", Model.Item)</div>
-                    <a class="btn btn-default" href="@Sitecore.Links.LinkManager.GetItemUrl(Model.Item)">@Html.Sitecore().Field("Glossary Value",SitecoreItems.DiscoverMoreItem)</a>
-                </div>
-                @if (articleType != null && articleType.TargetItem != null && !string.IsNullOrEmpty(articleType.TargetItem.Fields["See More Article Text"].Value))
-    {
-        <a class="panel-link panel-text" href="@LinkManager.GetItemUrl(Model.Item.Parent)">@articleType.TargetItem.Fields["See More Article Text"].Value<span class="icomoon-chevron-small-right"></span></a>
-    }
+            <div class="panel-img-2" data-bg="@src">
+                <hgroup class="clearfix">
+                    <h4>EXQUISITE HOME WARE</h4>
+                    <h2><a href="#">CURATED COLLECTIONS</a></h2>
+                </hgroup>
             </div>
+            
             
         
