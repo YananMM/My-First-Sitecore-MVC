@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {0254F7EA-1EC9-4E58-AD40-CC3816329F05}
+id: {C96AF64C-A7B5-4B5A-B4D6-7437C0ACC40B}
 database: master
-path: /sitecore/content/Home/Landmark/OUR LOCATION
+path: /sitecore/content/Home/Landmark/Our Location
 parent: {497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}
-name: OUR LOCATION
+name: Our Location
 master: {00000000-0000-0000-0000-000000000000}
 template: {BC90CE99-D056-4446-939E-BEBA6D7F6D5A}
 templatekey: T33 Page
@@ -17,12 +17,26 @@ content-length: 58
 
 <image mediaid="{D61C0136-C7F6-4110-8D4A-C40B3B45BA60}" />
 ----field----
+field: {A35E721B-31C1-475D-87AA-16D578704FCB}
+name: Social Share Images
+key: social share images
+content-length: 38
+
+{83C85E65-6960-4A14-9098-05896B7D4239}
+----field----
 field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
 name: Is Shown In Navigation
 key: is shown in navigation
 content-length: 0
 
 
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 1
+
+1
 ----field----
 field: {E746F7B8-3A32-4130-9BD3-66F7C52A027C}
 name: Related Page
@@ -34,22 +48,21 @@ content-length: 0
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
-content-length: 4
+content-length: 3
 
-1000
+950
 ----version----
 language: en
 version: 1
-revision: 42ddb6db-9d5f-4132-be65-8ecf6f8a0508
+revision: 28777087-9a1c-47e0-b3b9-a76f045ab322
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
-content-length: 173
+content-length: 163
 
-<h3></h3>
-<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">4 Buildings 1 Name</p>
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal; text-align: left;">4 Buildings 1 Name</p>
 ----field----
 field: {7C1E3BE1-8424-4A87-BF99-116E943351D5}
 name: Cover Title
@@ -61,11 +74,10 @@ OUR LOCATION
 field: {8632183B-5266-472C-85E8-E305EE62366F}
 name: Cover Description
 key: cover description
-content-length: 259
+content-length: 397
 
-<span>
-<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">Located at the heart of the city, LANDMARK is easily accessible by a variety of transport options. </p>
-</span>
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal; text-align: left;">Located at the heart of the city, LANDMARK is easily accessible by a variety of transport options. </p>
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal; text-align: left;">&nbsp;</p>
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
@@ -86,7 +98,7 @@ name: Page Title
 key: page title
 content-length: 12
 
-OUR LOCATION
+Our Location
 ----field----
 field: {A226DDC8-EF57-486D-B926-CA77063BC5A4}
 name: Address Label
@@ -112,250 +124,30 @@ GET DIRECTIONS
 field: {2EDF00D2-44BE-46A6-9FA8-4BED0A80B528}
 name: Button Link
 key: button link
-content-length: 182
+content-length: 140
 
-<link id="{C4B0C207-D66A-4E2F-9469-6B8FF62A4CB1}" querystring="" text="" title="" class="" linktype="internal" url="/Home/Landmark/OUR LOCATION/Directions" target="Active Browser" />
+<link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="" id="{C4B0C207-D66A-4E2F-9469-6B8FF62A4CB1}" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150818T061920Z
+20151103T112600Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-42ddb6db-9d5f-4132-be65-8ecf6f8a0508
+28777087-9a1c-47e0-b3b9-a76f045ab322
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151023T100746Z
-----field----
-field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
-name: __Updated by
-key: __updated by
-content-length: 14
-
-sitecore\admin
-----version----
-language: zh-CN
-version: 1
-revision: 2186a7f1-852a-460d-8a73-9b1949cc04b6
-
-----field----
-field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
-name: Content Title
-key: content title
-content-length: 19
-
-4座地标建筑&nbsp; 1个矜贵名号
-----field----
-field: {7C1E3BE1-8424-4A87-BF99-116E943351D5}
-name: Cover Title
-key: cover title
-content-length: 12
-
-OUR LOCATION
-----field----
-field: {8632183B-5266-472C-85E8-E305EE62366F}
-name: Cover Description
-key: cover description
-content-length: 176
-
-<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">置地广场位处城中核心地带，交通方便，可搭乘多种交通工具抵达 。</p>
-----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
-content-length: 18
-
-中环购物中心位置及地图 | 置地广塲
-----field----
-field: {33041911-3D04-4655-B541-4822EA8E5F67}
-name: Meta Description
-key: meta description
-content-length: 45
-
-置地广塲位於中环，是香港心脏地带，同时保持著名时尚中心的信誉，带领著中环豪华购物中心地位。
-----field----
-field: {A226DDC8-EF57-486D-B926-CA77063BC5A4}
-name: Address Label
-key: address label
-content-length: 7
-
-ADDRESS
-----field----
-field: {0D6445AB-4A02-4A5D-8784-634D3D28D530}
-name: Address Text
-key: address text
-content-length: 55
-
-  15 Queen's Road Central, LANDMARK, Central, Hong Kong
-----field----
-field: {FED81EE2-0129-4F01-B629-B7F97045D302}
-name: Button Text
-key: button text
-content-length: 14
-
-GET DIRECTIONS
-----field----
-field: {2EDF00D2-44BE-46A6-9FA8-4BED0A80B528}
-name: Button Link
-key: button link
-content-length: 182
-
-<link id="{C4B0C207-D66A-4E2F-9469-6B8FF62A4CB1}" querystring="" text="" title="" class="" linktype="internal" url="/Home/Landmark/OUR LOCATION/Directions" target="Active Browser" />
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
-----field----
-field: {25BED78C-4957-4165-998A-CA1B52F67497}
-name: __Created
-key: __created
-content-length: 16
-
-20151019T103051Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
-----field----
-field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
-name: __Revision
-key: __revision
-content-length: 36
-
-2186a7f1-852a-460d-8a73-9b1949cc04b6
-----field----
-field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
-name: __Updated
-key: __updated
-content-length: 16
-
-20151023T152657Z
-----field----
-field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
-name: __Updated by
-key: __updated by
-content-length: 14
-
-sitecore\admin
-----version----
-language: zh-HK
-version: 1
-revision: fea64922-77d8-4abd-92da-00edbee32218
-
-----field----
-field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
-name: Content Title
-key: content title
-content-length: 164
-
-<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">4座地標建築&nbsp; 1個矜貴名字</p>
-----field----
-field: {7C1E3BE1-8424-4A87-BF99-116E943351D5}
-name: Cover Title
-key: cover title
-content-length: 12
-
-OUR LOCATION
-----field----
-field: {8632183B-5266-472C-85E8-E305EE62366F}
-name: Cover Description
-key: cover description
-content-length: 175
-
-<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">置地廣塲位處城中核心地帶，交通方便，可乘搭多種交通工具到達。</p>
-----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
-content-length: 18
-
-中環購物中心位置及地圖 | 置地廣塲
-----field----
-field: {33041911-3D04-4655-B541-4822EA8E5F67}
-name: Meta Description
-key: meta description
-content-length: 45
-
-置地廣塲位於中環，是香港心臟地帶，同時保持著名時尚中心的信譽，帶領著中環豪華購物中心地位。
-----field----
-field: {A226DDC8-EF57-486D-B926-CA77063BC5A4}
-name: Address Label
-key: address label
-content-length: 7
-
-ADDRESS
-----field----
-field: {0D6445AB-4A02-4A5D-8784-634D3D28D530}
-name: Address Text
-key: address text
-content-length: 55
-
-  15 Queen's Road Central, LANDMARK, Central, Hong Kong
-----field----
-field: {FED81EE2-0129-4F01-B629-B7F97045D302}
-name: Button Text
-key: button text
-content-length: 14
-
-GET DIRECTIONS
-----field----
-field: {2EDF00D2-44BE-46A6-9FA8-4BED0A80B528}
-name: Button Link
-key: button link
-content-length: 182
-
-<link id="{C4B0C207-D66A-4E2F-9469-6B8FF62A4CB1}" querystring="" text="" title="" class="" linktype="internal" url="/Home/Landmark/OUR LOCATION/Directions" target="Active Browser" />
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
-----field----
-field: {25BED78C-4957-4165-998A-CA1B52F67497}
-name: __Created
-key: __created
-content-length: 16
-
-20151019T103337Z
-----field----
-field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
-name: __Created by
-key: __created by
-content-length: 14
-
-sitecore\admin
-----field----
-field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
-name: __Revision
-key: __revision
-content-length: 36
-
-fea64922-77d8-4abd-92da-00edbee32218
-----field----
-field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
-name: __Updated
-key: __updated
-content-length: 16
-
-20151023T151203Z
+20151103T115327:635821484076433984Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

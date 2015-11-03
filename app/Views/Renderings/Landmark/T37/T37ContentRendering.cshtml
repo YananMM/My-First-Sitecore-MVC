@@ -24,24 +24,27 @@
         <div class="row">
             @if (stories.Count() != 0)
             {
-                <a href="@Sitecore.Links.LinkManager.GetItemUrl(stories.First())">
-                    <div class="col-sm-6">
-                        <img data-src="@LandmarkHelper.GetCallOutImage(stories.First())"/>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="gd-magazine-info-text">
+                <div class="col-sm-6">
+                    <a href="@Sitecore.Links.LinkManager.GetItemUrl(stories.First())">
+                        <img data-src="@LandmarkHelper.GetCallOutImage(stories.First())" />
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <div class="gd-magazine-info-text">
+                        <a href="@Sitecore.Links.LinkManager.GetItemUrl(stories.First())">
                             <h3>@Html.Sitecore().Field("Article Headline", stories.First())</h3>
-                            @{
+                        </a>
+                        @{
                 DateField storyDate = stories.First().Fields["Article Date"];
                 var date = LandmarkHelper.ToValidDateTime(storyDate);
-                            }
-                            <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
-                            <div class="gd-longarticle-fixedlines">
-                                <p>@Html.Sitecore().Field("Article Intro", stories.First())</p>
-                            </div>
+                        }
+                        <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
+                        <div class="gd-longarticle-fixedlines">
+                            <p>@Html.Sitecore().Field("Article Intro", stories.First())</p>
                         </div>
                     </div>
-                </a> }
+                </div>
+            }
         </div>
     </div>
     @if (stories.Count > 1)
@@ -66,13 +69,16 @@
                     <div class="col-sm-4">
                         <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
                             <div class="gd-promotion-box">
-                                <img data-src="@LandmarkHelper.GetCallOutImage(item)"/>
+                                <img data-src="@LandmarkHelper.GetCallOutImage(item)" />
                                 <h4>@Html.Sitecore().Field("Article Headline", item)</h4>
                                 @{
                     DateField itemDate = item.Fields["Article Date"];
                     var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
                                 }
-                                <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
+                                @if (!itemDate.ToString().Contains("January 01, 0001"))
+                                {
+                                    <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
+                                }
                                 <p>@Html.Sitecore().Field("Article Intro", item)</p>
                             </div>
                         </a>
@@ -88,13 +94,16 @@
                     <div class="col-sm-4">
                         <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
                             <div class="gd-promotion-box">
-                                <img data-src="@LandmarkHelper.GetCallOutImage(item)"/>
+                                <img data-src="@LandmarkHelper.GetCallOutImage(item)" />
                                 <h4>@Html.Sitecore().Field("Article Headline", item)</h4>
                                 @{
                     DateField itemDate = item.Fields["Article Date"];
                     var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
                                 }
-                                <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
+                                @if (!itemDate.ToString().Contains("January 01, 0001"))
+                                {
+                                    <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
+                                }
                                 <p>@Html.Sitecore().Field("Article Intro", item)</p>
                             </div>
                         </a>
@@ -103,6 +112,7 @@
             }
         </div>
     </div>
-    <div class="gd-promo-more"><a href="?type=@Request["type"]&page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem) +</a>
+    <div class="gd-promo-more">
+        <a href="?type=@Request["type"]&page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem) +</a>
     </div>
 </div>

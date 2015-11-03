@@ -326,21 +326,21 @@ namespace Landmark.Helper
         public static List<Item> GetRelatedPages()
         {
             List<Item> items = new List<Item>();
-            Item item = Sitecore.Context.Item;
+            Item currentItem = Sitecore.Context.Item;
             List<Item> relatedItems = new List<Item>();
-            if (item.ID.ToString() != ItemGuids.ThankYouPage)
+            if (currentItem.ID.ToString() != ItemGuids.ThankYouPage)
             {
                 var relatedItemFolder =
-                    item.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.RelatedItemFolder);
+                    currentItem.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.RelatedItemFolder);
                 if (relatedItemFolder != null)
                 {
                     relatedItems = GetItemsByRootAndTemplate(relatedItemFolder.ID.ToString(), ItemGuids.ArticleObject);
                 }
             }
-            var relatedPagesField = item.Fields["Related Page"];
+            var relatedPagesField = currentItem.Fields["Related Page"];
             if (relatedPagesField != null)
             {
-                var relatedPagesIds = relatedPagesField.ToString().Split('|').ToList();
+                var relatedPagesIds = !string.IsNullOrEmpty(relatedPagesField.ToString()) ? relatedPagesField.ToString().Split('|').ToList() : new List<string>();
                 if (relatedPagesIds.Count != 0)
                 {
                     items.AddRange(relatedPagesIds.Select(pageId => Sitecore.Context.Database.GetItem(pageId)));
