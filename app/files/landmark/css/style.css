@@ -11164,7 +11164,8 @@ h4 a:active {
   padding: 0;
 }
 .gd-carousel-info .carousel-inner .carousel-caption .carousel-caption-inner .gd-carousel-detail p {
-  color: #222222;
+  /*color: @gd-text-color;*/
+  color: #fff;
   font-size: 13px;
   height: 80px;
   line-height: 2;
@@ -11302,8 +11303,8 @@ h4 a:active {
 @media (min-width: 768px) {
   .gd-mainimage .carousel-inner .item > .carousel-caption {
     background-image: url(../images/black-80.png);
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    width: 33%;
   }
 }
 @media (min-width: 1000px) {
@@ -11312,7 +11313,7 @@ h4 a:active {
   }
 }
 .gd-mainimage .carousel-inner .item > .carousel-caption .gd-carousel-detail {
-  height: 460px;
+  height: 360px;
   padding: 35px 20px 30px;
 }
 .gd-mainimage .carousel-inner .item > .carousel-caption .gd-carousel-detail .gd-mainimage-brief p {
@@ -15319,6 +15320,16 @@ dl.gd-content-details-tags dd a:active {
   }
   .t23 .gd-relate .col-sm-4 .gd-relate-brand {
     padding-left: 20px;
+  }
+}
+@media (min-width: 1300px) {
+  .t23 .gd-mainimage .carousel-inner .item > .carousel-image {
+    height: 720px;
+  }
+}
+@media (min-width: 1600px) {
+  .t23 .gd-mainimage .carousel-inner .item > .carousel-image {
+    height: 960px;
   }
 }
 .t3 .gd-brief {
