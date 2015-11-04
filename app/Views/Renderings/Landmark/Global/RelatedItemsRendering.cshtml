@@ -8,13 +8,13 @@
 @{
     var relatedPages = LandmarkHelper.GetRelatedPages();
 }
-@if (relatedPages != null && relatedPages.Count != 0)
+@if (relatedPages.Count != 0)
 {
         <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         @{
     int i = 1;
-    foreach (Item item in relatedPages)
+    foreach (var item in relatedPages)
     {
         if (item.TemplateID.ToString() == ItemGuids.ArticleObject)
         {

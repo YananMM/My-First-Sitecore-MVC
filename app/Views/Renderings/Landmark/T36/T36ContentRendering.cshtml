@@ -43,7 +43,7 @@
                 {
                     <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{ if (i == 0) { <text>
                         class="active"
-                        </text>             } }></li>
+                        </text>                  } }></li>
                 }
             </ol>
         }
@@ -55,9 +55,9 @@
         {
             <div @{ if (j == 0) { <text>
                  class="item active"
-                 </text>                                 } else { <text>
+                 </text>                                      } else { <text>
                  class="item"
-                 </text>                                 } }>
+                 </text>                                      } }>
                 @{
             j++;
                 }
@@ -119,7 +119,7 @@
             <div class="slider variable-width gd-slick-slider">
                 @foreach (var it in item.Stories)
                 {
-                    <a class="gd-slick-item gd-hover-img" href="@Sitecore.Links.LinkManager.GetItemUrl(it)">
+                    <a class="gd-slick-item gd-hover-img" href="@LinkManager.GetItemUrl(it)">
                         <div class="gd-hover-img-area">
                             <div class="gd-hover-img-mask"></div>
                             <img src="@LandmarkHelper.GetCallOutImage(it)" />
