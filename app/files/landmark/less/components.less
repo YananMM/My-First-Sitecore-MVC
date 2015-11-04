@@ -633,7 +633,8 @@ h2,h3,h4{
                 padding: 0;
               }
               p {
-                color: @gd-text-color;
+                /*color: @gd-text-color;*/
+                color: #fff;
                 font-size: 13px;
                 height: 80px;
                 line-height: 2;
@@ -771,16 +772,16 @@ h2,h3,h4{
               width: 100%;
             }
             @media (min-width: @screen-sm-min) {
-          background-image: url(../images/black-80.png);
-            background-color: rgba(0,0,0,0.7);
-              width: 50%;
+            background-image: url(../images/black-80.png);
+            background: rgba(0,0,0,0.7);
+              width: 33%;
             }
             @media (min-width: @screen-md-min) {
               width: 33%;
             }
             z-index: 10;
             .gd-carousel-detail {
-              height: 460px;
+              height: 360px;
               padding: 35px 20px 30px;
               .gd-mainimage-brief {
                 p {
