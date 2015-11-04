@@ -75,7 +75,7 @@
                     DateField itemDate = item.Fields["Article Date"];
                     var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
                                 }
-                                @if (!itemDate.ToString().Contains("January 01, 0001"))
+                                @if (!itemDate.ToString().Contains("0001"))
                                 {
                                     <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
                                 }
@@ -100,7 +100,7 @@
                     DateField itemDate = item.Fields["Article Date"];
                     var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
                                 }
-                                @if (!itemDate.ToString().Contains("January 01, 0001"))
+                                @if (!itemDate.ToString().Contains("0001"))
                                 {
                                     <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
                                 }
