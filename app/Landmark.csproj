@@ -150,7 +150,6 @@
     <Compile Include="Classes\ComputedFields\TagComputedField.cs" />
     <Compile Include="Classes\ConstantString.cs" />
     <Compile Include="Classes\Customtation\PreventCreate.cs" />
-    <Compile Include="Classes\EventHandlers\UserEvent.cs" />
     <Compile Include="Classes\InstagramSocial.cs" />
     <Compile Include="Classes\ItemGuids.cs" />
     <Compile Include="Classes\Crawlers\LanguageFallbackCrawler.cs" />
@@ -178,6 +177,9 @@
     </Compile>
     <Compile Include="Internal Handlers\ImportShopDetails.ashx.cs">
       <DependentUpon>ImportShopDetails.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Internal Handlers\Rendering.ashx.cs">
+      <DependentUpon>Rendering.ashx</DependentUpon>
     </Compile>
     <Compile Include="Models\ContactUsFormModel.cs" />
     <Compile Include="Models\EmailSignup.cs">
@@ -368,6 +370,7 @@
     <Content Include="App_Config\Landmark\RewriteMaps.config" />
     <Content Include="App_Config\Landmark\RewriteRules.config">
       <SubType>Designer</SubType>
+      <TransformOnBuild>true</TransformOnBuild>
     </Content>
     <Content Include="files\landmark\js\html5shiv-printshiv.min.js" />
     <Content Include="files\landmark\js\lib\bootstrap-select.js" />
@@ -655,6 +658,7 @@
     </Content>
     <Content Include="Internal Handlers\CopyContent.ashx" />
     <Content Include="Internal Handlers\ImportShopDetails.ashx" />
+    <Content Include="Internal Handlers\Rendering.ashx" />
     <None Include="Properties\PublishProfiles\DEV.pubxml" />
     <None Include="Properties\PublishProfiles\landmark.pubxml" />
     <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />

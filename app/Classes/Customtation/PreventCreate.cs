@@ -13,6 +13,8 @@ namespace Landmark.Classes.Customtation
     {
         public void OnItemCreating(object sender, EventArgs args)
         {
+            if (Sitecore.Context.Job.Name=="Publish to 'web'")
+                return;
             using (new SecurityDisabler())
             {
                 if (args == null)
@@ -23,16 +25,16 @@ namespace Landmark.Classes.Customtation
                     Item parent = creatingArg.Parent;
                     string name = creatingArg.ItemName;
                     if (parent != null && !string.IsNullOrEmpty(name))
-                        foreach (Item currentItem in parent.GetChildren())
+                    foreach (Item currentItem in parent.GetChildren())
+                    {
+                        if ((name.ToLower() == currentItem.DisplayName.ToLower()))
                         {
-                            if ((name.ToLower() == currentItem.DisplayName.ToLower()))
-                            {
-                                ((SitecoreEventArgs)args).Result.Cancel = true;
-                                Sitecore.Context.ClientPage.ClientResponse.Alert
-                                  ("Name " + currentItem.Name + " is already in use.Please use another name for the page.");
-                                return;
-                            }
+                            ((SitecoreEventArgs)args).Result.Cancel = true;
+                            Sitecore.Context.ClientPage.ClientResponse.Alert
+                                ("Name " + currentItem.Name + " is already in use.Please use another name for the page.");
+                            return;
                         }
+                    }
 
                 }
             }

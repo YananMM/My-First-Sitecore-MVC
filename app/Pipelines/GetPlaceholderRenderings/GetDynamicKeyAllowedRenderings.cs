@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -8,6 +9,11 @@ using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using Sitecore.Pipelines.GetPlaceholderRenderings;
 using Sitecore;
+using Sitecore.Configuration;
+using Sitecore.Globalization;
+using Sitecore.Layouts;
+using Sitecore.Presentation;
+using Sitecore.SecurityModel;
 
 namespace Landmark.Pipelines.GetPlaceholderRenderings
 {
@@ -63,6 +69,25 @@ namespace Landmark.Pipelines.GetPlaceholderRenderings
                     args.PlaceholderRenderings = new List<Item>();
                 }
                 args.PlaceholderRenderings.AddRange(collection);
+            }
+            var languages = Sitecore.Context.Database.GetLanguages();
+
+            Language enLanguage = Sitecore.Globalization.Language.Parse("en");
+            Item enHomeItem = Factory.GetDatabase("master").GetItem("{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}", enLanguage);
+            foreach (var lan in languages)
+            {
+
+                if (lan.Name != enLanguage.Name)
+                {
+                    Item lanItem = Factory.GetDatabase("master").GetItem("{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}", lan);
+                    using (new SecurityDisabler())
+                    {
+                        using (new EditContext(lanItem))
+                        {
+                            lanItem.Fields["__Final Renderings"].Value = enHomeItem.Fields["__Final Renderings"].Value;
+                        }
+                    }
+                }
             }
         }
 
