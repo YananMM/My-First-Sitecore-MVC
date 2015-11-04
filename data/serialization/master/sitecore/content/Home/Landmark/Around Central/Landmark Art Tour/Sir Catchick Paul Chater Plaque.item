@@ -17,6 +17,27 @@ content-length: 58
 
 <image mediaid="{80330C0C-D7BE-4011-8FCD-219EC0439D64}" />
 ----field----
+field: {22B6E709-1F38-4AF9-8D6C-7E3443E4F3ED}
+name: Floor and Building
+key: floor and building
+content-length: 38
+
+{BA634CEC-AF14-4B7B-BDA1-B2A8511745C3}
+----field----
+field: {69F11CBB-E43D-494F-B6DE-01317737B10A}
+name: LocationX
+key: locationx
+content-length: 6
+
+0.5286
+----field----
+field: {8FEE9C73-6C39-4E4B-BDCA-2E9B3F232612}
+name: LocationY
+key: locationy
+content-length: 5
+
+0.863
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -26,7 +47,7 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: c52d36a8-6779-414b-a934-846fcc0bb1b2
+revision: 1796f390-00b2-4841-b307-29f2bcc11c4d
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -74,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c52d36a8-6779-414b-a934-846fcc0bb1b2
+1796f390-00b2-4841-b307-29f2bcc11c4d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T051337:635820380179988231Z
+20151104T050521Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
