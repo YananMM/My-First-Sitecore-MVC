@@ -1128,7 +1128,7 @@ namespace Landmark.Internal_Handlers
                     break;
                 case ("3exchangesquare"):
                     // todo
-                    floor = "{3779275D-C296-4BF7-9F73-4ED1F1B9DB7F}";
+                    floor = "{D6E1D994-4EA4-4EDC-ABF7-4F409F1127BA}";
                     break;
                 case ("jardine-house-01-GF"):
                     // todo
