@@ -901,9 +901,12 @@
   }
   .gd-personal-data{
     .body-text;
-    margin: 60px 0 10px;
+    margin: 30px 0 10px;
     padding: 30px;
-     border: solid 1px #dedede;
+    border: solid 1px #dedede; 
+    @media (min-width:@screen-sm){
+    margin: 60px 0 10px;
+    }
     h4{
       margin: 0 0  20px;
     }
@@ -1162,6 +1165,13 @@
   }*/
 }
 .t27{
+  .gd-pagetitle .gd-pagetitle-heading a{
+          .hidden-xs;
+  @media (max-width: @screen-md-min) {
+            margin-bottom: 30px;
+            position: static;
+          }
+  }
   .gd-exclusive{
     margin: 30px 0 80px;
     @media (min-width:@screen-sm){
