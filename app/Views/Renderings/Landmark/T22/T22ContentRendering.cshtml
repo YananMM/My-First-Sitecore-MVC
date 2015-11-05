@@ -10,11 +10,10 @@
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
-
+            <h2>@Html.Sitecore().Field("Cover Title", current.Parent)</h2>
             <a href="@LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkArtTourItem))#gd-audio-guide" class="gd-link-audio">
                 <span class="icomoon-sound-alt"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.MobileAudioGuideItem) <span class="icomoon-chevron-small-right"></span>
             </a>
-            <h2>@Html.Sitecore().Field("Cover Title", current.Parent)</h2>
         </div>
 
         <div class="gd-pagetitle-menu hidden-xs">
@@ -40,7 +39,11 @@
                                                                     <div class="col-xs-9">
                                                                         <select class="form-control">
                                                                             <option value="@LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByLocationPage))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.LocationItem)</option>
-                                                                            <option value="@LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.ArtistItem)</option>
+                                                                            <option value="@LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))" @if (Html.Sitecore().CurrentItem.ID.ToString() == ItemGuids.ByArtistPage) { <text>
+                                                                                    selected="selected" </text>  }>
+                                                                                @Html.Sitecore().Field("Glossary Value", SitecoreItems.ArtistItem)
+                                                                                </option>
+
                                                                         </select>
                                                                     </div>
                                                                 </div>
