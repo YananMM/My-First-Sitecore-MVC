@@ -5,10 +5,9 @@
 @model RenderingModel
 @{
     ShoppingHelper shoppingHelper = new ShoppingHelper();
-    List<Item> buildings = new List<Item>();
+    List<Item> buildings = LandmarkHelper.GetBuildings();
     Item currentItem = Sitecore.Context.Item;
     Item parentItem = currentItem.Parent;
-    buildings = LandmarkHelper.GetBuildings();
     var brandModels = shoppingHelper.GetBrandModels();
     string category = "";
     if (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem))

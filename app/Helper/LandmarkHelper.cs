@@ -258,9 +258,12 @@ namespace Landmark.Helper
 
         public static List<Item> GetBuildings()
         {
+            return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.Where(building=>((CheckboxField)building.Fields["Is Landmark"]).Checked).OrderBy(p => p.DisplayName).ToList();
+        }
+        public static List<Item> GetAllBuildings()
+        {
             return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.OrderBy(p => p.DisplayName).ToList();
         }
-
 
         /// <summary>
         /// Gets all articles.

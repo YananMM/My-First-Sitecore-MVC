@@ -15,7 +15,7 @@
  <![endif]-->
 @{
     ArtTourHelper helper = new ArtTourHelper();
-    var buildings = LandmarkHelper.GetBuildings();
+    var buildings = LandmarkHelper.GetAllBuildings();
     var building = helper.GetCurrentBuilding(Request["building"]);
     var page = Request["page"] ?? "1";
     List<Item> artpieces = new List<Item>();

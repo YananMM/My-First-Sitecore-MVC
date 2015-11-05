@@ -30,10 +30,7 @@
                         <li>
                             <a href="#">@Html.Sitecore().Field("Glossary Value", SitecoreItems.ByBrandsGuidItem)<span class="sprite-icon-down pull-right"></span></a>
                             <ul class="sub-sub-menu">
-                                @foreach (Item itemshop in LandmarkHelper.GetItemsByRootAndTemplate(SitecoreItems.LandmarkHomeItem.ID.ToString(), ItemGuids.T14ShopDetailsTemplate))
-                                {
-                                    <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(itemshop))">@itemshop["Page Title"].ToUpper()</a></li>
-                                }
+                                @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.ByBrandsRenderingViewGuid)
                             </ul>
                         </li>
                         <li>
