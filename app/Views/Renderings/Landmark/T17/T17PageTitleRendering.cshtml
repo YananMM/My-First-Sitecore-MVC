@@ -18,7 +18,7 @@
         int i = 1;
         foreach (var item in parentItem.Children.ToList())
         {
-            <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)" @if (i == 1) { <text>
+            <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))" @if (i == 1) { <text>
                class="active"
                </text>       }>@Html.Sitecore().Field("Page Title", item)</a>
             if (i != parentItem.Children.Count)
@@ -34,7 +34,7 @@
     <select class="form-control">
         @foreach (var item in parentItem.Children.ToList())
         {
-            <option value="@Sitecore.Links.LinkManager.GetItemUrl(item)">@Html.Sitecore().Field("Page Title", item)</option>
+            <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">@Html.Sitecore().Field("Page Title", item)</option>
         }
     </select>
 </div>

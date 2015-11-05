@@ -13,7 +13,7 @@
             var referenceItem = ((ReferenceField) child.Fields["Reference Item"]).TargetItem;
             Item type = ((ReferenceField) referenceItem.Fields["Article Type"]).TargetItem;
             <div class="gd-promo-box">
-                <a href="@LinkManager.GetItemUrl(referenceItem)">
+                <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceItem))">
                     <img src='@Html.Sitecore().ImageFieldSrc("Article Thumb Image", referenceItem)'>
                     <h4>@type.Fields["Article Type"].ToString().ToUpper()</h4>
                     <h2>@Html.Sitecore().Field("Article Headline", referenceItem)</h2>

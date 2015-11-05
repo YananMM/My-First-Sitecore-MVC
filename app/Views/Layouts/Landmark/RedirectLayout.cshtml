@@ -1,4 +1,5 @@
-﻿@using Sitecore.Links
+﻿@using Landmark.Helper
+@using Sitecore.Links
 @model RenderingModel
 @{
     var currentItem = Sitecore.Context.Item;
@@ -12,6 +13,6 @@
 
 <script language="javascript" type="text/javascript">
     $(document).ready(function () {
-        self.location = "@host@Sitecore.Links.LinkManager.GetItemUrl(childPage)";
+        self.location = "@host@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(childPage))";
     })
 </script>

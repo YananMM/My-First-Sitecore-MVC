@@ -13,7 +13,7 @@
 {
     if (shoppingHelper.IfBrandsAlphabetValid(alphabetsStrings[i]))
     {
-        string href=Sitecore.Links.LinkManager.GetItemUrl(allbrandsItem)+"#"+alphabetsStrings[i].ToLower();
+        string href=LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(allbrandsItem))+"#"+alphabetsStrings[i].ToLower();
         <li><a href="@href">@alphabetsStrings[i].ToUpper()</a></li>
     }
     else

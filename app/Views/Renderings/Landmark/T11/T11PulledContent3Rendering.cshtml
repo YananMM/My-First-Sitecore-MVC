@@ -8,7 +8,7 @@
 }
 <div class="col-lg-4 col-md-4 col-sm-4 menbox ">
 <div class="menbox-4">
-    <a href="@LinkManager.GetItemUrl(Model.Item)" class="menbox-img">
+    <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Model.Item))" class="menbox-img">
         <div class="menbox-img-mask"></div>
         <img data-src="@Html.Sitecore().ImageFieldSrc("Article Portrait Callout Image", Model.Item)" alt=" image">
         <div class="menbox-text">

@@ -22,7 +22,7 @@
             <div class="brand-box brand-box-letter" id="@items.First().Group.ToLower()">@items.First().Group</div>
             foreach (var item in items)
             {
-                <a class="brand-box" href="@Sitecore.Links.LinkManager.GetItemUrl(item.BrandItem)?category=@Sitecore.Context.Item.Parent.ID.ToString()" title="@item.BrandItem["Brand Title"]">
+                <a class="brand-box" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.BrandItem))?category=@Sitecore.Context.Item.Parent.ID.ToString()" title="@item.BrandItem["Brand Title"]">
                     <img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item.BrandItem)" alt="@Html.Sitecore().Field("Brand Title", item.BrandItem)">
                 </a>
             }

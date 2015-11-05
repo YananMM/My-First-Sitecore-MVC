@@ -62,8 +62,8 @@
                              <div class="gd-search-box2">
                                  <div class="row">
                                      <div class="col-sm-9">
-                                         <a href="@LinkManager.GetItemUrl(result.GetItem())"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image",result.GetItem())"></a>
-                                         <h4><a href="@LinkManager.GetItemUrl(result.GetItem())">@Html.Sitecore().Field("Brand Title",result.GetItem())</a></h4>
+                                         <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image",result.GetItem())"></a>
+                                         <h4><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))">@Html.Sitecore().Field("Brand Title",result.GetItem())</a></h4>
                                          <p>
                                              @{
                                                     var floor = shoppingHelper.GetShopFloor(result.GetItem());
@@ -89,7 +89,7 @@
                          <li>
                              <div class="gd-search-box">
                                  <h5>@result.FilterType</h5>
-                                 <h4><a href="@LinkManager.GetItemUrl(result.GetItem())">@result.PageTitle</a></h4>
+                                 <h4><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))">@result.PageTitle</a></h4>
                                  <div>@result.GetItem().Statistics.Created.ToString("MMM dd,yyyy")</div>
                              </div>
                          </li>

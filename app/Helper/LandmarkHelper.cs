@@ -65,7 +65,7 @@ namespace Landmark.Helper
         {
             var options = Sitecore.Links.LinkManager.GetDefaultUrlOptions();
             options.Language = LanguageManager.GetLanguage(language);
-            var returnUrl = LinkManager.GetItemUrl(item, options);
+            var returnUrl = LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(item, options));
 
             return TranslateUrl(returnUrl);
         }
@@ -465,7 +465,7 @@ namespace Landmark.Helper
 
         public static string GetItemUrl(Item item)
         {
-            string url = LinkManager.GetItemUrl(item);
+            string url = LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(item));
             if (IsFalsePage(item))
             {
                 if ((new LayoutField(item).Value).IsNullOrEmpty())

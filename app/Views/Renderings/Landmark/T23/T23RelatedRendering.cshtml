@@ -24,7 +24,7 @@
                     foreach (var item in relatedStoris)
                     {
                         var image = LandmarkHelper.GetCallOutImage(item.Item);
-                        <a href="@Sitecore.Links.LinkManager.GetItemUrl(item.Item)">
+                        <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.Item))">
                             <div class="col-sm-6 clearfix">
                                 <img data-src="@image">
                                 @{
@@ -47,7 +47,7 @@
                 {
                     foreach (var item in relatedBrands)
                     {
-                        <h4><a href="@Sitecore.Links.LinkManager.GetItemUrl(item.Item)">@Html.Sitecore().Field("Brand Title", item.Item)</a></h4>
+                        <h4><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.Item))">@Html.Sitecore().Field("Brand Title", item.Item)</a></h4>
                     }
                 }
             </div>

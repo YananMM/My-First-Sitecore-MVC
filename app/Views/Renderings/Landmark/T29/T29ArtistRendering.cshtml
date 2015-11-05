@@ -9,7 +9,7 @@
 }
 
 
-<a href="@Sitecore.Links.LinkManager.GetItemUrl(artist)" class="gd-artplace-profile">
+<a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(artist))" class="gd-artplace-profile">
     <img src="@Html.Sitecore().ImageFieldSrc("Artist Photo", artist)" alt="artist picture">
     
     <div class="gd-artplace-profile-title">

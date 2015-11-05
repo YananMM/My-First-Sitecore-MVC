@@ -22,7 +22,7 @@
             @foreach (var piece in oddPieces)
             {
                 <article>
-                    <a href="@LinkManager.GetItemUrl(piece)" class="gd-hover-img">
+                    <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(piece))" class="gd-hover-img">
                         <div class="gd-hover-img-area">
                             <div class="gd-hover-img-mask"></div><img data-src="@SitecoreFieldHelper.ImageFieldSrc("Art Image", piece)" alt="artpiece picture">
                         </div>
@@ -36,7 +36,7 @@
             @foreach (var piece in evenPieces)
             {
                 <article>
-                    <a href="@LinkManager.GetItemUrl(piece)" class="gd-hover-img">
+                    <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(piece))" class="gd-hover-img">
                         <div class="gd-hover-img-area">
                             <div class="gd-hover-img-mask"></div><img data-src="@SitecoreFieldHelper.ImageFieldSrc("Art Image", piece)" alt="artpiece picture">
                         </div>
@@ -63,7 +63,7 @@ else
                             <img data-src="@SitecoreFieldHelper.ImageFieldSrc("Artist Photo", artist)" width="100">
                             <div class="art-g-box-header-text">
                                 <h4>@Html.Sitecore().Field("Artist Name", artist)<span>@Html.Sitecore().Field("Artist Birthday Label", artist) @Html.Sitecore().Field("Artist Birthday", artist).ToString().ToUpper()</span></h4>
-                                <a href="@LinkManager.GetItemUrl(artist)">@Html.Sitecore().Field("Biography Link Text")<span class="icomoon-chevron-small-right"></span></a>
+                                <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(artist))">@Html.Sitecore().Field("Biography Link Text")<span class="icomoon-chevron-small-right"></span></a>
                             </div>
                         </div>
 
@@ -73,7 +73,7 @@ else
                                 {
                                     <div class="col-sm-6">
                                         <article>
-                                            <a href="@LinkManager.GetItemUrl(piece)" class="gd-hover-img">
+                                            <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(piece))" class="gd-hover-img">
                                                 <div class="gd-hover-img-area">
                                                     <div class="gd-hover-img-mask"></div><img data-src="@SitecoreFieldHelper.ImageFieldSrc("Art Image", piece)" alt="artpiece picture">
                                                 </div>
@@ -95,7 +95,7 @@ else
             <div class="col-sm-6"></div>
         </div>
         <div class="navigation gd-promo-more">
-            <a href="@LinkManager.GetItemUrl(Sitecore.Context.Item)?page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreGlossaryItem)</a>
+            <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Item))?page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreGlossaryItem)</a>
         </div>
     </div>
 }

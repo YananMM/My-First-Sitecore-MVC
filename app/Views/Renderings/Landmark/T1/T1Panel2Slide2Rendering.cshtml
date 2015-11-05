@@ -11,7 +11,7 @@
                 <div class="panel-text text-box-3">
                     <hgroup class="clearfix">
                         <h4>@Html.Sitecore().Field("Article Sub Headline",Model.Item)</h4>
-                        <h2><a href="@LinkManager.GetItemUrl(Model.Item)">@Html.Sitecore().Field("Article Headline", Model.Item)</a></h2>
+                        <h2><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Model.Item))">@Html.Sitecore().Field("Article Headline", Model.Item)</a></h2>
                     </hgroup>
                 </div>
             </div>

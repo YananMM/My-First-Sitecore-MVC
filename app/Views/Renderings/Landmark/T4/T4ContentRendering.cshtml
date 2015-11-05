@@ -70,7 +70,7 @@
                         <div class="gd-carousel-detail">
                             <h3>@Html.Sitecore().Field("Article Headline", item)</h3>
                             <p>@Html.Sitecore().Field("Article Intro", item)</p>
-                            <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)" class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Button Text")</a>
+                            <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))" class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Button Text")</a>
                         </div>
                     </div>
                 </div>

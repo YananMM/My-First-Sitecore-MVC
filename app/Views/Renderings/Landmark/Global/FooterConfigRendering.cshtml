@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="col-sm-3 footer-legal">
-            <p><a href="@Sitecore.Links.LinkManager.GetItemUrl(SitecoreItems.LegalPrivacyItem)">@Html.Sitecore().Field("Page Title",SitecoreItems.LegalPrivacyItem)</a>
+            <p><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(SitecoreItems.LegalPrivacyItem))">@Html.Sitecore().Field("Page Title",SitecoreItems.LegalPrivacyItem)</a>
             </p>
         </div>
     </div>

@@ -23,7 +23,7 @@
                             <ul class="sub-sub-menu">
                                 @foreach (Item itemcategory in shoppingHelper.GetFirstCategoryItems())
                                 {
-                                    <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(itemcategory)">@itemcategory["Page Title"].ToUpper()</a></li>
+                                    <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(itemcategory))">@itemcategory["Page Title"].ToUpper()</a></li>
                                 }
                             </ul>
                         </li>
@@ -32,7 +32,7 @@
                             <ul class="sub-sub-menu">
                                 @foreach (Item itemshop in LandmarkHelper.GetItemsByRootAndTemplate(SitecoreItems.LandmarkHomeItem.ID.ToString(), ItemGuids.T14ShopDetailsTemplate))
                                 {
-                                    <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(itemshop)">@itemshop["Page Title"].ToUpper()</a></li>
+                                    <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(itemshop))">@itemshop["Page Title"].ToUpper()</a></li>
                                 }
                             </ul>
                         </li>
@@ -45,7 +45,7 @@
                             <ul class="sub-sub-menu">
                                 @foreach (Item building in buidings)
                                 {
-                                    string href = Sitecore.Links.LinkManager.GetItemUrl(allByBuildings) + "#" + building.Fields["Building Title"].Value.Replace(' ', '-');
+                                    string href = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(allByBuildings)) + "#" + building.Fields["Building Title"].Value.Replace(' ', '-');
                                     <li><a href="@href">@building.Fields["Building Title"].Value</a></li>
                                 }
                             </ul>
@@ -57,7 +57,7 @@
                     <ul class="sub-menu">
                         @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
                         {
-                            <li><a href="@Sitecore.Links.LinkManager.GetItemUrl(childItem)">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
+                            <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(childItem))">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
                         }
                     </ul>
                 }

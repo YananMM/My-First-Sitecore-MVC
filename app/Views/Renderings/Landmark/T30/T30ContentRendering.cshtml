@@ -38,12 +38,12 @@
 }
 <div class="gd-artist">
 
-    <a class="gd-artist-control-l" href="@Sitecore.Links.LinkManager.GetItemUrl(previousItem)">
+    <a class="gd-artist-control-l" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(previousItem))">
         <span class="icomoon-thin-arrow-L"></span>
         <span class="sr-only">Previous</span>
     </a>
 
-    <a class="gd-artist-control-r" href="@Sitecore.Links.LinkManager.GetItemUrl(nextItem)">
+    <a class="gd-artist-control-r" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(nextItem))">
         <span class="icomoon-thin-arrow-R"></span>
         <span class="sr-only">Next</span>
     </a>

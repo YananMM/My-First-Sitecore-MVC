@@ -70,7 +70,7 @@ namespace Landmark.Service
                                                        workdayhours = location.Fields["Openning Hours"].Value,
                                                        wherelocation = location.Fields["Area"].Value + "," + floor.Fields["Floor Title"].Value + "," + building.Fields["Building Title"].Value,
                                                        address = building.Fields["Building Address"].Value,
-                                                       href = LinkManager.GetItemUrl(location)
+                                                       href = LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(location))
                                                    }).ToList()
                                   }).ToList();
 

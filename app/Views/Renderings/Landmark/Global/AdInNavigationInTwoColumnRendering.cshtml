@@ -1,4 +1,5 @@
 ﻿@using Landmark.Classes
+@using Landmark.Helper
 @using Sitecore.Links
 @model RenderingModel
 @{
@@ -15,7 +16,7 @@
         <div class="mega-product-area2 pull-right">
             <h3>@Html.Sitecore().Field("Reference Title", referenceItem)</h3>
             <p>@Html.Sitecore().Field("Reference Content", referenceItem)</p>
-            <a href="@LinkManager.GetItemUrl(referenceItem)">@Html.Sitecore().Field("Glossary Value", SitecoreItems.LearnMoreItem) <span class="sprite-menu-r"></span></a>
+            <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceItem))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.LearnMoreItem) <span class="sprite-menu-r"></span></a>
         </div>
     </div>
 }

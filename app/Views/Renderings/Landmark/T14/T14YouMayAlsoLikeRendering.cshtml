@@ -24,7 +24,7 @@
         <div @if (i > 4) { <text>
              class="col-sm-2 col-xs-3 hidden-xs"
              </text>     } class="col-sm-2 col-xs-3">
-            <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item)" alt="@Html.Sitecore().Field("Brand Title", item)"></a>
+            <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item)" alt="@Html.Sitecore().Field("Brand Title", item)"></a>
         </div>
 i++;
     }

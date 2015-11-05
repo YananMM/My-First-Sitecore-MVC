@@ -13,18 +13,18 @@
 
         <div id="gd-map-switcher" class="gd-pagetitle-menu hidden-xs">
 
-            <a data-iframe="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionPage))" href="javascript:;" class="active">@Html.Sitecore().Field("Map Data Page 1")</a>
+            <a data-iframe="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionPage)))" href="javascript:;" class="active">@Html.Sitecore().Field("Map Data Page 1")</a>
             <span class="gd-pagetitle-menu-gap">|</span>
-            <a data-iframe="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35SurroundingPage))" href="javascript:;">@Html.Sitecore().Field("Map Data Page 2")</a>
+            <a data-iframe="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35SurroundingPage)))" href="javascript:;">@Html.Sitecore().Field("Map Data Page 2")</a>
         </div>
 
         <div id="gd-map-switcher-m" class="gd-controls-m visible-xs">
             <select name="" id="" class="form-control visible-xs">
-                <option value="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionPage))">@Html.Sitecore().Field("Map Data Page 1")</option>
-                <option value="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35SurroundingPage))">@Html.Sitecore().Field("Map Data Page 2")</option>
+                <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionPage)))">@Html.Sitecore().Field("Map Data Page 1")</option>
+                <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35SurroundingPage)))">@Html.Sitecore().Field("Map Data Page 2")</option>
             </select>
         </div>
 
     </div>
 </div>
-<iframe id="gd-ma   p-container" src="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionPage))" frameborder="0"></iframe>
+<iframe id="gd-ma   p-container" src="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionPage)))" frameborder="0"></iframe>

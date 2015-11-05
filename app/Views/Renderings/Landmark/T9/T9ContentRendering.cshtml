@@ -11,7 +11,7 @@
         <div class="gd-pagetitle-heading">
 
             <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
-            <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionPage))" class="gd-link-audio">
+            <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionPage)))" class="gd-link-audio">
                 @Html.Sitecore().Field("Link Text") <span class="icomoon-chevron-small-right"></span>
             </a>
         </div>

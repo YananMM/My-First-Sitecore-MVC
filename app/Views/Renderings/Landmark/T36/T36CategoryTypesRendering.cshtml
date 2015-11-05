@@ -12,20 +12,20 @@
 }
 
 <div class="gd-pagetitle-menu hidden-xs">
-    <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage))" @if (currentItem.ID.ToString() == ItemGuids.LandmarkMaganizePage) { <text> class="active" </text>       }>@Html.Sitecore().Field("Glossary Value", SitecoreItems.MagezineItem) </a>
+    <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage)))" @if (currentItem.ID.ToString() == ItemGuids.LandmarkMaganizePage) { <text> class="active" </text>       }>@Html.Sitecore().Field("Glossary Value", SitecoreItems.MagezineItem) </a>
     @foreach (var item in magazineCategories)
     {
         <span class="gd-pagetitle-menu-gap">|</span>
-        <a href="@Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage)?type=@item.ID&page=1" @if (Request["type"] == item.ID.ToString() || ((currentItem.Fields["Magazine Category"] != null) ? currentItem.Fields["Magazine Category"].ToString().Contains(item.ID.ToString()) : false)) { <text> class="active" </text>       }>@item.Fields["Tag Name"].ToString().ToUpper()</a>
+        <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage))?type=@item.ID&page=1" @if (Request["type"] == item.ID.ToString() || ((currentItem.Fields["Magazine Category"] != null) ? currentItem.Fields["Magazine Category"].ToString().Contains(item.ID.ToString()) : false)) { <text> class="active" </text>       }>@item.Fields["Tag Name"].ToString().ToUpper()</a>
     }
 </div>
 
 <div class="gd-controls-m visible-xs">
     <select class="form-control">
-        <option value="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage))">MAGAZINE</option>
+        <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage)))">MAGAZINE</option>
         @foreach (var item in magazineCategories)
         {
-            <option value="@Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage)?type=@item.ID&page=1" @if (Request["type"] == item.ID.ToString() || ((currentItem.Fields["Magazine Category"] != null) ? currentItem.Fields["Magazine Category"].ToString().Contains(item.ID.ToString()) : false)) { <text> selected="selected" </text>       }>@item.Fields["Tag Name"].ToString().ToUpper()</option>
+            <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage))?type=@item.ID&page=1" @if (Request["type"] == item.ID.ToString() || ((currentItem.Fields["Magazine Category"] != null) ? currentItem.Fields["Magazine Category"].ToString().Contains(item.ID.ToString()) : false)) { <text> selected="selected" </text>       }>@item.Fields["Tag Name"].ToString().ToUpper()</option>
         }
     </select>
 </div>

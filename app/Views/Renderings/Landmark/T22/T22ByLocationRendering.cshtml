@@ -61,7 +61,7 @@
                 foreach (Item piece in artpieces)
                 {
                     <div class="col-sm-3 text-center">
-                        <a href="@LinkManager.GetItemUrl(piece)" class="gd-hover-img">
+                        <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(piece))" class="gd-hover-img">
                             <div class="gd-hover-img-area">
                                 <div class="gd-hover-img-mask"></div>
                                 <img data-src="@SitecoreFieldHelper.ImageFieldSrc("Art Image", piece)" alt="artpiece picture">
