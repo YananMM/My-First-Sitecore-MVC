@@ -101,5 +101,6 @@ namespace Landmark.Classes
         public static readonly string AboutHotelFolder = "{ECC8D83D-3EDD-46DB-A4AB-0E22806BBE3A}";
         public static readonly string VideoObject = "{82C6EA0F-D0F2-4F40-BA8A-F5E39A10D5B5}";
         public static readonly string ContactUsFormSocailFolder = "{85E16816-67F6-4F3E-AEB6-6BF577B35486}";
+        public static readonly string ExlusivesCategoryFolder = "{9E22AA2A-730D-4DB6-9787-5A16E308A91A}";
     }
 }

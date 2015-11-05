@@ -7,6 +7,7 @@ using Landmark.Classes;
 using Landmark.Models;
 using Sitecore.Collections;
 using Sitecore.Configuration;
+using Sitecore.ContentSearch.ComputedFields;
 using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
@@ -93,30 +94,31 @@ namespace Landmark.Helper
 
         public List<Item> GetCategories()
         {
-            List<Item> categories = new List<Item>();
-            List<Item> articles = GetMonthlyExclusives();
-            foreach (var article in articles)
-            {
-                var tagField = ((MultilistField)article.Fields["Tags"]);
-                if (tagField != null)
-                {
-                    foreach (var id in tagField.TargetIDs)
-                    {
-                        bool has = false;
-                        foreach (var category in categories)
-                        {
-                            if (category.ID.ToString() == id.ToString())
-                            {
-                                has = true;
-                                break;
-                            }
-                        }
-                        if (!has)
-                            categories.Add(_webDb.GetItem(id));
+            //List<Item> categories = new List<Item>();
+            //List<Item> articles = GetMonthlyExclusives();
+            //foreach (var article in articles)
+            //{
+            //    var tagField = ((MultilistField)article.Fields["Tags"]);
+            //    if (tagField != null)
+            //    {
+            //        foreach (var id in tagField.TargetIDs)
+            //        {
+            //            bool has = false;
+            //            foreach (var category in categories)
+            //            {
+            //                if (category.ID.ToString() == id.ToString())
+            //                {
+            //                    has = true;
+            //                    break;
+            //                }
+            //            }
+            //            if (!has)
+            //                categories.Add(_webDb.GetItem(id));
                         
-                    }
-                }
-            }
+            //        }
+            //    }
+            //}
+            List<Item> categories = Sitecore.Context.Database.GetItem(ItemGuids.ExlusivesCategoryFolder).Children.ToList();
             return categories;
         }
 
