@@ -2,9 +2,9 @@
 version: 1
 id: {2F18A182-5DC3-49BF-B18A-2E8F7A3AD41A}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T15 Page/Page Info/Heading  leadin
+path: /sitecore/templates/User Defined/Landmark/Page/T15 Page/Page Info/Carousel Heading
 parent: {06E9B739-D1E7-4F75-8434-6D7435EB1414}
-name: Heading  leadin
+name: Carousel Heading
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -26,7 +26,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 3b91bf7f-34a3-44d4-8129-5c96d8934594
+revision: 2c8d8fdd-4e6c-4883-afee-bdbca6649e95
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3b91bf7f-34a3-44d4-8129-5c96d8934594
+2c8d8fdd-4e6c-4883-afee-bdbca6649e95
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151028T075221Z
+20151105T071946:635823047863701277Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
