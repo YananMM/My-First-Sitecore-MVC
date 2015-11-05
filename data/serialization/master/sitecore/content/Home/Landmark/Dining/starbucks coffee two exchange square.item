@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 0f5763e9-36c5-490b-a70f-e1f1050bde1d
+revision: b9d2ca8f-57ec-46ca-83b4-63e15e585594
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -64,6 +64,15 @@ content-length: 55
 
 Coffees, cakes and biscuits served in a cozy ambience. 
 ----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 63
+
+Mon-Fri 6:30am-8:30pm
+Sat 8am-7pm
+Sun & Public Holidays closed 
+----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
 key: contact
@@ -97,14 +106,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0f5763e9-36c5-490b-a70f-e1f1050bde1d
+b9d2ca8f-57ec-46ca-83b4-63e15e585594
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090836Z
+20151104T063956Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -115,7 +124,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: 4dc3d8f8-d5a5-45fc-a325-5704788214c5
+revision: 4003a72a-633a-498f-9c17-4eafc94f5b25
 
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
@@ -131,6 +140,15 @@ key: page content
 content-length: 61
 
 亲切笑容的星巴克咖啡吧服务员，每天为您亲手冲调最香醇的咖啡饮品，让你在舒适的星巴克店内或旅途之中，感受独一无二的咖啡体验。
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 48
+
+星期一至星期五︰早上6时30分至晚上8时30分
+星期六︰早上8时至晚上7时
+星期日及公众假期休息
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -172,14 +190,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4dc3d8f8-d5a5-45fc-a325-5704788214c5
+4003a72a-633a-498f-9c17-4eafc94f5b25
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090836Z
+20151104T063956Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -190,7 +208,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: c3eb1bcf-8d1c-466b-bb50-109bc8dd0dbf
+revision: eea91990-a645-462c-ba42-81ef255f8327
 
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
@@ -206,6 +224,15 @@ key: page content
 content-length: 62
 
 親切笑容的星巴克咖啡吧服務員，每天為您親手沖調最香醇的咖啡飲品，讓你在舒適的星巴克店內或旅途之中，感受獨一無二的咖啡體驗。 
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 49
+
+星期一至星期五︰早上6時30分至晚上8時30分
+星期六︰早上8時至晚上7時
+星期日及公眾假期休息 
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -240,14 +267,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c3eb1bcf-8d1c-466b-bb50-109bc8dd0dbf
+eea91990-a645-462c-ba42-81ef255f8327
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090840Z
+20151104T063957Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

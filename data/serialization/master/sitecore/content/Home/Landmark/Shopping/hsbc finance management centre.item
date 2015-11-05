@@ -19,7 +19,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 46fb7fad-9f37-4f8f-a9a5-debc6972dbc7
+revision: d9040b33-de26-4cdc-9eaf-f77f40d98ade
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -57,6 +57,16 @@ content-length: 17
 
 Banking Services 
 ----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 72
+
+Mon-Thu 9am-4:30pm
+Fri 9am-5pm
+Sat 9am-1pm
+Sun & Public Holidays Closed 
+----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
 key: contact
@@ -90,14 +100,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-46fb7fad-9f37-4f8f-a9a5-debc6972dbc7
+d9040b33-de26-4cdc-9eaf-f77f40d98ade
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090635Z
+20151104T063907Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,7 +118,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: b3a3d858-2e03-4a20-933f-e4020bb1e762
+revision: 3d9710c3-839d-4844-9584-c5d4fab406ff
 
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
@@ -124,6 +134,16 @@ key: page content
 content-length: 5
 
 银行服务 
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 54
+
+星期一至星期四 9am-4:30pm
+星期五 9am-5pm
+星期六 9am-1pm
+星期日及公众假期 休息
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -165,14 +185,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b3a3d858-2e03-4a20-933f-e4020bb1e762
+3d9710c3-839d-4844-9584-c5d4fab406ff
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090636Z
+20151104T063907Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -183,7 +203,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: 3026f77a-d71f-4ec1-826a-931f632e827c
+revision: 192ba156-6828-413f-8712-6b49ad13d61b
 
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
@@ -199,6 +219,16 @@ key: page content
 content-length: 5
 
 銀行服務 
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 55
+
+星期一至星期四 9am-4:30pm
+星期五 9am-5pm
+星期六 9am-1pm
+星期日及公眾假期 休息 
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -233,14 +263,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3026f77a-d71f-4ec1-826a-931f632e827c
+192ba156-6828-413f-8712-6b49ad13d61b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090636Z
+20151104T063907Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

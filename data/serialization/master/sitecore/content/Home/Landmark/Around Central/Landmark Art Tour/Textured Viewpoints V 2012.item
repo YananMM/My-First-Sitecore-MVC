@@ -23,10 +23,31 @@ key: art image
 content-length: 377
 
 <image mediapath="/Images/Landmark/Around Central/Landmark Art Tour/Mario Lobo/Textured Viewpoints V 2012/marialobo005_1920px" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Around Central/Landmark Art Tour/Mario Lobo/Textured Viewpoints V 2012/marialobo005_1920px" mediaid="{A47AD2AF-CBF3-41CB-AE24-BFE5F3CC399C}" />
+----field----
+field: {22B6E709-1F38-4AF9-8D6C-7E3443E4F3ED}
+name: Floor and Building
+key: floor and building
+content-length: 38
+
+{99A4A960-53BC-4C37-A070-7915F8DC1B69}
+----field----
+field: {69F11CBB-E43D-494F-B6DE-01317737B10A}
+name: LocationX
+key: locationx
+content-length: 6
+
+0.5443
+----field----
+field: {8FEE9C73-6C39-4E4B-BDCA-2E9B3F232612}
+name: LocationY
+key: locationy
+content-length: 4
+
+0.67
 ----version----
 language: en
 version: 1
-revision: 1612e75e-f265-499a-b032-5fe5b958b2ca
+revision: 811fccd4-a210-4d06-87ed-b33efd2cb994
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -69,21 +90,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1612e75e-f265-499a-b032-5fe5b958b2ca
+811fccd4-a210-4d06-87ed-b33efd2cb994
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T130551Z
+20151104T063457Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 18
 
-sitecore\admin
+extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1

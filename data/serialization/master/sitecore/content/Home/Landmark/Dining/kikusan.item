@@ -54,7 +54,7 @@ shop-B13-16
 ----version----
 language: en
 version: 1
-revision: a47fa559-2e2b-4717-8404-160264e24439
+revision: c8c5aabf-2552-46d4-aeb4-391f1e973d44
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -119,6 +119,13 @@ key: page content
 content-length: 662
 
 In the heart of Hong Kong’s bustling business hub there is a casual and friendly eatery called kikusan. Welcoming diners to its open kitchen where the talented chefs can be seen making fresh dim sum from scratch, the restaurant’s open wooden windows demonstrate its straightforward and warm character. kikusan presents a menu of Asian cuisines crafted with the meticulous spirit of the Japanese culinary tradition. The restaurant’s tempting offerings include a variety of small plates, dim sum, rice, noodles and sushi with 5-grain rice. To cater the busy urbanites with whom the restaurant is popular, hassle-free takeaways of maki and hot dishes are available.
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 21
+
+11:30am - 10pm daily 
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -160,14 +167,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a47fa559-2e2b-4717-8404-160264e24439
+c8c5aabf-2552-46d4-aeb4-391f1e973d44
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090648Z
+20151104T063915Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -178,7 +185,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: b1685316-3c1f-4c4d-b32b-9d588c2d048a
+revision: 1f4b0682-9f3b-4116-8d9e-4a3e8b4101fe
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -243,6 +250,13 @@ key: page content
 content-length: 190
 
 在香港最繁忙的商业枢纽，有一家弥漫着轻松友善氛围的餐厅 ── kikusan。开放式厨房让食客得以亲睹厨艺精湛的师傅亲手制作每件点心，敞开的木窗则将餐厅率真亲切的个性显露无遗。kikusan以日本传统厨艺一丝不苟的精神，精心炮制多款亚洲佳肴。令人垂涎的美食有各种小肴、点心、饭、面，以及由五谷米制成的寿司等。为方便争分夺秒的都市人，餐厅更特设外卖餐品柜台，供应各式卷物和热荤菜式。
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 16
+
+每日早上11时30分至晚上10时
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -291,14 +305,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b1685316-3c1f-4c4d-b32b-9d588c2d048a
+1f4b0682-9f3b-4116-8d9e-4a3e8b4101fe
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090648Z
+20151104T063915Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -309,7 +323,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: a7c7608b-d1ca-4bf5-a3de-49d3aaeba9c8
+revision: 9a0b9dfe-220d-4acc-b4df-96addaec4373
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -375,6 +389,13 @@ content-length: 188
 
 在香港最繁忙的商業樞紐，有一家瀰漫輕鬆友善氛圍的餐廳 ── kikusan。開放式廚房讓食客親睹廚藝了得的師傅如何即場親手製作每件點心，敞開的木窗則把餐廳率真親切的個性顯露無遺。kikusan以日本傳統廚藝一絲不苟的精神，精心炮製多款亞洲佳餚。令人垂涎的美食有各種小肴、點心、飯、麵，以及蘊含五穀米的壽司等。為方便爭分奪秒的都市人，餐廳更特設供應各式卷物和熱葷的外賣餐品櫃台。
 ----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 16
+
+每日早上11時30分至晚上10時
+----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
 key: contact
@@ -415,14 +436,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a7c7608b-d1ca-4bf5-a3de-49d3aaeba9c8
+9a0b9dfe-220d-4acc-b4df-96addaec4373
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090649Z
+20151104T063916Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

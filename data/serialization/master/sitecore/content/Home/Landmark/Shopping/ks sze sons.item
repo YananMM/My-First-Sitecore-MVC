@@ -54,7 +54,7 @@ shop-108
 ----version----
 language: en
 version: 1
-revision: cbc98a11-6c79-433e-8b38-dc52927e1013
+revision: 44896326-7caa-4166-af89-d45c08d1d83b
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -123,6 +123,13 @@ content-length: 672
 K. S. Sze & Sons has a long and distinguished history. In 1923, Mr. K. S. Sze opened his first shop in Shanghai and in 1949, he moved to Hong Kong where he used his extensive knowledge of jewellery to establish his business.  It was in 1963 that K. S. Sze & Sons was chosen as one of a few selected retailers to open a shop in the Mandarin Oriental Hotel.  Today, K. S. Sze & Sons continues to operate its boutique in the Mandarin Oriental Hotel with another store in LANDMARK PRINCE’S.  To further enhance customer service, the company has launched a jewellery showroom on the top floor of LANDMARK ALEXANDRA, providing a more exclusive environment for VIP customers. 
  
 
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 55
+
+Mon to Sat 10am-7pm Public Holidays 11am-6pm Sun Closed
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -164,14 +171,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cbc98a11-6c79-433e-8b38-dc52927e1013
+44896326-7caa-4166-af89-d45c08d1d83b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090644Z
+20151104T063914Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -182,7 +189,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: 4e92493d-1c12-42b4-919a-ac184c84db96
+revision: 5577bcc1-4715-423d-ba84-8389b81b4a92
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -247,6 +254,13 @@ key: page content
 content-length: 204
 
 金星珠宝有限公司拥有悠久而辉煌的历史。1923年，施刚巽先生在上海开设了他的第一家珠宝店；到了1949年，他凭藉累积多年的珍珠宝石知识，在香港展开了珠宝事业。1963年，该公司更通过了严格甄选，成为少数能进驻文华东方酒店的零售店铺之一。今天，金星珠宝不但继续留守文华东方酒店，还在太子大厦新增一家店铺。为了让顾客得到更佳服务，其又于历山大厦顶楼开设了珠宝陈列展览厅，令尊贵的VIP客户能在更佳环境中享受服务。
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 41
+
+星期一至星期六︰早上10时至晚上7时 公众假期︰早上11时至晚上6时 星期日休息 
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -295,14 +309,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4e92493d-1c12-42b4-919a-ac184c84db96
+5577bcc1-4715-423d-ba84-8389b81b4a92
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090644Z
+20151104T063914Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -313,7 +327,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: 22539f63-5e7e-423b-8679-6336c6cd3bd9
+revision: abff4cb5-b676-4d7c-aedd-ef124f1b2b72
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -379,6 +393,13 @@ content-length: 201
 
 金星珠寶有限公司擁有悠久而輝煌的歷史。1923年，施剛巽先生在上海開設了他的第一家珠寶店；到了1949年，他憑藉累積多年的珍珠寶石知識，在香港展開了珠寶事業。1963年，該公司更通過嚴格甄選，成為少數能進駐文華東方酒店的零售店舖。今天，金星珠寶不但繼續留守文華東方酒店，還在太子大廈新增了一家店舖。為了讓顧客得到更佳服務，其又於歷山大廈頂樓開設了珠寶陳列展覽廳，令尊貴的VIP客戶能在更佳環境享用服務。
 ----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 41
+
+星期一至星期六︰早上10時至晚上7時 公眾假期︰早上11時至晚上6時 星期日休息 
+----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
 key: contact
@@ -419,14 +440,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-22539f63-5e7e-423b-8679-6336c6cd3bd9
+abff4cb5-b676-4d7c-aedd-ef124f1b2b72
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090645Z
+20151104T063914Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

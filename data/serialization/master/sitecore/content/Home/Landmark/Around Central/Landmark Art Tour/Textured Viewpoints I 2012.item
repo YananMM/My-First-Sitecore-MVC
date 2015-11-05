@@ -29,11 +29,25 @@ name: Floor and Building
 key: floor and building
 content-length: 38
 
-{BDA32531-667F-420C-881F-4550CD6E755E}
+{99A4A960-53BC-4C37-A070-7915F8DC1B69}
+----field----
+field: {69F11CBB-E43D-494F-B6DE-01317737B10A}
+name: LocationX
+key: locationx
+content-length: 6
+
+0.4571
+----field----
+field: {8FEE9C73-6C39-4E4B-BDCA-2E9B3F232612}
+name: LocationY
+key: locationy
+content-length: 5
+
+0.578
 ----version----
 language: en
 version: 1
-revision: a4bba148-62d0-4790-b347-1aebd6df9cec
+revision: 812ba54f-b454-4f89-b475-547ba66393ef
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -76,21 +90,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a4bba148-62d0-4790-b347-1aebd6df9cec
+812ba54f-b454-4f89-b475-547ba66393ef
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T130642Z
+20151104T063457Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 18
 
-sitecore\admin
+extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1

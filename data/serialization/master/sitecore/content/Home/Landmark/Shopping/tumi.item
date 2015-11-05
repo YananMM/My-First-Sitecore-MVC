@@ -54,7 +54,7 @@ shop-B6-7
 ----version----
 language: en
 version: 1
-revision: 1ca5e249-e9e4-48ab-a70c-71fb4db8fc4d
+revision: c7d7eeee-9456-4f97-afbe-231d3af2cccc
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -119,6 +119,13 @@ key: page content
 content-length: 751
 
 Since 1975, TUMI has been creating world-class business and travel essentials, designed to upgrade, simplify and beautify all aspects of life-on-the-move. Blending flawless functionality with a spirit of ingenuity, TUMI is committed to empowering journeys as a lifelong partner to movers and makers in pursuit of their passions. TUMI's innovative introduction of soft, ultra-functional, black-on-black ballistic nylon travel bags catapulted the company to its current leadership position. Designed in America for global citizens everywhere, the brand is sold in more than 300 stores all over the world, from New York and Paris to London and Tokyo, as well as the world’s top department and specialty stores and travel retail in more than 75 countries.
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 17
+
+10am-7:30pm daily
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -160,14 +167,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1ca5e249-e9e4-48ab-a70c-71fb4db8fc4d
+c7d7eeee-9456-4f97-afbe-231d3af2cccc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090954Z
+20151104T064010Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -178,7 +185,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: dc4b01c2-6e96-49ef-ad68-03fb4b53af51
+revision: 912b4161-d3bc-4c3a-94cb-009862e2d9f1
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -245,6 +252,13 @@ content-length: 217
 
 自1975年起，TUMI一直致力于打造世界级商务及旅行用品，以优秀的设计为不同层面的旅客提升、简化及优化生活。TUMI将独特创新的设计概念与功能巧妙融合，成为旅行者游历世界、追逐梦想的理想伙伴，成就精彩丰盛的旅程。
 TUMI于美国进行产品设计与开发，为世界各地的使用者带来品质卓越的旅行用品。品牌于全球超过75个国家开设了逾300间专门店，足迹遍布纽约、巴黎、伦敦和东京等大城市，并在各大百货公司、旅行用品专门店和旅游零售点设有专柜。
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 15
+
+每日早上10时至晚上7时30分
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -293,14 +307,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dc4b01c2-6e96-49ef-ad68-03fb4b53af51
+912b4161-d3bc-4c3a-94cb-009862e2d9f1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090955Z
+20151104T064010Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -311,7 +325,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: a4a82ab0-4eb5-4d6d-8103-c5bfc210a5d6
+revision: 02bd7a15-4941-4f4e-89ce-eb321d11d952
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -381,6 +395,13 @@ content-length: 217
 TUMI於美國進行產品設計與開發，為世界各地的用家帶來品質卓越的旅行用品。品牌於全球超過75個國家開設了逾300間專門店，足跡遍佈紐約、巴黎、倫敦和東京等大城市，並在各大百貨公司、旅行用品專門店和旅遊零售點設有專櫃。
 
 ----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 15
+
+每日早上10時至晚上7時30分
+----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
 key: contact
@@ -421,14 +442,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a4a82ab0-4eb5-4d6d-8103-c5bfc210a5d6
+02bd7a15-4941-4f4e-89ce-eb321d11d952
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090955Z
+20151104T064010Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

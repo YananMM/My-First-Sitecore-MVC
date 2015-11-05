@@ -19,7 +19,7 @@ content-length: 65
 ----version----
 language: en
 version: 1
-revision: a387da0f-5a87-40e2-8ed9-f1484959c917
+revision: bd0cdc8c-617f-4a75-9adf-fff37c4b9d6b
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -84,6 +84,13 @@ key: page content
 content-length: 654
 
 The Mandarin Cake Shop has been delighting customers since opening its doors in the 1970s and, to this day, remains the favoured stop for sweet treats, cakes and gourmet gift items. Under the watchful eye of Chef Yves Matthey, The Mandarin Cake Shop offers a wide selection of mouth-watering homemade delicacies, including breads, pastries and incredible cakes that look like exquisite sculptures. Stay for a cup of perfectly roasted coffee, one of their fine selection of teas or a luxurious hot chocolate served with a chocolate spoon. Other delicious delicacies such as classic cheesecake, chocolate truffle cake and rose petal jam are also available.
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 50
+
+Mon to Sat: 8am-8pm Sun & Public Holidays: 8am-7pm
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -125,14 +132,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a387da0f-5a87-40e2-8ed9-f1484959c917
+bd0cdc8c-617f-4a75-9adf-fff37c4b9d6b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090908Z
+20151104T064002Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -143,7 +150,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: 4589f5c5-6e12-4a77-a141-6b0d4f4dc823
+revision: b04529d1-8ae0-47c3-badd-81d1de307f3d
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -208,6 +215,13 @@ key: page content
 content-length: 202
 
 文华饼店自1970年代开业以来，逾四分之一世纪一直为喜爱甜食的顾客带来赏心悦目甜点、蛋糕和节日礼物篮。在总厨Yves Matthey的监督下，其出品的各式可口食品，包括面包、糕点和精心炮制的蛋糕，全都令人垂涎三尺，犹如精雕细琢的艺术品。安坐店内品尝优质烘焙咖啡、精选香茶，或配以特色巧克力匙羹的热巧克力饮品，是忙里偷闲的上佳选择。饼店还有文华芝士饼、软心巧克力蛋糕，和以秘方特制的玫瑰花果酱等美食供选购。
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 36
+
+星期一至星期六︰早上8时至晚上8时 星期日及公众假期︰早上8时至晚上7时
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -256,14 +270,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4589f5c5-6e12-4a77-a141-6b0d4f4dc823
+b04529d1-8ae0-47c3-badd-81d1de307f3d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090909Z
+20151104T064002Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -274,7 +288,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: 18cf085d-ad18-4d9a-ad8d-860558a6cc10
+revision: b53c9555-08a3-409c-b69c-a442dbe86bf0
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -340,6 +354,13 @@ content-length: 203
 
 文華餅店自1970年代開業以來，逾四分之一世紀一直為喜愛甜食的顧客帶來賞心悅目甜點、蛋糕和節日禮物籃。在總廚Yves Matthey監督下，其自家出品的各式可口食品，包括麵包、糕點和精心炮製的蛋糕，全都令人垂涎三尺，猶如精雕細琢的藝術品。安坐店內品嘗優質烘焙咖啡、精選香茶，或配以特色朱古力匙羹的熱朱古力飲品，是忙裏偷閒的上佳選擇。餅店還有文華芝士餅、軟心朱古力蛋糕，和以秘方特製的玫瑰花果醬等美食供選購。
 ----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 36
+
+星期一至星期六︰早上8時至晚上8時 星期日及公眾假期︰早上8時至晚上7時
+----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
 key: contact
@@ -380,14 +401,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-18cf085d-ad18-4d9a-ad8d-860558a6cc10
+b53c9555-08a3-409c-b69c-a442dbe86bf0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090910Z
+20151104T064002Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

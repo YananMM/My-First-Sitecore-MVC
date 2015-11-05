@@ -10,6 +10,13 @@ template: {4CDF5CD9-40F0-4F0B-A095-7773CE6CF582}
 templatekey: T4 Page
 
 ----field----
+field: {816BB583-7E69-4E11-BCA7-4239CD03A9B2}
+name: Brand
+key: brand
+content-length: 38
+
+{0A73F9A6-867C-42E1-B3F1-74B1C32BDDC8}
+----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Portrait Callout Image
 key: article portrait callout image
@@ -23,6 +30,20 @@ key: article date
 content-length: 16
 
 20150831T160000Z
+----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -40,7 +61,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: cc69868b-6b74-4ea9-9ecd-888a463af308
+revision: 6f3cef85-b880-4d65-a29d-1e8131ecd80a
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
@@ -62,12 +83,8 @@ Colours and Motifs of Italian Countryside Inspire TOD’S the Autumn
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 183
+content-length: 0
 
-TOD’S Men Boutique 
-Address: Shop B19, LANDMARK MEN, B/F, LANDMARK ATRIUM 
-Telephone: 2766 3288 
-Opening Hours: Mon to Sat 10:30am-8pm daily; Sun & Public Holidays 10:30am-7:30pm
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -89,14 +106,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cc69868b-6b74-4ea9-9ecd-888a463af308
+6f3cef85-b880-4d65-a29d-1e8131ecd80a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151028T085723Z
+20151105T022246Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

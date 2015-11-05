@@ -10,6 +10,13 @@ template: {4CDF5CD9-40F0-4F0B-A095-7773CE6CF582}
 templatekey: T4 Page
 
 ----field----
+field: {816BB583-7E69-4E11-BCA7-4239CD03A9B2}
+name: Brand
+key: brand
+content-length: 38
+
+{B35CF416-3B70-48C0-9AA5-A21950E211B8}
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -26,7 +33,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 710f96fe-230b-4298-90f8-0c74b81d7914
+revision: c46442f4-1cb0-4069-9433-2dbc5d918907
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
@@ -53,12 +60,8 @@ MOYNAT Says ‘Clutch It If You Can!’
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 146
+content-length: 0
 
-MOYNAT
-Address: Shop G13, G/F, LANDMARK ATRIUM
-Telephone: 2596 0555
-Opening Hours: Mon to Sat 10:30am-7:30pm; Sun & Public holidays 11am-7pm 
 
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
@@ -87,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-710f96fe-230b-4298-90f8-0c74b81d7914
+c46442f4-1cb0-4069-9433-2dbc5d918907
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151026T134013Z
+20151105T022600Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

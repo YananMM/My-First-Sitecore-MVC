@@ -11,9 +11,6 @@
     {
         shopItem = Sitecore.Context.Database.GetItem(shopField.TargetIDs.FirstOrDefault());
     }
-    var openningHours = shopItem.Fields["Openning Hours"];
-    var floor = ((ReferenceField)shopItem.Fields["Floor"]).TargetItem;
-    var building = floor.Parent;
 }
 <div class="col-sm-4">
                 <div class="table-responsive">
@@ -21,19 +18,19 @@
                         <tbody>
                         <tr>
                             <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.DateTimeItem)</th>
-                            <td>@openningHours</td>
+                            <td>@Html.Sitecore().Field("Openning Hours",shopItem)</td>
                         </tr>
                         <tr>
                             <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.VenueItem)</th>
-                            <td>@Html.Sitecore().Field("Floor Title", floor) @Html.Sitecore().Field("Building Title", building)</td>
+                            <td>@Html.Sitecore().Field("Area", shopItem)</td>
                         </tr>
                         <tr>
                             <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.EnquiryItem)</th>
-                            <td>@Html.Sitecore().Field("Contact")</td>
+                            <td>@Html.Sitecore().Field("Contact",shopItem)</td>
                         </tr>
                         <tr>
                             <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.WebsiteItem)</th>
-                            <td>@Html.Sitecore().Field("Official Website")</td>
+                            <td>@Html.Sitecore().Field("Official Website",shopItem)</td>
                         </tr>
                         </tbody>
                     </table>

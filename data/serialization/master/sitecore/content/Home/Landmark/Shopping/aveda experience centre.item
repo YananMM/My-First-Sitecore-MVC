@@ -54,7 +54,7 @@ shop-302
 ----version----
 language: en
 version: 1
-revision: 57bf8bc7-4ce3-439b-9c6b-3eecc2e1f5fe
+revision: b754c6b6-1c2c-40b2-b88c-b1e132ad650b
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -129,6 +129,13 @@ Aveda also provides comprehensive hair care system, including damage remedy, dry
 
 *Due to breakage, in a 12-week clinical test of the invati™ system.
 
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 14
+
+11am-8pm daily
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -170,14 +177,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-57bf8bc7-4ce3-439b-9c6b-3eecc2e1f5fe
+b754c6b6-1c2c-40b2-b88c-b1e132ad650b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090553Z
+20151104T063847Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -188,7 +195,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: 648838c7-ce65-4f76-80ef-a60555890251
+revision: 201e34f9-ad06-4ced-be9d-6a8103054f38
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -265,6 +272,13 @@ Aveda更提供多款专业护理产品，包括重整修复受损头发、水漾
 *因头发断裂引致的掉发，经12个星期invati™系列临床测试结果。
 **因头发断裂引致的掉发。
 
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 12
+
+每日早上11时至晚上8时
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -313,14 +327,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-648838c7-ce65-4f76-80ef-a60555890251
+201e34f9-ad06-4ced-be9d-6a8103054f38
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090553Z
+20151104T063847Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -331,7 +345,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: 1243933d-95a0-42f0-a24b-638c126cab3c
+revision: 3fae0b4c-1716-4ab2-8f8d-4a6dfecb5576
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -409,6 +423,13 @@ Aveda更提供多款專業護理產品，包括重整修復受損頭髮、水漾
 **因頭髮斷裂引致的掉髮。
 
 ----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 12
+
+每日早上11時至晚上8時
+----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
 key: contact
@@ -449,14 +470,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1243933d-95a0-42f0-a24b-638c126cab3c
+3fae0b4c-1716-4ab2-8f8d-4a6dfecb5576
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090553Z
+20151104T063847Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

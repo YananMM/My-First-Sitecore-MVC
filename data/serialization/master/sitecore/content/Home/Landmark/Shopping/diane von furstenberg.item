@@ -54,7 +54,7 @@ shop-306-307
 ----version----
 language: en
 version: 1
-revision: 1ac26848-5ef0-4110-8089-f75a3ca0d8e6
+revision: 7903d237-4f49-400e-9504-fc0a164af9e0
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -129,6 +129,13 @@ Founder and Co-Chairman Diane von Furstenberg is the President of the Council of
  
 Headquartered in New York City, DVF has a global distribution network of over 55 countries and 1500 points of sale including 133 DVF owned and partnered stores throughout North and South America, Europe, the Middle East and Asia Pacific.
 
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 20
+
+10:30am-7:30pm daily
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -170,14 +177,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1ac26848-5ef0-4110-8089-f75a3ca0d8e6
+7903d237-4f49-400e-9504-fc0a164af9e0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090617Z
+20151104T063856Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -188,7 +195,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: 1ed584bf-c9e1-4980-b4d6-e004033b71a8
+revision: 0b400ecb-eae3-4619-a256-e6c857ab2e74
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -263,6 +270,13 @@ Diane von Furstenberg是美国时装设计师协会(CFDA)的主席，亦是Cultu
 
 DVF公司总部设于纽约市，全球分销网遍布55个国家及1500个销售点，其中包括133间DVF直接拥有及合伙店铺，遍及北美与南美洲、欧洲、中东及亚太地区。
 
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 19
+
+每日早上10时30分至晚上7时30分 
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -311,14 +325,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1ed584bf-c9e1-4980-b4d6-e004033b71a8
+0b400ecb-eae3-4619-a256-e6c857ab2e74
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090617Z
+20151104T063856Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -329,7 +343,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: 8e04d5ef-9208-4b00-a449-26cec7f22f51
+revision: 15b4f251-4a4d-4587-901d-79de856b726a
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -405,6 +419,13 @@ Diane von Furstenberg是美國時裝設計師協會(CFDA)的主席，亦是Cultu
 DVF公司總部設於紐約市，全球分銷網遍佈55個國家及1500個銷售點，其中包括133間DVF直接擁有及合伙店舖，遍及北美與南美洲、歐洲、中東及亞太地區。
 
 ----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 19
+
+每日早上10時30分至晚上7時30分 
+----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
 key: contact
@@ -445,14 +466,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8e04d5ef-9208-4b00-a449-26cec7f22f51
+15b4f251-4a4d-4587-901d-79de856b726a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090617Z
+20151104T063856Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -47,7 +47,7 @@ shop-301-304
 ----version----
 language: en
 version: 1
-revision: 0d903b4c-6fec-4eed-9c11-960b7fb09f42
+revision: 27a03f98-5c25-4bab-a5f5-8476cceadd37
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -85,6 +85,16 @@ content-length: 17
 
 Banking Services 
 ----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 71
+
+Mon-Thu 9am-4:30pm
+Fri 9am-5pm
+Sat 9am-1pm
+Sun & Public Holidays Closed
+----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
 key: contact
@@ -118,14 +128,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0d903b4c-6fec-4eed-9c11-960b7fb09f42
+27a03f98-5c25-4bab-a5f5-8476cceadd37
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090635Z
+20151104T063907Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -136,7 +146,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: a02945f4-4f4d-41f5-97d3-472a468713f0
+revision: 2ff69ee5-1e65-4b4e-8879-a325ce96931e
 
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
@@ -152,6 +162,16 @@ key: page content
 content-length: 34
 
 本分行于营业时间内提供全面的银行服务，并提供24小时自助理财服务。 
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 55
+
+星期一至星期四 9am-4:30pm
+星期五 9am-5pm
+星期六 9am-1pm
+星期日及公众假期 休息 
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -193,14 +213,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a02945f4-4f4d-41f5-97d3-472a468713f0
+2ff69ee5-1e65-4b4e-8879-a325ce96931e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090635Z
+20151104T063907Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -211,7 +231,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: 4b109ad9-4110-409b-abd5-54dc4e061166
+revision: 92416457-1b1c-4b69-8675-f0f976820bee
 
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
@@ -227,6 +247,16 @@ key: page content
 content-length: 34
 
 本分行於營業時間內提供全面的銀行服務，並提供24小時自助理財服務。 
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 55
+
+星期一至星期四 9am-4:30pm
+星期五 9am-5pm
+星期六 9am-1pm
+星期日及公眾假期 休息 
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -261,14 +291,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4b109ad9-4110-409b-abd5-54dc4e061166
+92416457-1b1c-4b69-8675-f0f976820bee
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090635Z
+20151104T063907Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

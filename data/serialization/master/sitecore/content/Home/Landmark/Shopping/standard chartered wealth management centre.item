@@ -26,7 +26,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 387f4c98-1b80-418b-9d92-79115695d1ae
+revision: 6c69ba1e-acd4-4892-8b3c-6c92fcbd70c2
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -70,6 +70,17 @@ The Forum Branch is located on L1 and L2 of the Standard Chartered Wealth Manage
 
 The Standard Chartered Private Bank is located on L5 of the Centre. 
 ----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 192
+
+Branch Banking: Mon-Sat 8:00am—8:00pm
+Sunday & Public Holidays Closed
+24-hour Express Banking: Mon-Sun 00:00am-23:59pm
+Private Banking: Mon-Fri 9:00am-6:00pm
+Sat, Sun & Public Holidays Closed 
+----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
 key: contact
@@ -103,14 +114,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-387f4c98-1b80-418b-9d92-79115695d1ae
+6c69ba1e-acd4-4892-8b3c-6c92fcbd70c2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090807Z
+20151104T063955Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -121,7 +132,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: b222d867-ad85-4687-8813-8dcbc3014d1d
+revision: fc9e6164-78da-4f2b-b035-ae85a61feaa1
 
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
@@ -141,6 +152,17 @@ content-length: 265
 渣打银行自 1859 年在香港开展业务，现为香港三家发钞银行之一, 是一个具领导地位的国际银行集团，於全球增长最迅速的市场拥有逾 150 年历史。 渣打的文化传承和企业价值都在其品牌承诺 '一心做好，始终如一' (Here for good)中得到充分体现。
 富临阁分行位於渣打财富管理中心一楼及二楼, 提供一举汇聚零售银行服务, 包括「优先理财」, 「Preferred Banking」, 「快易理财」及「24小时快捷理财」, 亦欢迎莅临本分行与我们专业的理财客户经理面谈您的理财需要。
 渣打私人银行位於渣打财富管理中心五楼。
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 94
+
+分行:星期一至六:早上8时至晚上8时
+星期日及公众假期休息
+24小时快捷理财：星期一至日：早上12时至晚上11时59分
+私人银行：星期一至五：早上9时至下午6时
+星期六、日及公众假期休息 
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -182,14 +204,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b222d867-ad85-4687-8813-8dcbc3014d1d
+fc9e6164-78da-4f2b-b035-ae85a61feaa1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090807Z
+20151104T063955Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -200,7 +222,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: 363a45de-b40d-4ee6-9f54-6840424a2803
+revision: 4328ea8f-0470-4873-9dc2-dc71968dcd83
 
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
@@ -220,6 +242,17 @@ content-length: 265
 渣打銀行自 1859 年在香港開展業務，現為香港三家發鈔銀行之一, 是一個具領導地位的國際銀行集團，於全球增長最迅速的市場擁有逾 150 年歷史。 渣打的文化傳承和企業價值都在其品牌承諾 '一心做好，始終如一' (Here for good)中得到充分體現。
 富臨閣分行位於渣打財富管理中心一樓及二樓, 提供一舉匯聚零售銀行服務, 包括「優先理財」, 「Preferred Banking」, 「快易理財」及「24小時快捷理財」, 亦歡迎蒞臨本分行與我們專業的理財客戶經理面談您的理財需要。
 渣打私人銀行位於渣打財富管理中心五樓。
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 94
+
+分行:星期一至六:早上8時至晚上8時
+星期日及公眾假期休息
+24小時快捷理財：星期一至日：早上12時至晚上11時59分
+私人銀行：星期一至五：早上9時至下午6時
+星期六、日及公眾假期休息 
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -254,14 +287,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-363a45de-b40d-4ee6-9f54-6840424a2803
+4328ea8f-0470-4873-9dc2-dc71968dcd83
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090809Z
+20151104T063955Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

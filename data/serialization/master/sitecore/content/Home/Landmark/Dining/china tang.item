@@ -47,7 +47,7 @@ shop-411-413
 ----version----
 language: en
 version: 1
-revision: bde65562-3784-44bd-9146-2bcbbff81c31
+revision: cd41fab9-ef42-4936-9dd5-c9d1b113b1b0
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -112,6 +112,13 @@ key: page content
 content-length: 842
 
 China Tang Hong Kong Restaurant, first opened in London in 2007 at the Dorchester Hotel, is now open in Hong Kong at LANDMARK ATRIUM. Conceived and designed by Sir David Tang, China Tang Hong Kong offers the best of Chinese food in the most sumptuous and comfortable surroundings. All decorations are rooted in the Chinese tradition but with highly original treatment: hand-painted and hand-embroidered wallpaper, antique books, Chinese paintings, beautifully upholstered chairs, antique lighting, decorative pieces and superb trompe l’oeil on mirrors and glass. The kitchen is led by three-star Michelin Chef Albert Au Kwok Keung, offering the finest cuisines from Beijing, Sichuan and Canton. There is also an exceptional bar with a flexible private room in which drinks and cocktails are served with dim sum and sweets throughout the day. 
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 15
+
+12nn-11pm Daily
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -153,14 +160,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bde65562-3784-44bd-9146-2bcbbff81c31
+cd41fab9-ef42-4936-9dd5-c9d1b113b1b0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090604Z
+20151104T063851Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -171,7 +178,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: 0fd38f70-28dd-4fd3-8b90-c50c701aeab1
+revision: 75be6a40-4467-468d-994a-958f632d9bfd
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -248,6 +255,13 @@ content-length: 307
 唐人馆主打高级精致的中国菜，以广东、北京和四川等菜系为特色，由米其林三星厨师欧国强师傅担任行政总厨，带领来自北京和四川的厨师团队，呈现细腻精致的美点佳肴。 
 
 唐人馆设有酒吧区及私人厢房，客人在享用点心和甜品之余，亦可畅享各式创意鸡尾酒及其他冰冻饮料。
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 13
+
+每日中午12时至晚上11时
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -296,14 +310,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0fd38f70-28dd-4fd3-8b90-c50c701aeab1
+75be6a40-4467-468d-994a-958f632d9bfd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090605Z
+20151104T063851Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -314,7 +328,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: 13af2d06-aa23-4c2b-b06c-15adccec811e
+revision: 4332ebb2-05a7-43e4-b105-be11ee41945b
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -397,6 +411,13 @@ content-length: 305
 唐人館設有酒吧區及私人廂房，客人在享用點心和甜品之餘，亦可佐以各式創意雞尾酒及其他冰凍飲料。
 
 ----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 13
+
+每日中午12時至晚上11時
+----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
 key: contact
@@ -437,14 +458,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-13af2d06-aa23-4c2b-b06c-15adccec811e
+4332ebb2-05a7-43e4-b105-be11ee41945b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090605Z
+20151104T063851Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -10,6 +10,13 @@ template: {4CDF5CD9-40F0-4F0B-A095-7773CE6CF582}
 templatekey: T4 Page
 
 ----field----
+field: {816BB583-7E69-4E11-BCA7-4239CD03A9B2}
+name: Brand
+key: brand
+content-length: 38
+
+{A960C567-84A3-4E71-A89A-3D6B663E45C0}
+----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Portrait Callout Image
 key: article portrait callout image
@@ -47,7 +54,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 6a90fdc8-fa8d-42f4-93c0-599f86fc6086
+revision: c8278081-fa7e-45a4-8abc-107a55039ab4
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
@@ -71,12 +78,9 @@ Heather & March Brings Elegance to the Table
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 156
+content-length: 2
 
-Heather & March	
-Address: Shop 216-218, 2/F, LANDMARK PRINCE'S
-Telephone: 2530 0686
-Opening Hours: Mon to Sat 10am-7pm; Sun & Public Holidays 11am-6pm 
+
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -98,14 +102,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6a90fdc8-fa8d-42f4-93c0-599f86fc6086
+c8278081-fa7e-45a4-8abc-107a55039ab4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151028T071145Z
+20151105T022405Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

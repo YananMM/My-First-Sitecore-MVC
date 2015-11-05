@@ -10,6 +10,13 @@ template: {4CDF5CD9-40F0-4F0B-A095-7773CE6CF582}
 templatekey: T4 Page
 
 ----field----
+field: {816BB583-7E69-4E11-BCA7-4239CD03A9B2}
+name: Brand
+key: brand
+content-length: 38
+
+{82959733-7AD1-4EF1-BD61-E0EEAE6B37A2}
+----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Portrait Callout Image
 key: article portrait callout image
@@ -33,7 +40,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: c6490885-056e-4510-b567-98dfbb174039
+revision: 3a6546ec-e2aa-4030-b109-451781ec9557
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -46,12 +53,9 @@ Hackett London Makes Summer a Breeze for Gentlemen
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 129
+content-length: 2
 
-Hackett London
-Address: Shop B63, LANDMARK MEN, B/F, LANDMARK ATRIUM 
-Telephone: 2885 0970
-Opening Hours: 10:30am-8pm daily 
+
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -73,14 +77,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c6490885-056e-4510-b567-98dfbb174039
+3a6546ec-e2aa-4030-b109-451781ec9557
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151029T080305Z
+20151105T022519Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

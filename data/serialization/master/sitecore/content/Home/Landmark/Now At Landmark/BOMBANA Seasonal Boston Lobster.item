@@ -10,6 +10,13 @@ template: {4CDF5CD9-40F0-4F0B-A095-7773CE6CF582}
 templatekey: T4 Page
 
 ----field----
+field: {816BB583-7E69-4E11-BCA7-4239CD03A9B2}
+name: Brand
+key: brand
+content-length: 38
+
+{C7442E9E-5B1D-4481-B0A8-22633A7540B0}
+----field----
 field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
 name: Article Callout Image
 key: article callout image
@@ -47,7 +54,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: a29a714e-8534-416b-bf95-f6b9f4d5e754
+revision: 56f2624c-c6be-4efe-b677-dfe05d16cca0
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
@@ -79,16 +86,8 @@ content-length: 102
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 203
+content-length: 0
 
-8½ Otto e Mezzo BOMBANA 
-Address: Shop 202, 2/F, LANDMARK ALEXANDRA 
-Telephone: 2537 8859 
-Opening Hours: Mon to Sat 
-Lunch 12noon – 2:30pm 
-Dinner 6:30pm – 10:30pm 
-Bar 12noon – 1am 
-Sun closed
 
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
@@ -117,14 +116,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a29a714e-8534-416b-bf95-f6b9f4d5e754
+56f2624c-c6be-4efe-b677-dfe05d16cca0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151029T044740Z
+20151105T021627Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

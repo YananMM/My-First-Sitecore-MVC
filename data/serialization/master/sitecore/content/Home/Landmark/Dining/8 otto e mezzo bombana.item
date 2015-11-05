@@ -54,7 +54,7 @@ shop-202
 ----version----
 language: en
 version: 1
-revision: 9a6eafbc-c012-4bcb-b2c3-d1bf7bf1b0b7
+revision: dff6ddd1-da2b-40a7-a07d-d8cb632f4f1f
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -119,6 +119,13 @@ key: page content
 content-length: 721
 
 Occupying 4,700 square feet of prime location in Central, Hong Kong and overlooking the famous Chater Road with a bustling street view, the spacious main dining room can accommodate up to 55 diners while the two sophisticated private dining rooms seat 12 guests each. Ebullient chef BOMBANA Umberto delights the palates of the city’s gourmets with his contemporary and inventive culinary creations. Chef BOMBANA's cooking is a celebration of the Italian lifestyle, an homage to il bel paese (the beautiful country) and is steeped in love, tradition and the skills of the past. Adding these important elements to his culinary mastery for a sense of true Italian hospitality and an unforgettable authentic culinary journey.
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 87
+
+Mon-Sat  Lunch 12noon – 2:30pm,  Dinner 6:30pm – 10:30pm,  Bar 12noon – 1am Sun closed 
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -160,14 +167,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9a6eafbc-c012-4bcb-b2c3-d1bf7bf1b0b7
+dff6ddd1-da2b-40a7-a07d-d8cb632f4f1f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090544Z
+20151104T063844Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -178,7 +185,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: 1b573cf2-2690-4710-9e99-7a92d64421a4
+revision: e3c49b74-fa67-47fd-921b-eba45810a175
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -245,6 +252,13 @@ content-length: 228
 
 8½ Otto e Mezzo BOMBANA餐厅占地400多平方米，居高临下，俯瞰遮打道繁华街景。偌大的主餐厅可容纳55位食客，另设两间雅致贵宾厅，分别可供12人用餐，特别适合商务宴席或私人派对。
 餐厅主厨BOMBANA Umberto一直坚持以时令食材创作新派美馔，每道佳肴均触动各地饕客的味蕾，让人深深体会意式生活的热情。他的菜式包含了对意大利菜的钟爱、传统和昔日烹调手法，藉此向这个美丽国度致敬，并带领食客展开正宗意大利菜的寻味之旅，令人回味无穷。
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 72
+
+星期一至星期六： 午餐 - 中午12时至下午2时30分 晚餐 - 晚上6时30分至10时30分   酒吧 - 中午12时至凌晨1时 星期日休息 
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -293,14 +307,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1b573cf2-2690-4710-9e99-7a92d64421a4
+e3c49b74-fa67-47fd-921b-eba45810a175
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090544Z
+20151104T063844Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -311,7 +325,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: 7bb74d92-949e-4367-a593-5c99304a26fb
+revision: 6f02da25-c560-4a88-88a6-3dbe4e3978f6
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -381,6 +395,13 @@ content-length: 230
 餐廳主廚BOMBANA Umberto一直堅持以時令食材創作新派美饌，每道佳餚均觸動各地饕客的味蕾，讓人深深體會意式生活的熱情。他的菜式包含了對意大利菜的鍾愛、傳統和昔日烹調手法，藉此向這個美麗國度致敬，並帶領食客展開正宗意大利菜的尋味之旅，令人回味無窮。
 
 ----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 72
+
+星期一至星期六： 午餐 - 中午12時至下午2時30分 晚餐 - 晚上6時30分至10時30分   酒吧 - 中午12時至凌晨1時 星期日休息 
+----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
 key: contact
@@ -421,14 +442,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7bb74d92-949e-4367-a593-5c99304a26fb
+6f02da25-c560-4a88-88a6-3dbe4e3978f6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090544Z
+20151104T063844Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

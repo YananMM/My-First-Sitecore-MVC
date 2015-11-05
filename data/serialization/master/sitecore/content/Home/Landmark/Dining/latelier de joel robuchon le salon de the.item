@@ -54,7 +54,7 @@ shop-315_x5F_334
 ----version----
 language: en
 version: 1
-revision: de3fe4ad-c7fa-41ae-8b7f-bfd6e827f8f1
+revision: 6e81f26a-43c1-42cf-80e0-4be31a79c460
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -119,6 +119,13 @@ key: page content
 content-length: 777
 
 L’Atelier de Joël Robuchon has gone from strength to strength since it opened its doors in Hong Kong in 2006. The restaurant is divided into two areas – L’Atelier and Le Jardin. L’Atelier is designed with a circular bar enveloping an open kitchen, allowing customers to witness all aspects of cooking. The menu offers a variety of French classics in innovative tapas-style portions. Le Jardin has an elegant interior and looks out onto a quaint roof top garden. Located one floor below the restaurant, Le Salon de Thé de Joël Robuchon offers a variety of light sandwiches, bakery products, pastries and cakes, and coffee/tea for dining-in and takeaway. A wide selection of fine wine and gourmet canapés are also available during the daily Happy Hour session at Le Salon de Thé.
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 13
+
+8am-8pm daily
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -160,14 +167,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-de3fe4ad-c7fa-41ae-8b7f-bfd6e827f8f1
+6e81f26a-43c1-42cf-80e0-4be31a79c460
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090653Z
+20151104T063921Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -178,7 +185,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: ee69f33a-6d47-4515-a15d-e50e4059e945
+revision: d0aa84f9-ba44-4c74-8bb8-e8905c59dade
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -247,6 +254,13 @@ content-length: 348
 L’Atelier de Joël Robuchon 于2006年在香港开业，餐厅分为两个部分：L’Atelier及 Le Jardin。L’Atelier的设计为一个围绕着开放式厨房的U形吧台，让顾客可以亲睹主厨从烹调到摆放食物呈上餐桌的每一细节。L’Atelier提供多种法国传统菜式，并以创新的方式示人，为顾客的味觉和视觉带来双重享受。Le Jardin的室内设计优雅，顾客可以一边于餐厅内欣赏露天茶座的景色，一边品尝经典的法国菜肴，体验时尚的法国餐饮享受。
 
 设于餐厅下层的 Le Salon de Thé de Joël Robuchon，提供多种精巧别致的法式三明治、令人一见倾心的法式小食及蛋糕，还有风味绝佳的咖啡和馥郁芳香的茶饮。在每日的「欢乐时光」时段更提供多款餐酒及法式小食。
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 12
+
+每日早上8时至晚上8时 
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -295,14 +309,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ee69f33a-6d47-4515-a15d-e50e4059e945
+d0aa84f9-ba44-4c74-8bb8-e8905c59dade
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090653Z
+20151104T063921Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -313,7 +327,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: 3533fcbc-8a38-443d-a17b-dd27c2823c5d
+revision: c9d81c95-39a7-4b93-bd50-7b437d37e99b
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -383,6 +397,13 @@ L’Atelier de Joël Robuchon 於2006年在香港開業，餐廳分為兩個部�
 設於餐廳下層的 Le Salon de Thé de Joël Robuchon，提供多種精巧別緻的法式三文治、令人一見傾心的法式小食及蛋糕，還有風味絕佳的咖啡和馥郁芳香的西茶。在每日的「歡樂時光」時段更提供多款餐酒及法式小食。
 
 ----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 12
+
+每日早上8時至晚上8時 
+----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
 key: contact
@@ -423,14 +444,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3533fcbc-8a38-443d-a17b-dd27c2823c5d
+c9d81c95-39a7-4b93-bd50-7b437d37e99b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090653Z
+20151104T063921Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

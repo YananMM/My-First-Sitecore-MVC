@@ -12,7 +12,7 @@ templatekey: T14 Page
 ----version----
 language: en
 version: 1
-revision: 122edc51-4a31-4d4a-a0cd-42a4ba73de90
+revision: c24e7737-efff-4621-b651-876f1043e74b
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -50,6 +50,14 @@ content-length: 372
 
 A high-end salon conveniently located in Central, providing a comprehensive range of hair & nail services aimed at catering all your beauty needs. A spacious interior with elegant yet modern design, our salon carries in total 28 seats with 3 VIP rooms. Hair crafting at its finest, our A-listed stylists are dedicated to treat your hair with extreme care and inspiration. 
 ----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 45
+
+Mon-Sat 8am-9pm
+Sun & Public Holidays Closed 
+----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
 key: contact
@@ -83,14 +91,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-122edc51-4a31-4d4a-a0cd-42a4ba73de90
+c24e7737-efff-4621-b651-876f1043e74b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090546Z
+20151104T063845Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,7 +109,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: 01c71f64-3acf-45b7-8897-3433b94a6c70
+revision: 7166b4bd-37a9-4a33-8d66-bcced6e5d018
 
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
@@ -117,6 +125,14 @@ key: page content
 content-length: 115
 
 位于中环甲级商业区的殿堂级发廊，提供一站式发型设计，秀发护理及美甲等服务，务求满足您所有的美容需求。全店备有28个座位及设有3间贵宾房，更拥有时尚又不失典雅的室内设计。ALCHEMY内各星级发型师将诚意为您打造属于您的创意造型。 
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 29
+
+星期一至星期六︰早上8时至晚上9时
+星期日及公众假期︰休息
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -158,14 +174,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-01c71f64-3acf-45b7-8897-3433b94a6c70
+7166b4bd-37a9-4a33-8d66-bcced6e5d018
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090546Z
+20151104T063845Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -176,7 +192,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: f5bb939c-d6c3-4613-9303-ff7344b40e56
+revision: 71c5ce2c-90d4-49b1-825c-194e4efc167e
 
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
@@ -192,6 +208,14 @@ key: page content
 content-length: 115
 
 位於中環甲級商業區的殿堂級髮廊，提供一站式髮型設計，秀髮護理及美甲等服務，務求滿足您所有的美容需求。全店備有28個座位及設有3間貴賓房，更擁有時尚又不失典雅的室內設計。ALCHEMY內各星級髮型師將誠意為您打造屬於您的創意造型。 
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 30
+
+星期一至星期六︰早上8時至晚上9時
+星期日及公眾假期︰休息 
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -226,14 +250,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f5bb939c-d6c3-4613-9303-ff7344b40e56
+71c5ce2c-90d4-49b1-825c-194e4efc167e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090546Z
+20151104T063845Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

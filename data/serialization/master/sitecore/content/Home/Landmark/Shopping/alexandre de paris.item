@@ -54,7 +54,7 @@ shop-235
 ----version----
 language: en
 version: 1
-revision: b258529b-7f09-439a-821d-fabfc989f0d0
+revision: 04ba45ac-32ea-4e95-8802-5fcb70bb4ddd
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -125,6 +125,13 @@ Born in Saint Tropez on the French Riviera, Alexandre de Paris invented the art 
  
 In 1971, Alexandre de Paris launched his maiden accessory line which is still designed in-house and handmade by gifted artisans in France’s Jura valley, known for its centuries-old traditions of hair accessory craftsmanship.
 
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 20
+
+10:30am-8:30pm daily
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -166,14 +173,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b258529b-7f09-439a-821d-fabfc989f0d0
+04ba45ac-32ea-4e95-8802-5fcb70bb4ddd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090546Z
+20151104T063845Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -184,7 +191,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: 6004b655-6175-4967-9bcc-25bf492daeea
+revision: a33e20cd-c163-4368-82d0-70f6d2e2127b
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -249,6 +256,13 @@ key: page content
 content-length: 215
 
 Alexandre de Paris出生于法国蔚蓝海岸的圣特罗佩，被誉为高级发型艺术的始创者。在战后的巴黎，他开始与著名品牌如YSL及Chanel合作；后更以精湛发型设计技艺进军好莱坞，为电影担任发型设计师。奥黛丽·赫本、格蕾丝·凯利和伊莉莎伯·泰勒等影星的经典发型，皆出自他之手。法国汝拉山谷向来以传承百年传统发饰工艺闻名于世，而Alexandre de Paris于1971年推出的首个发饰系列，至今仍由当地巧手工匠效法演绎。
+----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 15
+
+每日早上10时30分至晚上8时
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -297,14 +311,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6004b655-6175-4967-9bcc-25bf492daeea
+a33e20cd-c163-4368-82d0-70f6d2e2127b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090546Z
+20151104T063845Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -315,7 +329,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: ea127e5e-83f2-4192-85a4-9ddd164e3916
+revision: c76818c8-fa61-41e6-a6fd-e56b12cf2309
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -381,6 +395,13 @@ content-length: 207
 
 Alexandre de Paris在法國蔚藍海岸的聖特羅佩出生，被譽為高級髮型藝術的始創者。他於戰後的巴黎夥拍著名品牌如YSL及Chanel，以精湛髮型設計技術進軍荷里活，為電影擔任髮型設計師。柯德莉夏萍、嘉麗絲姬莉和伊莉莎伯泰萊等影星的經典髮型，皆出自他的手筆。法國汝拉山谷向來以傳承百年傳統髮飾工藝聞名於世，而Alexandre de Paris於1971年推出的首個髮飾系列，至今仍由當地巧手工匠效法演繹。
 ----field----
+field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
+name: Openning Hours
+key: openning hours
+content-length: 15
+
+每日早上10時30分至晚上8時
+----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
 key: contact
@@ -421,14 +442,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ea127e5e-83f2-4192-85a4-9ddd164e3916
+c76818c8-fa61-41e6-a6fd-e56b12cf2309
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090547Z
+20151104T063845Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
