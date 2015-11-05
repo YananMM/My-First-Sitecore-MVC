@@ -70,7 +70,7 @@ namespace Landmark.Helper
             return TranslateUrl(returnUrl);
         }
 
-        private static string TranslateUrl(string url)
+        public static string TranslateUrl(string url)
         {
             string result = url;
             //Translate language codes
