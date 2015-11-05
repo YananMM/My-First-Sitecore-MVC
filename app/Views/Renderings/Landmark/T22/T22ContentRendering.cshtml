@@ -40,7 +40,11 @@
                                                                     <div class="col-xs-9">
                                                                         <select class="form-control">
                                                                             <option value="@LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByLocationPage))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.LocationItem)</option>
-                                                                            <option value="@LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.ArtistItem)</option>
+                                                                            <option value="@LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage))" @if (Html.Sitecore().CurrentItem.ID.ToString() == ItemGuids.ByArtistPage) { <text>
+                                                                                    selected="selected" </text>  }>
+                                                                                @Html.Sitecore().Field("Glossary Value", SitecoreItems.ArtistItem)
+                                                                                </option>
+
                                                                         </select>
                                                                     </div>
                                                                 </div>

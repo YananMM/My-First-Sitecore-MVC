@@ -371,6 +371,9 @@
       >a {
         display: block;
         margin-top: 30px;
+                @media (min-width: @screen-sm) {
+        margin-top:0;
+                }
         >img {
           cursor: pointer;
           max-width: 100%;
@@ -1892,15 +1895,52 @@
     }
   }
 }
-  
-@media (min-width:@screen-lg) {
-.t23 .gd-mainimage .carousel-inner .item > .carousel-image{
+ .t23 .gd-mainimage.carousel-portrait  {.carousel-indicators { top: 455px;}}
+.t23 .gd-mainimage.carousel-portrait .carousel-inner .item > .carousel-image{
+  height:480px;
+  } 
+@media (min-width:380px) {
+.t23 .gd-mainimage.carousel-portrait  {.carousel-indicators { top: 545px;}}
+.t23 .gd-mainimage.carousel-portrait .carousel-inner .item > .carousel-image{
+  height:570px;
+  }
+}
+@media (min-width:480px) {
+.t23 .gd-mainimage.carousel-portrait  {.carousel-indicators { top: 695px;}}
+.t23 .gd-mainimage.carousel-portrait .carousel-inner .item > .carousel-image{
   height:720px;
   }
-
+}
+@media (min-width:540px) {
+.t23 .gd-mainimage.carousel-portrait  {.carousel-indicators { top: 785px;}}
+.t23 .gd-mainimage.carousel-portrait .carousel-inner .item > .carousel-image{
+  height:810px;
+  }
+}
+@media (min-width:640px) {
+.t23 .gd-mainimage.carousel-portrait  {.carousel-indicators { top: 935px;}}
+.t23 .gd-mainimage.carousel-portrait .carousel-inner .item > .carousel-image{
+  height:960px;
+  }
+}
+@media (min-width:@screen-sm) {
+.t23 .gd-mainimage.carousel-portrait  {.carousel-indicators { top: auto;}}
+.t23 .gd-mainimage.carousel-portrait .carousel-inner .item > .carousel-image{
+  height:540px;
+  }
+}
+@media (min-width:@screen-md) {
+.t23 .gd-mainimage.carousel-portrait .carousel-inner .item > .carousel-image{
+  height:720px;
+  }
+}
+@media (min-width:@screen-lg) {
+.t23 .gd-mainimage.carousel-portrait .carousel-inner .item > .carousel-image{
+  height:720px;
+  }
 }
 @media (min-width:1600px) {
-.t23 .gd-mainimage .carousel-inner .item > .carousel-image {
+.t23 .gd-mainimage.carousel-portrait .carousel-inner .item > .carousel-image {
   height:960px;
   }
 }
@@ -1943,11 +1983,13 @@
       clear: both;
       display: table;
     }
-    margin: 0 0 60px;
+    margin: 0 0 30px;
+    @media (min-width: @screen-sm){
+    margin: 0 0 60px;}
   }
   .gd-promo-body {
     margin: 0 -15px;
-    padding-bottom: 30px;
+    padding-bottom: 0;
 
     .gd-promo-box {
       -webkit-box-sizing: border-box;
@@ -1957,6 +1999,9 @@
       padding-left: 15px;
       padding-right: 15px;
       width: 33.3333%;
+      margin: 0 0 20px;
+    @media (min-width: @screen-sm){
+    margin: 0 0 40px;}
     }
 
     #infscr-loading {
