@@ -17,6 +17,20 @@ content-length: 58
 
 <image mediaid="{A2BC52F5-272A-465E-AE2E-413C72E2D1B3}" />
 ----field----
+field: {B966F61E-9F08-4674-AC01-EE1064020145}
+name: Article Date
+key: article date
+content-length: 16
+
+20150731T160000Z
+----field----
+field: {EF0834ED-A9CD-414C-B3FD-3F282C6B155E}
+name: Brand
+key: brand
+content-length: 38
+
+{82959733-7AD1-4EF1-BD61-E0EEAE6B37A2}
+----field----
 field: {C9FE1BF7-0BCB-46A5-8910-5CC57B66B83E}
 name: Tags
 key: tags
@@ -33,7 +47,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: f6f14787-2e0b-4a41-ae89-b185e7d5f845
+revision: 8fc63f4b-f7ef-476e-8b6f-766ab77b9dda
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -46,9 +60,9 @@ Hackett London Makes Summer a Breeze for Gentlemen
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 8
+content-length: 0
 
-1/8/2015
+
 ----field----
 field: {AC99433B-FC36-4B1B-A5BE-9DA201C74866}
 name: Article Content
@@ -92,14 +106,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f6f14787-2e0b-4a41-ae89-b185e7d5f845
+8fc63f4b-f7ef-476e-8b6f-766ab77b9dda
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151102T161246Z
+20151105T025032Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

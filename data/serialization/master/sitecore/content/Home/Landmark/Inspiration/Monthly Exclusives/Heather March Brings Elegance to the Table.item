@@ -17,6 +17,20 @@ content-length: 58
 
 <image mediaid="{4E660D22-D322-410D-B3C0-A4C963D6B4E1}" />
 ----field----
+field: {B966F61E-9F08-4674-AC01-EE1064020145}
+name: Article Date
+key: article date
+content-length: 16
+
+20150731T160000Z
+----field----
+field: {EF0834ED-A9CD-414C-B3FD-3F282C6B155E}
+name: Brand
+key: brand
+content-length: 38
+
+{A960C567-84A3-4E71-A89A-3D6B663E45C0}
+----field----
 field: {C9FE1BF7-0BCB-46A5-8910-5CC57B66B83E}
 name: Tags
 key: tags
@@ -33,7 +47,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 0956a4c2-9a91-4892-b89e-4d3f6195f56c
+revision: c32cf2db-86f9-44f9-878a-a5a164e98075
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -46,9 +60,9 @@ Heather & March Brings Elegance to the Table
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 8
+content-length: 0
 
-1/8/2015
+
 ----field----
 field: {AC99433B-FC36-4B1B-A5BE-9DA201C74866}
 name: Article Content
@@ -91,14 +105,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0956a4c2-9a91-4892-b89e-4d3f6195f56c
+c32cf2db-86f9-44f9-878a-a5a164e98075
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151030T080347Z
+20151105T040853Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

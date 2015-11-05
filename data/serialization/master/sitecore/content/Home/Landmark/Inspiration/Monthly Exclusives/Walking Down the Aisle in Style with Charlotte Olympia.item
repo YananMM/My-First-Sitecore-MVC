@@ -17,6 +17,20 @@ content-length: 58
 
 <image mediaid="{8D214A2B-A44B-4401-8AD4-15728D11E185}" />
 ----field----
+field: {B966F61E-9F08-4674-AC01-EE1064020145}
+name: Article Date
+key: article date
+content-length: 16
+
+20150731T160000Z
+----field----
+field: {EF0834ED-A9CD-414C-B3FD-3F282C6B155E}
+name: Brand
+key: brand
+content-length: 38
+
+{8049C405-967D-482F-A0A8-0E264A5A08DF}
+----field----
 field: {C9FE1BF7-0BCB-46A5-8910-5CC57B66B83E}
 name: Tags
 key: tags
@@ -108,7 +122,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 48aa6930-f3c7-44f4-8730-399333da2242
+revision: 850c8a80-c9de-463e-b441-11ea37677456
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -121,9 +135,9 @@ Charlotte Olympia伴您优美走进人生新阶段
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 8
+content-length: 0
 
-1/8/2015
+
 ----field----
 field: {AC99433B-FC36-4B1B-A5BE-9DA201C74866}
 name: Article Content
@@ -171,14 +185,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-48aa6930-f3c7-44f4-8730-399333da2242
+850c8a80-c9de-463e-b441-11ea37677456
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151021T121123Z
+20151105T041050Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -24,7 +24,7 @@
                     @if (Sitecore.Context.Item.ID.ToString() == ItemGuids.OverviewPage)
                     {
                         <hr>
-                        <h4>@Html.Sitecore().Field("Opening Hours Label")</h4>
+                        <h4>@Html.Sitecore().Field("Openning Hours Label")</h4>
                         <div class="table-responsive">
                             <table>
                                 <tbody>
@@ -34,7 +34,7 @@
                                         {
                                             <tr>
                                                 <th>@Html.Sitecore().Field("Building Title", item)</th>
-                                                <td>@Html.Sitecore().Field("Opening Hours", item)</td>
+                                                <td>@Html.Sitecore().Field("Openning Hours", item)</td>
                                             </tr>
                                         }
                                     }
