@@ -231,21 +231,12 @@ $(document).ready(function() {
     $(window).on('resize', handleMegaMenu);
   } else {
     // mobile menu
-<<<<<<< HEAD
     // if (!isIE8()){
     //   var menuScroll = new IScroll($mobileMainMenu[0], {
     //     mouseWheel: true,
     //     click: true
     //   });
     // }
-=======
-    //if (!isIE8()){
-    //  var menuScroll = new IScroll($mobileMainMenu[0], {
-    //    mouseWheel: true,
-    //    click: true
-    //  });
-    //}
->>>>>>> 2d57bdb466217f314fa44dfe20c0835dac6eb1bc
     var mobileMainMenuAnimation = new TimelineMax()
       .add(
         TweenMax.fromTo($mobileMainMenu, .5, {left: "-100%"}, {left: "0%"}),
@@ -257,15 +248,9 @@ $(document).ready(function() {
       .pause();
     function handleMobileMenuHeight(){
       $mobileMainMenu.css('height', $(window).height() - navHM);
-<<<<<<< HEAD
       // if (!isIE8()){
       //   menuScroll.refresh();
       // }
-=======
-      //if (!isIE8()){
-      //  menuScroll.refresh();
-      //}
->>>>>>> 2d57bdb466217f314fa44dfe20c0835dac6eb1bc
     }
     $mobileMainMenuHandle.on('click', function(e) {
       e.preventDefault();
@@ -1413,7 +1398,7 @@ $(document).ready(function() {
 
     // update the logic to support video popup & floor plan with pin
     if ($(this).hasClass('gd-lightbox-map')) {
-      gdLightContent = '<div class="gd-location-map" data-lat="' + $(this).data('lat') + '" data-lng="' + $(this).data('lng') + '"><iframe src="/files/landmark/iframes/map-simple-iframe.html" frameborder="0"></iframe></div>';
+      gdLightContent = '<div class="gd-location-map" data-lat="' + $(this).data('lat') + '" data-lng="' + $(this).data('lng') + '"><iframe src="map-simple-iframe.html" frameborder="0"></iframe></div>';
     } else if ($(this).hasClass('gd-lightbox-video')){
       if(isiOS() || isAndroid()){
         scTrackVideo(gdLightSrc);
