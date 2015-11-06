@@ -85,6 +85,7 @@ namespace Landmark.Classes
         public static readonly Item EmailPostalAddressItem = _web.GetItem("{45E8443F-D90C-42BB-B34C-F4A6BEF2D17E}");
         public static readonly Item RelatedStoriesItem = _web.GetItem("{1966B9BC-18BE-4000-BAD8-DDA8C36D304A}");
         public static readonly Item RelatedBrandItem = _web.GetItem("{ED1B7841-C842-4A32-AA89-45FF75BA8865}");
+        public static readonly Item SeeAllRestaurantItem = _web.GetItem("{57D52748-BF11-4228-83E4-AAF3FFB1F8CF}");
 
     }
 }

@@ -14,8 +14,9 @@ namespace Landmark.Classes.Customtation
     {
         public void OnItemCopying(object sender, EventArgs args)
         {
-            if (Sitecore.Context.Job.Name == "Publish to 'web'")
-                return;
+            if (Sitecore.Context.Job!=null)
+                if (Sitecore.Context.Job.Name == "Publish to 'web'")
+                    return;
             using (new SecurityDisabler())
             {
                 if(args == null)

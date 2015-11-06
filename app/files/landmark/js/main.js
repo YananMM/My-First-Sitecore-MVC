@@ -1999,7 +1999,7 @@ $(document).ready(function() {
       var isMatch = false;
       $.ajax({
         async: false,
-        url: $('form[name=gd-contact-form]').data('captchaUrl'),
+        url: $('form[name=gd-contact-form]').data('captcha-url'),
         data: {captcha: value},
         success: function(result){
           isMatch = result;

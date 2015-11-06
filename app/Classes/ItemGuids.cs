@@ -102,5 +102,6 @@ namespace Landmark.Classes
         public static readonly string VideoObject = "{82C6EA0F-D0F2-4F40-BA8A-F5E39A10D5B5}";
         public static readonly string ContactUsFormSocailFolder = "{85E16816-67F6-4F3E-AEB6-6BF577B35486}";
         public static readonly string ExlusivesCategoryFolder = "{9E22AA2A-730D-4DB6-9787-5A16E308A91A}";
+        public static readonly string DiningByBrandsItem = "{2A670EF7-757F-4FCB-89A6-973DA8AE7DBF}";
     }
 }

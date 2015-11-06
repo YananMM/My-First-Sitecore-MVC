@@ -144,9 +144,14 @@
                                             <ul class=" mega-category">
                                                 @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
                                                 {
-                                                    <li><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(childItem))">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
+                                                    if (childItem.TemplateID.ToString().Equals(ItemGuids.T11PageTemplate))
+                                                    {
+                                                        <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
+                                                    }
+
                                                 }
                                             </ul>
+                                            <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.DiningByBrandsItem)))" class="gd-link-book">@Html.Sitecore().Field("Glossary Value",SitecoreItems.SeeAllRestaurantItem) <span class="icomoon-chevron-small-right"></span></a>
                                         </div>
                                         <div class="col-sm-7  menu-equal-height">
                                             <div class="row">
