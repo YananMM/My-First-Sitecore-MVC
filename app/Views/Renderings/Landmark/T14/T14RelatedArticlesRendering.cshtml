@@ -37,8 +37,8 @@ if (videoItem != null)
                         <div class="carousel-caption-inner">
                             <div class="gd-carousel-detail">
                                 <h4>@item.Item.Fields["Article Headline"]</h4>
-                                <p>@Html.Sitecore().Field("Article Info", item.Item)</p>
-                                <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.Item))" class="gd-button gd-button-white" type="button">DISCOVER MORE</a>
+                                <p>@Html.Sitecore().Field("Article Intro", item.Item)</p>
+                                <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.Item))" class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Glossary Value",SitecoreItems.DiscoverMoreItem)</a>
                             </div>
                         </div>
                     </div>

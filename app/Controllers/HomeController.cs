@@ -82,11 +82,10 @@ namespace Landmark.Controllers
                     {
                         return RedirectToAction("ButtonRedirect", new { targetId = ItemGuids.ThankYouPage });
                     }
-                    //else
-                    //{
-                    //    return Content(result);
-                    //    //return RedirectToAction("ButtonRedirect", new { targetId = ItemGuids.ContactUsPage });
-                    //}
+                    else
+                    {
+                        return Content(result);
+                    }
                 }
                 catch (Exception e)
                 {
@@ -128,10 +127,6 @@ namespace Landmark.Controllers
             else if (string.IsNullOrEmpty(model.Message))
             {
                 return "Message can not be empty";
-            }
-            else if (code != model.ValidateCode)
-            {
-                return "Validate code is error";
             }
             else
             {
