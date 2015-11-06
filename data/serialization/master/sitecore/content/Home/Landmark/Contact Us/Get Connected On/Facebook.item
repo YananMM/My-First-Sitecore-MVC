@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {0BF41848-FD7D-4392-ADB7-11DC36409EAD}
+database: master
+path: /sitecore/content/Home/Landmark/Contact Us/Get Connected On/Facebook
+parent: {85E16816-67F6-4F3E-AEB6-6BF577B35486}
+name: Facebook
+master: {00000000-0000-0000-0000-000000000000}
+template: {4618F3F9-EDEA-49B3-A7D5-16E24B7BD21E}
+templatekey: Social Media Object
+
+----field----
+field: {513101BC-BF57-4461-8454-DDA9D7527C51}
+name: Social Media Title
+key: social media title
+content-length: 8
+
+Facebook
+----field----
+field: {30FF3EBE-18AA-44E6-862A-5DE9A23CB278}
+name: Social Media Css
+key: social media css
+content-length: 16
+
+icomoon-facebook
+----version----
+language: en
+version: 1
+revision: fd45eaec-2c57-4abe-9a26-f8468d90cc40
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150721T083432Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+fd45eaec-2c57-4abe-9a26-f8468d90cc40
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150810T061020Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

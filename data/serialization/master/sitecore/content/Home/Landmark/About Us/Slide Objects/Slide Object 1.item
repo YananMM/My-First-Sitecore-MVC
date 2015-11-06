@@ -1,0 +1,79 @@
+----item----
+version: 1
+id: {3A660133-C06E-4F12-98E8-33D88BBA6083}
+database: master
+path: /sitecore/content/Home/Landmark/About Us/Slide Objects/Slide Object 1
+parent: {13425BA1-A994-4E6A-AA7C-1293A696D59E}
+name: Slide Object 1
+master: {00000000-0000-0000-0000-000000000000}
+template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
+templatekey: Slide Object
+
+----field----
+field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{A265543B-435E-46D2-A766-BA56055A3E95}" />
+----field----
+field: {EA18DD4F-8CA0-4115-9FDA-AF1CBFC569D0}
+name: Slide Video
+key: slide video
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 56582909-e495-4653-955a-f7dab6857b8e
+
+----field----
+field: {06BB0E44-EEED-4773-B420-9B6EB948A433}
+name: Slide Title
+key: slide title
+content-length: 14
+
+Slide Object 1
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150817T083909Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+56582909-e495-4653-955a-f7dab6857b8e
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20150925T135834Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
