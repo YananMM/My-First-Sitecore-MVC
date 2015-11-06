@@ -73,7 +73,7 @@ namespace Landmark.Classes
         public static readonly String ContactUsPage = "{5EC2DEF7-B8CE-45CD-96CD-9967773B5808}";
         public static readonly String ThankYouPage = "{C6045FFE-5883-49F7-AC6E-653919640DDB}";
         public static readonly String EmailSignUpThankYouPage = "{1CA862DB-1C2C-49BC-8775-C4B44E20D358}";
-        public static readonly String OverviewPage = "{7C88DA46-5C88-465B-8F12-BBEC6991D8CB}";
+        public static readonly String ConciergePage = "{7C88DA46-5C88-465B-8F12-BBEC6991D8CB}";
         public static readonly String MonthlyExclusivePage = "{923DBE58-71DE-4B27-B0BA-C5DEF3D301B2}";
         public static readonly String InterestsFolder = "{840B3FE7-8EEA-4D6D-9797-4B799BDDF1A8}";
         //search template
@@ -103,5 +103,6 @@ namespace Landmark.Classes
         public static readonly string ContactUsFormSocailFolder = "{85E16816-67F6-4F3E-AEB6-6BF577B35486}";
         public static readonly string ExlusivesCategoryFolder = "{9E22AA2A-730D-4DB6-9787-5A16E308A91A}";
         public static readonly string DiningByBrandsItem = "{2A670EF7-757F-4FCB-89A6-973DA8AE7DBF}";
+        public static readonly string ConciergeDeskObject = "{459A62DB-7A18-4A16-8337-32D6D50931C8}";
     }
 }

@@ -5,7 +5,7 @@
 @using Landmark.Models
 @model RenderingModel
 @{
-    Item overViewPage = Sitecore.Context.Database.GetItem(ItemGuids.OverviewPage);
+    Item conciergePage = Sitecore.Context.Database.GetItem(ItemGuids.ConciergePage);
     Item valetParkingPage = Sitecore.Context.Database.GetItem(ItemGuids.ValetParkingPage);
     Item currentItem = Sitecore.Context.Item;
 }
@@ -15,30 +15,24 @@
     </div>
 
     <div class="gd-pagetitle-menu hidden-xs">
-        <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(overViewPage))" @if (currentItem.ID.ToString() == ItemGuids.OverviewPage) { <text>
+        <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(conciergePage))" @if (currentItem.ID.ToString() == ItemGuids.ConciergePage) { <text>
            class="active"
-           </text>  }>@Html.Sitecore().Field("Page Title", overViewPage)</a>
+           </text>   }>@Html.Sitecore().Field("Page Title", conciergePage).ToString().ToUpper()</a>
 
         <span class="gd-pagetitle-menu-gap">|</span>
         <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(valetParkingPage))" @if (currentItem.ID.ToString() == ItemGuids.ValetParkingPage) { <text>
            class="active"
-           </text>   }>@Html.Sitecore().Field("Page Title", valetParkingPage)</a>
+           </text>    }>@Html.Sitecore().Field("Page Title", valetParkingPage).ToString().ToUpper()</a>
     </div>
 
     <div class="gd-controls-m visible-xs">
         <select class="form-control">
-            @if (Sitecore.Context.Item.ID.ToString() == overViewPage.ID.ToString())
-            {
-                <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(overViewPage))">@Html.Sitecore().Field("Page Title", overViewPage)</option>
-                <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(valetParkingPage))">@Html.Sitecore().Field("Page Title", valetParkingPage)</option>
-            }
-            else
-            {
-                <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(valetParkingPage))">@Html.Sitecore().Field("Page Title", valetParkingPage)</option>
-                <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(overViewPage))">@Html.Sitecore().Field("Page Title", overViewPage)</option>
-                
-            }
-            
+            <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(conciergePage))">@Html.Sitecore().Field("Page Title", conciergePage).ToString().ToUpper()</option>
+            <option @if (Sitecore.Context.Item.ID.ToString() == valetParkingPage.ID.ToString()) { <text>
+                    selected="selected"
+                    </text>  } value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(valetParkingPage))">
+                @Html.Sitecore().Field("Page Title", valetParkingPage).ToString().ToUpper()
+            </option>
         </select>
     </div>
 </div>

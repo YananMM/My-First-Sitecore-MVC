@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {A16CBCA7-2C90-41E7-8D99-731ACC38B6C2}
+id: {F9086B75-3D7A-4CC8-980D-612CE5CD240B}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T8 Page/One Lanemark Data/One Lanemark Title
+path: /sitecore/templates/User Defined/Landmark/Page/T8 Page/One Landmark Data/One Landmark Content
 parent: {4949378C-9096-4A06-B68B-5ED90D0FED39}
-name: One Lanemark Title
+name: One Landmark Content
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,20 +13,20 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 16
+content-length: 9
 
-Single-Line Text
+Rich Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-100
+200
 ----version----
 language: en
 version: 1
-revision: 8445afb1-7dd8-4e3d-ae69-f9f16df011ef
+revision: a2519f98-2923-44ef-a1a2-867cedaa7340
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8445afb1-7dd8-4e3d-ae69-f9f16df011ef
+a2519f98-2923-44ef-a1a2-867cedaa7340
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151028T075914Z
+20151106T065252:635823895720971856Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -59,7 +59,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f7f5c754-5b8f-4beb-967c-667218b7b6df
+revision: 963b1970-3728-4905-a58b-d9d2e55ebc64
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -67,7 +67,7 @@ name: __Created
 key: __created
 content-length: 35
 
-20150831T070406:635766014461571957Z
+20150831T070406:635766014461691964Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -81,14 +81,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f7f5c754-5b8f-4beb-967c-667218b7b6df
+963b1970-3728-4905-a58b-d9d2e55ebc64
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150831T071054:635766018549345764Z
+20150831T071054:635766018549555776Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

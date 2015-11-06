@@ -1,40 +1,33 @@
 ----item----
 version: 1
-id: {A59D1FD0-997E-4B43-81BC-72F2B9CBE1BF}
+id: {87C40A85-857C-4A9B-A5E1-135BDC72B1A5}
 database: master
-path: /sitecore/content/Home/Landmark/ABOUT US/Slide Objects/Slide Object 3
-parent: {13425BA1-A994-4E6A-AA7C-1293A696D59E}
-name: Slide Object 3
+path: /sitecore/content/Home/Landmark/Services/Concierge/Landmark Princes GF
+parent: {7C88DA46-5C88-465B-8F12-BBEC6991D8CB}
+name: Landmark Princes GF
 master: {00000000-0000-0000-0000-000000000000}
-template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
-templatekey: Slide Object
-
-----field----
-field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
-name: Slide Image
-key: slide image
-content-length: 58
-
-<image mediaid="{0941AFDA-BAAD-409E-9AB9-22ABF1512A5A}" />
-----field----
-field: {EA18DD4F-8CA0-4115-9FDA-AF1CBFC569D0}
-name: Slide Video
-key: slide video
-content-length: 0
-
+template: {459A62DB-7A18-4A16-8337-32D6D50931C8}
+templatekey: Concierge Desk
 
 ----version----
 language: en
 version: 1
-revision: 6b21b203-72a6-4d4d-8296-8e0aa206424f
+revision: dceb1959-5c74-436a-8396-418b9533b63e
 
 ----field----
-field: {06BB0E44-EEED-4773-B420-9B6EB948A433}
-name: Slide Title
-key: slide title
-content-length: 14
+field: {EBF0BB2A-812B-4396-88CF-13392A940E4D}
+name: Concierge Desks Title
+key: concierge desks title
+content-length: 23
 
-Slide Object 3
+LANDMARK PRINCE'S (G/F)
+----field----
+field: {072649E1-902C-46E5-99FF-15FAD12CAFC5}
+name: Concierge Desks Content
+key: concierge desks content
+content-length: 17
+
+10am-7:30pm daily
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -48,7 +41,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150817T083920Z
+20151106T074011Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -62,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6b21b203-72a6-4d4d-8296-8e0aa206424f
+dceb1959-5c74-436a-8396-418b9533b63e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150925T135841Z
+20151106T074347:635823926278239632Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

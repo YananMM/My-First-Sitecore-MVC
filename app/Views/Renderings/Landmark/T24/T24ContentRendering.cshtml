@@ -5,7 +5,8 @@
 @using Landmark.Models
 @model RenderingModel
 @{
-    var buildings = LandmarkHelper.GetBuildings();
+    var currentItem = Sitecore.Context.Item;
+    var conciergeDesks = LandmarkHelper.GetItemsByRootAndTemplate(currentItem.ID.ToString(), ItemGuids.ConciergeDeskObject); 
 }
 <div class="container">
     @Html.Sitecore().Placeholder("t24page-title")
@@ -21,20 +22,20 @@
                     <h3>@Html.Sitecore().Field("Service Title")</h3>
                     @Html.Sitecore().Field("Service Content")
 
-                    @if (Sitecore.Context.Item.ID.ToString() == ItemGuids.OverviewPage)
+                    @if (Sitecore.Context.Item.ID.ToString() == ItemGuids.ConciergePage)
                     {
                         <hr>
-                        <h4>@Html.Sitecore().Field("Openning Hours Label")</h4>
+                        <h4>@Html.Sitecore().Field("Opening Hours Label")</h4>
                         <div class="table-responsive">
                             <table>
                                 <tbody>
-                                    @if (buildings != null && buildings.Count != 0)
+                                    @if (conciergeDesks != null && conciergeDesks.Count != 0)
                                     {
-                                        foreach (var item in buildings)
+                                        foreach (var item in conciergeDesks)
                                         {
                                             <tr>
-                                                <th>@Html.Sitecore().Field("Building Title", item)</th>
-                                                <td>@Html.Sitecore().Field("Openning Hours", item)</td>
+                                                <th>@Html.Sitecore().Field("Concierge Desks Title", item)</th>
+                                                <td>@Html.Sitecore().Field("Concierge Desks Content", item)</td>
                                             </tr>
                                         }
                                     }
