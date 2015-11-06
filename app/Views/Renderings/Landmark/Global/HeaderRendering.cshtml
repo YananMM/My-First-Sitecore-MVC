@@ -9,15 +9,15 @@
     int i = 1;
 }
 <script>
-  var DataLayer = { 
-    /* page level data, populate value when applicable */ 
-      'shop_name': '@AdobeTrackingDataLayerHelper.GetShopName()',
-      'building_name': '@AdobeTrackingDataLayerHelper.GetBuildingName()', 
-      'restaurant_name': '@AdobeTrackingDataLayerHelper.GetRestaurantName()', 
-      'article_title': '@AdobeTrackingDataLayerHelper.GetArticleTitle()', 
-      'language': '',
-      'pageName': '@AdobeTrackingDataLayerHelper.GetPageName()'
-  }
+    var DataLayer = {
+        /* page level data, populate value when applicable */
+        'shop_name': '@AdobeTrackingDataLayerHelper.GetShopName()',
+        'building_name': '@AdobeTrackingDataLayerHelper.GetBuildingName()',
+        'restaurant_name': '@AdobeTrackingDataLayerHelper.GetRestaurantName()',
+        'article_title': '@AdobeTrackingDataLayerHelper.GetArticleTitle()',
+        'language': '',
+        'pageName': '@AdobeTrackingDataLayerHelper.GetPageName()'
+    }
 </script>
 <header class="site-header">
     <!-- desktop -->
@@ -33,7 +33,7 @@
             </div>
             @foreach (var lan in languages)
             {
-                if (SitecoreItems.LanguageFolderGuidItem!= null && SitecoreItems.LanguageFolderGuidItem.Children.Count != 0)
+                if (SitecoreItems.LanguageFolderGuidItem != null && SitecoreItems.LanguageFolderGuidItem.Children.Count != 0)
                 {
                     foreach (Item languageText in SitecoreItems.LanguageFolderGuidItem.Children)
                     {
@@ -47,18 +47,18 @@
                 {
                     @Html.Raw(" | ")
                 }
-                i ++;
+                i++;
             }
-            
+
             <div class="sb-search">
                 @*@using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
-                {
-                    @Html.Sitecore().FormHandler("Search", "SearchContent")
-                    <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", SitecoreItems.SearchPlaceHolderItem)" class="sb-search-input form-control">
-                    <input class="sb-search-submit" type="submit" value="">
-                    <a class="sb-search-clear icomoon-circle-with-cross" href="javascript:;"></a>
-                    <span class="icomoon-search"></span>
-                }*@
+                    {
+                        @Html.Sitecore().FormHandler("Search", "SearchContent")
+                        <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", SitecoreItems.SearchPlaceHolderItem)" class="sb-search-input form-control">
+                        <input class="sb-search-submit" type="submit" value="">
+                        <a class="sb-search-clear icomoon-circle-with-cross" href="javascript:;"></a>
+                        <span class="icomoon-search"></span>
+                    }*@
                 @using (Html.BeginForm("SearchContent", "Search"))
                 {
                     <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", SitecoreItems.SearchPlaceHolderItem)" class="sb-search-input form-control">
@@ -76,7 +76,7 @@
     <div class="container visible-xs-block  visible-sm-block">
         <nav class="clearfix">
             <a class="lines-button pull-left" type="button" role="button" aria-label="Navigation">
-            <span class="lines"></span>
+                <span class="lines"></span>
             </a>
             <div class="sb-search">
                 @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
