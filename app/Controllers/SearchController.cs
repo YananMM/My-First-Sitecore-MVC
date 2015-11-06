@@ -26,6 +26,7 @@ namespace Landmark.Controllers
 
         public ActionResult SearchContent(string search)
         {
+            //return Content("This is search action");
             return Redirect(LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.SearchResultsPage))) + "?searchString=" + search);
         }
 
