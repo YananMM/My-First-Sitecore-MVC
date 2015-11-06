@@ -231,12 +231,12 @@ $(document).ready(function() {
     $(window).on('resize', handleMegaMenu);
   } else {
     // mobile menu
-    if (!isIE8()){
-      var menuScroll = new IScroll($mobileMainMenu[0], {
-        mouseWheel: true,
-        click: true
-      });
-    }
+    // if (!isIE8()){
+    //   var menuScroll = new IScroll($mobileMainMenu[0], {
+    //     mouseWheel: true,
+    //     click: true
+    //   });
+    // }
     var mobileMainMenuAnimation = new TimelineMax()
       .add(
         TweenMax.fromTo($mobileMainMenu, .5, {left: "-100%"}, {left: "0%"}),
@@ -248,9 +248,9 @@ $(document).ready(function() {
       .pause();
     function handleMobileMenuHeight(){
       $mobileMainMenu.css('height', $(window).height() - navHM);
-      if (!isIE8()){
-        menuScroll.refresh();
-      }
+      // if (!isIE8()){
+      //   menuScroll.refresh();
+      // }
     }
     $mobileMainMenuHandle.on('click', function(e) {
       e.preventDefault();
