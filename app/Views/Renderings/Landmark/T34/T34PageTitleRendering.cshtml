@@ -14,21 +14,21 @@
 </div>
 <div class="gd-pagetitle-menu hidden-xs">
 
-    <a href="@Sitecore.Links.LinkManager.GetItemUrl(hotel1)" @if (Sitecore.Context.Item.ID == hotel1.ID) { <text>
+    <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(hotel1))" @if (Sitecore.Context.Item.ID == hotel1.ID) { <text>
        class="active"
        </text>          }>@Html.Sitecore().Field("Page Title", hotel1)</a>
 
     <span class="gd-pagetitle-menu-gap">|</span>
     <a @if (Sitecore.Context.Item.ID == hotel2.ID) { <text>
        class="active"
-       </text>           } href="@Sitecore.Links.LinkManager.GetItemUrl(hotel2)">@Html.Sitecore().Field("Page Title", hotel2)</a>
+       </text>           } href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(hotel2))">@Html.Sitecore().Field("Page Title", hotel2)</a>
 </div>
 
 
 <div class="gd-controls-m visible-xs">
     <select class="form-control">
-        <option value="@Sitecore.Links.LinkManager.GetItemUrl(hotel1)">@Html.Sitecore().Field("Page Title", hotel1)</option>
-        <option value="@Sitecore.Links.LinkManager.GetItemUrl(hotel2)">@Html.Sitecore().Field("Page Title", hotel2)</option>
+        <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(hotel1))">@Html.Sitecore().Field("Page Title", hotel1)</option>
+        <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(hotel2))">@Html.Sitecore().Field("Page Title", hotel2)</option>
     </select>
 </div>
 

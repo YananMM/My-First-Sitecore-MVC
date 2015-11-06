@@ -15,7 +15,7 @@
  <![endif]-->
 @{
     ArtTourHelper helper = new ArtTourHelper();
-    var buildings = LandmarkHelper.GetBuildings();
+    var buildings = LandmarkHelper.GetAllBuildings();
     var building = helper.GetCurrentBuilding(Request["building"]);
     var page = Request["page"] ?? "1";
     List<Item> artpieces = new List<Item>();
@@ -61,7 +61,7 @@
                 foreach (Item piece in artpieces)
                 {
                     <div class="col-sm-3 text-center">
-                        <a href="@LinkManager.GetItemUrl(piece)" class="gd-hover-img">
+                        <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(piece))" class="gd-hover-img">
                             <div class="gd-hover-img-area">
                                 <div class="gd-hover-img-mask"></div>
                                 <img data-src="@SitecoreFieldHelper.ImageFieldSrc("Art Image", piece)" alt="artpiece picture">

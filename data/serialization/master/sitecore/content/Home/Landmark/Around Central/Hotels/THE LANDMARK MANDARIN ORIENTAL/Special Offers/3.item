@@ -1,26 +1,40 @@
 ----item----
 version: 1
-id: {CE1C7586-FFF2-4C18-BF2F-5F24DB4726C9}
+id: {028A23D1-B959-4112-BDFF-47F83B986AB0}
 database: master
-path: /sitecore/content/Home/Landmark/Our Location/Directions/Getting Here/Hung Hom
-parent: {AE130080-B8B6-4D9E-B863-C88DC329B657}
-name: Hung Hom
+path: /sitecore/content/Home/Landmark/Around Central/Hotels/THE LANDMARK MANDARIN ORIENTAL/Special Offers/3
+parent: {F7EC982F-D34B-406A-B16C-7AEAC10A28FE}
+name: 3
 master: {00000000-0000-0000-0000-000000000000}
-template: {3E8C53BC-1805-434C-BD94-65316F9AFC71}
-templatekey: T35 Starting Location Object
+template: {D3130DE9-ABC4-4D10-92C8-75A8E9910245}
+templatekey: T34 Special Offer Object
 
 ----version----
 language: en
 version: 1
-revision: 4d423430-321e-41f5-97ec-759d5f8b65a6
+revision: 63cb73dd-1245-478d-9348-4b59bda221e0
 
 ----field----
-field: {38AC07B7-0A25-41CB-B0DE-51431856ADF2}
-name: Starting Location
-key: starting location
+field: {8CC749CB-7079-4C70-86DF-AED85DFF80B7}
+name: Offer Title
+key: offer title
+content-length: 15
+
+Charity Auction
+----field----
+field: {6E8EA4C2-1BBB-4243-B4E3-5416880424A7}
+name: Offer Description
+key: offer description
+content-length: 70
+
+Celebrate French gastronomy with an Ultimate Goût de France Experience
+----field----
+field: {F28E85D1-9BF0-471D-8964-F396DF90F93F}
+name: Offer Link Label
+key: offer link label
 content-length: 8
 
-Hung Hom
+BOOK NOW
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -34,7 +48,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150824T092649Z
+20150820T024136Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4d423430-321e-41f5-97ec-759d5f8b65a6
+63cb73dd-1245-478d-9348-4b59bda221e0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150824T093255:635760055755004075Z
+20150820T031149:635756371096198836Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -11,7 +11,7 @@
     overflow: auto;
     .white-text;
     span{
-      margin-top: 5px;
+      margin-top: -10px;
     }
     ul{
       width: 100%;
@@ -36,7 +36,10 @@
         }
       }
       span{
+        box-sizing: content-box;
+        border: 15px solid #333333;
         margin-right: 20px;
+        
       }
         &:after{
           content: '';
@@ -72,6 +75,7 @@
       padding: 13px 4px 13px 21px;
        border-bottom: solid 1px #222;
       span{
+        border-color: #222222;;
         margin-right: 21px;
       }
      }
@@ -185,6 +189,7 @@
     h3{
       margin: 25px 0 0;
         line-height: 1.66;
+      text-transform:uppercase;
     }
   p{
     margin:14px 0 22px;
@@ -192,6 +197,7 @@
   }
     a{
       font-family: @font-family-serif;
+      text-transform:uppercase;
     .sprite-menu-r{
      vertical-align: middle;
       margin-left: 10px;

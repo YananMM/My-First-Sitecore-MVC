@@ -65,12 +65,12 @@ namespace Landmark.Helper
         {
             var options = Sitecore.Links.LinkManager.GetDefaultUrlOptions();
             options.Language = LanguageManager.GetLanguage(language);
-            var returnUrl = LinkManager.GetItemUrl(item, options);
+            var returnUrl = LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(item, options));
 
             return TranslateUrl(returnUrl);
         }
 
-        private static string TranslateUrl(string url)
+        public static string TranslateUrl(string url)
         {
             string result = url;
             //Translate language codes
@@ -258,9 +258,12 @@ namespace Landmark.Helper
 
         public static List<Item> GetBuildings()
         {
+            return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.Where(building=>((CheckboxField)building.Fields["Is Landmark"]).Checked).OrderBy(p => p.DisplayName).ToList();
+        }
+        public static List<Item> GetAllBuildings()
+        {
             return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.OrderBy(p => p.DisplayName).ToList();
         }
-
 
         /// <summary>
         /// Gets all articles.
@@ -465,7 +468,7 @@ namespace Landmark.Helper
 
         public static string GetItemUrl(Item item)
         {
-            string url = LinkManager.GetItemUrl(item);
+            string url = LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(item));
             if (IsFalsePage(item))
             {
                 if ((new LayoutField(item).Value).IsNullOrEmpty())

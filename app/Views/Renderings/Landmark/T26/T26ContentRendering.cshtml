@@ -118,13 +118,13 @@
                 }
                     }
 
-                    <a href="@LinkManager.GetItemUrl(detailedarticle)"><img src="@imagesrc"></a>
+                    <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(detailedarticle))"><img src="@imagesrc"></a>
                     <div class="gd-promo-box-text">
                         <h5>@brandTitle</h5>
-                        <a href="@LinkManager.GetItemUrl(detailedarticle)">
+                        <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(detailedarticle))">
                             <h4>@Html.Sitecore().Field("Article Headline", detailedarticle)</h4>
                         </a>
-                        <a class="gd-button gd-button-white" href="@LinkManager.GetItemUrl(detailedarticle)">@Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverMoreItem)</a>
+                        <a class="gd-button gd-button-white" href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(detailedarticle))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverMoreItem)</a>
                         <div class="gd-promo-share">
                             <div class="gd-promo-share-handle">
                                 <span class="icomoon-share"></span>@Html.Sitecore().Field("Glossary Value", SitecoreItems.ShareItem)

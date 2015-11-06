@@ -5,6 +5,7 @@
 @model RenderingModel
 @{
     ArtTourHelper helper = new ArtTourHelper();
+    var currentItem = Sitecore.Context.Item;
 }
 
 <div class="container">
@@ -13,7 +14,9 @@
             <div class="col-sm-12 visible-xs-block">
                 <div class="gd-pagetitle ">
                     <div class=" gd-pagetitle-heading">
-                        <h2>@Html.Sitecore().Field("Art Title"), @Html.Sitecore().Field("Created Time")</h2>
+                        <h2>
+                            @Html.Sitecore().Field("Art Title")
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -31,7 +34,7 @@
             <div class="col-sm-6">
                 <div class="gd-pagetitle">
                     <div class="hidden-xs gd-pagetitle-heading">
-                        <h2>@Html.Sitecore().Field("Art Title"), @Html.Sitecore().Field("Created Time")</h2>
+                        <h2>@Html.Sitecore().Field("Art Title")</h2>
                     </div>
                     <div class="gd-artplace-details row">
                         <div class="col-sm-12 gd-artplace-info">

@@ -1,26 +1,40 @@
 ----item----
 version: 1
-id: {EFDF906B-5EAB-4210-BF4F-89BBEADE32D5}
+id: {7BAC3D9E-9063-48F4-88E7-E779644C24AA}
 database: master
-path: /sitecore/content/Home/Landmark/Our Location/Directions/Getting Here/Mongkok
-parent: {AE130080-B8B6-4D9E-B863-C88DC329B657}
-name: Mongkok
+path: /sitecore/content/Home/Landmark/Around Central/Hotels/THE LANDMARK MANDARIN ORIENTAL/Special Offers/2
+parent: {F7EC982F-D34B-406A-B16C-7AEAC10A28FE}
+name: 2
 master: {00000000-0000-0000-0000-000000000000}
-template: {3E8C53BC-1805-434C-BD94-65316F9AFC71}
-templatekey: T35 Starting Location Object
+template: {D3130DE9-ABC4-4D10-92C8-75A8E9910245}
+templatekey: T34 Special Offer Object
 
 ----version----
 language: en
 version: 1
-revision: 51a71635-d25c-42b1-9046-d19bdf56aca6
+revision: eccbfb1d-3b04-48e4-ba0c-a9fbe09c2a53
 
 ----field----
-field: {38AC07B7-0A25-41CB-B0DE-51431856ADF2}
-name: Starting Location
-key: starting location
-content-length: 7
+field: {8CC749CB-7079-4C70-86DF-AED85DFF80B7}
+name: Offer Title
+key: offer title
+content-length: 19
 
-Mongkok
+Landmark Art Voyage
+----field----
+field: {6E8EA4C2-1BBB-4243-B4E3-5416880424A7}
+name: Offer Description
+key: offer description
+content-length: 50
+
+Take a LANDMARK Art Voyage with exclusive benefits
+----field----
+field: {F28E85D1-9BF0-471D-8964-F396DF90F93F}
+name: Offer Link Label
+key: offer link label
+content-length: 8
+
+BOOK NOW
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -34,7 +48,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150824T092938Z
+20150820T024059Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-51a71635-d25c-42b1-9046-d19bdf56aca6
+eccbfb1d-3b04-48e4-ba0c-a9fbe09c2a53
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150824T093318:635760055986197298Z
+20150820T031145:635756371058506681Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

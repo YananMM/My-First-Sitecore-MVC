@@ -34,14 +34,14 @@
                 {
                     if (allByBuildings != null)
                     {
-                        string href = Sitecore.Links.LinkManager.GetItemUrl(allByBuildings) + "#" + building.DisplayName.ToLower().Replace(" ", "");
+                        string href = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(allByBuildings)) + "#" + building.DisplayName.ToLower().Replace(" ", "");
                         <li><a href="@href">@building.Fields["Building Title"].Value</a></li>
                     }
                 }
         <li><a href="#">ALSO CLOSE BY...</a></li>
         </ul>
         <form class="form-goto" data-handler-get-catetories="/Service/GetCategoryJson.ashx/" method="POST" action="@Url.Action("GoTo", "Shopping")">
-        <h3>@Html.Sitecore().Field("Glossary Value", SitecoreItems.GoToGuidItem)<a class="sub-title" href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AllBrandsGuidItem)<span class="sprite-small-r">&gt;</span></a></h3>
+        <h3>@Html.Sitecore().Field("Glossary Value", SitecoreItems.GoToGuidItem)<a class="sub-title" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage)))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AllBrandsGuidItem)<span class="sprite-small-r">&gt;</span></a></h3>
         <div class="form-group">
             <div class="brand-select clearfix">
             <select id="category" name="category" class="selectpicker form-control" data-style="btn-primary">

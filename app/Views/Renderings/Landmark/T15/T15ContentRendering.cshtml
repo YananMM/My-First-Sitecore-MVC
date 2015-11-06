@@ -57,7 +57,7 @@
                 <div class="gd-promo-box @foreach (var type in types)
                                          {<text>gdf-@type.Replace("{", "").Replace("}", "")</text>
                                          }">
-                    <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
+                    <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">
                         <img src="@Html.Sitecore().ImageFieldSrc("Landing thumb Image", item)">
                     </a>
                     <h5>

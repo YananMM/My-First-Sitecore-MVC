@@ -1,25 +1,18 @@
 ----item----
 version: 1
-id: {8D0ABED9-69E0-4F84-8B17-BF1A651A3B63}
+id: {4DB26991-86B7-4C3E-91D3-10F5F5D10C90}
 database: master
-path: /sitecore/content/Home/Landmark/Around Central/Hotels/THE LANDMARK MADARIN ORIENTAL/Slide Objects/Slide Object 2
-parent: {49C7A126-5431-4101-83AE-5D6C4836855F}
-name: Slide Object 2
+path: /sitecore/content/Home/Landmark/Around Central/Hotels/THE LANDMARK MANDARIN ORIENTAL/Hotel Slides/Hotel Slide Object 2
+parent: {05159B9D-BF8F-458A-95D0-40762A1B15A2}
+name: Hotel Slide Object 2
 master: {00000000-0000-0000-0000-000000000000}
-template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
-templatekey: Slide Object
+template: {93B5F609-2F05-42E3-ABB2-9D903169CF9D}
+templatekey: Hotel Slide Object
 
-----field----
-field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
-name: Slide Image
-key: slide image
-content-length: 58
-
-<image mediaid="{0A831D58-80EF-45A5-96B7-D45753AC89D8}" />
 ----version----
 language: en
 version: 1
-revision: 3761a675-9b62-4a13-ad1b-6a0757d09008
+revision: d54c0d05-9d02-487f-a84d-b18d6c3f3394
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -34,7 +27,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150819T062505Z
+20150902T080357Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3761a675-9b62-4a13-ad1b-6a0757d09008
+d54c0d05-9d02-487f-a84d-b18d6c3f3394
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150819T082356:635755694361266712Z
+20150902T080357:635767778377086656Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

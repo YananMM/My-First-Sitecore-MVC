@@ -78,7 +78,7 @@
                                 <h2>@Html.Sitecore().Field("Article Headline", item.Parent.Parent).ToString().ToUpper()</h2>
                                 <div class="gd-longarticle-fixedlines">
                                     <p>@Html.Sitecore().Field("Article Intro", item.Parent.Parent)</p>
-                                    <a href="@LinkManager.GetItemUrl(item.Parent.Parent)" type="button" class="gd-button gd-button-reversed">
+                                    <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(item.Parent.Parent))" type="button" class="gd-button gd-button-reversed">
                                         @Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverMoreItem)
                                     </a>
                                 </div>
@@ -114,14 +114,14 @@
     {
         <div class="gd-promotion-box-area">
             <div class="gd-promotion-box-heading">
-                <a class="gd-link-brands" href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.MagazineCategoryPage))?type=@item.MagazineCategory.ID&page=1">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem)<span class="icomoon-chevron-small-right"></span></a>
+                <a class="gd-link-brands" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.MagazineCategoryPage)))?type=@item.MagazineCategory.ID&page=1">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem)<span class="icomoon-chevron-small-right"></span></a>
                 <h3>@item.MagazineCategory.Fields["Tag Name"].ToString().ToUpper()</h3>
             </div>
 
             <div class="slider variable-width gd-slick-slider">
                 @foreach (var it in item.Stories)
                 {
-                    <a class="gd-slick-item gd-hover-img" href="@LinkManager.GetItemUrl(it)">
+                    <a class="gd-slick-item gd-hover-img" href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(it))">
                         <div class="gd-hover-img-area">
                             <div class="gd-hover-img-mask"></div>
                             <img src="@LandmarkHelper.GetCallOutImage(it)" />

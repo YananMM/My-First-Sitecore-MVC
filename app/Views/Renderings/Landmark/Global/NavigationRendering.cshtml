@@ -64,7 +64,7 @@
                                         <h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
 
                                         <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
-                                        <a href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", SitecoreItems.LearnMoreItem) <span class="sprite-menu-r"></span></a>
+                                        <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceField.TargetItem))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.LearnMoreItem) <span class="sprite-menu-r"></span></a>
                                             }
                                         }
 
@@ -103,7 +103,7 @@
                                                 {
                                                 <h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
                                                 <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
-                                                <a href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", SitecoreItems.LearnMoreItem) <span class="sprite-menu-r"></span></a>
+                                                <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceField.TargetItem))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.LearnMoreItem) <span class="sprite-menu-r"></span></a>
                                                 }
                                         </div>
                                     </div>
@@ -120,7 +120,7 @@
         }
     </ul>
     <h1>
-        <a href="@LinkManager.GetItemUrl(SitecoreItems.LandmarkHomeItem)">
+        <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(SitecoreItems.LandmarkHomeItem))">
             @Html.Sitecore().Field("Landmark Logo Image", SitecoreItems.LandmarkConfigItem, new { @class = "img-logo" })
             @Html.Sitecore().Field("Landmark Logo", SitecoreItems.LandmarkConfigItem, new { @class = "responsive-logo" })
         </a>
@@ -144,7 +144,7 @@
                                             <ul class=" mega-category">
                                                 @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
                                                 {
-                                                    <li><a href="@LinkManager.GetItemUrl(childItem)">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
+                                                    <li><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(childItem))">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
                                                 }
                                             </ul>
                                         </div>
@@ -162,7 +162,7 @@
                                                     <div class="mega-product-area2 pull-right">
                                                         @*<h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
                                                             <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>*@
-                                                        @*<a href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", SitecoreItems.LearnMoreItem) <span class="sprite-menu-r"></span></a>*@
+                                                        @*<a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", SitecoreItems.LearnMoreItem) <span class="sprite-menu-r"></span></a>*@
                                                     </div>
                                                 </div>
                                             </div>
@@ -201,7 +201,7 @@
                                                         {
                                                             <h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
                                                             <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
-                                                            <a href="@LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", SitecoreItems.LearnMoreItem) <span class="sprite-menu-r"></span></a>
+                                                            <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceField.TargetItem))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.LearnMoreItem) <span class="sprite-menu-r"></span></a>
                                                         }
                                                     </div>
                                                 </div>

@@ -5,10 +5,9 @@
 @model RenderingModel
 @{
     ShoppingHelper shoppingHelper = new ShoppingHelper();
-    List<Item> buildings = new List<Item>();
+    List<Item> buildings = LandmarkHelper.GetBuildings();
     Item currentItem = Sitecore.Context.Item;
     Item parentItem = currentItem.Parent;
-    buildings = LandmarkHelper.GetBuildings();
     var brandModels = shoppingHelper.GetBrandModels();
     string category = "";
     if (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem))
@@ -29,7 +28,7 @@
                 @foreach (Item brand in brandsByBuilding)
                 {
                     string src = Html.Sitecore().ImageFieldSrc("Brand Image", brand);
-                    <a title='@Html.Sitecore().Field("Brand Title", brand)' class="brand-box" href="@Sitecore.Links.LinkManager.GetItemUrl(brand)?category=@Sitecore.Context.Item.Parent.ID.ToString()">
+                    <a title='@Html.Sitecore().Field("Brand Title", brand)' class="brand-box" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(brand))?category=@Sitecore.Context.Item.Parent.ID.ToString()">
                         <img data-src="@src" alt='@Html.Sitecore().Field("Brand Title", brand)' class="lazy-loaded">
                         <span>@Html.Sitecore().Field("Brand Title", brand)</span>
                     </a>

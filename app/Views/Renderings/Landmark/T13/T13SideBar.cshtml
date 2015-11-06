@@ -31,7 +31,7 @@
                 {
                     if (shoppingHelper.checkBrandStatus(brandModels, alphabetsStrings[i]))
                     {
-                        string href = Sitecore.Links.LinkManager.GetItemUrl(currentPage.Parent) + "/by-brands#" + alphabetsStrings[i].ToLower();
+                        string href = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(currentPage.Parent)) + "/by-brands#" + alphabetsStrings[i].ToLower();
                         <li><a href="@href">@alphabetsStrings[i].ToUpper()</a></li>
                     }
                     else
@@ -51,13 +51,13 @@
 
                 @foreach (Item building in buidings)
                 {
-                    string href = Sitecore.Links.LinkManager.GetItemUrl(currentPage.Parent) + "/by-buildings#" + building.DisplayName.ToLower().Replace(" ", "");
+                    string href = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(currentPage.Parent)) + "/by-buildings#" + building.DisplayName.ToLower().Replace(" ", "");
                     <li><a href="@href">@building.Fields["Building Title"].Value</a></li>
                 }
             </ul>
             <form class="form-goto" data-handler-get-catetories="/Service/GetCategoryJson.ashx/" method="POST" action="@Url.Action("GoTo", "Shopping")">
                 <h3>
-                    @Html.Sitecore().Field("Glossary Value", SitecoreItems.GoToGuidItem)<a class="sub-title" href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AllBrandsGuidItem)<span class="sprite-small-r">&gt;</span></a>
+                    @Html.Sitecore().Field("Glossary Value", SitecoreItems.GoToGuidItem)<a class="sub-title" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage)))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AllBrandsGuidItem)<span class="sprite-small-r">&gt;</span></a>
                 </h3>
                 <div class="form-group">
                     <select id="category" name="category" class="selectpicker form-control" data-style="btn-primary">

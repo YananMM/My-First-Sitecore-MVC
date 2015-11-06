@@ -7,7 +7,7 @@
     List<Item> mediaItems = Sitecore.Context.Database.GetItem(ItemGuids.FooterSocialMediaFolderItem).Children.ToList();
 }
 
-<a href="@Sitecore.Links.LinkManager.GetItemUrl(NewsletterSignupItem)">@NewsletterSignupItem.Fields["Page Title"].Value.ToUpper()</a>
+<a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(NewsletterSignupItem))">@NewsletterSignupItem.Fields["Page Title"].Value.ToUpper()</a>
 <div class="footer-social">
     @foreach (var item in mediaItems)
     {

@@ -17,6 +17,13 @@ content-length: 65
 
 <image mediaid="{B6CD29BC-98BE-4C35-85FB-E0E2FFC1D151}" alt="" />
 ----field----
+field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
+name: Building
+key: building
+content-length: 38
+
+{04AF3BF4-1C4D-43BC-9884-1431E3A44B11}
+----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
 key: floor
@@ -47,7 +54,7 @@ shop-B62
 ----version----
 language: en
 version: 1
-revision: 51058652-7d11-403e-9578-736e171ff3d2
+revision: df75d7c2-4d0f-40b0-9441-d8e0c0f107d2
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -160,14 +167,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-51058652-7d11-403e-9578-736e171ff3d2
+df75d7c2-4d0f-40b0-9441-d8e0c0f107d2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063848Z
+20151105T151902Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

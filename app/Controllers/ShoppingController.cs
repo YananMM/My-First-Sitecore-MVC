@@ -42,7 +42,7 @@ namespace Landmark.Controllers
             Item shoppingCategory = Sitecore.Context.Database.GetItem(childcategory);
             Session["category"] = category;
             Session["childcategory"] = childcategory;
-            return Redirect(Sitecore.Links.LinkManager.GetItemUrl(shoppingCategory.Children.First()));
+            return Redirect(LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(shoppingCategory.Children.First())));
         }
 
     }

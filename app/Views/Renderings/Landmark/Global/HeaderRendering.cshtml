@@ -29,7 +29,6 @@
                     <a href="" class="icomoon-facebook"></a>
                     <a href="" class="icomoon-twitter"></a>
                     <a href="" class="icomoon-sina-weibo"></a>
-                    <a href='mailto:@SitecoreItems.LandmarkConfigItem.Fields["Share Email To"].Value' class="icomoon-envelop"></a>
                 </div>
             </div>
             @foreach (var lan in languages)
@@ -110,7 +109,7 @@
                 </div>
             </div>
             <h1>
-                <a href="@Sitecore.Links.LinkManager.GetItemUrl(SitecoreItems.LandmarkHomeItem)">
+                <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(SitecoreItems.LandmarkHomeItem))">
                     <img class="responsive-logo" src="@Html.Sitecore().ImageFieldSrc("Landmark Logo",SitecoreItems.LandmarkConfigItem)" alt="landmark">
                 </a>
             </h1>

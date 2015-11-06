@@ -1,5 +1,6 @@
 ﻿@using Landmark.Helper
 @using Sitecore.Data.Fields
+@using Sitecore.Links
 @using Sitecore.Mvc.Extensions
 @model RenderingModel
 @{
@@ -7,6 +8,8 @@
     ShoppingHelper shoppingHelper = new ShoppingHelper();
     Sitecore.Data.Items.Item brandItem = null;
     var exclusiveItem = inspirationHelper.GetMonthlyExclusives(category: shoppingHelper.GetCategoryFromItem(Sitecore.Context.Item.ID.ToString()).ID.ToString()).FirstOrDefault();
+    bool ishasDetails = false;
+    string href = string.Empty;
     if (exclusiveItem != null)
     {
         if (exclusiveItem.Fields["Brand"] != null)
@@ -19,13 +22,15 @@
                 { brandItem = Sitecore.Context.Database.GetItem(brand); }
             }
         }
+        ishasDetails = ((CheckboxField) exclusiveItem.Fields["Has Detailed"]).Checked;
+        href = ishasDetails ? LinkManager.GetItemUrl(exclusiveItem) : string.Empty;
     }
     
 }
 @if(exclusiveItem!=null)
 {
 <div class=" menbox-2">
-    <a href="#"  class="menbox-img" >
+    <a href="#@href"  class="menbox-img" >
         <div class="menbox-img-mask"></div>
         <img data-src="@LandmarkHelper.GetCallOutImage(exclusiveItem)" alt="landmark" class="lazy-loaded">
     </a>
@@ -33,7 +38,7 @@
         
             @if (brandItem != null)
             {
-                <a href="#" class="menbox-title">
+                <a href="#@href" class="menbox-title">
                     <h3>@Html.Sitecore().Field("Brand Title", brandItem)</h3>
                 </a>
             }

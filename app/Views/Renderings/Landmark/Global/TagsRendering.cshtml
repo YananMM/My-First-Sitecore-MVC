@@ -13,7 +13,7 @@
         @for (int i=0;i<item.Children.Count;i++)
         {
             var splitStr = i == (item.Children.Count - 1) ? "" : ",";
-        <a href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.SearchResultsPage))?searchString=@item.CurrentItem["Tag Name"]">@item.Children[i].CurrentItem["Tag Name"]
+        <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.SearchResultsPage)))?searchString=@item.CurrentItem["Tag Name"]">@item.Children[i].CurrentItem["Tag Name"]
         @splitStr</a>
         }
     </div>

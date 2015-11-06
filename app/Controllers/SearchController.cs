@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Landmark.Classes;
+using Landmark.Helper;
 using Landmark.Models;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.SearchTypes;
@@ -25,7 +26,7 @@ namespace Landmark.Controllers
 
         public ActionResult SearchContent(string search)
         {
-            return Redirect(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.SearchResultsPage)) + "?searchString=" + search);
+            return Redirect(LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.SearchResultsPage))) + "?searchString=" + search);
         }
 
     }

@@ -49,7 +49,7 @@ namespace Landmark.Controllers
         public ActionResult ButtonRedirect(string targetId)
         {
             Item target = Sitecore.Context.Database.GetItem(targetId);
-            return Redirect(Sitecore.Links.LinkManager.GetItemUrl(target));
+            return Redirect(LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(target)));
         }
 
         /// <summary>
@@ -62,13 +62,13 @@ namespace Landmark.Controllers
         public ActionResult FilterRedirect(string targetId, string type)
         {
             Item target = Sitecore.Context.Database.GetItem(targetId);
-            return Redirect(Sitecore.Links.LinkManager.GetItemUrl(target) + "?type=" + type + "&page=1");
+            return Redirect(LandmarkHelper.TranslateUrl(LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(target))) + "?type=" + type + "&page=1");
         }
 
         public ActionResult DirectByPager(string targetId, int page)
         {
             Item target = Sitecore.Context.Database.GetItem(targetId);
-            return Redirect(Sitecore.Links.LinkManager.GetItemUrl(target) + "?page=" + page);
+            return Redirect(LandmarkHelper.TranslateUrl(LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(target))) + "?page=" + page);
         }
 
         public ActionResult AddCustomerMessage(ContactUsFormModel model)

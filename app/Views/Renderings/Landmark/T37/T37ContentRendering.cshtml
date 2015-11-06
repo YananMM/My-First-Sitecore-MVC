@@ -25,13 +25,13 @@
             @if (stories.Count() != 0)
             {
                 <div class="col-sm-6">
-                    <a href="@Sitecore.Links.LinkManager.GetItemUrl(stories.First())">
+                    <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(stories.First()))">
                         <img data-src="@LandmarkHelper.GetCallOutImage(stories.First())" />
                     </a>
                 </div>
                 <div class="col-sm-6">
                     <div class="gd-magazine-info-text">
-                        <a href="@Sitecore.Links.LinkManager.GetItemUrl(stories.First())">
+                        <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(stories.First()))">
                             <h3>@Html.Sitecore().Field("Article Headline", stories.First())</h3>
                         </a>
                         @{
@@ -67,7 +67,7 @@
                 foreach (var item in list1)
                 {
                     <div class="col-sm-4">
-                        <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
+                        <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">
                             <div class="gd-promotion-box">
                                 <img data-src="@LandmarkHelper.GetCallOutImage(item)" />
                                 <h4>@Html.Sitecore().Field("Article Headline", item)</h4>
@@ -92,7 +92,7 @@
                 foreach (var item in list2)
                 {
                     <div class="col-sm-4">
-                        <a href="@Sitecore.Links.LinkManager.GetItemUrl(item)">
+                        <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">
                             <div class="gd-promotion-box">
                                 <img data-src="@LandmarkHelper.GetCallOutImage(item)" />
                                 <h4>@Html.Sitecore().Field("Article Headline", item)</h4>

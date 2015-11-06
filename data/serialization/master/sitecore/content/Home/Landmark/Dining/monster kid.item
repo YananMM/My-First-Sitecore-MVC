@@ -10,6 +10,13 @@ template: {91A88069-9A0E-48B7-9509-BDE830A54D0E}
 templatekey: T14 Page
 
 ----field----
+field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
+name: Building
+key: building
+content-length: 38
+
+{D436403A-500F-4DB4-ADF6-32165C306C55}
+----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
 key: floor
@@ -40,7 +47,7 @@ shop-220
 ----version----
 language: en
 version: 1
-revision: 8a90bf62-b64a-4e9a-b75a-71c6c1af8d6a
+revision: c9369944-aef3-4667-9ba7-8eaaaa8efe60
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -134,14 +141,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8a90bf62-b64a-4e9a-b75a-71c6c1af8d6a
+c9369944-aef3-4667-9ba7-8eaaaa8efe60
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063930Z
+20151105T151902Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Landmark.Classes;
+using Landmark.Helper;
 using Sitecore.Data.Items;
 using Sitecore.Links;
 using Sitecore.Data.Fields;
@@ -39,7 +40,7 @@ namespace Landmark.Pipelines.HttpRequest
             options.AlwaysIncludeServerUrl = true;
             options.LanguageEmbedding = LanguageEmbedding.Always;
             options.LowercaseUrls = true;
-            string url = LinkManager.GetItemUrl(pageNotFoundItem, options).Replace(" ","-");
+            string url = LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(pageNotFoundItem, options).Replace(" ","-"));
             HttpContext.Current.Response.StatusCode = 404;
             HttpContext.Current.Response.Redirect(url);
 
