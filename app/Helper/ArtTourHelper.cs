@@ -43,14 +43,15 @@ namespace Landmark.Helper
         /// </summary>
         /// <param name="art">The art.</param>
         /// <returns>Item.</returns>
-        public Item GetArtistByArt(Item art)
+        public Item GetArtistByArt(ID artId)
         {
+            var art = Sitecore.Context.Database.GetItem(artId);
             GroupedDroplinkField artistField = art.Fields["Artist"];
             if (artistField != null)
             {
                 return artistField.TargetItem;
             }
-            return null;
+            return GetAllArtists().FirstOrDefault();
         }
 
 

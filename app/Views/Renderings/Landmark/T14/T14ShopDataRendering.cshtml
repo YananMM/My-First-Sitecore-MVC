@@ -16,7 +16,7 @@
     <table>
         <tbody>
             @{
-                var openingHour = currentItem.Fields["Openning Hours"].ToString();
+                var openingHour = currentItem.Fields["Opening Hours"].ToString();
                 if (!string.IsNullOrEmpty(openingHour))
                 {
                     <tr>
@@ -24,7 +24,7 @@
                             @Html.Sitecore().Field("Glossary Value", SitecoreItems.OpenningHoursItem).ToString().ToUpper()
                         </th>
                         <td>
-                            @Html.Sitecore().Field("Openning Hours")
+                            @Html.Sitecore().Field("Opening Hours")
                         </td>
                     </tr>
                 }

@@ -5,7 +5,7 @@
 @model RenderingModel
 @{
     ArtTourHelper helper = new ArtTourHelper();
-    var artist = helper.GetArtistByArt(Sitecore.Context.Item);
+    var artist = helper.GetArtistByArt(Sitecore.Context.Item.ID);
 }
 
 
