@@ -8051,6 +8051,22 @@ button.close {
 .site-header nav.mega-menu .mega-menu-area2 ul.mega-category {
   min-height: 200px;
 }
+.site-header nav.mega-menu .mega-menu-area2 ul.mega-category:before,
+.site-header nav.mega-menu .mega-menu-area2 ul.mega-category:after {
+  content: " ";
+  display: table;
+}
+.site-header nav.mega-menu .mega-menu-area2 ul.mega-category:after {
+  clear: both;
+}
+.site-header nav.mega-menu .mega-menu-area2 ul.mega-category:before,
+.site-header nav.mega-menu .mega-menu-area2 ul.mega-category:after {
+  content: " ";
+  display: table;
+}
+.site-header nav.mega-menu .mega-menu-area2 ul.mega-category:after {
+  clear: both;
+}
 .site-header nav.mega-menu .mega-menu-area2 .gd-link-book {
   color: #c1a875;
 }
@@ -11528,7 +11544,7 @@ h4 a:active {
     height: 640px;
   }
 }
-.gd-mainimage-fixed > .carousel-caption {
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption {
   background-color: #272727;
   bottom: 0;
   left: 0;
@@ -11539,13 +11555,13 @@ h4 a:active {
   z-index: 20;
 }
 @media (min-width: 0px) {
-  .gd-mainimage-fixed > .carousel-caption {
+  .gd-carousel-info.gd-mainimage-fixed > .carousel-caption {
     float: none;
     width: 100%;
   }
 }
 @media (min-width: 768px) {
-  .gd-mainimage-fixed > .carousel-caption {
+  .gd-carousel-info.gd-mainimage-fixed > .carousel-caption {
     background: url(../images/black-80.png);
     background: rgba(0, 0, 0, 0.7);
     bottom: 0;
@@ -11557,83 +11573,86 @@ h4 a:active {
   }
 }
 @media (min-width: 1000px) {
-  .gd-mainimage-fixed > .carousel-caption {
+  .gd-carousel-info.gd-mainimage-fixed > .carousel-caption {
     width: 33%;
   }
 }
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner {
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner {
   display: table;
   height: 100%;
 }
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail {
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail {
   display: table-cell;
   height: auto;
   padding: 40px 20px;
   vertical-align: middle;
 }
 @media (min-width: 768px) {
-  .gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail {
+  .gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail {
     padding: 0 20px 0 40px;
     height: 460px;
   }
 }
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief,
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 {
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief,
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 {
   text-align: left;
 }
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief p,
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 p {
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief p,
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 p {
   color: #FFFFFF;
   margin-bottom: 2em;
 }
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief button,
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 button {
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief button,
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 button {
   margin: 0;
   margin-bottom: 2em;
 }
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief .gd-tg-table,
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 .gd-tg-table {
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief .gd-tg-table,
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 .gd-tg-table {
   color: #999999;
 }
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief .gd-tg-table a,
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 .gd-tg-table a {
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief .gd-tg-table a,
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 .gd-tg-table a {
   color: #999999;
 }
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief .gd-tg-table a:hover,
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 .gd-tg-table a:hover {
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief .gd-tg-table a:hover,
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 .gd-tg-table a:hover {
   color: #ffffff;
   text-decoration: none;
 }
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief .gd-tg-table a:focus,
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 .gd-tg-table a:focus,
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief .gd-tg-table a:active,
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 .gd-tg-table a:active {
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief .gd-tg-table a:focus,
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 .gd-tg-table a:focus,
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief .gd-tg-table a:active,
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 .gd-tg-table a:active {
   color: #ffffff;
   text-decoration: none;
 }
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief .gd-tg-table table tr > td,
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 .gd-tg-table table tr > td {
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief .gd-tg-table table tr > td,
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-brief3 .gd-tg-table table tr > td {
   color: #999999;
 }
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-table tr > th {
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-table tr > th {
   color: #d4a962;
   font-size: 12px;
   padding-left: 0;
 }
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-table tr > td {
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-table tr > td {
   color: #ffffff;
 }
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-table tr > td a {
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-table tr > td a {
   color: #ffffff;
 }
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-table tr > td a:hover {
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-table tr > td a:hover {
   color: #999999;
   text-decoration: none;
 }
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-table tr > td a:focus,
-.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-table tr > td a:active {
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-table tr > td a:focus,
+.gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-table tr > td a:active {
   color: #c1a875;
   text-decoration: none;
+}
+.gd-carousel-info.gd-mainimage-fixed .carousel-inner .carousel-caption .gd-carousel-detail .gd-mainimage-brief3 p {
+  color: #fff;
 }
 .gd-mainimage-withdes .carousel-inner {
   padding-bottom: 50px;

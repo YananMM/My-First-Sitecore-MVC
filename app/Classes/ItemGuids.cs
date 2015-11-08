@@ -34,6 +34,7 @@ namespace Landmark.Classes
         public static readonly String BuidingsFolder = "{4731A63F-BFED-4A7B-8650-1ED611731530}";
         public static readonly String T14ShopDetailsTemplate = "{91A88069-9A0E-48B7-9509-BDE830A54D0E}";
         public static readonly String ShoppingCategory = "{FB0C20EF-8DD8-4233-A9E8-3D1536412DB7}";
+        public static readonly String DiningCategory = "{26C999E2-4351-4F83-9201-5C5662D9FDC5}";
         public static readonly String ShoppingCategoryObject = "{753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}";
         public static readonly String AllByBrandsPage = "{670F29E6-B282-4234-B139-E8F74AD95295}";
         public static readonly String AllByBuildingsPage = "{3FAF2834-AF45-4CD7-BF22-6EEBCA0894C1}";

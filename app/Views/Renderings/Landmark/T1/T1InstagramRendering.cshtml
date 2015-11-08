@@ -1,7 +1,7 @@
 ﻿@using Landmark.Classes
 @{
     var instagramSocial = new InstagramSocial();
-    var images = instagramSocial.GetFromInstagram("1482879750", deep: true);
+    var images = instagramSocial.GetFromInstagram(SitecoreItems.LandmarkConfigItem.Fields["User Id"].Value, deep: true);
 }
 <section class="panel-area">
 <section class="instagram-area">

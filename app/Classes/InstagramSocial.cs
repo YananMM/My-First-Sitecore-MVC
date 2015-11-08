@@ -16,7 +16,7 @@ namespace Landmark.Classes
         {
             Sitecore.Diagnostics.Log.Info("Update Instagram Feeds: " + userId, this);
 
-            string clientId = "54d656cb6fb847b88c8a42f8a92d33d9";
+            string clientId = SitecoreItems.LandmarkConfigItem.Fields["Client Id"].Value;
 
             if (string.IsNullOrEmpty(userId))
                 return new List<SocialImage>();

@@ -5,8 +5,12 @@
 @{
     ShoppingHelper shoppingHelper = new ShoppingHelper();
     Item parentItem = Sitecore.Context.Item.Parent;
-    var brandModels = shoppingHelper.GetBrandModels();
-    if (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem))
+    while (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
+    {
+        parentItem = parentItem.Parent;
+    }
+    var brandModels = shoppingHelper.GetBrandModels(parentItem);
+    if (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
     {
         var currentTag = shoppingHelper.GetCurrentCategory(Sitecore.Context.Item);
         brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();

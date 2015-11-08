@@ -37,7 +37,7 @@
                 {
                     foreach (Item languageText in SitecoreItems.LanguageFolderGuidItem.Children)
                     {
-                        if (languageText.DisplayName == lan.Name)
+                        if (languageText.DisplayName.ToLower() == lan.Name.ToLower())
                         {
                             <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, @lan.Name)" class="lang-cn">@Html.Sitecore().Field("Value", languageText)</a>
                         }
