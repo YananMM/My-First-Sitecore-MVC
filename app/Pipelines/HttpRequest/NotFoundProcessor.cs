@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,7 @@ using Sitecore.Data.Fields;
 using Sitecore.Extensions;
 using Sitecore.Globalization;
 using Sitecore.StringExtensions;
+using System.Web.Caching;
 
 namespace Landmark.Pipelines.HttpRequest
 {
@@ -17,6 +19,7 @@ namespace Landmark.Pipelines.HttpRequest
     {
         public override void Process(Sitecore.Pipelines.HttpRequest.HttpRequestArgs args)
         {
+            
             if ((Sitecore.Context.Item != null) || Sitecore.Context.Site == null || Sitecore.Context.Database == null
                 || Sitecore.Context.Database != Sitecore.Configuration.Factory.GetDatabase("web") || Sitecore.Context.IsAdministrator
                 || args.Url.FilePath.ToLower().StartsWith("/service/") || args.Url.FilePath.ToLower().StartsWith("/sitecore") ||
