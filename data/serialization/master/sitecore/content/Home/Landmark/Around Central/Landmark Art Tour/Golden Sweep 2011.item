@@ -50,7 +50,7 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-2000
+3000
 ----version----
 language: en
 version: 1
@@ -134,7 +134,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: aaec2002-bb66-4fb7-90d7-fe6c68849d6f
+revision: 559e74a9-70ec-49a8-9edb-43a7d7c91540
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -184,6 +184,13 @@ content-length: 208
 置地公司于二零一一年购入「梳扫金黄」。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -196,14 +203,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-aaec2002-bb66-4fb7-90d7-fe6c68849d6f
+559e74a9-70ec-49a8-9edb-43a7d7c91540
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T030349:635820302296013522Z
+20151108T040901Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -214,7 +221,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 912cb17c-585d-4245-a83a-84fdc017551f
+revision: 4120ad4d-45e9-46fd-aba9-1b29f2a488d4
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -264,6 +271,13 @@ content-length: 208
 置地公司於二零一一年購入「梳掃金黃」。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -276,14 +290,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-912cb17c-585d-4245-a83a-84fdc017551f
+4120ad4d-45e9-46fd-aba9-1b29f2a488d4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T030347:635820302271062095Z
+20151108T040905Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

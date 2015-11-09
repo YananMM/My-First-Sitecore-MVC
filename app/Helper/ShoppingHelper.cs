@@ -62,7 +62,7 @@ namespace Landmark.Helper
             {
                 LandmarkBrandModel brandModel = new LandmarkBrandModel()
                 {
-                    Group = item["Brand Title"].Substring(0, 1),
+                    Group = item.DisplayName.Substring(0, 1).ToUpper(),
                     Tags = item["Tags"],
                     BrandItem = item
                 };

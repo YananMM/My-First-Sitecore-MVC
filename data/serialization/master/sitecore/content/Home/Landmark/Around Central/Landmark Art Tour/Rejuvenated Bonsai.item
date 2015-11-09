@@ -50,11 +50,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-4000
+5000
 ----version----
 language: en
 version: 1
-revision: c710e8e6-46a5-4d79-a822-312af28a6f33
+revision: af492a1b-6306-4aa9-bb5f-34989dc6b292
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -92,6 +92,19 @@ content-length: 13
 
 Recycled Wood
 ----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 1335
+
+Hong Kong artist Lam Laam, Jaffa began her training at the Chinese University of Hong Kong where she developed a distinct style in large-scale site-specific installations. Jaffa has attained international acclaim exhibiting in the United States, Canada, China, Taiwan, Kenya and Bangladesh. She was awarded the Asian Cultural Council’s Desiree and Hans Michael Jebsen Fellowship in 2006, and represented Hong Kong in Japan’s Setouchi Triennale in 2013.
+
+Through her work she explores introspective issues such as local culture, history, society and current affairs.  She aims to exemplify the Chinese philosophy of ‘the usefulness of the useless’ in her extensive use of recycled materials including crate wood, old furniture and umbrella fabric.
+
+Rejuvenated Bonsai’ is a dedication to Hongkong Land, symbolizing its longevity. In this work Jaffa revitalizes recycled wood, vividly transforming it into a solid tree form, reflecting her respect for the Company’s deep-rooted history and affiliation with the community.  The delicate branches reach out with new life, in the way that Hongkong Land continues to lead into the future.
+
+The artist’s values and deep connection to Hong Kong and nature are reflected in this work as all the materials used were sourced and formed locally, some within just a few steps from her studio.
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -104,25 +117,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c710e8e6-46a5-4d79-a822-312af28a6f33
+af492a1b-6306-4aa9-bb5f-34989dc6b292
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T072923Z
+20151108T043129Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f16ba105-e48d-48a5-b45e-fe0e680e2000
+revision: ff24d3be-f593-45fe-b174-5b6521e6d220
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -160,6 +173,26 @@ content-length: 3
 
 环保木
 ----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 376
+
+香港艺术家林岚曾于香港中文大学修习艺术，建立了独特的艺术风格，主力创作大型艺术装置。她曾于美国、加拿大、中国、台湾、肯亚及孟加拉参展，享誉国际。2006年她获颁亚洲文化协会捷成汉伉俪奖助金，并代表香港在2013年日本濑户内海三年展亚洲平台展出。
+
+林岚多以本土文化、历史、社会及时事为创作背景，并利用回收再用的物料，包括木箱板、旧家具、雨伞布料等，以反映中国哲学中“无用之用”的理念。 
+
+《再生盆景》是林岚特别为置地公司所创作，寓意永续、长久。在作品中，林岚为回收再用的木材赋予新生命，制作成一棵苍劲古朴的盆景树，象征置地公司在香港扎根逾百年的悠久历史，与这个城市密切联系。末端的新枝展示出现时的朝气和未来的持续发展。
+
+作品乃本土制作，所使用物料皆来自本地，有些甚至来自距离林岚工作室只有几步之遥，呈现出艺术家与香港和大自然的深刻联系。
+----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -172,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f16ba105-e48d-48a5-b45e-fe0e680e2000
+ff24d3be-f593-45fe-b174-5b6521e6d220
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T055638:635820405984084141Z
+20151108T043058Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -190,8 +223,29 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 937defb1-9069-4f81-9599-f53275e7a877
+revision: 2f8a4f5e-1c73-4bf7-9b9c-a4e43d928a8c
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+再生盆景
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 4
+
+再生盆景
+----field----
+field: {25ECD930-4134-4B41-A387-D063717B49B9}
+name: Art Size
+key: art size
+content-length: 17
+
+140 x 180 x 110厘米
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
@@ -199,6 +253,33 @@ key: commentary
 content-length: 109
 
 <file mediaid="{16763D56-02B7-4EB6-ADF3-92D05A3C541C}" src="~/media/16763d5602b74eb6adf392d05a3c541c.ashx" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 3
+
+環保木
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 376
+
+香港藝術家林嵐曾於香港中文大學修習藝術，建立了獨特的藝術風格，主力創作大型藝術裝置。她曾於美國、加拿大、中國、台灣、肯亞及孟加拉參展，享譽國際。2006年她獲頒亞洲文化協會捷成漢伉儷獎助金，並代表香港在2013年日本瀨戶內海三年展亞洲平台展出。
+
+林嵐多以本土文化、歷史、社會及時事為創作背景，並利用回收再用的物料，包括木箱板、舊傢具、雨傘布料等，以反映中國哲學中「無用之用」的理念。 
+
+《再生盆景》是林嵐特別為置地公司所創作，寓意永續、長久。在作品中，林嵐為回收再用的木材賦予新生命，製作成一棵蒼勁古樸的盆景樹，象徵置地公司在香港紮根逾百年的悠久歷史，與這個城市密切聯繫。末端的新枝展示出現時的朝氣和未來的持續發展。
+
+作品乃本土製作，所使用物料皆來自本地，有些甚至來自距離林嵐工作室只有幾步之遙，呈現出藝術家與香港和大自然的深刻聯繫。
+----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -212,14 +293,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-937defb1-9069-4f81-9599-f53275e7a877
+2f8a4f5e-1c73-4bf7-9b9c-a4e43d928a8c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151027T140851Z
+20151108T043015Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

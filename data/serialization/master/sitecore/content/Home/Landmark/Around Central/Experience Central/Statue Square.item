@@ -24,6 +24,13 @@ content-length: 58
 
 <image mediaid="{5E5ABD93-F15F-4426-AD52-F53FE4348315}" />
 ----field----
+field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
+name: Callout Image
+key: callout image
+content-length: 58
+
+<image mediaid="{5E5ABD93-F15F-4426-AD52-F53FE4348315}" />
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +40,7 @@ content-length: 77
 ----version----
 language: en
 version: 1
-revision: e426dc2b-504b-4aa2-bbdb-6179aa54c68d
+revision: a128a55f-8c0a-4cc5-9c7a-89a6274e3d47
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -67,9 +74,9 @@ content-length: 100
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 13
+content-length: 0
 
-Statue Square
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -83,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e426dc2b-504b-4aa2-bbdb-6179aa54c68d
+a128a55f-8c0a-4cc5-9c7a-89a6274e3d47
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T020454:635821130945006022Z
+20151108T144148Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,7 +108,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 28bb1802-04ba-43b0-b192-e365631f59a5
+revision: 6da334ec-2533-4f10-8279-f1da0ed68f7e
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -132,6 +139,13 @@ content-length: 34
 
 <strong>边休闲歇息边欣赏香港建筑的最佳地点</strong>
 ----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 5
+
+皇后像广场
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -144,14 +158,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-28bb1802-04ba-43b0-b192-e365631f59a5
+6da334ec-2533-4f10-8279-f1da0ed68f7e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T020526:635821131260664076Z
+20151108T070004Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,7 +176,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: a28f50d8-929d-47f7-973a-19d38629ac3f
+revision: e29333f8-35f2-4121-872b-db3382a6d8c9
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -193,6 +207,13 @@ content-length: 37
 
 <strong>一邊休閒歇息，一邊欣賞香港建築的最佳地點</strong>
 ----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 5
+
+皇后像廣場
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -205,14 +226,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a28f50d8-929d-47f7-973a-19d38629ac3f
+e29333f8-35f2-4121-872b-db3382a6d8c9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T020507:635821131077883622Z
+20151108T065931Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

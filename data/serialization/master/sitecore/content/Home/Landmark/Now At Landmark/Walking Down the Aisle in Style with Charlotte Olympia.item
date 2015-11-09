@@ -13,9 +13,9 @@ templatekey: T4 Page
 field: {816BB583-7E69-4E11-BCA7-4239CD03A9B2}
 name: Brand
 key: brand
-content-length: 38
+content-length: 0
 
-{8049C405-967D-482F-A0A8-0E264A5A08DF}
+
 ----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Portrait Callout Image
@@ -23,6 +23,20 @@ key: article portrait callout image
 content-length: 0
 
 
+----field----
+field: {B966F61E-9F08-4674-AC01-EE1064020145}
+name: Article Date
+key: article date
+content-length: 16
+
+20150802T160000Z
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 4
+
+1500
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -40,21 +54,22 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: a5dd6b96-06f6-41dd-b7ac-a095f22ba259
+revision: a6366fc6-f1e4-4d8e-bc94-9a7681ffe1bc
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
 key: article content
-content-length: 1033
+content-length: 1254
 
-<p>There is something for every bride in Charlotte Olympia’s Runaway Bride collection, from the traditional to the hopelessly romantic and the truly wild at heart! Despite the hallmark Charlotte Olympia playful touches, the shoes are still regally bridal – the difference is you'll want to wear them again after your wedding.</p>
-
-<p>The elegant, classic Paloma satin pump is a highlight of the collection and is a timeless choice for beguiling brides. It features beautiful fan detailing at the heel, carries the brand’s spider web logo on the sole along with a duck egg blue trim at the inner sole.</p>
-
-<p>Available exclusively at the Charlotte Olympia store at LANDMARK ATRIUM throughout August, each pair of the Italian-made platform pumps comes with branded shoe trees and nude stocking “hold-ups” trimmed with blue lace – perfect for the “something blue” to wear on your wedding day! And there is even an adhesive Polaroid photo that you stick on the outside of the shoe box to archive your Charlotte Olympia collection.</p>
-
-
+<p>There is something for every bride in Charlotte Olympia&rsquo;s Runaway Bride collection, from the traditional to the hopelessly romantic and the truly wild at heart! Despite the hallmark Charlotte Olympia playful touches, the shoes are still regally bridal &ndash; the difference is you'll want to wear them again after your wedding.</p>
+<p>The elegant, classic Paloma satin pump is a highlight of the collection and is a timeless choice for beguiling brides. It features beautiful fan detailing at the heel, carries the brand&rsquo;s spider web logo on the sole along with a duck egg blue trim at the inner sole.</p>
+<p>Available exclusively at the Charlotte Olympia store at LANDMARK ATRIUM throughout August, each pair of the Italian-made platform pumps comes with branded shoe trees and nude stocking &ldquo;hold-ups&rdquo; trimmed with blue lace &ndash; perfect for the &ldquo;something blue&rdquo; to wear on your wedding day! And there is even an adhesive Polaroid photo that you stick on the outside of the shoe box to archive your Charlotte Olympia collection.</p>
+<p>&nbsp;</p>
+<p><strong>Charlotte Olympia </strong></p>
+<p>Address: Shop 221, 2/F, LANDMARK ATRIUM </p>
+<p>Telephone: 2142 9008 </p>
+<p>Opening Hours: Daily 10:30am-7:30pm</p>
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
@@ -66,8 +81,7 @@ Walking Down the Aisle in Style with Charlotte Olympia
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 2
-
+content-length: 0
 
 
 ----field----
@@ -90,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a5dd6b96-06f6-41dd-b7ac-a095f22ba259
+a6366fc6-f1e4-4d8e-bc94-9a7681ffe1bc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T021724Z
+20151109T022720Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,27 +122,43 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: c8ed9e15-9892-4b62-882c-031c3bbfdb83
+revision: 40b864c0-f856-4790-babf-87543869e27b
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
 key: article content
-content-length: 455
+content-length: 583
 
 <p>Charlotte Olympia的Runaway Bride系列包罗了每一位新娘的口味，从传统的丶浪漫得不可救药的，以至内心充满狂野之情的都应有尽有。这一系列贯彻了Charlotte Olympia的品牌特色，为设计注入令人会心一笑的小趣味，同时让新娘们尽展高贵优雅的美态。与一般新娘鞋不同的是，在婚礼後您仍会想时常穿上这双Charlotte Olympia高跟鞋。</p>
-
 <p>设计大方的Paloma缎质船形高跟鞋乃此系列一大亮点，也是让新娘们展现迷人魅力的经典之选。鞋跟上方有美丽的扇形装饰细节，鞋底有品牌的蜘蛛网标记，而在鞋内底则可找到淡蓝色饰边。</p>
-
 <p>这双意大利制造的厚底船形高跟鞋，于8月在Charlotte Olympia位处置地广场中庭的专卖店独家发售。随鞋附送品牌的鞋撑，以及蓝色花边长筒裸色丝袜，让您在大喜之日穿戴「一点点蓝」，感受西方習俗的喜气！此外还贴心地奉上可粘贴的宝丽来相片，方便贴于鞋盒外，为您的Charlotte Olympia系列藏品做好识别。</p>
-
+<p>&nbsp;</p>
+<p><strong>Charlotte Olympia</strong></p>
+<p>地址：置地广场中庭2楼221号铺</p>
+<p>电话：2142 9008</p>
+<p>营业时间：每日早上10时30分至晚上7时30分</p>
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 27
+content-length: 28
 
-harlotte Olympia伴您优美走进人生新阶段
+Charlotte Olympia伴您优美走进人生新阶段
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 28
+
+Charlotte Olympia伴您优美走进人生新阶段
+----field----
+field: {A9B5DD8A-AD08-4D6A-B20C-7E8107C7E952}
+name: Button Text
+key: button text
+content-length: 4
+
+了解更多
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -156,14 +186,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c8ed9e15-9892-4b62-882c-031c3bbfdb83
+40b864c0-f856-4790-babf-87543869e27b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151019T150632Z
+20151109T023517Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -174,20 +204,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: ca71d4d8-baab-4ad4-bdf0-6676f23f5f13
+revision: aacb2c98-7645-48c0-8033-8f88a4a36487
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
 key: article content
-content-length: 454
+content-length: 583
 
 <p>Charlotte Olympia的Runaway Bride系列包羅了每一位新娘的口味，從傳統的、浪漫得不可救藥的，以至內心充滿狂野之情的都應有盡有。此系列貫徹了Charlotte Olympia的品牌特色，為設計注入令人會心微笑的小趣味，同時讓新娘們盡展優雅高貴的美態。與一般新娘鞋不同的是，在婚禮後您仍會想時常穿上這雙Charlotte Olympia高跟鞋。</p>
-
 <p>設計大方的Paloma緞質船形高跟鞋屬此系列一大亮點，也是讓新娘們展現迷人魅力的經典之選。鞋跟上方有美麗的扇形裝飾細節，鞋底有品牌的蜘蛛網標記，而在鞋內底則可找到淡藍色飾邊。</p>
-
 <p>這雙意大利製造的厚底船形高跟鞋，於8月在Charlotte Olympia位處置地廣塲中庭的專門店獨家發售。隨鞋附送品牌的鞋撐，以及藍色花邊長筒裸色絲襪，讓您在結婚之日穿戴「一點點藍」，感受西方習俗的喜氣！此外還貼心地奉上可黏貼的寶麗來相片，方便貼於鞋盒外，為您的Charlotte Olympia系列藏品做好識別。</p>
-
+<p>&nbsp;</p>
+<p><strong>Charlotte Olympia </strong></p>
+<p>地址：置地廣塲中庭2樓221號舖</p>
+<p>電話：2142 9008</p>
+<p>營業時間：每日早上10時30分至晚上7時30分</p>
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
@@ -195,6 +227,20 @@ key: article headline
 content-length: 28
 
 Charlotte Olympia伴您優美走進人生新階段
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 28
+
+Charlotte Olympia伴您優美走進人生新階段
+----field----
+field: {A9B5DD8A-AD08-4D6A-B20C-7E8107C7E952}
+name: Button Text
+key: button text
+content-length: 4
+
+了解更多
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -222,14 +268,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ca71d4d8-baab-4ad4-bdf0-6676f23f5f13
+aacb2c98-7645-48c0-8033-8f88a4a36487
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151019T150552Z
+20151109T022806Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

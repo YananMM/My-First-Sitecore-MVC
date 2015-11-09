@@ -29,11 +29,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-1400
+1600
 ----version----
 language: en
 version: 1
-revision: c1611dea-05fd-4b77-a6f7-1079a1f4fda7
+revision: 98b931c8-6021-4f21-ae87-9a8426c272d9
 
 ----field----
 field: {29FA7895-CEF3-48F6-B527-5AD5FD93F772}
@@ -257,9 +257,9 @@ PLEASE SELECT
 field: {7C9358DA-9737-4E16-8139-C84FF5578F77}
 name: Email Subject
 key: email subject
-content-length: 15
+content-length: 22
 
-Contact Us Form
+pm.hk.isobar@gmail.com
 ----field----
 field: {9540AFF3-ADC2-4E62-9384-442216128E1D}
 name: Email To
@@ -280,14 +280,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c1611dea-05fd-4b77-a6f7-1079a1f4fda7
+98b931c8-6021-4f21-ae87-9a8426c272d9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T014557Z
+20151106T134852Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -298,15 +298,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 4da0977e-e633-4d1a-a89f-f4424a85c53a
+revision: f9441c53-6729-4895-aa8b-4cc07de106e5
 
 ----field----
 field: {29FA7895-CEF3-48F6-B527-5AD5FD93F772}
 name: Link Text
 key: link text
-content-length: 12
+content-length: 4
 
-GETTING HERE
+如何抵达
 ----field----
 field: {A2BC7939-8EC4-4E69-9A98-2844135FF6AA}
 name: Head Description
@@ -318,16 +318,16 @@ content-length: 14
 field: {696EC371-26D4-4036-9C9F-1FA22FAC2617}
 name: Share Title
 key: share title
-content-length: 16
+content-length: 2
 
-GET CONNECTED ON
+连结
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 20
+content-length: 0
 
-中环购物中心电话号码及地址 | 置地广塲
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -336,12 +336,19 @@ content-length: 37
 
 如果您有任何疑问请与我们的客户服务团队联络，我们将为您提供您所需要的资料。
 ----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 20
+
+中环购物中心电话号码及地址 | 置地广塲
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 10
+content-length: 4
 
-Contact Us
+联系我们
 ----field----
 field: {C318572C-DE49-4951-AD27-5B609EB18ED5}
 name: Hotline Title
@@ -444,30 +451,93 @@ content-length: 11
 field: {829C2D70-1140-4717-A647-8921BE231188}
 name: Title Label
 key: title label
-content-length: 5
+content-length: 2
 
-TITLE
+称呼
 ----field----
 field: {DFF4A1E6-6F1F-44DB-B1B0-7E52D6FD93DD}
 name: First Name Label
 key: first name label
-content-length: 10
+content-length: 2
 
-FIRST NAME
+名字
+----field----
+field: {B35FF4AD-91A7-4C46-B574-C7E1733370A9}
+name: Last Name Label
+key: last name label
+content-length: 2
+
+姓氏
+----field----
+field: {B0480C65-53DB-4DEE-9F09-4866BDAB4754}
+name: Telephone Label
+key: telephone label
+content-length: 2
+
+电话
+----field----
+field: {1EB4A4BB-E13D-464C-8F91-F7D25CDC3C25}
+name: Email Label
+key: email label
+content-length: 4
+
+电邮地址
+----field----
+field: {81CCD489-D00F-45F1-8F87-0655E5B5CE66}
+name: Enquiry Type Label
+key: enquiry type label
+content-length: 4
+
+查询类别
+----field----
+field: {487F8DC1-3C5B-47E4-A9B9-EC410953C8A9}
+name: Message Label
+key: message label
+content-length: 2
+
+讯息
+----field----
+field: {27CA26C8-B643-4FB3-B725-2D62E7E63BF2}
+name: Verrification Label
+key: verrification label
+content-length: 3
+
+验证碼
+----field----
+field: {4651937A-8514-46A0-9911-422970DD3CD0}
+name: Generate another code Label
+key: generate another code label
+content-length: 4
+
+刷新图像
+----field----
+field: {63787F30-9458-4DE6-BF48-ADB0BC13C98F}
+name: Button Text
+key: button text
+content-length: 2
+
+提交
+----field----
+field: {4057F83D-5702-465C-9782-BD46784E9E1D}
+name: Select Label
+key: select label
+content-length: 3
+
+请选择
 ----field----
 field: {7C9358DA-9737-4E16-8139-C84FF5578F77}
 name: Email Subject
 key: email subject
-content-length: 15
+content-length: 6
 
-Contact Us Form
+联系我们表格
 ----field----
 field: {9540AFF3-ADC2-4E62-9384-442216128E1D}
 name: Email To
 key: email to
-content-length: 16
+content-length: 22
 
-yanan@gruden.com
+pm.hk.isobar@gmail.com
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -495,14 +565,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4da0977e-e633-4d1a-a89f-f4424a85c53a
+f9441c53-6729-4895-aa8b-4cc07de106e5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T065653Z
+20151108T112537Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -513,15 +583,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: f75d12a1-1428-4b61-b7e4-170b597d5f96
+revision: 27cf799b-172d-473e-93c1-25266fd46f81
 
 ----field----
 field: {29FA7895-CEF3-48F6-B527-5AD5FD93F772}
 name: Link Text
 key: link text
-content-length: 12
+content-length: 4
 
-GETTING HERE
+如何到達
 ----field----
 field: {A2BC7939-8EC4-4E69-9A98-2844135FF6AA}
 name: Head Description
@@ -533,16 +603,16 @@ content-length: 14
 field: {696EC371-26D4-4036-9C9F-1FA22FAC2617}
 name: Share Title
 key: share title
-content-length: 16
+content-length: 2
 
-GET CONNECTED ON
+連結
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 20
+content-length: 0
 
-中環購物中心電話號碼及地址 | 置地廣塲
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -551,12 +621,19 @@ content-length: 37
 
 如果您有任何疑問請與我們的客戶服務團隊聯絡，我們將為您提供您所需要的資料。
 ----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 20
+
+中環購物中心電話號碼及地址 | 置地廣塲
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 10
+content-length: 4
 
-Contact Us
+聯絡我們
 ----field----
 field: {C318572C-DE49-4951-AD27-5B609EB18ED5}
 name: Hotline Title
@@ -659,30 +736,93 @@ content-length: 11
 field: {829C2D70-1140-4717-A647-8921BE231188}
 name: Title Label
 key: title label
-content-length: 5
+content-length: 2
 
-TITLE
+稱呼
 ----field----
 field: {DFF4A1E6-6F1F-44DB-B1B0-7E52D6FD93DD}
 name: First Name Label
 key: first name label
-content-length: 10
+content-length: 2
 
-FIRST NAME
+名字
+----field----
+field: {B35FF4AD-91A7-4C46-B574-C7E1733370A9}
+name: Last Name Label
+key: last name label
+content-length: 2
+
+姓氏
+----field----
+field: {B0480C65-53DB-4DEE-9F09-4866BDAB4754}
+name: Telephone Label
+key: telephone label
+content-length: 2
+
+電話
+----field----
+field: {1EB4A4BB-E13D-464C-8F91-F7D25CDC3C25}
+name: Email Label
+key: email label
+content-length: 4
+
+電郵地址
+----field----
+field: {81CCD489-D00F-45F1-8F87-0655E5B5CE66}
+name: Enquiry Type Label
+key: enquiry type label
+content-length: 4
+
+查詢類別
+----field----
+field: {487F8DC1-3C5B-47E4-A9B9-EC410953C8A9}
+name: Message Label
+key: message label
+content-length: 2
+
+訊息
+----field----
+field: {27CA26C8-B643-4FB3-B725-2D62E7E63BF2}
+name: Verrification Label
+key: verrification label
+content-length: 3
+
+驗証碼
+----field----
+field: {4651937A-8514-46A0-9911-422970DD3CD0}
+name: Generate another code Label
+key: generate another code label
+content-length: 4
+
+刷新圖像
+----field----
+field: {63787F30-9458-4DE6-BF48-ADB0BC13C98F}
+name: Button Text
+key: button text
+content-length: 2
+
+提交
+----field----
+field: {4057F83D-5702-465C-9782-BD46784E9E1D}
+name: Select Label
+key: select label
+content-length: 3
+
+請選擇
 ----field----
 field: {7C9358DA-9737-4E16-8139-C84FF5578F77}
 name: Email Subject
 key: email subject
-content-length: 15
+content-length: 6
 
-Contact Us Form
+聯絡我們表格
 ----field----
 field: {9540AFF3-ADC2-4E62-9384-442216128E1D}
 name: Email To
 key: email to
-content-length: 16
+content-length: 22
 
-yanan@gruden.com
+pm.hk.isobar@gmail.com
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -710,14 +850,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f75d12a1-1428-4b61-b7e4-170b597d5f96
+27cf799b-172d-473e-93c1-25266fd46f81
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T151213Z
+20151108T112655Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

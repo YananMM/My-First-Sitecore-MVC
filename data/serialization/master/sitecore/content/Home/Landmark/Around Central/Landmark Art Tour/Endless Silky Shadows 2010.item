@@ -50,7 +50,7 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-1800
+2800
 ----version----
 language: en
 version: 1
@@ -134,7 +134,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: b30cafdd-92a9-4b3a-98fd-0c989a65d5da
+revision: 15ed1a43-177c-4acb-8927-27d8ce3f9ec2
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -175,14 +175,20 @@ content-length: 10
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 223
+content-length: 221
 
 "透过此一系列描绘四季的作品，生于上海的画家韩辛引领观赏者进入一个微妙的光影世界。在中国文化之中，柳树有着重要的象征意义，亦经常出现于艺术品当中。在这幅洋溢冬日情怀的作品中，韩辛以冰雪微妙的色调衬托出柳树的庄严，当中明暗的反差构成了如银丝疏影般的世界。
 
 韩辛足迹遍布美国、中国及法国，丰富的阅历使他在表达情感及构图的技巧上都达至大师级的境界，而他自信及乐观的性情亦在其作品上完全表露无遗。
 
 置地公司于二零一一年购入「万丝疏影」。"
+----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
 
+您正在查看
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -196,14 +202,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b30cafdd-92a9-4b3a-98fd-0c989a65d5da
+15ed1a43-177c-4acb-8927-27d8ce3f9ec2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T033800:635820322807106690Z
+20151108T040758Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -214,7 +220,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: ee82afd8-d3b0-4eac-9378-52909bfd9e1f
+revision: 9c362044-06c5-4d87-b040-8a3104e05f8b
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -264,6 +270,13 @@ content-length: 223
 置地公司於二零一一年購入「萬絲疏影」。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -276,14 +289,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ee82afd8-d3b0-4eac-9378-52909bfd9e1f
+9c362044-06c5-4d87-b040-8a3104e05f8b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T033749:635820322697290409Z
+20151108T040851Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

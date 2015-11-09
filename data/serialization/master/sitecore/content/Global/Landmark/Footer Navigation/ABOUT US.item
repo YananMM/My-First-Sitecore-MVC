@@ -13,13 +13,13 @@ templatekey: General Link Object
 field: {786F352A-8163-4B1F-845E-33183FDB61A9}
 name: Link URL
 key: link url
-content-length: 145
+content-length: 168
 
-<link text="" linktype="internal" url="" anchor="" title="" class="" querystring="" target="_self" id="{193CA4AA-6A50-4CCF-965B-C3640A349934}" />
+<link id="{193CA4AA-6A50-4CCF-965B-C3640A349934}" querystring="" target="_self" text="" anchor="" url="/Home/Landmark/About Us" title="" class="" linktype="internal" />
 ----version----
 language: en
 version: 1
-revision: c2e78759-cd58-428e-b414-8dc3740050d3
+revision: 9e545a65-f7f8-4728-bcd1-c6a9ba7878dc
 
 ----field----
 field: {95B968E4-4479-481D-AE50-9D0083BC242E}
@@ -41,14 +41,122 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c2e78759-cd58-428e-b414-8dc3740050d3
+9e545a65-f7f8-4728-bcd1-c6a9ba7878dc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151028T145219Z
+20151107T152513Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 56955c44-0720-4750-bd87-fdb8173f95ed
+
+----field----
+field: {95B968E4-4479-481D-AE50-9D0083BC242E}
+name: Link Text
+key: link text
+content-length: 6
+
+关于置地广场
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T125852Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+56955c44-0720-4750-bd87-fdb8173f95ed
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T125920Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 5aa1ba90-2274-459e-8665-326d79abfec8
+
+----field----
+field: {95B968E4-4479-481D-AE50-9D0083BC242E}
+name: Link Text
+key: link text
+content-length: 6
+
+關於置地廣塲
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T125933Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5aa1ba90-2274-459e-8665-326d79abfec8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T125942Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

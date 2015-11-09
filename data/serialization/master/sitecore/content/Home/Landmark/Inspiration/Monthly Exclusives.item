@@ -94,7 +94,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 5eed9680-375e-48db-a168-fb181be9e150
+revision: 22c78e6b-1a72-43b7-a298-c9d4a1589ee0
 
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
@@ -107,6 +107,20 @@ content-length: 19
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
+content-length: 51
+
+置地广塲每月都会为您提供独家推荐，凸显每月从我们的商店提供最吸引的推广优惠，请即登陆官方网站了解更多。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 19
+
+豪华购物中心每月独家推广 | 置地广塲
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 51
 
 置地广塲每月都会为您提供独家推荐，凸显每月从我们的商店提供最吸引的推广优惠，请即登陆官方网站了解更多。
@@ -151,14 +165,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5eed9680-375e-48db-a168-fb181be9e150
+22c78e6b-1a72-43b7-a298-c9d4a1589ee0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151024T190807Z
+20151108T055214Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -169,19 +183,33 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 594112e6-8653-44e9-abb8-af9603b196f7
+revision: e6fcde17-bc36-488f-a1aa-b1a6179a2fe1
 
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 19
+content-length: 0
 
-豪華購物中心每月獨家推廣 | 置地廣塲
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
+content-length: 51
+
+置地廣塲每月都會為您提供獨家推薦，凸顯每月從我們的商店提供最吸引的推廣優惠，請即登入官方網站了解更多。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 19
+
+豪華購物中心每月獨家推廣 | 置地廣塲
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 51
 
 置地廣塲每月都會為您提供獨家推薦，凸顯每月從我們的商店提供最吸引的推廣優惠，請即登入官方網站了解更多。
@@ -226,14 +254,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-594112e6-8653-44e9-abb8-af9603b196f7
+e6fcde17-bc36-488f-a1aa-b1a6179a2fe1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151024T190835Z
+20151108T055227Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

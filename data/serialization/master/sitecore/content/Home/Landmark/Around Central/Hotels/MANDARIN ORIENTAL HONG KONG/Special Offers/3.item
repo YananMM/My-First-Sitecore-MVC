@@ -12,22 +12,22 @@ templatekey: T34 Special Offer Object
 ----version----
 language: en
 version: 1
-revision: 63cb73dd-1245-478d-9348-4b59bda221e0
+revision: e0768e45-afc7-4dd6-8e0e-0e7e3eead1f6
 
 ----field----
 field: {8CC749CB-7079-4C70-86DF-AED85DFF80B7}
 name: Offer Title
 key: offer title
-content-length: 15
+content-length: 28
 
-Charity Auction
+White Truffle Menu at Pierre
 ----field----
 field: {6E8EA4C2-1BBB-4243-B4E3-5416880424A7}
 name: Offer Description
 key: offer description
-content-length: 70
+content-length: 259
 
-Celebrate French gastronomy with an Ultimate Goût de France Experience
+Pierre Gagnaire’s two Michelin-starred restaurant, Pierre, at Mandarin Oriental, Hong Kong will offer a special four-course White Truffle tasting menu from 18 to 25 November. The renowned chef will be present for both lunch and dinner throughout this period. 
 ----field----
 field: {F28E85D1-9BF0-471D-8964-F396DF90F93F}
 name: Offer Link Label
@@ -62,14 +62,150 @@ name: __Revision
 key: __revision
 content-length: 36
 
-63cb73dd-1245-478d-9348-4b59bda221e0
+e0768e45-afc7-4dd6-8e0e-0e7e3eead1f6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150820T031149:635756371096198836Z
+20151106T102446Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 31c0a3b1-e0a5-4a39-95ab-a939f7d19d9f
+
+----field----
+field: {8CC749CB-7079-4C70-86DF-AED85DFF80B7}
+name: Offer Title
+key: offer title
+content-length: 26
+
+法国名厨Pierre Gagnaire呈献白松露菜单
+----field----
+field: {6E8EA4C2-1BBB-4243-B4E3-5416880424A7}
+name: Offer Description
+key: offer description
+content-length: 111
+
+法国名厨Pierre Gagnaire位於香港文华东方酒店的米芝莲二星餐厅Pierre，将於11月18日至25日特别呈献白松露四道菜菜单，而菜式另会以自选餐单形式供应，宾客更可於推广期内的午餐及晚餐时段一睹名厨的慑人风采。
+----field----
+field: {F28E85D1-9BF0-471D-8964-F396DF90F93F}
+name: Offer Link Label
+key: offer link label
+content-length: 4
+
+立即预订
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T112410Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+31c0a3b1-e0a5-4a39-95ab-a939f7d19d9f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T112424Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 4ca20297-8d14-4f92-919b-9f358545f0e7
+
+----field----
+field: {8CC749CB-7079-4C70-86DF-AED85DFF80B7}
+name: Offer Title
+key: offer title
+content-length: 26
+
+法國名廚Pierre Gagnaire呈獻白松露菜單
+----field----
+field: {6E8EA4C2-1BBB-4243-B4E3-5416880424A7}
+name: Offer Description
+key: offer description
+content-length: 111
+
+法國名廚Pierre Gagnaire位於香港文華東方酒店的米芝蓮二星餐廳Pierre，將於11月18日至25日特別呈獻白松露四道菜菜單，而菜式另會以自選餐單形式供應，賓客更可於推廣期內的午餐及晚餐時段一睹名廚的懾人風采。
+----field----
+field: {F28E85D1-9BF0-471D-8964-F396DF90F93F}
+name: Offer Link Label
+key: offer link label
+content-length: 4
+
+立即預訂
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T105803Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+4ca20297-8d14-4f92-919b-9f358545f0e7
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T105820Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

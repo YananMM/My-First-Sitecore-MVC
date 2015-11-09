@@ -24,6 +24,13 @@ content-length: 16
 
 20151101T160000Z
 ----field----
+field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
+name: Article Type
+key: article type
+content-length: 38
+
+{6D3037FD-A4F4-464A-8BCE-30608F5CC64E}
+----field----
 field: {BA2CB119-1C77-40AA-B95E-79014CAFD7AD}
 name: Magazine Category
 key: magazine category
@@ -31,12 +38,33 @@ content-length: 38
 
 {8CBE1EA5-CE5A-4D15-AEFD-F65BC164C06B}
 ----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {162F27FF-8B70-450A-8E70-DA3B65E4E12B}
 name: Page Style
 key: page style
 content-length: 7
 
 Style A
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+500
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -47,7 +75,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 5b9fc285-bd2a-4bb7-90b3-7c163207f3f8
+revision: 2f81dbb2-f491-4920-8da6-50b223d686c6
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -56,6 +84,13 @@ key: article headline
 content-length: 8
 
 Big bang
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 45
+
+Glasses and earring by Loewe, LANDMARK ATRIUM
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -76,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5b9fc285-bd2a-4bb7-90b3-7c163207f3f8
+2f81dbb2-f491-4920-8da6-50b223d686c6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T085420:635820512602042339Z
+20151108T152531Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,7 +129,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 79b9db9c-10b2-42a8-9fbf-e6b4cce48e14
+revision: 351fcf76-b019-4924-8cd4-c04fa3432218
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -103,6 +138,13 @@ key: article headline
 content-length: 9
 
 Big bang 
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 20
+
+Loewe太陽眼鏡及耳環，置地廣塲中庭。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -123,14 +165,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-79b9db9c-10b2-42a8-9fbf-e6b4cce48e14
+351fcf76-b019-4924-8cd4-c04fa3432218
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151028T084353:635816186336988649Z
+20151108T131241Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -141,7 +183,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 9ce94055-ef7a-4591-8fc7-fa188c48115d
+revision: 296a70c8-b885-4fb2-ba60-a68d95f907b7
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -150,6 +192,13 @@ key: article headline
 content-length: 8
 
 Big bang
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 20
+
+Loewe太陽眼鏡及耳環，置地廣塲中庭。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -170,14 +219,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9ce94055-ef7a-4591-8fc7-fa188c48115d
+296a70c8-b885-4fb2-ba60-a68d95f907b7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151028T084345:635816186258464157Z
+20151108T131232Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

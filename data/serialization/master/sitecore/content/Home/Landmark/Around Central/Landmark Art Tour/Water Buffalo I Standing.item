@@ -50,7 +50,7 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-1500
+2500
 ----version----
 language: en
 version: 1
@@ -134,7 +134,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: dd078df6-84b1-4a72-a050-12b0fbbaf612
+revision: 1139f811-c318-4705-a8c7-1405acfd3b19
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -185,6 +185,13 @@ content-length: 266
 "
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -197,14 +204,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dd078df6-84b1-4a72-a050-12b0fbbaf612
+1139f811-c318-4705-a8c7-1405acfd3b19
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T042541:635820351417183093Z
+20151108T040713Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -215,7 +222,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: f8e07e29-d47d-4c8f-898f-1f4fa35961e4
+revision: 2ee5f1e2-378d-49c2-acfc-a730e76b9657
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -265,6 +272,13 @@ content-length: 264
 置地公司於一九八六年委託伊利莎伯‧霍齡女爵士創作兩頭水牛雕塑。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -277,14 +291,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f8e07e29-d47d-4c8f-898f-1f4fa35961e4
+2ee5f1e2-378d-49c2-acfc-a730e76b9657
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T042544:635820351449194924Z
+20151108T040718Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -13,9 +13,9 @@ templatekey: T3 Page
 field: {D0CC41B3-3000-4ED5-870B-8C89E72C0DA0}
 name: Ad Reference Item
 key: ad reference item
-content-length: 0
+content-length: 38
 
-
+{838908FE-ADBA-455B-9539-70A7F168C4E9}
 ----field----
 field: {58467D14-852B-4A9C-B619-676CE5518FB8}
 name: Page Banner Image
@@ -29,18 +29,18 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-150
+400
 ----field----
 field: {6FD695E7-7F6D-4CA5-8B49-A829E5950AE9}
 name: __Subitems Sorting
 key: __subitems sorting
-content-length: 38
+content-length: 0
 
-{C1FF011E-B02A-44E3-8444-9FC89CFC28CE}
+
 ----version----
 language: en
 version: 1
-revision: 3982e0da-36c6-424d-9e12-0313a6aaa19f
+revision: b8cdad84-fad3-4038-8144-81ce9b8e709c
 
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
@@ -67,9 +67,9 @@ Now At Landmark
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 54
+content-length: 0
 
-Find out more about the latest happenings at LANDMARK.
+
 ----field----
 field: {AF4EE324-60ED-404F-975E-EA38DF704CBB}
 name: Button Text
@@ -90,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3982e0da-36c6-424d-9e12-0313a6aaa19f
+b8cdad84-fad3-4038-8144-81ce9b8e709c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T014559Z
+20151107T193423Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,15 +108,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 49765f09-02eb-4016-98da-a13240d5a999
+revision: 318bdbfd-e828-4d9f-92a6-81d3e15cf4b4
 
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 18
+content-length: 0
 
-香港购物中心优惠及活动 | 置地广塲
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -125,12 +125,33 @@ content-length: 48
 
 请即登陆置地广塲官方网站及浏览我们最新推广优惠，活动，展览和时尚潮流的趋势，我们会不断更新资讯。
 ----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 18
+
+香港购物中心优惠及活动 | 置地广塲
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+最新消息
+----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 11
+content-length: 15
 
-探索置地广场最新资讯。
+探索置地广场最新资讯。<br>
+----field----
+field: {AF4EE324-60ED-404F-975E-EA38DF704CBB}
+name: Button Text
+key: button text
+content-length: 4
+
+了解更多
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -158,14 +179,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-49765f09-02eb-4016-98da-a13240d5a999
+318bdbfd-e828-4d9f-92a6-81d3e15cf4b4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T065653Z
+20151109T024204Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -176,15 +197,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 22e3ef77-a1c6-4a38-85f8-9b3b84d2e16b
+revision: 799047a1-83b5-4086-ab08-6741e67e9cd8
 
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 20
+content-length: 0
 
-香港豪華購物中心優惠及活動 | 置地廣塲
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -193,12 +214,40 @@ content-length: 48
 
 請即登入置地廣塲官方網站及瀏覽我們最新推廣優惠，活動，展覽和時尚潮流的趨勢，我們會不斷更新資訊。
 ----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 20
+
+香港豪華購物中心優惠及活動 | 置地廣塲
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 48
+
+請即登入置地廣塲官方網站及瀏覽我們最新推廣優惠，活動，展覽和時尚潮流的趨勢，我們會不斷更新資訊。
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+最新消息
+----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
 content-length: 11
 
 探索置地廣塲最新資訊。
+----field----
+field: {AF4EE324-60ED-404F-975E-EA38DF704CBB}
+name: Button Text
+key: button text
+content-length: 4
+
+了解更多
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -226,14 +275,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-22e3ef77-a1c6-4a38-85f8-9b3b84d2e16b
+799047a1-83b5-4086-ab08-6741e67e9cd8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151024T190536Z
+20151109T024150Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

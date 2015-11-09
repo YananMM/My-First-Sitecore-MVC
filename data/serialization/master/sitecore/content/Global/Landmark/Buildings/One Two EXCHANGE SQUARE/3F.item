@@ -9,10 +9,24 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
 templatekey: Floor Object
 
+----field----
+field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
+name: Floor Image
+key: floor image
+content-length: 58
+
+<image mediaid="{6655722E-E408-46CB-ACF7-8B0BF10BA4E5}" />
+----field----
+field: {49195981-001A-41D0-BE6E-78B60FD14964}
+name: Floor Svg File
+key: floor svg file
+content-length: 165
+
+<file mediapath="/Files/Landmark/Floor Guide/1exchangesquare" mediaid="{D7EA894D-6466-4BC9-8D7F-A4046DB1ABE2}" src="~/media/d7ea894d64664bc98d7fa4046db1abe2.ashx" />
 ----version----
 language: en
 version: 1
-revision: 894949f4-51c9-4044-ad51-34f6ba9477b0
+revision: 7b968333-944f-4d90-9291-55b1800492e8
 
 ----field----
 field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
@@ -34,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-894949f4-51c9-4044-ad51-34f6ba9477b0
+7b968333-944f-4d90-9291-55b1800492e8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T044958Z
+20151106T132716Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

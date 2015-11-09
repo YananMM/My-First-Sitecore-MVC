@@ -8,6 +8,7 @@ using Sitecore.Data.Items;
 using Sitecore.Links;
 using Sitecore.Data.Fields;
 using Sitecore.Extensions;
+using Sitecore.Globalization;
 using Sitecore.StringExtensions;
 
 namespace Landmark.Pipelines.HttpRequest

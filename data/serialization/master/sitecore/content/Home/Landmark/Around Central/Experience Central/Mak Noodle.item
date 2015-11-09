@@ -31,6 +31,13 @@ content-length: 58
 
 <image mediaid="{66492213-54F4-4870-AF76-DA6994BA4D7F}" />
 ----field----
+field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
+name: Callout Image
+key: callout image
+content-length: 58
+
+<image mediaid="{66492213-54F4-4870-AF76-DA6994BA4D7F}" />
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -40,8 +47,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: c92f4f6e-efab-45b4-af90-ee829547fe6b
+revision: 229e3c2e-a3c1-4599-8323-749880f727e5
 
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 12
+
+Mak's Noodle
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -76,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c92f4f6e-efab-45b4-af90-ee829547fe6b
+229e3c2e-a3c1-4599-8323-749880f727e5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T022539:635821143396618213Z
+20151108T075945Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,7 +108,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 5543eb34-fb74-4a3e-b0da-9774b52149d5
+revision: f1594fa6-a40c-4bde-ab7c-c9fb433831c7
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -137,14 +151,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5543eb34-fb74-4a3e-b0da-9774b52149d5
+f1594fa6-a40c-4bde-ab7c-c9fb433831c7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T022605:635821143659263236Z
+20151108T080018Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -155,7 +169,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 7b98b520-891e-46ca-832f-05d650faaeaa
+revision: cffc1ab0-7561-496b-842b-a25a4c28cca3
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -198,14 +212,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7b98b520-891e-46ca-832f-05d650faaeaa
+cffc1ab0-7561-496b-842b-a25a4c28cca3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T022552:635821143524895550Z
+20151108T080003Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

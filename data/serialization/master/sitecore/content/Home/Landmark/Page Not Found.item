@@ -22,11 +22,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-1000
+1900
 ----version----
 language: en
 version: 1
-revision: 51127f95-1d70-4057-a2c1-851f2ed49ab5
+revision: 2ca1abe4-674a-40ed-8b8a-1befb0ac0dc7
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -39,10 +39,9 @@ Page Not Found
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 156
+content-length: 4
 
-<p>Sorry, your request is not available.</p>
-<p>We have the following suggestions as alternatives, or you may wish to search again with the above menu. </p>
+<br>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -56,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-51127f95-1d70-4057-a2c1-851f2ed49ab5
+2ca1abe4-674a-40ed-8b8a-1befb0ac0dc7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T014557Z
+20151108T071529Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -74,23 +73,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: e10d6144-0cd2-4289-93b6-74005a994fad
+revision: 523b63af-0aee-43dc-9ba8-0ee43a94430d
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 4
+content-length: 6
 
-页面错误
+此页面不存在
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 55
+content-length: 4
 
-<p>很抱歉，我们无法处理您的要求。</p>
-<p>您可参考以下意见作为选择，或经由上述选项重新搜索。</p>
+<br>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -118,14 +116,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e10d6144-0cd2-4289-93b6-74005a994fad
+523b63af-0aee-43dc-9ba8-0ee43a94430d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T065653Z
+20151108T071620Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -136,24 +134,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 6bac813e-6e86-4639-a111-119d3829526e
+revision: 84cee06c-22b0-4bf0-8b65-bcb46028129c
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 4
+content-length: 6
 
-頁面錯誤
+此頁面不存在
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 55
+content-length: 4
 
-<p>很抱歉，我們無法處理您的要求。</p>
-<p>您可參考以下意見作選擇，或經由以上選項重新搜索。</p>
-
+<br>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -181,14 +177,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6bac813e-6e86-4639-a111-119d3829526e
+84cee06c-22b0-4bf0-8b65-bcb46028129c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151024T191135Z
+20151108T071604Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

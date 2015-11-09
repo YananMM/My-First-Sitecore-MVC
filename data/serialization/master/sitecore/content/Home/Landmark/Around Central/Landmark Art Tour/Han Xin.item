@@ -22,11 +22,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-1600
+2600
 ----version----
 language: en
 version: 1
-revision: 5f9ff7f1-3100-46f6-ae45-68458bc2f4dc
+revision: 8fb8da93-e9cb-4904-905f-d8969be9786e
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -39,9 +39,9 @@ Han Xin
 field: {55493757-0DCA-49BC-8139-884B29E177E9}
 name: Artist Photo Description
 key: artist photo description
-content-length: 640
+content-length: 0
 
-Award-winning painter Han Xin was born in 1955 into a cultured Shanghai family and exposed to Chinese paintings and reproductions of international art at an early age. He studied at Beijing’s China Central Academy of Fine Arts before moving to the United States in his mid-20s. In 1984 he earned an MFA with distinction in painting from the California College of Arts and Crafts (now California College of the Arts) and began exhibiting widely across the country. In 1989, a one-year artist residency at Giverny, offered through the Reader’s Digest Artists at Giverny Program, enabled him to explore new ways of treating light and colours. 
+
 ----field----
 field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
 name: Artist Birthday
@@ -53,11 +53,12 @@ b.1955
 field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
 name: Artist Description
 key: artist description
-content-length: 1626
+content-length: 2261
 
-<p><strong><span style="text-decoration: underline;"></span></strong></p>
-<p><strong>After 20 years in the United States, Han returned to China to open a studio in Beijing. Surrounded by the countryside, the studio is the perfect place to develop works that reflect both the gritty realities of urban life and the serenity of the nature.</strong></p>
-<p><strong><span style="text-decoration: underline;">Solo Exhibitions</span></strong> <br>
+Award-winning painter Han Xin was born in 1955 into a cultured Shanghai family and exposed to Chinese paintings and reproductions of international art at an early age. He studied at Beijing’s China Central Academy of Fine Arts before moving to the United States in his mid-20s. In 1984 he earned an MFA with distinction in painting from the California College of Arts and Crafts (now California College of the Arts) and began exhibiting widely across the country. In 1989, a one-year artist residency at Giverny, offered through the Reader’s Digest Artists at Giverny Program, enabled him to explore new ways of treating light and colours. <br><br>
+<strong><span style="text-decoration: underline;"></span></strong>
+<strong>After 20 years in the United States, Han returned to China to open a studio in Beijing. Surrounded by the countryside, the studio is the perfect place to develop works that reflect both the gritty realities of urban life and the serenity of the nature.</strong><br><br>
+<strong><span style="text-decoration: underline;">Solo Exhibitions</span></strong> <br>
 2011 Memories and Reflections, The Rotunda, Exchange Square, Hong Kong <br>
 1996 From Mao to Now, Mandarin Oriental Fine Arts, Mandarin Oriental Hotel, Hong Kong <br>
 1995 Contrast, Michaelian-Kohlberg Gallery, New York, USA <br>
@@ -75,7 +76,7 @@ Visiting Artist, Department of Art, Ohio State University, USA <br>
 1989 Artist Residency, Reader&rsquo;s Digest Artists at Giverny Program <br>
 <br>
 <strong><span style="text-decoration: underline;">Publication</span></strong> <br>
-Han Xin. Pushing the Past Away. Hong Kong: Today Publications Ltd, 2007. ISBN: 978-988-17018-2-4. </p>
+Han Xin. Pushing the Past Away. Hong Kong: Today Publications Ltd, 2007. ISBN: 978-988-17018-2-4.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -96,14 +97,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5f9ff7f1-3100-46f6-ae45-68458bc2f4dc
+8fb8da93-e9cb-4904-905f-d8969be9786e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T051341:635820380215860283Z
+20151106T134930Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -114,7 +115,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 3d32f085-5a5c-4f07-837a-51f9451bfa07
+revision: 233484e8-8ce9-40a3-b0d8-8681c49efd49
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -127,10 +128,8 @@ content-length: 2
 field: {55493757-0DCA-49BC-8139-884B29E177E9}
 name: Artist Photo Description
 key: artist photo description
-content-length: 202
+content-length: 0
 
-  Han Xin (b.1955)
-得奖画家韩辛，一九五五年出生于上海一个文化家庭。自幼便接触中国画和国际级名作复制品的他修读于北京中央美术学院，二十多岁起旅居美国，并于一九八四 年，以优异的成绩取得加州艺术及工艺学院（现为加州艺术学院）颁发的绘画艺术硕士学位，同时开始在美国各地展出自己的作品。一九八九年，他通过读者文摘的 「艺术工作者在吉维尼计年。这次经验让他发掘到处理光线和颜色的新方法。 
 
 ----field----
 field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
@@ -143,7 +142,10 @@ content-length: 7
 field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
 name: Artist Description
 key: artist description
-content-length: 944
+content-length: 1159
+
+Han Xin (b.1955)<br><br>
+得奖画家韩辛，一九五五年出生于上海一个文化家庭。自幼便接触中国画和国际级名作复制品的他修读于北京中央美术学院，二十多岁起旅居美国，并于一九八四 年，以优异的成绩取得加州艺术及工艺学院（现为加州艺术学院）颁发的绘画艺术硕士学位，同时开始在美国各地展出自己的作品。一九八九年，他通过读者文摘的 「艺术工作者在吉维尼计年。这次经验让他发掘到处理光线和颜色的新方法。 <br><br>
 
 旅居美国二十年后，韩氏回流中国，在北京开设工作室。工作室位于郊区，让画家创作出既能反映城市生活的艰苦，同时呈现大自然宁静的作品。 <br>
 <br>
@@ -200,14 +202,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3d32f085-5a5c-4f07-837a-51f9451bfa07
+233484e8-8ce9-40a3-b0d8-8681c49efd49
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151026T085948:635814467886591015Z
+20151106T134539Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -218,7 +220,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: f922a618-7aad-4feb-9000-638b21fb70a7
+revision: 48d2c3c3-6314-4f75-92dc-97651c0f33ed
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -231,9 +233,9 @@ content-length: 2
 field: {55493757-0DCA-49BC-8139-884B29E177E9}
 name: Artist Photo Description
 key: artist photo description
-content-length: 234
+content-length: 0
 
-得獎畫家韓辛，一九五五年出生於上海一個文化家庭。自幼便接觸中國畫和國際級名作複製品的他修讀於北京中央美術學院，二十多歲起旅居美國，並於一九八四 年，以優異的成績取得加州藝術及工藝學院（現為加州藝術學院）頒發的繪畫藝術碩士學位，同時開始在美國各地展出自己的作品。一九八九年，他通過讀者文摘的 「藝術工作者在吉維尼計劃」（Artists at Giverny Program），以藝術工作者的身份前赴法國吉維尼進行駐場創作一年。這次經驗讓他發掘到處理光線和顏色的新方法。 
+
 ----field----
 field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
 name: Artist Birthday
@@ -245,9 +247,12 @@ content-length: 7
 field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
 name: Artist Description
 key: artist description
-content-length: 940
+content-length: 1201
 
-<p>旅居美國二十年後，韓氏回流中國，在北京開設工作室。工作室位於郊區，讓畫家創作出既能反映城市生活的艱苦，同時呈現大自然寧靜的作品。 <br>
+Han Xin (b.1955)<br><br>
+得獎畫家韓辛，一九五五年出生於上海一個文化家庭。自幼便接觸中國畫和國際級名作複製品的他修讀於北京中央美術學院，二十多歲起旅居美國，並於一九八四 年，以優異的成績取得加州藝術及工藝學院（現為加州藝術學院）頒發的繪畫藝術碩士學位，同時開始在美國各地展出自己的作品。一九八九年，他通過讀者文摘的 「藝術工作者在吉維尼計劃」（Artists at Giverny Program），以藝術工作者的身份前赴法國吉維尼進行駐場創作一年。這次經驗讓他發掘到處理光線和顏色的新方法。 <br>
+<br>
+旅居美國二十年後，韓氏回流中國，在北京開設工作室。工作室位於郊區，讓畫家創作出既能反映城市生活的艱苦，同時呈現大自然寧靜的作品。 <br>
 <br>
 <strong><span style="text-decoration: underline;">個人展覽</span></strong> <br>
 2011 香港，交易廣塲中央大廳，「浮想」 <br>
@@ -267,7 +272,14 @@ content-length: 940
 1989 讀者文摘「藝術工作者在吉維尼計劃」，駐場藝術工作者 <br>
 <br>
 <strong><span style="text-decoration: underline;">出版物</span></strong> <br>
-韓辛。《推開過去》。香港：今日出版社有限公司，2007年。ISBN: 978-988-17018-2-4. </p>
+韓辛。《推開過去》。香港：今日出版社有限公司，2007年。ISBN: 978-988-17018-2-4.
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 2
+
+韓辛
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -295,14 +307,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f922a618-7aad-4feb-9000-638b21fb70a7
+48d2c3c3-6314-4f75-92dc-97651c0f33ed
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151026T083942:635814455826721230Z
+20151106T134657Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
