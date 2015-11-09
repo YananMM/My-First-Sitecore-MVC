@@ -24,19 +24,23 @@ namespace Landmark.Helper
 
         public ShoppingHelper()
         {
-            while (!_parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !_parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
+            if (Sitecore.Context.Item.Paths.Path.StartsWith("/sitecore/content/Home/Landmark/Shopping") ||
+                Sitecore.Context.Item.Paths.Path.StartsWith("/sitecore/content/Home/Landmark/Dining"))
             {
-                _parentItem = _parentItem.Parent;
-            }
-            if (_parentItem.ID.ToString() == ItemGuids.ShoppingItem)
-            {
-                isShop = true;
-                isDining = false;
-            }
-            else
-            {
-                isDining = true;
-                isShop = false;
+                while (!_parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !_parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
+                {
+                    _parentItem = _parentItem.Parent;
+                }
+                if (_parentItem.ID.ToString() == ItemGuids.ShoppingItem)
+                {
+                    isShop = true;
+                    isDining = false;
+                }
+                else
+                {
+                    isDining = true;
+                    isShop = false;
+                }
             }
         }
 
