@@ -17,6 +17,13 @@ content-length: 58
 
 <image mediaid="{C28DBC43-AD0B-4CBD-9FEB-0ECC035A8B32}" />
 ----field----
+field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
+name: Article Type
+key: article type
+content-length: 38
+
+{6D3037FD-A4F4-464A-8BCE-30608F5CC64E}
+----field----
 field: {BA2CB119-1C77-40AA-B95E-79014CAFD7AD}
 name: Magazine Category
 key: magazine category
@@ -30,6 +37,13 @@ key: page style
 content-length: 7
 
 Style A
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 4
+
+1900
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -47,7 +61,7 @@ content-length: 155
 ----version----
 language: en
 version: 1
-revision: bdf99c77-f863-4d6e-b526-2e59b808c9dd
+revision: 1ae16a5e-3b46-438e-917b-b5c70e203d73
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -60,9 +74,9 @@ Art of the noodle
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 60
+content-length: 68
 
-Words by Johannes Pong
+<p>Words by Johannes Pong</br>
 Photography by Andrew J. Loiterton
 
 ----field----
@@ -94,14 +108,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bdf99c77-f863-4d6e-b526-2e59b808c9dd
+1ae16a5e-3b46-438e-917b-b5c70e203d73
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151030T065105:635817846651198196Z
+20151108T152532Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -112,7 +126,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f94cb734-31e1-4ff4-8b36-f9c38addfbae
+revision: 568c5d7e-0b84-4f11-849d-b9ae03c5eebe
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -125,9 +139,9 @@ Art of the noodle
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 60
+content-length: 68
 
-Words by Johannes Pong
+<p>Words by Johannes Pong</br>
 Photography by Andrew J. Loiterton
 
 ----field----
@@ -157,14 +171,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f94cb734-31e1-4ff4-8b36-f9c38addfbae
+568c5d7e-0b84-4f11-849d-b9ae03c5eebe
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151028T084319:635816185996579178Z
+20151108T151056Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -175,7 +189,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 11c94885-9ea3-4099-a066-3c5dd9d2298c
+revision: c9a4d95e-3164-4b33-889c-366b93371afc
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -188,9 +202,9 @@ Art of the noodle
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 60
+content-length: 68
 
-Words by Johannes Pong
+<p>Words by Johannes Pong</br>
 Photography by Andrew J. Loiterton
 
 ----field----
@@ -220,14 +234,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-11c94885-9ea3-4099-a066-3c5dd9d2298c
+c9a4d95e-3164-4b33-889c-366b93371afc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151028T083555:635816181556945246Z
+20151108T151048Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

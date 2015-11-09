@@ -27,9 +27,9 @@ content-length: 38
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 77
+content-length: 116
 
-{37C1F81A-7605-4539-808B-C4B487FDB8DE}|{45EE72B3-0021-4A62-AA7F-55E291FB3979}
+{37C1F81A-7605-4539-808B-C4B487FDB8DE}|{45EE72B3-0021-4A62-AA7F-55E291FB3979}|{2BD4244A-C395-49FB-A414-0F403174458A}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -192,7 +192,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: 7ac3e55e-e800-4d32-9ecc-f4faa2354b6f
+revision: f81884a3-5d71-4b71-861d-79dbeaed0daa
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -312,21 +312,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7ac3e55e-e800-4d32-9ecc-f4faa2354b6f
+f81884a3-5d71-4b71-861d-79dbeaed0daa
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063846Z
+20151108T083857Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1

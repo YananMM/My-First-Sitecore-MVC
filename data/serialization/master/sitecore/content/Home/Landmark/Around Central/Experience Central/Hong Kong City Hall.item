@@ -31,6 +31,13 @@ content-length: 58
 
 <image mediaid="{0498D834-6F5E-4C1E-85BC-8D9FCC9B3162}" />
 ----field----
+field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
+name: Callout Image
+key: callout image
+content-length: 58
+
+<image mediaid="{0498D834-6F5E-4C1E-85BC-8D9FCC9B3162}" />
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -40,8 +47,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 9d826924-5680-499c-bcbd-83f9cd276732
+revision: 0809c6b2-6073-473e-8a0b-efb32dafc7dc
 
+----field----
+field: {1189463D-F4FE-45C9-B673-398030341EAA}
+name: Cover Title
+key: cover title
+content-length: 19
+
+Hong Kong City Hall
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
@@ -83,14 +97,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9d826924-5680-499c-bcbd-83f9cd276732
+0809c6b2-6073-473e-8a0b-efb32dafc7dc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T021434:635821136745737805Z
+20151108T072826Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,7 +115,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: bf87bc39-d35a-4f34-9471-5107705f5702
+revision: 1c8d1ca3-a82d-46ed-a441-37f0006af84e
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -151,14 +165,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bf87bc39-d35a-4f34-9471-5107705f5702
+1c8d1ca3-a82d-46ed-a441-37f0006af84e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T021459:635821136990631812Z
+20151108T072802Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -169,7 +183,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: a01eda7f-c049-4620-be9a-a3e5de1badfd
+revision: d30e6df9-970f-4387-ad92-ec623058b53b
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -219,14 +233,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a01eda7f-c049-4620-be9a-a3e5de1badfd
+d30e6df9-970f-4387-ad92-ec623058b53b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T021446:635821136864954624Z
+20151108T072739Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

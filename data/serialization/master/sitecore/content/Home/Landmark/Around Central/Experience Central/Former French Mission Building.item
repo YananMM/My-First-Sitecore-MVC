@@ -9,10 +9,38 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
+----field----
+field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
+name: Cover Image
+key: cover image
+content-length: 58
+
+<image mediaid="{4C1E9A09-43AB-407D-85F0-97EB1B0B3514}" />
+----field----
+field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
+name: Landing thumb Image
+key: landing thumb image
+content-length: 58
+
+<image mediaid="{CB8BECBF-B9CC-4A27-B148-2A6DF2E66A4B}" />
+----field----
+field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
+name: Callout Image
+key: callout image
+content-length: 58
+
+<image mediaid="{CB8BECBF-B9CC-4A27-B148-2A6DF2E66A4B}" />
+----field----
+field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
+name: Experience Type
+key: experience type
+content-length: 38
+
+{DA1C68B3-0958-4250-A9F6-2F03EAA17545}
 ----version----
 language: en
 version: 1
-revision: 89328749-7709-42c5-ae4d-0c122474c7e7
+revision: 1fa06b91-d940-4962-8af3-56f6a7f6148b
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -36,6 +64,13 @@ content-length: 34
 
 1 Battery Path, Central, Hong Kong
 ----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 57
+
+<p>Red-brick beauty radiates flavour of old Hong Kong</p>
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -55,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-89328749-7709-42c5-ae4d-0c122474c7e7
+1fa06b91-d940-4962-8af3-56f6a7f6148b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T021349:635821136297822185Z
+20151108T072630Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -73,7 +108,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 7f84cbf7-2085-443d-9fe6-0e6c6434ca1f
+revision: 88208d6c-80fe-43a2-9921-705a952571da
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -104,6 +139,13 @@ content-length: 33
 
 <strong>美丽的红砖建筑，呈现老香港情怀 </strong>
 ----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 10
+
+前法国外方传道会大楼
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -116,14 +158,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7f84cbf7-2085-443d-9fe6-0e6c6434ca1f
+88208d6c-80fe-43a2-9921-705a952571da
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T021416:635821136563967408Z
+20151108T072521Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -134,7 +176,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 9ed0caf8-58c4-4867-91f9-493ef2e5ef2d
+revision: 2646cb92-c596-4520-8358-4b6c399f1e6e
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -184,14 +226,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9ed0caf8-58c4-4867-91f9-493ef2e5ef2d
+2646cb92-c596-4520-8358-4b6c399f1e6e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T021402:635821136429679727Z
+20151108T072549Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

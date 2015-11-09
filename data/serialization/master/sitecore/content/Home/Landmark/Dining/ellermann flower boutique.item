@@ -10,6 +10,13 @@ template: {91A88069-9A0E-48B7-9509-BDE830A54D0E}
 templatekey: T14 Page
 
 ----field----
+field: {DDA15F2F-F719-4896-A8A7-2FC0FE5C5500}
+name: Brand Image
+key: brand image
+content-length: 58
+
+<image mediaid="{654F89C3-80A3-428C-8676-31DA49606ACD}" />
+----field----
 field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
 name: Building
 key: building
@@ -44,17 +51,10 @@ key: svg id
 content-length: 8
 
 shop-236
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 4
-
-2500
 ----version----
 language: en
 version: 1
-revision: ef0c55f5-1eec-4b21-82ee-e5c791c993c4
+revision: d79112e6-615f-45ff-8fb6-71186cef5628
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -67,13 +67,13 @@ Ellermann Flower Boutique
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 675
+content-length: 674
 
 From auspicious beginnings, Ellermann Flower Boutique & Event Atelier has grown to become the florist of choice for Hong Kong's well-to-do, becoming de riguer at every notable society event. Ellermann's commitment to classic yet quirky floral creations using only the finest flowers has won it a loyal and enthusiastic following.
 
 More than a florist, Ellermann also curates a range of homewares and gifting ideas carefully and selectively sourced from around the world and created with as much craft and love as one of Ellermann's own arrangements.
 
-The Ellermann Landmark Atrium boutique brings Ellermann's unique indulgent arrangements and exceptional service to Central. 
+The Ellermann Landmark Atrium boutique brings Ellermann's unique indulgent arrangements and exceptional service to Central.
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -92,21 +92,21 @@ Ellermann Flower Boutique
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 675
+content-length: 674
 
 From auspicious beginnings, Ellermann Flower Boutique & Event Atelier has grown to become the florist of choice for Hong Kong's well-to-do, becoming de riguer at every notable society event. Ellermann's commitment to classic yet quirky floral creations using only the finest flowers has won it a loyal and enthusiastic following.
 
 More than a florist, Ellermann also curates a range of homewares and gifting ideas carefully and selectively sourced from around the world and created with as much craft and love as one of Ellermann's own arrangements.
 
-The Ellermann Landmark Atrium boutique brings Ellermann's unique indulgent arrangements and exceptional service to Central. 
+The Ellermann Landmark Atrium boutique brings Ellermann's unique indulgent arrangements and exceptional service to Central.
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 53
+content-length: 52
 
 Mon-Fri 10am-7pm
-Sat, Sun & Public Holidays 10am-6pm 
+Sat, Sun & Public Holidays 10am-6pm
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -141,14 +141,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ef0c55f5-1eec-4b21-82ee-e5c791c993c4
+d79112e6-615f-45ff-8fb6-71186cef5628
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T054827Z
+20151108T092037Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -159,38 +159,45 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: d5258452-3b92-4947-adf5-1c18a63fea8f
+revision: fb451751-53f9-4250-83e2-60b307199e5f
 
+----field----
+field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
+name: Brand Title
+key: brand title
+content-length: 25
+
+Ellermann Flower Boutique
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 675
+content-length: 674
 
 From auspicious beginnings, Ellermann Flower Boutique & Event Atelier has grown to become the florist of choice for Hong Kong's well-to-do, becoming de riguer at every notable society event. Ellermann's commitment to classic yet quirky floral creations using only the finest flowers has won it a loyal and enthusiastic following.
 
 More than a florist, Ellermann also curates a range of homewares and gifting ideas carefully and selectively sourced from around the world and created with as much craft and love as one of Ellermann's own arrangements.
 
-The Ellermann Landmark Atrium boutique brings Ellermann's unique indulgent arrangements and exceptional service to Central. 
+The Ellermann Landmark Atrium boutique brings Ellermann's unique indulgent arrangements and exceptional service to Central.
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 675
+content-length: 674
 
 From auspicious beginnings, Ellermann Flower Boutique & Event Atelier has grown to become the florist of choice for Hong Kong's well-to-do, becoming de riguer at every notable society event. Ellermann's commitment to classic yet quirky floral creations using only the finest flowers has won it a loyal and enthusiastic following.
 
 More than a florist, Ellermann also curates a range of homewares and gifting ideas carefully and selectively sourced from around the world and created with as much craft and love as one of Ellermann's own arrangements.
 
-The Ellermann Landmark Atrium boutique brings Ellermann's unique indulgent arrangements and exceptional service to Central. 
+The Ellermann Landmark Atrium boutique brings Ellermann's unique indulgent arrangements and exceptional service to Central.
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 41
+content-length: 40
 
 星期一至星期五∶早上10时至晚上7时
-星期六、日及公众假期∶早上10时至晚上6时 
+星期六、日及公众假期∶早上10时至晚上6时
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -232,56 +239,63 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d5258452-3b92-4947-adf5-1c18a63fea8f
+fb451751-53f9-4250-83e2-60b307199e5f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063858Z
+20151108T093334Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: c9363e04-8b47-4168-bde4-dabba36551b7
+revision: 91d9d734-db82-4f10-8c55-d89d3a2b7a11
 
+----field----
+field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
+name: Brand Title
+key: brand title
+content-length: 25
+
+Ellermann Flower Boutique
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 675
+content-length: 674
 
 From auspicious beginnings, Ellermann Flower Boutique & Event Atelier has grown to become the florist of choice for Hong Kong's well-to-do, becoming de riguer at every notable society event. Ellermann's commitment to classic yet quirky floral creations using only the finest flowers has won it a loyal and enthusiastic following.
 
 More than a florist, Ellermann also curates a range of homewares and gifting ideas carefully and selectively sourced from around the world and created with as much craft and love as one of Ellermann's own arrangements.
 
-The Ellermann Landmark Atrium boutique brings Ellermann's unique indulgent arrangements and exceptional service to Central. 
+The Ellermann Landmark Atrium boutique brings Ellermann's unique indulgent arrangements and exceptional service to Central.
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 675
+content-length: 674
 
 From auspicious beginnings, Ellermann Flower Boutique & Event Atelier has grown to become the florist of choice for Hong Kong's well-to-do, becoming de riguer at every notable society event. Ellermann's commitment to classic yet quirky floral creations using only the finest flowers has won it a loyal and enthusiastic following.
 
 More than a florist, Ellermann also curates a range of homewares and gifting ideas carefully and selectively sourced from around the world and created with as much craft and love as one of Ellermann's own arrangements.
 
-The Ellermann Landmark Atrium boutique brings Ellermann's unique indulgent arrangements and exceptional service to Central. 
+The Ellermann Landmark Atrium boutique brings Ellermann's unique indulgent arrangements and exceptional service to Central.
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 41
+content-length: 40
 
 星期一至星期五︰早上10時至晚上7時
-星期六、日及公眾假期︰早上10時至晚上6時 
+星期六、日及公眾假期︰早上10時至晚上6時
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -316,18 +330,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c9363e04-8b47-4168-bde4-dabba36551b7
+91d9d734-db82-4f10-8c55-d89d3a2b7a11
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063859Z
+20151108T093350Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

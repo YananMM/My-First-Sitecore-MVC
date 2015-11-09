@@ -10,6 +10,13 @@ template: {91A88069-9A0E-48B7-9509-BDE830A54D0E}
 templatekey: T14 Page
 
 ----field----
+field: {DDA15F2F-F719-4896-A8A7-2FC0FE5C5500}
+name: Brand Image
+key: brand image
+content-length: 58
+
+<image mediaid="{795225E2-20FB-4863-9E3D-B19E780B2C20}" />
+----field----
 field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
 name: Building
 key: building
@@ -54,7 +61,7 @@ shop-311-312
 ----version----
 language: en
 version: 1
-revision: 97ba4a72-c0b7-45fc-a516-8a13e92ea28d
+revision: 212dd91d-c2b9-4b88-980d-33bbce130aa2
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -67,9 +74,9 @@ Citibank
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 184
+content-length: 183
 
-Citibank branches offer a wide range of comprehensive banking services, including loan and mortgage, stock account opening, investment and insurance services, deposit and credit card. 
+Citibank branches offer a wide range of comprehensive banking services, including loan and mortgage, stock account opening, investment and insurance services, deposit and credit card.
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -88,18 +95,18 @@ Citibank
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 184
+content-length: 183
 
-Citibank branches offer a wide range of comprehensive banking services, including loan and mortgage, stock account opening, investment and insurance services, deposit and credit card. 
+Citibank branches offer a wide range of comprehensive banking services, including loan and mortgage, stock account opening, investment and insurance services, deposit and credit card.
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 66
+content-length: 65
 
 Mon-Fri 9:30am-5pm
 Sat 9:30am-12:30pm
-Sun & Public Holiday closed 
+Sun & Public Holiday closed
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -134,21 +141,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-97ba4a72-c0b7-45fc-a516-8a13e92ea28d
+212dd91d-c2b9-4b88-980d-33bbce130aa2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151628Z
+20151108T091134Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1

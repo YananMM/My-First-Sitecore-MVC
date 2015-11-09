@@ -12,22 +12,22 @@ templatekey: T34 Special Offer Object
 ----version----
 language: en
 version: 1
-revision: eccbfb1d-3b04-48e4-ba0c-a9fbe09c2a53
+revision: 5e734e9d-0b40-49d7-99e5-e6b36df8e2f2
 
 ----field----
 field: {8CC749CB-7079-4C70-86DF-AED85DFF80B7}
 name: Offer Title
 key: offer title
-content-length: 19
+content-length: 36
 
-Landmark Art Voyage
+Shanghai Hairy Crab Feast at Man Wah
 ----field----
 field: {6E8EA4C2-1BBB-4243-B4E3-5416880424A7}
 name: Offer Description
 key: offer description
-content-length: 50
+content-length: 254
 
-Take a LANDMARK Art Voyage with exclusive benefits
+From 28 October to 30 November, Cheng Long Hang Crab Palace Restaurant in Shanghai will return to Man Wah, the Michelin-starred Cantonese restaurant at Mandarin Oriental, Hong Kong with their famed Shanghai hairy crab and a series of Shanghainese dishes.
 ----field----
 field: {F28E85D1-9BF0-471D-8964-F396DF90F93F}
 name: Offer Link Label
@@ -62,14 +62,150 @@ name: __Revision
 key: __revision
 content-length: 36
 
-eccbfb1d-3b04-48e4-ba0c-a9fbe09c2a53
+5e734e9d-0b40-49d7-99e5-e6b36df8e2f2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150820T031145:635756371058506681Z
+20151106T102436Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 36017fc1-1b47-4231-854a-85de1a7c7f7f
+
+----field----
+field: {8CC749CB-7079-4C70-86DF-AED85DFF80B7}
+name: Offer Title
+key: offer title
+content-length: 17
+
+文华厅呈献上海时令大闸蟹及地道菜式
+----field----
+field: {6E8EA4C2-1BBB-4243-B4E3-5416880424A7}
+name: Offer Description
+key: offer description
+content-length: 94
+
+由10月28日至11月30日，香港文华东方酒店的米芝莲星级广东食府文华厅将再度为各饕餮呈献以大闸蟹闻名的上海成隆行蟹王府大闸蟹。文华厅团队更将以此时令食材入馔，精心烹调一系列传统上海菜式。
+----field----
+field: {F28E85D1-9BF0-471D-8964-F396DF90F93F}
+name: Offer Link Label
+key: offer link label
+content-length: 4
+
+立即预订
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T112349Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+36017fc1-1b47-4231-854a-85de1a7c7f7f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T112405Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 995228f6-6aeb-43e7-91b7-f4bc6c3e506a
+
+----field----
+field: {8CC749CB-7079-4C70-86DF-AED85DFF80B7}
+name: Offer Title
+key: offer title
+content-length: 17
+
+文華廳呈獻上海時令大閘蟹及地道菜式
+----field----
+field: {6E8EA4C2-1BBB-4243-B4E3-5416880424A7}
+name: Offer Description
+key: offer description
+content-length: 94
+
+由10月28日至11月30日，香港文華東方酒店的米芝蓮星級廣東食府文華廳將再度為各饕餮呈獻以大閘蟹聞名的上海成隆行蟹王府大閘蟹。文華廳團隊更將以此時令食材入饌，精心烹調一系列傳統上海菜式。
+----field----
+field: {F28E85D1-9BF0-471D-8964-F396DF90F93F}
+name: Offer Link Label
+key: offer link label
+content-length: 4
+
+立即預訂
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T105743Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+995228f6-6aeb-43e7-91b7-f4bc6c3e506a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T105757Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

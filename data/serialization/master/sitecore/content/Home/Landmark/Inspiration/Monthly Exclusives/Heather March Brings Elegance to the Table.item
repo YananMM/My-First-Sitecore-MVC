@@ -27,16 +27,16 @@ content-length: 16
 field: {EF0834ED-A9CD-414C-B3FD-3F282C6B155E}
 name: Brand
 key: brand
-content-length: 38
+content-length: 0
 
-{A960C567-84A3-4E71-A89A-3D6B663E45C0}
+
 ----field----
 field: {C9FE1BF7-0BCB-46A5-8910-5CC57B66B83E}
 name: Tags
 key: tags
-content-length: 38
+content-length: 194
 
-{0948F71F-D1A4-4B6A-941B-863C5ED70294}
+{0948F71F-D1A4-4B6A-941B-863C5ED70294}|{45EE72B3-0021-4A62-AA7F-55E291FB3979}|{34DEB1F1-7863-44BE-A67A-8E1900EFB90F}|{EBC7CBA8-4A32-42F7-8E0C-4B9322F6E859}|{3FBE00DD-2724-453D-8208-D0E3425672F1}
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -47,7 +47,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: c32cf2db-86f9-44f9-878a-a5a164e98075
+revision: 72f127eb-49de-4330-9006-73b3482d62f0
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -67,17 +67,24 @@ content-length: 0
 field: {AC99433B-FC36-4B1B-A5BE-9DA201C74866}
 name: Article Content
 key: article content
-content-length: 1377
+content-length: 1655
 
-<p>One of the great delights in life is entertaining family and friends to a sumptuous afternoon tea at home – and it all starts with a perfectly laid table featuring only the very best linen, crockery and cutlery. 
- </p>
-<p>Heather & March is highly experienced in sourcing tip-top items from the best tableware producers in Europe, and is presenting three beautiful accoutrements for tea exclusively at its LANDMARK PRINCE'S store – a cake server, dinner knife and pie server from Ercuis of France.  </p>
-
-<p>Founded in 1861, Ercuis is acknowledged as one of the world’s best silversmiths, embodying excellence in French craftsmanship, history and design. The company works with top designers in a range of fields, and is found in some of the world’s most famous hotels and restaurants, as well as houses and yachts of the rich and famous.  </p>
-
-<p>The cake server comes from the Du Barry collection, decorated with fancy acanthus leaves, typical of the Louis XV style – a romantic and exuberant combination. The dinner knife and pie server are part of the Baguette collection, which emphasises pure and rounded lines; both are inspired by traditional shapes but adapted for modern living. All these French-made pieces are silver plated and dishwasher safe – and they bring refined elegance to the table when you’re serving savoury or sweet pies and delicious cakes.  </p>
-
-
+<p>One of the great delights in life is entertaining family and friends to a sumptuous afternoon tea at home &ndash; and it all starts with a perfectly laid table featuring only the very best linen, crockery and cutlery.
+</p>
+<p>Heather &amp; March is highly experienced in sourcing tip-top items from the best tableware producers in Europe, and is presenting three beautiful accoutrements for tea exclusively at its LANDMARK PRINCE'S store &ndash; a cake server, dinner knife and pie server from Ercuis of France.  </p>
+<p>Founded in 1861, Ercuis is acknowledged as one of the world&rsquo;s best silversmiths, embodying excellence in French craftsmanship, history and design. The company works with top designers in a range of fields, and is found in some of the world&rsquo;s most famous hotels and restaurants, as well as houses and yachts of the rich and famous.  </p>
+<p>The cake server comes from the Du Barry collection, decorated with fancy acanthus leaves, typical of the Louis XV style &ndash; a romantic and exuberant combination. The dinner knife and pie server are part of the Baguette collection, which emphasises pure and rounded lines; both are inspired by traditional shapes but adapted for modern living. All these French-made pieces are silver plated and dishwasher safe &ndash; and they bring refined elegance to the table when you&rsquo;re serving savoury or sweet pies and delicious cakes.  </p>
+<p>&nbsp;</p>
+<p>Heather &amp; March </p>
+<p>Address: Shop 216-218, 2/F, LANDMARK PRINCE'S </p>
+<p>Telephone: 2530 0686 </p>
+<p>Opening Hours:<br>
+Mon to Sat<br>
+10am-7pm</p>
+<p>Sun &amp; Public Holidays<br>
+11am-6pm <br>
+&nbsp;</p>
+<br>
 ----field----
 field: {98EC445D-C1C7-4954-92C4-9B2C8E4B5009}
 name: Has Detailed
@@ -105,14 +112,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c32cf2db-86f9-44f9-878a-a5a164e98075
+72f127eb-49de-4330-9006-73b3482d62f0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T040853Z
+20151108T153640Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -123,7 +130,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 18bee8fe-629e-4819-9fb0-358df2683ad0
+revision: c6bed6aa-32c7-443f-87f9-271cf38ef300
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -143,17 +150,26 @@ content-length: 8
 field: {AC99433B-FC36-4B1B-A5BE-9DA201C74866}
 name: Article Content
 key: article content
-content-length: 478
+content-length: 666
 
 <p>跟至爱亲朋欢聚，一起在家中享受丰盛的下午茶，无疑是人生一大乐事。这一切当自一张摆设得无懈可击的餐桌开始，而桌上应有最优质的织品、陶器和餐具。 </p>
-
-<p>要说从欧洲搜寻最顶级餐具，Heather & March可谓经验丰富。位于置地太子的Heather & March专卖店于8月独家呈献三款为下午茶而设的精品 —— 来自法国Ercuis的蛋糕铲刀、餐刀和馅饼铲刀。 </p>
-
+<p>要说从欧洲搜寻最顶级餐具，Heather &amp; March可谓经验丰富。位于置地太子的Heather &amp; March专卖店于8月独家呈献三款为下午茶而设的精品 &mdash;&mdash; 来自法国Ercuis的蛋糕铲刀、餐刀和馅饼铲刀。 </p>
 <p>Ercuis于1861年成立，被公认为世上最佳银匠之一，完美演绎了法国的工艺、历史和设计。品牌经常与不同领域的优秀设计师携手合作，作品更于全球著名的酒店和餐厅登场，也是高尚品味家居的必备之品。 </p>
-
-<p>蛋糕铲刀来自Du Barry系列，刀柄上有精致的莨苕叶纹装饰，属于典型的路易十五时期风格，既浪漫又华贵。餐刀和馅饼铲是Baguette系列的一部分，强调简洁和圆润的线条，设计师取灵感自昔日餐具的形状，并加以改良至适合现代生活所需。这些法国制造的餐具皆以镀银制作，适合洗碗机清洗。不管你要品尝什么糕点，它们都将为餐桌增添一份典雅情怀。 
+<p>蛋糕铲刀来自Du Barry系列，刀柄上有精致的莨苕叶纹装饰，属于典型的路易十五时期风格，既浪漫又华贵。餐刀和馅饼铲是Baguette系列的一部分，强调简洁和圆润的线条，设计师取灵感自昔日餐具的形状，并加以改良至适合现代生活所需。这些法国制造的餐具皆以镀银制作，适合洗碗机清洗。不管你要品尝什么糕点，它们都将为餐桌增添一份典雅情怀。
 </p>
-
+<p>
+</p>
+<p>&nbsp;</p>
+<p>Heather &amp; March </p>
+地址︰置地太子2楼216-218号铺 <br>
+<br>
+电话︰2530 0686 <br>
+<p>营业时间︰<br>
+星期一至六<br>
+早上10时至晚上7时</p>
+<p>星期日及公众假期<br>
+早上11时至下午6时 </p>
+<br>
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -188,14 +204,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-18bee8fe-629e-4819-9fb0-358df2683ad0
+c6bed6aa-32c7-443f-87f9-271cf38ef300
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151021T120939Z
+20151108T153527Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -206,7 +222,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 12b6d2bc-7537-452f-9c87-4a2fb6d64503
+revision: 6e4c37c0-648b-41c9-9e88-185f7708bd1e
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -226,17 +242,23 @@ content-length: 8
 field: {AC99433B-FC36-4B1B-A5BE-9DA201C74866}
 name: Article Content
 key: article content
-content-length: 482
+content-length: 667
 
 <p>與至愛親朋歡聚，一同在家裏享受豐盛的下午茶，無疑是人生一大樂事。這一切當由一張擺設得無懈可擊的餐桌開始，而桌上應有最優質的織品、陶器和餐具。  </p>
-
-<p>說到要搜羅歐洲最頂級的餐具，Heather & March可謂經驗豐富。位於置地太子的Heather & March專門店於8月獨家呈獻三款為下午茶而設的精品 —— 來自法國Ercuis的蛋糕鏟刀、餐刀和餡餅鏟刀。  </p>
-
+<p>說到要搜羅歐洲最頂級的餐具，Heather &amp; March可謂經驗豐富。位於置地太子的Heather &amp; March專門店於8月獨家呈獻三款為下午茶而設的精品 &mdash;&mdash; 來自法國Ercuis的蛋糕鏟刀、餐刀和餡餅鏟刀。  </p>
 <p>Ercuis於1861年成立，被公認為世上最佳銀器匠之一，完美演繹了法國的工藝、歷史和設計。該品牌經常與不同領域的優秀設計師攜手合作，作品更於全球著名的酒店和餐廳登場，也是高尚品味家居的必備之品。  </p>
-
-<p>蛋糕鏟刀來自Du Barry系列，刀柄上有精緻的莨苕葉紋裝飾，屬典型路易十五時期風格，既浪漫又華貴。餐刀和餡餅鏟刀是Baguette系列的一部分，強調簡潔和圓潤的線條，設計師取靈感自昔日餐具的形狀，並加以改良至適合現代生活所需。這些法國製餐具皆以鍍銀製作，適合洗碗機清洗。不管你要品嘗甚麼糕點，它們都將為餐桌添上一份典雅情懷。 
- </p>
-
+<p>蛋糕鏟刀來自Du Barry系列，刀柄上有精緻的莨苕葉紋裝飾，屬典型路易十五時期風格，既浪漫又華貴。餐刀和餡餅鏟刀是Baguette系列的一部分，強調簡潔和圓潤的線條，設計師取靈感自昔日餐具的形狀，並加以改良至適合現代生活所需。這些法國製餐具皆以鍍銀製作，適合洗碗機清洗。不管你要品嘗甚麼糕點，它們都將為餐桌添上一份典雅情懷。
+</p>
+<p>&nbsp;</p>
+<p>Heather &amp; March </p>
+<p>地址︰置地太子2樓216-218號舖 </p>
+<p>電話︰2530 0686 </p>
+<p>營業時間︰<br>
+星期一至六<br>
+早上10時至晚上7時</p>
+<p>星期日及公眾假期<br>
+早上11時至下午6時 &nbsp;</p>
+<br>
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -271,14 +293,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-12b6d2bc-7537-452f-9c87-4a2fb6d64503
+6e4c37c0-648b-41c9-9e88-185f7708bd1e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151021T121257Z
+20151108T154325Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

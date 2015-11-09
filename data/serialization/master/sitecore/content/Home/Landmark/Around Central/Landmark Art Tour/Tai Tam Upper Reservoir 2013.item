@@ -50,7 +50,7 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-4300
+5300
 ----version----
 language: en
 version: 1
@@ -134,7 +134,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: fcb6753d-419d-485a-8728-d6d0eee27bae
+revision: 71db228d-35e3-46c5-a7f7-58a6696379d5
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -175,15 +175,20 @@ content-length: 8
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 265
+content-length: 259
 
-"李志章生于福建省厦门市，在香港长大。一九六八年，他在薰风美术院开始学习国画，翌年在香港博物美术馆举办其首个艺术展。一九七三年，他获英国皇家海外艺术联展颁发优异奖。李志章曾于美国、英国、摩纳哥、台湾、菲律宾、中国及香港等地举办三十多场个人及团体展览。
+李志章生于福建省厦门市，在香港长大。一九六八年，他在薰风美术院开始学习国画，翌年在香港博物美术馆举办其首个艺术展。一九七三年，他获英国皇家海外艺术联展颁发优异奖。李志章曾于美国、英国、摩纳哥、台湾、菲律宾、中国及香港等地举办三十多场个人及团体展览。
 
 李志章以均匀的色调描绘这片山水。他以细腻的笔法、线条及光暗，营造出波平如镜的水库，及周边山峦连绵的柔美质感。远山的薄雾萦绕和桥上的小角楼，是中国文人山水画中特有的景物，整幅画作体现了画家对大自然的热爱。 
 
 置地公司于二零一二年委托李志章创作「大潭上水塘」。
-"
+----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
 
+您正在查看
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -197,14 +202,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fcb6753d-419d-485a-8728-d6d0eee27bae
+71db228d-35e3-46c5-a7f7-58a6696379d5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T034227:635820325472669151Z
+20151108T043253Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -215,7 +220,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: e2f8521e-77cd-4020-8f84-c25d2a1aeb1a
+revision: e36cad9c-eaca-4780-bca8-e62daa5597c9
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -256,15 +261,21 @@ content-length: 8
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 265
+content-length: 261
 
-"李志章生於福建省廈門市，在香港長大。一九六八年，他在薰風美術院開始學習國畫，翌年在香港博物美術館舉辦其首個藝術展。一九七三年，他獲英國皇家海外藝術聯展頒發優異獎。李志章曾於美國、英國、摩納哥、台灣、菲律賓、中國及香港等地舉辦三十多場個人及團體展覽。
+李志章生於福建省廈門市，在香港長大。一九六八年，他在薰風美術院開始學習國畫，翌年在香港博物美術館舉辦其首個藝術展。一九七三年，他獲英國皇家海外藝術聯展頒發優異獎。李志章曾於美國、英國、摩納哥、台灣、菲律賓、中國及香港等地舉辦三十多場個人及團體展覽。
 
 李志章以均勻的色調描繪這片山水。他以細膩的筆法、線條及光暗，營造出波平如鏡的水庫，及周邊山巒連綿的柔美質感。遠山的薄霧縈繞和橋上的小角樓，是中國文人山水畫中特有的景物，整幅畫作體現了畫家對大自然的熱愛。 
 
 置地公司於二零一二年委託李志章創作「大潭上水塘」。
-"
 
+----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -278,14 +289,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e2f8521e-77cd-4020-8f84-c25d2a1aeb1a
+e36cad9c-eaca-4780-bca8-e62daa5597c9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T034218:635820325388314326Z
+20151108T043303Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

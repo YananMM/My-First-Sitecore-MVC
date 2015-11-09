@@ -27,9 +27,9 @@ content-length: 38
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 77
+content-length: 155
 
-{C034122F-A68F-4E3C-827E-C1898533C08E}|{410058FD-4835-43BD-9FC0-430DAF3C8381}
+{C034122F-A68F-4E3C-827E-C1898533C08E}|{410058FD-4835-43BD-9FC0-430DAF3C8381}|{D84B1172-716F-4E5A-8CF0-7D22C9A221C1}|{6B69973D-6FCC-45B2-9C75-ECCBC56F42FC}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -58,17 +58,10 @@ key: svg id
 content-length: 9
 
 shop-B47A
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 4
-
-2600
 ----version----
 language: en
 version: 1
-revision: cbb09f30-3f1a-427f-8495-644b2107e5f3
+revision: 24091ad2-cb37-4c16-af74-b4cf8300b32f
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -191,21 +184,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cbb09f30-3f1a-427f-8495-644b2107e5f3
+24091ad2-cb37-4c16-af74-b4cf8300b32f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T054827Z
+20151105T151902Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 14
+content-length: 18
 
-sitecore\admin
+extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
@@ -355,7 +348,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: 421faaa3-e617-4790-8dfe-624e8b39739c
+revision: fba12376-edac-4d4f-9423-6012b111a554
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -476,18 +469,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-421faaa3-e617-4790-8dfe-624e8b39739c
+fba12376-edac-4d4f-9423-6012b111a554
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063903Z
+20151108T094024Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

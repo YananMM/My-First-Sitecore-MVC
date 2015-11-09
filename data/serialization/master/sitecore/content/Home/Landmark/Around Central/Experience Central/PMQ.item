@@ -31,16 +31,23 @@ content-length: 58
 
 <image mediaid="{5A196AD7-10E6-4821-BF1A-EC9EF59D9AEF}" />
 ----field----
+field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
+name: Callout Image
+key: callout image
+content-length: 58
+
+<image mediaid="{5A196AD7-10E6-4821-BF1A-EC9EF59D9AEF}" />
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
 content-length: 77
 
-{DA1C68B3-0958-4250-A9F6-2F03EAA17545}|{ED3568AF-EFF9-439E-BE3E-C2F93A72CBCA}
+{ED3568AF-EFF9-439E-BE3E-C2F93A72CBCA}|{DA1C68B3-0958-4250-A9F6-2F03EAA17545}
 ----version----
 language: en
 version: 1
-revision: 083666ba-76a9-4dbc-bd79-1a8d852035fc
+revision: e3953257-1805-4c7b-9810-5b3c2155b983
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -90,14 +97,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-083666ba-76a9-4dbc-bd79-1a8d852035fc
+e3953257-1805-4c7b-9810-5b3c2155b983
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T021127:635821134877730961Z
+20151108T071515Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,7 +115,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 65fbe5fa-2dcd-4ef0-aeea-3da88d4ce6e8
+revision: ab03e061-f9c3-49dc-b298-e7ad14700e8d
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -158,14 +165,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-65fbe5fa-2dcd-4ef0-aeea-3da88d4ce6e8
+ab03e061-f9c3-49dc-b298-e7ad14700e8d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T021210:635821135305155408Z
+20151108T071602Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -176,7 +183,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: cb81aec2-eba5-4e45-ae46-21c7d048ac3c
+revision: d7cc870a-34c3-48e2-abf1-81f6321ff69e
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -226,14 +233,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cb81aec2-eba5-4e45-ae46-21c7d048ac3c
+d7cc870a-34c3-48e2-abf1-81f6321ff69e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T021142:635821135025029386Z
+20151108T071530Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

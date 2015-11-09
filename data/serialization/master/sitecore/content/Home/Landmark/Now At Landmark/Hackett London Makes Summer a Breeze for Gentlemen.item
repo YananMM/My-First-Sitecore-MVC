@@ -13,9 +13,9 @@ templatekey: T4 Page
 field: {816BB583-7E69-4E11-BCA7-4239CD03A9B2}
 name: Brand
 key: brand
-content-length: 38
+content-length: 0
 
-{82959733-7AD1-4EF1-BD61-E0EEAE6B37A2}
+
 ----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Portrait Callout Image
@@ -23,6 +23,20 @@ key: article portrait callout image
 content-length: 58
 
 <image mediaid="{D3DDE5B0-DA3E-4A56-8F69-4609AC69D7D0}" />
+----field----
+field: {B966F61E-9F08-4674-AC01-EE1064020145}
+name: Article Date
+key: article date
+content-length: 16
+
+20150802T160000Z
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+800
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -40,8 +54,25 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 3a6546ec-e2aa-4030-b109-451781ec9557
+revision: bd47a52c-78b6-450e-a3c3-b54250d3a4b9
 
+----field----
+field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
+name: Article Content
+key: article content
+content-length: 1429
+
+<p>Looking smart and cool in the summer months can be a tricky proposition for men. The key is to go for a more relaxed look, and put the emphasis on lightweight, easy-going fabrics &ndash; and impeccable tailoring, of course.</p>
+<p>Hackett London is an expert at balancing style and comfort, and this August the British label is offering four special pieces exclusively at its LANDMARK MEN store at LANDMARK ATRIUM that you won&rsquo;t regret adding to your summer wardrobe. </p>
+<p>The Mayfair White Dot jacquard shirt, in 100% cotton and with double cuffs, is a polished item that makes the statement &ldquo;true gentleman&rdquo;. It is a perfect match for the single-breasted cotton shirt jacket. The combination of the navy jacket and white shirt is a classic look for summer, bringing in overtones of nautical panache. </p>
+<p>Complementing the shirt and jacket are a pair of slim-fit cotton trousers in white &ndash; another traditional hot-weather icon. Topping off the outfit is a blue polka dot handkerchief, tucked into the breast pocket.</p>
+<p>And there you have it &ndash; a sophisticated, elegant, yet laid-back look that will take a gentleman everywhere, from summer garden parties and alfresco dining to boating trips.</p>
+<p>&nbsp;</p>
+<p><strong>Hackett London</strong> </p>
+<p>Address: Shop B63, LANDMARK MEN, B/F, LANDMARK ATRIUM </p>
+<p>Telephone: 2885 0970</p>
+<p>Opening Hours: <br>
+10:30am-8pm Daily</p>
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
@@ -53,8 +84,7 @@ Hackett London Makes Summer a Breeze for Gentlemen
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 2
-
+content-length: 0
 
 
 ----field----
@@ -77,14 +107,170 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3a6546ec-e2aa-4030-b109-451781ec9557
+bd47a52c-78b6-450e-a3c3-b54250d3a4b9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T022519Z
+20151109T021212Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 82bfb116-7be0-46fe-84ad-e1d4440b3908
+
+----field----
+field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
+name: Article Content
+key: article content
+content-length: 588
+
+<p>对绅士们而言，要在酷暑中看来英伟潇洒、气度不凡，大概有点棘手？关键在于为自己塑造较为悠闲的风格，而选取轻便的布料更是不二法门。当然，无懈可击的剪裁同样不可或缺。</p>
+<p>Hackett London是将风格与舒适拿捏得恰到好处的高手，这个英国品牌於8月在置地广场中庭LANDMARK MEN的专门店独家发售四款饶富特色的设计，令衣橱在炎炎夏日生色不少。</p>
+<p>Mayfair白点提花衬衫以纯棉制造，配外翻双袖头，设计优雅，流露绅士魅力。外加一件单襟棉质西装外套，堪称绝配。海军蓝西装外套与白恤衫互相辉映，活现经典夏日形象，带出犹如乘风破浪般的洒脱气魄。</p>
+<p>与衬衫和西装外套配衬得宜的，是另一传统夏日之选 &mdash;&mdash; 白色修身棉质长裤。再于西装外套的胸袋加一方蓝色波卡圆点手帕，整个造型更见完美。</p>
+<p>如此您就可带着高雅闲逸的绅士形象四处游走，不管是夏日的露天派对、户外晚宴，又或要乘船出海，这身装扮都会令您时刻满怀自信。</p>
+<p>&nbsp;</p>
+<p><strong>Hackett London </strong></p>
+<p>地址：置地广场中庭地库LANDMARK MEN B63号铺</p>
+<p>电话：2885 0970</p>
+<p>营业时间：<br>
+每日早上10时30分至晚上8时</p>
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 20
+
+Hackett London夏日绅士风格
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T123257Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+82bfb116-7be0-46fe-84ad-e1d4440b3908
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151109T023516Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: b8069982-1833-47d8-aff6-b470020eb835
+
+----field----
+field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
+name: Article Content
+key: article content
+content-length: 577
+
+<p>對男士而言，要在酷暑中看來英偉瀟灑、氣度不凡，可會有點棘手？關鍵是為自己塑造較為悠閒的風格，而選取輕便的布料更是不二法門。當然，無懈可擊的剪裁同樣不可或缺。</p>
+<p>Hackett London是把型格與舒適拿捏得宜的高手，這個英國品牌於8月在置地廣塲中庭LANDMARK MEN的專門店獨家發售四款饒富特色的設計，令衣櫥在炎炎夏日生色不少。</p>
+<p>Mayfair白點提花恤衫以純棉製造，配外翻雙袖頭，設計優雅，流露紳士魅力。外加一件單襟棉質西裝外套，堪稱絕配。海軍藍西裝外套與白恤衫互相輝映，活現經典夏日形象，帶出乘風破浪般的灑脫氣魄。<br>
+跟恤衫和西裝外套配襯得宜的，是另一傳統夏日之選 &mdash;&mdash; 白色修身棉質長褲。再於西裝外套的胸袋加一方藍色波卡圓點手帕，整個造型更見完美。</p>
+<p>如此您就可帶着高雅閒逸的紳士形象四處遊走，不管是夏日的露天派對、戶外晚宴，又或要乘船出海，這身打扮都會令您時刻滿懷自信。</p>
+<p>&nbsp;</p>
+<p><strong>Hackett London</strong></p>
+<p>地址：置地廣塲中庭地庫LANDMARK MEN B63號舖</p>
+<p>電話：2885 0970</p>
+<p>營業時間：<br>
+每日早上10時30分至晚上8時</p>
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 20
+
+Hackett London夏日紳士風格
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 20
+
+Hackett London夏日紳士風格
+----field----
+field: {A9B5DD8A-AD08-4D6A-B20C-7E8107C7E952}
+name: Button Text
+key: button text
+content-length: 4
+
+了解更多
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T123501Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b8069982-1833-47d8-aff6-b470020eb835
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151109T021248Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -34,9 +34,9 @@ content-length: 6
 field: {4A1E2FC8-CB80-42C3-BCA9-4E7E9DA0CF91}
 name: Floor Guide
 key: floor guide
-content-length: 109
+content-length: 174
 
-<file mediaid="{8E5D4DBB-B6CA-461F-A514-E45BDC048248}" src="~/media/8e5d4dbbb6ca461fa514e45bdc048248.ashx" />
+<file mediapath="/Files/Landmark/Floor Guide/landmark alexandra 01 BF" mediaid="{32FB74BA-FCE6-447A-98AC-90580602C8DB}" src="~/media/32fb74bafce6447a98ac90580602c8db.ashx" />
 ----field----
 field: {BF9DA807-1A47-4989-952D-5A3E7691E3FC}
 name: Is Landmark
@@ -61,15 +61,15 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 347a7f6f-5698-4a37-bfc3-6a7917d8e45c
+revision: 323dcb20-bbed-4998-ae8e-65008ea4598e
 
 ----field----
 field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
 name: Building Title
 key: building title
-content-length: 10
+content-length: 9
 
-ALEXINDRIA
+ALEXANDRA
 ----field----
 field: {5471CA9B-9D9E-4332-8B37-905B47BCE65F}
 name: Building Address
@@ -97,14 +97,136 @@ name: __Revision
 key: __revision
 content-length: 36
 
-347a7f6f-5698-4a37-bfc3-6a7917d8e45c
+323dcb20-bbed-4998-ae8e-65008ea4598e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151027T071406Z
+20151106T130440Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 22d1af6b-5e00-4227-b390-95f297cb4c44
+
+----field----
+field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
+name: Building Title
+key: building title
+content-length: 4
+
+置地历山
+----field----
+field: {5471CA9B-9D9E-4332-8B37-905B47BCE65F}
+name: Building Address
+key: building address
+content-length: 18
+
+中环皇后大道中15号置地广场历山大厦
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T124117Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+22d1af6b-5e00-4227-b390-95f297cb4c44
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T124349Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 7819aa5c-e7ce-4da5-b8d5-2bbc3d5d70d2
+
+----field----
+field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
+name: Building Title
+key: building title
+content-length: 4
+
+置地歷山
+----field----
+field: {5471CA9B-9D9E-4332-8B37-905B47BCE65F}
+name: Building Address
+key: building address
+content-length: 18
+
+中環皇后大道中15號置地廣場歷山大廈
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T124121Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7819aa5c-e7ce-4da5-b8d5-2bbc3d5d70d2
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T124336Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

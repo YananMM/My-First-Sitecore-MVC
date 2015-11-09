@@ -20,13 +20,13 @@ content-length: 58
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
-content-length: 3
+content-length: 4
 
-500
+1500
 ----version----
 language: en
 version: 1
-revision: 5c8f4254-79fd-42db-8446-6af77660e2c4
+revision: 4e55ab55-945e-456f-9002-59570836f8f5
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -39,12 +39,9 @@ Bo Yun
 field: {55493757-0DCA-49BC-8139-884B29E177E9}
 name: Artist Photo Description
 key: artist photo description
-content-length: 185
+content-length: 0
 
-1948 Born in China 
-1981 Graduated from The Central Academy of Fine Arts, Beijing 
-1981-2005 Professor at the Art Academy of Tsinghua University, Beijing 
-Present Professional Artist
+
 ----field----
 field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
 name: Artist Birthday
@@ -56,9 +53,13 @@ b.1948
 field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
 name: Artist Description
 key: artist description
-content-length: 2166
+content-length: 2349
 
-<p><strong>Solo Exhibitions</strong> <br>
+1948 Born in China<br>
+1981 Graduated from The Central Academy of Fine Arts, Beijing <br>
+1981-2005 Professor at the Art Academy of Tsinghua University, Beijing <br>
+Present Professional Artist<br><br>
+<strong>Solo Exhibitions</strong><br>
 1983 Yu Lu Shan Chang Sha <br>
 1985 French Social Science Institute Paris <br>
 1986 Gallery of Central Academy of Fine Art Beijing <br>
@@ -86,7 +87,6 @@ content-length: 2166
 2008 World Economic Forum Annual meeting Tianjing <br>
 2012 798 Art Bridge Beijing <br>
 <br>
-<br>
 <strong>Group Exhibitions</strong> <br>
 1979 Stars Art exhibition I Beijing <br>
 1980 Stars Art exhibition II Beijing <br>
@@ -94,7 +94,6 @@ content-length: 2166
 1988 Kintetsu Gallery (Exhibition by three artists) Beijing <br>
 1989 "The Stars: 10 years" by Hanart Gallery Hong Kong <br>
 1999 National Art Museum of China Beijing <br>
-<br>
 <br>
 <strong>Significant Collections</strong> <br>
 The Rothschild Family <br>
@@ -117,7 +116,7 @@ Commerzbank AG <br>
 Credit Suisse <br>
 BNP Paribas <br>
 A number of law firms and offices in Hong Kong <br>
-Private collectors around the world </p>
+Private collectors around the world
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -138,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5c8f4254-79fd-42db-8446-6af77660e2c4
+4e55ab55-945e-456f-9002-59570836f8f5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T051337:635820380175397968Z
+20151106T125540Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -156,7 +155,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 08c453eb-ea96-4781-b15c-d5a5db0c1a1f
+revision: 2bc139f6-1ccb-4be1-bbc3-eaedf7487d5f
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -169,13 +168,8 @@ content-length: 7
 field: {55493757-0DCA-49BC-8139-884B29E177E9}
 name: Artist Photo Description
 key: artist photo description
-content-length: 90
+content-length: 0
 
-  Bo Yun (b.1948)
-1948年 生于中国 
-1981年 毕业于北京中央美术学院 
-1981-2005年 于北京清华大学美术学院担任教授 
-现为自由艺术家
 
 ----field----
 field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
@@ -188,9 +182,15 @@ content-length: 7
 field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
 name: Artist Description
 key: artist description
-content-length: 1090
+content-length: 1190
 
-<p><strong>个人展览</strong> <br>
+<strong>Bo Yun (b.1948)</strong><br>
+1948年 生于中国 <br>
+1981年 毕业于北京中央美术学院 <br>
+1981-2005年 于北京清华大学美术学院担任教授<br>
+现为自由艺术家 <br>
+<br>
+<strong>个人展览</strong> <br>
 1983年 岳麓山 长沙 <br>
 1985年 法国社会科学院 巴黎 <br>
 1986年 中央美术学院画廊 北京 <br>
@@ -218,8 +218,6 @@ content-length: 1090
 2008年 世界经济论坛邀请展 天津 <br>
 2012年 798桥艺术中心 北京 <br>
 <br>
-<br>
-<br>
 <strong>联合展览</strong> <br>
 1979年 第一届星星美展 北京 <br>
 1980年 第二届星星美展 北京 <br>
@@ -227,8 +225,6 @@ content-length: 1090
 1988年 近铁画廊 三人展 北京 <br>
 1989年 星星十年展 香港 <br>
 1999年 中国美术馆联展 北京 <br>
-<br>
-<br>
 <br>
 <strong>收藏</strong> <br>
 罗斯柴尔德家族 <br>
@@ -250,8 +246,15 @@ content-length: 1090
 德国商业银行 <br>
 瑞士信贷银行 <br>
 法国巴黎巴银行 <br>
-香港诸多律师事务所、写字楼 <br>
-遍及世界的个人收藏 </p>
+香港诸多律师事务所、写字楼<br>
+遍及世界的个人收藏<br>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 7
+
+薄云（李永存）
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -279,14 +282,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-08c453eb-ea96-4781-b15c-d5a5db0c1a1f
+2bc139f6-1ccb-4be1-bbc3-eaedf7487d5f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151026T035142:635814283027040807Z
+20151106T125237Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -297,7 +300,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 0770231c-ff2c-49d5-90f3-83d433a4dac0
+revision: 9e72a58e-fe78-4bd8-aa81-82438552dab7
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -310,13 +313,8 @@ content-length: 7
 field: {55493757-0DCA-49BC-8139-884B29E177E9}
 name: Artist Photo Description
 key: artist photo description
-content-length: 89
+content-length: 0
 
-Bo Yun (b.1948)
-1948年 生於中國 
-1981年 畢業於北京中央美術學院 
-1981-2005年 於北京清華大學美術學院擔任教授 
-現為自由藝術家 
 
 ----field----
 field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
@@ -329,9 +327,15 @@ content-length: 7
 field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
 name: Artist Description
 key: artist description
-content-length: 1090
+content-length: 1191
 
-<p><strong>個人展覽</strong> <br>
+<strong>Bo Yun (b.1948)</strong><br>
+1948年 生於中國 <br>
+1981年 畢業於北京中央美術學院 <br>
+1981-2005年 於北京清華大學美術學院擔任教授 <br>
+現為自由藝術家<br>
+<br>
+<strong>個人展覽</strong> <br>
 1983年 岳麓山 長沙 <br>
 1985年 法國社會科學院 巴黎 <br>
 1986年 中央美術學院畫廊 北京 <br>
@@ -359,8 +363,6 @@ content-length: 1090
 2008年 世界經濟論壇邀請展 天津 <br>
 2012年 798橋藝術中心 北京 <br>
 <br>
-<br>
-<br>
 <strong>聯合展覽</strong> <br>
 1979年 第一屆星星美展 北京 <br>
 1980年 第二屆星星美展 北京 <br>
@@ -368,8 +370,6 @@ content-length: 1090
 1988年 近鐵畫廊 三人展 北京 <br>
 1989年 星星十年展 香港 <br>
 1999年 中國美術館聯展 北京 <br>
-<br>
-<br>
 <br>
 <strong>收藏</strong> <br>
 羅斯柴爾德家族 <br>
@@ -392,7 +392,14 @@ content-length: 1090
 瑞士信貸銀行 <br>
 法國巴黎巴銀行 <br>
 香港諸多律師事務所、寫字樓 <br>
-遍及世界的個人收藏 </p>
+遍及世界的個人收藏<br>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 7
+
+薄雲（李永存）
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -420,14 +427,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0770231c-ff2c-49d5-90f3-83d433a4dac0
+9e72a58e-fe78-4bd8-aa81-82438552dab7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151026T033048:635814270480533188Z
+20151106T125413Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

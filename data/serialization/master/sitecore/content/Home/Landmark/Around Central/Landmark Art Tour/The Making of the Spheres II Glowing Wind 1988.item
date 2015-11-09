@@ -50,7 +50,7 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-3100
+4100
 ----version----
 language: en
 version: 1
@@ -134,12 +134,19 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 2230d0fe-c687-4307-b094-7c867bac78d5
+revision: bc2a6f61-faf9-4cc7-ad13-38c8b395fc2a
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
+content-length: 11
+
+宇缘二：炽风，1988
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
 content-length: 11
 
 宇缘二：炽风，1988
@@ -177,6 +184,13 @@ content-length: 279
 置地公司委托韩志勋创作这一组四幅的作品，他透过这些作品，探索圆形的象征以及圆形所代表的团结、圆满及完美等各种含义。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -189,14 +203,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2230d0fe-c687-4307-b094-7c867bac78d5
+bc2a6f61-faf9-4cc7-ad13-38c8b395fc2a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T021301:635820271816540196Z
+20151108T041012Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -207,7 +221,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: e28557d8-8eb3-48a9-887b-2a367de8ed5c
+revision: a0b55ba9-1988-4a5e-9da0-77591e35fec2
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -257,6 +271,13 @@ content-length: 279
 置地公司委託韓志勳創作這一組四幅的作品，他透過這些作品，探索圓形的象徵以及圓形所代表的團結、圓滿及完美等各種含義。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -269,14 +290,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e28557d8-8eb3-48a9-887b-2a367de8ed5c
+a0b55ba9-1988-4a5e-9da0-77591e35fec2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T021304:635820271840561570Z
+20151108T041017Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

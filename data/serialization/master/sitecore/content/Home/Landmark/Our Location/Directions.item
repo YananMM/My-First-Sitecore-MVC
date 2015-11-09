@@ -66,7 +66,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: d33f480f-e82e-4cb2-903b-982ee4352ac9
+revision: e3f7bb33-1cf4-4419-bca4-6fdc430638e0
 
 ----field----
 field: {C8AE9876-3BF8-4C50-A6F2-C90D9B17840F}
@@ -82,6 +82,13 @@ key: map data page 2
 content-length: 4
 
 周边设施
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 4
+
+位置指南
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -116,14 +123,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d33f480f-e82e-4cb2-903b-982ee4352ac9
+e3f7bb33-1cf4-4419-bca4-6fdc430638e0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151019T104156:635808481163851920Z
+20151106T134423Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -134,7 +141,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: b112d04e-88dc-431a-9ef7-224802acba8a
+revision: 1712d4df-a415-4b11-8663-340cdf7b3755
 
 ----field----
 field: {C8AE9876-3BF8-4C50-A6F2-C90D9B17840F}
@@ -150,6 +157,13 @@ key: map data page 2
 content-length: 4
 
 附近設施
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 4
+
+位置指南
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -184,14 +198,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b112d04e-88dc-431a-9ef7-224802acba8a
+1712d4df-a415-4b11-8663-340cdf7b3755
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151019T103935:635808479754571313Z
+20151106T134452Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -34,9 +34,9 @@ content-length: 38
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
-content-length: 3
+content-length: 4
 
-700
+1700
 ----version----
 language: en
 version: 1
@@ -125,7 +125,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: ed397f59-1145-4d83-b89f-7b2185cd7bb1
+revision: 1aa08397-a830-42bf-8eaf-6121a18f249f
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -173,6 +173,13 @@ content-length: 283
 薄云善于运用磅礡的笔触表现宏伟的天与地，画作往往充满生命的灵气。置地历山的一组作品以蓝色为主题，呈现天地间各种风景。作品《云的旋律》描绘云的多变性。许多人都有过在飞机上观察云层的经验，云层上的天空浩瀚而广阔，云流则变幻莫测， 时而轻飘，时而厚重。阳光照在翻滚的云彩上，在层层承接的雄伟云层间闪耀。风起云涌之际，仿佛这片空间有着强大而神秘的生命力。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -185,14 +192,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ed397f59-1145-4d83-b89f-7b2185cd7bb1
+1aa08397-a830-42bf-8eaf-6121a18f249f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T035257:635820331774619602Z
+20151108T035727Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -203,7 +210,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 668a825c-d1eb-4d3a-a06a-6f1d6277e2e2
+revision: bb6aac5f-bdad-4c62-8673-5d7e0092079c
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -254,6 +261,13 @@ content-length: 568
 薄雲善於運用磅礡的筆觸表現宏偉的天與地，畫作往往充滿生命的靈氣。置地歷山的一組作品以藍色為主題，呈現天地間各種風景。作品《雲的旋律》描繪雲的多變性。許多人都有過在飛機上觀察雲層的經驗，雲層上的天空浩瀚而廣闊，雲流則變幻莫測， 時而輕飄 ，時而厚重。陽光照在翻滾的雲彩上，在層層承接的雄偉雲層間閃耀。風起雲湧之際，彷彿這片空間有著強大而神秘的生命力。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -266,14 +280,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-668a825c-d1eb-4d3a-a06a-6f1d6277e2e2
+bb6aac5f-bdad-4c62-8673-5d7e0092079c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T035246:635820331665923385Z
+20151108T035723Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

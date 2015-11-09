@@ -50,7 +50,7 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-6100
+6400
 ----version----
 language: en
 version: 1
@@ -134,7 +134,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: a56050c9-262c-44e9-8211-d2e2242b5ac2
+revision: 63da2ee8-6158-4a6b-bf21-8de7988b278a
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -184,6 +184,13 @@ content-length: 271
 置地公司委託諾蘭爵士創作「山水一和二」設置於交易廣塲入口，由諾蘭爵士揭幕。由於畫作面積龐大，諾蘭爵士於創作時，須將畫作擺放於工作室之地面上繪畫。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -196,14 +203,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a56050c9-262c-44e9-8211-d2e2242b5ac2
+63da2ee8-6158-4a6b-bf21-8de7988b278a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T030709:635820304293167753Z
+20151108T044335Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -214,7 +221,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 0b9bb24b-4fd9-48c4-b841-40910a55c25f
+revision: 355f8762-4d03-4841-b867-2202aeefb7fa
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -264,6 +271,13 @@ content-length: 271
 置地公司委託諾蘭爵士創作「山水一和二」設置於交易廣塲入口，由諾蘭爵士揭幕。由於畫作面積龐大，諾蘭爵士於創作時，須將畫作擺放於工作室之地面上繪畫。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -276,14 +290,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0b9bb24b-4fd9-48c4-b841-40910a55c25f
+355f8762-4d03-4841-b867-2202aeefb7fa
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T030723:635820304435295882Z
+20151108T044343Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
