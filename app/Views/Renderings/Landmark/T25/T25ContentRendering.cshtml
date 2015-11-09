@@ -96,7 +96,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
@@ -109,7 +108,7 @@
             @Html.Sitecore().Field("Content Description")
         </div>
     </div>
-    <div class="gd-location-map" data-lat="-37.820665" data-lng="144.943051">
+    <div class="gd-location-map" data-lat="@Html.Sitecore().Field("Map Latitude")" data-lng="@Html.Sitecore().Field("Map Longitude")">
         <iframe src="/files/landmark/iframes/map-simple-iframe.html" frameborder="0"></iframe>
     </div>
     @Html.Sitecore().Placeholder("more-attrations")
