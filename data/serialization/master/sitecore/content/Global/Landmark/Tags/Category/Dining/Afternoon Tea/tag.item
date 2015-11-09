@@ -1,54 +1,47 @@
 ----item----
 version: 1
-id: {3F7D7E90-9FF7-4FB5-B54D-C4D3BB0032E0}
+id: {BE9A5D6C-C0DB-4C6D-A642-1E56C9BBC81B}
 database: master
-path: /sitecore/content/Home/Landmark/Dining/Western
-parent: {AA676B4A-E135-4B6F-8889-B9AFBDED5699}
-name: Western
+path: /sitecore/content/Global/Landmark/Tags/Category/Dining/Afternoon Tea/tag
+parent: {CE078BA5-479D-42FE-BAB4-50A1459A29AA}
+name: tag
 master: {00000000-0000-0000-0000-000000000000}
-template: {3832F0F6-6342-4394-932C-2DDAB1164C97}
-templatekey: T11 Page
+template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
+templatekey: Tag Object
 
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 4
-
-6800
 ----version----
 language: en
 version: 1
-revision: 73ba4134-7374-425d-a724-3394b12234fc
+revision: 91d8d913-dfda-4203-9131-7b443023a6c4
 
 ----field----
-field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
-name: Page Title
-key: page title
-content-length: 7
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 3
 
-Western
+tag
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20151023T034630Z
+20151108T054757Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-73ba4134-7374-425d-a724-3394b12234fc
+91d8d913-dfda-4203-9131-7b443023a6c4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T054828Z
+20151108T054757Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
