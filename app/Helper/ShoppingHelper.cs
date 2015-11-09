@@ -22,23 +22,27 @@ namespace Landmark.Helper
         private bool isShop = true;
         private bool isDining = false;
 
-        //public ShoppingHelper()
-        //{
-        //    while (!_parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !_parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
-        //    {
-        //        _parentItem = _parentItem.Parent;
-        //    }
-        //    if (_parentItem.ID.ToString() == ItemGuids.ShoppingItem)
-        //    {
-        //        isShop = true;
-        //        isDining = false;
-        //    }
-        //    else
-        //    {
-        //        isDining = true;
-        //        isShop = false;
-        //    }
-        //}
+        public ShoppingHelper()
+        {
+            if (Sitecore.Context.Item.Paths.Path.StartsWith("/sitecore/content/Home/Landmark/Shopping") ||
+                Sitecore.Context.Item.Paths.Path.StartsWith("/sitecore/content/Home/Landmark/Dining"))
+            {
+                while (!_parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !_parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
+                {
+                    _parentItem = _parentItem.Parent;
+                }
+                if (_parentItem.ID.ToString() == ItemGuids.ShoppingItem)
+                {
+                    isShop = true;
+                    isDining = false;
+                }
+                else
+                {
+                    isDining = true;
+                    isShop = false;
+                }
+            }
+        }
 
         /// <summary>
         /// Gets the brand models.
