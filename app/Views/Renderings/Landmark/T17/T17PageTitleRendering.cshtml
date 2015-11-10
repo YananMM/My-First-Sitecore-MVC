@@ -18,9 +18,9 @@
         int i = 1;
         foreach (var item in parentItem.Children.ToList())
         {
-            <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))" @if (i == 1) { <text>
+            <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))" @if (currentItem.ID.ToString() == item.ID.ToString()) { <text>
                class="active"
-               </text>       }>@Html.Sitecore().Field("Page Title", item)</a>
+               </text>        }>@Html.Sitecore().Field("Page Title", item).ToString().ToUpper()</a>
             if (i != parentItem.Children.Count)
             {
                 <span class="gd-pagetitle-menu-gap">|</span>
@@ -34,7 +34,11 @@
     <select class="form-control">
         @foreach (var item in parentItem.Children.ToList())
         {
-            <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">@Html.Sitecore().Field("Page Title", item)</option>
+            <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))" @if (currentItem.ID.ToString() == item.ID.ToString()) { <text>
+                    selected="selected"
+                    </text>         }>
+                @Html.Sitecore().Field("Page Title", item).ToString().ToUpper()
+            </option>
         }
     </select>
 </div>
