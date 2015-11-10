@@ -12,34 +12,37 @@
 <div class="table-responsive gd-mainimage-table">
     <table>
         <tbody>
-            @if (!string.IsNullOrEmpty(currentItem.Fields["Hotel Phone"].ToString()))
-            {
-                <tr>
-                    <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.PhoneItem)).ToString().ToUpper()</th>
-                    <td>@Html.Sitecore().Field("Hotel Phone")</td>
-                </tr>
-            }
-            @if (!string.IsNullOrEmpty(currentItem.Fields["Hotel Email"].ToString()))
-            {
-                <tr>
-                    <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.EmailItem)).ToString().ToUpper()</th>
-                    <td>@Html.Sitecore().Field("Hotel Email")</td>
-                </tr>
-            }
-            @if (!string.IsNullOrEmpty(currentItem.Fields["Hotel Address"].ToString()))
-            {
-                <tr>
-                    <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.AddressItem)).ToString().ToUpper()</th>
-                    <td>
-                        @Html.Sitecore().Field("Hotel Address")<br>
-                        <a href="javascript:;" class="gd-link-map gd-lightbox-link gd-lightbox-map" data-lat="22.2805507" data-lng="114.1579662" data-lighttitle="@Html.Sitecore().Field("Hotel Title")">
-                            <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ViewMapItem)).ToString().ToUpper()
-                        </a>
-                    </td>
-                </tr>
-            } </tbody>
+        @if (!string.IsNullOrEmpty(currentItem.Fields["Hotel Phone"].ToString()))
+        {
+            <tr>
+                <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.PhoneItem)).ToString().ToUpper()</th>
+                <td>@Html.Sitecore().Field("Hotel Phone")</td>
+            </tr>
+        }
+        @if (!string.IsNullOrEmpty(currentItem.Fields["Hotel Email"].ToString()))
+        {
+            <tr>
+                <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.EmailItem)).ToString().ToUpper()</th>
+                <td>@Html.Sitecore().Field("Hotel Email")</td>
+            </tr>
+        }
+        @if (!string.IsNullOrEmpty(currentItem.Fields["Hotel Address"].ToString()))
+        {
+            <tr>
+                <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.AddressItem)).ToString().ToUpper()</th>
+                <td>
+                    @Html.Sitecore().Field("Hotel Address")<br>
+                    <a href="javascript:;" class="gd-link-map gd-lightbox-link gd-lightbox-map" data-lat="@Html.Sitecore().Field("Map Latitude")" data-lng="@Html.Sitecore().Field("Map Longitude")" data-lighttitle="@Html.Sitecore().Field("Hotel Title")">
+                        <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ViewMapItem)).ToString().ToUpper()
+                    </a>
+                </td>
+            </tr>
+        } </tbody>
     </table>
 </div>
-<a href="javascript:;" class="gd-link-brief">
+@{
+    LinkField officialWebLink = currentItem.Fields["Official Website Url"];
+}
+<a href="@officialWebLink.Url" target="@LandmarkHelper.GetLinkTarget(currentItem, "Official Website Url")" class="gd-link-brief">
     @Html.Sitecore().Field("Official Website Label") <span class="icomoon-chevron-small-right"></span>
 </a>
