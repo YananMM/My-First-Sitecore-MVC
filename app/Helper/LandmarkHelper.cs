@@ -513,7 +513,7 @@ namespace Landmark.Helper
             string socialTitle = string.Empty;
             socialTitle = Sitecore.Context.Item.Fields["Social Share Title"].Value;
             if (string.IsNullOrEmpty(socialTitle))
-                socialTitle = Sitecore.Context.Item.Fields["Meta Keywords"].Value;
+                socialTitle = Sitecore.Context.Item.Fields["Meta Title"].Value;
             return socialTitle;
         }
 
