@@ -3,13 +3,13 @@
 @using Sitecore.Configuration
 @using Sitecore.Data.Items
 <!-- Social App Ids -->
+@{
+    var landmarkConfigItem = Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem);
+}
 <script>
     // sitecore integration: these values should be managed in CMS as global settings
     var gdSettings = {
-        fbAppId:'@{
-            var landmarkConfigItem = Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem);
-        }
-        @landmarkConfigItem.Fields["Facebook Application App Key"].Value',
+        fbAppId:'@landmarkConfigItem.Fields["Facebook Application App Key"].Value',
         wbAppKey: '@landmarkConfigItem.Fields["Weibo Application API Key"]',
         ShortVersionContentNumberOfLines: @landmarkConfigItem.Fields["Short Version Content Number Of Lines"],
         LongVersionContentNumberOfLines: @landmarkConfigItem.Fields["Long Version Content Number Of Lines"]
