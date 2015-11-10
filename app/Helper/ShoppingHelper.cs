@@ -263,14 +263,17 @@ namespace Landmark.Helper
             List<Item> brandsByBuildings = new List<Item>();
             foreach (Item brand in brandsByCategory)
             {
-                var buildingsField = (ReferenceField)brand.Fields["Building"];
-                if (buildingsField != null && buildingsField.TargetItem != null)
+                MultilistField floorField = brand.Fields["Floor"];
+                if (floorField != null && floorField.TargetIDs.Any())
                 {
-                    if (buildingsField.TargetItem.ID.Guid == buildingId.Guid)
+                    var floorid = floorField.TargetIDs.First().ToString();
+                    var buildingItem = Factory.GetDatabase("web").GetItem(floorid).Parent;
+                    if (buildingItem.ID.Guid == buildingId.Guid)
                     {
                         brandsByBuildings.Add(brand);
                     }
                 }
+                
             }
             return brandsByBuildings;
         }
@@ -293,14 +296,17 @@ namespace Landmark.Helper
                     Item categoryItem = _webDb.GetItem(categoryId);
                     if (tagsField.TargetIDs.Any(id => _webDb.GetItem(id).DisplayName == categoryItem.DisplayName && _webDb.GetItem(id).Parent.DisplayName == categoryItem.Parent.DisplayName))
                     {
-                        var buildingsField = (ReferenceField)brand.Fields["Building"];
-                        if (buildingsField != null && buildingsField.TargetItem != null)
+                        MultilistField floorField = brand.Fields["Floor"];
+                        if (floorField != null && floorField.TargetIDs.Any())
                         {
-                            if (!buildingsByCategory.Contains(buildingsField.TargetItem))
+                            var floorid = floorField.TargetIDs.First().ToString();
+                            var buildingItem = Factory.GetDatabase("web").GetItem(floorid).Parent;
+                            if (!buildingsByCategory.Contains(buildingItem))
                             {
-                                buildingsByCategory.Add(buildingsField.TargetItem);
+                                buildingsByCategory.Add(buildingItem);
                             }
                         }
+                        
                     }
                 }
             }

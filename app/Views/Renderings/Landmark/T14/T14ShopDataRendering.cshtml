@@ -43,8 +43,8 @@
             }
             @{
                 var floor = shoppingHelper.GetShopFloor(currentItem);
-                var whereDescription = Html.Sitecore().Field("Area") + "," + floor["Floor Title"];
-                var fullWhere = whereDescription + "," + floor.Parent["Building Title"];
+                var whereDescription =  floor["Floor Title"];
+                var fullWhere = Sitecore.Context.Item.Fields["Address"].Value;
                 if (!string.IsNullOrEmpty(fullWhere))
                 {
                     <tr>

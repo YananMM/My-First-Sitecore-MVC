@@ -78,6 +78,7 @@
                                     @floor.Fields["Floor Title"] @floor.Parent.Fields["Building Title"]<br>
                                     @{
                                 string text = "";
+                                //todo : view glossary
                                 var lightBox = Html.Sitecore().Field("Light Box Text");
                                 text = lightBox + " " + floor.Fields["Floor Title"] + " of " + floor.Parent.Fields["Building Title"];
                                     }

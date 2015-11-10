@@ -33,7 +33,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: f22e2e8a-7e3f-4685-899d-d1083a83481c
+revision: eba7e4b6-ff3c-4f68-9017-a80ec942b3dc
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
@@ -60,9 +60,9 @@ content-length: 14
 field: {AECA85E7-C429-4C06-9100-0626358DBAC1}
 name: Hotel Email
 key: hotel email
-content-length: 27
+content-length: 101
 
-mohkg-reservations@mohg.com
+<link text="email" linktype="external" url="http://mohkg-reservation@mohg.com" anchor="" target="" />
 ----field----
 field: {951224F7-FE4D-4410-8A17-DFA9943AAB65}
 name: Hotel Address
@@ -104,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f22e2e8a-7e3f-4685-899d-d1083a83481c
+eba7e4b6-ff3c-4f68-9017-a80ec942b3dc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151106T111445Z
+20151110T032516:635827227161691582Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
