@@ -15,7 +15,7 @@ name: Article Callout Image
 key: article callout image
 content-length: 58
 
-<image mediaid="{FC09BAC2-D229-48A5-BDE0-85DBAB3D5E1D}" />
+<image mediaid="{1D51423F-1EB1-45A7-B8B1-962460796B14}" />
 ----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Portrait Callout Image
@@ -23,6 +23,13 @@ key: article portrait callout image
 content-length: 0
 
 
+----field----
+field: {EF0834ED-A9CD-414C-B3FD-3F282C6B155E}
+name: Brand
+key: brand
+content-length: 38
+
+{76164D08-5936-48A8-8E5F-2832D83FAE7E}
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -33,7 +40,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: ede15a4a-bfb7-4fde-8a6d-bca9eef81140
+revision: 0712c1e4-6259-49bb-a6fa-817c1f5b6a28
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ede15a4a-bfb7-4fde-8a6d-bca9eef81140
+0712c1e4-6259-49bb-a6fa-817c1f5b6a28
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151028T051518Z
+20151105T122624Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -150,7 +157,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: d5278e83-424a-43ae-b758-346af814feb0
+revision: b2f19224-2eef-4fcf-844b-a5479bc09891
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -188,18 +195,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d5278e83-424a-43ae-b758-346af814feb0
+b2f19224-2eef-4fcf-844b-a5479bc09891
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T141954Z
+20151108T155532Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

@@ -15,26 +15,27 @@ name: About Image
 key: about image
 content-length: 58
 
-<image mediaid="{8C1497B8-372D-4618-A9FA-7732B1C474FD}" />
+<image mediaid="{E8BD1ABC-B607-4583-BEFE-93BB9CF73761}" />
 ----version----
 language: en
 version: 1
-revision: 2f68e8b1-5013-4b53-ba94-1429cdfb0022
+revision: bc95fa00-43eb-4bb8-9175-df78963e6ac9
 
 ----field----
 field: {5DEE80A3-352C-4633-B906-DB62F4AACC07}
 name: About Title
 key: about title
-content-length: 97
+content-length: 15
 
-The Landmark Mandarin Oriental is simply one of the best luxury city hotels in the world.Landmark
+Great Proximity
 ----field----
 field: {35AB2853-817D-476B-8F67-BD734EEEF70C}
 name: About Content
 key: about content
-content-length: 363
+content-length: 193
 
-The Landmark Mandarin Oriental is simply one of the best luxury city hotels in the world. Our 113 guestrooms are amongst the largest hotel rooms in Hong Kong and each a masterpiece of contemporary design. We offer a cocoon of discreet serenity, attended by our legendary service. This is a highly exclusive experience in the premier business and fashion location.
+<p>Mandarin Oriental, Hong Kong is located in the heart of Central district, within a short walking distance from the city&rsquo;s finest shopping, entertainment, major business areas.</p>
+<br>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -62,14 +63,136 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2f68e8b1-5013-4b53-ba94-1429cdfb0022
+bc95fa00-43eb-4bb8-9175-df78963e6ac9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150902T084133:635767800931596700Z
+20151106T102341Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 9675c7c6-edbc-4b1c-927c-25017dfa42ab
+
+----field----
+field: {5DEE80A3-352C-4633-B906-DB62F4AACC07}
+name: About Title
+key: about title
+content-length: 11
+
+精緻的现代派传统法国菜
+----field----
+field: {35AB2853-817D-476B-8F67-BD734EEEF70C}
+name: About Content
+key: about content
+content-length: 149
+
+厨艺总监Richard Ekkebus以现代手法演绎法国菜，为Amber赢得多个奖项，包括两星米芝莲殊荣、於S.Pellegrino「亚洲50最佳餐厅」排名第六及获「主厨之选」之荣誉。大厨Ekkebus坚持采用顶级食材，运用传统烹饪技术，搭配现代式手法，创造出一道道令人讚不绝口的美味料理。<br>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T112444Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9675c7c6-edbc-4b1c-927c-25017dfa42ab
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T112507Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 45157d0a-f72f-4cf1-82ee-176c474abd65
+
+----field----
+field: {5DEE80A3-352C-4633-B906-DB62F4AACC07}
+name: About Title
+key: about title
+content-length: 4
+
+位置便利
+----field----
+field: {35AB2853-817D-476B-8F67-BD734EEEF70C}
+name: About Content
+key: about content
+content-length: 38
+
+香港文華東方酒店位處中環心臟地帶，毗鄰頂級購物商場、娛樂及商貿熱點。<br>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T105603Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+45157d0a-f72f-4cf1-82ee-176c474abd65
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T105619Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

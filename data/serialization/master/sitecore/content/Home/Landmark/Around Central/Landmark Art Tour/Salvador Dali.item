@@ -10,16 +10,23 @@ template: {EC149566-D74F-4E4F-9F2C-A0745E72988E}
 templatekey: T30 Page
 
 ----field----
+field: {9BD250FA-ED47-4245-87A3-B0A834FC78E8}
+name: Artist Photo
+key: artist photo
+content-length: 58
+
+<image mediaid="{FA3C4276-9A4E-49D8-BD31-D750EA8F5313}" />
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
-content-length: 3
+content-length: 4
 
-200
+5850
 ----version----
 language: en
 version: 1
-revision: f8e1cec7-6635-4c22-947a-076582edd543
+revision: 14d87146-b7ed-4f9e-ad86-da7b33417bc1
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -35,6 +42,23 @@ key: artist birthday
 content-length: 9
 
 1904-1989
+----field----
+field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
+name: Artist Description
+key: artist description
+content-length: 2521
+
+Salvador Felipe Jacinto Dal&iacute; I Dom&egrave;nech, Marqu&eacute;s de P&uacute;bol, was a prominent surrealist painter born in the small agricultural town of Figueres, Catalonia, Spain, in the foothills of the Pyr&eacute;n&eacute;es. The son of a prosperous notary, Dal&iacute; spent his boyhood summers in the coastal fishing village of Cadaqu&eacute;s where his parents built his first studio. <br>
+<br>
+The young Dal&iacute; attended the San Fernando Royal Academy of Fine Arts in Madrid. Early recognition of his talent came with his first one-man show in Barcelona in 1925. He became internationally known when three paintings were shown in the third annual Carnegie International Exhibition in Pittsburgh, the United States, in 1928. In Paris, Dal&iacute; joined the surrealists and soon became a leader of the movement. Throughout his life he cultivated eccentricity and exhibitionism, claiming that this was the source of his creative energy. <br>
+<br>
+Dal&iacute; was a skilled draftsman, best known for the striking and bizarre images in his surrealist works. His expansive artistic repertoire includes film, sculpture and photography, in collaboration with a range of artists in a variety of media. <br>
+<br>
+Dal&iacute;&rsquo;s sculptures, Lobster Telephone (1936) and Mae West Lips Sofa (1937), were two of the most popular objects of the surrealist movement. His Woman Aflame combines two favourite obsessions: fire, and a female figure interspersed with drawers. Dal&iacute; found flames fascinating because they exert an almost hypnotic influence on the observer. Drawers symbolize the natural curiosity of children to investigate enclosed spaces, both in order to know what they contain, and to exorcise the fear of the unknown. These drawers are slightly ajar, indicating that their secrets are known and no longer to be feared. <br>
+<br>
+Dal&iacute; and his wife, Gala, escaped from Europe during World War II and spent the years from 1940 to 1948 in the United States. In 1949 they returned to Catalonia and Dal&iacute; spent the rest of his life in his hometown of Figueres, dying there of heart failure at the age of 84. <br>
+<br>
+Although Dal&iacute; is undoubtedly one of the most famous artists of the 20th century, his status is controversial, as many critics consider that he did little if anything of consequence after his classic surrealist works of the 1930s. There are museums devoted to Dal&iacute;&rsquo;s works in Figueres, Spain, and in St Petersburg, Florida, the United States.<br>
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -55,14 +79,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f8e1cec7-6635-4c22-947a-076582edd543
+14d87146-b7ed-4f9e-ad86-da7b33417bc1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T051337:635820380174587922Z
+20151106T122214Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -73,7 +97,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 4a9d9a40-84c7-465c-aff9-440fb0fad141
+revision: c9e0e285-dcf2-4f67-922d-e9ea14026177
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -82,6 +106,30 @@ key: artist name
 content-length: 7
 
 萨尔瓦多•达利
+----field----
+field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
+name: Artist Birthday
+key: artist birthday
+content-length: 9
+
+1904-1989
+----field----
+field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
+name: Artist Description
+key: artist description
+content-length: 988
+
+获封为普波尔侯爵的萨尔瓦多&bull;菲利普&bull;哈辛托&bull;达利&mdash;&mdash;多梅内克是一位举足轻重的超现实主义画家。他生于西班牙加泰罗尼亚省内比利牛斯山脉脚下的农业小镇 费格拉斯，是一位富有的公证人的儿子，童年时的夏季都会在沿海渔村卡达克斯度过，他的父母更在渔村内为他建立个人第一个工作室。 <br>
+<br>
+年轻时的达利在马德里的圣费南度皇家艺术学院读书。一九二五年，他在巴塞罗拿举行第一个个人展览，才华初次获得认同。一九二八年，他的三幅画作在 第三届卡内基国际美术展展出。这次在美国匹兹堡举行的展览令达利在国际画坛上崭露头角。达利在巴黎结识了超现实主义的艺术家，并于不久之后成为这个运动其 中一位领导者。在达利的一生中，他贯彻纵容自己怪僻和放任的行为，并声称这是他的创作力量的泉源。 <br>
+<br>
+达利拥有非常出色的绘图技巧，这让其超现实作品的影像虽然怪异，却又异常突出，举世闻名。达利喜与从事不同媒介的艺术家合作，所以他的艺术领域非常广阔，甚至涵盖电影、雕塑和摄影。 <br>
+<br>
+达利的雕塑作品&mdash;&mdash;「龙虾电话」（Lobster Telephone，一九三六年）和「梅维斯的唇型沙发」（Mae West Lips Sofa，一九三七年），是超现实主义运动中最着名的两件物品，而「燃烧中的女人」（Woman Aflame），则结合了他最爱的两个象征符号：火，以及身上有错落有致的抽屉的女人形象。达利之所以对火焰充满迷恋，是因为它对旁观者有着近乎催眠的影 响。至于抽屉，则象征孩童对密闭的空间有一种与生俱来的好奇心，总要探索一番，藉此看看里面藏着什么东西，同时驱走对未知的恐惧。这些抽屉都是微微开着 的，象征其中的秘密已被知晓，无需要再感到害怕。 <br>
+<br>
+在二次世界大战期间，达利与妻子卡拉逃离欧洲，并于一九四零年至一九四八年期间在美国生活。一九四九年，两人回到加泰罗尼亚。达利在家乡费格拉斯度过余下的人生，直至八十四岁，因心脏衰竭而逝世。 <br>
+<br>
+达利无疑是二十世纪最着名的艺术家之一，但他的地位却有所争议，因为许多评论家认为他在一九三零年代完成了自己的超现实主义的代表作后，便没有作出什么贡献了。在西班牙费格拉斯和美国佛罗里达州圣彼德斯堡，都有博物馆专门收藏达利的作品。<br>
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -116,14 +164,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4a9d9a40-84c7-465c-aff9-440fb0fad141
+c9e0e285-dcf2-4f67-922d-e9ea14026177
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T024557:635820291571590120Z
+20151108T034406Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -134,7 +182,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 10da121d-9a2e-48d8-b137-65458ca9bcc8
+revision: b39b5325-9642-4d9b-8eec-a74351d611a6
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -143,6 +191,30 @@ key: artist name
 content-length: 7
 
 薩爾瓦多•達利
+----field----
+field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
+name: Artist Birthday
+key: artist birthday
+content-length: 9
+
+1904-1989
+----field----
+field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
+name: Artist Description
+key: artist description
+content-length: 988
+
+獲封為普波爾侯爵的薩爾瓦多&bull;菲利普&bull;哈辛托&bull;達利&mdash;&mdash;多梅內克是一位舉足輕重的超現實主義畫家。他生於西班牙加泰羅尼亞省內比利牛斯山脈腳下的農業小鎮 費格拉斯，是一位富有的公證人的兒子，童年時的夏季都會在沿海漁村卡達克斯度過，他的父母更在漁村內為他建立個人第一個工作室。 <br>
+<br>
+年輕時的達利在馬德里的聖費南度皇家藝術學院讀書。一九二五年，他在巴塞羅拿舉行第一個個人展覽，才華初次獲得認同。一九二八年，他的三幅畫作在 第三屆卡內基國際美術展展出。這次在美國匹茲堡舉行的展覽令達利在國際畫壇上嶄露頭角。達利在巴黎結識了超現實主義的藝術家，並於不久之後成為這個運動其 中一位領導者。在達利的一生中，他貫徹縱容自己怪僻和放任的行為，並聲稱這是他的創作力量的泉源。 <br>
+<br>
+達利擁有非常出色的繪圖技巧，這讓其超現實作品的影像雖然怪異，卻又異常突出，舉世聞名。達利喜與從事不同媒介的藝術家合作，所以他的藝術領域非常廣闊，甚至涵蓋電影、雕塑和攝影。 <br>
+<br>
+達利的雕塑作品&mdash;&mdash;「龍蝦電話」（Lobster Telephone，一九三六年）和「梅維斯的唇型沙發」（Mae West Lips Sofa，一九三七年），是超現實主義運動中最著名的兩件物品，而「燃燒中的女人」（Woman Aflame），則結合了他最愛的兩個象徵符號：火，以及身上有錯落有致的抽屜的女人形象。達利之所以對火焰充滿迷戀，是因為它對旁觀者有着近乎催眠的影 響。至於抽屜，則象徵孩童對密閉的空間有一種與生俱來的好奇心，總要探索一番，藉此看看裏面藏着什麼東西，同時驅走對未知的恐懼。這些抽屜都是微微開着 的，象徵其中的秘密已被知曉，無需要再感到害怕。 <br>
+<br>
+在二次世界大戰期間，達利與妻子卡拉逃離歐洲，並於一九四零年至一九四八年期間在美國生活。一九四九年，兩人回到加泰羅尼亞。達利在家鄉費格拉斯度過餘下的人生，直至八十四歲，因心臟衰竭而逝世。 <br>
+<br>
+達利無疑是二十世紀最著名的藝術家之一，但他的地位卻有所爭議，因為許多評論家認為他在一九三零年代完成了自己的超現實主義的代表作後，便沒有作出什麼貢獻了。在西班牙費格拉斯和美國佛羅里達州聖彼德斯堡，都有博物館專門收藏達利的作品。<br>
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -177,14 +249,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-10da121d-9a2e-48d8-b137-65458ca9bcc8
+b39b5325-9642-4d9b-8eec-a74351d611a6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T024536:635820291369358554Z
+20151106T122728Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

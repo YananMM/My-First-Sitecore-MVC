@@ -17,6 +17,13 @@ content-length: 58
 
 <image mediaid="{1E6A654C-EC69-4991-85B9-94519B6502D4}" />
 ----field----
+field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
+name: Article Type
+key: article type
+content-length: 38
+
+{6D3037FD-A4F4-464A-8BCE-30608F5CC64E}
+----field----
 field: {BA2CB119-1C77-40AA-B95E-79014CAFD7AD}
 name: Magazine Category
 key: magazine category
@@ -31,6 +38,13 @@ content-length: 7
 
 Style A
 ----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 4
+
+1200
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -40,7 +54,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: e370f98d-9a5d-4613-b248-e7270a97e2b9
+revision: 86525074-62cc-42b3-add2-20c96f37639d
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -76,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e370f98d-9a5d-4613-b248-e7270a97e2b9
+86525074-62cc-42b3-add2-20c96f37639d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151028T085204:635816191245499399Z
+20151108T152532Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

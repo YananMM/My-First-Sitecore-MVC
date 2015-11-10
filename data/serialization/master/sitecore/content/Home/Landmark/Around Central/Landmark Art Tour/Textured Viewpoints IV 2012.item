@@ -10,6 +10,20 @@ template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
 templatekey: T29 Page
 
 ----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
 name: Artist
 key: artist
@@ -44,10 +58,17 @@ key: locationy
 content-length: 5
 
 0.623
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+800
 ----version----
 language: en
 version: 1
-revision: 9e3c8e6b-13d5-4476-871d-93260186ca59
+revision: c8d6088e-70bf-4b8c-8450-128cfbe9e28a
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -71,6 +92,17 @@ content-length: 109
 
 <file mediaid="{246FD450-756C-41E1-A357-AD918729CC64}" src="~/media/246fd450756c41e1a357ad918729cc64.ashx" />
 ----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 1093
+
+Born and raised in Hong Kong and of Eurasian heritage, Maria Lobo began her career as an artist training and honing her skills across the globe in Italy, Spain, Canada and the USA.  She received her bachelor degree in Fine Arts and Painting from the University of Santa Clara in 1985 before spending two independent years of study in Barcelona.  She then moved to the USA and became part of the San Francisco Hunters Point artists’ community before returning to Hong Kong in 1994. 
+
+Maria’s East and West heritage, Asian roots and international experience are all reflected in the broad perspective found in her style of artwork. Her Asian-inspired abstract works incorporate both  Western and Asian materials and techniques and using paper as paint, she creates artwork using antique and unusual handmade paper collected on her international travels.  The collages included in this collection have a tranquil Zen-like quality balanced against unique graphic visuals.  
+
+Maria subsequently moved back to the USA and currently resides in San Francisco, exhibiting her work internationally. 
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -83,26 +115,40 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9e3c8e6b-13d5-4476-871d-93260186ca59
+c8d6088e-70bf-4b8c-8450-128cfbe9e28a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063457Z
+20151108T052701Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 3c9ab2cd-a300-44b3-890b-cd671739eed1
+revision: db302e5d-8717-44da-90ab-5e507aeaed8f
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 11
+
+质感之见四, 2012
+----field----
+field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
+name: Art Title
+key: art title
+content-length: 11
+
+质感之见四, 2012
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
@@ -110,6 +156,31 @@ key: commentary
 content-length: 109
 
 <file mediaid="{671CB9D7-80DC-4C00-87D3-74DEDE7FEADB}" src="~/media/671cb9d780dc4c0087d374dede7feadb.ashx" />
+----field----
+field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
+name: Art Key
+key: art key
+content-length: 5
+
+画布印刷画
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 302
+
+拥有欧亚血统的Maria Lobo在香港出生和成长。她曾于意大利、西班牙、加拿大及美国接受艺术训练，磨练画技。她于1985年取得圣塔克拉拉大学艺术及绘画学士学位，其后在西班牙巴塞隆拿自习两年。她后来移居美国，并加入三藩市Hunters Point艺术社群，后于1994年回港。
+
+Maria的作品展现宽广的视野，反映其东西文化传承、亚洲根源和国际经验。她的抽象作品蕴含亚洲神髓，结合了西方和亚洲的物料和技巧，并以纸张代替油彩作为创作的媒介。她以旅行时收集的古老手工纸来创作艺术品。这个系列中的拼贴作品，展现禅静的境界与独特的视觉效果。
+
+Maria其后返回美国，现居三藩市，并于世界各地举行展览。
+----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -123,14 +194,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3c9ab2cd-a300-44b3-890b-cd671739eed1
+db302e5d-8717-44da-90ab-5e507aeaed8f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T054338:635820398181827877Z
+20151108T061933Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -141,7 +212,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 6a74fffe-8df5-45df-9636-cba77b0d62bb
+revision: 7d31ef14-fc86-4a3c-b6c4-a6732f2902ca
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -168,9 +239,27 @@ content-length: 109
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
 key: art key
-content-length: 24
+content-length: 5
 
-Digital Prints on Canvas
+畫布印刷畫
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 302
+
+擁有歐亞血統的Maria Lobo在香港出生和成長。她曾於意大利、西班牙、加拿大及美國接受藝術訓練，磨練畫技。她於1985年取得聖塔克拉拉大學藝術及繪畫學士學位，其後在西班牙巴塞隆拿自習兩年。她後來移居美國，並加入三藩市Hunters Point藝術社群，後於1994年回港。
+
+Maria的作品展現寬廣的視野，反映其東西文化傳承、亞洲根源和國際經驗。她的抽象作品蘊含亞洲神髓，結合了西方和亞洲的物料和技巧，並以紙張代替油彩作為創作的媒介。她以旅行時收集的古老手工紙來創作藝術品。這個系列中的拼貼作品，展現禪靜的境界與獨特的視覺效果。
+
+Maria其後返回美國，現居三藩市，並於世界各地舉行展覽。
+----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -184,14 +273,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6a74fffe-8df5-45df-9636-cba77b0d62bb
+7d31ef14-fc86-4a3c-b6c4-a6732f2902ca
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T054040:635820396409166487Z
+20151108T061952Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

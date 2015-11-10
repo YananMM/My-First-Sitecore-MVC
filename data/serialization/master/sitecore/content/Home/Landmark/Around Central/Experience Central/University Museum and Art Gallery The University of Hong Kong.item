@@ -31,6 +31,13 @@ content-length: 58
 
 <image mediaid="{530D5650-8AFB-4DD7-9220-719F5D8CB702}" />
 ----field----
+field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
+name: Callout Image
+key: callout image
+content-length: 58
+
+<image mediaid="{530D5650-8AFB-4DD7-9220-719F5D8CB702}" />
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -40,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 9faf9797-ea5a-472a-9aee-f9164d8abf80
+revision: febdf0cc-a026-456b-81d7-698eb6740463
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -90,14 +97,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9faf9797-ea5a-472a-9aee-f9164d8abf80
+febdf0cc-a026-456b-81d7-698eb6740463
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T022214:635821141342780741Z
+20151108T075351Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,7 +115,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 7aeafc5c-3149-4785-aa35-2ea30dbc5202
+revision: cff1482d-d6fb-4a17-a905-1682d975ded0
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -146,6 +153,13 @@ content-length: 9
 
 香港大学美术博物馆
 ----field----
+field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
+name: Page Content
+key: page content
+content-length: 0
+
+
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -158,14 +172,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7aeafc5c-3149-4785-aa35-2ea30dbc5202
+cff1482d-d6fb-4a17-a905-1682d975ded0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T022238:635821141589634860Z
+20151108T075332Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -176,7 +190,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 47ea68e3-4927-4be0-998b-dc6ef318015c
+revision: 01e43a3a-5893-40ca-8aa2-0bbd43b612b7
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -219,14 +233,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-47ea68e3-4927-4be0-998b-dc6ef318015c
+01e43a3a-5893-40ca-8aa2-0bbd43b612b7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T022226:635821141466277804Z
+20151108T075406Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

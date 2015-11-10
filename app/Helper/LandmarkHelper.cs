@@ -258,7 +258,7 @@ namespace Landmark.Helper
 
         public static List<Item> GetBuildings()
         {
-            return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.Where(building=>((CheckboxField)building.Fields["Is Landmark"]).Checked).OrderBy(p => p.DisplayName).ToList();
+            return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.Where(building => ((CheckboxField)building.Fields["Is Landmark"]).Checked).OrderBy(p => p.DisplayName).ToList();
         }
         public static List<Item> GetAllBuildings()
         {
@@ -288,14 +288,19 @@ namespace Landmark.Helper
         /// <returns>List{Item}.</returns>
         public static List<Item> GetRelatedItems()
         {
-            List<Item> items = new List<Item>();
+            List<Item> allRelatedItems = new List<Item>();
+            List<Item> relatedItems = new List<Item>();
+
             List<RelatedItem> relatedArticle = new List<RelatedItem>();
-            Item item = Sitecore.Context.Item;
-            var relatedItemFolder = item.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.RelatedItemFolder);
-            var relatedItems = GetItemsByRootAndTemplate(relatedItemFolder.ID.ToString(), ItemGuids.ArticleObject);
+            Item currentItem = Sitecore.Context.Item;
+            var relatedItemFolder = currentItem.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.RelatedItemFolder);
+            if (relatedItemFolder != null)
+            {
+                relatedItems = relatedItemFolder.Children.Where(p => p.Publishing.IsPublishable(DateTime.Now, true)).ToList();
+            }
 
             var allArticles = GetAllArticles();
-            var itemTagsField = item.Fields["Tags"];
+            var itemTagsField = currentItem.Fields["Tags"];
             var attractionTags = itemTagsField.ToString().Split('|').ToList();
             foreach (var article in allArticles)
             {
@@ -314,12 +319,15 @@ namespace Landmark.Helper
                     relatedArticle = relatedArticle.OrderBy(p => p.TagCount).ToList();
                 }
             }
-            items.Add(relatedItems.FirstOrDefault());
-            if (relatedArticle.FirstOrDefault() != null)
+            if (relatedItems.Count > 0)
             {
-                items.Add(relatedArticle.FirstOrDefault().Item);
+                allRelatedItems.Add(relatedItems.FirstOrDefault());
             }
-            return items;
+            if (relatedArticle.Count > 0)
+            {
+                allRelatedItems.Add(relatedArticle.FirstOrDefault().Item);
+            }
+            return allRelatedItems;
         }
 
         /// <summary>

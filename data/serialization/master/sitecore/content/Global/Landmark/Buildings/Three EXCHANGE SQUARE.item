@@ -19,7 +19,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: df0b0764-1ac1-4527-9291-4d29cdba2e35
+revision: 97cf82d5-0389-4ff8-ad74-36921d22150e
 
 ----field----
 field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
@@ -28,6 +28,13 @@ key: building title
 content-length: 15
 
 EXCHANGE SQUARE
+----field----
+field: {5471CA9B-9D9E-4332-8B37-905B47BCE65F}
+name: Building Address
+key: building address
+content-length: 37
+
+8 Connaught Place, Central, Hong Kong
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -41,14 +48,136 @@ name: __Revision
 key: __revision
 content-length: 36
 
-df0b0764-1ac1-4527-9291-4d29cdba2e35
+97cf82d5-0389-4ff8-ad74-36921d22150e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T045017Z
+20151106T131539Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 474903ad-7138-4cf9-9584-629bc6baaab7
+
+----field----
+field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
+name: Building Title
+key: building title
+content-length: 7
+
+交易廣塲第三座
+----field----
+field: {5471CA9B-9D9E-4332-8B37-905B47BCE65F}
+name: Building Address
+key: building address
+content-length: 17
+
+香港中环干诺道中8号交易广塲第三座
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T131551Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+474903ad-7138-4cf9-9584-629bc6baaab7
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T131644Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: c555ef07-f7b2-4627-8003-0469241340de
+
+----field----
+field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
+name: Building Title
+key: building title
+content-length: 7
+
+交易廣塲第三座
+----field----
+field: {5471CA9B-9D9E-4332-8B37-905B47BCE65F}
+name: Building Address
+key: building address
+content-length: 17
+
+香港中環干諾道中8號交易廣塲第三座
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T131623Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c555ef07-f7b2-4627-8003-0469241340de
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T131702Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -24,6 +24,13 @@ content-length: 58
 
 <image mediaid="{679A1529-DB2B-4829-9C62-D5EBD02563AB}" />
 ----field----
+field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
+name: Callout Image
+key: callout image
+content-length: 58
+
+<image mediaid="{679A1529-DB2B-4829-9C62-D5EBD02563AB}" />
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 0044de40-693f-4e9e-9786-1e094e1e4483
+revision: 62b67554-f6cd-413e-a7ab-af5350328417
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -76,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0044de40-693f-4e9e-9786-1e094e1e4483
+62b67554-f6cd-413e-a7ab-af5350328417
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T022252:635821141723552519Z
+20151108T075441Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,7 +101,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: ee3c053e-d0b0-462a-bcbe-7c1842df16ae
+revision: c07f853c-f56e-40b5-b32e-94bfed9bf4b4
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -114,11 +121,10 @@ content-length: 7
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
-content-length: 169
+content-length: 36
 
-<strong>
-<p><strong>体验从传统到时尚的香港生活片段，一</strong><strong>尝</strong><strong>本地</strong><strong>著</strong><strong>名</strong><strong>面</strong><strong>食</strong></p>
-</strong>
+<p>体验从传统到时尚的香港生活片段，一尝本地著名面食</p>
+<br>
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -139,14 +145,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ee3c053e-d0b0-462a-bcbe-7c1842df16ae
+c07f853c-f56e-40b5-b32e-94bfed9bf4b4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T022320:635821142006238688Z
+20151108T075537Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -157,7 +163,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: d014a686-b9c1-4a92-8e99-005c7992f533
+revision: 3b33534d-4389-4e97-918b-30a46c2183c7
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -200,14 +206,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d014a686-b9c1-4a92-8e99-005c7992f533
+3b33534d-4389-4e97-918b-30a46c2183c7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T022306:635821141869150847Z
+20151108T075500Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

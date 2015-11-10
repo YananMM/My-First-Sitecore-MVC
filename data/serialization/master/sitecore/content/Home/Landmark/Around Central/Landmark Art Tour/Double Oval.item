@@ -50,7 +50,7 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-2700
+3700
 ----version----
 language: en
 version: 1
@@ -125,7 +125,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: 7fd67281-fb8f-4c84-9032-afb08e916ffa
+revision: 60ea62b6-a950-446c-8844-06ff08ad3e57
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -167,6 +167,13 @@ content-length: 358
 置地公司于一九七五年购入「对环」。于一九七七立“对环”于康乐花园以纪念罗弼时太平绅士，他曾于一九六四年一月至一九七七年十月期间担任置地公司的董事兼总经理。「对环」于二零零八年八月十八移放于现今位置。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -179,14 +186,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7fd67281-fb8f-4c84-9032-afb08e916ffa
+60ea62b6-a950-446c-8844-06ff08ad3e57
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T020339:635820266191138442Z
+20151108T040947Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -197,7 +204,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: cb483c36-b2e4-419f-8a3b-621736824a84
+revision: 9a27ca7f-d093-4b7c-b174-871db90ee234
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -234,10 +241,17 @@ key: art description
 content-length: 358
 
 "英國雕塑家亨利‧摩爾是二十世紀其中一位極具影響力的公共雕塑家，深受古典、前哥倫布時期及非洲雕塑藝術的影響。他常以大理石和青銅作素材，其雕塑品充滿創意和現代氣息。摩爾主要以有機生物和人體的抽象形態為設計主題，其作品經常出現穿刺和孔洞,,當中不少是人體的抽象形態。
+
 「對環」表達渾厚與雅致的平衡。作品表面粗幼有致，帶來不同的觸感，並營造出深度與陰暗的感覺。與摩爾其他許多作品一樣，「對環」滿佈孔洞，除了帶來窺探外界景物及其他形態的空間外，更予人均衡和諧之感。這項作品體積龐大，令所呈現的情感力量更加澎湃。
 
 置地公司於一九七五年購入「對環」。於一九七七立「對環」於康樂花園以紀念羅弼時太平紳士，他曾於一九六四年一月至一九七七年十月期間擔任置地公司的董事兼總經理。「對環」於二零零八年八月十八移放於現今位置。"
+----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
 
+您正在查看
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -251,14 +265,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cb483c36-b2e4-419f-8a3b-621736824a84
+9a27ca7f-d093-4b7c-b174-871db90ee234
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T020321:635820266017398504Z
+20151108T051456Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

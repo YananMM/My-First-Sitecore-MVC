@@ -20,13 +20,13 @@ content-length: 58
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
-content-length: 3
+content-length: 4
 
-900
+1900
 ----version----
 language: en
 version: 1
-revision: 26c5cd74-e27f-44b0-a4c6-26fbcc6e7016
+revision: ba8e802d-4ba0-49e7-bad3-dcbd0cfb038b
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -39,9 +39,9 @@ Chu Hon Sun
 field: {55493757-0DCA-49BC-8139-884B29E177E9}
 name: Artist Photo Description
 key: artist photo description
-content-length: 492
+content-length: 0
 
-Chu Hon Sun was born in Guangzhou, China in 1950. He graduated from the Department of Fine Arts of The Chinese University of Hong Kong in 1975. In the following year, he was granted a scholarship from the Italian ministry of culture. He graduated with a major in sculpture from the Academy of Fine Arts of Carrara, Italy in 1980. Upon his return to Hong Kong, he became a lecturer of The Chinese University of Hong Kong from 1982-1990. In 1981, he joined the Hong Kong Sculptors Association. 
+
 ----field----
 field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
 name: Artist Birthday
@@ -53,9 +53,11 @@ b.1950
 field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
 name: Artist Description
 key: artist description
-content-length: 505
+content-length: 1011
 
-Chu&rsquo;s works, mostly in white marble and granite, have great beauty of form and texture. He has received numerous awards locally and worldwide, including the &ldquo;Young Artists Award&rdquo; in the Royal Over-Seas League Art Exhibition in 1975, the &ldquo;Special Award of Sculpture&rdquo; in the 19th Exhibition of Sculpture and Craft in Carrara, Italy in 1979, as well as twice the Urban Council Fine Arts Award for sculpture in the Contemporary Hong Kong Art Biennial Exhibition in 1981 and 1987.
+Chu Hon Sun was born in Guangzhou, China in 1950. He graduated from the Department of Fine Arts of The Chinese University of Hong Kong in 1975. In the following year, he was granted a scholarship from the Italian ministry of culture. He graduated with a major in sculpture from the Academy of Fine Arts of Carrara, Italy in 1980. Upon his return to Hong Kong, he became a lecturer of The Chinese University of Hong Kong from 1982-1990. In 1981, he joined the Hong Kong Sculptors Association. <br>
+<br>
+Chu&rsquo;s works, mostly in white marble and granite, have great beauty of form and texture. He has received numerous awards locally and worldwide, including the &ldquo;Young Artists Award&rdquo; in the Royal Over-Seas League Art Exhibition in 1975, the &ldquo;Special Award of Sculpture&rdquo; in the 19th Exhibition of Sculpture and Craft in Carrara, Italy in 1979, as well as twice the Urban Council Fine Arts Award for sculpture in the Contemporary Hong Kong Art Biennial Exhibition in 1981 and 1987.<br>
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -83,14 +85,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-26c5cd74-e27f-44b0-a4c6-26fbcc6e7016
+ba8e802d-4ba0-49e7-bad3-dcbd0cfb038b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T051337:635820380177318078Z
+20151106T131122Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,7 +103,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 77f21cb6-750e-48dd-8723-f806732d2d5b
+revision: 50280517-34ac-4875-bd66-55bea1406c16
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -114,10 +116,8 @@ content-length: 3
 field: {55493757-0DCA-49BC-8139-884B29E177E9}
 name: Artist Photo Description
 key: artist photo description
-content-length: 161
+content-length: 0
 
-  Chu Hon Sun (b.1950)
-朱汉新，一九五零年生于中国广州，一九七五年毕业于香港中文大学美术系。翌年，朱氏获得意大利政府文化部奖学金资助。一九八零年，他于意大利卡拉拿美术学 院毕业，主修雕塑。回港后，朱氏于一九八二年至一九九零年期间在香港中文大学担任讲师。一九八一年，朱氏成为香港雕塑家协会会员。 
 
 ----field----
 field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
@@ -130,9 +130,18 @@ content-length: 7
 field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
 name: Artist Description
 key: artist description
-content-length: 145
+content-length: 310
 
+Chu Hon Sun (b.1950)
+朱汉新，一九五零年生于中国广州，一九七五年毕业于香港中文大学美术系。翌年，朱氏获得意大利政府文化部奖学金资助。一九八零年，他于意大利卡拉拿美术学 院毕业，主修雕塑。回港后，朱氏于一九八二年至一九九零年期间在香港中文大学担任讲师。一九八一年，朱氏成为香港雕塑家协会会员。 <br><br>
 朱氏的作品以白色大理石或花岗石为主要材质，而且造型和质感都极富美感。朱氏在本港和海外均屡获殊荣，其中包括一九七五年的美国皇家海外艺术联展 「年青艺术家奖」、一九七九年的意大利卡拉拿第十九届大理石雕与工艺展「雕刻特别奖」，以及一九八一年和一九八七年的「当代香港艺术双年展」市政局雕塑艺 术奖。
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 3
+
+朱汉新
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -160,14 +169,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-77f21cb6-750e-48dd-8723-f806732d2d5b
+50280517-34ac-4875-bd66-55bea1406c16
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151026T065233:635814391536244025Z
+20151106T131410Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -178,7 +187,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 0fea9279-c264-4335-9b93-8dff9c9835d0
+revision: 361531ed-cdd9-471b-9ef1-536988e3e690
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -191,10 +200,8 @@ content-length: 3
 field: {55493757-0DCA-49BC-8139-884B29E177E9}
 name: Artist Photo Description
 key: artist photo description
-content-length: 158
+content-length: 0
 
-Chu Hon Sun (b.1950)
-朱漢新，一九五零年生於中國廣州，一九七五年畢業於香港中文大學美術系。翌年，朱氏獲得意大利政府文化部獎學金資助。一九八零年，他於意大利卡拉拿美術學 院畢業，主修雕塑。回港後，朱氏於一九八二年至一九九零年期間在香港中文大學擔任講師。一九八一年，朱氏成為香港雕塑家協會會員。
 
 ----field----
 field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
@@ -207,9 +214,19 @@ content-length: 7
 field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
 name: Artist Description
 key: artist description
-content-length: 153
+content-length: 310
 
-<p>朱氏的作品以白色大理石或花崗石為主要材質，而且造型和質感都極富美感。朱氏在本港和海外均屢獲殊榮，其中包括一九七五年的美國皇家海外藝術聯展 「年青藝術家獎」、一九七九年的意大利卡拉拿第十九屆大理石雕與工藝展「雕刻特別獎」，以及一九八一年和一九八七年的「當代香港藝術雙年展」市政局雕塑藝 術獎。 </p>
+Chu Hon Sun (b.1950)
+朱漢新，一九五零年生於中國廣州，一九七五年畢業於香港中文大學美術系。翌年，朱氏獲得意大利政府文化部獎學金資助。一九八零年，他於意大利卡拉拿美術學 院畢業，主修雕塑。回港後，朱氏於一九八二年至一九九零年期間在香港中文大學擔任講師。一九八一年，朱氏成為香港雕塑家協會會員。<br><br>
+
+朱氏的作品以白色大理石或花崗石為主要材質，而且造型和質感都極富美感。朱氏在本港和海外均屢獲殊榮，其中包括一九七五年的美國皇家海外藝術聯展 「年青藝術家獎」、一九七九年的意大利卡拉拿第十九屆大理石雕與工藝展「雕刻特別獎」，以及一九八一年和一九八七年的「當代香港藝術雙年展」市政局雕塑藝 術獎。
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 3
+
+朱漢新
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -237,14 +254,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0fea9279-c264-4335-9b93-8dff9c9835d0
+361531ed-cdd9-471b-9ef1-536988e3e690
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151026T065320:635814392003180732Z
+20151106T131259Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

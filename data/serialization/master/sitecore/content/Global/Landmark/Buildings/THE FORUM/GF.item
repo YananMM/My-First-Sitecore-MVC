@@ -9,18 +9,32 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
 templatekey: Floor Object
 
+----field----
+field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
+name: Floor Image
+key: floor image
+content-length: 58
+
+<image mediaid="{E2F348EC-CEF5-4DB3-BDDC-57A2A39E0C24}" />
+----field----
+field: {49195981-001A-41D0-BE6E-78B60FD14964}
+name: Floor Svg File
+key: floor svg file
+content-length: 159
+
+<file mediapath="/Files/Landmark/Floor Guide/the-forum" mediaid="{4AE5F4A1-C89C-4F7F-8706-BA88D749020B}" src="~/media/4ae5f4a1c89c4f7f8706ba88d749020b.ashx" />
 ----version----
 language: en
 version: 1
-revision: d1c0f975-c852-47d9-891b-5f1868ea39fc
+revision: 4f59268f-39e3-4f3e-87df-ecc885638e7b
 
 ----field----
 field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
 name: Floor Title
 key: floor title
-content-length: 0
+content-length: 3
 
-
+G/F
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -34,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d1c0f975-c852-47d9-891b-5f1868ea39fc
+4f59268f-39e3-4f3e-87df-ecc885638e7b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T045537Z
+20151106T133045Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -26,7 +26,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 8692d424-ddfd-41fe-afca-88f7cecce6a4
+revision: bbbfd6d8-fa55-49c7-9609-2a284ddc1ec9
 
 ----field----
 field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
@@ -35,6 +35,13 @@ key: building title
 content-length: 6
 
 PRINCE
+----field----
+field: {5471CA9B-9D9E-4332-8B37-905B47BCE65F}
+name: Building Address
+key: building address
+content-length: 54
+
+15 Queen's Road Central, LANDMARK, Central, Hong Kong.
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -48,14 +55,136 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8692d424-ddfd-41fe-afca-88f7cecce6a4
+bbbfd6d8-fa55-49c7-9609-2a284ddc1ec9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151027T071407Z
+20151106T125347Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 5e0aa899-dd6a-4e8d-901b-520c9cc25948
+
+----field----
+field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
+name: Building Title
+key: building title
+content-length: 4
+
+置地太子
+----field----
+field: {5471CA9B-9D9E-4332-8B37-905B47BCE65F}
+name: Building Address
+key: building address
+content-length: 18
+
+中环皇后大道中15号置地广场太子大厦
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T125101Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5e0aa899-dd6a-4e8d-901b-520c9cc25948
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T125229Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: f081092b-cfb0-4808-a010-998c8c9da183
+
+----field----
+field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
+name: Building Title
+key: building title
+content-length: 4
+
+置地太子
+----field----
+field: {5471CA9B-9D9E-4332-8B37-905B47BCE65F}
+name: Building Address
+key: building address
+content-length: 18
+
+中環皇后大道中15號置地廣場太子大廈
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T125019Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f081092b-cfb0-4808-a010-998c8c9da183
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T125215Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

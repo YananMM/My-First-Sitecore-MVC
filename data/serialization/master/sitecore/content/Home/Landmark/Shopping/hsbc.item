@@ -10,6 +10,13 @@ template: {91A88069-9A0E-48B7-9509-BDE830A54D0E}
 templatekey: T14 Page
 
 ----field----
+field: {DDA15F2F-F719-4896-A8A7-2FC0FE5C5500}
+name: Brand Image
+key: brand image
+content-length: 58
+
+<image mediaid="{344EAB7C-DB8A-4F11-81DB-D1C1FE2CD536}" />
+----field----
 field: {E58E6376-FE2E-483F-B111-50A2D8EEA7CC}
 name: Building
 key: building
@@ -153,32 +160,39 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: 2ff69ee5-1e65-4b4e-8879-a325ce96931e
+revision: 47fce4eb-b6c9-43b2-b714-83b7f36e0693
 
+----field----
+field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
+name: Brand Title
+key: brand title
+content-length: 4
+
+汇丰银行
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 34
+content-length: 33
 
-本分行于营业时间内提供全面的银行服务，并提供24小时自助理财服务。 
+本分行于营业时间内提供全面的银行服务，并提供24小时自助理财服务。
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 34
+content-length: 33
 
-本分行于营业时间内提供全面的银行服务，并提供24小时自助理财服务。 
+本分行于营业时间内提供全面的银行服务，并提供24小时自助理财服务。
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 55
+content-length: 54
 
 星期一至星期四 9am-4:30pm
 星期五 9am-5pm
 星期六 9am-1pm
-星期日及公众假期 休息 
+星期日及公众假期 休息
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -220,50 +234,57 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2ff69ee5-1e65-4b4e-8879-a325ce96931e
+47fce4eb-b6c9-43b2-b714-83b7f36e0693
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063907Z
+20151108T094634Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 92416457-1b1c-4b69-8675-f0f976820bee
+revision: c48746e7-a430-44f5-a960-714b47989a84
 
+----field----
+field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
+name: Brand Title
+key: brand title
+content-length: 4
+
+匯豐銀行
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 34
+content-length: 33
 
-本分行於營業時間內提供全面的銀行服務，並提供24小時自助理財服務。 
+本分行於營業時間內提供全面的銀行服務，並提供24小時自助理財服務。
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 34
+content-length: 33
 
-本分行於營業時間內提供全面的銀行服務，並提供24小時自助理財服務。 
+本分行於營業時間內提供全面的銀行服務，並提供24小時自助理財服務。
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 55
+content-length: 54
 
 星期一至星期四 9am-4:30pm
 星期五 9am-5pm
 星期六 9am-1pm
-星期日及公眾假期 休息 
+星期日及公眾假期 休息
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -298,18 +319,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-92416457-1b1c-4b69-8675-f0f976820bee
+c48746e7-a430-44f5-a960-714b47989a84
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063907Z
+20151108T094647Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

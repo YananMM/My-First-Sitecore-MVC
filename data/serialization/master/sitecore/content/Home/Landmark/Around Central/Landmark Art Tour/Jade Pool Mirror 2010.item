@@ -50,7 +50,7 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-2100
+3100
 ----version----
 language: en
 version: 1
@@ -134,7 +134,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: 1ad1deea-b743-492a-aef6-02a1c0ddb59f
+revision: 38f59745-f36c-4422-9938-a02081d99070
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -184,6 +184,13 @@ content-length: 208
 置地公司于二零一一年购入「晴湖镜碧」。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -196,14 +203,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1ad1deea-b743-492a-aef6-02a1c0ddb59f
+38f59745-f36c-4422-9938-a02081d99070
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T033209:635820319296485894Z
+20151108T040912Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -214,7 +221,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 216c3c70-8018-4f12-8b9d-0fe863520d21
+revision: 9ab2ecdb-ed12-4d63-911c-f84d821a0e94
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -264,6 +271,13 @@ content-length: 208
 置地公司於二零一一年購入「晴湖鏡碧」。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -276,14 +290,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-216c3c70-8018-4f12-8b9d-0fe863520d21
+9ab2ecdb-ed12-4d63-911c-f84d821a0e94
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T033211:635820319318217137Z
+20151108T040909Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

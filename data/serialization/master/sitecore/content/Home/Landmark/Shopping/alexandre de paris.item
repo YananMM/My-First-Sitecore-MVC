@@ -27,9 +27,9 @@ content-length: 38
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 77
+content-length: 116
 
-{C034122F-A68F-4E3C-827E-C1898533C08E}|{584512EB-189E-4FEF-9280-3F893DD9A9E1}
+{C034122F-A68F-4E3C-827E-C1898533C08E}|{584512EB-189E-4FEF-9280-3F893DD9A9E1}|{7895E95B-BA35-4C28-9325-0BB7443E6945}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -198,7 +198,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: a33e20cd-c163-4368-82d0-70f6d2e2127b
+revision: d33ad5e8-ee02-4bc8-bd8a-42d439320cf7
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -206,7 +206,7 @@ name: Brand Title
 key: brand title
 content-length: 18
 
-ALEXANDRE DE PARIS
+Alexandre de Paris
 ----field----
 field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
 name: Content Title
@@ -225,9 +225,9 @@ Alexandre de Paris出生于法国蔚蓝海岸的圣特罗佩，被誉为高级�
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 38
+content-length: 0
 
-Alexandre, de, Paris, AlexandredeParis
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -241,7 +241,7 @@ name: Social Share Title
 key: social share title
 content-length: 18
 
-ALEXANDRE DE PARIS
+Alexandre de Paris
 ----field----
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
@@ -255,7 +255,7 @@ name: Page Title
 key: page title
 content-length: 18
 
-ALEXANDRE DE PARIS
+Alexandre de Paris
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
@@ -318,25 +318,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a33e20cd-c163-4368-82d0-70f6d2e2127b
+d33ad5e8-ee02-4bc8-bd8a-42d439320cf7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063845Z
+20151106T111159Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: c76818c8-fa61-41e6-a6fd-e56b12cf2309
+revision: 87904c33-590e-41b6-b96a-1801a818e30d
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -344,7 +344,7 @@ name: Brand Title
 key: brand title
 content-length: 18
 
-ALEXANDRE DE PARIS
+Alexandre de Paris
 ----field----
 field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
 name: Content Title
@@ -363,9 +363,9 @@ Alexandre de Paris在法國蔚藍海岸的聖特羅佩出生，被譽為高級�
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 38
+content-length: 0
 
-Alexandre, de, Paris, AlexandredeParis
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -379,7 +379,7 @@ name: Social Share Title
 key: social share title
 content-length: 18
 
-ALEXANDRE DE PARIS
+Alexandre de Paris
 ----field----
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
@@ -393,7 +393,7 @@ name: Page Title
 key: page title
 content-length: 18
 
-ALEXANDRE DE PARIS
+Alexandre de Paris
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
@@ -449,18 +449,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c76818c8-fa61-41e6-a6fd-e56b12cf2309
+87904c33-590e-41b6-b96a-1801a818e30d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063845Z
+20151106T111120Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

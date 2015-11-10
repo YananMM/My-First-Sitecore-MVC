@@ -22,11 +22,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-4400
+5400
 ----version----
 language: en
 version: 1
-revision: 6dcba973-ae5b-479e-aef4-30f860a56e4c
+revision: cac4f988-a1d6-4818-8a3b-3a33e1feec5a
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -39,9 +39,9 @@ Li Wan Fai, Danny
 field: {55493757-0DCA-49BC-8139-884B29E177E9}
 name: Artist Photo Description
 key: artist photo description
-content-length: 208
+content-length: 0
 
-Born in Hong Kong in 1954, Li studied with a number of renowned masters since 1968. In 1984, he held his debut solo exhibition in Royce Gallery, Sidney. Li has participated in numerous exhibitions including: 
+
 ----field----
 field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
 name: Artist Birthday
@@ -53,18 +53,19 @@ b. 1954
 field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
 name: Artist Description
 key: artist description
-content-length: 973
+content-length: 1183
 
-<p>1985-1996 The Contemporary Hong Kong Art Biennial Exhibitions <br>
-1987-1988 XXI, XXII Prix International D’Art Contemporain de Monte-Carlo <br>
+Born in Hong Kong in 1954, Li studied with a number of renowned masters since 1968. In 1984, he held his debut solo exhibition in Royce Gallery, Sidney. Li has participated in numerous exhibitions including: <br>
+<br>
+1985-1996 The Contemporary Hong Kong Art Biennial Exhibitions <br>
+1987-1988 XXI, XXII Prix International D&rsquo;Art Contemporain de Monte-Carlo <br>
 1988 The winner, Philppe Charriol Foundation Modern Art Competition <br>
 1997 Kong Artists Series Mixed Media Exhibition presented by the Hong Kong Museum of Art <br>
 2000 20th Century Chinese Oil Painting Exhibition organized by China Oil Painting Society, demonstrated in Beijing, Shanghai and Guangzhou. <br>
 2003 Third National Oil Painting Exhibition of China, Premier Collections, toured Beijing, Shanghai and Guangzhou. <br>
 Currently, Li is a professional artist, and member of The Hong Kong Visual Art Society, China Oil Painting Society (Hong Kong) and the committee member of Hong Kong Artists Association. <br>
-2009 FIGURATIVE + ABSTRACTIVE AN EXHIBITION OF CONTEMPORARY OIL PAINTING, WATERCOLOUR & PRINT OF HONG KONG <br>
+2009 FIGURATIVE + ABSTRACTIVE AN EXHIBITION OF CONTEMPORARY OIL PAINTING, WATERCOLOUR &amp; PRINT OF HONG KONG <br>
 2010 THE GUANGZHOU, HONG KONG ANG MACAU OIL PAINTING EXHITBITION TOUR. <br>
- </p>
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -85,14 +86,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6dcba973-ae5b-479e-aef4-30f860a56e4c
+cac4f988-a1d6-4818-8a3b-3a33e1feec5a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T051350:635820380303925320Z
+20151108T033658Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -103,7 +104,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: b3bb513b-34c7-457a-8f1a-26aef38a1d87
+revision: 7756efd5-413d-4f78-8994-bdae75f1a11a
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -116,10 +117,9 @@ content-length: 3
 field: {55493757-0DCA-49BC-8139-884B29E177E9}
 name: Artist Photo Description
 key: artist photo description
-content-length: 91
+content-length: 0
 
-Li Wan Fai, Danny (b. 1954)
-1954年出生于香港。1968年开始随多位名师习画。1894年首次个展于澳门雪梨莱思画廊，以后参加过许多展览活动，主要有： 
+
 ----field----
 field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
 name: Artist Birthday
@@ -131,9 +131,12 @@ content-length: 7
 field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
 name: Artist Description
 key: artist description
-content-length: 381
+content-length: 476
 
-<p>1985-1996 年间，历届香港当代艺术双年展； <br>
+Li Wan Fai, Danny (b. 1954)<br>
+<br>
+1954年出生于香港。1968年开始随多位名师习画。1894年首次个展于澳门雪梨莱思画廊，以后参加过许多展览活动，主要有： <br>
+1985-1996 年间，历届香港当代艺术双年展； <br>
 1987-1988 年两次入选蒙地卡罗当代国际艺术比赛； <br>
 1988年 香港夏利豪基金现代艺术比赛冠军； <br>
 1997年 获选香港艺术馆「香港艺术家系列」混合媒介个人展 <br>
@@ -143,8 +146,13 @@ content-length: 381
 2009年 「具象+抽象」香港当代油画水彩版画展 <br>
 2010年 穗港澳油画巡回展，由广州市美术家协会中国岭南油画研究馆，香港画家联会，澳门美术协会联办 <br>
 2012年 「吾土吾民」油画邀请展 <br>
-</p>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 3
 
+李运辉
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -172,14 +180,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b3bb513b-34c7-457a-8f1a-26aef38a1d87
+7756efd5-413d-4f78-8994-bdae75f1a11a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151027T152044Z
+20151108T033816Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -190,7 +198,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 86ec84fb-dd19-4f0e-82c1-b99678bc1d9e
+revision: e306c064-a8b3-4fdc-81a4-7f07bd9323b0
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -203,10 +211,8 @@ content-length: 3
 field: {55493757-0DCA-49BC-8139-884B29E177E9}
 name: Artist Photo Description
 key: artist photo description
-content-length: 94
+content-length: 0
 
- Li Wan Fai, Danny (b. 1954)
-1954年出生於香港。1968年開始隨多位名師習畫。1894年首次個展於澳門雪梨萊思畫廊，以後參加過許多展覽活動，主要有： 
 
 ----field----
 field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
@@ -219,9 +225,12 @@ content-length: 7
 field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
 name: Artist Description
 key: artist description
-content-length: 381
+content-length: 475
 
-<p>1985-1996 年間，歷屆香港當代藝術雙年展； <br>
+Li Wan Fai, Danny (b. 1954)<br>
+<br>
+1954年出生於香港。1968年開始隨多位名師習畫。1894年首次個展於澳門雪梨萊思畫廊，以後參加過許多展覽活動，主要有： <br>
+1985-1996 年間，歷屆香港當代藝術雙年展； <br>
 1987-1988 年兩次入選蒙地卡羅當代國際藝術比賽； <br>
 1988年 香港夏利豪基金現代藝術比賽冠軍； <br>
 1997年 獲選香港藝術館「香港藝術家系列」混合媒介個人展 <br>
@@ -230,9 +239,14 @@ content-length: 381
 李氏現為專業藝術家。為香港視覺藝術協會會員，中國油畫學會會員，香港美術家協會會員。 <br>
 2009年 「具象+抽象」香港當代油畫水彩版畫展 <br>
 2010年 穗港澳油畫巡迴展，由廣州市美術家協會中國嶺南油畫研究館，香港畫家聯會，澳門美術協會聯辦 <br>
-2012年 「吾土吾民」油畫邀請展 <br>
-</p>
+2012年 「吾土吾民」油畫邀請展<br>
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 3
 
+李運輝
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -260,14 +274,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-86ec84fb-dd19-4f0e-82c1-b99678bc1d9e
+e306c064-a8b3-4fdc-81a4-7f07bd9323b0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151027T151930Z
+20151108T033718Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

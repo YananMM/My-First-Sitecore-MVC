@@ -17,6 +17,13 @@ content-length: 58
 
 <image mediaid="{05A455CE-137B-4BD3-8378-AD2249ED64D8}" />
 ----field----
+field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
+name: Article Type
+key: article type
+content-length: 38
+
+{6D3037FD-A4F4-464A-8BCE-30608F5CC64E}
+----field----
 field: {BA2CB119-1C77-40AA-B95E-79014CAFD7AD}
 name: Magazine Category
 key: magazine category
@@ -30,6 +37,13 @@ key: page style
 content-length: 7
 
 Style A
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 4
+
+1700
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -47,7 +61,7 @@ content-length: 155
 ----version----
 language: en
 version: 1
-revision: efea14dd-f100-40b2-841d-945a3873af63
+revision: fcb90b0a-cecf-4a73-976e-2496f0bf5feb
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -60,12 +74,10 @@ Super Tuscan
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 61
+content-length: 65
 
-
-Photography by Andrew J. Loiterton
+<p>Photography by Andrew J. Loiterton</br>
 Styling by Kate Jones
-
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
@@ -93,14 +105,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-efea14dd-f100-40b2-841d-945a3873af63
+fcb90b0a-cecf-4a73-976e-2496f0bf5feb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151028T082604:635816175647627252Z
+20151108T152532Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -111,7 +123,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 8efa4337-cbb4-406a-b518-eb85ac660d3c
+revision: 161d32a7-575a-498b-91a0-54af035b871a
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -124,11 +136,10 @@ Super Tuscan
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 59
+content-length: 65
 
-Photography by Andrew J. Loiterton
+<p>Photography by Andrew J. Loiterton</br>
 Styling by Kate Jones
-
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
@@ -156,14 +167,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8efa4337-cbb4-406a-b518-eb85ac660d3c
+161d32a7-575a-498b-91a0-54af035b871a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151028T085628:635816193881910193Z
+20151108T150247Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -174,7 +185,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 150fa5b2-f996-41a5-9569-ebcc1e432e48
+revision: 5691457a-a299-4719-a800-b06365fda638
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -187,11 +198,10 @@ Super Tuscan
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Sub Headline
 key: article sub headline
-content-length: 59
+content-length: 65
 
-Photography by Andrew J. Loiterton
+<p>Photography by Andrew J. Loiterton</br>
 Styling by Kate Jones
-
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
@@ -219,14 +229,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-150fa5b2-f996-41a5-9569-ebcc1e432e48
+5691457a-a299-4719-a800-b06365fda638
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151028T082753:635816176738729660Z
+20151108T150305Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

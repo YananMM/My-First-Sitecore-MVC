@@ -31,6 +31,13 @@ content-length: 16
 
 20151018T160000Z
 ----field----
+field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
+name: Article Type
+key: article type
+content-length: 38
+
+{6D3037FD-A4F4-464A-8BCE-30608F5CC64E}
+----field----
 field: {BA2CB119-1C77-40AA-B95E-79014CAFD7AD}
 name: Magazine Category
 key: magazine category
@@ -52,6 +59,13 @@ content-length: 155
 
 {D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}
 ----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 2
+
+25
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -61,7 +75,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 220751bb-5aba-4928-9d10-2cecfb4f3b8d
+revision: 56c94b2e-bf4d-429c-85e6-4785ce823001
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -111,14 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-220751bb-5aba-4928-9d10-2cecfb4f3b8d
+56c94b2e-bf4d-429c-85e6-4785ce823001
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151027T072350:635815274300887697Z
+20151108T152546Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -129,7 +143,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: ff8897c6-924a-41a2-b0ab-ef247c097f5b
+revision: f7eb0802-0ce5-418f-b3b6-8a6d7e6385d6
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -186,14 +200,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ff8897c6-924a-41a2-b0ab-ef247c097f5b
+f7eb0802-0ce5-418f-b3b6-8a6d7e6385d6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151028T085015:635816190150976796Z
+20151108T125152Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

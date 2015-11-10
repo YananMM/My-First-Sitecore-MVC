@@ -10,6 +10,13 @@ template: {C08DC2B0-088B-4182-81C4-4D7510A741C0}
 templatekey: T34 Page
 
 ----field----
+field: {7855DD15-C637-4329-949A-40B474ED45CA}
+name: Official Website Url
+key: official website url
+content-length: 104
+
+<link linktype="external" url="http://www.mandarinoriental.com.hk/landmark" anchor="" target="_blank" />
+----field----
 field: {1D036D04-17AB-4B0C-B21F-576BC5F9F2DE}
 name: Hotel Logo
 key: hotel logo
@@ -33,25 +40,23 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 93cb5908-389c-48bf-9923-7965dc58b782
+revision: 0597fcc2-c9b4-4a3a-8c97-47bf72b8c4ff
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
-content-length: 134
+content-length: 189
 
-
-                    The Landmark Mandarin Oriental: <br>
-                    Simply one of the best luxury city hotels in the world.
-
+The Landmark Mandarin Oriental, Hong Kong<br>
+A new benchmark for luxury, elegance and dedicated service combined with state-of-the-art technology and the latest in contemporary design.<br>
 ----field----
 field: {698A11C8-2FAC-494F-936D-2192003382D9}
 name: Hotel Title
 key: hotel title
-content-length: 30
+content-length: 41
 
-THE LANDMARK MANDARIN ORIENTAL
+THE LANDMARK MANDARIN ORIENTAL, HONG KONG
 ----field----
 field: {76122D1B-B982-43C6-8886-0B9288F44321}
 name: Hotel Phone
@@ -70,9 +75,9 @@ lmhkg-reservations@mohg.com
 field: {951224F7-FE4D-4410-8A17-DFA9943AAB65}
 name: Hotel Address
 key: hotel address
-content-length: 54
+content-length: 48
 
-15 Queen's Road Central, LANDMARK, Central, Hong Kong.
+The Landmark, 15 Queen’s Road Central  Hong Kong
 ----field----
 field: {11AA5D40-F4AD-4220-96D1-D432F270AC20}
 name: Official Website Label
@@ -84,9 +89,9 @@ OFFICIAL WEBSITE
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 30
+content-length: 41
 
-THE LANDMARK MANDARIN ORIENTAL
+THE LANDMARK MANDARIN ORIENTAL, HONG KONG
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -100,14 +105,180 @@ name: __Revision
 key: __revision
 content-length: 36
 
-93cb5908-389c-48bf-9923-7965dc58b782
+0597fcc2-c9b4-4a3a-8c97-47bf72b8c4ff
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151105T091625:635823117853464462Z
+20151108T145213Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 7a39cc63-9fa1-4fe3-8b9b-1ecf09f39684
+
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 49
+
+香港置地文华东方酒店<br>
+酒店配备最高科技及现代化的设计，为豪华、时尚及最优质的服务订立新指标
+----field----
+field: {698A11C8-2FAC-494F-936D-2192003382D9}
+name: Hotel Title
+key: hotel title
+content-length: 10
+
+香港置地文华东方酒店
+----field----
+field: {76122D1B-B982-43C6-8886-0B9288F44321}
+name: Hotel Phone
+key: hotel phone
+content-length: 14
+
++852 2132 0188
+----field----
+field: {AECA85E7-C429-4C06-9100-0626358DBAC1}
+name: Hotel Email
+key: hotel email
+content-length: 27
+
+lmhkg-reservations@mohg.com
+----field----
+field: {951224F7-FE4D-4410-8A17-DFA9943AAB65}
+name: Hotel Address
+key: hotel address
+content-length: 18
+
+香港中环皇后大道中 15 号置地广场
+----field----
+field: {11AA5D40-F4AD-4220-96D1-D432F270AC20}
+name: Official Website Label
+key: official website label
+content-length: 4
+
+官方网页
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 10
+
+香港置地文华东方酒店
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T110218Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+7a39cc63-9fa1-4fe3-8b9b-1ecf09f39684
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T112250Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: b7a4fbdd-8e0f-4400-b291-564c6e649844
+
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 56
+
+<p>香港置地文華東方酒店<br>
+酒店配備最高科技及現代化的設計，為豪華、時尚及最優質的服務訂立新指標</p>
+----field----
+field: {698A11C8-2FAC-494F-936D-2192003382D9}
+name: Hotel Title
+key: hotel title
+content-length: 10
+
+香港置地文華東方酒店
+----field----
+field: {76122D1B-B982-43C6-8886-0B9288F44321}
+name: Hotel Phone
+key: hotel phone
+content-length: 14
+
++852 2132 0188
+----field----
+field: {AECA85E7-C429-4C06-9100-0626358DBAC1}
+name: Hotel Email
+key: hotel email
+content-length: 27
+
+lmhkg-reservations@mohg.com
+----field----
+field: {951224F7-FE4D-4410-8A17-DFA9943AAB65}
+name: Hotel Address
+key: hotel address
+content-length: 19
+
+香港中環皇后大道中 15 號置地廣場 
+----field----
+field: {11AA5D40-F4AD-4220-96D1-D432F270AC20}
+name: Official Website Label
+key: official website label
+content-length: 4
+
+官方網頁
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 10
+
+香港置地文華東方酒店
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T104910Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b7a4fbdd-8e0f-4400-b291-564c6e649844
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T105223Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

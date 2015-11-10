@@ -19,15 +19,15 @@ content-length: 58
 ----version----
 language: en
 version: 1
-revision: 8a5a2c43-45e8-4832-8690-0adfdf9e10d6
+revision: 5c05794c-badd-4cdb-9c47-a0308a466f7d
 
 ----field----
 field: {97376B76-2C43-4ECC-8E56-5322D1CBD35D}
 name: Text
 key: text
-content-length: 95
+content-length: 65
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla expedita officiis dolorem iusto
+Audio docent will automatically play upon loading after selection
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -55,14 +55,122 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8a5a2c43-45e8-4832-8690-0adfdf9e10d6
+5c05794c-badd-4cdb-9c47-a0308a466f7d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150807T081224Z
+20151106T114620Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 5e20d0f0-0255-4881-aea1-3c42eaa55b23
+
+----field----
+field: {97376B76-2C43-4ECC-8E56-5322D1CBD35D}
+name: Text
+key: text
+content-length: 16
+
+声音介绍将会在选择合适语言後播放
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T114305Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5e20d0f0-0255-4881-aea1-3c42eaa55b23
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T114720Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 684a2e9a-04e2-417f-a4d5-f1c27c09ebb8
+
+----field----
+field: {97376B76-2C43-4ECC-8E56-5322D1CBD35D}
+name: Text
+key: text
+content-length: 16
+
+聲音介紹將會在選擇合適語言後播放
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T114627Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+684a2e9a-04e2-417f-a4d5-f1c27c09ebb8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T114656Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

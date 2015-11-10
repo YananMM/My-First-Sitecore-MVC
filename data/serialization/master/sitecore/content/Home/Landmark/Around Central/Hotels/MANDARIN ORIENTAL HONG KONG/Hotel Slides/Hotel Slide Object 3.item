@@ -9,11 +9,32 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {93B5F609-2F05-42E3-ABB2-9D903169CF9D}
 templatekey: Hotel Slide Object
 
+----field----
+field: {6F805FE0-5E05-42E3-A60E-E414A2A1BCEF}
+name: About Image
+key: about image
+content-length: 58
+
+<image mediaid="{56121E00-6D9D-4C49-AF93-07DD7298ADE0}" />
 ----version----
 language: en
 version: 1
-revision: 38061351-e1b8-496b-a9fe-7b6809a19240
+revision: effd696a-0dbf-434b-a20a-3f729a2c5150
 
+----field----
+field: {5DEE80A3-352C-4633-B906-DB62F4AACC07}
+name: About Title
+key: about title
+content-length: 25
+
+Star-studded achievements
+----field----
+field: {35AB2853-817D-476B-8F67-BD734EEEF70C}
+name: About Content
+key: about content
+content-length: 130
+
+<p>Mandarin Oriental, Hong Kong is the only city hotel in the world to achieve quintuple Forbes Travel Guide Five-Star awards.</p>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -41,14 +62,137 @@ name: __Revision
 key: __revision
 content-length: 36
 
-38061351-e1b8-496b-a9fe-7b6809a19240
+effd696a-0dbf-434b-a20a-3f729a2c5150
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150902T084459:635767802999234962Z
+20151106T102325Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 3dde1b86-76e4-48a6-a4f1-9f3bea3e3091
+
+----field----
+field: {5DEE80A3-352C-4633-B906-DB62F4AACC07}
+name: About Title
+key: about title
+content-length: 26
+
+远离都市生活的尘嚣，进入宁静平和、放松身心的豪华世界
+----field----
+field: {35AB2853-817D-476B-8F67-BD734EEEF70C}
+name: About Content
+key: about content
+content-length: 268
+
+<p>荣获《福布斯旅遊指南》五星级殊荣的香港置地文华东方酒店东方水疗中心楼高两层及占地25,000平方呎，不只为宾客提供传统及独一无二的个人化水疗体验，还为客人带来身心上的调和。</p>
+作为Dior亚洲区首个提供尊贵护肤疗程的奢华酒店, 并为西班牙尊贵护肤品牌Natura Biss&eacute;设计全球独家的护肤疗程，东方水疗中心同时与多位国际最具影响力的美容先驱合作，包括法国足艺大师Bastien Gonzalez及领导零化学美容品牌Sodashi的创办人的Megan Larsen，为宾客提供的一系列优质的水疗服务。<br>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T112439Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+3dde1b86-76e4-48a6-a4f1-9f3bea3e3091
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T112542Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: ac8be319-eec5-42b6-afc3-f56af9ff94cc
+
+----field----
+field: {5DEE80A3-352C-4633-B906-DB62F4AACC07}
+name: About Title
+key: about title
+content-length: 4
+
+星級美譽
+----field----
+field: {35AB2853-817D-476B-8F67-BD734EEEF70C}
+name: About Content
+key: about content
+content-length: 48
+
+<p>香港文華東方酒店乃全球唯一城市酒店獲《福布斯旅遊指南》於五個項目頒發五星評級美譽。</p>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T105639Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ac8be319-eec5-42b6-afc3-f56af9ff94cc
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T105650Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

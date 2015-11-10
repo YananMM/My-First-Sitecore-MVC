@@ -29,11 +29,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-1500
+1700
 ----version----
 language: en
 version: 1
-revision: cea886ea-afab-4b57-9408-86c9650e9e69
+revision: f8df4dab-434e-4455-9627-ef8804b77d1e
 
 ----field----
 field: {83133543-4F66-49A1-8E74-25AE281CBBE3}
@@ -237,14 +237,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cea886ea-afab-4b57-9408-86c9650e9e69
+f8df4dab-434e-4455-9627-ef8804b77d1e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T014557Z
+20151029T072827Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -255,8 +255,36 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: c6f05140-d542-4256-aef0-8e0b1ceafcab
+revision: 87d7cf6d-dec0-4c99-9543-69b0bbee53e7
 
+----field----
+field: {83133543-4F66-49A1-8E74-25AE281CBBE3}
+name: Title Label
+key: title label
+content-length: 2
+
+称呼
+----field----
+field: {C3FFF75A-3CD3-4BC7-ACCC-513946DF34E8}
+name: First Name
+key: first name
+content-length: 2
+
+名字
+----field----
+field: {6CAD79C0-642E-4F33-B878-7AF06E5F6344}
+name: Last Name
+key: last name
+content-length: 2
+
+姓氏
+----field----
+field: {8F6D37F3-AD76-4636-8FB1-C2105CE2DD4C}
+name: Email Label
+key: email label
+content-length: 4
+
+电邮地址
 ----field----
 field: {160EE92C-8DFD-4550-A620-07EFF6D216E4}
 name: Channels Label
@@ -265,12 +293,82 @@ content-length: 6
 
 选择联系方式
 ----field----
+field: {F0EB57E5-4A33-44C8-A0CB-0DB5BBC92D4E}
+name: Room Label
+key: room label
+content-length: 5
+
+室／层／座
+----field----
+field: {3C51A644-25AC-4C7F-85EA-E1F3F8EEE3A1}
+name: Building Label
+key: building label
+content-length: 2
+
+大廈
+----field----
+field: {2F214B5E-1E42-45A6-B255-8E900C6F6F6B}
+name: Street Label
+key: street label
+content-length: 6
+
+街道号码／村
+----field----
+field: {2D5369F0-E9CE-41DD-9129-FAFAA1F90179}
+name: Area Label
+key: area label
+content-length: 1
+
+区
+----field----
+field: {CCF7CFDA-62BA-4F01-8C56-40A5EE2E8125}
+name: State Label
+key: state label
+content-length: 3
+
+州/省
+----field----
+field: {A77538FF-90B9-4A63-A924-FEB65E94DFC9}
+name: City Label
+key: city label
+content-length: 2
+
+城巿
+----field----
+field: {BB0B04CD-D98D-4D1C-B999-FCA797062421}
+name: Postcode Label
+key: postcode label
+content-length: 4
+
+邮政编码
+----field----
+field: {D8BCC09C-01AB-495F-8F8A-028CAA83D327}
+name: Country Label
+key: country label
+content-length: 2
+
+国家
+----field----
+field: {13865ABA-6DB0-42D6-9632-08278A177FE2}
+name: Interests Label
+key: interests label
+content-length: 2
+
+兴趣
+----field----
 field: {63D056DA-E265-4705-B896-46C602F15CBE}
 name: Button Label
 key: button label
 content-length: 4
 
 注册加入
+----field----
+field: {5EEACE6B-562A-4B84-875B-0EED5C9504EE}
+name: Other Label
+key: other label
+content-length: 2
+
+其他
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -279,12 +377,70 @@ content-length: 6
 
 掌握最新资讯
 ----field----
+field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
+name: Page Content
+key: page content
+content-length: 0
+
+
+----field----
+field: {DB82C923-745B-4A88-8064-A667F0E1EA4F}
+name: Page Description
+key: page description
+content-length: 23
+
+<p>注册加入，以获取置地广塲最新资讯</p>
+----field----
+field: {9456FE89-6DA1-4AB3-AE7F-EE4A672B171D}
+name: Postal Address
+key: postal address
+content-length: 9
+
+请提供您的邮寄地址
+----field----
 field: {DC98EFC7-B520-4D74-8D80-D59F59A1780B}
 name: Specify
 key: specify
 content-length: 3
 
 请列明
+----field----
+field: {D0171BB4-DDAB-4DCB-B895-49EEF38191E8}
+name: Verification
+key: verification
+content-length: 9
+
+请输入正确的验证码
+----field----
+field: {E46BCEA7-0E10-4515-B80B-33A458BC6CC6}
+name: Generate Code
+key: generate code
+content-length: 4
+
+刷新图像
+----field----
+field: {862FE859-79F3-428D-913C-7CCFD536D16E}
+name: Prompt Message
+key: prompt message
+content-length: 79
+
+要了解您的资料会如何被收集及使用，请细阅「法律及个人私隐」中所载的<a href="/sc/legal-privacy">法律通知、私隐政策及条款</a> 。
+----field----
+field: {86CC598A-C16C-4185-A447-BF3741FE4D88}
+name: Confirm Message
+key: confirm message
+content-length: 208
+
+我已细读和明白上述「法律及个人私隐」中所载的法律通知、私隐政策及条款，并同意受其约束。 <br>
+<br>
+置地公司拟使用你的个人资料（即姓名及电邮地址联络资料），作为提供最新资讯及直接促销置地公司的活动宣传推广及服务调查，以及置地公司、其租户、用户和业务伙伴旗下的零售、餐饮、银行、美容及其他产品、服务及活动宣传推广，惟置地公司必须征得你的同意，方可使用你的个人资料。 如你同意，请在以下空格加上「✓」号。<br>
+----field----
+field: {8B6C75CC-B848-4A3A-B802-EC1F4517EDDD}
+name: Agree Message
+key: agree message
+content-length: 31
+
+本人同意置地公司使用本人之个人资料，作为直接促销之用。<br>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -312,14 +468,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c6f05140-d542-4256-aef0-8e0b1ceafcab
+87d7cf6d-dec0-4c99-9543-69b0bbee53e7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T065722Z
+20151108T114047Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -330,8 +486,36 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 9dcc8c25-3d03-4207-b169-f1fe538ddeaa
+revision: c5e3ed78-209b-4f56-996b-c7bfc358f55c
 
+----field----
+field: {83133543-4F66-49A1-8E74-25AE281CBBE3}
+name: Title Label
+key: title label
+content-length: 2
+
+稱呼
+----field----
+field: {C3FFF75A-3CD3-4BC7-ACCC-513946DF34E8}
+name: First Name
+key: first name
+content-length: 2
+
+名字
+----field----
+field: {6CAD79C0-642E-4F33-B878-7AF06E5F6344}
+name: Last Name
+key: last name
+content-length: 2
+
+姓氏
+----field----
+field: {8F6D37F3-AD76-4636-8FB1-C2105CE2DD4C}
+name: Email Label
+key: email label
+content-length: 4
+
+電郵地址
 ----field----
 field: {160EE92C-8DFD-4550-A620-07EFF6D216E4}
 name: Channels Label
@@ -340,12 +524,82 @@ content-length: 6
 
 選擇聯繫方式
 ----field----
+field: {F0EB57E5-4A33-44C8-A0CB-0DB5BBC92D4E}
+name: Room Label
+key: room label
+content-length: 5
+
+室／層／座
+----field----
+field: {3C51A644-25AC-4C7F-85EA-E1F3F8EEE3A1}
+name: Building Label
+key: building label
+content-length: 2
+
+大廈
+----field----
+field: {2F214B5E-1E42-45A6-B255-8E900C6F6F6B}
+name: Street Label
+key: street label
+content-length: 6
+
+街道號碼／邨
+----field----
+field: {2D5369F0-E9CE-41DD-9129-FAFAA1F90179}
+name: Area Label
+key: area label
+content-length: 2
+
+區域
+----field----
+field: {CCF7CFDA-62BA-4F01-8C56-40A5EE2E8125}
+name: State Label
+key: state label
+content-length: 3
+
+州/省
+----field----
+field: {A77538FF-90B9-4A63-A924-FEB65E94DFC9}
+name: City Label
+key: city label
+content-length: 2
+
+城巿
+----field----
+field: {BB0B04CD-D98D-4D1C-B999-FCA797062421}
+name: Postcode Label
+key: postcode label
+content-length: 4
+
+郵政編碼
+----field----
+field: {D8BCC09C-01AB-495F-8F8A-028CAA83D327}
+name: Country Label
+key: country label
+content-length: 2
+
+國家
+----field----
+field: {13865ABA-6DB0-42D6-9632-08278A177FE2}
+name: Interests Label
+key: interests label
+content-length: 2
+
+興趣
+----field----
 field: {63D056DA-E265-4705-B896-46C602F15CBE}
 name: Button Label
 key: button label
 content-length: 4
 
 註冊加入
+----field----
+field: {5EEACE6B-562A-4B84-875B-0EED5C9504EE}
+name: Other Label
+key: other label
+content-length: 2
+
+其他
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -361,12 +615,58 @@ content-length: 16
 
 註冊加入，以獲取置地廣塲最新資訊
 ----field----
+field: {9456FE89-6DA1-4AB3-AE7F-EE4A672B171D}
+name: Postal Address
+key: postal address
+content-length: 9
+
+請提供您的郵寄地址
+----field----
 field: {DC98EFC7-B520-4D74-8D80-D59F59A1780B}
 name: Specify
 key: specify
 content-length: 3
 
 請列明
+----field----
+field: {D0171BB4-DDAB-4DCB-B895-49EEF38191E8}
+name: Verification
+key: verification
+content-length: 9
+
+請輸入正確的驗証碼
+----field----
+field: {E46BCEA7-0E10-4515-B80B-33A458BC6CC6}
+name: Generate Code
+key: generate code
+content-length: 4
+
+刷新圖像
+----field----
+field: {862FE859-79F3-428D-913C-7CCFD536D16E}
+name: Prompt Message
+key: prompt message
+content-length: 78
+
+要了解您的資料會如何被收集及使用，請細閱「法律及個人私隱」中所載的<a href="/tc/legal-privacy">法律通知、私隱政策及條款</a>。
+----field----
+field: {86CC598A-C16C-4185-A447-BF3741FE4D88}
+name: Confirm Message
+key: confirm message
+content-length: 216
+
+<p>已細讀和明白上述「法律及個人私隱」中所載的法律通知、私隱政策及條款，並同意受其約束。 <br>
+<br>
+置地公司擬使用你的個人資料（即姓名及電郵地址聯絡資料），作為提供最新資訊及直接促銷置地公司的活動宣傳推廣及服務調查，以及置地公司、其租戶、用戶和業務夥伴旗下的零售、餐飲、銀行、美容及其他產品、服務及活動宣傳推廣，惟置地公司必須徵得你的同意，方可使用你的個人資料。 如你同意，請在以下空格加上「 ✓」號。</p>
+<br>
+----field----
+field: {8B6C75CC-B848-4A3A-B802-EC1F4517EDDD}
+name: Agree Message
+key: agree message
+content-length: 39
+
+<p>本人同意置地公司使用本人之個人資料，作為直接促銷之用。</p>
+<br>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -394,14 +694,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9dcc8c25-3d03-4207-b169-f1fe538ddeaa
+c5e3ed78-209b-4f56-996b-c7bfc358f55c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151019T114720:635808520404003983Z
+20151108T113731Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

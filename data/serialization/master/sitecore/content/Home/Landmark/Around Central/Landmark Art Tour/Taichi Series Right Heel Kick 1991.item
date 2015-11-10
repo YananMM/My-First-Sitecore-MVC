@@ -16,10 +16,24 @@ key: artist
 content-length: 38
 
 {0803E9C4-1396-4ED5-A11A-F685C0BB5EFB}
+----field----
+field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
+name: Art Image
+key: art image
+content-length: 58
+
+<image mediaid="{127C0869-59B7-4814-8A51-4100F903BD36}" />
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 4
+
+4750
 ----version----
 language: en
 version: 1
-revision: e9625c20-8944-4d5c-840d-8bab31034d39
+revision: d3f023c7-6fe8-4163-9faa-41e8745366a9
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -43,12 +57,30 @@ content-length: 22
 
 215 x 192.3 x 150.2 cm
 ----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{9BAF0DA4-213B-4CA8-895C-460F55FABB7B}" src="~/media/9baf0da4213b4ca8895c460f55fabb7b.ashx" />
+----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
 key: art key
 content-length: 15
 
 Bronze, Ed. 4/6
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 887
+
+Born in Miaoli, Taiwan, Ju Ming began his sculptural career as a woodcarver under the apprenticeship of Buddhist statuary craftsman Lee Chin-chuan. After completing his apprenticeship, Ju Ming established his own studio and began a thriving business creating traditional folk art. Throughout this period he began experimenting with contemporary subjects moving to a new direction after seeking the guidance of modern sculptor Yuyu Yang.
+ 
+Building on his training as a woodcarver, Ju Ming now works with a variety of mediums, including bronze, wood, Styrofoam, ceramic and stainless steel. In 1976, Ju Ming began his sculpting works on the theme of Taichi, the first artist to do so. These works convey dynamic movement and rugged carving combined with a feeling of calm strength and stability.
+
+Hongkong Land purchased this large figure, engaged in the classic Taichi pose, in 1986.
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -62,14 +94,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e9625c20-8944-4d5c-840d-8bab31034d39
+d3f023c7-6fe8-4163-9faa-41e8745366a9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T134803Z
+20151108T042720Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -80,7 +112,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 5c27c567-9018-49b6-8e81-d8f9a8d69e2e
+revision: 19cba775-aff4-4f23-beff-ed556d280556
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -104,12 +136,30 @@ content-length: 22
 
 215 x 192.3 x 150.2 厘米
 ----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 261
+
+<file mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Ju Ming b1938/Taichi Series Single Whip Dip 1986/i_0511_taichi series_single whip dip_cant" mediaid="{B3E92C10-94ED-41CA-B070-46B0E97338C6}" src="~/media/b3e92c1094ed41cab07046b0e97338c6.ashx" />
+----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
 key: art key
 content-length: 12
 
 青铜雕塑, 版数 4/6
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 247
+
+朱銘生於台灣苗栗，曾師事佛像雕塑大師李金川，從而展開他的雕刻事業。他滿師後自設工作室，開始創作傳統民間藝術而大受歡迎。期間，他嘗試創作現代作品。在獲得現代雕刻家楊英風指導後，朱銘開拓全新的藝術境界，建立今天為人熟悉的獨特風格。
+
+朱銘在木雕的基礎上，使用多種媒材進行創作，包括青銅、木、發泡膠、陶瓷及不銹鋼。一九七六年，朱銘開始創作以太極為主題的作品，開風氣之先。這些作品表現動感之美與粗獷的雕刻風格，予人沉靜、堅穩之感。
+
+置地公司於一九八六年購入這座以經典太極招式為造型的大型雕像。
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -123,14 +173,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5c27c567-9018-49b6-8e81-d8f9a8d69e2e
+19cba775-aff4-4f23-beff-ed556d280556
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T055438:635820404786975670Z
+20151108T042602Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -141,7 +191,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: c808bbb3-182e-4f40-94e7-1abfa52d2c3e
+revision: 3426594a-0f08-4704-a0ef-a14f9f7a0222
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -165,12 +215,30 @@ content-length: 22
 
 215 x 192.3 x 150.2 厘米
 ----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 109
+
+<file mediaid="{E893D406-15E6-4687-8039-86679C8761D9}" src="~/media/e893d40615e64687803986679c8761d9.ashx" />
+----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
 key: art key
 content-length: 12
 
 青銅雕塑, 版數 4/6
+----field----
+field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
+name: Art Description
+key: art description
+content-length: 247
+
+朱铭生于台湾苗栗，曾师事佛像雕塑大师李金川，从而展开他的雕刻事业。他满师后自设工作室，开始创作传统民间艺术而大受欢迎。期间，他尝试创作现代作品。在获得现代雕刻家杨英风指导后，朱铭开拓全新的艺术境界，建立今天为人熟悉的独特风格。
+
+朱铭在木雕的基础上，使用多种媒材进行创作，包括青铜、木、发泡胶、陶瓷及不锈钢。一九七六年，朱铭开始创作以太极为主题的作品，开风气之先。这些作品表现动感之美与粗犷的雕刻风格，予人沉静、坚稳之感。
+
+置地公司于一九八六年购入这座以经典太极招式为造型的大型雕像。
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -184,14 +252,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c808bbb3-182e-4f40-94e7-1abfa52d2c3e
+3426594a-0f08-4704-a0ef-a14f9f7a0222
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T055441:635820404815247287Z
+20151108T042657Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

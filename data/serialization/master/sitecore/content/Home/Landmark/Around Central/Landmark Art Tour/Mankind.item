@@ -50,11 +50,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-1000
+2000
 ----version----
 language: en
 version: 1
-revision: aec532f7-2d0f-4dc4-9655-90c752cd2235
+revision: 372bb1a2-c560-4d75-895f-4ef65e34d5b8
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -77,6 +77,13 @@ key: art size
 content-length: 18
 
 430 x 295 x 225 cm
+----field----
+field: {BA9C02AD-A33F-455F-A31F-255E2E2308EB}
+name: Commentary Alt
+key: commentary alt
+content-length: 20
+
+Listen to Commentary
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -109,14 +116,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-aec532f7-2d0f-4dc4-9655-90c752cd2235
+372bb1a2-c560-4d75-895f-4ef65e34d5b8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T050413Z
+20151108T045546Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -127,8 +134,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 0470a7cc-44b5-4f04-9420-7b985a9d4a42
+revision: c41e49e6-723b-4586-8c0d-bcdaf8cf4a0a
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 2
+
+人类
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
@@ -144,6 +158,13 @@ content-length: 18
 
 430 x 295 x 225 厘米
 ----field----
+field: {BA9C02AD-A33F-455F-A31F-255E2E2308EB}
+name: Commentary Alt
+key: commentary alt
+content-length: 7
+
+普通话声音介绍
+----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
 key: art key
@@ -154,7 +175,7 @@ content-length: 2
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 295
+content-length: 293
 
 "雕塑家朱汉新于一九七六年毕业于香港中文大学，获美术学位，其后获意大利文化部颁发奖学金，前往位于世界着名云石矿场的卡拉拉美术学院研习石雕。
 
@@ -162,7 +183,13 @@ content-length: 295
 朱氏定居加拿大，但不时返港于香港中文大学祟基学院担任客座艺术家。
 
 「人类」由多块云石组成，朱氏以浪漫的表达手法表现他对人类反思内省的信念。该作品于一九八九年七月在交易广场第三座大堂揭幕。"
+----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
 
+您正在查看
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -176,14 +203,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0470a7cc-44b5-4f04-9420-7b985a9d4a42
+c41e49e6-723b-4586-8c0d-bcdaf8cf4a0a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T020638:635820267982560905Z
+20151108T045538Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -194,8 +221,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 11003ca9-f0ec-4427-81fb-006457b23c05
+revision: cf5aa50f-d726-48f8-937e-1d3f3fe30d3d
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 2
+
+人類
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
@@ -210,6 +244,13 @@ key: art size
 content-length: 18
 
 430 x 295 x 225 厘米
+----field----
+field: {BA9C02AD-A33F-455F-A31F-255E2E2308EB}
+name: Commentary Alt
+key: commentary alt
+content-length: 7
+
+廣東話聲音介紹
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -231,6 +272,13 @@ content-length: 295
 「人類」由多塊雲石組成，朱氏以浪漫的表達手法表現他對人類反思內省的信念。該作品於一九八九年七月在交易廣場第三座大堂揭幕。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -243,14 +291,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-11003ca9-f0ec-4427-81fb-006457b23c05
+cf5aa50f-d726-48f8-937e-1d3f3fe30d3d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T020641:635820268014202715Z
+20151108T045447Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

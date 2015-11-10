@@ -50,7 +50,7 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-2500
+3500
 ----version----
 language: en
 version: 1
@@ -134,7 +134,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: 7ae6f07d-7bb7-4dd4-8225-5efc06ceda90
+revision: 83275867-3db5-4014-9328-99211d2d1cb9
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -184,6 +184,13 @@ content-length: 195
 置地公司委托韩辛创作这些画作。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -196,14 +203,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7ae6f07d-7bb7-4dd4-8225-5efc06ceda90
+83275867-3db5-4014-9328-99211d2d1cb9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T031648:635820310083388935Z
+20151108T040944Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -214,7 +221,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: aee207ba-6816-4216-b3e7-d4fca644df4a
+revision: 5c25923d-873e-41db-9c05-b48a162265a6
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -264,6 +271,13 @@ content-length: 195
 置地公司委託韓辛創作這些畫作。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -276,14 +290,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-aee207ba-6816-4216-b3e7-d4fca644df4a
+5c25923d-873e-41db-9c05-b48a162265a6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T031624:635820309840645051Z
+20151108T040940Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

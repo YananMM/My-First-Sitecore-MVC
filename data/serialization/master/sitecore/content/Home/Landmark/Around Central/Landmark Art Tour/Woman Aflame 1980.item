@@ -17,16 +17,30 @@ content-length: 38
 
 {87C24244-F25D-44C8-B132-978A0AC60860}
 ----field----
+field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
+name: Art Image
+key: art image
+content-length: 58
+
+<image mediaid="{13CE6682-78FF-489F-905F-4FBA67B2D366}" />
+----field----
+field: {22B6E709-1F38-4AF9-8D6C-7E3443E4F3ED}
+name: Floor and Building
+key: floor and building
+content-length: 38
+
+{BDA32531-667F-420C-881F-4550CD6E755E}
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
-content-length: 3
+content-length: 4
 
-300
+5875
 ----version----
 language: en
 version: 1
-revision: 2589477b-ae7a-4f36-bcf2-320ec7c02cdd
+revision: f5cec8e8-8c3f-47a2-b6bf-89660f72054d
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -50,6 +64,13 @@ content-length: 8
 
 360 cm H
 ----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 209
+
+<file mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Salvador Dali 19041989/i_3010_dali_eng" mediaid="{84545ED0-B624-4375-9EE2-E2381F20FACF}" src="~/media/84545ed0b62443759ee2e2381f20facf.ashx" />
+----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
 key: art key
@@ -60,15 +81,15 @@ Bronze, Ed. 2/8
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 1879
+content-length: 1876
 
-"Salvador Dali was a prominent surrealist painter and one of the most recognised and ground breaking artists of his time.  Dali was born in the small agricultural town of Figueres in Catalonia, Spain. A precocious and intelligent child, Dali was encouraged by his parents to practise art from an early age.  His mother especially indulged his creative interests and early eccentricities.  Dali also spent his boyhood summers in the coastal fishing village of Cadaqués where his parents built his first art studio. 
+Salvador Dali was a prominent surrealist painter and one of the most recognised and ground breaking artists of his time.  Dali was born in the small agricultural town of Figueres in Catalonia, Spain. A precocious and intelligent child, Dali was encouraged by his parents to practise art from an early age.  His mother especially indulged his creative interests and early eccentricities.  Dali also spent his boyhood summers in the coastal fishing village of Cadaqués where his parents built his first art studio. 
 
 He began his formal training in Madrid, attending the San Fernando Royal Academy of Fine Arts.  In the 1920s, Dali went to Paris and struck up friendships with other iconic artists including Picasso, Magritte and Miro, leading to his first surrealist phase during which he soon became a leader of the movement. Throughout his life he drew on eccentricity and exhibitionism, claiming these to be the source of his creative energy. 
 
 He was a skilled draftsman, known for striking bizarre images in his surrealist works.  Dali is probably best known for his painting ‘The Persistence of Memory’ featuring his iconic images of melting clocks.  Dali also created works in an expansive repertoire of other mediums including film, photography and sculpture, often collaborating with a range of other artists. 
 
-Dali’s sculptures, ‘Lobster Telephone’ and ‘Mae West Lips Sofa’, were two of the most popular objects of the surrealist movement.  His ‘Woman Aflame’ statue, on permanent display here at Landmark, was adapted from his famous 1937 painting ‘Burning Giraffe’.   This striking piece alludes to Dali’s obsession with the mysteries of women and Sigmund Freud’s research on dream interpretations.  This sculpture provides the viewer with a unique opportunity to explore infinite possibilities and momentarily escape from the hustle and bustle of CENTRAL. "
+Dali’s sculptures, ‘Lobster Telephone’ and ‘Mae West Lips Sofa’, were two of the most popular objects of the surrealist movement.  His ‘Woman Aflame’ statue, on permanent display here at Landmark, was adapted from his famous 1937 painting ‘Burning Giraffe’.   This striking piece alludes to Dali’s obsession with the mysteries of women and Sigmund Freud’s research on dream interpretations.  This sculpture provides the viewer with a unique opportunity to explore infinite possibilities and momentarily escape from the hustle and bustle of CENTRAL.
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -83,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2589477b-ae7a-4f36-bcf2-320ec7c02cdd
+f5cec8e8-8c3f-47a2-b6bf-89660f72054d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T051337:635820380174777933Z
+20151108T044143Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,7 +122,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 344a6391-3f10-48fe-a5b3-b1a364fcc811
+revision: 1ea03077-7ec3-49b2-a01b-ba7c432c6eb1
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -124,6 +145,13 @@ key: art size
 content-length: 8
 
 360 厘米 高
+----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 210
+
+<file mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Salvador Dali 19041989/i_3010_dali_mand" mediaid="{C8873250-25B0-48F8-BAD2-FEBEBD8E3964}" src="~/media/c887325025b048f8bad2febebd8e3964.ashx" />
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -146,6 +174,13 @@ content-length: 660
 达利的雕塑作品《Lobster Telephone》和《Mae West Lips Sofa》，是超现实主义运动中最着名的两件物品。其《燃烧的女人》雕像取材自他在1937年的着名画作《Burning Giraffe》，现为置地广塲的永久展品。这件瞩目的作品反映了达利对女性神秘感和弗洛伊德的梦境诠释深深着迷。作为全球最着名和备受赞赏的艺术家，达利这件雕塑作品让观赏者从中探索无限的可能性，和暂时逃离中环都市喧嚣的难得机会。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -158,14 +193,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-344a6391-3f10-48fe-a5b3-b1a364fcc811
+1ea03077-7ec3-49b2-a01b-ba7c432c6eb1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T024947:635820293872341716Z
+20151108T044214Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -176,7 +211,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: eb348210-e516-4e21-890a-761cddb07ce6
+revision: da38c8af-d6c4-4895-98c5-c307947f28ca
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -200,6 +235,13 @@ content-length: 8
 
 360 厘米 高
 ----field----
+field: {03880D3C-1C45-403F-8E60-29125FB34318}
+name: Commentary
+key: commentary
+content-length: 210
+
+<file mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Salvador Dali 19041989/i_3010_dali_cant" mediaid="{4BA6A740-6A05-47FE-8E38-1C4F7D9492FD}" src="~/media/4ba6a7406a0547fe8e381c4f7d9492fd.ashx" />
+----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
 key: art key
@@ -221,6 +263,13 @@ content-length: 660
 達利的雕塑作品《Lobster Telephone》和《Mae West Lips Sofa》，是超現實主義運動中最著名的兩件物品。其《燃燒的女人》雕像取材自他在1937年的著名畫作《Burning Giraffe》，現為置地廣塲的永久展品。這件矚目的作品反映了達利對女性神秘感和弗洛伊德的夢境詮釋深深著迷。作為全球最著名和備受讚賞的藝術家，達利這件雕塑作品讓觀賞者從中探索無限的可能性，和暫時逃離中環都市喧囂的難得機會。"
 
 ----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -233,14 +282,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-eb348210-e516-4e21-890a-761cddb07ce6
+da38c8af-d6c4-4895-98c5-c307947f28ca
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T024938:635820293787576868Z
+20151108T044228Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

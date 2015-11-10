@@ -24,6 +24,13 @@ content-length: 0
 
 
 ----field----
+field: {EF0834ED-A9CD-414C-B3FD-3F282C6B155E}
+name: Brand
+key: brand
+content-length: 38
+
+{27B2F440-8B1A-46CF-9077-9E50033C4375}
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -33,7 +40,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 3f6dab06-1b9c-41da-932e-234b9a5ea077
+revision: 48a88265-6103-45e7-a9ca-803c0ca717a5
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3f6dab06-1b9c-41da-932e-234b9a5ea077
+48a88265-6103-45e7-a9ca-803c0ca717a5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151028T051547Z
+20151105T122653Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -151,18 +158,15 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: a6f2766d-8b4d-49de-8866-767784df0b97
+revision: 593fa33b-79bc-4c90-8d6c-33cf784b9b50
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 52
+content-length: 47
 
-提花針織上衣，Nepal圖案
-(港幣13,800元)
-金屬海軍藍色背帶短裙
-(港幣36,800元)
+提花針織上衣，Nepal圖案(港幣13,800元) 金屬海軍藍色背帶短裙(港幣36,800元)
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -190,18 +194,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a6f2766d-8b4d-49de-8866-767784df0b97
+593fa33b-79bc-4c90-8d6c-33cf784b9b50
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T142000Z
+20151108T155559Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

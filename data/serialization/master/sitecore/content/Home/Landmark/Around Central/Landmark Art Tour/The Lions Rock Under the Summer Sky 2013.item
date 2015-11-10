@@ -20,9 +20,9 @@ content-length: 38
 field: {471C2B3C-E3D1-4037-AB6A-4F6847B27FCA}
 name: Art Image
 key: art image
-content-length: 0
+content-length: 58
 
-
+<image mediaid="{CCE58A26-7A34-4368-AB0B-33F028BD8D0A}" />
 ----field----
 field: {22B6E709-1F38-4AF9-8D6C-7E3443E4F3ED}
 name: Floor and Building
@@ -50,7 +50,7 @@ name: __Sortorder
 key: __sortorder
 content-length: 4
 
-4600
+5600
 ----version----
 language: en
 version: 1
@@ -134,7 +134,7 @@ extranet\Anonymous
 ----version----
 language: zh-CN
 version: 1
-revision: a7518908-8a6b-4620-bf58-f5bb649e6708
+revision: dcf0ede6-3b56-4a72-b771-60cdeae61ace
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -175,14 +175,20 @@ content-length: 7
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 371
+content-length: 367
 
-"李运辉于香港出生，六十年代后期师从着名中国油画家蒋荣先学习西洋画。他勇于尝试不同的绘画技巧，创出自成一家的个人风格。一九八四年，李运辉在澳洲悉尼的Royce Gallery举行首次个人展，大获好评。他的作品于一九八七及一九八八年获选角逐第二十一及二十二届Prix International D’Art Contemporain de Monte-Carlo。他亦于一九八五至一九九六年间参加香港当代艺术双年展。
+李运辉于香港出生，六十年代后期师从着名中国油画家蒋荣先学习西洋画。他勇于尝试不同的绘画技巧，创出自成一家的个人风格。一九八四年，李运辉在澳洲悉尼的Royce Gallery举行首次个人展，大获好评。他的作品于一九八七及一九八八年获选角逐第二十一及二十二届Prix International D’Art Contemporain de Monte-Carlo。他亦于一九八五至一九九六年间参加香港当代艺术双年展。
 
 这幅作品描绘香港着名地标狮子山。李运辉以苍劲有力的独特笔法画出粗犷的质感，并以鲜明色调营造景深及空间感。山头的嶙峋怪石对照周边的葱郁林木，为荒芜的狮子山增添一份雄奇气势。画中的狮子山宛如一头在蓝天白云下静卧沉思的石狮，令人对大自然的静态美和生命力肃然起敬。
 
-置地公司于二零一二年委托李志章创作「夏日狮子山」。"
+置地公司于二零一二年委托李志章创作「夏日狮子山」。
+----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
 
+您正在查看
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -196,14 +202,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a7518908-8a6b-4620-bf58-f5bb649e6708
+dcf0ede6-3b56-4a72-b771-60cdeae61ace
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T034802:635820328821170675Z
+20151108T043509Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -214,7 +220,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: e69b8e67-3dad-4c4d-b6e7-1f0b511aa77d
+revision: f7089789-ae77-4148-8301-76cfaec1f63e
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -255,14 +261,21 @@ content-length: 7
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 371
+content-length: 369
 
-"李運輝於香港出生，六十年代後期師從著名中國油畫家蔣榮先學習西洋畫。他勇於嘗試不同的繪畫技巧，創出自成一家的個人風格。一九八四年，李運輝在澳洲悉尼的Royce Gallery舉行首次個人展，大獲好評。他的作品於一九八七及一九八八年獲選角逐第二十一及二十二屆Prix International D’Art Contemporain de Monte-Carlo。他亦於一九八五至一九九六年間參加香港當代藝術雙年展。
+李運輝於香港出生，六十年代後期師從著名中國油畫家蔣榮先學習西洋畫。他勇於嘗試不同的繪畫技巧，創出自成一家的個人風格。一九八四年，李運輝在澳洲悉尼的Royce Gallery舉行首次個人展，大獲好評。他的作品於一九八七及一九八八年獲選角逐第二十一及二十二屆Prix International D’Art Contemporain de Monte-Carlo。他亦於一九八五至一九九六年間參加香港當代藝術雙年展。
 
 這幅作品描繪香港著名地標獅子山。李運輝以蒼勁有力的獨特筆法畫出粗獷的質感，並以鮮明色調營造景深及空間感。山頭的嶙峋怪石對照周邊的蔥鬱林木，為荒蕪的獅子山增添一份雄奇氣勢。畫中的獅子山宛如一頭在藍天白雲下靜臥沉思的石獅，令人對大自然的靜態美和生命力肅然起敬。
 
-置地公司於二零一二年委託李志章創作「夏日獅子山」。"
+置地公司於二零一二年委託李志章創作「夏日獅子山」。
 
+----field----
+field: {3D4D618B-3E9E-478B-988C-E5A89674C096}
+name: Light Box Text
+key: light box text
+content-length: 5
+
+您正在查看
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -276,14 +289,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e69b8e67-3dad-4c4d-b6e7-1f0b511aa77d
+f7089789-ae77-4148-8301-76cfaec1f63e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151102T034752:635820328728545377Z
+20151108T043522Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

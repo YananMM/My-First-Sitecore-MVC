@@ -34,9 +34,16 @@ content-length: 58
 field: {DCBD6530-C867-4887-B668-FF8BBB4B7B25}
 name: Tags
 key: tags
-content-length: 194
+content-length: 0
 
-{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{A869505D-8B56-42B6-9460-9928607C3BD3}|{8DEEBCDA-AC9C-4B0C-AF81-8E493D219713}|{37DE7516-5325-4534-A035-A908D3D256D9}
+
+----field----
+field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
+name: Callout Image
+key: callout image
+content-length: 58
+
+<image mediaid="{FA172D95-147A-49F2-99A0-167ACD99AD7D}" />
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -47,7 +54,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: e8ec1acb-d92b-4126-8c83-9a01678d6b57
+revision: 27edf707-0660-4df3-8cd0-cadd7a21dc92
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -60,9 +67,9 @@ Star Ferry
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 22
+content-length: 35
 
-lmhkg-enquiry@mohg.com
+http://www.starferry.com.hk/en/home
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -118,14 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e8ec1acb-d92b-4126-8c83-9a01678d6b57
+27edf707-0660-4df3-8cd0-cadd7a21dc92
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T020150:635821129104510752Z
+20151108T065232Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -136,7 +143,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 526c19b8-039e-44ee-8d6f-2bef75dba86b
+revision: eaa0fecb-6a94-4117-8c14-86634c40568c
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -149,9 +156,9 @@ content-length: 4
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 22
+content-length: 59
 
-lmhkg-enquiry@mohg.com
+http://hanweb.kanhan.com/TuniS/www.starferry.com.hk/tc/home
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -186,14 +193,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-526c19b8-039e-44ee-8d6f-2bef75dba86b
+eaa0fecb-6a94-4117-8c14-86634c40568c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T020221:635821129416078572Z
+20151108T085246Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -204,7 +211,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: c0da6051-a862-4e0c-aba0-d4a3e704e5ba
+revision: 79d6bd52-7618-4aa3-ab4f-7d772256afab
 
 ----field----
 field: {1189463D-F4FE-45C9-B673-398030341EAA}
@@ -217,9 +224,9 @@ content-length: 4
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 22
+content-length: 35
 
-lmhkg-enquiry@mohg.com
+http://www.starferry.com.hk/tc/home
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -254,14 +261,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c0da6051-a862-4e0c-aba0-d4a3e704e5ba
+79d6bd52-7618-4aa3-ab4f-7d772256afab
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151103T020206:635821129263159826Z
+20151108T065223Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
