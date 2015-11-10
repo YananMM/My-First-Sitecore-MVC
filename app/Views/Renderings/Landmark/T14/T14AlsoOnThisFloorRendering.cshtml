@@ -10,14 +10,17 @@
         brandsByFloor = brandsByFloor.GetRange(0, 6);
     }
     int i = 1;
-
-    foreach (var item in brandsByFloor)
+    if (brandsByFloor != null)
     {
-        <div @if (i > 4) { <text>
-             class="col-sm-2 col-xs-3 hidden-xs"
-             </text>        } class="col-sm-2 col-xs-3">
-            <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item)" alt="@Html.Sitecore().Field("Brand Title", item)"></a>
-        </div>
-i++;
+        foreach (var item in brandsByFloor)
+        {
+            <div @if (i > 4) { <text>
+                 class="col-sm-2 col-xs-3 hidden-xs"
+                 </text>        } class="col-sm-2 col-xs-3">
+                <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item)" alt="@Html.Sitecore().Field("Brand Title", item)"></a>
+            </div>
+        i++;
+        }
     }
+    
 }

@@ -11,6 +11,7 @@ using Sitecore.ContentSearch.Utilities;
 using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
+using Sitecore.Data.Query;
 using Sitecore.Web.UI.HtmlControls;
 
 namespace Landmark.Helper
@@ -420,15 +421,21 @@ namespace Landmark.Helper
         public List<Item> GetBrandsByFloor()
         {
             string floorId = GetFloorId(out floorId).ToString();
-            List<Item> allBrands = LandmarkHelper.GetItemsByRootAndTemplate(SitecoreItems.LandmarkHomeItem.ID.ToString(), ItemGuids.T11PageTemplate);
-            var brandsByFloor = allBrands.Where(p => p.Fields["Floor"].ToString() == floorId).ToList();
+            List<Item> allBrands = null;
+            if(isShop)
+                allBrands = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
+            if(isDining)
+                allBrands = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningItem, ItemGuids.T11PageTemplate);
+            var brandsWithFloor = allBrands.Where(p => p.Fields["Floor"] != null);
+            var brandsByFloor = brandsWithFloor.Where(p => p.Fields["Floor"].ToString() == floorId).ToList();
             return brandsByFloor;
         }
 
         public List<Item> GetBrandsByFloor(Item floor)
         {
-            List<Item> allBrands = allBrands = LandmarkHelper.GetItemsByRootAndTemplate(SitecoreItems.LandmarkHomeItem.ID.ToString(), ItemGuids.T14ShopDetailsTemplate);
-            var brandsByFloor = allBrands.Where(p => p.Fields["Floor"].ToString() == floor.ID.ToString()).ToList();
+            List<Item> allBrands =  LandmarkHelper.GetItemsByRootAndTemplate(SitecoreItems.LandmarkHomeItem.ID.ToString(), ItemGuids.T14ShopDetailsTemplate);
+            var brandsWithFloor = allBrands.Where(p => p.Fields["Floor"] != null);
+            var brandsByFloor = brandsWithFloor.Where(p => p.Fields["Floor"].ToString() == floor.ID.ToString()).ToList();
             return brandsByFloor;
         }
 

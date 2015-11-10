@@ -30,7 +30,7 @@
                                 <img data-src="@Html.Sitecore().ImageFieldSrc("Art Image", item)" alt="artpiece picture">
                             </div>
                             <h4>@Html.Sitecore().Field("Art Title", item)</h4>
-                            <p>@Html.Sitecore().Field("Art Key", item) @Html.Sitecore().Field("Art Size", item)</p>
+                            <p>@item.Fields["Art Key"].Value.ToUpper() @Html.Sitecore().Field("Art Size", item)</p>
                         </a>
                     </div>
                 }

@@ -67,7 +67,7 @@ namespace Landmark.Service
                                                        pin = "hide",
                                                        x = location.Fields["LocationX"].Value,
                                                        y = location.Fields["LocationY"].Value,
-                                                       workdayhours = location.Fields["Openning Hours"].Value,
+                                                       workdayhours = location.Fields["Opening Hours"].Value,
                                                        wherelocation = location.Fields["Area"].Value + "," + floor.Fields["Floor Title"].Value + "," + building.Fields["Building Title"].Value,
                                                        address = building.Fields["Building Address"].Value,
                                                        href = LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(location))

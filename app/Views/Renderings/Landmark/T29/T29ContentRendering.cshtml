@@ -38,7 +38,7 @@
                     </div>
                     <div class="gd-artplace-details row">
                         <div class="col-sm-12 gd-artplace-info">
-                            @Html.Sitecore().Field("Art Key")<br>
+                            @Sitecore.Context.Item.Fields["Art Key"].Value.ToUpper()<br>
                             @Html.Sitecore().Field("Art Size")
                         </div>
                         @if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
