@@ -52,7 +52,7 @@
                             @Html.Sitecore().Field("Glossary Value", Factory.GetDatabase("web").GetItem(ItemGuids.WhereItem)).ToString().ToUpper()
                         </th>
                         <td>
-                            @fullWhere<br><a href="#" class="gd-link-map gd-lightbox-link gd-lightbox-pin" data-pin="@Html.Sitecore().ImageFieldSrc("LocationX", Sitecore.Context.Item),@Html.Sitecore().ImageFieldSrc("LocationY", Sitecore.Context.Item)" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)" data-lighttitle="@Html.Sitecore().Field("Light Box Text") @whereDescription of @floor.Parent["Building Title"]">
+                            @fullWhere<br><a href="#" class="gd-link-map gd-lightbox-link gd-lightbox-pin" data-pin="@Html.Sitecore().ImageFieldSrc("LocationX", Sitecore.Context.Item),@Html.Sitecore().ImageFieldSrc("LocationY", Sitecore.Context.Item)" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)" data-lighttitle="@Html.Sitecore().Field("Glossary Value",Sitecore.Context.Database.GetItem(ItemGuids.YouAreViewingItem)) @whereDescription of @floor.Parent["Building Title"]">
                                 <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", Factory.GetDatabase("web").GetItem(ItemGuids.FloorPlanItem)).ToString().ToUpper()
                             </a>
                         </td>
