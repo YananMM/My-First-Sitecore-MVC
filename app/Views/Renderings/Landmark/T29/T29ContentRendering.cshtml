@@ -79,8 +79,7 @@
                                     @floor.Fields["Floor Title"] @floor.Parent.Fields["Building Title"]<br>
                                     @{
                                 string text = "";
-                                //todo : view glossary
-                                var lightBox = Html.Sitecore().Field("Light Box Text");
+                                var lightBox = Html.Sitecore().Field("Glossary Value",Sitecore.Context.Database.GetItem(ItemGuids.YouAreViewingItem));
                                 text = lightBox + " " + floor.Fields["Floor Title"] + " of " + floor.Parent.Fields["Building Title"];
                                     }
                                     <a href="javascript:;" class="gd-link-map gd-lightbox-link gd-lightbox-pin" data-pin="@Html.Sitecore().ImageFieldSrc("LocationX", Sitecore.Context.Item),@Html.Sitecore().ImageFieldSrc("LocationY", Sitecore.Context.Item)" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)" data-lighttitle="@text">
