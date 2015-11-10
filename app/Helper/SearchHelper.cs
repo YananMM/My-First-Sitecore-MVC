@@ -57,7 +57,7 @@ namespace Landmark.Helper
 
         public List<FilterTypeResults> GetFilterTypes(string searchString = null)
         {
-            List<Item> pageItems = SitecoreItems.LandmarkHomeItem.Children.Where(item => item.Fields["Is Shown In Navigation"] != null).ToList();
+            List<Item> pageItems = Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkHomeItem).Children.Where(item => item.Fields["Is Shown In Navigation"] != null).ToList();
             List<Item> types = pageItems.Where(item => ((CheckboxField)item.Fields["Is Shown In Navigation"]).Checked).ToList();
             List<FilterTypeResults> filterresults = new List<FilterTypeResults>();
             foreach (Item filtertype in types)

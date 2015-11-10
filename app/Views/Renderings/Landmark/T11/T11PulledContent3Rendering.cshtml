@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 @using Sitecore.Links
 @model RenderingModel
 @{
@@ -17,7 +18,7 @@
                 <p>
                     @Html.Sitecore().Field("Article Intro", Model.Item)
                 </p>
-                <span class="btn btn-default"> @Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverMoreItem)</span> </div>
+                <span class="btn btn-default"> @((object) Html.Sitecore().Field("Glossary Value", Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem)))</span> </div>
         </div>
     </a>
 </div>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Sitecore.Configuration;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.ComputedFields;
 using Sitecore.Data;
@@ -17,7 +18,7 @@ namespace Landmark.Classes.ComputedFields
             Item item = indexable as SitecoreIndexableItem;
             if (item == null)
                 return null;
-            while(item.Parent.ID.ToString() != SitecoreItems.LandmarkHomeItem.ID.ToString())
+            while(item.Parent.ID.ToString() != Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkHomeItem).ID.ToString())
             {
                 item = item.Parent;
             }

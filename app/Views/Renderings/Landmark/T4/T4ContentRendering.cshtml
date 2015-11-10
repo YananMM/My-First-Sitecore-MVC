@@ -1,6 +1,7 @@
 ﻿@using System.Globalization
 @using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @model RenderingModel
@@ -29,7 +30,7 @@
             @{
                 MultilistField shopField = Sitecore.Context.Item.Fields["Brand"];
             }
-            @if ((shopField != null && shopField.TargetIDs != null && shopField.TargetIDs.Length > 0) || !string.IsNullOrEmpty(Sitecore.Context.Item.Fields["Openning Hours"].Value))
+            @if ((shopField != null && shopField.TargetIDs != null && shopField.TargetIDs.Length > 0) || !string.IsNullOrEmpty(Sitecore.Context.Item.Fields["Opening Hours"].Value))
             {
                 @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T4DetailsRendering)
             }
@@ -48,7 +49,7 @@
     {
         <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
             <div class="carousel-heading">
-                <h2>@Html.Sitecore().Field("Glossary Value", SitecoreItems.YouMayAlsoLikeItem)</h2>
+                <h2>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.YouMayAlsoLikeItem))</h2>
             </div>
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">

@@ -1,6 +1,7 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
 @using Sitecore.Collections
+@using Sitecore.Configuration
 @using Sitecore.Data.Items
 @model RenderingModel
 @{
@@ -77,16 +78,16 @@
                     <table>
                         <tbody>
                             <tr>
-                                <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.WhereItem)</th>
+                                <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.WhereItem))</th>
                                 <td id="gd-shop-detail-where"></td>
                             </tr>
                             <tr>
-                                <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.OpenningHoursItem)</th>
+                                <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.OpenningHoursItem))</th>
                                 <td id="gd-shop-detail-wkt">
                                 </td>
                             </tr>
                             <tr>
-                                <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.AddressItem)</th>
+                                <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.AddressItem))</th>
                                 <td id="gd-shop-detail-addr"></td>
                             </tr>
                         </tbody>

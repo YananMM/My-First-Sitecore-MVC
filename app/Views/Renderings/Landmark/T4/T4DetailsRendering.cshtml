@@ -1,6 +1,7 @@
 ﻿@using System.Globalization
 @using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @model RenderingModel
@@ -17,19 +18,19 @@
                     <table>
                         <tbody>
                         <tr>
-                            <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.DateTimeItem)</th>
+                            <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.DateTimeItem))</th>
                             <td>@Html.Sitecore().Field("Openning Hours",shopItem)</td>
                         </tr>
                         <tr>
-                            <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.VenueItem)</th>
-                            <td>@Html.Sitecore().Field("Area", shopItem)</td>
+                            <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.VenueItem))</th>
+                            <td>@Html.Sitecore().Field("Address", shopItem)</td>
                         </tr>
                         <tr>
-                            <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.EnquiryItem)</th>
+                            <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.EnquiryItem))</th>
                             <td>@Html.Sitecore().Field("Contact",shopItem)</td>
                         </tr>
                         <tr>
-                            <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.WebsiteItem)</th>
+                            <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.WebsiteItem))</th>
                             <td>@Html.Sitecore().Field("Official Website",shopItem)</td>
                         </tr>
                         </tbody>
@@ -37,7 +38,7 @@
                 </div>
 
                 <dl class="gd-content-details-tags">
-                    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem)</dt>
+                    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.TagsItem))</dt>
                     <dd>
                         @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.TagsRenderingViewGuid)
                     </dd>

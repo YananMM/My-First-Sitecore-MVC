@@ -1,9 +1,10 @@
 ﻿@model RenderingModel
 @using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 
 @{
-    var footerList = SitecoreItems.FooterNavigationItem.Children.ToList();
+    var footerList = Factory.GetDatabase("web").GetItem(ItemGuids.FooterNavigationItem).Children.ToList();
 }
 <ul>
     @foreach (var item in footerList)

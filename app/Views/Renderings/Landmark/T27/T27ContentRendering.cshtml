@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 @using Sitecore.Data
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
@@ -12,7 +13,7 @@
             <div class="gd-pagetitle-heading">
                 <h2>@Html.Sitecore().Field("Page Title")</h2>
               <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.MonthlyExclusivePage)))" class="gd-link-audio">
-                   @Html.Sitecore().Field("Glossary Value",SitecoreItems.SeeAllExclusiveItem) <span class="icomoon-chevron-small-right"></span>
+                  @Html.Sitecore().Field("Glossary Value",(Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeAllExclusiveItem)) <span class="icomoon-chevron-small-right"></span>
                 </a>
             </div>
         </div>
@@ -129,7 +130,7 @@
 @if (tagsTrees.Count > 0)
 {
     <dl class="gd-content-details-tags">
-              <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem):</dt> 
+              <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.TagsItem)):</dt> 
               <dd>@Html.Sitecore().Rendering(SitecoreRenderingViewGuids.TagsRenderingViewGuid)</dd>
           </dl>
             <hr>
@@ -145,20 +146,20 @@
                 <table>
                     <tbody>
                     <tr>
-                        <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.OpenningHoursItem)</th>
+                        <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.OpenningHoursItem))</th>
                         <td>
                             @Html.Sitecore().Field("Openning Hours", brandItem)
                         </td>
                     </tr>
                     <tr>
-                        <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.ContactItem)</th>
+                        <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ContactItem))</th>
                         <td>@Html.Sitecore().Field("Contact", brandItem)</td>
                     </tr>
                     <tr>
-                        <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.WhereItem) </th>
+                        <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.WhereItem)) </th>
                         <td>
-                            @Html.Sitecore().Field("Area",brandItem)<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)" data-lighttitle="@Html.Sitecore().Field("Description")">
-                                <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.FloorPlanItem)
+                            @Html.Sitecore().Field("Address",brandItem)<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)" data-lighttitle="@Html.Sitecore().Field("Description")">
+                                <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.FloorPlanItem))
                             </a>
                         </td>
                     </tr>

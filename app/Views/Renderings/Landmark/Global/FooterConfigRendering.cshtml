@@ -1,24 +1,28 @@
 ﻿@model RenderingModel
 @using Landmark.Helper
 @using Landmark.Classes
+@using Sitecore.Configuration
 @{
-    string src = Html.Sitecore().ImageFieldSrc("Hongkong Land Image", SitecoreItems.LandmarkConfigItem);
+    var landmarkConfigItem = Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem);
+    var legalPrivacyItem = Factory.GetDatabase("web").GetItem(ItemGuids.LegalPrivacyItem);
+    string src = Html.Sitecore().ImageFieldSrc("Hongkong Land Image", landmarkConfigItem);
 }
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
-            @Html.Sitecore().Field("Footer Content",SitecoreItems.LandmarkConfigItem)
+            @Html.Sitecore().Field("Footer Content",landmarkConfigItem)
             <div class="footer-logo">
-                @Html.Sitecore().Field("Hongkong Land Link", SitecoreItems.LandmarkConfigItem, new {text = "<img data-src='" + src + "' alt='HongKong Land'>"})
+                @Html.Sitecore().Field("Hongkong Land Link", landmarkConfigItem, new {text = "<img data-src='" + src + "' alt='HongKong Land'>"})
             </div>
             <div class="footer-copyright">
-                @Html.Sitecore().Field("Copyright Left Text", SitecoreItems.LandmarkConfigItem)
+                @Html.Sitecore().Field("Copyright Left Text", landmarkConfigItem)
                 @DateTime.Now.Year
-                @Html.Sitecore().Field("Copyright Right Text", SitecoreItems.LandmarkConfigItem)
+                @Html.Sitecore().Field("Copyright Right Text", landmarkConfigItem)
             </div>
         </div>
         <div class="col-sm-3 footer-legal">
-            <p><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(SitecoreItems.LegalPrivacyItem))">@Html.Sitecore().Field("Page Title",SitecoreItems.LegalPrivacyItem)</a>
+            <p><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(legalPrivacyItem))">
+                    @Html.Sitecore().Field("Page Title",legalPrivacyItem)</a>
             </p>
         </div>
     </div>

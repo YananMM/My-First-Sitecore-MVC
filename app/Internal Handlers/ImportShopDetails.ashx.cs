@@ -414,37 +414,38 @@ namespace Landmark.Internal_Handlers
             context.Response.ContentType = "text/plain";
             context.Response.Write("Import Shop Details");
 
-            
+
+            var landmarkConfigItem = Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem);
             var details =
-                new CsvContext().Read<CsvShopDetail>(@SitecoreItems.LandmarkConfigItem.Fields["CSV Folder"].Value + "shop-details.txt", new CsvFileDescription
+                new CsvContext().Read<CsvShopDetail>(landmarkConfigItem.Fields["CSV Folder"].Value + "shop-details.txt", new CsvFileDescription
                 {
                     SeparatorChar = '\t',
                     FirstLineHasColumnNames = false,
                     EnforceCsvColumnAttribute = true
                 }).Skip(1);
             var shopTags =
-            new CsvContext().Read<CsvShopTags>(@SitecoreItems.LandmarkConfigItem.Fields["CSV Folder"].Value + "shop-tags.txt", new CsvFileDescription
+            new CsvContext().Read<CsvShopTags>(landmarkConfigItem.Fields["CSV Folder"].Value + "shop-tags.txt", new CsvFileDescription
             {
                 SeparatorChar = '\t',
                 FirstLineHasColumnNames = false,
                 EnforceCsvColumnAttribute = true
             }).Skip(1).Where(t => !string.IsNullOrEmpty(t.Name)).ToList();
             var dineTags =
-            new CsvContext().Read<CsvDineTags>(@SitecoreItems.LandmarkConfigItem.Fields["CSV Folder"].Value + "dine-tags.txt", new CsvFileDescription
+            new CsvContext().Read<CsvDineTags>(landmarkConfigItem.Fields["CSV Folder"].Value + "dine-tags.txt", new CsvFileDescription
             {
                 SeparatorChar = '\t',
                 FirstLineHasColumnNames = false,
                 EnforceCsvColumnAttribute = true
             }).Skip(1).Where(t => !string.IsNullOrEmpty(t.Name)).ToList();
             var shopXYs =
-               new CsvContext().Read<CsvShopXY>(@SitecoreItems.LandmarkConfigItem.Fields["CSV Folder"].Value + "shop-xy.txt", new CsvFileDescription
+               new CsvContext().Read<CsvShopXY>(landmarkConfigItem.Fields["CSV Folder"].Value + "shop-xy.txt", new CsvFileDescription
                {
                    SeparatorChar = '\t',
                    FirstLineHasColumnNames = false,
                    EnforceCsvColumnAttribute = true
                }).Skip(1).Where(t => !string.IsNullOrEmpty(t.Name) && !string.IsNullOrEmpty(t.Filename)).ToList();
             var artXYs =
-               new CsvContext().Read<CsvArtXY>(@SitecoreItems.LandmarkConfigItem.Fields["CSV Folder"].Value+"artpiece-xy.txt", new CsvFileDescription
+               new CsvContext().Read<CsvArtXY>(landmarkConfigItem.Fields["CSV Folder"].Value+"artpiece-xy.txt", new CsvFileDescription
                {
                    SeparatorChar = '\t',
                    FirstLineHasColumnNames = false,

@@ -3,6 +3,7 @@
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Landmark.Models
+@using Sitecore.Configuration
 @model RenderingModel
 @{
     var experienceTypeFolder = Sitecore.Context.Database.GetItem(ItemGuids.ExperienceTypeFolder);
@@ -23,7 +24,11 @@
     <div class="gd-promotion">
         <div class="gd-promo-filter">
             <ul class="hidden-xs">
-                <li class="active"><a href="javascript:;" data-filter="*">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AllTextItem)</a></li>
+                <li class="active"><a href="javascript:;" data-filter="*">
+                    @{
+                        var allTextItem = Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem);
+                    }
+                    @Html.Sitecore().Field("Glossary Value", allTextItem)</a></li>
                 @if (experienceTypes.Count != 0)
                 {
                     foreach (var item in experienceTypes)
@@ -36,7 +41,7 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <select class="form-control">
-                            <option value="*">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AllTextItem)</option>
+                            <option value="*">@Html.Sitecore().Field("Glossary Value", allTextItem)</option>
                             @if (experienceTypes.Count != 0)
                             {
                                 foreach (var item in experienceTypes)
@@ -83,7 +88,7 @@
             }
         </div>
         <div class="navigation gd-promo-more">
-            <a href="?page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem) +</a>
+            <a href="?page=2">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeMoreItem)) +</a>
         </div>
     </div>
     @Html.Sitecore().Placeholder("also-like")

@@ -60,15 +60,15 @@ namespace Landmark.Service
                                                    select new Location
                                                    {
                                                        title = location.Fields["Brand Title"].Value,
-                                                       area = location.Fields["Area"].Value,
+                                                       area = location.Fields["Address"].Value,
                                                        category = "floor-" + floor.ID.ToShortID(),
                                                        description = "",
                                                        id = location.Fields["Svg Id"].Value,
                                                        pin = "hide",
                                                        x = location.Fields["LocationX"].Value,
                                                        y = location.Fields["LocationY"].Value,
-                                                       workdayhours = location.Fields["Openning Hours"].Value,
-                                                       wherelocation = location.Fields["Area"].Value + "," + floor.Fields["Floor Title"].Value + "," + building.Fields["Building Title"].Value,
+                                                       workdayhours = location.Fields["Opening Hours"].Value,
+                                                       wherelocation = location.Fields["Address"].Value + "," + floor.Fields["Floor Title"].Value + "," + building.Fields["Building Title"].Value,
                                                        address = building.Fields["Building Address"].Value,
                                                        href = LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(location))
                                                    }).ToList()

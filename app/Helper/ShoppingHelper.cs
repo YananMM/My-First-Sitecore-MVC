@@ -11,6 +11,7 @@ using Sitecore.ContentSearch.Utilities;
 using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
+using Sitecore.Data.Query;
 using Sitecore.Web.UI.HtmlControls;
 
 namespace Landmark.Helper
@@ -18,30 +19,35 @@ namespace Landmark.Helper
     public class ShoppingHelper
     {
         private Database _webDb = Factory.GetDatabase("web");
-        private Item _parentItem = Sitecore.Context.Item.Parent;
+        private Item _parentItem = null;
         private bool isShop = true;
         private bool isDining = false;
 
         public ShoppingHelper()
         {
-            if (Sitecore.Context.Item.Paths.Path.StartsWith("/sitecore/content/Home/Landmark/Shopping") ||
-                Sitecore.Context.Item.Paths.Path.StartsWith("/sitecore/content/Home/Landmark/Dining"))
+            if (Sitecore.Context.Item != null)
             {
-                while (!_parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !_parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
+                if (Sitecore.Context.Item.Paths.Path.StartsWith("/sitecore/content/Home/Landmark/Shopping") ||
+                Sitecore.Context.Item.Paths.Path.StartsWith("/sitecore/content/Home/Landmark/Dining"))
                 {
-                    _parentItem = _parentItem.Parent;
-                }
-                if (_parentItem.ID.ToString() == ItemGuids.ShoppingItem)
-                {
-                    isShop = true;
-                    isDining = false;
-                }
-                else
-                {
-                    isDining = true;
-                    isShop = false;
+                    _parentItem = Sitecore.Context.Item.Parent;
+                    while (!_parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !_parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
+                    {
+                        _parentItem = _parentItem.Parent;
+                    }
+                    if (_parentItem.ID.ToString() == ItemGuids.ShoppingItem)
+                    {
+                        isShop = true;
+                        isDining = false;
+                    }
+                    else
+                    {
+                        isDining = true;
+                        isShop = false;
+                    }
                 }
             }
+            
         }
 
         /// <summary>
@@ -257,14 +263,17 @@ namespace Landmark.Helper
             List<Item> brandsByBuildings = new List<Item>();
             foreach (Item brand in brandsByCategory)
             {
-                var buildingsField = (ReferenceField)brand.Fields["Building"];
-                if (buildingsField != null && buildingsField.TargetItem != null)
+                MultilistField floorField = brand.Fields["Floor"];
+                if (floorField != null && floorField.TargetIDs.Any())
                 {
-                    if (buildingsField.TargetItem.ID.Guid == buildingId.Guid)
+                    var floorid = floorField.TargetIDs.First().ToString();
+                    var buildingItem = Factory.GetDatabase("web").GetItem(floorid).Parent;
+                    if (buildingItem.ID.Guid == buildingId.Guid)
                     {
                         brandsByBuildings.Add(brand);
                     }
                 }
+                
             }
             return brandsByBuildings;
         }
@@ -287,14 +296,17 @@ namespace Landmark.Helper
                     Item categoryItem = _webDb.GetItem(categoryId);
                     if (tagsField.TargetIDs.Any(id => _webDb.GetItem(id).DisplayName == categoryItem.DisplayName && _webDb.GetItem(id).Parent.DisplayName == categoryItem.Parent.DisplayName))
                     {
-                        var buildingsField = (ReferenceField)brand.Fields["Building"];
-                        if (buildingsField != null && buildingsField.TargetItem != null)
+                        MultilistField floorField = brand.Fields["Floor"];
+                        if (floorField != null && floorField.TargetIDs.Any())
                         {
-                            if (!buildingsByCategory.Contains(buildingsField.TargetItem))
+                            var floorid = floorField.TargetIDs.First().ToString();
+                            var buildingItem = Factory.GetDatabase("web").GetItem(floorid).Parent;
+                            if (!buildingsByCategory.Contains(buildingItem))
                             {
-                                buildingsByCategory.Add(buildingsField.TargetItem);
+                                buildingsByCategory.Add(buildingItem);
                             }
                         }
+                        
                     }
                 }
             }
@@ -416,22 +428,20 @@ namespace Landmark.Helper
         {
             string floorId = GetFloorId(out floorId).ToString();
             List<Item> allBrands = null;
-            if (isShop)
-                allBrands = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T14ShopDetailsTemplate);
-            if (isDining)
+            if(isShop)
+                allBrands = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
+            if(isDining)
                 allBrands = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningItem, ItemGuids.T11PageTemplate);
-            var brandsByFloor = allBrands.Where(p => p.Fields["Floor"].ToString() == floorId).ToList();
+            var brandsWithFloor = allBrands.Where(p => p.Fields["Floor"] != null);
+            var brandsByFloor = brandsWithFloor.Where(p => p.Fields["Floor"].ToString() == floorId).ToList();
             return brandsByFloor;
         }
 
         public List<Item> GetBrandsByFloor(Item floor)
         {
-            List<Item> allBrands = null;
-            if (isShop)
-                allBrands = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T14ShopDetailsTemplate);
-            if (isDining)
-                allBrands = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningItem, ItemGuids.T11PageTemplate);
-            var brandsByFloor = allBrands.Where(p => p.Fields["Floor"].ToString() == floor.ID.ToString()).ToList();
+            List<Item> allBrands =  LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkHomeItem, ItemGuids.T14ShopDetailsTemplate);
+            var brandsWithFloor = allBrands.Where(p => p.Fields["Floor"] != null);
+            var brandsByFloor = brandsWithFloor.Where(p => p.Fields["Floor"].ToString() == floor.ID.ToString()).ToList();
             return brandsByFloor;
         }
 

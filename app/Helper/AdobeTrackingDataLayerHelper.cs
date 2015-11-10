@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.WebPages;
 using Landmark.Classes;
+using Sitecore.Configuration;
 using Sitecore.Data.Fields;
 using Sitecore.Mvc.Extensions;
 
@@ -25,10 +26,17 @@ namespace Landmark.Helper
         {
             string buildingName = string.Empty;
 
-            var buildingField = (ReferenceField)Sitecore.Context.Item.Fields["Building"];
-            if (buildingField != null && buildingField.TargetItem!=null)
+            MultilistField shopFloorField = Sitecore.Context.Item.Fields["Floor"];
+            if (shopFloorField != null && shopFloorField.TargetIDs.Any())
             {
-                buildingName = buildingField.TargetItem.Fields["Building Title"].Value;
+                var floorid = shopFloorField.TargetIDs.First().ToString();
+                var buildingItem = Factory.GetDatabase("web").GetItem(floorid).Parent;
+                buildingName = buildingItem.Fields["Building Title"].Value;
+            }
+            ReferenceField artpieceFloorField = Sitecore.Context.Item.Fields["Floor and Building"];
+            if (artpieceFloorField != null && artpieceFloorField.TargetItem != null)
+            {
+                buildingName = artpieceFloorField.TargetItem.Fields["Building Title"].Value;
             }
             return buildingName;
         }

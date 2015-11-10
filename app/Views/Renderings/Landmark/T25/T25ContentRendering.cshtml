@@ -3,6 +3,7 @@
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Landmark.Models
+@using Sitecore.Configuration
 @model RenderingModel
 @{
     var tagsTrees = LandmarkHelper.GetTagsTree();
@@ -33,7 +34,7 @@
                                         {
                                             <tr>
                                                 <th>
-                                                    @Html.Sitecore().Field("Glossary Value", SitecoreItems.PhoneItem).ToString().ToUpper()
+                                                    @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.PhoneItem)).ToString().ToUpper()
                                                 </th>
                                                 <td>@Html.Sitecore().Field("Cover Phone")</td>
                                             </tr>
@@ -42,7 +43,7 @@
                                         {
                                             <tr>
                                                 <th>
-                                                    @Html.Sitecore().Field("Glossary Value", SitecoreItems.WebsiteItem).ToString().ToUpper()
+                                                    @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.WebsiteItem)).ToString().ToUpper()
                                                 </th>
                                                 <td>
                                                     <a href="@Html.Sitecore().Field("Cover Website")">@Html.Sitecore().Field("Cover Website")</a>
@@ -53,7 +54,7 @@
                                         {
                                             <tr>
                                                 <th>
-                                                    @Html.Sitecore().Field("Glossary Value", SitecoreItems.AddressItem).ToString().ToUpper()
+                                                    @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.AddressItem)).ToString().ToUpper()
                                                 </th>
                                                 <td>
                                                     @Html.Sitecore().Field("Cover Address")
@@ -69,7 +70,7 @@
                                         @if (tagsTrees !=null && tagsTrees.Count!=0)
                                         {
                                             <tr>
-                                                <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem).ToString().ToUpper()</th>
+                                                <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.TagsItem)).ToString().ToUpper()</th>
                                                 <td>
                                                     @foreach (var item in tagsTrees)
                                                     {<a href="javascript:;">

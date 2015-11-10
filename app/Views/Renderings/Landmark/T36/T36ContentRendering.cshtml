@@ -4,6 +4,7 @@
 @using Sitecore.Data.Items
 @using Landmark.Models
 @using Sitecore.Collections
+@using Sitecore.Configuration
 @using Sitecore.ContentSearch.Utilities
 @using Sitecore.Links
 @model RenderingModel
@@ -79,7 +80,7 @@
                                 <div class="gd-longarticle-fixedlines">
                                     <p>@Html.Sitecore().Field("Article Intro", item.Parent.Parent)</p>
                                     <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(item.Parent.Parent))" type="button" class="gd-button gd-button-reversed">
-                                        @Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverMoreItem)
+                                        @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem))
                                     </a>
                                 </div>
                             </div>
@@ -114,7 +115,8 @@
     {
         <div class="gd-promotion-box-area">
             <div class="gd-promotion-box-heading">
-                <a class="gd-link-brands" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.MagazineCategoryPage)))?type=@item.MagazineCategory.ID&page=1">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem)<span class="icomoon-chevron-small-right"></span></a>
+                <a class="gd-link-brands" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.MagazineCategoryPage)))?type=@item.MagazineCategory.ID&page=1">
+                    @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeMoreItem))<span class="icomoon-chevron-small-right"></span></a>
                 <h3>@item.MagazineCategory.Fields["Tag Name"].ToString().ToUpper()</h3>
             </div>
 

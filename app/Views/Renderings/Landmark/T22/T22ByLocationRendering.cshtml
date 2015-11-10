@@ -6,6 +6,7 @@
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Landmark.Models
+@using Sitecore.Configuration
 @using Sitecore.Links
 @model RenderingModel
 <link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/svgmap/mapplic/mapplic.css">
@@ -75,7 +76,7 @@
         </div>
     </div>
     <div class="navigation gd-promo-more">
-        <a href="?building=@buildings.First().ID.ToString()&page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreGlossaryItem)</a>
+        <a href="?building=@buildings.First().ID.ToString()&page=2">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeMoreGlossaryItem))</a>
     </div>
 </div>
 
