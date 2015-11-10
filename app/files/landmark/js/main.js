@@ -1241,6 +1241,7 @@ $(document).ready(function() {
       $('#mapplic-t22 [data-location]').attr('fill', '#6A6B6B');
       $('#mapplic-t22 [data-location=' + gdAreaId + ']').attr('fill', '#CEA562');
       $(this).addClass('active').siblings().removeClass('active');
+      $('.gd-artlist > h3').text($.trim($('#gdfloorlist [data-location=' + gdAreaId + ']').text().slice(1)));
       updateInfiniteLoad(gdAreaId);
     });
     
@@ -1252,6 +1253,7 @@ $(document).ready(function() {
       }
       $('#gdfloorlist [data-location=' + gdAreaId + ']').addClass('active').siblings().removeClass('active');
       $('#gd-list-locations .gd-controls-m select').val(gdAreaId);
+      $('.gd-artlist > h3').text($.trim($('#gdfloorlist [data-location=' + gdAreaId + ']').text().slice(1)));
       updateInfiniteLoad(gdAreaId);
     });
     
@@ -1620,6 +1622,18 @@ $(document).ready(function() {
         $('body').trigger('scroll');
       }, 200);
     });
+    
+    $('.gd-showcase').swipe( {
+      excludedElements: "button, input, select, textarea, .noSwipe",
+      allowPageScroll:'auto',
+      swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+        if (direction === 'right') {
+          $(event.target).closest('.gd-showcase').find('.gd-showcase-left').click();
+        } else if (direction === 'left') {
+          $(event.target).closest('.gd-showcase').find('.gd-showcase-right').click();
+        }
+      }
+    });
   }
 
 
@@ -1740,9 +1754,15 @@ $(document).ready(function() {
    * Carousel image
    **********************************************************************************************************/
   if ($('.gd-carousel-info').length) {
-    $('.gd-carousel-info .carousel-image').each(function() {
-      $(this).addClass('fireonce').css({'background': 'url(' + $(this).data('bgsrc') + ') center 0 no-repeat' });
-    });
+    if ( isIE8() ) {
+      $('.gd-carousel-info .carousel-image').each(function() {
+        $(this).addClass('carousel-image-ie8').append('<img src=' + $(this).data('bgsrc') + ' />');
+      });
+    } else {
+      $('.gd-carousel-info .carousel-image').each(function() {
+        $(this).addClass('fireonce').css({'background': 'url(' + $(this).data('bgsrc') + ') center 0 no-repeat', 'background-size': 'cover !important' });
+      });
+    }
     
     $('.gd-carousel-info').on('slide.bs.carousel', function(event) {
       $(this).find('.item.active .fireonce').removeClass('fireonce');
