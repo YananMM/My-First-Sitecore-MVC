@@ -1723,7 +1723,7 @@ $(document).ready(function() {
       }
     });
   }
-  if (!$('body').hasClass('t34') && $('#gd-carousel-info .gd-carousel-detail p').length) {
+  if (!$('body').hasClass('t34') && $('#gd-carousel-info').length) {
     var gdBottomTextFZ     = $('#gd-carousel-info .gd-carousel-detail p').eq(0).css('fontSize');
         gdBottomTextFZ     = gdBottomTextFZ.indexOf('px') > 0 ? gdBottomTextFZ.slice(0, -2) : gdBottomTextFZ;
     var gdBottomTextLH     = $('#gd-carousel-info .gd-carousel-detail p').eq(0).css('lineHeight');
