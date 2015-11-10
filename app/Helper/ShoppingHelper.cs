@@ -439,7 +439,7 @@ namespace Landmark.Helper
 
         public List<Item> GetBrandsByFloor(Item floor)
         {
-            List<Item> allBrands =  LandmarkHelper.GetItemsByRootAndTemplate(SitecoreItems.LandmarkHomeItem.ID.ToString(), ItemGuids.T14ShopDetailsTemplate);
+            List<Item> allBrands =  LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkHomeItem, ItemGuids.T14ShopDetailsTemplate);
             var brandsWithFloor = allBrands.Where(p => p.Fields["Floor"] != null);
             var brandsByFloor = brandsWithFloor.Where(p => p.Fields["Floor"].ToString() == floor.ID.ToString()).ToList();
             return brandsByFloor;

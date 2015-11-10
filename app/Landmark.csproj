@@ -154,7 +154,6 @@
     <Compile Include="Classes\ItemGuids.cs" />
     <Compile Include="Classes\Crawlers\LanguageFallbackCrawler.cs" />
     <Compile Include="Classes\Customtation\PreventDuplicates.cs" />
-    <Compile Include="Classes\SitecoreItems.cs" />
     <Compile Include="Classes\SitecoreRenderingViewGuids.cs" />
     <Compile Include="Classes\StringConstants.cs" />
     <Compile Include="Classes\ValidateCode.cs" />
@@ -183,9 +182,6 @@
     </Compile>
     <Compile Include="Internal Handlers\Shop.ashx.cs">
       <DependentUpon>Shop.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Internal Handlers\UpdateShopInfo.ashx.cs">
-      <DependentUpon>UpdateShopInfo.ashx</DependentUpon>
     </Compile>
     <Compile Include="Models\ContactUsFormModel.cs" />
     <Compile Include="Models\EmailSignup.cs">
@@ -666,7 +662,6 @@
     <Content Include="Internal Handlers\ImportShopDetails.ashx" />
     <Content Include="Internal Handlers\Rendering.ashx" />
     <Content Include="Internal Handlers\Shop.ashx" />
-    <Content Include="Internal Handlers\UpdateShopInfo.ashx" />
     <None Include="Properties\PublishProfiles\DEV.pubxml" />
     <None Include="Properties\PublishProfiles\landmark.pubxml" />
     <Content Include="Properties\SlowCheetah\SlowCheetah.Transforms.targets" />

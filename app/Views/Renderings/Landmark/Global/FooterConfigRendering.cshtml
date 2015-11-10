@@ -4,6 +4,7 @@
 @using Sitecore.Configuration
 @{
     var landmarkConfigItem = Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem);
+    var legalPrivacyItem = Factory.GetDatabase("web").GetItem(ItemGuids.LegalPrivacyItem);
     string src = Html.Sitecore().ImageFieldSrc("Hongkong Land Image", landmarkConfigItem);
 }
 <div class="container">
@@ -20,11 +21,7 @@
             </div>
         </div>
         <div class="col-sm-3 footer-legal">
-            <p><a href="
-                  @{
-                      var legalPrivacyItem = Factory.GetDatabase("web").GetItem(ItemGuids.LegalPrivacyItem);
-                  }
-                  @LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(legalPrivacyItem))">
+            <p><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(legalPrivacyItem))">
                     @Html.Sitecore().Field("Page Title",legalPrivacyItem)</a>
             </p>
         </div>

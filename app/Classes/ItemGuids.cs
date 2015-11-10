@@ -125,7 +125,7 @@ namespace Landmark.Classes
         public static readonly string GoToGuidItem = "{6A742FAE-6615-4BE5-A8A9-4471DFDC60E5}";
         public static readonly string SeeAlsoGuidItem = "{E9CD2E74-E53B-4711-9DB6-88D3DEFA14FC}";
         public static readonly string ContactItem = "{D6F1BBEB-2483-44F1-A547-68D6AE8E2A51}";
-        public static readonly string WhereItem = "{C01AD804-C7C9-4791-8CFC-DA35B6D09179}";
+        public static readonly string WhereItem = "{83DC1A79-CB93-4085-A042-95225D5C79FF}";
         public static readonly string AlsoOnThisFloorItem = "{6C2FE71F-0F24-49BD-A345-7C98BDE4B249}";
         public static readonly string YouMayAlsoLikeItem = "{23815E63-F3F5-48BE-BBEA-5CA6D8CCFECA}";
         public static readonly string TagsItem = "{B05FA79E-B0AC-4D78-9175-ADA8305B5B5B}";

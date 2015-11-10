@@ -70,7 +70,7 @@
                                              @{
                                                     var floor = shoppingHelper.GetShopFloor(result.GetItem());
                                                 }
-                                             <span class="icomoon-location2"></span>@Html.Sitecore().Field("Area",result.GetItem()),@floor["Floor Title"],@floor.Parent["Building Title"]
+                                             <span class="icomoon-location2"></span>@Html.Sitecore().Field("Address",result.GetItem()),@floor["Floor Title"],@floor.Parent["Building Title"]
                                          </p>
                                          <p>
                                              <span class="icomoon-phone"></span>@Html.Sitecore().Field("Contact",result.GetItem())
