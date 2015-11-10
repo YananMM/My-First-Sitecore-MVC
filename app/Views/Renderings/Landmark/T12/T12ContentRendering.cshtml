@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Sitecore.Links
@@ -64,7 +65,15 @@
                                 </dl>
                             }
                         <dl>
-                            <dt><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage)))">@Html.Sitecore().Field("Glossary Value",SitecoreItems.SeeAllBrandsGuidItem) (@Html.Sitecore().Field("Glossary Value",SitecoreItems.ListingGuidItem))</a></dt>
+                            <dt><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage)))">
+                                @{
+                                    var seeAllBrandsGuidItem = Factory.GetDatabase("web").GetItem(ItemGuids.SeeAllBrandsGuidItem);
+                                }
+                                @Html.Sitecore().Field("Glossary Value",seeAllBrandsGuidItem) (
+                                @{
+                                    var listingGuidItem = Factory.GetDatabase("web").GetItem(ItemGuids.ListingGuidItem);
+                                }
+                                @Html.Sitecore().Field("Glossary Value",listingGuidItem))</a></dt>
                    
                         </dl>
                         </div>
@@ -122,7 +131,7 @@
                                 </dl>
                             }
                         <dl>
-                            <dt><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage)))">@Html.Sitecore().Field("Glossary Value",SitecoreItems.SeeAllBrandsGuidItem) (@Html.Sitecore().Field("Glossary Value",SitecoreItems.ListingGuidItem))</a></dt>
+                            <dt><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage)))">@Html.Sitecore().Field("Glossary Value",seeAllBrandsGuidItem) (@Html.Sitecore().Field("Glossary Value",listingGuidItem))</a></dt>
                    
                         </dl>
                         </div>

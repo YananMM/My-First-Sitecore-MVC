@@ -1,6 +1,7 @@
 ﻿@using System.Diagnostics.Eventing.Reader
 @using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 @using Sitecore.ContentSearch.Utilities
 @using Sitecore.Data.Items
 @using Sitecore.Links
@@ -16,7 +17,8 @@
                 <h2>@Sitecore.Context.Item["Page Title"].ToUpper()</h2>
             </div>
             <div class="col-lg-4 col-md-4 col-xs-6 link-seeall">
-                <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage)))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeAllBrandsGuidItem)<span class="icomoon-chevron-small-right"></span></a>
+                <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage)))">
+                    @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeAllBrandsGuidItem))<span class="icomoon-chevron-small-right"></span></a>
             </div>
         </div>
     </div>
@@ -28,12 +30,12 @@
                 <ul class="clearfix">
                     @foreach (Item child in LandmarkHelper.GetChildrenPageInNavigation(Sitecore.Context.Item))
                     {
-                        Item byBrands = (from item in child.Children where item.DisplayName.ToUpper() == SitecoreItems.ByBrandsGuidItem.DisplayName.ToUpper() select item).First();
+                        Item byBrands = (from item in child.Children where item.DisplayName.ToUpper() == ((Item) Factory.GetDatabase("web").GetItem(ItemGuids.ByBrandsGuidItem)).DisplayName.ToUpper() select item).First();
                         <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(byBrands))">@child["Page Title"].ToUpper()</a></li>
                     }
                 </ul>
                 <p>
-                    @Html.Sitecore().Field("Glossary Value", SitecoreItems.AlsoInterestedInGuidItem) <br/>
+                    @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.AlsoInterestedInGuidItem)) <br/>
                     @{
                         List<string> relatedCategorieIDs = shoppingHelper.GetRelatedCategoriesIDs();
                         var shoppingItems = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
@@ -75,7 +77,8 @@
 
             <div class="col-lg-4 col-md-4 col-sm-4 menbox">
                 @Html.Sitecore().Placeholder("t11-exclusive")
-                <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.MonthlyExclusivePage)))" class="pull-right menbox-more">@Html.Sitecore().Field("Glossary Value",SitecoreItems.SeeAllExclusive)<span class="icomoon-chevron-small-right"></span></a> </div>
+                <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.MonthlyExclusivePage)))" class="pull-right menbox-more">
+                    @Html.Sitecore().Field("Glossary Value",(Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeAllExclusive))<span class="icomoon-chevron-small-right"></span></a> </div>
             </div>
         </div>
     </div>

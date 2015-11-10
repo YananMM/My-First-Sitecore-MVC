@@ -1,6 +1,7 @@
 ﻿@using System.Diagnostics.Eventing.Reader
 @using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 @using Sitecore.ContentSearch.Utilities
 @using Sitecore.Data.Items
 @model RenderingModel
@@ -41,12 +42,13 @@
 
 
 <div class="shopdetails-brand">
-    <a class="gd-link-brands" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage)))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AllBrandsGuidItem)<span class="icomoon-chevron-small-right"></span></a>
+    <a class="gd-link-brands" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage)))">
+        @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.AllBrandsGuidItem))<span class="icomoon-chevron-small-right"></span></a>
     <div class="container">
         <div class="shopdetails-brand-header">
             <ul>
-                <li><a href="javascript:;" class="active">@Html.Sitecore().Field("Glossary Value", SitecoreItems.YouMayAlsoLikeItem)</a></li>
-                <li><a href="javascript:;">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AlsoOnThisFloorItem)</a></li>
+                <li><a href="javascript:;" class="active">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.YouMayAlsoLikeItem))</a></li>
+                <li><a href="javascript:;">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.AlsoOnThisFloorItem))</a></li>
             </ul>
         </div>
         <div class="shopdetails-brand-body">

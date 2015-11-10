@@ -3,11 +3,13 @@
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Landmark.Models
+@using Sitecore.Configuration
 @model RenderingModel
 @{
     var currentItem = Sitecore.Context.Item;
     var pageTitle = currentItem.DisplayName.ToLower();
     var children = currentItem.Children.ToList();
+    var discoverMoreItem = Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem);
 }
 <div class="container">
     <div class="gd-pagetitle">
@@ -80,7 +82,7 @@
                 <div class="container">
                     <div class="gd-brief">
 
-                        <div class="gd-brief-body gd-col-2 gd-longarticle" data-text-on="@Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverMoreItem) +" data-text-off="@Html.Sitecore().Field("Glossary Value", SitecoreItems.LessItem) -">
+                        <div class="gd-brief-body gd-col-2 gd-longarticle" data-text-on="@Html.Sitecore().Field("Glossary Value", discoverMoreItem) +" data-text-off="@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.LessItem)) -">
                             <p>
                                 @Html.Sitecore().Field("Text Content", item)
                             </p>
@@ -107,7 +109,7 @@
                                 @{
                 LinkField onelink = item.Fields["Link"];
                                 }
-                                <a href="@onelink.Url" target="@LandmarkHelper.GetLinkTarget(item, "Link")" class="gd-button gd-button-transparent" type="button">@Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverMoreItem)</a>
+                                <a href="@onelink.Url" target="@LandmarkHelper.GetLinkTarget(item, "Link")" class="gd-button gd-button-transparent" type="button">@Html.Sitecore().Field("Glossary Value", discoverMoreItem)</a>
                             </div>
                         </div>
                     </div>
@@ -119,7 +121,8 @@
                     <div class="gd-promotion-listarea">
                         <h3>@Html.Sitecore().Field("Title", item)</h3>
                         @Html.Sitecore().Field("Description", item)
-                        <a>@Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverMoreItem)<span class="icomoon-chevron-small-right"></span></a>
+                        <a>
+                            @Html.Sitecore().Field("Glossary Value", discoverMoreItem)<span class="icomoon-chevron-small-right"></span></a>
 
                         <div class="gd-slick-slider-wrapper">
                             <div class="slider variable-width gd-slick-slider">
@@ -186,7 +189,8 @@ i++;
                                         <div class="col-sm-6">
                                             <div class="intro-wrapper">
                                                 <p>
-                                                    @Html.Sitecore().Field("Description", tab)<br><a>@Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverMoreItem)<span class="icomoon-chevron-small-right"></span></a>
+                                                    @Html.Sitecore().Field("Description", tab)<br><a>
+                                                        @Html.Sitecore().Field("Glossary Value", discoverMoreItem)<span class="icomoon-chevron-small-right"></span></a>
                                                 </p>
                                             </div>
                                         </div>

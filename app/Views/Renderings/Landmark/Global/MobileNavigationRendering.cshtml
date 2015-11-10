@@ -1,6 +1,7 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
 @using Sitecore.Collections
+@using Sitecore.Configuration
 @using Sitecore.Data.Items
 @model RenderingModel
 @{
@@ -9,7 +10,7 @@
 }
 
 <ul>
-    @foreach (Item item in LandmarkHelper.GetChildrenPageInNavigation(SitecoreItems.LandmarkHomeItem))
+    @foreach (Item item in LandmarkHelper.GetChildrenPageInNavigation(Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkHomeItem)))
     {
 
         <li><a href="@LandmarkHelper.GetItemUrl(item)">@item.Fields["Page Title"].Value.ToUpper()<span class="sprite-icon-down pull-right"></span></a>
@@ -19,7 +20,8 @@
                 {
                     <ul class="sub-menu">
                         <li>
-                            <a href="#">@Html.Sitecore().Field("Glossary Value", SitecoreItems.ByCategoryGuidItem)<span class="sprite-icon-down pull-right"></span></a>
+                            <a href="#">
+                                @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ByCategoryGuidItem))<span class="sprite-icon-down pull-right"></span></a>
                             <ul class="sub-sub-menu">
                                 @foreach (Item itemcategory in shoppingHelper.GetFirstCategoryItems())
                                 {
@@ -28,13 +30,15 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">@Html.Sitecore().Field("Glossary Value", SitecoreItems.ByBrandsGuidItem)<span class="sprite-icon-down pull-right"></span></a>
+                            <a href="#">
+                                @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ByBrandsGuidItem))<span class="sprite-icon-down pull-right"></span></a>
                             <ul class="sub-sub-menu menu-brands">
                                 @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.ByBrandsRenderingViewGuid)
                             </ul>
                         </li>
                         <li>
-                            <a href="#">@Html.Sitecore().Field("Glossary Value", SitecoreItems.ByBuidingsGuidItem)<span class="sprite-icon-down pull-right"></span></a>
+                            <a href="#">
+                                @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ByBuidingsGuidItem))<span class="sprite-icon-down pull-right"></span></a>
                             @{
                                 List<Item> buidings = LandmarkHelper.GetBuildings();
                                 Item allByBuildings = Sitecore.Context.Database.GetItem(ItemGuids.AllByBuildingsPage);
@@ -66,8 +70,8 @@
 </ul>
 
 <div class="mobile-share">
-          @Html.Sitecore().Field("Glossary Value",SitecoreItems.ShareItem)
-            <a href="" class="icomoon-facebook"></a>
+    @Html.Sitecore().Field("Glossary Value",(Item) Factory.GetDatabase("web").GetItem(ItemGuids.ShareItem))
+    <a href="" class="icomoon-facebook"></a>
             <a href="" class="icomoon-twitter"></a>
             <a href="" class="icomoon-sina-weibo"></a>
         </div>

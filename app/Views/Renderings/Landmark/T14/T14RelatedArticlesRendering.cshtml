@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 @{
     ShoppingHelper helper = new ShoppingHelper();
     var relatedItems = helper.GetRelatedArticles(Sitecore.Context.Item);
@@ -10,7 +11,7 @@
 }
 <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
     <div class="carousel-heading">
-        <h3>@Html.Sitecore().Field("Glossary Value", SitecoreItems.RelatedArticleItem)</h3>
+        <h3>@((object) Html.Sitecore().Field("Glossary Value", Factory.GetDatabase("web").GetItem(ItemGuids.RelatedArticleItem)))</h3>
     </div>
 
     <!-- Wrapper for slides -->
@@ -38,7 +39,7 @@ if (videoItem != null)
                             <div class="gd-carousel-detail">
                                 <h4>@item.Item.Fields["Article Headline"]</h4>
                                 <p>@Html.Sitecore().Field("Article Intro", item.Item)</p>
-                                <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.Item))" class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Glossary Value",SitecoreItems.DiscoverMoreItem)</a>
+                                <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.Item))" class="gd-button gd-button-white" type="button">@((object) Html.Sitecore().Field("Glossary Value",Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem)))</a>
                             </div>
                         </div>
                     </div>

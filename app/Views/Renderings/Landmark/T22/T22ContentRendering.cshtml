@@ -4,6 +4,7 @@
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Landmark.Models
+@using Sitecore.Configuration
 @model RenderingModel
 @{
     var current = Sitecore.Context.Item;
@@ -13,15 +14,23 @@
         <div class="gd-pagetitle-heading">
             <h2>@Html.Sitecore().Field("Cover Title", current.Parent)</h2>
             <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkArtTourItem)))#gd-audio-guide" class="gd-link-audio">
-                <span class="icomoon-sound-alt"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.MobileAudioGuideItem) <span class="icomoon-chevron-small-right"></span>
+                <span class="icomoon-sound-alt"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.MobileAudioGuideItem)) <span class="icomoon-chevron-small-right"></span>
             </a>
         </div>
 
         <div class="gd-pagetitle-menu hidden-xs">
-            @Html.Sitecore().Field("Glossary Value", SitecoreItems.ViewByItem) 
+
+            @{
+                var viewByItem = Factory.GetDatabase("web").GetItem(ItemGuids.ViewByItem);
+            }
+            @Html.Sitecore().Field("Glossary Value", viewByItem)
             <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage)))" @if (Html.Sitecore().CurrentItem.ID.ToString() == ItemGuids.ByArtistPage) { <text>
                                                                                   class="active" </text>            }>
-                @Html.Sitecore().Field("Glossary Value", SitecoreItems.ArtistItem)
+
+                @{
+                    var artistItem = Factory.GetDatabase("web").GetItem(ItemGuids.ArtistItem);
+                }
+                @Html.Sitecore().Field("Glossary Value", artistItem)
             </a>
             <span class="gd-pagetitle-menu-gap">|</span>  
             <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByLocationPage)))" @if (Html.Sitecore().CurrentItem.ID.ToString() == ItemGuids.ByLocationPage)
@@ -29,21 +38,25 @@
                                                                                                                <text>
                                                                                                                    class="active" </text>
                                                                                                            }>
-                @Html.Sitecore().Field("Glossary Value", SitecoreItems.LocationItem)
+
+                @{
+                    var locationItem = Factory.GetDatabase("web").GetItem(ItemGuids.LocationItem);
+                }
+                @Html.Sitecore().Field("Glossary Value", locationItem)
             </a>
         </div>
         <div class="gd-controls-m visible-xs">
                                                                 <div class="row">
                                                                     <div class="col-xs-3">
-                                                                        <p class="form-control-static">@Html.Sitecore().Field("Glossary Value", SitecoreItems.ViewByItem)</p>
+                                                                        <p class="form-control-static">@Html.Sitecore().Field("Glossary Value", viewByItem)</p>
                                                                     </div>
                                                                     <div class="col-xs-9">
                                                                         <select class="form-control">
-                                                                            <option value="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByLocationPage)))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.LocationItem)</option>
+                                                                            <option value="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByLocationPage)))">@Html.Sitecore().Field("Glossary Value", locationItem)</option>
                                                                             <option value="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage)))" @if (Html.Sitecore().CurrentItem.ID.ToString() == ItemGuids.ByArtistPage) { <text>
                                                                                     selected="selected" </text>  }>
-                                                                                @Html.Sitecore().Field("Glossary Value", SitecoreItems.ArtistItem)
-                                                                                </option>
+                                                                                @Html.Sitecore().Field("Glossary Value", artistItem)
+                                                                            </option>
 
                                                                         </select>
                                                                     </div>

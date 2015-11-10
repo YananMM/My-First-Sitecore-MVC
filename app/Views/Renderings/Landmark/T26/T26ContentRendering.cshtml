@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 @using Sitecore.Data
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
@@ -22,7 +23,11 @@
     <div class="gd-promotion">
         <div class="gd-promo-filter hidden-xs">
             <div class="gd-promo-brands">
-                <a class="btn gd-promo-brands-btn">@Html.Sitecore().Field("Glossary Value", SitecoreItems.FindByBrandItem)</a>
+                <a class="btn gd-promo-brands-btn">
+                    @{
+                        var findByBrandItem = Factory.GetDatabase("web").GetItem(ItemGuids.FindByBrandItem);
+                    }
+                    @Html.Sitecore().Field("Glossary Value", findByBrandItem)</a>
                 <div class="gd-promo-brands-area">
                     <ul>
                         @for (int i = 0; i < alphabetsStrings.Length; i++)
@@ -38,11 +43,15 @@
                         }
 
                     </ul>
-                    <a href="javascript:;" data-filter="*" class="gd-promo-brands-all">@Html.Sitecore().Field("Glossary Value", SitecoreItems.ShowAllItem)</a>
+                    <a href="javascript:;" data-filter="*" class="gd-promo-brands-all">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ShowAllItem))</a>
                 </div>
             </div>
             <ul>
-                <li class="active"><a href="javascript:;" data-filter="*">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AllTextItem)</a></li>
+                <li class="active"><a href="javascript:;" data-filter="*">
+                    @{
+                        var allTextItem = Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem);
+                    }
+                    @Html.Sitecore().Field("Glossary Value", allTextItem)</a></li>
                 @foreach (var category in inspirationHelper.GetCategories())
                 {
                     <li><a href="javascript:;" data-filter="gdf-@category.DisplayName.ToLower().Replace(" ","")">@Html.Sitecore().Field("Tag Name", category)</a></li>
@@ -53,11 +62,11 @@
         <div class="gd-controls-m visible-xs">
             <div class="row">
                 <div class="col-xs-4">
-                    <p class="form-control-static">@Html.Sitecore().Field("Glossary Value", SitecoreItems.FilterByItem)</p>
+                    <p class="form-control-static">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.FilterByItem))</p>
                 </div>
                 <div class="col-xs-8">
                     <select class="form-control">
-                        <option value="*">@Html.Sitecore().Field("Glossary Value", SitecoreItems.AllTextItem)</option>
+                        <option value="*">@Html.Sitecore().Field("Glossary Value", allTextItem)</option>
                         @foreach (var category in inspirationHelper.GetCategories())
                         {
                             <option value="gdf-@category.DisplayName.ToLower().Replace(" ","")">@Html.Sitecore().Field("Tag Name", category).ToString().ToUpper()</option>
@@ -70,7 +79,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <select class="form-control">
-                        <option value="*">@Html.Sitecore().Field("Glossary Value", SitecoreItems.FindByBrandItem)</option>
+                        <option value="*">@Html.Sitecore().Field("Glossary Value", findByBrandItem)</option>
                         @for (int i = 0; i < alphabetsStrings.Length; i++)
                         {
                             if (inspirationHelper.IfBrandsAlphabetValid(alphabetsStrings[i]))
@@ -124,10 +133,10 @@
                         <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(detailedarticle))">
                             <h4>@Html.Sitecore().Field("Article Headline", detailedarticle)</h4>
                         </a>
-                        <a class="gd-button gd-button-white" href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(detailedarticle))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverMoreItem)</a>
+                        <a class="gd-button gd-button-white" href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(detailedarticle))">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem))</a>
                         <div class="gd-promo-share">
                             <div class="gd-promo-share-handle">
-                                <span class="icomoon-share"></span>@Html.Sitecore().Field("Glossary Value", SitecoreItems.ShareItem)
+                                <span class="icomoon-share"></span>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ShareItem))
                             </div>
                             <div class="gd-promo-sharebox">
                                 <a href="" class="icomoon-facebook"></a>
@@ -160,6 +169,6 @@
 </div>
             }
         </div>
-        <div class="navigation gd-promo-more"><a href="?page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem) +</a></div>
+        <div class="navigation gd-promo-more"><a href="?page=2">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeMoreItem)) +</a></div>
     </div>
 </div>

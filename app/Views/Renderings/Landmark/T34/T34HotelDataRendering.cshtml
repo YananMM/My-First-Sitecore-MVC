@@ -3,6 +3,7 @@
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Landmark.Models
+@using Sitecore.Configuration
 @model RenderingModel
 @{
     var currentItem = Sitecore.Context.Item;
@@ -14,25 +15,25 @@
             @if (!string.IsNullOrEmpty(currentItem.Fields["Hotel Phone"].ToString()))
             {
                 <tr>
-                    <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.PhoneItem).ToString().ToUpper()</th>
+                    <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.PhoneItem)).ToString().ToUpper()</th>
                     <td>@Html.Sitecore().Field("Hotel Phone")</td>
                 </tr>
             }
             @if (!string.IsNullOrEmpty(currentItem.Fields["Hotel Email"].ToString()))
             {
                 <tr>
-                    <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.EmailItem).ToString().ToUpper()</th>
+                    <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.EmailItem)).ToString().ToUpper()</th>
                     <td>@Html.Sitecore().Field("Hotel Email")</td>
                 </tr>
             }
             @if (!string.IsNullOrEmpty(currentItem.Fields["Hotel Address"].ToString()))
             {
                 <tr>
-                    <th>@Html.Sitecore().Field("Glossary Value", SitecoreItems.AddressItem).ToString().ToUpper()</th>
+                    <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.AddressItem)).ToString().ToUpper()</th>
                     <td>
                         @Html.Sitecore().Field("Hotel Address")<br>
                         <a href="javascript:;" class="gd-link-map gd-lightbox-link gd-lightbox-map" data-lat="22.2805507" data-lng="114.1579662" data-lighttitle="@Html.Sitecore().Field("Hotel Title")">
-                            <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.ViewMapItem).ToString().ToUpper()
+                            <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ViewMapItem)).ToString().ToUpper()
                         </a>
                     </td>
                 </tr>

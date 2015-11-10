@@ -3,6 +3,7 @@
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Landmark.Models
+@using Sitecore.Configuration
 @model RenderingModel
 @{
     var currentItem = Sitecore.Context.Item;
@@ -52,6 +53,7 @@
                 }
                 else
                 {
+                    var tagsItem = Factory.GetDatabase("web").GetItem(ItemGuids.TagsItem);
                     if (item.TemplateName == "T23 Cover Object")
                     {
                         var smaller = (CheckboxField)item.Fields["Smaller Image"];
@@ -64,7 +66,7 @@
                                     @if (i == children.Count)
                                     {
                                         <dl class="gd-content-details-tags">
-                                            <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem):</dt>
+                                            <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", tagsItem):</dt>
                                             <dd>
                                                 @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.TagsRenderingViewGuid)
                                             </dd>
@@ -82,7 +84,7 @@
                             if (i == children.Count)
                             {
                                 <dl class="gd-content-details-tags">
-                                    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem):</dt>
+                                    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", tagsItem):</dt>
                                     <dd>
                                         @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.TagsRenderingViewGuid)
                                     </dd>
@@ -103,7 +105,7 @@
                                     @if (i == children.Count)
                                     {
                                         <dl class="gd-content-details-tags">
-                                            <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem):</dt>
+                                            <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", tagsItem):</dt>
                                             <dd>
                                                 @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.TagsRenderingViewGuid)
                                             </dd>
@@ -121,7 +123,7 @@
                             if (i == children.Count)
                             {
                                 <dl class="gd-content-details-tags">
-                                    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem):</dt>
+                                    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", tagsItem):</dt>
                                     <dd>
                                         @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.TagsRenderingViewGuid)
                                     </dd>

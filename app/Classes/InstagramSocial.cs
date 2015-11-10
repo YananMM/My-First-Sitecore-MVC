@@ -7,6 +7,8 @@ using System.Net;
 using System.Text;
 using System.Web;
 using Newtonsoft.Json;
+using Sitecore.Configuration;
+using Sitecore.Data.Items;
 
 namespace Landmark.Classes
 {
@@ -16,7 +18,7 @@ namespace Landmark.Classes
         {
             Sitecore.Diagnostics.Log.Info("Update Instagram Feeds: " + userId, this);
 
-            string clientId = SitecoreItems.LandmarkConfigItem.Fields["Client Id"].Value;
+            string clientId = Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem).Fields["Client Id"].Value;
 
             if (string.IsNullOrEmpty(userId))
                 return new List<SocialImage>();

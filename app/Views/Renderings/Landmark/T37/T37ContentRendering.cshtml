@@ -113,6 +113,6 @@
         </div>
     </div>
     <div class="gd-promo-more">
-        <a href="?type=@Request["type"]&page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem) +</a>
+        <a href="?type=@Request["type"]&page=2">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeMoreItem)) +</a>
     </div>
 </div>

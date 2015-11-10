@@ -1,14 +1,18 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 @using Sitecore.Data.Items
 <!-- Social App Ids -->
 <script>
     // sitecore integration: these values should be managed in CMS as global settings
     var gdSettings = {
-        fbAppId:' @SitecoreItems.LandmarkConfigItem.Fields["Facebook Application App Key"]',
-        wbAppKey: '@SitecoreItems.LandmarkConfigItem.Fields["Weibo Application API Key"]',
-        ShortVersionContentNumberOfLines: @SitecoreItems.LandmarkConfigItem.Fields["Short Version Content Number Of Lines"],
-        LongVersionContentNumberOfLines: @SitecoreItems.LandmarkConfigItem.Fields["Long Version Content Number Of Lines"]
+        fbAppId:'@{
+            var landmarkConfigItem = Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem);
+        }
+        @landmarkConfigItem.Fields["Facebook Application App Key"].Value',
+        wbAppKey: '@landmarkConfigItem.Fields["Weibo Application API Key"]',
+        ShortVersionContentNumberOfLines: @landmarkConfigItem.Fields["Short Version Content Number Of Lines"],
+        LongVersionContentNumberOfLines: @landmarkConfigItem.Fields["Long Version Content Number Of Lines"]
     };
 </script>
 <!-- Social App Ids End -->
@@ -71,4 +75,4 @@
     };
 </script>
 <script type="text/javascript">_satellite.pageBottom();</script>
-@Html.Sitecore().Field("Adobe Body Loader File",SitecoreItems.LandmarkConfigItem)
+@Html.Sitecore().Field("Adobe Body Loader File",landmarkConfigItem)

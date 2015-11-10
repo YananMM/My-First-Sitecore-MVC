@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 @using Sitecore.Links
 @model RenderingModel
 @{
@@ -14,7 +15,7 @@
         <div class="menbox-text">
             <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Model.Item))" class="menbox-title">
                 <h3>@Html.Sitecore().Field("Article Headline", Model.Item)</h3></a>
-            <p>@Html.Sitecore().Field("Article Intro", Model.Item) <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Model.Item))">@Html.Sitecore().Field("Glossary Value",SitecoreItems.ReadMoreItem)</a>
+            <p>@Html.Sitecore().Field("Article Intro", Model.Item) <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Model.Item))">@((object) Html.Sitecore().Field("Glossary Value",Factory.GetDatabase("web").GetItem(ItemGuids.ReadMoreItem)))</a>
             </p>
         </div>
 </div>

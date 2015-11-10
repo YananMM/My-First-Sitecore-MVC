@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 @using Sitecore.Data.Items
 @model RenderingModel
 
@@ -7,7 +8,7 @@
     <table>
         <tbody>
             <tr>
-                <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem):</th>
+                <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.TagsItem)):</th>
                 <td>
                     @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.TagsRenderingViewGuid)
                 </td>

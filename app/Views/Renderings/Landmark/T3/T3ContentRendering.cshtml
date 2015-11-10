@@ -1,6 +1,7 @@
 ﻿@using System.Globalization
 @using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Sitecore.Links
@@ -35,14 +36,14 @@
                         <p>@LandmarkHelper.ToValidDateTime(date).ToString("MMM dd,yyyy", CultureInfo.InvariantCulture)</p>
                     }
                     <p>@Html.Sitecore().Field("Article Content", latestItem)</p>
-                    <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(latestItem))" class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Glossary Value", SitecoreItems.DiscoverMoreItem)</a>
+                    <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(latestItem))" class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem))</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="gd-promotion">
         <div class="gd-promo-heading">
-            <h3>@Html.Sitecore().Field("Glossary Value", SitecoreItems.AlsoHappenInLandmarkItem)</h3>
+            <h3>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.AlsoHappenInLandmarkItem))</h3>
         </div>
         @{
             var page = Request["page"] ?? "1";
@@ -75,7 +76,7 @@
     @if (helper.GetTheRestArticles((Int32.Parse(page)+1).ToString()).Count > 0)
     {
         <div class="navigation gd-promo-more">
-            <a href="?page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreGlossaryItem)</a>
+            <a href="?page=2">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeMoreGlossaryItem))</a>
         </div>
     }
 </div>

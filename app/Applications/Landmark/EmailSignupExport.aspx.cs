@@ -9,6 +9,8 @@ using System.Web.UI.WebControls;
 using Landmark.Classes;
 using Landmark.Models;
 using LINQtoCSV;
+using Sitecore.Configuration;
+using Sitecore.Data.Items;
 using Sitecore.Web;
 
 namespace Landmark.layouts.Landmark
@@ -50,7 +52,7 @@ namespace Landmark.layouts.Landmark
                 CsvContext cc = new CsvContext();
                 cc.Write(
                     signups,
-                    @SitecoreItems.LandmarkConfigItem.Fields["CSV Folder"].Value + "signups" + toDate.SelectedDate.Date.ToString("yyyyMMdd") + "-" + fromDate.SelectedDate.Date.ToString("yyyyMMdd") + ".csv",
+                    Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem).Fields["CSV Folder"].Value + "signups" + toDate.SelectedDate.Date.ToString("yyyyMMdd") + "-" + fromDate.SelectedDate.Date.ToString("yyyyMMdd") + ".csv",
                     outputFileDescription);
             }
         }
