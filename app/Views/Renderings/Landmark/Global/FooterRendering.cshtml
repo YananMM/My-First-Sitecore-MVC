@@ -1,4 +1,5 @@
 ﻿@using Landmark.Classes
+@using Sitecore.Configuration
 @model RenderingModel
 <div class="back-top clearfix"><a href="javascript:;" class="back-to-top">TOP</a></div>
 <footer class="site-footer">
@@ -21,8 +22,12 @@
 
 <div id="portrait_only" class="portrait_only hidden">
     <div class="content">
-        <p>@Html.Sitecore().Field("Portrait Only Text", SitecoreItems.LandmarkConfigItem)</p>
-        @Html.Sitecore().Field("Portrait Only Image", SitecoreItems.LandmarkConfigItem,new{@class="rotate_icon",width="100",height="100"})
+        <p>
+            @{
+                var landmarkConfigItem = Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem);
+            }
+            @Html.Sitecore().Field("Portrait Only Text", landmarkConfigItem)</p>
+        @Html.Sitecore().Field("Portrait Only Image", landmarkConfigItem,new{@class="rotate_icon",width="100",height="100"})
     </div>
 </div>
 

@@ -1,8 +1,10 @@
-﻿@using Landmark.Classes
+﻿@using System.Globalization
+@using Landmark.Classes
 @using Landmark.Helper
+@using Landmark.Models
+@using Sitecore.Configuration
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
-@using Landmark.Models
 @model RenderingModel
 @{
     var currentItem = Sitecore.Context.Item;
@@ -43,7 +45,7 @@
     }
 }
 <dl class="gd-content-details-tags">
-    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.TagsItem):</dt>
+    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.TagsItem)):</dt>
     <dd>
         @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.TagsRenderingViewGuid)
     </dd>

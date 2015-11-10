@@ -1,7 +1,8 @@
 ﻿@using Landmark.Classes
+@using Sitecore.Configuration
 @{
     var instagramSocial = new InstagramSocial();
-    var images = instagramSocial.GetFromInstagram(SitecoreItems.LandmarkConfigItem.Fields["User Id"].Value, deep: true);
+    var images = instagramSocial.GetFromInstagram(Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem).Fields["User Id"].Value, deep: true);
 }
 <section class="panel-area">
 <section class="instagram-area">

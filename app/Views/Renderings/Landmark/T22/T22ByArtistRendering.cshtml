@@ -4,6 +4,7 @@
 @using Sitecore.Data.Items
 @using Sitecore.Links
 @using Landmark.Models
+@using Sitecore.Configuration
 @model RenderingModel
 @{
     ArtTourHelper helper = new ArtTourHelper();
@@ -86,7 +87,7 @@ else
                             </div>
                             @if (pieces.Count > 2)
                             {
-                                <a href="?artist=@artist.ID.ToString() #more-contents" class="gd-artlist-more" data-toggletext="@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeLessGlossaryItem) -">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreItem) + </a>
+                                <a href="?artist=@artist.ID.ToString() #more-contents" class="gd-artlist-more" data-toggletext="@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeLessGlossaryItem)) -">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeMoreItem)) + </a>
                             }
                         </div>
                     </div>
@@ -95,7 +96,7 @@ else
             <div class="col-sm-6"></div>
         </div>
         <div class="navigation gd-promo-more">
-            <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Item))?page=2">@Html.Sitecore().Field("Glossary Value", SitecoreItems.SeeMoreGlossaryItem)</a>
+            <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Item))?page=2">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeMoreGlossaryItem))</a>
         </div>
     </div>
 }

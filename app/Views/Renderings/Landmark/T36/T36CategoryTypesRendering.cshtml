@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 @model RenderingModel
 @{
     MagezineHelper helper = new MagezineHelper();
@@ -9,7 +10,12 @@
 }
 
 <div class="gd-pagetitle-menu hidden-xs">
-    <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage)))" @if (currentItem.ID.ToString() == ItemGuids.LandmarkMaganizePage) { <text> class="active" </text>       }>@Html.Sitecore().Field("Glossary Value", SitecoreItems.MagezineItem) </a>
+    <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage)))" @if (currentItem.ID.ToString() == ItemGuids.LandmarkMaganizePage) { <text> class="active" </text>       }>
+        @{
+            var magezineItem = Factory.GetDatabase("web").GetItem(ItemGuids.MagezineItem);
+        }
+        @Html.Sitecore().Field("Glossary Value", magezineItem)
+    </a>
     @foreach (var item in magazineCategories)
     {
         <span class="gd-pagetitle-menu-gap">|</span>
@@ -19,7 +25,7 @@
 
 <div class="gd-controls-m visible-xs">
     <select class="form-control">
-        <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage)))">@Html.Sitecore().Field("Glossary Value", SitecoreItems.MagezineItem)</option>
+        <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage)))">@Html.Sitecore().Field("Glossary Value", magezineItem)</option>
         @foreach (var item in magazineCategories)
         {
             <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage))?type=@item.ID&page=1" @if (Request["type"] == item.ID.ToString() || ((currentItem.Fields["Magazine Category"] != null) ? currentItem.Fields["Magazine Category"].ToString().Contains(item.ID.ToString()) : false)) { <text> selected="selected" </text>       }>@item.Fields["Tag Name"].ToString().ToUpper()</option>

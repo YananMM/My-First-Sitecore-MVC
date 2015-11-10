@@ -28,9 +28,9 @@ namespace Landmark.Helper
     {
         private static Database _webDb = Factory.GetDatabase("web");
 
-        public static int NumberInOnePage = SitecoreItems.LandmarkConfigItem.Fields["Page"] == null
+        public static int NumberInOnePage = Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem).Fields["Page"] == null
                 ? 10
-                : Int32.Parse(SitecoreItems.LandmarkConfigItem.Fields["Page"].Value);
+                : Int32.Parse(Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem).Fields["Page"].Value);
 
         public static bool HasValidVersion()
         {

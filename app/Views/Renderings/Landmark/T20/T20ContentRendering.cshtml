@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Sitecore.Links
@@ -20,7 +21,7 @@
                                 @Html.Sitecore().Field("Button Text", Sitecore.Context.Item)
                             </a>
                             <a href="#gd-audio-guide" class="gd-link-audio">
-                                <span class="icomoon-sound-alt"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.MobileAudioGuideItem) <span class="icomoon-chevron-small-right"></span>
+                                <span class="icomoon-sound-alt"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.MobileAudioGuideItem)) <span class="icomoon-chevron-small-right"></span>
                             </a>
                         </div>
                     </div>

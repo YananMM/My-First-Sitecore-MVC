@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @model RenderingModel
@@ -69,7 +70,7 @@
                         }
                     </div>
                     <div class="gd-artplace-details row">
-                        <div class="col-sm-3 col-md-2  gd-artplace-location">@Html.Sitecore().Field("Glossary Value", SitecoreItems.LocationItem)</div>
+                        <div class="col-sm-3 col-md-2  gd-artplace-location">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.LocationItem))</div>
                         @{
                             var floor = helper.GetFloor(Sitecore.Context.Item);
                             if (floor != null)
@@ -83,7 +84,7 @@
                                 text = lightBox + " " + floor.Fields["Floor Title"] + " of " + floor.Parent.Fields["Building Title"];
                                     }
                                     <a href="javascript:;" class="gd-link-map gd-lightbox-link gd-lightbox-pin" data-pin="@Html.Sitecore().ImageFieldSrc("LocationX", Sitecore.Context.Item),@Html.Sitecore().ImageFieldSrc("LocationY", Sitecore.Context.Item)" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)" data-lighttitle="@text">
-                                        <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.FloorPlanItem)
+                                        <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.FloorPlanItem))
                                     </a>
                                 </div>
                             }

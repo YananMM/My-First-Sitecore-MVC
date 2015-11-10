@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
 @using Sitecore.Data.Items
 @using Sitecore.Data.Managers
 @using Sitecore.Globalization
@@ -31,11 +32,16 @@
                     <a href="" class="icomoon-sina-weibo"></a>
                 </div>
             </div>
+            @Sitecore.Context.Language.ToString()
+
+            @{
+                var languageFolderGuidItem = Factory.GetDatabase("web").GetItem(ItemGuids.LanguageFolderGuidItem);
+            }
             @foreach (var lan in languages)
             {
-                if (SitecoreItems.LanguageFolderGuidItem != null && SitecoreItems.LanguageFolderGuidItem.Children.Count != 0)
+                if (languageFolderGuidItem != null && languageFolderGuidItem.Children.Count != 0)
                 {
-                    foreach (Item languageText in SitecoreItems.LanguageFolderGuidItem.Children)
+                    foreach (Item languageText in languageFolderGuidItem.Children)
                     {
                         if (languageText.DisplayName.ToLower() == lan.Name.ToLower())
                         {
@@ -59,9 +65,13 @@
                         <a class="sb-search-clear icomoon-circle-with-cross" href="javascript:;"></a>
                         <span class="icomoon-search"></span>
                     }*@
+
+                @{
+                    var searchPlaceHolderItem = Factory.GetDatabase("web").GetItem(ItemGuids.SearchPlaceHolderItem);
+                }
                 @using (Html.BeginForm("SearchContent", "Search"))
                 {
-                    <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", SitecoreItems.SearchPlaceHolderItem)" class="sb-search-input form-control">
+                    <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", searchPlaceHolderItem)" class="sb-search-input form-control">
                     <input class="sb-search-submit" type="submit" value="">
                     <a class="sb-search-clear icomoon-circle-with-cross" href="javascript:;"></a>
                     <span class="icomoon-search"></span>
@@ -82,7 +92,7 @@
                 @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
                 {
                     @Html.Sitecore().FormHandler("Search", "SearchContent")
-                    <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", SitecoreItems.SearchPlaceHolderItem)" class="sb-search-input form-control">
+                    <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", searchPlaceHolderItem)" class="sb-search-input form-control">
                     <input class="sb-search-submit" type="submit" value="">
                     <a class="sb-search-clear icomoon-circle-with-cross" href="javascript:;"></a>
                     <span class="icomoon-search"></span>
@@ -96,9 +106,9 @@
                     <div class="language">
                         @foreach (var lan in languages)
                         {
-                            if (SitecoreItems.LanguageFolderGuidItem != null && SitecoreItems.LanguageFolderGuidItem.Children.Count != 0)
+                            if (languageFolderGuidItem != null && languageFolderGuidItem.Children.Count != 0)
                             {
-                                foreach (Item languageText in SitecoreItems.LanguageFolderGuidItem.Children)
+                                foreach (Item languageText in languageFolderGuidItem.Children)
                                 {
                                     if (languageText.DisplayName == lan.Name)
                                     {
@@ -116,8 +126,8 @@
                 </div>
             </div>
             <h1>
-                <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(SitecoreItems.LandmarkHomeItem))">
-                    <img class="responsive-logo" src="@Html.Sitecore().ImageFieldSrc("Landmark Logo",SitecoreItems.LandmarkConfigItem)" alt="landmark">
+                <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkHomeItem)))">
+                    <img class="responsive-logo" src="@Html.Sitecore().ImageFieldSrc("Landmark Logo",Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem))" alt="landmark">
                 </a>
             </h1>
         </nav>

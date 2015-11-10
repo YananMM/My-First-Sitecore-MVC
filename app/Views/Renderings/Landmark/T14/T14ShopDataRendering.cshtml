@@ -21,7 +21,7 @@
                 {
                     <tr>
                         <th>
-                            @Html.Sitecore().Field("Glossary Value", SitecoreItems.OpenningHoursItem).ToString().ToUpper()
+                            @Html.Sitecore().Field("Glossary Value", Factory.GetDatabase("web").GetItem(ItemGuids.OpenningHoursItem)).ToString().ToUpper()
                         </th>
                         <td>
                             @Html.Sitecore().Field("Opening Hours")
@@ -35,7 +35,7 @@
                 {
                     <tr>
                         <th>
-                            @Html.Sitecore().Field("Glossary Value", SitecoreItems.ContactItem).ToString().ToUpper()
+                            @Html.Sitecore().Field("Glossary Value", Factory.GetDatabase("web").GetItem(ItemGuids.ContactItem)).ToString().ToUpper()
                         </th>
                         <td>@Html.Sitecore().Field("Contact")</td>
                     </tr>
@@ -49,11 +49,11 @@
                 {
                     <tr>
                         <th>
-                            @Html.Sitecore().Field("Glossary Value", SitecoreItems.WhereItem).ToString().ToUpper()
+                            @Html.Sitecore().Field("Glossary Value", Factory.GetDatabase("web").GetItem(ItemGuids.WhereItem)).ToString().ToUpper()
                         </th>
                         <td>
                             @fullWhere<br><a href="#" class="gd-link-map gd-lightbox-link gd-lightbox-pin" data-pin="@Html.Sitecore().ImageFieldSrc("LocationX", Sitecore.Context.Item),@Html.Sitecore().ImageFieldSrc("LocationY", Sitecore.Context.Item)" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)" data-lighttitle="@Html.Sitecore().Field("Light Box Text") @whereDescription of @floor.Parent["Building Title"]">
-                                <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", SitecoreItems.FloorPlanItem).ToString().ToUpper()
+                                <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", Factory.GetDatabase("web").GetItem(ItemGuids.FloorPlanItem)).ToString().ToUpper()
                             </a>
                         </td>
                     </tr>
@@ -67,6 +67,6 @@
     LinkField link = currentItem.Fields["Official Website Url"];
 
     <a href="@link.Url" class="gd-link-brief" target="@LandmarkHelper.GetLinkTarget(currentItem, "Official Website Url")">
-        @Html.Sitecore().Field("Glossary Value", SitecoreItems.OfficialWebsiteItem).ToString().ToUpper() <span class="icomoon-chevron-small-right"></span>
+        @Html.Sitecore().Field("Glossary Value", Factory.GetDatabase("web").GetItem(ItemGuids.OfficialWebsiteItem)).ToString().ToUpper() <span class="icomoon-chevron-small-right"></span>
     </a>
 }
