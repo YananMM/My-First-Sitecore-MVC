@@ -20,22 +20,19 @@
             {
                 var image = LandmarkHelper.GetCallOutImage(item);
 
-                <div @if (i == 1) { <text> class="item active" </text>      } else { <text> class="item" </text>      }>
+                <div @if (i == 1) { <text> class="item active" </text>        } else { <text> class="item" </text>        }>
                     <div class="carousel-image" data-bgsrc="@image"></div>
                     <div class="carousel-caption">
                         <div class="carousel-caption-inner">
                             <div class="gd-carousel-detail">
                                 <h4>@item.Fields["Article Headline"]</h4>
                                 <p>@Html.Sitecore().Field("Article Intro", item)</p>
-                                @if (item.TemplateID.ToString() != ItemGuids.ArticleObject)
-                                {
-                                    <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))" class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Button Text")</a>
-                                }
+                                <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))" class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Glossary Value", ItemGuids.DiscoverMoreItem)</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                                i++;
+i++;
             }
         }
     </div>
@@ -56,7 +53,7 @@
                         int i = 1;
                         foreach (var item in relatedItems)
                         {
-                            <li data-target="#gd-carousel-info" data-slide-to="@(i - 1)" @if (i == 1) { <text> class="active" </text>   }>@i</li>
+                            <li data-target="#gd-carousel-info" data-slide-to="@(i - 1)" @if (i == 1) { <text> class="active" </text>     }>@i</li>
 i++;
                         }
                     }

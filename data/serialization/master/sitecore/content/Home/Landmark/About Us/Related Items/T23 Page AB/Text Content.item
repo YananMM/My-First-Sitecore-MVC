@@ -1,18 +1,32 @@
 ----item----
 version: 1
-id: {9BE03E6A-3EBA-425A-ABFE-2909AC917D54}
+id: {EC5C377B-BB9A-43A1-87C6-70BC6C582D6A}
 database: master
-path: /sitecore/content/Home/Landmark/About Us/Related Items/Article Object 2
-parent: {8F5084D9-50E6-46F7-867C-7A5B5B2C6080}
-name: Article Object 2
-master: {00000000-0000-0000-0000-000000000000}
-template: {E0472501-0925-4F7F-A5BC-84F0ECA1B7F8}
-templatekey: Article Object
+path: /sitecore/content/Home/Landmark/About Us/Related Items/T23 Page AB/Text Content
+parent: {96006001-71EF-4315-9610-8E985C44001F}
+name: Text Content
+master: {019AAA6D-F7C8-4293-94EE-CF065B0A8A91}
+template: {95710548-2E7F-4FD5-B97D-CAF1396CE80B}
+templatekey: Text Content
+
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 2
+
+50
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
 
 ----version----
 language: en
 version: 1
-revision: 641d51f4-1ac7-43bc-afd2-f4f1e554d3f2
+revision: d34acb91-b276-438b-8b2e-d54052c7357e
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -27,7 +41,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150831T063559Z
+20151111T063015Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-641d51f4-1ac7-43bc-afd2-f4f1e554d3f2
+d34acb91-b276-438b-8b2e-d54052c7357e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150831T063559:635765997590316976Z
+20151111T063015:635828202152475682Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
