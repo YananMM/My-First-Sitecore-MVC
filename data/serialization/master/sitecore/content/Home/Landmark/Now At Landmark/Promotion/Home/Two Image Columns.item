@@ -15,14 +15,14 @@ name: Left Image
 key: left image
 content-length: 58
 
-<image mediaid="{0B6C6138-CC33-447B-BA12-5D4DE8C9D816}" />
+<image mediaid="{D29036ED-16D6-4D8D-A8C5-9BF3436668F3}" />
 ----field----
 field: {0A306579-71C1-4A26-85B7-410DBA86BB7B}
 name: Right Image
 key: right image
 content-length: 58
 
-<image mediaid="{0140A8F8-E1D5-48AA-B6F6-AC2FA647458B}" />
+<image mediaid="{AF5F8A9B-96DB-40F3-9CAF-00DB51C077CF}" />
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -40,7 +40,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: bbc9d5b8-6525-4d3a-a551-3113399f697b
+revision: 8e44a1e7-dc34-400c-8f8f-ee6bd83b93fe
 
 ----field----
 field: {CA3DCC87-1BC8-4B45-AE9D-C61ACFD4B411}
@@ -64,13 +64,6 @@ content-length: 57
 
 <link linktype="external" url="http://www.landmark.hk" />
 ----field----
-field: {2C13A9AC-B38F-4E19-99C4-6E05D0C1184E}
-name: Left Link Text
-key: left link text
-content-length: 11
-
-Test Button
-----field----
 field: {306BBB4A-C1CD-41C3-8EA6-BCB4FCB32A03}
 name: Right Title
 key: right title
@@ -84,6 +77,13 @@ key: right description
 content-length: 108
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+----field----
+field: {61F4D29E-B96D-435A-B813-9C158AEA8A77}
+name: Right Link
+key: right link
+content-length: 88
+
+<link text="baidu" linktype="external" url="http://www.baidu.com" anchor="" target="" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -111,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bbc9d5b8-6525-4d3a-a551-3113399f697b
+8e44a1e7-dc34-400c-8f8f-ee6bd83b93fe
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151108T101523Z
+20151110T054754:635827312742016496Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

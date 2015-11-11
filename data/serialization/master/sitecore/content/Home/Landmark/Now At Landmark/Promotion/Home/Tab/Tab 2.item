@@ -15,11 +15,11 @@ name: Image
 key: image
 content-length: 58
 
-<image mediaid="{EA95536E-5637-4C85-90DC-4EB51F03CB16}" />
+<image mediaid="{35E27F2F-FDF8-4225-978F-143E2E57CB6B}" />
 ----version----
 language: en
 version: 1
-revision: d5487805-58ce-40ea-a2ba-dbcb81fda005
+revision: be5ab14c-e023-4da0-8bcd-a0c709523048
 
 ----field----
 field: {0DFCA539-8E62-49AF-B845-34CA85BF03B4}
@@ -36,12 +36,12 @@ content-length: 755
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.
 ----field----
-field: {4AFDD77A-010F-4AFE-B45B-3B24CF101EA6}
-name: Link Text
-key: link text
-content-length: 13
+field: {07873DFA-AD96-4C97-88F2-421E1F37E0AF}
+name: Link
+key: link
+content-length: 88
 
-DISCOVER MORE
+<link text="baidu" linktype="external" url="http://www.baidu.com" anchor="" target="" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -69,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d5487805-58ce-40ea-a2ba-dbcb81fda005
+be5ab14c-e023-4da0-8bcd-a0c709523048
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150924T061430:635786720709223629Z
+20151110T055501:635827317014360860Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
