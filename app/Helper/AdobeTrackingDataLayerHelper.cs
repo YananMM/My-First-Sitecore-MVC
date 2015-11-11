@@ -32,11 +32,12 @@ namespace Landmark.Helper
                 var floorid = shopFloorField.TargetIDs.First().ToString();
                 var buildingItem = Factory.GetDatabase("web").GetItem(floorid).Parent;
                 buildingName = buildingItem.Fields["Building Title"].Value;
+                return buildingName;
             }
             ReferenceField artpieceFloorField = Sitecore.Context.Item.Fields["Floor and Building"];
             if (artpieceFloorField != null && artpieceFloorField.TargetItem != null)
             {
-                buildingName = artpieceFloorField.TargetItem.Fields["Building Title"].Value;
+                buildingName = artpieceFloorField.TargetItem.Parent.Fields["Building Title"].Value;
             }
             return buildingName;
         }
