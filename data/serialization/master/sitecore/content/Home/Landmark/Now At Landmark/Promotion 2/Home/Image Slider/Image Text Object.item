@@ -1,25 +1,18 @@
 ----item----
 version: 1
-id: {9FC3BD1B-0EFC-4246-B307-806DD26D3639}
+id: {D22B3423-9AD2-49E2-91B6-19791C6757EC}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Article Object/__Standard Values
-parent: {E0472501-0925-4F7F-A5BC-84F0ECA1B7F8}
-name: __Standard Values
+path: /sitecore/content/Home/Landmark/Now At Landmark/Promotion 2/Home/Image Slider/Image Text Object
+parent: {58CD8FCA-1313-407E-86B0-745B21DF51D5}
+name: Image Text Object
 master: {00000000-0000-0000-0000-000000000000}
-template: {E0472501-0925-4F7F-A5BC-84F0ECA1B7F8}
-templatekey: Article Object
+template: {CFE5379F-402F-4FB5-A1C5-0E42CA464BC1}
+templatekey: Image Text Object
 
-----field----
-field: {B966F61E-9F08-4674-AC01-EE1064020145}
-name: Article Date
-key: article date
-content-length: 16
-
-20151028T160000Z
 ----version----
 language: en
 version: 1
-revision: 47d0f8e3-1da9-49f3-bc14-32ffd8a9882d
+revision: d00817d4-ac0e-4ded-a643-b7af7244249a
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -34,7 +27,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151029T082210Z
+20151111T084452Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-47d0f8e3-1da9-49f3-bc14-32ffd8a9882d
+d00817d4-ac0e-4ded-a643-b7af7244249a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151029T085153:635817055134926055Z
+20151111T084452:635828282927685759Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
