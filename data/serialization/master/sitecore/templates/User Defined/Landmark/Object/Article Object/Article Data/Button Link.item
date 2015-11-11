@@ -2,9 +2,9 @@
 version: 1
 id: {C497F4DD-D534-4CC9-BBD9-798F45DD3C3F}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Article Object/Article Data/Manual Link
+path: /sitecore/templates/User Defined/Landmark/Object/Article Object/Article Data/Button Link
 parent: {E97B3DE3-422F-425C-9BF7-B15B96E1E735}
-name: Manual Link
+name: Button Link
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -26,7 +26,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 43208780-a71c-4b50-925d-9be40e96af99
+revision: b5a3d4ff-8b4e-40e2-a66f-f6758a994462
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-43208780-a71c-4b50-925d-9be40e96af99
+b5a3d4ff-8b4e-40e2-a66f-f6758a994462
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151031T034819Z
+20151111T025158:635828071182484627Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
