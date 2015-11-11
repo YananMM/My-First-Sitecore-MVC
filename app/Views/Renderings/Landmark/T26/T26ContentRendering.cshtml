@@ -129,7 +129,7 @@
 
                     <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(detailedarticle))"><img src="@imagesrc"></a>
                     <div class="gd-promo-box-text">
-                        <h5>@brandTitle</h5>
+                        <h5>@brandTitle.ToUpper()</h5>
                         <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(detailedarticle))">
                             <h4>@Html.Sitecore().Field("Article Headline", detailedarticle)</h4>
                         </a>

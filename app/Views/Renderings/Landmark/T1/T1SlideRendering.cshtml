@@ -44,7 +44,7 @@
                                     
                                 </hgroup>
                                 <div class="panel-content">
-                                    @Html.Sitecore().Field("Article Sub Headline", referenceField.TargetItem)
+                                    @Html.Sitecore().Field("Image Title", referenceField.TargetItem)
                                 </div>
                                 <a class="btn btn-default" href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceField.TargetItem))">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverLandmarkStoriesItem))</a>
                             </div>

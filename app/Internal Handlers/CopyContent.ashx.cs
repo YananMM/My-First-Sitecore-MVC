@@ -30,17 +30,17 @@ namespace Landmark.Internal_Handlers
                 using (new SecurityDisabler())
                 {
                     /*tcLanguageItem.Editing.BeginEdit();
-                    tcLanguageItem.Fields["Article Headline"].Value = scLanguageItem.Fields["Article Sub Headline"].Value;
+                    tcLanguageItem.Fields["Article Headline"].Value = scLanguageItem.Fields["Image Title"].Value;
                     tcLanguageItem.Editing.AcceptChanges();
 
 
                     scLanguageItem.Editing.BeginEdit();
-                    scLanguageItem.Fields["Article Headline"].Value = scLanguageItem.Fields["Article Sub Headline"].Value;
-                    scLanguageItem.Fields["Article Sub Headline"].Value = "";
+                    scLanguageItem.Fields["Article Headline"].Value = scLanguageItem.Fields["Image Title"].Value;
+                    scLanguageItem.Fields["Image Title"].Value = "";
                     scLanguageItem.Editing.AcceptChanges();*/
 
                     enLanguageItem.Editing.BeginEdit();
-                    enLanguageItem.Fields["Article Headline"].Value = enLanguageItem.Fields["Article Sub Headline"].Value;
+                    enLanguageItem.Fields["Article Headline"].Value = enLanguageItem.Fields["Image Title"].Value;
                     enLanguageItem.Editing.AcceptChanges();
                 }
 
