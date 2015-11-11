@@ -12703,6 +12703,9 @@ h4 a:active {
 .gd-content-details.visible-xs-block {
   margin-top: 20px;
 }
+.gd-content-details .col-sm-5.text-center img {
+  width: 150px;
+}
 .gd-content-details h5 {
   font-size: 12px;
   margin: 0;
@@ -16336,3 +16339,4 @@ input[type="checkbox"] {
   font-size: 12px;
   font-style: normal;
 }
+/*# sourceMappingURL=style.css.map */

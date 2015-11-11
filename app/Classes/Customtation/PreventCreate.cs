@@ -13,9 +13,14 @@ namespace Landmark.Classes.Customtation
     {
         public void OnItemCreating(object sender, EventArgs args)
         {
-            if (Sitecore.Context.Job!=null)
-                if (Sitecore.Context.Job.Name=="Publish to 'web'")
+            if (Sitecore.Context.Job != null)
+            {
+                if (Sitecore.Context.Job.Name == "Publish to 'web'")
                     return;
+                if(Sitecore.Context.Job.Name == "Install")
+                    return;
+            }
+                
             using (new SecurityDisabler())
             {
                 if (args == null)

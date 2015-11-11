@@ -5,7 +5,14 @@
 @using Sitecore.Data.Items
 @model RenderingModel
 @{
-    ViewBag.Title = "T13ContentRendering";
+    if (Sitecore.Context.Item.Parent.ID.ToString() != ItemGuids.ShoppingItem && Sitecore.Context.Item.Parent.ID.ToString() != ItemGuids.DiningItem)
+    {
+        Session["category"] = Sitecore.Context.Item.Parent.ID.ToString();
+    }
+    else
+    {
+        Session["category"] = null;
+    }
 }
 <section class="brand-content">
     <div class="container">
