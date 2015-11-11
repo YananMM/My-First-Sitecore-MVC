@@ -16,7 +16,7 @@
                 <div class="panel-text text-box-1">
                     <hgroup class="clearfix">
                         <h3><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Model.Item))">@Html.Sitecore().Field("Article Headline", Model.Item)</a></h3>
-                        <h4>@Html.Sitecore().Field("Article Sub Headline", Model.Item)</h4>
+                        <h4>@Html.Sitecore().Field("Image Title", Model.Item)</h4>
                     </hgroup>
                     <div class="panel-content">@Html.Sitecore().Field("Article Intro")</div>
                     <a class="btn btn-default" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Model.Item))">@((object) Html.Sitecore().Field("Glossary Value",Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem)))</a>

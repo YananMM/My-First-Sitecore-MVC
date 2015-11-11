@@ -421,7 +421,7 @@ namespace Landmark.Helper
         }
 
         /// <summary>
-        /// Gets the brands by floor.
+        /// Gets the brands by floo
         /// </summary>
         /// <returns>List{Item}.</returns>
         public List<Item> GetBrandsByFloor()
@@ -433,7 +433,7 @@ namespace Landmark.Helper
             if(isDining)
                 allBrands = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningItem, ItemGuids.T11PageTemplate);
             var brandsWithFloor = allBrands.Where(p => p.Fields["Floor"] != null);
-            var brandsByFloor = brandsWithFloor.Where(p => p.Fields["Floor"].ToString() == floorId).ToList();
+            var brandsByFloor = brandsWithFloor.Where(p => ((MultilistField)p.Fields["Floor"]).TargetIDs.First().ToString() == floorId).ToList();
             return brandsByFloor;
         }
 

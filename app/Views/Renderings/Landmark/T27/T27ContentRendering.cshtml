@@ -33,7 +33,7 @@
         }
         @if (brandItem!=null)
         {
-            <h5><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(brandItem))">@brandTitle</a></h5>
+            <h5><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(brandItem))">@brandTitle.ToUpper()</a></h5>
         }
 
         <h3>@Html.Sitecore().Field("Article Headline")</h3>
