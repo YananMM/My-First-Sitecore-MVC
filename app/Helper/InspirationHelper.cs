@@ -22,6 +22,20 @@ namespace Landmark.Helper
             Item exclusiveItem = Sitecore.Context.Database.GetItem(ItemGuids.MonthlyExclusivePage);
             List<Item> articles = new List<Item>();
             if (category == null)
+                articles = exclusiveItem.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page).ToList();
+            else
+            {
+                articles = exclusiveItem.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page
+                && ((MultilistField)item.Fields["Tags"]).TargetIDs.Contains(new ID(category))).ToList();
+            }
+            return articles;
+        }
+
+        public List<Item> GetDetailsMonthlyExclusives(string category = null)
+        {
+            Item exclusiveItem = Sitecore.Context.Database.GetItem(ItemGuids.MonthlyExclusivePage);
+            List<Item> articles = new List<Item>();
+            if (category == null)
                 articles = exclusiveItem.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page && ((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
             else
             {

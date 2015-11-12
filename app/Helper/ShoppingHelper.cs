@@ -12,6 +12,7 @@ using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Data.Query;
+using Sitecore.Links;
 using Sitecore.Web.UI.HtmlControls;
 
 namespace Landmark.Helper
@@ -20,8 +21,8 @@ namespace Landmark.Helper
     {
         private Database _webDb = Factory.GetDatabase("web");
         private Item _parentItem = null;
-        private bool isShop = true;
-        private bool isDining = false;
+        public bool isShop = true;
+        public bool isDining = false;
 
         public ShoppingHelper()
         {
@@ -85,15 +86,23 @@ namespace Landmark.Helper
         {
             var parentItem = currentItem.Parent;
             var grandParentItem = parentItem.Parent;
-            List<Item> allshoppingCategories = null;
-            if(isShop)
-                allshoppingCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
-            if(isDining)
-                allshoppingCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);
-
-            var grandParentCategorys = allshoppingCategories.SingleOrDefault(p => p.DisplayName == grandParentItem.DisplayName);
-            var parentCategorys = LandmarkHelper.GetItemsByRootAndTemplate(grandParentCategorys.ID.ToString(), ItemGuids.CategoryObjectTemplate);
+            List<Item> allCategories = null;
             string currentTag = String.Empty;
+            if (grandParentItem.ID.ToString() == ItemGuids.DiningItem)
+            {
+                allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);
+                Item currentCategory = allCategories.Where(i=>i.DisplayName==parentItem.DisplayName).FirstOrDefault();
+                currentTag = currentCategory.ID.ToString();
+                return currentTag;
+            }
+            if(isShop)
+                allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
+            if(isDining)
+                allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);
+
+            var grandParentCategorys = allCategories.SingleOrDefault(p => p.DisplayName == grandParentItem.DisplayName);
+            var parentCategorys = LandmarkHelper.GetItemsByRootAndTemplate(grandParentCategorys.ID.ToString(), ItemGuids.CategoryObjectTemplate);
+            
             foreach (var item in parentCategorys)
             {
                 if (item.DisplayName.Contains(parentItem.DisplayName))
@@ -131,14 +140,40 @@ namespace Landmark.Helper
         /// <returns>List{TextValue}.</returns>
         public List<TextValue> GetFirstCategory(string id)
         {
-            var currentItem = Sitecore.Context.Database.GetItem(id);
+            var currentItem = Factory.GetDatabase("web").GetItem(id);
             Item parentItem = currentItem.Parent;
+            Item brandCategory;
+            Item brand;
+            //if (parentItem.ID.ToString() == ItemGuids.DiningItem)
+            //{
+            //    brandCategory = Sitecore.Context.Database.GetItem(ItemGuids.DiningCategory);
+            //    brand = Sitecore.Context.Database.GetItem(ItemGuids.DiningItem);
+            //    var diningQueryCategory = string.Format("fast:{0}//*[{1}]", brandCategory.Paths.FullPath, "@@TemplateId='" + ItemGuids.CategoryObjectTemplate + "'");
+            //    List<TextValue> diningFirstCategory = (from category in _webDb.SelectItems(diningQueryCategory).ToList()
+            //                                     from Item item in brand.Children
+            //                                     where item.DisplayName == category.DisplayName && item.TemplateID.ToString() == ItemGuids.T11PageTemplate
+            //                                     select new TextValue
+            //                                     {
+            //                                         text = category.DisplayName,
+            //                                         value = item.ID.ToString()
+            //                                     }).ToList();
+            //    foreach (var item in diningFirstCategory)
+            //    {
+            //        var subCategoriess = Sitecore.Context.Database.GetItem(item.value).Children.Where(i => i.TemplateID.ToString() == ItemGuids.ShoppingSubCategoryPageObject).ToList();
+            //        List<TextValue> children =
+            //            subCategoriess.Select(p => new TextValue
+            //            {
+            //                text = p.DisplayName,
+            //                value = p.ID.ToString()
+            //            }).ToList();
+            //        item.children = children;
+            //    }
+            //}
             while (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
             {
                 parentItem = parentItem.Parent;
             }
-            Item brandCategory;
-            Item brand;
+            
             if (isShop)
             {
                 brandCategory = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingCategory);
@@ -152,7 +187,7 @@ namespace Landmark.Helper
             var queryCategory = string.Format("fast:{0}//*[{1}]", brandCategory.Paths.FullPath, "@@TemplateId='" + ItemGuids.CategoryObjectTemplate + "'");
             List<TextValue> firstCategory = (from category in _webDb.SelectItems(queryCategory).ToList()
                                              from Item item in brand.Children
-                                             where item.DisplayName == category.DisplayName
+                                             where item.DisplayName == category.DisplayName && item.TemplateID.ToString() == ItemGuids.T11PageTemplate
                                              select new TextValue
                                              {
                                                  text = category.DisplayName,
@@ -160,7 +195,7 @@ namespace Landmark.Helper
                                              }).ToList();
             foreach (var item in firstCategory)
             {
-                var subCategoriess = Sitecore.Context.Database.GetItem(item.value).Children.ToList();
+                var subCategoriess = Sitecore.Context.Database.GetItem(item.value).Children.Where(i=> i.TemplateID.ToString() == ItemGuids.ShoppingSubCategoryPageObject).ToList();
                 List<TextValue> children =
                     subCategoriess.Select(p => new TextValue
                     {
@@ -532,6 +567,12 @@ namespace Landmark.Helper
             }
             Item category = allshoppingCategories.SingleOrDefault(p => p.DisplayName == item.DisplayName);
             return category;
+        }
+
+        public string GetDiningCategoryPageUrl(Item item)
+        {
+            Item target = item.Children.Where(i => i.DisplayName == "By Brands").FirstOrDefault();
+            return LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(target));
         }
 
     }

@@ -7,7 +7,7 @@
     InspirationHelper inspirationHelper = new InspirationHelper();
     ShoppingHelper shoppingHelper = new ShoppingHelper();
     Sitecore.Data.Items.Item brandItem = null;
-    var exclusiveItem = inspirationHelper.GetMonthlyExclusives(category: shoppingHelper.GetCategoryFromItem(Sitecore.Context.Item.ID.ToString()).ID.ToString()).FirstOrDefault();
+    var exclusiveItem = inspirationHelper.GetDetailsMonthlyExclusives(category: shoppingHelper.GetCategoryFromItem(Sitecore.Context.Item.ID.ToString()).ID.ToString()).FirstOrDefault();
     bool ishasDetails = false;
     string href = string.Empty;
     if (exclusiveItem != null)

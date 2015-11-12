@@ -41,6 +41,11 @@ namespace Landmark.Controllers
         {
             Item shoppingCategory = Sitecore.Context.Database.GetItem(category);
             Session["category"] = category;
+            if (shoppingCategory.Parent.ID.ToString() == ItemGuids.DiningItem)
+            {
+                Item target = shoppingCategory.Children.Where(i => i.DisplayName == "By Brands").FirstOrDefault();
+                return Redirect(LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(target)));
+            }
             if (!string.IsNullOrEmpty(childcategory))
             {
                 shoppingCategory = Sitecore.Context.Database.GetItem(childcategory);

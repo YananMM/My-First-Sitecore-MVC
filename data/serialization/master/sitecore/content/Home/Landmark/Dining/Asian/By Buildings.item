@@ -1,0 +1,58 @@
+----item----
+version: 1
+id: {6691978D-554D-479D-8D96-3B3C4EF73EAB}
+database: master
+path: /sitecore/content/Home/Landmark/Dining/Asian/By Buildings
+parent: {5A97B078-AFBC-4D60-88D6-CED8A4EF7961}
+name: By Buildings
+master: {00000000-0000-0000-0000-000000000000}
+template: {0B591CE8-50CB-4CF5-9CBF-F2F6E61F23E8}
+templatekey: T13 Page
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 186
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{F408832F-6563-4BDE-B59A-22078F27CA99}" s:id="{65C42F4A-B30F-45FA-804C-6638E3BB75F4}" /></d></r>
+----version----
+language: en
+version: 1
+revision: 6bed1f45-c069-429b-b7a2-be82adbb4c07
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 12
+
+By Buildings
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151112T142155Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+6bed1f45-c069-429b-b7a2-be82adbb4c07
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151112T153226Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

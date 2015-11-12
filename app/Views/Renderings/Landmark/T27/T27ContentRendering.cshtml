@@ -140,6 +140,7 @@
 {
         ShoppingHelper shoppingHelper = new ShoppingHelper();
         var floor = shoppingHelper.GetShopFloor(brandItem);
+        var fullWhere = brandItem.Fields["Address"].Value;
     <div class="row">
         <div class="col-sm-7">
             <div class="table-responsive">
@@ -154,15 +155,25 @@
                     <tr>
                         <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ContactItem))</th>
                         <td>@Html.Sitecore().Field("Contact", brandItem)</td>
-                    </tr>
-                    <tr>
-                        <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.WhereItem)) </th>
-                        <td>
-                            @Html.Sitecore().Field("Address",brandItem)<br><a href="#" class="gd-link-map gd-lightbox-link" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)" data-lighttitle="@Html.Sitecore().Field("Description")">
-                                <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.FloorPlanItem))
-                            </a>
-                        </td>
-                    </tr>
+                    </tr> 
+                    @if (!string.IsNullOrEmpty(fullWhere))
+                    {
+                            <tr>
+                                <th>
+                                    @Html.Sitecore().Field("Glossary Value", Factory.GetDatabase("web").GetItem(ItemGuids.WhereItem)).ToString().ToUpper()
+                                </th>
+                                <td>
+                                    @fullWhere<br>
+                                    @if (floor!=null)
+                                    {
+                                        var whereDescription = floor["Floor Title"];
+                                        <a href="#" class="gd-link-map gd-lightbox-link gd-lightbox-pin" data-pin="@Html.Sitecore().ImageFieldSrc("LocationX", brandItem),@Html.Sitecore().ImageFieldSrc("LocationY", brandItem)" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)" data-lighttitle="@Html.Sitecore().Field("Glossary Value", Sitecore.Context.Database.GetItem(ItemGuids.YouAreViewingItem)) @whereDescription of @floor.Parent["Building Title"]">
+                                            <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", Factory.GetDatabase("web").GetItem(ItemGuids.FloorPlanItem)).ToString().ToUpper()
+                                        </a>
+                                    }
+                                </td>
+                            </tr>
+                    }
 
                     </tbody>
                 </table>
