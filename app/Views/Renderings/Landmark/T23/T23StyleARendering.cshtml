@@ -6,7 +6,7 @@
 @model RenderingModel
 @{
     var currentItem = Sitecore.Context.Item;
-    MagezineHelper helper = new MagezineHelper();
+    MagazineHelper helper = new MagazineHelper();
 
     DateField storyDate = currentItem.Fields["Article Date"];
     var date = LandmarkHelper.ToValidDateTime(storyDate);

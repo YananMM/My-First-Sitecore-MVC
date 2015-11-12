@@ -6706,7 +6706,8 @@ button.close {
   padding: 12px 0;
   text-align: center;
 }
-.site-header nav h1 {
+.site-header nav h1,
+.site-header nav .logo-area {
   width: 120px;
   font-size: 0;
   display: block;
@@ -6714,7 +6715,8 @@ button.close {
   left: 50%;
   margin: 0 0 0 -60px;
 }
-.site-header nav h1 .responsive-logo {
+.site-header nav h1 .responsive-logo,
+.site-header nav .logo-area .responsive-logo {
   width: 100%;
 }
 .site-header .mobile-share {

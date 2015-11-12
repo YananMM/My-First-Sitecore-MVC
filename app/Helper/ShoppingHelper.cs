@@ -129,9 +129,10 @@ namespace Landmark.Helper
         /// Gets the categorise.
         /// </summary>
         /// <returns>List{TextValue}.</returns>
-        public List<TextValue> GetFirstCategory()
+        public List<TextValue> GetFirstCategory(string id)
         {
-            Item parentItem = Sitecore.Context.Item.Parent;
+            var currentItem = Sitecore.Context.Database.GetItem(id);
+            Item parentItem = currentItem.Parent;
             while (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
             {
                 parentItem = parentItem.Parent;

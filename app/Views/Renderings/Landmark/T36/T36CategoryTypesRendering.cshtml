@@ -3,14 +3,14 @@
 @using Sitecore.Configuration
 @model RenderingModel
 @{
-    MagezineHelper helper = new MagezineHelper();
-    var magazineCategories = helper.GetAllMaganizeCategories();
-    var magazineCategoryPage = Sitecore.Context.Database.GetItem(ItemGuids.MagazineCategoryPage);
     var currentItem = Sitecore.Context.Item;
+    MagazineHelper helper = new MagazineHelper();
+    var magazinePage = Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage);
+    var magazineCategories = helper.GetAllMaganizeCategories(magazinePage);
 }
 
 <div class="gd-pagetitle-menu hidden-xs">
-    <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage)))" @if (currentItem.ID.ToString() == ItemGuids.LandmarkMaganizePage) { <text> class="active" </text>       }>
+    <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage)))" @if (currentItem.ID.ToString() == ItemGuids.LandmarkMaganizePage) { <text> class="active" </text>         }>
         @{
             var magezineItem = Factory.GetDatabase("web").GetItem(ItemGuids.MagezineItem);
         }
@@ -19,7 +19,7 @@
     @foreach (var item in magazineCategories)
     {
         <span class="gd-pagetitle-menu-gap">|</span>
-        <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage))?type=@item.ID&page=1" @if (Request["type"] == item.ID.ToString() || ((currentItem.Fields["Magazine Category"] != null) ? currentItem.Fields["Magazine Category"].ToString().Contains(item.ID.ToString()) : false)) { <text> class="active" </text>       }>@item.Fields["Tag Name"].ToString().ToUpper()</a>
+        <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))?page=1" @if (currentItem.Parent.ID == item.ID || currentItem.ID == item.ID) { <text> class="active" </text>        }>@item.Fields["Category Name"].ToString().ToUpper()</a>
     }
 </div>
 
@@ -28,7 +28,7 @@
         <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkMaganizePage)))">@Html.Sitecore().Field("Glossary Value", magezineItem)</option>
         @foreach (var item in magazineCategories)
         {
-            <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(magazineCategoryPage))?type=@item.ID&page=1" @if (Request["type"] == item.ID.ToString() || ((currentItem.Fields["Magazine Category"] != null) ? currentItem.Fields["Magazine Category"].ToString().Contains(item.ID.ToString()) : false)) { <text> selected="selected" </text>       }>@item.Fields["Tag Name"].ToString().ToUpper()</option>
+            <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))?page=1" @if (currentItem.Parent.ID == item.ID || currentItem.ID == item.ID) { <text> selected="selected" </text>          }>@item.Fields["Category Name"].ToString().ToUpper()</option>
         }
     </select>
 </div>

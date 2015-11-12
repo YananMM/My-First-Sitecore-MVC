@@ -7,9 +7,10 @@
 @using Sitecore.Configuration
 @model RenderingModel
 @{
-    MagezineHelper helper = new MagezineHelper();
-    var parent = Sitecore.Context.Item.Parent;
-    var stories = helper.GetStoriesByPager(Request["type"], Convert.ToInt32(Request["page"]));
+    MagazineHelper helper = new MagazineHelper();
+    var currentItem = Sitecore.Context.Item;
+    var parent = currentItem.Parent;
+    var stories = helper.GetStoriesByPager(currentItem, Convert.ToInt32(Request["page"]));
     List<Item> list1 = new ItemList();
     List<Item> list2 = new ItemList();
 }

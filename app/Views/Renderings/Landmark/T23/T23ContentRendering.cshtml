@@ -6,9 +6,8 @@
 @model RenderingModel
 @{
     var currentItem = Sitecore.Context.Item;
-    MagezineHelper helper = new MagezineHelper();
+    MagazineHelper helper = new MagazineHelper();
     var setting = helper.GetStorySetting(currentItem);
-
 }
 @if (currentItem.TemplateName == "T23 Page AB")
 {

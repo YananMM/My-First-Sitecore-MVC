@@ -6,7 +6,7 @@
 @model RenderingModel
 @{
     var currentItem = Sitecore.Context.Item;
-    var parent = currentItem.Parent;
+    var parent = currentItem.Parent.Parent;
 }
 <div class="gd-pagetitle-heading">
     <h2>@parent["Page Title"].ToUpper()</h2>
