@@ -9,6 +9,13 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
 templatekey: Tag Object
 
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+450
 ----version----
 language: en
 version: 1
@@ -52,8 +59,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 12f7db9f-68c5-412b-92cf-4827dedfa1df
+revision: ce3db5b9-6639-4a35-9512-82ae73f9f78d
 
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 4
+
+時尚品味
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -81,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-12f7db9f-68c5-412b-92cf-4827dedfa1df
+ce3db5b9-6639-4a35-9512-82ae73f9f78d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T155309Z
+20151109T035627Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -99,7 +113,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: bc4a2581-3dc1-4a9f-a28f-7e27d789037e
+revision: ce8bba87-e292-4d34-b7dd-03dcb721b93b
 
 ----field----
 field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
@@ -135,14 +149,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bc4a2581-3dc1-4a9f-a28f-7e27d789037e
+ce8bba87-e292-4d34-b7dd-03dcb721b93b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T155546Z
+20151109T063624Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

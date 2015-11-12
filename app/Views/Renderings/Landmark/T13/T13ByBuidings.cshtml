@@ -14,7 +14,7 @@
     }
     var brandModels = shoppingHelper.GetBrandModels(parentItem);
     string category = "";
-    if (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
+    if (!Sitecore.Context.Item.Parent.ID.ToString().Equals(ItemGuids.ShoppingItem) && !Sitecore.Context.Item.Parent.ID.ToString().Equals(ItemGuids.DiningItem))
     {
         category = shoppingHelper.GetCurrentCategory(currentItem);
     }

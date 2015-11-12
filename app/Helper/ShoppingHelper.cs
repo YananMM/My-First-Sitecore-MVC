@@ -86,9 +86,9 @@ namespace Landmark.Helper
             var parentItem = currentItem.Parent;
             var grandParentItem = parentItem.Parent;
             List<Item> allshoppingCategories = null;
-            if(parentItem.ID.ToString()==ItemGuids.ShoppingItem || grandParentItem.ID.ToString()==ItemGuids.ShoppingItem)
+            if(isShop)
                 allshoppingCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
-            if(parentItem.ID.ToString()==ItemGuids.DiningItem || grandParentItem.ID.ToString()==ItemGuids.DiningItem)
+            if(isDining)
                 allshoppingCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);
 
             var grandParentCategorys = allshoppingCategories.SingleOrDefault(p => p.DisplayName == grandParentItem.DisplayName);
@@ -96,7 +96,7 @@ namespace Landmark.Helper
             string currentTag = String.Empty;
             foreach (var item in parentCategorys)
             {
-                if (item.DisplayName == parentItem.DisplayName)
+                if (item.DisplayName.Contains(parentItem.DisplayName))
                 {
                     currentTag = item.ID.ToString();
                 }
