@@ -7,9 +7,10 @@
 @using Sitecore.Configuration
 @model RenderingModel
 @{
-    MagezineHelper helper = new MagezineHelper();
-    var parent = Sitecore.Context.Item.Parent;
-    var stories = helper.GetStoriesByPager(Request["type"], Convert.ToInt32(Request["page"]));
+    MagazineHelper helper = new MagazineHelper();
+    var currentItem = Sitecore.Context.Item;
+    var parent = currentItem.Parent;
+    var stories = helper.GetStoriesByPager(currentItem, Convert.ToInt32(Request["page"]));
     List<Item> list1 = new ItemList();
     List<Item> list2 = new ItemList();
 }
@@ -70,11 +71,11 @@
                     <div class="col-sm-4">
                         <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">
                             <div class="gd-promotion-box">
-                                <img data-src="@LandmarkHelper.GetCallOutImage(item)" />
+                                <img data-src="@LandmarkHelper.GetCallOutImage(item)"/>
                                 <h4>@Html.Sitecore().Field("Article Headline", item)</h4>
                                 @{
-                    DateField itemDate = item.Fields["Article Date"];
-                    var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
+                                    DateField itemDate = item.Fields["Article Date"];
+                                    var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
                                 }
                                 @if (!itemDate.ToString().Contains("0001"))
                                 {

@@ -6,7 +6,7 @@
 @model RenderingModel
 @{
     // var slides = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.SlideObjectTemplate);
-    MagezineHelper helper = new MagezineHelper();
+    MagazineHelper helper = new MagazineHelper();
     var currentItem = Sitecore.Context.Item;
     var slideFolder = currentItem.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.SlideFolderTemplate);
     var slides = new List<Item>();

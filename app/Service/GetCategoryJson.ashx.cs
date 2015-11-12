@@ -15,18 +15,19 @@ namespace Landmark.Service
     /// <summary>
     /// Summary description for GetJson
     /// </summary>
-    public class GetJson : IHttpHandler
+    public class GetJson : IHttpHandler 
     {
         private ShoppingHelper shoppingHelper = new ShoppingHelper();
         public void ProcessRequest(HttpContext context)
         {
             context.Response.ContentType = "text/plain";
-            List<TextValue> firstCategory = shoppingHelper.GetFirstCategory();
+            var id = context.Request["id"];
+            List<TextValue> categoryTextValue = shoppingHelper.GetFirstCategory(id);
 
             JavaScriptSerializer js = new JavaScriptSerializer();
 
-            string strJSON = js.Serialize(firstCategory);
-            context.Response.Write(strJSON);
+            string textValueJson = js.Serialize(categoryTextValue);
+            context.Response.Write(textValueJson);
         }
 
         public bool IsReusable
