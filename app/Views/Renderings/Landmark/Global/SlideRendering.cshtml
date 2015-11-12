@@ -2,13 +2,18 @@
 @using Landmark.Helper
 @using Landmark.Models
 @using Sitecore.Data.Fields
+@using Sitecore.Data.Items
 @model RenderingModel
 @{
     // var slides = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.SlideObjectTemplate);
     MagezineHelper helper = new MagezineHelper();
     var currentItem = Sitecore.Context.Item;
     var slideFolder = currentItem.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.SlideFolderTemplate);
-    var slides = slideFolder.Children.ToList();
+    var slides = new List<Item>();
+    if (slideFolder != null)
+    {
+        slides = slideFolder.Children.ToList();
+    }
 }
 @if (slides.Count > 0)
 {
@@ -20,7 +25,7 @@
             {
                 <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{ if (i == 0) { <text>
                     class="active"
-                    </text>  } }></li>
+                    </text>   } }></li>
             }
         </ol>
     }
@@ -30,25 +35,22 @@
     int j = 0;
     foreach (var item in slides)
     {
-            <div @{ if (j == 0)
-             { <text>
-                class="item active"
-            </text>                      }
-             else
-             { <text>
-                class="item"
-            </text>                      } }>
+        <div @{ if (j == 0) { <text>
+             class="item active"
+             </text>                       } else { <text>
+             class="item"
+             </text>                       } }>
             @{
         j++;
             }
 
             @if (string.IsNullOrEmpty(item.Fields["Slide Video"].Value))
             {
-                    <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Slide Image", item)"></div>
+                <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Slide Image", item)"></div>
             }
             else
             {
-                    <div class="carousel-image gd-lightbox-link gd-lightbox-video" data-bg="@Html.Sitecore().ImageFieldSrc("Slide Image", item)" data-lightsrc="@item.Fields["Slide Video"].Value" data-lighttitle="@item.Fields["Slide Title"].Value" data-lightposter="@LandmarkHelper.ImageFieldSrc("Slide Video Poster", item)"></div>
+                <div class="carousel-image gd-lightbox-link gd-lightbox-video" data-bg="@Html.Sitecore().ImageFieldSrc("Slide Image", item)" data-lightsrc="@item.Fields["Slide Video"].Value" data-lighttitle="@item.Fields["Slide Title"].Value" data-lightposter="@LandmarkHelper.ImageFieldSrc("Slide Video Poster", item)"></div>
             }
 
             @{
@@ -56,19 +58,16 @@
             if (currentItem.TemplateID.ToString() == ItemGuids.T23PageTemplate || currentItem.TemplateID.ToString() == ItemGuids.T23PageCDTemplate)
             {
                 setting = helper.GetStorySetting(Sitecore.Context.Item);
-                    <p @if (setting == StorySetting.StyleCd)
-                    { <text>
-                        class="gd-des-below text-center"
-                    </text>       }
-                    else
-                    { <text>
-                        class="gd-des-below"
-                    </text>       }>
+                <p @if (setting == StorySetting.StyleCd) { <text>
+                   class="gd-des-below text-center"
+                   </text>        } else { <text>
+                   class="gd-des-below"
+                   </text>        }>
                     @Html.Sitecore().Field("Slide Title", item)
-                    </p>
+                </p>
             }
             }
-            </div>
+        </div>
     }
         }
     </div>
