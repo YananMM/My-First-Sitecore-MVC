@@ -345,7 +345,7 @@ namespace Landmark.Helper
                     currentItem.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.RelatedItemFolder);
                 if (relatedItemFolder != null)
                 {
-                    relatedItems = GetItemsByRootAndTemplate(relatedItemFolder.ID.ToString(), ItemGuids.ArticleObject);
+                    relatedItems = relatedItemFolder.Children.ToList();
                 }
             }
             var relatedPagesField = currentItem.Fields["Related Page"];
