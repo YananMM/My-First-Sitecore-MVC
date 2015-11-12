@@ -9,6 +9,7 @@
 @{
     SearchHelper helper = new SearchHelper();
     var page = Request["page"] ?? "1";
+    var count = helper.GetSearchResults(Request["searchString"], Request["type"]).Count;
     var results = helper.GetSearchResults(Request["searchString"],Request["type"],page);
     List<FilterTypeResults> types = helper.GetFilterTypes(Request["searchString"]);
     ShoppingHelper shoppingHelper = new ShoppingHelper();
@@ -19,22 +20,27 @@
             <div class="gd-pagetitle-heading">
                 <h2>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h2>
             </div>
-            <div class="gd-search-infomation">@results.Count search result(s) for <span>"@Request["searchString"]"</span></div>
-              <div  class="gd-search-filter hidden-xs">
-                  @Html.Sitecore().Field("Glossary Value",(Item) Factory.GetDatabase("web").GetItem(ItemGuids.FilterByItem))
-                  <ul>
-                    <!--<li class="active"><a href="#">ALL</a></li>-->
-                @foreach (var type in types)
-                {
-                    if(Int32.Parse(type.count)>0)
-                        {<li><a href="?searchString=@Request["searchString"]&type=@type.value">@type.value (@type.count)</a></li>}
-                }
-          </ul>
-          </div>
+            <div class="gd-search-infomation">@count search result(s) for <span>"@Request["searchString"]"</span></div>
+            @if (count > 0)
+            {
+                <div class="gd-search-filter hidden-xs">
+                    @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.FilterByItem))
+                    <ul>
+                        <!--<li class="active"><a href="#">ALL</a></li>-->
+                        @foreach (var type in types)
+                        {
+                            if (Int32.Parse(type.count) > 0)
+                            {
+                                <li><a href="?type=@type.value">@type.value (@type.count)</a></li>
+                            }
+                        }
+                    </ul>
+                </div>
+            }
           
         <div class="gd-controls-m visible-xs">
                     <select class="form-control">
-                        <option value="#">ALL</option>
+                        <option value="#">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem))</option>
                         @foreach (var type in types)
                         {
                             if(Int32.Parse(type.count)>0)
