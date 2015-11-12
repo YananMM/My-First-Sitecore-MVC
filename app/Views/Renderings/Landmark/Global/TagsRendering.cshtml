@@ -1,20 +1,22 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Configuration
+@using Sitecore.Data.Fields
+@using Sitecore.Pipelines.InsertRenderings.Processors
+@model RenderingModel
 @{
-    var tagsTrees = LandmarkHelper.GetTagsTree();
+    var tagIds = ((MultilistField) Model.Item.Fields["Tags"]).TargetIDs;
 }
-@foreach (var item in tagsTrees)
-{
-    <div>
-        @{
 
-            <a href="@Url.Action("SearchContent", "Search")?search=@item.CurrentItem["Tag Name"]">@item.CurrentItem["Tag Name"] - </a>
-        }
-        @for (int i=0;i<item.Children.Count;i++)
+<div>
+    @for (var i = 0; i < tagIds.Length; i++)
+    {
+        var tag = Factory.GetDatabase("web").GetItem(tagIds[i]);
+        <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.SearchResultsPage)))/@tag.Fields["Tag Name"].Value">@tag.Fields["Tag Name"].Value
+        </a>
+        if(i < tagIds.Length - 1)
         {
-            var splitStr = i == (item.Children.Count - 1) ? "" : ",";
-        <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.SearchResultsPage)))?searchString=@item.CurrentItem["Tag Name"]">@item.Children[i].CurrentItem["Tag Name"]
-        @splitStr</a>
+            <text>, </text>
         }
-    </div>
-}
+    }
+</div>
