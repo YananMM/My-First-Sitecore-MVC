@@ -207,6 +207,7 @@
     <Compile Include="Models\LandmarkSearchResultItem.cs" />
     <Compile Include="Models\SearchContentModel.cs" />
     <Compile Include="Models\TextValue.cs" />
+    <Compile Include="Pipelines\ConvertToRuntimeHtml\ReplaceSpecialChar.cs" />
     <Compile Include="Pipelines\GetPlaceholderRenderings\GetDynamicKeyAllowedRenderings.cs" />
     <Compile Include="Pipelines\GetChromeData\GetDynamicPlaceholderChromeData.cs" />
     <Compile Include="Pipelines\HttpRequest\NotFoundProcessor.cs" />

@@ -1724,10 +1724,10 @@ $(document).ready(function() {
     });
   }
   if (!$('body').hasClass('t34') && $('#gd-carousel-info .gd-carousel-detail>p').length) {
-      var gdBottomText = $('#gd-carousel-info .gd-carousel-detail>p').eq(0);
-      var gdBottomTextFZ = gdBottomText.css('fontSize');
+    var gdBottomText       = $('#gd-carousel-info .gd-carousel-detail>p').eq(0);
+    var gdBottomTextFZ     = gdBottomText.css('fontSize');
         gdBottomTextFZ     = gdBottomTextFZ.indexOf('px') > 0 ? gdBottomTextFZ.slice(0, -2) : gdBottomTextFZ;
-        var gdBottomTextLH = gdBottomText.css('lineHeight');
+    var gdBottomTextLH     = gdBottomText.css('lineHeight');
         gdBottomTextLH     = gdBottomTextLH.indexOf('px') > 0 ? gdBottomTextLH.slice(0, -2) : (gdBottomTextLH * gdBottomTextFZ);
     var gdBottomTextHeight = gdBottomTextLH * gdSettings.ShortVersionContentNumberOfLines;
 
