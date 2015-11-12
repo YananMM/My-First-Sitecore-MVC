@@ -114,7 +114,7 @@ namespace Landmark.Helper
 
             if (allStories != null && allStories.Count != 0)
             {
-                if (page == 1)
+                if (page == 1 || page == 0)
                 {
                     _pageSize = 7;
                 }
