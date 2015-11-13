@@ -1,21 +1,14 @@
 ----item----
 version: 1
-id: {597600CB-F473-4E89-9AEF-26EC5961CC2C}
+id: {F860A506-E8A6-40C9-B400-AC55CCD2208C}
 database: master
 path: /sitecore/content/Home/Landmark/Now At Landmark/Promotion 2
 parent: {F0A68E40-FB4F-4B85-969D-A6ADEE24DE6B}
 name: Promotion 2
 master: {00000000-0000-0000-0000-000000000000}
-template: {0DF8102A-8361-4253-B689-5B28A9618E9D}
-templatekey: Promotion
+template: {3B297975-145B-4CF7-972E-8B2721725C8F}
+templatekey: T17 Page
 
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 4
-
-1700
 ----field----
 field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
 name: __Workflow
@@ -26,7 +19,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 4a386991-aa16-4c51-9def-f3d8ee893ce1
+revision: 275cc947-5898-4548-b351-f9c2e4453d1b
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -41,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20151111T015036Z
+20151109T130833Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-4a386991-aa16-4c51-9def-f3d8ee893ce1
+275cc947-5898-4548-b351-f9c2e4453d1b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T015714:635828038340436169Z
+20151109T130919Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -63,3 +56,17 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{32A103A1-E7A1-444C-A61B-5DD4D6A1381A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
