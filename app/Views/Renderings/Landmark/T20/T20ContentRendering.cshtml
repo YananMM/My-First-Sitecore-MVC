@@ -15,7 +15,7 @@
                 <div class="carousel-caption-inner">
                     <div class="gd-carousel-detail">
                         <div class="gd-mainimage-brief">
-                            <h2>@Html.Sitecore().Field("Cover Title", Sitecore.Context.Item)</h2>
+                            <h1>@Html.Sitecore().Field("Cover Title", Sitecore.Context.Item)</h1>
                             @Html.Sitecore().Field("Cover Content", Sitecore.Context.Item)
                             <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.ByArtistPage)))" type="button" class="gd-button gd-button-reversed">
                                 @Html.Sitecore().Field("Button Text", Sitecore.Context.Item)

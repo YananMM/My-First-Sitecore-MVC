@@ -1,0 +1,65 @@
+----item----
+version: 1
+id: {8C727D52-933E-4EF5-A6BB-65355D018FE4}
+database: master
+path: /sitecore/content/Home/Landmark/Around Central/Experience Central/St Johns Cathedral/Slide Folder/Slide Object
+parent: {327198CA-C73B-4789-B0AA-8862DC5A5911}
+name: Slide Object
+master: {00000000-0000-0000-0000-000000000000}
+template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
+templatekey: Slide Object
+
+----field----
+field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{00FC6131-CA8E-4A8D-9FB3-0921EDCD78EE}" />
+----version----
+language: en
+version: 1
+revision: 54dd8ae9-b89c-4dc5-8170-95a987915807
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151113T031407Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+54dd8ae9-b89c-4dc5-8170-95a987915807
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151113T031410:635829812503874077Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

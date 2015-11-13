@@ -571,8 +571,12 @@ namespace Landmark.Helper
 
         public string GetDiningCategoryPageUrl(Item item)
         {
-            Item target = item.Children.Where(i => i.DisplayName == "By Brands").FirstOrDefault();
-            return LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(target));
+            Item target = item.Children.FirstOrDefault(i => i.DisplayName == "By Brands");
+            if (target != null)
+            {
+                return LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(target));
+            }
+            return "";
         }
 
     }
