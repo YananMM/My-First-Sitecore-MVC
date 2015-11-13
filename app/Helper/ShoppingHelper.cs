@@ -100,6 +100,14 @@ namespace Landmark.Helper
             if(isDining)
                 allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);
 
+            var subCategories = LandmarkHelper.GetItemByTemplate(parentItem, ItemGuids.ShoppingSubCategoryPageObject);
+            if (subCategories == null || !subCategories.Any())
+            {
+                Item currentCategory = allCategories.Where(i => i.DisplayName == parentItem.DisplayName).FirstOrDefault();
+                currentTag = currentCategory.ID.ToString();
+                return currentTag;
+            }
+
             var grandParentCategorys = allCategories.SingleOrDefault(p => p.DisplayName == grandParentItem.DisplayName);
             var parentCategorys = LandmarkHelper.GetItemsByRootAndTemplate(grandParentCategorys.ID.ToString(), ItemGuids.CategoryObjectTemplate);
             
@@ -569,15 +577,17 @@ namespace Landmark.Helper
             return category;
         }
 
-        public string GetDiningCategoryPageUrl(Item item)
+        public string GetCategoryPageUrl(Item item)
         {
             Item target = item.Children.FirstOrDefault(i => i.DisplayName == "By Brands");
             if (target != null)
             {
                 return LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(target));
             }
-            return "";
+            else
+            {
+                return LandmarkHelper.GetItemUrl(item);
+            }
         }
-
     }
 }

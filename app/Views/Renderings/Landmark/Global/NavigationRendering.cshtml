@@ -7,7 +7,7 @@
 @using Sitecore.Links
 @model RenderingModel
 @{
-    ShoppingHelper diningHelper = new ShoppingHelper();
+    ShoppingHelper brandHelper = new ShoppingHelper();
 }
 <nav class="clearfix">
     <ul class="menu-left list-inline  ">
@@ -36,7 +36,7 @@
                                                             {
                                                                 if (childItem.TemplateID.ToString().Equals(ItemGuids.T11PageTemplate))
                                                                 {
-                                                                    <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
+                                                                    <li><a href="@brandHelper.GetCategoryPageUrl(childItem)">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
                                                                 }
                                                             }
                                                         </ul>
@@ -160,7 +160,7 @@
                                                     {
                                                         if (childItem.TemplateID.ToString().Equals(ItemGuids.T11PageTemplate))
                                                         {
-                                                            <li><a href="@diningHelper.GetDiningCategoryPageUrl(childItem)">@childItem.Fields["Page Title"].ToString().ToUpper()</a></li>
+                                                            <li><a href="@brandHelper.GetCategoryPageUrl(childItem)">@childItem.Fields["Page Title"].ToString().ToUpper()</a></li>
                                                         }
                                                     }
                                                 }
