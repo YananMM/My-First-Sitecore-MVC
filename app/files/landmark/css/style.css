@@ -1409,6 +1409,7 @@ pre code {
     width: 76%;
     padding-left: 10px;
     padding-right: 10px;
+    max-width: 1920px;
   }
 }
 .container2 {
@@ -9915,6 +9916,7 @@ button.close {
   font-size: 0.83em;
   margin-top: 2px;
 }
+.t11 .page-title h1,
 .t11 .page-title h2 {
   font-size: 26px;
   line-height: 30px;
@@ -10115,11 +10117,13 @@ button.close {
 .ie9 .t11 .content-area .page-menu ul {
   height: auto;
 }
+.t13 .page-title h1,
 .t13 .page-title h2 {
   line-height: 1.3;
   padding: 20px 0;
 }
 @media (min-width: 768px) {
+  .t13 .page-title h1,
   .t13 .page-title h2 {
     line-height: 5;
     padding: 0;
@@ -10211,8 +10215,10 @@ button.close {
   font-weight: normal;
   left: 0;
   position: absolute;
+  padding-top: 43px;
   top: 0;
   width: 100%;
+  line-height: 1.3;
 }
 .t13 .btn-brand {
   text-align: left;
@@ -10569,6 +10575,7 @@ button.close {
     column-gap: 20px;
   }
 }
+h1,
 h2 {
   color: #d4a962;
   font-size: 21px;
@@ -10586,25 +10593,30 @@ h4 {
   font-family: "Times New Roman", Times, serif;
   font-weight: normal;
 }
+h1,
 h2,
 h3,
 h4 {
   color: #d4a962;
 }
+h1 a,
 h2 a,
 h3 a,
 h4 a {
   color: #d4a962;
 }
+h1 a:hover,
 h2 a:hover,
 h3 a:hover,
 h4 a:hover {
   color: #999999;
   text-decoration: none;
 }
+h1 a:focus,
 h2 a:focus,
 h3 a:focus,
 h4 a:focus,
+h1 a:active,
 h2 a:active,
 h3 a:active,
 h4 a:active {
@@ -10612,6 +10624,7 @@ h4 a:active {
   text-decoration: none;
 }
 @media (min-width: 768px) {
+  h1,
   h2 {
     font-size: 25px;
   }
@@ -10623,6 +10636,7 @@ h4 a:active {
   }
 }
 @media (min-width: 1000px) {
+  h1,
   h2 {
     font-size: 30px;
   }
@@ -10949,6 +10963,7 @@ h4 a:active {
   font-size: 20px;
   vertical-align: middle;
 }
+.gd-pagetitle .gd-pagetitle-heading h1,
 .gd-pagetitle .gd-pagetitle-heading h2 {
   margin: 30px 0 26px;
   padding: 0;
@@ -10960,11 +10975,13 @@ h4 a:active {
     top: 8px;
     letter-spacing: 0.1em;
   }
+  .gd-pagetitle .gd-pagetitle-heading h1,
   .gd-pagetitle .gd-pagetitle-heading h2 {
     margin: 40px 0 26px;
   }
 }
 @media (min-width: 1000px) {
+  .gd-pagetitle .gd-pagetitle-heading h1,
   .gd-pagetitle .gd-pagetitle-heading h2 {
     margin: 58px 0 30px;
   }
@@ -11140,6 +11157,7 @@ h4 a:active {
   }
 }
 @media (min-width: 1000px) {
+  .gd-artlist h1,
   .gd-artlist h2 {
     padding: 60px 0;
   }
@@ -11147,6 +11165,7 @@ h4 a:active {
 .gd-carousel-info .carousel-heading {
   padding: 10px 0 23px;
 }
+.gd-carousel-info .carousel-heading h1,
 .gd-carousel-info .carousel-heading h2,
 .gd-carousel-info .carousel-heading h3 {
   margin: 0;
@@ -11295,6 +11314,7 @@ h4 a:active {
   .gd-carousel-info .carousel-heading {
     padding: 30px 15px 23px;
   }
+  .gd-carousel-info .carousel-heading h1,
   .gd-carousel-info .carousel-heading h2,
   .gd-carousel-info .carousel-heading h3 {
     text-align: center;
@@ -11543,11 +11563,13 @@ h4 a:active {
 .gd-mainimage-single .carousel-inner .item > .carousel-caption .gd-carousel-detail {
   height: auto;
 }
+.gd-mainimage-single .carousel-inner .item > .carousel-caption .gd-carousel-detail .gd-mainimage-brief h1,
 .gd-mainimage-single .carousel-inner .item > .carousel-caption .gd-carousel-detail .gd-mainimage-brief h2 {
   margin-bottom: 25px;
   padding: 0 0 24px 0;
 }
 @media (min-width: 768px) {
+  .gd-mainimage-single .carousel-inner .item > .carousel-caption .gd-carousel-detail .gd-mainimage-brief h1,
   .gd-mainimage-single .carousel-inner .item > .carousel-caption .gd-carousel-detail .gd-mainimage-brief h2 {
     font-size: 30px;
   }
@@ -11702,6 +11724,9 @@ h4 a:active {
 .gd-mainimage-withdes .carousel-indicators {
   bottom: 60px;
 }
+.gd-mainimage-brief h1,
+.gd-mainimage-brief2 h1,
+.gd-mainimage-brief3 h1,
 .gd-mainimage-brief h2,
 .gd-mainimage-brief2 h2,
 .gd-mainimage-brief3 h2 {
@@ -11710,6 +11735,9 @@ h4 a:active {
   padding: 0 0 25px 0;
   position: relative;
 }
+.gd-mainimage-brief h1:after,
+.gd-mainimage-brief2 h1:after,
+.gd-mainimage-brief3 h1:after,
 .gd-mainimage-brief h2:after,
 .gd-mainimage-brief2 h2:after,
 .gd-mainimage-brief3 h2:after {
@@ -11722,11 +11750,14 @@ h4 a:active {
   width: 30px;
 }
 @media (max-width: 480px) {
+  .gd-mainimage-brief h1:after,
+  .gd-mainimage-brief2 h1:after,
+  .gd-mainimage-brief3 h1:after,
   .gd-mainimage-brief h2:after,
   .gd-mainimage-brief2 h2:after,
   .gd-mainimage-brief3 h2:after {
     margin: 0 auto;
-    right: 0;
+    /*right: 0;*/
   }
 }
 .gd-mainimage-brief p,
@@ -11775,10 +11806,12 @@ h4 a:active {
   color: #ffffff;
   text-decoration: none;
 }
+.gd-mainimage-brief2 h1,
 .gd-mainimage-brief2 h2 {
   border-bottom: solid 2px #d4a962;
   padding: 0 0 23px 0;
 }
+.gd-mainimage-brief2 h1:after,
 .gd-mainimage-brief2 h2:after {
   content: none;
 }
@@ -11818,9 +11851,11 @@ h4 a:active {
   padding-left: 20px;
   margin-bottom: 5px;
 }
+.gd-mainimage-brief3 h1,
 .gd-mainimage-brief3 h2 {
   padding: 0;
 }
+.gd-mainimage-brief3 h1:after,
 .gd-mainimage-brief3 h2:after {
   content: none;
 }
@@ -12046,6 +12081,7 @@ h4 a:active {
     width: 76%;
     padding-left: 10px;
     padding-right: 10px;
+    max-width: 1920px;
   }
 }
 .gd-lightbox .modal-dialog > .navbar-header,
@@ -12188,6 +12224,7 @@ h4 a:active {
   }
 }
 @media (min-width: 1000px) {
+  .gd-showcase h1,
   .gd-showcase h2 {
     padding: 60px 0;
   }
@@ -13541,7 +13578,8 @@ dl.gd-content-details-tags dd a:active {
   color: #000000;
 }
 @media (min-width: 768px) {
-  .t22 .gd-pagetitle .gd-pagetitle-heading h2 {
+  .t22 .gd-pagetitle .gd-pagetitle-heading h2,
+  .t22 .gd-pagetitle .gd-pagetitle-heading h1 {
     margin-bottom: 30px;
   }
   .t22 .art-gallery > .col-sm-6:last-child {
@@ -13724,7 +13762,7 @@ dl.gd-content-details-tags dd a:active {
   display: block;
   font-family: "Times New Roman", Times, serif;
 }
-.t29 .gd-pagetitle .gd-pagetitle-heading h2 {
+.t29 .gd-pagetitle .gd-pagetitle-heading h2.gd-pagetitle .gd-pagetitle-heading h1 {
   margin-bottom: 15px;
 }
 .t29 .gd-artplace {
@@ -13760,6 +13798,7 @@ dl.gd-content-details-tags dd a:active {
   cursor: pointer;
   max-width: 100%;
 }
+.t29 .gd-artplace .gd-pagetitle h1,
 .t29 .gd-artplace .gd-pagetitle h2 {
   margin-top: 0;
   line-height: 1.5;
@@ -13943,6 +13982,17 @@ dl.gd-content-details-tags dd a:active {
   .t30 .gd-artist .gd-artist-details .gd-mainimage-brief {
     padding: 0 10px;
   }
+  .t30 .gd-artist .gd-artist-details .gd-mainimage-brief h1:after,
+  .t30 .gd-artist .gd-artist-details .gd-mainimage-brief h2:after {
+    margin-left: -15px;
+    left: 50%;
+    bottom: 0;
+    border-top: 1px solid #d4a962;
+    content: " ";
+    height: 0;
+    position: absolute;
+    width: 30px;
+  }
   .t30 .gd-artist .gd-artist-details .gd-mainimage-brief h3 {
     margin-bottom: 25px;
   }
@@ -13976,6 +14026,14 @@ dl.gd-content-details-tags dd a:active {
   }
   .t30 .gd-artist .gd-artist-details .gd-mainimage-brief {
     padding: 0 ;
+  }
+  .t30 .gd-artist .gd-artist-details .gd-mainimage-brief h1:after,
+  .t30 .gd-artist .gd-artist-details .gd-mainimage-brief h2:after {
+    margin-left: 0;
+    height: 0;
+    left: 0;
+    position: absolute;
+    width: 30px;
   }
   .t30 .gd-artist .gd-artist-details .gd-mainimage-brief h3:after {
     margin-left: 0;
@@ -15751,7 +15809,7 @@ dl.gd-content-details-tags dd a:active {
 @media (min-width: 1000px) {
   body,
   .site-header {
-    max-width: 1920px;
+    /* max-width: 1920px;*/
     margin: 0 auto;
   }
 }
@@ -16158,6 +16216,7 @@ dl.gd-content-details-tags dd a:active {
     font-size: 1.46em;
   }
 }
+.page-title h1,
 .page-title h2 {
   text-align: left;
   font-family: "Times New Roman", Times, serif;
@@ -16167,20 +16226,25 @@ dl.gd-content-details-tags dd a:active {
   line-height: 5;
   color: #d4a962;
 }
+.page-title h1 span,
 .page-title h2 span {
   font-family: Arial, sans-serif;
   font-size: 0.5em;
   margin-left: 10px;
   color: #999999;
 }
+.page-title h1 span a,
 .page-title h2 span a {
   color: #999999;
 }
+.page-title h1 span a:hover,
 .page-title h2 span a:hover {
   color: #ffffff;
   text-decoration: none;
 }
+.page-title h1 span a:focus,
 .page-title h2 span a:focus,
+.page-title h1 span a:active,
 .page-title h2 span a:active {
   color: #ffffff;
   text-decoration: none;
@@ -16213,9 +16277,11 @@ dl.gd-content-details-tags dd a:active {
   .page-title {
     padding: 0;
   }
+  .page-title h1,
   .page-title h2 {
     font-size: 2em;
   }
+  .page-title h1 span,
   .page-title h2 span {
     font-size: 0.46em;
   }
@@ -16231,10 +16297,12 @@ dl.gd-content-details-tags dd a:active {
   .page-title {
     padding: 0;
   }
+  .page-title h1,
   .page-title h2 {
     font-size: 2.5em;
     display: inline-block;
   }
+  .page-title h1 span,
   .page-title h2 span {
     font-size: 0.46666667em;
   }

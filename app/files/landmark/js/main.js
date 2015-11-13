@@ -1667,15 +1667,15 @@ $(document).ready(function() {
 
   $('.gd-longarticle').trunk8({
     lines: gdTextLines,
-    fill: '&hellip; <a id="read-more" href="#">' + gdTextOn + '</a>',
+    fill: '<a id="read-more" href="#">' + gdTextOn + '</a>',
     tooltip: false
   });
   
   var gdTextFunc = function() {
     var gdTextPar = $('#read-more').parent();
     var gdTextOri = gdTextPar.html().toString();
-    var gdTextBrk = gdTextOri.indexOf('…');
-    var gdTextBef = gdTextOri.slice(0, gdTextOri.lastIndexOf(' ', gdTextBrk))
+    var gdTextBrk = gdTextOri.indexOf('<a id="read-more');
+    var gdTextBef = gdTextOri.slice(0, gdTextOri.lastIndexOf(' ', gdTextBrk));
     var gdTextAft = gdTextOri.slice(gdTextBrk);
     gdTextPar.html(gdTextBef + gdTextAft);
   };

@@ -126,7 +126,7 @@
             }
         }
     </ul>
-    <h1>
+    <div class="logo-area">
         <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(landmarkHomeItem))">
 
             @{
@@ -135,7 +135,7 @@
             @Html.Sitecore().Field("Landmark Logo Image", landmarkConfigItem, new { @class = "img-logo" })
             @Html.Sitecore().Field("Landmark Logo", landmarkConfigItem, new { @class = "responsive-logo" })
         </a>
-    </h1>
+    </div>
     <ul class="menu-right list-inline">
 
         @{
