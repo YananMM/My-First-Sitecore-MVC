@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 38
+content-length: 194
 
-{838D33D8-9AC8-4369-AB18-9470EADCD49B}
+{838D33D8-9AC8-4369-AB18-9470EADCD49B}|{362A498E-7EAB-47A3-9196-C6D5F3B4DAC3}|{716DD4EF-A6E5-49CF-9C4B-8DD7EDFD441A}|{43B3E7AE-04E4-4228-A4A0-17EC764526CF}|{BB0E8159-D1DF-4198-9007-2E5DB5A725BE}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-305-307
 ----version----
 language: en
 version: 1
-revision: 28c2dd05-a494-4a2a-b979-3d73062d4001
+revision: bdd34c60-39b6-4dda-b282-6b06591a044c
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -173,25 +173,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-28c2dd05-a494-4a2a-b979-3d73062d4001
+bdd34c60-39b6-4dda-b282-6b06591a044c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151630Z
+20151113T061759Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 391762b2-3751-4645-bdc2-5f951eb52bbc
+revision: 262b2c41-c0b8-450f-9505-ec22bc15133c
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -311,21 +311,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-391762b2-3751-4645-bdc2-5f951eb52bbc
+262b2c41-c0b8-450f-9505-ec22bc15133c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063848Z
+20151112T031821Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1

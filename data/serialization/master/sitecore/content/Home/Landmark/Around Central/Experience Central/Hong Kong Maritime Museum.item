@@ -10,13 +10,6 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
-
-<image mediaid="{EF44B2C3-C174-4B9E-BE38-81667F49E2D7}" />
-----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
@@ -24,19 +17,19 @@ content-length: 15
 
 (852) 3713 2500
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{E93AE7A0-95A6-4FEC-BC1C-4373414A1826}" />
+114.1551646
 ----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
 
-<image mediaid="{E93AE7A0-95A6-4FEC-BC1C-4373414A1826}" />
+22.2867398
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -47,22 +40,15 @@ content-length: 77
 ----version----
 language: en
 version: 1
-revision: 4d04e584-7414-4e4d-8ca4-f1e015e898b1
+revision: 05e97fd2-6eac-4ecb-aded-e7ea87cf3906
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 25
-
-Hong Kong Maritime Museum
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 91
+content-length: 97
 
-<link linktype="external" url="http://www.hkmaritimemuseum.org/eng/" anchor="" target="" />
+<link linktype="external" url="http://www.hkmaritimemuseum.org/eng/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -76,7 +62,7 @@ name: Content Title
 key: content title
 content-length: 74
 
-From wooden sailing junks to super tankers: Hong Kong’s history of the sea
+From wooden sailing junks to super tankers: Hong Kong's history of the sea
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -97,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4d04e584-7414-4e4d-8ca4-f1e015e898b1
+05e97fd2-6eac-4ecb-aded-e7ea87cf3906
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093531:635828313315193826Z
+20151113T022120Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -115,22 +101,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: ef072ee8-e1d7-4d58-9a98-39f443d11ee2
+revision: 6328eeb9-48cb-458f-a3ca-c1aee90f73c4
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 7
-
-香港海事博物馆
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 91
+content-length: 97
 
-<link linktype="external" url="http://www.hkmaritimemuseum.org/chi/" anchor="" target="" />
+<link linktype="external" url="http://www.hkmaritimemuseum.org/chi/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -165,14 +144,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ef072ee8-e1d7-4d58-9a98-39f443d11ee2
+6328eeb9-48cb-458f-a3ca-c1aee90f73c4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093624:635828313842874007Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -183,22 +162,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: de1666e7-4865-430a-ac46-073806154734
+revision: 5c47d13a-73d2-41eb-9434-e30cb7021965
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 7
-
-香港海事博物館
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 91
+content-length: 97
 
-<link linktype="external" url="http://www.hkmaritimemuseum.org/chi/" anchor="" target="" />
+<link linktype="external" url="http://www.hkmaritimemuseum.org/chi/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -233,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-de1666e7-4865-430a-ac46-073806154734
+5c47d13a-73d2-41eb-9434-e30cb7021965
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093555:635828313557887707Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

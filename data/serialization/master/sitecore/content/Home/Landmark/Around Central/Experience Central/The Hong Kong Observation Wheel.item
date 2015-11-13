@@ -10,26 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{E8F4F288-D617-48F2-AB5C-A114DAB713FD}" />
+114.1572506
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
 
-<image mediaid="{3BDC0708-B7A0-417A-81A0-D9C03CA9CF46}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
-
-<image mediaid="{3BDC0708-B7A0-417A-81A0-D9C03CA9CF46}" />
+22.2874806
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -40,22 +33,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: f37ad07a-bda5-4659-945d-0ed09281757a
+revision: 5726b2e2-40e0-489b-89e7-83cbecd7bd87
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 31
-
-The Hong Kong Observation Wheel
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 77
+content-length: 83
 
-<link linktype="external" url="http://www.hkow.hk/en/" anchor="" target="" />
+<link linktype="external" url="http://www.hkow.hk/en/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -69,7 +55,7 @@ name: Content Title
 key: content title
 content-length: 57
 
-New attraction offers bird’s-eye view of Victoria Harbour
+New attraction offers bird's-eye view of Victoria Harbour
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -90,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f37ad07a-bda5-4659-945d-0ed09281757a
+5726b2e2-40e0-489b-89e7-83cbecd7bd87
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093304:635828311841929560Z
+20151113T021902Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,22 +94,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: fa98e9dd-c511-4321-9456-b8678f26d244
+revision: 04707ff0-ec27-4f29-8150-a9cb5bef9d8b
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 5
-
-香港摩天轮
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 77
+content-length: 83
 
-<link linktype="external" url="http://www.hkow.hk/zh/" anchor="" target="" />
+<link linktype="external" url="http://www.hkow.hk/zh/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -158,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fa98e9dd-c511-4321-9456-b8678f26d244
+04707ff0-ec27-4f29-8150-a9cb5bef9d8b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093359:635828312396731292Z
+20151113T032733Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -176,22 +155,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 77ba6c15-d7ca-4741-b3cb-9b9ce3938025
+revision: 0aa5254f-acf7-4e9b-8752-127df1c1ffb1
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 5
-
-香港摩天輪
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 77
+content-length: 83
 
-<link linktype="external" url="http://www.hkow.hk/zh/" anchor="" target="" />
+<link linktype="external" url="http://www.hkow.hk/zh/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -226,14 +198,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-77ba6c15-d7ca-4741-b3cb-9b9ce3938025
+0aa5254f-acf7-4e9b-8752-127df1c1ffb1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093333:635828312130186047Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 77
+content-length: 428
 
-{37C1F81A-7605-4539-808B-C4B487FDB8DE}|{385A8E74-CC78-4C89-A66D-1021D757C01C}
+{37C1F81A-7605-4539-808B-C4B487FDB8DE}|{385A8E74-CC78-4C89-A66D-1021D757C01C}|{56FED65F-5267-4350-B440-F22DC2B2218F}|{584512EB-189E-4FEF-9280-3F893DD9A9E1}|{7895E95B-BA35-4C28-9325-0BB7443E6945}|{B897BD2C-C2EA-4F88-BE9E-AA3F3EBE8FDF}|{6CD9230F-42B3-476C-B074-F2C099B8C515}|{F1CC2EDE-A165-4FC4-B47A-8C0DF29BDE27}|{73D42903-0C38-4D70-A14E-C773BDCFBCC6}|{101C4A58-6D7D-4905-AD44-F0F054282440}|{E95D9EB0-E7E3-4CA5-A41F-B1AF769A5F72}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-106-107
 ----version----
 language: en
 version: 1
-revision: 8acb43e6-4ddf-4c12-b535-9fd576ee2cff
+revision: 54eb9339-c850-4e6c-9496-4d21183c0a92
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -167,21 +167,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8acb43e6-4ddf-4c12-b535-9fd576ee2cff
+54eb9339-c850-4e6c-9496-4d21183c0a92
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151622Z
+20151113T050007Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1

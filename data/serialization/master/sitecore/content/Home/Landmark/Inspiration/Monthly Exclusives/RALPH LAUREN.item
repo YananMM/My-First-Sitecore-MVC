@@ -24,6 +24,20 @@ content-length: 58
 
 <image mediaid="{F2EFA81D-D326-4E47-8294-1B6A0317B772}" />
 ----field----
+field: {EF0834ED-A9CD-414C-B3FD-3F282C6B155E}
+name: Brand
+key: brand
+content-length: 38
+
+{85D4FDD4-0E02-4038-8EAD-59E35042BC1E}
+----field----
+field: {C9FE1BF7-0BCB-46A5-8910-5CC57B66B83E}
+name: Tags
+key: tags
+content-length: 38
+
+{AFD679E3-E79B-4659-BE27-DD69DBA84103}
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -33,7 +47,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 525e24ad-1bc4-4977-84a3-b80c6e633bc0
+revision: 0c3e5a7a-2915-48c9-b810-6d2172786896
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -69,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-525e24ad-1bc4-4977-84a3-b80c6e633bc0
+0c3e5a7a-2915-48c9-b810-6d2172786896
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151028T052141Z
+20151109T063042Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -153,7 +167,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: 7faa75b1-3256-4a51-9224-b5312bc6c95d
+revision: f50f2ef2-cd61-4bd7-bce2-c99266703833
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -189,14 +203,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7faa75b1-3256-4a51-9224-b5312bc6c95d
+f50f2ef2-cd61-4bd7-bce2-c99266703833
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T160908Z
+20151109T093155Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

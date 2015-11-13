@@ -20,13 +20,13 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 38
+content-length: 116
 
-{B7798E58-05C8-4513-9C8C-F953674DA86D}
+{B7798E58-05C8-4513-9C8C-F953674DA86D}|{C7F06241-2951-4647-8610-4853F73C07DF}|{983E7317-DB51-4EFE-9081-671D78C971C2}
 ----version----
 language: en
 version: 1
-revision: 8c899b8f-340d-418a-bdad-920013419efe
+revision: 04ee05f2-c648-4839-8dee-4919054440ee
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -139,21 +139,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8c899b8f-340d-418a-bdad-920013419efe
+04ee05f2-c648-4839-8dee-4919054440ee
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063845Z
+20151113T063513Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1

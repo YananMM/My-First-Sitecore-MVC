@@ -20,13 +20,13 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 77
+content-length: 194
 
-{1DA4C84C-5353-4961-9C01-4A480E81C865}|{C0BFF7F2-6271-4B95-9914-19628F56860B}
+{1DA4C84C-5353-4961-9C01-4A480E81C865}|{C0BFF7F2-6271-4B95-9914-19628F56860B}|{D84B1172-716F-4E5A-8CF0-7D22C9A221C1}|{CE078BA5-479D-42FE-BAB4-50A1459A29AA}|{6B69973D-6FCC-45B2-9C75-ECCBC56F42FC}
 ----version----
 language: en
 version: 1
-revision: dcfc7d56-61e5-4caf-a196-b7a103d5e981
+revision: ab711d03-ee9d-4e38-989c-d670dbab3289
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -95,9 +95,9 @@ content-length: 139
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 68
+content-length: 67
 
-Mon-Fri 6:30am - 8:30pm  Sat 8am - 7pm Sun & Public Holidays closed 
+Mon-Fri 6:30am - 8:30pm  Sat 8am - 7pm Sun & Public Holidays closed
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -139,21 +139,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dcfc7d56-61e5-4caf-a196-b7a103d5e981
+ab711d03-ee9d-4e38-989c-d670dbab3289
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063955Z
+20151113T032200Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1

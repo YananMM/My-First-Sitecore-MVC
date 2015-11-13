@@ -10,26 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{9701516D-8C7F-4D49-B4DF-CB9272D00D8D}" />
+114.1575433
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
 
-<image mediaid="{2F32C376-E993-4DCF-B1F8-185DE9797068}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
-
-<image mediaid="{2F32C376-E993-4DCF-B1F8-185DE9797068}" />
+22.2802504
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -40,22 +33,15 @@ content-length: 77
 ----version----
 language: en
 version: 1
-revision: 554be193-44ea-4ec5-81c8-425a891ffdfa
+revision: 9c9d1160-430d-4afd-a724-5222d4507b21
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 34
-
-Duddell Street Steps and Gas Lamps
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 96
+content-length: 103
 
-<link linktype="external" url="http://www.amo.gov.hk/en/monuments_08.php" anchor="" target="" />
+<link linktype="external" url="http://www.amo.gov.hk/en/monuments_08.php " anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -90,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-554be193-44ea-4ec5-81c8-425a891ffdfa
+9c9d1160-430d-4afd-a724-5222d4507b21
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094443:635828318839069773Z
+20151113T022556Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,15 +94,8 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: d1064163-2f00-4a82-837a-e0111c94108c
+revision: dddab84f-1f4c-455b-8acc-5b041dbfc5aa
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 11
-
-都爹利街石阶及煤气路灯
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
@@ -158,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d1064163-2f00-4a82-837a-e0111c94108c
+dddab84f-1f4c-455b-8acc-5b041dbfc5aa
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094530:635828319309686691Z
+20151113T032733Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -176,22 +155,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 6036178c-960e-404c-91ba-9e54d44d8a85
+revision: 546a59ec-ef0f-4dbf-ad59-f72ae2a8005d
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 11
-
-都爹利街石階及煤氣路燈
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 96
+content-length: 102
 
-<link linktype="external" url="http://www.amo.gov.hk/b5/monuments_08.php" anchor="" target="" />
+<link linktype="external" url="http://www.amo.gov.hk/b5/monuments_08.php" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -226,14 +198,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6036178c-960e-404c-91ba-9e54d44d8a85
+546a59ec-ef0f-4dbf-ad59-f72ae2a8005d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094508:635828319082003668Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

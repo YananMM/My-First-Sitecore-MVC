@@ -24,6 +24,20 @@ content-length: 0
 
 
 ----field----
+field: {EF0834ED-A9CD-414C-B3FD-3F282C6B155E}
+name: Brand
+key: brand
+content-length: 38
+
+{671C2366-E884-4AE7-98BF-0FC49FA2438F}
+----field----
+field: {C9FE1BF7-0BCB-46A5-8910-5CC57B66B83E}
+name: Tags
+key: tags
+content-length: 38
+
+{FC943B68-DF20-4326-A181-6B8CCEBD425F}
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -87,16 +101,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 1e5074a9-ad59-43e2-aab5-82483a480a59
+revision: cb28435e-8f69-4fd5-9937-9d86fc089822
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 45
+content-length: 44
 
-Penhaligons No. 33 Martini
-(港幣135元+ 10% 服務費)
+Penhaligons No. 33 Martini (港幣135元+ 10% 服務費)
 ----field----
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Image Title
@@ -131,34 +144,33 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1e5074a9-ad59-43e2-aab5-82483a480a59
+cb28435e-8f69-4fd5-9937-9d86fc089822
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T142023Z
+20151109T063846Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 1a080d1e-924c-4ec0-b833-f3e5a6c867d3
+revision: 45d0adfe-f42a-400d-ac12-7446e7b6e6a8
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 45
+content-length: 44
 
-Penhaligons No. 33 Martini
-(港幣135元+ 10% 服務費)
+Penhaligons No. 33 Martini (港幣135元+ 10% 服務費)
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -186,18 +198,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1a080d1e-924c-4ec0-b833-f3e5a6c867d3
+45d0adfe-f42a-400d-ac12-7446e7b6e6a8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T142022Z
+20151109T093600Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

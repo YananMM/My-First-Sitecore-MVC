@@ -20,13 +20,13 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 77
+content-length: 116
 
-{6ADD337A-5273-4504-AD72-8C601D69C6F9}|{BA9D8236-ECD5-4824-B120-46B95D7FB13C}
+{6ADD337A-5273-4504-AD72-8C601D69C6F9}|{BA9D8236-ECD5-4824-B120-46B95D7FB13C}|{6B69973D-6FCC-45B2-9C75-ECCBC56F42FC}
 ----version----
 language: en
 version: 1
-revision: e504ca39-a654-4b01-bd7b-597ca21581f1
+revision: 8cc03d97-7351-4a56-80f6-6ac92a3ea3b9
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -88,9 +88,9 @@ Set in the heart of the hotel’s vibrant kitchen, The Krug Room is a ‘must-tr
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 33
+content-length: 32
 
-Dinner - Mon to Sat: 7:30pm-11pm 
+Dinner - Mon to Sat: 7:30pm-11pm
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -132,21 +132,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e504ca39-a654-4b01-bd7b-597ca21581f1
+8cc03d97-7351-4a56-80f6-6ac92a3ea3b9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T064002Z
+20151113T031717Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1

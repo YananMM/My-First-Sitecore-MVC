@@ -10,13 +10,6 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
-
-<image mediaid="{AF677462-98D9-4CF4-97A1-8C7B76B28354}" />
-----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
@@ -24,19 +17,19 @@ content-length: 15
 
 (852) 6029 2675
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{561AC3CE-ADFB-4DA3-B85B-E50DFA5A001F}" />
+114.1503855
 ----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
 
-<image mediaid="{561AC3CE-ADFB-4DA3-B85B-E50DFA5A001F}" />
+22.2873075
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -47,22 +40,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 4483ebaa-b611-4af6-8175-3c94007910dd
+revision: a6a12d3b-33a6-4dd1-a53e-25b417e2f769
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 14
-
-Western Market
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 95
+content-length: 101
 
-<link linktype="external" url="http://westernmarket.com.hk/eng/main.htm" anchor="" target="" />
+<link linktype="external" url="http://westernmarket.com.hk/eng/main.htm" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -76,7 +62,7 @@ name: Content Title
 key: content title
 content-length: 57
 
-From fruit to fabrics: HK’s oldest market gets a makeover
+From fruit to fabrics: HK's oldest market gets a makeover
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -97,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4483ebaa-b611-4af6-8175-3c94007910dd
+a6a12d3b-33a6-4dd1-a53e-25b417e2f769
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095328:635828324082989708Z
+20151113T023137Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -115,22 +101,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 615d4b99-709c-41be-98c4-45e1468a9baf
+revision: 8c303d0d-ca30-4850-aa01-bd53c6c6d528
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-西港城
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 91
+content-length: 97
 
-<link linktype="external" url="http://westernmarket.com.hk/main.htm" anchor="" target="" />
+<link linktype="external" url="http://westernmarket.com.hk/main.htm" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -165,14 +144,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-615d4b99-709c-41be-98c4-45e1468a9baf
+8c303d0d-ca30-4850-aa01-bd53c6c6d528
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095414:635828324543326038Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -183,22 +162,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 59d5db72-fcde-4e39-bea5-1213b934695c
+revision: 2ca9cbfb-6894-4661-94c4-bc4375db5a2f
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 4
-
- 西港城
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 91
+content-length: 97
 
-<link linktype="external" url="http://westernmarket.com.hk/main.htm" anchor="" target="" />
+<link linktype="external" url="http://westernmarket.com.hk/main.htm" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -233,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-59d5db72-fcde-4e39-bea5-1213b934695c
+2ca9cbfb-6894-4661-94c4-bc4375db5a2f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095350:635828324304682388Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

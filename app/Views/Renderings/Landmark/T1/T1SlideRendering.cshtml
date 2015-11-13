@@ -24,7 +24,8 @@
                         }
                         else
                         {
-                            <div class="panel-img gd-lightbox-link gd-lightbox-video" data-bg="@LandmarkHelper.GetCallOutImage(referenceField.TargetItem)" data-lightsrc="@item.Fields["Slide Video"].Value" data-lighttitle="@referenceField.TargetItem.Fields["Article Headline"].Value" data-lightposter="@LandmarkHelper.ImageFieldSrc("Slide Video Poster",item)"></div>
+                            <div class="panel-img gd-lightbox-link gd-lightbox-video" data-bg="@LandmarkHelper.GetCallOutImage(referenceField.TargetItem)" data-lightsrc="@referenceField.TargetItem.Fields["Slide Video"].Value" 
+                                data-lighttitle="@item.Fields["Slide Title"].Value" data-lightposter="@LandmarkHelper.ImageFieldSrc("Slide Video Poster",item)"></div>
                         }
                         
                         <div class="panel-main">
@@ -33,18 +34,18 @@
                                     
                                         @if (sublineVersionsField.Value.Equals(ItemGuids.TwoNumbersTwoCaptionsTextLink))
                                         {
-                                            @Html.Sitecore().Field("Article Headline 2", referenceField.TargetItem)
+                                            @Html.Sitecore().Field("Slide Numbers Text Title", item)
                                         }
                                         else
                                         {
                                             <h3>
-                                            @Html.Sitecore().Field("Article Headline", referenceField.TargetItem)
+                                            @Html.Sitecore().Field("Slide Title", item)
                                                 </h3>
                                         }
                                     
                                 </hgroup>
                                 <div class="panel-content">
-                                    @Html.Sitecore().Field("Image Title", referenceField.TargetItem)
+                                    @Html.Sitecore().Field("Slide Intro", item)
                                 </div>
                                 <a class="btn btn-default" href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceField.TargetItem))">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverLandmarkStoriesItem))</a>
                             </div>

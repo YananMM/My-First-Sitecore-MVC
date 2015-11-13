@@ -10,26 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{98362243-D400-48E5-BA09-722D4A7B701A}" />
+114.1556712
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
 
-<image mediaid="{060733E5-00DE-4968-B722-17DBBD4060B8}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
-
-<image mediaid="{060733E5-00DE-4968-B722-17DBBD4060B8}" />
+22.2808373
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -40,22 +33,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 0ebf1487-348f-4e86-99d0-903739691127
+revision: 4abd554a-cbd1-4be3-bd5a-ea76ef0c3304
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 13
-
-Lan Kwai Fong
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 84
+content-length: 90
 
-<link linktype="external" url="http://www.lankwaifong.com/en" anchor="" target="" />
+<link linktype="external" url="http://www.lankwaifong.com/en" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -69,7 +55,7 @@ name: Content Title
 key: content title
 content-length: 65
 
-Hong Kong’s iconic night district offers a world of entertainment
+Hong Kong's iconic night district offers a world of entertainment
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -90,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0ebf1487-348f-4e86-99d0-903739691127
+4abd554a-cbd1-4be3-bd5a-ea76ef0c3304
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093049:635828310498772735Z
+20151113T021656Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,22 +94,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: ce6a4737-0acf-47ba-9474-dba023d9baab
+revision: 16fc2e1b-6ec2-4c72-ad73-e54fa5bd96b6
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-兰桂坊
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 84
+content-length: 90
 
-<link linktype="external" url="http://www.lankwaifong.com/zh" anchor="" target="" />
+<link linktype="external" url="http://www.lankwaifong.com/zh" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -158,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ce6a4737-0acf-47ba-9474-dba023d9baab
+16fc2e1b-6ec2-4c72-ad73-e54fa5bd96b6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093132:635828310925827162Z
+20151113T021730Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -176,22 +155,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 12986516-3c41-4b85-9279-7c0d5a4757d9
+revision: d60c1218-e268-4d75-94ab-c7d3b5d08e09
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-蘭桂坊
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 84
+content-length: 90
 
-<link linktype="external" url="http://www.lankwaifong.com/zh" anchor="" target="" />
+<link linktype="external" url="http://www.lankwaifong.com/zh" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -226,14 +198,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-12986516-3c41-4b85-9279-7c0d5a4757d9
+d60c1218-e268-4d75-94ab-c7d3b5d08e09
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093112:635828310729145912Z
+20151113T021714Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

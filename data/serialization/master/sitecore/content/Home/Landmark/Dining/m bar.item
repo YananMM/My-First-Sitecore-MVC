@@ -20,13 +20,13 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 116
+content-length: 233
 
-{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}|{6ADD337A-5273-4504-AD72-8C601D69C6F9}|{50CB2BA4-EF38-46ED-908C-1CAD2F171849}
+{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}|{6ADD337A-5273-4504-AD72-8C601D69C6F9}|{50CB2BA4-EF38-46ED-908C-1CAD2F171849}|{410058FD-4835-43BD-9FC0-430DAF3C8381}|{2ED5B361-4D7A-4A48-B63E-8FE23B71DB8E}|{6B69973D-6FCC-45B2-9C75-ECCBC56F42FC}
 ----version----
 language: en
 version: 1
-revision: e2b5be4f-78e6-486e-96ae-9dd5a8f3509e
+revision: a5de2c62-f73e-4ed7-8f4a-94bafa4b6a9c
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -95,9 +95,9 @@ Located on the 25th floor of Mandarin Oriental, Hong Kong, this stylish bar, whi
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 93
+content-length: 91
 
-Monday to Friday: 11am-12:45am  Saturday: 5pm-12:45am  Sunday & Public Holiday: 5pm-11:45pm  
+Monday to Friday: 11am-12:45am  Saturday: 5pm-12:45am  Sunday & Public Holiday: 5pm-11:45pm
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -139,21 +139,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e2b5be4f-78e6-486e-96ae-9dd5a8f3509e
+a5de2c62-f73e-4ed7-8f4a-94bafa4b6a9c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063923Z
+20151113T044749Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1

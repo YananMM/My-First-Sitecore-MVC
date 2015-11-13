@@ -10,13 +10,6 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
-
-<image mediaid="{046B598D-A0F8-46D6-AF55-1661BDF5C644}" />
-----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
@@ -24,19 +17,19 @@ content-length: 27
 
 (852) 2544 3895 / 2854 0731
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{15B7AA05-481F-4BBF-8BCC-3728AB755F02}" />
+114.1537155
 ----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
 
-<image mediaid="{15B7AA05-481F-4BBF-8BCC-3728AB755F02}" />
+22.2827255
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -47,15 +40,8 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: abdab251-206a-4cf8-9473-ea0ac33239d1
+revision: b49e23a5-9d69-4c13-8378-d9960b03f81b
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 13
-
-Lan Fong Yuen
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -67,9 +53,9 @@ content-length: 33
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
-content-length: 72
+content-length: 83
 
-A true taste of the city: classic beverages and typical “everyday” food 
+A true taste of the city: classic beverages and typical &ldquo;everyday&rdquo; food
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -90,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-abdab251-206a-4cf8-9473-ea0ac33239d1
+b49e23a5-9d69-4c13-8378-d9960b03f81b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100425:635828330650665358Z
+20151112T131934Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,15 +94,8 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 6d6e8cd1-6e40-4b09-88a1-1278b541b4e2
+revision: 4fbe9a23-01d2-4086-a1e2-e44ee8a6fe94
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-兰芳园
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -130,7 +109,7 @@ name: Content Title
 key: content title
 content-length: 20
 
- 体验地道风味：港式饮料和典型的茶餐美食
+体验地道风味：港式饮料和典型的茶餐美食 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -151,14 +130,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6d6e8cd1-6e40-4b09-88a1-1278b541b4e2
+4fbe9a23-01d2-4086-a1e2-e44ee8a6fe94
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100449:635828330891039106Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -169,15 +148,8 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: a075b63a-3cf8-41fa-b1be-8f4901b51c33
+revision: 2fac8906-1331-42a6-a6a5-478063937af9
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-蘭芳園
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -189,9 +161,9 @@ content-length: 9
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
-content-length: 20
+content-length: 19
 
-體驗地道風味：港式飲料和典型的茶餐美食 
+體驗地道風味：港式飲料和典型的茶餐美食
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -212,14 +184,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a075b63a-3cf8-41fa-b1be-8f4901b51c33
+2fac8906-1331-42a6-a6a5-478063937af9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100437:635828330777582617Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

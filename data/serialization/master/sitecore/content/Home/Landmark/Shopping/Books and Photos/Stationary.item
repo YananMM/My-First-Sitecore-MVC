@@ -59,8 +59,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: cf62cb3b-54b9-44c3-8734-4dd207730c28
+revision: 95291543-fcc7-4a3a-b682-ccfc842c5942
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 2
+
+文具
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -88,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cf62cb3b-54b9-44c3-8734-4dd207730c28
+95291543-fcc7-4a3a-b682-ccfc842c5942
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T121041Z
+20151112T091359Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -106,8 +113,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 7e760e00-f017-44c4-9181-c8a570054e00
+revision: 2c6c4484-e04d-4c1a-a1b6-3938b0301fc4
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 2
+
+文具
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -135,14 +149,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7e760e00-f017-44c4-9181-c8a570054e00
+2c6c4484-e04d-4c1a-a1b6-3938b0301fc4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T121038Z
+20151112T091412Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

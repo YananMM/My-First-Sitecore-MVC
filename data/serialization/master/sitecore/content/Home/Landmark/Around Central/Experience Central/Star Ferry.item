@@ -10,13 +10,6 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
-
-<image mediaid="{BC45982B-8A85-4AE8-82B8-B48880D58433}" />
-----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
@@ -24,12 +17,19 @@ content-length: 15
 
 (852) 2366 2576
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
 
-<image mediaid="{FA172D95-147A-49F2-99A0-167ACD99AD7D}" />
+114.161241
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.287193
 ----field----
 field: {DCBD6530-C867-4887-B668-FF8BBB4B7B25}
 name: Tags
@@ -37,13 +37,6 @@ key: tags
 content-length: 0
 
 
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
-
-<image mediaid="{FA172D95-147A-49F2-99A0-167ACD99AD7D}" />
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -54,22 +47,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 196f47bb-52d2-4a03-b342-86697cb63d09
+revision: 18ca65b3-f54e-42e3-87c2-b71e92a8f4c2
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 10
-
-Star Ferry
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 90
+content-length: 96
 
-<link linktype="external" url="http://www.starferry.com.hk/en/home" anchor="" target="" />
+<link linktype="external" url="http://www.starferry.com.hk/en/home" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -99,13 +85,6 @@ content-length: 20
 
 SEE MORE ATTRACTIONS
 ----field----
-field: {5A6522FD-3283-478A-9C8C-F8F57332961A}
-name: Button Text
-key: button text
-content-length: 13
-
-DISCOVER MORE
-----field----
 field: {F1220F65-3306-4AB6-8AC1-904AE9CBEB22}
 name: Brief Introduction
 key: brief introduction
@@ -125,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-196f47bb-52d2-4a03-b342-86697cb63d09
+18ca65b3-f54e-42e3-87c2-b71e92a8f4c2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093153:635828311135369147Z
+20151113T021748Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -143,22 +122,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: d2177cc9-d114-40c2-a857-d4dd9419a143
+revision: 6d577c10-ddde-4995-a016-983d2ba4bba8
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 4
-
-天星小轮
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 114
+content-length: 120
 
-<link linktype="external" url="http://hanweb.kanhan.com/TuniS/www.starferry.com.hk/tc/home" anchor="" target="" />
+<link linktype="external" url="http://hanweb.kanhan.com/TuniS/www.starferry.com.hk/tc/home" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -193,14 +165,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d2177cc9-d114-40c2-a857-d4dd9419a143
+6d577c10-ddde-4995-a016-983d2ba4bba8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093341:635828312212050729Z
+20151113T021846Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -211,22 +183,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: dfcba564-e9e0-40b0-b402-6796a29556bb
+revision: a4e55456-d24e-4695-926a-6bd3387a4ae2
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 4
-
-天星小輪
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 90
+content-length: 96
 
-<link linktype="external" url="http://www.starferry.com.hk/tc/home" anchor="" target="" />
+<link linktype="external" url="http://www.starferry.com.hk/tc/home" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -261,14 +226,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dfcba564-e9e0-40b0-b402-6796a29556bb
+a4e55456-d24e-4695-926a-6bd3387a4ae2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093216:635828311367892446Z
+20151113T021809Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

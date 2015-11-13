@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 77
+content-length: 116
 
-{B597804A-C4D7-44FB-9FAC-490726EEB3D9}|{3FBE00DD-2724-453D-8208-D0E3425672F1}
+{B597804A-C4D7-44FB-9FAC-490726EEB3D9}|{3FBE00DD-2724-453D-8208-D0E3425672F1}|{30563DB6-3409-4BF6-AFC9-1050A7240A30}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-B2
 ----version----
 language: en
 version: 1
-revision: b59f4cdd-4082-46f8-8e7f-cd14fbaa4b8f
+revision: 9ff43ad3-144b-4d10-ac6e-3a219bea0701
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -123,9 +123,9 @@ Founded in 1988, Ponti Wine Cellars is a treasure trove for wine lovers. Sourcin
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 59
+content-length: 58
 
-Mon-Sat: 10:30am-8pm Sun & Public Holidays: 10:30am-7:30pm 
+Mon-Sat: 10:30am-8pm Sun & Public Holidays: 10:30am-7:30pm
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -167,21 +167,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b59f4cdd-4082-46f8-8e7f-cd14fbaa4b8f
+9ff43ad3-144b-4d10-ac6e-3a219bea0701
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151628Z
+20151113T033736Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1

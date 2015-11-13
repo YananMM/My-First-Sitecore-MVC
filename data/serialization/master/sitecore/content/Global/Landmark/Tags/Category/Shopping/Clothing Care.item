@@ -52,8 +52,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 990a411a-7859-4776-b65c-84d8259cf089
+revision: fff1692c-cb6e-4d66-bcf2-ba704ed13a35
 
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 4
+
+衣物护理
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -81,14 +88,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-990a411a-7859-4776-b65c-84d8259cf089
+fff1692c-cb6e-4d66-bcf2-ba704ed13a35
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T083601Z
+20151111T114055Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -99,8 +106,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 7d5b7959-0e97-4305-9fb7-4604daf4b434
+revision: 5dc146b1-862b-415e-9516-bbf5cab66dd1
 
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 4
+
+衣服護理
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -128,14 +142,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7d5b7959-0e97-4305-9fb7-4604daf4b434
+5dc146b1-862b-415e-9516-bbf5cab66dd1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T083453Z
+20151111T114046Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

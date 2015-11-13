@@ -16,11 +16,32 @@ key: __originator
 content-length: 0
 
 
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{807BAE08-CC88-4245-BE96-C7B27FD20040}
 ----version----
 language: en
 version: 1
-revision: 6aad0518-3b85-4bd9-a3d4-4c58cc32edd3
+revision: e8ae1a99-b5e3-4263-b198-29492cf536de
 
+----field----
+field: {800225A2-E2E6-4AF9-94E6-37C5907002B3}
+name: Carousel Title
+key: carousel title
+content-length: 19
+
+This is Promotion 2
+----field----
+field: {06EB99B9-EA71-42B2-932D-C78F48FE5D94}
+name: Carousel Description
+key: carousel description
+content-length: 305
+
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -34,21 +55,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20151111T015146Z
+20151109T130839Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-6aad0518-3b85-4bd9-a3d4-4c58cc32edd3
+e8ae1a99-b5e3-4263-b198-29492cf536de
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T015146:635828035063918763Z
+20151112T025027Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -56,3 +77,17 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{32A103A1-E7A1-444C-A61B-5DD4D6A1381A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

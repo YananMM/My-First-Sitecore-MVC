@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 77
+content-length: 233
 
-{C034122F-A68F-4E3C-827E-C1898533C08E}|{385A8E74-CC78-4C89-A66D-1021D757C01C}
+{C034122F-A68F-4E3C-827E-C1898533C08E}|{385A8E74-CC78-4C89-A66D-1021D757C01C}|{111013C6-0BCD-4E1C-8CCA-7D7DDC405B0A}|{362A498E-7EAB-47A3-9196-C6D5F3B4DAC3}|{716DD4EF-A6E5-49CF-9C4B-8DD7EDFD441A}|{43B3E7AE-04E4-4228-A4A0-17EC764526CF}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-B37
 ----version----
 language: en
 version: 1
-revision: 7b3a14f0-10d5-488a-970c-3a64d84bf477
+revision: 38187bb7-3f28-4f5a-9aef-b37bd04d0a83
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -74,14 +74,13 @@ content-length: 35
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 970
+content-length: 991
 
-Kelly & Walsh is synonymous with quality books. It carries an alluring collection of books on art and design, architecture and fashion. It also has a charming selection of cookbooks, classic literature, fictions, books on current affairs, business, history, philosophy as well as automobiles. 
-
-Kelly & Walsh at Landmark offers a refined selection of books, stationery and accessories specifically for men, including fountain pens, journals, stylish bags and leather goods.
-
-Kelly and Walsh Ltd. was first established as a publishing house and book retailer in the 1870s, Shanghai. The books were published in English, with a great focus on topics of Asian culture. It gradually expanded its business to Japan, Singapore and Hong Kong. Many of the books had exquisite designs, such as silk bindings, fold out maps and etc. In the 1950's, Kelly & Walsh established itself as a book retailer in Hong Kong. It has become one of the most historical bookstores in Hong Kong.
-
+<p>Kelly &amp; Walsh is synonymous with quality books. It carries an alluring collection of books on art and design, architecture and fashion. It also has a charming selection of cookbooks, classic literature, fictions, books on current affairs, business, history, philosophy as well as automobiles.
+Kelly &amp; Walsh at Landmark offers a refined selection of books, stationery and accessories specifically for men, including fountain pens, journals, stylish bags and leather goods.
+Kelly and Walsh Ltd. was first established as a publishing house and book retailer in the 1870s, Shanghai. The books were published in English, with a great focus on topics of Asian culture. It gradually expanded its business to Japan, Singapore and Hong Kong. Many of the books had exquisite designs, such as silk bindings, fold out maps and etc. In the 1950's, Kelly &amp; Walsh established itself as a book retailer in Hong Kong. It has become one of the most historical bookstores in Hong Kong.
+</p>
+<br>
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
@@ -133,9 +132,9 @@ Kelly and Walsh Ltd. was first established as a publishing house and book retail
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 29
+content-length: 27
 
-Mon-Sat 8am-10am & 12nn-3pm  
+Mon-Sat 8am-10am & 12nn-3pm
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -177,21 +176,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7b3a14f0-10d5-488a-970c-3a64d84bf477
+38187bb7-3f28-4f5a-9aef-b37bd04d0a83
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151626Z
+20151113T050301Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1

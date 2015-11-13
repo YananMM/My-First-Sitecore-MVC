@@ -23,6 +23,13 @@ key: __originator
 content-length: 0
 
 
+----field----
+field: {CA9B9F52-4FB0-4F87-A79F-24DEA62CDA65}
+name: __Default workflow
+key: __default workflow
+content-length: 0
+
+
 ----version----
 language: en
 version: 1
@@ -66,8 +73,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f1b15fe1-0884-4e57-a267-2109552e4ffe
+revision: 440d8e20-65f2-44f6-a64d-2a4a38a0790a
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 2
+
+包袋
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -95,14 +109,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f1b15fe1-0884-4e57-a267-2109552e4ffe
+440d8e20-65f2-44f6-a64d-2a4a38a0790a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T115425Z
+20151112T083536Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -113,8 +127,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: ef20a1bf-21e7-4c77-aba5-43683c837e01
+revision: 412d2665-0cf5-4770-b0ea-3d36b1559736
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 2
+
+包袋
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -142,14 +163,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ef20a1bf-21e7-4c77-aba5-43683c837e01
+412d2665-0cf5-4770-b0ea-3d36b1559736
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T115429Z
+20151112T083528Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

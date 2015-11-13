@@ -26,8 +26,16 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 07c973ce-6f9c-4023-91ce-d66359da2204
+revision: 7d34026e-64dc-44dc-834e-8ba263eb3446
 
+----field----
+field: {C487FA5B-2267-414F-A814-BA9CE7B96003}
+name: Article Description
+key: article description
+content-length: 242
+
+<p>Home to great monuments of civilisations past, the Eternal City is a capital of contrasts where the ancient and the modern worlds collide like nowhere else. Here the free spirited glamour of the new season finds its perfect match.</p>
+<br>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -55,14 +63,68 @@ name: __Revision
 key: __revision
 content-length: 36
 
-07c973ce-6f9c-4023-91ce-d66359da2204
+7d34026e-64dc-44dc-834e-8ba263eb3446
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151021T092100:635810160605457864Z
+20151110T094129Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: 621edd31-dd56-4b0c-b0f3-18f29afd090f
+
+----field----
+field: {C487FA5B-2267-414F-A814-BA9CE7B96003}
+name: Article Description
+key: article description
+content-length: 237
+
+<p>Home to great monuments of civilisations past, the Eternal City is a capital of contrasts where the ancient and the modern worlds collide like nowhere else. Here the free spirited glamour of the new season finds its perfect match.</p>
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151109T033621Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+621edd31-dd56-4b0c-b0f3-18f29afd090f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151110T094136Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -73,8 +135,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 167ea3c6-c698-4b6b-8dad-462a33f872ba
+revision: 57a600f8-503c-4372-ad8e-55ccbfe14230
 
+----field----
+field: {C487FA5B-2267-414F-A814-BA9CE7B96003}
+name: Article Description
+key: article description
+content-length: 237
+
+<p>Home to great monuments of civilisations past, the Eternal City is a capital of contrasts where the ancient and the modern worlds collide like nowhere else. Here the free spirited glamour of the new season finds its perfect match.</p>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -102,14 +171,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-167ea3c6-c698-4b6b-8dad-462a33f872ba
+57a600f8-503c-4372-ad8e-55ccbfe14230
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151021T091857:635810159375537517Z
+20151110T094141Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

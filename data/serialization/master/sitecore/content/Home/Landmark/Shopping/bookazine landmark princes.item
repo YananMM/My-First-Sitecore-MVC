@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 77
+content-length: 350
 
-{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}|{584512EB-189E-4FEF-9280-3F893DD9A9E1}
+{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}|{584512EB-189E-4FEF-9280-3F893DD9A9E1}|{7895E95B-BA35-4C28-9325-0BB7443E6945}|{F1CC2EDE-A165-4FC4-B47A-8C0DF29BDE27}|{73D42903-0C38-4D70-A14E-C773BDCFBCC6}|{BB0E8159-D1DF-4198-9007-2E5DB5A725BE}|{362A498E-7EAB-47A3-9196-C6D5F3B4DAC3}|{716DD4EF-A6E5-49CF-9C4B-8DD7EDFD441A}|{43B3E7AE-04E4-4228-A4A0-17EC764526CF}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-309-313A
 ----version----
 language: en
 version: 1
-revision: 235fdf28-06b5-4bcf-ba2d-ab7c1abac363
+revision: 76f017b1-b966-4f88-b766-e99221eecc0e
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -62,7 +62,7 @@ name: Brand Title
 key: brand title
 content-length: 29
 
-Bookazine (LANDMARK PRINCE'S)
+Bookazine (Landmark Prince's)
 ----field----
 field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
 name: Content Title
@@ -104,7 +104,7 @@ name: Page Title
 key: page title
 content-length: 29
 
-Bookazine (LANDMARK PRINCE'S)
+Bookazine (Landmark Prince's)
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
@@ -161,25 +161,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-235fdf28-06b5-4bcf-ba2d-ab7c1abac363
+76f017b1-b966-4f88-b766-e99221eecc0e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151621Z
+20151113T061850Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: d5e0b657-5f11-4b86-9911-8366e40a0860
+revision: 2344858b-415a-4fd8-b4f5-99d2cc5f8ed5
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -187,7 +187,7 @@ name: Brand Title
 key: brand title
 content-length: 29
 
-Bookazine (LANDMARK PRINCE'S)
+Bookazine (Landmark Prince's)
 ----field----
 field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
 name: Content Title
@@ -229,7 +229,7 @@ name: Page Title
 key: page title
 content-length: 29
 
-Bookazine (LANDMARK PRINCE'S)
+Bookazine (Landmark Prince's)
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
@@ -293,25 +293,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d5e0b657-5f11-4b86-9911-8366e40a0860
+2344858b-415a-4fd8-b4f5-99d2cc5f8ed5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063848Z
+20151112T031847Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 1215694b-cf17-4599-8b1a-71b8178a0f3a
+revision: 29860255-c2e1-4896-82ee-7e43502798d7
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -319,7 +319,7 @@ name: Brand Title
 key: brand title
 content-length: 29
 
-Bookazine (LANDMARK PRINCE'S)
+Bookazine (Landmark Prince's)
 ----field----
 field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
 name: Content Title
@@ -361,7 +361,7 @@ name: Page Title
 key: page title
 content-length: 29
 
-Bookazine (LANDMARK PRINCE'S)
+Bookazine (Landmark Prince's)
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
@@ -373,10 +373,10 @@ Bookazine 是一間家族式經營的香港本土連鎖書店。有別於一般�
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 50
+content-length: 49
 
 星期一至星期六︰早上9時30分至晚上7時30分
-星期日及公眾假期︰早上10時30分至晚上6時30分 
+星期日及公眾假期︰早上10時30分至晚上6時30分
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -418,18 +418,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1215694b-cf17-4599-8b1a-71b8178a0f3a
+29860255-c2e1-4896-82ee-7e43502798d7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063848Z
+20151112T031853Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

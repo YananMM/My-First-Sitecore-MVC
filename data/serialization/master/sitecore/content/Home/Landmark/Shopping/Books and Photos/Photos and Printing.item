@@ -59,8 +59,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 922678f8-5618-4082-b734-402280c96547
+revision: 80ab6fd3-246a-41b6-b08d-94ac22462508
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 5
+
+相片及冲印
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -88,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-922678f8-5618-4082-b734-402280c96547
+80ab6fd3-246a-41b6-b08d-94ac22462508
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T121022Z
+20151112T091354Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -106,8 +113,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 71c6d8f4-9205-4c05-99bf-4c93e579b245
+revision: c3e22d7e-187c-48b9-a2c1-6dbb07cb873a
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 5
+
+相片及沖曬
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -135,14 +149,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-71c6d8f4-9205-4c05-99bf-4c93e579b245
+c3e22d7e-187c-48b9-a2c1-6dbb07cb873a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T121024Z
+20151112T091347Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

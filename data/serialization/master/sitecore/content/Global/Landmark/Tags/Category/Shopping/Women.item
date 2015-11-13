@@ -59,8 +59,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f71a52fb-7a8b-4542-841f-143e20496478
+revision: 5a33c641-587a-4acf-af19-26b7fc2e02b1
 
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 2
+
+女士
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -88,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f71a52fb-7a8b-4542-841f-143e20496478
+5a33c641-587a-4acf-af19-26b7fc2e02b1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T083216Z
+20151111T113746Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -106,8 +113,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 388f8582-5a83-445f-b39d-7771974d787a
+revision: f89831d9-389a-4395-96b3-5ec20373748d
 
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 2
+
+女士
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -135,14 +149,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-388f8582-5a83-445f-b39d-7771974d787a
+f89831d9-389a-4395-96b3-5ec20373748d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T083219Z
+20151111T113748Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

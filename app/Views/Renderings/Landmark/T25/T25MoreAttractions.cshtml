@@ -24,16 +24,22 @@
             int i = 1;
             foreach (var item in attractions)
             {
-                <div @if (i == 1) { <text>
-                     class="item active"
-                     </text>              } class="item">
-                    <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Landing thumb Image", item)"></div>
+                <div @if (i == 1)
+                     {
+                         <text>
+                             class="item active"
+                         </text>
+                     } class="item">
+                    @{
+                        var imgage = LandmarkHelper.GetCallOutImage(item);
+                    }
+                    <div class="carousel-image" data-bgsrc="@imgage"></div>
                     <div class="carousel-caption">
                         <div class="carousel-caption-inner">
                             <div class="gd-carousel-detail">
-                                <h4>@Html.Sitecore().Field("Cover Title", item)</h4>
+                                <h4>@Html.Sitecore().Field("Article Headline", item)</h4>
                                 <p>@Html.Sitecore().Field("Content Description", item)</p>
-                                <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))" class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Glossary Value",(Item) Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem))</a>
+                                <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))" class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem))</a>
                             </div>
                         </div>
                     </div>

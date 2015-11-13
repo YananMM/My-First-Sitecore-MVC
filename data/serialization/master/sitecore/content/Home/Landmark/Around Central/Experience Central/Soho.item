@@ -10,26 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{3E5B0D5C-D3BA-46DD-8C4A-C140214592AC}" />
+114.1523449
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
 
-<image mediaid="{5C409634-7CD4-4EBB-A89E-9D27FEBDA5FD}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
-
-<image mediaid="{5C409634-7CD4-4EBB-A89E-9D27FEBDA5FD}" />
+22.2823763
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -40,15 +33,8 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 68011610-b343-4f8b-a661-7b837d43c47a
+revision: e66c894f-9172-4041-be3e-766952cb370f
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 4
-
-Soho
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -83,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-68011610-b343-4f8b-a661-7b837d43c47a
+e66c894f-9172-4041-be3e-766952cb370f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093858:635828315385722253Z
+20151112T132121Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +87,8 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 714dc444-8388-4e89-ad3c-ed20adeaa234
+revision: db18a3c3-ecff-41f9-ae96-67ff0317696a
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-苏豪区
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -144,14 +123,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-714dc444-8388-4e89-ad3c-ed20adeaa234
+db18a3c3-ecff-41f9-ae96-67ff0317696a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093920:635828315606694892Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +141,8 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 55df8975-e72f-40b6-a2dc-e5318ad48337
+revision: 65fdf9d6-e361-4790-b825-ce56f3dd6bb5
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-蘇豪區
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -205,14 +177,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-55df8975-e72f-40b6-a2dc-e5318ad48337
+65fdf9d6-e361-4790-b825-ce56f3dd6bb5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093909:635828315492728373Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

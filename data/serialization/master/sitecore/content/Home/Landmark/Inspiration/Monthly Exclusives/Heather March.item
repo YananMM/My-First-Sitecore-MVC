@@ -24,6 +24,20 @@ content-length: 0
 
 
 ----field----
+field: {EF0834ED-A9CD-414C-B3FD-3F282C6B155E}
+name: Brand
+key: brand
+content-length: 38
+
+{A960C567-84A3-4E71-A89A-3D6B663E45C0}
+----field----
+field: {C9FE1BF7-0BCB-46A5-8910-5CC57B66B83E}
+name: Tags
+key: tags
+content-length: 38
+
+{0948F71F-D1A4-4B6A-941B-863C5ED70294}
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -33,7 +47,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 0cb7b858-205d-4e45-ad01-6f1c92439df6
+revision: ee7e333b-5830-42b8-a0a4-d428ffab7bfc
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -69,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0cb7b858-205d-4e45-ad01-6f1c92439df6
+ee7e333b-5830-42b8-a0a4-d428ffab7bfc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151028T052306Z
+20151109T063159Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -150,7 +164,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: 6b1aabd9-cda7-481c-a3b1-49bed2aafe47
+revision: 4a8ec9b9-6837-42b9-8766-d5916ed7f780
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -188,18 +202,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6b1aabd9-cda7-481c-a3b1-49bed2aafe47
+4a8ec9b9-6837-42b9-8766-d5916ed7f780
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T141955Z
+20151109T093317Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

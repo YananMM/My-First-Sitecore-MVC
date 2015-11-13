@@ -20,13 +20,13 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 77
+content-length: 155
 
-{838D33D8-9AC8-4369-AB18-9470EADCD49B}|{BC0F4B93-552A-418E-B620-7B7F13506613}
+{838D33D8-9AC8-4369-AB18-9470EADCD49B}|{BC0F4B93-552A-418E-B620-7B7F13506613}|{50CB2BA4-EF38-46ED-908C-1CAD2F171849}|{983E7317-DB51-4EFE-9081-671D78C971C2}
 ----version----
 language: en
 version: 1
-revision: b65d53f2-3c19-49a7-a7a1-17509d78c875
+revision: 5717dbb4-dd85-4da1-a4da-b1a21fa37f16
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -95,9 +95,9 @@ As a time-honoured craft turns raw stone into precious jewellery, the master che
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 25
+content-length: 24
 
-11am-3pm; 6pm-11pm Daily 
+11am-3pm; 6pm-11pm Daily
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -139,21 +139,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b65d53f2-3c19-49a7-a7a1-17509d78c875
+5717dbb4-dd85-4da1-a4da-b1a21fa37f16
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T064004Z
+20151113T031108Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1

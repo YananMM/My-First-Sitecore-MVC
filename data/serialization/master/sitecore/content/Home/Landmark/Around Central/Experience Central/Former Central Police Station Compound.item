@@ -10,26 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{9953EAE4-8D73-48AB-8F39-B129332EE440}" />
+114.1538009
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
 
-<image mediaid="{A4ED7DE4-2A3D-4986-B5DE-CEE7CCA5AAF9}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
-
-<image mediaid="{A4ED7DE4-2A3D-4986-B5DE-CEE7CCA5AAF9}" />
+22.2819736
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -40,22 +33,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 8f08cfc9-9f05-42f9-94bb-dc18c75547b4
+revision: 54bd52f1-64d2-4f4d-85a7-b6e2a83aad47
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 38
-
-Former Central Police Station Compound
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 107
+content-length: 113
 
-<link linktype="external" url="http://www.centralpolicestation.org.hk/en/index.asp " anchor="" target="" />
+<link linktype="external" url="http://www.centralpolicestation.org.hk/en/index.asp " anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -90,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8f08cfc9-9f05-42f9-94bb-dc18c75547b4
+54bd52f1-64d2-4f4d-85a7-b6e2a83aad47
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T092942:635828309826184266Z
+20151113T021603Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,22 +94,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 9fd16106-4782-47b2-b29a-bf664ac95dfd
+revision: a7810d2a-9936-4b8d-9340-e5d10b547697
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 8
-
-前中区警署建筑群
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 107
+content-length: 113
 
-<link linktype="external" url="http://www.centralpolicestation.org.hk/ch/index.asp " anchor="" target="" />
+<link linktype="external" url="http://www.centralpolicestation.org.hk/ch/index.asp " anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -158,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9fd16106-4782-47b2-b29a-bf664ac95dfd
+a7810d2a-9936-4b8d-9340-e5d10b547697
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093026:635828310263799296Z
+20151113T021637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -176,22 +155,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: bf16d74b-c8d9-41ba-99ee-f4e3b7a32d47
+revision: 36c1598a-2fb8-49ab-9f9f-8356e8ba35b6
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 8
-
-前中區警署建築群
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 106
+content-length: 113
 
-<link linktype="external" url="http://www.centralpolicestation.org.hk/ch/index.asp" anchor="" target="" />
+<link linktype="external" url="http://www.centralpolicestation.org.hk/ch/index.asp " anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -226,14 +198,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bf16d74b-c8d9-41ba-99ee-f4e3b7a32d47
+36c1598a-2fb8-49ab-9f9f-8356e8ba35b6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093001:635828310018685276Z
+20151113T021618Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

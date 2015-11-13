@@ -10,6 +10,13 @@ template: {2EE73BEB-F8DA-4F35-BB46-C1B0B8AC3945}
 templatekey: T23 Page AB
 
 ----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
+content-length: 58
+
+<image mediaid="{8D27A8CF-F900-421C-A684-6084E2973CCF}" />
+----field----
 field: {B966F61E-9F08-4674-AC01-EE1064020145}
 name: Article Date
 key: article date
@@ -37,6 +44,13 @@ key: page style
 content-length: 7
 
 Style A
+----field----
+field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
+name: Tags
+key: tags
+content-length: 155
+
+{5823AC84-F42A-4608-AFFE-2BA7F7F1A0F4}|{23F4E31F-52DB-49E5-AA30-D4DE7D45C897}|{EBADC6BF-4BAD-483E-A900-F3DA1C0776C1}|{98A023B0-0A8F-479D-9224-30A971CDFB28}
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
