@@ -10,42 +10,28 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
 content-length: 58
 
-<image mediaid="{56114525-3160-4D5D-A9F6-C1389AFB4056}" />
+<image mediaid="{C377A9BD-86AE-479E-8DB0-8EA87D512E36}" />
 ----field----
 field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
 name: Landing thumb Image
 key: landing thumb image
-content-length: 58
+content-length: 0
 
-<image mediaid="{C377A9BD-86AE-479E-8DB0-8EA87D512E36}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
 
-<image mediaid="{C377A9BD-86AE-479E-8DB0-8EA87D512E36}" />
-----field----
-field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
-name: Experience Type
-key: experience type
-content-length: 38
-
-{DA1C68B3-0958-4250-A9F6-2F03EAA17545}
 ----version----
 language: en
 version: 1
-revision: e0c3f2f5-338f-46fb-ba46-8cb8a7540fe0
+revision: 9bc45864-a021-4179-9f2a-e55fd3b41799
 
 ----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
 content-length: 11
 
 High Street
@@ -90,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e0c3f2f5-338f-46fb-ba46-8cb8a7540fe0
+9bc45864-a021-4179-9f2a-e55fd3b41799
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151111T094710:635828320309883899Z
+20151113T060745:635829916651265999Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -110,13 +96,6 @@ language: zh-CN
 version: 1
 revision: 3f0c153e-a929-44be-aa2b-ad61762bbc69
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 2
-
-高街
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
@@ -178,13 +157,6 @@ language: zh-HK
 version: 1
 revision: f001f260-dce0-40a4-832c-5bf261e6b3d3
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 2
-
-高街
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website

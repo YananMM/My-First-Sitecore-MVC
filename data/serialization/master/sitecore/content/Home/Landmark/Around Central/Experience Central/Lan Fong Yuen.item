@@ -10,12 +10,12 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
 content-length: 58
 
-<image mediaid="{046B598D-A0F8-46D6-AF55-1661BDF5C644}" />
+<image mediaid="{15B7AA05-481F-4BBF-8BCC-3728AB755F02}" />
 ----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
@@ -27,32 +27,18 @@ content-length: 27
 field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
 name: Landing thumb Image
 key: landing thumb image
-content-length: 58
+content-length: 0
 
-<image mediaid="{15B7AA05-481F-4BBF-8BCC-3728AB755F02}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
 
-<image mediaid="{15B7AA05-481F-4BBF-8BCC-3728AB755F02}" />
-----field----
-field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
-name: Experience Type
-key: experience type
-content-length: 38
-
-{B0EB0EDF-4E95-4BE6-9BEE-4DC2D2DA7E86}
 ----version----
 language: en
 version: 1
-revision: abdab251-206a-4cf8-9473-ea0ac33239d1
+revision: 533b54c5-fb68-4521-84c1-c237edd661c2
 
 ----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
 content-length: 13
 
 Lan Fong Yuen
@@ -90,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-abdab251-206a-4cf8-9473-ea0ac33239d1
+533b54c5-fb68-4521-84c1-c237edd661c2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151111T100425:635828330650665358Z
+20151113T061049:635829918498499504Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -110,13 +96,6 @@ language: zh-CN
 version: 1
 revision: 6d6e8cd1-6e40-4b09-88a1-1278b541b4e2
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-兰芳园
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -171,13 +150,6 @@ language: zh-HK
 version: 1
 revision: a075b63a-3cf8-41fa-b1be-8f4901b51c33
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-蘭芳園
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address

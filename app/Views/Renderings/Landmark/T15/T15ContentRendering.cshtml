@@ -63,7 +63,10 @@
                                          {<text>gdf-@type.Replace("{", "").Replace("}", "")</text>
                                          }">
                     <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">
-                        <img src="@Html.Sitecore().ImageFieldSrc("Landing thumb Image", item)">
+                        @{
+                            var image = LandmarkHelper.GetCallOutImage(item);
+                        }
+                        <img src="@image">
                     </a>
                     <h5>
                         @{
@@ -83,7 +86,7 @@
                                          }
                         }
                     </h5>
-                    <h3>@item["Cover Title"]</h3>
+                    <h3>@item["Article Headline"]</h3>
                 </div>
             }
         </div>

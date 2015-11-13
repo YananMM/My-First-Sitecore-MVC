@@ -10,42 +10,28 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
 content-length: 58
 
-<image mediaid="{254FD731-CBE1-4A02-8D77-C22F208DD8A6}" />
+<image mediaid="{2444D4E7-DD1E-4FAF-90AD-1028A78D425C}" />
 ----field----
 field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
 name: Landing thumb Image
 key: landing thumb image
-content-length: 58
+content-length: 0
 
-<image mediaid="{2444D4E7-DD1E-4FAF-90AD-1028A78D425C}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
 
-<image mediaid="{2444D4E7-DD1E-4FAF-90AD-1028A78D425C}" />
-----field----
-field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
-name: Experience Type
-key: experience type
-content-length: 38
-
-{DA1C68B3-0958-4250-A9F6-2F03EAA17545}
 ----version----
 language: en
 version: 1
-revision: 314dd11d-5dfc-41a3-bada-e2de87b24d41
+revision: d6f06c3b-6161-4252-a6a1-d732e76f482e
 
 ----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
 content-length: 27
 
 Old Supreme Court Building 
@@ -90,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-314dd11d-5dfc-41a3-bada-e2de87b24d41
+d6f06c3b-6161-4252-a6a1-d732e76f482e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151111T094820:635828321000873421Z
+20151113T061216:635829919363033258Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -110,13 +96,6 @@ language: zh-CN
 version: 1
 revision: caa64213-8bba-4d15-bc3a-0f3954fcc109
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 7
-
-旧最高法院大楼
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
@@ -178,13 +157,6 @@ language: zh-HK
 version: 1
 revision: 12bc6900-b682-4686-8315-f9438ae3c7e6
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 7
-
-舊最高法院大樓
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website

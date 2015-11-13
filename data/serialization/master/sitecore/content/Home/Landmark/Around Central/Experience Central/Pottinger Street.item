@@ -10,42 +10,28 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
 content-length: 58
 
-<image mediaid="{1EAB6C09-1AE4-467F-A069-8E74074FE47F}" />
+<image mediaid="{936DAECE-BF0D-4C17-8776-378411519D35}" />
 ----field----
 field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
 name: Landing thumb Image
 key: landing thumb image
-content-length: 58
+content-length: 0
 
-<image mediaid="{936DAECE-BF0D-4C17-8776-378411519D35}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
 
-<image mediaid="{936DAECE-BF0D-4C17-8776-378411519D35}" />
-----field----
-field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
-name: Experience Type
-key: experience type
-content-length: 38
-
-{B0EB0EDF-4E95-4BE6-9BEE-4DC2D2DA7E86}
 ----version----
 language: en
 version: 1
-revision: 1e788955-3fb5-47c6-8789-05b0207086ff
+revision: d47c6db3-ff68-4c6b-a085-0ddb8527967d
 
 ----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
 content-length: 16
 
 Pottinger Street
@@ -90,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1e788955-3fb5-47c6-8789-05b0207086ff
+d47c6db3-ff68-4c6b-a085-0ddb8527967d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151111T093755:635828314754656158Z
+20151113T061254:635829919742031618Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -110,13 +96,6 @@ language: zh-CN
 version: 1
 revision: f2388083-dbd5-47b3-ae58-de617fcf69af
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 4
-
-砵典乍街
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
@@ -178,13 +157,6 @@ language: zh-HK
 version: 1
 revision: cc8b3a88-5f36-4c06-9ccb-5bcc482009b5
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 4
-
-砵典乍街
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website

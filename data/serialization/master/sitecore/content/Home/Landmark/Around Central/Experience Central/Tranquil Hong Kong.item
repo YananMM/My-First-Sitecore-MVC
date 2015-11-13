@@ -10,42 +10,28 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
 content-length: 58
 
-<image mediaid="{99B3679B-24B4-40A6-B6C1-C658D03FF45F}" />
+<image mediaid="{956A0174-FEF4-48DB-BEDD-C5C02C26D02B}" />
 ----field----
 field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
 name: Landing thumb Image
 key: landing thumb image
-content-length: 58
+content-length: 0
 
-<image mediaid="{956A0174-FEF4-48DB-BEDD-C5C02C26D02B}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
 
-<image mediaid="{956A0174-FEF4-48DB-BEDD-C5C02C26D02B}" />
-----field----
-field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
-name: Experience Type
-key: experience type
-content-length: 155
-
-{2DB68234-83E0-4AEE-96C3-035556304327}|{DA1C68B3-0958-4250-A9F6-2F03EAA17545}|{ED3568AF-EFF9-439E-BE3E-C2F93A72CBCA}|{B0EB0EDF-4E95-4BE6-9BEE-4DC2D2DA7E86}
 ----version----
 language: en
 version: 1
-revision: e97b1bd0-a9fb-4014-8a38-8426f8c0640e
+revision: 3cd57317-efa6-457c-a0d8-5a4ff691685d
 
 ----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
 content-length: 18
 
 Tranquil Hong Kong
@@ -76,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e97b1bd0-a9fb-4014-8a38-8426f8c0640e
+3cd57317-efa6-457c-a0d8-5a4ff691685d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151111T101316:635828335961289108Z
+20151113T061700:635829922208345290Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -96,13 +82,6 @@ language: zh-CN
 version: 1
 revision: 7b8e52bd-48af-4639-9341-15c804863d58
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 7
-
-香港宁静的一面
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
@@ -150,13 +129,6 @@ language: zh-HK
 version: 1
 revision: 826a1157-e3bc-4df5-a12b-33ffdfa58556
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 7
-
-香港寧靜的一面
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title

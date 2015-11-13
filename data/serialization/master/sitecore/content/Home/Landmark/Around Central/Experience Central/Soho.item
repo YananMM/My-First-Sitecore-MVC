@@ -10,42 +10,28 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
 content-length: 58
 
-<image mediaid="{3E5B0D5C-D3BA-46DD-8C4A-C140214592AC}" />
+<image mediaid="{5C409634-7CD4-4EBB-A89E-9D27FEBDA5FD}" />
 ----field----
 field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
 name: Landing thumb Image
 key: landing thumb image
-content-length: 58
+content-length: 0
 
-<image mediaid="{5C409634-7CD4-4EBB-A89E-9D27FEBDA5FD}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
 
-<image mediaid="{5C409634-7CD4-4EBB-A89E-9D27FEBDA5FD}" />
-----field----
-field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
-name: Experience Type
-key: experience type
-content-length: 38
-
-{2DB68234-83E0-4AEE-96C3-035556304327}
 ----version----
 language: en
 version: 1
-revision: 68011610-b343-4f8b-a661-7b837d43c47a
+revision: 0dabf031-6d3f-4bb3-9600-7fabc1aa1457
 
 ----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
 content-length: 4
 
 Soho
@@ -83,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-68011610-b343-4f8b-a661-7b837d43c47a
+0dabf031-6d3f-4bb3-9600-7fabc1aa1457
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151111T093858:635828315385722253Z
+20151113T061311:635829919910504360Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -103,13 +89,6 @@ language: zh-CN
 version: 1
 revision: 714dc444-8388-4e89-ad3c-ed20adeaa234
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-苏豪区
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -164,13 +143,6 @@ language: zh-HK
 version: 1
 revision: 55df8975-e72f-40b6-a2dc-e5318ad48337
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-蘇豪區
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address

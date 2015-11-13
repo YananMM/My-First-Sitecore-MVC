@@ -10,42 +10,28 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
 content-length: 58
 
-<image mediaid="{60F8576F-7F9E-40E8-8AD6-520CFAADE8AD}" />
+<image mediaid="{0633B391-BB64-4F23-B822-6728D9D1B03F}" />
 ----field----
 field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
 name: Landing thumb Image
 key: landing thumb image
-content-length: 58
+content-length: 0
 
-<image mediaid="{0633B391-BB64-4F23-B822-6728D9D1B03F}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
 
-<image mediaid="{0633B391-BB64-4F23-B822-6728D9D1B03F}" />
-----field----
-field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
-name: Experience Type
-key: experience type
-content-length: 77
-
-{DA1C68B3-0958-4250-A9F6-2F03EAA17545}|{B0EB0EDF-4E95-4BE6-9BEE-4DC2D2DA7E86}
 ----version----
 language: en
 version: 1
-revision: 6ebcd661-366a-41b6-9e61-5861b83c374e
+revision: 2924215f-ace1-432c-9df6-8d05b58ef3ec
 
 ----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
 content-length: 10
 
 Lascar Row
@@ -83,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6ebcd661-366a-41b6-9e61-5861b83c374e
+2924215f-ace1-432c-9df6-8d05b58ef3ec
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151111T095940:635828327803202492Z
+20151113T061108:635829918682259932Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -103,13 +89,6 @@ language: zh-CN
 version: 1
 revision: 463292b8-e00f-4944-bc04-3f29e400d963
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-摩罗街
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -164,13 +143,6 @@ language: zh-HK
 version: 1
 revision: 56acdfc3-eea0-43bf-962b-5e6f8b744f7c
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-摩羅街
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address

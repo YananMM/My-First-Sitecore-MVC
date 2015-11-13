@@ -10,12 +10,12 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
 content-length: 58
 
-<image mediaid="{25A6C506-9B15-433D-AAAA-949C7D60755E}" />
+<image mediaid="{B5B50651-EABE-4426-98EC-0080A73BE8C9}" />
 ----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
@@ -27,32 +27,18 @@ content-length: 15
 field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
 name: Landing thumb Image
 key: landing thumb image
-content-length: 58
+content-length: 0
 
-<image mediaid="{B5B50651-EABE-4426-98EC-0080A73BE8C9}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
 
-<image mediaid="{B5B50651-EABE-4426-98EC-0080A73BE8C9}" />
-----field----
-field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
-name: Experience Type
-key: experience type
-content-length: 38
-
-{B0EB0EDF-4E95-4BE6-9BEE-4DC2D2DA7E86}
 ----version----
 language: en
 version: 1
-revision: 47c3fbae-5427-4367-ae72-09a6eb1b9de5
+revision: 6b2d1314-3dec-4e6b-8e17-909c6b26f767
 
 ----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
 content-length: 19
 
 Lin Heung Tea House
@@ -97,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-47c3fbae-5427-4367-ae72-09a6eb1b9de5
+6b2d1314-3dec-4e6b-8e17-909c6b26f767
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151111T100603:635828331635281675Z
+20151113T061124:635829918842124854Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -117,13 +103,6 @@ language: zh-CN
 version: 1
 revision: 1d634924-2056-431c-b299-7907bd79c36e
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-莲香楼
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
@@ -185,13 +164,6 @@ language: zh-HK
 version: 1
 revision: e198b346-1c37-4959-a5cc-28781f85e6c9
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-蓮香樓
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website

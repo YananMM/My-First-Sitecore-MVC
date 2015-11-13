@@ -10,12 +10,12 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
 content-length: 58
 
-<image mediaid="{6E20E0E5-39DD-4C58-B1ED-DDBE15C9DFA0}" />
+<image mediaid="{615D85CF-CAE0-403F-9939-B817C2FCFE51}" />
 ----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
@@ -27,32 +27,18 @@ content-length: 15
 field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
 name: Landing thumb Image
 key: landing thumb image
-content-length: 58
+content-length: 0
 
-<image mediaid="{615D85CF-CAE0-403F-9939-B817C2FCFE51}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
 
-<image mediaid="{615D85CF-CAE0-403F-9939-B817C2FCFE51}" />
-----field----
-field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
-name: Experience Type
-key: experience type
-content-length: 38
-
-{ED3568AF-EFF9-439E-BE3E-C2F93A72CBCA}
 ----version----
 language: en
 version: 1
-revision: 9ec8f832-f273-4bae-8c08-814737de71d5
+revision: 333cf9f0-6144-44f3-b880-09824ae8f734
 
 ----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
 content-length: 42
 
 Hong Kong Zoological and Botanical Gardens
@@ -97,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9ec8f832-f273-4bae-8c08-814737de71d5
+333cf9f0-6144-44f3-b880-09824ae8f734
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151111T092702:635828308222602546Z
+20151113T060955:635829917958466543Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -117,13 +103,6 @@ language: zh-CN
 version: 1
 revision: dc72cf38-cb63-40de-ab2a-6091ce4c87f5
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 7
-
-香港动植物公园
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
@@ -178,13 +157,6 @@ language: zh-HK
 version: 1
 revision: 9ea0f639-aa3a-48e0-9f2b-01bc716e4017
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 7
-
-香港動植物公園
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website

@@ -10,42 +10,28 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
 content-length: 58
 
-<image mediaid="{98362243-D400-48E5-BA09-722D4A7B701A}" />
+<image mediaid="{060733E5-00DE-4968-B722-17DBBD4060B8}" />
 ----field----
 field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
 name: Landing thumb Image
 key: landing thumb image
-content-length: 58
+content-length: 0
 
-<image mediaid="{060733E5-00DE-4968-B722-17DBBD4060B8}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
 
-<image mediaid="{060733E5-00DE-4968-B722-17DBBD4060B8}" />
-----field----
-field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
-name: Experience Type
-key: experience type
-content-length: 38
-
-{2DB68234-83E0-4AEE-96C3-035556304327}
 ----version----
 language: en
 version: 1
-revision: 0ebf1487-348f-4e86-99d0-903739691127
+revision: 781d4316-aef3-4a0f-ac4d-27e8c4ada66f
 
 ----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
 content-length: 13
 
 Lan Kwai Fong
@@ -90,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0ebf1487-348f-4e86-99d0-903739691127
+781d4316-aef3-4a0f-ac4d-27e8c4ada66f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151111T093049:635828310498772735Z
+20151113T061031:635829918312687746Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -110,13 +96,6 @@ language: zh-CN
 version: 1
 revision: ce6a4737-0acf-47ba-9474-dba023d9baab
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-兰桂坊
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
@@ -178,13 +157,6 @@ language: zh-HK
 version: 1
 revision: 12986516-3c41-4b85-9279-7c0d5a4757d9
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-蘭桂坊
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website

@@ -10,12 +10,12 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
 content-length: 58
 
-<image mediaid="{5E8C9C8B-F230-45A7-846C-804A3F75AA7B}" />
+<image mediaid="{AF5F8A9B-96DB-40F3-9CAF-00DB51C077CF}" />
 ----field----
 field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
 name: Landing thumb Image
@@ -23,29 +23,15 @@ key: landing thumb image
 content-length: 58
 
 <image mediaid="{AF5F8A9B-96DB-40F3-9CAF-00DB51C077CF}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
-
-<image mediaid="{AF5F8A9B-96DB-40F3-9CAF-00DB51C077CF}" />
-----field----
-field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
-name: Experience Type
-key: experience type
-content-length: 38
-
-{ED3568AF-EFF9-439E-BE3E-C2F93A72CBCA}
 ----version----
 language: en
 version: 1
-revision: 3695dc90-2b04-4e76-ac40-a5b4188bd3c4
+revision: 7baf209e-ec3f-4e69-824f-21f3adfba7a3
 
 ----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
 content-length: 11
 
 Chater Road
@@ -90,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3695dc90-2b04-4e76-ac40-a5b4188bd3c4
+7baf209e-ec3f-4e69-824f-21f3adfba7a3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151111T092620:635828307801598466Z
+20151113T060412:635829914522506835Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -110,13 +96,6 @@ language: zh-CN
 version: 1
 revision: 583825a9-a745-455c-8e26-746ee6a8c009
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-遮打道
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -171,13 +150,6 @@ language: zh-HK
 version: 1
 revision: c04a3e4e-f085-4aac-93e4-46f3f4aa4f54
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-遮打道
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
