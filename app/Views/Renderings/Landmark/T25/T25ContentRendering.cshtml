@@ -9,91 +9,90 @@
     var tagsTrees = LandmarkHelper.GetTagsTree();
     var currentItem = Sitecore.Context.Item;
 }
-<div id="gd-carousel-mainimage-single" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-single">
-    <div class="carousel-inner">
-        <div class="item active">
-            <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Cover Image", Sitecore.Context.Item)"></div>
-            <div class="carousel-caption">
-                <div class="carousel-caption-inner">
-                    <div class="gd-carousel-detail">
-                        <div class="gd-mainimage-brief2">
-                            <h2>@Html.Sitecore().Field("Cover Title").ToString().ToUpper()</h2>
-                            <ul>
-                                @{
+<div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-fixed" data-ride="carousel">
+    @Html.Sitecore().Placeholder("t25-slides")
+    <div class="carousel-caption">
+        <div class="carousel-caption-inner">
+            <div class="gd-carousel-detail">
+                <div class="gd-mainimage-brief2">
+                    <h2>@Html.Sitecore().Field("Cover Title").ToString().ToUpper()</h2>
+                    <ul>
+                        @{
                                     MultilistField experienceType = currentItem.Fields["Experience Type"];
                                     foreach (var type in experienceType)
                                     {
-                                        <li>@Sitecore.Context.Database.GetItem(type.ToString()).Fields["Tag Name"].ToString().ToUpper()</li>
+                                <li>@Sitecore.Context.Database.GetItem(type.ToString()).Fields["Tag Name"].ToString().ToUpper()</li>
                                     }
+                        }
+                    </ul>
+                    <div class="table-responsive gd-mainimage-table">
+                        <table>
+                            <tbody>
+                                @if (!string.IsNullOrEmpty(currentItem.Fields["Cover Phone"].ToString()))
+                                        {
+                                        <tr>
+                                            <th>
+                                                @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.PhoneItem)).ToString().ToUpper()
+                                            </th>
+                                            <td>@Html.Sitecore().Field("Cover Phone")</td>
+                                        </tr>
+                                        }
+                                @{
+                                            LinkField website = currentItem.Fields["Cover Website"];
+                                            if (!string.IsNullOrEmpty(website.Url))
+                                            {
+                                        <tr>
+                                            <th>
+                                                @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.WebsiteItem)).ToString().ToUpper()
+                                            </th>
+                                            <td>
+                                                <a href="@website.Url" target="@LandmarkHelper.GetLinkTarget(currentItem, "Cover Website")">@website.Url</a>
+                                            </td>
+                                        </tr>
+                                            }
                                 }
-                            </ul>
-                            <div class="table-responsive gd-mainimage-table">
-                                <table>
-                                    <tbody>
-                                        @if (!string.IsNullOrEmpty(currentItem.Fields["Cover Phone"].ToString()))
+                                @if (!string.IsNullOrEmpty(currentItem.Fields["Cover Address"].ToString()))
                                         {
-                                            <tr>
-                                                <th>
-                                                    @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.PhoneItem)).ToString().ToUpper()
-                                                </th>
-                                                <td>@Html.Sitecore().Field("Cover Phone")</td>
-                                            </tr>
+                                        <tr>
+                                            <th>
+                                                @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AddressItem)).ToString().ToUpper()
+                                            </th>
+                                            <td>
+                                                @Html.Sitecore().Field("Cover Address")
+                                            </td>
+                                        </tr>
                                         }
-                                        @if (!string.IsNullOrEmpty(currentItem.Fields["Cover Website"].ToString()))
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-responsive gd-tg-table">
+                        <table>
+                            <tbody>
+                                @if (tagsTrees != null && tagsTrees.Count != 0)
                                         {
-                                            <tr>
-                                                <th>
-                                                    @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.WebsiteItem)).ToString().ToUpper()
-                                                </th>
-                                                <td>
-                                                    <a href="@Html.Sitecore().Field("Cover Website")">@Html.Sitecore().Field("Cover Website")</a>
-                                                </td>
-                                            </tr>
-                                        }
-                                        @if (!string.IsNullOrEmpty(currentItem.Fields["Cover Address"].ToString()))
-                                        {
-                                            <tr>
-                                                <th>
-                                                    @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.AddressItem)).ToString().ToUpper()
-                                                </th>
-                                                <td>
-                                                    @Html.Sitecore().Field("Cover Address")
-                                                </td>
-                                            </tr>
-                                        }
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="table-responsive gd-tg-table">
-                                <table>
-                                    <tbody>
-                                        @if (tagsTrees !=null && tagsTrees.Count!=0)
-                                        {
-                                            <tr>
-                                                <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.TagsItem)).ToString().ToUpper()</th>
-                                                <td>
-                                                    @foreach (var item in tagsTrees)
+                                        <tr>
+                                            <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.TagsItem)).ToString().ToUpper()</th>
+                                            <td>
+                                                @foreach (var item in tagsTrees)
                                                     {<a href="javascript:;">
-                                                        @item.CurrentItem["Tag Name"].ToUpper() -
-                                                    </a>
+                                                    @item.CurrentItem["Tag Name"].ToUpper() -
+                                                </a>
                                                         int i = 1;
                                                         foreach (var it in item.Children)
                                                         {
-                                                            <a href="javascript:;">@it.CurrentItem["Tag Name"].ToUpper()</a>
+                                                <a href="javascript:;">@it.CurrentItem["Tag Name"].ToUpper()</a>
                                                             if (i != item.Children.Count)
                                                             {<text>,</text>
                                                             }
                                                             i++;
                                                         }
-                                                        <br />
+                                                <br />
                                                     }
-                                                </td>
-                                            </tr>
+                                            </td>
+                                        </tr>
                                         }
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
