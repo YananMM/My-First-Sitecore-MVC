@@ -1409,7 +1409,7 @@ pre code {
     width: 76%;
     padding-left: 10px;
     padding-right: 10px;
-    max-width: 1920px;
+    max-width: 1460px;
   }
 }
 .container2 {
@@ -12088,7 +12088,7 @@ h4 a:active {
     width: 76%;
     padding-left: 10px;
     padding-right: 10px;
-    max-width: 1920px;
+    max-width: 1460px;
   }
 }
 .gd-lightbox .modal-dialog > .navbar-header,
@@ -15563,6 +15563,11 @@ dl.gd-content-details-tags dd a:active {
 @media (min-width: 1600px) {
   .t23 .gd-mainimage.carousel-portrait .carousel-inner .item > .carousel-image {
     height: 960px;
+  }
+}
+@media (min-width: 1920px) {
+  .t23 .gd-mainimage.carousel-portrait .carousel-inner .item > .carousel-image {
+    height: 1200px;
   }
 }
 .t3 .gd-brief {
