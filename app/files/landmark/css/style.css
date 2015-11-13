@@ -6913,7 +6913,8 @@ button.close {
   .site-header nav {
     padding: 20px 0;
   }
-  .site-header nav h1 {
+  .site-header nav h1,
+  .site-header nav .logo-area {
     margin: -7px 0 0 -60px;
     top: 50%;
   }
@@ -7151,15 +7152,18 @@ button.close {
       padding: 0;
     }*/
   }
-  .site-header nav h1 {
+  .site-header nav h1,
+  .site-header nav .logo-area {
     margin: 38px 0 0 -75px;
     width: 150px;
     font-size: 0;
   }
-  .site-header nav h1 .img-logo {
+  .site-header nav h1 .img-logo,
+  .site-header nav .logo-area .img-logo {
     position: absolute;
   }
-  .site-header nav h1 .responsive-logo {
+  .site-header nav h1 .responsive-logo,
+  .site-header nav .logo-area .responsive-logo {
     padding-top: 75px;
     width: 150px;
     height: auto;
@@ -7202,14 +7206,17 @@ button.close {
   .site-header.clover {
     height: 100px;
   }
-  .site-header.clover nav h1 {
+  .site-header.clover nav h1,
+  .site-header.clover nav .logo-area {
     display: inline-block;
     height: auto;
   }
-  .site-header.clover nav h1 .img-logo {
+  .site-header.clover nav h1 .img-logo,
+  .site-header.clover nav .logo-area .img-logo {
     opacity: 0;
   }
-  .site-header.clover nav h1 .responsive-logo {
+  .site-header.clover nav h1 .responsive-logo,
+  .site-header.clover nav .logo-area .responsive-logo {
     padding-top: 0;
   }
   .site-header.clover nav .menu-left,
@@ -14980,7 +14987,7 @@ dl.gd-content-details-tags dd a:active {
 }
 @media (min-width: 768px) {
   .t32 .gd-search .gd-search-body ol li .gd-search-box2 img {
-    width: auto;
+    width: 212px;
     float: left;
     margin: 0  30px 0 0;
   }
