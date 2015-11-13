@@ -12,7 +12,7 @@
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
-            <h2>@Sitecore.Context.Item["Page Title"].ToUpper()</h2>
+            <h1>@Sitecore.Context.Item["Page Title"].ToUpper()</h1>
 @{
     string pdf = LandmarkHelper.FileFieldSrc("Floor Guide", activeItem);
     string name = LandmarkHelper.GetFileName("Floor Guide", activeItem);
@@ -94,7 +94,7 @@
                     </table>
                 </div>
                 <a id="gd-shop-detail-href" href="" class="gd-button gd-button-white">
-                    SEE MORE DETAILS <span class="icomoon-chevron-small-right"></span>
+                    @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.SeeMoreGlossaryItem)) <span class="icomoon-chevron-small-right"></span>
                 </a>
             </div>
         </div>
