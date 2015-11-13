@@ -3,6 +3,7 @@
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Landmark.Models
+@using Sitecore.Mvc.Extensions
 @model RenderingModel
 
 <div id="gd-carousel-mainimage-single" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-single">
@@ -14,7 +15,7 @@
                     <div class="gd-carousel-detail">
                         <div class="gd-mainimage-brief">
                             <h1>@Html.Sitecore().Field("Cover Title")</h1>
-                            @Html.Sitecore().Field("Cover Description")
+                            <p>@Html.Sitecore().Field("Cover Description")</p>
                         </div>
                     </div>
                 </div>
@@ -34,7 +35,7 @@
             <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Item.Children.First()))"><button class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Button Text")</button></a>
         </div>
     </div>
-    <div class="gd-location-map" data-lat="22.280545" data-lng="114.157903">
+    <div class="gd-location-map" data-lat="@Html.Sitecore().Field("Map Latitude")" data-lng="@Html.Sitecore().Field("Map Longitude")">
         <iframe src="/files/landmark/iframes/t33-iframe.html" frameborder="0"></iframe>
     </div>
     <div class="gd-brief">
