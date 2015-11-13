@@ -1,26 +1,40 @@
 ----item----
 version: 1
-id: {F7346C8F-5C88-4512-8FCF-DDFDB53B74DD}
+id: {9FC3BD1B-0EFC-4246-B307-806DD26D3639}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T20 Page/Page Data
-parent: {A92609EF-A378-4AB3-AAE3-5521139A6CFA}
-name: Page Data
+path: /sitecore/templates/User Defined/Landmark/Object/Article Object/__Standard Values
+parent: {E0472501-0925-4F7F-A5BC-84F0ECA1B7F8}
+name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {E0472501-0925-4F7F-A5BC-84F0ECA1B7F8}
+templatekey: Article Object
 
+----field----
+field: {B966F61E-9F08-4674-AC01-EE1064020145}
+name: Article Date
+key: article date
+content-length: 16
+
+20151028T160000Z
 ----version----
 language: en
 version: 1
-revision: 547ae6c2-85bb-450a-9c5a-27c9cc4e3382
+revision: 47d0f8e3-1da9-49f3-bc14-32ffd8a9882d
 
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150806T063654Z
+20151029T082210Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-547ae6c2-85bb-450a-9c5a-27c9cc4e3382
+47d0f8e3-1da9-49f3-bc14-32ffd8a9882d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151028T075251Z
+20151029T085153:635817055134926055Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
