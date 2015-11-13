@@ -17,110 +17,111 @@
             var learnMoreItem = Factory.GetDatabase("web").GetItem(ItemGuids.LearnMoreItem);
             foreach (Item item in LandmarkHelper.GetChildrenPageInNavigation(landmarkHomeItem).Take(3))
             {
-                <li @if (j == 3) {
-                    <text> class="pull-right" </text>  }>
+                <li @if (j == 3) { <text> class="pull-right" </text>    }>
                     <a href="@LandmarkHelper.GetItemUrl(item)">@item.Fields["Page Title"].Value.ToUpper()</a>
                     @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count > 0)
-            {
-            <nav class="mega-menu">
-                <div class="container">
-                    @if (item.TemplateID.ToString() == ItemGuids.ShoppingPageObject)
-                        {
-                        <div class="row">
-                            <div class="col-lg-9 col-md-9  col-sm-9">
-                                <div class=" mega-menu-area">
+                    {
+                        <nav class="mega-menu">
+                            <div class="container">
+                                @if (item.TemplateID.ToString() == ItemGuids.ShoppingPageObject)
+                                {
                                     <div class="row">
-                                        <div class="col-lg-9 col-md-9 col-sm-9">
-                                            <h3>@item.Fields["Page Title"].Value.ToUpper()</h3>
-                                            <ul class=" mega-category">
-                                                @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
+                                        <div class="col-lg-9 col-md-9  col-sm-9">
+                                            <div class=" mega-menu-area">
+                                                <div class="row">
+                                                    <div class="col-lg-9 col-md-9 col-sm-9">
+                                                        <h3>@item.Fields["Page Title"].Value.ToUpper()</h3>
+                                                        <ul class=" mega-category">
+                                                            @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
+                                                            {
+                                                                if (childItem.TemplateID.ToString().Equals(ItemGuids.T11PageTemplate))
+                                                                {
+                                                                    <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
+                                                                }
+                                                            }
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-3 col-sm-3">
+                                                        <h3>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.ByBrandsGuidItem))</h3>
+                                                        <ul class="mega-brands">
+                                                            @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.ByBrandsRenderingViewGuid)
+                                                        </ul>
+                                                        <h3>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.ByBuidingsGuidItem))</h3>
+                                                        <ul class="brands-gap">
+                                                            @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.ByBuildingsRenderingViewGuid)
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3  col-sm-3">
+                                            <div class="mega-product-area pull-right">
+                                                @{
+                                    ReferenceField referenceField = (ReferenceField)item.Fields["Ad Reference Item"];
+                                                }
+                                                @if (referenceField != null)
+                                                {
+                                                    if (referenceField.TargetItem != null)
                                                     {
-                                                        if (childItem.TemplateID.ToString().Equals(ItemGuids.T11PageTemplate))
-                                                        {
-                                                    <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
-                                                        }
+                                                        string imageSrc = LandmarkHelper.GetCallOutImage(referenceField.TargetItem);
+                                                        <img src="@imageSrc" />
+                                                        <h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
+
+                                                        <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
+                                                        <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceField.TargetItem))">
+                                                            @Html.Sitecore().Field("Glossary Value", learnMoreItem) <span class="sprite-menu-r"></span>
+                                                        </a>
                                                     }
-                                            </ul>
-                                        </div>
-                                        <div class="col-lg-3 col-md-3 col-sm-3">
-                                            <h3>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ByBrandsGuidItem))</h3>
-                                            <ul class="mega-brands">
-                                                @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.ByBrandsRenderingViewGuid)
-                                            </ul>
-                                            <h3>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ByBuidingsGuidItem))</h3>
-                                            <ul class="brands-gap">
-                                                @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.ByBuildingsRenderingViewGuid)
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-3  col-sm-3">
-                                <div class="mega-product-area pull-right">
-                                    @{
-                                            ReferenceField referenceField = (ReferenceField) item.Fields["Ad Reference Item"];
-                                    }
-                                    @if (referenceField != null)
-                                        {
-                                            if (referenceField.TargetItem != null)
-                                            {
-                                                string imageSrc = LandmarkHelper.GetCallOutImage(referenceField.TargetItem);
-                                                <img src="@imageSrc"/>
-                                        <h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
-
-                                        <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
-                                        <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceField.TargetItem))">
-                                            @Html.Sitecore().Field("Glossary Value", learnMoreItem) <span class="sprite-menu-r"></span></a>
-                                            }
-                                        }
-
-                                </div>
-                            </div>
-                        </div>
-                        }
-                        else
-                        {
-                        <div class="row row-equal">
-                            <div class="col-sm-3 mega-menu-area2">
-                                <ul>
-                                    @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
-                                        {
-                                        <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
-                                        }
-                                </ul>
-                            </div>
-                            <div class="col-sm-9  menu-equal-height">
-                                <div class="row">
-                                    @{
-                                            ReferenceField referenceField = (ReferenceField) item.Fields["Ad Reference Item"];
-                                    }
-                                    <div class="col-sm-4 col-sm-offset-1">
-                                        <div class="mega-product-area2 pull-right">
-                                            @if (referenceField != null && referenceField.TargetItem != null)
-                                                {
-                                                string imageSrc = LandmarkHelper.GetCallOutImage(referenceField.TargetItem);
-                                                <img src="@imageSrc"/>
                                                 }
+
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-4">
-                                        <div class="mega-product-area2 pull-right">
-                                            @if (referenceField != null && referenceField.TargetItem != null)
+                                }
+                                else
+                                {
+                                    <div class="row row-equal">
+                                        <div class="col-sm-3 mega-menu-area2">
+                                            <ul>
+                                                @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
                                                 {
-                                                <h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
-                                                <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
-                                                <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceField.TargetItem))">
-                                                    @Html.Sitecore().Field("Glossary Value", learnMoreItem) <span class="sprite-menu-r"></span></a>
+                                                    <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
                                                 }
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-9  menu-equal-height">
+                                            <div class="row">
+                                                @{
+                                    ReferenceField referenceField = (ReferenceField)item.Fields["Ad Reference Item"];
+                                                }
+                                                <div class="col-sm-4 col-sm-offset-1">
+                                                    <div class="mega-product-area2 pull-right">
+                                                        @if (referenceField != null && referenceField.TargetItem != null)
+                                                        {
+                                                            string imageSrc = LandmarkHelper.GetCallOutImage(referenceField.TargetItem);
+                                                            <img src="@imageSrc" />
+                                                        }
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="mega-product-area2 pull-right">
+                                                        @if (referenceField != null && referenceField.TargetItem != null)
+                                                        {
+                                                            <h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
+                                                            <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
+                                                            <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceField.TargetItem))">
+                                                                @Html.Sitecore().Field("Glossary Value", learnMoreItem) <span class="sprite-menu-r"></span>
+                                                            </a>
+                                                        }
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                }
                             </div>
-                        </div>
-                        }
-                </div>
-            </nav>
-            }
+                        </nav>
+                    }
                 </li>
                     j++;
             }
@@ -142,7 +143,7 @@
             int i = 1;
             foreach (Item item in LandmarkHelper.GetChildrenPageInNavigation(landmarkHomeItem).Skip(3).Take(3))
             {
-                <li @if (i == 3) { <text> class="pull-right" </text> }>
+                <li @if (i == 3) { <text> class="pull-right" </text>   }>
                     <a href="@LandmarkHelper.GetItemUrl(item)">@item.Fields["Page Title"].Value.ToUpper()</a>
                     @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count > 0)
                     {
@@ -153,17 +154,20 @@
                                     <div class="row row-equal">
                                         <div class="col-sm-5 mega-menu-area2">
                                             <ul class=" mega-category">
-                                                @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
+                                                @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count > 0)
                                                 {
-                                                    if (childItem.TemplateID.ToString().Equals(ItemGuids.T11PageTemplate))
+                                                    foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
                                                     {
-                                                        <li><a href="@diningHelper.GetDiningCategoryPageUrl(childItem)">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
+                                                        if (childItem.TemplateID.ToString().Equals(ItemGuids.T11PageTemplate))
+                                                        {
+                                                            <li><a href="@diningHelper.GetDiningCategoryPageUrl(childItem)">@childItem.Fields["Page Title"].ToString().ToUpper()</a></li>
+                                                        }
                                                     }
-
                                                 }
                                             </ul>
                                             <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.DiningByBrandsItem)))" class="gd-link-book">
-                                                @Html.Sitecore().Field("Glossary Value",(Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeAllRestaurantItem)) <span class="icomoon-chevron-small-right"></span></a>
+                                                @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.SeeAllRestaurantItem)) <span class="icomoon-chevron-small-right"></span>
+                                            </a>
                                         </div>
                                         <div class="col-sm-7  menu-equal-height">
                                             <div class="row">
@@ -208,7 +212,7 @@
                                                         @if (referenceField != null && referenceField.TargetItem != null)
                                                         {
                                                             string imageSrc = LandmarkHelper.GetCallOutImage(referenceField.TargetItem);
-                                                            <img src="@imageSrc"/>
+                                                            <img src="@imageSrc" />
                                                         }
                                                     </div>
                                                 </div>
@@ -219,7 +223,8 @@
                                                             <h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
                                                             <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
                                                             <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceField.TargetItem))">
-                                                                @Html.Sitecore().Field("Glossary Value", learnMoreItem) <span class="sprite-menu-r"></span></a>
+                                                                @Html.Sitecore().Field("Glossary Value", learnMoreItem) <span class="sprite-menu-r"></span>
+                                                            </a>
                                                         }
                                                     </div>
                                                 </div>
