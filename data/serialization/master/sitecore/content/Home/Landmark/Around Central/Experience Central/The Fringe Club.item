@@ -10,13 +10,6 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
-
-<image mediaid="{D65A1077-EB6E-42D4-B755-6BACF9A7ACC2}" />
-----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
@@ -24,19 +17,19 @@ content-length: 15
 
 (852) 2521 7251
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
 
-<image mediaid="{6E58E1AD-F275-4834-A859-21AC8DBB5A92}" />
+114.156067
 ----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
 
-<image mediaid="{6E58E1AD-F275-4834-A859-21AC8DBB5A92}" />
+22.2803491
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -47,22 +40,15 @@ content-length: 77
 ----version----
 language: en
 version: 1
-revision: 52794688-9c40-4975-89c2-9060f3864b85
+revision: bb4153fe-e01a-40ae-bf97-4562237f132c
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 15
-
-The Fringe Club
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 83
+content-length: 89
 
-<link linktype="external" url="http://www.hkfringeclub.com/" anchor="" target="" />
+<link linktype="external" url="http://www.hkfringeclub.com/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -97,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-52794688-9c40-4975-89c2-9060f3864b85
+bb4153fe-e01a-40ae-bf97-4562237f132c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094126:635828316867106983Z
+20151113T022405Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -115,22 +101,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: b985d8d6-ca6f-435c-9c93-137bae977512
+revision: 60706375-646c-4805-b61d-3cf2fca1a06d
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-艺穗会
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 85
+content-length: 91
 
-<link linktype="external" url="http://www.hkfringeclub.com/cn" anchor="" target="" />
+<link linktype="external" url="http://www.hkfringeclub.com/cn" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -165,14 +144,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b985d8d6-ca6f-435c-9c93-137bae977512
+60706375-646c-4805-b61d-3cf2fca1a06d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094211:635828317311842421Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -183,22 +162,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: cb23612a-370e-4b06-8ab3-0190dcfc6077
+revision: 45a74430-f24c-4ad3-ad49-28820ca32786
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-藝穗會
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 85
+content-length: 91
 
-<link linktype="external" url="http://www.hkfringeclub.com/zh" anchor="" target="" />
+<link linktype="external" url="http://www.hkfringeclub.com/zh" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -233,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cb23612a-370e-4b06-8ab3-0190dcfc6077
+45a74430-f24c-4ad3-ad49-28820ca32786
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094149:635828317097170142Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

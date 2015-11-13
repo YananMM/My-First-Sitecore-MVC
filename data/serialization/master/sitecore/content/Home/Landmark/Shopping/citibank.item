@@ -152,22 +152,43 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 0f82f88a-8e3d-4251-8920-b430e5ed8b73
+revision: cbcaba70-61ac-4def-86c1-bbad64627c67
 
+----field----
+field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
+name: Brand Title
+key: brand title
+content-length: 4
+
+花旗银行
+----field----
+field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
+name: Content Title
+key: content title
+content-length: 4
+
+花旗银行
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 48
+content-length: 47
 
-花旗银行分行提供全面的银行服务，包括贷款及按揭、证券开户服务、投资及保险服务、存款及信用卡等。 
+花旗银行分行提供全面的银行服务，包括贷款及按揭、证券开户服务、投资及保险服务、存款及信用卡等。
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+花旗银行
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 48
+content-length: 47
 
-花旗银行分行提供全面的银行服务，包括贷款及按揭、证券开户服务、投资及保险服务、存款及信用卡等。 
+花旗银行分行提供全面的银行服务，包括贷款及按揭、证券开户服务、投资及保险服务、存款及信用卡等。
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
@@ -218,26 +239,40 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0f82f88a-8e3d-4251-8920-b430e5ed8b73
+cbcaba70-61ac-4def-86c1-bbad64627c67
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063854Z
+20151112T033007Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: c503ec16-caaf-4958-a8b8-88e48c5ddd4e
+revision: f52b2984-67a5-4f19-8c96-d9ffcb0852e5
 
+----field----
+field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
+name: Brand Title
+key: brand title
+content-length: 4
+
+花旗銀行
+----field----
+field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
+name: Content Title
+key: content title
+content-length: 4
+
+花旗銀行
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
@@ -245,6 +280,13 @@ key: content description
 content-length: 47
 
 花旗銀行分行提供全面的銀行服務，包括貸款及按揭、證券開户服務、投資及保險服務、存款及信用卡等。
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+花旗銀行
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
@@ -256,11 +298,11 @@ content-length: 47
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 50
+content-length: 49
 
 星期一至星期五 9:30am-5pm
 星期六 9:30am-12:30pm
-星期日及公眾假期 休息 
+星期日及公眾假期 休息
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -295,18 +337,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c503ec16-caaf-4958-a8b8-88e48c5ddd4e
+f52b2984-67a5-4f19-8c96-d9ffcb0852e5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063854Z
+20151112T032953Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

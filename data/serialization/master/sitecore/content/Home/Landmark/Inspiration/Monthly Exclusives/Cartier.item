@@ -31,6 +31,13 @@ content-length: 38
 
 {5DA67549-BDD5-47C5-BAB5-EC130CF9EB4F}
 ----field----
+field: {C9FE1BF7-0BCB-46A5-8910-5CC57B66B83E}
+name: Tags
+key: tags
+content-length: 38
+
+{155A5763-4601-4D59-801A-004954ADA859}
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -94,7 +101,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 7dac63f3-b637-47c0-ac9c-d258755dbcab
+revision: ee286ec1-c679-4332-889e-c5f17f3296ca
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -114,6 +121,13 @@ key: image title
 content-length: 0
 
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 6
+
+卡地亚手提袋
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -141,14 +155,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7dac63f3-b637-47c0-ac9c-d258755dbcab
+ee286ec1-c679-4332-889e-c5f17f3296ca
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T041423Z
+20151109T040218Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -159,7 +173,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: a41c31d4-fa36-4c25-9d0a-40e2ec362503
+revision: 9ffbcbef-658f-4c7f-a6c4-67f4dac96b76
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -172,6 +186,13 @@ content-length: 107
 (港幣16,800元)
 (右) 卡地亞 Jeanne Toussaint 藍色手提袋
 全球限量100個 (港幣56,000元)
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 6
+
+卡地亞手提袋
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -199,18 +220,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a41c31d4-fa36-4c25-9d0a-40e2ec362503
+9ffbcbef-658f-4c7f-a6c4-67f4dac96b76
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T141945Z
+20151109T040224Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

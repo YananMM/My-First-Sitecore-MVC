@@ -10,13 +10,6 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
-
-<image mediaid="{433D1FAC-E5AE-465E-9AA0-D957B5E36873}" />
-----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
@@ -24,19 +17,19 @@ content-length: 15
 
 (852) 3102 1242
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{8EDD02BB-5A3F-49C7-BC63-15A94A15B50E}" />
+114.1621228
 ----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
 
-<image mediaid="{8EDD02BB-5A3F-49C7-BC63-15A94A15B50E}" />
+22.2827598
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -47,22 +40,15 @@ content-length: 77
 ----version----
 language: en
 version: 1
-revision: 60f20e4d-21e5-4ea9-9c22-c83adb6b4ede
+revision: 9946edb7-d8e2-4f48-8a19-4007481b56c7
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 12
-
-City Gallery
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 88
+content-length: 94
 
-<link linktype="external" url="http://www.citygallery.gov.hk/en/" anchor="" target="" />
+<link linktype="external" url="http://www.citygallery.gov.hk/en/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -74,9 +60,9 @@ content-length: 37
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
-content-length: 34
+content-length: 33
 
-A glimpse into Hong Kong’s future 
+A glimpse into Hong Kong's future
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -97,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-60f20e4d-21e5-4ea9-9c22-c83adb6b4ede
+9946edb7-d8e2-4f48-8a19-4007481b56c7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094344:635828318240115515Z
+20151113T022522Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -115,22 +101,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 8be57e70-a71b-4d56-b107-d33fcc03f46c
+revision: 3a1c946b-8722-4dd3-91e1-2294ea56cec9
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-展城馆
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 88
+content-length: 94
 
-<link linktype="external" url="http://www.citygallery.gov.hk/sc/" anchor="" target="" />
+<link linktype="external" url="http://www.citygallery.gov.hk/sc/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -165,14 +144,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8be57e70-a71b-4d56-b107-d33fcc03f46c
+3a1c946b-8722-4dd3-91e1-2294ea56cec9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094424:635828318648308862Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -183,22 +162,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 1f1caf50-e68e-4d43-912d-93861a49e16c
+revision: 18d7cdb1-fc54-4fd5-8709-65e74fd1986f
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-展城館
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 89
+content-length: 95
 
-<link linktype="external" url="http://www.citygallery.gov.hk/tc/ " anchor="" target="" />
+<link linktype="external" url="http://www.citygallery.gov.hk/tc/ " anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -233,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1f1caf50-e68e-4d43-912d-93861a49e16c
+18d7cdb1-fc54-4fd5-8709-65e74fd1986f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094404:635828318440476975Z
+20151113T032636Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

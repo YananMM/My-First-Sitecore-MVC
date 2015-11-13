@@ -24,6 +24,20 @@ content-length: 0
 
 
 ----field----
+field: {EF0834ED-A9CD-414C-B3FD-3F282C6B155E}
+name: Brand
+key: brand
+content-length: 38
+
+{C7442E9E-5B1D-4481-B0A8-22633A7540B0}
+----field----
+field: {C9FE1BF7-0BCB-46A5-8910-5CC57B66B83E}
+name: Tags
+key: tags
+content-length: 38
+
+{FC943B68-DF20-4326-A181-6B8CCEBD425F}
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -33,7 +47,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 0ea6ba46-44b5-4319-b9af-4b7df0ac205d
+revision: 2cebb5b8-a407-47fb-8541-695de0821e16
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -53,9 +67,9 @@ content-length: 0
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 20
+content-length: 23
 
-Otto e Mezzo BOMBANA
+8½ Otto e Mezzo BOMBANA
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -69,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0ea6ba46-44b5-4319-b9af-4b7df0ac205d
+2cebb5b8-a407-47fb-8541-695de0821e16
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151028T052504Z
+20151109T063712Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,17 +101,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: e098276b-baf4-466a-8215-dbadcbeba43c
+revision: d2206ef5-1f14-4632-8a70-84f5f4dee92f
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 70
+content-length: 68
 
-Farm Baby Pork
-"Cicerchia" bean purée and porcini
-(港幣490元 + 10% 服務費)
+Farm Baby Pork "Cicerchia" bean purée and porcini (港幣490元 + 10% 服務費)
 ----field----
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Image Title
@@ -132,35 +144,33 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e098276b-baf4-466a-8215-dbadcbeba43c
+d2206ef5-1f14-4632-8a70-84f5f4dee92f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T142003Z
+20151109T063647Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: cf2f9de5-d809-4446-ae33-0dbc4ebf04ef
+revision: 7c2bc0c1-de56-452d-a616-15b4105b97db
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 70
+content-length: 68
 
-Farm Baby Pork
-"Cicerchia" bean purée and porcini
-(港幣490元 + 10% 服務費)
+Farm Baby Pork "Cicerchia" bean purée and porcini (港幣490元 + 10% 服務費)
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -188,18 +198,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cf2f9de5-d809-4446-ae33-0dbc4ebf04ef
+7c2bc0c1-de56-452d-a616-15b4105b97db
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T142003Z
+20151109T093442Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

@@ -33,7 +33,7 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: 98b931c8-6021-4f21-ae87-9a8426c272d9
+revision: f9cd7dcb-5b68-43d3-8a11-7a6489b12f12
 
 ----field----
 field: {29FA7895-CEF3-48F6-B527-5AD5FD93F772}
@@ -257,16 +257,16 @@ PLEASE SELECT
 field: {7C9358DA-9737-4E16-8139-C84FF5578F77}
 name: Email Subject
 key: email subject
-content-length: 22
+content-length: 37
 
-pm.hk.isobar@gmail.com
+This is a test email from Landmark.hk
 ----field----
 field: {9540AFF3-ADC2-4E62-9384-442216128E1D}
 name: Email To
 key: email to
-content-length: 16
+content-length: 21
 
-yanan@gruden.com
+edgar.chan@isobar.com
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -280,14 +280,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-98b931c8-6021-4f21-ae87-9a8426c272d9
+f9cd7dcb-5b68-43d3-8a11-7a6489b12f12
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T134852Z
+20151109T125800Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

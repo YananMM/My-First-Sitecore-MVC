@@ -10,6 +10,13 @@ template: {3832F0F6-6342-4394-932C-2DDAB1164C97}
 templatekey: T11 Page
 
 ----field----
+field: {5E1E019C-CF1B-461D-88F2-365149680CDE}
+name: Banner Image
+key: banner image
+content-length: 58
+
+<image mediaid="{F666D5CA-18E9-4D88-A5FD-0EB9A79C910E}" />
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -19,7 +26,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: dcc55938-1b6f-4f73-9008-b82adc975680
+revision: d407bbcd-fc55-4d5c-bd31-f713eeee22a5
 
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dcc55938-1b6f-4f73-9008-b82adc975680
+d407bbcd-fc55-4d5c-bd31-f713eeee22a5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T033641Z
+20151111T131546Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -73,7 +80,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 957a7231-f548-4dc9-b3f1-7f3f7f010a60
+revision: a5eef27d-4af0-466b-bbc7-26f3a0fc8ae3
 
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
@@ -89,6 +96,13 @@ key: meta description
 content-length: 45
 
 置地广塲为客户提供一系列美容服务，包括专业的髮型及美甲服务，还有度身而设的护肤和化粧服务。
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+健康生活
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -116,14 +130,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-957a7231-f548-4dc9-b3f1-7f3f7f010a60
+a5eef27d-4af0-466b-bbc7-26f3a0fc8ae3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T101305Z
+20151111T120553Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -134,7 +148,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 7dd8aeee-54a1-44a3-94fc-594e3a1ebbf3
+revision: 2532d3e5-9b81-491d-820c-ffb7b193f970
 
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
@@ -150,6 +164,13 @@ key: meta description
 content-length: 45
 
 置地廣塲為客戶提供一系列美容服務，包括專業的髮型及美甲服務，還有度身而設的護膚和化粧服務。
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+健康生活
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -177,14 +198,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7dd8aeee-54a1-44a3-94fc-594e3a1ebbf3
+2532d3e5-9b81-491d-820c-ffb7b193f970
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T150412Z
+20151111T120547Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

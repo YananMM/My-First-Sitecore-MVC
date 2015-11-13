@@ -10,26 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{D8B66E18-93AA-4F70-92D2-D4EC96D2E1C1}" />
+114.1531305
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
 
-<image mediaid="{679A1529-DB2B-4829-9C62-D5EBD02563AB}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
-
-<image mediaid="{679A1529-DB2B-4829-9C62-D5EBD02563AB}" />
+22.2844204
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -40,15 +33,8 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 938a7dc2-c52c-4174-ba53-74fe49be04e5
+revision: d0de7a07-968e-4cb6-9908-3cd2d36500f0
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 10
-
-Kau U Fong
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -62,7 +48,7 @@ name: Content Title
 key: content title
 content-length: 88
 
-A slice of HK life from traditional to chic – and an opportunity to taste famous noodles
+A slice of HK life from traditional to chic - and an opportunity to taste famous noodles
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -83,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-938a7dc2-c52c-4174-ba53-74fe49be04e5
+d0de7a07-968e-4cb6-9908-3cd2d36500f0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100345:635828330254552701Z
+20151112T132938Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +87,8 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: ee5948fe-9fbe-4fe4-82d4-88324e52acdd
+revision: 08f2de4a-60a2-4c6d-9c5a-50f928ca0730
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-九如坊
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -121,9 +100,10 @@ content-length: 7
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
-content-length: 24
+content-length: 29
 
 体验从传统到时尚的香港生活片段，一尝本地著名面食
+<br>
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -144,14 +124,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ee5948fe-9fbe-4fe4-82d4-88324e52acdd
+08f2de4a-60a2-4c6d-9c5a-50f928ca0730
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100409:635828330494046400Z
+20151113T032733Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +142,8 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 4b6ec617-dd06-4047-8dc3-c2f2e66e2236
+revision: d4ebdd49-7b8c-4a96-8202-ec8621ea7b72
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-九如坊
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -205,14 +178,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4b6ec617-dd06-4047-8dc3-c2f2e66e2236
+d4ebdd49-7b8c-4a96-8202-ec8621ea7b72
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100356:635828330361128797Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

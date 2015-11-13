@@ -1,0 +1,180 @@
+----item----
+version: 1
+id: {79EBEDCD-CED4-4C05-993C-D8B6F30BE2E0}
+database: master
+path: /sitecore/content/Global/Landmark/Buildings/CHATER/CHATER-2F
+parent: {02889C6B-A746-41A3-9A77-8E50903D065D}
+name: CHATER-2F
+master: {00000000-0000-0000-0000-000000000000}
+template: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
+templatekey: Floor Object
+
+----field----
+field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
+name: Floor Image
+key: floor image
+content-length: 58
+
+<image mediaid="{7B2A6AD4-37F5-4E08-8E40-30B8DB64863B}" />
+----field----
+field: {49195981-001A-41D0-BE6E-78B60FD14964}
+name: Floor Svg File
+key: floor svg file
+content-length: 109
+
+<file mediaid="{DE1C61F5-CEE0-4BFA-AC7E-EAEB3B363C64}" src="~/media/de1c61f5cee04bfaac7eeaeb3b363c64.ashx" />
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+500
+----version----
+language: en
+version: 1
+revision: 08e8fbe0-ddf2-4476-8d3e-90e6802facdb
+
+----field----
+field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
+name: Floor Title
+key: floor title
+content-length: 3
+
+2/F
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20150804T025428Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+08e8fbe0-ddf2-4476-8d3e-90e6802facdb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151110T020740Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: f6129b59-ed5f-4e8f-a97f-9709bb26f7cc
+
+----field----
+field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
+name: Floor Title
+key: floor title
+content-length: 3
+
+2/F
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T125002Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f6129b59-ed5f-4e8f-a97f-9709bb26f7cc
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T125007Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-HK
+version: 1
+revision: 5320ca37-a126-4894-ae7f-4a7e5b5a96f7
+
+----field----
+field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
+name: Floor Title
+key: floor title
+content-length: 3
+
+2/F
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T125009Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+5320ca37-a126-4894-ae7f-4a7e5b5a96f7
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T125016Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

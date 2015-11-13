@@ -10,13 +10,6 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
-
-<image mediaid="{7C2CEFC7-C7B5-48B1-957F-89926D8E94B0}" />
-----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
@@ -24,19 +17,19 @@ content-length: 15
 
 (852) 2854 3810
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{66492213-54F4-4870-AF76-DA6994BA4D7F}" />
+114.1545196
 ----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
 
-<image mediaid="{66492213-54F4-4870-AF76-DA6994BA4D7F}" />
+22.2830095
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -47,15 +40,8 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 665f2b9d-61cf-4a63-8fb5-67a5fe9164f9
+revision: cc8670d6-aeca-422b-9e04-3ef72f17af36
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 12
-
-Mak's Noodle
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -90,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-665f2b9d-61cf-4a63-8fb5-67a5fe9164f9
+cc8670d6-aeca-422b-9e04-3ef72f17af36
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T101209:635828335290780757Z
+20151112T132024Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,15 +94,8 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 178f152a-9ad5-4918-924f-0a33cd56f3c3
+revision: b0346e19-8c02-417b-9b1a-cb458c5803df
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 7
-
-麦奀云吞面世家
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -151,14 +130,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-178f152a-9ad5-4918-924f-0a33cd56f3c3
+b0346e19-8c02-417b-9b1a-cb458c5803df
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T101240:635828335609999015Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -169,15 +148,8 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 69d0a73e-a370-4686-83fd-12afa3b91c31
+revision: abd959d2-0ac6-4ddc-a6c6-d9f81ca09e52
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 7
-
-麥奀雲吞麵世家
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -212,14 +184,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-69d0a73e-a370-4686-83fd-12afa3b91c31
+abd959d2-0ac6-4ddc-a6c6-d9f81ca09e52
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T101229:635828335492402289Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

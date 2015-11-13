@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 77
+content-length: 194
 
-{C034122F-A68F-4E3C-827E-C1898533C08E}|{C7F06241-2951-4647-8610-4853F73C07DF}
+{C034122F-A68F-4E3C-827E-C1898533C08E}|{C7F06241-2951-4647-8610-4853F73C07DF}|{983E7317-DB51-4EFE-9081-671D78C971C2}|{CE078BA5-479D-42FE-BAB4-50A1459A29AA}|{410058FD-4835-43BD-9FC0-430DAF3C8381}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-B13-16
 ----version----
 language: en
 version: 1
-revision: dfbeab1e-be33-4461-8c02-76f320848e74
+revision: 824aaaf5-1175-44d4-a0ae-c57a54fb90a9
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -123,9 +123,9 @@ In the heart of Hong Kong’s bustling business hub there is a casual and friend
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 21
+content-length: 20
 
-11:30am - 10pm daily 
+11:30am - 10pm daily
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -167,21 +167,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dfbeab1e-be33-4461-8c02-76f320848e74
+824aaaf5-1175-44d4-a0ae-c57a54fb90a9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151902Z
+20151113T050036Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1

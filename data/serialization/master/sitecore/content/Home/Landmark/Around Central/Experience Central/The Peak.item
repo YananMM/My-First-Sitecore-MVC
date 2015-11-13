@@ -10,13 +10,6 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
-
-<image mediaid="{F921CF88-2BDA-47D7-B664-6EB606BA4A5A}" />
-----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
@@ -24,19 +17,19 @@ content-length: 15
 
 (852) 2849 0668
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
 
-<image mediaid="{7A989497-615C-4627-9C7D-923275F3EAA8}" />
+114.142449
 ----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
 
-<image mediaid="{7A989497-615C-4627-9C7D-923275F3EAA8}" />
+22.2811673
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -47,22 +40,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: acf9fa68-3678-431a-98e4-0231189dd893
+revision: 3160c06c-1124-48e0-81f2-20fd9327eed5
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 8
-
-The Peak
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 85
+content-length: 91
 
-<link linktype="external" url="https://www.thepeak.com.hk/en/" anchor="" target="" />
+<link linktype="external" url="https://www.thepeak.com.hk/en/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -76,7 +62,7 @@ name: Content Title
 key: content title
 content-length: 78
 
-Iconic tourist destination offers something for everyone – and all-round views
+Iconic tourist destination offers something for everyone - and all-round views
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -97,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-acf9fa68-3678-431a-98e4-0231189dd893
+3160c06c-1124-48e0-81f2-20fd9327eed5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100139:635828328998830878Z
+20151113T023448Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -115,22 +101,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 5256a19b-2b7d-4836-ad22-2f2846676fca
+revision: ea1d63c6-47f4-432f-91c0-c788d585b7f6
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 4
-
-太平山顶
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 93
+content-length: 99
 
-<link linktype="external" url="https://www.thepeak.com.hk/sc/home.asp" anchor="" target="" />
+<link linktype="external" url="https://www.thepeak.com.hk/sc/home.asp" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -165,14 +144,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5256a19b-2b7d-4836-ad22-2f2846676fca
+ea1d63c6-47f4-432f-91c0-c788d585b7f6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100222:635828329427275384Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -183,22 +162,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: d0743d5f-8b93-45c7-905e-c609c58aa278
+revision: 3c6331ed-a9ff-48be-9af8-06c8f34d9549
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 4
-
-太平山頂
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 93
+content-length: 99
 
-<link linktype="external" url="https://www.thepeak.com.hk/tc/home.asp" anchor="" target="" />
+<link linktype="external" url="https://www.thepeak.com.hk/tc/home.asp" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -233,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d0743d5f-8b93-45c7-905e-c609c58aa278
+3c6331ed-a9ff-48be-9af8-06c8f34d9549
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100201:635828329217433382Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

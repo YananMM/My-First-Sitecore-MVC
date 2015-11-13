@@ -76,9 +76,9 @@ content-length: 143
 field: {138DE222-3B71-4E36-B9D2-8AD12B4618D9}
 name: Adobe Body Loader File
 key: adobe body loader file
-content-length: 66
+content-length: 26
 
-<script type="text/javascript"> _satellite.pageBottom(); </script>
+ _satellite.pageBottom(); 
 ----field----
 field: {203691AD-CF97-4DAB-8662-227E4B4DD8CE}
 name: CSV Folder
@@ -103,7 +103,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: b6deff99-8f02-4563-990e-c24548017625
+revision: fcf5de46-76a1-4928-b5a4-47357f099d81
 
 ----field----
 field: {87228212-11A4-40BB-8B1A-783034F383EA}
@@ -182,14 +182,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b6deff99-8f02-4563-990e-c24548017625
+fcf5de46-76a1-4928-b5a4-47357f099d81
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T064346Z
+20151112T075206Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -197,6 +197,13 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
 ----version----
 language: zh-CN
 version: 1

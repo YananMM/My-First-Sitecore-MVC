@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 77
+content-length: 194
 
-{C034122F-A68F-4E3C-827E-C1898533C08E}|{584512EB-189E-4FEF-9280-3F893DD9A9E1}
+{C034122F-A68F-4E3C-827E-C1898533C08E}|{584512EB-189E-4FEF-9280-3F893DD9A9E1}|{7895E95B-BA35-4C28-9325-0BB7443E6945}|{1A1800EA-D40A-412C-970A-DBA534DC1F23}|{89884B9A-3DE7-47AD-BC7F-F2500B956EFD}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-105
 ----version----
 language: en
 version: 1
-revision: bc688fb3-4294-4adf-b72b-7f4e954cc8ee
+revision: 8d29b287-0b7d-49f6-9882-518cc4bbdce7
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -167,33 +167,33 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bc688fb3-4294-4adf-b72b-7f4e954cc8ee
+8d29b287-0b7d-49f6-9882-518cc4bbdce7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151619Z
+20151113T033113Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f2d04890-39ae-469f-92f7-fd06a1a1073f
+revision: 8dd43bb2-92a2-4cad-8595-4fd0a3dd8d12
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
 name: Brand Title
 key: brand title
-content-length: 6
+content-length: 7
 
-罗杰•维维亚
+罗杰• 维维亚
 ----field----
 field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
 name: Content Title
@@ -305,33 +305,33 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f2d04890-39ae-469f-92f7-fd06a1a1073f
+8dd43bb2-92a2-4cad-8595-4fd0a3dd8d12
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063949Z
+20151109T095515Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 50b170d9-3fbc-474e-b1f0-40a99607ed8d
+revision: b2dce983-3c08-4d46-a272-164e63e4a159
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
 name: Brand Title
 key: brand title
-content-length: 6
+content-length: 7
 
-羅杰•維維亞
+羅杰• 維維亞
 ----field----
 field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
 name: Content Title
@@ -436,18 +436,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-50b170d9-3fbc-474e-b1f0-40a99607ed8d
+b2dce983-3c08-4d46-a272-164e63e4a159
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063949Z
+20151109T095508Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

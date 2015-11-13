@@ -24,6 +24,20 @@ content-length: 58
 
 <image mediaid="{48FE67AE-8DF0-4827-AFAD-50F697D15759}" />
 ----field----
+field: {39067EB7-E1A7-4B76-B90B-22154A0C1EA7}
+name: Map Longitude
+key: map longitude
+content-length: 11
+
+114.1593949
+----field----
+field: {431D6A60-DF3B-4C60-8397-56E239E0035B}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.281939
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -33,15 +47,15 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: eba7e4b6-ff3c-4f68-9017-a80ec942b3dc
+revision: fdb496c3-b6f7-4c1a-891f-084dc5bf61c0
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
-content-length: 114
+content-length: 110
 
-The iconic Mandarin Oriental, Hong Kong is the epitome of contemporary luxury combined with Oriental heritage.<br>
+The iconic Mandarin Oriental, Hong Kong is the epitome of contemporary luxury combined with Oriental heritage.
 ----field----
 field: {698A11C8-2FAC-494F-936D-2192003382D9}
 name: Hotel Title
@@ -60,9 +74,9 @@ content-length: 14
 field: {AECA85E7-C429-4C06-9100-0626358DBAC1}
 name: Hotel Email
 key: hotel email
-content-length: 101
+content-length: 121
 
-<link text="email" linktype="external" url="http://mohkg-reservation@mohg.com" anchor="" target="" />
+<link text='mohkg-reservations@mohg.com' linktype='mailto' style='' url='mailto:mohkg-reservations@mohg.com'  title='' />
 ----field----
 field: {951224F7-FE4D-4410-8A17-DFA9943AAB65}
 name: Hotel Address
@@ -104,14 +118,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-eba7e4b6-ff3c-4f68-9017-a80ec942b3dc
+fdb496c3-b6f7-4c1a-891f-084dc5bf61c0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151110T032516:635827227161691582Z
+20151112T132612Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -122,15 +136,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 3225daf8-1531-4935-b4f0-f3b286df8800
+revision: 95f02714-8143-4e7a-a1a6-4e7a5da23bac
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
-content-length: 34
+content-length: 30
 
-揉合东方传统设计特色，香港文华东方酒店为当代豪华酒店的典範。<br>
+揉合东方传统设计特色，香港文华东方酒店为当代豪华酒店的典範。
 ----field----
 field: {698A11C8-2FAC-494F-936D-2192003382D9}
 name: Hotel Title
@@ -149,9 +163,9 @@ content-length: 14
 field: {AECA85E7-C429-4C06-9100-0626358DBAC1}
 name: Hotel Email
 key: hotel email
-content-length: 27
+content-length: 121
 
-mohkg-reservations@mohg.com
+<link text='mohkg-reservations@mohg.com' linktype='mailto' style='' url='mailto:mohkg-reservations@mohg.com'  title='' />
 ----field----
 field: {951224F7-FE4D-4410-8A17-DFA9943AAB65}
 name: Hotel Address
@@ -186,14 +200,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3225daf8-1531-4935-b4f0-f3b286df8800
+95f02714-8143-4e7a-a1a6-4e7a5da23bac
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T111436Z
+20151112T131635Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -204,15 +218,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 45cbf477-d7d5-45ca-ae44-6e3cb9e4964c
+revision: 5fa20bc7-d545-4243-8eca-4fda16404e9d
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
-content-length: 34
+content-length: 30
 
-揉合東方傳統設計特色，香港文華東方酒店為當代豪華酒店的典範。<br>
+揉合東方傳統設計特色，香港文華東方酒店為當代豪華酒店的典範。
 ----field----
 field: {698A11C8-2FAC-494F-936D-2192003382D9}
 name: Hotel Title
@@ -231,9 +245,9 @@ content-length: 14
 field: {AECA85E7-C429-4C06-9100-0626358DBAC1}
 name: Hotel Email
 key: hotel email
-content-length: 27
+content-length: 121
 
-mohkg-reservations@mohg.com
+<link text='mohkg-reservations@mohg.com' linktype='mailto' style='' url='mailto:mohkg-reservations@mohg.com'  title='' />
 ----field----
 field: {951224F7-FE4D-4410-8A17-DFA9943AAB65}
 name: Hotel Address
@@ -268,14 +282,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-45cbf477-d7d5-45ca-ae44-6e3cb9e4964c
+5fa20bc7-d545-4243-8eca-4fda16404e9d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T111209Z
+20151112T131641Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

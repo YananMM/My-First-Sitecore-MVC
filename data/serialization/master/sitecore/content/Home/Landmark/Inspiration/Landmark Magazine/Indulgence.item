@@ -16,10 +16,17 @@ key: __sortorder
 content-length: 3
 
 450
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{807BAE08-CC88-4245-BE96-C7B27FD20040}
 ----version----
 language: en
 version: 1
-revision: fa2b18c0-030e-409c-a86b-2c141393986a
+revision: b44a51bb-65eb-4e73-9209-c140f6764f4b
 
 ----field----
 field: {2EF8EC75-33AA-4798-B316-B8C4C343760D}
@@ -27,7 +34,7 @@ name: Category Name
 key: category name
 content-length: 10
 
-Indulgence
+INDULGENCE
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fa2b18c0-030e-409c-a86b-2c141393986a
+b44a51bb-65eb-4e73-9209-c140f6764f4b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151112T033407:635828960471369041Z
+20151112T121317Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -63,3 +70,125 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: dd9264d0-2fcc-46e6-aff9-c8072e3de73b
+
+----field----
+field: {2EF8EC75-33AA-4798-B316-B8C4C343760D}
+name: Category Name
+key: category name
+content-length: 4
+
+贴心享受
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151112T140952Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+dd9264d0-2fcc-46e6-aff9-c8072e3de73b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151112T141004Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{32A103A1-E7A1-444C-A61B-5DD4D6A1381A}
+----version----
+language: zh-HK
+version: 1
+revision: 8d2e176d-bb0d-4d01-aff2-11369203d186
+
+----field----
+field: {2EF8EC75-33AA-4798-B316-B8C4C343760D}
+name: Category Name
+key: category name
+content-length: 4
+
+貼心享受
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151112T141008Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8d2e176d-bb0d-4d01-aff2-11369203d186
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151112T141019Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{32A103A1-E7A1-444C-A61B-5DD4D6A1381A}

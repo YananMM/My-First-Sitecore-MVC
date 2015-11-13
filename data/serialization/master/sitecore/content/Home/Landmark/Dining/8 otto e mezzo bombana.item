@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 77
+content-length: 233
 
-{B597804A-C4D7-44FB-9FAC-490726EEB3D9}|{BC0F4B93-552A-418E-B620-7B7F13506613}
+{B597804A-C4D7-44FB-9FAC-490726EEB3D9}|{BC0F4B93-552A-418E-B620-7B7F13506613}|{D0DDCCBB-558D-491F-AA49-46E8217BC26B}|{BA9D8236-ECD5-4824-B120-46B95D7FB13C}|{2ED5B361-4D7A-4A48-B63E-8FE23B71DB8E}|{6B69973D-6FCC-45B2-9C75-ECCBC56F42FC}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-202
 ----version----
 language: en
 version: 1
-revision: 4abfacaf-7280-45b5-9776-563d384dd346
+revision: 4dea467d-7a75-4250-8e32-fd3629143e08
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -123,9 +123,9 @@ Occupying 4,700 square feet of prime location in Central, Hong Kong and overlook
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 87
+content-length: 86
 
-Mon-Sat  Lunch 12noon – 2:30pm,  Dinner 6:30pm – 10:30pm,  Bar 12noon – 1am Sun closed 
+Mon-Sat  Lunch 12noon – 2:30pm,  Dinner 6:30pm – 10:30pm,  Bar 12noon – 1am Sun closed
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -167,21 +167,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4abfacaf-7280-45b5-9776-563d384dd346
+4dea467d-7a75-4250-8e32-fd3629143e08
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151902Z
+20151113T063536Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1

@@ -10,26 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{4FD3A788-7043-4162-8477-9BA29FA3C06B}" />
+114.1574475
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
 
-<image mediaid="{D2E0F358-D56E-4CB3-8EB0-3470A5409655}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
-
-<image mediaid="{D2E0F358-D56E-4CB3-8EB0-3470A5409655}" />
+22.279383
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -40,22 +33,15 @@ content-length: 77
 ----version----
 language: en
 version: 1
-revision: c64dfa04-07d1-424a-9a12-3e1d475d6f9a
+revision: 4a5d7428-857f-4825-8c35-d1af5a2cd09f
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 16
-
-Government House
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 96
+content-length: 102
 
-<link linktype="external" url="http://www.amo.gov.hk/en/monuments_59.php" anchor="" target="" />
+<link linktype="external" url="http://www.amo.gov.hk/en/monuments_59.php" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -90,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c64dfa04-07d1-424a-9a12-3e1d475d6f9a
+4a5d7428-857f-4825-8c35-d1af5a2cd09f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095153:635828323131895309Z
+20151113T023029Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,22 +94,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 2253353e-b41a-428e-a5fb-3be2d198a819
+revision: 61e6349f-d2fd-4334-a41e-769d82c93990
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 5
-
-香港礼宾府
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 117
+content-length: 123
 
-<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/monuments_59.php" anchor="" target="" />
+<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/monuments_59.php" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -158,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2253353e-b41a-428e-a5fb-3be2d198a819
+61e6349f-d2fd-4334-a41e-769d82c93990
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095252:635828323720508976Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -176,22 +155,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 17b3f730-330e-4597-a9d3-250122d685c4
+revision: 8d5e28f9-dd8f-4981-8772-86250ba2110c
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 5
-
-香港禮賓府
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 96
+content-length: 102
 
-<link linktype="external" url="http://www.amo.gov.hk/b5/monuments_59.php" anchor="" target="" />
+<link linktype="external" url="http://www.amo.gov.hk/b5/monuments_59.php" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -226,14 +198,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-17b3f730-330e-4597-a9d3-250122d685c4
+8d5e28f9-dd8f-4981-8772-86250ba2110c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095217:635828323378819432Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

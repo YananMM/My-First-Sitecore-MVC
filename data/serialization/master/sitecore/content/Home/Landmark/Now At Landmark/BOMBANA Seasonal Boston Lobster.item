@@ -52,12 +52,19 @@ content-length: 1
 
 1
 ----field----
+field: {7ABD92FE-50B8-47CB-8AAC-938A1FB099A2}
+name: Tags
+key: tags
+content-length: 116
+
+{8CBE1EA5-CE5A-4D15-AEFD-F65BC164C06B}|{42FF35B6-477A-417F-84BA-B11860F3A311}|{155A5763-4601-4D59-801A-004954ADA859}
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
-content-length: 3
+content-length: 1
 
-100
+0
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -72,10 +79,17 @@ key: __masters
 content-length: 0
 
 
+----field----
+field: {A4F985D9-98B3-4B52-AAAF-4344F6E747C6}
+name: __Workflow
+key: __workflow
+content-length: 38
+
+{807BAE08-CC88-4245-BE96-C7B27FD20040}
 ----version----
 language: en
 version: 1
-revision: 92bc6618-0b44-4a97-b1fd-8c1b2166e7f1
+revision: ffcffd61-3a96-414f-8e0f-56c65fb60ffe
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
@@ -100,9 +114,9 @@ Sun closed<br>
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 61
+content-length: 66
 
-Full of Colour and Flavour: BOMBANA’s Seasonal Boston Lobster
+Full of Colour and Flavour: BOMBANA’s Seasonal Boston Lobster Test
 ----field----
 field: {55F18938-A913-4267-80D1-EF3152E77C51}
 name: Article Headline 2
@@ -146,14 +160,234 @@ name: __Revision
 key: __revision
 content-length: 36
 
-92bc6618-0b44-4a97-b1fd-8c1b2166e7f1
+ffcffd61-3a96-414f-8e0f-56c65fb60ffe
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T023720Z
+20151109T103625Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+sitecore\edgarchan
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
+----version----
+language: en
+version: 2
+revision: 24507322-c258-400b-bc7c-e26dc1057cf3
+
+----field----
+field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
+name: Article Content
+key: article content
+content-length: 1009
+
+<p>Lobsters caught in the abundant ocean off the coast of Maine are the most prized and precious among others in the world &ndash; especially during the prime harvest season. 8&frac12; Otto e Mezzo BOMBANA does the legendary Boston lobster justice with a delicious summer dish that is healthy, refreshing, and a treat for both the eyes and taste buds.</p>
+<p>The colourful and flavourful Lobster Salad is being served exclusively at the LANDMARK ALEXANDRA restaurant in August. It tastes as good as it looks, with an artful arrangement of seasonal Boston lobster accompanied by celery, raisin, olive dressing and &ndash; the ultimate finishing touch &ndash; a generous topping of calvisius elite caviar.</p>
+<p>&nbsp;</p>
+<p><strong>8&frac12; Otto e Mezzo BOMBANA</strong> </p>
+<p>Address: Shop 202, 2/F, LANDMARK ALEXANDRA</p>
+<p>Telephone: 2537 8859</p>
+<p>Opening Hours:<br>
+Mon to Sat <br>
+Lunch 12noon &ndash; 2:30pm <br>
+Dinner 6:30pm &ndash; 10:30pm <br>
+Bar 12noon &ndash; 1am </p>
+Sun closed<br>
+<br>
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 66
+
+Full of Colour and Flavour: BOMBANA’s Seasonal Boston Lobster Test
+----field----
+field: {55F18938-A913-4267-80D1-EF3152E77C51}
+name: Article Headline 2
+key: article headline 2
+content-length: 45
+
+<hgroup class="clearfix">
+<h2></h2>
+</hgroup>
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Image Title
+key: image title
+content-length: 0
+
+
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 335
+
+Lobsters caught in the abundant ocean off the coast of Maine are the most prized and precious among others in the world – especially during the prime harvest season. 8½ Otto e Mezzo BOMBANA does the legendary Boston lobster justice with a delicious summer dish that is healthy, refreshing, and a treat for both the eyes and taste buds.
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 61
+
+Full of Colour and Flavour: BOMBANA’s Seasonal Boston Lobster
+----field----
+field: {C8F93AFE-BFD4-4E8F-9C61-152559854661}
+name: __Valid from
+key: __valid from
+content-length: 16
+
+20151109T103628Z
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151109T103628Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+sitecore\edgarchan
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+24507322-c258-400b-bc7c-e26dc1057cf3
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151109T103628Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 18
+
+sitecore\edgarchan
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
+----version----
+language: en
+version: 3
+revision: cdf63ee5-1392-4899-a94a-4b34e43c44a7
+
+----field----
+field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
+name: Article Content
+key: article content
+content-length: 1009
+
+<p>Lobsters caught in the abundant ocean off the coast of Maine are the most prized and precious among others in the world &ndash; especially during the prime harvest season. 8&frac12; Otto e Mezzo BOMBANA does the legendary Boston lobster justice with a delicious summer dish that is healthy, refreshing, and a treat for both the eyes and taste buds.</p>
+<p>The colourful and flavourful Lobster Salad is being served exclusively at the LANDMARK ALEXANDRA restaurant in August. It tastes as good as it looks, with an artful arrangement of seasonal Boston lobster accompanied by celery, raisin, olive dressing and &ndash; the ultimate finishing touch &ndash; a generous topping of calvisius elite caviar.</p>
+<p>&nbsp;</p>
+<p><strong>8&frac12; Otto e Mezzo BOMBANA</strong> </p>
+<p>Address: Shop 202, 2/F, LANDMARK ALEXANDRA</p>
+<p>Telephone: 2537 8859</p>
+<p>Opening Hours:<br>
+Mon to Sat <br>
+Lunch 12noon &ndash; 2:30pm <br>
+Dinner 6:30pm &ndash; 10:30pm <br>
+Bar 12noon &ndash; 1am </p>
+Sun closed<br>
+<br>
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 66
+
+Full of Colour and Flavour: BOMBANA’s Seasonal Boston Lobster Test
+----field----
+field: {55F18938-A913-4267-80D1-EF3152E77C51}
+name: Article Headline 2
+key: article headline 2
+content-length: 45
+
+<hgroup class="clearfix">
+<h2></h2>
+</hgroup>
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Image Title
+key: image title
+content-length: 0
+
+
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 335
+
+Lobsters caught in the abundant ocean off the coast of Maine are the most prized and precious among others in the world – especially during the prime harvest season. 8½ Otto e Mezzo BOMBANA does the legendary Boston lobster justice with a delicious summer dish that is healthy, refreshing, and a treat for both the eyes and taste buds.
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 61
+
+Full of Colour and Flavour: BOMBANA’s Seasonal Boston Lobster
+----field----
+field: {C8F93AFE-BFD4-4E8F-9C61-152559854661}
+name: __Valid from
+key: __valid from
+content-length: 16
+
+20151109T103742Z
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151109T103742Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 18
+
+sitecore\edgarchan
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+cdf63ee5-1392-4899-a94a-4b34e43c44a7
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151109T123500Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -161,6 +395,20 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {3E431DE1-525E-47A3-B6B0-1CCBEC3A8C98}
+name: __Workflow state
+key: __workflow state
+content-length: 38
+
+{32A103A1-E7A1-444C-A61B-5DD4D6A1381A}
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
 ----version----
 language: zh-CN
 version: 1

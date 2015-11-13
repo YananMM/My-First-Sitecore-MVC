@@ -10,13 +10,6 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
-
-<image mediaid="{BA3AB5D1-C208-4DCF-A09C-CB6ABE61A9B0}" />
-----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
@@ -24,19 +17,19 @@ content-length: 15
 
 (852) 2367 6373
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 9
 
-<image mediaid="{2D58E9B2-4247-4853-8C88-D4327CC3E27A}" />
+114.15081
 ----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
 
-<image mediaid="{2D58E9B2-4247-4853-8C88-D4327CC3E27A}" />
+22.281974
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -47,22 +40,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 76170760-f7a6-4c07-b9d4-ecf575a94bcc
+revision: 0f5fad7a-5b81-411f-b18a-7451c912b127
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 21
-
-Dr Sun Yat-sen Museum
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 117
+content-length: 123
 
-<link linktype="external" url="http://hk.drsunyatsen.museum/en_US/web/sysm/aboutus/intro.html" anchor="" target="" />
+<link linktype="external" url="http://hk.drsunyatsen.museum/en_US/web/sysm/aboutus/intro.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -97,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-76170760-f7a6-4c07-b9d4-ecf575a94bcc
+0f5fad7a-5b81-411f-b18a-7451c912b127
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095558:635828325588745833Z
+20151113T023156Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -115,22 +101,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f50c1260-ac1b-4a04-9394-b7ab48e82378
+revision: dc936116-86ea-40b7-a8f5-e79c839c574d
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 6
-
-孙中山纪念馆
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 117
+content-length: 123
 
-<link linktype="external" url="http://hk.drsunyatsen.museum/zh_CN/web/sysm/aboutus/intro.html" anchor="" target="" />
+<link linktype="external" url="http://hk.drsunyatsen.museum/zh_CN/web/sysm/aboutus/intro.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -165,14 +144,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f50c1260-ac1b-4a04-9394-b7ab48e82378
+dc936116-86ea-40b7-a8f5-e79c839c574d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095628:635828325883982719Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -183,22 +162,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: b6cb351a-ffb3-4c5f-9ff0-79072ddf4e2c
+revision: 4767de12-636c-4abd-8948-42c095c65c91
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 6
-
-孫中山紀念館
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 117
+content-length: 123
 
-<link linktype="external" url="http://hk.drsunyatsen.museum/zh_TW/web/sysm/aboutus/intro.html" anchor="" target="" />
+<link linktype="external" url="http://hk.drsunyatsen.museum/zh_TW/web/sysm/aboutus/intro.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -233,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b6cb351a-ffb3-4c5f-9ff0-79072ddf4e2c
+4767de12-636c-4abd-8948-42c095c65c91
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095544:635828325449417863Z
+20151113T032636Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

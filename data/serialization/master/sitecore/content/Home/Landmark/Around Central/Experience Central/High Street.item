@@ -10,26 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
 
-<image mediaid="{56114525-3160-4D5D-A9F6-C1389AFB4056}" />
+114.141308
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
 
-<image mediaid="{C377A9BD-86AE-479E-8DB0-8EA87D512E36}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
-
-<image mediaid="{C377A9BD-86AE-479E-8DB0-8EA87D512E36}" />
+22.2851903
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -40,22 +33,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: e0c3f2f5-338f-46fb-ba46-8cb8a7540fe0
+revision: 44f35ca4-029a-40ff-8cd8-acaf268dc0a6
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 11
-
-High Street
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 103
+content-length: 109
 
-<link linktype="external" url="http://www.amo.gov.hk/en/trails_west1.php?tid=20" anchor="" target="" />
+<link linktype="external" url="http://www.amo.gov.hk/en/trails_west1.php?tid=20" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -90,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e0c3f2f5-338f-46fb-ba46-8cb8a7540fe0
+44f35ca4-029a-40ff-8cd8-acaf268dc0a6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094710:635828320309883899Z
+20151113T022749Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,22 +94,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 3f0c153e-a929-44be-aa2b-ad61762bbc69
+revision: 811d3823-a6e9-4825-a461-ad7610384229
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 2
-
-高街
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 124
+content-length: 130
 
-<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/trails_west1.php?tid=20" anchor="" target="" />
+<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/trails_west1.php?tid=20" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -158,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3f0c153e-a929-44be-aa2b-ad61762bbc69
+811d3823-a6e9-4825-a461-ad7610384229
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094757:635828320774030447Z
+20151113T032733Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -176,22 +155,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: f001f260-dce0-40a4-832c-5bf261e6b3d3
+revision: b4f2eef6-e59c-45dc-be7d-0ab715c37288
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 2
-
-高街
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 103
+content-length: 109
 
-<link linktype="external" url="http://www.amo.gov.hk/b5/trails_west1.php?tid=20" anchor="" target="" />
+<link linktype="external" url="http://www.amo.gov.hk/b5/trails_west1.php?tid=20" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -226,14 +198,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f001f260-dce0-40a4-832c-5bf261e6b3d3
+b4f2eef6-e59c-45dc-be7d-0ab715c37288
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094733:635828320531656584Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

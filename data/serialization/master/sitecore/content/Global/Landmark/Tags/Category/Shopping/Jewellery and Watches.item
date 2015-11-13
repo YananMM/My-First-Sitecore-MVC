@@ -52,8 +52,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 7c5d733f-8ee4-4545-b8d4-4e604d823c93
+revision: b3cdb890-83df-4fb0-8846-46463a90a901
 
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 5
+
+珠宝及钟表
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -81,14 +88,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7c5d733f-8ee4-4545-b8d4-4e604d823c93
+b3cdb890-83df-4fb0-8846-46463a90a901
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T083511Z
+20151111T113821Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -146,8 +153,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 2
-revision: 82d37fff-6577-42e9-987b-1bd006abc15d
+revision: c32b3a93-4df4-47b3-b3d6-868b4228f639
 
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 5
+
+珠寶及鐘錶
 ----field----
 field: {C8F93AFE-BFD4-4E8F-9C61-152559854661}
 name: __Valid from
@@ -182,14 +196,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-82d37fff-6577-42e9-987b-1bd006abc15d
+c32b3a93-4df4-47b3-b3d6-868b4228f639
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T083315Z
+20151111T113817Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

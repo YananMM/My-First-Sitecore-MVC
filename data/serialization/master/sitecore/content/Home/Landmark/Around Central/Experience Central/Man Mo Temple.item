@@ -10,13 +10,6 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
-
-<image mediaid="{2ACCA6F7-9BE2-4C8F-AE39-D559DF04A9CD}" />
-----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
@@ -24,19 +17,19 @@ content-length: 15
 
 (852) 2540 0350
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{EF6F5675-5015-4D7E-98E9-C45E822314BF}" />
+114.1556094
 ----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
 
-<image mediaid="{EF6F5675-5015-4D7E-98E9-C45E822314BF}" />
+22.2844095
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -47,22 +40,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: dbeda246-3b2e-4b10-90c2-e4312540a921
+revision: 6cb58ba2-fa4a-4202-a0cd-c2bbc64f6b82
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 13
-
-Man Mo Temple
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 96
+content-length: 102
 
-<link linktype="external" url="http://www.amo.gov.hk/en/monuments_96.php" anchor="" target="" />
+<link linktype="external" url="http://www.amo.gov.hk/en/monuments_96.php" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -76,7 +62,7 @@ name: Content Title
 key: content title
 content-length: 59
 
-One of HK’s oldest temples provides oasis in centre of city
+One of HK's oldest temples provides oasis in centre of city
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -97,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dbeda246-3b2e-4b10-90c2-e4312540a921
+6cb58ba2-fa4a-4202-a0cd-c2bbc64f6b82
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095651:635828326118486132Z
+20151113T023325Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -115,22 +101,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: fb87d609-a7a8-4afe-99ca-5197298a4ae5
+revision: b9acb41c-8f21-43b7-9540-1cb6d0442dae
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-文武庙
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 117
+content-length: 123
 
-<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/monuments_96.php" anchor="" target="" />
+<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/monuments_96.php" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -165,14 +144,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fb87d609-a7a8-4afe-99ca-5197298a4ae5
+b9acb41c-8f21-43b7-9540-1cb6d0442dae
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095737:635828326579082477Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -183,22 +162,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: b3bfd541-d001-47ec-8dbd-9b803943408f
+revision: 94ba0e82-eec5-466d-9191-5bd027878782
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 3
-
-文武廟
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 96
+content-length: 102
 
-<link linktype="external" url="http://www.amo.gov.hk/en/monuments_96.php" anchor="" target="" />
+<link linktype="external" url="http://www.amo.gov.hk/en/monuments_96.php" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -233,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b3bfd541-d001-47ec-8dbd-9b803943408f
+94ba0e82-eec5-466d-9191-5bd027878782
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095715:635828326355689699Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

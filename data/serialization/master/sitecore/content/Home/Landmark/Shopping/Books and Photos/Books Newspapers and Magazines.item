@@ -59,8 +59,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 657303c5-1a14-4221-a862-6cd8ed9ee2c3
+revision: 5c6a8c5c-5864-449f-8d77-95baeb5633c2
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 8
+
+书籍、报纸及杂志
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -88,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-657303c5-1a14-4221-a862-6cd8ed9ee2c3
+5c6a8c5c-5864-449f-8d77-95baeb5633c2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T121004Z
+20151112T091330Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -106,8 +113,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 6dfedfb7-a60f-4b8a-9bbd-8cc1a11d43f8
+revision: a2d04436-bb47-4b38-bd1b-f1bbf36f30bf
 
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 10
+
+書籍、報紙及雜誌  
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -135,14 +149,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6dfedfb7-a60f-4b8a-9bbd-8cc1a11d43f8
+a2d04436-bb47-4b38-bd1b-f1bbf36f30bf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T121001Z
+20151112T091337Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

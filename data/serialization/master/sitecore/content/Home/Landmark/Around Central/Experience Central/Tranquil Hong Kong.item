@@ -10,26 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{99B3679B-24B4-40A6-B6C1-C658D03FF45F}" />
+114.2126685
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
 
-<image mediaid="{956A0174-FEF4-48DB-BEDD-C5C02C26D02B}" />
-----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
-
-<image mediaid="{956A0174-FEF4-48DB-BEDD-C5C02C26D02B}" />
+22.220422
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -40,22 +33,15 @@ content-length: 155
 ----version----
 language: en
 version: 1
-revision: e97b1bd0-a9fb-4014-8a38-8426f8c0640e
+revision: 63eb1810-671c-44fe-bee4-368a8ffbd67f
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 18
-
-Tranquil Hong Kong
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
 content-length: 90
 
-Hong Kong is not all hustle and bustle – there are easily accessible peaceful places, too!
+Hong Kong is not all hustle and bustle - there are easily accessible peaceful places, too!
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -76,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e97b1bd0-a9fb-4014-8a38-8426f8c0640e
+63eb1810-671c-44fe-bee4-368a8ffbd67f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T101316:635828335961289108Z
+20151112T132938Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,15 +80,8 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 7b8e52bd-48af-4639-9341-15c804863d58
+revision: b31d1eff-eb79-47bb-b33b-dd03d2d03277
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 7
-
-香港宁静的一面
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
@@ -130,14 +109,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7b8e52bd-48af-4639-9341-15c804863d58
+b31d1eff-eb79-47bb-b33b-dd03d2d03277
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T101408:635828336482178901Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -148,15 +127,8 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 826a1157-e3bc-4df5-a12b-33ffdfa58556
+revision: d4d6aa08-9f84-48f4-a894-9a7105a59951
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 7
-
-香港寧靜的一面
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
@@ -184,14 +156,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-826a1157-e3bc-4df5-a12b-33ffdfa58556
+d4d6aa08-9f84-48f4-a894-9a7105a59951
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T101351:635828336313499253Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

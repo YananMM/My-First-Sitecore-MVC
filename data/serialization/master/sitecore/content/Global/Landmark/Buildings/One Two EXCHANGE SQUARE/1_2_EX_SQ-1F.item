@@ -1,0 +1,119 @@
+----item----
+version: 1
+id: {0C3168A1-1A15-4920-9948-5AE01E8D628B}
+database: master
+path: /sitecore/content/Global/Landmark/Buildings/One Two EXCHANGE SQUARE/1_2_EX_SQ-1F
+parent: {0B9F0C48-A026-4AEF-B968-A106E8B2A8E4}
+name: 1_2_EX_SQ-1F
+master: {00000000-0000-0000-0000-000000000000}
+template: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
+templatekey: Floor Object
+
+----field----
+field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
+name: Floor Image
+key: floor image
+content-length: 58
+
+<image mediaid="{D19B4F62-6282-4BD8-AF93-965AF4BCD83C}" />
+----field----
+field: {49195981-001A-41D0-BE6E-78B60FD14964}
+name: Floor Svg File
+key: floor svg file
+content-length: 165
+
+<file mediapath="/Files/Landmark/Floor Guide/1exchangesquare" mediaid="{D7EA894D-6466-4BC9-8D7F-A4046DB1ABE2}" src="~/media/d7ea894d64664bc98d7fa4046db1abe2.ashx" />
+----version----
+language: en
+version: 1
+revision: 2cb5ea0f-2065-4277-b5c2-7c4cfb877f14
+
+----field----
+field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
+name: Floor Title
+key: floor title
+content-length: 3
+
+1/F
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151030T071100Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+2cb5ea0f-2065-4277-b5c2-7c4cfb877f14
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151110T022314Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
+language: zh-CN
+version: 1
+revision: f0fd7749-b740-4bbe-882b-89f73a84ec7f
+
+----field----
+field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
+name: Floor Title
+key: floor title
+content-length: 3
+
+1/F
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151106T125944Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f0fd7749-b740-4bbe-882b-89f73a84ec7f
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151106T125949Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

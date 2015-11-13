@@ -10,13 +10,6 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {19B5E6CB-FA41-418C-93F2-E8E6E72AE3BD}
-name: Cover Image
-key: cover image
-content-length: 58
-
-<image mediaid="{6E20E0E5-39DD-4C58-B1ED-DDBE15C9DFA0}" />
-----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
@@ -24,19 +17,19 @@ content-length: 15
 
 (852) 2530 0154
 ----field----
-field: {690DDB21-059C-4378-9CC4-BA22434D7D4F}
-name: Landing thumb Image
-key: landing thumb image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{615D85CF-CAE0-403F-9939-B817C2FCFE51}" />
+114.1555784
 ----field----
-field: {0D740360-72C6-4B61-8E30-5E67B629DB52}
-name: Callout Image
-key: callout image
-content-length: 58
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
 
-<image mediaid="{615D85CF-CAE0-403F-9939-B817C2FCFE51}" />
+22.2779383
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -47,22 +40,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 9ec8f832-f273-4bae-8c08-814737de71d5
+revision: 51a2a068-02ad-4c2a-848e-8e7158e2f0cc
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 42
-
-Hong Kong Zoological and Botanical Gardens
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 94
+content-length: 99
 
-<link linktype="external" url="http://www.lcsd.gov.hk/en/parks/hkzbg/ " anchor="" target="" />
+<link linktype="external" url="http://www.lcsd.gov.hk/en/parks/hkzbg/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -97,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9ec8f832-f273-4bae-8c08-814737de71d5
+51a2a068-02ad-4c2a-848e-8e7158e2f0cc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T092702:635828308222602546Z
+20151113T020752Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -115,22 +101,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: dc72cf38-cb63-40de-ab2a-6091ce4c87f5
+revision: f5aea152-3cef-4907-8e3c-df5a27aaeb30
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 7
-
-香港动植物公园
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 93
+content-length: 100
 
-<link linktype="external" url="http://www.lcsd.gov.hk/sc/parks/hkzbg/" anchor="" target="" />
+<link linktype="external" url="http://www.lcsd.gov.hk/sc/parks/hkzbg/ " anchor="" target="_blank" />
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 8
+
+香港中环雅宾利道
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
@@ -158,14 +144,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dc72cf38-cb63-40de-ab2a-6091ce4c87f5
+f5aea152-3cef-4907-8e3c-df5a27aaeb30
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T092756:635828308766973682Z
+20151113T021146Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -176,22 +162,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 9ea0f639-aa3a-48e0-9f2b-01bc716e4017
+revision: 77e93a95-1138-471e-8af8-3ade442e8711
 
-----field----
-field: {1189463D-F4FE-45C9-B673-398030341EAA}
-name: Cover Title
-key: cover title
-content-length: 7
-
-香港動植物公園
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 93
+content-length: 100
 
-<link linktype="external" url="http://www.lcsd.gov.hk/tc/parks/hkzbg/" anchor="" target="" />
+<link linktype="external" url="http://www.lcsd.gov.hk/tc/parks/hkzbg/ " anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -226,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9ea0f639-aa3a-48e0-9f2b-01bc716e4017
+77e93a95-1138-471e-8af8-3ade442e8711
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T092731:635828308510929037Z
+20151113T021154Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

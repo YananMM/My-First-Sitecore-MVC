@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 77
+content-length: 194
 
-{B597804A-C4D7-44FB-9FAC-490726EEB3D9}|{C0BFF7F2-6271-4B95-9914-19628F56860B}
+{B597804A-C4D7-44FB-9FAC-490726EEB3D9}|{C0BFF7F2-6271-4B95-9914-19628F56860B}|{D84B1172-716F-4E5A-8CF0-7D22C9A221C1}|{CE078BA5-479D-42FE-BAB4-50A1459A29AA}|{6B69973D-6FCC-45B2-9C75-ECCBC56F42FC}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-201
 ----version----
 language: en
 version: 1
-revision: 59b7c732-2b65-4ae3-b413-51777d3649e2
+revision: d5633e5b-be15-4a66-ad5c-35476f120046
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -67,9 +67,9 @@ Starbucks Coffee (LANDMARK ALEXANDRA)
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 55
+content-length: 54
 
-Coffees, cakes and biscuits served in a cozy ambience. 
+Coffees, cakes and biscuits served in a cozy ambience.
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -88,18 +88,18 @@ Starbucks Coffee (LANDMARK ALEXANDRA)
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 55
+content-length: 54
 
-Coffees, cakes and biscuits served in a cozy ambience. 
+Coffees, cakes and biscuits served in a cozy ambience.
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 64
+content-length: 63
 
 Mon-Fri: 7am-8:30pm
 Sat: 7am-8pm
-Sun & public holidays: 9am-7pm 
+Sun & public holidays: 9am-7pm
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -134,21 +134,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-59b7c732-2b65-4ae3-b413-51777d3649e2
+d5633e5b-be15-4a66-ad5c-35476f120046
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151902Z
+20151113T032243Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1
