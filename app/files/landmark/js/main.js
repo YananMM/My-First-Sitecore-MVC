@@ -133,7 +133,7 @@ $(document).ready(function() {
         0
       )
       .add(
-        TweenMax.to($('nav h1', $navbar), .5, {marginTop: "-=12px"}),
+        TweenMax.to($('nav .logo-area', $navbar), .5, {marginTop: "-=12px"}),
         0
       )
       .add(
