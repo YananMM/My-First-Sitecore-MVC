@@ -51,12 +51,17 @@
     <ol class="breadcrumb">
         @foreach (var item in items)
         {
-            string href = LandmarkHelper.IsFalsePage(item)?"#":@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item)); 
+            string href = string.Empty;
+            href = LandmarkHelper.IsFalsePage(item)?"#":LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item));
             <li>
+                @if (item.ID.ToString() == ItemGuids.ShoppingItem || item.ID.ToString() == ItemGuids.DiningItem)
+                {
+                    href = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.Children.Where(i => i.DisplayName == "By Brands").FirstOrDefault()));
+                }
                 <a href=@href>
                     @if (item.ID == homePage.ID)
                     {
-                        <text>Home</text>
+                        <text>@Html.Sitecore().Field("Glossary Value",Sitecore.Context.Database.GetItem(ItemGuids.HomeItem))</text>
                         <span class="icomoon-chevron-small-right"></span>
                     }
                     else
