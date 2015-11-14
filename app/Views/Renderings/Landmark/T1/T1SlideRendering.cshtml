@@ -19,6 +19,13 @@
             string title = item.Fields["Slide Title"].Value;
             string text =  item.Fields["Slide Intro"].Value;
             string imgsrc = LandmarkHelper.ImageFieldSrc("Slide Image", item);
+            string buttonText = item.Fields["Slide Button Text"].Value;
+            string buttonLink = string.Empty;
+            LinkField link = item.Fields["Slide Button Link"];
+            if (link != null)
+            {
+                buttonLink = link.Url;
+            }
             if (sublineVersionsField.Value.Equals(ItemGuids.TwoNumbersTwoCaptionsTextLink))
             {
                 title = item.Fields["Slide Numbers Text Title"].Value;
@@ -52,6 +59,20 @@
                 if (referenceField.TargetItem != null)
                 {
                     imgsrc = LandmarkHelper.GetCallOutImage(referenceField.TargetItem);
+                }
+            }
+            if (string.IsNullOrEmpty(buttonText))
+            {
+                if (referenceField.TargetItem != null)
+                {
+                    buttonText = Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverLandmarkStoriesItem).Fields["Glossary Value"].Value;
+                }
+            }
+            if (string.IsNullOrEmpty(buttonLink))
+            {
+                if (referenceField.TargetItem != null)
+                {
+                    buttonLink = LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceField.TargetItem));
                 }
             }
             
@@ -88,7 +109,7 @@
                                 <div class="panel-content">
                                     @text
                                 </div>
-                                <a class="btn btn-default" href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceField.TargetItem))">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverLandmarkStoriesItem))</a>
+                                <a class="btn btn-default" href="@buttonLink">@buttonText</a>
                             </div>
                         </div>
                     </div>

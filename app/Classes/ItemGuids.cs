@@ -64,8 +64,10 @@ namespace Landmark.Classes
         public static readonly String ArticleObject = "{E0472501-0925-4F7F-A5BC-84F0ECA1B7F8}";
         public static readonly String RelatedItemFolder = "{5451FE7F-09B6-4620-AE8B-5B4A3610851E}";
         public static readonly String T27Page = "{A46D7A20-B29F-4C4F-8922-0B70555CD6BC}";
+        public static readonly String T27PageTemplate = "{A46D7A20-B29F-4C4F-8922-0B70555CD6BC}";
         public static readonly String T23PageTemplate = "{2EE73BEB-F8DA-4F35-BB46-C1B0B8AC3945}";
         public static readonly String T23PageCDTemplate = "{2F6A4A9C-C7DC-439D-8310-3A2EF0617158}";
+        public static readonly String T23PageABTemplate = "{019AAA6D-F7C8-4293-94EE-CF065B0A8A91}";
         public static readonly String T15PageTemplate = "{D931A074-6489-494D-ABA7-AD15032CF10C}";
         public static readonly String T22PageTemplate = "{7B7A336C-48D6-4CD7-BC35-A4593F16F2D0}";
         public static readonly String PageNotFoundItem = "{74CD14D9-357D-4514-AE09-744348A4F6E0}";
