@@ -10,26 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
+content-length: 58
+
+<image mediaid="{34066BE8-5D11-4228-ACC0-35721075143C}" />
+----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
 content-length: 16
 
  (852) 2522 1624
-----field----
-field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
-name: Map Longitude
-key: map longitude
-content-length: 10
-
-114.155599
-----field----
-field: {0C295F12-1B0E-4873-A718-0F31C341400F}
-name: Map Latitude
-key: map latitude
-content-length: 9
-
-22.281454
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -40,15 +33,22 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 21666b80-d021-4800-a158-a0abd32bce6d
+revision: 79be9534-9ee5-49c4-9001-e13fb14a69cf
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 20
+
+Yung Kee Restaurant 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 97
+content-length: 91
 
-<link linktype="external" url="http://www.yungkee.com.hk/index.html" anchor="" target="_blank" />
+<link linktype="external" url="http://www.yungkee.com.hk/index.html" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -62,7 +62,7 @@ name: Content Title
 key: content title
 content-length: 73
 
-Renowned roast goose restaurant that's a favourite of the rich and famous
+Renowned roast goose restaurant that’s a favourite of the rich and famous
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -83,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-21666b80-d021-4800-a158-a0abd32bce6d
+79be9534-9ee5-49c4-9001-e13fb14a69cf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T023634Z
+20151113T061755:635829922755942697Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +101,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: c918ae9b-c774-44b5-be3e-f7d0eea30551
+revision: 93f22ccd-4087-4a49-b4ca-eb8315e47edd
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 97
+content-length: 91
 
-<link linktype="external" url="http://www.yungkee.com.hk/index.html" anchor="" target="_blank" />
+<link linktype="external" url="http://www.yungkee.com.hk/index.html" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -121,9 +121,9 @@ content-length: 14
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
-content-length: 15
+content-length: 16
 
-驰名烧鹅酒家，是名人富豪的至爱
+驰名烧鹅酒家，是名人富豪的至爱 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -144,14 +144,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c918ae9b-c774-44b5-be3e-f7d0eea30551
+93f22ccd-4087-4a49-b4ca-eb8315e47edd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T032708Z
+20151111T100719:635828332390354862Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +162,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: ae623c0b-b281-4c00-adaa-bd0b0dd69dfe
+revision: 545a6143-be09-4c20-b948-0c701ac5ecd8
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 97
+content-length: 91
 
-<link linktype="external" url="http://www.yungkee.com.hk/index.html" anchor="" target="_blank" />
+<link linktype="external" url="http://www.yungkee.com.hk/index.html" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -205,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ae623c0b-b281-4c00-adaa-bd0b0dd69dfe
+545a6143-be09-4c20-b948-0c701ac5ecd8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T032637Z
+20151111T100656:635828332169902253Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

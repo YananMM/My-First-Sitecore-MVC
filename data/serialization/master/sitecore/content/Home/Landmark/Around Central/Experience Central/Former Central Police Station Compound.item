@@ -10,19 +10,12 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
-name: Map Longitude
-key: map longitude
-content-length: 11
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
+content-length: 58
 
-114.1538009
-----field----
-field: {0C295F12-1B0E-4873-A718-0F31C341400F}
-name: Map Latitude
-key: map latitude
-content-length: 10
-
-22.2819736
+<image mediaid="{A4ED7DE4-2A3D-4986-B5DE-CEE7CCA5AAF9}" />
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -33,15 +26,22 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 54bd52f1-64d2-4f4d-85a7-b6e2a83aad47
+revision: 70e87d8e-8dac-4c8c-a781-dcf4d65d2f29
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 38
+
+Former Central Police Station Compound
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 113
+content-length: 107
 
-<link linktype="external" url="http://www.centralpolicestation.org.hk/en/index.asp " anchor="" target="_blank" />
+<link linktype="external" url="http://www.centralpolicestation.org.hk/en/index.asp " anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -76,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-54bd52f1-64d2-4f4d-85a7-b6e2a83aad47
+70e87d8e-8dac-4c8c-a781-dcf4d65d2f29
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T021603Z
+20151113T060636:635829915960082691Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,15 +94,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: a7810d2a-9936-4b8d-9340-e5d10b547697
+revision: 9fd16106-4782-47b2-b29a-bf664ac95dfd
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 113
+content-length: 107
 
-<link linktype="external" url="http://www.centralpolicestation.org.hk/ch/index.asp " anchor="" target="_blank" />
+<link linktype="external" url="http://www.centralpolicestation.org.hk/ch/index.asp " anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -137,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a7810d2a-9936-4b8d-9340-e5d10b547697
+9fd16106-4782-47b2-b29a-bf664ac95dfd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T021637Z
+20151111T093026:635828310263799296Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -155,15 +155,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 36c1598a-2fb8-49ab-9f9f-8356e8ba35b6
+revision: bf16d74b-c8d9-41ba-99ee-f4e3b7a32d47
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 113
+content-length: 106
 
-<link linktype="external" url="http://www.centralpolicestation.org.hk/ch/index.asp " anchor="" target="_blank" />
+<link linktype="external" url="http://www.centralpolicestation.org.hk/ch/index.asp" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -198,14 +198,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-36c1598a-2fb8-49ab-9f9f-8356e8ba35b6
+bf16d74b-c8d9-41ba-99ee-f4e3b7a32d47
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T021618Z
+20151111T093001:635828310018685276Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
