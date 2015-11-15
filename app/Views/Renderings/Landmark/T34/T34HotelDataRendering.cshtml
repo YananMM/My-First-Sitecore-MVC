@@ -27,7 +27,8 @@
                         <th>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.EmailItem)).ToString().ToUpper()</th>
                         <td><a href="mailto:@hotelEmail.Url">@hotelEmail.Url</a></td>
                     </tr>
-                }}
+                }
+            }
             @if (!string.IsNullOrEmpty(currentItem.Fields["Hotel Address"].ToString()))
             {
                 <tr>
