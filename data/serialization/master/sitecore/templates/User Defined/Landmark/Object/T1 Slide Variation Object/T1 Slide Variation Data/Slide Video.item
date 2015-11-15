@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {687B71D1-C561-4B9E-B214-32F115925434}
+id: {DF2B5F7C-2BD8-4762-982A-8F461123C5C2}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/T1 Slide Variation Object/T1 Slide Variation Data/Slide Button Link
+path: /sitecore/templates/User Defined/Landmark/Object/T1 Slide Variation Object/T1 Slide Variation Data/Slide Video
 parent: {F3C75FDD-5E0C-4C01-B590-369330D4F4AB}
-name: Slide Button Link
+name: Slide Video
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,20 +13,20 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 12
+content-length: 16
 
-General Link
+Single-Line Text
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 4
 
-1100
+1150
 ----version----
 language: en
 version: 1
-revision: 70b552a9-249e-4f27-a0c4-52d2f807c2af
+revision: 8bb580b3-6bd8-4a4f-ac3e-c6ad8d7e42d6
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20151113T063010Z
+20151113T065332Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-70b552a9-249e-4f27-a0c4-52d2f807c2af
+8bb580b3-6bd8-4a4f-ac3e-c6ad8d7e42d6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T065332Z
+20151113T065341Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

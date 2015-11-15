@@ -13,6 +13,7 @@ using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Data.Query;
 using Sitecore.Links;
+using Sitecore.Mvc.Pipelines.Response.RenderRendering;
 using Sitecore.Web.UI.HtmlControls;
 
 namespace Landmark.Helper
@@ -594,5 +595,56 @@ namespace Landmark.Helper
                 return LandmarkHelper.GetItemUrl(item);
             }
         }
+
+        public List<Item> GetRandomCategory()
+        {
+            Item context = Sitecore.Context.Item;
+            Guid[] templatesid = new[]
+            {
+                new Guid(ItemGuids.T4PageTemplate), 
+                new Guid(ItemGuids.T27PageTemplate),
+                new Guid(ItemGuids.T23PageABTemplate),
+                new Guid(ItemGuids.T23PageCDTemplate), 
+                new Guid(ItemGuids.T25PageTemplate)
+            };
+            List<Item> allCategories = null;
+            List<Item> randomArticles = null;
+            if(isShop)
+                allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
+            if(isDining)
+                allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);
+            Item currentCategory = allCategories.Where(i => i.DisplayName == context.DisplayName).FirstOrDefault();
+            if (currentCategory != null)
+            {
+                List<Item> articles = LandmarkHelper.GetItemsByItemsTemplates(Sitecore.Context.Database.GetItem(ItemGuids.LandmarkHomeItem), templatesid);
+                articles = articles.Where(item => item.Fields["Tags"] != null).ToList();
+                articles = articles.Where(item => ((MultilistField)item.Fields["Tags"]).TargetIDs.Any()).ToList();
+                articles = (from article in articles
+                    from tagid in ((MultilistField) article.Fields["Tags"]).TargetIDs
+                    where Sitecore.Context.Database.GetItem(tagid).Parent.ID.ToString() == currentCategory.ID.ToString()
+                          || tagid.ToString() == currentCategory.ID.ToString()
+                    select article).Distinct().ToList();
+                    
+                if (articles.Count > 3)
+                {
+                    Random random = new Random();
+                    int num1 = random.Next(0, articles.Count);
+                    int num2 = random.Next(0, num1);
+                    int num3 = random.Next(num1, articles.Count);
+
+                    randomArticles.Add(articles[num1]);
+                    randomArticles.Add(articles[num2]);
+                    randomArticles.Add(articles[num3]);
+                }
+                else
+                {
+                    return articles;
+                }
+            }
+            
+            return randomArticles;
+        }
+
+        
     }
 }
