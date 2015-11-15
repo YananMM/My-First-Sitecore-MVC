@@ -96,7 +96,7 @@ namespace Landmark.Helper
             if (grandParentItem.ID.ToString() == ItemGuids.DiningItem)
             {
                 allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);
-                Item currentCategory = allCategories.FirstOrDefault(i => i.DisplayName == parentItem.DisplayName);
+                Item currentCategory = allCategories.FirstOrDefault(i => i.DisplayName.Replace(i.Parent.DisplayName + "-", "") == parentItem.DisplayName);
                 if (currentCategory != null)
                 {
                     currentTag = currentCategory.ID.ToString();
@@ -106,7 +106,7 @@ namespace Landmark.Helper
             var subCategories = LandmarkHelper.GetItemByTemplate(parentItem, ItemGuids.ShoppingSubCategoryPageObject);
             if (subCategories == null || !subCategories.Any())
             {
-                Item currentCategory = allCategories.FirstOrDefault(i => i.DisplayName.Remove(i.DisplayName.IndexOf("_"), 1) == parentItem.DisplayName);
+                Item currentCategory = allCategories.FirstOrDefault(i => i.DisplayName.Replace(i.Parent.DisplayName + "-", "") == parentItem.DisplayName);
                 if (currentCategory != null)
                 {
                     currentTag = currentCategory.ID.ToString();
@@ -204,16 +204,16 @@ namespace Landmark.Helper
                                              where item.DisplayName == category.DisplayName && item.TemplateID.ToString() == ItemGuids.T11PageTemplate
                                              select new TextValue
                                              {
-                                                 text = category.DisplayName,
-                                                 value = item.ID.ToString()
+                                                 text = category["Tag Name"],
+                                                 value = category.ID.ToString()
                                              }).ToList();
             foreach (var item in firstCategory)
             {
-                var subCategoriess = Sitecore.Context.Database.GetItem(item.value).Children.Where(i => i.TemplateID.ToString() == ItemGuids.ShoppingSubCategoryPageObject).ToList();
+                var subCategoriess = Sitecore.Context.Database.GetItem(item.value).Children.Where(i => i.TemplateID.ToString() == ItemGuids.CategoryObjectTemplate).ToList();
                 List<TextValue> children =
                     subCategoriess.Select(p => new TextValue
                     {
-                        text = p.DisplayName,
+                        text = p["Tag Name"],
                         value = p.ID.ToString()
                     }).ToList();
                 item.children = children;
@@ -609,9 +609,9 @@ namespace Landmark.Helper
             };
             List<Item> allCategories = null;
             List<Item> randomArticles = null;
-            if(isShop)
+            if (isShop)
                 allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
-            if(isDining)
+            if (isDining)
                 allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);
             Item currentCategory = allCategories.Where(i => i.DisplayName == context.DisplayName).FirstOrDefault();
             if (currentCategory != null)
@@ -620,11 +620,11 @@ namespace Landmark.Helper
                 articles = articles.Where(item => item.Fields["Tags"] != null).ToList();
                 articles = articles.Where(item => ((MultilistField)item.Fields["Tags"]).TargetIDs.Any()).ToList();
                 articles = (from article in articles
-                    from tagid in ((MultilistField) article.Fields["Tags"]).TargetIDs
-                    where Sitecore.Context.Database.GetItem(tagid).Parent.ID.ToString() == currentCategory.ID.ToString()
-                          || tagid.ToString() == currentCategory.ID.ToString()
-                    select article).Distinct().ToList();
-                    
+                            from tagid in ((MultilistField)article.Fields["Tags"]).TargetIDs
+                            where Sitecore.Context.Database.GetItem(tagid).Parent.ID.ToString() == currentCategory.ID.ToString()
+                                  || tagid.ToString() == currentCategory.ID.ToString()
+                            select article).Distinct().ToList();
+
                 if (articles.Count > 3)
                 {
                     Random random = new Random();
@@ -641,10 +641,10 @@ namespace Landmark.Helper
                     return articles;
                 }
             }
-            
+
             return randomArticles;
         }
 
-        
+
     }
 }

@@ -14,12 +14,11 @@
     if (!Sitecore.Context.Item.Parent.ID.ToString().Equals(ItemGuids.ShoppingItem) && !Sitecore.Context.Item.Parent.ID.ToString().Equals(ItemGuids.DiningItem))
     {
         var currentTag = shoppingHelper.GetCurrentCategory(currentItem);
-        <h2>@currentTag lalalaal</h2>
         brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
     }
     var brands = brandModels.GroupBy(p => p.Group).ToList();
 }
-@*<div class="masonry-area clearfix">
+<div class="masonry-area clearfix">
         @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T13MobileSideBarRendering)
         <div class="brand-box-area">
 
@@ -34,4 +33,4 @@
                 }
             }
         </div>
-    </div>*@
+    </div>
