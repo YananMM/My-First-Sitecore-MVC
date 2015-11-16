@@ -21,7 +21,6 @@
 <div class="masonry-area clearfix">
         @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T13MobileSideBarRendering)
         <div class="brand-box-area">
-
             @foreach (var items in brands)
             {
                 <div class="brand-box brand-box-letter" id="@items.First().Group.ToLower()">@items.First().Group</div>

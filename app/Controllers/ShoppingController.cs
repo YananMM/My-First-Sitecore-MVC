@@ -18,6 +18,7 @@ using System.Web;
 using System.Web.Mvc;
 using Landmark.Classes;
 using Landmark.Helper;
+using Landmark.Models;
 using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Data.Items;
@@ -37,26 +38,54 @@ namespace Landmark.Controllers
         /// </summary>
         /// <param name="childcategory">The childcategory.</param>
         /// <returns>ActionResult.</returns>
-        public ActionResult GoTo(string category=null, string childcategory=null)
+        public ActionResult GoTo(string category, string childcategory = null)
         {
-            Item shoppingCategory = Sitecore.Context.Database.GetItem(category);
             Session["category"] = category;
-            if (shoppingCategory.Parent.ID.ToString() == ItemGuids.DiningItem)
+            Session["childcategory"] = childcategory;
+            Item target = Sitecore.Context.Item;
+            var categoryTag = Sitecore.Context.Database.GetItem(category);
+
+            var childcategoryTag = Sitecore.Context.Database.GetItem(childcategory);
+
+            var categoryDisplayName = categoryTag.DisplayName;
+
+            if (categoryTag.Parent.ID.ToString() == ItemGuids.DiningCategory)
             {
-                Item target = shoppingCategory.Children.Where(i => i.DisplayName == "By Brands").FirstOrDefault();
-                return Redirect(LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(target)));
+                var diningPage = Sitecore.Context.Database.GetItem(ItemGuids.DiningItem);
+                var diningItemPages = LandmarkHelper.GetItemByTemplate(diningPage, ItemGuids.T11PageTemplate);
+                foreach (var item in diningItemPages)
+                {
+                    if (item.DisplayName == categoryDisplayName)
+                    {
+                        target = item;
+                    }
+                }
             }
-            if (!string.IsNullOrEmpty(childcategory))
+            else if (categoryTag.Parent.ID.ToString() == ItemGuids.ShoppingItem)
             {
-                shoppingCategory = Sitecore.Context.Database.GetItem(childcategory);
-                Session["childcategory"] = childcategory;
-                return Redirect(LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(shoppingCategory.Children.First())));
+                var childcategoryDisplayName = childcategoryTag.DisplayName.Replace(categoryTag.Parent.DisplayName + "-", "");
+                var shopPage = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
+                var shopItemPages = LandmarkHelper.GetItemByTemplate(shopPage, ItemGuids.T11PageTemplate);
+
+                foreach (var item in shopItemPages)
+                {
+                    if (item.DisplayName == categoryDisplayName)
+                    {
+                        var subShopPages = item.Children.ToList();
+                        if (subShopPages.Count > 0)
+                        {
+                            foreach (var subPage in subShopPages)
+                            {
+                                if (subPage.DisplayName == childcategoryDisplayName)
+                                {
+                                    target = subPage;
+                                }
+                            }
+                        }
+                    }
+                }
             }
-            else
-            {
-                return Redirect(LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(shoppingCategory)));
-            }
-            
+            return Redirect(LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(target)));
         }
 
     }

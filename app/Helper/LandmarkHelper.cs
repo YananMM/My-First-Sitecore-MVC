@@ -406,17 +406,20 @@ namespace Landmark.Helper
         public static string GetCallOutImage(Item item)
         {
             string imageURL = "";
-            Sitecore.Data.Fields.ImageField imageField = item.Fields["Article Callout Image"];
-            if (imageField != null && imageField.MediaItem != null)
+            ImageField imageField = item.Fields["Article Callout Image"];
+            if (imageField != null )
             {
-                Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(imageField.MediaItem);
-                imageURL = Sitecore.StringUtil.EnsurePrefix('/',
-                    Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
+                if (imageField.MediaItem != null)
+                {
+                    MediaItem image = new MediaItem(imageField.MediaItem);
+                    imageURL = Sitecore.StringUtil.EnsurePrefix('/',
+                        Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
+                }
             }
             else
             {
                 var sliders =
-                    LandmarkHelper.GetItemByTemplate(item, ItemGuids.SlideObjectTemplate);
+                    GetItemByTemplate(item, ItemGuids.SlideObjectTemplate);
                 if (sliders != null && sliders.Count != 0)
                 {
                     imageURL = FileFieldSrc("Slide Image", sliders.FirstOrDefault());
