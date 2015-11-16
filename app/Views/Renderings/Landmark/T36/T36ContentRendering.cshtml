@@ -37,7 +37,7 @@
                 {
                     <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{ if (i == 0) { <text>
                         class="active"
-                        </text>                      } }></li>
+                        </text>                       } }></li>
                 }
             </ol>
         }
@@ -49,9 +49,9 @@
         {
             <div @{ if (j == 0) { <text>
                  class="item active"
-                 </text>     } else { <text>
+                 </text>      } else { <text>
                  class="item"
-                 </text>     } }>
+                 </text>      } }>
                 @{
             j++;
                 }
@@ -73,7 +73,7 @@
                                 <div class="gd-longarticle-fixedlines">
                                     <p>@Html.Sitecore().Field("Article Intro", item.Parent.Parent)</p>
                                     <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(item.Parent.Parent))" type="button" class="gd-button gd-button-reversed">
-                                        @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem))
+                                        @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem))
                                     </a>
                                 </div>
                             </div>
@@ -106,29 +106,32 @@
     @foreach (var item in magazineGroupsByRandom.MaganizeGroups)
     {
         @*<h2>@magazineGroupsByRandom.MaganizeGroups.Count</h2>*@
-        <div class="gd-promotion-box-area">
-            <div class="gd-promotion-box-heading">
-                <a class="gd-link-brands" href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(item.MagazineCategory))?page=1">
-                    @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeMoreItem))<span class="icomoon-chevron-small-right"></span></a>
-                <h3>@item.MagazineCategory.Fields["Category Name"].ToString().ToUpper()</h3>
-            </div>
-
-            <div class="slider variable-width gd-slick-slider">
-                @foreach (var it in item.Stories)
-                {
-                    <a class="gd-slick-item gd-hover-img" href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(it))">
-                        <div class="gd-hover-img-area">
-                            <div class="gd-hover-img-mask"></div>
-                            <img src="@LandmarkHelper.GetCallOutImage(it)" />
-                        </div>
-                        <div class="gd-slick-des">
-                            <h3>@Html.Sitecore().Field("Article Headline", it)</h3>
-                            <p>@Html.Sitecore().Field("Article Intro", it)</p>
-                        </div>
+        if (item.Stories.Count > 0)
+        {
+            <div class="gd-promotion-box-area">
+                <div class="gd-promotion-box-heading">
+                    <a class="gd-link-brands" href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(item.MagazineCategory))?page=1">
+                        @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem))<span class="icomoon-chevron-small-right"></span>
                     </a>
-                }
-                 
+                    <h3>@item.MagazineCategory.Fields["Category Name"].ToString().ToUpper()</h3>
+                </div>
+                <div class="slider variable-width gd-slick-slider">
+                    @foreach (var it in item.Stories)
+                    {
+                        <a class="gd-slick-item gd-hover-img" href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(it))">
+                            <div class="gd-hover-img-area">
+                                <div class="gd-hover-img-mask"></div>
+                                <img src="@LandmarkHelper.GetCallOutImage(it)" />
+                            </div>
+                            <div class="gd-slick-des">
+                                <h3>@Html.Sitecore().Field("Article Headline", it)</h3>
+                                <p>@Html.Sitecore().Field("Article Intro", it)</p>
+                            </div>
+                        </a>
+                    }
+
+                </div>
             </div>
-        </div>
+        }
     }
 </div>
