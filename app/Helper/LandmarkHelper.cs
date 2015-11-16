@@ -179,7 +179,7 @@ namespace Landmark.Helper
 
         public static List<Item> GetItemByTemplate(Item parent, string templateId)
         {
-            var query = Uri.EscapeDataString(string.Format("fast:{0}//*[{1}]", parent.Paths.FullPath, "@@TemplateId='" + templateId + "'"));
+            var query = string.Format("fast:{0}//*[{1}]", parent.Paths.FullPath, "@@TemplateId='" + templateId + "'");
             List<Item> slidesItems = _webDb.SelectItems(query).OrderBy(i => i.DisplayName).ToList();
             return slidesItems;
         }
@@ -187,7 +187,7 @@ namespace Landmark.Helper
         public static List<Item> GetItemsByItemsTemplates(Item parent, Guid[] templateIds)
         {
             var queryTemplateArguments = templateIds.Select(tId => "@@TemplateId='{" + tId.ToString().ToUpper() + "}'").ToArray();
-            var query = Uri.EscapeDataString(string.Format("fast:{0}//*[{1}]", parent.Paths.FullPath, string.Join(" or ", queryTemplateArguments)));
+            var query = string.Format("fast:{0}//*[{1}]", parent.Paths.FullPath, string.Join(" or ", queryTemplateArguments));
             return parent.Database.SelectItems(query).ToList();
         }
 
@@ -419,7 +419,7 @@ namespace Landmark.Helper
             else
             {
                 var sliders =
-                    GetItemByTemplate(item, ItemGuids.SlideObjectTemplate);
+                    LandmarkHelper.GetItemByTemplate(item, ItemGuids.SlideObjectTemplate);
                 if (sliders != null && sliders.Count != 0)
                 {
                     imageURL = FileFieldSrc("Slide Image", sliders.FirstOrDefault());
