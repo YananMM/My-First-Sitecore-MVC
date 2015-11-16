@@ -30,7 +30,7 @@
 @if(exclusiveItem!=null)
 {
 <div class=" menbox-2">
-    <a href="#@href"  class="menbox-img" >
+    <a href="@href"  class="menbox-img" >
         <div class="menbox-img-mask"></div>
         <img data-src="@LandmarkHelper.GetCallOutImage(exclusiveItem)" alt="landmark" class="lazy-loaded">
     </a>
@@ -38,12 +38,10 @@
         
             @if (brandItem != null)
             {
-                <a href="#@href" class="menbox-title">
+                <a href="@href" class="menbox-title">
                     <h3>@Html.Sitecore().Field("Brand Title", brandItem)</h3>
                 </a>
             }
-            
-        
         <h4>@Html.Sitecore().Field("Article Type", ((ReferenceField) exclusiveItem.Fields["Article Type"]).TargetItem).ToString().ToUpper()</h4>
         <p>@Html.Sitecore().Field("Article Headline", exclusiveItem)</p>
     </div>

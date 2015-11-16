@@ -52,8 +52,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: d2617852-b712-4fe3-bbed-83fd0a93917c
+revision: c02b56e6-387d-4c9c-a566-c03d66f850e8
 
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 4
+
+各式美酒
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -81,14 +88,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d2617852-b712-4fe3-bbed-83fd0a93917c
+c02b56e6-387d-4c9c-a566-c03d66f850e8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T083536Z
+20151113T110711Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -99,8 +106,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 6344d462-8e17-4a09-954b-64dd1e674a2f
+revision: 556f54d9-cb5f-431b-a80e-f4b5212ed740
 
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 4
+
+各式美酒
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -128,14 +142,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6344d462-8e17-4a09-954b-64dd1e674a2f
+556f54d9-cb5f-431b-a80e-f4b5212ed740
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T083356Z
+20151113T110715Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

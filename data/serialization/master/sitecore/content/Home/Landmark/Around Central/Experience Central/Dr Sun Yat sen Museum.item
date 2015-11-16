@@ -10,19 +10,26 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
-name: Article Callout Image
-key: article callout image
-content-length: 58
-
-<image mediaid="{2D58E9B2-4247-4853-8C88-D4327CC3E27A}" />
-----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
 content-length: 15
 
 (852) 2367 6373
+----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 9
+
+114.15081
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.281974
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -33,22 +40,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 822de762-e3e5-4cd0-8130-4158a75740e5
+revision: 0f5fad7a-5b81-411f-b18a-7451c912b127
 
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 21
-
-Dr Sun Yat-sen Museum
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 117
+content-length: 123
 
-<link linktype="external" url="http://hk.drsunyatsen.museum/en_US/web/sysm/aboutus/intro.html" anchor="" target="" />
+<link linktype="external" url="http://hk.drsunyatsen.museum/en_US/web/sysm/aboutus/intro.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -83,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-822de762-e3e5-4cd0-8130-4158a75740e5
+0f5fad7a-5b81-411f-b18a-7451c912b127
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151113T072753:635829964732726321Z
+20151113T023156Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +101,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f50c1260-ac1b-4a04-9394-b7ab48e82378
+revision: dc936116-86ea-40b7-a8f5-e79c839c574d
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 117
+content-length: 123
 
-<link linktype="external" url="http://hk.drsunyatsen.museum/zh_CN/web/sysm/aboutus/intro.html" anchor="" target="" />
+<link linktype="external" url="http://hk.drsunyatsen.museum/zh_CN/web/sysm/aboutus/intro.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -144,14 +144,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f50c1260-ac1b-4a04-9394-b7ab48e82378
+dc936116-86ea-40b7-a8f5-e79c839c574d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095628:635828325883982719Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +162,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: b6cb351a-ffb3-4c5f-9ff0-79072ddf4e2c
+revision: 4767de12-636c-4abd-8948-42c095c65c91
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 117
+content-length: 123
 
-<link linktype="external" url="http://hk.drsunyatsen.museum/zh_TW/web/sysm/aboutus/intro.html" anchor="" target="" />
+<link linktype="external" url="http://hk.drsunyatsen.museum/zh_TW/web/sysm/aboutus/intro.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -205,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b6cb351a-ffb3-4c5f-9ff0-79072ddf4e2c
+4767de12-636c-4abd-8948-42c095c65c91
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095544:635828325449417863Z
+20151113T032636Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

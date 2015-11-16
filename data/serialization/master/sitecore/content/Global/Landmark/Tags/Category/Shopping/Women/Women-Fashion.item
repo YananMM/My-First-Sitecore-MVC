@@ -52,8 +52,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 7534517d-8efa-453a-bff4-66828bdab9d6
+revision: 32371f7a-e3ba-4126-b4a5-b89112a74b9e
 
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 2
+
+时装
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -81,14 +88,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7534517d-8efa-453a-bff4-66828bdab9d6
+32371f7a-e3ba-4126-b4a5-b89112a74b9e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T083226Z
+20151113T105703Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -99,8 +106,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 970bd332-2f76-4368-bb7c-c1545e305641
+revision: 80ba2daa-ed6b-4f84-9c27-40451343a467
 
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 2
+
+時裝
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -128,14 +142,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-970bd332-2f76-4368-bb7c-c1545e305641
+80ba2daa-ed6b-4f84-9c27-40451343a467
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T083221Z
+20151113T105709Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -10,19 +10,26 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
-name: Article Callout Image
-key: article callout image
-content-length: 58
-
-<image mediaid="{5A196AD7-10E6-4821-BF1A-EC9EF59D9AEF}" />
-----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
 content-length: 15
 
 (852) 2870 2335
+----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
+
+114.1524554
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
+
+22.2836011
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -33,22 +40,15 @@ content-length: 77
 ----version----
 language: en
 version: 1
-revision: 83220a7b-9bde-4a6b-8e03-12335f13ab4e
+revision: fce05593-a59e-4816-bc3e-5a46cbb468c4
 
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 3
-
-PMQ
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 77
+content-length: 83
 
-<link linktype="external" url="http://www.pmq.org.hk/" anchor="" target="" />
+<link linktype="external" url="http://www.pmq.org.hk/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -83,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-83220a7b-9bde-4a6b-8e03-12335f13ab4e
+fce05593-a59e-4816-bc3e-5a46cbb468c4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151113T061237:635829919575922643Z
+20151113T022717Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +101,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 91e3a2aa-f5a4-4c07-9b48-0cf224d456e9
+revision: e1521875-d902-41b8-a6ea-552867b687d4
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 85
+content-length: 91
 
-<link linktype="external" url="http://www.pmq.org.hk/?lang=zh" anchor="" target="" />
+<link linktype="external" url="http://www.pmq.org.hk/?lang=zh" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -144,14 +144,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-91e3a2aa-f5a4-4c07-9b48-0cf224d456e9
+e1521875-d902-41b8-a6ea-552867b687d4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094637:635828319978444942Z
+20151113T032733Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +162,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 0da978ed-9428-4ec7-bcf1-b68284bd5422
+revision: 3fa8804f-28a9-446f-b1b3-8ee4a2b8433d
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 85
+content-length: 91
 
-<link linktype="external" url="http://www.pmq.org.hk/?lang=ch" anchor="" target="" />
+<link linktype="external" url="http://www.pmq.org.hk/?lang=ch" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -205,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0da978ed-9428-4ec7-bcf1-b68284bd5422
+3fa8804f-28a9-446f-b1b3-8ee4a2b8433d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094614:635828319747941758Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

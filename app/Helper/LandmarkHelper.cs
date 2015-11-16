@@ -7,6 +7,7 @@ using System.Net.Mail;
 using System.Web;
 using Landmark.Classes;
 using Landmark.Models;
+using Lucene.Net.Highlight;
 using Sitecore.Collections;
 using Sitecore.Configuration;
 using Sitecore.ContentSearch.Utilities;
@@ -178,7 +179,7 @@ namespace Landmark.Helper
 
         public static List<Item> GetItemByTemplate(Item parent, string templateId)
         {
-            var query = string.Format("fast:{0}//*[{1}]", parent.Paths.FullPath, "@@TemplateId='" + templateId + "'");
+            var query = Uri.EscapeDataString(string.Format("fast:{0}//*[{1}]", parent.Paths.FullPath, "@@TemplateId='" + templateId + "'"));
             List<Item> slidesItems = _webDb.SelectItems(query).OrderBy(i => i.DisplayName).ToList();
             return slidesItems;
         }
@@ -186,7 +187,7 @@ namespace Landmark.Helper
         public static List<Item> GetItemsByItemsTemplates(Item parent, Guid[] templateIds)
         {
             var queryTemplateArguments = templateIds.Select(tId => "@@TemplateId='{" + tId.ToString().ToUpper() + "}'").ToArray();
-            var query = string.Format("fast:{0}//*[{1}]", parent.Paths.FullPath, string.Join(" or ", queryTemplateArguments));
+            var query = Uri.EscapeDataString(string.Format("fast:{0}//*[{1}]", parent.Paths.FullPath, string.Join(" or ", queryTemplateArguments)));
             return parent.Database.SelectItems(query).ToList();
         }
 
@@ -405,17 +406,20 @@ namespace Landmark.Helper
         public static string GetCallOutImage(Item item)
         {
             string imageURL = "";
-            Sitecore.Data.Fields.ImageField imageField = item.Fields["Article Callout Image"];
-            if (imageField != null && imageField.MediaItem != null)
+            ImageField imageField = item.Fields["Article Callout Image"];
+            if (imageField != null )
             {
-                Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(imageField.MediaItem);
-                imageURL = Sitecore.StringUtil.EnsurePrefix('/',
-                    Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
+                if (imageField.MediaItem != null)
+                {
+                    MediaItem image = new MediaItem(imageField.MediaItem);
+                    imageURL = Sitecore.StringUtil.EnsurePrefix('/',
+                        Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
+                }
             }
             else
             {
                 var sliders =
-                    LandmarkHelper.GetItemByTemplate(item, ItemGuids.SlideObjectTemplate);
+                    GetItemByTemplate(item, ItemGuids.SlideObjectTemplate);
                 if (sliders != null && sliders.Count != 0)
                 {
                     imageURL = FileFieldSrc("Slide Image", sliders.FirstOrDefault());

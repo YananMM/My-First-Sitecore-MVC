@@ -10,12 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
-name: Article Callout Image
-key: article callout image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 9
 
-<image mediaid="{CB8BECBF-B9CC-4A27-B148-2A6DF2E66A4B}" />
+114.15973
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
+
+22.2794048
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -26,22 +33,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 6ae8a4b0-49dd-4df8-be76-71692db3f8bd
+revision: 614b84a6-ff8b-4a5c-8d50-845ae2a6d3b3
 
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 31
-
-Former French Mission Building 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 96
+content-length: 102
 
-<link linktype="external" url="http://www.amo.gov.hk/en/monuments_37.php" anchor="" target="" />
+<link linktype="external" url="http://www.amo.gov.hk/en/monuments_37.php" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -53,9 +53,9 @@ content-length: 34
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
-content-length: 51
+content-length: 50
 
-Red-brick beauty radiates flavour of old Hong Kong 
+Red-brick beauty radiates flavour of old Hong Kong
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -76,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6ae8a4b0-49dd-4df8-be76-71692db3f8bd
+614b84a6-ff8b-4a5c-8d50-845ae2a6d3b3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151113T072629:635829963895366321Z
+20151113T022910Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,15 +94,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 74a1c1be-0053-4b1b-8302-d07238b035ea
+revision: bcece341-7059-41ec-afae-ec850ab147ba
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 117
+content-length: 123
 
-<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/monuments_37.php" anchor="" target="" />
+<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/monuments_37.php" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -114,9 +114,9 @@ content-length: 9
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
-content-length: 15
+content-length: 16
 
-美丽的红砖建筑，呈现老香港情怀
+美丽的红砖建筑，呈现老香港情怀 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -137,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-74a1c1be-0053-4b1b-8302-d07238b035ea
+bcece341-7059-41ec-afae-ec850ab147ba
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095020:635828322205302311Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -155,15 +155,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: b836b27d-7623-4303-a914-96232471693f
+revision: 4cd70089-1196-49be-9726-d7ace72e1399
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 96
+content-length: 102
 
-<link linktype="external" url="http://www.amo.gov.hk/b5/monuments_37.php" anchor="" target="" />
+<link linktype="external" url="http://www.amo.gov.hk/b5/monuments_37.php" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -175,9 +175,9 @@ content-length: 9
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
-content-length: 16
+content-length: 15
 
-美麗的紅磚建築，呈現老香港情懷 
+美麗的紅磚建築，呈現老香港情懷
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -198,14 +198,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b836b27d-7623-4303-a914-96232471693f
+4cd70089-1196-49be-9726-d7ace72e1399
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094954:635828321948257609Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

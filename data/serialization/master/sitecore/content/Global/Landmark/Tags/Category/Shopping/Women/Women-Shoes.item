@@ -52,8 +52,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: a3ab8c8e-531c-46b1-abe8-c90e01e1590d
+revision: 316527e1-8b26-477b-8f47-5f0c173318c7
 
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 2
+
+鞋履
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -81,14 +88,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a3ab8c8e-531c-46b1-abe8-c90e01e1590d
+316527e1-8b26-477b-8f47-5f0c173318c7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T083248Z
+20151113T110016Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -99,8 +106,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 5128f011-80c2-4827-bed3-84f07b164c6a
+revision: a4dff70f-6852-44b7-afd2-1dc56c652572
 
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 2
+
+鞋履
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -128,14 +142,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5128f011-80c2-4827-bed3-84f07b164c6a
+a4dff70f-6852-44b7-afd2-1dc56c652572
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T083251Z
+20151113T110021Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

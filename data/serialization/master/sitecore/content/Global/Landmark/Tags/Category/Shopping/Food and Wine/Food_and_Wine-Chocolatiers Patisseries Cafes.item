@@ -50,10 +50,71 @@ content-length: 14
 
 sitecore\admin
 ----version----
+language: zh-CN
+version: 1
+revision: b2289c5b-1440-473b-8eff-0f3279111480
+
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 12
+
+巧克力店、糕饼店及咖啡店
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151113T110736Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+b2289c5b-1440-473b-8eff-0f3279111480
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151113T110738Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
+----version----
 language: zh-HK
 version: 1
-revision: 8c545aea-8ff3-4da0-8f13-9244195a5410
+revision: 9b1968dd-5a90-4656-a9e3-e9b94a30cbff
 
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 12
+
+朱古力店、糕餅店及咖啡店
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -81,14 +142,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8c545aea-8ff3-4da0-8f13-9244195a5410
+9b1968dd-5a90-4656-a9e3-e9b94a30cbff
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T083357Z
+20151113T110728Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

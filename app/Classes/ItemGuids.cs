@@ -170,7 +170,7 @@ namespace Landmark.Classes
         public static readonly string TelephoneItem = "{0B3DA006-CBA6-44CA-9421-88965D431F2F}";
         public static readonly string DiscoverLandmarkStoriesItem = "{5731F621-01CE-4596-9DA3-55A231D0D21F}";
         public static readonly string SortAndGoToItem = "{A67F7267-0402-4356-9EDF-5F1016C67F15}";
-        public static readonly string SeeMoreItem = "{0BA79670-6D57-473C-B495-1A01DB6CA2CA}";
+        //public static readonly string SeeMoreItem = "{0BA79670-6D57-473C-B495-1A01DB6CA2CA}";
         public static readonly string MagezineItem = "{8B359693-D433-4F44-98F8-9CEE5FA9B72F}";
         public static readonly string ListenToCommentaryAltItem = "{36C61E1D-7652-4DD4-8CCA-DDF1067D89D3}";
         public static readonly string RelatedArticleItem = "{9E9393AC-EDD4-4F2B-BDC8-A95A7400FA64}";

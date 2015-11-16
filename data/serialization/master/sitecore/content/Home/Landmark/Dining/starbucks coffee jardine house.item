@@ -23,15 +23,29 @@ key: tags
 content-length: 194
 
 {1DA4C84C-5353-4961-9C01-4A480E81C865}|{C0BFF7F2-6271-4B95-9914-19628F56860B}|{D84B1172-716F-4E5A-8CF0-7D22C9A221C1}|{CE078BA5-479D-42FE-BAB4-50A1459A29AA}|{6B69973D-6FCC-45B2-9C75-ECCBC56F42FC}
+----field----
+field: {3534AD05-BF49-4763-822B-25D97D9F7283}
+name: Floor
+key: floor
+content-length: 38
+
+{EDD97B8A-24FC-4629-8091-97ED4D907003}
 ----version----
 language: en
 version: 1
-revision: eb8de9f1-31be-424c-b0a9-a046475402f7
+revision: 8d9ac664-ed72-4a1d-88e5-bfffdc18b755
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
 name: Brand Title
 key: brand title
+content-length: 16
+
+Starbucks Coffee
+----field----
+field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
+name: Content Title
+key: content title
 content-length: 32
 
 Starbucks Coffee (Jardine House)
@@ -106,14 +120,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-eb8de9f1-31be-424c-b0a9-a046475402f7
+8d9ac664-ed72-4a1d-88e5-bfffdc18b755
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T032224Z
+20151113T092607Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -124,31 +138,52 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 7f893630-a026-49a9-b8b9-b07cd1d07e43
+revision: a768ca31-4cf6-44fc-a80c-4a5fc5982677
 
+----field----
+field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
+name: Brand Title
+key: brand title
+content-length: 5
+
+星巴克咖啡
+----field----
+field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
+name: Content Title
+key: content title
+content-length: 5
+
+星巴克咖啡
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 62
+content-length: 61
 
-亲切笑容的星巴克咖啡吧服务员，每天为您亲手冲调最香醇的咖啡饮品，让你在舒适的星巴克店内或旅途之中，感受独一无二的咖啡体验。 
+亲切笑容的星巴克咖啡吧服务员，每天为您亲手冲调最香醇的咖啡饮品，让你在舒适的星巴克店内或旅途之中，感受独一无二的咖啡体验。
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 5
+
+星巴克咖啡
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 62
+content-length: 61
 
-亲切笑容的星巴克咖啡吧服务员，每天为您亲手冲调最香醇的咖啡饮品，让你在舒适的星巴克店内或旅途之中，感受独一无二的咖啡体验。 
+亲切笑容的星巴克咖啡吧服务员，每天为您亲手冲调最香醇的咖啡饮品，让你在舒适的星巴克店内或旅途之中，感受独一无二的咖啡体验。
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 55
+content-length: 54
 
 星期一至星期五：早上6时30分至晚上8时
 星期六：早上8时至晚上8时
-星期日及公众假期：早上10时至下午5时 
+星期日及公众假期：早上10时至下午5时
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -190,26 +225,40 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7f893630-a026-49a9-b8b9-b07cd1d07e43
+a768ca31-4cf6-44fc-a80c-4a5fc5982677
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063956Z
+20151113T092217Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 4e3579be-9c8b-47b8-9091-20904e489083
+revision: b7a1cff4-008a-4681-8b19-e36944af9d72
 
+----field----
+field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
+name: Brand Title
+key: brand title
+content-length: 5
+
+星巴克咖啡
+----field----
+field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
+name: Content Title
+key: content title
+content-length: 5
+
+星巴克咖啡
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
@@ -217,6 +266,13 @@ key: content description
 content-length: 61
 
 親切笑容的星巴克咖啡吧服務員，每天為您親手沖調最香醇的咖啡飲品，讓你在舒適的星巴克店內或旅途之中，感受獨一無二的咖啡體驗。
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 5
+
+星巴克咖啡
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
@@ -228,11 +284,11 @@ content-length: 61
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 55
+content-length: 54
 
 星期一至星期五：早上6時30分至晚上8時
 星期六：早上8時至晚上8時
-星期日及公眾假期：早上10時至下午5時 
+星期日及公眾假期：早上10時至下午5時
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -267,18 +323,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4e3579be-9c8b-47b8-9091-20904e489083
+b7a1cff4-008a-4681-8b19-e36944af9d72
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063956Z
+20151113T092400Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

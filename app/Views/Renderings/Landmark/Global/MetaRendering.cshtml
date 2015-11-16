@@ -33,7 +33,7 @@
         {
             foreach (var imageid in imagesId)
             {
-                <meta property="og:image" content="@LandmarkHelper.GetImageItemAbsoluteUrl(imageid)"/>
+                <meta property="og:image" content="@LandmarkHelper.GetImageItemAbsoluteUrl(imageid)" />
             }
             firstImageUrl = LandmarkHelper.GetImageItemAbsoluteUrl(imagesId.FirstOrDefault());
         }
@@ -46,18 +46,21 @@
                 var slides = slideFolder.Children.ToList();
                 if (slides.Count > 0)
                 {
-                    ImageField firstImageField = (ImageField) slides[0].Fields["Slide Image"];
+                    ImageField firstImageField = (ImageField)slides[0].Fields["Slide Image"];
                     foreach (var slide in slides)
                     {
                         ImageField image = slide.Fields["Slide Image"];
-                        <meta property="og:image" content="@LandmarkHelper.GetImageItemAbsoluteUrl(image.MediaID)"/>
+                        if (!string.IsNullOrEmpty(image.MediaID.ToString()))
+                        {
+                            <meta property="og:image" content="@LandmarkHelper.GetImageItemAbsoluteUrl(image.MediaID)" />
+                        }
                     }
                     firstImageUrl = LandmarkHelper.GetImageItemAbsoluteUrl(firstImageField.MediaID);
                 }
             }
         }
     }
-    
+
 }
 
 <meta name="twitter:card" content="summary_large_image">
