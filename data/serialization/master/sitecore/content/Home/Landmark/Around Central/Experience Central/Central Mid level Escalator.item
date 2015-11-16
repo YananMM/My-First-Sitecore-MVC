@@ -10,12 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
-name: Article Callout Image
-key: article callout image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{AE665F3F-122E-416F-BCFB-7CC034FC6B2A}" />
+114.1554294
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
+
+22.2843222
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -26,15 +33,8 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 9a0243b2-2fcd-4c1b-87b0-86b145587565
+revision: 264e7e06-a287-40d1-bc22-b41aea650bfd
 
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 27
-
-Central Mid-level Escalator
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -48,7 +48,7 @@ name: Content Title
 key: content title
 content-length: 58
 
-World’s longest outdoor escalator rejuvenates old district
+World's longest outdoor escalator rejuvenates old district
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -69,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9a0243b2-2fcd-4c1b-87b0-86b145587565
+264e7e06-a287-40d1-bc22-b41aea650bfd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151113T060353:635829914330488365Z
+20151112T130038Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,7 +87,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f1d35795-1432-4a00-886a-c59d4295daf0
+revision: 45c120d8-f2fd-41c9-b2c3-964083808017
 
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
@@ -123,14 +123,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f1d35795-1432-4a00-886a-c59d4295daf0
+45c120d8-f2fd-41c9-b2c3-964083808017
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094000:635828316009727944Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -141,7 +141,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: d556da60-c01b-49d2-a591-436fec07108e
+revision: 375c3b0f-6132-489f-8511-1a122a839199
 
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
@@ -177,14 +177,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d556da60-c01b-49d2-a591-436fec07108e
+375c3b0f-6132-489f-8511-1a122a839199
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093947:635828315873580157Z
+20151113T032636Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

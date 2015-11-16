@@ -10,12 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
-name: Article Callout Image
-key: article callout image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{5E5ABD93-F15F-4426-AD52-F53FE4348315}" />
+114.1560411
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.284133
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -26,22 +33,15 @@ content-length: 77
 ----version----
 language: en
 version: 1
-revision: 5cb092a2-2602-4855-89a7-6453e3b080fa
+revision: 43cc11ce-3436-41c6-97f1-e463d4587b88
 
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 13
-
-Statue Square
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 106
+content-length: 111
 
-<link linktype="external" url="http://www.amo.gov.hk/en/trails_central1.php?tid=2 " anchor="" target="" />
+<link linktype="external" url="http://www.amo.gov.hk/en/trails_central1.php?tid=2" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -55,7 +55,7 @@ name: Content Title
 key: content title
 content-length: 77
 
-The perfect location to catch breath and appreciate Hong Kong’s architecture 
+The perfect location to catch breath and appreciate Hong Kong's architecture 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -76,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5cb092a2-2602-4855-89a7-6453e3b080fa
+43cc11ce-3436-41c6-97f1-e463d4587b88
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151113T061518:635829921181251558Z
+20151113T022150Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,15 +94,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 6583ef6b-edbe-4ba0-9629-bb32588e5b75
+revision: 5b7c081c-c2f4-46c5-8585-6f5304775237
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 127
+content-length: 133
 
-<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/trails_central1.php?tid=2 " anchor="" target="" />
+<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/trails_central1.php?tid=2 " anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -137,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6583ef6b-edbe-4ba0-9629-bb32588e5b75
+5b7c081c-c2f4-46c5-8585-6f5304775237
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093731:635828314513322355Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -155,15 +155,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: ccef8caf-9ee0-4e98-b310-75e575b45504
+revision: 0bab5c61-335a-43f4-b91d-cea278557a69
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 105
+content-length: 111
 
-<link linktype="external" url="http://www.amo.gov.hk/b5/trails_central1.php?tid=2" anchor="" target="" />
+<link linktype="external" url="http://www.amo.gov.hk/b5/trails_central1.php?tid=2" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -198,14 +198,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ccef8caf-9ee0-4e98-b310-75e575b45504
+0bab5c61-335a-43f4-b91d-cea278557a69
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093709:635828314290299598Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

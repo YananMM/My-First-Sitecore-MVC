@@ -52,8 +52,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f6ce5401-42fa-4114-bb48-3931e6a0477e
+revision: 4a090206-7986-4bd5-b153-75c8dc960ba8
 
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 3
+
+烟草店
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -81,14 +88,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f6ce5401-42fa-4114-bb48-3931e6a0477e
+4a090206-7986-4bd5-b153-75c8dc960ba8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T083539Z
+20151113T110753Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -153,8 +160,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 0f917d8f-2686-4ed4-8955-c588bf2dd354
+revision: c8f457bb-7907-48a6-9f29-e58570b056af
 
+----field----
+field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
+name: Tag Name
+key: tag name
+content-length: 3
+
+煙草店
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -182,14 +196,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0f917d8f-2686-4ed4-8955-c588bf2dd354
+c8f457bb-7907-48a6-9f29-e58570b056af
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T083407Z
+20151113T110759Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

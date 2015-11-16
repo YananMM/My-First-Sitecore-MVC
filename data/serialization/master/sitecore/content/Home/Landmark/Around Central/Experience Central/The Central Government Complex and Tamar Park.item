@@ -10,12 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
-name: Article Callout Image
-key: article callout image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{67699F1D-3894-4CD9-88CC-7CA779CDE5A2}" />
+114.1654253
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
+
+22.2805152
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -26,22 +33,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 2bbf9211-1510-459c-973a-8b040ccddf85
+revision: 18a8f179-bb06-4c66-8214-4c504474ee2f
 
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 46
-
-The Central Government Complex and Tamar Park 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 100
+content-length: 106
 
-<link linktype="external" url="http://www.lcsd.gov.hk/en/parks/tp/index.html" anchor="" target="" />
+<link linktype="external" url="http://www.lcsd.gov.hk/en/parks/tp/index.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -55,7 +55,7 @@ name: Content Title
 key: content title
 content-length: 62
 
-HK’s seat of government also offers relaxing harbourside views
+HK's seat of government also offers relaxing harbourside views
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -76,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2bbf9211-1510-459c-973a-8b040ccddf85
+18a8f179-bb06-4c66-8214-4c504474ee2f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151113T072418:635829962587436321Z
+20151113T023351Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,15 +94,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 8b390e9e-87d0-468b-9acb-c1392a2478f7
+revision: 1b363cd0-41b3-479f-8146-8a3b1204286e
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 100
+content-length: 106
 
-<link linktype="external" url="http://www.lcsd.gov.hk/sc/parks/tp/index.html" anchor="" target="" />
+<link linktype="external" url="http://www.lcsd.gov.hk/sc/parks/tp/index.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -137,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8b390e9e-87d0-468b-9acb-c1392a2478f7
+1b363cd0-41b3-479f-8146-8a3b1204286e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100118:635828328788058823Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -155,15 +155,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: ae34ad59-5952-4ff0-b653-17b30740bff9
+revision: 17bee92c-4776-48d4-a451-a15ccf293cf6
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 100
+content-length: 106
 
-<link linktype="external" url="http://www.lcsd.gov.hk/tc/parks/tp/index.html" anchor="" target="" />
+<link linktype="external" url="http://www.lcsd.gov.hk/tc/parks/tp/index.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -198,14 +198,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ae34ad59-5952-4ff0-b653-17b30740bff9
+17bee92c-4776-48d4-a451-a15ccf293cf6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100057:635828328573636559Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

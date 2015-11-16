@@ -10,12 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
-name: Article Callout Image
-key: article callout image
-content-length: 58
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
 
-<image mediaid="{936DAECE-BF0D-4C17-8776-378411519D35}" />
+114.1555937
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
+
+22.2829552
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -26,22 +33,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: d47c6db3-ff68-4c6b-a085-0ddb8527967d
+revision: 9e0c0a39-533f-4dde-89f8-290e0d2469bd
 
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 16
-
-Pottinger Street
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 108
+content-length: 113
 
-<link linktype="external" url="http://www.amo.gov.hk/en/trails_sheungwan2.php?tid=3 " anchor="" target="" />
+<link linktype="external" url="http://www.amo.gov.hk/en/trails_sheungwan2.php?tid=3" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -55,7 +55,7 @@ name: Content Title
 key: content title
 content-length: 48
 
-‘Stone Slab Street’ brings old Hong Kong to life
+'Stone Slab Street' brings old Hong Kong to life
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -76,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d47c6db3-ff68-4c6b-a085-0ddb8527967d
+9e0c0a39-533f-4dde-89f8-290e0d2469bd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151113T061254:635829919742031618Z
+20151113T022231Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,15 +94,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f2388083-dbd5-47b3-ae58-de617fcf69af
+revision: a757828b-5cb1-4630-835b-48c45e86213f
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 128
+content-length: 134
 
-<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/trails_sheungwan2.php?tid=3" anchor="" target="" />
+<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/trails_sheungwan2.php?tid=3" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -137,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f2388083-dbd5-47b3-ae58-de617fcf69af
+a757828b-5cb1-4630-835b-48c45e86213f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093843:635828315232883511Z
+20151113T032708Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -155,15 +155,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: cc8b3a88-5f36-4c06-9ccb-5bcc482009b5
+revision: ef4c857f-b77b-42eb-9e4f-3ecc2a698e3f
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 107
+content-length: 113
 
-<link linktype="external" url="http://www.amo.gov.hk/b5/trails_sheungwan2.php?tid=3" anchor="" target="" />
+<link linktype="external" url="http://www.amo.gov.hk/b5/trails_sheungwan2.php?tid=3" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -198,14 +198,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cc8b3a88-5f36-4c06-9ccb-5bcc482009b5
+ef4c857f-b77b-42eb-9e4f-3ecc2a698e3f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093819:635828314999540165Z
+20151113T032637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

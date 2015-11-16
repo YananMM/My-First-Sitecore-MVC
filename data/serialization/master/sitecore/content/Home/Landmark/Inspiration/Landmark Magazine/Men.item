@@ -73,12 +73,19 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 75a349fe-eee3-4862-a875-a05458641431
+revision: 4c9559f9-ab1f-4f68-a3c0-d1d848a0ce4e
 
 ----field----
 field: {2EF8EC75-33AA-4798-B316-B8C4C343760D}
 name: Category Name
 key: category name
+content-length: 4
+
+男士专区
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
 content-length: 4
 
 男士专区
@@ -109,14 +116,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-75a349fe-eee3-4862-a875-a05458641431
+4c9559f9-ab1f-4f68-a3c0-d1d848a0ce4e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151112T140846Z
+20151113T072650Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -134,12 +141,19 @@ content-length: 38
 ----version----
 language: zh-HK
 version: 1
-revision: a1385744-62bf-4f2d-97c0-4191c32d9084
+revision: 988df303-7897-468c-9015-220fb70c78d7
 
 ----field----
 field: {2EF8EC75-33AA-4798-B316-B8C4C343760D}
 name: Category Name
 key: category name
+content-length: 4
+
+男士專區
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
 content-length: 4
 
 男士專區
@@ -170,14 +184,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a1385744-62bf-4f2d-97c0-4191c32d9084
+988df303-7897-468c-9015-220fb70c78d7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151112T140900Z
+20151113T072655Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
