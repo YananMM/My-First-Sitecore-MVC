@@ -11,6 +11,8 @@ namespace Landmark.Models
 
         public string value { get; set; }
 
+        public string DisplayName { get; set; }
+
         public List<TextValue> children { get; set; }
 
     }

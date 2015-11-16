@@ -31,12 +31,19 @@
         brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
     }
     var category = currentPage.Parent.Parent.DisplayName;
+    if (currentPage.Parent.Parent.ID.ToString() == ItemGuids.DiningItem)
+    {
+        category = currentPage.Parent.DisplayName;
+    }
     List<TextValue> subCategories = new List<TextValue>();
+    var subpage = currentPage.Parent.DisplayName;
 }
 <div class="brand-menu hidden-xs">
     <div class="brand-menu-area">
         <div class="scroll-content">
-            <h3>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.ByBrandsGuidItem))</h3>
+            <h2>subpage:  @subpage</h2>
+            
+            <h3>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ByBrandsGuidItem))</h3>
             <ul class="brands-gap brands clearfix">
                 @for (int i = 0; i < alphabetsStrings.Length; i++)
                 {
@@ -51,7 +58,7 @@
                     }
                 }
             </ul>
-            <h3>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.ByBuidingsGuidItem))</h3>
+            <h3>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ByBuidingsGuidItem))</h3>
             <ul class="brands-gap">
                 @{
                     List<Item> buidings = LandmarkHelper.GetBuildings();
@@ -66,52 +73,60 @@
                     <li><a href="@href">@building.Fields["Building Title"].Value</a></li>
                 }
             </ul>
-            <form class="form-goto" data-handler-get-catetories="/Service/GetCategoryJson.ashx?id=@currentPage.ID.ToString()" method="POST" action="@Url.Action("GoTo", "Shopping")">
+            <form class="form-goto" data-handler-get-catetories="/Service/GetCategoryJson.ashx?id=@currentPage.ID.ToString()" action="@Url.Action("GoTo", "Shopping")">
                 <h3>
-                    @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.GoToGuidItem))
+                    @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.GoToGuidItem))
                     <a class="sub-title" href="@allbrands">
-                        @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AllBrandsGuidItem))<span class="sprite-small-r">&gt;</span>
+                        @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.AllBrandsGuidItem))<span class="sprite-small-r">&gt;</span>
                     </a>
                 </h3>
                 <div class="form-group">
                     <select id="category" name="category" class="selectpicker form-control" data-style="btn-primary">
                         @foreach (var item in categories)
                         {
-                            <option value="@item.value" @if (category == item.text) { <text>
-                                    selected="selected"
-                                    </text>     }>
+
+                            <option value="@item.value" @if (category == item.DisplayName)
+                                                        {
+                                                            <text>
+                                                                selected="selected"
+                                                            </text>
+                                                        }>
                                 @item.text.ToUpper()
                             </option>
                         }
                     </select>
                     @{
-                        var parentCategory = categories.SingleOrDefault(p => p.text == category);
+                        var parentCategory = categories.SingleOrDefault(p => p.DisplayName == category);
                         var firestCategory = categories.FirstOrDefault();
                         subCategories = parentCategory != null ? parentCategory.children : firestCategory.children.ToList();
                     }
                     @if (shoppingHelper.isShop)
                     {
                         <select id="childcategory" name="childcategory" class="selectpicker form-control" data-style="btn-primary">
-                        @if (subCategories.Any())
-                        {
-                            foreach (var item in subCategories)
+                            @if (subCategories.Any())
                             {
-                                var subcategory = currentPage.Parent.DisplayName;
-                                <option value="@item.value" @if (subcategory == item.text) { <text>
-                                        selected="selected"
-                                        </text>      }>
-                                    @item.text.ToUpper()
-                                </option>
+                                foreach (var item in subCategories)
+                                {
+
+
+                                    <option value="@item.value" @if (subpage == item.DisplayName)
+                                                                {
+                                                                    <text>
+                                                                        selected="selected"
+                                                                    </text>
+                                                                }>
+                                        @item.text.ToUpper()
+                                    </option>
+                                }
                             }
-                        }
-                    </select>
+                        </select>
                     }
-                    <button type="submit" class="btn btn-default">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.GoGuidItem))</button>
+                    <button type="submit" class="btn btn-default">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.GoGuidItem))</button>
                 </div>
             </form>
             @if (allByBrandsPageID != currentPage.ID.ToString() && allByBuildingsPageID != currentPage.ID.ToString())
             {
-                <h3>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.SeeAlsoGuidItem))</h3>
+                <h3>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeAlsoGuidItem))</h3>
                 <ul>
                     @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T13RelatedCategoryViewGuid)
                 </ul>

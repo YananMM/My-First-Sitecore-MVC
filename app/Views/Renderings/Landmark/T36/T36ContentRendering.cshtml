@@ -110,7 +110,7 @@
         {
             <div class="gd-promotion-box-area">
                 <div class="gd-promotion-box-heading">
-                    <a class="gd-link-brands" href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(item.MagazineCategory))?page=1">
+                    <a class="gd-link-brands" href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(item.MagazineCategory))">
                         @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem))<span class="icomoon-chevron-small-right"></span>
                     </a>
                     <h3>@item.MagazineCategory.Fields["Category Name"].ToString().ToUpper()</h3>

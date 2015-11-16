@@ -205,6 +205,7 @@ namespace Landmark.Helper
                                              select new TextValue
                                              {
                                                  text = category["Tag Name"],
+                                                 DisplayName = category.DisplayName,
                                                  value = category.ID.ToString()
                                              }).ToList();
             foreach (var item in firstCategory)
@@ -214,6 +215,7 @@ namespace Landmark.Helper
                     subCategoriess.Select(p => new TextValue
                     {
                         text = p["Tag Name"],
+                        DisplayName = p.DisplayName.Replace(p.Parent.DisplayName + "-", ""),
                         value = p.ID.ToString()
                     }).ToList();
                 item.children = children;
