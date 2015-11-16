@@ -7,6 +7,7 @@ using System.Net.Mail;
 using System.Web;
 using Landmark.Classes;
 using Landmark.Models;
+using Lucene.Net.Highlight;
 using Sitecore.Collections;
 using Sitecore.Configuration;
 using Sitecore.ContentSearch.Utilities;
@@ -178,7 +179,7 @@ namespace Landmark.Helper
 
         public static List<Item> GetItemByTemplate(Item parent, string templateId)
         {
-            var query = string.Format("fast:{0}//*[{1}]", parent.Paths.FullPath, "@@TemplateId='" + templateId + "'");
+            var query = Uri.EscapeDataString(string.Format("fast:{0}//*[{1}]", parent.Paths.FullPath, "@@TemplateId='" + templateId + "'"));
             List<Item> slidesItems = _webDb.SelectItems(query).OrderBy(i => i.DisplayName).ToList();
             return slidesItems;
         }
@@ -186,7 +187,7 @@ namespace Landmark.Helper
         public static List<Item> GetItemsByItemsTemplates(Item parent, Guid[] templateIds)
         {
             var queryTemplateArguments = templateIds.Select(tId => "@@TemplateId='{" + tId.ToString().ToUpper() + "}'").ToArray();
-            var query = string.Format("fast:{0}//*[{1}]", parent.Paths.FullPath, string.Join(" or ", queryTemplateArguments));
+            var query = Uri.EscapeDataString(string.Format("fast:{0}//*[{1}]", parent.Paths.FullPath, string.Join(" or ", queryTemplateArguments)));
             return parent.Database.SelectItems(query).ToList();
         }
 
