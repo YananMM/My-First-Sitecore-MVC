@@ -82,7 +82,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: ffb1d7c8-0ed7-4b31-aa41-7a714feb6595
+revision: f83b7241-4b3d-4f9d-83ac-54a0953b8c08
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -92,12 +92,19 @@ content-length: 8
 
 Big bang
 ----field----
+field: {55F18938-A913-4267-80D1-EF3152E77C51}
+name: Article Headline 2
+key: article headline 2
+content-length: 0
+
+
+----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
-content-length: 45
+content-length: 53
 
-Glasses and earring by Loewe, LANDMARK ATRIUM
+Go large or go home is the mantra when accessorising.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -118,14 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ffb1d7c8-0ed7-4b31-aa41-7a714feb6595
+f83b7241-4b3d-4f9d-83ac-54a0953b8c08
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151112T032659:635828956194814437Z
+20151110T091723Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -190,7 +197,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 296a70c8-b885-4fb2-ba60-a68d95f907b7
+revision: c5fe8b27-d381-40c9-aaf4-f68c83ea42a0
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -200,12 +207,33 @@ content-length: 8
 
 Big bang
 ----field----
+field: {55F18938-A913-4267-80D1-EF3152E77C51}
+name: Article Headline 2
+key: article headline 2
+content-length: 0
+
+
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Image Title
+key: image title
+content-length: 0
+
+
+----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
-content-length: 20
+content-length: 12
 
-Loewe太陽眼鏡及耳環，置地廣塲中庭。
+今季配飾，一字記之曰大。
+----field----
+field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
+name: Content Title
+key: content title
+content-length: 0
+
+
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -226,14 +254,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-296a70c8-b885-4fb2-ba60-a68d95f907b7
+c5fe8b27-d381-40c9-aaf4-f68c83ea42a0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T131232Z
+20151110T091625Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

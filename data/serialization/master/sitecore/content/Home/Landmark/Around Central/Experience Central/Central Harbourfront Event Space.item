@@ -10,26 +10,26 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
+content-length: 58
+
+<image mediaid="{D29036ED-16D6-4D8D-A8C5-9BF3436668F3}" />
+----field----
+field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
+name: Article Type
+key: article type
+content-length: 38
+
+{274E7EC5-2922-4472-8DCE-448B68642884}
+----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
 content-length: 15
 
 (852) 3929 9500
-----field----
-field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
-name: Map Longitude
-key: map longitude
-content-length: 11
-
-114.1643434
-----field----
-field: {0C295F12-1B0E-4873-A718-0F31C341400F}
-name: Map Latitude
-key: map latitude
-content-length: 10
-
-22.2826051
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -40,15 +40,22 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 5beff682-4e49-4a93-90c1-dae61b59c9b5
+revision: 93b7d804-af8f-415c-b9ce-cb70c67fee19
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 32
+
+Central Harbourfront Event Space
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 87
+content-length: 81
 
-<link linktype="external" url="http://www.cvm.com.hk/en/ " anchor="" target="_blank" />
+<link linktype="external" url="http://www.cvm.com.hk/en/ " anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -83,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5beff682-4e49-4a93-90c1-dae61b59c9b5
+93b7d804-af8f-415c-b9ce-cb70c67fee19
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T022020Z
+20151113T060247:635829913679503273Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +108,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: c6adc2db-ead6-4be0-a1a4-5e403f80a49c
+revision: aed3b3a4-2374-42fe-ad89-314197e148cf
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 86
+content-length: 80
 
-<link linktype="external" url="http://www.cvm.com.hk/tc/" anchor="" target="_blank" />
+<link linktype="external" url="http://www.cvm.com.hk/tc/" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -144,14 +151,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c6adc2db-ead6-4be0-a1a4-5e403f80a49c
+aed3b3a4-2374-42fe-ad89-314197e148cf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T032708Z
+20151111T093509:635828313093561149Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +169,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 3fae0ea6-0f20-4f02-8868-0ab19bbecee3
+revision: e28c3bf6-3a9c-44e3-90c8-473afbcb6e98
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 86
+content-length: 80
 
-<link linktype="external" url="http://www.cvm.com.hk/tc/" anchor="" target="_blank" />
+<link linktype="external" url="http://www.cvm.com.hk/tc/" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -205,14 +212,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3fae0ea6-0f20-4f02-8868-0ab19bbecee3
+e28c3bf6-3a9c-44e3-90c8-473afbcb6e98
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T032636Z
+20151111T093449:635828312890499534Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

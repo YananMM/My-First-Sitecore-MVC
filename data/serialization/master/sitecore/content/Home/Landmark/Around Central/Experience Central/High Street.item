@@ -10,19 +10,12 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
-name: Map Longitude
-key: map longitude
-content-length: 10
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
+content-length: 58
 
-114.141308
-----field----
-field: {0C295F12-1B0E-4873-A718-0F31C341400F}
-name: Map Latitude
-key: map latitude
-content-length: 10
-
-22.2851903
+<image mediaid="{C377A9BD-86AE-479E-8DB0-8EA87D512E36}" />
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -33,15 +26,22 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 44f35ca4-029a-40ff-8cd8-acaf268dc0a6
+revision: 9bc45864-a021-4179-9f2a-e55fd3b41799
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 11
+
+High Street
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 109
+content-length: 103
 
-<link linktype="external" url="http://www.amo.gov.hk/en/trails_west1.php?tid=20" anchor="" target="_blank" />
+<link linktype="external" url="http://www.amo.gov.hk/en/trails_west1.php?tid=20" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -76,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-44f35ca4-029a-40ff-8cd8-acaf268dc0a6
+9bc45864-a021-4179-9f2a-e55fd3b41799
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T022749Z
+20151113T060745:635829916651265999Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,15 +94,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 811d3823-a6e9-4825-a461-ad7610384229
+revision: 3f0c153e-a929-44be-aa2b-ad61762bbc69
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 130
+content-length: 124
 
-<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/trails_west1.php?tid=20" anchor="" target="_blank" />
+<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/trails_west1.php?tid=20" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -137,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-811d3823-a6e9-4825-a461-ad7610384229
+3f0c153e-a929-44be-aa2b-ad61762bbc69
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T032733Z
+20151111T094757:635828320774030447Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -155,15 +155,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: b4f2eef6-e59c-45dc-be7d-0ab715c37288
+revision: f001f260-dce0-40a4-832c-5bf261e6b3d3
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 109
+content-length: 103
 
-<link linktype="external" url="http://www.amo.gov.hk/b5/trails_west1.php?tid=20" anchor="" target="_blank" />
+<link linktype="external" url="http://www.amo.gov.hk/b5/trails_west1.php?tid=20" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -198,14 +198,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b4f2eef6-e59c-45dc-be7d-0ab715c37288
+f001f260-dce0-40a4-832c-5bf261e6b3d3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T032637Z
+20151111T094733:635828320531656584Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

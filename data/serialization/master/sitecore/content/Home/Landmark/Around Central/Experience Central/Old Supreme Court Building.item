@@ -10,19 +10,12 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
-name: Map Longitude
-key: map longitude
-content-length: 11
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
+content-length: 58
 
-114.1603781
-----field----
-field: {0C295F12-1B0E-4873-A718-0F31C341400F}
-name: Map Latitude
-key: map latitude
-content-length: 8
-
-22.28092
+<image mediaid="{2444D4E7-DD1E-4FAF-90AD-1028A78D425C}" />
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -33,15 +26,22 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 78ff4435-216a-48b7-912c-f9ad6093ba51
+revision: d6f06c3b-6161-4252-a6a1-d732e76f482e
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 27
+
+Old Supreme Court Building 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 99
+content-length: 93
 
-<link linktype="external" url="http://www.hkcfa.hk/en/home/index.html" anchor="" target="_blank" />
+<link linktype="external" url="http://www.hkcfa.hk/en/home/index.html" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -76,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-78ff4435-216a-48b7-912c-f9ad6093ba51
+d6f06c3b-6161-4252-a6a1-d732e76f482e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T022855Z
+20151113T061216:635829919363033258Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,15 +94,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 475d44c2-5eb8-4fbd-be4c-35d598151e3e
+revision: caa64213-8bba-4d15-bc3a-0f3954fcc109
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 99
+content-length: 93
 
-<link linktype="external" url="http://www.hkcfa.hk/sc/home/index.html" anchor="" target="_blank" />
+<link linktype="external" url="http://www.hkcfa.hk/sc/home/index.html" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -137,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-475d44c2-5eb8-4fbd-be4c-35d598151e3e
+caa64213-8bba-4d15-bc3a-0f3954fcc109
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T032733Z
+20151111T094858:635828321382645257Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -155,15 +155,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 76351d2b-9dda-4aab-a803-bb6e974d6596
+revision: 12bc6900-b682-4686-8315-f9438ae3c7e6
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 99
+content-length: 93
 
-<link linktype="external" url="http://www.hkcfa.hk/tc/home/index.html" anchor="" target="_blank" />
+<link linktype="external" url="http://www.hkcfa.hk/tc/home/index.html" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -198,14 +198,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-76351d2b-9dda-4aab-a803-bb6e974d6596
+12bc6900-b682-4686-8315-f9438ae3c7e6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T032637Z
+20151111T094838:635828321189634218Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

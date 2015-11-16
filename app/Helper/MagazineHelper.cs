@@ -60,6 +60,7 @@ namespace Landmark.Helper
             allstories = random4List.Aggregate(allstories, (current, item) => current.RemoveWhere(p => p.ID == item.ID).ToList());
             if (categoryItem != null)
             {
+                //todo: 忘了去掉random4List了！！！
                 stories = categoryItem.Children.OrderByDescending(p => p.Fields["Article Date"].ToString())
                         .ToList();
                 return stories;

@@ -10,26 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
+content-length: 58
+
+<image mediaid="{B5B50651-EABE-4426-98EC-0080A73BE8C9}" />
+----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
 content-length: 15
 
 (852) 2544 4556
-----field----
-field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
-name: Map Longitude
-key: map longitude
-content-length: 10
-
-114.153473
-----field----
-field: {0C295F12-1B0E-4873-A718-0F31C341400F}
-name: Map Latitude
-key: map latitude
-content-length: 8
-
-22.28425
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -40,15 +33,22 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: f3df3bda-aa48-46d7-bc06-71d3978fd257
+revision: 6b2d1314-3dec-4e6b-8e17-909c6b26f767
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 19
+
+Lin Heung Tea House
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 88
+content-length: 82
 
-<link linktype="external" url="http://www.linheung.com.hk/" anchor="" target="_blank" />
+<link linktype="external" url="http://www.linheung.com.hk/" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -83,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f3df3bda-aa48-46d7-bc06-71d3978fd257
+6b2d1314-3dec-4e6b-8e17-909c6b26f767
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T023622Z
+20151113T061124:635829918842124854Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +101,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 3d9a998c-583b-4799-a85e-9593d9e90c34
+revision: 1d634924-2056-431c-b299-7907bd79c36e
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 88
+content-length: 82
 
-<link linktype="external" url="http://www.linheung.com.hk/" anchor="" target="_blank" />
+<link linktype="external" url="http://www.linheung.com.hk/" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -144,14 +144,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3d9a998c-583b-4799-a85e-9593d9e90c34
+1d634924-2056-431c-b299-7907bd79c36e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T032733Z
+20151111T100547:635828331479922789Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +162,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: f6ad46e3-f40b-415d-8e2e-20065cb1ec5c
+revision: e198b346-1c37-4959-a5cc-28781f85e6c9
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 88
+content-length: 82
 
-<link linktype="external" url="http://www.linheung.com.hk/" anchor="" target="_blank" />
+<link linktype="external" url="http://www.linheung.com.hk/" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -205,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f6ad46e3-f40b-415d-8e2e-20065cb1ec5c
+e198b346-1c37-4959-a5cc-28781f85e6c9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T032637Z
+20151111T100555:635828331556817187Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

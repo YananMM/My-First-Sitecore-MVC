@@ -10,26 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
+content-length: 58
+
+<image mediaid="{D0FF400F-A2F4-417F-BA68-744E15667DE6}" />
+----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
 content-length: 15
 
 (852) 2521 5041
-----field----
-field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
-name: Map Longitude
-key: map longitude
-content-length: 11
-
-114.1609356
-----field----
-field: {0C295F12-1B0E-4873-A718-0F31C341400F}
-name: Map Latitude
-key: map latitude
-content-length: 10
-
-22.2774422
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -40,15 +33,22 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: c55e197e-4f52-465b-804d-9c4076690301
+revision: 0802a75f-8913-40b5-a085-f7aa5e7ebeed
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 14
+
+Hong Kong Park
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 107
+content-length: 102
 
-<link linktype="external" url="http://www.lcsd.gov.hk/en/parks/hkp/index.html" anchor="" target="_blank" />
+<link linktype="external" url="http://www.lcsd.gov.hk/en/parks/hkp/index.html " anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -83,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c55e197e-4f52-465b-804d-9c4076690301
+0802a75f-8913-40b5-a085-f7aa5e7ebeed
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T021454Z
+20151113T060927:635829917679875576Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +101,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 463b6f0c-991c-45fd-93af-7680dce10a99
+revision: a3a17bb4-57af-4d1c-ad68-4ee89b35b7e5
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 108
+content-length: 102
 
-<link linktype="external" url="http://www.lcsd.gov.hk/sc/parks/hkp/index.html " anchor="" target="_blank" />
+<link linktype="external" url="http://www.lcsd.gov.hk/sc/parks/hkp/index.html " anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -144,14 +144,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-463b6f0c-991c-45fd-93af-7680dce10a99
+a3a17bb4-57af-4d1c-ad68-4ee89b35b7e5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T021533Z
+20151111T092918:635828309581900293Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +162,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: c56f06cd-af44-497f-be32-746938360a21
+revision: a4cdade0-ce89-4f2d-aa68-21680f1a3786
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 108
+content-length: 102
 
-<link linktype="external" url="http://www.lcsd.gov.hk/tc/parks/hkp/index.html " anchor="" target="_blank" />
+<link linktype="external" url="http://www.lcsd.gov.hk/tc/parks/hkp/index.html " anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -205,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c56f06cd-af44-497f-be32-746938360a21
+a4cdade0-ce89-4f2d-aa68-21680f1a3786
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T021515Z
+20151111T092848:635828309287413450Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

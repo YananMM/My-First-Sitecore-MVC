@@ -162,7 +162,8 @@ namespace Landmark.Helper
                 ItemGuids.T30Template).ToList();
             if (allArtists.Count != 0)
             {
-                return allArtists.OrderBy(p => p["Artist Name"].ToString()).ToList();
+                //return allArtists.OrderBy(p => p["Artist Name"].ToString()).ToList();
+                return allArtists.OrderBy(p => p.DisplayName.ToString()).ToList();
             }
             return new List<Item>();
         }

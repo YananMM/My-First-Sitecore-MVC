@@ -10,26 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
+content-length: 58
+
+<image mediaid="{0498D834-6F5E-4C1E-85BC-8D9FCC9B3162}" />
+----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
 content-length: 15
 
 (852) 2921 2840
-----field----
-field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
-name: Map Longitude
-key: map longitude
-content-length: 11
-
-114.1615275
-----field----
-field: {0C295F12-1B0E-4873-A718-0F31C341400F}
-name: Map Latitude
-key: map latitude
-content-length: 10
-
-22.2822646
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -40,15 +33,22 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: cfa5acd3-75bc-4c7d-b218-b38552c7b400
+revision: 51b09d75-8e62-4d78-a62a-4110e9b4b188
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 19
+
+Hong Kong City Hall
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 91
+content-length: 86
 
-<link linktype="external" url="http://www.lcsd.gov.hk/en/hkch" anchor="" target="_blank" />
+<link linktype="external" url="http://www.lcsd.gov.hk/en/hkch/" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -83,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cfa5acd3-75bc-4c7d-b218-b38552c7b400
+51b09d75-8e62-4d78-a62a-4110e9b4b188
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T023017Z
+20151113T060845:635829917257380062Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +101,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 5cd6b4d6-4440-4996-ac20-7b89fb7096a9
+revision: a9a3d5b9-6785-4010-8002-0b66aa29be72
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 92
+content-length: 86
 
-<link linktype="external" url="http://www.lcsd.gov.hk/sc/hkch/" anchor="" target="_blank" />
+<link linktype="external" url="http://www.lcsd.gov.hk/sc/hkch/" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -144,14 +144,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5cd6b4d6-4440-4996-ac20-7b89fb7096a9
+a9a3d5b9-6785-4010-8002-0b66aa29be72
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T032733Z
+20151111T095125:635828322858349663Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +162,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 35564101-ca0d-4def-ad93-40e64fff94cc
+revision: 6a64b31c-72d7-415b-805c-0f0c281c70dc
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 92
+content-length: 86
 
-<link linktype="external" url="http://www.lcsd.gov.hk/tc/hkch/" anchor="" target="_blank" />
+<link linktype="external" url="http://www.lcsd.gov.hk/tc/hkch/" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -205,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-35564101-ca0d-4def-ad93-40e64fff94cc
+6a64b31c-72d7-415b-805c-0f0c281c70dc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T032637Z
+20151111T095106:635828322666428686Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

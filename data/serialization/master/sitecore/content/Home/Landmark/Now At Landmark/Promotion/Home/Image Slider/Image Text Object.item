@@ -9,17 +9,10 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {CFE5379F-402F-4FB5-A1C5-0E42CA464BC1}
 templatekey: Image Text Object
 
-----field----
-field: {0AB28A95-2EFC-4333-B617-155C738623C9}
-name: Image
-key: image
-content-length: 58
-
-<image mediaid="{086E9601-7B53-409C-84D0-BE60EA4C904C}" />
 ----version----
 language: en
 version: 1
-revision: c1866cd5-246d-4a62-b374-82347d7ab8c8
+revision: 22e75659-18b7-459e-ba6e-4e67ae1a6045
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -48,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c1866cd5-246d-4a62-b374-82347d7ab8c8
+22e75659-18b7-459e-ba6e-4e67ae1a6045
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151110T055114:635827314744281019Z
+20151108T110814Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -8,9 +8,9 @@
 @model RenderingModel
 
 @{
-    var homePage = (Item) Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkHomeItem);
+    var homePage = (Item)Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkHomeItem);
     var currentPage = Sitecore.Context.Item;
-    Item category ;
+    Item category;
     List<Item> items = new List<Item>();
     List<Item> breadcrumbs = new List<Item>();
 
@@ -32,31 +32,37 @@
 
     items.Reverse();
     @*if (items.Count >= 3)
-    {
-        for (int i = 0; i < 3; i++)
         {
-            breadcrumbs.Add(items[i]);
+            for (int i = 0; i < 3; i++)
+            {
+                breadcrumbs.Add(items[i]);
+            }
         }
-    }
-    else
-    {
-        for (int i = 0; i < items.Count; i++)
+        else
         {
-            breadcrumbs.Add(items[i]);
-        }
-    }*@
+            for (int i = 0; i < items.Count; i++)
+            {
+                breadcrumbs.Add(items[i]);
+            }
+        }*@
 }
 
 <div class="col-xs-12">
     <ol class="breadcrumb">
         @foreach (var item in items)
         {
-            string href = LandmarkHelper.IsFalsePage(item)?"#":@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item)); 
+            string href = string.Empty;
+            href = LandmarkHelper.IsFalsePage(item) ? "#" : LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item));
             <li>
+                @if (item.ID.ToString() == ItemGuids.ShoppingItem || item.ID.ToString() == ItemGuids.DiningItem)
+                {
+                    href = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.Children.Where(i => i.DisplayName == "By Brands").FirstOrDefault()));
+                }
                 <a href=@href>
                     @if (item.ID == homePage.ID)
                     {
-                        <text>Home</text>
+                        var homeItem = (Item)Factory.GetDatabase("web").GetItem(ItemGuids.HomeGlossaryItem);
+                        <text>@Html.Sitecore().Field("Glossary Value", homeItem)</text>
                         <span class="icomoon-chevron-small-right"></span>
                     }
                     else
