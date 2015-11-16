@@ -414,16 +414,13 @@ namespace Landmark.Helper
                     MediaItem image = new MediaItem(imageField.MediaItem);
                     imageURL = Sitecore.StringUtil.EnsurePrefix('/',
                         Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
+                    return imageURL;
                 }
             }
-            else
+            var sliders = GetItemByTemplate(item, ItemGuids.SlideObjectTemplate);
+            if (sliders != null && sliders.Count != 0)
             {
-                var sliders =
-                    LandmarkHelper.GetItemByTemplate(item, ItemGuids.SlideObjectTemplate);
-                if (sliders != null && sliders.Count != 0)
-                {
-                    imageURL = FileFieldSrc("Slide Image", sliders.FirstOrDefault());
-                }
+                imageURL = ImageFieldSrc("Slide Image", sliders.FirstOrDefault());
             }
             return imageURL;
         }
