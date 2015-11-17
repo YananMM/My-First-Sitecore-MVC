@@ -6,7 +6,7 @@
 @model RenderingModel
 @{
     var currentItem = Sitecore.Context.Item;
-    var conciergeDesks = LandmarkHelper.GetItemsByRootAndTemplate(currentItem.ID.ToString(), ItemGuids.ConciergeDeskObject); 
+    var conciergeDesks = currentItem.Children.First().Children.ToList(); 
 }
 <div class="container">
     @Html.Sitecore().Placeholder("t24page-title")
