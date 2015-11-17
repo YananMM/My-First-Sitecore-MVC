@@ -33,6 +33,7 @@ namespace Landmark.Helper
                     articles.Add(rField.TargetItem);
                 }
             }
+            articles.Reverse();
             if (articles.Count()>1)
                 return articles.Skip((pagenumber-1) * 10).Take(10).ToList();
             else

@@ -186,5 +186,6 @@ namespace Landmark.Classes
         public static readonly string SeeAllRestaurantItem = "{57D52748-BF11-4228-83E4-AAF3FFB1F8CF}";
         public static readonly string YouAreViewingItem = "{12107309-86C6-48B5-A27A-E819DF35D09F}";
         public static readonly string HomeGlossaryItem = "{6607F517-2794-4B1F-9D52-8AC599E0B7F9}";
+        public static readonly string SeeAllItem = "{60ABA0CA-078A-478B-B2D1-C808EAE75D2F}";
     }
 }

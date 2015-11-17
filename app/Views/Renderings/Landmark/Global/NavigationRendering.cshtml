@@ -83,11 +83,17 @@
                                     <div class="row row-equal">
                                         <div class="col-sm-3 mega-menu-area2">
                                             <ul>
-                                                @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
+                                                @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item).Take(5))
                                                 {
                                                     <li><a href="@LandmarkHelper.GetItemUrl(childItem)">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
                                                 }
                                             </ul>
+                                            @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count > 5)
+                                            {
+                                                <a href="@LandmarkHelper.GetItemUrl(item)" class="gd-link-book">
+                                                @Html.Sitecore().Field("Glossary Value",Sitecore.Context.Database.GetItem(ItemGuids.SeeAllItem))<span class="icomoon-chevron-small-right"></span>
+                                            </a>
+                                            }
                                         </div>
                                         <div class="col-sm-9  menu-equal-height">
                                             <div class="row">

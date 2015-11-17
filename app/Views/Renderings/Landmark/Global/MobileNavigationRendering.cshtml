@@ -3,6 +3,7 @@
 @using Sitecore.Collections
 @using Sitecore.Configuration
 @using Sitecore.Data.Items
+@using Sitecore.StringExtensions
 @model RenderingModel
 @{
     ShoppingHelper shoppingHelper = new ShoppingHelper();
@@ -13,7 +14,7 @@
     @foreach (Item item in LandmarkHelper.GetChildrenPageInNavigation(Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkHomeItem)))
     {
 
-        <li><a href="@LandmarkHelper.GetItemUrl(item)">@item.Fields["Page Title"].Value.ToUpper()<span class="sprite-icon-down pull-right"></span></a>
+        <li><a href="#">@item.Fields["Page Title"].Value.ToUpper()<span class="sprite-icon-down pull-right"></span></a>
             @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count > 0)
             {
                 if (item.ID.ToString().Equals(ItemGuids.ShoppingItem))
@@ -56,6 +57,10 @@
                 else
                 {
                     <ul class="sub-menu">
+                        @if (!(new Sitecore.Data.Fields.LayoutField(item).Value).IsNullOrEmpty() && item.DisplayName.Contains(""))
+                        {
+                            <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">@item.Fields["Page Title"].Value.ToUpper()</a></li>
+                        }
                         @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
                         {
                             <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(childItem))">@childItem.Fields["Page Title"].Value.ToUpper()</a></li>
