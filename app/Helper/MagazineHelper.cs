@@ -99,9 +99,9 @@ namespace Landmark.Helper
         public List<Item> GetStoriesByCategory(Item categoryItem)
         {
             List<Item> stories = new List<Item>();
+            //stories = categoryItem.Children.OrderByDescending(p => p.Fields["Article Date"].ToString()).ToList();
             stories =
-                categoryItem.Children.OrderByDescending(p => p.Fields["Article Date"].ToString())
-                    .ToList();
+                categoryItem.Children.ToList();
             return stories;
         }
 

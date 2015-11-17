@@ -13,9 +13,9 @@
     var currentItem = Sitecore.Context.Item;
     MagazineHelper helper = new MagazineHelper();
     var magazineGroupsByRandom = helper.GetMagazineGroupsByRandom();
-    List<Item> slides = new ItemList();
+    //List<Item> slides = new ItemList();
     var random4Stories = magazineGroupsByRandom.Random4Stories;
-    slides.AddRange(random4Stories.Select(item => LandmarkHelper.GetItemsByRootAndTemplate(item.ID.ToString(), ItemGuids.SlideObjectTemplate).FirstOrDefault()).Where(itemSlide => itemSlide != null));
+    //slides.AddRange(random4Stories.Select(item => LandmarkHelper.GetItemsByRootAndTemplate(item.ID.ToString(), ItemGuids.SlideObjectTemplate).FirstOrDefault()).Where(itemSlide => itemSlide != null));
 }
 <div class="container">
     <div class="gd-pagetitle">
