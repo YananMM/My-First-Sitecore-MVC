@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Sitecore.ContentSearch.Utilities;
+using Sitecore.Rules.Conditions.DateTimeConditions;
 
 namespace Landmark.Helper
 {
@@ -30,12 +31,17 @@ namespace Landmark.Helper
             var storiesCD = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage, ItemGuids.T23PageCDTemplate);
             stories.AddRange(storiesAB);
             stories.AddRange(storiesCD);
-            return stories.OrderByDescending(p => p.Fields["Article Date"].ToString()).ToList();
+            return stories;
+        }
+        public List<Item> GetAllStoriesByDate()
+        {
+            var allStories = GetAllStories();
+            return allStories.OrderByDescending(p => p.Fields["Article Date"].ToString()).ToList();
         }
 
         public List<Item> GetTop10Stories()
         {
-            var allStories = GetAllStories();
+            var allStories = GetAllStoriesByDate();
             var top10Stories = allStories.Count >= 10 ? allStories.Take(10) : allStories;
             return top10Stories.ToList();
         }
@@ -53,19 +59,36 @@ namespace Landmark.Helper
             return random4;
         }
 
+        /// <summary>
+        /// Gets the stories by category.
+        /// </summary>
+        /// <param name="categoryItem">The category item.</param>
+        /// <param name="random4List">The random4 list.</param>
+        /// <returns>List{Item}.</returns>
         public List<Item> GetStoriesByCategory(Item categoryItem, List<Item> random4List)
         {
             List<Item> stories = new List<Item>();
             var allstories = GetAllStories();
             allstories = random4List.Aggregate(allstories, (current, item) => current.RemoveWhere(p => p.ID == item.ID).ToList());
+            List<Item> intersectList = new List<Item>();
             if (categoryItem != null)
             {
-                //todo: 忘了去掉random4List了！！！
-                stories = categoryItem.Children.OrderByDescending(p => p.Fields["Article Date"].ToString())
-                        .ToList();
-                return stories;
+                var storieByCategory = categoryItem.Children.ToList();
+
+                foreach (var item in random4List)
+                {
+                    foreach (var story in storieByCategory)
+                    {
+                        if (item.ID.ToString() == story.ID.ToString())
+                        {
+                            intersectList.Add(item);
+                            storieByCategory.Remove(item);
+                        }
+                    }
+                }
+                stories = intersectList.Aggregate(storieByCategory, (current, item) => current.RemoveWhere(p => p.ID == item.ID).ToList());
             }
-            return allstories;
+            return stories;
         }
 
         /// <summary>
