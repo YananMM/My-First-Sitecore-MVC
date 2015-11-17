@@ -27,17 +27,22 @@
 </div>
 
 <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-fixed" data-ride="carousel">
-    @if (slides.Count > 0)
+    @if (random4Stories.Count > 0)
     {
         <!-- Indicators -->
-        if (slides.Count > 1)
+        if (random4Stories.Count > 1)
         {
             <ol class="carousel-indicators">
-                @for (int i = 0; i < slides.Count; i++)
+                @for (int i = 0; i < random4Stories.Count; i++)
                 {
-                    <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{ if (i == 0) { <text>
-                        class="active"
-                        </text>                       } }></li>
+                    <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{
+                                                                                    if (i == 0)
+                                                                                    {
+                                                                                        <text>
+                                                                                            class="active"
+                                                                                        </text>
+                                                                                    }
+                                                                                }></li>
                 }
             </ol>
         }
@@ -45,7 +50,7 @@
         <div class="carousel-inner" role="listbox">
             @{
         int j = 0;
-        foreach (var item in slides)
+        foreach (var item in random4Stories)
         {
             <div @{ if (j == 0) { <text>
                  class="item active"
@@ -56,23 +61,19 @@
             j++;
                 }
 
-                @if (string.IsNullOrEmpty(item.Fields["Slide Video"].Value))
+                @if (!string.IsNullOrEmpty(item.Fields["Article Callout Image"].Value))
                 {
-                    <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Slide Image", item)"></div>
-                }
-                else
-                {
-                    <div class="carousel-image gd-lightbox-link gd-lightbox-video" data-bg="@Html.Sitecore().ImageFieldSrc("Slide Image", item)" data-lightsrc="@item.Fields["Slide Video"].Value" data-lighttitle="@item.Fields["Slide Title"].Value" data-lightposter="@LandmarkHelper.ImageFieldSrc("Slide Video Poster", item)"></div>
+                    <div class="carousel-image" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Article Callout Image", item)"></div>
                 }
                 <!-- Caption -->
                 <div class="carousel-caption">
                     <div class="carousel-caption-inner">
                         <div class="gd-carousel-detail">
                             <div class="gd-mainimage-brief3">
-                                <h2>@Html.Sitecore().Field("Article Headline", item.Parent.Parent).ToString().ToUpper()</h2>
+                                <h2>@Html.Sitecore().Field("Article Headline", item).ToString().ToUpper()</h2>
                                 <div class="gd-longarticle-fixedlines">
-                                    <p>@Html.Sitecore().Field("Article Intro", item.Parent.Parent)</p>
-                                    <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(item.Parent.Parent))" type="button" class="gd-button gd-button-reversed">
+                                    <p>@Html.Sitecore().Field("Article Intro", item)</p>
+                                    <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(item))" type="button" class="gd-button gd-button-reversed">
                                         @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem))
                                     </a>
                                 </div>
@@ -86,7 +87,7 @@
         </div>
 
         <!-- Controls -->
-        if (slides.Count > 1)
+        if (random4Stories.Count > 1)
         {
             <div class="gd-mainimage-controls">
                 <a class="gd-mainimage-control" href="#gd-carousel-mainimage" role="button" data-slide="prev">
@@ -120,7 +121,8 @@
                         <a class="gd-slick-item gd-hover-img" href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(it))">
                             <div class="gd-hover-img-area">
                                 <div class="gd-hover-img-mask"></div>
-                                <img src="@LandmarkHelper.GetCallOutImage(it)" />
+                                <img src="@LandmarkHelper.GetCallOutImage(it)"/>
+                                <img src="@Html.Sitecore().ImageFieldSrc("Article Portrait Callout Image", it)" />
                             </div>
                             <div class="gd-slick-des">
                                 <h3>@Html.Sitecore().Field("Article Headline", it)</h3>
