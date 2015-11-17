@@ -275,11 +275,9 @@ $(document).ready(function() {
     });
 
     $('li > a:has(+ ul)', $mobileMainMenu).on('click', function(e){
-      if ($(e.target).is('span')){
-        e.preventDefault();
-        $(this).parent().toggleClass('active');
-        $(this).next('ul').slideToggle(handleMobileMenuHeight);
-      }
+      e.preventDefault();
+      $(this).parent().toggleClass('active');
+      $(this).next('ul').slideToggle(handleMobileMenuHeight);
     });
 
     $(window).on('resize', handleMobileMenuHeight);
