@@ -17,6 +17,13 @@ content-length: 58
 
 <image mediaid="{30114B9A-4D80-4C07-A153-93F35A790F6D}" />
 ----field----
+field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
+name: Article Portrait Callout Image
+key: article portrait callout image
+content-length: 58
+
+<image mediaid="{30114B9A-4D80-4C07-A153-93F35A790F6D}" />
+----field----
 field: {849A04B3-2F7A-48BF-862F-C64356CB2813}
 name: Article Type
 key: article type
@@ -61,7 +68,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 69e7ce60-5453-41c7-84dc-4170dc6f3c73
+revision: 25cfbdaf-2aa8-47fc-8f16-b45ffeca9875
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -74,9 +81,10 @@ When in Rome
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Image Title
 key: image title
-content-length: 219
+content-length: 216
 
-<p>Photography by John-Paul Pietrus</br>Fashion Director Tina Leung</br>Production by Fast Management</br>Hair by Armando Cherillo @Atomo</br>Make-up by Adam de Cruz</br>Model Alexandra Martynova @the Hive, London  </p>
+
+<p>Photography by John-Paul Pietrus</br>Fashion Director Tina Leung</br>Production by Fast Management</br>Hair by Armando Cherillo @Atomo</br>Make-up by Adam de Cruz</br>Model Alexandra Martynova @the Hive, London 
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
@@ -104,14 +112,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-69e7ce60-5453-41c7-84dc-4170dc6f3c73
+25cfbdaf-2aa8-47fc-8f16-b45ffeca9875
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T075621Z
+20151117T080005:635833440054154736Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -122,7 +130,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: eeaafa4e-3eff-49fa-82f2-73f82ed2cabf
+revision: dff7b33f-f42b-4572-b78e-2d8571b18132
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -135,9 +143,9 @@ When in Rome
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Image Title
 key: image title
-content-length: 218
+content-length: 214
 
-<p>Photography by John-Paul Pietrus</br>Fashion Director Tina Leung</br>Production by Fast Management</br>Hair by Armando Cherillo @Atomo</br>Make-up by Adam de Cruz</br>Model Alexandra Martynova @the Hive, London </p>
+<p>Photography by John-Paul Pietrus</br>Fashion Director Tina Leung</br>Production by Fast Management</br>Hair by Armando Cherillo @Atomo</br>Make-up by Adam de Cruz</br>Model Alexandra Martynova @the Hive, London 
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
@@ -165,14 +173,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-eeaafa4e-3eff-49fa-82f2-73f82ed2cabf
+dff7b33f-f42b-4572-b78e-2d8571b18132
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T075616Z
+20151110T094026Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -183,7 +191,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 62000aa3-f9b9-40dd-95bd-3950ae1a70a5
+revision: ac19095b-28f8-48ed-a546-e3a2075bc677
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -196,9 +204,9 @@ When in Rome
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Image Title
 key: image title
-content-length: 219
+content-length: 214
 
-<p>Photography by John-Paul Pietrus</br>Fashion Director Tina Leung</br>Production by Fast Management</br>Hair by Armando Cherillo @Atomo</br>Make-up by Adam de Cruz</br>Model Alexandra Martynova @the Hive, London  </p>
+<p>Photography by John-Paul Pietrus</br>Fashion Director Tina Leung</br>Production by Fast Management</br>Hair by Armando Cherillo @Atomo</br>Make-up by Adam de Cruz</br>Model Alexandra Martynova @the Hive, London 
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
@@ -226,14 +234,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-62000aa3-f9b9-40dd-95bd-3950ae1a70a5
+ac19095b-28f8-48ed-a546-e3a2075bc677
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T075625Z
+20151110T094006Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

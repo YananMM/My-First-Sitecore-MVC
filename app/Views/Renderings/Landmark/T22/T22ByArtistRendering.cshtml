@@ -87,7 +87,7 @@ else
                             </div>
                             @if (pieces.Count > 2)
                             {
-                                <a href="?artist=@artist.ID.ToString() #more-contents" class="gd-artlist-more" data-toggletext="@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeLessGlossaryItem)) -">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem)) + </a>
+                                <a href="?artist=@artist.ID.ToString() #more-contents" class="gd-artlist-more" data-toggletext="@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeLessGlossaryItem)) -">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeMoreGlossaryItem)) </a>
                             }
                         </div>
                     </div>
