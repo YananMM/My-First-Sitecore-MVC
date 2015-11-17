@@ -207,7 +207,7 @@ namespace Landmark.Helper
                                                  text = category["Tag Name"],
                                                  DisplayName = category.DisplayName,
                                                  value = category.ID.ToString()
-                                             }).ToList();
+                                             }).OrderBy(p => p.DisplayName).ToList();
             foreach (var item in firstCategory)
             {
                 var subCategoriess = Sitecore.Context.Database.GetItem(item.value).Children.Where(i => i.TemplateID.ToString() == ItemGuids.CategoryObjectTemplate).ToList();
@@ -217,7 +217,7 @@ namespace Landmark.Helper
                         text = p["Tag Name"],
                         DisplayName = p.DisplayName.Replace(p.Parent.DisplayName + "-", ""),
                         value = p.ID.ToString()
-                    }).ToList();
+                    }).OrderBy(p => p.DisplayName).ToList();
                 item.children = children;
             }
             return firstCategory;
