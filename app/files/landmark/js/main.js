@@ -1959,7 +1959,7 @@ $(document).ready(function() {
         name: 'district',
         rules: 'required',
         depends: function() {
-          return gdIsHK;
+          return gdIsHK && gdEPselected;
         }
     }, {
         name: 'city',
@@ -2044,7 +2044,7 @@ $(document).ready(function() {
     });
     
     $('#gd-country .dropdown-menu>li>a').click(function() {
-      if ($(this).data('code') === 'hk') {
+      if ($(this).data('code') && $(this).data('code').toLowerCase() === 'hk') {
         gdIsHK = true;
         $('[name=district]').closest('.form-group').removeClass('hidden');
       } else {

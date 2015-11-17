@@ -171,17 +171,33 @@ namespace Landmark.Helper
         /// <returns>List{Item}.</returns>
         public static List<Item> GetItemsByRootAndTemplate(string rootItemId, string templateItemId)
         {
-            Item shopping = Sitecore.Context.Database.GetItem(rootItemId);
-            var query = string.Format("fast:{0}//*[{1}]", shopping.Paths.FullPath,
+            Item home = Sitecore.Context.Database.GetItem(rootItemId);
+            var query = string.Format("fast:{0}//*[{1}]", ToValidPath(home.Paths.FullPath),
                 "@@TemplateId='" + templateItemId + "'");
             return _webDb.SelectItems(query).ToList();
         }
 
         public static List<Item> GetItemByTemplate(Item parent, string templateId)
         {
-            var query = string.Format("fast:{0}//*[{1}]", parent.Paths.FullPath, "@@TemplateId='" + templateId + "'");
+            var query = string.Format("fast:{0}//*[{1}]", ToValidPath(parent.Paths.FullPath), "@@TemplateId='" + templateId + "'");
             List<Item> slidesItems = _webDb.SelectItems(query).OrderBy(i => i.DisplayName).ToList();
             return slidesItems;
+        }
+
+        public static string ToValidPath(string pathstring)
+        {
+            string[] paths = pathstring.Split('/');
+            string[] newpaths = new string[paths.Length];
+            for (int i = 0; i < paths.Length; i++)
+            {
+                if(paths[i].Contains(" "))
+                    newpaths[i] =  "#" + paths[i] + "#";
+                else
+                {
+                    newpaths[i] =   paths[i] ;
+                }
+            }
+            return string.Join("/", newpaths);
         }
 
         public static List<Item> GetItemsByItemsTemplates(Item parent, Guid[] templateIds)
@@ -504,8 +520,15 @@ namespace Landmark.Helper
         {
             string target = "_self";
             LinkField linkField = item.Fields[linkName];
-            if (linkField.LinkType == "external")
-                target = "_blank";
+            if (linkField != null)
+            {
+                if (linkField.Target.Any())
+                {
+                    if (linkField.LinkType == "external")
+                        target = "_blank";
+                }
+            }
+            
             return target;
         }
 
