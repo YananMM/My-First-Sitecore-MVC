@@ -171,8 +171,8 @@ namespace Landmark.Helper
         public Item GetCurrentBuilding(string buildId = null)
         {
             Item building = buildId == null
-                ? LandmarkHelper.GetBuildings().FirstOrDefault()
-                : LandmarkHelper.GetBuildings().Where(b => b.Fields["Building Svg Id"].Value == buildId).ToList().FirstOrDefault(); ;
+                ? LandmarkHelper.GetAllBuildings().FirstOrDefault()
+                : LandmarkHelper.GetAllBuildings().Where(b => b.Fields["Building Svg Id"].Value == buildId).ToList().FirstOrDefault(); ;
             return building;
         }
 

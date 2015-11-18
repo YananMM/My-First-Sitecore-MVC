@@ -40,7 +40,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: fcdff161-81cc-4a58-a411-0b0283db63e2
+revision: bb4113af-4fe2-4cdd-8c32-8c1ed78e9d13
 
 ----field----
 field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
@@ -49,6 +49,13 @@ key: building title
 content-length: 9
 
 THE FORUM
+----field----
+field: {5C411FD4-B038-45E8-8083-96AE99773D2F}
+name: Building Index For Art
+key: building index for art
+content-length: 1
+
+7
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -62,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fcdff161-81cc-4a58-a411-0b0283db63e2
+bb4113af-4fe2-4cdd-8c32-8c1ed78e9d13
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151118T031731Z
+20151118T061204Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

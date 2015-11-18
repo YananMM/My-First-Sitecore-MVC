@@ -279,7 +279,7 @@ namespace Landmark.Helper
         }
         public static List<Item> GetAllBuildings()
         {
-            return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.OrderBy(p => p.Fields["Building Title"].Value).ToList();
+            return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.OrderBy(p => p.Fields["Building Index For Art"].Value).ToList();
         }
 
         /// <summary>
