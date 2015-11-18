@@ -1435,6 +1435,7 @@ pre code {
 @media (min-width: 1300px) {
   .container2 {
     width: 80%;
+    max-width: 1460px;
   }
 }
 .container-fluid {
@@ -10409,6 +10410,7 @@ button.close {
     right:15px;*/
     float: left;
     width: 25%;
+    min-height: 800px;
     vertical-align: top;
     box-sizing: border-box;
     border-left: 1px solid #CCCCCC;
@@ -14837,8 +14839,9 @@ dl.gd-content-details-tags dd a:active {
   position: relative;
   z-index: 1300;
 }
-.t26 .gd-promotion .gd-promo-filter .gd-promo-brands .disabled {
+.t26 .gd-promotion .gd-promo-filter a.disabled {
   color: #B6B6B6;
+  cursor: default;
 }
 .t26 .gd-promotion .gd-promo-brands .gd-promo-brands-btn:after {
   border-width: 5px 5px 0 5px;
@@ -15587,7 +15590,7 @@ dl.gd-content-details-tags dd a:active {
 }
 @media (min-width: 1000px) {
   .t23 .gd-mainimage.carousel-portrait .carousel-inner .item > .carousel-image {
-    height: 720px;
+    height: 706px;
   }
 }
 @media (min-width: 1300px) {
@@ -16456,3 +16459,4 @@ input[type="checkbox"] {
   font-size: 12px;
   font-style: normal;
 }
+/*# sourceMappingURL=style.css.map */

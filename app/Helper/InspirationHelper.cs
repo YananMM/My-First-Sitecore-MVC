@@ -51,7 +51,7 @@ namespace Landmark.Helper
             int pagenumber;
             pagenumber = page != null ? Int32.Parse(page) : 1;
             results = GetMonthlyExclusives().Where(item => ((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
-            return results.Skip((pagenumber - 1) * 8).Take(8).ToList();
+            return results/*.Skip((pagenumber - 1) * 8).Take(8).ToList()*/;
         }
 
         public List<Item> GetNotDetailedExclusives(string page = null)
@@ -61,7 +61,8 @@ namespace Landmark.Helper
             pagenumber = page != null ? Int32.Parse(page) : 1;
             List<Item> detailedItems = GetDetailedExclusives(page); 
             results = GetMonthlyExclusives().Where(item => !((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
-            if (detailedItems.Count() > pagenumber * 8)
+            return results;
+            /*if (detailedItems.Count() > pagenumber * 8)
             {
                 return null;
             }
@@ -78,7 +79,7 @@ namespace Landmark.Helper
                     return results.Skip(8 - lastPageDetailsNumber + (pagenumber - detailsPageNumber) * 8).Take(8).ToList();
                 }
                 //return GetMonthlyExclusives().Skip((pagenumber - 1) * 8 - detailedItems.Count()).Take(8 - detailedItems.Count()).ToList();
-            }
+            }*/
         }
 
         public bool IfBrandsAlphabetValid(string s)
