@@ -131,7 +131,7 @@
                 }
                     }
 
-                    <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(detailedarticle))"><img src="@imagesrc"></a>
+                    <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(detailedarticle))"><img data-src="@imagesrc"></a>
                     <div class="gd-promo-box-text">
                         <h5>@brandTitle.ToUpper()</h5>
                         <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(detailedarticle))">
@@ -170,12 +170,12 @@
                     }
                 }
                 <div class="gd-promo-box @alphabet @inspirationHelper.GetTagsFilter(article)">
-                    <a href="#"><img src="@imagesrc"></a>
+                    <a href="#"><img data-src="@imagesrc"></a>
                     <h5>@brandTitle</h5>
                     <a href="#"><h4>@Html.Sitecore().Field("Article Headline", article)</h4></a>
 </div>
             }
         </div>
-        <div class="navigation gd-promo-more"><a href="?page=2">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem)) +</a></div>
+        @*<div class="navigation gd-promo-more"><a href="?page=2">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem)) +</a></div>*@
     </div>
 </div>
