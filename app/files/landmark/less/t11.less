@@ -133,10 +133,27 @@
       border: 1px solid #444444;
       padding: 13px 13px 15px;
       position: relative;
+      @media (min-width: @screen-sm) {
+        .menbox-img {
+          bottom: 135px;
+          left: 15px;
+          position: absolute;
+          right: 15px;
+          top: 15px;
+          img {
+            height: auto;
+            max-height: 100%;
+            max-width: 100%;
+            position: relative;
+            width: auto;
+          }
+        }
+      }
       .menbox-text{
         @media (min-width: @screen-sm) {
           background-color: #252525;
           bottom: 0;
+          height: 135px;
           left: 0;
           padding-bottom: 10px;
           padding-left: 15px;
