@@ -40,7 +40,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: b746fbdf-92d7-4531-af2e-97ee807502fc
+revision: 8b476b52-e303-4550-a6f9-600bd30cc002
 
 ----field----
 field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
@@ -57,6 +57,13 @@ content-length: 37
 
 8 Connaught Place, Central, Hong Kong
 ----field----
+field: {5C411FD4-B038-45E8-8083-96AE99773D2F}
+name: Building Index For Art
+key: building index for art
+content-length: 1
+
+8
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -69,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b746fbdf-92d7-4531-af2e-97ee807502fc
+8b476b52-e303-4550-a6f9-600bd30cc002
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151118T031701Z
+20151118T061211Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
