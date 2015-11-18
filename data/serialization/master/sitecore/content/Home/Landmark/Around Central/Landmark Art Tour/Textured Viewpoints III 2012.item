@@ -1,27 +1,13 @@
 ----item----
 version: 1
-id: {834BB20C-97DD-4396-9641-C56943D318CF}
+id: {C5605252-953C-45AA-9B33-18B594ECB296}
 database: master
-path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/Textured Viewpoints IV 2012
+path: /sitecore/content/Home/Landmark/Around Central/Landmark Art Tour/Textured Viewpoints III 2012
 parent: {5C03DD0D-4881-4A9B-A58D-5FFA101B3533}
-name: Textured Viewpoints IV 2012
+name: Textured Viewpoints III 2012
 master: {00000000-0000-0000-0000-000000000000}
 template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
 templatekey: T29 Page
-
-----field----
-field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
-name: Is Shown In Navigation
-key: is shown in navigation
-content-length: 0
-
-
-----field----
-field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
-name: Is Shown In Breadcrumb
-key: is shown in breadcrumb
-content-length: 0
-
 
 ----field----
 field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
@@ -36,7 +22,7 @@ name: Art Image
 key: art image
 content-length: 381
 
-<image mediapath="/Images/Landmark/Around Central/Landmark Art Tour/Mario Lobo/Textured Viewpoints I 2012/maria lobo 001_1920px" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Around Central/Landmark Art Tour/Mario Lobo/Textured Viewpoints I 2012/maria lobo 001_1920px" mediaid="{3F0D586D-81D4-402C-8354-A0849B4E2466}" />
+<image mediapath="/Images/Landmark/Around Central/Landmark Art Tour/Mario Lobo/Textured Viewpoints I 2012/maria lobo 001_1920px" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Around Central/Landmark Art Tour/Mario Lobo/Textured Viewpoints I 2012/maria lobo 001_1920px" mediaid="{7BA12C99-A523-41F6-AB41-08F2A0EAE608}" />
 ----field----
 field: {22B6E709-1F38-4AF9-8D6C-7E3443E4F3ED}
 name: Floor and Building
@@ -58,39 +44,32 @@ key: locationy
 content-length: 5
 
 0.578
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 4
-
-5000
 ----version----
 language: en
 version: 1
-revision: 76e9d18f-4482-4415-a36d-55c87e0becc5
+revision: 33e81a97-6e4a-41d2-be9f-9592be0ee396
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 28
+content-length: 29
 
-Textured Viewpoints IV, 2012
+Textured Viewpoints III, 2012
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
-content-length: 28
+content-length: 29
 
-Textured Viewpoints IV, 2012
+Textured Viewpoints III, 2012
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
 key: commentary
-content-length: 220
+content-length: 221
 
-<file mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Mario Lobo/Textured Viewpoints IV 2012/i_1607_eng" mediaid="{246FD450-756C-41E1-A357-AD918729CC64}" src="~/media/246fd450756c41e1a357ad918729cc64.ashx" />
+<file mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Mario Lobo/Textured Viewpoints III 2012/i_1607_eng" mediaid="{90777771-896F-40BD-8004-54CBBC88580F}" src="~/media/90777771896f40bd800454cbbc88580f.ashx" />
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -111,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-76e9d18f-4482-4415-a36d-55c87e0becc5
+33e81a97-6e4a-41d2-be9f-9592be0ee396
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151111T134557Z
+20151111T134547Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -129,7 +108,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 991ce940-6713-4413-860a-f85dde4aad6a
+revision: 8c2cad47-d55d-4e50-905c-418b60df7a81
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -137,21 +116,21 @@ name: Page Title
 key: page title
 content-length: 11
 
-质感之见四, 2012
+质感之见三, 2012
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
 content-length: 11
 
-质感之见四, 2012
+质感之见三, 2012
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
 key: commentary
-content-length: 221
+content-length: 222
 
-<file mediaid="{671CB9D7-80DC-4C00-87D3-74DEDE7FEADB}" src="~/media/671cb9d780dc4c0087d374dede7feadb.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Mario Lobo/Textured Viewpoints IV 2012/i_1607_mand" />
+<file mediaid="{48F663B7-4FA0-409C-A73A-B2A294F58C26}" src="~/media/48f663b74fa0409ca73ab2a294f58c26.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Mario Lobo/Textured Viewpoints III 2012/i_1607_mand" />
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -172,14 +151,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-991ce940-6713-4413-860a-f85dde4aad6a
+8c2cad47-d55d-4e50-905c-418b60df7a81
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151111T134837Z
+20151111T134827Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -190,7 +169,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 7c1544d6-5c25-43f5-b280-c249b311cbfc
+revision: 2fdd510a-eb22-4287-9a20-87f6703714c0
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -198,21 +177,21 @@ name: Page Title
 key: page title
 content-length: 11
 
-質感之見四, 2012
+質感之見三, 2012
 ----field----
 field: {11BA69F5-F975-4634-96DF-5C0D105CF401}
 name: Art Title
 key: art title
 content-length: 11
 
-質感之見四, 2012
+質感之見三, 2012
 ----field----
 field: {03880D3C-1C45-403F-8E60-29125FB34318}
 name: Commentary
 key: commentary
-content-length: 221
+content-length: 222
 
-<file mediaid="{E2507C03-8193-4E8F-8281-491BD1C62A36}" src="~/media/e2507c0381934e8f8281491bd1c62a36.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Mario Lobo/Textured Viewpoints IV 2012/i_1607_cant" />
+<file mediaid="{B60367CF-73AB-431C-B65B-1907AF4F4B1A}" src="~/media/b60367cf73ab431cb65b1907af4f4b1a.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Mario Lobo/Textured Viewpoints III 2012/i_1607_cant" />
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -233,14 +212,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7c1544d6-5c25-43f5-b280-c249b311cbfc
+2fdd510a-eb22-4287-9a20-87f6703714c0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151111T140311Z
+20151111T140301Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

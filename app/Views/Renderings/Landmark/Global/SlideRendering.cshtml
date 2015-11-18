@@ -25,7 +25,7 @@
             {
                 <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{ if (i == 0) { <text>
                     class="active"
-                    </text>   } }></li>
+                    </text>         } }></li>
             }
         </ol>
     }
@@ -37,9 +37,9 @@
     {
         <div @{ if (j == 0) { <text>
              class="item active"
-             </text>                       } else { <text>
+             </text>                             } else { <text>
              class="item"
-             </text>                       } }>
+             </text>                             } }>
             @{
         j++;
             }
@@ -60,9 +60,15 @@
                 setting = helper.GetStorySetting(Sitecore.Context.Item);
                 <p @if (setting == StorySetting.StyleCd) { <text>
                    class="gd-des-below text-center"
-                   </text>        } else { <text>
+                   </text>              } else { <text>
                    class="gd-des-below"
-                   </text>        }>
+                   </text>              }>
+                    @Html.Sitecore().Field("Slide Title", item)
+                </p>
+            }
+            else if (currentItem.TemplateID.ToString() == ItemGuids.T4PageTemplate)
+            {
+                <p class="gd-des-below">
                     @Html.Sitecore().Field("Slide Title", item)
                 </p>
             }
