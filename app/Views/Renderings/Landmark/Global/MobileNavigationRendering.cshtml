@@ -57,7 +57,7 @@
                 else
                 {
                     <ul class="sub-menu">
-                        @if (!(new Sitecore.Data.Fields.LayoutField(item).Value).IsNullOrEmpty() && item.DisplayName.Contains(""))
+                        @if (!(new Sitecore.Data.Fields.LayoutField(item).Value).IsNullOrEmpty() && item.ID.ToString() != ItemGuids.ServicesItem)
                         {
                             <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">@item.Fields["Page Title"].Value.ToUpper()</a></li>
                         }

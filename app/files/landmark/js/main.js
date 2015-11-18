@@ -782,17 +782,22 @@ $(document).ready(function() {
     if(!isPhone()){
       // key men box equal height, adjust variation 2 height according to variation 1 img height
       var $box2 = $('.menbox-2'),
-        $img1 = $('.menbox-1 .menbox-img img');
+        $img1 = $('.menbox-1 .menbox-img img'),
+        $img2 = $('.menbox-2 .menbox-img img');
       if($box2.length && $img1.length){
         function adjustKeyMenBox(){
           origScrollPos = $(window).scrollTop();
           $box2.css({
             'height': $img1.outerHeight(true) + 'px'
           });
+          $('img', $box2).css({
+            'top': ($('.menbox-img', $box2).height() - $('img', $box2).height()) / 2
+          });
           $.scrollTo(origScrollPos, 0);
         }
         $(window).on('resize', adjustKeyMenBox);
         $img1.on('lazyload', adjustKeyMenBox);
+        $img2.on('lazyload', adjustKeyMenBox);
       }
 
       // bottom men box equal height, adjust variation 4 height according to variation 3 img height

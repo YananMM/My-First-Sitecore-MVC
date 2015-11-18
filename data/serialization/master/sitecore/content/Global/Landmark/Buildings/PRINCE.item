@@ -10,6 +10,27 @@ template: {873FCBBD-5F81-4DD2-B885-DFDCA194A5D1}
 templatekey: Building Data
 
 ----field----
+field: {7EF17060-F50C-4CA3-8021-1802F0672C00}
+name: Building Svg Id
+key: building svg id
+content-length: 6
+
+gdfpa4
+----field----
+field: {E657A707-C854-4316-BDA6-B63559885398}
+name: LocationX
+key: locationx
+content-length: 6
+
+0.6372
+----field----
+field: {12796E88-1E57-4ECB-B6A2-66BC957940D1}
+name: LocationY
+key: locationy
+content-length: 6
+
+0.3300
+----field----
 field: {BF9DA807-1A47-4989-952D-5A3E7691E3FC}
 name: Is Landmark
 key: is landmark
@@ -26,7 +47,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: bbbfd6d8-fa55-49c7-9609-2a284ddc1ec9
+revision: 55b7368a-ae96-4a61-87a2-82598853ef04
 
 ----field----
 field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
@@ -55,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bbbfd6d8-fa55-49c7-9609-2a284ddc1ec9
+55b7368a-ae96-4a61-87a2-82598853ef04
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T125347Z
+20151118T031629Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

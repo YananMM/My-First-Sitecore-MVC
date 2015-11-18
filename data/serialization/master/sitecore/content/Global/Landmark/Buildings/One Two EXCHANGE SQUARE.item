@@ -10,6 +10,27 @@ template: {873FCBBD-5F81-4DD2-B885-DFDCA194A5D1}
 templatekey: Building Data
 
 ----field----
+field: {7EF17060-F50C-4CA3-8021-1802F0672C00}
+name: Building Svg Id
+key: building svg id
+content-length: 6
+
+gdfpa5
+----field----
+field: {E657A707-C854-4316-BDA6-B63559885398}
+name: LocationX
+key: locationx
+content-length: 6
+
+0.5260
+----field----
+field: {12796E88-1E57-4ECB-B6A2-66BC957940D1}
+name: LocationY
+key: locationy
+content-length: 6
+
+0.1233
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -19,7 +40,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: f85605e7-909f-4a36-81a4-8d0df19386d2
+revision: 055f631e-2648-4cee-a731-7b9ee2a2340a
 
 ----field----
 field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
@@ -48,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f85605e7-909f-4a36-81a4-8d0df19386d2
+055f631e-2648-4cee-a731-7b9ee2a2340a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T131536Z
+20151118T031644Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

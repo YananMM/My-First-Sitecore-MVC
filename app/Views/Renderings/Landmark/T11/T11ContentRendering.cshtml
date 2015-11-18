@@ -3,6 +3,7 @@
 @using Landmark.Helper
 @using Sitecore.Configuration
 @using Sitecore.ContentSearch.Utilities
+@using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Sitecore.Links
 @model RenderingModel
@@ -76,12 +77,61 @@
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-4 menbox">
-                @Html.Sitecore().Placeholder("t11-exclusive")
+                @{
+                    ReferenceField exclusiveField = Sitecore.Context.Item.Fields["Related Exclusive Item"];
+                    Item exclusiveItem = null;
+                    Item brandItem = null;
+                    bool ishasDetails;
+                    string href = string.Empty;
+                    if (exclusiveField != null)
+                    {
+                        if (exclusiveField.TargetItem != null)
+                        {
+                            exclusiveItem = exclusiveField.TargetItem;
+                            if (exclusiveItem.Fields["Brand"] != null)
+                            {
+                                MultilistField brandField = ((MultilistField)exclusiveItem.Fields["Brand"]);
+                                if (brandField != null && brandField.TargetIDs != null && brandField.TargetIDs.Length > 0)
+                                {
+                                    var brand = brandField.TargetIDs.FirstOrDefault();
+                                    if (Sitecore.Context.Database.GetItem(brand) != null)
+                                    { brandItem = Sitecore.Context.Database.GetItem(brand); }
+                                }
+                            }
+                            ishasDetails = ((CheckboxField)exclusiveItem.Fields["Has Detailed"]).Checked;
+                            href = ishasDetails ? LinkManager.GetItemUrl(exclusiveItem) : string.Empty;
+                        }
+                    }
+                }
+                @if (exclusiveItem != null)
+                {
+                    <div class=" menbox-2">
+                        <a href="@href"  class="menbox-img" >
+                            <div class="menbox-img-mask"></div>
+                            <img data-src="@LandmarkHelper.GetCallOutImage(exclusiveItem)" alt="landmark" class="lazy-loaded" />
+                        </a>
+                        <div class="menbox-text">
+        
+                                @if (brandItem != null)
+                                {
+                                    <a href="@href" class="menbox-title">
+                                        <h3>@Html.Sitecore().Field("Brand Title", brandItem)</h3>
+                                    </a>
+                                }
+                            <h4>@Html.Sitecore().Field("Article Type", ((ReferenceField) exclusiveItem.Fields["Article Type"]).TargetItem).ToString().ToUpper()</h4>
+                            <p>@Html.Sitecore().Field("Article Headline", exclusiveItem)</p>
+                        </div>
+                    </div>
+                }
+                
+
+
                 <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.MonthlyExclusivePage)))" class="pull-right menbox-more">
-                    @Html.Sitecore().Field("Glossary Value",(Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeAllExclusive))<span class="icomoon-chevron-small-right"></span></a> </div>
+                    @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeAllExclusive))<span class="icomoon-chevron-small-right"></span></a>
+
+            </div>
             </div>
         </div>
-    </div>
 </section>
 <section class="content-area content-area-bg">
 <div class="container2">

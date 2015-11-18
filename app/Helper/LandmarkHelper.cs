@@ -275,11 +275,11 @@ namespace Landmark.Helper
 
         public static List<Item> GetBuildings()
         {
-            return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.Where(building => ((CheckboxField)building.Fields["Is Landmark"]).Checked).OrderBy(p => p.DisplayName).ToList();
+            return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.Where(building => ((CheckboxField)building.Fields["Is Landmark"]).Checked).OrderBy(p => p.Fields["Building Title"].Value).ToList();
         }
         public static List<Item> GetAllBuildings()
         {
-            return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.OrderBy(p => p.DisplayName).ToList();
+            return Sitecore.Context.Database.GetItem(ItemGuids.BuidingsFolder).Children.OrderBy(p => p.Fields["Building Title"].Value).ToList();
         }
 
         /// <summary>
@@ -465,8 +465,7 @@ namespace Landmark.Helper
         {
             String target = "_self";
             LinkField linkField = item.Fields[field];
-
-            if (linkField.LinkType == "external")
+            if (linkField.LinkType == "external" || linkField.Target=="New Browser")
             {
                 target = "_blank";
             }
@@ -522,9 +521,9 @@ namespace Landmark.Helper
             LinkField linkField = item.Fields[linkName];
             if (linkField != null)
             {
-                if (linkField.Target.Any())
+                if (linkField.TargetItem!=null)
                 {
-                    if (linkField.LinkType == "external")
+                    if (linkField.LinkType == "external" || linkField.Target == "New Browser")
                         target = "_blank";
                 }
             }

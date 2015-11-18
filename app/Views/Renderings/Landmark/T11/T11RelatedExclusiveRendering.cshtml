@@ -7,14 +7,16 @@
     InspirationHelper inspirationHelper = new InspirationHelper();
     ShoppingHelper shoppingHelper = new ShoppingHelper();
     Sitecore.Data.Items.Item brandItem = null;
-    var exclusiveItem = inspirationHelper.GetDetailsMonthlyExclusives(category: shoppingHelper.GetCategoryFromItem(Sitecore.Context.Item.ID.ToString()).ID.ToString()).FirstOrDefault();
+    var exclusivesItem = inspirationHelper.GetDetailsMonthlyExclusives(category: shoppingHelper.GetCategoryFromItem(Sitecore.Context.Item.ID.ToString()).ID.ToString());
+    Random random = new Random();
+    int num1 = random.Next(0, exclusivesItem.Count);
     bool ishasDetails = false;
     string href = string.Empty;
-    if (exclusiveItem != null)
+    if (exclusivesItem[num1] != null)
     {
-        if (exclusiveItem.Fields["Brand"] != null)
+        if (exclusivesItem[num1].Fields["Brand"] != null)
         {
-            MultilistField brandField = ((MultilistField)exclusiveItem.Fields["Brand"]);
+            MultilistField brandField = ((MultilistField)exclusivesItem[num1].Fields["Brand"]);
             if (brandField != null && brandField.TargetIDs != null && brandField.TargetIDs.Length > 0)
             {
                 var brand = brandField.TargetIDs.FirstOrDefault();
@@ -22,17 +24,17 @@
                 { brandItem = Sitecore.Context.Database.GetItem(brand); }
             }
         }
-        ishasDetails = ((CheckboxField) exclusiveItem.Fields["Has Detailed"]).Checked;
-        href = ishasDetails ? LinkManager.GetItemUrl(exclusiveItem) : string.Empty;
+        ishasDetails = ((CheckboxField)exclusivesItem[num1].Fields["Has Detailed"]).Checked;
+        href = ishasDetails ? LinkManager.GetItemUrl(exclusivesItem[num1]) : string.Empty;
     }
     
 }
-@if(exclusiveItem!=null)
+@if (exclusivesItem[num1] != null)
 {
 <div class=" menbox-2">
     <a href="@href"  class="menbox-img" >
         <div class="menbox-img-mask"></div>
-        <img data-src="@LandmarkHelper.GetCallOutImage(exclusiveItem)" alt="landmark" class="lazy-loaded">
+        <img data-src="@LandmarkHelper.GetCallOutImage(exclusivesItem[num1])" alt="landmark" class="lazy-loaded">
     </a>
     <div class="menbox-text">
         
@@ -42,8 +44,8 @@
                     <h3>@Html.Sitecore().Field("Brand Title", brandItem)</h3>
                 </a>
             }
-        <h4>@Html.Sitecore().Field("Article Type", ((ReferenceField) exclusiveItem.Fields["Article Type"]).TargetItem).ToString().ToUpper()</h4>
-        <p>@Html.Sitecore().Field("Article Headline", exclusiveItem)</p>
+        <h4>@Html.Sitecore().Field("Article Type", ((ReferenceField) exclusivesItem[num1].Fields["Article Type"]).TargetItem).ToString().ToUpper()</h4>
+        <p>@Html.Sitecore().Field("Article Headline", exclusivesItem[num1])</p>
     </div>
 </div>
 }

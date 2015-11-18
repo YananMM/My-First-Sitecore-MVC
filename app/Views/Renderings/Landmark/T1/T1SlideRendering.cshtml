@@ -24,7 +24,18 @@
             LinkField link = item.Fields["Slide Button Link"];
             if (link != null)
             {
-                buttonLink = link.Url;
+                if (link.LinkType == "internal")
+                {
+                    if (link.TargetItem != null)
+                    {
+                        buttonLink = LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(link.TargetItem));
+                    }
+
+                }
+                if (link.LinkType == "external")
+                {
+                    buttonLink = link.Url;
+                }
             }
             if (sublineVersionsField.Value.Equals(ItemGuids.TwoNumbersTwoCaptionsTextLink))
             {
@@ -109,7 +120,7 @@
                                 <div class="panel-content">
                                     @text
                                 </div>
-                                <a class="btn btn-default" href="@buttonLink" target="@LandmarkHelper.GetLinkTarget(item,"Button Link")">@buttonText</a>
+                                <a class="btn btn-default" href="@buttonLink" target="@LandmarkHelper.GetLinkTarget(item,"Slide Button Link")">@buttonText</a>
                             </div>
                         </div>
                     </div>

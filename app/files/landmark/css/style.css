@@ -9860,9 +9860,26 @@ button.close {
   position: relative;
 }
 @media (min-width: 768px) {
+  .t11 .content-area .menbox .menbox-2 .menbox-img {
+    bottom: 135px;
+    left: 15px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  .t11 .content-area .menbox .menbox-2 .menbox-img img {
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    position: relative;
+    width: auto;
+  }
+}
+@media (min-width: 768px) {
   .t11 .content-area .menbox .menbox-2 .menbox-text {
     background-color: #252525;
     bottom: 0;
+    height: 135px;
     left: 0;
     padding-bottom: 10px;
     padding-left: 15px;
