@@ -6,7 +6,11 @@
 @model RenderingModel
 @{
     var currentItem = Sitecore.Context.Item;
-    var conciergeDesks = currentItem.Children.First().Children.ToList(); 
+    List<Item> conciergeDesks = new List<Item>();
+    if (currentItem.ID.ToString() == ItemGuids.OverviewPage)
+    {
+        conciergeDesks = currentItem.Children.First().Children.ToList();
+    }
 }
 <div class="container">
     @Html.Sitecore().Placeholder("t24page-title")
@@ -22,14 +26,14 @@
                     <h3>@Html.Sitecore().Field("Service Title")</h3>
                     @Html.Sitecore().Field("Service Content")
 
-                    @if (Sitecore.Context.Item.ID.ToString() == ItemGuids.ConciergePage)
+                    @if (Sitecore.Context.Item.ID.ToString() == ItemGuids.OverviewPage)
                     {
                         <hr>
                         <h4>@Html.Sitecore().Field("Opening Hours Label")</h4>
                         <div class="table-responsive">
                             <table>
                                 <tbody>
-                                    @if (conciergeDesks != null && conciergeDesks.Count != 0)
+                                    @if (conciergeDesks.Count != 0)
                                     {
                                         foreach (var item in conciergeDesks)
                                         {
