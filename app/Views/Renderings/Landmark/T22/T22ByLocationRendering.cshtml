@@ -68,7 +68,7 @@
                                 <img data-src="@SitecoreFieldHelper.ImageFieldSrc("Art Image", piece)" alt="artpiece picture">
                             </div>
                             <h4>@piece.Fields["Art Title"].Value</h4>
-                            <p>@piece.Fields["Art Description"].Value</p>
+                            <p>@Sitecore.Context.Database.GetItem(piece.Fields["Artist"].ToString()).Fields["Artist Name"]</p>
                         </a>
                     </div>
                 }
