@@ -325,9 +325,8 @@ namespace Landmark.Helper
                         brandsByBuildings.Add(brand);
                     }
                 }
-
             }
-            return brandsByBuildings;
+            return brandsByBuildings.OrderBy(p=>p.DisplayName).ToList();
         }
 
         public List<Item> GetBuildingsByCategory(ID categoryId)
