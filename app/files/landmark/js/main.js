@@ -951,10 +951,18 @@ jQuery(function ($) {
                 var form = this,
                     $form = $(this),
                     $category = $('select[name=category]', form),
-                    $childcategory = $('select[name=childcategory]', form);
+                    $childcategory = $('select[name=childcategory]', form),
+                    $parentTemplateId = $('input[name=parentTemplateId]', form);
+
+                //if ($parentTemplateId === pageTemplateId) {
+                //    $childcategory.selectpicker('hide');
+                //    $childcategory.attr('disabled', 'disabled');
+                //}
+
                 $category.on('change', function () {
                     var categoryval = $category.val(),
                       children = [];
+                    alert($parentTemplateId.val());
 
                     for (var i = 0; i < categories.length; i++) {
                         var category = categories[i];

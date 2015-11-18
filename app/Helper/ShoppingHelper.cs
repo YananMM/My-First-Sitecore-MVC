@@ -59,7 +59,7 @@ namespace Landmark.Helper
         public List<LandmarkBrandModel> GetBrandModels(Item parentItem)
         {
             List<LandmarkBrandModel> brandModels = new List<LandmarkBrandModel>();
-            List<Item> brandsItems = null;
+            List<Item> brandsItems = new List<Item>();
             if (parentItem.ID.ToString() == ItemGuids.ShoppingItem)
                 brandsItems = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T14ShopDetailsTemplate);
             else if (parentItem.ID.ToString() == ItemGuids.DiningItem)
@@ -215,7 +215,7 @@ namespace Landmark.Helper
                     subCategoriess.Select(p => new TextValue
                     {
                         text = p["Tag Name"],
-                        DisplayName = p.DisplayName.Replace(p.Parent.DisplayName + "-", ""),
+                        DisplayName = p.DisplayName.Replace("_"," ").Replace(p.Parent.DisplayName + "-", ""),
                         value = p.ID.ToString()
                     }).OrderBy(p => p.DisplayName).ToList();
                 item.children = children;

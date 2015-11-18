@@ -62,26 +62,40 @@ namespace Landmark.Controllers
             }
             else if (categoryTag.Parent.ID.ToString() == ItemGuids.ShoppingCategory)
             {
-                var childcategoryTag = Sitecore.Context.Database.GetItem(childcategory);
-                var childcategoryDisplayName = childcategoryTag.DisplayName.Replace(childcategoryTag.Parent.DisplayName + "-", "");
                 var shopItemPages = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
-                foreach (var item in shopItemPages)
+                if (!string.IsNullOrEmpty(childcategory))
                 {
-                    if (item.DisplayName == categoryDisplayName)
+                    var childcategoryTag = Sitecore.Context.Database.GetItem(childcategory);
+                    var childcategoryDisplayName = childcategoryTag.DisplayName.Replace("_"," ").Replace(childcategoryTag.Parent.DisplayName + "-", "");
+                    foreach (var item in shopItemPages)
                     {
-                        var subShopPages = LandmarkHelper.GetItemsByRootAndTemplate(item.ID.ToString(), ItemGuids.ShoppingSubCategoryPageObject);
-                        if (subShopPages.Count > 0)
+                        if (item.DisplayName == categoryDisplayName)
                         {
-                            foreach (var subPage in subShopPages)
+                            var subShopPages = LandmarkHelper.GetItemsByRootAndTemplate(item.ID.ToString(), ItemGuids.ShoppingSubCategoryPageObject);
+                            if (subShopPages.Count > 0)
                             {
-                                if (subPage.DisplayName == childcategoryDisplayName)
+                                foreach (var subPage in subShopPages)
                                 {
-                                    target = subPage.Children.SingleOrDefault(p => p.DisplayName == "By Brands");
+                                    if (subPage.DisplayName == childcategoryDisplayName)
+                                    {
+                                        target = subPage.Children.SingleOrDefault(p => p.DisplayName == "By Brands");
+                                    }
                                 }
                             }
                         }
                     }
                 }
+                else
+                {
+                    foreach (var item in shopItemPages)
+                    {
+                        if (item.DisplayName == categoryDisplayName)
+                        {
+                            target = item.Children.SingleOrDefault(p => p.DisplayName == "By Brands");
+                        }
+                    }
+                }
+                
             }
             return Redirect(LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(target)));
         }

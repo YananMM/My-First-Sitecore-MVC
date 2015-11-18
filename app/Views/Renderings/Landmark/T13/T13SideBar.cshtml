@@ -11,11 +11,13 @@
     Item currentPage = Sitecore.Context.Item;
     string allByBrandsPageID = ItemGuids.AllByBrandsPage;
     string allByBuildingsPageID = ItemGuids.AllByBuildingsPage;
-    Item parentItem = Sitecore.Context.Item.Parent;
-    while (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
+    Item parentItem = currentPage.Parent;
+
+    while (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !parentItem.ID.ToString().Equals(ItemGuids.DiningItem) && parentItem.TemplateID.ToString() != ItemGuids.T11PageTemplate)
     {
         parentItem = parentItem.Parent;
     }
+    <h2>@parentItem.DisplayName</h2>
     ShoppingHelper shoppingHelper = new ShoppingHelper();
     List<TextValue> categories = shoppingHelper.GetFirstCategory(currentPage.ID.ToString());
     string allbrands = string.Empty;
@@ -31,10 +33,11 @@
         brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
     }
     var category = currentPage.Parent.Parent.DisplayName;
-    if (currentPage.Parent.Parent.ID.ToString() == ItemGuids.DiningItem)
+    if (currentPage.Parent.Parent.ID.ToString() == ItemGuids.DiningItem || currentPage.Parent.TemplateID.ToString() == ItemGuids.T11PageTemplate)
     {
         category = currentPage.Parent.DisplayName;
     }
+
     List<TextValue> subCategories = new List<TextValue>();
     var subpage = currentPage.Parent.DisplayName;
 }
@@ -60,9 +63,8 @@
             <ul class="brands-gap">
                 @{
                     List<Item> buidings = LandmarkHelper.GetBuildings();
-                    Item contextItem = Sitecore.Context.Item;
-                    Item firstParentItem = contextItem.Parent;
-                    Item allByBuildings = firstParentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) ? Sitecore.Context.Database.GetItem(ItemGuids.AllByBuildingsPage) : contextItem.Parent.Children.Where(item => item.DisplayName == "By Buildings").FirstOrDefault();
+                    Item firstParentItem = currentPage.Parent;
+                    Item allByBuildings = firstParentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) ? Sitecore.Context.Database.GetItem(ItemGuids.AllByBuildingsPage) : currentPage.Parent.Children.Where(item => item.DisplayName == "By Buildings").FirstOrDefault();
                 }
 
                 @foreach (Item building in buidings)
@@ -85,7 +87,7 @@
 
                             <option value="@item.value" @if (category == item.DisplayName) { <text>
                                     selected="selected"
-                                    </text>      }>
+                                    </text>                     }>
                                 @item.text.ToUpper()
                             </option>
                         }
@@ -97,20 +99,23 @@
                     }
                     @if (shoppingHelper.isShop)
                     {
-                        if (subCategories.Any())
-                        {
-                                <select id="childcategory" name="childcategory" class="selectpicker form-control" data-style="btn-primary">
-                                    @foreach (var item in subCategories)
-                                    {
-                                        <option value="@item.value" @if (subpage == item.DisplayName) { <text>
-                                                selected="selected"
-                                                </text>       }>
-                                            @item.text.ToUpper()
-                                        </option>
-                                    }
-                                </select>
+                        <select id="childcategory" name="childcategory" class="selectpicker form-control" data-style="btn-primary">
+                            @if (subCategories.Any())
+                            {
+                                foreach (var item in subCategories)
+                                {
+                                    <option value="@item.value" @if (subpage == item.DisplayName) { <text>
+                                            selected="selected"
+                                            </text>         }>
+                                        @item.text.ToUpper()
+                                    </option>
+                                }
                             }
+                        </select>
                     }
+                    <input type="hidden" value="@currentPage.Parent.TemplateID.ToString()" name="parentTemplateId" class="selectpicker form-control" />
+                    <input type="hidden" value="@ItemGuids.T11PageTemplate" name="pageTemplateId" class="selectpicker form-control" />
+
                     <button type="submit" class="btn btn-default">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.GoGuidItem))</button>
                 </div>
             </form>
@@ -124,3 +129,12 @@
         </div>
     </div>
 </div>
+@*<script type="text/javascript">
+        $(document).ready(function () {
+            alert("aa");
+            if ('@currentPage.Parent.TemplateID.ToString()' === '@ItemGuids.T11PageTemplate') {
+                alert("bb");
+                $('#subCategory').css('display', 'none');
+            }
+        });
+    </script>*@
