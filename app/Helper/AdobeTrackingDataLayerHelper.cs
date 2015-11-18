@@ -27,11 +27,14 @@ namespace Landmark.Helper
             string buildingName = string.Empty;
 
             MultilistField shopFloorField = Sitecore.Context.Item.Fields["Floor"];
-            if (shopFloorField != null && shopFloorField.TargetIDs.Any())
+            if (shopFloorField != null)
             {
-                var floorid = shopFloorField.TargetIDs.First().ToString();
-                var buildingItem = Factory.GetDatabase("web").GetItem(floorid).Parent;
-                buildingName = buildingItem.Fields["Building Title"].Value;
+                if (shopFloorField.TargetIDs.Any())
+                {
+                    var floorid = shopFloorField.TargetIDs.First().ToString();
+                    var buildingItem = Factory.GetDatabase("web").GetItem(floorid).Parent;
+                    buildingName = buildingItem.Fields["Building Title"].Value;
+                }
                 return buildingName;
             }
             ReferenceField artpieceFloorField = Sitecore.Context.Item.Fields["Floor and Building"];

@@ -210,10 +210,10 @@ namespace Landmark.Helper
         public static String FileFieldSrc(string fieldName, Item item)
         {
             string fileURL = string.Empty;
-            Sitecore.Data.Fields.FileField fileField = item.Fields[fieldName];
+            FileField fileField = item.Fields[fieldName];
             if (fileField != null && fileField.MediaItem != null)
             {
-                Sitecore.Data.Items.MediaItem file = new Sitecore.Data.Items.MediaItem(fileField.MediaItem);
+                MediaItem file = new MediaItem(fileField.MediaItem);
                 fileURL = Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(file));
             }
             return fileURL;
@@ -222,10 +222,10 @@ namespace Landmark.Helper
         public static String ImageFieldSrc(string fieldName, Item item)
         {
             string imageURL = string.Empty;
-            Sitecore.Data.Fields.ImageField imageField = item.Fields[fieldName];
+            ImageField imageField = item.Fields[fieldName];
             if (imageField != null && imageField.MediaItem != null)
             {
-                Sitecore.Data.Items.MediaItem image = new Sitecore.Data.Items.MediaItem(imageField.MediaItem);
+                MediaItem image = new MediaItem(imageField.MediaItem);
                 imageURL = Sitecore.StringUtil.EnsurePrefix('/', Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
             }
             return imageURL;
@@ -264,10 +264,10 @@ namespace Landmark.Helper
         public static string GetFileName(string fieldName, Item item)
         {
             string name = string.Empty;
-            Sitecore.Data.Fields.FileField fileField = item.Fields[fieldName];
+            FileField fileField = item.Fields[fieldName];
             if (fileField != null && fileField.MediaItem != null)
             {
-                Sitecore.Data.Items.MediaItem file = new Sitecore.Data.Items.MediaItem(fileField.MediaItem);
+                MediaItem file = new MediaItem(fileField.MediaItem);
                 name = file.Name;
             }
             return name;
@@ -434,9 +434,10 @@ namespace Landmark.Helper
                 }
             }
             var sliders = GetItemByTemplate(item, ItemGuids.SlideObjectTemplate);
-            if (sliders != null && sliders.Count != 0)
+            if (sliders != null )
             {
-                imageURL = ImageFieldSrc("Slide Image", sliders.FirstOrDefault());
+                if(sliders.Any())
+                    imageURL = ImageFieldSrc("Slide Image", sliders.FirstOrDefault());
             }
             return imageURL;
         }

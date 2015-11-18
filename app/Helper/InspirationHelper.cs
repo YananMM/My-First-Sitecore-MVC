@@ -88,11 +88,15 @@ namespace Landmark.Helper
             foreach (var article in articles)
             {
                 MultilistField brandField = ((MultilistField)article.Fields["Brand"]);
-                if (brandField != null && brandField.TargetIDs!=null && brandField.TargetIDs.Length>0)
+                if (brandField != null)
                 {
-                    var brand = brandField.TargetIDs.FirstOrDefault();
-                    if (_webDb.GetItem(brand) != null)
-                        brands.Add(_webDb.GetItem(brand));
+                    if (brandField.TargetIDs.Any())
+                    {
+                        var brand = brandField.TargetIDs.FirstOrDefault();
+                        if (_webDb.GetItem(brand) != null)
+                            brands.Add(_webDb.GetItem(brand));
+                    }
+                    
                 }
             }
 
@@ -141,11 +145,14 @@ namespace Landmark.Helper
             string tagsClass = string.Empty;
             var tagsField = (MultilistField) item.Fields["Tags"];
 
-            if (tagsField != null && tagsField.TargetIDs.Count() > 0)
+            if (tagsField != null)
             {
-                foreach (var tag in tagsField.TargetIDs)
+                if (tagsField.TargetIDs.Any())
                 {
-                    tagsClass += " gdf-" +_webDb.GetItem(tag).DisplayName.ToLower().Replace(" ","");
+                    foreach (var tag in tagsField.TargetIDs)
+                    {
+                        tagsClass += " gdf-" + _webDb.GetItem(tag).DisplayName.ToLower().Replace(" ", "");
+                    }
                 }
             }
             

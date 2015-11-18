@@ -24,11 +24,15 @@
                 string brandTitle = "";
                 Sitecore.Data.ID brand=new ID();
             Item brandItem = null;
-                if (brandField != null && brandField.TargetIDs != null && brandField.TargetIDs.Length > 0)
+                if (brandField != null)
                 {
-                    brand = brandField.TargetIDs.FirstOrDefault();
+                    if (brandField.TargetIDs.Any())
+                    {
+                        brand = brandField.TargetIDs.FirstOrDefault();}
                     brandItem = Sitecore.Context.Database.GetItem(brand);
                     brandTitle = Sitecore.Context.Database.GetItem(brand).Fields["Brand Title"].Value;
+                    }
+                    
                 }
         }
         @if (brandItem!=null)

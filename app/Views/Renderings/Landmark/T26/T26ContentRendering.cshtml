@@ -101,11 +101,15 @@
                 ID brand= new ID();
                 string alphabet = string.Empty;
                 string brandTitle = string.Empty;
-                if (brandField != null && brandField.TargetIDs != null && brandField.TargetIDs.Length > 0)
+                if (brandField != null)
                 {
-                    brand = brandField.TargetIDs.FirstOrDefault();
-                    alphabet = inspirationHelper.GetAlphabet(brand);
-                    brandTitle = Sitecore.Context.Database.GetItem(brand).Fields["Brand Title"].Value;
+                    if (brandField.TargetIDs.Any())
+                    {
+                        brand = brandField.TargetIDs.FirstOrDefault();
+                        alphabet = inspirationHelper.GetAlphabet(brand);
+                        brandTitle = Sitecore.Context.Database.GetItem(brand).Fields["Brand Title"].Value;
+                    }
+                    
                 }
                 //var brand = ((MultilistField)detailedarticle.Fields["Brand"]).TargetIDs.FirstOrDefault();
                 <div class="gd-promo-box2 @alphabet @inspirationHelper.GetTagsFilter(detailedarticle)">
@@ -156,11 +160,14 @@
                 ID brand = new ID();
                 string alphabet = string.Empty;
                 string brandTitle = string.Empty;
-                if (brandField != null && brandField.TargetIDs != null && brandField.TargetIDs.Length > 0)
+                if (brandField != null)
                 {
-                    brand = brandField.TargetIDs.FirstOrDefault();
-                    alphabet = inspirationHelper.GetAlphabet(brand);
-                    brandTitle = Sitecore.Context.Database.GetItem(brand).Fields["Brand Title"].Value;
+                    if (brandField.TargetIDs.Any())
+                    {
+                        brand = brandField.TargetIDs.FirstOrDefault();
+                        alphabet = inspirationHelper.GetAlphabet(brand);
+                        brandTitle = Sitecore.Context.Database.GetItem(brand).Fields["Brand Title"].Value;
+                    }
                 }
                 <div class="gd-promo-box @alphabet @inspirationHelper.GetTagsFilter(article)">
                     <a href="#"><img src="@imagesrc"></a>

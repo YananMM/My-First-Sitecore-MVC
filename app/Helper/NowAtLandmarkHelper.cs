@@ -28,9 +28,10 @@ namespace Landmark.Helper
             foreach (var refer in LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.ReferenceObjectTemplate))
             {
                 ReferenceField rField = refer.Fields["Reference Item"];
-                if (rField != null && rField.TargetItem != null)
+                if (rField != null)
                 {
-                    articles.Add(rField.TargetItem);
+                    if (rField.TargetItem != null)
+                        articles.Add(rField.TargetItem);
                 }
             }
             articles.Reverse();
