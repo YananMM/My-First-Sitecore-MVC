@@ -35,6 +35,10 @@ namespace Landmark.layouts.Landmark
                 var results =
                     context.EmailSignups.Where(
                         data => data.CreatedOn < toDate.SelectedDate && data.CreatedOn > fromDate.SelectedDate);
+                if (results.Count() == 0)
+                {
+                    Response.Write("No data in selected date.");
+                }
                 List<EmailSignUpCsvModel> signups = new List<EmailSignUpCsvModel>();
                 foreach (var result in results)
                 {
@@ -46,14 +50,18 @@ namespace Landmark.layouts.Landmark
                 {
                     SeparatorChar = '\t', // tab delimited
                     FirstLineHasColumnNames = true, // no column names in first record
-                    FileCultureName = "nl-NL" // use formats used in The Netherlands
+                    // FileCultureName = "nl-NL" // use formats used in The Netherlands
                 };
 
                 CsvContext cc = new CsvContext();
+                var fileName = Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem).Fields["CSV Folder"].Value +
+                           "signups" + toDate.SelectedDate.Date.ToString("yyyyMMdd") + "-" +
+                           fromDate.SelectedDate.Date.ToString("yyyyMMdd") + ".csv";
                 cc.Write(
-                    signups,
-                    Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem).Fields["CSV Folder"].Value + "signups" + toDate.SelectedDate.Date.ToString("yyyyMMdd") + "-" + fromDate.SelectedDate.Date.ToString("yyyyMMdd") + ".csv",
+                    signups, 
+                    fileName,
                     outputFileDescription);
+                Response.WriteFile(fileName);
             }
         }
     }
