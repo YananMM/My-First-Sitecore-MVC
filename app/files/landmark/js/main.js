@@ -1514,7 +1514,7 @@ $(document).ready(function() {
     });
 
 
-    if(isIE8()){
+    if(isIE8()||isIE9()){
       setTimeout(function(){
         $modal.trigger('shown.bs.modal')
       }, 200)
