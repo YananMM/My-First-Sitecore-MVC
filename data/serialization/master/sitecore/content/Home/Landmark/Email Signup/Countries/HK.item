@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {4DCD9494-26D0-4688-B0BA-FEF17693C6EC}
+id: {C38E5304-D7C0-4EE0-9B3C-2C3DFD280050}
 database: master
-path: /sitecore/content/Home/Landmark/Email Signup/Countries/China
+path: /sitecore/content/Home/Landmark/Email Signup/Countries/HK
 parent: {A892C88C-D4DF-48C7-80BC-52FBA809463D}
-name: China
+name: HK
 master: {00000000-0000-0000-0000-000000000000}
 template: {55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}
 templatekey: Text Object
@@ -13,42 +13,42 @@ templatekey: Text Object
 field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
 name: Value
 key: value
-content-length: 5
+content-length: 2
 
-China
+HK
 ----version----
 language: en
 version: 1
-revision: 1a465007-c398-4716-981b-d237bc4b02e6
+revision: 5186967b-66b4-463c-b5ab-300f70d6c34f
 
 ----field----
 field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
 name: Text
 key: text
-content-length: 5
+content-length: 2
 
-China
+HK
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150921T074157Z
+20151119T064841Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-1a465007-c398-4716-981b-d237bc4b02e6
+5186967b-66b4-463c-b5ab-300f70d6c34f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151119T033307:635835007870332687Z
+20151119T064926:635835125669510415Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -59,7 +59,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 55e23bf8-5fc3-4f9b-a842-5b5dc9faebaa
+revision: 6c64fee3-0a1e-4723-b290-fda80cc1434e
 
 ----field----
 field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
@@ -67,7 +67,7 @@ name: Text
 key: text
 content-length: 2
 
-中国
+香港
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -81,7 +81,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151119T064907Z
+20151119T064849Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -95,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-55e23bf8-5fc3-4f9b-a842-5b5dc9faebaa
+6c64fee3-0a1e-4723-b290-fda80cc1434e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151119T064912:635835125524732134Z
+20151119T064901:635835125416605949Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
