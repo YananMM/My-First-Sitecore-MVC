@@ -9,18 +9,18 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}
 templatekey: Text Object
 
+----field----
+field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
+name: Value
+key: value
+content-length: 2
+
+攝影
 ----version----
 language: en
 version: 1
 revision: 23a4129c-4140-4f5d-b736-5c2c2dbfbbb8
 
-----field----
-field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
-name: Value
-key: value
-content-length: 11
-
-Photography
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -54,13 +54,6 @@ language: zh-CN
 version: 1
 revision: b41d8d1b-ef08-4115-88bc-457f23679e3c
 
-----field----
-field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
-name: Value
-key: value
-content-length: 2
-
-摄影
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -108,13 +101,6 @@ language: zh-HK
 version: 1
 revision: f0d8761a-eb76-41b1-88ad-4bd99a66b08a
 
-----field----
-field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
-name: Value
-key: value
-content-length: 2
-
-攝影
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner

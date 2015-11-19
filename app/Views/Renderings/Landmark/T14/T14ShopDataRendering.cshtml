@@ -70,7 +70,7 @@
 {
     LinkField link = currentItem.Fields["Official Website Url"];
 
-    <a href="@link.Url" class="gd-link-brief" target="@LandmarkHelper.GetLinkTarget(currentItem, "Official Website Url")">
+    <a href="@link.Url" class="gd-link-brief" target="@link.Target">
         @Html.Sitecore().Field("Glossary Value", Factory.GetDatabase("web").GetItem(ItemGuids.OfficialWebsiteItem)).ToString().ToUpper() <span class="icomoon-chevron-small-right"></span>
     </a>
 }

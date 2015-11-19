@@ -954,6 +954,7 @@ jQuery(function ($) {
                   $pageTemplateId = $('input[name=pageTemplateId]', form),
                   $category = $('select[name=category]', form),
                   $childcategory = $('select[name=childcategory]', form);
+
                 if ($parentTemplateId.val() === $pageTemplateId.val()) {
                     $childcategory.selectpicker('hide');
                     $childcategory.attr('disabled', 'disabled');

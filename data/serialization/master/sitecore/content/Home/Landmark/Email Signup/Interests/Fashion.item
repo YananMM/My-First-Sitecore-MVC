@@ -9,18 +9,18 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}
 templatekey: Text Object
 
+----field----
+field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
+name: Value
+key: value
+content-length: 2
+
+時裝
 ----version----
 language: en
 version: 1
 revision: 8586c69b-4465-4b3b-aba3-b0d4e23c4ded
 
-----field----
-field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
-name: Value
-key: value
-content-length: 7
-
-Fashion
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -54,13 +54,6 @@ language: zh-CN
 version: 1
 revision: aadbd140-bede-431e-9d47-e3b39bbcd1a0
 
-----field----
-field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
-name: Value
-key: value
-content-length: 2
-
-时装
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -108,13 +101,6 @@ language: zh-HK
 version: 1
 revision: dd8dd4e8-eb39-4615-ab4c-8732df8a3bb3
 
-----field----
-field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
-name: Value
-key: value
-content-length: 2
-
-時裝
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner

@@ -28,7 +28,7 @@
                     @{
                         LinkField link = currentItem.Fields["Button Link"];
                     }
-                    <a href="@link.Url" target="@LandmarkHelper.GetLinkTarget(currentItem, "Button Link")" class="gd-button gd-button-reversed" type="button">@Html.Sitecore().Field("Button Text")</a>
+                    <a href="@link.Url" target="@link.Target" class="gd-button gd-button-reversed" type="button">@Html.Sitecore().Field("Glossary Value", discoverMoreItem)</a>
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
                                 @{
                 LinkField leftlink = item.Fields["Left Link"];
                                 }
-                                <a href="@leftlink.Url" target="@LandmarkHelper.GetLinkTarget(item, "Left Link")" class="gd-hover-img">
+                                <a href="@leftlink.Url" target="@leftlink.Target" class="gd-hover-img">
                                     <div class="gd-hover-img-area">
                                         <div class="gd-hover-img-mask"></div>
                                         <img data-src="@Html.Sitecore().ImageFieldSrc("Left Image", item)">
@@ -64,7 +64,7 @@
                                 @{
                 LinkField rightlink = item.Fields["Right Link"];
                                 }
-                                <a href="@rightlink.Url" target="@LandmarkHelper.GetLinkTarget(item, "Right Link")" class="gd-hover-img">
+                                <a href="@rightlink.Url" target="@rightlink.Target" class="gd-hover-img">
                                     <div class="gd-hover-img-area">
                                         <div class="gd-hover-img-mask"></div>
                                         <img data-src="@Html.Sitecore().ImageFieldSrc("Right Image", item)">
@@ -99,7 +99,7 @@
                     }
                     <div @if (left.Checked) { <text>
                          class="gd-promotion-block clearfix"
-                         </text>                                       } else { <text> class="gd-promotion-block2 clearfix" </text>                                      }>
+                         </text>                                        } else { <text> class="gd-promotion-block2 clearfix" </text>                                       }>
                         <div class="gd-promotion-block-img" style="background-image: url(@Html.Sitecore().ImageFieldSrc("Image",item))" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Image",item)">
                         </div>
                         <div class="gd-promotion-block-text">
@@ -109,7 +109,7 @@
                                 @{
                 LinkField onelink = item.Fields["Link"];
                                 }
-                                <a href="@onelink.Url" target="@LandmarkHelper.GetLinkTarget(item, "Link")" class="gd-button gd-button-transparent" type="button">@Html.Sitecore().Field("Glossary Value", discoverMoreItem)</a>
+                                <a href="@onelink.Url" target="@onelink.Target" class="gd-button gd-button-transparent" type="button">@Html.Sitecore().Field("Glossary Value", discoverMoreItem)</a>
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,8 @@
                         <h3>@Html.Sitecore().Field("Title", item)</h3>
                         @Html.Sitecore().Field("Description", item)
                         <a>
-                            @Html.Sitecore().Field("Glossary Value", discoverMoreItem)<span class="icomoon-chevron-small-right"></span></a>
+                            @Html.Sitecore().Field("Glossary Value", discoverMoreItem)<span class="icomoon-chevron-small-right"></span>
+                        </a>
 
                         <div class="gd-slick-slider-wrapper">
                             <div class="slider variable-width gd-slick-slider">
@@ -165,7 +166,7 @@
 
                             @foreach (var tab in tabs)
                             {
-                                <li @if (i == 1) { <text> class="active" </text>                    }><a href="#@tab.ID.ToString().Trim('{').Trim('}')" data-toggle="tab">@tab.Fields["Name"]</a></li>
+                                <li @if (i == 1) { <text> class="active" </text>                     }><a href="#@tab.ID.ToString().Trim('{').Trim('}')" data-toggle="tab">@tab.Fields["Name"]</a></li>
 i++;
                             }
                         </ul>
@@ -177,11 +178,11 @@ i++;
                                 <a class="tab-pane-switch" href="javascript:;">
                                     @tab.Fields["Name"].ToString().ToUpper()<span @if (j == 1) { <text>
                                                                                   class="on"
-                                                                                  </text>           } else { <text> class="off" </text>           }></span>
+                                                                                  </text>            } else { <text> class="off" </text>            }></span>
                                 </a>
                                 <div @if (j == 1) { <text>
                                      class="tab-pane fade in active"
-                                     </text>            } else { <text> class="tab-pane fade" </text>           } id="@tab.ID.ToString().Trim('{').Trim('}')">
+                                     </text>             } else { <text> class="tab-pane fade" </text>            } id="@tab.ID.ToString().Trim('{').Trim('}')">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <img data-src="@Html.Sitecore().ImageFieldSrc("Image",tab)" alt="">
@@ -190,7 +191,8 @@ i++;
                                             <div class="intro-wrapper">
                                                 <p>
                                                     @Html.Sitecore().Field("Description", tab)<br><a>
-                                                        @Html.Sitecore().Field("Glossary Value", discoverMoreItem)<span class="icomoon-chevron-small-right"></span></a>
+                                                        @Html.Sitecore().Field("Glossary Value", discoverMoreItem)<span class="icomoon-chevron-small-right"></span>
+                                                    </a>
                                                 </p>
                                             </div>
                                         </div>

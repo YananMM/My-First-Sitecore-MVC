@@ -10,6 +10,13 @@ template: {55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}
 templatekey: Text Object
 
 ----field----
+field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
+name: Value
+key: value
+content-length: 7
+
+只透過電郵接收
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -21,13 +28,6 @@ language: en
 version: 1
 revision: 80ead0ac-bc40-4ccc-8a6d-9fb56ade3968
 
-----field----
-field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
-name: Value
-key: value
-content-length: 10
-
-Email only
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -61,13 +61,6 @@ language: zh-CN
 version: 1
 revision: b2b47b25-6f2a-4f93-9983-569074c499be
 
-----field----
-field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
-name: Value
-key: value
-content-length: 7
-
-只通过电邮接收
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -115,13 +108,6 @@ language: zh-HK
 version: 1
 revision: 96845cc7-05c0-4f55-bb65-00f29e823a13
 
-----field----
-field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
-name: Value
-key: value
-content-length: 7
-
-只透過電郵接收
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner

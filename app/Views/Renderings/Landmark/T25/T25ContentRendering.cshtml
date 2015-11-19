@@ -47,7 +47,7 @@
                                             @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.WebsiteItem)).ToString().ToUpper()
                                         </th>
                                         <td>
-                                            <a href="@website.Url" target="@LandmarkHelper.GetLinkTarget(currentItem, "Cover Website")" class="gd-hover-img">@website.Url</a>
+                                            <a href="@website.Url" target="@website.Target class="gd-hover-img">@website.Url</a>
                                         </td>
                                     </tr>
                                 }

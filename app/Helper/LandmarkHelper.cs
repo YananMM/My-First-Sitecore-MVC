@@ -190,11 +190,11 @@ namespace Landmark.Helper
             string[] newpaths = new string[paths.Length];
             for (int i = 0; i < paths.Length; i++)
             {
-                if(paths[i].Contains(" "))
-                    newpaths[i] =  "#" + paths[i] + "#";
+                if (paths[i].Contains(" "))
+                    newpaths[i] = "#" + paths[i] + "#";
                 else
                 {
-                    newpaths[i] =   paths[i] ;
+                    newpaths[i] = paths[i];
                 }
             }
             return string.Join("/", newpaths);
@@ -423,7 +423,7 @@ namespace Landmark.Helper
         {
             string imageURL = "";
             ImageField imageField = item.Fields["Article Callout Image"];
-            if (imageField != null )
+            if (imageField != null)
             {
                 if (imageField.MediaItem != null)
                 {
@@ -434,9 +434,9 @@ namespace Landmark.Helper
                 }
             }
             var sliders = GetItemByTemplate(item, ItemGuids.SlideObjectTemplate);
-            if (sliders != null )
+            if (sliders != null)
             {
-                if(sliders.Any())
+                if (sliders.Any())
                     imageURL = ImageFieldSrc("Slide Image", sliders.FirstOrDefault());
             }
             return imageURL;
@@ -466,7 +466,7 @@ namespace Landmark.Helper
         {
             String target = "_self";
             LinkField linkField = item.Fields[field];
-            if (linkField.LinkType == "external" || linkField.Target=="New Browser")
+            if (linkField.LinkType == "external" || linkField.Target == "New Browser")
             {
                 target = "_blank";
             }
@@ -522,13 +522,12 @@ namespace Landmark.Helper
             LinkField linkField = item.Fields[linkName];
             if (linkField != null)
             {
-                if (linkField.TargetItem!=null)
+                if (linkField.TargetItem != null || !string.IsNullOrEmpty(linkField.Url))
                 {
-                    if (linkField.LinkType == "external" || linkField.Target == "New Browser")
+                    if (linkField.Target == "New Browser")
                         target = "_blank";
                 }
             }
-            
             return target;
         }
 

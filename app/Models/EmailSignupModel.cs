@@ -121,6 +121,18 @@ namespace Landmark.Models
         public string Interests { get; set; }
 
         /// <summary>
+        /// Gets or sets the gender.
+        /// </summary>
+        /// <value>The gender.</value>
+        public string Gender { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether [opt information].
+        /// </summary>
+        /// <value><c>true</c> if [opt information]; otherwise, <c>false</c>.</value>
+        public bool OptIn { get; set; }
+
+        /// <summary>
         /// Gets or sets the created configuration.
         /// </summary>
         /// <value>The created configuration.</value>

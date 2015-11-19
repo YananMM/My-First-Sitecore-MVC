@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {11AA5D40-F4AD-4220-96D1-D432F270AC20}
+id: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Page/T34 Page/Hotel Data/Official Website Label
-parent: {29B02AF7-D78A-4F1F-9FAB-E952458FACAF}
-name: Official Website Label
+path: /sitecore/templates/User Defined/Landmark/Object/Text Object/Text Data/Text
+parent: {F18F2B43-6767-4CBB-A4B1-E43E27E2AE1B}
+name: Text
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -22,11 +22,11 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-400
+200
 ----version----
 language: en
 version: 1
-revision: 58bab0e5-a1b1-4974-9690-a45f821c1e85
+revision: 7c9662bb-6fcc-43c0-9e06-218f259e64cd
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -34,21 +34,21 @@ name: __Created
 key: __created
 content-length: 16
 
-20150819T031417Z
+20151119T033255Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-58bab0e5-a1b1-4974-9690-a45f821c1e85
+7c9662bb-6fcc-43c0-9e06-218f259e64cd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151112T141811Z
+20151119T033255:635835007755376112Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

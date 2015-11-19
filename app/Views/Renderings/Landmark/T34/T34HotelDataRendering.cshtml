@@ -25,7 +25,7 @@
                 {
                     <tr>
                         <th>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.EmailItem)).ToString().ToUpper()</th>
-                        <td><a href="@hotelEmail.Url">@hotelEmail.Url.Replace("mailto:","")</a></td>
+                        <td><a href="@hotelEmail.Url">@hotelEmail.Url.Replace("mailto:", "")</a></td>
                     </tr>
                 }
             }
@@ -47,6 +47,6 @@
 @{
     LinkField officialWebLink = currentItem.Fields["Official Website Url"];
 }
-<a href="@officialWebLink.Url" target="@LandmarkHelper.GetLinkTarget(currentItem, "Official Website Url")" class="gd-link-brief">
-    @Html.Sitecore().Field("Official Website Label") <span class="icomoon-chevron-small-right"></span>
+<a href="@officialWebLink.Url" target="@officialWebLink.Target" class="gd-link-brief">
+    @officialWebLink.Text <span class="icomoon-chevron-small-right"></span>
 </a>
