@@ -117,10 +117,14 @@ namespace Landmark.Service
             bool result = false;
             if(Context.Request.Browser.Type.ToLower().Contains("internetexplorer"))
             {
-                if (Context.Request.Browser.MajorVersion == 8)
+                if (Context.Request.Browser.MajorVersion < 9 )
                 {
                     result = true;
                 }
+            }
+            if (Context.Request.Browser.Type.ToLower().Contains("ie8"))
+            {
+                    result = true;
             }
             return result;
         }
