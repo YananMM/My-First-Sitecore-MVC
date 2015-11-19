@@ -11407,10 +11407,11 @@ h4 a:active {
   display: block;
   left: 0;
   margin: 0 auto;
+  min-height: 100%;
+  min-width: 100%;
   position: absolute;
   right: 0;
   top: 0;
-  width: 100%;
 }
 .gd-mainimage .carousel-inner .item > .carousel-caption {
   background-color: #272727;
@@ -16459,4 +16460,3 @@ input[type="checkbox"] {
   font-size: 12px;
   font-style: normal;
 }
-/*# sourceMappingURL=style.css.map */

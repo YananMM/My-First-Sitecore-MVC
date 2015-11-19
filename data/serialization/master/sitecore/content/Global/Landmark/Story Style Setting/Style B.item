@@ -9,11 +9,6 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}
 templatekey: Text Object
 
-----version----
-language: en
-version: 1
-revision: aec5c420-68be-4651-be9c-f65b91bb9a0e
-
 ----field----
 field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
 name: Value
@@ -21,6 +16,11 @@ key: value
 content-length: 7
 
 Style B
+----version----
+language: en
+version: 1
+revision: aec5c420-68be-4651-be9c-f65b91bb9a0e
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -54,13 +54,6 @@ language: zh-CN
 version: 1
 revision: f2e08894-78f5-4160-8d9f-1ca736fa8804
 
-----field----
-field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
-name: Value
-key: value
-content-length: 7
-
-Style B
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -108,13 +101,6 @@ language: zh-HK
 version: 1
 revision: 1524e36e-e649-4406-8a1a-7d7bed550118
 
-----field----
-field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
-name: Value
-key: value
-content-length: 7
-
-Style B
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
