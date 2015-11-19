@@ -100,7 +100,8 @@ namespace Landmark.Service
                 select new Location
                 {
                     id = location.Fields["Building Svg Id"].Value,
-                    pin = "hide",
+                    title = IfBrowserIsIE8() ? location.Fields["Building Title"].Value : "",
+                    pin = IfBrowserIsIE8() ? "green" :"hide",
                     x = location.Fields["LocationX"].Value,
                     y = location.Fields["LocationY"].Value
                 }).ToList();
