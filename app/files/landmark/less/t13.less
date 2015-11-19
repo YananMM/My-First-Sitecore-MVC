@@ -75,8 +75,13 @@
       }
       a.brand-box {
         &:hover {
+          img{
+          opacity: 0;
+          filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+          }
           &:after {
             bottom: 0;
+            text-align: center;
             background-color: #FFFFFF;
             color: @brand-golden;
             content: attr(title);
