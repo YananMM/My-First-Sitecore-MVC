@@ -11400,19 +11400,6 @@ h4 a:active {
     width: 100%;
   }
 }
-.gd-mainimage .carousel-inner .item > .carousel-image-ie8 {
-  overflow: hidden;
-}
-.gd-mainimage .carousel-inner .item > .carousel-image-ie8 img {
-  display: block;
-  left: 0;
-  margin: 0 auto;
-  min-height: 100%;
-  min-width: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
 .gd-mainimage .carousel-inner .item > .carousel-caption {
   background-color: #272727;
   position: relative;
@@ -16460,3 +16447,4 @@ input[type="checkbox"] {
   font-size: 12px;
   font-style: normal;
 }
+/*# sourceMappingURL=style.css.map */
