@@ -1781,7 +1781,7 @@ $(document).ready(function() {
   if ($('.gd-carousel-info').length) {
     if ( isIE8() ) {
       $('.gd-carousel-info .carousel-image').each(function() {
-        $(this).css({
+        $(this).addClass('carousel-image-ie8').css({
           'background-image': 'url(' + $(this).data('bgsrc') + ')',
           'background-repeat': 'no-repeat',
           'background-size': 'cover'
