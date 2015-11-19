@@ -25,7 +25,7 @@
         <div class="gd-brief-heading">
             <h3>@Html.Sitecore().Field("Content Title") </h3>
         </div>
-        <div class="gd-brief-body gd-longarticle">
+        <div class="gd-brief-body gd-longarticle" data-text-on="@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ReadMoreItem)) +" data-text-off="@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.LessItem)) -">
             <p>
                 @Html.Sitecore().Field("Content Description")
             </p>
