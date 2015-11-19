@@ -44,29 +44,36 @@
                         </div>
                         @if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
                         {
-                            <div class="col-sm-4 text-right">
-                                <div>
-                                    <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
-                                        <span class="icomoon-sound-alt"></span>
-                                        @Html.Sitecore().Field("Commentary Alt")
-                                    </a>
-                                </div>
-                                @*<div>
+                            if (!string.IsNullOrEmpty(LandmarkHelper.FileFieldSrc("Commentary", Sitecore.Context.Item)))
+                            {
+                                <div class="col-sm-4 text-right">
+                                    <div>
+                                        <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
+                                            <span class="icomoon-sound-alt"></span>
+                                            @Html.Sitecore().Field("Commentary Alt")
+                                        </a>
+                                    </div>
+
+                                    @*<div>
                                     <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary Alt", Sitecore.Context.Item)">
                                         <span class="icomoon-sound-alt"></span>
                                         @Html.Sitecore().Field("Commentary Alt")
                                     </a>
                                 </div>*@
-                            </div>
+                                </div>
+                            }
                         }
                         else
                         {
-                            <div class="col-sm-4 text-right">
+                            if (!string.IsNullOrEmpty(LandmarkHelper.FileFieldSrc("Commentary", Sitecore.Context.Item)))
+                            {
+                             <div class="col-sm-4 text-right">
                                 <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
                                     <span class="icomoon-sound-alt"></span>
                                     @Html.Sitecore().Field("Commentary Alt")
                                 </a>
                             </div>
+                            }
                         }
                     </div>
                     <div class="gd-artplace-details row">
