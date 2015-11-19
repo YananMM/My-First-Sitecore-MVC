@@ -6,6 +6,8 @@ using Sitecore.Configuration;
 using Sitecore.Data;
 using Sitecore.Mvc.Helpers;
 using Sitecore.Data.Items;
+using Sitecore.Data.Managers;
+using Sitecore.Globalization;
 using Sitecore.Mvc.Presentation;
 
 namespace Landmark.Helper

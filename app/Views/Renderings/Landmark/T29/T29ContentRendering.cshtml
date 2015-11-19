@@ -3,6 +3,7 @@
 @using Sitecore.Configuration
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
+@using Sitecore.Globalization
 @model RenderingModel
 @{
     ArtTourHelper helper = new ArtTourHelper();
@@ -46,6 +47,12 @@
                         {
                             if (!string.IsNullOrEmpty(LandmarkHelper.FileFieldSrc("Commentary", Sitecore.Context.Item)))
                             {
+                                Item item = Sitecore.Context.Item;
+                                Language language = Sitecore.Context.Item.Languages.FirstOrDefault(l => l.Name == "zh-CN");
+                                if (language != null)
+                                {
+                                    item = Sitecore.Context.Database.GetItem(item.ID, language);
+                                }
                                 <div class="col-sm-4 text-right">
                                     <div>
                                         <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
@@ -54,12 +61,12 @@
                                         </a>
                                     </div>
 
-                                    @*<div>
-                                    <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary Alt", Sitecore.Context.Item)">
+                                    <div>
+                                    <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", item)">
                                         <span class="icomoon-sound-alt"></span>
-                                        @Html.Sitecore().Field("Commentary Alt")
+                                        @Html.Sitecore().Field("Commentary Alt",item)
                                     </a>
-                                </div>*@
+                                </div>
                                 </div>
                             }
                         }
