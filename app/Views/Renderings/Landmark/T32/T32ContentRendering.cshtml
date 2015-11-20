@@ -40,11 +40,12 @@
           
         <div class="gd-controls-m visible-xs">
                     <select class="form-control">
-                        <option value="#">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem))</option>
+                        <option value="?type">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem))</option>
                         @foreach (var type in types)
                         {
-                            if(Int32.Parse(type.count)>0)
-                                {<option value="">@type.value (@type.count)</option>}
+                            if (Int32.Parse(type.count) > 0)
+                            {
+                            <option value="?type=@type.value">@type.value (@type.count)</option>}
                         }
                     </select>
         </div>
