@@ -291,9 +291,9 @@ namespace Landmark.Helper
             var t4Pages = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.NowAtLandmarkItem, ItemGuids.T4PageTemplate);
             var t27Pages = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.MonthlyExclusivePage, ItemGuids.T27Page);
             var t23PagesAB = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage,
-                ItemGuids.T23PageTemplate);
+                ItemGuids.T23PageABTemplate);
             var t23PageCD = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage,
-                ItemGuids.T23PageCDTemplate);
+                ItemGuids.T23PageCTemplate);
             var t25pages = GetItemsByRootAndTemplate(ItemGuids.AroundCentralItem, ItemGuids.T25PageTemplate);
             var allArticles = t4Pages.Union(t27Pages).Union(t23PagesAB).Union(t23PageCD).Union(t25pages).ToList();
             return allArticles;

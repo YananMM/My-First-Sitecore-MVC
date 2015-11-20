@@ -54,7 +54,7 @@
             }
 
             @{
-        if (currentItem.TemplateID.ToString() == ItemGuids.T23PageTemplate || currentItem.TemplateID.ToString() == ItemGuids.T23PageCDTemplate)
+        if (currentItem.TemplateID.ToString() == ItemGuids.T23PageABTemplate || currentItem.TemplateID.ToString() == ItemGuids.T23PageCTemplate)
         {
             var setting = helper.GetStorySetting(Sitecore.Context.Item);
             <p @if (setting != StorySetting.StyleCd) { <text>

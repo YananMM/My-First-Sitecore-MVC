@@ -27,8 +27,8 @@ namespace Landmark.Helper
         public List<Item> GetAllStories()
         {
             List<Item> stories = new List<Item>();
-            var storiesAB = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage, ItemGuids.T23PageTemplate);
-            var storiesCD = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage, ItemGuids.T23PageCDTemplate);
+            var storiesAB = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage, ItemGuids.T23PageABTemplate);
+            var storiesCD = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage, ItemGuids.T23PageCTemplate);
             stories.AddRange(storiesAB);
             stories.AddRange(storiesCD);
             return stories;

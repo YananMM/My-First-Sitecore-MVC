@@ -183,9 +183,9 @@ namespace Landmark.Helper
             if (type == "story")
             {
                 var t23PagesAB = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage,
-                    ItemGuids.T23PageTemplate);
+                    ItemGuids.T23PageABTemplate);
                 var t23PageCD = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage,
-                    ItemGuids.T23PageCDTemplate);
+                    ItemGuids.T23PageCTemplate);
 
                 allItems = t23PagesAB.Union(t23PageCD).ToList();
             }
