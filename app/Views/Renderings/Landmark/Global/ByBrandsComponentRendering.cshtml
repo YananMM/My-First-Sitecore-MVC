@@ -7,11 +7,21 @@
     ShoppingHelper shoppingHelper = new ShoppingHelper();
     string[] alphabetsStrings = new[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
     Item allbrandsItem = Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage);
+
+    Item shopping = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
+    string query = string.Format("fast:{0}//*[{1}]", shopping.Paths.FullPath, "@@TemplateId='" + ItemGuids.T14ShopDetailsTemplate + "'");
+    List<Item> brandsItems = Sitecore.Context.Database.SelectItems(query).ToList();
+    string firstLetters = "";
+    foreach (Item brand in brandsItems)
+    {
+        firstLetters += brand.DisplayName[0];
+    }
+    firstLetters = firstLetters.ToLower();
 }
 
 @for (int i = 0; i < alphabetsStrings.Length; i++)
 {
-    if (shoppingHelper.IfBrandsAlphabetValid(alphabetsStrings[i]))
+    if (firstLetters.Contains(alphabetsStrings[i]))
     {
         string href = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(allbrandsItem)) + "#" + alphabetsStrings[i].ToLower();
         <li><a href="@href">@alphabetsStrings[i].ToUpper()</a></li>
@@ -21,4 +31,3 @@
         <li class="disabled">@alphabetsStrings[i].ToUpper()</li>
     }
 }
-
