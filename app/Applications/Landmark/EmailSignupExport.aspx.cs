@@ -61,7 +61,11 @@ namespace Landmark.layouts.Landmark
                     signups, 
                     fileName,
                     outputFileDescription);
-                Response.WriteFile(fileName);
+
+                Response.ContentType = "text/csv";
+                Response.AppendHeader("Content-Disposition", "attachment; filename=" + fileName);
+                Response.BinaryWrite(File.ReadAllBytes(fileName));
+                Response.End();
             }
         }
     }

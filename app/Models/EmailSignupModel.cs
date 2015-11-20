@@ -343,7 +343,8 @@ namespace Landmark.Models
             InterestSports      = interests.Contains(predefined[10]) ? "Yes" : "No";
             InterestTravelling  = interests.Contains(predefined[11]) ? "Yes" : "No";
             InterestSocialResponsibility = interests.Contains(predefined[12]) ? "Yes" : "No";
-            InterestOthers = model.Interest.Split(',').Except(predefined).First();
+            var others = interests.Except(predefined);
+            InterestOthers = others.Any() ? others.First() : null;
         }
     }
 }
