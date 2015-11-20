@@ -47,7 +47,28 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 129828b4-516a-4af9-ac7a-cc46dab2db43
+revision: 491ea6b2-fc19-4874-bab5-64d4dae0a221
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 35
+
+MOYNAT Says ‘Clutch It If You Can!’
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Subheadline
+key: article subheadline
+content-length: 0
+
+
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 0
+
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
@@ -69,27 +90,6 @@ Mon to Sat<br>
 <p>Sun &amp; Public holidays<br>
 11:00am-7:00pm&nbsp; </p>
 ----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 35
-
-MOYNAT Says ‘Clutch It If You Can!’
-----field----
-field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
-name: Image Title
-key: image title
-content-length: 0
-
-
-----field----
-field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
-name: Article Intro
-key: article intro
-content-length: 0
-
-
-----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -109,14 +109,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-129828b4-516a-4af9-ac7a-cc46dab2db43
+491ea6b2-fc19-4874-bab5-64d4dae0a221
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T022030Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -127,8 +127,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 7d20aeeb-258b-44b1-ba4a-e4da95faf848
+revision: f675e089-1510-4a8a-8aa3-bb9c790873ae
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 15
+
+MOYNAT手拿包令人爱不释手
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
@@ -148,13 +155,6 @@ content-length: 700
 早上10时30分至晚上7时30分</p>
 <p>星期日及公众假期<br>
 早上11时至晚上7时 </p>
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 15
-
-MOYNAT手拿包令人爱不释手
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -189,14 +189,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7d20aeeb-258b-44b1-ba4a-e4da95faf848
+f675e089-1510-4a8a-8aa3-bb9c790873ae
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T023517Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -207,8 +207,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 99943030-ece4-491b-a065-c7e400a8f923
+revision: 1d1a1dfc-7067-4f52-b647-f5efb97fd0c4
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 15
+
+MOYNAT手提包令人愛不釋手
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
@@ -228,13 +235,6 @@ content-length: 699
 早上10時30分至晚上7時30分</p>
 <p>星期日及公眾假期<br>
 早上11時至晚上7時</p>
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 15
-
-MOYNAT手提包令人愛不釋手
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -269,14 +269,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-99943030-ece4-491b-a065-c7e400a8f923
+1d1a1dfc-7067-4f52-b647-f5efb97fd0c4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T022054Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

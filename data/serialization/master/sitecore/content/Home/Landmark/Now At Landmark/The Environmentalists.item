@@ -61,8 +61,29 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: cb4f51bc-09a9-48d0-bff3-78494d01707a
+revision: 6790d6e6-bebf-4a53-a11f-1eba36b35ff0
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 21
+
+The Environmentalists
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Subheadline
+key: article subheadline
+content-length: 0
+
+
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 85
+
+Meet four individuals on the front line of tackling Hong Kong’s environmental plight 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
@@ -88,27 +109,6 @@ content-length: 2841
 <p>“When we first started doing clean-ups in 2000, we had about 40 people. Last year, we had over 50,000 volunteers,” Marion says. Hong Kong Cleanup also has broader educational value. “The easiest thing an individual can do is reduce plastic waste. My favourite message is: reduce your disposables.”  </p>
 
 ----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 21
-
-The Environmentalists
-----field----
-field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
-name: Image Title
-key: image title
-content-length: 0
-
-
-----field----
-field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
-name: Article Intro
-key: article intro
-content-length: 85
-
-Meet four individuals on the front line of tackling Hong Kong’s environmental plight 
-----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -128,14 +128,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cb4f51bc-09a9-48d0-bff3-78494d01707a
+6790d6e6-bebf-4a53-a11f-1eba36b35ff0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T123500Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -146,8 +146,29 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 69790f5a-0b92-4eb1-944d-3e0424cf605e
+revision: bca5f6d4-da39-4a96-ad8a-f793152429d0
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 4
+
+环保群英
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Subheadline
+key: article subheadline
+content-length: 0
+
+
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 34
+
+四个来自不同背景的人，一起走在环保的最前线，力求改善香港的环境问题。
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
@@ -164,27 +185,6 @@ content-length: 1045
 <p>2003年秋季晴朗的一天，Nissa Marion来到西贡大浪湾海滩，眼前景象却吓了她一跳。她说：「那里垃圾之多实在叫我吃惊。」这次经历令Nissa更关心环保问题，并积极投入一年一度的「清洁香港」行动。这个活动召集义工一起清理海滩和郊野公园的垃圾，从而提高人们对城市垃圾危机的关注。 </p>
 <p>Nissa说：「2000年我们首次举办清洁活动时，只有大约四十位参加者，去年志愿者人数却已超过五万人。」「清洁香港」行动还有更广泛的教育意义：「每一个人都可由自己做起，减少制造塑料垃圾。我个人最喜欢的标语是：减少使用用完即弃物品。」
 </p>
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 4
-
-环保群英
-----field----
-field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
-name: Image Title
-key: image title
-content-length: 0
-
-
-----field----
-field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
-name: Article Intro
-key: article intro
-content-length: 34
-
-四个来自不同背景的人，一起走在环保的最前线，力求改善香港的环境问题。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -219,14 +219,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-69790f5a-0b92-4eb1-944d-3e0424cf605e
+bca5f6d4-da39-4a96-ad8a-f793152429d0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T023517Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -237,8 +237,29 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 6a193073-c036-4a12-a502-eab4a11e06d5
+revision: 07bf77e6-de1a-4254-b794-00618037156f
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 4
+
+環保群英
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Subheadline
+key: article subheadline
+content-length: 0
+
+
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 34
+
+ 四個來自不同背景的人，都走在環保的最前線，力求改善香港的環境問題。
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
@@ -254,27 +275,6 @@ content-length: 1032
 <p>他指出：「我們說的是享用公共空間，這並非只是狹義地指公園，而是包括街道和行人路。現時我們的焦點是推廣在城市步行的概念、，跟海洋有更密切的接觸，以及如何保衞生態環境棲息地。」</p>
 <p>2003年秋季晴朗的一天，Nissa Marion來到西貢大浪灣海灘，卻被眼前景象嚇了一跳。她說：「那裏垃圾之多實在叫我吃驚。」這次經歷令Nissa更關心環保問題，並積極投入一年一度的「清潔香港」行動。這個活動召集義工一起清理海灘和郊野公園的垃圾，從而提高公眾對城市垃圾危機的關注。</p>
 <p>Nissa說：「2000年我們首次舉辦清潔活動時，只有大約四十位參加者，去年義工人數卻已超越五萬人。」「清潔香港」行動還有更廣闊的教育意義：「每一個人都可由自己做起，減少製造塑膠廢物。我個人最喜歡的標語是：減少使用用完即棄物品。」</p>
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 4
-
-環保群英
-----field----
-field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
-name: Image Title
-key: image title
-content-length: 0
-
-
-----field----
-field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
-name: Article Intro
-key: article intro
-content-length: 34
-
- 四個來自不同背景的人，都走在環保的最前線，力求改善香港的環境問題。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -309,14 +309,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6a193073-c036-4a12-a502-eab4a11e06d5
+07bf77e6-de1a-4254-b794-00618037156f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T022522Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

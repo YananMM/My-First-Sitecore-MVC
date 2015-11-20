@@ -40,13 +40,6 @@
             if (sublineVersionsField.Value.Equals(ItemGuids.TwoNumbersTwoCaptionsTextLink))
             {
                 title = item.Fields["Slide Numbers Text Title"].Value;
-                if (string.IsNullOrEmpty(title))
-                {
-                    if (referenceField.TargetItem != null)
-                    {
-                        title = referenceField.TargetItem.Fields["Article Headline 2"].Value;
-                    }
-                }
             }
             else
             {

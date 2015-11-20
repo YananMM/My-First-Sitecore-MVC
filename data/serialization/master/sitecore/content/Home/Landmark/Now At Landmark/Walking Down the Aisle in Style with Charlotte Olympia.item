@@ -54,7 +54,21 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: d363e9df-107a-4f30-8fc2-2b0e530f4b96
+revision: 03a3e80b-af06-4492-b1b8-b94d90cde4c2
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 54
+
+Walking Down the Aisle in Style with Charlotte Olympia
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Subheadline
+key: article subheadline
+content-length: 0
+
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
@@ -70,20 +84,6 @@ content-length: 1254
 <p>Address: Shop 221, 2/F, LANDMARK ATRIUM </p>
 <p>Telephone: 2142 9008 </p>
 <p>Opening Hours: Daily 10:30am-7:30pm</p>
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 54
-
-Walking Down the Aisle in Style with Charlotte Olympia
-----field----
-field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
-name: Image Title
-key: image title
-content-length: 0
-
-
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -104,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d363e9df-107a-4f30-8fc2-2b0e530f4b96
+03a3e80b-af06-4492-b1b8-b94d90cde4c2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T123500Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -122,8 +122,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 40b864c0-f856-4790-babf-87543869e27b
+revision: 5599229e-5519-4c07-8dc8-ce177191f1c1
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 28
+
+Charlotte Olympia伴您优美走进人生新阶段
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
@@ -138,13 +145,6 @@ content-length: 583
 <p>地址：置地广场中庭2楼221号铺</p>
 <p>电话：2142 9008</p>
 <p>营业时间：每日早上10时30分至晚上7时30分</p>
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 28
-
-Charlotte Olympia伴您优美走进人生新阶段
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -179,14 +179,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-40b864c0-f856-4790-babf-87543869e27b
+5599229e-5519-4c07-8dc8-ce177191f1c1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T023517Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -197,8 +197,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: aacb2c98-7645-48c0-8033-8f88a4a36487
+revision: 38f7eeea-0600-4588-924c-b49ea75f3170
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 28
+
+Charlotte Olympia伴您優美走進人生新階段
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
@@ -213,13 +220,6 @@ content-length: 583
 <p>地址：置地廣塲中庭2樓221號舖</p>
 <p>電話：2142 9008</p>
 <p>營業時間：每日早上10時30分至晚上7時30分</p>
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 28
-
-Charlotte Olympia伴您優美走進人生新階段
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -254,14 +254,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-aacb2c98-7645-48c0-8033-8f88a4a36487
+38f7eeea-0600-4588-924c-b49ea75f3170
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T022806Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
