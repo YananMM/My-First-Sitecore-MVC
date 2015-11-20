@@ -10,26 +10,26 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
+content-length: 58
+
+<image mediaid="{7A989497-615C-4627-9C7D-923275F3EAA8}" />
+----field----
+field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
+name: Article Portrait Callout Image
+key: article portrait callout image
+content-length: 58
+
+<image mediaid="{7A989497-615C-4627-9C7D-923275F3EAA8}" />
+----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
 content-length: 15
 
 (852) 2849 0668
-----field----
-field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
-name: Map Longitude
-key: map longitude
-content-length: 10
-
-114.142449
-----field----
-field: {0C295F12-1B0E-4873-A718-0F31C341400F}
-name: Map Latitude
-key: map latitude
-content-length: 10
-
-22.2811673
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -40,15 +40,22 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 3160c06c-1124-48e0-81f2-20fd9327eed5
+revision: 3f7d4700-e6ca-46c2-bc1b-290950b7110a
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 8
+
+The Peak
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 91
+content-length: 85
 
-<link linktype="external" url="https://www.thepeak.com.hk/en/" anchor="" target="_blank" />
+<link linktype="external" url="https://www.thepeak.com.hk/en/" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -62,7 +69,7 @@ name: Content Title
 key: content title
 content-length: 78
 
-Iconic tourist destination offers something for everyone - and all-round views
+Iconic tourist destination offers something for everyone – and all-round views
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -83,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3160c06c-1124-48e0-81f2-20fd9327eed5
+3f7d4700-e6ca-46c2-bc1b-290950b7110a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T023448Z
+20151117T074220:635833429401495439Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +108,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: ea1d63c6-47f4-432f-91c0-c788d585b7f6
+revision: 5256a19b-2b7d-4836-ad22-2f2846676fca
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 99
+content-length: 93
 
-<link linktype="external" url="https://www.thepeak.com.hk/sc/home.asp" anchor="" target="_blank" />
+<link linktype="external" url="https://www.thepeak.com.hk/sc/home.asp" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -144,14 +151,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ea1d63c6-47f4-432f-91c0-c788d585b7f6
+5256a19b-2b7d-4836-ad22-2f2846676fca
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T032708Z
+20151111T100222:635828329427275384Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +169,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 3c6331ed-a9ff-48be-9af8-06c8f34d9549
+revision: d0743d5f-8b93-45c7-905e-c609c58aa278
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 99
+content-length: 93
 
-<link linktype="external" url="https://www.thepeak.com.hk/tc/home.asp" anchor="" target="_blank" />
+<link linktype="external" url="https://www.thepeak.com.hk/tc/home.asp" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -205,14 +212,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3c6331ed-a9ff-48be-9af8-06c8f34d9549
+d0743d5f-8b93-45c7-905e-c609c58aa278
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T032637Z
+20151111T100201:635828329217433382Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
