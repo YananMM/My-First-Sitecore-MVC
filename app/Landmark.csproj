@@ -157,6 +157,7 @@
     <Compile Include="Classes\SitecoreRenderingViewGuids.cs" />
     <Compile Include="Classes\StringConstants.cs" />
     <Compile Include="Classes\ValidateCode.cs" />
+    <Compile Include="Classes\WebViewPage.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\ShoppingController.cs" />
@@ -211,6 +212,7 @@
     <Compile Include="Pipelines\GetPlaceholderRenderings\GetDynamicKeyAllowedRenderings.cs" />
     <Compile Include="Pipelines\GetChromeData\GetDynamicPlaceholderChromeData.cs" />
     <Compile Include="Pipelines\HttpRequest\NotFoundProcessor.cs" />
+    <Compile Include="Pipelines\RenderFieldValue\CustomReplaceFieldValue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\CheckCaptcha.ashx.cs">
       <DependentUpon>CheckCaptcha.ashx</DependentUpon>
