@@ -7,10 +7,10 @@
 @{
     var currentItem = Sitecore.Context.Item;
     MagazineHelper helper = new MagazineHelper();
-    var setting = helper.GetStorySetting(currentItem);
 }
-@if (currentItem.TemplateName == "T23 Page AB")
+@if (currentItem.TemplateID.ToString() == ItemGuids.T23PageABTemplate)
 {
+    var setting = helper.GetStorySetting(currentItem);
     if (setting == StorySetting.StyleA)
     {
         @Html.Sitecore().Placeholder("style-a")
@@ -20,7 +20,7 @@
         @Html.Sitecore().Placeholder("style-b")
     }
 }
-else if (currentItem.TemplateName == "T23 Page CD")
+else if (currentItem.TemplateID.ToString() == ItemGuids.T23PageCDTemplate)
 {
     @Html.Sitecore().Placeholder("style-cd")
 }

@@ -1,18 +1,18 @@
 ----item----
 version: 1
-id: {48DA220E-BFA8-4789-8191-0FD9A3C0DB43}
+id: {FC48785C-626C-4DBA-A2F9-8660F7308DC6}
 database: master
-path: /sitecore/templates/Branches/User Defined/Landmark/Page/T23 Page CD
-parent: {82187095-62EE-4583-B939-FE773A6BF9D4}
-name: T23 Page CD
+path: /sitecore/templates/Branches/User Defined/Landmark/Page/T23 Page C/$name/Video
+parent: {DEB69C58-D1F0-4D24-904C-A009B331B9E3}
+name: Video
 master: {00000000-0000-0000-0000-000000000000}
-template: {35E75C72-4985-4E09-88C3-0EAC6CD1E64F}
-templatekey: Branch
+template: {82C6EA0F-D0F2-4F40-BA8A-F5E39A10D5B5}
+templatekey: Video Object
 
 ----version----
 language: en
 version: 1
-revision: 35cc2c5d-5992-4261-860f-f663490db6f1
+revision: a1dc6030-5a6e-432b-a8ea-496aed6b39fe
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -27,7 +27,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150922T053212Z
+20150922T061601Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-35cc2c5d-5992-4261-860f-f663490db6f1
+a1dc6030-5a6e-432b-a8ea-496aed6b39fe
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150922T053213:635784967330007719Z
+20150922T061601:635784993616391214Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

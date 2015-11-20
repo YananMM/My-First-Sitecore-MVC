@@ -1,47 +1,54 @@
 ----item----
 version: 1
-id: {EE91672E-B9D4-4D3D-B162-C62E69ED50E3}
+id: {D5EE70FB-C1A9-4F46-91F3-3CDE41D9F5E5}
 database: master
-path: /sitecore/templates/Branches/User Defined/Landmark/Page/T23 Page CD/$name/Slide Folder
-parent: {DEB69C58-D1F0-4D24-904C-A009B331B9E3}
-name: Slide Folder
+path: /sitecore/content/Global/Landmark/Error Message/Area
+parent: {9C7F00FF-DA2B-47F9-A7DF-7D7A3C6AFE19}
+name: Area
 master: {00000000-0000-0000-0000-000000000000}
-template: {EEEB8813-EBD2-415E-B4F0-72B52DDEF18E}
-templatekey: Slide Folder
+template: {55CBD7E3-79B5-4A39-8329-EDD07EBE5ED5}
+templatekey: Text Object
 
 ----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 1
+field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
+name: Value
+key: value
+content-length: 4
 
-0
+Area
 ----version----
 language: en
 version: 1
-revision: 1172b2ac-a1e9-4e90-b92a-8212d4055a09
+revision: de36a7f2-c831-483f-ad7e-b54f779d796f
 
+----field----
+field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
+name: Text
+key: text
+content-length: 39
+
+ The length of area can't more than 50.
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150922T053253Z
+20151120T034333Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-1172b2ac-a1e9-4e90-b92a-8212d4055a09
+de36a7f2-c831-483f-ad7e-b54f779d796f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150922T060452:635784986920608237Z
+20151120T035747:635835886674611209Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

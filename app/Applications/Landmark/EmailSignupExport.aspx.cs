@@ -38,6 +38,7 @@ namespace Landmark.layouts.Landmark
                 if (results.Count() == 0)
                 {
                     Response.Write("No data in selected date.");
+                    return;
                 }
                 List<EmailSignUpCsvModel> signups = new List<EmailSignUpCsvModel>();
                 foreach (var result in results)

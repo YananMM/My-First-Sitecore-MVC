@@ -16,6 +16,14 @@
     var districts = districtFolder.Children.ToList();
     List<Item> list1 = new List<Item>();
     List<Item> list2 = new List<Item>();
+
+    var errorMessageFolder = Sitecore.Context.Database.GetItem(ItemGuids.ErrorMessageFolder);
+
+    List<Item> errorMessages = new List<Item>();
+    if (errorMessageFolder != null)
+    {
+        errorMessages = errorMessageFolder.Children.ToList();
+    }
 }
 <div class="container">
     <div class="gd-pagetitle">
@@ -42,13 +50,14 @@
                                         <label for="title">@Html.Sitecore().Field("Title Label") *</label>
                                         <div class="dropdown gd-dropdown gd-dropdown-fill">
                                             <!-- User's selection will be stored here -->
-                                            <input type="hidden" name="title" data-error="Title is missing.">
+                                            <input type="hidden" name="title" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Title"))">
                                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
                                                 <span class="current">
-@{
-    var pleaseSelectItem = Factory.GetDatabase("web").GetItem(ItemGuids.PleaseSelectItem);
-}
-@Html.Sitecore().Field("Glossary Value", pleaseSelectItem)</span>
+                                                    @{
+                                                        var pleaseSelectItem = Factory.GetDatabase("web").GetItem(ItemGuids.PleaseSelectItem);
+                                                    }
+                                                    @Html.Sitecore().Field("Glossary Value", pleaseSelectItem)
+                                                </span>
                                                 <span class="caret"></span>
                                             </button>
                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -59,7 +68,6 @@
                                                         <li><a href="javascript:;" data-value="@item.Fields["Value"]">@item.Fields["Value"]</a></li>
                                                     }
                                                 }
-
                                             </ul>
                                         </div>
                                     </div>
@@ -69,13 +77,13 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="firstname">@Html.Sitecore().Field("First Name") *</label>
-                                        <input type="text" class="form-control" id="firstname" name="firstname" data-error="First name is missing.">
+                                        <input type="text" class="form-control" id="firstname" name="firstname" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "FirstName"))">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="lastname">@Html.Sitecore().Field("Last Name") *</label>
-                                        <input type="text" class="form-control" id="lastname" name="lastname" data-error="Last name is missing.">
+                                        <input type="text" class="form-control" id="lastname" name="lastname" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "LastName"))">
                                     </div>
                                 </div>
                             </div>
@@ -83,7 +91,7 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label for="email">@Html.Sitecore().Field("Email Label") *</label>
-                                        <input type="email" class="form-control" id="email" name="email" data-error="Email is missing or Email format is invalid.">
+                                        <input type="email" class="form-control" id="email" name="email" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Email"))">
                                     </div>
                                 </div>
                             </div>
@@ -96,15 +104,16 @@
                                             <input type="hidden" name="channel" value="0">
                                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
                                                 <span class="current">
-@{
-    var emailOnlyItem = Factory.GetDatabase("web").GetItem(ItemGuids.EmailOnlyItem);
-}
-@Html.Sitecore().Field("Glossary Value", emailOnlyItem)</span>
+                                                    @{
+                                                        var emailOnlyItem = Factory.GetDatabase("web").GetItem(ItemGuids.EmailOnlyItem);
+                                                    }
+                                                    @Html.Sitecore().Field("Glossary Value", emailOnlyItem)
+                                                </span>
                                                 <span class="caret"></span>
                                             </button>
                                             <ul class="dropdown-menu">
                                                 <li><a href="javascript:;" data-value="0">@Html.Sitecore().Field("Glossary Value", emailOnlyItem)</a></li>
-                                                <li><a href="javascript:;" data-value="1">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.EmailPostalAddressItem))</a></li>
+                                                <li><a href="javascript:;" data-value="1">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.EmailPostalAddressItem))</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -121,13 +130,13 @@
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="room">@Html.Sitecore().Field("Room Label") *</label>
-                                                    <input type="text" class="form-control" id="room" name="room" data-error="Room is missing.">
+                                                    <input type="text" class="form-control" id="room" name="room" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Room"))">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="building">@Html.Sitecore().Field("Building Label") *</label>
-                                                    <input type="text" class="form-control" id="building" name="building" data-error="Building is missing.">
+                                                    <input type="text" class="form-control" id="building" name="building" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Building"))">
                                                 </div>
                                             </div>
                                         </div>
@@ -135,7 +144,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group">
                                                     <label for="street">@Html.Sitecore().Field("Street Label") *</label>
-                                                    <input type="text" class="form-control" id="street" name="street" data-error="Street is missing.">
+                                                    <input type="text" class="form-control" id="street" name="street" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Street"))">
                                                 </div>
                                             </div>
                                         </div>
@@ -143,14 +152,14 @@
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="area">@Html.Sitecore().Field("Area Label")</label>
-                                                    <input type="text" class="form-control" id="area" name="area" data-error="Incorrect area name.">
+                                                    <input type="text" class="form-control" id="area" name="area" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Area"))">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group hidden">
                                                     <label class="hidden-xs">&nbsp;</label>
                                                     <div class="gd-checkbox-wrapper" data-type="radio">
-                                                        <input type="hidden" name="district" data-error="District is missing.">
+                                                        <input type="hidden" name="district" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "District"))">
                                                         @if (districts.Count != 0)
                                                         {
                                                             foreach (var item in districts)
@@ -166,13 +175,13 @@
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="state">@Html.Sitecore().Field("State Label")</label>
-                                                    <input type="text" class="form-control" id="state" name="state" data-error="Incorrect state name.">
+                                                    <input type="text" class="form-control" id="state" name="state" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "State"))">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="city">@Html.Sitecore().Field("City Label") *</label>
-                                                    <input type="text" class="form-control" id="city" name="city" data-error="City is missing.">
+                                                    <input type="text" class="form-control" id="city" name="city" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "City"))">
                                                 </div>
                                             </div>
                                         </div>
@@ -180,7 +189,7 @@
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="postcode">@Html.Sitecore().Field("Postcode Label")</label>
-                                                    <input type="text" class="form-control" id="postcode" name="postcode" data-error="Incorrect postal code.">
+                                                    <input type="text" class="form-control" id="postcode" name="postcode" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Postcode"))">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
@@ -188,7 +197,7 @@
                                                     <label>@Html.Sitecore().Field("Country Label") *</label>
                                                     <div class="dropdown gd-dropdown gd-dropdown-fill" id="gd-country">
                                                         <!-- User's selection will be stored here -->
-                                                        <input type="hidden" name="country" data-error="Country is missing.">
+                                                        <input type="hidden" name="country" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Country"))">
                                                         <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
                                                             <span class="current">@Html.Sitecore().Field("Glossary Value", pleaseSelectItem)</span>
                                                             <span class="caret"></span>
@@ -215,7 +224,7 @@
                                     <div class="form-group">
                                         <label>@Html.Sitecore().Field("Interests Label") *</label>
                                         <div class="gd-checkbox-wrapper gd-interests">
-                                            <input type="hidden" name="interests" data-error="Please select one interests item at least." value="">
+                                            <input type="hidden" name="interests" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Interests"))" value="">
                                             <div class="row">
                                                 @{
                                                     var count = interests.Count;
@@ -246,7 +255,7 @@
                                                         <span class="gd-checkbox" data-value="">
                                                             @Html.Sitecore().Field("Other Label") (@Html.Sitecore().Field("Specify")
                                                         </span>
-                                                        <input type="text" class="form-control" name="others" data-error="Please specify other interests." disabled="disabled">
+                                                        <input type="text" class="form-control" name="others" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "OtherInterests"))" disabled=" disabled">
                                                         <span>)</span>
                                                     </div>
                                                 </div>
@@ -264,7 +273,7 @@
                                     <img id="valiCode" style="cursor: pointer;" src="@Url.Action("GetValidateCode", "Home")" alt="ValidateCode" />
                                 </div>
                                 <div class="col-sm-6">
-                                    <input type="text" id="code" class="form-control" name="verifycode" data-error="Please provide a correct verification code.">
+                                    <input type="text" id="code" class="form-control" name="verifycode" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "ValidateCode"))">
                                     <a href="javascript:changeImg();">@Html.Sitecore().Field("Generate Code")</a>
                                 </div>
                             </div>
@@ -279,13 +288,13 @@
                                 @Html.Sitecore().Field("Prompt Message")
                             </p>
                             <div class="gd-checkbox-wrapper">
-                                <input type="hidden" name="legal" data-error="You need to agree to our legal items.">
+                                <input type="hidden" name="legal" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Legal"))">
                                 <span class="gd-checkbox" data-value="1">
                                     @Html.Sitecore().Field("Confirm Message")
                                 </span>
                             </div>
                             <div class="gd-checkbox-wrapper">
-                                <input type="hidden" name="optin" data-error="You need to agree to our privacy items.">
+                                <input type="hidden" name="optin" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Optin"))">
                                 <span class="gd-checkbox" data-value="1"> @Html.Sitecore().Field("Agree Message")</span>
                             </div>
                         </div>
