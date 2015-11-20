@@ -8,7 +8,7 @@
     var currentItem = Sitecore.Context.Item;
     MagazineHelper helper = new MagazineHelper();
 }
-@if (currentItem.TemplateID.ToString() == ItemGuids.T23PageABTemplate)
+@if (currentItem.TemplateID.ToString() == ItemGuids.T23PageTemplate)
 {
     var setting = helper.GetStorySetting(currentItem);
     if (setting == StorySetting.StyleA)
