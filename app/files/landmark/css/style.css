@@ -4533,9 +4533,6 @@ h4 a:active {
   background-size: cover !important;
   background-position: 50% 50% !important;
 }
-.gd-carousel-info .carousel-inner .item > .carousel-image-ie8 img {
-  top: 0 !important;
-}
 .gd-carousel-info .carousel-inner .item > .fireonce {
   opacity: 0.2;
   -webkit-transition: opacity 1s;
@@ -4777,6 +4774,17 @@ h4 a:active {
   margin-top: 20px;
   display: block;
   color: #999999;
+}
+.gd-mainimage .carousel-inner .item > .carousel-image-ie8 {
+  position: relative;
+}
+.gd-mainimage .carousel-inner .item > .carousel-image-ie8 img {
+  display: block;
+  left: 0;
+  min-height: 640px;
+  min-width: 1200px;
+  position: absolute;
+  top: 0;
 }
 .gd-mainimage .gd-mainimage-controls {
   bottom: 0;

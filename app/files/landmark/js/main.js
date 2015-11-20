@@ -1780,13 +1780,46 @@ $(document).ready(function() {
    **********************************************************************************************************/
   if ($('.gd-carousel-info').length) {
     if ( isIE8() ) {
-      $('.gd-carousel-info .carousel-image').each(function() {
-        $(this).addClass('carousel-image-ie8').css({
-          'background-image': 'url(' + $(this).data('bgsrc') + ')',
-          'background-repeat': 'no-repeat',
-          'background-size': 'cover'
+      // for bottom slider, use normal background iamge
+      $('.gd-carousel-info:not(.gd-mainimage) .carousel-image').each(function() {
+        $(this).addClass('fireonce').css({'background': 'url(' + $(this).data('bgsrc') + ') center 0 no-repeat', 'background-size': 'cover !important' });
+      });
+      
+      // for main slider, emulate background : cover
+      $('.gd-mainimage .carousel-image').each(function() {
+        $(this).addClass('carousel-image-ie8').append('<img src="' + $(this).data('bgsrc') + '" />');
+      });
+      
+      $('.gd-mainimage').imagesLoaded(function() {
+        var gdWrap  = $('.gd-mainimage').eq(0);
+        var gdWrapW = gdWrap.width();
+        var gdWrapH = gdWrap.height();
+        var gdWrapR = gdWrapW / gdWrapH;
+        
+        $('.gd-mainimage img').each(function() {
+          // 1200 / 640 = 1.875
+          //alert($(this).width() / $(this).height());
+        });
+        
+        $('.gd-mainimage').on('slid.bs.carousel', function(event) {
+          var gdCoverImg  = $('img', $(event.relatedTarget));
+          var gdCoverImgW = gdCoverImg.width();
+          var gdCoverImgH = gdCoverImg.height();
+          
+          alert(gdCoverImg.width() +'...'+ gdCoverImg.height());
+          if (!(gdCoverImgW === gdWrapW || gdCoverImgH === gdWrapH)) {
+            if (gdCoverImgW / gdCoverImgH >= gdWrap) {
+              gdCoverImg.height(gdWrapH);
+              gdCoverImg.css({
+                'left': (gdCoverImg.width() - gdWrapW) / 2 + 'px'
+              });
+            } else {
+              gdCoverImg.width(gdWrapW);
+            }
+          }
         });
       });
+      
     } else {
       $('.gd-carousel-info .carousel-image').each(function() {
         $(this).addClass('fireonce').css({'background': 'url(' + $(this).data('bgsrc') + ') center 0 no-repeat', 'background-size': 'cover !important' });
@@ -1994,7 +2027,7 @@ $(document).ready(function() {
         rules: 'required|max_length[50]',
         depends: function() {
           return gdEPselected;
-        } 
+        }
     }, {
         name: 'state',
         rules: 'max_length[50]',
