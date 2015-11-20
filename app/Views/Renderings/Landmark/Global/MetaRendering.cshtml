@@ -2,6 +2,7 @@
 @using Landmark.Classes
 @using Landmark.Helper
 @using Sitecore.Configuration
+@using Sitecore.ContentSearch.Pipelines.TranslateQuery
 @using Sitecore.Data.Fields
 @using Sitecore.Links
 @using Sitecore.Shell.Applications.ContentEditor
@@ -116,5 +117,6 @@
         <script type="text/javascript" src="/files/landmark/js/lib/svgmap/js/html5shiv.js"></script>
     <![endif]-->
 }
-<title>@Html.Sitecore().Field("Page Title")</title>
+<link rel="shortcut icon" href="/files/landmark/images/favicon.ico">
+<title>@Html.Sitecore().Field("Meta Title") | @Sitecore.Context.Database.GetItem(ItemGuids.LandmarkTitleItem).Fields["Glossary Value"].Value</title>
 

@@ -1,96 +1,47 @@
 ----item----
 version: 1
-id: {D436403A-500F-4DB4-ADF6-32165C306C55}
+id: {49B3DA18-4601-48AB-9AD3-B506C0713762}
 database: master
-path: /sitecore/content/Global/Landmark/Buildings/PRINCE
-parent: {4731A63F-BFED-4A7B-8650-1ED611731530}
-name: PRINCE
+path: /sitecore/content/Global/Landmark/Glossary/LANDMARK
+parent: {8B197E68-D618-4F66-9C07-BA8DD5DC096E}
+name: LANDMARK
 master: {00000000-0000-0000-0000-000000000000}
-template: {873FCBBD-5F81-4DD2-B885-DFDCA194A5D1}
-templatekey: Building Data
+template: {7AD93F40-7320-4CD8-89A4-D4E4BB44ADF8}
+templatekey: Glossary Object
 
-----field----
-field: {7EF17060-F50C-4CA3-8021-1802F0672C00}
-name: Building Svg Id
-key: building svg id
-content-length: 6
-
-gdfpa2
-----field----
-field: {E657A707-C854-4316-BDA6-B63559885398}
-name: LocationX
-key: locationx
-content-length: 6
-
-0.8756
-----field----
-field: {12796E88-1E57-4ECB-B6A2-66BC957940D1}
-name: LocationY
-key: locationy
-content-length: 6
-
-0.4867
-----field----
-field: {BF9DA807-1A47-4989-952D-5A3E7691E3FC}
-name: Is Landmark
-key: is landmark
-content-length: 1
-
-1
-----field----
-field: {5C411FD4-B038-45E8-8083-96AE99773D2F}
-name: Building Index For Art
-key: building index for art
-content-length: 1
-
-2
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 3
-
-500
 ----version----
 language: en
 version: 1
-revision: e31f162a-a993-4d4e-b95a-57f8e29d2818
+revision: 462d8370-7252-4058-b3bd-76b12604a527
 
 ----field----
-field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
-name: Building Title
-key: building title
-content-length: 6
+field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
+name: Glossary Value
+key: glossary value
+content-length: 8
 
-PRINCE
-----field----
-field: {5471CA9B-9D9E-4332-8B37-905B47BCE65F}
-name: Building Address
-key: building address
-content-length: 54
-
-15 Queen's Road Central, LANDMARK, Central, Hong Kong.
+LANDMARK
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150930T135152Z
+20151120T090129Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-e31f162a-a993-4d4e-b95a-57f8e29d2818
+462d8370-7252-4058-b3bd-76b12604a527
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151118T063618Z
+20151120T090129Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,22 +52,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 5e0aa899-dd6a-4e8d-901b-520c9cc25948
+revision: 70f5e490-ac78-4186-b471-49c6fec7e973
 
 ----field----
-field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
-name: Building Title
-key: building title
+field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
+name: Glossary Value
+key: glossary value
 content-length: 4
 
-置地太子
-----field----
-field: {5471CA9B-9D9E-4332-8B37-905B47BCE65F}
-name: Building Address
-key: building address
-content-length: 18
-
-中环皇后大道中15号置地广场太子大厦
+置地广塲
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -130,7 +74,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151106T125101Z
+20151120T090133Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -144,14 +88,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5e0aa899-dd6a-4e8d-901b-520c9cc25948
+70f5e490-ac78-4186-b471-49c6fec7e973
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T125229Z
+20151120T090146Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,22 +106,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: f081092b-cfb0-4808-a010-998c8c9da183
+revision: 9415a2ce-37c7-4cb0-a2e5-774842cb1f32
 
 ----field----
-field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
-name: Building Title
-key: building title
+field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
+name: Glossary Value
+key: glossary value
 content-length: 4
 
-置地太子
-----field----
-field: {5471CA9B-9D9E-4332-8B37-905B47BCE65F}
-name: Building Address
-key: building address
-content-length: 18
-
-中環皇后大道中15號置地廣場太子大廈
+置地廣塲
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -191,7 +128,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151106T125019Z
+20151120T085839Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -205,14 +142,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f081092b-cfb0-4808-a010-998c8c9da183
+9415a2ce-37c7-4cb0-a2e5-774842cb1f32
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T125215Z
+20151120T090153Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

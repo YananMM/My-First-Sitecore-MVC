@@ -190,5 +190,6 @@ namespace Landmark.Classes
         public static readonly string HomeGlossaryItem = "{6607F517-2794-4B1F-9D52-8AC599E0B7F9}";
         public static readonly string SeeAllItem = "{60ABA0CA-078A-478B-B2D1-C808EAE75D2F}";
         public static readonly string ErrorMessageFolder = "{9C7F00FF-DA2B-47F9-A7DF-7D7A3C6AFE19}";
+        public static readonly string LandmarkTitleItem = "{49B3DA18-4601-48AB-9AD3-B506C0713762}";
     }
 }

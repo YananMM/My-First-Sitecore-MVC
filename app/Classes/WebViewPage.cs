@@ -15,7 +15,7 @@ namespace Landmark.Classes
         
     }
 
-    public abstract class WebViewPage<T> : System.Web.Mvc.WebViewPage
+    public abstract class WebViewPage<T> : System.Web.Mvc.WebViewPage<T>
     {
         
     }
