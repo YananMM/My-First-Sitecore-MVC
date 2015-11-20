@@ -20,13 +20,13 @@ namespace Landmark.Internal_Handlers
         public void ProcessRequest(HttpContext context)
         {
 
-            List<Item> items = LandmarkHelper.GetItemByTemplate(Factory.GetDatabase("master").GetItem("{923DBE58-71DE-4B27-B0BA-C5DEF3D301B2}"),
-                "{A46D7A20-B29F-4C4F-8922-0B70555CD6BC}").Where(item => !((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
+            List<Item> items = LandmarkHelper.GetItemByTemplate(Factory.GetDatabase("master").GetItem("{F0A68E40-FB4F-4B85-969D-A6ADEE24DE6B}"),
+                "{4CDF5CD9-40F0-4F0B-A095-7773CE6CF582}").Where(item => !string.IsNullOrEmpty(item.Fields["Article Content"].Value)).ToList();
             foreach (Item i in items)
             {
                 Item enLanguageItem = Factory.GetDatabase("master").GetItem(i.ID, Sitecore.Globalization.Language.Parse("en"));
-                //Item scLanguageItem = Factory.GetDatabase("master").GetItem(i.ID, Sitecore.Globalization.Language.Parse("zh-CN"));
-                //Item tcLanguageItem = Factory.GetDatabase("master").GetItem(i.ID, Sitecore.Globalization.Language.Parse("zh-HK"));
+                Item scLanguageItem = Factory.GetDatabase("master").GetItem(i.ID, Sitecore.Globalization.Language.Parse("zh-CN"));
+                Item tcLanguageItem = Factory.GetDatabase("master").GetItem(i.ID, Sitecore.Globalization.Language.Parse("zh-HK"));
                 using (new SecurityDisabler())
                 {
                     /*tcLanguageItem.Editing.BeginEdit();
@@ -40,8 +40,16 @@ namespace Landmark.Internal_Handlers
                     scLanguageItem.Editing.AcceptChanges();*/
 
                     enLanguageItem.Editing.BeginEdit();
-                    enLanguageItem.Fields["Article Headline"].Value = enLanguageItem.Fields["Image Title"].Value;
+                    enLanguageItem.Fields["Article Content2"].Value = enLanguageItem.Fields["Article Content"].Value;
                     enLanguageItem.Editing.AcceptChanges();
+
+                    tcLanguageItem.Editing.BeginEdit();
+                    tcLanguageItem.Fields["Article Content2"].Value = tcLanguageItem.Fields["Article Content"].Value;
+                    tcLanguageItem.Editing.AcceptChanges();
+
+                    scLanguageItem.Editing.BeginEdit();
+                    scLanguageItem.Fields["Article Content2"].Value = scLanguageItem.Fields["Article Content"].Value;
+                    scLanguageItem.Editing.AcceptChanges();
                 }
 
             }

@@ -40,13 +40,6 @@
             if (sublineVersionsField.Value.Equals(ItemGuids.TwoNumbersTwoCaptionsTextLink))
             {
                 title = item.Fields["Slide Numbers Text Title"].Value;
-                if (string.IsNullOrEmpty(title))
-                {
-                    if (referenceField.TargetItem != null)
-                    {
-                        title = referenceField.TargetItem.Fields["Article Headline 2"].Value;
-                    }
-                }
             }
             else
             {
@@ -72,23 +65,6 @@
                     imgsrc = LandmarkHelper.GetCallOutImage(referenceField.TargetItem);
                 }
             }
-            if (string.IsNullOrEmpty(buttonText))
-            {
-                if (referenceField.TargetItem != null)
-                {
-                    buttonText = Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverLandmarkStoriesItem).Fields["Glossary Value"].Value;
-                }
-            }
-            if (string.IsNullOrEmpty(buttonLink))
-            {
-                if (referenceField.TargetItem != null)
-                {
-                    buttonLink = LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceField.TargetItem));
-                }
-            }
-            
-
-
             if (referenceField != null && referenceField.TargetItem != null)
             {
                 <li>
@@ -120,7 +96,10 @@
                                 <div class="panel-content">
                                     @text
                                 </div>
-                                <a class="btn btn-default" href="@buttonLink" target="@LandmarkHelper.GetLinkTarget(item,"Slide Button Link")">@buttonText</a>
+                                @if (string.IsNullOrEmpty(item.Fields["Slide Button Text"].Value))
+                                {
+                                    @Html.Sitecore().Field("Slide Button Link", item, new { Class = "btn btn-default", text = Html.Sitecore().Field("Slide Button Text", item))
+                                }
                             </div>
                         </div>
                     </div>

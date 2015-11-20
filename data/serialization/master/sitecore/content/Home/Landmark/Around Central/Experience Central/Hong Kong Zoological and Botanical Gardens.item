@@ -10,26 +10,26 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
+content-length: 58
+
+<image mediaid="{615D85CF-CAE0-403F-9939-B817C2FCFE51}" />
+----field----
+field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
+name: Article Portrait Callout Image
+key: article portrait callout image
+content-length: 58
+
+<image mediaid="{615D85CF-CAE0-403F-9939-B817C2FCFE51}" />
+----field----
 field: {1B1514EB-480D-4C3E-8C66-C1F70BECE985}
 name: Cover Phone
 key: cover phone
 content-length: 15
 
 (852) 2530 0154
-----field----
-field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
-name: Map Longitude
-key: map longitude
-content-length: 11
-
-114.1555784
-----field----
-field: {0C295F12-1B0E-4873-A718-0F31C341400F}
-name: Map Latitude
-key: map latitude
-content-length: 10
-
-22.2779383
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -40,15 +40,22 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 51a2a068-02ad-4c2a-848e-8e7158e2f0cc
+revision: 08eb0164-c9f7-44bd-86fb-42ce49d5ef58
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 42
+
+Hong Kong Zoological and Botanical Gardens
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 99
+content-length: 94
 
-<link linktype="external" url="http://www.lcsd.gov.hk/en/parks/hkzbg/" anchor="" target="_blank" />
+<link linktype="external" url="http://www.lcsd.gov.hk/en/parks/hkzbg/ " anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -83,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-51a2a068-02ad-4c2a-848e-8e7158e2f0cc
+08eb0164-c9f7-44bd-86fb-42ce49d5ef58
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T020752Z
+20151117T074930:635833433702241428Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,22 +108,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f5aea152-3cef-4907-8e3c-df5a27aaeb30
+revision: dc72cf38-cb63-40de-ab2a-6091ce4c87f5
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 100
+content-length: 93
 
-<link linktype="external" url="http://www.lcsd.gov.hk/sc/parks/hkzbg/ " anchor="" target="_blank" />
-----field----
-field: {8411563D-F68D-41CB-A1AB-434129407504}
-name: Cover Address
-key: cover address
-content-length: 8
-
-香港中环雅宾利道
+<link linktype="external" url="http://www.lcsd.gov.hk/sc/parks/hkzbg/" anchor="" target="" />
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
@@ -144,14 +144,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f5aea152-3cef-4907-8e3c-df5a27aaeb30
+dc72cf38-cb63-40de-ab2a-6091ce4c87f5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T021146Z
+20151111T092756:635828308766973682Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +162,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 77e93a95-1138-471e-8af8-3ade442e8711
+revision: 9ea0f639-aa3a-48e0-9f2b-01bc716e4017
 
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 100
+content-length: 93
 
-<link linktype="external" url="http://www.lcsd.gov.hk/tc/parks/hkzbg/ " anchor="" target="_blank" />
+<link linktype="external" url="http://www.lcsd.gov.hk/tc/parks/hkzbg/" anchor="" target="" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -205,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-77e93a95-1138-471e-8af8-3ade442e8711
+9ea0f639-aa3a-48e0-9f2b-01bc716e4017
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T021154Z
+20151111T092731:635828308510929037Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -68,7 +68,21 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: ef984f27-72ef-4167-a822-17e6f0118cba
+revision: a035d60a-e5a4-478b-85a3-e4ff1fb0c0b7
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 44
+
+Heather & March Brings Elegance to the Table
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Subheadline
+key: article subheadline
+content-length: 0
+
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
@@ -91,20 +105,6 @@ Mon to Sat<br>
 <p>Sun &amp; Public Holidays<br>
 11am-6pm </p>
 ----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 44
-
-Heather & March Brings Elegance to the Table
-----field----
-field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
-name: Image Title
-key: image title
-content-length: 0
-
-
-----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -124,14 +124,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ef984f27-72ef-4167-a822-17e6f0118cba
+a035d60a-e5a4-478b-85a3-e4ff1fb0c0b7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T021525Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -142,8 +142,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: d50cc34d-ee1d-474a-8846-11c70c271c3d
+revision: 7b363552-dce4-4fe7-b8e9-948086d9ed74
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 24
+
+Heather & March为餐桌增添优雅气息
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
@@ -164,13 +171,6 @@ content-length: 656
 <p>星期日及公众假期<br>
 早上11时至下午6时</p>
 <br>
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 24
-
-Heather & March为餐桌增添优雅气息
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -205,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d50cc34d-ee1d-474a-8846-11c70c271c3d
+7b363552-dce4-4fe7-b8e9-948086d9ed74
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T023517Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -223,8 +223,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: e7f8ff68-f606-4eb2-acd5-254b3a1f33bf
+revision: 79e1e367-ae6f-425d-862b-4f13c74cba68
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 24
+
+Heather & March為餐桌添上優雅氣息
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
@@ -245,13 +252,6 @@ content-length: 667
 <p>星期日及公眾假期<br>
 早上11時至下午6時</p>
 <br>
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 24
-
-Heather & March為餐桌添上優雅氣息
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -286,14 +286,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e7f8ff68-f606-4eb2-acd5-254b3a1f33bf
+79e1e367-ae6f-425d-862b-4f13c74cba68
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T021422Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

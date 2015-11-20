@@ -68,7 +68,21 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: ed89e896-5578-4bfe-98e2-989884ad3bcb
+revision: 80d42cd8-ea30-4729-bcc2-0de3af558d82
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 66
+
+Colours and Motifs of Italian Countryside Inspire TOD’S the Autumn
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Subheadline
+key: article subheadline
+content-length: 0
+
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
@@ -87,20 +101,6 @@ Mon to Sat<br>
 10:30am-8pm Daily</p>
 <p>Sun &amp; Public Holidays<br>
 10:30am-7:30pm </p>
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 66
-
-Colours and Motifs of Italian Countryside Inspire TOD’S the Autumn
-----field----
-field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
-name: Image Title
-key: image title
-content-length: 0
-
-
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -121,14 +121,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ed89e896-5578-4bfe-98e2-989884ad3bcb
+80d42cd8-ea30-4729-bcc2-0de3af558d82
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T021911Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -139,8 +139,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: adf0ad77-3ce1-4d7e-9a9a-d2a64e1c83b8
+revision: 933b5bc0-7627-4dc8-b785-c98ae3d1f783
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 20
+
+TOD’S秋季系列灵感源自意大利乡村风情
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
@@ -159,13 +166,6 @@ content-length: 599
 <p>星期日及公众假期<br>
 早上10时30分至晚上7时30分</p>
 <br>
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 20
-
-TOD’S秋季系列灵感源自意大利乡村风情
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -200,14 +200,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-adf0ad77-3ce1-4d7e-9a9a-d2a64e1c83b8
+933b5bc0-7627-4dc8-b785-c98ae3d1f783
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T023517Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -218,8 +218,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 85237818-f957-43f2-88a4-17bf9634da92
+revision: 7b2453a8-b4b1-4d70-ba46-37774f0ddfaf
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 20
+
+TOD’S秋季系列靈感源自意大利鄉郊風情
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
@@ -242,13 +249,6 @@ TOD&rsquo;S Men Boutique </strong></p>
 <p>星期日及公眾假期<br>
 早上10時30分至晚上7時30分 </p>
 <br>
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 20
-
-TOD’S秋季系列靈感源自意大利鄉郊風情
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -283,14 +283,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-85237818-f957-43f2-88a4-17bf9634da92
+7b2453a8-b4b1-4d70-ba46-37774f0ddfaf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T021848Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -26,7 +26,7 @@
                         {
                             <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper() </h5>
                         }
-                        <h6>@Html.Sitecore().Field("Image Title", currentItem) </h6>
+                        <h6>@Html.Sitecore().Field("Article Subheadline", currentItem) </h6>
                     </div>
                 </div>
                 <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-withdes carousel-portrait" data-ride="carousel">
@@ -41,7 +41,7 @@
                         {
                             <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
                         }
-                        <h6>@Html.Sitecore().Field("Image Title", currentItem)</h6>
+                        <h6>@Html.Sitecore().Field("Article Subheadline", currentItem)</h6>
                     </div>
                     @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T23AbCommonRendering)
                 </div>

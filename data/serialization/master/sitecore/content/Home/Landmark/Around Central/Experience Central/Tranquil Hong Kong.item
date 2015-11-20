@@ -10,19 +10,19 @@ template: {6837F6B8-D9D4-4693-85E2-3F1001C77B6A}
 templatekey: T25 Page
 
 ----field----
-field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
-name: Map Longitude
-key: map longitude
-content-length: 11
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
+content-length: 58
 
-114.2126685
+<image mediaid="{956A0174-FEF4-48DB-BEDD-C5C02C26D02B}" />
 ----field----
-field: {0C295F12-1B0E-4873-A718-0F31C341400F}
-name: Map Latitude
-key: map latitude
-content-length: 9
+field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
+name: Article Portrait Callout Image
+key: article portrait callout image
+content-length: 58
 
-22.220422
+<image mediaid="{956A0174-FEF4-48DB-BEDD-C5C02C26D02B}" />
 ----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
@@ -33,15 +33,22 @@ content-length: 155
 ----version----
 language: en
 version: 1
-revision: 63eb1810-671c-44fe-bee4-368a8ffbd67f
+revision: 19f2d2eb-a517-4a4e-8fe8-845233c3daf3
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 18
+
+Tranquil Hong Kong
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
 content-length: 90
 
-Hong Kong is not all hustle and bustle - there are easily accessible peaceful places, too!
+Hong Kong is not all hustle and bustle – there are easily accessible peaceful places, too!
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -62,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-63eb1810-671c-44fe-bee4-368a8ffbd67f
+19f2d2eb-a517-4a4e-8fe8-845233c3daf3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151112T132938Z
+20151117T074206:635833429260127353Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -80,7 +87,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: b31d1eff-eb79-47bb-b33b-dd03d2d03277
+revision: 7b8e52bd-48af-4639-9341-15c804863d58
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
@@ -109,14 +116,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b31d1eff-eb79-47bb-b33b-dd03d2d03277
+7b8e52bd-48af-4639-9341-15c804863d58
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T032708Z
+20151111T101408:635828336482178901Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -127,7 +134,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: d4d6aa08-9f84-48f4-a894-9a7105a59951
+revision: 826a1157-e3bc-4df5-a12b-33ffdfa58556
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
@@ -156,14 +163,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d4d6aa08-9f84-48f4-a894-9a7105a59951
+826a1157-e3bc-4df5-a12b-33ffdfa58556
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151113T032637Z
+20151111T101351:635828336313499253Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

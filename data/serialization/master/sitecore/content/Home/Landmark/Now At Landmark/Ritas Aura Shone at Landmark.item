@@ -64,6 +64,20 @@ version: 1
 revision: 631c6a6c-455c-4924-99f8-1eea3eb93de6
 
 ----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 29
+
+Rita's Aura Shone at Landmark
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Subheadline
+key: article subheadline
+content-length: 0
+
+
+----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
 key: article content
@@ -74,20 +88,6 @@ content-length: 1829
 <p>"Music runs through my blood, so it is easy to keep it the focus. I am constantly writing, recording, touring and singing," she said. "It's great to also be able to work in films and fashion, and designing collections with Rimmel and Adidas. I am a businesswoman and I create various opportunities utilising my various passions. I love being able to do lots of different things. No day is the same and I don't get to sleep too much!" </p>
 <p>She couldn't wait to see the sights of Hong Kong, she said. "I was thrilled to be visiting Hong Kong and LANDMARK for the very first time," said Rita. "Hong Kong is such a spectacularly vibrant city and LANDMARK is the ultimate in splendid high-fashion and lifestyle shopping experiences. I was so excited to be performing there! </p>
 <br>
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 29
-
-Rita's Aura Shone at Landmark
-----field----
-field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
-name: Image Title
-key: image title
-content-length: 0
-
-
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -126,7 +126,21 @@ sitecore\admin
 ----version----
 language: en
 version: 2
-revision: 1eebc6e0-494a-47e5-a607-17d251651b50
+revision: 5a852a13-5fb6-4ef3-b95e-1d17df610057
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 29
+
+Rita's Aura Shone at Landmark
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Subheadline
+key: article subheadline
+content-length: 0
+
 
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
@@ -139,20 +153,6 @@ content-length: 1829
 <p>"Music runs through my blood, so it is easy to keep it the focus. I am constantly writing, recording, touring and singing," she said. "It's great to also be able to work in films and fashion, and designing collections with Rimmel and Adidas. I am a businesswoman and I create various opportunities utilising my various passions. I love being able to do lots of different things. No day is the same and I don't get to sleep too much!" </p>
 <p>She couldn't wait to see the sights of Hong Kong, she said. "I was thrilled to be visiting Hong Kong and LANDMARK for the very first time," said Rita. "Hong Kong is such a spectacularly vibrant city and LANDMARK is the ultimate in splendid high-fashion and lifestyle shopping experiences. I was so excited to be performing there! </p>
 <br>
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 29
-
-Rita's Aura Shone at Landmark
-----field----
-field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
-name: Image Title
-key: image title
-content-length: 0
-
-
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -187,14 +187,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1eebc6e0-494a-47e5-a607-17d251651b50
+5a852a13-5fb6-4ef3-b95e-1d17df610057
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T104313Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -219,8 +219,15 @@ content-length: 5
 ----version----
 language: zh-CN
 version: 1
-revision: 517933cb-5b8a-4c30-ae94-5d4dea90d9c3
+revision: 75cf97a7-9f15-4cbd-9304-5e503c90af69
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 16
+
+Rita Ora闪耀驾临置地广场
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
@@ -232,13 +239,6 @@ content-length: 788
 <p>&ldquo;音乐在我的血液中流动，所以将之作为生活的焦点于我而言非常容易，我一直在写歌、录音和巡回演唱。&rdquo; 瑞塔&bull;奥拉说。&ldquo;能够涉足电影和时尚，与Rimmel和阿迪达斯设计系列时尚单品，也是超级棒的体验。我是一名商务女性，而且充满热情，热爱做很多不同的事情，并为自已创造各种机会。每一天都过得迥然不同，而且不需要太多休息的时间！&rdquo; </p>
 <p>瑞塔&bull;奥拉非常期待参观香港不同的景点。&ldquo;我感到很兴奋，这是第一次来到香港和置地广场。&rdquo;瑞塔说。&ldquo;香港是一个充满活力的城市，而置地广场集高尚及极致奢华的购物体验于一身，能够在这里表演我感到非常兴奋！&rdquo;</p>
 <br>
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 16
-
-Rita Ora闪耀驾临置地广场
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -273,14 +273,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-517933cb-5b8a-4c30-ae94-5d4dea90d9c3
+75cf97a7-9f15-4cbd-9304-5e503c90af69
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T023516Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -291,8 +291,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 48725fc1-4cfa-49cb-9381-34224f649717
+revision: 1280a5bb-86f1-4467-b371-8b61befa4687
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 16
+
+Rita Ora閃耀駕臨置地廣塲
 ----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
@@ -304,13 +311,6 @@ content-length: 736
 <p>「音樂在我的血液中流動，所以將它視為生活的焦點對我來說非常容易，我一直在寫歌、錄音及巡迴演出。」Rita Ora說。「能夠涉足電影和時尚，與Rimmel和Adidas設計其系列時尚單品，也是超級棒的體驗。我是一名商業女性，而且充滿熱情，熱愛做很多不同的事情，並籍此為自已創造各種機會。我過的每一天都不一樣，而且不需要太多休息的時間！」 </p>
 <p>Rita Ora非常期待參觀香港不同的景點。她表示：「我感到很興奮，這是第一次來到香港及置地廣塲。」Rita Ora說，「香港是一個充滿活力的城市，而置地廣塲則集高尚及極致奢華的購物體驗於一身，能在這裹表演我感到非常興奮！」</p>
 <br>
-----field----
-field: {24270371-41B8-4BB9-A09C-A62303A7587E}
-name: Article Headline
-key: article headline
-content-length: 16
-
-Rita Ora閃耀駕臨置地廣塲
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -345,14 +345,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-48725fc1-4cfa-49cb-9381-34224f649717
+1280a5bb-86f1-4467-b371-8b61befa4687
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T023303Z
+20151120T023818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
