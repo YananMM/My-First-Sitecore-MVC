@@ -121,6 +121,12 @@ namespace Landmark.Models
         public string Interests { get; set; }
 
         /// <summary>
+        /// Gets or sets the other interest.
+        /// </summary>
+        /// <value>The other interest.</value>
+        public string OtherInterest { get; set; }
+
+        /// <summary>
         /// Gets or sets the gender.
         /// </summary>
         /// <value>The gender.</value>
