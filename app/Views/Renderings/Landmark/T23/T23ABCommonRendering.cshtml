@@ -28,7 +28,7 @@
                 <div class="row">
                     @foreach (var image in item.Children.ToList())
                     {
-                        <div @if (setting == StorySetting.StyleA) { <text> class="col-sm-6" </text>  } else if (setting == StorySetting.StyleB) { <text> class="col-sm-4" </text>  }>
+                        <div @if (setting == StorySetting.StyleA) { <text> class="col-sm-6" </text>   } else if (setting == StorySetting.StyleB) { <text> class="col-sm-4" </text>   }>
                             <img data-src="@Html.Sitecore().ImageFieldSrc("Image", image)">
                         </div>
                     }
@@ -45,7 +45,7 @@
     }
 }
 <dl class="gd-content-details-tags">
-    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.TagsItem)):</dt>
+    <dt> <span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.TagsItem)):</dt>
     <dd>
         @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.TagsRenderingViewGuid)
     </dd>

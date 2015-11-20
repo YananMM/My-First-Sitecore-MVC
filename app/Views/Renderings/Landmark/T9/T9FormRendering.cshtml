@@ -47,7 +47,7 @@
                                 <label for="title">@Html.Sitecore().Field("Title Label") *</label>
                                 <div class="dropdown gd-dropdown gd-dropdown-fill">
                                     <!-- User's selection will be stored here -->
-                                    <input type="hidden" name="Title" value="" data-error="@Html.Sitecore().Field("Text",errorMessages.SingleOrDefault(p=>p.DisplayName=="Title"))">>
+                                    <input type="hidden" name="Title" value="" data-error="@Html.Sitecore().Field("Text",errorMessages.SingleOrDefault(p=>p.DisplayName=="Title"))">
                                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
                                         <span class="current">@Html.Sitecore().Field("Select Label")</span>
                                         <span class="caret"></span>

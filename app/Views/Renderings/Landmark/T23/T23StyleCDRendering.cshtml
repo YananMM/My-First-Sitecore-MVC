@@ -36,7 +36,7 @@
             int i = 1;
             foreach (var item in children)
             {
-                if (item.TemplateName == "Content Object")
+                if (item.TemplateID.ToString() == ItemGuids.ContentObject)
                 {
                     <div class="gd-brief">
                         <div class="gd-brief-heading">
@@ -54,7 +54,7 @@
                 else
                 {
                     var tagsItem = Factory.GetDatabase("web").GetItem(ItemGuids.TagsItem);
-                    if (item.TemplateName == "T23 Cover Object")
+                    if (item.TemplateID.ToString() == ItemGuids.T23CoverObject)
                     {
                         var smaller = (CheckboxField)item.Fields["Smaller Image"];
                         if (smaller.Checked)
@@ -93,15 +93,18 @@
                         }
                     }
 
-                    else if (item.TemplateName == "Video Object")
+                    else if (item.TemplateID.ToString() == ItemGuids.VideoObject)
                     {
                         var smaller = (CheckboxField)item.Fields["Smaller Image"];
                         if (smaller.Checked)
                         {
                             <div class="gd-bigpicture">
                                 <div class="gd-content-auto-width">
-                                    <video class="gd-video" type="video/mp4" src="@Html.Sitecore().Field("Video File", item)" width="100%" controls poster="@Html.Sitecore().ImageFieldSrc("Video Image", item)"></video>
-                                    <div class="gd-nd-slider-text">@Html.Sitecore().Field("Video Description", item)</div>
+                                    @{
+                            LinkField video = item.Fields["Video File"];
+                                    }
+                                    <video class="gd-video" type="video/mp4" src="@video.Url" width="100%" controls poster="@Html.Sitecore().ImageFieldSrc("Video Poster", item)"></video>
+                                    <div class="gd-nd-slider-text">@Html.Sitecore().Field("Video Title", item)</div>
                                     @if (i == children.Count)
                                     {
                                         <dl class="gd-content-details-tags">
@@ -117,9 +120,12 @@
                         else
                         {
                             <div class="gd-bigpicture">
-                                <video class="gd-video" type="video/mp4" src="@Html.Sitecore().FileFieldUrl("Video File", item)" width="100%" controls poster="@Html.Sitecore().ImageFieldSrc("Video Image", item)"></video>
+                                @{
+                            LinkField video = item.Fields["Video File"];
+                                }
+                                <video class="gd-video" type="video/mp4" src="@video.Url" width="100%" controls poster="@Html.Sitecore().ImageFieldSrc("Video Poster", item)"></video>
                             </div>
-                            <div class="gd-nd-slider-text">@Html.Sitecore().Field("Video Description")</div>
+                            <div class="gd-nd-slider-text">@Html.Sitecore().Field("Video Title")</div>
                             if (i == children.Count)
                             {
                                 <dl class="gd-content-details-tags">

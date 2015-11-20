@@ -1,33 +1,26 @@
 ----item----
 version: 1
-id: {FC48785C-626C-4DBA-A2F9-8660F7308DC6}
+id: {0E903602-EAE7-444F-A358-F83C93882A70}
 database: master
-path: /sitecore/templates/Branches/User Defined/Landmark/Page/T23 Page CD/$name/Video
-parent: {DEB69C58-D1F0-4D24-904C-A009B331B9E3}
-name: Video
+path: /sitecore/templates/User Defined/Landmark/Page/T23 Page C/Category Data
+parent: {2F6A4A9C-C7DC-439D-8310-3A2EF0617158}
+name: Category Data
 master: {00000000-0000-0000-0000-000000000000}
-template: {82C6EA0F-D0F2-4F40-BA8A-F5E39A10D5B5}
-templatekey: Video Object
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
 
 ----version----
 language: en
 version: 1
-revision: a1dc6030-5a6e-432b-a8ea-496aed6b39fe
+revision: 93e32750-a850-47cd-b9ff-8cceeda1e31b
 
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150922T061601Z
+20150909T074251Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a1dc6030-5a6e-432b-a8ea-496aed6b39fe
+93e32750-a850-47cd-b9ff-8cceeda1e31b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20150922T061601:635784993616391214Z
+20151028T075428Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

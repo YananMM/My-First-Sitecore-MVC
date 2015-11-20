@@ -104,6 +104,8 @@ namespace Landmark.Classes
         public static readonly String EventTypeArticle = "{0799CC76-D623-49FD-8025-8E9358A13B62}";
         public static readonly string AboutHotelFolder = "{ECC8D83D-3EDD-46DB-A4AB-0E22806BBE3A}";
         public static readonly string VideoObject = "{82C6EA0F-D0F2-4F40-BA8A-F5E39A10D5B5}";
+        public static readonly string T23CoverObject = "{DCB0CBFD-E8BA-49C0-9214-577C18B7BF25}";
+        public static readonly string ContentObject = "{4F401F16-FF51-4484-83FA-B905DAB54D97}";
         public static readonly string ContactUsFormSocailFolder = "{85E16816-67F6-4F3E-AEB6-6BF577B35486}";
         public static readonly string ExlusivesCategoryFolder = "{9E22AA2A-730D-4DB6-9787-5A16E308A91A}";
         public static readonly string DiningByBrandsItem = "{2A670EF7-757F-4FCB-89A6-973DA8AE7DBF}";

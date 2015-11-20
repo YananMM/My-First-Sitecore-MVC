@@ -1,26 +1,33 @@
 ----item----
 version: 1
-id: {08F976E5-66C9-4C4D-AFA9-CF7AB07245F7}
+id: {48DA220E-BFA8-4789-8191-0FD9A3C0DB43}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Video Object/Video Data
-parent: {82C6EA0F-D0F2-4F40-BA8A-F5E39A10D5B5}
-name: Video Data
+path: /sitecore/templates/Branches/User Defined/Landmark/Page/T23 Page C
+parent: {82187095-62EE-4583-B939-FE773A6BF9D4}
+name: T23 Page C
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {35E75C72-4985-4E09-88C3-0EAC6CD1E64F}
+templatekey: Branch
 
 ----version----
 language: en
 version: 1
-revision: 3e5b924a-d1fd-44cf-ac56-5a1ccfe73e2c
+revision: 6648c743-b972-4482-af10-27732fac088a
 
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150922T060905Z
+20150922T053212Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3e5b924a-d1fd-44cf-ac56-5a1ccfe73e2c
+6648c743-b972-4482-af10-27732fac088a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151120T071610:635836005705389380Z
+20151120T062510:635835975103409047Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
