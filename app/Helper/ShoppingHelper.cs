@@ -604,7 +604,7 @@ namespace Landmark.Helper
             {
                 new Guid(ItemGuids.T4PageTemplate), 
                 new Guid(ItemGuids.T27PageTemplate),
-                new Guid(ItemGuids.T23PageABTemplate),
+                new Guid(ItemGuids.T23PageTemplate),
                 new Guid(ItemGuids.T23PageCDTemplate), 
                 new Guid(ItemGuids.T25PageTemplate)
             };
