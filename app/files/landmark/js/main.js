@@ -1994,7 +1994,7 @@ $(document).ready(function() {
         rules: 'required|max_length[50]',
         depends: function() {
           return gdEPselected;
-        }
+        } 
     }, {
         name: 'state',
         rules: 'max_length[50]',
