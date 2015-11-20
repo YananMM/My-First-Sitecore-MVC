@@ -136,7 +136,7 @@ namespace Landmark.Models
         /// Gets or sets a value indicating whether [opt information].
         /// </summary>
         /// <value><c>true</c> if [opt information]; otherwise, <c>false</c>.</value>
-        public bool OptIn { get; set; }
+        public int OptIn { get; set; }
 
         /// <summary>
         /// Gets or sets the created configuration.

@@ -196,43 +196,40 @@ namespace Landmark.Controllers
         {
             try
             {
-                if (ModelState.IsValid)
+                string strRegex = @"^[a-zA-Z0-9_+.-]+\@([a-zA-Z0-9-]+\.)+[a-zA-Z0-9]{2,4}$";
+                Regex re = new Regex(strRegex);
+                if (!re.IsMatch(model.Email))
                 {
-                    string strRegex = @"^[a-zA-Z0-9_+.-]+\@([a-zA-Z0-9-]+\.)+[a-zA-Z0-9]{2,4}$";
-                    Regex re = new Regex(strRegex);
-                    if (!re.IsMatch(model.Email))
-                    {
-                        return Content("Please input correct Email");
-                    }
+                    return Content("Please input correct Email");
+                }
 
-                    using (LandmarkEntities context = new LandmarkEntities())
+                using (LandmarkEntities context = new LandmarkEntities())
+                {
+                    EmailSignup emailSignup = new EmailSignup
                     {
-                        EmailSignup emailSignup = new EmailSignup
-                        {
-                            ID = Guid.NewGuid(),
-                            Title = model.Title,
-                            FirstName = model.FirstName,
-                            LastName = model.LastName,
-                            Email = model.Email,
-                            Channel = model.Channel,
-                            Interest = model.Interests,
-                            Room = model.Room,
-                            Building = model.Building,
-                            Street = model.Street,
-                            Area = model.Area,
-                            State = model.State,
-                            City = model.City,
-                            Country = model.Country,
-                            Postcode = model.Postcode,
-                            District = model.District,
-                            IpAddress = Request.UserHostAddress,
-                            Gender =model.Gender,
-                            OptIn = model.OptIn,
-                            CreatedOn = DateTime.Now
-                        };
-                        context.EmailSignups.Add(emailSignup);
-                        context.SaveChanges();
-                    }
+                        ID = Guid.NewGuid(),
+                        Title = model.Title,
+                        FirstName = model.FirstName,
+                        LastName = model.LastName,
+                        Email = model.Email,
+                        Channel = model.Channel,
+                        Interest = model.Interests,
+                        Room = model.Room,
+                        Building = model.Building,
+                        Street = model.Street,
+                        Area = model.Area,
+                        State = model.State,
+                        City = model.City,
+                        Country = model.Country,
+                        Postcode = model.Postcode,
+                        District = model.District,
+                        IpAddress = Request.UserHostAddress,
+                        //Gender = model.Gender,
+                        OptIn = (model.OptIn == 1) ? true : false,
+                        CreatedOn = DateTime.Now
+                    };
+                    context.EmailSignups.Add(emailSignup);
+                    context.SaveChanges();
                 }
             }
             catch (Exception e)
