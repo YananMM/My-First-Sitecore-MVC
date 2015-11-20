@@ -96,9 +96,9 @@
                                 <div class="panel-content">
                                     @text
                                 </div>
-                                @if (string.IsNullOrEmpty(item.Fields["Slide Button Text"].Value))
+                                @if(!string.IsNullOrEmpty(item.Fields["Slide Button Text"].Value))
                                 {
-                                    @Html.Sitecore().Field("Slide Button Link", item, new { Class = "btn btn-default", text = Html.Sitecore().Field("Slide Button Text", item))
+                                    @Html.Sitecore().Field("Slide Button Link", item, new { @class = "btn btn-default", text = Html.Sitecore().Field("Slide Button Text", item)})
                                 }
                             </div>
                         </div>
