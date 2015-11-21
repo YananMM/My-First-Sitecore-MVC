@@ -52,13 +52,18 @@
                     foreach (var slide in slides)
                     {
                         ImageField image = slide.Fields["Slide Image"];
-                        if (!string.IsNullOrEmpty(image.MediaID.ToString()))
+                        if(image.MediaItem !=null)
                         {
                             <meta property="og:image" content="@LandmarkHelper.GetImageItemAbsoluteUrl(image.MediaID)" />
                         }
                     }
-                    firstImageUrl = LandmarkHelper.GetImageItemAbsoluteUrl(firstImageField.MediaID);
+                    if (firstImageField.MediaItem != null)
+                    {
+                        firstImageUrl = LandmarkHelper.GetImageItemAbsoluteUrl(firstImageField.MediaID);
+                    }
+                        
                 }
+                    
             }
         }
     }
