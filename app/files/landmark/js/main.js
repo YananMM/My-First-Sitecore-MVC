@@ -2183,15 +2183,20 @@ $(document).ready(function() {
     }
     gdUpdateFilters();
 
-     gdAllPromos.imagesLoaded(function() {
-      gdAllPromos.isotope({
-        itemSelector: '.gd-promo-body>*',
-        masonry: {
-          columnWidth: '.gd-promo-body>[class*=gd-promo-box]'
+    gdAllPromos.find('img[data-src]').each(function(){
+      $(this).on('lazyload', function() {
+        if (gdAllPromos.data('isotope')){
+          gdAllPromos.isotope('layout');
+        } else {        
+          gdAllPromos.isotope({
+            itemSelector: '.gd-promo-body>*',
+            masonry: {
+              columnWidth: '.gd-promo-body>[class*=gd-promo-box]'
+            }
+          });
         }
       });
-     });
-
+    });
     
     gdAllPromos.infinitescroll({
       navSelector  : "div.navigation",
