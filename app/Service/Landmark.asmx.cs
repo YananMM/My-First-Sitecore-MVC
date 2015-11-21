@@ -54,7 +54,9 @@ namespace Landmark.Service
                                   {
                                       id = "level-" + floor.ID.ToShortID(),
                                       title = floor.Fields["Floor Title"].Value,
-                                      map = LandmarkHelper.FileFieldSrc("Floor Svg File", floor),
+                                      map = IfBrowserIsIE8()
+                ? LandmarkHelper.ImageFieldSrc("Floor Image", floor)
+                : LandmarkHelper.FileFieldSrc("Floor Svg File", floor),
                                       minimap = "",
                                       locations = (from location in _shopHelper.GetBrandsByFloor(floor)
                                                    select new Location
