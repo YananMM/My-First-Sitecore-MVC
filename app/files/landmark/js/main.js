@@ -1785,41 +1785,65 @@ $(document).ready(function() {
         $(this).addClass('fireonce').css({'background': 'url(' + $(this).data('bgsrc') + ') center 0 no-repeat', 'background-size': 'cover !important' });
       });
       
+      // Information of emulating target's wrapper
+      var gdCoverWrapper  = $('.gd-mainimage').eq(0);
+      var gdCoverWrapperParam    = {
+        // Special treat for gd-mainimage-withdes, cause it has padding bottom
+        'height': gdCoverWrapper.hasClass('gd-mainimage-withdes') ? gdCoverWrapper.height() - 50 : gdCoverWrapper.height(),
+        'width':  gdCoverWrapper.width(),
+        'ratio':  gdCoverWrapper.width() / gdCoverWrapper.height()
+      }
+
       // for main slider, emulate background : cover
       $('.gd-mainimage .carousel-image').each(function() {
-        $(this).addClass('carousel-image-ie8').append('<img src="' + $(this).data('bgsrc') + '" />');
+        $(this).addClass('carousel-image-ie8')
+                .append('<img src="' + $(this).data('bgsrc') + 
+                '" style="min-width:' + gdCoverWrapperParam.width + 'px; min-height:' + gdCoverWrapperParam.height + 'px;" />');
       });
       
-      $('.gd-mainimage').imagesLoaded(function() {
-        var gdWrap  = $('.gd-mainimage').eq(0);
-        var gdWrapW = gdWrap.width();
-        var gdWrapH = gdWrap.height();
-        var gdWrapR = gdWrapW / gdWrapH;
+      // Function for image size & position adjustment
+      function gdCoverImgae(coverImage) {
+        var gdCoverImg  = $(coverImage);
+        var gdCoverImgW = gdCoverImg.width();
+        var gdCoverImgH = gdCoverImg.height();
+
+        if (gdCoverImgH === gdCoverWrapperParam.height) {
+          gdCoverImg.css({
+            'left': (gdCoverWrapperParam.width - gdCoverImg.width()) / 2
+          });
+        }
         
-        $('.gd-mainimage img').each(function() {
-          // 1200 / 640 = 1.875
-          //alert($(this).width() / $(this).height());
-        });
-        
-        $('.gd-mainimage').on('slid.bs.carousel', function(event) {
-          var gdCoverImg  = $('img', $(event.relatedTarget));
-          var gdCoverImgW = gdCoverImg.width();
-          var gdCoverImgH = gdCoverImg.height();
-          
-          alert(gdCoverImg.width() +'...'+ gdCoverImg.height());
-          if (!(gdCoverImgW === gdWrapW || gdCoverImgH === gdWrapH)) {
-            if (gdCoverImgW / gdCoverImgH >= gdWrap) {
-              gdCoverImg.height(gdWrapH);
-              gdCoverImg.css({
-                'left': (gdCoverImg.width() - gdWrapW) / 2 + 'px'
-              });
-            } else {
-              gdCoverImg.width(gdWrapW);
-            }
+        if (!(gdCoverImgW === gdCoverWrapperParam.width || gdCoverImgH === gdCoverWrapperParam.height)) {
+          if (gdCoverImgW / gdCoverImgH >= gdCoverWrapperParam.ratio) {
+            gdCoverImg.height(gdCoverWrapperParam.height);
+            gdCoverImg.css({
+              'left': (gdCoverWrapperParam.width - gdCoverImg.width()) / 2
+            });
+          } else {
+            gdCoverImg.width(gdCoverWrapperParam.width);
+          }
+        }
+      }
+      
+      // Add image loaded marker for every slider
+      $.each($('.item', gdCoverWrapper), function(index, item) {
+        gdCoverWrapper.eq(index).imagesLoaded(function() {
+          $(item).data('cover-loaded', true);
+          // Adjust after first slider loaded
+          if (index === 0) {
+            gdCoverImgae($('img', $(item)));
+            $(item).data('cover-adjusted', true);
           }
         });
       });
       
+      // Adjust after slider actived
+      gdCoverWrapper.on('slid.bs.carousel', function(event) {
+        if (!$(event.relatedTarget).data('cover-adjusted') && $(event.relatedTarget).data('cover-loaded')) {
+          gdCoverImgae($('img', $(event.relatedTarget)));
+          $(event.relatedTarget).data('cover-adjusted', true);
+        }
+      });
     } else {
       $('.gd-carousel-info .carousel-image').each(function() {
         $(this).addClass('fireonce').css({'background': 'url(' + $(this).data('bgsrc') + ') center 0 no-repeat', 'background-size': 'cover !important' });
@@ -1840,6 +1864,7 @@ $(document).ready(function() {
         }
       }
     });
+    
   }
 
   /**********************************************************************************************************
