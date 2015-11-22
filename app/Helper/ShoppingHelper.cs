@@ -538,6 +538,30 @@ namespace Landmark.Helper
             return firstCategory;
         }
 
+        public List<Item> GetCategoryItems(string parent)
+        {
+            Item shoppingCategory = null;
+            Item shopping = null;
+            if (parent==ItemGuids.ShoppingItem)
+            {
+                shoppingCategory = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingCategory);
+                shopping = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
+            }
+            if (parent == ItemGuids.DiningItem)
+            {
+                shoppingCategory = Sitecore.Context.Database.GetItem(ItemGuids.DiningCategory);
+                shopping = Sitecore.Context.Database.GetItem(ItemGuids.DiningItem);
+            }
+
+            var queryCategory = string.Format("fast:{0}//*[{1}]", shoppingCategory.Paths.FullPath, "@@TemplateId='" + ItemGuids.CategoryObjectTemplate + "'");
+            List<Item> firstCategory = (from category in _webDb.SelectItems(queryCategory).ToList()
+                                        from Item item in shopping.Children
+                                        where item.DisplayName == category.DisplayName
+                                        select item).ToList();
+            return firstCategory;
+
+        }
+
         /// <summary>
         /// Gets the related articles.
         /// </summary>
