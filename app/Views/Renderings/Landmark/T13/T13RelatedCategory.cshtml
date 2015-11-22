@@ -8,7 +8,7 @@
 @model RenderingModel
 
 @{
-    ShoppingHelper shoppingHelper=new ShoppingHelper();
+    ShoppingHelper shoppingHelper = new ShoppingHelper();
     List<string> relatedCategorieIDs = shoppingHelper.GetRelatedCategoriesIDs();
     var shoppingItems = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
     foreach (var item in shoppingItems)
@@ -18,7 +18,7 @@
             var category = Sitecore.Context.Database.GetItem(id);
             if (category.DisplayName == item.DisplayName)
             {
-                <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">@item.DisplayName</a></li>
+                <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">@Html.Sitecore().Field("Page Title", item)</a></li>
             }
         }
     }
