@@ -87,7 +87,7 @@
                 <span class="lines"></span>
             </a>
             <div class="sb-search">
-                @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
+                @using (Html.BeginForm("SearchContent", "Search"))
                 {
                     @Html.Sitecore().FormHandler("Search", "SearchContent")
                     <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", searchPlaceHolderItem)" class="sb-search-input form-control">
