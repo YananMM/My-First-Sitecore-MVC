@@ -12,6 +12,15 @@
        url('@{icon-font-path}@{web-font-name}.ttf') format('truetype'),
        url('@{icon-font-path}@{web-font-name}.svg#@{web-font-svg-id}') format('svg');
 }
+/* Special Fonts */
+@font-face {
+    font-family:"meiryo";
+    src:url(/files/landmark/fonts/Meiryo.eot);
+    src:local("Meiryo"),url(/files/landmark/fonts/Meiryo.ttc) format("truetype"); /* non-IE */
+}
+.font_meiryo {
+    font-family:"meiryo";
+}
 // page classes
 
 @import "sprite.less";

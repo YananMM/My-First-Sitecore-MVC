@@ -10,7 +10,7 @@
 <!--[if !IE]><!--><html class="no-js"><!--<![endif]-->
 <head>
     @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.MetaRenderingViewGuid)
-</head>
+</head>@{ CustomReplace = true;}
 <body class="en @LandmarkHelper.GetPageBodyClass()">
     @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.HeaderRenderingViewGuid)
     @Html.Sitecore().Placeholder("main-content")

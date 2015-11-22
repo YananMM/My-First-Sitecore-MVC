@@ -1420,6 +1420,15 @@
   font-weight: normal;
   font-style: normal;
 }
+/* Special Fonts */
+@font-face {
+    font-family:"meiryo";
+    src:url(/files/landmark/fonts/Meiryo.eot);
+    src:local("Meiryo"),url(/files/landmark/fonts/Meiryo.ttc) format("truetype"); /* non-IE */
+}
+.font_meiryo {
+    font-family:"meiryo";
+}
 [class^="icomoon-"],
 [class*=" icomoon-"] {
   font-family: 'icomoon';
@@ -4776,13 +4785,12 @@ h4 a:active {
   color: #999999;
 }
 .gd-mainimage .carousel-inner .item > .carousel-image-ie8 {
+  overflow: hidden;
   position: relative;
 }
 .gd-mainimage .carousel-inner .item > .carousel-image-ie8 img {
   display: block;
   left: 0;
-  min-height: 640px;
-  min-width: 1200px;
   position: absolute;
   top: 0;
 }
