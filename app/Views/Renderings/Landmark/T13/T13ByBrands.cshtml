@@ -14,18 +14,10 @@
     if (!currentItem.Parent.ID.ToString().Equals(ItemGuids.ShoppingItem) && !currentItem.Parent.ID.ToString().Equals(ItemGuids.DiningItem))
     {
         var currentTag = shoppingHelper.GetCurrentCategory(currentItem);
-        @*<h2>
-                @currentTag
-            </h2>*@
-        <h2>@brandModels.Count</h2>
-        @* foreach (var item in brandModels)
-            {
-                <h2>@item.Tags</h2>
-            }*@
+       
         brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
     }
     var brands = brandModels.GroupBy(p => p.Group).ToList();
-    <h2>@brands.Count</h2>
 }
 <div class="masonry-area clearfix">
     @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T13MobileSideBarRendering)
