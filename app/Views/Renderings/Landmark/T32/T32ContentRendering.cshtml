@@ -40,58 +40,58 @@
           
         <div class="gd-controls-m visible-xs">
                     <select class="form-control">
-                        <option value="?type">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem))</option>
+                        <option value="?type" @{if (Request["type"] == null) { <text> selected="selected" </text> }}>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem))</option>
                         @foreach (var type in types)
                         {
                             if (Int32.Parse(type.count) > 0)
                             {
-                            <option value="?type=@type.value">@type.value (@type.count)</option>}
+                                <option value="?type=@type.value" @{if (Request["type"] == type.value) {<text>selected="selected"</text>}}>@type.value (@type.count)</option>}
                         }
                     </select>
         </div>
           
         </div>
      <div class="gd-search">
-        @if (results.Where(result=>result.FilterType== Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem).Fields["Page Title"].Value && result.GetItem().TemplateID.ToString() == ItemGuids.T14ShopDetailsTemplate).ToList().Count>0)
-        {
-            <div class="gd-search-heading">
-                <h3>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.StoreDetailsItem))</h3>
-            </div>
-        }
-         
+         @if (results.Where(result => result.FilterType == Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem).Fields["Page Title"].Value && result.GetItem().TemplateID.ToString() == ItemGuids.T14ShopDetailsTemplate).ToList().Count > 0)
+         {
+             <div class="gd-search-heading">
+                 <h3>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.StoreDetailsItem))</h3>
+             </div>
+         }
 
-         
+
+
          <div class="gd-search-body">
              <ol>
                  @foreach (var result in results)
                  {
-                     if ( result.GetItem().TemplateID.ToString() == ItemGuids.T14ShopDetailsTemplate)
+                     if (result.GetItem().TemplateID.ToString() == ItemGuids.T14ShopDetailsTemplate)
                      {
                          <li>
                              <div class="gd-search-box2">
                                  <div class="row">
                                      <div class="col-sm-9">
-                                         <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image",result.GetItem())"></a>
-                                         <h4><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))">@Html.Sitecore().Field("Brand Title",result.GetItem())</a></h4>
-                                         
-                                             @{
-                                                    var floor = shoppingHelper.GetShopFloor(result.GetItem());
-                                             }
-                                             @if(floor != null)
-                         {
-                                                 <p>
-                             <span class="icomoon-location2"></span>@Html.Sitecore().Field("Address",result.GetItem()),@floor["Floor Title"],@floor.Parent["Building Title"]
-                                                     </p>
-                         }
+                                         <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", result.GetItem())"></a>
+                                         <h4><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))">@Html.Sitecore().Field("Brand Title", result.GetItem())</a></h4>
+
+                                         @{
+                                             var floor = shoppingHelper.GetShopFloor(result.GetItem());
+                                         }
+                                         @if (floor != null)
+                                         {
+                                             <p>
+                                                 <span class="icomoon-location2"></span>@Html.Sitecore().Field("Address", result.GetItem()),@floor["Floor Title"],@floor.Parent["Building Title"]
+                                             </p>
+                                         }
                                          <p>
-                                             <span class="icomoon-phone"></span>@Html.Sitecore().Field("Contact",result.GetItem())
+                                             <span class="icomoon-phone"></span>@Html.Sitecore().Field("Contact", result.GetItem())
                                          </p>
                                          <a href="@Html.Sitecore().Field("Official Website Url")" class="gd-search-link-brief">
                                              @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.OfficialWebsiteItem))<span class="icomoon-chevron-small-right"></span></a>
                                      </div>
                                      <div class="col-sm-3">
                                          <h5>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.OpenningHoursItem))</h5>
-                                         <p>@Html.Sitecore().Field("Opening Hours",result.GetItem())
+                                         <p>@Html.Sitecore().Field("Opening Hours", result.GetItem())
                                          </p>
                                      </div>
                                  </div>
@@ -112,6 +112,9 @@
                  }
              </ol>
          </div>
+     </div>
+     <div class="navigation">
+         <a href="?page=2@{if (Request["type"] != null){<text>&type=@Request["type"]</text>}}"></a>
      </div>
     </div>
     
