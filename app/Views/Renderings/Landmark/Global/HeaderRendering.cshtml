@@ -103,23 +103,23 @@
 
                     <div class="language">
                         @foreach (var lan in languages)
+            {
+                if (languageFolderGuidItem != null && languageFolderGuidItem.Children.Count != 0)
+                {
+                    foreach (Item languageText in languageFolderGuidItem.Children)
+                    {
+                        if (languageText.DisplayName.ToLower() == lan.Name.ToLower())
                         {
-                            if (languageFolderGuidItem != null && languageFolderGuidItem.Children.Count != 0)
-                            {
-                                foreach (Item languageText in languageFolderGuidItem.Children)
-                                {
-                                    if (languageText.DisplayName == lan.Name)
-                                    {
-                                        <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, @lan.Name)" hreflang="@(lan.Name=="en"?"en":lan.Name=="zh_CN"?"zh-Hans":"zh-Hant")" class="lang-cn">@Html.Sitecore().Field("Value", languageText)</a>
-                                    }
-                                }
-                            }
-                            if (i != languages.Count())
-                            {
-                                <span class="gap">|</span>
-                            }
-                            i++;
+                            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, @lan.Name)" hreflang="@(lan.Name=="en"?"en":lan.Name=="zh_CN"?"zh-Hans":"zh-Hant")" class="lang-cn">@Html.Sitecore().Field("Value", languageText)</a>
                         }
+                    }
+                }
+                if (i != languages.Count())
+                {
+                    @Html.Raw(" | ")
+                }
+                i++;
+            }
                     </div>
                 </div>
             </div>
