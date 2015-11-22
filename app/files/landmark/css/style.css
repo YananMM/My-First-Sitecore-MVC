@@ -7001,6 +7001,10 @@ dl.gd-content-details-tags dd a:active {
     width: 33%;
   }
 }
+.t25 .gd-mainimage-brief,
+.t33 .gd-mainimage-brief{
+    text-align: left;
+}
 .t25 .gd-brief,
 .t33 .gd-brief {
   margin-top: 53px;
