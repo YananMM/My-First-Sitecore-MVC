@@ -832,55 +832,55 @@ $(document).ready(function() {
   /**********************************************************************************************************
    * Brands
    **********************************************************************************************************/
-  $('.t13').each(function(){
-    $('.masonry-area .brand-box-area').masonry({
-      itemSelector: '.brand-box',
-      isFitWidth: true
-    });
+    $('.t13').each(function() {
+        $('.masonry-area .brand-box-area').masonry({
+            itemSelector: '.brand-box',
+            isFitWidth: true
+        });
 
-    $('select.selectpicker').selectpicker({
-      size: false
-    });
+        $('select.selectpicker').selectpicker({
+            size: false
+        });
 
 
-    // brands link scroll
-    $('.brand-menu-area .brands-gap>li>a').on('click', function(e){
-      
-      var gdCurrentLoc = location.pathname;
-          gdCurrentLoc = gdCurrentLoc.slice( gdCurrentLoc.lastIndexOf('/') );
-      var gdAnchorLoc  = $(this).attr('href');
-      var gdAnchor     = gdAnchorLoc.slice( gdAnchorLoc.indexOf('#') );
-      
-      if ( gdAnchorLoc.indexOf('/') > -1 ) {
-        gdAnchorLoc = gdAnchorLoc.slice( gdAnchorLoc.lastIndexOf('/'), gdAnchorLoc.lastIndexOf('#') );
-      } else if ( gdAnchorLoc.slice( 0, 1) === '#' ) {
-        gdAnchorLoc = '';
-      } else {
-        gdAnchorLoc = gdAnchorLoc.slice( 0, gdAnchorLoc.indexOf('#') )
-      }
+        // brands link scroll
+        $('.brand-menu-area .brands-gap>li>a').on('click', function(e) {
 
-      if ( gdAnchorLoc === gdCurrentLoc || gdAnchorLoc === '' ) {
-        e.preventDefault();
-        if($(this).parents('.popup-overlay').length){
-          $(this).parents('.popup-overlay').find('.close-popup').trigger('click')
+            var gdCurrentLoc = location.pathname;
+            gdCurrentLoc = gdCurrentLoc.slice(gdCurrentLoc.lastIndexOf('/'));
+            var gdAnchorLoc = $(this).attr('href');
+            var gdAnchor = gdAnchorLoc.slice(gdAnchorLoc.indexOf('#'));
+
+            if (gdAnchorLoc.indexOf('/') > -1) {
+                gdAnchorLoc = gdAnchorLoc.slice(gdAnchorLoc.lastIndexOf('/'), gdAnchorLoc.lastIndexOf('#'));
+            } else if (gdAnchorLoc.slice(0, 1) === '#') {
+                gdAnchorLoc = '';
+            } else {
+                gdAnchorLoc = gdAnchorLoc.slice(0, gdAnchorLoc.indexOf('#'))
+            }
+
+            if (gdAnchorLoc === gdCurrentLoc || gdAnchorLoc === '') {
+                e.preventDefault();
+                if ($(this).parents('.popup-overlay').length) {
+                    $(this).parents('.popup-overlay').find('.close-popup').trigger('click')
+                }
+                $.scrollTo(gdAnchor, 1000, { axis: 'y', offset: -$('.brand-list').offset().top + (isDesktop() ? 160 : 70) })
+            }
+        });
+
+        // T13 Anchor Link
+        var gdAnchorLink = function() {
+            var gdUrl = location.href;
+            var gdTag;
+            if (gdUrl.indexOf('#') > 0) {
+                gdTag = gdUrl.slice(gdUrl.indexOf('#'));
+                $.scrollTo(gdTag, 1000, { axis: 'y', offset: -$('.brand-list').offset().top + (isDesktop() ? 160 : 70) })
+            }
         }
-        $.scrollTo(gdAnchor, 1000, {axis: 'y', offset: -$('.brand-list').offset().top + (isDesktop()? 160 : 70)})
-      }
-    });
+        gdAnchorLink();
 
-    // T13 Anchor Link
-    var gdAnchorLink = function() {
-      var gdUrl = location.href;
-      var gdTag;
-      if (gdUrl.indexOf('#') > 0) {
-        gdTag = gdUrl.slice(gdUrl.indexOf('#'));
-        $.scrollTo(gdTag, 1000, {axis: 'y', offset: -$('.brand-list').offset().top + (isDesktop()? 160 : 70)})
-      }
-    }
-    gdAnchorLink();
-
-    if(!isPhone()){
-      /*var $pageTitle = $('.page-title'),
+        if (!isPhone()) {
+            /*var $pageTitle = $('.page-title'),
         $sidebar = $('.brand-menu.hidden-xs'),
         titleH = $pageTitle.outerHeight() + $('.page-header').height();
       if (!isIE8()){
@@ -929,64 +929,64 @@ $(document).ready(function() {
       $(window)
       .on('scroll.handleSidebar touchmove.handleSidebar', handleSidebar)
       .on('resize', handleSidebar);*/
-    } else{
-      bindPopups();
-    }
+        } else {
+            bindPopups();
+        }
 
-    // "GO TO" form
-    var urlGetCategories = $('form.form-goto').data('handler-get-catetories'),
-      categories = [];
+        // "GO TO" form
+        var urlGetCategories = $('form.form-goto').data('handler-get-catetories'),
+            categories = [];
 
-    $.getJSON(urlGetCategories)
-    .done(function(json){
-      categories = json;
-    })
-    /*.fail(function(){
+        $.getJSON(urlGetCategories)
+                .done(function(json) {
+                    categories = json;
+                })
+            /*.fail(function(){
       console.log('fail', arguments)
     })*/;
-    
-    // handle each parent category select
-    $('form.form-goto').each(function(){
-      var form = this,
-        $form = $(this),
-         $parentTemplateId = $('input[name=parentTemplateId]', form),
-         $pageTemplateId = $('input[name=pageTemplateId]', form),
-        $category = $('select[name=category]', form),
-        $childcategory = $('select[name=childcategory]', form);
 
-      if ($parentTemplateId.val() === $pageTemplateId.val()) {
-          $childcategory.selectpicker('hide');
-          $childcategory.attr('disabled', 'disabled');
-      }
+        // handle each parent category select
+        $('form.form-goto').each(function() {
+            var form = this,
+                $form = $(this),
+                $parentTemplateId = $('input[name=parentTemplateId]', form),
+                $pageTemplateId = $('input[name=pageTemplateId]', form),
+                $category = $('select[name=category]', form),
+                $childcategory = $('select[name=childcategory]', form);
 
-      $category.on('change', function(){
-        var categoryval = $category.val(),
-          children = [];
+            if ($parentTemplateId.val() === $pageTemplateId.val()) {
 
-        for(var i = 0; i < categories.length; i++){
-          var category = categories[i];
-          if(category.value == categoryval){
-            children = category.children;
-          }
-        }
+                $childcategory.selectpicker('hide');
+                $childcategory.attr('disabled', 'disabled');
+            }
 
-        $childcategory.html('');
-        if(children.length) {
-          $childcategory.selectpicker('show');
-          $childcategory.removeAttr('disabled');
-        } else {
-          $childcategory.selectpicker('hide');
-          $childcategory.attr('disabled', 'disabled');
-        }
-        for(var j = 0; j < children.length; j++){
-          var child = children[j];
-          $('<option value="' + child.value + '">' + child.text.toUpperCase() +'</option>').appendTo($childcategory);
-        }
-        $childcategory.selectpicker('refresh')
-      })
-    })
+            $category.on('change', function() {
+                var categoryval = $category.val(),
+                    children = [];
 
-  })
+                for (var i = 0; i < categories.length; i++) {
+                    var category = categories[i];
+                    if (category.value == categoryval) {
+                        children = category.children;
+                    }
+                }
+
+                $childcategory.html('');
+                if (children.length) {
+                    $childcategory.selectpicker('show');
+                    $childcategory.removeAttr('disabled');
+                } else {
+                    $childcategory.selectpicker('hide');
+                    $childcategory.attr('disabled', 'disabled');
+                }
+                for (var j = 0; j < children.length; j++) {
+                    var child = children[j];
+                    $('<option value="' + child.value + '">' + child.text.toUpperCase() + '</option>').appendTo($childcategory);
+                }
+                $childcategory.selectpicker('refresh');
+            });
+        });
+    });
 
   //IE8 Header scroll fix
   if (isIE8()){

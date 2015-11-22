@@ -10,6 +10,7 @@
     var countryFolder = currentItem.Children.SingleOrDefault(p => p.DisplayName == "Countries");
     var titleFolder = currentItem.Children.SingleOrDefault(p => p.DisplayName == "Title Selects");
     var districtFolder = currentItem.Children.SingleOrDefault(p => p.DisplayName == "Districts");
+
     var interests = interestsFolder.Children.ToList();
     var countries = countryFolder.Children.ToList();
     var titleSelects = titleFolder.Children.ToList();
@@ -65,7 +66,7 @@
                                                 {
                                                     foreach (var item in titleSelects)
                                                     {
-                                                        <li><a href="javascript:;" data-value="@item.Fields["Value"]">@item.Fields["Value"]</a></li>
+                                                        <li><a href="javascript:;" data-value="@item.Fields["Value"]">@item.Fields["Text"]</a></li>
                                                     }
                                                 }
                                             </ul>
@@ -164,7 +165,7 @@
                                                         {
                                                             foreach (var item in districts)
                                                             {
-                                                                <span class="gd-checkbox" data-value="@item.Fields["Value"]">@item.Fields["Value"]</span>
+                                                                <span class="gd-checkbox" data-value="@item.Fields["Value"]">@item.Fields["Text"]</span>
                                                             }
                                                         }
                                                     </div>
@@ -237,7 +238,7 @@
                                                     {
                                                         foreach (var item in list1)
                                                         {
-                                                            <span class="gd-checkbox" data-value="@item.Fields["Value"]">@item.Fields["Value"]</span>
+                                                            <span class="gd-checkbox" data-value="@item.Fields["Value"]">@item.Fields["Text"]</span>
                                                         }
                                                     }
                                                 </div>
@@ -246,7 +247,7 @@
                                                     {
                                                         foreach (var item in list2)
                                                         {
-                                                            <span class="gd-checkbox" data-value="@item.Fields["Value"]">@item.Fields["Value"]</span>
+                                                            <span class="gd-checkbox" data-value="@item.Fields["Value"]">@item.Fields["Text"]</span>
                                                         }
                                                     }
                                                 </div>

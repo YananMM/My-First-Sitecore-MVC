@@ -6,30 +6,39 @@
     ShoppingHelper shoppingHelper = new ShoppingHelper();
     var currentItem = Sitecore.Context.Item;
     Item parentItem = currentItem.Parent;
-    while (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
+    while (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !parentItem.ID.ToString().Equals(ItemGuids.DiningItem) && parentItem.TemplateID.ToString() != ItemGuids.T11PageTemplate)
     {
         parentItem = parentItem.Parent;
     }
-    var brandModels = shoppingHelper.GetBrandModels(parentItem);
-    if (!Sitecore.Context.Item.Parent.ID.ToString().Equals(ItemGuids.ShoppingItem) && !Sitecore.Context.Item.Parent.ID.ToString().Equals(ItemGuids.DiningItem))
+    var brandModels = shoppingHelper.GetBrandModels(parentItem.Parent);
+    if (!currentItem.Parent.ID.ToString().Equals(ItemGuids.ShoppingItem) && !currentItem.Parent.ID.ToString().Equals(ItemGuids.DiningItem))
     {
         var currentTag = shoppingHelper.GetCurrentCategory(currentItem);
+        @*<h2>
+                @currentTag
+            </h2>*@
+        <h2>@brandModels.Count</h2>
+        @* foreach (var item in brandModels)
+            {
+                <h2>@item.Tags</h2>
+            }*@
         brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
     }
     var brands = brandModels.GroupBy(p => p.Group).ToList();
+    <h2>@brands.Count</h2>
 }
 <div class="masonry-area clearfix">
-        @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T13MobileSideBarRendering)
-        <div class="brand-box-area">
-            @foreach (var items in brands)
+    @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T13MobileSideBarRendering)
+    <div class="brand-box-area">
+        @foreach (var items in brands)
+        {
+            <div class="brand-box brand-box-letter" id="@items.First().Group.ToLower()">@items.First().Group</div>
+            foreach (var item in items.OrderBy(i => i.BrandItem.DisplayName))
             {
-                <div class="brand-box brand-box-letter" id="@items.First().Group.ToLower()">@items.First().Group</div>
-                foreach (var item in items.OrderBy(i => i.BrandItem.DisplayName))
-                {
-                    <a class="brand-box" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.BrandItem))" title="@item.BrandItem["Brand Title"]">
-                        <img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item.BrandItem)" alt="@Html.Sitecore().Field("Brand Title", item.BrandItem)">
-                    </a>
-                }
+                <a class="brand-box" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.BrandItem))" title="@item.BrandItem["Brand Title"]">
+                    <img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", item.BrandItem)" alt="@Html.Sitecore().Field("Brand Title", item.BrandItem)">
+                </a>
             }
-        </div>
+        }
     </div>
+</div>

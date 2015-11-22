@@ -13,6 +13,9 @@
     List<TextValue> categories = shoppingHelper.GetFirstCategory(currentPage.ID.ToString());
     var category = currentPage.Parent.Parent.DisplayName;
     List<TextValue> subCategories = new List<TextValue>();
+    var subpage = currentPage.Parent.DisplayName;
+
+
 }
 
 <div class="visible-xs-block">
@@ -56,7 +59,7 @@
                             {
                                 <option value="@item.value" @if (category == item.text) { <text>
                                         selected="selected"
-                                        </text>   }>
+                                        </text>  }>
                                     @item.text.ToUpper()
                                 </option>
                             }
@@ -76,13 +79,17 @@
                                     var subcategory = currentPage.Parent.DisplayName;
                                     <option value="@item.value" @if (subcategory == item.text) { <text>
                                             selected="selected"
-                                            </text>}>
+                                            </text> }>
                                         @item.text.ToUpper()
                                     </option>
                                 }
                             }
                         </select>
                     </div>
+
+                    <input type="hidden" value="@currentPage.Parent.TemplateID.ToString()" name="parentTemplateId" class="selectpicker form-control" />
+                    <input type="hidden" value="@ItemGuids.T11PageTemplate" name="pageTemplateId" class="selectpicker form-control" />
+
                     <button type="submit" class="btn btn-default">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.GoGuidItem))</button>
                 </div>
             </form>
