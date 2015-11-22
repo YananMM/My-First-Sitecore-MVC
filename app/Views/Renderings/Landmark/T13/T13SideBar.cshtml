@@ -7,38 +7,49 @@
 @using Sitecore.Data.Items
 @model RenderingModel
 @{
+    ShoppingHelper shoppingHelper = new ShoppingHelper();
     string[] alphabetsStrings = new[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
-    Item currentPage = Sitecore.Context.Item;
+    Item currentItem = Sitecore.Context.Item;
     string allByBrandsPageID = ItemGuids.AllByBrandsPage;
     string allByBuildingsPageID = ItemGuids.AllByBuildingsPage;
-    Item parentItem = currentPage.Parent;
+    Item pageItem = currentItem.Parent;
+    Item parentItem = currentItem.Parent;
 
     while (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !parentItem.ID.ToString().Equals(ItemGuids.DiningItem) && parentItem.TemplateID.ToString() != ItemGuids.T11PageTemplate)
     {
         parentItem = parentItem.Parent;
     }
-    ShoppingHelper shoppingHelper = new ShoppingHelper();
-    List<TextValue> categories = shoppingHelper.GetFirstCategory(currentPage.ID.ToString());
+    List<TextValue> categories = shoppingHelper.GetFirstCategory(currentItem.ID.ToString());
     string allbrands = string.Empty;
+    List<LandmarkBrandModel> brandModels = new List<LandmarkBrandModel>();
+    if (pageItem.TemplateID.ToString() == ItemGuids.ShoppingSubCategoryPageObject)
+    {
+        pageItem = currentItem.Parent.Parent.Parent;
+    }
+    else if (pageItem.TemplateID.ToString() == ItemGuids.T11PageTemplate)
+    {
+        pageItem = currentItem.Parent.Parent;
+    }
     if (shoppingHelper.isDining)
     { allbrands = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.DiningAllByBrandPage))); }
     if (shoppingHelper.isShop)
     { allbrands = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage))); }
 
-    var brandModels = shoppingHelper.GetBrandModels(parentItem);
-    if (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
+    brandModels = shoppingHelper.GetBrandModels(pageItem);
+
+    if (!currentItem.Parent.ID.ToString().Equals(ItemGuids.ShoppingItem) && !currentItem.Parent.ID.ToString().Equals(ItemGuids.DiningItem))
     {
-        var currentTag = shoppingHelper.GetCurrentCategory(currentPage);
+        var currentTag = shoppingHelper.GetCurrentCategory(currentItem);
         brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
     }
-    var category = currentPage.Parent.Parent.DisplayName;
-    if (currentPage.Parent.Parent.ID.ToString() == ItemGuids.DiningItem || currentPage.Parent.TemplateID.ToString() == ItemGuids.T11PageTemplate)
+    var category = currentItem.Parent.Parent.DisplayName;
+    if (currentItem.Parent.Parent.ID.ToString() == ItemGuids.DiningItem || currentItem.Parent.TemplateID.ToString() == ItemGuids.T11PageTemplate)
     {
-        category = currentPage.Parent.DisplayName;
+        category = currentItem.Parent.DisplayName;
     }
 
     List<TextValue> subCategories = new List<TextValue>();
-    var subpage = currentPage.Parent.DisplayName;
+    var subpage = currentItem.Parent.DisplayName;
 }
 <div class="brand-menu hidden-xs">
     <div class="brand-menu-area">
@@ -48,31 +59,32 @@
                 @for (int i = 0; i < alphabetsStrings.Length; i++)
                 {
                     if (shoppingHelper.checkBrandStatus(brandModels, alphabetsStrings[i]))
-                    {
-                        string href = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(currentPage.Parent)) + "/by-brands#" + alphabetsStrings[i].ToLower();
-                        <li><a href="@href">@alphabetsStrings[i].ToUpper()</a></li>
-                    }
-                    else
-                    {
-                        <li class="disabled">@alphabetsStrings[i].ToUpper()</li>
-                    }
+                        {
+                            string href = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(currentItem.Parent)) + "/by-brands#" + alphabetsStrings[i].ToLower();
+                            <li><a href="@href">@alphabetsStrings[i].ToUpper()</a></li>
+                        }
+                        else
+                        {
+                            <li class="disabled">@alphabetsStrings[i].ToUpper()</li>
+                        }
                 }
+                
             </ul>
             <h3>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.ByBuidingsGuidItem))</h3>
             <ul class="brands-gap">
                 @{
                     List<Item> buidings = LandmarkHelper.GetBuildings();
-                    Item firstParentItem = currentPage.Parent;
-                    Item allByBuildings = firstParentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) ? Sitecore.Context.Database.GetItem(ItemGuids.AllByBuildingsPage) : currentPage.Parent.Children.Where(item => item.DisplayName == "By Buildings").FirstOrDefault();
+                    Item firstParentItem = currentItem.Parent;
+                    Item allByBuildings = firstParentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) ? Sitecore.Context.Database.GetItem(ItemGuids.AllByBuildingsPage) : currentItem.Parent.Children.Where(item => item.DisplayName == "By Buildings").FirstOrDefault();
                 }
 
                 @foreach (Item building in buidings)
                 {
-                    string href = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(currentPage.Parent)) + "/by-buildings#" + building.DisplayName.ToLower().Replace(" ", "");
+                    string href = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(currentItem.Parent)) + "/by-buildings#" + building.DisplayName.ToLower().Replace(" ", "");
                     <li><a href="@href">@building.Fields["Building Title"].Value</a></li>
                 }
             </ul>
-            <form class="form-goto" data-handler-get-catetories="/Service/GetCategoryJson.ashx?id=@currentPage.ID.ToString()" action="@Url.Action("GoTo", "Shopping")">
+            <form class="form-goto" data-handler-get-catetories="/Service/GetCategoryJson.ashx?id=@currentItem.ID.ToString()" action="@Url.Action("GoTo", "Shopping")">
                 <h3>
                     @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.GoToGuidItem))
                     <a class="sub-title" href="@allbrands">
@@ -86,7 +98,7 @@
 
                             <option value="@item.value" @if (category == item.DisplayName) { <text>
                                     selected="selected"
-                                    </text>                       }>
+                                    </text>                         }>
                                 @item.text.ToUpper()
                             </option>
                         }
@@ -105,20 +117,20 @@
                                 {
                                     <option value="@item.value" @if (subpage == item.DisplayName) { <text>
                                             selected="selected"
-                                            </text>           }>
+                                            </text>             }>
                                         @item.text.ToUpper()
                                     </option>
                                 }
                             }
                         </select>
                     }
-                    <input type="hidden" value="@currentPage.Parent.TemplateID.ToString()" name="parentTemplateId" class="selectpicker form-control" />
+                    <input type="hidden" value="@currentItem.Parent.TemplateID.ToString()" name="parentTemplateId" class="selectpicker form-control" />
                     <input type="hidden" value="@ItemGuids.T11PageTemplate" name="pageTemplateId" class="selectpicker form-control" />
 
                     <button type="submit" class="btn btn-default">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.GoGuidItem))</button>
                 </div>
             </form>
-            @if (allByBrandsPageID != currentPage.ID.ToString() && allByBuildingsPageID != currentPage.ID.ToString())
+            @if (allByBrandsPageID != currentItem.ID.ToString() && allByBuildingsPageID != currentItem.ID.ToString())
             {
                 <h3>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.SeeAlsoGuidItem))</h3>
                 <ul>
