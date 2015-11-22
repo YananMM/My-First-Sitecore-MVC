@@ -66,7 +66,7 @@
                                                 {
                                                     foreach (var item in titleSelects)
                                                     {
-                                                        <li><a href="javascript:;" data-value="@item.Fields["Value"]">@item.Fields["Text"]</a></li>
+                                                        <li><a href="javascript:;" data-value="@Html.Sitecore().Field("Value", item)">@Html.Sitecore().Field("Text", item)</a></li>
                                                     }
                                                 }
                                             </ul>
@@ -165,7 +165,7 @@
                                                         {
                                                             foreach (var item in districts)
                                                             {
-                                                                <span class="gd-checkbox" data-value="@item.Fields["Value"]">@item.Fields["Text"]</span>
+                                                                <span class="gd-checkbox" data-value="@Html.Sitecore().Field(" value", item)">@Html.Sitecore().Field("Text", item)</span>
                                                             }
                                                         }
                                                     </div>
@@ -208,7 +208,7 @@
                                                             {
                                                                 foreach (var item in countries)
                                                                 {
-                                                                    <li><a href="javascript:;" data-value="@item.Fields["Value"]" data-code="@item.Fields["Value"]">@item.Fields["Text"]</a></li>
+                                                                    <li><a href="javascript:;" data-value="@Html.Sitecore().Field("Value", item)" data-code="@Html.Sitecore().Field("Value", item)">@Html.Sitecore().Field("Text", item)</a></li>
                                                                 }
                                                             }
                                                         </ul>
@@ -238,7 +238,7 @@
                                                     {
                                                         foreach (var item in list1)
                                                         {
-                                                            <span class="gd-checkbox" data-value="@item.Fields["Value"]">@item.Fields["Text"]</span>
+                                                            <span class="gd-checkbox" data-value="@Html.Sitecore().Field("Value", item)">@Html.Sitecore().Field("Text", item)</span>
                                                         }
                                                     }
                                                 </div>
@@ -247,7 +247,7 @@
                                                     {
                                                         foreach (var item in list2)
                                                         {
-                                                            <span class="gd-checkbox" data-value="@item.Fields["Value"]">@item.Fields["Text"]</span>
+                                                            <span class="gd-checkbox" data-value="@Html.Sitecore().Field("Value", item)">@Html.Sitecore().Field("Text", item)</span>
                                                         }
                                                     }
                                                 </div>
@@ -256,7 +256,7 @@
                                                         <span class="gd-checkbox" data-value="">
                                                             @Html.Sitecore().Field("Other Label") (@Html.Sitecore().Field("Specify")
                                                         </span>
-                                                        <input type="text" class="form-control" name="others" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "OtherInterests"))" disabled=" disabled">
+                                                        <input type="text" class="form-control" name="others" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "OtherInterests"))" disabled="disabled">
                                                         <span>)</span>
                                                     </div>
                                                 </div>

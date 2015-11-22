@@ -13,14 +13,21 @@ templatekey: Text Object
 field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
 name: Value
 key: value
-content-length: 2
+content-length: 7
 
-時裝
+Fashion
 ----version----
 language: en
 version: 1
-revision: 8586c69b-4465-4b3b-aba3-b0d4e23c4ded
+revision: a1f1d507-c630-44af-9d55-6bba9d5e3dc6
 
+----field----
+field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
+name: Text
+key: text
+content-length: 7
+
+Fashion
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8586c69b-4465-4b3b-aba3-b0d4e23c4ded
+a1f1d507-c630-44af-9d55-6bba9d5e3dc6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150921T022341:635783990213309840Z
+20151122T051144:635837659045670233Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -52,8 +59,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: aadbd140-bede-431e-9d47-e3b39bbcd1a0
+revision: f689a2bc-e365-4086-bddb-83244e57038c
 
+----field----
+field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
+name: Text
+key: text
+content-length: 2
+
+时尚
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -81,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-aadbd140-bede-431e-9d47-e3b39bbcd1a0
+f689a2bc-e365-4086-bddb-83244e57038c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151019T115503:635808525033853410Z
+20151122T051626:635837661864391454Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -99,8 +113,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: dd8dd4e8-eb39-4615-ab4c-8732df8a3bb3
+revision: 434f0c00-7a72-44d3-8c01-c8755608b0ea
 
+----field----
+field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
+name: Text
+key: text
+content-length: 2
+
+時尚
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -128,14 +149,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dd8dd4e8-eb39-4615-ab4c-8732df8a3bb3
+434f0c00-7a72-44d3-8c01-c8755608b0ea
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151019T115454:635808524946254286Z
+20151122T051904:635837663443771790Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

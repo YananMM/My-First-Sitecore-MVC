@@ -13,14 +13,21 @@ templatekey: Text Object
 field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
 name: Value
 key: value
-content-length: 2
+content-length: 5
 
-音樂
+Music
 ----version----
 language: en
 version: 1
-revision: d2903aa7-bb39-403c-9cd2-9f6bf012d014
+revision: 443a294d-bcbc-4cf9-9b61-5a8fa07e399b
 
+----field----
+field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
+name: Text
+key: text
+content-length: 5
+
+Music
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d2903aa7-bb39-403c-9cd2-9f6bf012d014
+443a294d-bcbc-4cf9-9b61-5a8fa07e399b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150921T022627:635783991876144949Z
+20151122T051244:635837659640544257Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -52,8 +59,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 4f39bd8d-282c-4209-b4f8-b30c2cbe9f36
+revision: 958812cc-fe82-4d4f-ae40-3cbb9e09439e
 
+----field----
+field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
+name: Text
+key: text
+content-length: 2
+
+音乐
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -81,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4f39bd8d-282c-4209-b4f8-b30c2cbe9f36
+958812cc-fe82-4d4f-ae40-3cbb9e09439e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151019T115650:635808526100236693Z
+20151122T051649:635837662096214714Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -99,8 +113,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: dcfcf0f2-1996-49d5-a524-4af1e42a203d
+revision: 9ef52e74-1160-4369-8c51-4c50125af0e4
 
+----field----
+field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
+name: Text
+key: text
+content-length: 2
+
+音樂
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -128,14 +149,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dcfcf0f2-1996-49d5-a524-4af1e42a203d
+9ef52e74-1160-4369-8c51-4c50125af0e4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151019T115641:635808526010588719Z
+20151122T051822:635837663021467635Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -13,14 +13,21 @@ templatekey: Text Object
 field: {8A0F7ABA-2278-4FF0-AF55-89CAC9C2DA0E}
 name: Value
 key: value
-content-length: 3
+content-length: 2
 
-香港島
+HK
 ----version----
 language: en
 version: 1
-revision: 47f14ec0-33bd-4e1a-9be6-55dbbce4eb0e
+revision: 77a2c11f-5cbf-472d-b6b1-992a0eb2b2a1
 
+----field----
+field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
+name: Text
+key: text
+content-length: 2
+
+HK
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-47f14ec0-33bd-4e1a-9be6-55dbbce4eb0e
+77a2c11f-5cbf-472d-b6b1-992a0eb2b2a1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150921T080431:635784194718916892Z
+20151122T052428:635837666682127013Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -52,8 +59,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 735fb95d-e128-41f1-95d1-17f57c4617be
+revision: d8d5fe17-895c-4299-b450-9eb3e8f26645
 
+----field----
+field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
+name: Text
+key: text
+content-length: 3
+
+香港岛
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -81,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-735fb95d-e128-41f1-95d1-17f57c4617be
+d8d5fe17-895c-4299-b450-9eb3e8f26645
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151106T141751Z
+20151122T052416:635837666567980484Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -99,8 +113,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 52f096e5-bbb6-4cdd-b4fe-445a0dc2c155
+revision: 300bbf53-3f35-4d74-94cd-277cf0f1fee5
 
+----field----
+field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
+name: Text
+key: text
+content-length: 3
+
+香港島
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -128,14 +149,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-52f096e5-bbb6-4cdd-b4fe-445a0dc2c155
+300bbf53-3f35-4d74-94cd-277cf0f1fee5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151106T141741Z
+20151122T052312:635837665929133944Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
