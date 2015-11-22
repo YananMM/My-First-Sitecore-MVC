@@ -18,7 +18,21 @@
 <link rel="stylesheet" type="text/css" href="/files/landmark/css/style.css" />
 <link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/scrollbar/jquery.mCustomScrollbar.min.css" />
 <link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/slick/slick.css" />
-<link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/slick/slick-theme.css"/>
+@{
+    var currlang = Context.Request.Url.PathAndQuery.Split('/')[1];
+    var hreflangs = new Dictionary<string, string>
+    {
+        {"en", "en"},
+        {"sc", "zh-Hans"},
+        {"tc", "zh-Hant"}
+    };
+    foreach (var hreflang in hreflangs)
+    {
+        if (hreflang.Key == currlang){ continue;}
+<link rel="alternate" href="@LandmarkHelper.GetCurrentItemUrl().Replace(currlang, hreflang.Key)" hreflang="@hreflang.Value" />
+    }
+}
 <meta name="description" content="@Sitecore.Context.Item.Fields["Meta Description"].Value" />
 <meta name="keywords" content="@Sitecore.Context.Item.Fields["Meta Keywords"].Value" />
 <meta property="og:type" content="article" />
