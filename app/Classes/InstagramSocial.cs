@@ -14,8 +14,16 @@ namespace Landmark.Classes
 {
     public class InstagramSocial
     {
+        private static List<SocialImage> _cache;
+        private static DateTime _cacheTime = DateTime.MinValue;
+        private readonly TimeSpan _cacheInterval = new TimeSpan(0, 1, 0);
+
         public List<SocialImage> GetFromInstagram(string userId, bool deep = false)
         {
+            if (_cache != null && (DateTime.Now - _cacheTime) <= _cacheInterval )
+            {
+                return _cache;
+            }
             Sitecore.Diagnostics.Log.Info("Update Instagram Feeds: " + userId, this);
 
             string clientId = Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem).Fields["Client Id"].Value;
@@ -73,7 +81,7 @@ namespace Landmark.Classes
             do
             {
                 var uri = new Uri(string.Format(
-                        "https://api.instagram.com/v1/users/{0}/media/recent?count=100{1}&client_id={2}", userId, lastIdParam, clientId));
+                        "https://api.instagram.com/v1/users/{0}/media/recent?count=10{1}&client_id={2}", userId, lastIdParam, clientId));
                 var response = Proxy(uri);
 
                 var json = ReadResponse(response);
@@ -103,7 +111,9 @@ namespace Landmark.Classes
                                      ProfilePicture = media.user.profile_picture
                                  }));
             } while (deep);
-            return images;
+            _cache = images;
+            _cacheTime = DateTime.Now;
+            return _cache;
         }
 
 
