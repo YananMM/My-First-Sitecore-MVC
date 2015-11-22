@@ -88,11 +88,13 @@ namespace Landmark.Helper
             var parentItem = currentItem.Parent;
             var grandParentItem = parentItem.Parent;
             List<Item> allCategories = null;
+            List<Item> subCategories = new List<Item>();
             string currentTag = String.Empty;
             if (isShop)
                 allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
             if (isDining)
                 allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);
+
             if (grandParentItem.ID.ToString() == ItemGuids.DiningItem)
             {
                 allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);
@@ -103,7 +105,15 @@ namespace Landmark.Helper
                 }
                 return currentTag;
             }
-            var subCategories = LandmarkHelper.GetItemByTemplate(parentItem, ItemGuids.ShoppingSubCategoryPageObject);
+            if (parentItem.TemplateID.ToString() == ItemGuids.ShoppingSubCategoryPageObject)
+            {
+                subCategories = LandmarkHelper.GetItemByTemplate(parentItem.Parent, ItemGuids.ShoppingSubCategoryPageObject);
+            }
+            else if (parentItem.TemplateID.ToString() == ItemGuids.T11PageTemplate)
+            {
+                subCategories = LandmarkHelper.GetItemByTemplate(parentItem, ItemGuids.ShoppingSubCategoryPageObject);
+            }
+
             if (subCategories == null || !subCategories.Any())
             {
                 Item currentCategory = allCategories.FirstOrDefault(i => i.DisplayName.Replace(i.Parent.DisplayName + "-", "") == parentItem.DisplayName);
@@ -215,7 +225,7 @@ namespace Landmark.Helper
                     subCategoriess.Select(p => new TextValue
                     {
                         text = p["Tag Name"],
-                        DisplayName = p.DisplayName.Replace("_"," ").Replace(p.Parent.DisplayName + "-", ""),
+                        DisplayName = p.DisplayName.Replace("_", " ").Replace(p.Parent.DisplayName + "-", ""),
                         value = p.ID.ToString()
                     }).OrderBy(p => p.DisplayName).ToList();
                 item.children = children;
@@ -326,7 +336,7 @@ namespace Landmark.Helper
                     }
                 }
             }
-            return brandsByBuildings.OrderBy(p=>p.DisplayName).ToList();
+            return brandsByBuildings.OrderBy(p => p.DisplayName).ToList();
         }
 
         public List<Item> GetBuildingsByCategory(ID categoryId)
@@ -542,7 +552,7 @@ namespace Landmark.Helper
         {
             Item shoppingCategory = null;
             Item shopping = null;
-            if (parent==ItemGuids.ShoppingItem)
+            if (parent == ItemGuids.ShoppingItem)
             {
                 shoppingCategory = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingCategory);
                 shopping = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);

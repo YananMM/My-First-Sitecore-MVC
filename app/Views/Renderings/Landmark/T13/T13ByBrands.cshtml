@@ -1,23 +1,31 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Landmark.Models
 @using Sitecore.Data.Items
 @model RenderingModel
 @{
     ShoppingHelper shoppingHelper = new ShoppingHelper();
     var currentItem = Sitecore.Context.Item;
-    Item parentItem = currentItem.Parent;
-    while (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !parentItem.ID.ToString().Equals(ItemGuids.DiningItem) && parentItem.TemplateID.ToString() != ItemGuids.T11PageTemplate)
+    Item pageItem = currentItem.Parent;
+    List<LandmarkBrandModel> brandModels = new List<LandmarkBrandModel>();
+    if (pageItem.TemplateID.ToString() == ItemGuids.ShoppingSubCategoryPageObject)
     {
-        parentItem = parentItem.Parent;
+        pageItem = currentItem.Parent.Parent.Parent;
     }
-    var brandModels = shoppingHelper.GetBrandModels(parentItem.Parent);
+    else if (pageItem.TemplateID.ToString() == ItemGuids.T11PageTemplate)
+    {
+        pageItem = currentItem.Parent.Parent;
+    }
+    brandModels = shoppingHelper.GetBrandModels(pageItem);
+    
     if (!currentItem.Parent.ID.ToString().Equals(ItemGuids.ShoppingItem) && !currentItem.Parent.ID.ToString().Equals(ItemGuids.DiningItem))
     {
         var currentTag = shoppingHelper.GetCurrentCategory(currentItem);
-       
+
         brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
     }
     var brands = brandModels.GroupBy(p => p.Group).ToList();
+
 }
 <div class="masonry-area clearfix">
     @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T13MobileSideBarRendering)
