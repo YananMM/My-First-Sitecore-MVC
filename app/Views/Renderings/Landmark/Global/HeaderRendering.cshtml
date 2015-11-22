@@ -43,7 +43,7 @@
                     {
                         if (languageText.DisplayName.ToLower() == lan.Name.ToLower())
                         {
-                            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, @lan.Name)" hreflang="@(lan.Name=="en"?"en":lan.Name=="zh_CN"?"zh-Hans":"zh-Hant")" class="lang-cn">@Html.Sitecore().Field("Value", languageText)</a>
+                            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, @lan.Name)" class="lang-cn">@Html.Sitecore().Field("Value", languageText)</a>
                         }
                     }
                 }
@@ -110,7 +110,7 @@
                     {
                         if (languageText.DisplayName.ToLower() == lan.Name.ToLower())
                         {
-                            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, @lan.Name)" hreflang="@(lan.Name=="en"?"en":lan.Name=="zh_CN"?"zh-Hans":"zh-Hant")" class="lang-cn">@Html.Sitecore().Field("Value", languageText)</a>
+                            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, @lan.Name)" class="lang-cn">@Html.Sitecore().Field("Value", languageText)</a>
                         }
                     }
                 }
