@@ -6,16 +6,32 @@
 
 @{
     string[] alphabetsStrings = new[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
-    Item currentPage = Sitecore.Context.Item;
+    Item currentItem = Sitecore.Context.Item;
+    Item pageItem = currentItem.Parent;
     string allByBrandsPageID = ItemGuids.AllByBrandsPage;
     string allByBuildingsPageID = ItemGuids.AllByBuildingsPage;
     ShoppingHelper shoppingHelper = new ShoppingHelper();
-    List<TextValue> categories = shoppingHelper.GetFirstCategory(currentPage.ID.ToString());
-    var category = currentPage.Parent.Parent.DisplayName;
+    List<TextValue> categories = shoppingHelper.GetFirstCategory(currentItem.ID.ToString());
+    var category = currentItem.Parent.Parent.DisplayName;
     List<TextValue> subCategories = new List<TextValue>();
-    var subpage = currentPage.Parent.DisplayName;
+    var subpage = currentItem.Parent.DisplayName;
+    List<LandmarkBrandModel> brandModels = new List<LandmarkBrandModel>();
+    if (pageItem.TemplateID.ToString() == ItemGuids.ShoppingSubCategoryPageObject)
+    {
+        pageItem = currentItem.Parent.Parent.Parent;
+    }
+    else if (pageItem.TemplateID.ToString() == ItemGuids.T11PageTemplate)
+    {
+        pageItem = currentItem.Parent.Parent;
+    }
 
+    brandModels = shoppingHelper.GetBrandModels(pageItem);
 
+    if (!currentItem.Parent.ID.ToString().Equals(ItemGuids.ShoppingItem) && !currentItem.Parent.ID.ToString().Equals(ItemGuids.DiningItem))
+    {
+        var currentTag = shoppingHelper.GetCurrentCategory(currentItem);
+        brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
+    }
 }
 
 <div class="visible-xs-block">
@@ -25,7 +41,21 @@
             <a class="close-popup" href="">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.SortAndGoToItem)) </a>
             <h3>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.ByBrandsGuidItem))</h3>
             <ul class="brands clearfix">
-                @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.ByBrandsRenderingViewGuid)
+               @* @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.ByBrandsRenderingViewGuid)*@
+                @for (int i = 0; i < alphabetsStrings.Length; i++)
+                {
+                    if (shoppingHelper.checkBrandStatus(brandModels, alphabetsStrings[i]))
+                    {
+                        string href = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(currentItem.Parent)) + "/by-brands#" + alphabetsStrings[i].ToLower();
+                        <li><a href="@href">@alphabetsStrings[i].ToUpper()</a></li>
+                    }
+                    else
+                    {
+                        <li class="disabled">@alphabetsStrings[i].ToUpper()</li>
+                    }
+                }
+
+
             </ul>
             <h3>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.ByBuidingsGuidItem))</h3>
             <ul class="brands-gap">
@@ -46,7 +76,7 @@
                 }
                 <li><a href="#">ALSO CLOSE BY...</a></li>
             </ul>
-            <form class="form-goto" data-handler-get-catetories="/Service/GetCategoryJson.ashx?id=@currentPage.ID.ToString()" method="POST" action="@Url.Action("GoTo", "Shopping")">
+            <form class="form-goto" data-handler-get-catetories="/Service/GetCategoryJson.ashx?id=@currentItem.ID.ToString()" method="POST" action="@Url.Action("GoTo", "Shopping")">
                 <h3>
                     @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.GoToGuidItem))<a class="sub-title" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage)))">
                         @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AllBrandsGuidItem))<span class="sprite-small-r">&gt;</span>
@@ -76,7 +106,7 @@
                             {
                                 foreach (var item in subCategories)
                                 {
-                                    var subcategory = currentPage.Parent.DisplayName;
+                                    var subcategory = currentItem.Parent.DisplayName;
                                     <option value="@item.value" @if (subcategory == item.text) { <text>
                                             selected="selected"
                                             </text> }>
@@ -87,14 +117,14 @@
                         </select>
                     </div>
 
-                    <input type="hidden" value="@currentPage.Parent.TemplateID.ToString()" name="parentTemplateId" class="selectpicker form-control" />
+                    <input type="hidden" value="@currentItem.Parent.TemplateID.ToString()" name="parentTemplateId" class="selectpicker form-control" />
                     <input type="hidden" value="@ItemGuids.T11PageTemplate" name="pageTemplateId" class="selectpicker form-control" />
 
                     <button type="submit" class="btn btn-default">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.GoGuidItem))</button>
                 </div>
             </form>
 
-            @if (allByBrandsPageID != currentPage.ID.ToString() && allByBuildingsPageID != currentPage.ID.ToString())
+            @if (allByBrandsPageID != currentItem.ID.ToString() && allByBuildingsPageID != currentItem.ID.ToString())
             {
                 <h3>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.SeeAlsoGuidItem))</h3>
                 <ul>

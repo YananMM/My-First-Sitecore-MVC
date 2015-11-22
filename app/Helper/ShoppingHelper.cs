@@ -403,16 +403,14 @@ namespace Landmark.Helper
         /// <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
         public bool checkBrandStatus(List<LandmarkBrandModel> brandModels, string s)
         {
-            foreach (var brand in brandModels)
+            List<string> groups = brandModels.Select(brand => brand.Group.ToUpper()).ToList();
+            if (groups.Contains(s.ToUpper()))
             {
-                if (brand.BrandItem.DisplayName.ToLower().StartsWith(s))
-                {
-                    return true;
-                }
+                return true;
             }
             return false;
         }
-
+      
         /// <summary>
         /// Gets the shop page by tag.
         /// </summary>
