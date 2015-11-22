@@ -311,10 +311,17 @@ namespace Landmark.Models
             LastName = model.LastName;
             Email = model.Email;
             Gender = model.Title == "Mr" ? "Male" : "Female";   // client asked for this
-            /* TODO: uncomment these lines
-            IpAddress = model.IpAdress;
-            OptIn = model.OptIn;*/
-            Channel = model.Channel;
+            IpAddress = model.IpAddress;
+            if (model.OptIn != null)
+            {
+                OptIn = model.OptIn.ToString();
+                
+            }
+            else
+            {
+                OptIn = string.Empty;
+            }
+            Channel = model.Channel=="0"?"Email Only":"Email and Postal Address";
             Room = model.Room;
             Building = model.Building;
             Street = model.Street;

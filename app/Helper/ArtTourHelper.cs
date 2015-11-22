@@ -127,7 +127,7 @@ namespace Landmark.Helper
         public List<Item> GetArtPieceByBuildingSvgId(string id, string page = null)
         {
 
-            var buildings = LandmarkHelper.GetBuildings();
+            var buildings = LandmarkHelper.GetAllBuildings();
             Item buildingItem =
                 buildings.Where(b => b.Fields["Building Svg Id"].ToString() == id).ToList().FirstOrDefault();
             List<Item> allArtPieces = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkArtTourItem,
