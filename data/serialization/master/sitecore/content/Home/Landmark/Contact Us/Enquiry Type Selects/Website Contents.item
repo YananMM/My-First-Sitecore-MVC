@@ -59,8 +59,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: c131cfa7-1288-496b-9037-0a817f73a8e5
+revision: f2d5b29a-b331-4270-9113-2c9daffa5565
 
+----field----
+field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
+name: Text
+key: text
+content-length: 4
+
+网站内容
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -88,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c131cfa7-1288-496b-9037-0a817f73a8e5
+f2d5b29a-b331-4270-9113-2c9daffa5565
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151108T112742Z
+20151123T070401:635838590413588372Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -106,8 +113,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 15883644-7b7a-4292-86e3-d67591ba8494
+revision: 4ca191aa-ebe2-4b84-afdf-0e09fc71a492
 
+----field----
+field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
+name: Text
+key: text
+content-length: 4
+
+網站內容
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -135,14 +149,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-15883644-7b7a-4292-86e3-d67591ba8494
+4ca191aa-ebe2-4b84-afdf-0e09fc71a492
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151108T112721Z
+20151123T070444:635838590842772920Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
