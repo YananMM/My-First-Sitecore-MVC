@@ -59,8 +59,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 29922651-a6eb-48ec-bc4a-3d6eff926c87
+revision: bd6fdb3e-ced9-46ce-aa77-a1716951b099
 
+----field----
+field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
+name: Text
+key: text
+content-length: 5
+
+设施与服务
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -88,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-29922651-a6eb-48ec-bc4a-3d6eff926c87
+bd6fdb3e-ced9-46ce-aa77-a1716951b099
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151108T112745Z
+20151123T070353:635838590339024107Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -106,8 +113,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: fdc10e6d-d00c-49b2-ae97-e784327fbd08
+revision: ff7e1576-d96c-47dd-ae24-d3d8459c4c38
 
+----field----
+field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
+name: Text
+key: text
+content-length: 5
+
+設施與服務
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -135,14 +149,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fdc10e6d-d00c-49b2-ae97-e784327fbd08
+ff7e1576-d96c-47dd-ae24-d3d8459c4c38
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151108T112719Z
+20151123T070452:635838590921697434Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
