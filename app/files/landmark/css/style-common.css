@@ -2439,6 +2439,10 @@ fieldset[disabled] .form-control {
 textarea.form-control {
   height: auto;
 }
+.ie8 .form-control,
+.ie9 .form-control {
+  padding: 0 10px 0;
+}
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   input[type="date"],
   input[type="time"],
@@ -6515,6 +6519,17 @@ button.close {
   font-family: 'berthold akzidenz';
   src: url('../fonts/bertholdakzidenzgroteskbelight.eot');
   src: url('../fonts/bertholdakzidenzgroteskbelight.eot?#iefix') format('embedded-opentype'), url('../fonts/bertholdakzidenzgroteskbelight.woff') format('woff'), url('../fonts/bertholdakzidenzgroteskbelight.ttf') format('truetype'), url('../fonts/bertholdakzidenzgroteskbelight.svg#bertholdakzidenzgroteskbelight') format('svg');
+}
+/* Special Fonts */
+@font-face {
+  font-family: "meiryo";
+  src: url(/files/landmark/fonts/Meiryo.eot);
+  src: local("Meiryo"), url(/files/landmark/fonts/Meiryo.ttc) format("truetype");
+  
+  /* non-IE */
+}
+.font_meiryo {
+  font-family: "meiryo";
 }
 /*** mobile Sprite ***/
 [class^="sprite-"],
