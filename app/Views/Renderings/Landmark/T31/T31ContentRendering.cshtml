@@ -165,7 +165,7 @@
                                                         {
                                                             foreach (var item in districts)
                                                             {
-                                                                <span class="gd-checkbox" data-value="@Html.Sitecore().Field(" value", item)">@Html.Sitecore().Field("Text", item)</span>
+                                                                <span class="gd-checkbox" data-value="@Html.Sitecore().Field("Value", item)">>@Html.Sitecore().Field("Text", item)</span>
                                                             }
                                                         }
                                                     </div>
@@ -296,7 +296,9 @@
                             </div>
                             <div class="gd-checkbox-wrapper">
                                 <input type="hidden" name="optin" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Optin"))">
-                                <span class="gd-checkbox" data-value="1"> @Html.Sitecore().Field("Agree Message")</span>
+                                <span class="gd-checkbox" data-value="1">
+                                    @Html.Sitecore().Field("Agree Message")
+                                </span>
                             </div>
                         </div>
                     </div>
