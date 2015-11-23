@@ -1,5 +1,6 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Landmark.Models
 @using Sitecore.Collections
 @using Sitecore.Data.Items
 @model RenderingModel
@@ -7,12 +8,17 @@
     ShoppingHelper shoppingHelper = new ShoppingHelper();
     List<Item> buildings = LandmarkHelper.GetBuildings();
     Item currentItem = Sitecore.Context.Item;
-    Item parentItem = currentItem.Parent;
-    while (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
+    Item pageItem = currentItem.Parent;
+    List<LandmarkBrandModel> brandModels = new List<LandmarkBrandModel>();
+    if (pageItem.TemplateID.ToString() == ItemGuids.ShoppingSubCategoryPageObject)
     {
-        parentItem = parentItem.Parent;
+        pageItem = currentItem.Parent.Parent.Parent;
     }
-    var brandModels = shoppingHelper.GetBrandModels(parentItem);
+    else if (pageItem.TemplateID.ToString() == ItemGuids.T11PageTemplate)
+    {
+        pageItem = currentItem.Parent.Parent;
+    }
+    brandModels = shoppingHelper.GetBrandModels(pageItem);
     string category = "";
     if (!Sitecore.Context.Item.Parent.ID.ToString().Equals(ItemGuids.ShoppingItem) && !Sitecore.Context.Item.Parent.ID.ToString().Equals(ItemGuids.DiningItem))
     {
