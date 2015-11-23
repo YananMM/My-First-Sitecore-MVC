@@ -20,17 +20,28 @@
 <link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/slick/slick.css" />
 <link rel="stylesheet" type="text/css" href="/files/landmark/js/lib/slick/slick-theme.css"/>
 @{
+    var languages = LandmarkHelper.GetLanguages();
+    string host = System.Web.HttpContext.Current.Request.Url.Scheme +
+                          Uri.SchemeDelimiter +
+                          System.Web.HttpContext.Current.Request.Url.Host;
     var currlang = Context.Request.Url.PathAndQuery.Split('/')[1];
     var hreflangs = new Dictionary<string, string>
     {
         {"en", "en"},
-        {"sc", "zh-Hans"},
-        {"tc", "zh-Hant"}
+        {"zh-cn", "zh-Hans"},
+        {"zh-hk", "zh-Hant"}
     };
-    foreach (var hreflang in hreflangs)
+    foreach (var lan in languages)
     {
-        if (hreflang.Key == currlang){ continue;}
-<link rel="alternate" href="@LandmarkHelper.GetCurrentItemUrl().Replace(currlang, hreflang.Key)" hreflang="@hreflang.Value" />
+        foreach (var hreflang in hreflangs)
+        {
+            if (hreflang.Key == lan.Name.ToLower())
+            {
+                <link rel="alternate" href="@string.Concat(host,LandmarkHelper.GetUrlByLanguage(Model.PageItem, @lan.Name))" hreflang="@hreflang.Value" />
+            }
+  
+        }
+
     }
 }
 <meta name="description" content="@Sitecore.Context.Item.Fields["Meta Description"].Value" />
