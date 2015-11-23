@@ -22,7 +22,7 @@
                     <div class="gd-content-details-heading">
                         <h3>@Html.Sitecore().Field("Article Headline", currentItem)</h3>
                        
-                        @if (!storyDate.ToString().Contains("0001"))
+                        @if (!string.IsNullOrEmpty(storyDate.Value))
                         {
                             <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper() </h5>
                         }
@@ -37,7 +37,7 @@
                 <div class="gd-content-details">
                     <div class="gd-content-details-heading hidden-xs">
                         <h3>@Html.Sitecore().Field("Article Headline", currentItem)</h3>
-                        @if (!storyDate.ToString().Contains("0001"))
+                        @if (!string.IsNullOrEmpty(storyDate.Value))
                         {
                             <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
                         }
