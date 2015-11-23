@@ -51,7 +51,7 @@
                                         <label for="title">@Html.Sitecore().Field("Title Label") *</label>
                                         <div class="dropdown gd-dropdown gd-dropdown-fill">
                                             <!-- User's selection will be stored here -->
-                                            <input type="hidden" name="title" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Title"))">
+                                            <input type="hidden" name="title" data-error ="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Title"))">
                                             <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
                                                 <span class="current">
                                                     @{
@@ -78,13 +78,13 @@
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="firstname">@Html.Sitecore().Field("First Name") *</label>
-                                        <input type="text" class="form-control" id="firstname" name="firstname" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "FirstName"))">
+                                        <input type="text" class="form-control" id="firstname" name="firstname" data-input-max="50" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "FirstName"))">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label for="lastname">@Html.Sitecore().Field("Last Name") *</label>
-                                        <input type="text" class="form-control" id="lastname" name="lastname" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "LastName"))">
+                                        <input type="text" class="form-control" id="lastname" name="lastname" data-input-max="50" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "LastName"))">
                                     </div>
                                 </div>
                             </div>
@@ -92,7 +92,7 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label for="email">@Html.Sitecore().Field("Email Label") *</label>
-                                        <input type="email" class="form-control" id="email" name="email" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Email"))">
+                                        <input type="email" class="form-control" id="email" name="email" data-input-max="254" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Email"))">
                                     </div>
                                 </div>
                             </div>
@@ -131,13 +131,13 @@
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="room">@Html.Sitecore().Field("Room Label") *</label>
-                                                    <input type="text" class="form-control" id="room" name="room" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Room"))">
+                                                    <input type="text" class="form-control" id="room" name="room" data-input-max="50" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Room"))">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="building">@Html.Sitecore().Field("Building Label") *</label>
-                                                    <input type="text" class="form-control" id="building" name="building" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Building"))">
+                                                    <input type="text" class="form-control" id="building" name="building" data-input-max="50" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Building"))">
                                                 </div>
                                             </div>
                                         </div>
@@ -145,7 +145,7 @@
                                             <div class="col-sm-12">
                                                 <div class="form-group">
                                                     <label for="street">@Html.Sitecore().Field("Street Label") *</label>
-                                                    <input type="text" class="form-control" id="street" name="street" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Street"))">
+                                                    <input type="text" class="form-control" id="street" name="street" data-input-max="50" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Street"))">
                                                 </div>
                                             </div>
                                         </div>
@@ -153,7 +153,7 @@
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="area">@Html.Sitecore().Field("Area Label")</label>
-                                                    <input type="text" class="form-control" id="area" name="area" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Area"))">
+                                                    <input type="text" class="form-control" id="area" name="area" data-input-max="50" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Area"))">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
@@ -176,13 +176,13 @@
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="state">@Html.Sitecore().Field("State Label")</label>
-                                                    <input type="text" class="form-control" id="state" name="state" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "State"))">
+                                                    <input type="text" class="form-control" id="state" name="state" data-input-max="50" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "State"))">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="city">@Html.Sitecore().Field("City Label") *</label>
-                                                    <input type="text" class="form-control" id="city" name="city" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "City"))">
+                                                    <input type="text" class="form-control" id="city" name="city" data-input-max="50" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "City"))">
                                                 </div>
                                             </div>
                                         </div>
@@ -190,7 +190,7 @@
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="postcode">@Html.Sitecore().Field("Postcode Label")</label>
-                                                    <input type="text" class="form-control" id="postcode" name="postcode" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Postcode"))">
+                                                    <input type="text" class="form-control" id="postcode" name="postcode" data-input-max="10" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "Postcode"))">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
