@@ -18,7 +18,7 @@
 <div class="gd-relate">
     <div class="row">
         <div class="col-sm-8">
-            <h3>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.RelatedStoriesItem))</h3>
+            <h3>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.RelatedStoriesItem))</h3>
             <div class="row">
                 @if (relatedStoris.Count != 0)
                 {
@@ -28,13 +28,7 @@
                         <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.Item))">
                             <div class="col-sm-6 clearfix">
                                 <img data-src="@image">
-                                @{
-                        MultilistField categories = item.Item.Fields["Magazine Category"];
-                        foreach (var category in categories)
-                        {
-                            <h5>@Sitecore.Context.Database.GetItem(category.ToString()).Fields["Tag Name"].ToString().ToUpper()</h5>
-                        }
-                                }
+                                <h5>@currentItem.Parent.Fields["Category Name"].ToString().ToUpper()</h5>
                                 <h4>@Html.Sitecore().Field("Article Headline", item.Item)</h4>
                             </div>
                         </a>  }
@@ -43,7 +37,7 @@
         </div>
         <div class="col-sm-4">
             <div class="gd-relate-brand">
-                <h3>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.RelatedBrandItem))</h3>
+                <h3>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.RelatedBrandItem))</h3>
                 @if (relatedBrands.Count != 0)
                 {
                     foreach (var item in relatedBrands)
