@@ -48,7 +48,7 @@
 
     @if (articles.Any())
     {
-        <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
+        <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel"  data-cover-height="640">
             <div class="carousel-heading">
                 <h2>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.YouMayAlsoLikeItem))</h2>
             </div>
