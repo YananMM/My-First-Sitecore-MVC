@@ -18,7 +18,7 @@
 
     <div class="gd-content-details">
         <h3>@Html.Sitecore().Field("Article Headline")</h3>
-        @if (storyDate.ToString().Contains("0001"))
+        @if (!string.IsNullOrEmpty(storyDate.Value))
         {
             <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
         }

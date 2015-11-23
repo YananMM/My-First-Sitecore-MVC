@@ -37,10 +37,13 @@
                             <h3>@Html.Sitecore().Field("Article Headline", stories.First())</h3>
                         </a>
                         @{
-                DateField storyDate = stories.First().Fields["Article Date"];
-                var date = LandmarkHelper.ToValidDateTime(storyDate);
+                            DateField storyDate = stories.First().Fields["Article Date"];
+                            var date = LandmarkHelper.ToValidDateTime(storyDate);
+                            if (!string.IsNullOrEmpty(storyDate.Value))
+                            {
+                                <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
+                            }
                         }
-                        <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
                         <div class="gd-longarticle-fixedlines">
                             <p>@Html.Sitecore().Field("Article Intro", stories.First())</p>
                         </div>
@@ -71,13 +74,13 @@
                     <div class="col-sm-4">
                         <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">
                             <div class="gd-promotion-box">
-                                <img data-src="@LandmarkHelper.GetCallOutImage(item)"/>
+                                <img data-src="@LandmarkHelper.GetCallOutImage(item)" />
                                 <h4>@Html.Sitecore().Field("Article Headline", item)</h4>
                                 @{
-                                    DateField itemDate = item.Fields["Article Date"];
-                                    var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
+                    DateField itemDate = item.Fields["Article Date"];
+                    var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
                                 }
-                                @if (!itemDate.ToString().Contains("0001"))
+                                @if (!string.IsNullOrEmpty(itemDate.Value))
                                 {
                                     <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
                                 }
@@ -102,7 +105,7 @@
                     DateField itemDate = item.Fields["Article Date"];
                     var itemdate = LandmarkHelper.ToValidDateTime(itemDate);
                                 }
-                                @if (!itemDate.ToString().Contains("0001"))
+                                @if (!string.IsNullOrEmpty(itemDate.Value))
                                 {
                                     <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
                                 }
@@ -115,6 +118,6 @@
         </div>
     </div>
     <div class="gd-promo-more">
-        <a href="?page=2">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem)) +</a>
+        <a href="?page=2">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem)) +</a>
     </div>
 </div>

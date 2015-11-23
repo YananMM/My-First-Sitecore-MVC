@@ -48,5 +48,5 @@
     LinkField officialWebLink = currentItem.Fields["Official Website Url"];
 }
 <a href="@officialWebLink.Url" target="@officialWebLink.Target" class="gd-link-brief">
-    @officialWebLink.Text <span class="icomoon-chevron-small-right"></span>
+    @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.OfficialWebsiteItem)) <span class="icomoon-chevron-small-right"></span>
 </a>
