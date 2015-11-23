@@ -7,6 +7,7 @@
 @model RenderingModel
 @{
     DateField date = (DateField) Sitecore.Context.Item.Fields["Article Date"];
+    var enCultureInfo = CultureInfo.CreateSpecificCulture("en");
 }
 <div class="container">
     <div class="gd-pagetitle">
@@ -19,10 +20,10 @@
         <h3>@Html.Sitecore().Field("Article Headline")</h3>
         @if (!string.IsNullOrEmpty(date.Value))
         {
-            <h5>@LandmarkHelper.ToValidDateTime(date).ToString("MMM yyyy").ToUpper()</h5>
+            <h5>@LandmarkHelper.ToValidDateTime(date).ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</h5>
         }
         <div class="gd-nd-slider-text">@Html.Sitecore().Field("Article Subheadline")</div>
-        <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-withdes carousel-portrait" data-ride="carousel">
+        <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-withdes carousel-portrait" data-ride="carousel"  data-cover-height="640">
             @Html.Sitecore().Placeholder("t4-slides")
         </div>
 
@@ -48,7 +49,7 @@
 
     @if (articles.Any())
     {
-        <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel"  data-cover-height="640">
+        <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
             <div class="carousel-heading">
                 <h2>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.YouMayAlsoLikeItem))</h2>
             </div>
