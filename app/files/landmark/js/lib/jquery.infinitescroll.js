@@ -36,7 +36,7 @@
     $.infinitescroll.defaults = {
         loading: {
             finished: undefined,
-            finishedMsg: "<em>Congratulations, you've reached the end of the internet.</em>",
+            finishedMsg: "",
             img: '/files/landmark/images/more.gif',
             msg: null,
             msgText: '<em>Loading ...</em>',
@@ -65,8 +65,13 @@
         pathParse: undefined,
         dataType: 'html',
         appendCallback: true,
-        bufferPx: 40,
-        errorCallback: function () { },
+        bufferPx: 40,        
+        errorCallback: function(state){
+            if (state=='done'){
+                var opts = $(this).data('infinitescroll').options;
+                $(opts.navSelector).hide();
+            }
+        },
         infid: 0, //Instance ID
         pixelsFromNavToBottom: undefined,
         path: undefined, // Either parts of a URL as an array (e.g. ["/page/", "/"] or a function that takes in the page number and returns a URL
@@ -563,6 +568,7 @@
 
             // if we're dealing with a table we can't use DIVs
             box = $(opts.contentSelector).is('table, tbody') ? $('<tbody/>') : $('<div/>');
+
             desturl = (typeof path === 'function') ? path(opts.state.currPage) : path.join(opts.state.currPage);
             instance._debug('heading into ajax', desturl);
 
