@@ -12,10 +12,10 @@ namespace Landmark.Pipelines.ConvertToRuntimeHtml
     {
         public void Process(Sitecore.Pipelines.ConvertToRuntimeHtml.ConvertToRuntimeHtmlArgs args)
         {
-            var bodyPos = args.Html.IndexOf("<body>", StringComparison.InvariantCultureIgnoreCase);
+            /*var bodyPos = args.Html.IndexOf("<body>", StringComparison.InvariantCultureIgnoreCase);
             if (bodyPos == -1)
                 return;
-            args.Html = args.Html.Left(bodyPos) + args.Html.Substring(bodyPos).Replace("置", "<span class=\"font_meiryo\">置</span>");
+            args.Html = args.Html.Left(bodyPos) + args.Html.Substring(bodyPos).Replace("置", "<span class=\"font_meiryo\">置</span>");*/
         }
     }
 }
