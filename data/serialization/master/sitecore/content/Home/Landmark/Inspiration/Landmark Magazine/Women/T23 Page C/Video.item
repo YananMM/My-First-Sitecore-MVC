@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {ADFB0020-8E02-47B9-ACD2-4A0007B1BCD3}
+database: master
+path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Women/T23 Page C/Video
+parent: {6A3290F7-8751-4862-9440-961DB78900F9}
+name: Video
+master: {48DA220E-BFA8-4789-8191-0FD9A3C0DB43}
+template: {82C6EA0F-D0F2-4F40-BA8A-F5E39A10D5B5}
+templatekey: Video Object
+
+----field----
+field: {D834AF8F-C33A-4F31-81C5-DF493E5EBC73}
+name: Video File
+key: video file
+content-length: 45
+
+http://lmk-html-uat.iis.guat.me/en/sample.mp4
+----field----
+field: {6F26A32B-BCBA-41ED-AAD1-DD536C4801DB}
+name: Video Poster
+key: video poster
+content-length: 58
+
+<image mediaid="{433D1FAC-E5AE-465E-9AA0-D957B5E36873}" />
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----version----
+language: en
+version: 1
+revision: 13b68574-b41f-4032-8e85-414bb2309eb6
+
+----field----
+field: {D7C57621-D4BC-48EE-86A7-471FF3E06206}
+name: Video Title
+key: video title
+content-length: 20
+
+This is a text title
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151122T020801Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+13b68574-b41f-4032-8e85-414bb2309eb6
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20151122T025253:635837575736145200Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
