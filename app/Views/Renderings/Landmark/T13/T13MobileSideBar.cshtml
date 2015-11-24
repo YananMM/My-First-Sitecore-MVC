@@ -32,6 +32,11 @@
         var currentTag = shoppingHelper.GetCurrentCategory(currentItem);
         brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
     }
+    string allbrands = string.Empty;
+    if (shoppingHelper.isDining)
+    { allbrands = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.DiningAllByBrandPage))); }
+    if (shoppingHelper.isShop)
+    { allbrands = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage))); }
 }
 
 <div class="visible-xs-block">
@@ -74,11 +79,10 @@
                         <li><a href="@href">@building.Fields["Building Title"].Value</a></li>
                     }
                 }
-                <li><a href="#">ALSO CLOSE BY...</a></li>
             </ul>
             <form class="form-goto" data-handler-get-catetories="/Service/GetCategoryJson.ashx?id=@currentItem.ID.ToString()" method="POST" action="@Url.Action("GoTo", "Shopping")">
                 <h3>
-                    @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.GoToGuidItem))<a class="sub-title" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage)))">
+                    @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.GoToGuidItem))<a class="sub-title" href="@allbrands">
                         @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AllBrandsGuidItem))<span class="sprite-small-r">&gt;</span>
                     </a>
                 </h3>
