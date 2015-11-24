@@ -76,7 +76,7 @@
                         else
                         {
                             <div class="panel-img gd-lightbox-link gd-lightbox-video" data-bg="@imgsrc" data-lightsrc="@item.Fields["Slide Video"].Value" 
-                                data-lighttitle="@title" data-lightposter="@LandmarkHelper.ImageFieldSrc("Slide Video Poster",item)"></div>
+                                data-lighttitle="@PreventCustomReplace(title)" data-lightposter="@LandmarkHelper.ImageFieldSrc("Slide Video Poster",item)"></div>
                         }
                         
                         <div class="panel-main">

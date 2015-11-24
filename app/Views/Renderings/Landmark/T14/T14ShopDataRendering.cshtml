@@ -53,10 +53,11 @@
                         </th>
                         <td>
                             @fullWhere<br>
-                            @if (floor!=null)
+                            @if (floor != null)
                             {
                                 var whereDescription = floor["Floor Title"];
-                                <a href="#" class="gd-link-map gd-lightbox-link gd-lightbox-pin" data-pin="@Html.Sitecore().Field("LocationX", Sitecore.Context.Item),@Html.Sitecore().Field("LocationY", Sitecore.Context.Item)" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)" data-lighttitle="@Html.Sitecore().Field("Glossary Value", Sitecore.Context.Database.GetItem(ItemGuids.YouAreViewingItem)) @whereDescription @floor.Parent["Building Title"]">
+                                <a href="#" class="gd-link-map gd-lightbox-link gd-lightbox-pin" data-pin="@Html.Sitecore().Field("LocationX", Sitecore.Context.Item),@Html.Sitecore().Field("LocationY", Sitecore.Context.Item)" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)"
+                                   data-lighttitle="@using (BeginPreventCustomReplace()){<text>@Html.Sitecore().Field("Glossary Value", Sitecore.Context.Database.GetItem(ItemGuids.YouAreViewingItem)) @whereDescription @Html.Sitecore().Field("Building Title", floor.Parent)</text>}">
                                     <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", Factory.GetDatabase("web").GetItem(ItemGuids.FloorPlanItem)).ToString().ToUpper()
                                 </a>
                             }

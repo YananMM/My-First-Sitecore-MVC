@@ -168,13 +168,14 @@
                                 </th>
                                 <td>
                                     @fullWhere<br>
-                                    @if (floor!=null)
+                                    @if (floor != null)
                                     {
                                         var whereDescription = floor["Floor Title"];
                                         string ofstring = string.Empty;
                                         if (Sitecore.Context.Language.ToString().ToLower() == "en")
-                                        {ofstring = "of";}
-                                        <a href="#" class="gd-link-map gd-lightbox-link gd-lightbox-pin" data-pin="@Html.Sitecore().ImageFieldSrc("LocationX", brandItem),@Html.Sitecore().ImageFieldSrc("LocationY", brandItem)" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)" data-lighttitle="@Html.Sitecore().Field("Glossary Value", Sitecore.Context.Database.GetItem(ItemGuids.YouAreViewingItem)) @whereDescription @ofstring @floor.Parent["Building Title"]">
+                                        { ofstring = "of"; }
+                                        <a href="#" class="gd-link-map gd-lightbox-link gd-lightbox-pin" data-pin="@Html.Sitecore().ImageFieldSrc("LocationX", brandItem),@Html.Sitecore().ImageFieldSrc("LocationY", brandItem)" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)"
+                                           data-lighttitle="@using (BeginPreventCustomReplace()){<text>@Html.Sitecore().Field("Glossary Value", Sitecore.Context.Database.GetItem(ItemGuids.YouAreViewingItem)) @whereDescription @ofstring @floor.Parent["Building Title"]</text>}">
                                             <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", Factory.GetDatabase("web").GetItem(ItemGuids.FloorPlanItem)).ToString().ToUpper()
                                         </a>
                                     }
