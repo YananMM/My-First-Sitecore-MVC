@@ -28,7 +28,7 @@
                         ImageField imageField = Sitecore.Context.Item.Fields["Art Image"];
                         <a href="javascript:;" class="gd-lightbox-link gd-hover-img" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Art Image", Sitecore.Context.Item)" data-lighttitle="@Sitecore.Context.Item.Fields["Art Title"]">
                             <div class="gd-hover-img-mask"></div>
-                            <img src="@Html.Sitecore().ImageFieldSrc("Art Image", Sitecore.Context.Item)" alt="@imageField.Alt">
+                            <img src="@Html.Sitecore().ImageFieldSrc("Art Image", currentItem)" alt="@imageField.Alt">
                         </a>
                     }
                 </div>
