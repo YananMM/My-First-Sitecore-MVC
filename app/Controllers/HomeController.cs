@@ -216,7 +216,7 @@ namespace Landmark.Controllers
                         LastName = model.LastName,
                         Email = model.Email,
                         Channel = (model.Channel == "0") ? emailOnlyItem.Fields["Glossary Value"].ToString() : emailAndPostal.Fields["Glossary Value"].ToString(),
-                        Interest = model.Interests,
+                        Interest = model.Interests.Replace("," + model.Others, ""),
                         Other_Interest = model.Others,
                         Room = model.Room,
                         Building = model.Building,
