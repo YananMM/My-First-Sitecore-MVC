@@ -62,11 +62,11 @@
                                     </div>
 
                                     <div>
-                                    <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", item)">
-                                        <span class="icomoon-sound-alt"></span>
-                                        @Html.Sitecore().Field("Commentary Alt",item)
-                                    </a>
-                                </div>
+                                        <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", item)">
+                                            <span class="icomoon-sound-alt"></span>
+                                            @Html.Sitecore().Field("Commentary Alt", item)
+                                        </a>
+                                    </div>
                                 </div>
                             }
                         }
@@ -74,17 +74,17 @@
                         {
                             if (!string.IsNullOrEmpty(LandmarkHelper.FileFieldSrc("Commentary", Sitecore.Context.Item)))
                             {
-                             <div class="col-sm-4 text-right">
-                                <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
-                                    <span class="icomoon-sound-alt"></span>
-                                    @Html.Sitecore().Field("Commentary Alt")
-                                </a>
-                            </div>
+                                <div class="col-sm-4 text-right">
+                                    <a href="javascript:;" class="gd-button gd-button-white text-center" data-player="@Html.Sitecore().FileFieldUrl("Commentary", Sitecore.Context.Item)">
+                                        <span class="icomoon-sound-alt"></span>
+                                        @Html.Sitecore().Field("Commentary Alt")
+                                    </a>
+                                </div>
                             }
                         }
                     </div>
                     <div class="gd-artplace-details row">
-                        <div class="col-sm-3 col-md-2  gd-artplace-location">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.LocationItem))</div>
+                        <div class="col-sm-3 col-md-2  gd-artplace-location">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.LocationItem))</div>
                         @{
                             var floor = helper.GetFloor(Sitecore.Context.Item);
                             if (floor != null)
@@ -93,11 +93,11 @@
                                     @floor.Fields["Floor Title"] @floor.Parent.Fields["Building Title"]<br>
                                     @{
                                 string text = "";
-                                var lightBox = Html.Sitecore().Field("Glossary Value",Sitecore.Context.Database.GetItem(ItemGuids.YouAreViewingItem));
-                                text = lightBox + " " + floor.Fields["Floor Title"] + " of " + floor.Parent.Fields["Building Title"];
+                                var lightBox = Html.Sitecore().Field("Glossary Value", Sitecore.Context.Database.GetItem(ItemGuids.YouAreViewingItem));
+                                text = lightBox + " " + floor.Fields["Floor Title"] + " " + Html.Sitecore().Field("Glossary Value", Sitecore.Context.Database.GetItem(ItemGuids.OfItem)) + " " + floor.Parent.Fields["Building Title"];
                                     }
                                     <a href="javascript:;" class="gd-link-map gd-lightbox-link gd-lightbox-pin" data-pin="@Html.Sitecore().ImageFieldSrc("LocationX", Sitecore.Context.Item),@Html.Sitecore().ImageFieldSrc("LocationY", Sitecore.Context.Item)" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)" data-lighttitle="@text">
-                                        <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.FloorPlanItem))
+                                        <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.FloorPlanItem))
                                     </a>
                                 </div>
                             }
