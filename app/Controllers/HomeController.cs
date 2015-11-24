@@ -217,7 +217,7 @@ namespace Landmark.Controllers
                         Email = model.Email,
                         Channel = (model.Channel == "0") ? emailOnlyItem.Fields["Glossary Value"].ToString() : emailAndPostal.Fields["Glossary Value"].ToString(),
                         Interest = model.Interests,
-                        Other_Interest = model.OtherInterest,
+                        Other_Interest = model.Others,
                         Room = model.Room,
                         Building = model.Building,
                         Street = model.Street,
