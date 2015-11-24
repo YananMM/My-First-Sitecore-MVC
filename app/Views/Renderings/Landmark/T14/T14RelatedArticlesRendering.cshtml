@@ -29,7 +29,7 @@ string videoAttrs = "", videoClass = "";
 var videoItem = item.Item.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.VideoObject);
 if (videoItem != null)
 {
-    videoAttrs = "data-lightsrc=\"" + videoItem.Fields["Video File"].Value + "\" data-lighttitle=\"" + item.Item.Fields["Article Headline"].Value + "\"  data-lightposter=\"" + image + "\"";
+    videoAttrs = "data-lightsrc=\"" + videoItem.Fields["Video File"].Value + "\" data-lighttitle=\"" + PreventCustomReplace(item.Item.Fields["Article Headline"].Value) + "\"  data-lightposter=\"" + image + "\"";
     videoClass = "gd-lightbox-link gd-lightbox-video";
 }
                     }

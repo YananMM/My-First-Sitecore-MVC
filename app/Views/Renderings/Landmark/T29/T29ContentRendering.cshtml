@@ -26,7 +26,7 @@
                 <div class="gd-pagetitle">
                     @{
                         ImageField imageField = Sitecore.Context.Item.Fields["Art Image"];
-                        <a href="javascript:;" class="gd-lightbox-link gd-hover-img" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Art Image", Sitecore.Context.Item)" data-lighttitle="@Sitecore.Context.Item.Fields["Art Title"]">
+                        <a href="javascript:;" class="gd-lightbox-link gd-hover-img" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Art Image", Sitecore.Context.Item)" data-lighttitle="@PreventCustomReplace(Sitecore.Context.Item.Fields["Art Title"])">
                             <div class="gd-hover-img-mask"></div>
                             <img src="@Html.Sitecore().ImageFieldSrc("Art Image", Sitecore.Context.Item)" alt="@imageField.Alt">
                         </a>
@@ -96,7 +96,7 @@
                                 var lightBox = Html.Sitecore().Field("Glossary Value",Sitecore.Context.Database.GetItem(ItemGuids.YouAreViewingItem));
                                 text = lightBox + " " + floor.Fields["Floor Title"] + " of " + floor.Parent.Fields["Building Title"];
                                     }
-                                    <a href="javascript:;" class="gd-link-map gd-lightbox-link gd-lightbox-pin" data-pin="@Html.Sitecore().ImageFieldSrc("LocationX", Sitecore.Context.Item),@Html.Sitecore().ImageFieldSrc("LocationY", Sitecore.Context.Item)" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)" data-lighttitle="@text">
+                                    <a href="javascript:;" class="gd-link-map gd-lightbox-link gd-lightbox-pin" data-pin="@Html.Sitecore().ImageFieldSrc("LocationX", Sitecore.Context.Item),@Html.Sitecore().ImageFieldSrc("LocationY", Sitecore.Context.Item)" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)" data-lighttitle="@PreventCustomReplace(text)">
                                         <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.FloorPlanItem))
                                     </a>
                                 </div>
