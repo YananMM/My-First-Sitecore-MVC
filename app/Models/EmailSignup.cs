@@ -21,6 +21,7 @@ namespace Landmark.Models
         public string Email { get; set; }
         public string Channel { get; set; }
         public string Interest { get; set; }
+        public string Other_Interest { get; set; }
         public string Room { get; set; }
         public string Building { get; set; }
         public string Street { get; set; }
