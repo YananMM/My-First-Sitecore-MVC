@@ -374,6 +374,12 @@ $(document).ready(function() {
       return false;
     });
     
+    $('.popup-overlay').on('click', function(target) {
+      if ( $(event.target).prop('tagName').toLowerCase() === 'a' ) {
+        $('.popup-overlay a.close-popup').click();
+      }
+    });
+    
     $(window).resize(function() {
       popupResize();
     });
@@ -381,7 +387,6 @@ $(document).ready(function() {
 
 
   function showPopup(sel) {
-
     var winH = $(window).height();
     origScrollPos = $(window).scrollTop();
     
@@ -1549,6 +1554,7 @@ $(document).ready(function() {
       });
     }
   })
+  
 
   /**********************************************************************************************************
    * Audio Player
@@ -1729,9 +1735,19 @@ $(document).ready(function() {
   });
   
   /**********************************************************************************************************
-   * Text in bottom slider
+   * Text in bottom slider; Text in Magazine; Text of gd-longarticle-fixedlines
    **********************************************************************************************************/
-  var gdBottomSliderFunc = function(textHeight) {
+  function gdGetActualLineHeight( target ) {
+    var gdTargetFZ     = target.css('fontSize');
+        gdTargetFZ     = gdTargetFZ.indexOf('px') > 0 ? gdTargetFZ.slice(0, -2) : gdTargetFZ;
+    var gdTargetLH     = target.css('lineHeight');
+        gdTargetLH     = gdTargetLH.indexOf('px') > 0 ? gdTargetLH.slice(0, -2) : (gdTargetLH * gdTargetFZ);
+    
+    return gdTargetLH;
+  }
+
+  // Text in bottom slider
+  if ( $('#gd-carousel-info .gd-carousel-detail p').length ) {
     $('#gd-carousel-info .gd-carousel-detail p').dotdotdot({
       ellipsis	: '... ',
       wrap		: 'word',
@@ -1739,40 +1755,30 @@ $(document).ready(function() {
       after		: null,
       watch		: true,
       tolerance	: 0,
-      height: textHeight,
+      height: gdGetActualLineHeight( $('#gd-carousel-info .gd-carousel-detail>p').eq(0) ) * gdSettings.ShortVersionContentNumberOfLines,
       lastCharacter	: {
         remove		: [ ' ', ',', ';', '.', '!', '?' ],
         noEllipsis	: []
       }
     });
   }
-  if (!$('body').hasClass('t34') && $('#gd-carousel-info .gd-carousel-detail>p').length) {
-    var gdBottomText       = $('#gd-carousel-info .gd-carousel-detail>p').eq(0);
-    var gdBottomTextFZ     = gdBottomText.css('fontSize');
-        gdBottomTextFZ     = gdBottomTextFZ.indexOf('px') > 0 ? gdBottomTextFZ.slice(0, -2) : gdBottomTextFZ;
-    var gdBottomTextLH     = gdBottomText.css('lineHeight');
-        gdBottomTextLH     = gdBottomTextLH.indexOf('px') > 0 ? gdBottomTextLH.slice(0, -2) : (gdBottomTextLH * gdBottomTextFZ);
-    var gdBottomTextHeight = gdBottomTextLH * gdSettings.ShortVersionContentNumberOfLines;
 
-    gdBottomSliderFunc( gdBottomTextHeight );
+  // Text in Magazine
+  if ( $('.gd-longarticle-fixedlines p').length ) {
+    $('.gd-longarticle-fixedlines p').dotdotdot({
+      ellipsis	: '... ',
+      wrap		: 'word',
+      fallbackToLetter: true,
+      after		: null,
+      watch		: true,
+      tolerance	: 0,
+      height: gdGetActualLineHeight( $('.gd-longarticle-fixedlines p').eq(0) ) * gdSettings.LongVersionContentNumberOfLines,
+      lastCharacter	: {
+        remove		: [ ' ', ',', ';', '.', '!', '?' ],
+        noEllipsis	: []
+      }
+    });
   }
-  
-  /**********************************************************************************************************
-   * Text in Magazine
-   **********************************************************************************************************/
-  $('.gd-longarticle-fixedlines p').dotdotdot({
-    ellipsis	: '... ',
-    wrap		: 'word',
-    fallbackToLetter: true,
-    after		: null,
-    watch		: true,
-    tolerance	: 0,
-    height: (isIE8() ? 28 : parseInt($('.gd-longarticle-fixedlines p').css('lineHeight'))) * gdSettings.LongVersionContentNumberOfLines,
-    lastCharacter	: {
-      remove		: [ ' ', ',', ';', '.', '!', '?' ],
-      noEllipsis	: []
-    }
-  });
 
   /**********************************************************************************************************
    * Carousel image
@@ -2076,13 +2082,10 @@ $(document).ready(function() {
         name: 'others',
         rules: 'required',
         depends: function() {
-          return $(this).prev('.gd-checkbox').hasClass('active');
+          return $('.gd-checkbox', $('[name=others]').parent()).hasClass('active');
         }
     }, {
         name: 'legal',
-        rules: 'required'
-    }, {
-        name: 'optin',
         rules: 'required'
     }, {
         name: 'verifycode',
