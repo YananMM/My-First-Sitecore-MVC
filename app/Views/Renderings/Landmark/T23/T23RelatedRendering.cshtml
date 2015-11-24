@@ -28,10 +28,11 @@
                         <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.Item))">
                             <div class="col-sm-6 clearfix">
                                 <img data-src="@image">
-                                <h5>@currentItem.Parent.Fields["Category Name"].ToString().ToUpper()</h5>
+                                <h5>@Html.Sitecore().Field("Category Name", item.Item.Parent)</h5>
                                 <h4>@Html.Sitecore().Field("Article Headline", item.Item)</h4>
                             </div>
-                        </a>  }
+                        </a>
+                    }
                 }
             </div>
         </div>
