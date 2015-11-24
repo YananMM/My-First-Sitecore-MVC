@@ -124,7 +124,7 @@ namespace Landmark.Models
         /// Gets or sets the other interest.
         /// </summary>
         /// <value>The other interest.</value>
-        public string OtherInterest { get; set; }
+        public string Others { get; set; }
 
         /// <summary>
         /// Gets or sets the gender.
@@ -321,7 +321,7 @@ namespace Landmark.Models
             {
                 OptIn = string.Empty;
             }
-            Channel = model.Channel=="0"?"Email Only":"Email and Postal Address";
+            Channel = model.Channel;
             Room = model.Room;
             Building = model.Building;
             Street = model.Street;
@@ -356,8 +356,8 @@ namespace Landmark.Models
             InterestSports      = interests.Contains(predefined[10]) ? "Yes" : "No";
             InterestTravelling  = interests.Contains(predefined[11]) ? "Yes" : "No";
             InterestSocialResponsibility = interests.Contains(predefined[12]) ? "Yes" : "No";
-            var others = interests.Except(predefined);
-            InterestOthers = others.Any() ? others.First() : null;
+            //var others = interests.Except(predefined);
+            InterestOthers = model.Other_Interest;
         }
     }
 }

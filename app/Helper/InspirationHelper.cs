@@ -11,6 +11,7 @@ using Sitecore.ContentSearch.ComputedFields;
 using Sitecore.Data;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
+using Sitecore.Shell.Applications.ContentEditor;
 
 namespace Landmark.Helper
 {
@@ -59,7 +60,7 @@ namespace Landmark.Helper
             List<Item> results = null;
             int pagenumber;
             pagenumber = page != null ? Int32.Parse(page) : 1;
-            List<Item> detailedItems = GetDetailedExclusives(page); 
+            List<Item> detailedItems = GetDetailedExclusives(page);
             results = GetMonthlyExclusives().Where(item => !((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
             return results;
             /*if (detailedItems.Count() > pagenumber * 8)
@@ -97,7 +98,7 @@ namespace Landmark.Helper
                         if (_webDb.GetItem(brand) != null)
                             brands.Add(_webDb.GetItem(brand));
                     }
-                    
+
                 }
             }
 
@@ -133,7 +134,7 @@ namespace Landmark.Helper
             //            }
             //            if (!has)
             //                categories.Add(_webDb.GetItem(id));
-                        
+
             //        }
             //    }
             //}
@@ -144,7 +145,7 @@ namespace Landmark.Helper
         public string GetTagsFilter(Item item)
         {
             string tagsClass = string.Empty;
-            var tagsField = (MultilistField) item.Fields["Tags"];
+            var tagsField = (MultilistField)item.Fields["Tags"];
 
             if (tagsField != null)
             {
@@ -156,7 +157,7 @@ namespace Landmark.Helper
                     }
                 }
             }
-            
+
             return tagsClass;
         }
 
@@ -196,8 +197,11 @@ namespace Landmark.Helper
                 allItems = brands;
             }
             var currentTagsField = currentItem.Fields["tags"];
-            var itemTags = currentTagsField.ToString().Split('|').ToList();
-
+            List<string> itemTags = new List<string>();
+            if (!string.IsNullOrEmpty(currentTagsField.Value))
+            {
+                itemTags = currentTagsField.ToString().Split('|').ToList();
+            }
             foreach (var item in allItems)
             {
                 var itemTagsField = item.Fields["Tags"];

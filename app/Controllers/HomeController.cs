@@ -23,6 +23,7 @@ using Sitecore.Data.Items;
 using Landmark.Models;
 using Landmark.Helper;
 using System.Text.RegularExpressions;
+using Sitecore.Configuration;
 
 // <summary>
 // The Controllers namespace.
@@ -196,6 +197,8 @@ namespace Landmark.Controllers
         {
             try
             {
+                var emailOnlyItem = (Item)Factory.GetDatabase("web").GetItem(ItemGuids.EmailOnlyItem);
+                var emailAndPostal = (Item)Factory.GetDatabase("web").GetItem(ItemGuids.EmailPostalAddressItem);
                 string strRegex = @"^[a-zA-Z0-9_+.-]+\@([a-zA-Z0-9-]+\.)+[a-zA-Z0-9]{2,4}$";
                 Regex re = new Regex(strRegex);
                 if (!re.IsMatch(model.Email))
@@ -212,8 +215,9 @@ namespace Landmark.Controllers
                         FirstName = model.FirstName,
                         LastName = model.LastName,
                         Email = model.Email,
-                        Channel = model.Channel,
-                        Interest = model.Interests,
+                        Channel = (model.Channel == "0") ? emailOnlyItem.Fields["Glossary Value"].ToString() : emailAndPostal.Fields["Glossary Value"].ToString(),
+                        Interest = model.Interests.Replace("," + model.Others, ""),
+                        Other_Interest = model.Others,
                         Room = model.Room,
                         Building = model.Building,
                         Street = model.Street,
@@ -234,7 +238,7 @@ namespace Landmark.Controllers
             }
             catch (Exception e)
             {
-                return Content(e.StackTrace);
+                return Content(e.Message);
             }
             return RedirectToAction("ButtonRedirect", new { targetId = ItemGuids.EmailSignUpThankYouPage });
         }
