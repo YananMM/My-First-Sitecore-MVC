@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {49B3DA18-4601-48AB-9AD3-B506C0713762}
+id: {C029DF24-A35D-443A-BA17-00FA1C6FAD9C}
 database: master
-path: /sitecore/content/Global/Landmark/Glossary/LANDMARK
+path: /sitecore/content/Global/Landmark/Glossary/OF
 parent: {8B197E68-D618-4F66-9C07-BA8DD5DC096E}
-name: LANDMARK
+name: OF
 master: {00000000-0000-0000-0000-000000000000}
 template: {7AD93F40-7320-4CD8-89A4-D4E4BB44ADF8}
 templatekey: Glossary Object
@@ -12,36 +12,36 @@ templatekey: Glossary Object
 ----version----
 language: en
 version: 1
-revision: 462d8370-7252-4058-b3bd-76b12604a527
+revision: 78a85e75-e60f-4f71-84c9-fe615e1b5603
 
 ----field----
 field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
 name: Glossary Value
 key: glossary value
-content-length: 8
+content-length: 2
 
-LANDMARK
+of
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20151120T090129Z
+20151124T061224Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-462d8370-7252-4058-b3bd-76b12604a527
+78a85e75-e60f-4f71-84c9-fe615e1b5603
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151120T090129Z
+20151124T061230:635839423504628454Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -52,15 +52,8 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 70f5e490-ac78-4186-b471-49c6fec7e973
+revision: 93e78911-0cf9-4f30-8eb5-d644f9071e59
 
-----field----
-field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
-name: Glossary Value
-key: glossary value
-content-length: 4
-
-置地广塲
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -74,7 +67,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151120T090133Z
+20151124T061241Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -88,14 +81,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-70f5e490-ac78-4186-b471-49c6fec7e973
+93e78911-0cf9-4f30-8eb5-d644f9071e59
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151120T090146Z
+20151124T061243:635839423633685836Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -106,15 +99,8 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 9415a2ce-37c7-4cb0-a2e5-774842cb1f32
+revision: de4d0e93-8b86-4d89-a1c1-6967d8d09f90
 
-----field----
-field: {F8DB7F07-0A48-4F69-AC9F-9A7D3C45054C}
-name: Glossary Value
-key: glossary value
-content-length: 4
-
-置地廣塲
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -128,7 +114,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151120T085839Z
+20151124T061200Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -142,14 +128,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9415a2ce-37c7-4cb0-a2e5-774842cb1f32
+de4d0e93-8b86-4d89-a1c1-6967d8d09f90
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151120T090153Z
+20151124T061214:635839423344089272Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
