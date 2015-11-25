@@ -17,7 +17,7 @@
                 <div class="carousel-caption-inner">
                     <div class="gd-carousel-detail">
                         <div class="gd-mainimage-brief2">
-                            <h1>@Html.Sitecore().Field("Article Headline").ToString().ToUpper()</h1>
+                            <h1>@currentItem.Fields["Article Headline"].ToString().ToUpper()</h1>
                             <ul>
                                 @{
                                     MultilistField experienceType = currentItem.Fields["Experience Type"];
@@ -49,7 +49,7 @@
                                                     @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.WebsiteItem)).ToString().ToUpper()
                                                 </th>
                                                 <td>
-                                                    @Html.Sitecore().Field("Cover Website", currentItem, new { @class = "gd-hover-img"})
+                                                    @Html.Sitecore().Field("Cover Website", currentItem, new { @class = "gd-hover-img" })
                                                 </td>
                                             </tr>
                                         }
