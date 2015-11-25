@@ -6530,6 +6530,8 @@ button.close {
 }
 .font_meiryo {
   font-family: "meiryo";
+  margin: 0 !important;
+  border: hidden !important;
 }
 /*** mobile Sprite ***/
 [class^="sprite-"],
