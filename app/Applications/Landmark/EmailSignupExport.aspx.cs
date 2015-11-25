@@ -34,7 +34,7 @@ namespace Landmark.layouts.Landmark
             {
                 var results =
                     context.EmailSignups.Where(
-                        data => data.CreatedOn < toDate.SelectedDate && data.CreatedOn > fromDate.SelectedDate);
+                        data => data.CreatedOn <= toDate.SelectedDate && data.CreatedOn >= fromDate.SelectedDate).OrderBy(r=>r.CreatedOn);
                 if (results.Count() == 0)
                 {
                     Response.Write("No data in selected date.");
