@@ -1080,11 +1080,11 @@ $(document).ready(function() {
       $('#mapplic').unbind();
       $('#gd-floors, #gd-shops, #mapplic').empty();
       window.gdFloorData = null;
-      $('#gd-shop-detail-title').text('');
-      $('#gd-shop-detail-where').text('');
-      $('#gd-shop-detail-wkt').text('');
-      $('#gd-shop-detail-wdt').text('');
-      $('#gd-shop-detail-addr').text('');
+      $('#gd-shop-detail-title').html('');
+      $('#gd-shop-detail-where').html('');
+      $('#gd-shop-detail-wkt').html('');
+      $('#gd-shop-detail-wdt').html('');
+      $('#gd-shop-detail-addr').html('');
       $('#gd-shop-detail-href').attr('href', 'javascript:;');
     }
     
@@ -1119,11 +1119,11 @@ $(document).ready(function() {
       var gdFloorId  = $('#gd-floors>.active').data('floor');
       var gdShopId   = $('#gd-shops>.active').data('shopid');
       var gdShop     = window.gdFloorData.levels[gdFloorId].locations[gdShopId];
-      $('#gd-shop-detail-title').text(gdShop.title);
-      $('#gd-shop-detail-where').text(gdShop.wherelocation);
-      $('#gd-shop-detail-wkt').text(gdShop.workdayhours);
-      $('#gd-shop-detail-wdt').text(gdShop.weekendhours);
-      $('#gd-shop-detail-addr').text(gdShop.address);
+      $('#gd-shop-detail-title').html(gdShop.title);
+      $('#gd-shop-detail-where').html(gdShop.wherelocation);
+      $('#gd-shop-detail-wkt').html(gdShop.workdayhours);
+      $('#gd-shop-detail-wdt').html(gdShop.weekendhours);
+      $('#gd-shop-detail-addr').html(gdShop.address);
       $('#gd-shop-detail-href').attr('href', gdShop.href);
       
       // For mobile

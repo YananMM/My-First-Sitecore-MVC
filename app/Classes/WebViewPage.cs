@@ -25,6 +25,38 @@ namespace Landmark.Classes
         }
     }
 
+    public static class CustomReplaceExtension
+    {
+        public static string DoCustomReplace(this string s)
+        {
+            if (!s.Contains("置地"))
+                return s;
+
+            var startIndex = 0;
+            var endIndex = s.Length;
+            if (s.StartsWith("<a "))
+            {
+                startIndex = s.IndexOf(">") + 1;
+                endIndex = s.IndexOf("</a>");
+            }
+
+            return s.Substring(0, startIndex)
+                    + s.Substring(startIndex, endIndex - startIndex)
+                        .Replace("置地", "<span class=\"font_meiryo\">置</span>地")
+                    + s.Substring(endIndex);
+        }
+
+        public static string PreventCustomReplace(this string s)
+        {
+            return s.Replace("置地", "*置*地");
+        }
+
+        public static string ReversePreventCustomReplace(this string s)
+        {
+            return s.Replace("*置*地", "置地");
+        }
+    }
+
     public abstract class WebViewPage : System.Web.Mvc.WebViewPage
     {
         
@@ -55,27 +87,6 @@ namespace Landmark.Classes
             CustomReplace = false;
         }
 
-        private static IHtmlString DoCustomReplace(IHtmlString value)
-        {
-            var s = value.ToString();
-            if (!s.Contains("置地"))
-                return value;
-
-            var startIndex = 0;
-            var endIndex = s.Length;
-            if (s.StartsWith("<a "))
-            {
-                startIndex = s.IndexOf(">") + 1;
-                endIndex = s.IndexOf("</a>");
-            }
-
-            return new MvcHtmlString(s.Substring(0, startIndex)
-                                + s.Substring(startIndex, endIndex - startIndex)
-                                    .Replace("置地", "<span class=\"font_meiryo\">置</span>地")
-                                + s.Substring(endIndex));
-        }
-
-
         public CustomReplacePreventer BeginPreventCustomReplace()
         {
             return new CustomReplacePreventer(this);
@@ -84,7 +95,7 @@ namespace Landmark.Classes
         public MvcHtmlString PreventCustomReplace(object value)
         {
             // replace to temporary string
-            return new MvcHtmlString(value.ToString().Replace("置地", "*置*地"));
+            return new MvcHtmlString(value.ToString().PreventCustomReplace());
         }
         
         public override void Write(object value)
@@ -94,11 +105,11 @@ namespace Landmark.Classes
                 if (VirtualPath.StartsWith("/Views/Layouts"))
                 {
                     // in root layout, replace the temporary string back
-                    value = new MvcHtmlString(value.ToString().Replace("*置*地", "置地"));
+                    value = new MvcHtmlString(value.ToString().ReversePreventCustomReplace());
                 }
                 else if (CustomReplace)
                 {
-                    value = DoCustomReplace(value as IHtmlString);
+                    value = new MvcHtmlString(value.ToString().DoCustomReplace());
                 }
                 else
                 {
