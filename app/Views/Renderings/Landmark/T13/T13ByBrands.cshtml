@@ -17,7 +17,7 @@
         pageItem = currentItem.Parent.Parent;
     }
     brandModels = shoppingHelper.GetBrandModels(pageItem);
-    
+
     if (!currentItem.Parent.ID.ToString().Equals(ItemGuids.ShoppingItem) && !currentItem.Parent.ID.ToString().Equals(ItemGuids.DiningItem))
     {
         var currentTag = shoppingHelper.GetCurrentCategory(currentItem);
@@ -25,7 +25,6 @@
         brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
     }
     var brands = brandModels.GroupBy(p => p.Group).ToList();
-
 }
 <div class="masonry-area clearfix">
     @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T13MobileSideBarRendering)
