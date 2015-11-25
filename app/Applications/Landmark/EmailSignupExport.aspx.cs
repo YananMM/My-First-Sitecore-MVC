@@ -49,7 +49,7 @@ namespace Landmark.layouts.Landmark
 
                 CsvFileDescription outputFileDescription = new CsvFileDescription
                 {
-                    SeparatorChar = '\t', // tab delimited
+                    SeparatorChar = ',', // tab delimited
                     FirstLineHasColumnNames = true, // no column names in first record
                     // FileCultureName = "nl-NL" // use formats used in The Netherlands
                 };
