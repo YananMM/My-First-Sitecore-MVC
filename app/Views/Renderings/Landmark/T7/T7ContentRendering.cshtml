@@ -5,7 +5,6 @@
 @using Sitecore.Data.Items
 @model RenderingModel
 @{
-    string src = Html.Sitecore().ImageFieldSrc("Map Menu Image", Sitecore.Context.Item);
     List<Item> buildings = LandmarkHelper.GetBuildings();
     Item activeItem = string.IsNullOrEmpty(Request.QueryString["buildingID"])?buildings[0]:Sitecore.Context.Database.GetItem(Request["buildingID"]);
 }
@@ -22,7 +21,7 @@
             </a>
         </div>
         <div class="gd-pagetitle-mapmenu hidden-xs hiddden-sm">
-            <img data-src="@src" alt="map">
+            <img data-src="@LandmarkHelper.ImageFieldSrc("Floor Map Image",activeItem)" alt="map">
             <ul>
                 @{
                     int i = 0;
@@ -30,7 +29,7 @@
                     {
                         string cssclass = building.ID.ToString() == activeItem.ID.ToString() ? "active" : "";
                         <li class="@cssclass"><a href="?buildingID=@building.ID.ToString()" data-src="/Service/Landmark.asmx/GetFloorPlanJson?buildingID=@building.ID.ToString()"
- data-src-ie8="/Service/Landmark.asmx/GetFloorPlanJson?buildingID=@building.ID.ToString()">@building.Fields["Building Title"].Value</a></li>
+ data-src-ie8="/Service/Landmark.asmx/GetFloorPlanJson?buildingID=@building.ID.ToString()" data-logo="@LandmarkHelper.ImageFieldSrc("Floor Map Image",building)" data-logo-m="@LandmarkHelper.ImageFieldSrc("Mobile Floor Map Image",building)">@building.Fields["Building Title"].Value</a></li>
                         i++;
                     }
                 }
@@ -42,15 +41,20 @@
         <div class="col-xs-12">
             <div class="gd-floorplan-m">
                 <div class="gd-floorplan-img-m">
-                    <img src="../files/landmark/images/floorguide/examplefloorplan0.jpg">
+                    <img data-src="@LandmarkHelper.ImageFieldSrc("Mobile Floor Map Image",activeItem)" alt="map">
                 </div>
 
                 <div class="gd-controls-m">
                     <select id="gd-fp-building-m" class="form-control">
-                        <option value="0">LANDMARK PRINCE'S</option>
-                        <option value="1">LANDMARK ALEXANDRA</option>
-                        <option value="2">LANDMARK CHATER</option>
-                        <option value="3">OTHER BUILDINGS</option>
+                        
+                        @{
+                    int j = 0;
+                    foreach (Item building in buildings)
+                    {
+                        <option value="@j">@building.Fields["Building Title"].Value</option>
+                        j++;
+                    }
+                }
                     </select>
                 </div>
 
