@@ -1420,7 +1420,7 @@ $(document).ready(function() {
     var $link = $(this);
     var gdLightMax     = $(window).height() - 150;
     var gdLightSrc     = $(this).data('lightsrc');
-    var gdLightTitle   = $(this).data('lighttitle') || 'Lightbox';
+    var gdLightTitle   = $(this).data('lighttitle').replace("÷√µÿ", "<span class=\"font_meiryo\">÷√</span>µÿ") || 'Lightbox';
     var gdLightPoster  = $(this).data('lightposter')
     var gdLightContent = '';
 
