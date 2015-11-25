@@ -1,13 +1,13 @@
 ----item----
 version: 1
-id: {D16689E2-6E35-4BEA-81E6-CF55FA374AB3}
+id: {B74E7908-EC9A-471B-AFA6-D1217268CD35}
 database: master
-path: /sitecore/content/Home/Landmark/Shopping/Food and Wine/Goument Market/By Buildings
-parent: {B74E7908-EC9A-471B-AFA6-D1217268CD35}
-name: By Buildings
+path: /sitecore/content/Home/Landmark/Shopping/Food and Wine/Gourmet Market
+parent: {C3C82030-FD49-46E9-AF01-6B0DF430A676}
+name: Gourmet Market
 master: {EF72B181-F50E-46E5-84B4-74392DA7AA04}
-template: {0B591CE8-50CB-4CF5-9CBF-F2F6E61F23E8}
-templatekey: T13 Page
+template: {11D18D8C-A8E3-4A15-A295-DAE23894A0AE}
+templatekey: Shopping Sub Category Page Object
 
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
@@ -16,25 +16,18 @@ key: __originator
 content-length: 0
 
 
-----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 186
-
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{F408832F-6563-4BDE-B59A-22078F27CA99}" s:id="{65C42F4A-B30F-45FA-804C-6638E3BB75F4}" /></d></r>
 ----version----
 language: en
 version: 1
-revision: fb52ae4e-27dc-4865-ba0e-d564329a624c
+revision: 5ba3f2c4-994a-41c7-b587-c45612a4f6c5
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 11
+content-length: 14
 
-By Buidings
+Gourmet Market
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -48,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fb52ae4e-27dc-4865-ba0e-d564329a624c
+5ba3f2c4-994a-41c7-b587-c45612a4f6c5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20150910T021814Z
+20151125T081910:635840363504593377Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -66,15 +59,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: bf83d702-4259-4dea-b820-eacb17912977
+revision: 59d68409-9d7b-41e9-a56f-430389a78a2f
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 4
+content-length: 5
 
-置地广塲
+ 美食市场
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -88,7 +81,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151106T120840Z
+20151106T120829Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -102,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bf83d702-4259-4dea-b820-eacb17912977
+59d68409-9d7b-41e9-a56f-430389a78a2f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T065129Z
+20151112T091045Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -120,7 +113,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: ff14a5ed-a835-4634-94fb-d8e7a26f8405
+revision: d8548372-9b73-4fb5-a3b5-486d25223b1f
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -128,7 +121,7 @@ name: Page Title
 key: page title
 content-length: 4
 
-置地廣塲
+美食市場
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -142,7 +135,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151106T120837Z
+20151106T120823Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -156,14 +149,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ff14a5ed-a835-4634-94fb-d8e7a26f8405
+d8548372-9b73-4fb5-a3b5-486d25223b1f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T064724Z
+20151112T091055Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
