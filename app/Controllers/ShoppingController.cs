@@ -66,7 +66,7 @@ namespace Landmark.Controllers
                 if (!string.IsNullOrEmpty(childcategory))
                 {
                     var childcategoryTag = Sitecore.Context.Database.GetItem(childcategory);
-                    var childcategoryDisplayName = childcategoryTag.DisplayName.Replace("_"," ").Replace(childcategoryTag.Parent.DisplayName + "-", "");
+                    var childcategoryDisplayName = childcategoryTag.DisplayName.Replace("_"," ").Replace(childcategoryTag.Parent.DisplayName + "-", "").Trim();
                     foreach (var item in shopItemPages)
                     {
                         if (item.DisplayName == categoryDisplayName)
@@ -95,11 +95,9 @@ namespace Landmark.Controllers
                         }
                     }
                 }
-                
             }
             return Redirect(LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(target)));
         }
-
     }
 
 }

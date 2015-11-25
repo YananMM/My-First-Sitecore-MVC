@@ -1,0 +1,93 @@
+----item----
+version: 1
+id: {3380992C-C8EC-46F7-A49C-680A97F01061}
+database: master
+path: /sitecore/content/Home/Landmark/Inspiration/Landmark Magazine/Women/Style C
+parent: {703730AD-3796-4376-81ED-D1C762E67447}
+name: Style C
+master: {00000000-0000-0000-0000-000000000000}
+template: {2F6A4A9C-C7DC-439D-8310-3A2EF0617158}
+templatekey: T23 Page C
+
+----field----
+field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
+name: __Originator
+key: __originator
+content-length: 0
+
+
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 194
+
+{EEEB8813-EBD2-415E-B4F0-72B52DDEF18E}|{4F401F16-FF51-4484-83FA-B905DAB54D97}|{82C6EA0F-D0F2-4F40-BA8A-F5E39A10D5B5}|{DCB0CBFD-E8BA-49C0-9214-577C18B7BF25}|{C9307810-5FD7-4B38-9DA0-F50538F83F7D}
+----field----
+field: {9135200A-5626-4DD8-AB9D-D665B8C11748}
+name: __Never publish
+key: __never publish
+content-length: 1
+
+1
+----version----
+language: en
+version: 1
+revision: 8377ccb9-31bc-4440-a64d-959b236d5c44
+
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 24
+
+This is Article Headline
+----field----
+field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
+name: Article Subheadline
+key: article subheadline
+content-length: 27
+
+This is  Article Subheadlin
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 293
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies nisl id est blandit porttitor. Quisque vel interdum erat. Vivamus convallis ultrices fringilla. Donec sagittis orci nulla, non luctus sapien pretium eu. Aenean vulputate fringilla arcu nec fringilla. Quisque eu enim eros.
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 7
+
+Style C
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20151123T040006Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+8377ccb9-31bc-4440-a64d-959b236d5c44
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20151125T022614Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

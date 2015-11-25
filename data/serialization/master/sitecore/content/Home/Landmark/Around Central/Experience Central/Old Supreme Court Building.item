@@ -24,6 +24,34 @@ content-length: 58
 
 <image mediaid="{2444D4E7-DD1E-4FAF-90AD-1028A78D425C}" />
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.160374
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.280922
+----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +61,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 0ae94411-f00d-4186-b501-249bcd8bb808
+revision: e399ee2f-0ce5-49ec-9da6-28238654df1b
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -46,9 +74,9 @@ Old Supreme Court Building
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 93
+content-length: 145
 
-<link linktype="external" url="http://www.hkcfa.hk/en/home/index.html" anchor="" target="" />
+<link text="http://www.hkcfa.hk/en/home/index.html" linktype="external" url="http://www.hkcfa.hk/en/home/index.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -64,12 +92,47 @@ content-length: 52
 
 Architectural gem has long history of public service
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 26
+
+Old Supreme Court Building
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 53
+
+Architectural gem has long history of public service.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 26
+
+Old Supreme Court Building
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 53
+
+Architectural gem has long history of public service.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 26
 
 Old Supreme Court Building
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -83,14 +146,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0ae94411-f00d-4186-b501-249bcd8bb808
+e399ee2f-0ce5-49ec-9da6-28238654df1b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T074602:635833431623632538Z
+20151124T095853Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +164,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: caa64213-8bba-4d15-bc3a-0f3954fcc109
+revision: 59d4a626-7f40-4d7f-8088-0135fe5ca3d2
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 7
+
+旧最高法院大楼
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 93
+content-length: 145
 
-<link linktype="external" url="http://www.hkcfa.hk/sc/home/index.html" anchor="" target="" />
+<link text="http://www.hkcfa.hk/sc/home/index.html" linktype="external" url="http://www.hkcfa.hk/sc/home/index.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -124,6 +194,34 @@ key: content title
 content-length: 11
 
 长期为民服务的建筑瑰宝
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+旧最高法院大楼
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 12
+
+长期为民服务的建筑瑰宝。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+旧最高法院大楼
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 12
+
+长期为民服务的建筑瑰宝。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -144,14 +242,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-caa64213-8bba-4d15-bc3a-0f3954fcc109
+59d4a626-7f40-4d7f-8088-0135fe5ca3d2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094858:635828321382645257Z
+20151124T051419Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +260,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 12bc6900-b682-4686-8315-f9438ae3c7e6
+revision: abb14d88-679c-4334-80e4-e796b3ef7a63
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 7
+
+舊最高法院大樓
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 93
+content-length: 145
 
-<link linktype="external" url="http://www.hkcfa.hk/tc/home/index.html" anchor="" target="" />
+<link text="http://www.hkcfa.hk/tc/home/index.html" linktype="external" url="http://www.hkcfa.hk/tc/home/index.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -185,6 +290,34 @@ key: content title
 content-length: 11
 
 長期為民服務的建築瑰寶
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+舊最高法院大樓
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 12
+
+長期為民服務的建築瑰寶。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+舊最高法院大樓
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 12
+
+長期為民服務的建築瑰寶。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -205,14 +338,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-12bc6900-b682-4686-8315-f9438ae3c7e6
+abb14d88-679c-4334-80e4-e796b3ef7a63
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094838:635828321189634218Z
+20151124T051342Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

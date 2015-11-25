@@ -31,6 +31,20 @@ content-length: 15
 
 (852) 2523 4157
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.159735
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.278694
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -40,7 +54,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 63d348d4-1ad5-4d11-9428-f817f317c371
+revision: b92b3d93-91cd-4e4c-b731-98419454180d
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -53,9 +67,9 @@ St John’s Cathedral
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 90
+content-length: 139
 
-<link linktype="external" url="http://www.stjohnscathedral.org.hk/" anchor="" target="" />
+<link text="http://www.stjohnscathedral.org.hk/" linktype="external" url="http://www.stjohnscathedral.org.hk/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -71,12 +85,47 @@ content-length: 61
 
 Historic house of worship provides peace in urban environment
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 19
+
+St John’s Cathedral
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 62
+
+Historic house of worship provides peace in urban environment.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 19
+
+St John’s Cathedral
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 62
+
+Historic house of worship provides peace in urban environment.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 19
 
 St John’s Cathedral
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -90,14 +139,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-63d348d4-1ad5-4d11-9428-f817f317c371
+b92b3d93-91cd-4e4c-b731-98419454180d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T074448:635833430887620441Z
+20151124T095835Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,15 +157,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 639be0c5-19d4-4d51-98ca-8b30f54f13ed
+revision: c0a0bfd6-188d-4131-bb36-ace0a965293b
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 5
+
+圣约翰座堂
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 107
+content-length: 173
 
-<link linktype="external" url="http://www.stjohnscathedral.org.hk/Index.aspx?lang=2" anchor="" target="" />
+<link text="http://www.stjohnscathedral.org.hk/Index.aspx?lang=2" linktype="external" url="http://www.stjohnscathedral.org.hk/Index.aspx?lang=2" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -131,6 +187,34 @@ key: content title
 content-length: 16
 
 历史悠久的教堂为市区环境倍添安宁
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 5
+
+圣约翰座堂
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 17
+
+历史悠久的教堂为市区环境倍添安宁。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 5
+
+圣约翰座堂
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 17
+
+历史悠久的教堂为市区环境倍添安宁。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -151,14 +235,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-639be0c5-19d4-4d51-98ca-8b30f54f13ed
+c0a0bfd6-188d-4131-bb36-ace0a965293b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094318:635828317986341000Z
+20151124T050111Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -169,15 +253,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 031e0886-7cb8-461f-b86f-ac184925b370
+revision: a0c672de-a481-41a8-b070-45bd2c20aa55
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 5
+
+聖約翰座堂
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 107
+content-length: 173
 
-<link linktype="external" url="http://www.stjohnscathedral.org.hk/Index.aspx?lang=2" anchor="" target="" />
+<link text="http://www.stjohnscathedral.org.hk/Index.aspx?lang=2" linktype="external" url="http://www.stjohnscathedral.org.hk/Index.aspx?lang=2" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -192,6 +283,34 @@ key: content title
 content-length: 16
 
 歷史悠久的教堂為市區環境倍添安寧
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 5
+
+聖約翰座堂
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 17
+
+歷史悠久的教堂為市區環境倍添安寧。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 5
+
+聖約翰座堂
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 17
+
+歷史悠久的教堂為市區環境倍添安寧。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -212,14 +331,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-031e0886-7cb8-461f-b86f-ac184925b370
+a0c672de-a481-41a8-b070-45bd2c20aa55
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094256:635828317760408077Z
+20151124T050041Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

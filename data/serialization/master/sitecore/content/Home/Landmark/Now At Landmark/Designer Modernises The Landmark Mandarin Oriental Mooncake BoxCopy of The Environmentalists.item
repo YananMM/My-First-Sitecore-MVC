@@ -43,7 +43,7 @@ name: __Sortorder
 key: __sortorder
 content-length: 3
 
-700
+900
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -58,10 +58,17 @@ key: __masters
 content-length: 0
 
 
+----field----
+field: {9135200A-5626-4DD8-AB9D-D665B8C11748}
+name: __Never publish
+key: __never publish
+content-length: 1
+
+1
 ----version----
 language: en
 version: 1
-revision: ec9a457f-fcb5-4ef8-94e5-57f8ad630111
+revision: b15aa97e-abb7-4329-919d-c43ebe50e405
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -112,6 +119,13 @@ content-length: 63
 
 Designer Modernises The Landmark Mandarin Oriental Mooncake Box
 ----field----
+field: {B8F42732-9CB8-478D-AE95-07E25345FB0F}
+name: __Hide version
+key: __hide version
+content-length: 1
+
+1
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -124,14 +138,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ec9a457f-fcb5-4ef8-94e5-57f8ad630111
+b15aa97e-abb7-4329-919d-c43ebe50e405
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151120T023817Z
+20151124T083300Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

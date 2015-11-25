@@ -9,10 +9,52 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {37DFBBED-AA43-4B31-8DDE-90BCF818A90E}
 templatekey: T35 Get Dierction Page Object
 
+----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
 ----version----
 language: en
 version: 1
-revision: 6fa08be6-ff8d-49c8-a58f-1f343fcf0e76
+revision: 8228aa31-097c-49db-a645-b8f527e9bbb7
+
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 0
+
+
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 0
+
+
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 0
+
+
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 0
+
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -62,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6fa08be6-ff8d-49c8-a58f-1f343fcf0e76
+8228aa31-097c-49db-a645-b8f527e9bbb7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151019T104050:635808480500753993Z
+20151124T090243Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -80,7 +122,35 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 89ac0900-18e4-4c77-ad6b-35b67ccedf4b
+revision: 51a55f0b-77df-4ec5-a360-3d2574f40a86
+
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 0
+
+
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 0
+
+
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 0
+
+
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 0
+
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -111,6 +181,13 @@ content-length: 4
 
 在此输入
 ----field----
+field: {74666DDA-96F2-4FC5-8580-B9CD0DF647E1}
+name: OR Text
+key: or text
+content-length: 1
+
+或
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -137,14 +214,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-89ac0900-18e4-4c77-ad6b-35b67ccedf4b
+51a55f0b-77df-4ec5-a360-3d2574f40a86
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T134737Z
+20151124T090342Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -155,7 +232,35 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 1a3449c9-3df4-497d-8958-ce7fb4e12cc0
+revision: c25f3e5a-e1e5-42f2-a69c-5c00c9503d14
+
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 0
+
+
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 0
+
+
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 0
+
+
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 0
+
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -186,6 +291,13 @@ content-length: 4
 
 在此輸入
 ----field----
+field: {74666DDA-96F2-4FC5-8580-B9CD0DF647E1}
+name: OR Text
+key: or text
+content-length: 1
+
+或
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -212,14 +324,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1a3449c9-3df4-497d-8958-ce7fb4e12cc0
+c25f3e5a-e1e5-42f2-a69c-5c00c9503d14
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T134741Z
+20151124T090314Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

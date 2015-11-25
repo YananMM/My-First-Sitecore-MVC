@@ -24,6 +24,34 @@ content-length: 58
 
 <image mediaid="{060733E5-00DE-4968-B722-17DBBD4060B8}" />
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.155671
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.280838
+----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +61,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: c1ddedf3-c89f-487e-a1be-16aef0b28c41
+revision: 3fe1eb0a-9330-4b34-b6d5-b81df882d43d
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -46,9 +74,9 @@ Lan Kwai Fong
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 84
+content-length: 127
 
-<link linktype="external" url="http://www.lankwaifong.com/en" anchor="" target="" />
+<link text="http://www.lankwaifong.com/en" linktype="external" url="http://www.lankwaifong.com/en" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -64,12 +92,47 @@ content-length: 65
 
 Hong Kong’s iconic night district offers a world of entertainment
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+Lan Kwai Fong
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 66
+
+Hong Kong’s iconic night district offers a world of entertainment.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 13
+
+Lan Kwai Fong
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 66
+
+Hong Kong’s iconic night district offers a world of entertainment.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 13
 
 Lan Kwai Fong
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -83,14 +146,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c1ddedf3-c89f-487e-a1be-16aef0b28c41
+3fe1eb0a-9330-4b34-b6d5-b81df882d43d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T074828:635833433081645932Z
+20151124T095915Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +164,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: ce6a4737-0acf-47ba-9474-dba023d9baab
+revision: c09717b7-406b-441c-ac36-122c67af0fb8
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 3
+
+兰桂坊
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 84
+content-length: 127
 
-<link linktype="external" url="http://www.lankwaifong.com/zh" anchor="" target="" />
+<link text="http://www.lankwaifong.com/zh" linktype="external" url="http://www.lankwaifong.com/zh" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -124,6 +194,34 @@ key: content title
 content-length: 18
 
 香港的经典夜生活区，娱乐消遣一站云集
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+兰桂坊
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 19
+
+香港的经典夜生活区，娱乐消遣一站云集。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 3
+
+兰桂坊
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 19
+
+香港的经典夜生活区，娱乐消遣一站云集。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -144,14 +242,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ce6a4737-0acf-47ba-9474-dba023d9baab
+c09717b7-406b-441c-ac36-122c67af0fb8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093132:635828310925827162Z
+20151124T043651Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +260,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 12986516-3c41-4b85-9279-7c0d5a4757d9
+revision: 1c77db7a-f0aa-4e45-8c67-5d7b6803f587
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 3
+
+蘭桂坊
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 84
+content-length: 127
 
-<link linktype="external" url="http://www.lankwaifong.com/zh" anchor="" target="" />
+<link text="http://www.lankwaifong.com/zh" linktype="external" url="http://www.lankwaifong.com/zh" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -185,6 +290,34 @@ key: content title
 content-length: 18
 
 香港的經典夜生活區，娛樂消遣共冶一爐
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+蘭桂坊
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 19
+
+香港的經典夜生活區，娛樂消遣共冶一爐。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 3
+
+蘭桂坊
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 19
+
+香港的經典夜生活區，娛樂消遣共冶一爐。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -205,14 +338,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-12986516-3c41-4b85-9279-7c0d5a4757d9
+1c77db7a-f0aa-4e45-8c67-5d7b6803f587
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093112:635828310729145912Z
+20151124T043616Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

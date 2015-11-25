@@ -16,10 +16,17 @@ key: value
 content-length: 6
 
 Movies
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+350
 ----version----
 language: en
 version: 1
-revision: bee93c5e-70c8-4e59-94dc-8a9485836826
+revision: 21d1e924-6684-4b85-834b-7732aeedd172
 
 ----field----
 field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bee93c5e-70c8-4e59-94dc-8a9485836826
+21d1e924-6684-4b85-834b-7732aeedd172
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151122T051230:635837659500566251Z
+20151124T092821Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -113,7 +120,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: c3dc1aaa-00b2-4c3a-a58b-091c2683170a
+revision: d310dea2-2259-4018-993a-76c8e3d969b4
 
 ----field----
 field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
@@ -149,14 +156,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c3dc1aaa-00b2-4c3a-a58b-091c2683170a
+d310dea2-2259-4018-993a-76c8e3d969b4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151122T051830:635837663107142535Z
+20151124T092803Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

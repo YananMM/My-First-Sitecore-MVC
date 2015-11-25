@@ -1699,30 +1699,32 @@ $(document).ready(function() {
     fill: '<a id="read-more" href="#">' + gdTextOn + '</a>',
     tooltip: false
   });
-  
-  var gdTextFunc = function() {
-    var gdTextPar = $('#read-more').parent();
-    var gdTextOri = gdTextPar.html().toString();
-    var gdTextBrk = gdTextOri.indexOf('<a id="read-more');
-    var gdTextBef = gdTextOri.slice(0, gdTextOri.lastIndexOf(' ', gdTextBrk));
-    var gdTextAft = gdTextOri.slice(gdTextBrk);
-    gdTextPar.html(gdTextBef + gdTextAft);
-  };
-  
-  var gdTrunkCheckTimer;
-  function gdTrunkCheck() {
-    if ($('#read-more').length > 0) {
-      clearTimeout(gdTrunkCheckTimer);
-      gdTextFunc();
-    } else {
-      gdTrunkCheckTimer = setTimeout(function() {
+    if (location.href.indexOf(location.hostname + '/en/')) {
+        var gdTextFunc = function() {
+            var gdTextPar = $('#read-more').parent();
+            var gdTextOri = gdTextPar.html().toString();
+            var gdTextBrk = gdTextOri.indexOf('<a id="read-more');
+            var gdTextBef = gdTextOri.slice(0, gdTextOri.lastIndexOf(' ', gdTextBrk));
+            var gdTextAft = gdTextOri.slice(gdTextBrk);
+            gdTextPar.html(gdTextBef + gdTextAft);
+        };
+
+        var gdTrunkCheckTimer;
+
+        function gdTrunkCheck() {
+            if ($('#read-more').length > 0) {
+                clearTimeout(gdTrunkCheckTimer);
+                gdTextFunc();
+            } else {
+                gdTrunkCheckTimer = setTimeout(function() {
+                    gdTrunkCheck();
+                }, 200);
+            }
+        };
+
         gdTrunkCheck();
-      }, 200);
     }
-  };
-  gdTrunkCheck();
-  
-  $('#read-more').live('click', function (event) {
+    $('#read-more').live('click', function (event) {
     $(this).closest('.gd-longarticle').trunk8('revert').append(' <a id="read-less" href="javascript:;">' + gdTextOff + '</a>');
     
     return false;
@@ -1747,7 +1749,7 @@ $(document).ready(function() {
   }
 
   // Text in bottom slider
-  if ( $('#gd-carousel-info .gd-carousel-detail p').length ) {
+    if ( !$('body').hasClass('t34') &&$('#gd-carousel-info .gd-carousel-detail p').length ) {
     $('#gd-carousel-info .gd-carousel-detail p').dotdotdot({
       ellipsis	: '... ',
       wrap		: 'word',

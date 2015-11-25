@@ -31,6 +31,20 @@ content-length: 15
 
 (852) 2367 6373
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.150812
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.281985
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -40,7 +54,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: aa228f00-5f09-4f85-aba6-5bec2d038be1
+revision: 26fd7274-4e2e-49a9-b8f8-4741d2dc56c3
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -53,9 +67,9 @@ Dr Sun Yat-sen Museum
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 117
+content-length: 193
 
-<link linktype="external" url="http://hk.drsunyatsen.museum/en_US/web/sysm/aboutus/intro.html" anchor="" target="" />
+<link text="http://hk.drsunyatsen.museum/en_US/web/sysm/aboutus/intro.html" linktype="external" url="http://hk.drsunyatsen.museum/en_US/web/sysm/aboutus/intro.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -71,12 +85,47 @@ content-length: 70
 
 Dedicated to the life and work of founding father of Republic of China
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 21
+
+Dr Sun Yat-sen Museum
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 71
+
+Dedicated to the life and work of founding father of Republic of China.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 21
+
+Dr Sun Yat-sen Museum
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 71
+
+Dedicated to the life and work of founding father of Republic of China.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 21
 
 Dr Sun Yat-sen Museum
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -90,14 +139,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-aa228f00-5f09-4f85-aba6-5bec2d038be1
+26fd7274-4e2e-49a9-b8f8-4741d2dc56c3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T073129:635833422899213530Z
+20151124T100014Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,15 +157,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f50c1260-ac1b-4a04-9394-b7ab48e82378
+revision: 5675cb56-71ed-4645-824b-a647da574387
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 6
+
+孙中山纪念馆
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 117
+content-length: 193
 
-<link linktype="external" url="http://hk.drsunyatsen.museum/zh_CN/web/sysm/aboutus/intro.html" anchor="" target="" />
+<link text="http://hk.drsunyatsen.museum/zh_CN/web/sysm/aboutus/intro.html" linktype="external" url="http://hk.drsunyatsen.museum/zh_CN/web/sysm/aboutus/intro.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -131,6 +187,34 @@ key: content title
 content-length: 13
 
 纪念中华民国国父的生平事迹
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 6
+
+孙中山纪念馆
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 14
+
+纪念中华民国国父的生平事迹。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 6
+
+孙中山纪念馆
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 14
+
+纪念中华民国国父的生平事迹。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -151,14 +235,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f50c1260-ac1b-4a04-9394-b7ab48e82378
+5675cb56-71ed-4645-824b-a647da574387
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095628:635828325883982719Z
+20151124T053709Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -169,15 +253,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: b6cb351a-ffb3-4c5f-9ff0-79072ddf4e2c
+revision: 34f31bc9-a489-47db-844d-b841ca6381a0
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 6
+
+孫中山紀念館
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 117
+content-length: 193
 
-<link linktype="external" url="http://hk.drsunyatsen.museum/zh_TW/web/sysm/aboutus/intro.html" anchor="" target="" />
+<link text="http://hk.drsunyatsen.museum/zh_TW/web/sysm/aboutus/intro.html" linktype="external" url="http://hk.drsunyatsen.museum/zh_TW/web/sysm/aboutus/intro.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -192,6 +283,34 @@ key: content title
 content-length: 13
 
 紀念中華民國國父的生平事跡
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 6
+
+孫中山紀念館
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 14
+
+紀念中華民國國父的生平事跡。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 6
+
+孫中山紀念館
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 14
+
+紀念中華民國國父的生平事跡。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -212,14 +331,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b6cb351a-ffb3-4c5f-9ff0-79072ddf4e2c
+34f31bc9-a489-47db-844d-b841ca6381a0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095544:635828325449417863Z
+20151124T053626Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

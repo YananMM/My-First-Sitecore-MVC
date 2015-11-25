@@ -31,6 +31,34 @@ content-length: 15
 
 (852) 2366 2576
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.161240
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.287203
+----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {DCBD6530-C867-4887-B668-FF8BBB4B7B25}
 name: Tags
 key: tags
@@ -47,7 +75,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 73ace211-b483-401f-951e-4b0430263cbc
+revision: de062087-4b62-49b6-b524-0ce43c389148
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -60,9 +88,9 @@ Star Ferry
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 90
+content-length: 139
 
-<link linktype="external" url="http://www.starferry.com.hk/en/home" anchor="" target="" />
+<link text="http://www.starferry.com.hk/en/home" linktype="external" url="http://www.starferry.com.hk/en/home" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -78,6 +106,34 @@ content-length: 42
 
 Probably the best ferry ride in the world!
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 10
+
+Star Ferry
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 42
+
+Probably the best ferry ride in the world!
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 10
+
+Star Ferry
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 42
+
+Probably the best ferry ride in the world!
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -88,16 +144,16 @@ Star Ferry
 field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
 name: See More Label
 key: see more label
-content-length: 20
+content-length: 25
 
-SEE MORE ATTRACTIONS
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {F1220F65-3306-4AB6-8AC1-904AE9CBEB22}
 name: Brief Introduction
 key: brief introduction
-content-length: 144
+content-length: 0
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -111,14 +167,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-73ace211-b483-401f-951e-4b0430263cbc
+de062087-4b62-49b6-b524-0ce43c389148
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T074428:635833430682458706Z
+20151124T095831Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -129,15 +185,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: d2177cc9-d114-40c2-a857-d4dd9419a143
+revision: 7cd06d06-f4f7-4f6f-8b8a-c1bba7c16ae6
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 4
+
+天星小轮
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 114
+content-length: 187
 
-<link linktype="external" url="http://hanweb.kanhan.com/TuniS/www.starferry.com.hk/tc/home" anchor="" target="" />
+<link text="http://hanweb.kanhan.com/TuniS/www.starferry.com.hk/tc/home" linktype="external" url="http://hanweb.kanhan.com/TuniS/www.starferry.com.hk/tc/home" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -149,6 +212,34 @@ content-length: 16
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
+content-length: 14
+
+可能是世界上最精彩的渡轮游！
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+天星小轮
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 14
+
+可能是世界上最精彩的渡轮游！
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 4
+
+天星小轮
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 14
 
 可能是世界上最精彩的渡轮游！
@@ -172,14 +263,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d2177cc9-d114-40c2-a857-d4dd9419a143
+7cd06d06-f4f7-4f6f-8b8a-c1bba7c16ae6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093341:635828312212050729Z
+20151124T043856Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -190,15 +281,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: dfcba564-e9e0-40b0-b402-6796a29556bb
+revision: 3ed04c00-6fa3-4d4c-916b-50c4fbe2751f
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 4
+
+天星小輪
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 90
+content-length: 139
 
-<link linktype="external" url="http://www.starferry.com.hk/tc/home" anchor="" target="" />
+<link text="http://www.starferry.com.hk/tc/home" linktype="external" url="http://www.starferry.com.hk/tc/home" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -210,6 +308,34 @@ content-length: 16
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
+content-length: 14
+
+可能是世界上最精彩的渡輪遊！
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+天星小輪
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 14
+
+可能是世界上最精彩的渡輪遊！
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 4
+
+天星小輪
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 14
 
 可能是世界上最精彩的渡輪遊！
@@ -233,14 +359,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dfcba564-e9e0-40b0-b402-6796a29556bb
+3ed04c00-6fa3-4d4c-916b-50c4fbe2751f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093216:635828311367892446Z
+20151124T043828Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

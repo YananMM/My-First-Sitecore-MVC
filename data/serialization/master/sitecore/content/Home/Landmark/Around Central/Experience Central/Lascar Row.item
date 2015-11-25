@@ -24,6 +24,20 @@ content-length: 58
 
 <image mediaid="{0633B391-BB64-4F23-B822-6728D9D1B03F}" />
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.149596
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.284947
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +47,7 @@ content-length: 77
 ----version----
 language: en
 version: 1
-revision: caa6958b-b647-41cb-b1b5-178650818bc6
+revision: ec92f006-63fd-4887-aa2e-3bcb385ae848
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -57,12 +71,47 @@ content-length: 61
 
 Happy hunting ground for Chinese-style antiques and souvenirs
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 10
+
+Lascar Row
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 62
+
+Happy hunting ground for Chinese-style antiques and souvenirs.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 10
+
+Lascar Row
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 62
+
+Happy hunting ground for Chinese-style antiques and souvenirs.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 10
 
 Lascar Row
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -76,14 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-caa6958b-b647-41cb-b1b5-178650818bc6
+ec92f006-63fd-4887-aa2e-3bcb385ae848
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T074846:635833433262196259Z
+20151124T095911Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,8 +143,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 463292b8-e00f-4944-bc04-3f29e400d963
+revision: f5d2dccb-05d5-4c91-b403-dfc3916bcc34
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 3
+
+摩罗街
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -110,6 +166,34 @@ key: content title
 content-length: 13
 
 中式古玩和纪念品的寻宝乐园
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+摩罗街
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 14
+
+中式古玩和纪念品的寻宝乐园。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 3
+
+摩罗街
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 14
+
+中式古玩和纪念品的寻宝乐园。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -130,14 +214,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-463292b8-e00f-4944-bc04-3f29e400d963
+f5d2dccb-05d5-4c91-b403-dfc3916bcc34
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100008:635828328083218508Z
+20151124T054219Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -148,8 +232,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 56acdfc3-eea0-43bf-962b-5e6f8b744f7c
+revision: 661ae7e4-8518-4d68-9c6a-fa42afca998d
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 3
+
+摩羅街
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -164,6 +255,34 @@ key: content title
 content-length: 13
 
 中式古玩和紀念品的尋寶樂園
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+摩羅街
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 14
+
+中式古玩和紀念品的尋寶樂園。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 3
+
+摩羅街
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 14
+
+中式古玩和紀念品的尋寶樂園。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -184,14 +303,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-56acdfc3-eea0-43bf-962b-5e6f8b744f7c
+661ae7e4-8518-4d68-9c6a-fa42afca998d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095952:635828327927379595Z
+20151124T054152Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

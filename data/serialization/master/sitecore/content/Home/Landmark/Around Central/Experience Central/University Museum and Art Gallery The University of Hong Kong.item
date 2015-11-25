@@ -31,6 +31,20 @@ content-length: 15
 
 (852) 2241 5500
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.139389
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.283952
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -40,7 +54,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 26eb5442-9be6-409c-8c04-1517ec6d879a
+revision: 1057c7db-194a-4225-be91-6e8eaa2cd30a
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -53,9 +67,9 @@ University Museum and Art Gallery, The University of Hong Kong
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 89
+content-length: 137
 
-<link linktype="external" url="http://www.hkumag.hku.hk/main.html" anchor="" target="" />
+<link text="http://www.hkumag.hku.hk/main.html" linktype="external" url="http://www.hkumag.hku.hk/main.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -71,12 +85,47 @@ content-length: 63
 
 University Museum and Art Gallery, The University of Hong Kong 
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 62
+
+University Museum and Art Gallery, The University of Hong Kong
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 62
+
+From priceless collections of antiquities to contemporary art.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 62
+
+University Museum and Art Gallery, The University of Hong Kong
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 62
+
+From priceless collections of antiquities to contemporary art.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 62
 
 University Museum and Art Gallery, The University of Hong Kong
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -90,14 +139,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-26eb5442-9be6-409c-8c04-1517ec6d879a
+1057c7db-194a-4225-be91-6e8eaa2cd30a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T074122:635833428820382201Z
+20151124T095750Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,15 +157,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: db4fc524-ff6e-46f1-a85e-861efb30b81a
+revision: be4a6f80-40f5-418d-89ec-4cce0af6a46f
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 6
+
+学美术博物馆
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 92
+content-length: 143
 
-<link linktype="external" url="http://www.hkumag.hku.hk/mc/main.html" anchor="" target="" />
+<link text="http://www.hkumag.hku.hk/mc/main.html" linktype="external" url="http://www.hkumag.hku.hk/mc/main.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -131,6 +187,34 @@ key: content title
 content-length: 16
 
 从价值连城的文物收藏到当代艺术 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 9
+
+香港大学美术博物馆
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 16
+
+从价值连城的文物收藏到当代艺术。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 9
+
+香港大学美术博物馆
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 16
+
+从价值连城的文物收藏到当代艺术。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -158,14 +242,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-db4fc524-ff6e-46f1-a85e-861efb30b81a
+be4a6f80-40f5-418d-89ec-4cce0af6a46f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100328:635828330089163242Z
+20151124T060702Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -176,15 +260,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 97251192-ddd7-49eb-b6a4-251a30726a9a
+revision: b67bc080-776d-4b3d-82f7-2d525d6555fc
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 9
+
+香港大學美術博物館
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 92
+content-length: 143
 
-<link linktype="external" url="http://www.hkumag.hku.hk/mc/main.html" anchor="" target="" />
+<link text="http://www.hkumag.hku.hk/mc/main.html" linktype="external" url="http://www.hkumag.hku.hk/mc/main.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -200,6 +291,41 @@ content-length: 16
 
 從價值連城的文物收藏到當代藝術 
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 9
+
+香港大學美術博物館
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 16
+
+從價值連城的文物收藏到當代藝術。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 9
+
+香港大學美術博物館
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 16
+
+從價值連城的文物收藏到當代藝術。
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 9
+
+香港大學美術博物館
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -212,14 +338,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-97251192-ddd7-49eb-b6a4-251a30726a9a
+b67bc080-776d-4b3d-82f7-2d525d6555fc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100306:635828329869960704Z
+20151124T060633Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

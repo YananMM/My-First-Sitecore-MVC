@@ -24,6 +24,20 @@ content-length: 58
 
 <image mediaid="{8F941157-78BF-4A72-86FE-917FD24038D2}" />
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.151310
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.283889
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +47,7 @@ content-length: 77
 ----version----
 language: en
 version: 1
-revision: 321b5338-6fac-4168-adf8-4d4596df468f
+revision: 30dca0ce-fca5-4a41-b694-25979694a1a6
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -57,12 +71,47 @@ content-length: 74
 
 Famous street ‘time travels’ from HK’s earliest days up to the present day
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 15
+
+Hollywood Road 
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 75
+
+Famous street ‘time travels’ from HK’s earliest days up to the present day.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 15
+
+Hollywood Road 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 75
+
+Famous street ‘time travels’ from HK’s earliest days up to the present day.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 14
 
 Hollywood Road
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -76,14 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-321b5338-6fac-4168-adf8-4d4596df468f
+30dca0ce-fca5-4a41-b694-25979694a1a6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T075051:635833434518718128Z
+20151124T095943Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,8 +143,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: a7b242a4-4fa0-439f-8bca-7280735fbea4
+revision: 83b88081-0aac-4756-8915-7e362fb6f10a
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 4
+
+荷李活道
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -110,6 +166,34 @@ key: content title
 content-length: 19
 
 从香港的开埠时期，穿越至今天的城市新貌
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+荷李活道
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 20
+
+从香港的开埠时期，穿越至今天的城市新貌。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 4
+
+荷李活道
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 20
+
+从香港的开埠时期，穿越至今天的城市新貌。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -130,14 +214,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a7b242a4-4fa0-439f-8bca-7280735fbea4
+83b88081-0aac-4756-8915-7e362fb6f10a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095959:635828327999593725Z
+20151124T054050Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -148,8 +232,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 5cc10296-79af-4e3b-aae3-f04ea734664d
+revision: f13784cd-0fe9-4aae-b632-9776af7ce100
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 4
+
+荷李活道
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -164,6 +255,34 @@ key: content title
 content-length: 19
 
 從香港的開埠時期，穿梭至今天的城市新貌
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+荷李活道
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 20
+
+從香港的開埠時期，穿梭至今天的城市新貌。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 4
+
+荷李活道
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 20
+
+從香港的開埠時期，穿梭至今天的城市新貌。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -184,14 +303,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5cc10296-79af-4e3b-aae3-f04ea734664d
+f13784cd-0fe9-4aae-b632-9776af7ce100
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095811:635828326912671557Z
+20151124T054030Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

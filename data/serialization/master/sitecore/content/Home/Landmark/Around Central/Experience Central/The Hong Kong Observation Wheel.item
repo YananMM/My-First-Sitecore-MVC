@@ -24,6 +24,20 @@ content-length: 58
 
 <image mediaid="{3BDC0708-B7A0-417A-81A0-D9C03CA9CF46}" />
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.161677
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.285379
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: ec868f11-1d45-4057-85e1-30586457ec04
+revision: ff9c8438-9f93-4d54-8076-e9780942986e
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -46,9 +60,9 @@ The Hong Kong Observation Wheel
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 77
+content-length: 113
 
-<link linktype="external" url="http://www.hkow.hk/en/" anchor="" target="" />
+<link text="http://www.hkow.hk/en/" linktype="external" url="http://www.hkow.hk/en/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -64,12 +78,47 @@ content-length: 57
 
 New attraction offers bird’s-eye view of Victoria Harbour
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 31
+
+The Hong Kong Observation Wheel
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 58
+
+New attraction offers bird’s-eye view of Victoria Harbour.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 31
+
+The Hong Kong Observation Wheel
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 58
+
+New attraction offers bird’s-eye view of Victoria Harbour.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 31
 
 The Hong Kong Observation Wheel
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -83,14 +132,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ec868f11-1d45-4057-85e1-30586457ec04
+ff9c8438-9f93-4d54-8076-e9780942986e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T074246:635833429660080229Z
+20151124T095812Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +150,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: fa98e9dd-c511-4321-9456-b8678f26d244
+revision: 4acb8f8c-6383-42f7-861a-a18660cb4d85
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 5
+
+香港摩天轮
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 77
+content-length: 113
 
-<link linktype="external" url="http://www.hkow.hk/zh/" anchor="" target="" />
+<link text="http://www.hkow.hk/zh/" linktype="external" url="http://www.hkow.hk/zh/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -124,6 +180,34 @@ key: content title
 content-length: 15
 
 全新旅游景点，让您俯瞰维港风光
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 5
+
+香港摩天轮
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 16
+
+全新旅游景点，让您俯瞰维港风光。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 5
+
+香港摩天轮
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 16
+
+全新旅游景点，让您俯瞰维港风光。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -144,14 +228,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fa98e9dd-c511-4321-9456-b8678f26d244
+4acb8f8c-6383-42f7-861a-a18660cb4d85
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093359:635828312396731292Z
+20151124T044114Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +246,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 77ba6c15-d7ca-4741-b3cb-9b9ce3938025
+revision: d443f437-eacd-4db4-9cb6-1f0419456e41
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 5
+
+香港摩天輪
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 77
+content-length: 113
 
-<link linktype="external" url="http://www.hkow.hk/zh/" anchor="" target="" />
+<link text="http://www.hkow.hk/zh/" linktype="external" url="http://www.hkow.hk/zh/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -185,6 +276,34 @@ key: content title
 content-length: 15
 
 全新旅遊景點，讓您俯瞰維港風光
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 5
+
+香港摩天輪
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 16
+
+全新旅遊景點，讓您俯瞰維港風光。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 5
+
+香港摩天輪
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 16
+
+全新旅遊景點，讓您俯瞰維港風光。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -205,14 +324,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-77ba6c15-d7ca-4741-b3cb-9b9ce3938025
+d443f437-eacd-4db4-9cb6-1f0419456e41
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093333:635828312130186047Z
+20151124T044041Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -24,6 +24,20 @@ content-length: 58
 
 <image mediaid="{A4ED7DE4-2A3D-4986-B5DE-CEE7CCA5AAF9}" />
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.154134
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.281772
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 8df3a18e-52b4-4af4-b5b3-58c26827b0fd
+revision: 0bdb79df-ade0-40bf-9971-679697c02ca5
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -46,9 +60,9 @@ Former Central Police Station Compound
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 107
+content-length: 173
 
-<link linktype="external" url="http://www.centralpolicestation.org.hk/en/index.asp " anchor="" target="" />
+<link text="http://www.centralpolicestation.org.hk/en/index.asp " linktype="external" url="http://www.centralpolicestation.org.hk/en/index.asp " anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -64,12 +78,47 @@ content-length: 80
 
 Heritage buildings blend with contemporary architecture with a focus on the arts
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 38
+
+Former Central Police Station Compound
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 82
+
+ Heritage buildings blend with contemporary architecture with a focus on the arts.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 38
+
+Former Central Police Station Compound
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 81
+
+Heritage buildings blend with contemporary architecture with a focus on the arts.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 38
 
 Former Central Police Station Compound
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -83,14 +132,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8df3a18e-52b4-4af4-b5b3-58c26827b0fd
+0bdb79df-ade0-40bf-9971-679697c02ca5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T073705:635833426254725454Z
+20151124T095958Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +150,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 9fd16106-4782-47b2-b29a-bf664ac95dfd
+revision: de5bd332-94a9-47e2-93cb-93313ff8149c
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 8
+
+前中区警署建筑群
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 107
+content-length: 173
 
-<link linktype="external" url="http://www.centralpolicestation.org.hk/ch/index.asp " anchor="" target="" />
+<link text="http://www.centralpolicestation.org.hk/ch/index.asp " linktype="external" url="http://www.centralpolicestation.org.hk/ch/index.asp " anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -124,6 +180,34 @@ key: content title
 content-length: 20
 
 结合现代建筑的历史大楼，打造当代艺术空间
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 8
+
+前中区警署建筑群
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 21
+
+结合现代建筑的历史大楼，打造当代艺术空间。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 8
+
+前中区警署建筑群
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 21
+
+结合现代建筑的历史大楼，打造当代艺术空间。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -144,14 +228,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9fd16106-4782-47b2-b29a-bf664ac95dfd
+de5bd332-94a9-47e2-93cb-93313ff8149c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093026:635828310263799296Z
+20151124T043430Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +246,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: bf16d74b-c8d9-41ba-99ee-f4e3b7a32d47
+revision: adfadb47-3526-4668-a7af-12dc10e8942e
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 8
+
+前中區警署建築群
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 106
+content-length: 171
 
-<link linktype="external" url="http://www.centralpolicestation.org.hk/ch/index.asp" anchor="" target="" />
+<link text="http://www.centralpolicestation.org.hk/ch/index.asp" linktype="external" url="http://www.centralpolicestation.org.hk/ch/index.asp" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -185,6 +276,34 @@ key: content title
 content-length: 20
 
 結合現代建築的歷史大樓，打造當代藝術空間
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 8
+
+前中區警署建築群
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 21
+
+結合現代建築的歷史大樓，打造當代藝術空間。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 8
+
+前中區警署建築群
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 21
+
+結合現代建築的歷史大樓，打造當代藝術空間。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -205,14 +324,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bf16d74b-c8d9-41ba-99ee-f4e3b7a32d47
+adfadb47-3526-4668-a7af-12dc10e8942e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093001:635828310018685276Z
+20151124T043211Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -24,6 +24,20 @@ content-length: 58
 
 <image mediaid="{AE665F3F-122E-416F-BCFB-7CC034FC6B2A}" />
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.155009
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.283645
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 3ab679e8-2a74-4055-af34-479c63954ddd
+revision: ab4e12ee-73c9-44e3-a876-aede123b51d0
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -57,12 +71,47 @@ content-length: 58
 
 World’s longest outdoor escalator rejuvenates old district
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 27
+
+Central Mid-level Escalator
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 59
+
+World’s longest outdoor escalator rejuvenates old district.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 27
+
+Central Mid-level Escalator
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 59
+
+World’s longest outdoor escalator rejuvenates old district.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 27
 
 Central Mid-level Escalator
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -76,14 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3ab679e8-2a74-4055-af34-479c63954ddd
+ab4e12ee-73c9-44e3-a876-aede123b51d0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T073056:635833422563744342Z
+20151124T100024Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,8 +143,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f1d35795-1432-4a00-886a-c59d4295daf0
+revision: 4dba95bb-9be5-4019-9618-199136532970
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 11
+
+中环至半山自动扶手电梯
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -110,6 +166,34 @@ key: content title
 content-length: 21
 
 全世界最长的户外扶手电梯，让老街区重拾朝气
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 11
+
+中环至半山自动扶手电梯
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 22
+
+全世界最长的户外扶手电梯，让老街区重拾朝气。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 11
+
+中环至半山自动扶手电梯
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 22
+
+全世界最长的户外扶手电梯，让老街区重拾朝气。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -130,14 +214,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f1d35795-1432-4a00-886a-c59d4295daf0
+4dba95bb-9be5-4019-9618-199136532970
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094000:635828316009727944Z
+20151124T045429Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -148,8 +232,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: d556da60-c01b-49d2-a591-436fec07108e
+revision: 57f88fb8-ec84-4f3b-8bec-a15c00823024
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 11
+
+中環至半山自動扶手電梯
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -164,6 +255,34 @@ key: content title
 content-length: 20
 
 全世界最長的戶外扶手電梯，令舊區重拾朝氣
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 11
+
+中環至半山自動扶手電梯
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 21
+
+全世界最長的戶外扶手電梯，令舊區重拾朝氣。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 11
+
+中環至半山自動扶手電梯
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 21
+
+全世界最長的戶外扶手電梯，令舊區重拾朝氣。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -184,14 +303,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d556da60-c01b-49d2-a591-436fec07108e
+57f88fb8-ec84-4f3b-8bec-a15c00823024
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093947:635828315873580157Z
+20151124T045354Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

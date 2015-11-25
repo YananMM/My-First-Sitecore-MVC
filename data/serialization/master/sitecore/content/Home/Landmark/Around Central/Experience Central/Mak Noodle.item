@@ -31,6 +31,20 @@ content-length: 15
 
 (852) 2854 3810
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.154631
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.283015
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -40,7 +54,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 31e3486f-2b3d-4ae6-a45f-501648735ff4
+revision: 1f77c454-3fd2-4889-8abd-5c7fe8d7a749
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -64,12 +78,47 @@ content-length: 55
 
 World-famous wonton noodles draw fans from near and far
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+Mak's Noodle 
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 56
+
+World-famous wonton noodles draw fans from near and far.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 13
+
+Mak's Noodle 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 56
+
+World-famous wonton noodles draw fans from near and far.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 10
+content-length: 13
 
-Mak Noodle
+Mak's Noodle1
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -83,14 +132,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-31e3486f-2b3d-4ae6-a45f-501648735ff4
+1f77c454-3fd2-4889-8abd-5c7fe8d7a749
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T074640:635833432000314083Z
+20151124T095902Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,8 +150,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 178f152a-9ad5-4918-924f-0a33cd56f3c3
+revision: 62423813-c841-4077-a351-c572a81b1203
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 7
+
+麦奀云吞面世家
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -117,6 +173,34 @@ key: content title
 content-length: 17
 
 享誉全球的云吞面，粉丝遍及世界各地
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+麦奀云吞面世家
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 18
+
+享誉全球的云吞面，粉丝遍及世界各地。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+麦奀云吞面世家
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 18
+
+享誉全球的云吞面，粉丝遍及世界各地。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -137,14 +221,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-178f152a-9ad5-4918-924f-0a33cd56f3c3
+62423813-c841-4077-a351-c572a81b1203
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T101240:635828335609999015Z
+20151124T061946Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -155,8 +239,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 69d0a73e-a370-4686-83fd-12afa3b91c31
+revision: d8d4458f-1dda-4bf7-bda2-992dd7a33bba
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 7
+
+麥奀雲吞麵世家
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -171,6 +262,34 @@ key: content title
 content-length: 17
 
 享譽全球的雲吞麵，粉絲遍及世界各地
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+麥奀雲吞麵世家
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 18
+
+享譽全球的雲吞麵，粉絲遍及世界各地。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+麥奀雲吞麵世家
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 18
+
+享譽全球的雲吞麵，粉絲遍及世界各地。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -191,14 +310,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-69d0a73e-a370-4686-83fd-12afa3b91c31
+d8d4458f-1dda-4bf7-bda2-992dd7a33bba
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T101229:635828335492402289Z
+20151124T061920Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

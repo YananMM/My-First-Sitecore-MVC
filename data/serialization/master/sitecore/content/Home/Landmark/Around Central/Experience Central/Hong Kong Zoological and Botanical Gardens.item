@@ -31,6 +31,20 @@ content-length: 15
 
 (852) 2530 0154
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.156140
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.277861
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -40,7 +54,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 08eb0164-c9f7-44bd-86fb-42ce49d5ef58
+revision: b0bb60f5-4512-4d9e-9b61-412a108a9321
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -53,9 +67,9 @@ Hong Kong Zoological and Botanical Gardens
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 94
+content-length: 147
 
-<link linktype="external" url="http://www.lcsd.gov.hk/en/parks/hkzbg/ " anchor="" target="" />
+<link text="http://www.lcsd.gov.hk/en/parks/hkzbg/ " linktype="external" url="http://www.lcsd.gov.hk/en/parks/hkzbg/ " anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -71,12 +85,47 @@ content-length: 90
 
 Green, peaceful sanctuary home to 300 birds, 70 mammals, 20 reptiles and 900 plant species
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 42
+
+Hong Kong Zoological and Botanical Gardens
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 91
+
+Green, peaceful sanctuary home to 300 birds, 70 mammals, 20 reptiles and 900 plant species.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 42
+
+Hong Kong Zoological and Botanical Gardens
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 91
+
+Green, peaceful sanctuary home to 300 birds, 70 mammals, 20 reptiles and 900 plant species.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 42
 
 Hong Kong Zoological and Botanical Gardens
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -90,14 +139,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-08eb0164-c9f7-44bd-86fb-42ce49d5ef58
+b0bb60f5-4512-4d9e-9b61-412a108a9321
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T074930:635833433702241428Z
+20151124T095927Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,15 +157,29 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: dc72cf38-cb63-40de-ab2a-6091ce4c87f5
+revision: db1e10d1-bb13-4a31-961f-a71827d935fb
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 7
+
+香港动植物公园
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 93
+content-length: 145
 
-<link linktype="external" url="http://www.lcsd.gov.hk/sc/parks/hkzbg/" anchor="" target="" />
+<link text="http://www.lcsd.gov.hk/sc/parks/hkzbg/" linktype="external" url="http://www.lcsd.gov.hk/sc/parks/hkzbg/" anchor="" target="_blank" />
+----field----
+field: {8411563D-F68D-41CB-A1AB-434129407504}
+name: Cover Address
+key: cover address
+content-length: 8
+
+香港中环雅宾利道
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
@@ -124,6 +187,34 @@ key: content title
 content-length: 39
 
 300种雀鸟、70种哺乳类动物、20种爬行类动物及900种植物的宁静绿化栖息地
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+香港动植物公园
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+300种雀鸟、70种哺乳类动物、20种爬行类动物及900种植物的宁静绿化栖息地。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+香港动植物公园
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 40
+
+300种雀鸟、70种哺乳类动物、20种爬行类动物及900种植物的宁静绿化栖息地。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -144,14 +235,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dc72cf38-cb63-40de-ab2a-6091ce4c87f5
+db1e10d1-bb13-4a31-961f-a71827d935fb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T092756:635828308766973682Z
+20151124T042221Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +253,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 9ea0f639-aa3a-48e0-9f2b-01bc716e4017
+revision: 6dbe38c7-204d-4c57-90e8-510d5e38cd4e
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 7
+
+香港動植物公園
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 93
+content-length: 145
 
-<link linktype="external" url="http://www.lcsd.gov.hk/tc/parks/hkzbg/" anchor="" target="" />
+<link text="http://www.lcsd.gov.hk/tc/parks/hkzbg/" linktype="external" url="http://www.lcsd.gov.hk/tc/parks/hkzbg/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -185,6 +283,34 @@ key: content title
 content-length: 41
 
 300種雀鳥、70種哺乳類動物、20種爬行類動物及900個植物品種的寧靜綠化棲息地
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+香港動植物公園
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 42
+
+300種雀鳥、70種哺乳類動物、20種爬行類動物及900個植物品種的寧靜綠化棲息地。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+香港動植物公園
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 42
+
+300種雀鳥、70種哺乳類動物、20種爬行類動物及900個植物品種的寧靜綠化棲息地。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -205,14 +331,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9ea0f639-aa3a-48e0-9f2b-01bc716e4017
+6dbe38c7-204d-4c57-90e8-510d5e38cd4e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T092731:635828308510929037Z
+20151124T042127Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

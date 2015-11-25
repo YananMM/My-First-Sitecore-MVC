@@ -16,6 +16,13 @@ key: value
 content-length: 8
 
 Shopping
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+700
 ----version----
 language: en
 version: 1
@@ -59,8 +66,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: d0435315-62a6-4122-b745-b7335056c0fa
+revision: 46fa4da7-8fb7-4ac0-96de-2d3907ceecad
 
+----field----
+field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
+name: Text
+key: text
+content-length: 2
+
+购物
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -88,14 +102,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d0435315-62a6-4122-b745-b7335056c0fa
+46fa4da7-8fb7-4ac0-96de-2d3907ceecad
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151019T115801:635808526812173590Z
+20151124T093514Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -106,7 +120,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 888bed26-6e9f-425b-b8a9-93400bfb27d2
+revision: 41b8183b-4a31-4f3a-87df-e9c613770847
 
 ----field----
 field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
@@ -142,14 +156,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-888bed26-6e9f-425b-b8a9-93400bfb27d2
+41b8183b-4a31-4f3a-87df-e9c613770847
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151122T051803:635837662836747070Z
+20151124T093453Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

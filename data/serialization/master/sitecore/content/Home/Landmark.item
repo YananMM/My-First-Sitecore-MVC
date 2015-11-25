@@ -478,29 +478,43 @@ content-length: 5
 ----version----
 language: en
 version: 4
-revision: 4b0ca9c8-8e24-475c-805e-663743004c15
+revision: ba167592-a584-434a-923f-39aaba98b968
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 33
+
+Luxury Shopping Mall in Hong Kong
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 44
+content-length: 0
 
-Luxury Shopping Mall in Hong Kong | LANDMARK
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 148
+content-length: 153
 
-Experience the unique luxury shopping mall in Hong Kong, LANDMARK, offering all the major fashion brands and finest restaurants, all under one roof!
+Get one-of-a-kind experience at LANDMARK, a luxury shopping mall in Hong Kong showcasing major fashion brands and finest restaurants, all under one roof!
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
 key: social share title
-content-length: 0
+content-length: 33
 
+Luxury Shopping Mall in Hong Kong
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 153
 
+Get one-of-a-kind experience at LANDMARK, a luxury shopping mall in Hong Kong showcasing major fashion brands and finest restaurants, all under one roof!
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -556,14 +570,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4b0ca9c8-8e24-475c-805e-663743004c15
+ba167592-a584-434a-923f-39aaba98b968
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151111T134903Z
+20151125T023156Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -649,15 +663,22 @@ content-length: 38
 ----version----
 language: zh-CN
 version: 1
-revision: 9a446d99-09e9-4dfd-bb4d-7549a09256de
+revision: 54b0c67c-96be-43f9-a60c-adaa1074e835
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 6
+
+香港购物中心
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 13
+content-length: 0
 
-香港购物中心 | 置地广塲
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -665,6 +686,27 @@ key: meta description
 content-length: 44
 
 香港豪华购物中心，置地广塲，拥有所有主要尚品牌和获奖餐厅，为您提供独特的购物和餐饮体验。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 6
+
+香港购物中心
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 44
+
+香港豪华购物中心，置地广塲，拥有所有主要尚品牌和获奖餐厅，为您提供独特的购物和餐饮体验。
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+置地广塲
 ----field----
 field: {49752B3C-3E17-4471-A9E9-0C42AFFD087E}
 name: Find Us on Instagram Title
@@ -713,14 +755,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9a446d99-09e9-4dfd-bb4d-7549a09256de
+54b0c67c-96be-43f9-a60c-adaa1074e835
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151111T134740Z
+20151125T023223Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -731,15 +773,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 05560dd3-93a6-4173-b55b-f504b5409c9c
+revision: 4b48045c-a13b-44a9-8030-c8e26d3eb40d
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 9
+
+香港豪華購物中心 
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 15
+content-length: 0
 
-香港豪華購物中心 | 置地廣塲
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -747,6 +796,27 @@ key: meta description
 content-length: 46
 
 香港豪華購物中心，置地廣塲，擁有所有主要的時尚品牌和獲獎餐廳，為您提供獨特的購物和餐飲體驗。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 9
+
+香港豪華購物中心 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 46
+
+香港豪華購物中心，置地廣塲，擁有所有主要的時尚品牌和獲獎餐廳，為您提供獨特的購物和餐飲體驗。
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+置地廣塲
 ----field----
 field: {04BF00DB-F5FB-41F7-8AB7-22408372A981}
 name: __Final Renderings
@@ -781,14 +851,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-05560dd3-93a6-4173-b55b-f504b5409c9c
+4b48045c-a13b-44a9-8030-c8e26d3eb40d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151111T134740Z
+20151125T023244Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

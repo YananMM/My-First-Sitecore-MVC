@@ -31,6 +31,34 @@ content-length: 15
 
 (852) 2544 4556
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.153458
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.284170
+----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -40,7 +68,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 9cbe28c5-f3f3-45d2-85f8-31e08533d3d4
+revision: 4615233a-3560-4b5f-90f4-2cbfce7ed5d9
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -53,9 +81,9 @@ Lin Heung Tea House
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 82
+content-length: 123
 
-<link linktype="external" url="http://www.linheung.com.hk/" anchor="" target="" />
+<link text="http://www.linheung.com.hk/" linktype="external" url="http://www.linheung.com.hk/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -71,12 +99,47 @@ content-length: 56
 
 90-year-old tea house serves dim sum the traditional way
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 19
+
+Lin Heung Tea House
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 57
+
+90-year-old tea house serves dim sum the traditional way.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 19
+
+Lin Heung Tea House
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 57
+
+90-year-old tea house serves dim sum the traditional way.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 19
 
 Lin Heung Tea House
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -90,14 +153,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9cbe28c5-f3f3-45d2-85f8-31e08533d3d4
+4615233a-3560-4b5f-90f4-2cbfce7ed5d9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T074658:635833432183064536Z
+20151124T095907Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,15 +171,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 1d634924-2056-431c-b299-7907bd79c36e
+revision: 28d4e70a-51b0-41db-8f5f-dbcf04227816
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 3
+
+莲香楼
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 82
+content-length: 123
 
-<link linktype="external" url="http://www.linheung.com.hk/" anchor="" target="" />
+<link text="http://www.linheung.com.hk/" linktype="external" url="http://www.linheung.com.hk/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -131,6 +201,34 @@ key: content title
 content-length: 14
 
 90年老茶楼保留传统点心风味
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+莲香楼
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 15
+
+90年老茶楼保留传统点心风味。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 3
+
+莲香楼
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 15
+
+90年老茶楼保留传统点心风味。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -151,14 +249,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1d634924-2056-431c-b299-7907bd79c36e
+28d4e70a-51b0-41db-8f5f-dbcf04227816
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100547:635828331479922789Z
+20151124T061503Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -169,15 +267,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: e198b346-1c37-4959-a5cc-28781f85e6c9
+revision: d18b973b-0581-40f7-9df6-839935788b5c
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 3
+
+蓮香樓
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 82
+content-length: 123
 
-<link linktype="external" url="http://www.linheung.com.hk/" anchor="" target="" />
+<link text="http://www.linheung.com.hk/" linktype="external" url="http://www.linheung.com.hk/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -192,6 +297,34 @@ key: content title
 content-length: 14
 
 90年老茶樓保留傳統點心風味
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+蓮香樓
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 15
+
+90年老茶樓保留傳統點心風味。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 3
+
+蓮香樓
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 15
+
+90年老茶樓保留傳統點心風味。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -212,14 +345,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e198b346-1c37-4959-a5cc-28781f85e6c9
+d18b973b-0581-40f7-9df6-839935788b5c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100555:635828331556817187Z
+20151124T061619Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

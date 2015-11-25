@@ -24,6 +24,20 @@ content-length: 58
 
 <image mediaid="{CB8BECBF-B9CC-4A27-B148-2A6DF2E66A4B}" />
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.159551
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.279601
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: edf8bb3f-3c67-4939-b583-ccca2c1c8a91
+revision: a70de8d8-1ad2-4360-a76d-f6c64e881cac
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -46,9 +60,9 @@ Former French Mission Building
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 96
+content-length: 151
 
-<link linktype="external" url="http://www.amo.gov.hk/en/monuments_37.php" anchor="" target="" />
+<link text="http://www.amo.gov.hk/en/monuments_37.php" linktype="external" url="http://www.amo.gov.hk/en/monuments_37.php" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -64,12 +78,47 @@ content-length: 51
 
 Red-brick beauty radiates flavour of old Hong Kong 
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 31
+
+Former French Mission Building 
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 51
+
+Red-brick beauty radiates flavour of old Hong Kong.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 31
+
+Former French Mission Building 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 51
+
+Red-brick beauty radiates flavour of old Hong Kong.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 30
 
 Former French Mission Building
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -83,14 +132,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-edf8bb3f-3c67-4939-b583-ccca2c1c8a91
+a70de8d8-1ad2-4360-a76d-f6c64e881cac
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T075154:635833435148314138Z
+20151124T095953Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +150,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 74a1c1be-0053-4b1b-8302-d07238b035ea
+revision: 0c01571c-7fce-4fdf-9091-833089a06504
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 10
+
+前法国外方传道会大楼
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 117
+content-length: 193
 
-<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/monuments_37.php" anchor="" target="" />
+<link text="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/monuments_37.php" linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/monuments_37.php" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -124,6 +180,34 @@ key: content title
 content-length: 15
 
 美丽的红砖建筑，呈现老香港情怀
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 10
+
+前法国外方传道会大楼
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 16
+
+美丽的红砖建筑，呈现老香港情怀。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 10
+
+前法国外方传道会大楼
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 16
+
+美丽的红砖建筑，呈现老香港情怀。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -144,14 +228,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-74a1c1be-0053-4b1b-8302-d07238b035ea
+0c01571c-7fce-4fdf-9091-833089a06504
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095020:635828322205302311Z
+20151124T051726Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +246,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: b836b27d-7623-4303-a914-96232471693f
+revision: d5bf467f-dca1-478f-8ec4-4637a11ae247
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 10
+
+前法國外方傳道會大樓
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 96
+content-length: 151
 
-<link linktype="external" url="http://www.amo.gov.hk/b5/monuments_37.php" anchor="" target="" />
+<link text="http://www.amo.gov.hk/b5/monuments_37.php" linktype="external" url="http://www.amo.gov.hk/b5/monuments_37.php" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -185,6 +276,34 @@ key: content title
 content-length: 16
 
 美麗的紅磚建築，呈現老香港情懷 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 10
+
+前法國外方傳道會大樓
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 17
+
+美麗的紅磚建築，呈現老香港情懷。 
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 10
+
+前法國外方傳道會大樓
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 17
+
+美麗的紅磚建築，呈現老香港情懷。 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -205,14 +324,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b836b27d-7623-4303-a914-96232471693f
+d5bf467f-dca1-478f-8ec4-4637a11ae247
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094954:635828321948257609Z
+20151124T051653Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

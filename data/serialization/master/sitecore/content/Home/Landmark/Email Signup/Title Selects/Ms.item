@@ -59,15 +59,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 21dd50e2-8487-42b2-8ad4-53731bb1a1cb
+revision: f0897b85-083f-4567-a3b4-c131b7faf1eb
 
 ----field----
 field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
 name: Text
 key: text
-content-length: 3
+content-length: 2
 
-Ms.
+女士
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -95,14 +95,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-21dd50e2-8487-42b2-8ad4-53731bb1a1cb
+f0897b85-083f-4567-a3b4-c131b7faf1eb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151122T052255:635837665759864262Z
+20151123T040326Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -113,8 +113,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: d430e07f-f264-4bab-86b3-d4b486f81e76
+revision: f17875b0-caa4-46b1-b128-650907c1bd08
 
+----field----
+field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
+name: Text
+key: text
+content-length: 2
+
+女士
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -142,14 +149,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d430e07f-f264-4bab-86b3-d4b486f81e76
+f17875b0-caa4-46b1-b128-650907c1bd08
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T141425Z
+20151123T040329Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

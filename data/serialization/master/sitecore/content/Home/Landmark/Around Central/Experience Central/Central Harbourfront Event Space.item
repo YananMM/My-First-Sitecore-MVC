@@ -38,6 +38,20 @@ content-length: 15
 
 (852) 3929 9500
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.163055
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.283683
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -47,7 +61,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 50b3831e-d6e0-4790-9b54-28ddcdce9089
+revision: e0f2630e-b3a6-495f-990f-82fb1d80109b
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -57,12 +71,19 @@ content-length: 32
 
 Central Harbourfront Event Space
 ----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 0
+
+
+----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 81
+content-length: 121
 
-<link linktype="external" url="http://www.cvm.com.hk/en/ " anchor="" target="" />
+<link text="http://www.cvm.com.hk/en/ " linktype="external" url="http://www.cvm.com.hk/en/ " anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -78,12 +99,54 @@ content-length: 57
 
 Harbourfront venue plays host to huge range of activities
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 32
+
+Central Harbourfront Event Space
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 57
+
+Harbourfront venue plays host to huge range of activities
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 32
+
+Central Harbourfront Event Space
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 58
+
+Harbourfront venue plays host to huge range of activities.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 32
 
 Central Harbourfront Event Space
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
+----field----
+field: {F1220F65-3306-4AB6-8AC1-904AE9CBEB22}
+name: Brief Introduction
+key: brief introduction
+content-length: 0
+
+
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -97,14 +160,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-50b3831e-d6e0-4790-9b54-28ddcdce9089
+e0f2630e-b3a6-495f-990f-82fb1d80109b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T073428:635833424689265915Z
+20151124T100028Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -115,15 +178,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: aed3b3a4-2374-42fe-ad89-314197e148cf
+revision: abb438de-d1d2-45bc-abee-81e748fbb83f
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 8
+
+中环海滨活动空间
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 80
+content-length: 119
 
-<link linktype="external" url="http://www.cvm.com.hk/tc/" anchor="" target="" />
+<link text="http://www.cvm.com.hk/tc/" linktype="external" url="http://www.cvm.com.hk/tc/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -138,6 +208,34 @@ key: content title
 content-length: 16
 
 优美的海滨场地，齐集各式大型活动
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 8
+
+中环海滨活动空间
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 17
+
+优美的海滨场地，齐集各式大型活动。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 8
+
+中环海滨活动空间
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 17
+
+优美的海滨场地，齐集各式大型活动。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -158,14 +256,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-aed3b3a4-2374-42fe-ad89-314197e148cf
+abb438de-d1d2-45bc-abee-81e748fbb83f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093509:635828313093561149Z
+20151124T041804Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -176,15 +274,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: e28c3bf6-3a9c-44e3-90c8-473afbcb6e98
+revision: 032c28ec-3789-4491-abb4-6cddc2648f7b
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 8
+
+中環海濱活動空間
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 80
+content-length: 119
 
-<link linktype="external" url="http://www.cvm.com.hk/tc/" anchor="" target="" />
+<link text="http://www.cvm.com.hk/tc/" linktype="external" url="http://www.cvm.com.hk/tc/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -199,6 +304,34 @@ key: content title
 content-length: 16
 
 優美的海濱場地，齊集各式大型活動
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 8
+
+中環海濱活動空間
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 17
+
+優美的海濱場地，齊集各式大型活動。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 8
+
+中環海濱活動空間
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 17
+
+優美的海濱場地，齊集各式大型活動。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -219,14 +352,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e28c3bf6-3a9c-44e3-90c8-473afbcb6e98
+032c28ec-3789-4491-abb4-6cddc2648f7b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093449:635828312890499534Z
+20151124T041809Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

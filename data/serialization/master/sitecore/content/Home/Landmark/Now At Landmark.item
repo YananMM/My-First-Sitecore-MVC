@@ -40,22 +40,43 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: b8cdad84-fad3-4038-8144-81ce9b8e709c
+revision: 2a6ea8f2-6144-4416-91d0-787cdd505929
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 42
+
+Promotions, Events in Luxury Shopping Mall
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 53
+content-length: 0
 
-Promotions, Events in Luxury Shopping Mall | LANDMARK
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 140
+content-length: 144
 
-Visit the official site to explore our latest promotion news, events, exhibitions and fashion trends that happen all year round in LANDMARK.
+Visit the LANDMARK official site to explore our latest promotion news, events, exhibitions and fashion trends that are happening all year round.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 42
+
+Promotions, Events in Luxury Shopping Mall
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 144
+
+Visit the LANDMARK official site to explore our latest promotion news, events, exhibitions and fashion trends that are happening all year round.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -90,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b8cdad84-fad3-4038-8144-81ce9b8e709c
+2a6ea8f2-6144-4416-91d0-787cdd505929
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151107T193423Z
+20151125T023807Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,8 +129,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 318bdbfd-e828-4d9f-92a6-81d3e15cf4b4
+revision: c03e61cd-7bba-46b1-ba2f-ba3b95f3051f
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 11
+
+香港购物中心优惠及活动
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
@@ -128,9 +156,16 @@ content-length: 48
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
 key: social share title
-content-length: 18
+content-length: 11
 
-香港购物中心优惠及活动 | 置地广塲
+香港购物中心优惠及活动
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 48
+
+请即登陆置地广塲官方网站及浏览我们最新推广优惠，活动，展览和时尚潮流的趋势，我们会不断更新资讯。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -179,14 +214,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-318bdbfd-e828-4d9f-92a6-81d3e15cf4b4
+c03e61cd-7bba-46b1-ba2f-ba3b95f3051f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T024204Z
+20151125T023925Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -197,8 +232,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 799047a1-83b5-4086-ab08-6741e67e9cd8
+revision: 966dcbed-d9a3-4580-b9dc-b7935657f1c2
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+香港豪華購物中心優惠及活動
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
@@ -217,9 +259,9 @@ content-length: 48
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
 key: social share title
-content-length: 20
+content-length: 13
 
-香港豪華購物中心優惠及活動 | 置地廣塲
+香港豪華購物中心優惠及活動
 ----field----
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
@@ -275,14 +317,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-799047a1-83b5-4086-ab08-6741e67e9cd8
+966dcbed-d9a3-4580-b9dc-b7935657f1c2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T024150Z
+20151125T023858Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

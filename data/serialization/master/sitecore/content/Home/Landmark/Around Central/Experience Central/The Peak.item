@@ -31,6 +31,20 @@ content-length: 15
 
 (852) 2849 0668
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.149782
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.270835
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -40,7 +54,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 3f7d4700-e6ca-46c2-bc1b-290950b7110a
+revision: d310ae8b-f030-42b8-949b-fe26beaebf87
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -53,9 +67,9 @@ The Peak
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 85
+content-length: 129
 
-<link linktype="external" url="https://www.thepeak.com.hk/en/" anchor="" target="" />
+<link text="https://www.thepeak.com.hk/en/" linktype="external" url="https://www.thepeak.com.hk/en/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -71,12 +85,47 @@ content-length: 78
 
 Iconic tourist destination offers something for everyone – and all-round views
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 9
+
+The Peak 
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 79
+
+Iconic tourist destination offers something for everyone – and all-round views.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 9
+
+The Peak 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 79
+
+Iconic tourist destination offers something for everyone – and all-round views.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 8
 
 The Peak
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -90,14 +139,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3f7d4700-e6ca-46c2-bc1b-290950b7110a
+d310ae8b-f030-42b8-949b-fe26beaebf87
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T074220:635833429401495439Z
+20151124T095808Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,15 +157,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 5256a19b-2b7d-4836-ad22-2f2846676fca
+revision: b72f9e05-617f-4855-a4ec-a4da79619081
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 4
+
+太平山顶
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 93
+content-length: 145
 
-<link linktype="external" url="https://www.thepeak.com.hk/sc/home.asp" anchor="" target="" />
+<link text="https://www.thepeak.com.hk/sc/home.asp" linktype="external" url="https://www.thepeak.com.hk/sc/home.asp" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -131,6 +187,34 @@ key: content title
 content-length: 21
 
 经典旅游景点，提供全方位美景，让人乐而忘返
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+太平山顶
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 22
+
+经典旅游景点，提供全方位美景，让人乐而忘返。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 4
+
+太平山顶
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 22
+
+经典旅游景点，提供全方位美景，让人乐而忘返。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -151,14 +235,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5256a19b-2b7d-4836-ad22-2f2846676fca
+b72f9e05-617f-4855-a4ec-a4da79619081
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100222:635828329427275384Z
+20151124T060523Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -169,15 +253,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: d0743d5f-8b93-45c7-905e-c609c58aa278
+revision: 079bd7d1-89fa-4129-a823-8a1f3923aea0
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 4
+
+太平山頂
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 93
+content-length: 145
 
-<link linktype="external" url="https://www.thepeak.com.hk/tc/home.asp" anchor="" target="" />
+<link text="https://www.thepeak.com.hk/tc/home.asp" linktype="external" url="https://www.thepeak.com.hk/tc/home.asp" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -192,6 +283,34 @@ key: content title
 content-length: 21
 
 經典旅遊景點，提供全方位美景，讓人樂而忘返
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+太平山頂
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 22
+
+經典旅遊景點，提供全方位美景，讓人樂而忘返。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 4
+
+太平山頂
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 22
+
+經典旅遊景點，提供全方位美景，讓人樂而忘返。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -212,14 +331,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d0743d5f-8b93-45c7-905e-c609c58aa278
+079bd7d1-89fa-4129-a823-8a1f3923aea0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100201:635828329217433382Z
+20151124T060453Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

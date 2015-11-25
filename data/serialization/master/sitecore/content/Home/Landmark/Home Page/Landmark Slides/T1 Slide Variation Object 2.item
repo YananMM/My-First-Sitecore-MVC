@@ -15,7 +15,7 @@ name: Reference Item
 key: reference item
 content-length: 38
 
-{8BA3EBAC-AF4C-4A6E-AFAC-F61EE86B7E16}
+{2EF446A2-B051-4F14-9D22-F83B488BF7CE}
 ----field----
 field: {780CBB4F-2541-43AB-BE9D-7AD362CF04F9}
 name: Main Version Slide Style
@@ -29,7 +29,7 @@ name: Sub Version Slide Style
 key: sub version slide style
 content-length: 38
 
-{F2834073-085E-429E-A9A2-40DD9FC9FC97}
+{BC7C0D97-3B48-4FD9-B25D-AA3F37EE6C90}
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -40,8 +40,52 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: b64b8308-0780-401a-999d-1bc333f3cc72
+revision: 79bf5874-640f-4e88-840f-4c60d5a681b2
 
+----field----
+field: {42999415-3EAC-4B74-A6EB-034271F085B7}
+name: Slide Title
+key: slide title
+content-length: 0
+
+
+----field----
+field: {DF2B5F7C-2BD8-4762-982A-8F461123C5C2}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{E6C75FC0-24E4-4C33-BE23-2FC43E7EED4D}" />
+----field----
+field: {0D14A8BB-68BB-4865-9692-052E94152DF4}
+name: Slide Numbers Text Title
+key: slide numbers text title
+content-length: 48
+
+<p>22 CRAFTSMEN 1 NAME</p>
+<p>_</p>
+LANDMARK<br>
+----field----
+field: {9FAF7DB0-6304-44A3-A1AD-3156F3467264}
+name: Slide Intro
+key: slide intro
+content-length: 188
+
+Bespoke tailoring, immaculate ready-to-wear suits, made-to-measure leather shoes and bags. All part of 208 fine stores and restaurants in 4 connected buildings that go by 1 name, LANDMARK.
+----field----
+field: {0E089E2C-C25C-42EF-8323-5D49C81D12FB}
+name: Slide Button Text
+key: slide button text
+content-length: 36
+
+Discover the stories of our craftmen
+----field----
+field: {687B71D1-C561-4B9E-B214-32F115925434}
+name: Slide Button Link
+key: slide button link
+content-length: 102
+
+<link linktype="external" url="http://www.onelandmark.hk/en/#22craftsmen" anchor="" target="_blank" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -69,21 +113,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b64b8308-0780-401a-999d-1bc333f3cc72
+79bf5874-640f-4e88-840f-4c60d5a681b2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T155248Z
+20151125T040009Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-sitecore\edgarchan
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1

@@ -31,6 +31,20 @@ content-length: 15
 
 (852) 2521 7251
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.155752
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.280144
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -40,7 +54,7 @@ content-length: 77
 ----version----
 language: en
 version: 1
-revision: f6cecce6-f3d8-4a4a-92cf-851cb7ce088f
+revision: 8928609c-4286-4c1c-86f1-2b5e23212804
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -53,9 +67,9 @@ The Fringe Club
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 83
+content-length: 125
 
-<link linktype="external" url="http://www.hkfringeclub.com/" anchor="" target="" />
+<link text="http://www.hkfringeclub.com/" linktype="external" url="http://www.hkfringeclub.com/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -71,12 +85,47 @@ content-length: 63
 
 Avant-garde art and theatre bring new life to heritage building
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 15
+
+The Fringe Club
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 64
+
+Avant-garde art and theatre bring new life to heritage building.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 15
+
+The Fringe Club
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 64
+
+Avant-garde art and theatre bring new life to heritage building.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 15
 
 The Fringe Club
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -90,14 +139,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f6cecce6-f3d8-4a4a-92cf-851cb7ce088f
+8928609c-4286-4c1c-86f1-2b5e23212804
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T074300:635833429804118468Z
+20151124T095815Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,15 +157,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: b985d8d6-ca6f-435c-9c93-137bae977512
+revision: 4fb52834-3b17-4ed5-a16b-d492126ab100
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 3
+
+艺穗会
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 85
+content-length: 129
 
-<link linktype="external" url="http://www.hkfringeclub.com/cn" anchor="" target="" />
+<link text="http://www.hkfringeclub.com/cn" linktype="external" url="http://www.hkfringeclub.com/cn" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -131,6 +187,34 @@ key: content title
 content-length: 18
 
 前卫的艺术与剧场，令历史建筑重获新生
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+艺穗会
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 19
+
+前卫的艺术与剧场，令历史建筑重获新生。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 3
+
+艺穗会
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 19
+
+前卫的艺术与剧场，令历史建筑重获新生。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -151,14 +235,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b985d8d6-ca6f-435c-9c93-137bae977512
+4fb52834-3b17-4ed5-a16b-d492126ab100
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094211:635828317311842421Z
+20151124T045918Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -169,15 +253,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: cb23612a-370e-4b06-8ab3-0190dcfc6077
+revision: 14a20b6f-7338-4c6f-bf85-5bd0dc5379ed
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 3
+
+藝穗會
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 85
+content-length: 129
 
-<link linktype="external" url="http://www.hkfringeclub.com/zh" anchor="" target="" />
+<link text="http://www.hkfringeclub.com/zh" linktype="external" url="http://www.hkfringeclub.com/zh" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -192,6 +283,34 @@ key: content title
 content-length: 18
 
 前衛的藝術與劇場，令歷史建築重獲新生
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+藝穗會
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 19
+
+前衛的藝術與劇場，令歷史建築重獲新生。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 3
+
+藝穗會
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 19
+
+前衛的藝術與劇場，令歷史建築重獲新生。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -212,14 +331,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cb23612a-370e-4b06-8ab3-0190dcfc6077
+14a20b6f-7338-4c6f-bf85-5bd0dc5379ed
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094149:635828317097170142Z
+20151124T045845Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

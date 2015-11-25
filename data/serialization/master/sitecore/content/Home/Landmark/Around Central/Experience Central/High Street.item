@@ -24,6 +24,34 @@ content-length: 58
 
 <image mediaid="{C377A9BD-86AE-479E-8DB0-8EA87D512E36}" />
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.143807
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.285113
+----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +61,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 1673a9d7-5f58-4f7b-99e2-53985d34f2f2
+revision: 304b552e-4a7a-4bf0-928f-8aa4963e5853
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -46,9 +74,9 @@ High Street
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 103
+content-length: 165
 
-<link linktype="external" url="http://www.amo.gov.hk/en/trails_west1.php?tid=20" anchor="" target="" />
+<link text="http://www.amo.gov.hk/en/trails_west1.php?tid=20" linktype="external" url="http://www.amo.gov.hk/en/trails_west1.php?tid=20" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -64,12 +92,47 @@ content-length: 63
 
 Historic architecture and spooky tales make this a popular spot
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 12
+
+High Street 
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 64
+
+Historic architecture and spooky tales make this a popular spot.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 12
+
+High Street 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 64
+
+Historic architecture and spooky tales make this a popular spot.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 11
 
 High Street
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -83,14 +146,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1673a9d7-5f58-4f7b-99e2-53985d34f2f2
+304b552e-4a7a-4bf0-928f-8aa4963e5853
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T075116:635833434766572304Z
+20151124T095946Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +164,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 3f0c153e-a929-44be-aa2b-ad61762bbc69
+revision: badd4b0f-3568-4a82-9020-94c781d59601
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 2
+
+高街
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 124
+content-length: 207
 
-<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/trails_west1.php?tid=20" anchor="" target="" />
+<link text="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/trails_west1.php?tid=20" linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/trails_west1.php?tid=20" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -124,6 +194,34 @@ key: content title
 content-length: 14
 
 历史建筑和鬼故事打造热门景点
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 2
+
+高街
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 15
+
+历史建筑和鬼故事打造热门景点。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 2
+
+高街
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 15
+
+历史建筑和鬼故事打造热门景点。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -144,14 +242,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3f0c153e-a929-44be-aa2b-ad61762bbc69
+badd4b0f-3568-4a82-9020-94c781d59601
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094757:635828320774030447Z
+20151124T051210Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +260,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: f001f260-dce0-40a4-832c-5bf261e6b3d3
+revision: 2fd62a67-e34b-4758-b7bb-4ddc099fa2c0
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 2
+
+高街
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 103
+content-length: 165
 
-<link linktype="external" url="http://www.amo.gov.hk/b5/trails_west1.php?tid=20" anchor="" target="" />
+<link text="http://www.amo.gov.hk/b5/trails_west1.php?tid=20" linktype="external" url="http://www.amo.gov.hk/b5/trails_west1.php?tid=20" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -185,6 +290,34 @@ key: content title
 content-length: 14
 
 歷史建築和鬼故事打造熱門景點
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 2
+
+高街
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 15
+
+歷史建築和鬼故事打造熱門景點。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 2
+
+高街
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 15
+
+歷史建築和鬼故事打造熱門景點。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -205,14 +338,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f001f260-dce0-40a4-832c-5bf261e6b3d3
+2fd62a67-e34b-4758-b7bb-4ddc099fa2c0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094733:635828320531656584Z
+20151124T051123Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

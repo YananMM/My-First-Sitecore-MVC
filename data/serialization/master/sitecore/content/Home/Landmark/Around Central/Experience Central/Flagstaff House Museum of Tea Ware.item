@@ -31,6 +31,34 @@ content-length: 15
 
 (852) 2869 0690
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.162476
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.278253
+----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -40,7 +68,7 @@ content-length: 77
 ----version----
 language: en
 version: 1
-revision: dbca31a3-3cfb-4e10-83e5-a9d5abe484bb
+revision: b8c95ad8-7e2d-4ad4-849f-ca3f211d2445
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -53,9 +81,9 @@ Flagstaff House Museum of Tea Ware
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 119
+content-length: 197
 
-<link linktype="external" url="http://www.lcsd.gov.hk/CE/Museum/Arts/en_US/web/ma/tea-ware.html" anchor="" target="" />
+<link text="http://www.lcsd.gov.hk/CE/Museum/Arts/en_US/web/ma/tea-ware.html" linktype="external" url="http://www.lcsd.gov.hk/CE/Museum/Arts/en_US/web/ma/tea-ware.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -71,12 +99,47 @@ content-length: 57
 
 Time for tea! Colonial mansion traces history of tea ware
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 34
+
+Flagstaff House Museum of Tea Ware
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 58
+
+Time for tea! Colonial mansion traces history of tea ware.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 34
+
+Flagstaff House Museum of Tea Ware
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 58
+
+Time for tea! Colonial mansion traces history of tea ware.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 34
 
 Flagstaff House Museum of Tea Ware
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -90,14 +153,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dbca31a3-3cfb-4e10-83e5-a9d5abe484bb
+b8c95ad8-7e2d-4ad4-849f-ca3f211d2445
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T073652:635833426127408172Z
+20151124T100003Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,15 +171,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: c42dabf8-b0e0-4050-a406-eab32da1d8da
+revision: a1111af2-a17e-4331-96bf-5dde0357544c
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 5
+
+茶具文物馆
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 119
+content-length: 197
 
-<link linktype="external" url="http://www.lcsd.gov.hk/CE/Museum/Arts/zh_CN/web/ma/tea-ware.html" anchor="" target="" />
+<link text="http://www.lcsd.gov.hk/CE/Museum/Arts/zh_CN/web/ma/tea-ware.html" linktype="external" url="http://www.lcsd.gov.hk/CE/Museum/Arts/zh_CN/web/ma/tea-ware.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -131,6 +201,34 @@ key: content title
 content-length: 18
 
 茗茶之道：深入殖民官邸，追溯茶具历史
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 5
+
+茶具文物馆
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 19
+
+茗茶之道：深入殖民官邸，追溯茶具历史。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 5
+
+茶具文物馆
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 19
+
+茗茶之道：深入殖民官邸，追溯茶具历史。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -151,14 +249,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c42dabf8-b0e0-4050-a406-eab32da1d8da
+a1111af2-a17e-4331-96bf-5dde0357544c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094105:635828316651324641Z
+20151124T045622Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -169,15 +267,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 65a19f0b-c48a-4c8f-997f-7b70bb025b06
+revision: 5e9a566c-7ac0-4c01-9024-4af948678dfa
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 5
+
+茶具文物館
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 119
+content-length: 197
 
-<link linktype="external" url="http://www.lcsd.gov.hk/CE/Museum/Arts/zh_TW/web/ma/tea-ware.html" anchor="" target="" />
+<link text="http://www.lcsd.gov.hk/CE/Museum/Arts/zh_TW/web/ma/tea-ware.html" linktype="external" url="http://www.lcsd.gov.hk/CE/Museum/Arts/zh_TW/web/ma/tea-ware.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -192,6 +297,34 @@ key: content title
 content-length: 18
 
 茗茶之道：深入殖民官邸，追溯茶具歷史
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 5
+
+茶具文物館
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 19
+
+茗茶之道：深入殖民官邸，追溯茶具歷史。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 5
+
+茶具文物館
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 19
+
+茗茶之道：深入殖民官邸，追溯茶具歷史。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -212,14 +345,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-65a19f0b-c48a-4c8f-997f-7b70bb025b06
+5e9a566c-7ac0-4c01-9024-4af948678dfa
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094043:635828316434952266Z
+20151124T045539Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

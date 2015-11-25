@@ -31,6 +31,20 @@ content-length: 15
 
 (852) 2921 2840
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.161546
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.282332
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -40,7 +54,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 040c8266-e23d-4af7-9df4-49d3ce975970
+revision: 7686597c-4288-4003-9a4d-34413dd9cafe
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -53,9 +67,9 @@ Hong Kong City Hall
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 86
+content-length: 131
 
-<link linktype="external" url="http://www.lcsd.gov.hk/en/hkch/" anchor="" target="" />
+<link text="http://www.lcsd.gov.hk/en/hkch/" linktype="external" url="http://www.lcsd.gov.hk/en/hkch/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -71,12 +85,47 @@ content-length: 59
 
 Functional public building reveals peaceful memorial garden
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 20
+
+Hong Kong City Hall 
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 60
+
+Functional public building reveals peaceful memorial garden.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 20
+
+Hong Kong City Hall 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 60
+
+Functional public building reveals peaceful memorial garden.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 19
 
 Hong Kong City Hall
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -90,14 +139,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-040c8266-e23d-4af7-9df4-49d3ce975970
+7686597c-4288-4003-9a4d-34413dd9cafe
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T075034:635833434346698289Z
+20151124T095939Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,15 +157,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: a9a3d5b9-6785-4010-8002-0b66aa29be72
+revision: 44960956-a59b-410b-8d1c-3a512d66529b
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 5
+
+香港大会堂
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 86
+content-length: 131
 
-<link linktype="external" url="http://www.lcsd.gov.hk/sc/hkch/" anchor="" target="" />
+<link text="http://www.lcsd.gov.hk/sc/hkch/" linktype="external" url="http://www.lcsd.gov.hk/sc/hkch/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -131,6 +187,34 @@ key: content title
 content-length: 20
 
 多功能公共建筑，给市民一个恬静的纪念公园
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 5
+
+香港大会堂
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 21
+
+多功能公共建筑，给市民一个恬静的纪念公园。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 5
+
+香港大会堂
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 21
+
+多功能公共建筑，给市民一个恬静的纪念公园。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -151,14 +235,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a9a3d5b9-6785-4010-8002-0b66aa29be72
+44960956-a59b-410b-8d1c-3a512d66529b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095125:635828322858349663Z
+20151124T051923Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -169,15 +253,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 6a64b31c-72d7-415b-805c-0f0c281c70dc
+revision: 0f429bff-4b00-464f-a1cf-9201356f7eed
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 5
+
+香港大會堂
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 86
+content-length: 131
 
-<link linktype="external" url="http://www.lcsd.gov.hk/tc/hkch/" anchor="" target="" />
+<link text="http://www.lcsd.gov.hk/tc/hkch/" linktype="external" url="http://www.lcsd.gov.hk/tc/hkch/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -192,6 +283,34 @@ key: content title
 content-length: 20
 
 多用途公共建築，給市民一個恬靜的紀念公園
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 5
+
+香港大會堂
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 21
+
+多用途公共建築，給市民一個恬靜的紀念公園。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 5
+
+香港大會堂
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 21
+
+多用途公共建築，給市民一個恬靜的紀念公園。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -212,14 +331,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6a64b31c-72d7-415b-805c-0f0c281c70dc
+0f429bff-4b00-464f-a1cf-9201356f7eed
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095106:635828322666428686Z
+20151124T051846Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
