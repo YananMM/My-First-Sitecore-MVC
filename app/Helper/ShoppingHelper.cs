@@ -98,7 +98,7 @@ namespace Landmark.Helper
             if (grandParentItem.ID.ToString() == ItemGuids.DiningItem)
             {
                 allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);
-                Item currentCategory = allCategories.FirstOrDefault(i => i.DisplayName.Replace(i.Parent.DisplayName + "-", "") == parentItem.DisplayName);
+                Item currentCategory = allCategories.FirstOrDefault(i => i.DisplayName.Replace(i.Parent.DisplayName + "-", "").Trim() == parentItem.DisplayName);
                 if (currentCategory != null)
                 {
                     currentTag = currentCategory.ID.ToString();
@@ -116,7 +116,7 @@ namespace Landmark.Helper
 
             if (subCategories == null || !subCategories.Any())
             {
-                Item currentCategory = allCategories.FirstOrDefault(i => i.DisplayName.Replace(i.Parent.DisplayName + "-", "") == parentItem.DisplayName);
+                Item currentCategory = allCategories.FirstOrDefault(i => i.DisplayName.Replace(i.Parent.DisplayName + "-", "").Trim() == parentItem.DisplayName);
                 if (currentCategory != null)
                 {
                     currentTag = currentCategory.ID.ToString();
@@ -225,7 +225,7 @@ namespace Landmark.Helper
                     subCategoriess.Select(p => new TextValue
                     {
                         text = p["Tag Name"],
-                        DisplayName = p.DisplayName.Replace("_", " ").Replace(p.Parent.DisplayName + "-", ""),
+                        DisplayName = p.DisplayName.Replace("_", " ").Replace(p.Parent.DisplayName + "-", " "),
                         value = p.ID.ToString()
                     }).OrderBy(p => p.DisplayName).ToList();
                 item.children = children;
