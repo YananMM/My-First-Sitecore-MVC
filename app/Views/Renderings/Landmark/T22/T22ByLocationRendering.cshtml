@@ -56,24 +56,40 @@
 <div class="gd-artlist">
     <h3>@Html.Sitecore().Field("Building Title", building)</h3>
     <div id="gd-art-gallery">
-        <div class="row">
+        
             @if (artpieces.Count != 0)
             {
-                foreach (Item piece in artpieces)
+                List<List<Item>> listGroup = new List<List<Item>>();
+                int j = 4;
+                for (int i = 0; i < artpieces.Count; i += 4)
                 {
-                    <div class="col-sm-3 text-center">
-                        <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(piece))" class="gd-hover-img">
-                            <div class="gd-hover-img-area">
-                                <div class="gd-hover-img-mask"></div>
-                                <img data-src="@SitecoreFieldHelper.ImageFieldSrc("Art Image", piece)" alt="artpiece picture">
-                            </div>
-                            <h4>@piece.Fields["Art Title"].Value</h4>
-                            <p>@Sitecore.Context.Database.GetItem(piece.Fields["Artist"].ToString()).Fields["Artist Name"]</p>
-                        </a>
-                    </div>
+                    List<Item> cList = new List<Item>();
+                    cList = artpieces.Take(j).Skip(i).ToList();
+                    j += 4;
+                    listGroup.Add(cList);
                 }
-            }
-        </div>
+                foreach (List<Item> group in listGroup)
+                {
+                    <div class="row">
+                    @foreach (Item piece in group)
+                    {
+                        <div class="col-sm-3 text-center">
+                                <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(piece))" class="gd-hover-img">
+                                    <div class="gd-hover-img-area">
+                                        <div class="gd-hover-img-mask"></div>
+                                        <img data-src="@SitecoreFieldHelper.ImageFieldSrc("Art Image", piece)" alt="artpiece picture" class="lazy-loaded">
+                                    </div>
+                                    <h4>@piece.Fields["Art Title"].Value</h4>
+                                    <p>@Sitecore.Context.Database.GetItem(piece.Fields["Artist"].ToString()).Fields["Artist Name"]</p>
+                                </a>
+                            </div>
+  
+                    }
+
+                    </div>   
+
+                }
+                            }
     </div>
     <div class="navigation gd-promo-more">
         <a href="?building=@buildings.First().ID.ToString()&page=2">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeMoreGlossaryItem))</a>
