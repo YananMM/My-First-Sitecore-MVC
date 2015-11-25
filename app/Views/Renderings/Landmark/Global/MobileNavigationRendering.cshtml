@@ -84,16 +84,29 @@
                 else
                 {
                     <ul class="sub-menu">
-                        @if (!(new Sitecore.Data.Fields.LayoutField(item).Value).IsNullOrEmpty() && item.ID.ToString() != ItemGuids.ServicesItem)
+                        @if (item.ID.ToString() == ItemGuids.NowAtLandmarkItem)
                         {
-                            <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">@item.Fields["Page Title"].Value.ToUpper()</a></li>
+                            foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item).Take(5))
+                            {
+                                <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(childItem))">@childItem["Page Title"].ToUpper()</a></li>
+                            }
+                            if (LandmarkHelper.GetChildrenPageInNavigation(item).Count > 5)
+                            {
+                                <li>
+                        <a href="@LandmarkHelper.GetItemUrl(item)">
+                            @Html.Sitecore().Field("Glossary Value", Sitecore.Context.Database.GetItem(ItemGuids.SeeAllItem))<span class="icomoon-chevron-small-right"></span>
+                        </a>
+                                    </li>
+                            }
                         }
-                        @foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
+                        else
                         {
-                            
-                            <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(childItem))">@childItem["Page Title"].ToUpper()</a></li>
-                            
+                            foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item))
+                            {
+                                <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(childItem))">@childItem["Page Title"].ToUpper()</a></li>
+                            }
                         }
+                        
                     </ul>
                 }
 
