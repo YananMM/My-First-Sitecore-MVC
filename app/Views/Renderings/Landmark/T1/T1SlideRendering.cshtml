@@ -81,18 +81,16 @@
                         
                         <div class="panel-main">
                             <div class="panel-text">
-                                <hgroup class="clearfix">
-                                    @if (sublineVersionsField.Value.Equals(ItemGuids.TwoNumbersTwoCaptionsTextLink))
-                                    {
-                                        @title
-                                    }
-                                    else
-                                    {
-                                        <h3>
-                                        @title
-                                            </h3>
-                                    } 
-                                </hgroup>
+                                @if (sublineVersionsField.Value.Equals(ItemGuids.TwoNumbersTwoCaptionsTextLink))
+                                {
+                                    @Html.Raw(title)
+                                }
+                                else
+                                {
+                                    <hgroup class="clearfix">
+                                        <h3>@title</h3>
+                                    </hgroup>
+                                } 
                                 <div class="panel-content">
                                     @text
                                 </div>
