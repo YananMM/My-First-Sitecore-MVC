@@ -79,7 +79,6 @@ namespace Landmark.Controllers
                                     if (subPage.DisplayName == childcategoryDisplayName)
                                     {
                                         target = subPage.Children.SingleOrDefault(p => p.DisplayName == "By Brands");
-                                        return Content(target.ID.ToString());
                                     }
                                 }
                             }
@@ -96,11 +95,9 @@ namespace Landmark.Controllers
                         }
                     }
                 }
-                 
             }
             return Redirect(LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(target)));
         }
-
     }
 
 }
