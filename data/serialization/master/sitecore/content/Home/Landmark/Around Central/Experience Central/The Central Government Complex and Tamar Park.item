@@ -24,6 +24,20 @@ content-length: 58
 
 <image mediaid="{67699F1D-3894-4CD9-88CC-7CA779CDE5A2}" />
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.165420
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.280515
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 6bccf25e-d000-412b-9d96-acb5c98c53f7
+revision: 8964155a-7702-46ea-bb5a-4bf3825b421c
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -46,9 +60,9 @@ The Central Government Complex and Tamar Park
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 100
+content-length: 159
 
-<link linktype="external" url="http://www.lcsd.gov.hk/en/parks/tp/index.html" anchor="" target="" />
+<link text="http://www.lcsd.gov.hk/en/parks/tp/index.html" linktype="external" url="http://www.lcsd.gov.hk/en/parks/tp/index.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -64,12 +78,47 @@ content-length: 62
 
 HK’s seat of government also offers relaxing harbourside views
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 46
+
+The Central Government Complex and Tamar Park 
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 63
+
+HK’s seat of government also offers relaxing harbourside views.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 46
+
+The Central Government Complex and Tamar Park 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 63
+
+HK’s seat of government also offers relaxing harbourside views.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 45
 
 The Central Government Complex and Tamar Park
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -83,14 +132,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6bccf25e-d000-412b-9d96-acb5c98c53f7
+8964155a-7702-46ea-bb5a-4bf3825b421c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T074321:635833430015000530Z
+20151124T095819Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +150,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 8b390e9e-87d0-468b-9acb-c1392a2478f7
+revision: e401e8e5-4a8a-4ad1-8770-9c2f59fe19cb
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 14
+
+中区政府总部建筑群及添马公园
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 100
+content-length: 159
 
-<link linktype="external" url="http://www.lcsd.gov.hk/sc/parks/tp/index.html" anchor="" target="" />
+<link text="http://www.lcsd.gov.hk/sc/parks/tp/index.html" linktype="external" url="http://www.lcsd.gov.hk/sc/parks/tp/index.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -124,6 +180,34 @@ key: content title
 content-length: 18
 
 香港政府的所在地，饱览怡人的海边景致
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 14
+
+中区政府总部建筑群及添马公园
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 19
+
+香港政府的所在地，饱览怡人的海边景致。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 14
+
+中区政府总部建筑群及添马公园
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 19
+
+香港政府的所在地，饱览怡人的海边景致。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -144,14 +228,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8b390e9e-87d0-468b-9acb-c1392a2478f7
+e401e8e5-4a8a-4ad1-8770-9c2f59fe19cb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100118:635828328788058823Z
+20151124T054354Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +246,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: ae34ad59-5952-4ff0-b653-17b30740bff9
+revision: baef1eb0-f9a2-4248-b1c4-aef39cdf00d4
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 14
+
+中區政府總部建築群及添馬公園
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 100
+content-length: 159
 
-<link linktype="external" url="http://www.lcsd.gov.hk/tc/parks/tp/index.html" anchor="" target="" />
+<link text="http://www.lcsd.gov.hk/tc/parks/tp/index.html" linktype="external" url="http://www.lcsd.gov.hk/tc/parks/tp/index.html" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -185,6 +276,34 @@ key: content title
 content-length: 18
 
 香港政府的所在地，飽覽怡人的海傍景致
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 14
+
+中區政府總部建築群及添馬公園
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 19
+
+香港政府的所在地，飽覽怡人的海傍景致。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 14
+
+中區政府總部建築群及添馬公園
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 19
+
+香港政府的所在地，飽覽怡人的海傍景致。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -205,14 +324,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ae34ad59-5952-4ff0-b653-17b30740bff9
+baef1eb0-f9a2-4248-b1c4-aef39cdf00d4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100057:635828328573636559Z
+20151124T054318Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

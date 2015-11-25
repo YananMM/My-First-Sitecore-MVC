@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: a65ae37d-e912-4e70-9360-3df62c5613ea
+revision: f7765086-a9a5-45c5-9d04-8c19a4453498
 
 ----field----
 field: {83133543-4F66-49A1-8E74-25AE281CBBE3}
@@ -155,6 +155,34 @@ content-length: 6
 
 Others
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+Email Signup 
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 96
+
+Subscribe to us by signing up through email and start receiving news and updates about LANDMARK.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 13
+
+Email Signup 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 96
+
+Subscribe to us by signing up through email and start receiving news and updates about LANDMARK.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -244,14 +272,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a65ae37d-e912-4e70-9360-3df62c5613ea
+f7765086-a9a5-45c5-9d04-8c19a4453498
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151120T023545:635835837450255737Z
+20151124T092528Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -262,7 +290,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: ed207201-daf8-49ba-b721-1c5d76f2d6e9
+revision: 97b4a96e-9fc1-4973-a99a-4c46ffbf2207
 
 ----field----
 field: {83133543-4F66-49A1-8E74-25AE281CBBE3}
@@ -377,6 +405,34 @@ content-length: 2
 
 其他
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 6
+
+订阅电子通讯
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 34
+
+请即於置地广塲官方网站订阅电子通讯,并更快获取更多置地广塲最新资讯。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 6
+
+订阅电子通讯
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 34
+
+请即於置地广塲官方网站订阅电子通讯,并更快获取更多置地广塲最新资讯。
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -410,7 +466,7 @@ name: Specify
 key: specify
 content-length: 3
 
-请列明
+请注明
 ----field----
 field: {D0171BB4-DDAB-4DCB-B895-49EEF38191E8}
 name: Verification
@@ -436,11 +492,12 @@ content-length: 99
 field: {86CC598A-C16C-4185-A447-BF3741FE4D88}
 name: Confirm Message
 key: confirm message
-content-length: 208
+content-length: 213
 
 我已细读和明白上述「法律及个人私隐」中所载的法律通知、私隐政策及条款，并同意受其约束。 <br>
 <br>
-置地公司拟使用你的个人资料（即姓名及电邮地址联络资料），作为提供最新资讯及直接促销置地公司的活动宣传推广及服务调查，以及置地公司、其租户、用户和业务伙伴旗下的零售、餐饮、银行、美容及其他产品、服务及活动宣传推广，惟置地公司必须征得你的同意，方可使用你的个人资料。 如你同意，请在以下空格加上「✓」号。<br>
+置地公司拟使用您的个人资料（即姓名及电邮地址联络资料），作为提供最新资讯及直接促销置地公司的活动宣传推广及服务调查，以及置地公司、其租户、用户和业务伙伴旗下的零售、餐饮、银行、美容及其他产品、服务及活动宣传推广，惟置地公司必须征得您的同意，方可使用您的个人资料。 如您同意，请在以下空格加上「✓」号。<br>
+<br>
 ----field----
 field: {8B6C75CC-B848-4A3A-B802-EC1F4517EDDD}
 name: Agree Message
@@ -475,14 +532,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ed207201-daf8-49ba-b721-1c5d76f2d6e9
+97b4a96e-9fc1-4973-a99a-4c46ffbf2207
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T033608Z
+20151124T093947Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -493,7 +550,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 81b04110-0342-4e0c-9b50-1e3ceae661c4
+revision: a8ec9e25-582b-4997-8940-8457845e2898
 
 ----field----
 field: {83133543-4F66-49A1-8E74-25AE281CBBE3}
@@ -608,6 +665,34 @@ content-length: 2
 
 其他
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 6
+
+訂閱電子通訊
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 34
+
+請即於置地廣塲官方網站訂閱電子通訊,並更快獲取更多置地廣塲最新資訊。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 6
+
+訂閱電子通訊
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 34
+
+請即於置地廣塲官方網站訂閱電子通訊,並更快獲取更多置地廣塲最新資訊。
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -641,7 +726,7 @@ name: Verification
 key: verification
 content-length: 9
 
-請輸入正確的驗証碼
+請輸入正確的驗證碼
 ----field----
 field: {E46BCEA7-0E10-4515-B80B-33A458BC6CC6}
 name: Generate Code
@@ -660,12 +745,11 @@ content-length: 98
 field: {86CC598A-C16C-4185-A447-BF3741FE4D88}
 name: Confirm Message
 key: confirm message
-content-length: 216
+content-length: 204
 
-<p>已細讀和明白上述「法律及個人私隱」中所載的法律通知、私隱政策及條款，並同意受其約束。 <br>
+已細讀和明白上述「法律及個人私隱」中所載的法律通知、私隱政策及條款，並同意受其約束。 <br>
 <br>
-置地公司擬使用你的個人資料（即姓名及電郵地址聯絡資料），作為提供最新資訊及直接促銷置地公司的活動宣傳推廣及服務調查，以及置地公司、其租戶、用戶和業務夥伴旗下的零售、餐飲、銀行、美容及其他產品、服務及活動宣傳推廣，惟置地公司必須徵得你的同意，方可使用你的個人資料。 如你同意，請在以下空格加上「 ✓」號。</p>
-<br>
+置地公司擬使用您的個人資料（即姓名及電郵地址聯絡資料），作為提供最新資訊及直接促銷置地公司的活動宣傳推廣及服務調查，以及置地公司、其租戶、用戶和業務夥伴旗下的零售、餐飲、銀行、美容及其他產品、服務及活動宣傳推廣，惟置地公司必須徵得您的同意，方可使用您的個人資料。 如您同意，請在以下空格加上「 ✓」號。
 ----field----
 field: {8B6C75CC-B848-4A3A-B802-EC1F4517EDDD}
 name: Agree Message
@@ -701,14 +785,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-81b04110-0342-4e0c-9b50-1e3ceae661c4
+a8ec9e25-582b-4997-8940-8457845e2898
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T033554Z
+20151124T092550Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -9,10 +9,17 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {459A62DB-7A18-4A16-8337-32D6D50931C8}
 templatekey: Concierge Desk
 
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
 ----version----
 language: en
 version: 1
-revision: 518ef9b1-2c21-406f-831e-9778255278d6
+revision: dc53c851-e59b-468f-8d6c-83266d4a2763
 
 ----field----
 field: {EBF0BB2A-812B-4396-88CF-13392A940E4D}
@@ -56,14 +63,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-518ef9b1-2c21-406f-831e-9778255278d6
+dc53c851-e59b-468f-8d6c-83266d4a2763
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151110T022255:635827189758492241Z
+20151124T034510Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -74,7 +81,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: e27255a5-4eb0-4dd4-ba4c-1dacf964f3b4
+revision: ce39a01d-47ef-4747-8a31-75012ae5ea3a
 
 ----field----
 field: {EBF0BB2A-812B-4396-88CF-13392A940E4D}
@@ -87,10 +94,10 @@ content-length: 8
 field: {072649E1-902C-46E5-99FF-15FAD12CAFC5}
 name: Concierge Desks Content
 key: concierge desks content
-content-length: 70
+content-length: 53
 
-<p class="a">（星期一至星期六）每天早上8时至晚上7时30分<br>
-（星期日及公众假期）每天早上10时至晚上7时30分</p>
+（星期一至星期六）每天早上8时至晚上7时30分<br>
+（星期日及公众假期）每天早上10时至晚上7时30分
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -118,14 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e27255a5-4eb0-4dd4-ba4c-1dacf964f3b4
+ce39a01d-47ef-4747-8a31-75012ae5ea3a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151112T125643Z
+20151124T035548Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -136,7 +143,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 3ca5135b-643b-40cc-b0a2-ec230ef4326e
+revision: e8bc3a26-bee8-4a85-822b-b9d10117819c
 
 ----field----
 field: {EBF0BB2A-812B-4396-88CF-13392A940E4D}
@@ -149,10 +156,10 @@ content-length: 8
 field: {072649E1-902C-46E5-99FF-15FAD12CAFC5}
 name: Concierge Desks Content
 key: concierge desks content
-content-length: 70
+content-length: 53
 
-<p class="a">（星期一至星期六）每天早上8時至晚上7時30分<br>
-（星期日及公眾假期）每天早上10時至晚上7時30分</p>
+（星期一至星期六）每天早上8時至晚上7時30分<br>
+（星期日及公眾假期）每天早上10時至晚上7時30分
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -180,14 +187,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3ca5135b-643b-40cc-b0a2-ec230ef4326e
+e8bc3a26-bee8-4a85-822b-b9d10117819c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151112T124417Z
+20151124T035651Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

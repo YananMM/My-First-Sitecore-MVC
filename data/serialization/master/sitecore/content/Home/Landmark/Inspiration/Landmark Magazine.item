@@ -26,43 +26,50 @@ content-length: 1
 ----version----
 language: en
 version: 1
-revision: 2af6d3f6-2e70-4363-96e9-6137c54f50c3
+revision: 4d606b9c-a0b2-4f69-a98b-99003bcd6436
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 42
+
+Luxury Shopping Mall Magazines and Updates
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 53
+content-length: 0
 
-Luxury Shopping Mall Magazines and Updates | LANDMARK
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 150
+content-length: 146
 
-LANDMARK Magazine is the luxury in-house magazine for prime retail spaces, is packed with glamour, elegance, world-class design and inspiring stories.
+LANDMARK Magazine, a luxury in-house magazine for prime retail spaces, is packed with glamour, elegance, world-class design and inspiring stories.
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
 key: social share title
-content-length: 53
+content-length: 42
 
-Luxury Shopping Mall Magazines and Updates | LANDMARK
+Luxury Shopping Mall Magazines and Updates
 ----field----
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 150
+content-length: 146
 
-LANDMARK Magazine is the luxury in-house magazine for prime retail spaces, is packed with glamour, elegance, world-class design and inspiring stories.
+LANDMARK Magazine, a luxury in-house magazine for prime retail spaces, is packed with glamour, elegance, world-class design and inspiring stories.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 17
 
-LANDMARK MAGAZINE
+Landmark Magazine
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -76,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2af6d3f6-2e70-4363-96e9-6137c54f50c3
+4d606b9c-a0b2-4f69-a98b-99003bcd6436
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151114T074041Z
+20151125T022912Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,8 +101,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 0a62f50e-f1b4-441f-ab2b-56c5b64b4c6f
+revision: 8d758bff-3951-4290-8da1-a04e6be2fe5b
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+豪华购物中心杂誌及最新消息
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -107,9 +121,9 @@ content-length: 51
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
 key: social share title
-content-length: 20
+content-length: 13
 
-豪华购物中心杂誌及最新消息 | 置地广塲
+豪华购物中心杂誌及最新消息
 ----field----
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
@@ -151,14 +165,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0a62f50e-f1b4-441f-ab2b-56c5b64b4c6f
+8d758bff-3951-4290-8da1-a04e6be2fe5b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T055030Z
+20151125T023658Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -169,8 +183,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 2da531cc-4b4f-41a7-9a7d-5e41f7f8903e
+revision: 8f3471b3-cff4-48fb-b2eb-ff0c1558f200
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+豪華購物中心雜誌及最新消息
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
@@ -189,9 +210,16 @@ content-length: 51
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
 key: social share title
-content-length: 20
+content-length: 13
 
-豪華購物中心雜誌及最新消息 | 置地廣塲
+豪華購物中心雜誌及最新消息
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 51
+
+置地廣塲雜誌是一本豪華雜誌，內容主要包括零售，擁有豐富和具魅力的世界一流設計最新消息和鼓舞人心的故事。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -226,14 +254,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2da531cc-4b4f-41a7-9a7d-5e41f7f8903e
+8f3471b3-cff4-48fb-b2eb-ff0c1558f200
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T105302Z
+20151125T023318Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

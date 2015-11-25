@@ -16,6 +16,13 @@ key: value
 content-length: 10
 
 Travelling
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+394
 ----version----
 language: en
 version: 1
@@ -59,7 +66,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 1a6d13db-b8e9-433a-89fd-39f532c43a50
+revision: caa36b20-481b-4cbd-a2eb-a26b3405b1e5
 
 ----field----
 field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
@@ -67,7 +74,7 @@ name: Text
 key: text
 content-length: 2
 
-旅行
+旅游
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -95,14 +102,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1a6d13db-b8e9-433a-89fd-39f532c43a50
+caa36b20-481b-4cbd-a2eb-a26b3405b1e5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151122T051726:635837662465375829Z
+20151124T093102Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -113,7 +120,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: ccb3ef86-40ba-478b-9270-d0a75f1b3939
+revision: 67fea8c2-c027-483f-b954-b982708f196f
 
 ----field----
 field: {5FCA6882-D6D9-4DD3-AFE7-F98F0B90E6C7}
@@ -121,7 +128,7 @@ name: Text
 key: text
 content-length: 2
 
-旅行
+旅遊
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -149,14 +156,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ccb3ef86-40ba-478b-9270-d0a75f1b3939
+67fea8c2-c027-483f-b954-b982708f196f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151122T051753:635837662730440989Z
+20151124T093052Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

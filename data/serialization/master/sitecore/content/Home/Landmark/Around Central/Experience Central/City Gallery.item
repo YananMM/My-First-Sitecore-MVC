@@ -31,6 +31,34 @@ content-length: 15
 
 (852) 3102 1242
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.162172
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.282602
+----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -40,7 +68,7 @@ content-length: 77
 ----version----
 language: en
 version: 1
-revision: 581cbeb5-e058-40a3-adc7-e9ef164fa10d
+revision: 7c439f46-5683-4748-991d-cd5fa21217ed
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -53,9 +81,9 @@ City Gallery
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 88
+content-length: 135
 
-<link linktype="external" url="http://www.citygallery.gov.hk/en/" anchor="" target="" />
+<link text="http://www.citygallery.gov.hk/en/" linktype="external" url="http://www.citygallery.gov.hk/en/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -71,12 +99,47 @@ content-length: 34
 
 A glimpse into Hong Kong’s future 
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 12
+
+City Gallery
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 34
+
+A glimpse into Hong Kong’s future.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 12
+
+City Gallery
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 34
+
+A glimpse into Hong Kong’s future.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 12
 
 City Gallery
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -90,14 +153,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-581cbeb5-e058-40a3-adc7-e9ef164fa10d
+7c439f46-5683-4748-991d-cd5fa21217ed
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T073116:635833422767305985Z
+20151124T100017Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -108,15 +171,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 8be57e70-a71b-4d56-b107-d33fcc03f46c
+revision: 6e7fb9e5-2e72-4fcd-8bf4-5ae49c1b66c5
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 3
+
+展城馆
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 88
+content-length: 135
 
-<link linktype="external" url="http://www.citygallery.gov.hk/sc/" anchor="" target="" />
+<link text="http://www.citygallery.gov.hk/sc/" linktype="external" url="http://www.citygallery.gov.hk/sc/" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -131,6 +201,34 @@ key: content title
 content-length: 6
 
 探索香港未来
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+展城馆
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 7
+
+探索香港未来。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 3
+
+展城馆
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 7
+
+探索香港未来。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -151,14 +249,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8be57e70-a71b-4d56-b107-d33fcc03f46c
+6e7fb9e5-2e72-4fcd-8bf4-5ae49c1b66c5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094424:635828318648308862Z
+20151124T050341Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -169,15 +267,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 1f1caf50-e68e-4d43-912d-93861a49e16c
+revision: 86c0b9af-22ee-418c-b18b-72c5361ad11a
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 3
+
+展城館
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 89
+content-length: 137
 
-<link linktype="external" url="http://www.citygallery.gov.hk/tc/ " anchor="" target="" />
+<link text="http://www.citygallery.gov.hk/tc/ " linktype="external" url="http://www.citygallery.gov.hk/tc/ " anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -192,6 +297,34 @@ key: content title
 content-length: 6
 
 探索香港未來
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+展城館
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 7
+
+探索香港未來。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 3
+
+展城館
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 7
+
+探索香港未來。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -212,14 +345,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1f1caf50-e68e-4d43-912d-93861a49e16c
+86c0b9af-22ee-418c-b18b-72c5361ad11a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T094404:635828318440476975Z
+20151124T050244Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

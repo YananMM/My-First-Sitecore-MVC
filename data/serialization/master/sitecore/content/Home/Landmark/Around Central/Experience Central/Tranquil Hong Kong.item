@@ -24,6 +24,20 @@ content-length: 58
 
 <image mediaid="{956A0174-FEF4-48DB-BEDD-C5C02C26D02B}" />
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.209779
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.219275
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +47,7 @@ content-length: 155
 ----version----
 language: en
 version: 1
-revision: 19f2d2eb-a517-4a4e-8fe8-845233c3daf3
+revision: 7abd0937-d7bb-4620-8155-3edffd8700f2
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -50,12 +64,47 @@ content-length: 90
 
 Hong Kong is not all hustle and bustle – there are easily accessible peaceful places, too!
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 18
+
+Tranquil Hong Kong
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 90
+
+Hong Kong is not all hustle and bustle – there are easily accessible peaceful places, too!
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 18
+
+Tranquil Hong Kong
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 90
+
+Hong Kong is not all hustle and bustle – there are easily accessible peaceful places, too!
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 18
 
 Tranquil Hong Kong
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -69,14 +118,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-19f2d2eb-a517-4a4e-8fe8-845233c3daf3
+7abd0937-d7bb-4620-8155-3edffd8700f2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T074206:635833429260127353Z
+20151124T095803Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,12 +136,47 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 7b8e52bd-48af-4639-9341-15c804863d58
+revision: 31eb4f6b-535f-4f29-a580-2a11c38daead
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 7
+
+香港宁静的一面
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
+content-length: 33
+
+香港除了熙来攘往的大街小巷，其实也有很多交通方便、宁静舒适的景点！
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+香港宁静的一面
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 33
+
+香港除了熙来攘往的大街小巷，其实也有很多交通方便、宁静舒适的景点！
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+香港宁静的一面
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 33
 
 香港除了熙来攘往的大街小巷，其实也有很多交通方便、宁静舒适的景点！
@@ -116,14 +200,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7b8e52bd-48af-4639-9341-15c804863d58
+31eb4f6b-535f-4f29-a580-2a11c38daead
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T101408:635828336482178901Z
+20151124T080849Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -134,12 +218,47 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 826a1157-e3bc-4df5-a12b-33ffdfa58556
+revision: 77844d23-c390-485d-9aac-641bf1ca6dd6
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 7
+
+香港寧靜的一面
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
+content-length: 33
+
+香港除了熙來攘往的大街小巷，其實也有很多交通方便、寧靜舒適的景點！
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+香港寧靜的一面
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 33
+
+香港除了熙來攘往的大街小巷，其實也有很多交通方便、寧靜舒適的景點！
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+香港寧靜的一面
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 33
 
 香港除了熙來攘往的大街小巷，其實也有很多交通方便、寧靜舒適的景點！
@@ -163,14 +282,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-826a1157-e3bc-4df5-a12b-33ffdfa58556
+77844d23-c390-485d-9aac-641bf1ca6dd6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T101351:635828336313499253Z
+20151124T062049Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

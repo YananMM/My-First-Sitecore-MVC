@@ -10,12 +10,19 @@ template: {3832F0F6-6342-4394-932C-2DDAB1164C97}
 templatekey: T11 Page
 
 ----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
 field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
 name: Is Shown In Breadcrumb
 key: is shown in breadcrumb
-content-length: 1
+content-length: 0
 
-1
+
 ----field----
 field: {5E1E019C-CF1B-461D-88F2-365149680CDE}
 name: Banner Image
@@ -33,22 +40,43 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: db2e0f14-3cef-4adf-b974-689944d2b244
+revision: 95bf6b84-c7ed-4fb5-bdc3-7989c7b87c34
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 40
+
+Hong Kong Kids Toys and Children Clothes
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 51
+content-length: 0
 
-Hong Kong Kids Toys and Children Clothes | LANDMARK
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 156
+content-length: 152
 
-LANDMARK is the place for children clothes or educational toys for kids, children's stores in LANDMARK offer shopping fun for parents and little ones alike.
+Parents and their little ones will sure have fun shopping at the children's stores at LANDMARK offering childre's clothes and educational toys for kids.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 40
+
+Hong Kong Kids Toys and Children Clothes
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 152
+
+Parents and their little ones will sure have fun shopping at the children's stores at LANDMARK offering childre's clothes and educational toys for kids.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -69,14 +97,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-db2e0f14-3cef-4adf-b974-689944d2b244
+95bf6b84-c7ed-4fb5-bdc3-7989c7b87c34
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151111T131535Z
+20151125T024822Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -87,19 +115,40 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 77417ceb-5db0-4906-8bc7-a546e23c112e
+revision: 549e7be6-ff47-4bce-a656-9c2eed78d009
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 9
+
+香港儿童用品及服装
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 16
+content-length: 0
 
-香港儿童用品及服装 | 置地广塲
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
+content-length: 56
+
+置地广塲玩具店及儿童服装提供多种童装品牌，品种类繁多, 专营多国儿童服装和益智玩具, 每一件货品都经精挑细选。 
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 9
+
+香港儿童用品及服装
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 56
 
 置地广塲玩具店及儿童服装提供多种童装品牌，品种类繁多, 专营多国儿童服装和益智玩具, 每一件货品都经精挑细选。 
@@ -137,14 +186,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-77417ceb-5db0-4906-8bc7-a546e23c112e
+549e7be6-ff47-4bce-a656-9c2eed78d009
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151111T120406Z
+20151125T024926Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -155,19 +204,40 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 0c0fff3f-d3af-4665-af5b-9c1dcabbf46e
+revision: 5e6dc87e-a485-429a-acc6-e6973e1eb157
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 11
+
+香港玩具店及兒童服裝 
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 17
+content-length: 0
 
-香港玩具店及兒童服裝 | 置地廣塲
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
+content-length: 56
+
+置地廣塲玩具店及兒童服裝提供多種童裝品牌，品種類繁多, 專營多國兒童服裝和益智玩具, 每一件貨品都經精挑細選。 
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 11
+
+香港玩具店及兒童服裝 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 56
 
 置地廣塲玩具店及兒童服裝提供多種童裝品牌，品種類繁多, 專營多國兒童服裝和益智玩具, 每一件貨品都經精挑細選。 
@@ -205,14 +275,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0c0fff3f-d3af-4665-af5b-9c1dcabbf46e
+5e6dc87e-a485-429a-acc6-e6973e1eb157
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151111T120417Z
+20151125T024843Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

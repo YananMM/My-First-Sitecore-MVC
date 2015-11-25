@@ -19,8 +19,15 @@ content-length: 251
 ----version----
 language: en
 version: 1
-revision: 32d1364c-7209-4b55-bf31-4ed604e67c6d
+revision: 37c8f269-9124-459e-a5d9-ced96dfccc3b
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 42
+
+Hong Kong Shopping Mall Concierge Services
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
@@ -32,16 +39,23 @@ content-length: 0
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 138
+content-length: 122
 
-Services at LANDMARK offer excellent shopping mall guide and assistance, providing you useful information of LANDMARK and around Central. 
+LANDMARK provides excellent services with our comprehensive shopping mall assistance, baby-care facilities and free Wi-Fi.
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
 key: social share title
-content-length: 52
+content-length: 42
 
-Hong Kong Shopping Mall Guide & Concierge | LANDMARK
+Hong Kong Shopping Mall Concierge Services
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 122
+
+LANDMARK provides excellent services with our comprehensive shopping mall assistance, baby-care facilities and free Wi-Fi.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -61,14 +75,14 @@ content-length: 12
 field: {DFF5288B-8FFB-47AE-B6F4-50BEEFA40931}
 name: Service Title
 key: service title
-content-length: 8
+content-length: 25
 
-Overview
+We are Here to Assist You
 ----field----
 field: {2BB28A47-AC7C-4226-B782-7D49F761541E}
 name: Service Content
 key: service content
-content-length: 3297
+content-length: 3339
 
 <p><span style="text-decoration: underline;"><strong> Concierge Services</strong><br>
 </span>
@@ -81,7 +95,8 @@ Our concierges are here to assist you while you are at LANDMARK. The following s
     <li>Hong Kong map supply</li>
     <li>Life-saving AED devices, available 24/7 including outside of opening hours  </li>
 </ul>
-For enquiry or assistance, please visit any of our Concierge Desks or call the Concierge Hotline at 2500 0555.<br><br>
+For enquiry or assistance, please visit any of our Concierge Desks or call the Concierge Hotline at 2500 0555.<br>
+<br>
 <p>
 <span style="text-decoration: underline;"><strong>Baby-care Facilities</strong></span> </p>
 LANDMARK welcomes families and cares about the shopping experiences of those with babies in particular. We provide a range of baby facilities in our buildings, including two nurseries and baby-changing areas. For more information, please contact any of our concierges, who will be happy to help.
@@ -110,7 +125,7 @@ LANDMARK welcomes families and cares about the shopping experiences of those wit
 <span style="text-decoration: underline;"><strong>Free Wi-Fi</strong></span>
 <p>To ensure you stay connected, free Wi-Fi service is available in LANDMARK ATRIUM, LANDMARK ALEXANDRA, LANDMARK CHATER, LANDMARK PRINCE'S, Exchange Square and Jardine House.</p>
 <br>
-<p>Terms and conditions (link) apply. For more information, please contact any of our concierges.</p>
+<p><a href="/en/legal-privacy" target="_blank">Terms and conditions</a> apply. For more information, please contact any of our concierges.</p>
 <br>
 ----field----
 field: {7838DC40-4086-433A-80EF-6FE4FDCEB0B6}
@@ -139,14 +154,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-32d1364c-7209-4b55-bf31-4ed604e67c6d
+37c8f269-9124-459e-a5d9-ced96dfccc3b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T140640Z
+20151124T041848Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -157,8 +172,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 0c8c50a7-807f-49c2-be86-7ff5ba15d769
+revision: 02d51668-10af-44e5-951b-728e661647b2
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 12
+
+香港中环购物中心礼宾服务
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -170,9 +192,9 @@ content-length: 45
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
 key: social share title
-content-length: 18
+content-length: 12
 
-香港中环购物中心礼宾服务| 置地广塲
+香港中环购物中心礼宾服务
 ----field----
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
@@ -191,21 +213,21 @@ content-length: 2
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 12
+content-length: 0
 
-我们乐意为您效劳<br>
+
 ----field----
 field: {DFF5288B-8FFB-47AE-B6F4-50BEEFA40931}
 name: Service Title
 key: service title
-content-length: 2
+content-length: 8
 
-概览
+我们乐意为您效劳
 ----field----
 field: {2BB28A47-AC7C-4226-B782-7D49F761541E}
 name: Service Content
 key: service content
-content-length: 2701
+content-length: 2758
 
 <strong><span style="text-decoration: underline;">礼宾服务处</span></strong><br>
 <br>
@@ -215,9 +237,11 @@ content-length: 2701
     <li>失物招领服务</li>
     <li>本地交通资讯</li>
     <li>提供香港地图</li>
-    <li>24小时全天候提供可在危急时拯救生命的AED自动体外除颤器</li></ul>
+    <li>24小时全天候提供可在危急时拯救生命的AED自动体外除颤器</li>
+</ul>
 如有任何疑问或需要协助，请前往置地广场任一礼宾服务处，或致电礼宾服务处热线2500 0555。
-<br><br>
+<br>
+<br>
 <span style="text-decoration: underline;"><strong>育婴设施
 </strong></span>
 <p>置地广场欢迎宾客举家光临，并特地为携婴儿同行者筹谋，力求让他们同享购物乐趣。我们在旗下物业提供多种育婴设施，包括两间育婴室和婴儿换片空间。如欲获取更多资料，请联络置地广场礼宾服务处职员，他们将会乐意协助。</p>
@@ -242,8 +266,9 @@ content-length: 2701
     <p><span style="text-decoration: underline;"><strong>免费无线上网</strong></span><br>
     <br>
     为确保您能接通互联网，置地广场中庭、置地历山、置地遮打、置地太子、交易广场及怡和大厦皆提供免费无线上网服务。</p>
-<br>
-    <p>须受有关条款及细则（link）约束。如欲获取更多资料，请联络置地广场礼宾服务处职员。</p>
+    <br>
+    <p>须受有关<a target="_blank" href="/sc/legal-privacy">条款及细则</a>约束。如欲获取更多资料，请联络置地广场礼宾服务处职员。</p>
+    <br>
 ----field----
 field: {7838DC40-4086-433A-80EF-6FE4FDCEB0B6}
 name: Opening Hours Label
@@ -278,14 +303,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0c8c50a7-807f-49c2-be86-7ff5ba15d769
+02d51668-10af-44e5-951b-728e661647b2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T032445Z
+20151124T041854Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -296,8 +321,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: b39d704c-cd17-4291-ba48-e32300997345
+revision: d872ada1-2720-4e93-a491-846f384621c3
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 12
+
+香港中環購物中心禮賓服務
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -309,9 +341,9 @@ content-length: 45
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
 key: social share title
-content-length: 19
+content-length: 12
 
-香港中環購物中心禮賓服務 | 置地廣塲
+香港中環購物中心禮賓服務
 ----field----
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
@@ -330,21 +362,21 @@ content-length: 2
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 12
+content-length: 0
 
-我們樂意為您效勞<br>
+
 ----field----
 field: {DFF5288B-8FFB-47AE-B6F4-50BEEFA40931}
 name: Service Title
 key: service title
-content-length: 2
+content-length: 8
 
-概覽
+我們樂意為您效勞
 ----field----
 field: {2BB28A47-AC7C-4226-B782-7D49F761541E}
 name: Service Content
 key: service content
-content-length: 2354
+content-length: 2407
 
 <p><strong><span style="text-decoration: underline;">禮賓服務處</span></strong></p>
 <p>置地廣塲的禮賓服務處職員樂意為您效勞，各個禮賓服務處提供以下服務：
@@ -387,7 +419,8 @@ content-length: 2354
     <p>為確保您能接通互聯網，置地廣塲中庭、置地歷山、置地遮打、置地太子、交易廣塲及怡和大廈皆提供免費無線上網服務。
     </p>
     <br>
-    <p>須受有關條款及細則（連結）約束。如欲取得更多資料，請聯絡置地廣塲禮賓服務處職員。</p>
+    <p>須受有關<a href="/tc/legal-privacy" target="_blank">條款及細則</a>約束。如欲取得更多資料，請聯絡置地廣塲禮賓服務處職員。</p>
+    <br>
     <br>
     <br>
     <br>
@@ -425,14 +458,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b39d704c-cd17-4291-ba48-e32300997345
+d872ada1-2720-4e93-a491-846f384621c3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T032338Z
+20151124T041840Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

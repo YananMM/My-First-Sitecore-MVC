@@ -24,6 +24,20 @@ content-length: 58
 
 <image mediaid="{AF5F8A9B-96DB-40F3-9CAF-00DB51C077CF}" />
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 11
+
+114.1600347
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 10
+
+22.2814446
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 7c6e8c76-6f61-4d1e-9967-c61ddbfc9aab
+revision: 98a193c6-93a5-4e66-975b-6d85af6f68c1
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -57,6 +71,34 @@ content-length: 55
 
 Historic road at heart of city plays host to fun events
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 11
+
+Chater Road
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 55
+
+Historic road at heart of city plays host to fun events
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 22
+
+Chater Road | LANDMARK
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 56
+
+Historic road at heart of city plays host to fun events.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -67,9 +109,9 @@ Chater Road
 field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
 name: See More Label
 key: see more label
-content-length: 20
+content-length: 25
 
-SEE MORE ATTRACTIONS
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -83,14 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7c6e8c76-6f61-4d1e-9967-c61ddbfc9aab
+98a193c6-93a5-4e66-975b-6d85af6f68c1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T073104:635833422645459016Z
+20151124T100021Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,8 +143,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 583825a9-a745-455c-8e26-746ee6a8c009
+revision: 29ad0dfa-97b8-43a3-a66e-2e21f7e3399d
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 3
+
+遮打道
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -117,6 +166,34 @@ key: content title
 content-length: 22
 
 位于城中核心地段的历史街道，精彩活动尽在此处
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+遮打道
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 23
+
+位于城中核心地段的历史街道，精彩活动尽在此处。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 3
+
+遮打道
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 23
+
+位于城中核心地段的历史街道，精彩活动尽在此处。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -137,14 +214,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-583825a9-a745-455c-8e26-746ee6a8c009
+29ad0dfa-97b8-43a3-a66e-2e21f7e3399d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T092631:635828307910584700Z
+20151124T065352Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -155,8 +232,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: c04a3e4e-f085-4aac-93e4-46f3f4aa4f54
+revision: 25dbf16f-d5ba-430b-9ee9-382760df255a
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 3
+
+遮打道
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -171,6 +255,34 @@ key: content title
 content-length: 22
 
 位於城中核心地段的歷史街道，精彩活動盡在此尋
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+遮打道
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 23
+
+位於城中核心地段的歷史街道，精彩活動盡在此尋。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 3
+
+遮打道
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 23
+
+位於城中核心地段的歷史街道，精彩活動盡在此尋。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -191,14 +303,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c04a3e4e-f085-4aac-93e4-46f3f4aa4f54
+25dbf16f-d5ba-430b-9ee9-382760df255a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T092619:635828307793227987Z
+20151124T065250Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

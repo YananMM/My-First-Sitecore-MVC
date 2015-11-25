@@ -23,10 +23,17 @@ key: article portrait callout image
 content-length: 58
 
 <image mediaid="{DE9E2AB6-64C6-4559-A2F0-0EF8A363EAB0}" />
+----field----
+field: {9135200A-5626-4DD8-AB9D-D665B8C11748}
+name: __Never publish
+key: __never publish
+content-length: 1
+
+1
 ----version----
 language: en
 version: 1
-revision: 02c2bc3a-a0c2-4d60-9124-37983d256bac
+revision: 5a4802ec-953b-4319-bd79-e3dbd50e40f5
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -55,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-02c2bc3a-a0c2-4d60-9124-37983d256bac
+5a4802ec-953b-4319-bd79-e3dbd50e40f5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151119T075714:635835166344736905Z
+20151124T062747Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

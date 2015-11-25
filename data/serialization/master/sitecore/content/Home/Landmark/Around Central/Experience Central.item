@@ -19,8 +19,15 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: eb55ec4c-8a12-4e19-b5cc-455af1f3668a
+revision: 3c493d66-2a0b-423d-8c6c-099576c703a6
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 30
+
+Tourist Attractions in Central
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
@@ -39,9 +46,16 @@ Find out the list of tourist attractions and sightseeing destinations around Cen
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
 key: social share title
-content-length: 41
+content-length: 30
 
-Tourist Attractions in Central | LANDMARK
+Tourist Attractions in Central
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 141
+
+Find out the list of tourist attractions and sightseeing destinations around Central, Hong Kong. Discover more by visiting the official site.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -83,14 +97,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-eb55ec4c-8a12-4e19-b5cc-455af1f3668a
+3c493d66-2a0b-423d-8c6c-099576c703a6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T105013Z
+20151124T041822Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,8 +115,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: efaaa7df-eb6e-4393-b713-50132b831f3e
+revision: f9715536-a89f-4d95-b11d-7ca872e12470
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 6
+
+中环旅遊景点
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
@@ -121,9 +142,16 @@ content-length: 24
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
 key: social share title
-content-length: 13
+content-length: 6
 
-中环旅遊景点 | 置地广塲
+中环旅遊景点
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 24
+
+请即登陆官方网站了解更多关於香港和中环旅遊景点。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -179,14 +207,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-efaaa7df-eb6e-4393-b713-50132b831f3e
+f9715536-a89f-4d95-b11d-7ca872e12470
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T104948Z
+20151124T041826Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -197,8 +225,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 014b3488-fb2c-4795-a988-9fed12a531eb
+revision: 4d9fb42e-c4c2-45fb-a052-6816cca3471e
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+中環旅遊景點 
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
@@ -217,9 +252,16 @@ content-length: 24
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
 key: social share title
-content-length: 13
+content-length: 6
 
-中環旅遊景點 | 置地廣塲
+中環旅遊景點
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 24
+
+請即登入官方網站了解更多關於香港和中環旅遊景點。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -275,14 +317,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-014b3488-fb2c-4795-a988-9fed12a531eb
+4d9fb42e-c4c2-45fb-a052-6816cca3471e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T104932Z
+20151124T041831Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

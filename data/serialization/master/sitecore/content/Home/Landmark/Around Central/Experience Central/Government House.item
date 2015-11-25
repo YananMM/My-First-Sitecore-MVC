@@ -24,6 +24,34 @@ content-length: 58
 
 <image mediaid="{D2E0F358-D56E-4CB3-8EB0-3470A5409655}" />
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.157470
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.278641
+----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +61,7 @@ content-length: 77
 ----version----
 language: en
 version: 1
-revision: 7f87f159-e33d-4ee9-bb35-dbdf0f6e89ba
+revision: 35666365-ad5b-47a0-b33b-851d6d8d9aa7
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -46,9 +74,9 @@ Government House
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 96
+content-length: 151
 
-<link linktype="external" url="http://www.amo.gov.hk/en/monuments_59.php" anchor="" target="" />
+<link text="http://www.amo.gov.hk/en/monuments_59.php" linktype="external" url="http://www.amo.gov.hk/en/monuments_59.php" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -64,12 +92,47 @@ content-length: 52
 
 Home to Hong Kong rulers both pre- and post-handover
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 16
+
+Government House
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 53
+
+Home to Hong Kong rulers both pre- and post-handover.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 16
+
+Government House
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 53
+
+Home to Hong Kong rulers both pre- and post-handover.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 16
 
 Government House
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -83,14 +146,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7f87f159-e33d-4ee9-bb35-dbdf0f6e89ba
+35666365-ad5b-47a0-b33b-851d6d8d9aa7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T075140:635833435007996113Z
+20151124T095949Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +164,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 2253353e-b41a-428e-a5fb-3be2d198a819
+revision: c5450a60-c834-4b79-86ef-2bf328abe3b1
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 5
+
+香港礼宾府
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 117
+content-length: 193
 
-<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/monuments_59.php" anchor="" target="" />
+<link text="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/monuments_59.php" linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/monuments_59.php" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -124,6 +194,34 @@ key: content title
 content-length: 12
 
 回归前后香港管治者的官邸
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 5
+
+香港礼宾府
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 13
+
+回归前后香港管治者的官邸。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 5
+
+香港礼宾府
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 13
+
+回归前后香港管治者的官邸。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -144,14 +242,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2253353e-b41a-428e-a5fb-3be2d198a819
+c5450a60-c834-4b79-86ef-2bf328abe3b1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095252:635828323720508976Z
+20151124T052130Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +260,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 17b3f730-330e-4597-a9d3-250122d685c4
+revision: 2e4fd1ea-cf2d-4213-89e7-c4c2aa397fe4
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 5
+
+香港禮賓府
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 96
+content-length: 151
 
-<link linktype="external" url="http://www.amo.gov.hk/b5/monuments_59.php" anchor="" target="" />
+<link text="http://www.amo.gov.hk/b5/monuments_59.php" linktype="external" url="http://www.amo.gov.hk/b5/monuments_59.php" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -185,6 +290,34 @@ key: content title
 content-length: 12
 
 回歸前後香港管治者的官邸
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 5
+
+香港禮賓府
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 13
+
+回歸前後香港管治者的官邸。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 5
+
+香港禮賓府
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 13
+
+回歸前後香港管治者的官邸。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -205,14 +338,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-17b3f730-330e-4597-a9d3-250122d685c4
+2e4fd1ea-cf2d-4213-89e7-c4c2aa397fe4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095217:635828323378819432Z
+20151124T052103Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

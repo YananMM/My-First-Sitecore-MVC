@@ -9,10 +9,17 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {459A62DB-7A18-4A16-8337-32D6D50931C8}
 templatekey: Concierge Desk
 
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+600
 ----version----
 language: en
 version: 1
-revision: 4a9afd89-0e42-4809-b876-195335dffb43
+revision: cb23ae50-5b0a-4eac-af7a-f80e25fa9398
 
 ----field----
 field: {EBF0BB2A-812B-4396-88CF-13392A940E4D}
@@ -20,15 +27,14 @@ name: Concierge Desks Title
 key: concierge desks title
 content-length: 42
 
-LANDMARK ATRIUM (2/F, next to York House) 
+LANDMARK ATRIUM (2/F, NEXT TO YORK HOUSE) 
 ----field----
 field: {072649E1-902C-46E5-99FF-15FAD12CAFC5}
 name: Concierge Desks Content
 key: concierge desks content
-content-length: 65
+content-length: 64
 
-8am-7:30pm (Mon-Sat);<br>
-10am-7:30pm (Sun &amp; Public Holidays)
+8am-7:30pm (Mon-Sat);<br>10am-7:30pm (Sun &amp; Public Holidays)
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -56,14 +62,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4a9afd89-0e42-4809-b876-195335dffb43
+cb23ae50-5b0a-4eac-af7a-f80e25fa9398
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151112T123629Z
+20151124T035459Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -136,7 +142,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: bfdd9f21-6263-4ecc-b00d-455870bd0df9
+revision: 672e373f-3f22-4b27-af22-78d240b05ca6
 
 ----field----
 field: {EBF0BB2A-812B-4396-88CF-13392A940E4D}
@@ -149,10 +155,10 @@ content-length: 17
 field: {072649E1-902C-46E5-99FF-15FAD12CAFC5}
 name: Concierge Desks Content
 key: concierge desks content
-content-length: 58
+content-length: 51
 
-<p>（星期一至六）每天早上8時至晚上7時30分<br>
-（星期日及公眾假期）每天早上10時至晚上7時30分</p>
+（星期一至六）每天早上8時至晚上7時30分<br>
+（星期日及公眾假期）每天早上10時至晚上7時30分
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -180,14 +186,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bfdd9f21-6263-4ecc-b00d-455870bd0df9
+672e373f-3f22-4b27-af22-78d240b05ca6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151112T130142Z
+20151124T035627Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

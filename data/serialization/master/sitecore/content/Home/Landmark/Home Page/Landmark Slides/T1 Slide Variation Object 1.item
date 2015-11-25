@@ -15,7 +15,7 @@ name: Reference Item
 key: reference item
 content-length: 38
 
-{3E551A3A-E38C-456F-B6D6-A3C8C77421BF}
+{2EF446A2-B051-4F14-9D22-F83B488BF7CE}
 ----field----
 field: {A6F466E4-6D3F-433B-9059-251D4D8EDE2C}
 name: Slide Video
@@ -29,7 +29,7 @@ name: Main Version Slide Style
 key: main version slide style
 content-length: 38
 
-{EDDA98B8-D3CC-4BF0-9DF0-3E4FF82D88E0}
+{66B59687-427D-4BB3-8CA3-1F2D4971E301}
 ----field----
 field: {C3E2079A-4535-458A-87CD-43E564B45E89}
 name: Sub Version Slide Style
@@ -41,14 +41,49 @@ content-length: 38
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
-content-length: 1
+content-length: 4
 
-0
+-200
 ----version----
 language: en
 version: 1
-revision: 19e391a0-ccb4-4a87-af72-bb1a9c2aa5a3
+revision: b491fdc5-22ea-4da5-b191-5c3dc1f212d3
 
+----field----
+field: {42999415-3EAC-4B74-A6EB-034271F085B7}
+name: Slide Title
+key: slide title
+content-length: 4
+
+xmas
+----field----
+field: {DF2B5F7C-2BD8-4762-982A-8F461123C5C2}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{6479FA7E-3796-433C-993F-CB015849425F}" />
+----field----
+field: {9FAF7DB0-6304-44A3-A1AD-3156F3467264}
+name: Slide Intro
+key: slide intro
+content-length: 0
+
+
+----field----
+field: {0E089E2C-C25C-42EF-8323-5D49C81D12FB}
+name: Slide Button Text
+key: slide button text
+content-length: 13
+
+FIND OUT MORE
+----field----
+field: {687B71D1-C561-4B9E-B214-32F115925434}
+name: Slide Button Link
+key: slide button link
+content-length: 176
+
+<link linktype="external" url="http://christmas.landmark.hk/en/index.php?utm_source=landmark&amp;utm_medium=home-banner&amp;utm_campaign=christmas" anchor="" target="_blank" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -76,21 +111,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-19e391a0-ccb4-4a87-af72-bb1a9c2aa5a3
+b491fdc5-22ea-4da5-b191-5c3dc1f212d3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151109T155248Z
+20151125T040258Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-sitecore\edgarchan
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1

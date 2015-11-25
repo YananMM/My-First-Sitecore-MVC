@@ -24,6 +24,20 @@ content-length: 58
 
 <image mediaid="{CF8FF764-883D-44FA-A2F0-70C8503C088C}" />
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.146546
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.287773
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: a05a174c-5acc-4a36-83d9-01ca02eea616
+revision: c5d8cde8-e9d8-45b1-a55f-d58b2bf72852
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -57,12 +71,47 @@ content-length: 62
 
 Traditional trade still brings old-time flavour to street life
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 42
+
+Dried Seafood Street and Tonic Food Street
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 63
+
+Traditional trade still brings old-time flavour to street life.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 42
+
+Dried Seafood Street and Tonic Food Street
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 63
+
+Traditional trade still brings old-time flavour to street life.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 42
 
 Dried Seafood Street and Tonic Food Street
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -76,14 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a05a174c-5acc-4a36-83d9-01ca02eea616
+c5d8cde8-e9d8-45b1-a55f-d58b2bf72852
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T073143:635833423038631504Z
+20151124T100010Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,8 +143,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 31e4d11e-824c-44dc-b67c-1d0e97074ca7
+revision: 3747862c-15f8-4406-a035-c083b74ae3e5
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 7
+
+海味参茸燕窝街
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -110,6 +166,34 @@ key: content title
 content-length: 15
 
 传统行业为街头生活增添怀旧风貌
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+海味参茸燕窝街
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 16
+
+传统行业为街头生活增添怀旧风貌。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+海味参茸燕窝街
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 16
+
+传统行业为街头生活增添怀旧风貌。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -130,14 +214,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-31e4d11e-824c-44dc-b67c-1d0e97074ca7
+3747862c-15f8-4406-a035-c083b74ae3e5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095608:635828325686521425Z
+20151124T052632Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -148,8 +232,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 70ed2061-469c-4e3d-a4d7-fc460ebd0c81
+revision: 962e6e7e-06f7-421b-8efd-c5f471d180f7
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 7
+
+海味參茸燕窩街
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -164,6 +255,34 @@ key: content title
 content-length: 15
 
 傳統行業為街頭生活增添懷舊風貌
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+海味參茸燕窩街
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 16
+
+傳統行業為街頭生活增添懷舊風貌。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+海味參茸燕窩街
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 16
+
+傳統行業為街頭生活增添懷舊風貌。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -184,14 +303,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-70ed2061-469c-4e3d-a4d7-fc460ebd0c81
+962e6e7e-06f7-421b-8efd-c5f471d180f7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T095450:635828324906226795Z
+20151124T052653Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

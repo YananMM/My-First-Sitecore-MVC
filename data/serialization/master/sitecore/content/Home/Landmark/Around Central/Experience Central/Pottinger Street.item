@@ -24,6 +24,20 @@ content-length: 58
 
 <image mediaid="{936DAECE-BF0D-4C17-8776-378411519D35}" />
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.155330
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.282952
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 4d646415-a240-406e-8a94-aa127ce07502
+revision: d6a79793-47d4-4093-8786-e31e23adfe64
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -46,9 +60,9 @@ Pottinger Street
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 108
+content-length: 175
 
-<link linktype="external" url="http://www.amo.gov.hk/en/trails_sheungwan2.php?tid=3 " anchor="" target="" />
+<link text="http://www.amo.gov.hk/en/trails_sheungwan2.php?tid=3 " linktype="external" url="http://www.amo.gov.hk/en/trails_sheungwan2.php?tid=3 " anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -64,12 +78,47 @@ content-length: 48
 
 ‘Stone Slab Street’ brings old Hong Kong to life
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 16
+
+Pottinger Street
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 49
+
+‘Stone Slab Street’ brings old Hong Kong to life.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 16
+
+Pottinger Street
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 49
+
+‘Stone Slab Street’ brings old Hong Kong to life.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 16
 
 Pottinger Street
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -83,14 +132,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4d646415-a240-406e-8a94-aa127ce07502
+d6a79793-47d4-4093-8786-e31e23adfe64
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T074525:635833431254391419Z
+20151124T095845Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,15 +150,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f2388083-dbd5-47b3-ae58-de617fcf69af
+revision: 41449859-0938-4991-a0f6-456d5607f2e9
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 4
+
+砵典乍街
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 128
+content-length: 215
 
-<link linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/trails_sheungwan2.php?tid=3" anchor="" target="" />
+<link text="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/trails_sheungwan2.php?tid=3" linktype="external" url="http://sc.lcsd.gov.hk/TuniS/www.amo.gov.hk/b5/trails_sheungwan2.php?tid=3" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -124,6 +180,34 @@ key: content title
 content-length: 10
 
 「石板街」活现老香港
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+砵典乍街
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 11
+
+「石板街」活现老香港。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 4
+
+砵典乍街
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 11
+
+「石板街」活现老香港。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -144,14 +228,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f2388083-dbd5-47b3-ae58-de617fcf69af
+41449859-0938-4991-a0f6-456d5607f2e9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093843:635828315232883511Z
+20151124T044924Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -162,15 +246,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: cc8b3a88-5f36-4c06-9ccb-5bcc482009b5
+revision: 9dfa1724-68d5-458b-bc5e-115ff793e8a3
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 4
+
+砵典乍街
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
 key: cover website
-content-length: 107
+content-length: 173
 
-<link linktype="external" url="http://www.amo.gov.hk/b5/trails_sheungwan2.php?tid=3" anchor="" target="" />
+<link text="http://www.amo.gov.hk/b5/trails_sheungwan2.php?tid=3" linktype="external" url="http://www.amo.gov.hk/b5/trails_sheungwan2.php?tid=3" anchor="" target="_blank" />
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -185,6 +276,34 @@ key: content title
 content-length: 13
 
 「石板街」把老香港活現眼前
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+砵典乍街
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 14
+
+「石板街」把老香港活現眼前。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 4
+
+砵典乍街
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 14
+
+「石板街」把老香港活現眼前。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -205,14 +324,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cc8b3a88-5f36-4c06-9ccb-5bcc482009b5
+9dfa1724-68d5-458b-bc5e-115ff793e8a3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T093819:635828314999540165Z
+20151124T044827Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

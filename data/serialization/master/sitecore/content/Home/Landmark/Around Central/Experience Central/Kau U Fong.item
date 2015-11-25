@@ -24,6 +24,20 @@ content-length: 58
 
 <image mediaid="{679A1529-DB2B-4829-9C62-D5EBD02563AB}" />
 ----field----
+field: {3B7851A3-5D70-4F02-BCED-0A7E9B7CF6D9}
+name: Map Longitude
+key: map longitude
+content-length: 10
+
+114.153125
+----field----
+field: {0C295F12-1B0E-4873-A718-0F31C341400F}
+name: Map Latitude
+key: map latitude
+content-length: 9
+
+22.284424
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -33,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: b662a4bc-d646-4b0a-8b17-50238f29c8b3
+revision: 83a3cf07-17db-40a0-a601-416969d22348
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -57,12 +71,47 @@ content-length: 88
 
 A slice of HK life from traditional to chic – and an opportunity to taste famous noodles
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 10
+
+Kau U Fong
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 89
+
+A slice of HK life from traditional to chic – and an opportunity to taste famous noodles.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 10
+
+Kau U Fong
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 89
+
+A slice of HK life from traditional to chic – and an opportunity to taste famous noodles.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 10
 
 Kau U Fong
+----field----
+field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
+name: See More Label
+key: see more label
+content-length: 25
+
+EXPLORE OTHER ATTRACTIONS
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -76,14 +125,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b662a4bc-d646-4b0a-8b17-50238f29c8b3
+83a3cf07-17db-40a0-a601-416969d22348
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T074906:635833433463367765Z
+20151124T095923Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -94,8 +143,15 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: ee5948fe-9fbe-4fe4-82d4-88324e52acdd
+revision: 10517c88-bd74-4efd-a07f-0b4001494210
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 3
+
+九如坊
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -110,6 +166,34 @@ key: content title
 content-length: 24
 
 体验从传统到时尚的香港生活片段，一尝本地著名面食
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+九如坊
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 25
+
+体验从传统到时尚的香港生活片段，一尝本地著名面食。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 3
+
+九如坊
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 25
+
+体验从传统到时尚的香港生活片段，一尝本地著名面食。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -130,14 +214,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ee5948fe-9fbe-4fe4-82d4-88324e52acdd
+10517c88-bd74-4efd-a07f-0b4001494210
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100409:635828330494046400Z
+20151124T060834Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -148,8 +232,15 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 4b6ec617-dd06-4047-8dc3-c2f2e66e2236
+revision: c420937f-eb37-44c7-ab3c-8e702cb9d5d4
 
+----field----
+field: {24270371-41B8-4BB9-A09C-A62303A7587E}
+name: Article Headline
+key: article headline
+content-length: 3
+
+九如坊
 ----field----
 field: {8411563D-F68D-41CB-A1AB-434129407504}
 name: Cover Address
@@ -164,6 +255,34 @@ key: content title
 content-length: 24
 
 體驗從傳統到時尚的香港生活片段，一嚐本地著名麵食
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+九如坊
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 25
+
+體驗從傳統到時尚的香港生活片段，一嚐本地著名麵食。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 3
+
+九如坊
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 25
+
+體驗從傳統到時尚的香港生活片段，一嚐本地著名麵食。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -184,14 +303,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4b6ec617-dd06-4047-8dc3-c2f2e66e2236
+c420937f-eb37-44c7-ab3c-8e702cb9d5d4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T100356:635828330361128797Z
+20151124T060814Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

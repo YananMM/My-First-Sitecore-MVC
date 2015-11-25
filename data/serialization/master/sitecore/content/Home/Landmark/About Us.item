@@ -47,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: d33af0a6-248f-4b66-8fd7-6d50b355e0a8
+revision: c8c984d1-9766-40c1-b125-e4597bc7c0a6
 
 ----field----
 field: {21B45344-DBEB-439F-B9B4-FADCD4757389}
@@ -79,6 +79,13 @@ content-length: 31
 
 The finest heritage, since 1904
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 31
+
+Luxury Shopping Mall in Central
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
@@ -89,9 +96,9 @@ content-length: 0
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 142
+content-length: 158
 
-LANDMARK represents top-tier luxury shopping and lifestyle experiences, bringing the ultimate shopping experience to the discerning customers.
+LANDMARK represents the epitome of top-tier luxury shopping and lifestyle experiences offering the finest stores and restaurants in Central area of Hong Kong.
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -103,9 +110,9 @@ Luxury Shopping Mall in Central | LANDMARK
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 142
+content-length: 158
 
-LANDMARK represents top-tier luxury shopping and lifestyle experiences, bringing the ultimate shopping experience to the discerning customers.
+LANDMARK represents the epitome of top-tier luxury shopping and lifestyle experiences offering the finest stores and restaurants in Central area of Hong Kong.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -147,14 +154,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d33af0a6-248f-4b66-8fd7-6d50b355e0a8
+c8c984d1-9766-40c1-b125-e4597bc7c0a6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151111T031051:635828082511842629Z
+20151124T082338Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -165,7 +172,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 75bd9c61-c8b4-4c77-bc20-a7a5d06a75fc
+revision: cec4c1f6-8aaa-48ad-bd61-21386eb2f70b
 
 ----field----
 field: {21B45344-DBEB-439F-B9B4-FADCD4757389}
@@ -193,9 +200,16 @@ content-length: 4
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
 key: content title
-content-length: 157
+content-length: 12
 
-<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">始自1904年的辉煌历史</p>
+始自1904年的辉煌历史
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 8
+
+中环豪华购物中心
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
@@ -214,9 +228,9 @@ content-length: 49
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
 key: social share title
-content-length: 15
+content-length: 8
 
-中环豪华购物中心 | 置地广塲
+中环豪华购物中心
 ----field----
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
@@ -242,9 +256,10 @@ content-length: 6
 field: {F9086B75-3D7A-4CC8-980D-612CE5CD240B}
 name: One Landmark Content
 key: one landmark content
-content-length: 56
+content-length: 68
 
-包罗全球最为独特出众的品牌；208家最优质的名店与食府，全可在4座地标建筑和1个矜贵名号中找到 ── 置地广场。
+<p>包罗全球最为独特出众的品牌；208家最优质的名店与食府，全可在4座地标建筑和1个矜贵名号中找到 ── 置地广场。</p>
+<br>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -272,14 +287,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-75bd9c61-c8b4-4c77-bc20-a7a5d06a75fc
+cec4c1f6-8aaa-48ad-bd61-21386eb2f70b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T070110Z
+20151124T082806Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -290,7 +305,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 20cd83bf-c761-44ec-b2fb-70f71a5be451
+revision: af5f7c50-6de9-41db-a920-ed76466369a4
 
 ----field----
 field: {21B45344-DBEB-439F-B9B4-FADCD4757389}
@@ -321,6 +336,13 @@ content-length: 12
 
 始自1904年的輝煌歷史
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 8
+
+中環豪華購物中心
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
@@ -338,9 +360,9 @@ content-length: 49
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
 key: social share title
-content-length: 15
+content-length: 8
 
-中環豪華購物中心 | 置地廣塲
+中環豪華購物中心
 ----field----
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
@@ -366,9 +388,9 @@ content-length: 6
 field: {F9086B75-3D7A-4CC8-980D-612CE5CD240B}
 name: One Landmark Content
 key: one landmark content
-content-length: 200
+content-length: 62
 
-<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; text-align: left; direction: ltr; unicode-bidi: embed; word-break: normal;">包羅全球最獨特出眾的品牌；208家最優質的名店與食府，全可在4座地標建築和1個矜貴名字中找到 ── 置地廣塲。</p>
+<p>包羅全球最獨特出眾的品牌；208家最優質的名店與食府，全可在4座地標建築和1個矜貴名字中找到 ── 置地廣塲。</p>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -396,14 +418,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-20cd83bf-c761-44ec-b2fb-70f71a5be451
+af5f7c50-6de9-41db-a920-ed76466369a4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151111T110624Z
+20151124T082749Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
