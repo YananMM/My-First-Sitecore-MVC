@@ -74,7 +74,7 @@
                     <div class="col-sm-4">
                         <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">
                             <div class="gd-promotion-box">
-                                <img data-src="@LandmarkHelper.GetCallOutImage(item)" />
+                                <img data-src="@Html.Sitecore().ImageFieldSrc("Article Portrait Callout Image", item)" />
                                 <h4>@Html.Sitecore().Field("Article Headline", item)</h4>
                                 @{
                     DateField itemDate = item.Fields["Article Date"];
@@ -99,7 +99,7 @@
                     <div class="col-sm-4">
                         <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">
                             <div class="gd-promotion-box">
-                                <img data-src="@LandmarkHelper.GetCallOutImage(item)" />
+                                <img data-src="@Html.Sitecore().ImageFieldSrc("Article Portrait Callout Image", item)" />
                                 <h4>@Html.Sitecore().Field("Article Headline", item)</h4>
                                 @{
                     DateField itemDate = item.Fields["Article Date"];

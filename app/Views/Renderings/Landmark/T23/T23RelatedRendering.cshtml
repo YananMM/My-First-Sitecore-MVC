@@ -27,7 +27,7 @@
                         var image = LandmarkHelper.GetCallOutImage(item.Item);
                         <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.Item))">
                             <div class="col-sm-6 clearfix">
-                                <img data-src="@image">
+                                <img data-src="@Html.Sitecore().ImageFieldSrc("Article Portrait Callout Image", item.Item)">
                                 <h5>@Html.Sitecore().Field("Category Name", item.Item.Parent)</h5>
                                 <h4>@Html.Sitecore().Field("Article Headline", item.Item)</h4>
                             </div>
