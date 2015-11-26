@@ -10,6 +10,6 @@
     @foreach (var item in footerList)
     {
         var target = LandmarkHelper.GetLinkTarget(item, "Link URL");
-        <li>@Html.Sitecore().Field("Link URL", item, new { text = item.Fields["Link Text"],target=target })</li>
+        <li>@Html.Sitecore().LinkField("Link URL", item, new { text = item.Fields["Link Text"],target=target })</li>
     }
 </ul>

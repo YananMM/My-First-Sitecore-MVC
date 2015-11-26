@@ -65,6 +65,11 @@ namespace Landmark.Helper
             return fileUrl;
         }
 
+        public static HtmlString LinkField(this SitecoreHelper helper, string fieldName, Item item, object parameters)
+        {
+            return new HtmlString (helper.Field(fieldName, item, parameters).ToString().Replace("/zh-hk", "/tc"));
+        }
+
         public static HtmlString DynamicPlaceholder(this Sitecore.Mvc.Helpers.SitecoreHelper helper, string dynamicKey)
         {
             var currentRenderingId = RenderingContext.Current.Rendering.UniqueId;
