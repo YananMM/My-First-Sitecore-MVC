@@ -950,45 +950,50 @@
 				});
 			});
 			
-			if (typeof Hammer != "undefined"){
-				// Pinch zoom
-				var hammer = new Hammer(self.map[0], {
-					transform_always_block: true,
-					drag_block_horizontal: true,
-					drag_block_vertical: true
-				});
+			if (!/MSIE 8.0/.test(navigator.userAgent)){
+				Modernizr.load({
+					load: "/files/landmark/js/lib/svgmap/js/hammer.min.js",
+					callback: function(){
+						// Pinch zoom
+						var hammer = new Hammer(self.map[0], {
+							transform_always_block: true,
+							drag_block_horizontal: true,
+							drag_block_vertical: true
+						});
 
-				/* hammer fix */
-				self.map.on('touchstart', function(e) {
-					if (e.originalEvent.touches.length > 1) hammer.get('pinch').set({ enable: true });
-				});
+						/* hammer fix */
+						self.map.on('touchstart', function(e) {
+							if (e.originalEvent.touches.length > 1) hammer.get('pinch').set({ enable: true });
+						});
 
-				self.map.on('touchend', function(e) {
-					hammer.get('pinch').set({ enable: false });
-				});
-				/* hammer fix ends */
+						self.map.on('touchend', function(e) {
+							hammer.get('pinch').set({ enable: false });
+						});
+						/* hammer fix ends */
 
-				
-				var scale=1, last_scale;
-				hammer.on('pinchstart', function(e) {
-					self.dragging = false;
+						
+						var scale=1, last_scale;
+						hammer.on('pinchstart', function(e) {
+							self.dragging = false;
 
-					scale = self.scale / self.fitscale;
-					last_scale = scale;
-				});
+							scale = self.scale / self.fitscale;
+							last_scale = scale;
+						});
 
-				hammer.on('pinch', function(e) {
-					self.dragging = true;
+						hammer.on('pinch', function(e) {
+							self.dragging = true;
 
-					if (e.scale != 1) scale = Math.max(1, Math.min(last_scale * e.scale, 100));
-					
-					var oldscale = self.scale;
-					self.scale = normalizeScale(scale * self.fitscale);
+							if (e.scale != 1) scale = Math.max(1, Math.min(last_scale * e.scale, 100));
+							
+							var oldscale = self.scale;
+							self.scale = normalizeScale(scale * self.fitscale);
 
-					self.x = normalizeX(self.x - (e.center.x - self.container.offset().left - self.x) * (self.scale/oldscale - 1));
-					self.y = normalizeY(self.y - (e.center.y - self.y) * (self.scale/oldscale - 1)); // - self.container.offset().top
+							self.x = normalizeX(self.x - (e.center.x - self.container.offset().left - self.x) * (self.scale/oldscale - 1));
+							self.y = normalizeY(self.y - (e.center.y - self.y) * (self.scale/oldscale - 1)); // - self.container.offset().top
 
-					moveTo(self.x, self.y, self.scale, 100);
+							moveTo(self.x, self.y, self.scale, 100);
+						});
+					}
 				});
 			}
 		}
