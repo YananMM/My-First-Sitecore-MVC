@@ -54,7 +54,7 @@
             {
                 @*Item article = child.TemplateID.ToString() == ItemGuids.T4PageTemplate ? child : ((ReferenceField)child.Fields["Reference Item"]).TargetItem;*@
                 ReferenceField typeField = ((ReferenceField) child.Fields["Article Type"]);
-                string imagesrc = LandmarkHelper.GetCallOutImage(child);
+                string imagesrc = LandmarkHelper.GetCallOutImageForWaterfall(child);
                 <div class="gd-promo-box">
                     <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(child))" class="gd-hover-img">
                         <div class="gd-hover-img-area">
