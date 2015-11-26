@@ -66,7 +66,7 @@
                         <h1>@Html.Sitecore().Field("Artist Name")</h1>
                         <p>@Html.Sitecore().Field("Artist Birthday")</p>
                     </div>
-                    <div class="gd-longarticle" data-text-on="READ MORE +" data-text-off="LESS -">
+                    <div class="gd-longarticle" data-text-on="@Html.Sitecore().Field("Glossary Value", Sitecore.Context.Database.GetItem(ItemGuids.ReadMoreItem)) +" data-text-off="@Html.Sitecore().Field("Glossary Value", Sitecore.Context.Database.GetItem(ItemGuids.LessItem)) -">
                         <p>@Html.Sitecore().Field("Artist Description")</p>
                     </div>
                 </div>
