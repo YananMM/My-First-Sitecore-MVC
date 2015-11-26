@@ -38,8 +38,8 @@
                 @foreach (Item brand in brandsByBuilding)
                 {
                     string src = Html.Sitecore().ImageFieldSrc("Brand Image", brand);
-                    <a title='@Html.Sitecore().Field("Brand Title", brand)' class="brand-box" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(brand))">
-                        <img data-src="@src" alt='@Html.Sitecore().Field("Brand Title", brand)' class="lazy-loaded">
+                    <a title='@PreventCustomReplace(Html.Sitecore().Field("Brand Title", brand))' class="brand-box" href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(brand))">
+                        <img data-src="@src" alt='@PreventCustomReplace(Html.Sitecore().Field("Brand Title", brand))' class="lazy-loaded">
                         <span>@Html.Sitecore().Field("Brand Title", brand)</span>
                     </a>
                 }

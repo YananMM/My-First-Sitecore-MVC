@@ -12,12 +12,12 @@
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
-            <h1>@Sitecore.Context.Item.Parent["Page Title"].ToUpper()</h1>
+            <h2>@Sitecore.Context.Item.Parent["Page Title"].ToUpper()</h2>
         </div>
     </div>
 
     <div class="gd-newsdetails">
-        <h3>@Html.Sitecore().Field("Article Headline")</h3>
+        <h1>@Html.Sitecore().Field("Article Headline")</h1>
         @if (!string.IsNullOrEmpty(date.Value))
         {
             <h5>@LandmarkHelper.ToValidDateTime(date).ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</h5>

@@ -36,7 +36,7 @@
             <div class="col-sm-6 pull-left">
                 <div class="gd-content-details">
                     <div class="gd-content-details-heading hidden-xs">
-                        <h3>@Html.Sitecore().Field("Article Headline", currentItem)</h3>
+                        <h1>@Html.Sitecore().Field("Article Headline", currentItem)</h1>
                         @if (!string.IsNullOrEmpty(storyDate.Value))
                         {
                             <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>

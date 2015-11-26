@@ -1845,9 +1845,9 @@ $(document).ready(function() {
    **********************************************************************************************************/
   if ($('.gd-carousel-info').length) {
     if ( isIE8() ) {
-      // for bottom slider, use normal background iamge
+      // for bottom slider, emulating background contain
       $('.gd-carousel-info:not(.gd-mainimage) .carousel-image').each(function() {
-        $(this).addClass('fireonce').css({'background': 'url(' + $(this).data('bgsrc') + ') center 0 no-repeat', 'background-size': 'cover !important' });
+        $(this).addClass('emulating-contain-ie8').append('<img src="' + $(this).data('bgsrc') + '" />');
       });
       
       // Information of emulating target's wrapper
