@@ -4581,6 +4581,17 @@ h4 a:active {
 .gd-carousel-info .carousel-inner .item > .carousel-image.gd-lightbox-video {
   position: relative;
 }
+.gd-carousel-info .carousel-inner .item > .emulating-contain-ie8 {
+  height: 320px;
+  line-height: 320px;
+  overflow: hidden;
+  text-align: right;
+}
+.gd-carousel-info .carousel-inner .item > .emulating-contain-ie8 img {
+  display: inline-block;
+  max-height: 320px;
+  max-width: 480px;
+}
 .gd-carousel-info .carousel-inner .carousel-caption {
   margin: 0;
   padding: 0;

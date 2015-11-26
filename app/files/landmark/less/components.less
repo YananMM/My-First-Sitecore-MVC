@@ -617,7 +617,17 @@ h1,h2,h3,h4{
           >.carousel-image.gd-lightbox-video{
             position: relative;
           }
-
+        }
+        .item > .emulating-contain-ie8 {
+          height: 320px;;
+          line-height: 320px;
+          overflow: hidden;
+          text-align: right;
+          img {
+            display: inline-block;
+            max-height: 320px;
+            max-width: 480px;
+          }
         }
         .carousel-caption {
           margin: 0;
