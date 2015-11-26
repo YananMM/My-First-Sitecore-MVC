@@ -10,7 +10,7 @@
     var helper = new NowAtLandmarkHelper();
     var latestItem = helper.GetLatestArticle();
     DateField date = ((DateField) latestItem.Fields["Article Date"]);
-    string src = LandmarkHelper.GetCallOutImage(latestItem);
+    string src = LandmarkHelper.GetCallOutImageForWaterfall(latestItem);
 }
 <div class="container">
     <div class="gd-pagetitle">

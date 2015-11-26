@@ -6524,7 +6524,7 @@ button.close {
 @font-face {
   font-family: "meiryo";
   src: url(/files/landmark/fonts/Meiryo.eot);
-  src: local("Meiryo"), url(/files/landmark/fonts/Meiryo.ttf) format("truetype");
+  src: local("Meiryo"), url(/files/landmark/fonts/Meiryo.ttf) format("truetype"), url(/files/landmark/fonts/Meiryo.woff) format("woff");
   
   /* non-IE */
 }
