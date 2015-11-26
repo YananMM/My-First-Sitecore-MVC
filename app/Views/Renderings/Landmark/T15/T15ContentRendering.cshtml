@@ -24,11 +24,14 @@
     <div class="gd-promotion">
         <div class="gd-promo-filter">
             <ul class="hidden-xs">
-                <li class="active"><a href="javascript:;" data-filter="*">
-                    @{
-                        var allTextItem = Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem);
-                    }
-                    @Html.Sitecore().Field("Glossary Value", allTextItem)</a></li>
+                <li class="active">
+                    <a href="javascript:;" data-filter="*">
+                        @{
+                            var allTextItem = Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem);
+                        }
+                        @Html.Sitecore().Field("Glossary Value", allTextItem)
+                    </a>
+                </li>
                 @if (experienceTypes.Count != 0)
                 {
                     foreach (var item in experienceTypes)
@@ -64,26 +67,26 @@
                                          }">
                     <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">
                         @{
-                            var image = LandmarkHelper.GetCallOutImage(item);
+                            var image = LandmarkHelper.GetCallOutImageForWaterfall(item);
                         }
                         <img src="@image">
                     </a>
                     <h5>
                         @{
-                                         int i = 1;
-                                         foreach (var id in types)
-                                         {
-                                             var type = Sitecore.Context.Database.GetItem(id);
-                                             if (type != null)
-                                             {
-                                                <text>@type.Fields["Tag Name"].ToString().ToUpper()</text>
-                                             }
-                                             if (i < types.Count())
-                                             {
-                                                <text>|</text>
-                                             }
-                                             i++;
-                                         }
+                int i = 1;
+                foreach (var id in types)
+                {
+                    var type = Sitecore.Context.Database.GetItem(id);
+                    if (type != null)
+                    {
+                        <text>@type.Fields["Tag Name"].ToString().ToUpper()</text>
+                    }
+                    if (i < types.Count())
+                    {
+                        <text>|</text>
+                    }
+                    i++;
+                }
                         }
                     </h5>
                     <h3>@item["Article Headline"]</h3>
@@ -91,7 +94,7 @@
             }
         </div>
         <div class="navigation gd-promo-more">
-            <a href="?page=2">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem)) +</a>
+            <a href="?page=2">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem)) +</a>
         </div>
     </div>
     @Html.Sitecore().Placeholder("also-like")

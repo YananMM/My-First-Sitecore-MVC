@@ -477,6 +477,29 @@ namespace Landmark.Helper
             return imageURL;
         }
 
+        public static string GetCallOutImageForRelated(Item item)
+        {
+            string imageURL = "";
+            ImageField imageField = item.Fields["Article Callout Image"];
+            if (imageField != null)
+            {
+                if (imageField.MediaItem != null)
+                {
+                    MediaItem image = new MediaItem(imageField.MediaItem);
+                    imageURL = Sitecore.StringUtil.EnsurePrefix('/',
+                        Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
+                    return imageURL;
+                }
+            }
+            var sliders = GetItemByTemplate(item, ItemGuids.SlideObjectTemplate);
+            if (sliders != null)
+            {
+                if (sliders.Any())
+                    imageURL = ImageFieldSrc("Slide Image", sliders.FirstOrDefault());
+            }
+            return imageURL;
+        }
+
         public static string GetCurrentItemUrl()
         {
             string host = System.Web.HttpContext.Current.Request.Url.Scheme +
