@@ -442,6 +442,41 @@ namespace Landmark.Helper
             return imageURL;
         }
 
+
+        public static string GetCallOutImageForWaterfall(Item item)
+        {
+            string imageURL = "";
+            ImageField imageField = item.Fields["Article Callout Image"];
+            if (imageField != null)
+            {
+                if (imageField.MediaItem != null)
+                {
+                    MediaItem image = new MediaItem(imageField.MediaItem);
+                    imageURL = Sitecore.StringUtil.EnsurePrefix('/',
+                        Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
+                    return imageURL;
+                }
+            }
+            ImageField imagePortraitField = item.Fields["Article Portrait Callout Image"];
+            if (imagePortraitField != null)
+            {
+                if (imagePortraitField.MediaItem != null)
+                {
+                    MediaItem image = new MediaItem(imagePortraitField.MediaItem);
+                    imageURL = Sitecore.StringUtil.EnsurePrefix('/',
+                        Sitecore.Resources.Media.MediaManager.GetMediaUrl(image));
+                    return imageURL;
+                }
+            }
+            var sliders = GetItemByTemplate(item, ItemGuids.SlideObjectTemplate);
+            if (sliders != null)
+            {
+                if (sliders.Any())
+                    imageURL = ImageFieldSrc("Slide Image", sliders.FirstOrDefault());
+            }
+            return imageURL;
+        }
+
         public static string GetCurrentItemUrl()
         {
             string host = System.Web.HttpContext.Current.Request.Url.Scheme +
@@ -522,11 +557,8 @@ namespace Landmark.Helper
             LinkField linkField = item.Fields[linkName];
             if (linkField != null)
             {
-                if (linkField.TargetItem != null || !string.IsNullOrEmpty(linkField.Url))
-                {
-                    if (linkField.Target == "New Browser")
-                        target = "_blank";
-                }
+                if (linkField.Target == "New Browser" || linkField.Target == "_blank")
+                    target = "_blank";
             }
             return target;
         }

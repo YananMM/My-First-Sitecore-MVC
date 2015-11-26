@@ -59,19 +59,8 @@
         
             @if (artpieces.Count != 0)
             {
-                List<List<Item>> listGroup = new List<List<Item>>();
-                int j = 4;
-                for (int i = 0; i < artpieces.Count; i += 4)
-                {
-                    List<Item> cList = new List<Item>();
-                    cList = artpieces.Take(j).Skip(i).ToList();
-                    j += 4;
-                    listGroup.Add(cList);
-                }
-                foreach (List<Item> group in listGroup)
-                {
                     <div class="row">
-                    @foreach (Item piece in group)
+                    @foreach (Item piece in artpieces)
                     {
                         <div class="col-sm-3 text-center">
                                 <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(piece))" class="gd-hover-img">
@@ -89,7 +78,6 @@
                     </div>   
 
                 }
-                            }
     </div>
     <div class="navigation gd-promo-more">
         <a href="?building=@buildings.First().ID.ToString()&page=2">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeMoreGlossaryItem))</a>
