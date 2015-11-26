@@ -96,7 +96,7 @@
 
             @foreach (Item detailedarticle in articleDetailObjects)
             {
-                string imagesrc = LandmarkHelper.GetCallOutImage(detailedarticle);
+                string imagesrc = LandmarkHelper.GetCallOutImageForWaterfall(detailedarticle);
                 MultilistField brandField = detailedarticle.Fields["Brand"];
                 ID brand= new ID();
                 string alphabet = string.Empty;
@@ -155,7 +155,7 @@
 
             @foreach (Item article in articleObjects)
             {
-                string imagesrc = LandmarkHelper.GetCallOutImage(article);
+                string imagesrc = LandmarkHelper.GetCallOutImageForWaterfall(article);
                 MultilistField brandField = article.Fields["Brand"];
                 ID brand = new ID();
                 string alphabet = string.Empty;

@@ -557,11 +557,8 @@ namespace Landmark.Helper
             LinkField linkField = item.Fields[linkName];
             if (linkField != null)
             {
-                if (linkField.TargetItem != null || !string.IsNullOrEmpty(linkField.Url))
-                {
-                    if (linkField.Target == "New Browser")
-                        target = "_blank";
-                }
+                if (linkField.Target == "New Browser" || linkField.Target == "_blank")
+                    target = "_blank";
             }
             return target;
         }
