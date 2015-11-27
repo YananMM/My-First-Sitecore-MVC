@@ -1319,9 +1319,8 @@ $(document).ready(function() {
       $('#gd-art-gallery').empty();
       var nextpageurl = $('#gd-art-gallery + .navigation a').attr('href').replace(/\?building=[^&]*/, '?building=' + gdAreaId);
       $('#gd-art-gallery + .navigation a').attr('href', nextpageurl);
-      // $("#gd-art-gallery").infinitescroll('updatePath', nextpageurl);
-      // $("#gd-art-gallery").infinitescroll('retrieve');
-      $('#gd-art-gallery + .navigation a').click();
+      $("#gd-art-gallery").infinitescroll('updatePath', nextpageurl);
+      $("#gd-art-gallery").infinitescroll('retrieve');
     }
     $('#gdfloorlist .list-group-item').click(function() {
       var gdAreaId = $(this).data('location');
@@ -1845,9 +1844,9 @@ $(document).ready(function() {
    **********************************************************************************************************/
   if ($('.gd-carousel-info').length) {
     if ( isIE8() ) {
-      // for bottom slider, use normal background iamge
+      // for bottom slider, emulating background contain
       $('.gd-carousel-info:not(.gd-mainimage) .carousel-image').each(function() {
-        $(this).addClass('fireonce').css({'background': 'url(' + $(this).data('bgsrc') + ') center 0 no-repeat', 'background-size': 'cover !important' });
+        $(this).addClass('emulating-contain-ie8').append('<img src="' + $(this).data('bgsrc') + '" />');
       });
       
       // Information of emulating target's wrapper

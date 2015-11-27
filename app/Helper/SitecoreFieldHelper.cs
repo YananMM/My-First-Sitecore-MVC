@@ -67,7 +67,7 @@ namespace Landmark.Helper
 
         public static HtmlString LinkField(this SitecoreHelper helper, string fieldName, Item item, object parameters)
         {
-            return new HtmlString (helper.Field(fieldName, item, parameters).ToString().Replace("/zh-hk", "/tc"));
+            return new HtmlString(helper.Field(fieldName, item, parameters).ToString().Replace("/zh-hk", "/tc").Replace("/zh-cn", "/sc"));
         }
 
         public static HtmlString DynamicPlaceholder(this Sitecore.Mvc.Helpers.SitecoreHelper helper, string dynamicKey)

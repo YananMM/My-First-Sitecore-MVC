@@ -66,7 +66,7 @@ namespace Landmark.Service
                                                        category = "floor-" + floor.ID.ToShortID(),
                                                        description = "",
                                                        id = location.Fields["Svg Id"].Value,
-                                                       pin = "hide",
+                                                       pin = IfBrowserIsIE8() ? "orange" : "hide",
                                                        x = location.Fields["LocationX"].Value,
                                                        y = location.Fields["LocationY"].Value,
                                                        workdayhours = location.Fields["Opening Hours"].Value,
