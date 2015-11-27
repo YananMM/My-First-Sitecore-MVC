@@ -584,7 +584,7 @@ namespace Landmark.Helper
 
         public static string SvgIdToShopId(this string svgId)
         {
-            return new Regex("-").Replace(svgId.Replace("_x5F_", "&").ToUpper(), " ", 1);
+            return new Regex("-").Replace(svgId.ToUpper().Replace("_x5F_", "&"), " ", 1);
         }
     }
 }
