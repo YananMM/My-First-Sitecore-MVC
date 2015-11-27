@@ -8079,6 +8079,19 @@ dl.gd-content-details-tags dd a:active {
     position: static;
   }
 }
+.t27 .gd-content-details h1 {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .t27 .gd-content-details h1 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1000px) {
+  .t27 .gd-content-details h1 {
+    font-size: 26px;
+  }
+}
 .t27 .gd-exclusive {
   margin: 30px 0 80px;
 }
@@ -8100,6 +8113,19 @@ dl.gd-content-details-tags dd a:active {
 }
 .t24 .gd-content-details {
   margin-bottom: 30px;
+}
+.t24 .gd-content-details h1 {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  .t24 .gd-content-details h1 {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1000px) {
+  .t24 .gd-content-details h1 {
+    font-size: 26px;
+  }
 }
 .t24 .gd-content-details .table-responsive table tr > th {
   width: 40%;
