@@ -1098,7 +1098,7 @@ $(document).ready(function() {
         } else {
           gdMenuStatus = '';
         }
-        gdShopHtml += '<a ' + gdMenuStatus + 'data-shopid="' + looper + '" data-location="' + window.gdFloorData.levels[floorNo].locations[looper].id + '" href="javascript:;"><span class="title">' + window.gdFloorData.levels[floorNo].locations[looper].title + '</span><span class="id">' + window.gdFloorData.levels[floorNo].locations[looper].area + '</span></a>';
+        gdShopHtml += '<a ' + gdMenuStatus + 'data-shopid="' + looper + '" data-location="' + window.gdFloorData.levels[floorNo].locations[looper].id + '" href="javascript:;"><span class="title">' + window.gdFloorData.levels[floorNo].locations[looper].title + '</span><span class="id">' + window.gdFloorData.levels[floorNo].locations[looper].wherelocationmobile + '</span></a>';
       }
       if ($(window).width() < 768) {
         // For mobile
@@ -1118,7 +1118,7 @@ $(document).ready(function() {
       var gdShopId   = $('#gd-shops>.active').data('shopid');
       var gdShop     = window.gdFloorData.levels[gdFloorId].locations[gdShopId];
       $('#gd-shop-detail-title').html(gdShop.title);
-      $('#gd-shop-detail-where').html(gdShop.wherelocation);
+      $('#gd-shop-detail-where').html(isPhone() ? gdShop.wherelocationmobile : gdShop.wherelocation);
       $('#gd-shop-detail-wkt').html(gdShop.workdayhours);
       $('#gd-shop-detail-wdt').html(gdShop.weekendhours);
       $('#gd-shop-detail-addr').html(gdShop.address);

@@ -71,6 +71,7 @@ namespace Landmark.Service
                                                        y = location.Fields["LocationY"].Value,
                                                        workdayhours = location.Fields["Opening Hours"].Value,
                                                        wherelocation = (location.Fields["Address"].Value + "," + floor.Fields["Floor Title"].Value + "," + building.Fields["Building Title"].Value).DoCustomReplace(),
+                                                       wherelocationmobile = location.Fields["Svg Id"].Value.SvgIdToShopId(),
                                                        address = (building.Fields["Building Address"].Value).DoCustomReplace(),
                                                        href = LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(location))
                                                    }).ToList()

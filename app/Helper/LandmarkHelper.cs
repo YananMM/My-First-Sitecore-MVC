@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Net.Mail;
+using System.Text.RegularExpressions;
 using System.Web;
 using Landmark.Classes;
 using Landmark.Models;
@@ -581,5 +582,9 @@ namespace Landmark.Helper
             return socialTitle;
         }
 
+        public static string SvgIdToShopId(this string svgId)
+        {
+            return new Regex("-").Replace(svgId.Replace("_x5F_", "&").ToUpper(), " ", 1);
+        }
     }
 }

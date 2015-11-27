@@ -165,6 +165,7 @@ namespace Landmark.Models
         public string workdayhours;
         public string weekendhours;
         public string wherelocation;
+        public string wherelocationmobile;
         public string address;
         public string href;
     }
