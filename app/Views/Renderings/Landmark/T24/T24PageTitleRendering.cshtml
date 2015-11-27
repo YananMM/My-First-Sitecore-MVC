@@ -11,19 +11,18 @@
 }
 <div class="gd-pagetitle">
     <div class="gd-pagetitle-heading">
-        <h1>@Html.Sitecore().Field("Page Title", currentItem.Parent).ToString().ToUpper()</h1>
+        <h2>@Html.Sitecore().Field("Page Title", currentItem.Parent).ToString().ToUpper()</h2>
     </div>
 
     <div class="gd-pagetitle-menu hidden-xs">
-        <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(overviewPage))" @if (currentItem.ID.ToString() == ItemGuids.OverviewPage)
-        { <text>
-            class="active"
-        </text>   }>@Html.Sitecore().Field("Page Title", overviewPage).ToString().ToUpper()</a>
+        <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(overviewPage))" @if (currentItem.ID.ToString() == ItemGuids.OverviewPage) { <text>
+           class="active"
+           </text>     }>@Html.Sitecore().Field("Page Title", overviewPage).ToString().ToUpper()</a>
 
         <span class="gd-pagetitle-menu-gap">|</span>
         <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(valetParkingPage))" @if (currentItem.ID.ToString() == ItemGuids.ValetParkingPage) { <text>
            class="active"
-           </text>     }>@Html.Sitecore().Field("Page Title", valetParkingPage).ToString().ToUpper()</a>
+           </text>       }>@Html.Sitecore().Field("Page Title", valetParkingPage).ToString().ToUpper()</a>
     </div>
 
     <div class="gd-controls-m visible-xs">
@@ -31,7 +30,7 @@
             <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(overviewPage))">>@Html.Sitecore().Field("Page Title", overviewPage).ToString().ToUpper()</option>
             <option @if (Sitecore.Context.Item.ID.ToString() == valetParkingPage.ID.ToString()) { <text>
                     selected="selected"
-                    </text>   } value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(valetParkingPage))">
+                    </text>     } value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(valetParkingPage))">
                 @Html.Sitecore().Field("Page Title", valetParkingPage).ToString().ToUpper()
             </option>
         </select>

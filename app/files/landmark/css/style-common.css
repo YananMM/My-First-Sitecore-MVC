@@ -6529,9 +6529,11 @@ button.close {
   /* non-IE */
 }
 .font_meiryo {
-  font-family: "meiryo";
+  font-family: "meiryo" !important;
   margin: 0 !important;
   border: hidden !important;
+  font-size: inherit !important;
+  color: inherit !important;
 }
 /*** mobile Sprite ***/
 [class^="sprite-"],

@@ -4,11 +4,12 @@
 @using Sitecore.Data.Items
 @using Landmark.Models
 @model RenderingModel
-<div class="container">
-    <div class="gd-pagetitle">
+<div class="gd-pagetitle">
+    <div class="gd-pagetitle-heading">
         @Html.Sitecore().Placeholder("t34-pagetitle")
     </div>
 </div>
+
 <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-fixed" data-ride="carousel" data-cover-height="640">
     @Html.Sitecore().Placeholder("t34-slides")
     <!-- Caption -->
@@ -44,5 +45,5 @@
     </div>
     @Html.Sitecore().Placeholder("special-offers")
     @Html.Sitecore().Placeholder("about-hotel")
-   
+
 </div>
