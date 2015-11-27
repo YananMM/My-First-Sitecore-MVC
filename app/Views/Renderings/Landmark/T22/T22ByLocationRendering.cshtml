@@ -19,12 +19,16 @@
     var buildings = LandmarkHelper.GetAllBuildings();
     var building = helper.GetCurrentBuilding(Request["building"]);
     var page = Request["page"] ?? "1";
+    string svgId = "";
     List<Item> artpieces = new List<Item>();
     if (building != null)
     {
-        var svgId = building.Fields["Building Svg Id"];
-
-        artpieces = (svgId != null && !string.IsNullOrEmpty(svgId.Value)) ? helper.GetArtPieceByBuildingSvgId(svgId.Value, page) : new List<Item>();
+        var svgIdField = building.Fields["Building Svg Id"];
+        if (svgIdField != null)
+        {
+            svgId = svgIdField.Value;
+            artpieces = (!string.IsNullOrEmpty(svgId)) ? helper.GetArtPieceByBuildingSvgId(svgId, page) : new List<Item>();
+        }
     }
 }
 <div class="row">
@@ -80,7 +84,7 @@
                 }
     </div>
     <div class="navigation gd-promo-more">
-        <a href="?building=@buildings.First().ID.ToString()&page=2">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeMoreGlossaryItem))</a>
+        <a href="?building=@svgId&page=2">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeMoreGlossaryItem))</a>
     </div>
 </div>
 

@@ -1319,9 +1319,8 @@ $(document).ready(function() {
       $('#gd-art-gallery').empty();
       var nextpageurl = $('#gd-art-gallery + .navigation a').attr('href').replace(/\?building=[^&]*/, '?building=' + gdAreaId);
       $('#gd-art-gallery + .navigation a').attr('href', nextpageurl);
-      // $("#gd-art-gallery").infinitescroll('updatePath', nextpageurl);
-      // $("#gd-art-gallery").infinitescroll('retrieve');
-      $('#gd-art-gallery + .navigation a').click();
+      $("#gd-art-gallery").infinitescroll('updatePath', nextpageurl);
+      $("#gd-art-gallery").infinitescroll('retrieve');
     }
     $('#gdfloorlist .list-group-item').click(function() {
       var gdAreaId = $(this).data('location');
