@@ -31,7 +31,7 @@
 
                             <dl>
                                 <dt><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(levelone))">@Html.Sitecore().Field("Page Title", levelone)</a></dt>
-                                @foreach (Item leveltwo in levelone.Children)
+                                @foreach (Item leveltwo in levelone.Children.Where(i => i.Template.ID.ToString() == ItemGuids.ShoppingSubCategoryPageObject))
                                 {
                                     <dd><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(leveltwo))">@Html.Sitecore().Field("Page Title", leveltwo)</a></dd>
                                 }
@@ -44,7 +44,7 @@
 
                                 <dl>
                                     <dt><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(levelone))">@Html.Sitecore().Field("Page Title", levelone)</a></dt>
-                                    @foreach (Item leveltwo in levelone.Children)
+                                    @foreach (Item leveltwo in levelone.Children.Where(i => i.Template.ID.ToString() == ItemGuids.ShoppingSubCategoryPageObject))
                                     {
                                         <dd><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(leveltwo))">@Html.Sitecore().Field("Page Title", leveltwo)</a></dd>
                                     }
@@ -58,7 +58,7 @@
                             {
                                 <dl>
                                     <dt><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(levelone))">@Html.Sitecore().Field("Page Title", levelone)</a></dt>
-                                    @foreach (Item leveltwo in levelone.Children)
+                                    @foreach (Item leveltwo in levelone.Children.Where(i => i.Template.ID.ToString() == ItemGuids.ShoppingSubCategoryPageObject))
                                     {
                                         <dd><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(leveltwo))">@Html.Sitecore().Field("Page Title", leveltwo)</a></dd>
                                     }
@@ -97,7 +97,7 @@
 
                             <dl>
                                 <dt><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(levelone))">@Html.Sitecore().Field("Page Title", levelone)</a></dt>
-                                @foreach (Item leveltwo in levelone.Children)
+                                @foreach (Item leveltwo in levelone.Children.Where(i => i.Template.ID.ToString() == ItemGuids.ShoppingSubCategoryPageObject))
                                 {
                                     <dd><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(leveltwo))">@Html.Sitecore().Field("Page Title", leveltwo)</a></dd>
                                 }
@@ -110,7 +110,7 @@
 
                                 <dl>
                                     <dt><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(levelone))">@Html.Sitecore().Field("Page Title", levelone)</a></dt>
-                                    @foreach (Item leveltwo in levelone.Children)
+                                    @foreach (Item leveltwo in levelone.Children.Where(i => i.Template.ID.ToString() == ItemGuids.ShoppingSubCategoryPageObject))
                                     {
                                         <dd><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(leveltwo))">@Html.Sitecore().Field("Page Title", leveltwo)</a></dd>
                                     }
@@ -124,7 +124,7 @@
                             {
                                 <dl>
                                     <dt><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(levelone))">@Html.Sitecore().Field("Page Title", levelone)</a></dt>
-                                    @foreach (Item leveltwo in levelone.Children)
+                                    @foreach (Item leveltwo in levelone.Children.Where(i => i.Template.ID.ToString() == ItemGuids.ShoppingSubCategoryPageObject))
                                     {
                                         <dd><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(leveltwo))">@Html.Sitecore().Field("Page Title", leveltwo)</a></dd>
                                     }
