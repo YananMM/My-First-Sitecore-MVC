@@ -22,7 +22,7 @@
         </a>
         <div class="container">
 
-            <h3>@(((Item) Factory.GetDatabase("web").GetItem(ItemGuids.AlsoInItem)).Fields["Glossary Value"].Value.ToUpper()) @floor.Parent.Fields["Building Title"]@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ArtItem))</h3>
+            <h3>@(((Item) Factory.GetDatabase("web").GetItem(ItemGuids.AlsoInItem)).Fields["Glossary Value"].Value.ToUpper()) @floor.Parent.Fields["Building Title"]&nbsp;@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ArtItem))</h3>
             <div class="gd-showcase-content">
                 <ul class="gd-showcase-items clearfix">
 

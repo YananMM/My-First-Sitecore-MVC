@@ -5,7 +5,8 @@
 @using Sitecore.Data.Items
 @model RenderingModel
 @{
-    MultilistField brandsYouMayAlsoLikeField = Sitecore.Context.Item.Fields["Related Brands"];
+    var currentItem = Sitecore.Context.Item;
+    MultilistField brandsYouMayAlsoLikeField = currentItem.Fields["Related Brands"];
     List<Item> brandsYouMayAlsoLike = new List<Item>();
     if (brandsYouMayAlsoLikeField.TargetIDs.Any())
     {
@@ -15,12 +16,10 @@
             brandsYouMayAlsoLike = brandsYouMayAlsoLike.GetRange(0, 6);
         }
     }
-
     int i = 1;
 
     foreach (var item in brandsYouMayAlsoLike)
     {
-
         <div @if (i > 4) { <text>
              class="col-sm-2 col-xs-3 hidden-xs"
              </text>     } class="col-sm-2 col-xs-3">
@@ -28,4 +27,4 @@
         </div>
 i++;
     }
-}
+} 
