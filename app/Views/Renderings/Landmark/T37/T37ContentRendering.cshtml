@@ -1,4 +1,5 @@
-﻿@using Landmark.Classes
+﻿@using System.Globalization
+@using Landmark.Classes
 @using Landmark.Helper
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
@@ -37,12 +38,24 @@
                             <h3>@Html.Sitecore().Field("Article Headline", stories.First())</h3>
                         </a>
                         @{
-                            DateField storyDate = stories.First().Fields["Article Date"];
-                            var date = LandmarkHelper.ToValidDateTime(storyDate);
-                            if (!string.IsNullOrEmpty(storyDate.Value))
-                            {
-                                <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
-                            }
+                DateField storyDate = stories.First().Fields["Article Date"];
+                var date = LandmarkHelper.ToValidDateTime(storyDate);
+                if (!string.IsNullOrEmpty(storyDate.Value))
+                {
+                    @*<h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>*@
+                    if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
+                    {
+                        <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat).ToUpper()</h5>
+                    }
+                    else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
+                    {
+                        <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat).ToUpper()</h5>
+                    }
+                    else if (Html.Sitecore().CurrentItem.Language.Name == "en")
+                    {
+                        <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</h5>
+                    }
+                }
                         }
                         <div class="gd-longarticle-fixedlines">
                             <p>@Html.Sitecore().Field("Article Intro", stories.First())</p>
@@ -82,7 +95,19 @@
                                 }
                                 @if (!string.IsNullOrEmpty(itemDate.Value))
                                 {
-                                    <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
+                                    @*<h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>*@
+                                    if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
+                                    {
+                                        <h5>@LandmarkHelper.ToValidDateTime(itemDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat).ToUpper()</h5>
+                                    }
+                                    else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
+                                    {
+                                        <h5>@LandmarkHelper.ToValidDateTime(itemDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat).ToUpper()</h5>
+                                    }
+                                    else if (Html.Sitecore().CurrentItem.Language.Name == "en")
+                                    {
+                                        <h5>@LandmarkHelper.ToValidDateTime(itemDate).ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</h5>
+                                    }
                                 }
                                 <p>@Html.Sitecore().Field("Article Intro", item)</p>
                             </div>
@@ -107,7 +132,19 @@
                                 }
                                 @if (!string.IsNullOrEmpty(itemDate.Value))
                                 {
-                                    <h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
+                                    @*<h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>*@
+                                    if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
+                                    {
+                                        <h5>@LandmarkHelper.ToValidDateTime(itemDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat).ToUpper()</h5>
+                                    }
+                                    else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
+                                    {
+                                        <h5>@LandmarkHelper.ToValidDateTime(itemDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat).ToUpper()</h5>
+                                    }
+                                    else if (Html.Sitecore().CurrentItem.Language.Name == "en")
+                                    {
+                                        <h5>@LandmarkHelper.ToValidDateTime(itemDate).ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</h5>
+                                    }
                                 }
                                 <p>@Html.Sitecore().Field("Article Intro", item)</p>
                             </div>

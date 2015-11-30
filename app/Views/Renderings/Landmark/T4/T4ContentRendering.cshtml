@@ -6,7 +6,7 @@
 @using Sitecore.Data.Items
 @model RenderingModel
 @{
-    DateField date = (DateField) Sitecore.Context.Item.Fields["Article Date"];
+    DateField date = (DateField)Sitecore.Context.Item.Fields["Article Date"];
     var enCultureInfo = CultureInfo.CreateSpecificCulture("en");
 }
 <div class="container">
@@ -20,14 +20,25 @@
         <h1>@Html.Sitecore().Field("Article Headline")</h1>
         @if (!string.IsNullOrEmpty(date.Value))
         {
-            <h5>@LandmarkHelper.ToValidDateTime(date).ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</h5>
+            if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
+            {
+                <h5>@LandmarkHelper.ToValidDateTime(date).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat).ToUpper()</h5>
+            }
+            else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
+            {
+                <h5>@LandmarkHelper.ToValidDateTime(date).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat).ToUpper()</h5>
+            }
+            else if (Html.Sitecore().CurrentItem.Language.Name == "en")
+            {
+                <h5>@LandmarkHelper.ToValidDateTime(date).ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</h5>
+            }
         }
         <div class="gd-nd-slider-text">@Html.Sitecore().Field("Article Subheadline")</div>
-        <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-withdes carousel-portrait" data-ride="carousel"  data-cover-height="640">
+        <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-withdes carousel-portrait" data-ride="carousel" data-cover-height="640">
             @Html.Sitecore().Placeholder("t4-slides")
         </div>
 
-        
+
         <div class="row gd-nd-details-area">
             @{
                 MultilistField shopField = Sitecore.Context.Item.Fields["Brand"];
@@ -51,7 +62,7 @@
     {
         <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
             <div class="carousel-heading">
-                <h2>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.YouMayAlsoLikeItem))</h2>
+                <h2>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.YouMayAlsoLikeItem))</h2>
             </div>
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
@@ -61,9 +72,9 @@
         {
             <div @{ if (j == 0) { <text>
                  class="item active"
-                 </text>           } else { <text>
+                 </text>            } else { <text>
                  class="item"
-                 </text>           } }>
+                 </text>            } }>
                 @{
             j++;
                 }
@@ -98,7 +109,7 @@
                         {
                             <li data-target="#gd-carousel-info" data-slide-to="@i" @{ if (i == 0) { <text>
                                 class="active"
-                                </text>    } }>@(i + 1)</li>
+                                </text>     } }>@(i + 1)</li>
                         }
                     </ol>
                     <span class="gd-carousel-control gd-carousel-no">

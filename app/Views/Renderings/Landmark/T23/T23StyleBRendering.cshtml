@@ -1,4 +1,5 @@
-﻿@using Landmark.Classes
+﻿@using System.Globalization
+@using Landmark.Classes
 @using Landmark.Helper
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
@@ -6,7 +7,7 @@
 @model RenderingModel
 @{
     var currentItem = Sitecore.Context.Item;
-   
+
     DateField storyDate = currentItem.Fields["Article Date"];
     var date = LandmarkHelper.ToValidDateTime(storyDate);
 }
@@ -20,7 +21,19 @@
         <h1>@Html.Sitecore().Field("Article Headline")</h1>
         @if (!string.IsNullOrEmpty(storyDate.Value))
         {
-            <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>
+            @*<h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>*@
+            if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
+            {
+                <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat).ToUpper()</h5>
+            }
+            else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
+            {
+                <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat).ToUpper()</h5>
+            }
+            else if (Html.Sitecore().CurrentItem.Language.Name == "en")
+            {
+                <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</h5>
+            }
         }
         <h6>@Html.Sitecore().Field("Article Subheadline")</h6>
     </div>

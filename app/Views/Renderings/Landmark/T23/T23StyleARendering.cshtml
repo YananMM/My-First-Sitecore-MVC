@@ -1,4 +1,5 @@
-﻿@using Landmark.Classes
+﻿@using System.Globalization
+@using Landmark.Classes
 @using Landmark.Helper
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
@@ -21,15 +22,27 @@
                 <div class="gd-content-details visible-xs-block">
                     <div class="gd-content-details-heading">
                         <h3>@Html.Sitecore().Field("Article Headline", currentItem)</h3>
-                       
+
                         @if (!string.IsNullOrEmpty(storyDate.Value))
                         {
-                            <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper() </h5>
+                            @*<h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper() </h5>*@
+                            if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
+                            {
+                                <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat).ToUpper()</h5>
+                            }
+                            else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
+                            {
+                                <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat).ToUpper()</h5>
+                            }
+                            else if (Html.Sitecore().CurrentItem.Language.Name == "en")
+                            {
+                                <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</h5>
+                            }
                         }
                         <h6>@Html.Sitecore().Field("Article Subheadline", currentItem) </h6>
                     </div>
                 </div>
-                <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-withdes carousel-portrait" data-ride="carousel"  data-cover-height="706">
+                <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-withdes carousel-portrait" data-ride="carousel" data-cover-height="706">
                     @Html.Sitecore().Placeholder("t23-slides")
                 </div>
             </div>
@@ -39,7 +52,19 @@
                         <h1>@Html.Sitecore().Field("Article Headline", currentItem)</h1>
                         @if (!string.IsNullOrEmpty(storyDate.Value))
                         {
-                            <h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>
+                            @*<h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture)</h5>*@
+                             if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
+                            {
+                                <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat).ToUpper()</h5>
+                            }
+                            else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
+                            {
+                                <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat).ToUpper()</h5>
+                            }
+                            else if (Html.Sitecore().CurrentItem.Language.Name == "en")
+                            {
+                                <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</h5>
+                            }
                         }
                         <h6>@Html.Sitecore().Field("Article Subheadline", currentItem)</h6>
                     </div>
