@@ -7,11 +7,13 @@
 @using Sitecore.Links
 @using Sitecore.StringExtensions
 @model RenderingModel
-
+@{
+    var currentItem = Sitecore.Context.Item;
+}
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
-            <h2>@Html.Sitecore().Field("Page Title")</h2>
+            <h2>@Html.Sitecore().Field("Page Title", currentItem.Parent)</h2>
             <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.MonthlyExclusivePage)))" class="gd-link-audio">
                 @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.SeeAllExclusiveItem)) <span class="icomoon-chevron-small-right"></span>
             </a>
@@ -33,7 +35,6 @@
                 brandItem = Sitecore.Context.Database.GetItem(brand);
                 brandTitle = Sitecore.Context.Database.GetItem(brand).Fields["Brand Title"].Value;
             }
-
         }
         }
         @if (brandItem != null)
