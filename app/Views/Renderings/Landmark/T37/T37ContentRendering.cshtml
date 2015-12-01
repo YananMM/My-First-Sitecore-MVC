@@ -45,11 +45,11 @@
                     @*<h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>*@
                     if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
                     {
-                        <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat).ToUpper()</h5>
+                        <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("yyyy年 MMM dd日", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat).ToUpper()</h5>
                     }
                     else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
                     {
-                        <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat).ToUpper()</h5>
+                        <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("yyyy年 MMM dd日", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat).ToUpper()</h5>
                     }
                     else if (Html.Sitecore().CurrentItem.Language.Name == "en")
                     {
@@ -98,11 +98,11 @@
                                     @*<h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>*@
                                     if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
                                     {
-                                        <h5>@LandmarkHelper.ToValidDateTime(itemDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat).ToUpper()</h5>
+                                        <h5>@LandmarkHelper.ToValidDateTime(itemDate).ToString("yyyy年 MMM dd日", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat).ToUpper()</h5>
                                     }
                                     else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
                                     {
-                                        <h5>@LandmarkHelper.ToValidDateTime(itemDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat).ToUpper()</h5>
+                                        <h5>@LandmarkHelper.ToValidDateTime(itemDate).ToString("yyyy年 MMM dd日", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat).ToUpper()</h5>
                                     }
                                     else if (Html.Sitecore().CurrentItem.Language.Name == "en")
                                     {
@@ -135,11 +135,11 @@
                                     @*<h5>@itemdate.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>*@
                                     if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
                                     {
-                                        <h5>@LandmarkHelper.ToValidDateTime(itemDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat).ToUpper()</h5>
+                                        <h5>@LandmarkHelper.ToValidDateTime(itemDate).ToString("yyyy年 MMM dd日", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat).ToUpper()</h5>
                                     }
                                     else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
                                     {
-                                        <h5>@LandmarkHelper.ToValidDateTime(itemDate).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat).ToUpper()</h5>
+                                        <h5>@LandmarkHelper.ToValidDateTime(itemDate).ToString("yyyy年 MMM dd日", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat).ToUpper()</h5>
                                     }
                                     else if (Html.Sitecore().CurrentItem.Language.Name == "en")
                                     {
