@@ -21,7 +21,6 @@
     if (!currentItem.Parent.ID.ToString().Equals(ItemGuids.ShoppingItem) && !currentItem.Parent.ID.ToString().Equals(ItemGuids.DiningItem))
     {
         var currentTag = shoppingHelper.GetCurrentCategory(currentItem);
-        <h2>@currentTag</h2>
 
         brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
     }

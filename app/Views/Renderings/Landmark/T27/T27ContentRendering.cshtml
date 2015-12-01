@@ -60,7 +60,7 @@
                                 {
                                     <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{if (i == 0) { <text>
                                         class="active"
-                                        </text>                }}></li>
+                                        </text>                 }}></li>
                                 }
                             </ol>
                         }
@@ -73,9 +73,9 @@
                         {
                             <div @{ if (j == 0) { <text>
                                  class="item active"
-                                 </text>     } else { <text>
+                                 </text>      } else { <text>
                                  class="item"
-                                 </text>     } }>
+                                 </text>      } }>
                                 @{
                             j++;
                                 }
@@ -160,7 +160,7 @@
                                                         @if (floor != null)
                                                         {
                                                             var whereDescription = floor["Floor Title"];
-                                                            string ofstring = string.Empty;
+                                                            string ofstring = Html.Sitecore().Field("Glossary Value", Factory.GetDatabase("web").GetItem(ItemGuids.OfItem)).ToString();
                                                             if (Sitecore.Context.Language.ToString().ToLower() == "en")
                                                             { ofstring = "of"; }
                                                             <a href="#" class="gd-link-map gd-lightbox-link gd-lightbox-pin" data-pin="@Html.Sitecore().ImageFieldSrc("LocationX", brandItem),@Html.Sitecore().ImageFieldSrc("LocationY", brandItem)" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)"
