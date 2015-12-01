@@ -137,6 +137,7 @@ vertical-align: middle;
       height: 100%;
       max-width: 500px;
       text-align: center;
+  padding: 0 20px;
   hgroup, .panel-content,.btn,h3{
     position: relative;
   z-index: 2;}
@@ -174,6 +175,9 @@ vertical-align: middle;
     height: auto;
       width: 100%;
       padding: 0 0 12px 20px;
+  hgroup{
+   width: 85%;
+  }
   h2{
       display: inline;
       padding-right: 14px;
@@ -605,10 +609,12 @@ border-left: 18px solid @gray-darker;
            position: absolute;
             left: 40px;
             bottom: 32px;
+            width: 85%;
             h2{
             display: inline;
       background:url("../images/title-arrow2.png") no-repeat 100%  100% ;
-      padding-right: 29px;
+      padding-right: 29px; 
+              word-wrap: break-word;
             }
           }
         } 
@@ -909,14 +915,14 @@ margin-top: 0px;
       max-width: 500px;
       text-align: center;
       height: 90%;
-  padding-bottom: 10%;
+  padding:  0 40px 10%;
     
     h3{
       margin: 10px auto;
         font-size: 2.16em;
     }
       .panel-content{
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
       }
       .btn{
@@ -1153,11 +1159,16 @@ border-bottom: 18px solid @gray-darker;
   .panel-main{
     position: absolute;
     height: 100%;
-    width: 45%;
+    width: auto;
     top:0;
-    left:55%;
+    left: auto;
+    right:0;
     display: table;
     vertical-align: middle;
+    margin-right: 60px;
+    .text-box-2 h2{
+     margin-right: 0;
+    }
   }
       }
     }
@@ -1450,6 +1461,23 @@ border-left: 18px solid @gray-darker;
         }
       }
       }
+        //panel style effect 5
+    .panel-5{
+      //panel style effect5 part 2
+      .panel-side2{
+        
+  .panel-main{
+    left: auto;
+    right:18%;
+    display: table;
+    margin-right: 0;
+    vertical-align: middle;
+    .text-box-2 h2{
+     margin-right: 0;
+    }
+  }
+      }
+    }
     }
   }
 }

@@ -591,7 +591,7 @@ $(document).ready(function() {
         if ($slider.length && !$slider.data('slider')){
           var slider = $slider.bxSlider({
             speed: 1000,
-            autoStart: getScMode() != 'pageeditor',
+            auto: getScMode() != 'pageeditor',
             pause: 5000,
             pager: false,
             controls: false,
@@ -1203,7 +1203,11 @@ $(document).ready(function() {
     gdFloorPlanBind();
     
     
-    // Change building
+      // Change building
+    $('.gd-pagetitle-mapmenu li>a').click(function (event) {
+        event.preventDefault();
+    });
+
     $('.gd-pagetitle-mapmenu li').click(function() {
       var gdMapLogo     = $(this).parents('.gd-pagetitle-mapmenu').find('img');
       $(this).addClass('active').siblings().removeClass('active');
@@ -1738,62 +1742,66 @@ $(document).ready(function() {
   /**********************************************************************************************************
    * Long Article & Long Article with fixed lines
    **********************************************************************************************************/
-  var gdTextOn   = $('.gd-longarticle').eq(0).data('text-on');
-  var gdTextOff  = $('.gd-longarticle').eq(0).data('text-off');
-  
-  var gdTextLines = (function() {
-    if ($('.gd-longarticle p').length > 1) {
-      var gdTextSample = $('.gd-longarticle p').eq(0);
-      var gdTextLh     = gdTextSample.css('lineHeight').indexOf('px') > 0 ? (gdTextSample.css('lineHeight').slice(0, -2) / gdTextSample.css('fontSize').slice(0, -2)) : Number(gdTextSample.css('lineHeight'));
-      return gdTextLh * gdSettings.LongVersionContentNumberOfLines;
-    } else {
-      return gdSettings.LongVersionContentNumberOfLines;
-    }
-  })();
+    if ($('.gd-longarticle').length > 0) {
+        var gdTextOn = $('.gd-longarticle').eq(0).data('text-on');
+        var gdTextOff = $('.gd-longarticle').eq(0).data('text-off');
 
-  $('.gd-longarticle').trunk8({
-    lines: gdTextLines,
-    fill: '<a id="read-more" href="#">' + gdTextOn + '</a>',
-    tooltip: false
-  });
-  
-  if ( location.href.indexOf( location.hostname + '/en/' ) > 0 ) {
-    var gdTextFunc = function() {
-      var gdTextPar = $('#read-more').parent();
-      var gdTextOri = gdTextPar.html().toString();
-      var gdTextBrk = gdTextOri.indexOf('<a id="read-more');
-      var gdTextBef = gdTextOri.slice(0, gdTextOri.lastIndexOf(' ', gdTextBrk));
-      var gdTextAft = gdTextOri.slice(gdTextBrk);
-      gdTextPar.html(gdTextBef + gdTextAft);
-    };
-    
-    var gdTrunkCheckTimer;
-    function gdTrunkCheck() {
-      if ($('#read-more').length > 0) {
-        clearTimeout(gdTrunkCheckTimer);
-        gdTextFunc();
-      } else {
-        gdTrunkCheckTimer = setTimeout(function() {
-          gdTrunkCheck();
-        }, 200);
-      }
-    };
-    gdTrunkCheck();
-  }
-  
-  $('#read-more').live('click', function (event) {
-    $(this).closest('.gd-longarticle').trunk8('revert').append(' <a id="read-less" href="javascript:;">' + gdTextOff + '</a>');
-    
-    return false;
-  });
-  
-  $('#read-less').live('click', function (event) {
-    $(this).closest('.gd-longarticle').trunk8();
-    
-    return false;
-  });
-  
-  /**********************************************************************************************************
+        var gdTextLines = (function() {
+            if ($('.gd-longarticle p').length > 1) {
+                var gdTextSample = $('.gd-longarticle p').eq(0);
+                var gdTextLh = gdTextSample.css('lineHeight').indexOf('px') > 0 ? (gdTextSample.css('lineHeight').slice(0, -2) / gdTextSample.css('fontSize').slice(0, -2)) : Number(gdTextSample.css('lineHeight'));
+                return gdTextLh * gdSettings.LongVersionContentNumberOfLines;
+            } else {
+                return gdSettings.LongVersionContentNumberOfLines;
+            }
+        })();
+
+        $('.gd-longarticle').trunk8({
+            lines: gdTextLines,
+            fill: '<a id="read-more" href="#">' + gdTextOn + '</a>',
+            tooltip: false
+        });
+
+        if (location.href.indexOf(location.hostname + '/en/') > 0) {
+            var gdTextFunc = function() {
+                var gdTextPar = $('#read-more').parent();
+                var gdTextOri = gdTextPar.html().toString();
+                var gdTextBrk = gdTextOri.indexOf('<a id="read-more');
+                var gdTextBef = gdTextOri.slice(0, gdTextOri.lastIndexOf(' ', gdTextBrk));
+                var gdTextAft = gdTextOri.slice(gdTextBrk);
+                gdTextPar.html(gdTextBef + gdTextAft);
+            };
+
+            var gdTrunkCheckTimer;
+
+            function gdTrunkCheck() {
+                if ($('#read-more').length > 0) {
+                    clearTimeout(gdTrunkCheckTimer);
+                    gdTextFunc();
+                } else {
+                    gdTrunkCheckTimer = setTimeout(function() {
+                        gdTrunkCheck();
+                    }, 200);
+                }
+            };
+
+            gdTrunkCheck();
+        }
+
+        $('#read-more').live('click', function(event) {
+            $(this).closest('.gd-longarticle').trunk8('revert').append(' <a id="read-less" href="javascript:;">' + gdTextOff + '</a>');
+
+            return false;
+        });
+
+        $('#read-less').live('click', function(event) {
+            $(this).closest('.gd-longarticle').trunk8();
+
+            return false;
+        });
+    }
+
+/**********************************************************************************************************
    * Text in bottom slider; Text in Magazine; Text of gd-longarticle-fixedlines
    **********************************************************************************************************/
   function gdGetActualLineHeight( target ) {

@@ -479,7 +479,9 @@ h1,h2,h3,h4{
               img{
                 float: left;
                 vertical-align: middle;
+                @media (min-width: @screen-md) {
                 margin-right: 20px;
+                }
               }
         ul{
           margin: 0 0 0  10%;
@@ -498,7 +500,9 @@ h1,h2,h3,h4{
             text-align: center;
             .black-text2;
             a{
+              word-wrap: break-word; 
               display: inline-block;
+              width: 120px;
               text-align: left;
             }
             &.active{
@@ -1000,7 +1004,7 @@ h1,h2,h3,h4{
           >.carousel-caption {
             background-color: transparent;
             .gd-carousel-detail {
-              height: @gdmi-height;;
+              height:480px;
             }
           }
         }
@@ -1226,6 +1230,7 @@ h1,h2,h3,h4{
         tr>th, tr>td {
           padding: 13px 5px;
           vertical-align: top;
+          word-break: break-word;
         }
       }
     }
