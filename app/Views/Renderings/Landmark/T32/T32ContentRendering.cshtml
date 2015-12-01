@@ -1,8 +1,8 @@
-﻿
-@using Landmark.Classes
+﻿@using Landmark.Classes
 @using Landmark.Helper
 @using Landmark.Models
 @using Sitecore.Configuration
+@using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Sitecore.Links
 @model RenderingModel
@@ -10,111 +10,123 @@
     SearchHelper helper = new SearchHelper();
     var page = Request["page"] ?? "1";
     var count = helper.GetSearchResults(Request["searchString"], Request["type"]).Count;
-    var results = helper.GetSearchResults(Request["searchString"],Request["type"],page);
+    var results = helper.GetSearchResults(Request["searchString"], Request["type"], page);
     List<FilterTypeResults> types = helper.GetFilterTypes(Request["searchString"]);
     ShoppingHelper shoppingHelper = new ShoppingHelper();
 }
 
- <div class="container">
-        <div class="gd-pagetitle">
-            <div class="gd-pagetitle-heading">
-                <h1>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h1>
+<div class="container">
+    <div class="gd-pagetitle">
+        <div class="gd-pagetitle-heading">
+            <h1>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h1>
+        </div>
+        <div class="gd-search-infomation">@count search result(s) for <span>"@Request["searchString"]"</span></div>
+        @if (count > 0)
+        {
+            <div class="gd-search-filter hidden-xs">
+                @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.FilterByItem))
+                <ul>
+                    <!--<li class="active"><a href="#">ALL</a></li>-->
+                    @foreach (var type in types)
+                    {
+                        if (Int32.Parse(type.count) > 0)
+                        {
+                            <li><a href="?type=@type.value">@type.value (@type.count)</a></li>
+                        }
+                    }
+                </ul>
             </div>
-            <div class="gd-search-infomation">@count search result(s) for <span>"@Request["searchString"]"</span></div>
-            @if (count > 0)
-            {
-                <div class="gd-search-filter hidden-xs">
-                    @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.FilterByItem))
-                    <ul>
-                        <!--<li class="active"><a href="#">ALL</a></li>-->
-                        @foreach (var type in types)
-                        {
-                            if (Int32.Parse(type.count) > 0)
-                            {
-                                <li><a href="?type=@type.value">@type.value (@type.count)</a></li>
-                            }
-                        }
-                    </ul>
-                </div>
-            }
-          
+        }
+
         <div class="gd-controls-m visible-xs">
-                    <select class="form-control">
-                        <option value="?type" @{if (Request["type"] == null) { <text> selected="selected" </text> }}>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem))</option>
-                        @foreach (var type in types)
-                        {
-                            if (Int32.Parse(type.count) > 0)
-                            {
-                                <option value="?type=@type.value" @{if (Request["type"] == type.value) {<text>selected="selected"</text>}}>@type.value (@type.count)</option>}
-                        }
-                    </select>
+            <select class="form-control">
+                <option value="?type" @{if (Request["type"] == null) { <text> selected="selected" </text>     }}>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem))</option>
+                @foreach (var type in types)
+                {
+                    if (Int32.Parse(type.count) > 0)
+                    {
+                        <option value="?type=@type.value" @{if (Request["type"] == type.value) { <text> selected="selected" </text>    }}>@type.value (@type.count)</option>}
+                }
+            </select>
         </div>
-          
-        </div>
-     <div class="gd-search">
-         @if (results.Where(result => result.FilterType == Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem).Fields["Page Title"].Value && result.GetItem().TemplateID.ToString() == ItemGuids.T14ShopDetailsTemplate).ToList().Count > 0)
-         {
-             <div class="gd-search-heading">
-                 <h3>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.StoreDetailsItem))</h3>
-             </div>
-         }
 
-
-
-         <div class="gd-search-body">
-             <ol>
-                 @foreach (var result in results)
-                 {
-                     if (result.GetItem().TemplateID.ToString() == ItemGuids.T14ShopDetailsTemplate)
-                     {
-                         <li>
-                             <div class="gd-search-box2">
-                                 <div class="row">
-                                     <div class="col-sm-9">
-                                         <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", result.GetItem())"></a>
-                                         <h4><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))">@Html.Sitecore().Field("Brand Title", result.GetItem())</a></h4>
-
-                                         @{
-                                             var floor = shoppingHelper.GetShopFloor(result.GetItem());
-                                         }
-                                         @if (floor != null)
-                                         {
-                                             <p>
-                                                 <span class="icomoon-location2"></span>@Html.Sitecore().Field("Address", result.GetItem()),@floor["Floor Title"],@floor.Parent["Building Title"]
-                                             </p>
-                                         }
-                                         <p>
-                                             <span class="icomoon-phone"></span>@Html.Sitecore().Field("Contact", result.GetItem())
-                                         </p>
-                                         <a href="@Html.Sitecore().Field("Official Website Url")" class="gd-search-link-brief">
-                                             @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.OfficialWebsiteItem))<span class="icomoon-chevron-small-right"></span></a>
-                                     </div>
-                                     <div class="col-sm-3">
-                                         <h5>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.OpenningHoursItem))</h5>
-                                         <p>@Html.Sitecore().Field("Opening Hours", result.GetItem())
-                                         </p>
-                                     </div>
-                                 </div>
-                             </div>
-                         </li>
-                     }
-                     else
-                     {
-                         <li>
-                             <div class="gd-search-box">
-                                 <h5>@result.FilterType</h5>
-                                 <h4><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))">@result.PageTitle</a></h4>
-                                 <div>@result.GetItem().Statistics.Created.ToString("MMM dd,yyyy")</div>
-                             </div>
-                         </li>
-                     }
-
-                 }
-             </ol>
-         </div>
-     </div>
-     <div class="navigation">
-         <a href="?page=2@{if (Request["type"] != null){<text>&type=@Request["type"]</text>}}"></a>
-     </div>
     </div>
-    
+    <div class="gd-search">
+        @if (results.Where(result => result.FilterType == Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem).Fields["Page Title"].Value && result.GetItem().TemplateID.ToString() == ItemGuids.T14ShopDetailsTemplate).ToList().Count > 0)
+        {
+            <div class="gd-search-heading">
+                <h3>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.StoreDetailsItem))</h3>
+            </div>
+        }
+
+
+
+        <div class="gd-search-body">
+            <ol>
+                @foreach (var result in results)
+                {
+                    if (result.GetItem().TemplateID.ToString() == ItemGuids.T14ShopDetailsTemplate)
+                    {
+                        <li>
+                            <div class="gd-search-box2">
+                                <div class="row">
+                                    <div class="col-sm-9">
+                                        <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", result.GetItem())"></a>
+                                        <h4><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))">@Html.Sitecore().Field("Brand Title", result.GetItem())</a></h4>
+
+                                        @{
+                        var address = result.GetItem().Fields["Address"].ToString();
+                        if (!string.IsNullOrEmpty(address))
+                        {
+                            <p>
+                                <span class="icomoon-location2"></span>@Html.Sitecore().Field("Address", result.GetItem())
+                            </p>
+                        }
+                                        }
+                                        <p>
+                                            <span class="icomoon-phone"></span>@Html.Sitecore().Field("Contact", result.GetItem())
+                                        </p>
+                                        @{
+                        LinkField link = result.GetItem().Fields["Official Website Url"];
+                        if (!string.IsNullOrEmpty(link.Url))
+                        {
+                            <a href="@link.Url" target="@link.Target" class="gd-search-link-brief">
+                                @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.OfficialWebsiteItem))<span class="icomoon-chevron-small-right"></span>
+                            </a>
+                        }
+                                        }
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <h5>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.OpenningHoursItem))</h5>
+                                        <p>
+                                            @Html.Sitecore().Field("Opening Hours", result.GetItem())
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    }
+                    else
+                    {
+                        var resultItem = result.GetItem();
+                        <li>
+                            <div class="gd-search-box">
+                                <h5>@result.FilterType</h5>
+                                <h4><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))">@result.PageTitle</a></h4>
+                                @if (resultItem.TemplateID.ToString() == ItemGuids.T23PageABTemplate || resultItem.TemplateID.ToString() == ItemGuids.T23PageCTemplate || resultItem.TemplateID.ToString() == ItemGuids.T4PageTemplate || resultItem.TemplateID.ToString() == ItemGuids.T25PageTemplate || resultItem.TemplateID.ToString() == ItemGuids.T27Page)
+                                {
+                                    <p>@Html.Sitecore().Field("Article Intro", resultItem)</p>
+                                }
+                                <div>@result.GetItem().Statistics.Created.ToString("MMM dd,yyyy")</div>
+                            </div>
+                        </li>
+                    }
+                }
+            </ol>
+        </div>
+    </div>
+    <div class="navigation">
+        <a href="?page=2@{if (Request["type"] != null){<text>&type=@Request["type"]</text>}}"></a>
+    </div>
+</div>
+

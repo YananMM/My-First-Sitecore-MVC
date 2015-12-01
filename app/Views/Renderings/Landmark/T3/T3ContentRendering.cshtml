@@ -33,24 +33,20 @@
                 <div class="col-md-12 text-center">
                     @if (!string.IsNullOrEmpty(date.Value))
                     {
-                        @*<p>
-                                    @LandmarkHelper.ToValidDateTime(date).ToString("MMM dd,yyyy" +
-                                                                                  "", CultureInfo.InvariantCulture)
-                            </p>*@
                         if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
                         {
-                            <p>@LandmarkHelper.ToValidDateTime(date).ToString("yyyy年 MMM dd日", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat).ToUpper()</p>
+                            <p>@LandmarkHelper.ToValidDateTime(date).ToString("yyyy年 MMM dd日", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat)</p>
                         }
                         else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
                         {
-                            <p>@LandmarkHelper.ToValidDateTime(date).ToString("yyyy年 MMM dd日", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat).ToUpper()</p>
+                            <p>@LandmarkHelper.ToValidDateTime(date).ToString("yyyy年 MMM dd日", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat)</p>
                         }
                         else if (Html.Sitecore().CurrentItem.Language.Name == "en")
                         {
                             <p>@LandmarkHelper.ToValidDateTime(date).ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</p>
                         }
                     }
-                    <p>@Html.Sitecore().Field("Article Content", latestItem)</p>
+                    <p>@Html.Sitecore().Field("Article Intro", latestItem)</p>
                     <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(latestItem))" class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem))</a>
                 </div>
             </div>
