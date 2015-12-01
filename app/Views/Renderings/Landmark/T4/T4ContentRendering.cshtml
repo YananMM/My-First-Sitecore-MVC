@@ -20,13 +20,13 @@
         <h1>@Html.Sitecore().Field("Article Headline")</h1>
         @if (!string.IsNullOrEmpty(date.Value))
         {
-            if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
+             if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
             {
-                <h5>@LandmarkHelper.ToValidDateTime(date).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat).ToUpper()</h5>
+                <h5>@LandmarkHelper.ToValidDateTime(date).ToString("yyyy年 MMM dd日", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat).ToUpper()</h5>
             }
             else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
             {
-                <h5>@LandmarkHelper.ToValidDateTime(date).ToString("MMM dd, yyyy", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat).ToUpper()</h5>
+                <h5>@LandmarkHelper.ToValidDateTime(date).ToString("yyyy年 MMM dd日", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat).ToUpper()</h5>
             }
             else if (Html.Sitecore().CurrentItem.Language.Name == "en")
             {
