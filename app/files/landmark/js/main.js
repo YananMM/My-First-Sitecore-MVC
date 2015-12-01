@@ -591,7 +591,7 @@ $(document).ready(function() {
         if ($slider.length && !$slider.data('slider')){
           var slider = $slider.bxSlider({
             speed: 1000,
-            autoStart: getScMode() != 'pageeditor',
+            auto: getScMode() != 'pageeditor',
             pause: 5000,
             pager: false,
             controls: false,
