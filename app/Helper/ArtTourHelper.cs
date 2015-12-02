@@ -118,7 +118,7 @@ namespace Landmark.Helper
                     }
                 }
             }
-            return artPieces;
+            return artPieces.OrderBy(p=>p.DisplayName).ToList();
         }
 
         /// <summary>

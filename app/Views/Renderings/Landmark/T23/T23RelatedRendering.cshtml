@@ -13,7 +13,7 @@
     relatedStoris = relatedStoris.Where(p => p.Item.ID.ToString() != currentItem.ID.ToString()).ToList();
     relatedStoris = (relatedStoris.Count > 2) ? relatedStoris.Take(2).ToList() : relatedStoris;
     var relatedBrands = helper.GetRelatedItems("brands");
-    relatedBrands = (relatedBrands.Count > 2) ? relatedBrands.Take(2).ToList() : relatedBrands;
+    relatedBrands = (relatedBrands.Count > 5) ? relatedBrands.Take(5).ToList() : relatedBrands;
 }
 <div class="gd-relate">
     <div class="row">

@@ -135,151 +135,9 @@
         var map;
         var infoWindow;
         var service;
-		var userMarkID = 0;
         var userKeyword = 'drop off points';
         var userMarkers = [];
         var userMkrIcon = 'map-marker-01.png';
-		var minZoomLevel = 16;
-		var maxZoomLevel = 18;
-		var strictBounds;
-		var locations = [
-			//0-DROP OFF POINT
-			[
-				['One Exchange Square', 22.283468, 114.158768],
-				['Jardine House', 22.282982, 114.159154],
-				['Alexender House', 22.281747, 114.158256],
-				['12 Charter Rd.', 22.281640, 114.159465],
-				['8 Quenn\'s Road Central', 22.280214, 114.157989],
-				['HSBC Headquaters Building', 22.280241, 114.159709]
-			],
-			//1-TAXI
-			[
-				['CCB Tower', 22.281570, 114.161412],
-				['Mandarin Oriental (HK) Ltd', 22.282092, 114.159542],
-				['9 Edinburgh Pl', 22.283305, 114.160641],
-				['Alexender House', 22.281633, 114.158545],
-				['Landmark', 22.281031, 114.157985],
-				['IFC', 22.284372, 114.158228]
-			],
-			//2-MTR EXITS
-			[
-				['Central Station', 22.28207027, 114.15779494],
-				['Central Station Exit D2', 22.28193128, 114.15708818],
-				['Central Station Exit E', 22.2819561, 114.15818252],
-				['Central Station Exit F', 22.28184317, 114.15880077],
-				['Central Station Exit H', 22.281668, 114.158886],
-				['Central Station Exit J2', 22.28111038, 114.160912],
-				['Central Station Exit K', 22.281106, 114.159642],
-				['Hong Kong Station', 22.284675, 114.1581758],
-				['Hong Kong Station Exit A1', 22.284363, 114.158239],
-				['Hong Kong Station Exit A2', 22.28475568, 114.15943041],
-				['Hong Kong Station Exit B1', 22.284158, 114.158558],
-				['Hong Kong Station Exit C', 22.28312756, 114.15715054],
-				['Hong Kong Station Exit D', 22.28485496, 114.15746167],
-				['Hong Kong Station Exit F', 22.28504855, 114.1582914],
-				['Sheung Wan Station', 22.28664066, 114.15202685],
-				['Sheung Wan Station Exit A2', 22.286282, 114.152109],
-				['Sheung Wan Station Exit D', 22.287741, 114.1524981],
-				['Sheung Wan Station Exit E1', 22.286028, 114.153385],
-				['Admiralty Station', 22.27937487, 114.16458026],
-				['Admiralty Station Exit B', 22.279445, 114.16391172],
-				['Admiralty Station Exit C1', 22.278516, 114.164805],
-				['Admiralty Station Exit C2', 22.278855, 114.164891]
-			],
-			//3-AIRPORT EXPRESS
-			[
-				['Hong Kong Station', 22.284675, 114.158180]
-			],
-			//4-BUS STATIONS
-			[
-				['Central', 22.286578, 114.159294],
-				['Exchange Square', 22.284738, 114.158151]
-			],
-			//5-TRAM STOPS
-			[
-				['Threater Lane (West direction)', 22.28220677, 114.15756091],
-				['Threater Lane (East direction)', 22.28218692, 114.15771112],
-				['Landmark', 22.28179477, 114.1579096],
-				['Alexender House', 22.28104151, 114.15857814],
-				['Legislative Council Building (West direstion)', 22.28067542, 114.15945992],
-				['Legislative Council Building (East direstion)', 22.28061585, 114.1598247]
-			],
-			//6-WASHROOMS
-			[
-				['Star Ferry Muti-storey Car Park', 22.282325, 114.160124],
-				['Queen\'s Road Central', 22.279784, 114.160072],
-				['Central Market', 22.28430522, 114.15566426],
-				['Wing On House', 22.28388206, 114.15654168]
-			],
-			//7-CAR PARK
-			[
-				['Shun Tak Centre', 22.287864, 114.152537],
-				['Sheung Wan', 22.287722, 114.153063],
-				['Rumsey Street Multi Storey Car Park', 22.287583, 114.153393],
-				['Harbour Building', 22.286661, 114.154869],
-				['Central 1', 22.287371, 114.156213],
-				['Central 2', 22.286398, 114.159235],
-				['Four Seasons Place', 22.285738, 114.157393],
-				['IFC Mall', 22.285053, 114.158732],
-				['101 - 125 Queen\'s Road Central', 22.284112, 114.154532],
-				['Star Ferry Muti-storey Car Park', 22.282318, 114.160312],
-				['City Hall Multi-storey Car Park', 22.281822, 114.162023],
-				['Murray Road Multi- Storey Car Park Building', 22.280161, 114.162018],
-				['Cheung Kong Center', 22.279643, 114.160264],
-				['Citibank Plaza', 22.278506, 114.161275],
-				['Murray Building', 22.278146, 114.159955],
-				['Rawlinson House', 22.277458, 114.160878]
-			],
-			//8-ATM MACHINE
-			[
-				['Bank of China Town', 22.279537, 114.161504],
-				['HSBC Headquaters Building 1', 22.280510, 114.159546],
-				['HSBC Headquaters Building 2', 22.28036021, 114.15955346],
-				['New Henry House', 22.28079021, 114.15844973],
-				['Wheelock House', 22.28204483, 114.15759813],
-				['China Building', 22.281560, 114.156912],
-				['Lht Tower', 22.282007, 114.156539],
-				['Exchange Square Block 1', 22.283374, 114.158393],
-				['Exchange Square Block 2', 22.283947, 114.157647],
-				['Hang Seng Bank Headquarters', 22.28455403, 114.15620741],
-				['IFC Mall', 22.285469, 114.157964]
-			],
-			//9-ELEVATED WALKWAYS
-			[
-				['Bank of China Building', 22.284843, 114.156475],
-				['Exchange Square', 22.283143, 114.158468],
-				['Jardine House', 22.283007, 114.158704],
-				['Chater House', 22.282422, 114.158359],
-				['Prince Building', 22.281175, 114.159224],
-				['Alexandra House', 22.28143986, 114.15833607],
-				['Landmark', 22.28097325, 114.1575475]
-			],
-			//10-INFO
-			[
-				['Prince Building', 22.281175, 114.159224],
-				['Jardine House', 22.28315238, 114.15911391],
-				['Chater House', 22.282405, 114.158459],
-				['Landmark Gloucester Tower', 22.281255, 114.1579288],
-				['Landmark', 22.281029, 114.157978],
-				['The Landmark Mandrain Oriential, Hong Kong', 22.280772, 114.157858]
-			],
-			//11-POST OFFICE
-			[
-				['General Post Office', 22.283576, 114.159646]
-			],
-			//12-FERRY
-			[
-				['Central Ferry Pier No.2', 22.288374, 114.156535],
-				['Central Ferry Pier No.3', 22.288202, 114.157525],
-				['Central Ferry Pier No.4', 22.287932, 114.158424],
-				['Central Ferry Pier No.5', 22.287714, 114.159323],
-				['Central Ferry Pier No.6', 22.287461, 114.160313],
-				['Central Ferry Pier No.7', 22.287156, 114.161125],
-				['Central Ferry Pier No.8', 22.286731, 114.162153],
-				['Central Ferry Pier No.9', 22.286065, 114.162627],
-				['Central Ferry Pier No.10', 22.285408, 114.162923]
-			]
-		];
 
         function initialize() {
             map = new google.maps.Map(document.getElementById('map-canvas'), {
@@ -300,52 +158,20 @@
                 //   }
                 // ]
             });
-			
-			strictBounds = new google.maps.LatLngBounds(new google.maps.LatLng(22.280, 114.153), // Bottom Left
-				new google.maps.LatLng(22.288, 114.164) // Top Right
-			);
-			
-			google.maps.event.addListener(map, 'center_changed', function() {
-				if (strictBounds.contains(map.getCenter())) return;
-				// We're out of bounds - Move the map back within the bounds
-				var c = map.getCenter(),
-				x = c.lng(),
-				y = c.lat(),
-				maxX = strictBounds.getNorthEast().lng(),
-				maxY = strictBounds.getNorthEast().lat(),
-				minX = strictBounds.getSouthWest().lng(),
-				minY = strictBounds.getSouthWest().lat();
-				if (x < minX) x = minX;
-				if (x > maxX) x = maxX;
-				if (y < minY) y = minY;
-				if (y > maxY) y = maxY;
-				map.setCenter(new google.maps.LatLng(y, x));
-			});
-			// Limit the zoom level
-			google.maps.event.addListener(map, 'zoom_changed', function() {
-				if (map.getZoom() < minZoomLevel) map.setZoom(minZoomLevel);
-				if (map.getZoom() > maxZoomLevel) map.setZoom(maxZoomLevel);
-			});
-			
-			infowindow = new google.maps.InfoWindow({
-				maxWidth: 160
-			});
+
+            infoWindow = new google.maps.InfoWindow();
             service = new google.maps.places.PlacesService(map);
 
             google.maps.event.addListenerOnce(map, 'bounds_changed', performSearch);
         }
 
         function performSearch() {
-            /*var request = {
+            var request = {
                 bounds: map.getBounds(),
                 //keyword: userKeyword,
                 name: userKeyword
             };
-            service.radarSearch(request, callback);*/
-			for (var i = 0; i < locations[userMarkID].length; i++) {
-                createMarker(locations[userMarkID][i], i);
-            }
-			fitBounds();
+            service.radarSearch(request, callback);
         }
 
         function callback(results, status) {
@@ -358,22 +184,34 @@
             }
         }
 
-        function createMarker(place, i) {
-			
-			var marker = new google.maps.Marker({
-				map: map,
-				position: new google.maps.LatLng(place[1], place[2]),
-				icon: {
+        function createMarker(place) {
+            var marker = new google.maps.Marker({
+                map: map,
+                position: place.geometry.location,
+                icon: {
                     url: '/files/landmark/images/map/' + userMkrIcon
+                    // Star
+                    // path: 'M 0,-24 6,-7 24,-7 10,4 15,21 0,11 -15,21 -10,4 -24,-7 -6,-7 z',
+                    // fillColor: '#ffff00',
+                    // fillOpacity: 1,
+                    // scale: 1/4,
+                    // strokeColor: '#bd8d2c',
+                    // strokeWeight: 1
                 }
-			});
-
-			google.maps.event.addListener(marker, 'click', function() {
-				infowindow.setContent(place[0]);
-				infowindow.open(map, marker);
-			});
+            });
 
             userMarkers[userMarkers.length] = marker;
+
+            google.maps.event.addListener(marker, 'click', function () {
+                service.getDetails(place, function (result, status) {
+                    if (status != google.maps.places.PlacesServiceStatus.OK) {
+                        alert(status);
+                        return;
+                    }
+                    infoWindow.setContent(result.name);
+                    infoWindow.open(map, marker);
+                });
+            });
         }
 
         function clearMarkers() {
@@ -382,16 +220,6 @@
             }
             userMarkers.length = 0;
         }
-		
-		function fitBounds() {
-			var LatLngList = new Array (new google.maps.LatLng (52.537,-2.061), new google.maps.LatLng (52.564,-2.017));
-			var bounds = new google.maps.LatLngBounds ();
-			for (var i = 0; i < userMarkers.length; i++) {
-				
-				bounds.extend(userMarkers[i].getPosition());
-			}
-			map.fitBounds(bounds);
-		}
 
         google.maps.event.addDomListener(window, 'load', initialize);
     </script>
@@ -403,7 +231,6 @@
         $(document).ready(function () {
             $('#gd-surroundings>li').click(function () {
                 $(this).addClass('active').siblings().removeClass('active');
-				userMarkID = $(this).prevAll().length;
                 userKeyword = $(this).data('keyword');
                 userMkrIcon = $(this).find('.badge').attr('id') + '.png';
                 clearMarkers();

@@ -1,26 +1,47 @@
 ----item----
 version: 1
-id: {A6FFD96D-7E79-4087-B89D-2A4D2C523E3C}
+id: {733BF341-0A51-4654-8A2C-8956AA60B458}
 database: master
-path: /sitecore/content/Home/Landmark/Our Location/Directions/Getting Here/Causeway Bay
-parent: {AE130080-B8B6-4D9E-B863-C88DC329B657}
-name: Causeway Bay
+path: /sitecore/content/Home/Landmark/Our Location/Directions/Nearby Facilities/Nearby Facilities/Bus Stations
+parent: {E34B6545-7755-4CFD-AEF0-5FDFCB7B0FBD}
+name: Bus Stations
 master: {00000000-0000-0000-0000-000000000000}
-template: {3E8C53BC-1805-434C-BD94-65316F9AFC71}
-templatekey: T35 Starting Location Object
+template: {A337AEA0-268D-40AF-89A7-19026D7D8142}
+templatekey: T35 Nearby Facilitie Object
 
+----field----
+field: {86651C15-BAF8-4CC2-81B6-175C195A9938}
+name: Value
+key: value
+content-length: 1
+
+4
+----field----
+field: {97E39A7B-6787-4ECA-ACB7-DDD987FDFC2B}
+name: Keyword
+key: keyword
+content-length: 3
+
+BUS
+----field----
+field: {FF1B95FA-99DE-417F-BE84-E65BB3AD1E26}
+name: Marker Id
+key: marker id
+content-length: 13
+
+map-marker-05
 ----version----
 language: en
 version: 1
-revision: 86497ea3-fd89-4f29-853d-a7bfcef19033
+revision: b4d47cb8-375b-482f-906d-bf51e18b399e
 
 ----field----
-field: {38AC07B7-0A25-41CB-B0DE-51431856ADF2}
-name: Starting Location
-key: starting location
+field: {A2C037D1-6BD5-4077-AAE7-218BDC4AD503}
+name: Text
+key: text
 content-length: 12
 
-Causeway Bay
+BUS STATIONS
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -34,7 +55,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20150824T093033Z
+20151202T082522Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-86497ea3-fd89-4f29-853d-a7bfcef19033
+b4d47cb8-375b-482f-906d-bf51e18b399e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150824T093045:635760054459579981Z
+20151202T082539:635846415396848187Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

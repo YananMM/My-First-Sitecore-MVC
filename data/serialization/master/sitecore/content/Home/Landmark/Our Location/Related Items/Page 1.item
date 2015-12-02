@@ -5,7 +5,7 @@ database: master
 path: /sitecore/content/Home/Landmark/Our Location/Related Items/Page 1
 parent: {82132A9B-CFA5-441F-B253-97539EA0A38E}
 name: Page 1
-master: {00000000-0000-0000-0000-000000000000}
+master: {A13598F7-D565-4FCC-A1EE-15E7C158F17B}
 template: {A46D7A20-B29F-4C4F-8922-0B70555CD6BC}
 templatekey: T27 Page
 
@@ -16,17 +16,10 @@ key: __originator
 content-length: 0
 
 
-----field----
-field: {9135200A-5626-4DD8-AB9D-D665B8C11748}
-name: __Never publish
-key: __never publish
-content-length: 1
-
-1
 ----version----
 language: en
 version: 1
-revision: ee5e241e-ad12-4857-a4e4-4e6ff09738ba
+revision: 4f07b0f4-ac09-4cb7-a9fc-84e95905a9d4
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -55,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ee5e241e-ad12-4857-a4e4-4e6ff09738ba
+4f07b0f4-ac09-4cb7-a9fc-84e95905a9d4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151124T084733Z
+20151111T062848:635828201280955834Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

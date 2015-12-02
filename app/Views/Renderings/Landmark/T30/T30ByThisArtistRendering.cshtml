@@ -7,7 +7,7 @@
 @{
     ArtTourHelper helper = new ArtTourHelper();
 
-    var artPieces = helper.GetArtByArtist(Sitecore.Context.Item.ID.ToString());
+    var artPieces = helper.GetArtByArtist(Sitecore.Context.Item.ID.ToString()).OrderBy(p=>p.DisplayName).ToList();
 }
 <div class="container">
 
@@ -15,13 +15,12 @@
         <h3>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ByThisArtistItem))</h3>
         <div class="row">
 
-            @if (artPieces != null && artPieces.Count != 0)
+            @if (artPieces.Count != 0)
             {
                 //if (artPieces.Count > 4)
                 //{
                 //    artPieces = artPieces.GetRange(0, 4);
                 //}
-
                 foreach (var item in artPieces)
                 {
                     <div class="col-sm-3">

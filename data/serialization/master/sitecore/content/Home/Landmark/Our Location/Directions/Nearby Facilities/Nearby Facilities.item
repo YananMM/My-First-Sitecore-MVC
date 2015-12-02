@@ -1,40 +1,33 @@
 ----item----
 version: 1
-id: {EFDF906B-5EAB-4210-BF4F-89BBEADE32D5}
+id: {E34B6545-7755-4CFD-AEF0-5FDFCB7B0FBD}
 database: master
-path: /sitecore/content/Home/Landmark/Our Location/Directions/Getting Here/Mongkok
-parent: {AE130080-B8B6-4D9E-B863-C88DC329B657}
-name: Mongkok
+path: /sitecore/content/Home/Landmark/Our Location/Directions/Nearby Facilities/Nearby Facilities
+parent: {54824316-017A-4B94-AD8E-F636473B510A}
+name: Nearby Facilities
 master: {00000000-0000-0000-0000-000000000000}
-template: {3E8C53BC-1805-434C-BD94-65316F9AFC71}
-templatekey: T35 Starting Location Object
+template: {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
+templatekey: Folder
 
+----field----
+field: {1172F251-DAD4-4EFB-A329-0C63500E4F1E}
+name: __Masters
+key: __masters
+content-length: 38
+
+{A337AEA0-268D-40AF-89A7-19026D7D8142}
 ----version----
 language: en
 version: 1
-revision: 51a71635-d25c-42b1-9046-d19bdf56aca6
+revision: 9fb38b40-54ba-4f96-92d7-5ddcd640549c
 
-----field----
-field: {38AC07B7-0A25-41CB-B0DE-51431856ADF2}
-name: Starting Location
-key: starting location
-content-length: 7
-
-Mongkok
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150824T092938Z
+20151202T075420Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-51a71635-d25c-42b1-9046-d19bdf56aca6
+9fb38b40-54ba-4f96-92d7-5ddcd640549c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20150824T093318:635760055986197298Z
+20151202T080311:635846401914157021Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
