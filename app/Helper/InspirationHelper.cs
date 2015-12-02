@@ -197,27 +197,31 @@ namespace Landmark.Helper
                 allItems = brands;
             }
             var currentTagsField = currentItem.Fields["tags"];
-            List<string> itemTags = new List<string>();
+            List<string> storyTags = new List<string>();
             if (!string.IsNullOrEmpty(currentTagsField.Value))
             {
-                itemTags = currentTagsField.ToString().Split('|').ToList();
+                storyTags = currentTagsField.ToString().Split('|').ToList();
             }
             foreach (var item in allItems)
             {
                 var itemTagsField = item.Fields["Tags"];
-                var storyTags = itemTagsField.ToString().Split('|').ToList();
-                var tags = storyTags.Intersect(itemTags).ToList();
-                if (tags.Count != 0)
+                List<string> itemTags  = new List<string>();
+                if (!string.IsNullOrEmpty(itemTagsField.Value))
                 {
-                    RelatedItem relatedItem = new RelatedItem
+                    itemTags = itemTagsField.ToString().Split('|').ToList();
+                    List<string> tags = storyTags.Intersect(itemTags).ToList();
+                    if (tags.Count != 0)
                     {
-                        Item = item,
-                        TagCount = tags.Count()
-                    };
-                    relatedItems.Add(relatedItem);
+                        RelatedItem relatedItem = new RelatedItem
+                        {
+                            Item = item,
+                            TagCount = tags.Count()
+                        };
+                        relatedItems.Add(relatedItem);
+                    }
                 }
             }
-            return relatedItems.OrderBy(p => p.TagCount).ToList();
+            return relatedItems.OrderByDescending(p => p.TagCount).ToList();
         }
     }
 }

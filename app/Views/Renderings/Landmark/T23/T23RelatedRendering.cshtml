@@ -24,7 +24,7 @@
                 {
                     foreach (var item in relatedStoris)
                     {
-                        var image = LandmarkHelper.GetCallOutImage(item.Item);
+                        //var image = LandmarkHelper.GetCallOutImage(item.Item);
                         <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.Item))">
                             <div class="col-sm-6 clearfix">
                                 <img data-src="@Html.Sitecore().ImageFieldSrc("Article Portrait Callout Image", item.Item)">
