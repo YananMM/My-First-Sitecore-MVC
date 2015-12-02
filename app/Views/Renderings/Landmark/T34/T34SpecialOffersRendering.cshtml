@@ -15,7 +15,10 @@
                     <div class="gd-offers-body">
                         <h4>@Html.Sitecore().Field("Offer Title", item)</h4>
                         <p>@Html.Sitecore().Field("Offer Description", item)</p>
-                        <a href="javascript:;" class="gd-link-book">
+                        @{
+                            var bookUrl = (LinkField) item.Fields["Offer Link Url"];
+                        }
+                        <a href="@bookUrl.Url" class="gd-link-book" target="@bookUrl.Target">
                             @Html.Sitecore().Field("Offer Link Label", item) <span class="icomoon-chevron-small-right"></span>
                         </a>
                     </div>
