@@ -87,9 +87,9 @@ namespace Landmark.Helper
         {
             var parentItem = currentItem.Parent;
             var grandParentItem = parentItem.Parent;
+            string currentTag = string.Empty;
             List<Item> allCategories = new List<Item>();
             List<Item> subCategories = new List<Item>();
-            string currentTag = string.Empty;
             if (isShop)
                 allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
             if (isDining)
@@ -116,7 +116,7 @@ namespace Landmark.Helper
 
             if (subCategories == null || !subCategories.Any())
             {
-                Item currentCategory = allCategories.SingleOrDefault(i => i.DisplayName.Replace("_"," ").Replace(i.Parent.DisplayName + "-", "").Trim() == parentItem.DisplayName);
+                Item currentCategory = allCategories.SingleOrDefault(i => i.DisplayName.Replace("_", " ").Replace(i.Parent.DisplayName + "-", "").Trim() == parentItem.DisplayName);
                 if (currentCategory != null)
                 {
                     currentTag = currentCategory.ID.ToString();
@@ -224,7 +224,7 @@ namespace Landmark.Helper
                     subCategoriess.Select(p => new TextValue
                     {
                         text = p["Tag Name"],
-                        DisplayName = p.DisplayName.Replace("_", " ").Replace(p.Parent.DisplayName + "-", " "),
+                        DisplayName = p.DisplayName.Replace("_", " ").Replace(p.Parent.DisplayName + "-", " ").Trim(),
                         value = p.ID.ToString()
                     }).OrderBy(p => p.DisplayName).ToList();
                 item.children = children;
@@ -234,39 +234,82 @@ namespace Landmark.Helper
 
         public List<string> GetRelatedCategoriesIDs()
         {
-
-            List<Item> allshoppingCategories = null;
-            if (isShop)
-            {
-                allshoppingCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
-            }
-            else
+            List<string> relatedCategoriesIDs = new List<string>();
+            List<Item> allshoppingCategories = new List<Item>();
+            Item currentItem = Sitecore.Context.Item;
+            var parentItem = currentItem.Parent;
+            var grandParentItem = parentItem.Parent;
+            var subCategory = parentItem;
+            List<Item> subCategories = new ItemList();
+            if (isDining)
             {
                 allshoppingCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);
-            }
-
-            Item currentShoppingPage = Sitecore.Context.Item;
-            Item currentItem = Sitecore.Context.Item;
-            if (currentItem.DisplayName == "By Brands" || currentItem.DisplayName == "By Buildings")
-            {
-                currentShoppingPage = currentItem.Parent.Parent;
-            }
-            List<string> relatedCategoriesIDs = new List<string>();
-            foreach (var item in allshoppingCategories)
-            {
-                if (item.DisplayName == currentShoppingPage.DisplayName)
+                foreach (var item in allshoppingCategories)
                 {
-                    var relatedCategories = item.Fields["Related Tags"].ToString();
-                    if (!string.IsNullOrEmpty(relatedCategories))
+                    if (item.DisplayName == parentItem.DisplayName)
                     {
-                        relatedCategoriesIDs = relatedCategories.Split('|').ToList();
-                        if (relatedCategoriesIDs.Count > 3)
+                        var relatedCategories = item.Fields["Related Tags"].ToString();
+                        if (!string.IsNullOrEmpty(relatedCategories))
                         {
-                            relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
+                            relatedCategoriesIDs = relatedCategories.Split('|').ToList();
+                            if (relatedCategoriesIDs.Count > 3)
+                            {
+                                relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
+                            }
                         }
                     }
                 }
+            } 
+            if (isShop)
+            {
+                allshoppingCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
+                if (parentItem.TemplateID.ToString() == ItemGuids.ShoppingSubCategoryPageObject)
+                {
+                    foreach (var item in allshoppingCategories)
+                    {
+                        if (item.DisplayName == grandParentItem.DisplayName)
+                        {
+                            subCategories = item.Children.ToList();
+                        }
+                    }
+                    foreach (var item in subCategories)
+                    {
+                        if (item.DisplayName.Replace("_", " ").Replace(item.Parent.DisplayName + "-", " ").Trim() == parentItem.DisplayName)
+                        {
+                            var relatedCategories = item.Fields["Related Tags"].ToString();
+                            if (!string.IsNullOrEmpty(relatedCategories))
+                            {
+                                relatedCategoriesIDs = relatedCategories.Split('|').ToList();
+                                if (relatedCategoriesIDs.Count > 3)
+                                {
+                                    relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
+                                }
+                            }
+                        }
+                    }
+                }
+                else if (parentItem.TemplateID.ToString() == ItemGuids.T11PageTemplate)
+                {
+                    foreach (var item in allshoppingCategories)
+                    {
+                        if (item.DisplayName == parentItem.DisplayName)
+                        {
+                            var relatedCategories = item.Fields["Related Tags"].ToString();
+                            if (!string.IsNullOrEmpty(relatedCategories))
+                            {
+                                relatedCategoriesIDs = relatedCategories.Split('|').ToList();
+                                if (relatedCategoriesIDs.Count > 3)
+                                {
+                                    relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
+                                }
+                            }
+                        }
+                    }
+                }
+                
             }
+            
+
             return relatedCategoriesIDs;
         }
 

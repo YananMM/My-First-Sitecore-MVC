@@ -1,4 +1,5 @@
-﻿@using Landmark.Classes
+﻿@using System.Globalization
+@using Landmark.Classes
 @using Landmark.Helper
 @using Landmark.Models
 @using Sitecore.Configuration
@@ -40,12 +41,12 @@
 
         <div class="gd-controls-m visible-xs">
             <select class="form-control">
-                <option value="?type" @{if (Request["type"] == null) { <text> selected="selected" </text>     }}>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem))</option>
+                <option value="?type" @{if (Request["type"] == null) { <text> selected="selected" </text>      }}>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem))</option>
                 @foreach (var type in types)
                 {
                     if (Int32.Parse(type.count) > 0)
                     {
-                        <option value="?type=@type.value" @{if (Request["type"] == type.value) { <text> selected="selected" </text>    }}>@type.value (@type.count)</option>}
+                        <option value="?type=@type.value" @{if (Request["type"] == type.value) { <text> selected="selected" </text>     }}>@type.value (@type.count)</option>}
                 }
             </select>
         </div>
@@ -117,9 +118,21 @@
                                 {
                                     <p>@Html.Sitecore().Field("Article Intro", resultItem)</p>
                                 }
-                                <div>@result.GetItem().Statistics.Created.ToString("MMM dd,yyyy")</div>
-                            </div>
-                        </li>
+                                
+                                @if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
+                                {
+                                    <div>@result.GetItem().Statistics.Created.ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat)</div>
+                                }
+                                else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
+                                {
+                                    <div>@result.GetItem().Statistics.Created.ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat)</div>
+                                }
+                                else if (Html.Sitecore().CurrentItem.Language.Name == "en")
+                                {
+                                    <div>@result.GetItem().Statistics.Created.ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</div>
+                                }
+                        </div>
+                    </li>
                     }
                 }
             </ol>

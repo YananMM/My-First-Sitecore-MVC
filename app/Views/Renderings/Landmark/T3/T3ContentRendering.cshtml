@@ -35,11 +35,11 @@
                     {
                         if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
                         {
-                            <p>@LandmarkHelper.ToValidDateTime(date).ToString("yyyy年 MMM dd日", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat)</p>
+                            <p>@LandmarkHelper.ToValidDateTime(date).ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat)</p>
                         }
                         else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
                         {
-                            <p>@LandmarkHelper.ToValidDateTime(date).ToString("yyyy年 MMM dd日", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat)</p>
+                            <p>@LandmarkHelper.ToValidDateTime(date).ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat)</p>
                         }
                         else if (Html.Sitecore().CurrentItem.Language.Name == "en")
                         {
