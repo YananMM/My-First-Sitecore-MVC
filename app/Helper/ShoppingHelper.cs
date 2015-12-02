@@ -241,6 +241,25 @@ namespace Landmark.Helper
             var grandParentItem = parentItem.Parent;
             var subCategory = parentItem;
             List<Item> subCategories = new ItemList();
+            if (currentItem.TemplateID.ToString() == ItemGuids.T11PageTemplate)
+            {
+                allshoppingCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
+                foreach (var item in allshoppingCategories)
+                {
+                    if (item.DisplayName == currentItem.DisplayName)
+                    {
+                        var relatedCategories = item.Fields["Related Tags"].ToString();
+                        if (!string.IsNullOrEmpty(relatedCategories))
+                        {
+                            relatedCategoriesIDs = relatedCategories.Split('|').ToList();
+                            if (relatedCategoriesIDs.Count > 3)
+                            {
+                                relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
+                            }
+                        }
+                    }
+                }
+            }
             if (isDining)
             {
                 allshoppingCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);

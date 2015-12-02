@@ -49,7 +49,7 @@
                                     var category = Sitecore.Context.Database.GetItem(id);
                                     if (category.DisplayName == item.DisplayName)
                                     {
-                                        <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">@item.DisplayName</a>
+                                        <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">@item.Fields["Page Title"]</a>
                                     }
                                 }
                             }
