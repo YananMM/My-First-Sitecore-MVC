@@ -25,6 +25,7 @@ namespace Landmark.Classes
         public static readonly String OneTitleOneTextLink = "{F2834073-085E-429E-A9A2-40DD9FC9FC97}";
         public static readonly String TwoNumbersTwoCaptionsTextLink = "{BC7C0D97-3B48-4FD9-B25D-AA3F37EE6C90}";
         public static readonly String T11PageTemplate = "{3832F0F6-6342-4394-932C-2DDAB1164C97}";
+        public static readonly String T13PageTemplate = "{0B591CE8-50CB-4CF5-9CBF-F2F6E61F23E8}";
         public static readonly String ShoppingItem = "{07A37ABC-D676-4737-8B14-79EC18486CE8}";
         public static readonly String DiningItem = "{AA676B4A-E135-4B6F-8889-B9AFBDED5699}";
         public static readonly String NowAtLandmarkItem = "{F0A68E40-FB4F-4B85-969D-A6ADEE24DE6B}";

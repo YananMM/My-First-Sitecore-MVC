@@ -20,7 +20,7 @@
             var category = Sitecore.Context.Database.GetItem(id);
             if (category.DisplayName == item.DisplayName)
             {
-                if (item.Parent.ID.ToString() == ItemGuids.DiningItem)
+                if (item.Children.FirstOrDefault().TemplateID.ToString() == ItemGuids.T13PageTemplate)
                 {
                     <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.Children.FirstOrDefault()))">@Html.Sitecore().Field("Page Title", item)</a></li>
                 }
