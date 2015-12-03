@@ -239,7 +239,7 @@ namespace Landmark.Helper
             Item currentItem = Sitecore.Context.Item;
             var parentItem = currentItem.Parent;
             var grandParentItem = parentItem.Parent;
-            var subCategory = parentItem;
+            Item currentTag = parentItem;
             List<Item> subCategories = new ItemList();
             if (currentItem.TemplateID.ToString() == ItemGuids.T11PageTemplate)
             {
@@ -248,15 +248,7 @@ namespace Landmark.Helper
                 {
                     if (item.DisplayName == currentItem.DisplayName)
                     {
-                        var relatedCategories = item.Fields["Related Tags"].ToString();
-                        if (!string.IsNullOrEmpty(relatedCategories))
-                        {
-                            relatedCategoriesIDs = relatedCategories.Split('|').ToList();
-                            if (relatedCategoriesIDs.Count > 3)
-                            {
-                                relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
-                            }
-                        }
+                        currentTag = item;
                     }
                 }
             }
@@ -267,15 +259,7 @@ namespace Landmark.Helper
                 {
                     if (item.DisplayName == parentItem.DisplayName)
                     {
-                        var relatedCategories = item.Fields["Related Tags"].ToString();
-                        if (!string.IsNullOrEmpty(relatedCategories))
-                        {
-                            relatedCategoriesIDs = relatedCategories.Split('|').ToList();
-                            if (relatedCategoriesIDs.Count > 3)
-                            {
-                                relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
-                            }
-                        }
+                        currentTag = item;
                     }
                 }
             } 
@@ -295,15 +279,7 @@ namespace Landmark.Helper
                     {
                         if (item.DisplayName.Replace("_", " ").Replace(item.Parent.DisplayName + "-", " ").Trim() == parentItem.DisplayName)
                         {
-                            var relatedCategories = item.Fields["Related Tags"].ToString();
-                            if (!string.IsNullOrEmpty(relatedCategories))
-                            {
-                                relatedCategoriesIDs = relatedCategories.Split('|').ToList();
-                                if (relatedCategoriesIDs.Count > 3)
-                                {
-                                    relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
-                                }
-                            }
+                            currentTag = item;
                         }
                     }
                 }
@@ -313,22 +289,21 @@ namespace Landmark.Helper
                     {
                         if (item.DisplayName == parentItem.DisplayName)
                         {
-                            var relatedCategories = item.Fields["Related Tags"].ToString();
-                            if (!string.IsNullOrEmpty(relatedCategories))
-                            {
-                                relatedCategoriesIDs = relatedCategories.Split('|').ToList();
-                                if (relatedCategoriesIDs.Count > 3)
-                                {
-                                    relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
-                                }
-                            }
+                            currentTag = item;
                         }
                     }
                 }
-                
             }
-            
 
+            var relatedCategories = currentTag.Fields["Related Tags"].ToString();
+            if (!string.IsNullOrEmpty(relatedCategories))
+            {
+                relatedCategoriesIDs = relatedCategories.Split('|').ToList();
+                if (relatedCategoriesIDs.Count > 3)
+                {
+                    relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
+                }
+            }
             return relatedCategoriesIDs;
         }
 
