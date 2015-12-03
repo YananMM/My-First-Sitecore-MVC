@@ -26,22 +26,43 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: a6589d3f-0475-4ab8-8113-668ade68ade1
+revision: 93d60c5c-fb3f-445d-b7ab-9fcf21a593b0
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 27
+
+Hong Kong Arts and Antiques
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 38
+content-length: 0
 
-Hong Kong Arts and Antiques | LANDMARK
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 148
+content-length: 152
 
-In LANDMARK, you can find wide variety of antique ceramics and assorted works of art, old and modern jade jewellery that can add to your collection.
+Satisfy your art cravings at LANDMARK with the wide variety of antique ceramics and assorted artworks including old and modern jade jewellery available.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 27
+
+Hong Kong Arts and Antiques
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 152
+
+Satisfy your art cravings at LANDMARK with the wide variety of antique ceramics and assorted artworks including old and modern jade jewellery available.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -62,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a6589d3f-0475-4ab8-8113-668ade68ade1
+93d60c5c-fb3f-445d-b7ab-9fcf21a593b0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151111T131556Z
+20151126T025149Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -80,19 +101,40 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: e647c96f-b26e-46a3-a80b-3b9284a0cb25
+revision: e6caf8f1-fb44-4621-94f8-12437c4f03f2
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+香港工艺及古董
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 14
+content-length: 0
 
-香港工艺及古董 | 置地广塲
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
+content-length: 50
+
+於置地广塲您可以找到各种各样的古董陶瓷和艺术商店，买卖古老和现代珠宝玉器，可让您添加到您的收藏集子。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+香港工艺及古董
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 50
 
 於置地广塲您可以找到各种各样的古董陶瓷和艺术商店，买卖古老和现代珠宝玉器，可让您添加到您的收藏集子。
@@ -130,14 +172,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e647c96f-b26e-46a3-a80b-3b9284a0cb25
+e6caf8f1-fb44-4621-94f8-12437c4f03f2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151111T120659Z
+20151126T025230Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -148,19 +190,40 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 13877cd1-b0c9-4d4c-945f-fb540199356e
+revision: 995f639d-5612-46ce-bfcc-e24ddb17f61f
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+香港工藝及古董
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 14
+content-length: 0
 
-香港工藝及古董 | 置地廣塲
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
+content-length: 50
+
+於置地廣塲您可以找到各種各樣的古董陶瓷和藝術商店，買賣古老和現代珠寶玉器，可讓您添加到您的收藏集子。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+香港工藝及古董
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 50
 
 於置地廣塲您可以找到各種各樣的古董陶瓷和藝術商店，買賣古老和現代珠寶玉器，可讓您添加到您的收藏集子。
@@ -198,14 +261,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-13877cd1-b0c9-4d4c-945f-fb540199356e
+995f639d-5612-46ce-bfcc-e24ddb17f61f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151111T120706Z
+20151126T025210Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

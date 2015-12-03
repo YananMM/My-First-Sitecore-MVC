@@ -54,7 +54,7 @@ shop-311-312
 ----version----
 language: en
 version: 1
-revision: 212dd91d-c2b9-4b88-980d-33bbce130aa2
+revision: 1d58670e-25ca-4242-a94c-104b8670237d
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -64,9 +64,30 @@ content-length: 8
 
 Citibank
 ----field----
+field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
+name: Content Title
+key: content title
+content-length: 8
+
+Citibank
+----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
+content-length: 190
+
+<p>Citibank branches offer a wide range of comprehensive banking services, including loan and mortgage, stock account opening, investment and insurance services, deposit and credit card.</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 8
+
+Citibank
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
 content-length: 183
 
 Citibank branches offer a wide range of comprehensive banking services, including loan and mortgage, stock account opening, investment and insurance services, deposit and credit card.
@@ -78,6 +99,13 @@ content-length: 8
 
 Citibank
 ----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 183
+
+Citibank branches offer a wide range of comprehensive banking services, including loan and mortgage, stock account opening, investment and insurance services, deposit and credit card.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -88,18 +116,18 @@ Citibank
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 183
+content-length: 190
 
-Citibank branches offer a wide range of comprehensive banking services, including loan and mortgage, stock account opening, investment and insurance services, deposit and credit card.
+<p>Citibank branches offer a wide range of comprehensive banking services, including loan and mortgage, stock account opening, investment and insurance services, deposit and credit card.</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 65
+content-length: 77
 
-Mon-Fri 9:30am-5pm
-Sat 9:30am-12:30pm
-Sun & Public Holiday closed
+Mon-Fri 9:30am-5pm<br>
+Sat 9:30am-12:30pm<br>
+Sun &amp; Public Holiday closed
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -114,6 +142,13 @@ key: address
 content-length: 38
 
 Shop 311-312, 3/F, Two Exchange Square
+----field----
+field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
+name: Description
+key: description
+content-length: 8
+
+Citibank
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -134,14 +169,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-212dd91d-c2b9-4b88-980d-33bbce130aa2
+1d58670e-25ca-4242-a94c-104b8670237d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T091134Z
+20151126T042546Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -152,7 +187,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: cbcaba70-61ac-4def-86c1-bbad64627c67
+revision: 6ae69907-1b00-4643-a368-58172eb83b47
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -172,6 +207,34 @@ content-length: 4
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
+content-length: 73
+
+<p>&lt;p&gt;花旗银行分行提供全面的银行服务，包括贷款及按揭、证券开户服务、投资及保险服务、存款及信用卡等。&lt;/p&gt;</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+花旗银行
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 47
+
+花旗银行分行提供全面的银行服务，包括贷款及按揭、证券开户服务、投资及保险服务、存款及信用卡等。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 4
+
+花旗银行
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 47
 
 花旗银行分行提供全面的银行服务，包括贷款及按揭、证券开户服务、投资及保险服务、存款及信用卡等。
@@ -186,17 +249,17 @@ content-length: 4
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 47
+content-length: 73
 
-花旗银行分行提供全面的银行服务，包括贷款及按揭、证券开户服务、投资及保险服务、存款及信用卡等。
+<p>&lt;p&gt;花旗银行分行提供全面的银行服务，包括贷款及按揭、证券开户服务、投资及保险服务、存款及信用卡等。&lt;/p&gt;</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 49
+content-length: 57
 
-星期一至星期五 9:30am-5pm
-星期六 9:30am-12:30pm
+星期一至星期五 9:30am-5pm<br>
+星期六 9:30am-12:30pm<br>
 星期日及公众假期 休息
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
@@ -212,6 +275,13 @@ key: address
 content-length: 24
 
 交易广塲第二座, 3/F, 311-312 号铺
+----field----
+field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
+name: Description
+key: description
+content-length: 4
+
+花旗银行
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -239,14 +309,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cbcaba70-61ac-4def-86c1-bbad64627c67
+6ae69907-1b00-4643-a368-58172eb83b47
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151112T033007Z
+20151126T042638Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -257,7 +327,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: f52b2984-67a5-4f19-8c96-d9ffcb0852e5
+revision: 85ff9a5f-7243-4c66-8f5b-661d79ce5f5f
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -277,6 +347,34 @@ content-length: 4
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
+content-length: 54
+
+<p>花旗銀行分行提供全面的銀行服務，包括貸款及按揭、證券開户服務、投資及保險服務、存款及信用卡等。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+花旗銀行
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 47
+
+花旗銀行分行提供全面的銀行服務，包括貸款及按揭、證券開户服務、投資及保險服務、存款及信用卡等。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 4
+
+花旗銀行
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 47
 
 花旗銀行分行提供全面的銀行服務，包括貸款及按揭、證券開户服務、投資及保險服務、存款及信用卡等。
@@ -291,17 +389,17 @@ content-length: 4
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 47
+content-length: 54
 
-花旗銀行分行提供全面的銀行服務，包括貸款及按揭、證券開户服務、投資及保險服務、存款及信用卡等。
+<p>花旗銀行分行提供全面的銀行服務，包括貸款及按揭、證券開户服務、投資及保險服務、存款及信用卡等。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 49
+content-length: 63
 
-星期一至星期五 9:30am-5pm
-星期六 9:30am-12:30pm
+星期一至星期五 9:30am-5pm&nbsp;<br>
+星期六 9:30am-12:30pm<br>
 星期日及公眾假期 休息
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
@@ -317,6 +415,13 @@ key: address
 content-length: 24
 
 交易廣塲第二座, 3/F, 311-312 號舖
+----field----
+field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
+name: Description
+key: description
+content-length: 4
+
+花旗銀行
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -337,14 +442,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f52b2984-67a5-4f19-8c96-d9ffcb0852e5
+85ff9a5f-7243-4c66-8f5b-661d79ce5f5f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151112T032953Z
+20151126T042733Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

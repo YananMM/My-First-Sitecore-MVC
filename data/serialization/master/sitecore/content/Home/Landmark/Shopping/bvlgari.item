@@ -54,7 +54,7 @@ shop-G3
 ----version----
 language: en
 version: 1
-revision: 396d69be-f358-448e-9a09-90758bcbb223
+revision: 381cc599-09fc-4770-9438-0c229a792307
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -78,12 +78,19 @@ content-length: 481
 
 BVLGARI, one of the world's leading luxury brands, was founded in 1884. It has since gone on to become one of the major global players in the luxury market, and today has a distribution network of over 250 stores in the most exclusive shopping areas in the world. BVLGARI’s product portfolio ranges from jewels and watches to accessories, perfumes and even hotels. Today BVLGARI creations are highly appreciated by an international clientele fond of high quality and unique design.
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+BVLGARI
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 15
+content-length: 0
 
-BVLGARI,BULGARI
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -167,21 +174,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-396d69be-f358-448e-9a09-90758bcbb223
+381cc599-09fc-4770-9438-0c229a792307
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151634Z
+20151126T021802Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1

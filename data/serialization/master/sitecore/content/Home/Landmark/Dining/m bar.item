@@ -20,13 +20,13 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 233
+content-length: 194
 
-{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}|{6ADD337A-5273-4504-AD72-8C601D69C6F9}|{50CB2BA4-EF38-46ED-908C-1CAD2F171849}|{410058FD-4835-43BD-9FC0-430DAF3C8381}|{2ED5B361-4D7A-4A48-B63E-8FE23B71DB8E}|{6B69973D-6FCC-45B2-9C75-ECCBC56F42FC}
+{6ADD337A-5273-4504-AD72-8C601D69C6F9}|{50CB2BA4-EF38-46ED-908C-1CAD2F171849}|{410058FD-4835-43BD-9FC0-430DAF3C8381}|{2ED5B361-4D7A-4A48-B63E-8FE23B71DB8E}|{6B69973D-6FCC-45B2-9C75-ECCBC56F42FC}
 ----version----
 language: en
 version: 1
-revision: a5de2c62-f73e-4ed7-8f4a-94bafa4b6a9c
+revision: 95e14907-334a-41ef-9ad3-8fe930c97b7f
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -46,23 +46,30 @@ A sophisticated space with a sensational view and the stylish epicentre of Hong 
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 701
+content-length: 708
 
-Located on the 25th floor of Mandarin Oriental, Hong Kong, this stylish bar, which boasts stunning views over the harbour and the glittering skyline, has established itself as one of the city’s favourite night time destinations. Enjoying a very stylish design with a stunning central bar area, M bar serves a selection of classic cocktails, wines and champagnes alongside several exotic drink creations such as the Hong Kong Legend, a vodka, osmanthus wine, lychee liqueur, lychee, lime and whisky gum concoction, and the Earl Grey Mar-tea-ni, made with homemade Earl Grey-infused gin, orange juice and sugar. The bar serves a selection of dim sum at lunchtime and light dishes throughout the evening.
+<p>Located on the 25th floor of Mandarin Oriental, Hong Kong, this stylish bar, which boasts stunning views over the harbour and the glittering skyline, has established itself as one of the city’s favourite night time destinations. Enjoying a very stylish design with a stunning central bar area, M bar serves a selection of classic cocktails, wines and champagnes alongside several exotic drink creations such as the Hong Kong Legend, a vodka, osmanthus wine, lychee liqueur, lychee, lime and whisky gum concoction, and the Earl Grey Mar-tea-ni, made with homemade Earl Grey-infused gin, orange juice and sugar. The bar serves a selection of dim sum at lunchtime and light dishes throughout the evening.</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 5
+
+M bar
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 9
+content-length: 0
 
-M bar,Bar
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 97
+content-length: 229
 
-A sophisticated space with a sensational view and the stylish epicentre of Hong Kong’s nightlife.
+Located on the 25th floor of Mandarin Oriental, Hong Kong, this stylish bar, which boasts stunning views over the harbour and the glittering skyline, has established itself as one of the city’s favourite night time destinations. 
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -74,9 +81,9 @@ M bar
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 97
+content-length: 229
 
-A sophisticated space with a sensational view and the stylish epicentre of Hong Kong’s nightlife.
+Located on the 25th floor of Mandarin Oriental, Hong Kong, this stylish bar, which boasts stunning views over the harbour and the glittering skyline, has established itself as one of the city’s favourite night time destinations. 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -95,9 +102,11 @@ Located on the 25th floor of Mandarin Oriental, Hong Kong, this stylish bar, whi
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 91
+content-length: 109
 
-Monday to Friday: 11am-12:45am  Saturday: 5pm-12:45am  Sunday & Public Holiday: 5pm-11:45pm
+Monday to Friday: 11am-12:45am  <br>
+Saturday: 5pm-12:45am  <br>
+Sunday &amp; Public Holiday: 5pm-11:45pm<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -139,14 +148,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a5de2c62-f73e-4ed7-8f4a-94bafa4b6a9c
+95e14907-334a-41ef-9ad3-8fe930c97b7f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T044749Z
+20151126T035452Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -157,7 +166,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: ef899e0d-4880-417a-9531-5bc87d2994fa
+revision: a5eda305-d9da-44b2-9187-96828033eb8f
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -177,23 +186,30 @@ content-length: 31
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 227
+content-length: 234
 
-M bar位于香港文华东方酒店25楼，俯瞰维多利亚港及中环大都会令人迷醉的景致，是城中最受追捧的聚会地之一。酒吧位处闹市中心，环境时尚别致，更提供一系列经典鸡尾酒、葡萄酒、香槟和自创特色饮品，如以伏特加、桂花陈酒、荔枝甜酒、荔枝、青柠和威士忌软糖调制的Hong Kong Legend，以及用自家制作的Earl Grey Gin配上橙汁和糖调制的Earl Grey Mar-tea-ni。酒吧午餐时段供应精致点心，而黄昏时段也备有多款巧手小食供客人选择。
+<p>M bar位于香港文华东方酒店25楼，俯瞰维多利亚港及中环大都会令人迷醉的景致，是城中最受追捧的聚会地之一。酒吧位处闹市中心，环境时尚别致，更提供一系列经典鸡尾酒、葡萄酒、香槟和自创特色饮品，如以伏特加、桂花陈酒、荔枝甜酒、荔枝、青柠和威士忌软糖调制的Hong Kong Legend，以及用自家制作的Earl Grey Gin配上橙汁和糖调制的Earl Grey Mar-tea-ni。酒吧午餐时段供应精致点心，而黄昏时段也备有多款巧手小食供客人选择。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 5
+
+M bar
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 9
+content-length: 0
 
-M bar,Bar
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 31
+content-length: 54
 
-别致空间与令人迷醉的窗外景色互相辉映，是香港夜生活的时尚胜地。
+M bar位于香港文华东方酒店25楼，俯瞰维多利亚港及中环大都会令人迷醉的景致，是城中最受追捧的聚会地之一。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -205,9 +221,9 @@ M bar
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 31
+content-length: 54
 
-别致空间与令人迷醉的窗外景色互相辉映，是香港夜生活的时尚胜地。
+M bar位于香港文华东方酒店25楼，俯瞰维多利亚港及中环大都会令人迷醉的景致，是城中最受追捧的聚会地之一。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -226,9 +242,11 @@ M bar位于香港文华东方酒店25楼，俯瞰维多利亚港及中环大都�
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 64
+content-length: 77
 
-星期一至星期五：早上11时至凌晨12时45分 星期六：下午5时至凌晨12时45分 星期日及公众假期：下午5时至晚上11时45分 
+星期一至星期五：早上11时至凌晨12时45分 <br>
+星期六：下午5时至凌晨12时45分<br>
+星期日及公众假期：下午5时至晚上11时45分 <br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -277,25 +295,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ef899e0d-4880-417a-9531-5bc87d2994fa
+a5eda305-d9da-44b2-9187-96828033eb8f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063923Z
+20151125T094710Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: c430e101-33fb-44a2-9231-82378590e35b
+revision: 0dc734a2-6ce3-437e-ac14-7c8f6957c12c
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -315,23 +333,30 @@ content-length: 31
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 227
+content-length: 234
 
-M bar位於香港文華東方酒店25樓，俯瞰維多利亞港及中環大都會令人迷醉的景致，是城中最受追捧的聚腳地之一。酒吧位處鬧市中心，環境時尚別致，更提供一系列經典雞尾酒、葡萄酒、香檳和自創特色飲品，例如以伏特加、桂花陳酒、荔枝甜酒、荔枝、青檸和威士忌軟糖調製的Hong Kong Legend，以及用自家製作Earl Grey Gin配上橙汁和糖調製的Earl Grey Mar-tea-ni。酒吧午餐時段供應精緻點心，而黃昏時段也備有多款巧手小食供客人選擇。
+<p>M bar位於香港文華東方酒店25樓，俯瞰維多利亞港及中環大都會令人迷醉的景致，是城中最受追捧的聚腳地之一。酒吧位處鬧市中心，環境時尚別致，更提供一系列經典雞尾酒、葡萄酒、香檳和自創特色飲品，例如以伏特加、桂花陳酒、荔枝甜酒、荔枝、青檸和威士忌軟糖調製的Hong Kong Legend，以及用自家製作Earl Grey Gin配上橙汁和糖調製的Earl Grey Mar-tea-ni。酒吧午餐時段供應精緻點心，而黃昏時段也備有多款巧手小食供客人選擇。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 5
+
+M bar
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 9
+content-length: 0
 
-M bar,Bar
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 31
+content-length: 54
 
-別致空間與令人迷醉的窗外景致互相輝映，是香港夜生活的時尚勝地。
+M bar位於香港文華東方酒店25樓，俯瞰維多利亞港及中環大都會令人迷醉的景致，是城中最受追捧的聚腳地之一。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -343,9 +368,9 @@ M bar
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 31
+content-length: 54
 
-別致空間與令人迷醉的窗外景致互相輝映，是香港夜生活的時尚勝地。
+M bar位於香港文華東方酒店25樓，俯瞰維多利亞港及中環大都會令人迷醉的景致，是城中最受追捧的聚腳地之一。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -364,9 +389,11 @@ M bar位於香港文華東方酒店25樓，俯瞰維多利亞港及中環大都�
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 64
+content-length: 78
 
-星期一至星期五：早上11時至凌晨12時45分 星期六：下午5時至凌晨12時45分 星期日及公眾假期：下午5時至晚上11時45分 
+星期一至星期五：早上11時至凌晨12時45分 <br>
+星期六：下午5時至凌晨12時45分 <br>
+星期日及公眾假期：下午5時至晚上11時45分 <br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -408,18 +435,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c430e101-33fb-44a2-9231-82378590e35b
+0dc734a2-6ce3-437e-ac14-7c8f6957c12c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063923Z
+20151125T094637Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

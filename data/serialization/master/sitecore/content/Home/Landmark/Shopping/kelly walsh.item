@@ -17,6 +17,20 @@ content-length: 65
 
 <image mediaid="{E878DE64-3BC0-4677-B734-C1531209A4B4}" alt="" />
 ----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
@@ -54,7 +68,7 @@ shop-B59-60
 ----version----
 language: en
 version: 1
-revision: 51c7face-d32a-4866-bdfb-edf6074ab43e
+revision: 886d204e-3b53-48a4-aed7-c9a744436689
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -74,11 +88,10 @@ Kelly & Walsh
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 670
+content-length: 680
 
-Kelly & Walsh is synonymous with quality books. It carries an alluring collection of books on art and design, architecture and fashion. It also has a charming selection of cookbooks, classic literature, fictions, books on current affairs, business, history, philosophy as well as automobiles.
-
-Kelly and Walsh began as a publisher and retailer in Shanghai in the 1870s. The books published were in English and mostly on topics of Asian culture. It gradually grew to having offices in Yokohama, Singapore, Hong Kong and Shanghai. Many of its books were beautiful books with silk bindings and fold out maps. In the 1950's, it established itself as a retailer in Hong Kong.
+<p>Kelly &amp; Walsh is synonymous with quality books. It carries an alluring collection of books on art and design, architecture and fashion. It also has a charming selection of cookbooks, classic literature, fictions, books on current affairs, business, history, philosophy as well as automobiles.
+Kelly and Walsh began as a publisher and retailer in Shanghai in the 1870s. The books published were in English and mostly on topics of Asian culture. It gradually grew to having offices in Yokohama, Singapore, Hong Kong and Shanghai. Many of its books were beautiful books with silk bindings and fold out maps. In the 1950's, it established itself as a retailer in Hong Kong.</p>
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -143,14 +156,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-51c7face-d32a-4866-bdfb-edf6074ab43e
+886d204e-3b53-48a4-aed7-c9a744436689
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T050503Z
+20151125T131621Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -161,7 +174,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: ef55c2f1-454a-4ae5-9c9e-beba74929b70
+revision: 1fcec146-37b2-4704-b50f-479d55879d6d
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -181,11 +194,10 @@ Kelly & Walsh
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 223
+content-length: 241
 
-Kelly & Walsh专售优质书籍，艺术、设计、建筑和时装书籍占一重要席位，而商业时事、文学史哲、畅销小说、生活品味及食谱等书种之藏书亦精辟独到。
-
-Kelly & Walsh在1870年代启业于上海，成立之初为出版和零售书商，出版英语书籍，主要以亚洲文化为题。其后逐渐扩充，分别在日本横滨、新加坡、香港和上海拓展业务。它出版的许多书籍均设计美丽，如以丝绢钉装或藏有摺叠地图。1950年代，Kelly & Walsh正式在香港发展其零售业务。
+<p>Kelly &amp; Walsh专售优质书籍，艺术、设计、建筑和时装书籍占一重要席位，而商业时事、文学史哲、畅销小说、生活品味及食谱等书种之藏书亦精辟独到。
+Kelly &amp; Walsh在1870年代启业于上海，成立之初为出版和零售书商，出版英语书籍，主要以亚洲文化为题。其后逐渐扩充，分别在日本横滨、新加坡、香港和上海拓展业务。它出版的许多书籍均设计美丽，如以丝绢钉装或藏有摺叠地图。1950年代，Kelly &amp; Walsh正式在香港发展其零售业务。</p>
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -250,14 +262,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ef55c2f1-454a-4ae5-9c9e-beba74929b70
+1fcec146-37b2-4704-b50f-479d55879d6d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T071915Z
+20151125T131612Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -268,7 +280,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 7481c445-dd25-4d25-8aaa-b23a32529636
+revision: ea012702-a769-4ea4-b5e7-efb823ac2b68
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -288,11 +300,10 @@ Kelly & Walsh
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 223
+content-length: 241
 
-Kelly & Walsh專售優質書籍，藝術、設計、建築和時裝書籍佔一重要席位，而商業時事、文學史哲、暢銷小說、生活品味及食譜等書種之藏書亦精闢獨到。
-
-Kelly & Walsh在1870年代啟業於上海，成立之初為出版和零售書商，出版英語書籍，主要以亞洲文化為題。其後逐漸擴充，分別在日本橫濱、新加坡、香港和上海拓展業務。它出版的許多書籍均設計美麗，如以絲絹釘裝或藏有摺疊地圖。1950年代，Kelly & Walsh正式在香港發展其零售業務。
+<p>Kelly &amp; Walsh專售優質書籍，藝術、設計、建築和時裝書籍佔一重要席位，而商業時事、文學史哲、暢銷小說、生活品味及食譜等書種之藏書亦精闢獨到。
+Kelly &amp; Walsh在1870年代啟業於上海，成立之初為出版和零售書商，出版英語書籍，主要以亞洲文化為題。其後逐漸擴充，分別在日本橫濱、新加坡、香港和上海拓展業務。它出版的許多書籍均設計美麗，如以絲絹釘裝或藏有摺疊地圖。1950年代，Kelly &amp; Walsh正式在香港發展其零售業務。</p>
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -350,14 +361,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7481c445-dd25-4d25-8aaa-b23a32529636
+ea012702-a769-4ea4-b5e7-efb823ac2b68
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T071923Z
+20151125T131600Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

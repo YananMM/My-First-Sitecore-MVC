@@ -26,22 +26,43 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 31fca1ef-fdb0-436f-8e0d-274f58a4f621
+revision: 7b732936-a264-4bc0-8df2-39437670d581
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 40
+
+Hong Kong Bookstores and Stationery Shop
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 51
+content-length: 0
 
-Hong Kong Bookstores and Stationery Shop | LANDMARK
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 141
+content-length: 139
 
-For book stores, stationery and the best cards in Hong Kong, come to LANDMARK - the city's prime destination for books, stationery and gifts.
+For book stores, stationery and the best cards in Hong Kong, visit LANDMARK - the city's prime destination for books, stationery and gifts.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 40
+
+Hong Kong Bookstores and Stationery Shop
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 139
+
+For book stores, stationery and the best cards in Hong Kong, visit LANDMARK - the city's prime destination for books, stationery and gifts.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -62,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-31fca1ef-fdb0-436f-8e0d-274f58a4f621
+7b732936-a264-4bc0-8df2-39437670d581
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T033729Z
+20151126T025308Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -80,19 +101,40 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: d5f31b55-3171-46fd-b4de-74ac6a89256f
+revision: c190debe-1175-4b38-8a7c-9a1ac963bae6
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 9
+
+香港书店及文具店 
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 15
+content-length: 0
 
-香港书店及文具店 | 置地广塲
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
+content-length: 38
+
+置地广塲拥有全面的书店及文具店，能够让您购买不同种类的书籍，文具和小型礼品。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 9
+
+香港书店及文具店 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 38
 
 置地广塲拥有全面的书店及文具店，能够让您购买不同种类的书籍，文具和小型礼品。
@@ -130,14 +172,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d5f31b55-3171-46fd-b4de-74ac6a89256f
+c190debe-1175-4b38-8a7c-9a1ac963bae6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151111T120634Z
+20151126T025344Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -148,19 +190,40 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 9081d307-d91a-4c3c-96ed-750dcd23daef
+revision: b552ca2c-a17e-466c-b391-b64f77a89c33
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 8
+
+香港書店及文具店
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 15
+content-length: 0
 
-香港書店及文具店 | 置地廣塲
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
+content-length: 38
+
+置地廣塲擁有全面的書店及文具店，能夠讓您購買不同種類的書籍，文具和小型禮品。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 8
+
+香港書店及文具店
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 38
 
 置地廣塲擁有全面的書店及文具店，能夠讓您購買不同種類的書籍，文具和小型禮品。
@@ -198,14 +261,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9081d307-d91a-4c3c-96ed-750dcd23daef
+b552ca2c-a17e-466c-b391-b64f77a89c33
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151111T120621Z
+20151126T025326Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

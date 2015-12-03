@@ -20,13 +20,13 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 77
+content-length: 116
 
-{C7F06241-2951-4647-8610-4853F73C07DF}|{983E7317-DB51-4EFE-9081-671D78C971C2}
+{1DA4C84C-5353-4961-9C01-4A480E81C865}|{C7F06241-2951-4647-8610-4853F73C07DF}|{983E7317-DB51-4EFE-9081-671D78C971C2}
 ----version----
 language: en
 version: 1
-revision: ffbdba83-7a2e-46d0-8109-c6a71e4f5419
+revision: 8e3978ca-f9dd-43e0-a4c4-94dc8d2e2709
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -46,23 +46,30 @@ A charismatic taste experience for diners.
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 614
+content-length: 621
 
-At miso’s teppanyaki bar, a solid carved mass of marble counter right by the entrance, the artistic skills of the chefs create a dynamic visual experience for diners. Beyond the teppanyaki bar is a dining room on the lower half floor connected by a little curvy staircase and in the centre of the room is the sushi bar. Diners can sit around the wooden sushi bar and indulge in freshly made sushi served directly by the chefs or enjoy their meal at a dining table. In addition to teppanyaki, sushi and sashimi, miso offers a range of delicious Japanese nibbles designed to go with the selected sake and wine items.
+<p>At miso’s teppanyaki bar, a solid carved mass of marble counter right by the entrance, the artistic skills of the chefs create a dynamic visual experience for diners. Beyond the teppanyaki bar is a dining room on the lower half floor connected by a little curvy staircase and in the centre of the room is the sushi bar. Diners can sit around the wooden sushi bar and indulge in freshly made sushi served directly by the chefs or enjoy their meal at a dining table. In addition to teppanyaki, sushi and sashimi, miso offers a range of delicious Japanese nibbles designed to go with the selected sake and wine items.</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+miso
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 4
+content-length: 0
 
-Miso
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 42
+content-length: 166
 
-A charismatic taste experience for diners.
+At miso’s teppanyaki bar, a solid carved mass of marble counter right by the entrance, the artistic skills of the chefs create a dynamic visual experience for diners.
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -74,9 +81,9 @@ miso
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 42
+content-length: 166
 
-A charismatic taste experience for diners.
+At miso’s teppanyaki bar, a solid carved mass of marble counter right by the entrance, the artistic skills of the chefs create a dynamic visual experience for diners.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -139,14 +146,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ffbdba83-7a2e-46d0-8109-c6a71e4f5419
+8e3978ca-f9dd-43e0-a4c4-94dc8d2e2709
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T044014Z
+20151126T035600Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -157,7 +164,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: cf4a3d93-47e0-4680-a3f1-c402e1439a90
+revision: 3c1c57f9-d636-4f2f-9925-183a6b19c98c
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -177,23 +184,30 @@ content-length: 15
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 181
+content-length: 188
 
-miso的铁板烧区就在接近餐厅大门的入口处，以大理石打造的铁板烧台面质感厚实，安坐于此，可以欣赏技艺高超的料理师现场炮制铁板烧，赏心悦目。从铁板烧区走下弧形阶梯，便来到位于中央的寿司吧。顾客既可围坐木质吧台，等待料理师亲自奉上新鲜寿司；也可选择在餐桌用膳，各适其所。除了铁板烧、寿司和刺身外，miso还提供林林总总的清酒和洋酒，并备有多款可口小砵酒肴作佐酒之用。
+<p>miso的铁板烧区就在接近餐厅大门的入口处，以大理石打造的铁板烧台面质感厚实，安坐于此，可以欣赏技艺高超的料理师现场炮制铁板烧，赏心悦目。从铁板烧区走下弧形阶梯，便来到位于中央的寿司吧。顾客既可围坐木质吧台，等待料理师亲自奉上新鲜寿司；也可选择在餐桌用膳，各适其所。除了铁板烧、寿司和刺身外，miso还提供林林总总的清酒和洋酒，并备有多款可口小砵酒肴作佐酒之用。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+miso
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 4
+content-length: 0
 
-Miso
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 15
+content-length: 69
 
-为顾客带来赏心悦目的美食体验。
+miso的铁板烧区就在接近餐厅大门的入口处，以大理石打造的铁板烧台面质感厚实，安坐于此，可以欣赏技艺高超的料理师现场炮制铁板烧，赏心悦目。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -205,9 +219,9 @@ miso
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 15
+content-length: 69
 
-为顾客带来赏心悦目的美食体验。
+miso的铁板烧区就在接近餐厅大门的入口处，以大理石打造的铁板烧台面质感厚实，安坐于此，可以欣赏技艺高超的料理师现场炮制铁板烧，赏心悦目。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -277,25 +291,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cf4a3d93-47e0-4680-a3f1-c402e1439a90
+3c1c57f9-d636-4f2f-9925-183a6b19c98c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063929Z
+20151125T095347Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 1500b0b0-55f7-4f13-8aa3-93f6eef254b8
+revision: e94d9cc6-5960-4b74-910b-c3215f687788
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -315,23 +329,30 @@ content-length: 13
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 182
+content-length: 189
 
-miso的鐵板燒區就在接近大門的入口處，其以大理石打造的鐵板燒檯面質感厚實，安坐於此，可以欣賞技藝高超的料理師即場炮製鐵板燒，賞心悅目。從鐵板燒區走下弧形階梯，便來到位於中央的壽司吧。顧客既可圍坐木造吧檯，等待料理師親自為你送上新鮮壽司；也可選擇在餐桌用膳，各適其適。除了鐵板燒、壽司和刺身外，miso還提供林林總總的清酒和洋酒，並備有多款可口小砵酒餚作佐酒之用。
+<p>miso的鐵板燒區就在接近大門的入口處，其以大理石打造的鐵板燒檯面質感厚實，安坐於此，可以欣賞技藝高超的料理師即場炮製鐵板燒，賞心悅目。從鐵板燒區走下弧形階梯，便來到位於中央的壽司吧。顧客既可圍坐木造吧檯，等待料理師親自為你送上新鮮壽司；也可選擇在餐桌用膳，各適其適。除了鐵板燒、壽司和刺身外，miso還提供林林總總的清酒和洋酒，並備有多款可口小砵酒餚作佐酒之用。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+miso
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 4
+content-length: 0
 
-Miso
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 13
+content-length: 68
 
-為顧客帶來賞心的美食體驗。
+miso的鐵板燒區就在接近大門的入口處，其以大理石打造的鐵板燒檯面質感厚實，安坐於此，可以欣賞技藝高超的料理師即場炮製鐵板燒，賞心悅目。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -343,9 +364,9 @@ miso
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 13
+content-length: 68
 
-為顧客帶來賞心的美食體驗。
+miso的鐵板燒區就在接近大門的入口處，其以大理石打造的鐵板燒檯面質感厚實，安坐於此，可以欣賞技藝高超的料理師即場炮製鐵板燒，賞心悅目。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -408,18 +429,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1500b0b0-55f7-4f13-8aa3-93f6eef254b8
+e94d9cc6-5960-4b74-910b-c3215f687788
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063929Z
+20151125T095416Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

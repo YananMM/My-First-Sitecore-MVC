@@ -17,6 +17,20 @@ content-length: 65
 
 <image mediaid="{25A8297D-A701-42A0-96A3-C0F581241E71}" alt="" />
 ----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
@@ -54,7 +68,7 @@ shop-221-224
 ----version----
 language: en
 version: 1
-revision: 1b224add-a4db-443d-a24a-6adfc399c221
+revision: 8894ef91-1995-4db0-8a1a-f0bb98c63a3d
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -74,16 +88,23 @@ Inspirational interiors, furnishings and accessories for beautiful living.
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 707
+content-length: 714
 
-With seven stores packed with a wide range of stylish and eclectic pieces chosen to inspire, Indigo Living has been trailblazing interior trends in Asia and the Middle East for more than 30 years. Launching new in-store collections four times a year, Indigo Living’s buyers consistently source the most stylish furnishings and accessories from around the world, while Indigo Living’s in-house designers produce own-brand furniture built to provide exceptional comfort. Alongside its flourishing retail and interior design service, Indigo Living also operates an extensive home furniture rental department and offers a host of design and styling services for property developers, designers and corporations. 
+<p>With seven stores packed with a wide range of stylish and eclectic pieces chosen to inspire, Indigo Living has been trailblazing interior trends in Asia and the Middle East for more than 30 years. Launching new in-store collections four times a year, Indigo Living’s buyers consistently source the most stylish furnishings and accessories from around the world, while Indigo Living’s in-house designers produce own-brand furniture built to provide exceptional comfort. Alongside its flourishing retail and interior design service, Indigo Living also operates an extensive home furniture rental department and offers a host of design and styling services for property developers, designers and corporations. </p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+Indigo Living
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 14
+content-length: 0
 
-Indigo, Living
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -116,9 +137,9 @@ Indigo Living
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 707
+content-length: 725
 
-With seven stores packed with a wide range of stylish and eclectic pieces chosen to inspire, Indigo Living has been trailblazing interior trends in Asia and the Middle East for more than 30 years. Launching new in-store collections four times a year, Indigo Living’s buyers consistently source the most stylish furnishings and accessories from around the world, while Indigo Living’s in-house designers produce own-brand furniture built to provide exceptional comfort. Alongside its flourishing retail and interior design service, Indigo Living also operates an extensive home furniture rental department and offers a host of design and styling services for property developers, designers and corporations. 
+<p>With seven stores packed with a wide range of stylish and eclectic pieces chosen to inspire, Indigo Living has been trailblazing interior trends in Asia and the Middle East for more than 30 years. Launching new in-store collections four times a year, Indigo Living&rsquo;s buyers consistently source the most stylish furnishings and accessories from around the world, while Indigo Living&rsquo;s in-house designers produce own-brand furniture built to provide exceptional comfort. Alongside its flourishing retail and interior design service, Indigo Living also operates an extensive home furniture rental department and offers a host of design and styling services for property developers, designers and corporations.</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
@@ -167,25 +188,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1b224add-a4db-443d-a24a-6adfc399c221
+8894ef91-1995-4db0-8a1a-f0bb98c63a3d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151635Z
+20151125T144536Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f7072c63-f9c2-4b38-a664-13db0035334a
+revision: 90b409c2-6e2f-4f94-90c5-f8802fa213f1
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -205,16 +226,23 @@ content-length: 20
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 249
+content-length: 256
 
-Indigo Living设有七间分店，提供琳琅满目的时尚家具饰品。作为亚洲及中东地区室内设计潮流的领导者，Indigo Living在过去三十多年来一直源源不断地为顾客提供室内设计灵感。品牌每年推出四次新品系列，因此Indigo Living的买手们都肩负重任，走遍全球搜罗最时尚的家具及饰品；而旗下的设计师团队，则负责设计一系列既紧贴潮流又惬意舒适的自有产品。除了完善的零售和室内设计服务，Indigo Living亦提供全面的家具租赁服务，并为房地产商、设计师和企业提供一系列设计和造型服务。
+<p>Indigo Living设有七间分店，提供琳琅满目的时尚家具饰品。作为亚洲及中东地区室内设计潮流的领导者，Indigo Living在过去三十多年来一直源源不断地为顾客提供室内设计灵感。品牌每年推出四次新品系列，因此Indigo Living的买手们都肩负重任，走遍全球搜罗最时尚的家具及饰品；而旗下的设计师团队，则负责设计一系列既紧贴潮流又惬意舒适的自有产品。除了完善的零售和室内设计服务，Indigo Living亦提供全面的家具租赁服务，并为房地产商、设计师和企业提供一系列设计和造型服务。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+Indigo Living
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 14
+content-length: 0
 
-Indigo, Living
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -247,9 +275,9 @@ Indigo Living
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 249
+content-length: 256
 
-Indigo Living设有七间分店，提供琳琅满目的时尚家具饰品。作为亚洲及中东地区室内设计潮流的领导者，Indigo Living在过去三十多年来一直源源不断地为顾客提供室内设计灵感。品牌每年推出四次新品系列，因此Indigo Living的买手们都肩负重任，走遍全球搜罗最时尚的家具及饰品；而旗下的设计师团队，则负责设计一系列既紧贴潮流又惬意舒适的自有产品。除了完善的零售和室内设计服务，Indigo Living亦提供全面的家具租赁服务，并为房地产商、设计师和企业提供一系列设计和造型服务。
+<p>Indigo Living设有七间分店，提供琳琅满目的时尚家具饰品。作为亚洲及中东地区室内设计潮流的领导者，Indigo Living在过去三十多年来一直源源不断地为顾客提供室内设计灵感。品牌每年推出四次新品系列，因此Indigo Living的买手们都肩负重任，走遍全球搜罗最时尚的家具及饰品；而旗下的设计师团队，则负责设计一系列既紧贴潮流又惬意舒适的自有产品。除了完善的零售和室内设计服务，Indigo Living亦提供全面的家具租赁服务，并为房地产商、设计师和企业提供一系列设计和造型服务。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
@@ -305,25 +333,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f7072c63-f9c2-4b38-a664-13db0035334a
+90b409c2-6e2f-4f94-90c5-f8802fa213f1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063910Z
+20151125T144452Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 2b50da8f-3766-4125-8b6e-a191d0af6af4
+revision: 7fa19e94-0470-40c5-a2b9-0213a4c86b74
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -343,16 +371,23 @@ content-length: 20
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 251
+content-length: 258
 
-Indigo Living設有七間分店，提供琳琅滿目的時尚家具飾品。作為亞洲及中東地區室內設計潮流的領導者，Indigo Living在過去三十多年來一直源源不斷的為顧客提供室內設計靈感。品牌每年推出四次新品系列，因此Indigo Living的買手們都肩負重任，走遍全球搜羅最時尚的家具及飾品；而旗下的設計師團隊，則負責設計一系列既緊貼潮流又愜意舒適的自家產品。除了完善的零售和室內設計服務，Indigo Living亦提供一個全面的家具租賃服務，並為房地產商、設計師和企業提供一系列設計和造型服務。
+<p>Indigo Living設有七間分店，提供琳琅滿目的時尚家具飾品。作為亞洲及中東地區室內設計潮流的領導者，Indigo Living在過去三十多年來一直源源不斷的為顧客提供室內設計靈感。品牌每年推出四次新品系列，因此Indigo Living的買手們都肩負重任，走遍全球搜羅最時尚的家具及飾品；而旗下的設計師團隊，則負責設計一系列既緊貼潮流又愜意舒適的自家產品。除了完善的零售和室內設計服務，Indigo Living亦提供一個全面的家具租賃服務，並為房地產商、設計師和企業提供一系列設計和造型服務。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+Indigo Living
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 14
+content-length: 0
 
-Indigo, Living
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -385,9 +420,9 @@ Indigo Living
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 251
+content-length: 258
 
-Indigo Living設有七間分店，提供琳琅滿目的時尚家具飾品。作為亞洲及中東地區室內設計潮流的領導者，Indigo Living在過去三十多年來一直源源不斷的為顧客提供室內設計靈感。品牌每年推出四次新品系列，因此Indigo Living的買手們都肩負重任，走遍全球搜羅最時尚的家具及飾品；而旗下的設計師團隊，則負責設計一系列既緊貼潮流又愜意舒適的自家產品。除了完善的零售和室內設計服務，Indigo Living亦提供一個全面的家具租賃服務，並為房地產商、設計師和企業提供一系列設計和造型服務。
+<p>Indigo Living設有七間分店，提供琳琅滿目的時尚家具飾品。作為亞洲及中東地區室內設計潮流的領導者，Indigo Living在過去三十多年來一直源源不斷的為顧客提供室內設計靈感。品牌每年推出四次新品系列，因此Indigo Living的買手們都肩負重任，走遍全球搜羅最時尚的家具及飾品；而旗下的設計師團隊，則負責設計一系列既緊貼潮流又愜意舒適的自家產品。除了完善的零售和室內設計服務，Indigo Living亦提供一個全面的家具租賃服務，並為房地產商、設計師和企業提供一系列設計和造型服務。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
@@ -436,18 +471,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2b50da8f-3766-4125-8b6e-a191d0af6af4
+7fa19e94-0470-40c5-a2b9-0213a4c86b74
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063911Z
+20151125T144138Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

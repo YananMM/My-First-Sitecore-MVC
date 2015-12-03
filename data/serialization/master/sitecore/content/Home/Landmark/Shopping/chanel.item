@@ -54,7 +54,7 @@ shop-G18-20
 ----version----
 language: en
 version: 1
-revision: a69b324a-17ea-45ee-a84c-8e7ccedf2405
+revision: 45493cb0-62aa-4e1e-82cc-2dd989ea6364
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -78,19 +78,26 @@ content-length: 742
 
 CHANEL is above all a distinctive style created and defined by one extraordinary woman: Gabrielle (Coco) Chanel.  Single-handedly, she created an iconic style that has become universally acclaimed – original and feminine yet always daring. Today, CHANEL encompasses fashion, beauty and fragrance, watches and fine jewellery, but all still embrace the essential values that made Gabrielle Chanel a legend in her own lifetime.   The CHANEL boutique offers the latest creations of the House's iconic style - from day wear and evening dresses to handbags, shoes, small leather items and fashion accessories, as well as watch collections and fine jewellery – all brimming with the modern femininity for which the luxury label is known and admired.
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 6
 
 CHANEL
 ----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
+----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 69
+content-length: 239
 
-A luxury brand known for the iconic style of its pioneering founder. 
+CHANEL is above all a distinctive style created and defined by one extraordinary woman: Gabrielle (Coco) Chanel. Single-handedly, she created an iconic style that has become universally acclaimed – original and feminine yet always daring. 
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -102,9 +109,9 @@ CHANEL
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 69
+content-length: 239
 
-A luxury brand known for the iconic style of its pioneering founder. 
+CHANEL is above all a distinctive style created and defined by one extraordinary woman: Gabrielle (Coco) Chanel. Single-handedly, she created an iconic style that has become universally acclaimed – original and feminine yet always daring. 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -123,9 +130,11 @@ CHANEL is above all a distinctive style created and defined by one extraordinary
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 66
+content-length: 78
 
-Mon-Thu 10am-7pm  Fri-Sat 10am-8pm  Sun & Public Holidays 11am-6pm
+Mon-Thu 10am-7pm <br>
+Fri-Sat 10am-8pm <br>
+Sun &amp; Public Holidays 11am-6pm
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -167,14 +176,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a69b324a-17ea-45ee-a84c-8e7ccedf2405
+45493cb0-62aa-4e1e-82cc-2dd989ea6364
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T085702Z
+20151126T041123Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -185,7 +194,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: e7942111-6ddb-4df8-bdcb-86b1cc842556
+revision: 4fb222c0-1ab8-4101-afda-79d92a4ab7a4
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -205,23 +214,30 @@ content-length: 17
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 226
+content-length: 233
 
-CHANEL是一种独特风格，因一位非凡的女士Gabrielle (Coco) Chanel而生。她以不随波逐流的前瞻性眼光，独自创造别具一格的女装系列，既是突显原创性的大胆创新之作，又呈现女性细腻一面。CHANEL品牌旗下的时装、香水、彩妆及护肤品、腕表及高级珠宝系列，均展示传奇人物Gabrielle Chanel的独有风格和美学。而CHANEL专卖店内荟萃了最新产品，从日装、晚装、手袋、皮革配饰以至精选腕表及高级珠宝等，均洋溢着华丽的时尚女性美。
+<p>CHANEL是一种独特风格，因一位非凡的女士Gabrielle (Coco) Chanel而生。她以不随波逐流的前瞻性眼光，独自创造别具一格的女装系列，既是突显原创性的大胆创新之作，又呈现女性细腻一面。CHANEL品牌旗下的时装、香水、彩妆及护肤品、腕表及高级珠宝系列，均展示传奇人物Gabrielle Chanel的独有风格和美学。而CHANEL专卖店内荟萃了最新产品，从日装、晚装、手袋、皮革配饰以至精选腕表及高级珠宝等，均洋溢着华丽的时尚女性美。</p>
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 6
 
 CHANEL
 ----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
+----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 17
+content-length: 48
 
-奢华品牌的独特风格源自非凡始创者。
+CHANEL是一种独特风格，因一位非凡的女士Gabrielle (Coco) Chanel而生。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -233,9 +249,9 @@ CHANEL
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 17
+content-length: 48
 
-奢华品牌的独特风格源自非凡始创者。
+CHANEL是一种独特风格，因一位非凡的女士Gabrielle (Coco) Chanel而生。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -247,16 +263,18 @@ CHANEL
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 226
+content-length: 233
 
-CHANEL是一种独特风格，因一位非凡的女士Gabrielle (Coco) Chanel而生。她以不随波逐流的前瞻性眼光，独自创造别具一格的女装系列，既是突显原创性的大胆创新之作，又呈现女性细腻一面。CHANEL品牌旗下的时装、香水、彩妆及护肤品、腕表及高级珠宝系列，均展示传奇人物Gabrielle Chanel的独有风格和美学。而CHANEL专卖店内荟萃了最新产品，从日装、晚装、手袋、皮革配饰以至精选腕表及高级珠宝等，均洋溢着华丽的时尚女性美。
+<p>CHANEL是一种独特风格，因一位非凡的女士Gabrielle (Coco) Chanel而生。她以不随波逐流的前瞻性眼光，独自创造别具一格的女装系列，既是突显原创性的大胆创新之作，又呈现女性细腻一面。CHANEL品牌旗下的时装、香水、彩妆及护肤品、腕表及高级珠宝系列，均展示传奇人物Gabrielle Chanel的独有风格和美学。而CHANEL专卖店内荟萃了最新产品，从日装、晚装、手袋、皮革配饰以至精选腕表及高级珠宝等，均洋溢着华丽的时尚女性美。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 60
+content-length: 67
 
-星期一至星期四︰早上10时至晚上7时  星期五至星期六︰早上10时至晚上8时  星期日及公众假期︰早上11时至晚上6时 
+星期一至星期四︰早上10时至晚上7时 <br>
+星期五至星期六︰早上10时至晚上8时 <br>
+星期日及公众假期︰早上11时至晚上6时
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -305,25 +323,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e7942111-6ddb-4df8-bdcb-86b1cc842556
+4fb222c0-1ab8-4101-afda-79d92a4ab7a4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063850Z
+20151126T041149Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: a48a556a-8387-4292-97b1-f4d0c0521400
+revision: ec593a58-af6f-4419-a98d-a0034ec4446a
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -343,23 +361,30 @@ content-length: 17
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 228
+content-length: 235
 
-CHANEL是一種獨特風格，因一位非凡的女士Gabrielle (Coco) Chanel而生。她以不隨波逐流的前瞻眼光，獨自創造別具一格的女裝系列，既是突顯原創性的大膽創新之作，又呈現女性細膩一面。CHANEL品牌旗下的時裝、香水、彩妝及護膚品、腕錶及高級珠寶系列，均展示傳奇人物Gabrielle Chanel的獨有風格和美學。而CHANEL專門店內薈萃最新產品，由日裝、晚裝、手袋、皮革配飾以至精選腕錶及高級珠寶等，在在?令女性散發華麗的時尚女性美。
+<p>CHANEL是一種獨特風格，因一位非凡的女士Gabrielle (Coco) Chanel而生。她以不隨波逐流的前瞻眼光，獨自創造別具一格的女裝系列，既是突顯原創性的大膽創新之作，又呈現女性細膩一面。CHANEL品牌旗下的時裝、香水、彩妝及護膚品、腕錶及高級珠寶系列，均展示傳奇人物Gabrielle Chanel的獨有風格和美學。而CHANEL專門店內薈萃最新產品，由日裝、晚裝、手袋、皮革配飾以至精選腕錶及高級珠寶等，在在?令女性散發華麗的時尚女性美。</p>
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 6
 
 CHANEL
 ----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
+----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 17
+content-length: 48
 
-奢華品牌的獨特風格源自非凡始創者。
+CHANEL是一種獨特風格，因一位非凡的女士Gabrielle (Coco) Chanel而生。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -371,9 +396,9 @@ CHANEL
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 17
+content-length: 48
 
-奢華品牌的獨特風格源自非凡始創者。
+CHANEL是一種獨特風格，因一位非凡的女士Gabrielle (Coco) Chanel而生。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -385,16 +410,18 @@ CHANEL
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 228
+content-length: 235
 
-CHANEL是一種獨特風格，因一位非凡的女士Gabrielle (Coco) Chanel而生。她以不隨波逐流的前瞻眼光，獨自創造別具一格的女裝系列，既是突顯原創性的大膽創新之作，又呈現女性細膩一面。CHANEL品牌旗下的時裝、香水、彩妝及護膚品、腕錶及高級珠寶系列，均展示傳奇人物Gabrielle Chanel的獨有風格和美學。而CHANEL專門店內薈萃最新產品，由日裝、晚裝、手袋、皮革配飾以至精選腕錶及高級珠寶等，在在?令女性散發華麗的時尚女性美。
+<p>CHANEL是一種獨特風格，因一位非凡的女士Gabrielle (Coco) Chanel而生。她以不隨波逐流的前瞻眼光，獨自創造別具一格的女裝系列，既是突顯原創性的大膽創新之作，又呈現女性細膩一面。CHANEL品牌旗下的時裝、香水、彩妝及護膚品、腕錶及高級珠寶系列，均展示傳奇人物Gabrielle Chanel的獨有風格和美學。而CHANEL專門店內薈萃最新產品，由日裝、晚裝、手袋、皮革配飾以至精選腕錶及高級珠寶等，在在?令女性散發華麗的時尚女性美。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 60
+content-length: 67
 
-星期一至星期四︰早上10時至晚上7時  星期五至星期六︰早上10時至晚上8時  星期日及公眾假期︰早上11時至晚上6時 
+星期一至星期四︰早上10時至晚上7時 <br>
+星期五至星期六︰早上10時至晚上8時 <br>
+星期日及公眾假期︰早上11時至晚上6時
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -436,18 +463,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a48a556a-8387-4292-97b1-f4d0c0521400
+ec593a58-af6f-4419-a98d-a0034ec4446a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063851Z
+20151126T041220Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

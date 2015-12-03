@@ -26,7 +26,7 @@ content-length: 116
 ----version----
 language: en
 version: 1
-revision: 04ee05f2-c648-4839-8dee-4919054440ee
+revision: e9a81468-8311-4f02-a059-99f21a6128ec
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -46,23 +46,30 @@ Stylish restaurant known for excellent tempura, sushi and sashimi.
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 560
+content-length: 567
 
-A favourite among Japanese food lovers for more than a decade, this stylish restaurant is known for its excellent tempura, sushi and sashimi. Try their delicious tempura sets which are generous and filling or one of the very popular lunch sets such as black cod with miso paste served with rice and miso soup. Daily specials include grilled eel with rice and soba, grilled mackerel and pork chop cutlet with egg and prime tuna and spring onion served with rice and udon. Popular and busy with the lunch time crowd, but quieter and more intimate in the evening.
+<p>A favourite among Japanese food lovers for more than a decade, this stylish restaurant is known for its excellent tempura, sushi and sashimi. Try their delicious tempura sets which are generous and filling or one of the very popular lunch sets such as black cod with miso paste served with rice and miso soup. Daily specials include grilled eel with rice and soba, grilled mackerel and pork chop cutlet with egg and prime tuna and spring onion served with rice and udon. Popular and busy with the lunch time crowd, but quieter and more intimate in the evening.</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 26
+
+Agehan Japanese Restaurant
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 26
+content-length: 0
 
-Agehan,Japanese,Restaurant
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 66
+content-length: 142
 
-Stylish restaurant known for excellent tempura, sushi and sashimi.
+A favourite among Japanese food lovers for more than a decade, this stylish restaurant is known for its excellent tempura, sushi and sashimi. 
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -74,9 +81,9 @@ Agehan Japanese Restaurant
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 66
+content-length: 142
 
-Stylish restaurant known for excellent tempura, sushi and sashimi.
+A favourite among Japanese food lovers for more than a decade, this stylish restaurant is known for its excellent tempura, sushi and sashimi. 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -88,16 +95,18 @@ Agehan Japanese Restaurant
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 560
+content-length: 567
 
-A favourite among Japanese food lovers for more than a decade, this stylish restaurant is known for its excellent tempura, sushi and sashimi. Try their delicious tempura sets which are generous and filling or one of the very popular lunch sets such as black cod with miso paste served with rice and miso soup. Daily specials include grilled eel with rice and soba, grilled mackerel and pork chop cutlet with egg and prime tuna and spring onion served with rice and udon. Popular and busy with the lunch time crowd, but quieter and more intimate in the evening.
+<p>A favourite among Japanese food lovers for more than a decade, this stylish restaurant is known for its excellent tempura, sushi and sashimi. Try their delicious tempura sets which are generous and filling or one of the very popular lunch sets such as black cod with miso paste served with rice and miso soup. Daily specials include grilled eel with rice and soba, grilled mackerel and pork chop cutlet with egg and prime tuna and spring onion served with rice and udon. Popular and busy with the lunch time crowd, but quieter and more intimate in the evening.</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 88
+content-length: 110
 
-Mon-Sat:11:30am-2:45pm & 6pm-10pm Public Holidays:12noon-2:45pm & 6pm-10:30pm Sun closed
+Mon-Sat:11:30am-2:45pm &amp; 6pm-10pm <br>
+Public Holidays:12noon-2:45pm &amp; 6pm-10:30pm <br>
+Sun closed<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -139,14 +148,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-04ee05f2-c648-4839-8dee-4919054440ee
+e9a81468-8311-4f02-a059-99f21a6128ec
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T063513Z
+20151125T072443Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -157,7 +166,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 05ddfabd-2ab5-4b77-b6f5-61a0eb3920ba
+revision: ca220e62-060b-4924-96d1-770d93e5e6de
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -181,19 +190,26 @@ content-length: 210
 
 过去十多年来，Agehan一直是日本料理爱好者的心头好。这家时尚日式餐厅以顶级天妇罗、寿司和刺身享负盛名，其中天妇罗定食更属不容错过之选 ── 香酥松脆的天妇罗分量特足，让人大饱口福。餐厅的午市套餐同样深受食客欢迎，西京酱烧银鳕鱼定食配面豉汤堪称一绝。每日精选还包括蒲烧日式鳗鱼饭配荞麦面、盐烧鲭鱼、吉列猪扒滑蛋，以及香葱吞拿鱼腩配白饭和乌冬。Agehan的午市时段客似云来，晚市则适合喜欢清静和拥有私人空间的食客用膳。
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 26
+
+Agehan Japanese Restaurant
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 26
+content-length: 0
 
-Agehan,Japanese,Restaurant
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 24
+content-length: 28
 
-时尚日式餐厅，以顶级天妇罗、寿司和刺身享负盛名。
+过去十多年来，Agehan一直是日本料理爱好者的心头好。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -205,9 +221,9 @@ Agehan Japanese Restaurant
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 24
+content-length: 28
 
-时尚日式餐厅，以顶级天妇罗、寿司和刺身享负盛名。
+过去十多年来，Agehan一直是日本料理爱好者的心头好。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -219,16 +235,18 @@ Agehan Japanese Restaurant
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 210
+content-length: 217
 
-过去十多年来，Agehan一直是日本料理爱好者的心头好。这家时尚日式餐厅以顶级天妇罗、寿司和刺身享负盛名，其中天妇罗定食更属不容错过之选 ── 香酥松脆的天妇罗分量特足，让人大饱口福。餐厅的午市套餐同样深受食客欢迎，西京酱烧银鳕鱼定食配面豉汤堪称一绝。每日精选还包括蒲烧日式鳗鱼饭配荞麦面、盐烧鲭鱼、吉列猪扒滑蛋，以及香葱吞拿鱼腩配白饭和乌冬。Agehan的午市时段客似云来，晚市则适合喜欢清静和拥有私人空间的食客用膳。
+<p>过去十多年来，Agehan一直是日本料理爱好者的心头好。这家时尚日式餐厅以顶级天妇罗、寿司和刺身享负盛名，其中天妇罗定食更属不容错过之选 ── 香酥松脆的天妇罗分量特足，让人大饱口福。餐厅的午市套餐同样深受食客欢迎，西京酱烧银鳕鱼定食配面豉汤堪称一绝。每日精选还包括蒲烧日式鳗鱼饭配荞麦面、盐烧鲭鱼、吉列猪扒滑蛋，以及香葱吞拿鱼腩配白饭和乌冬。Agehan的午市时段客似云来，晚市则适合喜欢清静和拥有私人空间的食客用膳。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 70
+content-length: 84
 
-星期一至星期六︰早上11时30分至下午2时45分及晚上6时至10时 公众假期︰中午12时至下午2时45分及晚上6时至10时30分 星期日休息
+星期一至星期六︰早上11时30分至下午2时45分及晚上6时至10时 <br>
+公众假期︰中午12时至下午2时45分及晚上6时至10时30分 <br>
+星期日休息<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -277,25 +295,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-05ddfabd-2ab5-4b77-b6f5-61a0eb3920ba
+ca220e62-060b-4924-96d1-770d93e5e6de
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063845Z
+20151125T072537Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: bb7cc416-dcea-4512-a7dc-4fca093f4e24
+revision: ca2f948a-bd9b-499e-a378-8d2133d55839
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -315,23 +333,31 @@ content-length: 24
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 211
+content-length: 230
 
-過去十多年來，Agehan一直是日本料理愛好者的心頭所愛。這家時尚日式餐廳以頂級天婦羅、壽司和刺身享負盛名，當中天婦羅定食更屬不容錯過之選 ── 香酥鬆脆的天婦羅分量特多，讓人大飽口福。餐廳的午市套餐同樣深受食客歡迎，西京醬燒銀鱈魚定食配麵豉湯堪稱一絕。每日精選還包括蒲燒日式鰻魚飯配蕎麥麵、鹽燒鯖魚、吉列豬扒滑蛋，以及香蔥吞拿魚腩配白飯和烏冬。Agehan的午市時段客似雲來，晚市則適合喜歡清靜和擁有私人空間的食客用膳。
+<p>過去十多年來，Agehan一直是日本料理愛好者的心頭所愛。這家時尚日式餐廳以頂級天婦羅、壽司和刺身享負盛名，當中天婦羅定食更屬不容錯過之選 ── 香酥鬆脆的天婦羅分量特多，讓人大飽口福。餐廳的午市套餐同樣深受食客歡迎，西京醬燒銀鱈魚定食配麵豉湯堪稱一絕。每日精選還包括蒲燒日式鰻魚飯配蕎麥 麵、鹽燒鯖魚、吉列豬扒滑蛋，以及香蔥吞拿魚腩配白飯和烏冬。Agehan的午市時段客似雲來，晚市則適合喜歡清靜和擁有私人空間的食客用膳。&nbsp;</p>
+<br>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 26
+
+Agehan Japanese Restaurant
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 26
+content-length: 0
 
-Agehan,Japanese,Restaurant
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 24
+content-length: 29
 
-時尚日式餐廳，以頂級天婦羅、壽司和刺身享負盛名。
+過去十多年來，Agehan一直是日本料理愛好者的心頭所愛。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -343,9 +369,9 @@ Agehan Japanese Restaurant
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 24
+content-length: 29
 
-時尚日式餐廳，以頂級天婦羅、壽司和刺身享負盛名。
+過去十多年來，Agehan一直是日本料理愛好者的心頭所愛。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -357,16 +383,19 @@ Agehan Japanese Restaurant
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 211
+content-length: 230
 
-過去十多年來，Agehan一直是日本料理愛好者的心頭所愛。這家時尚日式餐廳以頂級天婦羅、壽司和刺身享負盛名，當中天婦羅定食更屬不容錯過之選 ── 香酥鬆脆的天婦羅分量特多，讓人大飽口福。餐廳的午市套餐同樣深受食客歡迎，西京醬燒銀鱈魚定食配麵豉湯堪稱一絕。每日精選還包括蒲燒日式鰻魚飯配蕎麥麵、鹽燒鯖魚、吉列豬扒滑蛋，以及香蔥吞拿魚腩配白飯和烏冬。Agehan的午市時段客似雲來，晚市則適合喜歡清靜和擁有私人空間的食客用膳。
+<p>過去十多年來，Agehan一直是日本料理愛好者的心頭所愛。這家時尚日式餐廳以頂級天婦羅、壽司和刺身享負盛名，當中天婦羅定食更屬不容錯過之選 ── 香酥鬆脆的天婦羅分量特多，讓人大飽口福。餐廳的午市套餐同樣深受食客歡迎，西京醬燒銀鱈魚定食配麵豉湯堪稱一絕。每日精選還包括蒲燒日式鰻魚飯配蕎麥 麵、鹽燒鯖魚、吉列豬扒滑蛋，以及香蔥吞拿魚腩配白飯和烏冬。Agehan的午市時段客似雲來，晚市則適合喜歡清靜和擁有私人空間的食客用膳。&nbsp;</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 70
+content-length: 83
 
-星期一至星期六︰早上11時30分至下午2時45分及晚上6時至10時 公眾假期︰中午12時至下午2時45分及晚上6時至10時30分 星期日休息
+星期一至星期六︰早上11時30分至下午2時45分及晚上6時至10時<br>
+公眾假期︰中午12時至下午2時45分及晚上6時至10時30分 <br>
+星期日休息<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -408,18 +437,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bb7cc416-dcea-4512-a7dc-4fca093f4e24
+ca2f948a-bd9b-499e-a378-8d2133d55839
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063845Z
+20151125T072519Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 38
+content-length: 116
 
-{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}
+{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}|{32DD0452-44B5-429E-BC2D-D230597366C0}|{A8B038A4-45C9-4690-A418-2712B2650DEC}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-341
 ----version----
 language: en
 version: 1
-revision: fa0b8844-5fa9-4d48-8fe7-1c49f75f5a61
+revision: 569155eb-152f-4050-b83d-ebdd4f50b744
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -74,23 +74,31 @@ Top-of-the-line photographic equipment for amateurs and professionals.
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 508
+content-length: 526
 
-This reliable dealer is discreetly positioned on an upper floor of the elegant LANDMARK PRINCE’S. The wide selection of top-of-the-line cameras and photographic gear caters to both amateur and professional photographers. Helpful and knowledgeable staff are on hand to help you through the decision process with their experience and expert advice. Superb after-sales service sets this established dealer apart and is the reason why both professional and amateur photographers keep coming back year after year.
+<p>This reliable dealer is discreetly positioned on an upper floor of the elegant LANDMARK PRINCE&rsquo;S. The wide selection of top-of-the-line cameras and photographic gear caters to both amateur and professional photographers. Helpful and knowledgeable staff are on hand to help you through the decision process with their experience and expert advice. Superb after-sales service sets this established dealer apart and is the reason why both professional and amateur photographers keep coming back year after year.</p>
+<br>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 22
+
+William's Photo Supply
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 21
+content-length: 0
 
-Williams,Photo,Supply
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 70
+content-length: 221
 
-Top-of-the-line photographic equipment for amateurs and professionals.
+This reliable dealer is discreetly positioned on an upper floor of the elegant LANDMARK PRINCE’S. The wide selection of top-of-the-line cameras and photographic gear caters to both amateur and professional photographers. 
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -102,9 +110,9 @@ William's Photo Supply
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 70
+content-length: 221
 
-Top-of-the-line photographic equipment for amateurs and professionals.
+This reliable dealer is discreetly positioned on an upper floor of the elegant LANDMARK PRINCE’S. The wide selection of top-of-the-line cameras and photographic gear caters to both amateur and professional photographers. 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -116,16 +124,18 @@ William's Photo Supply
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 508
+content-length: 526
 
-This reliable dealer is discreetly positioned on an upper floor of the elegant LANDMARK PRINCE’S. The wide selection of top-of-the-line cameras and photographic gear caters to both amateur and professional photographers. Helpful and knowledgeable staff are on hand to help you through the decision process with their experience and expert advice. Superb after-sales service sets this established dealer apart and is the reason why both professional and amateur photographers keep coming back year after year.
+<p>This reliable dealer is discreetly positioned on an upper floor of the elegant LANDMARK PRINCE&rsquo;S. The wide selection of top-of-the-line cameras and photographic gear caters to both amateur and professional photographers. Helpful and knowledgeable staff are on hand to help you through the decision process with their experience and expert advice. Superb after-sales service sets this established dealer apart and is the reason why both professional and amateur photographers keep coming back year after year.</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 48
+content-length: 60
 
-Mon-Sat 9:30am-7pm Sun & Public Holidays 1pm-6pm
+Mon-Sat 9:30am-7pm<br>
+Sun &amp; Public Holidays 1pm-6pm<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -167,25 +177,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fa0b8844-5fa9-4d48-8fe7-1c49f75f5a61
+569155eb-152f-4050-b83d-ebdd4f50b744
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151630Z
+20151125T155616Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: abdedd12-6d70-4959-a33b-3aa1947fce6b
+revision: f3935f2e-e9de-4855-8737-6b3f1583ca92
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -205,23 +215,31 @@ content-length: 24
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 135
+content-length: 147
 
-值得信赖的William's Photo Supply专卖店位于置地太子三楼，为专业及业余摄影师提供一系列高品质相机及摄影器材。店内有亲切和具相关知识的店员竭诚帮助顾客寻找合适产品，并给予最专业的建议。完善的售后服务是品牌一大优势，也是吸引顾客多年来一再光顾的主要原因。
+<p>值得信赖的William's Photo Supply专卖店位于置地太子三楼，为专业及业余摄影师提供一系列高品质相机及摄影器材。店内有亲切和具相关知识的店员竭诚帮助顾客寻找合适产品，并给予最专业的建议。完善的售后服务是品牌一大优势，也是吸引顾客多年来一再光顾的主要原因。</p>
+<br>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 22
+
+William's Photo Supply
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 21
+content-length: 0
 
-Williams,Photo,Supply
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 24
+content-length: 64
 
-专业及业余摄影师均可在此找到心仪的优质摄影器材。
+值得信赖的William's Photo Supply专卖店位于置地太子三楼，为专业及业余摄影师提供一系列高品质相机及摄影器材。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -233,9 +251,9 @@ William's Photo Supply
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 24
+content-length: 64
 
-专业及业余摄影师均可在此找到心仪的优质摄影器材。
+值得信赖的William's Photo Supply专卖店位于置地太子三楼，为专业及业余摄影师提供一系列高品质相机及摄影器材。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -247,16 +265,18 @@ William's Photo Supply
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 135
+content-length: 147
 
-值得信赖的William's Photo Supply专卖店位于置地太子三楼，为专业及业余摄影师提供一系列高品质相机及摄影器材。店内有亲切和具相关知识的店员竭诚帮助顾客寻找合适产品，并给予最专业的建议。完善的售后服务是品牌一大优势，也是吸引顾客多年来一再光顾的主要原因。
+<p>值得信赖的William's Photo Supply专卖店位于置地太子三楼，为专业及业余摄影师提供一系列高品质相机及摄影器材。店内有亲切和具相关知识的店员竭诚帮助顾客寻找合适产品，并给予最专业的建议。完善的售后服务是品牌一大优势，也是吸引顾客多年来一再光顾的主要原因。</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 39
+content-length: 47
 
-星期一至星期六︰早上9时30分至晚上7时 星期日及公众假期︰下午1时至晚上6时
+星期一至星期六︰早上9时30分至晚上7时<br>
+星期日及公众假期︰下午1时至晚上6时<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -305,25 +325,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-abdedd12-6d70-4959-a33b-3aa1947fce6b
+f3935f2e-e9de-4855-8737-6b3f1583ca92
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T064017Z
+20151125T155924Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 31e147b6-fcef-4795-85e0-49aaa42451f0
+revision: dac45ce6-ca0d-4319-8fd2-33a3c119854a
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -343,23 +363,31 @@ content-length: 26
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 135
+content-length: 147
 
-值得信賴的William's Photo Supply專門店位於置地太子3樓，為專業及業餘攝影師提供一系列高品質相機及攝影器材。店內有親切和具相關知識的店員竭誠幫助顧客尋找合適產品，並給予最專業的建議。完善的售後服務是品牌一大優勢，也是吸引顧客多年來一再光顧的主要原因。
+<p>值得信賴的William's Photo Supply專門店位於置地太子3樓，為專業及業餘攝影師提供一系列高品質相機及攝影器材。店內有親切和具相關知識的店員竭誠幫助顧客尋找合適產品，並給予最專業的建議。完善的售後服務是品牌一大優勢，也是吸引顧客多年來一再光顧的主要原因。</p>
+<br>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 22
+
+William's Photo Supply
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 21
+content-length: 0
 
-Williams,Photo,Supply
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 26
+content-length: 64
 
-專業及業餘攝影師均可在此找到他們心儀的優質攝影器材。
+值得信賴的William's Photo Supply專門店位於置地太子3樓，為專業及業餘攝影師提供一系列高品質相機及攝影器材。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -371,9 +399,9 @@ William's Photo Supply
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 26
+content-length: 64
 
-專業及業餘攝影師均可在此找到他們心儀的優質攝影器材。
+值得信賴的William's Photo Supply專門店位於置地太子3樓，為專業及業餘攝影師提供一系列高品質相機及攝影器材。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -385,16 +413,18 @@ William's Photo Supply
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 135
+content-length: 147
 
-值得信賴的William's Photo Supply專門店位於置地太子3樓，為專業及業餘攝影師提供一系列高品質相機及攝影器材。店內有親切和具相關知識的店員竭誠幫助顧客尋找合適產品，並給予最專業的建議。完善的售後服務是品牌一大優勢，也是吸引顧客多年來一再光顧的主要原因。
+<p>值得信賴的William's Photo Supply專門店位於置地太子3樓，為專業及業餘攝影師提供一系列高品質相機及攝影器材。店內有親切和具相關知識的店員竭誠幫助顧客尋找合適產品，並給予最專業的建議。完善的售後服務是品牌一大優勢，也是吸引顧客多年來一再光顧的主要原因。</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 39
+content-length: 47
 
-星期一至星期六︰早上9時30分至晚上7時 星期日及公眾假期︰下午1時至晚上6時
+星期一至星期六︰早上9時30分至晚上7時<br>
+星期日及公眾假期︰下午1時至晚上6時<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -436,18 +466,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-31e147b6-fcef-4795-85e0-49aaa42451f0
+dac45ce6-ca0d-4319-8fd2-33a3c119854a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T064017Z
+20151125T155819Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

@@ -54,7 +54,7 @@ shop-305-307
 ----version----
 language: en
 version: 1
-revision: bdd34c60-39b6-4dda-b282-6b06591a044c
+revision: e5644dda-3446-4637-b498-cf63094b0b16
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -81,12 +81,19 @@ Bookazine is a family-run business established in Hong Kong in 1985. Today the c
  Bookazine’s mission is to be Hong Kong's leading bookseller and to provide customers with the widest choice, great value and expert advice from a team passionate about bookselling. Founded in Hong Kong, Bookazine is part of the local community and supports local writers with book launches and signings.  The folks at Bookazine love great books and are always happy to seek out the titles that customers want and that inspire people to read and engage in books. 
 
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 31
+
+Bookazine (One Exchange Square)
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 9
+content-length: 0
 
-Bookazine
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -173,14 +180,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bdd34c60-39b6-4dda-b282-6b06591a044c
+e5644dda-3446-4637-b498-cf63094b0b16
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T061759Z
+20151126T021715Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

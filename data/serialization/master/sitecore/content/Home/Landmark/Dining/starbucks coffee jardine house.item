@@ -33,15 +33,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 8d9ac664-ed72-4a1d-88e5-bfffdc18b755
+revision: 87cec130-0ed2-43df-b450-1306655b14fb
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
 name: Brand Title
 key: brand title
-content-length: 16
+content-length: 32
 
-Starbucks Coffee
+Starbucks Coffee (Jardine House)
 ----field----
 field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
 name: Content Title
@@ -53,9 +53,23 @@ Starbucks Coffee (Jardine House)
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 54
+content-length: 61
 
-Coffees, cakes and biscuits served in a cozy ambience.
+<p>Coffees, cakes and biscuits served in a cozy ambience.</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 32
+
+Starbucks Coffee (Jardine House)
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 55
+
+Coffees, cakes and biscuits served in a cozy ambience. 
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -63,6 +77,13 @@ key: social share title
 content-length: 32
 
 Starbucks Coffee (Jardine House)
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 55
+
+Coffees, cakes and biscuits served in a cozy ambience. 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -74,18 +95,20 @@ Starbucks Coffee (Jardine House)
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 54
+content-length: 61
 
-Coffees, cakes and biscuits served in a cozy ambience.
+<p>Coffees, cakes and biscuits served in a cozy ambience.</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 51
+content-length: 69
 
 Mon-Fri: 6:30am-8pm
+<br>
 Sat: 8am-8pm
-Sun & PH: 10am-5pm
+<br>
+Sun &amp; PH: 10am-5pm<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -120,14 +143,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8d9ac664-ed72-4a1d-88e5-bfffdc18b755
+87cec130-0ed2-43df-b450-1306655b14fb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T092607Z
+20151125T123433Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -138,7 +161,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: a768ca31-4cf6-44fc-a80c-4a5fc5982677
+revision: 8171cd76-c0a5-419a-897c-83e3b4e53369
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -151,13 +174,41 @@ content-length: 5
 field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
 name: Content Title
 key: content title
-content-length: 5
+content-length: 12
 
-星巴克咖啡
+星巴克咖啡 (怡和大厦)
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
+content-length: 68
+
+<p>亲切笑容的星巴克咖啡吧服务员，每天为您亲手冲调最香醇的咖啡饮品，让你在舒适的星巴克店内或旅途之中，感受独一无二的咖啡体验。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 12
+
+星巴克咖啡 (怡和大厦)
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 61
+
+亲切笑容的星巴克咖啡吧服务员，每天为您亲手冲调最香醇的咖啡饮品，让你在舒适的星巴克店内或旅途之中，感受独一无二的咖啡体验。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 12
+
+星巴克咖啡 (怡和大厦)
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 61
 
 亲切笑容的星巴克咖啡吧服务员，每天为您亲手冲调最香醇的咖啡饮品，让你在舒适的星巴克店内或旅途之中，感受独一无二的咖啡体验。
@@ -165,25 +216,27 @@ content-length: 61
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 5
+content-length: 12
 
-星巴克咖啡
+星巴克咖啡 (怡和大厦)
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 61
+content-length: 68
 
-亲切笑容的星巴克咖啡吧服务员，每天为您亲手冲调最香醇的咖啡饮品，让你在舒适的星巴克店内或旅途之中，感受独一无二的咖啡体验。
+<p>亲切笑容的星巴克咖啡吧服务员，每天为您亲手冲调最香醇的咖啡饮品，让你在舒适的星巴克店内或旅途之中，感受独一无二的咖啡体验。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 54
+content-length: 68
 
 星期一至星期五：早上6时30分至晚上8时
+<br>
 星期六：早上8时至晚上8时
-星期日及公众假期：早上10时至下午5时
+<br>
+星期日及公众假期：早上10时至下午5时<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -225,14 +278,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a768ca31-4cf6-44fc-a80c-4a5fc5982677
+8171cd76-c0a5-419a-897c-83e3b4e53369
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T092217Z
+20151125T102749Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -243,7 +296,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: b7a1cff4-008a-4681-8b19-e36944af9d72
+revision: dfb3f134-4077-43bf-8773-55ed9e54baa8
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -256,13 +309,41 @@ content-length: 5
 field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
 name: Content Title
 key: content title
-content-length: 5
+content-length: 12
 
-星巴克咖啡
+星巴克咖啡 (怡和大廈)
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
+content-length: 68
+
+<p>親切笑容的星巴克咖啡吧服務員，每天為您親手沖調最香醇的咖啡飲品，讓你在舒適的星巴克店內或旅途之中，感受獨一無二的咖啡體驗。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 12
+
+星巴克咖啡 (怡和大廈)
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 61
+
+親切笑容的星巴克咖啡吧服務員，每天為您親手沖調最香醇的咖啡飲品，讓你在舒適的星巴克店內或旅途之中，感受獨一無二的咖啡體驗。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 12
+
+星巴克咖啡 (怡和大廈)
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 61
 
 親切笑容的星巴克咖啡吧服務員，每天為您親手沖調最香醇的咖啡飲品，讓你在舒適的星巴克店內或旅途之中，感受獨一無二的咖啡體驗。
@@ -270,25 +351,27 @@ content-length: 61
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 5
+content-length: 12
 
-星巴克咖啡
+星巴克咖啡 (怡和大廈)
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 61
+content-length: 73
 
-親切笑容的星巴克咖啡吧服務員，每天為您親手沖調最香醇的咖啡飲品，讓你在舒適的星巴克店內或旅途之中，感受獨一無二的咖啡體驗。
+<p>親切笑容的星巴克咖啡吧服務員，每天為您親手沖調最香醇的咖啡飲品，讓你在舒適的星巴克店內或旅途之中，感受獨一無二的咖啡體驗。</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 54
+content-length: 67
 
-星期一至星期五：早上6時30分至晚上8時
+星期一至星期五：早上6時30分至晚上8時<br>
 星期六：早上8時至晚上8時
-星期日及公眾假期：早上10時至下午5時
+<br>
+星期日及公眾假期：早上10時至下午5時<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -323,14 +406,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b7a1cff4-008a-4681-8b19-e36944af9d72
+dfb3f134-4077-43bf-8773-55ed9e54baa8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T092400Z
+20151125T102710Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

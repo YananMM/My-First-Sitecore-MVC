@@ -26,7 +26,7 @@ content-length: 116
 ----version----
 language: en
 version: 1
-revision: 1a54f6ab-bdc6-432b-b88a-3c6437842dee
+revision: 2d7dbdec-5235-438a-94ca-5187ef72a70f
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -46,23 +46,30 @@ Busy lunchtime spot popular with office workers.
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 567
+content-length: 574
 
-A French-style self-service cafeteria with a wide selection of European and Asian cuisine, popular with the office crowd for its fresh tailor-made sandwiches. Go for a classic like egg mayonnaise or try something new. You can even create your own sandwich, pasta or pizza combination. Friendly and helpful staff will make up your order on the spot, ensuring your food is just as fresh as can be. French Breakfast Set is recommended too. There is a wide selection of hot and cold drinks on offer as well. This busy lunchtime spot popular with business folk in a hurry.
+<p>A French-style self-service cafeteria with a wide selection of European and Asian cuisine, popular with the office crowd for its fresh tailor-made sandwiches. Go for a classic like egg mayonnaise or try something new. You can even create your own sandwich, pasta or pizza combination. Friendly and helpful staff will make up your order on the spot, ensuring your food is just as fresh as can be. French Breakfast Set is recommended too. There is a wide selection of hot and cold drinks on offer as well. This busy lunchtime spot popular with business folk in a hurry.</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 18
+
+La petite Fontaine
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 18
+content-length: 0
 
-La,petite,Fontaine
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 48
+content-length: 159
 
-Busy lunchtime spot popular with office workers.
+A French-style self-service cafeteria with a wide selection of European and Asian cuisine, popular with the office crowd for its fresh tailor-made sandwiches. 
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -74,9 +81,9 @@ La petite Fontaine
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 48
+content-length: 159
 
-Busy lunchtime spot popular with office workers.
+A French-style self-service cafeteria with a wide selection of European and Asian cuisine, popular with the office crowd for its fresh tailor-made sandwiches. 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -95,9 +102,12 @@ A French-style self-service cafeteria with a wide selection of European and Asia
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 62
+content-length: 85
 
-Mon-Fri 7:30am-8pm Sat 7:30am-6pm Sun & Public holidays closed
+Mon-Fri 7:30am-8pm <br>
+Sat 7:30am-6pm <br>
+Sun &amp; Public holidays closed<br>
+<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -139,14 +149,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1a54f6ab-bdc6-432b-b88a-3c6437842dee
+2d7dbdec-5235-438a-94ca-5187ef72a70f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T045852Z
+20151125T120942Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -157,7 +167,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 7d801987-4712-48a6-8a84-fa5c10918b39
+revision: 62898104-3d30-4e81-8b71-b2370c533c02
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -177,23 +187,30 @@ content-length: 9
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 178
+content-length: 185
 
-这家洋溢着法式情调的自助餐厅，提供欧洲和亚洲精点，为客人新鲜特制的三明治更是口碑载道。你可选择经典蛋黄酱或尝试新口味，甚至自行创作最贴合心意的三明治、意粉和薄饼组合。工作人员亲切友善，乐于现场为你制作美食，确保新鲜。至于其提供的法式早餐，同样是不容错过之选。此外，这里还备有多款热饮和冷饮供选择。La petite Fontaine已成为上班族的午餐热点。
+<p>这家洋溢着法式情调的自助餐厅，提供欧洲和亚洲精点，为客人新鲜特制的三明治更是口碑载道。你可选择经典蛋黄酱或尝试新口味，甚至自行创作最贴合心意的三明治、意粉和薄饼组合。工作人员亲切友善，乐于现场为你制作美食，确保新鲜。至于其提供的法式早餐，同样是不容错过之选。此外，这里还备有多款热饮和冷饮供选择。La petite Fontaine已成为上班族的午餐热点。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 18
+
+La petite Fontaine
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 18
+content-length: 0
 
-La,petite,Fontaine
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 9
+content-length: 43
 
-上班族的午餐热点。
+这家洋溢着法式情调的自助餐厅，提供欧洲和亚洲精点，为客人新鲜特制的三明治更是口碑载道。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -205,9 +222,9 @@ La petite Fontaine
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 9
+content-length: 43
 
-上班族的午餐热点。
+这家洋溢着法式情调的自助餐厅，提供欧洲和亚洲精点，为客人新鲜特制的三明治更是口碑载道。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -226,9 +243,11 @@ content-length: 178
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 49
+content-length: 63
 
-星期一至星期五：早上7时30分至晚上8时 星期六：早上7时30分至晚上6时 星期日及公众假期 休息
+星期一至星期五：早上7时30分至晚上8时 <br>
+星期六：早上7时30分至晚上6时 <br>
+星期日及公众假期 休息<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -277,25 +296,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7d801987-4712-48a6-8a84-fa5c10918b39
+62898104-3d30-4e81-8b71-b2370c533c02
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063917Z
+20151125T093354Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 52b527bd-2c8b-4e12-a1e8-dc515155c7c0
+revision: f3d141b2-6b03-44b0-b53f-f2f49f2cd720
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -315,23 +334,30 @@ content-length: 10
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 178
+content-length: 185
 
-這家洋溢法式情調的自助餐廳，提供歐洲和亞洲精點，為客人新鮮特製的三文治更是口碑載道。你可選擇經典蛋黃醬或嘗試新口味，甚至自行創作最貼合心意的三文治、意粉和薄餅組合。工作人員親切友善，樂於即場為你製作美食，確保新鮮。至於其提供的法式早餐，同樣是不容錯過之選。此外，這裏還備有多款熱飲和冷飲供選擇。La petite Fontaine已成為上班一族的午餐熱點。
+<p>這家洋溢法式情調的自助餐廳，提供歐洲和亞洲精點，為客人新鮮特製的三文治更是口碑載道。你可選擇經典蛋黃醬或嘗試新口味，甚至自行創作最貼合心意的三文治、意粉和薄餅組合。工作人員親切友善，樂於即場為你製作美食，確保新鮮。至於其提供的法式早餐，同樣是不容錯過之選。此外，這裏還備有多款熱飲和冷飲供選擇。La petite Fontaine已成為上班一族的午餐熱點。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 18
+
+La petite Fontaine
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 18
+content-length: 0
 
-La,petite,Fontaine
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 10
+content-length: 42
 
-上班一族的午餐熱點。
+這家洋溢法式情調的自助餐廳，提供歐洲和亞洲精點，為客人新鮮特製的三文治更是口碑載道。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -343,9 +369,9 @@ La petite Fontaine
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 10
+content-length: 42
 
-上班一族的午餐熱點。
+這家洋溢法式情調的自助餐廳，提供歐洲和亞洲精點，為客人新鮮特製的三文治更是口碑載道。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -364,9 +390,11 @@ content-length: 178
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 49
+content-length: 62
 
-星期一至星期五：早上7時30分至晚上8時 星期六：早上7時30分至晚上6時 星期日及公眾假期 休息
+星期一至星期五：早上7時30分至晚上8時 <br>
+星期六：早上7時30分至晚上6時<br>
+星期日及公眾假期 休息<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -408,18 +436,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-52b527bd-2c8b-4e12-a1e8-dc515155c7c0
+f3d141b2-6b03-44b0-b53f-f2f49f2cd720
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063917Z
+20151125T093306Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

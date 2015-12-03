@@ -54,7 +54,7 @@ shop-103-104
 ----version----
 language: en
 version: 1
-revision: e0099d58-35e3-4edc-afe9-3180756efe25
+revision: fedfdf56-9d43-4253-a81c-e5e8f308e3a2
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -74,25 +74,32 @@ Offering a wide range of luxury products from haute couture and prêt-à-porter 
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 664
+content-length: 700
 
-Valentino is one of the most storied brands in the world, offers a wide range of luxury products from Haute Couture and Prêt-à-Porter to an extensive accessories collection that includes bags, shoes, small leather goods, belts, eyewear, silks and perfumes. 
-Maria Grazia Chiuri and Pierpaolo Piccioli, Creative Directors of Valentino, a choice that proved to be fruitful and insightful move as the design duo have been credited with rejuvenating the brand via highly-successful and well-received collections that stayed true to the brand’s legacy of half a century while moving the design aesthetic forward with designs that are at once feminine and contemporary.
-
+<p>Valentino is one of the most storied brands in the world, offers a wide range of luxury products from Haute Couture and Pr&ecirc;t-&agrave;-Porter to an extensive accessories collection that includes bags, shoes, small leather goods, belts, eyewear, silks and perfumes.</p>
+<p>Maria Grazia Chiuri and Pierpaolo Piccioli, Creative Directors of Valentino, a choice that proved to be fruitful and insightful move as the design duo have been credited with rejuvenating the brand via highly-successful and well-received collections that stayed true to the brand&rsquo;s legacy of half a century while moving the design aesthetic forward with designs that are at once feminine and contemporary.</p>
+<br>
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 9
 
 VALENTINO
 ----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
+----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 93
+content-length: 257
 
-Offering a wide range of luxury products from haute couture and prêt-à-porter to accessories.
+Valentino is one of the most storied brands in the world, offers a wide range of luxury products from Haute Couture and Prêt-à-Porter to an extensive accessories collection that includes bags, shoes, small leather goods, belts, eyewear, silks and perfumes. 
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -104,9 +111,9 @@ VALENTINO
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 93
+content-length: 257
 
-Offering a wide range of luxury products from haute couture and prêt-à-porter to accessories.
+Valentino is one of the most storied brands in the world, offers a wide range of luxury products from Haute Couture and Prêt-à-Porter to an extensive accessories collection that includes bags, shoes, small leather goods, belts, eyewear, silks and perfumes. 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -118,18 +125,19 @@ VALENTINO
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 664
+content-length: 700
 
-Valentino is one of the most storied brands in the world, offers a wide range of luxury products from Haute Couture and Prêt-à-Porter to an extensive accessories collection that includes bags, shoes, small leather goods, belts, eyewear, silks and perfumes. 
-Maria Grazia Chiuri and Pierpaolo Piccioli, Creative Directors of Valentino, a choice that proved to be fruitful and insightful move as the design duo have been credited with rejuvenating the brand via highly-successful and well-received collections that stayed true to the brand’s legacy of half a century while moving the design aesthetic forward with designs that are at once feminine and contemporary.
-
+<p>Valentino is one of the most storied brands in the world, offers a wide range of luxury products from Haute Couture and Pr&ecirc;t-&agrave;-Porter to an extensive accessories collection that includes bags, shoes, small leather goods, belts, eyewear, silks and perfumes.</p>
+<p>Maria Grazia Chiuri and Pierpaolo Piccioli, Creative Directors of Valentino, a choice that proved to be fruitful and insightful move as the design duo have been credited with rejuvenating the brand via highly-successful and well-received collections that stayed true to the brand&rsquo;s legacy of half a century while moving the design aesthetic forward with designs that are at once feminine and contemporary.</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 33
+content-length: 40
 
-Mon-Sat 10:30am-8pm  Sun 11am-7pm
+Mon-Sat 10:30am-8pm<br>
+Sun 11am-7pm<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -171,14 +179,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e0099d58-35e3-4edc-afe9-3180756efe25
+fedfdf56-9d43-4253-a81c-e5e8f308e3a2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T025715Z
+20151125T161456Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -189,7 +197,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 7826f70e-e907-4e4c-a38f-4b191a2349d5
+revision: 6cb0dc0d-d078-4a1b-b2c2-3c787d3788db
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -209,24 +217,32 @@ content-length: 35
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 180
+content-length: 196
 
-Valentino 是举世闻名的意大利奢华品牌之一，产品包括高级订制服、成衣以及一系列配饰，包括手袋、皮鞋、小型皮具、腰带、眼镜、腕表及香水。
-创意总监Maria Grazia Chiuri 和 Pierpaolo Piccioli将品牌年轻化，创造了十分成功和受欢迎的系列。他们的作品不但传承了品牌半世纪遗留下来的传统，同时也融合了女性气质和现代设计的美感。
+<p>Valentino 是举世闻名的意大利奢华品牌之一，产品包括高级订制服、成衣以及一系列配饰，包括手袋、皮鞋、小型皮具、腰带、眼镜、腕表及香水。<br>
+创意总监Maria Grazia Chiuri 和 Pierpaolo Piccioli将品牌年轻化，创造了十分成功和受欢迎的系列。他们的作品不但传承了品牌半世纪遗留下来的传统，同时也融合了女性气质和现代设计的美感。</p>
+<br>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+华伦天奴
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 9
+content-length: 0
 
-VALENTINO
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 35
+content-length: 71
 
-国际顶级服饰品牌，产品包括高级订制服装、高级成衣及各式配饰，应有尽有。
+Valentino 是举世闻名的意大利奢华品牌之一，产品包括高级订制服、成衣以及一系列配饰，包括手袋、皮鞋、小型皮具、腰带、眼镜、腕表及香水。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -238,9 +254,9 @@ content-length: 4
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 35
+content-length: 71
 
-国际顶级服饰品牌，产品包括高级订制服装、高级成衣及各式配饰，应有尽有。
+Valentino 是举世闻名的意大利奢华品牌之一，产品包括高级订制服、成衣以及一系列配饰，包括手袋、皮鞋、小型皮具、腰带、眼镜、腕表及香水。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -252,17 +268,19 @@ content-length: 4
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 180
+content-length: 196
 
-Valentino 是举世闻名的意大利奢华品牌之一，产品包括高级订制服、成衣以及一系列配饰，包括手袋、皮鞋、小型皮具、腰带、眼镜、腕表及香水。
-创意总监Maria Grazia Chiuri 和 Pierpaolo Piccioli将品牌年轻化，创造了十分成功和受欢迎的系列。他们的作品不但传承了品牌半世纪遗留下来的传统，同时也融合了女性气质和现代设计的美感。
+<p>Valentino 是举世闻名的意大利奢华品牌之一，产品包括高级订制服、成衣以及一系列配饰，包括手袋、皮鞋、小型皮具、腰带、眼镜、腕表及香水。<br>
+创意总监Maria Grazia Chiuri 和 Pierpaolo Piccioli将品牌年轻化，创造了十分成功和受欢迎的系列。他们的作品不但传承了品牌半世纪遗留下来的传统，同时也融合了女性气质和现代设计的美感。</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 36
+content-length: 44
 
-星期一至星期六︰早上10时30分至晚上8时 星期日︰早上11时至晚上7时
+星期一至星期六︰早上10时30分至晚上8时<br>
+星期日︰早上11时至晚上7时<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -311,25 +329,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7826f70e-e907-4e4c-a38f-4b191a2349d5
+6cb0dc0d-d078-4a1b-b2c2-3c787d3788db
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T064012Z
+20151125T152915Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 70ad7069-f0d0-4494-818b-9af4b061311e
+revision: 31f0f167-4df1-4b6b-a702-9ca38c037566
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -349,25 +367,32 @@ content-length: 35
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 181
+content-length: 196
 
-Valentino 是舉世聲名的意大利奢華品牌之一，產品包括：高級訂製服、成衣以及一系列配飾，包括手袋、皮鞋、小型皮具、腰帶、眼鏡、腕錶及香水。
-創意總監Maria Grazia Chiuri 和 Pierpaolo Piccioli令品牌年輕化，創造了十分成功和受歡迎的系列。他們的作品不但傳承了品牌半世紀遺留下來的傳統，同時亦融合女性氣質和現代設計的美感。
+<p>Valentino 是舉世聲名的意大利奢華品牌之一，產品包括：高級訂製服、成衣以及一系列配飾，包括手袋、皮鞋、小型皮具、腰帶、眼鏡、腕錶及香水。<br>
+創意總監Maria Grazia Chiuri 和 Pierpaolo Piccioli令品牌年輕化，創造了十分成功和受歡迎的系列。他們的作品不但傳承了品牌半世紀遺留下來的傳統，同時亦融合女性氣質和現代設計的美感。</p>
+<br>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
 
+華倫天奴
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 9
+content-length: 0
 
-VALENTINO
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 35
+content-length: 72
 
-國際頂級服飾品牌，產品包括高級訂製服裝、高級成衣及各式配飾，應有盡有。
+Valentino 是舉世聲名的意大利奢華品牌之一，產品包括：高級訂製服、成衣以及一系列配飾，包括手袋、皮鞋、小型皮具、腰帶、眼鏡、腕錶及香水。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -379,9 +404,9 @@ content-length: 4
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 35
+content-length: 72
 
-國際頂級服飾品牌，產品包括高級訂製服裝、高級成衣及各式配飾，應有盡有。
+Valentino 是舉世聲名的意大利奢華品牌之一，產品包括：高級訂製服、成衣以及一系列配飾，包括手袋、皮鞋、小型皮具、腰帶、眼鏡、腕錶及香水。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -393,18 +418,19 @@ content-length: 4
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 181
+content-length: 196
 
-Valentino 是舉世聲名的意大利奢華品牌之一，產品包括：高級訂製服、成衣以及一系列配飾，包括手袋、皮鞋、小型皮具、腰帶、眼鏡、腕錶及香水。
-創意總監Maria Grazia Chiuri 和 Pierpaolo Piccioli令品牌年輕化，創造了十分成功和受歡迎的系列。他們的作品不但傳承了品牌半世紀遺留下來的傳統，同時亦融合女性氣質和現代設計的美感。
-
+<p>Valentino 是舉世聲名的意大利奢華品牌之一，產品包括：高級訂製服、成衣以及一系列配飾，包括手袋、皮鞋、小型皮具、腰帶、眼鏡、腕錶及香水。<br>
+創意總監Maria Grazia Chiuri 和 Pierpaolo Piccioli令品牌年輕化，創造了十分成功和受歡迎的系列。他們的作品不但傳承了品牌半世紀遺留下來的傳統，同時亦融合女性氣質和現代設計的美感。</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 36
+content-length: 47
 
-星期一至星期六︰早上10時30分至晚上8時 星期日︰早上11時至晚上7時
+<p>星期一至星期六︰早上10時30分至晚上8時<br>
+星期日︰早上11時至晚上7時</p>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -446,18 +472,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-70ad7069-f0d0-4494-818b-9af4b061311e
+31f0f167-4df1-4b6b-a702-9ca38c037566
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T064012Z
+20151125T152809Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

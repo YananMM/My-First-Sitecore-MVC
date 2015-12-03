@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 38
+content-length: 77
 
-{C034122F-A68F-4E3C-827E-C1898533C08E}
+{C034122F-A68F-4E3C-827E-C1898533C08E}|{C70FEE58-7079-41B5-A53C-F7B7805CE669}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-113-114
 ----version----
 language: en
 version: 1
-revision: b91d0311-f007-4ab8-928c-892d5b359f23
+revision: 938b5e79-3d2d-4c34-a917-e60a5b1caf9b
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -74,16 +74,23 @@ A continuously changing, dynamic assortment of fine jewellery.
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 645
+content-length: 651
 
-Plukka is an international fine designer jewellery retailer with an award-winning online business model which has won it the title of “Best Etailer of the Year” for two years in a row. The brand’s pop-up location in LANDMARK is the its first retail presence and is an extension of the etailer’s “no-middleman” business model, which allows customers to touch and feel for themselves the 1000-plus pieces displayed on Plukka’s website. The pop-up boutique is an ever-changing showcase of extraordinary and creative jewels from some of the world’s most exciting and gifted designers, including Yeprem, Wendy Yue, Jack Vartanian and Tomasz Donocik. 
+<p>Plukka is an international fine designer jewellery retailer with an award-winning online business model which has won it the title of "Best Etailer of the Year" for two years in a row. The brand’s pop-up location in LANDMARK is the its first retail presence and is an extension of the etailer’s "no-middleman" business model, which allows customers to touch and feel for themselves the 1000-plus pieces displayed on Plukka’s website. The pop-up boutique is an ever-changing showcase of extraordinary and creative jewels from some of the world’s most exciting and gifted designers, including Yeprem, Wendy Yue, Jack Vartanian and Tomasz Donocik.</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 6
+
+Plukka
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 62
+content-length: 645
 
-A continuously changing, dynamic assortment of fine jewellery.
+Plukka is an international fine designer jewellery retailer with an award-winning online business model which has won it the title of “Best Etailer of the Year” for two years in a row. The brand’s pop-up location in LANDMARK is the its first retail presence and is an extension of the etailer’s “no-middleman” business model, which allows customers to touch and feel for themselves the 1000-plus pieces displayed on Plukka’s website. The pop-up boutique is an ever-changing showcase of extraordinary and creative jewels from some of the world’s most exciting and gifted designers, including Yeprem, Wendy Yue, Jack Vartanian and Tomasz Donocik. 
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -95,9 +102,9 @@ Plukka
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 62
+content-length: 645
 
-A continuously changing, dynamic assortment of fine jewellery.
+Plukka is an international fine designer jewellery retailer with an award-winning online business model which has won it the title of “Best Etailer of the Year” for two years in a row. The brand’s pop-up location in LANDMARK is the its first retail presence and is an extension of the etailer’s "no-middleman" business model, which allows customers to touch and feel for themselves the 1000-plus pieces displayed on Plukka’s website. The pop-up boutique is an ever-changing showcase of extraordinary and creative jewels from some of the world’s most exciting and gifted designers, including Yeprem, Wendy Yue, Jack Vartanian and Tomasz Donocik. 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -109,16 +116,17 @@ Plukka
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 645
+content-length: 652
 
-Plukka is an international fine designer jewellery retailer with an award-winning online business model which has won it the title of “Best Etailer of the Year” for two years in a row. The brand’s pop-up location in LANDMARK is the its first retail presence and is an extension of the etailer’s “no-middleman” business model, which allows customers to touch and feel for themselves the 1000-plus pieces displayed on Plukka’s website. The pop-up boutique is an ever-changing showcase of extraordinary and creative jewels from some of the world’s most exciting and gifted designers, including Yeprem, Wendy Yue, Jack Vartanian and Tomasz Donocik. 
+<p>Plukka is an international fine designer jewellery retailer with an award-winning online business model which has won it the title of "Best Etailer of the Year" for two years in a row. The brand’s pop-up location in LANDMARK is the its first retail presence and is an extension of the etailer’s "no-middleman" business model, which allows customers to touch and feel for themselves the 1000-plus pieces displayed on Plukka’s website. The pop-up boutique is an ever-changing showcase of extraordinary and creative jewels from some of the world’s most exciting and gifted designers, including Yeprem, Wendy Yue, Jack Vartanian and Tomasz Donocik. </p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 54
+content-length: 66
 
-Mon-Sat 10:30am-7:30pm Sun & Public Holidays 11am-7pm 
+Mon-Sat 10:30am-7:30pm <br>
+Sun &amp; Public Holidays 11am-7pm<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -160,25 +168,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b91d0311-f007-4ab8-928c-892d5b359f23
+938b5e79-3d2d-4c34-a917-e60a5b1caf9b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151627Z
+20151125T154239Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 88fcb0ba-62d9-436a-82f6-0eb608ff9920
+revision: 9b72a821-eab2-46af-9cf7-e2a87edc197d
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -198,16 +206,23 @@ content-length: 24
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 218
+content-length: 225
 
-Plukka是国际高级品牌珠宝零售商，其官方网店连续两年获得业界的「年度最佳零售商」殊荣。Plukka为了让顾客亲自感受和体验高级珠宝的华丽璀璨与独特之美，首次开设零售店并进驻置地广场，将 Plukka网站上的1000多件高级珠宝饰品近距离呈现在顾客面前。店内汇聚了全球多位著名设计师的作品，包括Yeprem、Wendy Yue、Jack Vartanian 和Tomasz Donocik，陈设的非凡珠宝更不断推陈出新，突显诱人魅力。
+<p>Plukka是国际高级品牌珠宝零售商，其官方网店连续两年获得业界的「年度最佳零售商」殊荣。Plukka为了让顾客亲自感受和体验高级珠宝的华丽璀璨与独特之美，首次开设零售店并进驻置地广场，将 Plukka网站上的1000多件高级珠宝饰品近距离呈现在顾客面前。店内汇聚了全球多位著名设计师的作品，包括Yeprem、Wendy Yue、Jack Vartanian 和Tomasz Donocik，陈设的非凡珠宝更不断推陈出新，突显诱人魅力。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 6
+
+Plukka
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 24
+content-length: 218
 
-不断推陈出新，突显高级珠宝的流动宝光和璀璨魅力。
+Plukka是国际高级品牌珠宝零售商，其官方网店连续两年获得业界的「年度最佳零售商」殊荣。Plukka为了让顾客亲自感受和体验高级珠宝的华丽璀璨与独特之美，首次开设零售店并进驻置地广场，将 Plukka网站上的1000多件高级珠宝饰品近距离呈现在顾客面前。店内汇聚了全球多位著名设计师的作品，包括Yeprem、Wendy Yue、Jack Vartanian 和Tomasz Donocik，陈设的非凡珠宝更不断推陈出新，突显诱人魅力。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -219,9 +234,9 @@ Plukka
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 24
+content-length: 218
 
-不断推陈出新，突显高级珠宝的流动宝光和璀璨魅力。
+Plukka是国际高级品牌珠宝零售商，其官方网店连续两年获得业界的「年度最佳零售商」殊荣。Plukka为了让顾客亲自感受和体验高级珠宝的华丽璀璨与独特之美，首次开设零售店并进驻置地广场，将 Plukka网站上的1000多件高级珠宝饰品近距离呈现在顾客面前。店内汇聚了全球多位著名设计师的作品，包括Yeprem、Wendy Yue、Jack Vartanian 和Tomasz Donocik，陈设的非凡珠宝更不断推陈出新，突显诱人魅力。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -233,16 +248,24 @@ Plukka
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 218
+content-length: 225
 
-Plukka是国际高级品牌珠宝零售商，其官方网店连续两年获得业界的「年度最佳零售商」殊荣。Plukka为了让顾客亲自感受和体验高级珠宝的华丽璀璨与独特之美，首次开设零售店并进驻置地广场，将 Plukka网站上的1000多件高级珠宝饰品近距离呈现在顾客面前。店内汇聚了全球多位著名设计师的作品，包括Yeprem、Wendy Yue、Jack Vartanian 和Tomasz Donocik，陈设的非凡珠宝更不断推陈出新，突显诱人魅力。
+<p>Plukka是国际高级品牌珠宝零售商，其官方网店连续两年获得业界的「年度最佳零售商」殊荣。Plukka为了让顾客亲自感受和体验高级珠宝的华丽璀璨与独特之美，首次开设零售店并进驻置地广场，将 Plukka网站上的1000多件高级珠宝饰品近距离呈现在顾客面前。店内汇聚了全球多位著名设计师的作品，包括Yeprem、Wendy Yue、Jack Vartanian 和Tomasz Donocik，陈设的非凡珠宝更不断推陈出新，突显诱人魅力。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 45
+content-length: 53
 
-星期一至星期六∶早上10时30分至晚上7时30分 星期日及公众假期∶早上11时至晚上7时 
+星期一至星期六∶早上10时30分至晚上7时30分 <br>
+星期日及公众假期∶早上11时至晚上7时<br>
+----field----
+field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
+name: Contact
+key: contact
+content-length: 9
+
+2539 5088
 ----field----
 field: {5350FA4D-170D-4926-8B21-97068A9C599F}
 name: Address
@@ -284,25 +307,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-88fcb0ba-62d9-436a-82f6-0eb608ff9920
+9b72a821-eab2-46af-9cf7-e2a87edc197d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063944Z
+20151125T154312Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 4a3c7cea-0985-4a58-8546-a42f791ded50
+revision: 36e762f1-35f7-4941-8825-b9bce0c04d57
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -322,16 +345,23 @@ content-length: 24
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 220
+content-length: 227
 
-Plukka是國際高級品牌珠寶零售商，其官方網上商店連續兩年獲得業界的「年度最佳零售商」殊榮。Plukka為了讓顧客親自觸摸和體驗高級珠寶的華麗璀璨與獨特之美，首次開設零售店並進駐置地廣塲，把 Plukka網站上的1000多件高級珠寶飾品近距離呈現在顧客面前。店內匯聚了全球多位著名設計師的作品，包括Yeprem、Wendy Yue、Jack Vartanian 和Tomasz Donocik，陳設的非凡珠寶更不斷推陳出新，突顯誘人魅力。
+<p>Plukka是國際高級品牌珠寶零售商，其官方網上商店連續兩年獲得業界的「年度最佳零售商」殊榮。Plukka為了讓顧客親自觸摸和體驗高級珠寶的華麗璀璨與獨特之美，首次開設零售店並進駐置地廣塲，把 Plukka網站上的1000多件高級珠寶飾品近距離呈現在顧客面前。店內匯聚了全球多位著名設計師的作品，包括Yeprem、Wendy Yue、Jack Vartanian 和Tomasz Donocik，陳設的非凡珠寶更不斷推陳出新，突顯誘人魅力。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 6
+
+Plukka
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 24
+content-length: 220
 
-不斷推陳出新，突顯高級珠寶的流動寶光和璀璨魅力。
+Plukka是國際高級品牌珠寶零售商，其官方網上商店連續兩年獲得業界的「年度最佳零售商」殊榮。Plukka為了讓顧客親自觸摸和體驗高級珠寶的華麗璀璨與獨特之美，首次開設零售店並進駐置地廣塲，把 Plukka網站上的1000多件高級珠寶飾品近距離呈現在顧客面前。店內匯聚了全球多位著名設計師的作品，包括Yeprem、Wendy Yue、Jack Vartanian 和Tomasz Donocik，陳設的非凡珠寶更不斷推陳出新，突顯誘人魅力。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -343,9 +373,9 @@ Plukka
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 24
+content-length: 220
 
-不斷推陳出新，突顯高級珠寶的流動寶光和璀璨魅力。
+Plukka是國際高級品牌珠寶零售商，其官方網上商店連續兩年獲得業界的「年度最佳零售商」殊榮。Plukka為了讓顧客親自觸摸和體驗高級珠寶的華麗璀璨與獨特之美，首次開設零售店並進駐置地廣塲，把 Plukka網站上的1000多件高級珠寶飾品近距離呈現在顧客面前。店內匯聚了全球多位著名設計師的作品，包括Yeprem、Wendy Yue、Jack Vartanian 和Tomasz Donocik，陳設的非凡珠寶更不斷推陳出新，突顯誘人魅力。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -357,16 +387,24 @@ Plukka
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 220
+content-length: 227
 
-Plukka是國際高級品牌珠寶零售商，其官方網上商店連續兩年獲得業界的「年度最佳零售商」殊榮。Plukka為了讓顧客親自觸摸和體驗高級珠寶的華麗璀璨與獨特之美，首次開設零售店並進駐置地廣塲，把 Plukka網站上的1000多件高級珠寶飾品近距離呈現在顧客面前。店內匯聚了全球多位著名設計師的作品，包括Yeprem、Wendy Yue、Jack Vartanian 和Tomasz Donocik，陳設的非凡珠寶更不斷推陳出新，突顯誘人魅力。
+<p>Plukka是國際高級品牌珠寶零售商，其官方網上商店連續兩年獲得業界的「年度最佳零售商」殊榮。Plukka為了讓顧客親自觸摸和體驗高級珠寶的華麗璀璨與獨特之美，首次開設零售店並進駐置地廣塲，把 Plukka網站上的1000多件高級珠寶飾品近距離呈現在顧客面前。店內匯聚了全球多位著名設計師的作品，包括Yeprem、Wendy Yue、Jack Vartanian 和Tomasz Donocik，陳設的非凡珠寶更不斷推陳出新，突顯誘人魅力。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 45
+content-length: 52
 
-星期一至星期六︰早上10時30分至晚上7時30分 星期日及公眾假期︰早上11時至晚上7時 
+星期一至星期六︰早上10時30分至晚上7時30分<br>
+星期日及公眾假期︰早上11時至晚上7時<br>
+----field----
+field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
+name: Contact
+key: contact
+content-length: 9
+
+2539 5088
 ----field----
 field: {5350FA4D-170D-4926-8B21-97068A9C599F}
 name: Address
@@ -401,18 +439,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4a3c7cea-0985-4a58-8546-a42f791ded50
+36e762f1-35f7-4941-8825-b9bce0c04d57
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063944Z
+20151125T154350Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
