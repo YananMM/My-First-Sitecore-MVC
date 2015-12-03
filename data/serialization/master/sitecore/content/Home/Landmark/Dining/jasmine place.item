@@ -17,6 +17,20 @@ content-length: 65
 
 <image mediaid="{9296BD1B-6550-4EAF-9E1E-A7D315694BDB}" alt="" />
 ----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
@@ -26,7 +40,7 @@ content-length: 116
 ----version----
 language: en
 version: 1
-revision: c0fffd96-3c2b-41ab-af9f-e28290944298
+revision: 11f6bb69-24d6-442f-aec1-88039f0747e9
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -50,12 +64,19 @@ content-length: 618
 
 Savour original Chinese cuisine in surroundings of floral elegance at Jasmine Place, a new style of classic Chinese restaurant that welcomes diners like a private club. Hand-painted birds and flowers adorn the walls in this bustling restaurant where you can enjoy a selection of wonderful dishes in a relaxing environment. Creating traditional dishes using new cooking styles, all dishes at Jasmine Place are cooked in a healthy way with no added MSG so the food’s original fresh flavours are at the heart of your dining experience. Famous for its delicious dim sum and lively atmosphere, particularly at the weekends.
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+Jasmine Place
+----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 51
+content-length: 168
 
-Classic Cantonese dim sum in elegant surroundings. 
+Savour original Chinese cuisine in surroundings of floral elegance at Jasmine Place, a new style of classic Chinese restaurant that welcomes diners like a private club.
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -67,9 +88,9 @@ Jasmine Place
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 51
+content-length: 168
 
-Classic Cantonese dim sum in elegant surroundings. 
+Savour original Chinese cuisine in surroundings of floral elegance at Jasmine Place, a new style of classic Chinese restaurant that welcomes diners like a private club.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -88,10 +109,14 @@ Savour original Chinese cuisine in surroundings of floral elegance at Jasmine 
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 71
+content-length: 107
 
-Mon-Sat: 11am-3pm & 6pm-11pm
-Sun & Public Holidays: 10am-3pm & 6pm-11pm
+Mon-Sat: <br>
+11am-3pm &amp; 6pm-11pm
+<br>
+<br>
+Sun &amp; Public Holidays: <br>
+10am-3pm &amp; 6pm-11pm<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -133,14 +158,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c0fffd96-3c2b-41ab-af9f-e28290944298
+11f6bb69-24d6-442f-aec1-88039f0747e9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T051007Z
+20151125T092741Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -151,7 +176,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 2b53a50a-86ac-4b64-9c17-236ca2159415
+revision: 4c2e5f5b-ff21-4572-858b-ccde31b9288f
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -171,16 +196,23 @@ content-length: 23
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 177
+content-length: 184
 
-格调时尚的怡翠轩中餐厅，于花卉般优雅的环境里奉上纯朴的中国美食，让各路食客仿若置身于私人会所之中安享尊贵。繁华的餐厅墙壁以手绘中式花鸟图案作缀，让食客在享受丰富美食的同时，沉浸于舒适自在的氛围。怡翠轩以创新手法烹调传统中菜，所有菜式均以健康方式制作，不添加味精，更能凸显食材的原味，熨帖每位食客的心胃。怡翠轩以美味的点心和优雅的氛围而闻名，周末气氛尤佳。
+<p>格调时尚的怡翠轩中餐厅，于花卉般优雅的环境里奉上纯朴的中国美食，让各路食客仿若置身于私人会所之中安享尊贵。繁华的餐厅墙壁以手绘中式花鸟图案作缀，让食客在享受丰富美食的同时，沉浸于舒适自在的氛围。怡翠轩以创新手法烹调传统中菜，所有菜式均以健康方式制作，不添加味精，更能凸显食材的原味，熨帖每位食客的心胃。怡翠轩以美味的点心和优雅的氛围而闻名，周末气氛尤佳。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+怡翠轩
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 23
+content-length: 53
 
-花相映，清茶香，于优悠写意中享受经典港式点心。
+格调时尚的怡翠轩中餐厅，于花卉般优雅的环境里奉上纯朴的中国美食，让各路食客仿若置身于私人会所之中安享尊贵。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -192,9 +224,9 @@ content-length: 3
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 23
+content-length: 53
 
-花相映，清茶香，于优悠写意中享受经典港式点心。
+格调时尚的怡翠轩中餐厅，于花卉般优雅的环境里奉上纯朴的中国美食，让各路食客仿若置身于私人会所之中安享尊贵。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -206,17 +238,21 @@ content-length: 3
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 177
+content-length: 184
 
-格调时尚的怡翠轩中餐厅，于花卉般优雅的环境里奉上纯朴的中国美食，让各路食客仿若置身于私人会所之中安享尊贵。繁华的餐厅墙壁以手绘中式花鸟图案作缀，让食客在享受丰富美食的同时，沉浸于舒适自在的氛围。怡翠轩以创新手法烹调传统中菜，所有菜式均以健康方式制作，不添加味精，更能凸显食材的原味，熨帖每位食客的心胃。怡翠轩以美味的点心和优雅的氛围而闻名，周末气氛尤佳。
+<p>格调时尚的怡翠轩中餐厅，于花卉般优雅的环境里奉上纯朴的中国美食，让各路食客仿若置身于私人会所之中安享尊贵。繁华的餐厅墙壁以手绘中式花鸟图案作缀，让食客在享受丰富美食的同时，沉浸于舒适自在的氛围。怡翠轩以创新手法烹调传统中菜，所有菜式均以健康方式制作，不添加味精，更能凸显食材的原味，熨帖每位食客的心胃。怡翠轩以美味的点心和优雅的氛围而闻名，周末气氛尤佳。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 57
+content-length: 81
 
-星期一至星期六：早上11时至下午3时及晚上6时至11时
-星期日及公众假期：早上10时至下午3时及晚上6时至11时 
+星期一至星期六：<br>
+早上11时至下午3时及晚上6时至11时
+<br>
+<br>
+星期日及公众假期：<br>
+早上10时至下午3时及晚上6时至11时 <br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -265,25 +301,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2b53a50a-86ac-4b64-9c17-236ca2159415
+4c2e5f5b-ff21-4572-858b-ccde31b9288f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063912Z
+20151125T092910Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: f0fa5c41-e1a9-4adb-a802-5b301ae69385
+revision: db4b3331-8002-4a3c-84ed-abb2fb4c501a
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -303,16 +339,23 @@ content-length: 23
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 177
+content-length: 184
 
-格調時尚的怡翠軒中餐廳，於花卉般優雅的環境裡奉上純樸的中國美食，讓各路食客仿若置身於私人會所之中安享尊貴。繁華的餐廳牆壁以手繪中式花鳥圖案作綴，讓食客在享受豐富的美食的同時，營造舒適自在的氛圍。怡翠軒以創新手法烹調傳統中菜，所有菜式均以健康方式製作，不添加味精，更能凸顯食材的原味，熨帖每位食客的心胃。怡翠軒以美味的點心和優雅的氛圍而聞名，周末氣氛尤佳。
+<p>格調時尚的怡翠軒中餐廳，於花卉般優雅的環境裡奉上純樸的中國美食，讓各路食客仿若置身於私人會所之中安享尊貴。繁華的餐廳牆壁以手繪中式花鳥圖案作綴，讓食客在享受豐富的美食的同時，營造舒適自在的氛圍。怡翠軒以創新手法烹調傳統中菜，所有菜式均以健康方式製作，不添加味精，更能凸顯食材的原味，熨帖每位食客的心胃。怡翠軒以美味的點心和優雅的氛圍而聞名，周末氣氛尤佳。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+怡翠軒
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 23
+content-length: 53
 
-花相映，清茶香，於優悠寫意中享受經典港式點心。
+格調時尚的怡翠軒中餐廳，於花卉般優雅的環境裡奉上純樸的中國美食，讓各路食客仿若置身於私人會所之中安享尊貴。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -324,9 +367,9 @@ content-length: 3
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 23
+content-length: 53
 
-花相映，清茶香，於優悠寫意中享受經典港式點心。
+格調時尚的怡翠軒中餐廳，於花卉般優雅的環境裡奉上純樸的中國美食，讓各路食客仿若置身於私人會所之中安享尊貴。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -338,17 +381,21 @@ content-length: 3
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 177
+content-length: 184
 
-格調時尚的怡翠軒中餐廳，於花卉般優雅的環境裡奉上純樸的中國美食，讓各路食客仿若置身於私人會所之中安享尊貴。繁華的餐廳牆壁以手繪中式花鳥圖案作綴，讓食客在享受豐富的美食的同時，營造舒適自在的氛圍。怡翠軒以創新手法烹調傳統中菜，所有菜式均以健康方式製作，不添加味精，更能凸顯食材的原味，熨帖每位食客的心胃。怡翠軒以美味的點心和優雅的氛圍而聞名，周末氣氛尤佳。
+<p>格調時尚的怡翠軒中餐廳，於花卉般優雅的環境裡奉上純樸的中國美食，讓各路食客仿若置身於私人會所之中安享尊貴。繁華的餐廳牆壁以手繪中式花鳥圖案作綴，讓食客在享受豐富的美食的同時，營造舒適自在的氛圍。怡翠軒以創新手法烹調傳統中菜，所有菜式均以健康方式製作，不添加味精，更能凸顯食材的原味，熨帖每位食客的心胃。怡翠軒以美味的點心和優雅的氛圍而聞名，周末氣氛尤佳。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 57
+content-length: 81
 
-星期一至星期六：早上11時至下午3時及晚上6時至11時
-星期日及公眾假期：早上10時至下午3時及晚上6時至11時 
+星期一至星期六：<br>
+早上11時至下午3時及晚上6時至11時
+<br>
+<br>
+星期日及公眾假期：<br>
+早上10時至下午3時及晚上6時至11時 <br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -390,18 +437,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f0fa5c41-e1a9-4adb-a802-5b301ae69385
+db4b3331-8002-4a3c-84ed-abb2fb4c501a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063912Z
+20151125T092827Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

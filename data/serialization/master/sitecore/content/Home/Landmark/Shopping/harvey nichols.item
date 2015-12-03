@@ -17,6 +17,20 @@ content-length: 65
 
 <image mediaid="{EB9C9907-EBB7-429B-B223-7BD7D2620477}" alt="" />
 ----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
@@ -54,7 +68,7 @@ shop-G11_x5F_G46-48
 ----version----
 language: en
 version: 1
-revision: 1cc8fa8b-2dfd-4cc9-9692-39fd5edb9c5b
+revision: 68af66d8-68cc-46b4-9f13-2e2c0b3cd6ff
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -167,14 +181,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1cc8fa8b-2dfd-4cc9-9692-39fd5edb9c5b
+68af66d8-68cc-46b4-9f13-2e2c0b3cd6ff
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T051857Z
+20151130T091004Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

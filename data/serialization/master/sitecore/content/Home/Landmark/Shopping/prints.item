@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 38
+content-length: 77
 
-{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}
+{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}|{43B3E7AE-04E4-4228-A4A0-17EC764526CF}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-230
 ----version----
 language: en
 version: 1
-revision: 11b2e125-073c-4d2a-b4c1-28cb9dc8a12c
+revision: 4b21efab-9d4d-4bba-b25a-eafa15b19727
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -74,23 +74,31 @@ Where passion meets creativity and inspiration in Swedish design.
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 737
+content-length: 773
 
-Prints is passionate about design and Scandinavian style. Founded in Singapore in 2003, Prints has blossomed from a local boutique stationer to an international brand. Today, Prints makes high quality stationery, greeting cards, acid-free photo albums, scrapbooks and notebooks. Prints products are unique: the Swedish designers create exclusive premium paper products and stationery hand-made by Prints’ own bookbindery. Customers love the cards for their unique designs and for keeping memories, be it daily life or special occasions such as weddings, Prints’ albums’ acid-free paper ensures photos will not be compromised over time. Prints’ storage solutions also offer practicality and style and are very popular with creative types.
+<p>Prints is passionate about design and Scandinavian style. Founded in Singapore in 2003, Prints has blossomed from a local boutique stationer to an international brand. Today, Prints makes high quality stationery, greeting cards, acid-free photo albums, scrapbooks and notebooks. Prints products are unique: the Swedish designers create exclusive premium paper products and stationery hand-made by Prints&rsquo; own bookbindery. Customers love the cards for their unique designs and for keeping memories, be it daily life or special occasions such as weddings, Prints&rsquo; albums&rsquo; acid-free paper ensures photos will not be compromised over time. Prints&rsquo; storage solutions also offer practicality and style and are very popular with creative types.</p>
+<br>
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 6
 
 Prints
 ----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
+----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 65
+content-length: 58
 
-Where passion meets creativity and inspiration in Swedish design.
+Prints is passionate about design and Scandinavian style. 
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -102,9 +110,9 @@ Prints
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 65
+content-length: 57
 
-Where passion meets creativity and inspiration in Swedish design.
+Prints is passionate about design and Scandinavian style.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -116,16 +124,18 @@ Prints
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 737
+content-length: 773
 
-Prints is passionate about design and Scandinavian style. Founded in Singapore in 2003, Prints has blossomed from a local boutique stationer to an international brand. Today, Prints makes high quality stationery, greeting cards, acid-free photo albums, scrapbooks and notebooks. Prints products are unique: the Swedish designers create exclusive premium paper products and stationery hand-made by Prints’ own bookbindery. Customers love the cards for their unique designs and for keeping memories, be it daily life or special occasions such as weddings, Prints’ albums’ acid-free paper ensures photos will not be compromised over time. Prints’ storage solutions also offer practicality and style and are very popular with creative types.
+<p>Prints is passionate about design and Scandinavian style. Founded in Singapore in 2003, Prints has blossomed from a local boutique stationer to an international brand. Today, Prints makes high quality stationery, greeting cards, acid-free photo albums, scrapbooks and notebooks. Prints products are unique: the Swedish designers create exclusive premium paper products and stationery hand-made by Prints&rsquo; own bookbindery. Customers love the cards for their unique designs and for keeping memories, be it daily life or special occasions such as weddings, Prints&rsquo; albums&rsquo; acid-free paper ensures photos will not be compromised over time. Prints&rsquo; storage solutions also offer practicality and style and are very popular with creative types.</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 55
+content-length: 68
 
-Mon-Sat 10am-7:30pm Sun & Public Holidays 12noon-6:30pm
+Mon-Sat 10am-7:30pm <br>
+Sun &amp; Public Holidays 12noon-6:30pm<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -167,25 +177,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-11b2e125-073c-4d2a-b4c1-28cb9dc8a12c
+4b21efab-9d4d-4bba-b25a-eafa15b19727
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151620Z
+20151125T163232Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: fb886fcf-217b-4be7-beee-2e3ce30a3207
+revision: 6970f021-2d51-42d9-af13-93540bbc8f14
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -205,24 +215,32 @@ content-length: 19
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 250
+content-length: 266
 
-Prints出自对北欧设计的热爱，于2003年创立于新加坡，最初只是一间普通文具店，如今已发展成国际著名品牌，带来一系列优质文具产品、 贺卡、相册、画册及笔记本，还有精挑细选的书写用品等。
-Prints的产品设计独一无二：纸制产品均由瑞典设计师设计，并于品牌自设的印制工场以手工制作，非常矜贵；设计独特的贺卡更是广受顾客喜爱，平时或于特别日子时送赠亲朋好友，都极具纪念价值；Prints的相册选用了无酸纸，确保纸质多年不变；而用来收纳小物件的纸盒及礼品盒等，实用与美观兼备，不管自用或送礼都非常适合。
+<p>Prints出自对北欧设计的热爱，于2003年创立于新加坡，最初只是一间普通文具店，如今已发展成国际著名品牌，带来一系列优质文具产品、 贺卡、相册、画册及笔记本，还有精挑细选的书写用品等。<br>
+Prints的产品设计独一无二：纸制产品均由瑞典设计师设计，并于品牌自设的印制工场以手工制作，非常矜贵；设计独特的贺卡更是广受顾客喜爱，平时或于特别日子时送赠亲朋好友，都极具纪念价值；Prints的相册选用了无酸纸，确保纸质多年不变；而用来收纳小物件的纸盒及礼品盒等，实用与美观兼备，不管自用或送礼都非常适合。</p>
+<br>
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 6
 
 Prints
 ----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
+----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 19
+content-length: 95
 
-来自瑞典的设计，热情与创意的完美结合。
+Prints出自对北欧设计的热爱，于2003年创立于新加坡，最初只是一间普通文具店，如今已发展成国际著名品牌，带来一系列优质文具产品、 贺卡、相册、画册及笔记本，还有精挑细选的书写用品等。 
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -234,9 +252,9 @@ Prints
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 19
+content-length: 94
 
-来自瑞典的设计，热情与创意的完美结合。
+Prints出自对北欧设计的热爱，于2003年创立于新加坡，最初只是一间普通文具店，如今已发展成国际著名品牌，带来一系列优质文具产品、 贺卡、相册、画册及笔记本，还有精挑细选的书写用品等。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -248,17 +266,19 @@ Prints
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 250
+content-length: 266
 
-Prints出自对北欧设计的热爱，于2003年创立于新加坡，最初只是一间普通文具店，如今已发展成国际著名品牌，带来一系列优质文具产品、 贺卡、相册、画册及笔记本，还有精挑细选的书写用品等。
-Prints的产品设计独一无二：纸制产品均由瑞典设计师设计，并于品牌自设的印制工场以手工制作，非常矜贵；设计独特的贺卡更是广受顾客喜爱，平时或于特别日子时送赠亲朋好友，都极具纪念价值；Prints的相册选用了无酸纸，确保纸质多年不变；而用来收纳小物件的纸盒及礼品盒等，实用与美观兼备，不管自用或送礼都非常适合。
+<p>Prints出自对北欧设计的热爱，于2003年创立于新加坡，最初只是一间普通文具店，如今已发展成国际著名品牌，带来一系列优质文具产品、 贺卡、相册、画册及笔记本，还有精挑细选的书写用品等。<br>
+Prints的产品设计独一无二：纸制产品均由瑞典设计师设计，并于品牌自设的印制工场以手工制作，非常矜贵；设计独特的贺卡更是广受顾客喜爱，平时或于特别日子时送赠亲朋好友，都极具纪念价值；Prints的相册选用了无酸纸，确保纸质多年不变；而用来收纳小物件的纸盒及礼品盒等，实用与美观兼备，不管自用或送礼都非常适合。</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 44
+content-length: 53
 
-星期一至星期六︰早上10时至晚上7时30分 星期日及公众假期︰中午12时至晚上6时30分
+星期一至星期六︰早上10时至晚上7时30分 <br>
+星期日及公众假期︰中午12时至晚上6时30分<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -307,25 +327,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fb886fcf-217b-4be7-beee-2e3ce30a3207
+6970f021-2d51-42d9-af13-93540bbc8f14
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063946Z
+20151125T163753Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: fad30a7f-2441-402e-8a26-f0b36532c57c
+revision: a1ee754b-e6d7-4ec9-bf1d-c00f220908b3
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -345,25 +365,31 @@ content-length: 19
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 254
+content-length: 264
 
-Prints憑著對北歐設計的熱愛，於2003年創立於新加坡，當時只是一間普通文具店，如今已發展成一個國際著名品牌，帶來一系列優質文具產品、 賀卡、相簿、畫冊及筆記本。還有精挑細選的書寫用品等。
-Prints的產品設計獨一無二：紙製產品均由瑞典設計師設計，並於品牌自設的印製工場以人手製作，非常矜貴；設計獨特的賀卡更廣受顧客喜愛，平時或於特別日子時送贈親朋好友，都極具紀念價值；Prints的相冊選用了無酸紙，確保紙質多年不變；而用來收藏小物件的紙盒及禮品盒等，實用與美觀兼備，不管自用或用來送禮都非常適合。
-
+<p>Prints憑著對北歐設計的熱愛，於2003年創立於新加坡，當時只是一間普通文具店，如今已發展成一個國際著名品牌，帶來一系列優質文具產品、 賀卡、相簿、畫冊及筆記本。還有精挑細選的書寫用品等。<br>
+Prints的產品設計獨一無二：紙製產品均由瑞典設計師設計，並於品牌自設的印製工場以人手製作，非常矜貴；設計獨特的賀卡更廣受顧客喜愛，平時或於特別日子時送贈親朋好友，都極具紀念價值；Prints的相冊選用了無酸紙，確保紙質多年不變；而用來收藏小物件的紙盒及禮品盒等，實用與美觀兼備，不管自用或用來送禮都非常適合。</p>
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 6
 
 Prints
 ----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
+----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 19
+content-length: 83
 
-來自瑞典的設計，熱情與創意的完美結合。
+Prints憑著對北歐設計的熱愛，於2003年創立於新加坡，當時只是一間普通文具店，如今已發展成一個國際著名品牌，帶來一系列優質文具產品、 賀卡、相簿、畫冊及筆記本。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -375,9 +401,9 @@ Prints
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 19
+content-length: 83
 
-來自瑞典的設計，熱情與創意的完美結合。
+Prints憑著對北歐設計的熱愛，於2003年創立於新加坡，當時只是一間普通文具店，如今已發展成一個國際著名品牌，帶來一系列優質文具產品、 賀卡、相簿、畫冊及筆記本。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -389,18 +415,19 @@ Prints
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 254
+content-length: 269
 
-Prints憑著對北歐設計的熱愛，於2003年創立於新加坡，當時只是一間普通文具店，如今已發展成一個國際著名品牌，帶來一系列優質文具產品、 賀卡、相簿、畫冊及筆記本。還有精挑細選的書寫用品等。
-Prints的產品設計獨一無二：紙製產品均由瑞典設計師設計，並於品牌自設的印製工場以人手製作，非常矜貴；設計獨特的賀卡更廣受顧客喜愛，平時或於特別日子時送贈親朋好友，都極具紀念價值；Prints的相冊選用了無酸紙，確保紙質多年不變；而用來收藏小物件的紙盒及禮品盒等，實用與美觀兼備，不管自用或用來送禮都非常適合。
-
+<p>Prints憑著對北歐設計的熱愛，於2003年創立於新加坡，當時只是一間普通文具店，如今已發展成一個國際著名品牌，帶來一系列優質文具產品、 賀卡、相簿、畫冊及筆記本。還有精挑細選的書寫用品等。<br>
+Prints的產品設計獨一無二：紙製產品均由瑞典設計師設計，並於品牌自設的印製工場以人手製作，非常矜貴；設計獨特的賀卡更廣受顧客喜愛，平時或於特別日子時送贈親朋好友，都極具紀念價值；Prints的相冊選用了無酸紙，確保紙質多年不變；而用來收藏小物件的紙盒及禮品盒等，實用與美觀兼備，不管自用或用來送禮都非常適合。</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 44
+content-length: 53
 
-星期一至星期六︰早上10時至晚上7時30分 星期日及公眾假期︰中午12時至晚上6時30分
+星期一至星期六︰早上10時至晚上7時30分 <br>
+星期日及公眾假期︰中午12時至晚上6時30分<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -442,18 +469,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fad30a7f-2441-402e-8a26-f0b36532c57c
+a1ee754b-e6d7-4ec9-bf1d-c00f220908b3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063946Z
+20151125T163542Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

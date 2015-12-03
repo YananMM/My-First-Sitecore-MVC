@@ -33,7 +33,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: a1b335e9-1170-4f1c-ada8-2331bf35da01
+revision: c7c44e5b-675d-410c-96fa-bba59bc5480a
 
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
@@ -78,6 +78,20 @@ content-length: 5
 
 Women
 ----field----
+field: {5DC20848-7A25-43EF-9B55-5DA06D0E0791}
+name: Banner Link
+key: banner link
+content-length: 81
+
+<link linktype="external" url="http://www.baidu.com" anchor="" target="_blank" />
+----field----
+field: {EFCE68B8-9A68-4ECB-AB78-0C36EB48CA60}
+name: Related Exclusive Item
+key: related exclusive item
+content-length: 38
+
+{85E13752-12E4-4526-8AFD-B51E2B9D2CE8}
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -90,14 +104,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a1b335e9-1170-4f1c-ada8-2331bf35da01
+c7c44e5b-675d-410c-96fa-bba59bc5480a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T024805Z
+20151203T064251Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

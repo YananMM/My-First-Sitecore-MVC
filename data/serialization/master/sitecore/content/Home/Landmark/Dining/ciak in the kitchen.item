@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 194
+content-length: 233
 
-{BC0F4B93-552A-418E-B620-7B7F13506613}|{D0DDCCBB-558D-491F-AA49-46E8217BC26B}|{410058FD-4835-43BD-9FC0-430DAF3C8381}|{CE078BA5-479D-42FE-BAB4-50A1459A29AA}|{6B69973D-6FCC-45B2-9C75-ECCBC56F42FC}
+{C034122F-A68F-4E3C-827E-C1898533C08E}|{BC0F4B93-552A-418E-B620-7B7F13506613}|{D0DDCCBB-558D-491F-AA49-46E8217BC26B}|{410058FD-4835-43BD-9FC0-430DAF3C8381}|{CE078BA5-479D-42FE-BAB4-50A1459A29AA}|{6B69973D-6FCC-45B2-9C75-ECCBC56F42FC}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-327-333
 ----version----
 language: en
 version: 1
-revision: b0c5da03-3e94-4dc7-92a7-e5ba2080cedb
+revision: b8b022ca-a898-4416-a6c8-76cb42e17b4a
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -74,27 +74,34 @@ Hong Kong’s first and only Michelin-starred trattoria.
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 782
+content-length: 789
 
-CIAK – In The Kitchen is Hong Kong’s first and only refined trattoria awarded with one star in the Michelin Guide Hong Kong & Macau edition 2015.
+<p>CIAK – In The Kitchen is Hong Kong’s first and only refined trattoria awarded with one star in the Michelin Guide Hong Kong & Macau edition 2015.
 Under the culinary direction of three-star Michelin Chef Umberto Bombana, the restaurant reflects the true sense of Italian hospitality thanks to an authentic and homely cuisine, served in a casual and lively atmosphere.
 The trattoria boasts various open kitchens serving oven baked pizza naturally fermented for 36 hours, fresh handmade pasta, homemade sausage, the world’s finest meats charcoal grilled and daily pastries, available all day.
 CIAK – In the Kitchen offers the quintessential marriage of Italian dining and lifestyle, a vast selection of fresh traditional Italian flavours as well as a timeless décor and cosy ambience.
+</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 21
 
+CIAK – In The Kitchen
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 21
+content-length: 0
 
-CIAK,–,In,The,Kitchen
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 54
+content-length: 145
 
-Hong Kong’s first and only Michelin-starred trattoria.
+CIAK – In The Kitchen is Hong Kong’s first and only refined trattoria awarded with one star in the Michelin Guide Hong Kong & Macau edition 2015.
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -106,9 +113,9 @@ CIAK – In The Kitchen
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 54
+content-length: 145
 
-Hong Kong’s first and only Michelin-starred trattoria.
+CIAK – In The Kitchen is Hong Kong’s first and only refined trattoria awarded with one star in the Michelin Guide Hong Kong & Macau edition 2015.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -120,20 +127,25 @@ CIAK – In The Kitchen
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 782
+content-length: 789
 
-CIAK – In The Kitchen is Hong Kong’s first and only refined trattoria awarded with one star in the Michelin Guide Hong Kong & Macau edition 2015.
+<p>CIAK – In The Kitchen is Hong Kong’s first and only refined trattoria awarded with one star in the Michelin Guide Hong Kong & Macau edition 2015.
 Under the culinary direction of three-star Michelin Chef Umberto Bombana, the restaurant reflects the true sense of Italian hospitality thanks to an authentic and homely cuisine, served in a casual and lively atmosphere.
 The trattoria boasts various open kitchens serving oven baked pizza naturally fermented for 36 hours, fresh handmade pasta, homemade sausage, the world’s finest meats charcoal grilled and daily pastries, available all day.
 CIAK – In the Kitchen offers the quintessential marriage of Italian dining and lifestyle, a vast selection of fresh traditional Italian flavours as well as a timeless décor and cosy ambience.
-
+</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 205
+content-length: 238
 
-Mon - Sat & Public Holidays: All day dining - 11:30am-10:30pm Take Away - 11:30am-5pm (Mon - Fri only) Aperitivo - 5pm-8pm  Sun: All day dining - 11:30am-10:30pm Brunch - 11:30am-3:30pm Aperitivo - 5pm-8pm
+Mon - Sat &amp; Public Holidays: All day dining - 11:30am-10:30pm <br>
+Take Away - 11:30am-5pm (Mon - Fri only) <br>
+Aperitivo - 5pm-8pm  <br>
+Sun: All day dining - 11:30am-10:30pm <br>
+Brunch - 11:30am-3:30pm <br>
+Aperitivo - 5pm-8pm<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -175,14 +187,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b0c5da03-3e94-4dc7-92a7-e5ba2080cedb
+b8b022ca-a898-4416-a6c8-76cb42e17b4a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T054149Z
+20151125T114011Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -193,7 +205,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: da0eef0d-8c9f-4d2a-a4f9-330d87b8cfcb
+revision: 4c185007-3438-4a75-ae0a-74c57f9b0ac1
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -213,23 +225,30 @@ content-length: 22
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 234
+content-length: 241
 
-CIAK - In The Kitchen是香港首间及唯一一间获得米其林一星级荣誉的意大利传统巿集式餐厅。餐厅以传统意大利食品店的理念为蓝本，并由米其林三星大厨Bombana Umberto提供厨艺指导，为顾客带来地道的意大利饮食文化及生活方式。餐厅的开放式厨房更是每日提供36小时自然发酵的比萨，手工制作的意大利面、香肠、顶级肉类、新鲜烘焙的面包及甜品。CIAK - In The Kitchen的意式饮食风格、多元化食品选择、时尚设计和亲切气氛，皆令顾客赞叹不已。
+<p>CIAK - In The Kitchen是香港首间及唯一一间获得米其林一星级荣誉的意大利传统巿集式餐厅。餐厅以传统意大利食品店的理念为蓝本，并由米其林三星大厨Bombana Umberto提供厨艺指导，为顾客带来地道的意大利饮食文化及生活方式。餐厅的开放式厨房更是每日提供36小时自然发酵的比萨，手工制作的意大利面、香肠、顶级肉类、新鲜烘焙的面包及甜品。CIAK - In The Kitchen的意式饮食风格、多元化食品选择、时尚设计和亲切气氛，皆令顾客赞叹不已。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 21
+
+CIAK – In The Kitchen
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 21
+content-length: 0
 
-CIAK,–,In,The,Kitchen
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 22
+content-length: 53
 
-香港首间及唯一一间米其林星级意大利巿集餐厅。
+CIAK - In The Kitchen是香港首间及唯一一间获得米其林一星级荣誉的意大利传统巿集式餐厅。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -241,9 +260,9 @@ CIAK – In The Kitchen
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 22
+content-length: 53
 
-香港首间及唯一一间米其林星级意大利巿集餐厅。
+CIAK - In The Kitchen是香港首间及唯一一间获得米其林一星级荣誉的意大利传统巿集式餐厅。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -255,16 +274,21 @@ CIAK – In The Kitchen
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 234
+content-length: 241
 
-CIAK - In The Kitchen是香港首间及唯一一间获得米其林一星级荣誉的意大利传统巿集式餐厅。餐厅以传统意大利食品店的理念为蓝本，并由米其林三星大厨Bombana Umberto提供厨艺指导，为顾客带来地道的意大利饮食文化及生活方式。餐厅的开放式厨房更是每日提供36小时自然发酵的比萨，手工制作的意大利面、香肠、顶级肉类、新鲜烘焙的面包及甜品。CIAK - In The Kitchen的意式饮食风格、多元化食品选择、时尚设计和亲切气氛，皆令顾客赞叹不已。
+<p>CIAK - In The Kitchen是香港首间及唯一一间获得米其林一星级荣誉的意大利传统巿集式餐厅。餐厅以传统意大利食品店的理念为蓝本，并由米其林三星大厨Bombana Umberto提供厨艺指导，为顾客带来地道的意大利饮食文化及生活方式。餐厅的开放式厨房更是每日提供36小时自然发酵的比萨，手工制作的意大利面、香肠、顶级肉类、新鲜烘焙的面包及甜品。CIAK - In The Kitchen的意式饮食风格、多元化食品选择、时尚设计和亲切气氛，皆令顾客赞叹不已。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 152
+content-length: 180
 
-星期一至六及公众假期∶ 全日餐饮 - 早上11时30分至晚上10时30分 外卖 - 早上11时30分至晚上5时(只限星期一至五) 餐前酒 - 下午5时至晚上8时   星期日： 全日餐饮 - 早上11时30分至晚上10时30分 早午餐 - 早上11时30分至下午3时30分 餐前酒 - 下午5时至晚上8时 
+星期一至六及公众假期∶ 全日餐饮 - 早上11时30分至晚上10时30分<br>
+外卖 - 早上11时30分至晚上5时(只限星期一至五) <br>
+餐前酒 - 下午5时至晚上8时   <br>
+星期日： 全日餐饮 - 早上11时30分至晚上10时30分 <br>
+早午餐 - 早上11时30分至下午3时30分 <br>
+餐前酒 - 下午5时至晚上8时 <br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -313,25 +337,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-da0eef0d-8c9f-4d2a-a4f9-330d87b8cfcb
+4c185007-3438-4a75-ae0a-74c57f9b0ac1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063854Z
+20151126T034650Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 2c6dcc3f-d462-4ee3-8bc3-ae38913acdbb
+revision: adc34a3a-89d6-47ee-b28c-0301f8cbecf4
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -351,23 +375,30 @@ content-length: 22
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 232
+content-length: 239
 
-CIAK - In The Kitchen是香港首間及唯一一間獲得米芝蓮一星級榮譽的意大利傳統巿集式餐廳。餐廳以傳統意大利食品店的理念為藍圖，並由米芝蓮三星大廚Bombana Umberto提供廚藝指導，為顧客帶來地道意大利飲食文化及生活品味。餐廳的開放式廚房更每天提供36小時自然發酵的比薩，手工製義大利麵，香腸，頂級肉類，新鮮焗製的麵包及甜品。CIAK - In The Kitchen的意式飲食風格，提供多元化食品選擇、時尚設計和親切氣氛，皆令顧客讚嘆不已。
+<p>CIAK - In The Kitchen是香港首間及唯一一間獲得米芝蓮一星級榮譽的意大利傳統巿集式餐廳。餐廳以傳統意大利食品店的理念為藍圖，並由米芝蓮三星大廚Bombana Umberto提供廚藝指導，為顧客帶來地道意大利飲食文化及生活品味。餐廳的開放式廚房更每天提供36小時自然發酵的比薩，手工製義大利麵，香腸，頂級肉類，新鮮焗製的麵包及甜品。CIAK - In The Kitchen的意式飲食風格，提供多元化食品選擇、時尚設計和親切氣氛，皆令顧客讚嘆不已。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 21
+
+CIAK – In The Kitchen
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 21
+content-length: 0
 
-CIAK,–,In,The,Kitchen
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 22
+content-length: 53
 
-香港首間及唯一一間米芝蓮星級意大利巿集餐廳。
+CIAK - In The Kitchen是香港首間及唯一一間獲得米芝蓮一星級榮譽的意大利傳統巿集式餐廳。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -379,9 +410,9 @@ CIAK – In The Kitchen
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 22
+content-length: 53
 
-香港首間及唯一一間米芝蓮星級意大利巿集餐廳。
+CIAK - In The Kitchen是香港首間及唯一一間獲得米芝蓮一星級榮譽的意大利傳統巿集式餐廳。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -393,16 +424,21 @@ CIAK – In The Kitchen
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 232
+content-length: 239
 
-CIAK - In The Kitchen是香港首間及唯一一間獲得米芝蓮一星級榮譽的意大利傳統巿集式餐廳。餐廳以傳統意大利食品店的理念為藍圖，並由米芝蓮三星大廚Bombana Umberto提供廚藝指導，為顧客帶來地道意大利飲食文化及生活品味。餐廳的開放式廚房更每天提供36小時自然發酵的比薩，手工製義大利麵，香腸，頂級肉類，新鮮焗製的麵包及甜品。CIAK - In The Kitchen的意式飲食風格，提供多元化食品選擇、時尚設計和親切氣氛，皆令顧客讚嘆不已。
+<p>CIAK - In The Kitchen是香港首間及唯一一間獲得米芝蓮一星級榮譽的意大利傳統巿集式餐廳。餐廳以傳統意大利食品店的理念為藍圖，並由米芝蓮三星大廚Bombana Umberto提供廚藝指導，為顧客帶來地道意大利飲食文化及生活品味。餐廳的開放式廚房更每天提供36小時自然發酵的比薩，手工製義大利麵，香腸，頂級肉類，新鮮焗製的麵包及甜品。CIAK - In The Kitchen的意式飲食風格，提供多元化食品選擇、時尚設計和親切氣氛，皆令顧客讚嘆不已。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 152
+content-length: 181
 
-星期一至六及公眾假期︰ 全日餐飲 - 早上11時30分至晚上10時30分 外賣 - 早上11時30分至晚上5時(只限星期一至五) 餐前酒 - 下午5時至晚上8時   星期日： 全日餐飲 - 早上11時30分至晚上10時30分 早午餐 - 早上11時30分至下午3時30分 餐前酒 - 下午5時至晚上8時 
+星期一至六及公眾假期︰ 全日餐飲 - 早上11時30分至晚上10時30分 <br>
+外賣 - 早上11時30分至晚上5時(只限星期一至五) <br>
+餐前酒 - 下午5時至晚上8時   <br>
+星期日： 全日餐飲 - 早上11時30分至晚上10時30分 <br>
+早午餐 - 早上11時30分至下午3時30分 <br>
+餐前酒 - 下午5時至晚上8時 <br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -444,18 +480,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2c6dcc3f-d462-4ee3-8bc3-ae38913acdbb
+adc34a3a-89d6-47ee-b28c-0301f8cbecf4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063854Z
+20151125T082827Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

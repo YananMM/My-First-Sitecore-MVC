@@ -9,13 +9,6 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
 templatekey: Floor Object
 
-----field----
-field: {49195981-001A-41D0-BE6E-78B60FD14964}
-name: Floor Svg File
-key: floor svg file
-content-length: 7
-
-#FFFFFF
 ----version----
 language: en
 version: 1
@@ -28,6 +21,13 @@ key: floor title
 content-length: 5
 
 $name
+----field----
+field: {49195981-001A-41D0-BE6E-78B60FD14964}
+name: Floor Svg File
+key: floor svg file
+content-length: 7
+
+#FFFFFF
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner

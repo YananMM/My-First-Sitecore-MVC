@@ -54,7 +54,7 @@ shop-G5
 ----version----
 language: en
 version: 1
-revision: b79fd24a-6459-4c78-86f5-3c9b9a951153
+revision: 27bb2901-5307-4f03-ac47-a2567d50b40a
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -78,12 +78,19 @@ content-length: 729
 
 Burberry is synonymous with quality, innovation, style and a certain dishevelled elegance that is quintessentially British. Where beautiful craftsmanship contrasts with form and function, it carries a relaxed and distinctly British attitude. Burberry’s distinctive tartan pattern has become one of the brand’s most popular trademarks and Burberry is also famous for its trench coat, which was designed by founder Thomas Burberry and widely used during WW1. Today’s collections and accessories are naturally influenced by over 150 years of providing practical and modern all weather garments. Burberry showcases full range of outerwear, ready-to-wear and accessories for men and women in more than 500 stores in over 50 countries.
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 8
 
 Burberry
+----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -167,21 +174,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b79fd24a-6459-4c78-86f5-3c9b9a951153
+27bb2901-5307-4f03-ac47-a2567d50b40a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151631Z
+20151126T021750Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1

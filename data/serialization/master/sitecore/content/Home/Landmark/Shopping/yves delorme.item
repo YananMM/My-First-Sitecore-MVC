@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 38
+content-length: 116
 
-{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}
+{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}|{45EE72B3-0021-4A62-AA7F-55E291FB3979}|{99F41C3C-714B-4A12-8627-A3959AE90310}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-238
 ----version----
 language: en
 version: 1
-revision: 1170e00a-ef69-46b2-b435-0b9c49f22ec8
+revision: 83b2c6e4-35a4-4f55-8c00-239bf53d8dec
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -74,23 +74,31 @@ International brand known for its fine French linens and accessories.
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 674
+content-length: 691
 
-Yves Delorme is an international brand known for its fine French linens and accessories.  It was founded in 1845 by Ernestine Fremaux and her husband who established a linen weaving mill near Lille in the heart of the French textile industry. The modern company came with the acquisition of the Delorme company in 1989 when Dominique Fremaux joined forces with Yves Delorme to add bath linens to the line of Fremaux products. The first Yves Delorme stores were opened in France and in the United States in 1993. Today there are 450 stores around the world and the sixth generation of the Fremaux family is involved: Amaury and Alban head the company, alongside their father.
+<p>Yves Delorme is an international brand known for its fine French linens and accessories.&nbsp; It was founded in 1845 by Ernestine Fremaux and her husband who established a linen weaving mill near Lille in the heart of the French textile industry. The modern company came with the acquisition of the Delorme company in 1989 when Dominique Fremaux joined forces with Yves Delorme to add bath linens to the line of Fremaux products. The first Yves Delorme stores were opened in France and in the United States in 1993. Today there are 450 stores around the world and the sixth generation of the Fremaux family is involved: Amaury and Alban head the company, alongside their father.</p>
+<br>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 12
+
+Yves Delorme
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 20
+content-length: 0
 
-Yves, Delorme, Paris
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 69
+content-length: 90
 
-International brand known for its fine French linens and accessories.
+Yves Delorme is an international brand known for its fine French linens and accessories.  
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -102,9 +110,9 @@ Yves Delorme
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 69
+content-length: 90
 
-International brand known for its fine French linens and accessories.
+Yves Delorme is an international brand known for its fine French linens and accessories.  
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -116,16 +124,18 @@ Yves Delorme
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 674
+content-length: 691
 
-Yves Delorme is an international brand known for its fine French linens and accessories.  It was founded in 1845 by Ernestine Fremaux and her husband who established a linen weaving mill near Lille in the heart of the French textile industry. The modern company came with the acquisition of the Delorme company in 1989 when Dominique Fremaux joined forces with Yves Delorme to add bath linens to the line of Fremaux products. The first Yves Delorme stores were opened in France and in the United States in 1993. Today there are 450 stores around the world and the sixth generation of the Fremaux family is involved: Amaury and Alban head the company, alongside their father.
+<p>Yves Delorme is an international brand known for its fine French linens and accessories.&nbsp; It was founded in 1845 by Ernestine Fremaux and her husband who established a linen weaving mill near Lille in the heart of the French textile industry. The modern company came with the acquisition of the Delorme company in 1989 when Dominique Fremaux joined forces with Yves Delorme to add bath linens to the line of Fremaux products. The first Yves Delorme stores were opened in France and in the United States in 1993. Today there are 450 stores around the world and the sixth generation of the Fremaux family is involved: Amaury and Alban head the company, alongside their father.</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 61
+content-length: 73
 
-Mon-Sat: 10:00am-7:30pm Sun & Public Holidays: 11:00am-7:00pm
+Mon-Sat: 10:00am-7:30pm<br>
+Sun &amp; Public Holidays: 11:00am-7:00pm<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -167,25 +177,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1170e00a-ef69-46b2-b435-0b9c49f22ec8
+83b2c6e4-35a4-4f55-8c00-239bf53d8dec
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151620Z
+20151125T160855Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 40cfb3cd-4e47-4ee2-8325-76165d68bf54
+revision: 3be78c50-e5b0-452e-aedf-4eaa13b6f0ce
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -205,23 +215,31 @@ content-length: 23
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 333
+content-length: 350
 
-国际知名品牌Yves Delorme以法国顶级纺织工艺品而闻名。1845年，艾奈斯丁‧福莱蒙（Ernestine Fremaux）与丈夫在法国纺织工业的心脏地带 里尔市郊  建立了一间麻纺工厂，形成品牌的雏型。今天公司有此规模，有赖于在1989年收购了德罗姆（Delorme）公司，而随着接棒的多米尼克‧福莱蒙(Dominique Fremaux)和顶级设计师伊芙‧德罗姆(Yves Delorme)分别加入，浴室产品也被纳入品牌产品线。1993年，第一间Yves Delorme专卖店于法国和美国同时开幕；时至今日，品牌已于全球拥有450间专卖店，公司也经历了六代传承，第六代成员阿莫瑞(Amaury)及阿尔本(Alban)与他们的父亲一起，带领着该品牌延续传奇。
+<p>国际知名品牌Yves Delorme以法国顶级纺织工艺品而闻名。1845年，艾奈斯丁‧福莱蒙（Ernestine Fremaux）与丈夫在法国纺织工业的心脏地带 里尔市郊&nbsp; 建立了一间麻纺工厂，形成品牌的雏型。今天公司有此规模，有赖于在1989年收购了德罗姆（Delorme）公司，而随着接棒的多米尼克‧福莱蒙(Dominique Fremaux)和顶级设计师伊芙‧德罗姆(Yves Delorme)分别加入，浴室产品也被纳入品牌产品线。1993年，第一间Yves Delorme专卖店于法国和美国同时开幕；时至今日，品牌已于全球拥有450间专卖店，公司也经历了六代传承，第六代成员阿莫瑞(Amaury)及阿尔本(Alban)与他们的父亲一起，带领着该品牌延续传奇。</p>
+<br>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 12
+
+Yves Delorme
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 20
+content-length: 0
 
-Yves, Delorme, Paris
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 23
+content-length: 32
 
-以呈献法国顶级纺织工艺品而闻名的国际知名品牌。
+国际知名品牌Yves Delorme以法国顶级纺织工艺品而闻名。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -233,9 +251,9 @@ Yves Delorme
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 23
+content-length: 32
 
-以呈献法国顶级纺织工艺品而闻名的国际知名品牌。
+国际知名品牌Yves Delorme以法国顶级纺织工艺品而闻名。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -247,16 +265,18 @@ Yves Delorme
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 333
+content-length: 350
 
-国际知名品牌Yves Delorme以法国顶级纺织工艺品而闻名。1845年，艾奈斯丁‧福莱蒙（Ernestine Fremaux）与丈夫在法国纺织工业的心脏地带 里尔市郊  建立了一间麻纺工厂，形成品牌的雏型。今天公司有此规模，有赖于在1989年收购了德罗姆（Delorme）公司，而随着接棒的多米尼克‧福莱蒙(Dominique Fremaux)和顶级设计师伊芙‧德罗姆(Yves Delorme)分别加入，浴室产品也被纳入品牌产品线。1993年，第一间Yves Delorme专卖店于法国和美国同时开幕；时至今日，品牌已于全球拥有450间专卖店，公司也经历了六代传承，第六代成员阿莫瑞(Amaury)及阿尔本(Alban)与他们的父亲一起，带领着该品牌延续传奇。
+<p>国际知名品牌Yves Delorme以法国顶级纺织工艺品而闻名。1845年，艾奈斯丁‧福莱蒙（Ernestine Fremaux）与丈夫在法国纺织工业的心脏地带 里尔市郊&nbsp; 建立了一间麻纺工厂，形成品牌的雏型。今天公司有此规模，有赖于在1989年收购了德罗姆（Delorme）公司，而随着接棒的多米尼克‧福莱蒙(Dominique Fremaux)和顶级设计师伊芙‧德罗姆(Yves Delorme)分别加入，浴室产品也被纳入品牌产品线。1993年，第一间Yves Delorme专卖店于法国和美国同时开幕；时至今日，品牌已于全球拥有450间专卖店，公司也经历了六代传承，第六代成员阿莫瑞(Amaury)及阿尔本(Alban)与他们的父亲一起，带领着该品牌延续传奇。</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 41
+content-length: 49
 
-星期一至星期六︰早上10时至晚上7时30分 星期日及公众假期︰早上11时至晚上7时
+星期一至星期六︰早上10时至晚上7时30分<br>
+星期日及公众假期︰早上11时至晚上7时<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -305,25 +325,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-40cfb3cd-4e47-4ee2-8325-76165d68bf54
+3be78c50-e5b0-452e-aedf-4eaa13b6f0ce
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T064018Z
+20151125T161223Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 7df75cd3-8600-4f73-80af-2cba078bc426
+revision: b523b18f-ea19-4d3b-946b-256806744eb5
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -343,23 +363,31 @@ content-length: 22
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 329
+content-length: 341
 
-國際知名品牌Yves Delorme以法國頂級紡織工藝品而聞名。1845年，艾奈斯丁福萊蒙（Ernestine Fremaux）與丈夫在法國紡織工業的心臟地帶 ── 里爾市郊 ── 建立了一間麻紡工廠，這正是品牌的雛型。今天公司有此規模，有賴1989年收購了Delorme公司，而隨着接棒的多米尼克‧福萊蒙(Dominique Fremaux)和頂級設計師伊芙德倫(Yves Delorme)分別加入，浴室產品也被成為了品牌產品。1993年，第一間Yves Delorme專門店於法國和美國同時開幕；時至今日，品牌已於全球擁有450間專門店，公司也經歷了六代傳承，第六代成員阿莫瑞(Amaury)及阿爾本(Alban)跟他們的父親一起帶領品牌，延續品牌傳奇。
+<p>國際知名品牌Yves Delorme以法國頂級紡織工藝品而聞名。1845年，艾奈斯丁福萊蒙（Ernestine Fremaux）與丈夫在法國紡織工業的心臟地帶 ── 里爾市郊 ── 建立了一間麻紡工廠，這正是品牌的雛型。今天公司有此規模，有賴1989年收購了Delorme公司，而隨着接棒的多米尼克‧福萊蒙(Dominique Fremaux)和頂級設計師伊芙德倫(Yves Delorme)分別加入，浴室產品也被成為了品牌產品。1993年，第一間Yves Delorme專門店於法國和美國同時開幕；時至今日，品牌已於全球擁有450間專門店，公司也經歷了六代傳承，第六代成員阿莫瑞(Amaury)及阿爾本(Alban)跟他們的父親一起帶領品牌，延續品牌傳奇。</p>
+<br>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 12
+
+Yves Delorme
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 20
+content-length: 0
 
-Yves, Delorme, Paris
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 22
+content-length: 32
 
-以呈獻法國頂級紡織工藝品聞名的國際知名品牌。
+國際知名品牌Yves Delorme以法國頂級紡織工藝品而聞名。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -371,9 +399,9 @@ Yves Delorme
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 22
+content-length: 32
 
-以呈獻法國頂級紡織工藝品聞名的國際知名品牌。
+國際知名品牌Yves Delorme以法國頂級紡織工藝品而聞名。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -385,16 +413,18 @@ Yves Delorme
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 329
+content-length: 341
 
-國際知名品牌Yves Delorme以法國頂級紡織工藝品而聞名。1845年，艾奈斯丁福萊蒙（Ernestine Fremaux）與丈夫在法國紡織工業的心臟地帶 ── 里爾市郊 ── 建立了一間麻紡工廠，這正是品牌的雛型。今天公司有此規模，有賴1989年收購了Delorme公司，而隨着接棒的多米尼克‧福萊蒙(Dominique Fremaux)和頂級設計師伊芙德倫(Yves Delorme)分別加入，浴室產品也被成為了品牌產品。1993年，第一間Yves Delorme專門店於法國和美國同時開幕；時至今日，品牌已於全球擁有450間專門店，公司也經歷了六代傳承，第六代成員阿莫瑞(Amaury)及阿爾本(Alban)跟他們的父親一起帶領品牌，延續品牌傳奇。
+<p>國際知名品牌Yves Delorme以法國頂級紡織工藝品而聞名。1845年，艾奈斯丁福萊蒙（Ernestine Fremaux）與丈夫在法國紡織工業的心臟地帶 ── 里爾市郊 ── 建立了一間麻紡工廠，這正是品牌的雛型。今天公司有此規模，有賴1989年收購了Delorme公司，而隨着接棒的多米尼克‧福萊蒙(Dominique Fremaux)和頂級設計師伊芙德倫(Yves Delorme)分別加入，浴室產品也被成為了品牌產品。1993年，第一間Yves Delorme專門店於法國和美國同時開幕；時至今日，品牌已於全球擁有450間專門店，公司也經歷了六代傳承，第六代成員阿莫瑞(Amaury)及阿爾本(Alban)跟他們的父親一起帶領品牌，延續品牌傳奇。</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 41
+content-length: 49
 
-星期一至星期六︰早上10時至晚上7時30分 星期日及公眾假期︰早上11時至晚上7時
+星期一至星期六︰早上10時至晚上7時30分<br>
+星期日及公眾假期︰早上11時至晚上7時<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -436,18 +466,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7df75cd3-8600-4f73-80af-2cba078bc426
+b523b18f-ea19-4d3b-946b-256806744eb5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T064018Z
+20151125T161118Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

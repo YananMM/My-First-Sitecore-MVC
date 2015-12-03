@@ -16,10 +16,17 @@ key: brand image
 content-length: 58
 
 <image mediaid="{B1C077C4-2121-4613-8E41-EDC482C3E15E}" />
+----field----
+field: {3534AD05-BF49-4763-822B-25D97D9F7283}
+name: Floor
+key: floor
+content-length: 38
+
+{EDD97B8A-24FC-4629-8091-97ED4D907003}
 ----version----
 language: en
 version: 1
-revision: 2a913e37-8b03-42a4-805f-9fa7726a75a2
+revision: 3e4b8f6f-295a-4d99-8ba5-266ed32325ba
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -29,12 +36,33 @@ content-length: 7
 
 ALCHEMY
 ----field----
+field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
+name: Content Title
+key: content title
+content-length: 7
+
+ALCHEMY
+----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 372
+content-length: 379
 
-A high-end salon conveniently located in Central, providing a comprehensive range of hair & nail services aimed at catering all your beauty needs. A spacious interior with elegant yet modern design, our salon carries in total 28 seats with 3 VIP rooms. Hair crafting at its finest, our A-listed stylists are dedicated to treat your hair with extreme care and inspiration. 
+<p>A high-end salon conveniently located in Central, providing a comprehensive range of hair & nail services aimed at catering all your beauty needs. A spacious interior with elegant yet modern design, our salon carries in total 28 seats with 3 VIP rooms. Hair crafting at its finest, our A-listed stylists are dedicated to treat your hair with extreme care and inspiration. </p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+ALCHEMY
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 146
+
+A high-end salon conveniently located in Central, providing a comprehensive range of hair & nail services aimed at catering all your beauty needs.
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -42,6 +70,13 @@ key: social share title
 content-length: 7
 
 ALCHEMY
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 146
+
+A high-end salon conveniently located in Central, providing a comprehensive range of hair & nail services aimed at catering all your beauty needs.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -53,17 +88,18 @@ ALCHEMY
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 372
+content-length: 379
 
-A high-end salon conveniently located in Central, providing a comprehensive range of hair & nail services aimed at catering all your beauty needs. A spacious interior with elegant yet modern design, our salon carries in total 28 seats with 3 VIP rooms. Hair crafting at its finest, our A-listed stylists are dedicated to treat your hair with extreme care and inspiration. 
+<p>A high-end salon conveniently located in Central, providing a comprehensive range of hair & nail services aimed at catering all your beauty needs. A spacious interior with elegant yet modern design, our salon carries in total 28 seats with 3 VIP rooms. Hair crafting at its finest, our A-listed stylists are dedicated to treat your hair with extreme care and inspiration. </p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 45
+content-length: 61
 
 Mon-Sat 8am-9pm
-Sun & Public Holidays Closed 
+<br>
+<p>Sun &amp; Public Holidays Closed </p>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -98,14 +134,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2a913e37-8b03-42a4-805f-9fa7726a75a2
+3e4b8f6f-295a-4d99-8ba5-266ed32325ba
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T034301Z
+20151125T120711Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -116,7 +152,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: cbb7880b-a445-4770-9ca2-c6bc73f45c4d
+revision: a21aa196-e4db-4377-a150-fdca3feed434
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -136,9 +172,37 @@ ALCHEMY
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 114
+content-length: 121
 
-位于中环甲级商业区的殿堂级发廊，提供一站式发型设计，秀发护理及美甲等服务，务求满足您所有的美容需求。全店备有28个座位及设有3间贵宾房，更拥有时尚又不失典雅的室内设计。ALCHEMY内各星级发型师将诚意为您打造属于您的创意造型。
+<p>位于中环甲级商业区的殿堂级发廊，提供一站式发型设计，秀发护理及美甲等服务，务求满足您所有的美容需求。全店备有28个座位及设有3间贵宾房，更拥有时尚又不失典雅的室内设计。ALCHEMY内各星级发型师将诚意为您打造属于您的创意造型。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+ALCHEMY
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 50
+
+位于中环甲级商业区的殿堂级发廊，提供一站式发型设计、秀发护理及美甲等服务，务求满足您所有的美容需求。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+ALCHEMY
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 50
+
+位于中环甲级商业区的殿堂级发廊，提供一站式发型设计、秀发护理及美甲等服务，务求满足您所有的美容需求。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -150,17 +214,18 @@ ALCHEMY
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 114
+content-length: 121
 
-位于中环甲级商业区的殿堂级发廊，提供一站式发型设计，秀发护理及美甲等服务，务求满足您所有的美容需求。全店备有28个座位及设有3间贵宾房，更拥有时尚又不失典雅的室内设计。ALCHEMY内各星级发型师将诚意为您打造属于您的创意造型。
+<p>位于中环甲级商业区的殿堂级发廊，提供一站式发型设计，秀发护理及美甲等服务，务求满足您所有的美容需求。全店备有28个座位及设有3间贵宾房，更拥有时尚又不失典雅的室内设计。ALCHEMY内各星级发型师将诚意为您打造属于您的创意造型。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 29
+content-length: 41
 
 星期一至星期六︰早上8时至晚上9时
-星期日及公众假期︰休息
+<br>
+<p>星期日及公众假期︰休息</p>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -202,14 +267,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cbb7880b-a445-4770-9ca2-c6bc73f45c4d
+a21aa196-e4db-4377-a150-fdca3feed434
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T081619Z
+20151125T120435Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -220,7 +285,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: e635f7fb-d9cc-41cf-8cc0-d41f3e74454f
+revision: f1645ba5-68a4-459a-955e-878d0603ec90
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -240,9 +305,37 @@ ALCHEMY
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 114
+content-length: 121
 
-位於中環甲級商業區的殿堂級髮廊，提供一站式髮型設計，秀髮護理及美甲等服務，務求滿足您所有的美容需求。全店備有28個座位及設有3間貴賓房，更擁有時尚又不失典雅的室內設計。ALCHEMY內各星級髮型師將誠意為您打造屬於您的創意造型。
+<p>位於中環甲級商業區的殿堂級髮廊，提供一站式髮型設計，秀髮護理及美甲等服務，務求滿足您所有的美容需求。全店備有28個座位及設有3間貴賓房，更擁有時尚又不失典雅的室內設計。ALCHEMY內各星級髮型師將誠意為您打造屬於您的創意造型。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+ALCHEMY
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 50
+
+位於中環甲級商業區的殿堂級髮廊，提供一站式髮型設計，秀髮護理及美甲等服務，務求滿足您所有的美容需求。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+ALCHEMY
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 50
+
+位於中環甲級商業區的殿堂級髮廊，提供一站式髮型設計，秀髮護理及美甲等服務，務求滿足您所有的美容需求。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -254,17 +347,18 @@ ALCHEMY
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 114
+content-length: 121
 
-位於中環甲級商業區的殿堂級髮廊，提供一站式髮型設計，秀髮護理及美甲等服務，務求滿足您所有的美容需求。全店備有28個座位及設有3間貴賓房，更擁有時尚又不失典雅的室內設計。ALCHEMY內各星級髮型師將誠意為您打造屬於您的創意造型。
+<p>位於中環甲級商業區的殿堂級髮廊，提供一站式髮型設計，秀髮護理及美甲等服務，務求滿足您所有的美容需求。全店備有28個座位及設有3間貴賓房，更擁有時尚又不失典雅的室內設計。ALCHEMY內各星級髮型師將誠意為您打造屬於您的創意造型。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 29
+content-length: 41
 
 星期一至星期六︰早上8時至晚上9時
-星期日及公眾假期︰休息
+<br>
+<p>星期日及公眾假期︰休息</p>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -299,14 +393,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e635f7fb-d9cc-41cf-8cc0-d41f3e74454f
+f1645ba5-68a4-459a-955e-878d0603ec90
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T081610Z
+20151125T120216Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

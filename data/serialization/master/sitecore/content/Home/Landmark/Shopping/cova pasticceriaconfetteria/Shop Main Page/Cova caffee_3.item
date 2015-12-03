@@ -1,61 +1,68 @@
 ----item----
 version: 1
-id: {FD88D3D8-1319-4267-8ECB-C3E2644D5943}
+id: {92E08ED3-B450-42B6-9456-DB1408646B9F}
 database: master
-path: /sitecore/content/Home/Landmark/Shopping/Wellness/Gragrance/By Buildings
-parent: {E210AE9B-8313-4C1F-9444-0FC069EB620B}
-name: By Buildings
-master: {EF72B181-F50E-46E5-84B4-74392DA7AA04}
-template: {0B591CE8-50CB-4CF5-9CBF-F2F6E61F23E8}
-templatekey: T13 Page
+path: /sitecore/content/Home/Landmark/Shopping/cova pasticceriaconfetteria/Shop Main Page/Cova caffee_3
+parent: {9AF20EDC-37CA-45BC-B383-D3A88B62364F}
+name: Cova caffee_3
+master: {00000000-0000-0000-0000-000000000000}
+template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
+templatekey: Slide Object
 
 ----field----
-field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
-name: __Originator
-key: __originator
-content-length: 0
+field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
+name: Slide Image
+key: slide image
+content-length: 58
 
-
+<image mediaid="{AD7AFB8A-6940-48DE-B25D-F68807FAEF88}" />
 ----field----
-field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
-name: __Renderings
-key: __renderings
-content-length: 186
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
 
-<r xmlns:p="p" xmlns:s="s" p:p="1"><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{F408832F-6563-4BDE-B59A-22078F27CA99}" s:id="{65C42F4A-B30F-45FA-804C-6638E3BB75F4}" /></d></r>
+100
 ----version----
 language: en
 version: 1
-revision: ac8c83a0-077e-476b-b33b-8574d30bd527
+revision: 7c21f784-2fd6-4164-9f96-4c5431a893e1
 
 ----field----
-field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
-name: Page Title
-key: page title
-content-length: 11
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
 
-By Buidings
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20150910T020455Z
+20151125T090357Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-ac8c83a0-077e-476b-b33b-8574d30bd527
+7c21f784-2fd6-4164-9f96-4c5431a893e1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150910T020455Z
+20151126T024601Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -66,15 +73,8 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: b0b20587-7b02-44be-b783-4342b9a9597a
+revision: 444d63c9-45e5-4915-bb03-ee68ae491a99
 
-----field----
-field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
-name: Page Title
-key: page title
-content-length: 4
-
-置地广塲
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -88,7 +88,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151106T120336Z
+20151125T090409Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -102,14 +102,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b0b20587-7b02-44be-b783-4342b9a9597a
+444d63c9-45e5-4915-bb03-ee68ae491a99
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T065040Z
+20151125T090409Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -120,15 +120,8 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: b280c9ab-b506-41ee-ab5f-a74657ba89ee
+revision: d4372d54-1fdf-4332-bb63-cf379c0b4d0d
 
-----field----
-field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
-name: Page Title
-key: page title
-content-length: 4
-
-置地廣塲
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -142,7 +135,7 @@ name: __Created
 key: __created
 content-length: 16
 
-20151106T120333Z
+20151125T090411Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -156,14 +149,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b280c9ab-b506-41ee-ab5f-a74657ba89ee
+d4372d54-1fdf-4332-bb63-cf379c0b4d0d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T064614Z
+20151125T090502Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

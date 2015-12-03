@@ -54,7 +54,7 @@ shop-325
 ----version----
 language: en
 version: 1
-revision: a9cf46e1-d60a-4d93-9be3-f53d8e9ca23b
+revision: c5f93aca-967c-4731-84e7-b46159a37e9f
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -78,12 +78,19 @@ content-length: 828
 
 BONPOINT, the French fashion house for children, provides inspired collections for head-to-toe clothing, specialised fabrication and beautifully designed shop windows. Bonpoint's in-house design and couture studios are the essence of the label's unique style. Christine Innamorato heads up a dedicated team of talented ladies who share twin passions for children and fashion. Innamorato's designs are brought to life at the label's couture studio in Paris. A Bonpoint garment is an authentic one-of-a-kind piece. The signature detailing can be seen in no less than six stitches to the centimetre, wide hems that give perfect drape to party dresses, fully-lined garments for uncompromising comfort, hand-embroidery, rolled and invisible hems, hand-stitched biases, patchwork assembled to the millimetre and authentic Calais lace.
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 8
 
 Bonpoint
+----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -167,21 +174,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a9cf46e1-d60a-4d93-9be3-f53d8e9ca23b
+c5f93aca-967c-4731-84e7-b46159a37e9f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151625Z
+20151126T021506Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1

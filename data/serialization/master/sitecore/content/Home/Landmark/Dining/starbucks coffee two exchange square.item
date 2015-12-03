@@ -17,12 +17,26 @@ content-length: 65
 
 <image mediaid="{D5A20450-8AE3-4475-9FB0-0B7DFEF33096}" alt="" />
 ----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 155
+content-length: 194
 
-{B7798E58-05C8-4513-9C8C-F953674DA86D}|{D84B1172-716F-4E5A-8CF0-7D22C9A221C1}|{CE078BA5-479D-42FE-BAB4-50A1459A29AA}|{6B69973D-6FCC-45B2-9C75-ECCBC56F42FC}
+{B7798E58-05C8-4513-9C8C-F953674DA86D}|{C0BFF7F2-6271-4B95-9914-19628F56860B}|{D84B1172-716F-4E5A-8CF0-7D22C9A221C1}|{CE078BA5-479D-42FE-BAB4-50A1459A29AA}|{6B69973D-6FCC-45B2-9C75-ECCBC56F42FC}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -33,15 +47,15 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: f08f6048-964c-4dff-9b2d-54a78f1d8369
+revision: 260c15cd-6b7a-45bc-8536-3adbe0feccdb
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
 name: Brand Title
 key: brand title
-content-length: 16
+content-length: 38
 
-Starbucks Coffee
+Starbucks Coffee (Two Exchange Square)
 ----field----
 field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
 name: Content Title
@@ -53,6 +67,20 @@ Starbucks Coffee (Two Exchange Square)
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
+content-length: 61
+
+<p>Coffees, cakes and biscuits served in a cozy ambience.</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 38
+
+Starbucks Coffee (Two Exchange Square)
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
 content-length: 54
 
 Coffees, cakes and biscuits served in a cozy ambience.
@@ -64,6 +92,13 @@ content-length: 38
 
 Starbucks Coffee (Two Exchange Square)
 ----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 54
+
+Coffees, cakes and biscuits served in a cozy ambience.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -74,18 +109,20 @@ Starbucks Coffee (Two Exchange Square)
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 54
+content-length: 61
 
-Coffees, cakes and biscuits served in a cozy ambience.
+<p>Coffees, cakes and biscuits served in a cozy ambience.</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 62
+content-length: 80
 
 Mon-Fri 6:30am-8:30pm
+<br>
 Sat 8am-7pm
-Sun & Public Holidays closed
+<br>
+Sun &amp; Public Holidays closed<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -120,14 +157,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f08f6048-964c-4dff-9b2d-54a78f1d8369
+260c15cd-6b7a-45bc-8536-3adbe0feccdb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T092631Z
+20151126T040232Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -138,26 +175,54 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 4d667453-356e-4d2d-9030-9f818094eadf
+revision: 37587d5f-7aab-4830-93bf-3e0262e2a589
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
 name: Brand Title
 key: brand title
-content-length: 5
+content-length: 15
 
-星巴克咖啡
+星巴克咖啡 (交易广场第二座)
 ----field----
 field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
 name: Content Title
 key: content title
-content-length: 5
+content-length: 15
 
-星巴克咖啡
+星巴克咖啡 (交易广场第二座)
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
+content-length: 68
+
+<p>亲切笑容的星巴克咖啡吧服务员，每天为您亲手冲调最香醇的咖啡饮品，让你在舒适的星巴克店内或旅途之中，感受独一无二的咖啡体验。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 15
+
+星巴克咖啡 (交易广场第二座)
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 61
+
+亲切笑容的星巴克咖啡吧服务员，每天为您亲手冲调最香醇的咖啡饮品，让你在舒适的星巴克店内或旅途之中，感受独一无二的咖啡体验。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 15
+
+星巴克咖啡 (交易广场第二座)
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 61
 
 亲切笑容的星巴克咖啡吧服务员，每天为您亲手冲调最香醇的咖啡饮品，让你在舒适的星巴克店内或旅途之中，感受独一无二的咖啡体验。
@@ -165,25 +230,28 @@ content-length: 61
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 5
+content-length: 15
 
-星巴克咖啡
+星巴克咖啡 (交易广场第二座)
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 61
+content-length: 73
 
-亲切笑容的星巴克咖啡吧服务员，每天为您亲手冲调最香醇的咖啡饮品，让你在舒适的星巴克店内或旅途之中，感受独一无二的咖啡体验。
+<p>亲切笑容的星巴克咖啡吧服务员，每天为您亲手冲调最香醇的咖啡饮品，让你在舒适的星巴克店内或旅途之中，感受独一无二的咖啡体验。</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 48
+content-length: 62
 
 星期一至星期五︰早上6时30分至晚上8时30分
+<br>
 星期六︰早上8时至晚上7时
-星期日及公众假期休息
+<br>
+星期日及公众假期休息<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -225,14 +293,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4d667453-356e-4d2d-9030-9f818094eadf
+37587d5f-7aab-4830-93bf-3e0262e2a589
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T092233Z
+20151125T103748Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -243,52 +311,83 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 06bfc597-5fe3-49a1-8823-a448f75df4aa
+revision: 51e1613a-461c-4967-b682-3d6c5777bbdc
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
 name: Brand Title
 key: brand title
-content-length: 5
+content-length: 15
 
-星巴克咖啡
+星巴克咖啡 (交易廣場第二座)
 ----field----
 field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
 name: Content Title
 key: content title
-content-length: 5
+content-length: 15
 
-星巴克咖啡
+星巴克咖啡 (交易廣場第二座)
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 61
+content-length: 68
 
-親切笑容的星巴克咖啡吧服務員，每天為您親手沖調最香醇的咖啡飲品，讓你在舒適的星巴克店內或旅途之中，感受獨一無二的咖啡體驗。
+<p>親切笑容的星巴克咖啡吧服務員，每天為您親手沖調最香醇的咖啡飲品，讓你在舒適的星巴克店內或旅途之中，感受獨一無二的咖啡體驗。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 15
+
+星巴克咖啡 (交易廣場第二座)
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 62
+
+親切笑容的星巴克咖啡吧服務員，每天為您親手沖調最香醇的咖啡飲品，讓你在舒適的星巴克店內或旅途之中，感受獨一無二的咖啡體驗。 
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 15
+
+星巴克咖啡 (交易廣場第二座)
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 62
+
+親切笑容的星巴克咖啡吧服務員，每天為您親手沖調最香醇的咖啡飲品，讓你在舒適的星巴克店內或旅途之中，感受獨一無二的咖啡體驗。 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 5
+content-length: 15
 
-星巴克咖啡
+星巴克咖啡 (交易廣場第二座)
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 61
+content-length: 73
 
-親切笑容的星巴克咖啡吧服務員，每天為您親手沖調最香醇的咖啡飲品，讓你在舒適的星巴克店內或旅途之中，感受獨一無二的咖啡體驗。
+<p>親切笑容的星巴克咖啡吧服務員，每天為您親手沖調最香醇的咖啡飲品，讓你在舒適的星巴克店內或旅途之中，感受獨一無二的咖啡體驗。</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 48
+content-length: 62
 
 星期一至星期五︰早上6時30分至晚上8時30分
+<br>
 星期六︰早上8時至晚上7時
-星期日及公眾假期休息
+<br>
+星期日及公眾假期休息<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -323,14 +422,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-06bfc597-5fe3-49a1-8823-a448f75df4aa
+51e1613a-461c-4967-b682-3d6c5777bbdc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T092416Z
+20151125T103700Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

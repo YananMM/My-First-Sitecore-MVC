@@ -54,7 +54,7 @@ shop-B6-7
 ----version----
 language: en
 version: 1
-revision: 441ae01a-dfb1-4d44-8ed6-faaddc4765aa
+revision: 2968adf5-8a18-407a-8493-b242c216b255
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -74,23 +74,32 @@ Product quality and selection have made this a leading travel lifestyle brand.
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 751
+content-length: 774
 
-Since 1975, TUMI has been creating world-class business and travel essentials, designed to upgrade, simplify and beautify all aspects of life-on-the-move. Blending flawless functionality with a spirit of ingenuity, TUMI is committed to empowering journeys as a lifelong partner to movers and makers in pursuit of their passions. TUMI's innovative introduction of soft, ultra-functional, black-on-black ballistic nylon travel bags catapulted the company to its current leadership position. Designed in America for global citizens everywhere, the brand is sold in more than 300 stores all over the world, from New York and Paris to London and Tokyo, as well as the world’s top department and specialty stores and travel retail in more than 75 countries.
+<p>Since 1975, TUMI has been creating world-class business and travel essentials, designed to upgrade, simplify and beautify all aspects of life-on-the-move. Blending flawless functionality with a spirit of ingenuity, TUMI is committed to empowering journeys as a lifelong partner to movers and makers in pursuit of their passions. TUMI's innovative introduction of soft, ultra-functional, black-on-black ballistic nylon travel bags catapulted the company to its current leadership position. Designed in America for global citizens everywhere, the brand is sold in more than 300 stores all over the world, from New York and Paris to London and Tokyo, as well as the world&rsquo;s top department and specialty stores and travel retail in more than 75 countries.</p>
+<br>
+<br>
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 4
 
 TUMI
 ----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
+----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 78
+content-length: 154
 
-Product quality and selection have made this a leading travel lifestyle brand.
+Since 1975, TUMI has been creating world-class business and travel essentials, designed to upgrade, simplify and beautify all aspects of life-on-the-move.
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -102,9 +111,9 @@ TUMI
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 78
+content-length: 154
 
-Product quality and selection have made this a leading travel lifestyle brand.
+Since 1975, TUMI has been creating world-class business and travel essentials, designed to upgrade, simplify and beautify all aspects of life-on-the-move.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -116,9 +125,10 @@ TUMI
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 751
+content-length: 769
 
-Since 1975, TUMI has been creating world-class business and travel essentials, designed to upgrade, simplify and beautify all aspects of life-on-the-move. Blending flawless functionality with a spirit of ingenuity, TUMI is committed to empowering journeys as a lifelong partner to movers and makers in pursuit of their passions. TUMI's innovative introduction of soft, ultra-functional, black-on-black ballistic nylon travel bags catapulted the company to its current leadership position. Designed in America for global citizens everywhere, the brand is sold in more than 300 stores all over the world, from New York and Paris to London and Tokyo, as well as the world’s top department and specialty stores and travel retail in more than 75 countries.
+<p>Since 1975, TUMI has been creating world-class business and travel essentials, designed to upgrade, simplify and beautify all aspects of life-on-the-move. Blending flawless functionality with a spirit of ingenuity, TUMI is committed to empowering journeys as a lifelong partner to movers and makers in pursuit of their passions. TUMI's innovative introduction of soft, ultra-functional, black-on-black ballistic nylon travel bags catapulted the company to its current leadership position. Designed in America for global citizens everywhere, the brand is sold in more than 300 stores all over the world, from New York and Paris to London and Tokyo, as well as the world&rsquo;s top department and specialty stores and travel retail in more than 75 countries.</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
@@ -144,9 +154,9 @@ Shop B6-7, LANDMARK MEN, B/F, LANDMARK ATRIUM
 field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
 name: Description
 key: description
-content-length: 78
+content-length: 154
 
-Product quality and selection have made this a leading travel lifestyle brand.
+Since 1975, TUMI has been creating world-class business and travel essentials, designed to upgrade, simplify and beautify all aspects of life-on-the-move.
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -167,14 +177,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-441ae01a-dfb1-4d44-8ed6-faaddc4765aa
+2968adf5-8a18-407a-8493-b242c216b255
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T030509Z
+20151125T145626Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -185,7 +195,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 912b4161-d3bc-4c3a-94cb-009862e2d9f1
+revision: ad48477e-5336-4afc-a7a5-975d1309109e
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -205,24 +215,32 @@ content-length: 27
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 217
+content-length: 233
 
-自1975年起，TUMI一直致力于打造世界级商务及旅行用品，以优秀的设计为不同层面的旅客提升、简化及优化生活。TUMI将独特创新的设计概念与功能巧妙融合，成为旅行者游历世界、追逐梦想的理想伙伴，成就精彩丰盛的旅程。
-TUMI于美国进行产品设计与开发，为世界各地的使用者带来品质卓越的旅行用品。品牌于全球超过75个国家开设了逾300间专门店，足迹遍布纽约、巴黎、伦敦和东京等大城市，并在各大百货公司、旅行用品专门店和旅游零售点设有专柜。
+<p>自1975年起，TUMI一直致力于打造世界级商务及旅行用品，以优秀的设计为不同层面的旅客提升、简化及优化生活。TUMI将独特创新的设计概念与功能巧妙融合，成为旅行者游历世界、追逐梦想的理想伙伴，成就精彩丰盛的旅程。<br>
+TUMI于美国进行产品设计与开发，为世界各地的使用者带来品质卓越的旅行用品。品牌于全球超过75个国家开设了逾300间专门店，足迹遍布纽约、巴黎、伦敦和东京等大城市，并在各大百货公司、旅行用品专门店和旅游零售点设有专柜。</p>
+<br>
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 4
 
 TUMI
 ----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
+----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 27
+content-length: 55
 
-优质产品与多元选择，打造世界知名的商务及旅行用品品牌。
+自1975年起，TUMI一直致力于打造世界级商务及旅行用品，以优秀的设计为不同层面的旅客提升、简化及优化生活。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -234,9 +252,9 @@ TUMI
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 27
+content-length: 55
 
-优质产品与多元选择，打造世界知名的商务及旅行用品品牌。
+自1975年起，TUMI一直致力于打造世界级商务及旅行用品，以优秀的设计为不同层面的旅客提升、简化及优化生活。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -248,10 +266,11 @@ TUMI
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 217
+content-length: 233
 
-自1975年起，TUMI一直致力于打造世界级商务及旅行用品，以优秀的设计为不同层面的旅客提升、简化及优化生活。TUMI将独特创新的设计概念与功能巧妙融合，成为旅行者游历世界、追逐梦想的理想伙伴，成就精彩丰盛的旅程。
-TUMI于美国进行产品设计与开发，为世界各地的使用者带来品质卓越的旅行用品。品牌于全球超过75个国家开设了逾300间专门店，足迹遍布纽约、巴黎、伦敦和东京等大城市，并在各大百货公司、旅行用品专门店和旅游零售点设有专柜。
+<p>自1975年起，TUMI一直致力于打造世界级商务及旅行用品，以优秀的设计为不同层面的旅客提升、简化及优化生活。TUMI将独特创新的设计概念与功能巧妙融合，成为旅行者游历世界、追逐梦想的理想伙伴，成就精彩丰盛的旅程。<br>
+TUMI于美国进行产品设计与开发，为世界各地的使用者带来品质卓越的旅行用品。品牌于全球超过75个国家开设了逾300间专门店，足迹遍布纽约、巴黎、伦敦和东京等大城市，并在各大百货公司、旅行用品专门店和旅游零售点设有专柜。</p>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
@@ -307,25 +326,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-912b4161-d3bc-4c3a-94cb-009862e2d9f1
+ad48477e-5336-4afc-a7a5-975d1309109e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T064010Z
+20151125T145918Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 02bd7a15-4941-4f4e-89ce-eb321d11d952
+revision: db332045-5561-49be-8d97-43387341476b
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -338,32 +357,40 @@ TUMI
 field: {E36ADAE1-2D28-4877-AAB4-06DDE18ECDA8}
 name: Content Title
 key: content title
-content-length: 27
+content-length: 26
 
-優質產品與多元選擇，打造世界知名的商務及旅行用品品牌。
+優質產品與多元選擇，打造世界知名的商務及旅行用品品牌
 ----field----
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 217
+content-length: 237
 
-自1975年起，TUMI一直努力打造世界級商務及旅行用品，以優秀的設計為不同層面的旅客提升、簡化及優化生活。TUMI把獨特創新的設計概念與功能巧妙地融合，成為旅行者遊歷世界、追逐夢想的理想夥伴，造就精彩豐盛的旅程。
-TUMI於美國進行產品設計與開發，為世界各地的用家帶來品質卓越的旅行用品。品牌於全球超過75個國家開設了逾300間專門店，足跡遍佈紐約、巴黎、倫敦和東京等大城市，並在各大百貨公司、旅行用品專門店和旅遊零售點設有專櫃。
-
+<p>自1975年起，TUMI一直努力打造世界級商務及旅行用品，以優秀的設計為不同層面的旅客提升、簡化及優化生活。TUMI把獨特創新的設計概念與功能巧妙地融合，成為旅行者遊歷世界、追逐夢想的理想夥伴，造就精彩豐盛的旅程。<br>
+TUMI於美國進行產品設計與開發，為世界各地的用家帶來品質卓越的旅行用品。品牌於全球超過75個國家開設了逾300間專門店，足跡遍佈紐約、巴黎、倫敦和東京等大城市，並在各大百貨公司、旅行用品專門店和旅遊零售點設有專櫃。</p>
+<br>
+<br>
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 4
 
 TUMI
 ----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
+----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 27
+content-length: 54
 
-優質產品與多元選擇，打造世界知名的商務及旅行用品品牌。
+自1975年起，TUMI一直努力打造世界級商務及旅行用品，以優秀的設計為不同層面的旅客提升、簡化及優化生活。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -375,9 +402,9 @@ TUMI
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 27
+content-length: 54
 
-優質產品與多元選擇，打造世界知名的商務及旅行用品品牌。
+自1975年起，TUMI一直努力打造世界級商務及旅行用品，以優秀的設計為不同層面的旅客提升、簡化及優化生活。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -389,11 +416,12 @@ TUMI
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 217
+content-length: 237
 
-自1975年起，TUMI一直努力打造世界級商務及旅行用品，以優秀的設計為不同層面的旅客提升、簡化及優化生活。TUMI把獨特創新的設計概念與功能巧妙地融合，成為旅行者遊歷世界、追逐夢想的理想夥伴，造就精彩豐盛的旅程。
-TUMI於美國進行產品設計與開發，為世界各地的用家帶來品質卓越的旅行用品。品牌於全球超過75個國家開設了逾300間專門店，足跡遍佈紐約、巴黎、倫敦和東京等大城市，並在各大百貨公司、旅行用品專門店和旅遊零售點設有專櫃。
-
+<p>自1975年起，TUMI一直努力打造世界級商務及旅行用品，以優秀的設計為不同層面的旅客提升、簡化及優化生活。TUMI把獨特創新的設計概念與功能巧妙地融合，成為旅行者遊歷世界、追逐夢想的理想夥伴，造就精彩豐盛的旅程。<br>
+TUMI於美國進行產品設計與開發，為世界各地的用家帶來品質卓越的旅行用品。品牌於全球超過75個國家開設了逾300間專門店，足跡遍佈紐約、巴黎、倫敦和東京等大城市，並在各大百貨公司、旅行用品專門店和旅遊零售點設有專櫃。</p>
+<br>
+<br>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
@@ -442,18 +470,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-02bd7a15-4941-4f4e-89ce-eb321d11d952
+db332045-5561-49be-8d97-43387341476b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T064010Z
+20151125T145759Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

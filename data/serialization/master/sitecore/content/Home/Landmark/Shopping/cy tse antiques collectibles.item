@@ -54,7 +54,7 @@ shop-229
 ----version----
 language: en
 version: 1
-revision: e378ae90-9dc7-4407-a7c2-429ef0dffe32
+revision: 7722ecf2-7943-48e8-90f5-4b9e5ca4bd0a
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -78,12 +78,19 @@ content-length: 652
 
 C.Y.Tse Antiques & Collectibles offers a wide and careful selection of small and medium-sized antiques including old Chinese glasses, attractive artworks, vintage wood pieces and porcelain items, mainly from the Qing dynasty. It also has a fine selection of antique and modern jade jewellery to choose from. A very respected antique dealer in Hong Kong for many years, C.Y.Tse Antiques & Collectibles offers all its customers a guarantee of authenticity, as well as quality repair and restoration services. Shipping can be arranged to any local or international destination and the friendly and knowledgeable staff are happy to help with all enquiries.
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 32
+
+C.Y. Tse Antiques & Collectibles
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 77
+content-length: 0
 
-C,Y,Tse,Antiques,Collectibles, CY, C Y, CYTse, C.Y.,cy tse, C Y Tse, C.Y. Tse
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -167,21 +174,21 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e378ae90-9dc7-4407-a7c2-429ef0dffe32
+7722ecf2-7943-48e8-90f5-4b9e5ca4bd0a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151621Z
+20151126T021854Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1

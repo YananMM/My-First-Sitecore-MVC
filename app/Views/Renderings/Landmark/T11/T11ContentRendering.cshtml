@@ -59,20 +59,43 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 menbox">
                 <div class=" menbox-1">
-                    <a href="#" class="menbox-img">
-                        <div class="menbox-img-mask"></div>
-                        @{
-                            string src = Html.Sitecore().ImageFieldSrc("Banner Title Image", Sitecore.Context.Item);
+                    @{
+                        ReferenceField bannerItemField = (ReferenceField)Sitecore.Context.Item.Fields["Banner Article Item"];
+                        Item bannerItem = null;
+                        if (bannerItemField != null)
+                        {
+                            bannerItem = bannerItemField.TargetItem;
                         }
-                        <img data-src="@Html.Sitecore().ImageFieldSrc("Banner Image", Sitecore.Context.Item)" alt="landmark">
-                        <div class="menbox-text">
-                            @if (!string.IsNullOrEmpty(src))
-                            {
-                                <img data-src="@src" alt="landmark">
-                            }
-                            <p>@Html.Sitecore().Field("Banner Content", Sitecore.Context.Item)</p>
-                        </div>
-                    </a>
+                        if (bannerItem == null)
+                        {
+                            <a href="@LandmarkHelper.GetLinkUrl(Sitecore.Context.Item, "Banner Link")" class="menbox-img" target="@LandmarkHelper.GetLinkTarget(Sitecore.Context.Item, "Banner Link")">
+                                <div class="menbox-img-mask"></div>
+                                @{
+                                    string src = Html.Sitecore().ImageFieldSrc("Banner Title Image", Sitecore.Context.Item);
+                                }
+                                <img data-src="@Html.Sitecore().ImageFieldSrc("Banner Image", Sitecore.Context.Item)" alt="landmark">
+                                <div class="menbox-text">
+                                    @if (!string.IsNullOrEmpty(src))
+                                    {
+                                        <img data-src="@src" alt="landmark">
+                                    }
+                                    <p>@Html.Sitecore().Field("Banner Content", Sitecore.Context.Item)</p>
+                                </div>
+                            </a>
+                        }
+                        else
+                        {
+                            <a href="@LandmarkHelper.GetItemUrl(bannerItem)" class="menbox-img">
+                                <div class="menbox-img-mask"></div>
+                                <img data-src="@LandmarkHelper.GetCallOutImage(bannerItem)" alt="landmark">
+                                <div class="menbox-text">
+                                    <p>@Html.Sitecore().Field("Article Headline", bannerItem)</p>
+                                </div>
+                            </a>
+                        }
+                    }
+
+                    
                 </div>
             </div>
 

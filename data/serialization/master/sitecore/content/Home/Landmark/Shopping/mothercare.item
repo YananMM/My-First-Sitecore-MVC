@@ -54,7 +54,7 @@ shop-305-307
 ----version----
 language: en
 version: 1
-revision: c4db09fb-d8d0-43f0-aee8-88eebc5db6d2
+revision: 960a7060-0f2d-48a2-b64c-fdb67cdc2f14
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -78,19 +78,26 @@ content-length: 603
 
 Mothercare is a leading British retailer established more than 50 years ago to provide parents and parents-to-be with the best quality and most innovative products for their babies and young children. In the UK, Mothercare now has more than 400 shops, and around the world, the company has over 1,000 stores across 60 countries, and is expanding at an exponential rate.   Mothercare offers an extensive collection of high quality furniture, bedding, maternity wear, strollers, toiletries and clothing for babies and toddlers, making it a one-stop shop for all your maternity, baby and children’s’ needs.
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 10
 
 mothercare
 ----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
+----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 60
+content-length: 200
 
-The most recommended baby and toddler retailer in the world.
+Mothercare is a leading British retailer established more than 50 years ago to provide parents and parents-to-be with the best quality and most innovative products for their babies and young children.
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -102,16 +109,16 @@ mothercare
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 60
+content-length: 200
 
-The most recommended baby and toddler retailer in the world.
+Mothercare is a leading British retailer established more than 50 years ago to provide parents and parents-to-be with the best quality and most innovative products for their babies and young children.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
 content-length: 10
 
-mothercare
+Mothercare
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
@@ -167,14 +174,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c4db09fb-d8d0-43f0-aee8-88eebc5db6d2
+960a7060-0f2d-48a2-b64c-fdb67cdc2f14
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T043706Z
+20151125T130504Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -185,7 +192,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: d0a610fc-5608-43cc-9afd-e19eb1d2e95c
+revision: 92ba7c48-8338-490c-90f7-9bc9d02f7117
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -205,9 +212,9 @@ content-length: 17
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 198
+content-length: 205
 
-Mothercare是英国顶尖的零售品牌，五十多年来为父母们或准父母们带来最优质和最新颖的婴儿及幼童产品。时至今日，Mothercare已在英国本土拥有400多间店铺，还于全球60个国家设有逾1,000间分店，且以越来越快的速度不断发展。Mothercare备有不同系列的优质家具、床上用品、孕妇装、手推车、护肤沐浴用品和婴童服装等，提供一站式商店服务，务求全方位满足各位母亲、婴儿和儿童的需要。
+<p>Mothercare是英国顶尖的零售品牌，五十多年来为父母们或准父母们带来最优质和最新颖的婴儿及幼童产品。时至今日，Mothercare已在英国本土拥有400多间店铺，还于全球60个国家设有逾1,000间分店，且以越来越快的速度不断发展。Mothercare备有不同系列的优质家具、床上用品、孕妇装、手推车、护肤沐浴用品和婴童服装等，提供一站式商店服务，务求全方位满足各位母亲、婴儿和儿童的需要。</p>
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
@@ -219,9 +226,9 @@ mothercare
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 17
+content-length: 53
 
-全球最受推崇的婴幼儿用品零售品牌。
+Mothercare是英国顶尖的零售品牌，五十多年来为父母们或准父母们带来最优质和最新颖的婴儿及幼童产品。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -233,9 +240,9 @@ mothercare
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 17
+content-length: 53
 
-全球最受推崇的婴幼儿用品零售品牌。
+Mothercare是英国顶尖的零售品牌，五十多年来为父母们或准父母们带来最优质和最新颖的婴儿及幼童产品。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -247,9 +254,9 @@ mothercare
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 198
+content-length: 205
 
-Mothercare是英国顶尖的零售品牌，五十多年来为父母们或准父母们带来最优质和最新颖的婴儿及幼童产品。时至今日，Mothercare已在英国本土拥有400多间店铺，还于全球60个国家设有逾1,000间分店，且以越来越快的速度不断发展。Mothercare备有不同系列的优质家具、床上用品、孕妇装、手推车、护肤沐浴用品和婴童服装等，提供一站式商店服务，务求全方位满足各位母亲、婴儿和儿童的需要。
+<p>Mothercare是英国顶尖的零售品牌，五十多年来为父母们或准父母们带来最优质和最新颖的婴儿及幼童产品。时至今日，Mothercare已在英国本土拥有400多间店铺，还于全球60个国家设有逾1,000间分店，且以越来越快的速度不断发展。Mothercare备有不同系列的优质家具、床上用品、孕妇装、手推车、护肤沐浴用品和婴童服装等，提供一站式商店服务，务求全方位满足各位母亲、婴儿和儿童的需要。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
@@ -305,25 +312,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d0a610fc-5608-43cc-9afd-e19eb1d2e95c
+92ba7c48-8338-490c-90f7-9bc9d02f7117
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063932Z
+20151125T130550Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: f06fe1b5-4dbe-4c3e-aaf2-21fdfdf3c7cd
+revision: 6df426bf-de2c-40e4-8ba4-2cdf78cb91ca
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -343,23 +350,30 @@ content-length: 18
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 198
+content-length: 205
 
-Mothercare是英國頂尖的零售品牌，五十多年來為爸媽或準爸媽帶來最優質和最新穎的嬰兒及幼童產品。時至今日，Mothercare已在英國本土擁有超過400間店舖，而於全球60個國家則設有超過1,000間分店，且繼續以越來越快的速度不斷發展。Mothercare備有不同系列的優質家具、床上用品、孕婦裝、手推車、護膚沐浴用品、嬰童服裝，提供一站式商店服務，務求滿足各位母親、小寶寶和兒童的需要。
+<p>Mothercare是英國頂尖的零售品牌，五十多年來為爸媽或準爸媽帶來最優質和最新穎的嬰兒及幼童產品。時至今日，Mothercare已在英國本土擁有超過400間店舖，而於全球60個國家則設有超過1,000間分店，且繼續以越來越快的速度不斷發展。Mothercare備有不同系列的優質家具、床上用品、孕婦裝、手推車、護膚沐浴用品、嬰童服裝，提供一站式商店服務，務求滿足各位母親、小寶寶和兒童的需要。</p>
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 10
 
 mothercare
 ----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
+----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 18
+content-length: 51
 
-全球最備受推崇的嬰幼兒用品零售品牌。
+Mothercare是英國頂尖的零售品牌，五十多年來為爸媽或準爸媽帶來最優質和最新穎的嬰兒及幼童產品。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -371,9 +385,9 @@ mothercare
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 18
+content-length: 51
 
-全球最備受推崇的嬰幼兒用品零售品牌。
+Mothercare是英國頂尖的零售品牌，五十多年來為爸媽或準爸媽帶來最優質和最新穎的嬰兒及幼童產品。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -385,9 +399,9 @@ mothercare
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 198
+content-length: 205
 
-Mothercare是英國頂尖的零售品牌，五十多年來為爸媽或準爸媽帶來最優質和最新穎的嬰兒及幼童產品。時至今日，Mothercare已在英國本土擁有超過400間店舖，而於全球60個國家則設有超過1,000間分店，且繼續以越來越快的速度不斷發展。Mothercare備有不同系列的優質家具、床上用品、孕婦裝、手推車、護膚沐浴用品、嬰童服裝，提供一站式商店服務，務求滿足各位母親、小寶寶和兒童的需要。
+<p>Mothercare是英國頂尖的零售品牌，五十多年來為爸媽或準爸媽帶來最優質和最新穎的嬰兒及幼童產品。時至今日，Mothercare已在英國本土擁有超過400間店舖，而於全球60個國家則設有超過1,000間分店，且繼續以越來越快的速度不斷發展。Mothercare備有不同系列的優質家具、床上用品、孕婦裝、手推車、護膚沐浴用品、嬰童服裝，提供一站式商店服務，務求滿足各位母親、小寶寶和兒童的需要。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
@@ -436,18 +450,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f06fe1b5-4dbe-4c3e-aaf2-21fdfdf3c7cd
+6df426bf-de2c-40e4-8ba4-2cdf78cb91ca
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063932Z
+20151125T130529Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

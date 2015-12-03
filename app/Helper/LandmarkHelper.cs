@@ -564,6 +564,24 @@ namespace Landmark.Helper
             return target;
         }
 
+        public static string GetLinkUrl(Item item, string linkname)
+        {
+            string href = string.Empty;
+            LinkField linkField = item.Fields[linkname];
+            if (linkField != null)
+            {
+                if (linkField.LinkType=="external")
+                    href = linkField.Url;
+                if (linkField.LinkType == "internal")
+                {
+                    if (linkField.TargetItem != null)
+                        href = GetItemUrl(linkField.TargetItem);
+                }
+            }
+            return href;
+        }
+
+
         public static string GetPageSocialTitle()
         {
             string socialTitle = string.Empty;
