@@ -1,14 +1,19 @@
 ﻿@using Landmark.Helper
+@using Sitecore.Data.Fields
 @using Sitecore.Links
 @model RenderingModel
 @{
     string src = LandmarkHelper.GetCallOutImage(Model.Item);
+    ReferenceField articleType = (ReferenceField)Model.Item.Fields["Article Type"];
 }
 <div class="panel-img" data-bg="@src"></div>
 <div class="panel-main">
     <div class="panel-text text-box-2">
         <hgroup class="clearfix">
-            <h4>@Html.Sitecore().Field("Article Subheadline", Model.Item)</h4>
+            @if (articleType != null && articleType.TargetItem != null)
+                        {
+                            <h4>@articleType.TargetItem.Fields["Article Type"].ToString().ToUpper()</h4>
+                        }
             <h2><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Model.Item))">@Html.Sitecore().Field("Article Headline", Model.Item)</a></h2>
         </hgroup>
     </div>
