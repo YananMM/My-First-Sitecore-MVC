@@ -70,33 +70,13 @@
                             <div class="table-responsive gd-tg-table">
                                 <table>
                                     <tbody>
-                                        @if (tagsTrees != null && tagsTrees.Count != 0)
-                                        {
+                                      
                                             <tr>
                                                 <th><span class="icomoon-price-tag"></span> @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.TagsItem)).ToString().ToUpper()</th>
                                                 <td>
-                                                    @foreach (var item in tagsTrees)
-                                                    {
-                                                        if (!string.IsNullOrEmpty(item.CurrentItem["Tag Name"]))
-                                                        {
-                                                            <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.SearchResultsPage)))?searchstring=@item.CurrentItem["Tag Name"]">
-                                                                @item.CurrentItem["Tag Name"].ToUpper() -
-                                                            </a>
-                                                        }
-                                                        int i = 1;
-                                                        foreach (var it in item.Children)
-                                                        {
-                                                            <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.SearchResultsPage)))?searchstring=@it.CurrentItem["Tag Name"]">@it.CurrentItem["Tag Name"].ToUpper()</a>
-                                                            if (i != item.Children.Count)
-                                                            {<text>,</text>
-                                                            }
-                                                            i++;
-                                                        }
-                                                        <br />
-                                                    }
+                                                    @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.TagsRenderingViewGuid)
                                                 </td>
                                             </tr>
-                                        }
                                     </tbody>
                                 </table>
                             </div>
