@@ -9,16 +9,25 @@
 
 @{
     ShoppingHelper shoppingHelper = new ShoppingHelper();
-    List<string> relatedCategorieIDs = shoppingHelper.GetRelatedCategoriesIDs();
-    var shoppingItems = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
-    foreach (var item in shoppingItems)
+    var relatedCategorieIDs = shoppingHelper.GetRelatedCategoriesIDs();
+    var shoppingPages = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
+    var diningPages = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningItem, ItemGuids.T11PageTemplate);
+    var allPages = shoppingPages.Union(diningPages);
+    foreach (var item in allPages)
     {
         foreach (var id in relatedCategorieIDs)
         {
             var category = Sitecore.Context.Database.GetItem(id);
             if (category.DisplayName == item.DisplayName)
             {
-                <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">@Html.Sitecore().Field("Page Title", item)</a></li>
+                if (item.Parent.ID.ToString() == ItemGuids.DiningItem)
+                {
+                    <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.Children.FirstOrDefault()))">@Html.Sitecore().Field("Page Title", item)</a></li>
+                }
+                else
+                {
+                    <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))">@Html.Sitecore().Field("Page Title", item)</a></li>
+                }
             }
         }
     }
