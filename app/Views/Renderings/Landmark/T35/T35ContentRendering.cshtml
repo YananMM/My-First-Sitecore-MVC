@@ -16,7 +16,6 @@
         </div>
 
         <div id="gd-map-switcher" class="gd-pagetitle-menu hidden-xs">
-
             <a data-iframe="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(t35GetDirectionPage))" href="javascript:;" class="active">@t35GetDirectionPage.Fields["Page Title"].ToString().ToUpper()</a>
             <span class="gd-pagetitle-menu-gap">|</span>
             <a data-iframe="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(t35SurroundingPage))" href="javascript:;">@t35SurroundingPage.Fields["Page Title"].ToString().ToUpper()</a>
@@ -27,12 +26,12 @@
                 <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionPage)))">@t35GetDirectionPage.Fields["Page Title"].ToString().ToUpper()</option>
                 <option value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35SurroundingPage)))" @if (currentItem.ID.ToString() == ItemGuids.T35SurroundingPage) { <text>
                         selected="selected"
-                        </text>  }>
+                        </text>     }>
                     @t35SurroundingPage.Fields["Page Title"].ToString().ToUpper()
-                    </option>
-                </select>
-            </div>
-
+                </option>
+            </select>
         </div>
+
     </div>
-    <iframe id="gd-map-container" src="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionPage)))" frameborder="0"></iframe>
+</div>
+<iframe id="gd-map-container" src="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionPage)))" frameborder="0"></iframe>
