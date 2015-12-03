@@ -21,7 +21,18 @@
         <div class="gd-pagetitle-heading">
             <h1>@Html.Sitecore().Field("Page Title").ToString().ToUpper()</h1>
         </div>
-        <div class="gd-search-infomation">@count search result(s) for <span>"@Request["searchString"]"</span></div>
+        @if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
+        {
+            <div class="gd-search-infomation">找到共 @count 个符合 <span>"@Request["searchString"]"</span> 的记录 </div>
+        }
+        else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
+        {
+            <div class="gd-search-infomation">找到共 @count 個符合 <span>"@Request["searchString"]"</span> 的記錄 </div>
+        }
+        else if (Html.Sitecore().CurrentItem.Language.Name == "en")
+        {
+            <div class="gd-search-infomation">@count search result(s) for <span>"@Request["searchString"]"</span></div>
+        }
         @if (count > 0)
         {
             <div class="gd-search-filter hidden-xs">
@@ -41,12 +52,12 @@
 
         <div class="gd-controls-m visible-xs">
             <select class="form-control">
-                <option value="?type" @{if (Request["type"] == null) { <text> selected="selected" </text>      }}>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem))</option>
+                <option value="?type" @{if (Request["type"] == null) { <text> selected="selected" </text>           }}>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem))</option>
                 @foreach (var type in types)
                 {
                     if (Int32.Parse(type.count) > 0)
                     {
-                        <option value="?type=@type.value" @{if (Request["type"] == type.value) { <text> selected="selected" </text>     }}>@type.value (@type.count)</option>}
+                        <option value="?type=@type.value" @{if (Request["type"] == type.value) { <text> selected="selected" </text>          }}>@type.value (@type.count)</option>}
                 }
             </select>
         </div>
@@ -118,7 +129,7 @@
                                 {
                                     <p>@Html.Sitecore().Field("Article Intro", resultItem)</p>
                                 }
-                                
+
                                 @if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
                                 {
                                     <div>@result.GetItem().Statistics.Created.ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat)</div>
@@ -131,8 +142,8 @@
                                 {
                                     <div>@result.GetItem().Statistics.Created.ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</div>
                                 }
-                        </div>
-                    </li>
+                            </div>
+                        </li>
                     }
                 }
             </ol>
