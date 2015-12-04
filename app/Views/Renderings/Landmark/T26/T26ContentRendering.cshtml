@@ -21,13 +21,14 @@
         <div class="gd-pagetitle-info">@Html.Sitecore().Field("Page Content")</div>
     </div>
     <div class="gd-promotion">
-        <div class="gd-promo-filter hidden-xs">
-            <div class="gd-promo-brands">
+        <div class="gd-promo-filter">
+            <div class="gd-promo-brands hidden-xs">
                 <a class="btn gd-promo-brands-btn">
                     @{
                         var findByBrandItem = Factory.GetDatabase("web").GetItem(ItemGuids.FindByBrandItem);
                     }
-                    @Html.Sitecore().Field("Glossary Value", findByBrandItem)</a>
+                    @Html.Sitecore().Field("Glossary Value", findByBrandItem)
+                </a>
                 <div class="gd-promo-brands-area">
                     <ul>
                         @for (int i = 0; i < alphabetsStrings.Length; i++)
@@ -43,51 +44,55 @@
                         }
 
                     </ul>
-                    <a href="javascript:;" data-filter="*" class="gd-promo-brands-all">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ShowAllItem))</a>
+                    <a href="javascript:;" data-filter="*" class="gd-promo-brands-all">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.ShowAllItem))</a>
                 </div>
             </div>
-            <ul>
-                <li class="active"><a href="javascript:;" data-filter="*">
-                    @{
-                        var allTextItem = Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem);
-                    }
-                    @Html.Sitecore().Field("Glossary Value", allTextItem)</a></li>
+
+            <ul class="hidden-xs">
+                <li class="active">
+                    <a href="javascript:;" data-filter="*">
+                        @{
+                            var allTextItem = Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem);
+                        }
+                        @Html.Sitecore().Field("Glossary Value", allTextItem)
+                    </a>
+                </li>
                 @foreach (var category in inspirationHelper.GetCategories())
                 {
-                    <li><a href="javascript:;" data-filter="gdf-@category.DisplayName.ToLower().Replace(" ","")">@Html.Sitecore().Field("Tag Name", category)</a></li>
+                    <li><a href="javascript:;" data-filter="gdf-@category.DisplayName.ToLower().Replace(" ", "")">@Html.Sitecore().Field("Tag Name", category)</a></li>
                 }
             </ul>
-        </div>
 
-        <div class="gd-controls-m visible-xs">
-            <div class="row">
-                <div class="col-xs-4">
-                    <p class="form-control-static">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.FilterByItem))</p>
-                </div>
-                <div class="col-xs-8">
-                    <select class="form-control">
-                        <option value="*">@Html.Sitecore().Field("Glossary Value", allTextItem)</option>
-                        @foreach (var category in inspirationHelper.GetCategories())
-                        {
-                            <option value="gdf-@category.DisplayName.ToLower().Replace(" ","")">@Html.Sitecore().Field("Tag Name", category).ToString().ToUpper()</option>
-                        }
-                    </select>
+            <div class="gd-controls-m visible-xs">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <p class="form-control-static">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.FilterByItem))</p>
+                    </div>
+                    <div class="col-xs-8">
+                        <select class="form-control">
+                            <option value="*">@Html.Sitecore().Field("Glossary Value", allTextItem)</option>
+                            @foreach (var category in inspirationHelper.GetCategories())
+                            {
+                                <option value="gdf-@category.DisplayName.ToLower().Replace(" ","")">@Html.Sitecore().Field("Tag Name", category).ToString().ToUpper()</option>
+                            }
+                        </select>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="gd-controls-m visible-xs">
-            <div class="row">
-                <div class="col-xs-12">
-                    <select class="form-control">
-                        <option value="*">@Html.Sitecore().Field("Glossary Value", findByBrandItem)</option>
-                        @for (int i = 0; i < alphabetsStrings.Length; i++)
-                        {
-                            if (inspirationHelper.IfBrandsAlphabetValid(alphabetsStrings[i]))
+            <div class="gd-controls-m visible-xs">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <select class="form-control">
+                            <option value="*">@Html.Sitecore().Field("Glossary Value", findByBrandItem)</option>
+                            @for (int i = 0; i < alphabetsStrings.Length; i++)
                             {
-                                <option value="gdf-@alphabetsStrings[i].ToLower()">@alphabetsStrings[i].ToUpper()</option>
+                                if (inspirationHelper.IfBrandsAlphabetValid(alphabetsStrings[i]))
+                                {
+                                    <option value="gdf-@alphabetsStrings[i].ToLower()">@alphabetsStrings[i].ToUpper()</option>
+                                }
                             }
-                        }
-                    </select>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
@@ -170,9 +175,9 @@
                     }
                 }
                 <div class="gd-promo-box @alphabet @inspirationHelper.GetTagsFilter(article)">
-                    <a href="#"><img data-src="@imagesrc"></a>
+                    <div><img data-src="@imagesrc"></div>
                     <h5>@brandTitle</h5>
-                    <a href="#"><h4>@Html.Sitecore().Field("Article Headline", article)</h4></a>
+                    <div><h4>@Html.Sitecore().Field("Article Headline", article)</h4></div>
 </div>
             }
         </div>
