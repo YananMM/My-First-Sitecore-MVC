@@ -178,18 +178,27 @@
                                         <div class="col-sm-7  menu-equal-height">
                                             <div class="row">
                                                 @{
-                                    //ReferenceField referenceField = (ReferenceField)item.Fields["Ad Reference Item"];
+                                    ReferenceField referenceField = (ReferenceField)item.Fields["Ad Reference Item"];
                                                 }
                                                 <div class="col-sm-4 col-sm-offset-1">
                                                     <div class="mega-product-area2 pull-right">
-                                                        @* @Html.Sitecore().Field("Article Thumb Image", referenceField.TargetItem)*@
+                                                          @if (referenceField != null && referenceField.TargetItem != null)
+                                                        {
+                                                            string imageSrc = LandmarkHelper.GetCallOutImage(referenceField.TargetItem);
+                                                            <img src="@imageSrc" />
+                                                        }
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-4">
                                                     <div class="mega-product-area2 pull-right">
-                                                        @*<h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
-                                                            <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>*@
-                                                        @*<a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceField.TargetItem)">@Html.Sitecore().Field("Glossary Value", SitecoreItems.LearnMoreItem) <span class="sprite-menu-r"></span></a>*@
+                                                        @if (referenceField != null && referenceField.TargetItem != null)
+                                                        {
+                                                            <h3>@Html.Sitecore().Field("Article Headline", referenceField.TargetItem)</h3>
+                                                            <p>@Html.Sitecore().Field("Article Intro", referenceField.TargetItem)</p>
+                                                            <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(referenceField.TargetItem))">
+                                                                @Html.Sitecore().Field("Glossary Value", learnMoreItem) <span class="sprite-menu-r"></span>
+                                                            </a>
+                                                        }
                                                     </div>
                                                 </div>
                                             </div>

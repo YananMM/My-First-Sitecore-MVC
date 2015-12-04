@@ -20,6 +20,8 @@ namespace Landmark.Classes.Customtation
                     return;
                 if (Sitecore.Context.Job.Name == "Install")
                     return;
+                if (Sitecore.Context.Job.Name == "Landmark.Classes.InstagramSocial")
+                    return;
             }
             using (new SecurityDisabler())
             {

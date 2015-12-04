@@ -228,7 +228,7 @@ namespace Landmark.Classes
                 {
                     Sitecore.Diagnostics.Log.Info(string.Format("Creating Item: {0}, {1}", "Instagram " + socialImage.Id, socialImage.PublishTime), this);
 
-                    var imageItem = SaveImage(socialImage.Url, socialImage.Caption);
+                    var imageItem = SaveImage(socialImage.Id, socialImage.Caption);
 
                     if (imageItem == null)
                         continue;
