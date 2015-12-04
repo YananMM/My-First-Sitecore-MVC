@@ -219,8 +219,7 @@ namespace Landmark.Classes
                     instagramImage.Delete();
                 }
                 Item ImageFolder = _masterDb.GetItem("/sitecore/media library/Images/Landmark/Instagram Folder");
-                var images = ImageFolder.Children
-                    .Where(item => item.TemplateID.Guid.ToString() == ItemGuids.InstagramImageTemplate);
+                var images = ImageFolder.Children;
                 foreach (Item instagramImage in images)
                 {
                     instagramImage.Delete();
