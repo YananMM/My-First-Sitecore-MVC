@@ -111,6 +111,7 @@ namespace Landmark.Classes
         public static readonly string ExlusivesCategoryFolder = "{9E22AA2A-730D-4DB6-9787-5A16E308A91A}";
         public static readonly string DiningByBrandsItem = "{2A670EF7-757F-4FCB-89A6-973DA8AE7DBF}";
         public static readonly string ConciergeDeskObject = "{459A62DB-7A18-4A16-8337-32D6D50931C8}";
+        public static readonly string InstagramImageTemplate = "{21A2A63D-A031-4D78-8E1B-0D71BD67D57A}";
 
         // Items
         public static readonly string LandmarkHomeItem = "{497220CE-7763-4A17-9D3F-4A6DBF1B8CDB}";
@@ -193,5 +194,6 @@ namespace Landmark.Classes
         public static readonly string ErrorMessageFolder = "{9C7F00FF-DA2B-47F9-A7DF-7D7A3C6AFE19}";
         public static readonly string LandmarkTitleItem = "{49B3DA18-4601-48AB-9AD3-B506C0713762}";
         public static readonly string OfItem = "{C029DF24-A35D-443A-BA17-00FA1C6FAD9C}";
+        public static readonly string InstagramFolder = "{78706CBA-8902-4A9A-A4C2-B7D8E20E768F}";
     }
 }
