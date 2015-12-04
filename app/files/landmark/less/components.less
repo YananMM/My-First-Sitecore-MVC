@@ -240,6 +240,7 @@ h1,h2,h3,h4{
       }
     }
     .gd-button-white {
+      display: inline-block;
       background-color: #FFFFFF;
       border-color: #000000;
       color: @gd-text-color;
@@ -942,7 +943,7 @@ h1,h2,h3,h4{
             top: 0;
             .gd-carousel-detail {
               height: @gdmi-height-md;
-              padding: 0 20px 0 40px;
+              padding: 0 20px 0 35px;
             }
           }
         }
@@ -1877,12 +1878,15 @@ h1,h2,h3,h4{
                  font-size: 14px;
                 }
         h1,h3{
+          display: block;
           line-height: 1.5;
-          margin: 50px 0 30px;
+          margin: 30px 70px 30px 0;
         } 
   h5 {
+    display: inline-block;
     float: right;
-    margin-top: -52px;
+    margin-top: -50px;
+    margin-bottom: 30px;
     padding-bottom: 0;
 }
         .gd-nd-info-text{
@@ -1904,6 +1908,19 @@ h1,h2,h3,h4{
       padding: 0;}
     }
   }
+  }
+  @media (min-width: @screen-md) {
+  h1,h3{
+          line-height: 1.5;
+          margin: 30px 0 30px 0;
+        }
+    
+  h5 {
+    float: right;
+    margin-top: -52px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
   }
 }
 //gd content details

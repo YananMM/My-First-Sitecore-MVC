@@ -35,11 +35,12 @@
                 brandItem = Sitecore.Context.Database.GetItem(brand);
                 brandTitle = Sitecore.Context.Database.GetItem(brand).Fields["Brand Title"].Value;
             }
+            if (brandItem != null)
+            {
+                <h5><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(brandItem))">@brandTitle.ToUpper()</a></h5>
+            }
         }
-        @if (brandItem != null)
-        {
-            <h5><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(brandItem))">@brandTitle.ToUpper()</a></h5>
-        }
+
         <h3>@Html.Sitecore().Field("Article Headline")</h3>
     </div>
     <div class="gd-exclusive">
@@ -57,9 +58,9 @@
                             <ol class="carousel-indicators">
                                 @for (int i = 0; i < slides.Count; i++)
                                 {
-                                    <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{if (i == 0) { <text>
+                                    <li data-target="#gd-carousel-mainimage" data-slide-to="@i" @{ if (i == 0) { <text>
                                         class="active"
-                                        </text>                 }}></li>
+                                        </text>    } }></li>
                                 }
                             </ol>
                         }
@@ -72,9 +73,9 @@
                         {
                             <div @{ if (j == 0) { <text>
                                  class="item active"
-                                 </text>      } else { <text>
+                                 </text>         } else { <text>
                                  class="item"
-                                 </text>      } }>
+                                 </text>         } }>
                                 @{
                             j++;
                                 }
@@ -100,9 +101,7 @@
                                 </a>
                             </div>
                         }
-
                     </div>
-
                 }
 
             </div>
