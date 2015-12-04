@@ -5,8 +5,8 @@
 @using Landmark.Models
 @model RenderingModel
 @{
-    var locations = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.T35GetDirectionPage, ItemGuids.T35StartingLocationObject);
-    var pageItem = Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionPage);
+    var locations = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.T35GetHere, ItemGuids.T35StartingLocationObject);
+    var pageItem = Sitecore.Context.Database.GetItem(ItemGuids.T35GetHere);
 }
 
 <div id="directions-panel" class="gd-map-controls">

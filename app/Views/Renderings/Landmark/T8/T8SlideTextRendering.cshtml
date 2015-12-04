@@ -4,6 +4,6 @@
 
 <h2>@Html.Sitecore().Field("About Title").ToString().ToUpper()</h2>
 <p>@Html.Sitecore().Field("About Description") </p>
-<a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionPage)))" class="gd-link-brief">
+<a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionsPage)))" class="gd-link-brief">
     @Html.Sitecore().Field("Getting Here Text") <span class="icomoon-chevron-small-right"></span>
 </a>
