@@ -103,24 +103,27 @@
                     @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.MobileNavigationRenderingViewGuid)
 
                     <div class="language">
-                        @foreach (var lan in languages)
-            {
-                if (languageFolderGuidItem != null && languageFolderGuidItem.Children.Count != 0)
-                {
-                    foreach (Item languageText in languageFolderGuidItem.Children)
-                    {
-                        if (languageText.DisplayName.ToLower() == lan.Name.ToLower())
-                        {
-                            <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, @lan.Name)" class="lang-cn">@Html.Sitecore().Field("Value", languageText)</a>
+                        @{
+                            int j = 1;
                         }
-                    }
-                }
-                if (i != languages.Count())
-                {
-                    @Html.Raw(" | ")
-                }
-                i++;
-            }
+                        @foreach (var lan in languages)
+                        {
+                            if (languageFolderGuidItem != null && languageFolderGuidItem.Children.Count != 0)
+                            {
+                                foreach (Item languageText in languageFolderGuidItem.Children)
+                                {
+                                    if (languageText.DisplayName.ToLower() == lan.Name.ToLower())
+                                    {
+                                        <a href="@LandmarkHelper.GetUrlByLanguage(Model.PageItem, @lan.Name)" class="lang-cn">@Html.Sitecore().Field("Value", languageText)</a>
+                                    }
+                                }
+                            }
+                            if (j != languages.Count())
+                            {
+                                <span class="gap">|</span>
+                            }
+                            j++;
+                        }
                     </div>
                 </div>
             </div>

@@ -36,7 +36,6 @@
                 brandTitle = Sitecore.Context.Database.GetItem(brand).Fields["Brand Title"].Value;
             }
         }
-        }
         @if (brandItem != null)
         {
             <h5><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(brandItem))">@brandTitle.ToUpper()</a></h5>

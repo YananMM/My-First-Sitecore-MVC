@@ -524,6 +524,14 @@ $(document).ready(function() {
    * Home
    **********************************************************************************************************/
   $('.t1').each(function(){
+    
+    // If footer content's height is greater than device height
+    if ($(window).height() < $('.site-footer').height()) {
+      var gdFooterLinks = $('.site-footer .footer-nav');
+      $('.panel-layout').append('<section class="panel-area" style="background-color: #333333;"><div class="site-footer"></div></div>');
+      $('.panel-layout .panel-area:last-child .site-footer').append(gdFooterLinks);
+    }
+    
     var $layout = $('.panel-layout'),
       $panelNav = $('.panel-nav'),
       currentSlide = 0,
@@ -776,6 +784,7 @@ $(document).ready(function() {
       $(window)
         .on('resize', handelPanelLayout);
     }
+
   });
 
   /**********************************************************************************************************

@@ -28,7 +28,8 @@
                                 <ul class="sub-sub-menu">
                                     @foreach (Item itemcategory in shoppingHelper.GetCategoryItems(ItemGuids.ShoppingItem))
                                     {
-                                        <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(itemcategory))">@itemcategory["Page Title"].ToUpper()</a></li>
+                                        
+                                        <li><a href="@shoppingHelper.GetCategoryPageUrl(itemcategory)">@itemcategory["Page Title"].ToUpper()</a></li>
                                     }
                                 </ul>
                             </li>
@@ -74,6 +75,11 @@
                                             <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(bybrands))">@itemcategory["Page Title"].ToUpper()</a></li>
                                         }
                                     }
+                                    <li>
+                        <a href="@LandmarkHelper.GetItemUrl(item)">
+                            @Html.Sitecore().Field("Glossary Value", Sitecore.Context.Database.GetItem(ItemGuids.SeeAllRestaurantItem))<span class="icomoon-chevron-small-right"></span>
+                        </a>
+                                    </li>
                                 </ul>
                             </li>
                             
