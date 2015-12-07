@@ -132,7 +132,6 @@
             @if (allByBrandsPageID != currentItem.ID.ToString() && allByBuildingsPageID != currentItem.ID.ToString() && currentItem.ID.ToString() != ItemGuids.DiningAllByBrandPage && currentItem.ID.ToString() != ItemGuids.DiningAllByBuildingPage)
             {
                 <h3>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeAlsoGuidItem))</h3>
-                <h2>@currentItem.ID.ToString()</h2>
                 <ul>
                     @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T13RelatedCategoryViewGuid)
                 </ul>
