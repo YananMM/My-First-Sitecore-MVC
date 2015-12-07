@@ -1,7 +1,9 @@
-﻿@using Landmark.Classes
+﻿@using System.Globalization
+@using Landmark.Classes
 @using Landmark.Helper
 @using Sitecore.Configuration
 @using Sitecore.Data.Items
+@using Sitecore.Mvc.Extensions
 @{
     var images = Sitecore.Context.Database.GetItem(ItemGuids.InstagramFolder).Children;
 }
@@ -20,8 +22,9 @@
                         <div class="instagram-text hidden-xs  hidden-sm">
                             <img data-src="@LandmarkHelper.ImageFieldSrc("Profile Picture",image)" class="instagram-user lazy-loaded">
                             <div class="instagram-info">
-                                <h5>@Html.Sitecore().Field("User",image)</h5>
-                                @Html.Sitecore().Field("Publish Time",image)
+                                <h5>@Html.Sitecore().Field("User", image)</h5>
+                                 @image.Fields["Publish Time"].Value
+                                
                             </div>
                         </div>
                     </a>

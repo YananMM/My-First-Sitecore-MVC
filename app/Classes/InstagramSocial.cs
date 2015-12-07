@@ -1,6 +1,7 @@
 ﻿using System;
 using System.CodeDom;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -256,7 +257,7 @@ namespace Landmark.Classes
                         newItem.Fields["User"].Value = socialImage.User;
                         newItem.Fields["Caption"].Value = socialImage.Caption;
                         //newItem.Fields["Profile Picture"].Value = socialImage.ProfilePicture;
-                        newItem.Fields["Publish Time"].Value = Sitecore.DateUtil.ToIsoDate(socialImage.PublishTime);
+                        newItem.Fields["Publish Time"].Value = socialImage.PublishTime.ToString("d/MM/yyyy hh:mm:ss tt", DateTimeFormatInfo.InvariantInfo);
                         if (!string.IsNullOrEmpty(socialImage.Link))
                         {
                             ((LinkField)newItem.Fields["Url"]).Url = socialImage.Link;
@@ -280,7 +281,8 @@ namespace Landmark.Classes
                                     langItem.Fields[fld.Name].Value = fld.Value;
                                 }
                             }
-                            Sitecore.Publishing.Pipelines.PublishItem.PublishItemPipeline.Run(
+                        }
+                        Sitecore.Publishing.Pipelines.PublishItem.PublishItemPipeline.Run(
                             langItem.ID,
                             new PublishOptions(
                                 _masterDb,
@@ -289,7 +291,6 @@ namespace Landmark.Classes
                                 language,
                                 DateTime.Now
                                 ));
-                        }
                     }
                     postsAdded++;
                 }
