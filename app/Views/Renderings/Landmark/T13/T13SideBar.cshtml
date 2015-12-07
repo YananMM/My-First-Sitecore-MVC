@@ -59,16 +59,16 @@
                 @for (int i = 0; i < alphabetsStrings.Length; i++)
                 {
                     if (shoppingHelper.checkBrandStatus(brandModels, alphabetsStrings[i]))
-                        {
-                            string href = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(currentItem.Parent)) + "/by-brands#" + alphabetsStrings[i].ToLower();
-                            <li><a href="@href">@alphabetsStrings[i].ToUpper()</a></li>
-                        }
-                        else
-                        {
-                            <li class="disabled">@alphabetsStrings[i].ToUpper()</li>
-                        }
+                    {
+                        string href = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(currentItem.Parent)) + "/by-brands#" + alphabetsStrings[i].ToLower();
+                        <li><a href="@href">@alphabetsStrings[i].ToUpper()</a></li>
+                    }
+                    else
+                    {
+                        <li class="disabled">@alphabetsStrings[i].ToUpper()</li>
+                    }
                 }
-                
+
             </ul>
             <h3>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.ByBuidingsGuidItem))</h3>
             <ul class="brands-gap">
@@ -98,7 +98,7 @@
 
                             <option value="@item.value" @if (category == item.DisplayName) { <text>
                                     selected="selected"
-                                    </text>                         }>
+                                    </text>                          }>
                                 @item.text.ToUpper()
                             </option>
                         }
@@ -117,7 +117,7 @@
                                 {
                                     <option value="@item.value" @if (subpage == item.DisplayName) { <text>
                                             selected="selected"
-                                            </text>             }>
+                                            </text>              }>
                                         @item.text.ToUpper()
                                     </option>
                                 }
@@ -129,9 +129,10 @@
                     <button type="submit" class="btn btn-default">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.GoGuidItem))</button>
                 </div>
             </form>
-            @if (allByBrandsPageID != currentItem.ID.ToString() && allByBuildingsPageID != currentItem.ID.ToString())
+            @if (allByBrandsPageID != currentItem.ID.ToString() && allByBuildingsPageID != currentItem.ID.ToString() && currentItem.ID.ToString() != ItemGuids.DiningAllByBrandPage && currentItem.ID.ToString() != ItemGuids.DiningAllByBuildingPage)
             {
-                <h3>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.SeeAlsoGuidItem))</h3>
+                <h3>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.SeeAlsoGuidItem))</h3>
+                <h2>@currentItem.ID.ToString()</h2>
                 <ul>
                     @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.T13RelatedCategoryViewGuid)
                 </ul>

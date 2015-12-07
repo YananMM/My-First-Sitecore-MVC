@@ -39,6 +39,7 @@ namespace Landmark.Classes
         public static readonly String ShoppingCategoryObject = "{753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}";
         public static readonly String AllByBrandsPage = "{670F29E6-B282-4234-B139-E8F74AD95295}";
         public static readonly String DiningAllByBrandPage = "{2A670EF7-757F-4FCB-89A6-973DA8AE7DBF}";
+        public static readonly String DiningAllByBuildingPage = "{A53B1FFE-2C09-44B2-AF1A-EEBAD0DA69F9}";
         public static readonly String AllByBuildingsPage = "{3FAF2834-AF45-4CD7-BF22-6EEBCA0894C1}";
         public static readonly String ShoppingSubCategoryPageObject = "{11D18D8C-A8E3-4A15-A295-DAE23894A0AE}";
         public static readonly String CategoryObjectTemplate = "{753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}";

@@ -295,13 +295,16 @@ namespace Landmark.Helper
                 }
             }
 
-            var relatedCategories = currentTag.Fields["Related Tags"].ToString();
-            if (!string.IsNullOrEmpty(relatedCategories))
+            var relatedCategories = currentTag.Fields["Related Tags"];
+            if (relatedCategories != null)
             {
-                relatedCategoriesIDs = relatedCategories.Split('|').ToList();
-                if (relatedCategoriesIDs.Count > 3)
+                if (!string.IsNullOrEmpty(relatedCategories.ToString()))
                 {
-                    relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
+                    relatedCategoriesIDs = relatedCategories.ToString().Split('|').ToList();
+                    if (relatedCategoriesIDs.Count > 3)
+                    {
+                        relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
+                    }
                 }
             }
             return relatedCategoriesIDs;
@@ -704,7 +707,6 @@ namespace Landmark.Helper
 
             return randomArticles;
         }
-
 
     }
 }
