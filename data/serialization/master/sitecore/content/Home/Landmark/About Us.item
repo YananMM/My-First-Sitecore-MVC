@@ -47,7 +47,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 77401134-4170-4fba-892d-5350b2ae1816
+revision: 8058c4fc-e183-4e21-87a7-ee083ef9e80e
 
 ----field----
 field: {21B45344-DBEB-439F-B9B4-FADCD4757389}
@@ -71,6 +71,13 @@ key: getting here text
 content-length: 12
 
 GETTING HERE
+----field----
+field: {0FFA1C42-ECA6-47FE-88CD-0E6E908CDE8D}
+name: Getting Here Url
+key: getting here url
+content-length: 141
+
+<link text="GETTING HERE" linktype="internal" class="" title="" target='Custom' querystring="" id="{C4B0C207-D66A-4E2F-9469-6B8FF62A4CB1}" />
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
 name: Content Title
@@ -154,14 +161,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-77401134-4170-4fba-892d-5350b2ae1816
+8058c4fc-e183-4e21-87a7-ee083ef9e80e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 16
+content-length: 35
 
-20151207T022359Z
+20151207T080357:635850722379643512Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

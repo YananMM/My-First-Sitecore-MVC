@@ -128,7 +128,7 @@
                 </div>
             </form>
 
-            @if (allByBrandsPageID != currentItem.ID.ToString() && allByBuildingsPageID != currentItem.ID.ToString())
+            @if (allByBrandsPageID != currentItem.ID.ToString() && allByBuildingsPageID != currentItem.ID.ToString() && currentItem.ID.ToString() != ItemGuids.DiningAllByBrandPage && currentItem.ID.ToString() != ItemGuids.DiningAllByBuildingPage)
             {
                 <h3>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.SeeAlsoGuidItem))</h3>
                 <ul>

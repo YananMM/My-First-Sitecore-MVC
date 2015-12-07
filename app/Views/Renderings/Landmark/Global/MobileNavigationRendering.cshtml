@@ -14,7 +14,8 @@
     @foreach (Item item in LandmarkHelper.GetChildrenPageInNavigation(Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkHomeItem)))
     {
 
-        <li><a href="#">@item.Fields["Page Title"].Value.ToUpper()<span class="sprite-icon-down pull-right"></span></a>
+        <li>
+            <a href="#">@item.Fields["Page Title"].Value.ToUpper()<span class="sprite-icon-down pull-right"></span></a>
             @if (LandmarkHelper.GetChildrenPageInNavigation(item).Count > 0)
             {
                 if (item.ID.ToString().Equals(ItemGuids.ShoppingItem) || item.ID.ToString().Equals(ItemGuids.DiningItem))
@@ -24,48 +25,52 @@
                         <ul class="sub-menu">
                             <li>
                                 <a href="#">
-                                    @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ByCategoryGuidItem))<span class="sprite-icon-down pull-right"></span></a>
+                                    @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.ByCategoryGuidItem))<span class="sprite-icon-down pull-right"></span>
+                                </a>
                                 <ul class="sub-sub-menu">
                                     @foreach (Item itemcategory in shoppingHelper.GetCategoryItems(ItemGuids.ShoppingItem))
                                     {
-                                        
+
                                         <li><a href="@shoppingHelper.GetCategoryPageUrl(itemcategory)">@itemcategory["Page Title"].ToUpper()</a></li>
                                     }
                                 </ul>
                             </li>
 
 
-                        <li>
-                            <a href="#">
-                                @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ByBrandsGuidItem))<span class="sprite-icon-down pull-right"></span></a>
-                            <ul class="sub-sub-menu menu-brands">
-                                @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.ByBrandsRenderingViewGuid)
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">
-                                @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ByBuidingsGuidItem))<span class="sprite-icon-down pull-right"></span></a>
-                            @{
-                                List<Item> buidings = LandmarkHelper.GetBuildings();
-                                Item allByBuildings = Sitecore.Context.Database.GetItem(ItemGuids.AllByBuildingsPage);
-                            }
-                            <ul class="sub-sub-menu">
-                                @foreach (Item building in buidings)
-                                {
-                                    string href = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(allByBuildings)) + "#" + building.DisplayName.ToLower().Replace(" ","");
-                                    <li><a href="@href">@building.Fields["Building Title"].Value</a></li>
+                            <li>
+                                <a href="#">
+                                    @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.ByBrandsGuidItem))<span class="sprite-icon-down pull-right"></span>
+                                </a>
+                                <ul class="sub-sub-menu menu-brands">
+                                    @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.ByBrandsRenderingViewGuid)
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.ByBuidingsGuidItem))<span class="sprite-icon-down pull-right"></span>
+                                </a>
+                                @{
+                                    List<Item> buidings = LandmarkHelper.GetBuildings();
+                                    Item allByBuildings = Sitecore.Context.Database.GetItem(ItemGuids.AllByBuildingsPage);
                                 }
-                            </ul>
-                        </li>
-                            
-                    </ul>
+                                <ul class="sub-sub-menu menu-buildings">
+                                    @foreach (Item building in buidings)
+                                    {
+                                        string href = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(allByBuildings)) + "#" + building.DisplayName.ToLower().Replace(" ", "");
+                                        <li><a href="@href">@building.Fields["Building Title"].Value</a></li>
+                                    }
+                                </ul>
+                            </li>
+
+                        </ul>
                     }
                     if (item.ID.ToString().Equals(ItemGuids.DiningItem))
                     {
                         <ul class="sub-menu">
                             <li>
                                 <a href="#">
-                                    @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ByCategoryGuidItem))<span class="sprite-icon-down pull-right"></span></a>
+                                    @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.ByCategoryGuidItem))<span class="sprite-icon-down pull-right"></span>
+                                </a>
                                 <ul class="sub-sub-menu">
                                     @foreach (Item itemcategory in shoppingHelper.GetCategoryItems(ItemGuids.DiningItem))
                                     {
@@ -77,7 +82,7 @@
                                     }
                                     <li>
                                         @{
-                                            Item allbybrands = Sitecore.Context.Database.GetItem(ItemGuids.DiningItem).Children.Where(i => i.DisplayName == "By Brands").FirstOrDefault();
+                        Item allbybrands = Sitecore.Context.Database.GetItem(ItemGuids.DiningItem).Children.Where(i => i.DisplayName == "By Brands").FirstOrDefault();
                                         }
                                         <a href="@LandmarkHelper.GetItemUrl(allbybrands)">
                                             @Html.Sitecore().Field("Glossary Value", Sitecore.Context.Database.GetItem(ItemGuids.SeeAllRestaurantItem))<span class="icomoon-chevron-small-right"></span>
@@ -85,10 +90,10 @@
                                     </li>
                                 </ul>
                             </li>
-                            
-                    </ul>
+
+                        </ul>
                     }
-                    
+
                 }
                 else
                 {
@@ -102,10 +107,10 @@
                             if (LandmarkHelper.GetChildrenPageInNavigation(item).Count > 5)
                             {
                                 <li>
-                        <a href="@LandmarkHelper.GetItemUrl(item)">
-                            @Html.Sitecore().Field("Glossary Value", Sitecore.Context.Database.GetItem(ItemGuids.SeeAllItem))<span class="icomoon-chevron-small-right"></span>
-                        </a>
-                                    </li>
+                                    <a href="@LandmarkHelper.GetItemUrl(item)">
+                                        @Html.Sitecore().Field("Glossary Value", Sitecore.Context.Database.GetItem(ItemGuids.SeeAllItem))<span class="icomoon-chevron-small-right"></span>
+                                    </a>
+                                </li>
                             }
                         }
                         else
@@ -115,19 +120,17 @@
                                 <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(childItem))">@childItem["Page Title"].ToUpper()</a></li>
                             }
                         }
-                        
+
                     </ul>
                 }
-
             }
-
         </li>
     }
 </ul>
 
 <div class="mobile-share">
-    @Html.Sitecore().Field("Glossary Value",(Item) Factory.GetDatabase("web").GetItem(ItemGuids.ShareItem))
+    @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.ShareItem))
     <a href="" class="icomoon-facebook"></a>
-            <a href="" class="icomoon-twitter"></a>
-            <a href="" class="icomoon-sina-weibo"></a>
-        </div>
+    <a href="" class="icomoon-twitter"></a>
+    <a href="" class="icomoon-sina-weibo"></a>
+</div>

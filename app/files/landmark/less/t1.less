@@ -25,7 +25,21 @@
   }
   .back-top {
     background-color: @gray-darker;
+    .back-to-top {
+      display: block !important;
+      position: absolute;
+      @media (max-width: @screen-xs) {
+        bottom: -60px;
+      }
+    }
   }
+  .btn-default {
+  
+  &:focus, &:hover{
+    color: white;
+    border-color:white;
+  }
+}
 .slider-nav{
   position: absolute;
     width: 100%;
