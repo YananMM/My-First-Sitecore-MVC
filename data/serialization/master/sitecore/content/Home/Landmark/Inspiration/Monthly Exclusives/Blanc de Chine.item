@@ -163,13 +163,13 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 266a3bc4-5fa4-4d72-b861-465933e2d4e4
+revision: bbc0ed80-8608-45d4-8a5b-f9336dddcd60
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 18
+content-length: 17
 
 駱色夾棉圍巾
 (港幣2,800元)
@@ -200,18 +200,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-266a3bc4-5fa4-4d72-b861-465933e2d4e4
+bbc0ed80-8608-45d4-8a5b-f9336dddcd60
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T141944Z
+20151126T133355Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

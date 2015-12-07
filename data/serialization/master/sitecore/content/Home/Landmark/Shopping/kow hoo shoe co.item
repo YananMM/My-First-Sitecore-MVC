@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 38
+content-length: 155
 
-{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}
+{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}|{385A8E74-CC78-4C89-A66D-1021D757C01C}|{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{37DE7516-5325-4534-A035-A908D3D256D9}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-243
 ----version----
 language: en
 version: 1
-revision: f8316c9c-0920-4329-96e8-b056f766d741
+revision: d9bd037e-609e-4e34-8dae-95ddf2d23dee
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -78,12 +78,19 @@ content-length: 803
 
 <p>The Kow Hoo Shoe Company was established in Shanghai in 1928 and moved to Hong Kong in 1946. Today, Kow Hoo is the oldest bespoke shoe shop in the city and the only one still making wooden shoe lasts, handcrafted to the exact shape of each individual customer's feet. Each customer's shoe lasts stay on file for at least ten years so that customers can simply reorder additional pair by email. Kow Hoo has insisted in making handsewn welted shoe for few decades, and also tailor made special sizes for different customers.  As well as shipped quality footwear all over the world. Kow Hoo's Goodyear welted shoes come in a variety of leathers &ndash; customers can choose from standard German calfskin or goatskin to more exotic skins such as ostrich, shark, snake, lizard, alligator or crocodile.</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 16
+
+Kow Hoo Shoe Co.
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 20
+content-length: 0
 
-Kow,Hoo,Shoe,Company
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -116,16 +123,17 @@ Kow Hoo Shoe Co.
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 790
+content-length: 803
 
-The Kow Hoo Shoe Company was established in Shanghai in 1928 and moved to Hong Kong in 1946. Today, Kow Hoo is the oldest bespoke shoe shop in the city and the only one still making wooden shoe lasts, handcrafted to the exact shape of each individual customer's feet. Each customer's shoe lasts stay on file for at least ten years so that customers can simply reorder additional pair by email. Kow Hoo has insisted in making handsewn welted shoe for few decades, and also tailor made special sizes for different customers.  As well as shipped quality footwear all over the world. Kow Hoo's Goodyear welted shoes come in a variety of leathers – customers can choose from standard German calfskin or goatskin to more exotic skins such as ostrich, shark, snake, lizard, alligator or crocodile.
+<p>The Kow Hoo Shoe Company was established in Shanghai in 1928 and moved to Hong Kong in 1946. Today, Kow Hoo is the oldest bespoke shoe shop in the city and the only one still making wooden shoe lasts, handcrafted to the exact shape of each individual customer's feet. Each customer's shoe lasts stay on file for at least ten years so that customers can simply reorder additional pair by email. Kow Hoo has insisted in making handsewn welted shoe for few decades, and also tailor made special sizes for different customers.  As well as shipped quality footwear all over the world. Kow Hoo's Goodyear welted shoes come in a variety of leathers &ndash; customers can choose from standard German calfskin or goatskin to more exotic skins such as ostrich, shark, snake, lizard, alligator or crocodile.</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 49
+content-length: 61
 
-Mon- Sat & Public Holidays: 10am-7pm  Sun: Closed
+Mon- Sat &amp; Public Holidays: 10am-7pm <br>
+Sun: Closed<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -167,14 +175,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f8316c9c-0920-4329-96e8-b056f766d741
+d9bd037e-609e-4e34-8dae-95ddf2d23dee
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T132120Z
+20151127T050344Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -185,7 +193,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: d52c8b83-e101-47c4-ab54-c307ec2591e8
+revision: 9c2b6898-9f52-48de-a193-13996d6914bf
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -209,12 +217,19 @@ content-length: 256
 
 <p>高和皮鞋公司于1928年在上海创立，并于1946年迁至香港。高和不仅是香港最具历史的订制鞋店，更是唯一一家依然为每位客人量身订制木鞋楦，并且将之保存的鞋店。高和会把顾客的鞋楦和纪录保存最少十年，顾客如欲订购鞋履，只要简单地通过电子邮件订购即可。高和一直坚持全手工缝制，亦会为客人专业订制特殊尺寸皮鞋，制鞋工艺为遍布世界各地的顾客带来惊喜。其中Goodyear welted手缝皮鞋备有多种皮革供顾客选择，包括标准的德国小牛皮和羊皮，以及鸵鸟皮、鲨鱼皮、蛇皮、蜥蜴皮、短吻鳄和鳄鱼皮等制作的特色皮鞋。</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 6
+
+高和皮鞋公司
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 20
+content-length: 0
 
-Kow,Hoo,Shoe,Company
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -247,16 +262,17 @@ content-length: 6
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 249
+content-length: 256
 
-高和皮鞋公司于1928年在上海创立，并于1946年迁至香港。高和不仅是香港最具历史的订制鞋店，更是唯一一家依然为每位客人量身订制木鞋楦，并且将之保存的鞋店。高和会把顾客的鞋楦和纪录保存最少十年，顾客如欲订购鞋履，只要简单地通过电子邮件订购即可。高和一直坚持全手工缝制，亦会为客人专业订制特殊尺寸皮鞋，制鞋工艺为遍布世界各地的顾客带来惊喜。其中Goodyear welted手缝皮鞋备有多种皮革供顾客选择，包括标准的德国小牛皮和羊皮，以及鸵鸟皮、鲨鱼皮、蛇皮、蜥蜴皮、短吻鳄和鳄鱼皮等制作的特色皮鞋。
+<p>高和皮鞋公司于1928年在上海创立，并于1946年迁至香港。高和不仅是香港最具历史的订制鞋店，更是唯一一家依然为每位客人量身订制木鞋楦，并且将之保存的鞋店。高和会把顾客的鞋楦和纪录保存最少十年，顾客如欲订购鞋履，只要简单地通过电子邮件订购即可。高和一直坚持全手工缝制，亦会为客人专业订制特殊尺寸皮鞋，制鞋工艺为遍布世界各地的顾客带来惊喜。其中Goodyear welted手缝皮鞋备有多种皮革供顾客选择，包括标准的德国小牛皮和羊皮，以及鸵鸟皮、鲨鱼皮、蛇皮、蜥蜴皮、短吻鳄和鳄鱼皮等制作的特色皮鞋。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 30
+content-length: 38
 
-星期一至星期六及公众假期︰早上10时至晚上7时  星期日休息
+星期一至星期六及公众假期︰早上10时至晚上7时 <br>
+星期日休息<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -305,14 +321,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d52c8b83-e101-47c4-ab54-c307ec2591e8
+9c2b6898-9f52-48de-a193-13996d6914bf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T132131Z
+20151202T063342Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -323,7 +339,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: a5d63e2c-bf26-4b91-a787-addb31f4780c
+revision: 22a09e1a-fac1-4a53-b5c8-3741eefffe99
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -347,12 +363,19 @@ content-length: 252
 
 <p>高和皮鞋公司於1928年在上海創立，並於1946年遷到香港。高和不但是香港最具歷史的訂造鞋店，更是唯一一家依然為每位客人度身訂造木鞋楦，並且將之保留的鞋店。高和會把顧客的鞋楦和紀錄保留最少十年，顧客如欲訂購鞋履，只要簡單地透過電子郵件訂購即可。高和一直堅持全人手縫製，亦會為客人專業訂造特殊尺寸皮鞋，造鞋工藝為遍佈世界各地的顧客帶來驚喜。當中Goodyear welted手縫皮鞋備有多種皮革供顧客選擇，包括標準的德國小牛皮和羊皮，以及鴕鳥、鯊魚、蛇、蜥蜴、短吻鱷和鱷魚皮等製作的特色皮鞋。</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 6
+
+高和皮鞋公司
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 20
+content-length: 0
 
-Kow,Hoo,Shoe,Company
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -385,16 +408,17 @@ content-length: 6
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 245
+content-length: 252
 
-高和皮鞋公司於1928年在上海創立，並於1946年遷到香港。高和不但是香港最具歷史的訂造鞋店，更是唯一一家依然為每位客人度身訂造木鞋楦，並且將之保留的鞋店。高和會把顧客的鞋楦和紀錄保留最少十年，顧客如欲訂購鞋履，只要簡單地透過電子郵件訂購即可。高和一直堅持全人手縫製，亦會為客人專業訂造特殊尺寸皮鞋，造鞋工藝為遍佈世界各地的顧客帶來驚喜。當中Goodyear welted手縫皮鞋備有多種皮革供顧客選擇，包括標準的德國小牛皮和羊皮，以及鴕鳥、鯊魚、蛇、蜥蜴、短吻鱷和鱷魚皮等製作的特色皮鞋。
+<p>高和皮鞋公司於1928年在上海創立，並於1946年遷到香港。高和不但是香港最具歷史的訂造鞋店，更是唯一一家依然為每位客人度身訂造木鞋楦，並且將之保留的鞋店。高和會把顧客的鞋楦和紀錄保留最少十年，顧客如欲訂購鞋履，只要簡單地透過電子郵件訂購即可。高和一直堅持全人手縫製，亦會為客人專業訂造特殊尺寸皮鞋，造鞋工藝為遍佈世界各地的顧客帶來驚喜。當中Goodyear welted手縫皮鞋備有多種皮革供顧客選擇，包括標準的德國小牛皮和羊皮，以及鴕鳥、鯊魚、蛇、蜥蜴、短吻鱷和鱷魚皮等製作的特色皮鞋。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 30
+content-length: 39
 
-星期一至星期六及公眾假期︰早上10時至晚上7時  星期日休息
+星期一至星期六及公眾假期︰早上10時至晚上7時  <br>
+星期日休息<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -436,14 +460,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a5d63e2c-bf26-4b91-a787-addb31f4780c
+22a09e1a-fac1-4a53-b5c8-3741eefffe99
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T132141Z
+20151127T050336Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

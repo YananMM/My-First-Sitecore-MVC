@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 38
+content-length: 350
 
-{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}
+{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}|{385A8E74-CC78-4C89-A66D-1021D757C01C}|{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{8DEEBCDA-AC9C-4B0C-AF81-8E493D219713}|{37DE7516-5325-4534-A035-A908D3D256D9}|{584512EB-189E-4FEF-9280-3F893DD9A9E1}|{01E67855-9741-4C1C-9FCD-2432982120B6}|{1A1800EA-D40A-412C-970A-DBA534DC1F23}|{89884B9A-3DE7-47AD-BC7F-F2500B956EFD}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -43,7 +43,7 @@ name: LocationY
 key: locationy
 content-length: 5
 
-0.735
+0.415
 ----field----
 field: {3AEEB76E-6DA8-4ADC-AFA7-13BB46A57CC1}
 name: Svg Id
@@ -193,7 +193,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 82be92b8-0d36-48bc-942b-5d512658cc17
+revision: 1c818b8b-f87f-44c9-8432-dc02b3820471
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -321,14 +321,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-82be92b8-0d36-48bc-942b-5d512658cc17
+1c818b8b-f87f-44c9-8432-dc02b3820471
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151126T042426Z
+20151204T144313Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

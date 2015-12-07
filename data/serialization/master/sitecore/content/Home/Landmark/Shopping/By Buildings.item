@@ -101,7 +101,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: e393cd1d-a319-48fd-8a9c-2f6208b02601
+revision: eb7ee051-6ef1-4c55-b607-5583ed6c3476
 
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
@@ -131,6 +131,13 @@ key: social share description
 content-length: 43
 
 我们的购物指南显示置地广塲的四个不同大厦内所有时尚购物品牌。请即登入官方网站了解详情。
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 2
+
+位置
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -158,14 +165,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e393cd1d-a319-48fd-8a9c-2f6208b02601
+eb7ee051-6ef1-4c55-b607-5583ed6c3476
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T024407Z
+20151126T071001Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -176,7 +183,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: a9c47c1b-617c-42ff-8923-d93c14f14b15
+revision: eddec4f3-580c-410d-8b95-2546867df52c
 
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
@@ -207,6 +214,13 @@ content-length: 43
 
 我們的購物指南顯示置地廣塲的四個不同大廈內所有時尚購物品牌。請即登入官方網站了解詳情。
 ----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 2
+
+位置
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -233,14 +247,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a9c47c1b-617c-42ff-8923-d93c14f14b15
+eddec4f3-580c-410d-8b95-2546867df52c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T024429Z
+20151126T070957Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

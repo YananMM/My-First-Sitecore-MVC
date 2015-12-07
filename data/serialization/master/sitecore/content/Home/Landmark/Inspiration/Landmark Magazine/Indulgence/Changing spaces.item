@@ -15,7 +15,7 @@ name: Article Callout Image
 key: article callout image
 content-length: 58
 
-<image mediaid="{842EE704-1EEE-443E-8A64-7BCEFDF894F4}" />
+<image mediaid="{E1573CE1-4A30-45FF-942E-22E6437FE8A7}" />
 ----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Portrait Callout Image
@@ -41,9 +41,9 @@ Style A
 field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
 name: Tags
 key: tags
-content-length: 38
+content-length: 77
 
-{66F57747-C844-4DE6-A597-639C66044D3B}
+{66F57747-C844-4DE6-A597-639C66044D3B}|{9C462E8F-2C94-47DC-9B96-C7F51A1D058F}
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -68,7 +68,7 @@ content-length: 155
 ----version----
 language: en
 version: 1
-revision: 1b16838a-0748-483c-9cca-deae53cc6d26
+revision: 032434ef-dee4-4c88-a56d-c94d1c46b591
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -89,10 +89,37 @@ Words by Elizabeth Choppin
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
-content-length: 79
+content-length: 78
 
-Joyce Wang, Hong Kong’s new design wunderkind, 
-weighs in on redefining luxury
+Joyce Wang, Hong Kong’s new design wunderkind, weighs in on redefining luxury.
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 15
+
+Changing spaces
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 78
+
+Joyce Wang, Hong Kong’s new design wunderkind, weighs in on redefining luxury.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 15
+
+Changing spaces
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 78
+
+Joyce Wang, Hong Kong’s new design wunderkind, weighs in on redefining luxury.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -113,14 +140,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1b16838a-0748-483c-9cca-deae53cc6d26
+032434ef-dee4-4c88-a56d-c94d1c46b591
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T080151:635833441116155479Z
+20151126T140530Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -131,7 +158,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: ba0ade1c-1ec9-4ed4-98ef-2004a7031262
+revision: fecae838-4068-400c-a6b7-d39d165faf05
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -151,11 +178,38 @@ Words by Elizabeth Choppin
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
-content-length: 81
+content-length: 80
 
-Joyce Wang, Hong Kong’s new design wunderkind, 
-weighs in on redefining luxury
+Joyce Wang, Hong Kong’s new design wunderkind, weighs in on redefining luxury.
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 15
+
+Changing spaces
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 78
+
+Joyce Wang, Hong Kong’s new design wunderkind, weighs in on redefining luxury.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 15
+
+Changing spaces
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 78
+
+Joyce Wang, Hong Kong’s new design wunderkind, weighs in on redefining luxury.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -176,14 +230,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ba0ade1c-1ec9-4ed4-98ef-2004a7031262
+fecae838-4068-400c-a6b7-d39d165faf05
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151028T084407:635816186477936710Z
+20151125T051640Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -194,7 +248,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 9775c599-d4bb-4ab8-ba13-ccafca2215f3
+revision: 70647c2b-a076-404c-b5a2-cfd256bae64d
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -214,11 +268,37 @@ Words by Elizabeth Choppin
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
-content-length: 81
+content-length: 78
 
-Joyce Wang, Hong Kong’s new design wunderkind, 
-weighs in on redefining luxury
+Joyce Wang, Hong Kong’s new design wunderkind, weighs in on redefining luxury.
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 15
 
+Changing spaces
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 78
+
+Joyce Wang, Hong Kong’s new design wunderkind, weighs in on redefining luxury.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 15
+
+Changing spaces
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 78
+
+Joyce Wang, Hong Kong’s new design wunderkind, weighs in on redefining luxury.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -239,14 +319,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9775c599-d4bb-4ab8-ba13-ccafca2215f3
+70647c2b-a076-404c-b5a2-cfd256bae64d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T081019Z
+20151125T051651Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -19,8 +19,22 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: a367c517-2b20-403a-ac2d-23ab669cc0b8
+revision: f68d8d49-d4f1-47bf-9a96-c2e0fdf42faa
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 31
+
+Books, Newspapers and Magazines
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 31
+
+Books, Newspapers and Magazines
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -41,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a367c517-2b20-403a-ac2d-23ab669cc0b8
+f68d8d49-d4f1-47bf-9a96-c2e0fdf42faa
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150910T022122Z
+20151126T115325Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -59,8 +73,29 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: f5b4d975-6ea0-4214-87d2-90a6c29471e2
+revision: 6341fffc-3328-4ac8-be58-f95ea142cb75
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+书，报纸和杂誌
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+书，报纸和杂誌
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 2
+
+品牌
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -88,14 +123,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f5b4d975-6ea0-4214-87d2-90a6c29471e2
+6341fffc-3328-4ac8-be58-f95ea142cb75
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T121006Z
+20151201T094809Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -106,8 +141,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: de5aacd3-5240-4ac1-9271-c8064f38744e
+revision: 28e06e4e-4ccf-49ea-9e5f-8ace6150e1bc
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+書，報紙和雜誌
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+書，報紙和雜誌
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -135,14 +184,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-de5aacd3-5240-4ac1-9271-c8064f38744e
+28e06e4e-4ccf-49ea-9e5f-8ace6150e1bc
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T121014Z
+20151126T115350Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

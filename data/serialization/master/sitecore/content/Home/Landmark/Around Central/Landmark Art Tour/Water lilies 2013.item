@@ -29,7 +29,21 @@ name: Floor and Building
 key: floor and building
 content-length: 38
 
-{D27D3B22-EC13-4803-B7A3-B79C16BA5A08}
+{C9C5CE15-BBC3-4E18-9348-55E02C9C877B}
+----field----
+field: {69F11CBB-E43D-494F-B6DE-01317737B10A}
+name: LocationX
+key: locationx
+content-length: 6
+
+0.3843
+----field----
+field: {8FEE9C73-6C39-4E4B-BDCA-2E9B3F232612}
+name: LocationY
+key: locationy
+content-length: 6
+
+0.6220
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -40,8 +54,36 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: a8919710-a01d-4787-a62f-b30530dd011f
+revision: 4fb169e7-6fb3-4918-a1d6-97e1c074f406
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 30
+
+Art Piece - Water lilies, 2013
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 125
+
+LANDMARK presents fine arts and painting from world-class artists. Visit LANDMARK now and discover more about the art pieces.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 30
+
+Art Piece - Water lilies, 2013
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 125
+
+LANDMARK presents fine arts and painting from world-class artists. Visit LANDMARK now and discover more about the art pieces.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -81,12 +123,11 @@ Oil on canvas
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 1030
+content-length: 1073
 
-"Bo Yun, born Li Yong-cun, graduated from the China Central Academy of Fine Arts in Beijing and taught at the Academy of Arts & Design of Tsinghua University from 1981 to 2005. Now a freelance professional artist, Boyun was featured in the first and second Stars Art Exhibitions, and his works have been exhibited extensively in France, Japan, Germany, the United States, the Netherlands, Switzerland and Hong Kong.
-
-Boyun’s bold brushstrokes magnificently illustrate the breath-taking beauty of Heaven and Earth and vividly convey the spirit of life. His series of paintings exhibited in LANDMARK ALEXANDRA is dominated by blue and portrays Earth’s diverse landscapes. “Water-lilies” depicts morning on a hot summer’s day. It features a tranquil lake lined with luscious green willows, where the deep, crystal-clear water reflects cloudless blue skies above. Leaves sway lightly in the gentle breeze, and insects chirp softly as the lotuses bloom tenderly on the pond, adding a touch of vibrancy and liveliness to the scene."
-
+<p>Bo Yun, born Li Yong-cun, graduated from the China Central Academy of Fine Arts in Beijing and taught at the Academy of Arts &amp; Design of Tsinghua University from 1981 to 2005. Now a freelance professional artist, Boyun was featured in the first and second Stars Art Exhibitions, and his works have been exhibited extensively in France, Japan, Germany, the United States, the Netherlands, Switzerland and Hong Kong.<br>
+<br>
+Boyun&rsquo;s bold brushstrokes magnificently illustrate the breath-taking beauty of Heaven and Earth and vividly convey the spirit of life. His series of paintings exhibited in LANDMARK ALEXANDRA is dominated by blue and portrays Earth&rsquo;s diverse landscapes. &ldquo;Water-lilies&rdquo; depicts morning on a hot summer&rsquo;s day. It features a tranquil lake lined with luscious green willows, where the deep, crystal-clear water reflects cloudless blue skies above. Leaves sway lightly in the gentle breeze, and insects chirp softly as the lotuses bloom tenderly on the pond, adding a touch of vibrancy and liveliness to the scene.</p>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -100,14 +141,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a8919710-a01d-4787-a62f-b30530dd011f
+4fb169e7-6fb3-4918-a1d6-97e1c074f406
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T015149Z
+20151126T113222Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -118,8 +159,36 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 108e7c7f-4698-4ccb-bee3-fb0d4c0495f1
+revision: 87d52b39-2b55-43b8-b1fe-2b5febe26a52
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 17
+
+艺术品 - 荷塘清风 2013  
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 39
+
+置地广塲艺术画廊和艺术表现展出美丽的艺术品，艺术画廊是一个不容错过的绝佳展览。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 17
+
+艺术品 - 荷塘清风 2013  
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 39
+
+置地广塲艺术画廊和艺术表现展出美丽的艺术品，艺术画廊是一个不容错过的绝佳展览。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -159,12 +228,12 @@ content-length: 5
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 270
+content-length: 285
 
-"薄云，原名李永存，毕业于中央美术学院，并于1981年至2005年任教于清华美术学院，现为自由艺术家。薄云为中国第一及第二届星星美展参展艺术家，其后作品曾在法国、日本、德国、美国、荷兰、瑞士及香港等地展出。
-
-薄云善于运用磅礡的笔触表现宏伟的天与地，画作往往充满生命的灵气。置地历山的一组作品以蓝色为主题，呈现天地间各种风景。 《荷塘清风》带出一个炎炎夏日的早上，在一片宁静的湖畔，两旁的垂柳被阳光染上嫩绿的颜色。垂柳下的湖水清澈而深邃，蔚蓝的天空中没有一丝云彩，清风徐徐吹过，荷叶轻摇，虫鸣细响，荷塘里的荷花静静绽放，生气盎然。"
-
+<p>薄云，原名李永存，毕业于中央美术学院，并于1981年至2005年任教于清华美术学院，现为自由艺术家。薄云为中国第一及第二届星星美展参展艺术家，其后作品曾在法国、日本、德国、美国、荷兰、瑞士及香港等地展出。<br>
+<br>
+薄云善于运用磅礡的笔触表现宏伟的天与地，画作往往充满生命的灵气。置地历山的一组作品以蓝色为主题，呈现天地间各种风景。 《荷塘清风》带出一个炎炎夏日的早上，在一片宁静的湖畔，两旁的垂柳被阳光染上嫩绿的颜色。垂柳下的湖水清澈而深邃，蔚蓝的天空中没有一丝云彩，清风徐徐 吹过，荷叶轻摇，虫鸣细响，荷塘里的荷花静静绽放，生气盎然。</p>
+<br>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -178,14 +247,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-108e7c7f-4698-4ccb-bee3-fb0d4c0495f1
+87d52b39-2b55-43b8-b1fe-2b5febe26a52
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T035730Z
+20151126T114000Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -196,8 +265,36 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: c3f264c2-69b5-4fa5-9922-609db826fc5c
+revision: ef4d0f5f-625a-44d3-a16c-05348e1c2b58
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 17
+
+藝術品 - 荷塘清風 2013  
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+置地廣塲展出由世界級藝術家創作的美術品和繪畫。請即來臨置地廣塲欣賞更多藝術作品。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 17
+
+藝術品 - 荷塘清風 2013  
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 40
+
+置地廣塲展出由世界級藝術家創作的美術品和繪畫。請即來臨置地廣塲欣賞更多藝術作品。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -237,12 +334,12 @@ content-length: 4
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 269
+content-length: 283
 
-"薄雲，原名李永存，畢業於中央美術學院，並於1981年至2005年任教於清華美術學院，現為自由藝術家。薄雲為中國第一及第二屆星星美展參展藝術家，其後作品曾在法國、日本、德國、美國、荷蘭、瑞士及香港等地展出。
-
-薄雲善於運用磅礡的筆觸表現宏偉的天與地，畫作往往充滿生命的靈氣。置地歷山的一組作品以藍色為主題，呈現天地間各種風景。《荷塘清風》帶出一個炎炎夏日的早上，在一片寧靜的湖畔，兩旁的垂柳被陽光染上嫩綠的顏色。垂柳下的湖水清澈而深邃，蔚藍的天空中沒有一絲雲彩，清風徐徐吹過，荷葉輕搖，蟲鳴細響，荷塘裡的荷花靜靜綻放，生氣盎然。"
-
+<p>薄雲，原名李永存，畢業於中央美術學院，並於1981年至2005年任教於清華美術學院，現為自由藝術家。薄雲為中國第一及第二屆星星美展參展藝術家，其後作品曾在法國、日本、德國、美國、荷蘭、瑞士及香港等地展出。<br>
+<br>
+薄雲善於運用磅礡的筆觸表現宏偉的天與地，畫作往往充滿生命的靈氣。置地歷山的一組作品以藍色為主題，呈現天地間各種風景。《荷塘清風》帶出一個炎炎夏日的早上，在一片寧靜的湖畔，兩旁的垂柳被陽光染上嫩綠的顏色。垂柳下的湖水清澈而深邃，蔚藍的天空中沒有一絲雲彩，清風徐徐吹過，荷葉輕搖，蟲鳴細響，荷塘裡的荷花靜靜綻放，生氣盎然。</p>
+<br>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -256,14 +353,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c3f264c2-69b5-4fa5-9922-609db826fc5c
+ef4d0f5f-625a-44d3-a16c-05348e1c2b58
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T035735Z
+20151126T113836Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

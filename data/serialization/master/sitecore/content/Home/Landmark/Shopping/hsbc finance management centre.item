@@ -38,6 +38,13 @@ content-length: 38
 
 {A8B038A4-45C9-4690-A418-2712B2650DEC}
 ----field----
+field: {3534AD05-BF49-4763-822B-25D97D9F7283}
+name: Floor
+key: floor
+content-length: 38
+
+{1363D861-B152-4162-9005-82872E183741}
+----field----
 field: {8B055347-174E-4D86-8B2D-22ACFAB67D14}
 name: LocationX
 key: locationx
@@ -51,10 +58,17 @@ key: locationy
 content-length: 5
 
 0.389
+----field----
+field: {9135200A-5626-4DD8-AB9D-D665B8C11748}
+name: __Never publish
+key: __never publish
+content-length: 0
+
+
 ----version----
 language: en
 version: 1
-revision: 1b71422b-dc8f-453b-9b83-edd96a7c6563
+revision: a562bd75-353c-4f1d-b2cd-86ad851055ba
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -123,12 +137,13 @@ content-length: 23
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 71
+content-length: 80
 
 Mon-Thu 9am-4:30pm
 Fri 9am-5pm
+<br>
 Sat 9am-1pm
-Sun & Public Holidays Closed
+Sun &amp; Public Holidays Closed
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -143,6 +158,13 @@ key: address
 content-length: 38
 
 Shop 301-304, 3/F, One Exchange Square
+----field----
+field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
+name: Description
+key: description
+content-length: 16
+
+Banking Services
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -163,14 +185,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1b71422b-dc8f-453b-9b83-edd96a7c6563
+a562bd75-353c-4f1d-b2cd-86ad851055ba
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T141356Z
+20151127T090704Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -181,7 +203,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: d3b49deb-52a8-406c-8cb6-dc5da8df2596
+revision: 4c4b61cc-af88-4dd9-bde1-19722707f2e8
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -250,11 +272,14 @@ content-length: 11
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 54
+content-length: 69
 
 星期一至星期四 9am-4:30pm
+<br>
 星期五 9am-5pm
+<br>
 星期六 9am-1pm
+<br>
 星期日及公众假期 休息
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
@@ -270,6 +295,13 @@ key: address
 content-length: 24
 
 交易广塲第一座, 3/F, 301-304 号铺
+----field----
+field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
+name: Description
+key: description
+content-length: 4
+
+银行服务
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -297,14 +329,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d3b49deb-52a8-406c-8cb6-dc5da8df2596
+4c4b61cc-af88-4dd9-bde1-19722707f2e8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T141809Z
+20151127T041228Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -315,7 +347,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: a3469522-c66c-433d-8254-2df857e705c9
+revision: d82aa0b4-088b-42a5-8923-9f9503bd6d69
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -384,11 +416,14 @@ content-length: 11
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 54
+content-length: 69
 
 星期一至星期四 9am-4:30pm
+<br>
 星期五 9am-5pm
+<br>
 星期六 9am-1pm
+<br>
 星期日及公眾假期 休息
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
@@ -404,6 +439,13 @@ key: address
 content-length: 24
 
 交易廣塲第一座, 3/F, 301-304 號舖
+----field----
+field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
+name: Description
+key: description
+content-length: 4
+
+銀行服務
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -424,14 +466,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a3469522-c66c-433d-8254-2df857e705c9
+d82aa0b4-088b-42a5-8923-9f9503bd6d69
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T142003Z
+20151127T041209Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

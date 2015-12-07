@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 38
+content-length: 272
 
-{B597804A-C4D7-44FB-9FAC-490726EEB3D9}
+{B597804A-C4D7-44FB-9FAC-490726EEB3D9}|{385A8E74-CC78-4C89-A66D-1021D757C01C}|{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{584512EB-189E-4FEF-9280-3F893DD9A9E1}|{01E67855-9741-4C1C-9FCD-2432982120B6}|{1A1800EA-D40A-412C-970A-DBA534DC1F23}|{49DDDB30-ADFC-4B92-ACC4-A3B4A0DF9A63}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-G3
 ----version----
 language: en
 version: 1
-revision: a8db0870-d6db-4288-ba1c-f91364a47d0f
+revision: a46284d3-9ff8-4422-a1fd-dcfa0b35be84
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -74,25 +74,30 @@ The first couture house to introduce the concept of luxury prêt-à-porter.
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 628
+content-length: 638
 
-Founded in 1961, YVES SAINT LAURENT was the first couture house to introduce the concept of luxury prêt-à-porter in a 1966 collection called “Rive Gauche”, which was synonymous with youth and freedom. This shift represented a first critical step in the modernisation of fashion and revolutionised the socio-cultural landscape.  YVES SAINT LAURENT, under the creative direction of HEDI SLIMANE since March 2012, continues to position itself at the summit of the luxury universe. 
-Today, SAINT LAURENT collections include women’s and men’s ready-to-wear, shoes, handbags, small leather goods, jewelry, scarves, ties and eyewear. 
+<p>Founded in 1961, YVES SAINT LAURENT was the first couture house to introduce the concept of luxury prêt-à-porter in a 1966 collection called “Rive Gauche”, which was synonymous with youth and freedom. This shift represented a first critical step in the modernisation of fashion and revolutionised the socio-cultural landscape.  YVES SAINT LAURENT, under the creative direction of HEDI SLIMANE since March 2012, continues to position itself at the summit of the luxury universe. <br/>Today, SAINT LAURENT collections include women’s and men’s ready-to-wear, shoes, handbags, small leather goods, jewelry, scarves, ties and eyewear. </p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
 
+SAINT LAURENT
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 13
+content-length: 0
 
-Saint,Laurent
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 73
+content-length: 200
 
-The first couture house to introduce the concept of luxury prêt-à-porter.
+Founded in 1961, YVES SAINT LAURENT was the first couture house to introduce the concept of luxury prêt-à-porter in a 1966 collection called “Rive Gauche”, which was synonymous with youth and freedom.
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -104,9 +109,9 @@ SAINT LAURENT
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 73
+content-length: 200
 
-The first couture house to introduce the concept of luxury prêt-à-porter.
+Founded in 1961, YVES SAINT LAURENT was the first couture house to introduce the concept of luxury prêt-à-porter in a 1966 collection called “Rive Gauche”, which was synonymous with youth and freedom.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -127,9 +132,10 @@ Today, SAINT LAURENT collections include women’s and men’s ready-to-wear, sh
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 55
+content-length: 68
 
-Mon-Sat: 10:30am-8pm Sun & Public Holidays: 11am-7:30pm
+Mon-Sat: 10:30am-8pm <br>
+Sun &amp; Public Holidays: 11am-7:30pm<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -171,25 +177,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a8db0870-d6db-4288-ba1c-f91364a47d0f
+a46284d3-9ff8-4422-a1fd-dcfa0b35be84
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151627Z
+20151202T082629Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 68f57e1f-1101-4353-9b63-3a099d371a34
+revision: be8926a5-3cfa-4bfb-b044-8ec46f10c492
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -209,27 +215,33 @@ content-length: 34
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 240
+content-length: 268
 
-YVES SAINT LAURENT于1961年成立，是首个女装高级订制服品牌，于1966年以 ‘RIVE GAUCHE’ 系列演绎奢华READY-TO-WEAR的现代概念，标志着年轻活力及自由生活态度，全面改革社会文化面貌，也是时装现代化的里程碑。
+<p>YVES SAINT LAURENT於1961年成立，是首個女裝高級訂造服品牌，於1966年以 &rsquo;RIVE GAUCHE&rsquo; 系列演繹奢華READY-TO-WEAR的現代概念，標誌著年青活力及自由生活態度，全面改革社會文化面貌，也是時裝現代化的里程碑。<br>
+自2012年任命HEDI SLIMANE為藝術總監以来，YVES SAINT LAURENT一直矗立於世界奢華品領域之巔。<br>
+SAINT LAURENT現有系列包括男女裝成衣、鞋履、手袋、小型皮具、珠寶、絲巾、領帶及眼鏡。</p>
+<br>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
 
-自2012年任命HEDI SLIMANE为艺术总监以来，YVES SAINT LAURENT一直屹立于世界奢华品领域之巅。
-
-SAINT LAURENT现有产品系列包括男女装成衣、鞋履、手袋、小型皮具、珠宝、丝巾、领带及眼镜。
+SAINT LAURENT
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 13
+content-length: 0
 
-Saint,Laurent
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 34
+content-length: 126
 
-首个女装高级订制服品牌演绎奢华READY-TO-WEAR的现代概念。
+YVES SAINT LAURENT於1961年成立，是首個女裝高級訂造服品牌，於1966年以 ’RIVE GAUCHE’ 系列演繹奢華READY-TO-WEAR的現代概念，標誌著年青活力及自由生活態度，全面改革社會文化面貌，也是時裝現代化的里程碑。 
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -241,9 +253,9 @@ SAINT LAURENT
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 34
+content-length: 126
 
-首个女装高级订制服品牌演绎奢华READY-TO-WEAR的现代概念。
+YVES SAINT LAURENT於1961年成立，是首個女裝高級訂造服品牌，於1966年以 ’RIVE GAUCHE’ 系列演繹奢華READY-TO-WEAR的現代概念，標誌著年青活力及自由生活態度，全面改革社會文化面貌，也是時裝現代化的里程碑。 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -266,9 +278,10 @@ SAINT LAURENT现有产品系列包括男女装成衣、鞋履、手袋、小型�
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 45
+content-length: 54
 
-星期一至星期六︰早上10时30分至晚上8时  星期日及公众假期︰早上11时至晚上7时30分
+星期一至星期六︰早上10时30分至晚上8时  <br>
+星期日及公众假期︰早上11时至晚上7时30分<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -317,25 +330,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-68f57e1f-1101-4353-9b63-3a099d371a34
+be8926a5-3cfa-4bfb-b044-8ec46f10c492
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063953Z
+20151202T065845Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: af3ba294-d95f-48fc-9340-027bc5cc59dc
+revision: 65213abc-713c-4227-9eed-2ee6cf53480c
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -355,28 +368,33 @@ content-length: 34
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 239
+content-length: 268
 
-YVES SAINT LAURENT於1961年成立，是首個女裝高級訂造服品牌，於1966年以 ’RIVE GAUCHE’ 系列演繹奢華READY-TO-WEAR的現代概念，標誌著年青活力及自由生活態度，全面改革社會文化面貌，也是時裝現代化的里程碑。
+<p>YVES SAINT LAURENT於1961年成立，是首個女裝高級訂造服品牌，於1966年以 &rsquo;RIVE GAUCHE&rsquo; 系列演繹奢華READY-TO-WEAR的現代概念，標誌著年青活力及自由生活態度，全面改革社會文化面貌，也是時裝現代化的里程碑。<br>
+自2012年任命HEDI SLIMANE為藝術總監以来，YVES SAINT LAURENT一直矗立於世界奢華品領域之巔。<br>
+SAINT LAURENT現有系列包括男女裝成衣、鞋履、手袋、小型皮具、珠寶、絲巾、領帶及眼鏡。</p>
+<br>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
 
-自2012年任命HEDI SLIMANE為藝術總監以来，YVES SAINT LAURENT一直矗立於世界奢華品領域之巔。
-
-SAINT LAURENT現有系列包括男女裝成衣、鞋履、手袋、小型皮具、珠寶、絲巾、領帶及眼鏡。
-
+SAINT LAURENT
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 13
+content-length: 0
 
-Saint,Laurent
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 34
+content-length: 127
 
-首個女裝高級訂造服品牌演繹奢華READY-TO-WEAR的現代概念。
+YVES SAINT LAURENT於1961年成立，是首個女裝高級訂造服品牌，於1966年以 ’RIVE GAUCHE’ 系列演繹奢華READY-TO-WEAR的現代概念，標誌著年青活力及自由生活態度，全面改革社會文化面貌，也是時裝現代化的里程碑。  
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -388,9 +406,9 @@ SAINT LAURENT
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 34
+content-length: 127
 
-首個女裝高級訂造服品牌演繹奢華READY-TO-WEAR的現代概念。
+YVES SAINT LAURENT於1961年成立，是首個女裝高級訂造服品牌，於1966年以 ’RIVE GAUCHE’ 系列演繹奢華READY-TO-WEAR的現代概念，標誌著年青活力及自由生活態度，全面改革社會文化面貌，也是時裝現代化的里程碑。  
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -414,9 +432,10 @@ SAINT LAURENT現有系列包括男女裝成衣、鞋履、手袋、小型皮具�
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 45
+content-length: 54
 
-星期一至星期六︰早上10時30分至晚上8時  星期日及公眾假期︰早上11時至晚上7時30分
+星期一至星期六︰早上10時30分至晚上8時  <br>
+星期日及公眾假期︰早上11時至晚上7時30分<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -458,18 +477,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-af3ba294-d95f-48fc-9340-027bc5cc59dc
+65213abc-713c-4227-9eed-2ee6cf53480c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063953Z
+20151126T064945Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

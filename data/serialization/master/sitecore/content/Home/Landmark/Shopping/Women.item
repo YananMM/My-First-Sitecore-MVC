@@ -33,7 +33,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: c7c44e5b-675d-410c-96fa-bba59bc5480a
+revision: 65915da3-c28c-42b0-85ea-bb79acd68887
 
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
@@ -78,13 +78,6 @@ content-length: 5
 
 Women
 ----field----
-field: {5DC20848-7A25-43EF-9B55-5DA06D0E0791}
-name: Banner Link
-key: banner link
-content-length: 81
-
-<link linktype="external" url="http://www.baidu.com" anchor="" target="_blank" />
-----field----
 field: {EFCE68B8-9A68-4ECB-AB78-0C36EB48CA60}
 name: Related Exclusive Item
 key: related exclusive item
@@ -104,14 +97,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c7c44e5b-675d-410c-96fa-bba59bc5480a
+65915da3-c28c-42b0-85ea-bb79acd68887
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151203T064251Z
+20151201T025020Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -122,7 +115,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: c223a258-f040-42da-9426-a46170be0160
+revision: 61752f11-6ec7-417f-9c5d-a0d1db54a48b
 
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
@@ -194,14 +187,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c223a258-f040-42da-9426-a46170be0160
+61752f11-6ec7-417f-9c5d-a0d1db54a48b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T024652Z
+20151201T095139Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -212,7 +205,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 482c4a64-1405-4666-a763-6330992568ac
+revision: 6b4aa9c5-0d4b-4b25-af3a-513b8e334ebe
 
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
@@ -257,6 +250,13 @@ content-length: 2
 
 女士
 ----field----
+field: {5DC20848-7A25-43EF-9B55-5DA06D0E0791}
+name: Banner Link
+key: banner link
+content-length: 28
+
+<link linktype="internal" />
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -283,14 +283,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-482c4a64-1405-4666-a763-6330992568ac
+6b4aa9c5-0d4b-4b25-af3a-513b8e334ebe
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T024730Z
+20151204T062908Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

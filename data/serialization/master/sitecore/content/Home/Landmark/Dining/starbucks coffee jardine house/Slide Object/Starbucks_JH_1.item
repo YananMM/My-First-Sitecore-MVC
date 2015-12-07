@@ -16,6 +16,13 @@ key: slide image
 content-length: 65
 
 <image alt="" mediaid="{4E598FD2-536B-4207-B680-61E3244DD8EF}" />
+----field----
+field: {9135200A-5626-4DD8-AB9D-D665B8C11748}
+name: __Never publish
+key: __never publish
+content-length: 1
+
+1
 ----version----
 language: en
 version: 1
@@ -113,7 +120,7 @@ extranet\Anonymous
 ----version----
 language: zh-HK
 version: 1
-revision: 63f00523-7505-4bb6-8741-96e88dbcee8b
+revision: 074c121a-bda5-4ddb-8d69-371d2a910d48
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -142,18 +149,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-63f00523-7505-4bb6-8741-96e88dbcee8b
+074c121a-bda5-4ddb-8d69-371d2a910d48
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151103T090825Z
+20151202T085810Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

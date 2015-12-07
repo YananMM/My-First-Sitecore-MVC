@@ -10,6 +10,13 @@ template: {11D18D8C-A8E3-4A15-A295-DAE23894A0AE}
 templatekey: Shopping Sub Category Page Object
 
 ----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -26,8 +33,22 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 95ed805a-5b5d-4acf-bab8-399f7893b40e
+revision: 2e9d3467-b380-4040-a31e-9b54e6de605f
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 24
+
+Made to Measure for Men 
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 24
+
+Made to Measure for Men 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -48,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-95ed805a-5b5d-4acf-bab8-399f7893b40e
+2e9d3467-b380-4040-a31e-9b54e6de605f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150910T015927Z
+20151130T103510Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -66,8 +87,22 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: eaa7498f-20d2-441e-8c58-3076b0ed8875
+revision: 4259652a-8835-483a-b7cd-ce665cc48f97
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 6
+
+男士量身订造
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+男士量身订造 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -102,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-eaa7498f-20d2-441e-8c58-3076b0ed8875
+4259652a-8835-483a-b7cd-ce665cc48f97
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151112T083552Z
+20151126T112514Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -120,8 +155,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 5752db8f-74f6-4c9c-94b6-9499406a01df
+revision: 3bebb982-d06d-4474-bbb5-48500088d697
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 6
+
+男士度身訂造
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+男士度身訂造 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -156,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5752db8f-74f6-4c9c-94b6-9499406a01df
+3bebb982-d06d-4474-bbb5-48500088d697
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151112T083604Z
+20151126T112508Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

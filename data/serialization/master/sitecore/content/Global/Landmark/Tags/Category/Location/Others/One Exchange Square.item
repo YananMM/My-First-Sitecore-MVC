@@ -9,10 +9,17 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
 templatekey: Tag Object
 
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+500
 ----version----
 language: en
 version: 1
-revision: b951829f-c75a-4432-b264-3162022ff513
+revision: b2cd4ff2-291e-4473-a79b-efc9376b2e93
 
 ----field----
 field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b951829f-c75a-4432-b264-3162022ff513
+b2cd4ff2-291e-4473-a79b-efc9376b2e93
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151029T083128Z
+20151130T044750Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -9,10 +9,17 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {D3130DE9-ABC4-4D10-92C8-75A8E9910245}
 templatekey: T34 Special Offer Object
 
+----field----
+field: {869596C7-03FD-4BC8-A4FB-0DE04D0E7075}
+name: Offer Link Url
+key: offer link url
+content-length: 102
+
+<link linktype="external" url="http://www.mandarinoriental.com/landmark/" anchor="" target="_blank" />
 ----version----
 language: en
 version: 1
-revision: 7f73b1ca-1c99-4814-9320-97d506987cd1
+revision: 3d3f4657-674c-4231-bce9-fd7bccf51a1c
 
 ----field----
 field: {8CC749CB-7079-4C70-86DF-AED85DFF80B7}
@@ -62,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7f73b1ca-1c99-4814-9320-97d506987cd1
+3d3f4657-674c-4231-bce9-fd7bccf51a1c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T104755Z
+20151202T032106Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

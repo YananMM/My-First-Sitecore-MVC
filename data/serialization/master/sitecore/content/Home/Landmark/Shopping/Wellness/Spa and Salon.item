@@ -10,12 +10,19 @@ template: {11D18D8C-A8E3-4A15-A295-DAE23894A0AE}
 templatekey: Shopping Sub Category Page Object
 
 ----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-400
+175
 ----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
@@ -26,7 +33,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 1b2e259f-c22f-4f10-b104-dff99d594ef8
+revision: 1f94037f-4a14-47e9-aa66-b005219a11bb
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -48,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-1b2e259f-c22f-4f10-b104-dff99d594ef8
+1f94037f-4a14-47e9-aa66-b005219a11bb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150910T020848Z
+20151130T103619Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -66,7 +73,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 52f1257f-b21a-4ca5-b83e-9e2e897e5628
+revision: 6295ffb0-88ed-4375-b571-45666f2360e6
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -102,14 +109,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-52f1257f-b21a-4ca5-b83e-9e2e897e5628
+6295ffb0-88ed-4375-b571-45666f2360e6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151112T090801Z
+20151130T093059Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

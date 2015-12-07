@@ -10,6 +10,20 @@ template: {ADE0F061-FF28-4CDB-B6C3-14021D75355A}
 templatekey: T29 Page
 
 ----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {47986117-36CD-4645-9A9F-917AD5D02D0E}
 name: Artist
 key: artist
@@ -54,8 +68,36 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: 01a0b8e5-520a-441a-ba96-cf66b5e3b2a5
+revision: 652013b1-b438-4bca-8df0-4eea50769b43
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 34
+
+Art Piece - Oval with Points, 1968
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 125
+
+LANDMARK presents fine arts and painting from world-class artists. Visit LANDMARK now and discover more about the art pieces.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 34
+
+Art Piece - Oval with Points, 1968
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 125
+
+LANDMARK presents fine arts and painting from world-class artists. Visit LANDMARK now and discover more about the art pieces.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -83,7 +125,7 @@ name: Commentary
 key: commentary
 content-length: 247
 
-<file mediaid="{D9F9D288-5100-4ADE-9AC7-1437E701DA55}" src="~/media/d9f9d28851004ade9ac71437e701da55.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Henry Moore OM CH FBA 1898-1986/Oval with Points 1968/i_3010_henry_moore_eng" />
+<file mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Henry Moore OM CH FBA 1898-1986/Oval with Points 1968/i_3010_henry_moore_eng" mediaid="{D9F9D288-5100-4ADE-9AC7-1437E701DA55}" src="~/media/d9f9d28851004ade9ac71437e701da55.ashx" />
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -95,14 +137,13 @@ Bronze, Ed. 3/6
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 935
+content-length: 973
 
-"The British sculptor Henry Moore was one of the most influential public sculptors of the 20th century. He drew on studies of Classical, pre-Columbian and African art to create original and truly modern sculptural forms, usually in marble or cast bronze. Abstractions of organic shapes and the human body were his primary motifs. Many of his forms are abstractions of the human body; often pierced or containing hollow spaces.
-
-“Oval with Points” is one of a number Moore’s sculptures featuring points. Here, they reach out to meet each other but do not touch, creating both drama and dynamic tension. Rather than appearing as signs of aggression, the points flow naturally from the organic and voluptuous exterior forms. Some viewers suggest that the unevenly weighted holes above and below the points are metaphoric references to the division between a human head and torso.
-
-Hongkong Land acquired “Oval with Points” in 1974."
-
+The British sculptor Henry Moore was one of the most influential public sculptors of the 20th century. He drew on studies of Classical, pre-Columbian and African art to create original and truly modern sculptural forms, usually in marble or cast bronze. Abstractions of organic shapes and the human body were his primary motifs. Many of his forms are abstractions of the human body; often pierced or containing hollow spaces.<br>
+<br>
+&ldquo;Oval with Points&rdquo; is one of a number Moore&rsquo;s sculptures featuring points. Here, they reach out to meet each other but do not touch, creating both drama and dynamic tension. Rather than appearing as signs of aggression, the points flow naturally from the organic and voluptuous exterior forms. Some viewers suggest that the unevenly weighted holes above and below the points are metaphoric references to the division between a human head and torso.<br>
+<br>
+Hongkong Land acquired &ldquo;Oval with Points&rdquo; in 1974.
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -116,14 +157,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-01a0b8e5-520a-441a-ba96-cf66b5e3b2a5
+652013b1-b438-4bca-8df0-4eea50769b43
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T015150Z
+20151203T020806Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -134,8 +175,37 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: a93fc299-3436-4291-a28f-c04902ff2e63
+revision: 7dde9b46-bfea-4a26-a3bb-5fdadbb238dd
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 14
+
+艺术品 - 尖环, 1968
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+ 置地广塲艺术画廊和艺术表现展出美丽的艺术品，艺术画廊是一个不容错过的绝佳展览。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 14
+
+艺术品 - 尖环, 1968
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 41
+
+
+置地广塲艺术画廊和艺术表现展出美丽的艺术品，艺术画廊是一个不容错过的绝佳展览。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -175,14 +245,13 @@ content-length: 12
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 294
+content-length: 313
 
-"英国雕塑家亨利·摩尔是二十世纪其中一位极具影响力的公共雕塑家，深受古典、前哥伦布时期及非洲雕塑艺术的影响。他常以大理石和青铜作素材，其雕塑品充满创意和现代气息。摩尔主要以有机生物和人体的抽象形态为设计主题，其作品经常出现穿刺和孔洞,,当中不少是人体的抽象形态。
-
-「尖环」是摩尔多项呈现尖角的雕塑创作之一，当中伸出的尖角渴望互相触碰但却可望而不可及，因此营造出一种戏剧性的趣味和动感的张力。这些尖角并没有展现张牙舞爪的侵略意味，而像是从有机而丰满的外部形体自然流出，浑然天成。有人认为，尖角上下的孔洞大小不一，是代表头颅与躯干的分界。
-
-置地公司于一九七四年购入「尖环」。"
-
+英国雕塑家亨利&middot;摩尔是二十世纪其中一位极具影响力的公共雕塑家，深受古典、前哥伦布时期及非洲雕塑艺术的影响。他常以大理石和青铜作素材，其雕塑品充满创意和现代气息。摩尔主要以有机生物和人体的抽象形态为设计主题，其作品经常出现穿刺和孔洞,,当中不少是人体的抽象形态。<br>
+<br>
+「尖环」是摩尔多项呈现尖角的雕塑创作之一，当中伸出的尖角渴望互相触碰但却可望而不可及，因此营造出一种戏剧性的趣味和动感的张力。这些尖角并没有展现张牙舞爪的侵略意味，而像是从有机而丰满的外部形体自然流出，浑然天成。有人认为，尖角上下的孔洞大小不一，是代表头颅与躯干的分界。<br>
+<br>
+置地公司于一九七四年购入「尖环」。<br>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -196,14 +265,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a93fc299-3436-4291-a28f-c04902ff2e63
+7dde9b46-bfea-4a26-a3bb-5fdadbb238dd
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T041001Z
+20151203T020842Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -214,8 +283,36 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: fc36b584-2e33-4182-beae-45d082856d61
+revision: f16b99c0-e4aa-4052-92d3-12e4563815ed
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 14
+
+藝術品 - 尖環, 1968
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+置地廣塲展出由世界級藝術家創作的美術品和繪畫。請即來臨置地廣塲欣賞更多藝術作品。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 14
+
+藝術品 - 尖環, 1968
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 40
+
+置地廣塲展出由世界級藝術家創作的美術品和繪畫。請即來臨置地廣塲欣賞更多藝術作品。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -243,7 +340,7 @@ name: Commentary
 key: commentary
 content-length: 248
 
-<file mediaid="{40D9C27D-3D88-437C-8393-68141E952C82}" src="~/media/40d9c27d3d88437c839368141e952c82.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Henry Moore OM CH FBA 1898-1986/Oval with Points 1968/i_3010_henry_moore_cant" />
+<file mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Henry Moore OM CH FBA 1898-1986/Oval with Points 1968/i_3010_henry_moore_cant" mediaid="{40D9C27D-3D88-437C-8393-68141E952C82}" src="~/media/40d9c27d3d88437c839368141e952c82.ashx" />
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -255,14 +352,13 @@ content-length: 12
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 294
+content-length: 306
 
-"英國雕塑家亨利‧摩爾是二十世紀其中一位極具影響力的公共雕塑家，深受古典、前哥倫布時期及非洲雕塑藝術的影響。他常以大理石和青銅作素材，其雕塑品充滿創意和現代氣息。摩爾主要以有機生物和人體的抽象形態為設計主題，其作品經常出現穿刺和孔洞,,當中不少是人體的抽象形態。
-
-「尖環」是摩爾多項呈現尖角的雕塑創作之一，當中伸出的尖角渴望互相觸碰但卻可望而不可及，因此營造出一種戲劇性的趣味和動感的張力。這些尖角並沒有展現張牙舞爪的侵略意味，而像是從有機而豐滿的外部形體自然流出，渾然天成。有人認為，尖角上下的孔洞大小不一，是代表頭顱與軀幹的分界。
-
-置地公司於一九七四年購入「尖環」。"
-
+英國雕塑家亨利‧摩爾是二十世紀其中一位極具影響力的公共雕塑家，深受古典、前哥倫布時期及非洲雕塑藝術的影響。他常以大理石和青銅作素材，其雕塑品充滿創意和現代氣息。摩爾主要以有機生物和人體的抽象形態為設計主題，其作品經常出現穿刺和孔洞,,當中不少是人體的抽象形態。<br>
+<br>
+「尖環」是摩爾多項呈現尖角的雕塑創作之一，當中伸出的尖角渴望互相觸碰但卻可望而不可及，因此營造出一種戲劇性的趣味和動感的張力。這些尖角並沒有展現張牙舞爪的侵略意味，而像是從有機而豐滿的外部形體自然流出，渾然天成。有人認為，尖角上下的孔洞大小不一，是代表頭顱與軀幹的分界。<br>
+<br>
+置地公司於一九七四年購入「尖環」。<br>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -276,14 +372,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fc36b584-2e33-4182-beae-45d082856d61
+f16b99c0-e4aa-4052-92d3-12e4563815ed
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T040957Z
+20151203T020827Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -34,9 +34,9 @@ content-length: 0
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 38
+content-length: 116
 
-{C034122F-A68F-4E3C-827E-C1898533C08E}
+{C034122F-A68F-4E3C-827E-C1898533C08E}|{385A8E74-CC78-4C89-A66D-1021D757C01C}|{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -68,7 +68,7 @@ shop-106
 ----version----
 language: en
 version: 1
-revision: 055d0b25-c63f-41d9-bdbb-8e6b94c01013
+revision: 09ea86a8-a4a7-4339-b669-ae4b5e3f9278
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -92,12 +92,19 @@ content-length: 651
 
 <p>In 1926, Eric Kent and Dorothy Curwen established Kent &amp; Curwen in London. It began as a manufacturer of club, college and regimental ties but soon the collection grew to include cricket sweaters and rugby socks. By the 1950s, Kent &amp; Curwen had become of the largest tie suppliers in the UK. Sales of their cricket sweaters increased in the early 1970s, which led to the expansion of knitwear within the company. In the 1980s, the company moved into fashion retailing. The famous Three Lions trademark was registered during that period and today, Kent &amp; Curwen has evolved into a quintessentially British brand with a modern appeal.</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+Kent & Curwen
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 11
+content-length: 0
 
-Kent,Curwen
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -130,9 +137,9 @@ Kent & Curwen
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 632
+content-length: 651
 
-In 1926, Eric Kent and Dorothy Curwen established Kent & Curwen in London. It began as a manufacturer of club, college and regimental ties but soon the collection grew to include cricket sweaters and rugby socks. By the 1950s, Kent & Curwen had become of the largest tie suppliers in the UK. Sales of their cricket sweaters increased in the early 1970s, which led to the expansion of knitwear within the company. In the 1980s, the company moved into fashion retailing. The famous Three Lions trademark was registered during that period and today, Kent & Curwen has evolved into a quintessentially British brand with a modern appeal.
+<p>In 1926, Eric Kent and Dorothy Curwen established Kent &amp; Curwen in London. It began as a manufacturer of club, college and regimental ties but soon the collection grew to include cricket sweaters and rugby socks. By the 1950s, Kent &amp; Curwen had become of the largest tie suppliers in the UK. Sales of their cricket sweaters increased in the early 1970s, which led to the expansion of knitwear within the company. In the 1980s, the company moved into fashion retailing. The famous Three Lions trademark was registered during that period and today, Kent &amp; Curwen has evolved into a quintessentially British brand with a modern appeal.</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
@@ -181,14 +188,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-055d0b25-c63f-41d9-bdbb-8e6b94c01013
+09ea86a8-a4a7-4339-b669-ae4b5e3f9278
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T131830Z
+20151126T051140Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -199,7 +206,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 5ca28b3d-435c-47a9-8468-8a2f355e078e
+revision: 12a5c016-a820-4075-9a3c-9bc798d04d2a
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -223,12 +230,19 @@ content-length: 235
 
 <p>1926年，Eric Kent与Dorothy Curwen在伦敦创立了肯迪文，当时品牌为各名流俱乐部、国家精锐军队和牛津、剑桥这样的世界一流学府生产和供应领带。品牌业务后拓展至板球和橄榄球衣饰，至1950年代更成为英国最大的领带生产商之一。1970年代初，板球衣饰销量不断攀升，骄人的成绩令品牌成功建立了自己的针织王国。1980年代，肯迪文更把业务开拓至时装零售，由皇室授权的三狮标志也开始成为注册商标。时至今日，肯迪文已成为与时并进的时尚英伦服饰品牌。</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+肯迪文
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 11
+content-length: 0
 
-Kent,Curwen
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -261,9 +275,9 @@ content-length: 3
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 228
+content-length: 235
 
-1926年，Eric Kent与Dorothy Curwen在伦敦创立了肯迪文，当时品牌为各名流俱乐部、国家精锐军队和牛津、剑桥这样的世界一流学府生产和供应领带。品牌业务后拓展至板球和橄榄球衣饰，至1950年代更成为英国最大的领带生产商之一。1970年代初，板球衣饰销量不断攀升，骄人的成绩令品牌成功建立了自己的针织王国。1980年代，肯迪文更把业务开拓至时装零售，由皇室授权的三狮标志也开始成为注册商标。时至今日，肯迪文已成为与时并进的时尚英伦服饰品牌。
+<p>1926年，Eric Kent与Dorothy Curwen在伦敦创立了肯迪文，当时品牌为各名流俱乐部、国家精锐军队和牛津、剑桥这样的世界一流学府生产和供应领带。品牌业务后拓展至板球和橄榄球衣饰，至1950年代更成为英国最大的领带生产商之一。1970年代初，板球衣饰销量不断攀升，骄人的成绩令品牌成功建立了自己的针织王国。1980年代，肯迪文更把业务开拓至时装零售，由皇室授权的三狮标志也开始成为注册商标。时至今日，肯迪文已成为与时并进的时尚英伦服饰品牌。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
@@ -319,14 +333,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5ca28b3d-435c-47a9-8468-8a2f355e078e
+12a5c016-a820-4075-9a3c-9bc798d04d2a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T131841Z
+20151202T063301Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -337,7 +351,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 0760abd3-77f1-4c6b-a20d-a92fe3c4ef53
+revision: 31024767-007e-47c7-92f2-aed5ce8487a8
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -361,12 +375,19 @@ content-length: 235
 
 <p>1926年，Eric Kent與Dorothy Curwen在倫敦創立了肯迪文，當時品牌為各名流俱樂部、國家精銳軍隊和世界一流學府如牛津及劍橋生產和供應領帶。後來，品牌業務拓展至板球和橄欖球衣飾，至1950年代更成為英國最大的領帶生產商之一。1970年代初，板球衣飾銷量不斷攀升，驕人的成績令品牌成功建立了自己的針織王國。1980年代，肯迪文更把業務開拓至時裝零售，由皇室授權的三獅標誌也開始成為註冊商標。時至今日，肯迪文已成為與時並進的時尚英倫服飾品牌。</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+肯迪文
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 11
+content-length: 0
 
-Kent,Curwen
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -399,9 +420,9 @@ content-length: 3
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 228
+content-length: 235
 
-1926年，Eric Kent與Dorothy Curwen在倫敦創立了肯迪文，當時品牌為各名流俱樂部、國家精銳軍隊和世界一流學府如牛津及劍橋生產和供應領帶。後來，品牌業務拓展至板球和橄欖球衣飾，至1950年代更成為英國最大的領帶生產商之一。1970年代初，板球衣飾銷量不斷攀升，驕人的成績令品牌成功建立了自己的針織王國。1980年代，肯迪文更把業務開拓至時裝零售，由皇室授權的三獅標誌也開始成為註冊商標。時至今日，肯迪文已成為與時並進的時尚英倫服飾品牌。
+<p>1926年，Eric Kent與Dorothy Curwen在倫敦創立了肯迪文，當時品牌為各名流俱樂部、國家精銳軍隊和世界一流學府如牛津及劍橋生產和供應領帶。後來，品牌業務拓展至板球和橄欖球衣飾，至1950年代更成為英國最大的領帶生產商之一。1970年代初，板球衣飾銷量不斷攀升，驕人的成績令品牌成功建立了自己的針織王國。1980年代，肯迪文更把業務開拓至時裝零售，由皇室授權的三獅標誌也開始成為註冊商標。時至今日，肯迪文已成為與時並進的時尚英倫服飾品牌。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
@@ -450,14 +471,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0760abd3-77f1-4c6b-a20d-a92fe3c4ef53
+31024767-007e-47c7-92f2-aed5ce8487a8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T131902Z
+20151126T051053Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

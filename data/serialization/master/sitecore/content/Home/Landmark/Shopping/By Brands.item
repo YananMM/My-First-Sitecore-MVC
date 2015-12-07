@@ -101,7 +101,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 2f1c62b3-a760-4ba0-818a-c21091fceda9
+revision: 10ef3fe3-6376-419a-aaf2-50304d7a5f32
 
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
@@ -132,6 +132,13 @@ content-length: 35
 
 我们的购物指南显示置地广塲所有时尚购物品牌。请即登陆官方网站了解详情。
 ----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 2
+
+品牌
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -158,14 +165,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2f1c62b3-a760-4ba0-818a-c21091fceda9
+10ef3fe3-6376-419a-aaf2-50304d7a5f32
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T024350Z
+20151201T093854Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

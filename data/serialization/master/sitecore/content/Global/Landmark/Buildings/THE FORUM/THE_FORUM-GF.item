@@ -9,6 +9,18 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
 templatekey: Floor Object
 
+----version----
+language: en
+version: 1
+revision: c1ce1b78-28d0-4430-b455-9bab16b7f76c
+
+----field----
+field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
+name: Floor Title
+key: floor title
+content-length: 3
+
+G/F
 ----field----
 field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
 name: Floor Image
@@ -23,18 +35,6 @@ key: floor svg file
 content-length: 109
 
 <file mediaid="{3330FC59-8E9D-4C82-AEBA-579358EC40B4}" src="~/media/3330fc598e9d4c82aeba579358ec40b4.ashx" />
-----version----
-language: en
-version: 1
-revision: c1ce1b78-28d0-4430-b455-9bab16b7f76c
-
-----field----
-field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
-name: Floor Title
-key: floor title
-content-length: 3
-
-G/F
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

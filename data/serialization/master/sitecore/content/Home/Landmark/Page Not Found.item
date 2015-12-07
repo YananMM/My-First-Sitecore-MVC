@@ -26,7 +26,7 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: 837944b1-469e-4cab-a396-4eb1f89e1544
+revision: 20c1d384-b78e-4917-b03e-54427b14f359
 
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
@@ -46,10 +46,11 @@ Page Not Found
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 156
+content-length: 196
 
 <p>Sorry, your request is not available.</p>
 <p>We have the following suggestions as alternatives, or you may wish to search again with the above menu. </p>
+<a href="/en/">Back to homepage</a><br>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -63,14 +64,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-837944b1-469e-4cab-a396-4eb1f89e1544
+20c1d384-b78e-4917-b03e-54427b14f359
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151124T071514Z
+20151202T023123Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -81,7 +82,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 3ed87dfd-06db-4c60-b612-4737b835d1f8
+revision: eb255225-3716-4849-ae9d-45a44b08cf1c
 
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
@@ -101,11 +102,11 @@ content-length: 6
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 56
+content-length: 86
 
 <p>很抱歉，我们无法处理您的要求。</p>
 <p>您可参考以下意见作为选择，或经由上述选项重新搜索。</p>
-
+<p><a href="/sc/">返回首页</a></p>
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -133,14 +134,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3ed87dfd-06db-4c60-b612-4737b835d1f8
+eb255225-3716-4849-ae9d-45a44b08cf1c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151124T071458Z
+20151202T023228Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -151,7 +152,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: bdffc836-f06f-4314-a81d-f7a29b243353
+revision: 7fe1319c-2210-4366-900c-cdf0f353e219
 
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
@@ -171,10 +172,11 @@ content-length: 6
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 56
+content-length: 87
 
 <p>很抱歉，我們無法處理您的要求。</p>
 <p>您可參考以下意見作選擇，或經由以上選項重新搜索。</p>
+<p><a href="/tc/">返回首頁</a></p>
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -203,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bdffc836-f06f-4314-a81d-f7a29b243353
+7fe1319c-2210-4366-900c-cdf0f353e219
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151124T071507Z
+20151202T023147Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

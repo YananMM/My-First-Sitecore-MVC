@@ -15,7 +15,7 @@ name: Article Callout Image
 key: article callout image
 content-length: 58
 
-<image mediaid="{EFE03547-1983-45CD-A741-349C37603534}" />
+<image mediaid="{FBD7E160-9A9D-4849-B004-9A085D76076F}" />
 ----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Portrait Callout Image
@@ -48,9 +48,9 @@ Style A
 field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
 name: Tags
 key: tags
-content-length: 77
+content-length: 116
 
-{233C7FF3-CA0E-46DD-B48C-0B9302FB77B7}|{61A3BEF2-2E2E-42A2-8416-556502270BE7}
+{233C7FF3-CA0E-46DD-B48C-0B9302FB77B7}|{61A3BEF2-2E2E-42A2-8416-556502270BE7}|{8CBE1EA5-CE5A-4D15-AEFD-F65BC164C06B}
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -75,7 +75,7 @@ content-length: 155
 ----version----
 language: en
 version: 1
-revision: 9b4fef38-c702-4f62-8fc4-4b9830409530
+revision: 15ab8145-92f2-43b8-aa0f-ac06cdbc871f
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -88,6 +88,34 @@ Trending
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
+content-length: 92
+
+The autumn/winter 2015 Paris shows featured make-up looks to suit the whimsy of every woman.
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 9
+
+Trending 
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 92
+
+The autumn/winter 2015 Paris shows featured make-up looks to suit the whimsy of every woman.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 9
+
+Trending 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 92
 
 The autumn/winter 2015 Paris shows featured make-up looks to suit the whimsy of every woman.
@@ -111,14 +139,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9b4fef38-c702-4f62-8fc4-4b9830409530
+15ab8145-92f2-43b8-aa0f-ac06cdbc871f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151120T073544:635836017442490704Z
+20151126T140241Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -129,7 +157,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 3abcb69e-b3da-47a4-8a46-7ae13663d649
+revision: b7fbe527-5b20-4f03-89d8-d9d95dcee4d4
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -142,6 +170,34 @@ Trending
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
+content-length: 29
+
+2015年巴黎秋冬时装周上所见的妆容能满足任何女人的妙想。
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 9
+
+Trending 
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 29
+
+2015年巴黎秋冬时装周上所见的妆容能满足任何女人的妙想。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 9
+
+Trending 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 29
 
 2015年巴黎秋冬时装周上所见的妆容能满足任何女人的妙想。
@@ -165,14 +221,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3abcb69e-b3da-47a4-8a46-7ae13663d649
+b7fbe527-5b20-4f03-89d8-d9d95dcee4d4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T093040Z
+20151125T045718Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -183,7 +239,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 9b4bda0f-c566-4b27-bbcd-0773493fc2d9
+revision: 598a3ae0-a5ba-48ad-8e28-3b9f3ed26c9a
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -196,6 +252,34 @@ Trending
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
+content-length: 29
+
+2015年巴黎秋冬時裝週上所見的妝容能滿足任何女人的妙想。
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 9
+
+Trending 
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 29
+
+2015年巴黎秋冬時裝週上所見的妝容能滿足任何女人的妙想。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 9
+
+Trending 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 29
 
 2015年巴黎秋冬時裝週上所見的妝容能滿足任何女人的妙想。
@@ -219,14 +303,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9b4bda0f-c566-4b27-bbcd-0773493fc2d9
+598a3ae0-a5ba-48ad-8e28-3b9f3ed26c9a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T093137Z
+20151125T043546Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -54,7 +54,7 @@ shop-303-304
 ----version----
 language: en
 version: 1
-revision: 6ac90367-468b-4ac6-bed7-6c31fb3d284b
+revision: 97a3a443-4a33-486a-96fc-f64ba59edfd1
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -78,12 +78,19 @@ content-length: 541
 
 Kaloo is an enduring French brand with a history of passion, love and dreams. Inspired by a desire to offer little ones a soft and enchanting world that meets all their early needs in a healthy and safe way, Kaloo has been specialising in soft toys and bedding accessories for baby’s everyday needs for more than 17 years. The high quality and innovative style of each Kaloo creation, combined with the finest, warmed, softest and most delicate materials, have made Kaloo the leading destination when it comes to choosing baby’s first gift. 
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 5
 
 Kaloo
+----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -123,9 +130,10 @@ Kaloo is an enduring French brand with a history of passion, love and dreams. In
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 51
+content-length: 64
 
-Mon-Sat 10am-7:30pm  Sun & Public Holidays 10am-7pm
+Mon-Sat 10am-7:30pm  <br>
+Sun &amp; Public Holidays 10am-7pm<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -167,14 +175,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6ac90367-468b-4ac6-bed7-6c31fb3d284b
+97a3a443-4a33-486a-96fc-f64ba59edfd1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T050543Z
+20151127T050140Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -185,7 +193,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: ca95a3da-9abb-4244-94f4-3000fc93bd8e
+revision: 36a90803-b781-4915-bf9b-14a38d1b4e1d
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -205,10 +213,12 @@ content-length: 18
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 155
+content-length: 169
 
-<p>来自法国的Kaloo，将品牌所承传的热情、爱和梦想带到香港。为了给婴儿营造一个舒适漂亮的小天地，让他们健康地成长，Kaloo过去17年来一直专注于毛绒玩具和寝室用品，切合宝宝的日常需要。
+<p>来自法国的Kaloo，将品牌所承传的热情、爱和梦想带到香港。为了给婴儿营造一个舒适漂亮的小天地，让他们健康地成长，Kaloo过去17年来一直专注于毛绒玩具和寝室用品，切合宝宝的日常需要。<br>
+<br>
 Kaloo的高品质产品不但风格创新，而且选用优质、舒适及细致的质料制造，特别适合作为送给小宝贝的第一份礼物。</p>
+<br>
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
 name: Meta Title
@@ -263,9 +273,10 @@ Kaloo的高品质产品不但风格创新，而且选用优质、舒适及细致
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 42
+content-length: 50
 
-星期一至星期六︰早上10时至晚上7时30分  星期日及公众假期︰早上10时至晚上7时
+星期一至星期六︰早上10时至晚上7时30分 <br>
+星期日及公众假期︰早上10时至晚上7时<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -314,14 +325,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ca95a3da-9abb-4244-94f4-3000fc93bd8e
+36a90803-b781-4915-bf9b-14a38d1b4e1d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151126T045602Z
+20151127T090722Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -332,7 +343,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 12c5a5b8-b2f9-4b6a-a52f-fc4ee97ef41a
+revision: 6daf55b1-5ecc-4106-8a10-0e7da97e4235
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -352,10 +363,13 @@ content-length: 18
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 155
+content-length: 170
 
 <p>來自法國的Kaloo，將品牌所承傳的熱情、愛和夢想帶到香港。為了給嬰兒營造一個舒適漂亮的小天地，讓他們健康地成長，Kaloo過去17年來一直專注於毛絨玩具和寢室用品，切合寶寶的日常需要。
+<br>
+<br>
 Kaloo的高品質產品不但風格創新，而且選用優質、舒適及細緻的質料製造，特別適合作為送給小寶貝的第一份禮物。</p>
+<br>
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
 name: Meta Title
@@ -410,9 +424,10 @@ Kaloo的高品質產品不但風格創新，而且選用優質、舒適及細緻
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 42
+content-length: 49
 
-星期一至星期六︰早上10時至晚上7時30分  星期日及公眾假期︰早上10時至晚上7時
+星期一至星期六︰早上10時至晚上7時30分<br>
+星期日及公眾假期︰早上10時至晚上7時<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -454,14 +469,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-12c5a5b8-b2f9-4b6a-a52f-fc4ee97ef41a
+6daf55b1-5ecc-4106-8a10-0e7da97e4235
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151126T045545Z
+20151127T090713Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

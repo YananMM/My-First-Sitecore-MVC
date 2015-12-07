@@ -9,6 +9,18 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
 templatekey: Floor Object
 
+----version----
+language: en
+version: 1
+revision: 57e72443-597c-4b94-bc98-44093419ef87
+
+----field----
+field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
+name: Floor Title
+key: floor title
+content-length: 3
+
+2/F
 ----field----
 field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
 name: Floor Image
@@ -23,18 +35,6 @@ key: floor svg file
 content-length: 109
 
 <file mediaid="{A6769C2A-F02E-46F7-A400-983A8F1FEA2D}" src="~/media/a6769c2af02e46f7a400983a8f1fea2d.ashx" />
-----version----
-language: en
-version: 1
-revision: 57e72443-597c-4b94-bc98-44093419ef87
-
-----field----
-field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
-name: Floor Title
-key: floor title
-content-length: 3
-
-2/F
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -75,6 +75,20 @@ key: floor title
 content-length: 3
 
 2/F
+----field----
+field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
+name: Floor Image
+key: floor image
+content-length: 58
+
+<image mediaid="{F3DEC461-7E11-4492-8C79-310E967D10E6}" />
+----field----
+field: {49195981-001A-41D0-BE6E-78B60FD14964}
+name: Floor Svg File
+key: floor svg file
+content-length: 109
+
+<file mediaid="{A6769C2A-F02E-46F7-A400-983A8F1FEA2D}" src="~/media/a6769c2af02e46f7a400983a8f1fea2d.ashx" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -129,6 +143,20 @@ key: floor title
 content-length: 3
 
 2/F
+----field----
+field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
+name: Floor Image
+key: floor image
+content-length: 58
+
+<image mediaid="{F3DEC461-7E11-4492-8C79-310E967D10E6}" />
+----field----
+field: {49195981-001A-41D0-BE6E-78B60FD14964}
+name: Floor Svg File
+key: floor svg file
+content-length: 109
+
+<file mediaid="{A6769C2A-F02E-46F7-A400-983A8F1FEA2D}" src="~/media/a6769c2af02e46f7a400983a8f1fea2d.ashx" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner

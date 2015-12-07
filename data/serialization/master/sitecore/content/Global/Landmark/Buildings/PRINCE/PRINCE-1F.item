@@ -10,6 +10,25 @@ template: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
 templatekey: Floor Object
 
 ----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+400
+----version----
+language: en
+version: 1
+revision: 69294fb3-60a6-40d2-a53f-62415af23b31
+
+----field----
+field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
+name: Floor Title
+key: floor title
+content-length: 3
+
+1/F
+----field----
 field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
 name: Floor Image
 key: floor image
@@ -24,25 +43,6 @@ content-length: 109
 
 <file mediaid="{BA783723-D84C-400F-A95F-396396AD2A72}" src="~/media/ba783723d84c400fa95f396396ad2a72.ashx" />
 ----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 3
-
-200
-----version----
-language: en
-version: 1
-revision: 686cb59f-c1a5-4ec2-a3e3-b6951b930331
-
-----field----
-field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
-name: Floor Title
-key: floor title
-content-length: 3
-
-1/F
-----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-686cb59f-c1a5-4ec2-a3e3-b6951b930331
+69294fb3-60a6-40d2-a53f-62415af23b31
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151121T085325Z
+20151125T122128Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -82,6 +82,20 @@ key: floor title
 content-length: 3
 
 1/F
+----field----
+field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
+name: Floor Image
+key: floor image
+content-length: 58
+
+<image mediaid="{646E4342-99A5-4BE9-BF5D-E4F973CB4E2C}" />
+----field----
+field: {49195981-001A-41D0-BE6E-78B60FD14964}
+name: Floor Svg File
+key: floor svg file
+content-length: 109
+
+<file mediaid="{BA783723-D84C-400F-A95F-396396AD2A72}" src="~/media/ba783723d84c400fa95f396396ad2a72.ashx" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -136,6 +150,20 @@ key: floor title
 content-length: 3
 
 1/F
+----field----
+field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
+name: Floor Image
+key: floor image
+content-length: 58
+
+<image mediaid="{646E4342-99A5-4BE9-BF5D-E4F973CB4E2C}" />
+----field----
+field: {49195981-001A-41D0-BE6E-78B60FD14964}
+name: Floor Svg File
+key: floor svg file
+content-length: 109
+
+<file mediaid="{BA783723-D84C-400F-A95F-396396AD2A72}" src="~/media/ba783723d84c400fa95f396396ad2a72.ashx" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner

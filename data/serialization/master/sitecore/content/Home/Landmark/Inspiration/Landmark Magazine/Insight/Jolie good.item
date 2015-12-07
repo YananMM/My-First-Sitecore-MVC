@@ -15,7 +15,7 @@ name: Article Callout Image
 key: article callout image
 content-length: 58
 
-<image mediaid="{418E355A-8520-43C0-956D-C2D4B7C22299}" />
+<image mediaid="{92DAA2E8-7E9A-4F0D-9BE0-ACF6450F6E28}" />
 ----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Portrait Callout Image
@@ -41,9 +41,9 @@ Style A
 field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
 name: Tags
 key: tags
-content-length: 38
+content-length: 77
 
-{1816345B-9141-41D8-8ED0-776C768C5402}
+{1816345B-9141-41D8-8ED0-776C768C5402}|{63A24BBD-6863-4085-846D-54FAB9C86B80}
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -68,7 +68,7 @@ content-length: 155
 ----version----
 language: en
 version: 1
-revision: dd35eba6-ad25-4a21-a156-b7a47acf589b
+revision: 87dccb96-5919-48d5-be7e-40e7b5b5f286
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -81,14 +81,42 @@ Jolie good
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Subheadline
 key: article subheadline
-content-length: 88
+content-length: 80
 
-<p>Words by Jan Janssen</br> 
-Photography by Alexei Hay/Trunk Archive/Snapper Media</p>
+Words by Jan Janssen <br>
+Photography by Alexei Hay/Trunk Archive/Snapper Media
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
+content-length: 124
+
+Judged on her film career alone, few would argue that Oscar-winning actress Angelina Jolie is worthy of the epithet “icon”. 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 10
+
+Jolie good
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 124
+
+Judged on her film career alone, few would argue that Oscar-winning actress Angelina Jolie is worthy of the epithet “icon”. 
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 10
+
+Jolie good
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 124
 
 Judged on her film career alone, few would argue that Oscar-winning actress Angelina Jolie is worthy of the epithet “icon”. 
@@ -112,14 +140,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dd35eba6-ad25-4a21-a156-b7a47acf589b
+87dccb96-5919-48d5-be7e-40e7b5b5f286
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T080051:635833440515461122Z
+20151203T083306Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -127,10 +155,17 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
 ----version----
 language: zh-CN
 version: 1
-revision: a6bcb147-8b38-43b9-b191-0f30f1a069a0
+revision: 895c09d3-81d6-4b9b-b857-b7c61518636e
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -151,6 +186,34 @@ Photography by Alexei Hay/Trunk Archive/Snapper Media</p>
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
+content-length: 124
+
+Judged on her film career alone, few would argue that Oscar-winning actress Angelina Jolie is worthy of the epithet “icon”. 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 10
+
+Jolie good
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 124
+
+Judged on her film career alone, few would argue that Oscar-winning actress Angelina Jolie is worthy of the epithet “icon”. 
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 10
+
+Jolie good
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 124
 
 Judged on her film career alone, few would argue that Oscar-winning actress Angelina Jolie is worthy of the epithet “icon”. 
@@ -174,14 +237,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a6bcb147-8b38-43b9-b191-0f30f1a069a0
+895c09d3-81d6-4b9b-b857-b7c61518636e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T094350Z
+20151125T052950Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -192,7 +255,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 5b0cd0ad-c2fe-4c9e-bfa6-3ced1d3515d3
+revision: ce5873a8-198e-4864-8147-ca4fc23bc3fb
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -205,14 +268,42 @@ Jolie good
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Subheadline
 key: article subheadline
-content-length: 88
+content-length: 80
 
-<p>Words by Jan Janssen</br> 
-Photography by Alexei Hay/Trunk Archive/Snapper Media</p>
+Words by Jan Janssen <br>
+Photography by Alexei Hay/Trunk Archive/Snapper Media
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
+content-length: 124
+
+Judged on her film career alone, few would argue that Oscar-winning actress Angelina Jolie is worthy of the epithet “icon”. 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 10
+
+Jolie good
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 124
+
+Judged on her film career alone, few would argue that Oscar-winning actress Angelina Jolie is worthy of the epithet “icon”. 
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 10
+
+Jolie good
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 124
 
 Judged on her film career alone, few would argue that Oscar-winning actress Angelina Jolie is worthy of the epithet “icon”. 
@@ -236,14 +327,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5b0cd0ad-c2fe-4c9e-bfa6-3ced1d3515d3
+ce5873a8-198e-4864-8147-ca4fc23bc3fb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T094359Z
+20151203T083240Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -251,3 +342,10 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

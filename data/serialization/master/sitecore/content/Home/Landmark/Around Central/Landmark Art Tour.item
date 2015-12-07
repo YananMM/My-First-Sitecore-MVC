@@ -10,6 +10,13 @@ template: {A92609EF-A378-4AB3-AAE3-5521139A6CFA}
 templatekey: T20 Page
 
 ----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 1
+
+1
+----field----
 field: {B89F6E69-36D5-40AB-99E4-35B8A6FB6E0A}
 name: Cover Image
 key: cover image
@@ -26,7 +33,7 @@ content-length: 28
 ----version----
 language: en
 version: 1
-revision: 4f3b46a9-fda4-4860-8a11-4b233aa7324e
+revision: bed743b7-f95c-4114-b761-2aedd7978676
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
@@ -36,19 +43,40 @@ content-length: 26
 
 Experience on Your  Mobile
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 39
+
+Art Gallery and Performance in Central 
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 49
+content-length: 0
 
-Art Gallery and Performance in Central | LANDMARK
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 143
+content-length: 157
 
-Art gallery and art performance in LANDMARK is well known for the beautiful art within the buildings, also for the spectacular window displays.
+The art gallery and art performances at LANDMARK is well known not only for its beautiful art pieces but also for the building's spectacular window displays.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 39
+
+Art Gallery and Performance in Central 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 157
+
+The art gallery and art performances at LANDMARK is well known not only for its beautiful art pieces but also for the building's spectacular window displays.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -91,14 +119,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4f3b46a9-fda4-4860-8a11-4b233aa7324e
+bed743b7-f95c-4114-b761-2aedd7978676
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T060313Z
+20151201T030150Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -109,7 +137,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: e051fabd-73cb-4429-8c59-876cbdccc686
+revision: 318d35c8-d185-4cca-82a6-01b7d2d8fc11
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
@@ -118,6 +146,13 @@ key: content title
 content-length: 4
 
 手机体验
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 9
+
+中环艺术品及艺廊 
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
@@ -129,6 +164,20 @@ content-length: 0
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
+content-length: 39
+
+置地广塲艺术画廊和艺术表现展出美丽的艺术品，艺术画廊是一个不容错过的绝佳展览。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 9
+
+中环艺术品及艺廊 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 39
 
 置地广塲艺术画廊和艺术表现展出美丽的艺术品，艺术画廊是一个不容错过的绝佳展览。
@@ -188,14 +237,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e051fabd-73cb-4429-8c59-876cbdccc686
+318d35c8-d185-4cca-82a6-01b7d2d8fc11
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T060409Z
+20151126T043104Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -206,7 +255,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 6cd007c9-21bd-4c04-8439-0fe0fbfac398
+revision: a957cf71-d693-4a90-b007-4bcb616b075d
 
 ----field----
 field: {D756DC8A-FB8E-482A-9C35-EA9C7943660F}
@@ -215,6 +264,13 @@ key: content title
 content-length: 4
 
 手機體驗
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+中環文藝及藝廊
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
@@ -226,6 +282,20 @@ content-length: 0
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
+content-length: 39
+
+置地廣塲藝術畫廊和藝術表現展出美麗的藝術品，藝術畫廊是一個不容錯過的絕佳展覽。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+中環文藝及藝廊
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 39
 
 置地廣塲藝術畫廊和藝術表現展出美麗的藝術品，藝術畫廊是一個不容錯過的絕佳展覽。
@@ -285,14 +355,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-6cd007c9-21bd-4c04-8439-0fe0fbfac398
+a957cf71-d693-4a90-b007-4bcb616b075d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T060352Z
+20151126T043045Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

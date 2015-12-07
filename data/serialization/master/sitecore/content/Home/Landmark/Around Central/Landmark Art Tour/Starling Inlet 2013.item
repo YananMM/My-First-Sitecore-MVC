@@ -54,8 +54,36 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: a040e4f6-fdfc-4ae9-8ae9-7bab2bc49372
+revision: b0524a2a-d5b8-4298-9d91-1e32c4f31155
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 32
+
+Art Piece - Starling Inlet, 2013
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 125
+
+LANDMARK presents fine arts and painting from world-class artists. Visit LANDMARK now and discover more about the art pieces.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 32
+
+Art Piece - Starling Inlet, 2013
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 125
+
+LANDMARK presents fine arts and painting from world-class artists. Visit LANDMARK now and discover more about the art pieces.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -95,13 +123,14 @@ Acrylic on Canvas
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 1029
+content-length: 1084
 
-"Lee Chi Cheung was born in Xiamen of Fujian Province, China, and he grew up in Hong Kong. In 1968, he started studying Chinese painting at Fan Fung Studio. The following year he had his debut exhibition at the City Museum and Art Gallery the following year. In 1973, he received the Fine Arts Award at The Royal Over-Seas League Art Exhibition in London. He has held over 30 solo and group exhibitions in the UNITED STATES, UNITED KINGDOM, Monaco, Taiwan, The Philippines, China and Hong Kong.  
-
-Lee constructs a pictorial landscape of the sleepy jagged inlet with echoes of the past. He represents the craggy hills with expressive, stylised, textured ts’un strokes and orderly contours. Further afield, the sweeping range of Wu Tong Shan can be viewed across the Sham Chun River in China.  This painting engages an emotional affinity towards nostalgia of when these remote lowlands were covered with paddy fields, devoid, otherwise, of signs of human existence. 
- 
-Hongkong Land commissioned the “Starling Inlet” in 2012."
+<p>Lee Chi Cheung was born in Xiamen of Fujian Province, China, and he grew up in Hong Kong. In 1968, he started studying Chinese painting at Fan Fung Studio. The following year he had his debut exhibition at the City Museum and Art Gallery the following year. In 1973, he received the Fine Arts Award at The Royal Over-Seas League Art Exhibition in London. He has held over 30 solo and group exhibitions in the UNITED STATES, UNITED KINGDOM, Monaco, Taiwan, The Philippines, China and Hong Kong. &nbsp;<br>
+<br>
+Lee constructs a pictorial landscape of the sleepy jagged inlet with echoes of the past. He represents the craggy hills with expressive, stylised, textured ts&rsquo;un strokes and orderly contours. Further afield, the sweeping range of Wu Tong Shan can be viewed across the Sham Chun River in China.&nbsp; This painting engages an emotional affinity towards nostalgia of when these remote lowlands were covered with paddy fields, devoid, otherwise, of signs of human existence. <br>
+<br>
+Hongkong Land commissioned the &ldquo;Starling Inlet&rdquo; in 2012.&nbsp;</p>
+<br>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -115,14 +144,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a040e4f6-fdfc-4ae9-8ae9-7bab2bc49372
+b0524a2a-d5b8-4298-9d91-1e32c4f31155
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T015151Z
+20151126T103648Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -133,8 +162,37 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 8253ffba-e9fd-4e9a-b762-314b9ce0c8ef
+revision: 1a9d5e5e-efcf-4e63-a482-daec04772a8e
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 16
+
+艺术品 - 沙头角海, 2013
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+ 置地广塲艺术画廊和艺术表现展出美丽的艺术品，艺术画廊是一个不容错过的绝佳展览。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 16
+
+艺术品 - 沙头角海, 2013
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 41
+
+
+置地广塲艺术画廊和艺术表现展出美丽的艺术品，艺术画廊是一个不容错过的绝佳展览。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -174,13 +232,16 @@ content-length: 8
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 283
+content-length: 324
 
-李志章生于福建省厦门市，在香港长大。一九六八年，他在薰风美术院开始学习国画，翌年在香港博物美术馆举办其首个艺术展。一九七三年，他获英国皇家海外艺术联展颁发优异奖。李志章曾于美国、英国、摩纳哥、台湾、菲律宾、中国及香港等地举办三十多场个人及团体展览。 
-
-这画作气氛恬静宁谧，交错的内湾渗着一抹淡淡的古雅色彩。李氏运用表达力强、风格独特的皴法来表达山石厚重的质感，配合错落有致的线条，勾勒出峻峭崎岖的山势。画中的中国深圳河可远眺连绵不绝的梧桐山，表达画家缅怀这片偏僻山野昔日阡陌纵横、人迹罕至的风貌。 
-
-置地公司于二零一二年委托李志章创作「香港新界沙头角」。
+<p>李志章生于福建省厦门市，在香港长大。一九六八年，他在薰风美术院开始学习国画，翌年在香港博物美术馆举办其首个艺术展。一九七三年，他获英国皇家海外艺术联展颁发优异奖。李志章曾于美国、英国、摩纳哥、台湾、菲律宾、中国及香港等地举办三十多场个人及团体展览。 <br>
+<br>
+这画作气氛恬静宁谧，交错的内湾渗着一抹淡淡的古雅色彩。李氏运用表达力强、风格独特的皴法来表达山石厚重的质感，配合错落有致的线条，勾勒出峻峭崎岖的山势。画中的中国深圳河可远眺连绵不绝的梧桐山，表达画家缅怀这片偏僻山野昔日阡陌纵横、人迹罕至的风貌。 <br>
+<br>
+置地公司于二零一二年委托李志章创作「香港新界沙头角」。&nbsp; </p>
+<br>
+<br>
+<br>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -194,14 +255,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8253ffba-e9fd-4e9a-b762-314b9ce0c8ef
+1a9d5e5e-efcf-4e63-a482-daec04772a8e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T043234Z
+20151126T122406Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -212,8 +273,36 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 0a2b1ac7-6126-42ac-a675-43a8365239a2
+revision: 0d8f3db4-071e-4043-8ca8-75325f7f0e8e
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 16
+
+藝術品 - 沙頭角海, 2013
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+置地廣塲展出由世界級藝術家創作的美術品和繪畫。請即來臨置地廣塲欣賞更多藝術作品。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 16
+
+藝術品 - 沙頭角海, 2013
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 40
+
+置地廣塲展出由世界級藝術家創作的美術品和繪畫。請即來臨置地廣塲欣賞更多藝術作品。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -253,13 +342,13 @@ content-length: 8
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 283
+content-length: 303
 
-李志章生於福建省廈門市，在香港長大。一九六八年，他在薰風美術院開始學習國畫，翌年在香港博物美術館舉辦其首個藝術展。一九七三年，他獲英國皇家海外藝術聯展頒發優異獎。李志章曾於美國、英國、摩納哥、台灣、菲律賓、中國及香港等地舉辦三十多場個人及團體展覽。 
-
-這畫作氣氛恬靜寧謐，交錯的內灣滲著一抹淡淡的古雅色彩。李氏運用表達力強、風格獨特的皴法來表達山石厚重的質感，配合錯落有致的線條，勾勒出峻峭崎嶇的山勢。畫中的中國深圳河可遠眺連綿不絕的梧桐山，表達畫家緬懷這片偏僻山野昔日阡陌縱橫、人跡罕至的風貌。 
-
-置地公司於二零一二年委託李志章創作「香港新界沙頭角」。
+<p>李志章生於福建省廈門市，在香港長大。一九六八年，他在薰風美術院開始學習國畫，翌年在香港博物美術館舉辦其首個藝術展。一九七三年，他獲英國皇家海外藝術聯展頒發優異獎。李志章曾於美國、英國、摩納哥、台灣、菲律賓、中國及香港等地舉辦三十多場個人及團體展覽。 <br>
+<br>
+這畫作氣氛恬靜寧謐，交錯的內灣滲著一抹淡淡的古雅色彩。李氏運用表達力強、風格獨特的皴法來表達山石厚重的質感，配合錯落有致的線條，勾勒出峻峭崎嶇的山勢。畫中的中國深圳河可遠眺連綿不絕的梧桐山，表達畫家緬懷這片偏僻山野昔日阡陌縱橫、人跡罕至的風貌。 <br>
+<br>
+置地公司於二零一二年委託李志章創作「香港新界沙頭角」。 </p>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -273,14 +362,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0a2b1ac7-6126-42ac-a675-43a8365239a2
+0d8f3db4-071e-4043-8ca8-75325f7f0e8e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T043225Z
+20151126T122548Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

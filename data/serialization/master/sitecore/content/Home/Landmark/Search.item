@@ -26,8 +26,36 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 65ac0dd4-c857-4961-b44b-2ba0d76fea9f
+revision: d13bd334-9bce-4c96-a8c5-6bef17514c06
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 6
+
+Search
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 105
+
+Our search box feature allows you to find the detail of your preferred store and restaurant more quickly.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 6
+
+Search
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 105
+
+Our search box feature allows you to find the detail of your preferred store and restaurant more quickly.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -48,14 +76,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-65ac0dd4-c857-4961-b44b-2ba0d76fea9f
+d13bd334-9bce-4c96-a8c5-6bef17514c06
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151116T055943Z
+20151126T042818Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -66,8 +94,44 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 97c13ccb-96c6-4f89-9ff0-62d40133c80e
+revision: af2ec9a5-9187-4e86-895d-4268268da68c
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+搜索 
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 33
+
+我们网站的搜索功能，可让您更快地找到您喜欢的商店和餐厅的详细资料。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 3
+
+搜索 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 35
+
+我们网站的搜索功能，可让您更快地找到您喜欢的商店和餐厅的详细资料。
+
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+搜索结果
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -95,14 +159,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-97c13ccb-96c6-4f89-9ff0-62d40133c80e
+af2ec9a5-9187-4e86-895d-4268268da68c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T121522Z
+20151202T093000Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -113,8 +177,43 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 42d2dd11-b915-4f78-bc52-576b19ab2739
+revision: 625a7289-4a80-4898-8f5e-623fd67bde12
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 2
+
+搜尋
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 33
+
+我們網站的搜尋功能，可讓您更快地找到您喜歡的商店和餐廳的詳細資料。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 2
+
+搜尋
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 33
+
+我們網站的搜尋功能，可讓您更快地找到您喜歡的商店和餐廳的詳細資料。
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+搜尋結果
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -142,14 +241,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-42d2dd11-b915-4f78-bc52-576b19ab2739
+625a7289-4a80-4898-8f5e-623fd67bde12
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T121524Z
+20151202T093249Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

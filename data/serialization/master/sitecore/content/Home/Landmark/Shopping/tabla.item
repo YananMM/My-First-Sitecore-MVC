@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 38
+content-length: 116
 
-{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}
+{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}|{584512EB-189E-4FEF-9280-3F893DD9A9E1}|{01E67855-9741-4C1C-9FCD-2432982120B6}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-M31
 ----version----
 language: en
 version: 1
-revision: 24f1e2e5-a390-43c9-a3b1-2bfebd99af1e
+revision: d7cbe888-e639-4fab-b872-b0e9526cb856
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -78,19 +78,26 @@ content-length: 744
 
 Tabla was established by Tania Mohan in 1999. After falling in love with exquisite craftsmanship on a trip to India in 1998, Tania opened the Tabla boutique in LANDMARK PRINCE’S to showcase the treasures she had discovered there. Tabla has since evolved into an elegant luxury lifestyle brand. India's rich heritage can be seen in each piece, whether it's in the hand embroidery, fabric, colour or design details. Tabla pieces are made by traditional artisans in India and are of the highest quality.  Proud of her Indian heritage and deeply inspired by India's rich culture, Tania's mission at Tabla is to merge the ﬁnest traditions of East and West while showcasing Indian artistry and creating truly luxury products for today's modern woman.
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 5
 
 Tabla
 ----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
+----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 55
+content-length: 45
 
-Showcasing Indian artistry in truly luxurious products.
+Tabla was established by Tania Mohan in 1999.
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -102,9 +109,9 @@ Tabla
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 55
+content-length: 45
 
-Showcasing Indian artistry in truly luxurious products.
+Tabla was established by Tania Mohan in 1999.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -123,9 +130,10 @@ Tabla was established by Tania Mohan in 1999. After falling in love with exquisi
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 49
+content-length: 57
 
-Mon-Sat 10am-7pm Sun & Public Holidays 12noon-6pm
+Mon-Sat 10am-7pm<br>
+Sun &amp; Public Holidays 12noon-6pm
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -167,25 +175,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-24f1e2e5-a390-43c9-a3b1-2bfebd99af1e
+d7cbe888-e639-4fab-b872-b0e9526cb856
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151105T151621Z
+20151126T081728Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 05247f9c-0312-4cea-a419-0a772613dfac
+revision: 2b9063c3-dc08-47d6-bde1-deb00f138aa0
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -205,23 +213,30 @@ content-length: 16
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 270
+content-length: 277
 
-泰伦娜于 1999年由设计师塔尼娅．莫汉（Tania Mohan）创立。1998年，塔尼娅在印度旅游时，对当地精湛的手工艺一见钟情，其后便于置地太子开设泰伦娜专卖店，展示她在印度搜罗的各式精品。泰伦娜现已发展成为一个优雅的奢华生活品牌，店内的每一件产品，无论是手工绣花、面料、颜色还是设计细节，均蕴含着浓厚的印度文化气息。产品全由印度传统工匠于当地制造，并严格监控品质，每一件均属上乘之选。塔尼娅．莫汉深为自己的印度血统感到自豪，品牌也弥漫着浓厚的印度文化气息，致力融合东西方优良传统，并且展示印度的独特艺术，为现代女性呈献极致的奢华佳选。
+<p>泰伦娜于 1999年由设计师塔尼娅．莫汉（Tania Mohan）创立。1998年，塔尼娅在印度旅游时，对当地精湛的手工艺一见钟情，其后便于置地太子开设泰伦娜专卖店，展示她在印度搜罗的各式精品。泰伦娜现已发展成为一个优雅的奢华生活品牌，店内的每一件产品，无论是手工绣花、面料、颜色还是设计细节，均蕴含着浓厚的印度文化气息。产品全由印度传统工匠于当地制造，并严格监控品质，每一件均属上乘之选。塔尼娅．莫汉深为自己的印度血统感到自豪，品牌也弥漫着浓厚的印度文化气息，致力融合东西方优良传统，并且展示印度的独特艺术，为现代女性呈献极致的奢华佳选。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+泰伦娜
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 5
+content-length: 0
 
-Tabla
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 16
+content-length: 36
 
-融入印度独特艺术的极致奢华服饰。
+泰伦娜于 1999年由设计师塔尼娅．莫汉（Tania Mohan）创立。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -233,9 +248,9 @@ content-length: 3
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 16
+content-length: 36
 
-融入印度独特艺术的极致奢华服饰。
+泰伦娜于 1999年由设计师塔尼娅．莫汉（Tania Mohan）创立。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -247,16 +262,17 @@ content-length: 3
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 270
+content-length: 277
 
-泰伦娜于 1999年由设计师塔尼娅．莫汉（Tania Mohan）创立。1998年，塔尼娅在印度旅游时，对当地精湛的手工艺一见钟情，其后便于置地太子开设泰伦娜专卖店，展示她在印度搜罗的各式精品。泰伦娜现已发展成为一个优雅的奢华生活品牌，店内的每一件产品，无论是手工绣花、面料、颜色还是设计细节，均蕴含着浓厚的印度文化气息。产品全由印度传统工匠于当地制造，并严格监控品质，每一件均属上乘之选。塔尼娅．莫汉深为自己的印度血统感到自豪，品牌也弥漫着浓厚的印度文化气息，致力融合东西方优良传统，并且展示印度的独特艺术，为现代女性呈献极致的奢华佳选。
+<p>泰伦娜于 1999年由设计师塔尼娅．莫汉（Tania Mohan）创立。1998年，塔尼娅在印度旅游时，对当地精湛的手工艺一见钟情，其后便于置地太子开设泰伦娜专卖店，展示她在印度搜罗的各式精品。泰伦娜现已发展成为一个优雅的奢华生活品牌，店内的每一件产品，无论是手工绣花、面料、颜色还是设计细节，均蕴含着浓厚的印度文化气息。产品全由印度传统工匠于当地制造，并严格监控品质，每一件均属上乘之选。塔尼娅．莫汉深为自己的印度血统感到自豪，品牌也弥漫着浓厚的印度文化气息，致力融合东西方优良传统，并且展示印度的独特艺术，为现代女性呈献极致的奢华佳选。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 38
+content-length: 43
 
-星期一至星期六︰早上10时至晚上7时 星期日及公众假期︰中午12时至晚上6时
+星期一至星期六︰早上10时至晚上7时 <br>
+星期日及公众假期︰中午12时至晚上6时
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -305,25 +321,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-05247f9c-0312-4cea-a419-0a772613dfac
+2b9063c3-dc08-47d6-bde1-deb00f138aa0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T064000Z
+20151202T070017Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 5d4e5a80-8e3b-4e66-80ed-fc7b67542403
+revision: c49b0ff2-2c78-46b5-b301-21f374132a9c
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -343,16 +359,23 @@ content-length: 16
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 263
+content-length: 270
 
-泰倫娜於 1999年由設計師塔尼婭．莫漢（Tania Mohan）成立。1998年，她前往印度旅遊，對當地精湛的手工藝一見鍾情，其後更於置地太子開設泰倫娜專門店，展示她在印度搜羅的各式精品。泰倫娜現已發展成一個優雅的豪華生活品牌，店內的每一件產品，不論是手工繡花、面料、顏色又或設計細節，均蘊含濃厚印度文化氣息。產品全由印度傳統工匠於當地製造，並嚴格監控品質，每一件均屬上乘之選。塔尼婭．莫漢深為自己的印度血統感到自豪，品牌也瀰漫濃厚印度文化氣息，致力融合東西方優良傳統，並且展示印度的獨特藝術，為現代女性呈獻極致的豪華佳選。
+<p>泰倫娜於 1999年由設計師塔尼婭．莫漢（Tania Mohan）成立。1998年，她前往印度旅遊，對當地精湛的手工藝一見鍾情，其後更於置地太子開設泰倫娜專門店，展示她在印度搜羅的各式精品。泰倫娜現已發展成一個優雅的豪華生活品牌，店內的每一件產品，不論是手工繡花、面料、顏色又或設計細節，均蘊含濃厚印度文化氣息。產品全由印度傳統工匠於當地製造，並嚴格監控品質，每一件均屬上乘之選。塔尼婭．莫漢深為自己的印度血統感到自豪，品牌也瀰漫濃厚印度文化氣息，致力融合東西方優良傳統，並且展示印度的獨特藝術，為現代女性呈獻極致的豪華佳選。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+泰倫娜
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 5
+content-length: 0
 
-Tabla
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -385,16 +408,17 @@ content-length: 3
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 263
+content-length: 270
 
-泰倫娜於 1999年由設計師塔尼婭．莫漢（Tania Mohan）成立。1998年，她前往印度旅遊，對當地精湛的手工藝一見鍾情，其後更於置地太子開設泰倫娜專門店，展示她在印度搜羅的各式精品。泰倫娜現已發展成一個優雅的豪華生活品牌，店內的每一件產品，不論是手工繡花、面料、顏色又或設計細節，均蘊含濃厚印度文化氣息。產品全由印度傳統工匠於當地製造，並嚴格監控品質，每一件均屬上乘之選。塔尼婭．莫漢深為自己的印度血統感到自豪，品牌也瀰漫濃厚印度文化氣息，致力融合東西方優良傳統，並且展示印度的獨特藝術，為現代女性呈獻極致的豪華佳選。
+<p>泰倫娜於 1999年由設計師塔尼婭．莫漢（Tania Mohan）成立。1998年，她前往印度旅遊，對當地精湛的手工藝一見鍾情，其後更於置地太子開設泰倫娜專門店，展示她在印度搜羅的各式精品。泰倫娜現已發展成一個優雅的豪華生活品牌，店內的每一件產品，不論是手工繡花、面料、顏色又或設計細節，均蘊含濃厚印度文化氣息。產品全由印度傳統工匠於當地製造，並嚴格監控品質，每一件均屬上乘之選。塔尼婭．莫漢深為自己的印度血統感到自豪，品牌也瀰漫濃厚印度文化氣息，致力融合東西方優良傳統，並且展示印度的獨特藝術，為現代女性呈獻極致的豪華佳選。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 38
+content-length: 43
 
-星期一至星期六︰早上10時至晚上7時 星期日及公眾假期︰中午12時至晚上6時
+星期一至星期六︰早上10時至晚上7時 <br>
+星期日及公眾假期︰中午12時至晚上6時
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -436,18 +460,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5d4e5a80-8e3b-4e66-80ed-fc7b67542403
+c49b0ff2-2c78-46b5-b301-21f374132a9c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T064000Z
+20151126T082057Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

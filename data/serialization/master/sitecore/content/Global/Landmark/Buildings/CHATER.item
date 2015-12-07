@@ -52,6 +52,20 @@ content-length: 1
 
 4
 ----field----
+field: {35C4056E-7E5C-4952-81A9-8C7FDDD9FB1D}
+name: Floor Map Image
+key: floor map image
+content-length: 255
+
+<image mediapath="/Images/Landmark/Floor Guide/floorguide icon 3" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Floor Guide/floorguide icon 3" mediaid="{1DF626DA-4EE4-480E-B281-95929D4C37C2}" />
+----field----
+field: {54107D59-E11D-4E8D-8408-BBC2B0408A67}
+name: Mobile Floor Map Image
+key: mobile floor map image
+content-length: 255
+
+<image mediapath="/Images/Landmark/Floor Guide/examplefloorplan3" alt="" width="" height="" hspace="" vspace="" showineditor="" usethumbnail="" src="~/media/Images/Landmark/Floor Guide/examplefloorplan3" mediaid="{A8D09C50-DF65-4CEE-9340-4ABEB2495627}" />
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -61,7 +75,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: ac281458-a29a-420f-bb3c-1c7bd1fcaf28
+revision: 59752d75-e493-441e-bb83-e220366c83fe
 
 ----field----
 field: {C8D907FB-72C0-40E0-9195-86EBA028FEA6}
@@ -97,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ac281458-a29a-420f-bb3c-1c7bd1fcaf28
+59752d75-e493-441e-bb83-e220366c83fe
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151118T063558Z
+20151125T083227Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

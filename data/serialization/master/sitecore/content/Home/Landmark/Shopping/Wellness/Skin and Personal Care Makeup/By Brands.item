@@ -10,6 +10,20 @@ template: {0B591CE8-50CB-4CF5-9CBF-F2F6E61F23E8}
 templatekey: T13 Page
 
 ----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -19,8 +33,22 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 437e54d7-01a1-4a25-92b1-27bef0bc33be
+revision: f6d9315b-56f4-4844-9fe4-155e0ba839c2
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 30
+
+Skin, Personal Care and Makeup
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 30
+
+Skin, Personal Care and Makeup
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -41,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-437e54d7-01a1-4a25-92b1-27bef0bc33be
+f6d9315b-56f4-4844-9fe4-155e0ba839c2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150910T020641Z
+20151126T114539Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -59,8 +87,29 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 36f3bd2a-b189-446c-a96a-8df66ac8f741
+revision: 85d72fc0-a1d1-4602-9873-2b5b2ebae221
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 11
+
+护肤，个人护理和化妆品
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 11
+
+护肤，个人护理和化妆品
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 2
+
+品牌
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -88,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-36f3bd2a-b189-446c-a96a-8df66ac8f741
+85d72fc0-a1d1-4602-9873-2b5b2ebae221
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T120348Z
+20151201T094725Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -106,8 +155,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: e4da7726-bb0a-4eec-ac73-4a324f58aae9
+revision: 30611d38-c3e8-4b8f-9335-b98a7811b022
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 12
+
+護膚，個人護理和化妝品 
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 12
+
+護膚，個人護理和化妝品 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -142,14 +205,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e4da7726-bb0a-4eec-ac73-4a324f58aae9
+30611d38-c3e8-4b8f-9335-b98a7811b022
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T065353Z
+20151126T114626Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

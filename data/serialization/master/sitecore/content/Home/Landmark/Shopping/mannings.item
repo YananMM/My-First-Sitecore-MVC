@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 38
+content-length: 116
 
-{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}
+{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}|{101C4A58-6D7D-4905-AD44-F0F054282440}|{7F1B0BFA-C6FF-4BAD-89B9-25D56D36DA5E}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-321-322
 ----version----
 language: en
 version: 1
-revision: 883214a4-cda5-438c-b4e9-e79325187ba7
+revision: 7e45f2cd-1716-4dab-8789-4f926cf9e89f
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -130,12 +130,11 @@ content-length: 715
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 82
+content-length: 73
 
 Mon-Fri 9am-8pm <br>
 Sat 10am-7pm <br>
-Sun &amp; Public Holidays 11am-7pm<br>
-<br>
+Sun &amp; Public Holidays 11am-7pm
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -177,14 +176,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-883214a4-cda5-438c-b4e9-e79325187ba7
+7e45f2cd-1716-4dab-8789-4f926cf9e89f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T115910Z
+20151127T062838Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -195,7 +194,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 47db5f7d-d4d0-4e26-bd02-a7aab16af987
+revision: 1dd816f7-8a21-4433-a988-ecd2f6fc0257
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -324,14 +323,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-47db5f7d-d4d0-4e26-bd02-a7aab16af987
+1dd816f7-8a21-4433-a988-ecd2f6fc0257
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T115734Z
+20151202T064757Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

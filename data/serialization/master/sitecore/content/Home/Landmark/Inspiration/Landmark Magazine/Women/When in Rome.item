@@ -41,9 +41,9 @@ Style B
 field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
 name: Tags
 key: tags
-content-length: 272
+content-length: 311
 
-{AADE9A7A-9688-4061-84ED-68CB65059A86}|{B8BD48E8-CD9D-4C08-A086-75895F46BA5C}|{5F8E9775-6ACB-4849-BC3B-F72C369E9B00}|{69BC1FE9-C8B2-467E-84B7-50FF8634AC1A}|{38F7E7D2-C3C1-42A4-9F91-31E01FF8547B}|{EBADC6BF-4BAD-483E-A900-F3DA1C0776C1}|{61A3BEF2-2E2E-42A2-8416-556502270BE7}
+{AADE9A7A-9688-4061-84ED-68CB65059A86}|{B8BD48E8-CD9D-4C08-A086-75895F46BA5C}|{5F8E9775-6ACB-4849-BC3B-F72C369E9B00}|{69BC1FE9-C8B2-467E-84B7-50FF8634AC1A}|{38F7E7D2-C3C1-42A4-9F91-31E01FF8547B}|{EBADC6BF-4BAD-483E-A900-F3DA1C0776C1}|{61A3BEF2-2E2E-42A2-8416-556502270BE7}|{8CBE1EA5-CE5A-4D15-AEFD-F65BC164C06B}
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -68,7 +68,7 @@ content-length: 155
 ----version----
 language: en
 version: 1
-revision: 8c074854-bb82-4753-b48e-2da61e191e3d
+revision: 2d458ffc-7af1-4c27-b944-2c56048807b6
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -81,14 +81,42 @@ When in Rome
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Subheadline
 key: article subheadline
-content-length: 216
+content-length: 187
 
 
-<p>Photography by John-Paul Pietrus</br>Fashion Director Tina Leung</br>Production by Fast Management</br>Hair by Armando Cherillo @Atomo</br>Make-up by Adam de Cruz</br>Model Alexandra Martynova @the Hive, London 
+Photography by John-Paul PietrusFashion Director Tina LeungProduction by Fast ManagementHair by Armando Cherillo @AtomoMake-up by Adam de CruzModel Alexandra Martynova @the Hive, London 
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
+content-length: 157
+
+Home to great monuments of civilisations past, the Eternal City is a capital of contrasts where the ancient and the modern worlds collide like nowhere else. 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 12
+
+When in Rome
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 157
+
+Home to great monuments of civilisations past, the Eternal City is a capital of contrasts where the ancient and the modern worlds collide like nowhere else. 
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 12
+
+When in Rome
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 157
 
 Home to great monuments of civilisations past, the Eternal City is a capital of contrasts where the ancient and the modern worlds collide like nowhere else. 
@@ -112,14 +140,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8c074854-bb82-4753-b48e-2da61e191e3d
+2d458ffc-7af1-4c27-b944-2c56048807b6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151124T103536Z
+20151125T064734Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -127,10 +155,17 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />
 ----version----
 language: zh-CN
 version: 1
-revision: dff7b33f-f42b-4572-b78e-2d8571b18132
+revision: d2f2748a-a5d3-455d-94bc-a11f8eb77634
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -154,6 +189,34 @@ content-length: 156
 
 Home to great monuments of civilisations past, the Eternal City is a capital of contrasts where the ancient and the modern worlds collide like nowhere else.
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 12
+
+When in Rome
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 156
+
+Home to great monuments of civilisations past, the Eternal City is a capital of contrasts where the ancient and the modern worlds collide like nowhere else.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 12
+
+When in Rome
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 156
+
+Home to great monuments of civilisations past, the Eternal City is a capital of contrasts where the ancient and the modern worlds collide like nowhere else.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -173,14 +236,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dff7b33f-f42b-4572-b78e-2d8571b18132
+d2f2748a-a5d3-455d-94bc-a11f8eb77634
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T094026Z
+20151125T045748Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -191,7 +254,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: ac19095b-28f8-48ed-a546-e3a2075bc677
+revision: cacbcb10-5414-4d3e-ad36-be49c4664525
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -204,9 +267,9 @@ When in Rome
 field: {706E7EAA-CF54-47D8-9EED-15A11F679434}
 name: Article Subheadline
 key: article subheadline
-content-length: 214
+content-length: 186
 
-<p>Photography by John-Paul Pietrus</br>Fashion Director Tina Leung</br>Production by Fast Management</br>Hair by Armando Cherillo @Atomo</br>Make-up by Adam de Cruz</br>Model Alexandra Martynova @the Hive, London 
+Photography by John-Paul PietrusFashion Director Tina LeungProduction by Fast ManagementHair by Armando Cherillo @AtomoMake-up by Adam de CruzModel Alexandra Martynova @the Hive, London 
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
@@ -214,6 +277,34 @@ key: article intro
 content-length: 157
 
 Home to great monuments of civilisations past, the Eternal City is a capital of contrasts where the ancient and the modern worlds collide like nowhere else. 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 12
+
+When in Rome
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 156
+
+Home to great monuments of civilisations past, the Eternal City is a capital of contrasts where the ancient and the modern worlds collide like nowhere else.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 12
+
+When in Rome
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 156
+
+Home to great monuments of civilisations past, the Eternal City is a capital of contrasts where the ancient and the modern worlds collide like nowhere else.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -234,14 +325,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ac19095b-28f8-48ed-a546-e3a2075bc677
+cacbcb10-5414-4d3e-ad36-be49c4664525
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T094006Z
+20151126T133356Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -249,3 +340,10 @@ key: __updated by
 content-length: 14
 
 sitecore\admin
+----field----
+field: {001DD393-96C5-490B-924A-B0F25CD9EFD8}
+name: __Lock
+key: __lock
+content-length: 5
+
+<r />

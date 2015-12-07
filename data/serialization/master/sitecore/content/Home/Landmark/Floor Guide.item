@@ -10,12 +10,12 @@ template: {7F83D69B-62DB-4004-A011-02C3B1328E3F}
 templatekey: T7 Page
 
 ----field----
-field: {611417F5-F6A0-41DF-97F3-1A0D9A5D3CDA}
-name: Map Menu Image
-key: map menu image
-content-length: 58
+field: {C4092B84-9AE3-4223-8B24-A5327978D5E6}
+name: Map PDF
+key: map pdf
+content-length: 109
 
-<image mediaid="{887F7A98-44EC-4E35-9D9D-61B79390DCF4}" />
+<file mediaid="{FDA7D14F-EAD1-482F-8299-FB70D78A4B6D}" src="~/media/fda7d14fead1482f8299fb70d78a4b6d.ashx" />
 ----field----
 field: {54AE07D5-2553-48E1-BC5F-982A625D7A3F}
 name: Map Width
@@ -40,7 +40,36 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: dd71d6e2-cf1a-47ac-bb3c-17f2668dc6e4
+revision: b8a2d1a4-f145-4dc3-bb14-1b9a0a5512d5
+
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 11
+
+Floor Guide
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 119
+
+Our floor guide page lets you navigate LANDMARK and find out the location of our fashion stores, cafes and restaurants.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 11
+
+Floor Guide
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 121
+
+Our floor guide page lets you navigate LANDMARK and find out the location of our fashion stores, cafes and restaurants.
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -62,14 +91,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dd71d6e2-cf1a-47ac-bb3c-17f2668dc6e4
+b8a2d1a4-f145-4dc3-bb14-1b9a0a5512d5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151121T090512Z
+20151126T074559Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -80,7 +109,43 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: c35c4d54-afe3-455c-ae7d-86a91205d3d6
+revision: 5cdfea81-54f1-41e2-93d2-272b85b908c6
+
+----field----
+field: {F0BB14E2-5371-42E5-AF89-72F0D85F8587}
+name: Download Label
+key: download label
+content-length: 8
+
+下载平面图PDF
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+楼层指南
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 34
+
+请浏览我们网站的楼层指南，可样您找出更多关於商店和餐厅的位置和资料。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 4
+
+楼层指南
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 36
+
+请浏览我们网站的楼层指南，可样您找出更多关於商店和餐厅的位置和资料。
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -116,14 +181,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c35c4d54-afe3-455c-ae7d-86a91205d3d6
+5cdfea81-54f1-41e2-93d2-272b85b908c6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T065653Z
+20151127T082523Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -134,7 +199,43 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: be29fc87-8060-4d98-ac4e-ce656ce11842
+revision: 229049ab-73cc-4514-807f-ee23f25fe70f
+
+----field----
+field: {F0BB14E2-5371-42E5-AF89-72F0D85F8587}
+name: Download Label
+key: download label
+content-length: 8
+
+下載平面圖PDF
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+樓層指南
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 34
+
+請瀏覽我們網站的樓層指南，可樣您找出更多關於商店和餐廳的位置和資料。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 4
+
+樓層指南
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 36
+
+請瀏覽我們網站的樓層指南，可樣您找出更多關於商店和餐廳的位置和資料。
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -170,14 +271,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-be29fc87-8060-4d98-ac4e-ce656ce11842
+229049ab-73cc-4514-807f-ee23f25fe70f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151023T153714Z
+20151127T042633Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

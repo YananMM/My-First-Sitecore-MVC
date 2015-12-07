@@ -15,7 +15,7 @@ name: Article Callout Image
 key: article callout image
 content-length: 58
 
-<image mediaid="{1E6A654C-EC69-4991-85B9-94519B6502D4}" />
+<image mediaid="{32601607-7805-4AF8-993D-7AF3735A433A}" />
 ----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Portrait Callout Image
@@ -41,9 +41,9 @@ Style A
 field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
 name: Tags
 key: tags
-content-length: 38
+content-length: 77
 
-{97BD4D39-27B6-43CF-9874-CC9B859AAB13}
+{97BD4D39-27B6-43CF-9874-CC9B859AAB13}|{42FF35B6-477A-417F-84BA-B11860F3A311}
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -68,7 +68,7 @@ content-length: 155
 ----version----
 language: en
 version: 1
-revision: 8d7de817-6f8b-412c-9b44-f8eb6f6eeeeb
+revision: bb43a682-2c23-461d-b76d-2840be85bc4a
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -92,6 +92,34 @@ content-length: 114
 
 There’s a touch of the theatrical about menswear this season, and nothing says star style like a well-crafted hat.
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 10
+
+Hat tricks
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 114
+
+There’s a touch of the theatrical about menswear this season, and nothing says star style like a well-crafted hat.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 10
+
+Hat tricks
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 114
+
+There’s a touch of the theatrical about menswear this season, and nothing says star style like a well-crafted hat.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -111,14 +139,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8d7de817-6f8b-412c-9b44-f8eb6f6eeeeb
+bb43a682-2c23-461d-b76d-2840be85bc4a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151120T073722:635836018428027074Z
+20151126T140357Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -129,7 +157,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 232c2271-c94b-4803-a090-3db73f0db655
+revision: 9038f550-5b9c-4062-957d-637ee60ad9ff
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -153,6 +181,34 @@ content-length: 40
 
 本季的男士服装走夸张的戏剧路线，而一顶做工精细的帽子就能大大提升各位男士的星味。
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 10
+
+Hat tricks
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+本季的男士服装走夸张的戏剧路线，而一顶做工精细的帽子就能大大提升各位男士的星味。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 10
+
+Hat tricks
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 40
+
+本季的男士服装走夸张的戏剧路线，而一顶做工精细的帽子就能大大提升各位男士的星味。
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -172,14 +228,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-232c2271-c94b-4803-a090-3db73f0db655
+9038f550-5b9c-4062-957d-637ee60ad9ff
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T095258Z
+20151125T045845Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -190,7 +246,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: dec7f147-e4b6-4d8a-8ed3-dbe6d09ae8a8
+revision: ba03ab6f-e45a-4e9b-9ba5-23edcca95511
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -214,6 +270,34 @@ content-length: 40
 
 本季的男士服裝走誇張的戲劇路線，而一頂做工精細的帽子就能大大提升各位男士的星味。
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 10
+
+Hat tricks
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+本季的男士服裝走誇張的戲劇路線，而一頂做工精細的帽子就能大大提升各位男士的星味。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 10
+
+Hat tricks
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 40
+
+本季的男士服裝走誇張的戲劇路線，而一頂做工精細的帽子就能大大提升各位男士的星味。
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -233,14 +317,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-dec7f147-e4b6-4d8a-8ed3-dbe6d09ae8a8
+ba03ab6f-e45a-4e9b-9ba5-23edcca95511
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T095311Z
+20151125T045917Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

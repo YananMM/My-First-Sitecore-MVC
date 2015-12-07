@@ -101,15 +101,15 @@ content-length: 5
 ----version----
 language: en
 version: 2
-revision: d0b2e1e0-2cbe-4af4-83f3-7a146cbc22a2
+revision: bc7dc2db-08f8-43af-ab6e-d1fc44d7bc6c
 
 ----field----
 field: {42999415-3EAC-4B74-A6EB-034271F085B7}
 name: Slide Title
 key: slide title
-content-length: 0
+content-length: 8
 
-
+LANDMARK
 ----field----
 field: {DF2B5F7C-2BD8-4762-982A-8F461123C5C2}
 name: Slide Image
@@ -121,13 +121,12 @@ content-length: 58
 field: {0D14A8BB-68BB-4865-9692-052E94152DF4}
 name: Slide Numbers Text Title
 key: slide numbers text title
-content-length: 82
+content-length: 102
 
-10 MICHELIN STARS 1 NAME<br>
-<p>__</p>
-<p>LANDMARK</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<hgroup class="clearfix">
+<h2><span>10</span>MICHELIN STARS</h2>
+<h2><span>1</span>NAME</h2>
+</hgroup>
 ----field----
 field: {9FAF7DB0-6304-44A3-A1AD-3156F3467264}
 name: Slide Intro
@@ -183,14 +182,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d0b2e1e0-2cbe-4af4-83f3-7a146cbc22a2
+bc7dc2db-08f8-43af-ab6e-d1fc44d7bc6c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T035957Z
+20151125T063240Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -215,8 +214,46 @@ content-length: 5
 ----version----
 language: zh-CN
 version: 1
-revision: 53839e54-2127-4513-a0c2-8ac87d3c0379
+revision: 0c3d70f8-f7ef-4250-847f-cf62138df077
 
+----field----
+field: {DF2B5F7C-2BD8-4762-982A-8F461123C5C2}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{070CC646-C07F-4D6C-960D-3C0C945A37F5}" />
+----field----
+field: {0D14A8BB-68BB-4865-9692-052E94152DF4}
+name: Slide Numbers Text Title
+key: slide numbers text title
+content-length: 97
+
+<hgroup class="clearfix">
+<h2><span>10</span>颗米其林星级美馔</h2>
+<h2><span>1</span>个矜贵名字</h2>
+</hgroup>
+----field----
+field: {9FAF7DB0-6304-44A3-A1AD-3156F3467264}
+name: Slide Intro
+key: slide intro
+content-length: 40
+
+四时天下盛飨，百味齿颊留香。荟萃39所尊尚食府，珍馐名馔，一个矜贵名字，置地广塲
+----field----
+field: {0E089E2C-C25C-42EF-8323-5D49C81D12FB}
+name: Slide Button Text
+key: slide button text
+content-length: 8
+
+搜寻星级名厨美馔
+----field----
+field: {687B71D1-C561-4B9E-B214-32F115925434}
+name: Slide Button Link
+key: slide button link
+content-length: 106
+
+<link linktype="external" url="http://www.onelandmark.hk/sc/#10michelinstars" anchor="" target="_blank" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -244,14 +281,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-53839e54-2127-4513-a0c2-8ac87d3c0379
+0c3d70f8-f7ef-4250-847f-cf62138df077
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T034713Z
+20151125T143137Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -262,8 +299,46 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: fc5a2875-0667-4244-97b0-9ecf85b9f116
+revision: 08ce1ccc-a98e-4cca-ba50-8062b5e552c8
 
+----field----
+field: {DF2B5F7C-2BD8-4762-982A-8F461123C5C2}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{070CC646-C07F-4D6C-960D-3C0C945A37F5}" />
+----field----
+field: {0D14A8BB-68BB-4865-9692-052E94152DF4}
+name: Slide Numbers Text Title
+key: slide numbers text title
+content-length: 101
+
+<hgroup class="clearfix">
+<h2><span>10</span>顆米芝蓮星級美饌</h2>
+<h2><span>1</span>個矜貴名字</h2>
+</hgroup><br>
+----field----
+field: {9FAF7DB0-6304-44A3-A1AD-3156F3467264}
+name: Slide Intro
+key: slide intro
+content-length: 41
+
+四時天下盛饗，百味齒頰留香。薈萃39所尊尚食府，珍饈名饌，一個矜貴名字，置地廣塲。
+----field----
+field: {0E089E2C-C25C-42EF-8323-5D49C81D12FB}
+name: Slide Button Text
+key: slide button text
+content-length: 8
+
+搜尋星級名廚美饌
+----field----
+field: {687B71D1-C561-4B9E-B214-32F115925434}
+name: Slide Button Link
+key: slide button link
+content-length: 106
+
+<link linktype="external" url="http://www.onelandmark.hk/tc/#10michelinstars" anchor="" target="_blank" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -291,14 +366,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fc5a2875-0667-4244-97b0-9ecf85b9f116
+08ce1ccc-a98e-4cca-ba50-8062b5e552c8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T034717Z
+20151125T143125Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

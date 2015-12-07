@@ -10,6 +10,20 @@ template: {0B591CE8-50CB-4CF5-9CBF-F2F6E61F23E8}
 templatekey: T13 Page
 
 ----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
 name: __Originator
 key: __originator
@@ -19,8 +33,22 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 84abe0e6-0849-4130-8454-153952b98b2c
+revision: fe0eb79d-9619-4461-9248-9876b8a9f60d
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 39
+
+Photo and Printing in Hong Kong Central
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 39
+
+Photo and Printing in Hong Kong Central
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -41,14 +69,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-84abe0e6-0849-4130-8454-153952b98b2c
+fe0eb79d-9619-4461-9248-9876b8a9f60d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150910T022203Z
+20151126T115333Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -59,8 +87,29 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 00c3644e-e2bc-4419-a931-09d03dbc8f01
+revision: 61d3a583-779a-42f0-901c-677d83bbd8e3
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 5
+
+照片和打印
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 5
+
+照片和打印
+----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 2
+
+品牌
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -88,14 +137,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-00c3644e-e2bc-4419-a931-09d03dbc8f01
+61d3a583-779a-42f0-901c-677d83bbd8e3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T121030Z
+20151201T094814Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -106,8 +155,22 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: daf82513-32b2-4c59-aa09-47c6e307a9cb
+revision: 48f12087-ce94-45d9-92c2-af26a2eb327a
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 5
+
+照片和打印
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 5
+
+照片和打印
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -135,14 +198,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-daf82513-32b2-4c59-aa09-47c6e307a9cb
+48f12087-ce94-45d9-92c2-af26a2eb327a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T121027Z
+20151126T115357Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -54,7 +54,7 @@ shop-114
 ----version----
 language: en
 version: 1
-revision: 892c1a2a-aae1-4078-a7d1-1d3d26136ac9
+revision: 65ddc578-2bf5-4232-8333-8d98f33da37a
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -78,12 +78,19 @@ content-length: 658
 
 <p>Passion, dedication and savoir-faire have been the driving force of the work, creation and excellence of La Maison du Chocolat, founded in 1977 by Robert Linxe. From Parisian grand artisan to international luxury chocolatier, La Maison du Chocolat not only carries on the tradition of its grand classics, but also crafts new chocolate collections for each season and festive occasion, showing that the art of chocolate is ever evolving. For more than 38 years, La Maison du Chocolat has taken the science of balance and associations to an art form. Perfect harmony on the palate highlights the singularity of these signature creations of unique taste.</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 21
+
+LA MAISON DU CHOCOLAT
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 21
+content-length: 0
 
-LA,MAISON,DU,CHOCOLAT
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -116,16 +123,17 @@ LA MAISON DU CHOCOLAT
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 651
+content-length: 658
 
-Passion, dedication and savoir-faire have been the driving force of the work, creation and excellence of La Maison du Chocolat, founded in 1977 by Robert Linxe. From Parisian grand artisan to international luxury chocolatier, La Maison du Chocolat not only carries on the tradition of its grand classics, but also crafts new chocolate collections for each season and festive occasion, showing that the art of chocolate is ever evolving. For more than 38 years, La Maison du Chocolat has taken the science of balance and associations to an art form. Perfect harmony on the palate highlights the singularity of these signature creations of unique taste.
+<p>Passion, dedication and savoir-faire have been the driving force of the work, creation and excellence of La Maison du Chocolat, founded in 1977 by Robert Linxe. From Parisian grand artisan to international luxury chocolatier, La Maison du Chocolat not only carries on the tradition of its grand classics, but also crafts new chocolate collections for each season and festive occasion, showing that the art of chocolate is ever evolving. For more than 38 years, La Maison du Chocolat has taken the science of balance and associations to an art form. Perfect harmony on the palate highlights the singularity of these signature creations of unique taste.</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 52
+content-length: 64
 
-Mon-Sat 10am - 8pm  Sun & Public holidays 11am - 7pm
+Mon-Sat 10am - 8pm <br>
+Sun &amp; Public holidays 11am - 7pm<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -167,14 +175,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-892c1a2a-aae1-4078-a7d1-1d3d26136ac9
+65ddc578-2bf5-4232-8333-8d98f33da37a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T132303Z
+20151127T050507Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -185,7 +193,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 51ff195e-1aa9-4a87-a7dd-ea5d5582b6d9
+revision: 610cd2db-5cfa-4cbd-92cc-6fd65a33b5f4
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -209,12 +217,19 @@ content-length: 262
 
 <p>自Robert Linxe在1977年创立La Maison du Chocolat以来，品牌一直以热情、力臻完美的态度和专业精神，鞭策自己不忘创意、精益求精。从昔日巴黎的出色巧匠，到今天誉满全球的名贵巧克力大师，La Maison du Chocolat 不但锐意秉持经典传统，更在每个季度和每个特别节日推出全新巧克力产品系列，以示巧克力艺术与时并进。38年来，La Maison du Chocolat将平衡与结合味道的科学变成一种艺术。味蕾上的完美和谐滋味，恰恰突显了这些风味独特的王牌制作品的非凡之处。</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 21
+
+LA MAISON DU CHOCOLAT
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 21
+content-length: 0
 
-LA,MAISON,DU,CHOCOLAT
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -247,16 +262,17 @@ LA MAISON DU CHOCOLAT
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 255
+content-length: 262
 
-自Robert Linxe在1977年创立La Maison du Chocolat以来，品牌一直以热情、力臻完美的态度和专业精神，鞭策自己不忘创意、精益求精。从昔日巴黎的出色巧匠，到今天誉满全球的名贵巧克力大师，La Maison du Chocolat 不但锐意秉持经典传统，更在每个季度和每个特别节日推出全新巧克力产品系列，以示巧克力艺术与时并进。38年来，La Maison du Chocolat将平衡与结合味道的科学变成一种艺术。味蕾上的完美和谐滋味，恰恰突显了这些风味独特的王牌制作品的非凡之处。
+<p>自Robert Linxe在1977年创立La Maison du Chocolat以来，品牌一直以热情、力臻完美的态度和专业精神，鞭策自己不忘创意、精益求精。从昔日巴黎的出色巧匠，到今天誉满全球的名贵巧克力大师，La Maison du Chocolat 不但锐意秉持经典传统，更在每个季度和每个特别节日推出全新巧克力产品系列，以示巧克力艺术与时并进。38年来，La Maison du Chocolat将平衡与结合味道的科学变成一种艺术。味蕾上的完美和谐滋味，恰恰突显了这些风味独特的王牌制作品的非凡之处。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 39
+content-length: 48
 
-星期一至星期六∶早上10时至晚上8时  星期日及公众假期∶早上11时至晚上7时
+星期一至星期六∶早上10时至晚上8时  <br>
+星期日及公众假期∶早上11时至晚上7时<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -305,14 +321,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-51ff195e-1aa9-4a87-a7dd-ea5d5582b6d9
+610cd2db-5cfa-4cbd-92cc-6fd65a33b5f4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T132319Z
+20151127T050459Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -323,7 +339,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 3297ab6f-25d1-4383-b438-dc4421a122cb
+revision: 4c1ae65a-9a8a-4c10-8fbf-960ab60365d8
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -347,12 +363,19 @@ content-length: 260
 
 <p>自Robert Linxe在1977年創立La Maison du Chocolat，品牌一直以熱情、力臻完美的態度和專業精神，鞭策自己不忘創意、精益求精。從昔日巴黎的出色巧匠，到今天譽滿全球的名貴朱古力大師，La Maison du Chocolat 不但銳意秉持經典傳統，更在每個季度和每個特別節日推出全新朱古力產品系列，以示朱古力藝術與時並進。38年來，La Maison du Chocolat把平衡與結合味道的科學變成一種藝術。味蕾上的完美和諧滋味，正正突顯了這些風味獨特的皇牌創作有何非凡之處。</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 21
+
+LA MAISON DU CHOCOLAT
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 21
+content-length: 0
 
-LA,MAISON,DU,CHOCOLAT
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -385,16 +408,17 @@ LA MAISON DU CHOCOLAT
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 253
+content-length: 260
 
-自Robert Linxe在1977年創立La Maison du Chocolat，品牌一直以熱情、力臻完美的態度和專業精神，鞭策自己不忘創意、精益求精。從昔日巴黎的出色巧匠，到今天譽滿全球的名貴朱古力大師，La Maison du Chocolat 不但銳意秉持經典傳統，更在每個季度和每個特別節日推出全新朱古力產品系列，以示朱古力藝術與時並進。38年來，La Maison du Chocolat把平衡與結合味道的科學變成一種藝術。味蕾上的完美和諧滋味，正正突顯了這些風味獨特的皇牌創作有何非凡之處。
+<p>自Robert Linxe在1977年創立La Maison du Chocolat，品牌一直以熱情、力臻完美的態度和專業精神，鞭策自己不忘創意、精益求精。從昔日巴黎的出色巧匠，到今天譽滿全球的名貴朱古力大師，La Maison du Chocolat 不但銳意秉持經典傳統，更在每個季度和每個特別節日推出全新朱古力產品系列，以示朱古力藝術與時並進。38年來，La Maison du Chocolat把平衡與結合味道的科學變成一種藝術。味蕾上的完美和諧滋味，正正突顯了這些風味獨特的皇牌創作有何非凡之處。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 39
+content-length: 48
 
-星期一至星期六︰早上10時至晚上8時  星期日及公眾假期︰早上11時至晚上7時
+星期一至星期六︰早上10時至晚上8時  <br>
+星期日及公眾假期︰早上11時至晚上7時<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -436,14 +460,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3297ab6f-25d1-4383-b438-dc4421a122cb
+4c1ae65a-9a8a-4c10-8fbf-960ab60365d8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T132344Z
+20151127T050450Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

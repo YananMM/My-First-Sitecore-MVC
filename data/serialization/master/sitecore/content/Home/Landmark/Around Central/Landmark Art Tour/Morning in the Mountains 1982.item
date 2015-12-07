@@ -54,8 +54,36 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: 0b461bdc-ab15-4b5f-8cfe-e7f082da2d9c
+revision: 8764faf4-2b93-4d01-b21a-7c8fa08d3e85
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 42
+
+Art Piece - Morning in the Mountains, 1982
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 125
+
+LANDMARK presents fine arts and painting from world-class artists. Visit LANDMARK now and discover more about the art pieces.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 42
+
+Art Piece - Morning in the Mountains, 1982
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 125
+
+LANDMARK presents fine arts and painting from world-class artists. Visit LANDMARK now and discover more about the art pieces.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -95,14 +123,13 @@ Acrylic on canvas
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 959
+content-length: 980
 
-"The Australian expressionist painter Sir Sidney Nolan was extraordinarily prolific, producing more than 10,000 significant works. He returned to favourite themes again and again - Australian landscapes and explorers, African, Antarctic and European landscapes, and Chinese and Australian-inspired abstractions.
-
-Largely self taught, Sir Sidney had a passion for ideas, literature and art. He never relied on one style or technique, experimenting throughout his life both with figurative and abstract work. He explored many media including charcoal drawing, collage, printmaking and painting with enamel, acrylic and spray paint.
-
-Sir Sidney travelled widely and responded to the spirit of each place he visited. He made the first of several trips to China in 1965. The eight paintings displayed in Exchange Square were painted in 1982 and purchased by Hongkong Land in 1984. They were inspired by a trip to Guilin, the Yangtze River and the Himalayas."
-
+<p>The Australian expressionist painter Sir Sidney Nolan was extraordinarily prolific, producing more than 10,000 significant works. He returned to favourite themes again and again - Australian landscapes and explorers, African, Antarctic and European landscapes, and Chinese and Australian-inspired abstractions.<br>
+<br>
+Largely self taught, Sir Sidney had a passion for ideas, literature and art. He never relied on one style or technique, experimenting throughout his life both with figurative and abstract work. He explored many media including charcoal drawing, collage, printmaking and painting with enamel, acrylic and spray paint.<br>
+<br>
+Sir Sidney travelled widely and responded to the spirit of each place he visited. He made the first of several trips to China in 1965. The eight paintings displayed in Exchange Square were painted in 1982 and purchased by Hongkong Land in 1984. They were inspired by a trip to Guilin, the Yangtze River and the Himalayas.&nbsp;</p>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -116,14 +143,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0b461bdc-ab15-4b5f-8cfe-e7f082da2d9c
+8764faf4-2b93-4d01-b21a-7c8fa08d3e85
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T015152Z
+20151126T105703Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -134,8 +161,37 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: b2134e50-e055-4999-bb76-cb63c7f96e46
+revision: eaddc5d1-fdb9-4493-b584-0d871721b9e7
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 36
+
+艺术品 - Morning in the Mountains, 1982
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+ 置地广塲艺术画廊和艺术表现展出美丽的艺术品，艺术画廊是一个不容错过的绝佳展览。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 36
+
+艺术品 - Morning in the Mountains, 1982
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 41
+
+
+置地广塲艺术画廊和艺术表现展出美丽的艺术品，艺术画廊是一个不容错过的绝佳展览。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -163,7 +219,7 @@ name: Commentary
 key: commentary
 content-length: 250
 
-<file mediaid="{3313DD4A-C93F-408C-8EC1-D3ADE5C41C48}" src="~/media/3313dd4ac93f408c8ec1d3ade5c41c48.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Sir Sidney Nolan OM AC RA 1917-1992/Morning in the Mountains 1982/i_0205_mand20" />
+<file src="~/media/3313dd4ac93f408c8ec1d3ade5c41c48.ashx" mediaid="{3313DD4A-C93F-408C-8EC1-D3ADE5C41C48}" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Sir Sidney Nolan OM AC RA 1917-1992/Morning in the Mountains 1982/i_0205_mand20" />
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -175,14 +231,13 @@ content-length: 7
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 330
+content-length: 351
 
-"悉尼．诺兰爵士是澳洲表现主义画家，一生创作了逾万幅重要作品，十分多产。他喜爱的题材包括澳洲的自然景色与探险家、关于非洲、南极和欧洲的景色，以及具有中国和澳洲色彩的抽象作品。
-
-诺兰爵士热爱创意、文学和艺术，在创作上可说是无师自通。他从不会只坚守一种风格或技巧，而是终生以具象及抽象作品作不同尝试。他曾探索多种艺术媒介，包括木炭画、美术拼贴画、版画、搪瓷画、压克力颜料画布及喷漆画等。
-
-诺兰爵士生前周游列国，并从所到每个地方的精神面貌吸收创作灵感。他于一九六五年首次到中国旅行，其后多次旧地重游。交易广塲展出诺兰爵士于一九八二年创作的八幅压克力颜料画布，是置地公司于一九八四年购入，这些画作的创作灵感来自诺兰爵士曾游历的桂林、长江及喜马拉雅山。"
-
+<p>悉尼．诺兰爵士是澳洲表现主义画家，一生创作了逾万幅重要作品，十分多产。他喜爱的题材包括澳洲的自然景色与探险家、关于非洲、南极和欧洲的景色，以及具有中国和澳洲色彩的抽象作品。<br>
+<br>
+诺兰爵士热爱创意、文学和艺术，在创作上可说是无师自通。他从不会只坚守一种风格或技巧，而是终生以具象及抽象作品作不同尝试。他曾探索多种艺术媒介，包括木炭画、美术拼贴画、版画、搪瓷画、压克力颜料画布及喷漆画等。<br>
+<br>
+诺兰爵士生前周游列国，并从所到每个地方的精神面貌吸收创作灵感。他于一九六五年首次到中国旅行，其后多次旧地重游。交易广塲展出诺兰爵士于一九八二年创作的八幅压克力颜料画布，是置地公司于一九八四年购入，这些画作的创作灵感来自诺兰爵士曾游历的桂林、长江及喜马拉雅山。&nbsp;</p>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -196,14 +251,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b2134e50-e055-4999-bb76-cb63c7f96e46
+eaddc5d1-fdb9-4493-b584-0d871721b9e7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T044356Z
+20151126T125210Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -214,8 +269,36 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 428baeaa-01ad-42ee-9084-3546c08ef820
+revision: 7e3e95a9-bcb5-4d03-9516-2cb82b122653
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 36
+
+藝術品 - Morning in the Mountains, 1982
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+置地廣塲展出由世界級藝術家創作的美術品和繪畫。請即來臨置地廣塲欣賞更多藝術作品。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 36
+
+藝術品 - Morning in the Mountains, 1982
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 40
+
+置地廣塲展出由世界級藝術家創作的美術品和繪畫。請即來臨置地廣塲欣賞更多藝術作品。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -243,7 +326,7 @@ name: Commentary
 key: commentary
 content-length: 250
 
-<file mediaid="{CC77952A-20BA-453A-AFA7-ED8CEA0F6BE1}" src="~/media/cc77952a20ba453aafa7ed8cea0f6be1.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Sir Sidney Nolan OM AC RA 1917-1992/Morning in the Mountains 1982/i_0305_cant20" />
+<file mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Sir Sidney Nolan OM AC RA 1917-1992/Morning in the Mountains 1982/i_0305_cant20" mediaid="{CC77952A-20BA-453A-AFA7-ED8CEA0F6BE1}" src="~/media/cc77952a20ba453aafa7ed8cea0f6be1.ashx" />
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -255,14 +338,13 @@ content-length: 7
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 330
+content-length: 351
 
-"悉尼．諾蘭爵士是澳洲表現主義畫家，一生創作了逾萬幅重要作品，十分多產。他喜愛的題材包括澳洲的自然景色與探險家、關於非洲、南極和歐洲的景色，以及具有中國和澳洲色彩的抽象作品。
-
-諾蘭爵士熱愛創意、文學和藝術，在創作上可說是無師自通。他從不會只堅守一種風格或技巧，而是終生以具象及抽象作品作不同嘗試。他曾探索多種藝術媒介，包括木炭畫、美術拼貼畫、版畫、搪瓷畫、壓克力顏料畫布及噴漆畫等。
-
-諾蘭爵士生前周遊列國，並從所到每個地方的精神面貌吸收創作靈感。他於一九六五年首次到中國旅行，其後多次舊地重遊。交易廣塲展出諾蘭爵士於一九八二年創作的八幅壓克力顏料畫布，是置地公司於一九八四年購入，這些畫作的創作靈感來自諾蘭爵士曾遊歷的桂林、長江及喜馬拉雅山。"
-
+<p>悉尼．諾蘭爵士是澳洲表現主義畫家，一生創作了逾萬幅重要作品，十分多產。他喜愛的題材包括澳洲的自然景色與探險家、關於非洲、南極和歐洲的景色，以及具有中國和澳洲色彩的抽象作品。<br>
+<br>
+諾蘭爵士熱愛創意、文學和藝術，在創作上可說是無師自通。他從不會只堅守一種風格或技巧，而是終生以具象及抽象作品作不同嘗試。他曾探索多種藝術媒介，包括木炭畫、美術拼貼畫、版畫、搪瓷畫、壓克力顏料畫布及噴漆畫等。<br>
+<br>
+諾蘭爵士生前周遊列國，並從所到每個地方的精神面貌吸收創作靈感。他於一九六五年首次到中國旅行，其後多次舊地重遊。交易廣塲展出諾蘭爵士於一九八二年創作的八幅壓克力顏料畫布，是置地公司於一九八四年購入，這些畫作的創作靈感來自諾蘭爵士曾遊歷的桂林、長江及喜馬拉雅山。&nbsp;</p>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -276,14 +358,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-428baeaa-01ad-42ee-9084-3546c08ef820
+7e3e95a9-bcb5-4d03-9516-2cb82b122653
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T044359Z
+20151126T125211Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

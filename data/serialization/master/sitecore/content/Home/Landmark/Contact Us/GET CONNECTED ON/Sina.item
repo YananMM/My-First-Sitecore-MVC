@@ -23,10 +23,17 @@ key: social media css
 content-length: 18
 
 icomoon-sina-weibo
+----field----
+field: {70EB4A0A-C7DF-4734-B1C8-9C37196B596D}
+name: Social Media Link
+key: social media link
+content-length: 91
+
+<link linktype="external" url="http://www.weibo.com/login.php" anchor="" target="_blank" />
 ----version----
 language: en
 version: 1
-revision: a328d84f-fb96-4204-838e-ddcda450b5ff
+revision: f705259b-dbc2-434a-a472-4432444dbc3d
 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a328d84f-fb96-4204-838e-ddcda450b5ff
+f705259b-dbc2-434a-a472-4432444dbc3d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20150810T061053Z
+20151124T081715Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

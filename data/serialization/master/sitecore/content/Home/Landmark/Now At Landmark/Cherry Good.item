@@ -10,6 +10,13 @@ template: {4CDF5CD9-40F0-4F0B-A095-7773CE6CF582}
 templatekey: T4 Page
 
 ----field----
+field: {97D8F0A6-5CD0-463A-B29C-6C7BDF10F44B}
+name: Article Callout Image
+key: article callout image
+content-length: 58
+
+<image mediaid="{49F5CA6B-EDA5-4C5F-ADC8-D701F0B550CD}" />
+----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Portrait Callout Image
 key: article portrait callout image
@@ -23,6 +30,13 @@ key: article date
 content-length: 16
 
 20150831T160000Z
+----field----
+field: {7ABD92FE-50B8-47CB-8AAC-938A1FB099A2}
+name: Tags
+key: tags
+content-length: 272
+
+{410058FD-4835-43BD-9FC0-430DAF3C8381}|{2ED5B361-4D7A-4A48-B63E-8FE23B71DB8E}|{6B69973D-6FCC-45B2-9C75-ECCBC56F42FC}|{C7F06241-2951-4647-8610-4853F73C07DF}|{983E7317-DB51-4EFE-9081-671D78C971C2}|{FC943B68-DF20-4326-A181-6B8CCEBD425F}|{3FBE00DD-2724-453D-8208-D0E3425672F1}
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -47,7 +61,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 2e926540-9afa-47a5-abb8-18e24527d740
+revision: 54e6468f-ac9f-43cb-80c3-c42c2a3cec5c
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -57,14 +71,23 @@ content-length: 51
 
 Cherry Good! ZUMA’s New Dessert Blends Sweet & Sour
 ----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 0
+
+
+----field----
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
 key: article content
-content-length: 1323
+content-length: 1315
 
-<p>Japan is famous for its cherry blossom and its cherries. The Morello cherry is one of the most popular varieties, and is dark-skinned and tart; it also is the inspiration behind an amazing dessert that is a balance of sweet, sour and texture. </p>
-<p>Chef Eddie of ZUMA has taken advantage of this wonderful seasonal fruit to create a yoghurt ice-cream and meringue that provides the perfect conclusion to a meal at this top spot in LANDMARK ATRIUM. </p>
-<p>Eddie uses organic Japanese soy milk to make his own homemade almond tofu, which he then pairs with the mouthwateringly smooth and silky ice-cream, crispy meringue and the sour Morello cherries. The dessert &ndash; which is bursting with taste &ndash; is being served exclusively at ZUMA during September.</p>
+<p>Japan is famous for its cherry blossom and its cherries. The Morello cherry is one of the most popular varieties, and is dark-skinned and tart; it also is the inspiration behind an amazing dessert that is a balance of sweet, sour and texture.<br>
+<br>
+Chef Eddie of ZUMA has taken advantage of this wonderful seasonal fruit to create a yoghurt ice-cream and meringue that provides the perfect conclusion to a meal at this top spot in LANDMARK ATRIUM.<br>
+<br>
+Eddie uses organic Japanese soy milk to make his own homemade almond tofu, which he then pairs with the mouthwateringly smooth and silky ice-cream, crispy meringue and the sour Morello cherries. The dessert &ndash; which is bursting with taste &ndash; is being served exclusively at ZUMA during September.</p>
 <p>&nbsp;</p>
 <p><strong>ZUMA Restaurant
 </strong></p>
@@ -87,8 +110,6 @@ Telephone: 3657 6388
 Mon to Wed 12noon - 1:30am<br>
 Thur &amp; Fri 12noon - 2:00pm<br>
 Sat &amp; Sun 5:00pm - 1:00am </p>
-<br>
-<br>
 <br>
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
@@ -138,14 +159,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2e926540-9afa-47a5-abb8-18e24527d740
+54e6468f-ac9f-43cb-80c3-c42c2a3cec5c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T024917Z
+20151203T014709Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -156,7 +177,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 04dc93a0-3073-4340-b1ea-f9132fa1df9e
+revision: 4753aabc-afec-44ac-a5bd-6ae5f4ced4ca
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -169,12 +190,14 @@ ZUMA新款樱桃甜品糅合酸甜滋味
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
 key: article content
-content-length: 711
+content-length: 706
 
-<p>日本盛产的樱桃，与当地的樱花美景一样，远近驰名。莫利洛樱桃是其中最受欢迎的品种之一，属黑樱桃的一种，味道带酸。ZUMA Lounge &amp; Bar正是从这款樱桃中获得灵感，创作了这款甜中带酸、口感丰富的美味甜品。 </p>
-<p>ZUMA Lounge &amp; Bar的厨师Eddie巧用这种奇妙的时令佳果，制作出蛋白糖霜酸奶酪冰激凌，让来到置地广场中庭光顾其酒吧的食客用过正餐后，能享受这款特色美食，令尝味之旅更显圆满。 </p>
-<p>Eddie先以日本有机豆奶制作出杏仁豆腐，继而加入令人垂涎欲滴的幼滑冰激凌、香脆蛋白糖霜，以及酸甜可口的莫利洛樱桃。此款甜品仅于9月在ZUMA Lounge &amp; Bar独家供应，为你的味蕾带来种种惊喜。</p>
-<p>&nbsp;</p>
+日本盛产的樱桃，与当地的樱花美景一样，远近驰名。莫利洛樱桃是其中最受欢迎的品种之一，属黑樱桃的一种，味道带酸。ZUMA Lounge &amp; Bar正是从这款樱桃中获得灵感，创作了这款甜中带酸、口感丰富的美味甜品。<br>
+<br>
+ZUMA Lounge &amp; Bar的厨师Eddie巧用这种奇妙的时令佳果，制作出蛋白糖霜酸奶酪冰激凌，让来到置地广场中庭光顾其酒吧的食客用过正餐后，能享受这款特色美食，令尝味之旅更显圆满。<br>
+<br>
+Eddie先以日本有机豆奶制作出杏仁豆腐，继而加入令人垂涎欲滴的幼滑冰激凌、香脆蛋白糖霜，以及酸甜可口的莫利洛樱桃。此款甜品仅于9月在ZUMA Lounge &amp; Bar独家供应，为你的味蕾带来种种惊喜。<br>
+<br>
 <p><strong>ZUMA Restaurant </strong></p>
 <p>地址∶置地广塲中庭5楼501-503号铺 </p>
 <p>电话∶3657 6388</p>
@@ -189,6 +212,7 @@ content-length: 711
 星期一至三 正午12时至凌晨1时30分<br>
 星期四至五 正午12时至凌晨2时<br>
 星期六至日 下午5时至凌晨1时</p>
+<br>
 <br>
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
@@ -252,14 +276,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-04dc93a0-3073-4340-b1ea-f9132fa1df9e
+4753aabc-afec-44ac-a5bd-6ae5f4ced4ca
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T024941Z
+20151203T064234Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -270,7 +294,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 5c5d4ec3-7306-4e7e-9cf7-7c7f93ca1ebf
+revision: af3206b3-11e8-459b-a154-d21aea013b06
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -283,29 +307,30 @@ ZUMA新款櫻桃甜品糅合酸甜滋味
 field: {79621215-3D52-4E45-A5DC-B82255B34BE3}
 name: Article Content
 key: article content
-content-length: 749
+content-length: 712
 
-<p>日本盛產的櫻桃，與當地的櫻花美景一樣，遠近馳名。莫利洛櫻桃是其中最受歡迎的品種之一，屬黑櫻桃的一種，味道帶酸，而ZUMA正是從這款櫻桃中擷取靈感，創作出這款甜中帶酸、口感豐富的美味甜品。 </p>
-<p>ZUMA廚師Eddie巧用這種奇妙的時令水果，製作出蛋白糖霜酸乳酪雪糕，讓來到置地廣塲中庭光顧其酒吧的食客吃過正餐後，能享用此特色美食，令嘗味之旅更覺圓滿。  </p>
-<p>Eddie先以日本有機豆奶自家炮製出杏仁豆腐，繼而加入令人垂涎欲滴的幼滑雪糕、香脆蛋白糖霜，以及酸甜可口的莫利洛櫻桃。此款甜品於9月在ZUMA獨家供應，為你的味蕾帶來種種驚喜。</p>
-<p>
-</p>
-<p><strong><br>
-ZUMA Restaurant</strong></p>
+日本盛產的櫻桃，與當地的櫻花美景一樣，遠近馳名。莫利洛櫻桃是其中最受歡迎的品種之一，屬黑櫻桃的一種，味道帶酸，而ZUMA正是從這款櫻桃中擷取靈感，創作出這款甜中帶酸、口感豐富的美味甜品。<br>
+<br>
+ZUMA廚師Eddie巧用這種奇妙的時令水果，製作出蛋白糖霜酸乳酪雪糕，讓來到置地廣塲中庭光顧其酒吧的食客吃過正餐後，能享用此特色美食，令嘗味之旅更覺圓滿。<br>
+<br>
+Eddie先以日本有機豆奶自家炮製出杏仁豆腐，繼而加入令人垂涎欲滴的幼滑雪糕、香脆蛋白糖霜，以及酸甜可口的莫利洛櫻桃。此款甜品於9月在ZUMA獨家供應，為你的味蕾帶來種種驚喜。
+<br>
+<strong><br>
+ZUMA Restaurant</strong>
 <p>地址︰置地廣塲中庭5樓501-503號舖&nbsp;</p>
 <p><span style="font-weight: lighter;">電話︰3657 6388&nbsp;</span></p>
 <p>營業時間︰ <br>
 午餐： 星期一至五 正午12時至下午2時30分<br>
 晚餐： 星期一至五 下午6時至晚上11時； 星期六至日 下午6時30分至晚上11時</p>
-<p>&nbsp;</p>
-<p> </p>
-<p><strong>ZUMA Lounge &amp; Bar</strong></p>
+<strong><br>
+ZUMA Lounge &amp; Bar</strong>
 <p>地址︰置地廣塲中庭6樓601-603號舖&nbsp;</p>
 <p>電話︰3657 6388&nbsp;</p>
 <p>營業時間︰ <br>
 星期一至三 正午12時至凌晨1時30分<br>
 星期四至五 正午12時至凌晨2時<br>
 星期六至日 下午5時至凌晨1時 </p>
+<br>
 <br>
 <br>
 ----field----
@@ -370,14 +395,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5c5d4ec3-7306-4e7e-9cf7-7c7f93ca1ebf
+af3206b3-11e8-459b-a154-d21aea013b06
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T025122Z
+20151203T064321Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

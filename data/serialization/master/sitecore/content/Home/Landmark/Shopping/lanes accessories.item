@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 38
+content-length: 155
 
-{C034122F-A68F-4E3C-827E-C1898533C08E}
+{C034122F-A68F-4E3C-827E-C1898533C08E}|{584512EB-189E-4FEF-9280-3F893DD9A9E1}|{01E67855-9741-4C1C-9FCD-2432982120B6}|{7895E95B-BA35-4C28-9325-0BB7443E6945}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-308
 ----version----
 language: en
 version: 1
-revision: fefecb42-a9d0-4774-81fb-bcb659148291
+revision: 15a3984d-db2c-4c25-932a-c7a4e0b231e2
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -78,12 +78,19 @@ content-length: 845
 
 <p>Lane&rsquo;s Accessories is a speciality boutique known for its unique luxury scarf and accessory collection, offering an international selection of stylish designer accessories and one-of-a-kind vintage treasures. Established in 2008, Lane&rsquo;s Accessories brings the European specialty store concept to Hong Kong. Inspired by the small luxury boutiques of Rue Saint Honore in Paris, the interior d&eacute;cor combines timeless classic elements with an antique touch to create a refined yet cosy ambience. Elements such as the pastel-coloured facade, cosy fireplaces, velvet sofas and antique chandeliers give visitors the experience of shopping in Europe without the need to travel. The exclusive and extensive product range has created a unique niche for Lane&rsquo;s, which sets it apart from other retailers in the luxury segment.</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 18
+
+Lane's Accessories
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 24
+content-length: 0
 
-Lanes, Lane, Accessories
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -116,16 +123,17 @@ Lane's Accessories
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 813
+content-length: 845
 
-Lane’s Accessories is a speciality boutique known for its unique luxury scarf and accessory collection, offering an international selection of stylish designer accessories and one-of-a-kind vintage treasures. Established in 2008, Lane’s Accessories brings the European specialty store concept to Hong Kong. Inspired by the small luxury boutiques of Rue Saint Honore in Paris, the interior décor combines timeless classic elements with an antique touch to create a refined yet cosy ambience. Elements such as the pastel-coloured facade, cosy fireplaces, velvet sofas and antique chandeliers give visitors the experience of shopping in Europe without the need to travel. The exclusive and extensive product range has created a unique niche for Lane’s, which sets it apart from other retailers in the luxury segment.
+<p>Lane&rsquo;s Accessories is a speciality boutique known for its unique luxury scarf and accessory collection, offering an international selection of stylish designer accessories and one-of-a-kind vintage treasures. Established in 2008, Lane&rsquo;s Accessories brings the European specialty store concept to Hong Kong. Inspired by the small luxury boutiques of Rue Saint Honore in Paris, the interior d&eacute;cor combines timeless classic elements with an antique touch to create a refined yet cosy ambience. Elements such as the pastel-coloured facade, cosy fireplaces, velvet sofas and antique chandeliers give visitors the experience of shopping in Europe without the need to travel. The exclusive and extensive product range has created a unique niche for Lane&rsquo;s, which sets it apart from other retailers in the luxury segment.</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 52
+content-length: 65
 
-Mon - Sat 10:30am-7pm Sun & Public Holidays 11am-7pm
+Mon - Sat 10:30am-7pm <br>
+Sun &amp; Public Holidays 11am-7pm<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -167,14 +175,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fefecb42-a9d0-4774-81fb-bcb659148291
+15a3984d-db2c-4c25-932a-c7a4e0b231e2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T132644Z
+20151127T050724Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -185,7 +193,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: c6efc019-e0cd-4833-939a-6a7fa108ec61
+revision: 98ca975d-0427-4aaf-b4cc-42da15346aa7
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -209,12 +217,19 @@ content-length: 295
 
 <p>Lane&rsquo;s Accessories以华丽别致的围巾与配饰，赢尽女士们欢心。这家自成一格的饰物专卖店，网罗了来自世界各地名师设计的配饰，以及独一无二的古董饰物。此店于2008年成立，把欧洲专卖店概念推广至香港。店铺设计恍如巴黎 Rue Saint-Honore名店街上的特色小店，店内的优雅布置以及既怀旧又舒适的氛围，在香港更属少见。室内设计以素色为主，法式壁炉配天鹅绒沙发和古董水晶吊灯的装饰，令人犹如置身于欧洲的精致小店。Lane&rsquo;s Accessories的不少产品均属独此一家之作，即使在名店也无法得见，绝对是品位人士寻找美丽精巧配饰的好地方。</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 18
+
+Lane's Accessories
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 24
+content-length: 0
 
-Lanes, Lane, Accessories
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -247,16 +262,17 @@ Lane's Accessories
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 276
+content-length: 295
 
-Lane’s Accessories以华丽别致的围巾与配饰，赢尽女士们欢心。这家自成一格的饰物专卖店，网罗了来自世界各地名师设计的配饰，以及独一无二的古董饰物。此店于2008年成立，把欧洲专卖店概念推广至香港。店铺设计恍如巴黎 Rue Saint-Honore名店街上的特色小店，店内的优雅布置以及既怀旧又舒适的氛围，在香港更属少见。室内设计以素色为主，法式壁炉配天鹅绒沙发和古董水晶吊灯的装饰，令人犹如置身于欧洲的精致小店。Lane’s Accessories的不少产品均属独此一家之作，即使在名店也无法得见，绝对是品位人士寻找美丽精巧配饰的好地方。
+<p>Lane&rsquo;s Accessories以华丽别致的围巾与配饰，赢尽女士们欢心。这家自成一格的饰物专卖店，网罗了来自世界各地名师设计的配饰，以及独一无二的古董饰物。此店于2008年成立，把欧洲专卖店概念推广至香港。店铺设计恍如巴黎 Rue Saint-Honore名店街上的特色小店，店内的优雅布置以及既怀旧又舒适的氛围，在香港更属少见。室内设计以素色为主，法式壁炉配天鹅绒沙发和古董水晶吊灯的装饰，令人犹如置身于欧洲的精致小店。Lane&rsquo;s Accessories的不少产品均属独此一家之作，即使在名店也无法得见，绝对是品位人士寻找美丽精巧配饰的好地方。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 42
+content-length: 51
 
-星期一至星期六︰早上10时30分至晚上7时  星期日及公众假期︰早上11时至晚上7时
+星期一至星期六︰早上10时30分至晚上7时  <br>
+星期日及公众假期︰早上11时至晚上7时<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -305,14 +321,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c6efc019-e0cd-4833-939a-6a7fa108ec61
+98ca975d-0427-4aaf-b4cc-42da15346aa7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T132629Z
+20151202T063402Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -323,7 +339,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 9d4d8994-e495-4cdc-a886-9444f9688360
+revision: ee19be53-4452-4c80-8161-18659425a5b7
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -347,12 +363,19 @@ content-length: 297
 
 <p>Lane&rsquo;s Accessories以華麗別致的圍巾與配飾，贏盡女士們歡心。這家自成一格的飾物專門店，網羅了來自世界各地名師設計的配飾，以及獨一無二的古董飾物。此店於2008年成立，把歐洲專賣店概念推廣至香港。店舖設計恍如巴黎 Rue Saint-Honore名店街上的特色小店，店內的優雅佈置，以及既懷舊又舒適的氛圍，在香港更屬少見。室內設計以素色為主，法式壁爐配天鵝絨沙發和古董水晶吊燈的裝潢，令人猶如置身於歐洲的精緻小店。Lane&rsquo;s Accessories的不少產品均屬只此一家之作，即使在名店也無法找到，絕對是有品味人士尋找美麗精巧配飾的好地方。</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 18
+
+Lane's Accessories
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 24
+content-length: 0
 
-Lanes, Lane, Accessories
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -385,16 +408,17 @@ Lane's Accessories
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 278
+content-length: 297
 
-Lane’s Accessories以華麗別致的圍巾與配飾，贏盡女士們歡心。這家自成一格的飾物專門店，網羅了來自世界各地名師設計的配飾，以及獨一無二的古董飾物。此店於2008年成立，把歐洲專賣店概念推廣至香港。店舖設計恍如巴黎 Rue Saint-Honore名店街上的特色小店，店內的優雅佈置，以及既懷舊又舒適的氛圍，在香港更屬少見。室內設計以素色為主，法式壁爐配天鵝絨沙發和古董水晶吊燈的裝潢，令人猶如置身於歐洲的精緻小店。Lane’s Accessories的不少產品均屬只此一家之作，即使在名店也無法找到，絕對是有品味人士尋找美麗精巧配飾的好地方。
+<p>Lane&rsquo;s Accessories以華麗別致的圍巾與配飾，贏盡女士們歡心。這家自成一格的飾物專門店，網羅了來自世界各地名師設計的配飾，以及獨一無二的古董飾物。此店於2008年成立，把歐洲專賣店概念推廣至香港。店舖設計恍如巴黎 Rue Saint-Honore名店街上的特色小店，店內的優雅佈置，以及既懷舊又舒適的氛圍，在香港更屬少見。室內設計以素色為主，法式壁爐配天鵝絨沙發和古董水晶吊燈的裝潢，令人猶如置身於歐洲的精緻小店。Lane&rsquo;s Accessories的不少產品均屬只此一家之作，即使在名店也無法找到，絕對是有品味人士尋找美麗精巧配飾的好地方。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 42
+content-length: 50
 
-星期一至星期六︰早上10時30分至晚上7時  星期日及公眾假期︰早上11時至晚上7時
+星期一至星期六︰早上10時30分至晚上7時 <br>
+星期日及公眾假期︰早上11時至晚上7時<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -436,14 +460,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9d4d8994-e495-4cdc-a886-9444f9688360
+ee19be53-4452-4c80-8161-18659425a5b7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T132604Z
+20151127T050709Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

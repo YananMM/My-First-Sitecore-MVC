@@ -54,7 +54,7 @@ shop-309-313A
 ----version----
 language: en
 version: 1
-revision: fcf3ee47-b7df-4fba-a755-cafeb1f4f814
+revision: 7258be38-4f01-4170-a326-22ddadeef1ac
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -88,9 +88,9 @@ Bookazine (Landmark Prince's)
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 46
+content-length: 114
 
-A wealth of books found from around the world.
+With a focus on offering new and innovative products, Bookazine is a family-run bookshop chain with a difference. 
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -102,9 +102,9 @@ Bookazine (Landmark Prince's)
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 46
+content-length: 114
 
-A wealth of books found from around the world.
+With a focus on offering new and innovative products, Bookazine is a family-run bookshop chain with a difference. 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -123,10 +123,10 @@ content-length: 654
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 58
+content-length: 70
 
-Mon-Sat 9:30am-7:30pm
-Sun & Public Holidays 10:30am-6:30pm
+Mon-Sat 9:30am-7:30pm<br>
+Sun &amp; Public Holidays 10:30am-6:30pm<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -168,14 +168,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-fcf3ee47-b7df-4fba-a755-cafeb1f4f814
+7258be38-4f01-4170-a326-22ddadeef1ac
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151126T021653Z
+20151127T030015Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -186,7 +186,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 2344858b-415a-4fd8-b4f5-99d2cc5f8ed5
+revision: b9fd6d05-0949-4913-b766-1e023d130fc2
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -206,16 +206,23 @@ content-length: 9
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 196
+content-length: 203
 
-Bookazine 是一间家族式经营的香港本土连锁书店。有别于一般书店，这里致力为顾客提供创意盎然又与众不同的产品，包括从英国、澳大利亚、德国、法国及南美洲严格挑选的独特及优质儿童书籍及产品、林林总总的中英文国际杂志、一系列环保玩具及环保袋、儿童用指甲油、英国进口贺卡及精致糖果、派对用品、新颖文具、磁贴，以及传统木制玩具等。在Bookazine选购的产品，必能让收到礼物的小朋友们爱不释手。
+<p>Bookazine 是一间家族式经营的香港本土连锁书店。有别于一般书店，这里致力为顾客提供创意盎然又与众不同的产品，包括从英国、澳大利亚、德国、法国及南美洲严格挑选的独特及优质儿童书籍及产品、林林总总的中英文国际杂志、一系列环保玩具及环保袋、儿童用指甲油、英国进口贺卡及精致糖果、派对用品、新颖文具、磁贴，以及传统木制玩具等。在Bookazine选购的产品，必能让收到礼物的小朋友们爱不释手。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 29
+
+Bookazine (LANDMARK PRINCE'S)
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 9
+content-length: 28
 
-云集世界各地书籍。
+Bookazine 是一间家族式经营的香港本土连锁书店。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -227,9 +234,9 @@ Bookazine (LANDMARK PRINCE'S)
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 9
+content-length: 28
 
-云集世界各地书籍。
+Bookazine 是一间家族式经营的香港本土连锁书店。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -241,17 +248,17 @@ Bookazine (Landmark Prince's)
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 196
+content-length: 203
 
-Bookazine 是一间家族式经营的香港本土连锁书店。有别于一般书店，这里致力为顾客提供创意盎然又与众不同的产品，包括从英国、澳大利亚、德国、法国及南美洲严格挑选的独特及优质儿童书籍及产品、林林总总的中英文国际杂志、一系列环保玩具及环保袋、儿童用指甲油、英国进口贺卡及精致糖果、派对用品、新颖文具、磁贴，以及传统木制玩具等。在Bookazine选购的产品，必能让收到礼物的小朋友们爱不释手。
+<p>Bookazine 是一间家族式经营的香港本土连锁书店。有别于一般书店，这里致力为顾客提供创意盎然又与众不同的产品，包括从英国、澳大利亚、德国、法国及南美洲严格挑选的独特及优质儿童书籍及产品、林林总总的中英文国际杂志、一系列环保玩具及环保袋、儿童用指甲油、英国进口贺卡及精致糖果、派对用品、新颖文具、磁贴，以及传统木制玩具等。在Bookazine选购的产品，必能让收到礼物的小朋友们爱不释手。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 49
+content-length: 57
 
-星期一至星期六︰早上9时30分至晚上7时30分
-星期日及公众假期︰早上10时30分至晚上6时30分
+星期一至星期六︰早上9时30分至晚上7时30分<br>
+星期日及公众假期︰早上10时30分至晚上6时30分<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -300,14 +307,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2344858b-415a-4fd8-b4f5-99d2cc5f8ed5
+b9fd6d05-0949-4913-b766-1e023d130fc2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151112T031847Z
+20151127T030033Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -318,7 +325,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 29860255-c2e1-4896-82ee-7e43502798d7
+revision: 6b074c01-e272-44a1-872c-d208c8b50c56
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -338,16 +345,23 @@ content-length: 9
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 191
+content-length: 198
 
-Bookazine 是一間家族式經營的香港本土連鎖書店。有別於一般書店，這裏致力為顧客提供具創意又與眾不同的產品，包括從英國、澳州、德國、法國及南美州嚴選獨特及優質兒童書籍及產品、林林總總的中英文國際雜誌、一系列環保玩具及環保袋、兒童適用指甲油、英國進口賀卡及精緻糖果、派對用品、新穎文具、磁石貼，以及傳統木製玩具等。在Bookazine選購的產品，必能令收禮物的小朋友們愛不釋手。
+<p>Bookazine 是一間家族式經營的香港本土連鎖書店。有別於一般書店，這裏致力為顧客提供具創意又與眾不同的產品，包括從英國、澳州、德國、法國及南美州嚴選獨特及優質兒童書籍及產品、林林總總的中英文國際雜誌、一系列環保玩具及環保袋、兒童適用指甲油、英國進口賀卡及精緻糖果、派對用品、新穎文具、磁石貼，以及傳統木製玩具等。在Bookazine選購的產品，必能令收禮物的小朋友們愛不釋手。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 29
+
+Bookazine (LANDMARK PRINCE'S)
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 9
+content-length: 28
 
-雲集世界各地書籍。
+Bookazine 是一間家族式經營的香港本土連鎖書店。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -359,9 +373,9 @@ Bookazine (LANDMARK PRINCE'S)
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 9
+content-length: 28
 
-雲集世界各地書籍。
+Bookazine 是一間家族式經營的香港本土連鎖書店。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -373,17 +387,17 @@ Bookazine (Landmark Prince's)
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 191
+content-length: 198
 
-Bookazine 是一間家族式經營的香港本土連鎖書店。有別於一般書店，這裏致力為顧客提供具創意又與眾不同的產品，包括從英國、澳州、德國、法國及南美州嚴選獨特及優質兒童書籍及產品、林林總總的中英文國際雜誌、一系列環保玩具及環保袋、兒童適用指甲油、英國進口賀卡及精緻糖果、派對用品、新穎文具、磁石貼，以及傳統木製玩具等。在Bookazine選購的產品，必能令收禮物的小朋友們愛不釋手。
+<p>Bookazine 是一間家族式經營的香港本土連鎖書店。有別於一般書店，這裏致力為顧客提供具創意又與眾不同的產品，包括從英國、澳州、德國、法國及南美州嚴選獨特及優質兒童書籍及產品、林林總總的中英文國際雜誌、一系列環保玩具及環保袋、兒童適用指甲油、英國進口賀卡及精緻糖果、派對用品、新穎文具、磁石貼，以及傳統木製玩具等。在Bookazine選購的產品，必能令收禮物的小朋友們愛不釋手。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 49
+content-length: 57
 
-星期一至星期六︰早上9時30分至晚上7時30分
-星期日及公眾假期︰早上10時30分至晚上6時30分
+星期一至星期六︰早上9時30分至晚上7時30分<br>
+星期日及公眾假期︰早上10時30分至晚上6時30分<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -425,14 +439,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-29860255-c2e1-4896-82ee-7e43502798d7
+6b074c01-e272-44a1-872c-d208c8b50c56
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151112T031853Z
+20151127T030024Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

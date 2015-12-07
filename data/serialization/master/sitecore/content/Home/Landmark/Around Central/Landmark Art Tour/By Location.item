@@ -40,8 +40,36 @@ content-length: 194
 ----version----
 language: en
 version: 1
-revision: 736cd037-badb-46c0-8a38-fc1361105547
+revision: f4c3792c-7d8f-4070-9a62-c31c8cfb02e6
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 21
+
+Fine Arts in Central 
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 125
+
+LANDMARK presents fine arts and painting from world-class artists. Visit LANDMARK now and discover more about the art pieces.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 21
+
+Fine Arts in Central 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 125
+
+LANDMARK presents fine arts and painting from world-class artists. Visit LANDMARK now and discover more about the art pieces.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -49,6 +77,13 @@ key: page title
 content-length: 20
 
 Fine Arts in Central
+----field----
+field: {D8E8C58F-EDCE-49A9-948C-8558FEBF587D}
+name: Biography Link Text
+key: biography link text
+content-length: 16
+
+ABOUT THE ARTIST
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -62,14 +97,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-736cd037-badb-46c0-8a38-fc1361105547
+f4c3792c-7d8f-4070-9a62-c31c8cfb02e6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151119T033810Z
+20151126T065325Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -80,8 +115,36 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: eb8a785d-a0bb-42ef-af96-865e19286d23
+revision: b3f8a2e7-d50f-49d4-9358-a0f538fecbc7
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+中环艺术
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+置地广塲展出由世界级艺术家创作的美术品和绘画。请即来临置地广塲欣赏更多艺术作品。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 4
+
+中环艺术
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 40
+
+置地广塲展出由世界级艺术家创作的美术品和绘画。请即来临置地广塲欣赏更多艺术作品。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -102,14 +165,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-eb8a785d-a0bb-42ef-af96-865e19286d23
+b3f8a2e7-d50f-49d4-9358-a0f538fecbc7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T141927Z
+20151126T043318Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -120,8 +183,36 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: e169dd5d-a68e-4a2f-b0c3-f0dcb4b6f1ec
+revision: 48676c14-cf31-4443-b2f4-07c367db3291
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 4
+
+中環藝術
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+置地廣塲展出由世界級藝術家創作的美術品和繪畫。請即來臨置地廣塲欣賞更多藝術作品。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 4
+
+中環藝術
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 40
+
+置地廣塲展出由世界級藝術家創作的美術品和繪畫。請即來臨置地廣塲欣賞更多藝術作品。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -142,14 +233,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e169dd5d-a68e-4a2f-b0c3-f0dcb4b6f1ec
+48676c14-cf31-4443-b2f4-07c367db3291
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T142044Z
+20151126T043334Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

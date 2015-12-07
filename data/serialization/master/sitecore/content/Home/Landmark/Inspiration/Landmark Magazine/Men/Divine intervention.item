@@ -15,7 +15,7 @@ name: Article Callout Image
 key: article callout image
 content-length: 58
 
-<image mediaid="{9F7F3F7E-A3A5-4527-AB8C-AF79188F9DC4}" />
+<image mediaid="{EFFFC183-DD3E-4B9F-89EC-D8F06AA657B7}" />
 ----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Portrait Callout Image
@@ -41,9 +41,9 @@ Style A
 field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
 name: Tags
 key: tags
-content-length: 77
+content-length: 116
 
-{233C7FF3-CA0E-46DD-B48C-0B9302FB77B7}|{B0D3BA2C-AEF7-4BAE-81DA-DEA8D1D35591}
+{233C7FF3-CA0E-46DD-B48C-0B9302FB77B7}|{B0D3BA2C-AEF7-4BAE-81DA-DEA8D1D35591}|{42FF35B6-477A-417F-84BA-B11860F3A311}
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -68,7 +68,7 @@ content-length: 155
 ----version----
 language: en
 version: 1
-revision: 864b53e0-b876-4fa1-aa10-c5dc1a3543d9
+revision: 5d3945c4-19d2-40b8-b161-7538431f290f
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -93,6 +93,34 @@ content-length: 256
 
 Mankind’s need to place individuals and objects on a pedestal – from the ancient gods and religious relics to historic photographs and reality TV stars – is as old as civilisation itself. But what drives us to elevate the terrestrial to the status of icon?
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 20
+
+ Divine intervention
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 256
+
+Mankind’s need to place individuals and objects on a pedestal – from the ancient gods and religious relics to historic photographs and reality TV stars – is as old as civilisation itself. But what drives us to elevate the terrestrial to the status of icon?
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 20
+
+ Divine intervention
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 256
+
+Mankind’s need to place individuals and objects on a pedestal – from the ancient gods and religious relics to historic photographs and reality TV stars – is as old as civilisation itself. But what drives us to elevate the terrestrial to the status of icon?
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -112,14 +140,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-864b53e0-b876-4fa1-aa10-c5dc1a3543d9
+5d3945c4-19d2-40b8-b161-7538431f290f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151123T112145Z
+20151126T140408Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -130,7 +158,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: c8edcccf-f699-48ca-85b9-25d544c0de30
+revision: cba132f4-404c-4fff-a3d5-25b5888882ad
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -152,6 +180,34 @@ Illustration by Matt Wisniewski
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
+content-length: 256
+
+Mankind’s need to place individuals and objects on a pedestal – from the ancient gods and religious relics to historic photographs and reality TV stars – is as old as civilisation itself. But what drives us to elevate the terrestrial to the status of icon?
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 19
+
+Divine intervention
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 256
+
+Mankind’s need to place individuals and objects on a pedestal – from the ancient gods and religious relics to historic photographs and reality TV stars – is as old as civilisation itself. But what drives us to elevate the terrestrial to the status of icon?
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 19
+
+Divine intervention
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 256
 
 Mankind’s need to place individuals and objects on a pedestal – from the ancient gods and religious relics to historic photographs and reality TV stars – is as old as civilisation itself. But what drives us to elevate the terrestrial to the status of icon?
@@ -175,14 +231,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c8edcccf-f699-48ca-85b9-25d544c0de30
+cba132f4-404c-4fff-a3d5-25b5888882ad
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T145001Z
+20151125T050848Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -193,7 +249,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: bcda1d0e-4a19-4ec7-bd1d-158245c239ec
+revision: ebc7b881-d7b3-4d84-a2b3-7747c7632ad9
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -219,6 +275,34 @@ content-length: 256
 
 Mankind’s need to place individuals and objects on a pedestal – from the ancient gods and religious relics to historic photographs and reality TV stars – is as old as civilisation itself. But what drives us to elevate the terrestrial to the status of icon?
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 20
+
+ Divine intervention
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 256
+
+Mankind’s need to place individuals and objects on a pedestal – from the ancient gods and religious relics to historic photographs and reality TV stars – is as old as civilisation itself. But what drives us to elevate the terrestrial to the status of icon?
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 20
+
+ Divine intervention
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 256
+
+Mankind’s need to place individuals and objects on a pedestal – from the ancient gods and religious relics to historic photographs and reality TV stars – is as old as civilisation itself. But what drives us to elevate the terrestrial to the status of icon?
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -238,14 +322,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-bcda1d0e-4a19-4ec7-bd1d-158245c239ec
+ebc7b881-d7b3-4d84-a2b3-7747c7632ad9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T144956Z
+20151125T050732Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

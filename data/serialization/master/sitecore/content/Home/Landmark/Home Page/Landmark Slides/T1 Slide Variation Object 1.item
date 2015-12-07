@@ -29,7 +29,7 @@ name: Main Version Slide Style
 key: main version slide style
 content-length: 38
 
-{66B59687-427D-4BB3-8CA3-1F2D4971E301}
+{EDDA98B8-D3CC-4BF0-9DF0-3E4FF82D88E0}
 ----field----
 field: {C3E2079A-4535-458A-87CD-43E564B45E89}
 name: Sub Version Slide Style
@@ -47,29 +47,29 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: b491fdc5-22ea-4da5-b191-5c3dc1f212d3
+revision: 7766800e-b41c-4320-84e1-fc50b7d82852
 
 ----field----
 field: {42999415-3EAC-4B74-A6EB-034271F085B7}
 name: Slide Title
 key: slide title
-content-length: 4
+content-length: 24
 
-xmas
+Christmas is for Sharing
 ----field----
 field: {DF2B5F7C-2BD8-4762-982A-8F461123C5C2}
 name: Slide Image
 key: slide image
 content-length: 58
 
-<image mediaid="{6479FA7E-3796-433C-993F-CB015849425F}" />
+<image mediaid="{9BE059B3-74F1-4001-971B-D35D580E9991}" />
 ----field----
 field: {9FAF7DB0-6304-44A3-A1AD-3156F3467264}
 name: Slide Intro
 key: slide intro
-content-length: 0
+content-length: 169
 
-
+Celebrate the true spirit of sharing at LANDMARK and indulge yourself with exquisite rewards. Experience an enchanting Christmas with Santa Paws and The Wishing Machine.
 ----field----
 field: {0E089E2C-C25C-42EF-8323-5D49C81D12FB}
 name: Slide Button Text
@@ -111,14 +111,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b491fdc5-22ea-4da5-b191-5c3dc1f212d3
+7766800e-b41c-4320-84e1-fc50b7d82852
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T040258Z
+20151204T085310Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -129,8 +129,43 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 3fd51cb3-2945-47d3-af88-23b7bd16b860
+revision: a6ff1213-6342-4f47-bc2b-2dda639a19be
 
+----field----
+field: {42999415-3EAC-4B74-A6EB-034271F085B7}
+name: Slide Title
+key: slide title
+content-length: 24
+
+Christmas is for Sharing
+----field----
+field: {DF2B5F7C-2BD8-4762-982A-8F461123C5C2}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{9BE059B3-74F1-4001-971B-D35D580E9991}" />
+----field----
+field: {9FAF7DB0-6304-44A3-A1AD-3156F3467264}
+name: Slide Intro
+key: slide intro
+content-length: 65
+
+今年圣诞，Santa Paws远道送来圣诞许愿装置，让置地广场洋溢浓浓节日气氛之馀，并为所有人带来祝福，重拾由分享而来的真挚喜悦。
+----field----
+field: {0E089E2C-C25C-42EF-8323-5D49C81D12FB}
+name: Slide Button Text
+key: slide button text
+content-length: 4
+
+了解更多
+----field----
+field: {687B71D1-C561-4B9E-B214-32F115925434}
+name: Slide Button Link
+key: slide button link
+content-length: 176
+
+<link linktype="external" url="http://christmas.landmark.hk/tc/index.php?utm_source=landmark&amp;utm_medium=home-banner&amp;utm_campaign=christmas" anchor="" target="_blank" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -158,14 +193,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3fd51cb3-2945-47d3-af88-23b7bd16b860
+a6ff1213-6342-4f47-bc2b-2dda639a19be
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T034648Z
+20151204T023327Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -176,8 +211,43 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 8034994c-ad74-4108-a586-7c4aca2248e5
+revision: 87f6cc77-8fc8-407c-a7e5-387647db5d50
 
+----field----
+field: {42999415-3EAC-4B74-A6EB-034271F085B7}
+name: Slide Title
+key: slide title
+content-length: 24
+
+Christmas is for Sharing
+----field----
+field: {DF2B5F7C-2BD8-4762-982A-8F461123C5C2}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{9BE059B3-74F1-4001-971B-D35D580E9991}" />
+----field----
+field: {9FAF7DB0-6304-44A3-A1AD-3156F3467264}
+name: Slide Intro
+key: slide intro
+content-length: 65
+
+今年聖誕，Santa Paws遠道送來聖誕許願裝置，讓置地廣場洋溢濃濃節日氣氛之餘，並為所有人帶來祝福，重拾由分享而來的真摯喜悅。
+----field----
+field: {0E089E2C-C25C-42EF-8323-5D49C81D12FB}
+name: Slide Button Text
+key: slide button text
+content-length: 4
+
+了解更多
+----field----
+field: {687B71D1-C561-4B9E-B214-32F115925434}
+name: Slide Button Link
+key: slide button link
+content-length: 176
+
+<link linktype="external" url="http://christmas.landmark.hk/tc/index.php?utm_source=landmark&amp;utm_medium=home-banner&amp;utm_campaign=christmas" anchor="" target="_blank" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -205,14 +275,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8034994c-ad74-4108-a586-7c4aca2248e5
+87f6cc77-8fc8-407c-a7e5-387647db5d50
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T034645Z
+20151125T142357Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

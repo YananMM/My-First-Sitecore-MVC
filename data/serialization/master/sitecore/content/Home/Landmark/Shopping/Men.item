@@ -47,7 +47,7 @@ content-length: 186
 ----version----
 language: en
 version: 1
-revision: 2f0f5862-daeb-45ac-b9ec-409386b73ca3
+revision: 8d510a49-c655-479d-b6b0-b5dcb5b64516
 
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
@@ -118,14 +118,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2f0f5862-daeb-45ac-b9ec-409386b73ca3
+8d510a49-c655-479d-b6b0-b5dcb5b64516
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T024541Z
+20151201T025048Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -136,7 +136,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 96f8c55b-c233-4638-9d3c-46f5750373bc
+revision: 66c052bc-b31b-46c1-8fb7-4c109534ba17
 
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
@@ -181,6 +181,13 @@ content-length: 2
 
 男士
 ----field----
+field: {EFCE68B8-9A68-4ECB-AB78-0C36EB48CA60}
+name: Related Exclusive Item
+key: related exclusive item
+content-length: 38
+
+{BF4825BA-3081-4912-AC42-F91226288663}
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -207,14 +214,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-96f8c55b-c233-4638-9d3c-46f5750373bc
+66c052bc-b31b-46c1-8fb7-4c109534ba17
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T024625Z
+20151201T095135Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

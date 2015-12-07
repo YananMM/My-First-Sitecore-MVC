@@ -15,7 +15,7 @@ name: Article Callout Image
 key: article callout image
 content-length: 58
 
-<image mediaid="{31F1C306-BC64-41FD-8A2C-E0C27F358042}" />
+<image mediaid="{5B20F85C-F8F0-4E0C-9742-200232839D32}" />
 ----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Portrait Callout Image
@@ -41,9 +41,9 @@ Style A
 field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
 name: Tags
 key: tags
-content-length: 350
+content-length: 389
 
-{69A5A22B-0847-4AAC-B469-7647F06E0FB6}|{B0D3BA2C-AEF7-4BAE-81DA-DEA8D1D35591}|{78929CFB-5CCD-4D03-980C-8C005EC1C316}|{4BA92D9A-3F7B-4DC2-B9A2-92FDF99C6D06}|{6294D9C0-4C15-4033-8009-F5369A00EAFA}|{4D041C7A-6C38-490D-B943-ECCEFB09ECC3}|{5D0124C8-DDA9-45DE-ADC5-3A6515F22B74}|{CAD4270E-9A4D-407F-84A8-48035CA5704B}|{876B4036-AAD6-41C3-BCEE-75076BC3C2A8}
+{69A5A22B-0847-4AAC-B469-7647F06E0FB6}|{B0D3BA2C-AEF7-4BAE-81DA-DEA8D1D35591}|{78929CFB-5CCD-4D03-980C-8C005EC1C316}|{4BA92D9A-3F7B-4DC2-B9A2-92FDF99C6D06}|{6294D9C0-4C15-4033-8009-F5369A00EAFA}|{4D041C7A-6C38-490D-B943-ECCEFB09ECC3}|{5D0124C8-DDA9-45DE-ADC5-3A6515F22B74}|{CAD4270E-9A4D-407F-84A8-48035CA5704B}|{876B4036-AAD6-41C3-BCEE-75076BC3C2A8}|{42FF35B6-477A-417F-84BA-B11860F3A311}
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -68,7 +68,7 @@ content-length: 155
 ----version----
 language: en
 version: 1
-revision: da231084-a915-4c9d-b7d2-66631289af93
+revision: 5eb3a998-033d-4c14-98fb-4a0383cceca5
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -88,9 +88,37 @@ Words by Simon de Burton
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
-content-length: 94
+content-length: 95
 
-“It often makes good sense to buy a contemporary version of a classic rather than an original”
+“It often makes good sense to buy a contemporary version of a classic rather than an original”.
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 28
+
+High time for haute horology
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 95
+
+“It often makes good sense to buy a contemporary version of a classic rather than an original”.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 28
+
+High time for haute horology
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 95
+
+“It often makes good sense to buy a contemporary version of a classic rather than an original”.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -111,14 +139,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-da231084-a915-4c9d-b7d2-66631289af93
+5eb3a998-033d-4c14-98fb-4a0383cceca5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T080033:635833440332270644Z
+20151126T140403Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -129,7 +157,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 5d594619-9501-43b7-b35d-2b24da84ea57
+revision: 53fbbea4-7b74-4e5d-80b0-cea7d3d687a7
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -149,9 +177,37 @@ Words by Simon de Burton
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
-content-length: 94
+content-length: 95
 
-“It often makes good sense to buy a contemporary version of a classic rather than an original”
+“It often makes good sense to buy a contemporary version of a classic rather than an original”.
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 28
+
+High time for haute horology
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 95
+
+“It often makes good sense to buy a contemporary version of a classic rather than an original”.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 28
+
+High time for haute horology
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 95
+
+“It often makes good sense to buy a contemporary version of a classic rather than an original”.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -172,14 +228,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-5d594619-9501-43b7-b35d-2b24da84ea57
+53fbbea4-7b74-4e5d-80b0-cea7d3d687a7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151028T081857:635816171371192654Z
+20151125T050017Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -190,7 +246,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: e57f74b1-a6cf-4437-9854-9c3c15e90458
+revision: a27f4663-84c0-4fdd-aec3-b58f9c5c8cc8
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -214,6 +270,34 @@ content-length: 94
 
 “It often makes good sense to buy a contemporary version of a classic rather than an original”
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 28
+
+High time for haute horology
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 95
+
+“It often makes good sense to buy a contemporary version of a classic rather than an original”.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 28
+
+High time for haute horology
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 95
+
+“It often makes good sense to buy a contemporary version of a classic rather than an original”.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -233,14 +317,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e57f74b1-a6cf-4437-9854-9c3c15e90458
+a27f4663-84c0-4fdd-aec3-b58f9c5c8cc8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T080816Z
+20151125T050106Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

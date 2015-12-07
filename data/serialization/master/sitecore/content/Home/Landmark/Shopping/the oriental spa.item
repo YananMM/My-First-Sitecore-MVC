@@ -22,11 +22,11 @@ name: Tags
 key: tags
 content-length: 194
 
-{C034122F-A68F-4E3C-827E-C1898533C08E}|{101C4A58-6D7D-4905-AD44-F0F054282440}|{FBD8F196-12F3-4A12-AD62-DB44CBE512AB}|{E95D9EB0-E7E3-4CA5-A41F-B1AF769A5F72}|{7F1B0BFA-C6FF-4BAD-89B9-25D56D36DA5E}
+{6ADD337A-5273-4504-AD72-8C601D69C6F9}|{101C4A58-6D7D-4905-AD44-F0F054282440}|{FBD8F196-12F3-4A12-AD62-DB44CBE512AB}|{E95D9EB0-E7E3-4CA5-A41F-B1AF769A5F72}|{7F1B0BFA-C6FF-4BAD-89B9-25D56D36DA5E}
 ----version----
 language: en
 version: 1
-revision: c3b5a872-22f2-4aff-b469-c0f55fbaf9bd
+revision: 42c5cb11-de9c-49ce-827f-5ebbaddf7b77
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -46,23 +46,30 @@ Award-winning spa offers a diverse array of holistic services, spa and beauty tr
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 719
+content-length: 726
 
-Offering a uniquely personalised experience, The Oriental Spa at The Landmark Mandarin Oriental is the perfect urban escape. Spread over two luxurious floors, this harmonious place of wellbeing offers far more than the traditional spa experience. The award-winning Oriental Spa offers a diverse array of holistic services including yoga and Pilates, a fitness centre and an 18m lap pool, as well as spa and beauty treatments including signature treatments by Sodashi, the acclaimed chemical-free spa and skincare range from Australia, and The Oriental Spa for Men product lines, as well as heat and water experiences, wellness programs and workshops, and a spa boutique featuring internationally renowned luxury brands.
+<p>Offering a uniquely personalised experience, The Oriental Spa at The Landmark Mandarin Oriental is the perfect urban escape. Spread over two luxurious floors, this harmonious place of wellbeing offers far more than the traditional spa experience. The award-winning Oriental Spa offers a diverse array of holistic services including yoga and Pilates, a fitness centre and an 18m lap pool, as well as spa and beauty treatments including signature treatments by Sodashi, the acclaimed chemical-free spa and skincare range from Australia, and The Oriental Spa for Men product lines, as well as heat and water experiences, wellness programs and workshops, and a spa boutique featuring internationally renowned luxury brands.</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 16
+
+The Oriental Spa
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 16
+content-length: 0
 
-The,Oriental,Spa
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 89
+content-length: 125
 
-Award-winning spa offers a diverse array of holistic services, spa and beauty treatments.
+Offering a uniquely personalised experience, The Oriental Spa at The Landmark Mandarin Oriental is the perfect urban escape. 
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -74,9 +81,9 @@ The Oriental Spa
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 89
+content-length: 125
 
-Award-winning spa offers a diverse array of holistic services, spa and beauty treatments.
+Offering a uniquely personalised experience, The Oriental Spa at The Landmark Mandarin Oriental is the perfect urban escape. 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -88,16 +95,18 @@ The Oriental Spa
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 719
+content-length: 726
 
-Offering a uniquely personalised experience, The Oriental Spa at The Landmark Mandarin Oriental is the perfect urban escape. Spread over two luxurious floors, this harmonious place of wellbeing offers far more than the traditional spa experience. The award-winning Oriental Spa offers a diverse array of holistic services including yoga and Pilates, a fitness centre and an 18m lap pool, as well as spa and beauty treatments including signature treatments by Sodashi, the acclaimed chemical-free spa and skincare range from Australia, and The Oriental Spa for Men product lines, as well as heat and water experiences, wellness programs and workshops, and a spa boutique featuring internationally renowned luxury brands.
+<p>Offering a uniquely personalised experience, The Oriental Spa at The Landmark Mandarin Oriental is the perfect urban escape. Spread over two luxurious floors, this harmonious place of wellbeing offers far more than the traditional spa experience. The award-winning Oriental Spa offers a diverse array of holistic services including yoga and Pilates, a fitness centre and an 18m lap pool, as well as spa and beauty treatments including signature treatments by Sodashi, the acclaimed chemical-free spa and skincare range from Australia, and The Oriental Spa for Men product lines, as well as heat and water experiences, wellness programs and workshops, and a spa boutique featuring internationally renowned luxury brands.</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 68
+content-length: 78
 
-Fitness Centre: 6am - 10pm Spa: 10am - 11pm Swimming Pool: 6am - 9pm
+Fitness Centre: 6am - 10pm <br>
+Spa: 10am - 11pm <br>
+Swimming Pool: 6am - 9pm
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -139,14 +148,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c3b5a872-22f2-4aff-b469-c0f55fbaf9bd
+42c5cb11-de9c-49ce-827f-5ebbaddf7b77
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151113T031503Z
+20151126T091905Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -157,7 +166,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: cc537870-6837-49b9-bb09-a0917b6af99c
+revision: 8c00cc77-6405-4c7c-99ea-b49d52468f98
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -177,23 +186,30 @@ content-length: 26
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 214
+content-length: 221
 
-东方水疗中心位于置地文华东方酒店，是顾客远离繁嚣、放松心情的上佳之选。水疗中心占地两层，和谐舒适的环境营造出与众不同的水疗按摩独特体验，并曾屡获奖项。东方水疗中心备有一系列多元化的设施及产品，包括瑜伽、普拉提练习室、健身室、18米室内恒温游泳池、Sodashi 水疗和美容疗程、自澳大利亚引入的无化学成分水疗和护肤系列产品、「东方男士水疗」系列、高温体验、康体计划和工作坊。而水疗中心的精品店，则提供各式国际高级品牌的水疗产品。
+<p>东方水疗中心位于置地文华东方酒店，是顾客远离繁嚣、放松心情的上佳之选。水疗中心占地两层，和谐舒适的环境营造出与众不同的水疗按摩独特体验，并曾屡获奖项。东方水疗中心备有一系列多元化的设施及产品，包括瑜伽、普拉提练习室、健身室、18米室内恒温游泳池、Sodashi 水疗和美容疗程、自澳大利亚引入的无化学成分水疗和护肤系列产品、「东方男士水疗」系列、高温体验、康体计划和工作坊。而水疗中心的精品店，则提供各式国际高级品牌的水疗产品。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 6
+
+东方水疗中心
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 16
+content-length: 0
 
-The,Oriental,Spa
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 26
+content-length: 35
 
-获奖无数的水疗中心，呈献一系列多元化服务和美容疗程。
+东方水疗中心位于置地文华东方酒店，是顾客远离繁嚣、放松心情的上佳之选。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -205,9 +221,9 @@ content-length: 6
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 26
+content-length: 35
 
-获奖无数的水疗中心，呈献一系列多元化服务和美容疗程。
+东方水疗中心位于置地文华东方酒店，是顾客远离繁嚣、放松心情的上佳之选。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -219,16 +235,18 @@ content-length: 6
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 214
+content-length: 221
 
-东方水疗中心位于置地文华东方酒店，是顾客远离繁嚣、放松心情的上佳之选。水疗中心占地两层，和谐舒适的环境营造出与众不同的水疗按摩独特体验，并曾屡获奖项。东方水疗中心备有一系列多元化的设施及产品，包括瑜伽、普拉提练习室、健身室、18米室内恒温游泳池、Sodashi 水疗和美容疗程、自澳大利亚引入的无化学成分水疗和护肤系列产品、「东方男士水疗」系列、高温体验、康体计划和工作坊。而水疗中心的精品店，则提供各式国际高级品牌的水疗产品。
+<p>东方水疗中心位于置地文华东方酒店，是顾客远离繁嚣、放松心情的上佳之选。水疗中心占地两层，和谐舒适的环境营造出与众不同的水疗按摩独特体验，并曾屡获奖项。东方水疗中心备有一系列多元化的设施及产品，包括瑜伽、普拉提练习室、健身室、18米室内恒温游泳池、Sodashi 水疗和美容疗程、自澳大利亚引入的无化学成分水疗和护肤系列产品、「东方男士水疗」系列、高温体验、康体计划和工作坊。而水疗中心的精品店，则提供各式国际高级品牌的水疗产品。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 44
+content-length: 54
 
-健身中心：早上6时至晚上10时 水疗：早上10时至晚上11时 游泳池：早上6时至晚上9时
+健身中心：早上6时至晚上10时 <br>
+水疗：早上10时至晚上11时 <br>
+游泳池：早上6时至晚上9时
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -277,25 +295,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cc537870-6837-49b9-bb09-a0917b6af99c
+8c00cc77-6405-4c7c-99ea-b49d52468f98
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T064003Z
+20151126T102441Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: cb66eb22-911a-4757-a572-a10fd2e1da19
+revision: 5b2b5ead-1fe8-4e01-b721-f5979e47a543
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -315,23 +333,30 @@ content-length: 26
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 213
+content-length: 220
 
-東方水療中心位於置地文華東方酒店，是顧客遠離繁囂、放鬆心情的上佳之選。水療中心佔地兩層，和諧舒適的環境營造出不一樣的水療按摩獨特體驗，並曾屢獲獎項。東方水療中心備有一系列多元化的設施及產品，包括瑜伽、普拉提練習室、健身室、18公尺室內恆溫游泳池、Sodashi 水療和美容療程、自澳洲引入的無化學品成分水療和護膚系列產品、「東方男士水療」系列、高溫體驗、康體計劃和工作坊。而水療中心的精品店，則提供各式國際高級品牌的水療產品。
+<p>東方水療中心位於置地文華東方酒店，是顧客遠離繁囂、放鬆心情的上佳之選。水療中心佔地兩層，和諧舒適的環境營造出不一樣的水療按摩獨特體驗，並曾屢獲獎項。東方水療中心備有一系列多元化的設施及產品，包括瑜伽、普拉提練習室、健身室、18公尺室內恆溫游泳池、Sodashi 水療和美容療程、自澳洲引入的無化學品成分水療和護膚系列產品、「東方男士水療」系列、高溫體驗、康體計劃和工作坊。而水療中心的精品店，則提供各式國際高級品牌的水療產品。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 6
+
+東方水療中心
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 16
+content-length: 0
 
-The,Oriental,Spa
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 26
+content-length: 35
 
-獲獎無數的水療中心，呈獻一系列多元化服務和美容療程。
+東方水療中心位於置地文華東方酒店，是顧客遠離繁囂、放鬆心情的上佳之選。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -343,9 +368,9 @@ content-length: 6
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 26
+content-length: 35
 
-獲獎無數的水療中心，呈獻一系列多元化服務和美容療程。
+東方水療中心位於置地文華東方酒店，是顧客遠離繁囂、放鬆心情的上佳之選。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -357,16 +382,18 @@ content-length: 6
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 213
+content-length: 220
 
-東方水療中心位於置地文華東方酒店，是顧客遠離繁囂、放鬆心情的上佳之選。水療中心佔地兩層，和諧舒適的環境營造出不一樣的水療按摩獨特體驗，並曾屢獲獎項。東方水療中心備有一系列多元化的設施及產品，包括瑜伽、普拉提練習室、健身室、18公尺室內恆溫游泳池、Sodashi 水療和美容療程、自澳洲引入的無化學品成分水療和護膚系列產品、「東方男士水療」系列、高溫體驗、康體計劃和工作坊。而水療中心的精品店，則提供各式國際高級品牌的水療產品。
+<p>東方水療中心位於置地文華東方酒店，是顧客遠離繁囂、放鬆心情的上佳之選。水療中心佔地兩層，和諧舒適的環境營造出不一樣的水療按摩獨特體驗，並曾屢獲獎項。東方水療中心備有一系列多元化的設施及產品，包括瑜伽、普拉提練習室、健身室、18公尺室內恆溫游泳池、Sodashi 水療和美容療程、自澳洲引入的無化學品成分水療和護膚系列產品、「東方男士水療」系列、高溫體驗、康體計劃和工作坊。而水療中心的精品店，則提供各式國際高級品牌的水療產品。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 44
+content-length: 54
 
-健身中心：早上6時至晚上10時 水療：早上10時至晚上11時 游泳池：早上6時至晚上9時
+健身中心：早上6時至晚上10時 <br>
+水療：早上10時至晚上11時 <br>
+游泳池：早上6時至晚上9時
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -408,18 +435,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cb66eb22-911a-4757-a572-a10fd2e1da19
+5b2b5ead-1fe8-4e01-b721-f5979e47a543
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T064003Z
+20151127T071804Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

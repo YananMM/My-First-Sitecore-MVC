@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 38
+content-length: 116
 
-{37C1F81A-7605-4539-808B-C4B487FDB8DE}
+{37C1F81A-7605-4539-808B-C4B487FDB8DE}|{101C4A58-6D7D-4905-AD44-F0F054282440}|{7F1B0BFA-C6FF-4BAD-89B9-25D56D36DA5E}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-109
 ----version----
 language: en
 version: 1
-revision: c6999321-6998-46ec-8a9e-80c1b4490c85
+revision: b3f97e75-63f1-4a7e-8461-a9df2889ff84
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -74,11 +74,12 @@ GIORGIO ARMANI BEAUTY
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 928
+content-length: 959
 
-<p>To make a perfect match with his premium fashion, Giorgio Armani, the “Master of Beauty”, founded his own luxurious beauty brand with supreme and highly-professional products in makeup, skincare and fragrance render the brand a unique position in the beauty market.
-Debuted in 2000, Giorgio Armani translates his extraordinary skills in texture into a unique range of cosmetics to create the same effects of light and translucency as his pieces on the runway. Adopting the unique patented formula of Micro-fil™, Giorgio Armani has brought to cosmetics the same lightness and fluidity as in his clothing. The exceptional 3 step techniques revels the unique Armani natural glow. Giorgio Armani Skincare offers the ultimate skin perfection from within, which the prestigious Crema Nera collection is the most precious, effective, silky and exclusive skincare to the most demanding women to fight against all signs of aging.</p>
-
+<p>To make a perfect match with his premium fashion, Giorgio Armani, the &ldquo;Master of Beauty&rdquo;, founded his own luxurious beauty brand with supreme and highly-professional products in makeup, skincare and fragrance render the brand a unique position in the beauty market.<br>
+<br>
+Debuted in 2000, Giorgio Armani translates his extraordinary skills in texture into a unique range of cosmetics to create the same effects of light and translucency as his pieces on the runway. Adopting the unique patented formula of Micro-fil&trade;, Giorgio Armani has brought to cosmetics the same lightness and fluidity as in his clothing. The exceptional 3 step techniques revels the unique Armani natural glow. Giorgio Armani Skincare offers the ultimate skin perfection from within, which the prestigious Crema Nera collection is the most precious, effective, silky and exclusive skincare to the most demanding women to fight against all signs of aging.</p>
+<br>
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
 name: Meta Title
@@ -133,9 +134,10 @@ Debuted in 2000, Giorgio Armani translates his extraordinary skills in texture i
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 49
+content-length: 62
 
-Mon-Sat  10am-8pm  Sun & Public holidays 11am-8pm
+Mon-Sat  10am-8pm  <br>
+Sun &amp; Public holidays 11am-8pm<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -154,9 +156,9 @@ Shop 109, 1/F, LANDMARK CHATER
 field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
 name: Description
 key: description
-content-length: 0
+content-length: 265
 
-
+To make a perfect match with his premium fashion, Giorgio Armani, the “Master of Beauty”, founded his own luxurious beauty brand with supreme and highly-professional products in makeup, skincare and fragrance render the brand a unique position in the beauty market.
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -177,14 +179,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c6999321-6998-46ec-8a9e-80c1b4490c85
+b3f97e75-63f1-4a7e-8461-a9df2889ff84
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T140052Z
+20151202T031418Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -195,7 +197,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 8ea81642-f9df-4c93-a084-9c12978b8991
+revision: d99c9cfe-f721-47bd-9232-b04aa9209dea
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -271,9 +273,10 @@ content-length: 244
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 39
+content-length: 47
 
-星期一至星期六︰早上10时至晚上8时  星期日及公众假期︰早上11时至晚上8时
+星期一至星期六︰早上10时至晚上8时 <br>
+星期日及公众假期︰早上11时至晚上8时<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -292,9 +295,9 @@ content-length: 16
 field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
 name: Description
 key: description
-content-length: 0
+content-length: 137
 
-
+Giorgio Armani 于2000年创立华贵美容品牌，将Armani 时装精华注入彩妆，引用纺织业的Micro-fil ™专利科技，仿若为俏脸穿上Armani时装，飘逸而奢华。卓越的三步超凡层叠化妆技艺，为面庞编织锦衣华裳，缔造透皙无瑕妆效，展现Armani自然光华。
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -322,14 +325,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8ea81642-f9df-4c93-a084-9c12978b8991
+d99c9cfe-f721-47bd-9232-b04aa9209dea
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T135723Z
+20151202T062728Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -340,7 +343,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 040856c9-8798-4f1d-ad5b-19cd2622efed
+revision: 927723c6-fe0b-485f-9d0b-74b1430bcf11
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -364,19 +367,26 @@ content-length: 237
 
 <p>Giorgio Armani 於2000年創立華貴美容品牌，將Armani 時裝精華注入彩妝，引用紡織業的Micro-fil ™專利科技，仿如為俏臉穿上Armani時裝，飄逸而奢華。獨有三步超凡層疊化妝技藝，為面龐編織錦衣華裳，締造透皙無瑕妝效，展現Armani自然光華。而Giorgio Armani 護膚系列給予肌膚從內而外締造的終極完美狀態，其中皇牌護膚系列Crema Nera，更是為滿足要求最高的女士們，向她們呈獻最珍貴、高效、絲滑及獨有的護膚產品。</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 21
+
+GIORGIO ARMANI BEAUTY
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 24
+content-length: 0
 
-GIORGIO,ARMANI,COSMETICS
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 3
+content-length: 97
 
-N/A
+Giorgio Armani 於2000年創立華貴美容品牌，將Armani 時裝精華注入彩妝，引用紡織業的Micro-fil &trade;專利科技，仿如為俏臉穿上Armani時裝，飄逸而奢華。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -388,9 +398,9 @@ GIORGIO ARMANI BEAUTY
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 0
+content-length: 97
 
-
+Giorgio Armani 於2000年創立華貴美容品牌，將Armani 時裝精華注入彩妝，引用紡織業的Micro-fil &trade;專利科技，仿如為俏臉穿上Armani時裝，飄逸而奢華。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -402,16 +412,17 @@ GIORGIO ARMANI BEAUTY
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 230
+content-length: 243
 
-Giorgio Armani 於2000年創立華貴美容品牌，將Armani 時裝精華注入彩妝，引用紡織業的Micro-fil ™專利科技，仿如為俏臉穿上Armani時裝，飄逸而奢華。獨有三步超凡層疊化妝技藝，為面龐編織錦衣華裳，締造透皙無瑕妝效，展現Armani自然光華。而Giorgio Armani 護膚系列給予肌膚從內而外締造的終極完美狀態，其中皇牌護膚系列Crema Nera，更是為滿足要求最高的女士們，向她們呈獻最珍貴、高效、絲滑及獨有的護膚產品。
+<p>Giorgio Armani 於2000年創立華貴美容品牌，將Armani 時裝精華注入彩妝，引用紡織業的Micro-fil &trade;專利科技，仿如為俏臉穿上Armani時裝，飄逸而奢華。獨有三步超凡層疊化妝技藝，為面龐編織錦衣華裳，締造透皙無瑕妝效，展現Armani自然光華。而Giorgio Armani 護膚系列給予肌膚從內而外締造的終極完美狀態，其中皇牌護膚系列Crema Nera，更是為滿足要求最高的女士們，向她們呈獻最珍貴、高效、絲滑及獨有的護膚產品。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 39
+content-length: 48
 
-星期一至星期六︰早上10時至晚上8時  星期日及公眾假期︰早上11時至晚上8時
+星期一至星期六︰早上10時至晚上8時  <br>
+星期日及公眾假期︰早上11時至晚上8時<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -430,9 +441,9 @@ content-length: 16
 field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
 name: Description
 key: description
-content-length: 0
+content-length: 97
 
-
+Giorgio Armani 於2000年創立華貴美容品牌，將Armani 時裝精華注入彩妝，引用紡織業的Micro-fil &trade;專利科技，仿如為俏臉穿上Armani時裝，飄逸而奢華。
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -453,14 +464,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-040856c9-8798-4f1d-ad5b-19cd2622efed
+927723c6-fe0b-485f-9d0b-74b1430bcf11
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T124105Z
+20151127T040243Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

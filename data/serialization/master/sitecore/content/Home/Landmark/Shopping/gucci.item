@@ -20,16 +20,16 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 857
+content-length: 896
 
-{C034122F-A68F-4E3C-827E-C1898533C08E}|{385A8E74-CC78-4C89-A66D-1021D757C01C}|{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{8DEEBCDA-AC9C-4B0C-AF81-8E493D219713}|{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{37DE7516-5325-4534-A035-A908D3D256D9}|{56FED65F-5267-4350-B440-F22DC2B2218F}|{111013C6-0BCD-4E1C-8CCA-7D7DDC405B0A}|{584512EB-189E-4FEF-9280-3F893DD9A9E1}|{7895E95B-BA35-4C28-9325-0BB7443E6945}|{BF280597-458A-45C0-97FE-ED4614C75CAF}|{1A1800EA-D40A-412C-970A-DBA534DC1F23}|{585407EB-2AAB-454C-BB2B-2D9868FA53BA}|{01E67855-9741-4C1C-9FCD-2432982120B6}|{89884B9A-3DE7-47AD-BC7F-F2500B956EFD}|{6CD9230F-42B3-476C-B074-F2C099B8C515}|{101C4A58-6D7D-4905-AD44-F0F054282440}|{30E208D0-F316-47A5-A174-6B83D8C7A47F}|{C70FEE58-7079-41B5-A53C-F7B7805CE669}|{26D53B44-8352-4FCC-992A-B01A3C7A2384}
+{C034122F-A68F-4E3C-827E-C1898533C08E}|{385A8E74-CC78-4C89-A66D-1021D757C01C}|{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}|{39F78176-04AD-4110-8AC4-AA392CC79C2E}|{8DEEBCDA-AC9C-4B0C-AF81-8E493D219713}|{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{09D2F71B-EF56-4FA6-969A-53F7DE0ABEA0}|{37DE7516-5325-4534-A035-A908D3D256D9}|{56FED65F-5267-4350-B440-F22DC2B2218F}|{111013C6-0BCD-4E1C-8CCA-7D7DDC405B0A}|{584512EB-189E-4FEF-9280-3F893DD9A9E1}|{7895E95B-BA35-4C28-9325-0BB7443E6945}|{BF280597-458A-45C0-97FE-ED4614C75CAF}|{1A1800EA-D40A-412C-970A-DBA534DC1F23}|{585407EB-2AAB-454C-BB2B-2D9868FA53BA}|{01E67855-9741-4C1C-9FCD-2432982120B6}|{89884B9A-3DE7-47AD-BC7F-F2500B956EFD}|{6CD9230F-42B3-476C-B074-F2C099B8C515}|{101C4A58-6D7D-4905-AD44-F0F054282440}|{30E208D0-F316-47A5-A174-6B83D8C7A47F}|{C70FEE58-7079-41B5-A53C-F7B7805CE669}|{26D53B44-8352-4FCC-992A-B01A3C7A2384}|{38F7E7D2-C3C1-42A4-9F91-31E01FF8547B}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
 key: floor
-content-length: 38
+content-length: 77
 
-{99A4A960-53BC-4C37-A070-7915F8DC1B69}
+{99A4A960-53BC-4C37-A070-7915F8DC1B69}|{BDA32531-667F-420C-881F-4550CD6E755E}
 ----field----
 field: {8B055347-174E-4D86-8B2D-22ACFAB67D14}
 name: LocationX
@@ -54,7 +54,7 @@ shop-B35-46
 ----version----
 language: en
 version: 1
-revision: 526fdbd7-0ed4-42c8-959e-dbc2b7df50f6
+revision: d37c0ceb-1604-4bab-bed5-bbd0484fb18e
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -78,12 +78,19 @@ content-length: 716
 
 <p>The Gucci LANDMARK store is the brand’s flagship store in Hong Kong. Ever since Guccio Gucci founded the house in Florence in 1921, the brand has been a destination for the world’s most discerning men and women, representing at once contemporary glamour and traditional Made In Italy craftsmanship. With its reputation for quality and Italian craftsmanship, Gucci designs, manufactures and distributes highly desirable products such as leather goods (handbags, small leather goods, and luggage), shoes, ready-to-wear, silks, timepieces and fine jewellery. Gucci is part of the Kering Group, a world leader in apparel and accessories which represents an ensemble of powerful luxury, sport and lifestyle brands.</p>
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 5
 
 Gucci
+----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -116,9 +123,9 @@ Gucci
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 709
+content-length: 716
 
-The Gucci LANDMARK store is the brand’s flagship store in Hong Kong. Ever since Guccio Gucci founded the house in Florence in 1921, the brand has been a destination for the world’s most discerning men and women, representing at once contemporary glamour and traditional Made In Italy craftsmanship. With its reputation for quality and Italian craftsmanship, Gucci designs, manufactures and distributes highly desirable products such as leather goods (handbags, small leather goods, and luggage), shoes, ready-to-wear, silks, timepieces and fine jewellery. Gucci is part of the Kering Group, a world leader in apparel and accessories which represents an ensemble of powerful luxury, sport and lifestyle brands.
+<p>The Gucci LANDMARK store is the brand’s flagship store in Hong Kong. Ever since Guccio Gucci founded the house in Florence in 1921, the brand has been a destination for the world’s most discerning men and women, representing at once contemporary glamour and traditional Made In Italy craftsmanship. With its reputation for quality and Italian craftsmanship, Gucci designs, manufactures and distributes highly desirable products such as leather goods (handbags, small leather goods, and luggage), shoes, ready-to-wear, silks, timepieces and fine jewellery. Gucci is part of the Kering Group, a world leader in apparel and accessories which represents an ensemble of powerful luxury, sport and lifestyle brands.</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
@@ -167,14 +174,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-526fdbd7-0ed4-42c8-959e-dbc2b7df50f6
+d37c0ceb-1604-4bab-bed5-bbd0484fb18e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T122103Z
+20151202T081852Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -330,7 +337,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: a2e91ebc-67b1-4330-a635-3fcd179cd072
+revision: a163be7b-4c45-4de6-90d4-9e36ad001b42
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -450,14 +457,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-a2e91ebc-67b1-4330-a635-3fcd179cd072
+a163be7b-4c45-4de6-90d4-9e36ad001b42
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T140223Z
+20151126T153304Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

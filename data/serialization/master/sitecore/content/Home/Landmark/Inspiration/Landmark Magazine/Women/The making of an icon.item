@@ -15,7 +15,7 @@ name: Article Callout Image
 key: article callout image
 content-length: 58
 
-<image mediaid="{CFD30911-05A7-41DC-B3F7-3887405B840A}" />
+<image mediaid="{B9F59146-AA79-41CD-97CF-786F2FAC2781}" />
 ----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Portrait Callout Image
@@ -41,9 +41,9 @@ Style A
 field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
 name: Tags
 key: tags
-content-length: 194
+content-length: 233
 
-{233C7FF3-CA0E-46DD-B48C-0B9302FB77B7}|{23F4E31F-52DB-49E5-AA30-D4DE7D45C897}|{69BC1FE9-C8B2-467E-84B7-50FF8634AC1A}|{EBADC6BF-4BAD-483E-A900-F3DA1C0776C1}|{61A3BEF2-2E2E-42A2-8416-556502270BE7}
+{233C7FF3-CA0E-46DD-B48C-0B9302FB77B7}|{23F4E31F-52DB-49E5-AA30-D4DE7D45C897}|{69BC1FE9-C8B2-467E-84B7-50FF8634AC1A}|{EBADC6BF-4BAD-483E-A900-F3DA1C0776C1}|{61A3BEF2-2E2E-42A2-8416-556502270BE7}|{8CBE1EA5-CE5A-4D15-AEFD-F65BC164C06B}
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -68,7 +68,7 @@ content-length: 155
 ----version----
 language: en
 version: 1
-revision: cbc870cd-3399-4c92-9ccd-a8a94e41af05
+revision: 2864dbd0-ad26-4dab-bab6-108889b5937c
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -92,6 +92,34 @@ content-length: 278
 
 Fashions may come and go, but some looks endure the passing of the seasons: a shoe, a dress, a shade of colour, a silhouette. In a world obsessed with newness they stand out as beacons from the past, lit to guide us through the style landscape by the legends who conceived them.
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 21
+
+The making of an icon
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 278
+
+Fashions may come and go, but some looks endure the passing of the seasons: a shoe, a dress, a shade of colour, a silhouette. In a world obsessed with newness they stand out as beacons from the past, lit to guide us through the style landscape by the legends who conceived them.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 21
+
+The making of an icon
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 278
+
+Fashions may come and go, but some looks endure the passing of the seasons: a shoe, a dress, a shade of colour, a silhouette. In a world obsessed with newness they stand out as beacons from the past, lit to guide us through the style landscape by the legends who conceived them.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -111,14 +139,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cbc870cd-3399-4c92-9ccd-a8a94e41af05
+2864dbd0-ad26-4dab-bab6-108889b5937c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151117T075948:635833439881994889Z
+20151126T140305Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -129,7 +157,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 74f4cc01-15a5-4506-acd6-2aaf33237667
+revision: 6d8c35db-67e1-4ef0-ac0b-518729753e44
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -153,6 +181,34 @@ content-length: 95
 
 潮流骤来又骤去，但总有一些设计，可能是一双鞋子丶一条连身裙丶一种颜色甚至一个形状，能够经历时间更迭，在穷於追逐崭新时尚的世界里仍能屹立不倒。它们像明灯一样，带我们航过时尚潮流来去无踪的汪洋。
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 21
+
+The making of an icon
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 95
+
+潮流骤来又骤去，但总有一些设计，可能是一双鞋子丶一条连身裙丶一种颜色甚至一个形状，能够经历时间更迭，在穷於追逐崭新时尚的世界里仍能屹立不倒。它们像明灯一样，带我们航过时尚潮流来去无踪的汪洋。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 21
+
+The making of an icon
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 95
+
+潮流骤来又骤去，但总有一些设计，可能是一双鞋子丶一条连身裙丶一种颜色甚至一个形状，能够经历时间更迭，在穷於追逐崭新时尚的世界里仍能屹立不倒。它们像明灯一样，带我们航过时尚潮流来去无踪的汪洋。
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -172,14 +228,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-74f4cc01-15a5-4506-acd6-2aaf33237667
+6d8c35db-67e1-4ef0-ac0b-518729753e44
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T093452Z
+20151125T045734Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -190,7 +246,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: c254af6c-26e0-4364-8c87-c1545f443ac5
+revision: 649d464d-3af1-41cd-930e-0edf777f035e
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -214,6 +270,34 @@ content-length: 95
 
 潮流驟來又驟去，但總有一些設計，可能是一雙鞋子、一條連身裙、一種顏色甚至一個形狀，能夠經歷時間更迭，在窮於追逐嶄新時尚的世界裡仍能屹立不倒。它們像明燈一樣，帶我們航過時尚潮流來去無蹤的汪洋。
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 21
+
+The making of an icon
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 95
+
+潮流驟來又驟去，但總有一些設計，可能是一雙鞋子、一條連身裙、一種顏色甚至一個形狀，能夠經歷時間更迭，在窮於追逐嶄新時尚的世界裡仍能屹立不倒。它們像明燈一樣，帶我們航過時尚潮流來去無蹤的汪洋。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 21
+
+The making of an icon
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 95
+
+潮流驟來又驟去，但總有一些設計，可能是一雙鞋子、一條連身裙、一種顏色甚至一個形狀，能夠經歷時間更迭，在窮於追逐嶄新時尚的世界裡仍能屹立不倒。它們像明燈一樣，帶我們航過時尚潮流來去無蹤的汪洋。
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -233,14 +317,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c254af6c-26e0-4364-8c87-c1545f443ac5
+649d464d-3af1-41cd-930e-0edf777f035e
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T093440Z
+20151125T044433Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -26,8 +26,36 @@ content-length: 194
 ----version----
 language: en
 version: 1
-revision: 13371728-6e98-43f9-b42c-3863509a23cb
+revision: 2f0b76e0-8333-4252-8c41-8dced50a0893
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 18
+
+Artist in Central 
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 130
+
+LANDMARK presents fine arts and sculptures from talented local artists. Visit LANDMARK now and discover more about the art pieces.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 18
+
+Artist in Central 
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 130
+
+LANDMARK presents fine arts and sculptures from talented local artists. Visit LANDMARK now and discover more about the art pieces.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -41,7 +69,7 @@ name: Biography Link Text
 key: biography link text
 content-length: 16
 
-ARTIST BOIGRAPHY
+ABOUT THE ARTIST
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -55,14 +83,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-13371728-6e98-43f9-b42c-3863509a23cb
+2f0b76e0-8333-4252-8c41-8dced50a0893
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T015149Z
+20151126T065108Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -73,8 +101,36 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: d5fba535-6491-4c71-a7af-b9fb77ed4c64
+revision: 9b6a2118-3262-40cc-9517-5f752f289538
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 5
+
+中环艺术家
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+置地广塲展出由世界级雕塑家和艺术家创作的雕塑。请即来临置地广塲欣赏更多艺术作品。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 5
+
+中环艺术家
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 40
+
+置地广塲展出由世界级雕塑家和艺术家创作的雕塑。请即来临置地广塲欣赏更多艺术作品。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -95,14 +151,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d5fba535-6491-4c71-a7af-b9fb77ed4c64
+9b6a2118-3262-40cc-9517-5f752f289538
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T141903Z
+20151126T043252Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -113,7 +169,36 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 59da1761-c0d3-4c5c-ad18-8f29d3e16e17
+revision: 84e54a28-a56c-4957-9873-5c57098031d6
+
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 5
+
+中環藝術家
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+置地廣塲展出由世界級雕塑家和藝術家創作的雕塑。請即來臨置地廣塲欣賞更多藝術作品。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 5
+
+中環藝術家
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 42
+
+置地廣塲展出由世界級雕塑家和藝術家創作的雕塑。請即來臨置地廣塲欣賞更多藝術作品。
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -135,14 +220,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-59da1761-c0d3-4c5c-ad18-8f29d3e16e17
+84e54a28-a56c-4957-9873-5c57098031d6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T141809Z
+20151126T043232Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

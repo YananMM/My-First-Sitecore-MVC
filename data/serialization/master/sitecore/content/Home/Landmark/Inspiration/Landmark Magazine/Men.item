@@ -10,6 +10,13 @@ template: {2DB904A7-2885-422F-8B86-6767049FC749}
 templatekey: T37 Page
 
 ----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 1
+
+1
+----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -26,7 +33,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: 2677c175-7f32-4a4c-988e-8744095b329a
+revision: 3507720b-70f1-49ba-8118-cc6fcfd5e3d0
 
 ----field----
 field: {2EF8EC75-33AA-4798-B316-B8C4C343760D}
@@ -83,14 +90,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2677c175-7f32-4a4c-988e-8744095b329a
+3507720b-70f1-49ba-8118-cc6fcfd5e3d0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T022944Z
+20151201T020852Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -101,7 +108,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: d14afdfb-7355-405b-96a9-2b1863f89856
+revision: 4837744a-3030-455c-969c-80e1a24f040a
 
 ----field----
 field: {2EF8EC75-33AA-4798-B316-B8C4C343760D}
@@ -139,6 +146,13 @@ content-length: 35
 
 置地广塲杂誌为男士提供最新潮流趋势和故事，包括时尚，文化，名人和娱乐。
 ----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+男士专区
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -165,14 +179,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d14afdfb-7355-405b-96a9-2b1863f89856
+4837744a-3030-455c-969c-80e1a24f040a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T023736Z
+20151201T093159Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -190,7 +204,7 @@ content-length: 38
 ----version----
 language: zh-HK
 version: 1
-revision: 7c58becb-b9c9-4d78-88cb-21bd3f68ebe4
+revision: 7f2a6ad8-e2fd-4862-a8b1-50e2c31b8c3c
 
 ----field----
 field: {2EF8EC75-33AA-4798-B316-B8C4C343760D}
@@ -228,6 +242,13 @@ content-length: 35
 
 置地廣塲雜誌為男士提供最新潮流趨勢和故事，包括時尚，文化，名人和娛樂。
 ----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+男士專區
+----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
 key: __owner
@@ -254,14 +275,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7c58becb-b9c9-4d78-88cb-21bd3f68ebe4
+7f2a6ad8-e2fd-4862-a8b1-50e2c31b8c3c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T023342Z
+20151201T093115Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 38
+content-length: 116
 
-{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}
+{7349B461-564F-4A14-B43D-7B4F6FF1E0D6}|{F1CC2EDE-A165-4FC4-B47A-8C0DF29BDE27}|{A869505D-8B56-42B6-9460-9928607C3BD3}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-330
 ----version----
 language: en
 version: 1
-revision: 7d5f267d-4695-4672-a268-ffaead6cf103
+revision: 7d7bb4bc-57a0-47da-93e5-cf22a5b0d13c
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -74,9 +74,9 @@ content-length: 91
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 674
+content-length: 681
 
-Founded in 1856 by the 21-year-old Thomas Burberry, the Burberry name has since become the byword for quality, innovation and style in outerwear design with a distinct British flavour. Where beautiful craftsmanship contrasts with form and function, it carries a relaxed and distinctly British attitude. The Burberry Children “Mini Me” collection draws on the legendary Burberry menswear and womenswear ranges for its inspiration. Burberry Children offers a wide range of outerwear, ready-to-wear and accessories for children up to the age of 14. The playful collection for boys and girls features check parkas, dresses, trousers and shirts in the distinctive Burberry style.
+<p>Founded in 1856 by the 21-year-old Thomas Burberry, the Burberry name has since become the byword for quality, innovation and style in outerwear design with a distinct British flavour. Where beautiful craftsmanship contrasts with form and function, it carries a relaxed and distinctly British attitude. The Burberry Children “Mini Me” collection draws on the legendary Burberry menswear and womenswear ranges for its inspiration. Burberry Children offers a wide range of outerwear, ready-to-wear and accessories for children up to the age of 14. The playful collection for boys and girls features check parkas, dresses, trousers and shirts in the distinctive Burberry style.</p>
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
 name: Meta Title
@@ -95,9 +95,9 @@ content-length: 0
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 91
+content-length: 184
 
-“Mini Me” collection draws on the legendary menswear and womenswear ranges for inspiration.
+Founded in 1856 by the 21-year-old Thomas Burberry, the Burberry name has since become the byword for quality, innovation and style in outerwear design with a distinct British flavour.
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -109,9 +109,9 @@ Burberry Children
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 91
+content-length: 184
 
-“Mini Me” collection draws on the legendary menswear and womenswear ranges for inspiration.
+Founded in 1856 by the 21-year-old Thomas Burberry, the Burberry name has since become the byword for quality, innovation and style in outerwear design with a distinct British flavour.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -123,9 +123,9 @@ Burberry Children
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 674
+content-length: 681
 
-Founded in 1856 by the 21-year-old Thomas Burberry, the Burberry name has since become the byword for quality, innovation and style in outerwear design with a distinct British flavour. Where beautiful craftsmanship contrasts with form and function, it carries a relaxed and distinctly British attitude. The Burberry Children “Mini Me” collection draws on the legendary Burberry menswear and womenswear ranges for its inspiration. Burberry Children offers a wide range of outerwear, ready-to-wear and accessories for children up to the age of 14. The playful collection for boys and girls features check parkas, dresses, trousers and shirts in the distinctive Burberry style.
+<p>Founded in 1856 by the 21-year-old Thomas Burberry, the Burberry name has since become the byword for quality, innovation and style in outerwear design with a distinct British flavour. Where beautiful craftsmanship contrasts with form and function, it carries a relaxed and distinctly British attitude. The Burberry Children “Mini Me” collection draws on the legendary Burberry menswear and womenswear ranges for its inspiration. Burberry Children offers a wide range of outerwear, ready-to-wear and accessories for children up to the age of 14. The playful collection for boys and girls features check parkas, dresses, trousers and shirts in the distinctive Burberry style.</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
@@ -174,14 +174,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7d5f267d-4695-4672-a268-ffaead6cf103
+7d7bb4bc-57a0-47da-93e5-cf22a5b0d13c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151126T021756Z
+20151126T094805Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -192,7 +192,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 371528e6-0a96-4bef-a767-ccd51f70e95c
+revision: 049162fc-e190-4076-9256-b3857e501fd4
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -212,23 +212,30 @@ content-length: 32
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 266
+content-length: 273
 
-1856年由年仅21岁的Thomas Burberry创立之Burberry，今天早已成为蜚声国际的品牌。Burberry一直致力于设计高级外衣，并以卓越品质和时尚创新风格，演绎浓厚的传统英伦品味。产品系列的工艺及剪裁完美无瑕，既富有实用功能又包含独特的英国情怀。至于Burberry童装系列「Mini Me」的设计灵感，则与品牌每季的男女装系列相为呼应。Burberry童装专卖店备有新生婴儿至14岁儿童的全线外衣服装、成衣及配饰系列。设计活泼有趣的男女童装系列包括格纹风衣、连身裙、裤装和衬衣，散溢着独特的Burberry风格。
+<p>1856年由年仅21岁的Thomas Burberry创立之Burberry，今天早已成为蜚声国际的品牌。Burberry一直致力于设计高级外衣，并以卓越品质和时尚创新风格，演绎浓厚的传统英伦品味。产品系列的工艺及剪裁完美无瑕，既富有实用功能又包含独特的英国情怀。至于Burberry童装系列「Mini Me」的设计灵感，则与品牌每季的男女装系列相为呼应。Burberry童装专卖店备有新生婴儿至14岁儿童的全线外衣服装、成衣及配饰系列。设计活泼有趣的男女童装系列包括格纹风衣、连身裙、裤装和衬衣，散溢着独特的Burberry风格。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+Burberry童装专门店
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 18
+content-length: 0
 
-Burberry, Children
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 32
+content-length: 99
 
-「Mini Me」系列的设计灵感，与品牌每季男女装系列相为呼应。
+1856年由年仅21岁的Thomas Burberry创立之Burberry，今天早已成为蜚声国际的品牌。Burberry一直致力于设计高级外衣，并以卓越品质和时尚创新风格，演绎浓厚的传统英伦品味。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -240,9 +247,9 @@ Burberry童装专门店
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 32
+content-length: 99
 
-「Mini Me」系列的设计灵感，与品牌每季男女装系列相为呼应。
+1856年由年仅21岁的Thomas Burberry创立之Burberry，今天早已成为蜚声国际的品牌。Burberry一直致力于设计高级外衣，并以卓越品质和时尚创新风格，演绎浓厚的传统英伦品味。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -254,9 +261,9 @@ Burberry童装专门店
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 266
+content-length: 273
 
-1856年由年仅21岁的Thomas Burberry创立之Burberry，今天早已成为蜚声国际的品牌。Burberry一直致力于设计高级外衣，并以卓越品质和时尚创新风格，演绎浓厚的传统英伦品味。产品系列的工艺及剪裁完美无瑕，既富有实用功能又包含独特的英国情怀。至于Burberry童装系列「Mini Me」的设计灵感，则与品牌每季的男女装系列相为呼应。Burberry童装专卖店备有新生婴儿至14岁儿童的全线外衣服装、成衣及配饰系列。设计活泼有趣的男女童装系列包括格纹风衣、连身裙、裤装和衬衣，散溢着独特的Burberry风格。
+<p>1856年由年仅21岁的Thomas Burberry创立之Burberry，今天早已成为蜚声国际的品牌。Burberry一直致力于设计高级外衣，并以卓越品质和时尚创新风格，演绎浓厚的传统英伦品味。产品系列的工艺及剪裁完美无瑕，既富有实用功能又包含独特的英国情怀。至于Burberry童装系列「Mini Me」的设计灵感，则与品牌每季的男女装系列相为呼应。Burberry童装专卖店备有新生婴儿至14岁儿童的全线外衣服装、成衣及配饰系列。设计活泼有趣的男女童装系列包括格纹风衣、连身裙、裤装和衬衣，散溢着独特的Burberry风格。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
@@ -312,25 +319,25 @@ name: __Revision
 key: __revision
 content-length: 36
 
-371528e6-0a96-4bef-a767-ccd51f70e95c
+049162fc-e190-4076-9256-b3857e501fd4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063849Z
+20151202T062113Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 55b54819-53f2-4c50-8c35-945e3d2ad650
+revision: 934b3014-3ab1-43da-a8bb-c17eae4a3ca9
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -350,23 +357,30 @@ content-length: 33
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 267
+content-length: 274
 
-1856年由年僅21歲的Thomas Burberry創立之Burberry，今天早已成為蜚聲國際的品牌。Burberry一直致力於設計高級戶外服飾，並以卓越品質和時尚創新風格，演繹濃厚的傳統英倫品味。產品系列的工藝及剪裁完美無瑕，既有實用功能又饒富獨特的英國情懷。至於Burberry童裝系列「Mini Me」的設計靈感，原來與品牌每季的男女裝系列互相呼應。Burberry童裝專門店備有新生嬰兒至14歲兒童的全線戶外服裝、成衣及配飾系列。設計活潑有趣的男女童裝系列包括格紋風衣、連身裙、褲子和襯衣，散溢獨特的Burberry風格。
+<p>1856年由年僅21歲的Thomas Burberry創立之Burberry，今天早已成為蜚聲國際的品牌。Burberry一直致力於設計高級戶外服飾，並以卓越品質和時尚創新風格，演繹濃厚的傳統英倫品味。產品系列的工藝及剪裁完美無瑕，既有實用功能又饒富獨特的英國情懷。至於Burberry童裝系列「Mini Me」的設計靈感，原來與品牌每季的男女裝系列互相呼應。Burberry童裝專門店備有新生嬰兒至14歲兒童的全線戶外服裝、成衣及配飾系列。設計活潑有趣的男女童裝系列包括格紋風衣、連身裙、褲子和襯衣，散溢獨特的Burberry風格。</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+Burberry童裝專門店
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 18
+content-length: 0
 
-Burberry, Children
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
 key: meta description
-content-length: 33
+content-length: 58
 
-「Mini Me」系列的設計靈感，與品牌每季的男女裝系列互相呼應。
+當代著名意大利高級品牌BVLGARI於1884年開設首家店舖，逾百年來憑藉出眾設計，於全球高級商品市場擔當領導角色。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -378,9 +392,9 @@ Burberry童裝專門店
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
 key: social share description
-content-length: 33
+content-length: 58
 
-「Mini Me」系列的設計靈感，與品牌每季的男女裝系列互相呼應。
+當代著名意大利高級品牌BVLGARI於1884年開設首家店舖，逾百年來憑藉出眾設計，於全球高級商品市場擔當領導角色。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -392,9 +406,9 @@ Burberry童裝專門店
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 267
+content-length: 274
 
-1856年由年僅21歲的Thomas Burberry創立之Burberry，今天早已成為蜚聲國際的品牌。Burberry一直致力於設計高級戶外服飾，並以卓越品質和時尚創新風格，演繹濃厚的傳統英倫品味。產品系列的工藝及剪裁完美無瑕，既有實用功能又饒富獨特的英國情懷。至於Burberry童裝系列「Mini Me」的設計靈感，原來與品牌每季的男女裝系列互相呼應。Burberry童裝專門店備有新生嬰兒至14歲兒童的全線戶外服裝、成衣及配飾系列。設計活潑有趣的男女童裝系列包括格紋風衣、連身裙、褲子和襯衣，散溢獨特的Burberry風格。
+<p>1856年由年僅21歲的Thomas Burberry創立之Burberry，今天早已成為蜚聲國際的品牌。Burberry一直致力於設計高級戶外服飾，並以卓越品質和時尚創新風格，演繹濃厚的傳統英倫品味。產品系列的工藝及剪裁完美無瑕，既有實用功能又饒富獨特的英國情懷。至於Burberry童裝系列「Mini Me」的設計靈感，原來與品牌每季的男女裝系列互相呼應。Burberry童裝專門店備有新生嬰兒至14歲兒童的全線戶外服裝、成衣及配飾系列。設計活潑有趣的男女童裝系列包括格紋風衣、連身裙、褲子和襯衣，散溢獨特的Burberry風格。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
@@ -443,18 +457,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-55b54819-53f2-4c50-8c35-945e3d2ad650
+934b3014-3ab1-43da-a8bb-c17eae4a3ca9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063849Z
+20151126T095042Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

@@ -40,15 +40,15 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: 79bf5874-640f-4e88-840f-4c60d5a681b2
+revision: 3240f4b2-fdc5-4905-bd8f-b1e4d40efefa
 
 ----field----
 field: {42999415-3EAC-4B74-A6EB-034271F085B7}
 name: Slide Title
 key: slide title
-content-length: 0
+content-length: 8
 
-
+LANDMARK
 ----field----
 field: {DF2B5F7C-2BD8-4762-982A-8F461123C5C2}
 name: Slide Image
@@ -60,11 +60,12 @@ content-length: 58
 field: {0D14A8BB-68BB-4865-9692-052E94152DF4}
 name: Slide Numbers Text Title
 key: slide numbers text title
-content-length: 48
+content-length: 101
 
-<p>22 CRAFTSMEN 1 NAME</p>
-<p>_</p>
-LANDMARK<br>
+<hgroup class="clearfix">
+<h2><span>22</span>CRAFTSMEN</h2>
+<h2><span>1</span>NAME</h2>
+</hgroup><br>
 ----field----
 field: {9FAF7DB0-6304-44A3-A1AD-3156F3467264}
 name: Slide Intro
@@ -113,14 +114,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-79bf5874-640f-4e88-840f-4c60d5a681b2
+3240f4b2-fdc5-4905-bd8f-b1e4d40efefa
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T040009Z
+20151125T143232Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -131,8 +132,46 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 7c7dd9c6-6de8-4fca-a2a5-78f74c56e664
+revision: d31981e7-e731-4894-bc57-bdf68636775d
 
+----field----
+field: {DF2B5F7C-2BD8-4762-982A-8F461123C5C2}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{E6C75FC0-24E4-4C33-BE23-2FC43E7EED4D}" />
+----field----
+field: {0D14A8BB-68BB-4865-9692-052E94152DF4}
+name: Slide Numbers Text Title
+key: slide numbers text title
+content-length: 99
+
+<hgroup class="clearfix">
+<h2><span>22</span>位巧手名匠</h2>
+<h2><span>1</span>个矜贵的名字</h2>
+</hgroup><br>
+----field----
+field: {9FAF7DB0-6304-44A3-A1AD-3156F3467264}
+name: Slide Intro
+key: slide intro
+content-length: 65
+
+尔雅洋服，卓绝技艺，名品时尚显贵；鞋履皮具，精雕细镂，品味度身裁造。208所精緻名店及食府，萦繫4幢华厦，一个矜贵名字，置地广塲。
+----field----
+field: {0E089E2C-C25C-42EF-8323-5D49C81D12FB}
+name: Slide Button Text
+key: slide button text
+content-length: 9
+
+搜寻匠气盎然的故事
+----field----
+field: {687B71D1-C561-4B9E-B214-32F115925434}
+name: Slide Button Link
+key: slide button link
+content-length: 102
+
+<link linktype="external" url="http://www.onelandmark.hk/sc/#22craftsmen" anchor="" target="_blank" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -160,14 +199,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-7c7dd9c6-6de8-4fca-a2a5-78f74c56e664
+d31981e7-e731-4894-bc57-bdf68636775d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T034654Z
+20151125T143709Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -178,8 +217,46 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 9ed82a32-ddf4-4158-8a15-441797f815fa
+revision: 38e22c3a-3905-4319-9607-27dfdd8a9359
 
+----field----
+field: {DF2B5F7C-2BD8-4762-982A-8F461123C5C2}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{E6C75FC0-24E4-4C33-BE23-2FC43E7EED4D}" />
+----field----
+field: {0D14A8BB-68BB-4865-9692-052E94152DF4}
+name: Slide Numbers Text Title
+key: slide numbers text title
+content-length: 98
+
+<hgroup class="clearfix">
+<h2><span>22</span>位巧手名匠</h2>
+<h2><span>1</span>個矜貴名字</h2>
+</hgroup><br>
+----field----
+field: {9FAF7DB0-6304-44A3-A1AD-3156F3467264}
+name: Slide Intro
+key: slide intro
+content-length: 65
+
+爾雅洋服，卓絕技藝，名品時尚顯貴；鞋履皮具，精雕細鏤，品味度身裁造。208所精緻名店及食府，縈繫4幢華廈，一個矜貴名字，置地廣塲。
+----field----
+field: {0E089E2C-C25C-42EF-8323-5D49C81D12FB}
+name: Slide Button Text
+key: slide button text
+content-length: 9
+
+搜尋匠氣盎然的故事
+----field----
+field: {687B71D1-C561-4B9E-B214-32F115925434}
+name: Slide Button Link
+key: slide button link
+content-length: 102
+
+<link linktype="external" url="http://www.onelandmark.hk/tc/#22craftsmen" anchor="" target="_blank" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -207,14 +284,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9ed82a32-ddf4-4158-8a15-441797f815fa
+38e22c3a-3905-4319-9607-27dfdd8a9359
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T034705Z
+20151125T143627Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 428
+content-length: 467
 
-{37C1F81A-7605-4539-808B-C4B487FDB8DE}|{385A8E74-CC78-4C89-A66D-1021D757C01C}|{56FED65F-5267-4350-B440-F22DC2B2218F}|{584512EB-189E-4FEF-9280-3F893DD9A9E1}|{7895E95B-BA35-4C28-9325-0BB7443E6945}|{B897BD2C-C2EA-4F88-BE9E-AA3F3EBE8FDF}|{6CD9230F-42B3-476C-B074-F2C099B8C515}|{F1CC2EDE-A165-4FC4-B47A-8C0DF29BDE27}|{73D42903-0C38-4D70-A14E-C773BDCFBCC6}|{101C4A58-6D7D-4905-AD44-F0F054282440}|{E95D9EB0-E7E3-4CA5-A41F-B1AF769A5F72}
+{37C1F81A-7605-4539-808B-C4B487FDB8DE}|{385A8E74-CC78-4C89-A66D-1021D757C01C}|{56FED65F-5267-4350-B440-F22DC2B2218F}|{584512EB-189E-4FEF-9280-3F893DD9A9E1}|{7895E95B-BA35-4C28-9325-0BB7443E6945}|{B897BD2C-C2EA-4F88-BE9E-AA3F3EBE8FDF}|{6CD9230F-42B3-476C-B074-F2C099B8C515}|{F1CC2EDE-A165-4FC4-B47A-8C0DF29BDE27}|{73D42903-0C38-4D70-A14E-C773BDCFBCC6}|{101C4A58-6D7D-4905-AD44-F0F054282440}|{E95D9EB0-E7E3-4CA5-A41F-B1AF769A5F72}|{54475862-D852-47DA-B48F-FFF3838685D7}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-106-107
 ----version----
 language: en
 version: 1
-revision: 03538ff8-e365-4293-a048-dcbea5a8a323
+revision: 3b84658c-698b-456a-a8dd-7b714be069d3
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -78,12 +78,19 @@ content-length: 752
 
 <p>One of the region&rsquo;s most respected and sought-after stylists, Kim Robinson began his enduring love affair with Asian beauty more than 30 years&rsquo; ago. The kimrobinson salon embodies his passion and vision, and is the epitome of luxury, unequalled service and cutting-edge innovation. Every element of the kimrobinson experience has been carefully crafted to make clients look and feel truly beautiful. At kimrobinson, the focus is entirely on the client. An understanding of the client, his or her personality and lifestyle is the key to unleashing true beauty. The team of outstanding professionals work with clients, using their exceptional skills, creativity and knowledge to take clients on an unforgettable journey to real beauty.</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 12
+
+Kim Robinson
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 11
+content-length: 0
 
-kimrobinson
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -95,9 +102,9 @@ Exclusive hair salon that is the epitome of luxury, service and innovation.
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
 key: social share title
-content-length: 11
+content-length: 12
 
-kimrobinson
+Kim Robinson
 ----field----
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
@@ -109,9 +116,9 @@ Exclusive hair salon that is the epitome of luxury, service and innovation.
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 11
+content-length: 12
 
-kimrobinson
+Kim Robinson
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
@@ -123,9 +130,10 @@ One of the region’s most respected and sought-after stylists, Kim Robinson beg
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 45
+content-length: 58
 
-Mon-Sat 9am-8pm  Sun & Public Holidays closed
+Mon-Sat 9am-8pm  <br>
+Sun &amp; Public Holidays closed<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -167,14 +175,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-03538ff8-e365-4293-a048-dcbea5a8a323
+3b84658c-698b-456a-a8dd-7b714be069d3
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T132107Z
+20151202T082145Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -185,7 +193,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 94ce4312-d92d-4e18-b1df-015969a1885b
+revision: ecb41e1a-7a41-4445-8bbc-b52b5db92b5c
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -209,12 +217,19 @@ content-length: 249
 
 <p>Kim Robinson是备受尊崇的国际形象大师，三十多年来一直沉醉于展现东方的独特美态，而他的kimrobinson 发廊体现其热诚和眼界，更是华美创新和卓越服务的象征 ── 置身于此，你就是主角。kimrobinson的座右铭是「聆听」，并且深信只有真诚地认识顾客、了解他们的个性和生活习惯，才能展呈顾客的真正美态。kimrobinson 力求以无尽心思令每一位顾客充满自信、光芒四射。优秀专业团队与顾客携手合作，藉着超凡手艺、无穷创意和专业知识，陪伴顾客踏上永志不忘的美丽旅程。</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 12
+
+Kim Robinson
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 11
+content-length: 0
 
-kimrobinson
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -226,9 +241,9 @@ content-length: 20
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
 key: social share title
-content-length: 11
+content-length: 12
 
-kimrobinson
+Kim Robinson
 ----field----
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
@@ -240,23 +255,24 @@ content-length: 20
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 11
+content-length: 12
 
-kimrobinson
+Kim Robinson
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 242
+content-length: 249
 
-Kim Robinson是备受尊崇的国际形象大师，三十多年来一直沉醉于展现东方的独特美态，而他的kimrobinson 发廊体现其热诚和眼界，更是华美创新和卓越服务的象征 ── 置身于此，你就是主角。kimrobinson的座右铭是「聆听」，并且深信只有真诚地认识顾客、了解他们的个性和生活习惯，才能展呈顾客的真正美态。kimrobinson 力求以无尽心思令每一位顾客充满自信、光芒四射。优秀专业团队与顾客携手合作，藉着超凡手艺、无穷创意和专业知识，陪伴顾客踏上永志不忘的美丽旅程。
+<p>Kim Robinson是备受尊崇的国际形象大师，三十多年来一直沉醉于展现东方的独特美态，而他的kimrobinson 发廊体现其热诚和眼界，更是华美创新和卓越服务的象征 ── 置身于此，你就是主角。kimrobinson的座右铭是「聆听」，并且深信只有真诚地认识顾客、了解他们的个性和生活习惯，才能展呈顾客的真正美态。kimrobinson 力求以无尽心思令每一位顾客充满自信、光芒四射。优秀专业团队与顾客携手合作，藉着超凡手艺、无穷创意和专业知识，陪伴顾客踏上永志不忘的美丽旅程。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 29
+content-length: 38
 
-星期一至星期六︰早上9时至晚上8时  星期日及公众假期休息
+星期一至星期六︰早上9时至晚上8时  <br>
+星期日及公众假期休息<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -305,14 +321,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-94ce4312-d92d-4e18-b1df-015969a1885b
+ecb41e1a-7a41-4445-8bbc-b52b5db92b5c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T132054Z
+20151127T050301Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -323,7 +339,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: d68fda7b-6e3a-4170-a0d5-484e28e46f42
+revision: f52c1fec-13db-4c44-af4c-3ebd4da0b7e2
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -347,12 +363,19 @@ content-length: 250
 
 <p>Kim Robinson是國際間備受尊崇的形象大師，三十多年來一直沉醉於展現東方的獨特美態，而他的kimrobinson 髮廊體現其熱誠和眼界，更是華美創新和卓越服務的象徵 ── 置身這裏，你就是主角。kimrobinson的座右銘是「聆聽」，並且深信只有真誠地認識顧客、了解他們的個性和生活習慣，才能展呈顧客的真正美態。kimrobinson 力求以無盡心思令每一位顧客充滿自信、光芒四射。優秀專業團隊與顧客攜手合作，藉着超凡手藝、無窮創意和專業知識，陪伴顧客踏上永誌不忘的美麗旅程。</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 12
+
+Kim Robinson
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 11
+content-length: 0
 
-kimrobinson
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -364,9 +387,9 @@ content-length: 20
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
 key: social share title
-content-length: 11
+content-length: 12
 
-kimrobinson
+Kim Robinson
 ----field----
 field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
 name: Social Share Description
@@ -378,9 +401,9 @@ content-length: 20
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
-content-length: 11
+content-length: 12
 
-kimrobinson
+Kim Robinson
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
@@ -392,9 +415,10 @@ Kim Robinson是國際間備受尊崇的形象大師，三十多年來一直沉�
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 29
+content-length: 38
 
-星期一至星期六︰早上9時至晚上8時  星期日及公眾假期休息
+星期一至星期六︰早上9時至晚上8時  <br>
+星期日及公眾假期休息<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -436,14 +460,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d68fda7b-6e3a-4170-a0d5-484e28e46f42
+f52c1fec-13db-4c44-af4c-3ebd4da0b7e2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T132043Z
+20151127T050320Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -68,7 +68,7 @@ shop-114
 ----version----
 language: en
 version: 1
-revision: ddc4724e-10e9-407e-801f-4e9357eab1d7
+revision: 40c811be-3103-40b8-b4a0-830a0c1db120
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -144,9 +144,11 @@ content-length: 672
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 61
+content-length: 79
 
-Mon-Fri 11am-7:30pm Sat & Public Holidays 11am-6pm Sun closed
+Mon-Fri 11am-7:30pm <br>
+Sat &amp; Public Holidays 11am-6pm <br>
+Sun closed<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -188,14 +190,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ddc4724e-10e9-407e-801f-4e9357eab1d7
+40c811be-3103-40b8-b4a0-830a0c1db120
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151126T045334Z
+20151127T045838Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -206,7 +208,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 66dd402d-f091-45c0-9f67-7add03ce8600
+revision: a9f27c2b-ec72-4635-a7a7-f16afdd89003
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -282,9 +284,11 @@ content-length: 205
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 47
+content-length: 61
 
-星期一至星期五∶早上11时至晚上7时30分 星期六及公众假期∶早上11时至晚上6时 星期日休息
+星期一至星期五∶早上11时至晚上7时30分 <br>
+星期六及公众假期∶早上11时至晚上6时 <br>
+星期日休息<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -333,14 +337,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-66dd402d-f091-45c0-9f67-7add03ce8600
+a9f27c2b-ec72-4635-a7a7-f16afdd89003
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151126T045359Z
+20151127T045903Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -351,7 +355,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: cea8baba-f0a1-4e2f-92a4-178f53a119f3
+revision: 820cc9bb-2ef5-4dac-865e-3de0bd3be7f5
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -427,9 +431,11 @@ content-length: 205
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 47
+content-length: 61
 
-星期一至星期五︰早上11時至晚上7時30分 星期六及公眾假期︰早上11時至晚上6時 星期日休息
+星期一至星期五︰早上11時至晚上7時30分 <br>
+星期六及公眾假期︰早上11時至晚上6時 <br>
+星期日休息<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -471,14 +477,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-cea8baba-f0a1-4e2f-92a4-178f53a119f3
+820cc9bb-2ef5-4dac-865e-3de0bd3be7f5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151126T045416Z
+20151127T045852Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

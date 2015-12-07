@@ -13,9 +13,9 @@ templatekey: Page Object
 field: {D0CC41B3-3000-4ED5-870B-8C89E72C0DA0}
 name: Ad Reference Item
 key: ad reference item
-content-length: 38
+content-length: 0
 
-{3E551A3A-E38C-456F-B6D6-A3C8C77421BF}
+
 ----field----
 field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
 name: Is Shown In Breadcrumb
@@ -47,7 +47,35 @@ content-length: 145
 ----version----
 language: en
 version: 1
-revision: 75318fcf-b09d-496b-9b9a-bb617f83aa02
+revision: 767500ef-b15e-421f-b1b6-c87cc431aee6
+
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 0
+
+
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 0
+
+
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 0
+
+
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 0
+
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -69,14 +97,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-75318fcf-b09d-496b-9b9a-bb617f83aa02
+767500ef-b15e-421f-b1b6-c87cc431aee6
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151024T200324Z
+20151202T092529Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

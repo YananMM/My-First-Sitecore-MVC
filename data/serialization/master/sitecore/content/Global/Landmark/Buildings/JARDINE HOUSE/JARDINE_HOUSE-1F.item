@@ -10,20 +10,6 @@ template: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
 templatekey: Floor Object
 
 ----field----
-field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
-name: Floor Image
-key: floor image
-content-length: 58
-
-<image mediaid="{DAF0D11D-0A09-4366-B1E3-D41735A20C6E}" />
-----field----
-field: {49195981-001A-41D0-BE6E-78B60FD14964}
-name: Floor Svg File
-key: floor svg file
-content-length: 109
-
-<file mediaid="{BA78456E-4978-4B51-8D15-F8E530F83B3A}" src="~/media/ba78456e49784b518d15f8e530f83b3a.ashx" />
-----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
@@ -42,6 +28,20 @@ key: floor title
 content-length: 2
 
 1F
+----field----
+field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
+name: Floor Image
+key: floor image
+content-length: 58
+
+<image mediaid="{DAF0D11D-0A09-4366-B1E3-D41735A20C6E}" />
+----field----
+field: {49195981-001A-41D0-BE6E-78B60FD14964}
+name: Floor Svg File
+key: floor svg file
+content-length: 109
+
+<file mediaid="{BA78456E-4978-4B51-8D15-F8E530F83B3A}" src="~/media/ba78456e49784b518d15f8e530f83b3a.ashx" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created

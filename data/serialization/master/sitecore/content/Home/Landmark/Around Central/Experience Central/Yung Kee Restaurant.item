@@ -45,6 +45,20 @@ content-length: 9
 
 22.281466
 ----field----
+field: {C9CB24A6-0F11-4EAD-8491-FABE6F61526B}
+name: Is Shown In Navigation
+key: is shown in navigation
+content-length: 0
+
+
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 0
+
+
+----field----
 field: {03CE3FE8-FE30-4A0E-B059-B0F3449C00AF}
 name: Experience Type
 key: experience type
@@ -54,7 +68,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: d5c0f0cb-7f13-4106-ace3-5040bec0131f
+revision: 01877b4d-b79c-4867-970f-125eeb3083cf
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -63,6 +77,13 @@ key: article headline
 content-length: 20
 
 Yung Kee Restaurant 
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 0
+
+
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
@@ -120,12 +141,26 @@ content-length: 19
 
 Yung Kee Restaurant
 ----field----
+field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
+name: Page Content
+key: page content
+content-length: 4
+
+<br>
+----field----
 field: {1A168416-B061-412F-AC11-57C69D9C4C7E}
 name: See More Label
 key: see more label
 content-length: 25
 
 EXPLORE OTHER ATTRACTIONS
+----field----
+field: {F1220F65-3306-4AB6-8AC1-904AE9CBEB22}
+name: Brief Introduction
+key: brief introduction
+content-length: 252
+
+Starting out as a small food stall over half a century ago, Yung Kee has evolved into one of Hong Kong’s most well-known Chinese restaurants. In 1968, it was the only Chinese restaurant named on Fortune magazine’s Top 15 Restaurants in the World list. 
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -139,14 +174,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d5c0f0cb-7f13-4106-ace3-5040bec0131f
+01877b4d-b79c-4867-970f-125eeb3083cf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151124T095741Z
+20151130T072235Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

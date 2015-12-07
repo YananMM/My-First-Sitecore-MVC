@@ -54,8 +54,36 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: af10f950-5628-48ae-b6ab-92cfc3659b01
+revision: cbe89710-7ce0-497e-b479-6659792f1128
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 30
+
+Art Piece - Landscape II, 1986
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 125
+
+LANDMARK presents fine arts and painting from world-class artists. Visit LANDMARK now and discover more about the art pieces.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 30
+
+Art Piece - Landscape II, 1986
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 125
+
+LANDMARK presents fine arts and painting from world-class artists. Visit LANDMARK now and discover more about the art pieces.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -83,7 +111,7 @@ name: Commentary
 key: commentary
 content-length: 237
 
-<file mediaid="{68366482-A901-4F08-A929-5C061F8ABD37}" src="~/media/68366482a9014f08a9295c061f8abd37.ashx" mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Sir Sidney Nolan OM AC RA 1917-1992/Landscape II 1986/i_0305_eng11" />
+<file mediapath="/Files/Landmark/Around Central/Landmark Art Tour/Sir Sidney Nolan OM AC RA 1917-1992/Landscape II 1986/i_0305_eng11" mediaid="{68366482-A901-4F08-A929-5C061F8ABD37}" src="~/media/68366482a9014f08a9295c061f8abd37.ashx" />
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -95,14 +123,13 @@ Acrylic on canvas
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 889
+content-length: 916
 
-"The Australian expressionist painter Sir Sidney Nolan was extraordinarily prolific, producing more than 10,000 significant works. He returned to favourite themes again and again - Australian landscapes and explorers, African, Antarctic and European landscapes, and Chinese and Australian-inspired abstractions.
-
-Largely self taught, Sir Sidney had a passion for ideas, literature and art. He never relied on one style or technique, experimenting throughout his life both with figurative and abstract work. He explored many media including charcoal drawing, collage, printmaking and painting with enamel, acrylic and spray paint.
-
-Landscape I and Landscape II were commissioned for Exchange Square by Hongkong Land. Because of their sizes, they were painted on the floor of the artist’s studio as the canvas was rolled out. The paintings were publicy unveiled by the artist himself."
-
+<p>The Australian expressionist painter Sir Sidney Nolan was extraordinarily prolific, producing more than 10,000 significant works. He returned to favourite themes again and again - Australian landscapes and explorers, African, Antarctic and European landscapes, and Chinese and Australian-inspired abstractions.<br>
+<br>
+Largely self taught, Sir Sidney had a passion for ideas, literature and art. He never relied on one style or technique, experimenting throughout his life both with figurative and abstract work. He explored many media including charcoal drawing, collage, printmaking and painting with enamel, acrylic and spray paint.<br>
+<br>
+Landscape I and Landscape II were commissioned for Exchange Square by Hongkong Land. Because of their sizes, they were painted on the floor of the artist&rsquo;s studio as the canvas was rolled out. The paintings were publicy unveiled by the artist himself.&nbsp;</p>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -116,14 +143,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-af10f950-5628-48ae-b6ab-92cfc3659b01
+cbe89710-7ce0-497e-b479-6659792f1128
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T015152Z
+20151126T125210Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -134,8 +161,37 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: ddc93c51-640c-44ac-b21f-b2e9793e5e95
+revision: 48a305a8-3c70-4eda-8177-dbc08edca1ec
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 14
+
+艺术品 - 山水二，1986
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+ 置地广塲艺术画廊和艺术表现展出美丽的艺术品，艺术画廊是一个不容错过的绝佳展览。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 14
+
+艺术品 - 山水二，1986
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 41
+
+
+置地广塲艺术画廊和艺术表现展出美丽的艺术品，艺术画廊是一个不容错过的绝佳展览。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -163,7 +219,7 @@ name: Commentary
 key: commentary
 content-length: 122
 
-<file mediaid="{56276FE8-AA3A-4228-A656-D8CFF2E70721}" src="~/media/56276fe8aa3a4228a656d8cff2e70721.ashx" mediapath="" />
+<file mediapath="" mediaid="{56276FE8-AA3A-4228-A656-D8CFF2E70721}" src="~/media/56276fe8aa3a4228a656d8cff2e70721.ashx" />
 ----field----
 field: {51E77475-FAFE-49DB-8D04-15E4A7BF0BF7}
 name: Art Key
@@ -175,14 +231,14 @@ content-length: 7
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 271
+content-length: 297
 
-"悉尼．诺兰爵士是澳洲表现主义画家，一生创作了逾万幅着作，十分多产。他喜爱的题材包括澳洲的自然景色与探险家、关于非洲、南极和欧洲的景色，以及具有中国和澳洲色彩的抽象作品。
-
-诺兰爵士热爱创意、文学和艺术，在创作上可说是无师自通。他从不会只坚守一种风格或技巧，而是终生以具象及抽象作品作不同尝试。他曾探索多种艺术媒介，包括木炭画、美术拼贴画、版画、搪瓷画、压克力颜料画布及喷漆画等。
-
-置地公司委托诺兰爵士创作「山水一和二」设置于交易广塲入口，由诺兰爵士揭幕。由于画作面积庞大，诺兰爵士于创作时，须将画作摆放于工作室之地面上绘画。"
-
+<p>悉尼．诺兰爵士是澳洲表现主义画家，一生创作了逾万幅着作，十分多产。他喜爱的题材包括澳洲的自然景色与探险家、关于非洲、南极和欧洲的景色，以及具有中国和澳洲色彩的抽象作品。<br>
+<br>
+诺兰爵士热爱创意、文学和艺术，在创作上可说是无师自通。他从不会只坚守一种风格或技巧，而是终生以具象及抽象作品作不同尝试。他曾探索多种艺术媒介，包括木炭画、美术拼贴画、版画、搪瓷画、压克力颜料画布及喷漆画等。<br>
+<br>
+置地公司委托诺兰爵士创作「山水一和二」设置于交易广塲入口，由诺兰爵士揭幕。由于画作面积庞大，诺兰爵士于创作时，须将画作摆放于工作室之地面上绘画。&nbsp;</p>
+<br>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -196,14 +252,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-ddc93c51-640c-44ac-b21f-b2e9793e5e95
+48a305a8-3c70-4eda-8177-dbc08edca1ec
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T044349Z
+20151126T125210Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -214,8 +270,36 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 12d79506-a7b3-44de-894d-f49fdc803d6f
+revision: 9938255e-aab6-4186-9b80-6bbcd39bb6cf
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 14
+
+藝術品 - 山水二，1986
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+置地廣塲展出由世界級藝術家創作的美術品和繪畫。請即來臨置地廣塲欣賞更多藝術作品。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 14
+
+藝術品 - 山水二，1986
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 40
+
+置地廣塲展出由世界級藝術家創作的美術品和繪畫。請即來臨置地廣塲欣賞更多藝術作品。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -255,14 +339,13 @@ content-length: 7
 field: {D32FC8CE-DE70-488A-AA33-CA06D0A3CA3C}
 name: Art Description
 key: art description
-content-length: 271
+content-length: 292
 
-"悉尼．諾蘭爵士是澳洲表現主義畫家，一生創作了逾萬幅著作，十分多產。他喜愛的題材包括澳洲的自然景色與探險家、關於非洲、南極和歐洲的景色，以及具有中國和澳洲色彩的抽象作品。
-
-諾蘭爵士熱愛創意、文學和藝術，在創作上可說是無師自通。他從不會只堅守一種風格或技巧，而是終生以具象及抽象作品作不同嘗試。他曾探索多種藝術媒介，包括木炭畫、美術拼貼畫、版畫、搪瓷畫、壓克力顏料畫布及噴漆畫等。
-
-置地公司委託諾蘭爵士創作「山水一和二」設置於交易廣塲入口，由諾蘭爵士揭幕。由於畫作面積龐大，諾蘭爵士於創作時，須將畫作擺放於工作室之地面上繪畫。"
-
+<p>悉尼．諾蘭爵士是澳洲表現主義畫家，一生創作了逾萬幅著作，十分多產。他喜愛的題材包括澳洲的自然景色與探險家、關於非洲、南極和歐洲的景色，以及具有中國和澳洲色彩的抽象作品。<br>
+<br>
+諾蘭爵士熱愛創意、文學和藝術，在創作上可說是無師自通。他從不會只堅守一種風格或技巧，而是終生以具象及抽象作品作不同嘗試。他曾探索多種藝術媒介，包括木炭畫、美術拼貼畫、版畫、搪瓷畫、壓克力顏料畫布及噴漆畫等。<br>
+<br>
+置地公司委託諾蘭爵士創作「山水一和二」設置於交易廣塲入口，由諾蘭爵士揭幕。由於畫作面積龐大，諾蘭爵士於創作時，須將畫作擺放於工作室之地面上繪畫。&nbsp;</p>
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -276,14 +359,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-12d79506-a7b3-44de-894d-f49fdc803d6f
+9938255e-aab6-4186-9b80-6bbcd39bb6cf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T044346Z
+20151126T105427Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

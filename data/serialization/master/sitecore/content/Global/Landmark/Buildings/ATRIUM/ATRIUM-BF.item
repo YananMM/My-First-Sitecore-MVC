@@ -10,6 +10,25 @@ template: {ABBCC209-E657-48C4-A8D1-9C6C8B862474}
 templatekey: Floor Object
 
 ----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 2
+
+25
+----version----
+language: en
+version: 1
+revision: 156e12ac-ced4-498d-a9e6-d2afe3c2752f
+
+----field----
+field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
+name: Floor Title
+key: floor title
+content-length: 3
+
+B/F
+----field----
 field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
 name: Floor Image
 key: floor image
@@ -20,28 +39,9 @@ content-length: 58
 field: {49195981-001A-41D0-BE6E-78B60FD14964}
 name: Floor Svg File
 key: floor svg file
-content-length: 109
+content-length: 159
 
-<file mediaid="{7D52668D-79C5-476A-B61A-272527D081E1}" src="~/media/7d52668d79c5476ab61a272527d081e1.ashx" />
-----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 2
-
-25
-----version----
-language: en
-version: 1
-revision: 9fddd0a9-c089-4eed-a707-f273d2d78596
-
-----field----
-field: {61C2C69C-C022-4529-86F4-4F8B63D59D9F}
-name: Floor Title
-key: floor title
-content-length: 3
-
-B/F
+<file mediaid="{5A95F48D-3527-422B-9043-B5C061B39C38}" src="~/media/5a95f48d3527422b9043b5c061b39c38.ashx" mediapath="/Files/Landmark/landmark atrium 01 BF" />
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -55,14 +55,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9fddd0a9-c089-4eed-a707-f273d2d78596
+156e12ac-ced4-498d-a9e6-d2afe3c2752f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T020653Z
+20151125T065947Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -82,6 +82,20 @@ key: floor title
 content-length: 3
 
 B/F
+----field----
+field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
+name: Floor Image
+key: floor image
+content-length: 58
+
+<image mediaid="{7D52668D-79C5-476A-B61A-272527D081E1}" />
+----field----
+field: {49195981-001A-41D0-BE6E-78B60FD14964}
+name: Floor Svg File
+key: floor svg file
+content-length: 159
+
+<file mediaid="{5A95F48D-3527-422B-9043-B5C061B39C38}" src="~/media/5a95f48d3527422b9043b5c061b39c38.ashx" mediapath="/Files/Landmark/landmark atrium 01 BF" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -136,6 +150,20 @@ key: floor title
 content-length: 3
 
 B/F
+----field----
+field: {168D427C-B872-4DC2-9418-CF0ED4947E8F}
+name: Floor Image
+key: floor image
+content-length: 58
+
+<image mediaid="{7D52668D-79C5-476A-B61A-272527D081E1}" />
+----field----
+field: {49195981-001A-41D0-BE6E-78B60FD14964}
+name: Floor Svg File
+key: floor svg file
+content-length: 159
+
+<file mediaid="{5A95F48D-3527-422B-9043-B5C061B39C38}" src="~/media/5a95f48d3527422b9043b5c061b39c38.ashx" mediapath="/Files/Landmark/landmark atrium 01 BF" />
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner

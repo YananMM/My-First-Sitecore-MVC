@@ -54,7 +54,7 @@ content-length: 77
 ----version----
 language: en
 version: 1
-revision: 2683b9cc-3e03-43a5-8f8e-0a15073e5723
+revision: 9a3d369e-c219-4007-97c9-ee551aab9c47
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -63,6 +63,13 @@ key: article headline
 content-length: 3
 
 PMQ
+----field----
+field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
+name: Article Intro
+key: article intro
+content-length: 174
+
+Originally the Police Married Quarters, the historic site now known as PMQ was listed as one of eight projects under the government’s “Conserving Central” initiative in 2009.
 ----field----
 field: {AF566E2E-D27B-4255-9469-A6E869B0C416}
 name: Cover Website
@@ -127,6 +134,13 @@ content-length: 25
 
 EXPLORE OTHER ATTRACTIONS
 ----field----
+field: {F1220F65-3306-4AB6-8AC1-904AE9CBEB22}
+name: Brief Introduction
+key: brief introduction
+content-length: 0
+
+
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -139,14 +153,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2683b9cc-3e03-43a5-8f8e-0a15073e5723
+9a3d369e-c219-4007-97c9-ee551aab9c47
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151124T095849Z
+20151201T101552Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

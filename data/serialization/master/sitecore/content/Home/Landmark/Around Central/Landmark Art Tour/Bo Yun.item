@@ -26,7 +26,7 @@ content-length: 3
 ----version----
 language: en
 version: 1
-revision: f3932505-ace7-4cfc-814e-d686daf64a8e
+revision: cb121f0c-bc13-4012-abf1-fa69b3d19482
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -53,9 +53,9 @@ b.1948
 field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
 name: Artist Description
 key: artist description
-content-length: 2349
+content-length: 2356
 
-1948 Born in China<br>
+<p>1948 Born in China<br>
 1981 Graduated from The Central Academy of Fine Arts, Beijing <br>
 1981-2005 Professor at the Art Academy of Tsinghua University, Beijing <br>
 Present Professional Artist<br><br>
@@ -116,7 +116,36 @@ Commerzbank AG <br>
 Credit Suisse <br>
 BNP Paribas <br>
 A number of law firms and offices in Hong Kong <br>
-Private collectors around the world
+Private collectors around the world</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 15
+
+Artist - Bo Yun
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 130
+
+LANDMARK presents fine arts and sculptures from talented local artists. Visit LANDMARK now and discover more about the art pieces.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 15
+
+Artist - Bo Yun
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 132
+
+LANDMARK presents fine arts and sculptures from talented local artists. Visit LANDMARK now and discover more about the art pieces.
+
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -137,14 +166,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f3932505-ace7-4cfc-814e-d686daf64a8e
+cb121f0c-bc13-4012-abf1-fa69b3d19482
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T015149Z
+20151126T044150Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -155,7 +184,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 2bc139f6-1ccb-4be1-bbc3-eaedf7487d5f
+revision: f2c5f6b1-8a02-4538-81d1-74ed99d78bc2
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -182,9 +211,9 @@ content-length: 7
 field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
 name: Artist Description
 key: artist description
-content-length: 1190
+content-length: 1193
 
-<strong>Bo Yun (b.1948)</strong><br>
+<p><strong>Bo Yun (b.1948)</strong><br>
 1948年 生于中国 <br>
 1981年 毕业于北京中央美术学院 <br>
 1981-2005年 于北京清华大学美术学院担任教授<br>
@@ -247,7 +276,43 @@ content-length: 1190
 瑞士信贷银行 <br>
 法国巴黎巴银行 <br>
 香港诸多律师事务所、写字楼<br>
-遍及世界的个人收藏<br>
+遍及世界的个人收藏</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+艺术家 - 薄云（李永存）
+----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+置地广塲展出由世界级雕塑家和艺术家创作的雕塑。请即来临置地广塲欣赏更多艺术作品。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 13
+
+艺术家 - 薄云（李永存）
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 42
+
+置地广塲展出由世界级雕塑家和艺术家创作的雕塑。请即来临置地广塲欣赏更多艺术作品。
+
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -282,14 +347,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2bc139f6-1ccb-4be1-bbc3-eaedf7487d5f
+f2c5f6b1-8a02-4538-81d1-74ed99d78bc2
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T125237Z
+20151126T044209Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -300,7 +365,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 9e72a58e-fe78-4bd8-aa81-82438552dab7
+revision: 5473e7c1-4c97-49e6-ad82-76cfd94a63d5
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -327,9 +392,9 @@ content-length: 7
 field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
 name: Artist Description
 key: artist description
-content-length: 1191
+content-length: 1194
 
-<strong>Bo Yun (b.1948)</strong><br>
+<p><strong>Bo Yun (b.1948)</strong><br>
 1948年 生於中國 <br>
 1981年 畢業於北京中央美術學院 <br>
 1981-2005年 於北京清華大學美術學院擔任教授 <br>
@@ -392,7 +457,36 @@ content-length: 1191
 瑞士信貸銀行 <br>
 法國巴黎巴銀行 <br>
 香港諸多律師事務所、寫字樓 <br>
-遍及世界的個人收藏<br>
+遍及世界的個人收藏</p>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+藝術家 - 薄雲（李永存）
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+置地廣塲展出由世界級雕塑家和藝術家創作的雕塑。請即來臨置地廣塲欣賞更多藝術作品。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 13
+
+藝術家 - 薄雲（李永存）
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 42
+
+置地廣塲展出由世界級雕塑家和藝術家創作的雕塑。請即來臨置地廣塲欣賞更多藝術作品。
+
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -427,14 +521,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9e72a58e-fe78-4bd8-aa81-82438552dab7
+5473e7c1-4c97-49e6-ad82-76cfd94a63d5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151106T125413Z
+20151126T044200Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

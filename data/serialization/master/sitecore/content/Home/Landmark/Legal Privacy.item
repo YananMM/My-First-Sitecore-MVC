@@ -26,8 +26,36 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: c4a5ac37-8ca4-452c-af05-1e44289fb4c7
+revision: c3db4710-ee64-482d-b3be-5633ca8303c5
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 17
+
+Legal and Privacy
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 118
+
+Please read our legal and privacy policy to know the terms regarding usage of the website and all materials within it.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 17
+
+Legal and Privacy
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 118
+
+Please read our legal and privacy policy to know the terms regarding usage of the website and all materials within it.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -211,14 +239,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c4a5ac37-8ca4-452c-af05-1e44289fb4c7
+c3db4710-ee64-482d-b3be-5633ca8303c5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T105923Z
+20151126T042537Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -229,8 +257,36 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 0c4c55c3-b7ea-4913-b1c9-8c97158d074b
+revision: 8ad0a476-5a2e-4d06-bbfd-295310ec06bf
 
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+法律及个人私隐
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 41
+
+置地广塲法律声明告知客人置地广塲的网站收集的个人资料的管理，以及致力保护个人资料。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+法律及个人私隐
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 41
+
+置地广塲法律声明告知客人置地广塲的网站收集的个人资料的管理，以及致力保护个人资料。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -431,14 +487,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0c4c55c3-b7ea-4913-b1c9-8c97158d074b
+8ad0a476-5a2e-4d06-bbfd-295310ec06bf
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T105951Z
+20151126T042608Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -449,7 +505,36 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 8cacec3a-1a96-4573-9187-158747732e64
+revision: c2dfa4d5-ea8a-446d-b00a-afdb9e46bcae
+
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 7
+
+法律及個人私隱
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 41
+
+置地廣塲法律聲明告知客人置地廣塲的網站收集的個人資料的管理，以及致力保護個人資料。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 7
+
+法律及個人私隱
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 43
+
+置地廣塲法律聲明告知客人置地廣塲的網站收集的個人資料的管理，以及致力保護個人資料。
 
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
@@ -652,14 +737,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-8cacec3a-1a96-4573-9187-158747732e64
+c2dfa4d5-ea8a-446d-b00a-afdb9e46bcae
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T114141Z
+20151126T042551Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

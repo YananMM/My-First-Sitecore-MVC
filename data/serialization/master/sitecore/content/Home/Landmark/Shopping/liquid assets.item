@@ -20,13 +20,20 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 38
+content-length: 116
 
-{1DA4C84C-5353-4961-9C01-4A480E81C865}
+{1DA4C84C-5353-4961-9C01-4A480E81C865}|{3FBE00DD-2724-453D-8208-D0E3425672F1}|{30563DB6-3409-4BF6-AFC9-1050A7240A30}
+----field----
+field: {3534AD05-BF49-4763-822B-25D97D9F7283}
+name: Floor
+key: floor
+content-length: 0
+
+
 ----version----
 language: en
 version: 1
-revision: 62d6a861-e314-44dd-8190-b08ab413b1cd
+revision: 7d0555bd-3711-4c7e-8406-78075137a12a
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -50,12 +57,19 @@ content-length: 581
 
 <p>Liquid Assets started in 2005 as a dynamic company dedicated to sourcing, importing and distributing fine wines and craft beers from around the world. Committed to providing excellent service to its customers and to building recognition and appreciation for the brands that it imports, Liquid Assets strikes a balance between the importance of origin and a fair price point for its customers. Liquid Assets opened its Wine Shop in 2008, aiming to provide consistent value, a source of friendly expertise and to forge closer links with Hong Kong&rsquo;s wine and beer lovers.</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+Liquid Assets
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 13
+content-length: 0
 
-Liquid,Assets
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -88,16 +102,17 @@ Liquid Assets
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 568
+content-length: 581
 
-Liquid Assets started in 2005 as a dynamic company dedicated to sourcing, importing and distributing fine wines and craft beers from around the world. Committed to providing excellent service to its customers and to building recognition and appreciation for the brands that it imports, Liquid Assets strikes a balance between the importance of origin and a fair price point for its customers. Liquid Assets opened its Wine Shop in 2008, aiming to provide consistent value, a source of friendly expertise and to forge closer links with Hong Kong’s wine and beer lovers.
+<p>Liquid Assets started in 2005 as a dynamic company dedicated to sourcing, importing and distributing fine wines and craft beers from around the world. Committed to providing excellent service to its customers and to building recognition and appreciation for the brands that it imports, Liquid Assets strikes a balance between the importance of origin and a fair price point for its customers. Liquid Assets opened its Wine Shop in 2008, aiming to provide consistent value, a source of friendly expertise and to forge closer links with Hong Kong&rsquo;s wine and beer lovers.</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 52
+content-length: 65
 
-Mon-Sat 11:30am-8:30pm  Sun & Public Holidays Closed
+Mon-Sat 11:30am-8:30pm  <br>
+Sun &amp; Public Holidays Closed<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -139,14 +154,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-62d6a861-e314-44dd-8190-b08ab413b1cd
+7d0555bd-3711-4c7e-8406-78075137a12a
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T133041Z
+20151127T051012Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -157,7 +172,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 816f9cf2-d2bc-4c81-ab1f-c57a32913b53
+revision: 173b1fa8-9720-4399-baf7-303cc56c65a0
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -181,12 +196,19 @@ content-length: 237
 
 <p>成立于2005年的Liquid Assets是一间活力十足的公司，多年来一直致力于采购、进口和分销来自世界各地的葡萄美酒和手工精酿啤酒。Liquid Assets竭诚为顾客呈献最优质的服务，并且努力推介其进口佳酿，为那些品牌建立口碑。Liquid Assets发售的美酒均直接从原产地进口，以确保品质，但定价相宜。公司更于2008年开设Wine Shop，藉此让顾客时时得享物有所值之选，也亲切耐心地提供品酒资讯，并希望跟香港的葡萄酒和啤酒爱好者建立紧密联系。</p>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+Liquid Assets
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 13
+content-length: 0
 
-Liquid,Assets
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -219,16 +241,17 @@ Liquid Assets
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 230
+content-length: 237
 
-成立于2005年的Liquid Assets是一间活力十足的公司，多年来一直致力于采购、进口和分销来自世界各地的葡萄美酒和手工精酿啤酒。Liquid Assets竭诚为顾客呈献最优质的服务，并且努力推介其进口佳酿，为那些品牌建立口碑。Liquid Assets发售的美酒均直接从原产地进口，以确保品质，但定价相宜。公司更于2008年开设Wine Shop，藉此让顾客时时得享物有所值之选，也亲切耐心地提供品酒资讯，并希望跟香港的葡萄酒和啤酒爱好者建立紧密联系。
+<p>成立于2005年的Liquid Assets是一间活力十足的公司，多年来一直致力于采购、进口和分销来自世界各地的葡萄美酒和手工精酿啤酒。Liquid Assets竭诚为顾客呈献最优质的服务，并且努力推介其进口佳酿，为那些品牌建立口碑。Liquid Assets发售的美酒均直接从原产地进口，以确保品质，但定价相宜。公司更于2008年开设Wine Shop，藉此让顾客时时得享物有所值之选，也亲切耐心地提供品酒资讯，并希望跟香港的葡萄酒和啤酒爱好者建立紧密联系。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 36
+content-length: 45
 
-星期一至星期六︰早上11时30分至晚上8时30分  星期日及公众假期休息
+星期一至星期六︰早上11时30分至晚上8时30分  <br>
+星期日及公众假期休息<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -277,14 +300,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-816f9cf2-d2bc-4c81-ab1f-c57a32913b53
+173b1fa8-9720-4399-baf7-303cc56c65a0
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T133014Z
+20151202T063758Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -295,7 +318,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 0c2c58b4-b084-41fc-9599-6d4f04451831
+revision: a78d2a08-093f-4100-8503-224cabc067e1
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -319,12 +342,19 @@ content-length: 230
 
 成立於2005年的Liquid Assets是一間活力十足的公司，多年來一直致力採購、進口和分銷來自世界各地的葡萄美酒和手工精釀啤酒。 Liquid Assets竭誠為顧客呈獻最優質的服務，並且努力推介其入口佳釀，為那些品牌建立口碑。Liquid Assets發售的美酒均直接由原產地入口，以確保品質，但定價相宜。其更於2008年開設Wine Shop，除藉此令顧客時刻得享物有所值之選，也親切耐心地提供品酒資訊，並希望跟香港的葡萄酒和啤酒愛好者建立緊密聯繫。
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 13
+
+Liquid Assets
+----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 13
+content-length: 0
 
-Liquid,Assets
+
 ----field----
 field: {33041911-3D04-4655-B541-4822EA8E5F67}
 name: Meta Description
@@ -364,9 +394,10 @@ content-length: 230
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 36
+content-length: 45
 
-星期一至星期六︰早上11時30分至晚上8時30分  星期日及公眾假期休息
+星期一至星期六︰早上11時30分至晚上8時30分  <br>
+星期日及公眾假期休息<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -408,18 +439,18 @@ name: __Revision
 key: __revision
 content-length: 36
 
-0c2c58b4-b084-41fc-9599-6d4f04451831
+a78d2a08-093f-4100-8503-224cabc067e1
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151104T063922Z
+20151127T051804Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
 key: __updated by
-content-length: 18
+content-length: 14
 
-extranet\Anonymous
+sitecore\admin

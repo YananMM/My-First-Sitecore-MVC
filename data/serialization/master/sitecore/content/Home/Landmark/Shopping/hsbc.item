@@ -27,9 +27,9 @@ content-length: 38
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
 key: floor
-content-length: 38
+content-length: 77
 
-{1363D861-B152-4162-9005-82872E183741}
+{0C3168A1-1A15-4920-9948-5AE01E8D628B}|{0B9F0C48-A026-4AEF-B968-A106E8B2A8E4}
 ----field----
 field: {8B055347-174E-4D86-8B2D-22ACFAB67D14}
 name: LocationX
@@ -51,10 +51,17 @@ key: svg id
 content-length: 12
 
 shop-101-102
+----field----
+field: {9135200A-5626-4DD8-AB9D-D665B8C11748}
+name: __Never publish
+key: __never publish
+content-length: 0
+
+
 ----version----
 language: en
 version: 1
-revision: e1479214-1048-432d-971d-ae7f7c5efefd
+revision: da1ed8fd-2bbd-4ed4-94a8-6eaf563528b5
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -123,12 +130,13 @@ content-length: 23
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 71
+content-length: 80
 
 Mon-Thu 9am-4:30pm
 Fri 9am-5pm
+<br>
 Sat 9am-1pm
-Sun & Public Holidays Closed
+Sun &amp; Public Holidays Closed
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -143,6 +151,13 @@ key: address
 content-length: 63
 
 Shop 101-102, 201-202 & 204-205, 1/F & 2/F, One Exchange Square
+----field----
+field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
+name: Description
+key: description
+content-length: 16
+
+Banking Services
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -163,14 +178,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e1479214-1048-432d-971d-ae7f7c5efefd
+da1ed8fd-2bbd-4ed4-94a8-6eaf563528b5
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T140840Z
+20151127T090645Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -181,7 +196,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 41ef53a1-456a-4e84-a372-e79f5ca58994
+revision: f65f50b5-0eff-48d0-afa5-f9aa61d79da9
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -233,6 +248,13 @@ content-length: 33
 
 本分行于营业时间内提供全面的银行服务，并提供24小时自助理财服务。
 ----field----
+field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
+name: Page Title
+key: page title
+content-length: 4
+
+汇丰银行
+----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
@@ -243,11 +265,14 @@ content-length: 40
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 54
+content-length: 69
 
 星期一至星期四 9am-4:30pm
+<br>
 星期五 9am-5pm
+<br>
 星期六 9am-1pm
+<br>
 星期日及公众假期 休息
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
@@ -263,6 +288,13 @@ key: address
 content-length: 50
 
 交易广塲第一座, 1/F & 2/F, 101-102, 201-202, & 204-205 号铺
+----field----
+field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
+name: Description
+key: description
+content-length: 33
+
+本分行于营业时间内提供全面的银行服务，并提供24小时自助理财服务。
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -290,14 +322,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-41ef53a1-456a-4e84-a372-e79f5ca58994
+f65f50b5-0eff-48d0-afa5-f9aa61d79da9
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T140809Z
+20151127T041137Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -308,7 +340,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 26effd3f-60ba-4396-88ff-594555d8fd11
+revision: 28a18500-5ebb-4f0e-ad87-b4b7ac61d1ba
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -377,11 +409,14 @@ content-length: 40
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 54
+content-length: 69
 
 星期一至星期四 9am-4:30pm
+<br>
 星期五 9am-5pm
+<br>
 星期六 9am-1pm
+<br>
 星期日及公眾假期 休息
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
@@ -397,6 +432,13 @@ key: address
 content-length: 50
 
 交易廣塲第一座, 1/F & 2/F, 101-102, 201-202, & 204-205 號舖
+----field----
+field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
+name: Description
+key: description
+content-length: 33
+
+本分行於營業時間內提供全面的銀行服務，並提供24小時自助理財服務。
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -417,14 +459,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-26effd3f-60ba-4396-88ff-594555d8fd11
+28a18500-5ebb-4f0e-ad87-b4b7ac61d1ba
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T140743Z
+20151127T041154Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -15,7 +15,7 @@ name: Article Callout Image
 key: article callout image
 content-length: 58
 
-<image mediaid="{96536981-F1B6-4E68-9658-E7F8D08C7243}" />
+<image mediaid="{58695D07-9D7D-4BC0-91E9-2DFD05E1B11B}" />
 ----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Portrait Callout Image
@@ -48,9 +48,9 @@ Style A
 field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
 name: Tags
 key: tags
-content-length: 38
+content-length: 116
 
-{D78864A1-2B7D-466E-9889-10D52DE01CB5}
+{D78864A1-2B7D-466E-9889-10D52DE01CB5}|{73AD789D-0BE0-4E05-9F9C-396BFF5E2F7C}|{8CBE1EA5-CE5A-4D15-AEFD-F65BC164C06B}
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -75,7 +75,7 @@ content-length: 155
 ----version----
 language: en
 version: 1
-revision: 600e928f-6216-4b18-8217-022e23d59941
+revision: 5738af59-051c-4c54-8d44-b3fe36f68cc4
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -99,6 +99,34 @@ content-length: 131
 
 Brogues and boyfriend jeans are still hot for autumn/winter 2015, but borrowing from the men needn’t mean dialing down the wattage.
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 17
+
+Stars and stripes
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 131
+
+Brogues and boyfriend jeans are still hot for autumn/winter 2015, but borrowing from the men needn’t mean dialing down the wattage.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 17
+
+Stars and stripes
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 131
+
+Brogues and boyfriend jeans are still hot for autumn/winter 2015, but borrowing from the men needn’t mean dialing down the wattage.
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -118,14 +146,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-600e928f-6216-4b18-8217-022e23d59941
+5738af59-051c-4c54-8d44-b3fe36f68cc4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151120T073201:635836015214973297Z
+20151202T083253Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -136,7 +164,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 3b4e2065-46a2-426a-a88e-f389eff1f4c4
+revision: 25fd3d51-1a33-4042-802c-7bbb9aee145f
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -156,6 +184,34 @@ Photography by Andrew J. Loiterton
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
+content-length: 35
+
+雕花鞋和男朋友牛仔裤仍是2015年秋冬大热，但取材男装却无损女性电力。
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 17
+
+Stars and stripes
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 35
+
+雕花鞋和男朋友牛仔裤仍是2015年秋冬大热，但取材男装却无损女性电力。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 17
+
+Stars and stripes
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 35
 
 雕花鞋和男朋友牛仔裤仍是2015年秋冬大热，但取材男装却无损女性电力。
@@ -193,14 +249,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-3b4e2065-46a2-426a-a88e-f389eff1f4c4
+25fd3d51-1a33-4042-802c-7bbb9aee145f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T092443Z
+20151125T045706Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -211,7 +267,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 28423f2c-6e7e-4af5-afbe-246771e4ac31
+revision: 6f23269c-fcb2-47bd-b240-c55c121dc19c
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -231,6 +287,34 @@ Photography by Andrew J. Loiterton
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
+content-length: 35
+
+雕花鞋和男朋友牛仔褲仍是2015年秋冬大熱，但取材男裝卻無損女性電力。
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 17
+
+Stars and stripes
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 35
+
+雕花鞋和男朋友牛仔褲仍是2015年秋冬大熱，但取材男裝卻無損女性電力。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 17
+
+Stars and stripes
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 35
 
 雕花鞋和男朋友牛仔褲仍是2015年秋冬大熱，但取材男裝卻無損女性電力。
@@ -268,14 +352,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-28423f2c-6e7e-4af5-afbe-246771e4ac31
+6f23269c-fcb2-47bd-b240-c55c121dc19c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T092434Z
+20151125T043204Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

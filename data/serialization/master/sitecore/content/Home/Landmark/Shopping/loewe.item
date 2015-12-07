@@ -20,9 +20,9 @@ content-length: 65
 field: {1E3B7A10-4E78-4DCC-BB41-D9843A2585A6}
 name: Tags
 key: tags
-content-length: 623
+content-length: 662
 
-{C034122F-A68F-4E3C-827E-C1898533C08E}|{385A8E74-CC78-4C89-A66D-1021D757C01C}|{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}|{8DEEBCDA-AC9C-4B0C-AF81-8E493D219713}|{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{37DE7516-5325-4534-A035-A908D3D256D9}|{584512EB-189E-4FEF-9280-3F893DD9A9E1}|{7895E95B-BA35-4C28-9325-0BB7443E6945}|{1A1800EA-D40A-412C-970A-DBA534DC1F23}|{01E67855-9741-4C1C-9FCD-2432982120B6}|{89884B9A-3DE7-47AD-BC7F-F2500B956EFD}|{101C4A58-6D7D-4905-AD44-F0F054282440}|{30E208D0-F316-47A5-A174-6B83D8C7A47F}|{45EE72B3-0021-4A62-AA7F-55E291FB3979}|{EBC7CBA8-4A32-42F7-8E0C-4B9322F6E859}|{26D53B44-8352-4FCC-992A-B01A3C7A2384}
+{C034122F-A68F-4E3C-827E-C1898533C08E}|{385A8E74-CC78-4C89-A66D-1021D757C01C}|{2C43F9BE-709E-4AC6-857A-C42ECB81B7E2}|{8DEEBCDA-AC9C-4B0C-AF81-8E493D219713}|{D85FDAB0-F4B3-43A4-B9D3-00D83CEBEB34}|{37DE7516-5325-4534-A035-A908D3D256D9}|{584512EB-189E-4FEF-9280-3F893DD9A9E1}|{7895E95B-BA35-4C28-9325-0BB7443E6945}|{1A1800EA-D40A-412C-970A-DBA534DC1F23}|{01E67855-9741-4C1C-9FCD-2432982120B6}|{89884B9A-3DE7-47AD-BC7F-F2500B956EFD}|{101C4A58-6D7D-4905-AD44-F0F054282440}|{30E208D0-F316-47A5-A174-6B83D8C7A47F}|{45EE72B3-0021-4A62-AA7F-55E291FB3979}|{EBC7CBA8-4A32-42F7-8E0C-4B9322F6E859}|{26D53B44-8352-4FCC-992A-B01A3C7A2384}|{87F9DD46-1686-4269-A44B-866CA1C8A324}
 ----field----
 field: {3534AD05-BF49-4763-822B-25D97D9F7283}
 name: Floor
@@ -54,7 +54,7 @@ shop-G14-16
 ----version----
 language: en
 version: 1
-revision: d4bab86f-b922-45da-8dd4-4a9109f5fed0
+revision: 73687558-1347-4392-b4da-1fd7223a3a98
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -78,12 +78,26 @@ content-length: 449
 
 <p>PAST. LOEWE began as a cooperative of leather artisans in the center of Madrid in 1846, creating one of the world's original luxury houses. Innovation, modernity and high-level craftsmanship have been hallmarks of the house from its beginnings to this day. PRESENT. In October 2013, Jonathan Anderson was appointed Creative Director. Under his helm, LOEWE reconfigures a 168-year-old legacy of craft and innovation to take it into the FUTURE.</p>
 ----field----
-field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
-name: Meta Keywords
-key: meta keywords
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
 content-length: 5
 
 Loewe
+----field----
+field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
+name: Meta Keywords
+key: meta keywords
+content-length: 0
+
+
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 139
+
+PAST. LOEWE began as a cooperative of leather artisans in the center of Madrid in 1846, creating one of the world's original luxury houses.
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -91,6 +105,13 @@ key: social share title
 content-length: 5
 
 Loewe
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 139
+
+PAST. LOEWE began as a cooperative of leather artisans in the center of Madrid in 1846, creating one of the world's original luxury houses.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -102,9 +123,9 @@ Loewe
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 442
+content-length: 449
 
-PAST. LOEWE began as a cooperative of leather artisans in the center of Madrid in 1846, creating one of the world's original luxury houses. Innovation, modernity and high-level craftsmanship have been hallmarks of the house from its beginnings to this day. PRESENT. In October 2013, Jonathan Anderson was appointed Creative Director. Under his helm, LOEWE reconfigures a 168-year-old legacy of craft and innovation to take it into the FUTURE.
+<p>PAST. LOEWE began as a cooperative of leather artisans in the center of Madrid in 1846, creating one of the world's original luxury houses. Innovation, modernity and high-level craftsmanship have been hallmarks of the house from its beginnings to this day. PRESENT. In October 2013, Jonathan Anderson was appointed Creative Director. Under his helm, LOEWE reconfigures a 168-year-old legacy of craft and innovation to take it into the FUTURE.</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
@@ -127,6 +148,13 @@ content-length: 33
 
 Shop G14-16, G/F, LANDMARK ATRIUM
 ----field----
+field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
+name: Description
+key: description
+content-length: 139
+
+PAST. LOEWE began as a cooperative of leather artisans in the center of Madrid in 1846, creating one of the world's original luxury houses.
+----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
@@ -146,14 +174,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d4bab86f-b922-45da-8dd4-4a9109f5fed0
+73687558-1347-4392-b4da-1fd7223a3a98
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T133058Z
+20151202T082247Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -164,7 +192,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 21f5f514-4215-4a16-8573-96e2715d8f54
+revision: e7c44910-0924-4b63-ab6c-c8947ca30b4c
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -184,17 +212,32 @@ content-length: 3
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 174
+content-length: 189
 
-<p>过去：全球历史最悠久的奢华品牌之一LOEWE，最初始于1846年设在马德里市中心的一家皮革工匠合作工坊。从创始之初至今，创新、现代性和高水准的技艺一直是品牌的标志。
-现在：2013年10月， Jonathan Anderson被任命为LOEWE创意总监。在他的执掌之下，LOEWE将168年的工艺传奇和锐意创新重新融合，迎向未来发展。</p>
+<p>过去：全球历史最悠久的奢华品牌之一LOEWE，最初始于1846年设在马德里市中心的一家皮革工匠合作工坊。从创始之初至今，创新、现代性和高水准的技艺一直是品牌的标志。<br>
+现在：2013年10月， Jonathan Anderson被任命为LOEWE创意总监。在他的执掌之下，LOEWE将168年的工艺传奇和锐意创新重新融合，迎向未来发展。&nbsp;</p>
+<br>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+罗意威
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 5
+content-length: 0
 
-Loewe
+
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 52
+
+过去：全球历史最悠久的奢华品牌之一LOEWE，最初始于1846年设在马德里市中心的一家皮革工匠合作工坊。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -202,6 +245,13 @@ key: social share title
 content-length: 3
 
 罗意威
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 52
+
+过去：全球历史最悠久的奢华品牌之一LOEWE，最初始于1846年设在马德里市中心的一家皮革工匠合作工坊。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -213,17 +263,18 @@ content-length: 3
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 167
+content-length: 174
 
-过去：全球历史最悠久的奢华品牌之一LOEWE，最初始于1846年设在马德里市中心的一家皮革工匠合作工坊。从创始之初至今，创新、现代性和高水准的技艺一直是品牌的标志。
-现在：2013年10月， Jonathan Anderson被任命为LOEWE创意总监。在他的执掌之下，LOEWE将168年的工艺传奇和锐意创新重新融合，迎向未来发展。
+<p>过去：全球历史最悠久的奢华品牌之一LOEWE，最初始于1846年设在马德里市中心的一家皮革工匠合作工坊。从创始之初至今，创新、现代性和高水准的技艺一直是品牌的标志。
+现在：2013年10月， Jonathan Anderson被任命为LOEWE创意总监。在他的执掌之下，LOEWE将168年的工艺传奇和锐意创新重新融合，迎向未来发展。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 34
+content-length: 42
 
-星期一至星期六︰早上10时至晚上8时  星期日︰早上11时至晚上7时
+星期一至星期六︰早上10时至晚上8时 <br>
+星期日︰早上11时至晚上7时<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -238,6 +289,13 @@ key: address
 content-length: 21
 
 置地广场中庭,G/F, G14-16 号铺
+----field----
+field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
+name: Description
+key: description
+content-length: 52
+
+过去：全球历史最悠久的奢华品牌之一LOEWE，最初始于1846年设在马德里市中心的一家皮革工匠合作工坊。
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -265,14 +323,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-21f5f514-4215-4a16-8573-96e2715d8f54
+e7c44910-0924-4b63-ab6c-c8947ca30b4c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T133111Z
+20151127T091514Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -283,7 +341,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: 50955f57-f886-413a-a150-c44888be8571
+revision: 4943ddc3-9fda-4110-a880-c8dcd074bd5c
 
 ----field----
 field: {819FAEAD-8D95-4D40-8B7E-5B754BAC1C83}
@@ -303,17 +361,32 @@ content-length: 3
 field: {B90AA558-455D-40FF-BF08-6522D921BD8A}
 name: Content Description
 key: content description
-content-length: 171
+content-length: 186
 
-<p>過去：全球歷史最悠久的奢華品牌之一LOEWE，於1846年在馬德裡市中心設立了一家皮革工匠工作坊。創辦至今，品牌一直以創新、現代性和卓越技藝為品牌的象徵。
-現在：2013年10月， Jonathan Anderson被任命為LOEWE創意總監。在他的執掌下，LOEWE將168年的工藝傳奇和銳意創新重新融合起來，迎向未來的發展。</p>
+<p>過去：全球歷史最悠久的奢華品牌之一LOEWE，於1846年在馬德裡市中心設立了一家皮革工匠工作坊。創辦至今，品牌一直以創新、現代性和卓越技藝為品牌的象徵。<br>
+現在：2013年10月， Jonathan Anderson被任命為LOEWE創意總監。在他的執掌下，LOEWE將168年的工藝傳奇和銳意創新重新融合起來，迎向未來的發展。&nbsp;</p>
+<br>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 3
+
+羅意威
 ----field----
 field: {C0F91769-3ED0-4ACB-A7B3-2633BEA68AA0}
 name: Meta Keywords
 key: meta keywords
-content-length: 5
+content-length: 0
 
-Loewe
+
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 49
+
+過去：全球歷史最悠久的奢華品牌之一LOEWE，於1846年在馬德裡市中心設立了一家皮革工匠工作坊。
 ----field----
 field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
 name: Social Share Title
@@ -321,6 +394,13 @@ key: social share title
 content-length: 3
 
 羅意威
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 49
+
+過去：全球歷史最悠久的奢華品牌之一LOEWE，於1846年在馬德裡市中心設立了一家皮革工匠工作坊。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -332,17 +412,18 @@ content-length: 3
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 164
+content-length: 171
 
-過去：全球歷史最悠久的奢華品牌之一LOEWE，於1846年在馬德裡市中心設立了一家皮革工匠工作坊。創辦至今，品牌一直以創新、現代性和卓越技藝為品牌的象徵。
-現在：2013年10月， Jonathan Anderson被任命為LOEWE創意總監。在他的執掌下，LOEWE將168年的工藝傳奇和銳意創新重新融合起來，迎向未來的發展。
+<p>過去：全球歷史最悠久的奢華品牌之一LOEWE，於1846年在馬德裡市中心設立了一家皮革工匠工作坊。創辦至今，品牌一直以創新、現代性和卓越技藝為品牌的象徵。
+現在：2013年10月， Jonathan Anderson被任命為LOEWE創意總監。在他的執掌下，LOEWE將168年的工藝傳奇和銳意創新重新融合起來，迎向未來的發展。</p>
 ----field----
 field: {AF25F065-CBB5-49A2-9F48-6EAD8EB02F13}
 name: Opening Hours
 key: opening hours
-content-length: 34
+content-length: 43
 
-星期一至星期六︰早上10時至晚上8時  星期日︰早上11時至晚上7時
+星期一至星期六︰早上10時至晚上8時  <br>
+星期日︰早上11時至晚上7時<br>
 ----field----
 field: {75FED5F8-2A5D-4DD5-8E48-3F51670811F4}
 name: Contact
@@ -357,6 +438,13 @@ key: address
 content-length: 22
 
 置地廣塲中庭, G/F, G14-16 號舖
+----field----
+field: {1AA85752-40CE-42D5-A9D7-52C4D7465A09}
+name: Description
+key: description
+content-length: 49
+
+過去：全球歷史最悠久的奢華品牌之一LOEWE，於1846年在馬德裡市中心設立了一家皮革工匠工作坊。
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
@@ -377,14 +465,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-50955f57-f886-413a-a150-c44888be8571
+4943ddc3-9fda-4110-a880-c8dcd074bd5c
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T133123Z
+20151127T091529Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

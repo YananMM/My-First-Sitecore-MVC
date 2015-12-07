@@ -26,7 +26,7 @@ content-length: 4
 ----version----
 language: en
 version: 1
-revision: e1aab50e-fa92-4ce5-8c37-b9ff7675a44b
+revision: 49e3dc01-fcb2-443f-9965-2925bacc01c7
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -43,13 +43,18 @@ content-length: 0
 
 
 ----field----
+field: {783A30AA-3CD7-4A77-B003-8ADDE281B893}
+name: Artist Birthday
+key: artist birthday
+content-length: 7
+
+b. 1973
+----field----
 field: {A663118B-18CA-48ED-A0BB-CBA5C8B73229}
 name: Artist Description
 key: artist description
-content-length: 4156
+content-length: 4126
 
-Lam Laam, Jaffa (b. 1973)<br>
-<br>
 Lam Laam, Jaffa received her BFA, MFA and Postgraduate Diploma in Education at the Chinese University of Hong Kong. She is now teaching at the Hong Kong Art School as Senior Lecturer and Programme Coordinator of Higher Diploma in Fine Art. <br>
 <br>
 She is a sculptor specializing in large-scale site-specific works of mixed-media sculptures and installations, which are mainly made with recycled materials like crate wood, old furniture and recycled umbrella fabric. In recent years, she has been involved in many public art and community projects in Hong Kong and overseas. Her works often explore issues related to local culture, history, the society and current affairs. <br>
@@ -95,6 +100,36 @@ The Chinese University of Hong Kong <br>
 Hong Kong MTR <br>
 Rabobank <br>
 Private collectors, Cooperates (K11, Manhattan Place, Domain Mall)<br>
+<br>
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 25
+
+ Artist - Lam Laam, Jaffa
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 131
+
+ LANDMARK presents fine arts and sculptures from talented local artists. Visit LANDMARK now and discover more about the art pieces.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 25
+
+ Artist - Lam Laam, Jaffa
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 132
+
+
+LANDMARK presents fine arts and sculptures from talented local artists. Visit LANDMARK now and discover more about the art pieces.
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -115,14 +150,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-e1aab50e-fa92-4ce5-8c37-b9ff7675a44b
+49e3dc01-fcb2-443f-9965-2925bacc01c7
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T015151Z
+20151202T090126Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -133,7 +168,7 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 74b6756f-88d6-488b-a93c-e35f34d8b918
+revision: 3aaa1469-fb68-46bb-ac41-d93369d42c00
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -211,6 +246,35 @@ Lam Laam, Jaffa (b. 1973)<br>
 私人收藏家和企业包括：K11丶Manhattan Place丶大本型<br>
 <br>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 8
+
+艺术家 - 林岚
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 41
+
+ 置地广塲展出由世界级雕塑家和艺术家创作的雕塑。请即来临置地广塲欣赏更多艺术作品。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 8
+
+艺术家 - 林岚
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 42
+
+
+置地广塲展出由世界级雕塑家和艺术家创作的雕塑。请即来临置地广塲欣赏更多艺术作品。
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -244,14 +308,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-74b6756f-88d6-488b-a93c-e35f34d8b918
+3aaa1469-fb68-46bb-ac41-d93369d42c00
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T033238Z
+20151126T070522Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -262,7 +326,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: f1d30794-d759-468a-ad54-1708f383c6d8
+revision: 76d8ba48-3fb6-4679-a7d2-fb1b3290a766
 
 ----field----
 field: {F536CA4F-DBFD-4322-A386-AA7E97E8AFA9}
@@ -338,6 +402,34 @@ Lam Laam, Jaffa (b. 1973)<br>
 私人收藏家和企業包括：K11、Manhattan Place、大本型<br>
 <br>
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 8
+
+藝術家 - 林嵐
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 40
+
+置地廣塲展出由世界級雕塑家和藝術家創作的雕塑。請即來臨置地廣塲欣賞更多藝術作品。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 8
+
+藝術家 - 林嵐
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 40
+
+置地廣塲展出由世界級雕塑家和藝術家創作的雕塑。請即來臨置地廣塲欣賞更多藝術作品。
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -371,14 +463,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-f1d30794-d759-468a-ad54-1708f383c6d8
+76d8ba48-3fb6-4679-a7d2-fb1b3290a766
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T033247Z
+20151126T070748Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

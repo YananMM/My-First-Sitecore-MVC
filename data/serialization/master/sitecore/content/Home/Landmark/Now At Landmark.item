@@ -15,7 +15,7 @@ name: Ad Reference Item
 key: ad reference item
 content-length: 38
 
-{838908FE-ADBA-455B-9539-70A7F168C4E9}
+{85E13752-12E4-4526-8AFD-B51E2B9D2CE8}
 ----field----
 field: {58467D14-852B-4A9C-B619-676CE5518FB8}
 name: Page Banner Image
@@ -23,6 +23,13 @@ key: page banner image
 content-length: 0
 
 
+----field----
+field: {D53F218D-D03A-4E04-87C0-3EA803AB6DC1}
+name: Is Shown In Breadcrumb
+key: is shown in breadcrumb
+content-length: 1
+
+1
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -40,7 +47,7 @@ content-length: 0
 ----version----
 language: en
 version: 1
-revision: 2a6ea8f2-6144-4416-91d0-787cdd505929
+revision: 7c19c684-21bf-4cac-ad87-e8e42e8ae91d
 
 ----field----
 field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
@@ -83,14 +90,15 @@ name: Page Title
 key: page title
 content-length: 15
 
-Now At Landmark
+Now At LANDMARK
 ----field----
 field: {CAB77213-7AEB-4DF2-AB01-699BB4A0F664}
 name: Page Content
 key: page content
-content-length: 0
+content-length: 205
 
-
+<p style="margin-top: 0pt; margin-bottom: 0pt; margin-left: 0in; direction: ltr; unicode-bidi: embed; word-break: normal; text-align: left;">Find out more about the latest happenings at LANDMARK. </p>
+<br>
 ----field----
 field: {AF4EE324-60ED-404F-975E-EA38DF704CBB}
 name: Button Text
@@ -111,14 +119,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-2a6ea8f2-6144-4416-91d0-787cdd505929
+7c19c684-21bf-4cac-ad87-e8e42e8ae91d
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151125T023807Z
+20151202T092405Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

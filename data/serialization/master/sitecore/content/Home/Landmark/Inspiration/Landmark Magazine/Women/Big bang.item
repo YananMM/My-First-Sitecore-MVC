@@ -15,7 +15,7 @@ name: Article Callout Image
 key: article callout image
 content-length: 58
 
-<image mediaid="{D8F974D4-9C3E-4FBE-9E31-56E39E572337}" />
+<image mediaid="{6133BF83-F222-4780-AA9D-ACDB88A95BFD}" />
 ----field----
 field: {B1F32A93-C8B5-491A-B6EB-8CBFFAC07700}
 name: Article Portrait Callout Image
@@ -62,9 +62,9 @@ Style A
 field: {9B71D34A-53BE-44D1-8835-0413EC52D0F5}
 name: Tags
 key: tags
-content-length: 38
+content-length: 77
 
-{87F9DD46-1686-4269-A44B-866CA1C8A324}
+{87F9DD46-1686-4269-A44B-866CA1C8A324}|{8CBE1EA5-CE5A-4D15-AEFD-F65BC164C06B}
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
@@ -89,7 +89,7 @@ content-length: 155
 ----version----
 language: en
 version: 1
-revision: 63bb766a-b106-409a-bacb-dc8e12bf0e94
+revision: ee114b9b-7da0-4ebc-9fad-01a6880f0ae4
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -102,6 +102,34 @@ Big bang
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
+content-length: 53
+
+Go large or go home is the mantra when accessorising.
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 8
+
+Big bang
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 53
+
+Go large or go home is the mantra when accessorising.
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 8
+
+Big bang
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
 content-length: 53
 
 Go large or go home is the mantra when accessorising.
@@ -125,14 +153,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-63bb766a-b106-409a-bacb-dc8e12bf0e94
+ee114b9b-7da0-4ebc-9fad-01a6880f0ae4
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
-content-length: 35
+content-length: 16
 
-20151120T073604:635836017641692098Z
+20151126T140256Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -143,22 +171,50 @@ sitecore\admin
 ----version----
 language: zh-CN
 version: 1
-revision: 351fcf76-b019-4924-8cd4-c04fa3432218
+revision: 1eb210b2-c2ba-4ef3-8a14-30d532223c15
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
 name: Article Headline
 key: article headline
-content-length: 9
+content-length: 8
 
-Big bang 
+Big bang
 ----field----
 field: {3A17D034-B789-4CAE-8414-DFC37EE0DE91}
 name: Article Intro
 key: article intro
-content-length: 20
+content-length: 12
 
-Loewe太陽眼鏡及耳環，置地廣塲中庭。
+今季配饰，一字记之曰大。
+----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 8
+
+Big bang
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 12
+
+今季配饰，一字记之曰大。
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 8
+
+Big bang
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 12
+
+今季配饰，一字记之曰大。
 ----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
@@ -179,14 +235,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-351fcf76-b019-4924-8cd4-c04fa3432218
+1eb210b2-c2ba-4ef3-8a14-30d532223c15
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151108T131241Z
+20151125T045729Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
@@ -197,7 +253,7 @@ sitecore\admin
 ----version----
 language: zh-HK
 version: 1
-revision: c5fe8b27-d381-40c9-aaf4-f68c83ea42a0
+revision: 903801c8-6461-4c3b-961f-4995d4cc2714
 
 ----field----
 field: {24270371-41B8-4BB9-A09C-A62303A7587E}
@@ -228,6 +284,34 @@ content-length: 0
 
 
 ----field----
+field: {54A9E59C-BE40-4ADF-9C76-B65F8E05625C}
+name: Meta Title
+key: meta title
+content-length: 8
+
+Big bang
+----field----
+field: {33041911-3D04-4655-B541-4822EA8E5F67}
+name: Meta Description
+key: meta description
+content-length: 11
+
+今季配飾，一字記之曰大
+----field----
+field: {488A8A34-0066-4E82-9EC8-0D807C62EE63}
+name: Social Share Title
+key: social share title
+content-length: 8
+
+Big bang
+----field----
+field: {661E5EF2-BE23-4D83-A66F-E328BD863A00}
+name: Social Share Description
+key: social share description
+content-length: 11
+
+今季配飾，一字記之曰大
+----field----
 field: {B26AE4F4-A23D-495D-A8CC-467877F93108}
 name: Page Title
 key: page title
@@ -247,14 +331,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-c5fe8b27-d381-40c9-aaf4-f68c83ea42a0
+903801c8-6461-4c3b-961f-4995d4cc2714
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T091625Z
+20151125T044212Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
