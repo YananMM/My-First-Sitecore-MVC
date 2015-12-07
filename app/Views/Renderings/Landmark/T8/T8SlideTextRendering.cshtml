@@ -1,10 +1,16 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
+@using Sitecore.Data.Fields
 @model RenderingModel
-
+@{
+    var currentItem = Sitecore.Context.Item;
+}
 <h2>@Html.Sitecore().Field("About Title").ToString().ToUpper()</h2>
 <p>@Html.Sitecore().Field("About Description") </p>
-@*<a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.T35GetDirectionsPage)))" class="gd-link-brief">
-    @Html.Sitecore().Field("Getting Here Text") <span class="icomoon-chevron-small-right"></span>
-</a>*@
-@Html.Sitecore().Field("Getting Here Url", new { @class = "gd-link-brief", @text = Html.Sitecore().Field("Getting Here Text") + "<span class='icomoon-chevron-small-right'></span>" })
+@{
+    LinkField getingHereLink = currentItem.Fields["Getting Here Url"];
+}
+@*<a href="@getingHereLink.Url" target="@getingHereLink.Target" class="gd-link-brief">
+        @Html.Sitecore().Field("Getting Here Text") <span class="icomoon-chevron-small-right"></span>
+    </a>*@
+@Html.Sitecore().Field("Getting Here Url", currentItem, new { @class = "gd-link-brief", @text = Html.Sitecore().Field("Getting Here Text") + "<span class='icomoon-chevron-small-right'></span>" })
