@@ -9,10 +9,17 @@ master: {00000000-0000-0000-0000-000000000000}
 template: {753658B3-59D8-4DAA-8FC8-CFE38C0EFD20}
 templatekey: Tag Object
 
+----field----
+field: {D9FA22B1-BBD4-4BDC-BFB5-42CB9F2CBCA1}
+name: Related Tags
+key: related tags
+content-length: 116
+
+{101C4A58-6D7D-4905-AD44-F0F054282440}|{4BAF85E9-53CA-435A-89FF-5C51E7F9750C}|{45EE72B3-0021-4A62-AA7F-55E291FB3979}
 ----version----
 language: en
 version: 1
-revision: 4f2d763b-911e-43b1-b99b-79f814e92cf6
+revision: 2963274c-9da6-4266-b49b-a29266ad7d42
 
 ----field----
 field: {6055FC25-BD12-4AB0-A3A9-FB801C7DC821}
@@ -34,14 +41,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4f2d763b-911e-43b1-b99b-79f814e92cf6
+2963274c-9da6-4266-b49b-a29266ad7d42
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20151110T025448Z
+20151201T083052Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -40,7 +40,7 @@ content-length: 38
 ----version----
 language: en
 version: 1
-revision: b27b90c3-d30c-4778-9745-95c9e4e816f6
+revision: 9b73c1ca-9b91-42ab-a9cf-f6fb7675df3f
 
 ----field----
 field: {29FA7895-CEF3-48F6-B527-5AD5FD93F772}
@@ -49,6 +49,13 @@ key: link text
 content-length: 12
 
 GETTING HERE
+----field----
+field: {23D72295-1322-40ED-9ABB-41459EDD1DC9}
+name: Link Url
+key: link url
+content-length: 141
+
+<link text="GETTING HERE" linktype="internal" class="" title="" target='Custom' querystring="" id="{C4B0C207-D66A-4E2F-9469-6B8FF62A4CB1}" />
 ----field----
 field: {A2BC7939-8EC4-4E69-9A98-2844135FF6AA}
 name: Head Description
@@ -130,9 +137,9 @@ content-length: 15
 field: {0605BAE7-53D9-436D-83E2-15C84CBDC05F}
 name: Contact Email
 key: contact email
-content-length: 25
+content-length: 117
 
-communications@hkland.com
+<link text='communications@hkland.com' linktype='mailto' style='' url='mailto:communications@hkland.com'  title='' />
 ----field----
 field: {015F9EBF-FBE7-45A4-8ACF-6D3E1FD70788}
 name: Personal Title
@@ -287,14 +294,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-b27b90c3-d30c-4778-9745-95c9e4e816f6
+9b73c1ca-9b91-42ab-a9cf-f6fb7675df3f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151204T071834:635848103142931741Z
+20151207T080924:635850725649200520Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
