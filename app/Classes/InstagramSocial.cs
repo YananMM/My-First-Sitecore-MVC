@@ -87,7 +87,7 @@ namespace Landmark.Classes
             do
             {
                 var uri = new Uri(string.Format(
-                        "https://api.instagram.com/v1/users/{0}/media/recent?count=10{1}&client_id={2}", userId, lastIdParam, clientId));
+                        "https://api.instagram.com/v1/users/{0}/media/recent?client_id={1}", userId, clientId));
                 var response = Proxy(uri);
 
                 var json = ReadResponse(response);
@@ -209,43 +209,62 @@ namespace Landmark.Classes
                 Item folder = _webDb.GetItem(ItemGuids.InstagramFolder);
                 Item folderMaster = _masterDb.GetItem(ItemGuids.InstagramFolder);
                 var socialImages = new List<SocialImage>();
-                socialImages.AddRange(GetFromInstagram(Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem).Fields["User Id"].Value));
+                socialImages.AddRange(GetFromInstagram(Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem).Fields["User Id"].Value).ToList().Take(10));
+                if(socialImages.Count<1)
+                    return;
                 // insert new items
                 var postsAdded = 0;
-                var instagramImages = folderMaster.Children
-                    .Where(item => item.TemplateID.Guid.ToString() == ItemGuids.InstagramImageTemplate);
-                foreach (Item instagramImage in instagramImages)
-                {
-                    instagramImage.Delete();
-                }
-                Item ImageFolder = _masterDb.GetItem("/sitecore/media library/Images/Landmark/Instagram Folder");
-                var images = ImageFolder.Children;
-                foreach (Item instagramImage in images)
-                {
-                    instagramImage.Delete();
-                }
+                //var instagramImages = folderMaster.Children
+                //    .Where(item => item.TemplateID.Guid.ToString() == ItemGuids.InstagramImageTemplate);
+                //foreach (Item instagramImage in instagramImages)
+                //{
+                //    _webDb.GetItem(instagramImage.ID).Delete();
+                //    instagramImage.Delete();
+                //}
+                //Item ImageFolder = _masterDb.GetItem("/sitecore/media library/Images/Landmark/Instagram Folder");
+                //var images = ImageFolder.Children;
+                //foreach (Item instagramImage in images)
+                //{
+                //    _webDb.GetItem(instagramImage.ID).Delete();
+                //    instagramImage.Delete();
+                //}
+                if (folderMaster!=null)
+                    if(folderMaster.Children.Any())
+                        folderMaster.DeleteChildren();
+                if(folder!=null)
+                    if (folder.Children.Any())
+                        folder.DeleteChildren();
                 foreach (var socialImage in socialImages)
                 {
                     Sitecore.Diagnostics.Log.Info(string.Format("Creating Item: {0}, {1}", "Instagram " + socialImage.Id, socialImage.PublishTime), this);
 
-                    var imageItem = SaveImage(socialImage.Id, socialImage.Caption);
+                    var imageItem = SaveImage(socialImage.Url, socialImage.Caption);
+                    var profileImageItem = SaveImage(socialImage.ProfilePicture, socialImage.User);
 
                     if (imageItem == null)
                         continue;
-
+                    //if (_masterDb.GetItem(folderMaster.Paths.Path + socialImage.Id)!= null)
+                    //{
+                       // _masterDb.GetItem(folderMaster.Paths.Path + socialImage.Id).Delete();
+                    //}
                     var newItem = folderMaster.Add(socialImage.Id, instagramImageTemplateItem);
+                    
                     using (new EditContext(newItem))
                     {
+                        newItem.Editing.BeginEdit();
                         newItem.Fields["Id"].Value = socialImage.Id;
                         newItem.Fields["User"].Value = socialImage.User;
                         newItem.Fields["Caption"].Value = socialImage.Caption;
-                        newItem.Fields["Profile Picture"].Value = socialImage.ProfilePicture;
+                        //newItem.Fields["Profile Picture"].Value = socialImage.ProfilePicture;
                         newItem.Fields["Publish Time"].Value = Sitecore.DateUtil.ToIsoDate(socialImage.PublishTime);
-                        SetImageFieldValue(imageItem.ID.ToString(), newItem, "Image");
                         if (!string.IsNullOrEmpty(socialImage.Link))
                         {
                             ((LinkField)newItem.Fields["Url"]).Url = socialImage.Link;
                         }
+                        SetImageFieldValue(imageItem.ID.ToString(), newItem, "Image");
+                        SetImageFieldValue(profileImageItem.ID.ToString(), newItem, "Profile Picture");
+                        newItem.Editing.EndEdit();
+                        newItem.Editing.AcceptChanges();
                     }
                     foreach (var language in newItem.Languages)
                     {
@@ -261,10 +280,8 @@ namespace Landmark.Classes
                                     langItem.Fields[fld.Name].Value = fld.Value;
                                 }
                             }
-                        }
-
-                        Sitecore.Publishing.Pipelines.PublishItem.PublishItemPipeline.Run(
-                            newItem.ID,
+                            Sitecore.Publishing.Pipelines.PublishItem.PublishItemPipeline.Run(
+                            langItem.ID,
                             new PublishOptions(
                                 _masterDb,
                                 _webDb,
@@ -272,9 +289,23 @@ namespace Landmark.Classes
                                 language,
                                 DateTime.Now
                                 ));
+                        }
                     }
                     postsAdded++;
                 }
+                foreach (var language in folderMaster.Languages)
+                {
+                    Sitecore.Publishing.Pipelines.PublishItem.PublishItemPipeline.Run(
+                            folderMaster.ID,
+                            new PublishOptions(
+                                _masterDb,
+                                _webDb,
+                                PublishMode.Full,
+                                language,
+                                DateTime.Now
+                                ));
+                }
+                
                 Sitecore.Diagnostics.Log.Info(string.Format("Added {0} items", postsAdded), this);
 
             }
@@ -286,6 +317,11 @@ namespace Landmark.Classes
 
             var fileName = Path.GetFileName(new Uri(url).AbsolutePath);
             var itemName = Path.GetFileNameWithoutExtension(fileName);
+            Item item = _masterDb.GetItem("/sitecore/media library/Images/Landmark/Instagram Folder/" + itemName);
+            if (item != null)
+            {
+                return item;
+            }
             var options =
                 new Sitecore.Resources.Media.MediaCreatorOptions
                 {

@@ -76,9 +76,12 @@
                                         }
                                     }
                                     <li>
-                        <a href="@LandmarkHelper.GetItemUrl(item)">
-                            @Html.Sitecore().Field("Glossary Value", Sitecore.Context.Database.GetItem(ItemGuids.SeeAllRestaurantItem))<span class="icomoon-chevron-small-right"></span>
-                        </a>
+                                        @{
+                                            Item allbybrands = Sitecore.Context.Database.GetItem(ItemGuids.DiningItem).Children.Where(i => i.DisplayName == "By Brands").FirstOrDefault();
+                                        }
+                                        <a href="@LandmarkHelper.GetItemUrl(allbybrands)">
+                                            @Html.Sitecore().Field("Glossary Value", Sitecore.Context.Database.GetItem(ItemGuids.SeeAllRestaurantItem))<span class="icomoon-chevron-small-right"></span>
+                                        </a>
                                     </li>
                                 </ul>
                             </li>

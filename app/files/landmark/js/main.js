@@ -237,6 +237,14 @@ $(document).ready(function() {
     //     click: true
     //   });
     // }
+    
+    // Disable interactive of other elements if menu opened
+    $('body').on('touchstart click dbclick scroll', function(event) {
+      if ($mobileMainMenuHandle.hasClass('button-close') && $(event.target).parents('.site-header').length < 1) {
+        return false;
+      }
+    });
+    
     var mobileMainMenuAnimation = new TimelineMax()
       .add(
         TweenMax.fromTo($mobileMainMenu, .5, {left: "-100%"}, {left: "0%"}),
@@ -445,7 +453,7 @@ $(document).ready(function() {
             });
          };
 
-      $('.header-social .icomoon-facebook, .gd-promo-sharebox .icomoon-facebook').click(function(e){
+      $('.header-social .icomoon-facebook, .gd-promo-sharebox .icomoon-facebook, .mobile-share .icomoon-facebook').click(function(e){
         e.preventDefault();
         var url;
         if($(this).parent().is('.gd-promo-sharebox')){
@@ -466,7 +474,7 @@ $(document).ready(function() {
   Modernizr.load({
     load: 'https://platform.twitter.com/widgets.js',
     callback: function(){
-      $('.header-social .icomoon-twitter, .gd-promo-sharebox .icomoon-twitter').each(function(){
+      $('.header-social .icomoon-twitter, .gd-promo-sharebox .icomoon-twitter, .mobile-share .icomoon-twitter').each(function(){
         var url;
         if($(this).parent().is('.gd-promo-sharebox')){
           url = $(this).parent().parent().prev('.gd-button').attr('href');
@@ -483,7 +491,7 @@ $(document).ready(function() {
     load: 'http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=' + gdSettings.wbAppKey,
     callback: function(){
       WB2.anyWhere(function(W){
-        $('.header-social .icomoon-sina-weibo, .gd-promo-sharebox .icomoon-sina-weibo').each(function(index){
+        $('.header-social .icomoon-sina-weibo, .gd-promo-sharebox .icomoon-sina-weibo, .mobile-share .icomoon-sina-weibo').each(function(index){
           $(this).attr('id', 'wb_publish_'+index)
           var url, description, default_imagesArr = [];
           if($(this).parent().is('.gd-promo-sharebox')){
@@ -518,7 +526,7 @@ $(document).ready(function() {
   });
 
   // share by email
-  $('.header-social .icomoon-envelop').attr('href', 'mailto:?subject='+ encodeURIComponent(socialShareTitle)+'&body='+encodeURIComponent(socialShareDescription));
+  $('.header-social .icomoon-envelop, .mobile-share .icomoon-envelop').attr('href', 'mailto:?subject='+ encodeURIComponent(socialShareTitle)+'&body='+encodeURIComponent(socialShareDescription));
 
   /**********************************************************************************************************
    * Home
@@ -745,14 +753,17 @@ $(document).ready(function() {
 
     // Mousewheel
     $(document).off('mousewheel.panel').on('mousewheel.panel', function(e){
-      e.preventDefault();
-      if(isScrolling)
-        return;
-
-      if(e.deltaY < 0){
-        goToSlide(currentSlide + 1);
-      } else {
-        goToSlide(currentSlide - 1)
+      // if menu opened, disable panel scroll
+      if (!$mobileMainMenuHandle.hasClass('button-close')) {
+        e.preventDefault();
+        if(isScrolling)
+          return;
+  
+        if(e.deltaY < 0){
+          goToSlide(currentSlide + 1);
+        } else {
+          goToSlide(currentSlide - 1)
+        }
       }
     });
 

@@ -1,8 +1,9 @@
 ﻿@using Landmark.Classes
+@using Landmark.Helper
 @using Sitecore.Configuration
+@using Sitecore.Data.Items
 @{
-    var instagramSocial = new InstagramSocial();
-    var images = instagramSocial.GetFromInstagram(Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem).Fields["User Id"].Value);
+    var images = Sitecore.Context.Database.GetItem(ItemGuids.InstagramFolder).Children;
 }
 <section class="panel-area">
 <section class="instagram-area">
@@ -12,15 +13,15 @@
             <h2>@Html.Sitecore().Field("Instagram Title")</h2>
         </hgroup>
         <ul class="clearfix">
-            @foreach (var image in images)
+            @foreach (Item image in images)
             {
                 <li>
-                    <a href="" data-bg="@image.Url">
+                    <a href="" data-bg="@LandmarkHelper.ImageFieldSrc("Image",image)">
                         <div class="instagram-text hidden-xs  hidden-sm">
-                            <img data-src="@image.ProfilePicture" class="instagram-user lazy-loaded">
+                            <img data-src="@LandmarkHelper.ImageFieldSrc("Profile Picture",image)" class="instagram-user lazy-loaded">
                             <div class="instagram-info">
-                                <h5>@image.User</h5>
-                                @image.PublishTime
+                                <h5>@Html.Sitecore().Field("User",image)</h5>
+                                @Html.Sitecore().Field("Publish Time",image)
                             </div>
                         </div>
                     </a>

@@ -6933,7 +6933,7 @@ button.close {
 .mixin-search-clear:active {
   color: #999999;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .site-header nav {
     padding: 20px 0;
   }
@@ -8321,6 +8321,20 @@ button.close {
 }
 .t1 .back-top {
   background-color: #1d1d1d;
+}
+.t1 .back-top .back-to-top {
+  display: block !important;
+  position: absolute;
+}
+@media (max-width: 480px) {
+  .t1 .back-top .back-to-top {
+    bottom: -60px;
+  }
+}
+.t1 .btn-default:focus,
+.t1 .btn-default:hover {
+  color: white;
+  border-color: white;
 }
 .t1 .slider-nav {
   position: absolute;
@@ -11484,6 +11498,7 @@ h4 a:active {
 }
 .gd-mainimage .carousel-indicators {
   top: 165px;
+  height: 20px;
 }
 .gd-mainimage .carousel-inner {
   padding: 0;
@@ -15966,8 +15981,8 @@ dl.gd-content-details-tags dd a:active {
   text-align: center;
 }
 .t14 .shopdetails-brand .shopdetails-brand-header ul li {
-  margin: 0 0 0 10px;
-  padding-left: 12px;
+  margin: 0 0 0 7px;
+  padding-left: 7px;
   border-left: solid 1px #222;
 }
 .t14 .shopdetails-brand .shopdetails-brand-header ul li:first-child {
