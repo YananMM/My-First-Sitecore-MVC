@@ -18,10 +18,7 @@
             @foreach (Item image in images)
             {
                 <li>
-                    @{
-                string href = image.Fields["Url"].Value.IsEmptyOrNull() ? "#" : image.Fields["Url"].Value;
-                    }
-                    <a href="@href" data-bg="@LandmarkHelper.ImageFieldSrc("Image", image)" target="_blank">
+                    <a href="#" data-bg="@LandmarkHelper.ImageFieldSrc("Image", image)" target="_blank">
                         <div class="instagram-text hidden-xs  hidden-sm">
                             <img data-src="@LandmarkHelper.ImageFieldSrc("Profile Picture", image)" class="instagram-user lazy-loaded">
                             <div class="instagram-info">
