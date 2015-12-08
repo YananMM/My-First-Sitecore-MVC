@@ -322,6 +322,81 @@ namespace Landmark.Helper
             {
                 brandsByCategory = brandsItems;
             }
+
+            //
+            //go through /map tree to collect shop names
+            //uniqlo|mcdonalds|starbucks
+            string allShopsInBuilding = "";
+            Item building = Sitecore.Context.Database.GetItem(buildingId);
+            foreach (Item child in building.Children)
+            {
+                if (child.Template != null && child.Template.Name.Equals("Floor Object"))
+                {
+                    foreach (Item shop in child.Children)
+                    {
+                        if (shop.Template.Name.Equals("Shop Location Object"))
+                        {
+                            allShopsInBuilding += shop.Name + "|";
+                        }
+                    }
+                }
+                else if (child.Template != null && child.Template.Name.Equals("Building Location Object"))
+                {
+                    allShopsInBuilding += child.Name + "|";
+                }
+            }
+
+            //
+            //for each shop in brandsByCategory
+            //if (long string contains shop.name)
+            //
+            List<Item> brandsByBuildings = new List<Item>();
+            foreach (var brand in brandsByCategory)
+            {
+                if (allShopsInBuilding.Contains(brand.Name + "|"))
+                {
+                    brandsByBuildings.Add(brand);
+                }
+            }
+
+            return brandsByBuildings.OrderBy(p => p.DisplayName).ToList();
+        }
+
+        public List<Item> GetBrandsByBuildingsGruden(string category, ID buildingId)
+        {
+            Item parentItem = Sitecore.Context.Item.Parent;
+            while (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
+            {
+                parentItem = parentItem.Parent;
+            }
+            Item item = null;
+            if (parentItem.ID.ToString() == ItemGuids.ShoppingItem)
+            {
+                item = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
+            }
+            else
+            {
+                item = Sitecore.Context.Database.GetItem(ItemGuids.DiningItem);
+            }
+
+            var query = string.Format("fast:{0}//*[{1}]", item.Paths.FullPath, "@@TemplateId='" + ItemGuids.T14ShopDetailsTemplate + "'");
+            List<Item> brandsItems = _webDb.SelectItems(query).ToList();
+            List<Item> brandsByCategory = new List<Item>();
+            if (!string.IsNullOrEmpty(category))
+            {
+                foreach (var brand in brandsItems)
+                {
+                    var tagField = brand.Fields["Tags"];
+                    if (tagField.Value.Contains(category))
+                    {
+                        brandsByCategory.Add(brand);
+                    }
+                }
+            }
+            else
+            {
+                brandsByCategory = brandsItems;
+            }
             List<Item> brandsByBuildings = new List<Item>();
             foreach (Item brand in brandsByCategory)
             {
