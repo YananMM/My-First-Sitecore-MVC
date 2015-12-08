@@ -461,7 +461,7 @@ jQuery(function ($) {
                     if ($(this).parent().is('.gd-promo-sharebox')) {
                         url = $(this).parent().parent().prev('.gd-button').attr('href');
                     } else {
-                        url = socialShareUrl
+                        url = socialShareUrl;
                     }
                     FB.ui(
                     {
