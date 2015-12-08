@@ -87,9 +87,9 @@ namespace Landmark.Helper
         {
             var parentItem = currentItem.Parent;
             var grandParentItem = parentItem.Parent;
-            List<Item> allCategories = null;
+            string currentTag = string.Empty;
+            List<Item> allCategories = new List<Item>();
             List<Item> subCategories = new List<Item>();
-            string currentTag = String.Empty;
             if (isShop)
                 allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
             if (isDining)
@@ -98,7 +98,7 @@ namespace Landmark.Helper
             if (grandParentItem.ID.ToString() == ItemGuids.DiningItem)
             {
                 allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);
-                Item currentCategory = allCategories.FirstOrDefault(i => i.DisplayName.Replace(i.Parent.DisplayName + "-", "") == parentItem.DisplayName);
+                Item currentCategory = allCategories.FirstOrDefault(i => i.DisplayName.Replace("_", " ").Replace(i.Parent.DisplayName + "-", "").Trim() == parentItem.DisplayName);
                 if (currentCategory != null)
                 {
                     currentTag = currentCategory.ID.ToString();
@@ -107,16 +107,16 @@ namespace Landmark.Helper
             }
             if (parentItem.TemplateID.ToString() == ItemGuids.ShoppingSubCategoryPageObject)
             {
-                subCategories = LandmarkHelper.GetItemByTemplate(parentItem.Parent, ItemGuids.ShoppingSubCategoryPageObject);
+                subCategories = LandmarkHelper.GetItemByTemplate(grandParentItem, ItemGuids.ShoppingSubCategoryPageObject);
             }
             else if (parentItem.TemplateID.ToString() == ItemGuids.T11PageTemplate)
             {
-                subCategories = LandmarkHelper.GetItemByTemplate(parentItem, ItemGuids.ShoppingSubCategoryPageObject);
+                subCategories = new List<Item>();
             }
 
             if (subCategories == null || !subCategories.Any())
             {
-                Item currentCategory = allCategories.FirstOrDefault(i => i.DisplayName.Replace(i.Parent.DisplayName + "-", "") == parentItem.DisplayName);
+                Item currentCategory = allCategories.SingleOrDefault(i => i.DisplayName.Replace("_", " ").Replace(i.Parent.DisplayName + "-", "").Trim() == parentItem.DisplayName);
                 if (currentCategory != null)
                 {
                     currentTag = currentCategory.ID.ToString();
@@ -124,12 +124,11 @@ namespace Landmark.Helper
                 return currentTag;
             }
 
-            var grandParentCategorys = allCategories.SingleOrDefault(p => p.DisplayName == grandParentItem.DisplayName);
-            var parentCategorys = LandmarkHelper.GetItemsByRootAndTemplate(grandParentCategorys.ID.ToString(), ItemGuids.CategoryObjectTemplate);
+            var category = allCategories.SingleOrDefault(p => p.DisplayName == grandParentItem.DisplayName);
 
-            foreach (var item in parentCategorys)
+            foreach (var item in category.Children.ToList())
             {
-                if (item.DisplayName.Contains(parentItem.DisplayName))
+                if (item.DisplayName.Replace("_", " ").Replace(item.Parent.DisplayName + "-", "") == parentItem.DisplayName)
                 {
                     currentTag = item.ID.ToString();
                 }
@@ -225,7 +224,7 @@ namespace Landmark.Helper
                     subCategoriess.Select(p => new TextValue
                     {
                         text = p["Tag Name"],
-                        DisplayName = p.DisplayName.Replace("_", " ").Replace(p.Parent.DisplayName + "-", ""),
+                        DisplayName = p.DisplayName.Replace("_", " ").Replace(p.Parent.DisplayName + "-", " ").Trim(),
                         value = p.ID.ToString()
                     }).OrderBy(p => p.DisplayName).ToList();
                 item.children = children;
@@ -235,36 +234,76 @@ namespace Landmark.Helper
 
         public List<string> GetRelatedCategoriesIDs()
         {
-
-            List<Item> allshoppingCategories = null;
+            List<string> relatedCategoriesIDs = new List<string>();
+            List<Item> allshoppingCategories = new List<Item>();
+            Item currentItem = Sitecore.Context.Item;
+            var parentItem = currentItem.Parent;
+            var grandParentItem = parentItem.Parent;
+            Item currentTag = parentItem;
+            List<Item> subCategories = new ItemList();
+            if (currentItem.TemplateID.ToString() == ItemGuids.T11PageTemplate)
+            {
+                allshoppingCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
+                foreach (var item in allshoppingCategories)
+                {
+                    if (item.DisplayName == currentItem.DisplayName)
+                    {
+                        currentTag = item;
+                    }
+                }
+            }
+            if (isDining)
+            {
+                allshoppingCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);
+                foreach (var item in allshoppingCategories)
+                {
+                    if (item.DisplayName == parentItem.DisplayName)
+                    {
+                        currentTag = item;
+                    }
+                }
+            } 
             if (isShop)
             {
                 allshoppingCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
-            }
-            else
-            {
-                allshoppingCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);
+                if (parentItem.TemplateID.ToString() == ItemGuids.ShoppingSubCategoryPageObject)
+                {
+                    foreach (var item in allshoppingCategories)
+                    {
+                        if (item.DisplayName == grandParentItem.DisplayName)
+                        {
+                            subCategories = item.Children.ToList();
+                        }
+                    }
+                    foreach (var item in subCategories)
+                    {
+                        if (item.DisplayName.Replace("_", " ").Replace(item.Parent.DisplayName + "-", " ").Trim() == parentItem.DisplayName)
+                        {
+                            currentTag = item;
+                        }
+                    }
+                }
+                else if (parentItem.TemplateID.ToString() == ItemGuids.T11PageTemplate)
+                {
+                    foreach (var item in allshoppingCategories)
+                    {
+                        if (item.DisplayName == parentItem.DisplayName)
+                        {
+                            currentTag = item;
+                        }
+                    }
+                }
             }
 
-            Item currentShoppingPage = Sitecore.Context.Item;
-            Item currentItem = Sitecore.Context.Item;
-            if (currentItem.DisplayName == "By Brands" || currentItem.DisplayName == "By Buildings")
+            var relatedCategories = currentTag.Fields["Related Tags"];
+            if (relatedCategories != null)
             {
-                currentShoppingPage = currentItem.Parent.Parent;
-            }
-            List<string> relatedCategoriesIDs = new List<string>();
-            foreach (var item in allshoppingCategories)
-            {
-                if (item.DisplayName == currentShoppingPage.DisplayName)
+                if (!string.IsNullOrEmpty(relatedCategories.ToString()))
                 {
-                    var relatedCategories = item.Fields["Related Tags"].ToString();
-                    if (!string.IsNullOrEmpty(relatedCategories))
+                    relatedCategoriesIDs = relatedCategories.ToString().Split('|').ToList();
+                    if (relatedCategoriesIDs.Count > 3)
                     {
-                        relatedCategoriesIDs = relatedCategories.Split('|').ToList();
-                        if (relatedCategoriesIDs.Count > 3)
-                        {
-                            relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
-                        }
+                        relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
                     }
                 }
             }
@@ -288,81 +327,6 @@ namespace Landmark.Helper
         }
 
         public List<Item> GetBrandsByBuildings(string category, ID buildingId)
-        {
-            Item parentItem = Sitecore.Context.Item.Parent;
-            while (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
-            {
-                parentItem = parentItem.Parent;
-            }
-            Item item = null;
-            if (parentItem.ID.ToString() == ItemGuids.ShoppingItem)
-            {
-                item = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
-            }
-            else
-            {
-                item = Sitecore.Context.Database.GetItem(ItemGuids.DiningItem);
-            }
-
-            var query = string.Format("fast:{0}//*[{1}]", item.Paths.FullPath, "@@TemplateId='" + ItemGuids.T14ShopDetailsTemplate + "'");
-            List<Item> brandsItems = _webDb.SelectItems(query).ToList();
-            List<Item> brandsByCategory = new List<Item>();
-            if (!string.IsNullOrEmpty(category))
-            {
-                foreach (var brand in brandsItems)
-                {
-                    var tagField = brand.Fields["Tags"];
-                    if (tagField.Value.Contains(category))
-                    {
-                        brandsByCategory.Add(brand);
-                    }
-                }
-            }
-            else
-            {
-                brandsByCategory = brandsItems;
-            }
-
-            //
-            //go through /map tree to collect shop names
-            //uniqlo|mcdonalds|starbucks
-            string allShopsInBuilding = "";
-            Item building = Sitecore.Context.Database.GetItem(buildingId);
-            foreach (Item child in building.Children)
-            {
-                if (child.Template != null && child.Template.Name.Equals("Floor Object"))
-                {
-                    foreach (Item shop in child.Children)
-                    {
-                        if (shop.Template.Name.Equals("Shop Location Object"))
-                        {
-                            allShopsInBuilding += shop.Name + "|";
-                        }
-                    }
-                }
-                else if (child.Template != null && child.Template.Name.Equals("Building Location Object"))
-                {
-                    allShopsInBuilding += child.Name + "|";
-                }
-            }
-
-            //
-            //for each shop in brandsByCategory
-            //if (long string contains shop.name)
-            //
-            List<Item> brandsByBuildings = new List<Item>();
-            foreach (var brand in brandsByCategory)
-            {
-                if (allShopsInBuilding.Contains(brand.Name + "|"))
-                {
-                    brandsByBuildings.Add(brand);
-                }
-            }
-
-            return brandsByBuildings.OrderBy(p => p.DisplayName).ToList();
-        }
-
-        public List<Item> GetBrandsByBuildingsGruden(string category, ID buildingId)
         {
             Item parentItem = Sitecore.Context.Item.Parent;
             while (!parentItem.ID.ToString().Equals(ItemGuids.ShoppingItem) && !parentItem.ID.ToString().Equals(ItemGuids.DiningItem))
@@ -485,7 +449,7 @@ namespace Landmark.Helper
             }
             return false;
         }
-      
+
         /// <summary>
         /// Gets the shop page by tag.
         /// </summary>
@@ -627,21 +591,13 @@ namespace Landmark.Helper
             Item shopping = null;
             if (parent == ItemGuids.ShoppingItem)
             {
-                shoppingCategory = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingCategory);
                 shopping = Sitecore.Context.Database.GetItem(ItemGuids.ShoppingItem);
             }
             if (parent == ItemGuids.DiningItem)
             {
-                shoppingCategory = Sitecore.Context.Database.GetItem(ItemGuids.DiningCategory);
                 shopping = Sitecore.Context.Database.GetItem(ItemGuids.DiningItem);
             }
-
-            var queryCategory = string.Format("fast:{0}//*[{1}]", shoppingCategory.Paths.FullPath, "@@TemplateId='" + ItemGuids.CategoryObjectTemplate + "'");
-            List<Item> firstCategory = (from category in _webDb.SelectItems(queryCategory).ToList()
-                                        from Item item in shopping.Children
-                                        where item.DisplayName == category.DisplayName
-                                        select item).ToList();
-            return firstCategory;
+            return shopping.Children.Where(i=>i.TemplateID.ToString().Equals(ItemGuids.T11PageTemplate)).ToList();
 
         }
 
@@ -751,7 +707,6 @@ namespace Landmark.Helper
 
             return randomArticles;
         }
-
 
     }
 }
