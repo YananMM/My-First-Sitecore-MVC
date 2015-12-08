@@ -260,7 +260,7 @@ namespace Landmark.Classes
                         newItem.Fields["Publish Time"].Value = socialImage.PublishTime.ToString("d/MM/yyyy hh:mm:ss tt", DateTimeFormatInfo.InvariantInfo);
                         if (!string.IsNullOrEmpty(socialImage.Link))
                         {
-                            ((LinkField)newItem.Fields["Url"]).Url = socialImage.Link;
+                            newItem.Fields["Url"].Value= socialImage.Link;
                         }
                         SetImageFieldValue(imageItem.ID.ToString(), newItem, "Image");
                         SetImageFieldValue(profileImageItem.ID.ToString(), newItem, "Profile Picture");
