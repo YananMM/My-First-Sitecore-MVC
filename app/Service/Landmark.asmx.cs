@@ -61,18 +61,17 @@ namespace Landmark.Service
                                       locations = (from location in _shopHelper.GetBrandsByFloor(floor)
                                                    select new Location
                                                    {
-                                                       title = (location.Fields["Brand Title"].Value).DoCustomReplace(),
-                                                       area = (location.Fields["Address"].Value).DoCustomReplace(),
+                                                       title = location.Fields["Brand Title"].Value,
+                                                       area = location.Fields["Address"].Value,
                                                        category = "floor-" + floor.ID.ToShortID(),
                                                        description = "",
                                                        id = location.Fields["Svg Id"].Value,
-                                                       pin = IfBrowserIsIE8() ? "orange" : "hide",
+                                                       pin = "hide",
                                                        x = location.Fields["LocationX"].Value,
                                                        y = location.Fields["LocationY"].Value,
                                                        workdayhours = location.Fields["Opening Hours"].Value,
-                                                       wherelocation = (location.Fields["Address"].Value + "," + floor.Fields["Floor Title"].Value + "," + building.Fields["Building Title"].Value).DoCustomReplace(),
-                                                       wherelocationmobile = location.Fields["Svg Id"].Value.SvgIdToShopId(),
-                                                       address = (building.Fields["Building Address"].Value).DoCustomReplace(),
+                                                       wherelocation = location.Fields["Address"].Value + "," + floor.Fields["Floor Title"].Value + "," + building.Fields["Building Title"].Value,
+                                                       address = building.Fields["Building Address"].Value,
                                                        href = LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(location))
                                                    }).ToList()
                                   }).ToList();
@@ -103,8 +102,8 @@ namespace Landmark.Service
                 select new Location
                 {
                     id = location.Fields["Building Svg Id"].Value,
-                    title = IfBrowserIsIE8() ? location.Fields["Building Title"].Value.DoCustomReplace() : "",
-                    pin = IfBrowserIsIE8() ? "orange" : "hide",
+                    title = IfBrowserIsIE8() ? location.Fields["Building Title"].Value : "",
+                    pin = IfBrowserIsIE8() ? "green" :"hide",
                     x = location.Fields["LocationX"].Value,
                     y = location.Fields["LocationY"].Value
                 }).ToList();
