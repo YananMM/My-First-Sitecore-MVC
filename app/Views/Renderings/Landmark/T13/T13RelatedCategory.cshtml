@@ -12,15 +12,17 @@
     var relatedCategorieIDs = shoppingHelper.GetRelatedCategoriesIDs();
     var shoppingPages = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.T11PageTemplate);
     var diningPages = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningItem, ItemGuids.T11PageTemplate);
-    var allPages = shoppingPages.Union(diningPages);
+    var shoppingSubPages = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem, ItemGuids.ShoppingSubCategoryPageObject);
+    var allPages = shoppingPages.Union(diningPages).Union(shoppingSubPages);
+
     foreach (var item in allPages)
     {
         foreach (var id in relatedCategorieIDs)
         {
             var category = Sitecore.Context.Database.GetItem(id);
-            if (category.DisplayName == item.DisplayName)
+            if (category.DisplayName.Replace("_", " ").Replace(category.Parent.DisplayName + "-", "") == item.DisplayName)
             {
-                if (item.Children.FirstOrDefault().TemplateID.ToString() == ItemGuids.T13PageTemplate)
+                if (item.Children.FirstOrDefault().TemplateID.ToString() == ItemGuids.T13PageTemplate || item.TemplateID.ToString() == ItemGuids.T13PageTemplate)
                 {
                     <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item.Children.FirstOrDefault()))">@Html.Sitecore().Field("Page Title", item)</a></li>
                 }

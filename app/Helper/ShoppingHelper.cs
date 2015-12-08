@@ -307,7 +307,7 @@ namespace Landmark.Helper
                     relatedCategoriesIDs = relatedCategories.ToString().Split('|').ToList();
                     if (relatedCategoriesIDs.Count > 3)
                     {
-                        relatedCategoriesIDs = relatedCategoriesIDs.GetRange(0, 3);
+                        relatedCategoriesIDs = relatedCategoriesIDs.Take(3).ToList();
                     }
                 }
             }
