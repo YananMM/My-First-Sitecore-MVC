@@ -87,51 +87,54 @@ namespace Landmark.Helper
         {
             var parentItem = currentItem.Parent;
             var grandParentItem = parentItem.Parent;
-            List<Item> allCategories = null;
+            List<Item> allCategories = new List<Item>();
             List<Item> subCategories = new List<Item>();
-            string currentTag = String.Empty;
-            if (isShop)
-                allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
+            string currentTag = string.Empty;
             if (isDining)
-                allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);
-
-            if (grandParentItem.ID.ToString() == ItemGuids.DiningItem)
             {
                 allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningCategory, ItemGuids.CategoryObjectTemplate);
-                Item currentCategory = allCategories.FirstOrDefault(i => i.DisplayName.Replace(i.Parent.DisplayName + "-", "") == parentItem.DisplayName);
+                Item currentCategory = allCategories.FirstOrDefault(i => i.DisplayName.Replace("_", " ").Replace(i.Parent.DisplayName + "-", "").Trim() == parentItem.DisplayName);
                 if (currentCategory != null)
                 {
                     currentTag = currentCategory.ID.ToString();
                 }
                 return currentTag;
             }
-            if (parentItem.TemplateID.ToString() == ItemGuids.ShoppingSubCategoryPageObject)
+            else if (isShop)
             {
-                subCategories = LandmarkHelper.GetItemByTemplate(parentItem.Parent, ItemGuids.ShoppingSubCategoryPageObject);
-            }
-            else if (parentItem.TemplateID.ToString() == ItemGuids.T11PageTemplate)
-            {
-                subCategories = LandmarkHelper.GetItemByTemplate(parentItem, ItemGuids.ShoppingSubCategoryPageObject);
-            }
+                allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory,
+                    ItemGuids.CategoryObjectTemplate);
 
-            if (subCategories == null || !subCategories.Any())
-            {
-                Item currentCategory = allCategories.FirstOrDefault(i => i.DisplayName.Replace(i.Parent.DisplayName + "-", "") == parentItem.DisplayName);
-                if (currentCategory != null)
+                if (parentItem.TemplateID.ToString() == ItemGuids.ShoppingSubCategoryPageObject)
                 {
-                    currentTag = currentCategory.ID.ToString();
+                    subCategories = LandmarkHelper.GetItemByTemplate(grandParentItem, ItemGuids.ShoppingSubCategoryPageObject);
                 }
-                return currentTag;
-            }
-
-            var grandParentCategorys = allCategories.SingleOrDefault(p => p.DisplayName == grandParentItem.DisplayName);
-            var parentCategorys = LandmarkHelper.GetItemsByRootAndTemplate(grandParentCategorys.ID.ToString(), ItemGuids.CategoryObjectTemplate);
-
-            foreach (var item in parentCategorys)
-            {
-                if (item.DisplayName.Contains(parentItem.DisplayName))
+                else if (parentItem.TemplateID.ToString() == ItemGuids.T11PageTemplate)
                 {
-                    currentTag = item.ID.ToString();
+                    subCategories = LandmarkHelper.GetItemByTemplate(parentItem, ItemGuids.ShoppingSubCategoryPageObject);
+                }
+
+                if (subCategories.Count == 0)
+                {
+                    Item currentCategory = allCategories.FirstOrDefault(i => i.DisplayName.Replace("_", " ").Replace(i.Parent.DisplayName + "-", "").Trim() == parentItem.DisplayName);
+                    if (currentCategory != null)
+                    {
+                        currentTag = currentCategory.ID.ToString();
+                    }
+                    return currentTag;
+                }
+                else
+                {
+                    var categorys = allCategories.SingleOrDefault(p => p.DisplayName == grandParentItem.DisplayName);
+                    var subCategorys = LandmarkHelper.GetItemsByRootAndTemplate(categorys.ID.ToString(), ItemGuids.CategoryObjectTemplate);
+
+                    foreach (var item in subCategorys)
+                    {
+                        if (item.DisplayName.Replace("_", " ").Replace(item.Parent.DisplayName + "-", "").Trim() == parentItem.DisplayName)
+                        {
+                            currentTag = item.ID.ToString();
+                        }
+                    }
                 }
             }
             return currentTag;
@@ -410,7 +413,7 @@ namespace Landmark.Helper
             }
             return false;
         }
-      
+
         /// <summary>
         /// Gets the shop page by tag.
         /// </summary>

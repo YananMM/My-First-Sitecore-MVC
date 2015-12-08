@@ -44,7 +44,7 @@ namespace Landmark.Models
         /// Gets or sets the tags.
         /// </summary>
         /// <value>The tags.</value>
-        public string Tags { get; set; }
+        public  string Tags { get; set; }
 
         /// <summary>
         /// Gets or sets the brand item.

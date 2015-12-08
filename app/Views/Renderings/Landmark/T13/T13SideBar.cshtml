@@ -1,11 +1,10 @@
 ﻿@using Landmark.Classes
 @using Landmark.Helper
 @using Landmark.Models
-@using Sitecore.Collections
 @using Sitecore.Configuration
-@using Sitecore.ContentSearch.Utilities
 @using Sitecore.Data.Items
 @model RenderingModel
+
 @{
     ShoppingHelper shoppingHelper = new ShoppingHelper();
     string[] alphabetsStrings = new[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" };
@@ -20,7 +19,14 @@
         parentItem = parentItem.Parent;
     }
     List<TextValue> categories = shoppingHelper.GetFirstCategory(currentItem.ID.ToString());
+    var category = currentItem.Parent.Parent.DisplayName;
+    if (currentItem.Parent.Parent.ID.ToString() == ItemGuids.DiningItem || currentItem.Parent.TemplateID.ToString() == ItemGuids.T11PageTemplate)
+    {
+        category = currentItem.Parent.DisplayName;
+    }
     string allbrands = string.Empty;
+
+    List<TextValue> subCategories = new List<TextValue>();
     List<LandmarkBrandModel> brandModels = new List<LandmarkBrandModel>();
     if (pageItem.TemplateID.ToString() == ItemGuids.ShoppingSubCategoryPageObject)
     {
@@ -31,9 +37,13 @@
         pageItem = currentItem.Parent.Parent;
     }
     if (shoppingHelper.isDining)
-    { allbrands = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.DiningAllByBrandPage))); }
+    {
+        allbrands = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.DiningAllByBrandPage)));
+    }
     if (shoppingHelper.isShop)
-    { allbrands = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage))); }
+    {
+        allbrands = LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.AllByBrandsPage)));
+    }
 
     brandModels = shoppingHelper.GetBrandModels(pageItem);
 
@@ -42,13 +52,7 @@
         var currentTag = shoppingHelper.GetCurrentCategory(currentItem);
         brandModels = brandModels.Where(p => p.Tags.Contains(currentTag)).ToList();
     }
-    var category = currentItem.Parent.Parent.DisplayName;
-    if (currentItem.Parent.Parent.ID.ToString() == ItemGuids.DiningItem || currentItem.Parent.TemplateID.ToString() == ItemGuids.T11PageTemplate)
-    {
-        category = currentItem.Parent.DisplayName;
-    }
-
-    List<TextValue> subCategories = new List<TextValue>();
+    
     var subpage = currentItem.Parent.DisplayName;
 }
 <div class="brand-menu hidden-xs">
@@ -95,7 +99,6 @@
                     <select id="category" name="category" class="selectpicker form-control" data-style="btn-primary">
                         @foreach (var item in categories)
                         {
-
                             <option value="@item.value" @if (category == item.DisplayName) { <text>
                                     selected="selected"
                                     </text>                          }>
