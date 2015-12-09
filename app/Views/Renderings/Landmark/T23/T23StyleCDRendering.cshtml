@@ -22,7 +22,7 @@
         @if (!string.IsNullOrEmpty(storyDate.Value))
         {
             @*<h5>@date.ToString("MMM yyyy", System.Globalization.CultureInfo.InvariantCulture).ToUpper()</h5>*@
-             if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
+            if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
             {
                 <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat).ToUpper()</h5>
             }
@@ -35,7 +35,7 @@
                 <h5>@LandmarkHelper.ToValidDateTime(storyDate).ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</h5>
             }
         }
-        <h6>@Html.Sitecore().Field("Article Subheadline").ToString().ToUpper()</h6>
+        <h6>@Html.Sitecore().Field("Article Subheadline", currentItem)</h6>
     </div>
 </div>
 
@@ -74,7 +74,13 @@
                         {
                             <div class="gd-bigpicture">
                                 <div class="gd-content-auto-width">
-                                    <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image", item)">
+                                    @{
+                                        ImageField coverImage = item.Fields["Cover Image"];
+                                        if (coverImage != null && coverImage.MediaItem != null)
+                                        {
+                                            <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image", item)">
+                                        }
+                                    }
                                     <div class="gd-nd-slider-text">@Html.Sitecore().Field("Cover Description", item)</div>
                                     @if (i == children.Count)
                                     {
@@ -91,7 +97,13 @@
                         else
                         {
                             <div class="gd-bigpicture">
+                                @{
+                            ImageField coverImage = item.Fields["Cover Image"];
+                            if (coverImage != null && coverImage.MediaItem != null)
+                            {
                                 <img data-src="@Html.Sitecore().ImageFieldSrc("Cover Image", item)">
+                            }
+                                }
                             </div>
                             <div class="gd-nd-slider-text">@Html.Sitecore().Field("Cover Description", item)</div>
                             if (i == children.Count)
@@ -148,7 +160,6 @@
                 i++;
             }
         }
-
         @Html.Sitecore().Placeholder("t23-related")
     </div>
 </div>
