@@ -2151,6 +2151,10 @@ h1,h2,h3,h4{
             margin: 0;
             overflow: hidden;
           }
+          @media (max-width: @screen-xs-min) {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
         }
       }
       @media (max-width:480px) {
@@ -2365,7 +2369,7 @@ h1,h2,h3,h4{
 
       @media (max-width: @screen-sm-min) {
         .gd-checkbox {
-          line-height: 30px;
+          line-height: 20px;
           padding-left: 45px;
         }
         .gd-checkbox:before {
@@ -2465,7 +2469,18 @@ h1,h2,h3,h4{
       }
     }
 
-
+//  GD Mobile Menu mask 
+    .gd-mobile-menu-mask {
+      background-color: #000000;
+      bottom: 0;
+      left: 0;
+      opacity: 0.5;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1900;
+    }
 
 
 
