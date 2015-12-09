@@ -52,12 +52,12 @@
 
         <div class="gd-controls-m visible-xs">
             <select class="form-control">
-                <option value="?type" @{if (Request["type"] == null) { <text> selected="selected" </text>           }}>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem))</option>
+                <option value="?type" @{if (Request["type"] == null) { <text> selected="selected" </text>            }}>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AllTextItem))</option>
                 @foreach (var type in types)
                 {
                     if (Int32.Parse(type.count) > 0)
                     {
-                        <option value="?type=@type.value" @{if (Request["type"] == type.value) { <text> selected="selected" </text>          }}>@type.value (@type.count)</option>}
+                        <option value="?type=@type.value" @{if (Request["type"] == type.value) { <text> selected="selected" </text>           }}>@type.value (@type.count)</option>}
                 }
             </select>
         </div>
@@ -91,12 +91,12 @@
                         if (!string.IsNullOrEmpty(address))
                         {
                             <p>
-                                <span class="icomoon-location2"></span>@Html.Sitecore().Field("Address", result.GetItem())
+                                <span class="icomoon-location2"></span>&nbsp;@Html.Sitecore().Field("Address", result.GetItem())
                             </p>
                         }
                                         }
                                         <p>
-                                            <span class="icomoon-phone"></span>@Html.Sitecore().Field("Contact", result.GetItem())
+                                            <span class="icomoon-phone"></span>&nbsp;&nbsp;@Html.Sitecore().Field("Contact", result.GetItem())
                                         </p>
                                         @{
                         LinkField link = result.GetItem().Fields["Official Website Url"];
