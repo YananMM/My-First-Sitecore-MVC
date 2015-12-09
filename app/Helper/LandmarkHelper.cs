@@ -604,5 +604,13 @@ namespace Landmark.Helper
         {
             return new Regex("-").Replace(svgId.Replace("_x5F_", " & ").ToUpper(), " ", 1);
         }
+
+        public static void RedirectPermanent(string newPath,int statuscode)
+        {
+            HttpContext.Current.Response.Clear();
+            HttpContext.Current.Response.StatusCode = statuscode;
+            HttpContext.Current.Response.AddHeader("Location", newPath);
+            HttpContext.Current.Response.End();
+        }
     }
 }

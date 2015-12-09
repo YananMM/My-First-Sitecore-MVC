@@ -100,11 +100,11 @@
                     <ul class="sub-menu">
                         @if (item.ID.ToString() == ItemGuids.NowAtLandmarkItem)
                         {
-                            foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item).Take(5))
+                            foreach (Item childItem in LandmarkHelper.GetChildrenPageInNavigation(item).Take(4))
                             {
                                 <li><a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(childItem))">@childItem["Page Title"].ToUpper()</a></li>
                             }
-                            if (LandmarkHelper.GetChildrenPageInNavigation(item).Count > 5)
+                            if (LandmarkHelper.GetChildrenPageInNavigation(item).Count > 4)
                             {
                                 <li>
                                     <a href="@LandmarkHelper.GetItemUrl(item)">

@@ -6696,7 +6696,7 @@ dl.gd-content-details-tags dd a:active {
 }
 @media (max-width: 768px) {
   .gd-checkbox-wrapper .gd-checkbox {
-    line-height: 20px;
+    line-height: 30px;
     padding-left: 45px;
   }
   .gd-checkbox-wrapper .gd-checkbox:before {
@@ -8202,6 +8202,9 @@ dl.gd-content-details-tags dd a:active {
   .t31 .gd-others > span {
     height: 30px;
     line-height: 30px;
+  }
+  .t31 .gd-others > .form-control {
+    width: 100px;
   }
 }
 .t31 #gd-preferred-comm .current {
@@ -10012,4 +10015,3 @@ input[type="checkbox"] {
   font-size: 12px;
   font-style: normal;
 }
-/*# sourceMappingURL=style.css.map */

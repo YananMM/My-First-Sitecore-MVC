@@ -7,12 +7,5 @@
     string host = HttpContext.Current.Request.Url.Scheme +
                           Uri.SchemeDelimiter +
                           HttpContext.Current.Request.Url.Host;
-    string language = Sitecore.Context.Language.ToString();
+    LandmarkHelper.RedirectPermanent(host+LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(childPage)), 301);
 }
-<script src="/files/landmark/js/lib/jquery-1.11.2.min.js"></script>
-
-<script language="javascript" type="text/javascript">
-    $(document).ready(function () {
-        self.location = "@host@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(childPage))";
-    })
-</script>
