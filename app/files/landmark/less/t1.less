@@ -26,10 +26,11 @@
   .back-top {
     background-color: @gray-darker;
     .back-to-top {
+      border: 1px solid #2D2D2D;
       display: block !important;
       position: absolute;
       @media (max-width: @screen-xs) {
-        bottom: -60px;
+        bottom: -50px;
       }
     }
   }
@@ -682,6 +683,9 @@ border-left: 18px solid @gray-darker;
       background-size: cover;
       background-repeat: no-repeat;
       overflow: hidden;
+            &.cur-none{
+             cursor: default;
+            }
             
             &:before{
             content: '';

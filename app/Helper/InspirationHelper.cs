@@ -192,9 +192,11 @@ namespace Landmark.Helper
             }
             else if (type == "brands")
             {
-                var brands = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem,
+                var shoppingBrands = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingItem,
                     ItemGuids.T14ShopDetailsTemplate);
-                allItems = brands;
+                var diningBrands = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningItem,
+                    ItemGuids.T14ShopDetailsTemplate);
+                allItems = shoppingBrands.Union(diningBrands).ToList();
             }
             var currentTagsField = currentItem.Fields["tags"];
             List<string> storyTags = new List<string>();
