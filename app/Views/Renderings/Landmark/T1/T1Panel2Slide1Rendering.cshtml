@@ -26,7 +26,7 @@
                 </div>
                 @if (articleType != null && articleType.TargetItem != null && !string.IsNullOrEmpty(articleType.TargetItem.Fields["See More Article Text"].Value))
     {
-        <a class="panel-link panel-text" href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Model.Item.Parent))">@articleType.TargetItem.Fields["See More Article Text"].Value<span class="icomoon-chevron-small-right"></span></a>
+        <a class="panel-link panel-text" href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(Model.Item.Parent.Parent))">@articleType.TargetItem.Fields["See More Article Text"].Value<span class="icomoon-chevron-small-right"></span></a>
     }
             </div>
         </div>
