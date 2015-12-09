@@ -876,19 +876,24 @@ $(document).ready(function() {
    **********************************************************************************************************/
 
   // Brands link scroll for right column and popup overlay and Mobile menu
-  $('.brand-menu-area .brands-gap>li>a, .popup-overlay .brands>li>a, .popup-overlay .brands-gap>li>a, .mobile-menu .menu-brands>li>a, .mobile-menu .menu-buildings>li>a').on('click', function(e){
+  $('.brand-menu-area .brands-gap>li>a, .popup-overlay .brands>li>a, .popup-overlay .brands-gap>li>a, .mobile-menu .menu-brands>li>a, .mobile-menu .menu-buildings>li>a, .mega-menu-area .mega-brands>li>a, .mega-menu-area .brands-gap>li>a').on('click', function(e){
     
     var gdCurrentLoc = location.pathname;
-        gdCurrentLoc = gdCurrentLoc.slice( gdCurrentLoc.lastIndexOf('/') );
     var gdAnchorLoc  = $(this).attr('href');
     var gdAnchor     = gdAnchorLoc.slice( gdAnchorLoc.indexOf('#') );
     
-    if ( gdAnchorLoc.indexOf('/') > -1 ) {
-      gdAnchorLoc = gdAnchorLoc.slice( gdAnchorLoc.lastIndexOf('/'), gdAnchorLoc.lastIndexOf('#') );
-    } else if ( gdAnchorLoc.slice( 0, 1) === '#' ) {
-      gdAnchorLoc = '';
-    } else {
-      gdAnchorLoc = gdAnchorLoc.slice( 0, gdAnchorLoc.indexOf('#') )
+    switch (gdAnchorLoc.slice(0, 1)) {
+      case '/':
+        gdAnchorLoc = gdAnchorLoc.slice( 0, gdAnchorLoc.lastIndexOf('#') );
+        break;
+      case '#':
+        gdAnchorLoc = '';
+        break;
+      default:
+        gdAnchorLoc = gdCurrentLoc.slice(0, gdCurrentLoc.lastIndexOf('/') + 1) + gdAnchorLoc;
+        if (gdAnchorLoc.indexOf('#') > -1) {
+          gdAnchorLoc = gdAnchorLoc.slice(0, gdAnchorLoc.indexOf('#'));
+        }
     }
 
     if ( gdAnchorLoc === gdCurrentLoc || gdAnchorLoc === '' ) {
@@ -1138,7 +1143,7 @@ $(document).ready(function() {
         } else {
           gdMenuStatus = '';
         }
-        gdShopHtml += '<a ' + gdMenuStatus + 'data-shopid="' + looper + '" data-location="' + window.gdFloorData.levels[floorNo].locations[looper].id + '" href="javascript:;"><span class="title">' + window.gdFloorData.levels[floorNo].locations[looper].title + '</span><span class="id">' + window.gdFloorData.levels[floorNo].locations[looper].wherelocationmobile + '</span></a>';
+        gdShopHtml += '<a ' + gdMenuStatus + 'data-shopid="' + looper + '" data-location="' + window.gdFloorData.levels[floorNo].locations[looper].id + '" href="javascript:;"><span class="title">' + window.gdFloorData.levels[floorNo].locations[looper].navtitle + '</span><span class="id">' + window.gdFloorData.levels[floorNo].locations[looper].wherelocationmobile + '</span></a>';
       }
       if ($(window).width() < 768) {
         // For mobile
@@ -2483,25 +2488,68 @@ $(document).ready(function() {
       gdSlickSlider.slick('next');
     }
   });
-   
+
+  var gdSlickResponsiveOptions;
+  if (isIE8()) {
+    gdSlickResponsiveOptions = [
+      {
+        // Visual width less than 8000px
+        breakpoint: 8000,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: false
+        }
+      }
+    ];
+  } else {
+    gdSlickResponsiveOptions = [
+      {
+        // Visual width less than 8000px
+        breakpoint: 8000,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          centerMode: false
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: false
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: false
+        }
+      },
+      {
+        breakpoint: 580,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true
+        }
+      }
+    ];
+  }
+  
   $('.gd-slick-slider').slick({
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
     variableWidth: true,
     prevArrow: '<button type="button" class="slick-prev" tabindex="0" role="button"><span class="icomoon-thin-arrow-L"></span></button>',
     nextArrow: '<button type="button" class="slick-next" tabindex="0" role="button"><span class="icomoon-thin-arrow-R"></span></button>',
-    
-    responsive: [
-      {
-        breakpoint: 480,
-        settings: {
-          centerMode: true
-        }
-      }
-    ]
+    responsive: gdSlickResponsiveOptions
   });
 
 

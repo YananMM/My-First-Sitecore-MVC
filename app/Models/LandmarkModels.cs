@@ -156,6 +156,7 @@ namespace Landmark.Models
     {
         public string category;
         public string id;
+        public string navtitle;
         public string title;
         public string area;
         public string description;

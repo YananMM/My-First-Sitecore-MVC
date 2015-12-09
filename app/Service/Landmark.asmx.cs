@@ -61,7 +61,8 @@ namespace Landmark.Service
                                       locations = (from location in _shopHelper.GetBrandsByFloor(floor)
                                                    select new Location
                                                    {
-                                                       title = (location.Fields["Brand Title"].Value).DoCustomReplace(),
+                                                        title= location.Fields["Brand Title"].Value,
+                                                       navtitle = (location.Fields["Brand Title"].Value).DoCustomReplace(),
                                                        area = (location.Fields["Address"].Value).DoCustomReplace(),
                                                        category = "floor-" + floor.ID.ToShortID(),
                                                        description = "",
