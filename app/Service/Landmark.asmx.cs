@@ -39,6 +39,75 @@ namespace Landmark.Service
             floorplans.mapwidth = "700";
             floorplans.categories =
                (from Item floor in building.Children
+                where floor.Template.Name.Equals("Floor Object")
+                select new Floor
+                {
+                    id = "floor-" + floor.ID.ToShortID(),
+                    color = "#FFFFFF",
+                    show = "false",
+                    title = floor.Fields["Floor Title"].Value
+                }).ToList();
+            floorplans.levels =
+                (from Item floor in building.Children
+                 where floor.Template.Name.Equals("Floor Object")
+                 select new Level
+                 {
+                     id = "level-" + floor.ID.ToShortID(),
+                     title = floor.Fields["Floor Title"].Value,
+                     map = IfBrowserIsIE8()
+                         ? LandmarkHelper.ImageFieldSrc("Floor Image", floor)
+                         : LandmarkHelper.FileFieldSrc("Floor Svg File", floor),
+                     minimap = "",
+                     locations =
+                         (from Item shop in floor.Children
+                          where (shop.Template.Name.Equals("Shop Location Object") && getShopByName(shop.Name) != null)
+                          select new Location
+                          {
+                              title = getShopByName(shop.Name).Fields["Brand Title"].Value,
+                              navtitle = (getShopByName(shop.Name).Fields["Brand Title"].Value).DoCustomReplace(),
+                              area = (getShopByName(shop.Name).Fields["Address"].Value).DoCustomReplace(),
+                              category = "floor-" + floor.ID.ToShortID(),
+                              description = "",
+                              id = shop.Fields["Svg Id"].Value,
+                              pin = IfBrowserIsIE8() ? "orange" : "hide",
+                              x = shop.Fields["LocationX"].Value,
+                              y = shop.Fields["LocationY"].Value,
+                              workdayhours = getShopByName(shop.Name).Fields["Opening Hours"].Value,
+                              wherelocation = getShopByName(shop.Name).Fields["Address"].Value + "," + floor.Fields["Floor Title"].Value + "," + building.Fields["Building Title"].Value,
+                              wherelocationmobile = shop.Fields["Svg Id"].Value.SvgIdToShopId(),
+                              address = building.Fields["Building Address"].Value,
+                              href = LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(getShopByName(shop.Name)))
+                          }).ToList()
+                 }).ToList();
+
+            JavaScriptSerializer js = new JavaScriptSerializer();
+            string strJSON = js.Serialize(floorplans);
+            Context.Response.Write(strJSON);
+            Context.Response.ContentType = "application/json";
+        }
+
+        private Item getShopByName(string name)
+        {
+            Item resultItem = null;
+            string pathShopping = "/sitecore/content/home/landmark/shopping/" + name;
+            string pathDining = "/sitecore/content/home/landmark/dining/" + name;
+            resultItem = Sitecore.Context.Database.GetItem(pathShopping);
+            if (resultItem != null) return resultItem;
+            resultItem = Sitecore.Context.Database.GetItem(pathDining);
+            if (resultItem != null) return resultItem;
+            return null;
+        }
+
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json, XmlSerializeString = false)]
+        public void GetFloorPlanJsonGruden(string buildingID)
+        {
+            Item building = Sitecore.Context.Database.GetItem(buildingID);
+            FloorPlan floorplans = new FloorPlan();
+            floorplans.mapheight = "525";
+            floorplans.mapwidth = "700";
+            floorplans.categories =
+               (from Item floor in building.Children
                 where _shopHelper.GetBrandsByFloor(floor).Count > 0
                 select new Floor
                 {

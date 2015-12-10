@@ -365,6 +365,34 @@ namespace Landmark.Helper
             {
                 brandsByCategory = brandsItems;
             }
+
+            //
+            //go through /map tree to collect shop names
+            //uniqlo|mcdonalds|starbucks
+            string allShopsInBuilding = "";
+            Item building = Sitecore.Context.Database.GetItem(buildingId);
+            foreach (Item child in building.Children)
+            {
+                if (child.Template != null && child.Template.Name.Equals("Floor Object"))
+                {
+                    foreach (Item shop in child.Children)
+                    {
+                        if (shop.Template.Name.Equals("Shop Location Object"))
+                        {
+                            allShopsInBuilding += shop.Name + "|";
+                        }
+                    }
+                }
+                else if (child.Template != null && child.Template.Name.Equals("Building Location Object"))
+                {
+                    allShopsInBuilding += child.Name + "|";
+                }
+            }
+
+            //
+            //for each shop in brandsByCategory
+            //if (long string contains shop.name)
+            //
             List<Item> brandsByBuildings = new List<Item>();
             foreach (Item brand in brandsByCategory)
             {
@@ -675,7 +703,7 @@ namespace Landmark.Helper
                 new Guid(ItemGuids.T25PageTemplate)
             };
             List<Item> allCategories = null;
-            List<Item> randomArticles = null;
+            List<Item> randomArticles = new ItemList();
             if (isShop)
                 allCategories = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ShoppingCategory, ItemGuids.CategoryObjectTemplate);
             if (isDining)
@@ -697,11 +725,12 @@ namespace Landmark.Helper
                     Random random = new Random();
                     int num1 = random.Next(0, articles.Count);
                     int num2 = random.Next(0, num1);
-                    int num3 = random.Next(num1, articles.Count);
+                    int num3 = random.Next(num1+1, articles.Count);
 
                     randomArticles.Add(articles[num1]);
                     randomArticles.Add(articles[num2]);
                     randomArticles.Add(articles[num3]);
+                    return randomArticles;
                 }
                 else
                 {

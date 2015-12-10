@@ -210,7 +210,7 @@ namespace Landmark.Classes
                 Item folder = _webDb.GetItem(ItemGuids.InstagramFolder);
                 Item folderMaster = _masterDb.GetItem(ItemGuids.InstagramFolder);
                 var socialImages = new List<SocialImage>();
-                socialImages.AddRange(GetFromInstagram(Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem).Fields["User Id"].Value).ToList().Take(10));
+                socialImages.AddRange(GetFromInstagram(Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem).Fields["User Id"].Value).ToList().Take(20));
                 if(socialImages.Count<1)
                     return;
                 // insert new items
