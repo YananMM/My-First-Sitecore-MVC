@@ -120,7 +120,7 @@
                     </div>
                     <div class="row gd-contact-code  form-inline">
                         <div class="col-sm-11">
-                            <p>@Html.Sitecore().Field("Verrification Label") *</p>
+                            <p>@Html.Sitecore().Field("Verification Label") *</p>
                             <img id="valiCode" style="cursor: pointer;" src="@Url.Action("GetValidateCode", "Home")" alt="ValidateCode" />
                             <input type="text" id="code" class="form-control" name="ValidateCode" data-error="@Html.Sitecore().Field("Text", errorMessages.SingleOrDefault(p => p.DisplayName == "ValidateCode"))">
                             <a href="javascript:changeImg();">@Html.Sitecore().Field("Generate another code Label")</a>
