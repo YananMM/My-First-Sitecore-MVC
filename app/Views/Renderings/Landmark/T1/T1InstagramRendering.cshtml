@@ -5,7 +5,7 @@
 @using Sitecore.Data.Items
 @using Sitecore.Mvc.Extensions
 @{
-    var images = Sitecore.Context.Database.GetItem(ItemGuids.InstagramFolder).Children;
+    var images = Sitecore.Context.Database.GetItem(ItemGuids.InstagramFolder).Children.Take(10);
     int i = 1;
 }
 <section class="panel-area">

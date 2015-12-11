@@ -815,6 +815,47 @@ $(document).ready(function() {
         .on('resize', handelPanelLayout);
     }
 
+    // Instagram refresh
+    //console.log($.parseJSON($('#gd-instagram-data').text()));
+    /* var gdInsData     = $.parseJSON($('#gd-instagram-data').text());
+    var gdInsPosition = 0;
+    var gdInsInterval = $('#gd-instagram-data').data('interval');
+    function gdInsRefresh(target) {
+      var gdNewInsData = gdInsData[gdInsPosition];
+      var gdNewInsHtml = '<a href="' + gdNewInsData.link + '" class="new" style="background-image:url(' + gdNewInsData.image + ');">' +
+                          '<div class="instagram-text hidden-xs  hidden-sm">' +
+                            '<img class="instagram-user" src="' + gdNewInsData.avatar + '" />' +
+                            '<div class="instagram-info">' +
+                              '<h5>' + gdNewInsData.author + '</h5>' +
+                              gdNewInsData.time + 
+                            '</div>' +
+                          '</div>' +
+                        '</a>';
+      
+      if (gdInsPosition === gdInsData.length - 1) {
+        gdInsPosition = 0;
+      } else {
+        gdInsPosition += 1;
+      }
+      
+      target.prepend(gdNewInsHtml);
+
+      
+      $('a[class="new"]', target).fadeTo(2000, 1, function() {
+        $(this).removeClass('new');
+        $(this).siblings().remove();
+      });
+    }
+    
+    $('.instagram-area ul>li').mouseenter(function() {
+      //gdInsRefresh($(this));
+    });
+
+    var gdIns = $('.instagram-area ul>li');
+    // setInterval(function() {
+    //   gdInsRefresh(gdIns.eq(gdInsPosition));
+    // }, 3000); */
+    
   });
 
   /**********************************************************************************************************
@@ -1923,12 +1964,17 @@ $(document).ready(function() {
         var gdCoverImgH = gdCoverImg.height();
 
         if (gdCoverImgH === gdCoverWrapperParam.height) {
+          // after width and height adjusted, image wider than container
           gdCoverImg.css({
             'left': (gdCoverWrapperParam.width - gdCoverImg.width()) / 2
           });
-        }
-        
-        if (!(gdCoverImgW === gdCoverWrapperParam.width || gdCoverImgH === gdCoverWrapperParam.height)) {
+        } else if (gdCoverImgW === gdCoverWrapperParam.width) {
+          // after width and height adjusted, image higher than container
+          gdCoverImg.css({
+            'top': (gdCoverWrapperParam.height - gdCoverImg.height()) / 2
+            });
+        } else {
+          // after width and height adjusted, both width and height greater than container
           if (gdCoverImgW / gdCoverImgH >= gdCoverWrapperParam.ratio) {
             gdCoverImg.height(gdCoverWrapperParam.height);
             gdCoverImg.css({

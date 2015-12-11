@@ -723,9 +723,9 @@ namespace Landmark.Helper
                 if (articles.Count > 3)
                 {
                     Random random = new Random();
-                    int num1 = random.Next(0, articles.Count);
+                    int num1 = random.Next(0, articles.Count-1);
                     int num2 = random.Next(0, num1);
-                    int num3 = random.Next(num1+1, articles.Count);
+                    int num3 = random.Next(num1+1, articles.Count-1);
 
                     randomArticles.Add(articles[num1]);
                     randomArticles.Add(articles[num2]);
