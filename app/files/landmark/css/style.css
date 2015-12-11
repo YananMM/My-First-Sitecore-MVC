@@ -2261,7 +2261,17 @@
 .t1 .panel-area .instagram-area ul li a.cur-none {
   cursor: default;
 }
-.t1 .panel-area .instagram-area ul li a:before {
+.t1 .panel-area .instagram-area ul li a.new {
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+.t1 .panel-area .instagram-area ul li:before {
   content: '';
   width: 100%;
   height: 100%;
@@ -2277,7 +2287,7 @@
   transition: background 0.5s ease-in;
   background: url("../images/black-50.png") repeat transparent;
 }
-.t1 .panel-area .instagram-area ul li a:hover .instagram-text {
+.t1 .panel-area .instagram-area ul li:hover .instagram-text {
   -webkit-transition: opacity 0.5s ease-in;
   -moz-transition: opacity 0.5s ease-in;
   -o-transition: opacity 0.5s ease-in;
@@ -2285,7 +2295,7 @@
   transition: opacity 0.5s ease-in;
   opacity: 1;
 }
-.t1 .panel-area .instagram-area ul li a:hover:before {
+.t1 .panel-area .instagram-area ul li:hover:before {
   background: none;
 }
 @media (min-width: 768px) {
@@ -9989,4 +9999,3 @@ input[type="checkbox"] {
   font-size: 12px;
   font-style: normal;
 }
-/*# sourceMappingURL=style.css.map */
