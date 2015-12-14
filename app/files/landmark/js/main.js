@@ -887,7 +887,7 @@ $(document).ready(function() {
       }
 
       if (!isIE8()) {
-          $.getJSON('instagram.json', {
+          $.getJSON('/Service/Landmark.asmx/GetInstagramJson', {
               format: "json"
           })
           .done(function (data) {

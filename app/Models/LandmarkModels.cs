@@ -176,28 +176,107 @@ namespace Landmark.Models
     /// </summary>
     public class MaganizeGroup
     {
+        /// <summary>
+        /// Gets or sets the magazine category.
+        /// </summary>
+        /// <value>The magazine category.</value>
         public Item MagazineCategory { get; set; }
 
+        /// <summary>
+        /// Gets or sets the stories.
+        /// </summary>
+        /// <value>The stories.</value>
         public List<Item> Stories { get; set; }
     }
 
+    /// <summary>
+    /// Class MaganizeGroupByRandom.
+    /// </summary>
     public class MaganizeGroupByRandom
     {
-        public List<Item> Random4Stories { get; set; } 
+        /// <summary>
+        /// Gets or sets the random4 stories.
+        /// </summary>
+        /// <value>The random4 stories.</value>
+        public List<Item> Random4Stories { get; set; }
+        /// <summary>
+        /// Gets or sets the maganize groups.
+        /// </summary>
+        /// <value>The maganize groups.</value>
         public List<MaganizeGroup> MaganizeGroups { get; set; } 
     }
 
+    /// <summary>
+    /// Enum StorySetting
+    /// </summary>
     public enum StorySetting
     {
+        /// <summary>
+        /// The style aggregate
+        /// </summary>
         StyleA,
+        /// <summary>
+        /// The style attribute
+        /// </summary>
         StyleB,
+        /// <summary>
+        /// The style cd
+        /// </summary>
         StyleCd
     }
 
+    /// <summary>
+    /// Class RelatedItem.
+    /// </summary>
     public class RelatedItem
     {
+        /// <summary>
+        /// Gets or sets the item.
+        /// </summary>
+        /// <value>The item.</value>
         public Item Item { get; set; }
 
+        /// <summary>
+        /// Gets or sets the tag count.
+        /// </summary>
+        /// <value>The tag count.</value>
         public int TagCount { get; set; }
     }
+
+    /// <summary>
+    /// Class InstagramItem.
+    /// </summary>
+    public class InstagramItem
+    {
+        /// <summary>
+        /// Gets or sets the time.
+        /// </summary>
+        /// <value>The time.</value>
+        public string Time { get; set; }
+
+        /// <summary>
+        /// Gets or sets the author.
+        /// </summary>
+        /// <value>The author.</value>
+        public string Author { get; set; }
+
+        /// <summary>
+        /// Gets or sets the avatar.
+        /// </summary>
+        /// <value>The avatar.</value>
+        public string Avatar { get; set; }
+
+        /// <summary>
+        /// Gets or sets the image.
+        /// </summary>
+        /// <value>The image.</value>
+        public string Image { get; set; }
+
+        /// <summary>
+        /// Gets or sets the link.
+        /// </summary>
+        /// <value>The link.</value>
+        public string Link { get; set; }
+    }
+
 }

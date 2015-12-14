@@ -130,7 +130,7 @@ namespace Landmark.Service
                                       locations = (from location in _shopHelper.GetBrandsByFloor(floor)
                                                    select new Location
                                                    {
-                                                        title= location.Fields["Brand Title"].Value,
+                                                       title = location.Fields["Brand Title"].Value,
                                                        navtitle = (location.Fields["Brand Title"].Value).DoCustomReplace(),
                                                        area = (location.Fields["Address"].Value).DoCustomReplace(),
                                                        category = "floor-" + floor.ID.ToShortID(),
@@ -170,14 +170,14 @@ namespace Landmark.Service
                 : LandmarkHelper.FileFieldSrc("Buildings Map File", byLocationPage);
             level.minimap = "";
             level.locations = (from location in buildings
-                select new Location
-                {
-                    id = location.Fields["Building Svg Id"].Value,
-                    title = IfBrowserIsIE8() ? location.Fields["Building Title"].Value.DoCustomReplace() : "",
-                    pin = IfBrowserIsIE8() ? "orange" : "hide",
-                    x = location.Fields["LocationX"].Value,
-                    y = location.Fields["LocationY"].Value
-                }).ToList();
+                               select new Location
+                               {
+                                   id = location.Fields["Building Svg Id"].Value,
+                                   title = IfBrowserIsIE8() ? location.Fields["Building Title"].Value.DoCustomReplace() : "",
+                                   pin = IfBrowserIsIE8() ? "orange" : "hide",
+                                   x = location.Fields["LocationX"].Value,
+                                   y = location.Fields["LocationY"].Value
+                               }).ToList();
             floorplans.levels = new List<Level>();
             floorplans.levels.Add(level);
             JavaScriptSerializer js = new JavaScriptSerializer();
@@ -189,18 +189,50 @@ namespace Landmark.Service
         private bool IfBrowserIsIE8()
         {
             bool result = false;
-            if(Context.Request.Browser.Type.ToLower().Contains("internetexplorer"))
+            if (Context.Request.Browser.Type.ToLower().Contains("internetexplorer"))
             {
-                if (Context.Request.Browser.MajorVersion < 9 )
+                if (Context.Request.Browser.MajorVersion < 9)
                 {
                     result = true;
                 }
             }
             if (Context.Request.Browser.Type.ToLower().Contains("ie8"))
             {
-                    result = true;
+                result = true;
             }
             return result;
         }
+
+        /// <summary>
+        /// Gets the instagram json.
+        /// </summary>
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json, XmlSerializeString = false)]
+        public void GetInstagramJson()
+        {
+            var images = Sitecore.Context.Database.GetItem(ItemGuids.InstagramFolder).Children.ToList();
+            List<Item> top10Images = new List<Item>();
+            List<Item> otherImages = new List<Item>();
+            int count = images.Count;
+            if (count > 10)
+            {
+                top10Images = images.Take(10).ToList();
+                otherImages = images.Except(top10Images).ToList();
+            }
+            List<InstagramItem> instagramItems = otherImages.Select(image => new InstagramItem
+            {
+                Time = image.Fields["Publish Time"].Value,
+                Author = image.Fields["User"].ToString(),
+                Avatar = LandmarkHelper.ImageFieldSrc("Profile Picture", image).ToString(),
+                Image = LandmarkHelper.ImageFieldSrc("Image", image).ToString(),
+                Link = "javascript:;"
+            }).ToList();
+
+            JavaScriptSerializer js = new JavaScriptSerializer();
+            string strJSON = js.Serialize(instagramItems);
+            Context.Response.Write(strJSON);
+            Context.Response.ContentType = "application/json";
+        }
+
     }
 }

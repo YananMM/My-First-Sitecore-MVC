@@ -7,9 +7,10 @@
 @{
     var images = Sitecore.Context.Database.GetItem(ItemGuids.InstagramFolder).Children.Take(10);
     int i = 1;
+    var landmarkConfig = Sitecore.Context.Database.GetItem(ItemGuids.LandmarkConfigItem);
 }
 <section class="panel-area">
-    <section class="instagram-area" data-interval="3">
+    <section class="instagram-area" data-interval="@landmarkConfig.Fields["Switch Time"].ToString()">
         <div class="instagram-inner">
             <hgroup class="panel-text">
                 <h4>@Html.Sitecore().Field("Find Us on Instagram Title")</h4>
