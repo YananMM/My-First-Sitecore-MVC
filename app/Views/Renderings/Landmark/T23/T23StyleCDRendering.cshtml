@@ -162,13 +162,13 @@
                         {
                             <div class="gd-bigpicture">
                                 @{
-                            var videoFile = Html.Sitecore().Field("Video File", item);
-                            var videoPoster = Html.Sitecore().ImageFieldSrc("Video Poster", item);
+                                    var videoFile = Html.Sitecore().Field("Video File", item);
+                                    var videoPoster = Html.Sitecore().ImageFieldSrc("Video Poster", item);
 
-                            if (!string.IsNullOrEmpty(videoFile.ToString()) || !string.IsNullOrEmpty(videoPoster))
-                            {
-                                <video class="gd-video" type="video/mp4" src="@Html.Sitecore().Field("Video File", item)" height="560" width="320" style="width: 100%; height: 100%;" controls poster="@Html.Sitecore().ImageFieldSrc("Video Poster", item)"></video>
-                            }
+                                    if (!string.IsNullOrEmpty(videoFile.ToString()) || !string.IsNullOrEmpty(videoPoster))
+                                    {
+                                        <video class="gd-video" type="video/mp4" src="@Html.Sitecore().Field("Video File", item)" height="560" width="320" style="width: 100%; height: 100%;" controls poster="@Html.Sitecore().ImageFieldSrc("Video Poster", item)"></video>
+                                    }
                                 }
                             </div>
                             <div class="gd-nd-slider-text">@Html.Sitecore().Field("Video Title", item)</div>

@@ -9,31 +9,31 @@
     int i = 1;
 }
 <section class="panel-area">
-<section class="instagram-area">
-    <div class="instagram-inner">
-        <hgroup class="panel-text">
-            <h4>@Html.Sitecore().Field("Find Us on Instagram Title")</h4>
-            <h2>@Html.Sitecore().Field("Instagram Title")</h2>
-        </hgroup>
-        <ul class="clearfix">
-            @foreach (Item image in images)
-            {
-                string cssclass = string.Empty;
-                cssclass = i == 10 ? "hidden-xs  hidden-sm" : "";
-                i++;
-                <li class="@cssclass">
-                    <a href="javascript:;" data-bg="@LandmarkHelper.ImageFieldSrc("Image", image)" class="cur-none">
-                        <div class="instagram-text hidden-xs  hidden-sm">
-                            <img data-src="@LandmarkHelper.ImageFieldSrc("Profile Picture", image)" class="instagram-user lazy-loaded">
-                            <div class="instagram-info">
-                                <h5>@Html.Sitecore().Field("User", image)</h5>
-                                @image.Fields["Publish Time"].Value
+    <section class="instagram-area" data-interval="3">
+        <div class="instagram-inner">
+            <hgroup class="panel-text">
+                <h4>@Html.Sitecore().Field("Find Us on Instagram Title")</h4>
+                <h2>@Html.Sitecore().Field("Instagram Title")</h2>
+            </hgroup>
+            <ul class="clearfix">
+                @foreach (Item image in images)
+                {
+                    string cssclass = string.Empty;
+                    cssclass = i == 10 ? "hidden-xs  hidden-sm" : "";
+                    i++;
+                    <li class="@cssclass">
+                        <a href="javascript:;" data-bg="@LandmarkHelper.ImageFieldSrc("Image", image)" class="cur-none">
+                            <div class="instagram-text hidden-xs  hidden-sm">
+                                <img data-src="@LandmarkHelper.ImageFieldSrc("Profile Picture", image)" class="instagram-user lazy-loaded">
+                                <div class="instagram-info">
+                                    <h5>@Html.Sitecore().Field("User", image)</h5>
+                                    @image.Fields["Publish Time"].Value
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </li>
-            }
-        </ul>
-    </div>
-</section>
+                        </a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </section>
 </section>

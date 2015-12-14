@@ -816,12 +816,33 @@ $(document).ready(function() {
     }
 
     // Instagram refresh
-    //console.log($.parseJSON($('#gd-instagram-data').text()));
-    /* var gdInsData     = $.parseJSON($('#gd-instagram-data').text());
-    var gdInsPosition = 0;
-    var gdInsInterval = $('#gd-instagram-data').data('interval');
+    var gdInsData = null;
+    var gdInsInterval = $('.instagram-area').data('interval') * 1000;
+
+    function gdInsPreLoad(ins) {
+        var gdInsPreContainer;
+        var gdInsItems = '';
+        for (var looper = 0; looper < gdInsData.length; looper++) {
+            gdInsItems += '<img src="' + ins[looper].image + '" />';
+        }
+        if ($('#gd-ins-preload').length > 0) {
+            $('#gd-ins-preload').empty().append(gdInsItems);
+        } else {
+            gdInsPreContainer = '<div id="gd-ins-preload" style="display: none;">' + gdInsItems + '</div>';
+            $('body').append(gdInsPreContainer);
+        }
+    }
+
+    function gdInsGetImageUrl(urlText) {
+        if (urlText.indexOf('url(') > -1 || urlText.indexOf('URL(') > -1) {
+            return /\(['"]{0,1}(.*)['"]{0,1}\)/.exec(urlText)[1];
+        } else {
+            return urlText;
+        }
+    }
+
     function gdInsRefresh(target) {
-      var gdNewInsData = gdInsData[gdInsPosition];
+      var gdNewInsData = gdInsData[0];
       var gdNewInsHtml = '<a href="' + gdNewInsData.link + '" class="new" style="background-image:url(' + gdNewInsData.image + ');">' +
                           '<div class="instagram-text hidden-xs  hidden-sm">' +
                             '<img class="instagram-user" src="' + gdNewInsData.avatar + '" />' +
@@ -832,29 +853,53 @@ $(document).ready(function() {
                           '</div>' +
                         '</a>';
       
-      if (gdInsPosition === gdInsData.length - 1) {
-        gdInsPosition = 0;
-      } else {
-        gdInsPosition += 1;
-      }
+      var gdOldIns = $('a', target);
+      var gdOldInsTime = $.trim($('.instagram-info', gdOldIns).html().replace(/H5/g, 'h5'));
+      gdOldInsTime = gdOldInsTime.slice(gdOldInsTime.indexOf('</h5>') + 5);
+      var gdOldInsImg = Boolean(gdOldIns.data('bg')) ? gdOldIns.data('bg') : gdOldIns.attr('style');
+      gdOldInsImg = gdInsGetImageUrl(gdOldInsImg);
+
+      var gdOldInsInfo = {
+          "time": gdOldInsTime,
+          "author": $.trim($('h5', gdOldIns).text()),
+          "avatar": Boolean($('.instagram-user', gdOldIns).data('src')) ? $('.instagram-user', gdOldIns).data('src') : $.trim($('.instagram-user', gdOldIns).attr('src')),
+          "image": gdOldInsImg,
+          "link": gdOldIns.attr('href')
+      };
+
+        // Update ins pool
+      gdInsData.push(gdOldInsInfo);
+      gdInsData.shift();
+
       
       target.prepend(gdNewInsHtml);
 
-      
-      $('a[class="new"]', target).fadeTo(2000, 1, function() {
-        $(this).removeClass('new');
-        $(this).siblings().remove();
+      $('a.new', target).fadeTo(2000, 1, function () {
+          $(this).siblings().remove();
+          $(this).css('display', 'block').removeClass('new');
       });
-    }
-    
-    $('.instagram-area ul>li').mouseenter(function() {
-      //gdInsRefresh($(this));
-    });
+  }
 
-    var gdIns = $('.instagram-area ul>li');
-    // setInterval(function() {
-    //   gdInsRefresh(gdIns.eq(gdInsPosition));
-    // }, 3000); */
+      // Tile picker function
+      function gdRandomIns(tileAmount) {
+          tileAmount = tileAmount - 1;
+          return Math.floor(Math.random() * (tileAmount - 0 + 1) + 0);
+      }
+
+      if (!isIE8()) {
+          $.getJSON('instagram.json', {
+              format: "json"
+          })
+          .done(function (data) {
+              gdInsData = data;
+              gdInsPreLoad(gdInsData);
+
+              setInterval(function () {
+                  gdInsRefresh($('.instagram-area li').eq(gdRandomIns(10)));
+              }, gdInsInterval);
+          });
+      }
+
     
   });
 
