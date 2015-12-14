@@ -229,8 +229,8 @@ namespace Landmark.Service
             }).ToList();
 
             JavaScriptSerializer js = new JavaScriptSerializer();
-            string strJSON = js.Serialize(instagramItems);
-            Context.Response.Write(strJSON);
+            string json = js.Serialize(instagramItems);
+            Context.Response.Write(json);
             Context.Response.ContentType = "application/json";
         }
 
