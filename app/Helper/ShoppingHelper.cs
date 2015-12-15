@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +15,7 @@ using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Data.Query;
 using Sitecore.Links;
+using Sitecore.Mvc.Extensions;
 using Sitecore.Mvc.Pipelines.Response.RenderRendering;
 using Sitecore.Web.UI.HtmlControls;
 
@@ -723,9 +726,20 @@ namespace Landmark.Helper
                 if (articles.Count > 3)
                 {
                     Random random = new Random();
-                    int num1 = random.Next(0, articles.Count-1);
-                    int num2 = random.Next(0, num1);
-                    int num3 = random.Next(num1+1, articles.Count-1);
+
+                    IDictionary<int,int> numbers =new Dictionary<int, int>();
+                    for (int i = 0; i < articles.Count; i++) {
+                        numbers.Add(i,i);
+                    }
+                    int r = random.Next(0, numbers.Count - 1);
+                    int num1 = numbers.ElementAt(r).Value;
+                    numbers.Remove(numbers.ElementAt(r));
+                    r = random.Next(0, numbers.Count - 1);
+                    int num2 = numbers.ElementAt(r).Value;
+                    numbers.Remove(numbers.ElementAt(r));
+                    r = random.Next(0, numbers.Count - 1);
+                    int num3 = numbers.ElementAt(r).Value;
+                    numbers.Remove(r);
 
                     randomArticles.Add(articles[num1]);
                     randomArticles.Add(articles[num2]);
