@@ -6,30 +6,33 @@
 @model RenderingModel
 @{
     List<Item> buildings = LandmarkHelper.GetBuildings();
-    Item activeItem = string.IsNullOrEmpty(Request.QueryString["buildingID"])?buildings[0]:Sitecore.Context.Database.GetItem(Request["buildingID"]);
+    Item activeItem = string.IsNullOrEmpty(Request.QueryString["buildingID"]) ? buildings[0] : Sitecore.Context.Database.GetItem(Request["buildingID"]);
 }
+
 <div class="container">
     <div class="gd-pagetitle">
         <div class="gd-pagetitle-heading">
             <h1>@Sitecore.Context.Item["Page Title"].ToUpper()</h1>
-@{
-    string pdf = LandmarkHelper.FileFieldSrc("Floor Guide", activeItem);
-    string name = LandmarkHelper.GetFileName("Floor Guide", activeItem);
-}
-            <a href='@pdf' class="gd-link-audio"  target="_blank" onclick="scDownload(@name)" >
+            @{
+                string pdf = LandmarkHelper.FileFieldSrc("Floor Guide", activeItem);
+                string name = LandmarkHelper.GetFileName("Floor Guide", activeItem);
+            }
+            <a href='@pdf' class="gd-link-audio" target="_blank" onclick="scDownload(@name)">
                 <span class="icomoon-download"></span> @Sitecore.Context.Item["Download Label"].ToUpper()
             </a>
         </div>
         <div class="gd-pagetitle-mapmenu hidden-xs hiddden-sm">
-            <img data-src="@LandmarkHelper.ImageFieldSrc("Floor Map Image",activeItem)" alt="map">
+            <img data-src="@LandmarkHelper.ImageFieldSrc("Floor Map Image", activeItem)" alt="map">
             <ul>
                 @{
                     int i = 0;
                     foreach (Item building in buildings)
                     {
                         string cssclass = building.ID.ToString() == activeItem.ID.ToString() ? "active" : "";
-                        <li class="@cssclass"><a href="?buildingID=@building.ID.ToString()" data-src="/Service/Landmark.asmx/GetFloorPlanJson?buildingID=@building.ID.ToString()"
- data-src-ie8="/Service/Landmark.asmx/GetFloorPlanJson?buildingID=@building.ID.ToString()" data-logo="@LandmarkHelper.ImageFieldSrc("Floor Map Image",building)" data-logo-m="@LandmarkHelper.ImageFieldSrc("Mobile Floor Map Image",building)">@building.Fields["Building Title"].Value</a></li>
+                        <li class="@cssclass">
+                            <a href="?buildingID=@building.ID.ToString()" data-src="/Service/Landmark.asmx/GetFloorPlanJson?buildingID=@building.ID.ToString()"
+                               data-src-ie8="/Service/Landmark.asmx/GetFloorPlanJson?buildingID=@building.ID.ToString()" data-logo="@LandmarkHelper.ImageFieldSrc("Floor Map Image", building)" data-logo-m="@LandmarkHelper.ImageFieldSrc("Mobile Floor Map Image", building)">@building.Fields["Building Title"].Value</a>
+                        </li>
                         i++;
                     }
                 }
@@ -46,15 +49,14 @@
 
                 <div class="gd-controls-m">
                     <select id="gd-fp-building-m" class="form-control">
-                        
                         @{
-                    int j = 0;
-                    foreach (Item building in buildings)
-                    {
-                        <option value="@j">@building.Fields["Building Title"].Value</option>
-                        j++;
-                    }
-                }
+                            int j = 0;
+                            foreach (Item building in buildings)
+                            {
+                                <option value="@j">@building.Fields["Building Title"].Value</option>
+                                j++;
+                            }
+                        }
                     </select>
                 </div>
 
@@ -64,6 +66,7 @@
             </div>
         </div>
     </div>
+
     <div class="row" id="gd-floorplan-container">
         <div class="col-sm-3">
             <div class="gd-floorplan clearfix">
@@ -76,33 +79,30 @@
         <div class="col-sm-9">
             <div id="mapplic" class="hidden-xs">
             </div>
-            <div class="gd-mainimage-brief" id="gd-shop-details">
-                <h2 id="gd-shop-detail-title"></h2>
+            <div id="gd-shop-details" class="gd-mainimage-brief">
+                <h2 id="gd-shop-detail-title">Lorem ipsum dolor</h2>
                 <div class="table-responsive gd-mainimage-table">
                     <table>
                         <tbody>
                             <tr>
-                                <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.WhereItem))</th>
+                                <th>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.WhereItem))</th>
                                 <td id="gd-shop-detail-where"></td>
                             </tr>
                             <tr>
-                                <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.OpenningHoursItem))</th>
-                                <td id="gd-shop-detail-wkt">
-                                </td>
+                                <th>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.OpenningHoursItem))</th>
+                                <td id="gd-shop-detail-wkt"></td>
                             </tr>
                             <tr>
-                                <th>@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.AddressItem))</th>
+                                <th>@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.AddressItem))</th>
                                 <td id="gd-shop-detail-addr"></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <a id="gd-shop-detail-href" href="" class="gd-button gd-button-white">
+                <a id="gd-shop-detail-href" href="javascript:;" class="gd-button gd-button-white">
                     @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem)) <span class="icomoon-chevron-small-right"></span>
                 </a>
             </div>
         </div>
     </div>
-
 </div>
-
