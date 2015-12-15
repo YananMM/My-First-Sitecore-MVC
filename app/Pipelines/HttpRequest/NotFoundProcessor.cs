@@ -13,6 +13,8 @@ using Sitecore.Globalization;
 using Sitecore.StringExtensions;
 using System.Web.Caching;
 using System.Web.Mvc;
+using Sitecore.Configuration;
+using Sitecore.Web;
 
 namespace Landmark.Pipelines.HttpRequest
 {
@@ -58,16 +60,13 @@ namespace Landmark.Pipelines.HttpRequest
             options.LanguageEmbedding = LanguageEmbedding.Always;
             options.LowercaseUrls = true;
             string url = LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(pageNotFoundItem, options).Replace(" ","-"));
-            LandmarkHelper.RedirectPermanent(url, 404);
-
-        }
-
-        public void RedirectPermanent(string newPath)
-        {
-            HttpContext.Current.Response.Clear();
-            HttpContext.Current.Response.StatusCode = 301;
-            HttpContext.Current.Response.AddHeader("Location", newPath);
+            string content = Sitecore.Web.WebUtil.ExecuteWebPage(url);
+            // Send the NotFound page content to the client with a 404 status code
+            HttpContext.Current.Response.TrySkipIisCustomErrors = true;
+            HttpContext.Current.Response.StatusCode = 404;
+            HttpContext.Current.Response.Write(content);
             HttpContext.Current.Response.End();
+
         }
     }
 }
