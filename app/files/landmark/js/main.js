@@ -1187,6 +1187,7 @@ $(document).ready(function() {
     var gdFloorPlanJson = $('.gd-pagetitle-mapmenu ul li.active a').data("src");
     var gdFloorPlanIE8  = $('.gd-pagetitle-mapmenu ul li.active a').data("src-ie8");
     
+    // Map initiation, download SVG and shop files
     function gdShopInit() {
       if ( gdIE8 ) {
         gdFloorPlanJson = gdFloorPlanIE8;
@@ -1213,20 +1214,59 @@ $(document).ready(function() {
     }
     gdShopInit();
     
+      // Reset for building change
     function gdShopReset() {
+        window.gdFloorData = null;
+        if ($(window).width() < 768) {
+            $('#gd-shops').after($('#gd-shop-details'));
+        }
       $('#gd-floorplan-container').unbind();
       $('#mapplic').unbind();
       $('#gd-floors, #gd-shops, #mapplic').empty();
-      window.gdFloorData = null;
       $('#gd-shop-detail-title').html('');
       $('#gd-shop-detail-where').html('');
       $('#gd-shop-detail-wkt').html('');
       $('#gd-shop-detail-wdt').html('');
       $('#gd-shop-detail-addr').html('');
       $('#gd-shop-detail-href').attr('href', 'javascript:;');
+      $('#gd-fp-levela-m').empty();
     }
     
+      // If data is ready, show floor list and shop list
+    var gdCheckData = function () {
+        if (window.gdFloorData) {
+            gdAddFloors();
+            gdAddShops(0);
+        } else {
+            setTimeout(function () {
+                gdCheckData();
+            }, 300);
+        }
+    };
+    gdCheckData();
 
+      // Add floors
+    function gdAddFloors() {
+        var gdFloorHtml = '';
+        var gdFloorHtmlM = '';
+        var gdMenuStatus;
+
+        for (var looper = window.gdFloorData.categories.length - 1; looper >= 0; looper--) {
+            if (looper === 0) {
+                gdMenuStatus = 'class ="active"';
+            } else {
+                gdMenuStatus = '';
+            }
+            gdFloorHtml += '<a ' + gdMenuStatus + ' data-floor="' + looper + '" href="javascript:;">' + window.gdFloorData.categories[looper].title + '</a>';
+            gdFloorHtmlM = '<option value="' + looper + '">' + window.gdFloorData.categories[looper].title + '</option>' + gdFloorHtmlM;
+        }
+        $('#gd-floors').append(gdFloorHtml);
+
+        // For mobile, only visible on mobile
+        $('#gd-fp-levela-m').append(gdFloorHtmlM);
+    }
+
+      // Add shops of specified floor
     function gdAddShops(floorNo) {
       var gdShopHtml  = '';
       var gdMenuStatus;
@@ -1240,11 +1280,14 @@ $(document).ready(function() {
         }
         gdShopHtml += '<a ' + gdMenuStatus + 'data-shopid="' + looper + '" data-location="' + window.gdFloorData.levels[floorNo].locations[looper].id + '" href="javascript:;"><span class="title">' + window.gdFloorData.levels[floorNo].locations[looper].navtitle + '</span><span class="id">' + window.gdFloorData.levels[floorNo].locations[looper].wherelocationmobile + '</span></a>';
       }
+
+      // For mobile devices, move the shop detail area below(or out of) shop list
       if ($(window).width() < 768) {
-        // For mobile
-        $('#gd-shops').after($('.gd-mainimage-brief'));
+          $('#gd-shops').after($('#gd-shop-details'));
       }
+      // Shops added
       $('#gd-shops').empty().append(gdShopHtml);
+      // Active current shop on SVG map
       if (gdIE8) {
         $('#mapplic [data-location=' + gdHighLight + ']').trigger('mouseenter');
       } else {
@@ -1253,6 +1296,7 @@ $(document).ready(function() {
       gdShowShopDetail();
     }
 
+    // Show the details of current shop
     function gdShowShopDetail() {
       var gdFloorId  = $('#gd-floors>.active').data('floor');
       var gdShopId   = $('#gd-shops>.active').data('shopid');
@@ -1264,40 +1308,12 @@ $(document).ready(function() {
       $('#gd-shop-detail-addr').html(gdShop.address);
       $('#gd-shop-detail-href').attr('href', gdShop.href);
       
-      // For mobile
+        // For mobile devices, move the shop detail area next to current active item.
       if ($(window).width() < 768) {
-        $('#gd-shops>.active').after($('.gd-mainimage-brief'));
+          $('#gd-shops>.active').after($('#gd-shop-details'));
       }
     }
 
-    var gdCheckData = function() {
-      if (window.gdFloorData) {
-        var gdFloorHtml  = '';
-        var gdFloorHtmlM = '';
-        var gdMenuStatus;
-  
-        for (var looper = window.gdFloorData.categories.length - 1; looper >= 0; looper-- ) {
-          if (looper === 0) {
-            gdMenuStatus = 'class ="active"';
-          } else {
-            gdMenuStatus = '';
-          }
-          gdFloorHtml  += '<a ' + gdMenuStatus + ' data-floor="' + looper + '" href="javascript:;">' + window.gdFloorData.categories[looper].title + '</a>';
-          gdFloorHtmlM = '<option value="' + looper + '">' + window.gdFloorData.categories[looper].title + '</option>' + gdFloorHtmlM;
-        }
-        $('#gd-floors').append(gdFloorHtml);
-        
-        // For mobile
-        $('#gd-fp-levela-m').append(gdFloorHtmlM);
-  
-        gdAddShops(0);
-      } else {
-        setTimeout(function() {
-          gdCheckData();
-        }, 300);
-      }
-    };
-    gdCheckData();
 
     function gdFloorPlanBind() {
       $('#gd-floorplan-container').on('click', '#gd-floors>a', function() {
