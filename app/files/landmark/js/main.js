@@ -886,6 +886,17 @@ $(document).ready(function() {
           return Math.floor(Math.random() * (tileAmount - 0 + 1) + 0);
       }
 
+      // Refresh activation
+    function gdInsRunRefresh() {
+      if (gdInsInterval < 3000) {
+        alert('Instagram refresh interval should not be less than 3 seconds.');
+        return false;
+      }
+      gdInsRefresh($('.instagram-area li').eq(gdRandomIns(10)));
+      setTimeout(function() {
+        gdInsRunRefresh();
+      }, gdInsInterval);
+    }
       if (!isIE8()) {
           $.getJSON('/Service/Landmark.asmx/GetInstagramJson', {
               format: "json"
@@ -893,10 +904,8 @@ $(document).ready(function() {
           .done(function (data) {
               gdInsData = data;
               gdInsPreLoad(gdInsData);
+              gdInsRunRefresh();
 
-              setInterval(function () {
-                  gdInsRefresh($('.instagram-area li').eq(gdRandomIns(10)));
-              }, gdInsInterval);
           });
       }
 
