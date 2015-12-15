@@ -816,31 +816,31 @@ $(document).ready(function() {
     }
 
     // Instagram refresh
-    var gdInsData = null;
+    var gdInsData     = null;
     var gdInsInterval = $('.instagram-area').data('interval') * 1000;
-
+    
     function gdInsPreLoad(ins) {
-        var gdInsPreContainer;
-        var gdInsItems = '';
-        for (var looper = 0; looper < gdInsData.length; looper++) {
-            gdInsItems += '<img src="' + ins[looper].image + '" />';
-        }
-        if ($('#gd-ins-preload').length > 0) {
-            $('#gd-ins-preload').empty().append(gdInsItems);
-        } else {
-            gdInsPreContainer = '<div id="gd-ins-preload" style="display: none;">' + gdInsItems + '</div>';
-            $('body').append(gdInsPreContainer);
-        }
+      var gdInsPreContainer;
+      var gdInsItems = '';
+      for (var looper = 0; looper < gdInsData.length; looper++) {
+        gdInsItems += '<img src="' + ins[looper].image + '" />';
+      }
+      if ($('#gd-ins-preload').length > 0) {
+        $('#gd-ins-preload').empty().append(gdInsItems);
+      } else {
+        gdInsPreContainer = '<div id="gd-ins-preload" style="display: none;">' + gdInsItems + '</div>';
+        $('body').append(gdInsPreContainer);
+      }
     }
-
+    
     function gdInsGetImageUrl(urlText) {
-        if (urlText.indexOf('url(') > -1 || urlText.indexOf('URL(') > -1) {
-            return /\(['"]{0,1}(.*)['"]{0,1}\)/.exec(urlText)[1];
-        } else {
-            return urlText;
-        }
+      if (urlText.indexOf('url(') > -1 || urlText.indexOf('URL(') > -1) {
+        return /\(['"]{0,1}(.*)['"]{0,1}\)/.exec(urlText)[1];
+      } else {
+        return urlText;
+      }
     }
-
+    
     function gdInsRefresh(target) {
       var gdNewInsData = gdInsData[0];
       var gdNewInsHtml = '<a href="' + gdNewInsData.link + '" class="new" style="background-image:url(' + gdNewInsData.image + ');">' +
@@ -852,41 +852,39 @@ $(document).ready(function() {
                             '</div>' +
                           '</div>' +
                         '</a>';
-      
-      var gdOldIns = $('a', target);
+      var gdOldIns     = $('a', target);
       var gdOldInsTime = $.trim($('.instagram-info', gdOldIns).html().replace(/H5/g, 'h5'));
-      gdOldInsTime = gdOldInsTime.slice(gdOldInsTime.indexOf('</h5>') + 5);
-      var gdOldInsImg = Boolean(gdOldIns.data('bg')) ? gdOldIns.data('bg') : gdOldIns.attr('style');
-      gdOldInsImg = gdInsGetImageUrl(gdOldInsImg);
+          gdOldInsTime = gdOldInsTime.slice(gdOldInsTime.indexOf('</h5>') + 5);
+      var gdOldInsImg  = Boolean(gdOldIns.data('bg')) ? gdOldIns.data('bg') : gdOldIns.attr('style');
+          gdOldInsImg  = gdInsGetImageUrl(gdOldInsImg);
 
       var gdOldInsInfo = {
-          "time": gdOldInsTime,
-          "author": $.trim($('h5', gdOldIns).text()),
-          "avatar": Boolean($('.instagram-user', gdOldIns).data('src')) ? $('.instagram-user', gdOldIns).data('src') : $.trim($('.instagram-user', gdOldIns).attr('src')),
-          "image": gdOldInsImg,
-          "link": gdOldIns.attr('href')
+        "time": gdOldInsTime,
+        "author": $.trim($('h5', gdOldIns).text()),
+        "avatar": Boolean($('.instagram-user', gdOldIns).data('src')) ? $('.instagram-user', gdOldIns).data('src') : $.trim($('.instagram-user', gdOldIns).attr('src')),
+        "image": gdOldInsImg,
+        "link": gdOldIns.attr('href')
       };
-
-        // Update ins pool
+      
+      // Update ins pool
       gdInsData.push(gdOldInsInfo);
       gdInsData.shift();
 
-      
       target.prepend(gdNewInsHtml);
 
-      $('a.new', target).fadeTo(2000, 1, function () {
-          $(this).siblings().remove();
-          $(this).css('display', 'block').removeClass('new');
+      $('a.new', target).fadeTo(2000, 1, function() {
+        $(this).siblings().remove();
+        $(this).css('display', 'block').removeClass('new');
       });
-  }
+    }
 
-      // Tile picker function
-      function gdRandomIns(tileAmount) {
-          tileAmount = tileAmount - 1;
-          return Math.floor(Math.random() * (tileAmount - 0 + 1) + 0);
-      }
+    // Tile picker function
+    function gdRandomIns(tileAmount) {
+      tileAmount = tileAmount - 1;
+      return Math.floor(Math.random() * (tileAmount - 0 + 1) + 0);
+    }
 
-      // Refresh activation
+    // Refresh activation
     function gdInsRunRefresh() {
       if (gdInsInterval < 3000) {
         alert('Instagram refresh interval should not be less than 3 seconds.');
@@ -897,19 +895,17 @@ $(document).ready(function() {
         gdInsRunRefresh();
       }, gdInsInterval);
     }
-      if (!isIE8()) {
-          $.getJSON('/Service/Landmark.asmx/GetInstagramJson', {
-              format: "json"
-          })
-          .done(function (data) {
-              gdInsData = data;
-              gdInsPreLoad(gdInsData);
-              gdInsRunRefresh();
 
-          });
-      }
-
-    
+    if (!isIE8()) {
+        $.getJSON('/Service/Landmark.asmx/GetInstagramJson', {
+        format: "json"
+      })
+      .done(function( data ) {
+        gdInsData = data;
+        gdInsPreLoad(gdInsData);
+        gdInsRunRefresh();
+      });
+    }
   });
 
   /**********************************************************************************************************
@@ -1183,7 +1179,7 @@ $(document).ready(function() {
    * T7 SVG Floorplan
    **********************************************************************************************************/
   if ($('body').hasClass('t7')) {
-    var gdIE8 = isIE8();
+    var gdIE8           = isIE8();
     var gdFloorPlanJson = $('.gd-pagetitle-mapmenu ul li.active a').data("src");
     var gdFloorPlanIE8  = $('.gd-pagetitle-mapmenu ul li.active a').data("src-ie8");
     
@@ -1214,12 +1210,12 @@ $(document).ready(function() {
     }
     gdShopInit();
     
-      // Reset for building change
+    // Reset for building change
     function gdShopReset() {
-        window.gdFloorData = null;
-        if ($(window).width() < 768) {
-            $('#gd-shops').after($('#gd-shop-details'));
-        }
+      window.gdFloorData = null;
+      if ($(window).width() < 768) {
+        $('#gd-shops').after($('#gd-shop-details'));
+      }
       $('#gd-floorplan-container').unbind();
       $('#mapplic').unbind();
       $('#gd-floors, #gd-shops, #mapplic').empty();
@@ -1231,42 +1227,42 @@ $(document).ready(function() {
       $('#gd-shop-detail-href').attr('href', 'javascript:;');
       $('#gd-fp-levela-m').empty();
     }
-    
-      // If data is ready, show floor list and shop list
-    var gdCheckData = function () {
-        if (window.gdFloorData) {
-            gdAddFloors();
-            gdAddShops(0);
-        } else {
-            setTimeout(function () {
-                gdCheckData();
-            }, 300);
-        }
+
+    // If data is ready, show floor list and shop list
+    var gdCheckData = function() {
+      if (window.gdFloorData) {
+        gdAddFloors();
+        gdAddShops(0);
+      } else {
+        setTimeout(function() {
+          gdCheckData();
+        }, 300);
+      }
     };
     gdCheckData();
 
-      // Add floors
+    // Add floors
     function gdAddFloors() {
-        var gdFloorHtml = '';
-        var gdFloorHtmlM = '';
-        var gdMenuStatus;
+      var gdFloorHtml  = '';
+      var gdFloorHtmlM = '';
+      var gdMenuStatus;
 
-        for (var looper = window.gdFloorData.categories.length - 1; looper >= 0; looper--) {
-            if (looper === 0) {
-                gdMenuStatus = 'class ="active"';
-            } else {
-                gdMenuStatus = '';
-            }
-            gdFloorHtml += '<a ' + gdMenuStatus + ' data-floor="' + looper + '" href="javascript:;">' + window.gdFloorData.categories[looper].title + '</a>';
-            gdFloorHtmlM = '<option value="' + looper + '">' + window.gdFloorData.categories[looper].title + '</option>' + gdFloorHtmlM;
+      for (var looper = window.gdFloorData.categories.length - 1; looper >= 0; looper-- ) {
+        if (looper === 0) {
+          gdMenuStatus = 'class ="active"';
+        } else {
+          gdMenuStatus = '';
         }
-        $('#gd-floors').append(gdFloorHtml);
-
-        // For mobile, only visible on mobile
-        $('#gd-fp-levela-m').append(gdFloorHtmlM);
+        gdFloorHtml  += '<a ' + gdMenuStatus + ' data-floor="' + looper + '" href="javascript:;">' + window.gdFloorData.categories[looper].title + '</a>';
+        gdFloorHtmlM = '<option value="' + looper + '">' + window.gdFloorData.categories[looper].title + '</option>' + gdFloorHtmlM;
+      }
+      $('#gd-floors').append(gdFloorHtml);
+      
+      // For mobile, only visible on mobile
+      $('#gd-fp-levela-m').append(gdFloorHtmlM);
     }
 
-      // Add shops of specified floor
+    // Add shops of specified floor
     function gdAddShops(floorNo) {
       var gdShopHtml  = '';
       var gdMenuStatus;
@@ -1280,19 +1276,22 @@ $(document).ready(function() {
         }
         gdShopHtml += '<a ' + gdMenuStatus + 'data-shopid="' + looper + '" data-location="' + window.gdFloorData.levels[floorNo].locations[looper].id + '" href="javascript:;"><span class="title">' + window.gdFloorData.levels[floorNo].locations[looper].navtitle + '</span><span class="id">' + window.gdFloorData.levels[floorNo].locations[looper].wherelocationmobile + '</span></a>';
       }
-
+      
       // For mobile devices, move the shop detail area below(or out of) shop list
       if ($(window).width() < 768) {
-          $('#gd-shops').after($('#gd-shop-details'));
+        $('#gd-shops').after($('#gd-shop-details'));
       }
+      
       // Shops added
       $('#gd-shops').empty().append(gdShopHtml);
+      
       // Active current shop on SVG map
       if (gdIE8) {
         $('#mapplic [data-location=' + gdHighLight + ']').trigger('mouseenter');
       } else {
         $('#mapplic [id=' + gdHighLight + ']').trigger('mouseenter');
       }
+      
       gdShowShopDetail();
     }
 
@@ -1308,12 +1307,11 @@ $(document).ready(function() {
       $('#gd-shop-detail-addr').html(gdShop.address);
       $('#gd-shop-detail-href').attr('href', gdShop.href);
       
-        // For mobile devices, move the shop detail area next to current active item.
+      // For mobile devices, move the shop detail area next to current active item.
       if ($(window).width() < 768) {
-          $('#gd-shops>.active').after($('#gd-shop-details'));
+        $('#gd-shops>.active').after($('#gd-shop-details'));
       }
     }
-
 
     function gdFloorPlanBind() {
       $('#gd-floorplan-container').on('click', '#gd-floors>a', function() {
@@ -1357,7 +1355,6 @@ $(document).ready(function() {
       })
     }
     gdFloorPlanBind();
-    
     
     // Change building
     $('.gd-pagetitle-mapmenu li>a').click(function(event) {
