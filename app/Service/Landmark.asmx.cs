@@ -221,11 +221,11 @@ namespace Landmark.Service
             }
             List<InstagramItem> instagramItems = otherImages.Select(image => new InstagramItem
             {
-                Time = image.Fields["Publish Time"].Value,
-                Author = image.Fields["User"].ToString(),
-                Avatar = LandmarkHelper.ImageFieldSrc("Profile Picture", image).ToString(),
-                Image = LandmarkHelper.ImageFieldSrc("Image", image).ToString(),
-                Link = "javascript:;"
+                time = image.Fields["Publish Time"].Value,
+                author = image.Fields["User"].ToString(),
+                avatar = LandmarkHelper.ImageFieldSrc("Profile Picture", image).ToString(),
+                image = LandmarkHelper.ImageFieldSrc("Image", image).ToString(),
+                link = "javascript:;"
             }).ToList();
 
             JavaScriptSerializer js = new JavaScriptSerializer();

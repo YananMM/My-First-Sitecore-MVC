@@ -252,31 +252,31 @@ namespace Landmark.Models
         /// Gets or sets the time.
         /// </summary>
         /// <value>The time.</value>
-        public string Time { get; set; }
+        public string time { get; set; }
 
         /// <summary>
         /// Gets or sets the author.
         /// </summary>
         /// <value>The author.</value>
-        public string Author { get; set; }
+        public string author { get; set; }
 
         /// <summary>
         /// Gets or sets the avatar.
         /// </summary>
         /// <value>The avatar.</value>
-        public string Avatar { get; set; }
+        public string avatar { get; set; }
 
         /// <summary>
         /// Gets or sets the image.
         /// </summary>
         /// <value>The image.</value>
-        public string Image { get; set; }
+        public string image { get; set; }
 
         /// <summary>
         /// Gets or sets the link.
         /// </summary>
         /// <value>The link.</value>
-        public string Link { get; set; }
+        public string link { get; set; }
     }
 
 }
