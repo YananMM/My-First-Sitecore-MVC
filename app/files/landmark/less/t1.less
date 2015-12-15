@@ -102,7 +102,7 @@ h2{
     font-family: @font-family-serif;
     width: 100%;
     margin: 9px 0 0;
-    font-size: 1.33em;
+    /*font-size: 1.33em;*/
     color: @brand-primary;
   text-transform: uppercase;
     .sprite-mid-r{
@@ -178,6 +178,7 @@ vertical-align: middle;
       max-width: 500px;
       padding: 0 4% 0 0;
     h2{
+      font-size: 1.08em;
       margin: 10px auto;
       display: inline;
       padding-right: 14px;
@@ -194,6 +195,7 @@ vertical-align: middle;
    width: 85%;
   }
   h2{
+      font-size: 1.08em;
       display: inline;
       padding-right: 14px;
       background:url("../images/title-arrow.png") no-repeat 100%  100% ;
@@ -631,6 +633,7 @@ border-left: 18px solid @gray-darker;
             bottom: 32px;
             width: 85%;
             h2{
+              font-size: 2em;
             display: inline;
       background:url("../images/title-arrow2.png") no-repeat 100%  100% ;
       padding-right: 29px; 
@@ -686,19 +689,39 @@ border-left: 18px solid @gray-darker;
             &.cur-none{
              cursor: default;
             }
-            
-            &:before{
-            content: '';
-              width: 100%;
-              height: 100%;
-              left: 0;
-              top: 0; 
-              display: block;
-              z-index: 2000;
-              position: absolute;
-             .transition(background, 0.5s, ease-in);
-              background: url("../images/black-50.png") repeat  transparent; 
+         &.new {
+            bottom: 0;
+            display: none;
+            left: 0;
+            //opacity: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            z-index: 20;
+          }
+          }
+          &:before{
+          content: '';
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0; 
+            display: block;
+            z-index: 2000;
+            position: absolute;
+            .transition(background, 0.5s, ease-in);
+            background: url("../images/black-50.png") repeat  transparent; 
+          }
+          
+          &:hover{
+            .instagram-text {
+            .transition(opacity, 0.5s, ease-in);
+            opacity: 1;
             }
+          &:before{
+            background: none;
+          }
           }
         }
       }
@@ -710,7 +733,7 @@ border-left: 18px solid @gray-darker;
 @media (min-width: @screen-sm) {
 .t1{
   h2{
-   font-size: 3em;
+   font-size: 2em; /*font-size: 3em;*/
   }
       h3{
         font-size: 2em;
@@ -731,6 +754,8 @@ border-left: 18px solid @gray-darker;
         display: block;
       }
     .text-box-1{
+      height: 90%;
+      padding: 0 20px 10%;
       h3{
         font-size: 2em;
       }
@@ -747,7 +772,7 @@ border-left: 18px solid @gray-darker;
       }
     }
 .text-box-2,.text-box-3{
-    h2{
+    h2{font-size: 2.16em; 
       background:url("../images/title-arrow2.png") no-repeat 100%  100% ;
       padding-right: 29px;
       /*
@@ -772,7 +797,7 @@ border-left: 18px solid @gray-darker;
        }
      }
     .panel-content{
-      font-family: @font-family-serif;
+      font-family: @font-family-sans-serif;
       font-size: 1.33em;
       margin-top: 11px;
       margin-bottom: 7px;
@@ -1015,7 +1040,7 @@ margin-top: 0px;
      }
     .panel-content{
       font-size: 1.083em;
-      font-family: @font-family-serif;
+      font-family:@font-family-sans-serif;
     }
       .btn{
         font-size: 1em;
@@ -1055,7 +1080,7 @@ margin-top: 0px;
     .panel-content{
       font-size: 1.083em;
         margin-top: 20px;
-      font-family: @font-family-serif;
+      font-family: @font-family-sans-serif;
     }
       .btn{
         font-size: 1em;
@@ -1113,7 +1138,7 @@ margin-top: 0px;
     .panel-content{
       font-size: 1.083em;
         margin-top: 20px;
-      font-family: @font-family-serif;
+      font-family: @font-family-sans-serif;
     }
       .btn{
         font-size: 1em;
@@ -1462,9 +1487,9 @@ border-left: 18px solid @gray-darker;
              }
             &:before{
               background: none;
-              
             }
             }
+            
           }
         }
       
