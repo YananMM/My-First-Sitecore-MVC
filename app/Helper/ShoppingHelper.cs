@@ -642,28 +642,21 @@ namespace Landmark.Helper
         /// <returns>List{Item}.</returns>
         public List<RelatedItem> GetRelatedArticles(Item item)
         {
-            List<RelatedItem> relatedArticle = new List<RelatedItem>();
             var allArticles = LandmarkHelper.GetAllArticles();
 
             var brandTagsField = item.Fields["Tags"];
             var brandTags = brandTagsField.ToString().Split('|').ToList();
-            foreach (var article in allArticles)
-            {
-                var articleTagsField = article.Fields["Tags"];
-                var articleTags = articleTagsField.ToString().Split('|').ToList();
-                var tags = articleTags.Intersect(brandTags).ToList();
-
-                if (tags.Count() != 0)
+            List<RelatedItem> relatedArticle = (from article in allArticles
+                let articleTagsField = article.Fields["Tags"]
+                let articleTags = articleTagsField.ToString().Split('|').ToList()
+                let tags = articleTags.Intersect(brandTags).ToList()
+                where tags.Count() != 0
+                select new RelatedItem
                 {
-                    RelatedItem relatedItem = new RelatedItem
-                    {
-                        Item = article,
-                        TagCount = tags.Count()
-                    };
-                    relatedArticle.Add(relatedItem);
-                }
-            }
-            return relatedArticle.OrderBy(p => p.TagCount).ToList();
+                    Item = article, 
+                    TagCount = tags.Count()
+                }).ToList();
+            return relatedArticle.OrderByDescending(p => p.TagCount).ToList();
         }
 
         public Item GetCategoryFromItem(string itemid)
