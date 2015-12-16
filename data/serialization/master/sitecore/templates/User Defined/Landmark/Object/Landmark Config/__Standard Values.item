@@ -1,33 +1,40 @@
 ----item----
 version: 1
-id: {E906AACF-7038-45E8-8DB4-9624070D14CD}
+id: {DD1A10EA-BC8C-4D26-8426-6C9A4216FCD2}
 database: master
-path: /sitecore/templates/User Defined/Landmark/Object/Landmark Config/Footer Data
+path: /sitecore/templates/User Defined/Landmark/Object/Landmark Config/__Standard Values
 parent: {427B09DC-F914-4895-80D7-8A08C89A3119}
-name: Footer Data
+name: __Standard Values
 master: {00000000-0000-0000-0000-000000000000}
-template: {E269FBB5-3750-427A-9149-7AA950B49301}
-templatekey: Template section
+template: {427B09DC-F914-4895-80D7-8A08C89A3119}
+templatekey: Landmark Config
 
 ----field----
-field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
-name: __Sortorder
-key: __sortorder
-content-length: 4
+field: {40166129-743D-4080-8825-D6849FEF16D3}
+name: Switch Time
+key: switch time
+content-length: 1
 
-1500
+3
 ----version----
 language: en
 version: 1
-revision: d12aa79f-a507-4506-afc8-8848ac113c57
+revision: f5456a21-4899-419d-a80a-bf5adf5e303b
 
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20151014T135115Z
+20151215T071907Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -41,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d12aa79f-a507-4506-afc8-8848ac113c57
+f5456a21-4899-419d-a80a-bf5adf5e303b
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151216T021935:635858291750786777Z
+20151216T022049:635858292497919510Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
