@@ -7633,6 +7633,22 @@ dl.gd-content-details-tags dd a:active {
   background-color: #d4a962;
   color: #FFFFFF;
 }
+.t7 .gd-floorplan .gd-fp-levelb a.active:before,
+.t7 .gd-floorplan .gd-fp-levelb a.active:after {
+  content: " ";
+  display: table;
+}
+.t7 .gd-floorplan .gd-fp-levelb a.active:after {
+  clear: both;
+}
+.t7 .gd-floorplan .gd-fp-levelb a.active:before,
+.t7 .gd-floorplan .gd-fp-levelb a.active:after {
+  content: " ";
+  display: table;
+}
+.t7 .gd-floorplan .gd-fp-levelb a.active:after {
+  clear: both;
+}
 .t7 .gd-floorplan .gd-fp-levelb a.active .title {
   font-weight: 600;
 }
