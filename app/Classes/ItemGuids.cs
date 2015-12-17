@@ -196,5 +196,6 @@ namespace Landmark.Classes
         public static readonly string LandmarkTitleItem = "{49B3DA18-4601-48AB-9AD3-B506C0713762}";
         public static readonly string OfItem = "{C029DF24-A35D-443A-BA17-00FA1C6FAD9C}";
         public static readonly string InstagramFolder = "{78706CBA-8902-4A9A-A4C2-B7D8E20E768F}";
+        public static readonly string MapItem = "{CA0C0FBA-8308-4AD6-86CF-5FB5A2DE9BBB}";
     }
 }

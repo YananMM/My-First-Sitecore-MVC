@@ -36,8 +36,9 @@
                     <td>
                         @Html.Sitecore().Field("Hotel Address")<br>
                         <a href="javascript:;" class="gd-link-map gd-lightbox-link gd-lightbox-map" data-lat="@Html.Sitecore().Field("Map Latitude")" data-lng="@Html.Sitecore().Field("Map Longitude")" data-lighttitle="@PreventCustomReplace(Html.Sitecore().Field("Hotel Title"))">
-                            <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.ViewMapItem)).ToString().ToUpper()
+                            <span class="icomoon-location2"></span> @Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ViewMapItem)).ToString().ToUpper()
                         </a>
+                        <input type="hidden" id="mapUrl" value="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.MapItem)))" />
                     </td>
                 </tr>
             }

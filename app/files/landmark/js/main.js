@@ -1642,7 +1642,8 @@ $(document).ready(function() {
 
     // update the logic to support video popup & floor plan with pin
     if ($(this).hasClass('gd-lightbox-map')) {
-        gdLightContent = '<div class="gd-location-map" data-lat="' + $(this).data('lat') + '" data-lng="' + $(this).data('lng') + '"><iframe src="/files/landmark/iframes/map-simple-iframe.html" frameborder="0"></iframe></div>';
+        var mapUrl = $('#mapUrl').val();
+        gdLightContent = '<div class="gd-location-map" data-lat="' + $(this).data('lat') + '" data-lng="' + $(this).data('lng') + '"><iframe src="' + mapUrl + '" frameborder="0"></iframe></div>';
     } else if ($(this).hasClass('gd-lightbox-video')){
       if(isiOS() || isAndroid()){
         scTrackVideo(gdLightSrc);

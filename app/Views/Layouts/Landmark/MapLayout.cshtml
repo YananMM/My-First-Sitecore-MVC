@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
@@ -12,9 +13,18 @@
         }
     </style>
     <script src="/files/landmark/js/lib/jquery-1.11.2.min.js"></script>
-    <!--<script src="http://maps.google.cn/maps/api/js?key=AIzaSyAw6n_OAbSlVlqQCKGnl2_5atA464RSHbA&sensor=false&language=zh-CN" type="text/javascript"></script>
-    <script src="http://maps.google.cn/maps/api/js?key=AIzaSyAw6n_OAbSlVlqQCKGnl2_5atA464RSHbA&sensor=false&language=zh-TW" type="text/javascript"></script>-->
-    <script src="http://maps.google.cn/maps/api/js?key=AIzaSyAw6n_OAbSlVlqQCKGnl2_5atA464RSHbA&sensor=false&language=en" type="text/javascript"></script>
+    @if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
+    {
+        <script src="http://maps.google.cn/maps/api/js?key=AIzaSyAw6n_OAbSlVlqQCKGnl2_5atA464RSHbA&sensor=false&language=zh-CN" type="text/javascript"></script>
+    }
+    else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
+    {
+        <script src="http://maps.google.cn/maps/api/js?key=AIzaSyAw6n_OAbSlVlqQCKGnl2_5atA464RSHbA&sensor=false&language=zh-TW" type="text/javascript"></script>
+    }
+    else if (Html.Sitecore().CurrentItem.Language.Name == "en")
+    {
+        <script src="http://maps.google.cn/maps/api/js?key=AIzaSyAw6n_OAbSlVlqQCKGnl2_5atA464RSHbA&sensor=false&language=en" type="text/javascript"></script>
+    }
     <script>
         var myMapContainer = $(window.parent.document).find('.gd-location-map').eq(0);
         var myLat = myMapContainer.data('lat');

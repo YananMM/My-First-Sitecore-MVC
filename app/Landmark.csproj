@@ -812,6 +812,7 @@
     <Content Include="Views\Layouts\Landmark\RedirectLayout.cshtml" />
     <Content Include="Service\CheckCaptcha.ashx" />
     <Content Include="Views\Renderings\Landmark\T11\T11PulledContentRendering.cshtml" />
+    <Content Include="Views\Layouts\Landmark\MapLayout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
