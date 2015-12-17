@@ -13,17 +13,17 @@
     <div id="control" class="gd-map-heading">
         <div class="gd-map-dropdown">
             <button type="button" data-default="@Html.Sitecore().Field("Starting Location Label", pageItem)" data-value="">@Html.Sitecore().Field("Starting Location Label", pageItem)</button>
-            <div class="gd-map-options hidden">
+            <div id="map-start-dropdown" class="gd-map-options hidden">
                 @foreach (var item in locations)
                 {
-                    <a href="javascript:;" data-value="@Html.Sitecore().Field("Starting Location", item), HK">@Html.Sitecore().Field("Starting Location", item)</a>
+                    <a href="javascript:;" data-value="@Html.Sitecore().Field("Starting Location", item), Hong Kong">@Html.Sitecore().Field("Starting Location", item)</a>
                 }
             </div>
         </div>
         <div class="gd-map-connector">
             - @Html.Sitecore().Field("OR Text", pageItem) -
         </div>
-        <div class="gd-map-input-group">
+        <div id ="map-start-input" class="gd-map-input-group">
             <input type="text" name="" id="" placeholder="@Html.Sitecore().Field("Input Text", pageItem)">
             <button type="button">@Html.Sitecore().Field("Button Text", pageItem)</button>
         </div>

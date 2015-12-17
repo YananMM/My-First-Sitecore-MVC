@@ -92,6 +92,12 @@
             background-color: #D4A962;
         }
 
+        #gd-surroundings > li.active:hover,
+        #gd-surroundings > li.active:focus,
+        #gd-surroundings > li.active:focus {
+            color: #D4A962;
+        }
+
         #gd-surroundings > li > #map-marker-01 {
             background-position: 0 0;
         }
@@ -181,7 +187,8 @@
         }
     </style>
     <script src="/files/landmark/js/lib/jquery-1.11.2.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places,visualization"></script>
+    <!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&libraries=places,visualization"></script>-->
+    <script src="http://maps.google.cn/maps/api/js?key=AIzaSyAw6n_OAbSlVlqQCKGnl2_5atA464RSHbA" type="text/javascript"></script>
     <script>
         var map;
         var infoWindow;
@@ -381,7 +388,7 @@
             infowindow = new google.maps.InfoWindow({
                 maxWidth: 160
             });
-            service = new google.maps.places.PlacesService(map);
+            //service = new google.maps.places.PlacesService(map);
 
             google.maps.event.addListenerOnce(map, 'bounds_changed', performSearch);
         }
@@ -457,6 +464,7 @@
                 userMarkID = $(this).prevAll().length;
                 userKeyword = $(this).data('keyword');
                 userMkrIcon = $(this).find('.badge').attr('id') + '.png';
+                userMarkID = $(this).index();
                 clearMarkers();
                 performSearch();
             });
