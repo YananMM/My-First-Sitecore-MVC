@@ -23,11 +23,11 @@ namespace Landmark.Helper
             Item exclusiveItem = Sitecore.Context.Database.GetItem(ItemGuids.MonthlyExclusivePage);
             List<Item> articles = new List<Item>();
             if (category == null)
-                articles = exclusiveItem.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page).ToList();
+                articles = exclusiveItem.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page && LandmarkHelper.IsShownInNavigation(item)).ToList();
             else
             {
                 articles = exclusiveItem.Children.ToList().Where(item => item.TemplateID.ToString() == ItemGuids.T27Page
-                && ((MultilistField)item.Fields["Tags"]).TargetIDs.Contains(new ID(category))).ToList();
+                && ((MultilistField)item.Fields["Tags"]).TargetIDs.Contains(new ID(category)) && LandmarkHelper.IsShownInNavigation(item)).ToList();
             }
             return articles;
         }
@@ -51,7 +51,7 @@ namespace Landmark.Helper
             List<Item> results = null;
             int pagenumber;
             pagenumber = page != null ? Int32.Parse(page) : 1;
-            results = GetMonthlyExclusives().Where(item => ((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
+            results = GetMonthlyExclusives().Where(item => ((CheckboxField)item.Fields["Has Detailed"]).Checked && LandmarkHelper.IsShownInNavigation(item)).ToList();
             return results/*.Skip((pagenumber - 1) * 8).Take(8).ToList()*/;
         }
 
@@ -61,7 +61,7 @@ namespace Landmark.Helper
             int pagenumber;
             pagenumber = page != null ? Int32.Parse(page) : 1;
             List<Item> detailedItems = GetDetailedExclusives(page);
-            results = GetMonthlyExclusives().Where(item => !((CheckboxField)item.Fields["Has Detailed"]).Checked).ToList();
+            results = GetMonthlyExclusives().Where(item => !((CheckboxField)item.Fields["Has Detailed"]).Checked && LandmarkHelper.IsShownInNavigation(item)).ToList();
             return results;
             /*if (detailedItems.Count() > pagenumber * 8)
             {

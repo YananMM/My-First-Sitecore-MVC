@@ -70,7 +70,7 @@ namespace Landmark.Helper
         {
             List<Item> attractions = new ItemList();
             var allAttractions = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.ExperienceCentral,
-                ItemGuids.T25PageTemplate);
+                ItemGuids.T25PageTemplate).Where(i=>LandmarkHelper.IsShownInNavigation(i)).ToList();
 
             if (allAttractions != null && allAttractions.Count != 0)
             {

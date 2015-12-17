@@ -13,7 +13,7 @@ namespace Landmark.Helper
         public Item GetLatestArticle()
         {
             return
-                LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.T4PageTemplate)
+                LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.T4PageTemplate).Where(i=>LandmarkHelper.IsShownInNavigation(i))
                     .OrderBy(article => article.Fields["Article Date"].ToString())
                     .Last();
         }
@@ -23,7 +23,7 @@ namespace Landmark.Helper
             int pagenumber ;
             pagenumber = page != null ? Int32.Parse(page) : 1;
             List<Item> articles = LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.T4PageTemplate)
-                .Where(article => article.ID.ToString() != GetLatestArticle().ID.ToString())
+                .Where(article => article.ID.ToString() != GetLatestArticle().ID.ToString() && LandmarkHelper.IsShownInNavigation(article))
                     .OrderBy(article => article.Fields["Article Date"].ToString()).ToList();
             foreach (var refer in LandmarkHelper.GetItemByTemplate(Sitecore.Context.Item, ItemGuids.ReferenceObjectTemplate))
             {
