@@ -11,7 +11,8 @@
     MagazineHelper helper = new MagazineHelper();
     var currentItem = Sitecore.Context.Item;
     var parent = currentItem.Parent;
-    var stories = helper.GetStoriesByPager(currentItem, Convert.ToInt32(Request["page"]));
+    int page = Convert.ToInt32(Request["page"]);
+    var stories = helper.GetStoriesByPager(currentItem, page);
     List<Item> list1 = new ItemList();
     List<Item> list2 = new ItemList();
 }
@@ -65,17 +66,33 @@
             }
         </div>
     </div>
-    @if (stories.Count > 1)
+    @if (stories.Count >= 1)
     {
-        var storyList = stories.GetRange(1, stories.Count - 1).ToList();
-        if (storyList.Count >= 3)
+        if (page == 0 || page == 1)
         {
-            list1 = storyList.GetRange(0, 3);
-            list2 = storyList.GetRange(3, storyList.Count - 3);
+            var storyList = stories.GetRange(1, stories.Count - 1).ToList();
+            if (storyList.Count >= 3)
+            {
+                list1 = storyList.GetRange(0, 3);
+                list2 = storyList.GetRange(3, storyList.Count - 3);
+            }
+            else
+            {
+                list1 = storyList;
+            }
         }
         else
         {
-            list1 = storyList;
+            var storyList = stories.GetRange(0, stories.Count).ToList();
+            if (storyList.Count >= 3)
+            {
+                list1 = storyList.GetRange(0, 3);
+                list2 = storyList.GetRange(3, storyList.Count - 3);
+            }
+            else
+            {
+                list1 = storyList;
+            }
         }
     }
     <div class="gd-promotion-box-area">

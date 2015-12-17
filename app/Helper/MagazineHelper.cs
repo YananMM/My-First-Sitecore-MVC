@@ -140,11 +140,16 @@ namespace Landmark.Helper
             {
                 if (page == 1 || page == 0)
                 {
-                    _pageSize = 7;
+                    stories =
+                        allStories.Skip((page - 1) * 7)
+                            .Take(7).ToList();
                 }
-                stories =
-                    allStories.Skip((page - 1) * _pageSize)
-                        .Take(_pageSize).ToList();
+                else
+                {
+                    stories =
+                        allStories.Skip(((page - 1) * _pageSize) + 1)
+                            .Take(_pageSize).ToList();
+                }
             }
             return stories;
         }
