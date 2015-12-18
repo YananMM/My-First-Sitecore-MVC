@@ -448,32 +448,44 @@ $(document).ready(function() {
   });
 
   // FB Share
-  Modernizr.load({
-    load: '//connect.facebook.net/en_US/sdk.js',
-    callback: function(){
-      window.fbAsyncInit = function() {
-            FB.init({
-              appId      : gdSettings.fbAppId,
-              xfbml      : true,
-              version    : 'v2.4'
-            });
-         };
+    // Modernizr.load({
+    //   load: '//connect.facebook.net/en_US/sdk.js',
+    //   callback: function(){
+    //     window.fbAsyncInit = function() {
+    //           FB.init({
+    //             appId      : gdSettings.fbAppId,
+    //             xfbml      : true,
+    //             version    : 'v2.4'
+    //           });
+    //        };
 
-      $('.header-social .icomoon-facebook, .gd-promo-sharebox .icomoon-facebook, .mobile-share .icomoon-facebook').click(function(e){
-        e.preventDefault();
+    //     $('.header-social .icomoon-facebook, .gd-promo-sharebox .icomoon-facebook, .mobile-share .icomoon-facebook').click(function(e){
+    //       e.preventDefault();
+    //       var url;
+    //       if($(this).parent().is('.gd-promo-sharebox')){
+    //         url = $(this).parent().parent().prev('.gd-button').attr('href');
+    //       } else {
+    //         url = socialShareUrl
+    //       }
+    //       FB.ui(
+    //       {
+    //         method: 'share',
+    //         href: url
+    //       });
+    //     });
+    //   }
+    // });
+  $('.header-social .icomoon-facebook, .gd-promo-sharebox .icomoon-facebook, .mobile-share .icomoon-facebook').each(function () {
         var url;
         if($(this).parent().is('.gd-promo-sharebox')){
           url = $(this).parent().parent().prev('.gd-button').attr('href');
         } else {
           url = socialShareUrl
         }
-        FB.ui(
-        {
-          method: 'share',
-          href: url
+        $(this).attr({
+            'href': 'https://www.facebook.com/sharer/sharer.php?u=' + url,
+            'target': '_blank'
         });
-      });
-    }
   });
 
   // Twitter Share
@@ -490,7 +502,8 @@ $(document).ready(function() {
           // $(this).attr('href', 'https://twitter.com/intent/tweet?url='+ encodeURIComponent(url));
         $(this).attr({
             'href': 'https://twitter.com/share',
-            'target': '_blank'
+            'target': '_blank',
+            'data-url': encodeURIComponent(url)
         });
       });
     }
@@ -502,7 +515,10 @@ $(document).ready(function() {
     callback: function(){
       WB2.anyWhere(function(W){
         $('.header-social .icomoon-sina-weibo, .gd-promo-sharebox .icomoon-sina-weibo, .mobile-share .icomoon-sina-weibo').each(function(index){
-          $(this).attr('id', 'wb_publish_'+index)
+            $(this).attr({
+                'id': 'wb_publish_' + index,
+                'href': 'javascript:;'
+            })
           var url, description, default_imagesArr = [];
           if($(this).parent().is('.gd-promo-sharebox')){
             url = $(this).parent().parent().prev('.gd-button').attr('href');
