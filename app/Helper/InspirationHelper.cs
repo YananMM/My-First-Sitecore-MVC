@@ -188,7 +188,7 @@ namespace Landmark.Helper
                 var t23PageCD = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.LandmarkMaganizePage,
                     ItemGuids.T23PageCTemplate);
 
-                allItems = t23PagesAB.Union(t23PageCD).ToList();
+                allItems = t23PagesAB.Union(t23PageCD).Where(LandmarkHelper.IsShownInNavigation).ToList();
             }
             else if (type == "brands")
             {
@@ -196,7 +196,7 @@ namespace Landmark.Helper
                     ItemGuids.T14ShopDetailsTemplate);
                 var diningBrands = LandmarkHelper.GetItemsByRootAndTemplate(ItemGuids.DiningItem,
                     ItemGuids.T14ShopDetailsTemplate);
-                allItems = shoppingBrands.Union(diningBrands).ToList();
+                allItems = shoppingBrands.Union(diningBrands).Where(LandmarkHelper.IsShownInNavigation).ToList();
             }
             var currentTagsField = currentItem.Fields["tags"];
             List<string> storyTags = new List<string>();

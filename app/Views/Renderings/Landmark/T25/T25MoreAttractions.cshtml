@@ -7,7 +7,7 @@
 @model RenderingModel
 @{
     var current = Sitecore.Context.Item;
-    var attractions = current.Parent.Children.Where(p => p.ID != current.ID && p.TemplateID.ToString() == ItemGuids.T25PageTemplate).ToList();
+    var attractions = current.Parent.Children.Where(p => p.ID != current.ID && p.TemplateID.ToString() == ItemGuids.T25PageTemplate).Where(LandmarkHelper.IsShownInNavigation).ToList();
 }
 
 <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
@@ -23,7 +23,7 @@
             {
                 <div @if (i == 1) { <text>
                      class="item active"
-                     </text>     } class="item">
+                     </text>      } class="item">
                     @{
                 var image = LandmarkHelper.GetCallOutImage(item);
                     }
@@ -58,7 +58,7 @@
                     {
                         <li data-target="#gd-carousel-info" data-slide-to="@j" @{ if (j == 0) { <text>
                             class="active"
-                            </text>      } }>@(j + 1)</li>
+                            </text>       } }>@(j + 1)</li>
                     }
                 </ol>
                 <span class="gd-carousel-control gd-carousel-no">

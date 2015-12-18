@@ -487,10 +487,10 @@ $(document).ready(function() {
         } else {
           url = socialShareUrl;
         }
-        // $(this).attr('href', 'https://twitter.com/intent/tweet?url='+ encodeURIComponent(url));
+          // $(this).attr('href', 'https://twitter.com/intent/tweet?url='+ encodeURIComponent(url));
         $(this).attr({
-          'href': 'https://twitter.com/share',
-          'target': '_blank'
+            'href': 'https://twitter.com/share',
+            'target': '_blank'
         });
       });
     }
@@ -740,18 +740,19 @@ $(document).ready(function() {
         )
         .eventCallback('onComplete', function(){      
           isScrolling = false;
+
           currentSlide = slideIndex;
           $panelNav.find('li.active').removeClass('active');
           $('li:eq('+currentSlide+')', $panelNav).addClass('active');
           var currentPanel = $('.panel-area').eq(slideIndex);
-          
-          setTimeout(function() {
-            $('[data-bg]', currentPanel).each(function() {
-              if (!$(this).attr('style') || $(this).attr('style').indexOf('url(') === -1) {
-                console.log($(this).data('[data-bg]'));
-                $(this).css('background-image', 'url(' +$(this).data('bg') + ')');
-              }
-            });
+
+          setTimeout(function () {
+              $('[data-bg]', currentPanel).each(function () {
+                  if (!$(this).attr('style') || $(this).attr('style').indexOf('url(') === -1) {
+                      console.log($(this).data('[data-bg]'));
+                      $(this).css('background-image', 'url(' + $(this).data('bg') + ')');
+                  }
+              });
           }, 1000);
 
           $(window).trigger('scroll');
