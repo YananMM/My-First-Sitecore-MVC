@@ -113,6 +113,7 @@
     .menbox-1{
       width: 100%;
       position: relative;
+      
       .menbox-text{
         position: absolute;
         bottom: 12px;
@@ -125,6 +126,13 @@
           margin-top: 10px;
           padding: 0 10%;
          }
+      }
+      .menbox-img.hover-no{
+        .menbox-text{
+          p{
+           color: #999;
+          }
+        }
       }
     }
     .menbox-2{
@@ -200,6 +208,13 @@
       margin-top: 30px;
       .menbox-img{
       
+      &.hover-no{
+        .menbox-text{
+          p{
+           color: #999;
+          }
+        }
+      }
       .menbox-text{
       top:35%;
       left: 10%;
