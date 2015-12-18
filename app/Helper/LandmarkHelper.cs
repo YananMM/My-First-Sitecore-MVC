@@ -259,7 +259,7 @@ namespace Landmark.Helper
                     }
                 }
             }
-            return relatedItems;
+            return relatedItems.Where(LandmarkHelper.IsShownInNavigation).ToList();
         }
 
         public static string GetFileName(string fieldName, Item item)
@@ -345,7 +345,7 @@ namespace Landmark.Helper
             {
                 allRelatedItems.Add(relatedArticle.FirstOrDefault().Item);
             }
-            return allRelatedItems;
+            return allRelatedItems.Where(LandmarkHelper.IsShownInNavigation).ToList();
         }
 
         /// <summary>
@@ -376,7 +376,7 @@ namespace Landmark.Helper
                 }
             }
             items.AddRange(relatedItems);
-            return items;
+            return items.Where(IsShownInNavigation).ToList();
         }
 
         public static List<TagsTree> GetTagsTree()

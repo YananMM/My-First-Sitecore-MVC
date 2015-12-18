@@ -642,7 +642,7 @@ namespace Landmark.Helper
         /// <returns>List{Item}.</returns>
         public List<RelatedItem> GetRelatedArticles(Item item)
         {
-            var allArticles = LandmarkHelper.GetAllArticles();
+            var allArticles = LandmarkHelper.GetAllArticles().Where(LandmarkHelper.IsShownInNavigation).ToList();
 
             var brandTagsField = item.Fields["Tags"];
             var brandTags = brandTagsField.ToString().Split('|').ToList();
