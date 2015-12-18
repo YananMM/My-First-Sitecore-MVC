@@ -448,44 +448,45 @@ $(document).ready(function() {
   });
 
   // FB Share
-    // Modernizr.load({
-    //   load: '//connect.facebook.net/en_US/sdk.js',
-    //   callback: function(){
-    //     window.fbAsyncInit = function() {
-    //           FB.init({
-    //             appId      : gdSettings.fbAppId,
-    //             xfbml      : true,
-    //             version    : 'v2.4'
-    //           });
-    //        };
+  // Modernizr.load({
+  //   load: '//connect.facebook.net/en_US/sdk.js',
+  //   callback: function(){
+  //     window.fbAsyncInit = function() {
+  //           FB.init({
+  //             appId      : gdSettings.fbAppId,
+  //             xfbml      : true,
+  //             version    : 'v2.4'
+  //           });
+  //        };
 
-    //     $('.header-social .icomoon-facebook, .gd-promo-sharebox .icomoon-facebook, .mobile-share .icomoon-facebook').click(function(e){
-    //       e.preventDefault();
-    //       var url;
-    //       if($(this).parent().is('.gd-promo-sharebox')){
-    //         url = $(this).parent().parent().prev('.gd-button').attr('href');
-    //       } else {
-    //         url = socialShareUrl
-    //       }
-    //       FB.ui(
-    //       {
-    //         method: 'share',
-    //         href: url
-    //       });
-    //     });
-    //   }
-    // });
-  $('.header-social .icomoon-facebook, .gd-promo-sharebox .icomoon-facebook, .mobile-share .icomoon-facebook').each(function () {
-        var url;
-        if($(this).parent().is('.gd-promo-sharebox')){
-          url = $(this).parent().parent().prev('.gd-button').attr('href');
-        } else {
-          url = socialShareUrl
-        }
-        $(this).attr({
-            'href': 'https://www.facebook.com/sharer/sharer.php?u=' + url,
-            'target': '_blank'
-        });
+  //     $('.header-social .icomoon-facebook, .gd-promo-sharebox .icomoon-facebook, .mobile-share .icomoon-facebook').click(function(e){
+  //       e.preventDefault();
+  //       var url;
+  //       if($(this).parent().is('.gd-promo-sharebox')){
+  //         url = $(this).parent().parent().prev('.gd-button').attr('href');
+  //       } else {
+  //         url = socialShareUrl
+  //       }
+  //       FB.ui(
+  //       {
+  //         method: 'share',
+  //         href: url
+  //       });
+  //     });
+  //   }
+  // });
+  
+  $('.header-social .icomoon-facebook, .gd-promo-sharebox .icomoon-facebook, .mobile-share .icomoon-facebook').each(function() {
+    var url;
+    if($(this).parent().is('.gd-promo-sharebox')){
+      url = $(this).parent().parent().prev('.gd-button').attr('href');
+    } else {
+      url = socialShareUrl
+    }
+    $(this).attr({
+      'href': 'https://www.facebook.com/sharer/sharer.php?u=' + url,
+      'target': '_blank'
+    });
   });
 
   // Twitter Share
@@ -499,11 +500,11 @@ $(document).ready(function() {
         } else {
           url = socialShareUrl;
         }
-          // $(this).attr('href', 'https://twitter.com/intent/tweet?url='+ encodeURIComponent(url));
+        // $(this).attr('href', 'https://twitter.com/intent/tweet?url='+ encodeURIComponent(url));
         $(this).attr({
-            'href': 'https://twitter.com/share',
-            'target': '_blank',
-            'data-url': encodeURIComponent(url)
+          'href': 'https://twitter.com/share',
+          'target': '_blank',
+          'data-url': encodeURIComponent(url)
         });
       });
     }
@@ -515,10 +516,10 @@ $(document).ready(function() {
     callback: function(){
       WB2.anyWhere(function(W){
         $('.header-social .icomoon-sina-weibo, .gd-promo-sharebox .icomoon-sina-weibo, .mobile-share .icomoon-sina-weibo').each(function(index){
-            $(this).attr({
-                'id': 'wb_publish_' + index,
-                'href': 'javascript:;'
-            })
+          $(this).attr({
+            'id': 'wb_publish_'+index,
+            'href': 'javascript:;'
+          })
           var url, description, default_imagesArr = [];
           if($(this).parent().is('.gd-promo-sharebox')){
             url = $(this).parent().parent().prev('.gd-button').attr('href');
@@ -756,19 +757,18 @@ $(document).ready(function() {
         )
         .eventCallback('onComplete', function(){      
           isScrolling = false;
-
           currentSlide = slideIndex;
           $panelNav.find('li.active').removeClass('active');
           $('li:eq('+currentSlide+')', $panelNav).addClass('active');
           var currentPanel = $('.panel-area').eq(slideIndex);
-
-          setTimeout(function () {
-              $('[data-bg]', currentPanel).each(function () {
-                  if (!$(this).attr('style') || $(this).attr('style').indexOf('url(') === -1) {
-                      console.log($(this).data('[data-bg]'));
-                      $(this).css('background-image', 'url(' + $(this).data('bg') + ')');
-                  }
-              });
+          
+          setTimeout(function() {
+            $('[data-bg]', currentPanel).each(function() {
+              if (!$(this).attr('style') || $(this).attr('style').indexOf('url(') === -1) {
+                console.log($(this).data('[data-bg]'));
+                $(this).css('background-image', 'url(' +$(this).data('bg') + ')');
+              }
+            });
           }, 1000);
 
           $(window).trigger('scroll');
