@@ -81,8 +81,16 @@
                         }
                         if (bannerItem == null)
                         {
-                            <a href="@LandmarkHelper.GetLinkUrl(Sitecore.Context.Item, "Banner Link")" class="menbox-img" target="@LandmarkHelper.GetLinkTarget(Sitecore.Context.Item, "Banner Link")">
-                                <div class="menbox-img-mask"></div>
+                            string hoverclass = string.Empty;
+                            if (string.IsNullOrEmpty(LandmarkHelper.GetLinkUrl(Sitecore.Context.Item, "Banner Link")))
+                                {
+                                    hoverclass= "hover-no";
+                                }
+                            <a href="@LandmarkHelper.GetLinkUrl(Sitecore.Context.Item, "Banner Link")" class="menbox-img @hoverclass" target="@LandmarkHelper.GetLinkTarget(Sitecore.Context.Item, "Banner Link")">
+                                @if (!string.IsNullOrEmpty(LandmarkHelper.GetLinkUrl(Sitecore.Context.Item, "Banner Link")))
+                                {
+                                    <div class="menbox-img-mask"></div>
+                                }
                                 @{
                             string src = Html.Sitecore().ImageFieldSrc("Banner Title Image", Sitecore.Context.Item);
                                 }
@@ -98,8 +106,17 @@
                         }
                         else
                         {
-                            <a href="@LandmarkHelper.GetItemUrl(bannerItem)" class="menbox-img">
-                                <div class="menbox-img-mask"></div>
+                            bool isempty = false;
+                            string hoverclass2 = string.Empty;
+                            if (string.IsNullOrEmpty(LandmarkHelper.GetItemUrl(bannerItem)))
+                                {
+                                    hoverclass2 = "hover-no";
+                                }
+                            <a href="@LandmarkHelper.GetItemUrl(bannerItem)" class="menbox-img @hoverclass2">
+                                @if (!string.IsNullOrEmpty(LandmarkHelper.GetItemUrl(bannerItem)))
+                                {
+                                    <div class="menbox-img-mask"></div>
+                                }
                                 <img data-src="@LandmarkHelper.GetCallOutImage(bannerItem)" alt="landmark">
                                 <div class="menbox-text">
                                     <p>@Html.Sitecore().Field("Article Headline", bannerItem)</p>

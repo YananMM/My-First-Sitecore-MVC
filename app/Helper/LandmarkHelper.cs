@@ -363,7 +363,7 @@ namespace Landmark.Helper
                     currentItem.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.RelatedItemFolder);
                 if (relatedItemFolder != null)
                 {
-                    relatedItems = relatedItemFolder.Children.ToList();
+                    relatedItems = relatedItemFolder.Children.Where(i=>LandmarkHelper.IsShownInNavigation(i)).ToList();
                 }
             }
             var relatedPagesField = currentItem.Fields["Related Page"];
@@ -372,7 +372,7 @@ namespace Landmark.Helper
                 var relatedPagesIds = !string.IsNullOrEmpty(relatedPagesField.ToString()) ? relatedPagesField.ToString().Split('|').ToList() : new List<string>();
                 if (relatedPagesIds.Count != 0)
                 {
-                    items.AddRange(relatedPagesIds.Select(pageId => Sitecore.Context.Database.GetItem(pageId)));
+                    items.AddRange(relatedPagesIds.Select(pageId => Sitecore.Context.Database.GetItem(pageId)).Where(i=>LandmarkHelper.IsShownInNavigation(i)));
                 }
             }
             items.AddRange(relatedItems);
