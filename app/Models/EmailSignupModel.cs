@@ -310,7 +310,7 @@ namespace Landmark.Models
             FirstName = model.FirstName;
             LastName = model.LastName;
             Email = model.Email;
-            Gender = model.Title == "Mr" ? "Male" : "Female";   // client asked for this
+            Gender = model.Title == "Mr." ? "Male" : "Female";   // client asked for this
             IpAddress = model.IpAddress;
             if (model.OptIn != null)
             {
