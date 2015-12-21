@@ -104,5 +104,47 @@ namespace Resources {
                 return ResourceManager.GetString("ContactUsForm", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to AF Afghanistan
+        ///AX Aland Islands
+        ///AL Albania
+        ///DZ Algeria
+        ///AS American Samoa
+        ///AD Andorra
+        ///AO Angola
+        ///AI Anguilla/St Kitts
+        ///AQ Antarctica
+        ///AG Antigua and Barbuda
+        ///AR Argentina
+        ///AM Armenia
+        ///AW Aruba
+        ///AU Australia
+        ///AT Austria
+        ///AZ Azerbaijan
+        ///BS Bahamas
+        ///BH Bahrain
+        ///BD Bangladesh
+        ///BB Barbados
+        ///BY Belarus
+        ///BE Belgium
+        ///BZ Belize
+        ///BJ Benin
+        ///BM Bermuda
+        ///BT Bhutan
+        ///BO Bolivia
+        ///BQ Bonaire,Saba,St Eustatius
+        ///BA Bosnia And Herzegovina
+        ///BW Botswna
+        ///BV Bouvet Island
+        ///BR Brazil
+        ///IO British Indian Ocean Territory
+        ///BN Brunei [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string CountryList {
+            get {
+                return ResourceManager.GetString("CountryList", resourceCulture);
+            }
+        }
     }
 }
