@@ -28,32 +28,49 @@ namespace Landmark.Service
                 {
                     Database master = Sitecore.Configuration.Factory.GetDatabase("master");
                     Item countryFolder = master.GetItem("/sitecore/content/Home/Landmark/Email Signup/Countries");
-                    //Item countryFolder = Sitecore.Context.Database.GetItem("{C759C4E7-A105-4B63-8266-00B67445987A}");
                     var TextObjectTempalte = (TemplateItem)Sitecore.Context.Database.GetItem(ItemGuids.TextObject);
                     var countryList = Resources.Landmark.CountryList.Split('\r').ToArray();
                     foreach (var line in countryList)
                     {
                         var textValue = line.Trim().Split('-').ToArray();
                         string countryValue = textValue[0].Trim();
-                        string countryText = textValue[1].Trim();
+                        string enText = textValue[1].Trim();
+                        string tcText = textValue[2].Trim();
+                        string scText = textValue[3].Trim();
+
                         string countryName = textValue[2].Trim();
                         try
                         {
-                            Item countryItem = countryFolder.Add(countryName, TextObjectTempalte);
-
-                            if (countryItem != null)
+                            var countryItem = countryFolder.Children.SingleOrDefault(p => p.Fields["Value"].ToString() == countryValue);
+                            if (countryItem == null)
+                            {
+                                countryItem = countryFolder.Add(countryValue, TextObjectTempalte);
+                                context.Response.WriteLine("Add a new item");
+                            }
+                            else
                             {
                                 countryItem.Editing.BeginEdit();
                                 countryItem.Fields["Value"].Value = countryValue;
-                                countryItem.Fields["Text"].Value = countryText;
+                                foreach (var language in countryItem.Languages)
+                                {
+                                    if (language.Name == "en")
+                                    {
+                                        countryItem.Fields["Text"].Value = enText;
+                                        context.Response.WriteLine(enText);
+                                    }
+                                    else if (language.Name == "zh-CN")
+                                    {
+                                        countryItem.Fields["Text"].Value = scText;
+                                    }
+                                    else if (language.Name == "zh-HK")
+                                    {
+                                        countryItem.Fields["Text"].Value = tcText;
+                                    }
+                                }
                                 countryItem.Editing.EndEdit();
-                                context.Response.WriteLine("Add Success");
+                                context.Response.WriteLine("Edit item");
                             }
-                            if (countryItem == null)
-                            {
-                                context.Response.WriteLine("Error");
-                            }
-                            
+
                         }
                         catch (Exception e)
                         {
