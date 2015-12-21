@@ -259,46 +259,55 @@ namespace Landmark.Models
         [CsvColumn(Name = "COUNTRY", FieldIndex = 17)]
         public string Country { get; set; }
 
-        [CsvColumn(Name = "INTEREST_SHOPPING", FieldIndex = 18)]
-        public string InterestShopping { get; set; }
+        [CsvColumn(Name = "INTEREST_WINE_DINE", FieldIndex = 18)]
+        public string InterestWineDine { get; set; }
 
-        [CsvColumn(Name = "INTEREST_FASHION", FieldIndex = 19)]
-        public string InterestFashion { get; set; }
-
-        [CsvColumn(Name = "INTEREST_HOME_KIDS", FieldIndex = 20)]
-        public string InterestHomeKids { get; set; }
-
-        [CsvColumn(Name = "INTEREST_BOOKS", FieldIndex = 21)]
-        public string InterestBooks { get; set; }
-
-        [CsvColumn(Name = "INTEREST_GADGETS", FieldIndex = 22)]
-        public string InterestGadgets { get; set; }
-
-        [CsvColumn(Name = "INTEREST_AUTOMOBILES", FieldIndex = 23)]
-        public string InterestAutomobiles { get; set; }
-
-        [CsvColumn(Name = "INTEREST_ARTS", FieldIndex = 24)]
+        [CsvColumn(Name = "INTEREST_ARTS", FieldIndex = 19)]
         public string InterestArts { get; set; }
 
-        [CsvColumn(Name = "INTEREST_MUSIC", FieldIndex = 25)]
+        [CsvColumn(Name = "INTEREST_MUSIC", FieldIndex = 20)]
         public string InterestMusic { get; set; }
 
-        [CsvColumn(Name = "INTEREST_MOVIES", FieldIndex = 26)]
+        [CsvColumn(Name = "INTEREST_MOVIES", FieldIndex = 21)]
         public string InterestMovies { get; set; }
 
-        [CsvColumn(Name = "INTEREST_PHOTOGRAPHY", FieldIndex = 27)]
+        [CsvColumn(Name = "INTEREST_PHOTOGRAPHY", FieldIndex = 22)]
         public string InterestPhotography { get; set; }
 
-        [CsvColumn(Name = "INTEREST_SPORTS", FieldIndex = 28)]
-        public string InterestSports { get; set; }
-
-        [CsvColumn(Name = "INTEREST_TRAVELLING", FieldIndex = 29)]
-        public string InterestTravelling { get; set; }
-
-        [CsvColumn(Name = "INTEREST_SOCIAL_RESPONSIBILITY", FieldIndex = 30)]
+        [CsvColumn(Name = "INTEREST_SOCIAL_RESPONSIBILITY", FieldIndex = 23)]
         public string InterestSocialResponsibility { get; set; }
 
-        [CsvColumn(Name = "INTEREST_OTHERS", FieldIndex = 31)]
+        [CsvColumn(Name = "INTEREST_TRAVELLING", FieldIndex = 24)]
+        public string InterestTravelling { get; set; }
+
+        [CsvColumn(Name = "INTEREST_AUTOMOBILES", FieldIndex = 25)]
+        public string InterestAutomobiles { get; set; }
+
+        [CsvColumn(Name = "INTEREST_GADGETS", FieldIndex = 26)]
+        public string InterestGadgets { get; set; }
+
+        [CsvColumn(Name = "INTEREST_SPORTS", FieldIndex = 27)]
+        public string InterestSports { get; set; }
+
+        [CsvColumn(Name = "INTEREST_PARENTING", FieldIndex = 28)]
+        public string InterestParenting { get; set; }
+
+        [CsvColumn(Name = "INTEREST_BOOKS", FieldIndex = 29)]
+        public string InterestBooks { get; set; }
+
+        [CsvColumn(Name = "INTEREST_CHARITY", FieldIndex = 30)]
+        public string InterestCharity { get; set; }
+
+        [CsvColumn(Name = "INTEREST_FASHION", FieldIndex = 31)]
+        public string InterestFashion { get; set; }
+
+        [CsvColumn(Name = "INTEREST_SHOPPING", FieldIndex = 32)]
+        public string InterestShopping { get; set; }
+
+        [CsvColumn(Name = "INTEREST_COLLECTIBLES", FieldIndex = 33)]
+        public string InterestCollectibles { get; set; }
+
+        [CsvColumn(Name = "INTEREST_OTHERS", FieldIndex = 34)]
         public string InterestOthers { get; set; }
 
         public DateTime CreatedOn { get; set; }
@@ -337,15 +346,15 @@ namespace Landmark.Models
             var interests = model.Interest.Split(',');
             // you may want to make this not hard-coded
             var predefined = new[] { 
-                "Shoppping", "Fashion", "Home Kids",
+                "Shoppping", "Fashion", "Parenting",
                 "Books", "Gadgets", "Automobiles", 
                 "Arts", "Music", "Movies",
                 "Photography", "Sports Fitness", "Travelling",
-                "Social Responsibilty"
+                "social responsibility","Wine","Charity","Collectibles"
             };
             InterestShopping    = interests.Contains(predefined[0]) ? "Yes" : "No";
             InterestFashion     = interests.Contains(predefined[1]) ? "Yes" : "No";
-            InterestHomeKids    = interests.Contains(predefined[2]) ? "Yes" : "No";
+            InterestParenting = interests.Contains(predefined[2]) ? "Yes" : "No";
             InterestBooks       = interests.Contains(predefined[3]) ? "Yes" : "No";
             InterestGadgets     = interests.Contains(predefined[4]) ? "Yes" : "No";
             InterestAutomobiles = interests.Contains(predefined[5]) ? "Yes" : "No";
@@ -356,6 +365,9 @@ namespace Landmark.Models
             InterestSports      = interests.Contains(predefined[10]) ? "Yes" : "No";
             InterestTravelling  = interests.Contains(predefined[11]) ? "Yes" : "No";
             InterestSocialResponsibility = interests.Contains(predefined[12]) ? "Yes" : "No";
+            InterestWineDine = interests.Contains(predefined[13]) ? "Yes" : "No";
+            InterestCharity = interests.Contains(predefined[14]) ? "Yes" : "No";
+            InterestCollectibles = interests.Contains(predefined[15]) ? "Yes" : "No";
             //var others = interests.Except(predefined);
             InterestOthers = model.Other_Interest;
         }
