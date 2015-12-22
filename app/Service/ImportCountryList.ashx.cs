@@ -28,6 +28,11 @@ namespace Landmark.Service
                 {
                     Database master = Sitecore.Configuration.Factory.GetDatabase("master");
                     Item countryFolder = master.GetItem("/sitecore/content/Home/Landmark/Email Signup/Countries");
+                    if (countryFolder.Children.Count != 0)
+                    {
+                        countryFolder.DeleteChildren();
+                    }
+
                     var TextObjectTempalte = (TemplateItem)Sitecore.Context.Database.GetItem(ItemGuids.TextObject);
                     var countryList = Resources.Landmark.CountryList.Split('\r').ToArray();
                     foreach (var line in countryList)
@@ -38,14 +43,43 @@ namespace Landmark.Service
                         string tcText = textValue[2].Trim();
                         string scText = textValue[3].Trim();
 
-                        string countryName = textValue[2].Trim();
+                        string itemName = Regex.Replace(enText, "[^0-9A-Za-z]", "");
+
                         try
                         {
-                            var countryItem = countryFolder.Children.SingleOrDefault(p => p.Fields["Value"].ToString() == countryValue);
+                            var countryItem = countryFolder.Children.SingleOrDefault(p => p.DisplayName == itemName);
                             if (countryItem == null)
                             {
-                                countryItem = countryFolder.Add(countryValue, TextObjectTempalte);
-                                context.Response.WriteLine("Add a new item");
+                                countryItem = countryFolder.Add(itemName, TextObjectTempalte);
+                                countryItem.Editing.BeginEdit();
+                                countryItem.Fields["Value"].Value = countryValue;
+                                foreach (var language in countryItem.Languages)
+                                {
+                                    Item langItem = countryItem.Database.GetItem(countryItem.ID, language);
+                                    if (langItem.Language.Name == "en")
+                                    {
+                                        langItem = langItem.Versions.AddVersion();
+                                        langItem.Editing.BeginEdit();
+                                        langItem.Fields["Text"].Value = enText;
+                                        langItem.Editing.EndEdit();
+                                    }
+                                    else if (langItem.Language.Name == "zh-CN")
+                                    {
+                                        langItem = langItem.Versions.AddVersion();
+                                        langItem.Editing.BeginEdit();
+                                        langItem.Fields["Text"].Value = scText;
+                                        langItem.Editing.EndEdit();
+                                    }
+                                    else if (langItem.Language.Name == "zh-HK")
+                                    {
+                                        langItem = langItem.Versions.AddVersion();
+                                        langItem.Editing.BeginEdit();
+                                        langItem.Fields["Text"].Value = tcText;
+                                        langItem.Editing.EndEdit();
+                                    }
+                                }
+                                countryItem.Editing.EndEdit();
+                                context.Response.WriteLine("Add " + enText);
                             }
                             else
                             {
@@ -53,24 +87,32 @@ namespace Landmark.Service
                                 countryItem.Fields["Value"].Value = countryValue;
                                 foreach (var language in countryItem.Languages)
                                 {
-                                    if (language.Name == "en")
+                                    Item langItem = countryItem.Database.GetItem(countryItem.ID, language);
+                                    if (langItem.Language.Name == "en")
                                     {
-                                        countryItem.Fields["Text"].Value = enText;
-                                        context.Response.WriteLine(enText);
+                                        langItem = langItem.Versions.AddVersion();
+                                        langItem.Editing.BeginEdit();
+                                        langItem.Fields["Text"].Value = enText;
+                                        langItem.Editing.EndEdit();
                                     }
-                                    else if (language.Name == "zh-CN")
+                                    else if (langItem.Language.Name == "zh-CN")
                                     {
-                                        countryItem.Fields["Text"].Value = scText;
+                                        langItem = langItem.Versions.AddVersion();
+                                        langItem.Editing.BeginEdit();
+                                        langItem.Fields["Text"].Value = scText;
+                                        langItem.Editing.EndEdit();
                                     }
-                                    else if (language.Name == "zh-HK")
+                                    else if (langItem.Language.Name == "zh-HK")
                                     {
-                                        countryItem.Fields["Text"].Value = tcText;
+                                        langItem = langItem.Versions.AddVersion();
+                                        langItem.Editing.BeginEdit();
+                                        langItem.Fields["Text"].Value = tcText;
+                                        langItem.Editing.EndEdit();
                                     }
                                 }
                                 countryItem.Editing.EndEdit();
-                                context.Response.WriteLine("Edit item");
+                                context.Response.WriteLine("Edit " + enText);
                             }
-
                         }
                         catch (Exception e)
                         {

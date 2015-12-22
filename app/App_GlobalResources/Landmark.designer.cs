@@ -106,40 +106,29 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AF Afghanistan
-        ///AX Aland Islands
-        ///AL Albania
-        ///DZ Algeria
-        ///AS American Samoa
-        ///AD Andorra
-        ///AO Angola
-        ///AI Anguilla/St Kitts
-        ///AQ Antarctica
-        ///AG Antigua and Barbuda
-        ///AR Argentina
-        ///AM Armenia
-        ///AW Aruba
-        ///AU Australia
-        ///AT Austria
-        ///AZ Azerbaijan
-        ///BS Bahamas
-        ///BH Bahrain
-        ///BD Bangladesh
-        ///BB Barbados
-        ///BY Belarus
-        ///BE Belgium
-        ///BZ Belize
-        ///BJ Benin
-        ///BM Bermuda
-        ///BT Bhutan
-        ///BO Bolivia
-        ///BQ Bonaire,Saba,St Eustatius
-        ///BA Bosnia And Herzegovina
-        ///BW Botswna
-        ///BV Bouvet Island
-        ///BR Brazil
-        ///IO British Indian Ocean Territory
-        ///BN Brunei [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to AF-Afghanistan-阿富汗-阿富汗
+        ///AL-Albania-阿爾巴尼亞-阿尔巴尼亚
+        ///DZ-Algeria-阿爾及利亞-阿尔及利亚
+        ///AS-American Samoa-薩摩亞（美）-萨摩亚（美）
+        ///AD-Andorra-安道爾-安道尔
+        ///AO-Angola-安哥拉-安哥拉
+        ///AI-Anguilla-安圭拉-安圭拉
+        ///AQ-Antarctica-南極洲-南极洲
+        ///AG-Antigua and Barbuda-安提瓜和巴布達-安提瓜和巴布达
+        ///AR-Argentina-阿根廷-阿根廷
+        ///AM-Armenia-亞美尼亞-亚美尼亚
+        ///AW-Aruba-阿魯巴-阿鲁巴
+        ///AU-Australia-澳大利亞-澳大利亚
+        ///AT-Austria-奧地利-奥地利
+        ///AZ-Azerbaijan-阿塞拜疆-阿塞拜疆
+        ///BS-Bahamas-巴哈馬-巴哈马
+        ///BH-Bahrain-巴林-巴林
+        ///BD-Bangladesh-孟加拉-孟加拉
+        ///BB-Barbados-巴巴多斯-巴巴多斯
+        ///BY-Belarus-白俄羅斯-白俄罗斯
+        ///BE-Belgium-比利時-比利时
+        ///BZ-Belize-伯利茲-伯利兹
+        ///BJ-Benin [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string CountryList {
             get {
