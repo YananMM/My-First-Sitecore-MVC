@@ -28,10 +28,11 @@ namespace Landmark.Service
                 {
                     Database master = Sitecore.Configuration.Factory.GetDatabase("master");
                     Item countryFolder = master.GetItem("/sitecore/content/Home/Landmark/Email Signup/Countries");
-                    if (countryFolder.Children.Count != 0)
-                    {
-                        countryFolder.DeleteChildren();
-                    }
+
+                    //if (countryFolder.Children.Count != 0)
+                    //{
+                    //    countryFolder.DeleteChildren();
+                    //}
 
                     var TextObjectTempalte = (TemplateItem)Sitecore.Context.Database.GetItem(ItemGuids.TextObject);
                     var countryList = Resources.Landmark.CountryList.Split('\r').ToArray();
@@ -43,7 +44,8 @@ namespace Landmark.Service
                         string tcText = textValue[2].Trim();
                         string scText = textValue[3].Trim();
 
-                        string itemName = Regex.Replace(enText, "[^0-9A-Za-z]", "");
+                        //string itemName = Regex.Replace(enText, "[^0-9A-Za-z]", "");
+                        string itemName = textValue[4].Trim();
 
                         try
                         {
@@ -111,14 +113,13 @@ namespace Landmark.Service
                                     }
                                 }
                                 countryItem.Editing.EndEdit();
-                                context.Response.WriteLine("Edit " + enText);
+                                context.Response.WriteLine("Edit " + itemName);
                             }
                         }
                         catch (Exception e)
                         {
                             context.Response.Write(e.Message);
                         }
-
                     }
                 }
             }
