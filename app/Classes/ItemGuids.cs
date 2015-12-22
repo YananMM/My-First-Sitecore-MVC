@@ -197,7 +197,7 @@ namespace Landmark.Classes
         public static readonly string OfItem = "{C029DF24-A35D-443A-BA17-00FA1C6FAD9C}";
         public static readonly string InstagramFolder = "{78706CBA-8902-4A9A-A4C2-B7D8E20E768F}";
         public static readonly string MapItem = "{CA0C0FBA-8308-4AD6-86CF-5FB5A2DE9BBB}";
-
+        public static readonly string CountryFolder = "{A892C88C-D4DF-48C7-80BC-52FBA809463D}";
         //interest options
         public static readonly string WineDineInterestItem = "{24F1721F-E383-49F3-BA01-D888D050A8F0}";
         public static readonly string ArtInterestItem = "{1D2E997F-AFEE-4458-868C-3E3089BDC23C}";
@@ -215,6 +215,5 @@ namespace Landmark.Classes
         public static readonly string FashionInterestItem = "{94561D83-A6DB-4E5D-8539-4103D4D5ECDC}";
         public static readonly string ShoppingInterestItem = "{7B3F8A78-EE91-4200-A93B-443EE4DFD954}";
         public static readonly string CollectiblesInterestItem = "{8EF754A0-2911-4268-97C3-46FEE8DE39A9}";
-
     }
 }

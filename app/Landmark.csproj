@@ -220,6 +220,9 @@
     <Compile Include="Service\GetCategoryJson.ashx.cs">
       <DependentUpon>GetCategoryJson.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Service\ImportCountryList.ashx.cs">
+      <DependentUpon>ImportCountryList.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Service\Landmark.asmx.cs">
       <DependentUpon>Landmark.asmx</DependentUpon>
       <SubType>Component</SubType>
@@ -610,6 +613,7 @@
     <Content Include="files\landmark\js\lib\validate.min.js" />
     <Content Include="files\landmark\js\main.js" />
     <Content Include="files\landmark\js\npm.js" />
+    <Content Include="files\landmark\templates\countryList.txt" />
     <Content Include="mstile-144x144.png" />
     <Content Include="mstile-150x150.png" />
     <Content Include="mstile-310x150.png" />
@@ -813,6 +817,7 @@
     <Content Include="Service\CheckCaptcha.ashx" />
     <Content Include="Views\Renderings\Landmark\T11\T11PulledContentRendering.cshtml" />
     <Content Include="Views\Layouts\Landmark\MapLayout.cshtml" />
+    <Content Include="Service\ImportCountryList.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -926,6 +931,7 @@
   <ItemGroup>
     <Content Include="App_GlobalResources\Landmark.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Landmark.designer.cs</LastGenOutput>
     </Content>
   </ItemGroup>
