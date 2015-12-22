@@ -197,5 +197,24 @@ namespace Landmark.Classes
         public static readonly string OfItem = "{C029DF24-A35D-443A-BA17-00FA1C6FAD9C}";
         public static readonly string InstagramFolder = "{78706CBA-8902-4A9A-A4C2-B7D8E20E768F}";
         public static readonly string MapItem = "{CA0C0FBA-8308-4AD6-86CF-5FB5A2DE9BBB}";
+
+        //interest options
+        public static readonly string WineDineInterestItem = "{24F1721F-E383-49F3-BA01-D888D050A8F0}";
+        public static readonly string ArtInterestItem = "{1D2E997F-AFEE-4458-868C-3E3089BDC23C}";
+        public static readonly string MusicInterestItem = "{947CC8AA-A2CE-452B-961C-D1988C913EB1}";
+        public static readonly string MoviesInterestItem = "{24F1721F-E383-49F3-BA01-D888D050A8F0}";
+        public static readonly string PhotographyInterestItem = "{32AD5A4C-AC82-4B18-B151-14D889C964D0}";
+        public static readonly string SocialInterestItem = "{3CB50296-60BE-4E2F-A814-6311CD2CB551}";
+        public static readonly string TravellingInterestItem = "{33FC1178-1A06-4B67-8E92-64A12FB90639}";
+        public static readonly string AutomobilesInterestItem = "{812F5798-3012-4910-9FD6-FAC3B6E572B1}";
+        public static readonly string GadgetsInterestItem = "{FE054726-C77E-4CFA-981B-7600973A1F79}";
+        public static readonly string SportsInterestItem = "{903C252D-4CE0-46C6-8F49-D3E19623D415}";
+        public static readonly string ParentingInterestItem = "{C05DD65B-4729-45AA-BEBD-D4A0525105A4}";
+        public static readonly string BooksInterestItem = "{103E119F-9A30-4BDA-9D75-A7E4E7FD2023}";
+        public static readonly string CharityInterestItem = "{35B12438-9837-4C33-9D55-B03AF676FD57}";
+        public static readonly string FashionInterestItem = "{94561D83-A6DB-4E5D-8539-4103D4D5ECDC}";
+        public static readonly string ShoppingInterestItem = "{7B3F8A78-EE91-4200-A93B-443EE4DFD954}";
+        public static readonly string CollectiblesInterestItem = "{8EF754A0-2911-4268-97C3-46FEE8DE39A9}";
+
     }
 }

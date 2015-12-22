@@ -15,7 +15,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Landmark.Classes;
 using LINQtoCSV;
+using Sitecore.Configuration;
+using Sitecore.Data;
 
 namespace Landmark.Models
 {
@@ -315,6 +318,7 @@ namespace Landmark.Models
         public EmailSignUpCsvModel() { }
         public EmailSignUpCsvModel(EmailSignup model)
         {
+            Database webDatabase = Factory.GetDatabase("web");
             Title = model.Title;
             FirstName = model.FirstName;
             LastName = model.LastName;
@@ -346,11 +350,22 @@ namespace Landmark.Models
             var interests = model.Interest.Split(',');
             // you may want to make this not hard-coded
             var predefined = new[] { 
-                "Shoppping", "Fashion", "Parenting",
-                "Books", "Gadgets", "Automobiles", 
-                "Arts", "Music", "Movies",
-                "Photography", "Sports Fitness", "Travelling",
-                "social responsibility","Wine","Charity","Collectibles"
+                webDatabase.GetItem(ItemGuids.ShoppingInterestItem).Fields["Value"].Value,
+                webDatabase.GetItem(ItemGuids.FashionInterestItem).Fields["Value"].Value,
+                webDatabase.GetItem(ItemGuids.ParentingInterestItem).Fields["Value"].Value,
+                webDatabase.GetItem(ItemGuids.BooksInterestItem).Fields["Value"].Value, 
+                webDatabase.GetItem(ItemGuids.GadgetsInterestItem).Fields["Value"].Value, 
+                webDatabase.GetItem(ItemGuids.AutomobilesInterestItem).Fields["Value"].Value, 
+                webDatabase.GetItem(ItemGuids.ArtInterestItem).Fields["Value"].Value, 
+                webDatabase.GetItem(ItemGuids.MusicInterestItem).Fields["Value"].Value, 
+                webDatabase.GetItem(ItemGuids.MoviesInterestItem).Fields["Value"].Value,
+                webDatabase.GetItem(ItemGuids.PhotographyInterestItem).Fields["Value"].Value, 
+                webDatabase.GetItem(ItemGuids.SportsInterestItem).Fields["Value"].Value, 
+                webDatabase.GetItem(ItemGuids.TravellingInterestItem).Fields["Value"].Value,
+                webDatabase.GetItem(ItemGuids.SocialInterestItem).Fields["Value"].Value,
+                webDatabase.GetItem(ItemGuids.WineDineInterestItem).Fields["Value"].Value,
+                webDatabase.GetItem(ItemGuids.CharityInterestItem).Fields["Value"].Value,
+                webDatabase.GetItem(ItemGuids.CollectiblesInterestItem).Fields["Value"].Value
             };
             InterestShopping    = interests.Contains(predefined[0]) ? "Yes" : "No";
             InterestFashion     = interests.Contains(predefined[1]) ? "Yes" : "No";
