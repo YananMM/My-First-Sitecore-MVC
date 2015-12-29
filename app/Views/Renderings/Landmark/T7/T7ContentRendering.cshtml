@@ -17,7 +17,7 @@
                 string pdf = LandmarkHelper.FileFieldSrc("Floor Guide", activeItem);
                 string name = LandmarkHelper.GetFileName("Floor Guide", activeItem);
             }
-            <a href='@pdf' class="gd-link-audio" target="_blank" onclick="scDownload(@name)">
+            <a href='@pdf' class="gd-link-audio" target="_blank" onclick="scDownload('@name')">
                 <span class="icomoon-download"></span> @Sitecore.Context.Item["Download Label"].ToUpper()
             </a>
         </div>

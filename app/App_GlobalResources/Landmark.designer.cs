@@ -106,22 +106,9 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AF-Afghanistan-阿富汗-阿富汗-Afghanistan
-        ///AL-Albania-阿爾巴尼亞-阿尔巴尼亚-Albania
+        ///   Looks up a localized string similar to AL-Albania-阿爾巴尼亞-阿尔巴尼亚-Albania
         ///DZ-Algeria-阿爾及利亞-阿尔及利亚-Algeria
-        ///AS-American Samoa-薩摩亞（美）-萨摩亚（美）-American Samoa
-        ///AD-Andorra-安道爾-安道尔-Andorra
-        ///AO-Angola-安哥拉-安哥拉-Angola
-        ///AI-Anguilla-安圭拉-安圭拉-Anguilla
-        ///AQ-Antarctica-南極洲-南极洲-Antarctica
-        ///AG-Antigua and Barbuda-安提瓜和巴布達-安提瓜和巴布达-Antigua and Barbuda
-        ///AR-Argentina-阿根廷-阿根廷-Argentina
-        ///AM-Armenia-亞美尼亞-亚美尼亚-Armenia
-        ///AW-Aruba-阿魯巴-阿鲁巴-Aruba
-        ///AU-Australia-澳大利亞-澳大利亚-Australia
-        ///AT-Austria-奧地利-奥地利-Austria
-        ///AZ-Azerbaijan-阿塞拜疆-阿塞拜疆-Azerbaijan
-        ///BS [rest of string was truncated]&quot;;.
+        ///AS-American Samoa-薩摩亞（美）-萨摩亚（美）-American Samoa.
         /// </summary>
         internal static string CountryList {
             get {

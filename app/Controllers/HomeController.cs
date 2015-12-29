@@ -24,6 +24,7 @@ using Landmark.Models;
 using Landmark.Helper;
 using System.Text.RegularExpressions;
 using Sitecore.Configuration;
+using Sitecore.Data;
 
 // <summary>
 // The Controllers namespace.
