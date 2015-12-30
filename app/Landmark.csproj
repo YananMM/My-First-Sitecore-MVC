@@ -145,6 +145,7 @@
       <DependentUpon>Landmark.resx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Classes\ComputedFields\PageTitleComputedField.cs" />
     <Compile Include="Classes\ComputedFields\FilterOrderComputedField.cs" />
     <Compile Include="Classes\ComputedFields\FilterTypeComputedField.cs" />
     <Compile Include="Classes\ComputedFields\TagComputedField.cs" />
@@ -222,9 +223,6 @@
     </Compile>
     <Compile Include="Service\ImportCountryList.ashx.cs">
       <DependentUpon>ImportCountryList.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Service\ImportTest.ashx.cs">
-      <DependentUpon>ImportTest.ashx</DependentUpon>
     </Compile>
     <Compile Include="Service\Landmark.asmx.cs">
       <DependentUpon>Landmark.asmx</DependentUpon>
@@ -821,7 +819,6 @@
     <Content Include="Views\Renderings\Landmark\T11\T11PulledContentRendering.cshtml" />
     <Content Include="Views\Layouts\Landmark\MapLayout.cshtml" />
     <Content Include="Service\ImportCountryList.ashx" />
-    <Content Include="Service\ImportTest.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

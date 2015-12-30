@@ -35,7 +35,7 @@ namespace Landmark.Helper
                 }
             }
             articles.Reverse();
-            if (articles.Count()>1)
+            if (articles.Count()>0)
                 return articles.Skip((pagenumber-1) * 10).Take(10).ToList();
             else
                 return new List<Item>();
