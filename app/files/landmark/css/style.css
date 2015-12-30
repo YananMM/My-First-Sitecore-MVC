@@ -8926,85 +8926,6 @@ button.close {
   padding-right: 29px;
   word-wrap: break-word;
 }
-.t1 .panel-area .panel-9 .panel-side1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 30%;
-  width: 50%;
-}
-.t1 .panel-area .panel-9 .panel-side1 .panel-img {
-  height: 100%;
-  width: 100%;
-}
-.t1 .panel-area .panel-9 .panel-side1 .panel-main {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.t1 .panel-area .panel-9 .panel-side2 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 30%;
-  width: 50%;
-}
-.t1 .panel-area .panel-9 .panel-side2 .panel-img {
-  height: 100%;
-  width: 100%;
-}
-.t1 .panel-area .panel-9 .panel-side2 .panel-main {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.t1 .panel-area .panel-9 .panel-side3 {
-  position: absolute;
-  height: 70%;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-}
-.t1 .panel-area .panel-9 .panel-side3 .panel-img {
-  height: 50%;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  position: absolute;
-}
-.t1 .panel-area .panel-9 .panel-side3 .panel-main {
-  position: absolute;
-  height: 50%;
-  float: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-  display: table;
-}
-.t1 .panel-area .panel-9 .panel-side3 .panel-main:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -10px;
-  margin-left: -17px;
-  z-index: 200;
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-top: 18px solid #1d1d1d;
-}
-.t1 .panel-area .panel-9 .panel-side3 .panel-img-2 hgroup {
-  position: absolute;
-  left: 40px;
-  bottom: 32px;
-  width: 85%;
-}
-.t1 .panel-area .panel-9 .panel-side3 .panel-img-2 hgroup h2 {
-  font-size: 2em;
-  display: inline;
-  background: url("../images/title-arrow2.png") no-repeat 100% 100%;
-  padding-right: 29px;
-  word-wrap: break-word;
-}
 .t1 .panel-area .instagram-area {
   width: 100%;
   height: 100%;
@@ -9199,16 +9120,14 @@ button.close {
   .t1 .panel-area .panel-5 .panel-main .panel-text .btn,
   .t1 .panel-area .panel-6 .panel-main .panel-text .btn,
   .t1 .panel-area .panel-7 .panel-main .panel-text .btn,
-  .t1 .panel-area .panel-8 .panel-main .panel-text .btn,
-  .t1 .panel-area .panel-9 .panel-main .panel-text .btn {
+  .t1 .panel-area .panel-8 .panel-main .panel-text .btn {
     padding: 7px 18px;
     margin-top: 20px;
   }
   .t1 .panel-area .panel-5 .panel-main .panel-text .btn,
   .t1 .panel-area .panel-6 .panel-main .panel-text .btn,
   .t1 .panel-area .panel-7 .panel-main .panel-text .btn,
-  .t1 .panel-area .panel-8 .panel-main .panel-text .btn,
-  .t1 .panel-area .panel-9 .panel-main .panel-text .btn {
+  .t1 .panel-area .panel-8 .panel-main .panel-text .btn {
     font-size: 0.917em;
   }
   .t1 .panel-area .instagram-area .instagram-inner {
@@ -9741,83 +9660,6 @@ button.close {
     width: 50%;
   }
   .t1 .panel-area .panel-8 .panel-side2 .panel-main {
-    top: auto;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    height: 50%;
-    vertical-align: middle;
-    width: 50.5%;
-    z-index: 0;
-  }
-  .t1 .panel-area .panel-9 .panel-side1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 33%;
-  }
-  .t1 .panel-area .panel-9 .panel-side1 .panel-img {
-    height: 100%;
-    width: 100%;
-  }
-  .t1 .panel-area .panel-9 .panel-side1 .panel-main {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-  }
-  .t1 .panel-area .panel-9 .panel-side2 {
-    position: absolute;
-    top: 0;
-    left: 33%;
-    height: 50%;
-    width: 34%;
-  }
-  .t1 .panel-area .panel-9 .panel-side2 .panel-img {
-    height: 100%;
-    width: 100%;
-  }
-  .t1 .panel-area .panel-9 .panel-side2 .panel-main {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-  }
-  .t1 .panel-area .panel-9 .panel-side3 {
-    position: absolute;
-    height: 100%;
-    width: 67%;
-    bottom: 0;
-    left: 33%;
-  }
-  .t1 .panel-area .panel-9 .panel-side3 .panel-img {
-    top: 0;
-    left: 50%;
-    height: 100%;
-    width: 50%;
-    z-index: 1;
-  }
-  .t1 .panel-area .panel-9 .panel-side3 .panel-img:after {
-    content: none;
-  }
-  .t1 .panel-area .panel-9 .panel-side3 .panel-img .panel-arrow {
-    position: absolute;
-    left: 0;
-    top: 75%;
-    margin-top: -17px;
-    border-top: 18px solid transparent;
-    border-bottom: 18px solid transparent;
-    border-left: 18px solid #1d1d1d;
-    z-index: 10;
-  }
-  .t1 .panel-area .panel-9 .panel-side3 .panel-img-2 {
-    top: 0;
-    left: 0;
-    height: 50%;
-    width: 50%;
-  }
-  .t1 .panel-area .panel-9 .panel-side3 .panel-main {
     top: auto;
     bottom: 0;
     left: 0;
@@ -16904,4 +16746,3 @@ input[type="checkbox"] {
   font-size: 12px;
   font-style: normal;
 }
-/*# sourceMappingURL=style.css.map */
