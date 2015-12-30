@@ -202,7 +202,7 @@ namespace Landmark.Classes
         public static readonly string WineDineInterestItem = "{24F1721F-E383-49F3-BA01-D888D050A8F0}";
         public static readonly string ArtInterestItem = "{1D2E997F-AFEE-4458-868C-3E3089BDC23C}";
         public static readonly string MusicInterestItem = "{947CC8AA-A2CE-452B-961C-D1988C913EB1}";
-        public static readonly string MoviesInterestItem = "{24F1721F-E383-49F3-BA01-D888D050A8F0}";
+        public static readonly string MoviesInterestItem = "{482AEE09-8CFB-4ED1-A99A-106E700658C7}";
         public static readonly string PhotographyInterestItem = "{32AD5A4C-AC82-4B18-B151-14D889C964D0}";
         public static readonly string SocialInterestItem = "{3CB50296-60BE-4E2F-A814-6311CD2CB551}";
         public static readonly string TravellingInterestItem = "{33FC1178-1A06-4B67-8E92-64A12FB90639}";

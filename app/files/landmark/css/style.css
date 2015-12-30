@@ -10894,10 +10894,11 @@ button.close {
     -moz-columns: 2;
     -o-columns: 2;
     columns: 2;
-    -webkit-column-gap: 20px;
-    -moz-column-gap: 20px;
-    -o-column-gap: 20px;
-    column-gap: 20px;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    -o-column-gap: 40px;
+    column-gap: 40px;
+    text-align: justify;
   }
 }
 @media (min-width: 768px) {
@@ -13263,6 +13264,11 @@ dl.gd-content-details-tags dd a:active {
 .gd-dropdown .dropdown-menu > li > a:active {
   color: #d4a962;
 }
+.gd-dropdown .dropdown-menu-scroll {
+  max-height: 340px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
 .gd-dropdown.gd-dropdown-fill .btn {
   width: 100%;
 }
@@ -13668,7 +13674,7 @@ dl.gd-content-details-tags dd a:active {
 }
 @media (min-width: 768px) {
   .gd-promotion-box {
-    margin: 50px 0 0;
+    margin: 0 0 50px ;
   }
   .gd-promotion-box h3 {
     margin: 20px 0 20px;
@@ -15657,6 +15663,12 @@ dl.gd-content-details-tags dd a:active {
   margin-top: 25px;
 }
 @media (min-width: 768px) {
+  .t17 .gd-mainimage {
+    margin-bottom: 60px;
+  }
+  .t17 .gd-brief {
+    margin: 0 0 80px;
+  }
   .t17 .gd-promotion-block-area {
     margin-bottom: 80px;
   }
@@ -16866,7 +16878,7 @@ input[type="checkbox"] {
   display: inline-block;
 }
 .gd-longarticle p #read-more {
-  color: #999999;
+  color: #d4a962;
   display: block;
 }
 .gd-longarticle p #read-more:hover {

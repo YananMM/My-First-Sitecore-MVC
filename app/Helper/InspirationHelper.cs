@@ -104,7 +104,7 @@ namespace Landmark.Helper
 
             foreach (Item brand in brands)
             {
-                if (brand.Fields["Brand Title"].Value.ToLower().StartsWith(s))
+                if (brand.DisplayName.ToLower().StartsWith(s))
                 {
                     return true;
                 }
