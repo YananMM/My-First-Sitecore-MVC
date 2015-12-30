@@ -223,6 +223,9 @@
     <Compile Include="Service\ImportCountryList.ashx.cs">
       <DependentUpon>ImportCountryList.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Service\ImportTest.ashx.cs">
+      <DependentUpon>ImportTest.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Service\Landmark.asmx.cs">
       <DependentUpon>Landmark.asmx</DependentUpon>
       <SubType>Component</SubType>
@@ -818,6 +821,7 @@
     <Content Include="Views\Renderings\Landmark\T11\T11PulledContentRendering.cshtml" />
     <Content Include="Views\Layouts\Landmark\MapLayout.cshtml" />
     <Content Include="Service\ImportCountryList.ashx" />
+    <Content Include="Service\ImportTest.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
