@@ -2576,6 +2576,10 @@ $(document).ready(function() {
   /**********************************************************************************************************
    * GD Dropdown control
    **********************************************************************************************************/
+  $('body').on('mouseenter', '.gd-dropdown .dropdown-menu', function() {
+    $(this).focus();
+  });
+  
   $('body').on('click', '.gd-dropdown>.dropdown-menu>li>a', function() {
     var gdDropdownCtrl = $(this).closest('.gd-dropdown');
     var gdCurrentVal   = gdDropdownCtrl.find('.current');

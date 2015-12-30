@@ -69,6 +69,21 @@ namespace Landmark.Helper
             options.Language = LanguageManager.GetLanguage(language);
             var returnUrl = LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(item, options));
 
+            if(Sitecore.Context.Item.ID.ToString()==ItemGuids.SearchResultsPage)
+            {
+                string host = System.Web.HttpContext.Current.Request.Url.Scheme +
+                          Uri.SchemeDelimiter +
+                          System.Web.HttpContext.Current.Request.Url.Host;
+                string rawUrl = System.Web.HttpContext.Current.Request.RawUrl.Replace("/en/", "/").Replace("/zh-cn/", "/").Replace("/zh-hk/", "/").Replace("/sc/", "/").Replace("/tc/", "/");
+                if(language.ToLower()=="en")
+                    return host + "/en" + rawUrl;
+                if (language.ToLower() == "zh-cn")
+                    return host + "/sc" + rawUrl;
+                if (language.ToLower() == "zh-hk")
+                    return host + "/tc" + rawUrl;
+            }
+            
+
             return TranslateUrl(returnUrl);
         }
 
