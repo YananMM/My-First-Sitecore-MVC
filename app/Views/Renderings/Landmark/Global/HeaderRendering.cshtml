@@ -56,18 +56,17 @@
             }
 
             <div class="sb-search">
-                @*@using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
-                    {
-                        @Html.Sitecore().FormHandler("Search", "SearchContent")
-                        <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", SitecoreItems.SearchPlaceHolderItem)" class="sb-search-input form-control">
-                        <input class="sb-search-submit" type="submit" value="">
-                        <a class="sb-search-clear icomoon-circle-with-cross" href="javascript:;"></a>
-                        <span class="icomoon-search"></span>
-                    }*@
-
                 @{
                     var searchPlaceHolderItem = Factory.GetDatabase("web").GetItem(ItemGuids.SearchPlaceHolderItem);
                 }
+                @*@using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
+                {
+                    @Html.Sitecore().FormHandler("Search", "SearchContent")
+                    <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", searchPlaceHolderItem)" class="sb-search-input form-control">
+                    <input class="sb-search-submit" type="submit" value="">
+                    <a class="sb-search-clear icomoon-circle-with-cross" href="javascript:;"></a>
+                    <span class="icomoon-search"></span>
+                }*@
                 @using (Html.BeginForm("SearchContent", "Search"))
                 {
                     <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", searchPlaceHolderItem)" class="sb-search-input form-control">

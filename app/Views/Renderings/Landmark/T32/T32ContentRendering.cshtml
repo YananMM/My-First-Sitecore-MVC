@@ -71,8 +71,6 @@
             </div>
         }
 
-
-
         <div class="gd-search-body">
             <ol>
                 @foreach (var result in results)
@@ -87,25 +85,25 @@
                                         <h4><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))">@Html.Sitecore().Field("Brand Title", result.GetItem())</a></h4>
 
                                         @{
-                        var address = result.GetItem().Fields["Address"].ToString();
-                        if (!string.IsNullOrEmpty(address))
-                        {
-                            <p>
-                                <span class="icomoon-location2"></span>&nbsp;@Html.Sitecore().Field("Address", result.GetItem())
-                            </p>
-                        }
+                                            var address = result.GetItem().Fields["Address"].ToString();
+                                            if (!string.IsNullOrEmpty(address))
+                                            {
+                                                <p>
+                                                    <span class="icomoon-location2"></span>&nbsp;@Html.Sitecore().Field("Address", result.GetItem())
+                                                </p>
+                                            }
                                         }
                                         <p>
                                             <span class="icomoon-phone"></span>&nbsp;@Html.Sitecore().Field("Contact", result.GetItem())
                                         </p>
                                         @{
-                        LinkField link = result.GetItem().Fields["Official Website Url"];
-                        if (!string.IsNullOrEmpty(link.Url))
-                        {
-                            <a href="@link.Url" target="@link.Target" class="gd-search-link-brief">
-                                @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.OfficialWebsiteItem))<span class="icomoon-chevron-small-right"></span>
-                            </a>
-                        }
+                                            LinkField link = result.GetItem().Fields["Official Website Url"];
+                                            if (!string.IsNullOrEmpty(link.Url))
+                                            {
+                                                <a href="@link.Url" target="@link.Target" class="gd-search-link-brief">
+                                                    @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.OfficialWebsiteItem))<span class="icomoon-chevron-small-right"></span>
+                                                </a>
+                                            }
                                         }
                                     </div>
                                     <div class="col-sm-3">
