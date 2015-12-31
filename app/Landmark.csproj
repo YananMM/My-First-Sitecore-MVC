@@ -145,6 +145,12 @@
       <DependentUpon>Landmark.resx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Classes\ComputedFields\ArticleIntroComputedField.cs" />
+    <Compile Include="Classes\ComputedFields\ArticleSubheadlineComputedField.cs" />
+    <Compile Include="Classes\ComputedFields\ArticleHeadlineComputedField.cs" />
+    <Compile Include="Classes\ComputedFields\ContentDescriptionComputedField.cs" />
+    <Compile Include="Classes\ComputedFields\ContentTitleComputedField.cs" />
+    <Compile Include="Classes\ComputedFields\PageContentComputedField.cs" />
     <Compile Include="Classes\ComputedFields\PageTitleComputedField.cs" />
     <Compile Include="Classes\ComputedFields\FilterOrderComputedField.cs" />
     <Compile Include="Classes\ComputedFields\FilterTypeComputedField.cs" />

@@ -16,25 +16,25 @@ namespace Landmark.Models
     
     public class LandmarkSearchResultItem : SearchResultItem
     {
-        [IndexField("Page Title")]
+        [IndexField("pagetitle")]
         public string PageTitle { get; set; }
 
-        [IndexField("Page Content")]
+        [IndexField("pagecontent")]
         public string PageContent { get; set; }
 
-        [IndexField("Content Title")]
+        [IndexField("contenttitle")]
         public string ContentTitle { get; set; }
 
-        [IndexField("Content Description")]
+        [IndexField("contentdescription")]
         public string ContentDescription { get; set; }
 
-        [IndexField("Article Title")]
+        [IndexField("articleheadline")]
         public string ArticleTitle { get; set; }
 
-        [IndexField("Article Subtitle")]
+        [IndexField("articlesubheadline")]
         public string ArticleSubtitle { get; set; }
 
-        [IndexField("Article Intro")]
+        [IndexField("articleintro")]
         public string ArticleIntro { get; set; }
 
         [IndexField("filtertype")]
