@@ -41,7 +41,7 @@ namespace Landmark.Helper
                     results = (from result in results
                         let resultItem = result.GetItem()
                         where LandmarkHelper.IsShownInNavigation(resultItem)
-                        select result).ToList();
+                        select result).OrderBy(item=>item.FilterOrder).ToList();
                     if(type!=null)
                         results = results.Where(item => item.FilterType == type).ToList();
                     if (page != null)
