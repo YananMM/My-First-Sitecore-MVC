@@ -134,11 +134,11 @@
 
 <script type="text/javascript">
     var string = document.getElementById('searchForm').getAttribute("action");
-    if (string.contains('/tc')) {
+    if (string.indexOf('/tc') == 0) {
         var tc = string.replace('/tc', '');
         document.getElementById('searchForm').setAttribute("action", tc);
     }
-    else if (string.contains('/sc')) {
+    else if (string.indexOf('/sc') == 0) {
         var sc = string.replace('/sc', '');
         document.getElementById('searchForm').setAttribute("action", sc);
     }
