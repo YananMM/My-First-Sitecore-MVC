@@ -4177,7 +4177,7 @@
   margin-left: 30px;
 }
 @media (min-width: 768px) {
-  .gd-col-2 > p {
+  .gd-col-2 {
     -webkit-columns: 2;
     -moz-columns: 2;
     -o-columns: 2;
@@ -4187,6 +4187,7 @@
     -o-column-gap: 40px;
     column-gap: 40px;
     text-align: justify;
+    -webkit-column-break-inside: avoid;
   }
 }
 @media (min-width: 768px) {
@@ -4199,6 +4200,7 @@
     -moz-column-gap: 20px;
     -o-column-gap: 20px;
     column-gap: 20px;
+    -webkit-column-break-inside: avoid;
   }
 }
 h1,
@@ -8815,7 +8817,8 @@ dl.gd-content-details-tags dd a:active {
   margin-top: 80px;
 }
 .t17 .site-header .container,
-.t17 .page-header .container {
+.t17 .page-header .container,
+.t17 .site-footer .container {
   margin: 0 auto;
 }
 .t17 .container {

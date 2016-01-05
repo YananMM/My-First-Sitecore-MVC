@@ -30,7 +30,7 @@
                     }
                     @if (!string.IsNullOrEmpty(url))
                     {
-                        @Html.Sitecore().Field("Button Link", currentItem, new { @class = "gd-button gd-button-transparent", @type = "button", text = Html.Sitecore().Field("Glossary Value", discoverMoreItem) })
+                        @Html.Sitecore().Field("Button Link", currentItem, new { @class = "gd-button gd-button-reversed", @type = "button", text = Html.Sitecore().Field("Glossary Value", discoverMoreItem) })
                     }
                 </div>
             </div>
@@ -108,7 +108,7 @@
                         <div class="gd-promotion-block-text">
                             <div class="gd-promotion-block-textarea">
                                 <h3>@Html.Sitecore().Field("Title", item)</h3>
-                                @Html.Sitecore().Field("Description", item)
+                                <p>@Html.Sitecore().Field("Description", item)</p>
                                 @{
                 LinkField onelink = item.Fields["Link"];
                                 }
