@@ -1553,16 +1553,32 @@
   }
 }
 .t17{
+  .site-header,.page-header,.site-footer{
+  .container{
+  margin: 0 auto;}}
+  .container{
+  margin: 30px auto;}
+  .gd-pagetitle{
+    .gd-pagetitle-heading{
+      h1, h2{
+       margin-top: 0;
+      }
+    }
+    .gd-pagetitle-menu{
+     margin-bottom: 0;
+     }
+    .gd-controls-m{margin-bottom: 0;}
+  }
   .gd-brief{
-    margin: 80px 0 80px;
+    margin:0;
   }
   .gd-promotion-block-area{
   .body-text;
-   margin-bottom: 30px; 
+   margin-bottom: 0; 
   }
   .gd-promotion-listarea{
   .body-text;
-     margin:0 0 80px;
+     margin:0;
     >  a{
       display: block;
       margin-top: 15px; 
@@ -1635,7 +1651,9 @@
       }
     }
   }
-
+  .gd-tab-intro {
+   margin: 0;
+  }
   @media (max-width: @screen-sm-min) {
     .slick-arrow {
       display: none;
@@ -1664,8 +1682,17 @@
 }
 @media (min-width:@screen-sm){
   .t17{
+    
+  .container{
+  margin: 60px auto;}
+    .gd-mainimage{
+     margin-bottom: 0;
+    }
+    .gd-brief{
+     margin: 0;
+    }
   .gd-promotion-block-area{
-   margin-bottom: 80px; 
+   margin-bottom: 0; 
   }
   .gd-promotion-block,.gd-promotion-block2{
     width: 100%;
@@ -1741,7 +1768,7 @@
 @media (min-width:@screen-md){
   .t17{
   .gd-promotion-listarea{
-     margin:0 0 80px;
+     margin:0;
    > a{ cursor: pointer;
       margin-top: 25px;}
     .gd-promotion-list{

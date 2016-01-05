@@ -4,15 +4,17 @@
 
 //  gd columns
 @media (min-width:@screen-sm){
-  .gd-col-2>p {
+  .gd-col-2{
       -webkit-columns: 2;
       -moz-columns: 2;
       -o-columns: 2;
       columns: 2;
-      -webkit-column-gap: 20px;
-      -moz-column-gap: 20px;
-      -o-column-gap: 20px;
-      column-gap: 20px;
+      -webkit-column-gap: 40px;
+      -moz-column-gap: 40px;
+      -o-column-gap: 40px;
+      column-gap: 40px;
+    text-align: justify;
+    -webkit-column-break-inside : avoid;
     }
 }
 @media (min-width:@screen-sm){
@@ -25,6 +27,7 @@
       -moz-column-gap: 20px;
       -o-column-gap: 20px;
       column-gap: 20px;
+    -webkit-column-break-inside : avoid;
 
 }
 }
@@ -2446,7 +2449,7 @@ h1,h2,h3,h4{
      line-height: 2;
     }
     @media (min-width:@screen-sm){
-     margin: 50px 0 0;
+     margin: 0 0 50px ;
     h3{
      margin: 20px 0 20px;
     .primary-text2;
