@@ -83,7 +83,6 @@
                                     <div class="col-sm-9">
                                         <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", result.GetItem())"></a>
                                         <h4><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))">@Html.Sitecore().Field("Brand Title", result.GetItem())</a></h4>
-
                                         @{
                                             var address = result.GetItem().Fields["Address"].ToString();
                                             if (!string.IsNullOrEmpty(address))
