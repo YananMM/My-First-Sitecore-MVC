@@ -193,7 +193,7 @@ namespace Landmark.Helper
         public static List<Item> GetItemByTemplate(Item parent, string templateId)
         {
             var query = string.Format("fast:{0}//*[{1}]", ToValidPath(parent.Paths.FullPath), "@@TemplateId='" + templateId + "'");
-            List<Item> slidesItems = _webDb.SelectItems(query).OrderBy(i => i.DisplayName).ToList();
+            List<Item> slidesItems = Sitecore.Context.Database.SelectItems(query).OrderBy(i => i.DisplayName).ToList();
             return slidesItems;
         }
 
