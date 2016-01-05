@@ -86,7 +86,7 @@
                 <span class="lines"></span>
             </a>
             <div class="sb-search">
-                <form action="@Url.Action("SearchContent","Search")" id="searchForm">
+                <form action="@Url.Action("SearchContent","Search")" id="mobileSearch">
                     <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", searchPlaceHolderItem)" class="sb-search-input form-control">
                     <input class="sb-search-submit" type="submit" value="">
                     <a class="sb-search-clear icomoon-circle-with-cross" href="javascript:;"></a>
@@ -141,5 +141,15 @@
     else if (string.indexOf('/sc') == 0) {
         var sc = string.replace('/sc', '');
         document.getElementById('searchForm').setAttribute("action", sc);
+    }
+
+    var mobileString = document.getElementById('mobileSearch').getAttribute("action");
+    if (mobileString.indexOf('/tc') == 0) {
+        var tc = mobileString.replace('/tc', '');
+        document.getElementById('mobileSearch').setAttribute("action", tc);
+    }
+    else if (mobileString.indexOf('/sc') == 0) {
+        var sc = mobileString.replace('/sc', '');
+        document.getElementById('mobileSearch').setAttribute("action", sc);
     }
 </script>
