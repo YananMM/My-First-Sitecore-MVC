@@ -1672,10 +1672,13 @@
       margin-bottom: 30px;
     }
     .tab-pane {
-      margin: 25px 0;
+      margin: 25px 0 25px;
       .intro-wrapper {
         height: auto;
         margin-top: 25px;
+        @media (min-width:@screen-sm){
+         margin: 0;
+        }
       }
     }
   }
