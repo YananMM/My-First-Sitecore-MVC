@@ -66,11 +66,13 @@ namespace Landmark.Helper
             List<FilterTypeResults> filterresults = new List<FilterTypeResults>();
             foreach (Item filtertype in types)
             {
-                var results = GetSearchResults(searchString, filtertype.Fields["Page Title"].Value);
+                Item filterTypeEn = Factory.GetDatabase("web").GetItem(filtertype.ID, Sitecore.Data.Managers.LanguageManager.GetLanguage("en", Factory.GetDatabase("web")));
+                var results = GetSearchResults(searchString, filterTypeEn.Fields["Page Title"].Value);
                 FilterTypeResults one= new FilterTypeResults();
                 one.id = filtertype.ID.ToString();
                 one.count = results.Count.ToString();
                 one.value = filtertype.Fields["Page Title"].Value;
+                one.envalue = filterTypeEn.Fields["Page Title"].Value;
                 filterresults.Add(one);
             }
             return filterresults;
@@ -82,5 +84,6 @@ namespace Landmark.Helper
         public string id;
         public string value;
         public string count;
+        public string envalue;
     }
 }

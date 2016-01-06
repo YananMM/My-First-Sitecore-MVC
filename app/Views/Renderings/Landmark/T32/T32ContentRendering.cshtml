@@ -43,7 +43,7 @@
                     {
                         if (Int32.Parse(type.count) > 0)
                         {
-                            <li><a href="?type=@type.value">@type.value (@type.count)</a></li>
+                            <li><a href="?type=@type.envalue">@type.value (@type.count)</a></li>
                         }
                     }
                 </ul>
@@ -118,10 +118,17 @@
                     else
                     {
                         var resultItem = result.GetItem();
+                        DateField dateField = (DateField)result.GetItem().Fields["Article Date"];
+                        var dateTime = dateField.DateTime;
+                        string title = result.PageTitle;
+                        if (Sitecore.Context.Database.GetItem(result.ItemId).ParentID.ToString() == ItemGuids.MonthlyExclusivePage)
+                        {
+                            title = result.ArticleTitle;
+                        }
                         <li>
                             <div class="gd-search-box">
                                 <h5>@result.FilterType</h5>
-                                <h4><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))">@result.PageTitle</a></h4>
+                                <h4><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))">@title</a></h4>
                                 @if (resultItem.TemplateID.ToString() == ItemGuids.T23PageABTemplate || resultItem.TemplateID.ToString() == ItemGuids.T23PageCTemplate || resultItem.TemplateID.ToString() == ItemGuids.T4PageTemplate || resultItem.TemplateID.ToString() == ItemGuids.T25PageTemplate || resultItem.TemplateID.ToString() == ItemGuids.T27Page)
                                 {
                                     <p>@Html.Sitecore().Field("Article Intro", resultItem)</p>
@@ -129,15 +136,15 @@
 
                                 @if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
                                 {
-                                    <div>@result.GetItem().Statistics.Created.ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat)</div>
+                                    <div>@dateTime.ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat)</div>
                                 }
                                 else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
                                 {
-                                    <div>@result.GetItem().Statistics.Created.ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat)</div>
+                                    <div>@dateTime.ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat)</div>
                                 }
                                 else if (Html.Sitecore().CurrentItem.Language.Name == "en")
                                 {
-                                    <div>@result.GetItem().Statistics.Created.ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</div>
+                                    <div>@dateTime.ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</div>
                                 }
                             </div>
                         </li>
