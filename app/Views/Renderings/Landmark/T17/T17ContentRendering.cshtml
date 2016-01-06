@@ -50,61 +50,59 @@
                         <div class="col-sm-6">
                             <div class="gd-promotion-box">
                                 @{
-                LinkField leftlink = item.Fields["Left Link"];
-                string lClass = string.Empty;
-                if (!string.IsNullOrEmpty(leftlink.Url))
-                {
-                    lClass = "gd-hover-img";
-                    <a href="@leftlink.Url" target="@leftlink.Target" class="@lClass">
-                        <div class="gd-hover-img-area">
-                            <div class="gd-hover-img-mask"></div>
-                            <img data-src="@Html.Sitecore().ImageFieldSrc("Left Image", item)">
-                        </div>
-                        <h3>@Html.Sitecore().Field("Left Title", item)</h3>
-                        <p>@Html.Sitecore().Field("Left Description", item)</p>
-                    </a>
-                }
-                else
-                {
-                    <div class="gd-hover-img-area">
-                        <div class="gd-hover-img-mask"></div>
-                        <img data-src="@Html.Sitecore().ImageFieldSrc("Left Image", item)">
-                    </div>
-                                    <h3>@Html.Sitecore().Field("Left Title", item)</h3>
-                                    <p>@Html.Sitecore().Field("Left Description", item)</p>
-                }
+                                    LinkField leftlink = item.Fields["Left Link"];
+                                    string lClass = string.Empty;
+                                    if (!string.IsNullOrEmpty(leftlink.Url))
+                                    {
+                                        lClass = "gd-hover-img";
+                                        <a href="@leftlink.Url" target="@leftlink.Target" class="@lClass">
+                                            <div class="gd-hover-img-area">
+                                                <div class="gd-hover-img-mask"></div>
+                                                <img data-src="@Html.Sitecore().ImageFieldSrc("Left Image", item)">
+                                            </div>
+                                            <h3>@Html.Sitecore().Field("Left Title", item)</h3>
+                                            <p>@Html.Sitecore().Field("Left Description", item)</p>
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <div class="gd-hover-img-area">
+                                            <div class="gd-hover-img-mask"></div>
+                                            <img data-src="@Html.Sitecore().ImageFieldSrc("Left Image", item)">
+                                        </div>
+                                        <h3>@Html.Sitecore().Field("Left Title", item)</h3>
+                                        <p>@Html.Sitecore().Field("Left Description", item)</p>
+                                    }
                                 }
-
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="gd-promotion-box">
                                 @{
-                LinkField rightlink = item.Fields["Right Link"];
-                string rClass = string.Empty;
-                if (!string.IsNullOrEmpty(rightlink.Url))
-                {
-                    rClass = "gd-hover-img";
-                    <a href="@rightlink.Url" target="@rightlink.Target" class="@rClass">
-                        <div class="gd-hover-img-area">
-                            <div class="gd-hover-img-mask"></div>
-                            <img data-src="@Html.Sitecore().ImageFieldSrc("Right Image", item)">
-                        </div>
-                        <h3>@Html.Sitecore().Field("Right Title", item)</h3>
-                        <p>@Html.Sitecore().Field("Right Description", item)</p>
-                    </a>
-                }
-                else
-                {
-                    <div class="gd-hover-img-area">
-                        <div class="gd-hover-img-mask"></div>
-                        <img data-src="@Html.Sitecore().ImageFieldSrc("Right Image", item)">
-                    </div>
-                                    <h3>@Html.Sitecore().Field("Right Title", item)</h3>
-                                    <p>@Html.Sitecore().Field("Right Description", item)</p>
-                }
+                                    LinkField rightlink = item.Fields["Right Link"];
+                                    string rClass = string.Empty;
+                                    if (!string.IsNullOrEmpty(rightlink.Url))
+                                    {
+                                        rClass = "gd-hover-img";
+                                        <a href="@rightlink.Url" target="@rightlink.Target" class="@rClass">
+                                            <div class="gd-hover-img-area">
+                                                <div class="gd-hover-img-mask"></div>
+                                                <img data-src="@Html.Sitecore().ImageFieldSrc("Right Image", item)">
+                                            </div>
+                                            <h3>@Html.Sitecore().Field("Right Title", item)</h3>
+                                            <p>@Html.Sitecore().Field("Right Description", item)</p>
+                                        </a>
+                                    }
+                                    else
+                                    {
+                                        <div class="gd-hover-img-area">
+                                            <div class="gd-hover-img-mask"></div>
+                                            <img data-src="@Html.Sitecore().ImageFieldSrc("Right Image", item)">
+                                        </div>
+                                        <h3>@Html.Sitecore().Field("Right Title", item)</h3>
+                                        <p>@Html.Sitecore().Field("Right Description", item)</p>
+                                    }
                                 }
-
                             </div>
                         </div>
                     </div>
