@@ -26,7 +26,7 @@
             <h3>@Html.Sitecore().Field("Content Title") </h3>
         </div>
         <div class="gd-brief-body gd-longarticle gd-col-2" data-text-on="@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ReadMoreItem)) +" data-text-off="@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.LessItem)) -">
-            <p>@(new MvcHtmlString(Html.Sitecore().Field("Content Description").ToString().Trim(' ').Replace("\n\n", "<br/>")))</p>
+            @(new MvcHtmlString(Html.Sitecore().Field("Content Description").ToString().Trim(' ').Replace("\n\n", "<br/>")))
             @*<p>@Html.Sitecore().Field("Content Description").ToString()</p>*@
         </div>
     </div>
