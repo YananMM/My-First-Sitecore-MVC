@@ -127,7 +127,7 @@
                     }
                     <div @if (left.Checked) { <text>
                          class="gd-promotion-block clearfix"
-                         </text>                                                       } else { <text> class="gd-promotion-block2 clearfix" </text>                                                      }>
+                         </text>                                                          } else { <text> class="gd-promotion-block2 clearfix" </text>                                                         }>
                         <div class="gd-promotion-block-img" style="background-image: url(@Html.Sitecore().ImageFieldSrc("Image",item))" data-bgsrc="@Html.Sitecore().ImageFieldSrc("Image",item)">
                         </div>
                         <div class="gd-promotion-block-text">
@@ -135,12 +135,21 @@
                                 <h3>@Html.Sitecore().Field("Title", item)</h3>
                                 <p>@Html.Sitecore().Field("Description", item)</p>
                                 @{
-LinkField onelink = item.Fields["Link"];
-if (!string.IsNullOrEmpty(onelink.Url))
-{
-
-    @Html.Sitecore().Field("Link", item, new { @class = "gd-button gd-button-transparent", @type = "button", text = Html.Sitecore().Field("Glossary Value", discoverMoreItem) })
-}
+                                        LinkField onelink = item.Fields["Link"];
+                                    if (onelink.IsInternal)
+                                    {
+                                        if (onelink.TargetItem != null)
+                                        {
+                                            @Html.Sitecore().Field("Link", item, new {@class = "gd-button gd-button-transparent", @type = "button", text = Html.Sitecore().Field("Glossary Value", discoverMoreItem)})
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (!string.IsNullOrEmpty(onelink.Url))
+                                        {
+                                            @Html.Sitecore().Field("Link", item, new {@class = "gd-button gd-button-transparent", @type = "button", text = Html.Sitecore().Field("Glossary Value", discoverMoreItem)})
+                                        }
+                                    }
                                 }
                             </div>
                         </div>
@@ -198,7 +207,7 @@ if (!string.IsNullOrEmpty(onelink.Url))
 
                             @foreach (var tab in tabs)
                             {
-                                <li @if (i == 1) { <text> class="active" </text>                                    }><a href="#@tab.ID.ToString().Trim('{').Trim('}')" data-toggle="tab">@tab.Fields["Name"]</a></li>
+                                <li @if (i == 1) { <text> class="active" </text>                                       }><a href="#@tab.ID.ToString().Trim('{').Trim('}')" data-toggle="tab">@tab.Fields["Name"]</a></li>
 i++;
                             }
                         </ul>
@@ -210,11 +219,11 @@ i++;
                                 <a class="tab-pane-switch" href="javascript:;">
                                     @tab.Fields["Name"].ToString().ToUpper()<span @if (j == 1) { <text>
                                                                                   class="on"
-                                                                                  </text>                           } else { <text> class="off" </text>                           }></span>
+                                                                                  </text>                              } else { <text> class="off" </text>                              }></span>
                                 </a>
                                 <div @if (j == 1) { <text>
                                      class="tab-pane fade in active"
-                                     </text>                            } else { <text> class="tab-pane fade" </text>                           } id="@tab.ID.ToString().Trim('{').Trim('}')">
+                                     </text>                               } else { <text> class="tab-pane fade" </text>                              } id="@tab.ID.ToString().Trim('{').Trim('}')">
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <img data-src="@Html.Sitecore().ImageFieldSrc("Image",tab)" alt="">
