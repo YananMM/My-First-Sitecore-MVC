@@ -6,6 +6,8 @@
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Sitecore.Links
+@using Landmark.Extensions
+
 @model RenderingModel
 @{
     SearchHelper helper = new SearchHelper();
@@ -14,6 +16,9 @@
     var results = helper.GetSearchResults(Request["searchString"], Request["type"], page);
     List<FilterTypeResults> types = helper.GetFilterTypes(Request["searchString"]);
     ShoppingHelper shoppingHelper = new ShoppingHelper();
+    string searchString = Request["searchString"];
+
+    searchString = Session.GetDataFromSession<string>("search");
 }
 
 <div class="container">
@@ -23,15 +28,15 @@
         </div>
         @if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
         {
-            <div class="gd-search-infomation">找到共 @count 个符合 <span>"@HttpContext.Current.Session["search"].ToString()"</span> 的记录 </div>
+            <div class="gd-search-infomation">找到共 @count 个符合 <span>"@searchString"</span> 的记录 </div>
         }
         else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
         {
-            <div class="gd-search-infomation">找到共 @count 個符合 <span>"@HttpContext.Current.Session["search"].ToString()"</span> 的記錄 </div>
+            <div class="gd-search-infomation">找到共 @count 個符合 <span>"@searchString"</span> 的記錄 </div>
         }
         else if (Html.Sitecore().CurrentItem.Language.Name == "en")
         {
-            <div class="gd-search-infomation">@count search result(s) for <span>"@HttpContext.Current.Session["search"].ToString()"</span></div>
+            <div class="gd-search-infomation">@count search result(s) for <span>"@searchString"</span></div>
         }
         @if (count > 0)
         {

@@ -10,18 +10,21 @@ using Sitecore.Configuration;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Mvc.Extensions;
+using Landmark.Extensions;
+
 
 namespace Landmark.Helper
 {
-    public class SearchHelper
-    {
+    public class SearchHelper 
+    { 
         public List<LandmarkSearchResultItem> GetSearchResults(string searchString=null,string type=null,string page=null)
         {
             List<LandmarkSearchResultItem> results = new List<LandmarkSearchResultItem>();
 
             if (!string.IsNullOrEmpty(searchString))
             {
-                searchString = HttpContext.Current.Session["search"].ToString();
+                searchString = System.Web.HttpContext.Current.Session["search"].ToString();
+                
                 var language = Sitecore.Context.Language.Name.ToLower();
                 string indexName = Settings.GetSetting("LandmarkIndexName");
                 var index = ContentSearchManager.GetIndex(indexName);

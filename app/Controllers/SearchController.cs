@@ -14,6 +14,7 @@ using Sitecore.ContentSearch.Linq;
 using Sitecore.ContentSearch.Linq.Utilities;
 using Sitecore.Mvc.Extensions;
 using Sitecore.Shell.Web.UI.WebControls;
+using Landmark.Extensions;
 
 namespace Landmark.Controllers
 {
@@ -26,7 +27,8 @@ namespace Landmark.Controllers
 
         public ActionResult SearchContent(string search)
         {
-            Session["search"] = search;
+            //SessionExtensions.SetDataInSession("key1", "value1");
+            Session.SetDataInSession("search", search);
             //return Content("This is search action");
             return Redirect(LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(ItemGuids.SearchResultsPage))) + "?searchString=" + Server.UrlPathEncode(search));
         }
