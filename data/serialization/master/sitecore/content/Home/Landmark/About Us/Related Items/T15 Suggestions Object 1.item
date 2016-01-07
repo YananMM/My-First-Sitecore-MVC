@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {1B86D6A6-2A1E-465B-ADB3-915CD77B0BD3}
+database: master
+path: /sitecore/content/Home/Landmark/About Us/Related Items/T15 Suggestions Object 1
+parent: {8F5084D9-50E6-46F7-867C-7A5B5B2C6080}
+name: T15 Suggestions Object 1
+master: {00000000-0000-0000-0000-000000000000}
+template: {5F80F6B0-A6B3-48A7-A28C-A7B25F38C042}
+templatekey: T15 Suggestions Object
+
+----field----
+field: {D2411E73-8E2F-4CE6-835D-9842008D7E05}
+name: Slide Image
+key: slide image
+content-length: 58
+
+<image mediaid="{69E37A45-C1DC-4B41-A6F2-B2C4E4B3028F}" />
+----version----
+language: en
+version: 1
+revision: 938dbfa2-7c24-441b-aecc-946aecb73fef
+
+----field----
+field: {EE823DC3-4635-41E2-A017-16B8D5C98212}
+name: Title
+key: title
+content-length: 24
+
+T15 Suggestions Object 1
+----field----
+field: {E3D87CF3-4898-44A7-B9D4-44CC046D6555}
+name: Description
+key: description
+content-length: 385
+
+Founded in 1970 by the designer, DVF is now a global lifestyle luxury brand and one of the premier names in American fashion. Renowned for its iconic wrap dress and signature prints, DVF has expanded to a full wardrobe of ready-to-wear and accessories including handbags, shoes, small leather goods, scarves, and jewelry. The company also offers luggage, eyewear, and home furnishings.
+----field----
+field: {D909294E-4174-4A3C-B56B-A5FEA42DCDA3}
+name: Button Link
+key: button link
+content-length: 94
+
+<link text="baidu" linktype="external" url="http://www.baidu.com" anchor="" target="_blank" />
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20160107T080527Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+938dbfa2-7c24-441b-aecc-946aecb73fef
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 35
+
+20160107T084540:635877531404629141Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

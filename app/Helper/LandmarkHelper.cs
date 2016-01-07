@@ -349,13 +349,16 @@ namespace Landmark.Helper
                     relatedArticle = relatedArticle.OrderBy(p => p.TagCount).ToList();
                 }
             }
-            if (relatedItems.Count > 0)
+            if (relatedItems.Count > 0 && relatedArticle.Count > 0)
             {
                 allRelatedItems.Add(relatedItems.FirstOrDefault());
-            }
-            if (relatedArticle.Count > 0)
-            {
                 allRelatedItems.Add(relatedArticle.FirstOrDefault().Item);
+            }
+            if (relatedItems.Count == 0 && relatedArticle.Count > 0)
+            {
+                var relatedArticles = relatedArticle.Count > 2 ? relatedArticle.Take(2).ToList() : relatedArticle;
+
+                allRelatedItems.AddRange(relatedArticles.Select(p => p.Item).ToList());
             }
             return allRelatedItems.Where(LandmarkHelper.IsShownInNavigation).ToList();
         }
