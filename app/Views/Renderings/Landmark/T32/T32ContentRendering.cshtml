@@ -23,15 +23,15 @@
         </div>
         @if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
         {
-            <div class="gd-search-infomation">找到共 @count 个符合 <span>"@Request["searchString"]"</span> 的记录 </div>
+            <div class="gd-search-infomation">找到共 @count 个符合 <span>"@HttpContext.Current.Session["search"].ToString()"</span> 的记录 </div>
         }
         else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
         {
-            <div class="gd-search-infomation">找到共 @count 個符合 <span>"@Request["searchString"]"</span> 的記錄 </div>
+            <div class="gd-search-infomation">找到共 @count 個符合 <span>"@HttpContext.Current.Session["search"].ToString()"</span> 的記錄 </div>
         }
         else if (Html.Sitecore().CurrentItem.Language.Name == "en")
         {
-            <div class="gd-search-infomation">@count search result(s) for <span>"@Request["searchString"]"</span></div>
+            <div class="gd-search-infomation">@count search result(s) for <span>"@HttpContext.Current.Session["search"].ToString()"</span></div>
         }
         @if (count > 0)
         {
@@ -119,7 +119,6 @@
                     {
                         var resultItem = result.GetItem();
                         DateField dateField = (DateField)result.GetItem().Fields["Article Date"];
-                        var dateTime = dateField.DateTime;
                         string title = result.PageTitle;
                         if (Sitecore.Context.Database.GetItem(result.ItemId).ParentID.ToString() == ItemGuids.MonthlyExclusivePage)
                         {
@@ -136,15 +135,15 @@
 
                                 @if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
                                 {
-                                    <div>@dateTime.ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat)</div>
+                                    <div>@LandmarkHelper.ToValidDateTime(dateField).ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat)</div>
                                 }
                                 else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
                                 {
-                                    <div>@dateTime.ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat)</div>
+                                    <div>@LandmarkHelper.ToValidDateTime(dateField).ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat)</div>
                                 }
                                 else if (Html.Sitecore().CurrentItem.Language.Name == "en")
                                 {
-                                    <div>@dateTime.ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</div>
+                                    <div>@LandmarkHelper.ToValidDateTime(dateField).ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</div>
                                 }
                             </div>
                         </li>

@@ -5050,6 +5050,7 @@ h4 a:active {
   color: #d4a962;
   font-size: 12px;
   padding-left: 0;
+  min-width: 65px;
 }
 .gd-mainimage .carousel-inner .item > .carousel-caption .gd-carousel-detail .gd-mainimage-table tr > td {
   color: #ffffff;
@@ -5322,6 +5323,7 @@ h4 a:active {
   color: #d4a962;
   font-size: 12px;
   padding-left: 0;
+  min-width: 65px;
 }
 .gd-carousel-info.gd-mainimage-fixed > .carousel-caption .carousel-caption-inner .gd-carousel-detail .gd-mainimage-table tr > td {
   color: #ffffff;
