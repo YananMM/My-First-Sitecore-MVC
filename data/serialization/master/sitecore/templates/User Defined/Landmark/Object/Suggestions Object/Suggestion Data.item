@@ -1,40 +1,26 @@
 ----item----
 version: 1
-id: {A5EEDC55-EB8D-4D3F-931A-1C7D95563F8D}
+id: {D6F15D1F-BC79-4781-A578-F4A6862219ED}
 database: master
-path: /sitecore/content/Home/Landmark/About Us/Related Items/T23 Page AB/Unordered List
-parent: {96006001-71EF-4315-9610-8E985C44001F}
-name: Unordered List
+path: /sitecore/templates/User Defined/Landmark/Object/Suggestions Object/Suggestion Data
+parent: {5F80F6B0-A6B3-48A7-A28C-A7B25F38C042}
+name: Suggestion Data
 master: {00000000-0000-0000-0000-000000000000}
-template: {17853181-56B2-4240-84FC-EFF772333FEC}
-templatekey: Unordered List
-
-----field----
-field: {F6D8A61C-2F84-4401-BD24-52D2068172BC}
-name: __Originator
-key: __originator
-content-length: 0
-
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
 
 ----version----
 language: en
 version: 1
-revision: 9548ad4d-2674-4f83-a556-0ce221368451
+revision: 6b2e628c-62af-426e-91a8-3ded0cd891eb
 
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20151111T063015Z
+20160107T080355Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +34,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-9548ad4d-2674-4f83-a556-0ce221368451
+6b2e628c-62af-426e-91a8-3ded0cd891eb
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151111T063015:635828202155985883Z
+20160107T080355:635877506355056388Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
