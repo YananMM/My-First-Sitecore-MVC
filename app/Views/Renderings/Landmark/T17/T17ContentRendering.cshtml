@@ -115,14 +115,14 @@
             {
                 <div class="container">
                     <div class="gd-brief">
-                        <div class="gd-brief-body gd-col-2 gd-longarticle">
+                        <div class="gd-brief-body gd-col-2">
                             @Html.Sitecore().Field("Text Content", item)
                             @{
-                string link = LandmarkHelper.GetLinkUrl(item, "Link");
-                if (!string.IsNullOrEmpty(link))
-                {
-                    @Html.Sitecore().Field("Link", item, new { text = Html.Sitecore().Field("Glossary Value", discoverMoreItem) + "<span class='icomoon-chevron-small-right'></span>" })
-                }
+                                string link = LandmarkHelper.GetLinkUrl(item, "Link");
+                                if (!string.IsNullOrEmpty(link))
+                                {
+                                    @Html.Sitecore().Field("Link", item, new { text = Html.Sitecore().Field("Glossary Value", discoverMoreItem) + "<span class='icomoon-chevron-small-right'></span>" })
+                                }
                             }
                         </div>
                     </div>
