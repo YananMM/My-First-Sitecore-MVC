@@ -17,7 +17,6 @@
     List<FilterTypeResults> types = helper.GetFilterTypes(Request["searchString"]);
     ShoppingHelper shoppingHelper = new ShoppingHelper();
     string searchString = Request["searchString"];
-
     searchString = Session.GetDataFromSession<string>("search");
 }
 

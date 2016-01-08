@@ -23,7 +23,8 @@ namespace Landmark.Helper
 
             if (!string.IsNullOrEmpty(searchString))
             {
-                searchString = System.Web.HttpContext.Current.Session["search"].ToString();
+                if (System.Web.HttpContext.Current.Session["search"]!=null)
+                    searchString = System.Web.HttpContext.Current.Session["search"].ToString();
                 
                 var language = Sitecore.Context.Language.Name.ToLower();
                 string indexName = Settings.GetSetting("LandmarkIndexName");

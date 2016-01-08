@@ -69,17 +69,17 @@ namespace Landmark.Helper
             options.Language = LanguageManager.GetLanguage(language);
             var returnUrl = LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(item, options));
 
-            if(Sitecore.Context.Item.ID.ToString()==ItemGuids.SearchResultsPage)
+            if (Sitecore.Context.Item.ID.ToString() == ItemGuids.SearchResultsPage)
             {
                 string rawUrl = System.Web.HttpContext.Current.Request.RawUrl.Replace("/en/", "/").Replace("/zh-cn/", "/").Replace("/zh-hk/", "/").Replace("/sc/", "/").Replace("/tc/", "/");
-                if(language.ToLower()=="en")
-                    return  "/en" + rawUrl;
+                if (language.ToLower() == "en")
+                    return "/en" + rawUrl;
                 if (language.ToLower() == "zh-cn")
                     return "/sc" + rawUrl;
                 if (language.ToLower() == "zh-hk")
                     return "/tc" + rawUrl;
             }
-            
+
 
             return TranslateUrl(returnUrl);
         }
@@ -349,13 +349,16 @@ namespace Landmark.Helper
                     relatedArticle = relatedArticle.OrderBy(p => p.TagCount).ToList();
                 }
             }
-            if (relatedItems.Count > 0)
+            if (relatedItems.Count > 0 && relatedArticle.Count > 0)
             {
                 allRelatedItems.Add(relatedItems.FirstOrDefault());
-            }
-            if (relatedArticle.Count > 0)
-            {
                 allRelatedItems.Add(relatedArticle.FirstOrDefault().Item);
+            }
+            if (relatedItems.Count == 0 && relatedArticle.Count > 0)
+            {
+                var relatedArticles = relatedArticle.Count > 2 ? relatedArticle.Take(2).ToList() : relatedArticle;
+
+                allRelatedItems.AddRange(relatedArticles.Select(p => p.Item).ToList());
             }
             return allRelatedItems.Where(LandmarkHelper.IsShownInNavigation).ToList();
         }
@@ -375,7 +378,7 @@ namespace Landmark.Helper
                     currentItem.Children.SingleOrDefault(p => p.TemplateID.ToString() == ItemGuids.RelatedItemFolder);
                 if (relatedItemFolder != null)
                 {
-                    relatedItems = relatedItemFolder.Children.Where(i=>LandmarkHelper.IsShownInNavigation(i)).ToList();
+                    relatedItems = relatedItemFolder.Children.Where(i => LandmarkHelper.IsShownInNavigation(i)).ToList();
                 }
             }
             var relatedPagesField = currentItem.Fields["Related Page"];
@@ -384,7 +387,7 @@ namespace Landmark.Helper
                 var relatedPagesIds = !string.IsNullOrEmpty(relatedPagesField.ToString()) ? relatedPagesField.ToString().Split('|').ToList() : new List<string>();
                 if (relatedPagesIds.Count != 0)
                 {
-                    items.AddRange(relatedPagesIds.Select(pageId => Sitecore.Context.Database.GetItem(pageId)).Where(i=>LandmarkHelper.IsShownInNavigation(i)));
+                    items.AddRange(relatedPagesIds.Select(pageId => Sitecore.Context.Database.GetItem(pageId)).Where(i => LandmarkHelper.IsShownInNavigation(i)));
                 }
             }
             items.AddRange(relatedItems);
@@ -582,9 +585,9 @@ namespace Landmark.Helper
             LinkField linkField = item.Fields[linkname];
             if (linkField != null)
             {
-                if (linkField.LinkType=="external")
+                if (linkField.LinkType == "external")
                     href = linkField.Url;
-                if (linkField.LinkType == "internal")
+                if (linkField.IsInternal)
                 {
                     if (linkField.TargetItem != null)
                         href = GetItemUrl(linkField.TargetItem);
@@ -617,7 +620,7 @@ namespace Landmark.Helper
             return new Regex("-").Replace(svgId.Replace("_x5F_", " & ").ToUpper(), " ", 1);
         }
 
-        public static void RedirectPermanent(string newPath,int statuscode)
+        public static void RedirectPermanent(string newPath, int statuscode)
         {
             HttpContext.Current.Response.Clear();
             HttpContext.Current.Response.StatusCode = statuscode;

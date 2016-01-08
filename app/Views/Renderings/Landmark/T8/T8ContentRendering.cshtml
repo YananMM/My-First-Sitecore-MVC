@@ -3,8 +3,11 @@
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Landmark.Models
+@using Sitecore.Configuration
 @model RenderingModel
-
+@{
+    var relatedItems = LandmarkHelper.GetRelatedItems();
+}
 <div id="gd-carousel-mainimage" class="carousel slide gd-carousel-info gd-mainimage gd-mainimage-fixed" data-ride="carousel" data-cover-height="640">
     @Html.Sitecore().Placeholder("slide-objects")
     <!-- Caption -->
@@ -48,7 +51,87 @@
     </div>
 
     <div id="gd-carousel-info" class="carousel slide gd-carousel-info" data-ride="carousel">
-        @Html.Sitecore().Placeholder("related-items")
-    </div>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            @if (relatedItems.Count != 0)
+            {
+                int i = 1;
+                foreach (var item in relatedItems)
+                {
+                    if (item.TemplateID.ToString() == ItemGuids.T23PageABTemplate || item.TemplateID.ToString() == ItemGuids.T23PageCTemplate || item.TemplateID.ToString() == ItemGuids.T4PageTemplate || item.TemplateID.ToString() == ItemGuids.T25PageTemplate || item.TemplateID.ToString() == ItemGuids.T27Page)
+                    {
+                        var image = LandmarkHelper.GetCallOutImage(item);
+                        <div @if (i == 1) { <text> class="item active" </text>   } else { <text> class="item" </text>   }>
+                            <div class="carousel-image" data-bgsrc="@image"></div>
+                            <div class="carousel-caption">
+                                <div class="carousel-caption-inner">
+                                    <div class="gd-carousel-detail">
+                                        <h4>@item.Fields["Article Headline"]</h4>
+                                        <p>@Html.Sitecore().Field("Article Intro", item)</p>
+                                        <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(item))" class="gd-button gd-button-white" type="button">@Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem))</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+i++;
+                    }
+                    else
+                    {
+                        <div @if (i == 1) { <text> class="item active" </text>   } else { <text> class="item" </text>   }>
+                            @{
+                        var image = Html.Sitecore().ImageFieldSrc("Slide Image", item);
+                            }
+                            <div class="carousel-image" data-bgsrc="@image"></div>
+                            <div class="carousel-caption">
+                                <div class="carousel-caption-inner">
+                                    <div class="gd-carousel-detail">
+                                        <h4>@item.Fields["Title"]</h4>
+                                        <p>@Html.Sitecore().Field("Description", item)</p>
+                                        @Html.Sitecore().Field("Button Link", item, new { @class = "gd-button gd-button-white", @type = "button", text = Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.DiscoverMoreItem)) })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        i++;
+                    }
+                }
+            }
+        </div>
+        <!-- Wrapper for controls -->
+        @if (relatedItems.Count > 0)
+        {
+            <div class="carousel-footer">
+                <div class="gd-carousel-controls clearfix">
+                    <!-- Controls -->
+                    <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="prev">
+                        <span class="icomoon-thin-arrow-L" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators gd-carousel-control gd-carousel-no">
+                        @if (relatedItems.Count > 0)
+                        {
+                            int i = 1;
+                            foreach (var item in relatedItems)
+                            {
+                                <li data-target="#gd-carousel-info" data-slide-to="@(i - 1)" @if (i == 1) { <text> class="active" </text>       }>@i</li>
+i++;
+                            }
+                        }
+                    </ol>
 
+                    <span class="gd-carousel-control gd-carousel-no">
+                        /
+                    </span>
+                    <span class="gd-carousel-control gd-carousel-no">
+                        @relatedItems.Count
+                    </span>
+                    <a class="gd-carousel-control" href="#gd-carousel-info" role="button" data-slide="next">
+                        <span class="icomoon-thin-arrow-R" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
 </div>

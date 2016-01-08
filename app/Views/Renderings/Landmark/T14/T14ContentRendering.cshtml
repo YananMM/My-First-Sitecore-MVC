@@ -1,4 +1,4 @@
-﻿@using System.Diagnostics.Eventing.Reader
+@using System.Diagnostics.Eventing.Reader
 @using Landmark.Classes
 @using Landmark.Helper
 @using Sitecore.Configuration
@@ -45,7 +45,13 @@
         <div class="shopdetails-brand-header">
             <ul>
                 <li><a href="javascript:;" class="active">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.YouMayAlsoLikeItem))</a></li>
+                @{
+                    var svg_id = Sitecore.Context.Item.Fields["Svg Id"].Value;
+                }
+                @if (svg_id != "")
+                {
                 <li><a href="javascript:;">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.AlsoOnThisFloorItem))</a></li>
+                }
             </ul>
         </div>
         <div class="shopdetails-brand-body">
