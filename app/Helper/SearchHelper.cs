@@ -15,17 +15,17 @@ using Landmark.Extensions;
 
 namespace Landmark.Helper
 {
-    public class SearchHelper 
-    { 
-        public List<LandmarkSearchResultItem> GetSearchResults(string searchString=null,string type=null,string page=null)
+    public class SearchHelper
+    {
+        public List<LandmarkSearchResultItem> GetSearchResults(string searchString = null, string type = null, string page = null)
         {
             List<LandmarkSearchResultItem> results = new List<LandmarkSearchResultItem>();
 
             if (!string.IsNullOrEmpty(searchString))
             {
-                if (System.Web.HttpContext.Current.Session["search"]!=null)
+                if (System.Web.HttpContext.Current.Session["search"] != null)
                     searchString = System.Web.HttpContext.Current.Session["search"].ToString();
-                
+
                 var language = Sitecore.Context.Language.Name.ToLower();
                 string indexName = Settings.GetSetting("LandmarkIndexName");
                 var index = ContentSearchManager.GetIndex(indexName);
@@ -35,28 +35,30 @@ namespace Landmark.Helper
 
                 using (var context = index.CreateSearchContext())
                 {
-                    
+
                     results = context.GetQueryable<LandmarkSearchResultItem>()
-                        .Where(item => item.Language.Equals(language) && 
+                        .Where(item => item.Language.Equals(language) &&
                             (item.PageTitle.Contains(searchString) || item.PageContent.Contains(searchString) || item.ContentTitle.Contains(searchString)
                             || item.ContentDescription.Contains(searchString) || item.Tags.Contains(searchString)
-                            || item.ArticleTitle.Contains(searchString) || item.ArticleIntro.Contains(searchString) ||item.ArticleSubtitle.Contains(searchString)))
-                            .OrderBy(item=>item.FilterOrder)
+                            || item.ArticleTitle.Contains(searchString) || item.ArticleIntro.Contains(searchString) || item.ArticleSubtitle.Contains(searchString)))
+                            .OrderBy(item => item.FilterOrder)
                         .ToList();
-                    results = (from result in results
-                        let resultItem = result.GetItem()
-                        where LandmarkHelper.IsShownInNavigation(resultItem)
-                        select result).OrderBy(item=>item.FilterOrder).ToList();
-                    if(type!=null)
+                    var resultsgroup = (from result in results
+                                        let resultItem = result.GetItem()
+                                        let version = Factory.GetDatabase("web").GetItem(resultItem.ID).Version
+                                        where LandmarkHelper.IsShownInNavigation(resultItem) && resultItem.Version == version
+                                        select result).OrderBy(i => i.FilterOrder);
+
+                    if (type != null)
                         results = results.Where(item => item.FilterType == type).ToList();
                     if (page != null)
                     {
                         int pagenumber = page == null ? 1 : Int32.Parse(page);
                         results = results.Skip((pagenumber - 1) * 10).Take(10).ToList();
                     }
-                     
+
                 }
-                
+
             }
             IEnumerable<IGrouping<string, LandmarkSearchResultItem>> groups = results.GroupBy(x => x.FilterOrder);
             IEnumerable<LandmarkSearchResultItem> smths = groups.SelectMany(group => group);
@@ -73,7 +75,7 @@ namespace Landmark.Helper
             {
                 Item filterTypeEn = Factory.GetDatabase("web").GetItem(filtertype.ID, Sitecore.Data.Managers.LanguageManager.GetLanguage("en", Factory.GetDatabase("web")));
                 var results = GetSearchResults(searchString, filterTypeEn.Fields["Page Title"].Value);
-                FilterTypeResults one= new FilterTypeResults();
+                FilterTypeResults one = new FilterTypeResults();
                 one.id = filtertype.ID.ToString();
                 one.count = results.Count.ToString();
                 one.value = filtertype.Fields["Page Title"].Value;
