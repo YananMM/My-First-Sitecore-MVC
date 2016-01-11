@@ -30,9 +30,7 @@
             <h3>@Html.Sitecore().Field("Content Title")</h3>
         </div>
         <div class="gd-brief-body gd-col-2">
-            <p>
-                @Html.Sitecore().Field("Content Description")
-            </p>
+            @Html.Sitecore().Field("Content Description")
         </div>
     </div>
     <div class="gd-brief">
@@ -42,9 +40,7 @@
         <div class="gd-brief-body">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
-                    <p>
-                        @Html.Sitecore().Field("One Landmark Content")
-                    </p>
+                    @Html.Sitecore().Field("One Landmark Content")
                 </div>
             </div>
         </div>
@@ -61,7 +57,7 @@
                     if (item.TemplateID.ToString() == ItemGuids.T23PageABTemplate || item.TemplateID.ToString() == ItemGuids.T23PageCTemplate || item.TemplateID.ToString() == ItemGuids.T4PageTemplate || item.TemplateID.ToString() == ItemGuids.T25PageTemplate || item.TemplateID.ToString() == ItemGuids.T27Page)
                     {
                         var image = LandmarkHelper.GetCallOutImage(item);
-                        <div @if (i == 1) { <text> class="item active" </text>   } else { <text> class="item" </text>   }>
+                        <div @if (i == 1) { <text> class="item active" </text>     } else { <text> class="item" </text>     }>
                             <div class="carousel-image" data-bgsrc="@image"></div>
                             <div class="carousel-caption">
                                 <div class="carousel-caption-inner">
@@ -77,7 +73,7 @@ i++;
                     }
                     else
                     {
-                        <div @if (i == 1) { <text> class="item active" </text>   } else { <text> class="item" </text>   }>
+                        <div @if (i == 1) { <text> class="item active" </text>     } else { <text> class="item" </text>     }>
                             @{
                         var image = Html.Sitecore().ImageFieldSrc("Slide Image", item);
                             }
@@ -114,7 +110,7 @@ i++;
                             int i = 1;
                             foreach (var item in relatedItems)
                             {
-                                <li data-target="#gd-carousel-info" data-slide-to="@(i - 1)" @if (i == 1) { <text> class="active" </text>       }>@i</li>
+                                <li data-target="#gd-carousel-info" data-slide-to="@(i - 1)" @if (i == 1) { <text> class="active" </text>         }>@i</li>
 i++;
                             }
                         }
