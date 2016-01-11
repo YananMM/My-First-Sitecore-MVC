@@ -167,7 +167,7 @@ namespace Landmark.Helper
             if (!id.IsNull)
             {
                 Item brand = _webDb.GetItem(id);
-                alphabetFilter += "gdf-" + brand.Fields["Brand Title"].Value.ToLower()[0];
+                alphabetFilter += "gdf-" + brand.DisplayName.ToLower()[0];
             }
 
             return alphabetFilter;

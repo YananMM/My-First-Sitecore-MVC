@@ -10,17 +10,21 @@ using Sitecore.Configuration;
 using Sitecore.Data.Fields;
 using Sitecore.Data.Items;
 using Sitecore.Mvc.Extensions;
+using Landmark.Extensions;
+
 
 namespace Landmark.Helper
 {
     public class SearchHelper
     {
-        public List<LandmarkSearchResultItem> GetSearchResults(string searchString=null,string type=null,string page=null)
+        public List<LandmarkSearchResultItem> GetSearchResults(string searchString = null, string type = null, string page = null)
         {
             List<LandmarkSearchResultItem> results = new List<LandmarkSearchResultItem>();
 
             if (!string.IsNullOrEmpty(searchString))
             {
+                if (System.Web.HttpContext.Current.Session["search"] != null)
+                    searchString = System.Web.HttpContext.Current.Session["search"].ToString();
                 var language = Sitecore.Context.Language.Name.ToLower();
                 string indexName = Settings.GetSetting("LandmarkIndexName");
                 var index = ContentSearchManager.GetIndex(indexName);
@@ -30,28 +34,30 @@ namespace Landmark.Helper
 
                 using (var context = index.CreateSearchContext())
                 {
-                    
+
                     results = context.GetQueryable<LandmarkSearchResultItem>()
-                        .Where(item => item.Language.Equals(language) && 
+                        .Where(item => item.Language.Equals(language) &&
                             (item.PageTitle.Contains(searchString) || item.PageContent.Contains(searchString) || item.ContentTitle.Contains(searchString)
                             || item.ContentDescription.Contains(searchString) || item.Tags.Contains(searchString)
-                            || item.ArticleTitle.Contains(searchString) || item.ArticleIntro.Contains(searchString) ||item.ArticleSubtitle.Contains(searchString)))
-                            .OrderBy(item=>item.FilterOrder)
+                            || item.ArticleTitle.Contains(searchString) || item.ArticleIntro.Contains(searchString) || item.ArticleSubtitle.Contains(searchString)))
+                            .OrderBy(item => item.FilterOrder)
                         .ToList();
-                    results = (from result in results
-                        let resultItem = result.GetItem()
-                        where LandmarkHelper.IsShownInNavigation(resultItem)
-                        select result).ToList();
-                    if(type!=null)
+                    results = ((from result in results
+                                        let resultItem = result.GetItem()
+                                        let version = Factory.GetDatabase("web").GetItem(resultItem.ID).Version
+                                        where LandmarkHelper.IsShownInNavigation(resultItem) && resultItem.Version == version
+                                        select result).OrderBy(item=>item.FilterOrder)).ToList();
+
+                    if (type != null)
                         results = results.Where(item => item.FilterType == type).ToList();
                     if (page != null)
                     {
                         int pagenumber = page == null ? 1 : Int32.Parse(page);
                         results = results.Skip((pagenumber - 1) * 10).Take(10).ToList();
                     }
-                     
+
                 }
-                
+
             }
             IEnumerable<IGrouping<string, LandmarkSearchResultItem>> groups = results.GroupBy(x => x.FilterOrder);
             IEnumerable<LandmarkSearchResultItem> smths = groups.SelectMany(group => group);
@@ -66,11 +72,13 @@ namespace Landmark.Helper
             List<FilterTypeResults> filterresults = new List<FilterTypeResults>();
             foreach (Item filtertype in types)
             {
-                var results = GetSearchResults(searchString, filtertype.Fields["Page Title"].Value);
-                FilterTypeResults one= new FilterTypeResults();
+                Item filterTypeEn = Factory.GetDatabase("web").GetItem(filtertype.ID, Sitecore.Data.Managers.LanguageManager.GetLanguage("en", Factory.GetDatabase("web")));
+                var results = GetSearchResults(searchString, filterTypeEn.Fields["Page Title"].Value);
+                FilterTypeResults one = new FilterTypeResults();
                 one.id = filtertype.ID.ToString();
                 one.count = results.Count.ToString();
                 one.value = filtertype.Fields["Page Title"].Value;
+                one.envalue = filterTypeEn.Fields["Page Title"].Value;
                 filterresults.Add(one);
             }
             return filterresults;
@@ -82,5 +90,6 @@ namespace Landmark.Helper
         public string id;
         public string value;
         public string count;
+        public string envalue;
     }
 }

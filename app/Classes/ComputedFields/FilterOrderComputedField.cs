@@ -18,7 +18,7 @@ namespace Landmark.Classes.ComputedFields
             if (item == null)
                 return null;
 
-            while(item.Parent.ID.ToString() != Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkHomeItem).ID.ToString())
+            while(item.Parent.ID.ToString() != ItemGuids.LandmarkHomeItem.ToString())
             {
                 item = item.Parent;
             }

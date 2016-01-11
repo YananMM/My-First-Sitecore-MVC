@@ -12,7 +12,7 @@
 
 <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(artist))" class="gd-artplace-profile">
     <img src="@Html.Sitecore().ImageFieldSrc("Artist Photo", artist)" alt="artist picture">
-    
+
     <div class="gd-artplace-profile-title">
         <h5>@Html.Sitecore().Field("Artist Name", artist)</h5>
         <p>@Html.Sitecore().Field("Artist Birthday", artist)</p>
@@ -22,8 +22,6 @@
 
 <div class="gd-artplace-profile-info row">
     <div class="col-sm-12 gd-longarticle" data-text-on="@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ReadMoreItem)) +" data-text-off="@Html.Sitecore().Field("Glossary Value",(Item) Factory.GetDatabase("web").GetItem(ItemGuids.LessItem)) -">
-        <p>
-            @Html.Sitecore().Field("Art Description")
-        </p>
+        @Html.Sitecore().Field("Art Description")
     </div>
 </div>

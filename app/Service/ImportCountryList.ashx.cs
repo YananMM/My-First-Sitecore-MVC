@@ -1,15 +1,11 @@
-﻿using Sitecore.Configuration;
-using Sitecore.Data;
+﻿using Sitecore.Data;
 using Sitecore.Data.Items;
-using Sitecore.Publishing;
 using Sitecore.SecurityModel;
 using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text.RegularExpressions;
 using System.Web;
 using Landmark.Classes;
+using Sitecore.Configuration;
 using Sitecore.WordOCX.Extensions;
 
 namespace Landmark.Service
@@ -26,7 +22,7 @@ namespace Landmark.Service
             {
                 using (new SecurityDisabler())
                 {
-                    Database master = Sitecore.Configuration.Factory.GetDatabase("master");
+                    Database master =  Factory.GetDatabase("master");
                     Item countryFolder = master.GetItem("/sitecore/content/Home/Landmark/Email Signup/Countries");
 
                     //if (countryFolder.Children.Count != 0)

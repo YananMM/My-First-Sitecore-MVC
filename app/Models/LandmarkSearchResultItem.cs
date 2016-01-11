@@ -13,7 +13,7 @@ using Sitecore.Links;
 
 namespace Landmark.Models
 {
-    
+
     public class LandmarkSearchResultItem : SearchResultItem
     {
         [IndexField("Page Title")]
@@ -28,10 +28,10 @@ namespace Landmark.Models
         [IndexField("Content Description")]
         public string ContentDescription { get; set; }
 
-        [IndexField("Article Title")]
+        [IndexField("Article Headline")]
         public string ArticleTitle { get; set; }
 
-        [IndexField("Article Subtitle")]
+        [IndexField("Article Subheadline")]
         public string ArticleSubtitle { get; set; }
 
         [IndexField("Article Intro")]

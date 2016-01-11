@@ -1,4 +1,4 @@
-﻿@using Landmark.Classes
+@using Landmark.Classes
 @using Landmark.Helper
 @using Landmark.Models
 @using Sitecore.Configuration
@@ -44,6 +44,7 @@
             @{
                 var floor = shoppingHelper.GetShopFloor(currentItem);
                 var fullWhere = Sitecore.Context.Item.Fields["Address"].Value;
+                var svg_id = Sitecore.Context.Item.Fields["Svg Id"].Value;
             }
             @if (!string.IsNullOrEmpty(fullWhere))
             {
@@ -53,7 +54,7 @@
                         </th>
                         <td>
                             @fullWhere<br>
-                            @if (floor != null)
+                            @if (floor != null && svg_id != "")
                             {
                                 var whereDescription = floor["Floor Title"];
                                 <a href="#" class="gd-link-map gd-lightbox-link gd-lightbox-pin" data-pin="@Html.Sitecore().Field("LocationX", Sitecore.Context.Item),@Html.Sitecore().Field("LocationY", Sitecore.Context.Item)" data-lightsrc="@Html.Sitecore().ImageFieldSrc("Floor Image", floor)"

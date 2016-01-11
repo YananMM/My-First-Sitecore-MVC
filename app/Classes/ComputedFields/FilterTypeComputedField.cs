@@ -22,7 +22,8 @@ namespace Landmark.Classes.ComputedFields
             {
                 item = item.Parent;
             }
-            var field = item.Fields["Page Title"];
+            Item filterTypeEn = Factory.GetDatabase("web").GetItem(item.ID, Sitecore.Data.Managers.LanguageManager.GetLanguage("en", Factory.GetDatabase("web")));
+            var field = filterTypeEn.Fields["Page Title"];
 
             return field.Value;
         }

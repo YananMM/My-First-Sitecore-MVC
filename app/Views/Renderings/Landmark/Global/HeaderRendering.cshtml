@@ -56,25 +56,23 @@
             }
 
             <div class="sb-search">
+                @{
+                    var searchPlaceHolderItem = Factory.GetDatabase("web").GetItem(ItemGuids.SearchPlaceHolderItem);
+                }
                 @*@using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
                     {
                         @Html.Sitecore().FormHandler("Search", "SearchContent")
-                        <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", SitecoreItems.SearchPlaceHolderItem)" class="sb-search-input form-control">
+                        <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", searchPlaceHolderItem)" class="sb-search-input form-control">
                         <input class="sb-search-submit" type="submit" value="">
                         <a class="sb-search-clear icomoon-circle-with-cross" href="javascript:;"></a>
                         <span class="icomoon-search"></span>
                     }*@
-
-                @{
-                    var searchPlaceHolderItem = Factory.GetDatabase("web").GetItem(ItemGuids.SearchPlaceHolderItem);
-                }
-                @using (Html.BeginForm("SearchContent", "Search"))
-                {
+                <form action="@Url.Action("SearchContent","Search")" id="searchForm">
                     <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", searchPlaceHolderItem)" class="sb-search-input form-control">
                     <input class="sb-search-submit" type="submit" value="">
                     <a class="sb-search-clear icomoon-circle-with-cross" href="javascript:;"></a>
                     <span class="icomoon-search"></span>
-                }
+                </form>
             </div>
         </div>
         @Html.Sitecore().Rendering(SitecoreRenderingViewGuids.NavigationRenderingViewGuid)
@@ -88,14 +86,12 @@
                 <span class="lines"></span>
             </a>
             <div class="sb-search">
-                @using (Html.BeginForm("SearchContent", "Search"))
-                {
-                    @Html.Sitecore().FormHandler("Search", "SearchContent")
+                <form action="@Url.Action("SearchContent","Search")" id="mobileSearch">
                     <input type="search" id="search" name="search" placeholder="@Html.Sitecore().Field("Glossary Value", searchPlaceHolderItem)" class="sb-search-input form-control">
                     <input class="sb-search-submit" type="submit" value="">
                     <a class="sb-search-clear icomoon-circle-with-cross" href="javascript:;"></a>
                     <span class="icomoon-search"></span>
-                }
+                </form>
             </div>
 
             <div class="mobile-menu">
@@ -129,9 +125,31 @@
             </div>
             <div class="logo-area">
                 <a href="@LandmarkHelper.TranslateUrl(Sitecore.Links.LinkManager.GetItemUrl(Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkHomeItem)))">
-                    <img class="responsive-logo" src="@Html.Sitecore().ImageFieldSrc("Landmark Logo",Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem))" alt="landmark">
+                    <img class="responsive-logo" src="@Html.Sitecore().ImageFieldSrc("Landmark Logo", Factory.GetDatabase("web").GetItem(ItemGuids.LandmarkConfigItem))" alt="landmark">
                 </a>
             </div>
         </nav>
     </div>
 </header>
+
+<script type="text/javascript">
+    var string = document.getElementById('searchForm').getAttribute("action");
+    if (string.indexOf('/tc') == 0) {
+        var tc = string.replace('/tc', '');
+        document.getElementById('searchForm').setAttribute("action", tc);
+    }
+    else if (string.indexOf('/sc') == 0) {
+        var sc = string.replace('/sc', '');
+        document.getElementById('searchForm').setAttribute("action", sc);
+    }
+
+    var mobileString = document.getElementById('mobileSearch').getAttribute("action");
+    if (mobileString.indexOf('/tc') == 0) {
+        var tc = mobileString.replace('/tc', '');
+        document.getElementById('mobileSearch').setAttribute("action", tc);
+    }
+    else if (mobileString.indexOf('/sc') == 0) {
+        var sc = mobileString.replace('/sc', '');
+        document.getElementById('mobileSearch').setAttribute("action", sc);
+    }
+</script>

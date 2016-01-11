@@ -6,6 +6,8 @@
 @using Sitecore.Data.Fields
 @using Sitecore.Data.Items
 @using Sitecore.Links
+@using Landmark.Extensions
+
 @model RenderingModel
 @{
     SearchHelper helper = new SearchHelper();
@@ -14,6 +16,8 @@
     var results = helper.GetSearchResults(Request["searchString"], Request["type"], page);
     List<FilterTypeResults> types = helper.GetFilterTypes(Request["searchString"]);
     ShoppingHelper shoppingHelper = new ShoppingHelper();
+    string searchString = Request["searchString"];
+    searchString = Session.GetDataFromSession<string>("search");
 }
 
 <div class="container">
@@ -23,15 +27,15 @@
         </div>
         @if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
         {
-            <div class="gd-search-infomation">找到共 @count 个符合 <span>"@Request["searchString"]"</span> 的记录 </div>
+            <div class="gd-search-infomation">找到共 @count 个符合 <span>"@searchString"</span> 的记录 </div>
         }
         else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
         {
-            <div class="gd-search-infomation">找到共 @count 個符合 <span>"@Request["searchString"]"</span> 的記錄 </div>
+            <div class="gd-search-infomation">找到共 @count 個符合 <span>"@searchString"</span> 的記錄 </div>
         }
         else if (Html.Sitecore().CurrentItem.Language.Name == "en")
         {
-            <div class="gd-search-infomation">@count search result(s) for <span>"@Request["searchString"]"</span></div>
+            <div class="gd-search-infomation">@count search result(s) for <span>"@searchString"</span></div>
         }
         @if (count > 0)
         {
@@ -43,7 +47,7 @@
                     {
                         if (Int32.Parse(type.count) > 0)
                         {
-                            <li><a href="?type=@type.value">@type.value (@type.count)</a></li>
+                            <li><a href="?type=@type.envalue">@type.value (@type.count)</a></li>
                         }
                     }
                 </ul>
@@ -71,8 +75,6 @@
             </div>
         }
 
-
-
         <div class="gd-search-body">
             <ol>
                 @foreach (var result in results)
@@ -85,27 +87,26 @@
                                     <div class="col-sm-9">
                                         <a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))"><img data-src="@Html.Sitecore().ImageFieldSrc("Brand Image", result.GetItem())"></a>
                                         <h4><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))">@Html.Sitecore().Field("Brand Title", result.GetItem())</a></h4>
-
                                         @{
-                        var address = result.GetItem().Fields["Address"].ToString();
-                        if (!string.IsNullOrEmpty(address))
-                        {
-                            <p>
-                                <span class="icomoon-location2"></span>&nbsp;@Html.Sitecore().Field("Address", result.GetItem())
-                            </p>
-                        }
+                                            var address = result.GetItem().Fields["Address"].ToString();
+                                            if (!string.IsNullOrEmpty(address))
+                                            {
+                                                <p>
+                                                    <span class="icomoon-location2"></span>&nbsp;@Html.Sitecore().Field("Address", result.GetItem())
+                                                </p>
+                                            }
                                         }
                                         <p>
                                             <span class="icomoon-phone"></span>&nbsp;@Html.Sitecore().Field("Contact", result.GetItem())
                                         </p>
                                         @{
-                        LinkField link = result.GetItem().Fields["Official Website Url"];
-                        if (!string.IsNullOrEmpty(link.Url))
-                        {
-                            <a href="@link.Url" target="@link.Target" class="gd-search-link-brief">
-                                @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.OfficialWebsiteItem))<span class="icomoon-chevron-small-right"></span>
-                            </a>
-                        }
+                                            LinkField link = result.GetItem().Fields["Official Website Url"];
+                                            if (!string.IsNullOrEmpty(link.Url))
+                                            {
+                                                <a href="@link.Url" target="@link.Target" class="gd-search-link-brief">
+                                                    @Html.Sitecore().Field("Glossary Value", (Item)Factory.GetDatabase("web").GetItem(ItemGuids.OfficialWebsiteItem))<span class="icomoon-chevron-small-right"></span>
+                                                </a>
+                                            }
                                         }
                                     </div>
                                     <div class="col-sm-3">
@@ -121,10 +122,16 @@
                     else
                     {
                         var resultItem = result.GetItem();
+                        DateField dateField = (DateField)result.GetItem().Fields["Article Date"];
+                        string title = result.PageTitle;
+                        if (Sitecore.Context.Database.GetItem(result.ItemId).ParentID.ToString() == ItemGuids.MonthlyExclusivePage)
+                        {
+                            title = result.ArticleTitle;
+                        }
                         <li>
                             <div class="gd-search-box">
                                 <h5>@result.FilterType</h5>
-                                <h4><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))">@result.PageTitle</a></h4>
+                                <h4><a href="@LandmarkHelper.TranslateUrl(LinkManager.GetItemUrl(result.GetItem()))">@title</a></h4>
                                 @if (resultItem.TemplateID.ToString() == ItemGuids.T23PageABTemplate || resultItem.TemplateID.ToString() == ItemGuids.T23PageCTemplate || resultItem.TemplateID.ToString() == ItemGuids.T4PageTemplate || resultItem.TemplateID.ToString() == ItemGuids.T25PageTemplate || resultItem.TemplateID.ToString() == ItemGuids.T27Page)
                                 {
                                     <p>@Html.Sitecore().Field("Article Intro", resultItem)</p>
@@ -132,15 +139,15 @@
 
                                 @if (Html.Sitecore().CurrentItem.Language.Name == "zh-CN")
                                 {
-                                    <div>@result.GetItem().Statistics.Created.ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat)</div>
+                                    <div>@LandmarkHelper.ToValidDateTime(dateField).ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-CN").DateTimeFormat)</div>
                                 }
                                 else if (Html.Sitecore().CurrentItem.Language.Name == "zh-HK")
                                 {
-                                    <div>@result.GetItem().Statistics.Created.ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat)</div>
+                                    <div>@LandmarkHelper.ToValidDateTime(dateField).ToString("yyyy年 MM月 dd日", CultureInfo.GetCultureInfo("zh-HK").DateTimeFormat)</div>
                                 }
                                 else if (Html.Sitecore().CurrentItem.Language.Name == "en")
                                 {
-                                    <div>@result.GetItem().Statistics.Created.ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</div>
+                                    <div>@LandmarkHelper.ToValidDateTime(dateField).ToString("MMM dd, yyyy", DateTimeFormatInfo.InvariantInfo).ToUpper()</div>
                                 }
                             </div>
                         </li>

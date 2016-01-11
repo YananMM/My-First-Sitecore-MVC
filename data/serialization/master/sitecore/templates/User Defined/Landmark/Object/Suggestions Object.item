@@ -1,40 +1,40 @@
 ----item----
 version: 1
-id: {3D2A6348-C46C-4FF3-99D5-42ABE3CBE05A}
+id: {5F80F6B0-A6B3-48A7-A28C-A7B25F38C042}
 database: master
-path: /sitecore/content/Home/Landmark/Around Central/Experience Central/Related Items/Related Item1/Slide Folder/Slide Object
-parent: {BD5D2FDC-7C03-4A74-9CBC-D4821555B828}
-name: Slide Object
+path: /sitecore/templates/User Defined/Landmark/Object/Suggestions Object
+parent: {CEB547EC-0F8A-4672-ABDC-37582EE88EE4}
+name: Suggestions Object
 master: {00000000-0000-0000-0000-000000000000}
-template: {FFC1447C-5F42-4419-AEF4-6175FB69507C}
-templatekey: Slide Object
+template: {AB86861A-6030-46C5-B394-E8F99E8B87DB}
+templatekey: Template
 
 ----field----
-field: {ACC88215-24A9-406F-81CD-FFF5858875FC}
-name: Slide Image
-key: slide image
-content-length: 58
+field: {12C33F3F-86C5-43A5-AEB4-5598CEC45116}
+name: __Base template
+key: __base template
+content-length: 77
 
-<image mediaid="{FBD2846E-5865-48B7-9B55-99D6C0E9F327}" />
+{1930BBEB-7805-471A-A3BE-4858AC7CF696}|{2EE1034D-FA6F-4894-B5FD-AC31F548CE33}
+----field----
+field: {06D5295C-ED2F-4A54-9BF2-26228D113318}
+name: __Icon
+key: __icon
+content-length: 22
+
+Apps/32x32/Preview.png
 ----version----
 language: en
 version: 1
-revision: 4ac7ad2c-ef03-4df0-a2de-01fb9030d668
+revision: e20569a3-698c-4988-93ab-3d708e7685f8
 
-----field----
-field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
-name: __Owner
-key: __owner
-content-length: 14
-
-sitecore\admin
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20151113T022432Z
+20160107T080122Z
 ----field----
 field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
 name: __Created by
@@ -48,14 +48,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-4ac7ad2c-ef03-4df0-a2de-01fb9030d668
+e20569a3-698c-4988-93ab-3d708e7685f8
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 35
 
-20151113T025327:635829800073123079Z
+20160107T090922:635877545629102735Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

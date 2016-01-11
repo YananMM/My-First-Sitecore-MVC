@@ -18,6 +18,7 @@ using System.Linq;
 using System.Web;
 using Landmark.Classes;
 using Sitecore.Collections;
+using Landmark.Models;
 
 namespace Landmark.Helper
 {
@@ -80,5 +81,6 @@ namespace Landmark.Helper
             }
             return attractions;
         }
+
     }
 }

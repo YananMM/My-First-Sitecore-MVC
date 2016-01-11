@@ -1,4 +1,4 @@
-﻿@using System.Diagnostics.Eventing.Reader
+@using System.Diagnostics.Eventing.Reader
 @using Landmark.Classes
 @using Landmark.Helper
 @using Sitecore.Configuration
@@ -26,7 +26,7 @@
             <h3>@Html.Sitecore().Field("Content Title") </h3>
         </div>
         <div class="gd-brief-body gd-longarticle gd-col-2" data-text-on="@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.ReadMoreItem)) +" data-text-off="@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.LessItem)) -">
-            <p>@(new MvcHtmlString(Html.Sitecore().Field("Content Description").ToString().Trim(' ').Replace("\n\n", "<br/>")))</p>
+            @(new MvcHtmlString(Html.Sitecore().Field("Content Description").ToString().Trim(' ').Replace("\n\n", "<br/>")))
             @*<p>@Html.Sitecore().Field("Content Description").ToString()</p>*@
         </div>
     </div>
@@ -45,7 +45,13 @@
         <div class="shopdetails-brand-header">
             <ul>
                 <li><a href="javascript:;" class="active">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.YouMayAlsoLikeItem))</a></li>
+                @{
+                    var svg_id = Sitecore.Context.Item.Fields["Svg Id"].Value;
+                }
+                @if (svg_id != "")
+                {
                 <li><a href="javascript:;">@Html.Sitecore().Field("Glossary Value", (Item) Factory.GetDatabase("web").GetItem(ItemGuids.AlsoOnThisFloorItem))</a></li>
+                }
             </ul>
         </div>
         <div class="shopdetails-brand-body">

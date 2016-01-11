@@ -30,12 +30,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -161,6 +162,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\ShoppingController.cs" />
+    <Compile Include="Extensions\SessionExtensions.cs" />
     <Compile Include="Helper\AdobeTrackingDataLayerHelper.cs" />
     <Compile Include="Helper\AroundCentralHelper.cs" />
     <Compile Include="Helper\ArtTourHelper.cs" />
@@ -222,9 +224,6 @@
     </Compile>
     <Compile Include="Service\ImportCountryList.ashx.cs">
       <DependentUpon>ImportCountryList.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Service\ImportTest.ashx.cs">
-      <DependentUpon>ImportTest.ashx</DependentUpon>
     </Compile>
     <Compile Include="Service\Landmark.asmx.cs">
       <DependentUpon>Landmark.asmx</DependentUpon>
@@ -821,7 +820,6 @@
     <Content Include="Views\Renderings\Landmark\T11\T11PulledContentRendering.cshtml" />
     <Content Include="Views\Layouts\Landmark\MapLayout.cshtml" />
     <Content Include="Service\ImportCountryList.ashx" />
-    <Content Include="Service\ImportTest.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
