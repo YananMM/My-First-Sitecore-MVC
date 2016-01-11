@@ -25,7 +25,6 @@ namespace Landmark.Helper
             {
                 if (System.Web.HttpContext.Current.Session["search"] != null)
                     searchString = System.Web.HttpContext.Current.Session["search"].ToString();
-
                 var language = Sitecore.Context.Language.Name.ToLower();
                 string indexName = Settings.GetSetting("LandmarkIndexName");
                 var index = ContentSearchManager.GetIndex(indexName);
@@ -43,11 +42,11 @@ namespace Landmark.Helper
                             || item.ArticleTitle.Contains(searchString) || item.ArticleIntro.Contains(searchString) || item.ArticleSubtitle.Contains(searchString)))
                             .OrderBy(item => item.FilterOrder)
                         .ToList();
-                    var resultsgroup = (from result in results
+                    results = ((from result in results
                                         let resultItem = result.GetItem()
                                         let version = Factory.GetDatabase("web").GetItem(resultItem.ID).Version
                                         where LandmarkHelper.IsShownInNavigation(resultItem) && resultItem.Version == version
-                                        select result).OrderBy(i => i.FilterOrder);
+                                        select result).OrderBy(item=>item.FilterOrder)).ToList();
 
                     if (type != null)
                         results = results.Where(item => item.FilterType == type).ToList();
